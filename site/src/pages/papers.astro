@@ -1,0 +1,184 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const corroborations = [
+  ["\"an old Queenslander home at Clayfield\"", "\"of Botany Street, Clayfield\""],
+  ["Ken \"started work as a 15 year old at Union Trustees where his father had worked\"",
+   "\"for many years had been on the staff of the Brisbane office of the Union Trustee Company of Australia, Ltd.\""],
+  ["his father died \"unexpectedly\" when Ken was nine", "\"The death occurred suddenly yesterday\""],
+  ["— not mentioned —", "\"served with the Australian Forces in France during the Great War\""],
+  ["five children", "\"survived by his widow and five children\""],
+];
+---
+<Base
+  title="The Papers"
+  eyebrow="Trove, 9 September 2026"
+  dek="A newspaper printed in 1936 confirms five details of a eulogy delivered in 2010. Two other headlines look damning and say the opposite of what they seem to. This is the archive's worked example of reading evidence rather than skimming it.">
+
+  <section class="blk">
+    <p class="lede">The Brisbane papers have a great deal to say about this family, and the first
+    lesson of them is that <strong>a search result is not a source</strong>. Three of the headlines
+    below would, left as snippets, put a man in the dock who was standing in the witness box.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">11 November 1936</div>
+    <h2 style="margin-top:.4rem">The obituary, and a eulogy written seventy-four years later</h2>
+
+    <blockquote>
+      <strong>OBITUARY</strong><br /><br />
+      Mr. L. A. D'Arcy.— The death occurred suddenly yesterday of Mr. Lindsay Atkinson D'Arcy, of
+      Botany Street, Clayfield, who for many years had been on the staff of the Brisbane office of
+      the Union Trustee Company of Australia, Ltd. Mr. D'Arcy, who was aged 44 years, was the only
+      son of the late Mr. G. T. D'Arcy, of the Railway Department, and received his education at the
+      old Normal School. He served with the Australian Forces in France during the Great War. The
+      late Mr. D'Arcy is survived by his widow and five children. The funeral will leave the funeral
+      chapel of John Hislop and Sons, Peel Street, South Brisbane, at 3.30 p.m. to-day, for the
+      Toowong Cemetery.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— <em>The Courier-Mail</em>
+      (Brisbane), Wednesday 11 November 1936, p. 23 · <span class="mono">nla.news-article37013266</span></footer>
+    </blockquote>
+
+    <p>In March 2010 his son Kenneth's children stood up and described a father Kenneth had lost at
+    the age of nine. Nobody involved had seen this obituary. Set the two side by side:</p>
+
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>The eulogy, 2010</th><th>The obituary, 1936</th></tr></thead>
+        <tbody>
+          {corroborations.map(([a, b]) => (<tr><td>{a}</td><td>{b}</td></tr>))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.2rem">
+      Five details, independently confirmed, and not one contradiction. That is worth stating plainly
+      because family memory usually does <em>not</em> survive this test. It also adds something the
+      family had lost: he served <strong>in France</strong>.
+      <a href={u("/documents")}>The eulogy in full →</a>
+    </div>
+
+    <p class="small" style="margin-top:1rem">Two corrections the paper forces on the tree. He is
+    <strong>Lindsay</strong> in both the obituary and the funeral notice, not <em>Lindesay</em> — the
+    spelling moves about even in his own lifetime, which is the whole argument of
+    <a href={u("/name")}>the name page</a>. And "G. T. D'Arcy" is wrong for
+    <strong>G</strong>eorge <strong>P</strong>itt; either the compositor or the OCR has it.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">A headline that is not what it looks like</div>
+    <h2 style="margin-top:.4rem">"TRUSTEE ALLEGES FRAUD", September 1927</h2>
+
+    <p>Ten years before he died, Lindesay Atkinson D'Arcy was an insolvent grocer. The
+    <em>Daily Standard</em> reported his examination under that headline, and the facts it gives are
+    these:</p>
+
+    <ul class="dek">
+      <li>For about two and a half years to <strong>25 July 1926</strong> he ran a grocery at
+      <strong>Cavendish Road, South Brisbane</strong>, "with the assistance of his wife".</li>
+      <li>About three months before that he <strong>left his wife to run the shop and took a
+      position as a clerk with the Union Trustees</strong> — the beginning of the career the
+      obituary describes.</li>
+      <li>On 25 July 1926 he could not go on: "not having sufficient funds, the pressure of
+      creditors, heavy overhead charges, and smallness of profits". He called his creditors together
+      and assigned the business to them.</li>
+      <li>The deficiency was <strong>£1,381</strong>. He was declared insolvent on
+      <strong>1 October 1926</strong>.</li>
+    </ul>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>Now read the headline again.</strong> The alleged fraud is a claim of
+      <em>fraudulent preference</em> — that a failing debtor paid down one creditor ahead of the
+      others in the fortnight before he collapsed. The action was brought by the trustee
+      <strong>against the Bank of New South Wales</strong>, to claw back £187 14s 1d. It was not
+      brought against D'Arcy and it does not allege that he took anything. He gave evidence that he
+      had "treated the bank as an ordinary creditor, and had not given it preference over any
+      other"; the bank's own manager described the £150 monthly overdraft as the kind "customary to
+      allow … to men in a small way of business".
+    </div>
+
+    <p style="margin-top:1.2rem"><strong>And then the date.</strong> Kenneth Lindsay D'Arcy was born
+    at <strong>Sandgate on 17 August 1927</strong>. One month later his father stands in the Supreme
+    Court, described in the paper as "<em>Lindesay Atkinson D'Arcy, of Sandgate</em>", in the
+    wreckage of the grocery. The eulogy's account of a family suddenly "in a spot of bother" in 1936
+    turns out to have a ten-year prehistory — one that Ken, born into the middle of it, plainly never
+    knew.</p>
+    <p class="small" style="margin-top:.6rem"><em>Daily Standard</em>, Tuesday 20 September 1927,
+    p. 5 · <span class="mono">nla.news-article184914345</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Two headlines that say the opposite of what they seem to</div>
+    <h2 style="margin-top:.4rem">"AGENT CHARGED — ALLEGED THEFT AS SERVANT", August 1929</h2>
+
+    <p>In a list of search results these read as a man in serious trouble:
+    <em>"ROBBED PETER TO PAY PAUL." AGENT'S ALLEGED REPLY TO DETECTIVE</em>, and
+    <em>AGENT CHARGED. ALLEGED THEFT AS SERVANT. BIG SUM SAID TO BE INVOLVED.</em> — both matching
+    "Lindsay Atkinson D'Arcy".</p>
+
+    <p style="margin-top:.9rem">Open them, and the accused is <strong>William John Rode</strong>, 48,
+    an agent of Clayfield, charged with stealing as a servant of the Beak Pastoral Company out of a
+    deficiency of some £1,450.</p>
+
+    <p style="margin-top:.9rem"><strong>D'Arcy is the witness for the prosecution.</strong> He was
+    the Union Trustee Company's agent who took the Beak Pastoral Company's affairs over from Rode.
+    He called at Rode's office and at his home, and when he said whom he represented, Rode answered:</p>
+
+    <blockquote>Don't say any more. I don't wish my wife to know anything about the business.</blockquote>
+
+    <p>When the promised settlement cheque never came, <strong>D'Arcy went to the C.I.D.</strong>
+    Three years after his own insolvency, the man in these headlines is the one who detected an
+    embezzlement and reported it.</p>
+
+    <p class="small" style="margin-top:.9rem"><em>Daily Standard</em>, 6 August 1929, p. 1
+    · <span class="mono">nla.news-article187390932</span> · <em>The Brisbane Courier</em>,
+    7 August 1929, p. 20 · <span class="mono">nla.news-article21435307</span></p>
+
+    <div class="note" style="margin-top:1.2rem">
+      This is why the archive opens documents instead of collecting snippets. Two minutes of skimming
+      would have put a false and defamatory paragraph about a real man into a family history, and it
+      would have been repeated forever.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">21 March 1931</div>
+    <h2 style="margin-top:.4rem">Found in the kitchen at Banyo</h2>
+    <blockquote>
+      At the inquiry into the death of <strong>George Pitt D'Arcy, 76, railway pensioner</strong>,
+      who was found dead in the kitchen of his residence, in <strong>Victoria street, Banyo</strong>,
+      on March 21, <strong>Lindsay Atkinson D'Arcy, a son of deceased</strong>, said his father had
+      been suffering from heart trouble, but had never been treated by a doctor.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— <em>Daily Standard</em>
+      (Brisbane), Friday 24 April 1931, p. 8 · <span class="mono">nla.news-article180986554</span></footer>
+    </blockquote>
+    <p>The tree recorded only "21 Mar 1931, Brisbane". The paper gives the street, the room, the
+    fact that he was alone, that there was an inquest, and that his only son gave the evidence — five
+    years before that son would himself die suddenly at forty-four.</p>
+    <p class="small" style="margin-top:.9rem"><strong>One discrepancy, unresolved.</strong> The report
+    says he was 76. Born 5 May 1864 he was <strong>66</strong>. Either the reporter or the OCR has
+    76 for 66, or the birth year is wrong — his 1888 marriage and his eldest child in 1890 both
+    support 1864. <a href={u("/open-questions")}>Added to the queue →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <div class="lab">Sydney, 1852</div>
+    <h2 style="margin-top:.4rem">The other insolvency</h2>
+    <p><strong>Frederick Robert D'Arcy</strong> — the surveyor, half-brother of the direct ancestor —
+    went through the Insolvent Court seventy-four years before Lindesay did. The
+    <em>New South Wales Government Gazette</em> of 30 July 1852 gives the estate of
+    <em>"Frederick Robert D'Arcy, of <strong>Hartley</strong>, in the Colony of New South Wales,
+    gentleman"</em>, placed in insolvency on 20 July; meetings of creditors ran on before the Chief
+    Commissioner through August, September and October. Hartley is in the Blue Mountains, which fits
+    the surveying.</p>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>Resist the pattern.</strong> Two D'Arcys through the Insolvent Court, two generations
+      and two colonies apart, is a striking thing to notice and no kind of evidence. Colonial
+      insolvency was extremely common and two cases in four generations is not a trait. It is
+      recorded here so that the next person does not rediscover either — and so that nobody builds a
+      character out of a coincidence. <a href={u("/method")}>Method →</a>
+    </div>
+    <p style="margin-top:1.2rem"><a href={u("/australia")}>Frederick Robert D'Arcy, surveyor →</a></p>
+  </section>
+</Base>
