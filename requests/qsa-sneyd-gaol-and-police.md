@@ -1,42 +1,94 @@
-# Request — Queensland State Archives: Samuel Charles Sneyd
+# Queensland State Archives — searched 9 September 2026
 
-**What it is:** ArchivesSearch, the Queensland State Archives catalogue, at
-`archivessearch.qld.gov.au`.
+**Status: done.** The ArchivesSearch catalogue *can* be driven — the search field is
+`name="q[]"`, and once a search is submitted the results URL takes this shape, which can then be
+paged directly:
 
-**Why it matters:** **Samuel Charles Sneyd was chief constable at Moreton Bay from 1849 and
-Governor of Brisbane Gaol from 1859.** A man who held both of those offices leaves an official trail
-— appointments, correspondence, gaol letterbooks, staff registers, the Blue Books. Almost none of it
-is on Trove. This is the largest untouched body of record about anyone in the archive.
+```
+https://www.archivessearch.qld.gov.au/search?f[]=keywords&has_digital=false&op[]=AND&open=false&q[]=Sneyd&sort=relevance&page=2
+```
 
-## *** DAVID MUST RUN THIS ONE ***
-The ArchivesSearch catalogue is a JavaScript application that **will not accept a search from a
-URL** — I could not query it. It needs a person typing in the box.
+A bare `?q=` or `?keywords=` returns the unfiltered 3.27-million-record listing, which is what
+defeated the first attempt.
 
-## The searches
-Go to `archivessearch.qld.gov.au` and use the search field. Try, in order:
+**41 results for `Sneyd`.** Access status: 38 open, 3 restricted. What follows is the whole of what
+QSA holds under the name, sorted by what it is worth.
 
-| # | Search | Looking for |
+---
+
+## 1. The one to get first — free, digitised, open
+
+| | |
+|---|---|
+| **SNEYD William Hartley** | **Inquest file** |
+| Item | **ITM2736504** |
+| Date | 1902 |
+| Previous system IDs | **JUS/N309; SRS36/5/308** |
+| Agency Control Number | 301 |
+| Series | **S36 — Coronial Files (Inquests and No Inquests)** |
+| Digital | **DR103140 · PDF · 15.24 MB · Access status Open · "There are no other restrictions current"** |
+| Download | `archivessearch.qld.gov.au/api/download_file/DR103140` |
+
+**William Hartley Sneyd died on 11 September 1902 and there was a coronial inquest.** The archive did
+not know that. The tree records a death date and nothing else. An inquest means a sudden, violent or
+unexplained death, and the file will contain depositions — most likely from his own family.
+
+*He is Cristina's three-times-great-grandfather on the Sneyd side.*
+
+## 2. Samuel Charles Sneyd — the gaol governor — appears once
+
+| | |
+|---|---|
+| **SNEYD, Samuel (Mortgagor)** and Brisbane Mutual Building and Investment Society (Mortgagee) | **ITM3622143** |
+| Property | **Subdivision 7, Allotment 293, Parish of North Brisbane, County of Stanley; Title 17960** |
+| Dates | 1872–1878 |
+| ACN | 27561 |
+
+That is the Governor of Brisbane Gaol mortgaging a North Brisbane allotment during his governorship.
+**No personnel or service file for him surfaced under his name** — a gaol governor's service record
+would sit inside departmental series (Colonial Secretary's correspondence, gaol letterbooks, the
+Blue Books) that are not indexed by person. That remains to be dug out and is the one thing this
+search did *not* find.
+
+## 3. Two more family files worth ordering
+
+- **SNEYD, Arthur Hartley** — **Intestacy file**, Public Curator Office Brisbane, 26/03/1916 –
+  30/11/1917, ACN **687/1917**, SRS335/2/36, **ITM1412361**. Physical only. This is the estate of the
+  man killed at **Pozières on 20 August 1916**.
+- **SNEYD Arthur William Hartley** — 1922, ACN **429**, **ITM2824953**. He died 27 May 1922; the date
+  and the shape of the entry suggest another coronial or probate file.
+
+## 4. The land records — a family mapped across Queensland
+
+Nine "Real Property Dealings" and three land-selection files. Together they trace where these people
+actually were:
+
+| Item | What | Where and when |
 |---|---|---|
-| 1 | **Sneyd** | anything at all under the name |
-| 2 | **Brisbane Gaol** + date range **1859–1885** | letterbooks, registers, governor's correspondence |
-| 3 | **gaol** and **governor** | the office rather than the man |
-| 4 | **chief constable** + **Moreton Bay** | his 1849–59 police appointment |
-| 5 | **Police staff** / **police register** 1849–1860 | the pre-separation force |
+| ITM1958549 | Mary Ann **Campbell** (vendor) → **William Hartley Sneyd** (purchaser) | 21 April 1863 |
+| ITM2327485 | **William Hartley Sneyd**, mortgagor, Queensland Building Society No. 1 | 1864–1867 |
+| ITM2327475 | **John Braidwood Sneyd**, mortgagor, same society | 1865–1867 |
+| ITM37183 | Selection file, **Joseph Samuel Sneyd** | **Bundaberg** 879, 1868–1887 |
+| ITM66395 | "Dead farm file", **Arthur William Hartley Sneyd** | **Aramac** 142, 1892–1895 |
+| ITM82664 | Land purchase, **Arthur William Hartley Sneyd** | **Gympie**, 1913–1915 |
 
-Also worth trying: the **Queensland Blue Books** (annual civil service lists) for any year 1860–1880 —
-they name office-holders and their salaries, so they would confirm his tenure at the gaol year by
-year. And **QSA's published indexes** to police and gaol staff, if they have one.
+The Aramac file matters: Arthur married Martha Blum at **Muttaburra** in 1891 and their daughter Ivy
+was born at **Boulia** in the October. A selection at Aramac, 1892–95, is the missing middle of that
+western Queensland decade.
 
-## What to send back
-Series and item references, dates, and whether the item is digitised. **Do not order anything yet** —
-what I need first is to know what exists, so the archive can say precisely what it has not read.
+## 5. Not yet examined
 
-## While you are there
-His son **Joseph Sneyd** was **chief warder at the Brisbane Gaol for thirty years**. Anything on him
-would document the same institution from the other end of the century.
+The result facets show **4 wills** (Supreme Court Ecclesiastical Files) and **4 probate / letters of
+administration** files under Sneyd that were not identified individually. Those should be listed and
+matched to people.
 
-## And one for The National Archives, Kew
-The 1841 muster that places Samuel Charles at Parramatta is **WO 12/8483** (80th Foot). The muster
-books themselves are not digitised. If a researcher is ever commissioned at Kew, WO 12/8483 and the
-surrounding 80th Foot musters would give his enlistment, his transfer from the 4th (King's Own), and
-his discharge — the three army facts the archive is still guessing at.
+---
+
+## *** WHAT DAVID SHOULD DO ***
+
+1. **Download DR103140** — the 1902 inquest file, free, open, 15 MB. It is the single best unread
+   document about this family.
+2. Order or view **ITM1412361** (Arthur Hartley's intestacy file) and **ITM2824953**.
+3. Ask QSA's reference staff where a **gaol governor's service record, 1859–1880s** would sit, since
+   it is plainly not indexed under his name. The Queensland **Blue Books** would at least confirm his
+   tenure and salary year by year.

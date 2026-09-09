@@ -1146,3 +1146,77 @@ listing. It needs a person typing into the box. Since Sneyd was **chief constabl
 record about anyone in this archive**: appointments, gaol letterbooks, staff registers, and the
 Queensland Blue Books, which would confirm his tenure year by year. Written up as
 `requests/qsa-sneyd-gaol-and-police.md`.
+
+---
+
+# Eleventh pass — Queensland State Archives, searched
+
+**The catalogue can be driven after all.** The earlier failure was a wrong parameter name. The
+search field is `name="q[]"`, and a submitted search produces a pageable URL:
+
+```
+/search?f[]=keywords&has_digital=false&op[]=AND&open=false&q[]=Sneyd&sort=relevance&page=2
+```
+
+A bare `?q=` or `?keywords=` silently returns the unfiltered 3.27-million-record listing, which is
+what made it look like the app refused URL queries.
+
+## 44. Forty-one items under "Sneyd" — 38 open, 3 restricted
+
+### The find: an inquest nobody knew about
+
+**SNEYD William Hartley — Inquest file — ITM2736504** · JUS/N309; SRS36/5/308 · ACN 301 · series
+**S36, Coronial Files** · digital representation **DR103140, PDF, 15.24 MB, Access status Open,
+"There are no other restrictions current"** · `/api/download_file/DR103140`
+
+**William Hartley Sneyd died 11 September 1902 and a coroner investigated it.** The tree carries a
+date and nothing else. An inquest means sudden, violent or unexplained death; the file will hold
+depositions, probably from his own family. **Not yet read** — a download needs David's say-so.
+
+### Samuel Charles Sneyd appears exactly once, and it is not a service record
+
+**SNEYD, Samuel (Mortgagor) and Brisbane Mutual Building and Investment Society — ITM3622143** ·
+Subdivision 7, Allotment 293, **Parish of North Brisbane, County of Stanley**, Title 17960 ·
+1872–1878 · ACN 27561. The Governor of Brisbane Gaol mortgaging a North Brisbane allotment during
+his governorship.
+
+**No personnel or service file for him exists under his name.** A gaol governor's record sits inside
+departmental series — Colonial Secretary's correspondence, gaol letterbooks, the Queensland Blue
+Books — which are not indexed by person. It exists; it has not been found. This is the one thing the
+search did *not* deliver, and it is now a reference-desk question rather than a catalogue one.
+
+### Two more family files
+
+- **SNEYD, Arthur Hartley — Intestacy file — ITM1412361** · Public Curator Office, Brisbane ·
+  26/03/1916 – 30/11/1917 · ACN 687/1917 · SRS335/2/36 · physical only. The estate of the man killed
+  at Pozières on 20 August 1916.
+- **SNEYD Arthur William Hartley — ITM2824953** · 1922 · ACN 429. He died 27 May 1922; likely another
+  coronial or probate file.
+
+### The land records — the family mapped across Queensland
+
+| Item | What | Where and when |
+|---|---|---|
+| ITM1958549 | Mary Ann Campbell (vendor) → **William Hartley Sneyd** (purchaser) | 21 April 1863 |
+| ITM2327485 | **William Hartley Sneyd**, mortgagor, Queensland Building Society No. 1 | 1864–1867 |
+| ITM2327475 | **John Braidwood Sneyd**, mortgagor, same society | 1865–1867 |
+| ITM37183 | Selection file, **Joseph Samuel Sneyd** | **Bundaberg** 879, 1868–1887 |
+| ITM66395 | "Dead farm file", **Arthur William Hartley Sneyd** | **Aramac** 142, 1892–1895 |
+| ITM82664 | Land purchase, **Arthur William Hartley Sneyd** | **Gympie**, 1913–1915 |
+
+**The Aramac file is the useful one.** Arthur married Martha Blum at **Muttaburra** in January 1891
+and their daughter **Ivy was born at Boulia** that October. A selection at **Aramac** from 1892 to
+1895 is the missing middle of that western Queensland decade — and it explains what a Brisbane-born
+clerk's family was doing six hundred kilometres inland.
+
+### Also present, unexamined
+
+The facets show **4 wills** (Supreme Court Ecclesiastical Files) and **4 probate / letters of
+administration** files under Sneyd, not individually identified. To be listed and matched.
+
+## 45. Still not found
+
+- **Samuel Charles Sneyd's police and gaol service record.** Not indexed under his name; needs QSA
+  reference staff, or the Queensland **Blue Books**, which would at least confirm his tenure and
+  salary year by year.
+- **TNA WO 12/8483** — the 80th Foot muster that places him at Parramatta in 1841. Not digitised.
