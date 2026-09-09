@@ -833,3 +833,27 @@ li{margin:5px 0}
 .gen.undoc::before{border-color:var(--accent)}
 .plate{border-color:var(--rule)}
 .plate img{border-bottom-color:var(--rule)}
+
+/* ---- the generation spine, as this archive marks it up -------------------
+   The inherited .gen is a two-column grid expecting .rail and .body children.
+   This site's spine is a simple vertical run with a dot drawn by ::before, so
+   the grid has to be turned off or every paragraph becomes a squeezed column. */
+.spine{position:relative;display:block;padding-left:42px;margin:22px 0 26px}
+.spine::before{content:"";position:absolute;left:13px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(transparent,var(--ochre) 12%,var(--accent));border-radius:2px}
+.spine .gen{display:block;position:relative;margin:0 0 22px;padding:0}
+.spine .gen::before{content:"";position:absolute;left:-35px;top:7px;width:12px;height:12px;
+  border-radius:50%;background:var(--ground);border:2px solid var(--accent);z-index:1}
+.spine .gen.undoc::before{border-color:var(--ink-3);border-style:dashed}
+.spine .gen > div,.spine .gen > p{max-width:78ch}
+.spine .gen .yr{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);margin-right:10px;
+  font-variant-numeric:tabular-nums}
+.spine .gen .who{font-weight:600;color:var(--ink)}
+.spine .gen .whr{color:var(--ink-2);font-size:15px}
+.spine .gen .lab{margin-top:4px}
+.spine-key{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin-top:6px}
+@media (max-width:600px){
+  .spine{padding-left:28px}
+  .spine::before{left:7px}
+  .spine .gen::before{left:-27px}
+}
