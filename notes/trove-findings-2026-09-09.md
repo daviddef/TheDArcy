@@ -205,3 +205,144 @@ are now the better target.
    served **in France**, which narrows the unit history.
 6. **Arthur Hartley Sneyd's Roll of Honour circular** (AWM), Pozières, 20 August 1916.
 7. **George Pitt D'Arcy (1864–1931): age 66 or 76?**
+
+---
+
+# Second pass — the Major, the ship, and the wives
+
+## 5. Major George Pitt D'Arcy (c.1780–1849) — the arrival, fully documented
+
+### 5.1 The convict ship *England*, 1826
+
+From the surgeon superintendent's journal and the ship's record (freesettlerorfelon.com, drawing on
+George Thomson's medical journal, 18 March – 29 September 1826):
+
+- Ship built at **Chepstow, Wales, 1813**. Master **John Reay**. Surgeon superintendent
+  **George Thomson, R.N.** — his first convict voyage. Military guard: **39th Regiment**.
+- **8 April 1826** — "a detachment of **30 men of the 39th regiment commanded by Major George Pitt
+  D'Arcy** embarked. The guard consisted of 2 sergeants and 3 corporals; **six women and seven
+  children**."
+- **Cabin passengers included "Mrs. D'Arcy and family" and Mrs. Reay.**
+- 14–21 April — 148 male convicts embarked at Woolwich from the *Justitia* and *Ganymede* hulks.
+- Spring 1826 — the phrenologist **Mr De Ville** examined all 148 convicts aboard.
+- 3 May — down the river to Gravesend. **6 May** — pilot discharged **in the Downs**.
+- **18 September 1826** — arrived **Port Jackson**. 135 days, **no deaths**.
+
+This answers open question 2 outright, and it puts the family aboard: Charlotte Maria, born Chatham
+1825, is the baby in the cabin.
+
+### 5.2 His war
+
+Obituary, **Bell's Life in Sydney and Sporting Reviewer, Saturday 28 July 1849, p. 2** —
+`nla.news-article59769271`. The same death notice ran in the *Sydney Morning Herald* (24 and 26
+July), the *Maitland Mercury* (28 July) and the *Colonial Times*, Hobart (17 August).
+
+> At Parramatta, on Sunday morning, the 22nd of July, 1849, aged 69, **Major George Pitt D'Arcy,
+> formerly of the 39th Regiment of Foot; a brave and gallant soldier.** Major D'Arcy served in the
+> West Indies, the Mediterranean, through the whole of the Peninsular War, North America, and in
+> this colony. He received a medal for commanding his regiment at the battle of Orthes.
+
+The paper then prints "an epitome of the Major's services": West Indies, North and South America,
+the Mediterranean, and the Peninsula under Wellington **from 1811 to the end of the war after
+Toulouse**. Actions listed — **Vitoria** (2nd in command), **Nivelle** (2nd), **Nive** (2nd),
+**Pyrenees** (2nd), **Orthes** (*commanded*), **Toulouse** (3rd in command); the enemy's retreat
+from Pamplona; **Aire**; and the affair of **Garris**, "on which occasion the Duke of Wellington in
+his despatch mentioned the 39th Regiment as having distinguished itself."
+
+> The command fell to Major D'Arcy, in consequence of **Lieutenant-Colonel Bruce being wounded early
+> in the action**. The Major received a gold medal for his prominent services in the battle of
+> Orthes, but **singular to relate, after a lapse of four years, the reward of his merit having been
+> sent by mistake to Lieutenant-Colonel Bruce.** Major D'Arcy served **34 years in the 39th
+> Regiment**.
+
+### 5.3 How he ended
+
+> The decline of a life spent in the service of his country was not, we deeply regret to say, passed
+> in the paths of pleasantness … the canker of disappointment was at his heart's core, and his smile
+> was too often only the shroud of buried hopes. **He died at the house of Mr. Walford**, one of his
+> staunchest friends, **whose kindness to the deceased gentleman increased in proportion to his need
+> of it.** … one who in his lifetime tried to be the friend of all, and **never injured anyone but
+> himself**.
+
+Because the death was sudden an **inquest** was held; the jury put the cause at "**gout which had
+flown to the head, and caused apoplexy**" — most probably a stroke.
+
+**Label this carefully.** "Never injured anyone but himself", dying in a friend's house, kindness
+"in proportion to his need of it" — this is a Victorian obituarist writing round something, and the
+likeliest somethings are drink or debt. That reading is **inferred from tone**, not stated, and the
+archive says so on the page rather than converting a euphemism into a diagnosis.
+
+**Age discrepancy.** Every 1849 notice says **69** → born about 1780. The tree says 18 February
+1783. WikiTree offers "about 1781". Three answers and no register.
+
+## 6. The two wives — resolved, and the tree wrong twice
+
+The tree has him marrying *Maria or Mary Le Meassier* **and** *Maria (Catherine) White*, both at
+Chatham, both in 1810 — which cannot be. Per WikiTree D'Arcy-109 (to be confirmed against the
+registers themselves):
+
+1. **Mary Ludlam**, married **1806 in Kent** — "often shown as **Le Mesurier** — *her mother's
+   maiden name*". Mother of **Frederick Robert** (christened Chatham, 2 July 1811).
+2. **Maria White**, married **about 1819 in County Wicklow, Ireland**. Mother of Charlotte Maria
+   (1825), Catherine Maria (1827) and **George Lindsay** (1829). She is the "Mrs. D'Arcy" in the
+   cabin of the *England*.
+
+So the tree is wrong on the date of the first marriage, wrong on the surname of the first wife
+(it has taken her mother's maiden name for her own), and wrong on both the date and the country of
+the second. **And it settles that Frederick Robert the surveyor is a half-brother** to the direct
+line — fourteen years and two mothers apart.
+
+**Still to do:** find the 1806 Kent entry and the c.1819 Wicklow entry themselves. Both are so far
+known only at second hand.
+
+## 7. "9th Regiment" on the headstone — a discrepancy, and its resolution
+
+**Queensland Burials & Memorials** (Queensland Family History Society), Toowong, portion 1 —
+transcript of Frederick Robert D'Arcy's monumental inscription, `ANZ/QFHS_TOOWONG/1070`:
+
+| | |
+|---|---|
+| Name | Frederick Robert D'Arcy |
+| Death date | 10 Sep 1875 |
+| Age | 63 years |
+| Birth year | 1812 |
+| Place | Toowong, Queensland |
+| **Comment** | **"Eldest son of Major George Pitt D'ARCY late of 9th Regiment"** |
+
+Against this: six independent 1849 newspapers say **39th**; the *England*'s 1826 record says
+**39th**; George Lindsay's 1901 obituary says "the old **39th** regiment"; and his service is given
+as 34 years in the 39th. **The 39th is right.** A mason cutting "39" and losing the 3, or a
+transcriber reading a worn stone, accounts for the inscription. Recorded rather than quietly
+corrected, so the next person to find that headstone finds the answer here.
+
+*(Note also that this transcript gives the death as 10 September 1875 where the tree says 19
+September and the burial 20 September. The Brisbane and Sydney death notices of 21 and 27 September
+should settle it.)*
+
+## 8. George Lindsay D'Arcy (1829–1901) — a decade nobody had
+
+**The Telegraph (Brisbane), Tuesday 16 July 1901, p. 2** — `nla.news-article184151762`,
+*"Late Mr. G. L. D'Arcy. Old King's School Boy."*
+
+- "one of the oldest scholars of the famous **King's School**, New South Wales"; born Parramatta
+  1829, son of Major George Pitt D'Arcy of the old 39th regiment.
+- After King's School: **pastoral work**, and then the **California goldfields**.
+- Came to **Queensland in 1863** — the year he married Eliza Keeling — took a place in the
+  **Colonial Secretary's Office**, and held it until his death thirty-eight years later.
+- Survived by his widow; **two sons in the Railway Department** (one of them George Pitt D'Arcy,
+  later its Chief Clerk); a daughter married to **T. E. Jones**, an instructor at Brisbane Grammar
+  School; and two unmarried daughters.
+
+## 9. FindMyPast — the Portsea marriage, confirmed
+
+**Hampshire Marriages** (Hampshire Genealogical Society), `GBPRS/M/810084756/1`:
+
+| | |
+|---|---|
+| Robert **Darcy** | spouse **Jean Ward** |
+| Marriage | **21 June 1779** |
+| Parish | **Portsea St Mary**, Hampshire |
+
+Exactly as the tree asserts. The index gives no fathers' names, but the record set says an **image**
+of the register entry exists — worth viewing, since these entries can carry fathers, occupations and
+witnesses.
