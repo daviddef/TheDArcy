@@ -876,3 +876,104 @@ is ours.
 **Still to do on the Sneyds:** the Madeley registers themselves, to push the *real* line back from
 William Sneyd the elder (father of the 1742 child); and Samuel Charles Sneyd's army and police
 service, which is the best-documented and least-written-up story in the archive.
+
+---
+
+# Eighth pass — the real Madeley line, and Sergeant Sneyd
+
+## 32. The Madeley registers: what replaced Keele Hall
+
+Taking away the Keele descent did not leave a hole. All Saints, Madeley, carries the family's own
+line, and it reaches the 1720s.
+
+| Generation | Record | Source |
+|---|---|---|
+| **William Sneyd** the elder | fl. Madeley 1720s–40s | a son *John* baptised Madeley **1724**, father "Wm Sneyd"; a son *William* baptised **1742** |
+| **William Sneyd** | bap. **1742**, All Saints Madeley, father William · **m. Mary Blackbourne, Madeley, 27 March 1769** (banns) · bur. Madeley **13 May 1827** | *England, Staffordshire, Church Records, 1538–1944* |
+| **Samuel Sneyd**, grocer | bap. Madeley **4 June 1781**, father William · m. Elizabeth Margaret Oliver, Audlem, Cheshire, 22 Oct 1809 · bur. Hanley **1855** | ditto; 1851 census, Stoke, b. *c.1779 Madeley* |
+| **Samuel Charles Sneyd** | b. Hanley **15 March 1810**, chr. 28 April 1811 · d. Alderley, Brisbane, 4 July 1885 | see below |
+| **William Hartley Sneyd** | b. **Kempsey, NSW, 1838** · d. Brisbane 11 Sept 1902 · bur. Lutwyche | Find a Grave; Qld records |
+
+**The keystone is the 1769 marriage.** The tree named *Mary Blackbourne* as this William's wife and
+was right, but carried no source for it. The Madeley register has the marriage, with banns, on
+**27 March 1769** — which anchors the couple, dates the generation, and makes the 1742 baptism and
+the 1781 baptism hang together.
+
+Their children were baptised at Madeley from 1776 to 1794: **Sarah** (1776), **James** (1779, the
+entry naming "William Sneyd, Mary"), **Samuel** (1781), **Lydia** (1784), **Mary** (1785), **Ann**
+(1788), **Fletcher** (1791), **Margaret** (1794).
+
+### A warning for anyone working these registers
+
+There was **more than one Sneyd household at Madeley at the same time.** A *second* William Sneyd
+married **Ann Dissington** there on **4 October 1779**, and his children are interleaved with the
+first William's. That is why the index shows a *William* baptised 7 November 1780 and a *Samuel*
+baptised 4 June 1781 — seven months apart, and therefore not brothers. A *John* Sneyd was also
+fathering children at Madeley through the 1770s–80s. **The archive has not attempted to split every
+entry between these households and says so rather than guessing.**
+
+### One correction produced
+
+The tree gives Samuel the grocer as **born 1769** — which is the source of its absurd twelve-year gap
+between "birth" and "christening". He was **baptised in 1781**; the 1851 census gives his birth as
+about 1779 at Madeley; and he was buried at Hanley in **1855**, not 1856.
+
+## 33. Sergeant Samuel Charles Sneyd (1810–1885)
+
+The best-documented man in the archive, and until now unwritten.
+
+- Born **Hanley, Stoke-on-Trent, 15 March 1810**; christened there 28 April 1811; son of Samuel
+  Sneyd, grocer, and Elizabeth Margaret Oliver.
+- **1832** — to New South Wales with the **4th (King's Own) Regiment of Foot**, on the same
+  convict-guard duty that had brought Major George Pitt D'Arcy out in 1826.
+- **13 February 1837** — married **Catherine Margaret Mulcahy** at **Camden**, NSW.
+- **1838** — **William Hartley Sneyd** born at **Kempsey**.
+
+### The Chubb capture, 30 October 1839
+
+On **29 October 1839** two runaway convicts, **Thomas Chubb** and **Frederick Knowles**, with a third
+man named **Rees**, robbed the house of a settler named Brown near the **Vale of Clwydd**. The next
+day Brown reached a police station and **Sergeant Sneyd and trooper Smith of the Mounted Police**
+rode out with him. They called at a Mr Walker's, who joined them — as did **two Aboriginal trackers,
+whose names none of the accounts record.** The trackers followed the bushrangers all day; at nightfall
+the party found them camped near the head of Wallowa Creek. **Sneyd shot Rees dead.** Smith went after
+Chubb, who turned and fired at him and missed; Chubb was taken, and Knowles with him.
+
+> Great praise is due to Serjeant Sneyd, who showed a great deal of courage in the taking of them.
+> — *The Sydney Monitor*, November 1839
+
+Chubb and Knowles were tried at the **Supreme Court of New South Wales on 1 February 1840** and
+convicted — reported as *R. v. Chubb* [1840] NSWSupC 4.
+
+**Source quality — flagged.** This narrative comes from **two scholarly compilations** of 1839–40 NSW
+court and press records (the Macquarie University colonial case law index, and a published collection
+of Sydney inquests), both quoting contemporary newspapers. **No primary newspaper report has been read
+directly.** Trove would not return search results during this session and the Macquarie site is now
+offline. The two accounts agree and the Supreme Court case is real, but the citation is at one remove
+and is labelled `inferred` on the site until an 1839 paper is read. **Queued.**
+
+*The tree gives the place as "Piper's Flat, about 25 miles from Bathurst" and the third man as "Reis";
+Piper's Flat is the same country, near Wallerawang, and the dead man's name varies between Rees and
+Reis. Both recorded, neither harmonised away.*
+
+### The career, read off the children's birthplaces
+
+No service file has been found. But the postings can be read from where his children were born:
+Kempsey 1838 and 1840 · **Braidwood 1842** — the child was named *John Braidwood Sneyd* · Sydney 1844
+· Goulburn 1846 and 1847 · NSW 1851 and 1853 · **Brisbane 1855**. He served afterwards in the
+**Queensland police**, married secondly Margaret Hyland at Brisbane on 24 November 1859, and died at
+his house, **Westwood Lodge, Alderley**, on 4 July 1885; buried Toowong, grave 13-17-1.
+
+*A son born 1851 was christened **Samuel Hartley Hanley Stafford Sneyd** — carrying the town and the
+county the family came from, in a child born on the other side of the world.*
+
+## 34. Still open on the Sneyds
+
+1. **A primary newspaper report of the 1839 capture** — Trove, *Sydney Monitor* and *Sydney Herald*,
+   November 1839. The single most wanted item.
+2. **Samuel Charles Sneyd's army record** — 4th (King's Own) Regiment muster and discharge papers,
+   TNA WO 12 / WO 97.
+3. **His Queensland police service record** — Queensland State Archives.
+4. **The Madeley registers themselves**, to push William the elder back and to separate the
+   concurrent Sneyd households properly.
+5. **Catherine Margaret Mulcahy** — an Irish name in Camden in 1837, and entirely unresearched.
