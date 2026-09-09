@@ -24,6 +24,7 @@ nothing here has been sent, and nothing will be sent without David deciding to.
 | 9 | `notes/letters/2026-09-tna-ordnance.md` | Which Ordnance series could carry an RE commission of 1776 |
 | 10 | `requests/qsa-sneyd-gaol-and-police.md` | **Searched and read 9 Sep 2026 — done.** 41 items found. The **1902 inquest file** (DR103140) has been downloaded and transcribed in full: it records a suicide, and the widow's sworn deposition names his father as "Samuel Sneyd, Gaol Governor", closing the Sneyd joint. Published at `/inquest-1902`. Still to order: ITM1412361 and ITM2824953 |
 | 11 | `requests/tna-prob11-darcy-will.md` | **THE PRIORITY.** `PROB 11/1728/64` — the will of **Major-General Robert D'Arcy**, proved 4 July 1827, *digitised*, about **£3.50**. His parentage is the biggest open question on the site and no record of his life names a father; a will names family. Found 9 Sep 2026 |
+| 12 | `requests/qsa-order-list.md` | **Nine QSA items, all identified to series and file number, none digitised.** Arthur Hartley Sneyd's 1916 intestacy file; **William Hartley Sneyd's 1873 insolvency — a wholly new fact**; four wills including one that may be the gaol governor's; two police staff files that are probably his sons |
 
 **The cheap wins are 5 and 6** — both free, both quick, and one of them may already be sitting on a
 website. **The one that matters is 1 and 2**, and they are the two that might close the question this

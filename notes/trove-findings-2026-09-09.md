@@ -2001,3 +2001,91 @@ a PCC one; that search has not been made).
   points at `PROB 11/1728/64` as downloadable today.
 - `requests/tna-prob11-darcy-will.md` — new, and marked the priority.
 
+---
+
+# Pass nineteen — the QSA index, read properly this time (9 September 2026)
+
+## 91. Method: QSA has a curl-able JSON API too
+
+The ArchivesSearch site is a React SPA and `curl` on an item page returns only "You need to enable
+JavaScript". But the app's own backend is open:
+
+    https://www.archivessearch.qld.gov.au/api/fetch?qsa_id=ITM1412361&type=archival_object
+
+**No login, no captcha, no session — plain JSON, 75 KB per item**, with series, responsible agency,
+agency file number, date range, access status and a `digital_representations` array. Found by loading
+one item in the browser and reading the network log.
+
+The search endpoint is `POST /api/advanced_search`, but the app calls it over XHR rather than fetch,
+so the request body was not recoverable by patching `window.fetch`. **Not worth chasing** — paging the
+rendered results and scraping `a[href^="/items/"]` collected all 33 hits in one call.
+
+## 92. FOUND — William Hartley Sneyd was insolvent in 1873
+
+`ITM1056950` · **Insolvency Files – Public Curator Office, Brisbane** (`S15200`) · file **230/1873** ·
+**6 October – 3 November 1873** · Open Access · not digitised.
+
+**A wholly new fact.** He was thirty-six and a contractor. Nothing in the tree, the cemetery record or
+the coronial file suggested it. Read against his widow's sworn statement in 1902 that he "had not
+been able to work for about 12 years in consequence of an injury to his arm", it gives the other end
+of a working life the tree recorded as a birth and a death.
+
+Note the family pattern: his grandson-in-law **Lindesay D'Arcy also went insolvent**, in 1926, as a
+grocer, with a £1,381 deficiency.
+
+## 93. The gaol governor's service record — searched again, still not found
+
+The Queensland Police **Staff Files** series (`S1108`) holds exactly two Sneyds:
+
+| Item | Person | File | Dates |
+|---|---|---|---|
+| `ITM564421` | SNEYD, Hanley | AF1623 | 7 Dec 1881 – 28 Feb 1883 |
+| `ITM564398` | SNEYD, Samuel Charles | AF1599 | 8 May 1890 – 30 Sep 1897 |
+
+**Neither can be the gaol governor: he died 4 July 1885, before both ranges.** On dates they are
+almost certainly two of his sons — Samuel Hanley Hanley Stafford Sneyd (1851–1901) and Samuel Charles
+Sneyd the younger (1863–1938) — which would mean the family put at least two more men into the
+Queensland Police after the father. **Published as inferred from dates alone**; ordering either file
+would confirm it.
+
+Why his own record is absent is now explicable rather than mysterious: he served the **New South
+Wales** Mounted Police, then was chief constable at Moreton Bay from 1849 — both before the
+Queensland Police Force existed (1864) — and then moved to the **gaol** side in 1859. `S1108` could
+not contain him. The next place to look is the colonial series that predate it, or the prisons
+records, or the **Queensland Blue Books**, which are annual civil establishment lists and would at
+least give his title and salary year by year. Blue Books still untried.
+
+## 94. Wills and probate identified — S4486
+
+| Item | Person | File | Dates | Note |
+|---|---|---|---|---|
+| `ITM2805088` | SNEYD Samuel | 3720 | 1857–1900 | **possibly Samuel Charles Sneyd, d. 1885** — order this one first |
+| `ITM2824953` | SNEYD Arthur William Hartley | 429 | 1922 | Ivy's father |
+| `ITM2835988` | SNEYD Kenneth Seigfred | 241 | 1935 | Arthur's brother |
+| `ITM775753` | SNEYD, Alfred Mervyn Mawby — Probate | 8340/96 | 1996 | outside the line |
+
+That is the "four wills" the facets reported in pass eleven, now named.
+
+## 95. And Arthur's intestacy file has a suggestive start date
+
+`ITM1412361` · **Intestacy Files – Brisbane** (`S335`) · Public Trust Office · file **687/1917** ·
+**26 March 1916 – 30 November 1917** · Open · not digitised.
+
+**26 March 1916 is five days before he embarked** on the *Star of Victoria*. That is when a soldier
+made his will — in his paybook, on the way out. The Army Form B.2090A said his will "in Pay Book"
+was "Not yet to hand"; this file may be where it ended up.
+
+## 96. One free long shot
+
+`ITM86903` — **Photographic Records, Descriptions and Criminal Histories of Released Prisoners**
+(`S14872`), Queensland Police Service, **229 digital representations, already digitised**, surfaced
+by a search for *Sneyd*. Whether a Sneyd appears in it as officer, signatory or prisoner is not
+established. Free.
+
+## 97. Site changes
+
+- `/sneyd` — the stale "one absence worth naming" note replaced with the two police staff files and
+  the 1873 insolvency.
+- `/open-questions` — the gaol-governor item rewritten as a labelled null with the reason.
+- `requests/qsa-order-list.md` — new; nine items, every one identified to series and file number.
+
