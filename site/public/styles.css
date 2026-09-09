@@ -882,3 +882,9 @@ html,body{overflow-x:clip}
   .plate{aspect-ratio:16/10;object-position:56% center}
 }
 .cap .dim{color:var(--ink-3);font-style:italic}
+
+/* ---- Auto-linked person names (wholink.js) ------------------------------- */
+a.wholink{color:inherit;text-decoration:none;
+  border-bottom:1px dotted var(--rule-strong);text-underline-offset:0}
+a.wholink:hover,a.wholink:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
+.prow[hidden],.plgroup[hidden]{display:none!important}

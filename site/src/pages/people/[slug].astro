@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import { u } from "../../lib/url.js";
 import { people, byId } from "../../lib/people.js";
+import mentions from "../../data/mentions.json";
 
 export async function getStaticPaths() {
   const { people } = await import("../../lib/people.js");
@@ -69,13 +70,48 @@ const APPEARS_IN = {
 };
 const appears = APPEARS_IN[p.slug] || [];
 
+/* Where research has overturned the exported tree, the person page shows the
+   archive's finding and prints the tree's version underneath — the same rule
+   /direct-line follows. Correcting silently would hide the one thing this site
+   exists to show, and leaving the tree's value alone would make a person page
+   contradict the narrative page about the same person. */
+const CORRECTIONS = {
+  "william-hartley-sneyd": {
+    born: ["30 September 1837", "the tree says 1838. His Queensland death registration 1902/B/2776 records the date of birth outright, and this archive briefly published 1838 against it and was wrong", "/inquest-1902"],
+    occupation: ["Quoin-drawer Overseer, Government Printing Office — and latterly a contractor", "the tree records no trade at all. The Queensland Blue Book of 1884 has him in the Government Printing Office on £225, first appointed to the public service on 1 February 1862", "/sergeant-sneyd"],
+  },
+  "arthur-hartley-sneyd": {
+    occupation: ["Typist", "the tree says Clerk. His own attestation paper of 16 September 1915 says typist", "/great-war"],
+    burial: ["No known grave — commemorated at Villers-Bretonneux", "the tree says \u201cFrance\u201d. The Army Form B.2090A gives his burial place as \u201cNot yet to hand\u201d, and it never came to hand", "/finding-arthur"],
+  },
+  "vivian-ernest-william-sneyd": {
+    born: ["about October 1890", "the tree says between 1890 and 1892. He gave his age as 25 years 2 months on 4 December 1915", "/great-war"],
+    died: ["16 February 1920", "the tree says between 1919 and 1921. Queensland death registration 1920/B/31382", "/great-war"],
+  },
+  "vivian-claude-sneyd": {
+    bornPlace: ["Windsor, Brisbane", "the tree says Rockhampton. His own Service and Casualty Form gives Windsor, Brisbane", "/great-war"],
+  },
+  "robert-d-arcy": {
+    born: ["by 1758, and probably earlier", "the tree says 1751 in North Yorkshire. The 1751 is arithmetic from an age on a burial register, not a birth record, and nothing places him in Yorkshire", "/hornby"],
+  },
+};
+const corr = CORRECTIONS[p.slug] || {};
+const val = (k, fallback) => (corr[k] ? corr[k][0] : fallback);
+
 const facts = [
-  ["Born", p.born, p.bornPlace],
-  ["Died", p.died, p.diedPlace],
+  ["Born", val("born", p.born), val("bornPlace", p.bornPlace)],
+  ["Died", val("died", p.died), val("diedPlace", p.diedPlace)],
   ["Cause", p.cause, ""],
-  ["Buried", "", p.burial],
-  ["Trade", p.occupation, ""],
+  ["Buried", "", val("burial", p.burial)],
+  ["Trade", val("occupation", p.occupation), ""],
 ].filter(([, a, b]) => a || b);
+const corrections = Object.entries(corr);
+
+/* The eyebrow shows a lifespan; if a date has been corrected the eyebrow has to
+   move with it, or the top of the page contradicts the table below it. */
+const yr = (v) => (String(v || "").match(/\d{4}/) || [""])[0];
+const bY = yr(val("born", p.born)), dY = yr(val("died", p.died));
+const life = (bY || dY) ? `${bY || "?"}–${dY || ""}`.replace(/–$/, "") : (p.life || "dates unknown");
 
 /* Notes come out of MyHeritage as broken HTML. Not merely tagged — *truncated*:
    opening tags are cut off mid-attribute, leaving orphaned CSS tails with no "<"
@@ -108,7 +144,7 @@ const notes = (p.notes || [])
   .filter((n) => n.text.length > 20);
 const anyDamaged = notes.some((n) => n.damaged);
 ---
-<Base title={p.name} eyebrow={p.life || "dates unknown"} dek={p.occupation || ""}>
+<Base title={p.name} eyebrow={life} dek={val("occupation", p.occupation) || ""}>
 
   <section class="blk">
     <div class="grid two">
@@ -127,6 +163,19 @@ const anyDamaged = notes.some((n) => n.damaged);
             </tbody>
           </table>
         </div>
+        {corrections.length > 0 && (
+          <div class="note" style="margin-top:1rem">
+            <strong>Corrected against the family tree.</strong> The rows above carry this archive's
+            finding. What the exported tree says is printed here, because hiding it would conceal the
+            one thing this site is for.
+            <ul class="small" style="margin:.6rem 0 0;padding-left:1.1rem">
+              {corrections.map(([k, [now, why, href]]) => (
+                <li style="margin-top:.35rem"><strong>{k}</strong>: {now} — {why}.{" "}
+                  <a href={u(href)}>Set out in full →</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
         {p.ancestor && (
           <p style="margin-top:1rem"><span class="chip doc">direct line</span>
           {p.gen && <span class="small"> · generation {p.gen} counting back from the present day</span>}</p>
@@ -191,6 +240,23 @@ const anyDamaged = notes.some((n) => n.damaged);
       </div>
     </div>
   </section>
+
+  {(mentions[p.slug] || []).length > 0 && (
+    <section class="blk">
+      <h2>Everywhere {p.name.split(" ")[0]} appears in this archive</h2>
+      <p class="small">Every page of this site that writes about {p.name}, gathered automatically —
+      {" "}{(mentions[p.slug] || []).length} in total. This is the same evidence as the rest of the
+      archive, brought together in one place.</p>
+      <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:.85rem">
+        {(mentions[p.slug] || []).map((h) => (
+          <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
+            <a href={u(h.path)}><strong>{h.title}</strong></a>
+            <p class="small noauto" style="margin-top:.3rem;color:var(--ink-2)">{h.snippet}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
 
   {appears.length > 0 && (
     <section class="blk">

@@ -2089,3 +2089,108 @@ established. Free.
 - `/open-questions` — the gaol-governor item rewritten as a labelled null with the reason.
 - `requests/qsa-order-list.md` — new; nine items, every one identified to series and file number.
 
+---
+
+# Pass twenty — the five, and the site rebuilt around them (9 September 2026)
+
+## 98. FOUND — a photograph of Vivian Claude Sneyd
+
+Trove serves page scans at `https://trove.nla.gov.au/ndp/imageservice/nla.news-pageNNNNNNN/levelN`
+(level 7 = 6400 px wide). The page id comes out of the article HTML at `nla.gov.au/nla.news-articleNNNN`.
+
+**`nla.news-page1599814`** — *Brisbane Courier*, Saturday 18 January 1919, page 5. The halftone
+portrait under "ON HONOUR'S ROLL", captioned *"Lance-corporal Vivian Sneyd, 3rd Field Ambulance,
+A.I.F., M.M. and Bar."* Cropped and published on `/great-war`; master page scan kept at
+`assets/courier-1919-01-18-p5.jpg`.
+
+**As far as this archive knows it is the only photograph of anyone in his generation of the family.**
+
+## 99. FOUND — the Blue Books, and William Hartley Sneyd was a government printer
+
+Sixty-four Queensland Blue Books are on archive.org, 1870–1916. Full text at
+`https://archive.org/download/blue-book-YYYY_202305/Blue-Book-YYYY_djvu.txt` — note the filename
+prefix is **not** the item identifier, which cost a wasted pass.
+
+**Blue Book 1884, Government Printing Office:**
+
+> Quoin-drawer Overseer · **William Hartley Sneyd** · present appointment 1 Dec 1884 · appointed by
+> the Governor in Council · **£225** · **first appointed to the public service 1 February 1862**
+
+Also listed in the 1886 index. **This is new.** The archive had him only as the *contractor* of the
+1902 coronial certificate and the insolvent of 1873. He was in the Government Printing Office for at
+least twenty-four years. Twelve years back from 1902 — the period his widow swore he "had not been
+able to work… in consequence of an injury to his arm" — is about 1890, and a compositor's overseer
+with an injured arm does not go back to the forme. `inferred` on name alone; the Blue Book gives no
+parentage.
+
+Two more Sneyds in the colonial service: **S. H. S. Sneyd**, Clerk and Locker, Customs, at
+**Gladstone** by 1880, £160, entered 24 January 1877 (Samuel Hanley Stafford Sneyd, 1851–1901); and
+**Arthur Sneyd**, £100 from 10 September 1880, listed 1883–86.
+
+**And a useful absence.** Samuel Charles Sneyd is in *no* Blue Book — 1870, 1872, 1874, 1876, 1880,
+1882, 1884 all checked. The series starts in 1870 and he died in 1885, so **he had left the
+Queensland public service before 1870**. That narrows a governorship previously datable only as
+"from 1859". The 1859–69 volumes are not digitised. `null result`
+
+## 100. ANSWERED — why the prisoner photo book matched "Sneyd"
+
+`ITM86903`'s 229 digital representations include **`DR18166`** —
+
+> "Photographic record, description and criminal history of **Roy Sneyd, also known as Raymond
+> Smith**, 29 April 1922" · page 1015
+
+The tree has **Roy Sneyd, 1899–1964**, son of Robert McDowall Sneyd and Jessie Steel (confirmed by
+the Queensland death index, 1964/C/4344). He would be twenty-two in April 1922. `inferred on name
+and age` — a mugshot and a criminal history, under an alias, of a second cousin of Ivy's generation.
+
+**Not published.** It is an open public record and the man died in 1964, but it is a criminal record
+of a collateral relative who may have living descendants, and the precedent this archive set with the
+1902 inquest was to put that decision to the family rather than take it. Flagged to David.
+
+## 101. Not landed — and why
+
+- **George Pitt D'Arcy's New South Wales probate, 1849.** State Records NSW has no open JSON API
+  found; its index search returns a generic page to `curl`. Needs the browser, or their online index
+  by hand. **Not attempted further.**
+- **The Sanigar registers, Berkeley, Gloucestershire.** FreeREG and FamilySearch both need a session
+  and a form, and neither yields to `curl`. **Not attempted further.** Note that today's Queensland
+  death index did put a civil registration under Miriam Wakefield's parents — *James Wakefield and
+  Hannah Saniger* — which firms up the join at the top of the branch even without the English
+  registers.
+
+Both stay in the queue, honestly, as attempted rather than done.
+
+## 102. The site, rebuilt around findability
+
+The Defranceski archive was read for its house pattern and two mechanisms were ported.
+
+**`whoindex.json` + `wholink.js`.** `tools/build_mentions.py` scans the *built* HTML for every
+published person's name, writes `site/src/data/mentions.json` and `site/public/whoindex.json`, and
+`wholink.js` turns any occurrence of a known name in page prose into a link to that person — at most
+twice per page, never inside an existing anchor, never on the person's own page. **171 of 459 people
+are actually written about somewhere; 281 mentions.** A name that appears only in a list is not in
+the index, so a card grid does not become a wall of links.
+
+Because the scan reads `dist/`, the build is now **two-pass**:
+
+    npm run build && python3 tools/build_mentions.py && npm run build
+
+**Every person page is now a dossier.** New section, *"Everywhere X appears in this archive"*, listing
+every page that writes about them with the surrounding sentence.
+
+**Corrections on person pages.** The person pages render the GEDCOM verbatim, so
+`/people/william-hartley-sneyd` was still saying *Born 1838* while `/inquest-1902` explained at length
+that it is 30 September 1837 — the archive contradicting itself. A `CORRECTIONS` map now shows the
+archive's finding in the table, prints the tree's version beneath it with the reason and a link, and
+carries the corrected years into the page's eyebrow. Six people covered so far.
+
+**Places are searchable**, on the same pattern as the people finder — town, county or year, with the
+group headings collapsing and `?q=` deep links.
+
+## 103. Site changes
+
+- `/great-war` — the portrait; `/sergeant-sneyd` — the Blue Book table and the absence.
+- `/people/*` — mentions, corrections, corrected eyebrows.
+- `/places` — search.
+- `wholink.js`, `whoindex.json`, `tools/build_mentions.py` — new.
+

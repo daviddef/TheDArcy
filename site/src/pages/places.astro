@@ -41,16 +41,26 @@ for (const p of places) (groups[country(p)] ||= []).push(p);
     </div>
   </section>
 
+  <section class="blk" id="finder">
+    <div class="lab">Search</div>
+    <label for="q" class="vh">Search the places</label>
+    <input id="q" type="search" autocomplete="off"
+      placeholder="Try a town, a county, a year — Boulia, Staffordshire, 1826…"
+      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
+             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
+    <p class="small" id="pcount" style="margin-top:.8rem" aria-live="polite">{places.length} places</p>
+  </section>
+
   {order.filter((k) => groups[k]).map((k) => (
-    <section class="blk">
+    <section class="blk plgroup">
       <h2>{k}</h2>
-      <p class="small">{groups[k].length} places · {groups[k].reduce((a, p) => a + p.n, 0)} recorded events</p>
+      <p class="small gcount">{groups[k].length} places · {groups[k].reduce((a, p) => a + p.n, 0)} recorded events</p>
       <div class="scroll" style="margin-top:.8rem">
         <table>
           <thead><tr><th class="m">From</th><th>Place</th><th class="m">Events</th></tr></thead>
           <tbody>
             {groups[k].sort((a, b) => (a.first || 9999) - (b.first || 9999)).map((p) => (
-              <tr>
+              <tr class="prow" data-s={`${p.place} ${(p.variants || []).join(" ")} ${p.first || ""} ${k}`.toLowerCase()}>
                 <td class="m">{p.first || "—"}</td>
                 <td>
                   {p.place}
@@ -66,4 +76,33 @@ for (const p of places) (groups[country(p)] ||= []).push(p);
       </div>
     </section>
   ))}
+  <script is:inline>
+    (function () {
+      var q = document.getElementById("q");
+      if (!q) return;
+      var rows = [].slice.call(document.querySelectorAll(".prow"));
+      var groups = [].slice.call(document.querySelectorAll(".plgroup"));
+      var count = document.getElementById("pcount");
+      function apply() {
+        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+        var shown = 0;
+        rows.forEach(function (r) {
+          var h = r.getAttribute("data-s");
+          var ok = terms.every(function (t) { return h.indexOf(t) !== -1; });
+          r.hidden = !ok;
+          if (ok) shown++;
+        });
+        groups.forEach(function (g) {
+          var any = g.querySelectorAll(".prow:not([hidden])").length;
+          g.hidden = any === 0;
+          var gc = g.querySelector(".gcount");
+          if (gc) gc.textContent = any + (any === 1 ? " place" : " places");
+        });
+        count.textContent = shown + (shown === 1 ? " place" : " places") + (terms.length ? " matching" : "");
+      }
+      q.addEventListener("input", apply);
+      var pre = new URLSearchParams(location.search).get("q");
+      if (pre) { q.value = pre; apply(); }
+    })();
+  </script>
 </Base>
