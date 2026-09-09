@@ -22,6 +22,7 @@ nothing here has been sent, and nothing will be sent without David deciding to.
 | 7 | `requests/scotlandspeople-murdoch.md` | The generation above Francis Murdoch |
 | 8 | `requests/rootsireland-atkinson-limerick.md` | Anything at all about Richard Atkinson and Anne |
 | 9 | `notes/letters/2026-09-tna-ordnance.md` | Which Ordnance series could carry an RE commission of 1776 |
+| 10 | `requests/qsa-sneyd-gaol-and-police.md` | **The largest untouched body of record in the archive** — Samuel Charles Sneyd was chief constable at Moreton Bay from 1849 and Governor of Brisbane Gaol from 1859. Their catalogue will not take a search from a URL |
 
 **The cheap wins are 5 and 6** — both free, both quick, and one of them may already be sitting on a
 website. **The one that matters is 1 and 2**, and they are the two that might close the question this

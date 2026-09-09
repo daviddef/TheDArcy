@@ -1073,3 +1073,76 @@ testimony, not a service record.** The site says so.
   unresearched.
 - The Madeley registers themselves, to separate the concurrent Sneyd households and settle the
   grocer's birth year.
+
+---
+
+# Tenth pass — the army muster, and the gaol
+
+## 40. The army record — found, and it corrects the regiment
+
+**British Army, Worldwide Index 1841** (Kevin Asplin's index to the musters):
+
+| | |
+|---|---|
+| Name | **Samuel Sneyd** |
+| Year | **1841** |
+| Rank | **Private** |
+| Service number | **1463** |
+| Unit | **80th Foot** |
+| Sub unit | **Mounted Police Attached** |
+| Location | **Parramatta, New South Wales** |
+| Reference | **TNA WO 12/8483** |
+
+**Two apparent contradictions, both of which resolve.**
+
+**The regiment.** The obituary says he came out with the *4th (King's Own)* in 1832; the 1841 muster
+has him in the **80th Foot**. Both are probably true in sequence. The 4th left the colony in the later
+1830s and the 80th replaced it; a soldier who had just married locally — Camden, February 1837 — would
+volunteer into the incoming regiment rather than sail home. The **80th were the Staffordshire
+Volunteers**, which for a Hanley man is a natural landing place. *Inferred, and labelled as such: no
+transfer document has been seen.*
+
+**The rank.** The press calls him *Serjeant* Sneyd in 1839; the muster calls him a *private* in 1841.
+Not a demotion. The New South Wales Mounted Police was staffed by detachments seconded from line
+regiments, and a man held **police rank while remaining on his regiment's books at his regimental
+rank**. Sergeant of police, private of the 80th, at the same time.
+
+**Checked and excluded.** Several *Samuel Sneyd* entries in the Chelsea pension returns (**WO 22**)
+belong to a different man — **54th Foot, pension paid at Dublin**. Recorded so nobody attaches them
+later.
+
+**Still wanted:** the muster book **WO 12/8483** itself, plus the surrounding 80th Foot musters, for
+his enlistment, his transfer from the 4th, and his discharge. Not digitised.
+
+## 41. The gaol he ran
+
+**The Courier (Brisbane), Saturday 22 August 1863, page 3** — `nla.news-article3165233`, *"THE
+BRISBANE GAOL"*. A writer was taken through the prison and printed a long account of it:
+
+> by the kindness of **Mr. Sneyd, the governor**, we were made acquainted with the internal economy …
+> the Brisbane Gaol was **as well managed as it could be under the circumstances and the money voted
+> for it** … there is no overcrowding, the consequences of which are overcome only by **the very best
+> management on the part of the governor** and those in authority.
+
+The prisoners' bread is described as "really good white, fresh, and wholesome", and men leaving the
+gaol could take up employment. A second, longer account ran on **18 September 1863** (p. 6).
+
+This is the closest thing the archive has to a description of his working life — an approving
+account of a colonial prison, written two years into his governorship.
+
+## 42. The gaol became a family trade
+
+His son **Joseph Sneyd** was **chief warder at the Brisbane Gaol for thirty years**, recorded in the
+1911 obituaries of *Joseph's* own son W. Sneyd of Ipswich (*Queensland Times*, 20 June 1911;
+*The Telegraph*, 29 and 30 June 1911). Father governor, son chief warder, across half a century of
+the same building.
+
+## 43. What could not be done, and why
+
+**Queensland State Archives.** Their ArchivesSearch catalogue is a JavaScript application that
+**will not accept a search from a URL** — every attempt returned the unfiltered 3.27-million-record
+listing. It needs a person typing into the box. Since Sneyd was **chief constable at Moreton Bay from
+1849** and **Governor of Brisbane Gaol from 1859**, this is now **the largest untouched body of
+record about anyone in this archive**: appointments, gaol letterbooks, staff registers, and the
+Queensland Blue Books, which would confirm his tenure year by year. Written up as
+`requests/qsa-sneyd-gaol-and-police.md`.
