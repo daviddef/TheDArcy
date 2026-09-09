@@ -1,0 +1,265 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const file = [
+  ["Item", "ITM2736504"],
+  ["Digital copy", "DR103140 · PDF, 18 images, 15.2 MB · open, no restrictions"],
+  ["Series", "S36 — Coronial Files (Inquests and No Inquests)"],
+  ["Previous system IDs", "JUS/N309 · SRS36/5/308"],
+  ["Agency control number", "301"],
+  ["Court", "Police Court, Brisbane, 29 September 1902"],
+  ["Before", "R. D. Neilson, Esq., J.P. · inquiry conducted by Sub-Inspector Ahern"],
+];
+
+const cert = [
+  ["Name of deceased", "William Hartley Sneyd"],
+  ["Profession or calling", "Contractor"],
+  ["Where found, and when", "Brisbane, 12 September"],
+  ["Date of death", "11 September 1902"],
+  ["Supposed cause of death", "Poisoning (suicide)"],
+  ["Suspicious circumstances", "— left blank —"],
+];
+---
+<Base
+  title="The Inquest, 1902"
+  eyebrow="Queensland State Archives · downloaded and read 9 September 2026"
+  dek="William Hartley Sneyd was found dead in Victoria Park, Brisbane, on 12 September 1902. The coronial file has been read in full, and it is published here in full, because an archive that suppresses what it finds is not an archive.">
+
+  <section class="blk">
+    <div class="note">
+      <strong>This page concerns a death by suicide</strong> and quotes a coroner's file, including a
+      medical analysis and the sworn evidence of the man's widow. It is set out plainly and without
+      euphemism. If that is not what you came for, <a href={u("/sneyd")}>the Sneyd family page</a> is
+      the place to go instead.
+    </div>
+
+    <p class="lede" style="margin-top:1.4rem">He is Cristina's three-times-great-grandfather:
+    <strong>William Hartley Sneyd</strong> → Arthur William Hartley Sneyd → Ivy Miriam Sneyd →
+    Kenneth Lindsay D'Arcy → Ian → Cristina. The family tree carried a death date for him and nothing
+    else at all. This is what was behind it.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The finding</div>
+    <h2 style="margin-top:.4rem">Victoria Park, 11 September 1902</h2>
+
+    <p>He left home a little before nine o'clock on the morning of Thursday 11 September 1902. He was
+    sixty-four, a contractor by trade, and he had not been able to work for about twelve years because
+    of an injury to his arm. He had had asthma for ten or twelve years, and a bad attack of it two
+    months before.</p>
+
+    <p style="margin-top:.9rem">At about ten the next morning two men walking the railway line through
+    <strong>Victoria Park</strong> found him lying between two stacks of railway rails, roughly two
+    hundred yards in from Gregory Terrace. There was a bottle near him. The Government Analyst found
+    <strong>an ounce and a quarter of crude carbolic acid</strong> in his stomach. The minimum fatal
+    dose is about an eighth of an ounce.</p>
+
+    <p style="margin-top:.9rem">The magisterial inquiry sat at the Brisbane Police Court on
+    29 September 1902 and entered the cause of death in three words: <strong>"Poisoning
+    (suicide)."</strong> The police summary closes:</p>
+
+    <blockquote>
+      Deceased had been suffering from asthma for about 12 years and he often stated he wished some
+      one would put him out of his misery… <strong>The case was apparently one of suicide. No
+      suspicious circumstances.</strong>
+    </blockquote>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The file</div>
+    <h2 style="margin-top:.4rem">What was ordered, and what came</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table><tbody>
+        {file.map(([k, v]) => (<tr><td>{k}</td><td class={k === "Item" || k.startsWith("Previous") ? "mono" : ""}>{v}</td></tr>))}
+      </tbody></table>
+    </div>
+    <p class="small" style="margin-top:.9rem">Queensland State Archives has digitised this file and
+    serves it free. It was found by searching the QSA catalogue for the surname and reading all
+    forty-one hits — the archive did not know an inquest existed until that search.
+    <span class="chip doc">documented</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Certificate of particulars</div>
+    <h2 style="margin-top:.4rem">The formal record</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table><tbody>
+        {cert.map(([k, v]) => (<tr><td>{k}</td><td><strong>{v}</strong></td></tr>))}
+      </tbody></table>
+    </div>
+    <p class="small" style="margin-top:.9rem">Four witnesses were called: John Williams, labourer;
+    <strong>Miriam Sneyd, widow</strong>; Edward Law, retired; and Patrick Moroney, constable. All four
+    depositions survive, and all four are below.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">First deposition</div>
+    <h2 style="margin-top:.4rem">John Williams, labourer, of Roche Street, Spring Hill</h2>
+    <blockquote>
+      I remember 12th September inst about 10 A.M. I was in company of Alfred Hutchison walking along
+      the railway line in Victoria Park. I saw a man lying between two stacks of rails. I went up to
+      within three feet of him &amp; said to Hutchison "That man dead". I went &amp; reported the
+      matter to Mrs. Costello, caretaker of the park. I remained with the body until the arrival of
+      Const. Moroney when I saw remove the body. I visited the spot later in the day &amp; found near
+      where the body had been a bottle containing some liquid. (The bottle produced is the same) which
+      I handed to the police.
+    </blockquote>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Second deposition — the important one</div>
+    <h2 style="margin-top:.4rem">Miriam Sneyd, his widow</h2>
+    <p>They had married at Brisbane when he was twenty-two. She had six living children by him, and
+    she was asked, as widows were, to supply the registrar's particulars — which is why the most
+    valuable single sentence in this archive is buried at the end of the worst day of her life.</p>
+    <blockquote>
+      I am the widow of the late William Hartley Sneyd. I remember the morning of 11th September
+      instant, my husband left home a little before 9 o'clock. I heard next day about 11 o'clock by the
+      police that his body had been found in Victoria Park. His body was brought here by the Undertaker
+      the same evening.<br /><br />
+
+      I did not notice anything unusual in his appearance when he last left home. But his health was
+      not so good as usual. He had been suffering from Asthma for 10 or 12 years &amp; had a very bad
+      attack about two months ago. <strong>He has never threatened to take his life but when suffering
+      greatly has said he wished some one would take him out of his misery.</strong><br /><br />
+
+      I was not aware he had purchased any carbolic or other poison. I never saw the bottle produced
+      before.<br /><br />
+
+      He had not been able to work for about 12 years in consequence of an injury to his arm.<br /><br />
+
+      His age was 64 years, born in ——, <strong>his father's name was Samuel Sneyd, Gaol Governor, his
+      mother's name was Catherine.</strong> — Hislop was the Undertaker, he was a Contractor, he was
+      married at Brisbane when 22 years, to Miriam Wakefield. Thomas George 41, Louisa Miriam 39,
+      Catherine Isabel 37, Arthur William Hartley 35, Ernest Ephraim 33, Ada Zillah 30 — and the whole
+      living.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— signed <em>Miriam Sneyd</em>.
+      The birthplace is entered on the form but is not legible in the digitised image.</footer>
+    </blockquote>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>"His father's name was Samuel Sneyd, Gaol Governor."</strong> Sworn, by the man's own
+      wife, in 1902. This archive spent an entire research pass testing whether the Sneyd line joined
+      where the tree said it did — and here the join is confirmed from inside the family, with the
+      gaol governorship attached to it. <a href={u("/sergeant-sneyd")}>Samuel Charles Sneyd →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Third deposition</div>
+    <h2 style="margin-top:.4rem">Edward Law, retired, of Hartley Street off Gregory Terrace</h2>
+    <blockquote>
+      I know the deceased William Hartley Sneyd for many years. I remember the 11th Sept instant I saw
+      Sneyd about 4 on that day walking along Gregory Terrace. <strong>I remarked to him that he was
+      looking well &amp; he passed on.</strong> I had not seen him since.<br /><br />
+
+      The following morning I heard his body had been found in Victoria Park.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— signed <em>Edward Law × his
+      mark</em>. He could not write.</footer>
+    </blockquote>
+    <p class="small" style="margin-top:.9rem">He is the last person known to have spoken to him: about
+    four in the afternoon, on Gregory Terrace, a few hundred yards from where he would be found.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Fourth deposition</div>
+    <h2 style="margin-top:.4rem">Patrick Moroney, police constable, Brisbane</h2>
+    <blockquote>
+      I remember about 10.20 A.M. on 12th instant in consequence of something I heard I went to a spot
+      in Victoria Park beside the Railway line &amp; about 200 yards from Gregory Terrace. I there
+      found the body of William Hartley Sneyd lying between 2 stacks of railway rails. John Williams
+      was there.<br /><br />
+
+      I examined the body &amp; found no mark of violence. In the clothing I found a knife, a pair of
+      spectacles, &amp; 2 handkerchiefs, <strong>which I handed to a son of deceased</strong>.<br /><br />
+
+      I had the body removed to the morgue. On the same day I was present when a post mortem was made
+      by Dr Dods… The same evening Const. Henry handed me the bottle produced. On the morning of 13th
+      I handed these to the Government Analyst.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— signed <em>P. Moroney</em></footer>
+    </blockquote>
+    <p class="small" style="margin-top:.9rem">A knife, a pair of spectacles and two handkerchiefs. One
+    of his sons came to the morgue for them.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The two certificates</div>
+    <h2 style="margin-top:.4rem">Post-mortem, and analysis</h2>
+
+    <blockquote>
+      <strong>Hospital Morgue, Brisbane, Sept 12 1902.</strong> I hereby certify that on the 12 day of
+      September 1902, I made a Post-mortem Examination of the body of a male named Wm Hartley Sneyd, by
+      order of E. M. Murray, Esq., P.M., and I forwarded in a sealed jar, Stomach with contents, a
+      portion of the Liver, Kidney, and Spleen to the Government Analyst.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— Government Medical Officer
+      [Dr Dods]. A note in the margin: "Burial order given 12/9/02."</footer>
+    </blockquote>
+
+    <blockquote>
+      I found <strong>1¼ ounces of crude carbolic acid in the stomach</strong>. The part of the
+      intestines submitted also contained crude carbolic acid. The bottle contained crude carbolic
+      acid. The crude carbolic acid consisted of 30 per cent of Carbolic and Cresylic Acids mixed with
+      tar oils.<br /><br />
+      "Taff's" Medical Jurisprudence states that <strong>the minimum fatal dose of Carbolic Acid is
+      about ⅛ of an ounce.</strong>
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— J. Brownlie Henderson,
+      Government Analyst, Government Chemical Laboratory, Brisbane, 22 September 1902.</footer>
+    </blockquote>
+
+    <p class="small">Ten times the fatal dose. Crude carbolic — the coarse disinfectant grade, black
+    with tar oils — was in every yard and stable in Brisbane in 1902 and cost pennies. Miriam had not
+    known he had any.</p>
+  </section>
+
+  <section class="blk">
+    <h2>What the file settles</h2>
+    <ol class="dek">
+      <li><strong>The parentage, on oath.</strong> Miriam names his father as
+      <strong>Samuel Sneyd, Gaol Governor</strong>, and his mother as <strong>Catherine</strong> —
+      Samuel Charles Sneyd, Governor of Brisbane Gaol from 1859, and Catherine Margaret Mulcahy, whom
+      he married at Camden in 1837. The link is no longer an inference.</li>
+      <li><strong>He was born in 1838</strong>, not 1837. Aged 64 in September 1902. Find a Grave gives
+      30 September 1837; the file does not support it.</li>
+      <li><strong>Married at Brisbane aged 22</strong> to <strong>Miriam Wakefield</strong> —
+      consistent with the recorded marriage of 15 November 1859.</li>
+      <li><strong>Six children, all living in 1902</strong>, with ages that match the tree exactly:
+      Thomas George 41, Louisa Miriam 39, Catherine Isabel 37, <strong>Arthur William Hartley 35</strong>,
+      Ernest Ephraim 33, Ada Zillah 30. Arthur William Hartley is Ivy's father.</li>
+      <li><strong>He was a contractor who stopped working at about fifty-two</strong>, after an injury
+      to his arm — twelve years of a man not able to do his trade, and ten or twelve years of asthma,
+      which is very nearly the same twelve years.</li>
+      <li>The undertaker was <strong>Hislop</strong> — John Hislop &amp; Sons of Peel Street, South
+      Brisbane, the same firm that would bury his granddaughter's husband
+      <a href={u("/papers")}>Lindsay D'Arcy</a> thirty-four years later.</li>
+    </ol>
+  </section>
+
+  <section class="blk">
+    <h2>Two notes on the document itself</h2>
+    <p><strong>Image 3 is somebody else's tragedy.</strong> The third page of the PDF is a summary
+    sheet for an entirely unrelated case — Peter N. Paulsen, a farmer of Meringandan — bundled into the
+    same wrapper at some point in the file's life. It has nothing to do with this family, and is noted
+    here so that nobody else reading the same download has to work it out twice.</p>
+
+    <p style="margin-top:1rem"><strong>The scan carries no text layer.</strong> Every word on this page
+    was read off the images by eye. Where a word is illegible it is marked; where the sense is certain
+    but the hand is not, the reading is the obvious one. The transcription is the archive's, and any
+    error in it is the archive's.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Why this is published</h2>
+    <p class="dek">A hundred and twenty-four years is a long time, and the man deserves better than a
+    date with nothing behind it. The tree recorded that William Hartley Sneyd died on 11 September
+    1902 and stopped. What actually happened is that a man who had been unable to work for twelve
+    years, and could not breathe, walked out of his house one morning and into the park — and his
+    neighbour, the afternoon before, thought he was looking well.</p>
+    <p class="dek" style="margin-top:.9rem">This archive publishes what the documents say. It does that
+    for the gold medal at Orthes and the organ at All Saints', and it has to do it here too, or the
+    method means nothing. The decision to publish this file was the family's.</p>
+    <p style="margin-top:1.2rem"><a href={u("/sneyd")}>The Sneyds →</a> ·
+    <a href={u("/sergeant-sneyd")}>His father, the gaol governor →</a> ·
+    <a href={u("/method")}>How this archive labels claims →</a></p>
+  </section>
+</Base>

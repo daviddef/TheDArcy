@@ -86,8 +86,11 @@ matched to people.
 
 ## *** WHAT DAVID SHOULD DO ***
 
-1. **Download DR103140** — the 1902 inquest file, free, open, 15 MB. It is the single best unread
-   document about this family.
+1. ~~**Download DR103140** — the 1902 inquest file.~~ **DONE, 9 September 2026.** Downloaded, read
+   page by page and transcribed in full. It records a **suicide** — carbolic acid, Victoria Park —
+   and, in the widow's sworn deposition, it **names his father as "Samuel Sneyd, Gaol Governor"**,
+   which closes the Sneyd joint. Published at `/inquest-1902`; transcription in
+   `sources/inquests/`.
 2. Order or view **ITM1412361** (Arthur Hartley's intestacy file) and **ITM2824953**.
 3. Ask QSA's reference staff where a **gaol governor's service record, 1859–1880s** would sit, since
    it is plainly not indexed under his name. The Queensland **Blue Books** would at least confirm his

@@ -9,5 +9,7 @@ site/.astro/
 # public repository. Regenerate with a fresh MyHeritage GEDCOM export.
 sources/*.ged
 
-# Coronial files: sensitive, and not published without the family's decision.
-sources/inquests/
+# Scanned coronial files: 15 MB each, and images of a sensitive original. The
+# transcriptions beside them ARE committed — that is what the archive publishes.
+# Re-download from Queensland State Archives by digital representation ID.
+sources/inquests/*.pdf

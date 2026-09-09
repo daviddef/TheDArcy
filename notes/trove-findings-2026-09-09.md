@@ -1220,3 +1220,71 @@ administration** files under Sneyd, not individually identified. To be listed an
   reference staff, or the Queensland **Blue Books**, which would at least confirm his tenure and
   salary year by year.
 - **TNA WO 12/8483** — the 80th Foot muster that places him at Parramatta in 1841. Not digitised.
+
+---
+
+# Pass twelve — the inquest read (9 September 2026)
+
+DR103140 downloaded (15.2 MB, 18 images, no text layer) and read page by page. **The finding is that
+William Hartley Sneyd took his own life**, and the family's decision, taken the same day, was to
+publish it plainly. Full transcription: `sources/inquests/TRANSCRIPT-william-hartley-sneyd-1902.md`
+(committed; the scan itself is not). Site page: `/inquest-1902`.
+
+## 46. What the file says
+
+Magisterial Inquiry, **Police Court Brisbane, 29 September 1902**, before R. D. Neilson JP,
+conducted by Sub-Inspector Ahern. Death **11 September 1902**; body found **12 September** in
+**Victoria Park**, between two stacks of railway rails about 200 yards in from Gregory Terrace.
+Profession **Contractor**. Supposed cause of death, in the certificate's own words: **"Poisoning
+(suicide)."** Police summary: *"The case was apparently one of suicide. No suspicious circumstances."*
+
+Government Analyst **J. Brownlie Henderson**, 22 September 1902: **1¼ oz of crude carbolic acid in
+the stomach**, the acid being 30% carbolic and cresylic acids in tar oils; minimum fatal dose about
+⅛ oz. Post-mortem by **Dr Dods**, by order of E. M. Murray PM; burial order given 12/9/02.
+
+Four depositions — **John Williams** (labourer, Roche St Spring Hill, found the body with Alfred
+Hutchison and reported it to Mrs Costello the park caretaker); **Miriam Sneyd** (the widow);
+**Edward Law** (retired, Hartley St; last person to speak to him, about 4pm on the 11th — *"I
+remarked to him that he was looking well"*; signed with his mark); **Constable Patrick Moroney** (no
+marks of violence; a knife, spectacles and two handkerchiefs in the clothing, handed to a son).
+
+## 47. What it settles — and it settles the Sneyd joint
+
+Miriam's deposition, under oath: **"His age was 64 years… his father's name was Samuel Sneyd, Gaol
+Governor, his mother's name was Catherine."**
+
+That is the join to **Samuel Charles Sneyd** confirmed from inside the family, with the gaol
+governorship attached, by the person best placed to know. Passes eight to eleven were circling this;
+it is now closed.
+
+Corrections it forces:
+
+| Was | Now | On what |
+|---|---|---|
+| Born 30 Sept **1837** (Find a Grave) | Born **1838** | age 64 in September 1902 |
+| Occupation not recorded | **Contractor**, who *"had not been able to work for about 12 years in consequence of an injury to his arm"* | Miriam's deposition |
+| Marriage 15 Nov 1859 | consistent — *"married at Brisbane when 22 years, to Miriam Wakefield"* | Miriam's deposition |
+
+Six children named with ages, all matching the tree exactly: Thomas George 41, Louisa Miriam 39,
+Catherine Isabel 37, **Arthur William Hartley 35**, Ernest Ephraim 33, Ada Zillah 30. The undertaker
+was **Hislop** — the same firm that buried Lindesay D'Arcy in 1936.
+
+## 48. A trap in the file
+
+**Image 3 is a different case entirely** — a summary sheet for Peter N. Paulsen, farmer, of
+Meringandan — bundled into the same wrapper. Anyone else downloading DR103140 will hit it.
+
+## 49. Site changes made
+
+- New page `/inquest-1902`, the whole file transcribed, with a content note at the head.
+- `/sneyd` — the section that said the file *"has not been read yet, and it is the best unread
+  document in this archive"* replaced with the finding. Also fixed a stray `</p>` there, and the
+  contradictory birth date (the page asserted 1837 "not the 1838 the tree carries"; the tree was
+  right).
+- `/sources` — QSA series S36 added to the record sets, as read in full.
+- `/open-questions` — the Sneyd bullet rewritten: the English-origin scepticism it called for has now
+  been applied and paid twice, and the birth date it carried is corrected. What is left is Samuel
+  Charles Sneyd's own service record.
+- `/` — a card in "Elsewhere in the archive".
+- `.gitignore` narrowed from `sources/inquests/` to `sources/inquests/*.pdf`, so the transcription is
+  versioned and the 15 MB scan is not.

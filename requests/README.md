@@ -22,7 +22,7 @@ nothing here has been sent, and nothing will be sent without David deciding to.
 | 7 | `requests/scotlandspeople-murdoch.md` | The generation above Francis Murdoch |
 | 8 | `requests/rootsireland-atkinson-limerick.md` | Anything at all about Richard Atkinson and Anne |
 | 9 | `notes/letters/2026-09-tna-ordnance.md` | Which Ordnance series could carry an RE commission of 1776 |
-| 10 | `requests/qsa-sneyd-gaol-and-police.md` | **Searched 9 Sep 2026 — done.** 41 items found, including a **free digitised 1902 inquest file** for William Hartley Sneyd (DR103140, 15 MB). The file now lists everything QSA holds under the name and what to order |
+| 10 | `requests/qsa-sneyd-gaol-and-police.md` | **Searched and read 9 Sep 2026 — done.** 41 items found. The **1902 inquest file** (DR103140) has been downloaded and transcribed in full: it records a suicide, and the widow's sworn deposition names his father as "Samuel Sneyd, Gaol Governor", closing the Sneyd joint. Published at `/inquest-1902`. Still to order: ITM1412361 and ITM2824953 |
 
 **The cheap wins are 5 and 6** — both free, both quick, and one of them may already be sitting on a
 website. **The one that matters is 1 and 2**, and they are the two that might close the question this
