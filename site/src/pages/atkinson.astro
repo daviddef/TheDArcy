@@ -1,0 +1,88 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import families from "../data/families.json";
+import { byId } from "../lib/people.js";
+const f = families.find((x) => x.surname === "Atkinson");
+const shown = f.members.filter((m) => !m.living);
+---
+<Base
+  title="The Atkinsons"
+  eyebrow="Limerick to Wickham Terrace"
+  dek="An organist christened in Limerick Cathedral who emigrated in 1862 and, two years later, installed the first organ in All Saints' Wickham Terrace — and then played it.">
+
+  <section class="blk">
+    <p class="lede">Ida Kathleen Atkinson married George Pitt D'Arcy at Trinity Church, Fortitude
+    Valley, on 10 October 1888. Her father is the most engaging in-law in the archive, and the only
+    one whose work you can still go and look at.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">9 July 1832</div>
+    <h2 style="margin-top:.4rem">Paul Cole Atkinson, christened at St Mary's Cathedral, Limerick</h2>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          <tr><td>Christened</td><td class="m">9 July 1832</td><td>Limerick, County Limerick — St Mary's Cathedral</td></tr>
+          <tr><td><strong>Parents</strong></td><td colspan="2"><strong>Richard Atkinson and Anne</strong> — a generation the archive did not have before</td></tr>
+          <tr><td>Organist</td><td class="m">1853</td><td>Bandon, County Cork</td></tr>
+          <tr><td>Emigrated</td><td class="m">2 September 1862</td><td>to Brisbane, with his family</td></tr>
+          <tr><td>Died</td><td class="m">14 May 1906</td><td>in his bed at Graham Street, South Brisbane</td></tr>
+          <tr><td>Buried</td><td class="m">15 May 1906</td><td>Toowong Cemetery, Portion 1, Section 49, Plot 15/16</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:.8rem">The christening is indexed in <em>Ireland, Births and
+    Baptisms, 1620–1881</em>, and it is the record that names Richard and Anne.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Wednesday 3 August 1864</div>
+    <h2 style="margin-top:.4rem">The organ</h2>
+    <p>Two years after stepping off the ship, he put an organ into a Brisbane church. The Organ
+    Historical Trust of Australia records it:</p>
+    <blockquote>
+      The first organ at All Saints' was installed in the old church and used for the first time on
+      <strong>Wednesday 3 August 1864</strong>. It was built by <strong>Thomas Jennings of
+      London</strong>, and installed by <strong>Mr Paul Atkinson</strong>, who appears to have been
+      the organist of the church at this time.
+    </blockquote>
+    <p>All Saints' Wickham Terrace is the oldest church in the Brisbane CBD. An instrument shipped
+    from London, assembled by a man who had been an organist at Bandon in County Cork eleven years
+    earlier, and played by him in a colonial town of a few thousand people.</p>
+    <div class="note" style="margin-top:1.2rem">
+      This is the one thing in the archive that is neither a date nor a document but a
+      <em>skill</em> — something a man knew how to do, carried nine thousand miles, and used. It is
+      also, incidentally, an independent confirmation that the family reached Brisbane by 1864.
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>The Limerick problem</h2>
+    <p>His wife <strong>Jane Creech</strong> was also of Limerick, born about 1830. Between them the
+    Atkinsons and Creeches are the archive's Irish anchor — and they are anchored at exactly one
+    generation deep. <strong>Richard Atkinson and Anne</strong> have a name and nothing else: no
+    dates, no townland, no occupation, no marriage.</p>
+    <p style="margin-top:.9rem">Limerick is a hard county for this period. The Church of Ireland
+    registers of many parishes were destroyed in the Four Courts fire of 1922, and what survives is
+    patchy. St Mary's Cathedral is one of the parishes with surviving records, which is why Paul Cole
+    Atkinson can be found at all. <a href={u("/open-questions")}>What to try next →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The people</h2>
+    <div class="grid three" style="margin-top:1rem">
+      {shown.map((m) => {
+        const o = byId.get(m.id);
+        return (
+          <a class="cardlink" href={u(`/people/${o ? o.slug : ""}`)}>
+            <div class="nm">{m.name}</div>
+            <p class="small" style="margin-top:.3rem">{m.life || "dates unknown"}
+            {m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+</Base>

@@ -476,3 +476,136 @@ France" is probably wrong.
 7. **The in-law lines**, none of which has been touched yet: Atkinson (Limerick), Murdoch
    (St Quivox), Matson (Monaghan), Atwell (a merchant seaman who deserted), Blum (Germany),
    Wakefield (Bristol), and the Sneyds above Kempsey 1838.
+
+---
+
+# Fourth pass — the in-law families, and Robert D'Arcy again
+
+## 15. Atkinson — a generation gained
+
+*Ireland, Births and Baptisms, 1620–1881* (FamilySearch):
+
+> **Paul Cole Atkinson**, christening **9 July 1832, Limerick, County Limerick, Ireland**.
+> **Parents: Richard Atkinson, Anne.**
+
+**Richard Atkinson and Anne** are new to the archive. Nothing else about them yet — no dates, no
+townland, no occupation, no marriage. Limerick is a hard county for the period: many Church of
+Ireland registers were destroyed in the Four Courts fire of 1922, and St Mary's Cathedral is one of
+the parishes whose records survive, which is the only reason Paul Cole Atkinson can be found.
+
+Death and burial confirmed independently — **14 May 1906**, buried **Toowong**.
+
+**The organ**, from the Organ Historical Trust of Australia's account of All Saints' Wickham Terrace:
+
+> The first organ at All Saints' was installed in the old church and used for the first time on
+> **Wednesday 3 August 1864**. It was built by **Thomas Jennings of London**, and installed by
+> **Mr Paul Atkinson**, who appears to have been the organist of the church at this time.
+
+Two years after emigrating, and eleven years after being organist at Bandon in County Cork.
+
+## 16. Murdoch — documented from the Scottish statutory register
+
+*Scotland, Civil Registration, 1855–1875, 1881, 1891*:
+
+> **William Murdoch**, birth **7 October 1856**, **St Quivox and Newton, Ayrshire**.
+> **Parents: Francis Murdoch, Marion Watt Murdoch.**
+
+*Scotland, Marriages, 1561–1910*:
+
+> **Francis Murdoch** married **Marion Watt**, **6 May 1854**, **Avondale, Lanarkshire**.
+
+**Two corrections.** The tree gives the marriage as *1853 at Strathaven*. Strathaven is the town of
+Avondale parish, so the place is right under another name — but the year is **1854**.
+
+Children of Francis and Marion identified in the Scottish registers: **Marion Fleming, George,
+Janet, Jeanie, James** and William.
+
+**Still open:** the emigration to Queensland, and Francis Murdoch's own parents.
+
+## 17. Atwell — a probable census, not a proof
+
+*England and Wales Census, 1861* (FamilySearch `1:1:M7F3-CFR`):
+
+| | |
+|---|---|
+| **James Atwell** | age **7**, born **Hammersmith, Middlesex**, scholar |
+| Residence | **Westcombe Street, Batcombe, Somerset** (Shepton Mallet district) |
+| Relationship to head | **Nephew** |
+| Others on the record | Maria (5, Huntspill) · Fred (3, Highbridge) · Henry (1, West Pennard) |
+
+The right shape — a Somerset household with a London-born eldest child, matching a family whose
+father John Atwell was born in Somerset and whose mother was Maria Rossiter of Long Ashton. But he
+is listed as a *nephew*, the head of household is not captured in the index extract, and the census
+age is a year out from the tree's 29 March 1853. **Marked probable, not proved.**
+
+The family story that he "came to Australia in the merchant navy and deserted" is untested. A
+desertion would appear in a crew agreement or a shipping-office record and would date and name the
+ship.
+
+## 18. Blum and Sneyd — dates tightened
+
+- **Martha Blum**: born **25 July 1870**, died **19 December 1904**, buried **Lutwyche Cemetery,
+  Kedron** — confirming the tree exactly.
+- **William Hartley Sneyd**: born **30 September 1837** (the tree says 1838), died **11 September
+  1902**, buried **Lutwyche Cemetery, Kedron** — the same ground as his wife Miriam Wakefield and
+  his daughter-in-law Martha Blum. The Sneyds are a Lutwyche family; the D'Arcys are a Toowong and
+  Dutton Park family.
+
+## 19. Robert D'Arcy (c.1750–1827) — two more negatives, and the source that matters
+
+**Negative 1.** The *Dictionary of National Biography* entry headed "**D'Arcy, Robert**" is the
+**4th Earl of Holderness himself** — only surviving son of the 3rd Earl by Lady Frederica Schomberg;
+Lord-Lieutenant of the North Riding 1740; Lord of the Bedchamber 1741; ambassador to Venice 1744–46;
+minister at The Hague 1749; **Secretary of State for the Southern Department 1751–57**; Governor of
+the Prince of Wales 1771. Our Major-General has **no DNB entry**.
+
+**Negative 2.** A published compilation of Royal Engineers officer biographies drawn from
+**Connolly's *Roll of Officers of the Corps of Royal Engineers, 1660–1898*** contains **no Robert
+D'Arcy or Darcy** — but that compilation covers roughly 1800 onward, so it says nothing about a man
+commissioned in the 1770s. **Connolly's Roll itself remains unsearched, and is now the single most
+promising unread source in the archive.** A copy is at HathiTrust.
+
+**A chronological coincidence, weighed and set down.** The 4th Earl married Mary Doublet in 1743 and
+had three children: **George, Lord Darcy and Conyers, died 1747 aged two; Thomas, Lord Darcy and
+Conyers, born and died 1750; and Lady Amelia**, the only one to reach adulthood. Both legitimate
+sons died in infancy — which is why the earldom went extinct in 1778 and why an *illegitimate* son
+has to be posited at all. And the second son was born and died in **1750**, while our Robert was born
+about **1750 or 1751**. That is the kind of near-miss out of which family traditions are built. It is
+**not evidence**, and it is recorded only so that the next person to notice it finds it already
+weighed.
+
+**A name to be careful of.** **D'Arcy Wentworth** (c.1762–1827), the colonial surgeon of New South
+Wales, is a different man entirely, with a different family, who happens to carry *D'Arcy* as a given
+name and to have died in the same year in the same colony. He will contaminate any search that is not
+watching for him.
+
+---
+
+## Open after four passes
+
+**The one that matters**
+1. **Connolly's *Roll of Officers of the Corps of Royal Engineers, 1660–1898*** — commission dates,
+   postings, and possibly an origin for Robert D'Arcy. HathiTrust. *Not yet searched.*
+2. TNA Royal Engineers cadet and commission papers, 1760s–70s.
+3. The 4th Earl of Holderness's will (d. 16 May 1778).
+
+**Records known to exist and not yet read**
+4. NAA B2455 — Lindesay Atkinson D'Arcy's fourteen-page AIF dossier.
+5. CWGC — confirmation that Arthur Hartley Sneyd has no known grave and is on the Villers-Bretonneux
+   memorial.
+6. The c.1819 County Wicklow marriage of George Pitt D'Arcy and Maria White; and the 1805 parish
+   entry behind the Salisbury notice.
+7. The Major's age — 1849 notices say 69, the tree says 1783, WikiTree "about 1781". Muster rolls.
+8. Where the Major was between 1832 and 1849 — half-pay lists.
+9. War Office correspondence on the Orthes gold medal misdelivered for four years.
+10. Florence Isabel D'Arcy's Nundah burial (indexed as *F J D'Arcy*).
+
+**In-laws, still one generation deep**
+11. **Richard Atkinson and Anne** of Limerick — everything.
+12. **Francis Murdoch's** parents; and the Murdoch emigration to Queensland.
+13. **William Matson and Mary Abbot** of Cornacreeve, County Monaghan — no dates at all.
+14. **James Atwell's** desertion — crew agreements; and proof that the 1861 Batcombe census entry is
+    him.
+15. **John Blum** — where in Germany, and on what ship.
+16. The **Sneyds above 1837**, treated with the same scepticism as the D'Arcys above 1751: *Sneyd* is
+    a Staffordshire gentry name, which is exactly what a drifting pedigree reaches for.
