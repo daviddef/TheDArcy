@@ -2315,3 +2315,97 @@ searched and is genuinely empty. Five null results are now written up as results
 496 pages · **0 broken internal links** · **0 orphans** · five external links to the sibling
 archives, all returning 200.
 
+---
+
+# Pass twenty-three — the surgeon's journal, the payroll, and the archive's own errors (10 September 2026)
+
+## 114. FOUND — the surgeon's journal, cited at last, and it names him four times
+
+The archive has quoted "the surgeon's journal" since the first day and never cited it. TNA Discovery
+settles it: **`ADM 101/26/1`** — *"Medical journal of the England, convict ship, for 18 March to
+29 September 1826 by **George Thomson, Surgeon and Superintendent**"*.
+
+Its item-level descriptions carry four D'Arcy passages, none of them previously known here:
+
+1. **8 April 1826 (ADM 101/26/1/1, f.4):** "received on board a detachment of the 39th regt. of foot
+   commanded by **George Pitt D'Arcy, B. Major**, consisting of **39 men** (including 2 sergeants and
+   3 corporals), **6 women and 7 children**."
+   **This corrects the site, which said 30 men** — a secondary reading, and the regiment's own number
+   is presumably how a 9 became a 0. His rank that day is **brevet major**.
+2. **17 May 1826 (f.10):** convicts "**broke open a crate of dinner ware, and a box of soup** stored
+   in the fore hold, **belonging to major D'Arcy** and stolen several articles"; John Wells and
+   William Kerr suspected and tried by petty officers.
+3. **A mutiny scare (ADM 101/26/1/3):** knives traced to a convict who had threatened the surgeon;
+   "**Major D'Arcy gave the necessary orders to the guard how to act in case of an alarm**", the
+   master armed the crew with cutlasses, and the surgeon warned the prison deck he "would instantly
+   direct them to be put to death".
+4. **16 August 1826 (f.26):** "guard, crew and convicts healthy … **Major D'Arcy recovered from his
+   attack of the gout**."
+
+**That last one closes a loop twenty-three years wide.** In July 1849 a Parramatta coroner's jury put
+his death down to "*gout which had flown to the head and caused apoplexy*". Two records, half a world
+and twenty-three years apart, neither aware of the other, on the same man's same complaint — and the
+second one killed him.
+
+## 115. WO 47 identified, with the reason nobody has found him in it
+
+`/hornby` called the Board of Ordnance minutes "now the best hope" without a reference. The series is
+**`WO 47`, Ordnance Office: Board of Ordnance: Minutes, 1644–1856** — so it covers January 1776. But
+its own series description warns: "*the minute books or journals of proceedings of the Board of
+Ordnance prior to 1810 exist in several broken series*". Not catalogued to item level; cannot be
+pinpointed from a desk. **`WO 45`**, the reference books that would serve as a finding aid, begins in
+**1783** — seven years too late.
+
+So the honest position: located, un-searchable remotely, and a reading-room job at Kew. That is a
+better answer than "the Ordnance minutes".
+
+Also searched with no result: **WO 25 / WO 76** officers' services for George Pitt D'Arcy. Those
+series are only partly catalogued to individual level and he is not among the indexed. One near miss:
+**WO 97/1144/236, Francis D'Arcey alias Francis D'Arcy, born Sovell, Galway, 39th and 45th Foot** — a
+different man, and an other-ranks discharge paper.
+
+## 116. Thirty-seven years of Sneyds on the Queensland payroll
+
+Full Blue Book run, 1870–1900, thirty-one volumes downloaded and parsed:
+
+| Man | Department | In the service from | Listed | Salary |
+|---|---|---|---|---|
+| **William Hartley Sneyd** | Government Printing Office — **Fount-room Overseer** from 1 Dec 1884 | **1 Feb 1862** | to **1890** | £225 |
+| **Samuel Hanley Stafford Sneyd** | Customs — Clerk and Locker, Gladstone | 24 Jan 1877 | 1877–80 | £160 |
+| **Arthur Sneyd** | Electric Telegraph — Operator, later Officer in Charge | 10 Sep 1880 | 1883–99 | £100 → **£200** |
+| **Ernest Ephraim Sneyd** | Electric Telegraph — Line Repairer | 9 Jan 1884 | 1891–99 | £120 → £140 |
+
+**Caution published with it:** the death index has an *Arthur Sneyd*, son of Samuel Sneyd, dying in
+**1896**, yet a Sneyd, Arthur is drawing £200 in 1899. Either a stale entry or — more likely — **two**
+Arthurs, the second being Arthur William Hartley Sneyd (1866–1922). Marked `unresolved`.
+
+## 117. `/what-we-got-wrong` — the archive's own errors, gathered
+
+Seven mistakes **this site published and then corrected**, each with its cause and its lesson, plus a
+separate table of six claims inherited from the family tree and overturned. Kept separate because
+somebody else's mistake and one's own are different things.
+
+**The pattern is the point.** Five of the seven are the same failure: *a number or a claim taken from
+a secondary source or a bad scan, and not checked against the record itself.* The 1838 birth year,
+the "fourteen-page dossier", WO 149, the April dates, "30 men" — all the same error wearing different
+clothes.
+
+## 118. Cross-check of the sibling archives — the isolation is mutual
+
+Neither `TheDefranceski` nor `TheFalco` mentions **D'Arcy** or **Sneyd** anywhere on its home page,
+and neither links to `TheDArcy`. **No contradictions found, because there is no overlap to
+contradict.** The gap this pass fixed here exists in all six archives; fixing it in the other five is
+outside this repository and is offered rather than done.
+
+## 119. Site changes
+
+- `/australia` — the journal cited as `ADM 101/26/1`, 39 men not 30, the theft, the mutiny scare, the
+  gout, and the 1826/1849 corroboration.
+- `/hornby` — WO 47 located with its obstacle stated.
+- `/sergeant-sneyd` — the four-man career table, 1862–1899.
+- `/what-we-got-wrong` — new, in nav and on the home page.
+- `/people/*` — corrections extended to George Pitt D'Arcy (1783), Samuel Charles Sneyd and Arthur
+  Hartley Sneyd.
+
+497 pages · 0 broken links · 0 orphans.
+

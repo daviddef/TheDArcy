@@ -1,0 +1,142 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+/* Errors this archive made and then corrected in public. Newest first.
+   The point of the page is the pattern, not the confession. */
+const OWN = [
+  {
+    when: "9 September 2026",
+    what: "Said William Hartley Sneyd was born in 1838, and that his widow's sworn evidence disproved Find a Grave's 30 September 1837.",
+    truth: "He was born on 30 September 1837, and his widow was right.",
+    why: "He died on 11 September; his birthday was the 30th, nineteen days later. A man born on 30 September 1837 is 64 on 11 September 1902 — exactly what she swore. I did the arithmetic without checking the death date against the birthday. His Queensland death registration then gave the date outright.",
+    lesson: "A stated age is a birth year minus one for everybody whose birthday has not yet come round — which is most of the year, for most people.",
+    href: "/inquest-1902",
+  },
+  {
+    when: "9 September 2026",
+    what: "Read a handwritten Statement of Service as “marched out to Étaples 26.4.16, taken on strength 29.4.16” and published April dates for Arthur Sneyd's arrival in France.",
+    truth: "26 and 29 July 1916.",
+    why: "The typed Casualty Form B.103 records the same events in ruled columns and reads unmistakably as July — and July is the only reading consistent with his reverting to the ranks on 29 July.",
+    lesson: "Read the typed form before the clerk's freehand, when both record the same events.",
+    href: "/great-war",
+  },
+  {
+    when: "9 September 2026",
+    what: "Stated that a fourteen-page service dossier for Lindesay Atkinson D'Arcy “is known to exist”.",
+    truth: "No such record could be found under any spelling of his name.",
+    why: "Nothing was ever checked. The claim had been carried forward on assumption. The search method was then verified by running the same query for his brother-in-law, which returned his dossier at once — so the absence is real.",
+    lesson: "“Is known to exist” is a claim like any other and needs a source.",
+    href: "/great-war",
+  },
+  {
+    when: "9 September 2026",
+    what: "Recommended the Woolwich cadet registers, WO 149, as the best hope for Robert D'Arcy's parentage.",
+    truth: "WO 149 runs from 1790 and is held at Sandhurst. It cannot contain a cadet of the early 1770s.",
+    why: "The series was recommended without checking its date range.",
+    lesson: "Check what a record set actually covers before sending anybody to it.",
+    href: "/hornby",
+  },
+  {
+    when: "10 September 2026",
+    what: "Said this archive existed because “the Australian D'Arcy family married Falco” — the brief it was begun from.",
+    truth: "The D'Arcy line married Defranceski. It was the Defranceski line that had married Falco, a generation earlier.",
+    why: "The founding brief was inherited and never tested against the tree, which settles it in one line.",
+    lesson: "Test the premise of the work, not only the work.",
+    href: "/the-other-archives",
+  },
+  {
+    when: "10 September 2026",
+    what: "Published William Hartley Sneyd's title in the Government Printing Office as “Quoin-drawer Overseer”.",
+    truth: "Fount-room Overseer.",
+    why: "The 1884 volume scanned badly. The 1890 volume prints it plainly, and “fount-room” — where a printing house keeps and distributes its type — is what the job actually was.",
+    lesson: "One bad scan is not a reading. Find the same fact in a second year.",
+    href: "/sergeant-sneyd",
+  },
+  {
+    when: "10 September 2026",
+    what: "Quoted the surgeon of the England as receiving “30 men of the 39th regiment”.",
+    truth: "39 men, with 6 women and 7 children.",
+    why: "The figure came from a secondary account. The National Archives' transcription of the journal itself says 39 — and the regiment's own number is presumably how a 9 became a 0.",
+    lesson: "Go to the record. A number that matches something else in the sentence is a number to distrust.",
+    href: "/australia",
+  },
+];
+
+/* Errors inherited from the family tree and corrected here. Kept separate,
+   because they are somebody else's mistakes and the distinction matters. */
+const INHERITED = [
+  ["The Sneyds descend from Ralph Sneyd of Keele Hall", "Disproved from the Madeley register: the 1742 baptism names the father as William, and Ralph was eighteen.", "/how-far-back"],
+  ["Robert D'Arcy was born in 1751 in North Yorkshire", "The 1751 is arithmetic from an age on a burial register, and nothing places him in Yorkshire.", "/hornby"],
+  ["Major George Pitt D'Arcy married twice at Chatham in 1810", "He married Miss Ludlam in 1805 and Maria White in County Wicklow about 1819.", "/australia"],
+  ["Arthur Hartley Sneyd was a clerk, buried in France", "A typist, with no known grave.", "/finding-arthur"],
+  ["Vivian Ernest William Sneyd died between 1919 and 1921", "16 February 1920, registration 1920/B/31382.", "/great-war"],
+  ["Vivian Claude Sneyd was born at Rockhampton", "Windsor, Brisbane, on his own attestation paper.", "/great-war"],
+];
+---
+<Base
+  title="What This Archive Got Wrong"
+  eyebrow="Its own errors, gathered"
+  dek="Seven mistakes this archive made and then corrected in public, with what caused each one. An archive that asks to be trusted about other people's errors has to be legible about its own.">
+
+  <section class="blk">
+    <p class="lede">Every page here carries a confidence label, and the method only means anything if
+    it is applied to the archive itself. These are errors <strong>this site published</strong> — not
+    inherited from the family tree, but made here — together with what caused each one and what it
+    should teach the next person.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>None of these was quietly edited away.</strong> Each correction still stands on the page
+      where the error was made, which is why the links below go to the page rather than to an
+      apology. Two of them were caught within hours; one had been repeated for days.
+    </div>
+  </section>
+
+  {OWN.map((e) => (
+    <section class="blk">
+      <div class="lab">{e.when}</div>
+      <h2 style="margin-top:.4rem">{e.truth}</h2>
+      <div class="scroll" style="margin-top:1rem">
+        <table>
+          <tbody>
+            <tr><td style="white-space:nowrap"><strong>It said</strong></td><td>{e.what}</td></tr>
+            <tr><td style="white-space:nowrap"><strong>It is</strong></td><td>{e.truth}</td></tr>
+            <tr><td style="white-space:nowrap"><strong>How</strong></td><td>{e.why}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note" style="margin-top:1rem">
+        <strong>The lesson.</strong> {e.lesson} <a href={u(e.href)}>Where it was corrected →</a>
+      </div>
+    </section>
+  ))}
+
+  <section class="blk">
+    <h2>And the errors that came with the tree</h2>
+    <p class="dek">These are a different thing, and worth keeping separate: claims inherited from the
+    exported family tree and overturned here. They are somebody else's mistakes, made in good faith,
+    and every one of them is still shown on the page that corrects it rather than deleted.</p>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>The tree said</th><th>The record says</th></tr></thead>
+        <tbody>
+          {INHERITED.map(([a, b, href]) => (
+            <tr><td>{a}</td><td>{b} <a href={u(href)}>→</a></td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Why this page exists</h2>
+    <p class="dek">Because the alternative is worse. An archive that corrects itself silently is
+    asking to be trusted on exactly the point it has just proved it can be wrong about — and because
+    the pattern in the seven above is more useful than any one of them. Five of the seven are the same
+    failure: <strong>a number or a claim taken from a secondary source, or from a bad scan, and not
+    checked against the record itself.</strong></p>
+    <p class="dek" style="margin-top:.9rem">If you find an eighth, it belongs here.
+    <a href={u("/method")}>How claims are labelled →</a> ·
+    <a href={u("/open-questions")}>What is still open →</a></p>
+  </section>
+</Base>
