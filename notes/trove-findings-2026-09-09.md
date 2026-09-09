@@ -1942,3 +1942,62 @@ arithmetic is already on `/how-far-back` counted from the archive's root.
 - `/great-war` — the cousin's death dated to 16 February 1920 with its registration number; Gallipoli
   and the "On Honour's Roll" notice added to Vivian Claude's section.
 - `/finding-arthur` — new section on the 1919 memorial notices, Q.M.S., and Ruby.
+
+---
+
+# Pass eighteen — the National Archives catalogue (9 September 2026)
+
+## 87. Method: TNA Discovery has a JSON API and curl can use it
+
+No browser needed, no session, no bot check:
+
+    https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=<q>&sps.resultsPageSize=40
+    https://discovery.nationalarchives.gov.uk/API/records/v1/details/<id>
+
+Returns JSON with `reference`, `description`, `coveringDates`, `context`, `id`, and on the details
+endpoint a `digitised` flag. **This is by far the cheapest research tool found in the whole project**
+— compare the hour lost to RecordSearch's ASP.NET postbacks. Filter client-side for `PROB` etc.;
+the `sps.recordSeries` parameter did not work.
+
+## 88. FOUND — Robert D'Arcy's own will, and it is digitised
+
+**`PROB 11/1728/64`** · Discovery id `D192027` · `digitised: true` · Open
+
+> **Will of Robert D'Arcy, Major General in the Army and Colonel of the Royal Engineers of
+> Chatham, Kent.** Proved **4 July 1827**. Prerogative Court of Canterbury, Will Register *Hober*,
+> quires 401–450.
+
+He died at Chatham on 13 May 1827 and was buried at St Mary, Chatham, on the 19th. Major-General
+(12 August 1819), Colonel of the Corps (1813). There are **two D'Arcys in the entire Roll of Officers
+of the Corps of Royal Engineers, 1660–1898**, and the other died in 1805. It is him.
+
+**This is now the most valuable unread document in the archive.** Seventy-one of Ian's 200 ancestors
+and twelve of his 22 generations hang on the join immediately above this man, and nothing in his life
+— commission, corps roll, marriage, burial — names a father. A will names children, executors,
+legacies and often origins. For a possible acknowledged natural son, the people he left money to are
+the strongest indirect evidence obtainable, and a null is nearly as informative.
+
+It was found **by accident**, searching for the Earl's will. Request written:
+`requests/tna-prob11-darcy-will.md`. About £3.50 and two minutes; it needs a card, so David runs it.
+
+## 89. NULL — the 4th Earl of Holderness left no PCC will that can be found
+
+Searched under *Darcy*, *D'Arcy*, *Holderness*, *Holdernesse*, "Will of Robert Darcy", "Earl of
+Holderness will 1778", and across **every PROB record dated 1778–1780**. Nothing.
+
+Not proof he left no will: a peer's estate commonly passed by marriage settlement rather than
+testament, and his heir was his daughter Amelia, Baroness Conyers. But the acknowledgement of a
+natural son that this archive hoped to find **is not in the obvious place**, and `/hornby` now says
+so as a labelled null so nobody repeats the search.
+
+Also searched with no PROB result: **Constantine D'Arcy** (d. Chatham 1805), **Jean Ward D'Arcy**
+(d. 1823), **George Pitt D'Arcy** (d. Parramatta 1849 — he would have a New South Wales probate, not
+a PCC one; that search has not been made).
+
+## 90. Site changes
+
+- `/hornby` — the will added as the live lead, with the Earl's-will null beside it.
+- `/open-questions` — the "4th Earl's will" card replaced by the real find; the letters table now
+  points at `PROB 11/1728/64` as downloadable today.
+- `requests/tna-prob11-darcy-will.md` — new, and marked the priority.
+
