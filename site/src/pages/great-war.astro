@@ -1,0 +1,105 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+---
+<Base
+  title="The Great War"
+  eyebrow="Two men, one family, 1916"
+  dek="A sergeant of the Army Service Corps who married nine weeks before he sailed and came home after three and a half years — and his wife's younger brother, a private of the 9th Battalion, who was killed at Pozières and has no grave.">
+
+  <section class="blk">
+    <p class="lede">In the spring of 1916 two young Brisbane men connected by a wedding went to the
+    war. One of them is the reason this archive exists at all; the other is the reason it has a name
+    on a memorial in France.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Sergeant, 11335</div>
+    <h2 style="margin-top:.4rem">Lindesay Atkinson D'Arcy, Australian Army Service Corps</h2>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          <tr><td>Service number</td><td class="m">11335</td></tr>
+          <tr><td>Rank</td><td><strong>Sergeant</strong></td></tr>
+          <tr><td>Unit</td><td>12th Australian Depot Unit of Supply, Australian Army Service Corps</td></tr>
+          <tr><td>Born</td><td>South Brisbane, Queensland</td></tr>
+          <tr><td>Enlisted</td><td class="m">13 December 1915 · Brisbane</td></tr>
+          <tr><td>Married</td><td class="m">18 March 1916 · Albion Church, Brisbane</td></tr>
+          <tr><td>Embarked</td><td class="m">18 May 1916 · Sydney · HMAT <em>Demosthenes</em> A64</td></tr>
+          <tr><td>Next of kin</td><td>his wife, Ivy Miriam D'Arcy</td></tr>
+          <tr><td>Returned to Australia</td><td class="m">7 July 1919</td></tr>
+          <tr><td>Records</td><td class="mono">NAA B2455 · AWM8 25/109/1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Read those three dates in order.</strong> He enlisted in December, married in March,
+      and sailed in May. <strong>Nine weeks</strong> separated the wedding at Albion Church from the
+      troopship at Sydney, and he was gone for <strong>three years and two months</strong>. Their
+      eldest son, Vivian Lindsay, was born in 1916. Their next child was born in 1924.
+    </div>
+
+    <p style="margin-top:1.2rem">The family remembered only that he "served with the Australian
+    Forces in France during the Great War" — the phrase in his 1936 obituary, and the sum of what his
+    children knew. The rank, the number, the unit, the ship and the three and a half years are
+    recovered here. <a href={u("/papers")}>The obituary →</a></p>
+
+    <p class="small" style="margin-top:.8rem">His name is spelled <em>Lindesay</em> on one AWM record
+    and <em>Lindsay Darcy</em> on the other, which is why both had to be searched.
+    <a href={u("/name")}>The name →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Private, 5050 · 20 August 1916</div>
+    <h2 style="margin-top:.4rem">Arthur Hartley Sneyd, 9th Battalion</h2>
+
+    <p>Ivy's younger brother. Born at <strong>Rockhampton</strong> on 11 October 1893, schooled at
+    <strong>Eagle Junction State School</strong>, a clerk by trade.</p>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          <tr><td>Service number</td><td class="m">5050</td></tr>
+          <tr><td>Rank</td><td>Private</td></tr>
+          <tr><td>Unit</td><td>9th Infantry Battalion, 13th–23rd reinforcements</td></tr>
+          <tr><td>Embarked</td><td>HMAT <em>Star of Victoria</em> A16</td></tr>
+          <tr><td>Killed in action</td><td class="m"><strong>20 August 1916 · Pozières, the Somme</strong></td></tr>
+          <tr><td>Age</td><td class="m">22</td></tr>
+          <tr><td>Grave</td><td><strong>None known.</strong> Commemorated on the Villers-Bretonneux
+            Australian National Memorial <span class="chip inf">to be confirmed</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1.2rem">The family tree records "buried in France". On the evidence that is
+    probably wrong in a particular and poignant way: Australians who fell in France with
+    <strong>no known grave</strong> are named on the <strong>Villers-Bretonneux</strong> memorial —
+    10,773 of them — and the Pozières Memorial, which stands among Australian graves, deliberately
+    carries no Australian names for that reason. Every indication is that Arthur Hartley Sneyd is one
+    of the 10,773.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>Marked as unconfirmed, and here is why.</strong> The Commonwealth War Graves Commission
+      is the authority on this and its site could not be queried in this session. Until a CWGC record
+      is read, the commemoration is <span class="chip inf">inferred</span> from the general rule and
+      from a secondary index. It should be confirmed before it is believed.
+      <a href={u("/open-questions")}>Queued →</a>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <div class="lab">The five months</div>
+    <h2 style="margin-top:.4rem">March, May, August</h2>
+    <p><strong>18 March 1916</strong> — Lindesay Atkinson D'Arcy marries Ivy Miriam Sneyd at Albion
+    Church, Brisbane.</p>
+    <p style="margin-top:.7rem"><strong>18 May 1916</strong> — he sails from Sydney on the
+    <em>Demosthenes</em>.</p>
+    <p style="margin-top:.7rem"><strong>20 August 1916</strong> — her brother is killed at Pozières,
+    aged twenty-two.</p>
+    <p style="margin-top:1.1rem">Lindesay came home in July 1919 and died at forty-four in 1936,
+    leaving Ivy with five children. Arthur did not come home at all. Ivy outlived them both by
+    decades and is buried at Mt Thompson. <a href={u("/sneyd")}>The Sneyds →</a></p>
+  </section>
+</Base>

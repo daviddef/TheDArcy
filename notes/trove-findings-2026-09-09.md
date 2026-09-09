@@ -346,3 +346,133 @@ should settle it.)*
 Exactly as the tree asserts. The index gives no fathers' names, but the record set says an **image**
 of the register entry exists — worth viewing, since these entries can carry fathers, occupations and
 witnesses.
+
+---
+
+# Third pass — the christening, the 1805 notice, and two soldiers
+
+## 10. George Lindsay D'Arcy's christening — answered from the register index
+
+*Australia, Births and Baptisms, 1792–1981*, FamilySearch `1:1:XTX4-LBC`:
+
+| | |
+|---|---|
+| Name | **George Lindsay Darcy** |
+| Christening | **5 November 1829** |
+| Event place (original) | **St James Sydney, New South Wales** |
+| Father | **George Pitt Darcy** |
+| Mother | **Maria** |
+
+The mother is **Maria** — so **Maria White**, not Mary Ludlam. This closes the half-brother question
+from a register rather than from a tree: Frederick Robert (Ludlam) and George Lindsay (White) are
+half-brothers.
+
+## 11. The first marriage — dated, and it links father to son
+
+FamilySearch `1:1:QPCV-LNV5`, from the **British Newspaper Archive, Family Notices**:
+
+| | |
+|---|---|
+| Newspaper | **Salisbury and Winchester Journal**, p. 3 |
+| Notice date | **23 September 1805** |
+| Marriage | **September 1805** |
+| Groom | **"George d'Arcy, Captain"** |
+| Groom's father | **"d'Arcy, Lieut Colonel"** |
+| Bride | **"Miss Ludlam"** |
+
+Three things at once:
+
+1. The first marriage is **September 1805** — not 1806 (WikiTree) and not 1810 (the family tree).
+2. His rank at the time was **Captain**.
+3. **His father is identified as a Lieutenant-Colonel D'Arcy.** Robert D'Arcy was exactly that in
+   1805, on his way to Major-General of Engineers. Until now the George Pitt → Robert join rested on
+   family trees; it now rests on a notice printed while both men were alive. *This does not touch the
+   Hornby claim, which is about the generation above Robert.*
+
+**Still to do:** the parish entry behind the notice, and the c.1819 County Wicklow marriage to Maria
+White.
+
+## 12. Frederick Robert D'Arcy — the death date settled, and the headstone discredited twice
+
+**The Brisbane Courier, Tuesday 21 September 1875, p. 2** — `nla.news-article1381942`:
+
+> D'ARCY.—On the **19th September**, at his residence, **Spring Hill**, Frederick Robert D'Arcy,
+> **licensed surveyor**, eldest son of the late **Major George Pitt D'Arcy, 39th Regiment**, aged
+> **63**. [Sydney papers please copy.]
+
+So the **Queensland Burials & Memorials transcript is wrong twice** — it gives the death as
+10 September (against the family's own notice of the 19th) and the regiment as the **9th** (against
+this notice, six 1849 notices, the 1826 ship record and the 1901 obituary). A monumental inscription
+transcript is a secondary source and should be weighted accordingly.
+
+## 13. George Pitt D'Arcy (1864–1931) — the age discrepancy resolved
+
+Find a Grave, BillionGraves and *Australia, Cemetery Inscriptions* all give **born 5 May 1864, died
+21 March 1931, South Brisbane Cemetery, Dutton Park**. He was therefore **66**, and the
+*Daily Standard*'s "76" at the inquest is a reporter's or compositor's error. **Closed.**
+
+*(Note: "Dutton Park" and "South Brisbane Cemetery" are the same place — the tree records them as
+though they were two.)*
+
+## 14. The Great War — two service records
+
+### Sergeant Lindesay Atkinson D'Arcy, 11335
+
+AWM nominal roll `P10849873` and embarkation roll `R1817293` (AWM8 25/109/1); NAA series **B2455**,
+D'ARCY L A.
+
+| | |
+|---|---|
+| Service number | **11335** |
+| Rank | **Sergeant** |
+| Unit | **12th Australian Depot Unit of Supply**, Australian Army Service Corps |
+| Born | South Brisbane, Qld |
+| Enlisted | **13 December 1915**, Brisbane |
+| Embarked | HMAT ***Demosthenes*** A64 |
+| Next of kin | wife, **Ivy Miriam D'Arcy** |
+| Returned to Australia | **7 July 1919** |
+
+The family knew only "served with the Australian Forces in France". He was a **sergeant**, and he was
+away **three years and two months**. He enlisted in December 1915, married Ivy at Albion Church on
+18 March 1916, and sailed on 18 May — **nine weeks** after the wedding. Their eldest, Vivian Lindsay,
+was born in 1916; the next child came in 1924.
+
+**Still to do:** the fourteen-page service dossier itself (NAA B2455).
+
+### Private Arthur Hartley Sneyd, 5050
+
+AWM embarkation roll `R1962406`.
+
+| | |
+|---|---|
+| Service number | **5050** |
+| Rank | Private |
+| Unit | **9th Infantry Battalion**, 13th–23rd reinforcements, 1916 |
+| Embarked | HMAT ***Star of Victoria*** A16 |
+| Killed in action | **20 August 1916, Pozières** |
+| Age | 22 |
+
+**Commemoration — inferred, not confirmed.** Australians who fell in France with no known grave are
+named on the **Villers-Bretonneux Australian National Memorial** (10,773 names); the Pozières
+Memorial deliberately carries no Australian names for that reason. A secondary index gives
+Villers-Bretonneux for him. **The CWGC is the authority and its site blocked automated access this
+session** — so this stands as inferred until a CWGC record is read. The family tree's "buried in
+France" is probably wrong.
+
+---
+
+## Open after three passes
+
+1. **Robert D'Arcy's origin.** No baptism exists in any indexed English set. Next: TNA Royal
+   Engineers commission and cadet papers; the 4th Earl of Holderness's will (d. 1778). *Not online.*
+2. **The Major's true age.** 1849 notices say 69 (→ b. 1780); the tree says 18 February 1783;
+   WikiTree says "about 1781". Needs the 39th's muster rolls or his commission papers.
+3. **Where he was between 1832 and 1849** — half-pay lists. His obituary's "decline … not passed in
+   the paths of pleasantness" suggests this matters.
+4. **The c.1819 County Wicklow marriage** to Maria White, and the 1805 parish entry.
+5. **CWGC confirmation** for Arthur Hartley Sneyd; the NAA dossier for Lindesay.
+6. **The Orthes gold medal correspondence** — War Office papers, on a medal misdelivered for four
+   years.
+7. **The in-law lines**, none of which has been touched yet: Atkinson (Limerick), Murdoch
+   (St Quivox), Matson (Monaghan), Atwell (a merchant seaman who deserted), Blum (Germany),
+   Wakefield (Bristol), and the Sneyds above Kempsey 1838.
