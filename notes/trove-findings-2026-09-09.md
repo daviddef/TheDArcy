@@ -1736,15 +1736,21 @@ contusions on 27 September. 1696 was recommended for a **Bar to the Military Med
 stretchers and rations forward through a barrage at **Westhoek on 4 October**. Eight days and a few
 miles apart. Nothing suggests either family knew.
 
-## 77. An editorial decision, recorded
+## 77. An editorial decision, put to the family and reversed
 
-The 92-page file contains routine personal medical detail — the ordinary contents of any soldier's
-hospital record — of a kind that tells nothing about this family and would be gratuitous to publish
-about a man who cannot answer. **The site carries a summary of his medical record, not an inventory
-of it**, and says so in plain words, with the item number given so anyone can read the original.
-This is a deliberate choice, not an oversight, and it is not the same as concealing a finding: the
-substantive facts — wounds, bronchitis, albuminuria, invaliding, the 100% assessment — are all
-published.
+I first published a *summary* of his medical record rather than an inventory, holding back routine
+personal detail. **David's instruction was to publish it in full, and it now is.** The complete
+Army Form B.103 log is on `/great-war` as a dated table, including the venereal admission of
+9 January 1918 to the **1st Australian Dermatological Hospital at Bulford** and the form's own
+tally, "*Total V.D. period 71 days*". The reasoning for publishing: it is an open public record about
+a man dead 107 years; 1st A.D.H. Bulford is familiar to any AIF researcher; and an archive that
+prints the creditable entries and drops the rest is composing a life rather than recording one.
+
+**One verification this forced.** I nearly published "V.D. 20" without checking it — and `V.D.` and
+`V.D.H.` (valvular disease of the heart) are entirely different findings that look alike in a
+clerk's hand. Magnified to 1:1 the entry reads **V.D**, with no H, and the receiving unit is the
+**1st A.D.H.** — the AIF's dedicated dermatological hospital — which settles it independently.
+Never transcribe a medical abbreviation from a downsampled scan.
 
 ## 78. The one thing that would finish it
 
@@ -1758,3 +1764,23 @@ young men to that war and got one back whole. Added to the BDM request already d
 - `/great-war` — the cousin's section rewritten in full from the dossier; the closing section now
   carries the September–October 1917 convergence.
 - `/open-questions` — his item closed and replaced with the death-certificate question.
+
+## 80. The missing middle of the casualty form (image S=16)
+
+Entries 36–50, which the first pass had not seen, close the gap between January and May 1918:
+
+- **"Total V.D. period 71 days"** — 9 January to 21 March 1918, 1st A.D.H. Bulford.
+- 21 Mar 1918 — No. 1 Command Depot, **Sutton Veny**, classified **B1A3**; re-classified **A3** on
+  27 March — fit again.
+- 28 Mar 1918 — Overseas Training Brigade, **Longbridge Deverill**.
+- **24 Apr 1918 — proceeding overseas to France a second time**, via Folkestone.
+- 29 Apr 1918 — Australian Infantry Base Depot, Étaples; marched out to unit.
+- **He fell sick on the way up to rejoin the battalion** and was evacuated without reaching it.
+- 5–6 May 1918 — **albuminuria**, 9th Aust. Field Ambulance → **61st Casualty Clearing Station** →
+  ambulance train.
+- 7 May 1918 — **1st Canadian General Hospital, Étaples — nephritis** — for England.
+- Embarked for England on the hospital ship ***Ville de Liège***.
+
+So the second tour lasted eleven days and he never got back to the 31st Battalion. The file's dates
+across this evacuation disagree by a few days (Birmingham logs him admitted 12 May; the French
+entries run to 17 May) and are published as they stand rather than reconciled.
