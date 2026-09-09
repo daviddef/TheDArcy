@@ -25,6 +25,50 @@ for (const s of p.spouses || []) {
 const parents = people.filter((o) =>
   (o.spouses || []).some((s) => (s.children || []).includes(p.id)));
 
+/* Siblings: anyone sharing a parent. The tree records children on the marriage,
+   so half-siblings by a second marriage come out of this too — which is right. */
+const sibs = [];
+for (const par of parents) {
+  for (const s of par.spouses || []) {
+    for (const c of s.children || []) {
+      if (c === p.id) continue;
+      const o = link(c);
+      if (o && !sibs.some((k) => k.slug === o.slug)) sibs.push(o);
+    }
+  }
+}
+
+// Surname pages that exist. Everyone else goes to the families index.
+const FAMILY_PAGE = { Sneyd: "/sneyd", Atkinson: "/atkinson", Murdoch: "/murdoch" };
+
+/* Where a person is actually written about. Keyed by slug because slugs are
+   deterministic; a name here that stops matching simply stops linking, which is
+   the safe failure. */
+const APPEARS_IN = {
+  "kenneth-lindsay-d-arcy": [["/documents", "His eulogy, in full"], ["/brisbane", "Brisbane"], ["/direct-line", "The spine"]],
+  "lindesay-atkinson-d-arcy": [["/great-war", "His war service"], ["/papers", "His obituary, 1936"], ["/brisbane", "Brisbane"]],
+  "ivy-miriam-sneyd": [["/great-war", "Her husband and her brothers"], ["/sneyd", "The Sneyds"], ["/brisbane", "Brisbane"]],
+  "arthur-hartley-sneyd": [["/finding-arthur", "The search for him, 1916–17"], ["/great-war", "His service record"], ["/sneyd", "The Sneyds"]],
+  "vivian-claude-sneyd": [["/great-war", "His Military Medal and Bar"], ["/finding-arthur", "His brother"]],
+  "vivian-ernest-william-sneyd": [["/great-war", "His service, in full"]],
+  "thomas-george-sneyd": [["/great-war", "His son's service"]],
+  "arthur-william-hartley-sneyd": [["/sneyd", "The Sneyds"], ["/great-war", "His sons"]],
+  "william-hartley-sneyd": [["/inquest-1902", "The inquest into his death"], ["/sneyd", "The Sneyds"]],
+  "miriam-wakefield": [["/inquest-1902", "Her sworn evidence, 1902"], ["/sneyd", "The Sneyds"]],
+  "samuel-charles-sneyd-1810": [["/sergeant-sneyd", "Soldier, constable, gaol governor"], ["/how-far-back", "The Keele graft, disproved"]],
+  "george-pitt-d-arcy-1783": [["/australia", "Orthes, and the convict ship England"], ["/direct-line", "The spine"]],
+  "george-pitt-d-arcy-1864": [["/brisbane", "Brisbane"], ["/papers", "What the papers said"]],
+  "george-lindsay-d-arcy": [["/australia", "Born Parramatta, 1829"], ["/brisbane", "Brisbane"]],
+  "frederick-robert-d-arcy": [["/australia", "The surveyor, and the half-brother"]],
+  "robert-d-arcy": [["/hornby", "The Hornby claim"], ["/direct-line", "The spine"]],
+  "jean-ward": [["/hornby", "The Hornby claim"], ["/how-far-back", "How far back it really goes"]],
+  "paul-cole-atkinson": [["/atkinson", "The organ at All Saints', 1864"]],
+  "ida-kathleen-atkinson": [["/atkinson", "The Atkinsons"], ["/brisbane", "Brisbane"]],
+  "william-murdoch": [["/murdoch", "The Murdochs"]],
+  "martha-blum": [["/sneyd", "Muttaburra, 1891"]],
+};
+const appears = APPEARS_IN[p.slug] || [];
+
 const facts = [
   ["Born", p.born, p.bornPlace],
   ["Died", p.died, p.diedPlace],
@@ -32,6 +76,37 @@ const facts = [
   ["Buried", "", p.burial],
   ["Trade", p.occupation, ""],
 ].filter(([, a, b]) => a || b);
+
+/* Notes come out of MyHeritage as broken HTML. Not merely tagged — *truncated*:
+   opening tags are cut off mid-attribute, leaving orphaned CSS tails with no "<"
+   to match, and whole words are missing from the prose itself. Clean what can be
+   cleaned, drop the debris, and tell the reader when the source is damaged
+   rather than passing off a mangled sentence as the family's words. */
+const ENT = { "&nbsp;": " ", "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#39;": "'", "&apos;": "'" };
+function clean(s) {
+  let t = String(s)
+    .replace(/<\s*(br|\/p|\/div|\/li|\/tr|\/h\d)\s*[^>]*>/gi, "\n")
+    .replace(/<[^>]*>/g, " ")
+    // orphaned attribute tails: junk ending in "> with no opening bracket
+    .replace(/[^\s<>][^<>]{0,400}?"\s*>/g, " ")
+    // bare CSS declarations left behind by the truncation
+    .replace(/(?:[a-z-]+\s*:\s*[^;\n]{1,80};\s*)+/gi, " ")
+    .replace(/&nbsp;?/gi, " ")
+    .replace(/&[a-z#0-9]+;/gi, (m) => ENT[m.toLowerCase()] ?? " ");
+  const lines = t.split("\n").map((l) => l.replace(/[ \t]{2,}/g, " ").trim()).filter((l) => {
+    if (l.length < 12) return false;                       // stray fragments
+    if (/SmartCopy|myheritage\.com\/research\/record/i.test(l)) return false; // citation boilerplate
+    if (/^-{3,}$/.test(l)) return false;
+    if (!/\s/.test(l)) return false;                       // a lone URL crumb
+    return true;
+  });
+  return lines.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+const isDamaged = (s) => /box-sizing|font-family\s*:|style="/i.test(String(s));
+const notes = (p.notes || [])
+  .map((n) => ({ text: clean(n), damaged: isDamaged(n) }))
+  .filter((n) => n.text.length > 20);
+const anyDamaged = notes.some((n) => n.damaged);
 ---
 <Base title={p.name} eyebrow={p.life || "dates unknown"} dek={p.occupation || ""}>
 
@@ -55,6 +130,11 @@ const facts = [
         {p.ancestor && (
           <p style="margin-top:1rem"><span class="chip doc">direct line</span>
           {p.gen && <span class="small"> · generation {p.gen} counting back from the present day</span>}</p>
+        )}
+        {p.family && (
+          <p class="small" style="margin-top:.8rem">Counted here with the
+            <strong> {p.family}</strong> family ·
+            <a href={u(FAMILY_PAGE[p.family] || "/families")}> that family →</a></p>
         )}
       </div>
 
@@ -84,6 +164,15 @@ const facts = [
             })}
           </>
         )}
+        {sibs.length > 0 && (
+          <>
+            <h3 class="lab" style="margin-top:1rem">Brothers and sisters</h3>
+            <p>{sibs.map((o, i) => (
+              <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a>
+              {o.life && <span class="small"> ({o.life})</span>}</>
+            ))}</p>
+          </>
+        )}
         {kids.length > 0 && (
           <>
             <h3 class="lab" style="margin-top:1rem">Children</h3>
@@ -93,23 +182,51 @@ const facts = [
             ))}</p>
           </>
         )}
+        {parents.length === 0 && kids.length === 0 && sibs.length === 0 &&
+          (p.spouses || []).filter((s) => s.name && !s.living).length === 0 && (
+          <p class="small">No living connection is published for this person — either the tree
+          records none, or everyone they connect to is alive and withheld from this build.
+          <a href={u("/method")}> The rule →</a></p>
+        )}
       </div>
     </div>
   </section>
 
-  {(p.notes || []).length > 0 && (
+  {appears.length > 0 && (
+    <section class="blk">
+      <h2>Written about here</h2>
+      <p class="small">Pages of this archive where {p.name.split(" ")[0]} is part of the argument,
+      not just a name in a list.</p>
+      <div class="grid three" style="margin-top:1rem">
+        {appears.map(([href, label]) => (
+          <a class="cardlink" href={u(href)}><div class="nm">{label}</div></a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {notes.length > 0 && (
     <section class="blk">
       <h2>What is written about {p.name.split(" ")[0]}</h2>
-      <p class="small">Carried across from the family tree. Family testimony, not an independent
-      record — valuable, and labelled.</p>
-      {p.notes.map((n) => (
-        <div class="note" style="margin-top:1rem;white-space:pre-wrap">{n}</div>
+      <p class="small">Carried across from the family tree, with its markup stripped. Family
+      testimony, not an independent record — valuable, and labelled.</p>
+      {anyDamaged && (
+        <div class="note" style="margin-top:1rem">
+          <strong>This note reached the archive damaged.</strong> The export it came from stores rich
+          text, and the transfer truncated it — opening tags cut off mid-attribute, and words missing
+          from the middle of sentences. What follows has had the wreckage stripped, but
+          <strong> sentences will still break off</strong>. That is the source, not the transcription,
+          and nothing has been invented to bridge the gaps.
+        </div>
+      )}
+      {notes.map((n) => (
+        <div class="note" style="margin-top:1rem;white-space:pre-wrap">{n.text}</div>
       ))}
     </section>
   )}
 
   {(p.sources || []).length > 0 && (
-    <section class="blk" style="border-bottom:0">
+    <section class="blk">
       <h2>Sources attached in the tree</h2>
       <ul class="dek">
         {p.sources.map((s) => <li>{s}</li>)}
@@ -119,4 +236,11 @@ const facts = [
       <a href={u("/method")}> Method →</a></p>
     </section>
   )}
+
+  <section class="blk" style="border-bottom:0">
+    <p class="small"><a href={u("/people")}>← All {people.length} people</a> ·
+      <a href={u("/families")}>The families</a> ·
+      <a href={u("/direct-line")}>The direct line</a> ·
+      <a href={u("/method")}>How claims are labelled</a></p>
+  </section>
 </Base>

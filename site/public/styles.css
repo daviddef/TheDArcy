@@ -857,3 +857,14 @@ li{margin:5px 0}
   .spine::before{left:7px}
   .spine .gen::before{left:-27px}
 }
+
+/* ---- People finder (added with the search on /people) -------------------- */
+.vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.fchip{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.04em;
+       padding:.3rem .6rem;border:1px solid var(--rule-strong);border-radius:999px;
+       background:transparent;color:var(--ink-3);cursor:pointer;line-height:1.6}
+.fchip:hover{border-color:var(--accent);color:var(--accent)}
+.fchip.on{border-color:var(--accent);color:var(--accent);background:var(--accent-wash)}
+#q:focus{outline:2px solid var(--accent);outline-offset:1px}
+.pcard[hidden],.pgroup[hidden]{display:none!important}

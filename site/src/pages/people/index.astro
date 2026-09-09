@@ -22,11 +22,19 @@ const groups = {};
 for (const p of people) (groups[bucket(p)] ||= []).push(p);
 const order = Object.keys(groups).sort((a, b) =>
   a === "Undated" ? 1 : b === "Undated" ? -1 : parseInt(a) - parseInt(b));
+
+// Everything a reader might reasonably type, flattened into one haystack per person.
+const hay = (p) => [
+  p.name, p.life, p.born, p.died, p.bornPlace, p.diedPlace,
+  p.occupation, p.family, p.burial, p.ancestor ? "direct line ancestor" : "",
+].filter(Boolean).join(" ").toLowerCase();
+
+const surnames = [...new Set(people.map((p) => p.family).filter(Boolean))].sort();
 ---
 <Base
   title="The People"
   eyebrow={`${people.length} named`}
-  dek="Everybody this archive can name and publish, in one list. Most of them never continued the line — which is the point: a family is not a pedigree.">
+  dek="Everybody this archive can name and publish, in one list — searchable by name, year, place, trade or family.">
 
   <section class="blk">
     <p class="lede">There are <strong>{people.length}</strong> people here.
@@ -38,13 +46,32 @@ const order = Object.keys(groups).sort((a, b) =>
     <strong>2,034</strong>. <a href={u("/method")}>The rule, and how to invoke it →</a></p>
   </section>
 
+  <section class="blk" id="finder">
+    <div class="lab">Search</div>
+    <label for="q" class="vh">Search the people</label>
+    <input id="q" type="search" autocomplete="off" placeholder="Try a name, a year, a place, a trade — Sneyd, 1838, Boulia, organist…"
+      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
+             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
+
+    <div style="margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center">
+      <button type="button" class="fchip" data-f="">All</button>
+      <button type="button" class="fchip" data-f="direct line ancestor">Direct line</button>
+      {surnames.map((sn) => <button type="button" class="fchip" data-f={sn.toLowerCase()}>{sn}</button>)}
+    </div>
+
+    <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{people.length} people</p>
+    <p class="small" id="nohits" hidden>Nothing matches that. Spelling in this family moves about —
+      try <em>Darcy</em> as well as <em>D'Arcy</em>, or <em>Snead</em> as well as <em>Sneyd</em>.
+      <a href={u("/name")}>Why →</a></p>
+  </section>
+
   {order.map((k) => (
-    <section class="blk">
+    <section class="blk pgroup" data-group={k}>
       <h2>{k}</h2>
-      <p class="small">{groups[k].length} people</p>
+      <p class="small gcount">{groups[k].length} people</p>
       <div class="grid three" style="margin-top:1rem">
         {groups[k].map((p) => (
-          <a class="cardlink" href={u(`/people/${p.slug}`)}>
+          <a class="cardlink pcard" data-s={hay(p)} href={u(`/people/${p.slug}`)}>
             <div class="nm">{p.name}</div>
             <p class="small" style="margin-top:.3rem">
               {p.life || "dates unknown"}
@@ -56,4 +83,52 @@ const order = Object.keys(groups).sort((a, b) =>
       </div>
     </section>
   ))}
+
+  <script is:inline>
+    (function () {
+      var q = document.getElementById("q");
+      if (!q) return;
+      var cards = [].slice.call(document.querySelectorAll(".pcard"));
+      var groups = [].slice.call(document.querySelectorAll(".pgroup"));
+      var count = document.getElementById("count");
+      var nohits = document.getElementById("nohits");
+      var chips = [].slice.call(document.querySelectorAll(".fchip"));
+      var filter = "";
+
+      function apply() {
+        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+        var shown = 0;
+        cards.forEach(function (c) {
+          var h = c.getAttribute("data-s");
+          var ok = (!filter || h.indexOf(filter) !== -1) &&
+                   terms.every(function (t) { return h.indexOf(t) !== -1; });
+          c.hidden = !ok;
+          if (ok) shown++;
+        });
+        groups.forEach(function (g) {
+          var any = g.querySelectorAll(".pcard:not([hidden])").length;
+          g.hidden = any === 0;
+          var gc = g.querySelector(".gcount");
+          if (gc) gc.textContent = any + (any === 1 ? " person" : " people");
+        });
+        count.textContent = shown + (shown === 1 ? " person" : " people") +
+          (terms.length || filter ? " matching" : "");
+        nohits.hidden = shown !== 0;
+      }
+
+      q.addEventListener("input", apply);
+      chips.forEach(function (b) {
+        b.addEventListener("click", function () {
+          filter = b.getAttribute("data-f") || "";
+          chips.forEach(function (o) { o.classList.toggle("on", o === b); });
+          apply();
+        });
+      });
+      chips[0] && chips[0].classList.add("on");
+
+      // /people?q=sneyd deep-links a search
+      var pre = new URLSearchParams(location.search).get("q");
+      if (pre) { q.value = pre; apply(); }
+    })();
+  </script>
 </Base>
