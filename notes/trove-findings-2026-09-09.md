@@ -2475,3 +2475,85 @@ Sneyd land and street.
 
 Blocked on other people's migrations: the NSW probate, the war diary, the first Military Medal.
 
+---
+
+# Pass twenty-five — I corrected the family about their own family, and I was wrong (10 September 2026)
+
+## 124. THE ERROR
+
+Yesterday `/the-other-archives` told David his founding brief was inaccurate: that "the Australian
+D'Arcy family that married Falco" had the shape wrong, and that the D'Arcys married *Defranceski*
+while the *Defranceskis* had married Falco.
+
+**The brief was right. I was wrong, and it stood on a public site for a day.**
+
+The tree, checked properly:
+
+    @F3@  Ian Kenneth D'Arcy  +  Giuseppina Falco   → Cristina Adele D'Arcy (the root person)
+    @F1@  David Ivan Defranceski + Cristina Adele D'Arcy → two children
+    @F2@  Ivan Anton Defranceski + Cheryl Anne Lerena → David
+
+**Ian D'Arcy married Giuseppina Falco.** Exactly as the brief said. The Defranceski marriage is the
+*next* generation, and Lerena comes in on David's mother's side.
+
+**What I did wrong:** I looked up the root person's `fams` (who she married) and not her `famc` (who
+her parents are), saw a Defranceski, and published a correction to somebody's accurate account of
+their own family. The check that would have caught it took one command.
+
+Recorded on `/what-we-got-wrong` as the seventh error, and it is the worst of them, because the other
+six were wrong about records and this one was wrong *at* somebody.
+
+## 125. What the error was hiding — a whole branch this archive has never mentioned
+
+Because Giuseppina Falco is the root person's **mother**, the Falco line is not an in-law. It is
+**two-fifths of her parentage**, and the walk proves it:
+
+| | Ancestors |
+|---|---|
+| Total for the root person | **242** |
+| via her father, **Ian D'Arcy** | **201** |
+| via her mother, **Giuseppina Falco** | **40** |
+
+Forty ancestors across **nine generations**, reaching:
+
+- **Agostino Falcone**, b. c.1740, Caserta, Campania
+- **Pasquale Falco**, b. 1765, and **Chiara Rivetti**, b. 1772, both of **Arienzo, Caserta**
+- **Claudia di Lucia**, 1760–1830, **Santa Maria a Vico**
+- **Vincenzo Falco**, 1793–1875, Arienzo
+
+Places named: Arienzo (8 people), Santa Maria a Vico, Forchia, Arpaia, San Felice, Benevento, Caserta.
+
+**This archive has never written one word about any of them.** Eleven pages on Brisbane; nothing on
+Campania.
+
+## 126. And the answer to "how far beyond Brisbane"
+
+Birthplaces of the **144 ancestors the archive defends**:
+
+| | | |
+|---|---|---|
+| no place recorded | 51 | 35.4% |
+| **England** | 31 | 21.5% |
+| **Ireland** | 16 | 11.1% |
+| **Australia** | **15** | **10.4%** |
+| elsewhere (incl. Italy) | 23 | 16.0% |
+| **Scotland** | 7 | 4.9% |
+
+**Only one ancestor in ten was born in Australia**, and every one of them sits in generations 2–7.
+**From generation 8 upward, not a single ancestor is Australian.** The archive's centre of gravity is
+England, Ireland, Scotland and Campania — and its published pages are overwhelmingly Brisbane.
+
+**51 ancestors have no birthplace recorded at all** — the largest single category, larger than
+England. Concentrated at g5–g9, and by surname: Annecchino (3), Ferrara (3), Keeling (2), Crisci (2),
+Mulcahy (2), Ward (2).
+
+That is the honest state of the ancestry, and it is the opposite of the impression the site gives.
+
+## 127. Site changes
+
+- `/the-other-archives` — rewritten. The error is stated at the top, the join table now shows
+  D'Arcy–Falco as the *first* join and the Falco line as forty of the root person's own ancestors.
+- `/what-we-got-wrong` — the seventh error added; the superseded entry (which asserted my mistake as
+  the truth) removed, because leaving it made the page contradict itself.
+- `/` — the home page's surgeon's-journal card corrected from "30 men" to 39, with the citation.
+
