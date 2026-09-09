@@ -1,0 +1,75 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import families from "../data/families.json";
+import { byId } from "../lib/people.js";
+const f = families.find((x) => x.surname === "Sneyd");
+const shown = f.members.filter((m) => !m.living);
+---
+<Base
+  title="The Sneyds"
+  eyebrow={`${f.published} published people — the largest family in the archive`}
+  dek="Out of Bristol and Kempsey into far western Queensland: married at Muttaburra, born at Boulia, and one of them killed at Pozières.">
+
+  <section class="blk">
+    <p class="lede">Ivy Miriam Sneyd married Lindesay Atkinson D'Arcy at Albion Church in March 1916.
+    Her family is the biggest in this archive — <strong>{f.total}</strong> people in the tree — and
+    the one that pushed furthest into the Queensland interior.</p>
+
+    <div class="grid two" style="margin-top:1.4rem">
+      <div class="card">
+        <h3>Muttaburra, 1891</h3>
+        <p><strong>Arthur William Hartley Sneyd</strong> (b. Brisbane 1866) married
+        <strong>Martha Blum</strong> (b. Rockhampton 1870) at <strong>Muttaburra</strong> on
+        20 January 1891 — six hundred kilometres inland, in the central-west sheep country.</p>
+      </div>
+      <div class="card">
+        <h3>Boulia, 1891</h3>
+        <p><strong>Ivy Miriam Sneyd</strong> was born at <strong>Boulia</strong> on 31 October 1891,
+        nine months after that wedding and another four hundred kilometres further west, near the
+        Northern Territory border. It is the remotest birthplace in the archive by a long way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">20 August 1916</div>
+    <h2 style="margin-top:.4rem">Arthur Hartley Sneyd, killed at Pozières</h2>
+    <p>Ivy's younger brother, born at Rockhampton on 11 October 1893, schooled at Eagle Junction State
+    School, a clerk by trade. He was <strong>killed in action at Pozières on the Somme on 20 August
+    1916</strong>, aged twenty-two, and is buried in France.</p>
+    <p style="margin-top:.9rem">Five months earlier his sister had married Lindesay Atkinson D'Arcy at
+    Albion; three months earlier Lindesay had sailed for the war from Sydney aboard HMAT
+    <em>Demosthenes</em>. Lindesay came home. Arthur did not.</p>
+    <p class="small" style="margin-top:.9rem">His Roll of Honour particulars — the form a family filled
+    in by hand for the Australian War Memorial — survive and have not yet been transcribed here.
+    <a href={u("/open-questions")}>The queue →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">A caution</div>
+    <h2 style="margin-top:.4rem">Sneyd is a gentry name, and that is a warning</h2>
+    <p><em>Sneyd</em> is strongly associated with a Staffordshire landed family, and a Staffordshire
+    landed family is exactly the sort of thing a pedigree drifts towards when it is not held down by
+    documents. The same scepticism this archive applies to the
+    <a href={u("/hornby")}>Hornby descent</a> applies here, and for the same reason. The Sneyds are
+    solid from <strong>William Hartley Sneyd, born Kempsey, New South Wales, 1838</strong> forward.
+    Above him, nothing here has been checked.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The people</h2>
+    <div class="grid three" style="margin-top:1rem">
+      {shown.map((m) => {
+        const o = byId.get(m.id);
+        return (
+          <a class="cardlink" href={u(`/people/${o ? o.slug : ""}`)}>
+            <div class="nm">{m.name}</div>
+            <p class="small" style="margin-top:.3rem">{m.life || "dates unknown"}
+            {m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+</Base>

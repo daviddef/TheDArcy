@@ -1,0 +1,52 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import families from "../data/families.json";
+import { byId } from "../lib/people.js";
+
+const fams = families.filter((f) => f.published > 0);
+const total = fams.reduce((a, f) => a + f.published, 0);
+---
+<Base
+  title="The Families"
+  eyebrow={`${fams.length} surnames`}
+  dek="A D'Arcy married a Sneyd, who was the granddaughter of a Wakefield of Bristol. Each of these names is a family in its own right, and several of them reached Queensland before the D'Arcys did.">
+
+  <section class="blk">
+    <p class="lede">The line the archive is named for is one thread of {fams.length}. Between them
+    these families brought <strong>{total}</strong> published people out of Yorkshire, Hampshire,
+    Somerset, Bristol, London, Limerick, Monaghan, Cork, Ayrshire, Lanarkshire and Germany, and set
+    them down in New South Wales and Queensland.</p>
+  </section>
+
+  {fams.map((f) => {
+    const dated = f.members.filter((m) => !m.living && (m.born || m.died));
+    const first = dated[0];
+    const places = [...new Set(f.members.filter((m) => m.bornPlace)
+      .map((m) => m.bornPlace.split(",").slice(-2).join(",").trim()))].slice(0, 4);
+    return (
+      <section class="blk">
+        <div class="lab">{f.published} published{f.total > f.published ? ` · ${f.total - f.published} living, withheld` : ""}</div>
+        <h2 style="margin-top:.3rem">{f.surname}</h2>
+        <p class="dek">{f.blurb}</p>
+        {places.length > 0 && <p class="small" style="margin-top:.5rem">Recorded in: {places.join(" · ")}</p>}
+        <div class="grid three" style="margin-top:1rem">
+          {f.members.filter((m) => !m.living).slice(0, 12).map((m) => {
+            const o = byId.get(m.id);
+            return (
+              <a class="cardlink" href={u(`/people/${o ? o.slug : ""}`)}>
+                <div class="nm">{m.name}</div>
+                <p class="small" style="margin-top:.3rem">{m.life || "dates unknown"}
+                {m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
+              </a>
+            );
+          })}
+        </div>
+        {f.published > 12 && (
+          <p class="small" style="margin-top:.8rem">
+            and {f.published - 12} more — <a href={u("/people")}>the full list →</a></p>
+        )}
+      </section>
+    );
+  })}
+</Base>

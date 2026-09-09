@@ -1,0 +1,50 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import places from "../data/places.json";
+
+const country = (p) => {
+  const t = p.place.toLowerCase();
+  if (/australia|queensland|new south wales|nsw|qld|victoria|brisbane|sydney/.test(t)) return "Australia";
+  if (/ireland|limerick|monaghan|cork|dublin/.test(t)) return "Ireland";
+  if (/scotland|ayr|lanark|glasgow|quivox/.test(t)) return "Scotland";
+  if (/england|yorkshire|hampshire|somerset|london|bristol|kent|middlesex|dorset|portsmouth|surrey|devon/.test(t)) return "England";
+  if (/germany|prussia|bavaria/.test(t)) return "Germany";
+  if (/barbados|caribbean|west indies|jamaica/.test(t)) return "The Caribbean";
+  if (/italy|italia|campania|caserta|benevento/.test(t)) return "Italy";
+  return "Elsewhere";
+};
+const order = ["Australia", "England", "Ireland", "Scotland", "Germany",
+               "The Caribbean", "Italy", "Elsewhere"];
+const groups = {};
+for (const p of places) (groups[country(p)] ||= []).push(p);
+---
+<Base
+  title="Places"
+  eyebrow={`${places.length} named places`}
+  dek="Where this family was born and where it died — counted, not asserted. The shape of the list is the shape of the migration.">
+
+  <section class="blk">
+    <p class="lede">Every place named in a birth or death record among the {places.length ? "" : ""}
+    ancestors, with the number of times it appears. Read down the Australian column and you can watch
+    a family arrive: Parramatta, then Kempsey, then Brisbane, then out along the Queensland railway
+    lines to Boulia, Gympie, Rockhampton and Toowoomba, then back to Brisbane again.</p>
+  </section>
+
+  {order.filter((k) => groups[k]).map((k) => (
+    <section class="blk">
+      <h2>{k}</h2>
+      <p class="small">{groups[k].length} places · {groups[k].reduce((a, p) => a + p.n, 0)} recorded events</p>
+      <div class="scroll" style="margin-top:.8rem">
+        <table>
+          <thead><tr><th>Place</th><th class="m">Events</th></tr></thead>
+          <tbody>
+            {groups[k].map((p) => (
+              <tr><td>{p.place}</td><td class="m">{p.n}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+</Base>

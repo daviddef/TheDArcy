@@ -1,0 +1,83 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import { people } from "../lib/people.js";
+
+const withSrc = people.filter((p) => (p.sources || []).length > 0).length;
+const counts = {};
+for (const p of people) for (const s of p.sources || []) {
+  const k = s.split("—")[0].trim();
+  counts[k] = (counts[k] || 0) + 1;
+}
+const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+---
+<Base
+  title="Sources"
+  eyebrow="Where the evidence comes from"
+  dek="Every citation the archive carries, counted — and, more usefully, a plain statement of which of them are records and which are other people's family trees.">
+
+  <section class="blk">
+    <p class="lede">Of the {people.length} published people here, <strong>{withSrc}</strong> carry at
+    least one citation. That number flatters the archive, and this page exists to say why.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>A family tree is not a source.</strong> Several of the most frequent citations below are
+      other people's online trees — Geni, FamilySearch Family Tree, and named MyHeritage sites. Those
+      record what somebody believed. They are shown because concealing them would be worse, but they
+      carry no evidential weight in this archive, and a claim resting only on them is marked
+      <span class="chip lore">family lore</span> or <span class="chip dis">disputed</span> however
+      many trees repeat it. <a href={u("/method")}>Method →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>Record sets — these are evidence</h2>
+    <ul class="dek">
+      <li><strong>Queensland civil registration</strong> — births, deaths and marriages, from 1856.</li>
+      <li><strong>New South Wales civil registration and parish registers</strong> — including
+      St James's, Sydney, where George Lindsay D'Arcy was christened on 5 November 1829.</li>
+      <li><strong>Australian newspapers (Trove)</strong> — death and funeral notices, and the
+      Brisbane press.</li>
+      <li><strong>National Archives of Australia, First World War service records</strong> — including
+      the fourteen-page attestation and service file of Lindesay Atkinson D'Arcy.</li>
+      <li><strong>Australian War Memorial</strong> — Roll of Honour circulars, unit war diaries and
+      photographs, including the Roll of Honour particulars for Arthur Hartley Sneyd, killed at
+      Pozières on 20 August 1916.</li>
+      <li><strong>Brisbane City Council cemetery registers</strong> — Toowong, Dutton Park, South
+      Brisbane, Nundah, Lutwyche, Mt Thompson.</li>
+      <li><strong>Roots Ireland / Limerick diocesan registers</strong> — the baptism of Paul Cole
+      Atkinson at St Mary's Cathedral, Limerick, 9 July 1832.</li>
+      <li><strong>Scotland's People</strong> — St Quivox and Strathaven, Ayrshire and Lanarkshire, for
+      the Murdoch and Watt lines. Not yet consulted directly.</li>
+      <li><strong>Forebears</strong> — surname distribution, accessed 9 September 2026.
+      <a href={u("/name")}>The name →</a></li>
+    </ul>
+  </section>
+
+  <section class="blk">
+    <h2>Family documents held privately</h2>
+    <ul class="dek">
+      <li><strong>The eulogy for Kenneth Lindsay D'Arcy</strong>, March 2010 — four thousand words in
+      three parts, delivered by Gayle, Ian and Graham D'Arcy. The single richest source in the
+      archive. <a href={u("/documents")}>Read it →</a></li>
+      <li><strong>A 1970 school photograph</strong>, Pimlico State High School, Townsville, showing
+      Ian D'Arcy — which independently confirms the Townsville decade described in the eulogy.</li>
+      <li><strong>The 'This Is Your Life' book</strong> presented to Ken D'Arcy on his retirement from
+      National Mutual in 1982. Referred to in the eulogy; not yet located.</li>
+    </ul>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Every citation string in the tree, counted</h2>
+    <p class="small">Exactly as carried in the exported GEDCOM, so that the balance between records
+    and trees is visible rather than asserted.</p>
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>Citation</th><th class="m">People</th></tr></thead>
+        <tbody>
+          {ranked.map(([k, n]) => (<tr><td>{k}</td><td class="m">{n}</td></tr>))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>

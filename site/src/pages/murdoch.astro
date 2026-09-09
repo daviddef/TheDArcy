@@ -1,0 +1,91 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import families from "../data/families.json";
+import { byId } from "../lib/people.js";
+const f = families.find((x) => x.surname === "Murdoch");
+const shown = f.members.filter((m) => !m.living);
+---
+<Base
+  title="The Murdochs"
+  eyebrow={`${f.published} published people`}
+  dek="From St Quivox in Ayrshire to Maloney Street, Toowoomba — a labourer, an engineer, and a man who died of a heart attack in the middle of a tennis game.">
+
+  <section class="blk">
+    <p class="lede">Audrey <strong>"Dell" Murdoch</strong> (1929–2022) was working in the Toowoomba
+    branch of Union Trustees in 1948 when a young man was transferred up from Brisbane. She married
+    him in 1952 and stayed married for just under fifty-eight years.
+    <a href={u("/documents")}>Her children tell the story →</a></p>
+  </section>
+
+  <section class="blk">
+    <h2>Three generations, three hearts</h2>
+    <div class="spine" style="margin-top:1.2rem">
+      <div class="gen">
+        <div><span class="yr">1824</span><span class="who">Francis Murdoch</span>
+        <span class="whr"> · 1824–1909</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:72ch">Labourer, of St Quivox, Ayr.
+        Married at Strathaven, Lanarkshire, in 1853. Died at Ayr in 1909 — he never left Scotland.</p>
+      </div>
+      <div class="gen">
+        <div><span class="yr">1856</span><span class="who">William Murdoch</span>
+        <span class="whr"> · 1856–1918</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:72ch">Born St Quivox, Ayrshire, 7 October
+        1856. <strong>Engineer.</strong> The generation that emigrated. Married Catherine Jane Matson
+        of Cornacreeve, County Monaghan. Died of a <strong>heart attack</strong> at Maloney Street,
+        Toowoomba, 22 April 1918; buried Toowoomba Cemetery.</p>
+      </div>
+      <div class="gen">
+        <div><span class="yr">1894</span><span class="who">William James Fraser "Bill" Murdoch</span>
+        <span class="whr"> · 1894–1946</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:72ch">Born Gympie, Queensland. Married
+        Barbara "Goldie" Atwell at Brisbane, 11 April 1922. Died 26 May 1946 of a
+        <strong>heart attack during a tennis game</strong>, aged fifty-one. His daughter Gayle
+        recorded that he had been <em>a member of the Communist Party</em> — kept here as
+        <span class="chip lore">family lore</span>, because it is remembered rather than
+        documented, and it would be a straightforward thing to check.</p>
+      </div>
+      <div class="gen">
+        <div><span class="yr">1929</span><span class="who">Audrey "Dell" Murdoch</span>
+        <span class="whr"> · 1929–2022</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:72ch">Born Toowoomba, 1 November 1929.
+        Sixteen when her father died on the tennis court. Married Kenneth Lindsay D'Arcy at Toowoomba,
+        5 April 1952. Died at Brisbane, 1 August 2022, aged ninety-two; interred at Centenary
+        Memorial Gardens with her husband.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">1948, the Toowoomba office</div>
+    <h2 style="margin-top:.4rem">"He was a big disappointment"</h2>
+    <blockquote>
+      According to Mum, all the girls in the Toowoomba office were quite excited about the imminent
+      arrival of the new young man from Brisbane. Likewise, Mum was full of anticipation and hope that
+      a handsome heartthrob would walk through the office door that Monday morning. When she finally
+      laid eyes on Dad, she clearly remembers thinking to herself — <em>'Ohhh'</em>.
+      <strong>"He was a big disappointment,"</strong> she confided.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— Gayle D'Arcy, eulogy for her
+      father, March 2010</footer>
+    </blockquote>
+    <p>They were married four years later and stayed so for fifty-eight. They got to know each other
+    at table tennis fixtures; she had the habit of getting the giggles every time she lost a point.
+    Their daughter went on to be one of the best table tennis players in Queensland for years.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The people</h2>
+    <div class="grid three" style="margin-top:1rem">
+      {shown.map((m) => {
+        const o = byId.get(m.id);
+        return (
+          <a class="cardlink" href={u(`/people/${o ? o.slug : ""}`)}>
+            <div class="nm">{m.name}</div>
+            <p class="small" style="margin-top:.3rem">{m.life || "dates unknown"}
+            {m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+</Base>

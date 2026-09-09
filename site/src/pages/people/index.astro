@@ -1,0 +1,53 @@
+---
+import Base from "../../layouts/Base.astro";
+import { u } from "../../lib/url.js";
+import { people } from "../../lib/people.js";
+import ancestors from "../../data/ancestors.json";
+
+const redacted = ancestors.filter((a) => a.living).length;
+const inLine = people.filter((p) => p.ancestor).length;
+
+// group by century of birth, so the page has a shape
+const bucket = (p) => {
+  const y = +((p.born || p.died || "").match(/\d{4}/) || [0])[0];
+  if (!y) return "Undated";
+  return `${Math.floor(y / 100) * 100}s`;
+};
+const groups = {};
+for (const p of people) (groups[bucket(p)] ||= []).push(p);
+const order = Object.keys(groups).sort((a, b) =>
+  a === "Undated" ? 1 : b === "Undated" ? -1 : parseInt(a) - parseInt(b));
+---
+<Base
+  title="The People"
+  eyebrow={`${people.length} named`}
+  dek="Everybody this archive can name and publish, in one list. Most of them never continued the line — which is the point: a family is not a pedigree.">
+
+  <section class="blk">
+    <p class="lede">There are <strong>{people.length}</strong> people here.
+    Of those, <strong>{inLine}</strong> are direct ancestors and the rest are their brothers,
+    sisters, spouses and cousins — the people a pedigree throws away.</p>
+    <p class="dek" style="margin-top:.9rem">A further <strong>{redacted}</strong> people in the
+    research data are living and do not appear in this build at all: not hidden, not gated, not
+    present in the output. <a href={u("/method")}>The rule, and how to invoke it →</a></p>
+  </section>
+
+  {order.map((k) => (
+    <section class="blk">
+      <h2>{k}</h2>
+      <p class="small">{groups[k].length} people</p>
+      <div class="grid three" style="margin-top:1rem">
+        {groups[k].map((p) => (
+          <a class="cardlink" href={u(`/people/${p.slug}`)}>
+            <div class="nm">{p.name}</div>
+            <p class="small" style="margin-top:.3rem">
+              {p.life || "dates unknown"}
+              {p.bornPlace ? ` · ${p.bornPlace.split(",")[0]}` : ""}
+            </p>
+            {p.ancestor && <span class="chip doc" style="margin-top:.45rem">direct line</span>}
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

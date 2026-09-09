@@ -1,0 +1,122 @@
+---
+import Base from "../../layouts/Base.astro";
+import { u } from "../../lib/url.js";
+import { people, byId } from "../../lib/people.js";
+
+export async function getStaticPaths() {
+  const { people } = await import("../../lib/people.js");
+  return people.map((p) => ({ params: { slug: p.slug }, props: { person: p } }));
+}
+const { person: p } = Astro.props;
+
+const link = (id) => {
+  const o = byId.get(id);
+  return o ? { name: o.name, slug: o.slug, life: o.life } : null;
+};
+
+// children, gathered off the spouse records
+const kids = [];
+for (const s of p.spouses || []) {
+  for (const c of s.children || []) {
+    const o = link(c);
+    if (o && !kids.some((k) => k.slug === o.slug)) kids.push(o);
+  }
+}
+const parents = people.filter((o) =>
+  (o.spouses || []).some((s) => (s.children || []).includes(p.id)));
+
+const facts = [
+  ["Born", p.born, p.bornPlace],
+  ["Died", p.died, p.diedPlace],
+  ["Cause", p.cause, ""],
+  ["Buried", "", p.burial],
+  ["Trade", p.occupation, ""],
+].filter(([, a, b]) => a || b);
+---
+<Base title={p.name} eyebrow={p.life || "dates unknown"} dek={p.occupation || ""}>
+
+  <section class="blk">
+    <div class="grid two">
+      <div>
+        <h2 style="margin-top:0">The record</h2>
+        <div class="scroll">
+          <table>
+            <tbody>
+              {facts.map(([k, a, b]) => (
+                <tr>
+                  <td style="white-space:nowrap">{k}</td>
+                  <td class="m">{a || "—"}</td>
+                  <td>{b || ""}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {p.ancestor && (
+          <p style="margin-top:1rem"><span class="chip doc">direct line</span>
+          {p.gen && <span class="small"> · generation {p.gen} counting back from the present day</span>}</p>
+        )}
+      </div>
+
+      <div>
+        <h2 style="margin-top:0">Family</h2>
+        {parents.length > 0 && (
+          <>
+            <h3 class="lab" style="margin-top:.6rem">Parents</h3>
+            <p>{parents.map((o, i) => (
+              <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a></>
+            ))}</p>
+          </>
+        )}
+        {(p.spouses || []).filter((s) => s.name && !s.living).length > 0 && (
+          <>
+            <h3 class="lab" style="margin-top:1rem">Married</h3>
+            {p.spouses.filter((s) => s.name && !s.living).map((s) => {
+              const o = link(s.id);
+              return (
+                <p>
+                  {o ? <a href={u(`/people/${o.slug}`)}>{s.name}</a> : s.name}
+                  {s.married && <span class="small"> · {s.married}</span>}
+                  {s.marriedPlace && <span class="small"> at {s.marriedPlace}</span>}
+                  {s.divorced && <span class="small"> · divorced {s.divorced}</span>}
+                </p>
+              );
+            })}
+          </>
+        )}
+        {kids.length > 0 && (
+          <>
+            <h3 class="lab" style="margin-top:1rem">Children</h3>
+            <p>{kids.map((o, i) => (
+              <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a>
+              {o.life && <span class="small"> ({o.life})</span>}</>
+            ))}</p>
+          </>
+        )}
+      </div>
+    </div>
+  </section>
+
+  {(p.notes || []).length > 0 && (
+    <section class="blk">
+      <h2>What is written about {p.name.split(" ")[0]}</h2>
+      <p class="small">Carried across from the family tree. Family testimony, not an independent
+      record — valuable, and labelled.</p>
+      {p.notes.map((n) => (
+        <div class="note" style="margin-top:1rem;white-space:pre-wrap">{n}</div>
+      ))}
+    </section>
+  )}
+
+  {(p.sources || []).length > 0 && (
+    <section class="blk" style="border-bottom:0">
+      <h2>Sources attached in the tree</h2>
+      <ul class="dek">
+        {p.sources.map((s) => <li>{s}</li>)}
+      </ul>
+      <p class="small">These are the citations the family tree carries. Where this archive has
+      checked one against the original, it says so on the relevant page.
+      <a href={u("/method")}> Method →</a></p>
+    </section>
+  )}
+</Base>

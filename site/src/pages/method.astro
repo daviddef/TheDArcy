@@ -1,0 +1,87 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import ancestors from "../data/ancestors.json";
+const redacted = ancestors.filter((a) => a.living).length;
+---
+<Base
+  title="Method"
+  eyebrow="How to read this archive"
+  dek="Every claim on this site carries its confidence. A thing that is documented says so; a thing that is family tradition says that too, and is kept anyway, because pretending otherwise is how family myths become family history.">
+
+  <section class="blk">
+    <h2 style="margin-top:0">The five labels</h2>
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <tbody>
+          <tr><td><span class="chip doc">documented</span></td>
+              <td>A named source with a reference, and where possible the scan itself.</td></tr>
+          <tr><td><span class="chip inf">inferred</span></td>
+              <td>A reasoned conclusion drawn from documented facts, with the reasoning written out
+                  in full so that it can be overturned by anyone who finds it wanting.</td></tr>
+          <tr><td><span class="chip dis">superseded</span></td>
+              <td>Asserted in the family record, and now displaced by a document that says otherwise.</td></tr>
+          <tr><td><span class="chip dis">disputed</span></td>
+              <td>Asserted in the family record but unsupported, or contradicted, by what can be seen.</td></tr>
+          <tr><td><span class="chip lore">family lore</span></td>
+              <td>Told, remembered, not corroborated. Kept because it is precious; labelled because
+                  pretending otherwise is how family myths become family history.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>Living people</h2>
+    <p class="lede"><strong>Living people are omitted from this build entirely</strong> — not hidden,
+    not gated behind a login, not present in the output at all.</p>
+    <p style="margin-top:1rem">The rule is applied once, in code, at the boundary between the
+    research data and the published site — so a person cannot be living on one page and dead on
+    another.</p>
+    <p style="margin-top:1rem">Judging people only by their own dates does not work on a tree this
+    size, because thousands of them have no dates at all: medieval nobility, unnamed spouses,
+    half-remembered great-aunts. Treating all of those as living is safe but useless — it would
+    withhold the fourteenth century. So instead the build computes, for every person, an
+    <strong>upper bound on their birth year</strong>: the latest year they could possibly have been
+    born, given their own recorded events, their children's births, their marriages and their
+    parents' bounds. Somebody is published only when <em>even that latest possible birth</em> is more
+    than a hundred years ago.</p>
+    <p style="margin-top:1rem">Every step of that reasoning is a genuine bound rather than a guess —
+    a parent is at least fourteen years older than their child and at most sixty; a person existed at
+    their own recorded events. A <em>recorded</em> birth is never overridden by inference, because an
+    inference that made a living person look older would publish them. Where nothing whatever is
+    known, the person is presumed living.</p>
+    <p style="margin-top:1rem">On this build the rule judges <strong>2,034</strong> of the 15,643
+    people in the tree to be living, and removes <strong>{redacted}</strong> from the ancestor set.
+    Where a living person sits between two published generations, the line is shown as continuing but
+    the person is not named — and a living spouse, parent or child is not named on anybody else's
+    page either.</p>
+    <p style="margin-top:1rem"><strong>A removal request is honoured within days</strong>, without
+    argument and without requiring a reason.</p>
+  </section>
+
+  <section class="blk">
+    <h2>Where the data comes from, and what that means</h2>
+    <p>The spine of this archive is a MyHeritage family tree of 15,643 people, exported to GEDCOM and
+    parsed here. That is a <em>starting point and not an authority.</em> An online tree records what
+    somebody believed; this archive's job is to say which of those beliefs survive contact with a
+    document.</p>
+    <p style="margin-top:1rem">So the tree is treated as a witness rather than a source. Where it
+    carries a citation, the citation is shown on the person's page and marked as
+    <em>attached in the tree</em> rather than <em>checked here</em>. Where this archive has gone to
+    the original, the page says so.</p>
+    <div class="note" style="margin-top:1.2rem">
+      The most useful thing this method produces is not a longer line. It is a
+      <strong>shorter, truer one</strong>, with the join that fails clearly marked, so that the next
+      person to work on it starts where the evidence actually stops rather than where the chart does.
+      <a href={u("/hornby")}>The worked example →</a>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Corrections</h2>
+    <p class="dek">Corrections are the most valuable thing anyone can send. If something here is
+    wrong — a date, a place, a join, a person who should not be published — say so, and it will be
+    changed and the change recorded.</p>
+  </section>
+</Base>

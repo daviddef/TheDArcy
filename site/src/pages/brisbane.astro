@@ -1,0 +1,141 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const gens = [
+  {
+    who: "George Lindsay D'Arcy", life: "1829–1901",
+    what: "Born at Parramatta, christened at St James's, Sydney. Came north and married Eliza Keeling at Brisbane on 7 June 1863 — five months after she stepped off the Flying Cloud at Moreton Bay. Seven children. Buried at Dutton Park.",
+    tag: "The one who came north",
+  },
+  {
+    who: "George Pitt D'Arcy", life: "1864–1931",
+    what: "Named for the major of the 39th Foot, and the first of the line born in Brisbane. Chief Clerk in the Queensland Railway Department. Married Ida Kathleen Atkinson at Trinity Church, Fortitude Valley, on 10 October 1888. Buried at Dutton Park beside his father.",
+    tag: "The railway clerk",
+  },
+  {
+    who: "Lindesay Atkinson D'Arcy", life: "1892–1936",
+    what: "Clerk; Brisbane Central Boys' State School. Enlisted 13 December 1915 and married Ivy Miriam Sneyd at Albion Church on 18 March 1916 — then sailed from Sydney on HMAT A64 Demosthenes on 18 May, nine weeks after the wedding. Five children. Dead at forty-three, leaving a widow with no trade and no pension.",
+    tag: "The one who died young",
+  },
+  {
+    who: "Kenneth Lindsay D'Arcy", life: "1927–2010",
+    what: "Nine years old when his father died. Ascot State School, Brisbane State High, then Union Trustees at fifteen — the firm his father had worked for. Navy at seventeen; Thursday Island; thirty-two years at National Mutual; Townsville, Perth and home. Twenty melanomas, and the last one got him.",
+    tag: "The one who told it",
+  },
+];
+---
+<Base
+  title="Brisbane"
+  eyebrow="Four generations, one city"
+  dek="From a Parramatta boy who came north in the 1860s to a man who dictated his whole childhood to his children before he died. The D'Arcys have been Brisbane people for a hundred and sixty years.">
+
+  <section class="blk">
+    <p class="lede">The family arrived in Australia as soldiers at Parramatta in 1826. Within two
+    generations it had become something quieter and more Queensland: clerks, a railway man, an
+    insurance manager. This page follows the four generations that made Brisbane home.</p>
+  </section>
+
+  <section class="blk">
+    <div class="spine" style="margin-top:1.2rem">
+      {gens.map((g) => (
+        <div class="gen">
+          <div>
+            <span class="yr">{g.life.split("–")[0]}</span>
+            <span class="who">{g.who}</span>
+            <span class="whr"> · {g.life}</span>
+          </div>
+          <div class="lab" style="margin-top:.25rem">{g.tag}</div>
+          <p class="small" style="margin-top:.4rem;max-width:74ch">{g.what}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">10 November 1936</div>
+    <h2 style="margin-top:.4rem">The death that shaped everything after it</h2>
+    <p><strong>Lindesay Atkinson D'Arcy died at forty-three</strong>, leaving Ivy with five children
+    and, as his youngest son put it seventy-four years later, no real work skills and no decent system
+    of social security. What she did instead is the most Queensland solution imaginable: she took in
+    boarders.</p>
+
+    <blockquote>
+      Ivy had 5 children to support, and only Viv, Dad's eldest brother was working. Dad's Mum had no
+      real work skills herself and there was no decent system of social security. They were in
+      <em>'a spot of bother'</em> as Dad put it. Ivy decided to take in boarders and Dad said they
+      never really had a normal home life after that with <strong>up to 13 people around the table at
+      mealtimes</strong>.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— Gayle D'Arcy, eulogy for her
+      father, March 2010</footer>
+    </blockquote>
+
+    <p>Kenneth was nine. Within weeks he and his brother Bill were walking to the Savoy Picture
+    Theatre at Clayfield on Friday nights with threepence each, buying cigarettes with it and stealing
+    the matches. He smoked from the age of nine. He died of melanoma at eighty-two.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Before that</div>
+    <h2 style="margin-top:.4rem">The Queenslander at Clayfield, and the parrot</h2>
+    <p>What survives of the house is a handful of details, and they are worth more than a hundred
+    dates. Lindesay was a keen gardener — so keen that his youngest son was not allowed a bicycle
+    (too dangerous) or a football in the backyard (bad for the garden), and was set the standing task
+    of whacking mosquitoes off his father's bare back while he hosed in the late afternoon.</p>
+
+    <blockquote>
+      According to Dad, when someone knocked at the door their very intelligent African Grey parrot
+      always called out <strong>"Come in"</strong> from his cage inside the house. This apparently
+      caused confusion for many a 1st time visitor if none of the D'Arcys were actually home.
+    </blockquote>
+
+    <p class="small">There is also the mango tree, out of which Ken fell into his father's tub of
+    liquid manure — and the recorded family verdict that Lindesay was upset not at his son's injuries
+    but at the loss of the manure. <a href={u("/documents")}>The eulogy in full →</a></p>
+  </section>
+
+  <section class="blk">
+    <h2>Where they are buried</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Person</th><th class="m">Died</th><th>Interred</th></tr></thead>
+        <tbody>
+          <tr><td>George Lindsay D'Arcy</td><td class="m">1901</td><td>Dutton Park, Brisbane</td></tr>
+          <tr><td>Eliza Keeling</td><td class="m">1918</td><td>South Brisbane Cemetery, plot 8B</td></tr>
+          <tr><td>George Pitt D'Arcy</td><td class="m">1931</td><td>Dutton Park, Brisbane</td></tr>
+          <tr><td>Ida Kathleen Atkinson</td><td class="m">1937</td><td>South Brisbane</td></tr>
+          <tr><td>Florence Isabel D'Arcy</td><td class="m">1918</td><td>Nundah Cemetery</td></tr>
+          <tr><td>Lindesay Atkinson D'Arcy</td><td class="m">1936</td><td>Toowong Cemetery</td></tr>
+          <tr><td>Arthur William Hartley Sneyd</td><td class="m">1922</td><td>Toowong, Portion 4, Section 35, Grave 3–4</td></tr>
+          <tr><td>Martha Blum</td><td class="m">1904</td><td>Lutwyche, Portion GP5, Section 42A, Grave 78 — with her mother-in-law Miriam Wakefield</td></tr>
+          <tr><td>Ivy Miriam Sneyd</td><td class="m">1979</td><td>Mt Thompson Memorial Gardens, Holland Park</td></tr>
+          <tr><td>Kenneth Lindsay D'Arcy</td><td class="m">2010</td><td>Centenary Memorial Gardens, Sumner</td></tr>
+          <tr><td>Audrey "Dell" Murdoch</td><td class="m">2022</td><td>Centenary Memorial Gardens, Brisbane</td></tr>
+          <tr><td>Frederick Robert D'Arcy <span class="small">(the surveyor, half-brother of the line)</span></td>
+              <td class="m">1875</td><td>Toowong Cemetery</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1rem">Dutton Park, South Brisbane, Nundah, Lutwyche, Toowong,
+    Mt Thompson, Sumner — six generations across seven Brisbane cemeteries, and the surveyor from the
+    other branch lying at Toowong a few sections from his half-brother's grandson's father-in-law.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The other Brisbane arrivals</h2>
+    <div class="grid two" style="margin-top:1rem">
+      <div class="card">
+        <h3>Eliza Keeling, on the <em>Flying Cloud</em></h3>
+        <p>Born London 1837; <strong>arrived Moreton Bay 17 January 1863</strong>; married George
+        Lindsay D'Arcy that June. She was living at West End when she died in 1918.</p>
+      </div>
+      <div class="card">
+        <h3>Paul Cole Atkinson, organist</h3>
+        <p>Christened at <strong>St Mary's Cathedral, Limerick</strong>, 9 July 1832; organist at
+        Bandon, County Cork, by 1853; <strong>emigrated to Brisbane 2 September 1862</strong>, and in
+        1864 installed the organ at All Saints, Wickham Terrace. Died in his bed at Graham Street,
+        South Brisbane, in 1906. <a href={u("/families")}>The Atkinsons →</a></p>
+      </div>
+    </div>
+  </section>
+</Base>

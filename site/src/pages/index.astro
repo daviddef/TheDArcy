@@ -1,0 +1,130 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import { people } from "../lib/people.js";
+import ancestors from "../data/ancestors.json";
+import families from "../data/families.json";
+import places from "../data/places.json";
+
+const published = people.length;
+const redacted = ancestors.filter((a) => a.living).length;
+const surnames = families.filter((f) => f.published > 0).length;
+
+const more = [
+  ["/hornby", "The Hornby claim", "The tree runs this line to a Yorkshire earldom. The tree also admits, in its own note, that the join is only 'thought to be' — and then contradicts itself about which earl. Set out in full."],
+  ["/australia", "Arrival, 1826", "A major of the 39th Foot, his children born at Chatham in 1825 and Parramatta in 1827, and a regimental history that confirms both without ever having heard of him."],
+  ["/brisbane", "Brisbane", "Four generations in one city: a Parramatta boy who died at Dutton Park, a father dead at forty-three, a widow who took in boarders, and a son who told the whole story into a tape recorder."],
+  ["/families", "The families they married", "Sneyd, Atkinson, Murdoch, Atwell, Blum, Keeling, Creech, Matson, Wakefield, Wright — out of Limerick, Monaghan, Cork, Ayrshire, Somerset, Bristol and Germany."],
+  ["/name", "The name", "D'Arcy was coined twice: once in Normandy as a place, once in Ireland as a colour. The apostrophe is a hint and not a proof."],
+  ["/people", "The people", `Every person the archive can name and publish — ${published} of them, most of whom never continued the line.`],
+  ["/places", "Places", `${places.length} places, from Hornby Castle to Boulia. Read the Australian list in order and you can watch a family spread along the Queensland railway.`],
+  ["/method", "Method", "What 'documented' means here, what 'family lore' means, and the rule that keeps living people out of the build entirely."],
+];
+---
+<Base title="The D'Arcy Archive" bare={true}>
+
+  <section class="blk" style="padding-top:3.2rem">
+    <div class="lab">A family history, kept honestly</div>
+    <h1 style="font-size:clamp(36px,5.6vw,62px);line-height:1.04;margin:.6rem 0 0">
+      Six generations in Queensland, and one claim too far.</h1>
+    <p class="sub dek" style="font-size:clamp(1.05rem,2vw,1.28rem);margin-top:1.1rem;max-width:64ch">
+      Chatham · Parramatta · Sandgate · Clayfield · Boulia · Toowoomba · Townsville · Brisbane —
+      a soldier's family that came out with a convict guard in 1826 and never left.
+    </p>
+  </section>
+
+  <section class="blk">
+    <p class="lede">This is an archive of <strong>the D'Arcys of Brisbane</strong> — and of the
+    {surnames} families they married, who reached Queensland out of Limerick, Monaghan, Cork,
+    Ayrshire, Lanarkshire, Somerset, Bristol, London and Germany. It is not a pedigree. Of the
+    {published} people named here, most are somebody's brother or sister and continued nothing.</p>
+
+    <blockquote>
+      <em>D'Arcy</em> was coined twice over, and the two have nothing to do with each other: in
+      Normandy as <em>d'Arcy</em>, "of Arcy", the name of a place; and in Ireland as
+      <em>Ó Dorchaidhe</em>, from <em>dorcha</em>, "dark", the name of a complexion.
+      <strong>There is no single founding D'Arcy family.</strong> The work here is to establish which
+      D'Arcys are actually connected, and to say plainly where the evidence stops.
+    </blockquote>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The document at the centre of it</div>
+    <h2 style="margin-top:.4rem">Three birthplaces, two years apart</h2>
+    <p class="dek" style="margin:.7rem 0 1.2rem">For as long as this family has had a pedigree, the
+    interesting end of it was supposed to be the top — a castle in the North Riding, an earldom, a
+    line back to the 1560s. The interesting end is actually the bottom, and it is provable.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>What the children's births say</h3>
+        <p><strong>Charlotte Maria, Chatham, 1825. Catherine Maria, Parramatta, 1827. George Lindsay,
+        Parramatta, 1829.</strong> A family that was in Kent and then, within two years, in New South
+        Wales.</p>
+      </div>
+      <div class="card">
+        <h3>What the regiment says</h3>
+        <p>In July 1825 the <strong>39th (Dorsetshire) Regiment of Foot</strong> marched to Chatham to
+        embark for New South Wales as guards over convicts. From 1826 it was in the colony, with a
+        detachment at <strong>Parramatta</strong>. Their father is recorded as a
+        <em>Major in the 39th</em>.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.2rem"><a href={u("/australia")}>How the family arrived →</a></p>
+  </section>
+
+  <section class="blk">
+    <h2>Four things this archive has established</h2>
+    <div class="grid two" style="margin-top:1rem">
+      <div class="card">
+        <h3>A defensible head to the line</h3>
+        <p><strong>Major-General Robert D'Arcy C.B.</strong> (1751–1827), Commander of the Royal
+        Engineers at Chatham, known in the family as <em>The General</em>. The archive will defend him
+        and everyone below him. <a href={u("/direct-line")}>The spine →</a></p>
+      </div>
+      <div class="card">
+        <h3>A pedigree that contradicts itself</h3>
+        <p>The tree says Robert was "<em>thought to be the illegitimate</em>" son of the
+        <strong>4th</strong> Earl of Holderness — and then descends him from the <strong>3rd</strong>,
+        through a man with two birth years sixty-nine years apart.
+        <a href={u("/hornby")}>The Hornby claim →</a></p>
+      </div>
+      <div class="card">
+        <h3>A surveyor who helped map Melbourne</h3>
+        <p><strong>Frederick Robert D'Arcy</strong>, half-brother of the direct ancestor, was one of
+        three surveyors sent to Port Phillip in 1836 to chart the bay and the Yarra. He died at Spring
+        Hill and lies at Toowong. <a href={u("/australia")}>His story →</a></p>
+      </div>
+      <div class="card">
+        <h3>A voice, not just a date</h3>
+        <p><strong>Ken D'Arcy's eulogy</strong>, delivered in three parts by his three children in
+        March 2010, runs to four thousand words and carries the African Grey parrot, the mango tree,
+        the cigarettes at nine, and Cyclone Althea. <a href={u("/brisbane")}>Brisbane →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>Elsewhere in the archive</h2>
+    <div class="grid two" style="margin-top:1rem">
+      {more.map(([href, t, d]) => (
+        <a class="cardlink" href={u(href)}>
+          <div class="nm">{t}</div>
+          <p class="small" style="margin-top:.4rem">{d}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What is still missing</h2>
+    <p class="dek">Robert D'Arcy's baptism, somewhere in the North Riding around 1751 — the record
+    that would either make the Yorkshire descent or break it. The ship that carried Major George Pitt
+    D'Arcy out in 1826. Which of his two wives, both called Maria, bore which child. And whether the
+    Atkinsons of Limerick and the Murdochs of St Quivox can be pushed back past the emigrant
+    generation at all. <a href={u("/open-questions")}>The queue, in priority order →</a></p>
+    <p class="small" style="margin-top:1.2rem"><strong>{redacted} living people</strong> are excluded
+    from this build entirely — not hidden, not gated, not present in the output.
+    <a href={u("/method")}>The rule →</a></p>
+  </section>
+</Base>

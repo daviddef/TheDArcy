@@ -1,0 +1,69 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import eulogy from "../data/eulogy.json";
+
+const strip = (s) => s.replace(/\*\*/g, "").replace(/^> ?/gm, "").replace(/^\*|\*$/g, "");
+const words = eulogy.parts.reduce((a, p) => a + p.paras.join(" ").split(/\s+/).length, 0);
+---
+<Base
+  title="Documents"
+  eyebrow="The primary sources, in full"
+  dek="An archive that only summarises its documents is asking to be trusted. These are reproduced whole, so you can disagree with what has been made of them.">
+
+  <section class="blk">
+    <h2 style="margin-top:0">The eulogy for Kenneth Lindsay D'Arcy</h2>
+    <p class="dek">Delivered at his funeral in March 2010 in three parts, one by each of his three
+    children — Gayle, then Ian, then Graham. Roughly {words.toLocaleString()} words. It is the single
+    richest source this archive holds, and almost everything on the
+    <a href={u("/brisbane")}>Brisbane page</a> comes out of it.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>What kind of evidence is this?</strong> First-hand testimony by three people who were
+      there, recorded within days of his death — but testimony about a childhood they did not witness,
+      told to them by the man himself. For his own life after 1955 it is close to a primary record.
+      For his childhood in the 1930s it is <em>his</em> memory, at seventy years' distance, filtered
+      through theirs. Both are worth having. They are not the same thing.
+      <a href={u("/method")}>Method →</a>
+    </div>
+
+    <blockquote style="margin-top:1.6rem">
+      Dad used to say to us that he was so against the idea of there being a eulogy at his funeral
+      that he fully intended coming back to haunt the person who dared deliver one.
+    </blockquote>
+  </section>
+
+  {eulogy.parts.map((part) => (
+    <section class="blk">
+      <div class="lab">{part.heading.split("—")[1]?.trim()}</div>
+      <h2 style="margin-top:.3rem">{part.heading.split("—")[0].trim()}</h2>
+      <div class="prose" style="margin-top:1.2rem">
+        {part.paras.map((p) => (
+          p.startsWith(">")
+            ? <blockquote>{strip(p)}</blockquote>
+            : <p>{strip(p)}</p>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Other documents held</h2>
+    <div class="grid two" style="margin-top:1rem">
+      <div class="card">
+        <h3>Pimlico State High School, 1970</h3>
+        <p>A school photograph from Townsville showing Ian D'Arcy. Independent physical confirmation
+        of the Townsville decade that Ian himself describes in part two of the eulogy — the family
+        moved there in 1963 when National Mutual made his father District Sales Manager for North
+        Queensland. <a href={u("/brisbane")}>Brisbane →</a></p>
+      </div>
+      <div class="card">
+        <h3>Not yet located</h3>
+        <p>The <em>'This Is Your Life'</em> book presented to Ken on his retirement in 1982, said in
+        the eulogy to contain his own letter accepting early retirement. If it survives it is a
+        primary source for thirty-two years at National Mutual.
+        <a href={u("/open-questions")}>The queue →</a></p>
+      </div>
+    </div>
+  </section>
+</Base>

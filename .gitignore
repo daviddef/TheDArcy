@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+site/.astro/
+
+# Raw genealogical export: contains living people in full. Never committed to a
+# public repository. Regenerate with a fresh MyHeritage GEDCOM export.
+sources/*.ged

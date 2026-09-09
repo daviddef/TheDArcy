@@ -1,0 +1,150 @@
+---
+person: Kenneth Lindsay D'Arcy
+born: 1927-08-17
+died: 2010-03-03
+source: MyHeritage biography note, Defranceski Family Site (23andMe), individual 4000020
+captured: 2026-09-09
+type: family document — funeral eulogy, three parts
+authors: Gayle D'Arcy (daughter), Ian Kenneth D'Arcy (elder son), Graham Lindsay D'Arcy (younger son)
+confidence: family record — first-hand testimony by three children, delivered March 2010
+
+# Eulogy for Ken D'Arcy, March 2010
+
+Delivered at the funeral of **Kenneth Lindsay D'Arcy** (17 August 1927 – 3 March 2010) in three
+parts, by each of his three children in turn. Transcribed into the family tree as a biography note;
+captured here verbatim.
+
+> Dad used to say to us that he was so against the idea of there being a eulogy at his funeral that
+> he fully intended coming back to haunt the person who dared deliver one.
+
+---
+
+## Part 1 — delivered by his daughter, Gayle
+
+Dad used to say to us that he was so against the idea of there being a eulogy at his funeral that he fully intended coming back to haunt the person who dared deliver one. As Dad was not the slightest bit religious or spiritual, this was perhaps something of a puzzling threat. But I hope that, if to his surprise, Dad is hearing these words, he will forgive us for wanting to share with you something of his long and successful life.
+
+Kenneth Lindsay D'Arcy was born in Sandgate on the 17th of August 1927 and was the youngest of 5 children born to Ivy and Lindsay.
+
+Growing up in an old Queenslander home at Clayfield, he played backyard cricket, cowboys and Indians, marbles, and table tennis. He rode a scooter and a home made go-cart, but he was never allowed a bike as his father believed they were too dangerous, and he wasn't allowed to kick a football in the backyard in case it damaged the garden.
+
+Dad's father was indeed a very keen gardener and Dad recalled one childhood incident where he fell out of a mango tree into his Dad's liquid manure and his dad was very upset – not by his son's injuries, but because of the fact that some of his precious manure had been spilt in the fall.
+
+All the kids in the family were given regular gardening chores but Dad, the youngest, was always favoured for a slightly unusual task. He was required to whack the mosquitoes on his Dad's bare back when his dad was in the yard hosing in the late afternoon. He would have to do this for hours on some occasions but he said the upside was it gave them the chance to have some really good chats.
+
+Dad's other early childhood memories included camping at the beach each Easter, and also every Christmas for 6 weeks. It was a happy household in general with lots of card games happening regularly and lots of visitors. According to Dad, when someone knocked at the door their very intelligent African Grey parrot always called out "Come in" from his cage inside the house. This apparently caused confusion for many a 1st time visitor if none of the D'Arcys were actually home.
+
+Life changed very suddenly for Dad at the age of 9 when his father died unexpectedly. Ivy had 5 children to support, and only Viv, Dad's eldest brother was working. Dad's Mum had no real work skills herself and there was no decent system of social security. They were in 'a spot of bother' as Dad put it. Ivy decided to take in boarders and Dad said they never really had a normal home life after that with up to 13 people around the table at mealtimes.
+
+After his Dad died, Dad and Bill, his older brother, used to go to the Savoy Picture Theatre in Clayfield on a Friday night for sixpence. Dad started smoking at this time – at the ripe old age of 9. His mum gave the boys threepence to spend at the pictures which was enough for a packet of cigarettes. However due to a lack of funds they had to steal the matches and then they smoked the cigarettes inside the theatre while the movies were showing.
+
+One week someone dobbed on them to Ivy who told the boys they would not be allowed to go to the pictures for 12 months, but Dad clearly remembered they were there once again the following Friday. On the way home they would often throw stones onto someone's tin roof which Dad described as 'good clean fun'.
+
+Dad was a proud student of Ascot SS, also attended in recent years by his grandchildren Greta and Lewis. Dad recalled being a good student and that he used to come 1st or 2nd in the class. However, sport was his big love. Dad's daily school routine was to throw his lovingly made lunch into a big incinerator on his way down to the oval, just to give him extra time to play footy and cricket at lunchtime.
+
+The Ascot headmaster was fanatically competitive according to Dad and would only enter teams in competitions he thought they had a good chance of winning. Cricket was judged entirely too unpredictable so Aussie Rules was in fact the major interschool sport for Ascot boys. Ascot was a bit posh even in those days and teams were driven to the Friday games in taxis, although they were all left to make their own way home. Dad was a good player, a full forward, and he believed he would have made the Qld Schoolboys Aussie Rules team, except that the trip to the National titles in Hobart that year was cancelled because of the start of World War 2.
+
+After passing his Scholarship exam, Dad attended Brisbane State High, later attended by my brother Graham. His high school results, it must be said, were rather mixed. He spoke in a perversely proud manner of getting only 3% in Chemistry in his Junior exam and he also failed Latin because he could see no point in learning it. Otherwise, he reckoned he did all right, particularly in Maths and English. He wasn't worried at all about his future as he knew that as long as he got a Junior pass, a clerical job was assured.
+
+Having achieved this pass, Dad started work as a 15 year old at Union Trustees where his father had worked.
+
+On his 17th birthday in 1944 he had a medical for the navy and started work in Melbourne in February 1945, training as a sick bay attendant. He was excited about joining the navy and happy to be living away from home.
+
+Later that year, he was sent to Thursday Island for a few months. While there he honed his table tennis skills as there wasn't much else to do. The war ended but Ken still had to complete the 3 years for which he was drafted.
+
+It was during one off duty day in the navy that Dad fell asleep for hours while sunbaking on the ship's deck. He was shockingly sunburnt and was very ill for days as a result. Dad always wondered if this incident may have had some bearing on the amazing number of melanomas he developed in his later life.
+
+In early 1947 Dad was discharged from the navy and went back to his old job at Union Trustees. He was 20 by now and was feeling unsettled living back at home with his Mum, but was unable to afford his own place. Soon after he began going out with Shirley, a young lady from Union Trustees, who became his fiancée.
+
+In 1948 Dad was told he was being transferred to the Toowoomba branch. This was to have a momentous impact upon Dad's life because there awaiting him in the office was a 19 year old named Audrey Dell Murdoch. According to Mum, all the girls in the Toowoomba office were quite excited about the imminent arrival of the new young man from Brisbane. Likewise, Mum was full of anticipation and hope that a handsome heartthrob would walk through the office door that Monday morning. When she finally laid eyes on Dad, she clearly remembers thinking to herself – 'Ohhh'. "He was a big disappointment," she confided. It was hardly the reaction you might have expected for all of you who know how devoted Mum and Dad were to one another for just under 58 years of marriage.
+
+Dad didn't recall any first impression of Dell, so he wasn't much better. They began to get to know one another at table tennis fixtures where Mum had already been playing in a team prior to knowing Dad. Mum had this very endearing habit of getting the giggles every time she lost a point – quite unlike her daughter it must be said – so perhaps that played a part. Dad later became a good A grade player in Brisbane and on one occasion he beat an up and coming teenager called Arden Robinson who hadn't been beaten for 3 seasons. When Dad beat him, Arden cried. Arden later managed to put this loss to Dad behind him by winning the Australian Championship.
+
+After the inauspicious start to their romance, Dad soon won Mum over with his great sense of humour and he realised it was Dell he wanted to marry. Not long afterwards Dad was transferred back to Brisbane. He wrote to Dell most days during their engagement and when Mum walked home from work for lunch, there was usually a letter waiting. What a romantic!
+
+Ken and Dell married on April 5 1952.
+
+Before I hand over to Ian, I would just like to say that Dad had many great qualities but in particular I always admired his rare gift with people – so many people warmed to him throughout his life and once they became his friend – whether that happened in their youth or their old age – they were just about guaranteed a wonderful time forever onwards in his company. He liked people, he loved a chat, he liked making people laugh and he succeeded in this all the time. He was genuinely and effortlessly witty. So thanks Dad for all the laughter you brought into our lives. We will miss you.
+
+---
+
+## Part 2 — delivered by his elder son, Ian
+
+*Dad's Eulogy – 1955 to retirement*
+
+Mum and Dad rented a flat at Auchenflower and saved hard for a block of land at Pateena St Stafford where they built their first home. I was born in 1955 and they moved into their home when I was 3 months old. It was a very happy group of neighbours all raising their young families – the Cahills and the Garsons on either side and the Blackfords up the back. As testimony to what Gayle said, Mum and Dad remained lifelong friends with all these neighbours.
+
+The house at Pateena Street was the first of 4 houses that dad and mum would build together.
+
+Gayle and Graham were both born while dad and mum lived in Stafford; Gayle in 1958 and Graham in 1961.
+
+As was the norm in those days, dad was not present for any of the 3 births. He was either playing golf or sleeping and unable to be woken by the neighbours who received the phone call because they did not have a phone. While there might be some who disagree I don't think any of the 3 of us were adversely affected by him not being there. While he might not have been present at our birth all three of us are grateful that he was there for us afterwards for every day of our lives up until last Tuesday.
+
+In 1963 National Mutual decided that dad was up for a new challenge and he was offered the position of District Sales Manager for North Qld, based in Townsville. He accepted that position and the family moved to Townsville for what probably was one of, if not the best decade that the 5 of us had together as a family.
+
+Dad travelled a lot in his new role and was often away from Monday through to Friday. But he never seemed to be away for weekends. That could have been because he wanted the weekends with his family. But it might also have been due to the fact that he had drinks at the Nth Qld club on Friday nights and he had to play golf on Saturdays. You can all make your own individual decisions as to which one it might have been.
+
+But with all of that he was there to mow, tend to gardens and swimming pools as well as hit a tennis ball, play backyard cricket, kick a footy and help start off Gayle's career as a table tennis player. Not only did she inherit his table tennis genes but she probably improved on them to become one of the best players in Queensland for many years – something dad was immensely proud of.
+
+Dad also had to learn the rules of "that stupid bloody American game" as he originally called it, namely basketball. As always, he took a keen interest in and adapted to what his kids were doing with their lives.
+
+You might say that Dad had a work life balance before that was the trendy thing to do. Xmas holidays always consisted of us driving from Townsville to Brisbane seeing the relations then Christmas Day in Toowoomba and then a couple of weeks on the Gold Coast. I am not sure if it was a credit to dad and mum keeping us interested in things during the 2-day drive or to dad's disciplinary skills but I don't think those famous words "Are we there yet?" were ever uttered on those trips. If they were, then you can be sure we would not have uttered them twice if we got one of Dad's very effective parental stares or a few well chosen words.
+
+It wasn't until we all got we were all in our teens that I think we realized that what might have seemed authoritarian in our younger years was really just what Dad was about both at home and in his work. He never left you wondering what he was thinking or what he expected. If he had something to say, he said it.
+
+Dad had the first of quite a few brushes with death in late 1971, when he was seriously ill with a kidney problem – acute nephritis. That was caused by something as simple as his leg being hit by a stone thrown out by a lawn mower. As he was to do a number of times later, Dad overcame that health problem.
+
+It was around this time that dad and mum were building a house at Wellington Street, Mundingburra. Shortly thereafter they then rebuilt a large portion of that house. The rebuilding being due to Cyclone Althea that tried to knock down the first house shortly after it was completed, unfortunately while we were still living in it. There were 2 things that stick in my mind about the cyclone. Firstly, that notwithstanding the cyclone warnings on tv and radio with those eerie warning alarms, dad and a few of his mates elected to stay at the Nth. Qld. club till about 10.00 p.m. The general consensus was that cyclones always missed Townsville. As those people who are here today and who were in Townsville at the time will testify – that assessment was incorrect – it didn't miss.
+
+The second thing from the cyclone was when during the height of the wind dad asked me to go up stairs and get him something from the kitchen. As I reached the top of the steps I was greeted by the weirdest sight of carpet going up and down in what seemed like 2 feet waves due to the wind going under the carpet. I went straight back downstairs. That was one of the few times in my life that I openly defied my father and bluntly told him that if he wanted something from upstairs to get it himself.
+
+Then in 1972, just after rebuilding their home, National Mutual again decided to throw the D'Arcy household into disarray when dad was offered and accepted the role of State Sales Manager for W.A. based in Perth.
+
+As was the case 9 years earlier, Dad and Mum left behind many people who had become and have remained friends ever since. Dad was undoubtedly great with people and he loved to be with people. He did however have a great back up in mum. I cannot begin to estimate the number of times that mum was told on short notice that dad was bringing 1 or sometimes 2 people home for tea. Mum always managed to put a meal in front of them that looked as though it had been prepared with plenty of planning. Perhaps the saving grace was that there were no mobile phones in those days so that dad couldn't ring from the car and at least he had to ring before he was about to come home, so Mum had the time it took to drive from the city to home to do her magic.
+
+So off we went from Townsville to Perth. Leaving sunny rugby league loving north Queensland to arrive in May in often cold and windy aussie rules fanatical Perth. This time it was the rest of the family's turn to learn a new sport. Dad had played aussie rules at school whereas the rest of us had no idea. But we all learned to the extent that all of us would go to club games in Perth and in more recent years with the oncoming of the Brisbane Lions, all of us plus daughters-in-law and grandchildren had season tickets and would meet at the Gabba.
+
+National Mutual only kept dad in Perth for a fairly short time and he was to return in early 1974. To minimise disruption to Gayle and Graham's schooling the family moved back to Brisbane at end of 1973 and after buying a house and setting us up in a unit at Toowong, Dad returned to Perth. On the following Saturday while playing golf someone mentioned the floods in Brisbane. Dad phoned Brisbane to discover that the family's furniture and most other possessions were then about 10 metres under water in storage at Rocklea.
+
+Dad came back to Brisbane, then with mum sorted out what had to be done and then finalized things in Perth before returning to Brisbane for good.
+
+It really only occurred to me while preparing my part of the eulogy just how resilient Dad was. Whether he was in poor health or his house was being knocked about or he lost his stuff he never really complained or bemoaned his fate. He just got on with what had to be done and he did it and moved on. He really did have a very positive approach to life.
+
+Dad returned to Qld to the role of State Sales Manager and he held that position till he retired in 1982.
+
+Pierce Bragg will talk about Dad's life with National Mutual shortly and I won't steal his thunder but there are 2 things I would like to mention.
+
+Firstly, upon his retirement Dad was presented with a 'This is Your Life' style book. That book along with a few photos will be on a table in the refreshments room afterwards for those who would like to have a look.
+
+Secondly, Dad's letter electing to accept early retirement is in that book. After explaining that he would commence leave on 1 July 1982 and officially retire on 17 August 1982, Dad went on to say and I quote:
+
+> "I do look forward to receiving a Bank cheque for my lump sum payment – in my mailbox on 17 August 1982."
+
+As I said earlier he never left you wondering what he was thinking or what he expected.
+
+Before finishing my part and at the risk of having dad carry out his threat to haunt those who deliver a eulogy for him, I want to acknowledge what I believe was an extraordinary life of a man who started with pretty much nothing, was happily married for just shy of 58 years, who worked hard, hard enough to raise and educate 3 kids and then provide for himself and his wife in retirement for more than 27 years. Someone who with his own style and good grace earned the love and respect of so many people on the way through. That man I am proud to call my father Ken D'Arcy.
+
+---
+
+## Part 3 — delivered by his younger son, Graham
+
+Dad retired from National Mutual at age 55, having spent 32 years working for the same company. I remember him saying that he would miss dealing with the problems of all the agents who earned twice as much as he did. Last week I came across the cards and tributes that he received when he retired and I was reminded of how well-liked and highly regarded he was by his work colleagues.
+
+Retirement gave him the opportunity to spend a lot more time with his beloved wife and to indulge in his other passion, golf, which he did with great regularity. He formed many close friendships with his golfing mates which endured long after he could no longer make it onto the course. In the last couple of years he greatly enjoyed his Tuesday lunches at the café in Sinnamon Park with his golf buddies. These were some of the few times that he was able to venture beyond the walls of his home. I would particularly like to thank Des Hukins for his support of Mum and Dad over the difficult times of the last year or two.
+
+1988 saw the arrival of his first grandchildren, Ian and Jo's twin girls, Stefanie and Cristina. I know that he was proud to see them grow into the lovely young women that they are today and proud of their achievements thus far in their lives.
+
+Lindy's and my children, Greta and Lewis came along a little later. Dad was proud of the fact that they both attended his old school, Ascot State School and proud of their sporting and academic achievements. My kids weren't so well-behaved as the twins and they sometimes got to know their grandfather's gruff and grumpy side. But as they grew older they came to love his teasing and his sense of humour and to admire his resilience and stoicism during his long illness.
+
+Dad's retirement was also notable for the regular hiccups with his health. He had the first of his 20 or so melanomas removed just prior to his retirement. He said to me a few years ago that one of them had to get him eventually, and in the end, he was right. He was on first name terms with half of Brisbane's surgeons, enduring numerous operations including an aneurysm repair in 1991 that saw him only just cheat death. His recovery from surgery could always be measured by his graduated return to the golf course – putting after 2 weeks, chipping after 3 weeks, 9 holes after 6 weeks and so on.
+
+After he finished working Dad also had the time to re-establish regular contact with his siblings. I know that he was a great support for his brother, Bill and sister, Joan when their health was failing. He looked after the affairs of his sister, Val until just a couple of days before his death. Following the death of his brother, Bill, Dad made contact with Bill's daughter, Nym in England. This allowed Nym to get to know her Australian relatives for the first time. She and her husband subsequently visited Australia on 4 occasions, most recently last December and over this time Nym and my father formed a close bond. Family was all-important to Dad and he was intensely loyal. He could always be counted on if Ian, Gayle or I needed help of any kind. He spent countless hours at Gayle's place gardening and doing odd jobs.
+
+Family times were always relaxed and happy as long as you steered the conversation away from politics or religion. Dad was not noted for his willingness to hear differing opinions on these subjects as our wives, Lindy and Jo learnt early on. He would stubbornly stick to his viewpoint in the face of any amount of logical argument.
+
+This same stubbornness held him in good stead in his battle against the progress of his melanoma. Given a few months to live by his specialist, he survived over 4 years. These doctors clearly don't have much of a clue. For much of this time he remained active and positive in his outlook. Even when house-bound in the last 12 months or more he enjoyed the company of friends and family, watching any sport that came on the TV and e-mailing friends and relatives. His adoption of technology late in life was remarkable for a man who once swore that he would never sit in front of a computer screen.
+
+Dad was truly blessed to have a wife as devoted as Mum and he knew it. Her selfless care for him during his illness and, in fact, over the course of their marriage was incredible.
+
+My family would like to thank the friends who helped to care for Dad at home while Mum was in hospital last year, in particular Barbara Murphy and Joanne Hoogwaerts. It was greatly appreciated by us all.
+
+Finally I'd like to pay tribute to Dad, a father who was always loving and loyal, who was quick-witted and funny right to the end, who enjoyed the company of others, who showed us the value of hard work and fair play and who was always there for his family and friends.

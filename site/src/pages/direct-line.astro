@@ -1,0 +1,117 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import line from "../data/line.json";
+import { byId } from "../lib/people.js";
+
+// The spine runs oldest-first on the page; the data is youngest-first.
+const spine = [...line].reverse();
+const shown = spine.filter((g) => !g.living);
+const hidden = spine.length - shown.length;
+
+// Where each generation stands. This is the archive's judgement, not the tree's.
+const CONFIDENCE = {
+  "@I20@": ["documented", "Birth, marriage, death and burial all recorded, and a three-part eulogy delivered by his own children survives in the family's hands."],
+  "@I76@": ["documented", "Brisbane birth 1892 and death 1936, the latter reported in the Queensland press. His death at 43 is the hinge of the next generation's childhood."],
+  "@I208@": ["documented", "Born Brisbane 1864, died 1931 — the first generation born in the colony of Queensland."],
+  "@I381@": ["documented", "Born Parramatta, New South Wales, 1829. The first of the line born in Australia, and the point at which this family becomes Australian."],
+  "@I647@": ["inferred", "The join between the Australian family and the English one. He is said to have been born at Portsmouth or in the West Indies in 1783 — the tree cannot decide which, and that indecision is the problem. Everything above this man rests on him."],
+  "@I1059@": ["disputed", "Asserted as the bridge to the Yorkshire peerage. No document has yet been produced in this archive that ties him either to George Pitt D'Arcy below or to the Darcys of Hornby above."],
+  "@I1872@": ["disputed", "Said to have been born at St James's Palace. The Earls of Holderness are a documented family; a son of theirs who founds a Portsmouth line is not, on present evidence, one of them."],
+};
+
+const chip = (id) => CONFIDENCE[id]?.[0] || "unproven";
+const why = (id) => CONFIDENCE[id]?.[1] || "";
+const chipClass = { documented: "doc", inferred: "inf", disputed: "dis", unproven: "lore" };
+---
+<Base
+  title="The Spine"
+  eyebrow="Generation by generation"
+  dek="Fifteen generations are asserted, from a Brisbane insurance manager to a Yorkshire castle. Six of them are solid. The join between them is the whole problem, and it is marked here rather than smoothed over.">
+
+  <section class="blk">
+    <p class="lede">This is the male D'Arcy line exactly as the family tree carries it — and then,
+    against each generation, what this archive is actually willing to defend. The colour of the chip
+    is the claim; the sentence beneath it is the reason.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>Read the page from the bottom up if you want the truth of it.</strong> The
+      recent generations are documented to the day. Somewhere around 1783 the evidence thins to a
+      single asserted link, and above that the archive is repeating a pedigree rather than
+      demonstrating one. <a href={u("/hornby")}>Why the Hornby descent is doubted →</a>
+    </div>
+
+    {hidden > 0 && (
+      <p class="small" style="margin-top:1rem">{hidden} living {hidden === 1 ? "generation is" : "generations are"} omitted
+      from this build. The line continues past the last person shown here.</p>
+    )}
+  </section>
+
+  <section class="blk">
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Gen</th><th>Person</th><th class="m">Born</th><th>At</th>
+            <th class="m">Died</th><th>Trade</th><th>Standing</th>
+          </tr>
+        </thead>
+        <tbody>
+          {shown.map((g) => (
+            <tr>
+              <td class="m">{g.gen}</td>
+              <td>
+                <strong>{g.name}</strong>
+                {g.spouses?.filter((s) => s.name && !s.living).map((s) => (
+                  <div class="small">m. {s.name}{s.married ? ` · ${s.married}` : ""}</div>
+                ))}
+              </td>
+              <td class="m">{g.born || "—"}</td>
+              <td>{g.bornPlace || "—"}</td>
+              <td class="m">{g.died || "—"}</td>
+              <td>{g.occupation || "—"}</td>
+              <td><span class={`chip ${chipClass[chip(g.id)]}`}>{chip(g.id)}</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>Generation by generation</h2>
+    <div class="spine" style="margin-top:1.4rem">
+      {shown.map((g) => (
+        <div class={`gen ${chip(g.id) === "documented" ? "" : "undoc"}`}>
+          <div>
+            <span class="yr">{(g.born || "").match(/\d{4}/)?.[0] || "?"}</span>
+            <span class="who">{g.name}</span>
+            {g.life && <span class="whr"> · {g.life}</span>}
+          </div>
+          {g.bornPlace && <div class="whr">{g.bornPlace}</div>}
+          {why(g.id) && <p class="small" style="margin-top:.35rem;max-width:70ch">{why(g.id)}</p>}
+        </div>
+      ))}
+    </div>
+    <p class="spine-key">A solid node is a generation this archive will defend. A dashed node is one
+    it is repeating from the family tree and has not yet proved.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What would settle it</h2>
+    <div class="grid two" style="margin-top:1rem">
+      <div class="card">
+        <h3>George Lindsay D'Arcy's birth, Parramatta 1829</h3>
+        <p>A New South Wales baptism or birth registration naming his father would either confirm
+        George Pitt D'Arcy or replace him. This is the single highest-value record in the archive.
+        <a href={u("/open-questions")}>The queue →</a></p>
+      </div>
+      <div class="card">
+        <h3>How the family reached New South Wales</h3>
+        <p>A ship. Convict indent, military posting, assisted passage or cabin passenger — each leaves
+        a different record and each implies a different family. Until one is found, 1829 at Parramatta
+        is simply where the line appears. <a href={u("/australia")}>Arrival →</a></p>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,113 @@
+---
+import { u } from "../lib/url.js";
+const { title, description = "", dek, eyebrow, bare } = Astro.props;
+const SITE = "The D'Arcy Archive";
+const nav = [
+  ["Start", [["/", "Home"], ["/method", "Method"], ["/places", "Places"]]],
+  ["Our line", [["/direct-line", "The Spine"], ["/hornby", "The Hornby Claim"],
+                ["/australia", "Australia"], ["/brisbane", "Brisbane"]]],
+  ["Families", [["/families", "The Families"], ["/people", "The People"],
+                ["/sneyd", "Sneyd"], ["/murdoch", "Murdoch"]]],
+  ["Names", [["/name", "The Name"]]],
+  ["Sources", [["/sources", "Sources"], ["/documents", "Documents"],
+               ["/open-questions", "Open Questions"]]],
+];
+const here = Astro.url.pathname.replace(/\/$/, "");
+const on = (h) => here === u(h).replace(/\/$/, "");
+---
+<html lang="en" data-base={u("")}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title === SITE ? SITE : `${title} — ${SITE}`}</title>
+<meta name="description" content={dek || description} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href={u("/styles.css")} />
+</head>
+<body class={bare ? "is-home" : ""}>
+<header class="site">
+  <div class="wrap sitein">
+    <a class="brand" href={u("/")}>The D'Arcy <em>Archive</em></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer">
+      <span class="bars" aria-hidden="true"></span>Menu
+    </button>
+    <nav class="topnav" aria-label="Main">
+      {nav.map(([label, links]) => (
+        <details class="menu">
+          <summary>{label}</summary>
+          <div class="panel">
+            {links.map(([h, l]) => <a href={u(h)} class={on(h) ? "on" : ""}>{l}</a>)}
+          </div>
+        </details>
+      ))}
+      <a class="findbtn" href={u("/open-questions")}>Open questions</a>
+    </nav>
+  </div>
+  <div class="drawer" id="drawer" hidden>
+    <div class="wrap">{nav.map(([label, links]) => (
+      <div class="dgrp"><span class="gl">{label}</span>
+        {links.map(([h, l]) => <a href={u(h)} class={on(h) ? "on" : ""}>{l}</a>)}
+      </div>
+    ))}</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    {!bare && (
+      <div class="pagehead">
+        {eyebrow && <div class="lab">{eyebrow}</div>}
+        <h1>{title}</h1>
+        {dek && <p class="dek lead">{dek}</p>}
+      </div>
+    )}
+    <slot />
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="foot">An evidence-first archive of the D'Arcy family of Brisbane — and of Parramatta,
+    Portsmouth and, if the pedigree holds, Hornby in the North Riding of Yorkshire. Every claim
+    carries its confidence, or is marked as unproven. Living people are excluded from this build.</p>
+    <p class="foot dim">Built {new Date().getFullYear()} ·
+      <a href={u("/sources")}>Sources</a> ·
+      <a href={u("/method")}>Method</a> ·
+      <a href={u("/open-questions")}>Open questions</a> ·
+      Corrections are the most valuable thing you can send</p>
+  </div>
+</footer>
+
+<script is:inline>
+  (function () {
+    var bar = document.querySelector(".topnav");
+    var burger = document.querySelector(".burger");
+    var drawer = document.getElementById("drawer");
+    if (burger && drawer) {
+      burger.addEventListener("click", function () {
+        var open = drawer.hasAttribute("hidden");
+        if (open) { drawer.removeAttribute("hidden"); } else { drawer.setAttribute("hidden", ""); }
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    if (!bar) return;
+    var menus = [].slice.call(bar.querySelectorAll("details.menu"));
+    menus.forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        if (!d.open) return;
+        menus.forEach(function (o) { if (o !== d) o.open = false; });
+      });
+    });
+    document.addEventListener("click", function (e) {
+      if (e.target.closest(".topnav")) return;
+      menus.forEach(function (d) { d.open = false; });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") menus.forEach(function (d) { d.open = false; });
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,706 @@
+[
+ {
+  "place": "Arienzo, Caserta, Campania, Italia",
+  "n": 12
+ },
+ {
+  "place": "Brisbane, Brisbane, Queensland, Australia",
+  "n": 10
+ },
+ {
+  "place": "Brisbane, Queensland, Australia",
+  "n": 8
+ },
+ {
+  "place": "Limerick, County Limerick, Ireland",
+  "n": 7
+ },
+ {
+  "place": "England",
+  "n": 7
+ },
+ {
+  "place": "Berkeley, Gloucester, England",
+  "n": 6
+ },
+ {
+  "place": "Limerick, Limerick, Ireland",
+  "n": 4
+ },
+ {
+  "place": "Averham, Nottinghamshire, England",
+  "n": 4
+ },
+ {
+  "place": "Basingthorpe, Lincolnshire, England",
+  "n": 4
+ },
+ {
+  "place": "Hornby Castle, Yorkshire, England",
+  "n": 4
+ },
+ {
+  "place": "Ayr, Scotland",
+  "n": 3
+ },
+ {
+  "place": "Hornby Castle, North Riding, Yorkshire, England",
+  "n": 3
+ },
+ {
+  "place": "Kirkby Mallory, Leicestershire, England",
+  "n": 3
+ },
+ {
+  "place": "Langdon Hall, Warwickshire, England",
+  "n": 3
+ },
+ {
+  "place": "Brisbane, QLD, Australia",
+  "n": 2
+ },
+ {
+  "place": "Italy",
+  "n": 2
+ },
+ {
+  "place": "Parramatta, New South Wales, Australia",
+  "n": 2
+ },
+ {
+  "place": "Limerick City, Ireland",
+  "n": 2
+ },
+ {
+  "place": "Long Ashton, Somerset, England",
+  "n": 2
+ },
+ {
+  "place": "Chatham, Medway, England, United Kingdom",
+  "n": 2
+ },
+ {
+  "place": "Madeley, Staffordshire, England",
+  "n": 2
+ },
+ {
+  "place": "Berkeley, Gloucestershire, England",
+  "n": 2
+ },
+ {
+  "place": "of Aller, Som., Eng.",
+  "n": 2
+ },
+ {
+  "place": "Christened in Berkeley, Gloucester, England",
+  "n": 2
+ },
+ {
+  "place": "Arienzo, Caserta, Campania, Italy",
+  "n": 2
+ },
+ {
+  "place": "Ashton Underhill, Gloucester, England",
+  "n": 2
+ },
+ {
+  "place": "Ashton, Underhill, Gloucestershire, England",
+  "n": 2
+ },
+ {
+  "place": "Hornby, Yorkshire, England",
+  "n": 2
+ },
+ {
+  "place": "Nether Skyers, Darfield, Yorkshire",
+  "n": 2
+ },
+ {
+  "place": "Hornby Castle, nr Bedale, Yorkshire",
+  "n": 2
+ },
+ {
+  "place": "Baden-Wuerttemberg, Germany",
+  "n": 2
+ },
+ {
+  "place": "Averham, Nottinghamshire, UK",
+  "n": 2
+ },
+ {
+  "place": "Ehrstaedt, Heidelburg, Baden, Germany",
+  "n": 2
+ },
+ {
+  "place": "Stroughton Grange, Leicestershire, England",
+  "n": 2
+ },
+ {
+  "place": "Sandgate, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Toowoomba Q'ld  Australia",
+  "n": 1
+ },
+ {
+  "place": "Arpaia, Provincia di Benevento, Campania, Italy",
+  "n": 1
+ },
+ {
+  "place": "Boulia, Boulia Shire, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Gympie, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Toowoomba, australia",
+  "n": 1
+ },
+ {
+  "place": "Toowoomba, Toowoomba Region, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Caserta, Campania, Italy",
+  "n": 1
+ },
+ {
+  "place": "Rockhampton, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "St Quivox, Ayrshire, Scotland, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "Maloney Street, Toowoomba, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Cornacrieve Cornacreeve, Co. Monaghan, Ireland",
+  "n": 1
+ },
+ {
+  "place": "Toowoomba, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "St. Pauls Hammersmith, Middlesex, england",
+  "n": 1
+ },
+ {
+  "place": "Toowoomba",
+  "n": 1
+ },
+ {
+  "place": "Douglas, Lanarkshire, Scotland",
+  "n": 1
+ },
+ {
+  "place": "Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "London, Middlesex, England, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "ST. MARY'S, Limerick, Ireland",
+  "n": 1
+ },
+ {
+  "place": "Graham Street, South Brisbane, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Limerick, Ireland",
+  "n": 1
+ },
+ {
+  "place": "1 North Quay, Brisbane, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Kempsey, New South Wales, Australia",
+  "n": 1
+ },
+ {
+  "place": "St Paul, Bristol, Gloucestershire, England",
+  "n": 1
+ },
+ {
+  "place": "Brisbane, Queensland",
+  "n": 1
+ },
+ {
+  "place": "Germany",
+  "n": 1
+ },
+ {
+  "place": "Queenland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Cork, Ireland",
+  "n": 1
+ },
+ {
+  "place": "Queensland Australia",
+  "n": 1
+ },
+ {
+  "place": "of St Quivox, Ayr, Sctl",
+  "n": 1
+ },
+ {
+  "place": "of St Quivox, Ayrshire, Scotland",
+  "n": 1
+ },
+ {
+  "place": "Ireland",
+  "n": 1
+ },
+ {
+  "place": "Somerset, England",
+  "n": 1
+ },
+ {
+  "place": "Butcombe Som Eng",
+  "n": 1
+ },
+ {
+  "place": "Long Ashton, Somerset, Eng",
+  "n": 1
+ },
+ {
+  "place": "Brisbane",
+  "n": 1
+ },
+ {
+  "place": "Portsmouth, Hampshire, England or West Indies",
+  "n": 1
+ },
+ {
+  "place": "Somerton, Somerset, England",
+  "n": 1
+ },
+ {
+  "place": "Bandon, County Cork, Ireland",
+  "n": 1
+ },
+ {
+  "place": "Ballymodan, Bandon, Ireland",
+  "n": 1
+ },
+ {
+  "place": "County Cork, Ireland",
+  "n": 1
+ },
+ {
+  "place": "Hanley, Stoke-on-Trent, Staffordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Cork, Cork City, Cork, Ireland",
+  "n": 1
+ },
+ {
+  "place": "Adelaide St, North Brisbane, Queensland, Australia",
+  "n": 1
+ },
+ {
+  "place": "Gloucestershire, England",
+  "n": 1
+ },
+ {
+  "place": "Berkley, Gloucester, England",
+  "n": 1
+ },
+ {
+  "place": "Rockhampton, AU",
+  "n": 1
+ },
+ {
+  "place": "Teddington, Middlesex, England",
+  "n": 1
+ },
+ {
+  "place": "Putney, Surrey, England",
+  "n": 1
+ },
+ {
+  "place": "Aller, Somerset, England",
+  "n": 1
+ },
+ {
+  "place": "San Felice, Caserta, Campania, Italia",
+  "n": 1
+ },
+ {
+  "place": "North Yorkshire, England, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "South Leith, Midlothian, Scotland",
+  "n": 1
+ },
+ {
+  "place": "(about)   Limerick City, Ireland",
+  "n": 1
+ },
+ {
+  "place": "No 3, Well St, Hanley, Staffordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Oswestry, Shropshire, England, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "Staffordshire, England, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "Wotton-under-Edge, Gloucestershire, England",
+  "n": 1
+ },
+ {
+  "place": "St. James Palace, London, Middlesex, Englan",
+  "n": 1
+ },
+ {
+  "place": "Scotland",
+  "n": 1
+ },
+ {
+  "place": "?",
+  "n": 1
+ },
+ {
+  "place": "Staffordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Madeley, Staffordshire, England, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "Brimpsfield, Gloucester, England",
+  "n": 1
+ },
+ {
+  "place": "Bisley, Gloucestershire, England",
+  "n": 1
+ },
+ {
+  "place": "Santa Maria A Vico, Nola, Terra Di Lavoro",
+  "n": 1
+ },
+ {
+  "place": "Santa Maria a Vico, Caserta, Campania, Italia",
+  "n": 1
+ },
+ {
+  "place": "St. James Palace, London, Middlesex, England, Kingdom of England",
+  "n": 1
+ },
+ {
+  "place": "Bath, Somersetshire, England, Kingdom of Great Britain",
+  "n": 1
+ },
+ {
+  "place": "Berlin, Brandenburg, Prussia, Germany",
+  "n": 1
+ },
+ {
+  "place": "Chelmsford, Essex, England",
+  "n": 1
+ },
+ {
+  "place": "Keele, Staffordshire-Inglaterra",
+  "n": 1
+ },
+ {
+  "place": "Bath, Somerset, England",
+  "n": 1
+ },
+ {
+  "place": "Castle Church, Stafford, England",
+  "n": 1
+ },
+ {
+  "place": "Parish of Elmore",
+  "n": 1
+ },
+ {
+  "place": "Ashton under Hill, Gloucestershire, England, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "Caserta, Campania, Italia",
+  "n": 1
+ },
+ {
+  "place": "Italia",
+  "n": 1
+ },
+ {
+  "place": "Darcy Meynill, Yorkshire, Cattaraugus County, New York, United States",
+  "n": 1
+ },
+ {
+  "place": "London, England, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "Averham, Nottingham, England",
+  "n": 1
+ },
+ {
+  "place": "Köln",
+  "n": 1
+ },
+ {
+  "place": "Hillingdon House, Middlesex, London, England",
+  "n": 1
+ },
+ {
+  "place": "Schwetzingen, Rhein-Neckar-Kreis, Baden-Württemberg, Deutschland",
+  "n": 1
+ },
+ {
+  "place": "Kensington House, London, Middlesex, England",
+  "n": 1
+ },
+ {
+  "place": "Wolstanton, Staffordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Keele, Staffordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Ashton Under Hill, Gloucestershire, England",
+  "n": 1
+ },
+ {
+  "place": "Maket Drayton, Shropshire, England",
+  "n": 1
+ },
+ {
+  "place": "Westminster, Middlesex",
+  "n": 1
+ },
+ {
+  "place": "Aston, Yorkshire",
+  "n": 1
+ },
+ {
+  "place": "Walden, Essex, England",
+  "n": 1
+ },
+ {
+  "place": "Clarkenwell, Finsbury, London, Middlesex, England",
+  "n": 1
+ },
+ {
+  "place": "Heidelberg, Karlsruhe, Baden-Wurttemberg, Germany",
+  "n": 1
+ },
+ {
+  "place": "Drogheda, County Louth, Ireland",
+  "n": 1
+ },
+ {
+  "place": "Geisenhain, Thüringen, Germany",
+  "n": 1
+ },
+ {
+  "place": "Heidelberg, Bayern, Deutschland(HRR)",
+  "n": 1
+ },
+ {
+  "place": "Edingen, Baden-Württemberg, Deutschland(HRR)",
+  "n": 1
+ },
+ {
+  "place": "Strassburg, Kärnten, Austria.",
+  "n": 1
+ },
+ {
+  "place": "Schloss Friedrichsburg, Mannheim, Germ",
+  "n": 1
+ },
+ {
+  "place": "Bradwell, England",
+  "n": 1
+ },
+ {
+  "place": "Himley Hall, Himley Staffs",
+  "n": 1
+ },
+ {
+  "place": "Davenham, Chester, Eng.",
+  "n": 1
+ },
+ {
+  "place": "Saffron Walden",
+  "n": 1
+ },
+ {
+  "place": "Averham Park, Nottinghamshire, England",
+  "n": 1
+ },
+ {
+  "place": "Aram, England",
+  "n": 1
+ },
+ {
+  "place": "Bacharach, Darmstadt, Rhineland-Palatinate, Germany",
+  "n": 1
+ },
+ {
+  "place": "Heidelberg, Karlsruhe, Baden-Württemberg, Germany",
+  "n": 1
+ },
+ {
+  "place": "Rushton, Spencer, Staffordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Eltonhead, Lancashire, England",
+  "n": 1
+ },
+ {
+  "place": "Deinschwang, near Amberg, Upper Palatinate",
+  "n": 1
+ },
+ {
+  "place": "Mainz, Rheinhessen, Hessen Lande, Germany",
+  "n": 1
+ },
+ {
+  "place": "Falkland Palace, Fife, Scotland",
+  "n": 1
+ },
+ {
+  "place": "Leicester House, St. Martin's-in-the-Fields, London, England",
+  "n": 1
+ },
+ {
+  "place": "Neuhaus, Neckar, Wuertt",
+  "n": 1
+ },
+ {
+  "place": "Dürnau/Biberach/BW",
+  "n": 1
+ },
+ {
+  "place": "Heidelberg, Baden, Germany",
+  "n": 1
+ },
+ {
+  "place": "MARKET BOSWORTH, LEICESTER, ENGLAND",
+  "n": 1
+ },
+ {
+  "place": "Ossington, Nottinghamshire, England",
+  "n": 1
+ },
+ {
+  "place": "Buckwall, Somerset",
+  "n": 1
+ },
+ {
+  "place": "Bassingthorpe, Lincolnshire, England",
+  "n": 1
+ },
+ {
+  "place": "Edinburgh Castle, Edinburgh, Midlothian, Scotland",
+  "n": 1
+ },
+ {
+  "place": "Theobalds Palace, Chestnut, Hertfordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Skanderborg Castle, Kingdom of Denmark",
+  "n": 1
+ },
+ {
+  "place": "Hampton Court Palace, Richmond, Greater London, United Kingdom",
+  "n": 1
+ },
+ {
+  "place": "Ehrstaedt, Heidelberg, Baden, Germany",
+  "n": 1
+ },
+ {
+  "place": "&lt;Ehrstaedt, Heidelberg, Baden, Germany&gt;",
+  "n": 1
+ },
+ {
+  "place": "Solihull, Warwickshire, England",
+  "n": 1
+ },
+ {
+  "place": "Market Bosworth, Leicestershire, England",
+  "n": 1
+ },
+ {
+  "place": "Clifton, Bedfordshire, England",
+  "n": 1
+ },
+ {
+  "place": "Of, Hornby Castle, Yorkshire, England",
+  "n": 1
+ },
+ {
+  "place": "London, Middlesex, England",
+  "n": 1
+ },
+ {
+  "place": "Frere Hall, Warwickshire, England",
+  "n": 1
+ },
+ {
+  "place": "Bosworth Hall, Leicester, Leicestershire, England",
+  "n": 1
+ },
+ {
+  "place": "of Bedworth and Stoughton, Leicestershire, England",
+  "n": 1
+ },
+ {
+  "place": "Market Bosworth, Leicestershire, England, UK.",
+  "n": 1
+ },
+ {
+  "place": "Forde Hall, Warwickshire, England",
+  "n": 1
+ },
+ {
+  "place": "Langdon Hall, Warwick, England",
+  "n": 1
+ },
+ {
+  "place": "SOLIHULL West Midlands England",
+  "n": 1
+ },
+ {
+  "place": "Stoughton, Leicestershire, England",
+  "n": 1
+ },
+ {
+  "place": "Bedworth, Leicestershire, England, UK.",
+  "n": 1
+ },
+ {
+  "place": "Solihul, Warwickshire, England",
+  "n": 1
+ }
+]

@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const dist = [
+  ["United States", "6,242", "1:58,068", "6,880"],
+  ["Ireland", "3,101", "1:1,519", "304"],
+  ["Australia", "2,897", "1:9,319", "1,394"],
+  ["France", "1,591", "1:41,749", "5,245"],
+  ["England", "1,430", "1:38,964", "5,048"],
+  ["Yemen", "1,081", "1:24,445", "2,460"],
+  ["Canada", "537", "1:68,614", "7,893"],
+];
+---
+<Base
+  title="The Name"
+  eyebrow="Two origins, no common ancestor"
+  dek="D'Arcy was coined twice over — once in Normandy as the name of a place, once in Ireland as the name of a colour. Anyone searching the name needs to know that before they start.">
+
+  <section class="blk">
+    <p class="lede">There is <strong>no single founding D'Arcy family</strong>. The name reaches the
+    English-speaking world by two entirely independent routes, and this is a method problem before it
+    is a history.</p>
+
+    <div class="grid two" style="margin-top:1.4rem">
+      <div class="card">
+        <h3>Norman — the name of a place</h3>
+        <p><em>d'Arcy</em> is French for <strong>"of Arcy"</strong>: a man named for the land he held.
+        The place is usually given as <strong>Arcy in La Manche, Normandy</strong>; some accounts point
+        instead to <strong>Bois-d'Arcy</strong> in the Yvelines, west of Paris. A
+        <em>Norman de Areci</em> appears as a tenant-in-chief in Lincolnshire in the reign of William I.
+        By this route the name is <strong>territorial</strong>. It tells you where a family held land,
+        and nothing whatever about what they were like.</p>
+      </div>
+      <div class="card">
+        <h3>Gaelic — the name of a colour</h3>
+        <p><em>Darcy</em>, characteristically <strong>without</strong> the apostrophe, is an
+        anglicisation of <strong>Ó Dorchaidhe</strong>, from <em>dorcha</em>, "dark" — dark-haired,
+        dark-complexioned, or figuratively secretive. It is a nickname name, and there is nothing
+        Norman about it at all.</p>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:1.4rem">
+      <strong>The apostrophe is a hint and not a proof.</strong> It leans Norman, and it was added,
+      dropped and re-added by clerks, priests, recruiting sergeants and shipping agents for four
+      hundred years. Our own family is written both ways across its own records — and its most
+      distinctive given name, <em>Lindesay</em>, is spelled <em>Lindsay</em> in the very next
+      generation. <a href={u("/direct-line")}>See the spine →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The most misused fact in D'Arcy genealogy</div>
+    <h2 style="margin-top:.4rem">The Tribes of Galway</h2>
+    <p>The seventeenth-century genealogist <strong>Dubhaltach MacFhirbhisigh</strong> records that
+    <strong>Walter Riabhach Ó Dorchaidhe</strong> (fl. <em>c.</em> 1488) was "the first man of the Uí
+    Dorchaidhe who came to Galway, according to the Galweigians themselves". His descendants became
+    <strong>D'Arcy</strong>, and D'Arcy is counted among the <strong>Tribes of Galway</strong>, the
+    fourteen merchant families who ran that city.</p>
+    <p style="margin-top:1rem">This matters because of how it is habitually used. The Galway D'Arcys
+    are <strong>Gaelic Ó Dorchaidhe who adopted a Norman-looking spelling</strong>. They are not the
+    Norman de Arcy of Lincolnshire. A pedigree that climbs to "the D'Arcys of Galway" and then steps
+    across to Normandy has crossed between two unrelated families at exactly the point where the
+    record is thinnest — and it is a step people take constantly, because it makes the better
+    story.</p>
+  </section>
+
+  <section class="blk">
+    <h2>Distribution</h2>
+    <p class="dek">Forebears, spelling <em>Darcy</em>, accessed 9 September 2026: <strong>17,796
+    bearers worldwide</strong>, the 30,038th most common surname on earth, incidence 1:409,505.
+    Variants <em>D'arcy · Darcey · Darchy · Dàrcy</em> are counted separately, so the true total for
+    the name-group is higher.</p>
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>Country</th><th class="m">Bearers</th><th class="m">Density</th><th class="m">Rank there</th></tr></thead>
+        <tbody>
+          {dist.map(([c, b, d, r]) => (
+            <tr><td>{c}</td><td class="m">{b}</td><td class="m">{d}</td><td class="m">{r}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:1.6rem">Read the table with three cautions</h3>
+    <ul class="dek">
+      <li><strong>Ireland is the centre of gravity, not America.</strong> The United States has the
+      most bearers; Ireland has them at thirty-eight times the density and ranks the name 304th
+      nationally. On density Ireland is the homeland and the rest is diaspora.</li>
+      <li><strong>Australia at 1:9,319 is a serious presence</strong> — denser than England, and six
+      times denser than the United States. That is the pool this family sits in, and it is consistent
+      with Irish emigration to the colonies rather than with an English military family. Ours is the
+      second kind, which makes it unusual for the country it landed in.</li>
+      <li><strong>Yemen is almost certainly not this name at all</strong>, but a transliteration
+      collision from Arabic. It must not be folded into an Irish-Norman story.</li>
+    </ul>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What follows for this archive</h2>
+    <p class="dek">Our line is <strong>English and military</strong>, not Irish and agricultural: it
+    reaches Australia through Chatham, the Royal Engineers town, in the uniform of the 39th Foot. That
+    is documented. Whether it reaches further back to Norman Yorkshire is a separate question and a
+    much weaker one. <a href={u("/hornby")}>The Hornby claim →</a></p>
+  </section>
+</Base>
