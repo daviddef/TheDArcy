@@ -977,3 +977,99 @@ county the family came from, in a child born on the other side of the world.*
 4. **The Madeley registers themselves**, to push William the elder back and to separate the
    concurrent Sneyd households properly.
 5. **Catherine Margaret Mulcahy** — an Irish name in Camden in 1837, and entirely unresearched.
+
+---
+
+# Ninth pass — the primary newspaper found, and a career rewritten
+
+Trove came back. All three items below are now read directly.
+
+## 35. The Chubb capture — the primary report
+
+**The Sydney Monitor and Commercial Advertiser (NSW), Friday 8 November 1839, page 2**, "News of the
+day" — `nla.news-article32166178`
+
+> Mr. Brown proceeded to the mounted police station at **Bowen's Hollow**, when **Serjeant Sneyd**
+> and a private trooper proceeded in quest of the bushrangers … **Sneyd perceived them first**; they
+> were mounted and well armed; having **crept through the bush until he came quite close to them, he
+> issued from the bush and charged them**. One of the bushrangers fired at the trooper but missed
+> him … the serjeant fired after them and **shot one of them dead**, and after a little difficulty
+> took the other two into custody.
+
+> Great praise is due to Serjeant Sneyd, who showed a great deal of courage in the taking of them.
+
+New from the primary that the family story had lost: the raid was on **Mr Brown's mill on the Mudgee
+road**; the household was robbed and **the women held at gunpoint**; the men were taken with the
+stolen property and **eight firearms**; the police station was at **Bowen's Hollow**. The item ends
+in an editorial complaint about lenient sentencing — which is the only reason any of this was printed.
+
+**One difference from the secondary compilations, recorded not smoothed.** The *Monitor* has Sneyd
+creeping up and charging men who were mounted and armed. The compilations have the party tracking all
+day and finding them encamped at night. Both mention the Aboriginal trackers. The newspaper is nine
+days after the event and is preferred; the difference stands on the page.
+
+Chubb and Knowles were convicted at the Supreme Court on 1 February 1840 — *R. v. Chubb* [1840]
+NSWSupC 4.
+
+## 36. The obituary — and the career was much larger than "the Queensland police"
+
+**The Queenslander (Brisbane), Saturday 11 July 1885, page 67** — `nla.news-article19799164`
+
+> Mr. Sneyd came to Australia in 1832 with the "4th of Kings" regiment. In the early days of New South
+> Wales he was **selected as one of the picked men from the regiment to suppress bushranging** in that
+> colony. While in the Mounted Police he rose to the position of **sergeant-major of the Goulburn
+> Division**. He came to Moreton Bay as **chief constable in 1849**, and retired from that position in
+> 1859, when he was promoted to fill the position of **Governor of the gaol**. Out of the six
+> constables then in Brisbane two are now alive, namely, Mr. Samuel Wright and Mr. James Frederick.
+
+So the career, corrected and enlarged:
+
+| | |
+|---|---|
+| 1832 | To NSW with the **4th (King's Own)** |
+| — | **Picked from the regiment to suppress bushranging** |
+| — | **Sergeant-major, Goulburn Division**, Mounted Police *(not simply "sergeant")* |
+| **1849** | **Chief constable at Moreton Bay** — the head of policing in Brisbane, a decade before separation |
+| **1859** | **Governor of Brisbane Gaol** |
+| — | Retired to "a snug little farm" at **Enoggera**, on an NSW pension plus a Queensland compensation payment |
+| **4 July 1885** | Died there suddenly, aged 75 |
+
+His death: he came into town on the Friday "in the best of spirits"; on the Saturday evening he
+retired about ten, complained of being unwell ten minutes later, and was dead within fifteen minutes,
+before a doctor could be fetched. **Dr Hill's post-mortem gave heart disease.** The obituary calls him
+"*a fine specimen of a bluff but kindly-hearted Englishman*".
+
+## 37. The source behind the obituary — a letter, not reporting
+
+**The Brisbane Courier, Tuesday 7 July 1885, page 6** — `nla.news-article3443970`, *"THE LATE MR.
+SNEYD. TO THE EDITOR"*, signed **J. A. McIntyre**.
+
+The *Queenslander*'s biographical paragraph is lifted almost word for word from this letter. McIntyre
+wrote to correct an earlier *Courier* paragraph, and his corrections are domestic:
+
+- Sneyd was **not** "enjoying a quiet pipe" — "**he never indulged in the habit of smoking**".
+- He had **not** been shocked by reading of Mrs McLean's death; he "conversed freely with his family
+  on different topics for **about three hours and a-half** after reading the notice".
+
+**So the career details are family testimony given four days after the death — excellent, and still
+testimony, not a service record.** The site says so.
+
+## 38. Two discrepancies this opened
+
+1. **Enoggera or Alderley?** The obituary puts his death at **Enoggera**; the family tree says
+   **Westwood Lodge, Alderley**. Adjoining suburbs; both may describe the same holding. Unresolved.
+2. **His father's age.** The obituary says his father died "at the advanced age of **84**". For a
+   death in 1855 that gives a birth about **1771** — pulling against the Madeley baptism of **1781**
+   and, awkwardly, *towards* the tree's unsourced 1769. Either the 1781 baptism belongs to a different
+   Samuel, or "84" is a family approximation. **Genuinely open**, and recorded as such rather than
+   resolved in whichever direction is tidier.
+
+## 39. Still open on Sergeant Sneyd
+
+- **4th (King's Own) Regiment** muster and discharge papers — TNA **WO 12** / **WO 97**.
+- **Queensland police and gaol service records** — Queensland State Archives. A gaol governor of
+  1859–c.1880 should leave a substantial official trail.
+- **Catherine Margaret Mulcahy** — an Irish name marrying at Camden in 1837, and still entirely
+  unresearched.
+- The Madeley registers themselves, to separate the concurrent Sneyd households and settle the
+  grocer's birth year.
