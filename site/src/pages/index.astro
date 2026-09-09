@@ -40,6 +40,35 @@ const more = [
     </p>
   </section>
 
+  <section class="blk" style="padding-top:1.6rem">
+    <figure style="margin:0">
+      <div class="bleed platewrap">
+        <img
+          class="plate"
+          src={u("/img/crossing-2400.jpg")}
+          srcset={`${u("/img/crossing-900.jpg")} 900w, ${u("/img/crossing-1500.jpg")} 1500w, ${u("/img/crossing-2400.jpg")} 2400w`}
+          sizes="100vw"
+          width="3168" height="1344"
+          fetchpriority="high" decoding="async"
+          alt="A wide painted panorama in three parts under one horizon. On the left, a cold grey
+               English shore of black rocks and surf, with the faint silhouette of a great house on a
+               misty hill far inland. In the centre, a stone quay where a three-masted sailing ship
+               is loading: small figures in coats and shawls carry cases up a gangway, their faces
+               turned away. On the right the light turns to hot gold over a flat plain of
+               corrugated-iron roofs, with a single railway line running to a shimmering horizon."
+        />
+      </div>
+      <figcaption class="cap">
+        <strong>The house on the hill is faint on purpose.</strong> This archive cannot show that the
+        family ever lived in it, and two pages here set out why —
+        <a href={u("/hornby")}>the Hornby claim</a> and
+        <a href={u("/how-far-back")}>the graft that replaced it</a>. What it can show is the middle of
+        the picture and the right of it: a quay, a ship, and a flat gold country with a railway line
+        running out of sight. <span class="dim">Illustration commissioned for this archive, 2026.</span>
+      </figcaption>
+    </figure>
+  </section>
+
   <section class="blk">
     <p class="lede">This is an archive of <strong>the D'Arcys of Brisbane</strong> — and of the
     {surnames} families they married, who reached Queensland out of Limerick, Monaghan, Cork,

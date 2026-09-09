@@ -868,3 +868,17 @@ li{margin:5px 0}
 .fchip.on{border-color:var(--accent);color:var(--accent);background:var(--accent-wash)}
 #q:focus{outline:2px solid var(--accent);outline-offset:1px}
 .pcard[hidden],.pgroup[hidden]{display:none!important}
+
+/* ---- Frontispiece (the crossing) ---------------------------------------- */
+/* the 100vw bleed below is wider than the content box once a scrollbar exists,
+   so clip at the root as well as the body or the page gains 8px of side-scroll */
+html,body{overflow-x:clip}
+.bleed{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw}
+.platewrap{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+           background:var(--ink-0,#0f1420)}
+.plate{display:block;width:100%;height:auto;aspect-ratio:3168/1344;object-fit:cover}
+@media (max-width:720px){
+  /* the panorama is 2.36:1 — too thin on a phone. Crop toward the quay. */
+  .plate{aspect-ratio:16/10;object-position:56% center}
+}
+.cap .dim{color:var(--ink-3);font-style:italic}
