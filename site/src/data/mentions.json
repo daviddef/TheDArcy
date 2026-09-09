@@ -77,8 +77,20 @@
 }
 ],
 "ann-elizabeth-blum": [],
-"ann-kent": [],
-"ann-peevers": [],
+"ann-kent": [
+{
+"path": "/atkinson",
+"snippet": "…ions above Paul Cole Atkinson, all of them in Limerick — Richard Atkinson (1801–1865) and Ann Kent (1805–1880) ; his parents Richard Atkinson (1765–1826) and Rose Cole (1771–1836) ; her parents William Kent (b. 1767) and Mary Bo…",
+"title": "The Atkinsons"
+}
+],
+"ann-peevers": [
+{
+"path": "/atkinson",
+"snippet": "…m Kent (b. 1767) and Mary Bowen (1770–1832) ; and above them Robert Kent (1740–1775) with Ann Peevers (1745–1808) , and Richard Atkinson (b. 1725) with Mary Love . And there is the man's own name explained. Paul Cole Atkinson was n…",
+"title": "The Atkinsons"
+}
+],
 "anna-maria-adelmann-von-adelmannsfelden": [],
 "anna-maria-d-arcy-1791": [],
 "anna-maria-d-arcy-1792": [],
@@ -1035,7 +1047,7 @@
 },
 {
 "path": "/atkinson",
-"snippet": "…dent confirmation that the family reached Brisbane by 1864. The Limerick problem His wife Jane Creech was also of Limerick, born about 1830. Between them the Atkinsons and Creeches are the archive's Irish anchor — and they are anch…",
+"snippet": "…dent confirmation that the family reached Brisbane by 1864. The Limerick problem His wife Jane Creech was also of Limerick, born about 1830. Between them the Atkinsons and Creeches are the archive's Irish anchor. This page used to…",
 "title": "The Atkinsons"
 }
 ],
@@ -1145,7 +1157,13 @@
 }
 ],
 "john-noel": [],
-"john-saniger": [],
+"john-saniger": [
+{
+"path": "/how-far-back",
+"snippet": "…on Hannah Saniger b. 23 Jul 1805 Berkeley Langford Family Site · FamilySearch Family Tree John Saniger b. 15 May 1769 Berkeley Guthrie Web Site · FamilySearch Family Tree Thomas Saniger b. 23 Aug 1744 christened Berkeley Saniger Web…",
+"title": "How Far Back"
+}
+],
 "john-sneyd": [
 {
 "path": "/sneyd",
@@ -1467,12 +1485,24 @@
 "title": "The Sneyds"
 }
 ],
-"mary-bowen": [],
+"mary-bowen": [
+{
+"path": "/atkinson",
+"snippet": "…d Atkinson (1765–1826) and Rose Cole (1771–1836) ; her parents William Kent (b. 1767) and Mary Bowen (1770–1832) ; and above them Robert Kent (1740–1775) with Ann Peevers (1745–1808) , and Richard Atkinson (b. 1725) with Mary Love…",
+"title": "The Atkinsons"
+}
+],
 "mary-cartwright": [],
 "mary-catherine-georgina-d-arcy": [],
 "mary-d-arcy": [],
 "mary-elvina-annie-d-arcy": [],
-"mary-love": [],
+"mary-love": [
+{
+"path": "/atkinson",
+"snippet": "…obert Kent (1740–1775) with Ann Peevers (1745–1808) , and Richard Atkinson (b. 1725) with Mary Love . And there is the man's own name explained. Paul Cole Atkinson was named for his grandmother, Rose Cole — the sort of thing a na…",
+"title": "The Atkinsons"
+}
+],
 "mary-sneyd-1788": [],
 "mary-sneyd-1814": [
 {
@@ -1653,7 +1683,7 @@
 },
 {
 "path": "/open-questions",
-"snippet": "…cluding the searches that found nothing. The one that would change most PROB 11/1728/64 — Robert D'Arcy's own will , proved 4 July 1827, digitised , about £3.50. Seventy-one of the direct line's ancestors and twelve of its generation…",
+"snippet": "…ations, not twelve. The audit → The one document that would change most PROB 11/1728/64 — Robert D'Arcy's own will , proved 4 July 1827, digitised , about £3.50. Seventy-one of the direct line's ancestors and twelve of its generation…",
 "title": "Open Questions"
 },
 {
@@ -1706,7 +1736,13 @@
 ],
 "robert-edward-d-arcy": [],
 "robert-joseph-d-arcy": [],
-"robert-kent": [],
+"robert-kent": [
+{
+"path": "/atkinson",
+"snippet": "…71–1836) ; her parents William Kent (b. 1767) and Mary Bowen (1770–1832) ; and above them Robert Kent (1740–1775) with Ann Peevers (1745–1808) , and Richard Atkinson (b. 1725) with Mary Love . And there is the man's own name explai…",
+"title": "The Atkinsons"
+}
+],
 "robert-leslie-atwell": [],
 "robert-lindesay-d-arcy": [],
 "robert-mcdowell-sneyd": [
@@ -1731,7 +1767,13 @@
 "title": "The Atkinsons"
 }
 ],
-"rose-cole": [],
+"rose-cole": [
+{
+"path": "/atkinson",
+"snippet": "…inson (1801–1865) and Ann Kent (1805–1880) ; his parents Richard Atkinson (1765–1826) and Rose Cole (1771–1836) ; her parents William Kent (b. 1767) and Mary Bowen (1770–1832) ; and above them Robert Kent (1740–1775) with Ann Pee…",
+"title": "The Atkinsons"
+}
+],
 "roy-sneyd": [
 {
 "path": "/sneyd",
@@ -1900,7 +1942,13 @@
 "thomas-mulcahy": [],
 "thomas-rokeby": [],
 "thomas-saniger-1711": [],
-"thomas-saniger-1744": [],
+"thomas-saniger-1744": [
+{
+"path": "/how-far-back",
+"snippet": "…ily Tree John Saniger b. 15 May 1769 Berkeley Guthrie Web Site · FamilySearch Family Tree Thomas Saniger b. 23 Aug 1744 christened Berkeley Saniger Web Site · FamilySearch Family Tree Thomas Saniger b. 11 Dec 1711 christened Berkeley…",
+"title": "How Far Back"
+}
+],
 "timothy-o-brien": [],
 "unknown-falco": [],
 "valma-d-arcy": [],
@@ -2080,7 +2128,13 @@
 "title": "The Sneyds"
 }
 ],
-"william-kent": [],
+"william-kent": [
+{
+"path": "/atkinson",
+"snippet": "…–1880) ; his parents Richard Atkinson (1765–1826) and Rose Cole (1771–1836) ; her parents William Kent (b. 1767) and Mary Bowen (1770–1832) ; and above them Robert Kent (1740–1775) with Ann Peevers (1745–1808) , and Richard Atkinson…",
+"title": "The Atkinsons"
+}
+],
 "william-matson": [
 {
 "path": "/open-questions",
@@ -2117,7 +2171,7 @@
 "william-sanigar": [
 {
 "path": "/how-far-back",
-"snippet": "…nmark Accepts the Holderness descent, rejects Keele. What this archive will defend 12 145 William Sanigar, b. 1654, Gloucestershire Rejects both. This is the honest figure. Two grafts carry almost all the depth. Of 243 ancestors in the…",
+"snippet": "…lve . The oldest of them are not aristocrats and there is no castle anywhere in the list: William Sanigar , born 1654, and William Saniger , born at Berkeley, Gloucestershire , 12 October 1679 — reached through Hannah Saniger, Miriam W…",
 "title": "How Far Back"
 }
 ],

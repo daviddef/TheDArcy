@@ -2557,3 +2557,90 @@ That is the honest state of the ancestry, and it is the opposite of the impressi
   the truth) removed, because leaving it made the page contradict itself.
 - `/` — the home page's surgeon's-journal card corrected from "30 men" to 39, with the citation.
 
+---
+
+# Pass twenty-six — digging into the English ancestry, and finding a third graft (10 September 2026)
+
+*Falco dropped at David's instruction — it is another session's work. This pass is the English, Irish
+and Scottish lines only.*
+
+## 128. The map: 56 British and Irish ancestors with a recorded place
+
+Walking from **Ian** (so the maternal Italian side is excluded entirely) and removing both known
+grafts, the pre-emigration ancestry clusters into five groups:
+
+- **Gloucestershire and Bristol** — Saniger of **Berkeley**, Cotton of **Ashton-under-Hill**, Jones of
+  **Brimpsfield** and **Wotton-under-Edge**, Richards of **Elmore**, a Sarah of **Bisley**, and
+  Wakefield of Bristol. *The deepest cluster in the archive.*
+- **Staffordshire and Shropshire** — Sneyd of **Madeley**, Blackbourne of **Castle Church**, Lyon of
+  **Market Drayton**, Oliver of **Oswestry**.
+- **Limerick and Cork** — Atkinson, Kent, Cole, Bowen, Peevers, Creech, Mulcahy.
+- **Ayrshire and Lanarkshire** — Murdoch and Watt of **St Quivox**, Wright of **Douglas**.
+- **Somerset and Middlesex** — Rossiter of **Aller**, Beecham of **Long Ashton**, Atwell of
+  **Teddington** and **Putney**, Keeling of London.
+
+## 129. THE FINDING — the archive's own upper storey is unevidenced
+
+Of the **144 ancestors** this site has been calling *"what this archive will defend"* and
+*"the honest figure"*:
+
+| Rests on | People | Share |
+|---|---|---|
+| **A record set** | **8** | **5.6%** |
+| **Only other people's family trees** | **56** | 38.9% |
+| **No source at all** | **79** | 54.9% |
+| Mixed | 1 | 0.7% |
+
+**And of the 60 ancestors above generation seven, exactly one rests on a record.**
+
+Checked individually: all 31 of Ian's defended ancestors above g7 are *trees only* or *no source*.
+Not one register, census or civil registration among them.
+
+The deepest line — six Saniger generations, Berkeley 1654 to 1805, every one with an exact
+christening date — rests on **Guthrie Web Site, Saniger Web Site, FamilySearch Family Tree, Langford
+Family Site** and, for William Sanigar b.1654 himself, **Gainard Family Tree Web Site**.
+
+**This is the same fault the archive condemns in the Hornby and Keele grafts**, and the site's own
+`/sources` page has said from day one that *"a family tree is not a source"*. That rule was applied
+to two other people's claims and never once to the branch this archive holds up as its solid ground.
+
+Nobody counted until David asked how far past Brisbane the thing actually goes.
+
+**The honest depth is about seven generations, not twelve.**
+
+## 130. The Atkinsons are five generations deep, not one
+
+`/atkinson` said the Irish line was *"anchored at exactly one generation deep"* and that
+*"Richard Atkinson and Anne have a name and nothing else"*. The tree carries **five** generations
+above Paul Cole Atkinson, all in Limerick:
+
+    Paul Cole Atkinson 1832
+      Richard Atkinson 1801–1865  +  Ann Kent 1805–1880
+        Richard Atkinson 1765–1826  +  Rose Cole 1771–1836
+          Richard Atkinson b.1725  +  Mary Love
+        William Kent b.1767  +  Mary Bowen 1770–1832
+          Robert Kent 1740–1775  +  Ann Peevers 1745–1808
+
+**And it explains his name.** Paul *Cole* Atkinson was named for his grandmother **Rose Cole** — free,
+once the generations are actually laid out.
+
+None of the nine is evidenced. The 1832 christening remains the only Atkinson document read.
+
+## 131. Site changes
+
+- `/how-far-back` — new section, *"A third graft, and the archive built it itself"*, with the audit
+  table, the Saniger line and what each generation rests on, and the corrected summary row: the
+  defensible depth is **≈7 generations**, not 12.
+- `/what-we-got-wrong` — eighth error: *called an untested branch "the honest figure"*. Lesson:
+  **audit the ground you are standing on before you audit anybody else's.**
+- `/atkinson` — the depth corrected, with the Cole naming pattern.
+- `/open-questions` — **the Berkeley registers are now the top item on the whole queue**, above
+  Robert D'Arcy's will.
+
+## 132. What would fix it
+
+The parish registers of **Berkeley, Gloucestershire** — held at Gloucestershire Archives, substantially
+transcribed on **FreeREG**. Six christenings between 1654 and 1805. That single afternoon would turn
+the oldest claim in this archive from hearsay into its best-evidenced page. Also wanted: Ashton-under-Hill,
+Wotton-under-Edge, Brimpsfield, Bisley, Elmore, and Madeley for the Sneyd generations above 1742.
+
