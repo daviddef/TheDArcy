@@ -1,0 +1,146 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const W = [
+  { slug: "jean-ward", name: "Jean Ward", life: "1754–1823", kids: 10,
+    from: "South Leith, Midlothian — Scotland",
+    to: "Chatham, Kent",
+    line: "Married Robert D'Arcy at Portsea on 21 June 1779 and followed the Corps of Royal Engineers for forty-four years. A son christened at Bridgetown, Barbados, in 1786. Died at Chatham, four years before her husband." },
+  { slug: "catherine-margaret-mulcahy", name: "Catherine Margaret Mulcahy", life: "1812–1858", kids: 9,
+    from: "Cork",
+    to: "Adelaide Street, North Brisbane",
+    line: "A housemaid out of Cork who married a private of the 4th (King's Own) at Camden, New South Wales, on 13 February 1837 — and whose husband ended as Governor of Brisbane Gaol. She did not live to see it: she died in 1858, aged forty-six, the year before he took the post." },
+  { slug: "jane-creech", name: "Jane Creech", life: "1830–1885", kids: 9,
+    from: "Limerick",
+    to: "1 North Quay, Brisbane",
+    line: "Married the organist Paul Cole Atkinson at Carrigaline, County Cork, on 27 September 1853, and emigrated with him in 1862 with the children already born." },
+  { slug: "eliza-keeling", name: "Eliza Keeling", life: "1837–1918", kids: 7,
+    from: "London",
+    to: "Brisbane",
+    line: "Married George Lindsay D'Arcy in Queensland in 1863 — the year he arrived in the colony." },
+  { slug: "miriam-wakefield", name: "Miriam Wakefield", life: "1840–1909", kids: 6,
+    from: "St Paul, Bristol",
+    to: "Lutwyche Cemetery, Brisbane",
+    line: "Born in Bristol on 11 April 1840; married at twenty-one. Sixty-two years later she stood in the Brisbane Police Court and gave the single most useful piece of evidence in this archive." },
+  { slug: "ida-kathleen-atkinson", name: "Ida Kathleen Atkinson", life: "1869–1937", kids: 4,
+    from: "Brisbane",
+    to: "South Brisbane",
+    line: "The organist's daughter. Married George Pitt D'Arcy at Trinity Church, Fortitude Valley, on 10 October 1888, and outlived him by six years." },
+  { slug: "martha-blum", name: "Martha Blum", life: "1870–1904", kids: 7,
+    from: "Rockhampton",
+    to: "Lutwyche Cemetery, Brisbane",
+    line: "Married at Muttaburra, six hundred kilometres inland, on 20 January 1891. Bore seven children and was dead at thirty-four." },
+  { slug: "ivy-miriam-sneyd", name: "Ivy Miriam Sneyd", life: "1891–1979", kids: 5,
+    from: "Boulia — the remotest birthplace in the archive",
+    to: "Mt Thompson, Brisbane",
+    line: "Married nine weeks before her husband sailed for the war. Lost a brother at Pozières five months later. Widowed at forty-five with five children. Lived another forty-three years." },
+];
+---
+<Base
+  title="The Women"
+  eyebrow="Eight who carried it"
+  dek="This archive is full of soldiers, printers and constables because those are the people governments write down. The women here bore sixty-seven children between them, and one of them gave the most useful evidence on the site.">
+
+  <section class="blk">
+    <p class="lede">Read the rest of this archive and you would think the family was made of men. That
+    is not a fact about the family; it is a fact about <strong>what gets recorded</strong>. A soldier
+    has an attestation paper, a service record, a casualty form and a medal roll. A printer has a
+    salary in the Blue Book. A constable has a staff file. A woman who bore nine children and buried
+    four of them has a marriage line and a burial plot.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And yet the single most valuable document in this archive is a woman's testimony.</strong>
+      When <a href={u("/people/miriam-wakefield")}>Miriam Wakefield</a> stood up in the Brisbane
+      Police Court in September 1902 and said "<em>his father's name was Samuel Sneyd, Gaol Governor,
+      his mother's name was Catherine</em>", she settled a question four separate research passes had
+      been circling — and she named <a href={u("/people/catherine-margaret-mulcahy")}>Catherine
+      Mulcahy</a>, a Cork housemaid dead forty-four years, whom no other record in this archive
+      connects to that family at all. <a href={u("/inquest-1902")}>Her evidence in full →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>The eight</h2>
+    <p class="dek">Wives of the direct line, oldest first. The last column is the number of children
+    the tree records — <strong>sixty-seven between them</strong>.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Who</th><th>Out of</th><th>To</th><th class="m">Children</th></tr></thead>
+        <tbody>
+          {W.map((w) => (
+            <tr>
+              <td><a href={u(`/people/${w.slug}`)}><strong>{w.name}</strong></a>
+                <div class="small">{w.life}</div></td>
+              <td>{w.from}</td>
+              <td>{w.to}</td>
+              <td class="m"><strong>{w.kids}</strong></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:1.6rem;display:flex;flex-direction:column;gap:1rem">
+      {W.map((w) => (
+        <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
+          <a href={u(`/people/${w.slug}`)}><strong>{w.name}</strong></a>
+          <span class="small"> · {w.life}</span>
+          <p class="small" style="margin-top:.3rem;color:var(--ink-2)">{w.line}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Lutwyche Cemetery · Portion GP5, Section 42A, Grave 78</div>
+    <h2 style="margin-top:.4rem">Two of them are in the same grave</h2>
+
+    <p><strong>Miriam Wakefield</strong> died in 1909. <strong>Martha Blum</strong>, who had married
+    Miriam's son Arthur at Muttaburra, died five years earlier in 1904, aged thirty-four, leaving
+    seven children — among them <a href={u("/people/ivy-miriam-sneyd")}>Ivy</a>, who was thirteen.</p>
+
+    <p style="margin-top:.9rem">The burial record this archive carries gives both women the
+    <strong>same plot</strong>: Lutwyche Cemetery, Portion GP5, Section 42A, Grave 78. The
+    mother-in-law was buried with her son's wife.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <span class="chip inf">from the family tree, not yet checked against the register</span>
+      Two identical plot references is the sort of thing that is either quietly true or a
+      copy-and-paste error, and the archive cannot yet tell which. The Brisbane City Council cemetery
+      register would settle it in a minute, and it is now on the list.
+      <a href={u("/open-questions")}>Queued →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>What the numbers say</h2>
+    <ul class="dek">
+      <li><strong>Sixty-seven recorded children</strong> between eight women. Jean Ward had ten,
+      Catherine Mulcahy and Jane Creech nine each.</li>
+      <li><strong>Martha Blum died at thirty-four</strong>, having borne seven. She is the youngest
+      death among the wives and the only one who did not see her children grown.</li>
+      <li><strong>Catherine Mulcahy is the only woman in this archive with a recorded trade</strong> —
+      <em>housemaid</em>. Not one of the other seven has an occupation against her name, which is not
+      the same as not having worked.</li>
+      <li><strong>Ivy Miriam Sneyd outlived every man on this site.</strong> Born at Boulia in 1891,
+      widowed in 1936, died in 1979 — eighty-seven years, and forty-three of them alone.</li>
+      <li>Three of the eight were born outside Australia — <strong>Scotland, Ireland and
+      England</strong> — and one, Jean Ward, never came near it.</li>
+    </ul>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What is missing, and why</h2>
+    <p class="dek">Almost everything. There is no photograph of any of these women. No letter. No
+    will yet found. Catherine Mulcahy's parents are unknown; so are Jane Creech's, and Eliza
+    Keeling's. <strong>Miriam Wakefield's are known only because the Queensland death register names
+    them</strong> — James Wakefield and Hannah Saniger — and that single line is what carries the
+    deepest documented branch in the whole archive back to a Gloucestershire yeoman born in 1654.</p>
+    <p class="dek" style="margin-top:.9rem">The pattern is worth stating plainly: <strong>where this
+    archive has looked for a woman in a civil register rather than a service record, it has usually
+    found her.</strong> The gap is not in the records. It is in where the searching has been done.
+    <a href={u("/open-questions")}>The queue →</a> · <a href={u("/sources")}>Sources →</a></p>
+  </section>
+</Base>
