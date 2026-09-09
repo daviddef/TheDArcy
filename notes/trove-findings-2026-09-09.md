@@ -1424,3 +1424,123 @@ Note the given name: NAA has her as **Ivy *Marion***; the tree and her marriage 
 - Ask the **National Reference Service** whether a B2455 file for 11335 D'Arcy exists off-catalogue.
 - Whether the *Barunga* case was recovered — almost certainly not, but the dossier's later pages
   (S=12–19, 21–30) were not all read and one of them may mention it.
+
+---
+
+# Pass fourteen — the Red Cross file, and a brother nobody knew about (9 September 2026)
+
+## 57. Two dead ends, worth recording as such
+
+- **AWM's own search is down.** `advanced-search` returns "Sorry no results found" for everything,
+  with a banner: *"We are upgrading our collection system. Units, Places, Library, People, Rolls
+  (as of September 2026)."* Not a bot block — a migration. Try again later.
+- **CWGC blocked again**, this time with an Azure WAF interstitial ("we're checking you're not a
+  bot"). Second failure in two sessions. Not bypassed. Villers-Bretonneux stays `inferred`.
+
+## 58. The way in was the tree's own notes
+
+The MyHeritage export's HTML notes for Arthur Hartley Sneyd are mangled almost past reading — tag
+fragments interleaved with text — but buried in them are **direct AWM S3 document URLs** and a
+scrape of the (now retired) **AIF Project** record. Extracted:
+
+- Red Cross Wounded &amp; Missing file: `awm-media/collection/RCDIG1064523/document/5652024.PDF`
+- Roll of Honour / AWM131 card: `awm-media/collection/RCDIG1068838/document/5538351.PDF`
+- Vivian Claude Sneyd's bravery recommendation: `awm-media/collection/RCDIG1068300/document/5498279.PDF`
+- Photo, Hoffnung &amp; Co employees who served: `awm.gov.au/collection/C1262223`
+
+**These S3 URLs work even while AWM's search is down.** That is the workaround.
+
+From the AIF Project scrape, also recovered: embarked ***Star of Victoria* 31 March 1916**;
+"9th Battalion, 16th Reinforcement"; commemorated **Villers-Bretonneux**; and, from the family's own
+Roll of Honour circular, that he *"gave up this rank in Egypt in order to get across to France"*.
+
+## 59. AWM 1DRL/0428 — the Wounded and Missing file, 23 pages, read
+
+Six statements, in the order the Bureau got them:
+
+| Date | Witness | Says |
+|---|---|---|
+| 3.11.16, Étaples | Pte P. R. Rhead 4280, C Coy, 1 A.D.B.D. | Sneyd of **B Coy**; Pte R. Kent saw him **killed by a shell** |
+| 4.12.16, Étaples | L/Cpl Clark 1328, A Coy, No.1 Canadian General | Saw him and two others struck; **bodies lifted out and placed over the parapet**; heard a rumour he "**proved not to be dead, and was seen to get up**"; but "no doubt whatever that he was dead" |
+| 4.12.16, Étaples | Pte Geo. Holloway 5377, A Coy, 1 Con. Depot | "**His death is mysterious.**" Found for dead, "only suffering from shell shock", taken down the line, "died in hospital". **"He held the position of Sgt. in Australia before he came out."** Refers the Bureau to **Cpl Walsh, his great chum** |
+| 16.12.16, Rouen | Cpl A. Lee 1370, A Coy 2 Pl, No.9 General | Working party **just in front of Pozières**; shell killed two or three; Sneyd fell, was **rolled onto the parados**; "**The next morning he had recovered, and I spoke to him. He had a bandage round his head and he was carrying a white flag behind some stretcher bearers who were getting in the wounded from No Man's Land**" |
+| 4.1.17, Le Havre | via Cpl H. Kendrick, 1 A.D.B.D. | "the pioneers thought him dead and put him over the parapet. **Next morning he crawled in to the trench**" |
+| 6.1.17, Oxford | **Pte Geo. Walsh**, A Coy, No.4 Officer Cadet Battn, **New College, Oxford** | Full account — see below |
+
+**Walsh's letter is the centre of the file.** Last saw him "on the afternoon of **Sunday Aug. 20th
+about 6 p.m.** … going up to the front line on fatigue duty"; told at 1 a.m. Monday that he was
+killed; next morning heard he was "seen walking along with stretcher-bearers with his head
+bandaged"; "**I at once made exhaustive inquiries from stretcher bearers, medical officers etc, but
+all to no avail**"; his belongings went to the 9th Battalion orderly room. His description of his
+friend: "**a lad of 23 years, about 5ft 6ins in height, thin features and fair hair**" — against the
+attestation's 22, 5 ft 7½ in, dark brown hair. A friend's memory, five months on.
+
+### And then, thirteen months later, Walsh solved it
+
+- **Sgt. Morton, 10th Battalion, France, 1.9.17:** "He was killed at **Mouquet Farm on the 22.8.16**
+  and was **buried in a shell hole in No Man's Land just out of the old German Trench**, near where
+  10th Battalion Headquarters is. **A rough cross (wooden) was placed on his grave.**"
+- **Lieut. Geo. Walsh** (by then commissioned), France, 19.9.17: "Please find enclosed report by
+  Sgt. Morton … It seems to clear up all the mystery about it. **If I ever get another chance I shall
+  certainly endeavour to locate the grave.**"
+
+He was buried once, under a wooden cross, in ground fought over for two more years. That is why
+there is no grave and why the name is at Villers-Bretonneux.
+
+**Unresolved conflict, published as unresolved:** official records say **20 August**; Morton, the
+only witness to a burial, says **22 August at Mouquet Farm**. Lee's account of a man who survived
+the 20th is consistent with either. Company is also unresolved: Rhead says B, Holloway and Lee say A.
+The **9th Battalion war diary for 20–22 August 1916** would settle both.
+
+## 60. And a decorated brother the archive had missed entirely
+
+**Vivian Claude Sneyd, 1895–1949** — Ivy's next brother, born Rockhampton 18 Dec 1895, died Brisbane
+10 Feb 1949, cremated Mt Thompson. The tree records his occupation as **"Salesman"** and nothing
+about the war. The AIF Project scrape in Arthur's own notes says:
+
+> Brother: 1916 **Vivian Claude SNEYD MM &amp; Bar, 3rd Field Ambulance**
+
+**Military Medal and Bar** — decorated twice, as a stretcher-bearer. The same job his brother was
+last seen doing. His recommendation is at `RCDIG1068300/document/5498279.PDF` and has not been read.
+
+## 61. Corrections this pass forced on pass thirteen
+
+I misread the Statement of Service (image S=11) and published **"Marched out to Étaples 26 April
+1916 · taken on strength 29 April 1916"**. The Casualty Form B.103 (S=13) is clearer and gives
+**26 July** and **29 July** — internally consistent with the reversion on 29.7.16. Corrected on
+`/great-war` within the hour. Lesson: **read the B.103 before the Statement of Service** — it is
+typed columns, not a clerk's freehand, and it carries the same events.
+
+Also from the B.103: his rank is entered as **A/Sgt** (acting sergeant), and he marched out from the
+**1st Australian Divisional Base Depot**.
+
+## 62. Other pages of B2455 read this pass
+
+- **S=16** — Table II, hospital admissions: **entirely blank.** He was never in hospital.
+- **S=23** — certification memo, 16 May 1917: death confirmed by **Cable C.I.B.L. 427 from the
+  Commandant, A.I.F. Headquarters, London, 16 September 1916**. That is when Australia knew: killed
+  20 August, cabled 16 September, nearly four weeks.
+- **S=28** — a handwritten letter, **Dean Street, Toowong, 19 November 1930**, to Base Records: "As
+  trustee in the Estate of Mr. Arthur Sneyd … I am his nearest relative, and will be pleased if you
+  would forward **the memorial bronze plaque** … to the above address." Stamped received 24 Nov 1930.
+  **Fourteen years after his death the plaque had still not been delivered.** Their father A.W.H.
+  Sneyd died in 1922, so the writer is one of the surviving children. This also settles the reading of
+  the attestation's next-of-kin address: **Dean Street, Toowong**, before the move to James Street,
+  Wooloowin.
+
+## 63. Site changes
+
+- **New page `/finding-arthur`** — the whole Red Cross file, statement by statement.
+- `/great-war` — April→July corrected; embarkation date added; the Roll of Honour phrase added;
+  the commemoration note rewritten around the lost grave; Vivian Claude Sneyd added.
+- `/sources` — 1DRL/0428 added as a record set read in full.
+- `/open-questions` — Arthur's item rewritten; **new item for Vivian Claude Sneyd MM &amp; Bar**.
+- `/` and nav — a card and an Evidence entry.
+
+## 64. Queue after this pass
+
+1. **Vivian Claude Sneyd's MM recommendation** — URL known, not read.
+2. **9th Battalion war diary, 20–22 August 1916** — would settle the date and Mouquet Farm.
+3. **CWGC** — still blocked; needs a human.
+4. **AWM** — retry when the collection migration finishes.
+5. NAA **J34, C34558**; NAA reference service on the missing B2455; QSA ITM1412361 and ITM2824953.
