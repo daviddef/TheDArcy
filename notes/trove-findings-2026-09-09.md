@@ -2409,3 +2409,69 @@ outside this repository and is offered rather than done.
 
 497 pages · 0 broken links · 0 orphans.
 
+---
+
+# Pass twenty-four — the women, the land, and three institutions between houses (10 September 2026)
+
+## 120. `/the-women` — the gap that was in the searching, not the records
+
+Eight wives of the direct line, **sixty-seven recorded children** between them. The page says the
+thing worth saying: this archive reads as though the family were made of men because a soldier gets
+an attestation paper, a service record, a casualty form and a medal roll, while a woman who bore nine
+children gets a marriage line and a burial plot.
+
+And yet **the single most valuable document in this archive is a woman's testimony** — Miriam
+Wakefield naming Catherine Mulcahy, a Cork housemaid dead forty-four years, whom no other record here
+connects to that family at all.
+
+**A find while assembling it.** The tree gives **Miriam Wakefield** and her daughter-in-law
+**Martha Blum** the *identical* Lutwyche plot — Portion GP5, Section 42A, Grave 78. Martha died 1904
+aged 34 leaving seven children; Miriam died 1909. Either the older woman was buried with her son's
+wife, or it is a copy-and-paste in the tree. Published `inferred`; the BCC cemetery register settles
+it free.
+
+Other numbers: **Catherine Mulcahy is the only woman in the archive with a recorded trade** —
+*housemaid*. **Ivy Miriam Sneyd outlived every man on the site** — Boulia 1891 to Brisbane 1979,
+widowed at 45, forty-three years alone.
+
+## 121. Samuel Charles Sneyd was buying Brisbane — and there is a Sneyd-street
+
+QSA series **`S1215`, Real Property Dealings**, via the JSON API:
+
+| Year | Dealing | Where |
+|---|---|---|
+| 1870 | Samuel Sneyd, mortgagor, to James Gibbon | Subdivision 3, Portions 152–153, **Parish of North Brisbane** |
+| 1872 | Samuel Sneyd, mortgagor, to the **Brisbane Mutual Building and Investment Society** | Subdivision 7, Allotment 293, **Parish of North Brisbane** |
+| 1872 | Samuel Sneyd, **one of three trustees** (with James Voller and William Bell) | Resubdivision A, Subdivision 3, Portion 417, **Parish of Enoggera** |
+| 1877 | Samuel Hanley Stafford Sneyd, vendor | Portion 209, Parish of South Brisbane |
+| 1864 | William Hartley Sneyd, mortgagor, Queensland Building Society No. 1 | — |
+
+**He was a trustee at Enoggera in 1872 and he died at Enoggera in 1885.** The archive held both facts
+for two research passes without joining them.
+
+**And Sneyd-street, Bowen Hills**, which surfaced by accident in a 1902 insolvency notice: Bowen Hills
+is in the **Parish of North Brisbane**, and Sneyd was mortgaging subdivisions in that parish in 1870
+and 1872. Subdividers named the streets they cut. Published as `a lead, not a conclusion` — the
+subdivision plan, held with the dealings above, would settle it.
+
+## 122. Three institutions are between houses
+
+- **AWM** — retested 10 September; the "upgrading our collection" banner is still up and every query
+  returns nothing. The 9th Battalion war diary and the first Military Medal citation both wait on it.
+- **CWGC** — refused automated access twice; not attempted again.
+- **NSW State Archives is now Museums of History NSW** at `mhnsw.au`, and the old index URLs are
+  dead — `/indexes/probate-packets/…` and `/collections/search/` both return 404 or "no result".
+  **This is what stopped George Pitt D'Arcy's 1849 probate**, not the record's absence.
+
+Also checked and empty: `data.nsw.gov.au` publishes no probate dataset; Brisbane City Council
+publishes no street-name-origins dataset; the Trove **API v3 requires a key** this session does not
+have, though the article-rendition and page-image endpoints remain open and unauthenticated.
+
+## 123. Where the ten stand
+
+Done: the surgeon's journal (`ADM 101/26/1`), WO 47 located with its obstacle, the full Blue Book
+sweep, the corrections map, the sibling cross-check, `/what-we-got-wrong`, `/the-women`, and the
+Sneyd land and street.
+
+Blocked on other people's migrations: the NSW probate, the war diary, the first Military Medal.
+
