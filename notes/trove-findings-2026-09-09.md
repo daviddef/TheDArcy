@@ -2266,3 +2266,52 @@ there for the next one.
 - **The end of the gaol governorship**, the **9th Battalion war diary**, the **first Military Medal
   citation**, the **NSW probate** and the **Sanigar registers**: not reached this pass.
 
+---
+
+# Pass twenty-two — the nulls, honestly (10 September 2026)
+
+## 109. The London Gazette does not name Vivian Sneyd's Military Medal
+
+The Gazette has a working Atom feed that `curl` can use with no key:
+
+    https://www.thegazette.co.uk/all-notices/notice/data.feed?text=Sneyd&start-publish-date=1916-01-01&end-publish-date=1920-12-31&results-page-size=50
+
+Fifty results for *Sneyd* across 1916–20, read in full. **None of them is 1696 L/Cpl Vivian Claud
+Sneyd.** The hits are a naval Ralph S. Sneyd, several officers named Sneyd-Kynnersley and Sneyd Hunt,
+Staffordshire place-names, bankruptcy notices, and — the one near miss —
+**"3281 Pte. L. Sneyd, Aust. Inf. For conspicuous gallantry in action… fine observation work from
+exposed and dangerous"**, a different Australian Sneyd with a different number.
+
+**Why it is absent is the finding.** Military Medals to other ranks were gazetted as bare lists of
+regimental numbers and initials, without citations and frequently mis-scanned; the *citation* only
+ever existed in the AWM 28 recommendation file. His **Bar** file was reachable because the family
+tree happened to carry its S3 URL. The **first** award's file has no such shortcut, and AWM's search
+is down. `null, with a reason`
+
+## 110. Trove will not give up the 1873 insolvency
+
+645 results for *Sneyd insolvent*; the first ten are an Adelaide painter (Samuel Enos Sneyd,
+insolvent 1879) and a Brisbane street. Note in passing that **there is a Sneyd-street at Bowen
+Hills** — unexplained, and plausibly named for one of the four Sneyds on the Queensland payroll.
+
+QSA `ITM1056950` (Insolvency Files, 230/1873) stays the only route and is not digitised.
+
+## 111. A recurring obstacle, recorded because it shaped the day
+
+**Trove's search results will not render in a hidden browser pane.** Article *renditions* fetch fine
+by `curl` — `https://trove.nla.gov.au/newspaper/rendition/nla.news-articleNNNN.txt` — and page images
+fetch fine by `curl` too, but the search SPA needs a visible, fronted pane and often two waits of ten
+seconds. Where a search failed today it failed for that reason, not because the newspapers are silent.
+Anyone repeating this work should front the pane first.
+
+## 112. `/open-questions` now opens with the state of play
+
+Four cards: the one document that would change most (`PROB 11/1728/64`); what is blocked on a card
+rather than on research; what is blocked on somebody else's website (CWGC, AWM); and what has been
+searched and is genuinely empty. Five null results are now written up as results in section 6.
+
+## 113. Final audit
+
+496 pages · **0 broken internal links** · **0 orphans** · five external links to the sibling
+archives, all returning 200.
+
