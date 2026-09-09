@@ -1288,3 +1288,139 @@ Meringandan — bundled into the same wrapper. Anyone else downloading DR103140 
 - `/` — a card in "Elsewhere in the archive".
 - `.gitignore` narrowed from `sources/inquests/` to `sources/inquests/*.pdf`, so the transcription is
   versioned and the 15 MB scan is not.
+
+---
+
+# Pass thirteen — the National Archives of Australia (9 September 2026)
+
+Worked RecordSearch directly in the browser. Two finds, one null, and one Trove follow-up that turns
+a form into a small tragedy.
+
+## 50. Method note, for whoever does this next
+
+RecordSearch is hostile to automation and cost an hour of fumbling. What actually works:
+
+1. Its landing page usually says **"Session expired"**. Nothing works until you start a guest
+   session: the `guest` link is an ASP.NET postback, so click it (or run
+   `__doPostBack('ctl00$ContentPlaceHolderSNR$lbnGuest','')`).
+2. **The Browser pane must be visible.** While hidden, the page does not lay out, clicks land in the
+   wrong place and `get_page_text` returns stale content. Most of the wasted time was this.
+3. **NameSearch silently refuses to run without a record category.** The validator message is only
+   rendered on the page — no error, no result, the form just comes back. Set the category first
+   (it postbacks), then fill the names, then submit.
+4. Setting a field's `.value` from JavaScript works; *typing* into a field by ref is unreliable
+   because the accessibility refs are computed in a 1024-wide frame and clicks are sent in an
+   800-wide one. Text ends up appended to the wrong box.
+5. The results page shows nothing until you click **"Display items"** — another postback.
+6. Digitised pages have a **stable direct image URL** that is far more legible than the viewer:
+   `.../SearchNRetrieve/NAAMedia/ShowImage.aspx?B=<itemID>&S=<page>&T=P&R=0`
+
+## 51. FOUND — Arthur Hartley Sneyd's service dossier, digitised, thirty pages
+
+**NAA: B2455, SNEYD ARTHUR HARTLEY** · item ID **8088453** · contents 1914–1920 · Canberra · Open.
+Full title: *"SNEYD Arthur Hartley : Service Number - 5050 : Place of Birth - Rockhampton QLD :
+Place of Enlistment - Brisbane QLD : Next of Kin - (Father) SNEYD Arthur Hartley"*.
+
+Pages 1–4 and 5–8 are two copies of the attestation set; the second is stamped **KILLED IN ACTION**
+in red and annotated **"16th Reinfts, 9th Battalion"**.
+
+**Attestation, 16 September 1915, Brisbane** (sworn before Capt. R. L. Higgins):
+- born Rockhampton, Queensland; age **21 11/12**; **trade: typist** (the site said "clerk" — wrong)
+- unmarried; religion **Baptist**
+- next of kin: **Father, Mr A.W.H. Sneyd** — first at Toowong, amended to **James Street, Wooloowin**
+- signed *A H Sneyd*
+
+**Description on enlistment:** 5 ft 7½ in · 118 lb · chest 31–33 in · complexion fair · eyes blue ·
+hair dark brown · vision 6/6 both · **distinctive marks: nil**. Passed fit, Brisbane, 16 Sep 1915.
+
+**Statement of Service** (the important page — image S=11):
+
+| | From | To |
+|---|---|---|
+| 7th Depot Battn — **Private** | 16.9.15 | 15.1.16 |
+| **Corporal** | 16.1.16 | 29.2.16 |
+| **Sergeant** | 1.3.16 | 28.7.16 |
+| Marched out to Étaples | 26.4.16 | (AX 201) |
+| Taken on strength, France | 29.4.16 | (B213 A9 1980) |
+| **"Reverts to ranks on joining 9 Bttn"** | **29.7.16** | |
+| **KILLED IN ACTION** (stamped) — *"(prev. reported wounded)"* | **20.8.16** | (B213 AG 4099) |
+
+Signed R. H. Brown, Lieut. **He gave up his sergeant's stripes on 29 July 1916 to join the battalion
+in the line, and was killed twenty-two days later.** The family were first told he was wounded.
+
+**Army Form B.2090A, Report of Death** (S=9), Officer i/c Records, ANZAC Section, 3rd Echelon,
+G.H.Q., B.E.F., **2 October 1916**: 9th Battalion A.I.F., No. 5050, Private, Sneyd A.H.; died
+**20-8-16**, **in the field, France**, **killed in action**; reported on Army Form B.213 of 1-9-16 by
+the C.O. 9th Battalion. **Burial — place: "Not yet to hand."** Will in Pay Book: "Not yet to hand."
+
+**Inventory of Effects** (S=20), A.I.F. Kit Store, 110 Greyhound Road, Hammersmith, London W.6:
+> 5050 Sneyd, A.H., 9th Btn. A.I.F. Forwarded to — Father, Mr A.W.H. Sneyd, James Street, Wooloowin,
+> Brisbane, Queensland. Effects. Ex Kit Store, Book No. 16. **Scarf, Letters.**
+> Per "Barunga" 20.6.18. In Case No. 1224. — D/S 35134
+
+## 52. And the Barunga was sunk
+
+Trove, same session. Three papers, independently:
+
+- ***The Bundaberg Mail*** (Qld), Fri 19 July 1918, p.3 — "THE BARUNGA TORPEDOED. LONDON, Thursday.
+  The steamer Barunga, on her way to … Australia, was torpedoed and sunk, one life being lost."
+  `nla.news-article216455798`
+- ***The Maffra Spectator*** (Vic.), Mon 22 July 1918, p.3 — "…was torpedoed and sunk on Monday.
+  There were no casualties… The Admiralty reports that the Barunga, bound for Australia…"
+  `nla.news-article69988898`
+- ***Muswellbrook Chronicle*** (NSW), Sat 27 July 1918, p.6 — "The Barunga was torpedoed at 4 o'clock
+  on Monday afternoon." `nla.news-article107563656`
+
+The Monday is **15 July 1918**. His effects were despatched on her on **20 June 1918**, twenty-five
+days before. **Inference, clearly labelled as one on the site:** the case did not arrive. Nothing in
+the dossier says what became of it; the two reports also disagree on whether anyone died.
+
+## 53. NOT FOUND — Lindesay Atkinson D'Arcy's B2455 dossier
+
+Searched four ways: Basic search keyword *"Lindesay Atkinson"* (1 result, and it is not B2455);
+*"Lindsay Atkinson"* (0); NameSearch WWI, family name *D'Arcy* + given *Lindesay* (0); family name
+*Darcy* + given *Lindesay* (0).
+
+**Control test:** the same Basic search for *"Arthur Hartley Sneyd"* returned his B2455 dossier
+immediately. So the tool indexes B2455 item titles and works — the absence is real, not an artefact.
+
+This retires an overclaim. `/sources` and `/open-questions` both asserted that a **fourteen-page
+B2455 dossier "is known to exist"** for him. Nothing supports that and it is withdrawn. NAA's own
+series note warns that "not all items from the series may be on RecordSearch", so the honest status
+is **not found**, not **does not exist** — it now needs the National Reference Service.
+
+## 54. FOUND instead — a repatriation pension file for his widow
+
+**NAA: J34, C34558** · item ID **32915135** · *"D'ARCY, Ivy Marion beneficiary of D'ARCY, Lindesay
+Atkinson - Service Number - 11335"* · contents **1937–1938** · Brisbane · **Open** · paper, not
+digitised · registered 17 Jun 2016.
+
+Series **J34 = "Pension case files, single number series with 'C' (First World War ex-servicemen)
+prefix"**, kept by the Deputy Commissioner for Repatriation, Brisbane. 351 metres, 17,478 items on
+RecordSearch. The series note adds that pension files "are raised concurrently with medical files",
+so **a companion medical file may exist**.
+
+He died 10 November 1936, aged 44. This file opens the following year with his widow as beneficiary.
+That is not proof of anything about the cause of his death, and the site says so — but it is the
+single most promising unread document about it, and it sits beside the Queensland death certificate
+already on the request list.
+
+Note the given name: NAA has her as **Ivy *Marion***; the tree and her marriage have **Ivy *Miriam***
+(her mother and grandmother were both Miriam). Another name-drift specimen for `/name`.
+
+## 55. Site changes made
+
+- `/great-war` — Arthur Sneyd's section rewritten around the dossier: the typist, the physical
+  description, the ranks, the reversion, the report of death and the effects, plus the Barunga.
+  Lindesay's section gains the withdrawal of the B2455 claim and the J34 find.
+- `/sources` — B2455 rewritten: read in full for Sneyd, not found for D'Arcy, overclaim withdrawn.
+- `/open-questions` — both war items rewritten.
+
+## 56. Still open after this pass
+
+- **CWGC** confirmation for Arthur Sneyd (site blocked automated access again).
+- **AWM Roll of Honour circular** for him — still not transcribed.
+- **NAA J34, C34558** — order it; not digitised.
+- Ask the **National Reference Service** whether a B2455 file for 11335 D'Arcy exists off-catalogue.
+- Whether the *Barunga* case was recovered — almost certainly not, but the dossier's later pages
+  (S=12–19, 21–30) were not all read and one of them may mention it.

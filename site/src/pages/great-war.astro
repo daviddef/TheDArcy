@@ -29,7 +29,7 @@ import { u } from "../lib/url.js";
           <tr><td>Embarked</td><td class="m">18 May 1916 · Sydney · HMAT <em>Demosthenes</em> A64</td></tr>
           <tr><td>Next of kin</td><td>his wife, Ivy Miriam D'Arcy</td></tr>
           <tr><td>Returned to Australia</td><td class="m">7 July 1919</td></tr>
-          <tr><td>Records</td><td class="mono">NAA B2455 · AWM8 25/109/1</td></tr>
+          <tr><td>Records</td><td class="mono">AWM8 25/109/1 · NAA J34, C34558</td></tr>
         </tbody>
       </table>
     </div>
@@ -49,6 +49,35 @@ import { u } from "../lib/url.js";
     <p class="small" style="margin-top:.8rem">His name is spelled <em>Lindesay</em> on one AWM record
     and <em>Lindsay Darcy</em> on the other, which is why both had to be searched.
     <a href={u("/name")}>The name →</a></p>
+
+    <div class="lab" style="margin-top:1.8rem">Searched at RecordSearch, 9 September 2026</div>
+    <h3 style="margin-top:.3rem">His service dossier could not be found — and something else was</h3>
+    <p>This page previously said that a fourteen-page <strong>B2455</strong> dossier for him "is known
+    to exist". <strong>That was an overclaim, and it is withdrawn.</strong> The National Archives
+    catalogue was searched directly under <em>Lindesay Atkinson</em> and under <em>Lindsay
+    Atkinson</em>, and in the World War I name index under <em>D'Arcy</em> and <em>Darcy</em>. No
+    B2455 item came back under any of them. The search method was verified by running the same query
+    for his brother-in-law, which returned Arthur Sneyd's dossier immediately — so the tool works, and
+    the absence is real. <span class="chip lore">not found</span></p>
+    <p class="small" style="margin-top:.8rem">The National Archives itself warns that "not all items
+    from the series may be on RecordSearch", so this is a null result rather than a proof of absence.
+    It now needs the National Reference Service rather than a search box.
+    <a href={u("/open-questions")}>Queued →</a></p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>What the search did turn up is arguably better.</strong>
+      <span class="mono">NAA: J34, C34558</span> — "<em>D'ARCY, Ivy Marion beneficiary of D'ARCY,
+      Lindesay Atkinson — Service Number 11335</em>", contents dated <strong>1937–1938</strong>, held
+      at Brisbane, open access, paper, item ID 32915135. Series <strong>J34 is the Repatriation
+      Commission's pension case files for First World War ex-servicemen in Queensland</strong>.
+      <br /><br />
+      He died on 10 November 1936. Within months his widow had a repatriation pension file open in her
+      own name. <span class="chip inf">inferred</span> A file's existence is not a finding about his
+      death — it does not say the claim was made on those grounds, or that it succeeded — but it does
+      say that the family's dealings with the Repatriation Commission did not end when he came home in
+      1919, and it is the one document that might explain a death at forty-four.
+      <strong>It is not digitised.</strong> <a href={u("/open-questions")}>What it would take →</a>
+    </div>
   </section>
 
   <section class="blk">
@@ -56,21 +85,96 @@ import { u } from "../lib/url.js";
     <h2 style="margin-top:.4rem">Arthur Hartley Sneyd, 9th Battalion</h2>
 
     <p>Ivy's younger brother. Born at <strong>Rockhampton</strong> on 11 October 1893, schooled at
-    <strong>Eagle Junction State School</strong>, a clerk by trade.</p>
+    <strong>Eagle Junction State School</strong>. <strong>His service dossier has now been read</strong> —
+    thirty digitised pages, NAA B2455, item 8088453 — and it corrects the record in several places,
+    starting with his trade. He was not a clerk. He was a <strong>typist</strong>.</p>
 
     <div class="scroll" style="margin-top:1.1rem">
       <table>
         <tbody>
           <tr><td>Service number</td><td class="m">5050</td></tr>
-          <tr><td>Rank</td><td>Private</td></tr>
-          <tr><td>Unit</td><td>9th Infantry Battalion, 13th–23rd reinforcements</td></tr>
-          <tr><td>Embarked</td><td>HMAT <em>Star of Victoria</em> A16</td></tr>
-          <tr><td>Killed in action</td><td class="m"><strong>20 August 1916 · Pozières, the Somme</strong></td></tr>
+          <tr><td>Attested</td><td class="m"><strong>16 September 1915</strong>, Brisbane, before Capt. R. L. Higgins</td></tr>
+          <tr><td>Age at enlistment</td><td class="m">21 years 11 months</td></tr>
+          <tr><td>Trade</td><td><strong>Typist</strong></td></tr>
+          <tr><td>Description</td><td>5 ft 7½ in · 118 lb · fair complexion · blue eyes · dark brown hair · vision 6/6 both eyes · distinctive marks <em>nil</em></td></tr>
+          <tr><td>Religion</td><td>Baptist</td></tr>
+          <tr><td>Next of kin</td><td>Father — Mr A. W. H. Sneyd, first of Toowong, later of <strong>James Street, Wooloowin</strong></td></tr>
+          <tr><td>Unit</td><td>7th Depot Battalion, then <strong>16th reinforcements, 9th Battalion</strong></td></tr>
+          <tr><td>Ranks held</td><td><strong>Private → Corporal (16 Jan 1916) → Sergeant → Private again</strong></td></tr>
+          <tr><td>To France</td><td class="m">Marched out to Étaples 26 April 1916 · taken on strength 29 April 1916</td></tr>
+          <tr><td>Joined the battalion</td><td class="m"><strong>29 July 1916</strong> — three weeks before he was killed</td></tr>
+          <tr><td>Killed in action</td><td class="m"><strong>20 August 1916 · in the field, France</strong></td></tr>
           <tr><td>Age</td><td class="m">22</td></tr>
           <tr><td>Grave</td><td><strong>None known.</strong> Commemorated on the Villers-Bretonneux
             Australian National Memorial <span class="chip inf">to be confirmed</span></td></tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>He gave up his stripes to get into the line.</strong> The Statement of Service carries a
+      line in a clerk's hand: "<em>Reverts to ranks on joining 9th Bttn 29.7.16</em>." He had been made
+      corporal in January 1916 and sergeant after that. Reinforcements joining a battalion in the field
+      routinely reverted to private, and he did — on 29 July 1916, at the height of Pozières. He was
+      killed twenty-two days later.
+    </div>
+
+    <p style="margin-top:1.2rem">The same page carries the words <strong>"(prev. reported
+    wounded)"</strong> beside the killed-in-action stamp, and the entry "<em>Wounded in action — see
+    later report — 20.8.16</em>". The family in Wooloowin were told first that he had been wounded.
+    The correction came afterwards.</p>
+
+    <div class="lab" style="margin-top:1.8rem">Army Form B.2090A · 2 October 1916</div>
+    <h3 style="margin-top:.3rem">The report of death</h3>
+    <blockquote>
+      Regiment or Corps: <strong>9th Battalion A.I.F.</strong> · Regtl. No. <strong>5050</strong> ·
+      Rank <strong>Private</strong> · Name <strong>Sneyd, A. H.</strong><br />
+      Died — Date <strong>20-8-16</strong>. Place <strong>In the field, France</strong>. Cause of death
+      <strong>Killed in action</strong>.<br />
+      Nature and date of report: <em>Army Form B.213 dated 1-9-16</em>, by the Commanding Officer,
+      9th Battalion A.I.F.<br />
+      Burial — Place: <strong>"Not yet to hand."</strong> Date: — . By whom reported: — .<br />
+      Whether he leaves a will: in Pay Book, <strong>"Not yet to hand."</strong>
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— Officer i/c Records, ANZAC
+      Section, 3rd Echelon, G.H.Q., British Expeditionary Force, 2 October 1916.
+      <span class="mono">NAA B2455, SNEYD ARTHUR HARTLEY</span></footer>
+    </blockquote>
+    <p class="small">"Not yet to hand" is the form's way of saying nobody could tell the War Office
+    where he was. It never came to hand. That blank is the beginning of the case for
+    Villers-Bretonneux.</p>
+
+    <div class="lab" style="margin-top:1.8rem">A.I.F. Kit Store, Hammersmith · 20 June 1918</div>
+    <h3 style="margin-top:.3rem">Everything he owned</h3>
+    <blockquote>
+      Inventory of Effects of — <strong>5050 Sneyd, A.H., 9th Btn. A.I.F.</strong><br />
+      Forwarded to — Father, Mr A.W.H. Sneyd, James Street, Wooloowin, Brisbane, Queensland.<br /><br />
+      Effects. Ex Kit Store, Book No. 16.<br />
+      <strong>Scarf, Letters.</strong><br /><br />
+      Per "Barunga" 20.6.18. In Case No. 1224.
+      <footer class="small" style="font-style:normal;margin-top:.6rem">— A.I.F. Kit Store, 110
+      Greyhound Road, Hammersmith, London W.6. <span class="mono">D/S 35134</span></footer>
+    </blockquote>
+    <p class="small">A scarf and some letters, in case number 1224, twenty-two months after he died.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And they almost certainly never arrived.</strong> The ship named on the form is the
+      transport <strong><em>Barunga</em></strong>, and she left on 20 June 1918. Twenty-five days later
+      she was torpedoed and sunk. Three Australian papers carried it within the week:
+      <em>The Bundaberg Mail</em>, Friday 19 July 1918 — "<em>The steamer Barunga, on her way to
+      Australia, was torpedoed and sunk</em>" (<span class="mono">nla.news-article216455798</span>);
+      <em>The Maffra Spectator</em>, Monday 22 July — "<em>torpedoed and sunk on Monday… The Admiralty
+      reports that the Barunga, bound for Australia</em>"
+      (<span class="mono">nla.news-article69988898</span>); and the
+      <em>Muswellbrook Chronicle</em>, 27 July — "<em>The Barunga was torpedoed at 4 o'clock on Monday
+      afternoon</em>" (<span class="mono">nla.news-article107563656</span>). The Monday was
+      <strong>15 July 1918</strong>. The papers disagree about the human cost — Maffra says there were
+      no casualties, Bundaberg says one life was lost — but they agree she went down.
+      <br /><br />
+      <span class="chip inf">inferred</span> That the case was still aboard is an inference, not a
+      document: the form records the ship and the date of despatch, and nothing in the dossier says
+      what became of the case. But a case shipped on the <em>Barunga</em> on 20 June had no other way
+      home. On the evidence, <strong>the scarf and the letters went to the bottom of the Atlantic</strong>,
+      and the family at James Street, Wooloowin got neither a grave nor a parcel.
     </div>
 
     <p style="margin-top:1.2rem">The family tree records "buried in France". On the evidence that is
