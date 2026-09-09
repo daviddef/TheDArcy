@@ -1544,3 +1544,127 @@ Also from the B.103: his rank is entered as **A/Sgt** (acting sergeant), and he 
 3. **CWGC** — still blocked; needs a human.
 4. **AWM** — retry when the collection migration finishes.
 5. NAA **J34, C34558**; NAA reference service on the missing B2455; QSA ITM1412361 and ITM2824953.
+
+---
+
+# Pass fifteen — the decorated brother, and a third soldier (9 September 2026)
+
+## 65. Method: rendering a scanned PDF legibly
+
+The AWM citation was too small to read in the browser's PDF viewer, and clicks inside the PDF frame
+are refused ("lands in an embedded frame with no resolvable origin"). What worked:
+
+```
+curl -sL -o x.pdf "<url>"
+sips -s format png --resampleWidth 2600 x.pdf --out x.png
+sips -c 1500 2600 --cropOffset 260 0 x.png --out crop.png    # crop to the block
+```
+
+then read the PNG. `sips` ships with macOS and handles PDF→PNG. **This is the fallback whenever a
+scan is unreadable in the pane** — it also beats the NAA viewer for the B2455 images.
+
+## 66. Vivian Claude Sneyd MM and Bar — the citation, in full
+
+**AWM 28** (recommendation files for honours and awards, A.I.F.), forwarded 12 October 1917,
+endorsed in manuscript **"Awarded"**:
+
+> 3rd. Aust. Fld. Ambce. — **1698 [NAA indexes 1696] L/Cpl. Vivian Claud SNEYD.**
+>
+> During the operations at **WESTHOEK, East of YPRES 4th. October 1917**, and succeeding days L/Cpl.
+> Sneyd, while in charge of a squad of bearers showed exceptional bravery, endurance and
+> cheerfulness, despite the heavy work, mud, rain, and fire from the enemy. Stretchers and rations
+> were urgently needed for the forward squads — the weather being wet and bitterly cold and fires
+> being unobtainable — this man volunteered to go back during the barrage fire of an evening counter
+> attack, and returned with rations and stretchers for the R.A.P's. There was very considerable
+> danger of being lost owing to the poor tracks and the darkness. The enterprise and resource of this
+> bearer, and his personal disregard of danger, undoubtedly very materially helped in the difficult
+> task of clearing the R.A.P's on this boggy and dangerous road.
+> **( Awarded Military Medal 1/3/17. )**
+>
+> Recommended by C.O., 3rd Aust. Field Ambce., for **Bar to M.M.**
+> Division: Recd. 14/10/17, Passed 15/10/17.
+> Signed **A. Graham Butler, Lt-Col., A.D.M.S., 1st Australian Division**.
+
+Westhoek on 4 October 1917 is the **Battle of Broodseinde**, Third Ypres. Butler is the same
+A. G. Butler who wrote the official history of the Australian Army Medical Services.
+
+**The first Military Medal was awarded 1 March 1917** and its citation has not been found — a
+separate AWM 28 file, action unidentified.
+
+## 67. His B2455 — NAA item 8087524, 21 pages, partly read
+
+**Army Form B.103, Service and Casualty Form, Part I** (image S=7):
+
+| Field | Value |
+|---|---|
+| Present unit | **3rd Fld. Ambulance** |
+| Regtl. No. | **1696** |
+| Present rank | L/Cpl. |
+| Date of enlistment | **16/7/15** |
+| Place of enlistment | Brisbane, Q'land |
+| Age on enlistment | **19 years 7 months** |
+| **Birthplace** | **Windsor, Brisbane, Q'land** |
+| Religion | Baptist · unmarried |
+| Trade or calling | **Salesman** |
+| Date of embarkation | **21/9/15** |
+
+Statement of Service (S=6): "**Entitled to 1914/15 Star**" — so he was in a theatre of war before
+31 December 1915. "**Discharged. 1 M.D. T.P.E. 30/7/1919**."
+
+**Corrections this forces:**
+- The tree gives his birthplace as **Rockhampton**; his own attestation says **Windsor, Brisbane**.
+  Age 19y7m at 16 July 1915 does support the tree's 18 December 1895.
+- The tree's "Salesman (listed as occupation on a death notice)" is not just what he ended as — it is
+  what he was at nineteen, before the war.
+- **The younger brother enlisted first.** Vivian 16 July 1915, aged 19; Arthur 16 September 1915,
+  aged 22. Two months apart.
+
+## 68. A third Sneyd soldier — and he is a cousin
+
+The same search returned **NAA B2455, item 8087517**: *"SNEYD Ernest Vivian William : Service Number
+3891 : Place of Birth — Rockhampton QLD : Place of Enlistment — Brisbane QLD : Next of Kin —
+(Sister) BALLARD Mrs V E"*, digitised, 1914–1920. Also **BP709/1, M16588**, same man.
+
+The tree carries the names in the other order: **Vivian Ernest William Sneyd, 1890–1919**, son of
+**Thomas George Sneyd** (1859–1927) and Annie Spaulding. Thomas George was William Hartley Sneyd's
+eldest son, so this man is **first cousin** to Arthur and Vivian Claude. Identification is
+`inferred` — matching name elements, birthplace and place of enlistment — and the dossier is
+**unopened**.
+
+He died in **1919**. Cause unrecorded. A returned man dying in 1919 is either wounds or the
+influenza that came home on the transports, and the dossier plus a Queensland death certificate
+would say which.
+
+## 69. Two more NAA items for Vivian Claude, both unread
+
+- **J26, M17540** — "SNEYD, Vivian Claude - Service Number 1696", **1915–1948**, Brisbane, open.
+  J26 sits beside J34 (the pension files); a case file running thirty-three years to the year before
+  he died is the record of what the war did to him afterwards.
+- **A8233, 11/MOUNT THOMPSON [QUEENSLAND]/SNEYD VIVIAN CLAUDE** — "1696 AIF; Year of Death - 1949;
+  Crematorium - Mount Thompson QLD", 1921–1985. Office of Australian War Graves commemoration.
+- Three **BP89/1** and **BP89/2** files of 1942, two of them "SNEYD, Vivian, Claud **and HERBERT,
+  Joyce, Mary**". Series unidentified; worth a look.
+
+## 70. The connection worth naming
+
+Arthur Sneyd was last seen alive walking into No Man's Land behind stretcher bearers, with a bandage
+round his head, carrying a white flag. **Fourteen months later his younger brother won a Bar to the
+Military Medal for going forward under a barrage with stretchers.** The two facts sat in two
+different archives and nobody had put them side by side.
+
+## 71. Site changes
+
+- `/great-war` is now **four men**: new full section for Vivian Claude with the citation, and a
+  section for the cousin. Header and intro rewritten.
+- `/finding-arthur` — the closing section now carries the citation and makes the connection explicit.
+- `/sources` — AWM 28 added; the B2455 entry now covers all three dossiers and their read status.
+- `/open-questions` — Vivian's item closed same-day; a new item opened for the cousin.
+
+## 72. Queue
+
+1. **The first Military Medal citation** (1 March 1917) — separate AWM 28 file, not yet found.
+2. **NAA B2455 item 8087517** — the cousin's dossier, digitised and unopened.
+3. **NAA J26, M17540** — Vivian's repatriation medical file, 1915–1948.
+4. The other seventeen pages of Vivian's B2455.
+5. Still outstanding from before: 9th Bn war diary 20–22 Aug 1916; CWGC (blocked); AWM (migrating);
+   NAA J34 C34558; QSA ITM1412361 and ITM2824953.
