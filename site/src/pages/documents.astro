@@ -35,8 +35,10 @@ const words = eulogy.parts.reduce((a, p) => a + p.paras.join(" ").split(/\s+/).l
 
   {eulogy.parts.map((part) => (
     <section class="blk">
-      <div class="lab">{part.heading.split("—")[1]?.trim()}</div>
-      <h2 style="margin-top:.3rem">{part.heading.split("—")[0].trim()}</h2>
+      <div class="lab">{part.heading.split("—")[0].trim()}</div>
+      <h2 style="margin-top:.3rem">{
+        (part.heading.split("—")[1] || "").trim().replace(/^d/, "D")
+      }</h2>
       <div class="prose" style="margin-top:1.2rem">
         {part.paras.map((p) => (
           p.startsWith(">")

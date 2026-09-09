@@ -3,15 +3,16 @@ import { u } from "../lib/url.js";
 const { title, description = "", dek, eyebrow, bare } = Astro.props;
 const SITE = "The D'Arcy Archive";
 const nav = [
-  ["Start", [["/", "Home"], ["/method", "Method"], ["/places", "Places"]]],
+  ["Start", [["/", "Home"], ["/places", "Places"]]],
   ["Our line", [["/direct-line", "The Spine"], ["/hornby", "The Hornby Claim"],
                 ["/australia", "Australia"], ["/brisbane", "Brisbane"],
                 ["/great-war", "The Great War"]]],
   ["Families", [["/families", "The Families"], ["/people", "The People"],
                 ["/sneyd", "Sneyd"], ["/murdoch", "Murdoch"], ["/atkinson", "Atkinson"]]],
   ["Names", [["/name", "The Name"]]],
-  ["Sources", [["/sources", "Sources"], ["/documents", "Documents"],
-               ["/papers", "The Papers"], ["/open-questions", "Open Questions"]]],
+  ["Evidence", [["/documents", "Documents"], ["/papers", "The Papers"],
+                ["/sources", "Sources"], ["/method", "Method"],
+                ["/open-questions", "Open Questions"]]],
 ];
 const here = Astro.url.pathname.replace(/\/$/, "");
 const on = (h) => here === u(h).replace(/\/$/, "");

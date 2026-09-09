@@ -25,10 +25,20 @@ for (const p of places) (groups[country(p)] ||= []).push(p);
   dek="Where this family was born and where it died — counted, not asserted. The shape of the list is the shape of the migration.">
 
   <section class="blk">
-    <p class="lede">Every place named in a birth or death record among the {places.length ? "" : ""}
-    ancestors, with the number of times it appears. Read down the Australian column and you can watch
-    a family arrive: Parramatta, then Kempsey, then Brisbane, then out along the Queensland railway
-    lines to Boulia, Gympie, Rockhampton and Toowoomba, then back to Brisbane again.</p>
+    <p class="lede">Every place named in a birth or death record among the ancestors, with the number
+    of times it appears and <strong>the earliest year it appears</strong>. Each group is ordered by
+    that year rather than by frequency — so the Australian list, read from the top, is the migration
+    itself: Parramatta in 1829, Kempsey in 1838, Brisbane from 1856, and then out along the Queensland
+    railway to Rockhampton, Boulia, Gympie and Toowoomba.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>The counts are of places, not of spellings.</strong> The exported tree writes the same
+      city four ways — <em>Brisbane, Brisbane, Queensland, Australia</em>; <em>Brisbane, QLD,
+      Australia</em>; and so on — which would split one place into four and make every figure here
+      meaningless. Repeated parts are collapsed and state abbreviations expanded before counting.
+      Nothing is merged that is not literally the same place, and where a spelling was folded in it is
+      shown beneath the entry. <a href={u("/method")}>Method →</a>
+    </div>
   </section>
 
   {order.filter((k) => groups[k]).map((k) => (
@@ -37,10 +47,19 @@ for (const p of places) (groups[country(p)] ||= []).push(p);
       <p class="small">{groups[k].length} places · {groups[k].reduce((a, p) => a + p.n, 0)} recorded events</p>
       <div class="scroll" style="margin-top:.8rem">
         <table>
-          <thead><tr><th>Place</th><th class="m">Events</th></tr></thead>
+          <thead><tr><th class="m">From</th><th>Place</th><th class="m">Events</th></tr></thead>
           <tbody>
-            {groups[k].map((p) => (
-              <tr><td>{p.place}</td><td class="m">{p.n}</td></tr>
+            {groups[k].sort((a, b) => (a.first || 9999) - (b.first || 9999)).map((p) => (
+              <tr>
+                <td class="m">{p.first || "—"}</td>
+                <td>
+                  {p.place}
+                  {p.variants && p.variants.length > 0 && (
+                    <div class="small">also written: {p.variants.join(" · ")}</div>
+                  )}
+                </td>
+                <td class="m">{p.n}</td>
+              </tr>
             ))}
           </tbody>
         </table>

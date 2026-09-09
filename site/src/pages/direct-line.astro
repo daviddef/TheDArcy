@@ -2,7 +2,6 @@
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import line from "../data/line.json";
-import { byId } from "../lib/people.js";
 
 // The spine runs oldest-first on the page; the data is youngest-first.
 const spine = [...line].reverse();
@@ -12,22 +11,69 @@ const hidden = spine.length - shown.length;
 // Where each generation stands. This is the archive's judgement, not the tree's.
 const CONFIDENCE = {
   "@I20@": ["documented", "Birth, marriage, death and burial all recorded, and a three-part eulogy delivered by his own children survives in the family's hands."],
-  "@I76@": ["documented", "Brisbane birth 1892 and death 1936, the latter reported in the Queensland press. His death at 43 is the hinge of the next generation's childhood."],
+  "@I76@": ["documented", "Born Brisbane 1892, died there suddenly on 10 November 1936 aged 44; the Courier-Mail carried both an obituary and a funeral notice. Sergeant 11335, 12th Australian Depot Unit of Supply — enlisted 13 December 1915, married nine weeks before he sailed, home in July 1919. A grocer who failed in 1926. His death at 44 is the hinge of the next generation's childhood."],
   "@I208@": ["documented", "Born Brisbane 5 May 1864, the first generation born in the colony of Queensland; Chief Clerk of the Railway Department. Found dead in the kitchen of his house at Banyo on 21 March 1931 and buried at South Brisbane Cemetery, Dutton Park — the cemetery record confirms 1864, so the newspaper's 'aged 76' at the inquest is an error for 66."],
-  "@I381@": ["documented", "Born Parramatta 1829, christened at St James's Sydney that November; schooled at The King's School, Parramatta. Pastoral work and the California goldfields, then Queensland in 1863 and the Colonial Secretary's Office until his death. His 1901 obituary names his father and the 39th Regiment."],
-  "@I647@": ["documented", "Major, 39th Regiment of Foot, thirty-four years in it. Commanded the regiment at Orthes, 27 February 1814, and was given a gold medal for it that took four years to reach him. Brought a detachment of thirty men out as the guard on the convict ship England, with his wife and baby daughter in the cabin, reaching Port Jackson 18 September 1826. Died at Parramatta 22 July 1849; six newspapers carried the notice. His birth year is the one soft spot: the notices say 69, which gives 1780, and the tree says 1783."],
-  "@I1059@": ["documented", "Documented from commission to grave. Connolly's Roll of Officers of the Corps of Royal Engineers, entry 203: second lieutenant 17 January 1776, lieutenant-colonel 29 April 1802, colonel 1813, major-general 12 August 1819, C.B.; Minorca, Portugal, Copenhagen, Walcheren; 'Died at Chatham, 13 5 1827'. Married Jean Ward at Portsea 21 June 1779; buried St Mary, Chatham, 19 May 1827, aged 76. Everything ABOVE him remains disputed: the Roll records no parentage, and no baptism has been found."],
+  "@I381@": ["documented", "Born Parramatta 1829, christened at St James's Sydney that November — the register entry names his father George Pitt Darcy and his mother Maria. Schooled at The King's School, Parramatta; pastoral work and the California goldfields; then Queensland in 1863 and the Colonial Secretary's Office until his death."],
+  "@I647@": ["documented", "Major, 39th Regiment of Foot, thirty-four years in it. Commanded the regiment at Orthes, 27 February 1814, and was given a gold medal for it that took four years to reach him. Brought a detachment of thirty men out as the guard on the convict ship England, with his wife and baby daughter in the cabin, reaching Port Jackson 18 September 1826. Died at Parramatta 22 July 1849; six newspapers carried the notice. His birth year is the one soft spot: they say he was 69, which gives 1780, and the tree says 1783."],
+  "@I1059@": ["documented", "Documented from commission to grave. Connolly's Roll of Officers of the Corps of Royal Engineers, entry 203: second lieutenant 17 January 1776, lieutenant-colonel 29 April 1802, colonel 1813, major-general 12 August 1819, C.B.; Minorca, Portugal, Copenhagen, Walcheren; 'Died at Chatham, 13 5 1827'. Married Jean Ward at Portsea 21 June 1779; a son christened at Bridgetown, Barbados, in 1786; buried at St Mary, Chatham, 19 May 1827. Everything ABOVE him is a different matter entirely."],
   "@I1872@": ["disputed", "The inserted generation, and the weakest link in the chain. Said to have been born at St James's Palace, with two birth years sixty-nine years apart. The Earls of Holderness are a documented family; a son of theirs who founds a Portsmouth line is not, on present evidence, one of them. Nothing below this man depends on him — the line stands perfectly well without him."],
+};
+
+/* Where the exported tree is demonstrably wrong, the archive shows its own
+   finding and prints the tree's version underneath. Correcting it quietly would
+   conceal the very thing this site exists to show. */
+const CORRECTIONS = {
+  "@I647@": {
+    spouses: ["Miss Ludlam — m. September 1805", "Maria White — m. c. 1819, County Wicklow"],
+    was: "two marriages, both at Chatham in 1810 — to “Maria (Catherine) Whiite” and to “Maria or Mary Le Meassier”",
+    why: "the Salisbury and Winchester Journal of 23 September 1805 announces the marriage of “Captain George d'Arcy”, son of “Lieut Colonel d'Arcy”, to “Miss Ludlam”. Le Mesurier was that bride's mother's maiden name, which is how it entered the tree as her own. The second marriage was in Ireland, about 1819",
+    link: "/australia",
+  },
+  "@I1059@": {
+    born: "by 1758, and probably earlier",
+    bornPlace: "unknown",
+    was: "born in 1751, in North Yorkshire",
+    why: "the 1751 is arithmetic from an age of 76 stated on a burial register, not a birth record, and nothing at all places him in North Yorkshire. His commission as second lieutenant on 17 January 1776 pulls the other way, since Academy cadets were commissioned at sixteen to twenty",
+    link: "/hornby",
+  },
+};
+
+// One obvious geocoding failure in the source tree, shown rather than hidden.
+const PLACE_FIX = {
+  "Darcy Meynill, Yorkshire, Cattaraugus County, New York, United States":
+    "Darcy Meynill, Yorkshire — the tree's geocoder has appended a county in New York State",
 };
 
 const chip = (id) => CONFIDENCE[id]?.[0] || "unproven";
 const why = (id) => CONFIDENCE[id]?.[1] || "";
 const chipClass = { documented: "doc", inferred: "inf", disputed: "dis", unproven: "lore" };
+
+const MON = { JAN: "Jan", FEB: "Feb", MAR: "Mar", APR: "Apr", MAY: "May", JUN: "Jun",
+  JUL: "Jul", AUG: "Aug", SEP: "Sep", OCT: "Oct", NOV: "Nov", DEC: "Dec" };
+const LONG = { January: "Jan", February: "Feb", March: "Mar", April: "Apr", May: "May",
+  June: "Jun", July: "Jul", August: "Aug", September: "Sep", October: "Oct",
+  November: "Nov", December: "Dec" };
+
+/* GEDCOM dates arrive as "5 JUL 1565", "June 7 1863", "BET x AND y", "ABT 1659".
+   Normalise them, so that one column does not carry four house styles. */
+function fmtDate(d) {
+  if (!d) return "—";
+  let s = String(d).trim();
+  const between = s.match(/^BET\s+(.+?)\s+AND\s+(.+)$/i);
+  if (between) return `between ${fmtDate(between[1])} and ${fmtDate(between[2])}`;
+  s = s.replace(/^ABT\s+/i, "c. ").replace(/^BEF\s+/i, "before ").replace(/^AFT\s+/i, "after ");
+  s = s.replace(/^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s+(\d{4})$/,
+    (_, mo, dd, yy) => `${dd} ${LONG[mo]} ${yy}`);
+  s = s.replace(/\b([A-Z]{3})\b/g, (m) => MON[m] || m);
+  return s;
+}
+const place = (p) => PLACE_FIX[p] || p || "—";
+const corr = (id) => CORRECTIONS[id];
 ---
 <Base
   title="The Spine"
   eyebrow="Generation by generation"
-  dek="Fifteen generations are asserted, from a Brisbane insurance manager to a Yorkshire castle. Six of them are solid. The join between them is the whole problem, and it is marked here rather than smoothed over.">
+  dek="Fifteen generations are asserted, from a Brisbane insurance manager to a Yorkshire castle. Eight of them are documented. The break is at one man, and it is marked here rather than smoothed over.">
 
   <section class="blk">
     <p class="lede">This is the male D'Arcy line exactly as the family tree carries it — and then,
@@ -35,14 +81,20 @@ const chipClass = { documented: "doc", inferred: "inf", disputed: "dis", unprove
     is the claim; the sentence beneath it is the reason.</p>
 
     <div class="note" style="margin-top:1.2rem">
-      <strong>Read the page from the bottom up if you want the truth of it.</strong> The
-      recent generations are documented to the day. Somewhere around 1783 the evidence thins to a
-      single asserted link, and above that the archive is repeating a pedigree rather than
-      demonstrating one. <a href={u("/hornby")}>Why the Hornby descent is doubted →</a>
+      <strong>Read the page from the bottom up if you want the truth of it.</strong> Eight
+      generations, from Kenneth D'Arcy back to <strong>Major-General Robert D'Arcy</strong>, are
+      documented — several of them to the day, and Robert from his commission in 1776 to his burial
+      in 1827. Then the line stops dead. Nothing connects Robert to the man printed above him, and
+      the tree contradicts itself about what that connection was supposed to be.
+      <a href={u("/hornby")}>Why the Hornby descent is doubted →</a>
     </div>
 
+    <p class="small" style="margin-top:1rem">Where the exported tree is demonstrably wrong, the
+    corrected value is shown here and <strong>the tree's own version is printed underneath it</strong>.
+    Correcting quietly would conceal the one thing this archive is for.</p>
+
     {hidden > 0 && (
-      <p class="small" style="margin-top:1rem">{hidden} living {hidden === 1 ? "generation is" : "generations are"} omitted
+      <p class="small" style="margin-top:.7rem">{hidden} living {hidden === 1 ? "generation is" : "generations are"} omitted
       from this build. The line continues past the last person shown here.</p>
     )}
   </section>
@@ -57,60 +109,84 @@ const chipClass = { documented: "doc", inferred: "inf", disputed: "dis", unprove
           </tr>
         </thead>
         <tbody>
-          {shown.map((g) => (
-            <tr>
-              <td class="m">{g.gen}</td>
-              <td>
-                <strong>{g.name}</strong>
-                {g.spouses?.filter((s) => s.name && !s.living).map((s) => (
-                  <div class="small">m. {s.name}{s.married ? ` · ${s.married}` : ""}</div>
-                ))}
-              </td>
-              <td class="m">{g.born || "—"}</td>
-              <td>{g.bornPlace || "—"}</td>
-              <td class="m">{g.died || "—"}</td>
-              <td>{g.occupation || "—"}</td>
-              <td><span class={`chip ${chipClass[chip(g.id)]}`}>{chip(g.id)}</span></td>
-            </tr>
-          ))}
+          {shown.map((g) => {
+            const c = corr(g.id) || {};
+            const spouses = c.spouses
+              ? c.spouses
+              : (g.spouses || []).filter((s) => s.name && !s.living)
+                  .map((s) => s.name + (s.married ? ` — m. ${fmtDate(s.married)}` : ""));
+            return (
+              <tr>
+                <td class="m">{g.gen}</td>
+                <td>
+                  <strong>{g.name}</strong>
+                  {spouses.map((t) => <div class="small">{t}</div>)}
+                </td>
+                <td class="m">{c.born || fmtDate(g.born)}</td>
+                <td>{c.bornPlace || place(g.bornPlace)}</td>
+                <td class="m">{fmtDate(g.died)}</td>
+                <td>{g.occupation || "—"}</td>
+                <td><span class={`chip ${chipClass[chip(g.id)]}`}>{chip(g.id)}</span></td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
+    <p class="small" style="margin-top:.9rem">The upper rows reproduce the exported tree's own fields
+    <em>verbatim</em>, including its truncations — "Earl of Holdernesse ( 3rd" and "St. James Palace,
+    London, Middlesex, Englan" are what the file actually contains. They are left as they are rather
+    than tidied, because tidying data the archive does not defend would suggest a confidence in it
+    that does not exist.</p>
   </section>
 
   <section class="blk">
     <h2>Generation by generation</h2>
     <div class="spine" style="margin-top:1.4rem">
-      {shown.map((g) => (
-        <div class={`gen ${chip(g.id) === "documented" ? "" : "undoc"}`}>
-          <div>
-            <span class="yr">{(g.born || "").match(/\d{4}/)?.[0] || "?"}</span>
-            <span class="who">{g.name}</span>
-            {g.life && <span class="whr"> · {g.life}</span>}
+      {shown.map((g) => {
+        const c = corr(g.id) || {};
+        const yr = (c.born || g.born || "").match(/\d{4}/)?.[0] || "?";
+        return (
+          <div class={`gen ${chip(g.id) === "documented" ? "" : "undoc"}`}>
+            <div>
+              <span class="yr">{yr}</span>
+              <span class="who">{g.name}</span>
+              {g.life && <span class="whr"> · {g.life}</span>}
+            </div>
+            {(c.bornPlace || g.bornPlace) && (
+              <div class="whr">{c.bornPlace || place(g.bornPlace)}</div>
+            )}
+            {why(g.id) && <p class="small" style="margin-top:.35rem;max-width:70ch">{why(g.id)}</p>}
+            {c.was && (
+              <p class="small" style="margin-top:.45rem;max-width:70ch">
+                <span class="chip dis">superseded</span>{" "}
+                <strong>The tree says</strong> {c.was}. <strong>It is wrong because</strong> {c.why}.{" "}
+                {c.link && <a href={u(c.link)}>Set out in full →</a>}
+              </p>
+            )}
           </div>
-          {g.bornPlace && <div class="whr">{g.bornPlace}</div>}
-          {why(g.id) && <p class="small" style="margin-top:.35rem;max-width:70ch">{why(g.id)}</p>}
-        </div>
-      ))}
+        );
+      })}
     </div>
     <p class="spine-key">A solid node is a generation this archive will defend. A dashed node is one
-    it is repeating from the family tree and has not yet proved.</p>
+    it is repeating from the family tree and has not proved.</p>
   </section>
 
   <section class="blk" style="border-bottom:0">
-    <h2>What would settle it</h2>
+    <h2>What would settle the break</h2>
     <div class="grid two" style="margin-top:1rem">
       <div class="card">
-        <h3>George Lindsay D'Arcy's birth, Parramatta 1829</h3>
-        <p>A New South Wales baptism or birth registration naming his father would either confirm
-        George Pitt D'Arcy or replace him. This is the single highest-value record in the archive.
-        <a href={u("/open-questions")}>The queue →</a></p>
+        <h3>Robert D'Arcy's parentage</h3>
+        <p>The one question the archive cannot answer. His whole adult life is on paper and not a
+        single record of it names a father. What is left needs an archive rather than a search: the
+        <strong>Board of Ordnance</strong> minutes and registers, and the will of the
+        <strong>4th Earl of Holderness</strong>. <a href={u("/hornby")}>The case, in full →</a></p>
       </div>
       <div class="card">
-        <h3>How the family reached New South Wales</h3>
-        <p>A ship. Convict indent, military posting, assisted passage or cabin passenger — each leaves
-        a different record and each implies a different family. Until one is found, 1829 at Parramatta
-        is simply where the line appears. <a href={u("/australia")}>Arrival →</a></p>
+        <h3>And what does not need settling</h3>
+        <p>Everything below him. The Australian line is proved from a surgeon's journal, a christening
+        register, six newspapers and a corps roll. <strong>It does not depend on the Yorkshire descent
+        and never did.</strong> <a href={u("/australia")}>Arrival, 1826 →</a></p>
       </div>
     </div>
   </section>

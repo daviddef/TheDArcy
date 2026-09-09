@@ -38,6 +38,40 @@ FAMILIES = [
 ]
 
 
+
+# Spellings of the same Australian place that the tree treats as different.
+_STATE = {
+    "qld": "Queensland", "q'ld": "Queensland", "queensland": "Queensland",
+    "nsw": "New South Wales", "new south wales": "New South Wales",
+    "vic": "Victoria", "wa": "Western Australia", "sa": "South Australia",
+    "tas": "Tasmania", "nt": "Northern Territory", "act": "Australian Capital Territory",
+}
+
+
+def canonical_place(p):
+    """Collapse the tree's spelling variants so a count counts places.
+
+    Only three things are done, all of them safe: repeated adjacent parts are
+    dropped ("Brisbane, Brisbane, Queensland"), state abbreviations are expanded,
+    and casing is tidied. Nothing is merged that is not literally the same place.
+    """
+    parts = [x.strip() for x in re.split(r"\s*,\s*", p) if x.strip()]
+    out = []
+    for x in parts:
+        low = x.lower()
+        x = _STATE.get(low, x)
+        if low in ("australia", "england", "scotland", "ireland", "wales"):
+            x = x.capitalize()
+        if out and out[-1].lower() == x.lower():
+            continue                      # "Brisbane, Brisbane, ..."
+        out.append(x)
+    # drop a trailing country that duplicates the one before it
+    if len(out) > 1 and out[-1] == "United Kingdom" and out[-2] in (
+            "England", "Scotland", "Wales"):
+        out = out[:-1]
+    return ", ".join(out)
+
+
 def gen_of(ahn):
     g = 0
     while ahn >= 2 ** (g + 1):
@@ -178,15 +212,34 @@ def main():
               ensure_ascii=False, indent=1)
 
     # ---- places, counted off the ancestor set ---------------------------
-    places = collections.Counter()
+    # The tree spells the same place four ways — "Brisbane, Brisbane,
+    # Queensland, Australia", "Brisbane, QLD, Australia", and so on — so a raw
+    # count of the strings counts spellings rather than places. Canonicalise
+    # first, keep the variants, and record the earliest year each place appears,
+    # so the list can be read in the order the family actually moved.
+    agg = {}
     for rec in anc:
-        for key in ("bornPlace", "diedPlace"):
-            v = rec.get(key) or ""
-            if v:
-                places[v] += 1
-    json.dump([{"place": k, "n": v} for k, v in places.most_common()],
-              open(os.path.join(OUT, "places.json"), "w"),
+        for pkey, dkey in (("bornPlace", "born"), ("diedPlace", "died")):
+            v = (rec.get(pkey) or "").strip()
+            if not v:
+                continue
+            canon = canonical_place(v)
+            e = agg.setdefault(canon, {"place": canon, "n": 0, "variants": set(),
+                                       "first": None})
+            e["n"] += 1
+            if v != canon:
+                e["variants"].add(v)
+            y = year(rec.get(dkey, "") or "")
+            if y and (e["first"] is None or y < e["first"]):
+                e["first"] = y
+    out = []
+    for e in agg.values():
+        out.append({"place": e["place"], "n": e["n"], "first": e["first"],
+                    "variants": sorted(e["variants"])})
+    out.sort(key=lambda x: (-x["n"], x["place"]))
+    json.dump(out, open(os.path.join(OUT, "places.json"), "w"),
               ensure_ascii=False, indent=1)
+    places = agg
 
     living = sum(1 for r in anc if r["living"])
     print(f"ancestors.json  {len(anc)} ({living} living, redacted)")

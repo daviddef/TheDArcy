@@ -13,8 +13,10 @@ const surnames = families.filter((f) => f.published > 0).length;
 const more = [
   ["/hornby", "The Hornby claim", "The tree runs this line to a Yorkshire earldom. The tree also admits, in its own note, that the join is only 'thought to be' — and then contradicts itself about which earl. Set out in full."],
   ["/australia", "Arrival, 1826", "A major of the 39th Foot, his children born at Chatham in 1825 and Parramatta in 1827, and a regimental history that confirms both without ever having heard of him."],
-  ["/brisbane", "Brisbane", "Four generations in one city: a Parramatta boy who died at Dutton Park, a father dead at forty-three, a widow who took in boarders, and a son who told the whole story into a tape recorder."],
+  ["/brisbane", "Brisbane", "Four generations in one city: a boy born at Parramatta who went to the California diggings, a railway clerk found dead in his kitchen, a father dead at forty-three, and the widow who took in boarders."],
   ["/papers", "What the papers said", "An obituary from 1936 confirms five details of a eulogy delivered in 2010. Two other headlines look damning and say the opposite — the man in them is the witness, not the accused."],
+  ["/great-war", "The Great War", "A sergeant of the Army Service Corps who married nine weeks before he sailed and came home after three and a half years \u2014 and his wife's younger brother, killed at Pozi\u00e8res at twenty-two, with no grave."],
+  ["/atkinson", "The Atkinsons", "An organist christened in Limerick Cathedral who emigrated in 1862 and, two years later, installed the first organ in All Saints' Wickham Terrace \u2014 and then played it."],
   ["/families", "The families they married", "Sneyd, Atkinson, Murdoch, Atwell, Blum, Keeling, Creech, Matson, Wakefield, Wright — out of Limerick, Monaghan, Cork, Ayrshire, Somerset, Bristol and Germany."],
   ["/name", "The name", "D'Arcy was coined twice: once in Normandy as a place, once in Ireland as a colour. The apostrophe is a hint and not a proof."],
   ["/people", "The people", `Every person the archive can name and publish — ${published} of them, most of whom never continued the line.`],
@@ -79,9 +81,11 @@ const more = [
     <div class="grid two" style="margin-top:1rem">
       <div class="card">
         <h3>A defensible head to the line</h3>
-        <p><strong>Major-General Robert D'Arcy C.B.</strong> (1751–1827), Commander of the Royal
-        Engineers at Chatham, known in the family as <em>The General</em>. The archive will defend him
-        and everyone below him. <a href={u("/direct-line")}>The spine →</a></p>
+        <p><strong>Major-General Robert D'Arcy, C.B.</strong> — second lieutenant of the Royal
+        Engineers on <strong>17 January 1776</strong>, major-general in 1819, dead at Chatham in 1827,
+        and documented at every step by the register of his own Corps. The archive will defend him and
+        everyone below him. <strong>Above him it will defend nothing.</strong>
+        <a href={u("/direct-line")}>The spine →</a></p>
       </div>
       <div class="card">
         <h3>A pedigree that contradicts itself</h3>
@@ -133,13 +137,18 @@ const more = [
 
   <section class="blk" style="border-bottom:0">
     <h2>What is still missing</h2>
-    <p class="dek">Robert D'Arcy's baptism, somewhere in the North Riding around 1751 — the record
-    that would either make the Yorkshire descent or break it. The ship that carried Major George Pitt
-    D'Arcy out in 1826. Which of his two wives, both called Maria, bore which child. And whether the
-    Atkinsons of Limerick and the Murdochs of St Quivox can be pushed back past the emigrant
-    generation at all. <a href={u("/open-questions")}>The queue, in priority order →</a></p>
-    <p class="small" style="margin-top:1.2rem"><strong>{redacted} living people</strong> are excluded
-    from this build entirely — not hidden, not gated, not present in the output.
-    <a href={u("/method")}>The rule →</a></p>
+    <p class="dek"><strong>Who Robert D'Arcy's parents were.</strong> Not disputed — unknown. His own
+    life is now on paper from his commission to his grave, and not one of those documents names a
+    father: officer rolls do not record parentage, no baptism is indexed anywhere in England, and the
+    <em>Gentleman's Magazine</em> did not notice his death. Every avenue reachable from a desk has been
+    tried, and the remaining ones need an archive: the Board of Ordnance records, and the will of the
+    4th Earl of Holderness.</p>
+    <p class="dek" style="margin-top:.9rem">Below that: whether the <strong>Atkinsons of Limerick</strong>
+    and the <strong>Murdochs of St Quivox</strong> can be pushed past the emigrant generation at all,
+    and what killed <strong>Lindesay Atkinson D'Arcy</strong> at forty-four.
+    <a href={u("/open-questions")}>The queue, in priority order, and the nine letters drafted →</a></p>
+    <p class="small" style="margin-top:1.2rem">Of the direct ancestors, <strong>{redacted}</strong> are
+    living and excluded from this build entirely — not hidden, not gated, not present in the output.
+    Across the whole tree the rule withholds 2,034 people. <a href={u("/method")}>The rule →</a></p>
   </section>
 </Base>

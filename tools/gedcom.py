@@ -339,7 +339,13 @@ def display(person):
     n = person["name"]
     if person["nick"]:
         n = f'{person["given"]} "{person["nick"]}" {person["surname"]}'.strip()
-    return re.sub(r"\s+", " ", n).strip()
+    n = re.sub(r"\s+", " ", n).strip()
+    # The tree repeats particles: "Conrad V Von von Degenfeld", "Meinhard von
+    # von Schonburg", "Adelmann Adelmann von Adelmannsfelden". Collapse an
+    # adjacent repeat of the same word, keeping the second form's casing.
+    n = re.sub(r"\b(\w+)\s+(\1)\b", lambda m: m.group(2),
+               n, flags=re.IGNORECASE)
+    return n.strip()
 
 
 if __name__ == "__main__":

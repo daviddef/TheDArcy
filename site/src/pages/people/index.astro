@@ -3,8 +3,13 @@ import Base from "../../layouts/Base.astro";
 import { u } from "../../lib/url.js";
 import { people } from "../../lib/people.js";
 import ancestors from "../../data/ancestors.json";
+import familyData from "../../data/families.json";
 
-const redacted = ancestors.filter((a) => a.living).length;
+// Everyone this page could have shown but does not, counted once each.
+const withheld = new Set([
+  ...ancestors.filter((a) => a.living).map((a) => a.id),
+  ...familyData.flatMap((f) => f.members.filter((m) => m.living).map((m) => m.id)),
+]).size;
 const inLine = people.filter((p) => p.ancestor).length;
 
 // group by century of birth, so the page has a shape
@@ -27,9 +32,10 @@ const order = Object.keys(groups).sort((a, b) =>
     <p class="lede">There are <strong>{people.length}</strong> people here.
     Of those, <strong>{inLine}</strong> are direct ancestors and the rest are their brothers,
     sisters, spouses and cousins — the people a pedigree throws away.</p>
-    <p class="dek" style="margin-top:.9rem">A further <strong>{redacted}</strong> people in the
-    research data are living and do not appear in this build at all: not hidden, not gated, not
-    present in the output. <a href={u("/method")}>The rule, and how to invoke it →</a></p>
+    <p class="dek" style="margin-top:.9rem">A further <strong>{withheld}</strong> people who would
+    otherwise be listed here are living, and do not appear in this build at all: not hidden, not
+    gated, not present in the output. Across the whole family tree the rule withholds
+    <strong>2,034</strong>. <a href={u("/method")}>The rule, and how to invoke it →</a></p>
   </section>
 
   {order.map((k) => (
