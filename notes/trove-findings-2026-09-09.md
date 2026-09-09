@@ -1668,3 +1668,93 @@ different archives and nobody had put them side by side.
 4. The other seventeen pages of Vivian's B2455.
 5. Still outstanding from before: 9th Bn war diary 20–22 Aug 1916; CWGC (blocked); AWM (migrating);
    NAA J34 C34558; QSA ITM1412361 and ITM2824953.
+
+---
+
+# Pass sixteen — the cousin's dossier (9 September 2026)
+
+## 73. Method: reading NAA scans at native resolution
+
+The screenshot of an NAA `ShowImage.aspx` page downsamples a ~1550px scan to the 800px pane and the
+handwriting is lost. NAA images can't be curl'd (they need the session cookie), so instead, in the
+page:
+
+```js
+const img = document.querySelector('img');
+document.body.style.cssText = 'margin:0;overflow:hidden;background:#fff';
+img.style.cssText = 'position:absolute;transform-origin:0 0;transform:scale(1.0)';
+// scale(2.6) translate(-90px,-230px) to magnify a specific region
+```
+
+The screenshot then captures the top-left 800×979 of the image **at 1:1**, which is legible. Add a
+`scale()` and `translate()` to magnify a region. This is the single most useful trick of the whole
+project for handwritten forms — better than the `sips` route, which only works for files that can be
+downloaded.
+
+## 74. Identification: settled, not inferred
+
+**NAA B2455, item 8087517 — SNEYD ERNEST VIVIAN WILLIAM, 3891.** Attestation paper, question 8:
+
+> Who is your next of kin? — **FATHER, THOMAS GEORGE SNEYD, LANDSBOROUGH, QUEENSLAND, AUSTRALIA**
+
+Thomas George Sneyd (1859–1927) is William Hartley Sneyd's eldest son. So 3891 is **first cousin** to
+Arthur (5050) and Vivian Claude (1696). The `inferred` chip published this morning is retired.
+
+A later red amendment adds his sister **Mrs V. E. Ballard** as next of kin, and a pencil note
+"*Parents stated to be deceased*" dated in the 1930s.
+
+## 75. His service
+
+| | |
+|---|---|
+| Attested | **4 December 1915**, Brisbane, before Capt. M. Davies |
+| Age | 25 years 2 months → born **c. October 1890** (tree says only "between 1890 and 1892") |
+| Trade | **Labourer**; Church of Christ; unmarried |
+| Birthplace | Rockhampton, Qld |
+| **Previously rejected as unfit** | **"YES. HEIGHT."** — he was turned away for being too short and went back |
+| Embarked | 19 September 1916, Brisbane, **A49 *Seang Choon*** |
+| Disembarked | **Plymouth, 9 December 1916** |
+| Training | Hurdcott; sick to Fovant Military Hospital 29 Dec 1916 – Jan 1917 |
+| To France | Folkestone **5 April 1917**; 1st A.D.B.D. Étaples 7 April; **taken on strength 31st Bn 14 April 1917** |
+| | sprained ankle 19 May; to hospital sick 15 June; through 8th A.F.Amb., 5th and 3rd D.R.S.; rejoined 26 September |
+| **Wounded in action** | **c. 26–27 September 1917** — "*Adm. Contusions, Thigh*", 5th A.F.Amb. → 5th A.D.R.S.; rejoined the battalion **5 October 1917** |
+| Invalided to England | **17 November 1917, bronchitis**; Epsom (bronchial catarrh), Southall, Hurdcott, Bulford through the winter |
+| **Albuminuria** | admitted **12 May 1918**, 1st Southern General Hospital, King's Heath, **Birmingham** |
+| | transferred **3rd Australian Auxiliary Hospital, Dartford**, 19 June 1918; marked for return to Australia **30 June 1918**; still at Dartford in October |
+| Home | **discharged to hospital ship 5 January 1919**. The B.103 unit box is overwritten in red: "***Kanowna***" and "**100%**" |
+| Died | **1919**, Queensland |
+
+The 31st Battalion was in the 8th Brigade, **5th Australian Division**, which attacked at **Polygon
+Wood on 26 September 1917**. The battle is `inferred` from the date on the site; the form records a
+date and "wounded in action", not a place.
+
+## 76. The convergence
+
+**In the last week of September and the first week of October 1917 two Sneyd cousins were within a
+few miles of each other in the Ypres salient.** 3891 was carried out of the Polygon Wood sector with
+contusions on 27 September. 1696 was recommended for a **Bar to the Military Medal** for carrying
+stretchers and rations forward through a barrage at **Westhoek on 4 October**. Eight days and a few
+miles apart. Nothing suggests either family knew.
+
+## 77. An editorial decision, recorded
+
+The 92-page file contains routine personal medical detail — the ordinary contents of any soldier's
+hospital record — of a kind that tells nothing about this family and would be gratuitous to publish
+about a man who cannot answer. **The site carries a summary of his medical record, not an inventory
+of it**, and says so in plain words, with the item number given so anyone can read the original.
+This is a deliberate choice, not an oversight, and it is not the same as concealing a finding: the
+substantive facts — wounds, bronchitis, albuminuria, invaliding, the 100% assessment — are all
+published.
+
+## 78. The one thing that would finish it
+
+**His Queensland death certificate.** The tree says "1919". The dossier shows eight months in
+hospital with kidney disease immediately before he sailed, and a 100% assessment. If the certificate
+names nephritis, he is a war death in everything but the official count — and the family sent three
+young men to that war and got one back whole. Added to the BDM request already drafted.
+
+## 79. Site changes
+
+- `/great-war` — the cousin's section rewritten in full from the dossier; the closing section now
+  carries the September–October 1917 convergence.
+- `/open-questions` — his item closed and replaced with the death-certificate question.
