@@ -1784,3 +1784,161 @@ Entries 36–50, which the first pass had not seen, close the gap between Januar
 So the second tour lasted eleven days and he never got back to the 31st Battalion. The file's dates
 across this evacuation disagree by a few days (Birmingham logs him admitted 12 May; the French
 entries run to 17 May) and are published as they stand rather than reconciled.
+
+---
+
+# Pass seventeen — the Queensland death index, and an error of my own (9 September 2026)
+
+## 81. I published a wrong correction this morning
+
+`/inquest-1902` said Miriam's sworn "*His age was 64 years*" put William Hartley Sneyd's birth in
+**1838** and ruled out Find a Grave's 30 September 1837. **That was wrong.**
+
+He died on **11 September**. His birthday was **30 September** — nineteen days later. A man born
+30 September 1837 is therefore **64** on 11 September 1902, with his 65th birthday still three weeks
+off. Miriam's answer was exactly right; my arithmetic on top of it was not.
+
+The Queensland death registration settles it outright:
+
+> **William Hartley Sneyd ~ died 11/09/1902 ~ date of birth 30/09/1837 ~ reg 1902/B/2776 ~
+> mother Catherine ~ father Samuel Sneyd**
+
+Find a Grave was right, the tree's 1838 was wrong, and so was the correction this archive published
+against it. Fixed on `/inquest-1902` (with a section explaining the failure rather than a silent
+edit), `/sneyd`, `/how-far-back`, `/sergeant-sneyd` and `/open-questions`.
+
+**The lesson, recorded because it will recur:** a stated age is a birth year *minus one* for
+everyone whose birthday has not yet come round — which is most of the year for most people. Never
+derive a birth year from an age without checking the death date against the birthday.
+
+## 82. The Queensland historical BDM index — free, and it gives parents
+
+`familyhistory.bdm.qld.gov.au`. Free to search; £/$ only to buy images. **Every death row carries the
+deceased's mother and father**, which makes it a relationship-proving source, not just a date source.
+
+Interface notes: the Search control is an `<a class="btn btn-primary">`, not a button; the form is
+React, so set inputs via the native value setter and dispatch `input`+`change`; results render into
+`<tr>` rows only after clicking that anchor, and "Show more results" pages through.
+
+**60 Sneyd death registrations recovered.** The ones that matter:
+
+| Person | Died | Reg | Mother | Father |
+|---|---|---|---|---|
+| **Vivian Ernest William Sneyd** | **16/02/1920** | 1920/B/31382 | Annie Spalding | **Thomas George Sneyd** |
+| William Hartley Sneyd | 11/09/1902 (b. 30/09/1837) | 1902/B/2776 | Catherine | Samuel Sneyd |
+| Samuel Sneyd [Charles] | 04/07/1885 | 1885/C/4045 | — | Samuel Sneyd |
+| Miriam Sneyd [Wakefield] | 12/08/1909 | 1909/C/1054 | **Hannah Saniger** | **James Wakefield** |
+| Thomas George Sneyd | 18/10/1927 | 1927/B/2729 | Miriam Wakefield | William Hartley Sneyd |
+| Arthur William Hartley Sneyd | 27/05/1922 | 1922/B/37152 | Miriam Wakefield | William Hartley Sneyd |
+| Vivian Claude Sneyd | 10/02/1949 | 1949/B/20695 | Martha Blum | Arthur |
+| Kenneth Seigfred Sneyd | 04/02/1935 | 1935/B/26753 | Martha Blum | Arthur William Hartley |
+| Martha Sneyd [Blum] | 19/12/1904 | 1904/C/1454 | **Mary Ann O'Brien** | **John Blum** |
+| Joseph Samuel Sneyd | 18/07/1905 | 1905/B/5838 | Catherine Mulcahy | Samuel Sneyd |
+| Ernest Ephraim Sneyd | 20/10/1946 | 1946/B/8931 | Miriam Wakefield | William Hartley |
+| Gladys Beryl Sneyd | 13/12/1897 | 1897/C/1623 | Annie Spalding | Thomas George Sneyd |
+| Florence Elsie Sneyd [Knight] | 29/09/1996 (b. 01/07/1899) | 1996/9852 | Henrietta Hickman | Alger Lambert Knight |
+
+Three of these are new facts, not just confirmations:
+
+1. **The cousin died 16 February 1920**, not "between 1919 and 1921" — thirteen months after he
+   landed off the hospital ship, and his parents on the register are Thomas George Sneyd and Annie
+   Spalding, confirming the cousinhood from the civil record independently of his attestation paper.
+2. **John Blum's wife was Mary Ann O'Brien.** The tree had John Blum as "born Germany 1842" and
+   nothing else. His wife now has a name.
+3. **Miriam Wakefield's parents were James Wakefield and Hannah Saniger** — which puts a civil
+   registration under the keystone of the *deepest documented branch in the whole archive*. Every
+   generation below William Sanigar (b. 1654, Berkeley, Gloucestershire) now hangs on a death
+   certificate rather than an inference.
+
+**Every registration number above is exactly what the BDM order needs.** The request file has been
+updated.
+
+## 83. Trove: Vivian Claude Sneyd was at Gallipoli
+
+***The Brisbane Courier*, Saturday 18 January 1919, p. 5, "ON HONOUR'S ROLL"** —
+`nla.news-article20275988`, with photographs:
+
+> Lance-corporal **Vivian Sneyd**, 3rd Field Ambulance, A.I.F., **M.M. and Bar.**
+> Private **Vivian Maynard**, 3rd Field Ambulance, A.I.F., M.M.
+> Lance-corporal Sneyd and Private Maynard are **mates who enlisted together in 1915, saw service on
+> Gallipoli, went to France together, and are still together somewhere in France or on the Rhine.**
+> Lance-corporal Sneyd is a son of Mr A Sneyd, of James street, Wooloowin…
+
+This explains the **1914/15 Star** on his service record, which the dossier alone could not. It also
+gives him a named companion — **Vivian Maynard, M.M.**, of Bowen Bridge Road — who enlisted with him,
+landed with him, and was still with him on the Rhine in 1919. And the address is the same house the
+Kit Store was posting Arthur's scarf to.
+
+**There is a photograph of him in that issue.** Not yet retrieved.
+
+## 84. Trove: what the family called Arthur, and a woman called Ruby
+
+Both Brisbane papers, **20 August 1919** — the third anniversary:
+
+> SNEYD.—In loving remembrance of **Q.M.S. Arthur Sneyd**, killed in action at Pozières, August 20th,
+> 1916. Inserted by his loving father, sisters, and brother.
+> — *Brisbane Courier*, `nla.news-article20379031`; the *Telegraph* the same day,
+> `nla.news-article174297325`
+
+**Q.M.S.** — Quartermaster Sergeant. He reverted to the ranks on 29 July 1916 and died a private.
+Three years on his family were still using the rank he gave away. Whether Q.M.S. was his formal
+appointment or the family's version of "sergeant" is not settled; published as unconfirmed.
+
+And immediately below it, separate, signed with a first name and no relationship:
+
+> SNEYD.—In loving memory of Q.M.S. Arthur Sneyd, killed in action at Pozières, August 20, 1916.
+> **Death divides, but memory clings. Ruby.**
+
+There is no Ruby in this tree. A notice placed apart from the family's, three years on, signed with
+one name, is the form a sweetheart takes — but that is a guess and is labelled as one on the site.
+
+## 85. Ian's ancestry, counted (asked 9 September 2026)
+
+Walked from **@I6@ Ian Kenneth D'Arcy, b. 1955**, straight out of the GEDCOM (15,643 individuals,
+4,777 families):
+
+| | Ancestors | Deepest | Generations above Ian |
+|---|---|---|---|
+| Everything the tree asserts | **200** | Heinrich VI von Wildeshausen, 1202–1230 | **22** |
+| Hornby graft removed | 129 | Thomas Dabridgecourt of Longdon Hall, 1531 | 15 |
+| Sneyd/Keele graft removed | 173 | Heinrich VI von Wildeshausen | 22 |
+| **Both removed — what the archive defends** | **102** | **William Sanigar, b. 1654** | **10** |
+
+**71 of Ian's ancestors hang on the Hornby graft, 27 on the Keele graft, and 102 survive both.**
+So 98 of 200 — very nearly half — and 12 of the 22 generations rest on two joins, one unevidenced
+and one disproved.
+
+The male D'Arcy spine above Ian, and where it breaks:
+
+    0  Ian Kenneth D'Arcy            b. 1955
+    1  Kenneth Lindsay D'Arcy        1927–2010
+    2  Lindesay Atkinson D'Arcy      1892–1936
+    3  George Pitt D'Arcy            1864–1931
+    4  George Lindsay D'Arcy         1829–1901
+    5  George Pitt D'Arcy            1783–1849
+    6  Robert D'Arcy                 1751–1827   ← documented this far, and no further
+    ─────────────────────────────────────────── the graft
+    7  Thomas (Francis) D'Arcy       1681–1776
+    8  Robert Darcy                  1681–1721
+    9  John Darcy, Lord Conyers      1659–1688
+    10 Conyers, 2nd Earl of Holderness  1621–1692
+    11 Conyers, 1st Earl of Holderness  1598–1689
+    12 Conyers D'Arcy of Hornby Castle  1570–1653
+    13 Thomas Darcy                  1565–1605
+
+**Six generations of D'Arcy men above Ian are defensible. The tree offers thirteen.**
+
+Figures for Cristina are one generation deeper throughout (242 asserted / 144 defended, g24 / g12) and
+match `/how-far-back`, which counts the root person in.
+
+**Not published as a named page.** Ian is living, and this archive's own rule keeps living people out
+of the build entirely; publishing a named living person's pedigree would break it. The same
+arithmetic is already on `/how-far-back` counted from the archive's root.
+
+## 86. Site changes this pass
+
+- `/inquest-1902` — new section, "The archive got his birth year wrong from this very file".
+- `/sneyd`, `/how-far-back`, `/sergeant-sneyd`, `/open-questions` — 1838 → 30 September 1837.
+- `/great-war` — the cousin's death dated to 16 February 1920 with its registration number; Gallipoli
+  and the "On Honour's Roll" notice added to Vivian Claude's section.
+- `/finding-arthur` — new section on the 1919 memorial notices, Q.M.S., and Ruby.
