@@ -609,3 +609,94 @@ watching for him.
 15. **John Blum** — where in Germany, and on what ship.
 16. The **Sneyds above 1837**, treated with the same scepticism as the D'Arcys above 1751: *Sneyd* is
     a Staffordshire gentry name, which is exactly what a drifting pedigree reaches for.
+
+---
+
+# Fifth pass — Connolly's Roll, searched
+
+Source: **T. W. J. Connolly / R. F. Edwards, *Roll of Officers of the Corps of Royal Engineers from
+1660 to 1898*, Royal Engineers Institute, Chatham, 1898.** HathiTrust blocks automated access; a
+full-view scan with OCR text is at the Internet Archive
+(`roll-of-officers-of-the-corps-of-royal-engineers-r.-f.-edwards`), and its OCR was searched directly.
+
+**There are exactly two D'Arcys in the entire Roll — 238 years of the Corps.** Robert, and his son
+Constantine.
+
+## 20. Robert D'Arcy, C.B. — entry 203, page 10
+
+Column headings for the table: *No. · Name · Regimental Rank: Ensign · 2nd Lieut. · Lieut. ·
+Capt.-Lt. · Captain* — and on the facing page *Army Rank: Major · Lt.-Col. · Colonel · Maj.-Gen. ·
+Lt.-Gen. · General · War Services · Remarks.*
+
+| | |
+|---|---|
+| Name as printed | **D'Arcy, Robert, C.B.** |
+| Ensign | **—** (no ensigncy; he entered as a subaltern) |
+| **Second Lieutenant** | **17 January 1776** |
+| Lieutenant | 1 October 1784 |
+| Captain-Lieutenant | 15 August 1793 |
+| Captain | 3 March 1797 |
+| **Lieutenant-Colonel** | **29 April 1802** |
+| Colonel | 4 June 1813 |
+| **Major-General** | **12 August 1819** |
+| War services | **Minorca, 1781; Portugal, 1798; Minorca, 1798; Copenhagen, 1807; Walcheren, 1809** |
+| Remarks | **"Died at Chatham, 13 5 1827."** |
+
+### 20.1 A loop closed
+
+The *Salisbury and Winchester Journal* of **23 September 1805** announced the marriage of
+"**Captain George d'Arcy**", son of "**Lieut Colonel d'Arcy**". Connolly gives Robert D'Arcy's
+lieutenant-colonelcy as **29 April 1802**.
+
+**In September 1805 Robert D'Arcy was, precisely and verifiably, a Lieutenant-Colonel.** Two
+documents that know nothing of one another — a Wiltshire newspaper and the register of the Corps —
+agree on a man's rank at a moment in time. The George Pitt → Robert join is now about as well
+evidenced as an eighteenth-century father–son link can be without a baptism.
+
+### 20.2 What it does *not* give
+
+**No parentage.** Connolly's Roll does not record fathers — for anyone. So the source that answers
+every other question about this man is structurally incapable of answering the one the archive most
+wants answered. That is worth stating plainly: it is not a gap in the search, it is a property of the
+source.
+
+### 20.3 It also sharpens the age problem
+
+He was commissioned second lieutenant on **17 January 1776** with **no prior ensigncy** — the Royal
+Military Academy route. Academy cadets were commissioned at sixteen to twenty. A birth in 1750–51
+(from the burial age of 76) makes him **twenty-five** at first commission: possible, given the Corps'
+notoriously slow promotion queue, but late. A birth in the later 1750s fits the commission better and
+the burial age worse. **Both figures cannot be right, and neither comes from a register.**
+
+### 20.4 Barbados explained
+
+Three of his children — Constantine (1786), Jane (1787), Catherine (1789) — were born in Barbados,
+and the Roll's war-services column does not mention the West Indies. There is no conflict: that column
+lists *campaigns*, not peacetime garrison postings. A Royal Engineer sent to Barbados in the later
+1780s leaves no trace in it. It also accounts for the tree's uncertainty over George Pitt's
+birthplace — "Portsmouth, Hampshire, England **or West Indies**".
+
+## 21. Constantine D'Arcy — entry 335, page 15
+
+| | |
+|---|---|
+| Second Lieutenant | 1 February 1804 |
+| Lieutenant | 1 March 1805 |
+| Remarks | **"Died at Chatham, 6 5 1805."** |
+
+Aged about nineteen, five weeks after his lieutenancy. **The family tree says he was born in Barbados
+in 1786 and died there in 1805; the Roll says he died at Chatham.** For a serving officer's death the
+Corps register is much the better source. Confirm against the Chatham burial register, which has
+already produced his father's.
+
+So the household was military across three corps: **Robert** and **Constantine** in the Engineers,
+**Joseph** in the Artillery and afterwards in Persia, **George Pitt** in the 39th Foot and afterwards
+in New South Wales.
+
+## 22. The new best target
+
+Connolly shows Robert D'Arcy entering the Corps with no ensigncy, which means the **Royal Military
+Academy, Woolwich**. Academy **cadet registers and admission papers of c. 1770–76 routinely record a
+father or guardian, and an age** — which would settle the parentage and the birth year in one
+document. Held at the National Archives and at the Royal Engineers Museum, Chatham. *This displaces
+Connolly at the top of the queue.*
