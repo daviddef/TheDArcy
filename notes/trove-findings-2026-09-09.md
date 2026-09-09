@@ -700,3 +700,85 @@ Academy, Woolwich**. Academy **cadet registers and admission papers of c. 1770�
 father or guardian, and an age** — which would settle the parentage and the birth year in one
 document. Held at the National Archives and at the Royal Engineers Museum, Chatham. *This displaces
 Connolly at the top of the queue.*
+
+---
+
+# Sixth pass — Barbados found, Woolwich and the Gentleman's Magazine searched and empty
+
+## 23. Constantine D'Arcy's baptism — Barbados, and both parents named
+
+*Caribbean Birth & Baptism Index 1590–1928* (FindMyPast, film **1157925**, batch **C51395-3**):
+
+| | |
+|---|---|
+| Name | **Constantine Darcy** |
+| Christened | **18 February 1786** |
+| Parish | **St Michael, Barbados** — the parish of Bridgetown |
+| **Father** | **Robert Darcy** |
+| **Mother** | **Jane** |
+| Also on the source | **Jane D'Arcy** — his sister, born 1787 |
+
+**Why this matters more than a birthplace.** The archive had *inferred* a Royal Engineers posting to
+Barbados in the later 1780s, purely from the silence of Connolly's war-services column (which lists
+campaigns, not garrisons) set against three children born in the West Indies. This baptism confirms
+the inference from a register: **Robert D'Arcy and his wife were at Bridgetown, together, in February
+1786.** It is also the earliest surviving record of any child of that marriage, and it gives the wife
+as **Jane** — the anglicised form of the Scottish **Jean** Ward he married at Portsea in 1779.
+
+**Half a correction.** The tree says Constantine was born *and died* in Barbados. He was **born**
+there; Connolly says **"Died at Chatham, 6 5 1805"**. Born Bridgetown, died Chatham, aged nineteen.
+
+## 24. Royal Military Academy, Woolwich — the printed *Records* are the wrong book
+
+Both editions of *Records of the Royal Military Academy* — **1851** and **1892** — have been
+searched in full. **Neither contains Robert D'Arcy.** This is not a negative result about the man: the
+*Records* are a narrative institutional history (estimates, appointments, regulations, disputes), not
+a register of cadets. **The cadet registers themselves are the target**, and they are not digitised.
+
+The search did turn up one thing worth keeping — a documented episode involving his son:
+
+> Lieutenant-Colonel D'Arcy, Royal Artillery, who had some Persian Officers under his care, who were
+> brought to England under his charge, having applied to have them educated at the Royal Military
+> Academy, the Master-General referred to the Lieutenant-Governor to ascertain the practicability of
+> the measure, who replied that great inconvenience would result were they instructed with the
+> Cadets, but they might attend the Musters as private pupils; **they were ultimately placed with
+> Mr. Christie, 4th Mathematical Master.**
+
+That is the administrative afterlife of the five Persian students **Joseph D'Arcy** brought home from
+the mission of 1811–15 — and the reason his eldest son was named *George Abbas Kooli* at the Shah's
+request.
+
+## 25. The *Gentleman's Magazine*, 1827 — searched, and empty
+
+Full text of the issues for **May, June and July 1827** (vol. 97 pt 1 and vol. 98) searched:
+**no notice of Major-General Robert D'Arcy's death.** Vol. 97 pt 2 and the vol. 97 index likewise.
+A general officer's death would normally be reported there; it was not. **A null, recorded.**
+
+**A warning the same search produced.** The 1827 volumes *do* carry a death notice for
+**D'Arcy Wentworth** — the colonial surgeon of New South Wales, who died on 7 July 1827, two months
+after our Robert, in the colony George Pitt would reach the year before. Different man, different
+family, no connection. He will contaminate any search that is not watching for him.
+
+---
+
+## The state of the question
+
+**Robert D'Arcy is now one of the best-documented men in the archive** — commission to grave, with a
+career in the Corps register, a marriage at Portsea, a child baptised at Bridgetown naming him and
+his wife, a burial at St Mary Chatham, and a contemporary newspaper that independently confirms his
+rank in 1805. Every stage of his adult life is on paper.
+
+**And his parents remain completely unknown.** Not disputed — *unknown*. The sources that document
+him are structurally incapable of naming a father: officer rolls do not carry parentage, the
+*Records* are not a register, no baptism is indexed anywhere in England, and the *Gentleman's
+Magazine* did not notice him. The Hornby descent is neither supported nor refuted; it is simply
+unevidenced, and every avenue that could be tried from a desk has now been tried.
+
+**What is left needs an archive, not a search engine:**
+
+1. **Royal Military Academy cadet registers and admission papers, Woolwich, c. 1770–76** — record a
+   father or guardian and an age. TNA (WO 149) and the Royal Engineers Museum, Chatham.
+2. **Board of Ordnance commission books**, TNA WO 54.
+3. **The will of Robert Darcy, 4th Earl of Holderness** (d. 16 May 1778), TNA PROB 11 — for any
+   provision to a natural son.
+4. **Chatham St Mary burial register, May 1805** — Constantine's entry, to confirm the Roll.
