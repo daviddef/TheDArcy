@@ -1,0 +1,96 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const SIBS = [
+  ["The Defranceski Archive", "https://daviddef.github.io/TheDefranceski/",
+   "A family written down under eight sovereigns, in four languages, and spelled at least nine different ways.",
+   "The line this one married into. Istria, Carnia, Fiume and Dalmatia."],
+  ["The Falco Archive", "https://daviddef.github.io/TheFalco/",
+   "Campania to Australia.",
+   "Married into the Defranceski line a generation before this archive begins."],
+  ["The Lerena Archive", "https://daviddef.github.io/TheLerena/",
+   "A horse-dealer out of Argentina, a stable under Table Mountain, and four family traditions tested.",
+   "Argentina and the Cape."],
+  ["The Blažević Archive", "https://daviddef.github.io/TheBlazevic/",
+   "An evidence-first archive for the family of Hedviga Blažević of Senj.",
+   "Senj, on the Croatian littoral."],
+  ["The Booyzen Archive", "https://daviddef.github.io/TheBooyzen/",
+   "A Cape Dutch family that kept marrying British women, and changed one letter of its name in a war.",
+   "The Cape."],
+];
+---
+<Base
+  title="The Other Archives"
+  eyebrow="Where this one joins the others"
+  dek="This archive is one of six, kept to the same method and by the same hand. This page says how they connect — and why the join itself is not published.">
+
+  <section class="blk">
+    <p class="lede">A reader who arrives at <em>The D'Arcy Archive</em> could be forgiven for thinking
+    it stands alone. It does not, and it does not exist by accident: it was begun because the
+    Australian D'Arcys married into a family that already had an archive of its own.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>A correction to this page's own first draft.</strong> The brief that started this work
+      described "the Australian D'Arcy family that married Falco". That is not quite the shape of it,
+      and the tree says so plainly: the D'Arcy line married <strong>Defranceski</strong>, and it is the
+      <strong>Defranceski</strong> line that married <strong>Falco</strong>, a generation earlier.
+      The D'Arcys and the Falcos are connected — but through a third family, not to each other.
+      It is recorded here rather than quietly fixed, on the same principle as everything else on this
+      site.
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>How they join</h2>
+    <p class="dek">Three archives meet at one marriage and two children. All four of those people are
+    <strong>living</strong>, and none of these archives publishes living people — so the join is
+    described here and not drawn.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>
+          <tr><td><strong>This archive</strong></td>
+              <td>runs from Yorkshire and Portsmouth through Parramatta to Brisbane, and stops at a
+              living generation. <a href={u("/direct-line")}>The spine →</a></td></tr>
+          <tr><td><strong>The join</strong></td>
+              <td>a marriage in the present generation between the D'Arcy line and the
+              <strong>Defranceski</strong> line — <span class="chip lore">living, withheld</span></td></tr>
+          <tr><td><strong>The Defranceski line</strong></td>
+              <td>reaches back through Istria, Carnia and Fiume, and had itself married
+              <strong>Falco</strong> out of Campania a generation before</td></tr>
+          <tr><td><strong>What comes after</strong></td>
+              <td>two children in whom all three lines meet — <span class="chip lore">living, withheld</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>This is the rule doing its job, not a gap in the research.</strong> The archive knows
+      exactly who these people are — it walked their ancestry to build every page on this site. It
+      withholds them because they are alive, and it withholds them <em>consistently</em>: not just
+      their own entries but their names wherever they would appear as somebody's spouse, parent or
+      child. Across the whole tree the rule holds back <strong>2,034</strong> people.
+      <a href={u("/method")}>How the rule works, and how to invoke it →</a>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The six</h2>
+    <p class="dek">Each is built the same way and to the same standard: every claim carries its
+    confidence, null results are published as results, and living people are excluded from the build
+    entirely.</p>
+    <div class="grid two" style="margin-top:1.2rem">
+      {SIBS.map(([name, href, dek, rel]) => (
+        <a class="cardlink" href={href}>
+          <div class="nm">{name} ↗</div>
+          <p class="small" style="margin-top:.4rem">{dek}</p>
+          <p class="small" style="margin-top:.4rem;color:var(--ink-3)"><em>{rel}</em></p>
+        </a>
+      ))}
+    </div>
+    <p class="small" style="margin-top:1.3rem">They are separate sites rather than one because they
+    are separate bodies of evidence, and merging them would blur exactly the joins this method exists
+    to test. Where one of them contradicts this one, that is worth knowing, and worth telling me.</p>
+  </section>
+</Base>

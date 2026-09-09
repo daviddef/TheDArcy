@@ -78,7 +78,7 @@ const appears = APPEARS_IN[p.slug] || [];
 const CORRECTIONS = {
   "william-hartley-sneyd": {
     born: ["30 September 1837", "the tree says 1838. His Queensland death registration 1902/B/2776 records the date of birth outright, and this archive briefly published 1838 against it and was wrong", "/inquest-1902"],
-    occupation: ["Quoin-drawer Overseer, Government Printing Office — and latterly a contractor", "the tree records no trade at all. The Queensland Blue Book of 1884 has him in the Government Printing Office on £225, first appointed to the public service on 1 February 1862", "/sergeant-sneyd"],
+    occupation: ["Fount-room Overseer, Queensland Government Printing Office — a contractor later", "the tree records no trade at all. The Blue Books have him in the Government Printing Office on £225, in the public service from 1 February 1862 and last listed in 1890", "/sergeant-sneyd"],
   },
   "arthur-hartley-sneyd": {
     occupation: ["Typist", "the tree says Clerk. His own attestation paper of 16 September 1915 says typist", "/great-war"],
@@ -95,6 +95,38 @@ const CORRECTIONS = {
     born: ["by 1758, and probably earlier", "the tree says 1751 in North Yorkshire. The 1751 is arithmetic from an age on a burial register, not a birth record, and nothing places him in Yorkshire", "/hornby"],
   },
 };
+/* Dates this archive has since checked against the Queensland civil register.
+   A tree date that turns out to be right is a finding too, and saying which
+   dates are backed by a registration number is the difference between an
+   archive and a list. */
+const VERIFIED = {
+  "william-hartley-sneyd":      ["died", "1902/B/2776", "and it gives his date of birth as 30 September 1837"],
+  "samuel-charles-sneyd-1810":  ["died", "1885/C/4045", "the gaol governor, 4 July 1885"],
+  "miriam-wakefield":           ["died", "1909/C/1054", "naming her parents as James Wakefield and Hannah Saniger"],
+  "thomas-george-sneyd":        ["died", "1927/B/2729", "naming his parents as William Hartley Sneyd and Miriam Wakefield"],
+  "arthur-william-hartley-sneyd":["died", "1922/B/37152", "naming the same parents"],
+  "vivian-claude-sneyd":        ["died", "1949/B/20695", "naming his parents as Arthur and Martha Blum"],
+  "vivian-ernest-william-sneyd":["died", "1920/B/31382", "naming his parents as Thomas George Sneyd and Annie Spalding"],
+  "kenneth-seigfried-sneyd":    ["died", "1935/B/26753", "naming his parents as Arthur William Hartley and Martha Blum"],
+  "ernest-ephraim-sneyd":       ["died", "1946/B/8931", "naming his parents as William Hartley and Miriam Wakefield"],
+  "martha-blum":                ["died", "1904/C/1454", "naming her parents as John Blum and Mary Ann O'Brien"],
+  "joseph-samuel1-sneyd":       ["died", "1905/B/5838", "naming his parents as Samuel Sneyd and Catherine Mulcahy"],
+  "gladys-beryl-sneyd":         ["died", "1897/C/1623", "naming her parents as Thomas George Sneyd and Annie Spalding"],
+  "beryl-marie-sneyd":          ["died", "1905/C/3798", "naming her parents as Arthur Sneyd and Martha Blume"],
+};
+const verified = VERIFIED[p.slug];
+
+/* One photograph, so far. */
+const PORTRAITS = {
+  "vivian-claude-sneyd": {
+    src: "/img/vivian-claude-sneyd-1919.jpg", w: 620, h: 1159,
+    alt: "Newspaper halftone portrait of a young man in a peaked military cap and tunic, head and shoulders, looking slightly to his left.",
+    cap: "The Brisbane Courier, Saturday 18 January 1919, page 5, under \u201cOn Honour's Roll\u201d. Captioned in the paper: \u201cLance-corporal Vivian Sneyd, 3rd Field Ambulance, A.I.F., M.M. and Bar.\u201d",
+    note: "As far as this archive knows, the only photograph of anyone in his generation of the family.",
+  },
+};
+const portrait = PORTRAITS[p.slug];
+
 const corr = CORRECTIONS[p.slug] || {};
 const val = (k, fallback) => (corr[k] ? corr[k][0] : fallback);
 
@@ -146,6 +178,18 @@ const anyDamaged = notes.some((n) => n.damaged);
 ---
 <Base title={p.name} eyebrow={life} dek={val("occupation", p.occupation) || ""}>
 
+  {portrait && (
+    <section class="blk">
+      <figure style="margin:0;max-width:320px">
+        <img src={u(portrait.src)} width={portrait.w} height={portrait.h}
+          loading="eager" decoding="async" alt={portrait.alt}
+          style="display:block;width:100%;height:auto;border:1px solid var(--rule)" />
+        <figcaption class="cap" style="margin-top:.6rem">{portrait.cap}
+          {portrait.note && <> <strong>{portrait.note}</strong></>}</figcaption>
+      </figure>
+    </section>
+  )}
+
   <section class="blk">
     <div class="grid two">
       <div>
@@ -163,6 +207,12 @@ const anyDamaged = notes.some((n) => n.damaged);
             </tbody>
           </table>
         </div>
+        {verified && (
+          <p class="small" style="margin-top:.9rem"><span class="chip doc">registered</span>{" "}
+            The <strong>{verified[0]}</strong> date above is confirmed by the Queensland civil
+            register — registration <span class="mono">{verified[1]}</span>, {verified[2]}.
+            <a href={u("/sources")}> Sources →</a></p>
+        )}
         {corrections.length > 0 && (
           <div class="note" style="margin-top:1rem">
             <strong>Corrected against the family tree.</strong> The rows above carry this archive's

@@ -2194,3 +2194,75 @@ group headings collapsing and `?q=` deep links.
 - `/places` — search.
 - `wholink.js`, `whoindex.json`, `tools/build_mentions.py` — new.
 
+---
+
+# Pass twenty-one — the join, and the payroll that verifies a widow (9 September 2026)
+
+## 104. The archive could not say why it existed — and the brief was wrong
+
+`/the-other-archives` is new. There was **no mention of Falco or Defranceski anywhere on this site**,
+though the whole project began from a marriage into one of them.
+
+**And the founding brief was inaccurate**, which the GEDCOM settles in one line. The brief said "the
+Australian D'Arcy Family that married Falco". In fact **the D'Arcy line married Defranceski**
+(`@I2@` Cristina Adele D'Arcy → `@I1@` David Ivan Defranceski), and it is the **Defranceski** line
+that married **Falco** (`@I7@` Giuseppina Falco), a generation earlier. The D'Arcys and the Falcos
+are connected through a third family, not to each other. Published as a correction rather than
+quietly fixed.
+
+All six sibling archives are live and are now linked from nav, footer and home:
+TheDefranceski, TheFalco, TheLerena, TheBlazevic, TheBooyzen.
+
+**The join itself is not drawn.** The marriage and the two children are living, and the rule holds.
+
+## 105. The payroll agrees with the widow, to the year
+
+Chasing William Hartley Sneyd through the Blue Books:
+
+| Year | In the establishment? |
+|---|---|
+| 1884 | yes — appointed to the post 1 Dec 1884 |
+| 1886 | yes |
+| 1888 | yes |
+| **1890** | **yes — last appearance** |
+| **1892** | **no** |
+
+And his title, printed clearly in the 1890 volume, is **Fount-room Overseer** — not "Quoin-drawer
+Overseer". That was 1884 OCR garble and the site has been corrected. The fount-room is where a
+printing house keeps and distributes its type; he ran it, on £225, having entered the public service
+on **1 February 1862**. Twenty-eight years.
+
+**Miriam Sneyd, on oath, September 1902:** *"He had not been able to work for about **12 years** in
+consequence of an injury to his arm."* Twelve years back from 1902 is **1890** — the last year the
+colony's own payroll carries his name.
+
+A woman's recollection on the worst day of her life, checked against the civil establishment list of
+a self-governing colony, agreeing to the year. That is the best corroboration in this archive.
+
+Two more sons found in the service: **Arthur Sneyd**, Operator and later Officer in Charge, Electric
+Telegraph (1883–94, £100 rising to £150); **Ernest Ephraim Sneyd**, Line Repairer, Electric Telegraph
+(from 1892). With Samuel Hanley Stafford in Customs that is **four** Sneyds on the Queensland payroll.
+
+## 106. Registrations on the person pages
+
+Thirteen people now carry a `registered` chip naming the Queensland registration that backs their
+death date — and, where the register gives them, the parents it names. **A tree date that turns out
+to be right is a finding too**, and this is the difference between an archive and a list. All
+thirteen slugs verified against the built output.
+
+## 107. A face on a person page
+
+`/people/vivian-claude-sneyd` now opens with his photograph. A `PORTRAITS` map keyed by slug carries
+the image, the alt text and the provenance caption; it is a one-entry map today and the mechanism is
+there for the next one.
+
+## 108. Not landed this pass, and honestly
+
+- **The 1873 insolvency notice.** Trove has 645 results for *Sneyd insolvent* and none of the first
+  ten is ours — the hits are a South Australian painter, Samuel Enos Sneyd, and a Brisbane street
+  called Sneyd-street. The QSA file (`ITM1056950`, 230/1873) remains the way in, and it is not
+  digitised.
+- **Sneyd-street, Bowen Hills**, incidentally — a Brisbane street carrying the name, unexplained.
+- **The end of the gaol governorship**, the **9th Battalion war diary**, the **first Military Medal
+  citation**, the **NSW probate** and the **Sanigar registers**: not reached this pass.
+

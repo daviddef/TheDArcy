@@ -3,7 +3,8 @@ import { u } from "../lib/url.js";
 const { title, description = "", dek, eyebrow, bare } = Astro.props;
 const SITE = "The D'Arcy Archive";
 const nav = [
-  ["Start", [["/", "Home"], ["/how-far-back", "How Far Back"], ["/places", "Places"]]],
+  ["Start", [["/", "Home"], ["/how-far-back", "How Far Back"], ["/places", "Places"],
+             ["/the-other-archives", "The Other Archives"]]],
   ["Our line", [["/direct-line", "The Spine"], ["/hornby", "The Hornby Claim"],
                 ["/australia", "Australia"], ["/brisbane", "Brisbane"],
                 ["/great-war", "The Great War"]]],
@@ -77,6 +78,10 @@ const on = (h) => here === u(h).replace(/\/$/, "");
     <p class="foot">An evidence-first archive of the D'Arcy family of Brisbane — and of Parramatta,
     Portsmouth and, if the pedigree holds, Hornby in the North Riding of Yorkshire. Every claim
     carries its confidence, or is marked as unproven. Living people are excluded from this build.</p>
+    <p class="foot">One of six archives kept to this method — the others are
+      <a href={u("/the-other-archives")}>Defranceski, Falco, Lerena, Blažević and Booyzen</a>.
+      This one joins them through a marriage in the present generation, which is not published
+      because the people in it are alive.</p>
     <p class="foot dim">Built {new Date().getFullYear()} ·
       <a href={u("/sources")}>Sources</a> ·
       <a href={u("/method")}>Method</a> ·
