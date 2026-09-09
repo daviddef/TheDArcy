@@ -782,3 +782,97 @@ unevidenced, and every avenue that could be tried from a desk has now been tried
 3. **The will of Robert Darcy, 4th Earl of Holderness** (d. 16 May 1778), TNA PROB 11 — for any
    provision to a natural son.
 4. **Chatham St Mary burial register, May 1805** — Constantine's entry, to confirm the Roll.
+
+---
+
+# Seventh pass — the Sneyd graft, tested and broken
+
+Prompted by a fair question: why is the site only about the D'Arcys of Brisbane, when the tree holds
+243 ancestors over 24 generations? Testing that turned up a **second** false descent, larger and
+less examined than the Hornby one.
+
+## 26. Where the deep ancestry actually comes from
+
+Of **243 ancestors**:
+
+| | Ancestors | Deepest | Hangs on |
+|---|---:|---|---|
+| The **Hornby** graft | **71** | g24 — Frederick I of Denmark | *Thomas (Francis) D'Arcy*, ahn 256 |
+| The **Sneyd** graft | **27** | g17 — Thomas Dabridgecourt of Longdon Hall, b. 1531 | *Ralph Sneyd of Keele*, ahn 576 |
+| Independent of both | **145** | **g12 — William Sanigar, b. 1654** | — |
+
+They do not overlap. Almost all the tree's apparent depth is carried by two single links.
+
+## 27. The Sneyd line as the tree carries it
+
+Kenneth D'Arcy → **Ivy Miriam Sneyd** → Arthur William Hartley Sneyd → **William Hartley Sneyd**
+(b. Kempsey NSW 1838) → **Samuel Charles Sneyd** (b. Hanley 1810) → **Samuel Sneyd**, grocer of
+Hanley → **William Sneyd** (Madeley 1742) → ***Ralph Sneyd Esq. of Keele*** (1723–1793) → Rev Ralph
+Sneyd of Wolstanton → Ralph Sneyd of Bradwell (1669) → **Frances Noel** → the Noels of Leicestershire
+→ Fullwood → **Dabridgecourt of Longdon Hall, Warwickshire, 1531**.
+
+**I first guessed the weak joint was at Kempsey in 1837.** It is not; that end is well evidenced. The
+joint is three generations higher.
+
+## 28. The lower half is sound, and better than the pedigree
+
+- **Samuel Charles Sneyd (1810–1885).** Born Hanley, Stoke-on-Trent, 15 March 1810; christened there
+  28 April 1811. Came to New South Wales in **1832 with the 4th (King's Own) Regiment**. Married
+  **Catherine Margaret Mulcahy at Camden, NSW, 13 February 1837**. As a **sergeant**, he and Private
+  Richard Smith shot one of three bushrangers and captured all three at **Piper's Flat, about
+  25 miles from Bathurst, on 30 October 1839** — Chubb, Knowles and Reis, tried at the Supreme Court
+  1 February 1840 and convicted. Later in the **Queensland police**. Died at **Westwood Lodge,
+  Alderley**, 4 July 1885; buried Toowong, grave 13-17-1. Eight Australian newspaper citations
+  attached in the tree.
+- **Samuel Sneyd, grocer of Hanley.** *England, Staffordshire, Church Records*: **baptised Madeley,
+  4 June 1781, father William Sneyd.** Married Elizabeth Margaret Oliver at Audlem, Cheshire,
+  22 October 1809. 1851 census, Stoke: born *1779, Madeley*. Buried Hanley 23 September 1855.
+  **The tree's "born 1769" is wrong** — that is the source of the absurd twelve-year gap between its
+  birth and christening dates, and of its death year of 1856.
+
+## 29. The graft fails, on three independent grounds
+
+The tree makes **William Sneyd, baptised at Madeley in 1742**, a son of **Ralph Sneyd Esq. of Keele**.
+
+1. **The register names a different father.** *England, Staffordshire, Church Records* (FamilySearch
+   `1:1:QL3G-3T48`): baptism of **William Sneyd, 1742, All Saints, Madeley — father William Sneyd.**
+   FamilySearch's own tree carries him as *William Snead II, 1742–1827*, matching a Madeley burial of
+   13 May 1827.
+2. **The chronology does not work.** Ralph Sneyd of Keele was born **10 December 1723**. A son
+   baptised in 1742 would have been fathered at **eighteen**, in a parish unconnected with him.
+3. **Ralph's real children are on record and William is not among them.** Baptisms at **Keele** and
+   **Stone**, 1750–1760: Frances, Ralph, Edward, Anne, Elizabeth, Mary — all by a wife
+   **Barbara**, not the "Margaret Dunning" the tree supplies. Ralph's documented heir was
+   **Walter Sneyd (1752–1829)** of Keele.
+
+**Verdict: superseded.** The Madeley Sneyds — often written *Snead* — are a tradesman's family five
+miles from Keele Hall, joined to the squires on nothing but a shared surname in a shared county.
+
+## 30. What actually survives
+
+145 ancestors, twelve generations, and no castles:
+
+- **William Sanigar** (b. 1654) and **William Saniger** (b. **Berkeley, Gloucestershire**,
+  12 October 1679) — through Hannah Saniger, Miriam Wakefield's mother, on the Bristol side.
+- **Edward Cotton**, Ashton-under-Hill, Gloucestershire, 6 January 1687.
+- **Lydia Lyon**, Market Drayton, Shropshire, 3 March 1683.
+- **William Ward** (1700) and **Martha Lewis** (1702) — Jean Ward's family, reached through the
+  General's *marriage* at Portsea in 1779 and therefore **independent of the Hornby graft entirely**.
+- **William Garden** and **Jean Veitch**, Scotland.
+
+## 31. The pattern, named
+
+Both grafts have the same shape, and it is the commonest failure in family history:
+
+> A documented working family is traced back correctly for several generations. At the point where
+> the parish records thin, it is joined to a **landed family of the same surname in the same county**,
+> on no evidence — and that family's well-published pedigree then carries the line back another ten
+> or fifteen generations for nothing.
+
+The join is always the weakest link and always the least examined, because everything above it looks
+so solid — and it *is* solid. The Earls of Holderness are real. Ralph Sneyd of Keele is real. Neither
+is ours.
+
+**Still to do on the Sneyds:** the Madeley registers themselves, to push the *real* line back from
+William Sneyd the elder (father of the 1742 child); and Samuel Charles Sneyd's army and police
+service, which is the best-documented and least-written-up story in the archive.

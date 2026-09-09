@@ -1,0 +1,183 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const rows = [
+  ["Everything the tree asserts", "24", "243", "Frederick I of Denmark, d. 1533",
+   "Accepts both grafts below. This archive does not."],
+  ["Accepting the Sneyd graft only", "17", "172", "Thomas Dabridgecourt of Longdon Hall, b. 1531",
+   "Accepts the Keele descent, rejects Hornby."],
+  ["Accepting the Hornby graft only", "24", "216", "Frederick I of Denmark",
+   "Accepts the Holderness descent, rejects Keele."],
+  ["What this archive will defend", "12", "145", "William Sanigar, b. 1654, Gloucestershire",
+   "Rejects both. This is the honest figure."],
+];
+---
+<Base
+  title="How Far Back"
+  eyebrow="The question everyone asks first"
+  dek="The family tree reaches the kings of Denmark in the fifteenth century. This archive reaches a Gloucestershire yeoman in 1654. This page explains the difference, which is two grafts and about a hundred people."
+
+>
+  <section class="blk">
+    <p class="lede">"How far back does it go?" has four different answers for this family, and which
+    one you get depends entirely on how much you are prepared to take on trust.</p>
+
+    <div class="scroll" style="margin-top:1.4rem">
+      <table>
+        <thead><tr><th>If you accept…</th><th class="m">Generations</th><th class="m">Ancestors</th><th>Reaches</th><th>Note</th></tr></thead>
+        <tbody>
+          {rows.map(([a, g, n, r, note], i) => (
+            <tr>
+              <td><strong>{a}</strong></td>
+              <td class="m">{g}</td>
+              <td class="m">{n}</td>
+              <td>{r}</td>
+              <td class="small">{note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Two grafts carry almost all the depth.</strong> Of 243 ancestors in the tree,
+      <strong>71</strong> hang on a single unevidenced link in the D'Arcy line and
+      <strong>27</strong> on a single disproved link in the Sneyd line. They do not overlap. Remove
+      both and <strong>145</strong> people remain — which is still a substantial family, reaching the
+      middle of the seventeenth century, and every one of them stands on something better than
+      wishful thinking.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Graft one · unevidenced</div>
+    <h2 style="margin-top:.4rem">The D'Arcys of Hornby Castle</h2>
+    <p>Above <strong>Major-General Robert D'Arcy</strong> the tree inserts a
+    <em>Thomas (Francis) D'Arcy</em>, said to be born at St James's Palace, carrying two birth years
+    sixty-nine years apart, and descends him from the Earls of Holderness. Through him come 71
+    ancestors, including — by way of the Schombergs and the house of Oldenburg — the kings of
+    Denmark.</p>
+    <p style="margin-top:.9rem">The tree's own note says Robert was "<em>thought to be the
+    illegitimate</em>" son of the <strong>4th</strong> Earl, while its structure descends him from the
+    <strong>3rd</strong>. No baptism for Robert exists in any indexed English collection; Connolly's
+    <em>Roll</em>, which documents his whole career, records no parentage; the
+    <em>Gentleman's Magazine</em> did not notice his death. <strong>Unevidenced, and set out in
+    full.</strong> <a href={u("/hornby")}>The Hornby claim →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Graft two · disproved, 9 September 2026</div>
+    <h2 style="margin-top:.4rem">The Sneyds of Keele Hall</h2>
+
+    <p>This one the archive had flagged as suspect — <em>"Sneyd is a Staffordshire gentry name, which
+    is exactly what a drifting pedigree reaches for"</em> — and then left alone. Tested, it fails, and
+    it fails cleanly.</p>
+
+    <p style="margin-top:1rem">The line as the tree carries it runs down from Keele Hall to Kempsey:</p>
+
+    <div class="spine" style="margin-top:1.2rem">
+      <div class="gen undoc">
+        <div><span class="yr">1723</span><span class="who">Ralph Sneyd, Esq., of Keele</span>
+        <span class="whr"> · 1723–1793</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:74ch">A real man, and a considerable one:
+        born at Keele 10 December 1723, died at Bath 10 December 1793, squire of Keele Hall and the
+        subject of a Keele University thesis. <strong>He is not in this family.</strong></p>
+      </div>
+      <div class="gen undoc">
+        <div><span class="yr">1742</span><span class="who">William Sneyd</span>
+        <span class="whr"> · baptised All Saints, Madeley</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:74ch">
+          <span class="chip dis">the graft fails here</span> The tree makes him Ralph's son.
+          The register does not.</p>
+      </div>
+      <div class="gen">
+        <div><span class="yr">1781</span><span class="who">Samuel Sneyd</span>
+        <span class="whr"> · grocer, of Hanley</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:74ch">Baptised Madeley, 4 June 1781,
+        father William Sneyd. Married Elizabeth Margaret Oliver at Audlem, Cheshire, 22 October 1809.
+        Died at No. 3 Well Street, Hanley, and was buried there in 1855.</p>
+      </div>
+      <div class="gen">
+        <div><span class="yr">1810</span><span class="who">Samuel Charles Sneyd</span>
+        <span class="whr"> · 1810–1885</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:74ch">Born Hanley, Stoke-on-Trent;
+        christened there 28 April 1811. Came to New South Wales in <strong>1832 with the 4th (King's
+        Own) Regiment</strong>; married Catherine Margaret Mulcahy at Camden, 13 February 1837. As a
+        <strong>sergeant</strong> he and Private Richard Smith shot and captured three bushrangers at
+        Piper's Flat near Bathurst on 30 October 1839. Later in the Queensland police. Died at
+        Westwood Lodge, Alderley, 4 July 1885; buried Toowong.</p>
+      </div>
+      <div class="gen">
+        <div><span class="yr">1838</span><span class="who">William Hartley Sneyd</span>
+        <span class="whr"> · Kempsey, New South Wales</span></div>
+        <p class="small" style="margin-top:.35rem;max-width:74ch">The emigrant generation's first
+        Australian-born child, and Ivy Miriam Sneyd's grandfather. <a href={u("/sneyd")}>The Sneyds →</a></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:1.8rem">Three reasons the graft fails</h3>
+    <ol class="dek">
+      <li><strong>The baptism names a different father.</strong> The register of
+      <strong>All Saints, Madeley</strong> records the baptism of <em>William Sneyd</em> in
+      <strong>1742</strong> — father <strong>William Sneyd</strong>. Not Ralph. FamilySearch's own
+      tree carries him as <em>William Snead II, 1742–1827</em>, matching a burial at Madeley on
+      13 May 1827.</li>
+      <li><strong>The chronology does not work.</strong> Ralph Sneyd of Keele was born in
+      <strong>December 1723</strong>. A son baptised in 1742 would have been fathered when Ralph was
+      <strong>eighteen</strong> — and at Madeley, a parish with no connection to him.</li>
+      <li><strong>Ralph's actual children are on record, and William is not among them.</strong>
+      Baptisms at <strong>Keele</strong> and <strong>Stone</strong> between 1750 and 1760 give Ralph
+      Sneyd's children as Frances, Ralph, Edward, Anne, Elizabeth and Mary — by a wife named
+      <strong>Barbara</strong>, not the "Margaret Dunning" the tree supplies. His documented heir was
+      <strong>Walter Sneyd (1752–1829)</strong> of Keele.</li>
+    </ol>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>What was really going on.</strong> There were Sneyds at Keele Hall and there were
+      Sneyds — often written <em>Snead</em> — at Madeley, five miles off, who were tradespeople. Our
+      family is the second kind: a Madeley labouring or artisan family that produced a
+      <strong>grocer at Hanley</strong>, whose son took the King's shilling and sailed for New South
+      Wales. Somebody, at some point, joined the two on the strength of a shared surname in a shared
+      county. Removing the join costs the archive eleven generations and a descent from Warwickshire
+      gentry — and costs it nothing that was ever true.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What survives</div>
+    <h2 style="margin-top:.4rem">Twelve generations, and a Gloucestershire yeoman</h2>
+    <p>Strip out both grafts and <strong>145 ancestors</strong> remain, reaching
+    <strong>generation twelve</strong>. The oldest of them are not aristocrats and there is no castle
+    anywhere in the list:</p>
+    <ul class="dek">
+      <li><strong>William Sanigar</strong>, born 1654, and <strong>William Saniger</strong>, born at
+      <strong>Berkeley, Gloucestershire</strong>, 12 October 1679 — reached through Hannah Saniger,
+      Miriam Wakefield's mother, on the Bristol side.</li>
+      <li><strong>Edward Cotton</strong>, born at Ashton-under-Hill, Gloucestershire, 6 January 1687.</li>
+      <li><strong>Lydia Lyon</strong>, born at Market Drayton, Shropshire, 3 March 1683.</li>
+      <li><strong>William Ward</strong> (1700) and <strong>Martha Lewis</strong> (1702) — the family
+      of Jean Ward, whom Major-General Robert D'Arcy married at Portsea in 1779, and whose line does
+      not depend on the Hornby graft at all.</li>
+      <li><strong>William Garden</strong> and <strong>Jean Veitch</strong>, of Scotland.</li>
+    </ul>
+    <p style="margin-top:1rem">Twelve generations to the 1650s, out of Gloucestershire, Shropshire,
+    Staffordshire, Somerset and Scotland. That is a long way back by any ordinary standard. It is only
+    disappointing if you had been promised Denmark.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The same shape twice</h2>
+    <p class="dek">Both grafts have an identical structure, and it is worth naming because it is the
+    commonest failure in family history. A <strong>documented working family</strong> — a Royal
+    Engineer, a Hanley grocer — is traced back correctly for several generations. Then, at the point
+    where the parish records thin out, it is <strong>joined to a landed family of the same surname in
+    the same county</strong>, on no evidence, and the landed family's own well-published pedigree
+    carries the line back another ten or fifteen generations for free.</p>
+    <p class="dek" style="margin-top:.9rem">The join is always the weakest link and always the least
+    examined, because everything above it looks so solid — and it <em>is</em> solid. The Earls of
+    Holderness are real. Ralph Sneyd of Keele is real. Neither of them is ours.</p>
+    <p style="margin-top:1.2rem"><a href={u("/method")}>How this archive labels claims →</a> ·
+    <a href={u("/open-questions")}>What is still open →</a></p>
+  </section>
+</Base>
