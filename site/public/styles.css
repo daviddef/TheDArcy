@@ -71,6 +71,7 @@ td.m,th.m{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nu
 .chip.doc{border-color:var(--accent);color:var(--accent);background:var(--accent-wash)}
 .chip.inf{border-color:var(--ochre);color:var(--ochre)}
 .chip.lore{border-color:var(--rule-strong);color:var(--ink-3);border-style:dashed}
+.chip.sup{border-color:var(--ink-3);color:var(--ink-3);border-style:dashed;text-decoration:line-through}
 .note{border-left:2px solid var(--ochre);padding:2px 0 2px 18px;font-family:var(--sans);
   font-size:14.5px;line-height:1.62;color:var(--ink-2);max-width:82ch}
 

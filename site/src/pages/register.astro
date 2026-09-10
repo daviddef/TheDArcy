@@ -1,0 +1,207 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import reg from "../data/register.json";
+
+/* The raw catch. Every named individual this archive has met, from any source,
+   with the source beside each one — including the people who are only in the
+   family tree, which is a claim and not a source.
+
+   The sibling archives keep the same page. Falco's is much larger because its
+   research has run through parish registers act by act; this one is smaller and
+   says so. What matters is that the two read the same way. */
+
+const label = (s) =>
+  s.startsWith("record") ? "record" :
+  s.includes("graft") ? "graft" : "tree";
+
+const hay = (r, sn) =>
+  [r.name, r.says, r.source, sn].join(" ").toLowerCase();
+
+const pct = Math.round((reg.records / reg.entries) * 100);
+---
+<Base
+  title="The register"
+  eyebrow={`${reg.entries} entries · ${reg.surnames} surnames`}
+  dek="Every named individual this archive has found, from any source, with the source beside each one. This is the raw catch — not a family tree, and not all of it is this family.">
+
+  <section class="blk">
+    <p class="lede"><strong>{reg.entries}</strong> entries for <strong>{reg.distinct}</strong>{" "}
+    distinct names, every one of them carrying a link to something — a person's dossier, or the
+    record that names them. <strong>{reg.records}</strong> come out of a document this archive has
+    actually read. The other <strong>{reg.tree}</strong> come out of the family tree, which is a
+    different kind of thing entirely, and the Source column says which is which on every row.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Read this before you read the list.</strong>
+      <ul style="margin:.7rem 0 0;padding-left:1.1rem">
+        <li style="margin-bottom:.5rem"><span class="chip doc">record</span> means this archive
+        opened the document and read the name in it: a Queensland death registration, a parish
+        register transcript, a service dossier, a coroner's file, a surgeon's journal, a payroll,
+        a newspaper. <strong>{reg.records} entries.</strong> Not all of these people are relatives —
+        the men who gave evidence at an inquest and the convicts on a transport are here because
+        they are <em>in the record</em>, and leaving them out would be editing it.</li>
+
+        <li style="margin-bottom:.5rem"><span class="chip inf">family tree</span> means what the
+        family believes, not what a record proves. <strong>{reg.tree} entries</strong>, carried in
+        from the MyHeritage export. Treat each one as a claim until it turns up somewhere else on
+        this page with a source beside it.</li>
+
+        <li style="margin-bottom:.5rem"><span class="chip sup">above a graft</span> is the same
+        thing, worse. <strong>{reg.grafted} of those {reg.tree}</strong> sit above one of the two
+        joins this archive has tested and rejected — the D'Arcys of Hornby Castle and the Sneyds of
+        Keele Hall. They are real historical people, mostly; they are simply <em>not attached to
+        this family by anything</em>. <a href={u("/how-far-back")}>Both grafts, set out in full →</a></li>
+
+        <li><strong>Living people are not here at all.</strong> Not hidden, not gated — absent from
+        the build. The rule withholds 2,034 people across the whole tree.
+        <a href={u("/method")}>How it works →</a></li>
+      </ul>
+    </div>
+
+    <div class="note" style="margin-top:1.1rem">
+      <strong>And here is the number this page exists to make impossible to miss.</strong> Only
+      <strong>{pct}%</strong> of what follows rests on a document. The rest rests on somebody's
+      tree — usually somebody else's. An archive that publishes the two in one list, in the same
+      typeface, without saying which is which, is not being honest with you.
+      <a href={u("/what-we-got-wrong")}>What this one got wrong →</a>
+    </div>
+  </section>
+
+  <section class="blk" id="finder">
+    <div class="lab">Search</div>
+    <label for="q" class="vh">Search the register</label>
+    <input id="q" type="search" autocomplete="off"
+      placeholder="Try a name, a year, a place, a source — Sainger, 1655, Wanswell, Mouquet, B2455…"
+      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
+             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
+
+    <div style="margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center">
+      <button type="button" class="fchip" data-f="">All {reg.entries}</button>
+      <button type="button" class="fchip" data-f="record">From a record ({reg.records})</button>
+      <button type="button" class="fchip" data-f="tree">From the tree only ({reg.tree - reg.grafted})</button>
+      <button type="button" class="fchip" data-f="graft">Above a graft ({reg.grafted})</button>
+    </div>
+
+    <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{reg.entries} entries</p>
+    <p class="small" id="nohits" hidden>Nothing matches that. Spelling in this family moves about —
+      the Saingers are also <em>Saniger</em>, <em>Sanigar</em>, <em>Sinnegar</em> and six other ways.
+      <a href={u("/name")}>Why →</a></p>
+  </section>
+
+  {reg.groups.map((g) => (
+    <section class="blk rgroup" data-group={g.surname}>
+      <h2>{g.surname} <span class="small" style="font-weight:400;color:var(--ink-3)">· {g.n}</span></h2>
+      <p class="small gcount">{g.n} {g.n === 1 ? "entry" : "entries"}</p>
+      <div class="scroll" style="margin-top:.9rem">
+        <table>
+          <thead><tr><th style="width:26%">Name</th><th>What the source says</th><th style="width:26%">Source</th></tr></thead>
+          <tbody>
+            {g.rows.map((r) => (
+              <tr class="rrow" data-s={hay(r, g.surname)} data-k={label(r.source)}>
+                <td><a href={r.link.startsWith("/") ? u(r.link) : r.link}><strong>{r.name}</strong></a></td>
+                <td class="small">{r.says}</td>
+                <td class="small">
+                  {r.source.startsWith("record")
+                    ? <><span class="chip doc">record</span> {r.source.replace(/^record · /, "")}
+                        {" "}<a href={r.link}>↗</a></>
+                    : r.source.includes("graft")
+                      ? <><span class="chip sup">above a graft</span> {r.source.replace(/^family tree · above the /, "").replace(" graft", "")}</>
+                      : r.source.includes("direct")
+                        ? <><span class="chip inf">family tree</span> direct line</>
+                        : <span class="chip inf">family tree</span>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Where these entries came from</h2>
+    <p class="dek">Each source below was read directly. Where a search returned nothing, that is
+    published as a result too rather than left silent.</p>
+    <ul class="dek" style="margin-top:1rem">
+      <li><strong>Queensland Registry of Births, Deaths and Marriages</strong> — 18 death
+      registrations, each with the parents the register names. <a href={u("/sources")}>→</a></li>
+      <li><strong>FreeREG</strong> — Berkeley St Mary, Dursley St James and Cam St George,
+      Gloucestershire. The Berkeley transcript stops in 1677, which is the whole difficulty.
+      <a href={u("/berkeley")}>→</a></li>
+      <li><strong>National Archives of Australia, series B2455 and J34</strong> — three service
+      dossiers read page by page, and a pension file. <a href={u("/great-war")}>→</a></li>
+      <li><strong>Australian War Memorial</strong> — the Wounded and Missing file for 5050 Sneyd,
+      and a Military Medal recommendation. <a href={u("/finding-arthur")}>→</a></li>
+      <li><strong>Queensland State Archives</strong> — a coronial file read in full, an insolvency,
+      an intestacy, three land dealings and two police staff files.
+      <a href={u("/inquest-1902")}>→</a></li>
+      <li><strong>The National Archives, Kew</strong> — ADM 101/26/1, the surgeon's journal of the
+      convict ship <em>England</em>, and PROB 11/1728/64. <a href={u("/australia")}>→</a></li>
+      <li><strong>Queensland Blue Books</strong> — the colony's civil establishment lists,
+      1870–1900. <a href={u("/sergeant-sneyd")}>→</a></li>
+      <li><strong>Trove</strong> — six newspaper items, each linked to the article itself.</li>
+      <li><strong>The family tree</strong> — a MyHeritage export, and the reason most of this page
+      is a claim rather than a finding. <a href={u("/how-far-back")}>→</a></li>
+    </ul>
+
+    <div class="note" style="margin-top:1.4rem">
+      <strong>One entry has been deliberately left out.</strong> A Queensland State Archives item
+      holds the 1922 photographic and criminal record of a man who shares this surname and is a
+      collateral relative. It is public, it is catalogued, and this archive is not publishing it
+      without the family's say-so. It is listed here as an item and not as a story.
+      <a href={u("/open-questions")}>The rest of the queue →</a>
+    </div>
+
+    <p class="small" style="margin-top:1.3rem">The sibling archives keep the same page, built the
+    same way. <a href="https://daviddef.github.io/TheFalco/register/">The Falco register ↗</a> ·
+    <a href={u("/the-other-archives")}>All six archives →</a></p>
+  </section>
+
+  <script is:inline>
+    (function () {
+      var q = document.getElementById("q");
+      if (!q) return;
+      var rows = [].slice.call(document.querySelectorAll(".rrow"));
+      var groups = [].slice.call(document.querySelectorAll(".rgroup"));
+      var count = document.getElementById("count");
+      var nohits = document.getElementById("nohits");
+      var chips = [].slice.call(document.querySelectorAll(".fchip"));
+      var filter = "";
+
+      function apply() {
+        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+        var shown = 0;
+        rows.forEach(function (r) {
+          var h = r.getAttribute("data-s");
+          var ok = (!filter || r.getAttribute("data-k") === filter) &&
+                   terms.every(function (t) { return h.indexOf(t) !== -1; });
+          r.hidden = !ok;
+          if (ok) shown++;
+        });
+        groups.forEach(function (g) {
+          var any = g.querySelectorAll(".rrow:not([hidden])").length;
+          g.hidden = any === 0;
+          var gc = g.querySelector(".gcount");
+          if (gc) gc.textContent = any + (any === 1 ? " entry" : " entries");
+        });
+        count.textContent = shown + (shown === 1 ? " entry" : " entries") +
+          (terms.length || filter ? " matching" : "");
+        nohits.hidden = shown !== 0;
+      }
+
+      q.addEventListener("input", apply);
+      chips.forEach(function (b) {
+        b.addEventListener("click", function () {
+          filter = b.getAttribute("data-f") || "";
+          chips.forEach(function (o) { o.classList.toggle("on", o === b); });
+          apply();
+        });
+      });
+      chips[0] && chips[0].classList.add("on");
+
+      var pre = new URLSearchParams(location.search).get("q");
+      if (pre) { q.value = pre; apply(); }
+    })();
+  </script>
+</Base>
