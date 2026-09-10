@@ -1,0 +1,205 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+const WILLIAMS = [
+  ["24 May 1655", "Edward Sainger", "Wanswell", "the closest fit to the tree's “b. 1654” — a birth late in 1654 and a baptism the following May is exactly the normal interval"],
+  ["25 Jun 1657", "Edward Sainger", "Berkeley", "two years later, another Edward's son, in the town itself"],
+  ["Jan 1664/5", "Edward Sainger", "— · noted “Mr Edward”", "the “Mr” matters: in 1665 it marks a gentleman, not a labourer"],
+];
+
+const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINNEGER",
+                   "SINNEGAR", "SINEGAR", "SYNEGAR", "SYNAGER", "SINGER"];
+
+const PLACES = [
+  ["Dursley", 92, "St James"],
+  ["Cam", 69, "St George"],
+  ["Thornbury", 19, "St Mary"],
+  ["Berkeley", 19, "St Mary"],
+  ["King's Stanley", 10, ""],
+  ["Stinchcombe", 7, ""],
+  ["Painswick", 6, ""],
+  ["Falfield", 5, ""],
+];
+---
+<Base
+  title="Berkeley, Gloucestershire"
+  eyebrow="FreeREG · searched 10 September 2026"
+  dek="The oldest claim in this archive is a Gloucestershire yeoman born in 1654. This is what happened when somebody finally went and looked at the parish register instead of another family's website.">
+
+  <section class="blk">
+    <p class="lede">For as long as this archive has existed it has said its deepest documented person
+    is <strong>William Sanigar, born 1654, of Berkeley in Gloucestershire</strong> — twelve
+    generations back, and the honest floor beneath two discredited aristocratic claims. On
+    10 September 2026 an audit found that this "documented" line rested on
+    <strong>other people's family trees and nothing else</strong>.
+    <a href={u("/how-far-back")}>The audit →</a></p>
+
+    <p style="margin-top:1rem">So the registers were searched. This page is what they say.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>The short answer.</strong> The Saingers were unquestionably at Berkeley, in numbers, at
+      exactly the right time — <strong>forty-four register entries between 1640 and 1690</strong>. One
+      baptism fits the tree's date well, and gives a father the tree never had. But the transcript
+      <strong>stops in 1677</strong>, which is before five of the six generations the archive claims,
+      and none of those five can be confirmed from it. <strong>The line is now better founded at the
+      bottom and no better founded in the middle.</strong>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What was searched</div>
+    <h2 style="margin-top:.4rem">FreeREG, and exactly how far it goes</h2>
+    <p><strong>FreeREG</strong> is a volunteer transcription of English parish registers, free and
+    without a login. Its holding for the parish in question is precise and it is the whole point of
+    this page:</p>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Place</th><th>Church</th><th>Register type</th><th class="m">Records</th><th class="m">First</th><th class="m">Last</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Berkeley</strong></td><td>St Mary</td><td>Other Transcript</td>
+              <td class="m">2,916</td><td class="m">1600</td><td class="m"><strong>1677</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>1677 is the whole difficulty.</strong> The archive's Saniger chain runs
+      1654 → 1679 → 1711 → 1744 → 1769 → 1805. <strong>Only the first of those falls inside the
+      transcribed years.</strong> The other five are not absent from Berkeley's register; they are
+      absent from the <em>transcription</em>, which is a different thing entirely and must not be
+      reported as a negative.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The one that can be tested</div>
+    <h2 style="margin-top:.4rem">William Sainger, baptised 24 May 1655</h2>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          <tr><td>County</td><td>Gloucestershire</td></tr>
+          <tr><td>Place</td><td><strong>Berkeley</strong> · St Mary</td></tr>
+          <tr><td>Baptism date</td><td class="m"><strong>24 May 1655</strong></td></tr>
+          <tr><td>Person</td><td><strong>William</strong>, male</td></tr>
+          <tr><td><strong>Father</strong></td><td><strong>Edward SAINGER</strong> — a name this archive did not have</td></tr>
+          <tr><td><strong>Abode</strong></td><td><strong>Wanswell</strong> — a hamlet in Berkeley parish</td></tr>
+          <tr><td>Transcribed by</td><td>Jackie Dinsdale · register type: Other Transcript</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1.1rem">A child born late in 1654 and baptised in May 1655 is an entirely
+    ordinary interval. If the tree's William Sanigar is real, <strong>this is the best candidate that
+    exists</strong> — and it would add a further generation, <strong>Edward Sainger of
+    Wanswell</strong>, above the archive's present ceiling.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And here is why it is not yet a finding.</strong> Berkeley's register has
+      <strong>three</strong> William Saingers baptised in ten years, and every one is the son of an
+      Edward:
+    </div>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th class="m">Baptised</th><th>Father</th><th>Abode</th><th>Note</th></tr></thead>
+        <tbody>
+          {WILLIAMS.map(([d, f, a, n]) => (
+            <tr><td class="m"><strong>{d}</strong></td><td>{f}</td><td>{a}</td><td class="small">{n}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="small" style="margin-top:.9rem">Three Williams, at least two and probably three
+    different Edwards — one at Wanswell, one in the town, one styled <em>Mr</em>. Picking the right
+    one on the strength of a year alone would be exactly the kind of guess this archive exists to
+    refuse. <span class="chip inf">candidate, not identification</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">A correction made mid-research</div>
+    <h2 style="margin-top:.4rem">The story that wasn't</h2>
+    <p>Reading the list, an obvious and affecting sequence appeared: <em>Agnies Sainger buried at
+    Berkeley in late May 1655; William baptised on the 24th of that month; Edward Sainger married
+    Mary Smyth that July.</em> A mother dead in childbirth and a widower remarried within ten weeks.</p>
+    <p style="margin-top:.9rem"><strong>It is not true.</strong> Opening the burial record shows
+    Agnies entered as "<em>wife of</em>" with the surname <strong>Tyler</strong> — she is not a
+    Sainger wife at all, and has nothing to do with this family. The sequence was a coincidence of
+    dates and a plausible narrative, and it took one click to destroy.</p>
+    <div class="note" style="margin-top:1.1rem">
+      It is left on the page because it is the most useful thing here: <strong>the story that fits is
+      not the story that is true</strong>, and the difference is always one record away.
+      <a href={u("/what-we-got-wrong")}>The archive's other errors →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The unexpected result</div>
+    <h2 style="margin-top:.4rem">They are not really a Berkeley family</h2>
+    <p>Searching the surname across the whole county — with fuzzy matching, because the spelling is
+    chaos — returns <strong>238 baptisms</strong>. Berkeley is not where most of them are.</p>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Parish</th><th>Church</th><th class="m">Baptisms</th></tr></thead>
+        <tbody>
+          {PLACES.map(([p, n, ch]) => (
+            <tr><td><strong>{p}</strong></td><td>{ch}</td><td class="m">{n}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1.1rem"><strong>Dursley and Cam hold 161 of the 238 between them</strong> —
+    six times Berkeley's share. Both are three to six miles from Berkeley in the same Vale, and
+    unlike Berkeley <strong>their transcripts run right through the eighteenth and nineteenth
+    centuries</strong>, which is precisely the period the archive's chain needs.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And the tree's dates do not match there either.</strong> Searched across the whole
+      county for the right forenames in the right decades, the nearest entries are
+      <em>Thomas Sinnegar, Dursley, 17 March 1711/12</em> against the tree's <em>Thomas, Berkeley,
+      11 December 1711</em> — same year, wrong month, wrong parish — and nothing at all for the
+      1744, 1769 or 1805 baptisms.
+      <br /><br />
+      That is not a disproof. It is a warning that <strong>"Saniger of Berkeley" may be a label
+      somebody applied to a Dursley or Cam family</strong>, in the way "of Berkeley" was used loosely
+      for the whole Vale — and the archive should stop repeating it as though it were an address.
+    </div>
+
+    <p style="margin-top:1.2rem"><strong>The spellings, all of them one family:</strong>{" "}
+    {SPELLINGS.map((s, i) => (<>{i > 0 && " · "}<span class="mono">{s}</span></>))}.
+    A search for "Saniger" alone finds a fraction of them. <a href={u("/name")}>Why spelling is not
+    identity →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Where this leaves the oldest claim</h2>
+    <ol class="dek">
+      <li><strong>The family is real and it is in the right place.</strong> Forty-four Sainger entries
+      at Berkeley St Mary between 1640 and 1690, and 238 across the Vale. That was never in doubt but
+      it had never been checked either.</li>
+      <li><strong>One candidate baptism exists and it is a good one</strong> — 24 May 1655, son of
+      Edward Sainger of Wanswell — but there are three Williams and it cannot yet be shown to be
+      ours. <span class="chip inf">candidate</span></li>
+      <li><strong>The five generations between 1679 and 1805 remain untested</strong>, because
+      Berkeley's transcript ends in 1677 and the Dursley and Cam entries do not match the tree's
+      dates. <span class="chip lore">still family lore</span></li>
+      <li><strong>The archive's floor has not moved.</strong> It is still about seven generations of
+      genuinely evidenced ancestry, and this page does not change that. What it changes is that we now
+      know exactly which document would.</li>
+    </ol>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>What would settle it, precisely.</strong> The original registers of <strong>Berkeley
+      St Mary after 1677</strong>, and of <strong>Dursley St James</strong> and <strong>Cam
+      St George</strong>, at <strong>Gloucestershire Archives</strong> — with the bishop's transcripts
+      as a second copy where the parish books fail. Six baptisms, one marriage each, and a line that
+      has been asserted for years becomes a line that is known.
+      <a href={u("/open-questions")}>Top of the queue →</a>
+    </div>
+  </section>
+</Base>

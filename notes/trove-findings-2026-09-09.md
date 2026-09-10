@@ -2644,3 +2644,90 @@ transcribed on **FreeREG**. Six christenings between 1654 and 1805. That single 
 the oldest claim in this archive from hearsay into its best-evidenced page. Also wanted: Ashton-under-Hill,
 Wotton-under-Edge, Brimpsfield, Bisley, Elmore, and Madeley for the Sneyd generations above 1742.
 
+---
+
+# Pass twenty-seven — Berkeley, Gloucestershire: the register actually read (10 September 2026)
+
+## 133. Method — FreeREG works, and here is how
+
+`freereg.org.uk` is free, no login, no key. It is a Rails app, so drive it in a **fronted** pane:
+
+- Search form at `/search_queries/new`, posts to `/search_queries`. Fields are
+  `search_query[last_name]`, `[first_name]`, `[start_year]`, `[end_year]`,
+  `[chapman_codes][]` (county — Gloucestershire is **GLS**), `[record_type]` radios
+  (`all` / `ba` / `ma` / `bu`), and a `[fuzzy]` checkbox. Set values with the native setter, select
+  the county option, tick fuzzy, click submit.
+- **Record detail pages ARE curl-able** — `/search_records/<id>/<slug>` returns plain HTML with a
+  field table. That is how the father and abode below were pulled without the browser.
+- **Coverage is at `/freereg_contents/new`** → choose county → choose place. This is the decisive
+  tool and should be checked *before* reporting any absence.
+
+## 134. Coverage — the number that governs everything
+
+    Berkeley | St Mary | Other Transcript | 2,916 records | first 1600 | last 1677
+
+The archive's Saniger chain is **1654 → 1679 → 1711 → 1744 → 1769 → 1805**. **Only the first falls
+inside the transcript.** The other five are absent from the *transcription*, not from the register,
+and must never be written up as negatives.
+
+## 135. FOUND — a real baptism, and a father the archive never had
+
+> **Baptism, 24 May 1655, Berkeley St Mary, Gloucestershire**
+> Person: **William**, male
+> **Father: Edward SAINGER**
+> **Abode: Wanswell** (a hamlet in Berkeley parish)
+> Transcribed by Jackie Dinsdale
+
+Against the tree's *William Sanigar b. 1654* this is a very good fit — a birth late in 1654 and a
+May baptism is the ordinary interval — and it would add **Edward Sainger of Wanswell** above the
+archive's present ceiling.
+
+**But it is a candidate, not an identification.** Berkeley has **three** William Saingers in ten
+years, each the son of an Edward:
+
+| Baptised | Father | Abode |
+|---|---|---|
+| 24 May 1655 | Edward Sainger | **Wanswell** |
+| 25 Jun 1657 | Edward Sainger | Berkeley |
+| Jan 1664/5 | Edward Sainger | — , noted "**Mr Edward**" |
+
+At least two and probably three different Edwards; the "Mr" in 1665 marks a gentleman.
+
+## 136. A false story, caught by one click
+
+The result list suggested something affecting: *Agnies Sainger buried late May 1655; William baptised
+24 May 1655; Edward Sainger married Mary Smyth that July* — a mother dead in childbirth, a widower
+remarried in ten weeks.
+
+**Opening the burial record killed it.** Agnies is entered as "*wife of*" with the surname
+**TYLER**. She is not a Sainger wife and has nothing to do with the family. Published on `/berkeley`
+as a worked example, because the story that fits is not the story that is true.
+
+## 137. The unexpected result — they are not a Berkeley family
+
+238 baptisms for the surname across Gloucestershire (fuzzy). By parish:
+
+**Dursley 92 · Cam 69 · Thornbury 19 · Berkeley 19 ·** King's Stanley 10 · Stinchcombe 7 ·
+Painswick 6 · Falfield 5
+
+**Dursley and Cam hold 161 of 238** — six times Berkeley's share — and unlike Berkeley their
+transcripts run through the 18th and 19th centuries, exactly the period the chain needs. **And the
+tree's dates do not match there either.** Nearest: *Thomas Sinnegar, Dursley, 17 Mar 1711/12* against
+the tree's *Thomas, Berkeley, 11 Dec 1711* — same year, wrong month, wrong parish. Nothing for 1744,
+1769 or 1805.
+
+So "**Saniger of Berkeley**" may well be a label somebody applied to a **Dursley or Cam** family, in
+the loose way "of Berkeley" was used for the whole Vale.
+
+Spellings, all one family: SAINGER · SANIGER · SANIGAR · SANIGAER · SINAGER · SINNEGER · SINNEGAR ·
+SINEGAR · SYNEGAR · SYNAGER · SINGER. A search on "Saniger" alone finds a fraction of them.
+
+## 138. Where it leaves the oldest claim
+
+The floor **has not moved**. Still about seven generations of genuinely evidenced ancestry. What has
+changed is that the archive now knows precisely which documents would move it: **Berkeley St Mary
+after 1677, Dursley St James and Cam St George at Gloucestershire Archives**, with the bishop's
+transcripts as the second copy.
+
+New page `/berkeley`, linked from nav, home, `/how-far-back` and `/open-questions`.
+
