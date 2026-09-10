@@ -1,0 +1,179 @@
+---
+import { u } from "../lib/url.js";
+import prov from "../data/provenance.json";
+import { lifeOf } from "../lib/corrections.js";
+
+/* The pedigree chart that opens every person page, built the same way as the
+   sibling archives'.
+
+   The left border of each card says HOW THE RELATIONSHIP IS KNOWN, and nothing
+   else. That is the whole design:
+
+     solid accent   the link is written in a record this archive has read, and
+                    the card names the record
+     dotted         the link comes from the family tree and has not been tested
+     dashed, struck the link comes from the family tree AND sits above one of
+                    the two grafts this archive has rejected
+
+   Direct-line membership is a different fact and is printed as text, not as a
+   border, because conflating the two is how a pedigree starts lying.
+*/
+
+const { person: p, life, parents = [], spouses = [], kids = [], sibs = [] } = Astro.props;
+
+const me = prov[p.slug] || { rel: {}, graft: null, line: false };
+
+const edge = (slug) => {
+  const rec = me.rel && me.rel[slug];
+  if (rec && rec.length) return { cls: "via-register", via: rec[0], recorded: true };
+  const g = (prov[slug] || {}).graft || me.graft;
+  if (g) return { cls: "via-tree gone", via: `tree · above the ${g} graft`, recorded: false };
+  return { cls: "via-tree", via: "tree", recorded: false };
+};
+
+const node = (o, extra = "") => {
+  const e = edge(o.slug);
+  const q = prov[o.slug] || {};
+  return {
+    ...o, ...e,
+    cls: `node ${extra} ${e.cls}`.replace(/\s+/g, " ").trim(),
+    via: q.line && !q.graft ? `${e.via} · direct line` : e.via,
+  };
+};
+
+const P = parents.map((o) => node(o));
+const S = spouses.map((o) => node(o, "spouse"));
+const K = kids.map((o) => node(o));
+const B = sibs.map((o) => node(o, "small"));
+
+const all = [...P, ...S, ...K, ...B];
+const recorded = all.filter((n) => n.recorded).length;
+const grafted = all.filter((n) => n.cls.includes("gone")).length;
+
+/* This family reuses forenames without mercy. Where a row shows the same name
+   twice, say so rather than letting a reader assume a duplicate — and never
+   merge them, which is exactly how a records-matcher invents one person out of
+   two. */
+const dupes = (list) => {
+  const c = {};
+  for (const o of list) c[o.name] = (c[o.name] || 0) + 1;
+  return Object.keys(c).filter((k) => c[k] > 1);
+};
+const dupKids = dupes(K), dupSibs = dupes(B);
+
+const dt = (o) => lifeOf(o);
+---
+<figure class="ptree">
+  {P.length > 0 && (
+    <div class="tier">
+      <div class="lab">{P.length === 1 ? "Parent" : "Parents"}</div>
+      <div class="row">
+        {P.map((o) => (
+          <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
+            <span class="nm">{o.name}</span>
+            {dt(o) && <span class="dt">{dt(o)}</span>}
+            <span class="via">{o.via}</span>
+          </a>
+        ))}
+      </div>
+      <div class="drop" aria-hidden="true"></div>
+    </div>
+  )}
+
+  <div class="tier self">
+    <div class="row">
+      <div class="node me">
+        <span class="nm">{p.name}</span>
+        <span class="dt">{life || p.life || "dates unknown"}</span>
+        {/* A person can be both an ancestor in the tree AND above a rejected
+            graft. Saying only the first would make this card contradict every
+            edge drawn around it. */}
+        {me.graft
+          ? <span class="via">{me.line ? `generation ${p.gen || "—"} of the tree, ` : ""}above the {me.graft} graft</span>
+          : me.line
+            ? <span class="via gen">direct line{p.gen ? ` · generation ${p.gen}` : ""}{me.spine ? " · on the spine" : ""}</span>
+            : <span class="via">in the tree</span>}
+      </div>
+      {S.map((o) => (
+        <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
+          <span class="mar">married</span>
+          <span class="nm">{o.name}</span>
+          {dt(o) && <span class="dt">{dt(o)}</span>}
+          <span class="via">{o.via}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  {K.length > 0 && (
+    <div class="tier">
+      <div class="drop up" aria-hidden="true"></div>
+      <div class="lab">{K.length} {K.length === 1 ? "child" : "children"}</div>
+      <div class="row">
+        {K.map((o) => (
+          <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
+            <span class="nm">{o.name}</span>
+            {dt(o) && <span class="dt">{dt(o)}</span>}
+            <span class="via">{o.via}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {B.length > 0 && (
+    <div class="tier sibs">
+      <div class="lab">{B.length} {B.length === 1 ? "brother or sister" : "brothers and sisters"}</div>
+      <div class="row">
+        {B.map((o) => (
+          <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
+            <span class="nm">{o.name}</span>
+            {dt(o) && <span class="dt">{dt(o)}</span>}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <figcaption>
+    <span class="key"><i class="sw"></i> written in a record this archive has read</span>
+    <span class="key"><i class="sw tree"></i> from the family tree, untested</span>
+    {grafted > 0 && <span class="key"><i class="sw gone"></i> above a graft this archive rejects</span>}
+
+    <p class="warn" style="margin-top:.6rem">
+      {all.length === 0
+        ? <>No relationship is published for this person. Either the tree records none, or everyone
+          they connect to is alive and withheld from this build.</>
+        : recorded === 0
+          ? <><strong>None of the {all.length} {all.length === 1 ? "relationship" : "relationships"} shown
+            here is written in a record this archive has read.</strong> Every one comes from the family
+            tree. That is not a claim that they are wrong — it is a statement about what has been
+            checked, and on this site the difference is the point.</>
+          : <><strong>{recorded} of the {all.length} relationships shown here</strong>{" "}
+            {recorded === 1 ? "is" : "are"} written in a record this archive has read; the
+            other {all.length - recorded} come from the family tree and{" "}
+            {all.length - recorded === 1 ? "has" : "have"} not been tested.</>}
+      {" "}<a href={u("/method")}>How claims are labelled →</a>
+    </p>
+
+    {grafted > 0 && (
+      <p class="warn"><strong>{grafted} of these links sit above a graft.</strong> The archive has
+      tested the join they hang from and rejected it — the D'Arcys of Hornby Castle are unevidenced,
+      the Sneyds of Keele Hall disproved. The people are drawn because the tree carries them, and
+      struck through because nothing attaches them to this family.
+      {" "}<a href={u("/how-far-back")}>Both grafts, in full →</a></p>
+    )}
+
+    {dupKids.length > 0 && (
+      <p class="warn"><strong>More than one child here carries the same name</strong> — {dupKids.join(", ")}.
+      A child who died was very often replaced by a later child given the same name, so this is
+      usually not an error. <strong>It is also exactly how a records-matcher invents one person out
+      of two</strong>, which is why they are kept apart here and you are told.</p>
+    )}
+    {dupSibs.length > 0 && (
+      <p class="warn"><strong>More than one sibling here carries the same name</strong> — {dupSibs.join(", ")}.
+      They are drawn separately. This archive does not merge records on a name.
+      {" "}<a href={u("/name")}>Why →</a></p>
+    )}
+  </figcaption>
+</figure>

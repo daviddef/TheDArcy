@@ -278,6 +278,47 @@ def surname_of(rec):
     return (s or "—").upper()
 
 
+# ── Relationships a record actually asserts ──────────────────────────────────
+# Every one of these is a parent/child or marriage link written down in a
+# document this archive has read, not inferred from the tree. The person pages
+# draw these edges solid and everything else dotted, so a reader can see at a
+# glance how much of any pedigree is evidence and how much is belief.
+#   (person, relative, what the record is)
+REL = [
+    # Queensland death registrations name the deceased's parents outright.
+    ("William Hartley Sneyd", "Samuel Charles Sneyd|1810", "Qld death reg. 1902/B/2776"),
+    ("William Hartley Sneyd", "Catherine Margaret Mulcahy", "Qld death reg. 1902/B/2776"),
+    ("William Hartley Sneyd", "Miriam Wakefield", "her sworn deposition, DR103140"),
+    ("Miriam Wakefield", "James Wakefield", "Qld death reg. 1909/C/1054"),
+    ("Miriam Wakefield", "Hannah Saniger", "Qld death reg. 1909/C/1054"),
+    ("Thomas George Sneyd", "William Hartley Sneyd", "Qld death reg. 1927/B/2729"),
+    ("Thomas George Sneyd", "Miriam Wakefield", "Qld death reg. 1927/B/2729"),
+    ("Arthur William Hartley Sneyd", "William Hartley Sneyd", "Qld death reg. 1922/B/37152"),
+    ("Arthur William Hartley Sneyd", "Miriam Wakefield", "Qld death reg. 1922/B/37152"),
+    ("Ernest Ephraim Sneyd", "William Hartley Sneyd", "Qld death reg. 1946/B/8931"),
+    ("Ernest Ephraim Sneyd", "Miriam Wakefield", "Qld death reg. 1946/B/8931"),
+    ("Vivian Claude Sneyd", "Arthur William Hartley Sneyd", "Qld death reg. 1949/B/20695"),
+    ("Vivian Claude Sneyd", "Martha Blum", "Qld death reg. 1949/B/20695"),
+    ("Kenneth Seigfried Sneyd", "Arthur William Hartley Sneyd", "Qld death reg. 1935/B/26753"),
+    ("Kenneth Seigfried Sneyd", "Martha Blum", "Qld death reg. 1935/B/26753"),
+    ("Beryl Marie Sneyd", "Arthur William Hartley Sneyd", "Qld death reg. 1905/C/3798"),
+    ("Beryl Marie Sneyd", "Martha Blum", "Qld death reg. 1905/C/3798"),
+    ("Vivian Ernest William Sneyd", "Thomas George Sneyd", "Qld death reg. 1920/B/31382"),
+    ("Gladys Beryl Sneyd", "Thomas George Sneyd", "Qld death reg. 1897/C/1623"),
+    ("Martha Blum", "John Blum|1842", "Qld death reg. 1904/C/1454"),
+    ("Martha Blum", "Mary Ann O'Brien", "Qld death reg. 1904/C/1454"),
+    # The service records name a next of kin in the man's own hand.
+    ("Vivian Ernest William Sneyd", "Thomas George Sneyd", "NAA B2455 attestation, next of kin"),
+    ("Arthur Hartley Sneyd", "Miriam Wakefield", "NAA B2455 8088453, next of kin"),
+    ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
+    # Deliberately NOT here: George Pitt D'Arcy to Robert D'Arcy. Connolly's
+    # Roll documents both men's whole careers and records no parentage for
+    # either — see /hornby. The tree asserts the link; no record this archive
+    # has read does, and drawing it solid would be exactly the error /register
+    # was built to expose.
+]
+
+
 def main():
     people, families = load()
 
@@ -301,7 +342,9 @@ def main():
 
     hornby = ancestors_of(HORNBY_ROOT, people, families)
     keele = ancestors_of(KEELE_ROOT, people, families)
-    direct = {r["id"] for r in json.load(
+    # 243 direct ancestors; the spine is the 15 of them the site walks page by page
+    direct = {r["id"] for r in src}
+    spine = {r["id"] for r in json.load(
         open(os.path.join(ROOT, "site/src/data/line.json"), encoding="utf-8"))}
 
     entries = []
@@ -355,6 +398,59 @@ def main():
                     "rows": sorted(v, key=lambda e: (e["kind"] != "record", e["name"]))}
                    for s, v in ordered],
     }
+
+    # ── provenance, keyed by slug, for the pedigree charts ──────────────────
+    by_name = collections.defaultdict(list)
+    by_rec = {r["id"]: r for r in recs}
+    for r in recs:
+        by_name[r["name"].lower()].append(r["id"])
+
+    def ids_for(name):
+        """Exactly one person, or nothing. This family reuses forenames without
+        mercy — two George Pitt D'Arcys, three Conyers, two Samuel Charles
+        Sneyds — and an ambiguous match here would draw a recorded edge onto
+        the wrong man, which is the one failure this whole page exists to
+        prevent. Write "Name|1810" to name the year and settle it."""
+        name, _, hint = name.partition("|")
+        n = name.strip().lower()
+        hits = by_name.get(n, [])
+        if hint:
+            hits = [i for i in hits
+                    if hint in ((by_rec[i].get("born") or "") + (by_rec[i].get("died") or ""))]
+        return hits if len(hits) == 1 else []
+
+    prov = {}
+    unmatched = []
+    for a, b, why in REL:
+        ia, ib = ids_for(a), ids_for(b)
+        if not ia or not ib:
+            unmatched.append(a if not ia else b)
+            continue
+        for x, y in ((ia, ib), (ib, ia)):
+            for i in x:
+                e = prov.setdefault(slug[i], {"rel": {}, "graft": None, "line": False, "spine": False})
+                for j in y:
+                    e["rel"].setdefault(slug[j], []).append(why)
+
+    for r in recs:
+        e = prov.setdefault(slug[r["id"]], {"rel": {}, "graft": None, "line": False})
+        e["line"] = r["id"] in direct
+        e["spine"] = r["id"] in spine
+        if r["id"] in hornby:
+            e["graft"] = "Hornby"
+        elif r["id"] in keele:
+            e["graft"] = "Keele"
+
+    with open(os.path.join(ROOT, "site/src/data/provenance.json"), "w", encoding="utf-8") as f:
+        json.dump(prov, f, ensure_ascii=False, indent=0)
+    if unmatched:
+        print("  REL names that are ambiguous or absent, so no edge was drawn:")
+        for x in sorted(set(unmatched)):
+            print("   ·", x)
+    edges = sum(len(v["rel"]) for v in prov.values()) // 2
+    print(f"provenance: {edges} recorded relationships across "
+          f"{sum(1 for v in prov.values() if v['rel'])} people")
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=0)

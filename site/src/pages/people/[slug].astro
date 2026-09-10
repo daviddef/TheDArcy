@@ -3,6 +3,9 @@ import Base from "../../layouts/Base.astro";
 import { u } from "../../lib/url.js";
 import { people, byId } from "../../lib/people.js";
 import mentions from "../../data/mentions.json";
+import prov from "../../data/provenance.json";
+import Pedigree from "../../components/Pedigree.astro";
+import { CORRECTIONS } from "../../lib/corrections.js";
 
 export async function getStaticPaths() {
   const { people } = await import("../../lib/people.js");
@@ -10,10 +13,10 @@ export async function getStaticPaths() {
 }
 const { person: p } = Astro.props;
 
-const link = (id) => {
-  const o = byId.get(id);
-  return o ? { name: o.name, slug: o.slug, life: o.life } : null;
-};
+/* The whole record, not a three-field summary: the pedigree chart needs born
+   and died separately so it can apply a correction to one without losing the
+   other. */
+const link = (id) => byId.get(id) || null;
 
 // children, gathered off the spouse records
 const kids = [];
@@ -23,6 +26,21 @@ for (const s of p.spouses || []) {
     if (o && !kids.some((k) => k.slug === o.slug)) kids.push(o);
   }
 }
+/* Spouses as chart nodes. A spouse who is alive is absent from the build
+   entirely, so there is nothing to draw and nothing to say. */
+const wed = (p.spouses || [])
+  .filter((s) => s.name && !s.living)
+  .map((s) => ({ ...(link(s.id) || { name: s.name, slug: "", life: "" }), married: s.married, marriedPlace: s.marriedPlace }))
+  .filter((o) => o.slug);
+
+/* Others carrying exactly this name. They are different people, kept apart on
+   purpose: this family reuses forenames relentlessly and merging on a name is
+   how one man becomes two, or two become one. */
+const sameName = people.filter((o) => o.name === p.name && o.slug !== p.slug);
+
+const me = prov[p.slug] || { rel: {}, graft: null, line: false };
+const recCount = Object.keys(me.rel || {}).length;
+
 const parents = people.filter((o) =>
   (o.spouses || []).some((s) => (s.children || []).includes(p.id)));
 
@@ -70,40 +88,6 @@ const APPEARS_IN = {
 };
 const appears = APPEARS_IN[p.slug] || [];
 
-/* Where research has overturned the exported tree, the person page shows the
-   archive's finding and prints the tree's version underneath — the same rule
-   /direct-line follows. Correcting silently would hide the one thing this site
-   exists to show, and leaving the tree's value alone would make a person page
-   contradict the narrative page about the same person. */
-const CORRECTIONS = {
-  "william-hartley-sneyd": {
-    born: ["30 September 1837", "the tree says 1838. His Queensland death registration 1902/B/2776 records the date of birth outright, and this archive briefly published 1838 against it and was wrong", "/inquest-1902"],
-    occupation: ["Fount-room Overseer, Queensland Government Printing Office — a contractor later", "the tree records no trade at all. The Blue Books have him in the Government Printing Office on £225, in the public service from 1 February 1862 and last listed in 1890", "/sergeant-sneyd"],
-  },
-  "vivian-ernest-william-sneyd": {
-    born: ["about October 1890", "the tree says between 1890 and 1892. He gave his age as 25 years 2 months on 4 December 1915", "/great-war"],
-    died: ["16 February 1920", "the tree says between 1919 and 1921. Queensland death registration 1920/B/31382", "/great-war"],
-  },
-  "vivian-claude-sneyd": {
-    bornPlace: ["Windsor, Brisbane", "the tree says Rockhampton. His own Service and Casualty Form gives Windsor, Brisbane", "/great-war"],
-  },
-  "george-pitt-d-arcy-1783": {
-    born: ["1780 or 1783 — unresolved", "the tree says 18 February 1783. Every one of the six 1849 death notices gives his age as 69, which puts his birth about 1780. The archive has no register for either and publishes the conflict rather than choosing", "/australia"],
-    bornPlace: ["unknown — Portsmouth or the West Indies", "the tree offers both, joined by \u201cor\u201d, which is the tree admitting it does not know", "/australia"],
-    burial: ["Parramatta, New South Wales — the exact ground is not established", "the tree says only \u201cAustralia\u201d", "/australia"],
-  },
-  "samuel-charles-sneyd-1810": {
-    occupation: ["Soldier of the 4th (King's Own); sergeant of the NSW Mounted Police; chief constable at Moreton Bay; Governor of Brisbane Gaol", "the tree records no trade at all for a man with four careers", "/sergeant-sneyd"],
-  },
-  "arthur-hartley-sneyd": {
-    occupation: ["Typist", "the tree says Clerk. His own attestation paper of 16 September 1915 says typist", "/great-war"],
-    burial: ["No known grave — commemorated at Villers-Bretonneux", "the tree says \u201cFrance\u201d. The Army Form B.2090A gives his burial place as \u201cNot yet to hand\u201d, and it never came to hand", "/finding-arthur"],
-    diedPlace: ["\u201cIn the field, France\u201d — and a sergeant of the 10th Battalion reported Mouquet Farm", "the tree says Pozi\u00e8res. The army's own report of death says only \u201cin the field\u201d, and the only witness to a burial named Mouquet Farm on the 22nd, not Pozi\u00e8res on the 20th", "/finding-arthur"],
-  },
-  "robert-d-arcy": {
-    born: ["by 1758, and probably earlier", "the tree says 1751 in North Yorkshire. The 1751 is arithmetic from an age on a burial register, not a birth record, and nothing places him in Yorkshire", "/hornby"],
-  },
-};
 /* Dates this archive has since checked against the Queensland civil register.
    A tree date that turns out to be right is a finding too, and saying which
    dates are backed by a registration number is the difference between an
@@ -198,6 +182,10 @@ const anyDamaged = notes.some((n) => n.damaged);
       </figure>
     </section>
   )}
+
+  <section class="blk">
+    <Pedigree person={p} life={life} parents={parents} spouses={wed} kids={kids} sibs={sibs} />
+  </section>
 
   <section class="blk">
     <div class="grid two">
@@ -297,6 +285,51 @@ const anyDamaged = notes.some((n) => n.damaged);
           <a href={u("/method")}> The rule →</a></p>
         )}
       </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="grid two">
+      <div class="card">
+        <h3>Where this comes from</h3>
+        {me.graft
+          ? <p class="small"><span class="chip sup">above a graft</span> This person reaches the
+            family only through the <strong>{me.graft}</strong> join, which this archive has tested
+            and rejected. They are published because the tree carries them and deleting a claim is
+            not the same as testing it. <a href={u("/how-far-back")}>The graft →</a></p>
+          : recCount > 0
+            ? <p class="small"><strong>{recCount}</strong> of the relationships drawn above{" "}
+              {recCount === 1 ? "is" : "are"} written in a record this archive has read.{" "}
+              {[...new Set(Object.values(me.rel || {}).map((v) => v[0]))].join("; ")}.</p>
+            : <p class="small">No relationship on this page has been checked against a record.
+              Everything here is what the family tree says, which is a claim and not a source.
+              <a href={u("/method")}> How claims are labelled →</a></p>}
+
+        <p class="small" style="margin-top:.7rem">
+          <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
+        {p.ancestor && (
+          <p class="small" style="margin-top:.5rem">
+            <a href={u("/direct-line")}>See this generation on the spine →</a></p>
+        )}
+      </div>
+
+      {sameName.length > 0 && (
+        <div class="card">
+          <h3>Others of the same name</h3>
+          <p class="small">This family reuses forenames relentlessly. <strong>These are different
+          people, kept apart on purpose rather than merged into one.</strong>
+          <a href={u("/name")}> Why →</a></p>
+          <ul style="margin:.6rem 0 0">
+            {sameName.map((o) => (
+              <li class="small" style="margin-top:.3rem">
+                <a href={u(`/people/${o.slug}`)}>{o.name}</a>
+                <span> — {o.life || "dates unknown"}</span>
+                {prov[o.slug]?.graft && <span> · above the {prov[o.slug].graft} graft</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   </section>
 

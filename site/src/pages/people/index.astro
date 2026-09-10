@@ -47,6 +47,12 @@ const surnames = [...new Set(people.map((p) => p.family).filter(Boolean))].sort(
     <p class="dek" style="margin-top:.9rem">This page is the <em>tree's</em> people. For every named
     individual this archive has met anywhere — including people who are not relatives at all, and
     with the source printed beside each one — see <a href={u("/register")}>the register</a>.</p>
+    <p class="dek" style="margin-top:.9rem">Every one of these pages now opens with a
+    <strong>pedigree chart</strong>, and the border down the left of each card says how that
+    relationship is known: solid where a record this archive has read writes it down, dotted where
+    only the family tree asserts it, struck through where it hangs above a graft the archive has
+    rejected. <strong>Of the 473 charts, 19 contain a single solid edge.</strong> That is not a
+    defect in the drawing. <a href={u("/method")}>How claims are labelled →</a></p>
   </section>
 
   <section class="blk" id="finder">

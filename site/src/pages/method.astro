@@ -78,6 +78,41 @@ const redacted = ancestors.filter((a) => a.living).length;
     </div>
   </section>
 
+  <section class="blk">
+    <h2>How to read a pedigree chart on this site</h2>
+    <p class="dek">Every person page opens with one, and the border down the left edge of each card
+    says <strong>how that relationship is known</strong> — nothing else. It is the only thing the
+    border encodes, because conflating "this is my ancestor" with "this is proved" is how a pedigree
+    starts lying.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>The border</th><th>Means</th><th>The card also says</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Solid</strong></td>
+              <td>the link is written down in a record this archive has opened and read</td>
+              <td>which record — a registration number, a file reference, a deposition</td></tr>
+          <tr><td><strong>Dotted</strong></td>
+              <td>the link comes from the family tree and has not been tested</td>
+              <td><span class="chip inf">tree</span></td></tr>
+          <tr><td><strong>Dashed, name struck through</strong></td>
+              <td>the link comes from the tree <em>and</em> sits above one of the two joins this
+                  archive has tested and rejected</td>
+              <td>which graft — Hornby or Keele</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>The count under each chart is the point of the chart.</strong> It says how many of the
+      relationships drawn are written in a record and how many are not.
+      <strong>Of 473 charts on this site, 19 contain a single solid edge.</strong> A reader who takes
+      nothing else from this archive should take that: a family tree is a set of assertions, and
+      until somebody opens a document, that is all it is.
+      <a href={u("/register")}>The register, where the same split is counted →</a>
+    </div>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>Corrections</h2>
     <p class="dek">A correction is the most valuable thing anyone can send this archive. If something here is

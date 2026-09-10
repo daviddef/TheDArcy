@@ -889,3 +889,47 @@ a.wholink{color:inherit;text-decoration:none;
   border-bottom:1px dotted var(--rule-strong);text-underline-offset:0}
 a.wholink:hover,a.wholink:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
 .prow[hidden],.plgroup[hidden]{display:none!important}
+
+/* ---- pedigree chart on person pages ----
+   Ported from the sibling archives so the six read the same way. The left
+   border of a card says how the RELATIONSHIP is known: solid accent = written
+   in a record; dotted = family tree, untested; dashed and struck = family tree
+   and above a rejected graft. */
+.ptree{margin:0 0 1.6rem;padding:1.1rem 1.1rem .9rem;border:1px solid var(--rule);
+  border-radius:4px;background:var(--panel)}
+.ptree .tier{position:relative}
+.ptree .lab{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-2);margin:.2rem 0 .5rem}
+.ptree .row{display:flex;flex-wrap:wrap;gap:.55rem;align-items:stretch}
+.ptree .node{display:flex;flex-direction:column;gap:.1rem;min-width:10rem;max-width:17rem;
+  padding:.5rem .65rem;border:1px solid var(--rule);border-radius:3px;
+  text-decoration:none;color:inherit;background:var(--paper)}
+.ptree a.node:hover{border-color:var(--accent)}
+.ptree a.node:hover .nm{color:var(--accent)}
+.ptree .node.me{border-width:2px;border-color:var(--ink);background:var(--panel)}
+.ptree .node.small{min-width:8.5rem;padding:.4rem .55rem}
+.ptree .nm{font-family:var(--sans);font-size:14px;font-weight:600;line-height:1.25;color:var(--ink)}
+.ptree .dt{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.ptree .mar{font-family:var(--sans);font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+.ptree .via{font-family:var(--sans);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-3);margin-top:.2rem;line-height:1.35}
+.ptree .node.via-register{border-left:3px solid var(--accent)}
+.ptree .via-register .via{color:var(--accent);text-transform:none;letter-spacing:.02em;font-size:10.5px}
+.ptree .node.via-tree{border-left:3px dotted var(--ink-3)}
+.ptree .node.gone{border-left-style:dashed;opacity:.8}
+.ptree .node.gone .nm{text-decoration:line-through;text-decoration-thickness:1px}
+.ptree .node.gone .via{font-style:italic}
+.ptree .via.gen{color:var(--accent);font-weight:600}
+.ptree .drop{height:.95rem;margin-left:1.5rem;border-left:1px solid var(--rule-strong)}
+.ptree .sibs{margin-top:1rem;padding-top:.8rem;border-top:1px dashed var(--rule)}
+.ptree figcaption{margin-top:1rem;padding-top:.7rem;border-top:1px solid var(--rule);
+  font-family:var(--sans);font-size:11.5px;color:var(--ink-2)}
+.ptree .key{display:inline-flex;align-items:center;gap:.4rem;margin-right:1.1rem;white-space:nowrap}
+.ptree .sw{width:.9rem;height:0;border-top:3px solid var(--accent);display:inline-block}
+.ptree .sw.tree{border-top-style:dotted;border-top-color:var(--ink-3)}
+.ptree .sw.gone{border-top-style:dashed;border-top-color:var(--ink-3)}
+.ptree .warn{margin:.55rem 0 0;line-height:1.55;max-width:82ch}
+@media(max-width:640px){
+  .ptree .node{min-width:0;flex:1 1 46%}
+  .ptree{padding:.8rem .8rem .7rem}
+}
