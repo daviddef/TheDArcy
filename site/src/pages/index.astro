@@ -5,10 +5,26 @@ import { people } from "../lib/people.js";
 import ancestors from "../data/ancestors.json";
 import families from "../data/families.json";
 import places from "../data/places.json";
+import reg from "../data/register.json";
+import dossiers from "../data/dossiers.json";
+import searched from "../data/searched.json";
+import changes from "../data/changes.json";
+import graves from "../data/graves.json";
 
 const published = people.length;
 const redacted = ancestors.filter((a) => a.living).length;
 const surnames = families.filter((f) => f.published > 0).length;
+
+const NUMBERS = [
+  [reg.entries, "entries in the register", `${reg.records} of them from a document this archive has read; the other ${reg.tree} from the family tree`, "/register"],
+  [published, "people published", "and 2,034 living people absent from this build entirely", "/people"],
+  [dossiers.counts.ownPage, "people met in records who are not relatives", "witnesses, constables, a surgeon, convicts, comrades — each with a page", "/who"],
+  [searched.rows.length, "sources read", `${searched.rows.filter((r) => r.outcome === "null").length} of them read and found empty, which is knowledge`, "/searched"],
+  [19, "pedigree charts with a solid edge", "out of 473. A family tree is a set of assertions until somebody opens a document", "/method"],
+  [9, "errors corrected in public", "each still on the page where it was made", "/what-we-got-wrong"],
+];
+
+const RECENT = changes.days.slice(0, 3);
 
 const more = [
   ["/hornby", "The Hornby claim", "The tree runs this line to a Yorkshire earldom. The tree also admits, in its own note, that the join is only 'thought to be' — and then contradicts itself about which earl. Set out in full."],
@@ -24,6 +40,13 @@ const more = [
   ["/the-women", "The women", "Eight wives of the direct line who bore sixty-seven children between them, and are recorded in a marriage line and a burial plot apiece. The most valuable document in this archive is one of their testimonies."],
   ["/families", "The families they married", "Sneyd, Atkinson, Murdoch, Atwell, Blum, Keeling, Creech, Matson, Wakefield, Wright — out of Limerick, Monaghan, Cork, Ayrshire, Somerset, Bristol and Germany."],
   ["/name", "The name", "D'Arcy was coined twice: once in Normandy as a place, once in Ireland as a colour. The apostrophe is a hint and not a proof."],
+  ["/search", "Search", "One box over the whole archive — people, register entries, places and every page. It knows that Saniger, Sainger and Sinnegar are the same family, and that D'Arcy is also Darcy."],
+  ["/searched", "What has been read", "Every source this archive has opened, including the ones that gave nothing. Four of the null results are load-bearing: they are why the Hornby claim is called unevidenced rather than disputed."],
+  ["/dna", "What the DNA says", "A living descendant tested. Cutting both rejected grafts — 98 people, thirteen generations, four royal houses — moves her predicted ancestry by 0.39 of a percentage point."],
+  ["/timeline", "Timeline", "Lives against the state that governed them. In an archive built almost entirely out of government paper, the state is not background — it is the reason the records exist."],
+  ["/errands", "Errands", "Nine jobs that need a login, a card or a human being in a reading room. The first is a will, digitised, about £3.50, and it might name Robert D'Arcy's father."],
+  ["/who", "Every person named", "The seventy-five people this archive met in documents and had nowhere to put: the constable who recovered a body, the six men who gave six accounts of one death, the convicts who broke open a major's crate."],
+  ["/graves", "Graves and burials", "Where this family lies — and two cemetery plot references that two different people are each supposed to occupy."],
   ["/register", "The register", "Every named individual this archive has met anywhere — 586 entries, with the source printed beside each one. Only 113 of them rest on a document. The other 473 come out of the family tree, and 98 of those hang above a graft the archive has already rejected."],
   ["/people", "The people", `Every person the archive can name and publish — ${published} of them, most of whom never continued the line.`],
   ["/places", "Places", `${places.length} places, from Hornby Castle to Boulia. Read the Australian list in order and you can watch a family spread along the Queensland railway.`],
@@ -160,6 +183,35 @@ const more = [
         March 2010, runs to four thousand words and carries the African Grey parrot, the mango tree,
         the cigarettes at nine, and Cyclone Althea. <a href={u("/brisbane")}>Brisbane →</a></p>
       </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Recently found</div>
+    <h2 style="margin-top:.4rem">What changed, most recent first</h2>
+    <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.1rem">
+      {RECENT.map((d) => (
+        <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
+          <div class="small mono" style="color:var(--ink-3)">{d.when}</div>
+          <div style="margin-top:.2rem"><strong>{d.title}</strong></div>
+          {d.found && <p class="small" style="margin-top:.3rem;color:var(--ink-2)">{d.found}</p>}
+        </div>
+      ))}
+    </div>
+    <p class="small" style="margin-top:1.2rem"><a href={u("/changes")}>Every pass, in full →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The archive in numbers</div>
+    <h2 style="margin-top:.4rem">What it holds, and what it will not claim</h2>
+    <div class="grid three" style="margin-top:1.3rem">
+      {NUMBERS.map(([n, label, note, href]) => (
+        <a class="cardlink" href={u(href)}>
+          <div style="font-family:var(--serif);font-size:2.1rem;line-height:1;color:var(--accent)">{n}</div>
+          <div class="nm" style="margin-top:.35rem">{label}</div>
+          <p class="small" style="margin-top:.35rem;color:var(--ink-2)">{note}</p>
+        </a>
+      ))}
     </div>
   </section>
 

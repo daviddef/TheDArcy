@@ -1,0 +1,56 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import m from "../data/marriages.json";
+const placed = m.rows.filter((r) => r.place);
+const century = (r) => Math.floor(r.sort[0] / 100) * 100;
+const groups = {};
+for (const r of m.rows) (groups[century(r)] ||= []).push(r);
+const order = Object.keys(groups).sort((a, b) => a - b);
+---
+<Base title="Marriages" eyebrow={`${m.n} with a date · ${placed.length} with a place`}
+  dek="Every marriage this archive can date, in order. It is the only series on the site that shows the family actually moving — Portsea, Camden, Carrigaline, Muttaburra, Toowoomba.">
+  <section class="blk">
+    <p class="lede">A birth tells you where a family already was. <strong>A marriage tells you where
+    it went.</strong> Read the places below in order and the shape of two hundred years falls out of
+    them without anyone having to narrate it.</p>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Portsea 1779. Camden 1837. Carrigaline 1853. Muttaburra 1891. Toowoomba 1952.</strong>
+      A naval town, a garrison village in New South Wales, a parish in County Cork, a shearing town
+      six hundred kilometres inland, and a Darling Downs city. Nobody chose that itinerary as a
+      family plan — it is a regiment, a ship, a telegraph line and a railway.
+      <a href={u("/timeline")}>Against the regimes that caused it →</a>
+    </div>
+  </section>
+
+  {order.map((c) => (
+    <section class="blk">
+      <h2>{c}s</h2>
+      <p class="small">{groups[c].length} {groups[c].length === 1 ? "marriage" : "marriages"}</p>
+      <div class="scroll" style="margin-top:1rem">
+        <table>
+          <thead><tr><th class="m">Date</th><th>Who</th><th>Where</th></tr></thead>
+          <tbody>
+            {groups[c].map((r) => (
+              <tr>
+                <td class="m">{r.date}</td>
+                <td>{r.aSlug ? <a href={u(`/people/${r.aSlug}`)}>{r.a}</a> : r.a}
+                  <span class="small"> and </span>
+                  {r.bSlug ? <a href={u(`/people/${r.bSlug}`)}>{r.b}</a> : r.b}
+                  {r.divorced && <span class="small" style="color:var(--ink-3)"> · divorced {r.divorced}</span>}</td>
+                <td class="small">{r.place || "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+
+  <section class="blk" style="border-bottom:0">
+    <p class="dek"><strong>{m.n - placed.length}</strong> of these have a date and no place. That is
+    a gap in the searching, not in the records — a marriage that produced a date came from somewhere,
+    and the somewhere is usually one certificate away.
+    <a href={u("/errands")}>The queue →</a> · <a href={u("/households")}>Households →</a></p>
+  </section>
+</Base>

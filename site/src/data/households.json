@@ -1,0 +1,4644 @@
+{
+"rows": [
+{
+"a": "Heinrich VI von Wildeshausen",
+"aSlug": "heinrich-vi-von-wildeshausen",
+"b": "Elisabeth von Tecklenburg",
+"bSlug": "elisabeth-von-tecklenburg",
+"married": "",
+"place": "",
+"sort": [
+1202,
+99,
+99
+],
+"kids": [
+{
+"name": "Hedwig von Oldenburg",
+"slug": "hedwig-von-oldenburg",
+"life": "1233–1315"
+}
+]
+},
+{
+"a": "Konrad (Herr) von DIEPHOLZ",
+"aSlug": "konrad-herr-von-diepholz",
+"b": "Hedwig (Grafin) von RIETBERG",
+"bSlug": "hedwig-grafin-von-rietberg",
+"married": "",
+"place": "",
+"sort": [
+1236,
+99,
+99
+],
+"kids": [
+{
+"name": "Hedwig of Diepholz",
+"slug": "hedwig-of-diepholz",
+"life": ""
+}
+]
+},
+{
+"a": "Christian III, Count of Oldenburg",
+"aSlug": "christian-iii-count-of-oldenburg",
+"b": "Hedwig von Oldenburg",
+"bSlug": "hedwig-von-oldenburg",
+"married": "",
+"place": "",
+"sort": [
+1250,
+99,
+99
+],
+"kids": [
+{
+"name": "John II, Count of Oldenburg",
+"slug": "john-ii-count-of-oldenburg",
+"life": "d. 1314"
+}
+]
+},
+{
+"a": "John Dixie",
+"aSlug": "john-dixie",
+"b": "Joane Dixie",
+"bSlug": "joane-dixie",
+"married": "",
+"place": "",
+"sort": [
+1524,
+99,
+99
+],
+"kids": [
+{
+"name": "Wolston (Wolstan) Dixie",
+"slug": "wolston-wolstan-dixie",
+"life": "1576–1650"
+}
+]
+},
+{
+"a": "William SUTTON",
+"aSlug": "william-sutton-1535",
+"b": "Anne Mordaunt",
+"bSlug": "anne-mordaunt",
+"married": "",
+"place": "",
+"sort": [
+1535,
+99,
+99
+],
+"kids": [
+{
+"name": "William Sutton",
+"slug": "william-sutton-1561",
+"life": "1561–1611"
+}
+]
+},
+{
+"a": "Wolfgang Zyllenhardt",
+"aSlug": "wolfgang-zyllenhardt",
+"b": "Susanne Gravenegg",
+"bSlug": "susanne-gravenegg",
+"married": "",
+"place": "",
+"sort": [
+1535,
+99,
+99
+],
+"kids": [
+{
+"name": "Margaretha Von Zyllenhardt",
+"slug": "margaretha-von-zyllenhardt",
+"life": "1558–1608"
+}
+]
+},
+{
+"a": "John Noel",
+"aSlug": "john-noel",
+"b": "Anne Fowler",
+"bSlug": "anne-fowler",
+"married": "",
+"place": "England",
+"sort": [
+1540,
+99,
+99
+],
+"kids": [
+{
+"name": "William Noel",
+"slug": "william-noel-1581",
+"life": "1581–1641"
+}
+]
+},
+{
+"a": "Francis Thomas CONEY [Knight of Bassingthorpe]",
+"aSlug": "francis-thomas-coney-knight-of-bassingthorpe",
+"b": "Alice LEIGH",
+"bSlug": "alice-leigh",
+"married": "6 NOV 1554",
+"place": "St. Olave, Old Jewry, London, England",
+"sort": [
+1554,
+11,
+6
+],
+"kids": [
+{
+"name": "Susan (Caney) Coney",
+"slug": "susan-caney-coney",
+"life": "1568–1638"
+}
+]
+},
+{
+"a": "Thomas DABRIDGECOURT of Longdon Hall",
+"aSlug": "thomas-dabridgecourt-of-longdon-hall",
+"b": "Alice GRISWOLD or Greswald",
+"bSlug": "alice-griswold-or-greswald",
+"married": "1556",
+"place": "Solihul, Warwickshire, England",
+"sort": [
+1556,
+99,
+99
+],
+"kids": [
+{
+"name": "Katherine Dabridgecourt",
+"slug": "katherine-dabridgecourt",
+"life": "b. 1556"
+}
+]
+},
+{
+"a": "Thomas Darcy",
+"aSlug": "thomas-darcy",
+"b": "Elizabeth Conyers",
+"bSlug": "elizabeth-conyers",
+"married": "",
+"place": "",
+"sort": [
+1565,
+7,
+5
+],
+"kids": [
+{
+"name": "Conyers (of Hornby Castle) D'arcy",
+"slug": "conyers-of-hornby-castle-d-arcy",
+"life": "1570–1653"
+}
+]
+},
+{
+"a": "Conrad V von Degenfeld",
+"aSlug": "conrad-v-von-degenfeld",
+"b": "Margaretha Von Zyllenhardt",
+"bSlug": "margaretha-von-zyllenhardt",
+"married": "1578",
+"place": "Heidelberg, Heidelberg, Baden, Germany",
+"sort": [
+1578,
+99,
+99
+],
+"kids": [
+{
+"name": "Christoph Martin (Freiherr) von Degenfield",
+"slug": "christoph-martin-freiherr-von-degenfield",
+"life": "1594–1653"
+}
+]
+},
+{
+"a": "John Fullwood",
+"aSlug": "john-fullwood",
+"b": "Katherine Dabridgecourt",
+"bSlug": "katherine-dabridgecourt",
+"married": "1580",
+"place": "Langdon Hall, Warwickshire, England",
+"sort": [
+1580,
+99,
+99
+],
+"kids": [
+{
+"name": "Frances Fullwood",
+"slug": "frances-fullwood",
+"life": "1585–1632"
+}
+]
+},
+{
+"a": "Hans Meinhard von Schönberg",
+"aSlug": "hans-meinhard-von-schonberg",
+"b": "Anne Sutton",
+"bSlug": "anne-sutton",
+"married": "",
+"place": "",
+"sort": [
+1582,
+8,
+28
+],
+"kids": [
+{
+"name": "Marshal Frederic von Schomberg",
+"slug": "marshal-frederic-von-schomberg",
+"life": "1615–1690"
+}
+]
+},
+{
+"a": "William Sutton",
+"aSlug": "william-sutton-1561",
+"b": "Susan (Caney) Coney",
+"bSlug": "susan-caney-coney",
+"married": "10 NOV 1584",
+"place": "Basingthorpe, Linconshire, England",
+"sort": [
+1584,
+11,
+10
+],
+"kids": [
+{
+"name": "Robert Ambrose Sutton",
+"slug": "robert-ambrose-sutton",
+"life": "1594–1668"
+}
+]
+},
+{
+"a": "Thomas Howard, 1st Earl of Berkshire",
+"aSlug": "thomas-howard-1st-earl-of-berkshire",
+"b": "Lady Elizabeth Cecil",
+"bSlug": "lady-elizabeth-cecil",
+"married": "",
+"place": "",
+"sort": [
+1587,
+10,
+8
+],
+"kids": [
+{
+"name": "Frances (Lady of Berkshire) Howard",
+"slug": "frances-lady-of-berkshire-howard",
+"life": "1627–1670"
+}
+]
+},
+{
+"a": "James I (James Vi Of Scotland) King Of England Stuart (født stuart), I of England & Ireland, IV of Scotland",
+"aSlug": "james-i-james-vi-of-scotland-king-of-england-stuart-f-dt-stuart-i-of-england-ireland-iv-of-scotland",
+"b": "Anne (Queen consort) of Denmark von Oldenburg",
+"bSlug": "anne-queen-consort-of-denmark-von-oldenburg",
+"married": "23 NOV 1589",
+"place": "Old Bishop's Palace in Oslo, Oslo, Oslo, Oslo, Norway",
+"sort": [
+1589,
+11,
+23
+],
+"kids": [
+{
+"name": "Elizabeth (Queen consort of Bohemia) STUART",
+"slug": "elizabeth-queen-consort-of-bohemia-stuart",
+"life": "1596–1662"
+}
+]
+},
+{
+"a": "Thomas Rokeby",
+"aSlug": "thomas-rokeby",
+"b": "Mary Cartwright",
+"bSlug": "mary-cartwright",
+"married": "1591",
+"place": "Hornby",
+"sort": [
+1591,
+99,
+99
+],
+"kids": [
+{
+"name": "Grace Rokeby",
+"slug": "grace-rokeby",
+"life": "1595–1658"
+}
+]
+},
+{
+"a": "Conyers (of Hornby Castle) D'arcy",
+"aSlug": "conyers-of-hornby-castle-d-arcy",
+"b": "Dorothy Bellasyse",
+"bSlug": "dorothy-bellasyse",
+"married": "2 MAY 1594",
+"place": "Coxwold, Yorkshire",
+"sort": [
+1594,
+5,
+2
+],
+"kids": [
+{
+"name": "Margaret D'Arcy",
+"slug": "margaret-d-arcy-1594",
+"life": "1594–1668"
+},
+{
+"name": "Dorothy D'Arcy",
+"slug": "dorothy-d-arcy",
+"life": "1597–1666"
+},
+{
+"name": "Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy",
+"slug": "conyers-1st-earl-of-holderness-8th-lord-darcy-de-knayth-5th-lord-conyers-d-arcy",
+"life": "1598–1689"
+},
+{
+"name": "Barbara Conyers D'Arcy",
+"slug": "barbara-conyers-d-arcy",
+"life": "1600–1696"
+},
+{
+"name": "Isabel D'Arcy",
+"slug": "isabel-d-arcy",
+"life": "b. 1609"
+},
+{
+"name": "Elizabeth D'Arcy",
+"slug": "elizabeth-d-arcy",
+"life": "1610–1729"
+},
+{
+"name": "Grace D'Arcy",
+"slug": "grace-d-arcy-1611",
+"life": "1611–1680"
+},
+{
+"name": "Philadelphia D'ARCY",
+"slug": "philadelphia-d-arcy",
+"life": "1619–1627"
+},
+{
+"name": "Edward D'ARCY",
+"slug": "edward-d-arcy",
+"life": "1620–1621"
+},
+{
+"name": "Mary D'Arcy",
+"slug": "mary-d-arcy",
+"life": "b. 1624"
+}
+]
+},
+{
+"a": "Thomas de Beaumont",
+"aSlug": "thomas-de-beaumont",
+"b": "Catherine Farnham",
+"bSlug": "catherine-farnham",
+"married": "1594",
+"place": "Stroughton Grange, Leicestershire, England",
+"sort": [
+1594,
+99,
+99
+],
+"kids": [
+{
+"name": "Frances de Beaumont",
+"slug": "frances-de-beaumont",
+"life": "1580–1654"
+}
+]
+},
+{
+"a": "Wolston (Wolstan) Dixie",
+"aSlug": "wolston-wolstan-dixie",
+"b": "Frances de Beaumont",
+"bSlug": "frances-de-beaumont",
+"married": "31 AUG 1598",
+"place": "Clerkenwell, London, England",
+"sort": [
+1598,
+8,
+31
+],
+"kids": [
+{
+"name": "Elizabeth Dixie",
+"slug": "elizabeth-dixie",
+"life": "1620–1681"
+}
+]
+},
+{
+"a": "William Noel",
+"aSlug": "william-noel-1581",
+"b": "Frances Fullwood",
+"bSlug": "frances-fullwood",
+"married": "2 OCT 1600",
+"place": "Solihull, Warwickshire, England",
+"sort": [
+1600,
+10,
+2
+],
+"kids": [
+{
+"name": "Varney (Vere) (Verney) Noel (Nowell)",
+"slug": "varney-vere-verney-noel-nowell",
+"life": "1604–1670"
+}
+]
+},
+{
+"a": "Anthony St Leger",
+"aSlug": "anthony-st-leger",
+"b": "Bridget Mayney",
+"bSlug": "bridget-mayney",
+"married": "",
+"place": "",
+"sort": [
+1610,
+99,
+99
+],
+"kids": [
+{
+"name": "Mary St. Leger",
+"slug": "mary-st-leger",
+"life": "1640–1669"
+}
+]
+},
+{
+"a": "King Of Bohemia Frederick V Of von der Pflaz, King of Bohemia",
+"aSlug": "king-of-bohemia-frederick-v-of-von-der-pflaz-king-of-bohemia",
+"b": "Elizabeth (Queen consort of Bohemia) STUART",
+"bSlug": "elizabeth-queen-consort-of-bohemia-stuart",
+"married": "14 FEB 1613",
+"place": "Royal Chapel, Palace of Whitehall",
+"sort": [
+1613,
+2,
+14
+],
+"kids": [
+{
+"name": "Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsbach)",
+"slug": "elector-palatine-charles-louis-von-der-pfalz-wittelsbach-pfalz-simmern-wittelsbach",
+"life": "1617–1680"
+}
+]
+},
+{
+"a": "Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy",
+"aSlug": "conyers-1st-earl-of-holderness-8th-lord-darcy-de-knayth-5th-lord-conyers-d-arcy",
+"b": "Grace Rokeby",
+"bSlug": "grace-rokeby",
+"married": "14 OCT 1616",
+"place": "Old Holy Trinity Church, Wentworth, Yorkshire",
+"sort": [
+1616,
+10,
+14
+],
+"kids": [
+{
+"name": "Conyers, 2nd Earl of Holderness Darcy",
+"slug": "conyers-2nd-earl-of-holderness-darcy",
+"life": "1621–1692"
+},
+{
+"name": "Grace D'Arcy",
+"slug": "grace-d-arcy-1633",
+"life": "1633–1657"
+}
+]
+},
+{
+"a": "Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsbach)",
+"aSlug": "elector-palatine-charles-louis-von-der-pfalz-wittelsbach-pfalz-simmern-wittelsbach",
+"b": "Marie Luise von Degenfeld",
+"bSlug": "marie-luise-von-degenfeld",
+"married": "",
+"place": "",
+"sort": [
+1617,
+99,
+99
+],
+"kids": [
+{
+"name": "Karoline Charlotte Elisabeth von der Pfalz",
+"slug": "karoline-charlotte-elisabeth-von-der-pfalz",
+"life": "1659–1696"
+}
+]
+},
+{
+"a": "Christoph Martin (Freiherr) von Degenfield",
+"aSlug": "christoph-martin-freiherr-von-degenfield",
+"b": "Anna Maria Adelmann von Adelmannsfelden",
+"bSlug": "anna-maria-adelmann-von-adelmannsfelden",
+"married": "22 APR 1628",
+"place": "dunnau, wurtemburg",
+"sort": [
+1628,
+4,
+22
+],
+"kids": [
+{
+"name": "Marie Luise von Degenfeld",
+"slug": "marie-luise-von-degenfeld",
+"life": "1634–1677"
+}
+]
+},
+{
+"a": "Varney (Vere) (Verney) Noel (Nowell)",
+"aSlug": "varney-vere-verney-noel-nowell",
+"b": "Elizabeth Dixie",
+"bSlug": "elizabeth-dixie",
+"married": "13 APR 1635",
+"place": "Market Bosworth, Leicester, England",
+"sort": [
+1635,
+4,
+13
+],
+"kids": [
+{
+"name": "William Noel",
+"slug": "william-noel-1642",
+"life": "1642–1675"
+}
+]
+},
+{
+"a": "Marshal Frederic von Schomberg",
+"aSlug": "marshal-frederic-von-schomberg",
+"b": "Johanna Elisabeth Schönberg auf Wesel",
+"bSlug": "johanna-elisabeth-schonberg-auf-wesel",
+"married": "30 APR 1638",
+"place": "",
+"sort": [
+1638,
+4,
+30
+],
+"kids": [
+{
+"name": "Meinhard von Schönburg",
+"slug": "meinhard-von-schonburg",
+"life": "1641–1719"
+}
+]
+},
+{
+"a": "Meinhard von Schönburg",
+"aSlug": "meinhard-von-schonburg",
+"b": "Karoline Charlotte Elisabeth von der Pfalz",
+"bSlug": "karoline-charlotte-elisabeth-von-der-pfalz",
+"married": "",
+"place": "",
+"sort": [
+1641,
+6,
+30
+],
+"kids": [
+{
+"name": "Friederike Susanna Frederica von Schönburg",
+"slug": "friederike-susanna-frederica-von-schonburg",
+"life": "1687–1751"
+}
+]
+},
+{
+"a": "Conyers, 2nd Earl of Holderness Darcy",
+"aSlug": "conyers-2nd-earl-of-holderness-darcy",
+"b": "Frances (Lady of Berkshire) Howard",
+"bSlug": "frances-lady-of-berkshire-howard",
+"married": "8 FEB 1650",
+"place": "",
+"sort": [
+1650,
+2,
+8
+],
+"kids": [
+{
+"name": "John Darcy, Lord D'arcy, Lord Conyers",
+"slug": "john-darcy-lord-d-arcy-lord-conyers",
+"life": "1659–1688"
+}
+]
+},
+{
+"a": "William Sanigar",
+"aSlug": "william-sanigar",
+"b": "Mary",
+"bSlug": "mary",
+"married": "",
+"place": "",
+"sort": [
+1654,
+99,
+99
+],
+"kids": [
+{
+"name": "William Saniger",
+"slug": "william-saniger",
+"life": "1679–1718"
+}
+]
+},
+{
+"a": "John Darcy, Lord D'arcy, Lord Conyers",
+"aSlug": "john-darcy-lord-d-arcy-lord-conyers",
+"b": "Bridget Sutton",
+"bSlug": "bridget-sutton",
+"married": "",
+"place": "",
+"sort": [
+1659,
+99,
+99
+],
+"kids": [
+{
+"name": "Robert Darcy",
+"slug": "robert-darcy",
+"life": "1681–1721"
+}
+]
+},
+{
+"a": "Robert Ambrose Sutton",
+"aSlug": "robert-ambrose-sutton",
+"b": "Mary St. Leger",
+"bSlug": "mary-st-leger",
+"married": "21 FEB 1660",
+"place": "St James, Clerkenwell, London, England",
+"sort": [
+1660,
+2,
+21
+],
+"kids": [
+{
+"name": "Bridget Sutton",
+"slug": "bridget-sutton",
+"life": "1663–1736"
+}
+]
+},
+{
+"a": "Ralph Sneyd",
+"aSlug": "ralph-sneyd-1669",
+"b": "Frances Noel",
+"bSlug": "frances-noel",
+"married": "",
+"place": "",
+"sort": [
+1669,
+12,
+22
+],
+"kids": [
+{
+"name": "Ralph Sneyd",
+"slug": "ralph-sneyd-1692",
+"life": "1692–1733"
+}
+]
+},
+{
+"a": "William Noel",
+"aSlug": "william-noel-1642",
+"b": "Frances Ward",
+"bSlug": "frances-ward",
+"married": "9 JUL 1672",
+"place": "Himley, Worcestershire",
+"sort": [
+1672,
+7,
+9
+],
+"kids": [
+{
+"name": "Frances Noel",
+"slug": "frances-noel",
+"life": "1673–1751"
+}
+]
+},
+{
+"a": "William Saniger",
+"aSlug": "william-saniger",
+"b": "Bridget Bayley",
+"bSlug": "bridget-bayley",
+"married": "",
+"place": "Stone, Gloucester, England",
+"sort": [
+1679,
+10,
+12
+],
+"kids": [
+{
+"name": "Thomas Saniger",
+"slug": "thomas-saniger-1711",
+"life": "b. 1711"
+}
+]
+},
+{
+"a": "Thomas (Francis) D'Arcy",
+"aSlug": "thomas-francis-d-arcy",
+"b": "Margaret? D'Arcy",
+"bSlug": "margaret-d-arcy",
+"married": "",
+"place": "",
+"sort": [
+1681,
+7,
+99
+],
+"kids": [
+{
+"name": "Robert D'Arcy",
+"slug": "robert-d-arcy",
+"life": "1751–1827"
+},
+{
+"name": "Constantine D'Arcy",
+"slug": "constantine-d-arcy-1759",
+"life": "1759–1778"
+}
+]
+},
+{
+"a": "William Ward",
+"aSlug": "william-ward",
+"b": "Martha Lewis",
+"bSlug": "martha-lewis",
+"married": "",
+"place": "",
+"sort": [
+1700,
+99,
+99
+],
+"kids": [
+{
+"name": "Joseph Ward",
+"slug": "joseph-ward",
+"life": "b. 1725"
+}
+]
+},
+{
+"a": "Edward Cotton",
+"aSlug": "edward-cotton-1687",
+"b": "Lydia Lyon",
+"bSlug": "lydia-lyon",
+"married": "15 MAY 1712",
+"place": "Toddington, Gloucestershire, England",
+"sort": [
+1712,
+5,
+15
+],
+"kids": [
+{
+"name": "Edward Cotton",
+"slug": "edward-cotton-1716",
+"life": "1716–1787"
+}
+]
+},
+{
+"a": "Robert Darcy",
+"aSlug": "robert-darcy",
+"b": "Friederike Susanna Frederica von Schönburg",
+"bSlug": "friederike-susanna-frederica-von-schonburg",
+"married": "26 MAY 1715",
+"place": "Hillingdon, Middlesex, England, Kingdom of Great Britain",
+"sort": [
+1715,
+5,
+26
+],
+"kids": [
+{
+"name": "Thomas (Francis) D'Arcy",
+"slug": "thomas-francis-d-arcy",
+"life": "1681–1776"
+},
+{
+"name": "George Schomberg d'Arcy",
+"slug": "george-schomberg-d-arcy",
+"life": "1716–1722"
+},
+{
+"name": "Caroline Louisa D'ARCY",
+"slug": "caroline-louisa-d-arcy",
+"life": "1717–1778"
+}
+]
+},
+{
+"a": "Ralph Sneyd",
+"aSlug": "ralph-sneyd-1692",
+"b": "Anne Maria Holford",
+"bSlug": "anne-maria-holford",
+"married": "22 APR 1718",
+"place": "Keele, Staffordshire, England",
+"sort": [
+1718,
+4,
+22
+],
+"kids": [
+{
+"name": "Dryden Sneyd",
+"slug": "dryden-sneyd",
+"life": "1721–1741"
+},
+{
+"name": "Ralph Sneyd",
+"slug": "ralph-sneyd-1723",
+"life": "1723–1793"
+},
+{
+"name": "Edward Sneyd",
+"slug": "edward-sneyd-1691",
+"life": "d. 1691"
+},
+{
+"name": "William Sneyd",
+"slug": "william-sneyd",
+"life": ""
+}
+]
+},
+{
+"a": "William Jones",
+"aSlug": "william-jones",
+"b": "Sarah",
+"bSlug": "sarah",
+"married": "",
+"place": "",
+"sort": [
+1722,
+8,
+12
+],
+"kids": [
+{
+"name": "Lydia Jones",
+"slug": "lydia-jones",
+"life": "1770–1851"
+}
+]
+},
+{
+"a": "Ralph Sneyd",
+"aSlug": "ralph-sneyd-1723",
+"b": "Margaret Dunning",
+"bSlug": "margaret-dunning",
+"married": "",
+"place": "",
+"sort": [
+1723,
+12,
+10
+],
+"kids": [
+{
+"name": "William Sneyd",
+"slug": "william-sneyd-1746",
+"life": "b. 1746"
+},
+{
+"name": "Frances Sneyd",
+"slug": "frances-sneyd",
+"life": "1751–1809"
+},
+{
+"name": "Walter Sneyd",
+"slug": "walter-sneyd-1752",
+"life": "1752–1829"
+},
+{
+"name": "Ralph Sneyd",
+"slug": "ralph-sneyd-1753",
+"life": "1753–1808"
+},
+{
+"name": "Edward Sneyd",
+"slug": "edward-sneyd-1754",
+"life": "1754–1776"
+},
+{
+"name": "John Sneyd",
+"slug": "john-sneyd",
+"life": "1760–1835"
+},
+{
+"name": "Henry Sneyd",
+"slug": "henry-sneyd",
+"life": "d. 1791"
+},
+{
+"name": "George Sneyd",
+"slug": "george-sneyd",
+"life": "d. 1790"
+}
+]
+},
+{
+"a": "Friederike Susanna Frederica von Schönburg",
+"aSlug": "friederike-susanna-frederica-von-schonburg",
+"b": "(Sir) Benjamin William Mildmay",
+"bSlug": "",
+"married": "18 JUN 1724",
+"place": "Of, Berlin, Germany",
+"sort": [
+1724,
+6,
+18
+],
+"kids": []
+},
+{
+"a": "Richard Atkinson",
+"aSlug": "richard-atkinson-1725",
+"b": "Mary Love",
+"bSlug": "mary-love",
+"married": "",
+"place": "",
+"sort": [
+1725,
+99,
+99
+],
+"kids": [
+{
+"name": "Richard Atkinson",
+"slug": "richard-atkinson-1765",
+"life": "1765–1826"
+}
+]
+},
+{
+"a": "Thomas Saniger",
+"aSlug": "thomas-saniger-1711",
+"b": "Margaret Richards",
+"bSlug": "margaret-richards",
+"married": "3 FEB 1733",
+"place": "",
+"sort": [
+1733,
+2,
+3
+],
+"kids": [
+{
+"name": "Thomas Saniger",
+"slug": "thomas-saniger-1744",
+"life": "1744–1819"
+}
+]
+},
+{
+"a": "Anne Maria Holford",
+"aSlug": "anne-maria-holford",
+"b": "Crewe Chetwood",
+"bSlug": "",
+"married": "1735",
+"place": "",
+"sort": [
+1735,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Caroline Louisa D'ARCY",
+"aSlug": "caroline-louisa-d-arcy",
+"b": "William Henry Kerr",
+"bSlug": "",
+"married": "1735",
+"place": "Schomberg and, Leinster Province, Ireland",
+"sort": [
+1735,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Robert Kent",
+"aSlug": "robert-kent",
+"b": "Ann Peevers",
+"bSlug": "ann-peevers",
+"married": "",
+"place": "",
+"sort": [
+1740,
+99,
+99
+],
+"kids": [
+{
+"name": "William Kent",
+"slug": "william-kent",
+"life": "b. 1767"
+}
+]
+},
+{
+"a": "Agostino Falcone",
+"aSlug": "agostino-falcone",
+"b": "Elisabetta Sabina",
+"bSlug": "elisabetta-sabina",
+"married": "",
+"place": "",
+"sort": [
+1740,
+99,
+99
+],
+"kids": [
+{
+"name": "Pasquale Pascuale Falco",
+"slug": "pasquale-pascuale-falco",
+"life": "b. 1765"
+}
+]
+},
+{
+"a": "Edward Cotton",
+"aSlug": "edward-cotton-1716",
+"b": "Elizabeth",
+"bSlug": "elizabeth",
+"married": "1741",
+"place": "Ashton, Underhill, Gloucestershire, England",
+"sort": [
+1741,
+99,
+99
+],
+"kids": [
+{
+"name": "Catherine Cotton",
+"slug": "catherine-cotton",
+"life": "1746–1778"
+}
+]
+},
+{
+"a": "William Sneyd",
+"aSlug": "william-sneyd-1746",
+"b": "Mary Blackbourne",
+"bSlug": "mary-blackbourne",
+"married": "",
+"place": "",
+"sort": [
+1746,
+99,
+99
+],
+"kids": [
+{
+"name": "Samuel Sneyd",
+"slug": "samuel-sneyd",
+"life": "1769–1856"
+},
+{
+"name": "Dinah Sneyd",
+"slug": "dinah-sneyd",
+"life": "b. 1772"
+},
+{
+"name": "Theodosia Sneyd",
+"slug": "theodosia-sneyd",
+"life": "b. 1773"
+},
+{
+"name": "Sarah Sneyd",
+"slug": "sarah-sneyd",
+"life": "b. 1776"
+},
+{
+"name": "James Sneyd",
+"slug": "james-sneyd-1779",
+"life": "b. 1779"
+},
+{
+"name": "William Sneyd",
+"slug": "william-sneyd-1780",
+"life": "b. 1780"
+},
+{
+"name": "Mary Sneyd",
+"slug": "mary-sneyd-1788",
+"life": "b. 1788"
+}
+]
+},
+{
+"a": "Joseph Ward",
+"aSlug": "joseph-ward",
+"b": "Martha Garden",
+"bSlug": "martha-garden",
+"married": "27 OCT 1747",
+"place": "South Leith, Midlothian, Scotland",
+"sort": [
+1747,
+10,
+27
+],
+"kids": [
+{
+"name": "Jean Ward",
+"slug": "jean-ward",
+"life": "1754–1823"
+}
+]
+},
+{
+"a": "Constantine D'Arcy",
+"aSlug": "constantine-d-arcy-1759",
+"b": "McCann",
+"bSlug": "",
+"married": "",
+"place": "",
+"sort": [
+1759,
+99,
+99
+],
+"kids": [
+{
+"name": "Robert Edward D'Arcy",
+"slug": "robert-edward-d-arcy",
+"life": "1777–1827"
+}
+]
+},
+{
+"a": "Mathew Mulcahy",
+"aSlug": "mathew-mulcahy",
+"b": "Ellen Morris",
+"bSlug": "ellen-morris",
+"married": "",
+"place": "",
+"sort": [
+1760,
+99,
+99
+],
+"kids": [
+{
+"name": "Thomas Mulcahy",
+"slug": "thomas-mulcahy",
+"life": "b. 1780"
+}
+]
+},
+{
+"a": "Richard Atkinson",
+"aSlug": "richard-atkinson-1765",
+"b": "Rose Cole",
+"bSlug": "rose-cole",
+"married": "",
+"place": "",
+"sort": [
+1765,
+99,
+99
+],
+"kids": [
+{
+"name": "Richard Atkinson",
+"slug": "richard-atkinson-1801",
+"life": "1801–1865"
+}
+]
+},
+{
+"a": "Pasquale Pascuale Falco",
+"aSlug": "pasquale-pascuale-falco",
+"b": "Chiara Rivetti Rivotti",
+"bSlug": "chiara-rivetti-rivotti",
+"married": "",
+"place": "",
+"sort": [
+1765,
+99,
+99
+],
+"kids": [
+{
+"name": "Vincenzo Falco",
+"slug": "vincenzo-falco",
+"life": "1793–1875"
+}
+]
+},
+{
+"a": "William Kent",
+"aSlug": "william-kent",
+"b": "Mary Bowen",
+"bSlug": "mary-bowen",
+"married": "",
+"place": "",
+"sort": [
+1767,
+99,
+99
+],
+"kids": [
+{
+"name": "Ann Kent",
+"slug": "ann-kent",
+"life": "1805–1880"
+}
+]
+},
+{
+"a": "Thomas Saniger",
+"aSlug": "thomas-saniger-1744",
+"b": "Catherine Cotton",
+"bSlug": "catherine-cotton",
+"married": "10 APR 1769",
+"place": "Berkeley, Gloucestershire, England",
+"sort": [
+1769,
+4,
+10
+],
+"kids": [
+{
+"name": "John Saniger",
+"slug": "john-saniger",
+"life": "1769–1824"
+}
+]
+},
+{
+"a": "Aaron Rossiter",
+"aSlug": "aaron-rossiter",
+"b": "Ellen Gillard",
+"bSlug": "ellen-gillard",
+"married": "10 APR 1776",
+"place": "of Aller, Som., Eng.",
+"sort": [
+1776,
+4,
+10
+],
+"kids": [
+{
+"name": "James Rossiter",
+"slug": "james-rossiter-1794",
+"life": "1794–1883"
+}
+]
+},
+{
+"a": "Robert D'Arcy",
+"aSlug": "robert-d-arcy",
+"b": "Jean Ward",
+"bSlug": "jean-ward",
+"married": "June 21 1779",
+"place": "Portsea, Southampton, England",
+"sort": [
+1779,
+6,
+99
+],
+"kids": [
+{
+"name": "Joseph D'Arcy",
+"slug": "joseph-d-arcy",
+"life": "1780–1848"
+},
+{
+"name": "Margaret Maria Isabella D'Arcy",
+"slug": "margaret-maria-isabella-d-arcy",
+"life": "1781–1843"
+},
+{
+"name": "George Pitt D'Arcy",
+"slug": "george-pitt-d-arcy-1783",
+"life": "1783–1849"
+},
+{
+"name": "Richard d'Arcy",
+"slug": "richard-d-arcy",
+"life": "b. 1784"
+},
+{
+"name": "Constantine D'Arcy",
+"slug": "constantine-d-arcy-1786",
+"life": "1786–1805"
+},
+{
+"name": "Jane D'Arcy",
+"slug": "jane-d-arcy",
+"life": "1787–1875"
+},
+{
+"name": "Catherine D'Arcy",
+"slug": "catherine-d-arcy-1789",
+"life": "1789–1876"
+},
+{
+"name": "Anna Maria D'Arcy",
+"slug": "anna-maria-d-arcy-1791",
+"life": "1791–1791"
+},
+{
+"name": "Anna Maria d'Arcy",
+"slug": "anna-maria-d-arcy-1792",
+"life": "1792–1800"
+},
+{
+"name": "Charlotte D'Arcy",
+"slug": "charlotte-d-arcy",
+"life": "1794–1869"
+}
+]
+},
+{
+"a": "Ralph Sneyd",
+"aSlug": "ralph-sneyd-1753",
+"b": "Penelope Moore",
+"bSlug": "",
+"married": "14 DEC 1780",
+"place": "Westminster, London",
+"sort": [
+1780,
+12,
+14
+],
+"kids": [
+{
+"name": "Emma Penelope Sneyd",
+"slug": "emma-penelope-sneyd",
+"life": "1784–1835"
+},
+{
+"name": "Lewis Sneyd",
+"slug": "lewis-sneyd",
+"life": "1788–1858"
+}
+]
+},
+{
+"a": "Thomas Mulcahy",
+"aSlug": "thomas-mulcahy",
+"b": "Ellen Regan",
+"bSlug": "ellen-regan",
+"married": "",
+"place": "",
+"sort": [
+1780,
+99,
+99
+],
+"kids": [
+{
+"name": "Catherine Margaret Mulcahy",
+"slug": "catherine-margaret-mulcahy",
+"life": "1812–1858"
+}
+]
+},
+{
+"a": "Walter Sneyd",
+"aSlug": "walter-sneyd-1752",
+"b": "Sneyd",
+"bSlug": "sneyd",
+"married": "9 MAY 1786",
+"place": "Keele, Staffordshire, England, United Kingdom",
+"sort": [
+1786,
+5,
+9
+],
+"kids": [
+{
+"name": "Ralph Sneyd",
+"slug": "ralph-sneyd-1793",
+"life": "1793–1870"
+}
+]
+},
+{
+"a": "Walter Sneyd",
+"aSlug": "walter-sneyd-1752",
+"b": "Louisa",
+"bSlug": "",
+"married": "9 MAY 1786",
+"place": "",
+"sort": [
+1786,
+5,
+9
+],
+"kids": []
+},
+{
+"a": "Joseph Atwell",
+"aSlug": "joseph-atwell",
+"b": "Elizabeth Atwell",
+"bSlug": "elizabeth-atwell",
+"married": "",
+"place": "",
+"sort": [
+1787,
+99,
+99
+],
+"kids": [
+{
+"name": "John Atwell",
+"slug": "john-atwell-1824",
+"life": "1824–1873"
+},
+{
+"name": "William Atwell",
+"slug": "william-atwell-1826",
+"life": "b. 1826"
+},
+{
+"name": "James Buckley Falcon Atwell",
+"slug": "james-buckley-falcon-atwell",
+"life": "1832–1860"
+},
+{
+"name": "Gregory Haines Atwell",
+"slug": "gregory-haines-atwell",
+"life": "1837–1887"
+}
+]
+},
+{
+"a": "Vincenzo Falco",
+"aSlug": "vincenzo-falco",
+"b": "Andrea Andreana Crisci",
+"bSlug": "andrea-andreana-crisci",
+"married": "",
+"place": "",
+"sort": [
+1793,
+99,
+99
+],
+"kids": [
+{
+"name": "Raffaele Falco",
+"slug": "raffaele-falco-1818",
+"life": "1818–1880"
+}
+]
+},
+{
+"a": "John Saniger",
+"aSlug": "john-saniger",
+"b": "Lydia Jones",
+"bSlug": "lydia-jones",
+"married": "TO 1797",
+"place": "Berkley, Gloucester, England",
+"sort": [
+1797,
+99,
+99
+],
+"kids": [
+{
+"name": "Hannah SANIGER",
+"slug": "hannah-saniger",
+"life": "1805–1873"
+}
+]
+},
+{
+"a": "Claud Murdoch",
+"aSlug": "claud-murdoch",
+"b": "Janet Walker",
+"bSlug": "janet-walker",
+"married": "",
+"place": "",
+"sort": [
+1799,
+99,
+99
+],
+"kids": [
+{
+"name": "Francis Murdoch",
+"slug": "francis-murdoch-1824",
+"life": "1824–1909"
+}
+]
+},
+{
+"a": "Margaret Maria Isabella D'Arcy",
+"aSlug": "margaret-maria-isabella-d-arcy",
+"b": "Maj. John Maddock Jones",
+"bSlug": "",
+"married": "23 OCT 1806",
+"place": "",
+"sort": [
+1806,
+10,
+23
+],
+"kids": []
+},
+{
+"a": "Anna Maria d'Arcy",
+"aSlug": "anna-maria-d-arcy-1792",
+"b": "Maj. John Maddock Jones",
+"bSlug": "",
+"married": "23 OCT 1806",
+"place": "",
+"sort": [
+1806,
+10,
+23
+],
+"kids": []
+},
+{
+"a": "Samuel Sneyd",
+"aSlug": "samuel-sneyd",
+"b": "Elizabeth Margaret Oliver",
+"bSlug": "elizabeth-margaret-oliver",
+"married": "22 OCT 1809",
+"place": "Audlem, Cheshire, England",
+"sort": [
+1809,
+10,
+22
+],
+"kids": [
+{
+"name": "Ralph Sneyd",
+"slug": "ralph-sneyd-1793-2",
+"life": "1793–1870"
+},
+{
+"name": "Walter Sneyd",
+"slug": "walter-sneyd-1809",
+"life": "1809–1888"
+},
+{
+"name": "Samuel Charles Sneyd",
+"slug": "samuel-charles-sneyd-1810",
+"life": "1810–1885"
+},
+{
+"name": "Mary Sneyd",
+"slug": "mary-sneyd-1814",
+"life": "b. 1814"
+},
+{
+"name": "James Sneyd",
+"slug": "james-sneyd-1818",
+"life": "b. 1818"
+}
+]
+},
+{
+"a": "George Pitt D'Arcy",
+"aSlug": "george-pitt-d-arcy-1783",
+"b": "Maria (Catherine) Whiite",
+"bSlug": "maria-catherine-whiite",
+"married": "1810",
+"place": "Chatham, Kent, England",
+"sort": [
+1810,
+99,
+99
+],
+"kids": [
+{
+"name": "Charlotte Maria D'Arcy",
+"slug": "charlotte-maria-d-arcy-1825",
+"life": "1825–1854"
+},
+{
+"name": "Catherine Maria D'Arcy",
+"slug": "catherine-maria-d-arcy",
+"life": "1827–1900"
+},
+{
+"name": "George Lindsay D'Arcy",
+"slug": "george-lindsay-d-arcy",
+"life": "1829–1901"
+}
+]
+},
+{
+"a": "George Pitt D'Arcy",
+"aSlug": "george-pitt-d-arcy-1783",
+"b": "Maria or Mary Le Meassier",
+"bSlug": "",
+"married": "1810",
+"place": "Chatham, Kent, England",
+"sort": [
+1810,
+99,
+99
+],
+"kids": [
+{
+"name": "Frederick Robert D'Arcy",
+"slug": "frederick-robert-d-arcy",
+"life": "1811–1875"
+}
+]
+},
+{
+"a": "Frederick Robert D'Arcy",
+"aSlug": "frederick-robert-d-arcy",
+"b": "Annie Melville",
+"bSlug": "",
+"married": "",
+"place": "",
+"sort": [
+1811,
+99,
+99
+],
+"kids": [
+{
+"name": "Mary Elvina Annie D'Arcy",
+"slug": "mary-elvina-annie-d-arcy",
+"life": "1862–1949"
+},
+{
+"name": "Robert Joseph D'Arcy",
+"slug": "robert-joseph-d-arcy",
+"life": "1864–1910"
+},
+{
+"name": "Louisa Margaret D'Arcy",
+"slug": "louisa-margaret-d-arcy",
+"life": "1866–1940"
+}
+]
+},
+{
+"a": "James Rossiter",
+"aSlug": "james-rossiter-1794",
+"b": "Maria \"Beacham\" Beecham",
+"bSlug": "maria-beacham-beecham",
+"married": "18 MAY 1817",
+"place": "St Andrew's Church, Clifton, Gloucestershire",
+"sort": [
+1817,
+5,
+18
+],
+"kids": [
+{
+"name": "Elizabeth Rossiter",
+"slug": "elizabeth-rossiter",
+"life": "b. 1817"
+},
+{
+"name": "Maria Rossiter",
+"slug": "maria-rossiter",
+"life": "1824–1889"
+},
+{
+"name": "Carolina Rossiter",
+"slug": "carolina-rossiter",
+"life": "1825–1889"
+},
+{
+"name": "Louisa Rossiter",
+"slug": "louisa-rossiter",
+"life": "1828–1871"
+},
+{
+"name": "James Rossiter",
+"slug": "james-rossiter-1834",
+"life": "b. 1834"
+},
+{
+"name": "Emma Rossiter",
+"slug": "emma-rossiter",
+"life": "b. 1836"
+},
+{
+"name": "Charlotte Rossiter",
+"slug": "charlotte-rossiter",
+"life": "b. 1825"
+}
+]
+},
+{
+"a": "Joseph D'Arcy",
+"aSlug": "joseph-d-arcy",
+"b": "Catherine Georgiana West",
+"bSlug": "",
+"married": "NOV 1817",
+"place": "Bath, Bath and North East Somerset, UK",
+"sort": [
+1817,
+11,
+99
+],
+"kids": [
+{
+"name": "George Abbas Kooli D'Arcy",
+"slug": "george-abbas-kooli-d-arcy",
+"life": "1818–1885"
+},
+{
+"name": "Robert West D'Arcy",
+"slug": "robert-west-d-arcy",
+"life": "1820–1862"
+},
+{
+"name": "Richard Wellesley D'Arcy",
+"slug": "richard-wellesley-d-arcy",
+"life": "1824–1859"
+}
+]
+},
+{
+"a": "Raffaele Falco",
+"aSlug": "raffaele-falco-1818",
+"b": "Angela Rosa Morgillo",
+"bSlug": "angela-rosa-morgillo",
+"married": "",
+"place": "",
+"sort": [
+1818,
+99,
+99
+],
+"kids": [
+{
+"name": "Carmine Antonio Falco",
+"slug": "carmine-antonio-falco",
+"life": "b. 1850"
+}
+]
+},
+{
+"a": "Robert West D'Arcy",
+"aSlug": "robert-west-d-arcy",
+"b": "Annie Hewish Adams",
+"bSlug": "",
+"married": "",
+"place": "",
+"sort": [
+1820,
+9,
+14
+],
+"kids": [
+{
+"name": "G Norman D'Arcy",
+"slug": "g-norman-d-arcy",
+"life": "1849–1870"
+},
+{
+"name": "Mary Catherine Georgina D'Arcy",
+"slug": "mary-catherine-georgina-d-arcy",
+"life": "1850–1927"
+},
+{
+"name": "Elizabeth Eleanor D'Arcy",
+"slug": "elizabeth-eleanor-d-arcy",
+"life": "1852–1928"
+}
+]
+},
+{
+"a": "Samuel Creech",
+"aSlug": "samuel-creech",
+"b": "Elizabeth Creech",
+"bSlug": "elizabeth-creech",
+"married": "BET 1822 AND 1824",
+"place": "Ireland",
+"sort": [
+1822,
+99,
+99
+],
+"kids": [
+{
+"name": "Jane Creech",
+"slug": "jane-creech",
+"life": "1830–1885"
+},
+{
+"name": "Anne Creech",
+"slug": "anne-creech",
+"life": "b. 1834"
+},
+{
+"name": "William Creech",
+"slug": "william-creech",
+"life": "b. 1832"
+}
+]
+},
+{
+"a": "Richard Atkinson",
+"aSlug": "richard-atkinson-1801",
+"b": "Ann Kent",
+"bSlug": "ann-kent",
+"married": "2 JAN 1826",
+"place": "St. Mary, Limerick, County Limerick, Ireland",
+"sort": [
+1826,
+1,
+2
+],
+"kids": [
+{
+"name": "Rosanna Atkinson",
+"slug": "rosanna-atkinson",
+"life": "1827–1895"
+},
+{
+"name": "William Atkinson",
+"slug": "william-atkinson",
+"life": "1829–1838"
+},
+{
+"name": "Paul Cole Atkinson",
+"slug": "paul-cole-atkinson",
+"life": "1832–1906"
+},
+{
+"name": "Richard Kent Atkinson",
+"slug": "richard-kent-atkinson",
+"life": "1836–1888"
+},
+{
+"name": "Elizabeth Mary ATKINSON",
+"slug": "elizabeth-mary-atkinson",
+"life": "b. 1838"
+},
+{
+"name": "Charles Atkinson",
+"slug": "charles-atkinson",
+"life": "1838–1840"
+},
+{
+"name": "Henry Atkinson",
+"slug": "henry-atkinson",
+"life": "1843–1916"
+},
+{
+"name": "Ann Atkinson",
+"slug": "ann-atkinson",
+"life": "1846–1928"
+}
+]
+},
+{
+"a": "Richard Malone Sneyd",
+"aSlug": "richard-malone-sneyd",
+"b": "Henrietta Charlotte Layard",
+"bSlug": "",
+"married": "18 OCT 1827",
+"place": "Colombo, Western Ceylon",
+"sort": [
+1827,
+10,
+18
+],
+"kids": [
+{
+"name": "Louisa Caroline Sneyd",
+"slug": "louisa-caroline-sneyd",
+"life": "1833–1907"
+}
+]
+},
+{
+"a": "Joseph D'Arcy",
+"aSlug": "joseph-d-arcy",
+"b": "Catherine LUCY Eliza Hyde",
+"bSlug": "",
+"married": "11 NOV 1830",
+"place": "",
+"sort": [
+1830,
+11,
+11
+],
+"kids": [
+{
+"name": "Catherine Lucy Jane D'Arcy",
+"slug": "catherine-lucy-jane-d-arcy",
+"life": "1831–1877"
+},
+{
+"name": "John Hyde D'Arcy",
+"slug": "john-hyde-d-arcy",
+"life": "1832–1852"
+},
+{
+"name": "Josephine D'Arcy",
+"slug": "josephine-d-arcy",
+"life": "1834–1903"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"slug": "frank-hyde-d-arcy",
+"life": "1838–1868"
+},
+{
+"name": "Joseph William D'Arcy",
+"slug": "joseph-william-d-arcy",
+"life": "1840–1882"
+},
+{
+"name": "William David d'Arcy",
+"slug": "william-david-d-arcy",
+"life": "b. 1842"
+}
+]
+},
+{
+"a": "James Wakefield",
+"aSlug": "james-wakefield",
+"b": "Hannah SANIGER",
+"bSlug": "hannah-saniger",
+"married": "17 OCT 1831",
+"place": "Bristol, Gloucestershire, England",
+"sort": [
+1831,
+10,
+17
+],
+"kids": [
+{
+"name": "Eliza Wakefield",
+"slug": "eliza-wakefield",
+"life": "b. 1832"
+},
+{
+"name": "Ellen Wakefield",
+"slug": "ellen-wakefield",
+"life": "b. 1834"
+},
+{
+"name": "Martha Wakefield",
+"slug": "martha-wakefield",
+"life": "1836–1899"
+},
+{
+"name": "Hiram Wakefield",
+"slug": "hiram-wakefield",
+"life": "1837–1905"
+},
+{
+"name": "Aaron Wakefield",
+"slug": "aaron-wakefield",
+"life": "1840–1896"
+},
+{
+"name": "Miriam Wakefield",
+"slug": "miriam-wakefield",
+"life": "1840–1909"
+},
+{
+"name": "Jabez Wakefield",
+"slug": "jabez-wakefield",
+"life": "1843–1903"
+},
+{
+"name": "Zillah Wakefield",
+"slug": "zillah-wakefield",
+"life": "1846–1900"
+}
+]
+},
+{
+"a": "Frederick Robert D'Arcy",
+"aSlug": "frederick-robert-d-arcy",
+"b": "Sophia Garling",
+"bSlug": "",
+"married": "20 MAY 1834",
+"place": "St Phillips Church, Church Hill, Sydney Town, New South Wales, Australia",
+"sort": [
+1834,
+5,
+20
+],
+"kids": [
+{
+"name": "Catherine Sophia Ann D'ARCY",
+"slug": "catherine-sophia-ann-d-arcy",
+"life": "1836–1913"
+},
+{
+"name": "Sophia Maria Louisa D'Arcy",
+"slug": "sophia-maria-louisa-d-arcy",
+"life": "1842–1927"
+}
+]
+},
+{
+"a": "Samuel Charles Sneyd",
+"aSlug": "samuel-charles-sneyd-1810",
+"b": "Catherine Margaret Mulcahy",
+"bSlug": "catherine-margaret-mulcahy",
+"married": "13 FEB 1837",
+"place": "Camden, New South Wales, Australia",
+"sort": [
+1837,
+2,
+13
+],
+"kids": [
+{
+"name": "William Hartley Sneyd",
+"slug": "william-hartley-sneyd",
+"life": "1838–1902"
+},
+{
+"name": "James Goulbourn Sneyd",
+"slug": "james-goulbourn-sneyd",
+"life": "1840–1925"
+},
+{
+"name": "John Braidwood Sneyd",
+"slug": "john-braidwood-sneyd",
+"life": "1842–1908"
+},
+{
+"name": "Ellen Mary Sneyd",
+"slug": "ellen-mary-sneyd",
+"life": "1844–1893"
+},
+{
+"name": "Joseph Samuel2 Sneyd",
+"slug": "joseph-samuel2-sneyd",
+"life": "1846–1905"
+},
+{
+"name": "Emma Martha Sneyd",
+"slug": "emma-martha-sneyd",
+"life": "1847–1922"
+},
+{
+"name": "Samuel Hartley Hanley Stafford Sneyd",
+"slug": "samuel-hartley-hanley-stafford-sneyd",
+"life": "1851–1901"
+},
+{
+"name": "Elizabeth Margaret Sneyd",
+"slug": "elizabeth-margaret-sneyd",
+"life": "1853–1908"
+},
+{
+"name": "Arthur Oliver Sneyd",
+"slug": "arthur-oliver-sneyd",
+"life": "1855–1896"
+}
+]
+},
+{
+"a": "James Goulbourn Sneyd",
+"aSlug": "james-goulbourn-sneyd",
+"b": "Elizabeth Ann Goulding",
+"bSlug": "",
+"married": "",
+"place": "",
+"sort": [
+1840,
+6,
+6
+],
+"kids": [
+{
+"name": "Samuel Charles Sneyd",
+"slug": "samuel-charles-sneyd-1863",
+"life": "1863–1938"
+},
+{
+"name": "Lionel Sneyd",
+"slug": "lionel-sneyd",
+"life": "b. 1879"
+}
+]
+},
+{
+"a": "John Atwell",
+"aSlug": "john-atwell-1824",
+"b": "Maria Rossiter",
+"bSlug": "maria-rossiter",
+"married": "31 MAY 1841",
+"place": "Long Ashton, Somerset, England",
+"sort": [
+1841,
+5,
+31
+],
+"kids": [
+{
+"name": "John Atwell",
+"slug": "john-atwell-1848",
+"life": "b. 1848"
+},
+{
+"name": "James Atwell",
+"slug": "james-atwell",
+"life": "1853–1907"
+},
+{
+"name": "Frederick Henry Atwell",
+"slug": "frederick-henry-atwell",
+"life": "1858–1921"
+},
+{
+"name": "Henry Atwell",
+"slug": "henry-atwell",
+"life": "b. 1864"
+},
+{
+"name": "William Atwell",
+"slug": "william-atwell-1864",
+"life": "1864–1918"
+},
+{
+"name": "Emma Atwell",
+"slug": "emma-atwell",
+"life": "1866–1938"
+}
+]
+},
+{
+"a": "Catherine Maria D'Arcy",
+"aSlug": "catherine-maria-d-arcy",
+"b": "John Frederick McDougall",
+"bSlug": "",
+"married": "1846",
+"place": "New South Wales, Australia",
+"sort": [
+1846,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Louisa Rossiter",
+"aSlug": "louisa-rossiter",
+"b": "Cory Heard Davey",
+"bSlug": "",
+"married": "20 JAN 1851",
+"place": "Long Ashton, Somerset, England",
+"sort": [
+1851,
+1,
+20
+],
+"kids": []
+},
+{
+"a": "Paul Cole Atkinson",
+"aSlug": "paul-cole-atkinson",
+"b": "Jane Creech",
+"bSlug": "jane-creech",
+"married": "27 SEP 1853",
+"place": "Carrigaline, Cork, Ireland",
+"sort": [
+1853,
+9,
+27
+],
+"kids": [
+{
+"name": "Elizabeth Atkinson",
+"slug": "elizabeth-atkinson",
+"life": "1854–1936"
+},
+{
+"name": "William Robert Atkinson",
+"slug": "william-robert-atkinson",
+"life": "1856–1883"
+},
+{
+"name": "Ann Creech Atkinson",
+"slug": "ann-creech-atkinson",
+"life": "1858–1863"
+},
+{
+"name": "Frances Charlotte Atkinson",
+"slug": "frances-charlotte-atkinson",
+"life": "b. 1860"
+},
+{
+"name": "Jane Atkinson",
+"slug": "jane-atkinson",
+"life": "b. 1862"
+},
+{
+"name": "Alice Harriet Atkinson",
+"slug": "alice-harriet-atkinson",
+"life": "1864–1894"
+},
+{
+"name": "Henry Wallace Atkinson",
+"slug": "henry-wallace-atkinson",
+"life": "1866–1938"
+},
+{
+"name": "Ida Kathleen Atkinson",
+"slug": "ida-kathleen-atkinson",
+"life": "1869–1937"
+},
+{
+"name": "George Frederick Handel Atkinson",
+"slug": "george-frederick-handel-atkinson",
+"life": "b. 1871"
+}
+]
+},
+{
+"a": "Francis Murdoch",
+"aSlug": "francis-murdoch-1824",
+"b": "Marion Watt",
+"bSlug": "marion-watt",
+"married": "1853",
+"place": "Strathaven",
+"sort": [
+1853,
+99,
+99
+],
+"kids": [
+{
+"name": "William Murdoch",
+"slug": "william-murdoch",
+"life": "1856–1918"
+},
+{
+"name": "Marion Fleming Murdoch",
+"slug": "marion-fleming-murdoch",
+"life": "b. 1859"
+},
+{
+"name": "James Murdoch",
+"slug": "james-murdoch",
+"life": "b. 1861"
+},
+{
+"name": "Francis Murdoch",
+"slug": "francis-murdoch-1863",
+"life": "b. 1863"
+},
+{
+"name": "Janet Murdoch",
+"slug": "janet-murdoch",
+"life": "b. 1867"
+},
+{
+"name": "George Murdoch",
+"slug": "george-murdoch",
+"life": "b. 1868"
+},
+{
+"name": "Jeanie Murdoch",
+"slug": "jeanie-murdoch",
+"life": "b. 1870"
+}
+]
+},
+{
+"a": "Charlotte Maria D'Arcy",
+"aSlug": "charlotte-maria-d-arcy-1825",
+"b": "William Cox Johnson",
+"bSlug": "",
+"married": "10 MAY 1854",
+"place": "Church Of England, New South Wales, Australia",
+"sort": [
+1854,
+5,
+10
+],
+"kids": []
+},
+{
+"a": "Walter Sneyd",
+"aSlug": "walter-sneyd-1809",
+"b": "Henrietta Elizabeth Judge",
+"bSlug": "",
+"married": "14 OCT 1856",
+"place": "St. Georges, Hanover Square, London, England, United Kingdom",
+"sort": [
+1856,
+10,
+14
+],
+"kids": [
+{
+"name": "Louisa Georgina SNEYD",
+"slug": "louisa-georgina-sneyd",
+"life": "1861–1910"
+},
+{
+"name": "Isabel Clara Sneyd",
+"slug": "isabel-clara-sneyd",
+"life": "b. 1862"
+},
+{
+"name": "Ralph Sneyd",
+"slug": "ralph-sneyd-1863",
+"life": "1863–1949"
+},
+{
+"name": "Ralph Sneyd",
+"slug": "ralph-sneyd-1863-2",
+"life": "1863–1949"
+},
+{
+"name": "Sneyd",
+"slug": "sneyd-1864",
+"life": "1864–1956"
+},
+{
+"name": "Sneyd",
+"slug": "sneyd-1867",
+"life": "1867–1939"
+}
+]
+},
+{
+"a": "Catherine Sophia Ann D'ARCY",
+"aSlug": "catherine-sophia-ann-d-arcy",
+"b": "Edward Craig CORNER",
+"bSlug": "",
+"married": "1 JUN 1859",
+"place": "St John's Church, Parramatta, New South Wales, Australia",
+"sort": [
+1859,
+6,
+1
+],
+"kids": []
+},
+{
+"a": "William Hartley Sneyd",
+"aSlug": "william-hartley-sneyd",
+"b": "Miriam Wakefield",
+"bSlug": "miriam-wakefield",
+"married": "15 NOV 1859",
+"place": "Queensland, Australia",
+"sort": [
+1859,
+11,
+15
+],
+"kids": [
+{
+"name": "Thomas George Sneyd",
+"slug": "thomas-george-sneyd",
+"life": "1859–1927"
+},
+{
+"name": "Louisa Miriam Sneyd",
+"slug": "louisa-miriam-sneyd",
+"life": "1861–1927"
+},
+{
+"name": "Catherine Isabel Sneyd",
+"slug": "catherine-isabel-sneyd",
+"life": "1864–1947"
+},
+{
+"name": "Arthur William Hartley Sneyd",
+"slug": "arthur-william-hartley-sneyd",
+"life": "1866–1922"
+},
+{
+"name": "Ernest Ephraim Sneyd",
+"slug": "ernest-ephraim-sneyd",
+"life": "1869–1946"
+},
+{
+"name": "Ada Zillah Sneyd",
+"slug": "ada-zillah-sneyd",
+"life": "1872–1921"
+}
+]
+},
+{
+"a": "Samuel Charles Sneyd",
+"aSlug": "samuel-charles-sneyd-1810",
+"b": "Margaret Hyland",
+"bSlug": "",
+"married": "24 NOV 1859",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1859,
+11,
+24
+],
+"kids": [
+{
+"name": "Robert Mcdowell Sneyd",
+"slug": "robert-mcdowell-sneyd",
+"life": "1862–1937"
+},
+{
+"name": "Hugh Herbert Hanley Sneyd",
+"slug": "hugh-herbert-hanley-sneyd",
+"life": "1869–1935"
+},
+{
+"name": "Edith Blanche Sneyd",
+"slug": "edith-blanche-sneyd",
+"life": ""
+},
+{
+"name": "Annie Ada Sneyd",
+"slug": "annie-ada-sneyd",
+"life": ""
+}
+]
+},
+{
+"a": "Hiram Wakefield",
+"aSlug": "hiram-wakefield",
+"b": "Margaret Birch",
+"bSlug": "",
+"married": "29 MAR 1861",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1861,
+3,
+29
+],
+"kids": []
+},
+{
+"a": "Aaron Wakefield",
+"aSlug": "aaron-wakefield",
+"b": "Elizabeth Ann Birch",
+"bSlug": "",
+"married": "11 JUL 1861",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1861,
+7,
+11
+],
+"kids": []
+},
+{
+"a": "Jabez Wakefield",
+"aSlug": "jabez-wakefield",
+"b": "Margaret Fraser",
+"bSlug": "",
+"married": "22 APR 1863",
+"place": "",
+"sort": [
+1863,
+4,
+22
+],
+"kids": []
+},
+{
+"a": "George Lindsay D'Arcy",
+"aSlug": "george-lindsay-d-arcy",
+"b": "Eliza Keeling",
+"bSlug": "eliza-keeling",
+"married": "June 7 1863",
+"place": "Queensland, Australia",
+"sort": [
+1863,
+6,
+99
+],
+"kids": [
+{
+"name": "George Pitt D'Arcy",
+"slug": "george-pitt-d-arcy-1864",
+"life": "1864–1931"
+},
+{
+"name": "Robert Lindesay D'Arcy",
+"slug": "robert-lindesay-d-arcy",
+"life": "1865–1868"
+},
+{
+"name": "Catherine D'Arcy",
+"slug": "catherine-d-arcy-1867",
+"life": "1867–1939"
+},
+{
+"name": "William Arthur D'Arcy",
+"slug": "william-arthur-d-arcy",
+"life": "1868–1870"
+},
+{
+"name": "Charlotte Maria D'Arcy",
+"slug": "charlotte-maria-d-arcy-1869",
+"life": "1869–1939"
+},
+{
+"name": "Ida Grace D'Arcy",
+"slug": "ida-grace-d-arcy",
+"life": "1872–1941"
+},
+{
+"name": "Edwin Francis D'Arcy",
+"slug": "edwin-francis-d-arcy",
+"life": "1873–1949"
+}
+]
+},
+{
+"a": "John Braidwood Sneyd",
+"aSlug": "john-braidwood-sneyd",
+"b": "Alice Mary Tomlin",
+"bSlug": "",
+"married": "1864",
+"place": "Brisbane, Qld, Aust.",
+"sort": [
+1864,
+99,
+99
+],
+"kids": [
+{
+"name": "William Albert Sneyd",
+"slug": "william-albert-sneyd",
+"life": "d. 1954"
+}
+]
+},
+{
+"a": "William Atwell",
+"aSlug": "william-atwell-1864",
+"b": "Mary Ann Brennan",
+"bSlug": "",
+"married": "",
+"place": "",
+"sort": [
+1864,
+99,
+99
+],
+"kids": [
+{
+"name": "Leslie Norman Atwell",
+"slug": "leslie-norman-atwell",
+"life": "1900–1969"
+}
+]
+},
+{
+"a": "Ellen Mary Sneyd",
+"aSlug": "ellen-mary-sneyd",
+"b": "Charles Augustus Davies",
+"bSlug": "",
+"married": "5 JUL 1866",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1866,
+7,
+5
+],
+"kids": [
+{
+"name": "Eva Maud Sneyd",
+"slug": "eva-maud-sneyd",
+"life": "b. 1875"
+}
+]
+},
+{
+"a": "John Blum",
+"aSlug": "john-blum-1842",
+"b": "Mary Ann O'Brien",
+"bSlug": "mary-ann-o-brien",
+"married": "June 8 1867",
+"place": "Rockhampton, Queensland, Australia",
+"sort": [
+1867,
+6,
+99
+],
+"kids": [
+{
+"name": "Ann Elizabeth Blum",
+"slug": "ann-elizabeth-blum",
+"life": "1868–1951"
+},
+{
+"name": "Martha Blum",
+"slug": "martha-blum",
+"life": "1870–1904"
+},
+{
+"name": "John Blum",
+"slug": "john-blum-1872",
+"life": "1872–1898"
+},
+{
+"name": "Mary Ann Blum",
+"slug": "mary-ann-blum",
+"life": "d. 1875"
+}
+]
+},
+{
+"a": "Emma Martha Sneyd",
+"aSlug": "emma-martha-sneyd",
+"b": "Robert Bruce Brady",
+"bSlug": "",
+"married": "14 NOV 1867",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1867,
+11,
+14
+],
+"kids": []
+},
+{
+"a": "Aniello Maione Majone",
+"aSlug": "aniello-maione-majone",
+"b": "Anna Martone",
+"bSlug": "anna-martone",
+"married": "28 OCT 1869",
+"place": "Arienzo, Caserta, Campania, Italia",
+"sort": [
+1869,
+10,
+28
+],
+"kids": [
+{
+"name": "Constanza Maione",
+"slug": "constanza-maione",
+"life": "b. 1876"
+}
+]
+},
+{
+"a": "Joseph Samuel1 Sneyd",
+"aSlug": "joseph-samuel1-sneyd",
+"b": "Ellen Marian Corbett",
+"bSlug": "",
+"married": "6 APR 1871",
+"place": "Queensland, Australia",
+"sort": [
+1871,
+4,
+6
+],
+"kids": [
+{
+"name": "Edith Blanche Sneyd",
+"slug": "edith-blanche-sneyd-1867",
+"life": "1867–1887"
+},
+{
+"name": "Alice Catherine Irene Sneyd",
+"slug": "alice-catherine-irene-sneyd",
+"life": "1871–1914"
+},
+{
+"name": "Ada Isabell Corbett Sneyd",
+"slug": "ada-isabell-corbett-sneyd-1873",
+"life": "b. 1873"
+},
+{
+"name": "Eliza Anne Corbett Sneyd",
+"slug": "eliza-anne-corbett-sneyd-1875",
+"life": "1875–1955"
+},
+{
+"name": "William Charles Henry Corbett Sneyd",
+"slug": "william-charles-henry-corbett-sneyd",
+"life": "1876–1911"
+},
+{
+"name": "Walter Reginald Brisbane Sneyd",
+"slug": "walter-reginald-brisbane-sneyd-1877",
+"life": "1877–1878"
+},
+{
+"name": "Maurice Norman Fitzroy Sneyd",
+"slug": "maurice-norman-fitzroy-sneyd-1879",
+"life": "1879–1879"
+},
+{
+"name": "James Hyland1 Sneyd",
+"slug": "james-hyland1-sneyd",
+"life": "1881–1882"
+},
+{
+"name": "Jessie Camile Corbett Sneyd",
+"slug": "jessie-camile-corbett-sneyd-1883",
+"life": "1883–1936"
+},
+{
+"name": "James Hyland Corbett Sneyd",
+"slug": "james-hyland-corbett-sneyd-1885",
+"life": "1885–1936"
+},
+{
+"name": "Brindley Stoke Sneyd",
+"slug": "brindley-stoke-sneyd-1888",
+"life": "1888–1888"
+},
+{
+"name": "Gladys May Corbett Sneyd",
+"slug": "gladys-may-corbett-sneyd-1890",
+"life": "b. 1890"
+}
+]
+},
+{
+"a": "Joseph Samuel2 Sneyd",
+"aSlug": "joseph-samuel2-sneyd",
+"b": "Ellen Marian Corbett",
+"bSlug": "",
+"married": "6 APR 1871",
+"place": "Queensland, Australia",
+"sort": [
+1871,
+4,
+6
+],
+"kids": [
+{
+"name": "Ada Isabell Corbett Sneyd",
+"slug": "ada-isabell-corbett-sneyd-1873-2",
+"life": "b. 1873"
+},
+{
+"name": "Eliza Anne Corbett Sneyd",
+"slug": "eliza-anne-corbett-sneyd-1875-2",
+"life": "1875–1955"
+},
+{
+"name": "William Charles Henry Sneyd",
+"slug": "william-charles-henry-sneyd",
+"life": "1876–1911"
+},
+{
+"name": "Walter Reginald Brisbane Sneyd",
+"slug": "walter-reginald-brisbane-sneyd-1877-2",
+"life": "1877–1878"
+},
+{
+"name": "Maurice Norman Fitzroy Sneyd",
+"slug": "maurice-norman-fitzroy-sneyd-1879-2",
+"life": "1879–1879"
+},
+{
+"name": "James Hyland2 Sneyd",
+"slug": "james-hyland2-sneyd",
+"life": "1881–1882"
+},
+{
+"name": "Jessie Camile Corbett Sneyd",
+"slug": "jessie-camile-corbett-sneyd-1883-2",
+"life": "1883–1936"
+},
+{
+"name": "James Hyland Corbett Sneyd",
+"slug": "james-hyland-corbett-sneyd-1885-2",
+"life": "1885–1936"
+},
+{
+"name": "Brindley Stoke Sneyd",
+"slug": "brindley-stoke-sneyd-1888-2",
+"life": "1888–1888"
+},
+{
+"name": "Gladys May Corbett Sneyd",
+"slug": "gladys-may-corbett-sneyd-1890-2",
+"life": "b. 1890"
+}
+]
+},
+{
+"a": "Zillah Wakefield",
+"aSlug": "zillah-wakefield",
+"b": "John Ludwig Frederick",
+"bSlug": "",
+"married": "25 OCT 1871",
+"place": "Brisbane, Queensland",
+"sort": [
+1871,
+10,
+25
+],
+"kids": []
+},
+{
+"a": "G Norman D'Arcy",
+"aSlug": "g-norman-d-arcy",
+"b": "Deborah Fitzgerald",
+"bSlug": "",
+"married": "1871",
+"place": "",
+"sort": [
+1871,
+99,
+99
+],
+"kids": [
+{
+"name": "Geraldine D'Arcy",
+"slug": "geraldine-d-arcy",
+"life": "1872–1937"
+}
+]
+},
+{
+"a": "Elizabeth Margaret Sneyd",
+"aSlug": "elizabeth-margaret-sneyd",
+"b": "James Alexander McIntyre",
+"bSlug": "",
+"married": "9 OCT 1872",
+"place": "Queensland, Australia",
+"sort": [
+1872,
+10,
+9
+],
+"kids": []
+},
+{
+"a": "Carmine Antonio Falco",
+"aSlug": "carmine-antonio-falco",
+"b": "Giovanna Arricole",
+"bSlug": "giovanna-arricole",
+"married": "18 NOV 1872",
+"place": "Arienzo, Caserta, Campania, Italia",
+"sort": [
+1872,
+11,
+18
+],
+"kids": [
+{
+"name": "Raffaele Falco",
+"slug": "raffaele-falco-1873",
+"life": "b. 1873"
+}
+]
+},
+{
+"a": "Elizabeth Eleanor D'Arcy",
+"aSlug": "elizabeth-eleanor-d-arcy",
+"b": "Arthur Ashley Ruck",
+"bSlug": "",
+"married": "23 AUG 1877",
+"place": "",
+"sort": [
+1877,
+8,
+23
+],
+"kids": []
+},
+{
+"a": "James Atwell",
+"aSlug": "james-atwell",
+"b": "Sarah Wright",
+"bSlug": "sarah-wright",
+"married": "July 23 1879",
+"place": "Queensland, Australia",
+"sort": [
+1879,
+7,
+99
+],
+"kids": [
+{
+"name": "John Wright Atwell",
+"slug": "john-wright-atwell",
+"life": "1881–1966"
+},
+{
+"name": "James William Atwell",
+"slug": "james-william-atwell",
+"life": "1883–1961"
+},
+{
+"name": "Agnes \"Peg\" Atwell",
+"slug": "agnes-peg-atwell",
+"life": "b. 1885"
+},
+{
+"name": "Maria Atwell",
+"slug": "maria-atwell",
+"life": "1887–1889"
+},
+{
+"name": "George Atwell",
+"slug": "george-atwell",
+"life": "1890–1970"
+},
+{
+"name": "Sarah Atwell",
+"slug": "sarah-atwell",
+"life": "b. 1893"
+},
+{
+"name": "Jessie Atwell",
+"slug": "jessie-atwell",
+"life": "1895–1984"
+},
+{
+"name": "Barbara (nickname 'Goldie') Atwell",
+"slug": "barbara-nickname-goldie-atwell",
+"life": "1897–1989"
+},
+{
+"name": "Lily Atwell",
+"slug": "lily-atwell",
+"life": "1900–1984"
+},
+{
+"name": "Robert Leslie Atwell",
+"slug": "robert-leslie-atwell",
+"life": "b. 1903"
+}
+]
+},
+{
+"a": "Louisa Georgina SNEYD",
+"aSlug": "louisa-georgina-sneyd",
+"b": "Robert Mowbray Howard",
+"bSlug": "",
+"married": "6 OCT 1881",
+"place": "Newcastle-under-Lyme, Staffordshire, England",
+"sort": [
+1881,
+10,
+6
+],
+"kids": []
+},
+{
+"a": "Arthur Oliver Sneyd",
+"aSlug": "arthur-oliver-sneyd",
+"b": "Annie Mary Chapman",
+"bSlug": "",
+"married": "1882",
+"place": "",
+"sort": [
+1882,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Thomas George Sneyd",
+"aSlug": "thomas-george-sneyd",
+"b": "Annie Spaulding",
+"bSlug": "",
+"married": "11 DEC 1884",
+"place": "Queensland, Australia",
+"sort": [
+1884,
+12,
+11
+],
+"kids": [
+{
+"name": "Vera Evelyn Sneyd",
+"slug": "vera-evelyn-sneyd",
+"life": "b. 1887"
+},
+{
+"name": "Vivian Ernest William Sneyd",
+"slug": "vivian-ernest-william-sneyd",
+"life": "1890–1919"
+},
+{
+"name": "Cecil George Sneyd",
+"slug": "cecil-george-sneyd",
+"life": "1891–1947"
+},
+{
+"name": "Gladys Beryl Sneyd",
+"slug": "gladys-beryl-sneyd",
+"life": "1893–1897"
+},
+{
+"name": "Florence Isabel Sneyd",
+"slug": "florence-isabel-sneyd",
+"life": "1897–1942"
+},
+{
+"name": "Roy Sneyd",
+"slug": "roy-sneyd",
+"life": "1899–1964"
+},
+{
+"name": "Hazel Ethel Mary Sneyd",
+"slug": "hazel-ethel-mary-sneyd",
+"life": "b. 1906"
+}
+]
+},
+{
+"a": "Paul Cole Atkinson",
+"aSlug": "paul-cole-atkinson",
+"b": "Mary Ann Cochrane",
+"bSlug": "",
+"married": "3 FEB 1886",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1886,
+2,
+3
+],
+"kids": [
+{
+"name": "Pauline Brenda Atkinson",
+"slug": "pauline-brenda-atkinson",
+"life": "1886–1969"
+},
+{
+"name": "Ruby Kathleen Atkinson",
+"slug": "ruby-kathleen-atkinson",
+"life": "b. 1888"
+}
+]
+},
+{
+"a": "Louisa Miriam Sneyd",
+"aSlug": "louisa-miriam-sneyd",
+"b": "Daniel McNaught",
+"bSlug": "",
+"married": "20 SEP 1887",
+"place": "",
+"sort": [
+1887,
+9,
+20
+],
+"kids": []
+},
+{
+"a": "Charlotte Maria D'Arcy",
+"aSlug": "charlotte-maria-d-arcy-1869",
+"b": "Thomas Edward Jones",
+"bSlug": "",
+"married": "14 JAN 1888",
+"place": "",
+"sort": [
+1888,
+1,
+14
+],
+"kids": []
+},
+{
+"a": "George Pitt D'Arcy",
+"aSlug": "george-pitt-d-arcy-1864",
+"b": "Ida Kathleen Atkinson",
+"bSlug": "ida-kathleen-atkinson",
+"married": "10 OCT 1888",
+"place": "Trinity Church, Fortitude Valley, Queensland, Australia",
+"sort": [
+1888,
+10,
+10
+],
+"kids": [
+{
+"name": "Hilda Georgina D'Arcy",
+"slug": "hilda-georgina-d-arcy",
+"life": "1890–1969"
+},
+{
+"name": "Lindesay Atkinson D'Arcy",
+"slug": "lindesay-atkinson-d-arcy",
+"life": "1892–1936"
+},
+{
+"name": "Florence Isabel D'Arcy",
+"slug": "florence-isabel-d-arcy",
+"life": "1894–1918"
+},
+{
+"name": "Ida Joyce D'Arcy",
+"slug": "ida-joyce-d-arcy",
+"life": "1908–1969"
+}
+]
+},
+{
+"a": "Emma Atwell",
+"aSlug": "emma-atwell",
+"b": "Hiram Philp",
+"bSlug": "",
+"married": "21 NOV 1888",
+"place": "",
+"sort": [
+1888,
+11,
+21
+],
+"kids": []
+},
+{
+"a": "Catherine Isabel Sneyd",
+"aSlug": "catherine-isabel-sneyd",
+"b": "Ebenezer Charles Chambers",
+"bSlug": "",
+"married": "6 MAR 1889",
+"place": "Queensland, Australia",
+"sort": [
+1889,
+3,
+6
+],
+"kids": []
+},
+{
+"a": "Frederick Henry Atwell",
+"aSlug": "frederick-henry-atwell",
+"b": "Matilda Martin",
+"bSlug": "",
+"married": "21 APR 1890",
+"place": "",
+"sort": [
+1890,
+4,
+21
+],
+"kids": []
+},
+{
+"a": "William Murdoch",
+"aSlug": "william-murdoch",
+"b": "Catherine Jane Matson",
+"bSlug": "catherine-jane-matson",
+"married": "26 DEC 1890",
+"place": "Maryborough, Queensland, Australia",
+"sort": [
+1890,
+12,
+26
+],
+"kids": [
+{
+"name": "Francis Claudius \"Frank\" Murdoch",
+"slug": "francis-claudius-frank-murdoch",
+"life": "1892–1958"
+},
+{
+"name": "Marion Janet Murdoch",
+"slug": "marion-janet-murdoch",
+"life": "1893–1972"
+},
+{
+"name": "William James Fraser \"Bill\" Murdoch",
+"slug": "william-james-fraser-bill-murdoch",
+"life": "1894–1946"
+},
+{
+"name": "Allan George Murdoch",
+"slug": "allan-george-murdoch",
+"life": "1896–1907"
+},
+{
+"name": "Annie Kathleen Murdoch",
+"slug": "annie-kathleen-murdoch",
+"life": "1898–1964"
+}
+]
+},
+{
+"a": "Arthur William Hartley Sneyd",
+"aSlug": "arthur-william-hartley-sneyd",
+"b": "Martha Blum",
+"bSlug": "martha-blum",
+"married": "20 JAN 1891",
+"place": "Muttaburra, Queensland",
+"sort": [
+1891,
+1,
+20
+],
+"kids": [
+{
+"name": "Ivy Miriam Sneyd",
+"slug": "ivy-miriam-sneyd",
+"life": "1891–1979"
+},
+{
+"name": "Arthur Hartley Sneyd",
+"slug": "arthur-hartley-sneyd",
+"life": "1893–1916"
+},
+{
+"name": "Vivian Claude Sneyd",
+"slug": "vivian-claude-sneyd",
+"life": "1895–1949"
+},
+{
+"name": "Kenneth Seigfried Sneyd",
+"slug": "kenneth-seigfried-sneyd",
+"life": "1898–1935"
+},
+{
+"name": "Amy Nesta Sneyd",
+"slug": "amy-nesta-sneyd",
+"life": "1900–1941"
+},
+{
+"name": "Beryl Marie Sneyd",
+"slug": "beryl-marie-sneyd",
+"life": "1904–1905"
+},
+{
+"name": "Julia Hetty Sneyd",
+"slug": "julia-hetty-sneyd",
+"life": "b. 1892"
+}
+]
+},
+{
+"a": "Henry Wallace Atkinson",
+"aSlug": "henry-wallace-atkinson",
+"b": "Martha Jane Hipwood",
+"bSlug": "",
+"married": "30 APR 1891",
+"place": "St Philips Church of England, Thompson Estate (now Annerley)",
+"sort": [
+1891,
+4,
+30
+],
+"kids": []
+},
+{
+"a": "Edwin Francis D'Arcy",
+"aSlug": "edwin-francis-d-arcy",
+"b": "Elizabeth Mary Harries",
+"bSlug": "",
+"married": "26 APR 1894",
+"place": "Queensland, Australia",
+"sort": [
+1894,
+4,
+26
+],
+"kids": []
+},
+{
+"a": "Ernest Ephraim Sneyd",
+"aSlug": "ernest-ephraim-sneyd",
+"b": "Maude Equator Carter",
+"bSlug": "",
+"married": "20 SEP 1894",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1894,
+9,
+20
+],
+"kids": [
+{
+"name": "Greville William Sneyd",
+"slug": "greville-william-sneyd",
+"life": "1899–1996"
+},
+{
+"name": "Dulcie Equator Sneyd",
+"slug": "dulcie-equator-sneyd",
+"life": "1902–1941"
+}
+]
+},
+{
+"a": "Robert Mcdowell Sneyd",
+"aSlug": "robert-mcdowell-sneyd",
+"b": "Jessie Brown Steele",
+"bSlug": "",
+"married": "1894",
+"place": "Qld, Aust.",
+"sort": [
+1894,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "John Blum",
+"aSlug": "john-blum-1872",
+"b": "Margaret Jackson",
+"bSlug": "",
+"married": "3 AUG 1895",
+"place": "Charters Towers, Queensland, Australia",
+"sort": [
+1895,
+8,
+3
+],
+"kids": [
+{
+"name": "John Blum",
+"slug": "john-blum-1895",
+"life": "b. 1895"
+},
+{
+"name": "Robert Blum",
+"slug": "robert-blum",
+"life": "b. 1897"
+}
+]
+},
+{
+"a": "Angelo Zampiello",
+"aSlug": "angelo-zampiello",
+"b": "Giuseppa Ferrara",
+"bSlug": "giuseppa-ferrara",
+"married": "",
+"place": "",
+"sort": [
+1895,
+8,
+31
+],
+"kids": [
+{
+"name": "Francesca Zampiello",
+"slug": "francesca-zampiello",
+"life": "1928–2022"
+}
+]
+},
+{
+"a": "Ada Isabell Corbett Sneyd",
+"aSlug": "ada-isabell-corbett-sneyd-1873",
+"b": "Robert Rouse Dyson",
+"bSlug": "",
+"married": "ABT 1896",
+"place": "Queensland, Australia",
+"sort": [
+1896,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Raffaele Falco",
+"aSlug": "raffaele-falco-1873",
+"b": "Constanza Maione",
+"bSlug": "constanza-maione",
+"married": "26 SEP 1897",
+"place": "Arienzo, Caserta, Campania, Italia",
+"sort": [
+1897,
+9,
+26
+],
+"kids": [
+{
+"name": "Carmine Antonio (Carminantonio) Falco",
+"slug": "carmine-antonio-carminantonio-falco",
+"life": "1901–1988"
+}
+]
+},
+{
+"a": "Ada Zillah Sneyd",
+"aSlug": "ada-zillah-sneyd",
+"b": "John Edwin Burnard",
+"bSlug": "",
+"married": "9 NOV 1897",
+"place": "Queensland, Australia",
+"sort": [
+1897,
+11,
+9
+],
+"kids": []
+},
+{
+"a": "Hugh Herbert Hanley Sneyd",
+"aSlug": "hugh-herbert-hanley-sneyd",
+"b": "Violet Annie Eales",
+"bSlug": "",
+"married": "25 JUN 1898",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1898,
+6,
+25
+],
+"kids": [
+{
+"name": "Muriel Mary Sneyd",
+"slug": "muriel-mary-sneyd",
+"life": "1898–1982"
+},
+{
+"name": "Eda Joyce Margaret Sneyd",
+"slug": "eda-joyce-margaret-sneyd",
+"life": "1901–1955"
+},
+{
+"name": "Herbert George Eales Sneyd",
+"slug": "herbert-george-eales-sneyd",
+"life": "1906–1988"
+},
+{
+"name": "Emily Grace Sneyd",
+"slug": "emily-grace-sneyd",
+"life": "1909–1995"
+}
+]
+},
+{
+"a": "Paul Cole Atkinson",
+"aSlug": "paul-cole-atkinson",
+"b": "Eliza",
+"bSlug": "",
+"married": "29 JUN 1898",
+"place": "",
+"sort": [
+1898,
+6,
+29
+],
+"kids": []
+},
+{
+"a": "William Charles Henry Corbett Sneyd",
+"aSlug": "william-charles-henry-corbett-sneyd",
+"b": "Matilda Carrie Weaber",
+"bSlug": "",
+"married": "9 OCT 1899",
+"place": "Queensland, Australia",
+"sort": [
+1899,
+10,
+9
+],
+"kids": [
+{
+"name": "William Joseph George Sneyd",
+"slug": "william-joseph-george-sneyd",
+"life": "1900–1992"
+},
+{
+"name": "Doris Ruth Marion Sneyd",
+"slug": "doris-ruth-marion-sneyd",
+"life": "1902–1998"
+},
+{
+"name": "John Nelson Sneyd",
+"slug": "john-nelson-sneyd",
+"life": "1905–1994"
+},
+{
+"name": "Robert Raymond Sneyd",
+"slug": "robert-raymond-sneyd",
+"life": "b. 1908"
+}
+]
+},
+{
+"a": "Geraldine D'Arcy",
+"aSlug": "geraldine-d-arcy",
+"b": "Charles Ashkenazie Hunter",
+"bSlug": "",
+"married": "17 JUN 1903",
+"place": "Rathdown, Ireland",
+"sort": [
+1903,
+6,
+17
+],
+"kids": []
+},
+{
+"a": "Vera Evelyn Sneyd",
+"aSlug": "vera-evelyn-sneyd",
+"b": "Charles Richard Ballard",
+"bSlug": "",
+"married": "24 FEB 1910",
+"place": "Queensland, Australia",
+"sort": [
+1910,
+2,
+24
+],
+"kids": []
+},
+{
+"a": "John Wright Atwell",
+"aSlug": "john-wright-atwell",
+"b": "Mary Anne Fallon",
+"bSlug": "",
+"married": "1910",
+"place": "",
+"sort": [
+1910,
+99,
+99
+],
+"kids": [
+{
+"name": "James Thomas Atwell",
+"slug": "james-thomas-atwell",
+"life": "b. 1911"
+},
+{
+"name": "Jessie Eileen Atwell",
+"slug": "jessie-eileen-atwell",
+"life": "b. 1917"
+}
+]
+},
+{
+"a": "Jessie Camile Corbett Sneyd",
+"aSlug": "jessie-camile-corbett-sneyd-1883",
+"b": "Ernest William Drew",
+"bSlug": "",
+"married": "1912",
+"place": "Queensland, Australia",
+"sort": [
+1912,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "George Atwell",
+"aSlug": "george-atwell",
+"b": "Mabel Martha Dean",
+"bSlug": "",
+"married": "3 JUN 1913",
+"place": "Queensland, Australia",
+"sort": [
+1913,
+6,
+3
+],
+"kids": [
+{
+"name": "Hazel Atwell",
+"slug": "hazel-atwell",
+"life": "b. 1913"
+},
+{
+"name": "Beryl Alice Atwell",
+"slug": "beryl-alice-atwell",
+"life": "b. 1915"
+},
+{
+"name": "Eric George Bruce Atwell",
+"slug": "eric-george-bruce-atwell",
+"life": "b. 1918"
+}
+]
+},
+{
+"a": "Lindesay Atkinson D'Arcy",
+"aSlug": "lindesay-atkinson-d-arcy",
+"b": "Ivy Miriam Sneyd",
+"bSlug": "ivy-miriam-sneyd",
+"married": "18 MAR 1916",
+"place": "Albion Church, Brisbane",
+"sort": [
+1916,
+3,
+18
+],
+"kids": [
+{
+"name": "Vivian Lindsay D'Arcy",
+"slug": "vivian-lindsay-d-arcy",
+"life": "1916–2006"
+},
+{
+"name": "Arthur Neville \"Bill\" D'Arcy",
+"slug": "arthur-neville-bill-d-arcy",
+"life": "1924–1985"
+},
+{
+"name": "Kenneth Lindsay D'Arcy",
+"slug": "kenneth-lindsay-d-arcy",
+"life": "1927–2010"
+},
+{
+"name": "Valma D'Arcy",
+"slug": "valma-d-arcy",
+"life": "d. 2010"
+}
+]
+},
+{
+"a": "Hilda Georgina D'Arcy",
+"aSlug": "hilda-georgina-d-arcy",
+"b": "Percy Norman Chambers",
+"bSlug": "",
+"married": "20 FEB 1917",
+"place": "Brisbane, Queensland, Australia",
+"sort": [
+1917,
+2,
+20
+],
+"kids": []
+},
+{
+"a": "Sarah Atwell",
+"aSlug": "sarah-atwell",
+"b": "Vincent Smith",
+"bSlug": "",
+"married": "1919",
+"place": "",
+"sort": [
+1919,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "William James Fraser \"Bill\" Murdoch",
+"aSlug": "william-james-fraser-bill-murdoch",
+"b": "Barbara (nickname 'Goldie') Atwell",
+"bSlug": "barbara-nickname-goldie-atwell",
+"married": "11 APR 1922",
+"place": "Brisbane Qld Australia",
+"sort": [
+1922,
+4,
+11
+],
+"kids": [
+{
+"name": "James \"Fraser\" Murdoch",
+"slug": "james-fraser-murdoch",
+"life": "1923–2003"
+},
+{
+"name": "Keith William Murdoch",
+"slug": "keith-william-murdoch",
+"life": "1925–1996"
+},
+{
+"name": "Marion \"Jean\" Murdoch",
+"slug": "marion-jean-murdoch",
+"life": "1927–2010"
+},
+{
+"name": "Audrey \"Dell\" Murdoch",
+"slug": "audrey-dell-murdoch",
+"life": "1929–2022"
+}
+]
+},
+{
+"a": "Kenneth Seigfried Sneyd",
+"aSlug": "kenneth-seigfried-sneyd",
+"b": "Alys Maud Farrow",
+"bSlug": "",
+"married": "7 MAY 1924",
+"place": "Gympie, Queensland",
+"sort": [
+1924,
+5,
+7
+],
+"kids": []
+},
+{
+"a": "Vivian Claude Sneyd",
+"aSlug": "vivian-claude-sneyd",
+"b": "Florence Elsie Hickman Knight",
+"bSlug": "",
+"married": "1924",
+"place": "Brisbane, Queensland",
+"sort": [
+1924,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Annie Kathleen Murdoch",
+"aSlug": "annie-kathleen-murdoch",
+"b": "George Henry Arthur Perina",
+"bSlug": "",
+"married": "1924",
+"place": "Queensland, Australia",
+"sort": [
+1924,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Jessie Atwell",
+"aSlug": "jessie-atwell",
+"b": "Ernest Page",
+"bSlug": "",
+"married": "1924",
+"place": "",
+"sort": [
+1924,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Lily Atwell",
+"aSlug": "lily-atwell",
+"b": "Gilbert Arthur Perrins",
+"bSlug": "",
+"married": "19 MAY 1925",
+"place": "Queensland, Australia",
+"sort": [
+1925,
+5,
+19
+],
+"kids": []
+},
+{
+"a": "Roy Sneyd",
+"aSlug": "roy-sneyd",
+"b": "Alice Lucy Howard",
+"bSlug": "",
+"married": "27 JUL 1926",
+"place": "Mackay, Queensland, Australia",
+"sort": [
+1926,
+7,
+27
+],
+"kids": [
+{
+"name": "Sydney Sneyd",
+"slug": "sydney-sneyd",
+"life": "1927–1987"
+},
+{
+"name": "Norma Denise Sneyd",
+"slug": "norma-denise-sneyd",
+"life": "1940–1944"
+}
+]
+},
+{
+"a": "William Joseph George Sneyd",
+"aSlug": "william-joseph-george-sneyd",
+"b": "Margaret Matilda Mayo",
+"bSlug": "",
+"married": "29 OCT 1927",
+"place": "",
+"sort": [
+1927,
+10,
+29
+],
+"kids": []
+},
+{
+"a": "Robert Leslie Atwell",
+"aSlug": "robert-leslie-atwell",
+"b": "Fanny May Patterson",
+"bSlug": "",
+"married": "21 APR 1930",
+"place": "",
+"sort": [
+1930,
+4,
+21
+],
+"kids": []
+},
+{
+"a": "Ida Joyce D'Arcy",
+"aSlug": "ida-joyce-d-arcy",
+"b": "Cecil George Edgar",
+"bSlug": "",
+"married": "26 APR 1930",
+"place": "Queensland Australia",
+"sort": [
+1930,
+4,
+26
+],
+"kids": []
+},
+{
+"a": "Greville William Sneyd",
+"aSlug": "greville-william-sneyd",
+"b": "Lavillia Kirk",
+"bSlug": "",
+"married": "7 NOV 1931",
+"place": "Port Moresby, National Capital District, Papua New Guinea",
+"sort": [
+1931,
+11,
+7
+],
+"kids": []
+},
+{
+"a": "John Nelson Sneyd",
+"aSlug": "john-nelson-sneyd",
+"b": "Pearley Raymond",
+"bSlug": "",
+"married": "22 APR 1933",
+"place": "Ipswich, Queensland, Australia",
+"sort": [
+1933,
+4,
+22
+],
+"kids": []
+},
+{
+"a": "Ernest Ephraim Sneyd",
+"aSlug": "ernest-ephraim-sneyd",
+"b": "Mabel Catherine McCasskill",
+"bSlug": "",
+"married": "1 JUL 1933",
+"place": "",
+"sort": [
+1933,
+7,
+1
+],
+"kids": []
+},
+{
+"a": "Kenneth Seigfried Sneyd",
+"aSlug": "kenneth-seigfried-sneyd",
+"b": "Ellen (Nell) Olive Blake",
+"bSlug": "",
+"married": "15 SEP 1934",
+"place": "",
+"sort": [
+1934,
+9,
+15
+],
+"kids": []
+},
+{
+"a": "Robert Raymond Sneyd",
+"aSlug": "robert-raymond-sneyd",
+"b": "Elsie Eileen Scott",
+"bSlug": "",
+"married": "1935",
+"place": "Queensland, Australia",
+"sort": [
+1935,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Hazel Atwell",
+"aSlug": "hazel-atwell",
+"b": "Wilfred Robertson",
+"bSlug": "",
+"married": "1937",
+"place": "",
+"sort": [
+1937,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Beryl Alice Atwell",
+"aSlug": "beryl-alice-atwell",
+"b": "Bernard Kearney",
+"bSlug": "",
+"married": "1937",
+"place": "",
+"sort": [
+1937,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Marion Janet Murdoch",
+"aSlug": "marion-janet-murdoch",
+"b": "Eric Monty \"Montie\" Perina",
+"bSlug": "",
+"married": "14 JUL 1938",
+"place": "Qld, Australia",
+"sort": [
+1938,
+7,
+14
+],
+"kids": []
+},
+{
+"a": "Vivian Lindsay D'Arcy",
+"aSlug": "vivian-lindsay-d-arcy",
+"b": "Hazel Isobel Keir",
+"bSlug": "",
+"married": "15 JAN 1944",
+"place": "",
+"sort": [
+1944,
+1,
+15
+],
+"kids": []
+},
+{
+"a": "James \"Fraser\" Murdoch",
+"aSlug": "james-fraser-murdoch",
+"b": "Irene Helen Cahill",
+"bSlug": "",
+"married": "1950",
+"place": "",
+"sort": [
+1950,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Kenneth Lindsay D'Arcy",
+"aSlug": "kenneth-lindsay-d-arcy",
+"b": "Audrey \"Dell\" Murdoch",
+"bSlug": "audrey-dell-murdoch",
+"married": "5 APR 1952",
+"place": "Toowoomba Q'ld  Australia",
+"sort": [
+1952,
+4,
+5
+],
+"kids": []
+},
+{
+"a": "Keith William Murdoch",
+"aSlug": "keith-william-murdoch",
+"b": "Norma Mary Davis",
+"bSlug": "",
+"married": "1952",
+"place": "",
+"sort": [
+1952,
+99,
+99
+],
+"kids": []
+},
+{
+"a": "Josephine D'Arcy",
+"aSlug": "josephine-d-arcy",
+"b": "Lt Col Thomas Anderson",
+"bSlug": "",
+"married": "18 NOV 1958",
+"place": "London",
+"sort": [
+1958,
+11,
+18
+],
+"kids": []
+},
+{
+"a": "Carmine Annecchino",
+"aSlug": "carmine-annecchino",
+"b": "Annecchino",
+"bSlug": "annecchino",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Filomena Annecchino",
+"slug": "filomena-annecchino",
+"life": "b. 1897"
+}
+]
+},
+{
+"a": "Zampiello",
+"aSlug": "zampiello",
+"b": "(unnamed)",
+"bSlug": "unnamed",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Angelo Zampiello",
+"slug": "angelo-zampiello",
+"life": "1895–1972"
+}
+]
+},
+{
+"a": "Ferrara",
+"aSlug": "ferrara",
+"b": "Caterina Ferrara",
+"bSlug": "caterina-ferrara",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Giuseppa Ferrara",
+"slug": "giuseppa-ferrara",
+"life": ""
+}
+]
+},
+{
+"a": "William Matson",
+"aSlug": "william-matson",
+"b": "Mary Abbot",
+"bSlug": "mary-abbot",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Catherine Jane Matson",
+"slug": "catherine-jane-matson",
+"life": "1862–1914"
+}
+]
+},
+{
+"a": "John Wright",
+"aSlug": "john-wright",
+"b": "Agnes Isabel Scott?",
+"bSlug": "agnes-isabel-scott",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Sarah Wright",
+"slug": "sarah-wright",
+"life": "1862–1941"
+}
+]
+},
+{
+"a": "Giacomo Annecchino",
+"aSlug": "giacomo-annecchino",
+"b": "(unnamed)",
+"bSlug": "unnamed-2",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Carmine Annecchino",
+"slug": "carmine-annecchino",
+"life": ""
+}
+]
+},
+{
+"a": "Ferrara",
+"aSlug": "ferrara-2",
+"b": "(unnamed)",
+"bSlug": "unnamed-2-2",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Ferrara",
+"slug": "ferrara",
+"life": ""
+}
+]
+},
+{
+"a": "George Keeling",
+"aSlug": "george-keeling",
+"b": "Elizabeth Keeling",
+"bSlug": "elizabeth-keeling",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Eliza Keeling",
+"slug": "eliza-keeling",
+"life": "1837–1918"
+}
+]
+},
+{
+"a": "Conrad Blum",
+"aSlug": "conrad-blum",
+"b": "Hannah Elizabeth (possibly Alm Eliza) Gautz",
+"bSlug": "hannah-elizabeth-possibly-alm-eliza-gautz",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "John Blum",
+"slug": "john-blum-1842",
+"life": "1842–1899"
+}
+]
+},
+{
+"a": "Timothy O'Brien",
+"aSlug": "timothy-o-brien",
+"b": "Hannah Scanlan",
+"bSlug": "hannah-scanlan",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Mary Ann O'Brien",
+"slug": "mary-ann-o-brien",
+"life": "1845–1927"
+}
+]
+},
+{
+"a": "William Watt",
+"aSlug": "william-watt",
+"b": "Marion Fleming",
+"bSlug": "marion-fleming",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Marion Watt",
+"slug": "marion-watt",
+"life": "1840–1910"
+}
+]
+},
+{
+"a": "Michele Angelo Maione",
+"aSlug": "michele-angelo-maione",
+"b": "Carmina Zimbardo",
+"bSlug": "carmina-zimbardo",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Aniello Maione Majone",
+"slug": "aniello-maione-majone",
+"life": "b. 1841"
+}
+]
+},
+{
+"a": "Angelo Martone",
+"aSlug": "angelo-martone",
+"b": "Giuseppa Crisci",
+"bSlug": "giuseppa-crisci",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Anna Martone",
+"slug": "anna-martone",
+"life": "b. 1846"
+}
+]
+},
+{
+"a": "John Jarvis White",
+"aSlug": "john-jarvis-white",
+"b": "Maria Gardner",
+"bSlug": "maria-gardner",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Maria (Catherine) Whiite",
+"slug": "maria-catherine-whiite",
+"life": "1800–1856"
+}
+]
+},
+{
+"a": "Orazio Morgillo",
+"aSlug": "orazio-morgillo",
+"b": "Vincenza Pesce",
+"bSlug": "vincenza-pesce",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Angela Rosa Morgillo",
+"slug": "angela-rosa-morgillo",
+"life": "1818–1880"
+}
+]
+},
+{
+"a": "Giuseppe Pesce",
+"aSlug": "giuseppe-pesce",
+"b": "Claudia di Lucia",
+"bSlug": "claudia-di-lucia",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Vincenza Pesce",
+"slug": "vincenza-pesce",
+"life": "1789–1859"
+}
+]
+},
+{
+"a": "William Garden",
+"aSlug": "william-garden",
+"b": "Jean Veitch",
+"bSlug": "jean-veitch",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Martha Garden",
+"slug": "martha-garden",
+"life": "b. 1730"
+}
+]
+},
+{
+"a": "UNKNOWN Falco",
+"aSlug": "unknown-falco",
+"b": "(unnamed)",
+"bSlug": "unnamed-2-2-2",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Agostino Falcone",
+"slug": "agostino-falcone",
+"life": "b. 1740"
+}
+]
+},
+{
+"a": "Wilhelm Adelmann von Adelmannsfelden",
+"aSlug": "wilhelm-adelmann-von-adelmannsfelden",
+"b": "Margareta Anna von Degenfeld",
+"bSlug": "margareta-anna-von-degenfeld",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Anna Maria Adelmann von Adelmannsfelden",
+"slug": "anna-maria-adelmann-von-adelmannsfelden",
+"life": "1610–1651"
+}
+]
+},
+{
+"a": "Frederick II von Oldenburg",
+"aSlug": "frederick-ii-von-oldenburg",
+"b": "Sophie Güstrow",
+"bSlug": "sophie-gustrow",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Anne (Queen consort) of Denmark von Oldenburg",
+"slug": "anne-queen-consort-of-denmark-von-oldenburg",
+"life": "1574–1619"
+}
+]
+},
+{
+"a": "von Degenfeld",
+"aSlug": "von-degenfeld",
+"b": "Von Degenfeld",
+"bSlug": "von-degenfeld-2",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Conrad V von Degenfeld",
+"slug": "conrad-v-von-degenfeld",
+"life": "1556–1610"
+}
+]
+},
+{
+"a": "Christian III of Denmark",
+"aSlug": "christian-iii-of-denmark",
+"b": "Dorothea Lauenburg",
+"bSlug": "dorothea-lauenburg",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Frederick II von Oldenburg",
+"slug": "frederick-ii-von-oldenburg",
+"life": ""
+}
+]
+},
+{
+"a": "Frederick I of Denmark",
+"aSlug": "frederick-i-of-denmark",
+"b": "Anna of Brandenburg",
+"bSlug": "anna-of-brandenburg",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Christian III of Denmark",
+"slug": "christian-iii-of-denmark",
+"life": ""
+}
+]
+},
+{
+"a": "John Fowler",
+"aSlug": "john-fowler",
+"b": "Barbara Harvey",
+"bSlug": "barbara-harvey",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Anne Fowler",
+"slug": "anne-fowler",
+"life": "b. 1545"
+}
+]
+},
+{
+"a": "Christian I of Denmark",
+"aSlug": "christian-i-of-denmark",
+"b": "Dorothea of Brandenburg",
+"bSlug": "dorothea-of-brandenburg",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Frederick I of Denmark",
+"slug": "frederick-i-of-denmark",
+"life": ""
+}
+]
+},
+{
+"a": "Dietrich of Oldenburg",
+"aSlug": "dietrich-of-oldenburg",
+"b": "Helvig of Schauenburg",
+"bSlug": "helvig-of-schauenburg",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Christian I of Denmark",
+"slug": "christian-i-of-denmark",
+"life": ""
+}
+]
+},
+{
+"a": "Christian V, Count of Oldenburg",
+"aSlug": "christian-v-count-of-oldenburg",
+"b": "Countess Agnes of Honstein",
+"bSlug": "countess-agnes-of-honstein",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Dietrich of Oldenburg",
+"slug": "dietrich-of-oldenburg",
+"life": ""
+}
+]
+},
+{
+"a": "Conrad I of Oldenburg",
+"aSlug": "conrad-i-of-oldenburg",
+"b": "Ingeborg of Brunswick",
+"bSlug": "ingeborg-of-brunswick",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Christian V, Count of Oldenburg",
+"slug": "christian-v-count-of-oldenburg",
+"life": ""
+}
+]
+},
+{
+"a": "John II, Count of Oldenburg",
+"aSlug": "john-ii-count-of-oldenburg",
+"b": "Hedwig of Diepholz",
+"bSlug": "hedwig-of-diepholz",
+"married": "",
+"place": "",
+"sort": [
+9999,
+99,
+99
+],
+"kids": [
+{
+"name": "Conrad I of Oldenburg",
+"slug": "conrad-i-of-oldenburg",
+"life": ""
+}
+]
+}
+],
+"n": 199
+}

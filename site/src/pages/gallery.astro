@@ -1,0 +1,91 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+/* Everything this archive has as an image. It is a short page, and the shortness
+   is the point: a family that produced four soldiers, a gaol governor and a
+   church organist has left exactly one photograph of a person. */
+const PLATES = [
+  {
+    src: "/img/vivian-claude-sneyd-1919.jpg", w: 620, h: 1159,
+    title: "Lance-Corporal Vivian Claude Sneyd, M.M. and Bar",
+    kind: "photograph",
+    when: "Printed 18 January 1919",
+    what: "A newspaper halftone, head and shoulders, in a peaked cap and tunic. Captioned in the paper: “Lance-corporal Vivian Sneyd, 3rd Field Ambulance, A.I.F., M.M. and Bar.”",
+    src_line: "The Brisbane Courier, Saturday 18 January 1919, page 5, under “On Honour's Roll”",
+    href: "/people/vivian-claude-sneyd",
+    note: "As far as this archive knows, the only photograph of anyone in his generation of this family.",
+    alt: "Newspaper halftone portrait of a young man in a peaked military cap and tunic, head and shoulders, looking slightly to his left.",
+  },
+  {
+    src: "/img/crossing-1500.jpg", w: 1500, h: 636,
+    title: "The crossing",
+    kind: "illustration",
+    when: "Commissioned for this archive, 2026",
+    what: "A painted triptych under one horizon: a cold English shore with a great house faint on a hill, a stone quay where a three-masted ship is loading, and a flat gold country with a railway line running out of sight.",
+    src_line: "Not a document. Commissioned illustration, and the house on the hill is faint on purpose.",
+    href: "/hornby",
+    note: "The archive cannot show that this family ever lived in that house. The middle and the right of the picture it can prove.",
+    alt: "A wide painted panorama in three parts under one horizon: an English shore, a quay with a sailing ship loading, and a flat gold Australian plain with a railway.",
+  },
+];
+
+const WANTED = [
+  ["Arthur Hartley Sneyd", "Killed at Pozières at 22. No photograph is known. His attestation paper gives his height, his complexion, his eye colour and his religion — everything except a face.", "/finding-arthur"],
+  ["Samuel Charles Sneyd", "Soldier of the 4th, sergeant of the NSW Mounted Police, chief constable at Moreton Bay, Governor of Brisbane Gaol. Four careers, no likeness.", "/sergeant-sneyd"],
+  ["Any of the eight women", "Sixty-seven children between them and not one photograph, letter or will yet found.", "/the-women"],
+  ["Major-General Robert D'Arcy, C.B.", "Fifty-one years in the Corps of Royal Engineers. The Corps painted its senior officers. The Royal Engineers Museum at Chatham has never been asked.", "/errands"],
+];
+---
+<Base title="Gallery" eyebrow={`${PLATES.length} images`}
+  dek="Everything this archive holds as a picture — which is two things, one of them not a document. The shortness of this page is itself a finding.">
+
+  <section class="blk">
+    <p class="lede">This family produced four soldiers, a gaol governor, a government printer and a
+    church organist across two hundred years. It has left <strong>one photograph of one person</strong>,
+    and that only because a newspaper printed it when he came home with a medal.</p>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>That is not unusual and it is worth saying why.</strong> Photography was expensive
+      until it was not, and the people in this archive are printers, constables, clerks and
+      labourers, not the sort of family that sat for portraits. What survives of them is what a
+      government wrote down. <a href={u("/documents")}>The documents →</a>
+    </div>
+  </section>
+
+  {PLATES.map((p) => (
+    <section class="blk">
+      <div class="lab">{p.kind} · {p.when}</div>
+      <h2 style="margin-top:.4rem">{p.title}</h2>
+      <figure style={`margin:1.2rem 0 0;max-width:${p.w > 900 ? "100%" : "340px"}`}>
+        <a href={u(p.href)}>
+          <img src={u(p.src)} width={p.w} height={p.h} loading="lazy" decoding="async" alt={p.alt}
+            style="display:block;width:100%;height:auto;border:1px solid var(--rule)" />
+        </a>
+        <figcaption class="cap" style="margin-top:.7rem">{p.what}
+          <br /><span class="dim">{p.src_line}</span></figcaption>
+      </figure>
+      <div class="note" style="margin-top:1.1rem">{p.note} <a href={u(p.href)}>→</a></div>
+    </section>
+  ))}
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What is missing, and where it might be</h2>
+    <p class="dek">Four faces this archive would most like and does not have.</p>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Who</th><th>Why there is nothing</th></tr></thead>
+        <tbody>
+          {WANTED.map(([who, why, href]) => (
+            <tr><td><strong>{who}</strong></td><td class="small">{why} <a href={u(href)}>→</a></td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>If you have a photograph of any of these people, it is the most valuable thing you
+      could send.</strong> A shoebox in a Brisbane cupboard almost certainly holds more images of
+      this family than the entire internet does.
+      <a href={u("/errands")}>Other things worth doing →</a>
+    </div>
+  </section>
+</Base>

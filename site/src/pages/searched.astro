@@ -1,0 +1,65 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/searched.json";
+
+const by = (o) => d.rows.filter((r) => r.outcome === o);
+const yields = by("yield"), nulls = by("null"), blocked = by("blocked");
+const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"], blocked: ["sup", "could not be reached"] };
+---
+<Base
+  title="What Has Been Read"
+  eyebrow={`${d.rows.length} sources examined · ${yields.length} yields, ${nulls.length} nulls, ${blocked.length} blocked`}
+  dek="Everything this archive has opened, whether or not it gave anything up — because a search that returns nothing is a result, and the next person should not have to run it again.">
+
+  <section class="blk">
+    <p class="lede">{d.note}</p>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>A null result is not a failure, and it is not the same as a gap.</strong> There are
+      three outcomes on this page and they mean different things.
+      <ul style="margin:.7rem 0 0;padding-left:1.1rem">
+        <li style="margin-bottom:.4rem"><span class="chip doc">found something</span> the source was
+        read and it gave up a fact this archive now publishes.</li>
+        <li style="margin-bottom:.4rem"><span class="chip lore">found nothing</span> the source was
+        read properly and the thing is not in it. <strong>This is knowledge.</strong> Four of the
+        nulls below are load-bearing: they are why the Hornby claim is called <em>unevidenced</em>
+        rather than disputed.</li>
+        <li><span class="chip sup">could not be reached</span> the source exists and this archive
+        could not get at it — a bot check, a migration, a login. <strong>Not a null result</strong>,
+        and it must never be reported as one. <a href={u("/errands")}>Several are jobs for a
+        person →</a></li>
+      </ul>
+    </div>
+  </section>
+
+  {[["Sources that gave something up", yields], ["Sources read and empty", nulls],
+    ["Sources this archive could not reach", blocked]].map(([h, rows]) => (
+    <section class="blk">
+      <h2>{h}</h2>
+      <p class="small">{rows.length} {rows.length === 1 ? "source" : "sources"}</p>
+      <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.2rem">
+        {rows.map((r) => (
+          <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
+            <div><strong>{r.src}</strong>
+              <span class={`chip ${CHIP[r.outcome][0]}`} style="margin-left:.5rem">{CHIP[r.outcome][1]}</span>
+              <span class="small" style="margin-left:.5rem;color:var(--ink-3)">{r.when}</span></div>
+            <p class="small" style="margin-top:.35rem;color:var(--ink-2)"><em>Searched:</em> {r.what}</p>
+            <p class="small" style="margin-top:.35rem">{r.got}
+              {r.href && <> <a href={u(r.href)}>→</a></>}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Why this page exists</h2>
+    <p class="dek">Because the alternative wastes somebody's afternoon. An archive that publishes
+    only its successes is telling you half the truth, and the half it leaves out is the half that
+    would stop the next person repeating three days of work.</p>
+    <p class="dek" style="margin-top:.9rem">If you have read a source that is not here, or read one
+    that is here and got a different answer, that is the most useful thing you can send.
+    <a href={u("/changes")}>What changed →</a> · <a href={u("/errands")}>Errands →</a> ·
+    <a href={u("/open-questions")}>What is still open →</a></p>
+  </section>
+</Base>

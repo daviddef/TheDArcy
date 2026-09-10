@@ -1,0 +1,104 @@
+{
+ "title": "Errands",
+ "eyebrow": "Nine jobs a person can do and this archive cannot",
+ "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
+ "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
+ "rows": [
+  {
+   "n": 1,
+   "what": "PROB 11/1728/64 — the will of Major-General Robert D'Arcy",
+   "where": "The National Archives, Kew",
+   "cost": "about £3.50, digitised, download today",
+   "settles": "His parentage is the largest open question on this site and no record of his life names a father. A will names family. Found 9 September 2026 and still unordered.",
+   "why": "THE PRIORITY",
+   "href": "/hornby",
+   "file": "requests/tna-prob11-darcy-will.md"
+  },
+  {
+   "n": 2,
+   "what": "Enquiry to the Royal Engineers Museum, Chatham",
+   "where": "The Corps' own archive",
+   "cost": "£25 enquiry service",
+   "settles": "Robert D'Arcy's parentage, from the records of the Corps he served for fifty-one years and the town he died in.",
+   "why": "The best chance of closing the question the archive was built around",
+   "href": "/hornby",
+   "file": "notes/letters/2026-09-re-museum-chatham.md"
+  },
+  {
+   "n": 3,
+   "what": "Three Queensland death certificates",
+   "where": "Queensland Registry of Births, Deaths and Marriages",
+   "cost": "a fee per certificate",
+   "settles": "Three causes of death, and three sets of parents named in a civil record rather than a tree. Registration numbers already identified.",
+   "why": "Turns three dotted pedigree edges solid",
+   "href": "/register",
+   "file": "requests/qld-bdm-certificates.md"
+  },
+  {
+   "n": 4,
+   "what": "Two Chatham burials",
+   "where": "Medway Archives",
+   "cost": "an enquiry",
+   "settles": "Robert D'Arcy, 1827, and Constantine D'Arcy, 1805. A burial register can give an age, an abode and sometimes a relationship.",
+   "why": "The likeliest of all of these to succeed",
+   "href": "/hornby",
+   "file": "notes/letters/2026-09-medway-archives.md"
+  },
+  {
+   "n": 5,
+   "what": "Where Arthur Hartley Sneyd is commemorated",
+   "where": "Commonwealth War Graves Commission",
+   "cost": "free, two minutes",
+   "settles": "The archive says Villers-Bretonneux from the B.2090A's “Not yet to hand”. CWGC would confirm it outright. Bot-blocked here, twice.",
+   "why": "Free, quick, and this archive simply cannot reach it",
+   "href": "/finding-arthur",
+   "file": "requests/cwgc-arthur-hartley-sneyd.md"
+  },
+  {
+   "n": 6,
+   "what": "The generation above Francis Murdoch",
+   "where": "ScotlandsPeople",
+   "cost": "credits, a login",
+   "settles": "The Ayrshire Murdochs are a quarter of the tested descendant and the archive has 25 of 52 ancestor slots filled. The DNA points straight at this gap.",
+   "why": "The branch the archive has most neglected",
+   "href": "/dna",
+   "file": "requests/scotlandspeople-murdoch.md"
+  },
+  {
+   "n": 7,
+   "what": "Richard Atkinson and Anne, of Limerick",
+   "where": "RootsIreland",
+   "cost": "a subscription",
+   "settles": "Anything at all. The Atkinsons are five generations deep and stop dead at the emigrant.",
+   "why": "",
+   "href": "/atkinson",
+   "file": "requests/rootsireland-atkinson-limerick.md"
+  },
+  {
+   "n": 8,
+   "what": "Nine Queensland State Archives items",
+   "where": "Queensland State Archives, Runcorn",
+   "cost": "copy fees, none digitised",
+   "settles": "Arthur Hartley Sneyd's 1916 intestacy; William Hartley Sneyd's 1873 insolvency — a wholly new fact; four wills, one of which may be the gaol governor's; two police staff files that are probably his sons.",
+   "why": "All nine identified to series and file number",
+   "href": "/register",
+   "file": "requests/qsa-order-list.md"
+  },
+  {
+   "n": 9,
+   "what": "Which Ordnance series could carry a Royal Engineers commission of 1776",
+   "where": "The National Archives, Kew",
+   "cost": "an enquiry",
+   "settles": "WO 47 has been identified along with the reason nobody has found him in it. A archivist could say in a sentence whether it is worth a day.",
+   "why": "",
+   "href": "/hornby",
+   "file": "notes/letters/2026-09-tna-ordnance.md"
+  }
+ ],
+ "ydna": {
+  "what": "A Y-DNA test from a male D'Arcy",
+  "settles": "The Y chromosome descends father to son essentially unchanged. A male-line D'Arcy's would place this family against every other tested D'Arcy in the world — the most direct attack anyone can make on Robert D'Arcy's parentage, and it beats every archive visit on this page.",
+  "note": "The descendant who has tested is female and has no Y chromosome. Her brothers do."
+ },
+ "close": "Several of these will come back empty. That is a result, and it belongs on the search register rather than in a drawer — so that the next person does not repeat it."
+}

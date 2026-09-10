@@ -1,0 +1,72 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+---
+<Base title="About" eyebrow="Who built this, and what it is willing to say"
+  dek="An evidence-first archive of the D'Arcys of Brisbane, kept to the same method as five sibling archives — and the rules it will not break to make a better story.">
+
+  <section class="blk">
+    <p class="lede">This archive exists because a family had a tree that reached the kings of Denmark
+    and nobody had ever asked it a hard question. It is one of <strong>six</strong>, kept to the same
+    method and by the same hand. <a href={u("/the-other-archives")}>The other five →</a></p>
+  </section>
+
+  <section class="blk">
+    <h2>What it is willing to say, and what it is not</h2>
+    <ul class="dek" style="margin-top:1rem">
+      <li style="margin-bottom:.6rem"><strong>A family tree is not a source.</strong> It is a set of
+      assertions. Of {`586`} entries in the register, {`113`} rest on a document; the rest rest on
+      somebody's tree, and every page says which is which.
+      <a href={u("/register")}>The register →</a></li>
+      <li style="margin-bottom:.6rem"><strong>A null result is a result.</strong> Every source read
+      and found empty is published, so the next person does not repeat the search.
+      <a href={u("/searched")}>What has been read →</a></li>
+      <li style="margin-bottom:.6rem"><strong>Errors stay on the page where they were made.</strong>
+      Nine so far, each with what caused it. Corrections are never made silently.
+      <a href={u("/what-we-got-wrong")}>The errors →</a></li>
+      <li style="margin-bottom:.6rem"><strong>Living people are not published at all.</strong> Not
+      hidden, not gated — absent from the build. The rule withholds 2,034 people across the tree,
+      including their names wherever they would appear as somebody's spouse, parent or child.
+      <a href={u("/method")}>How the rule works →</a></li>
+      <li><strong>A better story is not a reason.</strong> Two aristocratic descents have been taken
+      off this family — one unevidenced, one disproved — and both are still set out in full rather
+      than deleted. <a href={u("/how-far-back")}>Both grafts →</a></li>
+    </ul>
+  </section>
+
+  <section class="blk">
+    <h2>What it holds</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          <tr><td>People published</td><td class="m">473</td><td class="small">of a tree that also holds 2,034 living people, none of them here</td></tr>
+          <tr><td>Named in records</td><td class="m">90</td><td class="small">including 75 who are not relatives at all</td></tr>
+          <tr><td>Register entries</td><td class="m">586</td><td class="small">113 from a document, 473 from the tree</td></tr>
+          <tr><td>Sources read</td><td class="m">24</td><td class="small">12 yields, 8 nulls, 4 unreachable</td></tr>
+          <tr><td>Errors corrected in public</td><td class="m">9</td><td class="small">plus 6 inherited from the tree</td></tr>
+          <tr><td>Generations it will defend</td><td class="m">≈7</td><td class="small">not the twelve the tree claims</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>How it is built</h2>
+    <p class="dek">A MyHeritage GEDCOM export is parsed in Python, living people are removed by a
+    graph-wide rule rather than a flag, and the result is rendered as a static site with Astro and
+    published to GitHub Pages. Nothing is generated at request time and there is no database —
+    everything you can read here is in the repository, including the tools that built it.</p>
+    <p class="dek" style="margin-top:.9rem">
+      <a href="https://github.com/daviddef/TheDArcy">The repository ↗</a> ·
+      <a href={u("/method")}>Method →</a> · <a href={u("/sources")}>Sources →</a> ·
+      <a href={u("/changes")}>What changed →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Corrections</h2>
+    <div class="note"><strong>A correction is the most valuable thing anyone can send this
+    archive.</strong> If something here is wrong — a date, a place, a join, a person who should not
+    be published — say so, and it will be changed, and the change will be recorded on
+    <a href={u("/changes")}>what changed</a> rather than quietly applied.</div>
+  </section>
+</Base>

@@ -1,0 +1,169 @@
+{
+ "title": "Timeline",
+ "eyebrow": "Lives against the state that governed them",
+ "dek": "Who this family were living under, and what it did to them. The point is not when people were born — it is what was happening around them when they were.",
+ "bands": [
+  {
+   "key": "georgian",
+   "label": "Georgian Britain",
+   "from": 1714,
+   "to": 1837,
+   "note": "Robert D'Arcy's whole life, and his son's first thirty-five years. A standing army, a global war every twenty years, and a Board of Ordnance that commissioned engineers without recording where they came from."
+  },
+  {
+   "key": "colony",
+   "label": "Convict New South Wales",
+   "from": 1788,
+   "to": 1840,
+   "note": "Transportation. It is what brought this family to Australia: not free settlement but a garrison posting aboard a convict ship."
+  },
+  {
+   "key": "federation",
+   "label": "Colonial Queensland",
+   "from": 1859,
+   "to": 1901,
+   "note": "Separation from New South Wales. A new colony needed a Government Printing Office, a gaol, an electric telegraph and a police force, and this family staffed all four."
+  },
+  {
+   "key": "modern",
+   "label": "The Commonwealth",
+   "from": 1901,
+   "to": 1975,
+   "note": "Federation, then two wars that took four men out of one family."
+  }
+ ],
+ "events": [
+  {
+   "y": 1776,
+   "what": "Robert D'Arcy commissioned 2nd Lieutenant, Royal Engineers",
+   "band": "georgian",
+   "href": "/hornby",
+   "key": true
+  },
+  {
+   "y": 1779,
+   "what": "Marries Jean Ward at Portsea, 21 June",
+   "band": "georgian",
+   "href": "/the-women"
+  },
+  {
+   "y": 1786,
+   "what": "A son christened at St Michael, Barbados — the Corps posted men across the empire",
+   "band": "georgian",
+   "href": "/hornby"
+  },
+  {
+   "y": 1805,
+   "what": "Constantine D'Arcy dies at Chatham",
+   "band": "georgian",
+   "href": "/hornby"
+  },
+  {
+   "y": 1814,
+   "what": "George Pitt D'Arcy at Orthes, with the 39th Foot",
+   "band": "georgian",
+   "href": "/australia"
+  },
+  {
+   "y": 1826,
+   "what": "The convict ship England sails: a Major of the 39th, 39 men, 6 women, 7 children, and Mrs D'Arcy in the cabin",
+   "band": "colony",
+   "href": "/australia",
+   "key": true
+  },
+  {
+   "y": 1827,
+   "what": "Robert D'Arcy dies at Chatham, 13 May. His will is proved 4 July and has never been read",
+   "band": "georgian",
+   "href": "/errands"
+  },
+  {
+   "y": 1832,
+   "what": "Samuel Charles Sneyd arrives with the 4th (King's Own)",
+   "band": "colony",
+   "href": "/sergeant-sneyd"
+  },
+  {
+   "y": 1837,
+   "what": "Marries Catherine Margaret Mulcahy at Camden, 13 February",
+   "band": "colony",
+   "href": "/sergeant-sneyd"
+  },
+  {
+   "y": 1839,
+   "what": "The Chubb capture — a sergeant of the Mounted Police",
+   "band": "colony",
+   "href": "/sergeant-sneyd"
+  },
+  {
+   "y": 1849,
+   "what": "Major George Pitt D'Arcy dies at Parramatta — “gout which had flown to the head”",
+   "band": "colony",
+   "href": "/australia"
+  },
+  {
+   "y": 1859,
+   "what": "Queensland separates from New South Wales. Samuel Sneyd becomes Governor of Brisbane Gaol",
+   "band": "federation",
+   "href": "/sergeant-sneyd",
+   "key": true
+  },
+  {
+   "y": 1862,
+   "what": "William Hartley Sneyd enters the public service, 1 February — the Government Printing Office",
+   "band": "federation",
+   "href": "/sergeant-sneyd"
+  },
+  {
+   "y": 1864,
+   "what": "Paul Cole Atkinson installs the first organ at All Saints', Wickham Terrace, and plays it",
+   "band": "federation",
+   "href": "/atkinson"
+  },
+  {
+   "y": 1873,
+   "what": "William Hartley Sneyd is insolvent",
+   "band": "federation",
+   "href": "/errands"
+  },
+  {
+   "y": 1902,
+   "what": "He is found dead in Victoria Park. His widow's deposition names his father and closes a generation",
+   "band": "federation",
+   "href": "/inquest-1902",
+   "key": true
+  },
+  {
+   "y": 1915,
+   "what": "Three Sneyds and a D'Arcy enlist",
+   "band": "modern",
+   "href": "/great-war"
+  },
+  {
+   "y": 1916,
+   "what": "Arthur Hartley Sneyd killed at Pozières. Six men give six accounts",
+   "band": "modern",
+   "href": "/finding-arthur",
+   "key": true
+  },
+  {
+   "y": 1917,
+   "what": "Vivian Claude Sneyd wins a Bar to the Military Medal at Westhoek",
+   "band": "modern",
+   "href": "/great-war"
+  },
+  {
+   "y": 1936,
+   "what": "Lindesay Atkinson D'Arcy dies suddenly at 44, of Botany Street, Clayfield",
+   "band": "modern",
+   "href": "/papers"
+  },
+  {
+   "y": 2010,
+   "what": "Kenneth Lindsay D'Arcy's eulogy, delivered in three parts by his three children",
+   "band": "modern",
+   "href": "/documents"
+  }
+ ],
+ "close": "The bands are the state, not the family. Read the two together and the pattern is hard to miss: this family goes where a government sends it, and gets written down when a government writes it down."
+}

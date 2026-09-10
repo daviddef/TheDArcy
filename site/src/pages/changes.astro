@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import c from "../data/changes.json";
+const passes = c.days.length;
+const items = c.days.reduce((a, d) => a + d.did.length, 0);
+---
+<Base title={c.title} eyebrow={`${passes} passes · ${items} changes`} dek={c.dek}>
+  <section class="blk">
+    <p class="lede">{c.lead}</p>
+  </section>
+
+  {c.days.map((d) => (
+    <section class="blk">
+      <div class="lab">{d.when}</div>
+      <h2 style="margin-top:.4rem">{d.title}</h2>
+      {d.found && (
+        <div class="note" style="margin-top:1rem"><strong>What it found.</strong> {d.found}</div>
+      )}
+      <ul class="dek" style="margin-top:1.1rem">
+        {d.did.map((x) => <li style="margin-top:.4rem">{x}</li>)}
+      </ul>
+    </section>
+  ))}
+
+  <section class="blk" style="border-bottom:0">
+    <p class="dek">{c.close} <a href={u("/searched")}>What has been read →</a> ·
+      <a href={u("/what-we-got-wrong")}>What was taken back →</a></p>
+  </section>
+</Base>

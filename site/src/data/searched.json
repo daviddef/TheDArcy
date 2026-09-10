@@ -1,0 +1,204 @@
+{
+ "note": "Every source this archive has opened, whether or not it gave anything up. A search that returns nothing is a result, and the next person should not have to run it again.",
+ "cols": [
+  "Source",
+  "What was searched",
+  "When",
+  "Outcome",
+  "What it gave"
+ ],
+ "rows": [
+  {
+   "src": "Trove (National Library of Australia)",
+   "what": "Every spelling of D'Arcy and Sneyd against Brisbane and Queensland papers, 1840–1950; obituaries, funeral notices, insolvency reports, memorial notices",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "Lindesay D'Arcy's 1936 obituary, confirming five details of a eulogy delivered 74 years later and restoring one the family had lost — that he served in France. George Pitt D'Arcy's 1849 obituary and the verdict “gout which had flown to the head”. The 1926 insolvency and the 1927 fraudulent-preference action against the bank. Arthur Sneyd's memorial notices and “Ruby”. Vivian Claude Sneyd at Gallipoli.",
+   "href": "/papers"
+  },
+  {
+   "src": "Queensland State Archives — ArchivesSearch",
+   "what": "“Sneyd” and “D'Arcy” across every series; then item-level fetches through the JSON API",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "Forty-one items under Sneyd. The find of the day: coronial file ITM2736504 (DR103140), an inquest nobody in the family knew existed. Also the 1873 insolvency of William Hartley Sneyd, Arthur's 1916 intestacy, four wills, two police staff files and nine land dealings.",
+   "href": "/inquest-1902"
+  },
+  {
+   "src": "Queensland historical BDM index",
+   "what": "Every Sneyd, D'Arcy, Blum, Wakefield and Murdoch death registration, 1856–1996",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "Sixty registrations, eighteen of them published. Queensland death registrations name the deceased's parents, which is why this one free index carries more proved relationships than every other source on this page combined.",
+   "href": "/register"
+  },
+  {
+   "src": "National Archives of Australia — RecordSearch, series B2455",
+   "what": "Three AIF service dossiers, read page by page at native resolution",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "Arthur Hartley Sneyd 5050 (30 pp.), Vivian Claude Sneyd 1696 (21 pp.), Ernest Vivian William Sneyd 3891 (92 pp.). Arthur's corrected his trade from clerk to typist and his burial from “France” to no known grave.",
+   "href": "/great-war"
+  },
+  {
+   "src": "Australian War Memorial — AWM 1DRL/0428",
+   "what": "The Red Cross Wounded and Missing Enquiry Bureau file for 5050 Sneyd",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "Twenty-three pages, six witness statements, six different answers. A friend still searching thirteen months later from a lecture room at New College, Oxford.",
+   "href": "/finding-arthur"
+  },
+  {
+   "src": "Australian War Memorial — AWM 28",
+   "what": "Honours and awards recommendation files for Sneyd",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "The Bar to Vivian Claude Sneyd's Military Medal, in full: Westhoek, 4 October 1917, signed by Lieut-Col A. Graham Butler and endorsed “Awarded”.",
+   "href": "/great-war"
+  },
+  {
+   "src": "The National Archives (UK) — Discovery",
+   "what": "D'Arcy wills in PROB 11; WO 97 discharge papers; ADM 101 surgeons' journals; Ordnance series",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "PROB 11/1728/64 — Robert D'Arcy's own will, proved 4 July 1827, digitised and unordered. ADM 101/26/1, the surgeon's journal of the convict ship England, which names Major George Pitt D'Arcy four times and closes a 23-year loop on how he died.",
+   "href": "/australia"
+  },
+  {
+   "src": "Queensland Blue Books, 1870–1916 (archive.org)",
+   "what": "Full-text sweep of the colony's civil establishment lists for every family surname",
+   "when": "10 Sep 2026",
+   "outcome": "yield",
+   "got": "Thirty-seven years of Sneyds on the Queensland payroll. William Hartley Sneyd, Fount-room Overseer at the Government Printing Office on £225, in the public service from 1 February 1862 — matching his widow's sworn “about 12 years” to the year.",
+   "href": "/sergeant-sneyd"
+  },
+  {
+   "src": "FreeREG — Berkeley St Mary, Gloucestershire",
+   "what": "Every spelling of Saniger, 1600–1677, plus a county-wide fuzzy sweep",
+   "when": "10 Sep 2026",
+   "outcome": "yield",
+   "got": "Forty-four Sainger entries at Berkeley and 238 across the county. One candidate baptism, 24 May 1655, giving a father the archive never had — Edward Sainger of Wanswell. And the unexpected result: the surname's centre is Dursley and Cam, not Berkeley.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "Connolly, Roll of Officers of the Corps of Royal Engineers",
+   "what": "Robert D'Arcy and Constantine D'Arcy",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "Entry 203 — Robert's whole career, 2nd Lt 1776 to Major-General 1819, C.B., died Chatham 13 May 1827. Entry 335 — Constantine, died Chatham 6 May 1805. Neither entry records a parent, which is itself the finding.",
+   "href": "/hornby"
+  },
+  {
+   "src": "Scotland's statutory registers",
+   "what": "Murdoch of St Quivox, Ayrshire",
+   "when": "9 Sep 2026",
+   "outcome": "yield",
+   "got": "A generation documented. Also the reason the DNA points here: this is a quarter of the tested descendant and the archive has half its ancestor slots empty.",
+   "href": "/murdoch"
+  },
+  {
+   "src": "MyHeritage — autosomal ethnicity estimate v2.5",
+   "what": "One living descendant's result, against the tree's own prediction",
+   "when": "10 Sep 2026",
+   "outcome": "yield",
+   "got": "Agreement, not contradiction: British Isles 80.1% measured against 93.4% predicted. And the test that matters — cutting both grafts moves the prediction by 0.39 of a percentage point.",
+   "href": "/dna"
+  },
+  {
+   "src": "National Archives of Australia — B2455, D'Arcy",
+   "what": "Lindesay Atkinson D'Arcy's AIF dossier, under every spelling of the name",
+   "when": "9 Sep 2026",
+   "outcome": "null",
+   "got": "Nothing. The method was then control-tested by running the same query for his brother-in-law Arthur Sneyd, which returned his dossier at once — so the absence is real and not a bad search. The archive had previously claimed a fourteen-page dossier “is known to exist”; that claim was withdrawn.",
+   "href": "/what-we-got-wrong"
+  },
+  {
+   "src": "The National Archives (UK) — PROB 11",
+   "what": "The will of the 4th Earl of Holderness",
+   "when": "9 Sep 2026",
+   "outcome": "null",
+   "got": "No PCC will that can be found. This was the single best hope of testing whether the Earl acknowledged a natural son, and it is not there to test.",
+   "href": "/hornby"
+  },
+  {
+   "src": "The Gentleman's Magazine, 1827",
+   "what": "An obituary or death notice for Major-General Robert D'Arcy, C.B.",
+   "when": "9 Sep 2026",
+   "outcome": "null",
+   "got": "Empty. A Companion of the Bath and a colonel of Engineers died at Chatham and the magazine of record did not notice. That silence is part of the argument on /hornby.",
+   "href": "/hornby"
+  },
+  {
+   "src": "Every indexed English baptism collection",
+   "what": "A baptism for Robert D'Arcy, c.1750–1758",
+   "when": "9 Sep 2026",
+   "outcome": "null",
+   "got": "Nothing, under any spelling. Combined with Connolly recording no parentage and the Gentleman's Magazine recording no death, the parentage question is not disputed — it is unknown.",
+   "href": "/hornby"
+  },
+  {
+   "src": "WO 149 — Royal Military Academy Woolwich cadet registers",
+   "what": "A cadet of the early 1770s",
+   "when": "9 Sep 2026",
+   "outcome": "null",
+   "got": "The wrong record set entirely: WO 149 begins in 1790 and is held at Sandhurst. The archive had recommended it without checking its date range, and said so.",
+   "href": "/what-we-got-wrong"
+  },
+  {
+   "src": "The London Gazette",
+   "what": "The citation for Vivian Claude Sneyd's first Military Medal",
+   "when": "10 Sep 2026",
+   "outcome": "null",
+   "got": "The Gazette records the award but does not name him in a citation. The Bar was found instead, at the AWM.",
+   "href": "/great-war"
+  },
+  {
+   "src": "Queensland State Archives",
+   "what": "A service record for Samuel Charles Sneyd, Governor of Brisbane Gaol",
+   "when": "9 Sep 2026",
+   "outcome": "null",
+   "got": "Searched twice. He appears exactly once in the whole QSA catalogue and it is not a service record. A man who ran a colonial gaol for over a decade has left no staff file that survives.",
+   "href": "/sergeant-sneyd"
+  },
+  {
+   "src": "FreeREG — Berkeley St Mary, 1678 onwards",
+   "what": "Five generations of the Saniger chain, 1679 to 1805",
+   "when": "10 Sep 2026",
+   "outcome": "blocked",
+   "got": "Not a null result and must not be reported as one: the Berkeley transcript stops in 1677. The records may well exist in the parish books; they are absent from the transcription, which is a different thing.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "Commonwealth War Graves Commission",
+   "what": "Where Arthur Hartley Sneyd is commemorated",
+   "when": "9 Sep 2026",
+   "outcome": "blocked",
+   "got": "Bot-blocked, twice. A free two-minute search that a person can run and this archive cannot.",
+   "href": "/errands"
+  },
+  {
+   "src": "NSW State Archives",
+   "what": "Mounted Police and convict-era records for Samuel Charles Sneyd",
+   "when": "9 Sep 2026",
+   "outcome": "blocked",
+   "got": "The catalogue migrated to mhnsw.au and the old URLs are dead. Between houses.",
+   "href": "/open-questions"
+  },
+  {
+   "src": "Australian War Memorial — collection search",
+   "what": "General searching beyond the two files reached by direct URL",
+   "when": "9 Sep 2026",
+   "outcome": "blocked",
+   "got": "Mid-migration. Two documents were reached by constructing S3 URLs directly; the search itself would not answer.",
+   "href": "/finding-arthur"
+  },
+  {
+   "src": "Trove — the 1873 insolvency",
+   "what": "Newspaper coverage of William Hartley Sneyd's insolvency",
+   "when": "10 Sep 2026",
+   "outcome": "blocked",
+   "got": "The QSA file proves the insolvency exists. Trove's search interface would not surface the notice, repeatedly. The file itself is not digitised.",
+   "href": "/errands"
+  }
+ ]
+}

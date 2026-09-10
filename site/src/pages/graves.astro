@@ -1,0 +1,91 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import g from "../data/graves.json";
+const shared = g.rows.filter((r) => r.shared);
+const many = g.rows.filter((r) => r.n > 1 && !r.shared);
+const single = g.rows.filter((r) => r.n === 1);
+---
+<Base title="Graves and Burials" eyebrow={`${g.buried} burials · ${g.rows.length} places`}
+  dek="Where this family is buried, gathered from the tree — including two plot references that two different people are both supposed to occupy.">
+
+  <section class="blk">
+    <p class="lede">Of the people this archive publishes, <strong>{g.buried}</strong> have a recorded
+    burial place across <strong>{g.rows.length}</strong> cemeteries and gardens. Almost all of it
+    comes from the family tree and almost none of it has been checked against a cemetery register.
+    <span class="chip inf">from the tree, unverified</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The thing worth looking at</div>
+    <h2 style="margin-top:.4rem">Two plots, four people</h2>
+    <p>A cemetery plot reference is precise: portion, section, grave number. When the same reference
+    appears against two people it is either <strong>quietly true</strong> — families did share
+    graves, and routinely — or it is a <strong>copy-and-paste error</strong> propagated through an
+    online tree. <strong>This archive cannot tell which, and says so.</strong></p>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
+      {shared.map((r) => (
+        <div style="border-left:2px solid var(--ochre);padding:2px 0 2px 16px">
+          <div><strong>{r.place}</strong></div>
+          <p class="small" style="margin-top:.4rem">
+            {r.people.map((p, i) => (
+              <>{i > 0 && " · "}<a href={u(`/people/${p.slug}`)}>{p.name}</a>
+              {p.life && <span style="color:var(--ink-3)"> ({p.life})</span>}</>
+            ))}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>The two read very differently.</strong> At Toowong, a father and the son who died
+      thirteen years after him — entirely ordinary, and probably true. At Lutwyche, a woman and her
+      son's wife, who died five years before her. Also possible, and much more the sort of thing a
+      records-matcher invents. <strong>One email to the Brisbane City Council cemetery register
+      settles both in a minute</strong>, and it is now on the list.
+      <a href={u("/errands")}>The queue →</a> · <a href={u("/the-women")}>The Lutwyche question →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>Where more than one of them lies</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Place</th><th class="m">Buried</th><th>Who</th></tr></thead>
+        <tbody>
+          {many.map((r) => (
+            <tr>
+              <td><strong>{r.place}</strong></td>
+              <td class="m">{r.n}</td>
+              <td class="small">{r.people.map((p, i) => (
+                <>{i > 0 && " · "}<a href={u(`/people/${p.slug}`)}>{p.name}</a></>
+              ))}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>And {single.length} places holding one person each</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Who</th><th>Where</th></tr></thead>
+        <tbody>
+          {single.map((r) => (
+            <tr>
+              <td><a href={u(`/people/${r.people[0].slug}`)}>{r.people[0].name}</a>
+                {r.people[0].life && <span class="small" style="color:var(--ink-3)"> {r.people[0].life}</span>}</td>
+              <td class="small">{r.place}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1.2rem"><strong>Arthur Hartley Sneyd is not on this page.</strong>
+    He has no known grave — the army's own form recorded his burial place as "Not yet to hand", and it
+    never came. <a href={u("/finding-arthur")}>The search for him →</a></p>
+  </section>
+</Base>

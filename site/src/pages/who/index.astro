@@ -1,0 +1,77 @@
+---
+import Base from "../../layouts/Base.astro";
+import { u } from "../../lib/url.js";
+import d from "../../data/dossiers.json";
+
+const people = Object.values(d.people).sort((a, b) => a.name.localeCompare(b.name));
+const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCase()))].sort();
+---
+<Base
+  title="Every Person Named"
+  eyebrow={`${d.counts.named} named in records · ${d.counts.ownPage} of them not in this family`}
+  dek="The people this archive met in documents and never had anywhere to put: witnesses, constables, surgeons, convicts, clerks and comrades. They are in the record, and leaving them out would be editing it.">
+
+  <section class="blk">
+    <p class="lede">Two pages on this site already list people. <a href={u("/people")}>The People</a>
+    is the <em>family tree</em> — {`473`} of them. <a href={u("/register")}>The register</a> is the
+    raw catch, one row per source line. Neither gives a page to the man who found a body in Victoria
+    Park in 1902, or to the six soldiers who gave six different answers about one death at Pozières.</p>
+
+    <p class="dek" style="margin-top:1rem">There are <strong>{d.counts.named}</strong> people named in
+    records this archive has read. <strong>{d.counts.withTreePage}</strong> of them are relatives and
+    already have a dossier under <a href={u("/people")}>The People</a>. The other
+    <strong>{d.counts.ownPage}</strong> are not in this family at all — and they get a page here.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Why bother with people who are not relatives?</strong> Because they are the evidence.
+      Sergeant Morton of the 10th Battalion is the only human being who ever said where Arthur Sneyd
+      was buried. Constable Moroney is the reason we know what was in a dead man's pockets. A convict
+      called John Wells is the reason we know a major of the 39th shipped his dinner service to New
+      South Wales. Cut them out and you are left with assertions.
+      <a href={u("/register")}>The register →</a>
+    </div>
+  </section>
+
+  <section class="blk" id="finder">
+    <div class="lab">Search</div>
+    <label for="q" class="vh">Search these people</label>
+    <input id="q" type="search" autocomplete="off"
+      placeholder="A name, a rank, a record — Morton, constable, Étaples, convict…"
+      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
+             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
+    <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{people.length} people</p>
+    <p class="small" style="margin-top:.5rem">Looking for a relative instead?
+      <a href={u("/search")}>Search the whole archive →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <div class="grid three" style="margin-top:.4rem">
+      {people.map((p) => (
+        <a class="cardlink wcard"
+           data-s={`${p.name} ${p.surname} ${p.rows.map((r) => r.says + " " + r.source).join(" ")}`.toLowerCase()}
+           href={u(`/who/${p.slug}`)}>
+          <div class="nm">{p.name}</div>
+          <p class="small" style="margin-top:.3rem">{p.rows[0].says.slice(0, 92)}{p.rows[0].says.length > 92 ? "…" : ""}</p>
+          {p.n > 1 && <span class="chip doc" style="margin-top:.45rem">{p.n} records</span>}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      var q = document.getElementById("q"); if (!q) return;
+      var cards = [].slice.call(document.querySelectorAll(".wcard"));
+      var count = document.getElementById("count");
+      q.addEventListener("input", function () {
+        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
+        cards.forEach(function (c) {
+          var h = c.getAttribute("data-s");
+          var ok = terms.every(function (t) { return h.indexOf(t) !== -1; });
+          c.hidden = !ok; if (ok) shown++;
+        });
+        count.textContent = shown + (shown === 1 ? " person" : " people") + (terms.length ? " matching" : "");
+      });
+    })();
+  </script>
+</Base>

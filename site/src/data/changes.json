@@ -1,0 +1,52 @@
+{
+ "title": "What changed",
+ "eyebrow": "Every pass, newest first",
+ "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
+ "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
+ "days": [
+  {
+   "when": "10 September 2026",
+   "title": "The DNA, and the branding brought into line",
+   "did": [
+    "Published /dna — one living descendant's autosomal estimate against the tree's own prediction, computed twice, once with both grafts cut.",
+    "Corrected an error in that analysis within the hour: the first version put the predicted Scottish share at 0.02% and announced the DNA was contradicting the tree. It was not. Recorded as error nine.",
+    "Brought the homepage onto the .hero banner every sibling archive uses. The rules had been in this site's stylesheet, unused, since it was built.",
+    "Built /search over the whole archive, with the eleven spellings of Saniger folded together.",
+    "Added /searched, /changes and /errands — publishing work that had been sitting in notes/ and requests/ on disk."
+   ],
+   "found": "That cutting both grafts — 98 people, thirteen generations, four royal houses — moves the predicted ancestry by 0.39 of a percentage point."
+  },
+  {
+   "when": "10 September 2026",
+   "title": "Berkeley, and the audit that moved the floor",
+   "did": [
+    "Searched the Gloucestershire parish registers instead of another family's website.",
+    "Published /berkeley: 44 Sainger entries, three Williams, one good candidate and a father the archive never had.",
+    "Caught a false story before publishing it as fact, and left it on the page as a worked example.",
+    "Audited every 'defended' ancestor and published the result even though it was bad."
+   ],
+   "found": "Of 144 ancestors the archive called documented, eight rest on a record set. Above generation seven, exactly one of sixty does. The honest figure is about seven generations, not twelve."
+  },
+  {
+   "when": "10 September 2026",
+   "title": "The worst error, and the register",
+   "did": [
+    "Told the family their own founding brief was wrong. It was not; I had read the root person's spouse instead of her parents. It stood on the site for a day.",
+    "Published /register — every named individual the archive has met anywhere, with the source beside each one.",
+    "Put a pedigree chart on all 473 person pages, with the border encoding how each relationship is known."
+   ],
+   "found": "Of 473 pedigree charts, 19 contain a single edge written in a record."
+  },
+  {
+   "when": "9 September 2026",
+   "title": "The inquest nobody knew about",
+   "did": [
+    "Read QSA coronial file DR103140 in full and published it plainly at /inquest-1902.",
+    "Published /finding-arthur from the Red Cross file.",
+    "Rewrote /great-war around four men instead of one."
+   ],
+   "found": "A suicide in Victoria Park in 1902 — and, in the widow's sworn deposition, the name of his father, closing a generation four research passes had been circling."
+  }
+ ],
+ "close": "If you find something this page does not record, that is a gap in the record-keeping and worth telling me about."
+}

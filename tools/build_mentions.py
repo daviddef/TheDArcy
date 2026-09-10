@@ -28,7 +28,11 @@ PUB  = os.path.join(ROOT, "site", "public")
 # Pages that are lists of everybody rather than writing about anybody. A name in
 # a card grid is not a mention; counting them would make every person look
 # equally well documented, which is the opposite of this archive's whole point.
-SKIP_PREFIX = ("/people", "/families", "/places", "/register")
+# Directory pages, not prose. A page that lists every person by name would
+# otherwise "mention" every person, which tells a reader nothing and drowns the
+# handful of pages that actually write about them.
+SKIP_PREFIX = ("/people", "/families", "/places", "/register", "/who",
+               "/households", "/marriages", "/graves", "/search")
 
 TAGS = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
 STRIP = re.compile(r"<[^>]+>")

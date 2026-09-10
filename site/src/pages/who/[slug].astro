@@ -1,0 +1,87 @@
+---
+import Base from "../../layouts/Base.astro";
+import { u } from "../../lib/url.js";
+import d from "../../data/dossiers.json";
+
+export async function getStaticPaths() {
+  const d = (await import("../../data/dossiers.json")).default;
+  return Object.values(d.people).map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props;
+
+const others = Object.values(d.people)
+  .filter((o) => o.slug !== p.slug && o.surname === p.surname)
+  .slice(0, 12);
+
+/* Which record a line came out of, in words a reader can act on. */
+const WHERE = [
+  [/QSA coronial/, "The inquest, 1902", "/inquest-1902"],
+  [/QSA /, "Queensland State Archives", "/sources"],
+  [/AWM 1DRL/, "The search for Arthur", "/finding-arthur"],
+  [/AWM 28/, "The Great War", "/great-war"],
+  [/NAA B2455|NAA J34/, "The Great War", "/great-war"],
+  [/ADM 101/, "Arrival, 1826", "/australia"],
+  [/FreeREG/, "Berkeley, Gloucestershire", "/berkeley"],
+  [/Blue Book/, "Sergeant Sneyd", "/sergeant-sneyd"],
+  [/Trove/, "What the papers said", "/papers"],
+  [/Queensland death index/, "The register", "/register"],
+  [/Connolly|PROB/, "The Hornby claim", "/hornby"],
+];
+const context = (src) => WHERE.find(([re]) => re.test(src));
+---
+<Base title={p.name} eyebrow={`${p.n} ${p.n === 1 ? "record" : "records"} name this person`}
+  dek={p.rows[0].says.slice(0, 155)}>
+
+  <section class="blk">
+    <div class="note">
+      <strong>This person is not in the family tree.</strong> They are here because this archive
+      read a document that names them, and a name in a record is evidence whether or not the person
+      is a relative. Nothing on this page is inferred — every line below is what a source says.
+      <a href={u("/who")}>Everyone else met this way →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2 style="margin-top:0">What the records say</h2>
+    <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
+      {p.rows.map((r) => {
+        const c = context(r.source);
+        return (
+          <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+            <p>{r.says}</p>
+            <p class="small" style="margin-top:.4rem;color:var(--ink-2)">
+              <span class="chip doc">record</span> {r.source.replace(/^record · /, "")}
+              {r.link && <> · <a href={r.link}>the source ↗</a></>}
+              {c && <> · <a href={u(c[2])}>{c[1]} →</a></>}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  {others.length > 0 && (
+    <section class="blk">
+      <h2>Others carrying the name {p.surname}</h2>
+      <p class="small">Filed together because they share a surname. <strong>A shared surname is not
+      a relationship</strong> — these are kept apart rather than merged.
+      <a href={u("/name")}>Why →</a></p>
+      <div class="grid three" style="margin-top:1rem">
+        {others.map((o) => (
+          <a class="cardlink" href={u(`/who/${o.slug}`)}>
+            <div class="nm">{o.name}</div>
+            <p class="small" style="margin-top:.3rem">{o.rows[0].says.slice(0, 80)}…</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="blk" style="border-bottom:0">
+    <p class="small">
+      <a href={u("/who")}>← Every person named</a> ·
+      <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>In the register →</a> ·
+      <a href={u("/search")}>Search the archive →</a> ·
+      <a href={u("/people")}>The family tree →</a></p>
+  </section>
+</Base>

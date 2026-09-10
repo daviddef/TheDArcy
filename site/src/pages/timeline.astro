@@ -1,0 +1,76 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import t from "../data/timeline.json";
+
+const Y0 = 1770, Y1 = 2015, SPAN = Y1 - Y0;
+const x = (y) => ((Math.min(Math.max(y, Y0), Y1) - Y0) / SPAN) * 100;
+const ordered = [...t.events].sort((a, b) => a.y - b.y);
+---
+<Base title={t.title} eyebrow={t.eyebrow} dek={t.dek}>
+
+  <section class="blk">
+    <p class="lede">Every page on this site is about people. This one is about the state they lived
+    under — because in an archive built almost entirely out of government paper, the state is not
+    background. <strong>It is the reason the records exist at all.</strong></p>
+  </section>
+
+  <section class="blk">
+    <h2>The bands are the state, not the family</h2>
+    <div class="tlwrap" style="margin-top:1.4rem">
+      {/* One lane per regime. They overlap in time — Georgian Britain and convict
+          New South Wales are the same years seen from two ends of the world — and
+          drawing them in a single row hid exactly that. */}
+      <div class="tlbands">
+        {t.bands.map((b) => (
+          <div class="tllane">
+            <div class={`tlband r-${b.key}`}
+                 style={`left:${x(b.from)}%;width:${x(b.to) - x(b.from)}%`}>
+              <span class="tlname">{b.label}</span>
+              <span class="tlyears">{b.from}–{b.to}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="tlaxis">
+        {[1800, 1850, 1900, 1950, 2000].map((y) => (
+          <span class="tltick" style={`left:${x(y)}%`}>{y}</span>
+        ))}
+      </div>
+    </div>
+
+    <div style="margin-top:1.6rem;display:flex;flex-direction:column;gap:.9rem">
+      {t.bands.map((b) => (
+        <div class="tllegend">
+          <i class={`tlsw r-${b.key}`}></i>
+          <div><strong>{b.label}</strong> <span class="small mono">{b.from}–{b.to}</span>
+            <p class="small" style="margin-top:.25rem;color:var(--ink-2)">{b.note}</p></div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>What was happening to them</h2>
+    <p class="dek">{ordered.length} events. The marked ones are the hinges — the moments after which
+    this family is somewhere else, or someone else.</p>
+
+    <div style="margin-top:1.4rem;display:flex;flex-direction:column;gap:0">
+      {ordered.map((e) => (
+        <div class={`tlrow r-${e.band}${e.key ? " key" : ""}`}>
+          <span class="tly mono">{e.y}</span>
+          <span class="tlwhat">
+            {e.key ? <strong>{e.what}</strong> : e.what}
+            {e.href && <> <a href={u(e.href)}>→</a></>}
+          </span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <div class="note">{t.close}</div>
+    <p class="small" style="margin-top:1.2rem"><a href={u("/direct-line")}>The spine →</a> ·
+      <a href={u("/places")}>Places →</a> · <a href={u("/how-far-back")}>How far back →</a></p>
+  </section>
+</Base>
