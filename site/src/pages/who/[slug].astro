@@ -29,7 +29,7 @@ const WHERE = [
 ];
 const context = (src) => WHERE.find(([re]) => re.test(src));
 ---
-<Base title={p.name} eyebrow={`${p.n} ${p.n === 1 ? "record" : "records"} name this person`}
+<Base title={p.name} eyebrow={p.n === 1 ? "one record names this person" : `${p.n} records name this person`}
   dek={p.rows[0].says.slice(0, 155)}>
 
   <section class="blk">
