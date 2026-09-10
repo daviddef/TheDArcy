@@ -1,0 +1,261 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import dna from "../data/dna.json";
+
+const cut = Object.fromEntries(dna.predictedCut.map((r) => [r.country, r.share]));
+const pred = (c) => cut[c] ?? 0;
+
+/* The estimate lumps regions the tree keeps apart, so the comparison has to be
+   made at the level the estimate actually reports, not at the level the tree
+   would prefer. */
+const ROWS = [
+  ["Scottish and Welsh", 41.9, pred("Scotland") + pred("Wales"),
+   "The estimate reports Scotland and Wales as one region. The tree has 26.6% Scottish and 3.1% Welsh."],
+  ["English", 19.1, pred("England"),
+   "The tree predicts more English than the estimate reports, and more Irish still."],
+  ["Irish", 19.1, pred("Ireland"),
+   "Cork, Limerick and one Matson “b. Ireland” on the mother's side."],
+  ["Dutch, Danish and Germanic", 5.9 + 4.4 + 3.8, pred("Germany"),
+   "One man: John Blum, born in Germany, the tester's great-great-grandfather."],
+  ["Breton and French", 4.2 + 1.6, pred("France"),
+   "The largest gap on this table, and the one least likely to mean anything — see below."],
+];
+const brDNA = 41.9 + 19.1 + 19.1;
+const brTree = pred("Scotland") + pred("Wales") + pred("England") + pred("Ireland");
+/* How far the whole prediction moves when both grafts are cut. Total variation
+   distance: half the sum of the absolute per-country differences. Computed, not
+   written down, because research will keep changing it. */
+const all = new Set([...dna.predicted.map((r) => r.country), ...dna.predictedCut.map((r) => r.country)]);
+const asHeld = Object.fromEntries(dna.predicted.map((r) => [r.country, r.share]));
+const drift = [...all].reduce((a, c) => a + Math.abs((asHeld[c] ?? 0) - (cut[c] ?? 0)), 0) / 2;
+
+const mum = dna.sides.find((s) => s.role === "mother");
+const dad = dna.sides.find((s) => s.role === "father");
+---
+<Base
+  title="What the DNA says"
+  eyebrow={`${dna.estimate.provider} ${dna.estimate.version} · read ${dna.estimate.read}`}
+  dek="A living descendant tested. It is the first check this archive has ever had from outside the paper record — and the first thing it does is destroy the most attractive claim in the tree.">
+
+  <section class="blk">
+    <p class="lede">A living descendant of <a href={u("/people/kenneth-lindsay-d-arcy")}>Kenneth
+    Lindsay D'Arcy</a> (1927–2010) and <a href={u("/people/audrey-dell-murdoch")}>Audrey "Dell"
+    Murdoch</a> (1929–2022) has taken an autosomal DNA test. <strong>She is living, so she is not
+    named here</strong> and her kit is not identified — but her result can be published without her,
+    and it is worth publishing, because every other page on this site rests on paper.
+    <a href={u("/method")}>The rule →</a></p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>What an ethnicity estimate is, in one sentence.</strong> It compares your genome
+      against reference panels of present-day people from various regions and reports which
+      panels it most resembles. <strong>It does not find your ancestors.</strong> It cannot name
+      one, date one, or confirm a single link in a pedigree — and the further back a claim sits,
+      the less it can say, until at about eight generations it can say nothing at all.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The comparison</div>
+    <h2 style="margin-top:.4rem">What the tree predicts, against what the swab says</h2>
+    <p>The tree's prediction is computed by walking her pedigree and attributing each line to the
+    country of its deepest ancestor whose birthplace is recorded — <strong>with both rejected grafts
+    cut</strong>, because this archive does not accept them.
+    <a href={u("/how-far-back")}>Both grafts →</a></p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Region as the estimate reports it</th><th class="m">The estimate</th>
+          <th class="m">The tree predicts</th><th>Note</th></tr></thead>
+        <tbody>
+          {ROWS.map(([name, est, tree, note]) => (
+            <tr>
+              <td><strong>{name}</strong></td>
+              <td class="m">{est.toFixed(1)}%</td>
+              <td class="m">{tree.toFixed(1)}%</td>
+              <td class="small">{note}</td>
+            </tr>
+          ))}
+          <tr>
+            <td><strong>British Isles, all four together</strong></td>
+            <td class="m"><strong>{brDNA.toFixed(1)}%</strong></td>
+            <td class="m"><strong>{brTree.toFixed(1)}%</strong></td>
+            <td class="small">This is the row that matters, and the two agree.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>The headline is agreement, not contradiction.</strong> The tree says this family is
+      overwhelmingly British and Irish with one German great-great-grandfather. The DNA says the
+      same. The internal split between English, Irish and Scottish differs — the tree predicts more
+      Irish and less Scottish than the estimate reports — but <strong>those three populations are
+      the hardest in Europe to tell apart</strong>, they have been exchanging people for two
+      thousand years, and no company's panel separates them cleanly. A disagreement inside the
+      British Isles is close to no information. A disagreement about whether the family is British
+      at all would have been a finding.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The test worth running</div>
+    <h2 style="margin-top:.4rem">Cut both grafts and the DNA barely notices</h2>
+
+    <p>This archive rejects two joins the family tree carries: the D'Arcys of
+    <a href={u("/hornby")}>Hornby Castle</a>, unevidenced, and the Sneyds of Keele Hall, disproved.
+    Between them they carry <strong>98 people</strong> and about <strong>thirteen extra
+    generations</strong>, including the Earls of Holderness, the house of Oldenburg and the kings of
+    Denmark.</p>
+
+    <p style="margin-top:1rem">So the prediction was computed twice — once with the tree as the
+    family holds it, once with both grafts cut. <strong>The difference is
+    {drift.toFixed(2)} of a percentage point.</strong></p>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Predicted origin</th><th class="m">Tree as held</th><th class="m">Grafts cut</th></tr></thead>
+        <tbody>
+          {dna.predicted.map((r) => (
+            <tr><td>{r.country}</td><td class="m">{r.share.toFixed(2)}%</td>
+                <td class="m">{(cut[r.country] ?? 0).toFixed(2)}%</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>A hundred people, thirteen generations, four royal houses — and less than half of
+      one per cent.</strong> That is not a quirk of the arithmetic; it is what deep pedigrees are. Halve a
+      contribution every generation and by the twentieth an ancestor is worth one part in a million.
+      The glamour at the top of a family tree is, genetically, almost exactly nothing. It is worth
+      knowing whether it is true. It is not worth knowing because it would show up in a swab.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The trap</div>
+    <h2 style="margin-top:.4rem">4.4% Danish is not the kings of Denmark</h2>
+
+    <p class="lede">Somebody in this family will eventually put "<strong>Danish 4.4%</strong>" next
+    to "<strong>descended from Frederick I of Denmark</strong>" and join them. This section exists
+    so that when they do, the answer is already written down.</p>
+
+    <ol class="dek" style="margin-top:1.1rem">
+      <li><strong>The tree's own descent predicts 0.02%.</strong> Frederick I sits around generation
+      twenty. Twenty halvings is one part in a million. The Oldenburg descent, taken entirely at
+      face value, cannot produce 4.4% of anything.</li>
+      <li><strong>You do not inherit from most of your ancestors.</strong> DNA is passed in chunks,
+      and beyond about eight generations the majority of your ancestors on paper contributed
+      <em>no measurable DNA to you at all</em>. A twentieth-generation ancestor is, for almost every
+      descendant, genetically absent.</li>
+      <li><strong>Danish, Dutch and Germanic together come to 14.1%</strong> — and that North Sea
+      signal is exactly what ordinary <em>English</em> ancestry produces in these panels. England
+      spent centuries absorbing Angles, Saxons, Jutes and Danes. An English-descended person
+      routinely scores several per cent "Danish" without a Dane in sight.</li>
+      <li><strong>The tree already explains the continental share better.</strong> One man —
+      <a href={u("/people/john-blum-1842")}>John Blum</a>, born in Germany, the tester's
+      great-great-grandfather — accounts for a predicted <strong>6.25%</strong> on his own. No
+      royalty required.</li>
+    </ol>
+
+    <div class="note" style="margin-top:1.3rem">
+      The same applies, in reverse, to <strong>Breton 4.2%</strong>. The D'Arcy name is Norman — it
+      is a place in France. <a href={u("/name")}>The name →</a> But a surname arriving with one man
+      in the eleventh century leaves no autosomal trace whatever, and 4.2% Breton is not evidence of
+      it. <strong>A name is not a chromosome.</strong>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What the numbers cannot do</div>
+    <h2 style="margin-top:.4rem">Four limits, stated before anyone quotes the percentages</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          <tr><td style="white-space:nowrap"><strong>Version</strong></td>
+              <td>This is <strong>{dna.estimate.version}</strong>. The provider's own FAQ opens by
+              explaining how it differs from v0.95. <strong>The same saliva has produced different
+              numbers before and will again</strong> — the genome did not change, the reference
+              panel did.</td></tr>
+          <tr><td style="white-space:nowrap"><strong>Confidence</strong></td>
+              <td>The slider sits {dna.estimate.confidence}. <strong>The list you are shown is a
+              setting, not a result.</strong> Move it and regions appear and vanish.</td></tr>
+          <tr><td style="white-space:nowrap"><strong>Small numbers</strong></td>
+              <td>Everything under about 5% is at or near the noise floor. French 1.6% is not a
+              French ancestor; it is a number that could be zero.</td></tr>
+          <tr><td style="white-space:nowrap"><strong>Individuals</strong></td>
+              <td>No percentage on that page names, dates or confirms a single person. Not one join
+              in this archive is settled by it, and none is overturned by it either.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Where the trail actually stops</div>
+    <h2 style="margin-top:.4rem">One side of this pedigree is half the size of the other</h2>
+
+    <p>Her ancestry divides evenly between two parents. This archive's coverage of them does not.</p>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Side</th><th class="m">Ancestor slots filled</th><th>Reaches</th></tr></thead>
+        <tbody>
+          <tr><td><strong>{dad?.name}</strong> <span class="small">— D'Arcy and Sneyd</span></td>
+              <td class="m">{dad?.filled} of {dad?.slots} · <strong>{dad?.pct}%</strong></td>
+              <td class="small">generation 21, though only through the grafts</td></tr>
+          <tr><td><strong>{mum?.name}</strong> <span class="small">— Murdoch and Atwell</span></td>
+              <td class="m">{mum?.filled} of {mum?.slots} · <strong>{mum?.pct}%</strong></td>
+              <td class="small">generation 5, and then nothing</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1.2rem">The names where her mother's side runs out are worth reading aloud:
+    <strong>Claud Murdoch. Janet Walker. William Watt. Marion Fleming. Agnes Isabel Scott.</strong>
+    Five Scottish surnames, four to five generations up, and <strong>not one recorded
+    birthplace between them</strong>.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>This is the research directive, and it did not come from the percentages.</strong> It
+      came from counting. The Ayrshire Murdochs are a quarter of this person and the archive has
+      twenty-five ancestor slots filled out of fifty-two — against three hundred and four on the
+      other side. <a href={u("/murdoch")}>The Murdochs →</a> ·
+      <a href={u("/open-questions")}>The queue →</a>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What would actually be evidence</h2>
+    <p class="dek">Two things on the same results page are worth more than every percentage on it,
+    and one of them is the strongest test available to this archive by any means.</p>
+
+    <ol class="dek" style="margin-top:1.1rem">
+      <li style="margin-bottom:.7rem"><strong>Y-DNA, from a male D'Arcy.</strong> The tester has no
+      Y chromosome. A male-line D'Arcy descendant does, and it descends father to son essentially
+      unchanged. It would place the D'Arcy paternal line against every other tested D'Arcy in the
+      world — which is the most direct attack anyone can make on
+      <a href={u("/hornby")}>Robert D'Arcy's parentage</a>, and it beats every archive visit on this
+      site's list. <span class="chip inf">not yet done</span></li>
+      <li style="margin-bottom:.7rem"><strong>The match list.</strong> Shared matches carrying their
+      own trees can confirm or break a specific join — the
+      <a href={u("/berkeley")}>Saniger line</a> and the Hornby graft above all. Unlike an ethnicity
+      estimate, a match is evidence about <em>individuals</em>.
+      <span class="chip inf">not yet examined</span></li>
+      <li><strong>The genetic group, "{dna.estimate.extra}".</strong> Groups are far more
+      geographically specific than the headline regions and often name a county. Worth reading
+      before anything above it. <span class="chip inf">not yet read</span></li>
+    </ol>
+
+    <div class="note" style="margin-top:1.4rem">
+      <strong>And one correction, recorded where it happened.</strong> The first version of this
+      analysis put the tree's predicted Scottish share at <strong>0.02%</strong> and announced that
+      the DNA was contradicting the tree. It was not. The fault was in the method: it attributed
+      each line to the deepest ancestor <em>on record</em> rather than the deepest ancestor
+      <em>with a known birthplace</em>, which threw away St Quivox in Ayrshire because the men above
+      it are names without places. The corrected figure is <strong>{pred("Scotland").toFixed(1)}%</strong>.
+      <a href={u("/what-we-got-wrong")}>With the rest of them →</a>
+    </div>
+  </section>
+</Base>

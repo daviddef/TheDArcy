@@ -1,0 +1,217 @@
+{
+ "estimate": {
+  "provider": "MyHeritage",
+  "version": "v2.5",
+  "read": "10 September 2026",
+  "confidence": "middle of the slider — showing 2 of 3 genetic groups",
+  "groups": [
+   [
+    "Scottish and Welsh",
+    41.9,
+    "one lumped region, with “UK and Ireland” nested beneath it"
+   ],
+   [
+    "English",
+    19.1,
+    ""
+   ],
+   [
+    "Irish",
+    19.1,
+    ""
+   ],
+   [
+    "Dutch",
+    5.9,
+    ""
+   ],
+   [
+    "Danish",
+    4.4,
+    ""
+   ],
+   [
+    "Breton",
+    4.2,
+    ""
+   ],
+   [
+    "Germanic",
+    3.8,
+    ""
+   ],
+   [
+    "French",
+    1.6,
+    ""
+   ]
+  ],
+  "extra": "England #13"
+ },
+ "predicted": [
+  {
+   "country": "Ireland",
+   "share": 34.38,
+   "ofKnown": 34.4
+  },
+  {
+   "country": "England",
+   "share": 28.91,
+   "ofKnown": 28.9
+  },
+  {
+   "country": "Scotland",
+   "share": 26.59,
+   "ofKnown": 26.6
+  },
+  {
+   "country": "Germany",
+   "share": 6.59,
+   "ofKnown": 6.6
+  },
+  {
+   "country": "Wales",
+   "share": 3.12,
+   "ofKnown": 3.1
+  },
+  {
+   "country": "France",
+   "share": 0.39,
+   "ofKnown": 0.4
+  },
+  {
+   "country": "Denmark",
+   "share": 0.02,
+   "ofKnown": 0.0
+  }
+ ],
+ "predictedCut": [
+  {
+   "country": "Ireland",
+   "share": 34.38
+  },
+  {
+   "country": "England",
+   "share": 29.3
+  },
+  {
+   "country": "Scotland",
+   "share": 26.56
+  },
+  {
+   "country": "Germany",
+   "share": 6.25
+  },
+  {
+   "country": "Wales",
+   "share": 3.12
+  },
+  {
+   "country": "France",
+   "share": 0.39
+  }
+ ],
+ "coldCut": 0.0,
+ "cold": 0.0,
+ "known": 100.0,
+ "sides": [
+  {
+   "role": "father",
+   "name": "Kenneth Lindsay D'Arcy",
+   "filled": 157,
+   "slots": 304,
+   "pct": 52,
+   "stops": [
+    {
+     "gen": 5,
+     "name": "Conrad Blum",
+     "place": ""
+    },
+    {
+     "gen": 5,
+     "name": "Elizabeth Creech",
+     "place": "County Cork, Ireland"
+    },
+    {
+     "gen": 5,
+     "name": "Elizabeth Keeling",
+     "place": ""
+    },
+    {
+     "gen": 5,
+     "name": "George Keeling",
+     "place": ""
+    },
+    {
+     "gen": 5,
+     "name": "Hannah Elizabeth (possibly Alm Eliza) Gautz",
+     "place": ""
+    },
+    {
+     "gen": 5,
+     "name": "Hannah Scanlan",
+     "place": ""
+    },
+    {
+     "gen": 5,
+     "name": "James Wakefield",
+     "place": "Gloucestershire, England"
+    },
+    {
+     "gen": 5,
+     "name": "Samuel Creech",
+     "place": "Bandon, County Cork, Ireland"
+    }
+   ]
+  },
+  {
+   "role": "mother",
+   "name": "Audrey \"Dell\" Murdoch",
+   "filled": 25,
+   "slots": 52,
+   "pct": 48,
+   "stops": [
+    {
+     "gen": 4,
+     "name": "Agnes Isabel Scott?",
+     "place": ""
+    },
+    {
+     "gen": 4,
+     "name": "John Wright",
+     "place": ""
+    },
+    {
+     "gen": 4,
+     "name": "Mary Abbot",
+     "place": ""
+    },
+    {
+     "gen": 4,
+     "name": "William Matson",
+     "place": "Ireland"
+    },
+    {
+     "gen": 5,
+     "name": "Elizabeth Atwell",
+     "place": "Putney, Surrey, England"
+    },
+    {
+     "gen": 5,
+     "name": "Janet Walker",
+     "place": ""
+    },
+    {
+     "gen": 5,
+     "name": "Joseph Atwell",
+     "place": "Teddington, Middlesex, England"
+    },
+    {
+     "gen": 5,
+     "name": "Maria \"Beacham\" Beecham",
+     "place": "Long Ashton, Somerset, England"
+    }
+   ]
+  }
+ ]
+}
