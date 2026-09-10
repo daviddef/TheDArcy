@@ -34,45 +34,37 @@ const more = [
 ---
 <Base title="The D'Arcy Archive" bare={true}>
 
-  <section class="blk" style="padding-top:3.2rem">
-    <div class="lab">A family history, kept honestly</div>
-    <h1 style="font-size:clamp(36px,5.6vw,62px);line-height:1.04;margin:.6rem 0 0">
-      Twelve generations, and two claims too far.</h1>
-    <p class="sub dek" style="font-size:clamp(1.05rem,2vw,1.28rem);margin-top:1.1rem;max-width:64ch">
-      Berkeley · Madeley · Hanley · Chatham · Parramatta · Kempsey · Boulia · Townsville · Brisbane —
-      soldiers, a grocer and a church organist, and the two aristocratic descents this archive had to
-      take off them.
-    </p>
-  </section>
+  <figure class="hero">
+    <img
+      src={u("/img/crossing-2400.jpg")}
+      srcset={`${u("/img/crossing-900.jpg")} 900w, ${u("/img/crossing-1500.jpg")} 1500w, ${u("/img/crossing-2400.jpg")} 2400w`}
+      sizes="(max-width:1200px) 100vw, 1180px"
+      width="3168" height="1344"
+      fetchpriority="high" decoding="async"
+      alt="A wide painted panorama in three parts under one horizon. On the left, a cold grey
+           English shore of black rocks and surf, with the faint silhouette of a great house on a
+           misty hill far inland. In the centre, a stone quay where a three-masted sailing ship
+           is loading: small figures in coats and shawls carry cases up a gangway, their faces
+           turned away. On the right the light turns to hot gold over a flat plain of
+           corrugated-iron roofs, with a single railway line running to a shimmering horizon."
+    />
+    <figcaption class="cap">
+      <div class="kick">A family history, kept honestly</div>
+      <h1>Twelve generations, and two claims too far.</h1>
+      <p class="sub">Berkeley · Madeley · Hanley · Chatham · Parramatta · Kempsey · Boulia ·
+        Townsville · Brisbane — soldiers, a grocer and a church organist, and the two aristocratic
+        descents this archive had to take off them.</p>
+    </figcaption>
+  </figure>
 
-  <section class="blk" style="padding-top:1.6rem">
-    <figure style="margin:0">
-      <div class="bleed platewrap">
-        <img
-          class="plate"
-          src={u("/img/crossing-2400.jpg")}
-          srcset={`${u("/img/crossing-900.jpg")} 900w, ${u("/img/crossing-1500.jpg")} 1500w, ${u("/img/crossing-2400.jpg")} 2400w`}
-          sizes="100vw"
-          width="3168" height="1344"
-          fetchpriority="high" decoding="async"
-          alt="A wide painted panorama in three parts under one horizon. On the left, a cold grey
-               English shore of black rocks and surf, with the faint silhouette of a great house on a
-               misty hill far inland. In the centre, a stone quay where a three-masted sailing ship
-               is loading: small figures in coats and shawls carry cases up a gangway, their faces
-               turned away. On the right the light turns to hot gold over a flat plain of
-               corrugated-iron roofs, with a single railway line running to a shimmering horizon."
-        />
-      </div>
-      <figcaption class="cap">
-        <strong>The house on the hill is faint on purpose.</strong> This archive cannot show that the
-        family ever lived in it, and two pages here set out why —
-        <a href={u("/hornby")}>the Hornby claim</a> and
-        <a href={u("/how-far-back")}>the graft that replaced it</a>. What it can show is the middle of
-        the picture and the right of it: a quay, a ship, and a flat gold country with a railway line
-        running out of sight. <span class="dim">Illustration commissioned for this archive, 2026.</span>
-      </figcaption>
-    </figure>
-  </section>
+  <p class="cap" style="margin:.9rem 0 0">
+    <strong>The house on the hill is faint on purpose.</strong> This archive cannot show that the
+    family ever lived in it, and two pages here set out why —
+    <a href={u("/hornby")}>the Hornby claim</a> and
+    <a href={u("/how-far-back")}>the graft that replaced it</a>. What it can show is the middle of
+    the picture and the right of it: a quay, a ship, and a flat gold country with a railway line
+    running out of sight. <span class="dim">Illustration commissioned for this archive, 2026.</span>
+  </p>
 
   <section class="blk">
     <p class="lede">This is an archive of <strong>the D'Arcys of Brisbane</strong> — and of the
