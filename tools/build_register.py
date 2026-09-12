@@ -147,6 +147,10 @@ rec("Mary Blackbourne", "married William Sneyd, weaver · Madeley All Saints, 27
     "record · FreeREG, Madeley All Saints parish register", FR)
 rec("Robert Sneyd", "witness to the marriage of William Sneyd and Mary Blackbourne, Madeley, 27 March 1769",
     "record · FreeREG, Madeley All Saints parish register", FR)
+rec("Samuel Sneyd", "baptised Madeley All Saints, 4 June 1781 · father William Sneyd, weaver — the tree puts him in 1769, which is his eldest brother's year",
+    "record · FreeREG, Madeley All Saints parish register", FR)
+rec("William Sneyd", "weaver of Madeley · thirteen children baptised there 1769-1794, the 1779 entry naming the mother Mary",
+    "record · FreeREG, Madeley All Saints parish register", FR)
 rec("Samuel Charles Sneyd", "born 13 March 1811 · baptised Hanley St John the Evangelist 28 April 1811 · father Samuel · mother Elizabeth · abode Hanley — the tree says 15 March 1810",
     "record · FreeREG, Hanley St John the Evangelist, Bishop's Transcript", FR)
 rec("Mary Sneyd", "baptised Hanley 18 February 1814 · father Samuel, a SERVANT · mother Elizabeth — sister to Samuel Charles",
@@ -405,6 +409,7 @@ REL = [
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
     ("Charlotte Maria D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 31 Mar 1826"),
     ("Frederick Robert D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 2 Jul 1811"),
+    ("Samuel Sneyd|1769", "William Sneyd|1746", "baptism, Madeley, 4 Jun 1781; marriage, Madeley, 27 Mar 1769"),
     ("Samuel Charles Sneyd|1810", "Samuel Sneyd", "baptism, Hanley, 28 Apr 1811"),
     ("William Sneyd|1746", "Mary Blackbourne", "marriage, Madeley, 27 Mar 1769"),
     ("Miriam Wakefield", "William Hartley Sneyd", "Qld marriage reg. 1859/B/255"),

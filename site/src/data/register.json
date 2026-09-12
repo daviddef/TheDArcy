@@ -1,15 +1,15 @@
 {
-"entries": 632,
+"entries": 634,
 "distinct": 510,
-"records": 159,
+"records": 161,
 "tree": 473,
 "grafted": 98,
-"linked": 632,
+"linked": 634,
 "surnames": 171,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 158,
+"n": 160,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -223,6 +223,13 @@
 },
 {
 "name": "Samuel Sneyd",
+"says": "baptised Madeley All Saints, 4 June 1781 · father William Sneyd, weaver — the tree puts him in 1769, which is his eldest brother's year",
+"source": "record · FreeREG, Madeley All Saints parish register",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Samuel Sneyd",
 "says": "mortgagor to James Gibbon · Subdivision 3, Portions 152–153, Parish of North Brisbane, 1870",
 "source": "record · QSA ITM3248152",
 "link": "https://www.archivessearch.qld.gov.au/items/ITM3248152",
@@ -322,6 +329,13 @@
 {
 "name": "William Sneyd",
 "says": "married Mary Blackbourne · Madeley All Saints, 27 March 1769, entry 68 · WEAVER · witnesses Robert Sneyd and John Kidd",
+"source": "record · FreeREG, Madeley All Saints parish register",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "William Sneyd",
+"says": "weaver of Madeley · thirteen children baptised there 1769-1794, the 1779 entry naming the mother Mary",
 "source": "record · FreeREG, Madeley All Saints parish register",
 "link": "https://www.freereg.org.uk/",
 "kind": "record"

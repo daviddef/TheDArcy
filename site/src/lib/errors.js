@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Reported twice in one day that no Samuel Sneyd baptism existed at Madeley for the tree's 1769.",
+    truth: "The Samuel is there, baptised 4 June 1781 — son of William Sneyd, weaver, and Mary Blackbourne, whose thirteen children fill the register between 1769 and 1794. The year 1769 belongs to his eldest brother William, christened three months after the wedding.",
+    why: "I searched for the tree's DATE instead of the tree's PERSON. The 1781 Samuel appeared in every result list I pulled and I discarded him each time for being twelve years out — while the family he belongs to, with the right father, the right mother and the right trade, was sitting underneath him.",
+    lesson: "A tree's dates are the softest thing in it. When the person fits and only the year is wrong, suspect the year.",
+    href: "/sneyds",
+  },
+  {
+    when: "13 September 2026",
     what: "Said the English origin of this family's Sneyds was “not currently evidenced by anything”, after failing to find two baptisms at Madeley.",
     truth: "Two of the four links are documented: William Sneyd, weaver, married Mary Blackbourne at Madeley on 27 March 1769; and Samuel Charles Sneyd was baptised at Hanley on 28 April 1811, his father Samuel and mother Elizabeth, exactly as the tree says.",
     why: "I searched for baptisms, did not find them, and announced the conclusion — without following up a marriage that was sitting in the same results list, and without ever searching Hanley, the parish the tree plainly names as his birthplace. The negative was published within the hour; the positives took one more query each.",

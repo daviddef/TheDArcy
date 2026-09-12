@@ -1,9 +1,22 @@
 {
  "title": "What changed",
- "eyebrow": "10 passes · 55 changes",
+ "eyebrow": "11 passes · 61 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "The Sneyd chain closes, and four other lines tested",
+   "did": [
+    "Reconstituted all 551 Staffordshire Sneyd records into 94 households.",
+    "Found William Sneyd the weaver's family at Madeley — thirteen children, 1769 to 1794.",
+    "Corrected the tree: their Samuel is baptised 1781, not 1769.",
+    "Ran the Queensland immigration index for every other family in the archive. Only the Wakefields came assisted.",
+    "Exhausted Bristol's four transcribed registers. Neither family is in them.",
+    "Searched Gloucestershire for Richard Wakefield and found one weak candidate."
+   ],
+   "found": "Three of the four Sneyd links are now documented, and the missing one is a baptism of 1746. The line runs weaver, servant, gaol governor."
+  },
   {
    "when": "13 September 2026",
    "title": "Chatham — the parish the Corps lived in",
