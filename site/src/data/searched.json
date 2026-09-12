@@ -9,6 +9,30 @@
  ],
  "rows": [
   {
+   "src": "FreeBMD — deaths, Lydia Saniger and every spelling, 1841–1875",
+   "what": "Lyddya Sinegar of the 1841 census, who should have died in England",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Not there. A deliberately loose phonetic search — loose enough to return SCHONSWAR and SMOOKER — finds no Lydia Saniger, Sanigar or Sinegar death in Bristol in those thirty-four years. The nearest are an infant Lydia Ann Sanigear at Islington in 1847 and an unnamed SANIGAR at Thornbury in 1851. Either she died under a married surname, or under a spelling the index does not reach.",
+   "href": "/drivers-fields"
+  },
+  {
+   "src": "FreeCEN — 1861 and 1871 censuses",
+   "what": "Hannah Wakefield's exact birthplace, which 1841 does not give",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Not applicable, and worth recording as such: the family had emigrated. James Wakefield died at Brisbane in July 1857, so by 1861 there was nobody in England to enumerate. The plan to get Hannah's birthplace from a later English census was sound and the family had left before it could work.",
+   "href": "/drivers-fields"
+  },
+  {
+   "src": "FreeREG — the marriage of John Saniger and Lydia Jones",
+   "what": "About 1795–1804, wherever Hannah was born",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Cannot be attempted usefully. Hannah was born outside Gloucestershire and the archive does not know where, so there is no parish to search; and if the marriage was at Berkeley the transcript ends in 1677 regardless. This one needs Hannah's birthplace first, and that now depends on a certificate.",
+   "href": "/errands"
+  },
+  {
    "src": "FreeREG — Madeley All Saints, the two baptisms the tree asks for",
    "what": "William Sneyd bapt. 1746 and Samuel Sneyd bapt. 1769, both said by the tree to be at Madeley",
    "when": "13 Sep 2026",
