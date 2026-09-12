@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Said the English origin of this family's Sneyds was “not currently evidenced by anything”, after failing to find two baptisms at Madeley.",
+    truth: "Two of the four links are documented: William Sneyd, weaver, married Mary Blackbourne at Madeley on 27 March 1769; and Samuel Charles Sneyd was baptised at Hanley on 28 April 1811, his father Samuel and mother Elizabeth, exactly as the tree says.",
+    why: "I searched for baptisms, did not find them, and announced the conclusion — without following up a marriage that was sitting in the same results list, and without ever searching Hanley, the parish the tree plainly names as his birthplace. The negative was published within the hour; the positives took one more query each.",
+    lesson: "A negative is not finished until you have tried the places the claim actually points at. Two absent baptisms are not the same as an unevidenced line, and saying so in public before checking is how an archive overcorrects.",
+    href: "/sneyd",
+  },
+  {
+    when: "13 September 2026",
     what: "Said Miriam Wakefield “married at twenty-one”.",
     truth: "She married William Hartley Sneyd at Brisbane on 15 November 1859, aged nineteen — Queensland marriage registration 1859/B/255.",
     why: "The age was arithmetic from a birth year and an assumed marriage year, and neither the date nor the registration had ever been looked up. The Queensland marriage index is free and this archive has been using it for other people all week.",

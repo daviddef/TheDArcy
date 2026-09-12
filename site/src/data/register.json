@@ -1,15 +1,15 @@
 {
-"entries": 618,
-"distinct": 506,
-"records": 145,
+"entries": 623,
+"distinct": 507,
+"records": 150,
 "tree": 473,
 "grafted": 98,
-"linked": 618,
+"linked": 623,
 "surnames": 170,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 154,
+"n": 158,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -124,6 +124,13 @@
 "kind": "record"
 },
 {
+"name": "Mary Sneyd",
+"says": "baptised Hanley 18 February 1814 · father Samuel, a SERVANT · mother Elizabeth — sister to Samuel Charles",
+"source": "record · FreeREG, Hanley St John the Evangelist, Bishop's Transcript",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
 "name": "Miriam Sneyd",
 "says": "widow · sworn deposition naming his father “Samuel Sneyd, Gaol Governor” and his mother Catherine",
 "source": "record · QSA coronial file ITM2736504 (DR103140), read in full",
@@ -135,6 +142,13 @@
 "says": "died 12/08/1909 · parents: Hannah Saniger · James Wakefield",
 "source": "record · Queensland death index 1909/C/1054",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Robert Sneyd",
+"says": "witness to the marriage of William Sneyd and Mary Blackbourne, Madeley, 27 March 1769",
+"source": "record · FreeREG, Madeley All Saints parish register",
+"link": "https://www.freereg.org.uk/",
 "kind": "record"
 },
 {
@@ -170,6 +184,13 @@
 "says": "died 04/07/1885 · parents: — · Samuel Sneyd",
 "source": "record · Queensland death index 1885/C/4045",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Samuel Charles Sneyd",
+"says": "born 13 March 1811 · baptised Hanley St John the Evangelist 28 April 1811 · father Samuel · mother Elizabeth · abode Hanley — the tree says 15 March 1810",
+"source": "record · FreeREG, Hanley St John the Evangelist, Bishop's Transcript",
+"link": "https://www.freereg.org.uk/",
 "kind": "record"
 },
 {
@@ -296,6 +317,13 @@
 "says": "insolvency, Public Curator Office Brisbane · file 230/1873 · 6 Oct – 3 Nov 1873",
 "source": "record · QSA ITM1056950",
 "link": "https://www.archivessearch.qld.gov.au/items/ITM1056950",
+"kind": "record"
+},
+{
+"name": "William Sneyd",
+"says": "married Mary Blackbourne · Madeley All Saints, 27 March 1769, entry 68 · WEAVER · witnesses Robert Sneyd and John Kidd",
+"source": "record · FreeREG, Madeley All Saints parish register",
+"link": "https://www.freereg.org.uk/",
 "kind": "record"
 },
 {
@@ -3144,6 +3172,33 @@
 ]
 },
 {
+"surname": "BLACKBOURNE",
+"n": 3,
+"rows": [
+{
+"name": "Mary Blackbourne",
+"says": "married William Sneyd, weaver · Madeley All Saints, 27 March 1769",
+"source": "record · FreeREG, Madeley All Saints parish register",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Mary Blackbourne",
+"says": "1748–1835 · Staffordshire, England",
+"source": "family tree · direct line",
+"link": "/people/mary-blackbourne",
+"kind": "tree"
+},
+{
+"name": "Samuel Blackbourne",
+"says": "b. 1717 · Miller · Castle Church, Stafford, England",
+"source": "family tree · direct line",
+"link": "/people/samuel-blackbourne",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "COTTON",
 "n": 3,
 "rows": [
@@ -3382,26 +3437,6 @@
 "says": "no dates, no place — a name and a position in the tree",
 "source": "family tree · direct line",
 "link": "/people/zampiello",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "BLACKBOURNE",
-"n": 2,
-"rows": [
-{
-"name": "Mary Blackbourne",
-"says": "1748–1835 · Staffordshire, England",
-"source": "family tree · direct line",
-"link": "/people/mary-blackbourne",
-"kind": "tree"
-},
-{
-"name": "Samuel Blackbourne",
-"says": "b. 1717 · Miller · Castle Church, Stafford, England",
-"source": "family tree · direct line",
-"link": "/people/samuel-blackbourne",
 "kind": "tree"
 }
 ]

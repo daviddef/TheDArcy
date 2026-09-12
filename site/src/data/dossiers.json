@@ -145,6 +145,21 @@
 "slug": "miriam-sneyd-nee-wakefield",
 "n": 1
 },
+"robert-sneyd": {
+"name": "Robert Sneyd",
+"surname": "SNEYD",
+"rows": [
+{
+"says": "witness to the marriage of William Sneyd and Mary Blackbourne, Madeley, 27 March 1769",
+"source": "record · FreeREG, Madeley All Saints parish register",
+"link": "https://www.freereg.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "robert-sneyd",
+"n": 1
+},
 "sneyd-hanley": {
 "name": "SNEYD, Hanley",
 "surname": "SNEYD",
@@ -1297,9 +1312,9 @@
 }
 },
 "counts": {
-"named": 105,
-"withTreePage": 23,
-"ownPage": 82,
-"mentions": 145
+"named": 108,
+"withTreePage": 25,
+"ownPage": 83,
+"mentions": 150
 }
 }

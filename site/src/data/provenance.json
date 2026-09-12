@@ -29,6 +29,9 @@
 "rel": {
 "william-hartley-sneyd": [
 "Qld death reg. 1902/B/2776"
+],
+"samuel-sneyd": [
+"baptism, Hanley, 28 Apr 1811"
 ]
 },
 "graft": null,
@@ -314,6 +317,36 @@
 "graft": null,
 "line": true,
 "spine": true
+},
+"samuel-sneyd": {
+"rel": {
+"samuel-charles-sneyd-1810": [
+"baptism, Hanley, 28 Apr 1811"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"william-sneyd-1746": {
+"rel": {
+"mary-blackbourne": [
+"marriage, Madeley, 27 Mar 1769"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"mary-blackbourne": {
+"rel": {
+"william-sneyd-1746": [
+"marriage, Madeley, 27 Mar 1769"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
 },
 "hiram-wakefield": {
 "rel": {
@@ -1061,18 +1094,6 @@
 "line": true,
 "spine": false
 },
-"william-sneyd-1746": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
-"mary-blackbourne": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
 "thomas-d-arcy": {
 "rel": {},
 "graft": null,
@@ -1158,12 +1179,6 @@
 "spine": false
 },
 "william-kent": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
-"samuel-sneyd": {
 "rel": {},
 "graft": null,
 "line": true,

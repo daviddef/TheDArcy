@@ -141,6 +141,16 @@ rec("Miriam Wakefield", "birth registered June quarter 1840 · Bristol district 
     "record · FreeBMD, GRO birth index", "https://www.freebmd.org.uk/")
 rec("Joseph D'Arcy", "baptised Portsea St Mary, 19 March 1780 · father Robert · mother Jean",
     "record · FreeREG, Portsea St Mary parish register", FR)
+rec("William Sneyd", "married Mary Blackbourne · Madeley All Saints, 27 March 1769, entry 68 · WEAVER · witnesses Robert Sneyd and John Kidd",
+    "record · FreeREG, Madeley All Saints parish register", FR)
+rec("Mary Blackbourne", "married William Sneyd, weaver · Madeley All Saints, 27 March 1769",
+    "record · FreeREG, Madeley All Saints parish register", FR)
+rec("Robert Sneyd", "witness to the marriage of William Sneyd and Mary Blackbourne, Madeley, 27 March 1769",
+    "record · FreeREG, Madeley All Saints parish register", FR)
+rec("Samuel Charles Sneyd", "born 13 March 1811 · baptised Hanley St John the Evangelist 28 April 1811 · father Samuel · mother Elizabeth · abode Hanley — the tree says 15 March 1810",
+    "record · FreeREG, Hanley St John the Evangelist, Bishop's Transcript", FR)
+rec("Mary Sneyd", "baptised Hanley 18 February 1814 · father Samuel, a SERVANT · mother Elizabeth — sister to Samuel Charles",
+    "record · FreeREG, Hanley St John the Evangelist, Bishop's Transcript", FR)
 rec("William Sneyd", "baptised Madeley All Saints, 12 September 1742 · father William Sneyd — and a William son of William buried there 29 September 1744",
     "record · FreeREG, Madeley All Saints parish register", FR)
 
@@ -377,6 +387,8 @@ REL = [
     ("Vivian Ernest William Sneyd", "Thomas George Sneyd", "NAA B2455 attestation, next of kin"),
     ("Arthur Hartley Sneyd", "Miriam Wakefield", "NAA B2455 8088453, next of kin"),
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
+    ("Samuel Charles Sneyd|1810", "Samuel Sneyd", "baptism, Hanley, 28 Apr 1811"),
+    ("William Sneyd|1746", "Mary Blackbourne", "marriage, Madeley, 27 Mar 1769"),
     ("Miriam Wakefield", "William Hartley Sneyd", "Qld marriage reg. 1859/B/255"),
     ("Hiram Wakefield", "James Wakefield", "Qld death reg. 1905/B/5782"),
     ("Aaron Wakefield", "James Wakefield", "Qld death reg. 1896/C/3402"),
