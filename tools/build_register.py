@@ -70,7 +70,7 @@ for n, says, reg in [
     ("Jabez Wakefield", "died 08/02/1903 · mother: Hannah (no surname given) · father: James Wakefield", "1903/C/5058"),
     ("Hannah Wakefield", "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given", "1873/C/603"),
     ("James Wakefield", "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have", "1857/B/135"),
-    ("Richard Wakefield", "named as the father of James Wakefield on his 1857 Queensland death registration", "1857/B/135"),
+    ("Richard Wakefield", "named as the father of James Wakefield on his 1857 Queensland death registration — the only Gloucestershire candidate is a Richard baptised at Chedworth, 21 Dec 1770, and nothing but a name connects them", "1857/B/135"),
 ]:
     rec(n, says, f"record · {QBDM} {reg}", QBDM_L)
 

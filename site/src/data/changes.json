@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "11 passes · 61 changes",
+ "eyebrow": "11 passes · 64 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -13,7 +13,10 @@
     "Corrected the tree: their Samuel is baptised 1781, not 1769.",
     "Ran the Queensland immigration index for every other family in the archive. Only the Wakefields came assisted.",
     "Exhausted Bristol's four transcribed registers. Neither family is in them.",
-    "Searched Gloucestershire for Richard Wakefield and found one weak candidate."
+    "Searched Gloucestershire for Richard Wakefield and found one weak candidate.",
+    "Searched Queensland for the three eldest Wakefield daughters. They did not sail and never followed.",
+    "Tested the Somerset-side-of-Bristol hypothesis: Bedminster and Long Ashton are covered and empty; Temple, Redcliffe and Brislington are not transcribed.",
+    "Searched Hampshire and Kent for the other eight D'Arcy children. Two of ten are in the registers."
    ],
    "found": "Three of the four Sneyd links are now documented, and the missing one is a baptism of 1746. The line runs weaver, servant, gaol governor."
   },
