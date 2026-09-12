@@ -1,15 +1,15 @@
 {
-"entries": 586,
-"distinct": 499,
-"records": 113,
+"entries": 600,
+"distinct": 503,
+"records": 127,
 "tree": 473,
 "grafted": 98,
-"linked": 586,
-"surnames": 167,
+"linked": 600,
+"surnames": 168,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 152,
+"n": 153,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -267,6 +267,13 @@
 "name": "William Hartley Sneyd",
 "says": "died 11/09/1902 · b. 30/09/1837 · parents: Catherine · Samuel Sneyd",
 "source": "record · Queensland death index 1902/B/2776",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "William Hartley Sneyd",
+"says": "married Miriam Wakefield · 15 November 1859 · Brisbane",
+"source": "record · Queensland marriage index 1859/B/255",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 },
@@ -2145,6 +2152,159 @@
 ]
 },
 {
+"surname": "WAKEFIELD",
+"n": 21,
+"rows": [
+{
+"name": "Aaron Wakefield",
+"says": "died 21/09/1896 · mother: Hannah Sanegar · father: James Wakefield",
+"source": "record · Queensland death index 1896/C/3402",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Aaron Wakefield",
+"says": "married Elizabeth Ann Birch · 11 July 1861 · Brisbane — two brothers, two Birch sisters, four months apart",
+"source": "record · Queensland marriage index 1861/B/142",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Ephraim Wakefield",
+"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
+"source": "record · Queensland death index 1868/B/4544",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Hannah Wakefield",
+"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
+"source": "record · Queensland death index 1873/C/603",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Hiram Wakefield",
+"says": "died 25/06/1905 · mother: Hannah Sanigar · father: James Wakefield",
+"source": "record · Queensland death index 1905/B/5782",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Hiram Wakefield",
+"says": "married Margaret Birch · 29 March 1861 · Brisbane",
+"source": "record · Queensland marriage index 1861/B/129",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Jabez Wakefield",
+"says": "died 08/02/1903 · mother: Hannah (no surname given) · father: James Wakefield",
+"source": "record · Queensland death index 1903/C/5058",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Jabez Wakefield",
+"says": "married Margaret Fraser · 22 April 1863 · Brisbane",
+"source": "record · Queensland marriage index 1863/B/539",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "James Wakefield",
+"says": "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have",
+"source": "record · Queensland death index 1857/B/135",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Miriam Wakefield",
+"says": "married William Hartley Sneyd · 15 November 1859 · Brisbane — she was nineteen",
+"source": "record · Queensland marriage index 1859/B/255",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Richard Wakefield",
+"says": "named as the father of James Wakefield on his 1857 Queensland death registration",
+"source": "record · Queensland death index 1857/B/135",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Zillah Wakefield",
+"says": "married John Ludwig Frederick · 25 October 1871 · Brisbane",
+"source": "record · Queensland marriage index 1871/B/3366",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Aaron Wakefield",
+"says": "1840–1896 · Plumber · England",
+"source": "family tree",
+"link": "/people/aaron-wakefield",
+"kind": "tree"
+},
+{
+"name": "Eliza Wakefield",
+"says": "b. 1832 · Bristol, Gloucester, England",
+"source": "family tree",
+"link": "/people/eliza-wakefield",
+"kind": "tree"
+},
+{
+"name": "Ellen Wakefield",
+"says": "b. 1834 · England",
+"source": "family tree",
+"link": "/people/ellen-wakefield",
+"kind": "tree"
+},
+{
+"name": "Hiram Wakefield",
+"says": "1837–1905 · plumber · Bristol, City of Bristol, UK",
+"source": "family tree",
+"link": "/people/hiram-wakefield",
+"kind": "tree"
+},
+{
+"name": "Jabez Wakefield",
+"says": "1843–1903 · Drivers Field, Gloucester, England",
+"source": "family tree",
+"link": "/people/jabez-wakefield",
+"kind": "tree"
+},
+{
+"name": "James Wakefield",
+"says": "1799–1857 · Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/james-wakefield",
+"kind": "tree"
+},
+{
+"name": "Martha Wakefield",
+"says": "1836–1899 · England",
+"source": "family tree",
+"link": "/people/martha-wakefield",
+"kind": "tree"
+},
+{
+"name": "Miriam Wakefield",
+"says": "1840–1909 · St Paul, Bristol, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/miriam-wakefield",
+"kind": "tree"
+},
+{
+"name": "Zillah Wakefield",
+"says": "1846–1900 · England",
+"source": "family tree",
+"link": "/people/zillah-wakefield",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "MURDOCH",
 "n": 19,
 "rows": [
@@ -2348,75 +2508,6 @@
 "says": "1824–1889 · Long Ashton, Somerset, Eng",
 "source": "family tree · direct line",
 "link": "/people/maria-rossiter",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "WAKEFIELD",
-"n": 9,
-"rows": [
-{
-"name": "Aaron Wakefield",
-"says": "1840–1896 · Plumber · England",
-"source": "family tree",
-"link": "/people/aaron-wakefield",
-"kind": "tree"
-},
-{
-"name": "Eliza Wakefield",
-"says": "b. 1832 · Bristol, Gloucester, England",
-"source": "family tree",
-"link": "/people/eliza-wakefield",
-"kind": "tree"
-},
-{
-"name": "Ellen Wakefield",
-"says": "b. 1834 · England",
-"source": "family tree",
-"link": "/people/ellen-wakefield",
-"kind": "tree"
-},
-{
-"name": "Hiram Wakefield",
-"says": "1837–1905 · plumber · Bristol, City of Bristol, UK",
-"source": "family tree",
-"link": "/people/hiram-wakefield",
-"kind": "tree"
-},
-{
-"name": "Jabez Wakefield",
-"says": "1843–1903 · Drivers Field, Gloucester, England",
-"source": "family tree",
-"link": "/people/jabez-wakefield",
-"kind": "tree"
-},
-{
-"name": "James Wakefield",
-"says": "1799–1857 · Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/james-wakefield",
-"kind": "tree"
-},
-{
-"name": "Martha Wakefield",
-"says": "1836–1899 · England",
-"source": "family tree",
-"link": "/people/martha-wakefield",
-"kind": "tree"
-},
-{
-"name": "Miriam Wakefield",
-"says": "1840–1909 · St Paul, Bristol, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/miriam-wakefield",
-"kind": "tree"
-},
-{
-"name": "Zillah Wakefield",
-"says": "1846–1900 · England",
-"source": "family tree",
-"link": "/people/zillah-wakefield",
 "kind": "tree"
 }
 ]
@@ -4029,6 +4120,19 @@
 "source": "family tree · direct line",
 "link": "/people/marion-fleming",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "FREDERICH",
+"n": 1,
+"rows": [
+{
+"name": "Zillah Frederich, née Wakefield",
+"says": "died 27/06/1900 · mother: Hannah Saniger · father: James Wakefield",
+"source": "record · Queensland death index 1900/C/3322",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
 }
 ]
 },

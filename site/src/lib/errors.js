@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Said Miriam Wakefield “married at twenty-one”.",
+    truth: "She married William Hartley Sneyd at Brisbane on 15 November 1859, aged nineteen — Queensland marriage registration 1859/B/255.",
+    why: "The age was arithmetic from a birth year and an assumed marriage year, and neither the date nor the registration had ever been looked up. The Queensland marriage index is free and this archive has been using it for other people all week.",
+    lesson: "An age you calculated is not a fact you found. If the register that would settle it is one you already have open, look.",
+    href: "/drivers-fields",
+  },
+  {
+    when: "13 September 2026",
     what: "Reported that five of the six Saniger generations could not be tested, because Berkeley St Mary's transcript stops in 1677.",
     truth: "They could be tested, three miles away. Dursley St James is transcribed 1577–1951 and Cam St George 1568–1939 — both cover the whole chain, and between them they hold 340 of the 494 Saniger records in the county.",
     why: "The coverage of one parish was checked carefully and then treated as the answer to the whole question. The page even said the surname's real centre was Dursley and Cam, and still did not go and look there.",

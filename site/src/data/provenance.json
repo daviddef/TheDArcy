@@ -8,7 +8,8 @@
 "Qld death reg. 1902/B/2776"
 ],
 "miriam-wakefield": [
-"her sworn deposition, DR103140"
+"her sworn deposition, DR103140",
+"Qld marriage reg. 1859/B/255"
 ],
 "thomas-george-sneyd": [
 "Qld death reg. 1927/B/2729"
@@ -47,12 +48,15 @@
 "miriam-wakefield": {
 "rel": {
 "william-hartley-sneyd": [
-"her sworn deposition, DR103140"
+"her sworn deposition, DR103140",
+"Qld marriage reg. 1859/B/255"
 ],
 "james-wakefield": [
+"Qld death reg. 1909/C/1054",
 "Qld death reg. 1909/C/1054"
 ],
 "hannah-saniger": [
+"Qld death reg. 1909/C/1054",
 "Qld death reg. 1909/C/1054"
 ],
 "thomas-george-sneyd": [
@@ -75,7 +79,23 @@
 "james-wakefield": {
 "rel": {
 "miriam-wakefield": [
+"Qld death reg. 1909/C/1054",
 "Qld death reg. 1909/C/1054"
+],
+"hiram-wakefield": [
+"Qld death reg. 1905/B/5782"
+],
+"aaron-wakefield": [
+"Qld death reg. 1896/C/3402"
+],
+"jabez-wakefield": [
+"Qld death reg. 1903/C/5058"
+],
+"zillah-wakefield": [
+"Qld death reg. 1900/C/3322"
+],
+"hannah-saniger": [
+"named together on five children's death registrations"
 ]
 },
 "graft": null,
@@ -85,7 +105,23 @@
 "hannah-saniger": {
 "rel": {
 "miriam-wakefield": [
+"Qld death reg. 1909/C/1054",
 "Qld death reg. 1909/C/1054"
+],
+"hiram-wakefield": [
+"Qld death reg. 1905/B/5782 — “Hannah Sanigar”"
+],
+"aaron-wakefield": [
+"Qld death reg. 1896/C/3402 — “Hannah Sanegar”"
+],
+"zillah-wakefield": [
+"Qld death reg. 1900/C/3322 — “Hannah Saniger”"
+],
+"john-saniger": [
+"Qld death reg. 1873/C/603 — entered “John Jenniger”"
+],
+"james-wakefield": [
+"named together on five children's death registrations"
 ]
 },
 "graft": null,
@@ -278,6 +314,65 @@
 "graft": null,
 "line": true,
 "spine": true
+},
+"hiram-wakefield": {
+"rel": {
+"james-wakefield": [
+"Qld death reg. 1905/B/5782"
+],
+"hannah-saniger": [
+"Qld death reg. 1905/B/5782 — “Hannah Sanigar”"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"aaron-wakefield": {
+"rel": {
+"james-wakefield": [
+"Qld death reg. 1896/C/3402"
+],
+"hannah-saniger": [
+"Qld death reg. 1896/C/3402 — “Hannah Sanegar”"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"jabez-wakefield": {
+"rel": {
+"james-wakefield": [
+"Qld death reg. 1903/C/5058"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"zillah-wakefield": {
+"rel": {
+"james-wakefield": [
+"Qld death reg. 1900/C/3322"
+],
+"hannah-saniger": [
+"Qld death reg. 1900/C/3322 — “Hannah Saniger”"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"john-saniger": {
+"rel": {
+"hannah-saniger": [
+"Qld death reg. 1873/C/603 — entered “John Jenniger”"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
 },
 "joseph-d-arcy": {
 "rel": {
@@ -1068,12 +1163,6 @@
 "line": true,
 "spine": false
 },
-"john-saniger": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
 "samuel-sneyd": {
 "rel": {},
 "graft": null,
@@ -1560,12 +1649,6 @@
 "line": false,
 "spine": false
 },
-"hiram-wakefield": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
 "charles-atkinson": {
 "rel": {},
 "graft": null,
@@ -1579,12 +1662,6 @@
 "spine": false
 },
 "frank-hyde-d-arcy": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"aaron-wakefield": {
 "rel": {},
 "graft": null,
 "line": false,
@@ -1638,12 +1715,6 @@
 "line": false,
 "spine": false
 },
-"jabez-wakefield": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
 "ellen-mary-sneyd": {
 "rel": {},
 "graft": null,
@@ -1669,12 +1740,6 @@
 "spine": false
 },
 "joseph-samuel2-sneyd": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"zillah-wakefield": {
 "rel": {},
 "graft": null,
 "line": false,

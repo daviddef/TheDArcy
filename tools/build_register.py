@@ -57,6 +57,34 @@ for n, d, reg, mum, dad in [
 ]:
     rec(n, f"died {d} · parents: {mum} · {dad}", f"record · {QBDM} {reg}", QBDM_L)
 
+
+# --- Queensland civil registration, the Wakefield family, 13 September 2026 --
+# Five of Hannah's children died in Queensland and every one of their death
+# registrations names their mother. Five clerks, five years, four spellings —
+# which is what a real name looks like when it is written down by ear.
+for n, says, reg in [
+    ("Ephraim Wakefield", "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield", "1868/B/4544"),
+    ("Aaron Wakefield", "died 21/09/1896 · mother: Hannah Sanegar · father: James Wakefield", "1896/C/3402"),
+    ("Zillah Frederich, née Wakefield", "died 27/06/1900 · mother: Hannah Saniger · father: James Wakefield", "1900/C/3322"),
+    ("Hiram Wakefield", "died 25/06/1905 · mother: Hannah Sanigar · father: James Wakefield", "1905/B/5782"),
+    ("Jabez Wakefield", "died 08/02/1903 · mother: Hannah (no surname given) · father: James Wakefield", "1903/C/5058"),
+    ("Hannah Wakefield", "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given", "1873/C/603"),
+    ("James Wakefield", "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have", "1857/B/135"),
+    ("Richard Wakefield", "named as the father of James Wakefield on his 1857 Queensland death registration", "1857/B/135"),
+]:
+    rec(n, says, f"record · {QBDM} {reg}", QBDM_L)
+
+QMAR = "Queensland marriage index"
+for n, says, reg in [
+    ("Miriam Wakefield", "married William Hartley Sneyd · 15 November 1859 · Brisbane — she was nineteen", "1859/B/255"),
+    ("William Hartley Sneyd", "married Miriam Wakefield · 15 November 1859 · Brisbane", "1859/B/255"),
+    ("Hiram Wakefield", "married Margaret Birch · 29 March 1861 · Brisbane", "1861/B/129"),
+    ("Aaron Wakefield", "married Elizabeth Ann Birch · 11 July 1861 · Brisbane — two brothers, two Birch sisters, four months apart", "1861/B/142"),
+    ("Jabez Wakefield", "married Margaret Fraser · 22 April 1863 · Brisbane", "1863/B/539"),
+    ("Zillah Wakefield", "married John Ludwig Frederick · 25 October 1871 · Brisbane", "1871/B/3366"),
+]:
+    rec(n, says, f"record · {QMAR} {reg}", QBDM_L)
+
 # --- FreeREG, Berkeley St Mary, Gloucestershire (transcript 1600–1677) -------
 FR = "https://www.freereg.org.uk/"
 for n, says in [
@@ -311,6 +339,20 @@ REL = [
     ("Vivian Ernest William Sneyd", "Thomas George Sneyd", "NAA B2455 attestation, next of kin"),
     ("Arthur Hartley Sneyd", "Miriam Wakefield", "NAA B2455 8088453, next of kin"),
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
+    ("Miriam Wakefield", "William Hartley Sneyd", "Qld marriage reg. 1859/B/255"),
+    ("Hiram Wakefield", "James Wakefield", "Qld death reg. 1905/B/5782"),
+    ("Aaron Wakefield", "James Wakefield", "Qld death reg. 1896/C/3402"),
+    ("Jabez Wakefield", "James Wakefield", "Qld death reg. 1903/C/5058"),
+    ("Zillah Wakefield", "James Wakefield", "Qld death reg. 1900/C/3322"),
+    ("Ephraim Wakefield **", "James Wakefield", "Qld death reg. 1868/B/4544"),
+    ("Miriam Wakefield", "James Wakefield", "Qld death reg. 1909/C/1054"),
+    ("Miriam Wakefield", "Hannah SANIGER", "Qld death reg. 1909/C/1054"),
+    ("Hiram Wakefield", "Hannah SANIGER", "Qld death reg. 1905/B/5782 — “Hannah Sanigar”"),
+    ("Aaron Wakefield", "Hannah SANIGER", "Qld death reg. 1896/C/3402 — “Hannah Sanegar”"),
+    ("Zillah Wakefield", "Hannah SANIGER", "Qld death reg. 1900/C/3322 — “Hannah Saniger”"),
+    ("Ephraim Wakefield **", "Hannah SANIGER", "Qld death reg. 1868/B/4544 — “Anna Sanniger”"),
+    ("Hannah SANIGER", "John Saniger", "Qld death reg. 1873/C/603 — entered “John Jenniger”"),
+    ("Hannah SANIGER", "James Wakefield", "named together on five children's death registrations"),
     ("Joseph D'Arcy", "Robert D'Arcy", "baptism, Portsea St Mary, 19 Mar 1780"),
     ("Joseph D'Arcy", "Jean Ward", "baptism, Portsea St Mary, 19 Mar 1780"),
     ("Robert D'Arcy", "Jean Ward", "named together as parents, Portsea, 19 Mar 1780"),

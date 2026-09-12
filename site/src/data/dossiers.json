@@ -560,6 +560,51 @@
 "slug": "william-sainger",
 "n": 3
 },
+"ephraim-wakefield": {
+"name": "Ephraim Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
+"source": "record · Queensland death index 1868/B/4544",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "ephraim-wakefield",
+"n": 1
+},
+"hannah-wakefield": {
+"name": "Hannah Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
+"source": "record · Queensland death index 1873/C/603",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "hannah-wakefield",
+"n": 1
+},
+"richard-wakefield": {
+"name": "Richard Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "named as the father of James Wakefield on his 1857 Queensland death registration",
+"source": "record · Queensland death index 1857/B/135",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "richard-wakefield",
+"n": 1
+},
 "r-kent": {
 "name": "R. Kent",
 "surname": "KENT",
@@ -723,6 +768,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "dr-dods",
+"n": 1
+},
+"zillah-frederich-nee-wakefield": {
+"name": "Zillah Frederich, née Wakefield",
+"surname": "FREDERICH",
+"rows": [
+{
+"says": "died 27/06/1900 · mother: Hannah Saniger · father: James Wakefield",
+"source": "record · Queensland death index 1900/C/3322",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "zillah-frederich-nee-wakefield",
 "n": 1
 },
 "j-brownlie-henderson": {
@@ -1177,9 +1237,9 @@
 }
 },
 "counts": {
-"named": 90,
-"withTreePage": 15,
-"ownPage": 75,
-"mentions": 113
+"named": 100,
+"withTreePage": 21,
+"ownPage": 79,
+"mentions": 127
 }
 }

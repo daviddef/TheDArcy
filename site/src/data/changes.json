@@ -1,9 +1,22 @@
 {
  "title": "What changed",
- "eyebrow": "6 passes · 29 changes",
+ "eyebrow": "7 passes · 35 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "The maiden name, settled five times over",
+   "did": [
+    "Searched the Queensland death index by MOTHER's name rather than by the deceased — the search this archive should have run a week ago.",
+    "Found five of Hannah's children's death registrations, each naming her, across 41 years and four spellings.",
+    "Found Hannah's own registration, naming her father John Saniger — entered by the clerk as “John Jenniger”.",
+    "Found James Wakefield's registration, naming HIS father Richard Wakefield: a new generation.",
+    "Found Miriam's marriage to William Hartley Sneyd, 15 November 1859, and corrected her age from twenty-one to nineteen.",
+    "Added 14 records and 9 recorded relationships to the register."
+   ],
+   "found": "The archive spent a week trying to prove “Saniger” from the English end. It was written down five times in Queensland by five different clerks, and nobody had thought to search the index by the mother's name."
+  },
   {
    "when": "13 September 2026",
    "title": "Portsea, Madeley, and three counties that hold nothing",
