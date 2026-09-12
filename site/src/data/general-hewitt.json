@@ -1,0 +1,114 @@
+{
+ "ship": "General Hewitt",
+ "port": "Brisbane",
+ "arrived": "16 December 1854",
+ "item": "ITM18474",
+ "image": "DR38490",
+ "series": "S13086",
+ "imageUrl": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+ "indexUrl": "https://www.data.qld.gov.au/dataset/assisted-immigration-1848-to-1912",
+ "summary": [
+  [
+   "Married couples",
+   "142"
+  ],
+  [
+   "Single men",
+   "80"
+  ],
+  [
+   "Single women",
+   "46"
+  ],
+  [
+   "Boys under 14",
+   "51"
+  ],
+  [
+   "Girls under 14",
+   "63"
+  ],
+  [
+   "Infants",
+   "12"
+  ],
+  [
+   "Total souls",
+   "394"
+  ]
+ ],
+ "rows": [
+  {
+   "pg": 78,
+   "cat": "Married couple and children",
+   "name": "James Wakefield",
+   "age": 48,
+   "occ": "Mason",
+   "county": "Gloucester",
+   "note": "the head of the household — his county, dittoed down the page to the rest"
+  },
+  {
+   "pg": 78,
+   "cat": "Married couple and children",
+   "name": "Hannah Wakefield",
+   "age": 48,
+   "occ": "",
+   "county": "— ditto —",
+   "note": "NOT an independent statement of her birthplace"
+  },
+  {
+   "pg": 78,
+   "cat": "Married couple and children",
+   "name": "Jabez Wakefield",
+   "age": 11,
+   "occ": "",
+   "county": "— ditto —",
+   "note": ""
+  },
+  {
+   "pg": 78,
+   "cat": "Married couple and children",
+   "name": "Zillah Wakefield",
+   "age": 8,
+   "occ": "",
+   "county": "— ditto —",
+   "note": ""
+  },
+  {
+   "pg": 78,
+   "cat": "Married couple and children",
+   "name": "Ephraim Wakefield",
+   "age": 5,
+   "occ": "",
+   "county": "— ditto —",
+   "note": ""
+  },
+  {
+   "pg": 80,
+   "cat": "Single men",
+   "name": "Hiram Wakefield",
+   "age": 16,
+   "occ": "Plumber",
+   "county": "Bristol",
+   "note": "entered separately, with his own county"
+  },
+  {
+   "pg": 80,
+   "cat": "Single men",
+   "name": "Aaron Wakefield",
+   "age": 14,
+   "occ": "Farm labourer",
+   "county": "Bristol",
+   "note": "entered separately, with his own county"
+  },
+  {
+   "pg": 81,
+   "cat": "Single women",
+   "name": "Marion Wakefield",
+   "age": 14,
+   "occ": "Domestic",
+   "county": "Bristol",
+   "note": "Miriam, written Marion — fourteen, and shipped as a domestic servant"
+  }
+ ]
+}

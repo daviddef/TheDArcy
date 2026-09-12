@@ -1,9 +1,20 @@
 {
  "title": "What changed",
- "eyebrow": "8 passes · 42 changes",
+ "eyebrow": "9 passes · 46 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "The ship: General Hewitt, Brisbane, 16 December 1854",
+   "did": [
+    "Found Queensland's assisted-immigration index published as open data after ArchivesSearch itself refused to run a search.",
+    "Found the whole family on one voyage and downloaded the register scan, DR38490.",
+    "Read the register: James a mason, Hiram a plumber, and Miriam — entered as Marion — shipped at fourteen as a domestic servant.",
+    "Established that the register does NOT give Hannah's own county: hers is a ditto of her husband's."
+   ],
+   "found": "The emigration, dated to the day and named. The archive knew the family reached Queensland; it did not know how, when, or on what."
+  },
   {
    "when": "13 September 2026",
    "title": "The county reconstituted, and the Bristol migration",

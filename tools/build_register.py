@@ -144,6 +144,22 @@ rec("Joseph D'Arcy", "baptised Portsea St Mary, 19 March 1780 · father Robert �
 rec("William Sneyd", "baptised Madeley All Saints, 12 September 1742 · father William Sneyd — and a William son of William buried there 29 September 1744",
     "record · FreeREG, Madeley All Saints parish register", FR)
 
+
+# --- The General Hewitt, Brisbane, 16 December 1854 -------------------------
+GH = "record · QSA S13086/ITM18474, passenger register, image DR38490"
+GH_L = "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
+for n, says in [
+    ("James Wakefield", "aged 48 · MASON · county Gloucester · arrived Brisbane 16 Dec 1854 on the General Hewitt"),
+    ("Hannah Wakefield", "aged 48 · county entered as a ditto under her husband's Gloucester — not a statement of her birthplace"),
+    ("Jabez Wakefield", "aged 11 · aboard the General Hewitt"),
+    ("Zillah Wakefield", "aged 8 · aboard the General Hewitt"),
+    ("Ephraim Wakefield", "aged 5 · aboard the General Hewitt"),
+    ("Hiram Wakefield", "aged 16 · PLUMBER · native place BRISTOL · entered among the single men"),
+    ("Aaron Wakefield", "aged 14 · farm labourer · native place BRISTOL · entered among the single men"),
+    ("Marion Wakefield", "aged 14 · DOMESTIC · native place BRISTOL · entered among the single women — this is Miriam"),
+]:
+    rec(n, says, GH, GH_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

@@ -1,10 +1,10 @@
 {
-"entries": 610,
-"distinct": 505,
-"records": 137,
+"entries": 618,
+"distinct": 506,
+"records": 145,
 "tree": 473,
 "grafted": 98,
-"linked": 610,
+"linked": 618,
 "surnames": 170,
 "groups": [
 {
@@ -1623,6 +1623,257 @@
 ]
 },
 {
+"surname": "WAKEFIELD",
+"n": 35,
+"rows": [
+{
+"name": "Aaron Wakefield",
+"says": "died 21/09/1896 · mother: Hannah Sanegar · father: James Wakefield",
+"source": "record · Queensland death index 1896/C/3402",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Aaron Wakefield",
+"says": "married Elizabeth Ann Birch · 11 July 1861 · Brisbane — two brothers, two Birch sisters, four months apart",
+"source": "record · Queensland marriage index 1861/B/142",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Aaron Wakefield",
+"says": "aged 1 · born in Gloucestershire",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Aaron Wakefield",
+"says": "aged 14 · farm labourer · native place BRISTOL · entered among the single men",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Ephraim Wakefield",
+"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
+"source": "record · Queensland death index 1868/B/4544",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Ephraim Wakefield",
+"says": "aged 5 · aboard the General Hewitt",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Hannah Wakefield",
+"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
+"source": "record · Queensland death index 1873/C/603",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Hannah Wakefield",
+"says": "aged 35 · born outside the county — which is why she cannot be found in the Gloucestershire registers",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Hannah Wakefield",
+"says": "aged 48 · county entered as a ditto under her husband's Gloucester — not a statement of her birthplace",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Hiram Wakefield",
+"says": "died 25/06/1905 · mother: Hannah Sanigar · father: James Wakefield",
+"source": "record · Queensland death index 1905/B/5782",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Hiram Wakefield",
+"says": "married Margaret Birch · 29 March 1861 · Brisbane",
+"source": "record · Queensland marriage index 1861/B/129",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Hiram Wakefield",
+"says": "aged 4 · born in Gloucestershire",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Hiram Wakefield",
+"says": "aged 16 · PLUMBER · native place BRISTOL · entered among the single men",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Jabez Wakefield",
+"says": "died 08/02/1903 · mother: Hannah (no surname given) · father: James Wakefield",
+"source": "record · Queensland death index 1903/C/5058",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Jabez Wakefield",
+"says": "married Margaret Fraser · 22 April 1863 · Brisbane",
+"source": "record · Queensland marriage index 1863/B/539",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Jabez Wakefield",
+"says": "aged 11 · aboard the General Hewitt",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "James Wakefield",
+"says": "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have",
+"source": "record · Queensland death index 1857/B/135",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "James Wakefield",
+"says": "aged 35 · mason journeyman · born in Gloucestershire",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "James Wakefield",
+"says": "aged 48 · MASON · county Gloucester · arrived Brisbane 16 Dec 1854 on the General Hewitt",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Marion Wakefield",
+"says": "aged 14 · DOMESTIC · native place BRISTOL · entered among the single women — this is Miriam",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Miriam Wakefield",
+"says": "married William Hartley Sneyd · 15 November 1859 · Brisbane — she was nineteen",
+"source": "record · Queensland marriage index 1859/B/255",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Miriam Wakefield",
+"says": "aged 1 · born in Gloucestershire",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Miriam Wakefield",
+"says": "birth registered June quarter 1840 · Bristol district · volume 11, page 183 — the only Miriam Wakefield registered in England between 1839 and 1843",
+"source": "record · FreeBMD, GRO birth index",
+"link": "https://www.freebmd.org.uk/",
+"kind": "record"
+},
+{
+"name": "Richard Wakefield",
+"says": "named as the father of James Wakefield on his 1857 Queensland death registration",
+"source": "record · Queensland death index 1857/B/135",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Zillah Wakefield",
+"says": "married John Ludwig Frederick · 25 October 1871 · Brisbane",
+"source": "record · Queensland marriage index 1871/B/3366",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Zillah Wakefield",
+"says": "aged 8 · aboard the General Hewitt",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Aaron Wakefield",
+"says": "1840–1896 · Plumber · England",
+"source": "family tree",
+"link": "/people/aaron-wakefield",
+"kind": "tree"
+},
+{
+"name": "Eliza Wakefield",
+"says": "b. 1832 · Bristol, Gloucester, England",
+"source": "family tree",
+"link": "/people/eliza-wakefield",
+"kind": "tree"
+},
+{
+"name": "Ellen Wakefield",
+"says": "b. 1834 · England",
+"source": "family tree",
+"link": "/people/ellen-wakefield",
+"kind": "tree"
+},
+{
+"name": "Hiram Wakefield",
+"says": "1837–1905 · plumber · Bristol, City of Bristol, UK",
+"source": "family tree",
+"link": "/people/hiram-wakefield",
+"kind": "tree"
+},
+{
+"name": "Jabez Wakefield",
+"says": "1843–1903 · Drivers Field, Gloucester, England",
+"source": "family tree",
+"link": "/people/jabez-wakefield",
+"kind": "tree"
+},
+{
+"name": "James Wakefield",
+"says": "1799–1857 · Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/james-wakefield",
+"kind": "tree"
+},
+{
+"name": "Martha Wakefield",
+"says": "1836–1899 · England",
+"source": "family tree",
+"link": "/people/martha-wakefield",
+"kind": "tree"
+},
+{
+"name": "Miriam Wakefield",
+"says": "1840–1909 · St Paul, Bristol, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/miriam-wakefield",
+"kind": "tree"
+},
+{
+"name": "Zillah Wakefield",
+"says": "1846–1900 · England",
+"source": "family tree",
+"link": "/people/zillah-wakefield",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "ATWELL",
 "n": 28,
 "rows": [
@@ -1820,201 +2071,6 @@
 "says": "1864–1918 · West Leigh, Devonshire",
 "source": "family tree",
 "link": "/people/william-atwell-1864",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "WAKEFIELD",
-"n": 27,
-"rows": [
-{
-"name": "Aaron Wakefield",
-"says": "died 21/09/1896 · mother: Hannah Sanegar · father: James Wakefield",
-"source": "record · Queensland death index 1896/C/3402",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Aaron Wakefield",
-"says": "married Elizabeth Ann Birch · 11 July 1861 · Brisbane — two brothers, two Birch sisters, four months apart",
-"source": "record · Queensland marriage index 1861/B/142",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Aaron Wakefield",
-"says": "aged 1 · born in Gloucestershire",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Ephraim Wakefield",
-"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
-"source": "record · Queensland death index 1868/B/4544",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Hannah Wakefield",
-"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
-"source": "record · Queensland death index 1873/C/603",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Hannah Wakefield",
-"says": "aged 35 · born outside the county — which is why she cannot be found in the Gloucestershire registers",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Hiram Wakefield",
-"says": "died 25/06/1905 · mother: Hannah Sanigar · father: James Wakefield",
-"source": "record · Queensland death index 1905/B/5782",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Hiram Wakefield",
-"says": "married Margaret Birch · 29 March 1861 · Brisbane",
-"source": "record · Queensland marriage index 1861/B/129",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Hiram Wakefield",
-"says": "aged 4 · born in Gloucestershire",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Jabez Wakefield",
-"says": "died 08/02/1903 · mother: Hannah (no surname given) · father: James Wakefield",
-"source": "record · Queensland death index 1903/C/5058",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Jabez Wakefield",
-"says": "married Margaret Fraser · 22 April 1863 · Brisbane",
-"source": "record · Queensland marriage index 1863/B/539",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "James Wakefield",
-"says": "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have",
-"source": "record · Queensland death index 1857/B/135",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "James Wakefield",
-"says": "aged 35 · mason journeyman · born in Gloucestershire",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Miriam Wakefield",
-"says": "married William Hartley Sneyd · 15 November 1859 · Brisbane — she was nineteen",
-"source": "record · Queensland marriage index 1859/B/255",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Miriam Wakefield",
-"says": "aged 1 · born in Gloucestershire",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Miriam Wakefield",
-"says": "birth registered June quarter 1840 · Bristol district · volume 11, page 183 — the only Miriam Wakefield registered in England between 1839 and 1843",
-"source": "record · FreeBMD, GRO birth index",
-"link": "https://www.freebmd.org.uk/",
-"kind": "record"
-},
-{
-"name": "Richard Wakefield",
-"says": "named as the father of James Wakefield on his 1857 Queensland death registration",
-"source": "record · Queensland death index 1857/B/135",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Zillah Wakefield",
-"says": "married John Ludwig Frederick · 25 October 1871 · Brisbane",
-"source": "record · Queensland marriage index 1871/B/3366",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Aaron Wakefield",
-"says": "1840–1896 · Plumber · England",
-"source": "family tree",
-"link": "/people/aaron-wakefield",
-"kind": "tree"
-},
-{
-"name": "Eliza Wakefield",
-"says": "b. 1832 · Bristol, Gloucester, England",
-"source": "family tree",
-"link": "/people/eliza-wakefield",
-"kind": "tree"
-},
-{
-"name": "Ellen Wakefield",
-"says": "b. 1834 · England",
-"source": "family tree",
-"link": "/people/ellen-wakefield",
-"kind": "tree"
-},
-{
-"name": "Hiram Wakefield",
-"says": "1837–1905 · plumber · Bristol, City of Bristol, UK",
-"source": "family tree",
-"link": "/people/hiram-wakefield",
-"kind": "tree"
-},
-{
-"name": "Jabez Wakefield",
-"says": "1843–1903 · Drivers Field, Gloucester, England",
-"source": "family tree",
-"link": "/people/jabez-wakefield",
-"kind": "tree"
-},
-{
-"name": "James Wakefield",
-"says": "1799–1857 · Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/james-wakefield",
-"kind": "tree"
-},
-{
-"name": "Martha Wakefield",
-"says": "1836–1899 · England",
-"source": "family tree",
-"link": "/people/martha-wakefield",
-"kind": "tree"
-},
-{
-"name": "Miriam Wakefield",
-"says": "1840–1909 · St Paul, Bristol, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/miriam-wakefield",
-"kind": "tree"
-},
-{
-"name": "Zillah Wakefield",
-"says": "1846–1900 · England",
-"source": "family tree",
-"link": "/people/zillah-wakefield",
 "kind": "tree"
 }
 ]

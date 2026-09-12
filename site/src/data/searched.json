@@ -9,6 +9,22 @@
  ],
  "rows": [
   {
+   "src": "Queensland open data — Assisted immigration 1848–1912",
+   "what": "How and when the Wakefields reached Australia, and whether the passenger register gives Hannah's native place",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "FOUND, with the register scan. The ship GENERAL HEWITT, Brisbane, 16 December 1854, 394 souls. James Wakefield 48, a MASON — matching the 1841 census's “Mason Journeyman” — with Hannah 48, Jabez 11, Zillah 8 and Ephraim 5; Hiram 16 a plumber and Aaron 14 entered separately among the single men, both native place BRISTOL; and Marion Wakefield 14, a domestic, among the single women, also Bristol. Marion is Miriam. The emigration is now dated to the day.",
+   "href": "/general-hewitt"
+  },
+  {
+   "src": "QSA digital image DR38490 — the passenger register itself",
+   "what": "Whether the register gives Hannah Wakefield's own county",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "It does not. Her county is a ditto mark under her husband's “Gloucester”, which is the household head's county and not a statement about her. The register plainly distinguishes the two — it enters her three eldest children as Bristol on the same day — so the ditto cannot be read as her birthplace. Hannah's origin remains the open question.",
+   "href": "/general-hewitt"
+  },
+  {
    "src": "FreeREG — every Saniger record in Gloucestershire, opened individually",
    "what": "All 556 records read one by one and reconstituted into households, rather than searched by name",
    "when": "13 Sep 2026",

@@ -253,12 +253,17 @@
 "says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
 "source": "record · Queensland death index 1868/B/4544",
 "link": "https://www.familyhistory.bdm.qld.gov.au/"
+},
+{
+"says": "aged 5 · aboard the General Hewitt",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "ephraim-wakefield",
-"n": 1
+"n": 2
 },
 "hannah-wakefield": {
 "name": "Hannah Wakefield",
@@ -273,12 +278,32 @@
 "says": "aged 35 · born outside the county — which is why she cannot be found in the Gloucestershire registers",
 "source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
 "link": "https://www.freecen.org.uk/"
+},
+{
+"says": "aged 48 · county entered as a ditto under her husband's Gloucester — not a statement of her birthplace",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "hannah-wakefield",
-"n": 2
+"n": 3
+},
+"marion-wakefield": {
+"name": "Marion Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "aged 14 · DOMESTIC · native place BRISTOL · entered among the single women — this is Miriam",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "marion-wakefield",
+"n": 1
 },
 "richard-wakefield": {
 "name": "Richard Wakefield",
@@ -1272,9 +1297,9 @@
 }
 },
 "counts": {
-"named": 104,
+"named": 105,
 "withTreePage": 23,
-"ownPage": 81,
-"mentions": 137
+"ownPage": 82,
+"mentions": 145
 }
 }

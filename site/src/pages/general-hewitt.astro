@@ -1,0 +1,142 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import g from "../data/general-hewitt.json";
+
+const cats = ["Married couple and children", "Single men", "Single women"];
+---
+<Base
+  title="The General Hewitt"
+  eyebrow={`${g.port}, ${g.arrived} · QSA ${g.item}, image ${g.image}`}
+  dek="The archive knew this family reached Queensland. It did not know how, when, or on what. The passenger register gives all three — and a fourteen-year-old girl shipped as a domestic servant.">
+
+  <section class="blk">
+    <p class="lede">Eight of them sailed. On <strong>16 December 1854</strong> the
+    <strong>General Hewitt</strong> put into Brisbane with <strong>394 souls</strong> aboard, and
+    among them were <a href={u("/people/james-wakefield")}>James Wakefield</a>, his wife Hannah,
+    and six of their children — including <a href={u("/people/miriam-wakefield")}>Miriam</a>, then
+    fourteen.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>This was found the long way round.</strong> Queensland State Archives' own search
+      refused to run — every query returned a system error. But Queensland publishes the
+      <a href={g.indexUrl}>assisted-immigration index as open data ↗</a>, a plain CSV, and the whole
+      family is in it. The index then names a digital image, <span class="mono">{g.image}</span>, and
+      that turns out to be <strong>the register itself</strong>.
+      <a href={g.imageUrl}>The scan, from QSA ↗</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Page 78, 80 and 81 of the register</div>
+    <h2 style="margin-top:.4rem">The family, split across three categories</h2>
+
+    <p>An assisted-passage register does not list a family together. It lists
+    <em>married couples with their young children</em>, then <em>single men</em>, then
+    <em>single women</em> — so the Wakefields appear three pages apart, and the two eldest boys and
+    the eldest girl aboard are entered as though they were travelling alone.</p>
+
+    {cats.map((cat) => (
+      <>
+        <div class="lab" style="margin-top:1.4rem">{cat} · page {g.rows.find((r) => r.cat === cat).pg}</div>
+        <div class="scroll" style="margin-top:.6rem">
+          <table>
+            <thead><tr><th>Name</th><th class="m">Age</th><th>Occupation</th><th>Country</th></tr></thead>
+            <tbody>
+              {g.rows.filter((r) => r.cat === cat).map((r) => (
+                <tr>
+                  <td><strong>{r.name}</strong>{r.note && <div class="small">{r.note}</div>}</td>
+                  <td class="m">{r.age}</td>
+                  <td class="small">{r.occ || "—"}</td>
+                  <td>{r.county === "— ditto —"
+                        ? <span class="small" style="color:var(--ink-3)">{r.county}</span>
+                        : <strong>{r.county}</strong>}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    ))}
+  </section>
+
+  <section class="blk">
+    <div class="lab">Three things it confirms</div>
+    <h2 style="margin-top:.4rem">A trade, a city, and a girl of fourteen</h2>
+
+    <ul class="dek" style="margin-top:1rem">
+      <li style="margin-bottom:.6rem"><strong>James Wakefield is entered as a MASON.</strong> The
+      1841 census at <a href={u("/drivers-fields")}>Drivers Fields</a> calls him a
+      <em>Mason Journeyman</em>. Thirteen years and half a world apart, two clerks who never met wrote
+      down the same trade. <span class="chip doc">documented twice</span></li>
+
+      <li style="margin-bottom:.6rem"><strong>The three eldest children are from Bristol.</strong>
+      Hiram, Aaron and Marion each get their own line and their own county, and all three say
+      <strong>Bristol</strong> — exactly where the census and the birth registration put them.</li>
+
+      <li><strong>Miriam is “Marion”, and she is a domestic servant.</strong> Fourteen years old,
+      entered among the <em>single women</em> rather than with her parents, with an occupation
+      against her name. Five years later she married
+      <a href={u("/people/william-hartley-sneyd")}>William Hartley Sneyd</a> at Brisbane.
+      <a href={u("/the-women")}>The women →</a></li>
+    </ul>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And one thing it pointedly does not give.</strong> Hannah's county is a
+      <em>ditto mark</em> under her husband's <strong>Gloucester</strong> — the household head's
+      county, entered once and carried down the page. It is not a statement about where she was born,
+      and the register proves it knows the difference: on the very same day it enters her three
+      eldest children as <strong>Bristol</strong>. <span class="chip inf">not her birthplace</span>
+      <br /><br />
+      So the question the last two days have been chasing is still open. The 1841 census says Hannah
+      was born outside Gloucestershire; the <a href={u("/sanigers")}>reconstitution of all 81
+      Gloucestershire Saniger households</a> says she is in none of them; and the one register that
+      might have named her county dittoed it instead.
+      <a href={u("/errands")}>What would settle it →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The voyage</div>
+    <h2 style="margin-top:.4rem">Who else was aboard</h2>
+    <p class="dek">The register closes with a summary in the clerk's hand.</p>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          {g.summary.map(([k, v]) => (
+            <tr><td>{k}</td><td class="m"><strong>{v}</strong></td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1rem">Reckoned for victualling as 325 “adults” — children
+    counted as halves, infants not counted at all. The counties on these pages are Cambridge,
+    Middlesex, Somerset, Essex, Kilkenny, Tipperary, Wicklow, Armagh, Cork, Roscommon and Dublin: an
+    English and Irish cargo of farm labourers, masons, ploughmen, bricklayers, dairymaids and
+    domestic servants, landed at a settlement that would not become a state capital for another five
+    years.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What this changes</h2>
+    <ol class="dek">
+      <li style="margin-bottom:.5rem"><strong>The emigration is dated.</strong> The archive has said
+      for years that the family "reached Queensland". It reached it on
+      <strong>16 December 1854</strong>, aboard a named ship, with the ages of every passenger
+      recorded. <span class="chip doc">documented</span></li>
+      <li style="margin-bottom:.5rem"><strong>James Wakefield's trade is confirmed independently</strong>,
+      and the family's Bristol origin with it.</li>
+      <li style="margin-bottom:.5rem"><strong>Three daughters are missing from the manifest.</strong>
+      Eliza (born 1832), Ellen (1834) and Martha (1836) would have been twenty-two, twenty and
+      eighteen. They are not aboard. Whether they had already married, followed later, or stayed is
+      not known. <span class="chip lore">open</span></li>
+      <li><strong>Hannah's birthplace is not here</strong>, and remains the single open question in
+      this archive's English line.</li>
+    </ol>
+
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/drivers-fields")}>The household they left, 1841 →</a> ·
+      <a href={u("/sanigers")}>The Sanigers they did not come from →</a> ·
+      <a href={g.imageUrl}>The register scan, QSA ↗</a></p>
+  </section>
+</Base>
