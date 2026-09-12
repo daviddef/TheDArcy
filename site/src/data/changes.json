@@ -1,9 +1,20 @@
 {
  "title": "What changed",
- "eyebrow": "7 passes · 38 changes",
+ "eyebrow": "8 passes · 42 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "The county reconstituted, and the Bristol migration",
+   "did": [
+    "Opened all 556 Gloucestershire Saniger records individually instead of searching them by name.",
+    "Assembled 81 households from the 196 baptisms that name a father, splitting same-named couples wherever 25 years separate consecutive baptisms.",
+    "Asked all 81 whether any could be Hannah's. None can.",
+    "Published /sanigers: the households, the trades, seventeen spellings rather than eleven, and the 29 Sanigers in Bristol on census night 1841."
+   ],
+   "found": "The Gloucestershire Sanigers are a Stroudwater cloth-trade family — weavers, tuckers, curriers — at Cam and Dursley, not Berkeley. And Hannah is in none of their households, because she was not born in the county."
+  },
   {
    "when": "13 September 2026",
    "title": "The maiden name, settled five times over",

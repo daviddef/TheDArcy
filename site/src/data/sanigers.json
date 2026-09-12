@@ -1,0 +1,480 @@
+{
+ "searched": "13 September 2026",
+ "counts": {
+  "records": 556,
+  "baptisms": 205,
+  "marriages": 200,
+  "burials": 151,
+  "baptismsWithFather": 196,
+  "families": 81,
+  "multiChild": 38,
+  "singletons": 43
+ },
+ "parishes": [
+  [
+   "Dursley",
+   33
+  ],
+  [
+   "Cam",
+   20
+  ],
+  [
+   "Thornbury",
+   8
+  ],
+  [
+   "Berkeley",
+   5
+  ],
+  [
+   "Stinchcombe",
+   4
+  ],
+  [
+   "Painswick",
+   2
+  ],
+  [
+   "Falfield",
+   2
+  ],
+  [
+   "Marshfield",
+   2
+  ],
+  [
+   "King's Stanley",
+   1
+  ],
+  [
+   "Tetbury",
+   1
+  ],
+  [
+   "North Nibley",
+   1
+  ],
+  [
+   "Bromsberrow",
+   1
+  ],
+  [
+   "Boxwell",
+   1
+  ]
+ ],
+ "families": [
+  {
+   "parish": "Dursley",
+   "father": "Abraham",
+   "mother": "Jane",
+   "n": 10,
+   "from": 1698,
+   "to": 1721,
+   "kids": "John 1698, William 1701, Susannah 1704, Jane 1707, Thomas 1711, Thomas 1712, Jane 1715, Tho. 1720, Thomas 1721"
+  },
+  {
+   "parish": "Cam",
+   "father": "Daniel",
+   "mother": "Elizabeth",
+   "n": 8,
+   "from": 1729,
+   "to": 1763,
+   "kids": "Daniel 1729, Mary 1733, Mary 1735, Mary 1755, Henry 1757, Sarah 1760, Sarah 1762, Sarah 1763"
+  },
+  {
+   "parish": "Cam",
+   "father": "Daniell",
+   "mother": "Betty",
+   "n": 8,
+   "from": 1741,
+   "to": 1752,
+   "kids": "William 1741, William 1742, Solomon 1745, Solomon 1746, Solomon 1747, Betty 1749, Ann 1751, Ann 1752"
+  },
+  {
+   "parish": "Cam",
+   "father": "Thomas",
+   "mother": "Sarah",
+   "n": 8,
+   "from": 1770,
+   "to": 1791,
+   "kids": "Betty 1770, Thomas 1773, Daniel 1775, Mary 1778, Deborah 1780, Thomas 1782, Deborah 1788, George 1791"
+  },
+  {
+   "parish": "Dursley",
+   "father": "William",
+   "mother": "Elizabeth",
+   "n": 6,
+   "from": 1731,
+   "to": 1761,
+   "kids": "Margaret 1731, Ann 1732, William 1733, Samuell 1752, Mary 1757, Elizabeth 1761"
+  },
+  {
+   "parish": "Cam",
+   "father": "John",
+   "mother": "Prudence",
+   "n": 5,
+   "from": 1677,
+   "to": 1682,
+   "kids": "Richard 1677, John 1677, Daniel 1679, John 1680, Mary 1682"
+  },
+  {
+   "parish": "Dursley",
+   "father": "William",
+   "mother": "Mary",
+   "n": 5,
+   "from": 1704,
+   "to": 1710,
+   "kids": "Mary 1704, William 1705, William 1707, John 1708, Martha 1710"
+  },
+  {
+   "parish": "Cam",
+   "father": "Daniel",
+   "mother": "Elizabeth",
+   "n": 5,
+   "from": 1813,
+   "to": 1826,
+   "kids": "John 1813, Daniel 1815, Elizabeth 1820, Eliza 1823, Caroline 1826"
+  },
+  {
+   "parish": "Painswick",
+   "father": "Thomas",
+   "mother": "Eleanor",
+   "n": 5,
+   "from": 1844,
+   "to": 1849,
+   "kids": "Joseph Thomas 1844, Helen 1846, John 1846, Jane 1848, Emily 1849"
+  },
+  {
+   "parish": "Dursley",
+   "father": "William",
+   "mother": "Ann",
+   "n": 5,
+   "from": 1846,
+   "to": 1848,
+   "kids": "George 1846, Charles 1846, Henry 1846, Prudence 1846, William Sydney 1848"
+  },
+  {
+   "parish": "Dursley",
+   "father": "James",
+   "mother": "Emma",
+   "n": 5,
+   "from": 1887,
+   "to": 1895,
+   "kids": "Ethel Louisa 1887, Francis Henry 1888, Charles James 1890, John Sidney 1894, Arthur George 1895"
+  },
+  {
+   "parish": "Thornbury",
+   "father": "Thomas",
+   "mother": "Jane",
+   "n": 4,
+   "from": 1750,
+   "to": 1760,
+   "kids": "William 1750, John 1755, Isaac 1760, Jacob 1760"
+  },
+  {
+   "parish": "Berkeley",
+   "father": "James",
+   "mother": "",
+   "n": 3,
+   "from": 1671,
+   "to": 1675,
+   "kids": "James 1671, Elizabeth 1673, Edward 1675"
+  },
+  {
+   "parish": "Stinchcombe",
+   "father": "Benjamin",
+   "mother": "Sarah",
+   "n": 3,
+   "from": 1723,
+   "to": 1730,
+   "kids": "Sarah 1723, Mary 1726, Hannah 1730"
+  },
+  {
+   "parish": "Thornbury",
+   "father": "William",
+   "mother": "Elizabeth",
+   "n": 3,
+   "from": 1779,
+   "to": 1784,
+   "kids": "Edward 1779, Jane 1784, Elizabeth 1784"
+  }
+ ],
+ "occupations": [
+  [
+   "Blacksmith",
+   7
+  ],
+  [
+   "Weaver",
+   6
+  ],
+  [
+   "Labourer",
+   5
+  ],
+  [
+   "Shoemaker",
+   5
+  ],
+  [
+   "Plaisterer",
+   5
+  ],
+  [
+   "Coachman",
+   4
+  ],
+  [
+   "Yeoman",
+   3
+  ],
+  [
+   "Farmer",
+   3
+  ],
+  [
+   "Currier",
+   3
+  ],
+  [
+   "Clerk in Holy Orders",
+   2
+  ],
+  [
+   "Tucker",
+   2
+  ]
+ ],
+ "spellings": [
+  [
+   "SINNEGAR",
+   92
+  ],
+  [
+   "SANIGAR",
+   74
+  ],
+  [
+   "SINEGAR",
+   60
+  ],
+  [
+   "SANIGER",
+   58
+  ],
+  [
+   "SINIGAR",
+   23
+  ],
+  [
+   "SAINGER",
+   19
+  ],
+  [
+   "SANNIGAR",
+   19
+  ],
+  [
+   "SANEGAR",
+   18
+  ],
+  [
+   "SINIGER",
+   16
+  ],
+  [
+   "SINGER",
+   16
+  ],
+  [
+   "SANIGEAR",
+   15
+  ],
+  [
+   "SANNIGER",
+   12
+  ],
+  [
+   "SANNEGAR",
+   12
+  ],
+  [
+   "SANGER",
+   10
+  ],
+  [
+   "SINAGER",
+   8
+  ],
+  [
+   "SANEGER",
+   7
+  ],
+  [
+   "SINEGER",
+   7
+  ]
+ ],
+ "abodes": [
+  [
+   "Cam",
+   32
+  ],
+  [
+   "Dursley",
+   14
+  ],
+  [
+   "Lower Cam",
+   8
+  ],
+  [
+   "Painswick",
+   6
+  ],
+  [
+   "Berkeley",
+   5
+  ],
+  [
+   "Woodmancote",
+   5
+  ],
+  [
+   "Hallmer",
+   4
+  ],
+  [
+   "Oldbury",
+   4
+  ],
+  [
+   "Piddington",
+   3
+  ],
+  [
+   "Rectory Cottage",
+   3
+  ]
+ ],
+ "bristol1841": [
+  [
+   "Rachael SANGER",
+   1766
+  ],
+  [
+   "Lyddya SINEGAR",
+   1771
+  ],
+  [
+   "Rachael SANGAR",
+   1781
+  ],
+  [
+   "Hannah SENGEIR",
+   1801
+  ],
+  [
+   "William SENGEIR",
+   1801
+  ],
+  [
+   "Martha SINEGAR",
+   1810
+  ],
+  [
+   "Mary SUNIGAR",
+   1811
+  ],
+  [
+   "Thomas SINEGAR",
+   1811
+  ],
+  [
+   "Charles SUNIGAR",
+   1816
+  ],
+  [
+   "John SINGER",
+   1816
+  ],
+  [
+   "John SANGER",
+   1816
+  ],
+  [
+   "Caroline SANGER",
+   1821
+  ],
+  [
+   "Ann SINGER",
+   1821
+  ],
+  [
+   "William SANGER",
+   1821
+  ],
+  [
+   "Susan SANGER",
+   1821
+  ],
+  [
+   "James SANGER",
+   1826
+  ],
+  [
+   "John SENGEIR",
+   1826
+  ],
+  [
+   "George SENGEIR",
+   1827
+  ],
+  [
+   "James SINEGAR",
+   1830
+  ],
+  [
+   "Hannah SENGEIR",
+   1831
+  ],
+  [
+   "Lydia SINEGAR",
+   1832
+  ],
+  [
+   "Thomas SINEGAR",
+   1834
+  ],
+  [
+   "Ann SENGEIR",
+   1836
+  ],
+  [
+   "Emma SUNIGAR",
+   1836
+  ],
+  [
+   "Martha SINEGAR",
+   1839
+  ],
+  [
+   "Sarah SENGEIR",
+   1839
+  ],
+  [
+   "John SANGER",
+   1840
+  ],
+  [
+   "Elizabeth SUNIGAR",
+   1840
+  ],
+  [
+   "Stephen SINGER",
+   1840
+  ]
+ ]
+}

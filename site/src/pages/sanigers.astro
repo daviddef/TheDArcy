@@ -1,0 +1,223 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/sanigers.json";
+
+const c = d.counts;
+const bristol = d.bristol1841;
+const decade = (y) => Math.floor(y / 10) * 10;
+const byDecade = {};
+for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
+---
+<Base
+  title="The Sanigers, reconstituted"
+  eyebrow={`${c.records} records · ${c.families} families · searched ${d.searched}`}
+  dek="Every Saniger record in Gloucestershire, read individually and assembled into households — to answer one question: is Hannah in any of them? She is not.">
+
+  <section class="blk">
+    <p class="lede">This archive's oldest claim is a Gloucestershire family. Its only link to that
+    family is one line in a Queensland death register naming
+    <a href={u("/people/miriam-wakefield")}>Miriam Wakefield</a>'s mother as
+    <strong>Hannah Saniger</strong>. Searching for Hannah by name had failed.
+    <a href={u("/berkeley")}>Repeatedly →</a></p>
+
+    <p class="dek" style="margin-top:1rem">So instead of searching for her, the county was
+    <strong>reconstituted</strong>: all {c.records} Saniger records opened one by one, the father and
+    mother read off each baptism, and the children assembled back into the households they came from.
+    <strong>{c.families} families.</strong> Then ask which of them could be hers.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>None of them.</strong> Not one family in Gloucestershire has a mother called Lydia —
+      the name the tree gives Hannah's mother. Not one is a John and Lydia. There is exactly
+      <strong>one Hannah baptised</strong> in the whole dataset, at Stinchcombe in 1730, and only
+      <strong>three families</strong> are having children at all between 1795 and 1815, when Hannah
+      should have been born. <span class="chip lore">searched and empty, comprehensively</span>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Method</div>
+    <h2 style="margin-top:.4rem">What was actually done</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          <tr><td>Records opened</td><td class="m"><strong>{c.records}</strong></td>
+              <td class="small">{c.baptisms} baptisms, {c.marriages} marriages, {c.burials} burials</td></tr>
+          <tr><td>Baptisms naming a father</td><td class="m">{c.baptismsWithFather}</td>
+              <td class="small">of {c.baptisms} — the rest give the child only</td></tr>
+          <tr><td>Households assembled</td><td class="m"><strong>{c.families}</strong></td>
+              <td class="small">{c.multiChild} with two or more children; {c.singletons} with one</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1rem">Grouped by parish, father's forename and mother's
+    forename, and <strong>split wherever more than twenty-five years separates one baptism from the
+    next</strong> — otherwise a grandfather and a grandson of the same name merge into one
+    impossible household spanning a century. Duplicate transcriptions of the same event, which are
+    everywhere in this county because several parishes are transcribed twice, are counted once.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The answer to the question</div>
+    <h2 style="margin-top:.4rem">Three tests, three negatives</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Asked of all {c.families} households</th><th>Found</th></tr></thead>
+        <tbody>
+          <tr><td><strong>A mother called Lydia</strong><div class="small">the tree names Hannah's mother Lydia Jones</div></td>
+              <td><strong>None.</strong> Not one household in the county
+                <span class="chip lore">empty</span></td></tr>
+          <tr><td><strong>A father John with a wife Lydia</strong><div class="small">the tree names her father John Saniger</div></td>
+              <td><strong>None.</strong> <span class="chip lore">empty</span></td></tr>
+          <tr><td><strong>A Hannah baptised anywhere</strong></td>
+              <td><strong>One</strong>, at Stinchcombe on 2 July 1730 — daughter of Benjamin and
+                Sarah, seventy-five years too early
+                <span class="chip lore">not hers</span></td></tr>
+          <tr><td><strong>Any household bearing children 1795–1815</strong></td>
+              <td><strong>Three.</strong> Daniel and Elizabeth at Cam, George and Harriet at Dursley,
+                William and Mary at Falfield — no John, no Lydia
+                <span class="chip lore">none of them hers</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And this is where it stops being a puzzle and starts being an answer.</strong> The
+      1841 census entered Hannah Wakefield as born <em>Out of County</em> — not born in
+      Gloucestershire. She is not in these eighty-one households because
+      <strong>she is not from here</strong>. A week of failed searches was not bad luck; it was
+      looking in the wrong county. <a href={u("/drivers-fields")}>The census that says so →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Who they actually were</div>
+    <h2 style="margin-top:.4rem">A cloth-trade family of the Stroud valleys</h2>
+    <p>Since the records were all opened anyway, they describe a family this archive had never
+    looked at properly. The occupations are unmistakable:</p>
+
+    <div class="grid two" style="margin-top:1.2rem">
+      <div>
+        <div class="lab">Trades recorded</div>
+        <div class="scroll" style="margin-top:.6rem">
+          <table>
+            <tbody>{d.occupations.map(([o, n]) => (
+              <tr><td>{o}</td><td class="m">{n}</td></tr>))}</tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="lab">Where they lived</div>
+        <div class="scroll" style="margin-top:.6rem">
+          <table>
+            <tbody>{d.abodes.map(([o, n]) => (
+              <tr><td>{o}</td><td class="m">{n}</td></tr>))}</tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.2rem"><strong>Weavers, tuckers, curriers, blacksmiths and shoemakers</strong>,
+    living at Cam, Lower Cam and Dursley. A tucker finishes woollen cloth; a currier dresses leather.
+    These are the trades of the Stroudwater cloth district in its working century, and they are what
+    this family did. Two <em>Clerks in Holy Orders</em> and three <em>yeomen</em> are the whole of
+    the gentility.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The households</div>
+    <h2 style="margin-top:.4rem">Every family of three children or more</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Parish</th><th>Father and mother</th><th class="m">Children</th><th class="m">Span</th><th>Baptised</th></tr></thead>
+        <tbody>
+          {d.families.map((f) => (
+            <tr>
+              <td><strong>{f.parish}</strong></td>
+              <td>{f.father} &amp; {f.mother || "—"}</td>
+              <td class="m">{f.n}</td>
+              <td class="m">{f.from}–{f.to}</td>
+              <td class="small">{f.kids}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>The largest household in the county is Abraham and Jane of Dursley</strong> — ten
+      children between 1698 and 1721. Their Thomas, baptised 17 March 1711/12, is the one this
+      archive briefly took for its own ancestor before reading the father's name.
+      <a href={u("/berkeley")}>How that failed →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <h2>Where the families are</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Parish</th><th class="m">Households</th></tr></thead>
+        <tbody>{d.parishes.map(([p, n]) => (
+          <tr><td><strong>{p}</strong></td><td class="m">{n}</td></tr>))}</tbody>
+      </table>
+    </div>
+    <p style="margin-top:1.1rem"><strong>Dursley and Cam hold fifty-three of the eighty-one.</strong>
+    Berkeley — the parish this archive has named in every account of itself since it was built —
+    holds <strong>five</strong>, and cannot hold more, because its transcript stops in 1677.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Seventeen, not eleven</div>
+    <h2 style="margin-top:.4rem">How this name is actually spelled</h2>
+    <p>The <a href={u("/berkeley")}>Berkeley page</a> lists eleven spellings. Reading all
+    {c.records} records gives <strong>seventeen</strong> with three or more occurrences, and the
+    commonest is not the one the family uses.</p>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Spelling</th><th class="m">Occurrences</th></tr></thead>
+        <tbody>{d.spellings.map(([s, n]) => (
+          <tr><td class="mono">{s}</td><td class="m">{n}</td>
+              <td>{s === "SANIGER" && <span class="chip inf">the form this archive uses</span>}
+                  {s === "SINNEGAR" && <span class="chip doc">the commonest in the registers</span>}</td></tr>))}</tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1rem">All seventeen are now folded together by this site's own
+    search, so any one of them finds the rest. <a href={u("/search")}>Try it →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <div class="lab">And where they went</div>
+    <h2 style="margin-top:.4rem">Twenty-nine Sanigers in Bristol, 1841</h2>
+    <p class="lede">The Vale families did not stay in the Vale. On census night in 1841 there are
+    <strong>{bristol.length}</strong> of them in Bristol alone, under five spellings — and one of
+    them is <a href={u("/drivers-fields")}>Lyddya Sinegar, aged 70, living in the Wakefield
+    house</a>.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Name as enumerated</th><th class="m">Born about</th></tr></thead>
+        <tbody>
+          {bristol.map(([n, y]) => (
+            <tr style={/Lyddya/.test(n) ? "background:var(--accent-wash)" : ""}>
+              <td class={/Lyddya/.test(n) ? "" : "small"}>{/Lyddya/.test(n) ? <strong>{n}</strong> : n}</td>
+              <td class="m">{y}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>This is the migration that makes the family findable and unfindable at once.</strong>
+      A cloth-trade family leaves a collapsing rural industry for a city, and in doing so passes out
+      of the parish registers that recorded it for two hundred years and into a city whose registers
+      are almost entirely untranscribed — <strong>four registers and 1,551 records for the whole of
+      Bristol</strong>. They are visible in 1841 because a census caught them, and invisible on
+      either side of it. <a href={u("/searched")}>What each database holds →</a>
+    </div>
+
+    <p class="small" style="margin-top:1.3rem">
+      <a href={u("/berkeley")}>The chain that failed →</a> ·
+      <a href={u("/drivers-fields")}>The household, 1841 →</a> ·
+      <a href={u("/errands")}>The certificate that would settle it →</a></p>
+  </section>
+</Base>
