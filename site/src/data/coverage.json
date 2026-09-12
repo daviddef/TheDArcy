@@ -1,0 +1,123 @@
+{
+ "note": "What each database actually holds for the parishes this archive needs. Checked before searching, every time — because a search of a source that does not cover your parish returns nothing, and nothing looks exactly like a negative result.",
+ "checked": "13 September 2026",
+ "rows": [
+  {
+   "db": "FreeREG",
+   "where": "Bristol (all parishes)",
+   "holds": "4 registers, 1,551 records",
+   "span": "1755–1915",
+   "verdict": "unusable",
+   "note": "Countess of Huntingdon's Chapel, Methodist Bishopston, Moravian Maudlin Street, Temple of Holy Cross. St Paul — the parish this archive needs — is not among them.",
+   "href": "/berkeley"
+  },
+  {
+   "db": "FreeREG",
+   "where": "Berkeley St Mary, Gloucestershire",
+   "holds": "2,916 records",
+   "span": "1600–1677",
+   "verdict": "partial",
+   "note": "Stops 128 years before Hannah Saniger was born. Her baptism is untranscribed, not missing.",
+   "href": "/berkeley"
+  },
+  {
+   "db": "FreeREG",
+   "where": "Dursley St James, Gloucestershire",
+   "holds": "30,784 records",
+   "span": "1577–1951",
+   "verdict": "good",
+   "note": "Covers the whole Saniger chain. This is where the chain was tested and failed.",
+   "href": "/berkeley"
+  },
+  {
+   "db": "FreeREG",
+   "where": "Cam St George, Gloucestershire",
+   "holds": "17,150 records",
+   "span": "1568–1939",
+   "verdict": "good",
+   "note": "With Dursley, holds 340 of the 494 Saniger records in the county.",
+   "href": "/berkeley"
+  },
+  {
+   "db": "FreeREG",
+   "where": "Berkley St Mary, Somerset",
+   "holds": "7,967 records + 2,132 bishop's transcripts",
+   "span": "1545–1903",
+   "verdict": "good",
+   "note": "Tested as the alternative reading of the tree's “Berkley”. The family there is SINGER throughout and holds no Hannah near 1805.",
+   "href": "/drivers-fields"
+  },
+  {
+   "db": "FreeREG",
+   "where": "Portsea St Mary, Hampshire",
+   "holds": "one D'Arcy record in the whole county",
+   "span": "—",
+   "verdict": "partial",
+   "note": "That one record is Joseph D'Arcy's baptism, 19 March 1780, naming Robert and Jean. The 1779 marriage itself is not in the transcription.",
+   "href": "/hornby"
+  },
+  {
+   "db": "FreeREG",
+   "where": "Madeley All Saints, Staffordshire",
+   "holds": "110 Sneyd records",
+   "span": "1699–1790+",
+   "verdict": "good",
+   "note": "Holds both the 1742 baptism that killed the Keele graft and the 1744 burial that may undo it.",
+   "href": "/sneyd"
+  },
+  {
+   "db": "FreeREG",
+   "where": "St Quivox, Ayrshire",
+   "holds": "nothing",
+   "span": "—",
+   "verdict": "absent",
+   "note": "128 Murdoch records exist for Ayrshire — Galston, Tarbolton, Ayr, Kirkoswald, Loudoun, Dailly, Beith, Dunlop — and not one for St Quivox. The county itself is thin: 202 Smiths for the whole eighteenth century.",
+   "href": "/murdoch"
+  },
+  {
+   "db": "FreeREG",
+   "where": "South Leith, Midlothian",
+   "holds": "nothing",
+   "span": "—",
+   "verdict": "absent",
+   "note": "Midlothian's holding is Edinburgh, Canongate, Restalrig and Dalry. Jean Ward's birth parish is not transcribed.",
+   "href": "/the-women"
+  },
+  {
+   "db": "FreeREG",
+   "where": "County Limerick",
+   "holds": "nothing at all",
+   "span": "—",
+   "verdict": "absent",
+   "note": "Zero records for the entire county. A control search for SMITH across the eighteenth century returns nothing. The county is offered in the search form and has no data behind it.",
+   "href": "/atkinson"
+  },
+  {
+   "db": "FreeCEN",
+   "where": "1841, Bristol",
+   "holds": "the household",
+   "span": "1841",
+   "verdict": "good",
+   "note": "HO107/374 — this is where James and Hannah Wakefield were found, with Miriam aged one.",
+   "href": "/drivers-fields"
+  },
+  {
+   "db": "FreeCEN",
+   "where": "1851, Bristol",
+   "holds": "221 Gloucestershire Wakefields, 31 in Bristol — but not this family",
+   "span": "1851",
+   "verdict": "partial",
+   "note": "Nationally only 36% of the 1851 pieces are transcribed. The piece covering Drivers Fields is not among them — which is why the Lyddya Sinegar identification is still an inference.",
+   "href": "/drivers-fields"
+  },
+  {
+   "db": "FreeBMD",
+   "where": "England and Wales, civil registration",
+   "holds": "complete index from 1 July 1837",
+   "span": "1837–",
+   "verdict": "good",
+   "note": "Control-tested at 21,248 Wakefield marriages for 1838–1842 before any absence was reported from it. This is where Miriam's birth registration was found.",
+   "href": "/drivers-fields"
+  }
+ ]
+}

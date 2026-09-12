@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import d from "../data/searched.json";
+import cov from "../data/coverage.json";
 
 const by = (o) => d.rows.filter((r) => r.outcome === o);
 const yields = by("yield"), nulls = by("null"), blocked = by("blocked");
@@ -51,6 +52,67 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
       </div>
     </section>
   ))}
+
+  <section class="blk">
+    <div class="lab">Checked before searching, every time</div>
+    <h2 style="margin-top:.4rem">What each database actually holds</h2>
+    <p class="dek">{cov.note}</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Database</th><th>Parish or series</th><th>Holds</th><th class="m">Span</th><th>Verdict</th></tr></thead>
+        <tbody>
+          {cov.rows.map((r) => (
+            <tr>
+              <td class="small">{r.db}</td>
+              <td><strong>{r.where}</strong><div class="small">{r.note} <a href={u(r.href)}>→</a></div></td>
+              <td class="small">{r.holds}</td>
+              <td class="m">{r.span}</td>
+              <td>{r.verdict === "good" ? <span class="chip doc">covers it</span>
+                 : r.verdict === "partial" ? <span class="chip inf">partly</span>
+                 : r.verdict === "absent" ? <span class="chip sup">holds nothing</span>
+                 : <span class="chip lore">cannot answer</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Three of this archive's oldest dead ends turn out to be dead ends in a database.</strong>
+      County Limerick, South Leith and St Quivox have each been called an open question for months.
+      None of them has been searched and found empty — <strong>none of them has any data to
+      search.</strong> That is a completely different kind of not-knowing, and it points at a
+      different fix: an archive, not another query. <a href={u("/errands")}>The queue →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Method, for whoever does this next</div>
+    <h2 style="margin-top:.4rem">What these two sites do that will waste your afternoon</h2>
+    <ul class="dek" style="margin-top:1rem">
+      <li style="margin-bottom:.5rem"><strong>FreeREG caps results at 500</strong> and says so only in
+      the body text. A county-wide surname search will silently hit it. Narrow by parish using the
+      place selector, which only populates after the county is chosen and a moment has passed.</li>
+      <li style="margin-bottom:.5rem"><strong>FreeREG allows at most three counties</strong> per
+      search, and rejects a fourth with a validation error rather than ignoring it.</li>
+      <li style="margin-bottom:.5rem"><strong>Phonetic matching is a trap on this surname.</strong>
+      A soundex search for <em>Saniger</em> on FreeBMD returns <strong>14,300</strong> matches,
+      because it sweeps in every SINGER and SANGER in England. It is the right setting for Berkeley
+      and the wrong one for Bristol.</li>
+      <li style="margin-bottom:.5rem"><strong>FreeBMD returns its results in a JavaScript array</strong>,
+      not an HTML table — <span class="mono">searchData = new Array(...)</span>, with a
+      <span class="mono">" ;0;quarter;year"</span> line before each block. Parsing the page's tables
+      finds nothing and looks exactly like a null result.</li>
+      <li style="margin-bottom:.5rem"><strong>FreeREG's own coverage tool and its search disagree.</strong>
+      The contents page answers “Non existent County has been selected” for Ayrshire; the search
+      returns 128 Murdochs. Trust the search.</li>
+      <li><strong>Control-test before believing a zero.</strong> Every null on this page was checked
+      by running a query through the same harness that had to return something — 21,248 Wakefield
+      marriages, 202 Ayrshire Smiths — so that an empty result means an empty record and not a broken
+      form.</li>
+    </ul>
+  </section>
 
   <section class="blk" style="border-bottom:0">
     <h2>Why this page exists</h2>
