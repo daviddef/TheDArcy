@@ -1,9 +1,25 @@
 {
  "title": "What changed",
- "eyebrow": "Every pass, newest first",
+ "eyebrow": "5 passes · 24 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "The Saniger chain, tested at last — and it breaks",
+   "did": [
+    "Checked FreeREG's coverage for Bristol BEFORE searching it. Four registers, 1,551 records, and St Paul is not among them — so the Wakefield join was never testable there and any null would have been a lie.",
+    "Found that Dursley St James (1577–1951) and Cam St George (1568–1939) cover the whole Saniger chain, which /berkeley had implied was untestable.",
+    "Searched the county: 494 Saniger records 1670–1830, and three baptisms matching the tree's dates almost exactly, all at Dursley.",
+    "Opened all three. The fathers are Abraham, John and Samuel — three unrelated men. The chain is a coincidence of dates.",
+    "Established that no Saniger baptism exists in Gloucestershire 1801–1809, in a window that is well covered.",
+    "Established that in 139 Gloucestershire records spanning 1790–1900, no Saniger ever marries a Wakefield.",
+    "Found Miriam Wakefield's birth registration in FreeBMD: June quarter 1840, Bristol, volume 11, page 183 — the only one in England in five years.",
+    "Control-tested the FreeBMD harness (21,248 Wakefield marriages, 1838–1842) before reporting any absence from it.",
+    "Rewrote /berkeley around the result and added the GRO certificate to /errands as the cheapest decisive document on the site."
+   ],
+   "found": "Three Dursley baptisms match the tree's dates for the middle of the Saniger line. Opening them shows three different fathers. The oldest claim in this archive is weaker than it was this morning — and for the first time there is a £2.50 document that would settle it."
+  },
   {
    "when": "10 September 2026",
    "title": "The DNA, and the branding brought into line",

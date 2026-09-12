@@ -9,6 +9,78 @@
  ],
  "rows": [
   {
+   "src": "FreeREG — coverage tool, Bristol",
+   "what": "Every register FreeREG holds for Bristol, checked before searching rather than after",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Four registers and 1,551 records for a city of 120,000: Countess of Huntingdon's Chapel (81, 1820–1837), Methodist Bishopston (98, 1891–1915), Moravian Maudlin Street (1,016, 1755–1865) and Temple of Holy Cross (356, 1834–1849). St Paul, Bristol — where the tree says Miriam Wakefield was baptised — is not among them. The Wakefield–Saniger join cannot be tested here, and any “not found” would have been a lie.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "FreeREG — coverage tool, the Vale of Berkeley",
+   "what": "Dursley, Cam, Thornbury, Stinchcombe, Coaley, Slimbridge, Uley, North Nibley, Wotton-under-Edge",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Dursley St James runs 1577–1951 with 30,784 records and Cam St George 1568–1939 with 17,150. Both cover the whole of the archive's Saniger chain. The /berkeley page had implied those generations were untestable because Berkeley stops in 1677; they were testable all along, three miles away.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "FreeREG — Gloucestershire, every Saniger spelling, 1670–1830",
+   "what": "Fuzzy surname search, all record types, whole county",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "494 records. Cam 184, Dursley 156, Thornbury 55, Berkeley 18. Three baptisms match the tree's dates almost exactly: Thomas at Dursley 17 Mar 1711/12, William at Dursley 6 Nov 1743, William at Dursley 27 Sep 1770.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "FreeREG — the three Dursley baptisms, opened",
+   "what": "The full transcription of each, to read the fathers",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "The chain fails. Thomas 1711/12 is the son of ABRAHAM; William 1743 the son of JOHN; William 1770 the son of SAMUEL. Three men who happen to be baptised in the right parish in the right years, and no two of them are father and son. The date-match was a coincidence.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "FreeREG — Gloucestershire, Saniger baptisms 1801–1809",
+   "what": "The generation the tree puts at 1805",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "None. Not a coverage gap: Dursley runs to 1951 and Cam to 1939, so the window is well covered. The tree's 1805 Saniger does not exist in Gloucestershire.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "FreeREG — Gloucestershire, every Saniger 1790–1900",
+   "what": "Where the family goes after the chain is supposed to leave Berkeley",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "139 records, continuous through the whole century, centred on Cam (67), Dursley (28) and Thornbury (17). The family never leaves the Vale — and in 139 records it never once marries a Wakefield.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "FreeREG — Hannah Saniger, GLS, SOM and WIL, 1780–1880",
+   "what": "The one Saniger the archive actually needs: Miriam Wakefield's mother",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "35 fuzzy matches and not one of them in Gloucestershire. All are Somerset and Wiltshire SINGER or SANGER — different families the phonetic match swept up. Hannah Saniger is not in the Gloucestershire registers.",
+   "href": "/berkeley"
+  },
+  {
+   "src": "FreeBMD — civil registration, births",
+   "what": "Miriam Wakefield, born Bristol 11 April 1840",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "FOUND. Birth registered June quarter 1840, Bristol district, volume 11, page 183 — the only Miriam Wakefield registered anywhere in England between 1839 and 1843. A birth on 11 April falls in the June quarter exactly as it should. Her GRO certificate names her mother with her maiden surname, which would test “Saniger” directly.",
+   "href": "/errands"
+  },
+  {
+   "src": "FreeBMD — civil registration, marriages",
+   "what": "A Wakefield–Saniger marriage, every spelling, 1837–1870",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "None. The earliest Saniger or Sanigar marriage registered in the Bristol district is John Sanigar in the March quarter of 1846 — six years after Miriam was born. Control-tested: the same harness returns 21,248 Wakefield marriages for 1838–1842, so the search works and the absence is real. James Wakefield and Hannah Saniger did not marry in Bristol after civil registration began on 1 July 1837.",
+   "href": "/berkeley"
+  },
+  {
    "src": "Trove (National Library of Australia)",
    "what": "Every spelling of D'Arcy and Sneyd against Brisbane and Queensland papers, 1840–1950; obituaries, funeral notices, insolvency reports, memorial notices",
    "when": "9 Sep 2026",

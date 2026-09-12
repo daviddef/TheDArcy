@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import { nOwn, nInherited } from "../lib/errors.js";
 import reg from "../data/register.json";
 import dossiers from "../data/dossiers.json";
 import searched from "../data/searched.json";
@@ -14,7 +15,7 @@ const HOLDS = [
   [dossiers.counts.named, "named in records", `including ${dossiers.counts.ownPage} who are not relatives at all`, "/who"],
   [reg.entries, "register entries", `${reg.records} from a document, ${reg.tree} from the tree`, "/register"],
   [searched.rows.length, "sources read", `${out("yield")} yields, ${out("null")} nulls, ${out("blocked")} unreachable`, "/searched"],
-  [9, "errors corrected in public", "plus 6 inherited from the tree", "/what-we-got-wrong"],
+  [nOwn, "errors corrected in public", `plus ${nInherited} inherited from the tree`, "/what-we-got-wrong"],
   ["≈7", "generations it will defend", "not the twelve the tree claims", "/how-far-back"],
 ];
 ---
@@ -38,7 +39,7 @@ const HOLDS = [
       and found empty is published, so the next person does not repeat the search.
       <a href={u("/searched")}>What has been read →</a></li>
       <li style="margin-bottom:.6rem"><strong>Errors stay on the page where they were made.</strong>
-      Nine so far, each with what caused it. Corrections are never made silently.
+      {nOwn} so far, each with what caused it. Corrections are never made silently.
       <a href={u("/what-we-got-wrong")}>The errors →</a></li>
       <li style="margin-bottom:.6rem"><strong>Living people are not published at all.</strong> Not
       hidden, not gated — absent from the build. The rule withholds 2,034 people across the tree,

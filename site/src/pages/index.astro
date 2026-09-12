@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import { nOwn, nInherited } from "../lib/errors.js";
 import { people } from "../lib/people.js";
 import ancestors from "../data/ancestors.json";
 import families from "../data/families.json";
@@ -21,7 +22,7 @@ const NUMBERS = [
   [dossiers.counts.ownPage, "people met in records who are not relatives", "witnesses, constables, a surgeon, convicts, comrades — each with a page", "/who"],
   [searched.rows.length, "sources read", `${searched.rows.filter((r) => r.outcome === "null").length} of them read and found empty, which is knowledge`, "/searched"],
   [19, "pedigree charts with a solid edge", "out of 473. A family tree is a set of assertions until somebody opens a document", "/method"],
-  [9, "errors corrected in public", "each still on the page where it was made", "/what-we-got-wrong"],
+  [nOwn, "errors corrected in public", "each still on the page where it was made", "/what-we-got-wrong"],
 ];
 
 const RECENT = changes.days.slice(0, 3);

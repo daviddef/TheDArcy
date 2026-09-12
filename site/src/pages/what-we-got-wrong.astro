@@ -1,99 +1,14 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import { OWN, INHERITED, nOwn } from "../lib/errors.js";
 
-/* Errors this archive made and then corrected in public. Newest first.
-   The point of the page is the pattern, not the confession. */
-const OWN = [
-  {
-    when: "10 September 2026",
-    what: "Computed the family tree's predicted Scottish ancestry as 0.02% and announced that a descendant's DNA estimate — 41.9% Scottish and Welsh — was contradicting the tree.",
-    truth: "The tree predicts 26.6% Scottish. It was never in disagreement with the DNA.",
-    why: "The method attributed each line of descent to the deepest ancestor on record, rather than the deepest ancestor with a known birthplace. Her great-grandfather was born at St Quivox in Ayrshire; the men above him are in the tree as names with no places at all, so the walk stepped straight past Ayrshire and called that eighth of the pedigree unknown.",
-    lesson: "When a computed result contradicts something the record plainly says, suspect the computation first. A number produced by your own code is not evidence — it is a claim, and it needs checking like any other.",
-    href: "/dna",
-  },
-  {
-    when: "9 September 2026",
-    what: "Said William Hartley Sneyd was born in 1838, and that his widow's sworn evidence disproved Find a Grave's 30 September 1837.",
-    truth: "He was born on 30 September 1837, and his widow was right.",
-    why: "He died on 11 September; his birthday was the 30th, nineteen days later. A man born on 30 September 1837 is 64 on 11 September 1902 — exactly what she swore. I did the arithmetic without checking the death date against the birthday. His Queensland death registration then gave the date outright.",
-    lesson: "A stated age is a birth year minus one for everybody whose birthday has not yet come round — which is most of the year, for most people.",
-    href: "/inquest-1902",
-  },
-  {
-    when: "9 September 2026",
-    what: "Read a handwritten Statement of Service as “marched out to Étaples 26.4.16, taken on strength 29.4.16” and published April dates for Arthur Sneyd's arrival in France.",
-    truth: "26 and 29 July 1916.",
-    why: "The typed Casualty Form B.103 records the same events in ruled columns and reads unmistakably as July — and July is the only reading consistent with his reverting to the ranks on 29 July.",
-    lesson: "Read the typed form before the clerk's freehand, when both record the same events.",
-    href: "/great-war",
-  },
-  {
-    when: "9 September 2026",
-    what: "Stated that a fourteen-page service dossier for Lindesay Atkinson D'Arcy “is known to exist”.",
-    truth: "No such record could be found under any spelling of his name.",
-    why: "Nothing was ever checked. The claim had been carried forward on assumption. The search method was then verified by running the same query for his brother-in-law, which returned his dossier at once — so the absence is real.",
-    lesson: "“Is known to exist” is a claim like any other and needs a source.",
-    href: "/great-war",
-  },
-  {
-    when: "9 September 2026",
-    what: "Recommended the Woolwich cadet registers, WO 149, as the best hope for Robert D'Arcy's parentage.",
-    truth: "WO 149 runs from 1790 and is held at Sandhurst. It cannot contain a cadet of the early 1770s.",
-    why: "The series was recommended without checking its date range.",
-    lesson: "Check what a record set actually covers before sending anybody to it.",
-    href: "/hornby",
-  },
-  {
-    when: "10 September 2026",
-    what: "Called 144 ancestors and twelve generations back to 1654 “what this archive will defend” and “the honest figure”.",
-    truth: "Of those 144, eight rest on a record set. Fifty-six rest only on other people's family trees and seventy-nine on nothing at all. Above generation seven, exactly one of sixty ancestors rests on a record.",
-    why: "The archive applied its own rule — that a family tree is not a source — to the Hornby descent and to Keele Hall, and never once applied it to the branch it was holding up as solid ground. Nobody counted until somebody asked how far past Brisbane the thing actually went.",
-    lesson: "Audit the ground you are standing on before you audit anybody else's. The claim you have never tested is the claim you believe.",
-    href: "/how-far-back",
-  },
-  {
-    when: "10 September 2026",
-    what: "Told the family their own founding brief was wrong — that the D'Arcys had married Defranceski, and only the Defranceskis had married Falco.",
-    truth: "The brief was right. Ian Kenneth D'Arcy married Giuseppina Falco, and their daughter is the person this archive is built outward from.",
-    why: "I looked up the root person's spouse instead of her parents, saw a Defranceski, and published a correction to somebody else's accurate account of their own family. It stood on the site for a day.",
-    lesson: "The worst errors are the confident ones aimed at somebody else. Before correcting a person about their own family, check the thing they would have checked.",
-    href: "/the-other-archives",
-  },
-  {
-    when: "10 September 2026",
-    what: "Published William Hartley Sneyd's title in the Government Printing Office as “Quoin-drawer Overseer”.",
-    truth: "Fount-room Overseer.",
-    why: "The 1884 volume scanned badly. The 1890 volume prints it plainly, and “fount-room” — where a printing house keeps and distributes its type — is what the job actually was.",
-    lesson: "One bad scan is not a reading. Find the same fact in a second year.",
-    href: "/sergeant-sneyd",
-  },
-  {
-    when: "10 September 2026",
-    what: "Quoted the surgeon of the England as receiving “30 men of the 39th regiment”.",
-    truth: "39 men, with 6 women and 7 children.",
-    why: "The figure came from a secondary account. The National Archives' transcription of the journal itself says 39 — and the regiment's own number is presumably how a 9 became a 0.",
-    lesson: "Go to the record. A number that matches something else in the sentence is a number to distrust.",
-    href: "/australia",
-  },
-];
 
-/* Errors inherited from the family tree and corrected here. Kept separate,
-   because they are somebody else's mistakes and the distinction matters. */
-const INHERITED = [
-  ["The Sneyds descend from Ralph Sneyd of Keele Hall", "Disproved from the Madeley register: the 1742 baptism names the father as William, and Ralph was eighteen.", "/how-far-back"],
-  ["Robert D'Arcy was born in 1751 in North Yorkshire", "The 1751 is arithmetic from an age on a burial register, and nothing places him in Yorkshire.", "/hornby"],
-  ["Major George Pitt D'Arcy married twice at Chatham in 1810", "He married Miss Ludlam in 1805 and Maria White in County Wicklow about 1819.", "/australia"],
-  ["Arthur Hartley Sneyd was a clerk, buried in France", "A typist, with no known grave.", "/finding-arthur"],
-  ["Vivian Ernest William Sneyd died between 1919 and 1921", "16 February 1920, registration 1920/B/31382.", "/great-war"],
-  ["Vivian Claude Sneyd was born at Rockhampton", "Windsor, Brisbane, on his own attestation paper.", "/great-war"],
-];
 ---
 <Base
   title="What This Archive Got Wrong"
   eyebrow="Its own errors, gathered"
-  dek="Nine mistakes this archive made and then corrected in public, with what caused each one. An archive that asks to be trusted about other people's errors has to be legible about its own.">
+  dek={`${nOwn} mistakes this archive made and then corrected in public, with what caused each one. An archive that asks to be trusted about other people's errors has to be legible about its own.`}>
 
   <section class="blk">
     <p class="lede">Every page here carries a confidence label, and the method only means anything if
