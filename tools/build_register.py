@@ -122,6 +122,28 @@ for n, says in [
 ]:
     rec(n, says, "record · FreeREG, parish register transcript", FR)
 
+
+# --- The 1841 census, St Paul, Bristol — the people in the house ------------
+CEN = "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol"
+CEN_L = "https://www.freecen.org.uk/"
+for n, says in [
+    ("Lyddya Sinegar", "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia"),
+    ("James Wakefield", "aged 35 · mason journeyman · born in Gloucestershire"),
+    ("Hannah Wakefield", "aged 35 · born outside the county — which is why she cannot be found in the Gloucestershire registers"),
+    ("Hiram Wakefield", "aged 4 · born in Gloucestershire"),
+    ("Matilda Webb", "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none"),
+    ("Aaron Wakefield", "aged 1 · born in Gloucestershire"),
+    ("Miriam Wakefield", "aged 1 · born in Gloucestershire"),
+]:
+    rec(n, says, CEN, CEN_L)
+
+rec("Miriam Wakefield", "birth registered June quarter 1840 · Bristol district · volume 11, page 183 — the only Miriam Wakefield registered in England between 1839 and 1843",
+    "record · FreeBMD, GRO birth index", "https://www.freebmd.org.uk/")
+rec("Joseph D'Arcy", "baptised Portsea St Mary, 19 March 1780 · father Robert · mother Jean",
+    "record · FreeREG, Portsea St Mary parish register", FR)
+rec("William Sneyd", "baptised Madeley All Saints, 12 September 1742 · father William Sneyd — and a William son of William buried there 29 September 1744",
+    "record · FreeREG, Madeley All Saints parish register", FR)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

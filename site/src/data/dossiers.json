@@ -245,6 +245,56 @@
 "slug": "lindsay-atkinson-d-arcy",
 "n": 1
 },
+"ephraim-wakefield": {
+"name": "Ephraim Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
+"source": "record · Queensland death index 1868/B/4544",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "ephraim-wakefield",
+"n": 1
+},
+"hannah-wakefield": {
+"name": "Hannah Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
+"source": "record · Queensland death index 1873/C/603",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+},
+{
+"says": "aged 35 · born outside the county — which is why she cannot be found in the Gloucestershire registers",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "hannah-wakefield",
+"n": 2
+},
+"richard-wakefield": {
+"name": "Richard Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "named as the father of James Wakefield on his 1857 Queensland death registration",
+"source": "record · Queensland death index 1857/B/135",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "richard-wakefield",
+"n": 1
+},
 "agnies-sainger": {
 "name": "Agnies Sainger",
 "surname": "SAINGER",
@@ -559,51 +609,6 @@
 "treeLink": "",
 "slug": "william-sainger",
 "n": 3
-},
-"ephraim-wakefield": {
-"name": "Ephraim Wakefield",
-"surname": "WAKEFIELD",
-"rows": [
-{
-"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
-"source": "record · Queensland death index 1868/B/4544",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "ephraim-wakefield",
-"n": 1
-},
-"hannah-wakefield": {
-"name": "Hannah Wakefield",
-"surname": "WAKEFIELD",
-"rows": [
-{
-"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
-"source": "record · Queensland death index 1873/C/603",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "hannah-wakefield",
-"n": 1
-},
-"richard-wakefield": {
-"name": "Richard Wakefield",
-"surname": "WAKEFIELD",
-"rows": [
-{
-"says": "named as the father of James Wakefield on his 1857 Queensland death registration",
-"source": "record · Queensland death index 1857/B/135",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "richard-wakefield",
-"n": 1
 },
 "r-kent": {
 "name": "R. Kent",
@@ -1100,6 +1105,21 @@
 "slug": "william-sanigaer",
 "n": 1
 },
+"lyddya-sinegar": {
+"name": "Lyddya Sinegar",
+"surname": "SINEGAR",
+"rows": [
+{
+"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "lyddya-sinegar",
+"n": 1
+},
 "john-sinneger": {
 "name": "John Sinneger",
 "surname": "SINNEGER",
@@ -1190,6 +1210,21 @@
 "slug": "george-walsh",
 "n": 1
 },
+"matilda-webb": {
+"name": "Matilda Webb",
+"surname": "WEBB",
+"rows": [
+{
+"says": "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "matilda-webb",
+"n": 1
+},
 "john-wells": {
 "name": "John Wells",
 "surname": "WELLS",
@@ -1237,9 +1272,9 @@
 }
 },
 "counts": {
-"named": 100,
-"withTreePage": 21,
-"ownPage": 79,
-"mentions": 127
+"named": 104,
+"withTreePage": 23,
+"ownPage": 81,
+"mentions": 137
 }
 }
