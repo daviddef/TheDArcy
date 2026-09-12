@@ -1,0 +1,138 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import c from "../data/chatham.json";
+---
+<Base
+  title="Chatham"
+  eyebrow={`${c.parish} · searched ${c.searched}`}
+  dek="The Royal Engineers lived at Chatham, and so did this family. Nobody had ever read its register. It holds a general's burial, his wife's, his brother officer's, and a christening eight days before a convict ship sailed.">
+
+  <section class="blk">
+    <p class="lede">This archive has said for years that <a href={u("/people/robert-d-arcy")}>Major-General
+    Robert D'Arcy</a> died at Chatham in 1827 — on the authority of <em>Connolly's Roll of Officers
+    of the Corps of Royal Engineers</em>, a printed book. It has said his wife
+    <a href={u("/people/jean-ward")}>Jean Ward</a> died there in 1823, on the authority of a family
+    tree. Neither statement had a parish record behind it.</p>
+
+    <p class="dek" style="margin-top:1rem">Chatham St Mary the Virgin holds
+    <strong>{c.rows.length} D'Arcy entries</strong>. Six of them are this family.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What the register holds</div>
+    <h2 style="margin-top:.4rem">Seven entries, in order</h2>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
+      {c.rows.map((r) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono small" style="color:var(--ink-3)">{r.date}</span>
+            <strong style="margin-left:.6rem">{r.who}</strong>
+            <span class="chip doc" style="margin-left:.5rem">{r.type}</span></div>
+          <p class="small" style="margin-top:.35rem;color:var(--ink-2)">{r.detail}
+            <span style="color:var(--ink-3)"> · {r.reg}</span></p>
+          <p class="small" style="margin-top:.35rem">{r.means}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The one that matters most</div>
+    <h2 style="margin-top:.4rem">“Robert D'Arcy, 76, Chatham”</h2>
+
+    <p class="lede">The family tree says Robert D'Arcy was born in <strong>1751</strong>. This archive
+    has spent months explaining that the 1751 is <em>arithmetic from an age on a burial register</em>
+    rather than a birth record, and should not be trusted as a date.
+    <a href={u("/hornby")}>The Hornby claim →</a></p>
+
+    <p style="margin-top:1.1rem"><strong>Here is that burial register.</strong> Entry 1571, 19 May
+    1827: <strong>Robert D'Arcy, age 76, of Chatham</strong>. Connolly gives his death as 13 May;
+    he was buried six days later, in the garrison town he had served for half a century.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>The correction stands, and it is now a better-founded correction.</strong> An age at
+      burial is still a <em>stated</em> age — supplied by whoever brought the body, rounded, and
+      frequently wrong by several years. It is not a birth record and it never becomes one. But the
+      archive has gone from repeating somebody's arithmetic to holding the document the arithmetic
+      was done on, which is the whole business of this site.
+      <span class="chip inf">an age, not a birth</span>
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">And it does not touch his parentage, which remains
+    unknown. A burial names nobody but the dead.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Eight days</div>
+    <h2 style="margin-top:.4rem">A christening, and then a convict ship</h2>
+
+    <p>The entry that brings the two halves of this archive together is a baptism.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>
+          <tr><td>Child</td><td><strong>Charlotte D'Arcy</strong></td></tr>
+          <tr><td>Born</td><td class="m">29 April 1825</td></tr>
+          <tr><td>Baptised</td><td class="m"><strong>31 March 1826</strong>, Chatham St Mary the Virgin</td></tr>
+          <tr><td><strong>Father</strong></td><td><strong>George Pitt D'Arcy</strong> — “<em>Bt: Major 39th Foot</em>”</td></tr>
+          <tr><td><strong>Mother</strong></td><td><strong>Maria</strong></td></tr>
+          <tr><td>Abode</td><td>Chatham</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>On 8 April 1826 — eight days later — the convict ship <em>England</em> embarked a
+      detachment of the 39th Foot commanded by “George Pitt D'Arcy, B. Major”</strong>, with thirty-nine
+      men, six women, seven children, and Mrs D'Arcy and family in the cabin. They christened the baby,
+      and then they sailed for New South Wales.
+      <a href={u("/australia")}>The surgeon's journal →</a>
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">The rank in the parish register — <em>Brevet Major, 39th
+    Foot</em> — is the same rank the ship's surgeon wrote down at sea a fortnight later. Two clerks,
+    two countries, one man, and neither of them had ever been set beside the other.
+    <span class="chip doc">documented</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">And two marriages resolved</div>
+    <h2 style="margin-top:.4rem">Mary, then Maria</h2>
+    <p>The archive has held that George Pitt D'Arcy married twice — a Miss Ludlam about 1805, and
+    Maria White in County Wicklow about 1819 — and that
+    <a href={u("/people/frederick-robert-d-arcy")}>Frederick Robert D'Arcy</a> the surveyor was a
+    <em>half</em>-brother to the Australian children. The register bears that out without being asked:</p>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th class="m">Baptised</th><th>Child</th><th>Father</th><th>Mother</th></tr></thead>
+        <tbody>
+          <tr><td class="m">2 Jul 1811</td><td>Frederick Robert D'Arcy</td><td>George</td><td><strong>Mary</strong></td></tr>
+          <tr><td class="m">31 Mar 1826</td><td>Charlotte D'Arcy</td><td>George Pitt, Bt Major 39th Foot</td><td><strong>Maria</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1rem">Two children of one man, fifteen years apart, by two
+    differently named mothers, in the same parish. <span class="chip doc">the half-brother, documented</span></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What Chatham changes</h2>
+    <ol class="dek">
+      <li style="margin-bottom:.5rem"><strong>Three deaths move from books to registers.</strong>
+      Robert's, Jean's and Constantine's — each previously carried on a printed roll or a family
+      tree, each now in the parish book.</li>
+      <li style="margin-bottom:.5rem"><strong>Jean Ward has an age at last</strong> — sixty-six in
+      March 1823, which puts her birth about 1756 against the tree's 1754. Her baptism is still out
+      of reach: <a href={u("/searched")}>South Leith is not transcribed</a>.</li>
+      <li style="margin-bottom:.5rem"><strong>A daughter's marriage, witnessed by a brother.</strong>
+      Margarett Maria Isabella married in 1806 with <strong>Joseph D'Arcy</strong> signing — the same
+      Joseph baptised at Portsea in 1780, <a href={u("/hornby")}>the first record of this family ever
+      found in England</a>.</li>
+      <li><strong>And Robert D'Arcy's parentage is exactly as unknown as it was this morning.</strong>
+      Everything found today names him as a husband, a father and a corpse. Nothing names him as a
+      son. <a href={u("/errands")}>The will that might →</a></li>
+    </ol>
+  </section>
+</Base>

@@ -334,7 +334,18 @@
 "title": "The Atkinsons"
 }
 ],
-"charlotte-d-arcy": [],
+"charlotte-d-arcy": [
+{
+"path": "/australia",
+"snippet": "…e. Found 13 September 2026 Eight days before the ship Chatham St Mary the Virgin baptised Charlotte D'Arcy on 31 March 1826 — born 29 April 1825, father entered as “George Pitt D'Arcy, Bt: Major 39th Foot” , mother Maria , abode Chatham…",
+"title": "Australia"
+},
+{
+"path": "/chatham",
+"snippet": "…arch 1823 puts her birth about 1756 — the tree says 1754. 29 Apr 1825 / bapt. 31 Mar 1826 Charlotte D'Arcy Baptism father GEORGE PITT D'ARCY, “Bt: Major 39th Foot” · mother MARIA · abode Chatham · Archdeacon's Transcript The Major himse…",
+"title": "Chatham"
+}
+],
 "charlotte-maria-d-arcy-1825": [],
 "charlotte-maria-d-arcy-1869": [],
 "charlotte-rossiter": [],
@@ -374,8 +385,13 @@
 },
 {
 "path": "/searched",
-"snippet": "…rs of the Corps of Royal Engineers found something 9 Sep 2026 Searched: Robert D'Arcy and Constantine D'Arcy Entry 203 — Robert's whole career, 2nd Lt 1776 to Major-General 1819, C.B., died Chatham 13 May 1827. Entry 335 — Constantine, di…",
+"snippet": "…'Arcy buried 19 May 1827, AGE 76. Jane D'Arcy — Jean Ward — buried 21 March 1823, AGE 66. Constantine D'Arcy buried 9 May 1805, entered as “Lt in the Royal Engineers”. Margarett Maria Isabella D'Arcy married by licence in 1806, witnessed…",
 "title": "What Has Been Read"
+},
+{
+"path": "/chatham",
+"snippet": "…. Six of them are this family. What the register holds Seven entries, in order 9 May 1805 Constantine D'Arcy Burial noted in the register as “Lt in the Royal Engineers” · Parish Register Connolly's Roll says he died at Chatham on 6 May 18…",
+"title": "Chatham"
 },
 {
 "path": "/sources",
@@ -747,6 +763,11 @@
 "path": "/brisbane",
 "snippet": "…Memorial Gardens, Sumner Audrey \"Dell\" Murdoch 2022 Centenary Memorial Gardens, Brisbane Frederick Robert D'Arcy (the surveyor, half-brother of the line) 1875 Toowong Cemetery Dutton Park, South Brisbane, Nundah, Lutwyche, Toowong, Mt Thompso…",
 "title": "Brisbane"
+},
+{
+"path": "/chatham",
+"snippet": "…ve. The witness is her brother Joseph — the child baptised at Portsea in 1780. 2 Jul 1811 Frederick Robert D'Arcy Baptism father GEORGE · mother MARY · Parish Register Not Robert's son but George's — by his first wife. The surveyor, and the ha…",
+"title": "Chatham"
 }
 ],
 "friederike-susanna-frederica-von-schonburg": [
@@ -820,8 +841,13 @@
 "title": "The Papers"
 },
 {
+"path": "/changes",
+"snippet": "…. Found Jean Ward's burial, at sixty-six, and Constantine's, entered with his rank. Found George Pitt D'Arcy in a parish register as “Bt: Major 39th Foot”, christening a daughter eight days before the England sailed. Searched six more cou…",
+"title": "What changed"
+},
+{
 "path": "/australia",
-"snippet": "…imes. 8 April 1826 \"Received on board a detachment of the 39th regt. of foot commanded by George Pitt D'Arcy, B. Major , consisting of 39 men (including 2 sergeants and 3 corporals), 6 women and 7 children . Victualled on board and found…",
+"snippet": "…irgin baptised Charlotte D'Arcy on 31 March 1826 — born 29 April 1825, father entered as “George Pitt D'Arcy, Bt: Major 39th Foot” , mother Maria , abode Chatham. On 8 April 1826 , eight days later, the surgeon of the convict ship England…",
 "title": "Australia"
 },
 {
@@ -841,7 +867,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…elivered 74 years later and restoring one the family had lost — that he served in France. George Pitt D'Arcy's 1849 obituary and the verdict “gout which had flown to the head”. The 1926 insolvency and the 1927 fraudulent-preference action…",
+"snippet": "…married by licence in 1806, witnessed by her brother Joseph. And Charlotte, daughter of “George Pitt D'Arcy, Bt: Major 39th Foot”, born 29 April 1825 and baptised eight days before the England sailed. → FreeREG — Hanley St John the Evang…",
 "title": "What Has Been Read"
 },
 {
@@ -853,6 +879,11 @@
 "path": "/brisbane",
 "snippet": "…stepped off the Flying Cloud at Moreton Bay. Seven children. Buried at Dutton Park. 1864 George Pitt D'Arcy · 1864–1931 The railway clerk Named for the major of the 39th Foot, and the first of the line born in Brisbane. Chief Clerk in th…",
 "title": "Brisbane"
+},
+{
+"path": "/chatham",
+"snippet": "…otte D'Arcy Born 29 April 1825 Baptised 31 March 1826 , Chatham St Mary the Virgin Father George Pitt D'Arcy — “ Bt: Major 39th Foot ” Mother Maria Abode Chatham On 8 April 1826 — eight days later — the convict ship England embarked a det…",
+"title": "Chatham"
 },
 {
 "path": "/hornby",
@@ -1184,7 +1215,18 @@
 "title": "The Atkinsons"
 }
 ],
-"jane-d-arcy": [],
+"jane-d-arcy": [
+{
+"path": "/searched",
+"snippet": "…material this archive has ever had on the line. Robert D'Arcy buried 19 May 1827, AGE 76. Jane D'Arcy — Jean Ward — buried 21 March 1823, AGE 66. Constantine D'Arcy buried 9 May 1805, entered as “Lt in the Royal Engineers”. Margare…",
+"title": "What Has Been Read"
+},
+{
+"path": "/chatham",
+"snippet": "…and the half-brother the archive has written about without a record for him. 21 Mar 1823 Jane D'Arcy Burial AGE 66 · abode Chatham · Parish Register Jean Ward, dead at sixty-six. An age of 66 in March 1823 puts her birth about 175…",
+"title": "Chatham"
+}
+],
 "janet-murdoch": [
 {
 "path": "/murdoch",
@@ -1209,7 +1251,7 @@
 "jean-ward": [
 {
 "path": "/changes",
-"snippet": "…6 Portsea, Madeley, and three counties that hold nothing What it found. Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage is no longer…",
+"snippet": "…ial: age 76 — the primary source behind the tree's “1751”, seen for the first time. Found Jean Ward's burial, at sixty-six, and Constantine's, entered with his rank. Found George Pitt D'Arcy in a parish register as “Bt: Major 39t…",
 "title": "What changed"
 },
 {
@@ -1224,8 +1266,13 @@
 },
 {
 "path": "/searched",
-"snippet": "…e, D'Arcy, 1775–1810 found something 13 Sep 2026 Searched: Any trace of Robert D'Arcy and Jean Ward at Portsea, where the tree says they married on 21 June 1779 FOUND, and it is the first record of Robert D'Arcy in an English par…",
+"snippet": "…archive has ever had on the line. Robert D'Arcy buried 19 May 1827, AGE 76. Jane D'Arcy — Jean Ward — buried 21 March 1823, AGE 66. Constantine D'Arcy buried 9 May 1805, entered as “Lt in the Royal Engineers”. Margarett Maria Isa…",
 "title": "What Has Been Read"
+},
+{
+"path": "/chatham",
+"snippet": "…s Roll of Officers of the Corps of Royal Engineers , a printed book. It has said his wife Jean Ward died there in 1823, on the authority of a family tree. Neither statement had a parish record behind it. Chatham St Mary the Virgi…",
+"title": "Chatham"
 },
 {
 "path": "/sources",
@@ -1373,6 +1420,11 @@
 "path": "/searched",
 "snippet": "…p's transcripts 1545–1903 covers it FreeREG Portsea St Mary, Hampshire That one record is Joseph D'Arcy's baptism, 19 March 1780, naming Robert and Jean. The 1779 marriage itself is not in the transcription. → one D'Arcy record in th…",
 "title": "What Has Been Read"
+},
+{
+"path": "/chatham",
+"snippet": "…aughter's marriage, witnessed by a brother. Margarett Maria Isabella married in 1806 with Joseph D'Arcy signing — the same Joseph baptised at Portsea in 1780, the first record of this family ever found in England . And Robert D'Arcy'…",
+"title": "Chatham"
 },
 {
 "path": "/hornby",
@@ -1978,7 +2030,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…. 13 September 2026 Portsea, Madeley, and three counties that hold nothing What it found. Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage…",
+"snippet": "…nd his son's rank — none of it ever looked at. Searched Chatham St Mary the Virgin, where Robert D'Arcy served and died, and which nobody had ever tried. Found seven D'Arcy records including three burials the archive has only ever kn…",
 "title": "What changed"
 },
 {
@@ -2018,8 +2070,13 @@
 },
 {
 "path": "/searched",
-"snippet": "…FreeREG — Hampshire, D'Arcy, 1775–1810 found something 13 Sep 2026 Searched: Any trace of Robert D'Arcy and Jean Ward at Portsea, where the tree says they married on 21 June 1779 FOUND, and it is the first record of Robert D'Arcy in…",
+"snippet": "…eeREG — Chatham St Mary the Virgin, Kent found something 13 Sep 2026 Searched: The parish Robert D'Arcy served in for decades and died in, never searched Seven D'Arcy records, and they are the best material this archive has ever had…",
 "title": "What Has Been Read"
+},
+{
+"path": "/chatham",
+"snippet": "…ght days before a convict ship sailed. This archive has said for years that Major-General Robert D'Arcy died at Chatham in 1827 — on the authority of Connolly's Roll of Officers of the Corps of Royal Engineers , a printed book. It ha…",
+"title": "Chatham"
 },
 {
 "path": "/sources",

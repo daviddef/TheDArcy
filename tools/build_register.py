@@ -170,6 +170,22 @@ for n, says in [
 ]:
     rec(n, says, GH, GH_L)
 
+
+# --- Chatham St Mary the Virgin, Kent ---------------------------------------
+CH = "record · FreeREG, Chatham St Mary the Virgin"
+for n, says in [
+    ("Robert D'Arcy", "buried Chatham St Mary the Virgin, 19 May 1827, entry 1571 · AGE 76 · abode Chatham — the register the tree's 1751 has always rested on"),
+    ("Jean Ward", "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham"),
+    ("Constantine D'Arcy", "buried Chatham, 9 May 1805 · entered as Lt in the Royal Engineers"),
+    ("Margarett Maria Isabella D'Arcy", "spinster · married John Maddock Jones Esq. of Penybryn, Ruabon, Denbighshire · Chatham, 23 October 1806, by licence · witness Joseph D'Arcy"),
+    ("John Maddock Jones", "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806"),
+    ("Richd Lovett", "second witness to the D'Arcy-Jones marriage, Chatham, 23 October 1806"),
+    ("Frederick Robert D'Arcy", "baptised Chatham, 2 July 1811 · father George · mother MARY — the first wife"),
+    ("Charlotte D'Arcy", "born 29 April 1825 · baptised Chatham 31 March 1826 · father GEORGE PITT D'ARCY, Bt: Major 39th Foot · mother MARIA · eight days before the England sailed"),
+    ("George Pitt D'Arcy", "named in the Chatham register 31 March 1826 as Bt: Major 39th Foot, of Chatham"),
+]:
+    rec(n, says, CH, FR)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",
@@ -387,6 +403,8 @@ REL = [
     ("Vivian Ernest William Sneyd", "Thomas George Sneyd", "NAA B2455 attestation, next of kin"),
     ("Arthur Hartley Sneyd", "Miriam Wakefield", "NAA B2455 8088453, next of kin"),
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
+    ("Charlotte Maria D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 31 Mar 1826"),
+    ("Frederick Robert D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 2 Jul 1811"),
     ("Samuel Charles Sneyd|1810", "Samuel Sneyd", "baptism, Hanley, 28 Apr 1811"),
     ("William Sneyd|1746", "Mary Blackbourne", "marriage, Madeley, 27 Mar 1769"),
     ("Miriam Wakefield", "William Hartley Sneyd", "Qld marriage reg. 1859/B/255"),

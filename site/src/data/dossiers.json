@@ -260,6 +260,21 @@
 "slug": "lindsay-atkinson-d-arcy",
 "n": 1
 },
+"margarett-maria-isabella-d-arcy": {
+"name": "Margarett Maria Isabella D'Arcy",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "spinster · married John Maddock Jones Esq. of Penybryn, Ruabon, Denbighshire · Chatham, 23 October 1806, by licence · witness Joseph D'Arcy",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "margarett-maria-isabella-d-arcy",
+"n": 1
+},
 "ephraim-wakefield": {
 "name": "Ephraim Wakefield",
 "surname": "WAKEFIELD",
@@ -665,6 +680,21 @@
 "slug": "r-kent",
 "n": 1
 },
+"john-maddock-jones": {
+"name": "John Maddock Jones",
+"surname": "JONES",
+"rows": [
+{
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-maddock-jones",
+"n": 1
+},
 "thomas-sinnegar": {
 "name": "Thomas Sinnegar",
 "surname": "SINNEGAR",
@@ -963,6 +993,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "a-lee",
+"n": 1
+},
+"richd-lovett": {
+"name": "Richd Lovett",
+"surname": "LOVETT",
+"rows": [
+{
+"says": "second witness to the D'Arcy-Jones marriage, Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "richd-lovett",
 "n": 1
 },
 "vivian-maynard": {
@@ -1312,9 +1357,9 @@
 }
 },
 "counts": {
-"named": 108,
-"withTreePage": 25,
-"ownPage": 83,
-"mentions": 150
+"named": 114,
+"withTreePage": 28,
+"ownPage": 86,
+"mentions": 159
 }
 }

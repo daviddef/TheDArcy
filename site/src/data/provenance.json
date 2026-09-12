@@ -318,6 +318,26 @@
 "line": true,
 "spine": true
 },
+"frederick-robert-d-arcy": {
+"rel": {
+"george-pitt-d-arcy-1783": [
+"baptism, Chatham, 2 Jul 1811"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"george-pitt-d-arcy-1783": {
+"rel": {
+"frederick-robert-d-arcy": [
+"baptism, Chatham, 2 Jul 1811"
+]
+},
+"graft": null,
+"line": true,
+"spine": true
+},
 "samuel-sneyd": {
 "rel": {
 "samuel-charles-sneyd-1810": [
@@ -1262,12 +1282,6 @@
 "line": false,
 "spine": false
 },
-"george-pitt-d-arcy-1783": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": true
-},
 "emma-penelope-sneyd": {
 "rel": {},
 "graft": null,
@@ -1425,12 +1439,6 @@
 "spine": false
 },
 "walter-sneyd-1809": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"frederick-robert-d-arcy": {
 "rel": {},
 "graft": null,
 "line": false,

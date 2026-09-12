@@ -1,11 +1,11 @@
 {
-"entries": 623,
-"distinct": 507,
-"records": 150,
+"entries": 632,
+"distinct": 510,
+"records": 159,
 "tree": 473,
 "grafted": 98,
-"linked": 623,
-"surnames": 170,
+"linked": 632,
+"surnames": 171,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1121,13 +1121,41 @@
 },
 {
 "surname": "D'ARCY",
-"n": 75,
+"n": 81,
 "rows": [
+{
+"name": "Charlotte D'Arcy",
+"says": "born 29 April 1825 · baptised Chatham 31 March 1826 · father GEORGE PITT D'ARCY, Bt: Major 39th Foot · mother MARIA · eight days before the England sailed",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "buried Chatham, 9 May 1805 · entered as Lt in the Royal Engineers",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
 {
 "name": "Constantine D'Arcy",
 "says": "entry 335 · “Died at Chatham, 6 5 1805” · christened St Michael, Barbados, 18 Feb 1786",
 "source": "record · Connolly, Roll of Officers of the Corps of Royal Engineers",
 "link": "https://archive.org/",
+"kind": "record"
+},
+{
+"name": "Frederick Robert D'Arcy",
+"says": "baptised Chatham, 2 July 1811 · father George · mother MARY — the first wife",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "named in the Chatham register 31 March 1826 as Bt: Major 39th Foot, of Chatham",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
 "kind": "record"
 },
 {
@@ -1163,6 +1191,20 @@
 "says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
 "source": "record · Trove, Australian newspapers",
 "link": "https://nla.gov.au/nla.news-article37013266",
+"kind": "record"
+},
+{
+"name": "Margarett Maria Isabella D'Arcy",
+"says": "spinster · married John Maddock Jones Esq. of Penybryn, Ruabon, Denbighshire · Chatham, 23 October 1806, by licence · witness Joseph D'Arcy",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "buried Chatham St Mary the Virgin, 19 May 1827, entry 1571 · AGE 76 · abode Chatham — the register the tree's 1751 has always rested on",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
 "kind": "record"
 },
 {
@@ -2934,6 +2976,47 @@
 ]
 },
 {
+"surname": "WARD",
+"n": 5,
+"rows": [
+{
+"name": "Jean Ward",
+"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Frances Ward",
+"says": "1656–1698 · Baden-Wuerttemberg, Germany",
+"source": "family tree · above the Keele graft",
+"link": "/people/frances-ward",
+"kind": "tree"
+},
+{
+"name": "Jean Ward",
+"says": "1754–1823 · South Leith, Midlothian, Scotland",
+"source": "family tree · direct line",
+"link": "/people/jean-ward",
+"kind": "tree"
+},
+{
+"name": "Joseph Ward",
+"says": "b. 1725",
+"source": "family tree · direct line",
+"link": "/people/joseph-ward",
+"kind": "tree"
+},
+{
+"name": "William Ward",
+"says": "b. 1700",
+"source": "family tree · direct line",
+"link": "/people/william-ward",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "ANNECCHINO",
 "n": 4,
 "rows": [
@@ -3104,40 +3187,6 @@
 ]
 },
 {
-"surname": "WARD",
-"n": 4,
-"rows": [
-{
-"name": "Frances Ward",
-"says": "1656–1698 · Baden-Wuerttemberg, Germany",
-"source": "family tree · above the Keele graft",
-"link": "/people/frances-ward",
-"kind": "tree"
-},
-{
-"name": "Jean Ward",
-"says": "1754–1823 · South Leith, Midlothian, Scotland",
-"source": "family tree · direct line",
-"link": "/people/jean-ward",
-"kind": "tree"
-},
-{
-"name": "Joseph Ward",
-"says": "b. 1725",
-"source": "family tree · direct line",
-"link": "/people/joseph-ward",
-"kind": "tree"
-},
-{
-"name": "William Ward",
-"says": "b. 1700",
-"source": "family tree · direct line",
-"link": "/people/william-ward",
-"kind": "tree"
-}
-]
-},
-{
 "surname": "—",
 "n": 4,
 "rows": [
@@ -3275,6 +3324,33 @@
 "says": "no dates, no place — a name and a position in the tree",
 "source": "family tree · above the Hornby graft",
 "link": "/people/frederick-i-of-denmark",
+"kind": "tree"
+}
+]
+},
+{
+"surname": "JONES",
+"n": 3,
+"rows": [
+{
+"name": "John Maddock Jones",
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Lydia Jones",
+"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/lydia-jones",
+"kind": "tree"
+},
+{
+"name": "William Jones",
+"says": "b. 1722 · Brimpsfield, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-jones",
 "kind": "tree"
 }
 ]
@@ -3597,26 +3673,6 @@
 "says": "1700–1775 · Keele, Staffordshire, England",
 "source": "family tree · above the Keele graft",
 "link": "/people/anne-maria-holford",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "JONES",
-"n": 2,
-"rows": [
-{
-"name": "Lydia Jones",
-"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/lydia-jones",
-"kind": "tree"
-},
-{
-"name": "William Jones",
-"says": "b. 1722 · Brimpsfield, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-jones",
 "kind": "tree"
 }
 ]
@@ -4579,6 +4635,19 @@
 "source": "family tree · direct line",
 "link": "/people/mary-love",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "LOVETT",
+"n": 1,
+"rows": [
+{
+"name": "Richd Lovett",
+"says": "second witness to the D'Arcy-Jones marriage, Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
 }
 ]
 },

@@ -1,9 +1,22 @@
 {
  "title": "What changed",
- "eyebrow": "9 passes · 49 changes",
+ "eyebrow": "10 passes · 55 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "Chatham — the parish the Corps lived in",
+   "did": [
+    "Searched Chatham St Mary the Virgin, where Robert D'Arcy served and died, and which nobody had ever tried.",
+    "Found seven D'Arcy records including three burials the archive has only ever known second-hand.",
+    "Read Robert's burial: age 76 — the primary source behind the tree's “1751”, seen for the first time.",
+    "Found Jean Ward's burial, at sixty-six, and Constantine's, entered with his rank.",
+    "Found George Pitt D'Arcy in a parish register as “Bt: Major 39th Foot”, christening a daughter eight days before the England sailed.",
+    "Searched six more counties around Bristol for Hannah Saniger, with controls. Nothing."
+   ],
+   "found": "Chatham holds the D'Arcy family's whole English ending: a general, his wife, his brother officer, his daughter's marriage and his son's rank — none of it ever looked at."
+  },
   {
    "when": "13 September 2026",
    "title": "The ship: General Hewitt, Brisbane, 16 December 1854",
