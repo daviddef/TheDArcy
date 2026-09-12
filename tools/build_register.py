@@ -190,6 +190,21 @@ for n, says in [
 ]:
     rec(n, says, CH, FR)
 
+
+# --- The London Gazette, and the Birch household ----------------------------
+LG = "https://www.thegazette.co.uk/"
+rec("Robert D'Arcy", "London Gazette, 19 July 1813, issue 16755 page 1431 — “Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh”, in an Office of Ordnance list of Royal Engineers promotions. Ten Gazette notices name him between 1793 and 1819.",
+    "record · The London Gazette, issue 16755 p.1431", LG)
+QMAR2 = "Queensland death index"
+rec("Margaret Birch", "married Hiram Wakefield 29 March 1861 · her own death registration 1898/B/30356 names her parents as JOHN BIRCH and ANNIE REEVES",
+    "record · Queensland death index 1898/B/30356", QBDM_L)
+rec("John Birch", "named with Annie Reeves as the parents of Margaret Birch, who married Hiram Wakefield",
+    "record · Queensland death index 1898/B/30356", QBDM_L)
+rec("Annie Reeves", "named with John Birch as the parents of Margaret Birch, who married Hiram Wakefield",
+    "record · Queensland death index 1898/B/30356", QBDM_L)
+rec("Elizabeth Ann Birch", "married Aaron Wakefield 11 July 1861 — sister to Margaret, who married his brother Hiram four months earlier",
+    "record · Queensland marriage index 1861/B/142", QBDM_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",
@@ -412,6 +427,8 @@ REL = [
     ("Samuel Sneyd|1769", "William Sneyd|1746", "baptism, Madeley, 4 Jun 1781; marriage, Madeley, 27 Mar 1769"),
     ("Samuel Charles Sneyd|1810", "Samuel Sneyd", "baptism, Hanley, 28 Apr 1811"),
     ("William Sneyd|1746", "Mary Blackbourne", "marriage, Madeley, 27 Mar 1769"),
+    ("Hiram Wakefield", "Margaret Birch", "Qld marriage reg. 1861/B/129"),
+    ("Aaron Wakefield", "Elizabeth Ann Birch", "Qld marriage reg. 1861/B/142"),
     ("Miriam Wakefield", "William Hartley Sneyd", "Qld marriage reg. 1859/B/255"),
     ("Hiram Wakefield", "James Wakefield", "Qld death reg. 1905/B/5782"),
     ("Aaron Wakefield", "James Wakefield", "Qld death reg. 1896/C/3402"),

@@ -9,6 +9,46 @@
  ],
  "rows": [
   {
+   "src": "The London Gazette, 1770–1840",
+   "what": "Robert D'Arcy's career, from the government's own notices rather than a printed roll",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Ten notices name him between 1793 and 1819, each citable by issue and page. The one read in full: 19 July 1813, issue 16755, page 1431 — “Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh”, in an Office of Ordnance list of Royal Engineers promotions. The archive has cited Connolly's Roll for this career since it was built; the Gazette is the source Connolly was compiled from.",
+   "href": "/hornby"
+  },
+  {
+   "src": "Queensland BDM — the Birch sisters",
+   "what": "Who Hiram and Aaron Wakefield married four months apart in 1861",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Margaret Birch's own death registration, 1898/B/30356, names her parents as JOHN BIRCH and ANNIE REEVES — so the two brothers married two daughters of one household. Nine of their children are traceable in the same index: four to Hiram and Margaret, five to Aaron and Elizabeth Ann.",
+   "href": "/general-hewitt"
+  },
+  {
+   "src": "NSW Registry of Births, Deaths and Marriages",
+   "what": "The whole D'Arcy side, who were New South Welshmen and not Queenslanders",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Cloudflare bot verification, which this archive will not attempt to defeat. It is the single largest untouched index for this family: George Pitt D'Arcy died at Parramatta in 1849, George Lindsay was born there in 1829, and Charlotte crossed as an infant. Queensland's equivalent index gave this archive sixty registrations and five spellings of Saniger. A person with a browser can run it in ten minutes.",
+   "href": "/errands"
+  },
+  {
+   "src": "Museums of History NSW — a blocked entry corrected",
+   "what": "Whether NSW State Archives is still unreachable",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "It is not. This archive recorded NSW State Archives as “migrated to mhnsw.au, old URLs dead”. mhnsw.au is live and the State Archives catalogue is at search.records.nsw.gov.au, a Primo instance. Its API needs a session so it could not be queried here, but the institution is no longer between houses and the entry was out of date.",
+   "href": "/searched"
+  },
+  {
+   "src": "Trove — the General Hewitt",
+   "what": "Newspaper coverage of the voyage the family arrived on",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Trove's search will not render in this environment — a limitation already recorded in the method notes. The arrival date was confirmed independently from other sources, and the Moreton Bay Courier's shipping column for 23 December 1854 was read directly by rendition: it lists arrivals from 19 to 22 December and does not reach back to the 16th. The issue that would carry it has not been located.",
+   "href": "/general-hewitt"
+  },
+  {
    "src": "FreeREG — Hampshire and Kent, every D'Arcy",
    "what": "The other eight children the tree gives Robert D'Arcy and Jean Ward",
    "when": "13 Sep 2026",

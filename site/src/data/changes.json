@@ -1,9 +1,21 @@
 {
  "title": "What changed",
- "eyebrow": "11 passes · 64 changes",
+ "eyebrow": "12 passes · 69 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "The Gazette, the Birches, and a jurisdiction still shut",
+   "did": [
+    "Found ten London Gazette notices naming Robert D'Arcy between 1793 and 1819, and read one in full.",
+    "Identified the Birch household: Margaret and Elizabeth Ann were daughters of John Birch and Annie Reeves.",
+    "Traced nine Wakefield grandchildren through the Queensland index.",
+    "Tried the NSW BDM index and was stopped by a bot check — recorded as an errand rather than a null.",
+    "Corrected a stale blocked entry: Museums of History NSW is live and the State Archives catalogue is reachable."
+   ],
+   "found": "Robert D'Arcy's promotions are in the government's own gazette, issue and page, where this archive has been citing a printed roll compiled from them."
+  },
   {
    "when": "13 September 2026",
    "title": "The Sneyd chain closes, and four other lines tested",

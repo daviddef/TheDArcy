@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "10 jobs a person can do and this archive cannot",
+ "eyebrow": "11 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -16,6 +16,16 @@
   },
   {
    "n": 2,
+   "what": "Run the NSW BDM historical index for the D'Arcys",
+   "where": "familyhistory.bdm.nsw.gov.au — free to search",
+   "cost": "free, ten minutes, but behind a bot check",
+   "settles": "The entire D'Arcy side were New South Welshmen. George Pitt D'Arcy died at Parramatta in 1849, George Lindsay was born there in 1829, Frederick Robert and Charlotte both crossed. NSW death registrations name the parents of the deceased — which is how Queensland's index settled the Saniger name five times over. This is the largest free index this archive has never searched, and it is shut to an automated browser.",
+   "why": "THE BIGGEST FREE THING LEFT",
+   "href": "/chatham",
+   "file": "blocked by Cloudflare, 13 September 2026"
+  },
+  {
+   "n": 3,
    "what": "PROB 11/1728/64 — the will of Major-General Robert D'Arcy",
    "where": "The National Archives, Kew",
    "cost": "about £3.50, digitised, download today",
@@ -25,7 +35,7 @@
    "file": "requests/tna-prob11-darcy-will.md"
   },
   {
-   "n": 3,
+   "n": 4,
    "what": "Enquiry to the Royal Engineers Museum, Chatham",
    "where": "The Corps' own archive",
    "cost": "£25 enquiry service",
@@ -35,7 +45,7 @@
    "file": "notes/letters/2026-09-re-museum-chatham.md"
   },
   {
-   "n": 4,
+   "n": 5,
    "what": "Three Queensland death certificates",
    "where": "Queensland Registry of Births, Deaths and Marriages",
    "cost": "a fee per certificate",
@@ -45,7 +55,7 @@
    "file": "requests/qld-bdm-certificates.md"
   },
   {
-   "n": 5,
+   "n": 6,
    "what": "Two Chatham burials",
    "where": "Medway Archives",
    "cost": "an enquiry",
@@ -55,7 +65,7 @@
    "file": "notes/letters/2026-09-medway-archives.md"
   },
   {
-   "n": 6,
+   "n": 7,
    "what": "Where Arthur Hartley Sneyd is commemorated",
    "where": "Commonwealth War Graves Commission",
    "cost": "free, two minutes",
@@ -65,7 +75,7 @@
    "file": "requests/cwgc-arthur-hartley-sneyd.md"
   },
   {
-   "n": 7,
+   "n": 8,
    "what": "The generation above Francis Murdoch",
    "where": "ScotlandsPeople",
    "cost": "credits, a login",
@@ -75,7 +85,7 @@
    "file": "requests/scotlandspeople-murdoch.md"
   },
   {
-   "n": 8,
+   "n": 9,
    "what": "Richard Atkinson and Anne, of Limerick",
    "where": "RootsIreland",
    "cost": "a subscription",
@@ -85,7 +95,7 @@
    "file": "requests/rootsireland-atkinson-limerick.md"
   },
   {
-   "n": 9,
+   "n": 10,
    "what": "Nine Queensland State Archives items",
    "where": "Queensland State Archives, Runcorn",
    "cost": "copy fees, none digitised",
@@ -95,7 +105,7 @@
    "file": "requests/qsa-order-list.md"
   },
   {
-   "n": 10,
+   "n": 11,
    "what": "Which Ordnance series could carry a Royal Engineers commission of 1776",
    "where": "The National Archives, Kew",
    "cost": "an enquiry",

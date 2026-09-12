@@ -680,6 +680,51 @@
 "slug": "r-kent",
 "n": 1
 },
+"elizabeth-ann-birch": {
+"name": "Elizabeth Ann Birch",
+"surname": "BIRCH",
+"rows": [
+{
+"says": "married Aaron Wakefield 11 July 1861 — sister to Margaret, who married his brother Hiram four months earlier",
+"source": "record · Queensland marriage index 1861/B/142",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "elizabeth-ann-birch",
+"n": 1
+},
+"john-birch": {
+"name": "John Birch",
+"surname": "BIRCH",
+"rows": [
+{
+"says": "named with Annie Reeves as the parents of Margaret Birch, who married Hiram Wakefield",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-birch",
+"n": 1
+},
+"margaret-birch": {
+"name": "Margaret Birch",
+"surname": "BIRCH",
+"rows": [
+{
+"says": "married Hiram Wakefield 29 March 1861 · her own death registration 1898/B/30356 names her parents as JOHN BIRCH and ANNIE REEVES",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "margaret-birch",
+"n": 1
+},
 "john-maddock-jones": {
 "name": "John Maddock Jones",
 "surname": "JONES",
@@ -1145,6 +1190,21 @@
 "slug": "john-quin",
 "n": 1
 },
+"annie-reeves": {
+"name": "Annie Reeves",
+"surname": "REEVES",
+"rows": [
+{
+"says": "named with John Birch as the parents of Margaret Birch, who married Hiram Wakefield",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "annie-reeves",
+"n": 1
+},
 "p-r-rhead": {
 "name": "P. R. Rhead",
 "surname": "RHEAD",
@@ -1357,9 +1417,9 @@
 }
 },
 "counts": {
-"named": 114,
+"named": 118,
 "withTreePage": 28,
-"ownPage": 86,
-"mentions": 161
+"ownPage": 90,
+"mentions": 166
 }
 }

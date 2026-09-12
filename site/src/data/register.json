@@ -1,11 +1,11 @@
 {
-"entries": 634,
-"distinct": 510,
-"records": 161,
+"entries": 639,
+"distinct": 514,
+"records": 166,
 "tree": 473,
 "grafted": 98,
-"linked": 634,
-"surnames": 171,
+"linked": 639,
+"surnames": 173,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1135,7 +1135,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 81,
+"n": 82,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1219,6 +1219,13 @@
 "says": "buried Chatham St Mary the Virgin, 19 May 1827, entry 1571 · AGE 76 · abode Chatham — the register the tree's 1751 has always rested on",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "London Gazette, 19 July 1813, issue 16755 page 1431 — “Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh”, in an Office of Ordnance list of Royal Engineers promotions. Ten Gazette notices name him between 1793 and 1819.",
+"source": "record · The London Gazette, issue 16755 p.1431",
+"link": "https://www.thegazette.co.uk/",
 "kind": "record"
 },
 {
@@ -3235,6 +3242,33 @@
 ]
 },
 {
+"surname": "BIRCH",
+"n": 3,
+"rows": [
+{
+"name": "Elizabeth Ann Birch",
+"says": "married Aaron Wakefield 11 July 1861 — sister to Margaret, who married his brother Hiram four months earlier",
+"source": "record · Queensland marriage index 1861/B/142",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "John Birch",
+"says": "named with Annie Reeves as the parents of Margaret Birch, who married Hiram Wakefield",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Margaret Birch",
+"says": "married Hiram Wakefield 29 March 1861 · her own death registration 1898/B/30356 names her parents as JOHN BIRCH and ANNIE REEVES",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "BLACKBOURNE",
 "n": 3,
 "rows": [
@@ -4895,6 +4929,19 @@
 "says": "convict · accused of giving false evidence",
 "source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
 "link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733",
+"kind": "record"
+}
+]
+},
+{
+"surname": "REEVES",
+"n": 1,
+"rows": [
+{
+"name": "Annie Reeves",
+"says": "named with John Birch as the parents of Margaret Birch, who married Hiram Wakefield",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 }
 ]
