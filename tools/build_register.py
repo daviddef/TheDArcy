@@ -311,6 +311,9 @@ REL = [
     ("Vivian Ernest William Sneyd", "Thomas George Sneyd", "NAA B2455 attestation, next of kin"),
     ("Arthur Hartley Sneyd", "Miriam Wakefield", "NAA B2455 8088453, next of kin"),
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
+    ("Joseph D'Arcy", "Robert D'Arcy", "baptism, Portsea St Mary, 19 Mar 1780"),
+    ("Joseph D'Arcy", "Jean Ward", "baptism, Portsea St Mary, 19 Mar 1780"),
+    ("Robert D'Arcy", "Jean Ward", "named together as parents, Portsea, 19 Mar 1780"),
     # Deliberately NOT here: George Pitt D'Arcy to Robert D'Arcy. Connolly's
     # Roll documents both men's whole careers and records no parentage for
     # either — see /hornby. The tree asserts the link; no record this archive

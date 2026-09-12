@@ -1,9 +1,20 @@
 {
  "title": "What changed",
- "eyebrow": "5 passes · 25 changes",
+ "eyebrow": "6 passes · 29 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "Portsea, Madeley, and three counties that hold nothing",
+   "did": [
+    "Found Joseph D'Arcy baptised at Portsea St Mary on 19 March 1780, father Robert, mother Jean — the first record of Robert D'Arcy in an English parish register this archive has ever had.",
+    "Read the Madeley baptism that killed the Keele graft, and then found a William son of William Sneyd buried there in September 1744.",
+    "Established that FreeREG holds nothing for County Limerick, nothing for South Leith and nothing for St Quivox — three of this archive's oldest dead ends are dead ends in the database, not in the record.",
+    "Tested and rejected the Berkley-in-Somerset hypothesis for Hannah Saniger."
+   ],
+   "found": "Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage is no longer a claim."
+  },
   {
    "when": "13 September 2026",
    "title": "The Saniger chain, tested at last — and it breaks",

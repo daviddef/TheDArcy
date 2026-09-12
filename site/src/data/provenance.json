@@ -279,6 +279,45 @@
 "line": true,
 "spine": true
 },
+"joseph-d-arcy": {
+"rel": {
+"robert-d-arcy": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+],
+"jean-ward": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"robert-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+],
+"jean-ward": [
+"named together as parents, Portsea, 19 Mar 1780"
+]
+},
+"graft": null,
+"line": true,
+"spine": true
+},
+"jean-ward": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+],
+"robert-d-arcy": [
+"named together as parents, Portsea, 19 Mar 1780"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
 "heinrich-vi-von-wildeshausen": {
 "rel": {},
 "graft": "Hornby",
@@ -957,12 +996,6 @@
 "line": false,
 "spine": false
 },
-"robert-d-arcy": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": true
-},
 "walter-sneyd-1752": {
 "rel": {},
 "graft": null,
@@ -991,12 +1024,6 @@
 "rel": {},
 "graft": null,
 "line": false,
-"spine": false
-},
-"jean-ward": {
-"rel": {},
-"graft": null,
-"line": true,
 "spine": false
 },
 "constantine-d-arcy-1759": {
@@ -1108,12 +1135,6 @@
 "spine": false
 },
 "james-sneyd-1779": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"joseph-d-arcy": {
 "rel": {},
 "graft": null,
 "line": false,

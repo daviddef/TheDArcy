@@ -685,6 +685,11 @@
 "title": "Errands"
 },
 {
+"path": "/searched",
+"snippet": "…eeREG — Ayrshire, Murdoch could not be reached 13 Sep 2026 Searched: The generation above Francis Murdoch of St Quivox 128 Murdoch records in Ayrshire, across Galston, Tarbolton, Ayr, Kirkoswald, Loudoun, Dailly, Beith and Dunlop — and…",
+"title": "What Has Been Read"
+},
+{
 "path": "/sources",
 "snippet": "…(indexes) — the birth of William Murdoch at St Quivox and Newton, 7 October 1856, naming Francis Murdoch and Marion Watt; and their marriage at Avondale, Lanarkshire, 6 May 1854. ScotlandsPeople itself, which holds the register images…",
 "title": "Sources"
@@ -840,7 +845,7 @@
 },
 {
 "path": "/hornby",
-"snippet": "…ce and starts being hope — and it stops in a place the tree itself admits to. Above Major George Pitt D'Arcy of the 39th Foot the family tree keeps climbing: to a Major-General of Royal Engineers, to a man said to be born in St James's Pa…",
+"snippet": "…a son from things the family believes into things a register says. documented Above Major George Pitt D'Arcy of the 39th Foot the family tree keeps climbing: to a Major-General of Royal Engineers, to a man said to be born in St James's Pa…",
 "title": "The Hornby Claim"
 },
 {
@@ -1021,7 +1026,7 @@
 },
 {
 "path": "/sneyd",
-"snippet": "…heir young men sent to the Great War, of whom the archive knew about one until this week. Ivy Miriam Sneyd married Lindesay Atkinson D'Arcy at Albion Church in March 1916. Her family is the biggest in this archive — 116 people in the tr…",
+"snippet": "…page held this morning, and it is the position the register supports. Every source read → Ivy Miriam Sneyd married Lindesay Atkinson D'Arcy at Albion Church in March 1916. Her family is the biggest in this archive — 116 people in the tr…",
 "title": "The Sneyds"
 },
 {
@@ -1166,6 +1171,16 @@
 ],
 "jean-ward": [
 {
+"path": "/",
+"snippet": "…3 September 2026 Portsea, Madeley, and three counties that hold nothing Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage is no longer…",
+"title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/changes",
+"snippet": "…6 Portsea, Madeley, and three counties that hold nothing What it found. Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage is no longer…",
+"title": "What changed"
+},
+{
 "path": "/direct-line",
 "snippet": "…710 St. James Palace, London, Middlesex, Englan c. 21 Jul 1776 — disputed 8 Robert D'Arcy Jean Ward — m. 21 Jun 1779 by 1758, and probably earlier unknown 13 May 1827 Army Officer, Major General and Commander of Royal Engineers,…",
 "title": "The Spine"
@@ -1176,13 +1191,18 @@
 "title": "How Far Back"
 },
 {
+"path": "/searched",
+"snippet": "…e, D'Arcy, 1775–1810 found something 13 Sep 2026 Searched: Any trace of Robert D'Arcy and Jean Ward at Portsea, where the tree says they married on 21 June 1779 FOUND, and it is the first record of Robert D'Arcy in an English par…",
+"title": "What Has Been Read"
+},
+{
 "path": "/sources",
 "snippet": "…Past) — the burial of Robert D'Arcy at St Mary, Chatham, 19 May 1827, and his marriage to Jean Ward at Portsea St Mary, 21 June 1779. Australia, Births and Baptisms, 1792–1981 — the christening of George Lindsay Darcy at St James…",
 "title": "Sources"
 },
 {
 "path": "/hornby",
-"snippet": "…ers at Chatham , a Companion of the Bath, known in the family as The General . He married Jean Ward at Portsea in 1779 and had ten children — among them Joseph , who went to Persia, and George Pitt , who went to New South Wales.…",
+"snippet": "…Ken Greenslade · found via FreeREG, 13 September 2026 The tree said Robert D'Arcy married Jean Ward at Portsea on 21 June 1779, and carried a son Joseph born 1780. Here is a child baptised at that church nine months after that da…",
 "title": "The Hornby Claim"
 },
 {
@@ -1288,9 +1308,19 @@
 "joseph-atwell": [],
 "joseph-d-arcy": [
 {
+"path": "/changes",
+"snippet": "…Portsea in 1780. His parentage is still unknown; his marriage is no longer a claim. Found Joseph D'Arcy baptised at Portsea St Mary on 19 March 1780, father Robert, mother Jean — the first record of Robert D'Arcy in an English parish…",
+"title": "What changed"
+},
+{
 "path": "/australia",
 "snippet": "…its sons into three different corps. Joseph, and the Persian officers Lieutenant-Colonel Joseph D'Arcy (1780–1848), Royal Artillery, went to Persia in 1811 with Sir Gore Ouseley's mission to reform the Shah's army, and the Persian v…",
 "title": "Australia"
+},
+{
+"path": "/hornby",
+"snippet": "…nt Baptism Date 19 March 1780 Place Portsea, St Mary , Hampshire · parish register Person Joseph D'Arcy , male Father Robert D'ARCY Mother Jean Transcribed by Ken Greenslade · found via FreeREG, 13 September 2026 The tree said Robert…",
+"title": "The Hornby Claim"
 }
 ],
 "joseph-samuel1-sneyd": [
@@ -1441,7 +1471,7 @@
 },
 {
 "path": "/sneyd",
-"snippet": "…e Great War, of whom the archive knew about one until this week. Ivy Miriam Sneyd married Lindesay Atkinson D'Arcy at Albion Church in March 1916. Her family is the biggest in this archive — 116 people in the tree — and the one that pushed furt…",
+"snippet": "…nd it is the position the register supports. Every source read → Ivy Miriam Sneyd married Lindesay Atkinson D'Arcy at Albion Church in March 1916. Her family is the biggest in this archive — 116 people in the tree — and the one that pushed furt…",
 "title": "The Sneyds"
 },
 {
@@ -1791,7 +1821,7 @@
 },
 {
 "path": "/sneyd",
-"snippet": "…Hall This archive flagged the risk and then acted on it. The tree ran this family back to Ralph Sneyd, Esq., of Keele Hall (1723–1793) and on into Warwickshire gentry of the 1530s — eleven generations. The join is false. The Madele…",
+"snippet": "…r 2026 The baptism this line rests on, and a burial two years later When the descent from Ralph Sneyd of Keele Hall was disproved, what survived was the baptism that disproved it: William Sneyd, baptised at Madeley All Saints on 12…",
 "title": "The Sneyds"
 }
 ],
@@ -1807,6 +1837,11 @@
 "path": "/errands",
 "snippet": "…ed. The DNA points straight at this gap. Context → requests/scotlandspeople-murdoch.md 08 Richard Atkinson and Anne, of Limerick RootsIreland · a subscription Anything at all. The Atkinsons are five generations deep and stop dead at the…",
 "title": "Errands"
+},
+{
+"path": "/searched",
+"snippet": "…simply not there. → FreeREG — County Limerick could not be reached 13 Sep 2026 Searched: Richard Atkinson and Anne, and anything else in the county Zero records for the entire county. A control search for SMITH across the whole of the…",
+"title": "What Has Been Read"
 },
 {
 "path": "/sources",
@@ -1842,6 +1877,11 @@
 "path": "/",
 "snippet": "…ed → Four things this archive has established A defensible head to the line Major-General Robert D'Arcy, C.B. — second lieutenant of the Royal Engineers on 17 January 1776 , major-general in 1819, dead at Chatham in 1827, and documen…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/changes",
+"snippet": "…. 13 September 2026 Portsea, Madeley, and three counties that hold nothing What it found. Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage…",
+"title": "What changed"
 },
 {
 "path": "/gallery",
@@ -1880,7 +1920,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…11; WO 97 discharge papers; ADM 101 surgeons' journals; Ordnance series PROB 11/1728/64 — Robert D'Arcy's own will, proved 4 July 1827, digitised and unordered. ADM 101/26/1, the surgeon's journal of the convict ship England, which n…",
+"snippet": "…FreeREG — Hampshire, D'Arcy, 1775–1810 found something 13 Sep 2026 Searched: Any trace of Robert D'Arcy and Jean Ward at Portsea, where the tree says they married on 21 June 1779 FOUND, and it is the first record of Robert D'Arcy in…",
 "title": "What Has Been Read"
 },
 {
@@ -1890,7 +1930,7 @@
 },
 {
 "path": "/hornby",
-"snippet": "…is how a guess becomes a fact in three generations of retelling. The break Major-General Robert D'Arcy, and the sentence the tree wrote about him Robert D'Arcy (1751–1827) is real, and he is impressive. He was Major-General and Comm…",
+"snippet": "…t stops in a place the tree itself admits to. Found 13 September 2026 The first record of Robert D'Arcy in an English parish register Everything on this page below is about what cannot be shown: no baptism, no parentage in the Corps…",
 "title": "The Hornby Claim"
 },
 {
@@ -2439,6 +2479,11 @@
 "william-sneyd-1769": [],
 "william-sneyd-1780": [
 {
+"path": "/changes",
+"snippet": "…ad. Read the Madeley baptism that killed the Keele graft, and then found a William son of William Sneyd buried there in September 1744. Established that FreeREG holds nothing for County Limerick, nothing for South Leith and nothing f…",
+"title": "What changed"
+},
+{
 "path": "/open-questions",
 "snippet": "…re the tree says Rockhampton. answered same day A third Sneyd soldier — Pte Ernest Vivian William Sneyd, 3891 , 31st Battalion. Found and read: NAA B2455, item 8087517 , ninety-two pages. His attestation names his father as Thomas Ge…",
 "title": "Open Questions"
@@ -2450,7 +2495,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…tion Arthur Hartley Sneyd 5050 (30 pp.), Vivian Claude Sneyd 1696 (21 pp.), Ernest Vivian William Sneyd 3891 (92 pp.). Arthur's corrected his trade from clerk to typist and his burial from “France” to no known grave. → Australian War…",
+"snippet": "…Sneyd records at Madeley All Saints. The 1742 baptism that killed the Keele claim reads: William Sneyd, 12 September 1742, father William Sneyd. And two years later: “William, son of William SNEYD”, buried 29 September 1744. If that…",
 "title": "What Has Been Read"
 },
 {
@@ -2465,7 +2510,7 @@
 },
 {
 "path": "/sneyd",
-"snippet": "…four words about him: \" Salesman, listed as occupation on a death notice .\" Ernest Vivian William Sneyd (1890–1919), their first cousin — son of Thomas George Sneyd — was a labourer once turned away for being too short. He got in on…",
+"snippet": "…Ralph Sneyd of Keele Hall was disproved, what survived was the baptism that disproved it: William Sneyd, baptised at Madeley All Saints on 12 September 1742, father William Sneyd . Ralph was eighteen that year, so the graft failed —…",
 "title": "The Sneyds"
 }
 ],

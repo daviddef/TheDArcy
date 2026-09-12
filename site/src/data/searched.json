@@ -9,6 +9,46 @@
  ],
  "rows": [
   {
+   "src": "FreeREG — Hampshire, D'Arcy, 1775–1810",
+   "what": "Any trace of Robert D'Arcy and Jean Ward at Portsea, where the tree says they married on 21 June 1779",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "FOUND, and it is the first record of Robert D'Arcy in an English parish register this archive has ever had. Joseph D'ARCY, baptised Portsea St Mary 19 March 1780 — father ROBERT, mother JEAN. Nine months after the marriage the tree asserts, at the same church. It is the only D'Arcy record in the whole county.",
+   "href": "/hornby"
+  },
+  {
+   "src": "FreeREG — Staffordshire, Sneyd at Madeley",
+   "what": "The real Sneyd line under the disproved Keele graft",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "110 Sneyd records at Madeley All Saints. The 1742 baptism that killed the Keele claim reads: William Sneyd, 12 September 1742, father William Sneyd. And two years later: “William, son of William SNEYD”, buried 29 September 1744. If that is the same child — and in one small parish it is the obvious reading — the archive's Sneyd line is anchored to a boy who died at two.",
+   "href": "/sneyd"
+  },
+  {
+   "src": "FreeREG — Ayrshire, Murdoch",
+   "what": "The generation above Francis Murdoch of St Quivox",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "128 Murdoch records in Ayrshire, across Galston, Tarbolton, Ayr, Kirkoswald, Loudoun, Dailly, Beith and Dunlop — and St Quivox is not among the parishes with data. The county is thinly covered (202 Smiths for the whole of the eighteenth century) and the one parish this archive needs is not in it.",
+   "href": "/murdoch"
+  },
+  {
+   "src": "FreeREG — Midlothian, Ward",
+   "what": "Jean Ward, born South Leith 1754",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Midlothian's holding is Edinburgh, Canongate, Restalrig and Dalry. South Leith is not transcribed. Not a null result — the parish is simply not there.",
+   "href": "/the-women"
+  },
+  {
+   "src": "FreeREG — County Limerick",
+   "what": "Richard Atkinson and Anne, and anything else in the county",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Zero records for the entire county. A control search for SMITH across the whole of the eighteenth century returns nothing at all. FreeREG lists County Limerick in its search form and holds no data for it.",
+   "href": "/atkinson"
+  },
+  {
    "src": "FreeCEN — 1841 census, Gloucestershire",
    "what": "Surname Wakefield, whole county; then the household page itself",
    "when": "13 Sep 2026",
