@@ -9,6 +9,38 @@
  ],
  "rows": [
   {
+   "src": "FreeCEN — 1841 census, Gloucestershire",
+   "what": "Surname Wakefield, whole county; then the household page itself",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "THE FIND. HO107/374, enumeration district 13, page 10, dwelling 1615, Drivers Fields, civil parish of St Paul, Bristol: James Wakefield 35 a mason journeyman, Hannah 35, Hiram 4, Aaron 1, Miriam 1 — and Lyddya SINEGAR, 70, Independent. The tree records Hannah's mother as Lydia and her brother Jabez born at “Drivers Field”; neither was copied from this record, which nobody in the family had read.",
+   "href": "/drivers-fields"
+  },
+  {
+   "src": "FreeCEN — 1851 census, Gloucestershire",
+   "what": "The same household ten years on, for the relationships and exact birthplaces 1841 does not give",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "221 Gloucestershire Wakefields are transcribed for 1851 and 31 of them in Bristol, but not this family. Nationally only 36% of the 1851 pieces are online and the piece covering Drivers Fields is not among them. A coverage gap, not an absence — and the record that would turn the Lyddya Sinegar inference into a fact.",
+   "href": "/drivers-fields"
+  },
+  {
+   "src": "FreeREG — Berkley St Mary, Somerset",
+   "what": "Whether the tree's “Berkley, Gloucester” is really Berkley in Somerset, which would explain Hannah being born out of county",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "It is not. Berkley Somerset is transcribed in full — 7,967 records, 1545–1903 — and the family there is spelled SINGER in every one of 58 entries, with no Hannah baptised near 1805. A clean answer to a good question.",
+   "href": "/drivers-fields"
+  },
+  {
+   "src": "FreeCEN — 1841 census, Saniger spellings, Bristol",
+   "what": "Where the Vale of Berkeley Sanigers went",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "97 across Gloucestershire, 29 of them in Bristol, spelled SINEGAR, SUNIGAR, SENGEIR, SANGER and SINGER. The family did leave the Vale, and Bristol is where a good part of it went.",
+   "href": "/drivers-fields"
+  },
+  {
    "src": "FreeREG — coverage tool, Bristol",
    "what": "Every register FreeREG holds for Bristol, checked before searching rather than after",
    "when": "13 Sep 2026",

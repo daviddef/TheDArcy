@@ -1030,7 +1030,13 @@
 "title": "The Women"
 }
 ],
-"jabez-wakefield": [],
+"jabez-wakefield": [
+{
+"path": "/drivers-fields",
+"snippet": "…4 and here it gets interesting The street is the detail that settles it. The tree records Jabez Wakefield born on 14 February 1843 at \" Drivers Field \" — a scrap of an address, carried down through a family and across an ocean, with th…",
+"title": "Drivers Fields, 1841"
+}
+],
 "james-atwell": [
 {
 "path": "/open-questions",
@@ -1101,8 +1107,13 @@
 "title": "Berkeley, Gloucestershire"
 },
 {
+"path": "/drivers-fields",
+"snippet": "…: when Miriam Wakefield died in Brisbane in 1909, the registrar wrote her parents down as James Wakefield and Hannah Saniger . Nobody had ever found that couple in England. On 13 September 2026 somebody looked in the census. They are a…",
+"title": "Drivers Fields, 1841"
+},
+{
 "path": "/searched",
-"snippet": "…ns 21,248 Wakefield marriages for 1838–1842, so the search works and the absence is real. James Wakefield and Hannah Saniger did not marry in Bristol after civil registration began on 1 July 1837. → National Archives of Australia — B24…",
+"snippet": "…on district 13, page 10, dwelling 1615, Drivers Fields, civil parish of St Paul, Bristol: James Wakefield 35 a mason journeyman, Hannah 35, Hiram 4, Aaron 1, Miriam 1 — and Lyddya SINEGAR, 70, Independent. The tree records Hannah's mot…",
 "title": "What Has Been Read"
 },
 {
@@ -1254,6 +1265,11 @@
 ],
 "john-noel": [],
 "john-saniger": [
+{
+"path": "/drivers-fields",
+"snippet": "…70, living on her own means the tree says Hannah's mother was Lydia — and that her father John Saniger died in 1824 and here it gets interesting The street is the detail that settles it. The tree records Jabez Wakefield born on 14 F…",
+"title": "Drivers Fields, 1841"
+},
 {
 "path": "/how-far-back",
 "snippet": "…on Hannah Saniger b. 23 Jul 1805 Berkeley Langford Family Site · FamilySearch Family Tree John Saniger b. 15 May 1769 Berkeley Guthrie Web Site · FamilySearch Family Tree Thomas Saniger b. 23 Aug 1744 christened Berkeley Saniger Web…",
@@ -1649,6 +1665,11 @@
 "path": "/berkeley",
 "snippet": "…line in a Queensland death register The whole Saniger claim hangs on a single fact: when Miriam Wakefield died in Brisbane in 1909, the registrar wrote her parents down as James Wakefield and Hannah Saniger . Remove that line and the a…",
 "title": "Berkeley, Gloucestershire"
+},
+{
+"path": "/drivers-fields",
+"snippet": "…archive says about Gloucestershire hangs on one line in a Queensland death register: when Miriam Wakefield died in Brisbane in 1909, the registrar wrote her parents down as James Wakefield and Hannah Saniger . Nobody had ever found that…",
+"title": "Drivers Fields, 1841"
 },
 {
 "path": "/changes",

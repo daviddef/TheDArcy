@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "5 passes · 24 changes",
+ "eyebrow": "5 passes · 25 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -16,9 +16,10 @@
     "Established that in 139 Gloucestershire records spanning 1790–1900, no Saniger ever marries a Wakefield.",
     "Found Miriam Wakefield's birth registration in FreeBMD: June quarter 1840, Bristol, volume 11, page 183 — the only one in England in five years.",
     "Control-tested the FreeBMD harness (21,248 Wakefield marriages, 1838–1842) before reporting any absence from it.",
-    "Rewrote /berkeley around the result and added the GRO certificate to /errands as the cheapest decisive document on the site."
+    "Rewrote /berkeley around the result and added the GRO certificate to /errands as the cheapest decisive document on the site.",
+    "Then found the household in the 1841 census and published /drivers-fields — James and Hannah Wakefield at St Paul, Bristol, with Miriam aged one, and a seventy-year-old Sinegar widow living with them."
    ],
-   "found": "Three Dursley baptisms match the tree's dates for the middle of the Saniger line. Opening them shows three different fathers. The oldest claim in this archive is weaker than it was this morning — and for the first time there is a £2.50 document that would settle it."
+   "found": "Three Dursley baptisms match the tree's dates for the middle of the Saniger line. Opening them shows three different fathers. The oldest claim in this archive is weaker than it was this morning — and for the first time there is a £2.50 document that would settle it. And then the census produced the couple themselves, at the street the tree had remembered and the county it had got wrong."
   },
   {
    "when": "10 September 2026",

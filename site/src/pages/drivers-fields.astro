@@ -1,0 +1,179 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+
+/* The 1841 census household. Transcribed exactly as FreeCEN gives it, including
+   the spelling of Lyddya and the fact that the 1841 census records NO
+   relationships — which is why this page is careful about what it infers. */
+const HOUSE = [
+  ["SINEGAR", "Lyddya", "F", "70", "Independent", "Out of County", true],
+  ["WAKEFIELD", "James", "M", "35", "Mason Journeyman", "Gloucestershire", false],
+  ["WAKEFIELD", "Hannah", "F", "35", "", "Out of County", true],
+  ["WAKEFIELD", "Hiram", "M", "4", "", "Gloucestershire", false],
+  ["WEBB", "Matilda", "F", "2", "", "Gloucestershire", false],
+  ["WAKEFIELD", "Aaron", "M", "1", "", "Gloucestershire", false],
+  ["WAKEFIELD", "Miriam", "F", "1", "", "Gloucestershire", false],
+];
+
+const MATCHES = [
+  ["The parish", "St Paul, Bristol", "the tree says Miriam was baptised at St Paul, Bristol", true],
+  ["The street", "Drivers Fields", "the tree records her brother Jabez born at “Drivers Field, Gloucester” in February 1843", true],
+  ["The father", "James Wakefield, mason journeyman, born in Gloucestershire", "the tree has James Wakefield, born Gloucestershire 1799", true],
+  ["The mother", "Hannah Wakefield, aged 35, born outside the county", "the tree has Hannah Saniger, born 1805", true],
+  ["The children", "Hiram 4, Aaron 1, Miriam 1", "all three are in the tree, with Hiram born May 1837 and Aaron 1840", true],
+  ["And one more person", "Lyddya Sinegar, 70, living on her own means", "the tree says Hannah's mother was Lydia — and that her father John Saniger died in 1824", false],
+];
+---
+<Base
+  title="Drivers Fields, 1841"
+  eyebrow="HO107/374 · St Paul, Bristol · enumeration district 13, page 10"
+  dek="One page of the 1841 census, found 13 September 2026, containing the entire family this archive's oldest claim depends on — and one name nobody expected.">
+
+  <section class="blk">
+    <p class="lede">Everything this archive says about Gloucestershire hangs on one line in a
+    Queensland death register: when <a href={u("/people/miriam-wakefield")}>Miriam Wakefield</a> died
+    in Brisbane in 1909, the registrar wrote her parents down as
+    <strong>James Wakefield and Hannah Saniger</strong>. Nobody had ever found that couple in England.</p>
+
+    <p class="dek" style="margin-top:1rem">On 13 September 2026 somebody looked in the census.
+    They are all there, in one house, with a one-year-old called Miriam.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Dwelling 1615 · Drivers Fields · Civil Parish of St Paul</div>
+    <h2 style="margin-top:.4rem">The household, exactly as it is written</h2>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Surname</th><th>Forenames</th><th class="m">Sex</th><th class="m">Age</th>
+          <th>Occupation</th><th>Born in county?</th></tr></thead>
+        <tbody>
+          {HOUSE.map(([sn, fn, sx, age, occ, bc, mark]) => (
+            <tr style={mark ? "background:var(--accent-wash)" : ""}>
+              <td><strong>{sn}</strong></td><td>{fn}</td>
+              <td class="m">{sx}</td><td class="m">{age}</td>
+              <td class="small">{occ || "—"}</td><td class="small">{bc}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="small" style="margin-top:.8rem">Transcribed by FreeCEN from
+    <span class="mono">HO107/374</span>, enumeration district 13, page 10.
+    <span class="chip doc">documented</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Six things it confirms</div>
+    <h2 style="margin-top:.4rem">A record nobody in this family had read, agreeing with them</h2>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>The census says</th><th>The family tree says</th></tr></thead>
+        <tbody>
+          {MATCHES.map(([what, census, tree, agree]) => (
+            <tr>
+              <td><strong>{what}</strong><div class="small">{census}</div></td>
+              <td class="small">{tree}{" "}
+                {agree ? <span class="chip doc">agrees</span>
+                       : <span class="chip inf">and here it gets interesting</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>The street is the detail that settles it.</strong> The tree records Jabez Wakefield
+      born on 14 February 1843 at "<em>Drivers Field</em>" — a scrap of an address, carried down
+      through a family and across an ocean, with the county wrong. The census puts the household at
+      <strong>Drivers Fields, St Paul, Bristol</strong>, twenty-two months earlier. Two independent
+      sources, one street, and neither one copied from the other.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The name nobody expected</div>
+    <h2 style="margin-top:.4rem">Lyddya Sinegar, aged seventy, living on her own means</h2>
+
+    <p class="lede"><strong>SINEGAR is one of the eleven spellings of Saniger</strong> — it is on this
+    archive's own list, taken from the Gloucestershire registers.
+    <a href={u("/berkeley")}>The list →</a> And the family tree, quite independently, says Hannah
+    Saniger's mother was <strong>Lydia</strong>, and that her father <strong>John Saniger died in
+    1824</strong>.</p>
+
+    <p style="margin-top:1.1rem">A widow of seventy, carrying the mother's maiden surname, living in
+    her married daughter's house and described as <em>Independent</em> — living on her own means
+    rather than working — is exactly what the tree predicts without ever having seen this page.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And here is what this archive will not do with that.</strong> The 1841 census
+      <strong>does not record relationships</strong>. It lists the people found in a dwelling on one
+      night and nothing more. It does not say Lyddya Sinegar is Hannah's mother; it says the two of
+      them were under one roof. The identification is an <em>inference</em> — a good one, from a
+      surname, an age, a widowhood and a household — and it is labelled as one.
+      <span class="chip inf">inferred, not stated by the record</span>
+      <a href={u("/method")}>How claims are labelled →</a>
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">The 1851 census would settle it outright: from 1851 the
+    enumerators recorded <strong>relationship to head of household</strong> and an exact birthplace.
+    FreeCEN holds 221 Gloucestershire Wakefields for 1851 and 31 of them in Bristol, but
+    <strong>not this family</strong> — nationally only 36% of the 1851 pieces are transcribed, and
+    the piece covering Drivers Fields is not among them.
+    <span class="chip sup">a coverage gap, not an absence</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What it does not fix</div>
+    <h2 style="margin-top:.4rem">Hannah was not born in Gloucestershire</h2>
+
+    <p>Both women are entered <strong>“Out of County”</strong>. In a Bristol enumeration returned
+    under Gloucestershire, that means neither Hannah nor Lyddya was born in the county — and it
+    explains, at last, why a week of searching the Gloucestershire parish registers found no Hannah
+    Saniger anywhere. <strong>She is not there because she was not born there.</strong></p>
+
+    <p style="margin-top:1rem">The family tree says Hannah was born on 23 July 1805 at
+    "<em>Berkley, Gloucester</em>". That looked like a misspelling of Berkeley in Gloucestershire —
+    but <strong>Berkley is also a real parish in Somerset</strong>, near Frome, and a Somerset birth
+    would fit “Out of County” exactly. So it was tested.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>It is not the answer.</strong> Berkley St Mary in Somerset is transcribed in full —
+      7,967 records, 1545 to 1903 — and the family there is spelled <strong>SINGER</strong> in every
+      entry, with no Hannah baptised anywhere near 1805. Fifty-eight records, and not one of them
+      hers. <span class="chip lore">searched and empty</span>
+      <br /><br />
+      Which leaves Berkeley in Gloucestershire, where <strong>the transcript stops in 1677</strong> —
+      a hundred and twenty-eight years before she was born. Her baptism is not missing. It is
+      <em>untranscribed</em>, and those are different things.
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Where this leaves it</h2>
+    <ol class="dek">
+      <li style="margin-bottom:.5rem"><strong>The couple exists, and they are where the tree said.</strong>
+      James and Hannah Wakefield, St Paul, Bristol, with Miriam aged one.
+      <span class="chip doc">documented</span></li>
+      <li style="margin-bottom:.5rem"><strong>Miriam's birth is registered</strong> — June quarter
+      1840, Bristol, volume 11 page 183, the only one in England in five years.
+      <span class="chip doc">documented</span></li>
+      <li style="margin-bottom:.5rem"><strong>A Saniger woman of the right generation is in the
+      house</strong>, and the tree names Hannah's mother Lydia without reference to this record.
+      <span class="chip inf">inferred</span></li>
+      <li style="margin-bottom:.5rem"><strong>Hannah was born outside Gloucestershire</strong>, which
+      is why she could never be found in it. Where she <em>was</em> born is now the open question, and
+      it is a sharper one than the archive had yesterday.</li>
+      <li><strong>The £2.50 certificate still matters, and matters more.</strong> Miriam's GRO birth
+      entry names her mother with her maiden surname. It would confirm “Saniger” from an English
+      record for the first time. <a href={u("/errands")}>The queue →</a></li>
+    </ol>
+
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/berkeley")}>The Gloucestershire registers, and what they did not hold →</a> ·
+      <a href={u("/the-women")}>Miriam Wakefield →</a> ·
+      <a href={u("/searched")}>Every source read →</a></p>
+  </section>
+</Base>
