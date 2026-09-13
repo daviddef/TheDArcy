@@ -40,6 +40,16 @@ import d from "../data/wakefields.json";
         </tbody>
       </table>
     </div>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.deaths}</strong> <span class="chip doc">documented</span>
+    </div>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.martha.head}</strong> {d.martha.body}
+      <br /><br />
+      {d.martha.where} <span class="chip lore">{d.martha.chip}</span>
+    </div>
+
     <p class="small" style="margin-top:1rem">
       <a href={u("/general-hewitt")}>The passenger register →</a> ·
       <a href={u("/drivers-fields")}>The 1841 household →</a> ·

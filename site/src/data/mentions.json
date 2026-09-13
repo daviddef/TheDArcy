@@ -295,7 +295,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…sources FindMyPast — Gloucestershire, all collections found nothing 13 Sep 2026 Searched: Catherine Cotton's origins Nothing. Searched across the whole county for a birth between 1733 and 1757: she appears only to marry Thomas Saniger a…",
+"snippet": "…her. → FindMyPast — Gloucestershire, all collections found nothing 13 Sep 2026 Searched: Catherine Cotton's origins Nothing. Searched across the whole county for a birth between 1733 and 1757: she appears only to marry Thomas Saniger a…",
 "title": "What Has Been Read"
 },
 {
@@ -585,19 +585,14 @@
 ],
 "eliza-wakefield": [
 {
-"path": "/wakefields",
-"snippet": "…Two died, one is unaccounted for, six sailed Child Born What is known Eliza b. c.1832 An Eliza Wakefield appears in the Bristol burial index in 1834. Unconfirmed. Ellen bapt. 26 Oct 1834 BURIED at Bristol, St Paul, Portland Square, 12…",
-"title": "The Wakefields"
+"path": "/changes",
+"snippet": "…ng. She is the one person this week's work has left exactly where it found her. Confirmed Eliza Wakefield: baptised Bristol 14 October 1832 to James and Hannah, buried there 4 May 1834 AGED NINETEEN MONTHS. Searched Bristol under every…",
+"title": "What changed"
 },
 {
 "path": "/searched",
-"snippet": "…about emigration; she died fourteen years before the ship, in her parents' own parish. An Eliza Wakefield appears in the same index in 1834, to be confirmed. → FindMyPast — 1851 census, Well Street, Hanley found something 13 Sep 2026 S…",
+"snippet": "…4 sources FindMyPast — Bristol baptisms and burials found something 13 Sep 2026 Searched: Eliza Wakefield, the eldest daughter Baptised at Bristol 14 OCTOBER 1832, father JAMES WAKEFIELD, mother HANNAH — and BURIED there on 4 MAY 1834,…",
 "title": "What Has Been Read"
-},
-{
-"path": "/general-hewitt",
-"snippet": "…12 July 1840, aged five , in her parents' own parish — fourteen years before the ship. An Eliza Wakefield appears in the same Bristol burial index in 1834. Martha is still open. The records → corrected 13 September 2026 Hannah's birthp…",
-"title": "The General Hewitt"
 },
 {
 "path": "/berkeley-woman",
@@ -698,11 +693,6 @@
 "path": "/searched",
 "snippet": "…841 — and not at all in 1851; the three Jameses of the right age are all 1841 entries. No Ellen Wakefield of the right age exists in either county. Given that FreeCEN's Bristol 1851 holding is real but unmeasured in depth, this remains…",
 "title": "What Has Been Read"
-},
-{
-"path": "/general-hewitt",
-"snippet": "…eady dead. This page framed Eliza, Ellen and Martha as an open question about emigration. Ellen Wakefield was buried at Bristol, St Paul, Portland Square, on 12 July 1840, aged five , in her parents' own parish — fourteen years before…",
-"title": "The General Hewitt"
 }
 ],
 "emily-grace-sneyd": [
@@ -1295,6 +1285,11 @@
 "james-sneyd-1779": [],
 "james-sneyd-1818": [
 {
+"path": "/changes",
+"snippet": "…g at all. She has been on five pages of this site and appears to have no source. Followed James Sneyd the engraver forward: Well Street in 1871 with his son at the same trade, and 20 Well Street in 1881 as an ENGRAVER (POTTER) with…",
+"title": "What changed"
+},
+{
 "path": "/searched",
 "snippet": "…l Sneyd's household at Hanley The 1861 census at WELL ST, HANLEY — “Grocers Shop” — holds James Sneyd, engraver, his wife, three children, and his MOTHER: Elizabeth Sneyd, widow, aged 82, born Shropshire. The tree says Samuel Sneyd…",
 "title": "What Has Been Read"
@@ -1449,7 +1444,7 @@
 },
 {
 "path": "/what-we-got-wrong",
-"snippet": "…t the family about their own family. 13 September 2026 It is indexed, with parents named. Jean Ward, baptised South Leith 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — an entire Scottish generation this archive did not…",
+"snippet": "…roboration. Where it was corrected → 13 September 2026 It is indexed, with parents named. Jean Ward, baptised South Leith 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — an entire Scottish generation this archive did not…",
 "title": "What This Archive Got Wrong"
 },
 {
@@ -2077,8 +2072,23 @@
 ],
 "martha-wakefield": [
 {
+"path": "/changes",
+"snippet": "…May 1834 AGED NINETEEN MONTHS. Searched Bristol under every spelling and record type for Martha Wakefield, born about 1836, and found nothing at all. She has been on five pages of this site and appears to have no source. Followed James…",
+"title": "What changed"
+},
+{
+"path": "/what-we-got-wrong",
+"snippet": "…d no burial at Bristol under any spelling, and is not in the family tree. It said Named a Martha Wakefield, born about 1836, as one of three daughters left behind when the family sailed in 1854 — on five pages. It is Two of the three di…",
+"title": "What This Archive Got Wrong"
+},
+{
+"path": "/wakefields",
+"snippet": "…ion about emigration. documented And Martha may never have existed. This site has named a Martha Wakefield, born about 1836, on five pages. Searched at Bristol under every spelling and every record type — birth registrations, baptisms,…",
+"title": "The Wakefields"
+},
+{
 "path": "/searched",
-"snippet": "…ep 2026 Searched: The three Wakefield daughters who did not sail in 1854 Eliza, Ellen and Martha Wakefield, born Bristol 1832–1836, are not identifiable in the 1851 census, and neither is their father. FreeCEN does hold 1851 Bristol — a…",
+"snippet": "…FindMyPast — Bristol, every record type and spelling found nothing 13 Sep 2026 Searched: Martha Wakefield, born about 1836 Nothing. No birth registration, no baptism, no burial for a Martha Wakefield born at Bristol between 1831 and 18…",
 "title": "What Has Been Read"
 }
 ],

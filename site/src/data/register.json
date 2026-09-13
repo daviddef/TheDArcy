@@ -1,15 +1,15 @@
 {
-"entries": 735,
+"entries": 738,
 "distinct": 544,
-"records": 262,
+"records": 265,
 "tree": 473,
 "grafted": 98,
-"linked": 735,
+"linked": 738,
 "surnames": 185,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 164,
+"n": 165,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -106,6 +106,13 @@
 "name": "James Sneyd",
 "says": "son, aged 33, ENGRAVER · born Hanley — Samuel Charles Sneyd's brother, who stayed and kept the shop",
 "source": "record · 1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "James Sneyd",
+"says": "of WELL STREET, Hanley · engraver at 53 in 1871 with his son James A, also an engraver; ENGRAVER (POTTER) at 63 in 1881 at No. 20, with his granddaughter Mary Elizabeth MULLOCK (Sneyd) · his father kept the grocer's shop in the same street in 1851",
+"source": "record · 1871 and 1881 censuses, Well Street, Hanley — RG10/2857 f.37 p.10; RG11/2719 f.12 p.18 (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
@@ -1841,7 +1848,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 48,
+"n": 50,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -1875,6 +1882,20 @@
 "name": "Aaron Wakefield",
 "says": "son, aged 10, errand boy",
 "source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Eliza Wakefield",
+"says": "baptised at Bristol 14 OCTOBER 1832 · father JAMES WAKEFIELD, mother HANNAH",
+"source": "record · England Births & Baptisms / Deaths & Burials 1538-1991, Bristol (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Eliza Wakefield",
+"says": "buried at Bristol 4 MAY 1834, AGED 19 MONTHS · the eldest of the three daughters this archive believed had been left behind in 1854",
+"source": "record · England Births & Baptisms / Deaths & Burials 1538-1991, Bristol (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },

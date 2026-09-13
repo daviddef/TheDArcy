@@ -119,6 +119,30 @@ const c = d.counts;
   </section>
 
   <section class="blk">
+    <div class="lab">Four censuses, one address</div>
+    <h2 style="margin-top:.4rem">{d.wellStreetYears.head}</h2>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th class="m">Year</th><th>Address</th><th>Household</th><th class="m">Reference</th></tr></thead>
+        <tbody>
+          {d.wellStreetYears.rows.map(([y, addr, who, ref]) => (
+            <tr><td class="m"><strong>{y}</strong></td><td><strong>{addr}</strong></td>
+                <td class="small">{who}</td><td class="mono small">{ref}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.wellStreetYears.means}</strong>
+      <a href={u("/people/samuel-charles-sneyd-1810")}>Samuel Charles →</a>
+    </div>
+
+    <p class="small" style="margin-top:1.2rem">{d.wellStreetYears.mullock}</p>
+  </section>
+
+  <section class="blk">
     <div class="lab">{d.fmp.oliver.ref}</div>
     <h2 style="margin-top:.4rem">And Elizabeth's own baptism</h2>
     <p class="lede">{d.fmp.oliver.line}.</p>

@@ -434,6 +434,15 @@ rec("Joseph Ward", "married MARTH[A] GAIRDEN at SOUTH LEITH, 27 OCTOBER 1747 · 
 rec("Martha Garden", "married Joseph Ward at South Leith, 27 October 1747 · entered as MARTH GAIRDEN, daughter of WILLIAM GAIRDEN", SCO2, FMP_L9)
 rec("William Gairden", "of South Leith, Midlothian · named as Martha's father at her marriage in 1747 — the oldest Scot in this archive", SCO2, FMP_L9)
 
+
+BRI2 = "record · England Births & Baptisms / Deaths & Burials 1538-1991, Bristol (FindMyPast)"
+FMP_LA = "https://www.findmypast.com.au/"
+rec("Eliza Wakefield", "baptised at Bristol 14 OCTOBER 1832 · father JAMES WAKEFIELD, mother HANNAH", BRI2, FMP_LA)
+rec("Eliza Wakefield", "buried at Bristol 4 MAY 1834, AGED 19 MONTHS · the eldest of the three daughters this archive believed had been left behind in 1854", BRI2, FMP_LA)
+
+SN71 = "record · 1871 and 1881 censuses, Well Street, Hanley — RG10/2857 f.37 p.10; RG11/2719 f.12 p.18 (FindMyPast)"
+rec("James Sneyd", "of WELL STREET, Hanley · engraver at 53 in 1871 with his son James A, also an engraver; ENGRAVER (POTTER) at 63 in 1881 at No. 20, with his granddaughter Mary Elizabeth MULLOCK (Sneyd) · his father kept the grocer's shop in the same street in 1851", SN71, FMP_LA)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

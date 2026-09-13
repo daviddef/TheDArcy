@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Named a Martha Wakefield, born about 1836, as one of three daughters left behind when the family sailed in 1854 — on five pages.",
+    truth: "Two of the three died as children: Eliza at nineteen months in 1834, Ellen at five in 1840, both with Bristol baptisms naming James and Hannah. The third produces no birth registration, no baptism and no burial at Bristol under any spelling, and is not in the family tree.",
+    why: "The trio was assembled in an early pass and then repeated, and the repetition did the work that evidence should have. Nobody — me — ever went back to ask where the name had come from.",
+    lesson: "A fact that has been on the site longest is the one least likely to have been checked. Repetition is not corroboration.",
+    href: "/wakefields",
+  },
+  {
+    when: "13 September 2026",
     what: "Reported on several pages that South Leith was not transcribed and that Jean Ward's baptism was therefore out of reach.",
     truth: "It is indexed, with parents named. Jean Ward, baptised South Leith 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — an entire Scottish generation this archive did not have.",
     why: "The same fault as Berkeley, on the same afternoon: the free indexes were measured honestly and the conclusion was then widened from “not reachable here” to “not transcribed”, which is a claim about the world rather than about my sources.",

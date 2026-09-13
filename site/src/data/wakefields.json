@@ -2,25 +2,92 @@
  "built": "13 September 2026",
  "lede": "James Wakefield has appeared on five pages of this archive and had none of his own. Until this morning he was a name, a trade and a county. He now has a birthplace, a baptism, two parents, a marriage, a street and seven children.",
  "life": [
-  ["Baptised", "6 April 1806", "STROUD, Gloucestershire — father RICHARD WAKEFIELD, mother ELIZABETH WEBB"],
-  ["Married", "17 October 1831", "HANNAH SANIGER, at Bristol — residence Bristol, Gloucester"],
-  ["1841", "6 June", "Drivers Fields, St Paul, Bristol — MASON JOURNEYMAN, with Hannah, three children, a Matilda WEBB aged two, and Lyddya Sinegar aged seventy"],
-  ["1851", "30 March", "Drivers Fields, St Paul, Bristol — MASON, aged 45, with Hannah and five children"],
-  ["1854", "16 December", "Arrived Brisbane on the GENERAL HEWITT, entered as a MASON, with Hannah and six children"],
-  ["Died", "8 July 1857", "Brisbane — two and a half years after landing"]
+  [
+   "Baptised",
+   "6 April 1806",
+   "STROUD, Gloucestershire — father RICHARD WAKEFIELD, mother ELIZABETH WEBB"
+  ],
+  [
+   "Married",
+   "17 October 1831",
+   "HANNAH SANIGER, at Bristol — residence Bristol, Gloucester"
+  ],
+  [
+   "1841",
+   "6 June",
+   "Drivers Fields, St Paul, Bristol — MASON JOURNEYMAN, with Hannah, three children, a Matilda WEBB aged two, and Lyddya Sinegar aged seventy"
+  ],
+  [
+   "1851",
+   "30 March",
+   "Drivers Fields, St Paul, Bristol — MASON, aged 45, with Hannah and five children"
+  ],
+  [
+   "1854",
+   "16 December",
+   "Arrived Brisbane on the GENERAL HEWITT, entered as a MASON, with Hannah and six children"
+  ],
+  [
+   "Died",
+   "8 July 1857",
+   "Brisbane — two and a half years after landing"
+  ]
  ],
  "children": [
-  ["Eliza", "b. c.1832", "An Eliza Wakefield appears in the Bristol burial index in 1834. Unconfirmed."],
-  ["Ellen", "bapt. 26 Oct 1834", "BURIED at Bristol, St Paul, Portland Square, 12 July 1840, AGED 5."],
-  ["Martha", "b. c.1836", "Not in the 1851 house and not on the ship. Still open."],
-  ["Hiram", "b. c.1837–8", "Errand boy at 13 in 1851; entered as a PLUMBER aged 16 on the ship."],
-  ["Aaron", "b. c.1839–41", "Errand boy at 10 in 1851; FARM LABOURER aged 14 on the ship."],
-  ["Miriam", "b. 11 Apr 1840", "A SERVANT at ten in the 1851 census; shipped at fourteen as a domestic servant. The direct line."],
-  ["Jabez", "b. 1843", "Eleven on the ship. Married in Queensland 1863, buried there 1903."],
-  ["Zillah", "b. 1845–6", "Eight on the ship. Married in Queensland 1871."],
-  ["Ephraim", "b. c.1849", "Five on the ship, and absent from the 1851 census household — the one Wakefield child this archive cannot yet place."]
+  [
+   "Eliza",
+   "bapt. 14 Oct 1832",
+   "BURIED at Bristol 4 May 1834, AGED 19 MONTHS. Baptised there to James and Hannah."
+  ],
+  [
+   "Ellen",
+   "bapt. 26 Oct 1834",
+   "BURIED at Bristol, St Paul, Portland Square, 12 July 1840, AGED 5."
+  ],
+  [
+   "Martha",
+   "—",
+   "No baptism, no burial, no birth registration at Bristol in any spelling. See below."
+  ],
+  [
+   "Hiram",
+   "b. c.1837–8",
+   "Errand boy at 13 in 1851; entered as a PLUMBER aged 16 on the ship."
+  ],
+  [
+   "Aaron",
+   "b. c.1839–41",
+   "Errand boy at 10 in 1851; FARM LABOURER aged 14 on the ship."
+  ],
+  [
+   "Miriam",
+   "b. 11 Apr 1840",
+   "A SERVANT at ten in the 1851 census; shipped at fourteen as a domestic servant. The direct line."
+  ],
+  [
+   "Jabez",
+   "b. 1843",
+   "Eleven on the ship. Married in Queensland 1863, buried there 1903."
+  ],
+  [
+   "Zillah",
+   "b. 1845–6",
+   "Eight on the ship. Married in Queensland 1871."
+  ],
+  [
+   "Ephraim",
+   "b. c.1849",
+   "Five on the ship, and absent from the 1851 census household — the one child this archive still cannot place."
+  ]
  ],
  "webb": "The two-year-old MATILDA WEBB living in the house in 1841 has sat unexplained for months. James Wakefield's mother was Elizabeth WEBB. The child is almost certainly his kin.",
  "trade": "He is a mason in every record that gives him a trade: a mason journeyman at Drivers Fields in 1841, a mason in 1851, a mason on the assisted-passage register in 1854. Three clerks in thirteen years and two hemispheres.",
- "open": "Richard Wakefield and Elizabeth Webb come from a FamilySearch-derived index rather than the parish book, and there is more than one James Wakefield in Gloucestershire. The birthplace, year and county all agree with the 1851 census, which is why they are here — but the Stroud register would settle it."
+ "open": "Richard Wakefield and Elizabeth Webb come from a FamilySearch-derived index rather than the parish book, and there is more than one James Wakefield in Gloucestershire. The birthplace, year and county all agree with the 1851 census, which is why they are here — but the Stroud register would settle it.",
+ "deaths": "Two daughters died small, in the same city and within six years of each other: Eliza at nineteen months in May 1834, Ellen at five in July 1840. Both were baptised at Bristol to James and Hannah, and both entries name the parents. For months this archive treated their absence from the 1854 passenger list as a question about emigration. It was not a question about emigration.",
+ "martha": {
+  "head": "And Martha may never have existed.",
+  "body": "This site has named a Martha Wakefield, born about 1836, on five pages. Searched at Bristol under every spelling and every record type — birth registrations, baptisms, burials — there is nothing for a Martha Wakefield born between 1831 and 1842. Eliza and Ellen both produce baptisms naming James and Hannah; Martha produces nothing at all.",
+  "where": "She is not in the family tree either, which gives James and Hannah only Miriam. On present evidence Martha entered this archive from my own earlier work and has never had a record behind her.",
+  "chip": "withdrawn pending evidence"
+ }
 }

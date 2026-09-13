@@ -380,5 +380,42 @@
    "verdict": "So the Audlem marriage is not supported. That is not the same as disproved — a mangled spelling or a licence elsewhere would explain it — but it has now been looked for properly, against a parish that is covered twice, and it is not there."
   },
   "ages": "One thing moves. The tree gives Samuel's birth as 1769 and this archive corrected that to the Madeley baptism of 4 June 1781. The 1851 census says he was 72, so born about 1779; the burial register said 77 in September 1855, so about 1778. Three records now cluster around 1778–79, which sits between the tree's 1769 and the archive's 1781 and matches neither exactly. The Madeley baptism remains the best candidate — it has the right father, mother, parish and trade — but the ages do not endorse it as cleanly as they rule out 1769."
+ },
+ "wellStreetYears": {
+  "head": "Sixty years in one street",
+  "rows": [
+   [
+    "1851",
+    "Well Street, Hanley",
+    "SAMUEL SNEYD, 72, grocer, born Madeley · Elizabeth his wife, 71, born Oswestry · James, 33, engraver · Elizabeth Ann, 11",
+    "HO107/2004 f.138 p.13"
+   ],
+   [
+    "1855",
+    "91 Well St.",
+    "Samuel buried from this address, 23 September, aged 77",
+    "Hanley St John the Evangelist, entry 2330"
+   ],
+   [
+    "1861",
+    "Well St, Grocers Shop",
+    "JAMES SNEYD, 42, engraver · Ann his wife, 41 · Elizabeth A 21 and Mary J 18, both PAINTRESSES · James A, 10 · and Elizabeth, 82, WIDOW, born Shropshire",
+    "piece 1932 f.38 sch.22"
+   ],
+   [
+    "1871",
+    "Well Street",
+    "James, 53, engraver · Ann, 52 · James A, 20, ENGRAVER",
+    "RG10/2857 f.37 p.10 sch.46"
+   ],
+   [
+    "1881",
+    "20, Well Street",
+    "James, 63, ENGRAVER (POTTER) · Anne, 61 · Mary Elizabeth MULLOCK (Sneyd), granddaughter, 17, dressmaker",
+    "RG11/2719 f.12 p.18 sch.90"
+   ]
+  ],
+  "means": "Samuel Charles Sneyd sailed for New South Wales in 1832 and died at Brisbane in 1885. His brother James stayed in Well Street and engraved pottery there for the rest of his life — thirty years on from his father's shop, in the same road, with his own son at the same trade. Two sons of one grocer, and the whole distance of the nineteenth century between them.",
+  "mullock": "The granddaughter of 1881 is entered as Mary Elizabeth MULLOCK (Sneyd), born Hanley about 1864 — so one of the paintress daughters of 1861 married a Mullock. A thread this archive has not followed."
  }
 }
