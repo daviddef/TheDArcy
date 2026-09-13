@@ -1,0 +1,116 @@
+{
+ "note": "The families this archive follows, and the two grafts that carry almost all its claimed depth. State is derived, not assigned by hand: a line is DRAWN where this archive publishes a chart of it, DRAWABLE where there are enough people to chart and no chart yet, and a ROUTE where there are too few. Where most of a family's people are recorded without a proved join to anyone else, it is a WEB, because that is what the evidence is.",
+ "rows": [
+  {
+   "name": "Sneyd",
+   "ours": false,
+   "state": "drawable",
+   "depth": "116 people, 112 published",
+   "what": "Ivy miriam sneyd's people, of boulia and brisbane.",
+   "gap": "No chart of this family has been drawn — only a page about them.",
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "D'Arcy",
+   "ours": true,
+   "state": "drawn",
+   "depth": "83 people, 67 published",
+   "what": "The name the archive carries.",
+   "gap": null,
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Atwell",
+   "ours": false,
+   "state": "drawable",
+   "depth": "36 people, 28 published",
+   "what": "Barbara 'goldie' atwell's people, out of somerset.",
+   "gap": "No chart of this family has been drawn — only a page about them.",
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Murdoch",
+   "ours": false,
+   "state": "drawable",
+   "depth": "30 people, 19 published",
+   "what": "Audrey dell murdoch's people, out of ayrshire.",
+   "gap": "No chart of this family has been drawn — only a page about them.",
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Atkinson",
+   "ours": false,
+   "state": "drawable",
+   "depth": "22 people, 22 published",
+   "what": "Ida kathleen atkinson's people, out of limerick.",
+   "gap": null,
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Wakefield",
+   "ours": false,
+   "state": "route",
+   "depth": "9 people, 9 published",
+   "what": "Miriam wakefield of bristol.",
+   "gap": null,
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Rossiter",
+   "ours": false,
+   "state": "route",
+   "depth": "9 people, 9 published",
+   "what": "Maria rossiter of long ashton, somerset.",
+   "gap": null,
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Blum",
+   "ours": false,
+   "state": "route",
+   "depth": "8 people, 8 published",
+   "what": "Martha blum's people, out of germany by way of rockhampton.",
+   "gap": null,
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Creech",
+   "ours": false,
+   "state": "route",
+   "depth": "5 people, 5 published",
+   "what": "Jane creech of limerick.",
+   "gap": null,
+   "href": "/families/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "The Hornby descent",
+   "ours": false,
+   "state": "drawable",
+   "depth": "15 generations claimed, 6 documented",
+   "what": "The family tree runs this line back to a Yorkshire castle and an earldom. Six of the fifteen generations are documented to the day; the rest hang on a single unevidenced link.",
+   "gap": "A legitimate male descent from the 4th Earl is excluded by the peerage record. 71 people reach this archive only through it.",
+   "href": "/hornby/",
+   "cta": "Where it stops being evidence →"
+  },
+  {
+   "name": "The Keele descent",
+   "ours": false,
+   "state": "closed",
+   "depth": "27 people, all of them behind one link",
+   "what": "Followed, looked for in the right registers, and found to be wrong.",
+   "gap": "Kept on the site because a disproved claim is worth more published than deleted.",
+   "href": "/how-far-back/",
+   "cta": "How the grafts were tested →"
+  }
+ ],
+ "close": "Remove both grafts and 145 people remain, reaching the middle of the eighteenth century. That is the archive's real floor."
+}
