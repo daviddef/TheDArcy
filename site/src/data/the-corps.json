@@ -1,0 +1,21 @@
+{
+ "found": "13 September 2026",
+ "source": "FindMyPast — British Army Lists & Commission Registers 1661-1826; British Army Officer Promotions 1800-1815 (© Chris Daniell), each citing the London Gazette",
+ "lede": "This archive has carried Robert D'Arcy's career on the authority of Connolly's Roll of Officers of the Corps of Royal Engineers — a book printed in 1898. Every step of it can now be cited to the London Gazette instead, with issue and page, and it begins two years earlier than anything else here.",
+ "career": [
+  {"year":"1778","was":"—","became":"Practitioner Engineer and Second Lieutenant","unit":"The Corps of Engineers","src":"British Army Lists & Commission Registers 1661-1826","gaz":"","note":"His first commission, and now the earliest record of him anywhere in this archive — a year before he married at Portsea and two before his son was christened there."},
+  {"year":"8 May 1802","was":"Captain","became":"Major in the Army","unit":"Royal Engineers","src":"War Office, 11 May 1802","gaz":"15478 / 468","note":""},
+  {"year":"1 March 1805","was":"Brevet Major","became":"Lieutenant-Colonel","unit":"Corps of the Royal Engineers","src":"Ordnance Office, 18 March 1805 — vice Nepean","gaz":"15789 / 351","note":""},
+  {"year":"4 June 1813","was":"Lieutenant-Colonel","became":"Colonel in the Army by Brevet","unit":"Royal Engineers","src":"War Office, 7 June 1813 — by the Prince Regent","gaz":"16737 / 1100","note":""},
+  {"year":"19 July 1813","was":"Brevet Colonel","became":"Colonel","unit":"Corps of Royal Engineers","src":"Office of Ordnance — vice Evelegh","gaz":"16755 / 1431","note":"Found in the Gazette itself before the subscription was opened."},
+  {"year":"13 May 1827","was":"Major-General","became":"—","unit":"late of the Corps of Royal Engineers","src":"Seventeen newspapers","gaz":"","note":"Died at Chatham and was interred there with military honours on the 19th."}
+ ],
+ "span": "Forty-nine years from a practitioner engineer's commission to a major-general's grave.",
+ "joseph": {
+  "head": "And his son went to the guns, not the sappers.",
+  "body": "Joseph D'Arcy — baptised at Portsea in March 1780, son of Robert and Jean — appears in FindMyPast's British Army, Royal Artillery Officers 1716-1899 from 1795, in the Army List of 1798, in the Commission Registers in 1802, 1803 and 1826, among the officer promotions of 1803, 1804 and 1806, and in the Army Lists of 1840, 1841, 1843 and 1844.",
+  "means": "Commissioned at about fifteen and still listed at sixty-four. The Royal Artillery, not his father's Corps of Engineers. The detail of those entries is behind a further paywall even on a trial — the index is visible and the transcripts are not — so this is a career sketched from a list of dates rather than read.",
+  "chip": "indexed, not read"
+ },
+ "notHim": "One entry was discarded. A Robert D'Arcy is gazetted CORNET BY PURCHASE in the 17th Regiment of Light Dragoons on 19 May 1804, described as “Gent”, vice Harris. That is a young man buying his first commission in a cavalry regiment in 1804 — while this Robert D'Arcy had been a major since 1802 and was a lieutenant-colonel by the following March. Same name, different man, and the sort of thing that quietly wrecks a career chronology if nobody looks at the rank."
+}

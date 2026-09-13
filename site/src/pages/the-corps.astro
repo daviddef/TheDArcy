@@ -1,0 +1,54 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/the-corps.json";
+---
+<Base
+  title="The Corps"
+  eyebrow={`Robert D'Arcy, 1778–1827 · found ${d.found}`}
+  dek="Forty-nine years of an engineer's career, every promotion cited to the London Gazette by issue and page — replacing a book printed in 1898.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <div class="lab">{d.source}</div>
+    <h2 style="margin-top:.4rem">{d.span}</h2>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
+      {d.career.map((c) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono small" style="color:var(--ink-3)">{c.year}</span>
+            <strong style="margin-left:.6rem">{c.became === "—" ? c.unit : c.became}</strong></div>
+          <p class="small" style="margin-top:.35rem;color:var(--ink-2)">
+            {c.was !== "—" && <>from <strong>{c.was}</strong> · </>}{c.unit} · {c.src}
+            {c.gaz && <> · <span class="mono">London Gazette {c.gaz}</span></>}</p>
+          {c.note && <p class="small" style="margin-top:.35rem">{c.note}</p>}
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">A name that is not him</div>
+    <h2 style="margin-top:.4rem">The cornet of the 17th Light Dragoons</h2>
+    <p class="lede">{d.notHim}</p>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>This is why rank matters more than name in a military search.</strong> Two Robert
+      D'Arcys were being gazetted in the same decade and only one of them is this family's.
+      <span class="chip inf">excluded, and said so</span>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>{d.joseph.head}</h2>
+    <p class="lede">{d.joseph.body}</p>
+    <div class="note" style="margin-top:1.2rem">
+      {d.joseph.means} <span class="chip inf">{d.joseph.chip}</span>
+    </div>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/obituary")}>How it ended →</a> ·
+      <a href={u("/chatham")}>Where he is buried →</a> ·
+      <a href={u("/behind-the-paywall")}>His marriage at Portsea →</a> ·
+      <a href={u("/hornby")}>The claim about his birth →</a></p>
+  </section>
+</Base>

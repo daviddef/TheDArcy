@@ -407,6 +407,18 @@ QLD2 = "record \u00b7 Queensland Marriages / Burials & Memorials (FindMyPast)"
 rec("Jabez Wakefield", "married in Queensland 1863 and buried there 1903 \u00b7 born Bristol 1843, he sailed on the General Hewitt at eleven", QLD2, FMP_L6)
 rec("Zillah Wakefield", "married in Queensland 1871 \u00b7 born Bristol 1845, she sailed on the General Hewitt at eight", QLD2, FMP_L6)
 
+
+ARMY = "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette"
+FMP_L7 = "https://www.findmypast.com.au/"
+for _says in [
+    "1778 · PRACTITIONER ENGINEER AND SECOND LIEUTENANT, The Corps of Engineers — his first commission, and the earliest record of him in this archive",
+    "8 May 1802 · Captain promoted MAJOR IN THE ARMY, Royal Engineers · War Office 11 May 1802 · London Gazette 15478 p.468",
+    "1 March 1805 · Brevet Major promoted LIEUTENANT-COLONEL, Corps of the Royal Engineers, vice Nepean · Ordnance Office 18 March 1805 · London Gazette 15789 p.351",
+    "4 June 1813 · Lieutenant-Colonel promoted COLONEL IN THE ARMY BY BREVET by the Prince Regent · War Office 7 June 1813 · London Gazette 16737 p.1100",
+]:
+    rec("Robert D'Arcy", _says, ARMY, FMP_L7)
+rec("Joseph D'Arcy", "ROYAL ARTILLERY · in the officers' list from 1795, the Army List of 1798, the commission registers of 1802, 1803 and 1826, and the Army Lists of 1840–1844 — commissioned at about fifteen and still listed at sixty-four", "record · British Army Royal Artillery Officers 1716-1899 and Army Lists (FindMyPast, index only)", FMP_L7)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

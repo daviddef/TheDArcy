@@ -1,10 +1,10 @@
 {
-"entries": 723,
+"entries": 728,
 "distinct": 543,
-"records": 250,
+"records": 255,
 "tree": 473,
 "grafted": 98,
-"linked": 723,
+"linked": 728,
 "surnames": 184,
 "groups": [
 {
@@ -1163,7 +1163,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 90,
+"n": 95,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1243,6 +1243,13 @@
 "kind": "record"
 },
 {
+"name": "Joseph D'Arcy",
+"says": "ROYAL ARTILLERY · in the officers' list from 1795, the Army List of 1798, the commission registers of 1802, 1803 and 1826, and the Army Lists of 1840–1844 — commissioned at about fifteen and still listed at sixty-four",
+"source": "record · British Army Royal Artillery Officers 1716-1899 and Army Lists (FindMyPast, index only)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Lindsay Atkinson D'Arcy",
 "says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
 "source": "record · Trove, Australian newspapers",
@@ -1310,6 +1317,34 @@
 "says": "“At Chatham, AT AN ADVANCED AGE, Major General D'Arcy” · Kent Herald, 17 May 1827 — and not one of the seventeen notices gives his forename or names a single relative",
 "source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
 "link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "1778 · PRACTITIONER ENGINEER AND SECOND LIEUTENANT, The Corps of Engineers — his first commission, and the earliest record of him in this archive",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "8 May 1802 · Captain promoted MAJOR IN THE ARMY, Royal Engineers · War Office 11 May 1802 · London Gazette 15478 p.468",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "1 March 1805 · Brevet Major promoted LIEUTENANT-COLONEL, Corps of the Royal Engineers, vice Nepean · Ordnance Office 18 March 1805 · London Gazette 15789 p.351",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "4 June 1813 · Lieutenant-Colonel promoted COLONEL IN THE ARMY BY BREVET by the Prince Regent · War Office 7 June 1813 · London Gazette 16737 p.1100",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
