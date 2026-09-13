@@ -19,6 +19,7 @@ echo "── first pass"
 
 echo "── indexes that read the built HTML"
 python3 tools/build_mentions.py
+python3 tools/audit.py
 python3 tools/build_search.py
 
 echo "── second pass"

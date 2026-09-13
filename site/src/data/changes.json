@@ -1,9 +1,26 @@
 {
  "title": "What changed",
- "eyebrow": "18 passes · 200 changes",
+ "eyebrow": "19 passes · 210 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "14 September 2026",
+   "title": "Priestlands pulled apart, and the family assembled",
+   "did": [
+    "Found Elizabeth Pitt's death registered at Lymington in 1851 — she stayed with the family after Joseph died, so she was a member of that household and not a census-night visitor.",
+    "Found no death notice naming her relationship, so the Pitt question has one more fact around it and still no answer.",
+    "Found Joseph's widow Catherine still at Lymington in February 1852, subscribing to a public fund got up by the Mayor — she is missing from the 1851 census, which turns out to be a gap in the index rather than a departure.",
+    "Searched Hampshire for Joseph's marriage and for Richard Darcy and found neither.",
+    "Rewrote /hornby with what a fortnight of records has added: a bottom-rung commission, a garrison marriage, seventeen death notices naming no relative, and a son who rose. None of it disproves the graft and the page says so.",
+    "Built /robert-family, assembling Robert and Jean's five children for the first time.",
+    "Added nine women to /the-women who were not in this archive a fortnight ago.",
+    "Gave /coverage a row for the British Newspaper Archive, which has been the most productive source of the whole fortnight.",
+    "Noticed the nationality audit had jumped nineteen records in one direction for no reason, and found the cause: I had been hand-writing the classifier on every pass and it had drifted.",
+    "Wrote tools/audit.py, wired it into the build, and filed the drift as an error. Records 299 · Australian 117 · British 182 — 61% to 39%."
+   ],
+   "found": "The Pitt name has a woman attached to it for the first time, and she stayed in the town after the family's head died."
+  },
   {
    "when": "13 September 2026 · FindMyPast",
    "title": "Hannah was a Berkeley woman all along",

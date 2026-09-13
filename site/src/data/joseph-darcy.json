@@ -173,7 +173,26 @@
   "head": "Elizabeth Pitt, aged 55",
   "body": "Living in the house in 1841, between the youngest child and the servants, is an ELIZABETH PITT, born about 1786. This archive's line runs through GEORGE PITT D'ARCY — the name recurs for four generations, down to a George Pitt D'Arcy born at Brisbane in 1864 — and nobody has ever known where the Pitt came from.",
   "careful": "A census does not say who she was. She is not called a relative, because the 1841 census does not record relationships at all. What can be said is that a woman named Pitt was living in the household of Robert D'Arcy's son in 1841, and that Robert D'Arcy's other son had carried Pitt as a middle name since 1783. That is a connection worth chasing and it is not yet an explanation.",
-  "chip": "a lead, and a good one"
+  "chip": "a lead, and a good one",
+  "tested": "Tested and still open. Elizabeth Pitt's death was registered at Lymington in 1851, so she stayed in the district after Joseph died — but no newspaper death notice for her survives to say what she was to the family, and the 1841 census records no relationships. The Pitt question is exactly where it was, with one more fact around it."
  },
- "richard": "And a RICHARD DARCY, aged 57, born about 1784 — in the house, of Joseph's own generation and a year younger than George Pitt D'Arcy. The archive has never heard of him. Robert and Jean married at Portsea in June 1779 and baptised Joseph there in March 1780; a Richard of 1784 fits that family exactly, and the Portsea transcript stops in 1782 so his baptism would never have been found in it."
+ "richard": "And a RICHARD DARCY, aged 57, born about 1784 — in the house, of Joseph's own generation and a year younger than George Pitt D'Arcy. The archive has never heard of him. Robert and Jean married at Portsea in June 1779 and baptised Joseph there in March 1780; a Richard of 1784 fits that family exactly, and the Portsea transcript stops in 1782 so his baptism would never have been found in it. Searched for him across Hampshire in every record type and found nothing further: he is a name, an age and an address, in his brother's house.",
+ "after": {
+  "head": "After him",
+  "rows": [
+   [
+    "October 1848",
+    "PRIESTLANDS is broken into lots and advertised for sale — “Lot 5, Higher Priestlands; Lot 6, Lower Priestlands” — Exeter Flying Post, 19 October 1848"
+   ],
+   [
+    "1851",
+    "ELIZABETH PITT dies at Lymington, her death registered in the district. She had not moved away"
+   ],
+   [
+    "21 February 1852",
+    "“Mrs. D'Arcy … 5 0” subscribes to a Lymington public fund got up by the Mayor, among the local clergy and gentry — Hampshire Advertiser. The widow was still in the town four years on"
+   ]
+  ],
+  "note": "She is not in the 1851 census under any Darcy spelling in Hampshire, which is a gap in the index rather than a departure — the subscription list puts her there the following February."
+ }
 }

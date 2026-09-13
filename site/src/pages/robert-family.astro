@@ -1,0 +1,68 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/robert-family.json";
+---
+<Base
+  title="Robert and Jean's family"
+  eyebrow={`Portsea 1779 – Chatham 1827 · assembled ${d.built}`}
+  dek="Five children, four of them now documented, and a household that was invisible to this archive a fortnight ago.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <div class="lab">The marriage</div>
+    <h2 style="margin-top:.4rem">Portsea St Mary, 21 June 1779</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          {d.parents.map(([who, what, chip]) => (
+            <tr><td><strong>{who}</strong></td><td class="small">{what}</td>
+                <td><span class="chip doc">{chip}</span></td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1rem">
+      <a href={u("/the-corps")}>His career →</a> · <a href={u("/jean-ward")}>Her parents →</a> ·
+      <a href={u("/obituary")}>His death →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The children</div>
+    <h2 style="margin-top:.4rem">Five, and four of them on record</h2>
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
+      {d.children.map((c) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong>{c.who}</strong>
+            <span class={`chip ${c.chip === "documented" ? "doc" : c.chip === "inferred" ? "inf" : "lore"}`}
+                  style="margin-left:.5rem">{c.chip}</span></div>
+          {c.b !== "—" && <p class="small" style="margin-top:.3rem;color:var(--ink-3)">{c.b}</p>}
+          <p class="small" style="margin-top:.35rem">{c.note} <a href={u(c.href)}>→</a></p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">A correction this page exists to carry</div>
+    <h2 style="margin-top:.4rem">Only one of them was baptised at Portsea</h2>
+    <p class="lede">{d.portsea}</p>
+    <p class="small" style="margin-top:1rem"><a href={u("/portsea")}>The coverage test →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The shape of it</h2>
+    <p class="lede">{d.shape}</p>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And what is still open.</strong>
+      <ul style="margin:.6rem 0 0 1.1rem">
+        {d.open.map((x) => (<li style="margin-bottom:.35rem">{x}</li>))}
+      </ul>
+    </div>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/hornby")}>The claim above Robert →</a> ·
+      <a href={u("/chatham")}>The parish →</a> ·
+      <a href={u("/direct-line")}>The spine →</a></p>
+  </section>
+</Base>

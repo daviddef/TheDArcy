@@ -2,6 +2,14 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "14 September 2026",
+    what: "Published a nationality audit eleven times over three weeks without ever writing the classifier down.",
+    truth: "The figure was a regular expression I retyped from memory on each pass, and it drifted. Sources moved between the Australian and British columns for reasons that had nothing to do with new records, and the percentages I reported to the reader were therefore approximations of varying quality.",
+    why: "It was quick to hand-write and it felt like arithmetic rather than method. It is method: the audit is an argument this archive makes about itself, and an argument whose measuring instrument changes shape between readings is not one.",
+    lesson: "If a number is worth publishing repeatedly, the thing that computes it is worth committing. tools/audit.py now runs as part of every build.",
+    href: "/about",
+  },
+  {
     when: "13 September 2026",
     what: "Declared Hannah Saniger's baptism missing from every reachable index — twice, on two separate days, each time with a control test behind it.",
     truth: "HANNAH SANIGOR, baptised at Berkeley on 18 August 1804, father JNO SANIGOR. It is in the same FamilySearch index that produced her brothers, and it is on FindMyPast too.",
