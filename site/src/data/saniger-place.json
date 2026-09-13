@@ -157,5 +157,148 @@
     "on a churchyard stone"
    ]
   ]
- }
+ },
+ "swanhanger": {
+  "claim": "Saniger is a worn-down form of SWANHANGER, and the older spelling is on record for five hundred years.",
+  "proof": "One deed, catalogued twice. Berkeley Castle holds it as BCM/A/1/24/185, 11 April 51 Edw. III (1377), 'Elias de Swonhongre and William Panyter'. Birmingham Archives holds a copy as MS 3549/20, same day, same parties, and calls the land 'a messuage, land and appurtenances in SWANHANGER, co. Glouc.'",
+  "gloss": "Gloucestershire Archives settles it outright in D654/III/9: 'Messuage called Oldminsters in SWANHANGER ... [Saniger in Hinton]'. The archivist supplied the modern name in brackets.",
+  "forms": [
+   [
+    "Swonhungre / Swonhongre",
+    "13th–14th century",
+    "Berkeley Castle Muniments — 126 catalogue entries"
+   ],
+   [
+    "Swanhanger",
+    "1377, and still 1690–1741",
+    "Birmingham MS 3549/20; Gloucestershire D654/III/9"
+   ],
+   [
+    "Swannanger",
+    "1385",
+    "C 131/202/27 — 'William Swannanger of Swannanger in Glos., esquire'"
+   ],
+   [
+    "Saniger",
+    "1601 onward",
+    "the Berkeley estate deeds, and the surname"
+   ],
+   [
+    "Sanigar",
+    "19th–20th century",
+    "Sanigar Farm, Sharpness; Sanigar Lane, Hinton"
+   ]
+  ],
+  "people": "Three forenames carry the older spelling: Thomas de Swonhungre (24 entries), John (10) and William (8) — a family that had already taken its name from the place by about 1300, five centuries before anyone in this archive was born.",
+  "field": "Thomas de Swonhungre granted land in WESTFELD in the early 14th century (BCM/A/1/65/18). John Saniger released three acres in WESTFIELD, Saniger, in 1601. Edward Saniger exchanged three-quarters of an acre in WESTFIELD in 1716. One field, four hundred years, three spellings of one name."
+ },
+ "estate": {
+  "note": "The Berkeley estate deeds, D2957/41 at Gloucestershire Archives, follow one household up the social scale in twenty-four years.",
+  "rows": [
+   [
+    "D2957/41/18",
+    "2 Nov 1601",
+    "JOHN SANIGER of Berkeley, YEOMAN",
+    "Release of 3 acres of arable in Westfield, Saniger, to John Smithe of Panthurst"
+   ],
+   [
+    "D2957/41/126",
+    "9 Aug 1692",
+    "EDWARD SANIGER of Saniger, CLOTHIER",
+    "Takes a £100 mortgage from Richard Holliday of Berkeley, cooper, on Windows Feathers, Upper Feathers and 2 acres in Hamstall"
+   ],
+   [
+    "D2957/41/106",
+    "13 Dec 1709",
+    "EDWARD SANIGER of Saniger, GENT.",
+    "Takes a £60 mortgage from Nicholas Morse of Wicks Elme on the Further Croft, 10 acres in Hamfallow"
+   ],
+   [
+    "D2957/41/168",
+    "13 Nov 1716",
+    "EDWARD SANIGER of Saniger, GENT.",
+    "Exchanges ¾ acre in Oakhunger field with Isaac Smyth of DURSLEY, clothier — the first thing here that ties Saniger to Dursley"
+   ],
+   [
+    "D2957/41/181",
+    "Easter 1731",
+    "MAURICE SANIGER and JANE his wife",
+    "Fine with John Hardinge: two messuages, a loft, 2 gardens, 2 orchards and 3 acres of pasture in Berkeley AND DURSLEY"
+   ],
+   [
+    "D2957/41/58",
+    "28 Feb 1749",
+    "EDWARD SANIGER, witness",
+    "Lease of Panthurst farm, with the Rock or Stage in the Severn, from Daniel Woodward of Bristol, wine merchant, to William Cowley of Saniger, yeoman"
+   ],
+   [
+    "D3831/Box5/1",
+    "1716–1814",
+    "Panthurst Farm, Saniger",
+    "A century of deeds for the farm John Saniger sold into in 1601"
+   ]
+  ],
+  "reading": "In 1692 Edward Saniger is a CLOTHIER. In 1709 the same man at the same address is a GENT. Bigland, writing later, calls him 'Edward Saniger of Saniger, Gent.' and records his wife Esther's death in June 1693. The deeds show the promotion; the gravestone shows the household it happened to."
+ },
+ "neighbours": {
+  "note": "Bigland's Berkeley monuments name six more households as 'of Saniger'. None of them is called Saniger. A hamlet, not a family seat.",
+  "rows": [
+   [
+    "William Hallix of Saniger, in the Parish of Barkeley",
+    "d. 18 Nov 1675, aged 63"
+   ],
+   [
+    "Thomas Smyth of Saniger",
+    "bur. 7 Nov 1720, aged 43 · Sarah his wife d. 10 Dec 1757, aged 76"
+   ],
+   [
+    "Giles Hyett of Saniger",
+    "bur. 1 Jan 1719, aged 71 · Ann, wife of Giles Hyett of Saniger junior, bur. 15 Jan 1719, aged 71"
+   ],
+   [
+    "Daniel Pick of Saniger, in this Parish",
+    "d. 17 Jan 1771, aged 78 · Sarah his second wife d. 1 July 1709, aged 60"
+   ],
+   [
+    "Paul Bishop of Saniger, and Martha his wife",
+    "in the churchyard list"
+   ],
+   [
+    "William Saniger of FROGPITT, Yeoman",
+    "d. 17 Jan 1704 — a Saniger who lived somewhere else"
+   ],
+   [
+    "Edward Saniger of PEDINGTON in this Parish, and Mary his wife",
+    "in the churchyard list; Pedington is a Ham hamlet, not Saniger"
+   ]
+  ]
+ },
+ "hinton": "Bigland describes the tithing in 1791: “4. Hinton, wherein are Wanswell, a reputed Manor … SANIGER, long held by an old Family of the same Name, in which also is another Estate belonging to WOODWARD: Hinton, Halmore; and Breadstone.” The Woodward estate is not a guess — Daniel Woodward of Bristol, wine merchant, leased Panthurst in Saniger in 1749, and the deed is D2957/41/58.",
+ "wills": [
+  [
+   "PROB 11/1825/326",
+   "24 Dec 1833",
+   "Will of ELIZABETH SANIGER, Widow, of Thornbury, Gloucestershire",
+   "Thornbury holds 8 Saniger register entries and lies between Berkeley and Bristol"
+  ],
+  [
+   "PROB 11/1808/232",
+   "6 Nov 1832",
+   "Will of SAMUEL SANIGEAR, Gentleman, of Chipping Sodbury, Gloucestershire",
+   "the -gear spelling, thirteen miles from Thornbury, thirteen months earlier"
+  ],
+  [
+   "GDR/B4/1/387",
+   "1768",
+   "CHRISTIAN SANIGER v. MARY MILLARD: defamation",
+   "a consistory court suit at Gloucester — the only Saniger in this archive who went to law over her name"
+  ],
+  [
+   "CO1/I/2/B/6",
+   "2 April 1856",
+   "ELIZABETH SANIGER, aged 3, of Cam",
+   "a coroner's inquest. “Casual death. Epileptic, suffocated. Lodgings paid for by Berkeley parish.”"
+  ]
+ ],
+ "minchinhampton": "Bigland found a second family under the -gear spelling twenty miles away, at Minchinhampton: Mary, daughter of William Sanigear, d. 24 Feb 1759; William their son, d. 14 July 1760; and Sarah, wife of [William] Sanigear and daughter of Thomas and Ann Lawton, d. 14 June 1770, aged 34."
 }

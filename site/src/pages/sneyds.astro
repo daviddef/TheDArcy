@@ -90,6 +90,74 @@ const c = d.counts;
     </div>
   </section>
 
+  <section class="blk">
+    <div class="lab">1861 census · {d.wellStreet.census}</div>
+    <h2 style="margin-top:.4rem">Well Street, Hanley — the grocer's shop</h2>
+
+    <p class="lede">The family tree makes two very specific, entirely unverified claims about this
+    line: that <a href={u("/people/samuel-sneyd")}>Samuel Sneyd</a>, born Madeley 1769, "a grocer of
+    Hanley", died on <strong>20 September 1856 at No 3, Well St, Hanley</strong>; and that he left a
+    widow, <strong>Elizabeth Margaret Oliver of Oswestry, Shropshire</strong>, who outlived him by
+    five years and died on 1 December 1861. No record behind either. Nobody had ever opened a
+    Staffordshire census.</p>
+
+    <p style="margin-top:1.1rem">Here is Well Street five years later.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Name</th><th>Relation</th><th class="m">Cond.</th><th class="m">Age</th><th>Occupation</th><th>Born</th></tr></thead>
+        <tbody>
+          {d.wellStreet.rows.map(([sn, fn, rel, cond, age, occ, cty, pl]) => (
+            <tr>
+              <td><strong>{fn}</strong> <span class="small" style="color:var(--ink-3)">{sn}</span></td>
+              <td class="small">{rel === "MOTHER" ? <strong>Mother</strong> : rel}</td>
+              <td class="m small">{cond}</td>
+              <td class="m"><strong>{age}</strong></td>
+              <td class="small">{occ || "—"}</td>
+              <td class="small">{cty}{pl ? `, ${pl}` : ""}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:.7rem">The address in the enumerator's own hand:
+      <strong>{d.wellStreet.address}</strong>.</p>
+
+    <div class="lab" style="margin-top:1.6rem">Five points of contact</div>
+    <div class="scroll" style="margin-top:.6rem">
+      <table>
+        <thead><tr><th></th><th>What the tree says</th><th>What the census says</th></tr></thead>
+        <tbody>
+          {d.wellStreet.matches.map(([k, tree, cen]) => (
+            <tr><td><strong>{k}</strong></td><td class="small">{tree || "—"}</td><td class="small">{cen}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Read carefully.</strong> {d.wellStreet.caveat}
+      <span class="chip inf">an identification, not a record</span>
+      <br /><br />
+      <strong>And one number does not fit.</strong> {d.wellStreet.ageProblem}
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">What it does give outright is a household: a
+    <strong>James Sneyd, engraver, born Hanley about 1819</strong>, with two daughters who paint
+    pottery for a living. The tree gives Samuel and Elizabeth five children and this archive
+    publishes only one of them —
+    <a href={u("/people/samuel-charles-sneyd-1810")}>Samuel Charles</a>, born Hanley 1810, who sailed.
+    James stayed, kept the shop, and engraved.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>Her birthplace is left as it was written.</strong> {d.wellStreet.birthplace}
+      <a href={u("/what-we-got-wrong")}>Why that rule exists →</a>
+    </div>
+
+    <p class="small" style="margin-top:1.2rem"><strong>And why this took so long to find.</strong>
+    {d.coverage1861} <span class="chip doc">coverage established by control test</span></p>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>Where the Staffordshire Sneyds are</h2>
     <div class="scroll" style="margin-top:1.1rem">

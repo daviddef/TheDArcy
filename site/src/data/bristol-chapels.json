@@ -1,0 +1,347 @@
+{
+ "searched": "13 September 2026",
+ "source": "The National Archives, Discovery — series RG 4, Non-Parochial Registers, searched for Bristol",
+ "url": "https://discovery.nationalarchives.gov.uk/results/r?_sd=&_q=%22RG%204%22%20Bristol",
+ "total": 36,
+ "window": [
+  "RG 4/388",
+  "RG 4/2697",
+  "RG 4/1358",
+  "RG 4/1544",
+  "RG 4/1792",
+  "RG 4/913",
+  "RG 4/3254",
+  "RG 4/1830",
+  "RG 4/1360",
+  "RG 4/2688",
+  "RG 4/1361",
+  "RG 4/4619"
+ ],
+ "rows": [
+  {
+   "ref": "RG 4/388",
+   "place": "Bridge Street Chapel",
+   "county": "Gloucester",
+   "den": "Congregational",
+   "kind": "Baptisms",
+   "from": 1714,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/3765",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1679,
+   "to": 1746
+  },
+  {
+   "ref": "RG 4/3766",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Births",
+   "from": 1726,
+   "to": 1778
+  },
+  {
+   "ref": "RG 4/2871",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1746,
+   "to": 1791
+  },
+  {
+   "ref": "RG 4/1829",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1756,
+   "to": 1827
+  },
+  {
+   "ref": "RG 4/2697",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Births",
+   "from": 1787,
+   "to": 1817
+  },
+  {
+   "ref": "RG 4/1826",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1789,
+   "to": 1803
+  },
+  {
+   "ref": "RG 4/1827",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1804,
+   "to": 1836
+  },
+  {
+   "ref": "RG 4/1358",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Births",
+   "from": 1813,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/2923",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1828,
+   "to": 1834
+  },
+  {
+   "ref": "RG 4/1828",
+   "place": "Broad Mead",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1836,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/1544",
+   "place": "Broadmead Welsh Chapel",
+   "county": "Somerset",
+   "den": "Calvinistic Methodist",
+   "kind": "Births and Baptisms",
+   "from": 1808,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/2686",
+   "place": "Brunswick Chapel in Brunswick Square",
+   "county": "Somerset",
+   "den": "Independent",
+   "kind": "Births and Baptisms",
+   "from": 1834,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/2499",
+   "place": "Brunswick Chapel in Brunswick Square",
+   "county": "Somerset",
+   "den": "Independent",
+   "kind": "Burials",
+   "from": 1837,
+   "to": 1856
+  },
+  {
+   "ref": "RG 4/2498",
+   "place": "Brunswick Chapel in Brunswick Square",
+   "county": "Somerset",
+   "den": "Independent",
+   "kind": "Baptisms",
+   "from": 1838,
+   "to": 1856
+  },
+  {
+   "ref": "RG 4/1792",
+   "place": "Castle Green Meeting",
+   "county": "Somerset",
+   "den": "Independent",
+   "kind": "Births and Baptisms",
+   "from": 1784,
+   "to": 1816
+  },
+  {
+   "ref": "RG 4/1359",
+   "place": "Castle Green Meeting",
+   "county": "Somerset",
+   "den": "Independent",
+   "kind": "Births and Baptisms",
+   "from": 1816,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/913",
+   "place": "Ebenezer Chapel in King Street",
+   "county": "Somerset",
+   "den": "Wesleyan",
+   "kind": "Births and Baptisms",
+   "from": 1793,
+   "to": 1819
+  },
+  {
+   "ref": "RG 4/3257",
+   "place": "Ebenezer Chapel in King Street",
+   "county": "Somerset",
+   "den": "Wesleyan",
+   "kind": "Births and Baptisms",
+   "from": 1817,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/2698",
+   "place": "King Street",
+   "county": "Somerset",
+   "den": "Baptist",
+   "kind": "Burials",
+   "from": 1827,
+   "to": 1855
+  },
+  {
+   "ref": "RG 4/3254",
+   "place": "Langton Street Chapel, formerly Guinea Street Chapel",
+   "county": "Somerset",
+   "den": "Wesleyan",
+   "kind": "Births and Baptisms",
+   "from": 1813,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/2687",
+   "place": "Langton Street Chapel, formerly Guinea Street Chapel",
+   "county": "Somerset",
+   "den": "Wesleyan",
+   "kind": "Burials",
+   "from": 1828,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/1830",
+   "place": "Lewins Mead Chapel",
+   "county": "Somerset",
+   "den": "Presbyterian",
+   "kind": "Baptisms",
+   "from": 1718,
+   "to": 1840
+  },
+  {
+   "ref": "RG 4/2497",
+   "place": "Lewins Mead Chapel",
+   "county": "Somerset",
+   "den": "Presbyterian",
+   "kind": "Baptisms",
+   "from": 1759,
+   "to": 1786
+  },
+  {
+   "ref": "RG 4/3507",
+   "place": "Lewins Mead Chapel",
+   "county": "Somerset",
+   "den": "Presbyterian",
+   "kind": "Burials",
+   "from": 1768,
+   "to": 1820
+  },
+  {
+   "ref": "RG 4/3323",
+   "place": "Lewins Mead Chapel",
+   "county": "Somerset",
+   "den": "Presbyterian",
+   "kind": "Burials",
+   "from": 1820,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/1831",
+   "place": "Newfoundland Street and Great George Street",
+   "county": "Somerset",
+   "den": "Independent",
+   "kind": "Births and Baptisms",
+   "from": 1822,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/1417",
+   "place": "Somerset",
+   "county": "",
+   "den": "Countess of Huntingdon",
+   "kind": "Births and Baptisms (1820-1837); Bristol, Somerset, Denomination: Countess of Huntingdon: Burials (1830-1837)",
+   "from": 1820,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/3255",
+   "place": "St Philips Chapel",
+   "county": "Somerset",
+   "den": "Wesleyan",
+   "kind": "Births and Baptisms",
+   "from": 1817,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/3256",
+   "place": "St Philips Chapel",
+   "county": "Somerset",
+   "den": "Wesleyan",
+   "kind": "Burials",
+   "from": 1818,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/1360",
+   "place": "Tabernacle in Penn Street",
+   "county": "Somerset",
+   "den": "Calvinistic Methodist",
+   "kind": "Births and Baptisms",
+   "from": 1775,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/2688",
+   "place": "Tabernacle in Penn Street",
+   "county": "Somerset",
+   "den": "Calvinistic Methodist",
+   "kind": "Births and Baptisms",
+   "from": 1775,
+   "to": 1812
+  },
+  {
+   "ref": "RG 4/1361",
+   "place": "Upper Maudlin Street",
+   "county": "Somerset",
+   "den": "Moravian",
+   "kind": "Births, Baptisms and Burials",
+   "from": 1755,
+   "to": 1837
+  },
+  {
+   "ref": "RG 4/4617",
+   "place": "formerly the Mayor's Chapel St Mark the Gaunt",
+   "county": "",
+   "den": "Foreign Churches",
+   "kind": "Baptisms, Marriages and Burials",
+   "from": 1687,
+   "to": 1701
+  },
+  {
+   "ref": "RG 4/4618",
+   "place": "formerly the Mayor's Chapel St Mark the Gaunt",
+   "county": "",
+   "den": "Foreign Churches",
+   "kind": "Baptisms, Marriages and Burials",
+   "from": 1701,
+   "to": 1715
+  },
+  {
+   "ref": "RG 4/4619",
+   "place": "formerly the Mayor's Chapel St Mark the Gaunt",
+   "county": "",
+   "den": "Foreign Churches",
+   "kind": "Baptisms, Marriages and Burials",
+   "from": 1715,
+   "to": 1807
+  }
+ ],
+ "target": "Hannah Saniger, born about 1805–1815, married James Wakefield, and had her first children baptised — somewhere — in Bristol"
+}

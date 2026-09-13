@@ -680,6 +680,21 @@
 "slug": "william-sainger",
 "n": 3
 },
+"christian-saniger": {
+"name": "Christian Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "plaintiff in a defamation suit against Mary Millard in the Gloucester consistory court, 1768 (GDR/B4/1/387)",
+"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "christian-saniger",
+"n": 1
+},
 "edward-saniger": {
 "name": "Edward Saniger",
 "surname": "SANIGER",
@@ -708,12 +723,27 @@
 "says": "freeholder for the tithing of Hinton at the Berkeley election of 1776",
 "source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
 "link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
+},
+{
+"says": "of Saniger, Berkeley, CLOTHIER · lends £100 on mortgage to Richard Holliday of Berkeley, cooper, 9 August 1692",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "of Saniger, Berkeley, GENT. · lends £60 on mortgage to Nicholas Morse of Wicks Elme, 13 December 1709 — the same address, seventeen years, and a different rank",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "of Saniger, Berkeley, gent. · exchanges land in Oakhunger field with Isaac Smyth of DURSLEY, clothier, 13 November 1716",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "edward-saniger",
-"n": 5
+"n": 8
 },
 "elizabeth-saniger": {
 "name": "Elizabeth Saniger",
@@ -723,12 +753,17 @@
 "says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
 "source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
 "link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "widow, of THORNBURY, Gloucestershire · will proved 24 December 1833 (PROB 11/1825/326)",
+"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
+"link": "https://discovery.nationalarchives.gov.uk/"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "elizabeth-saniger",
-"n": 1
+"n": 2
 },
 "esther-saniger": {
 "name": "Esther Saniger",
@@ -768,12 +803,17 @@
 "says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
 "source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
 "link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "and JANE his wife · a fine with John Hardinge over two messuages and land in Berkeley AND DURSLEY, Easter term 1731",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "maurice-saniger",
-"n": 1
+"n": 2
 },
 "samuel-saniger": {
 "name": "Samuel Saniger",
@@ -928,6 +968,51 @@
 "inTree": false,
 "treeLink": "",
 "slug": "thomas-sinegar",
+"n": 1
+},
+"john-de-swonhungre": {
+"name": "John de Swonhungre",
+"surname": "SWONHUNGRE",
+"rows": [
+{
+"says": "of Swanhanger · leased 48 acres 45 perches by Thomas lord of Berkeley, 1 September 1316",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-de-swonhungre",
+"n": 1
+},
+"thomas-de-swonhungre": {
+"name": "Thomas de Swonhungre",
+"surname": "SWONHUNGRE",
+"rows": [
+{
+"says": "of Swanhanger · granted the land of Hekeriche by Sir Thomas de Berkeley, 23 November 1299",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "thomas-de-swonhungre",
+"n": 1
+},
+"william-swonhungre": {
+"name": "William Swonhungre",
+"surname": "SWONHUNGRE",
+"rows": [
+{
+"says": "of Swanhanger · brother and heir of Thomas Swonhungre of Wanswell, 1356",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "william-swonhungre",
 "n": 1
 },
 "thomas-sinnegar": {
@@ -1500,6 +1585,21 @@
 "slug": "william-sanigaer",
 "n": 1
 },
+"samuel-sanigear": {
+"name": "Samuel Sanigear",
+"surname": "SANIGEAR",
+"rows": [
+{
+"says": "gentleman, of CHIPPING SODBURY, Gloucestershire · will proved 6 November 1832 (PROB 11/1808/232)",
+"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "samuel-sanigear",
+"n": 1
+},
 "john-sinneger": {
 "name": "John Sinneger",
 "surname": "SINNEGER",
@@ -1543,6 +1643,36 @@
 "inTree": false,
 "treeLink": "",
 "slug": "henry-stone",
+"n": 1
+},
+"william-swannanger": {
+"name": "William Swannanger",
+"surname": "SWANNANGER",
+"rows": [
+{
+"says": "of Swannanger in Gloucestershire, ESQUIRE · bound with William Newport of Lichfield for £400 to a London goldsmith, 28 November 1385; the sheriff could not find him",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "william-swannanger",
+"n": 1
+},
+"elias-de-swonhongre": {
+"name": "Elias de Swonhongre",
+"surname": "SWONHONGRE",
+"rows": [
+{
+"says": "of Swanhanger · grants a messuage to William Panyter for life, 11 April 1377 — the deed Berkeley catalogues under the man and Birmingham under the PLACE, which is what proves Swanhanger and Saniger are one word",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "elias-de-swonhongre",
 "n": 1
 },
 "george-thomson": {
@@ -1682,9 +1812,9 @@
 }
 },
 "counts": {
-"named": 135,
-"withTreePage": 29,
-"ownPage": 106,
-"mentions": 189
+"named": 143,
+"withTreePage": 30,
+"ownPage": 113,
+"mentions": 203
 }
 }

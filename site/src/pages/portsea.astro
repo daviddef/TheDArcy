@@ -1,0 +1,86 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/portsea.json";
+const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
+---
+<Base
+  title="Two years of Portsea"
+  eyebrow={`${d.parish} · coverage tested ${d.searched}`}
+  dek="The first record of this family ever found in England survives because it falls inside a transcript twenty-two months long. Nobody had checked how long the transcript was.">
+
+  <section class="blk">
+    <p class="lede">On 19 March 1780, at Portsea St Mary in Hampshire, a child called
+    <strong>Joseph D'Arcy</strong> was baptised, son of <strong>Robert</strong> and
+    <strong>Jean</strong>. It is the earliest English record this archive holds of the family, and it
+    is the only document anywhere that names
+    <a href={u("/people/robert-d-arcy")}>Major-General Robert D'Arcy</a> as somebody's father.
+    <a href={u("/hornby")}>How it was found →</a></p>
+
+    <p class="dek" style="margin-top:1.1rem">This page is not about that entry. It is about how much
+    of Portsea's register stands behind it, which is a question that should have been asked first.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The control</div>
+    <h2 style="margin-top:.4rem">Five common surnames, six years, one parish</h2>
+
+    <p>{d.control.method}</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Surname</th><th class="m">Hampshire, 1778–1783</th><th class="m">Of those, Portsea St Mary</th></tr></thead>
+        <tbody>
+          {d.control.rows.map(([sn, ham, ports]) => (
+            <tr><td><strong>{sn}</strong></td><td class="m">{ham}</td><td class="m"><strong>{ports}</strong></td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1.2rem">That is <strong>{totalCtrl} Portsea entries</strong>. Here is when
+    they fall.</p>
+
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <thead><tr><th class="m">Year</th><th class="m">Entries</th><th>&nbsp;</th></tr></thead>
+        <tbody>
+          {d.control.years.map(([y, n]) => (
+            <tr>
+              <td class="m"><strong>{y}</strong></td>
+              <td class="m">{n}</td>
+              <td><span style={`display:inline-block;height:9px;border-radius:2px;background:${n ? "var(--accent)" : "var(--rule)"};width:${Math.max(n * 9, 3)}px`}></span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="small" style="margin-top:.9rem">{d.control.types}</p>
+
+    <p style="margin-top:1.2rem">{d.earlier}</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.verdict}</strong>
+      <span class="chip doc">coverage established</span>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What that means</h2>
+    <ol class="dek">
+      {d.consequences.map(([h, b]) => (
+        <li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>
+      ))}
+    </ol>
+
+    <div class="note" style="margin-top:1.4rem">
+      <strong>The find is not weakened. The silence around it is.</strong> Joseph D'Arcy was baptised
+      at Portsea on 19 March 1780 to Robert and Jean, and that remains as solid as it was this
+      morning — it is a parish register entry and it says what it says. What has changed is that this
+      archive can no longer treat Portsea as a parish it has searched. It has searched
+      twenty-two months of it. <a href={u("/errands")}>The volume to read →</a> ·
+      <a href={u("/what-we-got-wrong")}>Filed as an error →</a>
+    </div>
+  </section>
+</Base>

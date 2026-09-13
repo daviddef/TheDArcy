@@ -1,9 +1,27 @@
 {
  "title": "What changed",
- "eyebrow": "15 passes · 89 changes",
+ "eyebrow": "16 passes · 100 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "Swanhanger, Well Street, and two years of Portsea",
+   "did": [
+    "Searched the whole TNA catalogue for Saniger rather than one collection: 71 records, including the Berkeley estate deeds that follow Edward Saniger from clothier in 1692 to gentleman in 1709.",
+    "Proved that Saniger is a worn-down SWANHANGER. One deed of 1377 is catalogued by Berkeley Castle under the man, de Swonhongre, and by Birmingham Archives under the place, Swanhanger — and Gloucestershire Archives glosses a third document “Swanhanger … [Saniger in Hinton]”.",
+    "Searched probate for the first time. Two wills — Elizabeth Saniger, widow of Thornbury, 1833, and Samuel Sanigear of Chipping Sodbury, 1832 — and a defamation suit brought by Christian Saniger in 1768.",
+    "Re-read Bigland properly: six more Saniger entries in volume one, six neighbouring households styled “of Saniger” who are not called Saniger, and none at all in volume two.",
+    "Catalogued every Bristol chapel register in RG 4. There are 36, not the 5 this archive's errand list assumed, and exactly 12 can hold a birth between 1805 and 1815.",
+    "Found Samuel Sneyd's household. The 1861 census at Well St, Hanley — a grocer's shop — holds his widow Elizabeth, aged 82, born Shropshire, eight months before she died.",
+    "Established by control test that FreeCEN holds only 1861 for Staffordshire, so the 1841 and 1851 searches everyone assumed had failed were never possible.",
+    "Tested how much of Portsea's register stands behind Joseph D'Arcy's 1780 baptism. Twenty-two months of it.",
+    "Found Robert D'Arcy in the London Gazette of 19 July 1813, gazetted Colonel of the Royal Engineers.",
+    "Rewrote /berkeley's conclusion, built /portsea and /bristol-chapels, and filed two more errors.",
+    "Re-ran the nationality audit. British evidence now outnumbers Australian for the first time: 107 to 96."
+   ],
+   "found": "The family's name is a hillside above the Severn where the swans were, and the archive's oldest English record survives because it falls inside a two-year window nobody had measured."
+  },
   {
    "when": "13 September 2026",
    "title": "Saniger from 1272, and Bigland fills the gap",

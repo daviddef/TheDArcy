@@ -258,6 +258,41 @@ for n, says in [
 ]:
     rec(n, says, BIG, BIG_L)
 
+
+# --- The older name, the estate deeds, probate, and the Hanley census ------
+TNA_L = "https://discovery.nationalarchives.gov.uk/"
+SWAN = "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)"
+for n, says in [
+    ("Elias de Swonhongre", "of Swanhanger · grants a messuage to William Panyter for life, 11 April 1377 — the deed Berkeley catalogues under the man and Birmingham under the PLACE, which is what proves Swanhanger and Saniger are one word"),
+    ("Thomas de Swonhungre", "of Swanhanger · granted the land of Hekeriche by Sir Thomas de Berkeley, 23 November 1299"),
+    ("John de Swonhungre", "of Swanhanger · leased 48 acres 45 perches by Thomas lord of Berkeley, 1 September 1316"),
+    ("William Swonhungre", "of Swanhanger · brother and heir of Thomas Swonhungre of Wanswell, 1356"),
+    ("William Swannanger", "of Swannanger in Gloucestershire, ESQUIRE · bound with William Newport of Lichfield for £400 to a London goldsmith, 28 November 1385; the sheriff could not find him"),
+]:
+    rec(n, says, SWAN, TNA_L)
+
+DEED = "record · Gloucestershire Archives D2957/41 (catalogue description)"
+for n, says in [
+    ("Edward Saniger", "of Saniger, Berkeley, CLOTHIER · lends £100 on mortgage to Richard Holliday of Berkeley, cooper, 9 August 1692"),
+    ("Edward Saniger", "of Saniger, Berkeley, GENT. · lends £60 on mortgage to Nicholas Morse of Wicks Elme, 13 December 1709 — the same address, seventeen years, and a different rank"),
+    ("Edward Saniger", "of Saniger, Berkeley, gent. · exchanges land in Oakhunger field with Isaac Smyth of DURSLEY, clothier, 13 November 1716"),
+    ("Maurice Saniger", "and JANE his wife · a fine with John Hardinge over two messuages and land in Berkeley AND DURSLEY, Easter term 1731"),
+]:
+    rec(n, says, DEED, TNA_L)
+
+PRO = "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)"
+rec("Elizabeth Saniger", "widow, of THORNBURY, Gloucestershire · will proved 24 December 1833 (PROB 11/1825/326)", PRO, TNA_L)
+rec("Samuel Sanigear", "gentleman, of CHIPPING SODBURY, Gloucestershire · will proved 6 November 1832 (PROB 11/1808/232)", PRO, TNA_L)
+rec("Christian Saniger", "plaintiff in a defamation suit against Mary Millard in the Gloucester consistory court, 1768 (GDR/B4/1/387)", PRO, TNA_L)
+
+CEN61 = "record · 1861 census, Hanley, Staffordshire (FreeCEN)"
+CEN61_L = "https://www.freecen.org.uk/"
+rec("Elizabeth Margaret Oliver", "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there", CEN61, CEN61_L)
+
+GAZ = "record · The London Gazette, issue 16755, 19 July 1813"
+GAZ_L = "https://www.thegazette.co.uk/London/issue/16755/page/1431"
+rec("Robert D'Arcy", "\u201cBrevet Colonel Robert D'Arcy to be Colonel, vice Evelegh\u201d \u00b7 Office of Ordnance, Corps of Royal Engineers, gazetted 19 July 1813", GAZ, GAZ_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

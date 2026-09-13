@@ -114,6 +114,118 @@ import d from "../data/saniger-place.json";
   </section>
 
   <section class="blk">
+    <div class="lab">The older name</div>
+    <h2 style="margin-top:.4rem">Before it was Saniger it was Swanhanger</h2>
+
+    <p class="lede">{d.swanhanger.claim}</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>One deed, catalogued twice, settles it.</strong> {d.swanhanger.proof}
+      <br /><br />
+      {d.swanhanger.gloss} <span class="chip doc">documented</span>
+    </div>
+
+    <div class="scroll" style="margin-top:1.3rem">
+      <table>
+        <thead><tr><th>Spelling</th><th class="m">When</th><th>Where it is written</th></tr></thead>
+        <tbody>
+          {d.swanhanger.forms.map(([f, w, src]) => (
+            <tr><td><strong>{f}</strong></td><td class="m">{w}</td><td class="small">{src}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1.2rem">{d.swanhanger.people}</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And they are all standing in the same field.</strong> {d.swanhanger.field}
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">Swan-hanger is ordinary Old English: <em>hangra</em>, a
+    wooded slope. The place is a wooded slope above the Severn where swans were. Everything else —
+    the hamlet, the surname, the woman who carried it to Queensland — comes off that.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Gloucestershire Archives, D2957/41</div>
+    <h2 style="margin-top:.4rem">A clothier in 1692, a gentleman in 1709</h2>
+
+    <p class="lede">{d.estate.note}</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>Named</th><th>What it is</th></tr></thead>
+        <tbody>
+          {d.estate.rows.map(([ref, when, who, what]) => (
+            <tr>
+              <td class="mono small">{ref}</td>
+              <td class="m">{when}</td>
+              <td><strong>{who}</strong></td>
+              <td class="small">{what}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">{d.estate.reading}
+      <span class="chip doc">documented</span></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Bigland's Berkeley, hamlet four</div>
+    <h2 style="margin-top:.4rem">Who else was "of Saniger"</h2>
+
+    <p class="lede">{d.hinton}</p>
+
+    <p style="margin-top:1.1rem">{d.neighbours.note}</p>
+
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          {d.neighbours.rows.map(([who, what]) => (
+            <tr><td><strong>{who}</strong></td><td class="small">{what}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="small" style="margin-top:1.1rem">{d.minchinhampton}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Probate, and one inquest</div>
+    <h2 style="margin-top:.4rem">Four records that name Sanigers outside a parish register</h2>
+
+    <p>Probate is the record type that names children. This archive had never searched it for this
+    surname. Four things came back, and one of them is not a will at all.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>What it is</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          {d.wills.map(([ref, when, what, why]) => (
+            <tr>
+              <td class="mono small">{ref}</td><td class="m">{when}</td>
+              <td><strong>{what}</strong></td><td class="small">{why}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Elizabeth Saniger of Thornbury is the one to open.</strong> She died a widow in
+      December 1833, in a parish that sits between Berkeley and Bristol and holds eight Saniger
+      register entries. <a href={u("/people/hannah-saniger")}>Hannah Saniger</a> was married with
+      children in Bristol by then. A widow's will names her children, and that is precisely the
+      document this archive has never had. <a href={u("/errands")}>On the queue →</a>
+      <span class="chip inf">worth opening; not yet opened</span>
+    </div>
+  </section>
+
+  <section class="blk">
     <div class="lab">What it does to the oldest claim</div>
     <h2 style="margin-top:.4rem">A yeoman in 1601, and a gentleman clothier in 1692</h2>
 
@@ -154,6 +266,11 @@ import d from "../data/saniger-place.json";
       Archives</strong> — <span class="mono">D2957/41</span> — that nobody has opened, covering
       exactly the years Berkeley's parish transcript does not.
       <a href={u("/errands")}>Now on the queue →</a></li>
+      <li style="margin-bottom:.5rem"><strong>The name has a meaning, and it is a landscape.</strong>
+      Swanhanger — the wooded slope where the swans were, above the Severn. Every Saniger in this
+      archive is named after a hillside. <span class="chip doc">documented from 1377</span></li>
+      <li style="margin-bottom:.5rem"><strong>There is a will to open.</strong> Elizabeth Saniger,
+      widow of Thornbury, proved 24 December 1833. It is digitised at Kew.</li>
       <li><strong>And it still does not reach Hannah.</strong> Nothing here connects the Saniger
       landholders of Berkeley to the woman who married James Wakefield and went to Queensland. That
       join remains where it was: in a Bristol chapel register, or in Berkeley's own book after 1677.</li>

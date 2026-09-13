@@ -130,5 +130,129 @@
    "Tamworth",
    13
   ]
- ]
+ ],
+ "wellStreet": {
+  "census": "1861, Staffordshire, Hanley, Stoke upon Trent — Wellington district, piece 1932, folio 38, schedule 22",
+  "address": "Well St, Grocers Shop",
+  "rows": [
+   [
+    "SNEYD",
+    "James",
+    "Head",
+    "M",
+    42,
+    "Engraver",
+    "Staffordshire",
+    "Hanley"
+   ],
+   [
+    "SNEYD",
+    "Ann",
+    "Wife",
+    "M",
+    41,
+    "",
+    "Staffordshire",
+    "Hanley"
+   ],
+   [
+    "SNEYD",
+    "Elizabeth A",
+    "Dau",
+    "U",
+    21,
+    "Paintress",
+    "Staffordshire",
+    "Hanley"
+   ],
+   [
+    "SNEYD",
+    "Mary J",
+    "Dau",
+    "U",
+    18,
+    "Paintress",
+    "Staffordshire",
+    "Hanley"
+   ],
+   [
+    "SNEYD",
+    "James A",
+    "Son",
+    "U",
+    10,
+    "Scholar",
+    "Staffordshire",
+    "Hanley"
+   ],
+   [
+    "SNEYD",
+    "Elizabeth",
+    "MOTHER",
+    "W",
+    82,
+    "",
+    "Shropshire",
+    "Staly Cladwin"
+   ]
+  ],
+  "tree": [
+   [
+    "Died",
+    "20 September 1856",
+    "No 3, Well St, Hanley"
+   ],
+   [
+    "Occupation",
+    "a grocer of Hanley",
+    ""
+   ],
+   [
+    "Wife",
+    "Elizabeth Margaret Oliver",
+    "married 22 October 1809 at Audlem, Cheshire"
+   ],
+   [
+    "Born",
+    "1769",
+    "Madeley, Staffordshire"
+   ]
+  ],
+  "matches": [
+   [
+    "The street",
+    "No 3, Well St, Hanley",
+    "Well St, Hanley"
+   ],
+   [
+    "The trade",
+    "“a grocer of Hanley”",
+    "the enumerator writes GROCERS SHOP against the address"
+   ],
+   [
+    "The wife",
+    "Elizabeth Margaret Oliver",
+    "Elizabeth — and a WIDOW; Samuel died in 1856, five years before"
+   ],
+   [
+    "Her county",
+    "born at OSWESTRY, SHROPSHIRE, 7 May 1787",
+    "born SHROPSHIRE"
+   ],
+   [
+    "Her death",
+    "1 December 1861, Staffordshire",
+    "alive at Well Street on 7 April 1861 — eight months earlier"
+   ],
+   [
+    "Her age",
+    "would make her 73",
+    "the enumerator wrote 82 — eight years out, and not explained"
+   ]
+  ],
+  "caveat": "The census does not say whose widow she is. It says she is James's mother, at Well Street, in a grocer's shop, a widow, born in Shropshire. The tree says Samuel Sneyd the grocer of Well Street died there in 1856 leaving a widow Elizabeth Margaret Oliver, born at Oswestry in Shropshire, who died in Staffordshire on 1 December 1861. Those are two independent statements that agree on the street, the shop, the widowhood, the forename and the county, and that place her death eight months after the enumerator called. No parish entry names her as Samuel's wife in this archive yet, so this is an identification, not a record.",
+  "birthplace": "Her birthplace is transcribed “Staly Cladwin”, Shropshire. No Shropshire parish is spelled that way, and Oswestry — where the tree puts her — is not a plausible reading of it. Oswestry's neighbours include names that a bad hand could turn into this, but naming one would be inventing evidence. It is recorded here exactly as the transcriber read it.",
+  "ageProblem": "One number does not fit. Born 1787, she is seventy-three in April 1861; the enumerator wrote EIGHTY-TWO. Ages on a census are what somebody in the house said on the night, and eighty-two for seventy-three is a large error — but it is the kind of error an eighty-year-old household makes about its oldest member, and it is the only figure on the page that argues against the identification. It is printed here rather than quietly dropped."
+ },
+ "coverage1861": "FreeCEN holds 1861 for Staffordshire and, on testing, nothing else: a control search for John Smith born 1800–1805 in Staffordshire returns 31 people and every one of them is 1861. So Samuel Sneyd, who died in 1856, could never have appeared however hard he was looked for — and his son Samuel Charles had been in Australia for twenty-four years."
 }

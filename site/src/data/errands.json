@@ -66,13 +66,13 @@
   },
   {
    "n": 7,
-   "what": "Five named Bristol nonconformist registers at Kew",
-   "where": "The National Archives, RG 4",
+   "what": "Twelve named RG 4 Bristol chapel registers — the birth/baptism volumes that cover 1805–1815",
+   "where": "The National Archives, RG 4 — digitised",
    "cost": "a visit, or a digitised copy via a subscription site",
-   "settles": "A baptism for Hannah Saniger about 1805. RG 4/2697 Broad Mead Baptist, RG 4/1830 Lewins Mead Presbyterian, RG 4/388 Bridge Street Congregational, RG 4/913 Ebenezer Chapel Wesleyan, RG 4/1792 Castle Green Independent. Five documents, all covering 1805, none transcribed. This replaces the vague instruction to write to Bristol.",
+   "settles": "Where Hannah Saniger was born, if she was born to a chapel-going family. The catalogue has now been read properly: there are THIRTY-SIX Bristol registers in RG 4, not five, and exactly twelve of them are births or baptisms whose dates cover her window. Broad Mead Baptist births 1787–1817 (RG 4/2697) and Lewins Mead Presbyterian baptisms 1718–1840 (RG 4/1830) each cover it on their own.",
    "why": "",
-   "href": "/sanigers",
-   "file": "identified 13 September 2026 via TNA Discovery"
+   "href": "/bristol-chapels",
+   "file": "catalogued in full, 13 September 2026"
   },
   {
    "n": 8,
@@ -173,6 +173,46 @@
    "why": "",
    "href": "/hornby",
    "file": "notes/letters/2026-09-tna-ordnance.md"
+  },
+  {
+   "n": 18,
+   "what": "PROB 11/1825/326 — the will of Elizabeth Saniger, widow of Thornbury",
+   "where": "The National Archives, Kew — digitised, downloadable",
+   "cost": "£3.50 as a PDF",
+   "settles": "A widow's will names her children. This one was proved on 24 December 1833, in a parish between Berkeley and Bristol that holds eight Saniger register entries, at exactly the moment Hannah Saniger was a married woman with children in Bristol. Probate is the record type this archive has never once searched for this surname, and this is the first thing it turned up.",
+   "why": "THE BEST NEW LEAD ON HANNAH",
+   "href": "/saniger-place",
+   "file": "found 13 September 2026, TNA Discovery"
+  },
+  {
+   "n": 19,
+   "what": "Portsea St Mary's register itself, 1770–1800 — baptisms, marriages and burials",
+   "where": "Portsmouth History Centre; filmed and also on the subscription sites",
+   "cost": "a reading ticket, or a subscription",
+   "settles": "Whether Robert and Jean D'Arcy had other children at Portsea. FreeREG's transcript of this parish is TWENTY-TWO MONTHS long — baptisms for 1780 and 1781 and almost nothing else — so Joseph's entry survives by luck and the silence around it means nothing at all. A thirty-year run of the original volume would test the whole household, and might name Robert's own marriage.",
+   "why": "THE ARCHIVE'S OLDEST ENGLISH FIND IS STANDING ON TWO YEARS",
+   "href": "/portsea",
+   "file": "coverage established 13 September 2026"
+  },
+  {
+   "n": 20,
+   "what": "Smyth of Nibley, Men and Armour for Gloucestershire, 1608",
+   "where": "Gloucestershire Archives; reprinted 1902 and 1980",
+   "cost": "a library, or a secondhand copy",
+   "settles": "Whether there were Sanigers at Saniger in 1608, and what they did for a living. The muster lists every able-bodied man in the Berkeley hundred by tithing, with age bracket and trade. It would sit exactly in the gap between John Saniger the yeoman of 1601 and Edward Saniger the clothier of 1692. No scanned copy could be reached from here.",
+   "why": "",
+   "href": "/saniger-place",
+   "file": "searched for and not found online, 13 September 2026"
+  },
+  {
+   "n": 21,
+   "what": "D2957/41 and D3831/Box5/1 — the Saniger and Panthurst deeds",
+   "where": "Gloucestershire Archives, Alvin Street, Gloucester",
+   "cost": "a visit, or a copy order",
+   "settles": "The catalogue descriptions alone give six generations of names, trades and land. The deeds themselves give witnesses, relationships and often the words “son and heir”. D3831/Box5/1 is a century of Panthurst Farm, 1716–1814 — the farm John Saniger sold into in 1601.",
+   "why": "",
+   "href": "/saniger-place",
+   "file": "identified 13 September 2026"
   }
  ],
  "ydna": {

@@ -3,6 +3,22 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Treated Portsea as a parish this archive had searched, and read the absence of Joseph D'Arcy's brothers and sisters as though it meant something.",
+    truth: "FreeREG's transcript of Portsea St Mary is twenty-two months long. Five common surnames tested across Hampshire for 1778–1783 return forty-six Portsea entries: all baptisms, twenty in 1780, twenty-five in 1781, one in 1782, and none at all in 1778, 1779 or 1783.",
+    why: "This site has a rule — establish that a source covers the parish and the window before reporting an absence — and it applied that rule to Berkeley, to Dursley, to Hanley and to eight counties of Sanigers. It never applied it to its own oldest English find. Joseph's baptism was treated as the product of a search when it was the product of a two-year window.",
+    lesson: "Test coverage hardest where the source has already given you something. A hit makes a transcript feel complete, and that is exactly when it is least likely to have been measured.",
+    href: "/portsea",
+  },
+  {
+    when: "13 September 2026",
+    what: "Argued on /berkeley that the archive should stop calling this a Berkeley family — that “of Berkeley” was a label somebody had applied to the whole Vale.",
+    truth: "Saniger is a hamlet in Berkeley parish, in the tithing of Hinton. The Berkeley Castle deeds name people “of Saniger” from before 1291, Bigland writes in 1791 that it was “long held by an old Family of the same Name”, and the older spelling — Swanhanger — is on record from 1377.",
+    why: "I counted register entries by parish, found 340 at Cam and Dursley against 18 at Berkeley, and let the arithmetic write the conclusion. The counts were right. What they measured was where the family went, not where its name was made, and I never asked whether Saniger was a person or a place.",
+    lesson: "Before you weigh a surname's distribution, find out whether it is a surname. A toponym counted as a surname will always look like it belongs somewhere else.",
+    href: "/saniger-place",
+  },
+  {
+    when: "13 September 2026",
     what: "Reported twice in one day that no Samuel Sneyd baptism existed at Madeley for the tree's 1769.",
     truth: "The Samuel is there, baptised 4 June 1781 — son of William Sneyd, weaver, and Mary Blackbourne, whose thirteen children fill the register between 1769 and 1794. The year 1769 belongs to his eldest brother William, christened three months after the wedding.",
     why: "I searched for the tree's DATE instead of the tree's PERSON. The 1781 Samuel appeared in every result list I pulled and I discarded him each time for being twelve years out — while the family he belongs to, with the right father, the right mother and the right trade, was sitting underneath him.",

@@ -1,0 +1,27 @@
+{
+ "searched": "13 September 2026",
+ "parish": "Portsea St Mary, Hampshire",
+ "theFind": {
+  "who": "Joseph D'Arcy",
+  "type": "Baptism",
+  "date": "19 March 1780",
+  "where": "Portsea : St Mary : Parish Register",
+  "father": "Robert",
+  "mother": "Jean",
+  "why": "the first record of this family ever found in England, and still the only one that names Robert D'Arcy as a father"
+ },
+ "control": {
+  "method": "Five of the commonest surnames in England, searched across Hampshire for the six years 1778–1783, and every Portsea St Mary hit counted.",
+  "rows": [["Smith", 243, 12], ["Brown", 95, 9], ["Jones", 39, 4], ["Taylor", 83, 6], ["White", 106, 15]],
+  "years": [["1778", 0], ["1779", 0], ["1780", 20], ["1781", 25], ["1782", 1], ["1783", 0]],
+  "types": "All 46 are baptisms. Not one burial. Not one marriage."
+ },
+ "earlier": "A separate control — John Smith, Hampshire, across the thirty years 1770 to 1800 — returns 137 entries from twenty-odd parishes and NOT ONE from Portsea.",
+ "verdict": "FreeREG's Portsea St Mary transcript is baptisms, and it is essentially two years long: 1780 and 1781, with a single entry spilling into 1782.",
+ "consequences": [
+  ["Joseph's baptism survives by two years.", "Had Robert and Jean christened him in 1779 or 1782, this archive would have no English record of the family at all, and the Hornby claim would still be the only thing on the page."],
+  ["The absence of his brothers and sisters means nothing.", "This archive has twice implied that Portsea produced one child and no others. It produced one child because the transcript covers twenty-two months. Any sibling born before 1780 or after 1781 is not missing; it was never transcribed."],
+  ["It is not a null result, and it was never tested as one.", "The rule on this site is that you establish coverage before you report an absence. That rule was applied to Berkeley, to Dursley, to Hanley and to eight counties of Sanigers. It was not applied here."],
+  ["The register itself is intact.", "Portsea St Mary's original books survive at Portsmouth History Centre and are filmed. The question is not whether the evidence exists. It is that nobody has read the volume — and a volume covering, say, 1770 to 1800 would test the whole household in an afternoon."]
+ ]
+}

@@ -9,6 +9,78 @@
  ],
  "rows": [
   {
+   "src": "TNA Discovery — the whole catalogue, not one collection",
+   "what": "Everything filed under the name Saniger, in any archive",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Seventy-one records across Kew, Gloucestershire, Berkeley Castle, Bristol, Birmingham and Wiltshire. Among them the estate deeds D2957/41 that follow Edward Saniger from CLOTHIER in 1692 to GENT in 1709; a fine naming Maurice Saniger and Jane his wife in 1731; and — searching the same catalogue under Sanigear and Sanigar — two wills and a defamation suit that nobody here had ever looked for.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "Birmingham Archives MS 3549, against the Berkeley Castle Muniments",
+   "what": "Whether Saniger and Swanhanger are the same place",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "They are, and one document proves it. The deed of 11 April 1377 between Elias de Swonhongre and William Panyter is catalogued by Berkeley under the man's name and by Birmingham as land “in SWANHANGER, co. Glouc.”. Gloucestershire Archives then glosses it outright in D654/III/9: “Oldminsters in Swanhanger … [Saniger in Hinton]”. Saniger is a worn-down Swanhanger — the wooded slope where the swans were.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "Ralph Bigland, Collections … County of Gloucester (1791), volumes I and II",
+   "what": "Monumental inscriptions for Saniger, Wakefield and Sneyd beyond Berkeley",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Volume II holds no Sanigers at all. Volume I holds fourteen, and six more than were extracted the first time: William Saniger of FROGPITT yeoman d. 17 Jan 1704; Edward Saniger of PEDINGTON and Mary his wife; and six neighbouring households styled “of Saniger” — Hallix, Smyth, Hyett, Pick, Bishop — none of whom is called Saniger. Twenty miles off at Minchinhampton, a second family under the -gear spelling. And in the Berkeley burial list, a William Wakefield buried 1732 aged 32.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "TNA Discovery, series RG 4 (Non-Parochial Registers)",
+   "what": "Which Bristol chapel registers could hold a birth about 1805–1815",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Thirty-six Bristol registers, not the five this archive's errand list had assumed. Twelve of them are births or baptisms covering 1805–1815 and the other twenty-four can be struck off without being opened. Nearly all are catalogued under SOMERSET rather than Gloucestershire, which bears directly on the 1841 census tick that says Hannah was not born in Gloucestershire.",
+   "href": "/bristol-chapels"
+  },
+  {
+   "src": "FreeCEN — Staffordshire",
+   "what": "Samuel Sneyd's household at Hanley",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "The 1861 census at WELL ST, HANLEY — “Grocers Shop” — holds James Sneyd, engraver, his wife, three children, and his MOTHER: Elizabeth Sneyd, widow, aged 82, born Shropshire. The tree says Samuel Sneyd, a grocer of Hanley, died at No 3 Well Street in 1856 leaving a widow Elizabeth Margaret Oliver of Oswestry, Shropshire, who died on 1 December 1861 — eight months after the enumerator called. Five agreements; one age eight years out.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "FreeCEN — Staffordshire, control test",
+   "what": "Whether 1841 or 1851 could be searched at all",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "They cannot. John Smith, born Staffordshire 1800–1805, returns thirty-one people and every single one is 1861. FreeCEN's Staffordshire holding is 1861 and nothing else, so Samuel Sneyd — who died in 1856 — was never findable, however hard he was looked for. A null that says nothing about the family and everything about the index.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "FreeREG — Portsea St Mary, Hampshire, control test",
+   "what": "How much of the register stands behind Joseph D'Arcy's 1780 baptism",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Twenty-two months of it. Five common surnames across Hampshire 1778–1783 return forty-six Portsea entries: all baptisms, twenty in 1780, twenty-five in 1781, one in 1782, and NONE in 1778, 1779 or 1783. A separate control — John Smith across 1770–1800 — returns not one Portsea entry at all. The earliest English record of this family survives because it falls inside a two-year transcript, and the absence of Joseph's brothers and sisters proves nothing whatever.",
+   "href": "/portsea"
+  },
+  {
+   "src": "The London Gazette",
+   "what": "Robert D'Arcy's commissions, printed at the time rather than in Connolly's book",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Issue 16755, 19 July 1813, Office of Ordnance: “Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh.” One line, but it is the first primary notice of his career this archive holds, and it replaces a nineteenth-century printed roll with the Gazette that roll was compiled from.",
+   "href": "/register"
+  },
+  {
+   "src": "archive.org, HathiTrust",
+   "what": "Smyth of Nibley's Men and Armour for Gloucestershire, 1608",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Not found in any scanned copy reachable from here; archive.org's search returns nothing under that title and the catalogue probes came back empty. The muster would name every able-bodied man in the Berkeley hundred by tithing, with trade — the single best source for Sanigers before the parish register helps. Recorded as not-yet-reached rather than not-there.",
+   "href": "/errands"
+  },
+  {
    "src": "The Berkeley Castle Muniments, via TNA Discovery",
    "what": "How far back the place-name Saniger goes",
    "when": "13 Sep 2026",

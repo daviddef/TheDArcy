@@ -1,0 +1,94 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/bristol-chapels.json";
+const win = new Set(d.window);
+const byPlace = [...new Set(d.rows.map((r) => r.place))];
+---
+<Base
+  title="The Bristol chapels"
+  eyebrow={`RG 4 · ${d.total} registers · catalogued ${d.searched}`}
+  dek="The one open question in this archive's English line is where Hannah Saniger was born. The likeliest answer is a Bristol chapel. Here is every Bristol chapel register the state holds, and exactly which ones could contain her.">
+
+  <section class="blk">
+    <p class="lede">When the Registrar General took in the nonconformist registers in 1837 they were
+    bound, numbered and shelved as <strong>RG 4</strong>. They are the registers of people who did
+    not christen their children in the parish church — Baptists, Presbyterians, Wesleyans,
+    Moravians, Welsh Calvinistic Methodists — and they are exactly where a Bristol
+    working family of the 1810s is most likely to be found.</p>
+
+    <p style="margin-top:1.1rem">This archive's errand list has said for weeks that there were
+    <em>five</em> Bristol chapel registers to read. That was a guess, and it was wrong by a factor of
+    seven. The catalogue holds <strong>{d.total}</strong>.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>Twelve of them can contain a birth between 1805 and 1815</strong> — the window for
+      {" "}<a href={u("/people/hannah-saniger")}>Hannah Saniger</a>. The other twenty-four cannot,
+      and can now be struck off without opening them. That is the point of doing this before
+      travelling anywhere.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Every Bristol register in RG 4</div>
+    <h2 style="margin-top:.4rem">{d.total} volumes, {byPlace.length} chapels</h2>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead>
+          <tr><th class="m">Piece</th><th class="m">Covers</th><th>Chapel</th><th>Denomination</th><th>Contents</th></tr>
+        </thead>
+        <tbody>
+          {d.rows.map((r) => (
+            <tr style={win.has(r.ref) ? "background:var(--tint)" : ""}>
+              <td class="mono small">{win.has(r.ref) ? <strong>{r.ref}</strong> : r.ref}</td>
+              <td class="m">{r.from}–{r.to}</td>
+              <td>{win.has(r.ref) ? <strong>{r.place}</strong> : r.place}</td>
+              <td class="small">{r.den}</td>
+              <td class="small">{r.kind}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:.9rem">Shaded rows are births or baptisms whose dates cover
+    1805–1815. <span class="chip doc">catalogue, verbatim</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">One detail worth keeping</div>
+    <h2 style="margin-top:.4rem">Bristol is filed under Somerset</h2>
+
+    <p class="lede">Nearly every one of these registers is catalogued
+    <strong>"Bristol, … , Somerset"</strong>. Only Bridge Street Chapel is filed under Gloucester.
+    The city straddles the Avon and therefore the county line, and clerks have been choosing sides
+    ever since.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>This matters here more than it looks.</strong> The
+      <a href={u("/drivers-fields")}>1841 census at Drivers Fields</a> records Hannah as
+      <em>not</em> born in Gloucestershire — a single tick in a column. If she was born south of the
+      Avon in what everyone including her called Bristol, that tick is correct, and it has been read
+      for years as though it pointed away from the city. It does not. It points across a river.
+      <a href={u("/sanigers")}>Where the search has already been →</a>
+      <span class="chip inf">an argument, not a finding</span>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What to do with this</h2>
+    <ol class="dek">
+      <li style="margin-bottom:.5rem"><strong>Twelve volumes, named and numbered.</strong> They are
+      digitised, and can be read without leaving the house. This is now a specific task rather than
+      an aspiration. <a href={u("/errands")}>On the queue →</a></li>
+      <li style="margin-bottom:.5rem"><strong>Broad Mead and Lewins Mead first.</strong> Broad Mead
+      is the great Bristol Baptist congregation and its births run 1787–1817 in one volume
+      (RG 4/2697); Lewins Mead's Presbyterian baptisms run 1718–1840 in another (RG 4/1830). Between
+      them they cover the whole window twice over.</li>
+      <li><strong>And the honest caveat.</strong> Nothing yet suggests the Sanigers were
+      nonconformist. This is where to look because it is where the Anglican registers are not, not
+      because there is evidence pointing at a chapel. <span class="chip inf">a hypothesis being
+      tested</span></li>
+    </ol>
+  </section>
+</Base>
