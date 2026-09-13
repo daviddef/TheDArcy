@@ -74,6 +74,49 @@ for n, says, reg in [
 ]:
     rec(n, says, f"record · {QBDM} {reg}", QBDM_L)
 
+# --- Queensland civil registration, the whole Australian line, 13 Sep 2026 ---
+# The two earlier sweeps went surname by surname, which finds a man and loses
+# his wife: she is registered under the name she died with, not the one this
+# archive files her under. So this pass searched by DEATH DATE ALONE — every
+# Queensland death on the exact day, then matched on the parents' names — and
+# it found twenty-six of twenty-six. Eighteen were new.
+#
+# Every row below was confirmed by its PARENT FIELDS agreeing with the tree,
+# never by name and date alone. Read down the list and the couples chain into
+# each other, which is the check: Ida Kathleen's parents are Jane Creech and
+# Paul Atkinson, and Jane Creech and Paul Cole Atkinson are two rows of their own.
+for n, d, reg, mum, dad in [
+    ("Maria D'Arcy, née White", "04/09/1856", "1856/B/50", "Maria Gardener", "John Javis White"),
+    ("Catherine Sneyd, née Mulcahy", "25/07/1858", "1858/B/253", "Ellen Regan", "Thomas Mulcahy"),
+    ("Jane Atkinson, née Creech", "16/08/1885", "1885/B/18064", "—", "Samuel Creech"),
+    ("Maria Atwell, née Rossiter", "24/03/1889", "1889/B/21863", "Maria Beecham", "James Rossiter"),
+    ("George Lindesay D'Arcy", "13/07/1901", "1901/B/1510", "—", "George Pitt D'Arcy"),
+    ("Paul Cole Atkinson", "14/05/1906", "1906/B/6762", "Ann Kent", "Richard Atkinson"),
+    ("James Atwell", "16/07/1907", "1907/C/1215", "Maria Rossiter", "John Atwell"),
+    ("Catherine Jane Murdoch, née Matson", "07/08/1914", "1914/B/19789", "Mary Abbot", "William Matson"),
+    ("Eliza D'Arcy, née Keeling", "01/07/1918", "1918/B/27431", "—", "— Keeling"),
+    ("William Murdoch", "22/04/1918", "1918/C/2318", "Marion Fleming Watt", "Francis Murdoch"),
+    ("Mary Ann Blume, née O'Brien", "21/08/1927", "1927/B/2193", "Hannah Scanlan", "Timothy O'Brien"),
+    ("George Pitt D'Arcy", "21/03/1931", "1931/B/13634", "Eliza Keeling", "George Lindesay D'Arcy"),
+    ("Lindsay Atkinson D'Arcy", "10/11/1936", "1936/B/33575", "Ida Kathleen Atkinson", "George Pitt"),
+    ("Ida Kathleen Darcy, née Atkinson", "13/01/1937", "1937/B/34178", "Jane Creech", "Paul Atkinson"),
+    ("Sarah Atwell, née Wright", "12/05/1941", "1941/C/2242", "Agnes Scott", "John Wright"),
+    ("William James Frazer Murdoch", "26/05/1946", "1946/B/6628", "Catherine Jane Matson", "William"),
+    ("Ivy Miriam D'Arcy, née Sneyd", "11/06/1979", "1979/B/96370", "Martha Blum", "Arthur William Hartley Sneyd"),
+    ("Barbara Murdoch, née Atwell", "17/10/1989 · b. 1898", "1989/58109", "Sarah Wright", "James Atwell"),
+]:
+    rec(n, f"died {d} · parents: {mum} · {dad}", f"record · {QBDM} {reg}", QBDM_L)
+
+# The one search of the twenty-six that returned nothing, and why that is the
+# find rather than the failure. This archive gives Carminantonio Falco's death
+# as 27 April 1988. Queensland has no death of that name on that day — because
+# he died on 27 April 1985, as both Nudgee Cemetery and his own registration
+# say. The wrong year reached here the same way it reached the Falco archive:
+# out of the shared family tree. See /searched.
+rec("Carmine Antonio (Carminantonio) Falco",
+    "died 27/04/1985, NOT 1988 as this archive had it · registration 1985/3063 · father: Raffaele Falco",
+    f"record · {QBDM} 1985/3063", QBDM_L)
+
 QMAR = "Queensland marriage index"
 for n, says, reg in [
     ("Miriam Wakefield", "married William Hartley Sneyd · 15 November 1859 · Brisbane — she was nineteen", "1859/B/255"),
@@ -474,6 +517,12 @@ rec("George Pitt D'Arcy", "commanding a detachment of the 39th Regiment in Irela
 JD = "record · London Evening Standard 11 Feb 1848 and Morning Post 3 Apr 1848 (British Newspaper Archive)"
 BNA3 = "https://www.findmypast.com.au/search-newspapers"
 rec("Joseph D'Arcy", "died 7 FEBRUARY 1848 at Homestead, Lymington, Hampshire, in his 69th year · LIEUTENANT-COLONEL, LATE ROYAL ARTILLERY, K.L.S. · formerly of Priestlands near Lymington, late of Home Mead, Southampton · his will executed February 1844", JD, BNA3)
+
+
+JOB = "record · Morning Herald 29 Feb 1848, Saunders's News-Letter 2 Mar 1848, Lincolnshire Chronicle 3 Mar 1848"
+BNA4 = "https://www.findmypast.com.au/search-newspapers"
+rec("Joseph D'Arcy", "obituary · \u201che commenced his military career at THE TAKING OF ST DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia\u201d", JOB, BNA4)
+rec("Katherine D'Arcy", "wife of Lieutenant-Colonel Joseph D'Arcy · he left his \u201cproperty to his wife, Kathe[rine] D'Arcy\u201d by a will executed February 1844 \u2014 Lady's Newspaper, 8 April 1848", "record · Lady's Newspaper and Pictorial Times, 8 April 1848, p.11", BNA4)
 
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"

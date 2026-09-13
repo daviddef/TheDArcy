@@ -17,17 +17,63 @@
   "careful": "This archive has not yet traced his Persian service, and will not assert it from three letters. What the letters establish is that he held a foreign order, which for a Royal Artillery officer of that generation points one way."
  },
  "career": [
-  ["19 March 1780", "Baptised at Portsea St Mary, son of ROBERT and JEAN"],
-  ["1795", "In the Royal Artillery officers' list, at about fifteen"],
-  ["1798", "Army List"],
-  ["1802, 1803, 1826", "Commission registers"],
-  ["1803, 1804, 1806", "Officer promotions"],
-  ["1806", "Witness at his sister Margarett Maria Isabella's marriage at Chatham"],
-  ["1840–1844", "Still in the Army Lists"],
-  ["February 1844", "Executes his will"],
-  ["7 February 1848", "Dies at Homestead, Lymington, in his 69th year"]
+  [
+   "19 March 1780",
+   "Baptised at Portsea St Mary, son of ROBERT and JEAN"
+  ],
+  [
+   "1793",
+   "“Commenced his military career at the taking of St Domingo”"
+  ],
+  [
+   "1795",
+   "In the Royal Artillery officers' list"
+  ],
+  [
+   "1798",
+   "Army List"
+  ],
+  [
+   "1806",
+   "Witness at his sister Margarett Maria Isabella's marriage at Chatham"
+  ],
+  [
+   "1809",
+   "At the taking of Walcheren; and served in Sicily"
+  ],
+  [
+   "1810s–1820s",
+   "FIVE YEARS IN PERSIA in the service of Prince Abbas Mirza — and Knight of the Lion and Sun"
+  ],
+  [
+   "1840–1844",
+   "Still in the Army Lists"
+  ],
+  [
+   "February 1844",
+   "Executes his will, leaving his property to his wife Katherine"
+  ],
+  [
+   "7 February 1848",
+   "Dies at Home Mead, Lymington, in his 68th year"
+  ]
  ],
  "son": "And he left at least one son. The Cork Daily Herald of 3 October 1863 carries a marriage at Lymington of a D'Arcy “son of the late Colonel D'Arcy, R.A.” — the same town, fifteen years on. The OCR loses the groom's forename.",
- "age": "One number is loose. “In the 69th year of his age” on 7 February 1848 means he was sixty-eight, so born between February 1779 and February 1780. He was baptised on 19 March 1780. A birth in the first weeks of 1780 fits; a birth in 1779 with a late christening fits better. It is the ordinary slack in a stated age and it does not unseat the identification.",
- "matters": "The archive now holds Robert D'Arcy's marriage, his career, his death and his funeral; his son George Pitt D'Arcy's marriage and Irish service; and his son Joseph's whole life from a Portsea font to a Hampshire will. Three years ago the family tree had a name and a rumour of Yorkshire."
+ "age": "Two wrinkles, both stated rather than smoothed. The papers cannot agree whether he died in his 68th or 69th year — 68th fits the Portsea baptism of March 1780 almost exactly. And if he began at St Domingo in 1793 he was thirteen, which is early even for that army. A boy of thirteen could go as a cadet or a volunteer and be commissioned at fifteen, which is what the Royal Artillery list showing him from 1795 would then mean. It is also possible the obituarist rounded a date fifty-five years old.",
+ "matters": "The archive now holds Robert D'Arcy's marriage, his career, his death and his funeral; his son George Pitt D'Arcy's marriage and Irish service; and his son Joseph's whole life — Saint-Domingue, Sicily, Walcheren, five years in Persia with the Shah's son, a Persian knighthood, a house in Hampshire and a widow named Katherine. Three years ago the family tree had a name and a rumour of Yorkshire.",
+ "obit": {
+  "papers": "Morning Herald (London), 29 February 1848, p.4 · Saunders's News-Letter (Dublin), 2 March 1848 · Lincolnshire Chronicle, 3 March 1848, p.6",
+  "text": "Died, on the 7th of February, at his residence, HOME MEAD, LYMINGTON, HAMPSHIRE, in his 68th year, LIEUT. COLONEL D'ARCY, LATE OF THE ROYAL ARTILLERY. He commenced his military career at THE TAKING OF ST. DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia, who for …",
+  "note": "Three papers carried the same notice and the digitised text breaks in a different place in each; the wording above is assembled from all three, with the breaks marked."
+ },
+ "persia": {
+  "head": "Five years in Persia",
+  "body": "ABBAS MIRZA was the Qajar crown prince, and in the 1810s and 1820s he was rebuilding the Persian army on a European model with British officers to help him. That is what Joseph D'Arcy was doing there, and it is why a separate notice gives him as K.L.S. — Knight of the Royal Order of the Lion and the Sun, the Shah's decoration.",
+  "careful": "The archive now has the service from an obituary and the order from a death notice, which corroborate each other. It has not yet seen a service record, and does not know the years."
+ },
+ "katherine": {
+  "head": "And a wife named Katherine",
+  "body": "The Lady's Newspaper of 8 April 1848 carried the same will summary as the Morning Post and got a little further before the scan fails: he left his “property to his wife, KATHE[RINE] D'ARCY, to which she h[as] …”",
+  "means": "A name this archive did not have. Joseph D'Arcy married, and his widow outlived him."
+ }
 }

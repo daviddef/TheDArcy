@@ -6,7 +6,7 @@ import d from "../data/joseph-darcy.json";
 <Base
   title="Lieutenant-Colonel Joseph D'Arcy"
   eyebrow={`Portsea 1780 – Lymington 1848 · found ${d.found}`}
-  dek="The first person in this archive's English line, and the one it knew least about. He died a lieutenant-colonel of the Royal Artillery with a Persian knighthood and a will.">
+  dek="The first person in this archive's English line, and the one it knew least about. Saint-Domingue, Sicily, Walcheren, and five years in Persia in the service of the Shah's son.">
 
   <section class="blk"><p class="lede">{d.lede}</p></section>
 
@@ -26,6 +26,32 @@ import d from "../data/joseph-darcy.json";
     <p class="lede">{d.will.text}</p>
     <div class="note" style="margin-top:1.2rem">{d.will.cut}
       <a href={u("/errands")}>On the queue →</a></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.obit.papers}</div>
+    <h2 style="margin-top:.4rem">The obituary</h2>
+    <div class="note" style="border-left-width:3px;margin-top:1rem">
+      {d.obit.text}
+      <span class="chip doc">documented</span>
+    </div>
+    <p class="small" style="margin-top:1rem">{d.obit.note}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Prince Abbas Mirza</div>
+    <h2 style="margin-top:.4rem">{d.persia.head}</h2>
+    <p class="lede">{d.persia.body}</p>
+    <div class="note" style="margin-top:1.2rem">{d.persia.careful}
+      <span class="chip inf">the service, from an obituary</span></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Lady's Newspaper, 8 April 1848</div>
+    <h2 style="margin-top:.4rem">{d.katherine.head}</h2>
+    <p class="lede">{d.katherine.body}</p>
+    <div class="note" style="margin-top:1.2rem">{d.katherine.means}
+      <a href={u("/new-generations")}>People the tree never had →</a></div>
   </section>
 
   <section class="blk">

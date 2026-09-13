@@ -1,15 +1,15 @@
 {
-"entries": 751,
-"distinct": 548,
-"records": 278,
+"entries": 772,
+"distinct": 562,
+"records": 299,
 "tree": 473,
 "grafted": 98,
-"linked": 751,
-"surnames": 187,
+"linked": 772,
+"surnames": 188,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 165,
+"n": 166,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -64,6 +64,13 @@
 "name": "Beryl Sneyd",
 "says": "died 13/08/1905 · parents: Martha Blume · Arthur Sneyd",
 "source": "record · Queensland death index 1905/C/3798",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Catherine Sneyd, née Mulcahy",
+"says": "died 25/07/1858 · parents: Ellen Regan · Thomas Mulcahy",
+"source": "record · Queensland death index 1858/B/253",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 },
@@ -1170,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 99,
+"n": 107,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1194,6 +1201,13 @@
 "kind": "record"
 },
 {
+"name": "Eliza D'Arcy, née Keeling",
+"says": "died 01/07/1918 · parents: — · — Keeling",
+"source": "record · Queensland death index 1918/B/27431",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
 "name": "Francis D'Arcy",
 "says": "listed in a half-pay section of the same 1778 Army List — a different man from Robert, and the archive was right to separate them",
 "source": "record · A List of the Officers of the Army, 1778",
@@ -1205,6 +1219,20 @@
 "says": "baptised Chatham, 2 July 1811 · father George · mother MARY — the first wife",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "George Lindesay D'Arcy",
+"says": "died 13/07/1901 · parents: — · George Pitt D'Arcy",
+"source": "record · Queensland death index 1901/B/1510",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "died 21/03/1931 · parents: Eliza Keeling · George Lindesay D'Arcy",
+"source": "record · Queensland death index 1931/B/13634",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 },
 {
@@ -1257,6 +1285,13 @@
 "kind": "record"
 },
 {
+"name": "Ivy Miriam D'Arcy, née Sneyd",
+"says": "died 11/06/1979 · parents: Martha Blum · Arthur William Hartley Sneyd",
+"source": "record · Queensland death index 1979/B/96370",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
 "name": "Joseph D'Arcy",
 "says": "baptised Portsea St Mary, 19 March 1780 · father Robert · mother Jean",
 "source": "record · FreeREG, Portsea St Mary parish register",
@@ -1285,6 +1320,27 @@
 "kind": "record"
 },
 {
+"name": "Joseph D'Arcy",
+"says": "obituary · “he commenced his military career at THE TAKING OF ST DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia”",
+"source": "record · Morning Herald 29 Feb 1848, Saunders's News-Letter 2 Mar 1848, Lincolnshire Chronicle 3 Mar 1848",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Katherine D'Arcy",
+"says": "wife of Lieutenant-Colonel Joseph D'Arcy · he left his “property to his wife, Kathe[rine] D'Arcy” by a will executed February 1844 — Lady's Newspaper, 8 April 1848",
+"source": "record · Lady's Newspaper and Pictorial Times, 8 April 1848, p.11",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Lindsay Atkinson D'Arcy",
+"says": "died 10/11/1936 · parents: Ida Kathleen Atkinson · George Pitt",
+"source": "record · Queensland death index 1936/B/33575",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
 "name": "Lindsay Atkinson D'Arcy",
 "says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
 "source": "record · Trove, Australian newspapers",
@@ -1296,6 +1352,13 @@
 "says": "spinster · married John Maddock Jones Esq. of Penybryn, Ruabon, Denbighshire · Chatham, 23 October 1806, by licence · witness Joseph D'Arcy",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Maria D'Arcy, née White",
+"says": "died 04/09/1856 · parents: Maria Gardener · John Javis White",
+"source": "record · Queensland death index 1856/B/50",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 },
 {
@@ -2546,8 +2609,29 @@
 },
 {
 "surname": "ATWELL",
-"n": 28,
+"n": 31,
 "rows": [
+{
+"name": "James Atwell",
+"says": "died 16/07/1907 · parents: Maria Rossiter · John Atwell",
+"source": "record · Queensland death index 1907/C/1215",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Maria Atwell, née Rossiter",
+"says": "died 24/03/1889 · parents: Maria Beecham · James Rossiter",
+"source": "record · Queensland death index 1889/B/21863",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Sarah Atwell, née Wright",
+"says": "died 12/05/1941 · parents: Agnes Scott · John Wright",
+"source": "record · Queensland death index 1941/C/2242",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
 {
 "name": "Agnes \"Peg\" Atwell",
 "says": "b. 1885",
@@ -2929,8 +3013,22 @@
 },
 {
 "surname": "ATKINSON",
-"n": 22,
+"n": 24,
 "rows": [
+{
+"name": "Jane Atkinson, née Creech",
+"says": "died 16/08/1885 · parents: — · Samuel Creech",
+"source": "record · Queensland death index 1885/B/18064",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Paul Cole Atkinson",
+"says": "died 14/05/1906 · parents: Ann Kent · Richard Atkinson",
+"source": "record · Queensland death index 1906/B/6762",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
 {
 "name": "Alice Harriet Atkinson",
 "says": "1864–1894 · Brisbane, Queensland, Australia",
@@ -3089,8 +3187,36 @@
 },
 {
 "surname": "MURDOCH",
-"n": 19,
+"n": 23,
 "rows": [
+{
+"name": "Barbara Murdoch, née Atwell",
+"says": "died 17/10/1989 · b. 1898 · parents: Sarah Wright · James Atwell",
+"source": "record · Queensland death index 1989/58109",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Catherine Jane Murdoch, née Matson",
+"says": "died 07/08/1914 · parents: Mary Abbot · William Matson",
+"source": "record · Queensland death index 1914/B/19789",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "William James Frazer Murdoch",
+"says": "died 26/05/1946 · parents: Catherine Jane Matson · William",
+"source": "record · Queensland death index 1946/B/6628",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "William Murdoch",
+"says": "died 22/04/1918 · parents: Marion Fleming Watt · Francis Murdoch",
+"source": "record · Queensland death index 1918/C/2318",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
 {
 "name": "Allan George Murdoch",
 "says": "1896–1907 · Gympie, Queensland, Australia",
@@ -3428,8 +3554,15 @@
 },
 {
 "surname": "FALCO",
-"n": 7,
+"n": 8,
 "rows": [
+{
+"name": "Carmine Antonio (Carminantonio) Falco",
+"says": "died 27/04/1985, NOT 1988 as this archive had it · registration 1985/3063 · father: Raffaele Falco",
+"source": "record · Queensland death index 1985/3063",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
 {
 "name": "Carmine Antonio (Carminantonio) Falco",
 "says": "1901–1988 · Caserta, Campania, Italy",
@@ -3762,6 +3895,40 @@
 ]
 },
 {
+"surname": "DARCY",
+"n": 4,
+"rows": [
+{
+"name": "Ida Kathleen Darcy, née Atkinson",
+"says": "died 13/01/1937 · parents: Jane Creech · Paul Atkinson",
+"source": "record · Queensland death index 1937/B/34178",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Conyers, 2nd Earl of Holderness Darcy",
+"says": "1621–1692 · Westminster, Middlesex",
+"source": "family tree · above the Hornby graft",
+"link": "/people/conyers-2nd-earl-of-holderness-darcy",
+"kind": "tree"
+},
+{
+"name": "Robert Darcy",
+"says": "1681–1721 · Earl of Holdernesse ( 3rd · St. James Palace, London, Middlesex, England, Kingdom of England",
+"source": "family tree · above the Hornby graft",
+"link": "/people/robert-darcy",
+"kind": "tree"
+},
+{
+"name": "Thomas Darcy",
+"says": "1565–1605 · Of, Hornby Castle, Yorkshire, England",
+"source": "family tree · above the Hornby graft",
+"link": "/people/thomas-darcy",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "DIXIE",
 "n": 4,
 "rows": [
@@ -4049,33 +4216,6 @@
 "says": "b. 1717 · Miller · Castle Church, Stafford, England",
 "source": "family tree · direct line",
 "link": "/people/samuel-blackbourne",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "DARCY",
-"n": 3,
-"rows": [
-{
-"name": "Conyers, 2nd Earl of Holderness Darcy",
-"says": "1621–1692 · Westminster, Middlesex",
-"source": "family tree · above the Hornby graft",
-"link": "/people/conyers-2nd-earl-of-holderness-darcy",
-"kind": "tree"
-},
-{
-"name": "Robert Darcy",
-"says": "1681–1721 · Earl of Holdernesse ( 3rd · St. James Palace, London, Middlesex, England, Kingdom of England",
-"source": "family tree · above the Hornby graft",
-"link": "/people/robert-darcy",
-"kind": "tree"
-},
-{
-"name": "Thomas Darcy",
-"says": "1565–1605 · Of, Hornby Castle, Yorkshire, England",
-"source": "family tree · above the Hornby graft",
-"link": "/people/thomas-darcy",
 "kind": "tree"
 }
 ]
@@ -4810,6 +4950,19 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/thomas-howard-1st-earl-of-berkshire",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "BLUME",
+"n": 1,
+"rows": [
+{
+"name": "Mary Ann Blume, née O'Brien",
+"says": "died 21/08/1927 · parents: Hannah Scanlan · Timothy O'Brien",
+"source": "record · Queensland death index 1927/B/2193",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
 }
 ]
 },

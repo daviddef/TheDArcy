@@ -260,6 +260,21 @@
 "slug": "ivy-marion-d-arcy",
 "n": 1
 },
+"katherine-d-arcy": {
+"name": "Katherine D'Arcy",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "wife of Lieutenant-Colonel Joseph D'Arcy · he left his “property to his wife, Kathe[rine] D'Arcy” by a will executed February 1844 — Lady's Newspaper, 8 April 1848",
+"source": "record · Lady's Newspaper and Pictorial Times, 8 April 1848, p.11",
+"link": "https://www.findmypast.com.au/search-newspapers"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "katherine-d-arcy",
+"n": 1
+},
 "lindsay-atkinson-d-arcy": {
 "name": "Lindsay Atkinson D'Arcy",
 "surname": "D'ARCY",
@@ -1987,9 +2002,9 @@
 }
 },
 "counts": {
-"named": 162,
+"named": 163,
 "withTreePage": 39,
-"ownPage": 123,
-"mentions": 278
+"ownPage": 124,
+"mentions": 280
 }
 }
