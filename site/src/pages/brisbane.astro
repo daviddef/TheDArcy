@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const gens = [
@@ -52,9 +54,7 @@ const gens = [
     </div>
   </section>
 
-  <section class="blk">
-    <div class="lab">10 November 1936</div>
-    <h2 style="margin-top:.4rem">The death that shaped everything after it</h2>
+  <Blk label="10 November 1936" title="The death that shaped everything after it">
     <p><strong>Lindesay Atkinson D'Arcy died at forty-three</strong>, leaving Ivy with five children
     and, as his youngest son put it seventy-four years later, no real work skills and no decent system
     of social security. What she did instead is the most Queensland solution imaginable: she took in
@@ -73,11 +73,9 @@ const gens = [
     <p>Kenneth was nine. Within weeks he and his brother Bill were walking to the Savoy Picture
     Theatre at Clayfield on Friday nights with threepence each, buying cigarettes with it and stealing
     the matches. He smoked from the age of nine. He died of melanoma at eighty-two.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Before that</div>
-    <h2 style="margin-top:.4rem">The Queenslander at Clayfield, and the parrot</h2>
+  <Blk label="Before that" title="The Queenslander at Clayfield, and the parrot">
     <p>What survives of the house is a handful of details, and they are worth more than a hundred
     dates. Lindesay was a keen gardener — so keen that his youngest son was not allowed a bicycle
     (too dangerous) or a football in the backyard (bad for the garden), and was set the standing task
@@ -95,11 +93,9 @@ const gens = [
     <p class="small">There is also the mango tree, out of which Ken fell into his father's tub of
     liquid manure — and the recorded family verdict that Lindesay was upset not at his son's injuries
     but at the loss of the manure. <a href={u("/documents/")}>The eulogy in full →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">16 July 1901</div>
-    <h2 style="margin-top:.4rem">"Old King's School Boy"</h2>
+  <Blk label="16 July 1901" title="&quot;Old King's School Boy&quot;">
     <p>George Lindsay D'Arcy's obituary in <em>The Telegraph</em> announces the death of "one of the
     oldest scholars of the famous King's School, New South Wales" — born at Parramatta in 1829, son
     of Major George Pitt D'Arcy of the old 39th Regiment.</p>
@@ -113,11 +109,11 @@ const gens = [
     instructor at Brisbane Grammar School, and two unmarried daughters.</p>
     <p class="small" style="margin-top:.9rem"><em>The Telegraph</em> (Brisbane), Tuesday 16 July 1901,
     p. 2 · <span class="mono">nla.news-article184151762</span></p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2>Where they are buried</h2>
-    <div class="scroll">
+    <Scroll>
       <table>
         <thead><tr><th>Person</th><th class="m">Died</th><th>Interred</th></tr></thead>
         <tbody>
@@ -136,7 +132,7 @@ const gens = [
               <td class="m">1875</td><td>Toowong Cemetery</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:1rem">Dutton Park, South Brisbane, Nundah, Lutwyche, Toowong,
     Mt Thompson, Sumner — six generations across seven Brisbane cemeteries, and the surveyor from the
     other branch lying at Toowong a few sections from his half-brother's grandson's father-in-law.</p>

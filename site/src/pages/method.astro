@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import Evidence from "../components/Evidence.astro";
 import { u } from "../lib/url.js";
 import ancestors from "../data/ancestors.json";
@@ -60,7 +62,7 @@ const redacted = ancestors.filter((a) => a.living).length;
   </section>
   <section class="blk">
     <h2 style="margin-top:0">The five labels</h2>
-    <div class="scroll" style="margin-top:1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td><span class="chip doc">documented</span></td>
@@ -77,7 +79,7 @@ const redacted = ancestors.filter((a) => a.living).length;
                   pretending otherwise is how family myths become family history.</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
   </section>
 
   <section class="blk">
@@ -119,12 +121,12 @@ const redacted = ancestors.filter((a) => a.living).length;
     carries a citation, the citation is shown on the person's page and marked as
     <em>attached in the tree</em> rather than <em>checked here</em>. Where this archive has gone to
     the original, the page says so.</p>
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       The most useful thing this method produces is not a longer line. It is a
       <strong>shorter, truer one</strong>, with the join that fails clearly marked, so that the next
       person to work on it starts where the evidence actually stops rather than where the chart does.
       <a href={u("/hornby/")}>The worked example →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk">
@@ -134,7 +136,7 @@ const redacted = ancestors.filter((a) => a.living).length;
     border encodes, because conflating "this is my ancestor" with "this is proved" is how a pedigree
     starts lying.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>The border</th><th>Means</th><th>The card also says</th></tr></thead>
         <tbody>
@@ -150,16 +152,16 @@ const redacted = ancestors.filter((a) => a.living).length;
               <td>which graft — Hornby or Keele</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The count under each chart is the point of the chart.</strong> It says how many of the
       relationships drawn are written in a record and how many are not.
       <strong>Of 473 charts on this site, 19 contain a single solid edge.</strong> A reader who takes
       nothing else from this archive should take that: a family tree is a set of assertions, and
       until somebody opens a document, that is all it is.
       <a href={u("/register/")}>The register, where the same split is counted →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk" style="border-bottom:0">

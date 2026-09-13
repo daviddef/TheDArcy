@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { nOwn, nInherited } from "../lib/errors.js";
 import reg from "../data/register.json";
@@ -53,7 +56,7 @@ const HOLDS = [
 
   <section class="blk">
     <h2>What it holds</h2>
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           {HOLDS.map(([n, what, note, href]) => (
@@ -62,19 +65,17 @@ const HOLDS = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
   </section>
 
-  <section class="blk">
-    <div class="lab">Audited 13 September 2026</div>
-    <h2 style="margin-top:.4rem">This archive had drifted to the wrong side of the world</h2>
+  <Blk label="Audited 13 September 2026" title="This archive had drifted to the wrong side of the world">
 
     <p class="lede">It exists to test a <strong>British</strong> ancestry: a Gloucestershire yeoman,
     a Staffordshire weaver, a Royal Engineer at Chatham. When this was first counted the archive held
     <strong>95 Australian records against 70 British</strong> — 57% of its evidence from the wrong
     side of the world.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Where the evidence comes from</th><th class="m">Records</th><th class="m">Share</th></tr></thead>
         <tbody>
@@ -84,9 +85,9 @@ const HOLDS = [
               <td class="m">176</td><td class="m">64%</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>There is a good reason and it is not a good enough reason.</strong> Australian records
       are open: Queensland's death index names parents and is free, its archives publish scans, its
       immigration lists are open data. British records are scattered, half-transcribed and — three
@@ -108,8 +109,8 @@ const HOLDS = [
       country it came from. The measure is kept here so the next correction can be measured too.
       <br /><br />
       <a href={u("/searched/")}>Every source, and which country it is in →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk">
     <h2>How it is built</h2>
@@ -125,9 +126,9 @@ const HOLDS = [
 
   <section class="blk" style="border-bottom:0">
     <h2>Corrections</h2>
-    <div class="note"><strong>A correction is the most valuable thing anyone can send this
+    <Note><strong>A correction is the most valuable thing anyone can send this
     archive.</strong> If something here is wrong — a date, a place, a join, a person who should not
     be published — say so, and it will be changed, and the change will be recorded on
-    <a href={u("/changes/")}>what changed</a> rather than quietly applied.</div>
+    <a href={u("/changes/")}>what changed</a> rather than quietly applied.</Note>
   </section>
 </Base>

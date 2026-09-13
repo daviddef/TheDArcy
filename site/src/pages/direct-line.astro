@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import Evidence from "../components/Evidence.astro";
 import line from "../data/line.json";
@@ -78,10 +81,8 @@ const corr = (id) => CORRECTIONS[id];
   eyebrow="Generation by generation"
   dek="Fifteen generations are asserted, from a Brisbane insurance manager to a Yorkshire castle. Eight of them are documented. The break is at one man, and it is marked here rather than smoothed over.">
 
-  <section class="blk">
-    <div class="lab">The spine changed in three places on 13 September 2026</div>
-    <h2 style="margin-top:.4rem">What a fortnight of registers did to it</h2>
-    <div class="scroll" style="margin-top:1.2rem">
+  <Blk label="The spine changed in three places on 13 September 2026" title="What a fortnight of registers did to it">
+    <Scroll>
       <table>
         <thead><tr><th>Where</th><th>What changed</th></tr></thead>
         <tbody>
@@ -102,22 +103,22 @@ const corr = (id) => CORRECTIONS[id];
                 <a href={u("/sanigers/")}>→</a></td></tr>
         </tbody>
       </table>
-    </div>
-  </section>
+    </Scroll>
+  </Blk>
 
   <section class="blk">
     <p class="lede">This is the male D'Arcy line exactly as the family tree carries it — and then,
     against each generation, what this archive is actually willing to defend. The colour of the chip
     is the claim; the sentence beneath it is the reason.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Read the page from the bottom up if you want the truth of it.</strong> Eight
       generations, from Kenneth D'Arcy back to <strong>Major-General Robert D'Arcy</strong>, are
       documented — several of them to the day, and Robert from his commission in 1776 to his burial
       in 1827. Then the line stops dead. Nothing connects Robert to the man printed above him, and
       the tree contradicts itself about what that connection was supposed to be.
       <a href={u("/hornby/")}>Why the Hornby descent is doubted →</a>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1rem">Where the exported tree is demonstrably wrong, the
     corrected value is shown here and <strong>the tree's own version is printed underneath it</strong>.
@@ -130,7 +131,7 @@ const corr = (id) => CORRECTIONS[id];
   </section>
 
   <section class="blk">
-    <div class="scroll">
+    <Scroll>
       <table>
         <thead>
           <tr>
@@ -162,7 +163,7 @@ const corr = (id) => CORRECTIONS[id];
           })}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:.9rem">The upper rows reproduce the exported tree's own fields
     <em>verbatim</em>, including its truncations — "Earl of Holdernesse ( 3rd" and "St. James Palace,
     London, Middlesex, Englan" are what the file actually contains. They are left as they are rather

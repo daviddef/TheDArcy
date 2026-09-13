@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 ---
 <Base
@@ -15,11 +18,9 @@ import { u } from "../lib/url.js";
     family, apparently, nothing. And the fourth was found this week and is barely known yet.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">Sergeant, 11335</div>
-    <h2 style="margin-top:.4rem">Lindesay Atkinson D'Arcy, Australian Army Service Corps</h2>
+  <Blk label="Sergeant, 11335" title="Lindesay Atkinson D'Arcy, Australian Army Service Corps">
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Service number</td><td class="m">11335</td></tr>
@@ -34,14 +35,14 @@ import { u } from "../lib/url.js";
           <tr><td>Records</td><td class="mono">AWM8 25/109/1 · NAA J34, C34558</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Read those three dates in order.</strong> He enlisted in December, married in March,
       and sailed in May. <strong>Nine weeks</strong> separated the wedding at Albion Church from the
       troopship at Sydney, and he was gone for <strong>three years and two months</strong>. Their
       eldest son, Vivian Lindsay, was born in 1916. Their next child was born in 1924.
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">The family remembered only that he "served with the Australian
     Forces in France during the Great War" — the phrase in his 1936 obituary, and the sum of what his
@@ -66,7 +67,7 @@ import { u } from "../lib/url.js";
     It now needs the National Reference Service rather than a search box.
     <a href={u("/open-questions/")}>Queued →</a></p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>What the search did turn up is arguably better.</strong>
       <span class="mono">NAA: J34, C34558</span> — "<em>D'ARCY, Ivy Marion beneficiary of D'ARCY,
       Lindesay Atkinson — Service Number 11335</em>", contents dated <strong>1937–1938</strong>, held
@@ -79,19 +80,17 @@ import { u } from "../lib/url.js";
       say that the family's dealings with the Repatriation Commission did not end when he came home in
       1919, and it is the one document that might explain a death at forty-four.
       <strong>It is not digitised.</strong> <a href={u("/open-questions/")}>What it would take →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Private, 5050 · 20 August 1916</div>
-    <h2 style="margin-top:.4rem">Arthur Hartley Sneyd, 9th Battalion</h2>
+  <Blk label="Private, 5050 · 20 August 1916" title="Arthur Hartley Sneyd, 9th Battalion">
 
     <p>Ivy's younger brother. Born at <strong>Rockhampton</strong> on 11 October 1893, schooled at
     <strong>Eagle Junction State School</strong>. <strong>His service dossier has now been read</strong> —
     thirty digitised pages, NAA B2455, item 8088453 — and it corrects the record in several places,
     starting with his trade. He was not a clerk. He was a <strong>typist</strong>.</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Service number</td><td class="m">5050</td></tr>
@@ -112,9 +111,9 @@ import { u } from "../lib/url.js";
             Australian National Memorial <span class="chip inf">to be confirmed</span></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>He gave up his stripes to get into the line.</strong> The Statement of Service carries a
       line in a clerk's hand: "<em>Reverts to ranks on joining 9th Bttn 29.7.16</em>." He had been made
       corporal in January 1916 and sergeant after that. Reinforcements joining a battalion in the field
@@ -125,7 +124,7 @@ import { u } from "../lib/url.js";
       for the Australian War Memorial record that he <em>"gave up this rank in Egypt in order to get
       across to France"</em> — and so, independently, did a stranger in a convalescent depot at Étaples
       four months after he died. <a href={u("/finding-arthur/")}>The search for him →</a>
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">The same page carries the words <strong>"(prev. reported
     wounded)"</strong> beside the killed-in-action stamp, and the entry "<em>Wounded in action — see
@@ -165,7 +164,7 @@ import { u } from "../lib/url.js";
     </blockquote>
     <p class="small">A scarf and some letters, in case number 1224, twenty-two months after he died.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And they almost certainly never arrived.</strong> The ship named on the form is the
       transport <strong><em>Barunga</em></strong>, and she left on 20 June 1918. Twenty-five days later
       she was torpedoed and sunk. Three Australian papers carried it within the week:
@@ -184,7 +183,7 @@ import { u } from "../lib/url.js";
       what became of the case. But a case shipped on the <em>Barunga</em> on 20 June had no other way
       home. On the evidence, <strong>the scarf and the letters went to the bottom of the Atlantic</strong>,
       and the family at James Street, Wooloowin got neither a grave nor a parcel.
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">The family tree records "buried in France". On the evidence that is
     probably wrong in a particular and poignant way: Australians who fell in France with
@@ -193,7 +192,7 @@ import { u } from "../lib/url.js";
     carries no Australian names for that reason. Every indication is that Arthur Hartley Sneyd is one
     of the 10,773.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Why he has no grave — and it is now documented.</strong> He <em>was</em> buried: a
       sergeant of the 10th Battalion reported in September 1917 that Sneyd lay "<em>in a shell hole in
       No Man's Land just out of the old German Trench</em>" with "<em>a rough cross (wooden)</em>" over
@@ -205,18 +204,16 @@ import { u } from "../lib/url.js";
       authority on it and its site has now blocked automated access twice. It is supported by the AIF
       Project's compiled record and by the fact of the lost grave, and it needs one CWGC page to
       become documented. <a href={u("/open-questions/")}>Queued →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Lance-Corporal, 1696 · Military Medal and Bar</div>
-    <h2 style="margin-top:.4rem">Vivian Claude Sneyd, 3rd Australian Field Ambulance</h2>
+  <Blk label="Lance-Corporal, 1696 · Military Medal and Bar" title="Vivian Claude Sneyd, 3rd Australian Field Ambulance">
 
     <p>Ivy's other brother, two years younger than Arthur — and until 9 September 2026 this archive
     had four words about him: <em>"Salesman (listed as occupation on a death notice)"</em>. He was
     decorated twice for bravery under fire.</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Service number</td><td class="m">1696</td></tr>
@@ -232,13 +229,13 @@ import { u } from "../lib/url.js";
           <tr><td>Records</td><td class="mono">NAA B2455, item 8087524 (21 pp.) · AWM 28 · NAA J26 M17540</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The younger brother went first.</strong> Vivian enlisted on <strong>16 July 1915</strong>,
       aged nineteen. Arthur enlisted on <strong>16 September 1915</strong>, aged twenty-two — two months
       behind his little brother, to the day either side of it.
-    </div>
+    </Note>
 
     <div class="lab" style="margin-top:1.8rem">Recommendation for the Bar · 12 October 1917</div>
     <h3 style="margin-top:.3rem">Westhoek, east of Ypres</h3>
@@ -292,7 +289,7 @@ import { u } from "../lib/url.js";
       Saturday 18 January 1919, p. 5 · <span class="mono">nla.news-article20275988</span></footer>
     </blockquote>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Three things this settles.</strong> He was at <strong>Gallipoli</strong> — which is what
       the 1914/15 Star on his service record meant and this archive could not otherwise show. He was
       publicly known in Brisbane as <strong>M.M. and Bar</strong> while still serving. And he did not
@@ -302,9 +299,9 @@ import { u } from "../lib/url.js";
       <br /><br />
       The address — <em>James street, Wooloowin</em> — is the same house the Kit Store was posting
       Arthur's scarf to.
-    </div>
+    </Note>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And here is why this matters to the page above.</strong> The last thing anyone saw
       Arthur Sneyd doing, on the morning of 21 August 1916, was walking out into No Man's Land with a
       bandage round his head, <em>carrying a white flag behind stretcher bearers</em>.
@@ -313,12 +310,10 @@ import { u } from "../lib/url.js";
       that job — going forward under a barrage to bring stretchers up and carry wounded men out.
       Neither the archive nor, as far as anyone now living knows, the family had connected the two.
       <a href={u("/finding-arthur/")}>The search for Arthur →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Private, 3891 · found and read, 9 September 2026</div>
-    <h2 style="margin-top:.4rem">Ernest Vivian William Sneyd — the cousin</h2>
+  <Blk label="Private, 3891 · found and read, 9 September 2026" title="Ernest Vivian William Sneyd — the cousin">
 
     <p>Searching the National Archives for Vivian turned up a third Sneyd soldier the archive had no
     idea existed. His attestation paper settles who he was in one line: next of kin,
@@ -326,7 +321,7 @@ import { u } from "../lib/url.js";
     William Hartley Sneyd's eldest son — so this man is <strong>first cousin</strong> to Arthur and
     Vivian. <span class="chip doc">documented</span></p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Service number</td><td class="m">3891</td></tr>
@@ -345,27 +340,27 @@ import { u } from "../lib/url.js";
           <tr><td>Records</td><td class="mono">NAA B2455, item 8087517 — <strong>92 pages</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>He had been turned away once for being too short, and went back.</strong> Question 13 on
       the attestation paper asks whether the man has ever been rejected as unfit, and on what grounds.
       His answer: <strong>"YES. HEIGHT."</strong> He tried again on 4 December 1915 and was taken.
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">The length of the file is the story. <strong>Ninety-two pages</strong>
     — where his cousin Arthur's, for a man killed in action, runs to thirty. Almost all of it is
     medical. He was with the 31st Battalion in the line for a total of about five months across two
     years, and in hospital for most of the rest.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>This is the whole casualty record, not a selection from it.</strong> Army Form B.103 is
       a running log kept by the Records Office: every admission, every discharge to duty, every
       reclassification. It is set out here in full, because an archive that prints the creditable
       entries and quietly drops the rest is not recording a life, it is composing one.
-    </div>
+    </Note>
 
-    <div class="scroll" style="margin-top:1.3rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Date</th><th>What the form records</th><th>Where</th></tr></thead>
         <tbody>
@@ -409,7 +404,7 @@ import { u } from "../lib/url.js";
           <tr><td class="m"><strong>16 Feb 1920</strong></td><td><strong>Died</strong> — thirteen months after landing. Cause not established here</td><td>Brisbane</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p class="small" style="margin-top:.9rem">The file's own dates disagree by a few days across the
     May 1918 evacuation — a records office logging three hospitals and a ship out of order — and are
@@ -420,7 +415,7 @@ import { u } from "../lib/url.js";
     <span class="chip inf">the battle is inferred from the date</span>; the form gives a date and
     "wounded in action", not a place.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>What the record adds up to.</strong> He was fit for the line for about five months out of
       three and a half years. He was wounded once, ill continually, sent home to Australia twice on
       paper before he actually went, and spent the last eight months of his war in English hospitals
@@ -437,17 +432,15 @@ import { u } from "../lib/url.js";
       <br /><br />
       This archive does not name a <em>cause</em> of death without the certificate itself, and that has
       not been obtained. <a href={u("/open-questions/")}>What would settle it →</a>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1rem">Two corrections to the tree, which gives him only
     "<em>b. between 1890 and 1892, d. between 1919 and 1921</em>": his age of 25 years 2 months on
     4 December 1915 puts his birth at about <strong>October 1890</strong>, and his death is
     <strong>16 February 1920</strong>. His service is now dated to the day throughout.</p>
-  </section>
+  </Blk>
 
-  <section class="blk" style="border-bottom:0">
-    <div class="lab">The five months</div>
-    <h2 style="margin-top:.4rem">March, May, August</h2>
+  <Blk label="The five months" title="March, May, August" last>
     <p><strong>18 March 1916</strong> — Lindesay Atkinson D'Arcy marries Ivy Miriam Sneyd at Albion
     Church, Brisbane.</p>
     <p style="margin-top:.7rem"><strong>18 May 1916</strong> — he sails from Sydney on the
@@ -466,5 +459,5 @@ import { u } from "../lib/url.js";
     <p style="margin-top:1.1rem">Lindesay came home in July 1919 and died at forty-four in 1936,
     leaving Ivy with five children. Arthur did not come home at all. Ivy outlived them both by
     decades and is buried at Mt Thompson. <a href={u("/sneyd/")}>The Sneyds →</a></p>
-  </section>
+  </Blk>
 </Base>

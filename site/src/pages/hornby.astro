@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 ---
 <Base
@@ -7,15 +10,13 @@ import { u } from "../lib/url.js";
   eyebrow="The pedigree, tested"
   dek="The family tree runs this line back to a Yorkshire castle and an earldom. This page sets out exactly where that descent stops being evidence and starts being hope — and it stops in a place the tree itself admits to.">
 
-  <section class="blk">
-    <div class="lab">Found 13 September 2026</div>
-    <h2 style="margin-top:.4rem">The first record of Robert D'Arcy in an English parish register</h2>
+  <Blk label="Found 13 September 2026" title="The first record of Robert D'Arcy in an English parish register">
 
     <p class="lede">Everything on this page below is about what <strong>cannot</strong> be shown: no
     baptism, no parentage in the Corps rolls, no notice of his death. So it is worth putting the one
     thing that has now been found at the top of it.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Event</td><td><strong>Baptism</strong></td></tr>
@@ -27,9 +28,9 @@ import { u } from "../lib/url.js";
           <tr><td>Transcribed by</td><td>Ken Greenslade · found via FreeREG, 13 September 2026</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The tree said Robert D'Arcy married Jean Ward at Portsea on 21 June 1779, and carried
       a son Joseph born 1780.</strong> Here is a child baptised at that church nine months after that
       date, with both parents named and both names right. It is the <strong>only D'Arcy record in the
@@ -41,13 +42,13 @@ import { u } from "../lib/url.js";
       buried him on 19 May 1827, entry 1571, <strong>age 76</strong> — the register this page has
       always described second-hand as the source of the tree's 1751.
       <a href={u("/chatham/")}>Chatham →</a>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem"><strong>It does not touch his parentage</strong>, which
     is what this page is about — a baptism names a child's father, not the father's father. What it
     does is turn a marriage and a son from things the family believes into things a register says.
     <span class="chip doc">documented</span></p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <p class="lede">Above <strong>Major George Pitt D'Arcy of the 39th Foot</strong> the family tree
@@ -66,9 +67,7 @@ import { u } from "../lib/url.js";
     </blockquote>
   </section>
 
-  <section class="blk">
-    <div class="lab">The break</div>
-    <h2 style="margin-top:.4rem">Major-General Robert D'Arcy, and the sentence the tree wrote about him</h2>
+  <Blk label="The break" title="Major-General Robert D'Arcy, and the sentence the tree wrote about him">
 
     <p><strong>Robert D'Arcy (1751–1827)</strong> is real, and he is impressive. He was
     <em>Major-General and Commander of the Royal Engineers at Chatham</em>, a Companion of the Bath,
@@ -76,15 +75,15 @@ import { u } from "../lib/url.js";
     children — among them <strong>Joseph</strong>, who went to Persia, and <strong>George Pitt</strong>,
     who went to New South Wales. All of that is solid.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>He is now documented as an officer, in full.</strong> Connolly's
       <em>Roll of Officers of the Corps of Royal Engineers, 1660–1898</em> — the definitive register
       of the Corps — carries him at <strong>entry 203, page 10</strong>, as
       <strong>"D'Arcy, Robert, C.B."</strong> In the whole Roll, covering two hundred and thirty-eight
       years, there are <strong>only two D'Arcys</strong>. He is one; his son Constantine is the other.
-    </div>
+    </Note>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Rank</th><th class="m">Date</th></tr></thead>
         <tbody>
@@ -100,9 +99,9 @@ import { u } from "../lib/url.js";
           <tr><td>Remarks</td><td><strong>"Died at Chatham, 13 5 1827."</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And this closes a loop.</strong> The <em>Salisbury and Winchester Journal</em> of
       23 September 1805 announced the marriage of "Captain George d'Arcy", son of
       "<strong>Lieut Colonel d'Arcy</strong>". Connolly gives Robert D'Arcy's lieutenant-colonelcy as
@@ -111,7 +110,7 @@ import { u } from "../lib/url.js";
       the Corps register — agree on a rank at a date. <strong>The join between George Pitt D'Arcy and
       Robert D'Arcy is now as well evidenced as this kind of link ever gets.</strong>
       <a href={u("/australia/")}>The notice →</a>
-    </div>
+    </Note>
 
     <p style="margin-top:1.3rem"><strong>Barbados — inferred, and then found.</strong> Three of his
     children were born in Barbados, and the Roll's war services do not mention the West Indies. There
@@ -119,7 +118,7 @@ import { u } from "../lib/url.js";
     garrison Barbados in the later 1780s leaves no trace in it. The archive inferred the posting from
     that silence. Then the register turned up:</p>
 
-    <div class="scroll" style="margin-top:1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Child</td><td><strong>Constantine Darcy</strong></td></tr>
@@ -130,22 +129,22 @@ import { u } from "../lib/url.js";
           <tr><td>Source</td><td class="mono">Caribbean Birth &amp; Baptism Index 1590–1928 · film 1157925, batch C51395-3</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       A baptism at Bridgetown in February 1786 naming <strong>both parents</strong> puts Robert
       D'Arcy and his wife in Barbados, together, at a date. It confirms the posting the archive had
       only inferred, and it is the earliest record of this marriage's children anywhere. His daughter
       <strong>Jane</strong> appears on the same source. It also explains why his son George Pitt's
       birthplace is recorded as "Portsmouth, Hampshire, England <em>or West Indies</em>" — this was a
       family that moved.
-    </div>
+    </Note>
 
     <p style="margin-top:1.3rem">His burial is now confirmed from the register itself. The
     <strong>Kent Burials</strong> transcript for <strong>St Mary, Chatham</strong> records
     <em>Robert D'Arcy, of Chatham, buried 19 May 1827, aged 76</em>.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>And that is where "1751" comes from.</strong> Not from a baptism — from an age stated
       on a burial register by whoever reported the death. It puts his birth between about May 1750
       and May 1751 and it names <em>no father</em>. Every version of this pedigree repeats 1751 as
@@ -157,7 +156,7 @@ import { u } from "../lib/url.js";
       <strong>twenty-five</strong> at first commission — possible, since the Corps' promotion queue was
       notoriously slow, but late. A birth in the later 1750s would fit the commission better and the
       burial age worse. Both figures cannot be right, and neither is a register.</p>
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">What is not solid is where <em>he</em> came from. The family tree
     carries this note against his name:</p>
@@ -172,18 +171,16 @@ import { u } from "../lib/url.js";
     the supposition has since been drawn as a solid line on a chart, which is how suppositions get
     promoted.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>And the tree contradicts itself.</strong> The note points at the <em>4th</em> Earl
       (Robert Darcy, 1718–1778). But the tree's actual structure hangs Robert not off the 4th Earl at
       all — it inserts a <em>Thomas (Francis) D'Arcy</em>, said to be born at St James's Palace, and
       descends him from the <em>3rd</em> Earl. Two different claims about the same join, in the same
       file. At most one of them can be right, and neither carries a document.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Why the peerage line matters to the arithmetic</div>
-    <h2 style="margin-top:.4rem">The earldom of Holderness ended in 1778, in a daughter</h2>
+  <Blk label="Why the peerage line matters to the arithmetic" title="The earldom of Holderness ended in 1778, in a daughter">
     <p>The Darcy Earls of Holderness are among the best-recorded families in England. Conyers Darcy,
     1st Earl (1598–1689); Conyers, 2nd Earl (1622–1692); Robert, 3rd Earl (1681–1721); Robert, 4th
     Earl (1718–1778). At the 4th Earl's death the earldom became <strong>extinct</strong>, because he
@@ -195,13 +192,13 @@ import { u } from "../lib/url.js";
     born and died in 1750; and Lady Amelia</strong>, the only one to reach adulthood. Both sons died
     in infancy.</p>
 
-    <div class="note" style="margin-top:1.1rem">
+    <Note>
       <strong>A coincidence to notice and then put down.</strong> The Earl's second son was born and
       died in <strong>1750</strong>; our Robert D'Arcy was born about <strong>1750 or 1751</strong>.
       That is the kind of near-miss out of which family traditions are built, and it is not evidence
       of anything. It is recorded because someone else will notice it, and should find it already
       weighed.
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">The extinction is the whole reason an <em>illegitimate</em> son has to
     be invoked at all. A legitimate male descent from the 4th Earl is not merely unproven; it is
@@ -209,7 +206,7 @@ import { u } from "../lib/url.js";
     fathered a boy outside marriage, that boy became a Major-General of Engineers, and nobody wrote it
     down.</em> Possible. Common enough, even. But it is precisely the kind of claim that leaves no
     paper — which is what makes it so attractive and so useless.</p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2>What this archive is prepared to say</h2>
@@ -251,9 +248,7 @@ import { u } from "../lib/url.js";
     </div>
   </section>
 
-  <section class="blk">
-    <div class="lab">Searched, and found empty</div>
-    <h2 style="margin-top:.4rem">There is no baptism</h2>
+  <Blk label="Searched, and found empty" title="There is no baptism">
     <p>FindMyPast has been swept for the <strong>baptism of a Robert D'Arcy or Darcy born
     c. 1741–1761</strong>, name variants on, across every English record set. The sweep returns
     burials, marriages, wills and Irish abstracts — <strong>and not one English baptism in the
@@ -280,7 +275,7 @@ import { u } from "../lib/url.js";
     Robert D'Arcy married Jean Ward at Portsea. It is the documentary trace of the legitimate line
     passing to a daughter — which is precisely why an illegitimate son has to be invoked here at
     all.</p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What would actually settle it</h2>

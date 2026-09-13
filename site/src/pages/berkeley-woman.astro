@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/berkeley-woman.json";
 ---
@@ -17,19 +20,17 @@ import d from "../data/berkeley-woman.json";
     <p style="margin-top:1.1rem">The 1851 census was taken in the same house, about the same woman,
     ten years later. It did not ask whether she was born in this county. It asked <em>where</em>.</p>
 
-    <div class="note" style="margin-top:1.3rem;border-left-width:3px">
+    <Note style="border-left-width:3px">
       <strong style="font-size:1.15em">Birth town: BERKELEY. Birth county: GLOUCESTERSHIRE.</strong>
       <br /><br />
       Which is what <a href={u("/people/hannah-saniger/")}>the family tree</a> said before any of this
       began. <span class="chip doc">documented</span>
-    </div>
+    </Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">{d.census}</div>
-    <h2 style="margin-top:.4rem">The household, complete</h2>
+  <Blk label={d.census} title="The household, complete">
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Name</th><th>Relation</th><th class="m">Age</th><th>Occupation</th><th>Born</th></tr></thead>
         <tbody>
@@ -44,28 +45,24 @@ import d from "../data/berkeley-woman.json";
           ))}
         </tbody>
       </table>
-    </div>
-  </section>
+    </Scroll>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">{d.marriage.set}</div>
-    <h2 style="margin-top:.4rem">And the marriage, at last</h2>
+  <Blk label={d.marriage.set} title="And the marriage, at last">
     <p class="lede">{d.marriage.line}.</p>
     <p style="margin-top:1rem">Residence: {d.marriage.residence}.</p>
-    <div class="note" style="margin-top:1.2rem">{d.marriage.means}
-      <span class="chip doc">documented in England</span></div>
-  </section>
+    <Note>{d.marriage.means}
+      <span class="chip doc">documented in England</span></Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">What this cost</div>
-    <h2 style="margin-top:.4rem">An edifice on a tick</h2>
+  <Blk label="What this cost" title="An edifice on a tick">
 
     <p class="lede">The claim was: <em>{d.wrong.claim}</em> On it this archive built:</p>
     <ol class="dek" style="margin-top:1rem">
       {d.wrong.built.map((x) => (<li style="margin-bottom:.5rem">{x}</li>))}
     </ol>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>All of it rested on one thing.</strong> {d.wrong.rested}
       <br /><br />
       {d.wrong.beats}
@@ -73,90 +70,82 @@ import d from "../data/berkeley-woman.json";
       A binary tick is the weakest statement a census makes, and this archive treated it as the
       strongest thing it had — because it was the only thing it had, and because nobody tested it
       against the next census. <a href={u("/corrections/")}>Filed as the largest error here →</a>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">The pages built on the wrong answer are still up, marked
     wrong rather than deleted, because how an archive goes wrong is part of what it knows.
     <a href={u("/chew-magna/")}>Chew Magna →</a> · <a href={u("/bristol-chapels/")}>The Bristol chapels →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Four things nobody here knew this morning</div>
-    <h2 style="margin-top:.4rem">What else the page gives</h2>
+  <Blk label="Four things nobody here knew this morning" title="What else the page gives">
     <ol class="dek" style="margin-top:1rem">
       {d.newFacts.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}.</strong> {b}</li>))}
     </ol>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Stroud, 6 April 1806</div>
-    <h2 style="margin-top:.4rem">And a whole family nobody here had a name for</h2>
+  <Blk label="Stroud, 6 April 1806" title="And a whole family nobody here had a name for">
 
     <p class="lede">{d.wakefield.baptism}</p>
     <p style="margin-top:1rem">{d.wakefield.means}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>{d.wakefield.webb}</strong>
       <a href={u("/drivers-fields/")}>The 1841 household →</a>
       <span class="chip inf">an identification</span>
       <br /><br />
       {d.wakefield.caveat}
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1.2rem">{d.wakefield.jabez}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Correction, made the same day.</strong> {d.queensland}
       <a href={u("/general-hewitt/")}>The manifest →</a> ·
       <a href={u("/corrections/")}>Filed →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Bristol, St Paul, Portland Square</div>
-    <h2 style="margin-top:.4rem">Ellen was not left behind</h2>
+  <Blk label="Bristol, St Paul, Portland Square" title="Ellen was not left behind">
 
     <p class="lede">{d.ellen.baptism}</p>
     <p class="lede" style="margin-top:.9rem">{d.ellen.burial}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>{d.ellen.means}</strong> <span class="chip doc">documented</span>
       <br /><br />
       {d.ellen.eliza}
       <br /><br />
       {d.ellen.lesson} <a href={u("/general-hewitt/")}>The page that framed it →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Coverage, tested</div>
-    <h2 style="margin-top:.4rem">Why Hannah's own baptism is still missing</h2>
+  <Blk label="Coverage, tested" title="Why Hannah's own baptism is still missing">
 
     <p><strong>The test.</strong> {d.hannahGap.test} <strong>The result.</strong>
     {d.hannahGap.result}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>{d.hannahGap.verdict}</strong>
       <a href={u("/hannah-baptism")}>The record →</a>
       <span class="chip sup">superseded</span>
       <br /><br />
       {d.hannahGap.next}
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1.2rem">{d.lydia}
       <a href={u("/drivers-fields/")}>Lyddya Sinegar →</a></p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>And the gap that was never a gap</h2>
     <p class="lede">{d.berkeley}</p>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>This is the real lesson, and it is not about Hannah.</strong> Every null result on this
       site was measured against free indexes, and
       <a href={u("/coverage/")}>the page that measures them</a> now needs a line at the top: the
       commonest reason a record could not be found here is that it was behind a subscription. The
       coverage discipline was right. The conclusion drawn from it — that the record did not exist in
       reach — was a statement about this archive's budget, not about the archives of England.
-    </div>
+    </Note>
   </section>
 </Base>

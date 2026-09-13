@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const SIBS = [
@@ -30,7 +32,7 @@ const SIBS = [
     it stands alone. It does not, and it does not exist by accident: it was begun because the
     Australian D'Arcys married into a family that already had an archive of its own.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>This page was wrong for a day, and the brief it contradicted was right.</strong>
       On 9 September 2026 it claimed the founding brief — "the Australian D'Arcy family that married
       Falco" — had the shape of it wrong, and that the D'Arcys had married Defranceski while the
@@ -42,7 +44,7 @@ const SIBS = [
       this archive is built outward from. The D'Arcys married Falco exactly as the brief said. The
       Defranceski marriage is the <em>next</em> one, in the following generation.
       <a href={u("/corrections/")}>Recorded with the rest →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk">
@@ -51,7 +53,7 @@ const SIBS = [
     <strong>living</strong>, and none of these archives publishes living people — so the join is
     described here and not drawn.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td><strong>This archive</strong></td>
@@ -72,16 +74,16 @@ const SIBS = [
               <td>two children in whom all three lines meet — <span class="chip lore">living, withheld</span></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>This is the rule doing its job, not a gap in the research.</strong> The archive knows
       exactly who these people are — it walked their ancestry to build every page on this site. It
       withholds them because they are alive, and it withholds them <em>consistently</em>: not just
       their own entries but their names wherever they would appear as somebody's spouse, parent or
       child. Across the whole tree the rule holds back <strong>2,034</strong> people.
       <a href={u("/method/")}>How the rule works, and how to invoke it →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk" style="border-bottom:0">

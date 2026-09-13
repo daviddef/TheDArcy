@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import c from "../data/chatham.json";
 ---
@@ -19,9 +22,7 @@ import c from "../data/chatham.json";
     <strong>{c.rows.length} D'Arcy entries</strong>. Six of them are this family.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">What the register holds</div>
-    <h2 style="margin-top:.4rem">Seven entries, in order</h2>
+  <Blk label="What the register holds" title="Seven entries, in order">
 
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
       {c.rows.map((r) => (
@@ -35,11 +36,9 @@ import c from "../data/chatham.json";
         </div>
       ))}
     </div>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The one that matters most</div>
-    <h2 style="margin-top:.4rem">“Robert D'Arcy, 76, Chatham”</h2>
+  <Blk label="The one that matters most" title="“Robert D'Arcy, 76, Chatham”">
 
     <p class="lede">The family tree says Robert D'Arcy was born in <strong>1751</strong>. This archive
     has spent months explaining that the 1751 is <em>arithmetic from an age on a burial register</em>
@@ -50,34 +49,32 @@ import c from "../data/chatham.json";
     1827: <strong>Robert D'Arcy, age 76, of Chatham</strong>. Connolly gives his death as 13 May;
     he was buried six days later, in the garrison town he had served for half a century.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>And the local paper watched it happen.</strong> The Kent Herald of 24 May 1827: “On
       Saturday Major-General D'Arcy, whose death we announced last week, <strong>was interred at
       Chatham with military honours</strong>.” That Saturday was 19 May. Seventeen papers across
       three countries carried his death, four of them giving 13 May.
       <a href={u("/obituary/")}>All seventeen →</a>
-    </div>
+    </Note>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The correction stands, and it is now a better-founded correction.</strong> An age at
       burial is still a <em>stated</em> age — supplied by whoever brought the body, rounded, and
       frequently wrong by several years. It is not a birth record and it never becomes one. But the
       archive has gone from repeating somebody's arithmetic to holding the document the arithmetic
       was done on, which is the whole business of this site.
       <span class="chip inf">an age, not a birth</span>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">And it does not touch his parentage, which remains
     unknown. A burial names nobody but the dead.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Eight days</div>
-    <h2 style="margin-top:.4rem">A christening, and then a convict ship</h2>
+  <Blk label="Eight days" title="A christening, and then a convict ship">
 
     <p>The entry that brings the two halves of this archive together is a baptism.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Child</td><td><strong>Charlotte D'Arcy</strong></td></tr>
@@ -88,31 +85,29 @@ import c from "../data/chatham.json";
           <tr><td>Abode</td><td>Chatham</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>On 8 April 1826 — eight days later — the convict ship <em>England</em> embarked a
       detachment of the 39th Foot commanded by “George Pitt D'Arcy, B. Major”</strong>, with thirty-nine
       men, six women, seven children, and Mrs D'Arcy and family in the cabin. They christened the baby,
       and then they sailed for New South Wales.
       <a href={u("/australia/")}>The surgeon's journal →</a>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">The rank in the parish register — <em>Brevet Major, 39th
     Foot</em> — is the same rank the ship's surgeon wrote down at sea a fortnight later. Two clerks,
     two countries, one man, and neither of them had ever been set beside the other.
     <span class="chip doc">documented</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">And two marriages resolved</div>
-    <h2 style="margin-top:.4rem">Mary, then Maria</h2>
+  <Blk label="And two marriages resolved" title="Mary, then Maria">
     <p>The archive has held that George Pitt D'Arcy married twice — a Miss Ludlam about 1805, and
     Maria White in County Wicklow about 1819 — and that
     <a href={u("/people/frederick-robert-d-arcy/")}>Frederick Robert D'Arcy</a> the surveyor was a
     <em>half</em>-brother to the Australian children. The register bears that out without being asked:</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Baptised</th><th>Child</th><th>Father</th><th>Mother</th></tr></thead>
         <tbody>
@@ -120,10 +115,10 @@ import c from "../data/chatham.json";
           <tr><td class="m">31 Mar 1826</td><td>Charlotte D'Arcy</td><td>George Pitt, Bt Major 39th Foot</td><td><strong>Maria</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:1rem">Two children of one man, fifteen years apart, by two
     differently named mothers, in the same parish. <span class="chip doc">the half-brother, documented</span></p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What Chatham changes</h2>

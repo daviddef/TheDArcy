@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 /* The three baptisms that look like the tree's chain, and the fathers that
@@ -41,7 +44,7 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
   dek="The oldest claim in this archive is a Gloucestershire yeoman born in 1654. Three baptisms match the tree's dates for the middle of that line. Opening them shows three different fathers.">
 
   <section class="blk" style="border-top:0">
-    <div class="note" style="border-left-width:3px;margin-bottom:0">
+    <Note style="border-left-width:3px;margin-bottom:0">
       <strong>Superseded in part, 13 September 2026.</strong> This page's central complaint — that
       FreeREG's Berkeley transcript stops in 1677 and therefore five of the tree's six Saniger
       generations cannot be tested — is no longer true. They can be tested, and they have been:
@@ -49,7 +52,7 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
       Thomas buried 1819 aged 75, John buried 1825 aged 55, and John's children in 1801, 1803 and
       1808. The records were behind a subscription, not behind a gap.
       <a href={u("/behind-the-paywall/")}>What they say →</a>
-    </div>
+    </Note>
   </section>
 
 
@@ -61,24 +64,22 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
     <a href={u("/how-far-back/")}>The audit →</a> This page is what happened when the registers were
     searched properly.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The short answer, and it is worse than last time.</strong> The family is real and it is
       in the Vale in numbers. <strong>Three baptisms match the tree's dates almost exactly</strong> —
       a Thomas in 1711/12, a William in 1743, a William in 1770, all at Dursley. Read the full
       entries and their fathers are <strong>Abraham, John and Samuel</strong>. They are three
       unrelated men who happen to be baptised in the right parish in the right years.
       <strong>The chain is a coincidence of dates, and it does not survive being opened.</strong>
-    </div>
+    </Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">Correcting this page, 13 September 2026</div>
-    <h2 style="margin-top:.4rem">It said these generations could not be tested. They could.</h2>
+  <Blk label="Correcting this page, 13 September 2026" title="It said these generations could not be tested. They could.">
     <p>The first version of this page reported that five of the six Saniger generations were
     untestable, because Berkeley St Mary's transcript stops in 1677. That was true of
     <em>Berkeley</em> and it was the wrong conclusion, because it treated one parish as the whole
     question.</p>
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Parish</th><th>Church</th><th>Register</th><th class="m">Records</th>
           <th class="m">First</th><th class="m">Last</th><th>Covers the chain?</th></tr></thead>
@@ -93,21 +94,19 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p style="margin-top:1.1rem"><strong>Dursley runs to 1951 and Cam to 1939.</strong> Both sit three
     to six miles from Berkeley in the same Vale, and between them they hold
     <strong>340 of the 494</strong> Saniger records this archive found for 1670–1830. The generations
     were testable all along, in the next parish.
     <a href={u("/corrections/")}>Recorded with the other errors →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The test, and the result</div>
-    <h2 style="margin-top:.4rem">Three baptisms, three fathers, no chain</h2>
+  <Blk label="The test, and the result" title="Three baptisms, three fathers, no chain">
     <p>Searched across the whole county, every spelling, all record types: <strong>494 Saniger
     records between 1670 and 1830</strong>. Three of them land on the tree's dates.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Baptised</th><th class="m">Date</th><th>Parish</th><th>Father</th><th>Mother</th></tr></thead>
         <tbody>
@@ -120,26 +119,24 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>This is the most useful thing on the page.</strong> Three baptisms in one parish,
       matching three dates in a pedigree, is exactly what a discovery looks like — and it is exactly
       what a records-matcher would have joined up and published. The difference between a finding and
       a fiction here was <strong>one click per record</strong>, to read a field the results list does
       not show you. <a href={u("/method/")}>How claims are labelled →</a>
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem"><strong>And the generation below them does not exist at all.</strong>
     The tree carries a Saniger born about 1805. There is <strong>no Saniger baptism anywhere in
     Gloucestershire between 1801 and 1809</strong> — and that is a real null, not a coverage gap,
     because Dursley and Cam are transcribed straight through it.
     <span class="chip lore">searched and empty</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The join this archive actually needs</div>
-    <h2 style="margin-top:.4rem">Everything rests on one line in a Queensland death register</h2>
+  <Blk label="The join this archive actually needs" title="Everything rests on one line in a Queensland death register">
 
     <p class="lede">The whole Saniger claim hangs on a single fact: when
     <a href={u("/people/miriam-wakefield/")}>Miriam Wakefield</a> died in Brisbane in 1909, the
@@ -164,16 +161,14 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
       married, they married before July 1837, or somewhere else.
       <span class="chip lore">searched and empty</span></li>
     </ul>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Why none of that is proof of anything</div>
-    <h2 style="margin-top:.4rem">Bristol is not in the database</h2>
+  <Blk label="Why none of that is proof of anything" title="Bristol is not in the database">
     <p>Before reporting any of those absences, the coverage was checked. It is as well it was.
     <strong>FreeREG's entire holding for the city of Bristol is four registers and 1,551
     records</strong> — for a city of well over a hundred thousand people.</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Church</th><th>Register type</th><th class="m">Records</th><th class="m">Years</th></tr></thead>
         <tbody>
@@ -182,22 +177,20 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>St Paul, Bristol — where the tree says Miriam was baptised — is not in that list.</strong>
       Neither is any other Bristol parish except Temple. So the marriage and the baptism this archive
       most needs are not absent from the record; they are absent from the <em>transcription</em>, and
       reporting them as null results would have been a straightforward lie.
       <a href={u("/searched/")}>Every source read, with which of the three this was →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">What civil registration did give up</div>
-    <h2 style="margin-top:.4rem">Found: Miriam Wakefield, June quarter 1840</h2>
+  <Blk label="What civil registration did give up" title="Found: Miriam Wakefield, June quarter 1840">
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Event</td><td><strong>Birth registration</strong></td></tr>
@@ -208,25 +201,23 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
           <tr><td>Source</td><td>FreeBMD, the GRO index · searched 13 September 2026</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.1rem">She is the <strong>only Miriam Wakefield registered anywhere in
     England between 1839 and 1843</strong>. The tree says she was born on 11 April 1840 in Bristol; a
     birth on 11 April falls in the June quarter exactly as it should.
     <span class="chip doc">documented</span></p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And this is the way through.</strong> A GRO birth certificate names the mother
       <em>including her maiden surname</em>. One certificate — <span class="mono">Jun 1840, Bristol,
       vol 11 p 183</span>, £2.50 as a PDF — tests “Hannah Saniger” at the English end, which nothing
       else found so far can do. It is now the first item on the errands list.
       <a href={u("/errands/")}>The queue →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">A correction made mid-research, kept</div>
-    <h2 style="margin-top:.4rem">The story that wasn't</h2>
+  <Blk label="A correction made mid-research, kept" title="The story that wasn't">
     <p>Reading the Berkeley list, an obvious and affecting sequence appeared: <em>Agnies Sainger
     buried at Berkeley in late May 1655; William baptised on the 24th of that month; Edward Sainger
     married Mary Smyth that July.</em> A mother dead in childbirth and a widower remarried within ten
@@ -235,13 +226,11 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
     Agnies entered as "<em>wife of</em>" with the surname <strong>Tyler</strong> — not a Sainger at
     all. It took one click to destroy, and it is the same click that destroyed the Dursley chain
     further up this page.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The unexpected result, confirmed</div>
-    <h2 style="margin-top:.4rem">They are not really a Berkeley family</h2>
+  <Blk label="The unexpected result, confirmed" title="They are not really a Berkeley family">
     <p>Of 494 Saniger records in the county between 1670 and 1830:</p>
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Parish</th><th class="m">Records</th></tr></thead>
         <tbody>
@@ -250,11 +239,11 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p style="margin-top:1.1rem"><strong>Cam and Dursley hold 340 between them; Berkeley holds
     18.</strong></p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>This page used to end that sentence by saying the archive should stop calling this a
       Berkeley family — that "of Berkeley" looked like a label somebody applied to the whole Vale.
       That was wrong, and interestingly wrong.</strong>
@@ -268,7 +257,7 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
       are where the family went. <a href={u("/saniger-place/")}>The place, and its records →</a>
       <br /><br />
       The counts on this page are still right. The conclusion drawn from them was not.
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem"><strong>The spellings, all of them one family:</strong>{" "}
     {SPELLINGS.map((s, i) => (<>{i > 0 && " · "}<span class="mono">{s}</span></>))}.
@@ -278,7 +267,7 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
     registers is not <em>Saniger</em> at all but <strong>SINNEGAR</strong>.
     <a href={u("/sanigers/")}>All seventeen, counted →</a>
     <a href={u("/name/")}> Why spelling is not identity →</a></p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>Where this leaves the oldest claim</h2>
@@ -299,12 +288,12 @@ const SPELLINGS = ["SAINGER", "SANIGER", "SANIGAR", "SANIGAER", "SINAGER", "SINN
       whether she existed under that name at all.</li>
     </ol>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The archive's floor has not moved, but the ceiling has come down.</strong> This is still
       about seven generations of genuinely evidenced ancestry. What has changed is that the storey
       above it is no longer merely unproven — <strong>parts of it have now been looked for and found
       to be wrong</strong>. <a href={u("/how-far-back/")}>How far back it really goes →</a> ·
       <a href={u("/errands/")}>The certificate that would settle it →</a>
-    </div>
+    </Note>
   </section>
 </Base>

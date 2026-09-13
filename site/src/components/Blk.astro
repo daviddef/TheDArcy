@@ -1,0 +1,13 @@
+---
+/* The section this archive is built out of: a small label, a heading under it,
+   and the content. It appears 174 times, and 172 of those carried
+   style="margin-top:.4rem" typed onto the h2 by hand.
+   The component owns that spacing. `id` makes a section linkable, which the
+   contents tables on the longer pages need. */
+const { label, title, id, last, ...rest } = Astro.props;
+---
+<section class={["blk", last && "blk-last"].filter(Boolean).join(" ")} id={id} {...rest}>
+  {label && <div class="lab">{label}</div>}
+  {title && <h2 class="blk-h">{title}</h2>}
+  <slot />
+</section>

@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 import c from "../data/changes.json";
 const passes = c.days.length;
@@ -11,16 +13,14 @@ const items = c.days.reduce((a, d) => a + d.did.length, 0);
   </section>
 
   {c.days.map((d) => (
-    <section class="blk">
-      <div class="lab">{d.when}</div>
-      <h2 style="margin-top:.4rem">{d.title}</h2>
+    <Blk label={d.when} title={d.title}>
       {d.found && (
-        <div class="note" style="margin-top:1rem"><strong>What it found.</strong> {d.found}</div>
+        <Note tight><strong>What it found.</strong> {d.found}</Note>
       )}
       <ul class="dek" style="margin-top:1.1rem">
         {d.did.map((x) => <li style="margin-top:.4rem">{x}</li>)}
       </ul>
-    </section>
+    </Blk>
   ))}
 
   <section class="blk" style="border-bottom:0">

@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/wakefields.json";
 ---
@@ -10,10 +13,8 @@ import d from "../data/wakefields.json";
 
   <section class="blk"><p class="lede">{d.lede}</p></section>
 
-  <section class="blk">
-    <div class="lab">James Wakefield, 1806–1857</div>
-    <h2 style="margin-top:.4rem">A life in six records</h2>
-    <div class="scroll" style="margin-top:1.2rem">
+  <Blk label="James Wakefield, 1806–1857" title="A life in six records">
+    <Scroll>
       <table>
         <tbody>
           {d.life.map(([what, when, where]) => (
@@ -23,14 +24,12 @@ import d from "../data/wakefields.json";
           ))}
         </tbody>
       </table>
-    </div>
-    <div class="note" style="margin-top:1.3rem"><strong>{d.trade}</strong></div>
-  </section>
+    </Scroll>
+    <Note><strong>{d.trade}</strong></Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Nine children</div>
-    <h2 style="margin-top:.4rem">Two died, one is unaccounted for, six sailed</h2>
-    <div class="scroll" style="margin-top:1.2rem">
+  <Blk label="Nine children" title="Two died, one is unaccounted for, six sailed">
+    <Scroll>
       <table>
         <thead><tr><th>Child</th><th class="m">Born</th><th>What is known</th></tr></thead>
         <tbody>
@@ -39,34 +38,32 @@ import d from "../data/wakefields.json";
           ))}
         </tbody>
       </table>
-    </div>
-    <div class="note" style="margin-top:1.3rem">
+    </Scroll>
+    <Note>
       <strong>{d.deaths}</strong> <span class="chip doc">documented</span>
-    </div>
+    </Note>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>{d.martha.head}</strong> {d.martha.body}
       <br /><br />
       {d.martha.where} <span class="chip lore">{d.martha.chip}</span>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1rem">
       <a href={u("/general-hewitt/")}>The passenger register →</a> ·
       <a href={u("/drivers-fields/")}>The 1841 household →</a> ·
       <a href={u("/berkeley-woman/")}>The 1851 household →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">A loose end tied</div>
-    <h2 style="margin-top:.4rem">Matilda Webb</h2>
+  <Blk label="A loose end tied" title="Matilda Webb">
     <p class="lede">{d.webb}</p>
     <p class="dek" style="margin-top:1rem">It is the sort of thing an archive only notices when it
     finally learns a man's mother's name.</p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What is not settled</h2>
-    <div class="note">{d.open} <span class="chip inf">an identification</span></div>
+    <Note>{d.open} <span class="chip inf">an identification</span></Note>
     <p class="small" style="margin-top:1.3rem">
       <a href={u("/people/james-wakefield/")}>James Wakefield →</a> ·
       <a href={u("/people/hannah-saniger/")}>Hannah Saniger →</a> ·

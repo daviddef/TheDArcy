@@ -52,7 +52,12 @@ img{max-width:100%}
 .prose{max-width:80ch;display:flex;flex-direction:column;gap:16px}
 .prose h3{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.13em;
   text-transform:uppercase;color:var(--ink-3);margin-top:14px}
-.scroll{overflow-x:auto;padding-bottom:6px}
+.scroll{overflow-x:auto;padding-bottom:6px;margin-top:1.2rem}
+.scroll-flush{margin-top:0}
+/* the scroller is focusable so a keyboard can pan it; the outline only shows
+   when it is reached by keyboard, not on a mouse click */
+.scroll:focus{outline:none}
+.scroll:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .panel{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:20px 22px}
 .grid{display:grid;gap:14px}
 .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -74,6 +79,9 @@ td.m,th.m{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nu
 .chip.sup{border-color:var(--ink-3);color:var(--ink-3);border-style:dashed;text-decoration:line-through}
 .note{border-left:2px solid var(--ochre);padding:2px 0 2px 18px;font-family:var(--sans);
   font-size:14.5px;line-height:1.62;color:var(--ink-2);max-width:82ch}
+.note{margin-top:1.25rem}
+.note-tight{margin-top:.7rem}
+.note-flush{margin-top:0}
 
 /* ---- chrome ---- */
 header.site{border-bottom:1px solid var(--rule-strong);background:var(--panel);
@@ -96,6 +104,9 @@ footer.site{border-top:1px solid var(--rule-strong);padding:34px 0 60px;backgrou
 section.blk{padding:44px 0;border-bottom:1px solid var(--rule)}
 section.blk:last-child{border-bottom:0}
 section.blk h2{font-size:clamp(24px,3vw,34px)}
+/* the heading under a label sits close to it — this was typed inline 172 times */
+section.blk h2.blk-h{margin-top:.4rem}
+.blk-last{border-bottom:0}
 section.blk > .dek{margin-top:10px}
 .stack{display:flex;flex-direction:column;gap:34px}
 .cardlink{display:block;text-decoration:none;color:inherit;background:var(--panel);

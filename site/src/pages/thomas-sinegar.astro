@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 import d from "../data/thomas-sinegar.json";
 ---
@@ -10,12 +12,10 @@ import d from "../data/thomas-sinegar.json";
 
   <section class="blk">
     <p class="lede">{d.lede}</p>
-    <div class="note" style="margin-top:1.2rem"><strong>{d.who}</strong></div>
+    <Note><strong>{d.who}</strong></Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">What is on record</div>
-    <h2 style="margin-top:.4rem">Five entries, sixty-three years</h2>
+  <Blk label="What is on record" title="Five entries, sixty-three years">
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
       {d.records.map((r) => (
         <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
@@ -26,32 +26,28 @@ import d from "../data/thomas-sinegar.json";
         </div>
       ))}
     </div>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The case for him</div>
-    <h2 style="margin-top:.4rem">Four things that line up</h2>
+  <Blk label="The case for him" title="Four things that line up">
     <ol class="dek" style="margin-top:1rem">
       {d.case.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
     </ol>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">And the case against calling it proved</div>
-    <h2 style="margin-top:.4rem">What is missing</h2>
+  <Blk label="And the case against calling it proved" title="What is missing">
     <ul class="dek" style="margin-top:1rem">
       {d.against.map((x) => (<li style="margin-bottom:.5rem">{x}</li>))}
     </ul>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>{d.spelling}</strong>
       <a href={u("/hannah-baptism")}>The other vowel →</a>
-    </div>
+    </Note>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>{d.verdict}</strong>
       <span class="chip inf">a strong inference, not a document</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>And an apology to an earlier pass</h2>
@@ -59,10 +55,10 @@ import d from "../data/thomas-sinegar.json";
     had. It was then overtaken by my own conclusion that Hannah could not have been born in
     Gloucestershire — a conclusion built on one tick in the 1841 census, which turned out to be
     wrong. Three days of work went to a Somerset parish instead.</p>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       The lead was right the first time. <a href={u("/berkeley-woman")}>What was wrong with me →</a> ·
       <a href={u("/chew-magna")}>Where I went instead →</a> ·
       <a href={u("/saniger-line")}>Her six generations →</a>
-    </div>
+    </Note>
   </section>
 </Base>

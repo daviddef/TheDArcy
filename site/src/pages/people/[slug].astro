@@ -1,5 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Note from "../../components/Note.astro";
+import Scroll from "../../components/Scroll.astro";
 import { u } from "../../lib/url.js";
 import { people, byId } from "../../lib/people.js";
 import mentions from "../../data/mentions.json";
@@ -214,7 +216,7 @@ const anyDamaged = notes.some((n) => n.damaged);
     <div class="grid two">
       <div>
         <h2 style="margin-top:0">The record</h2>
-        <div class="scroll">
+        <Scroll>
           <table>
             <tbody>
               {facts.map(([k, a, b]) => (
@@ -226,7 +228,7 @@ const anyDamaged = notes.some((n) => n.damaged);
               ))}
             </tbody>
           </table>
-        </div>
+        </Scroll>
         {verified && (
           <p class="small" style="margin-top:.9rem"><span class="chip doc">registered</span>{" "}
             The <strong>{verified[0]}</strong> date above is confirmed by the Queensland civil
@@ -234,7 +236,7 @@ const anyDamaged = notes.some((n) => n.damaged);
             <a href={u("/sources/")}> Sources →</a></p>
         )}
         {corrections.length > 0 && (
-          <div class="note" style="margin-top:1rem">
+          <Note tight>
             <strong>Corrected against the family tree.</strong> The rows above carry this archive's
             finding. What the exported tree says is printed here, because hiding it would conceal the
             one thing this site is for.
@@ -244,7 +246,7 @@ const anyDamaged = notes.some((n) => n.damaged);
                   <a href={u(href)}>Set out in full →</a></li>
               ))}
             </ul>
-          </div>
+          </Note>
         )}
         {p.ancestor && (
           <p style="margin-top:1rem"><span class="chip doc">direct line</span>
@@ -392,16 +394,16 @@ const anyDamaged = notes.some((n) => n.damaged);
       <p class="small">Carried across from the family tree, with its markup stripped. Family
       testimony, not an independent record — valuable, and labelled.</p>
       {anyDamaged && (
-        <div class="note" style="margin-top:1rem">
+        <Note tight>
           <strong>This note reached the archive damaged.</strong> The export it came from stores rich
           text, and the transfer truncated it — opening tags cut off mid-attribute, and words missing
           from the middle of sentences. What follows has had the wreckage stripped, but
           <strong> sentences will still break off</strong>. That is the source, not the transcription,
           and nothing has been invented to bridge the gaps.
-        </div>
+        </Note>
       )}
       {notes.map((n) => (
-        <div class="note" style="margin-top:1rem;white-space:pre-wrap">{n.text}</div>
+        <Note tight style="white-space:pre-wrap">{n.text}</Note>
       ))}
     </section>
   )}

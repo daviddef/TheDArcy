@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const W = [
@@ -49,7 +52,7 @@ const W = [
     salary in the Blue Book. A constable has a staff file. A woman who bore nine children and buried
     four of them has a marriage line and a burial plot.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And yet the single most valuable document in this archive is a woman's testimony.</strong>
       When <a href={u("/people/miriam-wakefield/")}>Miriam Wakefield</a> stood up in the Brisbane
       Police Court in September 1902 and said "<em>his father's name was Samuel Sneyd, Gaol Governor,
@@ -57,7 +60,7 @@ const W = [
       been circling — and she named <a href={u("/people/catherine-margaret-mulcahy/")}>Catherine
       Mulcahy</a>, a Cork housemaid dead forty-four years, whom no other record in this archive
       connects to that family at all. <a href={u("/inquest-1902/")}>Her evidence in full →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk">
@@ -65,7 +68,7 @@ const W = [
     <p class="dek">Wives of the direct line, oldest first. The last column is the number of children
     the tree records — <strong>sixty-seven between them</strong>.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Who</th><th>Out of</th><th>To</th><th class="m">Children</th></tr></thead>
         <tbody>
@@ -80,7 +83,7 @@ const W = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <div style="margin-top:1.6rem;display:flex;flex-direction:column;gap:1rem">
       {W.map((w) => (
@@ -93,9 +96,7 @@ const W = [
     </div>
   </section>
 
-  <section class="blk">
-    <div class="lab">Lutwyche Cemetery · Portion GP5, Section 42A, Grave 78</div>
-    <h2 style="margin-top:.4rem">Two of them are in the same grave</h2>
+  <Blk label="Lutwyche Cemetery · Portion GP5, Section 42A, Grave 78" title="Two of them are in the same grave">
 
     <p><strong>Miriam Wakefield</strong> died in 1909. <strong>Martha Blum</strong>, who had married
     Miriam's son Arthur at Muttaburra, died five years earlier in 1904, aged thirty-four, leaving
@@ -105,14 +106,14 @@ const W = [
     <strong>same plot</strong>: Lutwyche Cemetery, Portion GP5, Section 42A, Grave 78. The
     mother-in-law was buried with her son's wife.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <span class="chip inf">from the family tree, not yet checked against the register</span>
       Two identical plot references is the sort of thing that is either quietly true or a
       copy-and-paste error, and the archive cannot yet tell which. The Brisbane City Council cemetery
       register would settle it in a minute, and it is now on the list.
       <a href={u("/open-questions/")}>Queued →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk">
     <h2>What the numbers say</h2>

@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/saniger-place.json";
 ---
@@ -15,19 +18,17 @@ import d from "../data/saniger-place.json";
     and lands lying "<em>in Saniger and Hamfallow</em>". Saniger is a place, and the surname is
     taken from it.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Which explains the thing this archive kept noticing and could not account for.</strong>
       It has repeatedly recorded that the name "concentrates in the Vale of Berkeley", that the
       spellings are chaotic, and that "of Berkeley" looked like a label somebody applied loosely.
       A toponymic surname does exactly that: it is invented once, in one parish, and everyone who
       carries it is from there. <a href={u("/name/")}>How surnames are coined →</a>
-    </div>
+    </Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">The catalogue entries</div>
-    <h2 style="margin-top:.4rem">Two centuries of Sanigers at Saniger</h2>
-    <div class="scroll" style="margin-top:1.2rem">
+  <Blk label="The catalogue entries" title="Two centuries of Sanigers at Saniger">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>Entry</th></tr></thead>
         <tbody>
@@ -36,22 +37,20 @@ import d from "../data/saniger-place.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:1rem">Almost all of these are <span class="mono">D2957/41</span>
     at <strong>Gloucestershire Archives</strong> — the Berkeley estate deeds. They are catalogue
     descriptions, not documents this archive has read.
     <span class="chip inf">catalogued, not yet seen</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Berkeley Castle Muniments</div>
-    <h2 style="margin-top:.4rem">The place is two hundred years older than the name</h2>
+  <Blk label="Berkeley Castle Muniments" title="The place is two hundred years older than the name">
 
     <p class="lede">The Berkeley family kept its own archive, and it is catalogued. Nine of its deeds
     name people <em>of Saniger</em> between about 1272 and 1473 — and <strong>not one of them is
     called Saniger</strong>.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>Who</th></tr></thead>
         <tbody>
@@ -60,9 +59,9 @@ import d from "../data/saniger-place.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Gamel, Waleys, Nel, Couthulf, Smyth, de Egton, Hevyner, Webbe.</strong> Eight surnames
       across two centuries, all of them living at Saniger and none of them named for it. The place is
       there before the family is — and <span class="mono">BCM/A/1/30/2</span> puts it beyond argument:
@@ -71,18 +70,16 @@ import d from "../data/saniger-place.json";
       That is what settles the direction. A surname taken from a place can only be formed after the
       place has a name, and here the gap is documented: people are <em>of</em> Saniger under other
       names from before 1291, and the first man actually called Saniger appears in 1601.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Bigland, 1791</div>
-    <h2 style="margin-top:.4rem">"Saniger, long held by an old Family of the same Name"</h2>
+  <Blk label="Bigland, 1791" title="&quot;Saniger, long held by an old Family of the same Name&quot;">
 
     <p class="lede">Ralph Bigland was Garter King of Arms and spent decades copying every monumental
     inscription in Gloucestershire. His account of Berkeley parish says the thing this archive worked
     out from deeds, in one line — and then gives the stones.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Inscription</th><th class="m">Date</th><th>Note</th></tr></thead>
         <tbody>
@@ -91,41 +88,39 @@ import d from "../data/saniger-place.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>This is the material Berkeley's parish transcript does not have.</strong> FreeREG's
       Berkeley St Mary stops in <strong>1677</strong>. Bigland's monuments run from 1692 to 1750,
       with names, relationships, exact dates and ages — a hundred and twenty years of the parish,
       copied by an antiquary and printed, sitting in a book on archive.org the whole time.
       <a href={u("/berkeley/")}>The page that has been complaining about that gap →</a>
-    </div>
+    </Note>
 
     <p style="margin-top:1.3rem"><strong>And they were freeholders.</strong> {d.bigland.freeholder}</p>
 
     <p class="dek" style="margin-top:1.1rem">Bigland also lists their neighbours at Saniger, which
     tells you what kind of place it was — a hamlet of a dozen households, not an estate village:</p>
-    <div class="scroll" style="margin-top:.8rem">
+    <Scroll>
       <table>
         <tbody>{d.bigland.neighbours.map(([who, when]) => (
           <tr><td class="small">{who}</td><td class="small m">{when}</td></tr>))}</tbody>
       </table>
-    </div>
-  </section>
+    </Scroll>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The older name</div>
-    <h2 style="margin-top:.4rem">Before it was Saniger it was Swanhanger</h2>
+  <Blk label="The older name" title="Before it was Saniger it was Swanhanger">
 
     <p class="lede">{d.swanhanger.claim}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>One deed, catalogued twice, settles it.</strong> {d.swanhanger.proof}
       <br /><br />
       {d.swanhanger.gloss} <span class="chip doc">documented</span>
-    </div>
+    </Note>
 
-    <div class="scroll" style="margin-top:1.3rem">
+    <Scroll>
       <table>
         <thead><tr><th>Spelling</th><th class="m">When</th><th>Where it is written</th></tr></thead>
         <tbody>
@@ -134,26 +129,24 @@ import d from "../data/saniger-place.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.2rem">{d.swanhanger.people}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>And they are all standing in the same field.</strong> {d.swanhanger.field}
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">Swan-hanger is ordinary Old English: <em>hangra</em>, a
     wooded slope. The place is a wooded slope above the Severn where swans were. Everything else —
     the hamlet, the surname, the woman who carried it to Queensland — comes off that.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Gloucestershire Archives, D2957/41</div>
-    <h2 style="margin-top:.4rem">A clothier in 1692, a gentleman in 1709</h2>
+  <Blk label="Gloucestershire Archives, D2957/41" title="A clothier in 1692, a gentleman in 1709">
 
     <p class="lede">{d.estate.note}</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>Named</th><th>What it is</th></tr></thead>
         <tbody>
@@ -167,21 +160,19 @@ import d from "../data/saniger-place.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">{d.estate.reading}
-      <span class="chip doc">documented</span></div>
-  </section>
+    <Note>{d.estate.reading}
+      <span class="chip doc">documented</span></Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Bigland's Berkeley, hamlet four</div>
-    <h2 style="margin-top:.4rem">Who else was "of Saniger"</h2>
+  <Blk label="Bigland's Berkeley, hamlet four" title="Who else was &quot;of Saniger&quot;">
 
     <p class="lede">{d.hinton}</p>
 
     <p style="margin-top:1.1rem">{d.neighbours.note}</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           {d.neighbours.rows.map(([who, what]) => (
@@ -189,19 +180,17 @@ import d from "../data/saniger-place.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p class="small" style="margin-top:1.1rem">{d.minchinhampton}</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Probate, and one inquest</div>
-    <h2 style="margin-top:.4rem">Four records that name Sanigers outside a parish register</h2>
+  <Blk label="Probate, and one inquest" title="Four records that name Sanigers outside a parish register">
 
     <p>Probate is the record type that names children. This archive had never searched it for this
     surname. Four things came back, and one of them is not a will at all.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>What it is</th><th>Why it matters</th></tr></thead>
         <tbody>
@@ -213,21 +202,19 @@ import d from "../data/saniger-place.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Elizabeth Saniger of Thornbury is the one to open.</strong> She died a widow in
       December 1833, in a parish that sits between Berkeley and Bristol and holds eight Saniger
       register entries. <a href={u("/people/hannah-saniger/")}>Hannah Saniger</a> was married with
       children in Bristol by then. A widow's will names her children, and that is precisely the
       document this archive has never had. <a href={u("/errands/")}>On the queue →</a>
       <span class="chip inf">worth opening; not yet opened</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">What it does to the oldest claim</div>
-    <h2 style="margin-top:.4rem">A yeoman in 1601, and a gentleman clothier in 1692</h2>
+  <Blk label="What it does to the oldest claim" title="A yeoman in 1601, and a gentleman clothier in 1692">
 
     <p class="lede">The archive's deepest published person is a William Sanigar said to be born in
     1654. These entries reach fifty years behind him and describe a family already established:
@@ -239,7 +226,7 @@ import d from "../data/saniger-place.json";
     "<strong>Mr</strong> Edward", which in 1665 marks a gentleman rather than a labourer. The
     catalogue has him:</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Edward Saniger of Saniger, Berkeley</strong> — a <strong>clothier</strong> in 1692, a
       <strong>gent</strong> in 1709 and again in 1716, mortgaging and exchanging land with coopers
       of Berkeley and clothiers of Dursley.
@@ -249,8 +236,8 @@ import d from "../data/saniger-place.json";
       the right name, in the right parish, at the right social level, in the trade
       <a href={u("/sanigers/")}>the reconstitution found them in</a> — cloth.
       <span class="chip inf">the same family, almost certainly; the same man, not shown</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What this changes, and what it does not</h2>

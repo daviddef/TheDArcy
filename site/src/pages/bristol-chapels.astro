@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/bristol-chapels.json";
 const win = new Set(d.window);
@@ -11,7 +14,7 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
   dek="The one open question in this archive's English line is where Hannah Saniger was born. The likeliest answer is a Bristol chapel. Here is every Bristol chapel register the state holds, and exactly which ones could contain her.">
 
   <section class="blk" style="border-top:0">
-    <div class="note" style="border-left-width:3px;margin-bottom:0">
+    <Note style="border-left-width:3px;margin-bottom:0">
       <strong style="font-size:1.1em">This page is wrong, and it is kept here for that reason.</strong>
       <br /><br />
       Everything below was built on the belief that Hannah Saniger was not born in Gloucestershire —
@@ -19,7 +22,7 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
       same house, states her birthplace outright: <strong>Berkeley, Gloucestershire</strong>. The
       argument on this page is sound and its premise is false.
       <a href={u("/berkeley-woman/")}>What actually settled it →</a>
-    </div>
+    </Note>
   </section>
 
 
@@ -34,19 +37,17 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
     <em>five</em> Bristol chapel registers to read. That was a guess, and it was wrong by a factor of
     seven. The catalogue holds <strong>{d.total}</strong>.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Twelve of them can contain a birth between 1805 and 1815</strong> — the window for
       {" "}<a href={u("/people/hannah-saniger/")}>Hannah Saniger</a>. The other twenty-four cannot,
       and can now be struck off without opening them. That is the point of doing this before
       travelling anywhere.
-    </div>
+    </Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">Every Bristol register in RG 4</div>
-    <h2 style="margin-top:.4rem">{d.total} volumes, {byPlace.length} chapels</h2>
+  <Blk label="Every Bristol register in RG 4" title={`${d.total} volumes, ${byPlace.length} chapels`}>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead>
           <tr><th class="m">Piece</th><th class="m">Covers</th><th>Chapel</th><th>Denomination</th><th>Contents</th></tr>
@@ -63,20 +64,18 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:.9rem">Shaded rows are births or baptisms whose dates cover
     1805–1815. <span class="chip doc">catalogue, verbatim</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">And the reason the chapels matter this much</div>
-    <h2 style="margin-top:.4rem">Bristol is not in FreeREG</h2>
+  <Blk label="And the reason the chapels matter this much" title="Bristol is not in FreeREG">
 
     <p class="lede">Before recommending the chapel registers it is worth establishing what the
     <em>parish</em> registers can do, and the answer turns out to be almost nothing.
     {d.anglican.test}</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Entries returned</td><td class="m"><strong>{d.anglican.result[0]}</strong></td></tr>
@@ -85,7 +84,7 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
               <td class="m"><strong>{d.anglican.bristol[0][0]} — {d.anglican.bristol[0][1]} entry</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.2rem">{d.anglican.verdict} The largest parishes in the result are
     {d.anglican.top.slice(0, 5).map(([n, c]) => `${n} (${c})`).join(", ")} — the Vale and the
@@ -94,7 +93,7 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
     <p class="small" style="margin-top:1rem"><strong>Not present at any size:</strong>{" "}
     {d.anglican.absent.join(" · ")}.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>{d.anglican.so}</strong>
       <span class="chip doc">coverage established by control test</span>
       <br /><br />
@@ -102,19 +101,17 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
       the opposite direction: there, a two-year transcript was read as a searched parish; here, an
       untranscribed city was read as an empty one. Both come from using an index without measuring
       it. <a href={u("/chew-magna/")}>And it is why Chew Magna has to be read on film →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">One detail worth keeping</div>
-    <h2 style="margin-top:.4rem">Bristol is filed under Somerset</h2>
+  <Blk label="One detail worth keeping" title="Bristol is filed under Somerset">
 
     <p class="lede">Nearly every one of these registers is catalogued
     <strong>"Bristol, … , Somerset"</strong>. Only Bridge Street Chapel is filed under Gloucester.
     The city straddles the Avon and therefore the county line, and clerks have been choosing sides
     ever since.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>This matters here more than it looks.</strong> The
       <a href={u("/drivers-fields/")}>1841 census at Drivers Fields</a> records Hannah as
       <em>not</em> born in Gloucestershire — a single tick in a column. If she was born south of the
@@ -122,8 +119,8 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
       for years as though it pointed away from the city. It does not. It points across a river.
       <a href={u("/sanigers/")}>Where the search has already been →</a>
       <span class="chip inf">an argument, not a finding</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What to do with this</h2>

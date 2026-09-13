@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 import d from "../data/george-pitt.json";
 ---
@@ -10,33 +12,27 @@ import d from "../data/george-pitt.json";
 
   <section class="blk"><p class="lede">{d.lede}</p></section>
 
-  <section class="blk">
-    <div class="lab">{d.notice.paper}</div>
-    <h2 style="margin-top:.4rem">The notice</h2>
-    <div class="note" style="border-left-width:3px;margin-top:1rem">
+  <Blk label={d.notice.paper} title="The notice">
+    <Note tight style="border-left-width:3px;">
       <strong style="font-size:1.1em">{d.notice.text}</strong>
       <span class="chip doc">documented</span>
-    </div>
+    </Note>
     <p class="small" style="margin-top:1rem">{d.notice.also}</p>
     <p class="small" style="margin-top:.6rem">{d.notice.ocr}</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Why it matters</div>
-    <h2 style="margin-top:.4rem">Three things at once</h2>
+  <Blk label="Why it matters" title="Three things at once">
     <ol class="dek" style="margin-top:1rem">
       {d.why.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
     </ol>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And the honest limit.</strong> {d.caveat}
       <span class="chip inf">a very strong identification</span>
       <a href={u("/the-corps")}>Robert's career, and the 1805 promotion →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">What is on record</div>
-    <h2 style="margin-top:.4rem">A life in seven entries</h2>
+  <Blk label="What is on record" title="A life in seven entries">
     <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.2rem">
       {d.life.map(([when, what, src]) => (
         <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
@@ -46,15 +42,15 @@ import d from "../data/george-pitt.json";
         </div>
       ))}
     </div>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>{d.wives.head}</h2>
     <p class="lede"><strong>First.</strong> {d.wives.first}</p>
     <p class="lede" style="margin-top:1rem"><strong>Second.</strong> {d.wives.second}
       <span class="chip inf">{d.wives.chip}</span></p>
-    <div class="note" style="margin-top:1.3rem">{d.matters}
+    <Note>{d.matters}
       <a href={u("/chatham")}>Both baptisms →</a> ·
-      <a href={u("/australia")}>The voyage →</a></div>
+      <a href={u("/australia")}>The voyage →</a></Note>
   </section>
 </Base>

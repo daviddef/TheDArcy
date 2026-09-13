@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 import d from "../data/the-corps.json";
 ---
@@ -10,9 +12,7 @@ import d from "../data/the-corps.json";
 
   <section class="blk"><p class="lede">{d.lede}</p></section>
 
-  <section class="blk">
-    <div class="lab">{d.source}</div>
-    <h2 style="margin-top:.4rem">{d.span}</h2>
+  <Blk label={d.source} title={d.span}>
 
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
       {d.career.map((c) => (
@@ -26,25 +26,23 @@ import d from "../data/the-corps.json";
         </div>
       ))}
     </div>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">A name that is not him</div>
-    <h2 style="margin-top:.4rem">The cornet of the 17th Light Dragoons</h2>
+  <Blk label="A name that is not him" title="The cornet of the 17th Light Dragoons">
     <p class="lede">{d.notHim}</p>
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>This is why rank matters more than name in a military search.</strong> Two Robert
       D'Arcys were being gazetted in the same decade and only one of them is this family's.
       <span class="chip inf">excluded, and said so</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>{d.joseph.head}</h2>
     <p class="lede">{d.joseph.body}</p>
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       {d.joseph.means} <span class="chip inf">{d.joseph.chip}</span>
-    </div>
+    </Note>
     <p class="small" style="margin-top:1.4rem">
       <a href={u("/obituary/")}>How it ended →</a> ·
       <a href={u("/chatham/")}>Where he is buried →</a> ·

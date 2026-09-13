@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
@@ -26,8 +27,8 @@ const total = fams.reduce((a, f) => a + f.published, 0);
       .map((m) => m.bornPlace.split(",").slice(-2).join(",").trim()))].slice(0, 4);
     return (
       <section class="blk">
-        <div class="lab">{f.published} published{f.total > f.published ? ` · ${f.total - f.published} living, withheld` : ""}</div>
-        <h2 style="margin-top:.3rem">{f.surname}</h2>
+      <div class="lab">{f.published} published{f.total > f.published ? ` · ${f.total - f.published} living, withheld` : ""}</div>
+      <h2 class="blk-h">{f.surname}</h2>
         <p class="dek">{f.blurb}</p>
         {places.length > 0 && <p class="small" style="margin-top:.5rem">Recorded in: {places.join(" · ")}</p>}
         <div class="grid three" style="margin-top:1rem">

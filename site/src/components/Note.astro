@@ -1,0 +1,10 @@
+---
+/* A margin note. Used 175 times across this archive, and until now it carried
+   its top margin as an inline style typed by hand each time — 1rem, 1.1, 1.2,
+   1.3 and 1.4 all appear for the same element. The component owns the spacing
+   so there is one value; pass `tight` where a note follows a heading directly
+   and `flush` where it should not be pushed down at all. */
+const { tight, flush, ...rest } = Astro.props;
+const cls = ["note", tight && "note-tight", flush && "note-flush"].filter(Boolean).join(" ");
+---
+<div class={cls} {...rest}><slot /></div>

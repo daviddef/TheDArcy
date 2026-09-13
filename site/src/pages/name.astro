@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const dist = [
@@ -41,18 +44,16 @@ const dist = [
       </div>
     </div>
 
-    <div class="note" style="margin-top:1.4rem">
+    <Note>
       <strong>The apostrophe is a hint and not a proof.</strong> It leans Norman, and it was added,
       dropped and re-added by clerks, priests, recruiting sergeants and shipping agents for four
       hundred years. Our own family is written both ways across its own records — and its most
       distinctive given name, <em>Lindesay</em>, is spelled <em>Lindsay</em> in the very next
       generation. <a href={u("/direct-line/")}>See the spine →</a>
-    </div>
+    </Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">The most misused fact in D'Arcy genealogy</div>
-    <h2 style="margin-top:.4rem">The Tribes of Galway</h2>
+  <Blk label="The most misused fact in D'Arcy genealogy" title="The Tribes of Galway">
     <p>The seventeenth-century genealogist <strong>Dubhaltach MacFhirbhisigh</strong> records that
     <strong>Walter Riabhach Ó Dorchaidhe</strong> (fl. <em>c.</em> 1488) was "the first man of the Uí
     Dorchaidhe who came to Galway, according to the Galweigians themselves". His descendants became
@@ -64,7 +65,7 @@ const dist = [
     across to Normandy has crossed between two unrelated families at exactly the point where the
     record is thinnest — and it is a step people take constantly, because it makes the better
     story.</p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2>Distribution</h2>
@@ -72,7 +73,7 @@ const dist = [
     bearers worldwide</strong>, the 30,038th most common surname on earth, incidence 1:409,505.
     Variants <em>D'arcy · Darcey · Darchy · Dàrcy</em> are counted separately, so the true total for
     the name-group is higher.</p>
-    <div class="scroll" style="margin-top:1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Country</th><th class="m">Bearers</th><th class="m">Density</th><th class="m">Rank there</th></tr></thead>
         <tbody>
@@ -81,7 +82,7 @@ const dist = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <h3 style="margin-top:1.6rem">Read the table with three cautions</h3>
     <ul class="dek">

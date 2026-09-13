@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/jean-ward.json";
 ---
@@ -10,10 +13,8 @@ import d from "../data/jean-ward.json";
 
   <section class="blk"><p class="lede">{d.lede}</p></section>
 
-  <section class="blk">
-    <div class="lab">{d.record.set}</div>
-    <h2 style="margin-top:.4rem">The entry</h2>
-    <div class="scroll" style="margin-top:1.2rem">
+  <Blk label={d.record.set} title="The entry">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Name</td><td><strong>{d.record.who}</strong></td></tr>
@@ -23,22 +24,20 @@ import d from "../data/jean-ward.json";
           <tr><td><strong>Mother</strong></td><td><strong>{d.record.mother}</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <ol class="dek" style="margin-top:1.4rem">
       {d.fits.map(([h, b]) => (<li style="margin-bottom:.6rem"><strong>{h}.</strong> {b}</li>))}
     </ol>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>{d.new}</strong> <span class="chip inf">an identification, and a good one</span>
       <br /><br />
       {d.caveat}
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">{d.marriage.set}</div>
-    <h2 style="margin-top:.4rem">And her parents' marriage, seven years before</h2>
+  <Blk label={d.marriage.set} title="And her parents' marriage, seven years before">
 
     <p class="lede">{d.marriage.line}.</p>
     <p style="margin-top:1rem">{d.marriage.means}</p>
@@ -52,32 +51,30 @@ import d from "../data/jean-ward.json";
       ))}
     </div>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Five generations, from a Leith shipmaster's parish to a garrison church in Hampshire.</strong>
       None of it was in this archive at breakfast.
       <span class="chip doc">documented</span>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">{d.cotton}
       <a href={u("/saniger-line/")}>The Sanigers →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Peninsular War, British Army Officers 1808–1814</div>
-    <h2 style="margin-top:.4rem">{d.george.head}</h2>
+  <Blk label="Peninsular War, British Army Officers 1808–1814" title={d.george.head}>
     <p class="lede">{d.george.body}</p>
-    <div class="note" style="margin-top:1.2rem">{d.george.means}
+    <Note>{d.george.means}
       <a href={u("/australia/")}>The voyage of 1826 →</a> ·
-      <a href={u("/chatham/")}>The baptism that gives his rank →</a></div>
-  </section>
+      <a href={u("/chatham/")}>The baptism that gives his rank →</a></Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What both of these have in common</h2>
     <p class="lede">{d.closes}</p>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       That distinction is now the first thing on <a href={u("/coverage/")}>the coverage page</a>, and
       it is the most useful thing this archive has learned about itself.
-    </div>
+    </Note>
     <p class="small" style="margin-top:1.4rem">
       <a href={u("/people/jean-ward/")}>Jean Ward →</a> ·
       <a href={u("/the-corps/")}>Her husband's career →</a> ·

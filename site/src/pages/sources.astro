@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { people } from "../lib/people.js";
 
@@ -20,14 +22,14 @@ const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
     <p class="lede">Of the {people.length} published people here, <strong>{withSrc}</strong> carry at
     least one citation. That number flatters the archive, and this page exists to say why.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>A family tree is not a source.</strong> Several of the most frequent citations below are
       other people's online trees — Geni, FamilySearch Family Tree, and named MyHeritage sites. Those
       record what somebody believed. They are shown because concealing them would be worse, but they
       carry no evidential weight in this archive, and a claim resting only on them is marked
       <span class="chip lore">family lore</span> or <span class="chip dis">disputed</span> however
       many trees repeat it. <a href={u("/method/")}>Method →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk">
@@ -129,13 +131,13 @@ const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
     <h2>Every citation string in the tree, counted</h2>
     <p class="small">Exactly as carried in the exported GEDCOM, so that the balance between records
     and trees is visible rather than asserted.</p>
-    <div class="scroll" style="margin-top:1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Citation</th><th class="m">People</th></tr></thead>
         <tbody>
           {ranked.map(([k, n]) => (<tr><td>{k}</td><td class="m">{n}</td></tr>))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
   </section>
 </Base>

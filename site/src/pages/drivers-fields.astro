@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 /* The 1841 census household. Transcribed exactly as FreeCEN gives it, including
@@ -39,11 +42,9 @@ const MATCHES = [
     They are all there, in one house, with a one-year-old called Miriam.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">Dwelling 1615 · Drivers Fields · Civil Parish of St Paul</div>
-    <h2 style="margin-top:.4rem">The household, exactly as it is written</h2>
+  <Blk label="Dwelling 1615 · Drivers Fields · Civil Parish of St Paul" title="The household, exactly as it is written">
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Surname</th><th>Forenames</th><th class="m">Sex</th><th class="m">Age</th>
           <th>Occupation</th><th>Born in county?</th></tr></thead>
@@ -57,18 +58,16 @@ const MATCHES = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p class="small" style="margin-top:.8rem">Transcribed by FreeCEN from
     <span class="mono">HO107/374</span>, enumeration district 13, page 10.
     <span class="chip doc">documented</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Six things it confirms</div>
-    <h2 style="margin-top:.4rem">A record nobody in this family had read, agreeing with them</h2>
+  <Blk label="Six things it confirms" title="A record nobody in this family had read, agreeing with them">
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>The census says</th><th>The family tree says</th></tr></thead>
         <tbody>
@@ -82,20 +81,18 @@ const MATCHES = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The street is the detail that settles it.</strong> The tree records Jabez Wakefield
       born on 14 February 1843 at "<em>Drivers Field</em>" — a scrap of an address, carried down
       through a family and across an ocean, with the county wrong. The census puts the household at
       <strong>Drivers Fields, St Paul, Bristol</strong>, twenty-two months earlier. Two independent
       sources, one street, and neither one copied from the other.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The name nobody expected</div>
-    <h2 style="margin-top:.4rem">Lyddya Sinegar, aged seventy, living on her own means</h2>
+  <Blk label="The name nobody expected" title="Lyddya Sinegar, aged seventy, living on her own means">
 
     <p class="lede"><strong>SINEGAR is one of the eleven spellings of Saniger</strong> — it is on this
     archive's own list, taken from the Gloucestershire registers.
@@ -107,7 +104,7 @@ const MATCHES = [
     her married daughter's house and described as <em>Independent</em> — living on her own means
     rather than working — is exactly what the tree predicts without ever having seen this page.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And here is what this archive will not do with that.</strong> The 1841 census
       <strong>does not record relationships</strong>. It lists the people found in a dwelling on one
       night and nothing more. It does not say Lyddya Sinegar is Hannah's mother; it says the two of
@@ -115,7 +112,7 @@ const MATCHES = [
       surname, an age, a widowhood and a household — and it is labelled as one.
       <span class="chip inf">inferred, not stated by the record</span>
       <a href={u("/method/")}>How claims are labelled →</a>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">The 1851 census would settle it outright: from 1851 the
     enumerators recorded <strong>relationship to head of household</strong> and an exact birthplace.
@@ -123,11 +120,9 @@ const MATCHES = [
     <strong>not this family</strong> — nationally only 36% of the 1851 pieces are transcribed, and
     the piece covering Drivers Fields is not among them.
     <span class="chip sup">a coverage gap, not an absence</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Answered 13 September 2026, from the other side of the world</div>
-    <h2 style="margin-top:.4rem">Five clerks, forty-one years, one name</h2>
+  <Blk label="Answered 13 September 2026, from the other side of the world" title="Five clerks, forty-one years, one name">
 
     <p class="lede">This archive spent a week trying to prove “Saniger” from the English end — parish
     registers, civil registration, a census. The answer was in Queensland the whole time, and the
@@ -138,7 +133,7 @@ const MATCHES = [
     Queensland death registrations name the parents of the deceased — and five of Hannah's children
     died there.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Child</th><th class="m">Died</th><th>Mother, as the clerk wrote her</th><th class="m">Registration</th></tr></thead>
         <tbody>
@@ -149,16 +144,16 @@ const MATCHES = [
           <tr><td>Miriam Sneyd</td><td class="m">12/08/1909</td><td><strong>Hannah Saniger</strong></td><td class="m">1909/C/1054</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Four spellings is not weakness — it is the signature of a real name.</strong> Five
       different informants, standing in front of five different clerks between 1868 and 1909, each
       said a surname aloud and each clerk wrote down what he heard. Sanniger, Sanegar, Saniger,
       Sanigar. That is precisely the pattern the Gloucestershire registers show across eleven
       spellings of the same family. A name invented or copied would be spelled the same every time.
       <span class="chip doc">documented, five times independently</span>
-    </div>
+    </Note>
 
     <p style="margin-top:1.3rem"><strong>And Hannah's own registration goes one further.</strong> She
     died on 4 July 1873 — the date the tree gives, to the day — and registration
@@ -167,12 +162,12 @@ const MATCHES = [
     nineteenth-century clerking, and the forename and the remainder of the surname agree exactly.
     <span class="chip inf">the obvious reading, and labelled as a reading</span></p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>One more generation fell out of it.</strong> James Wakefield's own death registration —
       <span class="mono">1857/B/135</span>, Brisbane, 8 July 1857 — names <strong>his</strong> father:
       <strong>Richard Wakefield</strong>. The tree had nothing above James at all.
       <span class="chip doc">documented</span>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.3rem"><strong>And the marriage this whole archive turns on.</strong>
     Miriam Wakefield married <a href={u("/people/william-hartley-sneyd/")}>William Hartley Sneyd</a> at
@@ -180,13 +175,11 @@ const MATCHES = [
     She was <strong>nineteen</strong> — this site had said twenty-one.
     <a href={u("/corrections/")}>Corrected →</a> Her brothers Hiram and Aaron married Margaret
     and Elizabeth Ann <strong>Birch</strong> four months apart in 1861.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The tick that was wrong — read this first</div>
-    <h2 style="margin-top:.4rem">“Out of County”, and what it cost</h2>
+  <Blk label="The tick that was wrong — read this first" title="“Out of County”, and what it cost">
 
-    <div class="note" style="border-left-width:3px;margin-bottom:1.2rem">
+    <Note style="border-left-width:3px;margin-bottom:1.2rem">
       <strong>Everything in this section was built on one binary tick, and the tick was wrong.</strong>
       The 1851 census, taken in this same house, gives Hannah's birthplace outright:
       <strong>BERKELEY, GLOUCESTERSHIRE</strong>. Her baptism has since been found there —
@@ -196,7 +189,7 @@ const MATCHES = [
       <br /><br />
       The reasoning below is left standing because it is how the archive went wrong, and because the
       1841 enumerator really did tick that column. What follows is a record of a mistake, not a finding.
-    </div>
+    </Note>
 
     <p>Both women are entered <strong>“Out of County”</strong>. In a Bristol enumeration returned
     under Gloucestershire, that was read as meaning neither Hannah nor Lyddya was born in the county —
@@ -208,7 +201,7 @@ const MATCHES = [
     but <strong>Berkley is also a real parish in Somerset</strong>, near Frome, and a Somerset birth
     would fit “Out of County” exactly. So it was tested.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>It is not the answer.</strong> Berkley St Mary in Somerset is transcribed in full —
       7,967 records, 1545 to 1903 — and the family there is spelled <strong>SINGER</strong> in every
       entry, with no Hannah baptised anywhere near 1805. Fifty-eight records, and not one of them
@@ -217,8 +210,8 @@ const MATCHES = [
       Which leaves Berkeley in Gloucestershire, where <strong>the transcript stops in 1677</strong> —
       a hundred and twenty-eight years before she was born. Her baptism is not missing. It is
       <em>untranscribed</em>, and those are different things.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>Where this leaves it</h2>

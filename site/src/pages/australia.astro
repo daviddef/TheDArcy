@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const actions = [
@@ -18,9 +21,7 @@ const actions = [
   eyebrow="18 September 1826 — the arrival"
   dek="A major of the 39th Foot who had commanded his regiment at Orthes came out in charge of the guard on a convict ship, with his wife and baby daughter in the cabin. He never went home.">
 
-  <section class="blk">
-    <div class="lab">Found 13 September 2026</div>
-    <h2 style="margin-top:.4rem">Eight days before the ship</h2>
+  <Blk label="Found 13 September 2026" title="Eight days before the ship">
     <p class="lede">Chatham St Mary the Virgin baptised <strong>Charlotte D'Arcy</strong> on
     <strong>31 March 1826</strong> — born 29 April 1825, father entered as
     <strong>“George Pitt D'Arcy, Bt: Major 39th Foot”</strong>, mother <strong>Maria</strong>, abode
@@ -29,7 +30,7 @@ const actions = [
     convict ship <em>England</em> received aboard a detachment of the 39th commanded by
     "<em>George Pitt D'Arcy, B. Major</em>". They christened the baby, and then they sailed.
     <a href={u("/chatham/")}>The Chatham register →</a> <span class="chip doc">documented</span></p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <p class="lede">This is the part of the pedigree that does not need defending, and it turns out
@@ -40,7 +41,7 @@ const actions = [
 
   <section class="blk">
     <div class="lab">The ship</div>
-    <h2 style="margin-top:.4rem">The convict ship <em>England</em>, 1826</h2>
+    <h2 class="blk-h">The convict ship <em>England</em>, 1826</h2>
 
     <p>The surgeon superintendent's journal and the ship's record give the voyage almost day by day.
     <strong>The journal has now been identified at the National Archives</strong> and it is
@@ -49,7 +50,7 @@ const actions = [
     Until 10 September 2026 this archive cited it only as "the surgeon's journal". It names Major
     D'Arcy four times.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>8 April 1826</td><td>"Received on board a detachment of the 39th regt. of foot
@@ -84,9 +85,9 @@ const actions = [
             days, <strong>no deaths</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The gout closes a loop twenty-three years wide.</strong> On 16 August 1826 the surgeon
       of the <em>England</em> noted that Major D'Arcy had recovered from an attack of gout, somewhere
       in the Southern Ocean.
@@ -97,29 +98,27 @@ const actions = [
       Two records, twenty-three years and half a world apart, neither aware of the other, describing
       the same man's same complaint — and the second one killed him.
       <a href={u("/papers/")}>The obituary →</a>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:.8rem">Master: John Reay. Surgeon superintendent:
     George Thomson, R.N., whose first convict voyage this was and who called it one of the more
     troubled of 1826. Ship built at Chepstow, 1813.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The children's birthplaces now read straight through.</strong>
       <strong>Charlotte Maria, Chatham, 1825</strong> — she is the baby in the cabin.
       <strong>Catherine Maria, Parramatta, 1827.</strong>
       <strong>George Lindsay, Parramatta, 24 August 1829</strong>, christened at St James's, Sydney,
       on 5 November. Two years and half a world between the first and the second.
-    </div>
+    </Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">Before Australia</div>
-    <h2 style="margin-top:.4rem">Thirty-four years in the 39th, and a gold medal that went to the wrong man</h2>
+  <Blk label="Before Australia" title="Thirty-four years in the 39th, and a gold medal that went to the wrong man">
 
     <p>He served in the West Indies, in North and South America, in the Mediterranean, and in the
     Peninsula under Wellington from 1811 to the end of the war. His obituary lists the actions:</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Action</th><th class="m">Date</th><th>His part</th></tr></thead>
         <tbody>
@@ -128,7 +127,7 @@ const actions = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.2rem">At <strong>Orthes</strong> on 27 February 1814 the command of the
     39th fell to him because <strong>Lieutenant-Colonel Bruce was wounded early in the action</strong>.
@@ -142,11 +141,9 @@ const actions = [
 
     <p>Four years to reach the man who earned it, because it had been posted to the officer whose
     wound gave him the command in the first place.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">22 July 1849</div>
-    <h2 style="margin-top:.4rem">The obituary, and what it does not quite say</h2>
+  <Blk label="22 July 1849" title="The obituary, and what it does not quite say">
 
     <blockquote>
       At Parramatta, on Sunday morning, the 22nd of July, 1849, aged 69, <strong>Major George Pitt
@@ -174,14 +171,14 @@ const actions = [
       but himself.</strong>
     </blockquote>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Read that carefully and label it honestly.</strong> "Never injured anyone but himself",
       dying in another man's house, with a friend's kindness increasing "in proportion to his need of
       it" — this is a Victorian obituarist writing round something, most likely drink, debt, or both.
       It is <span class="chip inf">inferred</span>, from tone and euphemism, and it is not a fact.
       What <em>is</em> stated is that he died in another man's house and that his affairs had gone
       badly. The archive will not turn a delicate paragraph into a diagnosis.
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">Because the death was sudden there was an <strong>inquest</strong>.
     The jury put the cause at "<strong>gout which had flown to the head, and caused apoplexy</strong>"
@@ -190,11 +187,9 @@ const actions = [
     <p class="small" style="margin-top:.9rem">One discrepancy: every 1849 notice gives his age as
     <strong>69</strong>, which puts his birth at about 1780. The family tree says 18 February 1783.
     <a href={u("/open-questions/")}>Queued →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Corrected</div>
-    <h2 style="margin-top:.4rem">Two wives, and neither of them married him in 1810</h2>
+  <Blk label="Corrected" title="Two wives, and neither of them married him in 1810">
 
     <p>The family tree records him marrying <em>Maria or Mary Le Meassier</em> and
     <em>Maria (Catherine) White</em> — both at Chatham, both in 1810. A man cannot marry two women in
@@ -216,7 +211,7 @@ const actions = [
       </div>
     </div>
 
-    <div class="note" style="margin-top:1.4rem">
+    <Note>
       <strong>And the first marriage is now dated from a contemporary printing.</strong> The
       <em>Salisbury and Winchester Journal</em> of <strong>23 September 1805</strong>, page 3, carried
       the notice — and it identifies the groom twice over:
@@ -230,18 +225,16 @@ const actions = [
       to Major-General of Engineers. Until now the father–son join rested on the family tree. It now
       rests on a newspaper printed while both men were alive.
       <a href={u("/hornby/")}>What that does and does not prove →</a></p>
-    </div>
+    </Note>
 
     <p style="margin-top:1.4rem">All of which settles a question this archive had left open:
     <strong>Frederick Robert D'Arcy the surveyor is a half-brother</strong>, not a full brother, to
     the direct ancestor. Twenty-four years and two mothers separate them — and
     <strong>George Lindsay's own christening entry proves it</strong>: St James's, Sydney,
     5 November 1829, "father George Pitt Darcy, mother <strong>Maria</strong>".</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">A discrepancy worth the space</div>
-    <h2 style="margin-top:.4rem">The headstone says the 9th</h2>
+  <Blk label="A discrepancy worth the space" title="The headstone says the 9th">
     <p>Frederick Robert D'Arcy's monumental inscription at <strong>Toowong</strong> reads:
     <em>"Eldest son of Major George Pitt D'ARCY late of <strong>9th</strong> Regiment"</em>. Every
     other source says the <strong>39th</strong>.</p>
@@ -253,16 +246,14 @@ const actions = [
     <strong>34 years in the 39th</strong>. The same transcript also dates his death to 10 September
     where the notice says the 19th, so it is wrong twice. A monumental mason cutting "39" and losing the 3,
     or a transcriber reading a worn stone, accounts for it easily.</p>
-    <div class="note" style="margin-top:1.1rem">
+    <Note>
       Recorded rather than quietly corrected, because the next person to find that headstone will
       have the same moment of doubt, and should find the answer here instead of repeating the work.
       <a href={u("/method/")}>Method →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">His brothers</div>
-    <h2 style="margin-top:.4rem">Three corps, and a boy dead at nineteen</h2>
+  <Blk label="His brothers" title="Three corps, and a boy dead at nineteen">
     <p>He was the third of the ten children of Major-General Robert D'Arcy of the Royal Engineers,
     and the family put its sons into three different corps.</p>
 
@@ -296,11 +287,9 @@ const actions = [
         <a href={u("/open-questions/")}>Queued →</a></p>
       </div>
     </div>
-  </section>
+  </Blk>
 
-  <section class="blk" style="border-bottom:0">
-    <div class="lab">His eldest son</div>
-    <h2 style="margin-top:.4rem">Frederick Robert D'Arcy — the surveyor who helped map Melbourne</h2>
+  <Blk label="His eldest son" title="Frederick Robert D'Arcy — the surveyor who helped map Melbourne" last>
     <p>Born Chatham 1811, christened there 2 July; <em>withdrawn from Sandhurst by his family to
     emigrate</em>; sailed for Sydney on the <strong>Albion</strong>, 3 November 1828, two years behind
     his father. About 1830 he became a draughtsman in the New South Wales Surveyor-General's
@@ -333,5 +322,5 @@ const actions = [
     Surveyor, Explorer and Artist, c.1809–1875</em>. Macqueen dates his birth to about 1809; the
     Chatham christening of 2 July 1811 and the "aged 63" of his death notices both support 1811–12.
     Recorded, not resolved.</p>
-  </section>
+  </Blk>
 </Base>

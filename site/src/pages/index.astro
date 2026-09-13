@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
 import { nOwn, nInherited } from "../lib/errors.js";
 import { people } from "../lib/people.js";
@@ -111,9 +112,7 @@ const more = [
     </blockquote>
   </section>
 
-  <section class="blk">
-    <div class="lab">The document at the centre of it</div>
-    <h2 style="margin-top:.4rem">A detachment of thirty men, and a wife in the cabin</h2>
+  <Blk label="The document at the centre of it" title="A detachment of thirty men, and a wife in the cabin">
     <p class="dek" style="margin:.7rem 0 1.2rem">For as long as this family has had a pedigree, the
     interesting end of it was supposed to be the top — a castle in the North Riding, an earldom, a
     line back to the 1560s. The interesting end is actually the bottom, and it is provable.</p>
@@ -137,7 +136,7 @@ const more = [
       </div>
     </div>
     <p style="margin-top:1.2rem"><a href={u("/australia/")}>How the family arrived →</a></p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2>Four things this archive has established</h2>
@@ -193,9 +192,7 @@ const more = [
     </div>
   </section>
 
-  <section class="blk">
-    <div class="lab">Recently found</div>
-    <h2 style="margin-top:.4rem">What changed, most recent first</h2>
+  <Blk label="Recently found" title="What changed, most recent first">
     <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.1rem">
       {RECENT.map((d) => (
         <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
@@ -206,11 +203,9 @@ const more = [
       ))}
     </div>
     <p class="small" style="margin-top:1.2rem"><a href={u("/changes/")}>Every pass, in full →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The archive in numbers</div>
-    <h2 style="margin-top:.4rem">What it holds, and what it will not claim</h2>
+  <Blk label="The archive in numbers" title="What it holds, and what it will not claim">
     <div class="grid three" style="margin-top:1.3rem">
       {NUMBERS.map(([n, label, note, href]) => (
         <a class="cardlink" href={u(href)}>
@@ -220,7 +215,7 @@ const more = [
         </a>
       ))}
     </div>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2>Elsewhere in the archive</h2>

@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const rows = [
@@ -23,7 +26,7 @@ const rows = [
     <p class="lede">"How far back does it go?" has four different answers for this family, and which
     one you get depends entirely on how much you are prepared to take on trust.</p>
 
-    <div class="scroll" style="margin-top:1.4rem">
+    <Scroll>
       <table>
         <thead><tr><th>If you accept…</th><th class="m">Generations</th><th class="m">Ancestors</th><th>Reaches</th><th>Note</th></tr></thead>
         <tbody>
@@ -38,9 +41,9 @@ const rows = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Two grafts carry almost all the depth.</strong> Of 243 ancestors in the tree,
       <strong>71</strong> hang on a single unevidenced link in the D'Arcy line and
       <strong>27</strong> on a single disproved link in the Sneyd line. They do not overlap. Remove
@@ -51,18 +54,16 @@ const rows = [
       <strong>Every one of those 98 is now listed by name.</strong> The register marks them
       <em>above a graft</em> so you can see exactly who leaves when the joins do.
       <a href={u("/register/")}>The register →</a>
-    </div>
+    </Note>
   </section>
 
-  <section class="blk">
-    <div class="lab">Re-audited 13 September 2026</div>
-    <h2 style="margin-top:.4rem">What a week of registers did to these numbers</h2>
+  <Blk label="Re-audited 13 September 2026" title="What a week of registers did to these numbers">
 
     <p class="lede">This page's figures were an audit of what the archive could <em>defend</em>. Since
     then the two deepest lines have actually been searched, and the result moved in both directions
     at once.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>The line</th><th>Was</th><th>Is now</th></tr></thead>
         <tbody>
@@ -97,20 +98,18 @@ const rows = [
           </tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The honest figure has not moved, and the reason it has not moved has changed
       completely.</strong> It is still about seven generations. But a week ago the storey above that
       was <em>unproven</em>; now parts of it have been looked for in the right registers and found to
       be <em>wrong</em>. An unproven claim might yet be rescued by a document. A contradicted one has
       to be rebuilt. <a href={u("/searched/")}>What was read, and what each source actually holds →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Graft one · unevidenced</div>
-    <h2 style="margin-top:.4rem">The D'Arcys of Hornby Castle</h2>
+  <Blk label="Graft one · unevidenced" title="The D'Arcys of Hornby Castle">
     <p>Above <strong>Major-General Robert D'Arcy</strong> the tree inserts a
     <em>Thomas (Francis) D'Arcy</em>, said to be born at St James's Palace, carrying two birth years
     sixty-nine years apart, and descends him from the Earls of Holderness. Through him come 71
@@ -122,11 +121,9 @@ const rows = [
     <em>Roll</em>, which documents his whole career, records no parentage; the
     <em>Gentleman's Magazine</em> did not notice his death. <strong>Unevidenced, and set out in
     full.</strong> <a href={u("/hornby/")}>The Hornby claim →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Graft two · disproved, 9 September 2026</div>
-    <h2 style="margin-top:.4rem">The Sneyds of Keele Hall</h2>
+  <Blk label="Graft two · disproved, 9 September 2026" title="The Sneyds of Keele Hall">
 
     <p>This one the archive had flagged as suspect — <em>"Sneyd is a Staffordshire gentry name, which
     is exactly what a drifting pedigree reaches for"</em> — and then left alone. Tested, it fails, and
@@ -192,7 +189,7 @@ const rows = [
       <strong>Walter Sneyd (1752–1829)</strong> of Keele.</li>
     </ol>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And the real line was there all along.</strong> The Madeley registers carry it:
       William Sneyd the elder, of Madeley in the 1720s–40s; his son <strong>William, baptised 1742</strong>,
       who <strong>married Mary Blackbourne at Madeley on 27 March 1769</strong> and was buried there in
@@ -200,9 +197,9 @@ const rows = [
       <strong>Samuel Charles</strong>, who sailed for New South Wales.
       <a href={u("/sneyd/")}>Set out in full →</a> Losing Keele costs eleven generations of borrowed
       gentry and gains five of documented Staffordshire tradespeople.
-    </div>
+    </Note>
 
-    <div class="note" style="margin-top:1.1rem">
+    <Note>
       <strong>What was really going on.</strong> There were Sneyds at Keele Hall and there were
       Sneyds — often written <em>Snead</em> — at Madeley, five miles off, who were tradespeople. Our
       family is the second kind: a Madeley labouring or artisan family that produced a
@@ -210,12 +207,10 @@ const rows = [
       Wales. Somebody, at some point, joined the two on the strength of a shared surname in a shared
       county. Removing the join costs the archive eleven generations and a descent from Warwickshire
       gentry — and costs it nothing that was ever true.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">What survives</div>
-    <h2 style="margin-top:.4rem">Twelve generations, and a Gloucestershire yeoman</h2>
+  <Blk label="What survives" title="Twelve generations, and a Gloucestershire yeoman">
     <p>Strip out both grafts and <strong>145 ancestors</strong> remain, reaching
     <strong>generation twelve</strong>. The oldest of them are not aristocrats and there is no castle
     anywhere in the list:</p>
@@ -233,11 +228,9 @@ const rows = [
     <p style="margin-top:1rem">Twelve generations to the 1650s, out of Gloucestershire, Shropshire,
     Staffordshire, Somerset and Scotland. That is a long way back by any ordinary standard. It is only
     disappointing if you had been promised Denmark.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Tested 10 September 2026 — and this one is ours</div>
-    <h2 style="margin-top:.4rem">A third graft, and the archive built it itself</h2>
+  <Blk label="Tested 10 September 2026 — and this one is ours" title="A third graft, and the archive built it itself">
 
     <p class="lede">Everything above is about other people's mistakes. This section is about ours, and
     it is the most serious thing on this site.</p>
@@ -247,7 +240,7 @@ const rows = [
     <strong>was never tested against the archive's own standard.</strong> When it finally was, on
     10 September 2026, it did not survive.</p>
 
-    <div class="scroll" style="margin-top:1.3rem">
+    <Scroll>
       <table>
         <thead><tr><th>What those 144 ancestors actually rest on</th><th class="m">People</th><th class="m">Share</th></tr></thead>
         <tbody>
@@ -260,16 +253,16 @@ const rows = [
           <tr><td>Mixed or unclear</td><td class="m">1</td><td class="m">0.7%</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And the shape of it is worse than the total.</strong> Of the
       <strong>60 ancestors above generation seven</strong> — that is, everyone older than about 1780 —
       <strong>exactly one</strong> rests on a record set. The rest are family trees or nothing.
       <br /><br />
       Above generation seven this archive has been repeating other people's genealogy and calling it
       its own honest figure.
-    </div>
+    </Note>
 
     <p style="margin-top:1.3rem">The <a href={u("/sources/")}>sources page</a> has said from the start
     that <strong>"a family tree is not a source"</strong>, and that a claim resting only on one is
@@ -282,7 +275,7 @@ const rows = [
     an exact christening date, running Berkeley → Elmore → Ashton-under-Hill → Wotton-under-Edge →
     Brimpsfield → Bisley, with Market Drayton in Shropshire married in.</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Generation</th><th class="m">Date given</th><th>Place</th><th>Rests on</th></tr></thead>
         <tbody>
@@ -294,7 +287,7 @@ const rows = [
           <tr><td><strong>William Sanigar</strong></td><td class="m"><strong>b. 1654</strong></td><td>—</td><td><strong>Gainard Family Tree Web Site</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p class="small" style="margin-top:.9rem">Those dates are precise, consistent and entirely
     plausible. They may well all be right — Berkeley's registers survive and somebody has clearly read
@@ -302,7 +295,7 @@ const rows = [
     website is not evidence just because it has a day and a month on it.
     <span class="chip lore">family lore</span></p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>This has now been attempted — see <a href={u("/berkeley/")}>Berkeley,
       Gloucestershire</a>.</strong> FreeREG's Berkeley transcript runs 1600–1677, so it can test only
       the oldest of the six generations. It produces one good candidate — William Sainger, baptised
@@ -314,13 +307,13 @@ const rows = [
       FreeREG. Six christenings between 1654 and 1805 would turn the deepest line in this archive from
       hearsay into the best-evidenced thing on the site. It is one afternoon's work by somebody who
       can reach the registers. <a href={u("/open-questions/")}>Queued at the top →</a>
-    </div>
+    </Note>
 
     <p style="margin-top:1.3rem"><strong>Until then, the honest figure is not twelve generations.</strong>
     It is about <strong>seven</strong> — as far as the records this archive has actually read will
     carry it — with everything above that marked as what it is.
     <a href={u("/corrections/")}>Recorded with the rest of our errors →</a></p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>The same shape twice</h2>

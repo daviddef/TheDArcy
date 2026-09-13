@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const corroborations = [
@@ -22,9 +25,7 @@ const corroborations = [
     below would, left as snippets, put a man in the dock who was standing in the witness box.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">11 November 1936</div>
-    <h2 style="margin-top:.4rem">The obituary, and a eulogy written seventy-four years later</h2>
+  <Blk label="11 November 1936" title="The obituary, and a eulogy written seventy-four years later">
 
     <blockquote>
       <strong>OBITUARY</strong><br /><br />
@@ -43,32 +44,30 @@ const corroborations = [
     <p>In March 2010 his son Kenneth's children stood up and described a father Kenneth had lost at
     the age of nine. Nobody involved had seen this obituary. Set the two side by side:</p>
 
-    <div class="scroll" style="margin-top:1rem">
+    <Scroll>
       <table>
         <thead><tr><th>The eulogy, 2010</th><th>The obituary, 1936</th></tr></thead>
         <tbody>
           {corroborations.map(([a, b]) => (<tr><td>{a}</td><td>{b}</td></tr>))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       Five details, independently confirmed, and not one contradiction. That is worth stating plainly
       because family memory usually does <em>not</em> survive this test. It also adds something the
       family had lost: he served <strong>in France</strong>.
       <a href={u("/documents/")}>The eulogy in full →</a>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1rem">Two corrections the paper forces on the tree. He is
     <strong>Lindsay</strong> in both the obituary and the funeral notice, not <em>Lindesay</em> — the
     spelling moves about even in his own lifetime, which is the whole argument of
     <a href={u("/name/")}>the name page</a>. And "G. T. D'Arcy" is wrong for
     <strong>G</strong>eorge <strong>P</strong>itt; either the compositor or the OCR has it.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">A headline that is not what it looks like</div>
-    <h2 style="margin-top:.4rem">"TRUSTEE ALLEGES FRAUD", September 1927</h2>
+  <Blk label="A headline that is not what it looks like" title="&quot;TRUSTEE ALLEGES FRAUD&quot;, September 1927">
 
     <p>Ten years before he died, Lindesay Atkinson D'Arcy was an insolvent grocer. The
     <em>Daily Standard</em> reported his examination under that headline, and the facts it gives are
@@ -87,7 +86,7 @@ const corroborations = [
       <strong>1 October 1926</strong>.</li>
     </ul>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Now read the headline again.</strong> The alleged fraud is a claim of
       <em>fraudulent preference</em> — that a failing debtor paid down one creditor ahead of the
       others in the fortnight before he collapsed. The action was brought by the trustee
@@ -96,7 +95,7 @@ const corroborations = [
       had "treated the bank as an ordinary creditor, and had not given it preference over any
       other"; the bank's own manager described the £150 monthly overdraft as the kind "customary to
       allow … to men in a small way of business".
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem"><strong>And then the date.</strong> Kenneth Lindsay D'Arcy was born
     at <strong>Sandgate on 17 August 1927</strong>. One month later his father stands in the Supreme
@@ -106,11 +105,9 @@ const corroborations = [
     knew.</p>
     <p class="small" style="margin-top:.6rem"><em>Daily Standard</em>, Tuesday 20 September 1927,
     p. 5 · <span class="mono">nla.news-article184914345</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Two headlines that say the opposite of what they seem to</div>
-    <h2 style="margin-top:.4rem">"AGENT CHARGED — ALLEGED THEFT AS SERVANT", August 1929</h2>
+  <Blk label="Two headlines that say the opposite of what they seem to" title="&quot;AGENT CHARGED — ALLEGED THEFT AS SERVANT&quot;, August 1929">
 
     <p>In a list of search results these read as a man in serious trouble:
     <em>"ROBBED PETER TO PAY PAUL." AGENT'S ALLEGED REPLY TO DETECTIVE</em>, and
@@ -135,16 +132,14 @@ const corroborations = [
     · <span class="mono">nla.news-article187390932</span> · <em>The Brisbane Courier</em>,
     7 August 1929, p. 20 · <span class="mono">nla.news-article21435307</span></p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       This is why the archive opens documents instead of collecting snippets. Two minutes of skimming
       would have put a false and defamatory paragraph about a real man into a family history, and it
       would have been repeated forever.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">21 March 1931</div>
-    <h2 style="margin-top:.4rem">Found in the kitchen at Banyo</h2>
+  <Blk label="21 March 1931" title="Found in the kitchen at Banyo">
     <blockquote>
       At the inquiry into the death of <strong>George Pitt D'Arcy, 76, railway pensioner</strong>,
       who was found dead in the kitchen of his residence, in <strong>Victoria street, Banyo</strong>,
@@ -160,11 +155,9 @@ const corroborations = [
     says he was 76. Born 5 May 1864 he was <strong>66</strong>. Either the reporter or the OCR has
     76 for 66, or the birth year is wrong — his 1888 marriage and his eldest child in 1890 both
     support 1864. <a href={u("/open-questions/")}>Added to the queue →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk" style="border-bottom:0">
-    <div class="lab">Sydney, 1852</div>
-    <h2 style="margin-top:.4rem">The other insolvency</h2>
+  <Blk label="Sydney, 1852" title="The other insolvency" last>
     <p><strong>Frederick Robert D'Arcy</strong> — the surveyor, half-brother of the direct ancestor —
     went through the Insolvent Court seventy-four years before Lindesay did. The
     <em>New South Wales Government Gazette</em> of 30 July 1852 gives the estate of
@@ -172,13 +165,13 @@ const corroborations = [
     gentleman"</em>, placed in insolvency on 20 July; meetings of creditors ran on before the Chief
     Commissioner through August, September and October. Hartley is in the Blue Mountains, which fits
     the surveying.</p>
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Resist the pattern.</strong> Two D'Arcys through the Insolvent Court, two generations
       and two colonies apart, is a striking thing to notice and no kind of evidence. Colonial
       insolvency was extremely common and two cases in four generations is not a trait. It is
       recorded here so that the next person does not rediscover either — and so that nobody builds a
       character out of a coincidence. <a href={u("/method/")}>Method →</a>
-    </div>
+    </Note>
     <p style="margin-top:1.2rem"><a href={u("/australia/")}>Frederick Robert D'Arcy, surveyor →</a></p>
-  </section>
+  </Blk>
 </Base>

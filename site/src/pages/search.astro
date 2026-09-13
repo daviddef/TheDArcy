@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 /* One box over the whole archive. The index is fetched rather than inlined —
@@ -40,14 +42,12 @@ const SPELLINGS = [
     <p class="small" id="more" hidden></p>
   </section>
 
-  <section class="blk">
-    <div class="lab">Why this box is not a plain text match</div>
-    <h2 style="margin-top:.4rem">It knows the spellings move</h2>
+  <Blk label="Why this box is not a plain text match" title="It knows the spellings move">
     <p class="dek">Every name in this family is written down more than one way, and a reader who
     searches the spelling they were told will otherwise miss the record that matters. Type any form
     below and the search returns all of them.</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Search this</th><th>…and you also get</th></tr></thead>
         <tbody>
@@ -56,13 +56,13 @@ const SPELLINGS = [
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p class="small" style="margin-top:1rem">The eleven forms of <em>Saniger</em> are not invented
     for this page — they are the spellings actually found in the Gloucestershire parish registers.
     <a href={u("/berkeley/")}>Where they came from →</a> · <a href={u("/name/")}>Why spelling is not
     identity →</a></p>
-  </section>
+  </Blk>
 
   <script is:inline define:vars={{ base: u("") }}>
     (function () {

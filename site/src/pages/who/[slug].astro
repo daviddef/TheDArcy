@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Note from "../../components/Note.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
 
@@ -33,12 +34,12 @@ const context = (src) => WHERE.find(([re]) => re.test(src));
   dek={p.rows[0].says.slice(0, 155)}>
 
   <section class="blk">
-    <div class="note">
+    <Note>
       <strong>This person is not in the family tree.</strong> They are here because this archive
       read a document that names them, and a name in a record is evidence whether or not the person
       is a relative. Nothing on this page is inferred — every line below is what a source says.
       <a href={u("/who/")}>Everyone else met this way →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk">

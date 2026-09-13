@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/searched.json";
 import cov from "../data/coverage.json";
@@ -15,7 +18,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
 
   <section class="blk">
     <p class="lede">{d.note}</p>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>A null result is not a failure, and it is not the same as a gap.</strong> There are
       three outcomes on this page and they mean different things.
       <ul style="margin:.7rem 0 0;padding-left:1.1rem">
@@ -30,7 +33,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
         and it must never be reported as one. <a href={u("/errands/")}>Several are jobs for a
         person →</a></li>
       </ul>
-    </div>
+    </Note>
   </section>
 
   {[["Sources that gave something up", yields], ["Sources read and empty", nulls],
@@ -53,12 +56,10 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
     </section>
   ))}
 
-  <section class="blk">
-    <div class="lab">Checked before searching, every time</div>
-    <h2 style="margin-top:.4rem">What each database actually holds</h2>
+  <Blk label="Checked before searching, every time" title="What each database actually holds">
     <p class="dek">{cov.note}</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Database</th><th>Parish or series</th><th>Holds</th><th class="m">Span</th><th>Verdict</th></tr></thead>
         <tbody>
@@ -76,20 +77,18 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Three of this archive's oldest dead ends turn out to be dead ends in a database.</strong>
       County Limerick, South Leith and St Quivox have each been called an open question for months.
       None of them has been searched and found empty — <strong>none of them has any data to
       search.</strong> That is a completely different kind of not-knowing, and it points at a
       different fix: an archive, not another query. <a href={u("/errands/")}>The queue →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Method, for whoever does this next</div>
-    <h2 style="margin-top:.4rem">What these two sites do that will waste your afternoon</h2>
+  <Blk label="Method, for whoever does this next" title="What these two sites do that will waste your afternoon">
     <ul class="dek" style="margin-top:1rem">
       <li style="margin-bottom:.5rem"><strong>FreeREG caps results at 500</strong> and says so only in
       the body text. A county-wide surname search will silently hit it. Narrow by parish using the
@@ -112,7 +111,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
       marriages, 202 Ayrshire Smiths — so that an empty result means an empty record and not a broken
       form.</li>
     </ul>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>Why this page exists</h2>

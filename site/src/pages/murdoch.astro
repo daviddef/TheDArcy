@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
@@ -62,9 +63,7 @@ const shown = f.members.filter((m) => !m.living);
     </div>
   </section>
 
-  <section class="blk">
-    <div class="lab">1948, the Toowoomba office</div>
-    <h2 style="margin-top:.4rem">"He was a big disappointment"</h2>
+  <Blk label="1948, the Toowoomba office" title="&quot;He was a big disappointment&quot;">
     <blockquote>
       According to Mum, all the girls in the Toowoomba office were quite excited about the imminent
       arrival of the new young man from Brisbane. Likewise, Mum was full of anticipation and hope that
@@ -77,7 +76,7 @@ const shown = f.members.filter((m) => !m.living);
     <p>They were married four years later and stayed so for fifty-eight. They got to know each other
     at table tennis fixtures; she had the habit of getting the giggles every time she lost a point.
     Their daughter went on to be one of the best table tennis players in Queensland for years.</p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>The people</h2>

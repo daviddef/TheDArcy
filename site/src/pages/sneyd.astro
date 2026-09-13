@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
@@ -11,9 +14,7 @@ const shown = f.members.filter((m) => !m.living);
   eyebrow={`${f.published} published people — the largest family in the archive`}
   dek="Out of Bristol and Kempsey into far western Queensland: married at Muttaburra, born at Boulia — and three of their young men sent to the Great War, of whom the archive knew about one until this week.">
 
-  <section class="blk">
-    <div class="lab">Madeley All Saints, read 13 September 2026</div>
-    <h2 style="margin-top:.4rem">The baptism this line rests on, and a burial two years later</h2>
+  <Blk label="Madeley All Saints, read 13 September 2026" title="The baptism this line rests on, and a burial two years later">
 
     <p>When the descent from Ralph Sneyd of Keele Hall was disproved, what survived was the baptism
     that disproved it: <strong>William Sneyd, baptised at Madeley All Saints on 12 September 1742,
@@ -24,7 +25,7 @@ const shown = f.members.filter((m) => !m.living);
     <p style="margin-top:1rem">The Madeley register has now been read properly. There are 110 Sneyd
     records in it. And two years after that baptism it carries this:</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Event</td><td><strong>Burial</strong></td></tr>
@@ -34,9 +35,9 @@ const shown = f.members.filter((m) => !m.living);
           <tr><td>Relationship</td><td><strong>Son of</strong> William SNEYD</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>If that is the same child, this line is anchored to a boy who died at two.</strong>
       The burial gives no age, so it is not certain — but a William son of William baptised in
       September 1742 and a William son of William buried in September 1744, in one small parish, is
@@ -47,19 +48,17 @@ const shown = f.members.filter((m) => !m.living);
       <em>William Snead II, 1742–1827</em>, which would require a burial at Madeley in 1827 — and
       Madeley's transcription appears to stop around 1812, so that cannot be tested here either way.
       <span class="chip sup">a coverage limit, not a null</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Corrected the same evening, 13 September 2026</div>
-    <h2 style="margin-top:.4rem">Two of the four links are documented, and I said none were</h2>
+  <Blk label="Corrected the same evening, 13 September 2026" title="Two of the four links are documented, and I said none were">
 
     <p class="lede">Earlier today this page said the English origin of these Sneyds was
     "<em>not currently evidenced by anything</em>". <strong>That was an overstatement and it was
     mine.</strong> I searched for two baptisms, did not find them, and stopped — without following up
     a marriage sitting in the same results list, or trying the parish the family actually lived in.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>What the tree claims</th><th>What the registers hold</th></tr></thead>
         <tbody>
@@ -93,19 +92,17 @@ const shown = f.members.filter((m) => !m.living);
           </tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Two of the four links are written down, and the two that are missing are baptisms
       between them.</strong> That is an ordinary evidential position — better than the Saniger line
       and far better than what this page said at lunchtime.
       <a href={u("/corrections/")}>Recorded as an error →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The parish nobody had tried</div>
-    <h2 style="margin-top:.4rem">Hanley, and a servant's family in the Potteries</h2>
+  <Blk label="The parish nobody had tried" title="Hanley, and a servant's family in the Potteries">
 
     <p>Every previous search had gone to <strong>Madeley</strong>, because that is where the
     disproved Keele graft pointed. <strong>Hanley had never been searched</strong> — and Hanley is
@@ -115,19 +112,19 @@ const shown = f.members.filter((m) => !m.living);
     18 February 1814</strong>, the same father Samuel and mother Elizabeth, and this time the clerk
     recorded the father's occupation — <strong>Servant</strong>.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Which makes a line of it.</strong> A <em>weaver</em> marrying at Madeley in 1769; his
       son a <em>servant</em> at Hanley in the 1810s; and that man's son enlisting in the 4th
       (King's Own) and ending as <a href={u("/sergeant-sneyd/")}>Governor of Brisbane Gaol</a>. Three
       generations out of the Staffordshire Potteries, and not one of them within reach of Keele Hall.
       <a href={u("/how-far-back/")}>The graft that claimed otherwise →</a>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem"><strong>And a correction to the family tree.</strong>
     The tree gives Samuel Charles's birth as <strong>15 March 1810</strong>. The Bishop's Transcript
     records the birth date outright as <strong>13 March 1811</strong> — two days and one year out.
     The archive publishes the register's date. <span class="chip doc">registered</span></p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <p class="lede">Ivy Miriam Sneyd married Lindesay Atkinson D'Arcy at Albion Church in March 1916.
@@ -150,9 +147,7 @@ const shown = f.members.filter((m) => !m.living);
     </div>
   </section>
 
-  <section class="blk">
-    <div class="lab">20 August 1916</div>
-    <h2 style="margin-top:.4rem">Arthur Hartley Sneyd, killed at Pozières</h2>
+  <Blk label="20 August 1916" title="Arthur Hartley Sneyd, killed at Pozières">
     <p>Ivy's younger brother, born at Rockhampton on 11 October 1893, schooled at Eagle Junction State
     School, and a <strong>typist</strong> by trade — his own attestation paper says so, where this page
     used to say "clerk". He was <strong>killed in action on 20 August 1916</strong>, aged twenty-two.
@@ -168,7 +163,7 @@ const shown = f.members.filter((m) => !m.living);
     29 July 1916 and was killed twenty-two days later. He has <strong>no known grave</strong>.
     <a href={u("/great-war/")}>His service record →</a></p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And he was not the only one.</strong> The Sneyds sent three young men to that war and
       the archive knew about one of them until 9 September 2026.
       <br /><br />
@@ -185,12 +180,10 @@ const shown = f.members.filter((m) => !m.living);
       <br /><br />
       <a href={u("/great-war/")}><strong>All four men, and their records →</strong></a> ·
       <a href={u("/finding-arthur/")}>The search for Arthur →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Tested, 9 September 2026 — and broken</div>
-    <h2 style="margin-top:.4rem">The Sneyds were not of Keele Hall</h2>
+  <Blk label="Tested, 9 September 2026 — and broken" title="The Sneyds were not of Keele Hall">
     <p>This archive flagged the risk and then acted on it. The tree ran this family back to
     <strong>Ralph Sneyd, Esq., of Keele Hall</strong> (1723–1793) and on into Warwickshire gentry of
     the 1530s — eleven generations. <strong>The join is false.</strong> The Madeley baptism of 1742
@@ -210,16 +203,14 @@ const shown = f.members.filter((m) => !m.living);
     <strong>Lutwyche Cemetery, Kedron</strong>, where his wife Miriam Wakefield and his daughter-in-law
     Martha Blum lie too. <a href={u("/inquest-1902/")}>This archive briefly published 1838 and was
     wrong →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">What replaced it</div>
-    <h2 style="margin-top:.4rem">The real line, out of the Madeley registers</h2>
+  <Blk label="What replaced it" title="The real line, out of the Madeley registers">
     <p>Taking away Keele Hall did not leave a hole. The parish registers of
     <strong>All Saints, Madeley</strong> carry the family's own line, and it reaches nearly as far
     back in time as the false one did at its lower end:</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Generation</th><th class="m">Record</th><th>Where</th></tr></thead>
         <tbody>
@@ -239,7 +230,7 @@ const shown = f.members.filter((m) => !m.living);
               <td>Kempsey, New South Wales. Buried Lutwyche</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.1rem">The 1769 marriage is the keystone: the tree named
     <strong>Mary Blackbourne</strong> as this William's wife and it was right, but carried no source.
@@ -247,29 +238,27 @@ const shown = f.members.filter((m) => !m.living);
     from 1776 to 1794 — Sarah, James, <strong>Samuel</strong>, Lydia, Mary, Ann, Fletcher and
     Margaret.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>A warning for anyone working these registers.</strong> There was more than one Sneyd
       household at Madeley at once. A <em>second</em> William Sneyd married <strong>Ann Dissington</strong>
       there on 4 October 1779, and his children are interleaved with the first William's in the same
       register — which is why the baptisms show a William in November 1780 and a Samuel in June 1781,
       seven months apart and therefore not brothers. The archive has not tried to split every entry
       between the two families, and says so rather than guessing.
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1rem">One correction this produced: the tree gives Samuel the
     grocer as <strong>born 1769</strong>, which is where its absurd twelve-year gap between birth and
     christening came from. He was baptised in <strong>1781</strong>; the 1851 census gives his birth
     as about 1779 at Madeley; he was buried at Hanley in 1855, not 1856.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Queensland State Archives, read 9 September 2026</div>
-    <h2 style="margin-top:.4rem">The inquest of 1902</h2>
+  <Blk label="Queensland State Archives, read 9 September 2026" title="The inquest of 1902">
     <p><strong>William Hartley Sneyd died on 11 September 1902, and a coroner investigated
     it.</strong> The family tree records a date and nothing else. Queensland State Archives holds the
     file, it has been downloaded and read in full, and it is published here:</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Item</td><td class="mono">ITM2736504</td></tr>
@@ -279,7 +268,7 @@ const shown = f.members.filter((m) => !m.living);
           <tr><td>Digital copy</td><td><strong>DR103140 · PDF · 15.24 MB · open, no restrictions</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.1rem">He was found in <strong>Victoria Park</strong>, Brisbane, on the
     morning of 12 September, between two stacks of railway rails about two hundred yards in from
@@ -288,7 +277,7 @@ const shown = f.members.filter((m) => !m.living);
     of death as <strong>"Poisoning (suicide)"</strong>. He was sixty-four, had had asthma for a dozen
     years, and had not been able to work for a dozen years after an injury to his arm.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>His widow's deposition settles the line.</strong> Asked for the particulars, Miriam
       Sneyd swore that "<em>his father's name was Samuel Sneyd, Gaol Governor, his mother's name was
       Catherine</em>" — confirming, from inside the family and under oath, the join to
@@ -297,7 +286,7 @@ const shown = f.members.filter((m) => !m.living);
       children with ages that match the tree exactly.
       <br /><br />
       <a href={u("/inquest-1902/")}><strong>The whole file, transcribed →</strong></a>
-    </div>
+    </Note>
 
     <p style="margin-top:.9rem">The same search turned up an <strong>intestacy file</strong> for
     <strong>Arthur Hartley Sneyd</strong> — the man killed at Pozières — opened by the Public Curator
@@ -307,7 +296,7 @@ const shown = f.members.filter((m) => !m.living);
     1892–95 — which is the missing middle of the western Queensland decade in which he married at
     Muttaburra and his daughter Ivy was born at Boulia.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>The whole QSA index, re-read on 9 September 2026.</strong> Thirty-three items carry the
       name. Two of them are <strong>Queensland Police staff files</strong> — series
       <span class="mono">S1108</span>, <em>SNEYD, Hanley</em> (AF1623, 1881–83) and
@@ -319,9 +308,9 @@ const shown = f.members.filter((m) => !m.living);
       <br /><br />
       So the family put at least two more men into the Queensland Police after the father — and the
       father's own service record is still not found. <a href={u("/sergeant-sneyd/")}>His story →</a>
-    </div>
+    </Note>
 
-    <div class="note" style="margin-top:1.1rem">
+    <Note>
       <strong>And William Hartley Sneyd went insolvent in 1873.</strong>
       <span class="mono">ITM1056950</span> — <em>Insolvency Files, Public Curator Office, Brisbane</em>,
       file <strong>230/1873</strong>, 6 October to 3 November 1873. He was thirty-six, a contractor,
@@ -330,8 +319,8 @@ const shown = f.members.filter((m) => !m.living);
       Set it beside what his widow swore in 1902 — that he "<em>had not been able to work for about
       12 years in consequence of an injury to his arm</em>" — and the shape of a working life emerges
       that the family tree recorded as two dates. <a href={u("/inquest-1902/")}>The inquest →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>The people</h2>

@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { OWN, INHERITED, nOwn } from "../lib/errors.js";
 
@@ -16,19 +19,17 @@ import { OWN, INHERITED, nOwn } from "../lib/errors.js";
     inherited from the family tree, but made here — together with what caused each one and what it
     should teach the next person.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>None of these was quietly edited away.</strong> Each correction still stands on the page
       where the error was made, which is why the links below go to the page rather than to an
       apology. Two were caught within hours. One stood for a day — and it was the worst kind, a
       confident correction aimed at the family about their own family.
-    </div>
+    </Note>
   </section>
 
   {OWN.map((e) => (
-    <section class="blk">
-      <div class="lab">{e.when}</div>
-      <h2 style="margin-top:.4rem">{e.truth}</h2>
-      <div class="scroll" style="margin-top:1rem">
+    <Blk label={e.when} title={e.truth}>
+      <Scroll>
         <table>
           <tbody>
             <tr><td style="white-space:nowrap"><strong>It said</strong></td><td>{e.what}</td></tr>
@@ -36,11 +37,11 @@ import { OWN, INHERITED, nOwn } from "../lib/errors.js";
             <tr><td style="white-space:nowrap"><strong>How</strong></td><td>{e.why}</td></tr>
           </tbody>
         </table>
-      </div>
-      <div class="note" style="margin-top:1rem">
+      </Scroll>
+      <Note tight>
         <strong>The lesson.</strong> {e.lesson} <a href={u(e.href)}>Where it was corrected →</a>
-      </div>
-    </section>
+      </Note>
+    </Blk>
   ))}
 
   <section class="blk">
@@ -48,7 +49,7 @@ import { OWN, INHERITED, nOwn } from "../lib/errors.js";
     <p class="dek">These are a different thing, and worth keeping separate: claims inherited from the
     exported family tree and overturned here. They are somebody else's mistakes, made in good faith,
     and every one of them is still shown on the page that corrects it rather than deleted.</p>
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>The tree said</th><th>The record says</th></tr></thead>
         <tbody>
@@ -57,7 +58,7 @@ import { OWN, INHERITED, nOwn } from "../lib/errors.js";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
   </section>
 
   <section class="blk" style="border-bottom:0">

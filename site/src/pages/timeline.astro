@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 import t from "../data/timeline.json";
 
@@ -69,7 +70,7 @@ const ordered = [...t.events].sort((a, b) => a.y - b.y);
   </section>
 
   <section class="blk" style="border-bottom:0">
-    <div class="note">{t.close}</div>
+    <Note>{t.close}</Note>
     <p class="small" style="margin-top:1.2rem"><a href={u("/direct-line/")}>The spine →</a> ·
       <a href={u("/places/")}>Places →</a> · <a href={u("/how-far-back/")}>How far back →</a></p>
   </section>

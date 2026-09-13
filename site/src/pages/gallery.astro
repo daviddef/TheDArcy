@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 /* Everything this archive has as an image. It is a short page, and the shortness
@@ -44,18 +47,16 @@ const WANTED = [
     <p class="lede">This family produced four soldiers, a gaol governor, a government printer and a
     church organist across two hundred years. It has left <strong>one photograph of one person</strong>,
     and that only because a newspaper printed it when he came home with a medal.</p>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>That is not unusual and it is worth saying why.</strong> Photography was expensive
       until it was not, and the people in this archive are printers, constables, clerks and
       labourers, not the sort of family that sat for portraits. What survives of them is what a
       government wrote down. <a href={u("/documents/")}>The documents →</a>
-    </div>
+    </Note>
   </section>
 
   {PLATES.map((p) => (
-    <section class="blk">
-      <div class="lab">{p.kind} · {p.when}</div>
-      <h2 style="margin-top:.4rem">{p.title}</h2>
+    <Blk label={`${p.kind} · ${p.when}`} title={p.title}>
       <figure style={`margin:1.2rem 0 0;max-width:${p.w > 900 ? "100%" : "340px"}`}>
         <a href={u(p.href)}>
           <img src={u(p.src)} width={p.w} height={p.h} loading="lazy" decoding="async" alt={p.alt}
@@ -64,14 +65,14 @@ const WANTED = [
         <figcaption class="cap" style="margin-top:.7rem">{p.what}
           <br /><span class="dim">{p.src_line}</span></figcaption>
       </figure>
-      <div class="note" style="margin-top:1.1rem">{p.note} <a href={u(p.href)}>→</a></div>
-    </section>
+      <Note>{p.note} <a href={u(p.href)}>→</a></Note>
+    </Blk>
   ))}
 
   <section class="blk" style="border-bottom:0">
     <h2>What is missing, and where it might be</h2>
     <p class="dek">Four faces this archive would most like and does not have.</p>
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Who</th><th>Why there is nothing</th></tr></thead>
         <tbody>
@@ -80,12 +81,12 @@ const WANTED = [
           ))}
         </tbody>
       </table>
-    </div>
-    <div class="note" style="margin-top:1.3rem">
+    </Scroll>
+    <Note>
       <strong>If you have a photograph of any of these people, it is the most valuable thing you
       could send.</strong> A shoebox in a Brisbane cupboard almost certainly holds more images of
       this family than the entire internet does.
       <a href={u("/errands/")}>Other things worth doing →</a>
-    </div>
+    </Note>
   </section>
 </Base>

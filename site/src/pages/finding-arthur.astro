@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 ---
 <Base
@@ -14,13 +16,13 @@ import { u } from "../lib/url.js";
     to him. They gave six different answers, and the last one — arriving thirteen months late — is the
     only one that explains why he has no grave.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>What the Bureau was.</strong> The Australian Red Cross Wounded and Missing Enquiry
       Bureau existed because the army's own machinery could not answer the question families actually
       asked: <em>what happened to him?</em> Its searchers went through the hospitals and base depots of
       France and England asking men who had been there. The statements are hearsay, contradictory and
       often wrong. They are also the only surviving voices of the men who were beside him.
-    </div>
+    </Note>
 
     <p style="margin-top:1.2rem">He was <strong>5050 Private Arthur Hartley Sneyd, 9th Battalion</strong>
     — a typist from Wooloowin, Ivy Sneyd's younger brother, and so Cristina's great-great-uncle. He had
@@ -28,9 +30,7 @@ import { u } from "../lib/url.js";
     do it. <a href={u("/great-war/")}>His service →</a></p>
   </section>
 
-  <section class="blk">
-    <div class="lab">Étaples · 3 November 1916</div>
-    <h2 style="margin-top:.4rem">First: killed by a shell</h2>
+  <Blk label="Étaples · 3 November 1916" title="First: killed by a shell">
     <blockquote>
       His initials are A.H., and his number — 5050. He belonged to B.Co. I knew him personally. As I
       was coming out of the trenches, wounded, at Pozières, Pte. R. Kent, B.Co. told me he had seen
@@ -39,11 +39,9 @@ import { u } from "../lib/url.js";
       No. 1 A.D.B.D., Étaples, 3 November 1916. A note in the margin: <em>Written Pte Kent 25.11.16</em>
       — the Bureau wrote to Kent, as it always did.</footer>
     </blockquote>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Étaples · 4 December 1916</div>
-    <h2 style="margin-top:.4rem">Then: lifted out and put over the parapet</h2>
+  <Blk label="Étaples · 4 December 1916" title="Then: lifted out and put over the parapet">
     <blockquote>
       I saw Sneyd and two others struck, and as I considered, killed, by the same shell. We were in a
       communication trench on the Somme, and the bodies of the three were lifted out and placed over
@@ -55,11 +53,9 @@ import { u } from "../lib/url.js";
     </blockquote>
     <p class="small">He reports the rumour and then, in the same breath, refuses it. That sentence is
     the file in miniature.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Étaples · 4 December 1916</div>
-    <h2 style="margin-top:.4rem">"His death is mysterious"</h2>
+  <Blk label="Étaples · 4 December 1916" title="&quot;His death is mysterious&quot;">
     <blockquote>
       Sneyd was of my Co. — A. <strong>He held the position of Sgt. in Australia before he came
       out.</strong> His death is mysterious. He was <em>found for dead</em> on the parapet but
@@ -73,11 +69,9 @@ import { u } from "../lib/url.js";
     <p class="small">A stranger to this family, in a convalescent depot in France, independently
     confirms the thing the Statement of Service records in a clerk's shorthand: <strong>he had been a
     sergeant and gave it up.</strong> And he names the man who will spend the next year looking.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">No. 9 General Hospital, Rouen · 16 December 1916</div>
-    <h2 style="margin-top:.4rem">And then the account that changes everything</h2>
+  <Blk label="No. 9 General Hospital, Rouen · 16 December 1916" title="And then the account that changes everything">
     <blockquote>
       I knew Sneyd, his No. was 5050. On the 20th August, I was one of the working party with Sneyd in
       the trenches <strong>just in front of Pozières</strong>. A shell burst over us and killed two or
@@ -102,11 +96,9 @@ import { u } from "../lib/url.js";
       <footer class="small" style="font-style:normal;margin-top:.6rem">— reported at Le Havre,
       4 January 1917, from Cpl. H. Kendrick, 1st A.D.B.D. <em>Written Cpl Kendrick 11.1.17.</em></footer>
     </blockquote>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">No. 4 Officer Cadet Battalion, New College, Oxford · 6 January 1917</div>
-    <h2 style="margin-top:.4rem">Walsh</h2>
+  <Blk label="No. 4 Officer Cadet Battalion, New College, Oxford · 6 January 1917" title="Walsh">
     <p>Holloway had named him: <em>Cpl. Walsh, his great chum</em>. The Bureau wrote to him. By the
     time the letter found him he was out of the line and in training for a commission at Oxford, and
     this is what he sent back.</p>
@@ -130,11 +122,9 @@ import { u } from "../lib/url.js";
     paper measured him at <strong>5 ft 7½ in with dark brown hair</strong>, and he was
     <strong>22</strong>, not 23. Walsh had not seen him for five months and was writing from a
     lecture room in Oxford. It is the closest thing to a portrait of him that exists.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">France · September 1917</div>
-    <h2 style="margin-top:.4rem">Thirteen months later, Walsh finds the answer</h2>
+  <Blk label="France · September 1917" title="Thirteen months later, Walsh finds the answer">
     <p>He did not let it go. By September 1917 he was a <strong>lieutenant</strong>, and he had tracked
     down a sergeant of a different battalion who had been there.</p>
 
@@ -154,14 +144,14 @@ import { u } from "../lib/url.js";
       France, 19 September 1917.</footer>
     </blockquote>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>He never got another chance, or the chance came to nothing.</strong> There is no grave.
       Arthur Hartley Sneyd is commemorated on the <strong>Australian National Memorial at
       Villers-Bretonneux</strong>, which carries the names of Australians who fell in France and whose
       graves are not known. A rough wooden cross in a shell hole in No Man's Land, in ground fought
       over for two more years, was not a marker that survived the war.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk">
     <h2>What the file settles, and what it unsettles</h2>
@@ -186,9 +176,7 @@ import { u } from "../lib/url.js";
     </ol>
   </section>
 
-  <section class="blk">
-    <div class="lab">Brisbane, 20 August 1919 — three years to the day</div>
-    <h2 style="margin-top:.4rem">What the family called him</h2>
+  <Blk label="Brisbane, 20 August 1919 — three years to the day" title="What the family called him">
 
     <p>On the third anniversary the family put notices in both Brisbane papers. They are short, and
     the first two words of each are the whole point.</p>
@@ -201,7 +189,7 @@ import { u } from "../lib/url.js";
       <em>Telegraph</em> carried the same notice the same day.</footer>
     </blockquote>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Q.M.S.</strong> — Quartermaster Sergeant. He had reverted to the ranks on 29 July 1916
       to get into the line, and he died a <strong>private</strong>. That is what the army recorded and
       what is carved at Villers-Bretonneux.
@@ -210,7 +198,7 @@ import { u } from "../lib/url.js";
       gave away. <span class="chip inf">the exact appointment is unconfirmed</span> — his Statement of
       Service shows corporal and then sergeant in the depot battalion, and whether "Quartermaster
       Sergeant" was his formal appointment or the family's version of it is not settled here.
-    </div>
+    </Note>
 
     <p style="margin-top:1.3rem">Directly beneath it in the <em>Courier</em>, a second notice, signed
     with one name and no relationship:</p>
@@ -225,7 +213,7 @@ import { u } from "../lib/url.js";
     <strong>sweetheart</strong> takes — but the archive cannot show that, and says so.
     <span class="chip lore">unidentified</span> She is the only person connected to Arthur Hartley
     Sneyd whose surname nobody now knows.</p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>The other brother</h2>
@@ -236,7 +224,7 @@ import { u } from "../lib/url.js";
     <p class="dek" style="margin-top:.9rem">This archive had him down as a <em>salesman</em>, on the
     strength of a death notice. Nothing on this site said he had been in the war at all.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>His citation has now been read, and it is the same job.</strong> At
       <strong>Westhoek, east of Ypres, on 4 October 1917</strong>, in charge of a squad of bearers,
       "<em>this man volunteered to go back during the barrage fire of an evening counter attack, and
@@ -246,7 +234,7 @@ import { u } from "../lib/url.js";
       Fourteen months earlier, his brother had last been seen walking into No Man's Land behind
       stretcher bearers with a white flag and a bandage round his head.
       <a href={u("/great-war/")}>Vivian's service, and the citation in full →</a>
-    </div>
+    </Note>
     <p style="margin-top:1.2rem"><a href={u("/great-war/")}>The two D'Arcy men of 1916 →</a> ·
     <a href={u("/sneyd/")}>The Sneyds →</a> ·
     <a href={u("/sources/")}>Where this comes from →</a></p>

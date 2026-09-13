@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 
 const file = [
@@ -27,12 +30,12 @@ const cert = [
   dek="William Hartley Sneyd was found dead in Victoria Park, Brisbane, on 12 September 1902. The coronial file has been read in full, and it is published here in full, because an archive that suppresses what it finds is not an archive.">
 
   <section class="blk">
-    <div class="note">
+    <Note>
       <strong>This page concerns a death by suicide</strong> and quotes a coroner's file, including a
       medical analysis and the sworn evidence of the man's widow. It is set out plainly and without
       euphemism. If that is not what you came for, <a href={u("/sneyd/")}>the Sneyd family page</a> is
       the place to go instead.
-    </div>
+    </Note>
 
     <p class="lede" style="margin-top:1.4rem">He is Cristina's three-times-great-grandfather:
     <strong>William Hartley Sneyd</strong> → Arthur William Hartley Sneyd → Ivy Miriam Sneyd →
@@ -40,9 +43,7 @@ const cert = [
     else at all. This is what was behind it.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">The finding</div>
-    <h2 style="margin-top:.4rem">Victoria Park, 11 September 1902</h2>
+  <Blk label="The finding" title="Victoria Park, 11 September 1902">
 
     <p>He left home a little before nine o'clock on the morning of Thursday 11 September 1902. He was
     sixty-four, a contractor by trade, and he had not been able to work for about twelve years because
@@ -64,38 +65,32 @@ const cert = [
       one would put him out of his misery… <strong>The case was apparently one of suicide. No
       suspicious circumstances.</strong>
     </blockquote>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The file</div>
-    <h2 style="margin-top:.4rem">What was ordered, and what came</h2>
-    <div class="scroll" style="margin-top:1.1rem">
+  <Blk label="The file" title="What was ordered, and what came">
+    <Scroll>
       <table><tbody>
         {file.map(([k, v]) => (<tr><td>{k}</td><td class={k === "Item" || k.startsWith("Previous") ? "mono" : ""}>{v}</td></tr>))}
       </tbody></table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:.9rem">Queensland State Archives has digitised this file and
     serves it free. It was found by searching the QSA catalogue for the surname and reading all
     forty-one hits — the archive did not know an inquest existed until that search.
     <span class="chip doc">documented</span></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Certificate of particulars</div>
-    <h2 style="margin-top:.4rem">The formal record</h2>
-    <div class="scroll" style="margin-top:1.1rem">
+  <Blk label="Certificate of particulars" title="The formal record">
+    <Scroll>
       <table><tbody>
         {cert.map(([k, v]) => (<tr><td>{k}</td><td><strong>{v}</strong></td></tr>))}
       </tbody></table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:.9rem">Four witnesses were called: John Williams, labourer;
     <strong>Miriam Sneyd, widow</strong>; Edward Law, retired; and Patrick Moroney, constable. All four
     depositions survive, and all four are below.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">First deposition</div>
-    <h2 style="margin-top:.4rem">John Williams, labourer, of Roche Street, Spring Hill</h2>
+  <Blk label="First deposition" title="John Williams, labourer, of Roche Street, Spring Hill">
     <blockquote>
       I remember 12th September inst about 10 A.M. I was in company of Alfred Hutchison walking along
       the railway line in Victoria Park. I saw a man lying between two stacks of rails. I went up to
@@ -105,11 +100,9 @@ const cert = [
       where the body had been a bottle containing some liquid. (The bottle produced is the same) which
       I handed to the police.
     </blockquote>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Second deposition — the important one</div>
-    <h2 style="margin-top:.4rem">Miriam Sneyd, his widow</h2>
+  <Blk label="Second deposition — the important one" title="Miriam Sneyd, his widow">
     <p>They had married at Brisbane when he was twenty-two. She had six living children by him, and
     she was asked, as widows were, to supply the registrar's particulars — which is why the most
     valuable single sentence in this archive is buried at the end of the worst day of her life.</p>
@@ -138,17 +131,15 @@ const cert = [
       The birthplace is entered on the form but is not legible in the digitised image.</footer>
     </blockquote>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>"His father's name was Samuel Sneyd, Gaol Governor."</strong> Sworn, by the man's own
       wife, in 1902. This archive spent an entire research pass testing whether the Sneyd line joined
       where the tree said it did — and here the join is confirmed from inside the family, with the
       gaol governorship attached to it. <a href={u("/sergeant-sneyd/")}>Samuel Charles Sneyd →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Third deposition</div>
-    <h2 style="margin-top:.4rem">Edward Law, retired, of Hartley Street off Gregory Terrace</h2>
+  <Blk label="Third deposition" title="Edward Law, retired, of Hartley Street off Gregory Terrace">
     <blockquote>
       I know the deceased William Hartley Sneyd for many years. I remember the 11th Sept instant I saw
       Sneyd about 4 on that day walking along Gregory Terrace. <strong>I remarked to him that he was
@@ -160,11 +151,9 @@ const cert = [
     </blockquote>
     <p class="small" style="margin-top:.9rem">He is the last person known to have spoken to him: about
     four in the afternoon, on Gregory Terrace, a few hundred yards from where he would be found.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Fourth deposition</div>
-    <h2 style="margin-top:.4rem">Patrick Moroney, police constable, Brisbane</h2>
+  <Blk label="Fourth deposition" title="Patrick Moroney, police constable, Brisbane">
     <blockquote>
       I remember about 10.20 A.M. on 12th instant in consequence of something I heard I went to a spot
       in Victoria Park beside the Railway line &amp; about 200 yards from Gregory Terrace. I there
@@ -181,11 +170,9 @@ const cert = [
     </blockquote>
     <p class="small" style="margin-top:.9rem">A knife, a pair of spectacles and two handkerchiefs. One
     of his sons came to the morgue for them.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The two certificates</div>
-    <h2 style="margin-top:.4rem">Post-mortem, and analysis</h2>
+  <Blk label="The two certificates" title="Post-mortem, and analysis">
 
     <blockquote>
       <strong>Hospital Morgue, Brisbane, Sept 12 1902.</strong> I hereby certify that on the 12 day of
@@ -210,7 +197,7 @@ const cert = [
     <p class="small">Ten times the fatal dose. Crude carbolic — the coarse disinfectant grade, black
     with tar oils — was in every yard and stable in Brisbane in 1902 and cost pennies. Miriam had not
     known he had any.</p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2>What the file settles</h2>
@@ -235,9 +222,7 @@ const cert = [
     </ol>
   </section>
 
-  <section class="blk">
-    <div class="lab">A correction, and how it happened</div>
-    <h2 style="margin-top:.4rem">The archive got his birth year wrong from this very file</h2>
+  <Blk label="A correction, and how it happened" title="The archive got his birth year wrong from this very file">
 
     <p>When this page was first published on 9 September 2026 it said, in the list above, that Miriam's
     sworn "<em>His age was 64 years</em>" put his birth in <strong>1838</strong> and ruled out the
@@ -248,21 +233,21 @@ const cert = [
     therefore <strong>64</strong> on 11 September 1902, with his sixty-fifth birthday still three weeks
     away. Miriam's answer was exactly right; the arithmetic laid over it was not.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>And the register settles it outright.</strong> The Queensland death registration —
       <span class="mono">1902/B/2776</span>, searched in the state's historical index on 9 September
       2026 — records his <strong>date of birth as 30/09/1837</strong>, with his mother as
       <em>Catherine</em> and his father as <em>Samuel Sneyd</em>. Find a Grave was right. The family
       tree's 1838 was wrong. So was the correction this archive published against it.
       <span class="chip doc">documented</span>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1rem">It is left visible rather than quietly edited, because a
     site that asks to be trusted about other people's errors has to be legible about its own — and
     because the failure is instructive. A stated age is not a birth year. It is a birth year
     <em>minus one</em> for everybody whose birthday has not yet come round, which is most of the year
     for most people. <a href={u("/method/")}>How claims are labelled here →</a></p>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2>Two notes on the document itself</h2>

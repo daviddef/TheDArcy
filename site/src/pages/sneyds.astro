@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/sneyds.json";
 const c = d.counts;
@@ -16,15 +19,13 @@ const c = d.counts;
     third, and corrects the tree in the process.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">Madeley All Saints</div>
-    <h2 style="margin-top:.4rem">William Sneyd, weaver, and his thirteen children</h2>
+  <Blk label="Madeley All Saints" title="William Sneyd, weaver, and his thirteen children">
 
     <p>On <strong>27 March 1769</strong> William Sneyd, <strong>weaver</strong>, married Mary
     Blackbourne at Madeley, witnessed by Robert Sneyd. <a href={u("/sneyd/")}>That record →</a> Here
     is what follows it in the same register:</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Baptised</th><th>Child</th><th>Mother</th><th>Note</th></tr></thead>
         <tbody>
@@ -38,18 +39,16 @@ const c = d.counts;
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The first child is baptised three months after the wedding</strong>, and the 1779 entry
       is the one time in thirteen that the clerk wrote the mother's name: <strong>Mary</strong>. That
       is the couple, and this is their family.
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">The correction</div>
-    <h2 style="margin-top:.4rem">Samuel is 1781, not 1769</h2>
+  <Blk label="The correction" title="Samuel is 1781, not 1769">
 
     <p class="lede">The family tree says <strong>Samuel Sneyd, born 1769 at Madeley</strong>, son of
     William Sneyd and Mary Blackbourne. This archive searched for that baptism twice today and
@@ -60,41 +59,37 @@ const c = d.counts;
     eldest brother <em>William</em>, christened three months after the wedding — which is exactly the
     kind of slip a family tree makes when it has a marriage date and guesses the child from it.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And 1781 fits better.</strong> Samuel Charles Sneyd was born at Hanley in March 1811 to
       a father Samuel. A Samuel baptised in 1781 is thirty when that child arrives; one born in 1769
       would be forty-two. <span class="chip inf">identification, on dates and a documented family</span>
       <a href={u("/sneyd/")}>The line as it now stands →</a>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem"><strong>And the lesson, which is the third of its kind
     today.</strong> I searched for the tree's <em>date</em> instead of the tree's <em>person</em>. The
     1781 Samuel was in every result list I pulled, and I discarded him each time for being twelve
     years out. <a href={u("/corrections/")}>Recorded →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">A limit of the method</div>
-    <h2 style="margin-top:.4rem">Madeley does not write the mothers down</h2>
+  <Blk label="A limit of the method" title="Madeley does not write the mothers down">
     <p>Of {c.madeleyBaptisms} Madeley baptisms in this set, only <strong>{c.motherRecorded}</strong>
     name the mother; <strong>{c.motherOmitted}</strong> give the father alone. Reconstitution works by
     grouping on both parents, so at Madeley it cannot separate two contemporary Williams — and the
     raw grouping duly produced one impossible "William" with thirty-four children spanning 1702 to
     1794.</p>
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Which is why the weaver's family above is offered as a reading rather than a
       reconstruction.</strong> It hangs on an occupation that matches the marriage, a first child
       three months after it, and one entry in 1779 that names Mary. That is good — it is not the
       same as a register that writes both parents every time, as Dursley does.
       <a href={u("/sanigers/")}>Where it did work →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">{d.fmp.census1851.ref}</div>
-    <h2 style="margin-top:.4rem">Samuel Sneyd, grocer, in his own shop</h2>
+  <Blk label={d.fmp.census1851.ref} title="Samuel Sneyd, grocer, in his own shop">
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Name</th><th>Relation</th><th class="m">Age</th><th>Occupation</th><th>Born</th></tr></thead>
         <tbody>
@@ -107,22 +102,20 @@ const c = d.counts;
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>{d.fmp.census1851.means}</strong> <span class="chip doc">documented</span>
       <br /><br />
       {d.fmp.staly}
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">{d.fmp.ages}</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Four censuses, one address</div>
-    <h2 style="margin-top:.4rem">{d.wellStreetYears.head}</h2>
+  <Blk label="Four censuses, one address" title={d.wellStreetYears.head}>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Year</th><th>Address</th><th>Household</th><th class="m">Reference</th></tr></thead>
         <tbody>
@@ -132,46 +125,40 @@ const c = d.counts;
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>{d.wellStreetYears.means}</strong>
       <a href={u("/people/samuel-charles-sneyd-1810/")}>Samuel Charles →</a>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1.2rem">{d.wellStreetYears.mullock}</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">{d.fmp.oliver.ref}</div>
-    <h2 style="margin-top:.4rem">And Elizabeth's own baptism</h2>
+  <Blk label={d.fmp.oliver.ref} title="And Elizabeth's own baptism">
     <p class="lede">{d.fmp.oliver.line}.</p>
     <p style="margin-top:1rem">{d.fmp.oliver.tree}</p>
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       {d.fmp.oliver.reading} <span class="chip inf">an identification</span>
       <br /><br />
       <strong>{d.fmp.oliver.new}</strong>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Tested, covered, not found</div>
-    <h2 style="margin-top:.4rem">The Audlem marriage</h2>
+  <Blk label="Tested, covered, not found" title="The Audlem marriage">
     <p class="lede">{d.fmp.audlem.claim}</p>
     <p style="margin-top:1rem"><strong>The test.</strong> {d.fmp.audlem.test}</p>
     <p style="margin-top:1rem"><strong>The result.</strong> {d.fmp.audlem.result}</p>
-    <div class="note" style="margin-top:1.2rem">{d.fmp.audlem.verdict}
-      <span class="chip doc">coverage established</span></div>
-  </section>
+    <Note>{d.fmp.audlem.verdict}
+      <span class="chip doc">coverage established</span></Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Hanley St John the Evangelist · and the GRO index</div>
-    <h2 style="margin-top:.4rem">91 Well Street, and the year that was wrong</h2>
+  <Blk label="Hanley St John the Evangelist · and the GRO index" title="91 Well Street, and the year that was wrong">
 
     <p class="lede">The tree said: <em>{d.death.tree}</em> Nothing stood behind it. Here is the
     burial register.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <tbody>
           <tr><td>Register</td><td>{d.death.burial.reg}</td></tr>
@@ -181,16 +168,16 @@ const c = d.counts;
           <tr><td>Abode</td><td><strong>{d.death.burial.abode}</strong></td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And the death index agrees with the register, not the tree.</strong>
       {d.death.index.entry}
       <br /><br />
       {d.death.index.window} <span class="chip doc">documented</span>
-    </div>
+    </Note>
 
-    <div class="scroll" style="margin-top:1.3rem">
+    <Scroll>
       <table>
         <thead><tr><th></th><th>What the tree said</th><th>What the records say</th></tr></thead>
         <tbody>
@@ -199,19 +186,17 @@ const c = d.counts;
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>The age is the interesting one.</strong> {d.death.age}
       <a href={u("/corrections/")}>The correction it supports →</a>
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">{d.death.closing}</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">1861 census · {d.wellStreet.census}</div>
-    <h2 style="margin-top:.4rem">Well Street, Hanley — the grocer's shop</h2>
+  <Blk label={`1861 census · ${d.wellStreet.census}`} title="Well Street, Hanley — the grocer's shop">
 
     <p class="lede">The family tree makes two very specific, entirely unverified claims about this
     line: that <a href={u("/people/samuel-sneyd/")}>Samuel Sneyd</a>, born Madeley 1769, "a grocer of
@@ -222,7 +207,7 @@ const c = d.counts;
 
     <p style="margin-top:1.1rem">Here is Well Street five years later.</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Name</th><th>Relation</th><th class="m">Cond.</th><th class="m">Age</th><th>Occupation</th><th>Born</th></tr></thead>
         <tbody>
@@ -238,12 +223,12 @@ const c = d.counts;
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:.7rem">The address in the enumerator's own hand:
       <strong>{d.wellStreet.address}</strong>.</p>
 
     <div class="lab" style="margin-top:1.6rem">Five points of contact</div>
-    <div class="scroll" style="margin-top:.6rem">
+    <Scroll>
       <table>
         <thead><tr><th></th><th>What the tree says</th><th>What the census says</th></tr></thead>
         <tbody>
@@ -252,14 +237,14 @@ const c = d.counts;
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Read carefully.</strong> {d.wellStreet.caveat}
       <span class="chip inf">an identification, not a record</span>
       <br /><br />
       <strong>And one number does not fit.</strong> {d.wellStreet.ageProblem}
-    </div>
+    </Note>
 
     <p class="dek" style="margin-top:1.2rem">What it does give outright is a household: a
     <strong>James Sneyd, engraver, born Hanley about 1819</strong>, with two daughters who paint
@@ -268,24 +253,24 @@ const c = d.counts;
     <a href={u("/people/samuel-charles-sneyd-1810/")}>Samuel Charles</a>, born Hanley 1810, who sailed.
     James stayed, kept the shop, and engraved.</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Her birthplace is left as it was written.</strong> {d.wellStreet.birthplace}
       <a href={u("/corrections/")}>Why that rule exists →</a>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1.2rem"><strong>And why this took so long to find.</strong>
     {d.coverage1861} <span class="chip doc">coverage established by control test</span></p>
-  </section>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>Where the Staffordshire Sneyds are</h2>
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Parish</th><th class="m">Records</th></tr></thead>
         <tbody>{d.places.map(([p, n]) => (
           <tr><td><strong>{p}</strong></td><td class="m">{n}</td></tr>))}</tbody>
       </table>
-    </div>
+    </Scroll>
     <p style="margin-top:1.1rem">Madeley holds 149 of 551 — and Keele, the hall the discredited graft
     reached for, is four miles up the road and holds a handful. The family this archive actually
     descends from were <strong>weavers, carpenters, blacksmiths, brickmakers and labourers</strong>

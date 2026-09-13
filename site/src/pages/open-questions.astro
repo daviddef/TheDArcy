@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 ---
 <Base
@@ -7,25 +10,21 @@ import { u } from "../lib/url.js";
   eyebrow="The research queue, in priority order"
   dek="What this archive does not know, ranked by how much finding out would change. A null result is still a result, and it stops the next person repeating the search.">
 
-  <section class="blk">
-    <div class="lab">Closed, 13 September 2026</div>
-    <h2 style="margin-top:.4rem">Where was Hannah Saniger born?</h2>
+  <Blk label="Closed, 13 September 2026" title="Where was Hannah Saniger born?">
 
     <p class="lede">This was the oldest open question on the site. It is answered:
     <strong>Berkeley, Gloucestershire</strong>, stated in the 1851 census at Drivers Fields and
     matching the family tree exactly. <a href={u("/berkeley-woman/")}>How, and what it cost →</a></p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>What replaces it.</strong> Hannah's <em>baptism</em> has still not been seen, and her
       parents are still only a tree's assertion — John Saniger and Lydia. Berkeley's register can now
       be searched through the years that matter, with parents named, so this is a live search rather
       than a blocked one. <a href={u("/berkeley/")}>Berkeley →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Where it stands, 10 September 2026</div>
-    <h2 style="margin-top:.4rem">The state of play</h2>
+  <Blk label="Where it stands, 10 September 2026" title="The state of play">
     <p class="lede">Two days of work have closed more of this list than they opened, which is not the
     usual direction. What follows is the honest position, including the searches that found nothing.</p>
 
@@ -74,7 +73,7 @@ import { u } from "../lib/url.js";
         as a result, not a gap.</p>
       </div>
     </div>
-  </section>
+  </Blk>
 
   <section class="blk">
     <h2 style="margin-top:0">1 · The join that decides the whole pedigree</h2>
@@ -326,7 +325,7 @@ import { u } from "../lib/url.js";
     <p class="dek">Nine enquiries are now drafted and waiting — four letters to institutions and five
     jobs needing a login, a card or an identity check. They live in the repository under
     <span class="mono">notes/letters/</span> and <span class="mono">requests/</span>.</p>
-    <div class="scroll" style="margin-top:1rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">#</th><th>To</th><th>What it would settle</th></tr></thead>
         <tbody>
@@ -341,7 +340,7 @@ import { u } from "../lib/url.js";
           <tr><td class="m">9</td><td>TNA enquiries</td><td>Which Ordnance series could hold a commission of 1776</td></tr>
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:1rem">Nothing has been sent. They are drafts.</p>
   </section>
 

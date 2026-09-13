@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/chew-magna.json";
 ---
@@ -9,7 +12,7 @@ import d from "../data/chew-magna.json";
   dek="The one open question in this archive's English line is where Hannah Saniger was born. A census two streets from her door names a Somerset parish, and it is the first answer that fits every constraint at once.">
 
   <section class="blk" style="border-top:0">
-    <div class="note" style="border-left-width:3px;margin-bottom:0">
+    <Note style="border-left-width:3px;margin-bottom:0">
       <strong style="font-size:1.1em">This page is wrong, and it is kept here for that reason.</strong>
       <br /><br />
       Everything below was built on the belief that Hannah Saniger was not born in Gloucestershire —
@@ -17,7 +20,7 @@ import d from "../data/chew-magna.json";
       same house, states her birthplace outright: <strong>Berkeley, Gloucestershire</strong>. The
       argument on this page is sound and its premise is false.
       <a href={u("/berkeley-woman/")}>What actually settled it →</a>
-    </div>
+    </Note>
   </section>
 
 
@@ -35,11 +38,9 @@ import d from "../data/chew-magna.json";
     in Bristol ten years later, and it names one.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">{d.household.census}</div>
-    <h2 style="margin-top:.4rem">Oxford Road, St Philip and Jacob</h2>
+  <Blk label={d.household.census} title="Oxford Road, St Philip and Jacob">
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Name</th><th>Relation</th><th class="m">Cond.</th><th class="m">Age</th><th>Occupation</th><th>Born</th></tr></thead>
         <tbody>
@@ -55,15 +56,13 @@ import d from "../data/chew-magna.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:.7rem">Address as written: <strong>{d.household.address}</strong>.</p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">{d.h1841.census}</div>
-    <h2 style="margin-top:.4rem">And ten years earlier, in the parish itself</h2>
+  <Blk label={d.h1841.census} title="And ten years earlier, in the parish itself">
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Name</th><th class="m">Sex</th><th class="m">Age</th><th>Occupation</th><th>Born in county</th></tr></thead>
         <tbody>
@@ -76,29 +75,27 @@ import d from "../data/chew-magna.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
     <p class="small" style="margin-top:.7rem">Address as written: <strong>{d.h1841.address}</strong>.</p>
 
     <p style="margin-top:1.2rem">{d.h1841.reading}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>{d.h1841.means}</strong> <span class="chip doc">documented</span>
       <br /><br />
       {d.h1841.collinson}
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1.2rem">{d.spellings}
       <a href={u("/drivers-fields/")}>Lyddya Sinegar →</a></p>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Why it fits</div>
-    <h2 style="margin-top:.4rem">Four constraints, and a parish that meets all of them</h2>
+  <Blk label="Why it fits" title="Four constraints, and a parish that meets all of them">
     <ol class="dek" style="margin-top:1rem">
       {d.why.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
     </ol>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>And why it is not a finding.</strong>
       <ul style="margin:.6rem 0 0 1.1rem">
         {d.against.map((x) => (<li style="margin-bottom:.35rem">{x}</li>))}
@@ -106,16 +103,14 @@ import d from "../data/chew-magna.json";
       <div style="margin-top:.8rem">This is a <em>place to look</em>, arrived at by elimination and
       proximity. It is the best one this archive has had, and it is still a hypothesis.
       <span class="chip inf">a lead, not a link</span></div>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Collinson's Somerset, 1791</div>
-    <h2 style="margin-top:.4rem">What the place was</h2>
+  <Blk label="Collinson's Somerset, 1791" title="What the place was">
 
     <p class="lede">{d.collinson.desc}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>And one line changes how this lead reads.</strong> {d.collinson.cloth}
       <br /><br />
       Every Saniger this archive has found in Gloucestershire is in cloth — a clothier at Saniger in
@@ -124,33 +119,31 @@ import d from "../data/chew-magna.json";
       six miles from Bristol on the other side of the county line.
       <a href={u("/sanigers/")}>The trade, across the whole surname →</a>
       <span class="chip inf">a pattern, not a proof</span>
-    </div>
+    </Note>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>A records fact worth having before anyone writes to Taunton.</strong>
       {d.collinson.peculiar} <a href={u("/errands/")}>On the queue →</a>
-    </div>
+    </Note>
 
     <p class="small" style="margin-top:1.2rem">{d.collinson.null}
       <span class="chip doc">read, and empty</span></p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>Two numbers on this page were wrong when it was published this morning.</strong>
       {d.correction}
       <a href={u("/corrections/")}>Where those go →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">Coverage before absence</div>
-    <h2 style="margin-top:.4rem">The obvious next search cannot be run</h2>
+  <Blk label="Coverage before absence" title="The obvious next search cannot be run">
 
     <p class="lede">{d.found}</p>
 
     <p style="margin-top:1.1rem">That looks like a null result. It is not, and the rule on this site
     is to find out which before saying anything. {d.coverage.test}</p>
 
-    <div class="scroll" style="margin-top:1.1rem">
+    <Scroll>
       <table>
         <thead><tr><th>Control</th><th class="m">Somerset entries</th><th class="m">Parishes</th><th class="m">At Chew Magna</th></tr></thead>
         <tbody>
@@ -159,15 +152,15 @@ import d from "../data/chew-magna.json";
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.1rem">{d.coverage.verdict}</p>
 
-    <div class="note" style="margin-top:1.2rem">
+    <Note>
       <strong>{d.coverage.so}</strong>
       <span class="chip doc">coverage established by control test</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What happens next</h2>

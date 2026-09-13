@@ -1,0 +1,10 @@
+---
+/* A horizontal scroller for one wide thing — almost always a table. On a phone
+   these tables are wider than the screen, so this is the element that decides
+   whether the page itself scrolls sideways or the table does. Worth having in
+   one place: a fix here is a fix on all 106 of them.
+   Marked up so a keyboard can reach it and a screen reader announces it. */
+const { label, flush, ...rest } = Astro.props;
+---
+<div class={["scroll", flush && "scroll-flush"].filter(Boolean).join(" ")}
+     tabindex="0" role="region" aria-label={label ?? "Scrollable table"} {...rest}><slot /></div>

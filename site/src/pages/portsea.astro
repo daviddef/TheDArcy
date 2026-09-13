@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/portsea.json";
 const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
@@ -21,13 +24,11 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
     of Portsea's register stands behind it, which is a question that should have been asked first.</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">The control</div>
-    <h2 style="margin-top:.4rem">Five common surnames, six years, one parish</h2>
+  <Blk label="The control" title="Five common surnames, six years, one parish">
 
     <p>{d.control.method}</p>
 
-    <div class="scroll" style="margin-top:1.2rem">
+    <Scroll>
       <table>
         <thead><tr><th>Surname</th><th class="m">Hampshire, 1778–1783</th><th class="m">Of those, Portsea St Mary</th></tr></thead>
         <tbody>
@@ -36,12 +37,12 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p style="margin-top:1.2rem">That is <strong>{totalCtrl} Portsea entries</strong>. Here is when
     they fall.</p>
 
-    <div class="scroll" style="margin-top:1rem">
+    <Scroll>
       <table>
         <thead><tr><th class="m">Year</th><th class="m">Entries</th><th>&nbsp;</th></tr></thead>
         <tbody>
@@ -54,17 +55,17 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
           ))}
         </tbody>
       </table>
-    </div>
+    </Scroll>
 
     <p class="small" style="margin-top:.9rem">{d.control.types}</p>
 
     <p style="margin-top:1.2rem">{d.earlier}</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>{d.verdict}</strong>
       <span class="chip doc">coverage established</span>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>What that means</h2>
@@ -74,7 +75,7 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
       ))}
     </ol>
 
-    <div class="note" style="margin-top:1.4rem">
+    <Note>
       <strong>Answered the next day, 13 September 2026.</strong> FindMyPast's Hampshire Baptisms
       covers Portsea St Mary continuously — a control returns entries for 1770, 1771, 1772, 1774,
       1775, 1779, 1782, 1785, 1786, 1788, 1789, 1790, 1791 and 1792 — and every D'Arcy spelling
@@ -88,6 +89,6 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
       archive can no longer treat Portsea as a parish it has searched. It has searched
       twenty-two months of it. <a href={u("/errands/")}>The volume to read →</a> ·
       <a href={u("/corrections/")}>Filed as an error →</a>
-    </div>
+    </Note>
   </section>
 </Base>

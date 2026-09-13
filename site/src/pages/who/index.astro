@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Note from "../../components/Note.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
 
@@ -22,14 +23,14 @@ const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCa
     already have a dossier under <a href={u("/people/")}>The People</a>. The other
     <strong>{d.counts.ownPage}</strong> are not in this family at all — and they get a page here.</p>
 
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       <strong>Why bother with people who are not relatives?</strong> Because they are the evidence.
       Sergeant Morton of the 10th Battalion is the only human being who ever said where Arthur Sneyd
       was buried. Constable Moroney is the reason we know what was in a dead man's pockets. A convict
       called John Wells is the reason we know a major of the 39th shipped his dinner service to New
       South Wales. Cut them out and you are left with assertions.
       <a href={u("/register/")}>The register →</a>
-    </div>
+    </Note>
   </section>
 
   <section class="blk" id="finder">

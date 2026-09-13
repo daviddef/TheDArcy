@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 import d from "../data/saniger-line.json";
 ---
@@ -12,9 +14,7 @@ import d from "../data/saniger-line.json";
     <p class="lede">{d.lede}</p>
   </section>
 
-  <section class="blk">
-    <div class="lab">Berkeley St Mary the Virgin</div>
-    <h2 style="margin-top:.4rem">The chain, oldest first</h2>
+  <Blk label="Berkeley St Mary the Virgin" title="The chain, oldest first">
 
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
       {d.gens.map((g) => (
@@ -27,19 +27,17 @@ import d from "../data/saniger-line.json";
         </div>
       ))}
     </div>
-  </section>
+  </Blk>
 
-  <section class="blk">
-    <div class="lab">What it means for the tree</div>
-    <h2 style="margin-top:.4rem">It was right, and I could not see it</h2>
+  <Blk label="What it means for the tree" title="It was right, and I could not see it">
     <p class="lede">{d.verdict}</p>
-    <div class="note" style="margin-top:1.3rem">
+    <Note>
       This is the second lesson of the same day. The first was that a record not reachable here is
       not a record that does not exist. The second is that a claim without a citation is not the same
       as a claim without a source. <a href={u("/coverage/")}>What every null here was really
       measuring →</a>
-    </div>
-  </section>
+    </Note>
+  </Blk>
 
   <section class="blk" style="border-bottom:0">
     <h2>The two questions left</h2>
