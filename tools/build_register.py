@@ -524,6 +524,13 @@ BNA4 = "https://www.findmypast.com.au/search-newspapers"
 rec("Joseph D'Arcy", "obituary · \u201che commenced his military career at THE TAKING OF ST DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia\u201d", JOB, BNA4)
 rec("Katherine D'Arcy", "wife of Lieutenant-Colonel Joseph D'Arcy · he left his \u201cproperty to his wife, Kathe[rine] D'Arcy\u201d by a will executed February 1844 \u2014 Lady's Newspaper, 8 April 1848", "record · Lady's Newspaper and Pictorial Times, 8 April 1848, p.11", BNA4)
 
+
+MH43 = "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)"
+BNA5 = "https://www.findmypast.com.au/search-newspapers"
+rec("Margarett Maria Isabella D'Arcy", "\u201cAt Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.\u201d \u00b7 the first record to give Robert D'Arcy a corps as well as a rank, and to call anyone his child", MH43, BNA5)
+rec("John Maddock Jones", "\u201c21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON\u201d \u00b7 Argus, 1 April 1843 \u2014 he died within weeks of his wife, both in Normandy", "record \u00b7 Argus, or Broad-sheet of the Empire, 1 April 1843, p.15", BNA5)
+rec("Robert D'Arcy", "named in 1843 as \u201cthe late MAJOR-GENERAL D'ARCY, R.E.\u201d, father of Margaret Jones \u00b7 rank, corps and the fact of his death, in one line of a London paper", MH43, BNA5)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

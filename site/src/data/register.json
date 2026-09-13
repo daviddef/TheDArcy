@@ -1,10 +1,10 @@
 {
-"entries": 772,
+"entries": 775,
 "distinct": 562,
-"records": 299,
+"records": 302,
 "tree": 473,
 "grafted": 98,
-"linked": 772,
+"linked": 775,
 "surnames": 188,
 "groups": [
 {
@@ -1177,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 107,
+"n": 109,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1355,6 +1355,13 @@
 "kind": "record"
 },
 {
+"name": "Margarett Maria Isabella D'Arcy",
+"says": "“At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.” · the first record to give Robert D'Arcy a corps as well as a rank, and to call anyone his child",
+"source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
 "name": "Maria D'Arcy, née White",
 "says": "died 04/09/1856 · parents: Maria Gardener · John Javis White",
 "source": "record · Queensland death index 1856/B/50",
@@ -1443,6 +1450,13 @@
 "says": "4 June 1813 · Lieutenant-Colonel promoted COLONEL IN THE ARMY BY BREVET by the Prince Regent · War Office 7 June 1813 · London Gazette 16737 p.1100",
 "source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "named in 1843 as “the late MAJOR-GENERAL D'ARCY, R.E.”, father of Margaret Jones · rank, corps and the fact of his death, in one line of a London paper",
+"source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
 "kind": "record"
 },
 {
@@ -3704,6 +3718,47 @@
 ]
 },
 {
+"surname": "JONES",
+"n": 5,
+"rows": [
+{
+"name": "John Maddock Jones",
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
+"source": "record · TNA PROB 11/1991/312",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON” · Argus, 1 April 1843 — he died within weeks of his wife, both in Normandy",
+"source": "record · Argus, or Broad-sheet of the Empire, 1 April 1843, p.15",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Lydia Jones",
+"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/lydia-jones",
+"kind": "tree"
+},
+{
+"name": "William Jones",
+"says": "b. 1722 · Brimpsfield, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-jones",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "SINEGAR",
 "n": 5,
 "rows": [
@@ -4026,40 +4081,6 @@
 "says": "no dates, no place — a name and a position in the tree",
 "source": "family tree · direct line",
 "link": "/people/william-garden",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "JONES",
-"n": 4,
-"rows": [
-{
-"name": "John Maddock Jones",
-"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "John Maddock Jones",
-"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
-"source": "record · TNA PROB 11/1991/312",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Lydia Jones",
-"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/lydia-jones",
-"kind": "tree"
-},
-{
-"name": "William Jones",
-"says": "b. 1722 · Brimpsfield, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-jones",
 "kind": "tree"
 }
 ]

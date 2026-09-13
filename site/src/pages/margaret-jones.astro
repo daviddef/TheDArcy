@@ -1,0 +1,66 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/margaret-jones.json";
+---
+<Base
+  title="Daughter of the late Major-General D'Arcy"
+  eyebrow={`Le Havre, 1843 · found ${d.found}`}
+  dek="A death notice in a London paper names Robert D'Arcy's rank, his corps and the fact of his death — and calls the dead woman his daughter.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <div class="lab">{d.notice.paper}</div>
+    <h2 style="margin-top:.4rem">The notice</h2>
+    <div class="note" style="border-left-width:3px;margin-top:1rem">
+      <strong style="font-size:1.15em">{d.notice.text}</strong>
+      <span class="chip doc">documented</span>
+    </div>
+    <p style="margin-top:1.1rem">{d.notice.why}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Two notices, thirty-eight years apart</div>
+    <h2 style="margin-top:.4rem">Everything that calls Robert D'Arcy a parent</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th class="m">When</th><th>Paper</th><th>What it says</th></tr></thead>
+        <tbody>
+          {d.pair.map(([when, paper, text, note, href]) => (
+            <tr>
+              <td class="m" style="white-space:nowrap">{when}</td>
+              <td class="small">{paper}</td>
+              <td><strong class="small">{text}</strong>
+                <div class="small" style="color:var(--ink-2);margin-top:.3rem">{note}
+                  {" "}<a href={u(href)}>→</a></div></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.husband.paper}</div>
+    <h2 style="margin-top:.4rem">{d.husband.head}</h2>
+    <p class="lede">{d.husband.text}</p>
+    <p style="margin-top:1rem">{d.husband.note}</p>
+    <div class="note" style="margin-top:1.2rem">{d.france}</div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What it changes</h2>
+    <ol class="dek" style="margin-top:1rem">
+      {d.matters.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
+    </ol>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And what it does not.</strong> {d.careful}
+      <a href={u("/hornby")}>The claim above him →</a>
+    </div>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/robert-family")}>Robert and Jean's family →</a> ·
+      <a href={u("/chatham")}>The 1806 marriage →</a> ·
+      <a href={u("/errands")}>His will at Kew →</a></p>
+  </section>
+</Base>

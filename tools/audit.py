@@ -17,7 +17,8 @@ BRI = re.compile(r"""FreeREG|FreeBMD|FreeCEN|census|TNA\b|PROB\s|ADM\s|WO\s|Conn
     |National Archives|Diocesan|Hanley|General Register|Chew|Hampshire|Shropshire
     |Somerset|Staffordshire|Cheshire|Stroud|Bristol|England|English|Scotland|Ireland
     |Newspaper|Morning|Standard|Chronicle|Herald|Lady's|Army|Officers|Artillery
-    |Peninsular|FamilySearch|Priestlands|Portsea|Chatham|Leith|Oswestry|Madeley""",
+    |Peninsular|FamilySearch|Priestlands|Portsea|Chatham|Leith|Oswestry|Madeley
+    |Argus|Post\b|Journal|Advertiser|Telegraph|Mercury|Gazette|Courant|Empire""",
     re.I | re.X)
 
 def classify(src):

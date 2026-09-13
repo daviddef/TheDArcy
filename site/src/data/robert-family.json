@@ -2,21 +2,63 @@
  "built": "14 September 2026",
  "lede": "A fortnight ago Robert D'Arcy was a rank, a burial and a rumour of Yorkshire, and his family was a list of names on a tree. He now has a marriage, a career in five gazetted steps, a funeral reported in seventeen newspapers — and a household. This page assembles it.",
  "parents": [
-  ["ROBERT D'ARCY", "First commissioned 1778 as Practitioner Engineer and Second Lieutenant, Corps of Engineers · Major 1802 · Lieutenant-Colonel 1 March 1805 · Colonel 1813 · Major-General by 1827 · died Chatham 13 May 1827, buried there with military honours on the 19th, aged 76", "documented"],
-  ["JEAN WARD", "Baptised SOUTH LEITH, Midlothian, 19 July 1754, daughter of JOSEPH WARD and MARTHA GAIRDEN · buried Chatham 1823, aged 66", "documented"],
-  ["Married", "PORTSEA ST MARY, 21 JUNE 1779", "documented"]
+  [
+   "ROBERT D'ARCY",
+   "First commissioned 1778 as Practitioner Engineer and Second Lieutenant, Corps of Engineers · Major 1802 · Lieutenant-Colonel 1 March 1805 · Colonel 1813 · Major-General by 1827 · died Chatham 13 May 1827, buried there with military honours on the 19th, aged 76",
+   "documented"
+  ],
+  [
+   "JEAN WARD",
+   "Baptised SOUTH LEITH, Midlothian, 19 July 1754, daughter of JOSEPH WARD and MARTHA GAIRDEN · buried Chatham 1823, aged 66",
+   "documented"
+  ],
+  [
+   "Married",
+   "PORTSEA ST MARY, 21 JUNE 1779",
+   "documented"
+  ]
  ],
  "children": [
-  {"who":"JOSEPH D'ARCY","b":"baptised Portsea St Mary, 19 March 1780","note":"Royal Artillery from about 1795. St Domingo 1793, Sicily, Walcheren, and five years in Persia in the service of Prince Abbas Mirza. Lieutenant-Colonel, K.L.S. Died at Home Mead, Lymington, 7 February 1848, leaving his property to his wife Catherine and five children.","chip":"documented","href":"/joseph-darcy"},
-  {"who":"GEORGE PITT D'ARCY","b":"born about 1783","note":"39th Foot. Married MISS LUDLAM OF GUERNSEY, announced September 1805 in a notice calling him “son of Lieut. Colonel D'Arcy”. Peninsular War 1808. In Ireland with the regiment 1820 and 1822. Married secondly Maria, and sailed for New South Wales on the convict ship England in April 1826. THE LINE THIS ARCHIVE DESCENDS FROM.","chip":"documented","href":"/george-pitt"},
-  {"who":"MARGARETT MARIA ISABELLA D'ARCY","b":"—","note":"Married JOHN MADDOCK JONES of Ruabon, Denbighshire, at Chatham in 1806, her brother JOSEPH signing as witness. His will is at Kew, PROB 11/1991/312, and has never been opened.","chip":"documented","href":"/chatham"},
-  {"who":"RICHARD DARCY","b":"born about 1784","note":"Aged 57 and living in Joseph's house at Priestlands in 1841. Of exactly the right generation, in exactly the right household — and no other record of him has been found anywhere in Hampshire. Portsea's transcript stops in 1782, so a baptism of 1784 could never have been found in it.","chip":"inferred","href":"/joseph-darcy"},
-  {"who":"CONSTANTINE D'ARCY","b":"—","note":"Buried at Chatham, and one of the three deaths the parish register confirmed for this family. What he was to Robert has never been established.","chip":"lore","href":"/chatham"}
+  {
+   "who": "JOSEPH D'ARCY",
+   "b": "baptised Portsea St Mary, 19 March 1780",
+   "note": "Royal Artillery from about 1795. St Domingo 1793, Sicily, Walcheren, and five years in Persia in the service of Prince Abbas Mirza. Lieutenant-Colonel, K.L.S. Died at Home Mead, Lymington, 7 February 1848, leaving his property to his wife Catherine and five children.",
+   "chip": "documented",
+   "href": "/joseph-darcy"
+  },
+  {
+   "who": "GEORGE PITT D'ARCY",
+   "b": "born about 1783",
+   "note": "39th Foot. Married MISS LUDLAM OF GUERNSEY, announced September 1805 in a notice calling him “son of Lieut. Colonel D'Arcy”. Peninsular War 1808. In Ireland with the regiment 1820 and 1822. Married secondly Maria, and sailed for New South Wales on the convict ship England in April 1826. THE LINE THIS ARCHIVE DESCENDS FROM.",
+   "chip": "documented",
+   "href": "/george-pitt"
+  },
+  {
+   "who": "MARGARETT MARIA ISABELLA D'ARCY",
+   "b": "—",
+   "note": "Married JOHN MADDOCK JONES of Pen-y-bryn, Ruabon, Major of the Royal Denbigh Militia, at Chatham in 1806, her brother JOSEPH signing as witness. She died at Le Havre in February 1843 and he at Ingouville near Havre the following month. Her death notice calls her “daughter of the late MAJOR-GENERAL D'ARCY, R.E.” — the only record anywhere that gives Robert a corps as well as a rank.",
+   "chip": "documented",
+   "href": "/margaret-jones"
+  },
+  {
+   "who": "RICHARD DARCY",
+   "b": "born about 1784",
+   "note": "Aged 57 and living in Joseph's house at Priestlands in 1841. Of exactly the right generation, in exactly the right household — and no other record of him has been found anywhere in Hampshire. Portsea's transcript stops in 1782, so a baptism of 1784 could never have been found in it.",
+   "chip": "inferred",
+   "href": "/joseph-darcy"
+  },
+  {
+   "who": "CONSTANTINE D'ARCY",
+   "b": "—",
+   "note": "Buried at Chatham, and one of the three deaths the parish register confirmed for this family. What he was to Robert has never been established.",
+   "chip": "lore",
+   "href": "/chatham"
+  }
  ],
  "portsea": "Only one of them was baptised at Portsea, and this archive spent months reading that as meaningful. It is not: FindMyPast's Hampshire collection covers Portsea St Mary continuously from 1770 to 1792 and returns Joseph and nobody else — so the others were christened wherever the Corps had posted him. A regiment moves; a parish register does not follow it.",
  "shape": "Two sons in the artillery and the infantry, a daughter married to a Welsh gentleman, a brother in the house at the end. It is the ordinary shape of a successful service family, and every part of it was invisible to this archive a fortnight ago.",
  "open": [
-  "Robert's own parentage. Seventeen newspapers announced his death and not one named a relative.",
+  "Robert's own parentage. Seventeen newspapers announced his death and not one named a relative — though two other notices, thirty-eight years apart, name two of his children as his.",
   "Whether Richard was his son, which needs a baptism from a parish this archive has not yet identified.",
   "Who Constantine was.",
   "And who ELIZABETH PITT was — living in Joseph's house in 1841, dying at Lymington in 1851, and sharing a surname that ran through four generations of this family."

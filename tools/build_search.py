@@ -48,10 +48,16 @@ for grp in ALIASES:
         ALIAS[w] |= set(grp)
 
 
-def fold(s):
-    s = unicodedata.normalize("NFD", s)
-    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    return s.replace("’", "'").replace("æ", "ae")
+# The fold comes from the kit so this archive and the search box agree about
+# what a letter is. The local one knew ’ and æ but not ø, so «født stuart»
+# could not be found by typing fodt. The ALIAS expansion below stays here —
+# only this archive knows that SANIGER and SINNEGAR are the same family.
+sys.path.insert(0, os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "site", "node_modules", "@daviddef", "archive-kit", "kit", "tools"))
+import searchkit  # noqa: E402
+
+fold = searchkit.fold
 
 
 def expand(text):
@@ -73,9 +79,10 @@ def add(kind, title, sub, href, extra=""):
         return
     seen.add(key)
     raw = " ".join(x for x in (title, sub, extra) if x)
-    low = fold(raw).lower()
-    rows.append({"k": kind, "t": title, "s": sub[:150], "h": href,
-                 "q": (low + " " + expand(raw)).strip()})
+    r = searchkit.row(kind, title, sub, href, extra)
+    r["s"] = r["s"][:150]          # this archive's subtitles run long
+    r["q"] = (r["q"] + " " + expand(raw)).strip()
+    rows.append(r)
 
 
 def L(f):

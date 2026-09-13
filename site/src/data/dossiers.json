@@ -363,12 +363,17 @@
 "says": "spinster · married John Maddock Jones Esq. of Penybryn, Ruabon, Denbighshire · Chatham, 23 October 1806, by licence · witness Joseph D'Arcy",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/"
+},
+{
+"says": "“At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.” · the first record to give Robert D'Arcy a corps as well as a rank, and to call anyone his child",
+"source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "margarett-maria-isabella-d-arcy",
-"n": 1
+"n": 2
 },
 "maria-d-arcy-nee-white": {
 "name": "Maria D'Arcy, née White",
@@ -1105,6 +1110,31 @@
 "slug": "david-oliver",
 "n": 1
 },
+"john-maddock-jones": {
+"name": "John Maddock Jones",
+"surname": "JONES",
+"rows": [
+{
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/"
+},
+{
+"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
+"source": "record · TNA PROB 11/1991/312",
+"link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON” · Argus, 1 April 1843 — he died within weeks of his wife, both in Normandy",
+"source": "record · Argus, or Broad-sheet of the Empire, 1 April 1843, p.15",
+"link": "https://www.findmypast.com.au/search-newspapers"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-maddock-jones",
+"n": 3
+},
 "lyddya-sinegar": {
 "name": "Lyddya Sinegar",
 "surname": "SINEGAR",
@@ -1184,26 +1214,6 @@
 "treeLink": "",
 "slug": "ida-kathleen-darcy-nee-atkinson",
 "n": 1
-},
-"john-maddock-jones": {
-"name": "John Maddock Jones",
-"surname": "JONES",
-"rows": [
-{
-"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/"
-},
-{
-"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
-"source": "record · TNA PROB 11/1991/312",
-"link": "https://discovery.nationalarchives.gov.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "john-maddock-jones",
-"n": 2
 },
 "r-kent": {
 "name": "R. Kent",
@@ -2205,6 +2215,6 @@
 "named": 180,
 "withTreePage": 43,
 "ownPage": 137,
-"mentions": 299
+"mentions": 302
 }
 }

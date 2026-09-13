@@ -1,0 +1,26 @@
+{
+ "found": "14 September 2026",
+ "lede": "Robert D'Arcy's parentage of anybody has rested, until this fortnight, on a family tree. Two contemporary newspaper notices now name him as a father. The second of them is the better one, because it gives his corps.",
+ "notice": {
+  "paper": "Morning Herald (London), Monday 13 February 1843, page 8",
+  "text": "At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.",
+  "why": "Major-General. Royal Engineers. Late — he had died in 1827. There is one man that describes, and this archive has his commission of 1778, his marriage of 1779, five gazetted promotions, seventeen death notices and a funeral at Chatham with military honours."
+ },
+ "pair": [
+  ["23 September 1805", "Salisbury and Winchester Journal", "“Captain GEORGE D'ARCY … SON [of] LIEUT. COLONEL D'ARCY [to] Miss Ludlam of Guernsey”", "Rank only. Robert had been gazetted Lieutenant-Colonel six months earlier.", "/george-pitt"],
+  ["13 February 1843", "Morning Herald", "“MARGARET, wife of Major Jones, Denbigh Militia, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.”", "Rank AND corps AND the fact of his death. Nothing else in England fits it.", "/margaret-jones"]
+ ],
+ "husband": {
+  "head": "Major John Maddock Jones",
+  "text": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON.”",
+  "paper": "Argus, or Broad-sheet of the Empire, 1 April 1843, page 15; also the Caernarvon & Denbigh Herald of the same day",
+  "note": "He married Margarett Maria Isabella D'Arcy at Chatham St Mary in 1806, her brother JOSEPH signing as witness. His will was proved on 24 January 1844 and is at Kew as PROB 11/1991/312. It has never been opened."
+ },
+ "france": "They died within weeks of each other at Le Havre in the early months of 1843 — she in February, he on the 21st of the following month, at Ingouville on the hill above the port. Why a Denbighshire militia major and his wife were living in Normandy is not something this archive can yet answer. Half-pay officers went to France in the 1830s and 1840s because it was cheap, and a great many of them died there.",
+ "matters": [
+  ["It is the first record to give Robert D'Arcy a corps as well as a rank.", "Everything else that names him as a father says only “Lieut. Colonel D'Arcy”. This says Major-General, Royal Engineers, late — and that is a description with exactly one referent."],
+  ["It confirms the Chatham marriage from the far end of a life.", "The archive has held the 1806 marriage of Margarett Maria Isabella D'Arcy to John Maddock Jones since it read the Chatham register. Thirty-seven years later a London paper describes the same couple in the same terms, in an obituary neither of them wrote."],
+  ["And it makes three of Robert's children documented as his.", "Joseph by his baptism at Portsea in 1780; George Pitt by the marriage notice of 1805; Margaret by this. Richard remains inferred and Constantine unplaced."]
+ ],
+ "careful": "It still says nothing about where Robert came from. A man can be securely somebody's father and remain nobody's son, and after a fortnight of records that is precisely the position."
+}

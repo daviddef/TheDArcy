@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "19 passes · 210 changes",
+ "eyebrow": "19 passes · 214 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -17,9 +17,13 @@
     "Added nine women to /the-women who were not in this archive a fortnight ago.",
     "Gave /coverage a row for the British Newspaper Archive, which has been the most productive source of the whole fortnight.",
     "Noticed the nationality audit had jumped nineteen records in one direction for no reason, and found the cause: I had been hand-writing the classifier on every pass and it had drifted.",
-    "Wrote tools/audit.py, wired it into the build, and filed the drift as an error. Records 299 · Australian 117 · British 182 — 61% to 39%."
+    "Wrote tools/audit.py, wired it into the build, and filed the drift as an error. Records 299 · Australian 117 · British 182 — 61% to 39%.",
+    "Found the best record of the fortnight: the Morning Herald of 13 February 1843 — “At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.”",
+    "That is the first record anywhere to give Robert D'Arcy a CORPS as well as a rank, and to call anyone his child. It also confirms the Chatham marriage of 1806 from thirty-seven years later.",
+    "Found her husband too: Major Maddock Jones of Pen-y-bryn, Ruabon, late of the Royal Denbigh Militia, died at Ingouville near Havre in March 1843, within weeks of his wife.",
+    "Built /margaret-jones and upgraded her on /robert-family."
    ],
-   "found": "The Pitt name has a woman attached to it for the first time, and she stayed in the town after the family's head died."
+   "found": "Robert D'Arcy is now documented as the father of three of his five children — and still, after a fortnight, nobody's son."
   },
   {
    "when": "13 September 2026 · FindMyPast",
