@@ -9,6 +9,70 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — Kentish Gazette, 14 May 1805",
+   "what": "Any contemporary notice of Constantine D'Arcy's death at Chatham",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "“After a few weeks illness, THE SON OF COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES; his remains were interred with military honours.” It documents the relationship a printed roll of 1898 had only asserted, and it gives Robert D'Arcy a POST — the first record to do so. The Kent Herald used the same phrase of the father in 1827.",
+   "href": "/constantine"
+  },
+  {
+   "src": "FindMyPast — British Army Officer Promotions 1800-1815",
+   "what": "Constantine D'Arcy's commissions, cited to the Gazette",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Gentleman Cadet to Second Lieutenant, Corps of Royal Engineers, 1 February 1804 (Gazette 15707 p.690, vice Harding); Second to First Lieutenant, 1 March 1805 (Gazette 15789 p.351, vice Dyson). The second is the SAME PAGE as his father's promotion to Lieutenant-Colonel, which this archive published in July without noticing the son nine lines below.",
+   "href": "/constantine"
+  },
+  {
+   "src": "FindMyPast — Caribbean Birth & Baptism Index 1590-1928",
+   "what": "All D'Arcy christenings in the Caribbean",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Two, both St Michael, Barbados, both to Robert and Jane: CONSTANTINE 18 February 1786 and JANE 17 March 1788. The first was already on /hornby; the second had never been counted as a child of this family. Barbados Births & Baptisms 1637-1891, a larger and separate index of the same island, holds neither.",
+   "href": "/constantine"
+  },
+  {
+   "src": "FindMyPast — Gloucestershire Wills & Administrations 1801-1858",
+   "what": "A will for John Saniger of Berkeley, or any Saniger of the direct line",
+   "when": "14 Sep 2026",
+   "outcome": "empty",
+   "got": "Two Saniger-variant entries in 14,195: Abraham Synegar, cardmaker of Dursley, administration 1813/8; John Sanigar, carpenter of Oldbury-on-Severn, will 1822/194. NEITHER IS BERKELEY. Searched under wildcards SAN*, SIN*, SYN*, SWA*, so no spelling can hide inside the result. Control: SMITH returns 277. John Saniger left no proved will in the diocesan court.",
+   "href": "/hannah-baptism"
+  },
+  {
+   "src": "FindMyPast — Ireland Diocesan and Prerogative Marriage Licence Bonds 1623-1866",
+   "what": "A marriage licence bond for George Pitt D'Arcy and Maria White, Wicklow about 1819",
+   "when": "14 Sep 2026",
+   "outcome": "empty",
+   "got": "No George D'Arcy in the set at all, and none of its six Maria Whites married a D'Arcy. More to the point, the DUBLIN DIOCESE ENTRIES EFFECTIVELY END IN 1741 — sorted by year the latest are one 1813, one 1752, then a wall of 1741. The catalogue's 1866 is the whole set's range, not the diocese's. Betham's abstracts end 1810. Neither collection can hold an 1819 marriage.",
+   "href": "/george-pitt"
+  },
+  {
+   "src": "FindMyPast — record-set catalogue",
+   "what": "Whether FindMyPast carries Prerogative Court of Canterbury wills after 1800, or any consular registers",
+   "when": "14 Sep 2026",
+   "outcome": "empty",
+   "got": "PCC holdings are a wills index 1750-1800 and an administrations index 1660-1700, and nothing later. Searching the catalogue for “consular” and for “abroad” returns no record sets at all. Three wills and two Le Havre deaths this archive wants are therefore outside it — which is worth knowing before spending a trial on them rather than after.",
+   "href": "/errands"
+  },
+  {
+   "src": "FindMyPast — England & Wales marriages and newspaper notices, Lymington",
+   "what": "What became of Joseph D'Arcy's five children",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "FRANK HYDE D'ARCY — the Frank aged two at Priestlands in 1841 — married ANNA MARIA SIMPSON at Lymington on 29 September 1863, daughter of R. Salisbury Simpson, her residence given as Bengal; announced in Thacker's Overland News for India and the Colonies, 3 October 1863. Fifty-two D'Arcy records at Lymington run from 1848 to an electoral roll of 2021.",
+   "href": "/joseph-darcy"
+  },
+  {
+   "src": "FindMyPast — Index to Death Duty Registers 1796-1903",
+   "what": "Anything further on Joseph D'Arcy's estate",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "JOSEPH D'ARCY of Lymington, Hampshire, grant year 1848, court “PCC and Country Courts”, TNA IR 27/284. The register behind that index states what the estate was worth and names legatees and executors — a second Kew document, and often a better one than the will.",
+   "href": "/joseph-darcy"
+  },
+  {
    "src": "British Newspaper Archive — Morning Herald, 13 February 1843",
    "what": "Whether any record calls Robert D'Arcy a father and says which D'Arcy he was",
    "when": "14 Sep 2026",

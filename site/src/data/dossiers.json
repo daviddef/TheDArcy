@@ -1340,6 +1340,21 @@
 "slug": "martha-golding",
 "n": 2
 },
+"john-sanigar": {
+"name": "John Sanigar",
+"surname": "SANIGAR",
+"rows": [
+{
+"says": "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury · Consistory Court of Gloucester 1822/194",
+"source": "record · Gloucestershire Wills & Administrations 1801-1858",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-sanigar",
+"n": 1
+},
 "thomas-sinnegar": {
 "name": "Thomas Sinnegar",
 "surname": "SINNEGAR",
@@ -2015,6 +2030,21 @@
 "slug": "samuel-sanigear",
 "n": 1
 },
+"anna-maria-simpson": {
+"name": "Anna Maria Simpson",
+"surname": "SIMPSON",
+"rows": [
+{
+"says": "married FRANK HYDE D'ARCY at Lymington, 29 September 1863 — residence given as Bengal",
+"source": "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "anna-maria-simpson",
+"n": 1
+},
 "john-sinneger": {
 "name": "John Sinneger",
 "surname": "SINNEGER",
@@ -2088,6 +2118,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "elias-de-swonhongre",
+"n": 1
+},
+"abraham-synegar": {
+"name": "Abraham Synegar",
+"surname": "SYNEGAR",
+"rows": [
+{
+"says": "administration · 1813 · CARDMAKER, of Dursley · Consistory Court of Gloucester 1813/8",
+"source": "record · Gloucestershire Wills & Administrations 1801-1858",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "abraham-synegar",
 "n": 1
 },
 "george-thomson": {
@@ -2212,9 +2257,9 @@
 }
 },
 "counts": {
-"named": 180,
-"withTreePage": 43,
-"ownPage": 137,
-"mentions": 302
+"named": 185,
+"withTreePage": 45,
+"ownPage": 140,
+"mentions": 313
 }
 }

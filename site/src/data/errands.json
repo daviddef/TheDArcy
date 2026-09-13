@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "17 jobs a person can do and this archive cannot",
+ "eyebrow": "35 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -16,13 +16,13 @@
   },
   {
    "n": 2,
-   "what": "The will of Lieutenant-Colonel Joseph D'Arcy, executed February 1844, proved 1848",
-   "where": "The National Archives, Kew — Prerogative Court of Canterbury",
+   "what": "The will AND the death duty register of Lieutenant-Colonel Joseph D'Arcy, proved 1848",
+   "where": "The National Archives, Kew — Prerogative Court of Canterbury (PROB 11), and Death Duty Register IR 26, indexed at IR 27/284",
    "cost": "about £3.50 as a PDF",
-   "settles": "Joseph D'Arcy was baptised at Portsea in March 1780, son of Robert and Jean, and died at Homestead, Lymington on 7 February 1848. A newspaper of 3 April 1848 reports that he made his will in February 1844 and begins to summarise it, and the digitised text breaks off. The will names his legatees — which means his children, and possibly his brothers and sisters. It is the closest thing to a family document this line has.",
+   "settles": "Joseph D'Arcy was baptised at Portsea in March 1780, son of Robert and Jean, and died at Homestead, Lymington on 7 February 1848. A newspaper of 3 April 1848 reports that he made his will in February 1844 and begins to summarise it, and the digitised text breaks off. The will names his legatees — which means his children, and possibly his brothers and sisters. It is the closest thing to a family document this line has. AND THERE IS NOW A SECOND DOCUMENT. The Index to Death Duty Registers 1796-1903 has him: JOSEPH D'ARCY of Lymington, Hampshire, grant year 1848, court “PCC and Country Courts”, archive reference IR 27/284. The register behind that index states what the estate was worth and names the legatees and executors — frequently in more detail than the will itself.",
    "why": "THE NEAREST THING TO A FAMILY DOCUMENT IN THE ENGLISH LINE",
    "href": "/joseph-darcy",
-   "file": "identified 13 September 2026, British Newspaper Archive"
+   "file": "index reference found on FindMyPast, 14 September 2026; neither document read"
   },
   {
    "n": 3,
@@ -59,20 +59,20 @@
    "what": "Surviving Church of Ireland registers for County Wicklow, and Betham's marriage licence bond abstracts",
    "where": "Representative Church Body Library, Dublin; and the National Archives of Ireland",
    "cost": "an enquiry",
-   "settles": "The marriage of George Pitt D'Arcy and Maria White, about 1819. Every Wicklow marriage index reachable online is Roman Catholic, and he was an Anglican officer — the Church of Ireland registers for the county went in the 1922 Four Courts fire. The RCB Library keeps what survived and knows which parishes kept their own books. Betham's abstracts of marriage licence bonds survive even though the bonds burned.",
+   "settles": "The marriage of George Pitt D'Arcy and Maria White, about 1819. Every Wicklow marriage index reachable online is Roman Catholic, and he was an Anglican officer — the Church of Ireland registers for the county went in the 1922 Four Courts fire. The RCB Library keeps what survived and knows which parishes kept their own books. Betham's abstracts of marriage licence bonds survive even though the bonds burned. THE LICENCE-BOND HALF IS NOW ANSWERED AND IT IS NEGATIVE. FindMyPast's Ireland Diocesan and Prerogative Marriage Licence Bonds Indexes 1623-1866 holds no George D'Arcy at all, and its Dublin diocese entries effectively stop in 1741 — the latest in the whole set are one 1813, one 1752, and then a wall of 1741. Betham's Prerogative Marriage Licences Abstracts ends at 1810. Neither can hold an 1819 marriage. What remains is the RCB Library's question about surviving parish custody.",
    "why": "",
    "href": "/george-pitt",
-   "file": "coverage established 13 September 2026"
+   "file": "licence bonds searched and ruled out by date, 14 September 2026"
   },
   {
    "n": 7,
-   "what": "Gloucestershire Wills and Inventories, 1541-1858 — five John Saniger entries",
-   "where": "Ancestry (subscription), or Gloucestershire Archives",
-   "cost": "a subscription month, or an enquiry",
-   "settles": "A will names children. Five John Sanigers appear in this collection and this archive has never searched Gloucestershire probate for the direct line at all — only for the Thornbury and Chipping Sodbury outliers.",
-   "why": "",
+   "what": "Gloucestershire wills for the Saniger line — ANSWERED, and the answer is that there are none",
+   "where": "Searched on FindMyPast: Gloucestershire Wills & Administrations 1801-1858 (Consistory Court of Gloucester, 14,195 entries)",
+   "cost": "done",
+   "settles": "Read under wildcards SAN*, SIN*, SYN* and SWA*, which return every form this surname takes. The whole index holds two Saniger-variant entries: ABRAHAM SYNEGAR, cardmaker of Dursley, administration 1813/8; and JOHN SANIGAR, carpenter of Oldbury-on-Severn in Thornbury, will 1822/194. Neither is Berkeley. John Saniger of Berkeley left no proved will and no administration in the diocesan court, so this route to naming his children is closed rather than merely unopened. Control: SMITH returns 277.",
+   "why": "CLOSED 14 SEPTEMBER 2026",
    "href": "/hannah-baptism",
-   "file": "seen but masked on Ancestry, 13 September 2026"
+   "file": "searched and empty, coverage established"
   },
   {
    "n": 8,
@@ -149,7 +149,7 @@
    "what": "PROB 11/1991/312 — the will of John Maddock Jones of Ruabon",
    "where": "The National Archives, Kew — digitised",
    "cost": "about £3.50",
-   "settles": "He married Margarett Maria Isabella D'Arcy, Robert and Jean's daughter, at Chatham in 1806 by licence, witnessed by her brother Joseph. His will of 1844 would name his widow and children — an entire Welsh branch of this family that the archive has never contained a word about.",
+   "settles": "He married Margarett Maria Isabella D'Arcy, Robert and Jean's daughter, at Chatham in 1806 by licence, witnessed by her brother Joseph. His will of 1844 would name his widow and children — an entire Welsh branch of this family that the archive has never contained a word about. Also not on FindMyPast, for the same reason as errand 20: its Prerogative Court of Canterbury wills index stops at 1800.",
    "why": "A WHOLE BRANCH, FOR THREE POUNDS",
    "href": "/chatham",
    "file": "found 13 September 2026 via TNA Discovery"
@@ -199,10 +199,10 @@
    "what": "PROB 11/1728/64 — the will of Major-General Robert D'Arcy",
    "where": "The National Archives, Kew",
    "cost": "about £3.50, digitised, download today",
-   "settles": "His parentage is the largest open question on this site and no record of his life names a father. A will names family. Found 9 September 2026 and still unordered.",
+   "settles": "His parentage is the largest open question on this site and no record of his life names a father. A will names family. Found 9 September 2026 and still unordered. CHECKED ON FINDMYPAST WHILE THE TRIAL WAS OPEN AND IT IS NOT THERE. FindMyPast's only Prerogative Court of Canterbury collections are a wills index for 1750-1800 and an administrations index for 1660-1700. Nothing in its catalogue carries PCC wills proved after 1800, so this will, Joseph's of 1848 and John Maddock Jones's of 1844 are all beyond it. £3.50 at Kew is the price and there is no free substitute.",
    "why": "THE PRIORITY",
    "href": "/hornby",
-   "file": "requests/tna-prob11-darcy-will.md"
+   "file": "FindMyPast coverage checked and excluded, 14 September 2026"
   },
   {
    "n": 21,
@@ -323,6 +323,36 @@
    "why": "",
    "href": "/saniger-place",
    "file": "identified 13 September 2026"
+  },
+  {
+   "n": 33,
+   "what": "The parish register of ST MICHAEL, BARBADOS, 1780s — the original, not the index",
+   "where": "Barbados Department of Archives, Black Rock, St Michael; the register is filmed by FamilySearch as film 1157925",
+   "cost": "an enquiry, or a FamilySearch affiliate library",
+   "settles": "The index gives two christenings to Robert D'Arcy and Jane — Constantine on 18 February 1786 and Jane on 17 March 1788 — and nothing else. The register page itself would give the father's rank and corps, the abode, and any further children of the same parents. It is the only direct evidence this archive has that Robert D'Arcy was ever in the West Indies, and it would turn a strong inference into a documented posting.",
+   "why": "THE ONLY RECORD OF ROBERT D'ARCY BETWEEN 1778 AND 1802",
+   "href": "/constantine",
+   "file": "index found 14 September 2026; original unseen"
+  },
+  {
+   "n": 34,
+   "what": "Royal Engineers station returns for Barbados and the Leeward Islands, 1783–1790",
+   "where": "The National Archives, Kew — WO 55 (Ordnance Office, Engineer Papers) and the Royal Engineers Museum, Chatham",
+   "cost": "a visit, or an enquiry",
+   "settles": "When Robert D'Arcy went to Barbados, how long he stayed and in what capacity. Twenty-four years of his career are blank between his commission of 1778 and his majority of 1802, and two christenings are the only things known to fall inside them.",
+   "why": "",
+   "href": "/the-corps",
+   "file": "opened as a question 14 September 2026"
+  },
+  {
+   "n": 35,
+   "what": "British consular death registrations at Le Havre, February and March 1843",
+   "where": "The National Archives, Kew — RG 35 (Miscellaneous Foreign Returns) and RG 32-36 generally; indexed on Ancestry, not on FindMyPast",
+   "cost": "a subscription or a visit",
+   "settles": "Margaret Jones née D'Arcy died at Havre in February 1843 and her husband Major John Maddock Jones at Ingouville in March. A consular death registration gives an age and frequently a parentage. It is the nearest thing to a birth date for a daughter of Robert D'Arcy.",
+   "why": "AN AGE FOR ONE OF ROBERT'S CHILDREN",
+   "href": "/margaret-jones",
+   "file": "FindMyPast checked 14 September 2026 — it holds no consular or overseas registers at all"
   }
  ],
  "ydna": {

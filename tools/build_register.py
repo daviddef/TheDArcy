@@ -639,6 +639,33 @@ rec("Constantine D'Arcy", "entry 335 · “Died at Chatham, 6 5 1805” · chris
 rec("Francis D'Arcey", "alias Francis D'Arcy · born Sovell, Galway · served 39th and 45th Foot — a different man",
     "record · TNA WO 97/1144/236", "https://discovery.nationalarchives.gov.uk/")
 
+# --- FindMyPast, 14 September 2026 ------------------------------------------
+rec("Constantine D'Arcy", "burial · 9 May 1805, Chatham St Mary the Virgin · “Lt in the royal engineers” · no age",
+    "record · Kent Burials, Medway Archives P85/1/79",
+    "https://cityark.medway.gov.uk/wwwopacx/wwwopac.ashx?command=getcontent&server=files&value=P085-01-79(1).pdf")
+rec("Constantine D'Arcy", "commission · Gentleman Cadet to Second Lieutenant, Corps of Royal Engineers, 1 Feb 1804, vice Harding",
+    "record · London Gazette 15707 p.690, Ordnance-Office 4 June 1804",
+    "https://www.thegazette.co.uk/London/issue/15707/page/690")
+rec("Constantine D'Arcy", "commission · Second Lieutenant to First Lieutenant, Royal Engineers, 1 Mar 1805, vice Dyson — the same page as his father's lieutenant-colonelcy",
+    "record · London Gazette 15789 p.351, Ordnance-Office 18 March 1805",
+    "https://www.thegazette.co.uk/London/issue/15789/page/351")
+rec("Constantine D'Arcy", "death notice · “the son of Col. D'Arcy, chief engineer of Chatham lines; his remains were interred with military honours”",
+    "record · Kentish Gazette, 14 May 1805, p.4", "https://www.findmypast.com.au/")
+rec("Robert D'Arcy", "described as “Col. D'Arcy, CHIEF ENGINEER OF CHATHAM LINES” — the only record giving him a post as well as a rank",
+    "record · Kentish Gazette, 14 May 1805, p.4", "https://www.findmypast.com.au/")
+rec("Jane D'Arcy", "christening · 17 March 1788, St Michael, Barbados · father Robt. D'Arcy, mother Jane — a sixth child of Robert and Jean",
+    "record · Caribbean Birth & Baptism Index 1590-1928, film 1157925, batch C51395-3", "https://www.findmypast.com.au/")
+rec("Frank Hyde D'Arcy", "marriage · 29 September 1863, Lymington, to ANNA MARIA SIMPSON, daughter of R. Salisbury Simpson, of Bengal",
+    "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25", "https://www.findmypast.com.au/")
+rec("Anna Maria Simpson", "married FRANK HYDE D'ARCY at Lymington, 29 September 1863 — residence given as Bengal",
+    "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25", "https://www.findmypast.com.au/")
+rec("Joseph D'Arcy", "death duty · grant year 1848 · court “PCC and Country Courts” · of Lymington, Hampshire",
+    "record · Index to Death Duty Registers 1796-1903, TNA IR 27/284", "https://discovery.nationalarchives.gov.uk/")
+rec("John Sanigar", "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury · Consistory Court of Gloucester 1822/194",
+    "record · Gloucestershire Wills & Administrations 1801-1858", "https://www.findmypast.com.au/")
+rec("Abraham Synegar", "administration · 1813 · CARDMAKER, of Dursley · Consistory Court of Gloucester 1813/8",
+    "record · Gloucestershire Wills & Administrations 1801-1858", "https://www.findmypast.com.au/")
+
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [
     ("George Pitt D'Arcy", "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”", "59769271"),

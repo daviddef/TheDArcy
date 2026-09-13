@@ -1,6 +1,6 @@
 {
  "note": "What each database actually holds for the parishes this archive needs. Checked before searching, every time — because a search of a source that does not cover your parish returns nothing, and nothing looks exactly like a negative result.",
- "checked": "13 September 2026",
+ "checked": "14 September 2026",
  "rows": [
   {
    "db": "FreeREG",
@@ -118,6 +118,69 @@
    "verdict": "good",
    "note": "Control-tested at 21,248 Wakefield marriages for 1838–1842 before any absence was reported from it. This is where Miriam's birth registration was found.",
    "href": "/drivers-fields"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "Prerogative Court of Canterbury wills, England",
+   "holds": "a wills index 1750–1800 and an administrations index 1660–1700",
+   "span": "1660–1800",
+   "verdict": "unusable",
+   "note": "NOTHING AFTER 1800. Three wills this archive needs — Robert D'Arcy's of 1827, Joseph D'Arcy's of 1848 and John Maddock Jones's of 1844 — are all beyond it. A paid trial does not help; the records are not there to unlock.",
+   "href": "/errands"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "Gloucestershire probate, Consistory Court of Gloucester",
+   "holds": "14,195 entries",
+   "span": "1801–1858",
+   "verdict": "good",
+   "note": "Covers Berkeley and the whole Vale in the right years. Searched under wildcards for every form of the Saniger name and returns two entries, neither of them at Berkeley. A real negative, control-tested at 277 Smiths.",
+   "href": "/hannah-baptism"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "Ireland Diocesan and Prerogative Marriage Licence Bonds, DUBLIN diocese",
+   "holds": "218,433 records across all Ireland",
+   "span": "1623–1866 nominally; DUBLIN effectively ends 1741",
+   "verdict": "unusable",
+   "note": "Sorted by year, the latest Dublin-diocese entries in the entire set are a single 1813, a single 1752, and then a wall of 1741. The catalogue date range is the set's range, not the diocese's. An 1819 Wicklow marriage cannot be in it.",
+   "href": "/george-pitt"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "Betham Prerogative Marriage Licences Abstracts, Ireland",
+   "holds": "21,639 records",
+   "span": "1629–1810",
+   "verdict": "unusable",
+   "note": "Ends nine years before the marriage this archive wants. Twenty-two Darcy entries, all necessarily too early.",
+   "href": "/george-pitt"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "British consular and overseas registers (deaths abroad)",
+   "holds": "nothing",
+   "span": "—",
+   "verdict": "unusable",
+   "note": "Searched the whole record-set catalogue for “consular” and for “abroad” and both return no record sets at all. The Le Havre deaths of 1843 are not reachable here; they are on Ancestry and at Kew in RG 35.",
+   "href": "/margaret-jones"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "Caribbean Birth & Baptism Index — St Michael, Barbados",
+   "holds": "451,104 records across the Caribbean",
+   "span": "1590–1928",
+   "verdict": "good",
+   "note": "Holds the two christenings of Robert D'Arcy's children at St Michael in 1786 and 1788. Barbados Births & Baptisms 1637-1891, a separate and larger set, holds neither — two indexes of the same island disagreeing about what is in them, which is its own warning.",
+   "href": "/constantine"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "British Army, Royal Artillery Officers 1716-1899",
+   "holds": "indexed",
+   "span": "1716–1899",
+   "verdict": "partial",
+   "note": "The index is searchable on a paid trial and the transcripts are not — “Subscribe to unlock exclusive records”. Joseph D'Arcy's whole artillery career and a Constantine D'Arcy entry of 1777-79 are visible as dates and unreadable as records.",
+   "href": "/the-corps"
   }
  ]
 }

@@ -1,9 +1,68 @@
 {
  "title": "What changed",
- "eyebrow": "19 passes · 214 changes",
+ "eyebrow": "20 passes · 225 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "14 September 2026",
+   "title": "The last two days of the subscription, spent on wills, Barbados and a Canterbury newspaper",
+   "did": [
+    "Established what FindMyPast can and cannot do for wills, before spending the trial on it. Its only Prerogative Court of Canterbury holdings are a wills index for 1750-1800 and an administrations index for 1660-1700 — NOTHING AFTER 1800. Robert D'Arcy's will of 1827, Joseph D'Arcy's of 1848 and John Maddock Jones's of 1844 are all beyond it. £3.50 each at Kew, and no free substitute.",
+    "Read the Gloucestershire probate index 1801-1858 for the Saniger line under wildcards rather than spellings — SAN*, SIN*, SYN*, SWA*. Two entries in 14,195: Abraham Synegar, cardmaker of Dursley (1813), and John Sanigar, carpenter of Oldbury-on-Severn (1822). NO SANIGER OF BERKELEY AT ALL. Control: 277 Smiths. Errand 7 closed.",
+    "Closed the Irish marriage-licence route for George Pitt D'Arcy and Maria White. The Diocesan and Prerogative Marriage Licence Bonds index holds 218,433 records, but sorted by year its DUBLIN entries effectively stop in 1741; Betham's abstracts end in 1810. Neither can hold an 1819 marriage. Six Maria Whites in the set, none marrying a D'Arcy; no George D'Arcy at all.",
+    "Searched the FindMyPast catalogue for consular and overseas registers and found NONE — the Le Havre deaths of 1843 are not reachable there. Filed as errand 35.",
+    "Chased Constantine D'Arcy, and found that this archive had been publishing half his story on one page while calling him unplaced on three others. FILED AS AN ERROR.",
+    "Found the record that settles him: the KENTISH GAZETTE of 14 May 1805 — “After a few weeks illness, the son of COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES; his remains were interred with military honours.”",
+    "Which also gives Robert D'Arcy a post for the first time. Every other record of him gives a rank.",
+    "Cited both of Constantine's commissions to the London Gazette by issue and page, and found them printed in the Kentish Weekly Post of 12 June 1804 and in three papers of 29 March and 1 April 1805 — the last of which carries his father's lieutenant-colonelcy nine lines above his own first lieutenancy.",
+    "Counted Robert and Jean's children properly. There are six, not five: JANE D'ARCY, christened at St Michael, Barbados on 17 March 1788, has been in the register all along and on no family page.",
+    "Traced Joseph D'Arcy's line forward out of Priestlands. His son FRANK HYDE D'ARCY married ANNA MARIA SIMPSON at Lymington on 29 September 1863, announced in Thacker's Overland News for India and the Colonies. Fifty-two D'Arcy records at Lymington, running to an electoral roll of 2021 — a living English branch.",
+    "Found a second Kew document for Joseph's estate: the Index to Death Duty Registers gives him at IR 27/284, which leads to a register naming legatees and executors."
+   ],
+   "found": [
+    [
+     "New page",
+     "/constantine — Barbados 1786 to Chatham 1805, and the notice that names his father"
+    ],
+    [
+     "Corrected",
+     "/robert-family — Constantine documented as a son, Jane added as a sixth child, the open questions rewritten"
+    ],
+    [
+     "Corrected",
+     "/chatham — the 1805 burial identified"
+    ],
+    [
+     "Corrected",
+     "/open-questions — Constantine moved from half answered to answered"
+    ],
+    [
+     "Added",
+     "/the-corps — “chief engineer of Chatham lines”, and Barbados set into the 24-year blank"
+    ],
+    [
+     "Added",
+     "/joseph-darcy — the branch that stayed in England, and the death duty register"
+    ],
+    [
+     "Added",
+     "/hannah-baptism — Gloucestershire probate, searched and empty"
+    ],
+    [
+     "Added",
+     "/george-pitt — why the licence bonds cannot help"
+    ],
+    [
+     "Added",
+     "/coverage — seven new rows, all of them FindMyPast"
+    ],
+    [
+     "Filed",
+     "/what-we-got-wrong — error 25, the fact held in one room and not read in another"
+    ]
+   ]
+  },
   {
    "when": "14 September 2026",
    "title": "Priestlands pulled apart, and the family assembled",

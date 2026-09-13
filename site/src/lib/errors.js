@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "14 September 2026",
+    what: "Spent a fortnight calling Constantine D'Arcy unplaced while this archive was publishing his christening, his parents' names and both his commissions on another page.",
+    truth:
+      "Constantine Darcy was christened at St Michael, Barbados on 18 February 1786, father Robert Darcy, mother Jane. That is on /hornby, with the film and batch number, and it has been since the Royal Engineers work of this summer. His sister Jane, christened in the same parish in 1788, is on the same source and the same page. Meanwhile /robert-family listed “Who Constantine was” as an open question, /chatham said his relationship to Robert “has never been established”, and /the-corps displayed a twenty-four-year blank in Robert's career without noticing that two of Robert's children were christened inside it.",
+    why: "Pages were written one at a time, each carefully sourced, and nobody ever read them against each other. The archive grew faster than its own index. A search tool that would have caught this in one query has been on the site for weeks and I did not use it on my own material.",
+    lesson:
+      "Search your own archive before you search anybody else's. A fact you have already published and not cross-read is worse than a fact you never had, because it makes you confident about the wrong things.",
+    href: "/constantine",
+  },
+  {
+    when: "14 September 2026",
     what: "Published a nationality audit eleven times over three weeks without ever writing the classifier down.",
     truth: "The figure was a regular expression I retyped from memory on each pass, and it drifted. Sources moved between the Australian and British columns for reasons that had nothing to do with new records, and the percentages I reported to the reader were therefore approximations of varying quality.",
     why: "It was quick to hand-write and it felt like arithmetic rather than method. It is method: the audit is an argument this archive makes about itself, and an argument whose measuring instrument changes shape between readings is not one.",

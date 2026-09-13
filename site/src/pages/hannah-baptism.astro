@@ -55,6 +55,20 @@ import d from "../data/hannah-baptism.json";
     </Note>
   </Blk>
 
+  <Blk label="Gloucestershire probate, 1801–1858" title={d.probate.head}>
+    <p class="lede">{d.probate.body}</p>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>{d.probate.rows.map(([y, w]) => (
+          <tr><td class="m">{y}</td><td>{w}</td></tr>))}</tbody>
+      </table>
+    </div>
+    <Note style="margin-top:1.2rem">
+      {d.probate.means} <span class="chip doc">{d.probate.chip}</span>
+    </Note>
+    <p class="small" style="margin-top:1rem">{d.probate.how}</p>
+  </Blk>
+
   <section class="blk" style="border-bottom:0">
     <h2>Two notes on method</h2>
     <ol class="dek">

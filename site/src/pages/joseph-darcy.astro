@@ -133,6 +133,29 @@ import d from "../data/joseph-darcy.json";
     <p class="small" style="margin-top:1rem">{d.after.note}</p>
   </section>
 
+  <section class="blk">
+    <div class="lab">1850–1866, and after</div>
+    <h2 style="margin-top:.4rem">{d.forward.head}</h2>
+    <p class="lede">{d.forward.body}</p>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>{d.forward.rows.map(([when, what]) => (
+          <tr><td class="m" style="white-space:nowrap">{when}</td><td class="small">{what}</td></tr>))}
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:1.2rem">{d.forward.means}
+      {" "}<span class="chip doc">{d.forward.chip}</span>
+      {" "}<a href={u("/new-generations")}>The new generations →</a></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The National Archives IR 27/284</div>
+    <h2 style="margin-top:.4rem">{d.duty.head}</h2>
+    <p>{d.duty.body}</p>
+    <p class="small" style="margin-top:1rem"><a href={u("/errands")}>What it would cost to read →</a></p>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>Why it matters</h2>
     <p class="lede">{d.matters}</p>

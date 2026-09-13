@@ -1,0 +1,58 @@
+{
+ "found": "14 September 2026",
+ "lede": "Robert D'Arcy's son Constantine has been half known to this archive for months, and the two halves were never set beside each other. One page held a Barbados christening naming his parents. Two others said his relationship to Robert had never been established. This page puts them together and adds the record that settles it: a Canterbury newspaper that calls him, in May 1805, the son of Col. D'Arcy, chief engineer of Chatham lines.",
+ "already": {
+  "head": "What this archive already had, and was not reading",
+  "body": "The christening below is not new. It has been on the Hornby page and in the register since the Royal Engineers work of this summer, complete with the parents' names and the film reference. In the same weeks, /robert-family listed “Who Constantine was” among its open questions, /chatham said “what he was to Robert has never been established”, and /the-corps showed a twenty-four-year blank in Robert's career without noticing that the blank had two christenings sitting in it. A fact held in one room of a house and not read in another is not knowledge. It is filing.",
+  "chip": "own error, filed"
+ },
+ "baptism": {
+  "head": "St Michael, Barbados, 18 February 1786",
+  "line": "CONSTANTINE DARCY · father ROBERT DARCY · mother JANE",
+  "sister": "JANE D'ARCY · christened the same parish, 17 March 1788 · father ROBT. D'ARCY · mother JANE",
+  "source": "Caribbean Birth & Baptism Index 1590-1928, FamilySearch film 1157925, batch C51395-3, via FindMyPast — and, independently, Connolly's Roll of Officers of the Corps of Royal Engineers, entry 335",
+  "why": "Robert D'Arcy took his first commission in the Corps of Engineers in 1778 and does not appear again in any record this archive holds until 1802. Barbados falls inside that gap. The Corps kept an establishment there throughout the 1780s, and an engineer officer posted to the West Indies took his wife with him. JEAN WARD, whom Robert married at Portsea in 1779, is JANE in an English clerk's hand as often as not."
+ },
+ "career": [
+  {
+   "when": "1 February 1804",
+   "what": "Gentleman Cadet to Second Lieutenant",
+   "unit": "Corps of Royal Engineers",
+   "src": "Ordnance-Office, 4 June 1804 — vice Harding, promoted",
+   "gaz": "15707 / 690",
+   "note": "The date was known from Connolly. The Gazette citation is new, and so is this: the commission was printed in the KENTISH WEEKLY POST of 12 June 1804 — the Canterbury paper covering Chatham, which carried the boy's first commission and, twenty-three years later, his father's funeral."
+  },
+  {
+   "when": "1 March 1805",
+   "what": "Second Lieutenant to First Lieutenant",
+   "unit": "Corps of the Royal Engineers",
+   "src": "Ordnance-Office, 18 March 1805 — vice Dyson",
+   "gaz": "15789 / 351",
+   "note": "THE SAME GAZETTE, THE SAME PAGE, AND THE SAME COLUMN OF THE SAME NEWSPAPERS as his father's promotion to Lieutenant-Colonel. This archive published that page in July, cited it by issue and number, and read the father's line without seeing the son's nine lines below it."
+  }
+ ],
+ "column": {
+  "paper": "Limerick Gazette, Monday 1 April 1805, page 4 — reprinting the London Gazette of 16 March",
+  "text": "Lieut.-Col. Thomas Nepean to be Colonel. Brevet Major ROBERT D'ARCY to be Lieutenant-Colonel, vice Nepean … Second Lieut. CONSTANTINE D'ARCY to be first lieut. vice Dyson.",
+  "note": "Father and son in one Ordnance Office announcement. The Kentish Weekly Post and the Kentish Gazette of 29 March 1805 carried the same list. Ten weeks later one of them was dead."
+ },
+ "death": {
+  "paper": "Kentish Gazette, Tuesday 14 May 1805, page 4 — under the standing head “Canterbury, May 14”",
+  "text": "After a few weeks illness, the son of COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES; his remains were interred with military honours.",
+  "burial": "Buried Chatham St Mary the Virgin, 9 May 1805, described in the register as “Lt in the royal engineers”. No age is given. Medway Archives P85/1/79. Connolly gives the death as 6 May.",
+  "scan": "https://cityark.medway.gov.uk/wwwopacx/wwwopac.ashx?command=getcontent&server=files&value=P085-01-79(1).pdf"
+ },
+ "twoThings": [
+  ["It says whose son he was, in a contemporary document.", "Not a printed roll of 1898 and not a family tree. THE SON OF COL. D'ARCY — and in May 1805 there was exactly one Colonel D'Arcy at Chatham, gazetted Lieutenant-Colonel of the Royal Engineers ten weeks earlier. Three of Robert's children were documented as his on Saturday. This makes four."],
+  ["And it gives Robert D'Arcy a job.", "CHIEF ENGINEER OF CHATHAM LINES. This is entirely new. Every other record of him — the commission, the five promotions, the seventeen death notices, the burial — gives a rank and no posting. The Chatham Lines were the bastioned works built to defend the dockyard and the Medway, the largest engineering undertaking in Kent, and he was running them."],
+  ["He was interred with military honours, and so was his father.", "The Kent Herald used the same phrase of Major-General D'Arcy in May 1827. Twenty-two years apart, in the same parish, the same rite for the son and the father."]
+ ],
+ "arithmetic": "Christened February 1786, a gentleman cadet by February 1804, first lieutenant on 1 March 1805, dead by the beginning of May. He was NINETEEN. A boy born in Barbados while his father served there, sent home to the Royal Military Academy, commissioned into his father's corps at eighteen, promoted at nineteen in the same announcement that promoted his father, and buried at Chatham eight weeks later after what the paper calls a few weeks illness.",
+ "sisterNote": "And there is a second child in that Barbados register, which this archive has also been carrying without counting. JANE D'ARCY, christened at St Michael on 17 March 1788 to the same parents. She is not on the family tree and nothing further has been found of her. Robert and Jean had at least six children, and /robert-family listed five until today.",
+ "care": [
+  ["What is newly documented.", "The Kentish Gazette notice naming the dead man as the son of Col. D'Arcy of Chatham Lines; Robert D'Arcy's post; the London Gazette citations for both of Constantine's commissions; and four contemporary newspaper printings of them."],
+  ["What was already here.", "The Barbados christening of Constantine to Robert and Jane, the christening of his sister Jane in 1788, the two commission dates from Connolly, and the Chatham burial. All of it published before this week, on pages that did not talk to each other."],
+  ["What is still inferred.", "That the Barbados child and the Chatham officer are one person. The name is rare, the corps is his father's, the parish is his father's, and the age fits a cadetship in 1804 exactly — but no single document carries both the christening and the commission, and Connolly's Roll, which asserts both, is a printed book of 1898."],
+  ["What is still unknown.", "Whether Jane of 1788 lived. When Robert went to Barbados and when he came home. And, as ever, who Robert's own parents were. A man may now be documented as the father of four children and still be nobody's son."]
+ ]
+}

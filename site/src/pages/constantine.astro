@@ -1,0 +1,92 @@
+---
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
+import { u } from "../lib/url.js";
+import d from "../data/constantine.json";
+---
+<Base
+  title="Constantine D'Arcy"
+  eyebrow={`Barbados 1786 — Chatham 1805 · found ${d.found}`}
+  dek="A name in a burial register with nothing attached to it. He turns out to be Robert D'Arcy's son, christened in Barbados, commissioned into his father's corps at eighteen, and dead at nineteen.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <Note style="border-left-width:3px;margin-bottom:0">
+      <strong>{d.already.head}.</strong> {d.already.body}
+      {" "}<span class="chip lore">{d.already.chip}</span>
+      {" "}<a href={u("/what-we-got-wrong/")}>The errors →</a>
+    </Note>
+  </section>
+
+  <Blk label="The christening" title={d.baptism.head}>
+    <Note style="border-left-width:3px">
+      <strong style="font-size:1.1em">{d.baptism.line}</strong>
+      <span class="chip doc">documented</span>
+      <div class="small" style="margin-top:.6rem">{d.baptism.sister}</div>
+      <div class="small" style="margin-top:.6rem;color:var(--ink-3)">{d.baptism.source}</div>
+    </Note>
+    <p style="margin-top:1.2rem">{d.baptism.why}</p>
+  </Blk>
+
+  <Blk label="Two commissions" title="Into his father's corps">
+    <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.2rem">
+      {d.career.map((c) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono small" style="color:var(--ink-3)">{c.when}</span>
+            <strong style="margin-left:.6rem">{c.what}</strong></div>
+          <p class="small" style="margin-top:.35rem;color:var(--ink-2)">{c.unit} · {c.src}
+            <span style="color:var(--ink-3)"> · London Gazette {c.gaz}</span></p>
+          <p class="small" style="margin-top:.35rem">{c.note}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="lab" style="margin-top:1.6rem">{d.column.paper}</div>
+    <Note style="margin-top:.6rem">
+      <strong>{d.column.text}</strong>
+      <div class="small" style="margin-top:.6rem">{d.column.note}</div>
+    </Note>
+  </Blk>
+
+  <Blk label="The notice that settles it" title="“The son of Col. D'Arcy”">
+    <div class="lab">{d.death.paper}</div>
+    <Note style="border-left-width:3px;margin-top:.6rem">
+      <strong style="font-size:1.15em">{d.death.text}</strong>
+      <span class="chip doc">documented</span>
+    </Note>
+    <p class="small" style="margin-top:1.1rem">{d.death.burial}
+      {" "}<a href={d.death.scan}>The register scan, Medway CityArk ↗</a></p>
+
+    <ol class="dek" style="margin-top:1.4rem">
+      {d.twoThings.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
+    </ol>
+  </Blk>
+
+  <Blk label="Nineteen" title="The whole of it">
+    <p class="lede">{d.arithmetic}</p>
+    <Note style="margin-top:1.3rem">
+      <strong>And a sister.</strong> {d.sisterNote}
+      <a href={u("/robert-family/")}>The household →</a>
+    </Note>
+  </Blk>
+
+  <Blk label="Reading it honestly" title="What this is and is not" last>
+    <Scroll>
+      <table>
+        <tbody>
+          {d.care.map(([h, b]) => (
+            <tr><td style="white-space:nowrap"><strong>{h}</strong></td><td class="small">{b}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/robert-family/")}>Robert and Jean's family →</a> ·
+      <a href={u("/chatham/")}>The Chatham register →</a> ·
+      <a href={u("/the-corps/")}>Robert's career →</a> ·
+      <a href={u("/margaret-jones/")}>His sister at Havre →</a></p>
+  </Blk>
+</Base>

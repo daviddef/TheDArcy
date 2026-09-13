@@ -1,11 +1,11 @@
 {
-"entries": 775,
-"distinct": 562,
-"records": 302,
+"entries": 786,
+"distinct": 565,
+"records": 313,
 "tree": 473,
 "grafted": 98,
-"linked": 775,
-"surnames": 188,
+"linked": 786,
+"surnames": 190,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1177,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 109,
+"n": 117,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1201,6 +1201,34 @@
 "kind": "record"
 },
 {
+"name": "Constantine D'Arcy",
+"says": "burial · 9 May 1805, Chatham St Mary the Virgin · “Lt in the royal engineers” · no age",
+"source": "record · Kent Burials, Medway Archives P85/1/79",
+"link": "https://cityark.medway.gov.uk/wwwopacx/wwwopac.ashx?command=getcontent&server=files&value=P085-01-79(1).pdf",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "commission · Gentleman Cadet to Second Lieutenant, Corps of Royal Engineers, 1 Feb 1804, vice Harding",
+"source": "record · London Gazette 15707 p.690, Ordnance-Office 4 June 1804",
+"link": "https://www.thegazette.co.uk/London/issue/15707/page/690",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "commission · Second Lieutenant to First Lieutenant, Royal Engineers, 1 Mar 1805, vice Dyson — the same page as his father's lieutenant-colonelcy",
+"source": "record · London Gazette 15789 p.351, Ordnance-Office 18 March 1805",
+"link": "https://www.thegazette.co.uk/London/issue/15789/page/351",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "death notice · “the son of Col. D'Arcy, chief engineer of Chatham lines; his remains were interred with military honours”",
+"source": "record · Kentish Gazette, 14 May 1805, p.4",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Eliza D'Arcy, née Keeling",
 "says": "died 01/07/1918 · parents: — · — Keeling",
 "source": "record · Queensland death index 1918/B/27431",
@@ -1212,6 +1240,13 @@
 "says": "listed in a half-pay section of the same 1778 Army List — a different man from Robert, and the archive was right to separate them",
 "source": "record · A List of the Officers of the Army, 1778",
 "link": "https://archive.org/details/alistofficersar00offigoog",
+"kind": "record"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"says": "marriage · 29 September 1863, Lymington, to ANNA MARIA SIMPSON, daughter of R. Salisbury Simpson, of Bengal",
+"source": "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -1292,6 +1327,13 @@
 "kind": "record"
 },
 {
+"name": "Jane D'Arcy",
+"says": "christening · 17 March 1788, St Michael, Barbados · father Robt. D'Arcy, mother Jane — a sixth child of Robert and Jean",
+"source": "record · Caribbean Birth & Baptism Index 1590-1928, film 1157925, batch C51395-3",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Joseph D'Arcy",
 "says": "baptised Portsea St Mary, 19 March 1780 · father Robert · mother Jean",
 "source": "record · FreeREG, Portsea St Mary parish register",
@@ -1324,6 +1366,13 @@
 "says": "obituary · “he commenced his military career at THE TAKING OF ST DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia”",
 "source": "record · Morning Herald 29 Feb 1848, Saunders's News-Letter 2 Mar 1848, Lincolnshire Chronicle 3 Mar 1848",
 "link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "death duty · grant year 1848 · court “PCC and Country Courts” · of Lymington, Hampshire",
+"source": "record · Index to Death Duty Registers 1796-1903, TNA IR 27/284",
+"link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
 },
 {
@@ -1471,6 +1520,13 @@
 "says": "entry 203 · 2nd Lt 17 Jan 1776 → Major-General 12 Aug 1819, C.B. · “Died at Chatham, 13 5 1827”",
 "source": "record · Connolly, Roll of Officers of the Corps of Royal Engineers",
 "link": "https://archive.org/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "described as “Col. D'Arcy, CHIEF ENGINEER OF CHATHAM LINES” — the only record giving him a post as well as a rank",
+"source": "record · Kentish Gazette, 14 May 1805, p.4",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -4758,6 +4814,26 @@
 ]
 },
 {
+"surname": "SANIGAR",
+"n": 2,
+"rows": [
+{
+"name": "John Sanigar",
+"says": "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury · Consistory Court of Gloucester 1822/194",
+"source": "record · Gloucestershire Wills & Administrations 1801-1858",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "William Sanigar",
+"says": "b. 1654",
+"source": "family tree · direct line",
+"link": "/people/william-sanigar",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "SINNEGAR",
 "n": 2,
 "rows": [
@@ -6041,19 +6117,6 @@
 ]
 },
 {
-"surname": "SANIGAR",
-"n": 1,
-"rows": [
-{
-"name": "William Sanigar",
-"says": "b. 1654",
-"source": "family tree · direct line",
-"link": "/people/william-sanigar",
-"kind": "tree"
-}
-]
-},
-{
 "surname": "SANIGEAR",
 "n": 1,
 "rows": [
@@ -6128,6 +6191,19 @@
 "source": "family tree · direct line",
 "link": "/people/agnes-isabel-scott",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "SIMPSON",
+"n": 1,
+"rows": [
+{
+"name": "Anna Maria Simpson",
+"says": "married FRANK HYDE D'ARCY at Lymington, 29 September 1863 — residence given as Bengal",
+"source": "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
 }
 ]
 },
@@ -6244,6 +6320,19 @@
 "says": "of Swanhanger · grants a messuage to William Panyter for life, 11 April 1377 — the deed Berkeley catalogues under the man and Birmingham under the PLACE, which is what proves Swanhanger and Saniger are one word",
 "source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
 "link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
+"surname": "SYNEGAR",
+"n": 1,
+"rows": [
+{
+"name": "Abraham Synegar",
+"says": "administration · 1813 · CARDMAKER, of Dursley · Consistory Court of Gloucester 1813/8",
+"source": "record · Gloucestershire Wills & Administrations 1801-1858",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 }
 ]

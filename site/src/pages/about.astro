@@ -8,6 +8,7 @@ import { nOwn, nInherited } from "../lib/errors.js";
 import reg from "../data/register.json";
 import dossiers from "../data/dossiers.json";
 import searched from "../data/searched.json";
+import audit from "../data/audit.json";
 import { people } from "../lib/people.js";
 
 /* Every number on this page is computed. A page that says what the archive
@@ -104,9 +105,12 @@ const HOLDS = [
       Hanley census, and a line in the London Gazette of 1813.
       <br /><br />
       <strong>On 13 September 2026 the archive crossed over.</strong> British evidence now
-      outnumbers Australian — <strong>185 to 117</strong>, 61% against 39%, having started at 42%
-      against 57%. That is not a change of subject; it is the same family, evidenced from the
-      country it came from. The measure is kept here so the next correction can be measured too.
+      outnumbers Australian — <strong>{audit.bri} to {audit.aus}</strong>, {audit.briPct}% against
+      {audit.ausPct}%, having started at 42% against 57%{audit.emp > 0 && <>, with {audit.emp}
+      {audit.emp === 1 ? " record" : " records"} from elsewhere in the empire</>}. That is not a
+      change of subject; it is the same family, evidenced from the country it came from. These
+      figures are computed by <span class="mono">tools/audit.py</span> on every build, because the
+      last time they were not, they drifted. <a href={u("/what-we-got-wrong/")}>That error →</a>
       <br /><br />
       <a href={u("/searched/")}>Every source, and which country it is in →</a>
     </Note>
