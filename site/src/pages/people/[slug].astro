@@ -4,6 +4,8 @@ import { u } from "../../lib/url.js";
 import { people, byId } from "../../lib/people.js";
 import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
+import Evidence from "../../components/Evidence.astro";
+import { grade } from "../../lib/grade.js";
 import Pedigree from "../../components/Pedigree.astro";
 import { CORRECTIONS } from "../../lib/corrections.js";
 
@@ -40,6 +42,7 @@ const sameName = people.filter((o) => o.name === p.name && o.slug !== p.slug);
 
 const me = prov[p.slug] || { rel: {}, graft: null, line: false };
 const recCount = Object.keys(me.rel || {}).length;
+const g = grade(p.slug);
 
 const parents = people.filter((o) =>
   (o.spouses || []).some((s) => (s.children || []).includes(p.id)));
@@ -180,6 +183,16 @@ const notes = (p.notes || [])
 const anyDamaged = notes.some((n) => n.damaged);
 ---
 <Base title={p.name} eyebrow={life} dek={val("occupation", p.occupation) || ""}>
+
+  <section class="blk" style="padding-top:0">
+    <p class="small" style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
+      <Evidence level={g.level}>{g.label ?? undefined}</Evidence>
+      <span class="dim">{g.why}{" "}
+        {g.href
+          ? <a href={u(g.href)}>What was tested &rarr;</a>
+          : <a href={u("/method/#ladder")}>How this archive grades a claim &rarr;</a>}</span>
+    </p>
+  </section>
 
   {portrait && (
     <section class="blk">
