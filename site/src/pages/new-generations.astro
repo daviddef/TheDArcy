@@ -1,0 +1,49 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/new-generations.json";
+const total = d.groups.reduce((n, g) => n + g.rows.length, 0);
+---
+<Base
+  title="Not in the tree"
+  eyebrow={`${total} documented people · ${d.built}`}
+  dek="People this archive can prove and the family tree has never held — three new generations of them, found in a week.">
+
+  <section class="blk">
+    <p class="lede">{d.lede}</p>
+  </section>
+
+  {d.groups.map((g) => (
+    <section class="blk">
+      <div class="lab">{g.line}</div>
+      <h2 style="margin-top:.4rem">{g.rows.length} people</h2>
+      <div class="scroll" style="margin-top:1.1rem">
+        <table>
+          <thead><tr><th>Who</th><th>On what record</th><th class="m">Standing</th></tr></thead>
+          <tbody>
+            {g.rows.map(([who, ev, chip, note]) => (
+              <tr>
+                <td><strong>{who}</strong>{note && <div class="small" style="color:var(--ink-2)">{note}</div>}</td>
+                <td class="small">{ev}</td>
+                <td><span class={`chip ${chip === "documented" ? "doc" : chip === "inferred" ? "inf" : "lore"}`}>{chip}</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Why they are not on The People</h2>
+    <p class="lede">{d.why}</p>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.next}</strong>
+    </div>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/register")}>The register →</a> ·
+      <a href={u("/saniger-line")}>Six generations at Berkeley →</a> ·
+      <a href={u("/jean-ward")}>South Leith →</a> ·
+      <a href={u("/who")}>Every person named →</a></p>
+  </section>
+</Base>

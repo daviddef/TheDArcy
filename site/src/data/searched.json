@@ -9,6 +9,22 @@
  ],
  "rows": [
   {
+   "src": "FamilySearch Full-Text Search (free) — England, Gloucestershire, Marriages 1538-1989",
+   "what": "The Berkeley marriage of John Saniger, about 1797, without waiting for the archives",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Not surfaced. FamilySearch's full-text search runs handwriting OCR over images that were never indexed, and it does cover Gloucestershire — its collections include Parish Records 1499-1858 and a Marriages set of 444 Berkeley-area hits. Searching that Marriages collection for SANIGER returns three results: a marriage bond of 1767 and two marriage record indexes of 1751-1775. Nothing from 1797. The collection is built from diocesan BONDS and licence indexes, and a labouring family marrying by banns leaves no bond — so this is probably the wrong shelf rather than an absent marriage. The enquiry to Gloucestershire Archives stands.",
+   "href": "/errands"
+  },
+  {
+   "src": "FindMyPast — Australia, Marriages and Queensland Burials",
+   "what": "Frederick Robert D'Arcy, the surveyor",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Baptised at Chatham in 1811 to George and Mary, he married in NEW SOUTH WALES in 1834 and is in the Queensland burial registers at TOOWONG in 1875. The half-brother of the Australian children had a whole colonial life this archive had only the first line of.",
+   "href": "/who"
+  },
+  {
    "src": "FamilySearch (free) — England Marriages 1538-1973, confirmed on FindMyPast",
    "what": "Thomas Saniger's marriage, without paying for Ancestry",
    "when": "13 Sep 2026",

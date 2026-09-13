@@ -1,0 +1,37 @@
+{
+ "built": "13 September 2026",
+ "lede": "The people pages on this site are generated from the family tree, and the tree is the authority on who exists. That rule is deliberate — this archive's job is to say how well each claim is evidenced, not to merge or invent people behind the reader. But this week produced a dozen people who are documented and are not in the tree, and they need somewhere to stand.",
+ "groups": [
+  {"line": "Saniger, of Berkeley",
+   "rows": [
+    ["William Saniger, the elder", "named as father in a Berkeley baptism of 12 October 1679", "documented", "The deepest Saniger this archive reaches. A name in a register and nothing else."],
+    ["Catherine Cotton", "married Thomas Saniger at Berkeley, 10 April 1769", "documented", "John Saniger's mother. Searched across the whole county for a baptism and found none — she appears only to marry."],
+    ["Ann Saniger", "baptised Berkeley 1798, father John", "documented", "Hannah's eldest sister."],
+    ["William Saniger", "baptised Berkeley 6 September 1801, father John", "documented", "Hannah's brother."],
+    ["John Saniger", "baptised Berkeley 18 September 1803, father Jno", "documented", "Hannah's brother."],
+    ["Thomas Saniger", "baptised Berkeley 3 July 1808, father John; died Bristol 1 October 1881", "documented", "Hannah's brother, and almost certainly the Thomas Sinegar of Oxford Road."],
+    ["Martha Golding", "married Thomas Sanigre at Bristol, 24 August 1828", "documented", "Thomas's wife and the mother of his eleven children."],
+    ["Lydia (Jones?)", "wife of John Saniger; a Lyddya Sinegar aged 70 in Hannah's house in 1841", "family lore", "The surname JONES comes from a shared tree with no record attached. An enquiry is with Gloucestershire Archives."]
+   ]},
+  {"line": "Ward and Gairden, of South Leith",
+   "rows": [
+    ["Joseph Ward", "married Marth Gairden at South Leith, 27 October 1747", "documented", "Jean Ward's father — and the man her eldest son was named for."],
+    ["Martha Gairden (Garden)", "married Joseph Ward, South Leith, 27 October 1747", "documented", "Jean Ward's mother."],
+    ["William Gairden", "named as Martha's father at her marriage in 1747", "documented", "The oldest Scot in this archive."]
+   ]},
+  {"line": "Oliver, of Oswestry",
+   "rows": [
+    ["David Oliver", "father of Elizabeth, baptised Oswestry St Oswald's 19 May 1782", "documented", "Shropshire Archives P214/A/2/1 p.18."],
+    ["Mary Oliver", "named as mother in the same entry", "documented", ""]
+   ]},
+  {"line": "Wakefield and Webb, of Stroud",
+   "rows": [
+    ["Richard Wakefield", "father of James, baptised Stroud 6 April 1806", "inferred", "From a FamilySearch-derived index rather than the parish book, and there is more than one James Wakefield in Gloucestershire."],
+    ["Elizabeth Webb", "mother of James Wakefield", "inferred", "And a Matilda WEBB, aged two, is living in James's house at Drivers Fields in 1841."],
+    ["Eliza Wakefield", "baptised Bristol 14 October 1832, buried there 4 May 1834, aged 19 months", "documented", ""],
+    ["Ellen Wakefield", "baptised Bristol 26 October 1834, buried St Paul, Portland Square, 12 July 1840, aged 5", "documented", ""]
+   ]}
+ ],
+ "why": "None of these people can be given a page under The People without inventing a tree record for them, and this archive does not do that. They live in the register, on the narrative pages, and here.",
+ "next": "The tree has 473 people in it. On the evidence of one week, it is missing at least sixteen who can be documented — most of them women, and most of them in the generation just above the point where the tree's compiler stopped."
+}

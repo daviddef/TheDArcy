@@ -4,6 +4,14 @@
  "method": "The test is always the same: run a name that MUST be there through the same query that returned nothing. If the control comes back empty too, the silence belongs to the index.",
  "rows": [
   {
+   "index": "This archive's own alias list",
+   "place": "The spelling of a surname",
+   "holds": "eleven forms of Saniger, when nineteen were needed",
+   "test": "Two records found within an hour of each other under spellings not on the list: SANIGOR (Hannah's baptism) and SANIGRE (her brother's marriage).",
+   "means": "Every “not found” published here for this family was really “not found under the spellings I happened to think of”. The list now carries nineteen, and the failure was mine rather than any source's.",
+   "href": "/hannah-baptism"
+  },
+  {
    "index": "Free indexes, all of them",
    "place": "The whole of this table",
    "holds": "less than the record offices do",
@@ -116,6 +124,6 @@
    "href": "/errands"
   }
  ],
- "lesson": "Six of the ten entries above are parishes or counties the FAMILY TREE NAMES. Berkeley, Portsea, Bristol, Chew Magna, Oswestry, Audlem — the exact places a claim points at are, again and again, the places the free indexes have not reached. That is not a conspiracy; it is what happens when a family lives in garrison towns, industrial cities and market parishes while volunteers transcribe rural ones. But it means an archive built on free indexes will systematically fail to test its own tree, and will mistake that failure for a finding unless it measures every single time.",
+ "lesson": "Six of the ten holdings below are parishes or counties the FAMILY TREE NAMES, and again and again the exact places a claim points at are the places the free indexes have not reached. But the sharpest lesson came last and from a different direction. A control test proves that a source covers a parish and a window. It proves NOTHING about whether your search string can reach the record. Hannah Saniger's baptism was declared missing twice, each time behind a sound control test, and it was sitting in an index this archive had already searched — under SANIGOR, one of the very few spellings the alias list did not carry. Her brother's marriage was hidden the same way, under SANIGRE. Widen the name before you narrow the conclusion.",
  "paywall": "Added 13 September 2026, after the fact. Every holding measured on this page is a FREE index, and on the day this page was built a subscription site was opened for the first time. It immediately produced the 1851 census household the archive had twice reported missing, the marriage it had never found, and the stretch of the Berkeley register it had called untestable. The measuring was right. The conclusion quietly drawn from it — that a record not reachable here did not exist in reach — was a statement about a budget."
 }

@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "18 passes · 177 changes",
+ "eyebrow": "18 passes · 181 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -66,7 +66,11 @@
     "Tried FamilySearch for the Bristol marriage before asking anyone to pay for anything, and it was there: THOMAS SANIGRE married MARTHA GOLDING at Bristol, 24 August 1828.",
     "That is the EIGHTEENTH spelling of this surname, and the second in one hour to have defeated every search that used the others.",
     "Checked Ancestry signed in without a subscription: it holds the Gloucestershire Church of England registers 1538-1813 and five John Saniger wills, and masks every date, place and spouse.",
-    "Wrote to Gloucestershire Archives for the Berkeley marriage of John Saniger, about 1797 — the entry that would give Hannah's mother a surname. Sent 13 September 2026, awaiting reply."
+    "Wrote to Gloucestershire Archives for the Berkeley marriage of John Saniger, about 1797 — the entry that would give Hannah's mother a surname. Sent 13 September 2026, awaiting reply.",
+    "Tried FamilySearch's full-text handwriting search for the 1797 Berkeley marriage. It covers Gloucestershire, but its marriage collection is built from diocesan bonds, and a couple marrying by banns leaves no bond. Three Saniger hits, none from 1797.",
+    "Corrected /drivers-fields, which for months carried a section headed “Hannah was not born in Gloucestershire”, and /general-hewitt with it.",
+    "Built /new-generations — sixteen documented people the family tree has never held, most of them women, most in the generation just above where the tree stops.",
+    "Rewrote the lesson at the top of /coverage: a control test proves a source covers a parish and proves nothing about whether your search string can reach the record."
    ],
    "found": "The document the archive had twice proved unreachable was one vowel away the whole time."
   },
