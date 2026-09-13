@@ -9,6 +9,62 @@
  ],
  "rows": [
   {
+   "src": "TNA Discovery — the name Saniger in Gloucestershire records",
+   "what": "Any deed, will or suit naming a Saniger at Berkeley",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "THE NAME IS A PLACE. Nine catalogue entries put it beyond doubt: “Deeds of Panthurst Farm, SANIGER, BERKELEY” (1716–1814); “Edward Saniger OF SANIGER, Berkeley, clothier” (1692) and “gent” (1709 and 1716); “lands in Saniger and Hamfallow, Berkeley” (1671/2); and, earliest of all, “John Saniger of Berkeley, YEOMAN” in a release of 2 November 1601. The surname is toponymic, taken from a hamlet in Berkeley parish, and the family is documented holding land there for two centuries before this archive's story begins.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "TNA Discovery — PROB 11 for the Welsh and Gloucestershire lines",
+   "what": "Wills for John Maddock Jones of Ruabon and for any Saniger",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "PROB 11/1991/312 — the will of JOHN MADDOCK JONES OF RUABON, DENBIGHSHIRE, proved 24 January 1844. That is the man who married Robert D'Arcy's daughter in 1806, and his will would name his wife and children — a branch this archive has never had. Also PROB 11/1825/326, the will of Elizabeth Saniger, widow, of Thornbury, 1833; and at Shropshire Archives SRO 2847/7/173, a 1829 deed naming “John Maddock Jones of Penybryn esq”, the exact address on the marriage entry.",
+   "href": "/errands"
+  },
+  {
+   "src": "archive.org — the Army List of 1778",
+   "what": "Robert D'Arcy in a printed establishment list rather than a nineteenth-century roll",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "He is there, among the Second Lieutenants and Practitioner Engineers of the Corps of Engineers, beside Charles Holloway, Thomas Whelpdale, James Fiddes and Robert Beatson — two years after the commission of 17 January 1776 that Connolly gives him. And in a separate half-pay section of the same volume, a FRANCIS D'ARCY: independent support for this archive's decision to treat Francis D'Arcey of Galway, of the 39th and 45th Foot, as a different man.",
+   "href": "/hornby"
+  },
+  {
+   "src": "Welsh Newspapers Online and irishgenealogy.ie",
+   "what": "The 1806 Ruabon marriage, and the Cork and Limerick registers",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Both behind Cloudflare. That is four free British and Irish databases shut to this archive in one day — irishgenealogy.ie, NSW BDM, newspapers.library.wales and, earlier, CWGC. Each is open to a person with a browser and closed to an automated one.",
+   "href": "/errands"
+  },
+  {
+   "src": "archive.org — The Gentleman's Magazine, 1806",
+   "what": "A marriage notice for a general's daughter married by licence",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "The 1806 volumes are held in the Internet Archive's lending collection and their full text is not public. The Google-digitised public-domain runs do not cover that year in a form this archive could reach.",
+   "href": "/chatham"
+  },
+  {
+   "src": "FreeCEN — the 1851 census, every Saniger spelling in Bristol",
+   "what": "The Sinegar households again, in the year that records relationships and exact birthplaces",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "THE BEST LEAD THIS ARCHIVE HAS. Thomas Sinegar, head, 42, labourer, of 7 Oxford Road, St Philip and Jacob Out — BORN AT BERKLEY, GLOUCESTERSHIRE. His wife Martha, 42, a cordwainer, born at BERKLEY too. Of 28 Saniger-variant people in Bristol in 1851 they are the only two from Berkeley, and “Berkley” is the exact unusual spelling the family tree uses for Hannah Saniger's birthplace.",
+   "href": "/sanigers"
+  },
+  {
+   "src": "FreeCEN — Sanigers still in the Vale, 1841",
+   "what": "Whether the family had wholly left Berkeley by the census years",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "They had not. Samuel Saniger, 50, a shoemaker, and his son Samuel, 15, a butcher, are at Berkeley in 1841, with fifteen more of the name at Cam. The family is demonstrably in the parish through the nineteenth century — and FreeREG's Berkeley transcript stops in 1677, which is the coverage gap in its sharpest possible form.",
+   "href": "/berkeley"
+  },
+  {
    "src": "TNA Discovery — RG 4, the Non-Parochial Registers",
    "what": "Which Bristol nonconformist register would hold a baptism of about 1805",
    "when": "13 Sep 2026",

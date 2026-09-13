@@ -230,6 +230,21 @@
 "slug": "vivian-claud-sneyd",
 "n": 1
 },
+"francis-d-arcy": {
+"name": "Francis D'Arcy",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "listed in a half-pay section of the same 1778 Army List — a different man from Robert, and the archive was right to separate them",
+"source": "record · A List of the Officers of the Army, 1778",
+"link": "https://archive.org/details/alistofficersar00offigoog"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "francis-d-arcy",
+"n": 1
+},
 "ivy-marion-d-arcy": {
 "name": "Ivy Marion D'Arcy",
 "surname": "D'ARCY",
@@ -665,6 +680,91 @@
 "slug": "william-sainger",
 "n": 3
 },
+"edward-saniger": {
+"name": "Edward Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "of SANIGER, Berkeley, CLOTHIER · mortgage with Richard Holliday of Berkeley, cooper, 9 August 1692",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "edward-saniger",
+"n": 2
+},
+"elizabeth-saniger": {
+"name": "Elizabeth Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "elizabeth-saniger",
+"n": 1
+},
+"maurice-saniger": {
+"name": "Maurice Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "maurice-saniger",
+"n": 1
+},
+"samuel-saniger": {
+"name": "Samuel Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "samuel-saniger",
+"n": 1
+},
+"john-maddock-jones": {
+"name": "John Maddock Jones",
+"surname": "JONES",
+"rows": [
+{
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/"
+},
+{
+"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
+"source": "record · TNA PROB 11/1991/312",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-maddock-jones",
+"n": 2
+},
 "r-kent": {
 "name": "R. Kent",
 "surname": "KENT",
@@ -725,19 +825,49 @@
 "slug": "margaret-birch",
 "n": 1
 },
-"john-maddock-jones": {
-"name": "John Maddock Jones",
-"surname": "JONES",
+"lyddya-sinegar": {
+"name": "Lyddya Sinegar",
+"surname": "SINEGAR",
 "rows": [
 {
-"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/"
+"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/"
 }
 ],
 "inTree": false,
 "treeLink": "",
-"slug": "john-maddock-jones",
+"slug": "lyddya-sinegar",
+"n": 1
+},
+"martha-sinegar": {
+"name": "Martha Sinegar",
+"surname": "SINEGAR",
+"rows": [
+{
+"says": "wife, aged 42, CORDWAINER · born at Berkley, Gloucestershire",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "martha-sinegar",
+"n": 1
+},
+"thomas-sinegar": {
+"name": "Thomas Sinegar",
+"surname": "SINEGAR",
+"rows": [
+{
+"says": "head, aged 42, LABOURER · BORN AT BERKLEY, GLOUCESTERSHIRE · of 7 Oxford Road, Bristol",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "thomas-sinegar",
 "n": 1
 },
 "thomas-sinnegar": {
@@ -858,6 +988,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "mrs-costello",
+"n": 1
+},
+"william-cowley": {
+"name": "William Cowley",
+"surname": "COWLEY",
+"rows": [
+{
+"says": "of SANIGER, BERKELEY · lease from Daniel Woodward of Bristol city, wine merchant, 28 February 1749",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "william-cowley",
 "n": 1
 },
 "francis-d-arcey": {
@@ -1250,21 +1395,6 @@
 "slug": "william-sanigaer",
 "n": 1
 },
-"lyddya-sinegar": {
-"name": "Lyddya Sinegar",
-"surname": "SINEGAR",
-"rows": [
-{
-"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "lyddya-sinegar",
-"n": 1
-},
 "john-sinneger": {
 "name": "John Sinneger",
 "surname": "SINNEGER",
@@ -1417,9 +1547,9 @@
 }
 },
 "counts": {
-"named": 118,
-"withTreePage": 28,
-"ownPage": 90,
-"mentions": 166
+"named": 127,
+"withTreePage": 29,
+"ownPage": 98,
+"mentions": 178
 }
 }

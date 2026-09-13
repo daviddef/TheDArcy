@@ -1,9 +1,23 @@
 {
  "title": "What changed",
- "eyebrow": "13 passes · 76 changes",
+ "eyebrow": "14 passes · 83 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "Saniger is a place — and the audit starts to move",
+   "did": [
+    "Found the 1851 census household of Thomas Sinegar, labourer, at 7 Oxford Road, Bristol — born, with his wife Martha, at BERKLEY, Gloucestershire.",
+    "Established that Sanigers were still at Berkeley itself in 1841, in a parish whose transcript stops in 1677.",
+    "Found in TNA's catalogue that SANIGER IS A PLACE in Berkeley parish, with the family holding land there from 1601.",
+    "Found the will of John Maddock Jones of Ruabon, who married Robert D'Arcy's daughter — a Welsh branch the archive has never had.",
+    "Found Robert D'Arcy in the printed Army List of 1778, and Francis D'Arcy separately in the same volume.",
+    "Was blocked by Cloudflare at Welsh Newspapers Online and irishgenealogy.ie — four free British and Irish databases shut in one day.",
+    "Re-ran the nationality audit: the Australian share has fallen from 57% to 53%."
+   ],
+   "found": "The surname is toponymic. Saniger is a hamlet in Berkeley parish, a John Saniger holds land there as a yeoman in 1601, and an Edward Saniger of Saniger is a clothier in 1692 and a gentleman by 1709."
+  },
   {
    "when": "13 September 2026",
    "title": "Back to Britain — and an audit that says the archive had drifted",

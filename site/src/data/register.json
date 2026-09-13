@@ -1,11 +1,11 @@
 {
-"entries": 639,
-"distinct": 514,
-"records": 166,
+"entries": 651,
+"distinct": 522,
+"records": 178,
 "tree": 473,
 "grafted": 98,
-"linked": 639,
-"surnames": 173,
+"linked": 651,
+"surnames": 174,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1135,7 +1135,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 82,
+"n": 84,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1156,6 +1156,13 @@
 "says": "entry 335 · “Died at Chatham, 6 5 1805” · christened St Michael, Barbados, 18 Feb 1786",
 "source": "record · Connolly, Roll of Officers of the Corps of Royal Engineers",
 "link": "https://archive.org/",
+"kind": "record"
+},
+{
+"name": "Francis D'Arcy",
+"says": "listed in a half-pay section of the same 1778 Army List — a different man from Robert, and the archive was right to separate them",
+"source": "record · A List of the Officers of the Army, 1778",
+"link": "https://archive.org/details/alistofficersar00offigoog",
 "kind": "record"
 },
 {
@@ -1226,6 +1233,13 @@
 "says": "London Gazette, 19 July 1813, issue 16755 page 1431 — “Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh”, in an Office of Ordnance list of Royal Engineers promotions. Ten Gazette notices name him between 1793 and 1819.",
 "source": "record · The London Gazette, issue 16755 p.1431",
 "link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "listed among the Second Lieutenants and Practitioner Engineers of the Corps of Engineers in the printed Army List of 1778",
+"source": "record · A List of the Officers of the Army, 1778",
+"link": "https://archive.org/details/alistofficersar00offigoog",
 "kind": "record"
 },
 {
@@ -2647,6 +2661,89 @@
 ]
 },
 {
+"surname": "SANIGER",
+"n": 11,
+"rows": [
+{
+"name": "Edward Saniger",
+"says": "of SANIGER, Berkeley, CLOTHIER · mortgage with Richard Holliday of Berkeley, cooper, 9 August 1692",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "John Saniger",
+"says": "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Maurice Saniger",
+"says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Samuel Saniger",
+"says": "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Hannah SANIGER",
+"says": "1805–1873 · Berkley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/hannah-saniger",
+"kind": "tree"
+},
+{
+"name": "John Saniger",
+"says": "1769–1824 · Berkeley, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/john-saniger",
+"kind": "tree"
+},
+{
+"name": "Thomas Saniger",
+"says": "b. 1711 · Christened in Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/thomas-saniger-1711",
+"kind": "tree"
+},
+{
+"name": "Thomas Saniger",
+"says": "1744–1819 · Christened in Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/thomas-saniger-1744",
+"kind": "tree"
+},
+{
+"name": "William Saniger",
+"says": "1679–1718 · Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-saniger",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "ROSSITER",
 "n": 9,
 "rows": [
@@ -2874,47 +2971,6 @@
 ]
 },
 {
-"surname": "SANIGER",
-"n": 5,
-"rows": [
-{
-"name": "Hannah SANIGER",
-"says": "1805–1873 · Berkley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/hannah-saniger",
-"kind": "tree"
-},
-{
-"name": "John Saniger",
-"says": "1769–1824 · Berkeley, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/john-saniger",
-"kind": "tree"
-},
-{
-"name": "Thomas Saniger",
-"says": "b. 1711 · Christened in Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/thomas-saniger-1711",
-"kind": "tree"
-},
-{
-"name": "Thomas Saniger",
-"says": "1744–1819 · Christened in Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/thomas-saniger-1744",
-"kind": "tree"
-},
-{
-"name": "William Saniger",
-"says": "1679–1718 · Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-saniger",
-"kind": "tree"
-}
-]
-},
-{
 "surname": "SUTTON",
 "n": 5,
 "rows": [
@@ -3135,6 +3191,40 @@
 "says": "Italy",
 "source": "family tree · direct line",
 "link": "/people/giuseppa-ferrara",
+"kind": "tree"
+}
+]
+},
+{
+"surname": "JONES",
+"n": 4,
+"rows": [
+{
+"name": "John Maddock Jones",
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
+"source": "record · TNA PROB 11/1991/312",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Lydia Jones",
+"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/lydia-jones",
+"kind": "tree"
+},
+{
+"name": "William Jones",
+"says": "b. 1722 · Brimpsfield, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-jones",
 "kind": "tree"
 }
 ]
@@ -3377,33 +3467,6 @@
 ]
 },
 {
-"surname": "JONES",
-"n": 3,
-"rows": [
-{
-"name": "John Maddock Jones",
-"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Lydia Jones",
-"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/lydia-jones",
-"kind": "tree"
-},
-{
-"name": "William Jones",
-"says": "b. 1722 · Brimpsfield, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-jones",
-"kind": "tree"
-}
-]
-},
-{
 "surname": "KEELING",
 "n": 3,
 "rows": [
@@ -3481,6 +3544,33 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/hedwig-von-oldenburg",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "SINEGAR",
+"n": 3,
+"rows": [
+{
+"name": "Lyddya Sinegar",
+"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Martha Sinegar",
+"says": "wife, aged 42, CORDWAINER · born at Berkley, Gloucestershire",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Thomas Sinegar",
+"says": "head, aged 42, LABOURER · BORN AT BERKLEY, GLOUCESTERSHIRE · of 7 Oxford Road, Bristol",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
 }
 ]
 },
@@ -4214,6 +4304,19 @@
 "says": "caretaker of Victoria Park · the death was first reported to her",
 "source": "record · QSA coronial file ITM2736504 (DR103140), read in full",
 "link": "https://www.archivessearch.qld.gov.au/items/ITM2736504",
+"kind": "record"
+}
+]
+},
+{
+"surname": "COWLEY",
+"n": 1,
+"rows": [
+{
+"name": "William Cowley",
+"says": "of SANIGER, BERKELEY · lease from Daniel Woodward of Bristol city, wine merchant, 28 February 1749",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
 }
 ]
@@ -5112,19 +5215,6 @@
 "source": "family tree · direct line",
 "link": "/people/agnes-isabel-scott",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "SINEGAR",
-"n": 1,
-"rows": [
-{
-"name": "Lyddya Sinegar",
-"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
 }
 ]
 },

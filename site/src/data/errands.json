@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "14 jobs a person can do and this archive cannot",
+ "eyebrow": "16 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -36,6 +36,26 @@
   },
   {
    "n": 4,
+   "what": "PROB 11/1991/312 — the will of John Maddock Jones of Ruabon",
+   "where": "The National Archives, Kew — digitised",
+   "cost": "about £3.50",
+   "settles": "He married Margarett Maria Isabella D'Arcy, Robert and Jean's daughter, at Chatham in 1806 by licence, witnessed by her brother Joseph. His will of 1844 would name his widow and children — an entire Welsh branch of this family that the archive has never contained a word about.",
+   "why": "A WHOLE BRANCH, FOR THREE POUNDS",
+   "href": "/chatham",
+   "file": "found 13 September 2026 via TNA Discovery"
+  },
+  {
+   "n": 5,
+   "what": "The Berkeley estate deeds, D2957/41, at Gloucestershire Archives",
+   "where": "Gloucestershire Archives",
+   "cost": "a visit or copies",
+   "settles": "The Saniger family in its own parish, by name and holding, from 1601 to 1749 — John Saniger yeoman, Edward Saniger of Saniger gent and clothier, Maurice Saniger and Jane his wife. This is the documentary spine of the family the archive has only ever seen through a parish register that stops in 1677.",
+   "why": "",
+   "href": "/saniger-place",
+   "file": "identified 13 September 2026"
+  },
+  {
+   "n": 6,
    "what": "Five named Bristol nonconformist registers at Kew",
    "where": "The National Archives, RG 4",
    "cost": "a visit, or a digitised copy via a subscription site",
@@ -45,7 +65,7 @@
    "file": "identified 13 September 2026 via TNA Discovery"
   },
   {
-   "n": 5,
+   "n": 7,
    "what": "Lichfield Bishop's Transcripts for Madeley, 1740s",
    "where": "Staffordshire Record Office / Lichfield",
    "cost": "an enquiry",
@@ -55,7 +75,7 @@
    "file": "identified 13 September 2026"
   },
   {
-   "n": 6,
+   "n": 8,
    "what": "PROB 11/1728/64 — the will of Major-General Robert D'Arcy",
    "where": "The National Archives, Kew",
    "cost": "about £3.50, digitised, download today",
@@ -65,7 +85,7 @@
    "file": "requests/tna-prob11-darcy-will.md"
   },
   {
-   "n": 7,
+   "n": 9,
    "what": "Enquiry to the Royal Engineers Museum, Chatham",
    "where": "The Corps' own archive",
    "cost": "£25 enquiry service",
@@ -75,7 +95,7 @@
    "file": "notes/letters/2026-09-re-museum-chatham.md"
   },
   {
-   "n": 8,
+   "n": 10,
    "what": "Three Queensland death certificates",
    "where": "Queensland Registry of Births, Deaths and Marriages",
    "cost": "a fee per certificate",
@@ -85,7 +105,7 @@
    "file": "requests/qld-bdm-certificates.md"
   },
   {
-   "n": 9,
+   "n": 11,
    "what": "Two Chatham burials",
    "where": "Medway Archives",
    "cost": "an enquiry",
@@ -95,7 +115,7 @@
    "file": "notes/letters/2026-09-medway-archives.md"
   },
   {
-   "n": 10,
+   "n": 12,
    "what": "Where Arthur Hartley Sneyd is commemorated",
    "where": "Commonwealth War Graves Commission",
    "cost": "free, two minutes",
@@ -105,7 +125,7 @@
    "file": "requests/cwgc-arthur-hartley-sneyd.md"
   },
   {
-   "n": 11,
+   "n": 13,
    "what": "The generation above Francis Murdoch",
    "where": "ScotlandsPeople",
    "cost": "credits, a login",
@@ -115,7 +135,7 @@
    "file": "requests/scotlandspeople-murdoch.md"
   },
   {
-   "n": 12,
+   "n": 14,
    "what": "Richard Atkinson and Anne, of Limerick",
    "where": "RootsIreland",
    "cost": "a subscription",
@@ -125,7 +145,7 @@
    "file": "requests/rootsireland-atkinson-limerick.md"
   },
   {
-   "n": 13,
+   "n": 15,
    "what": "Nine Queensland State Archives items",
    "where": "Queensland State Archives, Runcorn",
    "cost": "copy fees, none digitised",
@@ -135,7 +155,7 @@
    "file": "requests/qsa-order-list.md"
   },
   {
-   "n": 14,
+   "n": 16,
    "what": "Which Ordnance series could carry a Royal Engineers commission of 1776",
    "where": "The National Archives, Kew",
    "cost": "an enquiry",

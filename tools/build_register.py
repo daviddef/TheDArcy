@@ -205,6 +205,36 @@ rec("Annie Reeves", "named with John Birch as the parents of Margaret Birch, who
 rec("Elizabeth Ann Birch", "married Aaron Wakefield 11 July 1861 — sister to Margaret, who married his brother Hiram four months earlier",
     "record · Queensland marriage index 1861/B/142", QBDM_L)
 
+
+# --- The Berkeley estate deeds, and Saniger the place -----------------------
+GA = "record · Gloucestershire Archives D2957/41 (catalogue description)"
+GA_L = "https://discovery.nationalarchives.gov.uk/"
+for n, says in [
+    ("John Saniger", "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found"),
+    ("Edward Saniger", "of SANIGER, Berkeley, CLOTHIER · mortgage with Richard Holliday of Berkeley, cooper, 9 August 1692"),
+    ("Edward Saniger", "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716"),
+    ("Maurice Saniger", "and Jane his wife · a suit brought by John Hardinge, Easter term 1731"),
+    ("William Cowley", "of SANIGER, BERKELEY · lease from Daniel Woodward of Bristol city, wine merchant, 28 February 1749"),
+    ("Elizabeth Saniger", "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326"),
+]:
+    rec(n, says, GA, GA_L)
+
+rec("Robert D'Arcy", "listed among the Second Lieutenants and Practitioner Engineers of the Corps of Engineers in the printed Army List of 1778",
+    "record · A List of the Officers of the Army, 1778", "https://archive.org/details/alistofficersar00offigoog")
+rec("Francis D'Arcy", "listed in a half-pay section of the same 1778 Army List — a different man from Robert, and the archive was right to separate them",
+    "record · A List of the Officers of the Army, 1778", "https://archive.org/details/alistofficersar00offigoog")
+rec("John Maddock Jones", "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
+    "record · TNA PROB 11/1991/312", "https://discovery.nationalarchives.gov.uk/")
+
+FC = "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol"
+FC_L = "https://www.freecen.org.uk/"
+for n, says in [
+    ("Thomas Sinegar", "head, aged 42, LABOURER · BORN AT BERKLEY, GLOUCESTERSHIRE · of 7 Oxford Road, Bristol"),
+    ("Martha Sinegar", "wife, aged 42, CORDWAINER · born at Berkley, Gloucestershire"),
+    ("Samuel Saniger", "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher"),
+]:
+    rec(n, says, FC, FC_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

@@ -156,7 +156,7 @@
 },
 {
 "path": "/errands",
-"snippet": "…and sometimes a relationship. Context → notes/letters/2026-09-medway-archives.md 10 Where Arthur Hartley Sneyd is commemorated Free, quick, and this archive simply cannot reach it Commonwealth War Graves Commission · free, two minutes The a…",
+"snippet": "…and sometimes a relationship. Context → notes/letters/2026-09-medway-archives.md 12 Where Arthur Hartley Sneyd is commemorated Free, quick, and this archive simply cannot reach it Commonwealth War Graves Commission · free, two minutes The a…",
 "title": "Errands"
 },
 {
@@ -299,7 +299,7 @@
 "catherine-margaret-mulcahy": [
 {
 "path": "/errands",
-"snippet": "…which the site states as fact and has never seen. Then Richard Atkinson of Limerick, and Catherine Margaret Mulcahy of Cork, whose parents are unknown. Context → blocked by Cloudflare, 13 September 2026 04 Five named Bristol nonconformist regist…",
+"snippet": "…which the site states as fact and has never seen. Then Richard Atkinson of Limerick, and Catherine Margaret Mulcahy of Cork, whose parents are unknown. Context → blocked by Cloudflare, 13 September 2026 04 PROB 11/1991/312 — the will of John Mad…",
 "title": "Errands"
 },
 {
@@ -728,7 +728,7 @@
 },
 {
 "path": "/errands",
-"snippet": "…cked here, twice. Context → requests/cwgc-arthur-hartley-sneyd.md 11 The generation above Francis Murdoch The branch the archive has most neglected ScotlandsPeople · credits, a login The Ayrshire Murdochs are a quarter of the tested de…",
+"snippet": "…cked here, twice. Context → requests/cwgc-arthur-hartley-sneyd.md 13 The generation above Francis Murdoch The branch the archive has most neglected ScotlandsPeople · credits, a login The Ayrshire Murdochs are a quarter of the tested de…",
 "title": "Errands"
 },
 {
@@ -1220,6 +1220,11 @@
 "title": "What Has Been Read"
 },
 {
+"path": "/saniger-place",
+"snippet": "…annah. Nothing here connects the Saniger landholders of Berkeley to the woman who married James Wakefield and went to Queensland. That join remains where it was: in a Bristol chapel register, or in Berkeley's own book after 1677.",
+"title": "Saniger is a place"
+},
+{
 "path": "/general-hewitt",
 "snippet": "…mber 1854 the General Hewitt put into Brisbane with 394 souls aboard, and among them were James Wakefield , his wife Hannah, and six of their children — including Miriam , then fourteen. This was found the long way round. Queensland St…",
 "title": "The General Hewitt"
@@ -1425,14 +1430,24 @@
 "john-noel": [],
 "john-saniger": [
 {
+"path": "/",
+"snippet": "…audit starts to move The surname is toponymic. Saniger is a hamlet in Berkeley parish, a John Saniger holds land there as a yeoman in 1601, and an Edward Saniger of Saniger is a clothier in 1692 and a gentleman by 1709. 13 Septembe…",
+"title": "Twelve generations, and two claims too far."
+},
+{
 "path": "/drivers-fields",
 "snippet": "…70, living on her own means the tree says Hannah's mother was Lydia — and that her father John Saniger died in 1824 and here it gets interesting The street is the detail that settles it. The tree records Jabez Wakefield born on 14 F…",
 "title": "Drivers Fields, 1841"
 },
 {
 "path": "/changes",
-"snippet": "…r, across 41 years and four spellings. Found Hannah's own registration, naming her father John Saniger — entered by the clerk as “John Jenniger”. Found James Wakefield's registration, naming HIS father Richard Wakefield: a new gener…",
+"snippet": "…o move What it found. The surname is toponymic. Saniger is a hamlet in Berkeley parish, a John Saniger holds land there as a yeoman in 1601, and an Edward Saniger of Saniger is a clothier in 1692 and a gentleman by 1709. Found the 1…",
 "title": "What changed"
+},
+{
+"path": "/errands",
+"snippet": "…or copies The Saniger family in its own parish, by name and holding, from 1601 to 1749 — John Saniger yeoman, Edward Saniger of Saniger gent and clothier, Maurice Saniger and Jane his wife. This is the documentary spine of the fami…",
+"title": "Errands"
 },
 {
 "path": "/how-far-back",
@@ -1441,8 +1456,13 @@
 },
 {
 "path": "/searched",
-"snippet": "…3 — matching the tree to the day. Her father is entered as “John JENNIGER”. The tree says John Saniger. A capital S read as a J is one of the commonest misreadings in nineteenth-century clerking, and the forename and the rest of the…",
+"snippet": "…09 and 1716); “lands in Saniger and Hamfallow, Berkeley” (1671/2); and, earliest of all, “John Saniger of Berkeley, YEOMAN” in a release of 2 November 1601. The surname is toponymic, taken from a hamlet in Berkeley parish, and the f…",
 "title": "What Has Been Read"
+},
+{
+"path": "/saniger-place",
+"snippet": "…54. These entries reach fifty years behind him and describe a family already established: John Saniger of Berkeley, yeoman, in a release of 2 November 1601 . And they name a man the registers have already produced. The Berkeley page…",
+"title": "Saniger is a place"
 },
 {
 "path": "/sanigers",
@@ -2110,7 +2130,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…13 September 2026 The Gazette, the Birches, and a jurisdiction still shut What it found. Robert D'Arcy's promotions are in the government's own gazette, issue and page, where this archive has been citing a printed roll compiled from…",
+"snippet": "…holding land there from 1601. Found the will of John Maddock Jones of Ruabon, who married Robert D'Arcy's daughter — a Welsh branch the archive has never had. Found Robert D'Arcy in the printed Army List of 1778, and Francis D'Arcy s…",
 "title": "What changed"
 },
 {
@@ -2135,7 +2155,7 @@
 },
 {
 "path": "/errands",
-"snippet": "…it. Context → identified 13 September 2026 06 PROB 11/1728/64 — the will of Major-General Robert D'Arcy THE PRIORITY The National Archives, Kew · about £3.50, digitised, download today His parentage is the largest open question on th…",
+"snippet": "…it. Context → identified 13 September 2026 08 PROB 11/1728/64 — the will of Major-General Robert D'Arcy THE PRIORITY The National Archives, Kew · about £3.50, digitised, download today His parentage is the largest open question on th…",
 "title": "Errands"
 },
 {
@@ -2150,7 +2170,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…, and nothing more. → The London Gazette, 1770–1840 found something 13 Sep 2026 Searched: Robert D'Arcy's career, from the government's own notices rather than a printed roll Ten notices name him between 1793 and 1819, each citable b…",
+"snippet": "…ADDOCK JONES OF RUABON, DENBIGHSHIRE, proved 24 January 1844. That is the man who married Robert D'Arcy's daughter in 1806, and his will would name his wife and children — a branch this archive has never had. Also PROB 11/1825/326, t…",
 "title": "What Has Been Read"
 },
 {
@@ -2755,6 +2775,11 @@
 "path": "/how-far-back",
 "snippet": "…lve . The oldest of them are not aristocrats and there is no castle anywhere in the list: William Sanigar , born 1654, and William Saniger , born at Berkeley, Gloucestershire , 12 October 1679 — reached through Hannah Saniger, Miriam W…",
 "title": "How Far Back"
+},
+{
+"path": "/saniger-place",
+"snippet": "…man in 1601, and a gentleman clothier in 1692 The archive's deepest published person is a William Sanigar said to be born in 1654. These entries reach fifty years behind him and describe a family already established: John Saniger of Be…",
+"title": "Saniger is a place"
 }
 ],
 "william-saniger": [
