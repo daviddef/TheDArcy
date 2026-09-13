@@ -905,6 +905,71 @@
 "slug": "david-oliver",
 "n": 1
 },
+"lyddya-sinegar": {
+"name": "Lyddya Sinegar",
+"surname": "SINEGAR",
+"rows": [
+{
+"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "lyddya-sinegar",
+"n": 1
+},
+"lydia-sinegar": {
+"name": "Lydia Sinegar",
+"surname": "SINEGAR",
+"rows": [
+{
+"says": "baptised at Bristol, St Philip and Jacob, 28 JANUARY 1866 · father JAMES SINEGAR, mother Laura — Bristol Archives P/St P&J/R/2/24 · the third Lydia in three generations of this Bristol household",
+"source": "record · 1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "lydia-sinegar",
+"n": 1
+},
+"martha-sinegar": {
+"name": "Martha Sinegar",
+"surname": "SINEGAR",
+"rows": [
+{
+"says": "wife, aged 42, CORDWAINER · born at Berkley, Gloucestershire",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "martha-sinegar",
+"n": 1
+},
+"thomas-sinegar": {
+"name": "Thomas Sinegar",
+"surname": "SINEGAR",
+"rows": [
+{
+"says": "head, aged 42, LABOURER · BORN AT BERKLEY, GLOUCESTERSHIRE · of 7 Oxford Road, Bristol",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/"
+},
+{
+"says": "married JULIA MARSH at Bristol, St Matthias, 28 MAY 1871 · father THOMAS SINEGAR — Bristol Archives P/St.Mat/R/2/b",
+"source": "record · 1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "thomas-sinegar",
+"n": 2
+},
 "john-maddock-jones": {
 "name": "John Maddock Jones",
 "surname": "JONES",
@@ -983,51 +1048,6 @@
 "inTree": false,
 "treeLink": "",
 "slug": "margaret-birch",
-"n": 1
-},
-"lyddya-sinegar": {
-"name": "Lyddya Sinegar",
-"surname": "SINEGAR",
-"rows": [
-{
-"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "lyddya-sinegar",
-"n": 1
-},
-"martha-sinegar": {
-"name": "Martha Sinegar",
-"surname": "SINEGAR",
-"rows": [
-{
-"says": "wife, aged 42, CORDWAINER · born at Berkley, Gloucestershire",
-"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
-"link": "https://www.freecen.org.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "martha-sinegar",
-"n": 1
-},
-"thomas-sinegar": {
-"name": "Thomas Sinegar",
-"surname": "SINEGAR",
-"rows": [
-{
-"says": "head, aged 42, LABOURER · BORN AT BERKLEY, GLOUCESTERSHIRE · of 7 Oxford Road, Bristol",
-"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
-"link": "https://www.freecen.org.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "thomas-sinegar",
 "n": 1
 },
 "john-de-swonhungre": {
@@ -1917,9 +1937,9 @@
 }
 },
 "counts": {
-"named": 158,
+"named": 159,
 "withTreePage": 39,
-"ownPage": 119,
-"mentions": 265
+"ownPage": 120,
+"mentions": 268
 }
 }

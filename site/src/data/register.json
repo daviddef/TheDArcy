@@ -1,10 +1,10 @@
 {
-"entries": 738,
-"distinct": 544,
-"records": 265,
+"entries": 741,
+"distinct": 545,
+"records": 268,
 "tree": 473,
 "grafted": 98,
-"linked": 738,
+"linked": 741,
 "surnames": 185,
 "groups": [
 {
@@ -2204,7 +2204,7 @@
 },
 {
 "surname": "SANIGER",
-"n": 40,
+"n": 41,
 "rows": [
 {
 "name": "Caroline Saniger",
@@ -2427,6 +2427,13 @@
 "name": "Thomas Saniger",
 "says": "baptised at Berkeley 12 DECEMBER 1711, father WILLIAM Saniger · the tree gives his birth as 11 December 1711",
 "source": "record · Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Thomas Saniger",
+"says": "THOMAS SINEGAR, 30, at Sion Road, Johns Place, St Philip & Jacob Without, 1841 · with Martha 31, James 11, LYDIA 9, Thomas 7, Martha 2 — HO107/378 bk5 f.40 p.26 sch.1633 · and in 1851, aged 42, a labourer at 7 Oxford Road BORN BERKLEY, GLOUCESTERSHIRE",
+"source": "record · 1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
@@ -3515,6 +3522,47 @@
 ]
 },
 {
+"surname": "SINEGAR",
+"n": 5,
+"rows": [
+{
+"name": "Lyddya Sinegar",
+"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Lydia Sinegar",
+"says": "baptised at Bristol, St Philip and Jacob, 28 JANUARY 1866 · father JAMES SINEGAR, mother Laura — Bristol Archives P/St P&J/R/2/24 · the third Lydia in three generations of this Bristol household",
+"source": "record · 1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Martha Sinegar",
+"says": "wife, aged 42, CORDWAINER · born at Berkley, Gloucestershire",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Thomas Sinegar",
+"says": "head, aged 42, LABOURER · BORN AT BERKLEY, GLOUCESTERSHIRE · of 7 Oxford Road, Bristol",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Thomas Sinegar",
+"says": "married JULIA MARSH at Bristol, St Matthias, 28 MAY 1871 · father THOMAS SINEGAR — Bristol Archives P/St.Mat/R/2/b",
+"source": "record · 1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "SUTTON",
 "n": 5,
 "rows": [
@@ -4088,33 +4136,6 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/hedwig-von-oldenburg",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "SINEGAR",
-"n": 3,
-"rows": [
-{
-"name": "Lyddya Sinegar",
-"says": "aged 70 · “Independent” · born outside the county · living in the Wakefield household — one of the eleven spellings of Saniger, and the tree names Hannah's mother Lydia",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Martha Sinegar",
-"says": "wife, aged 42, CORDWAINER · born at Berkley, Gloucestershire",
-"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Thomas Sinegar",
-"says": "head, aged 42, LABOURER · BORN AT BERKLEY, GLOUCESTERSHIRE · of 7 Oxford Road, Bristol",
-"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
 }
 ]
 },

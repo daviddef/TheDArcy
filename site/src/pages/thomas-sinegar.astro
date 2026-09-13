@@ -1,0 +1,63 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/thomas-sinegar.json";
+---
+<Base
+  title="Thomas Sinegar"
+  eyebrow={`St Philip and Jacob, Bristol · ${d.found}`}
+  dek="A labourer from Berkeley living a mile from Hannah Wakefield, with a daughter named Lydia — and Hannah's mother, on the tree, was Lydia.">
+
+  <section class="blk">
+    <p class="lede">{d.lede}</p>
+    <div class="note" style="margin-top:1.2rem"><strong>{d.who}</strong></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What is on record</div>
+    <h2 style="margin-top:.4rem">Five entries, sixty-three years</h2>
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
+      {d.records.map((r) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono small" style="color:var(--ink-3)">{r.when}</span></div>
+          <p style="margin-top:.35rem">{r.what}</p>
+          <p class="small" style="margin-top:.35rem;color:var(--ink-2)">{r.where}</p>
+          <p class="small" style="margin-top:.3rem">{r.note}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The case for him</div>
+    <h2 style="margin-top:.4rem">Four things that line up</h2>
+    <ol class="dek" style="margin-top:1rem">
+      {d.case.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
+    </ol>
+  </section>
+
+  <section class="blk">
+    <div class="lab">And the case against calling it proved</div>
+    <h2 style="margin-top:.4rem">What is missing</h2>
+    <ul class="dek" style="margin-top:1rem">
+      {d.against.map((x) => (<li style="margin-bottom:.5rem">{x}</li>))}
+    </ul>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.verdict}</strong>
+      <span class="chip inf">a strong inference, not a document</span>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>And an apology to an earlier pass</h2>
+    <p class="lede">This was written up once already, weeks ago, and called the best lead the archive
+    had. It was then overtaken by my own conclusion that Hannah could not have been born in
+    Gloucestershire — a conclusion built on one tick in the 1841 census, which turned out to be
+    wrong. Three days of work went to a Somerset parish instead.</p>
+    <div class="note" style="margin-top:1.3rem">
+      The lead was right the first time. <a href={u("/berkeley-woman")}>What was wrong with me →</a> ·
+      <a href={u("/chew-magna")}>Where I went instead →</a> ·
+      <a href={u("/saniger-line")}>Her six generations →</a>
+    </div>
+  </section>
+</Base>
