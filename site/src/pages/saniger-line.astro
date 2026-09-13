@@ -1,0 +1,56 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/saniger-line.json";
+---
+<Base
+  title="Six generations at Berkeley"
+  eyebrow={`${d.count.gens} generations · found ${d.found}`}
+  dek="The line this archive called untestable, tested. Three baptism dates match the family tree to the day across a hundred and thirty years.">
+
+  <section class="blk">
+    <p class="lede">{d.lede}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Berkeley St Mary the Virgin</div>
+    <h2 style="margin-top:.4rem">The chain, oldest first</h2>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
+      {d.gens.map((g) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong>{g.who}</strong></div>
+          <p style="margin-top:.35rem">{g.ev}
+            {g.rec !== "—" && <span class="small" style="color:var(--ink-2)"> · {g.rec}</span>}</p>
+          <p class="small" style="margin-top:.35rem">
+            <span style="color:var(--ink-3)">Tree:</span> {g.tree} — {g.note}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What it means for the tree</div>
+    <h2 style="margin-top:.4rem">It was right, and I could not see it</h2>
+    <p class="lede">{d.verdict}</p>
+    <div class="note" style="margin-top:1.3rem">
+      This is the second lesson of the same day. The first was that a record not reachable here is
+      not a record that does not exist. The second is that a claim without a citation is not the same
+      as a claim without a source. <a href={u("/coverage")}>What every null here was really
+      measuring →</a>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The two questions left</h2>
+    <ol class="dek">
+      <li style="margin-bottom:.6rem"><strong>Catherine Cotton.</strong> {d.cotton}</li>
+      <li><strong>Hannah's baptism.</strong> {d.gap}
+        <a href={u("/berkeley-woman")}>Why →</a></li>
+    </ol>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/saniger-place")}>Where the name comes from →</a> ·
+      <a href={u("/berkeley")}>The parish →</a> ·
+      <a href={u("/behind-the-paywall")}>How these were found →</a></p>
+  </section>
+</Base>

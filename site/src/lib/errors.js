@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Announced Jabez and Zillah Wakefield as “two children nobody here had ever heard of”, found in the 1851 census.",
+    truth: "Both are on the General Hewitt passenger register, which this archive transcribed and published in July, together with an Ephraim aged five. They sailed with their parents, married in Queensland in 1863 and 1871, and Jabez was buried there in 1903.",
+    why: "I checked the finding against the family tree, which does not have them, and not against this archive's own pages, which do. The manifest was three clicks away and I had written the page it sits on.",
+    lesson: "Check a discovery against what the archive already holds before calling it new. The tree is not the archive.",
+    href: "/general-hewitt",
+  },
+  {
+    when: "13 September 2026",
     what: "Built three days of research, two new pages and the top of the errand list on the claim that Hannah Saniger was not born in Gloucestershire.",
     truth: "The 1851 census, taken at Drivers Fields in the same house as the 1841 one, gives her birth town as BERKELEY and her birth county as GLOUCESTERSHIRE — which is exactly what the family tree had said from the beginning.",
     why: "The whole edifice rested on one tick in the 1841 census: the column that asks only whether a person was born in the same county, yes or no. That is the weakest statement a census makes. I treated it as load-bearing because it was the only thing I had, argued from it for days, excluded 81 households with it, catalogued 36 chapel registers because of it, and built a page for a Somerset parish on the strength of it — without ever putting it beside the next census, which asks WHERE rather than WHETHER and was one search away the entire time.",

@@ -12,6 +12,22 @@
    "href": "/berkeley-woman"
   },
   {
+   "index": "FindMyPast",
+   "place": "Berkeley St Mary the Virgin, baptisms",
+   "holds": "one partial index and no other",
+   "test": "HANNAH SMITH at Berkeley 1795–1815: nineteen results, and the only baptism collection returning anything for Berkeley is England Births & Baptisms 1538-1975, the FamilySearch index. FindMyPast's own Gloucestershire Baptisms covers Bristol parishes and does not reach Berkeley.",
+   "means": "It is enough to put six Saniger generations on record. It is not enough to find Hannah, whose brothers of 1801, 1803 and 1808 are in it and who is not. Gloucestershire's parish registers are an Ancestry collection.",
+   "href": "/saniger-line"
+  },
+  {
+   "index": "British Newspaper Archive",
+   "place": "England, Ireland and Scotland, 1827",
+   "holds": "richly — and its date filters cannot be driven from a URL",
+   "test": "A control on the word “Chatham” for May–December 1827 returns 4,733 articles.",
+   "means": "Seventeen notices of Robert D'Arcy's death were found once the filters were set by hand. The archive is deep; the obstacle was an interface, and this is the only holding on this page where the limit was mine rather than the source's.",
+   "href": "/obituary"
+  },
+  {
    "index": "FreeREG",
    "place": "Berkeley St Mary, Gloucestershire",
    "holds": "to 1677 only",

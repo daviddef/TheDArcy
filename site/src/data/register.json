@@ -1,10 +1,10 @@
 {
-"entries": 719,
+"entries": 723,
 "distinct": 543,
-"records": 246,
+"records": 250,
 "tree": 473,
 "grafted": 98,
-"linked": 719,
+"linked": 723,
 "surnames": 184,
 "groups": [
 {
@@ -1799,7 +1799,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 46,
+"n": 48,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -1956,6 +1956,13 @@
 "kind": "record"
 },
 {
+"name": "Jabez Wakefield",
+"says": "married in Queensland 1863 and buried there 1903 · born Bristol 1843, he sailed on the General Hewitt at eleven",
+"source": "record · Queensland Marriages / Burials & Memorials (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "James Wakefield",
 "says": "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have",
 "source": "record · Queensland death index 1857/B/135",
@@ -2061,6 +2068,13 @@
 "kind": "record"
 },
 {
+"name": "Zillah Wakefield",
+"says": "married in Queensland 1871 · born Bristol 1845, she sailed on the General Hewitt at eight",
+"source": "record · Queensland Marriages / Burials & Memorials (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Aaron Wakefield",
 "says": "1840–1896 · Plumber · England",
 "source": "family tree",
@@ -2127,7 +2141,7 @@
 },
 {
 "surname": "SANIGER",
-"n": 38,
+"n": 40,
 "rows": [
 {
 "name": "Caroline Saniger",
@@ -2347,6 +2361,13 @@
 "kind": "record"
 },
 {
+"name": "Thomas Saniger",
+"says": "baptised at Berkeley 12 DECEMBER 1711, father WILLIAM Saniger · the tree gives his birth as 11 December 1711",
+"source": "record · Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "William Saniger",
 "says": "head, aged 27, SMITH JOURNEYMAN, of Oxford Road · born CHEW MAGNA, SOMERSET",
 "source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
@@ -2357,6 +2378,13 @@
 "name": "William Saniger",
 "says": "baptised at Berkeley 6 SEPTEMBER 1801, father JOHN Saniger · Hannah's brother",
 "source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "William Saniger",
+"says": "baptised at Berkeley 12 OCTOBER 1679, father WILLIAM Saniger · the family tree gives 12 October 1679 — the same day",
+"source": "record · Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },

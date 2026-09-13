@@ -1,0 +1,65 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/wakefields.json";
+---
+<Base
+  title="The Wakefields"
+  eyebrow={`Stroud · Bristol · Brisbane · built ${d.built}`}
+  dek="A mason from Stroud who married a Berkeley woman in Bristol, kept the same trade for thirty years, and took six of his children to Queensland.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <div class="lab">James Wakefield, 1806–1857</div>
+    <h2 style="margin-top:.4rem">A life in six records</h2>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>
+          {d.life.map(([what, when, where]) => (
+            <tr><td class="small" style="white-space:nowrap"><strong>{what}</strong></td>
+                <td class="m" style="white-space:nowrap">{when}</td>
+                <td>{where}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:1.3rem"><strong>{d.trade}</strong></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Nine children</div>
+    <h2 style="margin-top:.4rem">Two died, one is unaccounted for, six sailed</h2>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Child</th><th class="m">Born</th><th>What is known</th></tr></thead>
+        <tbody>
+          {d.children.map(([n, b, note]) => (
+            <tr><td><strong>{n}</strong></td><td class="m">{b}</td><td class="small">{note}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1rem">
+      <a href={u("/general-hewitt")}>The passenger register →</a> ·
+      <a href={u("/drivers-fields")}>The 1841 household →</a> ·
+      <a href={u("/berkeley-woman")}>The 1851 household →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">A loose end tied</div>
+    <h2 style="margin-top:.4rem">Matilda Webb</h2>
+    <p class="lede">{d.webb}</p>
+    <p class="dek" style="margin-top:1rem">It is the sort of thing an archive only notices when it
+    finally learns a man's mother's name.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What is not settled</h2>
+    <div class="note">{d.open} <span class="chip inf">an identification</span></div>
+    <p class="small" style="margin-top:1.3rem">
+      <a href={u("/people/james-wakefield")}>James Wakefield →</a> ·
+      <a href={u("/people/hannah-saniger")}>Hannah Saniger →</a> ·
+      <a href={u("/saniger-line")}>Her six generations at Berkeley →</a></p>
+  </section>
+</Base>

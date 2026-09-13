@@ -397,6 +397,16 @@ rec("Robert D'Arcy", "\u201cAt Chatham, on the 13th instant, Major-General D'Arc
 rec("Robert D'Arcy", "\u201cOn Saturday Major-General D'Arcy, whose death we announced last week, WAS INTERRED AT CHATHAM WITH MILITARY HONOURS\u201d \u00b7 Kent Herald, 24 May 1827 \u2014 the Saturday was 19 May, the date of entry 1571 in Chatham's burial register", BNA, BNA_L)
 rec("Robert D'Arcy", "\u201cAt Chatham, AT AN ADVANCED AGE, Major General D'Arcy\u201d \u00b7 Kent Herald, 17 May 1827 \u2014 and not one of the seventeen notices gives his forename or names a single relative", BNA, BNA_L)
 
+
+BKY2 = "record \u00b7 Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)"
+FMP_L6 = "https://www.findmypast.com.au/"
+rec("William Saniger", "baptised at Berkeley 12 OCTOBER 1679, father WILLIAM Saniger \u00b7 the family tree gives 12 October 1679 \u2014 the same day", BKY2, FMP_L6)
+rec("Thomas Saniger", "baptised at Berkeley 12 DECEMBER 1711, father WILLIAM Saniger \u00b7 the tree gives his birth as 11 December 1711", BKY2, FMP_L6)
+
+QLD2 = "record \u00b7 Queensland Marriages / Burials & Memorials (FindMyPast)"
+rec("Jabez Wakefield", "married in Queensland 1863 and buried there 1903 \u00b7 born Bristol 1843, he sailed on the General Hewitt at eleven", QLD2, FMP_L6)
+rec("Zillah Wakefield", "married in Queensland 1871 \u00b7 born Bristol 1845, she sailed on the General Hewitt at eight", QLD2, FMP_L6)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

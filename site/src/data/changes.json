@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "18 passes · 146 changes",
+ "eyebrow": "18 passes · 151 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -35,7 +35,12 @@
     "Drove the newspaper archive's date filters by hand and found Robert D'Arcy's death notices — seventeen of them, in England, Ireland and Scotland.",
     "Confirmed his death as 13 May 1827 from papers printed within four days of it, replacing a Victorian printed roll as the authority.",
     "Found his funeral, which nobody here knew about: interred at Chatham WITH MILITARY HONOURS on Saturday 19 May 1827 — the exact date of entry 1571 in the parish register.",
-    "And established that the press names nobody he was related to. Not one of the seventeen gives even his forename. The best remaining route to his parentage is now closed."
+    "And established that the press names nobody he was related to. Not one of the seventeen gives even his forename. The best remaining route to his parentage is now closed.",
+    "Pushed the Saniger line back two more generations: Thomas baptised Berkeley 12 December 1711, father William; William baptised there 12 October 1679, father William. Both match the tree to the day.",
+    "Found Thomas Saniger's marriage to Catherine Cotton — and then failed to find Catherine anywhere else, which is the one new question this opened.",
+    "Traced Jabez and Zillah Wakefield to Queensland, where they married in 1863 and 1871.",
+    "Corrected my own claim that Jabez and Zillah were children nobody here had heard of. They are on the passenger register this archive published in July.",
+    "Built /saniger-line and /wakefields, and added the Berkeley baptism gap and the newspaper archive to /coverage."
    ],
    "found": "The answer was the one the family tree gave before any of this started; the family's oldest English records were behind a subscription rather than lost; and a general who was national news for a fortnight was buried without a single newspaper naming his father."
   },
