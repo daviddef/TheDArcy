@@ -1,142 +1,18 @@
 ---
+/* The box is one component in @daviddef/archive-kit, shared by all seven
+   archives. What stays here is what belongs to this archive: how it describes
+   itself, and the things worth trying. */
 import Base from "../layouts/Base.astro";
-import Blk from "../components/Blk.astro";
-import Scroll from "../components/Scroll.astro";
+import Search from "@daviddef/archive-kit/components/Search.astro";
 import { u } from "../lib/url.js";
 
-/* One box over the whole archive. The index is fetched rather than inlined —
-   it is about 300 KB, which is nothing to download once and far too much to
-   put inside every page of the site. */
-const SPELLINGS = [
-  ["D'Arcy", "Darcy · D'Arcey · Darcey · Ó Dorchaidhe"],
-  ["Sneyd", "Snead · Sneed · Snayd · Sneid"],
-  ["Saniger", "Sainger · Sanigar · SANIGOR · SANIGRE · Sanigear · Siniger · Sanninger · Sanigaer · Sinager · Sinagar · Sinigar · Sinneger · Sinnegar · Sinnigar · Sinegar · Synegar · Synager · Singer · Swanhanger"],
-  ["Mulcahy", "Mulchy · Mulchay · Mulcahey"],
-  ["Blum", "Blume"],
-  ["Murdoch", "Murdock"],
-];
+const hints = [["Saniger", "the archive's oldest claim"], ["Chatham", "the parish the crossing starts in"], ["Hornby", "the claim, and where it stops being evidence"], ["Sneyd", "the disproved graft"], ["General Hewitt", "the voyage out, 1854"], ["inquest", "Miriam's sworn evidence, 1902"]];
 ---
-<Base
-  title="Search the Archive"
-  eyebrow="One box, every page"
-  dek="People, places, register entries, families and every page of this site in one search — and it knows that Saniger, Sainger and Sinnegar are the same family.">
-
+<Base title="Search" eyebrow={"Everything this archive can point at, in one box"} dek="People, places, register entries, families and every page — searched together.">
   <section class="blk">
-    <label for="q" class="vh">Search the archive</label>
-    <input id="q" type="search" autocomplete="off" autofocus
-      placeholder="A name, a year, a place, a record — Sneyd, 1655, Wanswell, Mouquet, B2455…"
-      style="width:100%;max-width:60ch;padding:.75rem .9rem;font:inherit;font-size:1.05rem;
-             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
-
-    <div style="margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center">
-      <button type="button" class="fchip on" data-k="">Everything</button>
-      <button type="button" class="fchip" data-k="Person">People</button>
-      <button type="button" class="fchip" data-k="Register">Register</button>
-      <button type="button" class="fchip" data-k="Page">Pages</button>
-      <button type="button" class="fchip" data-k="Place">Places</button>
-      <button type="button" class="fchip" data-k="Family">Families</button>
-    </div>
-
-    <p class="small" id="status" style="margin-top:.9rem" aria-live="polite">Loading the index…</p>
-    <div id="hits" style="margin-top:1.1rem;display:flex;flex-direction:column;gap:.7rem"></div>
-    <p class="small" id="more" hidden></p>
+    <Search base={u("/")} hints={hints} placeholder="Saniger · Chatham · Parramatta · Hornby · Sneyd · 39th" />
+    <p class="dek" style="margin-top:1.4rem">This searches <strong>what the archive says</strong>,
+    not the registers themselves. A name that returns nothing here has not been read yet — which is
+    itself worth knowing. <a href={u("/searched/")}>What has already been looked for &rarr;</a></p>
   </section>
-
-  <Blk label="Why this box is not a plain text match" title="It knows the spellings move">
-    <p class="dek">Every name in this family is written down more than one way, and a reader who
-    searches the spelling they were told will otherwise miss the record that matters. Type any form
-    below and the search returns all of them.</p>
-
-    <Scroll>
-      <table>
-        <thead><tr><th>Search this</th><th>…and you also get</th></tr></thead>
-        <tbody>
-          {SPELLINGS.map(([a, b]) => (
-            <tr><td><strong>{a}</strong></td><td class="small">{b}</td></tr>
-          ))}
-        </tbody>
-      </table>
-    </Scroll>
-
-    <p class="small" style="margin-top:1rem">The eleven forms of <em>Saniger</em> are not invented
-    for this page — they are the spellings actually found in the Gloucestershire parish registers.
-    <a href={u("/berkeley/")}>Where they came from →</a> · <a href={u("/name/")}>Why spelling is not
-    identity →</a></p>
-  </Blk>
-
-  <script is:inline define:vars={{ base: u("") }}>
-    (function () {
-      var q = document.getElementById("q"), hits = document.getElementById("hits");
-      var status = document.getElementById("status"), more = document.getElementById("more");
-      var chips = [].slice.call(document.querySelectorAll(".fchip"));
-      var idx = null, kind = "";
-
-      fetch(base + "/searchindex.json")
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          idx = d;
-          status.textContent = d.length + " entries indexed. Start typing.";
-          run();
-        })
-        .catch(function () { status.textContent = "The index could not be loaded."; });
-
-      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) {
-        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
-
-      function run() {
-        if (!idx) return;
-        var terms = q.value.toLowerCase().replace(/[’]/g, "'").split(/\s+/).filter(Boolean);
-        hits.innerHTML = "";
-        more.hidden = true;
-        if (!terms.length && !kind) {
-          status.textContent = idx.length + " entries indexed. Start typing.";
-          return;
-        }
-        var out = [];
-        for (var i = 0; i < idx.length && out.length < 4000; i++) {
-          var r = idx[i];
-          if (kind && r.k !== kind) continue;
-          var ok = true;
-          for (var t = 0; t < terms.length; t++) {
-            if (r.q.indexOf(terms[t]) === -1) { ok = false; break; }
-          }
-          if (ok) out.push(r);
-        }
-        // a title that starts with the query is what the reader meant
-        var first = terms[0] || "";
-        out.sort(function (a, b) {
-          var as = a.t.toLowerCase().indexOf(first), bs = b.t.toLowerCase().indexOf(first);
-          as = as === 0 ? 0 : as > 0 ? 1 : 2;
-          bs = bs === 0 ? 0 : bs > 0 ? 1 : 2;
-          return as - bs || a.t.localeCompare(b.t);
-        });
-        status.textContent = out.length + (out.length === 1 ? " match" : " matches");
-        var show = out.slice(0, 120);
-        hits.innerHTML = show.map(function (r) {
-          return '<div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 14px">' +
-            '<a href="' + base + esc(r.h) + '"><strong>' + esc(r.t) + "</strong></a> " +
-            '<span class="chip inf" style="margin-left:.4rem">' + esc(r.k) + "</span>" +
-            (r.s ? '<p class="small" style="margin-top:.25rem;color:var(--ink-2)">' + esc(r.s) + "</p>" : "") +
-            "</div>";
-        }).join("");
-        if (out.length > show.length) {
-          more.hidden = false;
-          more.textContent = "Showing the first " + show.length + " of " + out.length +
-            ". Add another word to narrow it.";
-        }
-      }
-
-      q.addEventListener("input", run);
-      chips.forEach(function (b) {
-        b.addEventListener("click", function () {
-          kind = b.getAttribute("data-k") || "";
-          chips.forEach(function (o) { o.classList.toggle("on", o === b); });
-          run();
-        });
-      });
-
-      var pre = new URLSearchParams(location.search).get("q");
-      if (pre) q.value = pre;
-    })();
-  </script>
 </Base>

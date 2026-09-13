@@ -2,7 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
-import Evidence from "../components/Evidence.astro";
+import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
 import { u } from "../lib/url.js";
 import ancestors from "../data/ancestors.json";
 const redacted = ancestors.filter((a) => a.living).length;
