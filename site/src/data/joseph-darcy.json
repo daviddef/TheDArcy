@@ -75,5 +75,105 @@
   "head": "And a wife named Katherine",
   "body": "The Lady's Newspaper of 8 April 1848 carried the same will summary as the Morning Post and got a little further before the scan fails: he left his “property to his wife, KATHE[RINE] D'ARCY, to which she h[as] …”",
   "means": "A name this archive did not have. Joseph D'Arcy married, and his widow outlived him."
- }
+ },
+ "census": {
+  "ref": "1841 census · PRIESTLANDS, Milford, Lymington, Hampshire · HO107/393 book 4, folio 3, page 1, schedule 352",
+  "note": "Twenty people under one roof: the family, a brother, a Mrs Pitt, and eleven servants.",
+  "rows": [
+   [
+    "Joseph",
+    "Darcy",
+    "M",
+    61,
+    1780,
+    "HAMPSHIRE",
+    "the Colonel himself"
+   ],
+   [
+    "Catherine",
+    "Darcy",
+    "F",
+    42,
+    1799,
+    "—",
+    "his wife — the “Kathe[rine]” of the will"
+   ],
+   [
+    "Richard",
+    "Darcy",
+    "M",
+    57,
+    1784,
+    "—",
+    "of Joseph's own generation, in Joseph's house"
+   ],
+   [
+    "Catherine",
+    "Darcy",
+    "F",
+    9,
+    1832,
+    "Hampshire",
+    ""
+   ],
+   [
+    "John",
+    "Darcy",
+    "M",
+    8,
+    1833,
+    "Hampshire",
+    ""
+   ],
+   [
+    "Josephine",
+    "Darcy",
+    "F",
+    6,
+    1835,
+    "Hampshire",
+    ""
+   ],
+   [
+    "Frank",
+    "Darcy",
+    "M",
+    2,
+    1839,
+    "—",
+    ""
+   ],
+   [
+    "Joseph",
+    "Darcy",
+    "M",
+    0,
+    1841,
+    "Hampshire",
+    "born in the census year"
+   ],
+   [
+    "Elizabeth",
+    "PITT",
+    "F",
+    55,
+    1786,
+    "—",
+    "and this is the surname that has been sitting in this family's names for two centuries"
+   ]
+  ],
+  "servants": "Then eleven more: Laura Dillard, Joseph Hyde, Charles Hamby, Thomas Williams, Mary Finch, Jane Jennings, Ann Russ, Harriet Marshall, Rachael Barter, Loise Croucher and Jane Viney. A household of twenty with eleven servants is a gentleman's establishment, not a half-pay officer's cottage."
+ },
+ "hampshire": {
+  "head": "Born in Hampshire",
+  "body": "The 1841 census gives Joseph's birth county as HAMPSHIRE and his age as 61, which is a birth in 1780. Portsea is in Hampshire. This is independent corroboration of the baptism of 19 March 1780 — the entry that survives only because it falls inside a twenty-two-month transcript — from a census taken sixty-one years later.",
+  "chip": "documented twice"
+ },
+ "pitt": {
+  "head": "Elizabeth Pitt, aged 55",
+  "body": "Living in the house in 1841, between the youngest child and the servants, is an ELIZABETH PITT, born about 1786. This archive's line runs through GEORGE PITT D'ARCY — the name recurs for four generations, down to a George Pitt D'Arcy born at Brisbane in 1864 — and nobody has ever known where the Pitt came from.",
+  "careful": "A census does not say who she was. She is not called a relative, because the 1841 census does not record relationships at all. What can be said is that a woman named Pitt was living in the household of Robert D'Arcy's son in 1841, and that Robert D'Arcy's other son had carried Pitt as a middle name since 1783. That is a connection worth chasing and it is not yet an explanation.",
+  "chip": "a lead, and a good one"
+ },
+ "richard": "And a RICHARD DARCY, aged 57, born about 1784 — in the house, of Joseph's own generation and a year younger than George Pitt D'Arcy. The archive has never heard of him. Robert and Jean married at Portsea in June 1779 and baptised Joseph there in March 1780; a Richard of 1784 fits that family exactly, and the Portsea transcript stops in 1782 so his baptism would never have been found in it."
 }

@@ -40,6 +40,21 @@
 "slug": "beryl-sneyd",
 "n": 1
 },
+"catherine-sneyd-nee-mulcahy": {
+"name": "Catherine Sneyd, née Mulcahy",
+"surname": "SNEYD",
+"rows": [
+{
+"says": "died 25/07/1858 · parents: Ellen Regan · Thomas Mulcahy",
+"source": "record · Queensland death index 1858/B/253",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "catherine-sneyd-nee-mulcahy",
+"n": 1
+},
 "ernest-vivian-william-sneyd": {
 "name": "Ernest Vivian William Sneyd",
 "surname": "SNEYD",
@@ -230,6 +245,21 @@
 "slug": "vivian-claud-sneyd",
 "n": 1
 },
+"eliza-d-arcy-nee-keeling": {
+"name": "Eliza D'Arcy, née Keeling",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "died 01/07/1918 · parents: — · — Keeling",
+"source": "record · Queensland death index 1918/B/27431",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "eliza-d-arcy-nee-keeling",
+"n": 1
+},
 "francis-d-arcy": {
 "name": "Francis D'Arcy",
 "surname": "D'ARCY",
@@ -245,6 +275,21 @@
 "slug": "francis-d-arcy",
 "n": 1
 },
+"george-lindesay-d-arcy": {
+"name": "George Lindesay D'Arcy",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "died 13/07/1901 · parents: — · George Pitt D'Arcy",
+"source": "record · Queensland death index 1901/B/1510",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "george-lindesay-d-arcy",
+"n": 1
+},
 "ivy-marion-d-arcy": {
 "name": "Ivy Marion D'Arcy",
 "surname": "D'ARCY",
@@ -258,6 +303,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "ivy-marion-d-arcy",
+"n": 1
+},
+"ivy-miriam-d-arcy-nee-sneyd": {
+"name": "Ivy Miriam D'Arcy, née Sneyd",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "died 11/06/1979 · parents: Martha Blum · Arthur William Hartley Sneyd",
+"source": "record · Queensland death index 1979/B/96370",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "ivy-miriam-d-arcy-nee-sneyd",
 "n": 1
 },
 "katherine-d-arcy": {
@@ -280,6 +340,11 @@
 "surname": "D'ARCY",
 "rows": [
 {
+"says": "died 10/11/1936 · parents: Ida Kathleen Atkinson · George Pitt",
+"source": "record · Queensland death index 1936/B/33575",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+},
+{
 "says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
 "source": "record · Trove, Australian newspapers",
 "link": "https://nla.gov.au/nla.news-article37013266"
@@ -288,7 +353,7 @@
 "inTree": false,
 "treeLink": "",
 "slug": "lindsay-atkinson-d-arcy",
-"n": 1
+"n": 2
 },
 "margarett-maria-isabella-d-arcy": {
 "name": "Margarett Maria Isabella D'Arcy",
@@ -303,6 +368,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "margarett-maria-isabella-d-arcy",
+"n": 1
+},
+"maria-d-arcy-nee-white": {
+"name": "Maria D'Arcy, née White",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "died 04/09/1856 · parents: Maria Gardener · John Javis White",
+"source": "record · Queensland death index 1856/B/50",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "maria-d-arcy-nee-white",
 "n": 1
 },
 "ephraim-wakefield": {
@@ -603,6 +683,36 @@
 "inTree": false,
 "treeLink": "",
 "slug": "susanna-saniger",
+"n": 1
+},
+"maria-atwell-nee-rossiter": {
+"name": "Maria Atwell, née Rossiter",
+"surname": "ATWELL",
+"rows": [
+{
+"says": "died 24/03/1889 · parents: Maria Beecham · James Rossiter",
+"source": "record · Queensland death index 1889/B/21863",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "maria-atwell-nee-rossiter",
+"n": 1
+},
+"sarah-atwell-nee-wright": {
+"name": "Sarah Atwell, née Wright",
+"surname": "ATWELL",
+"rows": [
+{
+"says": "died 12/05/1941 · parents: Agnes Scott · John Wright",
+"source": "record · Queensland death index 1941/C/2242",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "sarah-atwell-nee-wright",
 "n": 1
 },
 "agnies-sainger": {
@@ -920,6 +1030,66 @@
 "slug": "william-sainger",
 "n": 3
 },
+"jane-atkinson-nee-creech": {
+"name": "Jane Atkinson, née Creech",
+"surname": "ATKINSON",
+"rows": [
+{
+"says": "died 16/08/1885 · parents: — · Samuel Creech",
+"source": "record · Queensland death index 1885/B/18064",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "jane-atkinson-nee-creech",
+"n": 1
+},
+"barbara-murdoch-nee-atwell": {
+"name": "Barbara Murdoch, née Atwell",
+"surname": "MURDOCH",
+"rows": [
+{
+"says": "died 17/10/1989 · b. 1898 · parents: Sarah Wright · James Atwell",
+"source": "record · Queensland death index 1989/58109",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "barbara-murdoch-nee-atwell",
+"n": 1
+},
+"catherine-jane-murdoch-nee-matson": {
+"name": "Catherine Jane Murdoch, née Matson",
+"surname": "MURDOCH",
+"rows": [
+{
+"says": "died 07/08/1914 · parents: Mary Abbot · William Matson",
+"source": "record · Queensland death index 1914/B/19789",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "catherine-jane-murdoch-nee-matson",
+"n": 1
+},
+"william-james-frazer-murdoch": {
+"name": "William James Frazer Murdoch",
+"surname": "MURDOCH",
+"rows": [
+{
+"says": "died 26/05/1946 · parents: Catherine Jane Matson · William",
+"source": "record · Queensland death index 1946/B/6628",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "william-james-frazer-murdoch",
+"n": 1
+},
 "david-oliver": {
 "name": "David Oliver",
 "surname": "OLIVER",
@@ -999,6 +1169,21 @@
 "treeLink": "",
 "slug": "thomas-sinegar",
 "n": 2
+},
+"ida-kathleen-darcy-nee-atkinson": {
+"name": "Ida Kathleen Darcy, née Atkinson",
+"surname": "DARCY",
+"rows": [
+{
+"says": "died 13/01/1937 · parents: Jane Creech · Paul Atkinson",
+"source": "record · Queensland death index 1937/B/34178",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "ida-kathleen-darcy-nee-atkinson",
+"n": 1
 },
 "john-maddock-jones": {
 "name": "John Maddock Jones",
@@ -1233,6 +1418,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "william-bell",
+"n": 1
+},
+"mary-ann-blume-nee-o-brien": {
+"name": "Mary Ann Blume, née O'Brien",
+"surname": "BLUME",
+"rows": [
+{
+"says": "died 21/08/1927 · parents: Hannah Scanlan · Timothy O'Brien",
+"source": "record · Queensland death index 1927/B/2193",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "mary-ann-blume-nee-o-brien",
 "n": 1
 },
 "a-graham-butler": {
@@ -2002,9 +2202,9 @@
 }
 },
 "counts": {
-"named": 163,
-"withTreePage": 39,
-"ownPage": 124,
-"mentions": 280
+"named": 180,
+"withTreePage": 43,
+"ownPage": 137,
+"mentions": 299
 }
 }

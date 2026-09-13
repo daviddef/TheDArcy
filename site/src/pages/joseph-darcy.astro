@@ -63,6 +63,45 @@ import d from "../data/joseph-darcy.json";
   </section>
 
   <section class="blk">
+    <div class="lab">{d.census.ref}</div>
+    <h2 style="margin-top:.4rem">Priestlands, 1841</h2>
+    <p>{d.census.note}</p>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>Name</th><th class="m">Age</th><th class="m">Born</th><th>Birth county</th><th></th></tr></thead>
+        <tbody>
+          {d.census.rows.map(([fn, sn, sx, age, by, cty, note]) => (
+            <tr style={sn === "PITT" || fn === "Richard" ? "background:var(--tint)" : ""}>
+              <td><strong>{fn}</strong> <span class="small" style="color:var(--ink-3)">{sn}</span></td>
+              <td class="m">{age}</td><td class="m">{by}</td>
+              <td class="small">{cty}</td><td class="small">{note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:.9rem">{d.census.servants}</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.hampshire.head}.</strong> {d.hampshire.body}
+      <span class="chip doc">{d.hampshire.chip}</span>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Where the name came from?</div>
+    <h2 style="margin-top:.4rem">{d.pitt.head}</h2>
+    <p class="lede">{d.pitt.body}</p>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>Carefully.</strong> {d.pitt.careful}
+      <span class="chip inf">{d.pitt.chip}</span>
+      <a href={u("/george-pitt")}>George Pitt D'Arcy →</a>
+    </div>
+    <p class="dek" style="margin-top:1.2rem">{d.richard}
+      <a href={u("/portsea")}>Why his baptism would never have been found →</a></p>
+  </section>
+
+  <section class="blk">
     <div class="lab">Sixty-eight years</div>
     <h2 style="margin-top:.4rem">What is on record</h2>
     <div class="scroll" style="margin-top:1.1rem">
