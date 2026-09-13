@@ -1,0 +1,33 @@
+{
+ "found": "13 September 2026",
+ "lede": "Joseph D'Arcy is the first person in this archive's English line — baptised at Portsea on 19 March 1780, son of Robert and Jean, the record that survived inside a twenty-two-month transcript. After that he disappeared. He signed his sister's marriage at Chatham in 1806 and then nothing, for a hundred and forty years of family memory. Here is the rest of him.",
+ "death": {
+  "notice": "London Evening Standard, Friday 11 February 1848, page 4",
+  "text": "On the 7th inst., at Homestead, Lymington, Hants, LIEUTENANT COLONEL D'ARCY, LATE ROYAL ARTILLERY, K.L.S., in the 69th year of his age.",
+  "reg": "Death registered at Lymington, Hampshire, March quarter 1848 — volume 8, page 159"
+ },
+ "will": {
+  "notice": "Morning Post, Monday 3 April 1848, page 2",
+  "text": "LIEUTENANT-COLONEL JOSEPH D'ARCY, [late] of the Royal Artillery, formerly of PRIESTLANDS, NEAR LYMINGTON, but late of HOME MEAD, SOUTHAMPTON, who died on the 7th of February, at the age of 69, had EXECUTED HIS WILL IN THE MONTH OF FEBRUARY, 1844, leaving …",
+  "cut": "The article goes on to summarise what he left, and the digitised text stops there. The will itself was proved in 1848 and is at Kew."
+ },
+ "kls": {
+  "head": "And three letters after his name",
+  "body": "One notice gives him as “Lieutenant Colonel D'Arcy, late Royal Artillery, K.L.S.” — Knight of the Royal Order of the Lion and Sun, a Persian decoration. It was given to British officers who served on the missions to the Shah's army in the 1810s and 1820s.",
+  "careful": "This archive has not yet traced his Persian service, and will not assert it from three letters. What the letters establish is that he held a foreign order, which for a Royal Artillery officer of that generation points one way."
+ },
+ "career": [
+  ["19 March 1780", "Baptised at Portsea St Mary, son of ROBERT and JEAN"],
+  ["1795", "In the Royal Artillery officers' list, at about fifteen"],
+  ["1798", "Army List"],
+  ["1802, 1803, 1826", "Commission registers"],
+  ["1803, 1804, 1806", "Officer promotions"],
+  ["1806", "Witness at his sister Margarett Maria Isabella's marriage at Chatham"],
+  ["1840–1844", "Still in the Army Lists"],
+  ["February 1844", "Executes his will"],
+  ["7 February 1848", "Dies at Homestead, Lymington, in his 69th year"]
+ ],
+ "son": "And he left at least one son. The Cork Daily Herald of 3 October 1863 carries a marriage at Lymington of a D'Arcy “son of the late Colonel D'Arcy, R.A.” — the same town, fifteen years on. The OCR loses the groom's forename.",
+ "age": "One number is loose. “In the 69th year of his age” on 7 February 1848 means he was sixty-eight, so born between February 1779 and February 1780. He was baptised on 19 March 1780. A birth in the first weeks of 1780 fits; a birth in 1779 with a late christening fits better. It is the ordinary slack in a stated age and it does not unseat the identification.",
+ "matters": "The archive now holds Robert D'Arcy's marriage, his career, his death and his funeral; his son George Pitt D'Arcy's marriage and Irish service; and his son Joseph's whole life from a Portsea font to a Hampshire will. Three years ago the family tree had a name and a rumour of Yorkshire."
+}

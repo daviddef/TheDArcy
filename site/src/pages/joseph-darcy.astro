@@ -1,0 +1,64 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/joseph-darcy.json";
+---
+<Base
+  title="Lieutenant-Colonel Joseph D'Arcy"
+  eyebrow={`Portsea 1780 – Lymington 1848 · found ${d.found}`}
+  dek="The first person in this archive's English line, and the one it knew least about. He died a lieutenant-colonel of the Royal Artillery with a Persian knighthood and a will.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <div class="lab">{d.death.notice}</div>
+    <h2 style="margin-top:.4rem">The death</h2>
+    <div class="note" style="border-left-width:3px;margin-top:1rem">
+      <strong style="font-size:1.1em">{d.death.text}</strong>
+      <span class="chip doc">documented</span>
+    </div>
+    <p class="small" style="margin-top:1rem">{d.death.reg}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.will.notice}</div>
+    <h2 style="margin-top:.4rem">And a will</h2>
+    <p class="lede">{d.will.text}</p>
+    <div class="note" style="margin-top:1.2rem">{d.will.cut}
+      <a href={u("/errands")}>On the queue →</a></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">K.L.S.</div>
+    <h2 style="margin-top:.4rem">{d.kls.head}</h2>
+    <p class="lede">{d.kls.body}</p>
+    <div class="note" style="margin-top:1.2rem">{d.kls.careful}
+      <span class="chip inf">a decoration, not yet a posting</span></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Sixty-eight years</div>
+    <h2 style="margin-top:.4rem">What is on record</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          {d.career.map(([when, what]) => (
+            <tr><td class="m" style="white-space:nowrap"><strong>{when}</strong></td><td>{what}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="dek" style="margin-top:1.2rem">{d.son}</p>
+    <div class="note" style="margin-top:1.2rem">{d.age}</div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Why it matters</h2>
+    <p class="lede">{d.matters}</p>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/portsea")}>The baptism →</a> ·
+      <a href={u("/the-corps")}>His father's career →</a> ·
+      <a href={u("/george-pitt")}>His brother →</a> ·
+      <a href={u("/obituary")}>His father's death →</a></p>
+  </section>
+</Base>

@@ -29,10 +29,20 @@ const NUMBERS = [
 const RECENT = changes.days.slice(0, 3);
 
 const more = [
+["/hannah-baptism", "One vowel", "The baptism this archive twice declared missing was indexed the whole time under SANIGOR — one of the very few spellings its own alias list did not carry. A control test proves a source covers a parish. It proves nothing about whether your search string can reach the record."],
+["/saniger-line", "Six generations at Berkeley", "The line this site called untestable for months, tested. Three baptism dates match the family tree TO THE DAY across a hundred and thirty years — and the compiler of that tree had plainly seen the register I could not reach."],
+["/berkeley-woman", "Hannah was a Berkeley woman", "The oldest question here, answered by the next census along — and the answer was the one the tree gave at the start. Three days of my work went to a Somerset parish on the strength of one yes/no tick."],
+["/george-pitt", "Miss Ludlam of Guernsey", "A Wiltshire newspaper of September 1805 calls him \u201cson of Lieut. Colonel D\u2019Arcy\u201d \u2014 and Robert D\u2019Arcy had been gazetted to exactly that rank six months earlier. The first record to make the join anything but an assertion."],
+["/joseph-darcy", "Lieutenant-Colonel Joseph D'Arcy", "The boy baptised at Portsea in 1780, followed to a Hampshire will: Royal Artillery, a Persian knighthood, and a death at Lymington in his sixty-ninth year."],
+["/jean-ward", "South Leith", "The parish this archive called untranscribed holds her baptism, names both her parents, and took one search. Five generations up a Scottish line it had none of at breakfast."],
+["/obituary", "The obituary, 1827", "Seventeen newspapers in three countries announced Major-General D'Arcy's death. Not one gives his first name, and not one names a single relative. That is a fact about the man, not a gap in the archive."],
+["/coverage", "What the indexes actually hold", "Most of what this archive failed to find, it failed to find in places that were never transcribed \u2014 or under spellings it never tried. Ten holdings, measured rather than assumed."],
+["/new-generations", "Not in the tree", "Sixteen people this archive can prove and the family tree has never held. Most of them are women, and most sit in the generation just above where the tree's compiler stopped."],
+["/thomas-sinegar", "Thomas Sinegar", "Hannah's brother, living a mile from her in Bristol, with a daughter named Lydia after their mother and a daughter named Hannah after her."],
 ["/hornby", "The Hornby claim", "The tree runs this line to a Yorkshire earldom. The tree also admits, in its own note, that the join is only 'thought to be' — and then contradicts itself about which earl. Set out in full."],
 ["/berkeley", "Berkeley, Gloucestershire", "The oldest claim in this archive is a yeoman born in 1654. Somebody finally went and read the parish register instead of another family's website — and found forty-four Saingers, three Williams, and a transcript that stops eighteen years too early."],
 ["/chatham", "Chatham", "The Royal Engineers lived at Chatham and so did this family, and nobody had read its register. It holds a general’s burial, his wife’s, his brother officer’s — and a christening eight days before a convict ship sailed."],
-["/sanigers", "The Sanigers, reconstituted", "All 556 Saniger records in Gloucestershire opened one by one and assembled back into 81 households, to answer one question: is Hannah in any of them? She is not — and the census says why."],
+["/sanigers", "The Sanigers, reconstituted", "All 556 Saniger records in Gloucestershire opened one by one and assembled back into 81 households, to answer one question: is Hannah in any of them? The answer given here was no, and it was wrong — she is at Berkeley, under a spelling the search never tried."],
 ["/sneyds", "The Sneyds of the Potteries", "All 551 Staffordshire Sneyd records assembled into households, which finally produces the weaver the tree has been pointing at — and moves one of its dates by twelve years."],
 ["/drivers-fields", "Drivers Fields, 1841", "One page of the 1841 census holds the entire family this archive's oldest claim depends on — James and Hannah Wakefield at St Paul, Bristol, with Miriam aged one, and a seventy-year-old Sinegar widow nobody expected."],
 ["/how-far-back", "How far back does it really go?", "The tree reaches the kings of Denmark. This archive reaches a Gloucestershire yeoman in 1654. The difference is two grafts and about a hundred people \u2014 one unevidenced, one now disproved."],
@@ -52,14 +62,14 @@ const more = [
 ["/searched", "What has been read", "Every source this archive has opened, including the ones that gave nothing. Four of the null results are load-bearing: they are why the Hornby claim is called unevidenced rather than disputed."],
 ["/dna", "What the DNA says", "A living descendant tested. Cutting both rejected grafts — 98 people, thirteen generations, four royal houses — moves her predicted ancestry by 0.39 of a percentage point."],
 ["/timeline", "Timeline", "Lives against the state that governed them. In an archive built almost entirely out of government paper, the state is not background — it is the reason the records exist."],
-["/errands", "Errands", "Nine jobs that need a login, a card or a human being in a reading room. The first is a will, digitised, about £3.50, and it might name Robert D'Arcy's father."],
+["/errands", "Errands", "The jobs that need a card, a reading room or a reply to a letter. One has been written and sent: Gloucestershire Archives, for the Berkeley marriage of 1797 that would give Hannah's mother a surname."],
 ["/who", "Every person named", "The seventy-five people this archive met in documents and had nowhere to put: the constable who recovered a body, the six men who gave six accounts of one death, the convicts who broke open a major's crate."],
 ["/graves", "Graves and burials", "Where this family lies — and two cemetery plot references that two different people are each supposed to occupy."],
 ["/register", "The register", "Every named individual this archive has met anywhere — 586 entries, with the source printed beside each one. Only 113 of them rest on a document. The other 473 come out of the family tree, and 98 of those hang above a graft the archive has already rejected."],
 ["/people", "The people", `Every person the archive can name and publish — ${published} of them, most of whom never continued the line.`],
 ["/places", "Places", `${places.length} places, from Hornby Castle to Boulia. Read the Australian list in order and you can watch a family spread along the Queensland railway.`],
 ["/the-other-archives", "The other archives", "This is one of six, kept to the same method. The D'Arcy line married Defranceski; the Defranceski line had married Falco. All three meet in a living generation that none of the archives publishes."],
-["/corrections", "What this archive got wrong", "Seven mistakes this site published and then corrected, with the cause of each. Five of the seven are the same failure: a number taken from a secondary source and not checked against the record."],
+["/corrections", "What this archive got wrong", `${nOwn} mistakes this site published and then corrected, with the cause of each — and ${nInherited} inherited from the family tree. The largest was building three days of research on a single yes/no tick in a census.`],
 ["/method", "Method", "What 'documented' means here, what 'family lore' means, and the rule that keeps living people out of the build entirely."],
 ];
 ---
@@ -82,9 +92,9 @@ const more = [
     <figcaption class="cap">
       <div class="kick">A family history, kept honestly</div>
       <h1>Twelve generations, and two claims too far.</h1>
-      <p class="sub">Berkeley · Madeley · Hanley · Chatham · Parramatta · Kempsey · Boulia ·
-        Townsville · Brisbane — soldiers, a grocer and a church organist, and the two aristocratic
-        descents this archive had to take off them.</p>
+      <p class="sub">Berkeley · South Leith · Stroud · Madeley · Oswestry · Hanley · Portsea ·
+        Chatham · Bristol · Parramatta · Boulia · Brisbane — soldiers, a grocer, a mason and a church
+        organist, and the two aristocratic descents this archive had to take off them.</p>
     </figcaption>
   </figure>
 

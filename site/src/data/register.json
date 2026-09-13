@@ -1,10 +1,10 @@
 {
-"entries": 750,
+"entries": 751,
 "distinct": 548,
-"records": 277,
+"records": 278,
 "tree": 473,
 "grafted": 98,
-"linked": 750,
+"linked": 751,
 "surnames": 187,
 "groups": [
 {
@@ -1170,7 +1170,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 98,
+"n": 99,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1275,6 +1275,13 @@
 "says": "ROYAL ARTILLERY · in the officers' list from 1795, the Army List of 1798, the commission registers of 1802, 1803 and 1826, and the Army Lists of 1840–1844 — commissioned at about fifteen and still listed at sixty-four",
 "source": "record · British Army Royal Artillery Officers 1716-1899 and Army Lists (FindMyPast, index only)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "died 7 FEBRUARY 1848 at Homestead, Lymington, Hampshire, in his 69th year · LIEUTENANT-COLONEL, LATE ROYAL ARTILLERY, K.L.S. · formerly of Priestlands near Lymington, late of Home Mead, Southampton · his will executed February 1844",
+"source": "record · London Evening Standard 11 Feb 1848 and Morning Post 3 Apr 1848 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
 "kind": "record"
 },
 {

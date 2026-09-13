@@ -470,6 +470,11 @@ rec("George Pitt D'Arcy", "“Lately, Captain GEORGE D'ARCY, [of] the [—] foot
 rec("Mary Ludlam", "of GUERNSEY · married Captain George D'Arcy, announced September 1805 — the Chatham baptism of 1811 gives Frederick Robert's mother as MARY", SWJ, BNA2)
 rec("George Pitt D'Arcy", "commanding a detachment of the 39th Regiment in Ireland · “under the command of Major D'Arcy”, British Press 6 March 1820 and Weekly Freeman's Journal 2 February 1822", "record · British and Irish newspapers, 1820 and 1822", BNA2)
 
+
+JD = "record · London Evening Standard 11 Feb 1848 and Morning Post 3 Apr 1848 (British Newspaper Archive)"
+BNA3 = "https://www.findmypast.com.au/search-newspapers"
+rec("Joseph D'Arcy", "died 7 FEBRUARY 1848 at Homestead, Lymington, Hampshire, in his 69th year · LIEUTENANT-COLONEL, LATE ROYAL ARTILLERY, K.L.S. · formerly of Priestlands near Lymington, late of Home Mead, Southampton · his will executed February 1844", JD, BNA3)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",
