@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "35 jobs a person can do and this archive cannot",
+ "eyebrow": "40 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -353,6 +353,56 @@
    "why": "AN AGE FOR ONE OF ROBERT'S CHILDREN",
    "href": "/margaret-jones",
    "file": "FindMyPast checked 14 September 2026 — it holds no consular or overseas registers at all"
+  },
+  {
+   "n": 36,
+   "what": "The death of LYDIA SANIGER at Berkeley, 7 July 1851 — GRO index and certificate",
+   "where": "General Register Office; the index is free on FreeBMD, the certificate about £12.50",
+   "cost": "free to find, £12.50 to read",
+   "settles": "This archive's own tree gives Hannah Saniger's mother as LYDIA JONES, born 13 March 1770 at Wotton-under-Edge and died 7 July 1851 at Berkeley. A death in July 1851 is inside civil registration: the September quarter of the Thornbury district index should hold her, and the certificate gives an age, an occupation of husband and an informant — very often a child. It is the cheapest unexploited document in this archive.",
+   "why": "THE LAST UNNAMED PERSON IN THE DIRECT ENGLISH LINE, AND HER DEATH IS IN CIVIL REGISTRATION",
+   "href": "/crossread",
+   "file": "found in this archive's own data 14 September 2026; never searched"
+  },
+  {
+   "n": 37,
+   "what": "The baptism of Lydia Jones at WOTTON-UNDER-EDGE, about 13 March 1770, to William Jones and Sarah",
+   "where": "Gloucestershire Archives; Wotton-under-Edge is transcribed in places on FreeREG and FamilySearch",
+   "cost": "free to try",
+   "settles": "Whether JONES is her surname at all, which this site has called an unevidenced assertion for a week while holding a parish and a date for it.",
+   "why": "",
+   "href": "/hannah-baptism",
+   "file": "opened 14 September 2026"
+  },
+  {
+   "n": 38,
+   "what": "CATHERINE COTTON at Berkeley — marriage 10 April 1769, burial 27 September 1778",
+   "where": "Gloucestershire Archives — Berkeley St Mary the Virgin registers (the online transcript stops in 1677)",
+   "cost": "a lookup",
+   "settles": "Her marriage to Thomas Saniger and her burial nine years later, both at Berkeley, both given by this archive's tree with full dates and neither ever requested. She is listed among the open questions as “where did Catherine Cotton come from?” while the answer — Berkeley, born 11 October 1746, daughter of Edward Cotton and Elizabeth — sits in the data files.",
+   "why": "",
+   "href": "/saniger-line",
+   "file": "opened 14 September 2026"
+  },
+  {
+   "n": 39,
+   "what": "De Lancey's Brigade muster and commission rolls, 1 June 1778 — for a CONSTANTINE D'ARCY",
+   "where": "The National Archives, Kew (AO 12/13, Loyalist claims); New York Public Library and the Sir Guy Carleton Papers",
+   "cost": "an enquiry",
+   "settles": "This archive's tree gives Robert D'Arcy a BROTHER — Constantine D'Arcy, born Barbados 1759, died Chatham 1778, appointed to De Lancey's Brigade on 1 June 1778, with the note that the original transcription read “Cornelius Dersey”. If that officer is real he is the first sibling ever attached to Robert, and his papers would name their parents. If he is not, the tree has duplicated Robert's own son and back-dated him twenty-seven years, and that needs saying.",
+   "why": "THE FIRST LEAD ON ROBERT'S PARENTAGE THAT IS NOT THE HOLDERNESS STORY",
+   "href": "/crossread",
+   "file": "found in this archive's own data 14 September 2026; never tested"
+  },
+  {
+   "n": 40,
+   "what": "The Sussex deaths of JANE, CATHERINE and CHARLOTTE D'ARCY — 1869, 1875 and 1876",
+   "where": "General Register Office (all three are inside civil registration); and the 1841–1871 censuses for Brighton and Falmer",
+   "cost": "free to index, £12.50 each to read",
+   "settles": "Three of Robert D'Arcy's daughters are said by the tree to have died in and around Brighton — Charlotte April 1869 aged 74, Jane January 1875 aged 88, Catherine 23 January 1876 aged 86. All three are after 1837, so all three have death registrations, and three elderly unmarried sisters living together in Brighton would appear in four censuses. This is the largest untouched block of English evidence in the archive.",
+   "why": "THREE DAUGHTERS, FIFTY YEARS OF ENGLISH RECORDS, NEVER ONCE SEARCHED",
+   "href": "/robert-family",
+   "file": "opened 14 September 2026"
   }
  ],
  "ydna": {

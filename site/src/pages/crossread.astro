@@ -1,0 +1,131 @@
+---
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
+import { u } from "../lib/url.js";
+import d from "../data/crossread.json";
+---
+<Base
+  title="Reading the archive against itself"
+  eyebrow={`719 files and pages · ${d.found}`}
+  dek="Six open questions, answered or half-answered out of material this site had already published. No subscription, no archive, no letters — just reading what was written down.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <Blk label="Method" title={d.how.head}>
+    <p class="lede">{d.how.body}</p>
+    <p class="small" style="margin-top:1rem">{d.how.note}
+      {" "}<span class="mono">tools/crossread.py</span></p>
+  </Blk>
+
+  <Blk label="Question 1" title={d.children.head}>
+    <p class="lede">{d.children.body}</p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr><th>Child</th><th class="m">Life</th><th>Born</th><th>Died</th></tr></thead>
+        <tbody>
+          {d.children.rows.map(([who, life, bd, bp, dp, chip, href]) => (
+            <tr>
+              <td><strong>{href ? <a href={u(href)}>{who}</a> : who}</strong>
+                <div><span class={"chip " + (chip === "tree" ? "lore" : chip === "inferred" ? "inf" : "doc")}>{chip}</span></div></td>
+              <td class="m" style="white-space:nowrap">{life}</td>
+              <td class="small">{bd}<div style="color:var(--ink-3)">{bp}</div></td>
+              <td class="small">{dp}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">
+      <strong>And that answers a question this site opened yesterday.</strong> {d.children.jane}
+      <a href={u("/constantine/")}>Her brother →</a>
+    </Note>
+  </Blk>
+
+  <Blk label="Question 2" title={d.barbados.head}>
+    <p class="lede">{d.barbados.body}</p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <tbody>{d.barbados.rows.map(([when, who, where]) => (
+          <tr><td class="m" style="white-space:nowrap">{when}</td><td>{who}</td>
+              <td class="small">{where}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.barbados.means}
+      {" "}<a href={u("/the-corps/")}>The career →</a></Note>
+  </Blk>
+
+  <Blk label="Question 3" title={d.brother.head}>
+    <p class="lede">{d.brother.body}</p>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      <strong>{d.brother.row}</strong>
+    </Note>
+    <p style="margin-top:1.1rem">{d.brother.note}</p>
+    <Note style="margin-top:1.2rem">
+      <strong>Read this with both hands.</strong> {d.brother.careful}
+      {" "}<span class="chip lore">{d.brother.chip}</span>
+      {" "}<a href={u("/hornby/")}>The parentage claim →</a>
+    </Note>
+  </Blk>
+
+  <Blk label="Question 4" title={d.lydia.head}>
+    <p class="lede">{d.lydia.body}</p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <tbody>{d.lydia.rows.map(([k, v]) => (
+          <tr><td style="white-space:nowrap"><strong>{k}</strong></td><td>{v}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.lydia.means}
+      {" "}<span class="chip lore">{d.lydia.chip}</span>
+      {" "}<a href={u("/hannah-baptism/")}>Hannah's baptism →</a></Note>
+  </Blk>
+
+  <Blk label="Question 5" title={d.cotton.head}>
+    <p class="lede">{d.cotton.body}</p>
+    <p class="small" style="margin-top:1rem">
+      <a href={u("/saniger-line/")}>Six generations at Berkeley →</a></p>
+  </Blk>
+
+  <Blk label="Question 6" title={d.martha.head}>
+    <p class="lede">{d.martha.body}</p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <tbody>{d.martha.rows.map(([k, v]) => (
+          <tr><td><strong>{k}</strong></td><td class="small">{v}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p style="margin-top:1.2rem">{d.martha.tested}</p>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.1rem">
+      {d.martha.found.map(([h, b]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <strong class="small">{h}</strong>
+          <p class="small" style="margin-top:.3rem;color:var(--ink-2)">{b}</p>
+        </div>
+      ))}
+    </div>
+
+    <Note style="margin-top:1.3rem">
+      <strong>So both sides of the old argument were wrong.</strong> {d.martha.verdict}
+      {" "}<span class="chip doc">{d.martha.chip}</span>
+      {" "}<a href={u("/wakefields/")}>The Wakefields →</a>
+    </Note>
+  </Blk>
+
+  <Blk label="The uncomfortable part" title={d.twice.head}>
+    <p class="lede">{d.twice.body}</p>
+    <Note style="margin-top:1.2rem"><strong>{d.twice.note}</strong>
+      {" "}<a href={u("/what-we-got-wrong/")}>Both entries →</a></Note>
+  </Blk>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What this cost</h2>
+    <p class="lede">{d.lesson}</p>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/what-we-got-wrong/")}>The errors this produced →</a> ·
+      <a href={u("/open-questions/")}>What is still open →</a> ·
+      <a href={u("/errands/")}>What it would take to settle them →</a></p>
+  </section>
+</Base>

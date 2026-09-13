@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "14 September 2026",
+    what: "Wrote that Martha Wakefield “may never have existed” and that she was “not in the family tree either”, after searching for her in Bristol. She is in the tree, with a death date, a cemetery and a plot number — in Queensland.",
+    truth:
+      "The tree gives Martha Wakefield 1836–1899, died 23 April 1899 at Maryborough, Queensland, buried Maryborough Cemetery, Plot Monumental L, Grave 410, and cites its source as “Martha HURFORD (born Wakefield)”. The free Queensland death index confirms a Martha Hurford dying on exactly that date — and names her parents as JOHN Wakefield and a HUGHES, not James Wakefield and Hannah Saniger. So she was real, she was not this family's, and none of that required leaving the desk.",
+    why: "I searched the country the family came FROM for a woman the archive's own data said died in the country they went TO, under a maiden name she had not used for a decade. Then I published the failure as a finding about her existence.",
+    lesson:
+      "Before searching for somebody, read everything your own files already say about them — especially where and when they died and what they were called by then. A negative result is only evidence if the search could have succeeded.",
+    href: "/crossread",
+  },
+  {
+    when: "14 September 2026",
     what: "Spent a fortnight calling Constantine D'Arcy unplaced while this archive was publishing his christening, his parents' names and both his commissions on another page.",
     truth:
       "Constantine Darcy was christened at St Michael, Barbados on 18 February 1786, father Robert Darcy, mother Jane. That is on /hornby, with the film and batch number, and it has been since the Royal Engineers work of this summer. His sister Jane, christened in the same parish in 1788, is on the same source and the same page. Meanwhile /robert-family listed “Who Constantine was” as an open question, /chatham said his relationship to Robert “has never been established”, and /the-corps displayed a twenty-four-year blank in Robert's career without noticing that two of Robert's children were christened inside it.",
@@ -30,7 +40,7 @@ export const OWN = [
   {
     when: "13 September 2026",
     what: "Named a Martha Wakefield, born about 1836, as one of three daughters left behind when the family sailed in 1854 — on five pages.",
-    truth: "Two of the three died as children: Eliza at nineteen months in 1834, Ellen at five in 1840, both with Bristol baptisms naming James and Hannah. The third produces no birth registration, no baptism and no burial at Bristol under any spelling, and is not in the family tree.",
+    truth: "Two of the three died as children: Eliza at nineteen months in 1834, Ellen at five in 1840, both with Bristol baptisms naming James and Hannah. The third produces no birth registration, no baptism and no burial at Bristol under any spelling — because she is not from Bristol. THE CLAUSE “and is not in the family tree” WHICH STOOD HERE UNTIL 14 SEPTEMBER WAS FALSE: she is in it, and it says she died in Queensland. See the entry of 14 September.",
     why: "The trio was assembled in an early pass and then repeated, and the repetition did the work that evidence should have. Nobody — me — ever went back to ask where the name had come from.",
     lesson: "A fact that has been on the site longest is the one least likely to have been checked. Repetition is not corroboration.",
     href: "/wakefields",
@@ -208,6 +218,7 @@ export const OWN = [
 /* Errors inherited from the family tree and corrected here. Kept separate,
    because they are somebody else's mistakes and the distinction matters. */
 export const INHERITED = [
+  ["Martha Wakefield, 1836–1899, was a daughter of James Wakefield and Hannah Saniger", "She is MARTHA HURFORD, who died at Maryborough on 23 April 1899 — and the Queensland death index gives her parents as JOHN WAKEFIELD and a HUGHES. The index records James and Hannah's other children correctly (Ephraim 1868, Aaron 1896, Zillah 1900, Hiram 1905, Miriam 1909), each naming Hannah under a different spelling of Saniger. There is no Martha among them: another man's daughter was grafted onto this family.", "/crossread"],
   ["Samuel Sneyd married Elizabeth Oliver at Audlem, Cheshire, 22 October 1809", "Not found, against a parish indexed twice over — register and bishop's transcript — where a control for Smith returns twenty marriages in the same decade. No Sneyd appears in Audlem's parish registers at all.", "/sneyds"],
   ["Elizabeth Margaret Oliver was born 7 May 1787 at Oswestry", "Oswestry is confirmed by the 1851 census. The date is almost certainly 17 May 1782 — her baptism at St Oswald's, father David, mother Mary — and both censuses put her birth nearer 1780 than 1787.", "/sneyds"],
   ["John Saniger died on 10 March 1824 at Berkeley", "Buried at Berkeley St Mary the Virgin on 16 January 1825, aged 55. The tree is ten months early; the age confirms the 1769 birth it gives him.", "/behind-the-paywall"],

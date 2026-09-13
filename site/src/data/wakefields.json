@@ -85,9 +85,24 @@
  "open": "Richard Wakefield and Elizabeth Webb come from a FamilySearch-derived index rather than the parish book, and there is more than one James Wakefield in Gloucestershire. The birthplace, year and county all agree with the 1851 census, which is why they are here — but the Stroud register would settle it.",
  "deaths": "Two daughters died small, in the same city and within six years of each other: Eliza at nineteen months in May 1834, Ellen at five in July 1840. Both were baptised at Bristol to James and Hannah, and both entries name the parents. For months this archive treated their absence from the 1854 passenger list as a question about emigration. It was not a question about emigration.",
  "martha": {
-  "head": "And Martha may never have existed.",
-  "body": "This site has named a Martha Wakefield, born about 1836, on five pages. Searched at Bristol under every spelling and every record type — birth registrations, baptisms, burials — there is nothing for a Martha Wakefield born between 1831 and 1842. Eliza and Ellen both produce baptisms naming James and Hannah; Martha produces nothing at all.",
-  "where": "She is not in the family tree either, which gives James and Hannah only Miriam. On present evidence Martha entered this archive from my own earlier work and has never had a record behind her.",
-  "chip": "withdrawn pending evidence"
+  "head": "Martha Wakefield — resolved, and against the tree.",
+  "wrong": "This page said until 14 September 2026: “Martha may never have existed … she is not in the family tree either, which gives James and Hannah only Miriam.” BOTH HALVES OF THAT ARE WRONG. She is in the tree, among their eight children, with a death date of 23 April 1899, a place — MARYBOROUGH, QUEENSLAND — a cemetery and a plot number, and a cited source naming her MARTHA HURFORD (born Wakefield). The Bristol search was run in the wrong country, under the wrong surname, against a claim this archive had not read.",
+  "body": "Tested in the free Queensland index, which took minutes. The answer is better than either side of the old argument.",
+  "rows": [
+   [
+    "Death · MARTHA HURFORD · 23 April 1899",
+    "Queensland 1899/C/3288. The tree's date to the day — and the index names her parents: FATHER JOHN WAKEFIELD, MOTHER a HUGHES."
+   ],
+   [
+    "Death · MARTHA MILLINGEN · 19 July 1898",
+    "Queensland 1898/B/30782. The other candidate: a Martha Wakefield did marry Philip Millingen in Queensland on 31 July 1887. Her parents are HENRY WAKEFIELD and CATHERINE DUNCAN."
+   ],
+   [
+    "No Martha Wakefield dies in Queensland at all",
+    "Searched 1855–1960. And no Wakefield death in the index gives James Wakefield and Hannah Saniger as the parents of a Martha."
+   ]
+  ],
+  "verdict": "Martha Hurford was a real woman and she was not this family's daughter. She was John Wakefield's, by a Hughes, and the tree grafted her on. The index records James and Hannah's children perfectly well — Ephraim in 1868 under “Anna Sanniger”, Aaron in 1896 under “Hannah Sanegar”, Hiram in 1905 under “Hannah Sanigar”, Zillah in 1900, Miriam in 1909. There is no Martha among them, and now there is a reason rather than a silence.",
+  "chip": "resolved 14 September 2026"
  }
 }

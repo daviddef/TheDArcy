@@ -1,0 +1,221 @@
+{
+ "found": "14 September 2026",
+ "lede": "Yesterday this archive discovered it had been calling Constantine D'Arcy unplaced on three pages while publishing his christening on a fourth. The obvious next question was how many of the other open questions were in the same condition. The answer is most of them.",
+ "how": {
+  "head": "A tool, not a hunch",
+  "body": "tools/crossread.py holds the open questions as search terms, reads every data file and every built page of this site, and prints each place the terms appear — excluding the page that owns the question. It finds nothing new in the world. It finds what was already here and not being read.",
+  "note": "719 data files and pages. It runs in under a second, and it should have existed in July."
+ },
+ "children": {
+  "head": "Robert and Jean had ten children",
+  "body": "This site's page on Robert D'Arcy's family listed FIVE, and added a sixth yesterday. The family tree it is built on holds TEN, and the Hornby page has said “ten children” in plain text for weeks. Three of them were born in Barbados and three of them died in Sussex.",
+  "rows": [
+   [
+    "Joseph D'Arcy",
+    "1780–1848",
+    "14 Mar 1780",
+    "Portsmouth",
+    "Lymington, Hampshire",
+    "documented",
+    "/joseph-darcy"
+   ],
+   [
+    "Margaret Maria Isabella D'Arcy",
+    "1781–1843",
+    "26 Sep 1781",
+    "Portsmouth",
+    "Le Havre, France",
+    "documented",
+    "/margaret-jones"
+   ],
+   [
+    "George Pitt D'Arcy",
+    "1783–1849",
+    "18 Feb 1783",
+    "Portsmouth — “or West Indies”",
+    "Parramatta, New South Wales",
+    "documented",
+    "/george-pitt"
+   ],
+   [
+    "Richard d'Arcy",
+    "b. 1784",
+    "1784",
+    "Portsmouth",
+    "—",
+    "inferred",
+    "/joseph-darcy"
+   ],
+   [
+    "Constantine D'Arcy",
+    "1786–1805",
+    "Feb 1786",
+    "BARBADOS",
+    "Chatham, Kent",
+    "documented",
+    "/constantine"
+   ],
+   [
+    "Jane D'Arcy",
+    "1787–1875",
+    "15 Dec 1787",
+    "BARBADOS",
+    "FALMER, SUSSEX — aged 88",
+    "tree",
+    "/constantine"
+   ],
+   [
+    "Catherine D'Arcy",
+    "1789–1876",
+    "10 Dec 1789",
+    "BARBADOS",
+    "BRIGHTON — aged 86",
+    "tree",
+    ""
+   ],
+   [
+    "Anna Maria D'Arcy",
+    "1791–1791",
+    "16 May 1791",
+    "—",
+    "died 24 October, aged five months",
+    "tree",
+    ""
+   ],
+   [
+    "Anna Maria d'Arcy",
+    "1792–1800",
+    "10 Oct 1792",
+    "Portsmouth",
+    "died aged seven",
+    "tree",
+    ""
+   ],
+   [
+    "Charlotte D'Arcy",
+    "1794–1869",
+    "19 Oct 1794",
+    "LYME REGIS, DORSET",
+    "BRIGHTON — aged 74",
+    "tree",
+    ""
+   ]
+  ],
+  "jane": "And that answers a question this site opened YESTERDAY. “What became of Jane D'Arcy, christened in Barbados in 1788 and untraced after it” — she was born on 15 December 1787, christened the following March, and died at Falmer outside Brighton in January 1875 at the age of eighty-eight. It was in the tree the whole time, and her christening date corroborates it: a December birth and a March baptism are the same child."
+ },
+ "barbados": {
+  "head": "And the West Indies posting is bracketed without a single new record",
+  "body": "The Corps page shows a blank of twenty-four years in Robert D'Arcy's career, between his commission of 1778 and his majority of 1802. The birthplaces of his own children close most of it.",
+  "rows": [
+   [
+    "1783",
+    "George Pitt",
+    "Portsmouth — “or West Indies”, says the tree, hedging"
+   ],
+   [
+    "1784",
+    "Richard",
+    "Portsmouth"
+   ],
+   [
+    "Feb 1786",
+    "Constantine",
+    "BARBADOS"
+   ],
+   [
+    "Dec 1787",
+    "Jane",
+    "BARBADOS"
+   ],
+   [
+    "Dec 1789",
+    "Catherine",
+    "BARBADOS"
+   ],
+   [
+    "Oct 1792",
+    "Anna Maria",
+    "PORTSMOUTH — he is home"
+   ],
+   [
+    "Oct 1794",
+    "Charlotte",
+    "Lyme Regis, Dorset"
+   ]
+  ],
+  "means": "Out by 1786 at the latest and back by 1792 at the latest: a tour of something like five or six years, which is exactly what a Royal Engineer's West Indies posting looked like. None of this is a document — it is a family tree, and birthplaces on family trees are the softest thing in them. But it is a shape to test against the Ordnance Office papers rather than a void."
+ },
+ "brother": {
+  "head": "Robert D'Arcy has a brother nobody here has ever mentioned",
+  "body": "The Hornby page argues at length about Robert's parentage — the Earl of Holderness, the inserted “Thomas (Francis) D'Arcy”, the tree contradicting itself. It has never once said that the same tree gives Robert a SIBLING, hanging off the same two parents.",
+  "row": "CONSTANTINE D'ARCY · born 1759, BARBADOS · died 1778, CHATHAM · parents Thomas (Francis) D'Arcy and Margaret? D'Arcy — the same parents given to Robert",
+  "note": "The tree's note on him reads: “Lt in the Royal Artillery. died s.p. 01/06/1778 appt to De Lancey's Brigade (Cornelius Dersey! original transcription). Probably about 19 yrs old.” De Lancey's Brigade was a Loyalist corps raised in New York for the American war. And the tree's note on ROBERT says he was “wrecked on his voyage to America to fight as a volunteer in the American war”, losing the papers that named his parents.",
+  "careful": "Treat this with both hands. The two Constantines share a birthplace, a place of death and an identical occupation string — “Royal Engineer 2lt West Indies” — while one note calls the elder Royal Artillery and the other Royal Engineers, and both are said to have died at about nineteen. That is the signature of ONE PERSON DUPLICATED AND BACK-DATED by twenty-seven years, with a Loyalist officer transcribed as “Cornelius Dersey” grafted on to explain him. It may equally be a real elder brother. What it is not is something this archive should have gone a fortnight without noticing.",
+  "chip": "a lead, and a duplicate risk, and neither has been tested"
+ },
+ "lydia": {
+  "head": "Lydia has a birthplace, a death date and two parents",
+  "body": "This site says of Hannah Saniger's mother: “FamilySearch's shared tree gives John Saniger a wife LYDIA JONES, 1770–1851 … It is not sourced.” True as far as it goes. What the page does not say is how much detail sits behind the name in this archive's own data.",
+  "rows": [
+   [
+    "Born",
+    "13 March 1770, WOTTON-UNDER-EDGE, Gloucestershire"
+   ],
+   [
+    "Parents",
+    "WILLIAM JONES and SARAH"
+   ],
+   [
+    "Married",
+    "John Saniger, 1797, Berkeley"
+   ],
+   [
+    "Died",
+    "7 JULY 1851, BERKELEY, Gloucestershire"
+   ]
+  ],
+  "means": "All four are testable and none has been tested. A death at Berkeley in July 1851 falls inside civil registration and should be in the September quarter of the GRO index for the Thornbury district — free to search, and a certificate would give an age and a cause. A baptism at Wotton-under-Edge in March 1770 to William and Sarah Jones is an ordinary parish-register lookup. This archive spent a week deciding the name Jones was unevidenced and never once tried the two records that would evidence it.",
+  "chip": "four testable claims, none tested"
+ },
+ "cotton": {
+  "head": "So does Catherine Cotton",
+  "body": "Listed as an open question — “where did Catherine Cotton come from?” The tree answers it in four fields: born 11 OCTOBER 1746 AT BERKELEY, died 27 SEPTEMBER 1778 AT BERKELEY, married THOMAS SANIGER at Berkeley on 10 APRIL 1769, parents EDWARD COTTON and ELIZABETH. Berkeley St Mary's transcript stops in 1677, which is why nobody found her — but a marriage of 1769 and a burial of 1778 are within reach of the Gloucestershire Archives' own holdings, and the question was never framed that way."
+ },
+ "martha": {
+  "head": "And Martha Wakefield, which went the other way",
+  "body": "This site says Martha “may never have existed”: named on five pages, searched at Bristol under every spelling and every record type, and found nowhere. The crossread points at two things the Bristol search could not have reached.",
+  "rows": [
+   [
+    "The tree says she died in QUEENSLAND, not England",
+    "23 April 1899, Maryborough — buried Maryborough Cemetery, Plot Monumental L, Grave 410"
+   ],
+   [
+    "And it says she married",
+    "Its source is cited as “Backhouse Web Site — MARTHA HURFORD (born Wakefield)”"
+   ]
+  ],
+  "tested": "So the search was run in the wrong country, under the wrong surname, for a woman whose own tree entry gives a death date, a cemetery and a plot number. That took ten minutes to test in the free Queensland index, and the answer is better than either side of the argument.",
+  "found": [
+   [
+    "Death · MARTHA HURFORD · 23 April 1899 · Queensland 1899/C/3288",
+    "The tree's date, to the day. And the index names her parents: FATHER JOHN WAKEFIELD, MOTHER a HUGHES."
+   ],
+   [
+    "Death · MARTHA MILLINGEN · 19 July 1898 · Queensland 1898/B/30782",
+    "The other candidate — a Martha Wakefield did marry Philip Millingen in Queensland in 1887. Her parents are HENRY WAKEFIELD and CATHERINE DUNCAN."
+   ],
+   [
+    "No Martha Wakefield dies in Queensland at all, 1855–1960",
+    "And no Wakefield death anywhere in the index gives the parents James Wakefield and Hannah Saniger for a Martha."
+   ]
+  ],
+  "verdict": "Martha Hurford was real. She was not this family's daughter — she was John Wakefield's, by a Hughes. The tree grafted another man's child onto James and Hannah, and this archive then went looking for her in Bristol. The index does hold their children properly: Ephraim in 1868 as “Anna Sanniger”, Aaron in 1896 as “Hannah Sanegar”, Hiram in 1905 as “Hannah Sanigar”. There is simply no Martha among them.",
+  "chip": "resolved against the tree"
+ },
+ "lesson": "Six of the questions this archive has been carrying were answerable, or half-answerable, out of material it had already published. One of them it had published on the same page as the question. None of this required a subscription, an archive, or a reply to a letter. It required reading what was already written down, which is the one research method that costs nothing and the one this archive had not applied to itself.",
+ "twice": {
+  "head": "And the lesson had already been filed once",
+  "body": "On 13 September this archive published an error about Jabez and Zillah Wakefield, announced as “two children nobody here had ever heard of” when both were on a passenger manifest it had transcribed itself in July. The lesson recorded at the time reads: “Check a discovery against what the archive already holds before calling it new. The tree is not the archive.”",
+  "note": "Written down on the Saturday, and not applied on the Sunday. A lesson filed is not a lesson learned; the difference between them, in this case, is a fifty-line Python script. That is the actual finding of this page."
+ }
+}

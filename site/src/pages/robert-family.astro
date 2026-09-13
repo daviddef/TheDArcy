@@ -30,7 +30,11 @@ import d from "../data/robert-family.json";
 
   <section class="blk">
     <div class="lab">The children</div>
-    <h2 style="margin-top:.4rem">Five, and four of them on record</h2>
+    <h2 style="margin-top:.4rem">Ten, and five of them found in this archive's own tree</h2>
+    <div class="note" style="margin-top:1rem">
+      <strong>Corrected 14 September 2026.</strong> {d.crossread}
+      <a href={u("/crossread")}>How that happened →</a>
+    </div>
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
       {d.children.map((c) => (
         <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">

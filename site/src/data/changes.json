@@ -1,9 +1,60 @@
 {
  "title": "What changed",
- "eyebrow": "20 passes · 225 changes",
+ "eyebrow": "21 passes · 236 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "14 September 2026",
+   "title": "Reading the archive against its own open questions",
+   "did": [
+    "Wrote tools/crossread.py after yesterday's Constantine error: it holds the open questions as search terms, reads all 719 data files and built pages, and prints every place the terms appear except the page that owns the question.",
+    "Found that ROBERT AND JEAN HAD TEN CHILDREN on the family tree. This site's page about their family listed five. The Hornby page has said “ten children” in plain text for weeks.",
+    "Answered a question opened the previous day: JANE D'ARCY, born Barbados 15 December 1787, died at FALMER, SUSSEX in January 1875, AGED EIGHTY-EIGHT. Her tree birth date and her Barbados christening of March 1788 corroborate each other.",
+    "Added CATHERINE D'ARCY (1789–1876, born Barbados, died Brighton), two ANNA MARIAS who died small, and CHARLOTTE (1794–1869, born Lyme Regis, died Brighton) — four more children nobody here had named.",
+    "Bracketed the Barbados posting with no new record at all: children born Barbados in 1786, 1787 and 1789, then Portsmouth in 1792 and Lyme Regis in 1794. The Corps page had a twenty-four-year blank.",
+    "Found that the tree gives Robert D'Arcy a BROTHER — Constantine D'Arcy, born Barbados 1759, died Chatham 1778, appointed to De Lancey's Brigade on 1 June 1778 — which the Hornby page has never mentioned in all its argument about his parentage. Published with an explicit warning that it may be Robert's own son duplicated and back-dated.",
+    "Found that LYDIA has a birthplace (Wotton-under-Edge), two parents (William Jones and Sarah) and a death (7 July 1851, Berkeley) in this archive's data, none of which the page calling her unevidenced had mentioned. Her death is inside civil registration.",
+    "Same for CATHERINE COTTON, listed as an open question while the tree gives her birth, marriage, death and parents, all at Berkeley.",
+    "TESTED THE MARTHA WAKEFIELD CLAIM PROPERLY. The tree says she died at Maryborough, Queensland, on 23 April 1899, with a cemetery and a plot number, under the married name HURFORD. This site had searched for her in BRISTOL and concluded she “may never have existed”.",
+    "The free Queensland index has her: MARTHA HURFORD, died 23 April 1899, 1899/C/3288 — and names her parents as JOHN WAKEFIELD and a HUGHES. No Martha Wakefield dies in Queensland at all between 1855 and 1960. Another man's daughter had been grafted onto James and Hannah.",
+    "Filed two errors: searching the wrong country under the wrong surname, and repeating a false statement about this archive's own tree. And noted that the lesson had been filed once already, on 13 September, and not applied."
+   ],
+   "found": [
+    [
+     "New page",
+     "/crossread — six open questions answered out of material already published"
+    ],
+    [
+     "New tool",
+     "tools/crossread.py, committed and runnable"
+    ],
+    [
+     "Corrected",
+     "/robert-family — five children became ten; the open questions rewritten"
+    ],
+    [
+     "Corrected",
+     "/wakefields — Martha resolved, and the false claim about the tree withdrawn"
+    ],
+    [
+     "Corrected",
+     "/hornby — the brother the parentage argument never mentioned"
+    ],
+    [
+     "Added",
+     "/hannah-baptism — the four testable fields behind the name Lydia Jones"
+    ],
+    [
+     "Added",
+     "/errands — five new jobs, four of them free or nearly so"
+    ],
+    [
+     "Filed",
+     "/what-we-got-wrong — own error 26, and an inherited error about Martha"
+    ]
+   ]
+  },
   {
    "when": "14 September 2026",
    "title": "The last two days of the subscription, spent on wills, Barbados and a Canterbury newspaper",

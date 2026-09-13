@@ -1,11 +1,11 @@
 {
-"entries": 786,
-"distinct": 565,
-"records": 313,
+"entries": 789,
+"distinct": 567,
+"records": 316,
 "tree": 473,
 "grafted": 98,
-"linked": 786,
-"surnames": 190,
+"linked": 789,
+"surnames": 192,
 "groups": [
 {
 "surname": "SNEYD",
@@ -2002,7 +2002,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 50,
+"n": 51,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -2219,6 +2219,13 @@
 "says": "aged 14 · DOMESTIC · native place BRISTOL · entered among the single women — this is Miriam",
 "source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
 "link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Martha Wakefield",
+"says": "marriage · 31 July 1887, to PHILIP MILLINGEN — the only Martha Wakefield marriage in the Queensland index",
+"source": "record · Queensland marriage index 1887/B/11632",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 },
 {
@@ -5610,6 +5617,19 @@
 ]
 },
 {
+"surname": "HURFORD",
+"n": 1,
+"rows": [
+{
+"name": "Martha Hurford",
+"says": "death · 23 April 1899, Maryborough · PARENTS JOHN WAKEFIELD and a HUGHES — NOT James Wakefield and Hannah Saniger",
+"source": "record · Queensland death index 1899/C/3288",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "HUTCHISON",
 "n": 1,
 "rows": [
@@ -5852,6 +5872,19 @@
 "says": "wrote the letter to the Brisbane Courier, 7 Jul 1885, from which the obituary was taken",
 "source": "record · Trove, Australian newspapers",
 "link": "https://nla.gov.au/nla.news-article3443970",
+"kind": "record"
+}
+]
+},
+{
+"surname": "MILLINGEN",
+"n": 1,
+"rows": [
+{
+"name": "Martha Millingen",
+"says": "death · 19 July 1898 · parents HENRY WAKEFIELD and CATHERINE DUNCAN · née Wakefield, m. Philip Millingen 31 Jul 1887",
+"source": "record · Queensland death index 1898/B/30782",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 }
 ]

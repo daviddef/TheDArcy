@@ -43,10 +43,23 @@ import d from "../data/wakefields.json";
       <strong>{d.deaths}</strong> <span class="chip doc">documented</span>
     </Note>
 
-    <Note>
+    <Note style="border-left-width:3px">
       <strong>{d.martha.head}</strong> {d.martha.body}
       <br /><br />
-      {d.martha.where} <span class="chip lore">{d.martha.chip}</span>
+      <strong>What this page used to say.</strong> {d.martha.wrong}
+    </Note>
+
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <tbody>{d.martha.rows.map(([k, v]) => (
+          <tr><td style="white-space:nowrap"><strong class="small">{k}</strong></td>
+              <td class="small">{v}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+
+    <Note>
+      {d.martha.verdict} <span class="chip doc">{d.martha.chip}</span>
+      {" "}<a href={u("/crossread/")}>How it was found →</a>
     </Note>
 
     <p class="small" style="margin-top:1rem">

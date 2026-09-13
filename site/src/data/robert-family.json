@@ -21,54 +21,83 @@
  "children": [
   {
    "who": "JOSEPH D'ARCY",
-   "b": "baptised Portsea St Mary, 19 March 1780",
+   "b": "born 14 March 1780 · baptised Portsea St Mary, 19 March 1780",
    "note": "Royal Artillery from about 1795. St Domingo 1793, Sicily, Walcheren, and five years in Persia in the service of Prince Abbas Mirza. Lieutenant-Colonel, K.L.S. Died at Home Mead, Lymington, 7 February 1848, leaving his property to his wife Catherine and five children.",
    "chip": "documented",
    "href": "/joseph-darcy"
   },
   {
-   "who": "GEORGE PITT D'ARCY",
-   "b": "born about 1783",
-   "note": "39th Foot. Married MISS LUDLAM OF GUERNSEY, announced September 1805 in a notice calling him “son of Lieut. Colonel D'Arcy”. Peninsular War 1808. In Ireland with the regiment 1820 and 1822. Married secondly Maria, and sailed for New South Wales on the convict ship England in April 1826. THE LINE THIS ARCHIVE DESCENDS FROM.",
-   "chip": "documented",
-   "href": "/george-pitt"
-  },
-  {
    "who": "MARGARETT MARIA ISABELLA D'ARCY",
-   "b": "—",
+   "b": "born 26 September 1781, Portsmouth",
    "note": "Married JOHN MADDOCK JONES of Pen-y-bryn, Ruabon, Major of the Royal Denbigh Militia, at Chatham in 1806, her brother JOSEPH signing as witness. She died at Le Havre in February 1843 and he at Ingouville near Havre the following month. Her death notice calls her “daughter of the late MAJOR-GENERAL D'ARCY, R.E.” — the only record anywhere that gives Robert a corps as well as a rank.",
    "chip": "documented",
    "href": "/margaret-jones"
   },
   {
-   "who": "RICHARD DARCY",
-   "b": "born about 1784",
+   "who": "GEORGE PITT D'ARCY",
+   "b": "born 18 February 1783 — the tree says “Portsmouth, Hampshire, England OR WEST INDIES”, and hedges for a reason",
+   "note": "39th Foot. Married MISS LUDLAM OF GUERNSEY, announced September 1805 in a notice calling him “son of Lieut. Colonel D'Arcy”. Peninsular War 1808. In Ireland with the regiment 1820 and 1822. Married secondly Maria, and sailed for New South Wales on the convict ship England in April 1826. THE LINE THIS ARCHIVE DESCENDS FROM.",
+   "chip": "documented",
+   "href": "/george-pitt"
+  },
+  {
+   "who": "RICHARD D'ARCY",
+   "b": "born about 1784, Portsmouth",
    "note": "Aged 57 and living in Joseph's house at Priestlands in 1841. Of exactly the right generation, in exactly the right household — and no other record of him has been found anywhere in Hampshire. Portsea's transcript stops in 1782, so a baptism of 1784 could never have been found in it.",
    "chip": "inferred",
    "href": "/joseph-darcy"
   },
   {
    "who": "CONSTANTINE D'ARCY",
-   "b": "christened ST MICHAEL, BARBADOS, 18 February 1786",
+   "b": "born February 1786 · christened ST MICHAEL, BARBADOS, 18 February 1786",
    "note": "Son of Robert and Jane, christened in Barbados while his father served there. Gentleman Cadet to Second Lieutenant, Corps of Royal Engineers, 1 February 1804; First Lieutenant 1 March 1805, in the same Ordnance Office announcement that made his father a Lieutenant-Colonel. Buried Chatham St Mary, 9 May 1805, aged nineteen. The Kentish Gazette of 14 May calls him “the son of Col. D'Arcy, chief engineer of Chatham lines” and says he was interred with military honours — the same words used of his father twenty-two years later.",
    "chip": "documented",
    "href": "/constantine"
   },
   {
    "who": "JANE D'ARCY",
-   "b": "christened ST MICHAEL, BARBADOS, 17 March 1788",
-   "note": "Daughter of Robt. D'Arcy and Jane, christened in the same Barbados parish two years after Constantine. She is not on the family tree and appears in no other record found so far. Robert and Jean had at least six children.",
-   "chip": "documented",
-   "href": "/constantine"
+   "b": "born 15 December 1787, BARBADOS · christened St Michael, 17 March 1788",
+   "note": "Christened in the same Barbados parish as Constantine, to the same parents. This page listed five children until 14 September 2026 and she was not among them — though the tree has held her all along, and holds her death too: JANUARY 1875 AT FALMER, outside Brighton, aged EIGHTY-EIGHT. She outlived every one of her brothers and sisters except Catherine.",
+   "chip": "family tree",
+   "href": "/crossread"
+  },
+  {
+   "who": "CATHERINE D'ARCY",
+   "b": "born 10 December 1789, BARBADOS",
+   "note": "The third of the Barbados children and the longest-lived of the ten: died at BRIGHTON on 23 January 1876, aged eighty-six. Entirely unknown to this site before its own tree was read against its own open questions.",
+   "chip": "family tree",
+   "href": "/crossread"
+  },
+  {
+   "who": "ANNA MARIA D'ARCY",
+   "b": "born 16 May 1791",
+   "note": "Died 24 October 1791, aged five months. The first Anna Maria.",
+   "chip": "family tree",
+   "href": "/crossread"
+  },
+  {
+   "who": "ANNA MARIA D'ARCY (the second)",
+   "b": "born 10 October 1792, Portsmouth",
+   "note": "Named for the sister who had died the previous autumn, and dead herself in 1800 aged seven. Her birthplace matters beyond her short life: by October 1792 the family is back in Portsmouth, which brackets the West Indies posting at the far end.",
+   "chip": "family tree",
+   "href": "/crossread"
+  },
+  {
+   "who": "CHARLOTTE D'ARCY",
+   "b": "born 19 October 1794, LYME REGIS, DORSET",
+   "note": "The youngest, and the only one born in the West Country. Died at Brighton in April 1869, aged seventy-four. NOT to be confused with the CHARLOTTE D'ARCY christened at Chatham in 1826 — that one is her niece, George Pitt's daughter, who sailed for New South Wales eight days later.",
+   "chip": "family tree",
+   "href": "/crossread"
   }
  ],
  "portsea": "Only one of them was baptised at Portsea, and this archive spent months reading that as meaningful. It is not: FindMyPast's Hampshire collection covers Portsea St Mary continuously from 1770 to 1792 and returns Joseph and nobody else — so the others were christened wherever the Corps had posted him. A regiment moves; a parish register does not follow it. AND THIS ARCHIVE HAD ALREADY FOUND WHERE TWO OF THEM WERE, AND HAD NOT PUT IT HERE. Constantine was christened at St Michael, Barbados in 1786 and Jane in the same parish in 1788 — inside the twenty-four-year gap between Robert's first commission and his next gazetted promotion. That has been on the Hornby page since the summer while this page called Constantine unplaced.",
- "shape": "Two sons in the artillery and the infantry, a third in his father's own Corps of Engineers who died at nineteen, two daughters, and a brother in the house at the end. It is the ordinary shape of a successful service family, scattered across three continents by the postings that made it, and every part of it was invisible to this archive a fortnight ago.",
+ "shape": "Ten children in fourteen years, born in three places on two sides of the Atlantic: four at Portsmouth, three in Barbados, one at Lyme Regis. Two died small and were both called Anna Maria. Two sons went into the artillery and the infantry and a third into his father's Corps of Engineers, where he died at nineteen. Three daughters ended their lives in and around Brighton, one of them at eighty-eight. It is the ordinary shape of a service family, scattered by the postings that made it.",
  "open": [
-  "Robert's own parentage. Seventeen newspapers announced his death and not one named a relative — though four other notices now name four of his children as his.",
+  "Robert's own parentage — and whether the CONSTANTINE D'ARCY of 1759–1778, whom the tree makes his brother by the same two parents, is a real sibling or this family's own Constantine duplicated and back-dated.",
   "Whether Richard was his son, which needs a baptism from a parish this archive has not yet identified.",
-  "What became of JANE D'ARCY, christened in Barbados in 1788 and untraced after it.",
-  "When Robert went to Barbados and when he came home. The christenings of 1786 and 1788 are the only evidence he was ever there, and his career between 1778 and 1802 is otherwise blank.",
-  "And who ELIZABETH PITT was — living in Joseph's house in 1841, dying at Lymington in 1851, and sharing a surname that ran through four generations of this family."
- ]
+  "Everything about CATHERINE, the two ANNA MARIAS and CHARLOTTE beyond the tree's dates. Three of them died in Sussex after 1860, which puts them inside civil registration and inside the census.",
+  "When exactly Robert went to Barbados. His children's birthplaces put him there by 1786 and home by 1792; the Board of Ordnance papers would say.",
+  "And who ELIZABETH PITT was — living in Joseph's house in 1841, dying at Lymington in 1851, and sharing a surname that ran through four generations of this family. This is the one question the archive's own material could not help with."
+ ],
+ "crossread": "Five of these children were added on 14 September 2026, not from any new record but from this archive's own family tree — read, for the first time, against this archive's own open questions."
 }

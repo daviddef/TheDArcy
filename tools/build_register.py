@@ -666,6 +666,15 @@ rec("John Sanigar", "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury 
 rec("Abraham Synegar", "administration · 1813 · CARDMAKER, of Dursley · Consistory Court of Gloucester 1813/8",
     "record · Gloucestershire Wills & Administrations 1801-1858", "https://www.findmypast.com.au/")
 
+# --- Queensland death index, 14 September 2026 -------------------------------
+# Run to test a claim in this archive's own tree, not to find somebody new.
+rec("Martha Hurford", "death · 23 April 1899, Maryborough · PARENTS JOHN WAKEFIELD and a HUGHES — NOT James Wakefield and Hannah Saniger",
+    "record · Queensland death index 1899/C/3288", "https://www.familyhistory.bdm.qld.gov.au/")
+rec("Martha Millingen", "death · 19 July 1898 · parents HENRY WAKEFIELD and CATHERINE DUNCAN · née Wakefield, m. Philip Millingen 31 Jul 1887",
+    "record · Queensland death index 1898/B/30782", "https://www.familyhistory.bdm.qld.gov.au/")
+rec("Martha Wakefield", "marriage · 31 July 1887, to PHILIP MILLINGEN — the only Martha Wakefield marriage in the Queensland index",
+    "record · Queensland marriage index 1887/B/11632", "https://www.familyhistory.bdm.qld.gov.au/")
+
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [
     ("George Pitt D'Arcy", "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”", "59769271"),

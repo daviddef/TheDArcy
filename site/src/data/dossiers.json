@@ -1685,6 +1685,21 @@
 "slug": "robert-hughes",
 "n": 1
 },
+"martha-hurford": {
+"name": "Martha Hurford",
+"surname": "HURFORD",
+"rows": [
+{
+"says": "death · 23 April 1899, Maryborough · PARENTS JOHN WAKEFIELD and a HUGHES — NOT James Wakefield and Hannah Saniger",
+"source": "record · Queensland death index 1899/C/3288",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "martha-hurford",
+"n": 1
+},
 "alfred-hutchison": {
 "name": "Alfred Hutchison",
 "surname": "HUTCHISON",
@@ -1833,6 +1848,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "j-a-mcintyre",
+"n": 1
+},
+"martha-millingen": {
+"name": "Martha Millingen",
+"surname": "MILLINGEN",
+"rows": [
+{
+"says": "death · 19 July 1898 · parents HENRY WAKEFIELD and CATHERINE DUNCAN · née Wakefield, m. Philip Millingen 31 Jul 1887",
+"source": "record · Queensland death index 1898/B/30782",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "martha-millingen",
 "n": 1
 },
 "patrick-moroney": {
@@ -2257,9 +2287,9 @@
 }
 },
 "counts": {
-"named": 185,
-"withTreePage": 45,
-"ownPage": 140,
-"mentions": 313
+"named": 188,
+"withTreePage": 46,
+"ownPage": 142,
+"mentions": 316
 }
 }
