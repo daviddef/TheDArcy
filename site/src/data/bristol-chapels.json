@@ -343,5 +343,68 @@
    "to": 1807
   }
  ],
- "target": "Hannah Saniger, born about 1805–1815, married James Wakefield, and had her first children baptised — somewhere — in Bristol"
+ "target": "Hannah Saniger, born about 1805–1815, married James Wakefield, and had her first children baptised — somewhere — in Bristol",
+ "anglican": {
+  "test": "William and Mary SMITH, across Gloucestershire, for the twenty-one years 1800–1820.",
+  "result": [
+   289,
+   75
+  ],
+  "bristol": [
+   [
+    "Stapleton",
+    1
+   ]
+  ],
+  "absent": [
+   "St Paul",
+   "St Philip and Jacob",
+   "St James",
+   "St Augustine the Less",
+   "St Mary Redcliffe",
+   "Temple",
+   "St Stephen",
+   "St Werburgh",
+   "St Nicholas",
+   "Clifton",
+   "Bedminster",
+   "Barton Regis"
+  ],
+  "top": [
+   [
+    "Dursley",
+    19
+   ],
+   [
+    "Tewkesbury",
+    17
+   ],
+   [
+    "Wotton-under-Edge",
+    17
+   ],
+   [
+    "Ebrington",
+    16
+   ],
+   [
+    "Gloucester",
+    16
+   ],
+   [
+    "Chedworth",
+    15
+   ],
+   [
+    "Cam",
+    8
+   ],
+   [
+    "Thornbury",
+    3
+   ]
+  ],
+  "verdict": "Two hundred and eighty-nine entries, seventy-five parishes, and ONE of them inside Bristol — Stapleton, on the edge of the city, with a single entry. Not one Bristol city parish appears at all.",
+  "so": "FreeREG has essentially no Bristol for 1800–1820. Every search this archive has run for a Bristol baptism has been searching a city that is not in the index, and the emptiness it kept returning was the index's, not the family's."
+ }
 }

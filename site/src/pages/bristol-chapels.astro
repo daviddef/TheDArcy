@@ -56,6 +56,43 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
   </section>
 
   <section class="blk">
+    <div class="lab">And the reason the chapels matter this much</div>
+    <h2 style="margin-top:.4rem">Bristol is not in FreeREG</h2>
+
+    <p class="lede">Before recommending the chapel registers it is worth establishing what the
+    <em>parish</em> registers can do, and the answer turns out to be almost nothing.
+    {d.anglican.test}</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>
+          <tr><td>Entries returned</td><td class="m"><strong>{d.anglican.result[0]}</strong></td></tr>
+          <tr><td>Parishes they come from</td><td class="m"><strong>{d.anglican.result[1]}</strong></td></tr>
+          <tr><td><strong>Of those, inside Bristol</strong></td>
+              <td class="m"><strong>{d.anglican.bristol[0][0]} — {d.anglican.bristol[0][1]} entry</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1.2rem">{d.anglican.verdict} The largest parishes in the result are
+    {d.anglican.top.slice(0, 5).map(([n, c]) => `${n} (${c})`).join(", ")} — the Vale and the
+    Cotswolds, thoroughly done. The city is missing.</p>
+
+    <p class="small" style="margin-top:1rem"><strong>Not present at any size:</strong>{" "}
+    {d.anglican.absent.join(" · ")}.</p>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.anglican.so}</strong>
+      <span class="chip doc">coverage established by control test</span>
+      <br /><br />
+      This is the same mistake as <a href={u("/portsea")}>Portsea</a>, found on the same day and in
+      the opposite direction: there, a two-year transcript was read as a searched parish; here, an
+      untranscribed city was read as an empty one. Both come from using an index without measuring
+      it. <a href={u("/chew-magna")}>And it is why Chew Magna has to be read on film →</a>
+    </div>
+  </section>
+
+  <section class="blk">
     <div class="lab">One detail worth keeping</div>
     <h2 style="margin-top:.4rem">Bristol is filed under Somerset</h2>
 
@@ -78,6 +115,10 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
   <section class="blk" style="border-bottom:0">
     <h2>What to do with this</h2>
     <ol class="dek">
+      <li style="margin-bottom:.5rem"><strong>The Anglican registers are not an alternative.</strong>
+      Bristol's parish registers exist, and they are filmed — but they are not in the free index, so
+      nothing here can be ruled out by searching it. Any Bristol search from a desk has to be the
+      chapels or nothing. <a href={u("/searched")}>What has actually been read →</a></li>
       <li style="margin-bottom:.5rem"><strong>Twelve volumes, named and numbered.</strong> They are
       digitised, and can be read without leaving the house. This is now a specific task rather than
       an aspiration. <a href={u("/errands")}>On the queue →</a></li>

@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "16 passes · 103 changes",
+ "eyebrow": "16 passes · 104 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -21,7 +21,8 @@
     "Re-ran the nationality audit. British evidence now outnumbers Australian for the first time: 107 to 96.",
     "Searched the 1851 census for Sanigers around Bristol and found a household at Oxford Road, St Philip and Jacob — the parish next to the Wakefields' — whose head and whose widowed mother were both born at CHEW MAGNA, SOMERSET.",
     "Control-tested Chew Magna in FreeREG: two Smith entries in twenty-one years against a hundred at Walcot. The transcript is a fragment, so the parish cannot be searched from here.",
-    "Built /chew-magna and put the register at the top of the errand list."
+    "Built /chew-magna and put the register at the top of the errand list.",
+    "Control-tested the city of Bristol in FreeREG: 289 Smith entries from 75 Gloucestershire parishes, 1800–1820, and exactly one from inside Bristol. The city is not in the index, which is why every Bristol search here has come back empty."
    ],
    "found": "The family's name is a hillside above the Severn where the swans were; the archive's oldest English record survives inside a two-year window nobody had measured; and Hannah Saniger's birthplace has, for the first time, a county and a parish worth the fare to Taunton."
   },
