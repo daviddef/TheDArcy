@@ -106,6 +106,40 @@ import d from "../data/berkeley-woman.json";
     <p class="small" style="margin-top:1.2rem">{d.wakefield.jabez}</p>
   </section>
 
+  <section class="blk">
+    <div class="lab">Bristol, St Paul, Portland Square</div>
+    <h2 style="margin-top:.4rem">Ellen was not left behind</h2>
+
+    <p class="lede">{d.ellen.baptism}</p>
+    <p class="lede" style="margin-top:.9rem">{d.ellen.burial}</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.ellen.means}</strong> <span class="chip doc">documented</span>
+      <br /><br />
+      {d.ellen.eliza}
+      <br /><br />
+      {d.ellen.lesson} <a href={u("/general-hewitt")}>The page that framed it →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Coverage, tested</div>
+    <h2 style="margin-top:.4rem">Why Hannah's own baptism is still missing</h2>
+
+    <p><strong>The test.</strong> {d.hannahGap.test} <strong>The result.</strong>
+    {d.hannahGap.result}</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.hannahGap.verdict}</strong>
+      <span class="chip doc">coverage established</span>
+      <br /><br />
+      {d.hannahGap.next}
+    </div>
+
+    <p class="small" style="margin-top:1.2rem">{d.lydia}
+      <a href={u("/drivers-fields")}>Lyddya Sinegar →</a></p>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>And the gap that was never a gap</h2>
     <p class="lede">{d.berkeley}</p>

@@ -123,5 +123,19 @@
   "webb": "And it explains something that has sat unexplained on the 1841 census for months. Living with James and Hannah at Drivers Fields, between their own children, is a two-year-old called MATILDA WEBB. James Wakefield's mother was Elizabeth Webb. The child in the house is almost certainly his kin, not a lodger's daughter.",
   "jabez": "Jabez Wakefield's birth is registered at Bristol in 1843, which confirms the census. Neither he nor Zillah is aboard the General Hewitt in 1854, and what became of them is not yet known.",
   "caveat": "Richard Wakefield and Elizabeth Webb are given by a FamilySearch-derived index, not yet by the parish book, and there is more than one James Wakefield in Gloucestershire. The birthplace, the year and the county all agree, which is why it is here; it is an identification, not a proof."
- }
+ },
+ "ellen": {
+  "baptism": "ELLEN WAKEFIELD, baptised at Bristol 26 OCTOBER 1834 · father JAMES WAKEFIELD, mother HANNAH — the first baptism of any of their children this archive has found.",
+  "burial": "ELLEN WAKEFIELD, buried at BRISTOL, ST PAUL, PORTLAND SQUARE, 12 JULY 1840, AGED 5 · Bristol Archives, burials 1836–1855, P/St P/R/3/3.",
+  "means": "This archive has said for months that three daughters — Eliza, Ellen and Martha — were not aboard the General Hewitt in 1854, and that whether they had married, followed later or stayed was unknown. Ellen did none of those things. She died at five, in her parents' own parish, ten months before the 1841 census and fourteen years before the ship.",
+  "eliza": "And the same index holds an Eliza Wakefield among Bristol deaths and burials in 1834 — the year of Ellen's baptism. The transcript would not load, so it is reported here as an index entry to be confirmed rather than a fact.",
+  "lesson": "The archive framed three absences as a mystery about emigration. At least one of them was a child's grave in St Paul's."
+ },
+ "hannahGap": {
+  "test": "HANNAH SMITH at Berkeley, 1795–1815 — the same query that finds Hannah Saniger nothing.",
+  "result": "Nineteen results, and the ONLY baptism collection that returns anything for Berkeley is England Births & Baptisms 1538-1975, the FamilySearch index. FindMyPast's own GLOUCESTERSHIRE BAPTISMS collection covers Bristol parishes but does not reach Berkeley at all.",
+  "verdict": "So Berkeley's register after 1677 reaches this subscription through one partial index and no other. That index holds John Saniger's children of 1801, 1803 and 1808 and not his daughter of 1805. Hannah's baptism is not missing from the register; it is missing from the only transcription of it that money can currently buy.",
+  "next": "Which makes the original Berkeley parish book, at Gloucestershire Archives, the one document left standing between this family and a fully evidenced English line."
+ },
+ "lydia": "And Lydia is still nobody's wife on paper. No John Saniger marries at Berkeley between 1792 and 1804, though his children are baptised there from 1801. The woman the tree calls Hannah's mother, and the seventy-year-old Lyddya Sinegar living in Hannah's house in 1841, remain joined by nothing but a surname and a household."
 }

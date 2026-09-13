@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "18 passes · 138 changes",
+ "eyebrow": "18 passes · 142 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -27,7 +27,11 @@
     "Tested the tree's Audlem marriage against a parish indexed twice over. Twenty Smiths marry there in the same decade and no Sneyd does, in any spelling, ever.",
     "Found James Wakefield's baptism at Stroud, 6 April 1806, father Richard, mother ELIZABETH WEBB — which explains the Matilda Webb who has been sitting unexplained in his 1841 household.",
     "Marked /berkeley, /sanigers and /portsea where the subscription has overtaken them.",
-    "Re-ran the audit: British 145, Australian 96 — 60% to 40%, from 42% at the start."
+    "Re-ran the audit: British 145, Australian 96 — 60% to 40%, from 42% at the start.",
+    "Found Ellen Wakefield's baptism (Bristol, 26 October 1834, father James, mother Hannah) and her burial (St Paul, Portland Square, 12 July 1840, AGED FIVE). She was never left behind in 1854; she died fourteen years before the ship.",
+    "Established by control test why Hannah's own baptism still cannot be found: only the partial FamilySearch index reaches Berkeley, and FindMyPast's Gloucestershire Baptisms does not cover the parish at all.",
+    "Searched for John Saniger's marriage at Berkeley and found none, so Lydia remains unnamed by any record.",
+    "Put the original Berkeley register and Robert D'Arcy's 1827 death notice at the top of the errand list."
    ],
    "found": "The answer was the one the family tree gave before any of this started, and it was one search away the whole time behind a subscription this archive had never bought."
   },

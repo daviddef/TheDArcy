@@ -1,10 +1,10 @@
 {
-"entries": 714,
+"entries": 716,
 "distinct": 543,
-"records": 241,
+"records": 243,
 "tree": 473,
 "grafted": 98,
-"linked": 714,
+"linked": 716,
 "surnames": 184,
 "groups": [
 {
@@ -1778,7 +1778,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 44,
+"n": 46,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -1812,6 +1812,20 @@
 "name": "Aaron Wakefield",
 "says": "son, aged 10, errand boy",
 "source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Ellen Wakefield",
+"says": "baptised at Bristol 26 OCTOBER 1834 · father JAMES WAKEFIELD, mother HANNAH — the first baptism of any of their children found",
+"source": "record · Gloucestershire Burials / England Births & Baptisms, Bristol (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Ellen Wakefield",
+"says": "buried at BRISTOL, ST PAUL, PORTLAND SQUARE, 12 JULY 1840, AGED 5 · Bristol Archives P/St P/R/3/3 — she did not stay behind in 1854; she died fourteen years before the ship",
+"source": "record · Gloucestershire Burials / England Births & Baptisms, Bristol (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
