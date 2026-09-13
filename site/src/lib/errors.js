@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Reported on several pages that South Leith was not transcribed and that Jean Ward's baptism was therefore out of reach.",
+    truth: "It is indexed, with parents named. Jean Ward, baptised South Leith 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — an entire Scottish generation this archive did not have.",
+    why: "The same fault as Berkeley, on the same afternoon: the free indexes were measured honestly and the conclusion was then widened from “not reachable here” to “not transcribed”, which is a claim about the world rather than about my sources.",
+    lesson: "Name the shelf. “Not in FreeREG” and “not transcribed” are different sentences, and only one of them is true.",
+    href: "/jean-ward",
+  },
+  {
+    when: "13 September 2026",
     what: "Announced Jabez and Zillah Wakefield as “two children nobody here had ever heard of”, found in the 1851 census.",
     truth: "Both are on the General Hewitt passenger register, which this archive transcribed and published in July, together with an Ephraim aged five. They sailed with their parents, married in Queensland in 1863 and 1871, and Jabez was buried there in 1903.",
     why: "I checked the finding against the family tree, which does not have them, and not against this archive's own pages, which do. The manifest was three clicks away and I had written the page it sits on.",

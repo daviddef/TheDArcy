@@ -1,10 +1,10 @@
 {
-"entries": 728,
+"entries": 732,
 "distinct": 543,
-"records": 255,
+"records": 259,
 "tree": 473,
 "grafted": 98,
-"linked": 728,
+"linked": 732,
 "surnames": 184,
 "groups": [
 {
@@ -1163,7 +1163,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 95,
+"n": 96,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1205,6 +1205,13 @@
 "says": "named in the Chatham register 31 March 1826 as Bt: Major 39th Foot, of Chatham",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "39TH FOOT, Peninsular War officers' roll, 1808 · the same regiment he commanded a detachment of aboard the convict ship England in 1826",
+"source": "record · Peninsular War, British Army Officers 1808-1814 (RUSI, via FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -3274,6 +3281,68 @@
 ]
 },
 {
+"surname": "WARD",
+"n": 8,
+"rows": [
+{
+"name": "Jean Ward",
+"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "baptised at SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 · father JOSEPH WARD, mother MARTHA GARDEN — the parish this archive had repeatedly reported as untranscribed",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Joseph Ward",
+"says": "of South Leith, Midlothian · father of Jean, baptised there 19 July 1754 — and the man her eldest son was named for",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Frances Ward",
+"says": "1656–1698 · Baden-Wuerttemberg, Germany",
+"source": "family tree · above the Keele graft",
+"link": "/people/frances-ward",
+"kind": "tree"
+},
+{
+"name": "Jean Ward",
+"says": "1754–1823 · South Leith, Midlothian, Scotland",
+"source": "family tree · direct line",
+"link": "/people/jean-ward",
+"kind": "tree"
+},
+{
+"name": "Joseph Ward",
+"says": "b. 1725",
+"source": "family tree · direct line",
+"link": "/people/joseph-ward",
+"kind": "tree"
+},
+{
+"name": "William Ward",
+"says": "b. 1700",
+"source": "family tree · direct line",
+"link": "/people/william-ward",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "FALCO",
 "n": 7,
 "rows": [
@@ -3372,54 +3441,6 @@
 "says": "1787–1861 · Oswestry, Shropshire, England, United Kingdom",
 "source": "family tree · direct line",
 "link": "/people/elizabeth-margaret-oliver",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "WARD",
-"n": 6,
-"rows": [
-{
-"name": "Jean Ward",
-"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Jean Ward",
-"says": "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779",
-"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Frances Ward",
-"says": "1656–1698 · Baden-Wuerttemberg, Germany",
-"source": "family tree · above the Keele graft",
-"link": "/people/frances-ward",
-"kind": "tree"
-},
-{
-"name": "Jean Ward",
-"says": "1754–1823 · South Leith, Midlothian, Scotland",
-"source": "family tree · direct line",
-"link": "/people/jean-ward",
-"kind": "tree"
-},
-{
-"name": "Joseph Ward",
-"says": "b. 1725",
-"source": "family tree · direct line",
-"link": "/people/joseph-ward",
-"kind": "tree"
-},
-{
-"name": "William Ward",
-"says": "b. 1700",
-"source": "family tree · direct line",
-"link": "/people/william-ward",
 "kind": "tree"
 }
 ]
@@ -3928,6 +3949,33 @@
 ]
 },
 {
+"surname": "GARDEN",
+"n": 3,
+"rows": [
+{
+"name": "Martha Garden",
+"says": "of South Leith, Midlothian · mother of Jean Ward",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Martha Garden",
+"says": "b. 1730 · Scotland",
+"source": "family tree · direct line",
+"link": "/people/martha-garden",
+"kind": "tree"
+},
+{
+"name": "William Garden",
+"says": "no dates, no place — a name and a position in the tree",
+"source": "family tree · direct line",
+"link": "/people/william-garden",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "KEELING",
 "n": 3,
 "rows": [
@@ -4259,26 +4307,6 @@
 "says": "b. 1563 · Forde Hall, Warwickshire, England",
 "source": "family tree · above the Keele graft",
 "link": "/people/john-fullwood",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "GARDEN",
-"n": 2,
-"rows": [
-{
-"name": "Martha Garden",
-"says": "b. 1730 · Scotland",
-"source": "family tree · direct line",
-"link": "/people/martha-garden",
-"kind": "tree"
-},
-{
-"name": "William Garden",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree · direct line",
-"link": "/people/william-garden",
 "kind": "tree"
 }
 ]

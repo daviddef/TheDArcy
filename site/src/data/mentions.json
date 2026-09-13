@@ -950,13 +950,18 @@
 },
 {
 "path": "/changes",
-"snippet": "…f Ruabon. Well covered, and he is not in it. Read the Gazette for Joseph, Constantine and George Pitt D'Arcy. Nothing, with an OCR caveat. Was blocked by Cloudflare at irishgenealogy.ie — three Irish lines, one free database, and no way i…",
+"snippet": "…Joseph, and that Joseph is what she and Robert called their son at Portsea in 1780. Found George Pitt D'Arcy in the Peninsular War officers' roll for 1808, 39th Foot — the regiment he was still with in 1826. Filed the South Leith claim as…",
 "title": "What changed"
 },
 {
 "path": "/emigrations",
 "snippet": "…'s Own) Regiment of Foot, doing convict-guard duty — the same work that had brought Major George Pitt D'Arcy out six years earlier. documented He is correctly absent from the assisted-immigration index: a soldier's passage is not an emigr…",
 "title": "How they got here"
+},
+{
+"path": "/jean-ward",
+"snippet": "…on are what carry the identification. Peninsular War, British Army Officers 1808–1814 And George Pitt D'Arcy was in the Peninsula. The archive knows George Pitt D'Arcy as “Bt: Major 39th Foot” in the Chatham baptism register of March 1826…",
+"title": "South Leith"
 },
 {
 "path": "/australia",
@@ -985,7 +990,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…married by licence in 1806, witnessed by her brother Joseph. And Charlotte, daughter of “George Pitt D'Arcy, Bt: Major 39th Foot”, born 29 April 1825 and baptised eight days before the England sailed. → FreeREG — Hanley St John the Evang…",
+"snippet": "…insular War, British Army Officers 1808-1814 (RUSI) found something 13 Sep 2026 Searched: George Pitt D'Arcy's war service GEORGE D'ARCY, 39th FOOT, 1808 — the same regiment whose detachment he commanded aboard the convict ship England in…",
 "title": "What Has Been Read"
 },
 {
@@ -1433,6 +1438,16 @@
 "title": "What changed"
 },
 {
+"path": "/jean-ward",
+"snippet": "Jean Ward, baptised 1754 · found 13 September 2026 South Leith The parish this archive called untranscribed holds her baptism, and it names…",
+"title": "South Leith"
+},
+{
+"path": "/what-we-got-wrong",
+"snippet": "…t the family about their own family. 13 September 2026 It is indexed, with parents named. Jean Ward, baptised South Leith 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — an entire Scottish generation this archive did not…",
+"title": "What This Archive Got Wrong"
+},
+{
 "path": "/direct-line",
 "snippet": "…710 St. James Palace, London, Middlesex, Englan c. 21 Jul 1776 — disputed 8 Robert D'Arcy Jean Ward — m. 21 Jun 1779 by 1758, and probably earlier unknown 13 May 1827 Army Officer, Major General and Commander of Royal Engineers,…",
 "title": "The Spine"
@@ -1444,7 +1459,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…alogical Society) found something 13 Sep 2026 Searched: The marriage of Robert D'Arcy and Jean Ward PORTSEA ST MARY, 21 JUNE 1779. The archive has carried this marriage on a family tree since it began, with nothing behind it. The…",
+"snippet": "…Past — Scotland, Parish Births & Baptisms 1564-1929 found something 13 Sep 2026 Searched: Jean Ward's baptism at South Leith Found, with both parents. JEAN WARD, baptised SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 — father JOSEPH WARD…",
 "title": "What Has Been Read"
 },
 {
@@ -1476,6 +1491,11 @@
 "path": "/the-women",
 "snippet": "…e number of children the tree records — sixty-seven between them . Who Out of To Children Jean Ward 1754–1823 South Leith, Midlothian — Scotland Chatham, Kent 10 Catherine Margaret Mulcahy 1812–1858 Cork Adelaide Street, North Br…",
 "title": "The Women"
+},
+{
+"path": "/coverage",
+"snippet": "…lothian Holds: baptisms from the sixteenth century, with parents named Test — One search. Jean Ward, 19 July 1754, father Joseph Ward, mother Martha Garden. This archive reported South Leith as untranscribed and her baptism as un…",
+"title": "What the indexes actually hold"
 }
 ],
 "jeanie-murdoch": [
@@ -1704,7 +1724,23 @@
 "title": "The Sneyds"
 }
 ],
-"joseph-ward": [],
+"joseph-ward": [
+{
+"path": "/jean-ward",
+"snippet": "…d son the maternal grandfather's name, and this is what that looks like from the outside. Joseph Ward and Martha Garden are an entire generation this archive did not have, and the first Scots in it with names from a record rather t…",
+"title": "South Leith"
+},
+{
+"path": "/chatham",
+"snippet": "…1754. And her baptism has now been found — South Leith, Midlothian, 19 July 1754, father Joseph Ward, mother Martha Garden. This page said for months that South Leith was not transcribed. It is → A daughter's marriage, witnessed b…",
+"title": "Chatham"
+},
+{
+"path": "/coverage",
+"snippet": "…sixteenth century, with parents named Test — One search. Jean Ward, 19 July 1754, father Joseph Ward, mother Martha Garden. This archive reported South Leith as untranscribed and her baptism as unreachable, more than once and on m…",
+"title": "What the indexes actually hold"
+}
+],
 "joseph-william-d-arcy": [],
 "josephine-d-arcy": [],
 "julia-hetty-sneyd": [
@@ -2000,7 +2036,23 @@
 "title": "The Women"
 }
 ],
-"martha-garden": [],
+"martha-garden": [
+{
+"path": "/jean-ward",
+"snippet": "…al grandfather's name, and this is what that looks like from the outside. Joseph Ward and Martha Garden are an entire generation this archive did not have, and the first Scots in it with names from a record rather than a tree. an ide…",
+"title": "South Leith"
+},
+{
+"path": "/chatham",
+"snippet": "…sm has now been found — South Leith, Midlothian, 19 July 1754, father Joseph Ward, mother Martha Garden. This page said for months that South Leith was not transcribed. It is → A daughter's marriage, witnessed by a brother. Margarett…",
+"title": "Chatham"
+},
+{
+"path": "/coverage",
+"snippet": "…with parents named Test — One search. Jean Ward, 19 July 1754, father Joseph Ward, mother Martha Garden. This archive reported South Leith as untranscribed and her baptism as unreachable, more than once and on more than one page. It…",
+"title": "What the indexes actually hold"
+}
+],
 "martha-lewis": [
 {
 "path": "/how-far-back",
@@ -2326,6 +2378,11 @@
 "path": "/changes",
 "snippet": "…top of /coverage saying what every null on it is really measuring. Found the marriage of Robert D'Arcy and Jean Ward — Portsea St Mary, 21 June 1779 — which this archive has carried on a family tree since it began. Established by co…",
 "title": "What changed"
+},
+{
+"path": "/jean-ward",
+"snippet": "…, which is ordinary. And a naming pattern. Her father was JOSEPH. The first child she and Robert D'Arcy baptised at Portsea, in March 1780, was JOSEPH. Scottish naming custom gave a second son the maternal grandfather's name, and thi…",
+"title": "South Leith"
 },
 {
 "path": "/gallery",

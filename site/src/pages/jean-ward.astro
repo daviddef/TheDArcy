@@ -1,0 +1,60 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/jean-ward.json";
+---
+<Base
+  title="South Leith"
+  eyebrow={`Jean Ward, baptised 1754 · found ${d.found}`}
+  dek="The parish this archive called untranscribed holds her baptism, and it names her father and her mother.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <div class="lab">{d.record.set}</div>
+    <h2 style="margin-top:.4rem">The entry</h2>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>
+          <tr><td>Name</td><td><strong>{d.record.who}</strong></td></tr>
+          <tr><td>Baptised</td><td class="m"><strong>{d.record.bapt}</strong></td></tr>
+          <tr><td>Place</td><td><strong>{d.record.place}</strong></td></tr>
+          <tr><td><strong>Father</strong></td><td><strong>{d.record.father}</strong></td></tr>
+          <tr><td><strong>Mother</strong></td><td><strong>{d.record.mother}</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ol class="dek" style="margin-top:1.4rem">
+      {d.fits.map(([h, b]) => (<li style="margin-bottom:.6rem"><strong>{h}.</strong> {b}</li>))}
+    </ol>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.new}</strong> <span class="chip inf">an identification, and a good one</span>
+      <br /><br />
+      {d.caveat}
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Peninsular War, British Army Officers 1808–1814</div>
+    <h2 style="margin-top:.4rem">{d.george.head}</h2>
+    <p class="lede">{d.george.body}</p>
+    <div class="note" style="margin-top:1.2rem">{d.george.means}
+      <a href={u("/australia")}>The voyage of 1826 →</a> ·
+      <a href={u("/chatham")}>The baptism that gives his rank →</a></div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What both of these have in common</h2>
+    <p class="lede">{d.closes}</p>
+    <div class="note" style="margin-top:1.3rem">
+      That distinction is now the first thing on <a href={u("/coverage")}>the coverage page</a>, and
+      it is the most useful thing this archive has learned about itself.
+    </div>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/people/jean-ward")}>Jean Ward →</a> ·
+      <a href={u("/the-corps")}>Her husband's career →</a> ·
+      <a href={u("/chatham")}>Where she is buried →</a></p>
+  </section>
+</Base>

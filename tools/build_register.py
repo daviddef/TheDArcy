@@ -419,6 +419,14 @@ for _says in [
     rec("Robert D'Arcy", _says, ARMY, FMP_L7)
 rec("Joseph D'Arcy", "ROYAL ARTILLERY · in the officers' list from 1795, the Army List of 1798, the commission registers of 1802, 1803 and 1826, and the Army Lists of 1840–1844 — commissioned at about fifteen and still listed at sixty-four", "record · British Army Royal Artillery Officers 1716-1899 and Army Lists (FindMyPast, index only)", FMP_L7)
 
+
+SCO = "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)"
+FMP_L8 = "https://www.findmypast.com.au/"
+rec("Jean Ward", "baptised at SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 · father JOSEPH WARD, mother MARTHA GARDEN — the parish this archive had repeatedly reported as untranscribed", SCO, FMP_L8)
+rec("Joseph Ward", "of South Leith, Midlothian · father of Jean, baptised there 19 July 1754 — and the man her eldest son was named for", SCO, FMP_L8)
+rec("Martha Garden", "of South Leith, Midlothian · mother of Jean Ward", SCO, FMP_L8)
+rec("George Pitt D'Arcy", "39TH FOOT, Peninsular War officers' roll, 1808 · the same regiment he commanded a detachment of aboard the convict ship England in 1826", "record · Peninsular War, British Army Officers 1808-1814 (RUSI, via FindMyPast)", FMP_L8)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",
