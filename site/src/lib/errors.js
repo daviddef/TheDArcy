@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Declared Hannah Saniger's baptism missing from every reachable index — twice, on two separate days, each time with a control test behind it.",
+    truth: "HANNAH SANIGOR, baptised at Berkeley on 18 August 1804, father JNO SANIGOR. It is in the same FamilySearch index that produced her brothers, and it is on FindMyPast too.",
+    why: "This site keeps an alias list of surname spellings — eleven forms of Saniger — and SANIGOR was not one of them. Every “not found” I published was really “not found under the ten spellings I thought of”. The control tests were sound and they were testing the wrong thing: they measured whether the parish was covered, never whether my query could match the name.",
+    lesson: "A control test proves the source covers the place. It proves nothing about whether your search string can reach the record. Widen the name before you narrow the conclusion.",
+    href: "/hannah-baptism",
+  },
+  {
+    when: "13 September 2026",
     what: "Named a Martha Wakefield, born about 1836, as one of three daughters left behind when the family sailed in 1854 — on five pages.",
     truth: "Two of the three died as children: Eliza at nineteen months in 1834, Ellen at five in 1840, both with Bristol baptisms naming James and Hannah. The third produces no birth registration, no baptism and no burial at Bristol under any spelling, and is not in the family tree.",
     why: "The trio was assembled in an early pass and then repeated, and the repetition did the work that evidence should have. Nobody — me — ever went back to ask where the name had come from.",

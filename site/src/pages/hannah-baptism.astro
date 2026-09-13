@@ -1,0 +1,76 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/hannah-baptism.json";
+---
+<Base
+  title="One vowel"
+  eyebrow={`Hannah's baptism · found ${d.found}`}
+  dek="The document this archive twice declared missing was indexed the whole time under a spelling its own alias list did not carry.">
+
+  <section class="blk">
+    <div class="note" style="border-left-width:3px">
+      <strong style="font-size:1.15em">{d.record.who}, baptised {d.record.bapt},
+      {d.record.place} — father {d.record.father}.</strong>
+      <br /><br />
+      <span class="small">{d.record.set}</span>
+      <span class="chip doc">documented</span>
+    </div>
+    <p class="lede" style="margin-top:1.3rem">{d.lede}</p>
+    <p style="margin-top:1.1rem">{d.why}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.siblings.head}</div>
+    <h2 style="margin-top:.4rem">John Saniger's children at Berkeley</h2>
+    <p>{d.siblings.note}</p>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <tbody>
+          {d.siblings.rows.map(([n, when, note]) => (
+            <tr style={n === "HANNAH SANIGOR" ? "background:var(--tint)" : ""}>
+              <td><strong>{n}</strong></td><td class="m">{when}</td>
+              <td class="small">{note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="dek" style="margin-top:1.2rem">{d.thomas}
+      <a href={u("/thomas-sinegar")}>Thomas →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">The honest caveat</div>
+    <h2 style="margin-top:.4rem">{d.year.head}</h2>
+    <p class="lede">{d.year.body}</p>
+    <p style="margin-top:1rem"><span class="chip inf">{d.year.chip}</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">And a name that is not yet evidence</div>
+    <h2 style="margin-top:.4rem">{d.lydia.head}</h2>
+    <p class="lede">{d.lydia.body}</p>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.lydia.but}</strong> <span class="chip lore">{d.lydia.chip}</span>
+      <br /><br />
+      <a href={u("/drivers-fields")}>Lyddya Sinegar, aged seventy →</a>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>Two notes on method</h2>
+    <ol class="dek">
+      <li style="margin-bottom:.6rem"><strong>An alias list is a research instrument, and mine had a
+      hole in it.</strong> Every "not found" this archive published for Hannah was really "not found
+      under ten of the eleven spellings I happened to think of". The list now carries sixteen,
+      including Sanigor, Sanigear, Sinigar and Swanhanger.
+      <a href={u("/coverage")}>Where the other holes were →</a></li>
+      <li><strong>And on Ancestry.</strong> {d.ancestry}</li>
+    </ol>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/saniger-line")}>Six generations at Berkeley →</a> ·
+      <a href={u("/berkeley-woman")}>Why I thought she was not from there →</a> ·
+      <a href={u("/what-we-got-wrong")}>The errors →</a></p>
+  </section>
+</Base>

@@ -1,0 +1,36 @@
+{
+ "found": "13 September 2026",
+ "record": {
+  "who": "HANNAH SANIGOR",
+  "bapt": "18 AUGUST 1804",
+  "place": "BERKELEY, GLOUCESTERSHIRE",
+  "father": "JNO SANIGOR",
+  "set": "England Births & Baptisms 1538-1975 (FamilySearch index), confirmed on FindMyPast and FamilySearch independently"
+ },
+ "lede": "This archive has spent weeks looking for Hannah Saniger's baptism, and on two separate days concluded it was missing from every index money could buy. It is not missing. It is spelled SANIGOR, and that is one of the very few spellings this site's own alias list did not carry.",
+ "why": "The search index here knows eleven forms of this surname — Sainger, Sanigar, Sanigaer, Sinager, Sinneger, Sinnegar, Sinegar, Synegar, Synager, Singer. It did not know Sanigor. Neither did the variant matching on the subscription site, which returned her marriage and nothing else however the query was phrased. One vowel.",
+ "siblings": {
+  "head": "And with it, the whole family",
+  "note": "John Saniger's children, all baptised at Berkeley, all naming him as father:",
+  "rows": [
+   ["Ann Sanigar", "1798", ""],
+   ["William Saniger", "6 September 1801", ""],
+   ["Jno Saniger", "18 September 1803", ""],
+   ["HANNAH SANIGOR", "18 AUGUST 1804", "the direct line"],
+   ["Thos Saniger", "3 July 1808", "almost certainly the Thomas Sinegar who lived a mile from her in Bristol"]
+  ]
+ },
+ "year": {
+  "head": "One thing does not fit, and it is the year.",
+  "body": "The family tree gives Hannah's birth as 23 July 1805. This baptism is 18 August 1804 — eleven months earlier. There is no second Hannah baptised to John Saniger at Berkeley, and no burial for a Hannah between the two dates, so the ordinary reading is that the tree's day and month were carried from somewhere reliable and the year slipped by one. The alternative — two daughters of the same name, the first dying unrecorded — is possible and has no evidence at all.",
+  "chip": "her baptism, very probably; the year unresolved"
+ },
+ "lydia": {
+  "head": "Her mother is named, and the name is not evidenced.",
+  "body": "FamilySearch's shared tree gives John Saniger a wife LYDIA JONES, 1770–1851, married at Berkeley in 1797. That would name the seventy-year-old Lyddya Sinegar living in Hannah's house in 1841 and settle the oldest small mystery on this site.",
+  "but": "It is not sourced. John Saniger's profile there carries fourteen sources and every one of them is a baptism — his own and his children's. No marriage record is attached, and no record anywhere in this archive gives Lydia a surname. JONES is somebody's assertion until a Berkeley marriage register says otherwise.",
+  "chip": "a name to test, not a fact"
+ },
+ "thomas": "It also closes the Thomas Sinegar question. He and Hannah are both baptised at Berkeley to John Saniger — she in 1804, he on 3 July 1808 — and he spent his life in the Bristol parish next to hers, naming a daughter Lydia, a daughter Hannah, and two sons John.",
+ "ancestry": "Asked to look on Ancestry, which holds the Gloucestershire registers FindMyPast does not. It is not signed in on this machine and I will not enter anyone's password, so it was not used. FamilySearch was signed in, is free, and had the record."
+}

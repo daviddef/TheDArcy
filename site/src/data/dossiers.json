@@ -370,6 +370,21 @@
 "slug": "richard-wakefield",
 "n": 2
 },
+"ann-saniger": {
+"name": "Ann Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "baptised at Berkeley 1798, father John Saniger · Hannah's eldest sister",
+"source": "record · England Births & Baptisms 1538-1975, Berkeley — confirmed on FamilySearch and FindMyPast",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "ann-saniger",
+"n": 1
+},
 "caroline-saniger": {
 "name": "Caroline Saniger",
 "surname": "SANIGER",
@@ -1335,6 +1350,21 @@
 "slug": "robert-gamel",
 "n": 1
 },
+"martha-golding": {
+"name": "Martha Golding",
+"surname": "GOLDING",
+"rows": [
+{
+"says": "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH",
+"source": "record · FamilySearch Family Tree (marriage unsourced there)",
+"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "martha-golding",
+"n": 1
+},
 "j-brownlie-henderson": {
 "name": "J. Brownlie Henderson",
 "surname": "HENDERSON",
@@ -1937,9 +1967,9 @@
 }
 },
 "counts": {
-"named": 159,
+"named": 161,
 "withTreePage": 39,
-"ownPage": 120,
-"mentions": 268
+"ownPage": 122,
+"mentions": 272
 }
 }

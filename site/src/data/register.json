@@ -1,11 +1,11 @@
 {
-"entries": 741,
-"distinct": 545,
-"records": 268,
+"entries": 745,
+"distinct": 547,
+"records": 272,
 "tree": 473,
 "grafted": 98,
-"linked": 741,
-"surnames": 185,
+"linked": 745,
+"surnames": 186,
 "groups": [
 {
 "surname": "SNEYD",
@@ -2204,8 +2204,15 @@
 },
 {
 "surname": "SANIGER",
-"n": 41,
+"n": 44,
 "rows": [
+{
+"name": "Ann Saniger",
+"says": "baptised at Berkeley 1798, father John Saniger · Hannah's eldest sister",
+"source": "record · England Births & Baptisms 1538-1975, Berkeley — confirmed on FamilySearch and FindMyPast",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
 {
 "name": "Caroline Saniger",
 "says": "his wife, aged 28 · born Fishponds, Gloucestershire",
@@ -2333,6 +2340,13 @@
 "kind": "record"
 },
 {
+"name": "Hannah Saniger",
+"says": "baptised HANNAH SANIGOR at BERKELEY, 18 AUGUST 1804 · father JNO SANIGOR — the baptism this archive twice declared missing, indexed under a spelling its own alias list did not carry",
+"source": "record · England Births & Baptisms 1538-1975, Berkeley — confirmed on FamilySearch and FindMyPast",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Jane Saniger",
 "says": "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24",
 "source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
@@ -2435,6 +2449,13 @@
 "says": "THOMAS SINEGAR, 30, at Sion Road, Johns Place, St Philip & Jacob Without, 1841 · with Martha 31, James 11, LYDIA 9, Thomas 7, Martha 2 — HO107/378 bk5 f.40 p.26 sch.1633 · and in 1851, aged 42, a labourer at 7 Oxford Road BORN BERKLEY, GLOUCESTERSHIRE",
 "source": "record · 1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Thomas Saniger",
+"says": "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John",
+"source": "record · FamilySearch Family Tree",
+"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP",
 "kind": "record"
 },
 {
@@ -5144,6 +5165,19 @@
 "source": "family tree · direct line",
 "link": "/people/ellen-gillard",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "GOLDING",
+"n": 1,
+"rows": [
+{
+"name": "Martha Golding",
+"says": "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH",
+"source": "record · FamilySearch Family Tree (marriage unsourced there)",
+"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP",
+"kind": "record"
 }
 ]
 },

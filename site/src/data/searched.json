@@ -9,6 +9,30 @@
  ],
  "rows": [
   {
+   "src": "FamilySearch (free, and signed in) — England Births & Baptisms, confirmed on FindMyPast",
+   "what": "Hannah Saniger's baptism",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "FOUND. HANNAH SANIGOR, baptised at BERKELEY on 18 AUGUST 1804, father JNO SANIGOR. This archive declared the record missing twice, on two separate days, having established by control test that no index reached it. It was indexed the whole time under SANIGOR — one of the very few spellings this site's own alias list did not carry, and one the subscription site's variant matching also missed. The list has been widened from eleven forms to sixteen. The tree gives her birth as 23 July 1805, eleven months later; there is no second Hannah and no burial between, so the likeliest reading is a slipped year.",
+   "href": "/hannah-baptism"
+  },
+  {
+   "src": "FamilySearch Family Tree",
+   "what": "Hannah's mother, and Thomas Sinegar's marriage",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Two answers and one warning. The shared tree gives John Saniger a wife LYDIA JONES, 1770–1851, married at Berkeley in 1797 — which would name the Lyddya Sinegar living in Hannah's house in 1841. It also gives THOMAS SANIGER (1808–1881) a marriage to MARTHA GOLDING at Bristol St James on 24 AUGUST 1828, eleven children including a Lydia, a Hannah and two sons named John, and a death at Waterloo Lane, Bristol on 1 October 1881. THE WARNING: John Saniger's profile there carries fourteen sources and every one is a baptism. Neither marriage has a record attached. Both are leads to verify, not facts to publish.",
+   "href": "/hannah-baptism"
+  },
+  {
+   "src": "Ancestry.com.au",
+   "what": "The Gloucestershire parish registers FindMyPast does not hold",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Not used. Ancestry is not signed in on this machine, in either browser, and entering somebody's password is not something this archive will do. FamilySearch was already signed in, is free, and turned out to hold the record anyway.",
+   "href": "/hannah-baptism"
+  },
+  {
    "src": "FindMyPast — 1841 census and Bristol parish registers",
    "what": "Thomas Sinegar of St Philip and Jacob — Hannah's brother?",
    "when": "13 Sep 2026",

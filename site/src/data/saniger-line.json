@@ -3,16 +3,61 @@
  "source": "FindMyPast — England Births & Baptisms 1538-1975 and England Marriages 1538-1973 (FamilySearch index); National Burial Index (Gloucestershire FHS); 1851 census",
  "lede": "For most of this archive's life the Saniger line was the thing it could not test. Six generations of it came from a family tree, and FreeREG's transcript of Berkeley St Mary the Virgin stops in 1677. Every one of those generations is now on a parish record, and the tree was right at every step.",
  "gens": [
-  {"who":"William Saniger","ev":"father of the next","rec":"named as father in the baptism of 12 October 1679","tree":"—","note":"The deepest Saniger this archive can reach. He is a name in a register and nothing else."},
-  {"who":"William Saniger","ev":"baptised Berkeley 12 OCTOBER 1679","rec":"father WILLIAM Saniger","tree":"b. 12 Oct 1679, Berkeley","note":"The tree's date to the day."},
-  {"who":"Thomas Saniger","ev":"baptised Berkeley 12 DECEMBER 1711","rec":"father WILLIAM Saniger","tree":"b. 11 Dec 1711, Berkeley","note":"Born the 11th, christened the 12th — the ordinary interval."},
-  {"who":"Thomas Saniger","ev":"baptised Berkeley 23 AUGUST 1744","rec":"father THOMAS Saniger","tree":"b. 23 Aug 1744, Berkeley","note":"The tree's date to the day. Buried at Berkeley 24 January 1819, aged 75."},
-  {"who":"Thomas Saniger & Catherine Cotton","ev":"married Berkeley 10 APRIL 1769","rec":"—","tree":"not in the tree at all","note":"John was christened five weeks later. Catherine Cotton is a name this archive had never held."},
-  {"who":"John Saniger","ev":"baptised Berkeley 18 MAY 1769","rec":"father THO'S Saniger","tree":"b. 15 May 1769, Berkeley","note":"Buried at Berkeley 16 January 1825, aged 55 — the tree says 10 March 1824, ten months early."},
-  {"who":"Hannah Saniger","ev":"born Berkeley about 1805","rec":"1851 census: birth town BERKELEY, birth county GLOUCESTERSHIRE","tree":"b. 23 Jul 1805, Berkeley","note":"Her baptism is still not found. Her brothers are — William 1801, John 1803, Thomas 1808, all sons of John."}
+  {
+   "who": "William Saniger",
+   "ev": "father of the next",
+   "rec": "named as father in the baptism of 12 October 1679",
+   "tree": "—",
+   "note": "The deepest Saniger this archive can reach. He is a name in a register and nothing else."
+  },
+  {
+   "who": "William Saniger",
+   "ev": "baptised Berkeley 12 OCTOBER 1679",
+   "rec": "father WILLIAM Saniger",
+   "tree": "b. 12 Oct 1679, Berkeley",
+   "note": "The tree's date to the day."
+  },
+  {
+   "who": "Thomas Saniger",
+   "ev": "baptised Berkeley 12 DECEMBER 1711",
+   "rec": "father WILLIAM Saniger",
+   "tree": "b. 11 Dec 1711, Berkeley",
+   "note": "Born the 11th, christened the 12th — the ordinary interval."
+  },
+  {
+   "who": "Thomas Saniger",
+   "ev": "baptised Berkeley 23 AUGUST 1744",
+   "rec": "father THOMAS Saniger",
+   "tree": "b. 23 Aug 1744, Berkeley",
+   "note": "The tree's date to the day. Buried at Berkeley 24 January 1819, aged 75."
+  },
+  {
+   "who": "Thomas Saniger & Catherine Cotton",
+   "ev": "married Berkeley 10 APRIL 1769",
+   "rec": "—",
+   "tree": "not in the tree at all",
+   "note": "John was christened five weeks later. Catherine Cotton is a name this archive had never held."
+  },
+  {
+   "who": "John Saniger",
+   "ev": "baptised Berkeley 18 MAY 1769",
+   "rec": "father THO'S Saniger",
+   "tree": "b. 15 May 1769, Berkeley",
+   "note": "Buried at Berkeley 16 January 1825, aged 55 — the tree says 10 March 1824, ten months early."
+  },
+  {
+   "who": "Hannah Saniger",
+   "ev": "baptised HANNAH SANIGOR at Berkeley, 18 AUGUST 1804",
+   "rec": "father JNO SANIGOR",
+   "tree": "b. 23 Jul 1805, Berkeley",
+   "note": "Found 13 September 2026 under a spelling this site's alias list did not carry. The tree's day and month may be sound and its year one out; there is no second Hannah and no burial between."
+  }
  ],
- "count": {"exact": 3, "gens": 6},
- "verdict": "Three baptism dates match the tree to the day, across a hundred and thirty years. One death date is ten months out. One marriage — Thomas Saniger to Catherine Cotton in 1769 — the tree did not have at all. On the evidence the compiler of this tree had seen the Berkeley register, or something copied faithfully from it, and this archive spent months treating their work as unevidenced assertion because it could not reach the same book.",
+ "count": {
+  "exact": 3,
+  "gens": 6
+ },
+ "verdict": "Three baptism dates match the tree to the day, across a hundred and thirty years. One death date is ten months out. One marriage — Thomas Saniger to Catherine Cotton in 1769 — the tree did not have at all. On the evidence the compiler of this tree had seen the Berkeley register, or something copied faithfully from it, and this archive spent months treating their work as unevidenced assertion because it could not reach the same book. And the last link closed on the same day: Hannah's own baptism, in the same register, under the spelling SANIGOR.",
  "cotton": "Catherine Cotton herself goes no further. She marries at Berkeley in April 1769 and there is no baptism for her in the parish, so where she came from is open — the one new question this work has created rather than closed.",
- "gap": "And Hannah's own baptism remains missing, for a reason now established by control test: FindMyPast reaches Berkeley only through the FamilySearch index, and that index is partial. Her father's other children are in it and she is not. The original register at Gloucestershire Archives is what is left."
+ "gap": "Hannah's baptism is found. What is left is her mother: the shared tree calls her LYDIA JONES and attaches no record to the claim, and no document in this archive gives Lydia a surname."
 }

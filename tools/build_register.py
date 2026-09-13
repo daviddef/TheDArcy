@@ -450,6 +450,14 @@ rec("Thomas Saniger", "THOMAS SINEGAR, 30, at Sion Road, Johns Place, St Philip 
 rec("Lydia Sinegar", "baptised at Bristol, St Philip and Jacob, 28 JANUARY 1866 · father JAMES SINEGAR, mother Laura — Bristol Archives P/St P&J/R/2/24 · the third Lydia in three generations of this Bristol household", SIN, FMP_LB)
 rec("Thomas Sinegar", "married JULIA MARSH at Bristol, St Matthias, 28 MAY 1871 · father THOMAS SINEGAR — Bristol Archives P/St.Mat/R/2/b", SIN, FMP_LB)
 
+
+HB = "record · England Births & Baptisms 1538-1975, Berkeley — confirmed on FamilySearch and FindMyPast"
+FMP_LC = "https://www.findmypast.com.au/"
+rec("Hannah Saniger", "baptised HANNAH SANIGOR at BERKELEY, 18 AUGUST 1804 · father JNO SANIGOR — the baptism this archive twice declared missing, indexed under a spelling its own alias list did not carry", HB, FMP_LC)
+rec("Ann Saniger", "baptised at Berkeley 1798, father John Saniger · Hannah's eldest sister", HB, FMP_LC)
+rec("Martha Golding", "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH", "record · FamilySearch Family Tree (marriage unsourced there)", "https://www.familysearch.org/tree/person/details/KZ2H-JBP")
+rec("Thomas Saniger", "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John", "record · FamilySearch Family Tree", "https://www.familysearch.org/tree/person/details/KZ2H-JBP")
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

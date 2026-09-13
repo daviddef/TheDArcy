@@ -3,22 +3,63 @@
  "lede": "An earlier pass of this archive found a Thomas Sinegar living a mile from Hannah Wakefield and called him “the best lead this archive has”, because he was one of only two Sanigers in Bristol who gave their birthplace as Berkley. Then I decided Hannah was not born in Gloucestershire, and spent three days in Somerset. She was born at Berkeley. He is worth going back to.",
  "who": "Thomas Saniger, baptised at Berkeley on 3 JULY 1808, son of JOHN SANIGER — Hannah's brother, if the Bristol man is him.",
  "records": [
-  {"when":"3 Jul 1808","what":"Baptised at Berkeley St Mary the Virgin, father JOHN SANIGER","where":"England Births & Baptisms","note":"The brother the register gives Hannah."},
-  {"when":"6 Jun 1841","what":"THOMAS SINEGAR, 30, with Martha 31, James 11, LYDIA 9, Thomas 7 and Martha 2 — all born Gloucestershire","where":"Sion Road, Johns Place, St Philip & Jacob Without · HO107/378 bk 5 f.40 p.26 sch.1633","note":"1841 rounded adult ages down to five, so “30” means 30–34."},
-  {"when":"30 Mar 1851","what":"THOMAS SINEGAR, 42, labourer, BORN BERKLEY, GLOUCESTERSHIRE · his wife Martha, 42, cordwainer, born BERKLEY too","where":"7 Oxford Road, St Philip and Jacob Out","note":"Of 28 Saniger-variant people in Bristol that year, he and his wife are the only two from Berkeley."},
-  {"when":"28 Jan 1866","what":"LYDIA SINEGAR baptised · father JAMES SINEGAR, mother Laura","where":"Bristol, St Philip and Jacob · Bristol Archives P/St P&J/R/2/24","note":"James is the eldest son of 1841. He named a daughter Lydia."},
-  {"when":"28 May 1871","what":"THOMAS SINEGAR married JULIA MARSH · father THOMAS SINEGAR","where":"Bristol, St Matthias · Bristol Archives P/St.Mat/R/2/b","note":"The seven-year-old of 1841, grown up, and the entry names his father."}
+  {
+   "when": "3 Jul 1808",
+   "what": "Baptised at Berkeley St Mary the Virgin, father JOHN SANIGER",
+   "where": "England Births & Baptisms",
+   "note": "The brother the register gives Hannah."
+  },
+  {
+   "when": "6 Jun 1841",
+   "what": "THOMAS SINEGAR, 30, with Martha 31, James 11, LYDIA 9, Thomas 7 and Martha 2 — all born Gloucestershire",
+   "where": "Sion Road, Johns Place, St Philip & Jacob Without · HO107/378 bk 5 f.40 p.26 sch.1633",
+   "note": "1841 rounded adult ages down to five, so “30” means 30–34."
+  },
+  {
+   "when": "30 Mar 1851",
+   "what": "THOMAS SINEGAR, 42, labourer, BORN BERKLEY, GLOUCESTERSHIRE · his wife Martha, 42, cordwainer, born BERKLEY too",
+   "where": "7 Oxford Road, St Philip and Jacob Out",
+   "note": "Of 28 Saniger-variant people in Bristol that year, he and his wife are the only two from Berkeley."
+  },
+  {
+   "when": "28 Jan 1866",
+   "what": "LYDIA SINEGAR baptised · father JAMES SINEGAR, mother Laura",
+   "where": "Bristol, St Philip and Jacob · Bristol Archives P/St P&J/R/2/24",
+   "note": "James is the eldest son of 1841. He named a daughter Lydia."
+  },
+  {
+   "when": "28 May 1871",
+   "what": "THOMAS SINEGAR married JULIA MARSH · father THOMAS SINEGAR",
+   "where": "Bristol, St Matthias · Bristol Archives P/St.Mat/R/2/b",
+   "note": "The seven-year-old of 1841, grown up, and the entry names his father."
+  }
  ],
  "case": [
-  ["The age is exact.", "Thomas Saniger was baptised at Berkeley on 3 July 1808. At the 1851 census, taken on 30 March, a man born in July 1808 is FORTY-TWO. The enumerator wrote forty-two."],
-  ["The birthplace is exact, and it is unusual.", "He gives BERKLEY — the same idiosyncratic spelling the family tree uses for Hannah's birthplace, and the parish the 1851 census independently gives her."],
-  ["The place is right.", "St Philip and Jacob is the parish adjoining St Paul, where Hannah lived. A mile apart."],
-  ["And the name Lydia runs through it.", "The tree says Hannah's mother was LYDIA. In 1841 a LYDDYA SINEGAR aged seventy is living in Hannah's house at Drivers Fields. In the same census Thomas Sinegar has a daughter LYDIA aged nine. In 1866 his son James christens a daughter LYDIA. Three generations of a name that is not common, in two households a mile apart."]
+  [
+   "The age is exact.",
+   "Thomas Saniger was baptised at Berkeley on 3 July 1808. At the 1851 census, taken on 30 March, a man born in July 1808 is FORTY-TWO. The enumerator wrote forty-two."
+  ],
+  [
+   "The birthplace is exact, and it is unusual.",
+   "He gives BERKLEY — the same idiosyncratic spelling the family tree uses for Hannah's birthplace, and the parish the 1851 census independently gives her."
+  ],
+  [
+   "The place is right.",
+   "St Philip and Jacob is the parish adjoining St Paul, where Hannah lived. A mile apart."
+  ],
+  [
+   "And the name Lydia runs through it.",
+   "The tree says Hannah's mother was LYDIA. In 1841 a LYDDYA SINEGAR aged seventy is living in Hannah's house at Drivers Fields. In the same census Thomas Sinegar has a daughter LYDIA aged nine. In 1866 his son James christens a daughter LYDIA. Three generations of a name that is not common, in two households a mile apart."
+  ],
+  [
+   "And he named his children after them.",
+   "Thomas and Martha had eleven children. Two sons were called JOHN, both dying as infants — his father's name. A daughter was LYDIA — his mother's name on the tree. A daughter, christened at St Philip and Jacob on 4 February 1849, was HANNAH."
+  ]
  ],
  "against": [
-  "No record found anywhere names Thomas Sinegar's father. His marriage to Martha — about 1829, on the age of their eldest — has not been found in Gloucestershire under any spelling.",
-  "No record names Hannah's mother either. Lyddya Sinegar is a name, an age and an address, and nothing more.",
-  "So the join is made of an exact age, an unusual spelling of a parish, a neighbouring address and a repeated forename. That is a strong circumstantial case and it is not a document."
+  "The marriage to Martha Golding is on a shared tree with no source attached, so the entry that would name Thomas's father has still not been seen.",
+  "Their mother's surname — JONES on that tree — is likewise unsourced.",
+  "But the sibling link no longer rests on inference. Both baptisms name John Saniger of Berkeley."
  ],
- "verdict": "Hannah Saniger's brother is very probably living a mile from her in 1841 and 1851, with their mother in Hannah's house and their mother's name on his daughter. The archive should say that, say it is an inference, and go and find the marriage."
+ "verdict": "CONFIRMED, later the same day. Hannah's own baptism has been found at Berkeley — HANNAH SANIGOR, 18 August 1804, father JNO SANIGOR — and Thomas was baptised in the same parish to the same father on 3 July 1808. They are brother and sister on the register. What remains unsourced is his marriage: the FamilySearch tree gives MARTHA GOLDING at Bristol St James on 24 August 1828 and attaches no record to it."
 }
