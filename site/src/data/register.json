@@ -1,10 +1,10 @@
 {
-"entries": 745,
+"entries": 747,
 "distinct": 547,
-"records": 272,
+"records": 274,
 "tree": 473,
 "grafted": 98,
-"linked": 745,
+"linked": 747,
 "surnames": 186,
 "groups": [
 {
@@ -2204,7 +2204,7 @@
 },
 {
 "surname": "SANIGER",
-"n": 44,
+"n": 45,
 "rows": [
 {
 "name": "Ann Saniger",
@@ -2456,6 +2456,13 @@
 "says": "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John",
 "source": "record · FamilySearch Family Tree",
 "link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP",
+"kind": "record"
+},
+{
+"name": "Thomas Saniger",
+"says": "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, entered as THOMAS SANIGRE · Hannah's brother, baptised Berkeley 3 July 1808 son of John",
+"source": "record · England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast",
+"link": "https://www.familysearch.org/",
 "kind": "record"
 },
 {
@@ -4389,6 +4396,26 @@
 ]
 },
 {
+"surname": "GOLDING",
+"n": 2,
+"rows": [
+{
+"name": "Martha Golding",
+"says": "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH",
+"source": "record · FamilySearch Family Tree (marriage unsourced there)",
+"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP",
+"kind": "record"
+},
+{
+"name": "Martha Golding",
+"says": "married Thomas Sanigre at Bristol, 24 August 1828 · mother of his eleven children",
+"source": "record · England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast",
+"link": "https://www.familysearch.org/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "HOLFORD",
 "n": 2,
 "rows": [
@@ -5165,19 +5192,6 @@
 "source": "family tree · direct line",
 "link": "/people/ellen-gillard",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "GOLDING",
-"n": 1,
-"rows": [
-{
-"name": "Martha Golding",
-"says": "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH",
-"source": "record · FamilySearch Family Tree (marriage unsourced there)",
-"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP",
-"kind": "record"
 }
 ]
 },

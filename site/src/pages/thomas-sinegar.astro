@@ -43,6 +43,11 @@ import d from "../data/thomas-sinegar.json";
       {d.against.map((x) => (<li style="margin-bottom:.5rem">{x}</li>))}
     </ul>
     <div class="note" style="margin-top:1.3rem">
+      <strong>{d.spelling}</strong>
+      <a href={u("/hannah-baptism")}>The other vowel →</a>
+    </div>
+
+    <div class="note" style="margin-top:1.2rem">
       <strong>{d.verdict}</strong>
       <span class="chip inf">a strong inference, not a document</span>
     </div>

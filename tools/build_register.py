@@ -458,6 +458,11 @@ rec("Ann Saniger", "baptised at Berkeley 1798, father John Saniger · Hannah's e
 rec("Martha Golding", "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH", "record · FamilySearch Family Tree (marriage unsourced there)", "https://www.familysearch.org/tree/person/details/KZ2H-JBP")
 rec("Thomas Saniger", "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John", "record · FamilySearch Family Tree", "https://www.familysearch.org/tree/person/details/KZ2H-JBP")
 
+
+TSM = "record · England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast"
+rec("Thomas Saniger", "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, entered as THOMAS SANIGRE · Hannah's brother, baptised Berkeley 3 July 1808 son of John", TSM, "https://www.familysearch.org/")
+rec("Martha Golding", "married Thomas Sanigre at Bristol, 24 August 1828 · mother of his eleven children", TSM, "https://www.familysearch.org/")
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

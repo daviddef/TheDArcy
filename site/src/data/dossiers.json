@@ -1110,6 +1110,26 @@
 "slug": "william-swonhungre",
 "n": 1
 },
+"martha-golding": {
+"name": "Martha Golding",
+"surname": "GOLDING",
+"rows": [
+{
+"says": "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH",
+"source": "record · FamilySearch Family Tree (marriage unsourced there)",
+"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP"
+},
+{
+"says": "married Thomas Sanigre at Bristol, 24 August 1828 · mother of his eleven children",
+"source": "record · England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast",
+"link": "https://www.familysearch.org/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "martha-golding",
+"n": 2
+},
 "thomas-sinnegar": {
 "name": "Thomas Sinnegar",
 "surname": "SINNEGAR",
@@ -1348,21 +1368,6 @@
 "inTree": false,
 "treeLink": "",
 "slug": "robert-gamel",
-"n": 1
-},
-"martha-golding": {
-"name": "Martha Golding",
-"surname": "GOLDING",
-"rows": [
-{
-"says": "married THOMAS SANIGER at Bristol St James, 24 August 1828 · the mother of his eleven children, two of whom he named JOHN and one LYDIA and one HANNAH",
-"source": "record · FamilySearch Family Tree (marriage unsourced there)",
-"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "martha-golding",
 "n": 1
 },
 "j-brownlie-henderson": {
@@ -1970,6 +1975,6 @@
 "named": 161,
 "withTreePage": 39,
 "ownPage": 122,
-"mentions": 272
+"mentions": 274
 }
 }
