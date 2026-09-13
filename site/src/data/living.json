@@ -22,30 +22,35 @@
   {
    "phrase": "Gayle D'Arcy",
    "why": "Credited as the author of the first part of Ken D'Arcy's eulogy, which this archive calls its single richest source. She is quoted by name on /murdoch and /brisbane and credited on /sources.",
-   "living": true
+   "living": true,
+   "confirmed": "14 September 2026"
   },
   {
    "phrase": "Ian D'Arcy",
    "why": "Credited as an author of Ken D'Arcy's eulogy on /sources and /documents, and named as the subject of a Pimlico State High School photograph used to corroborate the Townsville years.",
-   "living": true
+   "living": true,
+   "confirmed": "14 September 2026"
   },
   {
    "phrase": "Graham D'Arcy",
    "why": "Credited as an author of Ken D'Arcy's eulogy on /sources, and named as a son on /people/kenneth-lindsay-d-arcy.",
-   "living": true
+   "living": true,
+   "confirmed": "14 September 2026"
   },
   {
    "phrase": "Ian Kenneth D'Arcy",
    "why": "Named on /the-other-archives and /corrections in the sentence that explains why this archive exists at all — the marriage that joins the D'Arcy and Falco archives.",
-   "living": true
+   "living": true,
+   "confirmed": "14 September 2026"
   },
   {
    "phrase": "Giuseppina Falco",
    "why": "Named in the same sentence, for the same reason.",
-   "living": true
+   "living": true,
+   "confirmed": "14 September 2026"
   }
  ],
- "namedNote": "These five are living people whom this archive names on purpose, as sources and as provenance, rather than as tree records — none of them has a person page, a birth year or a birthplace here. Every one of them is a deliberate editorial decision and every one is reversible in a single line: delete the entry and the build will refuse to ship until the name comes off the page. That is the point of writing them down rather than letting the guard quietly pass.",
+ "namedNote": "These five are living people whom this archive names on purpose, as sources and as provenance, rather than as tree records — none of them has a person page, a birth year or a birthplace here. CONFIRMED BY THE ARCHIVE'S OWNER ON 14 SEPTEMBER 2026, when the guard below was built and put the question directly: keep them named, it is deliberate. That is recorded here so the decision is not quietly reversed by somebody later reading the rule and not the reason. Each entry is still one line: delete it and the build refuses to ship until the name comes off the page.",
  "allow": [],
  "allowFiles": [],
  "released": [],
@@ -57,5 +62,6 @@
   "phrases": 2016,
   "pages": 683
  },
+ "namesakesNote": "Not living people at all — a historical namesake, or a phrase that only ever appears inside a longer published name. These carry no editorial decision and no privacy question; they are here because the matcher cannot tell them apart from the living person of the same name.",
  "countsNote": "Written by tools/check_living.py on every build. Never type these numbers into a page."
 }
