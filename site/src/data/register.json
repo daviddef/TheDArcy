@@ -1,10 +1,10 @@
 {
-"entries": 716,
+"entries": 719,
 "distinct": 543,
-"records": 243,
+"records": 246,
 "tree": 473,
 "grafted": 98,
-"linked": 716,
+"linked": 719,
 "surnames": 184,
 "groups": [
 {
@@ -1163,7 +1163,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 87,
+"n": 90,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1289,6 +1289,27 @@
 "says": "married JEAN WARD at PORTSEA ST MARY, 21 JUNE 1779 · the marriage this archive has carried on a family tree since it began, nine months before their son Joseph was christened in the same church",
 "source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“At Chatham, on the 13th instant, Major-General D'Arcy, late of the Corps of Royal Engineers” · Morning Chronicle, 17 May 1827 — his death date from the contemporary press rather than from Connolly's book of 1898",
+"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“On Saturday Major-General D'Arcy, whose death we announced last week, WAS INTERRED AT CHATHAM WITH MILITARY HONOURS” · Kent Herald, 24 May 1827 — the Saturday was 19 May, the date of entry 1571 in Chatham's burial register",
+"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“At Chatham, AT AN ADVANCED AGE, Major General D'Arcy” · Kent Herald, 17 May 1827 — and not one of the seventeen notices gives his forename or names a single relative",
+"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
+"link": "https://www.findmypast.com.au/search-newspapers",
 "kind": "record"
 },
 {

@@ -390,6 +390,13 @@ FMP_L5 = "https://www.findmypast.com.au/"
 rec("Ellen Wakefield", "baptised at Bristol 26 OCTOBER 1834 \u00b7 father JAMES WAKEFIELD, mother HANNAH \u2014 the first baptism of any of their children found", BRI, FMP_L5)
 rec("Ellen Wakefield", "buried at BRISTOL, ST PAUL, PORTLAND SQUARE, 12 JULY 1840, AGED 5 \u00b7 Bristol Archives P/St P/R/3/3 \u2014 she did not stay behind in 1854; she died fourteen years before the ship", BRI, FMP_L5)
 
+
+BNA = "record \u00b7 British Newspaper Archive, 17 notices, May\u2013June 1827 (FindMyPast)"
+BNA_L = "https://www.findmypast.com.au/search-newspapers"
+rec("Robert D'Arcy", "\u201cAt Chatham, on the 13th instant, Major-General D'Arcy, late of the Corps of Royal Engineers\u201d \u00b7 Morning Chronicle, 17 May 1827 \u2014 his death date from the contemporary press rather than from Connolly's book of 1898", BNA, BNA_L)
+rec("Robert D'Arcy", "\u201cOn Saturday Major-General D'Arcy, whose death we announced last week, WAS INTERRED AT CHATHAM WITH MILITARY HONOURS\u201d \u00b7 Kent Herald, 24 May 1827 \u2014 the Saturday was 19 May, the date of entry 1571 in Chatham's burial register", BNA, BNA_L)
+rec("Robert D'Arcy", "\u201cAt Chatham, AT AN ADVANCED AGE, Major General D'Arcy\u201d \u00b7 Kent Herald, 17 May 1827 \u2014 and not one of the seventeen notices gives his forename or names a single relative", BNA, BNA_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

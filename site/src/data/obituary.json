@@ -1,0 +1,33 @@
+{
+ "found": "13 September 2026",
+ "source": "FindMyPast / British Newspaper Archive — keyword “Major-General D'Arcy”, 1827–1828",
+ "count": 17,
+ "notices": [
+  ["Morning Chronicle", "London", "Thu 17 May 1827, p.3", "“At Chatham, on the 13th instant, Major-General D'Arcy, late of the Corps of Royal Engineers.”"],
+  ["Kent Herald", "Canterbury", "Thu 17 May 1827, p.3", "“May 13, at Chatham, AT AN ADVANCED AGE, Major General D'Arcy, late of the Royal Engineers.”"],
+  ["Windsor and Eton Express", "Windsor", "Sat 19 May 1827, p.3", "“At Chatham, Major General D'Arcy, late of the Corps of Royal Engineers.”"],
+  ["Oxford University and City Herald", "Oxford", "Sat 19 May 1827, p.2", "“At Chatham, Major-General D'Arcy, late of the Corps of Royal Engineers.”"],
+  ["Englishman", "London", "Sun 20 May 1827, p.3", "“Chatham, on the 13th inst., Major-General D'Arcy, late of the Corps of Royal Engineers.”"],
+  ["Limerick Chronicle", "Limerick", "Wed 23 May 1827, p.3", "“At Chatham, Major-General D'Arcy, late of the Corps of Royal Engineers.”"],
+  ["Tipperary Free Press", "Clonmel", "Wed 23 May 1827, p.3", "“At Chatham, Major-General D'Arcy, late of the Corps of Royal Engineers.”"],
+  ["KENT HERALD", "Canterbury", "Thu 24 May 1827, p.3", "“On Saturday Major-General D'Arcy, whose death we announced last week, WAS INTERRED AT CHATHAM WITH MILITARY HONOURS.”"],
+  ["Perthshire Courier", "Perth", "Thu 31 May 1827, p.2", "“Chatham, the 13th current, Major-General D'Arcy, late of the corps royal engineers.”"],
+  ["Morning Post", "London", "Fri 1 June 1827, p.3", "“MONTHLY MILITARY OBITUARY. Major-General D'Arcy, late of Royal Engineers, Chatham.”"],
+  ["Globe", "London", "Mon 4 June 1827, p.4", "“MONTHLY MILITARY OBITUARY. Major-General D'Arcy, late Royal Engineers, Chatham.”"],
+  ["Saunders's News-Letter", "Dublin", "Thu 7 June 1827, p.2", "“MONTHLY MILITARY OBITUARY. Major-General D'Arcy, late of Royal Engineers.”"],
+  ["Warder and Dublin Weekly Mail", "Dublin", "Sat 9 June 1827, p.1", "“Major-General D'Arcy, late of Royal Engineers, Chatham.”"],
+  ["Drogheda Journal", "Drogheda", "Sat 9 June 1827, p.2", "“OBITUARY. Major-General D'Arcy, late of the Royal Engineers, Chatham.”"],
+  ["Roscommon & Leitrim Gazette", "Boyle", "Sat 9 June 1827, p.3", "“ARMY LIST OF THIS MONTH (JUNE). Major General — D'Arcy, late of Royal Engineers.”"]
+ ],
+ "gives": [
+  ["The date of death, from the press", "Four notices say 13 MAY 1827, two of them within four days of it. Connolly's Roll — a printed book of 1898 — gives the same day, and has until now been the only authority for it."],
+  ["The funeral, which nobody here knew about", "The Kent Herald of 24 May: he “was interred at Chatham WITH MILITARY HONOURS” on the Saturday. That Saturday was 19 May 1827 — the exact date of entry 1571 in Chatham St Mary the Virgin's burial register. A local paper and a parish clerk, independently."],
+  ["An age, of a kind", "The Kent Herald says “at an advanced age”. The register says seventy-six."],
+  ["And the reach of it", "Seventeen notices in England, Ireland and Scotland — London, Canterbury, Windsor, Oxford, Perth, Dublin, Limerick, Clonmel, Drogheda, Boyle. A Major-General of Engineers was national news for a fortnight."]
+ ],
+ "withholds": {
+  "head": "Not one of the seventeen gives him a forename.",
+  "body": "Every single notice reads “Major-General D'Arcy” and stops. No Robert. No father, no seat, no county, no “son of”, no “of —— Hall”. The press of 1827 was fluent in exactly that grammar — on the same pages he shares, men are “only son of Mr. John Blades, of Ludgate-hill”, “fourth daughter of Charles Coleman, Esq.”, “of Denne Hill, Kent, aged 84”. He gets a rank and a place of death.",
+  "means": "This was the most promising unopened door to Robert D'Arcy's parentage, and it is now open and empty. Seventeen contemporary notices in three countries name nobody he was related to. That is not a gap in the archive; it is a fact about the man, and it points the same way everything else has: he was an officer who rose on service, not a family the papers felt obliged to place."
+ }
+}

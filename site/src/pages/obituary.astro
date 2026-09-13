@@ -1,0 +1,54 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/obituary.json";
+---
+<Base
+  title="The obituary"
+  eyebrow={`${d.count} notices · found ${d.found}`}
+  dek="Seventeen newspapers in three countries announced Major-General D'Arcy's death in May 1827. Not one of them gives his first name, and not one names a single relative.">
+
+  <section class="blk">
+    <p class="lede">Robert D'Arcy's parentage is the oldest unanswered question on this site. The
+    likeliest remaining source was the press: a general's death notice in 1827 routinely gave a
+    father, a seat or a county. <a href={u("/errands")}>It was top of the errand list this morning.</a></p>
+    <p style="margin-top:1.1rem">It has now been searched, and it gives a great deal — but not that.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.source}</div>
+    <h2 style="margin-top:.4rem">What it gives</h2>
+    <ol class="dek" style="margin-top:1rem">
+      {d.gives.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}.</strong> {b}</li>))}
+    </ol>
+  </section>
+
+  <section class="blk">
+    <div class="lab">In order of printing</div>
+    <h2 style="margin-top:.4rem">The notices</h2>
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.1rem">
+      {d.notices.map(([paper, place, when, text]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong>{paper}</strong>
+            <span class="small" style="color:var(--ink-3);margin-left:.5rem">{place} · {when}</span></div>
+          <p class="small" style="margin-top:.35rem;color:var(--ink-2)">{text}</p>
+        </div>
+      ))}
+    </div>
+    <p class="small" style="margin-top:1rem">Fifteen of the seventeen are shown; the remaining two
+    repeat the June Army List wording.</p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>{d.withholds.head}</h2>
+    <p class="lede">{d.withholds.body}</p>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.withholds.means}</strong>
+      <span class="chip doc">searched, and empty</span>
+    </div>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/chatham")}>The burial register that matches the funeral notice →</a> ·
+      <a href={u("/hornby")}>The claim about his birth →</a> ·
+      <a href={u("/behind-the-paywall")}>His marriage, found the same day →</a></p>
+  </section>
+</Base>
