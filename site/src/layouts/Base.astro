@@ -1,5 +1,6 @@
 ---
 import { u } from "../lib/url.js";
+import SiblingArchives from "../components/SiblingArchives.astro";
 const { title, description = "", dek, eyebrow, bare } = Astro.props;
 const SITE = "The D'Arcy Archive";
 const nav = [
@@ -103,6 +104,7 @@ const on = (h) => here === u(h).replace(/\/$/, "");
 
 <footer class="site">
   <div class="wrap">
+    <SiblingArchives />
     <p class="foot">An evidence-first archive of the D'Arcy family of Brisbane — and of Parramatta,
     Portsmouth and, if the pedigree holds, Hornby in the North Riding of Yorkshire. Every claim
     carries its confidence, or is marked as unproven. Living people are excluded from this build.</p>
