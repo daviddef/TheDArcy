@@ -16,6 +16,26 @@
   },
   {
    "n": 2,
+   "what": "GRO death certificate — Samuel Sneyd, Sep quarter 1855, Stoke upon Trent, vol 6b page 75",
+   "where": "General Register Office, gro.gov.uk",
+   "cost": "£2.50 as a PDF",
+   "settles": "The exact day, the cause, and the informant — who is usually the widow or a son, named with their address. It would confirm 20 September as the day of death and put a name to whoever registered it.",
+   "why": "",
+   "href": "/sneyds",
+   "file": "found 13 September 2026, FreeBMD"
+  },
+  {
+   "n": 3,
+   "what": "The Peculiar of Chew — probate for Chew Magna, and what survives of Somerset wills",
+   "where": "Somerset Heritage Centre, Taunton",
+   "cost": "an enquiry",
+   "settles": "Chew Magna was a PECULIAR, outside the bishop's ordinary jurisdiction, proving its own wills down to 1787 — so Chew Magna probate is not where a researcher would first look for it. Before anyone is sent to Taunton, the archive should establish what survives of Somerset probate at all, and under which court a Chew Magna will of the 1820s would be found.",
+   "why": "",
+   "href": "/chew-magna",
+   "file": "jurisdiction identified 13 September 2026, Collinson and TNA Discovery"
+  },
+  {
+   "n": 4,
    "what": "GRO birth certificate — Miriam Wakefield, Jun quarter 1840, Bristol, vol 11 page 183",
    "where": "General Register Office, gro.gov.uk (an account, no visit)",
    "cost": "£2.50 as a PDF",
@@ -25,7 +45,7 @@
    "file": "found 13 September 2026, FreeBMD"
   },
   {
-   "n": 3,
+   "n": 5,
    "what": "Run the NSW BDM historical index for the D'Arcys",
    "where": "familyhistory.bdm.nsw.gov.au — free to search",
    "cost": "free, ten minutes, but behind a bot check",
@@ -35,7 +55,7 @@
    "file": "blocked by Cloudflare, 13 September 2026"
   },
   {
-   "n": 4,
+   "n": 6,
    "what": "Search irishgenealogy.ie for the Creech, Atkinson and Mulcahy lines",
    "where": "irishgenealogy.ie — free, no login",
    "cost": "free, behind a bot check",
@@ -45,7 +65,7 @@
    "file": "blocked by Cloudflare, 13 September 2026"
   },
   {
-   "n": 5,
+   "n": 7,
    "what": "PROB 11/1991/312 — the will of John Maddock Jones of Ruabon",
    "where": "The National Archives, Kew — digitised",
    "cost": "about £3.50",
@@ -55,7 +75,7 @@
    "file": "found 13 September 2026 via TNA Discovery"
   },
   {
-   "n": 6,
+   "n": 8,
    "what": "The Berkeley estate deeds, D2957/41, at Gloucestershire Archives",
    "where": "Gloucestershire Archives",
    "cost": "a visit or copies",
@@ -65,7 +85,7 @@
    "file": "identified 13 September 2026"
   },
   {
-   "n": 7,
+   "n": 9,
    "what": "Hinton manor court rolls, GCR/231 and 258, 1523–1528",
    "where": "Gloucestershire Archives / Berkeley Castle Muniments",
    "cost": "a visit",
@@ -75,7 +95,7 @@
    "file": "identified 13 September 2026"
   },
   {
-   "n": 8,
+   "n": 10,
    "what": "Twelve named RG 4 Bristol chapel registers — the birth/baptism volumes that cover 1805–1815",
    "where": "The National Archives, RG 4 — digitised",
    "cost": "a visit, or a digitised copy via a subscription site",
@@ -85,7 +105,7 @@
    "file": "catalogued in full, 13 September 2026"
   },
   {
-   "n": 9,
+   "n": 11,
    "what": "Lichfield Bishop's Transcripts for Madeley, 1740s",
    "where": "Staffordshire Record Office / Lichfield",
    "cost": "an enquiry",
@@ -95,7 +115,7 @@
    "file": "identified 13 September 2026"
   },
   {
-   "n": 10,
+   "n": 12,
    "what": "PROB 11/1728/64 — the will of Major-General Robert D'Arcy",
    "where": "The National Archives, Kew",
    "cost": "about £3.50, digitised, download today",
@@ -105,7 +125,7 @@
    "file": "requests/tna-prob11-darcy-will.md"
   },
   {
-   "n": 11,
+   "n": 13,
    "what": "Enquiry to the Royal Engineers Museum, Chatham",
    "where": "The Corps' own archive",
    "cost": "£25 enquiry service",
@@ -115,7 +135,7 @@
    "file": "notes/letters/2026-09-re-museum-chatham.md"
   },
   {
-   "n": 12,
+   "n": 14,
    "what": "Three Queensland death certificates",
    "where": "Queensland Registry of Births, Deaths and Marriages",
    "cost": "a fee per certificate",
@@ -125,7 +145,7 @@
    "file": "requests/qld-bdm-certificates.md"
   },
   {
-   "n": 13,
+   "n": 15,
    "what": "Two Chatham burials",
    "where": "Medway Archives",
    "cost": "an enquiry",
@@ -135,7 +155,7 @@
    "file": "notes/letters/2026-09-medway-archives.md"
   },
   {
-   "n": 14,
+   "n": 16,
    "what": "Where Arthur Hartley Sneyd is commemorated",
    "where": "Commonwealth War Graves Commission",
    "cost": "free, two minutes",
@@ -145,7 +165,7 @@
    "file": "requests/cwgc-arthur-hartley-sneyd.md"
   },
   {
-   "n": 15,
+   "n": 17,
    "what": "The generation above Francis Murdoch",
    "where": "ScotlandsPeople",
    "cost": "credits, a login",
@@ -155,7 +175,7 @@
    "file": "requests/scotlandspeople-murdoch.md"
   },
   {
-   "n": 16,
+   "n": 18,
    "what": "Richard Atkinson and Anne, of Limerick",
    "where": "RootsIreland",
    "cost": "a subscription",
@@ -165,7 +185,7 @@
    "file": "requests/rootsireland-atkinson-limerick.md"
   },
   {
-   "n": 17,
+   "n": 19,
    "what": "Nine Queensland State Archives items",
    "where": "Queensland State Archives, Runcorn",
    "cost": "copy fees, none digitised",
@@ -175,7 +195,7 @@
    "file": "requests/qsa-order-list.md"
   },
   {
-   "n": 18,
+   "n": 20,
    "what": "Which Ordnance series could carry a Royal Engineers commission of 1776",
    "where": "The National Archives, Kew",
    "cost": "an enquiry",
@@ -185,7 +205,7 @@
    "file": "notes/letters/2026-09-tna-ordnance.md"
   },
   {
-   "n": 19,
+   "n": 21,
    "what": "PROB 11/1825/326 — the will of Elizabeth Saniger, widow of Thornbury",
    "where": "The National Archives, Kew — digitised, downloadable",
    "cost": "£3.50 as a PDF",
@@ -195,7 +215,7 @@
    "file": "found 13 September 2026, TNA Discovery"
   },
   {
-   "n": 20,
+   "n": 22,
    "what": "Portsea St Mary's register itself, 1770–1800 — baptisms, marriages and burials",
    "where": "Portsmouth History Centre; filmed and also on the subscription sites",
    "cost": "a reading ticket, or a subscription",
@@ -205,7 +225,7 @@
    "file": "coverage established 13 September 2026"
   },
   {
-   "n": 21,
+   "n": 23,
    "what": "Smyth of Nibley, Men and Armour for Gloucestershire, 1608",
    "where": "Gloucestershire Archives; reprinted 1902 and 1980",
    "cost": "a library, or a secondhand copy",
@@ -215,7 +235,7 @@
    "file": "searched for and not found online, 13 September 2026"
   },
   {
-   "n": 22,
+   "n": 24,
    "what": "D2957/41 and D3831/Box5/1 — the Saniger and Panthurst deeds",
    "where": "Gloucestershire Archives, Alvin Street, Gloucester",
    "cost": "a visit, or a copy order",

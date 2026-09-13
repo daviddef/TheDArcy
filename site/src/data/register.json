@@ -1,15 +1,15 @@
 {
-"entries": 676,
-"distinct": 537,
-"records": 203,
+"entries": 683,
+"distinct": 539,
+"records": 210,
 "tree": 473,
 "grafted": 98,
-"linked": 676,
-"surnames": 183,
+"linked": 683,
+"surnames": 184,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 160,
+"n": 162,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -226,6 +226,20 @@
 "says": "baptised Madeley All Saints, 4 June 1781 · father William Sneyd, weaver — the tree puts him in 1769, which is his eldest brother's year",
 "source": "record · FreeREG, Madeley All Saints parish register",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Samuel Sneyd",
+"says": "buried 23 September 1855, AGED 77, of 91 WELL ST., Hanley · the tree said 20 September 1856 at No 3 Well St, and the year is wrong",
+"source": "record · Hanley St John the Evangelist, burial register (FreeREG), entry 2330",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Samuel Sneyd",
+"says": "death registered September quarter 1855, Stoke upon Trent, volume 6b page 75 · the only Samuel Sneyd death registered in England and Wales between 1854 and 1858",
+"source": "record · General Register Office death index (FreeBMD)",
+"link": "https://www.freebmd.org.uk/",
 "kind": "record"
 },
 {
@@ -2188,6 +2202,194 @@
 ]
 },
 {
+"surname": "SANIGER",
+"n": 26,
+"rows": [
+{
+"name": "Caroline Saniger",
+"says": "his wife, aged 28 · born Fishponds, Gloucestershire",
+"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Christian Saniger",
+"says": "plaintiff in a defamation suit against Mary Millard in the Gloucester consistory court, 1768 (GDR/B4/1/387)",
+"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of SANIGER, Berkeley, CLOTHIER · mortgage with Richard Holliday of Berkeley, cooper, 9 August 1692",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Gent. · his wife ESTHER died 13 June 1693 and his daughter Esther was buried 16 August 1692 — Berkeley monumental inscriptions",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Gent. · buried 3 December 1739, AGED 48 · his relict SUSANNA died 14 May 1744 aged 58; his daughter JANE died 15 June 1750 aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "freeholder for the tithing of Hinton at the Berkeley election of 1776",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, CLOTHIER · lends £100 on mortgage to Richard Holliday of Berkeley, cooper, 9 August 1692",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, GENT. · lends £60 on mortgage to Nicholas Morse of Wicks Elme, 13 December 1709 — the same address, seventeen years, and a different rank",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, gent. · exchanges land in Oakhunger field with Isaac Smyth of DURSLEY, clothier, 13 November 1716",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "widow, of THORNBURY, Gloucestershire · will proved 24 December 1833 (PROB 11/1825/326)",
+"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "his mother, WIDOW, aged 60 · born CHEW MAGNA, SOMERSET — the first Saniger this archive has found with a birthplace outside Gloucestershire",
+"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Esther Saniger",
+"says": "wife of Edward Saniger of Saniger, Gent. · died 13 June 1693",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Jane Saniger",
+"says": "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "John Saniger",
+"says": "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Maurice Saniger",
+"says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Maurice Saniger",
+"says": "and JANE his wife · a fine with John Hardinge over two messuages and land in Berkeley AND DURSLEY, Easter term 1731",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Samuel Saniger",
+"says": "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Susanna Saniger",
+"says": "relict of Edward Saniger, Gent. · died 14 May 1744, aged 58",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "William Saniger",
+"says": "head, aged 27, SMITH JOURNEYMAN, of Oxford Road · born CHEW MAGNA, SOMERSET",
+"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Hannah SANIGER",
+"says": "1805–1873 · Berkley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/hannah-saniger",
+"kind": "tree"
+},
+{
+"name": "John Saniger",
+"says": "1769–1824 · Berkeley, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/john-saniger",
+"kind": "tree"
+},
+{
+"name": "Thomas Saniger",
+"says": "b. 1711 · Christened in Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/thomas-saniger-1711",
+"kind": "tree"
+},
+{
+"name": "Thomas Saniger",
+"says": "1744–1819 · Christened in Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/thomas-saniger-1744",
+"kind": "tree"
+},
+{
+"name": "William Saniger",
+"says": "1679–1718 · Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-saniger",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "SAINGER",
 "n": 25,
 "rows": [
@@ -2365,173 +2567,6 @@
 "source": "record · FreeREG, parish register transcript",
 "link": "https://www.freereg.org.uk/",
 "kind": "record"
-}
-]
-},
-{
-"surname": "SANIGER",
-"n": 23,
-"rows": [
-{
-"name": "Christian Saniger",
-"says": "plaintiff in a defamation suit against Mary Millard in the Gloucester consistory court, 1768 (GDR/B4/1/387)",
-"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of SANIGER, Berkeley, CLOTHIER · mortgage with Richard Holliday of Berkeley, cooper, 9 August 1692",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Gent. · his wife ESTHER died 13 June 1693 and his daughter Esther was buried 16 August 1692 — Berkeley monumental inscriptions",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Gent. · buried 3 December 1739, AGED 48 · his relict SUSANNA died 14 May 1744 aged 58; his daughter JANE died 15 June 1750 aged 24",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "freeholder for the tithing of Hinton at the Berkeley election of 1776",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, CLOTHIER · lends £100 on mortgage to Richard Holliday of Berkeley, cooper, 9 August 1692",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, GENT. · lends £60 on mortgage to Nicholas Morse of Wicks Elme, 13 December 1709 — the same address, seventeen years, and a different rank",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, gent. · exchanges land in Oakhunger field with Isaac Smyth of DURSLEY, clothier, 13 November 1716",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Saniger",
-"says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Saniger",
-"says": "widow, of THORNBURY, Gloucestershire · will proved 24 December 1833 (PROB 11/1825/326)",
-"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Esther Saniger",
-"says": "wife of Edward Saniger of Saniger, Gent. · died 13 June 1693",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Jane Saniger",
-"says": "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "John Saniger",
-"says": "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Maurice Saniger",
-"says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Maurice Saniger",
-"says": "and JANE his wife · a fine with John Hardinge over two messuages and land in Berkeley AND DURSLEY, Easter term 1731",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Samuel Saniger",
-"says": "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher",
-"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Susanna Saniger",
-"says": "relict of Edward Saniger, Gent. · died 14 May 1744, aged 58",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Hannah SANIGER",
-"says": "1805–1873 · Berkley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/hannah-saniger",
-"kind": "tree"
-},
-{
-"name": "John Saniger",
-"says": "1769–1824 · Berkeley, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/john-saniger",
-"kind": "tree"
-},
-{
-"name": "Thomas Saniger",
-"says": "b. 1711 · Christened in Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/thomas-saniger-1711",
-"kind": "tree"
-},
-{
-"name": "Thomas Saniger",
-"says": "1744–1819 · Christened in Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/thomas-saniger-1744",
-"kind": "tree"
-},
-{
-"name": "William Saniger",
-"says": "1679–1718 · Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-saniger",
-"kind": "tree"
 }
 ]
 },
@@ -3639,6 +3674,33 @@
 ]
 },
 {
+"surname": "OLIVER",
+"n": 3,
+"rows": [
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
+"source": "record · 1861 census, Hanley, Staffordshire (FreeCEN)",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 · the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street",
+"source": "record · General Register Office death index (FreeBMD)",
+"link": "https://www.freebmd.org.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "1787–1861 · Oswestry, Shropshire, England, United Kingdom",
+"source": "family tree · direct line",
+"link": "/people/elizabeth-margaret-oliver",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "SINEGAR",
 "n": 3,
 "rows": [
@@ -4029,26 +4091,6 @@
 "says": "no dates, no place — a name and a position in the tree",
 "source": "family tree · direct line",
 "link": "/people/timothy-o-brien",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "OLIVER",
-"n": 2,
-"rows": [
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
-"source": "record · 1861 census, Hanley, Staffordshire (FreeCEN)",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "1787–1861 · Oswestry, Shropshire, England, United Kingdom",
-"source": "family tree · direct line",
-"link": "/people/elizabeth-margaret-oliver",
 "kind": "tree"
 }
 ]
@@ -4976,6 +5018,19 @@
 "source": "family tree · direct line",
 "link": "/people/lydia-lyon",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "MAGNA",
+"n": 1,
+"rows": [
+{
+"name": "Chew Magna",
+"says": "“a large and populous parish … six miles south-west from Bristol … one hundred and seventy houses, and eight hundred and thirty inhabitants” · and “in former days … a LARGE CLOTHING TOWN”",
+"source": "record · Collinson, History and Antiquities of the County of Somerset (1791), vol. II",
+"link": "https://archive.org/details/historyantiqutit02colluoft",
+"kind": "record"
 }
 ]
 },

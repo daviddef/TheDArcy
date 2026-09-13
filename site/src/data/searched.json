@@ -9,6 +9,46 @@
  ],
  "rows": [
   {
+   "src": "Hanley St John the Evangelist, burial register (FreeREG)",
+   "what": "Samuel Sneyd's burial",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Entry 2330: SAMUEL SNEYD, buried 23 SEPTEMBER 1855, aged 77, of 91 WELL ST. The tree says he died on 20 September 1856 at No 3 Well St. The street is right, the three-day interval between a death on the 20th and a burial on the 23rd is ordinary — and the year is wrong. The age of 77 puts his birth about 1778, which fits the Madeley baptism of 1781 this archive had already corrected to, and not the tree's 1769.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "General Register Office death index (FreeBMD)",
+   "what": "Whether Samuel Sneyd died in 1855 or 1856",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "1855. Every Samuel Sneyd death registered anywhere in England and Wales between March 1854 and December 1858 was searched: there is EXACTLY ONE, September quarter 1855, Stoke upon Trent, volume 6b page 75. And his widow is there too — Elizabeth Sneyd, December quarter 1861, Stoke, 6b 66, confirming the tree's 1 December 1861 to the quarter.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "Collinson, History and Antiquities of the County of Somerset (1791)",
+   "what": "What Chew Magna was, and whether it holds Sanigers",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "“A large and populous parish … six miles south-west from Bristol … one hundred and seventy houses, and eight hundred and thirty inhabitants” — and, crucially, “in former days this was a borough, a market, and a LARGE CLOTHING TOWN”. Cloth is the trade that runs through every Saniger this archive has found. No Sanigers in Collinson himself, which means nothing: he copies gentry monuments, and a journeyman smith's family would not be in them. Two figures on /chew-magna were corrected against him.",
+   "href": "/chew-magna"
+  },
+  {
+   "src": "FreeREG — Cheshire, control test",
+   "what": "The marriage of Samuel Sneyd and Elizabeth Oliver at Audlem, 22 October 1809",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Untestable. John Smith across the WHOLE OF CHESHIRE for 1800–1820 returns TWO entries, one at Whitegate and one at Wrenbury. It is the emptiest county holding this archive has measured, and Audlem is not in it at all.",
+   "href": "/coverage"
+  },
+  {
+   "src": "FreeREG — Shropshire, control test",
+   "what": "Elizabeth Margaret Oliver's baptism at Oswestry, 7 May 1787",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Untestable. Smith across Shropshire 1783–1792 returns 167 entries — Shrewsbury 70, Hodnet 15, Ludlow 10 — and NONE at Oswestry. The town is not transcribed.",
+   "href": "/coverage"
+  },
+  {
    "src": "FreeREG — Gloucestershire, control test on the city of Bristol",
    "what": "Whether Bristol's parish registers can be searched at all for 1800–1820",
    "when": "13 Sep 2026",

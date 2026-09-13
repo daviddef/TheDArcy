@@ -91,6 +91,51 @@ const c = d.counts;
   </section>
 
   <section class="blk">
+    <div class="lab">Hanley St John the Evangelist · and the GRO index</div>
+    <h2 style="margin-top:.4rem">91 Well Street, and the year that was wrong</h2>
+
+    <p class="lede">The tree said: <em>{d.death.tree}</em> Nothing stood behind it. Here is the
+    burial register.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>
+          <tr><td>Register</td><td>{d.death.burial.reg}</td></tr>
+          <tr><td>Buried</td><td class="m"><strong>{d.death.burial.date}</strong></td></tr>
+          <tr><td>Name</td><td><strong>{d.death.burial.who}</strong></td></tr>
+          <tr><td>Age</td><td class="m"><strong>{d.death.burial.age}</strong></td></tr>
+          <tr><td>Abode</td><td><strong>{d.death.burial.abode}</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And the death index agrees with the register, not the tree.</strong>
+      {d.death.index.entry}
+      <br /><br />
+      {d.death.index.window} <span class="chip doc">documented</span>
+    </div>
+
+    <div class="scroll" style="margin-top:1.3rem">
+      <table>
+        <thead><tr><th></th><th>What the tree said</th><th>What the records say</th></tr></thead>
+        <tbody>
+          {d.death.verdict.map(([k, t, r]) => (
+            <tr><td><strong>{k}</strong></td><td class="small">{t}</td><td class="small">{r}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>The age is the interesting one.</strong> {d.death.age}
+      <a href={u("/what-we-got-wrong")}>The correction it supports →</a>
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">{d.death.closing}</p>
+  </section>
+
+  <section class="blk">
     <div class="lab">1861 census · {d.wellStreet.census}</div>
     <h2 style="margin-top:.4rem">Well Street, Hanley — the grocer's shop</h2>
 

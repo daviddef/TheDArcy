@@ -293,6 +293,30 @@ GAZ = "record · The London Gazette, issue 16755, 19 July 1813"
 GAZ_L = "https://www.thegazette.co.uk/London/issue/16755/page/1431"
 rec("Robert D'Arcy", "\u201cBrevet Colonel Robert D'Arcy to be Colonel, vice Evelegh\u201d \u00b7 Office of Ordnance, Corps of Royal Engineers, gazetted 19 July 1813", GAZ, GAZ_L)
 
+
+# --- The Sneyd deaths at Hanley, and the Sanigers of Chew Magna ------------
+HAN = "record · Hanley St John the Evangelist, burial register (FreeREG), entry 2330"
+HAN_L = "https://www.freereg.org.uk/"
+rec("Samuel Sneyd", "buried 23 September 1855, AGED 77, of 91 WELL ST., Hanley \u00b7 the tree said 20 September 1856 at No 3 Well St, and the year is wrong", HAN, HAN_L)
+
+GRO = "record · General Register Office death index (FreeBMD)"
+GRO_L = "https://www.freebmd.org.uk/"
+rec("Samuel Sneyd", "death registered September quarter 1855, Stoke upon Trent, volume 6b page 75 \u00b7 the only Samuel Sneyd death registered in England and Wales between 1854 and 1858", GRO, GRO_L)
+rec("Elizabeth Margaret Oliver", "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 \u00b7 the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street", GRO, GRO_L)
+
+CM = "record · 1851 census, St Philip and Jacob, Bristol \u2014 HO107/1954 f.562 p.30 sch.102"
+CM_L = "https://www.freecen.org.uk/"
+for n, says in [
+    ("William Saniger", "head, aged 27, SMITH JOURNEYMAN, of Oxford Road \u00b7 born CHEW MAGNA, SOMERSET"),
+    ("Caroline Saniger", "his wife, aged 28 \u00b7 born Fishponds, Gloucestershire"),
+    ("Elizabeth Saniger", "his mother, WIDOW, aged 60 \u00b7 born CHEW MAGNA, SOMERSET \u2014 the first Saniger this archive has found with a birthplace outside Gloucestershire"),
+]:
+    rec(n, says, CM, CM_L)
+
+COLL = "record · Collinson, History and Antiquities of the County of Somerset (1791), vol. II"
+COLL_L = "https://archive.org/details/historyantiqutit02colluoft"
+rec("Chew Magna", "\u201ca large and populous parish \u2026 six miles south-west from Bristol \u2026 one hundred and seventy houses, and eight hundred and thirty inhabitants\u201d \u00b7 and \u201cin former days \u2026 a LARGE CLOTHING TOWN\u201d", COLL, COLL_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

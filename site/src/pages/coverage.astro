@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/indexes.json";
+const bad = d.rows.filter((r) => /nothing|fragment|only|unknown/.test(r.holds)).length;
+---
+<Base
+  title="What the indexes actually hold"
+  eyebrow={`${d.rows.length} holdings measured · ${d.checked}`}
+  dek="Most of what this archive has failed to find, it failed to find in places that were never transcribed. This page is the measurement, kept separately because it is the difference between a null result and an empty search.">
+
+  <section class="blk">
+    <p class="lede">{d.lede}</p>
+    <p style="margin-top:1.1rem"><strong>The method is a control test.</strong> {d.method}</p>
+    <p class="dek" style="margin-top:1.1rem">Of the {d.rows.length} holdings measured here,
+    <strong>{bad}</strong> turned out to be partial, empty or unreachable — and in every one of those
+    cases this archive had already run a search against them and would have reported the emptiness as
+    a fact.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Measured, not assumed</div>
+    <h2 style="margin-top:.4rem">Ten holdings</h2>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.4rem">
+      {d.rows.map((r) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div>
+            <span class="mono small" style="color:var(--ink-3)">{r.index}</span>
+            <strong style="margin-left:.6rem">{r.place}</strong>
+          </div>
+          <p style="margin-top:.4rem"><strong>Holds: {r.holds}</strong></p>
+          <p class="small" style="margin-top:.35rem;color:var(--ink-2)"><em>Test —</em> {r.test}</p>
+          <p class="small" style="margin-top:.35rem">{r.means}{" "}
+            <a href={u(r.href)}>Where it bites →</a></p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>The pattern, and why it matters more than any one entry</h2>
+    <p class="lede">{d.lesson}</p>
+
+    <div class="note" style="margin-top:1.4rem">
+      <strong>This is the rule the rest of the site is supposed to follow.</strong> Before reporting
+      that something is not there, establish that the source covers the parish and the window. The
+      two times this archive has broken that rule it produced published errors —
+      <a href={u("/portsea")}>a two-year transcript read as a searched parish</a>, and
+      <a href={u("/bristol-chapels")}>an untranscribed city read as an empty one</a> — and both are
+      on <a href={u("/what-we-got-wrong")}>the errors page</a> rather than quietly fixed.
+    </div>
+
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/searched")}>Every source read, and what it gave →</a> ·
+      <a href={u("/errands")}>What can only be done in a record office →</a> ·
+      <a href={u("/method")}>How this archive works →</a></p>
+  </section>
+</Base>

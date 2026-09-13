@@ -1,9 +1,26 @@
 {
  "title": "What changed",
- "eyebrow": "16 passes · 104 changes",
+ "eyebrow": "17 passes · 114 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026 · second pass",
+   "title": "91 Well Street, and what the indexes actually hold",
+   "did": [
+    "Found Samuel Sneyd's burial: Hanley St John the Evangelist, 23 September 1855, aged 77, of 91 WELL ST. The tree said 20 September 1856 at No 3.",
+    "Tested the year against the death index. Every Samuel Sneyd death registered in England and Wales between 1854 and 1858 — there is exactly one, September quarter 1855 at Stoke. The tree is a year out.",
+    "Confirmed his widow's death in the same index: Elizabeth Sneyd, December quarter 1861, Stoke, which is the tree's 1 December 1861 to the quarter.",
+    "Noted that the burial age of 77 puts his birth about 1778 — independent support for the Madeley baptism of 1781 this archive corrected to a day earlier, and ten years off the tree's 1769.",
+    "Read Collinson's Somerset on Chew Magna: six miles from Bristol, 830 inhabitants, and “in former days … a LARGE CLOTHING TOWN” — the trade that runs through every Saniger found so far.",
+    "Corrected two numbers I had invented on /chew-magna that same morning.",
+    "Identified Chew Magna as a PECULIAR with its own probate jurisdiction, which changes where a Saniger will would be found.",
+    "Control-tested Cheshire and Shropshire: the Audlem marriage and the Oswestry baptism the tree names cannot be tested, because neither place is transcribed. Cheshire returns two John Smiths in twenty years.",
+    "Built /coverage — ten index holdings, measured rather than assumed.",
+    "Register now 210 records."
+   ],
+   "found": "Six of the ten index holdings measured are parishes the family tree names, and six of them are partial, empty or unreachable. An archive built on free indexes will systematically fail to test its own tree, and will mistake that failure for a finding unless it measures every time."
+  },
   {
    "when": "13 September 2026",
    "title": "Swanhanger, Well Street, and two years of Portsea",

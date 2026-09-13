@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Published that Chew Magna lay eight miles from Bristol in a parish of roughly 1,800 people, hours after finding it.",
+    truth: "Collinson, writing in 1791, gives “six miles south-west from Bristol … one hundred and seventy houses, and eight hundred and thirty inhabitants”.",
+    why: "Both numbers were estimates I made while writing the page and did not mark as estimates. Neither was load-bearing, which is exactly why neither got checked — and one of them was propping up a coverage argument about how many register entries the parish should produce.",
+    lesson: "A number written to fill out a sentence is still a number the reader will believe. Either source it or say it is a guess.",
+    href: "/chew-magna",
+  },
+  {
+    when: "13 September 2026",
     what: "Treated Portsea as a parish this archive had searched, and read the absence of Joseph D'Arcy's brothers and sisters as though it meant something.",
     truth: "FreeREG's transcript of Portsea St Mary is twenty-two months long. Five common surnames tested across Hampshire for 1778–1783 return forty-six Portsea entries: all baptisms, twenty in 1780, twenty-five in 1781, one in 1782, and none at all in 1778, 1779 or 1783.",
     why: "This site has a rule — establish that a source covers the parish and the window before reporting an absence — and it applied that rule to Berkeley, to Dursley, to Hanley and to eight counties of Sanigers. It never applied it to its own oldest English find. Joseph's baptism was treated as the product of a search when it was the product of a two-year window.",
@@ -126,6 +134,7 @@ export const OWN = [
 /* Errors inherited from the family tree and corrected here. Kept separate,
    because they are somebody else's mistakes and the distinction matters. */
 export const INHERITED = [
+  ["Samuel Sneyd died on 20 September 1856 at No 3, Well St, Hanley", "He was buried on 23 September 1855, aged 77, of 91 Well St — and the only Samuel Sneyd death registered in England and Wales between 1854 and 1858 is the September quarter of 1855 at Stoke. The year is wrong and so is the house number.", "/sneyds"],
   ["The Sneyds descend from Ralph Sneyd of Keele Hall", "Disproved from the Madeley register: the 1742 baptism names the father as William, and Ralph was eighteen.", "/how-far-back"],
   ["Robert D'Arcy was born in 1751 in North Yorkshire", "The 1751 is arithmetic from an age on a burial register, and nothing places him in Yorkshire.", "/hornby"],
   ["Major George Pitt D'Arcy married twice at Chatham in 1810", "He married Miss Ludlam in 1805 and Maria White in County Wicklow about 1819.", "/australia"],

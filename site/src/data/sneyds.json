@@ -232,7 +232,7 @@
    [
     "The wife",
     "Elizabeth Margaret Oliver",
-    "Elizabeth — and a WIDOW; Samuel died in 1856, five years before"
+    "Elizabeth — and a WIDOW; Samuel was buried from Well Street in September 1855"
    ],
    [
     "Her county",
@@ -242,7 +242,7 @@
    [
     "Her death",
     "1 December 1861, Staffordshire",
-    "alive at Well Street on 7 April 1861 — eight months earlier"
+    "CONFIRMED in the GRO index: Deaths, December quarter 1861, Stoke, 6b 66 — eight months after the enumerator called"
    ],
    [
     "Her age",
@@ -254,5 +254,53 @@
   "birthplace": "Her birthplace is transcribed “Staly Cladwin”, Shropshire. No Shropshire parish is spelled that way, and Oswestry — where the tree puts her — is not a plausible reading of it. Oswestry's neighbours include names that a bad hand could turn into this, but naming one would be inventing evidence. It is recorded here exactly as the transcriber read it.",
   "ageProblem": "One number does not fit. Born 1787, she is seventy-three in April 1861; the enumerator wrote EIGHTY-TWO. Ages on a census are what somebody in the house said on the night, and eighty-two for seventy-three is a large error — but it is the kind of error an eighty-year-old household makes about its oldest member, and it is the only figure on the page that argues against the identification. It is printed here rather than quietly dropped."
  },
- "coverage1861": "FreeCEN holds 1861 for Staffordshire and, on testing, nothing else: a control search for John Smith born 1800–1805 in Staffordshire returns 31 people and every one of them is 1861. So Samuel Sneyd, who died in 1856, could never have appeared however hard he was looked for — and his son Samuel Charles had been in Australia for twenty-four years."
+ "coverage1861": "FreeCEN holds 1861 for Staffordshire and, on testing, nothing else: a control search for John Smith born 1800–1805 in Staffordshire returns 31 people and every one of them is 1861. So Samuel Sneyd, who died in 1856, could never have appeared however hard he was looked for — and his son Samuel Charles had been in Australia for twenty-four years.",
+ "death": {
+  "burial": {
+   "reg": "Hanley, St John the Evangelist · parish register, entry 2330",
+   "date": "23 September 1855",
+   "who": "Samuel SNEYD",
+   "age": 77,
+   "abode": "91 Well St."
+  },
+  "index": {
+   "what": "General Register Office death index, via FreeBMD",
+   "entry": "Deaths, September quarter 1855 — SNEYD, Samuel — Stoke upon Trent — volume 6b, page 75",
+   "window": "Searched for every Samuel Sneyd death registered anywhere in England and Wales between March 1854 and December 1858. There is exactly one."
+  },
+  "widow": {
+   "what": "General Register Office death index, via FreeBMD",
+   "entry": "Deaths, December quarter 1861 — SNEYD, Elizabeth — Stoke upon Trent — volume 6b, page 66"
+  },
+  "tree": "Samuel Sneyd, born 1769 at Madeley, “a grocer of Hanley”, died 20 September 1856 at No 3, Well St, Hanley.",
+  "verdict": [
+   [
+    "The street",
+    "Well Street",
+    "CONFIRMED — and the register gives the number as 91, not 3"
+   ],
+   [
+    "The year",
+    "1856",
+    "WRONG. He was buried on 23 September 1855, and the only Samuel Sneyd death registered in England and Wales in five years is the September quarter of 1855 at Stoke"
+   ],
+   [
+    "The day",
+    "20 September",
+    "CONSISTENT. A death on the 20th and a burial on the 23rd is an ordinary three-day interval; it is the year that is out, not the date"
+   ],
+   [
+    "His age",
+    "born 1769, so 87",
+    "The register says 77, which puts his birth about 1778"
+   ],
+   [
+    "His widow",
+    "Elizabeth Margaret Oliver, died 1 December 1861",
+    "CONFIRMED — Deaths, December quarter 1861, Sneyd Elizabeth, Stoke, 6b 66"
+   ]
+  ],
+  "age": "Seventy-seven in September 1855 means born about 1778. The tree's 1769 would make him eighty-seven — ten years adrift. The Madeley baptism this archive corrected to in the first place, Samuel son of William Sneyd the weaver and Mary Blackbourne, 4 June 1781, would make him seventy-four: three years out, which is what a stated age at burial normally is. The burial register was found long after that correction was made and it independently supports it.",
+  "closing": "So a claim that had no record behind it three days ago now has three: a burial with an age and a house number, a death registration with a volume and page, and a census that finds his widow in the same street six years later. Two details in it were wrong, and both are the kind that a family tree gets wrong — a year, and a street number."
+ }
 }

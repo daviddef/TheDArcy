@@ -1,0 +1,78 @@
+{
+ "checked": "13 September 2026",
+ "lede": "A free index is not a record office. Every one of them is a partial transcript of somebody else's volunteering, and the only honest way to use one is to find out what it holds before you report what it does not.",
+ "method": "The test is always the same: run a name that MUST be there through the same query that returned nothing. If the control comes back empty too, the silence belongs to the index.",
+ "rows": [
+  {
+   "index": "FreeREG", "place": "Berkeley St Mary, Gloucestershire",
+   "holds": "to 1677 only",
+   "test": "The transcript's own end date.",
+   "means": "One of the six Saniger generations in the tree can be tested here. The other five — 1679, 1711, 1744, 1769, 1805 — fall entirely outside it.",
+   "href": "/berkeley"
+  },
+  {
+   "index": "FreeREG", "place": "Portsea St Mary, Hampshire",
+   "holds": "baptisms, 1780 and 1781",
+   "test": "Five common surnames across Hampshire 1778–1783: 46 Portsea entries, all baptisms — 20 in 1780, 25 in 1781, one in 1782, none in 1778, 1779 or 1783.",
+   "means": "Joseph D'Arcy's baptism survives inside a twenty-two-month window. The absence of his brothers and sisters proves nothing whatever.",
+   "href": "/portsea"
+  },
+  {
+   "index": "FreeREG", "place": "The city of Bristol",
+   "holds": "essentially nothing, 1800–1820",
+   "test": "William and Mary Smith across Gloucestershire 1800–1820: 289 entries from 75 parishes, and exactly ONE inside Bristol — a single entry at Stapleton.",
+   "means": "St Paul, St Philip and Jacob, St James, Clifton, Bedminster, Temple, St Mary Redcliffe: absent at any size. Every Bristol search this archive has run was searching a city that is not in the index.",
+   "href": "/bristol-chapels"
+  },
+  {
+   "index": "FreeREG", "place": "Chew Magna, Somerset",
+   "holds": "a fragment",
+   "test": "Three forenames of Smith across Somerset 1795–1815: 943 entries from over a hundred parishes, and TWO from Chew Magna, against a hundred at Walcot and sixty-nine at Bath.",
+   "means": "The parish that now carries the best lead on Hannah Saniger's birthplace cannot be searched from a desk.",
+   "href": "/chew-magna"
+  },
+  {
+   "index": "FreeREG", "place": "Oswestry, Shropshire",
+   "holds": "nothing",
+   "test": "Smith across Shropshire 1783–1792: 167 entries from the county — Shrewsbury 70, Hodnet 15, Ludlow 10 — and NONE at Oswestry.",
+   "means": "Elizabeth Margaret Oliver's baptism, which the tree puts at Oswestry on 7 May 1787, cannot be tested here.",
+   "href": "/sneyds"
+  },
+  {
+   "index": "FreeREG", "place": "Audlem, Cheshire — and Cheshire generally",
+   "holds": "almost nothing, 1800–1820",
+   "test": "John Smith across the WHOLE COUNTY 1800–1820 returns TWO entries — one at Whitegate, one at Wrenbury.",
+   "means": "The marriage of Samuel Sneyd and Elizabeth Oliver at Audlem on 22 October 1809 cannot be tested here. This is the emptiest county holding this archive has measured.",
+   "href": "/sneyds"
+  },
+  {
+   "index": "FreeCEN", "place": "Staffordshire",
+   "holds": "1861 only",
+   "test": "John Smith born Staffordshire 1800–1805: 31 people, every one of them 1861.",
+   "means": "Samuel Sneyd died in 1855 and his son had been in Australia since 1832. Neither was ever findable here, however hard anyone looked.",
+   "href": "/sneyds"
+  },
+  {
+   "index": "FreeCEN", "place": "Gloucestershire and Somerset",
+   "holds": "1841 through 1901, and richly",
+   "test": "William Smith born Gloucestershire 1800–1812 returns entries from 1841, 1851, 1861, 1871, 1881 and 1891, including twelve inside Bristol for 1851 alone.",
+   "means": "This is why the census, not the parish register, is what has actually moved this archive's Bristol work. The Saniger household at Oxford Road came from here.",
+   "href": "/chew-magna"
+  },
+  {
+   "index": "FreeBMD", "place": "England and Wales, deaths, 1854–1863",
+   "holds": "complete enough to argue from",
+   "test": "Every Samuel Sneyd death registered in five years: exactly one. Every Elizabeth Sneyd in four: two, one of them at Stoke.",
+   "means": "Strong enough that a single result across a five-year window can correct a family tree by a year. Used that way here.",
+   "href": "/sneyds"
+  },
+  {
+   "index": "Cloudflare", "place": "CWGC · NSW BDM · irishgenealogy.ie · newspapers.library.wales",
+   "holds": "unknown",
+   "test": "None possible. Each sits behind a bot check that this archive will not attempt to defeat.",
+   "means": "Four sources that may hold answers and that have never been read. They are on the errand list for a person with a browser, not recorded as nulls.",
+   "href": "/errands"
+  }
+ ],
+ "lesson": "Six of the ten entries above are parishes or counties the FAMILY TREE NAMES. Berkeley, Portsea, Bristol, Chew Magna, Oswestry, Audlem — the exact places a claim points at are, again and again, the places the free indexes have not reached. That is not a conspiracy; it is what happens when a family lives in garrison towns, industrial cities and market parishes while volunteers transcribe rural ones. But it means an archive built on free indexes will systematically fail to test its own tree, and will mistake that failure for a finding unless it measures every single time."
+}
