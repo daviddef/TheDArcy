@@ -693,12 +693,27 @@
 "says": "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716",
 "source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
 "link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "of Saniger, Gent. · his wife ESTHER died 13 June 1693 and his daughter Esther was buried 16 August 1692 — Berkeley monumental inscriptions",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
+},
+{
+"says": "of Saniger, Gent. · buried 3 December 1739, AGED 48 · his relict SUSANNA died 14 May 1744 aged 58; his daughter JANE died 15 June 1750 aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
+},
+{
+"says": "freeholder for the tithing of Hinton at the Berkeley election of 1776",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "edward-saniger",
-"n": 2
+"n": 5
 },
 "elizabeth-saniger": {
 "name": "Elizabeth Saniger",
@@ -713,6 +728,36 @@
 "inTree": false,
 "treeLink": "",
 "slug": "elizabeth-saniger",
+"n": 1
+},
+"esther-saniger": {
+"name": "Esther Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "wife of Edward Saniger of Saniger, Gent. · died 13 June 1693",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "esther-saniger",
+"n": 1
+},
+"jane-saniger": {
+"name": "Jane Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "jane-saniger",
 "n": 1
 },
 "maurice-saniger": {
@@ -743,6 +788,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "samuel-saniger",
+"n": 1
+},
+"susanna-saniger": {
+"name": "Susanna Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "relict of Edward Saniger, Gent. · died 14 May 1744, aged 58",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "susanna-saniger",
 "n": 1
 },
 "john-maddock-jones": {
@@ -1050,6 +1110,21 @@
 "slug": "zillah-frederich-nee-wakefield",
 "n": 1
 },
+"robert-gamel": {
+"name": "Robert Gamel",
+"surname": "GAMEL",
+"rows": [
+{
+"says": "of Saniger · his daughter Juliana named in a Berkeley deed, late 13th century — the earliest inhabitant of the place this archive has found",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "robert-gamel",
+"n": 1
+},
 "j-brownlie-henderson": {
 "name": "J. Brownlie Henderson",
 "surname": "HENDERSON",
@@ -1063,6 +1138,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "j-brownlie-henderson",
+"n": 1
+},
+"walter-hevyner": {
+"name": "Walter Hevyner",
+"surname": "HEVYNER",
+"rows": [
+{
+"says": "of Saniger, and Maud his wife · deeds with William Doly, burgess of Berkeley, 1443",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "walter-hevyner",
 "n": 1
 },
 "hislop": {
@@ -1290,6 +1380,21 @@
 "slug": "r-d-neilson",
 "n": 1
 },
+"geoffrey-nel": {
+"name": "Geoffrey Nel",
+"surname": "NEL",
+"rows": [
+{
+"says": "of Saniger IN THE PARISH OF BERKELEY · deed of 1272–1307, which is what fixes Saniger as a place",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "geoffrey-nel",
+"n": 1
+},
 "peter-n-paulsen": {
 "name": "Peter N. Paulsen",
 "surname": "PAULSEN",
@@ -1470,6 +1575,21 @@
 "slug": "james-voller",
 "n": 1
 },
+"martin-waleys": {
+"name": "Martin Waleys",
+"surname": "WALEYS",
+"rows": [
+{
+"says": "of Saniger · deed with Nigel de Staniteford, before 1291",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "martin-waleys",
+"n": 1
+},
 "george-walsh": {
 "name": "George Walsh",
 "surname": "WALSH",
@@ -1498,6 +1618,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "matilda-webb",
+"n": 1
+},
+"richard-webbe": {
+"name": "Richard Webbe",
+"surname": "WEBBE",
+"rows": [
+{
+"says": "of Saniger, Margaret his wife · deed with John Doly, burgess of Berkeley, 1473",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "richard-webbe",
 "n": 1
 },
 "john-wells": {
@@ -1547,9 +1682,9 @@
 }
 },
 "counts": {
-"named": 127,
+"named": 135,
 "withTreePage": 29,
-"ownPage": 98,
-"mentions": 178
+"ownPage": 106,
+"mentions": 189
 }
 }

@@ -1,9 +1,22 @@
 {
  "title": "What changed",
- "eyebrow": "14 passes · 83 changes",
+ "eyebrow": "15 passes · 89 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "Saniger from 1272, and Bigland fills the gap",
+   "did": [
+    "Searched the Berkeley Castle Muniments: nine deeds name people OF SANIGER between about 1272 and 1473, and not one of them is called Saniger.",
+    "Found Bigland's 1791 Collections on archive.org and read the Berkeley section: “Saniger, long held by an old Family of the same Name”, with the monumental inscriptions.",
+    "Recovered from those monuments a century of Berkeley material the parish transcript does not hold — Saniger inscriptions from 1692 to 1750 with ages and relationships.",
+    "Identified the Hinton manor court rolls, GCR/231 and 258, as the record type that would catch the family where the register cannot.",
+    "Rewrote /berkeley's conclusion, which said the archive should stop calling this a Berkeley family. It was wrong.",
+    "Searched the same catalogue for Wakefield of Bristol, Sneyd of Madeley and D'Arcy wills in Kent. Nothing usable in any of the three."
+   ],
+   "found": "The place is two hundred years older than the surname, and it is documented from before 1291. An antiquary copied the family's gravestones in 1791 and they have been sitting in a scanned book ever since."
+  },
   {
    "when": "13 September 2026",
    "title": "Saniger is a place — and the audit starts to move",

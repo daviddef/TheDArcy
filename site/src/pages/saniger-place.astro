@@ -5,7 +5,7 @@ import d from "../data/saniger-place.json";
 ---
 <Base
   title="Saniger is a place"
-  eyebrow={`${d.deeds.length} catalogue entries · found ${d.searched}`}
+  eyebrow={`${d.deeds.length + d.medieval.length} records · from 1272 to 1833 · found ${d.searched}`}
   dek="This archive has spent a fortnight treating Saniger as a surname that happens to cluster near Berkeley. It is the other way round: Saniger is a hamlet in Berkeley parish, and the name comes off the land.">
 
   <section class="blk">
@@ -41,6 +41,76 @@ import d from "../data/saniger-place.json";
     at <strong>Gloucestershire Archives</strong> — the Berkeley estate deeds. They are catalogue
     descriptions, not documents this archive has read.
     <span class="chip inf">catalogued, not yet seen</span></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Berkeley Castle Muniments</div>
+    <h2 style="margin-top:.4rem">The place is two hundred years older than the name</h2>
+
+    <p class="lede">The Berkeley family kept its own archive, and it is catalogued. Nine of its deeds
+    name people <em>of Saniger</em> between about 1272 and 1473 — and <strong>not one of them is
+    called Saniger</strong>.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>Who</th></tr></thead>
+        <tbody>
+          {d.medieval.map(([ref, when, who]) => (
+            <tr><td class="m mono">{ref}</td><td class="m">{when}</td><td class="small">{who}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Gamel, Waleys, Nel, Couthulf, Smyth, de Egton, Hevyner, Webbe.</strong> Eight surnames
+      across two centuries, all of them living at Saniger and none of them named for it. The place is
+      there before the family is — and <span class="mono">BCM/A/1/30/2</span> puts it beyond argument:
+      "<em>Geoffrey Nel of Saniger <strong>in the parish of Berkeley</strong></em>".
+      <br /><br />
+      That is what settles the direction. A surname taken from a place can only be formed after the
+      place has a name, and here the gap is documented: people are <em>of</em> Saniger under other
+      names from before 1291, and the first man actually called Saniger appears in 1601.
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Bigland, 1791</div>
+    <h2 style="margin-top:.4rem">"Saniger, long held by an old Family of the same Name"</h2>
+
+    <p class="lede">Ralph Bigland was Garter King of Arms and spent decades copying every monumental
+    inscription in Gloucestershire. His account of Berkeley parish says the thing this archive worked
+    out from deeds, in one line — and then gives the stones.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Inscription</th><th class="m">Date</th><th>Note</th></tr></thead>
+        <tbody>
+          {d.bigland.monuments.map(([who, when, note]) => (
+            <tr><td><strong>{who}</strong></td><td class="m">{when}</td><td class="small">{note}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>This is the material Berkeley's parish transcript does not have.</strong> FreeREG's
+      Berkeley St Mary stops in <strong>1677</strong>. Bigland's monuments run from 1692 to 1750,
+      with names, relationships, exact dates and ages — a hundred and twenty years of the parish,
+      copied by an antiquary and printed, sitting in a book on archive.org the whole time.
+      <a href={u("/berkeley")}>The page that has been complaining about that gap →</a>
+    </div>
+
+    <p style="margin-top:1.3rem"><strong>And they were freeholders.</strong> {d.bigland.freeholder}</p>
+
+    <p class="dek" style="margin-top:1.1rem">Bigland also lists their neighbours at Saniger, which
+    tells you what kind of place it was — a hamlet of a dozen households, not an estate village:</p>
+    <div class="scroll" style="margin-top:.8rem">
+      <table>
+        <tbody>{d.bigland.neighbours.map(([who, when]) => (
+          <tr><td class="small">{who}</td><td class="small m">{when}</td></tr>))}</tbody>
+      </table>
+    </div>
   </section>
 
   <section class="blk">

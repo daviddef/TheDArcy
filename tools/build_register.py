@@ -235,6 +235,29 @@ for n, says in [
 ]:
     rec(n, says, FC, FC_L)
 
+
+# --- Berkeley Castle Muniments, and Bigland's monuments ---------------------
+BCM = "record · Berkeley Castle Muniments (catalogue description)"
+BIG = "record · Bigland, Collections relative to the County of Gloucester, 1791"
+BIG_L = "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1"
+for n, says in [
+    ("Robert Gamel", "of Saniger · his daughter Juliana named in a Berkeley deed, late 13th century — the earliest inhabitant of the place this archive has found"),
+    ("Geoffrey Nel", "of Saniger IN THE PARISH OF BERKELEY · deed of 1272–1307, which is what fixes Saniger as a place"),
+    ("Martin Waleys", "of Saniger · deed with Nigel de Staniteford, before 1291"),
+    ("Walter Hevyner", "of Saniger, and Maud his wife · deeds with William Doly, burgess of Berkeley, 1443"),
+    ("Richard Webbe", "of Saniger, Margaret his wife · deed with John Doly, burgess of Berkeley, 1473"),
+]:
+    rec(n, says, BCM, GA_L)
+for n, says in [
+    ("Edward Saniger", "of Saniger, Gent. · his wife ESTHER died 13 June 1693 and his daughter Esther was buried 16 August 1692 — Berkeley monumental inscriptions"),
+    ("Edward Saniger", "of Saniger, Gent. · buried 3 December 1739, AGED 48 · his relict SUSANNA died 14 May 1744 aged 58; his daughter JANE died 15 June 1750 aged 24"),
+    ("Edward Saniger", "freeholder for the tithing of Hinton at the Berkeley election of 1776"),
+    ("Esther Saniger", "wife of Edward Saniger of Saniger, Gent. · died 13 June 1693"),
+    ("Susanna Saniger", "relict of Edward Saniger, Gent. · died 14 May 1744, aged 58"),
+    ("Jane Saniger", "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24"),
+]:
+    rec(n, says, BIG, BIG_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

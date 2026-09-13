@@ -1,11 +1,11 @@
 {
-"entries": 651,
-"distinct": 522,
-"records": 178,
+"entries": 662,
+"distinct": 530,
+"records": 189,
 "tree": 473,
 "grafted": 98,
-"linked": 651,
-"surnames": 174,
+"linked": 662,
+"surnames": 179,
 "groups": [
 {
 "surname": "SNEYD",
@@ -2662,7 +2662,7 @@
 },
 {
 "surname": "SANIGER",
-"n": 11,
+"n": 17,
 "rows": [
 {
 "name": "Edward Saniger",
@@ -2679,10 +2679,45 @@
 "kind": "record"
 },
 {
+"name": "Edward Saniger",
+"says": "of Saniger, Gent. · his wife ESTHER died 13 June 1693 and his daughter Esther was buried 16 August 1692 — Berkeley monumental inscriptions",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Gent. · buried 3 December 1739, AGED 48 · his relict SUSANNA died 14 May 1744 aged 58; his daughter JANE died 15 June 1750 aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "freeholder for the tithing of Hinton at the Berkeley election of 1776",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
 "name": "Elizabeth Saniger",
 "says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
 "source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
 "link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Esther Saniger",
+"says": "wife of Edward Saniger of Saniger, Gent. · died 13 June 1693",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Jane Saniger",
+"says": "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
 "kind": "record"
 },
 {
@@ -2704,6 +2739,13 @@
 "says": "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher",
 "source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
 "link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Susanna Saniger",
+"says": "relict of Edward Saniger, Gent. · died 14 May 1744, aged 58",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
 "kind": "record"
 },
 {
@@ -4491,6 +4533,19 @@
 ]
 },
 {
+"surname": "GAMEL",
+"n": 1,
+"rows": [
+{
+"name": "Robert Gamel",
+"says": "of Saniger · his daughter Juliana named in a Berkeley deed, late 13th century — the earliest inhabitant of the place this archive has found",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "GARDNER",
 "n": 1,
 "rows": [
@@ -4590,6 +4645,19 @@
 "says": "Government Analyst · found 1¼ oz of crude carbolic acid in the stomach, 22 Sep 1902",
 "source": "record · QSA coronial file ITM2736504 (DR103140), read in full",
 "link": "https://www.archivessearch.qld.gov.au/items/ITM2736504",
+"kind": "record"
+}
+]
+},
+{
+"surname": "HEVYNER",
+"n": 1,
+"rows": [
+{
+"name": "Walter Hevyner",
+"says": "of Saniger, and Maud his wife · deeds with William Doly, burgess of Berkeley, 1443",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
 }
 ]
@@ -4954,6 +5022,19 @@
 "says": "J.P. · presided at the magisterial inquiry, Brisbane Police Court, 29 Sep 1902",
 "source": "record · QSA coronial file ITM2736504 (DR103140), read in full",
 "link": "https://www.archivessearch.qld.gov.au/items/ITM2736504",
+"kind": "record"
+}
+]
+},
+{
+"surname": "NEL",
+"n": 1,
+"rows": [
+{
+"name": "Geoffrey Nel",
+"says": "of Saniger IN THE PARISH OF BERKELEY · deed of 1272–1307, which is what fixes Saniger as a place",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
 }
 ]
@@ -5492,6 +5573,19 @@
 ]
 },
 {
+"surname": "WALEYS",
+"n": 1,
+"rows": [
+{
+"name": "Martin Waleys",
+"says": "of Saniger · deed with Nigel de Staniteford, before 1291",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "WALKER",
 "n": 1,
 "rows": [
@@ -5526,6 +5620,19 @@
 "says": "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none",
 "source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
 "link": "https://www.freecen.org.uk/",
+"kind": "record"
+}
+]
+},
+{
+"surname": "WEBBE",
+"n": 1,
+"rows": [
+{
+"name": "Richard Webbe",
+"says": "of Saniger, Margaret his wife · deed with John Doly, burgess of Berkeley, 1473",
+"source": "record · Berkeley Castle Muniments (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
 }
 ]
