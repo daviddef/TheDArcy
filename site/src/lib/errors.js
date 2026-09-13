@@ -3,6 +3,22 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Built three days of research, two new pages and the top of the errand list on the claim that Hannah Saniger was not born in Gloucestershire.",
+    truth: "The 1851 census, taken at Drivers Fields in the same house as the 1841 one, gives her birth town as BERKELEY and her birth county as GLOUCESTERSHIRE — which is exactly what the family tree had said from the beginning.",
+    why: "The whole edifice rested on one tick in the 1841 census: the column that asks only whether a person was born in the same county, yes or no. That is the weakest statement a census makes. I treated it as load-bearing because it was the only thing I had, argued from it for days, excluded 81 households with it, catalogued 36 chapel registers because of it, and built a page for a Somerset parish on the strength of it — without ever putting it beside the next census, which asks WHERE rather than WHETHER and was one search away the entire time.",
+    lesson: "When a single weak datum is carrying an entire line of research, that is the datum to attack first, not the one to build on. And check the same family in the next census before theorising about the last one.",
+    href: "/berkeley-woman",
+  },
+  {
+    when: "13 September 2026",
+    what: "Reported repeatedly that the Wakefields could not be found in the 1851 census, and that five of the tree's six Saniger generations at Berkeley could not be tested because the transcript stops in 1677.",
+    truth: "Both are in FindMyPast. The 1851 household is complete, with two children this archive had never heard of, and Berkeley baptisms run straight through the supposed gap with parents named.",
+    why: "Every null on this site was measured against free indexes. The measuring was right and the conclusion was not: “not reachable from here” quietly became “not there”, which is a statement about a budget rather than about the archives of England.",
+    lesson: "Say which shelf you looked on. An index you have not paid for is not an absence of evidence.",
+    href: "/coverage",
+  },
+  {
+    when: "13 September 2026",
     what: "Told the reader that the twelve Bristol chapel registers were “digitised, and can be read without leaving the house”.",
     truth: "All twelve are marked DIGITISED: FALSE in The National Archives' own record details. RG 4 is published through commercial partners, so reading them needs a subscription or a visit.",
     why: "I catalogued the pieces carefully — references, dates, denominations, all correct — and then wrote a sentence about access that I had not checked at all. The catalogue lists what a record IS; whether an image exists is a separate field, and I never looked at it until the next pass.",

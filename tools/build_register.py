@@ -321,6 +321,27 @@ rec("Chew Magna", "\u201ca large and populous parish \u2026 six miles south-west
 C41 = "record \u00b7 1841 census, Chew Magna, Somerset \u2014 piece 938 book 6 folio 6 page 6"
 rec("Elizabeth Saniger", "aged 45, born Somerset \u00b7 at BATTLES LANE, CHEW MAGNA in 1841, in the house of Thomas Veale, spade maker \u2014 ten years before she appears at Oxford Road, Bristol", C41, "https://www.freecen.org.uk/")
 
+
+# --- FindMyPast: the 1851 census, and the marriage --------------------------
+FMP51 = "record \u00b7 1851 census, Drivers Fields, St Paul, Bristol \u2014 HO107/1949 f.478 p.14 sch.66 (FindMyPast)"
+FMP_L = "https://www.findmypast.com.au/"
+rec("Hannah Saniger", "wife, aged 45 \u00b7 BORN AT BERKELEY, GLOUCESTERSHIRE \u2014 the census that finally states her birthplace instead of ticking a column", FMP51, FMP_L)
+rec("James Wakefield", "head, aged 45, MASON \u00b7 born at STROUD, GLOUCESTERSHIRE", FMP51, FMP_L)
+rec("Miriam Wakefield", "daughter, aged 10, SERVANT \u00b7 already in work three years before she sailed", FMP51, FMP_L)
+for n, says in [
+    ("Hiram Wakefield", "son, aged 13, errand boy"),
+    ("Aaron Wakefield", "son, aged 10, errand boy"),
+    ("Jabez Wakefield", "son, aged 8 \u00b7 a child this archive had never heard of"),
+    ("Zillah Wakefield", "daughter, aged 5, scholar \u00b7 a child this archive had never heard of"),
+]:
+    rec(n, says, FMP51, FMP_L)
+
+FMPM = "record \u00b7 England Marriages 1538-1973 (FindMyPast)"
+rec("Hannah Saniger", "married JAMES WAKEFIELD at Bristol, 17 OCTOBER 1831 \u00b7 the first English record of the marriage, and the first of any kind in England to give her the surname Saniger", FMPM, FMP_L)
+
+FMPB = "record \u00b7 England Births & Baptisms 1538-1975, Berkeley (FindMyPast)"
+rec("Daniel Saniger", "baptised at Berkeley 21 November 1821 \u00b7 father EDWARD Saniger, mother KITURA \u2014 from the stretch of the Berkeley register FreeREG does not reach", FMPB, FMP_L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

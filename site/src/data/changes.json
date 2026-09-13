@@ -1,9 +1,24 @@
 {
  "title": "What changed",
- "eyebrow": "17 passes · 118 changes",
+ "eyebrow": "18 passes · 126 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026 · FindMyPast",
+   "title": "Hannah was a Berkeley woman all along",
+   "did": [
+    "Opened a subscription site for the first time in this archive's life.",
+    "Found the 1851 census at Drivers Fields — the same house as 1841 — which states Hannah's birthplace outright: BERKELEY, GLOUCESTERSHIRE.",
+    "Found the marriage: Hannah Saniger to James Wakefield, Bristol, 17 October 1831. The first English record of it, and the first English record of any kind to give her the surname.",
+    "Learned that James Wakefield was born at STROUD, and that there were two more children — Jabez, born about 1843, and Zillah, about 1846 — neither of whom this archive had ever heard of.",
+    "Established that Berkeley's register CAN be searched after 1677, with parents named. The five untestable Saniger generations were behind a paywall, not behind a gap.",
+    "Marked /chew-magna and /bristol-chapels as wrong at the top, and left them up.",
+    "Filed the two largest errors this archive has made: an edifice on a single 1841 tick, and the habit of turning “not reachable from here” into “not there”.",
+    "Added a warning to the top of /coverage saying what every null on it is really measuring."
+   ],
+   "found": "The answer was the one the family tree gave before any of this started, and it was one search away the whole time behind a subscription this archive had never bought."
+  },
   {
    "when": "13 September 2026 · second pass",
    "title": "91 Well Street, and what the indexes actually hold",

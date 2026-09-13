@@ -1,10 +1,10 @@
 {
-"entries": 684,
-"distinct": 539,
-"records": 211,
+"entries": 693,
+"distinct": 541,
+"records": 220,
 "tree": 473,
 "grafted": 98,
-"linked": 684,
+"linked": 693,
 "surnames": 184,
 "groups": [
 {
@@ -1750,7 +1750,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 35,
+"n": 41,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -1778,6 +1778,13 @@
 "says": "aged 14 · farm labourer · native place BRISTOL · entered among the single men",
 "source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
 "link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Aaron Wakefield",
+"says": "son, aged 10, errand boy",
+"source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -1844,6 +1851,13 @@
 "kind": "record"
 },
 {
+"name": "Hiram Wakefield",
+"says": "son, aged 13, errand boy",
+"source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Jabez Wakefield",
 "says": "died 08/02/1903 · mother: Hannah (no surname given) · father: James Wakefield",
 "source": "record · Queensland death index 1903/C/5058",
@@ -1865,6 +1879,13 @@
 "kind": "record"
 },
 {
+"name": "Jabez Wakefield",
+"says": "son, aged 8 · a child this archive had never heard of",
+"source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "James Wakefield",
 "says": "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have",
 "source": "record · Queensland death index 1857/B/135",
@@ -1883,6 +1904,13 @@
 "says": "aged 48 · MASON · county Gloucester · arrived Brisbane 16 Dec 1854 on the General Hewitt",
 "source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
 "link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "James Wakefield",
+"says": "head, aged 45, MASON · born at STROUD, GLOUCESTERSHIRE",
+"source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -1914,6 +1942,13 @@
 "kind": "record"
 },
 {
+"name": "Miriam Wakefield",
+"says": "daughter, aged 10, SERVANT · already in work three years before she sailed",
+"source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Richard Wakefield",
 "says": "named as the father of James Wakefield on his 1857 Queensland death registration — the only Gloucestershire candidate is a Richard baptised at Chedworth, 21 Dec 1770, and nothing but a name connects them",
 "source": "record · Queensland death index 1857/B/135",
@@ -1932,6 +1967,13 @@
 "says": "aged 8 · aboard the General Hewitt",
 "source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
 "link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490",
+"kind": "record"
+},
+{
+"name": "Zillah Wakefield",
+"says": "daughter, aged 5, scholar · a child this archive had never heard of",
+"source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -1995,6 +2037,222 @@
 "says": "1846–1900 · England",
 "source": "family tree",
 "link": "/people/zillah-wakefield",
+"kind": "tree"
+}
+]
+},
+{
+"surname": "SANIGER",
+"n": 30,
+"rows": [
+{
+"name": "Caroline Saniger",
+"says": "his wife, aged 28 · born Fishponds, Gloucestershire",
+"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Christian Saniger",
+"says": "plaintiff in a defamation suit against Mary Millard in the Gloucester consistory court, 1768 (GDR/B4/1/387)",
+"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Daniel Saniger",
+"says": "baptised at Berkeley 21 November 1821 · father EDWARD Saniger, mother KITURA — from the stretch of the Berkeley register FreeREG does not reach",
+"source": "record · England Births & Baptisms 1538-1975, Berkeley (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of SANIGER, Berkeley, CLOTHIER · mortgage with Richard Holliday of Berkeley, cooper, 9 August 1692",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Gent. · his wife ESTHER died 13 June 1693 and his daughter Esther was buried 16 August 1692 — Berkeley monumental inscriptions",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Gent. · buried 3 December 1739, AGED 48 · his relict SUSANNA died 14 May 1744 aged 58; his daughter JANE died 15 June 1750 aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "freeholder for the tithing of Hinton at the Berkeley election of 1776",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, CLOTHIER · lends £100 on mortgage to Richard Holliday of Berkeley, cooper, 9 August 1692",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, GENT. · lends £60 on mortgage to Nicholas Morse of Wicks Elme, 13 December 1709 — the same address, seventeen years, and a different rank",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Edward Saniger",
+"says": "of Saniger, Berkeley, gent. · exchanges land in Oakhunger field with Isaac Smyth of DURSLEY, clothier, 13 November 1716",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "widow, of THORNBURY, Gloucestershire · will proved 24 December 1833 (PROB 11/1825/326)",
+"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "his mother, WIDOW, aged 60 · born CHEW MAGNA, SOMERSET — the first Saniger this archive has found with a birthplace outside Gloucestershire",
+"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Saniger",
+"says": "aged 45, born Somerset · at BATTLES LANE, CHEW MAGNA in 1841, in the house of Thomas Veale, spade maker — ten years before she appears at Oxford Road, Bristol",
+"source": "record · 1841 census, Chew Magna, Somerset — piece 938 book 6 folio 6 page 6",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Esther Saniger",
+"says": "wife of Edward Saniger of Saniger, Gent. · died 13 June 1693",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "Hannah Saniger",
+"says": "wife, aged 45 · BORN AT BERKELEY, GLOUCESTERSHIRE — the census that finally states her birthplace instead of ticking a column",
+"source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Hannah Saniger",
+"says": "married JAMES WAKEFIELD at Bristol, 17 OCTOBER 1831 · the first English record of the marriage, and the first of any kind in England to give her the surname Saniger",
+"source": "record · England Marriages 1538-1973 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane Saniger",
+"says": "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "John Saniger",
+"says": "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Maurice Saniger",
+"says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Maurice Saniger",
+"says": "and JANE his wife · a fine with John Hardinge over two messuages and land in Berkeley AND DURSLEY, Easter term 1731",
+"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Samuel Saniger",
+"says": "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher",
+"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Susanna Saniger",
+"says": "relict of Edward Saniger, Gent. · died 14 May 1744, aged 58",
+"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
+"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
+"kind": "record"
+},
+{
+"name": "William Saniger",
+"says": "head, aged 27, SMITH JOURNEYMAN, of Oxford Road · born CHEW MAGNA, SOMERSET",
+"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Hannah SANIGER",
+"says": "1805–1873 · Berkley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/hannah-saniger",
+"kind": "tree"
+},
+{
+"name": "John Saniger",
+"says": "1769–1824 · Berkeley, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/john-saniger",
+"kind": "tree"
+},
+{
+"name": "Thomas Saniger",
+"says": "b. 1711 · Christened in Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/thomas-saniger-1711",
+"kind": "tree"
+},
+{
+"name": "Thomas Saniger",
+"says": "1744–1819 · Christened in Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/thomas-saniger-1744",
+"kind": "tree"
+},
+{
+"name": "William Saniger",
+"says": "1679–1718 · Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-saniger",
 "kind": "tree"
 }
 ]
@@ -2197,201 +2455,6 @@
 "says": "1864–1918 · West Leigh, Devonshire",
 "source": "family tree",
 "link": "/people/william-atwell-1864",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "SANIGER",
-"n": 27,
-"rows": [
-{
-"name": "Caroline Saniger",
-"says": "his wife, aged 28 · born Fishponds, Gloucestershire",
-"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Christian Saniger",
-"says": "plaintiff in a defamation suit against Mary Millard in the Gloucester consistory court, 1768 (GDR/B4/1/387)",
-"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of SANIGER, Berkeley, CLOTHIER · mortgage with Richard Holliday of Berkeley, cooper, 9 August 1692",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, GENT · mortgage with Nicholas Morse of Wicks Elme, 13 December 1709; exchange with Isaac Smyth of Dursley, clothier, 13 November 1716",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Gent. · his wife ESTHER died 13 June 1693 and his daughter Esther was buried 16 August 1692 — Berkeley monumental inscriptions",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Gent. · buried 3 December 1739, AGED 48 · his relict SUSANNA died 14 May 1744 aged 58; his daughter JANE died 15 June 1750 aged 24",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "freeholder for the tithing of Hinton at the Berkeley election of 1776",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, CLOTHIER · lends £100 on mortgage to Richard Holliday of Berkeley, cooper, 9 August 1692",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, GENT. · lends £60 on mortgage to Nicholas Morse of Wicks Elme, 13 December 1709 — the same address, seventeen years, and a different rank",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Edward Saniger",
-"says": "of Saniger, Berkeley, gent. · exchanges land in Oakhunger field with Isaac Smyth of DURSLEY, clothier, 13 November 1716",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Saniger",
-"says": "widow, of Thornbury, Gloucestershire · will proved 24 December 1833, TNA PROB 11/1825/326",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Saniger",
-"says": "widow, of THORNBURY, Gloucestershire · will proved 24 December 1833 (PROB 11/1825/326)",
-"source": "record · The National Archives, PROB 11 / Gloucester Diocesan Records (catalogue)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Saniger",
-"says": "his mother, WIDOW, aged 60 · born CHEW MAGNA, SOMERSET — the first Saniger this archive has found with a birthplace outside Gloucestershire",
-"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Saniger",
-"says": "aged 45, born Somerset · at BATTLES LANE, CHEW MAGNA in 1841, in the house of Thomas Veale, spade maker — ten years before she appears at Oxford Road, Bristol",
-"source": "record · 1841 census, Chew Magna, Somerset — piece 938 book 6 folio 6 page 6",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Esther Saniger",
-"says": "wife of Edward Saniger of Saniger, Gent. · died 13 June 1693",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "Jane Saniger",
-"says": "daughter of Edward Saniger of Saniger, Gent. · died 15 June 1750, aged 24",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "John Saniger",
-"says": "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Maurice Saniger",
-"says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Maurice Saniger",
-"says": "and JANE his wife · a fine with John Hardinge over two messuages and land in Berkeley AND DURSLEY, Easter term 1731",
-"source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Samuel Saniger",
-"says": "aged 50, SHOEMAKER, at Berkeley in 1841 — with his son Samuel, 15, a butcher",
-"source": "record · 1851 census, HO107/1954, 7 Oxford Road, St Philip and Jacob Out, Bristol",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Susanna Saniger",
-"says": "relict of Edward Saniger, Gent. · died 14 May 1744, aged 58",
-"source": "record · Bigland, Collections relative to the County of Gloucester, 1791",
-"link": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-"kind": "record"
-},
-{
-"name": "William Saniger",
-"says": "head, aged 27, SMITH JOURNEYMAN, of Oxford Road · born CHEW MAGNA, SOMERSET",
-"source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Hannah SANIGER",
-"says": "1805–1873 · Berkley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/hannah-saniger",
-"kind": "tree"
-},
-{
-"name": "John Saniger",
-"says": "1769–1824 · Berkeley, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/john-saniger",
-"kind": "tree"
-},
-{
-"name": "Thomas Saniger",
-"says": "b. 1711 · Christened in Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/thomas-saniger-1711",
-"kind": "tree"
-},
-{
-"name": "Thomas Saniger",
-"says": "1744–1819 · Christened in Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/thomas-saniger-1744",
-"kind": "tree"
-},
-{
-"name": "William Saniger",
-"says": "1679–1718 · Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-saniger",
 "kind": "tree"
 }
 ]

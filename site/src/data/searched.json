@@ -9,6 +9,46 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — 1851 England, Wales & Scotland Census",
+   "what": "Where Hannah Saniger was born",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "BERKELEY, GLOUCESTERSHIRE. The 1851 census at Drivers Fields, St Paul, Bristol — the same house as the 1841 one — states her birth town and county outright, and they are the ones the family tree gave at the start. The archive's entire “not born in Gloucestershire” thesis rested on a single yes/no tick in 1841 and is wrong. The same page gives James Wakefield's birthplace as STROUD and adds two children nobody here knew of, Jabez and Zillah.",
+   "href": "/berkeley-woman"
+  },
+  {
+   "src": "FindMyPast — England Marriages 1538-1973",
+   "what": "The marriage of James Wakefield and Hannah Saniger",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Bristol, 17 OCTOBER 1831. The first English record of this marriage, and the first English record of any kind to give Hannah the surname Saniger — which until today rested entirely on five Queensland death registrations written a world away and decades later.",
+   "href": "/berkeley-woman"
+  },
+  {
+   "src": "FindMyPast — England Births & Baptisms 1538-1975",
+   "what": "Whether Berkeley's register can be searched after 1677",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "It can, and with parents named. Saniger baptisms at Berkeley run Jos 1792, Ann 1798, Jno 1803, Jno and Edwd 1804, Edward 1805, Thos 1808, Victoria 1817, Eliza and Hesther 1819, Daniel 1821 — and Daniel's entry gives his father as Edward Saniger and his mother as Kitura. The five untestable Saniger generations were behind a subscription, not behind a gap in the record.",
+   "href": "/berkeley-woman"
+  },
+  {
+   "src": "FindMyPast — Somerset Marriages",
+   "what": "Sanigers on the Somerset side of the Avon",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "WILLIAM SANIGER married MILLE SMITH at Bedminster St John the Baptist on 29 January 1815, by banns, both of Bedminster; witnesses Wm Smith and Benjn John Room. Bishop's transcripts, Somerset Archives D/D/RR 39-40A. Real, interesting, and — now that Hannah turns out to be a Berkeley woman — not connected to this family by anything.",
+   "href": "/berkeley-woman"
+  },
+  {
+   "src": "FindMyPast — all Life Events, control-tested",
+   "what": "Sanigers at Chew Magna",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "None, in any spelling. The control passes: the same query with “berkeley” returns 252 and Chew Magna itself is covered — a Smith search there returns Somerset Burials and Somerset Baptisms. So the zero is real. Together with the 1851 census this closes the Chew Magna hypothesis, which was mine and which was wrong.",
+   "href": "/chew-magna"
+  },
+  {
    "src": "FreeCEN — Somerset, 1841",
    "what": "Whether the Sanigers were at Chew Magna before Bristol",
    "when": "13 Sep 2026",

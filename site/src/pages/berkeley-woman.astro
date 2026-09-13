@@ -1,0 +1,103 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/berkeley-woman.json";
+---
+<Base
+  title="Hannah was a Berkeley woman"
+  eyebrow={`1851 census · found ${d.found}`}
+  dek="The oldest open question in this archive is closed, and the answer is the one the family tree gave at the start. Everything built on top of the opposite answer is wrong, and it is all still on the site.">
+
+  <section class="blk">
+    <p class="lede">For as long as this archive has existed, one sentence has organised its English
+    research: <strong>Hannah Saniger was not born in Gloucestershire.</strong> It came from a tick in
+    a column of the 1841 census. It sent the search to Bristol's chapels, to the Somerset side of the
+    Avon, and finally to a parish called Chew Magna.</p>
+
+    <p style="margin-top:1.1rem">The 1851 census was taken in the same house, about the same woman,
+    ten years later. It did not ask whether she was born in this county. It asked <em>where</em>.</p>
+
+    <div class="note" style="margin-top:1.3rem;border-left-width:3px">
+      <strong style="font-size:1.15em">Birth town: BERKELEY. Birth county: GLOUCESTERSHIRE.</strong>
+      <br /><br />
+      Which is what <a href={u("/people/hannah-saniger")}>the family tree</a> said before any of this
+      began. <span class="chip doc">documented</span>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.census}</div>
+    <h2 style="margin-top:.4rem">The household, complete</h2>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Name</th><th>Relation</th><th class="m">Age</th><th>Occupation</th><th>Born</th></tr></thead>
+        <tbody>
+          {d.household.map(([fn, sn, rel, ms, sx, age, by, occ, bp]) => (
+            <tr style={fn === "Hannah" ? "background:var(--tint)" : ""}>
+              <td><strong>{fn}</strong> <span class="small" style="color:var(--ink-3)">{sn}</span></td>
+              <td class="small">{rel}</td>
+              <td class="m">{age}</td>
+              <td class="small">{occ}</td>
+              <td class="small">{bp === "—" ? <span style="color:var(--ink-3)">—</span> : <strong>{bp}</strong>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.marriage.set}</div>
+    <h2 style="margin-top:.4rem">And the marriage, at last</h2>
+    <p class="lede">{d.marriage.line}.</p>
+    <p style="margin-top:1rem">Residence: {d.marriage.residence}.</p>
+    <div class="note" style="margin-top:1.2rem">{d.marriage.means}
+      <span class="chip doc">documented in England</span></div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What this cost</div>
+    <h2 style="margin-top:.4rem">An edifice on a tick</h2>
+
+    <p class="lede">The claim was: <em>{d.wrong.claim}</em> On it this archive built:</p>
+    <ol class="dek" style="margin-top:1rem">
+      {d.wrong.built.map((x) => (<li style="margin-bottom:.5rem">{x}</li>))}
+    </ol>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>All of it rested on one thing.</strong> {d.wrong.rested}
+      <br /><br />
+      {d.wrong.beats}
+      <br /><br />
+      A binary tick is the weakest statement a census makes, and this archive treated it as the
+      strongest thing it had — because it was the only thing it had, and because nobody tested it
+      against the next census. <a href={u("/what-we-got-wrong")}>Filed as the largest error here →</a>
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">The pages built on the wrong answer are still up, marked
+    wrong rather than deleted, because how an archive goes wrong is part of what it knows.
+    <a href={u("/chew-magna")}>Chew Magna →</a> · <a href={u("/bristol-chapels")}>The Bristol chapels →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Four things nobody here knew this morning</div>
+    <h2 style="margin-top:.4rem">What else the page gives</h2>
+    <ol class="dek" style="margin-top:1rem">
+      {d.newFacts.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}.</strong> {b}</li>))}
+    </ol>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>And the gap that was never a gap</h2>
+    <p class="lede">{d.berkeley}</p>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>This is the real lesson, and it is not about Hannah.</strong> Every null result on this
+      site was measured against free indexes, and
+      <a href={u("/coverage")}>the page that measures them</a> now needs a line at the top: the
+      commonest reason a record could not be found here is that it was behind a subscription. The
+      coverage discipline was right. The conclusion drawn from it — that the record did not exist in
+      reach — was a statement about this archive's budget, not about the archives of England.
+    </div>
+  </section>
+</Base>

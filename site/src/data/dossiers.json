@@ -395,6 +395,21 @@
 "slug": "christian-saniger",
 "n": 1
 },
+"daniel-saniger": {
+"name": "Daniel Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "baptised at Berkeley 21 November 1821 · father EDWARD Saniger, mother KITURA — from the stretch of the Berkeley register FreeREG does not reach",
+"source": "record · England Births & Baptisms 1538-1975, Berkeley (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "daniel-saniger",
+"n": 1
+},
 "edward-saniger": {
 "name": "Edward Saniger",
 "surname": "SANIGER",
@@ -1852,9 +1867,9 @@
 }
 },
 "counts": {
-"named": 146,
-"withTreePage": 31,
-"ownPage": 115,
-"mentions": 211
+"named": 148,
+"withTreePage": 32,
+"ownPage": 116,
+"mentions": 220
 }
 }
