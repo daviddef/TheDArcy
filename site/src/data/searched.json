@@ -9,6 +9,20 @@
  ],
  "rows": [
   {
+   "src": "Queensland Registry of Births, Deaths and Marriages — historical index, searched by DATE rather than by name",
+   "what": "Every person in this archive with a Queensland death and an exact date — twenty-six of them, from 1856 to 1989",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Twenty-six of twenty-six found, eighteen of them new. The method is the finding: the two earlier sweeps went surname by surname, which finds a man and loses his wife, because she is registered under the name she died with and not the one this archive files her under. Searching the DEATH DATE ALONE, with no name at all, and then matching on the parents' fields, recovered every married woman the surname sweeps had missed — Maria D'Arcy née White (1856/B/50), Catherine Sneyd née Mulcahy, Jane Atkinson née Creech, Maria Atwell née Rossiter, Catherine Jane Murdoch née Matson, Eliza D'Arcy née Keeling, Mary Ann Blume née O'Brien, Sarah Atwell née Wright, Ida Kathleen Darcy née Atkinson, Ivy Miriam D'Arcy née Sneyd and Barbara Murdoch née Atwell. The best single row is GEORGE LINDESAY D'ARCY, died 13 July 1901, registration 1901/B/1510, whose father is entered as GEORGE PITT D'ARCY — a generation of the direct line named by a document rather than by the tree. Every identification rests on the parent fields agreeing, never on a name and a date; read the list on the register page and the couples chain into one another."
+  },
+  {
+   "src": "Queensland Registry of Births, Deaths and Marriages — historical index",
+   "what": "Carminantonio Falco's death, given here as 27 April 1988",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Nothing — and the null is the point. Queensland registers no death of that name on 27 April 1988. He died on 27 APRIL 1985, registration 1985/3063, which is what both Nudgee Cemetery and the registry say. The wrong year is in this archive for the same reason it was in the Falco archive: both took it from the shared family tree. It is the only one of the twenty-six that did not answer, and it did not answer because the date was wrong."
+  },
+  {
    "src": "British Newspaper Archive — three papers, February–April 1848",
    "what": "Joseph D'Arcy's obituary, and what he did with his life",
    "when": "13 Sep 2026",
