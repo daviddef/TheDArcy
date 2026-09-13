@@ -15,7 +15,7 @@ const HOLDS = [
   [dossiers.counts.named, "named in records", `including ${dossiers.counts.ownPage} who are not relatives at all`, "/who"],
   [reg.entries, "register entries", `${reg.records} from a document, ${reg.tree} from the tree`, "/register"],
   [searched.rows.length, "sources read", `${out("yield")} yields, ${out("null")} nulls, ${out("blocked")} unreachable`, "/searched"],
-  [nOwn, "errors corrected in public", `plus ${nInherited} inherited from the tree`, "/what-we-got-wrong"],
+  [nOwn, "errors corrected in public", `plus ${nInherited} inherited from the tree`, "/corrections"],
   ["≈7", "generations it will defend", "not the twelve the tree claims", "/how-far-back"],
 ];
 ---
@@ -25,7 +25,7 @@ const HOLDS = [
   <section class="blk">
     <p class="lede">This archive exists because a family had a tree that reached the kings of Denmark
     and nobody had ever asked it a hard question. It is one of <strong>six</strong>, kept to the same
-    method and by the same hand. <a href={u("/the-other-archives")}>The other five →</a></p>
+    method and by the same hand. <a href={u("/the-other-archives/")}>The other five →</a></p>
   </section>
 
   <section class="blk">
@@ -34,20 +34,20 @@ const HOLDS = [
       <li style="margin-bottom:.6rem"><strong>A family tree is not a source.</strong> It is a set of
       assertions. Of {reg.entries} entries in the register, {reg.records} rest on a document; the rest rest on
       somebody's tree, and every page says which is which.
-      <a href={u("/register")}>The register →</a></li>
+      <a href={u("/register/")}>The register →</a></li>
       <li style="margin-bottom:.6rem"><strong>A null result is a result.</strong> Every source read
       and found empty is published, so the next person does not repeat the search.
-      <a href={u("/searched")}>What has been read →</a></li>
+      <a href={u("/searched/")}>What has been read →</a></li>
       <li style="margin-bottom:.6rem"><strong>Errors stay on the page where they were made.</strong>
       {nOwn} so far, each with what caused it. Corrections are never made silently.
-      <a href={u("/what-we-got-wrong")}>The errors →</a></li>
+      <a href={u("/corrections/")}>The errors →</a></li>
       <li style="margin-bottom:.6rem"><strong>Living people are not published at all.</strong> Not
       hidden, not gated — absent from the build. The rule withholds 2,034 people across the tree,
       including their names wherever they would appear as somebody's spouse, parent or child.
-      <a href={u("/method")}>How the rule works →</a></li>
+      <a href={u("/method/")}>How the rule works →</a></li>
       <li><strong>A better story is not a reason.</strong> Two aristocratic descents have been taken
       off this family — one unevidenced, one disproved — and both are still set out in full rather
-      than deleted. <a href={u("/how-far-back")}>Both grafts →</a></li>
+      than deleted. <a href={u("/how-far-back/")}>Both grafts →</a></li>
     </ul>
   </section>
 
@@ -107,7 +107,7 @@ const HOLDS = [
       against 57%. That is not a change of subject; it is the same family, evidenced from the
       country it came from. The measure is kept here so the next correction can be measured too.
       <br /><br />
-      <a href={u("/searched")}>Every source, and which country it is in →</a>
+      <a href={u("/searched/")}>Every source, and which country it is in →</a>
     </div>
   </section>
 
@@ -119,8 +119,8 @@ const HOLDS = [
     everything you can read here is in the repository, including the tools that built it.</p>
     <p class="dek" style="margin-top:.9rem">
       <a href="https://github.com/daviddef/TheDArcy">The repository ↗</a> ·
-      <a href={u("/method")}>Method →</a> · <a href={u("/sources")}>Sources →</a> ·
-      <a href={u("/changes")}>What changed →</a></p>
+      <a href={u("/method/")}>Method →</a> · <a href={u("/sources/")}>Sources →</a> ·
+      <a href={u("/changes/")}>What changed →</a></p>
   </section>
 
   <section class="blk" style="border-bottom:0">
@@ -128,6 +128,6 @@ const HOLDS = [
     <div class="note"><strong>A correction is the most valuable thing anyone can send this
     archive.</strong> If something here is wrong — a date, a place, a join, a person who should not
     be published — say so, and it will be changed, and the change will be recorded on
-    <a href={u("/changes")}>what changed</a> rather than quietly applied.</div>
+    <a href={u("/changes/")}>what changed</a> rather than quietly applied.</div>
   </section>
 </Base>

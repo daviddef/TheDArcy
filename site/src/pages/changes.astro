@@ -24,7 +24,7 @@ const items = c.days.reduce((a, d) => a + d.did.length, 0);
   ))}
 
   <section class="blk" style="border-bottom:0">
-    <p class="dek">{c.close} <a href={u("/searched")}>What has been read →</a> ·
-      <a href={u("/what-we-got-wrong")}>What was taken back →</a></p>
+    <p class="dek">{c.close} <a href={u("/searched/")}>What has been read →</a> ·
+      <a href={u("/corrections/")}>What was taken back →</a></p>
   </section>
 </Base>

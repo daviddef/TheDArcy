@@ -22,7 +22,7 @@ const NUMBERS = [
   [dossiers.counts.ownPage, "people met in records who are not relatives", "witnesses, constables, a surgeon, convicts, comrades — each with a page", "/who"],
   [searched.rows.length, "sources read", `${searched.rows.filter((r) => r.outcome === "null").length} of them read and found empty, which is knowledge`, "/searched"],
   [19, "pedigree charts with a solid edge", "out of 473. A family tree is a set of assertions until somebody opens a document", "/method"],
-  [nOwn, "errors corrected in public", "each still on the page where it was made", "/what-we-got-wrong"],
+  [nOwn, "errors corrected in public", "each still on the page where it was made", "/corrections"],
 ];
 
 const RECENT = changes.days.slice(0, 3);
@@ -58,7 +58,7 @@ const more = [
 ["/people", "The people", `Every person the archive can name and publish — ${published} of them, most of whom never continued the line.`],
 ["/places", "Places", `${places.length} places, from Hornby Castle to Boulia. Read the Australian list in order and you can watch a family spread along the Queensland railway.`],
 ["/the-other-archives", "The other archives", "This is one of six, kept to the same method. The D'Arcy line married Defranceski; the Defranceski line had married Falco. All three meet in a living generation that none of the archives publishes."],
-["/what-we-got-wrong", "What this archive got wrong", "Seven mistakes this site published and then corrected, with the cause of each. Five of the seven are the same failure: a number taken from a secondary source and not checked against the record."],
+["/corrections", "What this archive got wrong", "Seven mistakes this site published and then corrected, with the cause of each. Five of the seven are the same failure: a number taken from a secondary source and not checked against the record."],
 ["/method", "Method", "What 'documented' means here, what 'family lore' means, and the rule that keeps living people out of the build entirely."],
 ];
 ---
@@ -90,8 +90,8 @@ const more = [
   <p class="cap" style="margin:.9rem 0 0">
     <strong>The house on the hill is faint on purpose.</strong> This archive cannot show that the
     family ever lived in it, and two pages here set out why —
-    <a href={u("/hornby")}>the Hornby claim</a> and
-    <a href={u("/how-far-back")}>the graft that replaced it</a>. What it can show is the middle of
+    <a href={u("/hornby/")}>the Hornby claim</a> and
+    <a href={u("/how-far-back/")}>the graft that replaced it</a>. What it can show is the middle of
     the picture and the right of it: a quay, a ship, and a flat gold country with a railway line
     running out of sight. <span class="dim">Illustration commissioned for this archive, 2026.</span>
   </p>
@@ -127,7 +127,7 @@ const more = [
         <em>England</em> reached Port Jackson on <strong>18 September 1826</strong>.</p>
         <p class="small" style="margin-top:.5rem">Surgeon George Thomson's journal,
         <span class="mono">TNA ADM 101/26/1</span>. This card said <em>30 men</em> until 10 September
-        2026, from a secondary account. <a href={u("/what-we-got-wrong")}>The correction →</a></p>
+        2026, from a secondary account. <a href={u("/corrections/")}>The correction →</a></p>
       </div>
       <div class="card">
         <h3>What the children's births say</h3>
@@ -136,7 +136,7 @@ const more = [
         years and half a world between the first and the second.</p>
       </div>
     </div>
-    <p style="margin-top:1.2rem"><a href={u("/australia")}>How the family arrived →</a></p>
+    <p style="margin-top:1.2rem"><a href={u("/australia/")}>How the family arrived →</a></p>
   </section>
 
   <section class="blk">
@@ -148,47 +148,47 @@ const more = [
         Engineers on <strong>17 January 1776</strong>, major-general in 1819, dead at Chatham in 1827,
         and documented at every step by the register of his own Corps. The archive will defend him and
         everyone below him. <strong>Above him it will defend nothing.</strong>
-        <a href={u("/direct-line")}>The spine →</a></p>
+        <a href={u("/direct-line/")}>The spine →</a></p>
       </div>
       <div class="card">
         <h3>Two grafts, not one</h3>
         <p>Of 243 ancestors, <strong>71</strong> hang on an unevidenced link in the D'Arcy line and
         <strong>27</strong> on a link in the Sneyd line that is now <strong>disproved from the
         parish register</strong>. Remove both and 145 remain, reaching 1654 in Gloucestershire.
-        <a href={u("/how-far-back")}>How far back it really goes →</a></p>
+        <a href={u("/how-far-back/")}>How far back it really goes →</a></p>
       </div>
       <div class="card">
         <h3>A pedigree that contradicts itself</h3>
         <p>The tree says Robert was "<em>thought to be the illegitimate</em>" son of the
         <strong>4th</strong> Earl of Holderness — and then descends him from the <strong>3rd</strong>,
         through a man with two birth years sixty-nine years apart.
-        <a href={u("/hornby")}>The Hornby claim →</a></p>
+        <a href={u("/hornby/")}>The Hornby claim →</a></p>
       </div>
       <div class="card">
         <h3>A gold medal, four years late</h3>
         <p><strong>Major George Pitt D'Arcy</strong> commanded the 39th at <strong>Orthes</strong> in
         1814 because his colonel was shot early in the action — and the medal he was given for it was
         posted to the colonel by mistake and took four years to find him.
-        <a href={u("/australia")}>His war, and his ship →</a></p>
+        <a href={u("/australia/")}>His war, and his ship →</a></p>
       </div>
       <div class="card">
         <h3>A surveyor who helped map Melbourne</h3>
         <p><strong>Frederick Robert D'Arcy</strong>, half-brother of the direct ancestor, was one of
         three surveyors sent to Port Phillip in 1836 to chart the bay and the Yarra. He died at Spring
-        Hill and lies at Toowong. <a href={u("/australia")}>His story →</a></p>
+        Hill and lies at Toowong. <a href={u("/australia/")}>His story →</a></p>
       </div>
       <div class="card">
         <h3>A eulogy, checked against a newspaper</h3>
         <p>Clayfield, the Union Trustee Company, a sudden death — five details of the 2010 eulogy
         confirmed by an obituary printed in 1936 that nobody in the family had seen, which also
         restores a fact they had lost: he served <strong>in France</strong>.
-        <a href={u("/papers")}>The papers →</a></p>
+        <a href={u("/papers/")}>The papers →</a></p>
       </div>
       <div class="card">
         <h3>A voice, not just a date</h3>
         <p><strong>Ken D'Arcy's eulogy</strong>, delivered in three parts by his three children in
         March 2010, runs to four thousand words and carries the African Grey parrot, the mango tree,
-        the cigarettes at nine, and Cyclone Althea. <a href={u("/brisbane")}>Brisbane →</a></p>
+        the cigarettes at nine, and Cyclone Althea. <a href={u("/brisbane/")}>Brisbane →</a></p>
       </div>
     </div>
   </section>
@@ -205,7 +205,7 @@ const more = [
         </div>
       ))}
     </div>
-    <p class="small" style="margin-top:1.2rem"><a href={u("/changes")}>Every pass, in full →</a></p>
+    <p class="small" style="margin-top:1.2rem"><a href={u("/changes/")}>Every pass, in full →</a></p>
   </section>
 
   <section class="blk">
@@ -245,9 +245,9 @@ const more = [
     <p class="dek" style="margin-top:.9rem">Below that: whether the <strong>Atkinsons of Limerick</strong>
     and the <strong>Murdochs of St Quivox</strong> can be pushed past the emigrant generation at all,
     and what killed <strong>Lindesay Atkinson D'Arcy</strong> at forty-four.
-    <a href={u("/open-questions")}>The queue, in priority order, and the nine letters drafted →</a></p>
+    <a href={u("/open-questions/")}>The queue, in priority order, and the nine letters drafted →</a></p>
     <p class="small" style="margin-top:1.2rem">Of the direct ancestors, <strong>{redacted}</strong> are
     living and excluded from this build entirely — not hidden, not gated, not present in the output.
-    Across the whole tree the rule withholds 2,034 people. <a href={u("/method")}>The rule →</a></p>
+    Across the whole tree the rule withholds 2,034 people. <a href={u("/method/")}>The rule →</a></p>
   </section>
 </Base>

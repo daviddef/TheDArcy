@@ -44,7 +44,7 @@ const total = fams.reduce((a, f) => a + f.published, 0);
         </div>
         {f.published > 12 && (
           <p class="small" style="margin-top:.8rem">
-            and {f.published - 12} more — <a href={u("/people")}>the full list →</a></p>
+            and {f.published - 12} more — <a href={u("/people/")}>the full list →</a></p>
         )}
       </section>
     );

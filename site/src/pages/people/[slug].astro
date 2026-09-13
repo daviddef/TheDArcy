@@ -218,7 +218,7 @@ const anyDamaged = notes.some((n) => n.damaged);
           <p class="small" style="margin-top:.9rem"><span class="chip doc">registered</span>{" "}
             The <strong>{verified[0]}</strong> date above is confirmed by the Queensland civil
             register — registration <span class="mono">{verified[1]}</span>, {verified[2]}.
-            <a href={u("/sources")}> Sources →</a></p>
+            <a href={u("/sources/")}> Sources →</a></p>
         )}
         {corrections.length > 0 && (
           <div class="note" style="margin-top:1rem">
@@ -292,7 +292,7 @@ const anyDamaged = notes.some((n) => n.damaged);
           (p.spouses || []).filter((s) => s.name && !s.living).length === 0 && (
           <p class="small">No living connection is published for this person — either the tree
           records none, or everyone they connect to is alive and withheld from this build.
-          <a href={u("/method")}> The rule →</a></p>
+          <a href={u("/method/")}> The rule →</a></p>
         )}
       </div>
     </div>
@@ -306,20 +306,20 @@ const anyDamaged = notes.some((n) => n.damaged);
           ? <p class="small"><span class="chip sup">above a graft</span> This person reaches the
             family only through the <strong>{me.graft}</strong> join, which this archive has tested
             and rejected. They are published because the tree carries them and deleting a claim is
-            not the same as testing it. <a href={u("/how-far-back")}>The graft →</a></p>
+            not the same as testing it. <a href={u("/how-far-back/")}>The graft →</a></p>
           : recCount > 0
             ? <p class="small"><strong>{recCount}</strong> of the relationships drawn above{" "}
               {recCount === 1 ? "is" : "are"} written in a record this archive has read.{" "}
               {[...new Set(Object.values(me.rel || {}).map((v) => v[0]))].join("; ")}.</p>
             : <p class="small">No relationship on this page has been checked against a record.
               Everything here is what the family tree says, which is a claim and not a source.
-              <a href={u("/method")}> How claims are labelled →</a></p>}
+              <a href={u("/method/")}> How claims are labelled →</a></p>}
 
         <p class="small" style="margin-top:.7rem">
           <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
         {p.ancestor && (
           <p class="small" style="margin-top:.5rem">
-            <a href={u("/direct-line")}>See this generation on the spine →</a></p>
+            <a href={u("/direct-line/")}>See this generation on the spine →</a></p>
         )}
       </div>
 
@@ -328,7 +328,7 @@ const anyDamaged = notes.some((n) => n.damaged);
           <h3>Others of the same name</h3>
           <p class="small">This family reuses forenames relentlessly. <strong>These are different
           people, kept apart on purpose rather than merged into one.</strong>
-          <a href={u("/name")}> Why →</a></p>
+          <a href={u("/name/")}> Why →</a></p>
           <ul style="margin:.6rem 0 0">
             {sameName.map((o) => (
               <li class="small" style="margin-top:.3rem">
@@ -401,14 +401,14 @@ const anyDamaged = notes.some((n) => n.damaged);
       </ul>
       <p class="small">These are the citations the family tree carries. Where this archive has
       checked one against the original, it says so on the relevant page.
-      <a href={u("/method")}> Method →</a></p>
+      <a href={u("/method/")}> Method →</a></p>
     </section>
   )}
 
   <section class="blk" style="border-bottom:0">
-    <p class="small"><a href={u("/people")}>← All {people.length} people</a> ·
-      <a href={u("/families")}>The families</a> ·
-      <a href={u("/direct-line")}>The direct line</a> ·
-      <a href={u("/method")}>How claims are labelled</a></p>
+    <p class="small"><a href={u("/people/")}>← All {people.length} people</a> ·
+      <a href={u("/families/")}>The families</a> ·
+      <a href={u("/direct-line/")}>The direct line</a> ·
+      <a href={u("/method/")}>How claims are labelled</a></p>
   </section>
 </Base>

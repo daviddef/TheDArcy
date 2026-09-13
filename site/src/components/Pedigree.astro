@@ -153,7 +153,7 @@ const dt = (o) => lifeOf(o);
             {recorded === 1 ? "is" : "are"} written in a record this archive has read; the
             other {all.length - recorded} come from the family tree and{" "}
             {all.length - recorded === 1 ? "has" : "have"} not been tested.</>}
-      {" "}<a href={u("/method")}>How claims are labelled →</a>
+      {" "}<a href={u("/method/")}>How claims are labelled →</a>
     </p>
 
     {grafted > 0 && (
@@ -161,7 +161,7 @@ const dt = (o) => lifeOf(o);
       tested the join they hang from and rejected it — the D'Arcys of Hornby Castle are unevidenced,
       the Sneyds of Keele Hall disproved. The people are drawn because the tree carries them, and
       struck through because nothing attaches them to this family.
-      {" "}<a href={u("/how-far-back")}>Both grafts, in full →</a></p>
+      {" "}<a href={u("/how-far-back/")}>Both grafts, in full →</a></p>
     )}
 
     {dupKids.length > 0 && (
@@ -173,7 +173,7 @@ const dt = (o) => lifeOf(o);
     {dupSibs.length > 0 && (
       <p class="warn"><strong>More than one sibling here carries the same name</strong> — {dupSibs.join(", ")}.
       They are drawn separately. This archive does not merge records on a name.
-      {" "}<a href={u("/name")}>Why →</a></p>
+      {" "}<a href={u("/name/")}>Why →</a></p>
     )}
   </figcaption>
 </figure>

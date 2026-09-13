@@ -37,7 +37,7 @@ const context = (src) => WHERE.find(([re]) => re.test(src));
       <strong>This person is not in the family tree.</strong> They are here because this archive
       read a document that names them, and a name in a record is evidence whether or not the person
       is a relative. Nothing on this page is inferred — every line below is what a source says.
-      <a href={u("/who")}>Everyone else met this way →</a>
+      <a href={u("/who/")}>Everyone else met this way →</a>
     </div>
   </section>
 
@@ -65,7 +65,7 @@ const context = (src) => WHERE.find(([re]) => re.test(src));
       <h2>Others carrying the name {p.surname}</h2>
       <p class="small">Filed together because they share a surname. <strong>A shared surname is not
       a relationship</strong> — these are kept apart rather than merged.
-      <a href={u("/name")}>Why →</a></p>
+      <a href={u("/name/")}>Why →</a></p>
       <div class="grid three" style="margin-top:1rem">
         {others.map((o) => (
           <a class="cardlink" href={u(`/who/${o.slug}`)}>
@@ -79,9 +79,9 @@ const context = (src) => WHERE.find(([re]) => re.test(src));
 
   <section class="blk" style="border-bottom:0">
     <p class="small">
-      <a href={u("/who")}>← Every person named</a> ·
+      <a href={u("/who/")}>← Every person named</a> ·
       <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>In the register →</a> ·
-      <a href={u("/search")}>Search the archive →</a> ·
-      <a href={u("/people")}>The family tree →</a></p>
+      <a href={u("/search/")}>Search the archive →</a> ·
+      <a href={u("/people/")}>The family tree →</a></p>
   </section>
 </Base>

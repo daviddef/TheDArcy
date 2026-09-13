@@ -12,14 +12,14 @@ const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCa
   dek="The people this archive met in documents and never had anywhere to put: witnesses, constables, surgeons, convicts, clerks and comrades. They are in the record, and leaving them out would be editing it.">
 
   <section class="blk">
-    <p class="lede">Two pages on this site already list people. <a href={u("/people")}>The People</a>
-    is the <em>family tree</em> — {`473`} of them. <a href={u("/register")}>The register</a> is the
+    <p class="lede">Two pages on this site already list people. <a href={u("/people/")}>The People</a>
+    is the <em>family tree</em> — {`473`} of them. <a href={u("/register/")}>The register</a> is the
     raw catch, one row per source line. Neither gives a page to the man who found a body in Victoria
     Park in 1902, or to the six soldiers who gave six different answers about one death at Pozières.</p>
 
     <p class="dek" style="margin-top:1rem">There are <strong>{d.counts.named}</strong> people named in
     records this archive has read. <strong>{d.counts.withTreePage}</strong> of them are relatives and
-    already have a dossier under <a href={u("/people")}>The People</a>. The other
+    already have a dossier under <a href={u("/people/")}>The People</a>. The other
     <strong>{d.counts.ownPage}</strong> are not in this family at all — and they get a page here.</p>
 
     <div class="note" style="margin-top:1.3rem">
@@ -28,7 +28,7 @@ const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCa
       was buried. Constable Moroney is the reason we know what was in a dead man's pockets. A convict
       called John Wells is the reason we know a major of the 39th shipped his dinner service to New
       South Wales. Cut them out and you are left with assertions.
-      <a href={u("/register")}>The register →</a>
+      <a href={u("/register/")}>The register →</a>
     </div>
   </section>
 
@@ -41,7 +41,7 @@ const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCa
              border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
     <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{people.length} people</p>
     <p class="small" style="margin-top:.5rem">Looking for a relative instead?
-      <a href={u("/search")}>Search the whole archive →</a></p>
+      <a href={u("/search/")}>Search the whole archive →</a></p>
   </section>
 
   <section class="blk" style="border-bottom:0">

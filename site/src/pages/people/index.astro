@@ -43,16 +43,16 @@ const surnames = [...new Set(people.map((p) => p.family).filter(Boolean))].sort(
     <p class="dek" style="margin-top:.9rem">A further <strong>{withheld}</strong> people who would
     otherwise be listed here are living, and do not appear in this build at all: not hidden, not
     gated, not present in the output. Across the whole family tree the rule withholds
-    <strong>2,034</strong>. <a href={u("/method")}>The rule, and how to invoke it →</a></p>
+    <strong>2,034</strong>. <a href={u("/method/")}>The rule, and how to invoke it →</a></p>
     <p class="dek" style="margin-top:.9rem">This page is the <em>tree's</em> people. For every named
     individual this archive has met anywhere — including people who are not relatives at all, and
-    with the source printed beside each one — see <a href={u("/register")}>the register</a>.</p>
+    with the source printed beside each one — see <a href={u("/register/")}>the register</a>.</p>
     <p class="dek" style="margin-top:.9rem">Every one of these pages now opens with a
     <strong>pedigree chart</strong>, and the border down the left of each card says how that
     relationship is known: solid where a record this archive has read writes it down, dotted where
     only the family tree asserts it, struck through where it hangs above a graft the archive has
     rejected. <strong>Of the 473 charts, 19 contain a single solid edge.</strong> That is not a
-    defect in the drawing. <a href={u("/method")}>How claims are labelled →</a></p>
+    defect in the drawing. <a href={u("/method/")}>How claims are labelled →</a></p>
   </section>
 
   <section class="blk" id="finder">
@@ -71,7 +71,7 @@ const surnames = [...new Set(people.map((p) => p.family).filter(Boolean))].sort(
     <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{people.length} people</p>
     <p class="small" id="nohits" hidden>Nothing matches that. Spelling in this family moves about —
       try <em>Darcy</em> as well as <em>D'Arcy</em>, or <em>Snead</em> as well as <em>Sneyd</em>.
-      <a href={u("/name")}>Why →</a></p>
+      <a href={u("/name/")}>Why →</a></p>
   </section>
 
   {order.map((k) => (

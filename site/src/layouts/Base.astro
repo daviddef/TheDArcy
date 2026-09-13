@@ -14,6 +14,7 @@ const nav = [
                 ["/berkeley", "Berkeley, Gloucestershire"],
                 ["/sanigers", "The Sanigers of the Vale"],
                 ["/saniger-line", "Six Generations at Berkeley"],
+                ["/thomas-sinegar", "Thomas Sinegar — a Brother?"],
                 ["/saniger-place", "Saniger Is a Place"],
                 ["/berkeley-woman", "Hannah Was a Berkeley Woman"],
                 ["/behind-the-paywall", "Behind the Paywall"],
@@ -42,7 +43,7 @@ const nav = [
                 ["/sources", "Sources"]]],
   ["The work", [["/searched", "What Has Been Read"], ["/coverage", "What the Indexes Hold"], ["/changes", "What Changed"],
                 ["/errands", "Errands"], ["/open-questions", "Open Questions"],
-                ["/what-we-got-wrong", "What We Got Wrong"], ["/method", "Method"]]],
+                ["/corrections", "What We Got Wrong"], ["/method", "Method"]]],
 ];
 const here = Astro.url.pathname.replace(/\/$/, "");
 const on = (h) => here === u(h).replace(/\/$/, "");
@@ -74,7 +75,7 @@ const on = (h) => here === u(h).replace(/\/$/, "");
           </div>
         </details>
       ))}
-      <a class="findbtn" href={u("/search")} aria-label="Search the archive">Search</a>
+      <a class="findbtn" href={u("/search/")} aria-label="Search the archive">Search</a>
     </nav>
   </div>
   <div class="drawer" id="drawer" hidden>
@@ -105,13 +106,13 @@ const on = (h) => here === u(h).replace(/\/$/, "");
     Portsmouth and, if the pedigree holds, Hornby in the North Riding of Yorkshire. Every claim
     carries its confidence, or is marked as unproven. Living people are excluded from this build.</p>
     <p class="foot">One of six archives kept to this method — the others are
-      <a href={u("/the-other-archives")}>Defranceski, Falco, Lerena, Blažević and Booyzen</a>.
+      <a href={u("/the-other-archives/")}>Defranceski, Falco, Lerena, Blažević and Booyzen</a>.
       This one joins them through a marriage in the present generation, which is not published
       because the people in it are alive.</p>
     <p class="foot dim">Built {new Date().getFullYear()} ·
-      <a href={u("/sources")}>Sources</a> ·
-      <a href={u("/method")}>Method</a> ·
-      <a href={u("/open-questions")}>Open questions</a> ·
+      <a href={u("/sources/")}>Sources</a> ·
+      <a href={u("/method/")}>Method</a> ·
+      <a href={u("/open-questions/")}>Open questions</a> ·
       Corrections are the most valuable thing you can send</p>
   </div>
 </footer>
