@@ -44,6 +44,24 @@ import d from "../data/george-pitt.json";
     </div>
   </Blk>
 
+  <section class="blk">
+    <div class="lab">Searched, and not there</div>
+    <h2 style="margin-top:.4rem">{d.maria.head}</h2>
+    <p class="lede">{d.maria.lede}</p>
+    <ol class="dek" style="margin-top:1.2rem">
+      {d.maria.steps.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
+    </ol>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>One candidate, tested and rejected.</strong> {d.maria.excluded}
+    </div>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.maria.verdict}</strong>
+      <span class="chip doc">coverage established</span>
+      <br /><br />
+      {d.maria.next} <a href={u("/errands")}>On the queue →</a>
+    </div>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>{d.wives.head}</h2>
     <p class="lede"><strong>First.</strong> {d.wives.first}</p>
