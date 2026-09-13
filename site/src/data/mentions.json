@@ -156,7 +156,7 @@
 },
 {
 "path": "/errands",
-"snippet": "…and sometimes a relationship. Context → notes/letters/2026-09-medway-archives.md 13 Where Arthur Hartley Sneyd is commemorated Free, quick, and this archive simply cannot reach it Commonwealth War Graves Commission · free, two minutes The a…",
+"snippet": "…and sometimes a relationship. Context → notes/letters/2026-09-medway-archives.md 14 Where Arthur Hartley Sneyd is commemorated Free, quick, and this archive simply cannot reach it Commonwealth War Graves Commission · free, two minutes The a…",
 "title": "Errands"
 },
 {
@@ -299,7 +299,7 @@
 "catherine-margaret-mulcahy": [
 {
 "path": "/errands",
-"snippet": "…which the site states as fact and has never seen. Then Richard Atkinson of Limerick, and Catherine Margaret Mulcahy of Cork, whose parents are unknown. Context → blocked by Cloudflare, 13 September 2026 04 PROB 11/1991/312 — the will of John Mad…",
+"snippet": "…which the site states as fact and has never seen. Then Richard Atkinson of Limerick, and Catherine Margaret Mulcahy of Cork, whose parents are unknown. Context → blocked by Cloudflare, 13 September 2026 05 PROB 11/1991/312 — the will of John Mad…",
 "title": "Errands"
 },
 {
@@ -626,7 +626,13 @@
 ],
 "ellen-morris": [],
 "ellen-regan": [],
-"ellen-wakefield": [],
+"ellen-wakefield": [
+{
+"path": "/searched",
+"snippet": "…is unmeasured, so this is an absence from a partial transcript rather than a finding. No Ellen Wakefield of the right age appears in either county. → FreeCEN — Staffordshire, control test found nothing 13 Sep 2026 Searched: Whether 18…",
+"title": "What Has Been Read"
+}
+],
 "emily-grace-sneyd": [
 {
 "path": "/sneyd",
@@ -738,7 +744,7 @@
 },
 {
 "path": "/errands",
-"snippet": "…cked here, twice. Context → requests/cwgc-arthur-hartley-sneyd.md 14 The generation above Francis Murdoch The branch the archive has most neglected ScotlandsPeople · credits, a login The Ayrshire Murdochs are a quarter of the tested de…",
+"snippet": "…cked here, twice. Context → requests/cwgc-arthur-hartley-sneyd.md 15 The generation above Francis Murdoch The branch the archive has most neglected ScotlandsPeople · credits, a login The Ayrshire Murdochs are a quarter of the tested de…",
 "title": "Errands"
 },
 {
@@ -1235,6 +1241,11 @@
 "title": "What changed"
 },
 {
+"path": "/chew-magna",
+"snippet": "…them born in Gloucestershire. The class is right. William Saniger is a journeyman smith. James Wakefield is a journeyman mason. These are the same kind of household in the same kind of street. And why it is not a finding. Nothing yet…",
+"title": "Chew Magna"
+},
+{
 "path": "/searched",
 "snippet": "…, with the register scan. The ship GENERAL HEWITT, Brisbane, 16 December 1854, 394 souls. James Wakefield 48, a MASON — matching the 1841 census's “Mason Journeyman” — with Hannah 48, Jabez 11, Zillah 8 and Ephraim 5; Hiram 16 a plumbe…",
 "title": "What Has Been Read"
@@ -1473,6 +1484,11 @@
 "path": "/how-far-back",
 "snippet": "…on Hannah Saniger b. 23 Jul 1805 Berkeley Langford Family Site · FamilySearch Family Tree John Saniger b. 15 May 1769 Berkeley Guthrie Web Site · FamilySearch Family Tree Thomas Saniger b. 23 Aug 1744 christened Berkeley Saniger Web…",
 "title": "How Far Back"
+},
+{
+"path": "/chew-magna",
+"snippet": "…same time. The family tree says Hannah was born at Berkeley on 23 July 1805, daughter of John Saniger who died there in 1824. The 1841 census says she was not born in Gloucestershire, and Berkeley is in Gloucestershire. Those two s…",
+"title": "Chew Magna"
 },
 {
 "path": "/searched",
@@ -1860,7 +1876,13 @@
 "title": "How Far Back"
 }
 ],
-"martha-wakefield": [],
+"martha-wakefield": [
+{
+"path": "/searched",
+"snippet": "…ep 2026 Searched: The three Wakefield daughters who did not sail in 1854 Eliza, Ellen and Martha Wakefield, born Bristol 1832–1836, are not identifiable in the 1851 census, and neither is their father. FreeCEN does hold 1851 Bristol — a…",
+"title": "What Has Been Read"
+}
+],
 "mary-abbot": [
 {
 "path": "/open-questions",
@@ -1973,7 +1995,7 @@
 },
 {
 "path": "/errands",
-"snippet": "…king what to do. The queue, in order of what would change most 01 GRO birth certificate — Miriam Wakefield, Jun quarter 1840, Bristol, vol 11 page 183 THE CHEAPEST DECISIVE DOCUMENT ON THIS SITE General Register Office, gro.gov.uk (an a…",
+"snippet": "…s site in one line. Context → found 13 September 2026, FreeCEN 02 GRO birth certificate — Miriam Wakefield, Jun quarter 1840, Bristol, vol 11 page 183 THE CHEAPEST DECISIVE DOCUMENT ON THIS SITE General Register Office, gro.gov.uk (an a…",
 "title": "Errands"
 },
 {
@@ -2185,7 +2207,7 @@
 },
 {
 "path": "/errands",
-"snippet": "…it. Context → identified 13 September 2026 09 PROB 11/1728/64 — the will of Major-General Robert D'Arcy THE PRIORITY The National Archives, Kew · about £3.50, digitised, download today His parentage is the largest open question on th…",
+"snippet": "…it. Context → identified 13 September 2026 10 PROB 11/1728/64 — the will of Major-General Robert D'Arcy THE PRIORITY The National Archives, Kew · about £3.50, digitised, download today His parentage is the largest open question on th…",
 "title": "Errands"
 },
 {
@@ -2829,8 +2851,13 @@
 "title": "How Far Back"
 },
 {
+"path": "/chew-magna",
+"snippet": "…nerations, all in east Bristol, none of them born in Gloucestershire. The class is right. William Saniger is a journeyman smith. James Wakefield is a journeyman mason. These are the same kind of household in the same kind of street. An…",
+"title": "Chew Magna"
+},
+{
 "path": "/searched",
-"snippet": "…anigers at all. Volume I holds fourteen, and six more than were extracted the first time: William Saniger of FROGPITT yeoman d. 17 Jan 1704; Edward Saniger of PEDINGTON and Mary his wife; and six neighbouring households styled “of Sani…",
+"snippet": "…XFORD ROAD, St Philip and Jacob — the parish next to St Paul, where the Wakefields lived. William Saniger, 27, journeyman smith, born SOMERSET, CHEW MAGNA; his wife Caroline, born Fishponds; and his mother ELIZABETH SANIGER, widow, 60,…",
 "title": "What Has Been Read"
 },
 {

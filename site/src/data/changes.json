@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "16 passes · 100 changes",
+ "eyebrow": "16 passes · 103 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -18,9 +18,12 @@
     "Tested how much of Portsea's register stands behind Joseph D'Arcy's 1780 baptism. Twenty-two months of it.",
     "Found Robert D'Arcy in the London Gazette of 19 July 1813, gazetted Colonel of the Royal Engineers.",
     "Rewrote /berkeley's conclusion, built /portsea and /bristol-chapels, and filed two more errors.",
-    "Re-ran the nationality audit. British evidence now outnumbers Australian for the first time: 107 to 96."
+    "Re-ran the nationality audit. British evidence now outnumbers Australian for the first time: 107 to 96.",
+    "Searched the 1851 census for Sanigers around Bristol and found a household at Oxford Road, St Philip and Jacob — the parish next to the Wakefields' — whose head and whose widowed mother were both born at CHEW MAGNA, SOMERSET.",
+    "Control-tested Chew Magna in FreeREG: two Smith entries in twenty-one years against a hundred at Walcot. The transcript is a fragment, so the parish cannot be searched from here.",
+    "Built /chew-magna and put the register at the top of the errand list."
    ],
-   "found": "The family's name is a hillside above the Severn where the swans were, and the archive's oldest English record survives because it falls inside a two-year window nobody had measured."
+   "found": "The family's name is a hillside above the Severn where the swans were; the archive's oldest English record survives inside a two-year window nobody had measured; and Hannah Saniger's birthplace has, for the first time, a county and a parish worth the fare to Taunton."
   },
   {
    "when": "13 September 2026",

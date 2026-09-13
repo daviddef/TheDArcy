@@ -9,6 +9,30 @@
  ],
  "rows": [
   {
+   "src": "FreeCEN — Gloucestershire and Somerset, 1851",
+   "what": "Where the Sanigers of Bristol came from",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "A Saniger household at OXFORD ROAD, St Philip and Jacob — the parish next to St Paul, where the Wakefields lived. William Saniger, 27, journeyman smith, born SOMERSET, CHEW MAGNA; his wife Caroline, born Fishponds; and his mother ELIZABETH SANIGER, widow, 60, born SOMERSET, CHEW MAGNA. A Somerset parish, a neighbouring street, the right generation and the right trade — the first answer that meets every constraint the 1841 census imposes.",
+   "href": "/chew-magna"
+  },
+  {
+   "src": "FreeREG — Somerset, control test on Chew Magna",
+   "what": "Whether Chew Magna can be searched for Sanigers at all",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "It cannot. Three forenames of Smith across Somerset 1795–1815 return 943 entries from over a hundred parishes, and exactly TWO of them are Chew Magna — against a hundred at Walcot and sixty-nine at Bath, in a parish of some 1,800 people. The transcript is a fragment, so the absence of Sanigers there is not evidence of anything. The only Somerset Saniger in the window is a marriage at Walcot, Edmund Liddall and Rachel Saniger, 8 June 1819.",
+   "href": "/chew-magna"
+  },
+  {
+   "src": "FreeCEN — Gloucestershire and Somerset, 1851",
+   "what": "The three Wakefield daughters who did not sail in 1854",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Eliza, Ellen and Martha Wakefield, born Bristol 1832–1836, are not identifiable in the 1851 census, and neither is their father. FreeCEN does hold 1851 Bristol — a control on William Smith returns twelve Bristol entries for that year — but the depth of that holding is unmeasured, so this is an absence from a partial transcript rather than a finding. No Ellen Wakefield of the right age appears in either county.",
+   "href": "/general-hewitt"
+  },
+  {
    "src": "TNA Discovery — the whole catalogue, not one collection",
    "what": "Everything filed under the name Saniger, in any archive",
    "when": "13 Sep 2026",

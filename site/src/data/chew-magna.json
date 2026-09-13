@@ -1,0 +1,30 @@
+{
+ "searched": "13 September 2026",
+ "household": {
+  "census": "1851, Gloucestershire, Clifton district, enumeration district 1u — St Philip and Jacob Out, Bristol · HO107/1954, folio 562, page 30, schedule 102",
+  "address": "Oxford Road",
+  "rows": [
+   ["SANIGER", "William", "Head", "Married", 27, "Smith Journeyman", "Somerset", "CHEW MAGNA"],
+   ["SANIGER", "Caroline", "Wife", "Married", 28, "", "Gloucestershire", "Fishponds"],
+   ["SANIGER", "Elizabeth", "Mother", "WIDOW", 60, "", "Somerset", "CHEW MAGNA"]
+  ]
+ },
+ "why": [
+  ["The county is right, and it is the only thing the 1841 census will tell us.", "At Drivers Fields in 1841 the enumerator ticked Hannah Wakefield as NOT born in Gloucestershire, and ticked Lyddya Sinegar, aged seventy, the same way. Somerset is the county on the other side of the river."],
+  ["The parish is next door.", "St Philip and Jacob adjoins St Paul, where the Wakefields were living in 1841 and where Miriam was born in 1840. These are neighbouring Bristol parishes, not distant towns."],
+  ["The generation is right.", "Elizabeth Saniger is sixty in 1851, so born about 1791. Lyddya Sinegar is seventy in 1841, so born about 1771. Hannah is thirty-five in 1841, so born about 1806. Three Saniger women of three generations, all in east Bristol, none of them born in Gloucestershire."],
+  ["The class is right.", "William Saniger is a journeyman smith. James Wakefield is a journeyman mason. These are the same kind of household in the same kind of street."]
+ ],
+ "against": [
+  "Nothing yet joins Elizabeth Saniger of Chew Magna to Hannah Saniger of Drivers Fields. They are not shown to be sisters, cousins or anything else.",
+  "Saniger is not a rare name in the Bristol region, and the reconstitution already found 81 Gloucestershire households of it.",
+  "Chew Magna is eight miles from Bristol, and eight miles is a long way to assume."
+ ],
+ "coverage": {
+  "test": "Three forenames of SMITH across Somerset for the twenty-one years 1795–1815.",
+  "rows": [["William Smith", 271, 85, 1], ["Mary Smith", 371, 115, 1], ["John Smith", 301, 97, 0]],
+  "verdict": "943 Smith entries across 21 years and 100-odd Somerset parishes. Chew Magna accounts for TWO of them. Walcot has a hundred; Bath sixty-nine; Midsomer Norton thirty-eight. Chew Magna had roughly 1,800 people in 1801 and should be producing dozens.",
+  "so": "FreeREG's Chew Magna transcript is a fragment. Searching it for Sanigers and finding none proves precisely nothing — which is why this page reports a place to look rather than a result."
+ },
+ "found": "No Saniger at Chew Magna in FreeREG's Somerset holdings, in any spelling, between 1780 and 1840. The only Somerset Saniger in that window is a marriage at Walcot: Edmund Liddall and Rachel Saniger, 8 June 1819."
+}
