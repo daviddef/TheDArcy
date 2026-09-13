@@ -158,6 +158,7 @@ export const OWN = [
 /* Errors inherited from the family tree and corrected here. Kept separate,
    because they are somebody else's mistakes and the distinction matters. */
 export const INHERITED = [
+  ["John Saniger died on 10 March 1824 at Berkeley", "Buried at Berkeley St Mary the Virgin on 16 January 1825, aged 55. The tree is ten months early; the age confirms the 1769 birth it gives him.", "/behind-the-paywall"],
   ["Samuel Sneyd died on 20 September 1856 at No 3, Well St, Hanley", "He was buried on 23 September 1855, aged 77, of 91 Well St — and the only Samuel Sneyd death registered in England and Wales between 1854 and 1858 is the September quarter of 1855 at Stoke. The year is wrong and so is the house number.", "/sneyds"],
   ["The Sneyds descend from Ralph Sneyd of Keele Hall", "Disproved from the Madeley register: the 1742 baptism names the father as William, and Ralph was eighteen.", "/how-far-back"],
   ["Robert D'Arcy was born in 1751 in North Yorkshire", "The 1751 is arithmetic from an age on a burial register, and nothing places him in Yorkshire.", "/hornby"],

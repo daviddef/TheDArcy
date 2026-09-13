@@ -342,6 +342,28 @@ rec("Hannah Saniger", "married JAMES WAKEFIELD at Bristol, 17 OCTOBER 1831 \u00b
 FMPB = "record \u00b7 England Births & Baptisms 1538-1975, Berkeley (FindMyPast)"
 rec("Daniel Saniger", "baptised at Berkeley 21 November 1821 \u00b7 father EDWARD Saniger, mother KITURA \u2014 from the stretch of the Berkeley register FreeREG does not reach", FMPB, FMP_L)
 
+
+# --- FindMyPast: Portsea, and Berkeley after 1677 --------------------------
+HGS = "record \u00b7 Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)"
+FMP_L2 = "https://www.findmypast.com.au/"
+rec("Robert D'Arcy", "married JEAN WARD at PORTSEA ST MARY, 21 JUNE 1779 \u00b7 the marriage this archive has carried on a family tree since it began, nine months before their son Joseph was christened in the same church", HGS, FMP_L2)
+rec("Jean Ward", "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779", HGS, FMP_L2)
+rec("Joseph D'Arcy", "baptised Portsea St Mary 19 March 1780, SON \u00b7 father ROBERT, mother JEAN \u2014 the Hampshire Genealogical Society's transcription, independent of FreeREG's", HGS, FMP_L2)
+
+BKY = "record \u00b7 Berkeley St Mary the Virgin, after 1677 (FindMyPast \u2014 England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)"
+for n, says in [
+    ("Thomas Saniger", "baptised at Berkeley 23 AUGUST 1744, father THOMAS Saniger \u00b7 the tree gives the same day"),
+    ("Thomas Saniger", "married CATHERINE COTTON at Berkeley, 10 APRIL 1769 \u00b7 a name this archive never had, and the mother of John"),
+    ("Catherine Cotton", "married Thomas Saniger at Berkeley, 10 April 1769"),
+    ("John Saniger", "baptised at Berkeley 18 MAY 1769, father THO'S Saniger \u00b7 the tree gives his birth as 15 May 1769"),
+    ("Thomas Saniger", "buried at Berkeley St Mary the Virgin, 24 JANUARY 1819, AGED 75"),
+    ("John Saniger", "buried at Berkeley St Mary the Virgin, 16 JANUARY 1825, AGED 55 \u00b7 the tree says 10 March 1824, ten months early"),
+    ("William Saniger", "baptised at Berkeley 6 SEPTEMBER 1801, father JOHN Saniger \u00b7 Hannah's brother"),
+    ("John Saniger", "baptised at Berkeley 18 SEPTEMBER 1803, father JNO Saniger \u00b7 Hannah's brother"),
+    ("Thomas Saniger", "baptised at Berkeley 3 JULY 1808, father JOHN Saniger \u00b7 Hannah's brother"),
+]:
+    rec(n, says, BKY, FMP_L2)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

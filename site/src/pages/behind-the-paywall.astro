@@ -1,0 +1,114 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/fmp.json";
+---
+<Base
+  title="Behind the paywall"
+  eyebrow={`FindMyPast · ${d.found}`}
+  dek="A marriage this archive had never found, and four generations it had called untestable. All of it was one subscription away, and none of it was ever missing.">
+
+  <section class="blk">
+    <p class="lede">Two of this archive's oldest walls came down in an afternoon, and neither was a
+    wall. <a href={u("/coverage")}>The coverage page</a> had measured every free index honestly and
+    concluded that certain records could not be reached. They could be reached. They cost money.</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Hampshire Marriages · Hampshire Genealogical Society</div>
+    <h2 style="margin-top:.4rem">Robert D'Arcy married Jean Ward</h2>
+
+    <p class="lede">{d.darcy.marriage.line}.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.darcy.marriage.means}</strong>
+      <span class="chip doc">documented</span>
+    </div>
+
+    <p style="margin-top:1.2rem">{d.darcy.baptism}</p>
+
+    <p class="dek" style="margin-top:1.1rem">Put beside what the archive already holds, the shape of
+    a life appears: married at Portsea in June 1779, a son christened there in March 1780, a daughter
+    married at Chatham in 1806 with that son signing as witness, a colonelcy gazetted in 1813, and a
+    burial at Chatham in May 1827 aged seventy-six. <a href={u("/chatham")}>Chatham →</a> ·
+    <a href={u("/hornby")}>The Hornby claim →</a></p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">And the null that is now a real null</div>
+    <h2 style="margin-top:.4rem">Joseph had no brothers or sisters at Portsea</h2>
+
+    <p><strong>Test:</strong> {d.darcy.coverage.test} <strong>Result:</strong>
+    {d.darcy.coverage.result}</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.darcy.coverage.verdict}</strong>
+      <span class="chip doc">coverage established</span>
+      <br /><br />
+      {d.darcy.coverage.careful} <span class="chip inf">a parish, not a life</span>
+      <br /><br />
+      <a href={u("/portsea")}>The page that said this could not be tested →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Berkeley St Mary the Virgin, after 1677</div>
+    <h2 style="margin-top:.4rem">The generations that were never untestable</h2>
+
+    <p class="lede">{d.saniger.note}</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Who</th><th class="m">Event</th><th class="m">Date</th><th>Parish</th><th>What it names</th></tr></thead>
+        <tbody>
+          {d.saniger.rows.map(([who, ev, when, par, names, note]) => (
+            <tr>
+              <td><strong>{who}</strong><div class="small" style="color:var(--ink-2)">{note}</div></td>
+              <td class="m small">{ev}</td>
+              <td class="m">{when}</td>
+              <td class="small">{par}</td>
+              <td><strong>{names}</strong></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.saniger.verdict}</strong> <span class="chip doc">documented</span>
+      <a href={u("/berkeley")}>The page that said otherwise →</a>
+    </div>
+
+    <p style="margin-top:1.2rem"><strong>Hannah herself is still missing from the index.</strong>
+    {d.saniger.gap}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Inherited errors, corrected</div>
+    <h2 style="margin-top:.4rem">Two things the tree had wrong</h2>
+    <div class="scroll" style="margin-top:1.1rem">
+      <table>
+        <thead><tr><th>The tree says</th><th>The register says</th></tr></thead>
+        <tbody>
+          {d.wrongTree.map(([a, b]) => (<tr><td class="small">{a}</td><td><strong>{b}</strong></td></tr>))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What this says about everything else here</h2>
+    <p class="lede">This archive has been careful about coverage and careless about one word. It
+    measured what the free indexes hold, correctly, and then let <em>not reachable from here</em>
+    become <em>not there</em>. Those are different sentences and only one of them is about the past.</p>
+    <div class="note" style="margin-top:1.3rem">
+      Every null on <a href={u("/searched")}>the list of what has been read</a> was measured against
+      free sources. Some of them are real. Some of them are a statement about a budget, and until
+      today there was no way for a reader to tell which. That is now marked at the top of
+      <a href={u("/coverage")}>the coverage page</a>, and it is the most useful thing learned all day.
+    </div>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/berkeley-woman")}>The other thing the subscription answered →</a> ·
+      <a href={u("/what-we-got-wrong")}>The errors →</a></p>
+  </section>
+</Base>

@@ -9,6 +9,38 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — Hampshire Marriages (Hampshire Genealogical Society)",
+   "what": "The marriage of Robert D'Arcy and Jean Ward",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "PORTSEA ST MARY, 21 JUNE 1779. The archive has carried this marriage on a family tree since it began, with nothing behind it. Their son Joseph was baptised in the same church nine months later, on 19 March 1780.",
+   "href": "/behind-the-paywall"
+  },
+  {
+   "src": "FindMyPast — Hampshire Baptisms, control-tested",
+   "what": "Whether Joseph D'Arcy had brothers and sisters at Portsea",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "He did not, and this is now a real null. John Smith at Portsea returns St Mary baptisms continuously for 1770, 1771, 1772, 1774, 1775, 1779, 1782, 1785, 1786, 1788, 1789, 1790, 1791 and 1792 — where FreeREG holds twenty-two months. Searching that window for every D'Arcy spelling returns Joseph and nobody else. Robert and Jean baptised one child at this parish; children born while the regiment was elsewhere are a separate question.",
+   "href": "/portsea"
+  },
+  {
+   "src": "FindMyPast — Berkeley St Mary the Virgin, after 1677",
+   "what": "The five Saniger generations this archive called untestable",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "All testable, and all confirmed. Thomas Saniger baptised 23 August 1744, father Thomas — the tree's exact day. Thomas married CATHERINE COTTON at Berkeley 10 April 1769, a name never held here. John baptised 18 May 1769, father Thomas — the tree gives his birth as 15 May. Thomas buried 24 January 1819 aged 75; John buried 16 January 1825 aged 55. And John's children appear at Berkeley in 1801, 1803 and 1808, with the tree putting Hannah's birth in July 1805 exactly between them.",
+   "href": "/behind-the-paywall"
+  },
+  {
+   "src": "FindMyPast — England Births & Baptisms, Berkeley",
+   "what": "Hannah Saniger's own baptism",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Not in the index, and this is a gap rather than an absence. Her father's other children are there — William 1801, John 1803, Thomas 1808 — so the register was being kept and he was using it. FamilySearch's transcription of Berkeley is not complete, and the original book is what will settle her.",
+   "href": "/behind-the-paywall"
+  },
+  {
    "src": "FindMyPast — 1851 England, Wales & Scotland Census",
    "what": "Where Hannah Saniger was born",
    "when": "13 Sep 2026",

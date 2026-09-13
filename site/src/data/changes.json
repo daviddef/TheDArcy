@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "18 passes · 126 changes",
+ "eyebrow": "18 passes · 132 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -15,7 +15,13 @@
     "Established that Berkeley's register CAN be searched after 1677, with parents named. The five untestable Saniger generations were behind a paywall, not behind a gap.",
     "Marked /chew-magna and /bristol-chapels as wrong at the top, and left them up.",
     "Filed the two largest errors this archive has made: an edifice on a single 1841 tick, and the habit of turning “not reachable from here” into “not there”.",
-    "Added a warning to the top of /coverage saying what every null on it is really measuring."
+    "Added a warning to the top of /coverage saying what every null on it is really measuring.",
+    "Found the marriage of Robert D'Arcy and Jean Ward — Portsea St Mary, 21 June 1779 — which this archive has carried on a family tree since it began.",
+    "Established by control test that FindMyPast covers Portsea St Mary continuously from 1770 to 1792, so Joseph D'Arcy having no brothers or sisters baptised there is now a real result instead of an artefact.",
+    "Tested every Saniger generation the archive had called untestable. Thomas baptised 1744 father Thomas; Thomas married CATHERINE COTTON at Berkeley in April 1769; John baptised five weeks later; Thomas buried 1819 aged 75; John buried 1825 aged 55.",
+    "Found John Saniger's other children at Berkeley — 1801, 1803, 1808 — with the tree putting Hannah's birth in July 1805 exactly between them.",
+    "Corrected the tree's death date for John Saniger by ten months.",
+    "Built /behind-the-paywall."
    ],
    "found": "The answer was the one the family tree gave before any of this started, and it was one search away the whole time behind a subscription this archive had never bought."
   },

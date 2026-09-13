@@ -1,10 +1,10 @@
 {
-"entries": 693,
+"entries": 705,
 "distinct": 541,
-"records": 220,
+"records": 232,
 "tree": 473,
 "grafted": 98,
-"linked": 693,
+"linked": 705,
 "surnames": 184,
 "groups": [
 {
@@ -1149,7 +1149,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 85,
+"n": 87,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1222,6 +1222,13 @@
 "kind": "record"
 },
 {
+"name": "Joseph D'Arcy",
+"says": "baptised Portsea St Mary 19 March 1780, SON · father ROBERT, mother JEAN — the Hampshire Genealogical Society's transcription, independent of FreeREG's",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Lindsay Atkinson D'Arcy",
 "says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
 "source": "record · Trove, Australian newspapers",
@@ -1261,6 +1268,13 @@
 "says": "“Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh” · Office of Ordnance, Corps of Royal Engineers, gazetted 19 July 1813",
 "source": "record · The London Gazette, issue 16755, 19 July 1813",
 "link": "https://www.thegazette.co.uk/London/issue/16755/page/1431",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "married JEAN WARD at PORTSEA ST MARY, 21 JUNE 1779 · the marriage this archive has carried on a family tree since it began, nine months before their son Joseph was christened in the same church",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -2043,7 +2057,7 @@
 },
 {
 "surname": "SANIGER",
-"n": 30,
+"n": 38,
 "rows": [
 {
 "name": "Caroline Saniger",
@@ -2186,6 +2200,27 @@
 "kind": "record"
 },
 {
+"name": "John Saniger",
+"says": "baptised at Berkeley 18 MAY 1769, father THO'S Saniger · the tree gives his birth as 15 May 1769",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "John Saniger",
+"says": "buried at Berkeley St Mary the Virgin, 16 JANUARY 1825, AGED 55 · the tree says 10 March 1824, ten months early",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "John Saniger",
+"says": "baptised at Berkeley 18 SEPTEMBER 1803, father JNO Saniger · Hannah's brother",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Maurice Saniger",
 "says": "and Jane his wife · a suit brought by John Hardinge, Easter term 1731",
 "source": "record · Gloucestershire Archives D2957/41 (catalogue description)",
@@ -2214,10 +2249,45 @@
 "kind": "record"
 },
 {
+"name": "Thomas Saniger",
+"says": "baptised at Berkeley 23 AUGUST 1744, father THOMAS Saniger · the tree gives the same day",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Thomas Saniger",
+"says": "married CATHERINE COTTON at Berkeley, 10 APRIL 1769 · a name this archive never had, and the mother of John",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Thomas Saniger",
+"says": "buried at Berkeley St Mary the Virgin, 24 JANUARY 1819, AGED 75",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Thomas Saniger",
+"says": "baptised at Berkeley 3 JULY 1808, father JOHN Saniger · Hannah's brother",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "William Saniger",
 "says": "head, aged 27, SMITH JOURNEYMAN, of Oxford Road · born CHEW MAGNA, SOMERSET",
 "source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
 "link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "William Saniger",
+"says": "baptised at Berkeley 6 SEPTEMBER 1801, father JOHN Saniger · Hannah's brother",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -3126,6 +3196,54 @@
 ]
 },
 {
+"surname": "WARD",
+"n": 6,
+"rows": [
+{
+"name": "Jean Ward",
+"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Frances Ward",
+"says": "1656–1698 · Baden-Wuerttemberg, Germany",
+"source": "family tree · above the Keele graft",
+"link": "/people/frances-ward",
+"kind": "tree"
+},
+{
+"name": "Jean Ward",
+"says": "1754–1823 · South Leith, Midlothian, Scotland",
+"source": "family tree · direct line",
+"link": "/people/jean-ward",
+"kind": "tree"
+},
+{
+"name": "Joseph Ward",
+"says": "b. 1725",
+"source": "family tree · direct line",
+"link": "/people/joseph-ward",
+"kind": "tree"
+},
+{
+"name": "William Ward",
+"says": "b. 1700",
+"source": "family tree · direct line",
+"link": "/people/william-ward",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "CREECH",
 "n": 5,
 "rows": [
@@ -3249,47 +3367,6 @@
 ]
 },
 {
-"surname": "WARD",
-"n": 5,
-"rows": [
-{
-"name": "Jean Ward",
-"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Frances Ward",
-"says": "1656–1698 · Baden-Wuerttemberg, Germany",
-"source": "family tree · above the Keele graft",
-"link": "/people/frances-ward",
-"kind": "tree"
-},
-{
-"name": "Jean Ward",
-"says": "1754–1823 · South Leith, Midlothian, Scotland",
-"source": "family tree · direct line",
-"link": "/people/jean-ward",
-"kind": "tree"
-},
-{
-"name": "Joseph Ward",
-"says": "b. 1725",
-"source": "family tree · direct line",
-"link": "/people/joseph-ward",
-"kind": "tree"
-},
-{
-"name": "William Ward",
-"says": "b. 1700",
-"source": "family tree · direct line",
-"link": "/people/william-ward",
-"kind": "tree"
-}
-]
-},
-{
 "surname": "ANNECCHINO",
 "n": 4,
 "rows": [
@@ -3319,6 +3396,40 @@
 "says": "no dates, no place — a name and a position in the tree",
 "source": "family tree · direct line",
 "link": "/people/giacomo-annecchino",
+"kind": "tree"
+}
+]
+},
+{
+"surname": "COTTON",
+"n": 4,
+"rows": [
+{
+"name": "Catherine Cotton",
+"says": "married Thomas Saniger at Berkeley, 10 April 1769",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine Cotton",
+"says": "1746–1778 · Berkeley, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/catherine-cotton",
+"kind": "tree"
+},
+{
+"name": "Edward Cotton",
+"says": "1687–1722 · Ashton Under Hill, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/edward-cotton-1687",
+"kind": "tree"
+},
+{
+"name": "Edward Cotton",
+"says": "1716–1787 · Ashton Underhill, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/edward-cotton-1716",
 "kind": "tree"
 }
 ]
@@ -3577,33 +3688,6 @@
 "says": "b. 1717 · Miller · Castle Church, Stafford, England",
 "source": "family tree · direct line",
 "link": "/people/samuel-blackbourne",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "COTTON",
-"n": 3,
-"rows": [
-{
-"name": "Catherine Cotton",
-"says": "1746–1778 · Berkeley, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/catherine-cotton",
-"kind": "tree"
-},
-{
-"name": "Edward Cotton",
-"says": "1687–1722 · Ashton Under Hill, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/edward-cotton-1687",
-"kind": "tree"
-},
-{
-"name": "Edward Cotton",
-"says": "1716–1787 · Ashton Underhill, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/edward-cotton-1716",
 "kind": "tree"
 }
 ]
