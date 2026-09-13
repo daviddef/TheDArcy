@@ -1,103 +1,23 @@
 {
- "note": "The families this archive follows, and the two grafts that carry almost all its claimed depth. State is derived, not assigned by hand: a line is DRAWN where this archive publishes a chart of it, DRAWABLE where there are enough people to chart and no chart yet, and a ROUTE where there are too few. Where most of a family's people are recorded without a proved join to anyone else, it is a WEB, because that is what the evidence is.",
+ "note": "A tree with invented joins in it is worse than no tree, so none of these has any. Each line is drawn in the form its own evidence supports. This archive's difficulty is unusual: almost all of its claimed depth rests on two grafts, and one of them is disproved.",
  "rows": [
-  {
-   "name": "Sneyd",
-   "ours": false,
-   "state": "drawable",
-   "depth": "116 people, 112 published",
-   "what": "Ivy miriam sneyd's people, of boulia and brisbane.",
-   "gap": "No chart of this family has been drawn — only a page about them.",
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
   {
    "name": "D'Arcy",
    "ours": true,
    "state": "drawn",
-   "depth": "83 people, 67 published",
-   "what": "The name the archive carries.",
+   "depth": "83 people, 67 published — 13 surnames in the archive around them",
+   "what": "The name the archive carries, and one thread of thirteen. An officer of the 39th Regiment was ordered to New South Wales: a child was born at Chatham in 1825 and the next at Parramatta in 1827, and those two birthplaces are the only proof of the crossing there is.",
    "gap": null,
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Atwell",
-   "ours": false,
-   "state": "drawable",
-   "depth": "36 people, 28 published",
-   "what": "Barbara 'goldie' atwell's people, out of somerset.",
-   "gap": "No chart of this family has been drawn — only a page about them.",
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Murdoch",
-   "ours": false,
-   "state": "drawable",
-   "depth": "30 people, 19 published",
-   "what": "Audrey dell murdoch's people, out of ayrshire.",
-   "gap": "No chart of this family has been drawn — only a page about them.",
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Atkinson",
-   "ours": false,
-   "state": "drawable",
-   "depth": "22 people, 22 published",
-   "what": "Ida kathleen atkinson's people, out of limerick.",
-   "gap": null,
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Wakefield",
-   "ours": false,
-   "state": "route",
-   "depth": "9 people, 9 published",
-   "what": "Miriam wakefield of bristol.",
-   "gap": null,
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Rossiter",
-   "ours": false,
-   "state": "route",
-   "depth": "9 people, 9 published",
-   "what": "Maria rossiter of long ashton, somerset.",
-   "gap": null,
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Blum",
-   "ours": false,
-   "state": "route",
-   "depth": "8 people, 8 published",
-   "what": "Martha blum's people, out of germany by way of rockhampton.",
-   "gap": null,
-   "href": "/families/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Creech",
-   "ours": false,
-   "state": "route",
-   "depth": "5 people, 5 published",
-   "what": "Jane creech of limerick.",
-   "gap": null,
-   "href": "/families/",
-   "cta": "Open the family →"
+   "href": "/direct-line/",
+   "cta": "The spine, generation by generation →"
   },
   {
    "name": "The Hornby descent",
    "ours": false,
    "state": "drawable",
-   "depth": "15 generations claimed, 6 documented",
-   "what": "The family tree runs this line back to a Yorkshire castle and an earldom. Six of the fifteen generations are documented to the day; the rest hang on a single unevidenced link.",
-   "gap": "A legitimate male descent from the 4th Earl is excluded by the peerage record. 71 people reach this archive only through it.",
+   "depth": "15 generations claimed · 6 documented to the day",
+   "what": "The family tree runs this line back through a Major-General, a man said to have been born in St James's Palace, the Earls of Holderness, and finally Hornby Castle in the 1560s. Six of the fifteen generations stand up. The rest hang on one link.",
+   "gap": "A legitimate male descent from the 4th Earl is excluded by the peerage record, so the claim reduces to an illegitimate son nobody has found. 71 people reach this archive only through it.",
    "href": "/hornby/",
    "cta": "Where it stops being evidence →"
   },
@@ -105,12 +25,59 @@
    "name": "The Keele descent",
    "ours": false,
    "state": "closed",
-   "depth": "27 people, all of them behind one link",
-   "what": "Followed, looked for in the right registers, and found to be wrong.",
-   "gap": "Kept on the site because a disproved claim is worth more published than deleted.",
+   "depth": "27 people, every one of them behind a single link",
+   "what": "Followed into the right registers, and found to be wrong. Not unproven — disproved.",
+   "gap": "Kept on the site, because a disproved claim published is worth more than a disproved claim deleted. Remove both grafts and 145 people remain, reaching the middle of the eighteenth century.",
    "href": "/how-far-back/",
-   "cta": "How the grafts were tested →"
+   "cta": "How both grafts were tested →"
+  },
+  {
+   "name": "Saniger",
+   "ours": false,
+   "state": "drawable",
+   "depth": "The archive's oldest claim — a Gloucestershire yeoman, 1654",
+   "what": "Hannah Saniger's people, out of Berkeley and Chew Magna. This is the deepest thing the archive holds that does not depend on a graft.",
+   "gap": "No chart has been drawn. The line is argued in prose across four pages instead.",
+   "href": "/saniger-line/",
+   "cta": "The Saniger line →"
+  },
+  {
+   "name": "Sneyd",
+   "ours": false,
+   "state": "drawable",
+   "depth": "116 people, 112 published — the largest family here after the D'Arcys",
+   "what": "Ivy Miriam Sneyd's people, of Boulia and Brisbane, and a weaver at Hanley above them. Samuel Charles Sneyd was a soldier, a constable and a gaol governor in one life.",
+   "gap": "No chart of this family has been drawn — only pages about them.",
+   "href": "/sneyds/",
+   "cta": "The Sneyds →"
+  },
+  {
+   "name": "Wakefield",
+   "ours": false,
+   "state": "drawable",
+   "depth": "Out of Bristol, into Queensland",
+   "what": "Miriam Wakefield sailed on the General Hewitt in 1854 and gave sworn evidence at an inquest in 1902 — one of the few women in this archive who speaks in her own words.",
+   "gap": "No chart of this family has been drawn.",
+   "href": "/wakefields/",
+   "cta": "The Wakefields →"
   }
  ],
- "close": "Remove both grafts and 145 people remain, reaching the middle of the eighteenth century. That is the archive's real floor."
+ "close": "The form is checked, not asserted: a line counts as drawn only where this archive actually publishes a chart of it. Five rows across the seven archives claimed to be drawn on the strength of a page title alone, and were demoted when the check went in.",
+ "doors": [
+  [
+   "/families/",
+   "All thirteen families",
+   "Every surname the archive holds, with what each brought and where it came from."
+  ],
+  [
+   "/how-far-back/",
+   "How far back, honestly",
+   "What the tree claims, what this archive accepts, and the difference between them."
+  ],
+  [
+   "/people/",
+   "The people",
+   "473 of them, each carrying the confidence it rests on."
+  ]
+ ]
 }
