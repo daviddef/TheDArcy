@@ -1,0 +1,61 @@
+{
+ "note": "The declaration behind tools/check_living.py. It deliberately contains NO list of living people: this tree holds over two thousand of them, and a machine-readable directory of living relatives committed to a public repository would be exactly the disclosure the rule exists to prevent. The names are read at check time from the gitignored GEDCOM. What is written down here is the part that needs human judgement and version control — the exceptions, and why each one is an exception.",
+ "rule": "Living people are not published in this archive at all — not hidden, not gated, absent from the build. build_site_data.py applies the rule once, at the boundary between the research data and the site, so that nobody can be living on one page and dead on another. Somebody is published only when the LATEST year they could possibly have been born is more than a hundred years ago.",
+ "namesakes": [
+  {
+   "phrase": "Richard Smith",
+   "why": "The Richard Smith on /how-far-back is a private of the Mounted Police who, with Sergeant Robert Mulcahy, shot a bushranger near the Vale of Clwydd in 1837. There is also a living Richard Smith in the tree. Commonest name in England, two centuries apart.",
+   "living": false
+  },
+  {
+   "phrase": "Anne Corbett",
+   "why": "Appears only inside ELIZA ANNE CORBETT SNEYD, born Queensland 1873, where a person-page list truncates the name with an ellipsis before the surname — so the check cannot see the longer name it sits in. Not a person in her own right on these pages.",
+   "living": false
+  },
+  {
+   "phrase": "Graham D'Arcy Anderson",
+   "why": "A ten-year-old in the 1871 census household of Thomas and Josephine Anderson. D'ARCY is his middle name, not his surname. Distinct from the living Graham D'Arcy declared below.",
+   "living": false
+  }
+ ],
+ "named": [
+  {
+   "phrase": "Gayle D'Arcy",
+   "why": "Credited as the author of the first part of Ken D'Arcy's eulogy, which this archive calls its single richest source. She is quoted by name on /murdoch and /brisbane and credited on /sources.",
+   "living": true
+  },
+  {
+   "phrase": "Ian D'Arcy",
+   "why": "Credited as an author of Ken D'Arcy's eulogy on /sources and /documents, and named as the subject of a Pimlico State High School photograph used to corroborate the Townsville years.",
+   "living": true
+  },
+  {
+   "phrase": "Graham D'Arcy",
+   "why": "Credited as an author of Ken D'Arcy's eulogy on /sources, and named as a son on /people/kenneth-lindsay-d-arcy.",
+   "living": true
+  },
+  {
+   "phrase": "Ian Kenneth D'Arcy",
+   "why": "Named on /the-other-archives and /corrections in the sentence that explains why this archive exists at all — the marriage that joins the D'Arcy and Falco archives.",
+   "living": true
+  },
+  {
+   "phrase": "Giuseppina Falco",
+   "why": "Named in the same sentence, for the same reason.",
+   "living": true
+  }
+ ],
+ "namedNote": "These five are living people whom this archive names on purpose, as sources and as provenance, rather than as tree records — none of them has a person page, a birth year or a birthplace here. Every one of them is a deliberate editorial decision and every one is reversible in a single line: delete the entry and the build will refuse to ship until the name comes off the page. That is the point of writing them down rather than letting the guard quietly pass.",
+ "allow": [],
+ "allowFiles": [],
+ "released": [],
+ "releasedNote": "When somebody named here dies, record the death in the tree and re-export. The guard follows the tree; it is never unlocked by editing code.",
+ "counts": {
+  "tree": 15643,
+  "living": 2034,
+  "published": 13609,
+  "phrases": 2016,
+  "pages": 683
+ },
+ "countsNote": "Written by tools/check_living.py on every build. Never type these numbers into a page."
+}

@@ -12,6 +12,7 @@ import dossiers from "../data/dossiers.json";
 import searched from "../data/searched.json";
 import changes from "../data/changes.json";
 import graves from "../data/graves.json";
+import living from "../data/living.json";
 
 const published = people.length;
 const redacted = ancestors.filter((a) => a.living).length;
@@ -19,7 +20,7 @@ const surnames = families.filter((f) => f.published > 0).length;
 
 const NUMBERS = [
   [reg.entries, "entries in the register", `${reg.records} of them from a document this archive has read; the other ${reg.tree} from the family tree`, "/register"],
-  [published, "people published", "and 2,034 living people absent from this build entirely", "/people"],
+  [published, "people published", `and ${living.counts.living.toLocaleString()} living people absent from this build entirely`, "/people"],
   [dossiers.counts.ownPage, "people met in records who are not relatives", "witnesses, constables, a surgeon, convicts, comrades — each with a page", "/who"],
   [searched.rows.length, "sources read", `${searched.rows.filter((r) => r.outcome === "null").length} of them read and found empty, which is knowledge`, "/searched"],
   [19, "pedigree charts with a solid edge", "out of 473. A family tree is a set of assertions until somebody opens a document", "/method"],
@@ -253,6 +254,6 @@ const more = [
     <a href={u("/open-questions/")}>The queue, in priority order, and the nine letters drafted →</a></p>
     <p class="small" style="margin-top:1.2rem">Of the direct ancestors, <strong>{redacted}</strong> are
     living and excluded from this build entirely — not hidden, not gated, not present in the output.
-    Across the whole tree the rule withholds 2,034 people. <a href={u("/method/")}>The rule →</a></p>
+    Across the whole tree the rule withholds {living.counts.living.toLocaleString()} people. <a href={u("/method/")}>The rule →</a></p>
   </section>
 </Base>

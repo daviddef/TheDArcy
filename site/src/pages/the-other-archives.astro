@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import living from "../data/living.json";
 
 const SIBS = [
   ["The Defranceski Archive", "https://daviddef.github.io/TheDefranceski/",
@@ -81,7 +82,7 @@ const SIBS = [
       exactly who these people are — it walked their ancestry to build every page on this site. It
       withholds them because they are alive, and it withholds them <em>consistently</em>: not just
       their own entries but their names wherever they would appear as somebody's spouse, parent or
-      child. Across the whole tree the rule holds back <strong>2,034</strong> people.
+      child. Across the whole tree the rule holds back <strong>{living.counts.living.toLocaleString()}</strong> people.
       <a href={u("/method/")}>How the rule works, and how to invoke it →</a>
     </Note>
   </section>

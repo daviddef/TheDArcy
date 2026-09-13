@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4323",
-    "build": "astro build && npm run sitemap && npm run check:living && npm run check:kit",
+    "build": "astro build && npm run sitemap && npm run check:living && npm run check:living:tree && npm run check:kit",
     "preview": "astro preview --port 4323",
     "sitemap": "python3 ../tools/sitemap.py",
     "check:kit": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkarchive.py --dist dist",
-    "check:living": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data"
+    "check:living": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data",
+    "check:living:tree": "python3 ../tools/check_living.py --dist dist"
   },
   "dependencies": {
     "@daviddef/archive-kit": "github:daviddef/TheArchiveKit",

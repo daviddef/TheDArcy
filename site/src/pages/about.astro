@@ -10,12 +10,13 @@ import dossiers from "../data/dossiers.json";
 import searched from "../data/searched.json";
 import audit from "../data/audit.json";
 import { people } from "../lib/people.js";
+import living from "../data/living.json";
 
 /* Every number on this page is computed. A page that says what the archive
    holds must not be the one page whose figures go stale. */
 const out = (o) => searched.rows.filter((r) => r.outcome === o).length;
 const HOLDS = [
-  [people.length, "people published", "of a tree that also holds 2,034 living people, none of them here", "/people"],
+  [people.length, "people published", `of a tree that also holds ${living.counts.living.toLocaleString()} living people, none of them here`, "/people"],
   [dossiers.counts.named, "named in records", `including ${dossiers.counts.ownPage} who are not relatives at all`, "/who"],
   [reg.entries, "register entries", `${reg.records} from a document, ${reg.tree} from the tree`, "/register"],
   [searched.rows.length, "sources read", `${out("yield")} yields, ${out("null")} nulls, ${out("blocked")} unreachable`, "/searched"],
@@ -46,7 +47,7 @@ const HOLDS = [
       {nOwn} so far, each with what caused it. Corrections are never made silently.
       <a href={u("/corrections/")}>The errors →</a></li>
       <li style="margin-bottom:.6rem"><strong>Living people are not published at all.</strong> Not
-      hidden, not gated — absent from the build. The rule withholds 2,034 people across the tree,
+      hidden, not gated — absent from the build. The rule withholds {living.counts.living.toLocaleString()} people across the tree,
       including their names wherever they would appear as somebody's spouse, parent or child.
       <a href={u("/method/")}>How the rule works →</a></li>
       <li><strong>A better story is not a reason.</strong> Two aristocratic descents have been taken

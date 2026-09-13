@@ -5,6 +5,7 @@ import Scroll from "../components/Scroll.astro";
 import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
 import { u } from "../lib/url.js";
 import ancestors from "../data/ancestors.json";
+import living from "../data/living.json";
 const redacted = ancestors.filter((a) => a.living).length;
 ---
 <Base
@@ -102,18 +103,44 @@ const redacted = ancestors.filter((a) => a.living).length;
     their own recorded events. A <em>recorded</em> birth is never overridden by inference, because an
     inference that made a living person look older would publish them. Where nothing whatever is
     known, the person is presumed living.</p>
-    <p style="margin-top:1rem">On this build the rule judges <strong>2,034</strong> of the 15,643
+    <p style="margin-top:1rem">On this build the rule judges <strong>{living.counts.living.toLocaleString()}</strong> of the {living.counts.tree.toLocaleString()}
     people in the tree to be living, and removes <strong>{redacted}</strong> from the ancestor set.
     Where a living person sits between two published generations, the line is shown as continuing but
     the person is not named — and a living spouse, parent or child is not named on anybody else's
     page either.</p>
     <p style="margin-top:1rem"><strong>A removal request is honoured within days</strong>, without
     argument and without requiring a reason.</p>
+
+    <h3 style="margin-top:1.8rem">And the rule is checked, not just stated</h3>
+    <p>A rule applied in code is only as good as the proof that it held. Every build now runs
+    <span class="mono">tools/check_living.py</span>, which reads the
+    <strong>built HTML</strong> — the only place a leak can actually be seen — and refuses to ship if
+    any of the <strong>{living.counts.phrases.toLocaleString()}</strong> name phrases belonging to a
+    living person appears on a page. It fails the build rather than warning, and it fails the build
+    if it cannot read the tree at all, because a guard that cannot check has not passed.</p>
+
+    <p style="margin-top:1rem"><strong>It does not work from a list of living people, and that is
+    deliberate.</strong> A file naming two thousand living relatives, committed to a public
+    repository, would be exactly the disclosure this rule exists to prevent. The names are read at
+    check time from the GEDCOM, which is never committed. What <em>is</em> committed is the
+    declaration: the policy, and the exceptions.</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>There are exceptions, and they are written down rather than waved through.</strong>
+      Three are <em>namesakes</em> — a Private Richard Smith of 1837, a middle name inside a longer
+      one — who are not living people at all. Five are living people this archive
+      <strong>names on purpose</strong>: the three children of Ken D'Arcy, credited as the authors of
+      the eulogy that is this archive's richest single source, and the couple named in the sentence
+      that explains why the archive exists. None of the five has a person page, a birth year or a
+      birthplace here. Each is one line in
+      <span class="mono">site/src/data/living.json</span>, and deleting that line makes the build
+      refuse to ship until the name comes off the page.
+    </div>
   </section>
 
   <section class="blk">
     <h2>Where the data comes from, and what that means</h2>
-    <p>The spine of this archive is a MyHeritage family tree of 15,643 people, exported to GEDCOM and
+    <p>The spine of this archive is a MyHeritage family tree of {living.counts.tree.toLocaleString()} people, exported to GEDCOM and
     parsed here. That is a <em>starting point and not an authority.</em> An online tree records what
     somebody believed; this archive's job is to say which of those beliefs survive contact with a
     document.</p>

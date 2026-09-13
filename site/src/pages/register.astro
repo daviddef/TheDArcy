@@ -4,6 +4,7 @@ import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import reg from "../data/register.json";
+import living from "../data/living.json";
 
 /* The raw catch. Every named individual this archive has met, from any source,
    with the source beside each one — including the people who are only in the
@@ -56,7 +57,7 @@ const pct = Math.round((reg.records / reg.entries) * 100);
         this family by anything</em>. <a href={u("/how-far-back/")}>Both grafts, set out in full →</a></li>
 
         <li><strong>Living people are not here at all.</strong> Not hidden, not gated — absent from
-        the build. The rule withholds 2,034 people across the whole tree.
+        the build. The rule withholds {living.counts.living.toLocaleString()} people across the whole tree.
         <a href={u("/method/")}>How it works →</a></li>
       </ul>
     </Note>
