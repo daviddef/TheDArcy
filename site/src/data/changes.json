@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "17 passes · 114 changes",
+ "eyebrow": "17 passes · 118 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -17,7 +17,11 @@
     "Identified Chew Magna as a PECULIAR with its own probate jurisdiction, which changes where a Saniger will would be found.",
     "Control-tested Cheshire and Shropshire: the Audlem marriage and the Oswestry baptism the tree names cannot be tested, because neither place is transcribed. Cheshire returns two John Smiths in twenty years.",
     "Built /coverage — ten index holdings, measured rather than assumed.",
-    "Register now 210 records."
+    "Register now 210 records.",
+    "Found Elizabeth Sanigar at Battles Lane, Chew Magna, in the 1841 census — in a spade-maker's house, which is the trade Collinson said the parish still had. The Bristol clerk of 1851 was not mishearing the name of a parish.",
+    "Checked whether the twelve Bristol chapel registers can actually be read online. All twelve are digitised:false at Kew. Filed as an error, because this archive said the opposite the same morning.",
+    "Looked for a route to Portsea's register beyond FreeREG's two years and found none through Discovery.",
+    "Re-ran the 1851 search for the Wakefields. Still nothing, and still an absence from a partial transcript rather than a finding."
    ],
    "found": "Six of the ten index holdings measured are parishes the family tree names, and six of them are partial, empty or unreachable. An archive built on free indexes will systematically fail to test its own tree, and will mistake that failure for a finding unless it measures every time."
   },

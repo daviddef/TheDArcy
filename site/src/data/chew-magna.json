@@ -93,5 +93,71 @@
   "peculiar": "“The living of Chew is a peculiar.” A peculiar lay outside the bishop's ordinary jurisdiction and proved its own wills — so probate for Chew Magna people ran through the Peculiar of Chew, which the Somerset Heritage Centre records as a separate court down to 1787.",
   "null": "Collinson holds no Sanigers at Chew Magna, and that is not evidence of anything: he copies gentry monuments and benefactions, and a journeyman smith's family would not appear in either."
  },
- "correction": "This page first said Chew Magna lay eight miles from Bristol in a parish of roughly 1,800 people. Collinson, who was writing in 1791, says six miles and 830 inhabitants. Both of my figures were guesses dressed as facts, and they are corrected here rather than quietly replaced."
+ "correction": "This page first said Chew Magna lay eight miles from Bristol in a parish of roughly 1,800 people. Collinson, who was writing in 1791, says six miles and 830 inhabitants. Both of my figures were guesses dressed as facts, and they are corrected here rather than quietly replaced.",
+ "h1841": {
+  "census": "1841, Somerset, Chew district — Chew Magna, piece 938, book 6, folio 6, page 6",
+  "address": "Battles Lane",
+  "rows": [
+   [
+    "VEALE",
+    "Thomas",
+    "M",
+    55,
+    "Spade Maker",
+    "Somerset"
+   ],
+   [
+    "VEALE",
+    "Elizabeth",
+    "F",
+    50,
+    "",
+    "Somerset"
+   ],
+   [
+    "VEALE",
+    "George",
+    "M",
+    15,
+    "Spade Maker",
+    "Somerset"
+   ],
+   [
+    "VEALE",
+    "James",
+    "M",
+    12,
+    "",
+    "Somerset"
+   ],
+   [
+    "VEALE",
+    "Charles",
+    "M",
+    9,
+    "",
+    "Somerset"
+   ],
+   [
+    "PYKE",
+    "Harriet",
+    "F",
+    25,
+    "",
+    "Somerset"
+   ],
+   [
+    "SANIGAR",
+    "Elizabeth",
+    "F",
+    45,
+    "",
+    "Somerset"
+   ]
+  ],
+  "reading": "Ten years before Oxford Road, the same woman is in Chew Magna itself — in a spade-maker's house on Battles Lane, spelled SANIGAR. Her age moves from 45 to 60 across the decade, which is what 1841 ages do: that census rounded adults down to the nearest five.",
+  "collinson": "And Thomas Veale's trade is the one Collinson names. Writing fifty years earlier he said Chew Magna's “only manufacture are a few edge-tools and stockings”. A spade-maker on Battles Lane in 1841 is the last of the edge-tools.",
+  "means": "This is what makes the 1851 birthplace worth acting on. A clerk in Bristol writing “Chew Magna” could have been mishearing something. He was not: the family is in the parish, under a spelling this archive already knows, ten years earlier."
+ },
+ "spellings": "The name is at Chew Magna in more than one form. Besides Elizabeth SANIGAR in 1841, the 1891 census finds a Julia SINEGAR living there — SINEGAR being the exact spelling the 1841 enumerator used for the seventy-year-old widow in the Wakefields' house at Drivers Fields."
 }

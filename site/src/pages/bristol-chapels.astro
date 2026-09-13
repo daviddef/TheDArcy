@@ -119,9 +119,9 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
       Bristol's parish registers exist, and they are filmed — but they are not in the free index, so
       nothing here can be ruled out by searching it. Any Bristol search from a desk has to be the
       chapels or nothing. <a href={u("/searched")}>What has actually been read →</a></li>
-      <li style="margin-bottom:.5rem"><strong>Twelve volumes, named and numbered.</strong> They are
-      digitised, and can be read without leaving the house. This is now a specific task rather than
-      an aspiration. <a href={u("/errands")}>On the queue →</a></li>
+      <li style="margin-bottom:.5rem"><strong>Twelve volumes, named and numbered — but not free.</strong>
+      {" "}{d.access} <a href={u("/errands")}>On the queue, with that correction →</a>
+      {" "}<a href={u("/what-we-got-wrong")}>Filed →</a></li>
       <li style="margin-bottom:.5rem"><strong>Broad Mead and Lewins Mead first.</strong> Broad Mead
       is the great Bristol Baptist congregation and its births run 1787–1817 in one volume
       (RG 4/2697); Lewins Mead's Presbyterian baptisms run 1718–1840 in another (RG 4/1830). Between

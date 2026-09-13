@@ -47,6 +47,38 @@ import d from "../data/chew-magna.json";
   </section>
 
   <section class="blk">
+    <div class="lab">{d.h1841.census}</div>
+    <h2 style="margin-top:.4rem">And ten years earlier, in the parish itself</h2>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Name</th><th class="m">Sex</th><th class="m">Age</th><th>Occupation</th><th>Born in county</th></tr></thead>
+        <tbody>
+          {d.h1841.rows.map(([sn, fn, sx, age, occ, cty]) => (
+            <tr style={sn === "SANIGAR" ? "background:var(--tint)" : ""}>
+              <td><strong>{fn}</strong> <span class="small" style="color:var(--ink-3)">{sn}</span></td>
+              <td class="m small">{sx}</td><td class="m">{age}</td>
+              <td class="small">{occ || "—"}</td><td class="small">{cty}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:.7rem">Address as written: <strong>{d.h1841.address}</strong>.</p>
+
+    <p style="margin-top:1.2rem">{d.h1841.reading}</p>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.h1841.means}</strong> <span class="chip doc">documented</span>
+      <br /><br />
+      {d.h1841.collinson}
+    </div>
+
+    <p class="small" style="margin-top:1.2rem">{d.spellings}
+      <a href={u("/drivers-fields")}>Lyddya Sinegar →</a></p>
+  </section>
+
+  <section class="blk">
     <div class="lab">Why it fits</div>
     <h2 style="margin-top:.4rem">Four constraints, and a parish that meets all of them</h2>
     <ol class="dek" style="margin-top:1rem">

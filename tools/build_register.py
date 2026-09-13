@@ -317,6 +317,10 @@ COLL = "record · Collinson, History and Antiquities of the County of Somerset (
 COLL_L = "https://archive.org/details/historyantiqutit02colluoft"
 rec("Chew Magna", "\u201ca large and populous parish \u2026 six miles south-west from Bristol \u2026 one hundred and seventy houses, and eight hundred and thirty inhabitants\u201d \u00b7 and \u201cin former days \u2026 a LARGE CLOTHING TOWN\u201d", COLL, COLL_L)
 
+
+C41 = "record \u00b7 1841 census, Chew Magna, Somerset \u2014 piece 938 book 6 folio 6 page 6"
+rec("Elizabeth Saniger", "aged 45, born Somerset \u00b7 at BATTLES LANE, CHEW MAGNA in 1841, in the house of Thomas Veale, spade maker \u2014 ten years before she appears at Oxford Road, Bristol", C41, "https://www.freecen.org.uk/")
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

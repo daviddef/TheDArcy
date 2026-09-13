@@ -463,12 +463,17 @@
 "says": "his mother, WIDOW, aged 60 · born CHEW MAGNA, SOMERSET — the first Saniger this archive has found with a birthplace outside Gloucestershire",
 "source": "record · 1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
 "link": "https://www.freecen.org.uk/"
+},
+{
+"says": "aged 45, born Somerset · at BATTLES LANE, CHEW MAGNA in 1841, in the house of Thomas Veale, spade maker — ten years before she appears at Oxford Road, Bristol",
+"source": "record · 1841 census, Chew Magna, Somerset — piece 938 book 6 folio 6 page 6",
+"link": "https://www.freecen.org.uk/"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "elizabeth-saniger",
-"n": 3
+"n": 4
 },
 "esther-saniger": {
 "name": "Esther Saniger",
@@ -1850,6 +1855,6 @@
 "named": 146,
 "withTreePage": 31,
 "ownPage": 115,
-"mentions": 210
+"mentions": 211
 }
 }

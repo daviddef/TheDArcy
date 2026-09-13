@@ -3,6 +3,14 @@
 export const OWN = [
   {
     when: "13 September 2026",
+    what: "Told the reader that the twelve Bristol chapel registers were “digitised, and can be read without leaving the house”.",
+    truth: "All twelve are marked DIGITISED: FALSE in The National Archives' own record details. RG 4 is published through commercial partners, so reading them needs a subscription or a visit.",
+    why: "I catalogued the pieces carefully — references, dates, denominations, all correct — and then wrote a sentence about access that I had not checked at all. The catalogue lists what a record IS; whether an image exists is a separate field, and I never looked at it until the next pass.",
+    lesson: "Finding a document and being able to read it are two different questions, and an errand list that confuses them wastes the reader's afternoon rather than mine.",
+    href: "/bristol-chapels",
+  },
+  {
+    when: "13 September 2026",
     what: "Published that Chew Magna lay eight miles from Bristol in a parish of roughly 1,800 people, hours after finding it.",
     truth: "Collinson, writing in 1791, gives “six miles south-west from Bristol … one hundred and seventy houses, and eight hundred and thirty inhabitants”.",
     why: "Both numbers were estimates I made while writing the page and did not mark as estimates. Neither was load-bearing, which is exactly why neither got checked — and one of them was propping up a coverage argument about how many register entries the parish should produce.",
