@@ -427,6 +427,13 @@ rec("Joseph Ward", "of South Leith, Midlothian · father of Jean, baptised there
 rec("Martha Garden", "of South Leith, Midlothian · mother of Jean Ward", SCO, FMP_L8)
 rec("George Pitt D'Arcy", "39TH FOOT, Peninsular War officers' roll, 1808 · the same regiment he commanded a detachment of aboard the convict ship England in 1826", "record · Peninsular War, British Army Officers 1808-1814 (RUSI, via FindMyPast)", FMP_L8)
 
+
+SCO2 = "record · Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)"
+FMP_L9 = "https://www.findmypast.com.au/"
+rec("Joseph Ward", "married MARTH[A] GAIRDEN at SOUTH LEITH, 27 OCTOBER 1747 · her father WILLIAM GAIRDEN — seven years before their daughter Jean was christened in the same parish", SCO2, FMP_L9)
+rec("Martha Garden", "married Joseph Ward at South Leith, 27 October 1747 · entered as MARTH GAIRDEN, daughter of WILLIAM GAIRDEN", SCO2, FMP_L9)
+rec("William Gairden", "of South Leith, Midlothian · named as Martha's father at her marriage in 1747 — the oldest Scot in this archive", SCO2, FMP_L9)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

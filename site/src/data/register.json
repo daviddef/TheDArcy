@@ -1,11 +1,11 @@
 {
-"entries": 732,
-"distinct": 543,
-"records": 259,
+"entries": 735,
+"distinct": 544,
+"records": 262,
 "tree": 473,
 "grafted": 98,
-"linked": 732,
-"surnames": 184,
+"linked": 735,
+"surnames": 185,
 "groups": [
 {
 "surname": "SNEYD",
@@ -3219,6 +3219,75 @@
 ]
 },
 {
+"surname": "WARD",
+"n": 9,
+"rows": [
+{
+"name": "Jean Ward",
+"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "baptised at SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 · father JOSEPH WARD, mother MARTHA GARDEN — the parish this archive had repeatedly reported as untranscribed",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Joseph Ward",
+"says": "of South Leith, Midlothian · father of Jean, baptised there 19 July 1754 — and the man her eldest son was named for",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Joseph Ward",
+"says": "married MARTH[A] GAIRDEN at SOUTH LEITH, 27 OCTOBER 1747 · her father WILLIAM GAIRDEN — seven years before their daughter Jean was christened in the same parish",
+"source": "record · Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Frances Ward",
+"says": "1656–1698 · Baden-Wuerttemberg, Germany",
+"source": "family tree · above the Keele graft",
+"link": "/people/frances-ward",
+"kind": "tree"
+},
+{
+"name": "Jean Ward",
+"says": "1754–1823 · South Leith, Midlothian, Scotland",
+"source": "family tree · direct line",
+"link": "/people/jean-ward",
+"kind": "tree"
+},
+{
+"name": "Joseph Ward",
+"says": "b. 1725",
+"source": "family tree · direct line",
+"link": "/people/joseph-ward",
+"kind": "tree"
+},
+{
+"name": "William Ward",
+"says": "b. 1700",
+"source": "family tree · direct line",
+"link": "/people/william-ward",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "BLUM",
 "n": 8,
 "rows": [
@@ -3276,68 +3345,6 @@
 "says": "b. 1897 · Queensland",
 "source": "family tree",
 "link": "/people/robert-blum",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "WARD",
-"n": 8,
-"rows": [
-{
-"name": "Jean Ward",
-"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Jean Ward",
-"says": "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779",
-"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Jean Ward",
-"says": "baptised at SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 · father JOSEPH WARD, mother MARTHA GARDEN — the parish this archive had repeatedly reported as untranscribed",
-"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Joseph Ward",
-"says": "of South Leith, Midlothian · father of Jean, baptised there 19 July 1754 — and the man her eldest son was named for",
-"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Frances Ward",
-"says": "1656–1698 · Baden-Wuerttemberg, Germany",
-"source": "family tree · above the Keele graft",
-"link": "/people/frances-ward",
-"kind": "tree"
-},
-{
-"name": "Jean Ward",
-"says": "1754–1823 · South Leith, Midlothian, Scotland",
-"source": "family tree · direct line",
-"link": "/people/jean-ward",
-"kind": "tree"
-},
-{
-"name": "Joseph Ward",
-"says": "b. 1725",
-"source": "family tree · direct line",
-"link": "/people/joseph-ward",
-"kind": "tree"
-},
-{
-"name": "William Ward",
-"says": "b. 1700",
-"source": "family tree · direct line",
-"link": "/people/william-ward",
 "kind": "tree"
 }
 ]
@@ -3705,6 +3712,40 @@
 ]
 },
 {
+"surname": "GARDEN",
+"n": 4,
+"rows": [
+{
+"name": "Martha Garden",
+"says": "of South Leith, Midlothian · mother of Jean Ward",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Martha Garden",
+"says": "married Joseph Ward at South Leith, 27 October 1747 · entered as MARTH GAIRDEN, daughter of WILLIAM GAIRDEN",
+"source": "record · Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Martha Garden",
+"says": "b. 1730 · Scotland",
+"source": "family tree · direct line",
+"link": "/people/martha-garden",
+"kind": "tree"
+},
+{
+"name": "William Garden",
+"says": "no dates, no place — a name and a position in the tree",
+"source": "family tree · direct line",
+"link": "/people/william-garden",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "JONES",
 "n": 4,
 "rows": [
@@ -3944,33 +3985,6 @@
 "says": "no dates, no place — a name and a position in the tree",
 "source": "family tree · above the Hornby graft",
 "link": "/people/frederick-i-of-denmark",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "GARDEN",
-"n": 3,
-"rows": [
-{
-"name": "Martha Garden",
-"says": "of South Leith, Midlothian · mother of Jean Ward",
-"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Martha Garden",
-"says": "b. 1730 · Scotland",
-"source": "family tree · direct line",
-"link": "/people/martha-garden",
-"kind": "tree"
-},
-{
-"name": "William Garden",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree · direct line",
-"link": "/people/william-garden",
 "kind": "tree"
 }
 ]
@@ -5022,6 +5036,19 @@
 "says": "died 27/06/1900 · mother: Hannah Saniger · father: James Wakefield",
 "source": "record · Queensland death index 1900/C/3322",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+}
+]
+},
+{
+"surname": "GAIRDEN",
+"n": 1,
+"rows": [
+{
+"name": "William Gairden",
+"says": "of South Leith, Midlothian · named as Martha's father at her marriage in 1747 — the oldest Scot in this archive",
+"source": "record · Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 }
 ]

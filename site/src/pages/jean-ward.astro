@@ -37,6 +37,32 @@ import d from "../data/jean-ward.json";
   </section>
 
   <section class="blk">
+    <div class="lab">{d.marriage.set}</div>
+    <h2 style="margin-top:.4rem">And her parents' marriage, seven years before</h2>
+
+    <p class="lede">{d.marriage.line}.</p>
+    <p style="margin-top:1rem">{d.marriage.means}</p>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:.9rem">
+      {d.marriage.chain.map(([who, ev, note]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong>{who}</strong></div>
+          <p class="small" style="margin-top:.25rem;color:var(--ink-2)">{ev}{note ? ` — ${note}` : ""}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>Five generations, from a Leith shipmaster's parish to a garrison church in Hampshire.</strong>
+      None of it was in this archive at breakfast.
+      <span class="chip doc">documented</span>
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">{d.cotton}
+      <a href={u("/saniger-line")}>The Sanigers →</a></p>
+  </section>
+
+  <section class="blk">
     <div class="lab">Peninsular War, British Army Officers 1808–1814</div>
     <h2 style="margin-top:.4rem">{d.george.head}</h2>
     <p class="lede">{d.george.body}</p>

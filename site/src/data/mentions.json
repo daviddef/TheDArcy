@@ -289,8 +289,13 @@
 "title": "What changed"
 },
 {
+"path": "/jean-ward",
+"snippet": "…o a garrison church in Hampshire. None of it was in this archive at breakfast. documented Catherine Cotton, by contrast, still goes nowhere. Searched across the whole of Gloucestershire for a birth between 1733 and 1757: she appears onl…",
+"title": "South Leith"
+},
+{
 "path": "/searched",
-"snippet": "…erent man. → FindMyPast — Berkeley St Mary the Virgin found nothing 13 Sep 2026 Searched: Catherine Cotton's origins No baptism for her at Berkeley. She appears in the parish only to marry Thomas Saniger there on 10 April 1769, and wher…",
+"snippet": "…sources FindMyPast — Gloucestershire, all collections found nothing 13 Sep 2026 Searched: Catherine Cotton's origins Nothing. Searched across the whole county for a birth between 1733 and 1757: she appears only to marry Thomas Saniger a…",
 "title": "What Has Been Read"
 },
 {
@@ -960,7 +965,7 @@
 },
 {
 "path": "/jean-ward",
-"snippet": "…on are what carry the identification. Peninsular War, British Army Officers 1808–1814 And George Pitt D'Arcy was in the Peninsula. The archive knows George Pitt D'Arcy as “Bt: Major 39th Foot” in the Chatham baptism register of March 1826…",
+"snippet": "…ther has yielded none. The Sanigers → Peninsular War, British Army Officers 1808–1814 And George Pitt D'Arcy was in the Peninsula. The archive knows George Pitt D'Arcy as “Bt: Major 39th Foot” in the Chatham baptism register of March 1826…",
 "title": "South Leith"
 },
 {
@@ -1459,7 +1464,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…Past — Scotland, Parish Births & Baptisms 1564-1929 found something 13 Sep 2026 Searched: Jean Ward's baptism at South Leith Found, with both parents. JEAN WARD, baptised SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 — father JOSEPH WARD…",
+"snippet": "…Past — Scotland, Parish Marriages & Banns 1561-1893 found something 13 Sep 2026 Searched: Jean Ward's parents JOSEPH WARD married MARTH[A] GAIRDEN at SOUTH LEITH on 27 OCTOBER 1747, and the entry names her father: WILLIAM GAIRDEN…",
 "title": "What Has Been Read"
 },
 {
@@ -1665,6 +1670,11 @@
 "title": "What changed"
 },
 {
+"path": "/jean-ward",
+"snippet": "…an Ward baptised South Leith, 19 July 1754 m. Robert D'Arcy Portsea St Mary, 21 June 1779 Joseph D'Arcy baptised Portsea, 19 March 1780 — named for his mother's father Five generations, from a Leith shipmaster's parish to a garrison…",
+"title": "South Leith"
+},
+{
 "path": "/australia",
 "snippet": "…its sons into three different corps. Joseph, and the Persian officers Lieutenant-Colonel Joseph D'Arcy (1780–1848), Royal Artillery, went to Persia in 1811 with Sir Gore Ouseley's mission to reform the Shah's army, and the Persian v…",
 "title": "Australia"
@@ -1725,6 +1735,11 @@
 }
 ],
 "joseph-ward": [
+{
+"path": "/changes",
+"snippet": "…outh Leith claim as an error, and built /jean-ward. Found Jean Ward's parents' marriage — Joseph Ward and Marth Gairden, South Leith, 27 October 1747 — which names her grandfather WILLIAM GAIRDEN and takes this archive five generat…",
+"title": "What changed"
+},
 {
 "path": "/jean-ward",
 "snippet": "…d son the maternal grandfather's name, and this is what that looks like from the outside. Joseph Ward and Martha Garden are an entire generation this archive did not have, and the first Scots in it with names from a record rather t…",
@@ -2785,6 +2800,11 @@
 "path": "/changes",
 "snippet": "…iam baptised there 12 October 1679, father William. Both match the tree to the day. Found Thomas Saniger's marriage to Catherine Cotton — and then failed to find Catherine anywhere else, which is the one new question this opened. Trac…",
 "title": "What changed"
+},
+{
+"path": "/jean-ward",
+"snippet": "…the whole of Gloucestershire for a birth between 1733 and 1757: she appears only to marry Thomas Saniger at Berkeley in April 1769. Two women married into this family in the same decade; one has just yielded three generations and the…",
+"title": "South Leith"
 },
 {
 "path": "/how-far-back",

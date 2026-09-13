@@ -31,5 +31,38 @@
   "body": "The archive knows George Pitt D'Arcy as “Bt: Major 39th Foot” in the Chatham baptism register of March 1826, and as the officer commanding the 39th detachment aboard the convict ship England a fortnight later. He is in the Peninsular War officers' roll for 1808, in the same regiment — the 39th Foot.",
   "means": "Sixteen years before the voyage, and a war this archive did not know he had fought. The 39th were at Talavera, Busaco, Albuera, the Pyrenees and Toulouse."
  },
- "closes": "Two of this site's longest-standing “cannot be reached” statements were wrong on the same afternoon. South Leith is indexed. The Berkeley register after 1677 is indexed. In both cases the archive had measured the free sources honestly and then quietly widened the conclusion from “not here” to “not anywhere”."
+ "closes": "Two of this site's longest-standing “cannot be reached” statements were wrong on the same afternoon. South Leith is indexed. The Berkeley register after 1677 is indexed. In both cases the archive had measured the free sources honestly and then quietly widened the conclusion from “not here” to “not anywhere”.",
+ "marriage": {
+  "set": "Scotland, Parish Marriages & Banns 1561-1893",
+  "line": "JOSEPH WARD married MARTH[A] GAIRDEN at SOUTH LEITH on 27 OCTOBER 1747 · her father WILLIAM GAIRDEN",
+  "means": "Seven years before Jean was christened in the same parish. It confirms her mother's surname in the spelling the Scots used — Gairden for Garden — and it gives a further generation: WILLIAM GAIRDEN, Jean Ward's maternal grandfather, and the oldest Scot this archive holds.",
+  "chain": [
+   [
+    "William Gairden",
+    "named as Martha's father in 1747",
+    "the deepest Scot here"
+   ],
+   [
+    "Martha Gairden (Garden) m. Joseph Ward",
+    "South Leith, 27 October 1747",
+    ""
+   ],
+   [
+    "Jean Ward",
+    "baptised South Leith, 19 July 1754",
+    ""
+   ],
+   [
+    "m. Robert D'Arcy",
+    "Portsea St Mary, 21 June 1779",
+    ""
+   ],
+   [
+    "Joseph D'Arcy",
+    "baptised Portsea, 19 March 1780",
+    "named for his mother's father"
+   ]
+  ]
+ },
+ "cotton": "Catherine Cotton, by contrast, still goes nowhere. Searched across the whole of Gloucestershire for a birth between 1733 and 1757: she appears only to marry Thomas Saniger at Berkeley in April 1769. Two women married into this family in the same decade; one has just yielded three generations and the other has yielded none."
 }

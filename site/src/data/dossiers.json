@@ -1285,6 +1285,21 @@
 "slug": "zillah-frederich-nee-wakefield",
 "n": 1
 },
+"william-gairden": {
+"name": "William Gairden",
+"surname": "GAIRDEN",
+"rows": [
+{
+"says": "of South Leith, Midlothian · named as Martha's father at her marriage in 1747 — the oldest Scot in this archive",
+"source": "record · Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "william-gairden",
+"n": 1
+},
 "robert-gamel": {
 "name": "Robert Gamel",
 "surname": "GAMEL",
@@ -1902,9 +1917,9 @@
 }
 },
 "counts": {
-"named": 156,
+"named": 157,
 "withTreePage": 38,
-"ownPage": 118,
-"mentions": 259
+"ownPage": 119,
+"mentions": 262
 }
 }
