@@ -463,6 +463,13 @@ TSM = "record · England Marriages 1538-1973 (FamilySearch index, free) — conf
 rec("Thomas Saniger", "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, entered as THOMAS SANIGRE · Hannah's brother, baptised Berkeley 3 July 1808 son of John", TSM, "https://www.familysearch.org/")
 rec("Martha Golding", "married Thomas Sanigre at Bristol, 24 August 1828 · mother of his eleven children", TSM, "https://www.familysearch.org/")
 
+
+SWJ = "record · Salisbury and Winchester Journal, 23 September 1805, p.3 (British Newspaper Archive)"
+BNA2 = "https://www.findmypast.com.au/search-newspapers"
+rec("George Pitt D'Arcy", "“Lately, Captain GEORGE D'ARCY, [of] the [—] foot, SON [of] LIEUT. COLONEL D'ARCY, [to] MISS LUDLAM, OF GUERNSEY” · the first record to make him anyone's son, and Robert D'Arcy had been gazetted Lieutenant-Colonel six months before", SWJ, BNA2)
+rec("Mary Ludlam", "of GUERNSEY · married Captain George D'Arcy, announced September 1805 — the Chatham baptism of 1811 gives Frederick Robert's mother as MARY", SWJ, BNA2)
+rec("George Pitt D'Arcy", "commanding a detachment of the 39th Regiment in Ireland · “under the command of Major D'Arcy”, British Press 6 March 1820 and Weekly Freeman's Journal 2 February 1822", "record · British and Irish newspapers, 1820 and 1822", BNA2)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

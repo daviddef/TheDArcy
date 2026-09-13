@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "18 passes · 181 changes",
+ "eyebrow": "18 passes · 186 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -70,7 +70,12 @@
     "Tried FamilySearch's full-text handwriting search for the 1797 Berkeley marriage. It covers Gloucestershire, but its marriage collection is built from diocesan bonds, and a couple marrying by banns leaves no bond. Three Saniger hits, none from 1797.",
     "Corrected /drivers-fields, which for months carried a section headed “Hannah was not born in Gloucestershire”, and /general-hewitt with it.",
     "Built /new-generations — sixteen documented people the family tree has never held, most of them women, most in the generation just above where the tree stops.",
-    "Rewrote the lesson at the top of /coverage: a control test proves a source covers a parish and proves nothing about whether your search string can reach the record."
+    "Rewrote the lesson at the top of /coverage: a control test proves a source covers a parish and proves nothing about whether your search string can reach the record.",
+    "Found George Pitt D'Arcy's first marriage in a Wiltshire newspaper of 23 September 1805: Captain George D'Arcy, SON OF LIEUT. COLONEL D'ARCY, to MISS LUDLAM OF GUERNSEY.",
+    "Noted that Robert D'Arcy was gazetted Lieutenant-Colonel on 1 March 1805 — six months before — so the rank in the notice is his to the month. It is the first record in this archive to make George Pitt D'Arcy anyone's son.",
+    "Placed him in Ireland with the 39th in 1820 and 1822 from two newspapers, which is the right country at nearly the right time for the Wicklow marriage the tree claims.",
+    "Failed to find that second marriage, and said so.",
+    "Built /george-pitt — the best-documented D'Arcy here, and until today he had no page."
    ],
    "found": "The document the archive had twice proved unreachable was one vowel away the whole time."
   },

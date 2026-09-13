@@ -1,0 +1,60 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import d from "../data/george-pitt.json";
+---
+<Base
+  title="Miss Ludlam of Guernsey"
+  eyebrow={`George Pitt D'Arcy · found ${d.found}`}
+  dek="A marriage notice of 1805 calls him the son of a Lieutenant-Colonel D'Arcy — and Robert D'Arcy had been gazetted to exactly that rank six months earlier.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <div class="lab">{d.notice.paper}</div>
+    <h2 style="margin-top:.4rem">The notice</h2>
+    <div class="note" style="border-left-width:3px;margin-top:1rem">
+      <strong style="font-size:1.1em">{d.notice.text}</strong>
+      <span class="chip doc">documented</span>
+    </div>
+    <p class="small" style="margin-top:1rem">{d.notice.also}</p>
+    <p class="small" style="margin-top:.6rem">{d.notice.ocr}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Why it matters</div>
+    <h2 style="margin-top:.4rem">Three things at once</h2>
+    <ol class="dek" style="margin-top:1rem">
+      {d.why.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
+    </ol>
+    <div class="note" style="margin-top:1.3rem">
+      <strong>And the honest limit.</strong> {d.caveat}
+      <span class="chip inf">a very strong identification</span>
+      <a href={u("/the-corps")}>Robert's career, and the 1805 promotion →</a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">What is on record</div>
+    <h2 style="margin-top:.4rem">A life in seven entries</h2>
+    <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.2rem">
+      {d.life.map(([when, what, src]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono small" style="color:var(--ink-3)">{when}</span></div>
+          <p style="margin-top:.3rem">{what}</p>
+          <p class="small" style="margin-top:.25rem;color:var(--ink-3)">{src}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>{d.wives.head}</h2>
+    <p class="lede"><strong>First.</strong> {d.wives.first}</p>
+    <p class="lede" style="margin-top:1rem"><strong>Second.</strong> {d.wives.second}
+      <span class="chip inf">{d.wives.chip}</span></p>
+    <div class="note" style="margin-top:1.3rem">{d.matters}
+      <a href={u("/chatham")}>Both baptisms →</a> ·
+      <a href={u("/australia")}>The voyage →</a></div>
+  </section>
+</Base>

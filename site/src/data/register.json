@@ -1,11 +1,11 @@
 {
-"entries": 747,
-"distinct": 547,
-"records": 274,
+"entries": 750,
+"distinct": 548,
+"records": 277,
 "tree": 473,
 "grafted": 98,
-"linked": 747,
-"surnames": 186,
+"linked": 750,
+"surnames": 187,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1170,7 +1170,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 96,
+"n": 98,
 "rows": [
 {
 "name": "Charlotte D'Arcy",
@@ -1219,6 +1219,20 @@
 "says": "39TH FOOT, Peninsular War officers' roll, 1808 · the same regiment he commanded a detachment of aboard the convict ship England in 1826",
 "source": "record · Peninsular War, British Army Officers 1808-1814 (RUSI, via FindMyPast)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "“Lately, Captain GEORGE D'ARCY, [of] the [—] foot, SON [of] LIEUT. COLONEL D'ARCY, [to] MISS LUDLAM, OF GUERNSEY” · the first record to make him anyone's son, and Robert D'Arcy had been gazetted Lieutenant-Colonel six months before",
+"source": "record · Salisbury and Winchester Journal, 23 September 1805, p.3 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "commanding a detachment of the 39th Regiment in Ireland · “under the command of Major D'Arcy”, British Press 6 March 1820 and Weekly Freeman's Journal 2 February 1822",
+"source": "record · British and Irish newspapers, 1820 and 1822",
+"link": "https://www.findmypast.com.au/search-newspapers",
 "kind": "record"
 },
 {
@@ -5477,6 +5491,19 @@
 "says": "second witness to the D'Arcy-Jones marriage, Chatham, 23 October 1806",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+}
+]
+},
+{
+"surname": "LUDLAM",
+"n": 1,
+"rows": [
+{
+"name": "Mary Ludlam",
+"says": "of GUERNSEY · married Captain George D'Arcy, announced September 1805 — the Chatham baptism of 1811 gives Frederick Robert's mother as MARY",
+"source": "record · Salisbury and Winchester Journal, 23 September 1805, p.3 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
 "kind": "record"
 }
 ]
