@@ -9,6 +9,38 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — 1851 census, Well Street, Hanley",
+   "what": "Samuel Sneyd alive, and his wife's birthplace",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "HO107/2004 f.138 p.13: SAMUEL SNEYD, 72, GROCER, of WELL STREET, born MADELEY, STAFFORDSHIRE; ELIZABETH his wife, 71, born OSWESTRY, SHROPSHIRE; JAMES their son, 33, engraver. Every element of the tree's claim and of this archive's 1861 identification, confirmed by one page — and it settles the unreadable “Staly Cladwin” of 1861 as OSWESTRY.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "FindMyPast — Shropshire Baptisms, Oswestry St Oswald's",
+   "what": "Elizabeth Oliver's baptism",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Born 17 MAY 1782, baptised 19 May, father DAVID OLIVER, mother MARY — Shropshire Archives P214/A/2/1 p.18. The tree says 7 May 1787: one digit out in the day and one in the year, and both censuses put her nearer 1780. She is the only Elizabeth Oliver baptised at Oswestry in the window the censuses point to.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "FindMyPast — Cheshire, Diocese of Chester, control-tested",
+   "what": "The Audlem marriage of 22 October 1809",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Not there. Audlem is indexed twice — parish marriages AND bishop's transcripts — and a control for SMITH marrying there 1804–1814 returns twenty entries. No Sneyd marries at Audlem in that window, and widening to every Sneyd record at Audlem of any date returns thirty-six results, every one a civil registration after 1837. Not one Sneyd is in Audlem's parish registers.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "FindMyPast — England Births & Baptisms, Stroud",
+   "what": "James Wakefield's own baptism",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Baptised at STROUD 6 April 1806, father RICHARD WAKEFIELD, mother ELIZABETH WEBB — matching the birthplace the 1851 census gives him. It also explains the two-year-old MATILDA WEBB living in his house at Drivers Fields in 1841: his mother was a Webb.",
+   "href": "/berkeley-woman"
+  },
+  {
    "src": "FindMyPast — Hampshire Marriages (Hampshire Genealogical Society)",
    "what": "The marriage of Robert D'Arcy and Jean Ward",
    "when": "13 Sep 2026",

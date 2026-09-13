@@ -277,7 +277,13 @@
 "carolina-rossiter": [],
 "caroline-louisa-d-arcy": [],
 "caterina-ferrara": [],
-"catherine-cotton": [],
+"catherine-cotton": [
+{
+"path": "/berkeley",
+"snippet": "…onger true. They can be tested, and they have been: Thomas baptised 1744, his marriage to Catherine Cotton in 1769, John baptised five weeks later, Thomas buried 1819 aged 75, John buried 1825 aged 55, and John's children in 1801, 1803…",
+"title": "Berkeley, Gloucestershire"
+}
+],
 "catherine-d-arcy-1789": [],
 "catherine-d-arcy-1867": [],
 "catherine-farnham": [],
@@ -580,6 +586,11 @@
 "elizabeth-keeling": [],
 "elizabeth-margaret-oliver": [
 {
+"path": "/what-we-got-wrong",
+"snippet": "…nty marriages in the same decade. No Sneyd appears in Audlem's parish registers at all. → Elizabeth Margaret Oliver was born 7 May 1787 at Oswestry Oswestry is confirmed by the 1851 census. The date is almost certainly 17 May 1782 — her baptism…",
+"title": "What This Archive Got Wrong"
+},
+{
 "path": "/how-far-back",
 "snippet": "…el Sneyd · grocer, of Hanley Baptised Madeley, 4 June 1781, father William Sneyd. Married Elizabeth Margaret Oliver at Audlem, Cheshire, 22 October 1809. Died at No. 3 Well Street, Hanley, and was buried there in 1855. 1810 Samuel Charles Sneyd…",
 "title": "How Far Back"
@@ -601,7 +612,7 @@
 },
 {
 "path": "/sneyds",
-"snippet": "…His age born 1769, so 87 The register says 77, which puts his birth about 1778 His widow Elizabeth Margaret Oliver, died 1 December 1861 CONFIRMED — Deaths, December quarter 1861, Sneyd Elizabeth, Stoke, 6b 66 The age is the interesting one. Se…",
+"snippet": "…born 17 MAY 1782, baptised 19 May 1782 · father DAVID Oliver, mother MARY. The tree says Elizabeth Margaret Oliver, born 7 May 1787 at Oswestry. Oswestry is confirmed outright by the 1851 census. The day differs by one digit (7 for 17) and the…",
 "title": "The Sneyds of the Potteries"
 },
 {
@@ -1239,7 +1250,7 @@
 },
 {
 "path": "/sneyds",
-"snippet": "…is printed here rather than quietly dropped. What it does give outright is a household: a James Sneyd, engraver, born Hanley about 1819 , with two daughters who paint pottery for a living. The tree gives Samuel and Elizabeth five c…",
+"snippet": "…neyd Head 72 GROCER MADELEY, STAFFORDSHIRE Elizabeth Sneyd Wife 71 — OSWESTRY, SHROPSHIRE James Sneyd Son 33 Engraver Hanley, Staffordshire Elizabeth Ann Sneyd Daughter 11 — Hanley, Staffordshire Harvey Bradbury Visitor 20 Shoemake…",
 "title": "The Sneyds of the Potteries"
 }
 ],
@@ -1267,7 +1278,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…tershire” thesis rested on a single yes/no tick in 1841 and is wrong. The same page gives James Wakefield's birthplace as STROUD and adds two children nobody here knew of, Jabez and Zillah. → FindMyPast — England Marriages 1538-1973 fo…",
+"snippet": "…o. → FindMyPast — England Births & Baptisms, Stroud found something 13 Sep 2026 Searched: James Wakefield's own baptism Baptised at STROUD 6 April 1806, father RICHARD WAKEFIELD, mother ELIZABETH WEBB — matching the birthplace the 1851…",
 "title": "What Has Been Read"
 },
 {
@@ -1391,6 +1402,11 @@
 "title": "Chatham"
 },
 {
+"path": "/portsea",
+"snippet": "…dy else. The silence is real after all. The same search found Robert D'Arcy's marriage to Jean Ward at this church on 21 June 1779. Both → The find is not weakened. The silence around it is. Joseph D'Arcy was baptised at Portsea…",
+"title": "Two years of Portsea"
+},
+{
 "path": "/sources",
 "snippet": "…Past) — the burial of Robert D'Arcy at St Mary, Chatham, 19 May 1827, and his marriage to Jean Ward at Portsea St Mary, 21 June 1779. Australia, Births and Baptisms, 1792–1981 — the christening of George Lindsay Darcy at St James…",
 "title": "Sources"
@@ -1507,7 +1523,7 @@
 },
 {
 "path": "/what-we-got-wrong",
-"snippet": "…ill shown on the page that corrects it rather than deleted. The tree said The record says John Saniger died on 10 March 1824 at Berkeley Buried at Berkeley St Mary the Virgin on 16 January 1825, aged 55. The tree is ten months early…",
+"snippet": "…d's, father David, mother Mary — and both censuses put her birth nearer 1780 than 1787. → John Saniger died on 10 March 1824 at Berkeley Buried at Berkeley St Mary the Virgin on 16 January 1825, aged 55. The tree is ten months early…",
 "title": "What This Archive Got Wrong"
 },
 {
@@ -2477,7 +2493,7 @@
 "samuel-sneyd": [
 {
 "path": "/changes",
-"snippet": "…wn tree, and will mistake that failure for a finding unless it measures every time. Found Samuel Sneyd's burial: Hanley St John the Evangelist, 23 September 1855, aged 77, of 91 WELL ST. The tree said 20 September 1856 at No 3. Test…",
+"snippet": "…ed the tree's death date for John Saniger by ten months. Built /behind-the-paywall. Found Samuel Sneyd alive in the 1851 census — Well Street, Hanley, GROCER, born Madeley — with his wife Elizabeth beside him, born OSWESTRY, SHROPSH…",
 "title": "What changed"
 },
 {
@@ -2502,7 +2518,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…y St John the Evangelist, burial register (FreeREG) found something 13 Sep 2026 Searched: Samuel Sneyd's burial Entry 2330: SAMUEL SNEYD, buried 23 SEPTEMBER 1855, aged 77, of 91 WELL ST. The tree says he died on 20 September 1856 a…",
+"snippet": "…urces FindMyPast — 1851 census, Well Street, Hanley found something 13 Sep 2026 Searched: Samuel Sneyd alive, and his wife's birthplace HO107/2004 f.138 p.13: SAMUEL SNEYD, 72, GROCER, of WELL STREET, born MADELEY, STAFFORDSHIRE; EL…",
 "title": "What Has Been Read"
 },
 {
@@ -2910,7 +2926,7 @@
 "william-sanigar": [
 {
 "path": "/berkeley",
-"snippet": "…ers. For as long as this archive has existed it has said its deepest documented person is William Sanigar, born 1654, of Berkeley in Gloucestershire — twelve generations back. An audit found that claim rested on other people's family t…",
+"snippet": "…ay → For as long as this archive has existed it has said its deepest documented person is William Sanigar, born 1654, of Berkeley in Gloucestershire — twelve generations back. An audit found that claim rested on other people's family t…",
 "title": "Berkeley, Gloucestershire"
 },
 {

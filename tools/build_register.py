@@ -364,6 +364,26 @@ for n, says in [
 ]:
     rec(n, says, BKY, FMP_L2)
 
+
+# --- FindMyPast: the Sneyds at Well Street, and Elizabeth Oliver -----------
+S51 = "record \u00b7 1851 census, Well Street, Hanley \u2014 HO107/2004 f.138 p.13 sch.46 (FindMyPast)"
+FMP_L3 = "https://www.findmypast.com.au/"
+rec("Samuel Sneyd", "head, aged 72, GROCER, of WELL STREET, Hanley \u00b7 born MADELEY, STAFFORDSHIRE \u2014 alive in his own shop four years before he died", S51, FMP_L3)
+rec("Elizabeth Margaret Oliver", "wife, aged 71 \u00b7 born OSWESTRY, SHROPSHIRE \u2014 which settles the unreadable \u201cStaly Cladwin\u201d of the 1861 census", S51, FMP_L3)
+rec("James Sneyd", "son, aged 33, ENGRAVER \u00b7 born Hanley \u2014 Samuel Charles Sneyd's brother, who stayed and kept the shop", S51, FMP_L3)
+
+OSW = "record \u00b7 Shropshire Baptisms, Oswestry St Oswald's \u2014 Shropshire Archives P214/A/2/1 p.18 (FindMyPast)"
+rec("Elizabeth Margaret Oliver", "born 17 MAY 1782, baptised 19 May 1782 at Oswestry St Oswald's \u00b7 father DAVID OLIVER, mother MARY \u2014 the tree says 7 May 1787, two digits away", OSW, FMP_L3)
+rec("David Oliver", "of Oswestry \u00b7 father of Elizabeth, baptised there 19 May 1782 \u2014 a generation this archive did not have", OSW, FMP_L3)
+
+
+STR = "record \u00b7 England Births & Baptisms 1538-1975, Stroud (FindMyPast)"
+FMP_L4 = "https://www.findmypast.com.au/"
+rec("James Wakefield", "baptised at STROUD 6 APRIL 1806 \u00b7 father RICHARD WAKEFIELD, mother ELIZABETH WEBB \u2014 matching the birthplace the 1851 census gives him, and naming a generation this archive did not have", STR, FMP_L4)
+rec("Richard Wakefield", "of Stroud \u00b7 father of James, baptised there 6 April 1806", STR, FMP_L4)
+rec("Elizabeth Webb", "of Stroud \u00b7 mother of James Wakefield \u2014 and a Matilda WEBB, aged two, is living in James's house at Drivers Fields in 1841", STR, FMP_L4)
+rec("Jabez Wakefield", "birth registered at Bristol, 1843", "record \u00b7 England & Wales Births 1837-2006 (FindMyPast)", FMP_L4)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

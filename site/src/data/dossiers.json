@@ -358,12 +358,17 @@
 "says": "named as the father of James Wakefield on his 1857 Queensland death registration — the only Gloucestershire candidate is a Richard baptised at Chedworth, 21 Dec 1770, and nothing but a name connects them",
 "source": "record · Queensland death index 1857/B/135",
 "link": "https://www.familyhistory.bdm.qld.gov.au/"
+},
+{
+"says": "of Stroud · father of James, baptised there 6 April 1806",
+"source": "record · England Births & Baptisms 1538-1975, Stroud (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "richard-wakefield",
-"n": 1
+"n": 2
 },
 "caroline-saniger": {
 "name": "Caroline Saniger",
@@ -885,6 +890,21 @@
 "slug": "william-sainger",
 "n": 3
 },
+"david-oliver": {
+"name": "David Oliver",
+"surname": "OLIVER",
+"rows": [
+{
+"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "david-oliver",
+"n": 1
+},
 "john-maddock-jones": {
 "name": "John Maddock Jones",
 "surname": "JONES",
@@ -1083,6 +1103,36 @@
 "inTree": false,
 "treeLink": "",
 "slug": "william-sinnegar",
+"n": 1
+},
+"elizabeth-webb": {
+"name": "Elizabeth Webb",
+"surname": "WEBB",
+"rows": [
+{
+"says": "of Stroud · mother of James Wakefield — and a Matilda WEBB, aged two, is living in James's house at Drivers Fields in 1841",
+"source": "record · England Births & Baptisms 1538-1975, Stroud (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "elizabeth-webb",
+"n": 1
+},
+"matilda-webb": {
+"name": "Matilda Webb",
+"surname": "WEBB",
+"rows": [
+{
+"says": "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "matilda-webb",
 "n": 1
 },
 "ahern": {
@@ -1790,21 +1840,6 @@
 "slug": "george-walsh",
 "n": 1
 },
-"matilda-webb": {
-"name": "Matilda Webb",
-"surname": "WEBB",
-"rows": [
-{
-"says": "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "matilda-webb",
-"n": 1
-},
 "richard-webbe": {
 "name": "Richard Webbe",
 "surname": "WEBBE",
@@ -1867,9 +1902,9 @@
 }
 },
 "counts": {
-"named": 150,
-"withTreePage": 34,
-"ownPage": 116,
-"mentions": 232
+"named": 153,
+"withTreePage": 35,
+"ownPage": 118,
+"mentions": 241
 }
 }

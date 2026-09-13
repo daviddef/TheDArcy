@@ -302,5 +302,83 @@
   ],
   "age": "Seventy-seven in September 1855 means born about 1778. The tree's 1769 would make him eighty-seven — ten years adrift. The Madeley baptism this archive corrected to in the first place, Samuel son of William Sneyd the weaver and Mary Blackbourne, 4 June 1781, would make him seventy-four: three years out, which is what a stated age at burial normally is. The burial register was found long after that correction was made and it independently supports it.",
   "closing": "So a claim that had no record behind it three days ago now has three: a burial with an age and a house number, a death registration with a volume and page, and a census that finds his widow in the same street six years later. Two details in it were wrong, and both are the kind that a family tree gets wrong — a year, and a street number."
+ },
+ "fmp": {
+  "census1851": {
+   "ref": "1851 census · WELL STREET, Hanley, Stoke upon Trent · HO107/2004, folio 138, page 13, schedule 46",
+   "rows": [
+    [
+     "Samuel",
+     "Sneyd",
+     "Head",
+     "Married",
+     "M",
+     72,
+     1779,
+     "GROCER",
+     "MADELEY, STAFFORDSHIRE"
+    ],
+    [
+     "Elizabeth",
+     "Sneyd",
+     "Wife",
+     "Married",
+     "F",
+     71,
+     1780,
+     "—",
+     "OSWESTRY, SHROPSHIRE"
+    ],
+    [
+     "James",
+     "Sneyd",
+     "Son",
+     "Married",
+     "M",
+     33,
+     1818,
+     "Engraver",
+     "Hanley, Staffordshire"
+    ],
+    [
+     "Elizabeth Ann",
+     "Sneyd",
+     "Daughter",
+     "Unmarried",
+     "F",
+     11,
+     1840,
+     "—",
+     "Hanley, Staffordshire"
+    ],
+    [
+     "Harvey",
+     "Bradbury",
+     "Visitor",
+     "Unmarried",
+     "M",
+     20,
+     1831,
+     "Shoemaker",
+     "Longton, Staffordshire"
+    ]
+   ],
+   "means": "Four years before he died, Samuel Sneyd is in his own shop in Well Street, a GROCER, born at MADELEY — and his wife Elizabeth is beside him, born at OSWESTRY, SHROPSHIRE. Every element of the tree's claim, and every element of the identification this archive made from the 1861 census, is confirmed at once by a record that names them both."
+  },
+  "staly": "And it settles “Staly Cladwin”. The 1861 enumerator wrote something at Well Street that the transcriber could not read and rendered as a Shropshire place that does not exist. The 1851 enumerator, ten years earlier, wrote OSWESTRY.",
+  "oliver": {
+   "ref": "Shropshire Baptisms · Oswestry, St Oswald's · Shropshire Archives P214/A/2/1, page 18",
+   "line": "ELIZABETH OLIVER, born 17 MAY 1782, baptised 19 May 1782 · father DAVID Oliver, mother MARY",
+   "tree": "The tree says Elizabeth Margaret Oliver, born 7 May 1787 at Oswestry.",
+   "reading": "Oswestry is confirmed outright by the 1851 census. The day differs by one digit (7 for 17) and the year by one (1787 for 1782), and both censuses put her birth nearer 1780 than 1787 — 71 in 1851, 82 in 1861. She is the only Elizabeth Oliver baptised at Oswestry in the window the censuses point to, in a parish whose baptisms are thoroughly indexed. It is very probably her, and it is an identification rather than a proof.",
+   "new": "It also gives a generation this archive has never had: DAVID OLIVER and MARY, of Oswestry."
+  },
+  "audlem": {
+   "claim": "The tree says Samuel Sneyd married Elizabeth Margaret Oliver at AUDLEM, CHESHIRE on 22 October 1809.",
+   "test": "Audlem's registers are indexed twice over — Cheshire Diocese of Chester Parish Marriages AND the Bishop's Transcripts. A control search for SMITH marrying at Audlem between 1804 and 1814 returns twenty entries from both collections.",
+   "result": "No Sneyd, in any spelling, marries at Audlem in that window. Widening to every Sneyd record at Audlem of any date and any type returns thirty-six results and every one is a civil registration after 1837 from Nantwich, Crewe or Congleton. Not one Sneyd appears in Audlem's parish registers at all.",
+   "verdict": "So the Audlem marriage is not supported. That is not the same as disproved — a mangled spelling or a licence elsewhere would explain it — but it has now been looked for properly, against a parish that is covered twice, and it is not there."
+  },
+  "ages": "One thing moves. The tree gives Samuel's birth as 1769 and this archive corrected that to the Madeley baptism of 4 June 1781. The 1851 census says he was 72, so born about 1779; the burial register said 77 in September 1855, so about 1778. Three records now cluster around 1778–79, which sits between the tree's 1769 and the archive's 1781 and matches neither exactly. The Madeley baptism remains the best candidate — it has the right father, mother, parish and trade — but the ages do not endorse it as cleanly as they rule out 1769."
  }
 }

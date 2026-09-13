@@ -91,6 +91,56 @@ const c = d.counts;
   </section>
 
   <section class="blk">
+    <div class="lab">{d.fmp.census1851.ref}</div>
+    <h2 style="margin-top:.4rem">Samuel Sneyd, grocer, in his own shop</h2>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Name</th><th>Relation</th><th class="m">Age</th><th>Occupation</th><th>Born</th></tr></thead>
+        <tbody>
+          {d.fmp.census1851.rows.map(([fn, sn, rel, ms, sx, age, by, occ, bp]) => (
+            <tr style={fn === "Samuel" || fn === "Elizabeth" ? "background:var(--tint)" : ""}>
+              <td><strong>{fn}</strong> <span class="small" style="color:var(--ink-3)">{sn}</span></td>
+              <td class="small">{rel}</td><td class="m">{age}</td>
+              <td class="small">{occ}</td><td class="small"><strong>{bp}</strong></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.fmp.census1851.means}</strong> <span class="chip doc">documented</span>
+      <br /><br />
+      {d.fmp.staly}
+    </div>
+
+    <p class="dek" style="margin-top:1.2rem">{d.fmp.ages}</p>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.fmp.oliver.ref}</div>
+    <h2 style="margin-top:.4rem">And Elizabeth's own baptism</h2>
+    <p class="lede">{d.fmp.oliver.line}.</p>
+    <p style="margin-top:1rem">{d.fmp.oliver.tree}</p>
+    <div class="note" style="margin-top:1.2rem">
+      {d.fmp.oliver.reading} <span class="chip inf">an identification</span>
+      <br /><br />
+      <strong>{d.fmp.oliver.new}</strong>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">Tested, covered, not found</div>
+    <h2 style="margin-top:.4rem">The Audlem marriage</h2>
+    <p class="lede">{d.fmp.audlem.claim}</p>
+    <p style="margin-top:1rem"><strong>The test.</strong> {d.fmp.audlem.test}</p>
+    <p style="margin-top:1rem"><strong>The result.</strong> {d.fmp.audlem.result}</p>
+    <div class="note" style="margin-top:1.2rem">{d.fmp.audlem.verdict}
+      <span class="chip doc">coverage established</span></div>
+  </section>
+
+  <section class="blk">
     <div class="lab">Hanley St John the Evangelist · and the GRO index</div>
     <h2 style="margin-top:.4rem">91 Well Street, and the year that was wrong</h2>
 

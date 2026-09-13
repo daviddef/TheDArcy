@@ -1,15 +1,15 @@
 {
-"entries": 705,
-"distinct": 541,
-"records": 232,
+"entries": 714,
+"distinct": 543,
+"records": 241,
 "tree": 473,
 "grafted": 98,
-"linked": 705,
+"linked": 714,
 "surnames": 184,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 162,
+"n": 164,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -100,6 +100,13 @@
 "says": "died 13/12/1897 · parents: Annie Spalding · Thomas George Sneyd",
 "source": "record · Queensland death index 1897/C/1623",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "James Sneyd",
+"says": "son, aged 33, ENGRAVER · born Hanley — Samuel Charles Sneyd's brother, who stayed and kept the shop",
+"source": "record · 1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -240,6 +247,13 @@
 "says": "death registered September quarter 1855, Stoke upon Trent, volume 6b page 75 · the only Samuel Sneyd death registered in England and Wales between 1854 and 1858",
 "source": "record · General Register Office death index (FreeBMD)",
 "link": "https://www.freebmd.org.uk/",
+"kind": "record"
+},
+{
+"name": "Samuel Sneyd",
+"says": "head, aged 72, GROCER, of WELL STREET, Hanley · born MADELEY, STAFFORDSHIRE — alive in his own shop four years before he died",
+"source": "record · 1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -1764,7 +1778,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 41,
+"n": 44,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -1900,6 +1914,13 @@
 "kind": "record"
 },
 {
+"name": "Jabez Wakefield",
+"says": "birth registered at Bristol, 1843",
+"source": "record · England & Wales Births 1837-2006 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "James Wakefield",
 "says": "died 08/07/1857 · father: Richard Wakefield — a generation the archive did not have",
 "source": "record · Queensland death index 1857/B/135",
@@ -1924,6 +1945,13 @@
 "name": "James Wakefield",
 "says": "head, aged 45, MASON · born at STROUD, GLOUCESTERSHIRE",
 "source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "James Wakefield",
+"says": "baptised at STROUD 6 APRIL 1806 · father RICHARD WAKEFIELD, mother ELIZABETH WEBB — matching the birthplace the 1851 census gives him, and naming a generation this archive did not have",
+"source": "record · England Births & Baptisms 1538-1975, Stroud (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
@@ -1967,6 +1995,13 @@
 "says": "named as the father of James Wakefield on his 1857 Queensland death registration — the only Gloucestershire candidate is a Richard baptised at Chedworth, 21 Dec 1770, and nothing but a name connects them",
 "source": "record · Queensland death index 1857/B/135",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Richard Wakefield",
+"says": "of Stroud · father of James, baptised there 6 April 1806",
+"source": "record · England Births & Baptisms 1538-1975, Stroud (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -3196,6 +3231,54 @@
 ]
 },
 {
+"surname": "OLIVER",
+"n": 6,
+"rows": [
+{
+"name": "David Oliver",
+"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
+"source": "record · 1861 census, Hanley, Staffordshire (FreeCEN)",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 · the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street",
+"source": "record · General Register Office death index (FreeBMD)",
+"link": "https://www.freebmd.org.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "wife, aged 71 · born OSWESTRY, SHROPSHIRE — which settles the unreadable “Staly Cladwin” of the 1861 census",
+"source": "record · 1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "born 17 MAY 1782, baptised 19 May 1782 at Oswestry St Oswald's · father DAVID OLIVER, mother MARY — the tree says 7 May 1787, two digits away",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "1787–1861 · Oswestry, Shropshire, England, United Kingdom",
+"source": "family tree · direct line",
+"link": "/people/elizabeth-margaret-oliver",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "WARD",
 "n": 6,
 "rows": [
@@ -3828,33 +3911,6 @@
 ]
 },
 {
-"surname": "OLIVER",
-"n": 3,
-"rows": [
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
-"source": "record · 1861 census, Hanley, Staffordshire (FreeCEN)",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 · the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street",
-"source": "record · General Register Office death index (FreeBMD)",
-"link": "https://www.freebmd.org.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "1787–1861 · Oswestry, Shropshire, England, United Kingdom",
-"source": "family tree · direct line",
-"link": "/people/elizabeth-margaret-oliver",
-"kind": "tree"
-}
-]
-},
-{
 "surname": "SINEGAR",
 "n": 3,
 "rows": [
@@ -4346,6 +4402,26 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/meinhard-von-schonburg",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "WEBB",
+"n": 2,
+"rows": [
+{
+"name": "Elizabeth Webb",
+"says": "of Stroud · mother of James Wakefield — and a Matilda WEBB, aged two, is living in James's house at Drivers Fields in 1841",
+"source": "record · England Births & Baptisms 1538-1975, Stroud (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Matilda Webb",
+"says": "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
 }
 ]
 },
@@ -5938,19 +6014,6 @@
 "says": "Pte, later Lieut · No. 4 Officer Cadet Battalion, New College, Oxford · Sneyd's closest friend; searched for him for thirteen months",
 "source": "record · AWM 1DRL/0428, Wounded and Missing file for 5050 Sneyd",
 "link": "https://www.awm.gov.au/",
-"kind": "record"
-}
-]
-},
-{
-"surname": "WEBB",
-"n": 1,
-"rows": [
-{
-"name": "Matilda Webb",
-"says": "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/",
 "kind": "record"
 }
 ]
