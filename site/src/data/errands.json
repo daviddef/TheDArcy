@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "11 jobs a person can do and this archive cannot",
+ "eyebrow": "14 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -26,6 +26,36 @@
   },
   {
    "n": 3,
+   "what": "Search irishgenealogy.ie for the Creech, Atkinson and Mulcahy lines",
+   "where": "irishgenealogy.ie — free, no login",
+   "cost": "free, behind a bot check",
+   "settles": "This archive has three Irish lines and has never searched an Irish record. The most testable claim is the marriage of Paul Cole Atkinson and Jane Creech at Carrigaline, County Cork, on 27 September 1853, which the site states as fact and has never seen. Then Richard Atkinson of Limerick, and Catherine Margaret Mulcahy of Cork, whose parents are unknown.",
+   "why": "THREE LINES, ONE FREE DATABASE",
+   "href": "/atkinson",
+   "file": "blocked by Cloudflare, 13 September 2026"
+  },
+  {
+   "n": 4,
+   "what": "Five named Bristol nonconformist registers at Kew",
+   "where": "The National Archives, RG 4",
+   "cost": "a visit, or a digitised copy via a subscription site",
+   "settles": "A baptism for Hannah Saniger about 1805. RG 4/2697 Broad Mead Baptist, RG 4/1830 Lewins Mead Presbyterian, RG 4/388 Bridge Street Congregational, RG 4/913 Ebenezer Chapel Wesleyan, RG 4/1792 Castle Green Independent. Five documents, all covering 1805, none transcribed. This replaces the vague instruction to write to Bristol.",
+   "why": "",
+   "href": "/sanigers",
+   "file": "identified 13 September 2026 via TNA Discovery"
+  },
+  {
+   "n": 5,
+   "what": "Lichfield Bishop's Transcripts for Madeley, 1740s",
+   "where": "Staffordshire Record Office / Lichfield",
+   "cost": "an enquiry",
+   "settles": "The baptism of William Sneyd the weaver, about 1746. FreeREG holds no Bishop's Transcripts for Madeley at all, and his baptism is not in any transcribed Staffordshire register. The diocesan second copy is the obvious next place and nobody has asked for it.",
+   "why": "",
+   "href": "/sneyds",
+   "file": "identified 13 September 2026"
+  },
+  {
+   "n": 6,
    "what": "PROB 11/1728/64 — the will of Major-General Robert D'Arcy",
    "where": "The National Archives, Kew",
    "cost": "about £3.50, digitised, download today",
@@ -35,7 +65,7 @@
    "file": "requests/tna-prob11-darcy-will.md"
   },
   {
-   "n": 4,
+   "n": 7,
    "what": "Enquiry to the Royal Engineers Museum, Chatham",
    "where": "The Corps' own archive",
    "cost": "£25 enquiry service",
@@ -45,7 +75,7 @@
    "file": "notes/letters/2026-09-re-museum-chatham.md"
   },
   {
-   "n": 5,
+   "n": 8,
    "what": "Three Queensland death certificates",
    "where": "Queensland Registry of Births, Deaths and Marriages",
    "cost": "a fee per certificate",
@@ -55,7 +85,7 @@
    "file": "requests/qld-bdm-certificates.md"
   },
   {
-   "n": 6,
+   "n": 9,
    "what": "Two Chatham burials",
    "where": "Medway Archives",
    "cost": "an enquiry",
@@ -65,7 +95,7 @@
    "file": "notes/letters/2026-09-medway-archives.md"
   },
   {
-   "n": 7,
+   "n": 10,
    "what": "Where Arthur Hartley Sneyd is commemorated",
    "where": "Commonwealth War Graves Commission",
    "cost": "free, two minutes",
@@ -75,7 +105,7 @@
    "file": "requests/cwgc-arthur-hartley-sneyd.md"
   },
   {
-   "n": 8,
+   "n": 11,
    "what": "The generation above Francis Murdoch",
    "where": "ScotlandsPeople",
    "cost": "credits, a login",
@@ -85,7 +115,7 @@
    "file": "requests/scotlandspeople-murdoch.md"
   },
   {
-   "n": 9,
+   "n": 12,
    "what": "Richard Atkinson and Anne, of Limerick",
    "where": "RootsIreland",
    "cost": "a subscription",
@@ -95,7 +125,7 @@
    "file": "requests/rootsireland-atkinson-limerick.md"
   },
   {
-   "n": 10,
+   "n": 13,
    "what": "Nine Queensland State Archives items",
    "where": "Queensland State Archives, Runcorn",
    "cost": "copy fees, none digitised",
@@ -105,7 +135,7 @@
    "file": "requests/qsa-order-list.md"
   },
   {
-   "n": 11,
+   "n": 14,
    "what": "Which Ordnance series could carry a Royal Engineers commission of 1776",
    "where": "The National Archives, Kew",
    "cost": "an enquiry",

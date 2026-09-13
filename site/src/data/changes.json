@@ -1,9 +1,23 @@
 {
  "title": "What changed",
- "eyebrow": "12 passes · 69 changes",
+ "eyebrow": "13 passes · 76 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "13 September 2026",
+   "title": "Back to Britain — and an audit that says the archive had drifted",
+   "did": [
+    "Audited the register by nationality of source: 95 Australian records against 70 British. The archive had drifted to the wrong side of the world and nobody had measured it.",
+    "Named the five TNA RG 4 registers that would hold Hannah's baptism, replacing a vague instruction to write to Bristol.",
+    "Found a Sinegar brewer's household at St Philip and St Jacob with a daughter Lydia — candidate kin, labelled as such.",
+    "Established that William the weaver's baptism is in no transcribed Staffordshire register at all, and that Madeley has no Bishop's Transcripts in FreeREG.",
+    "Searched Denbighshire for John Maddock Jones of Ruabon. Well covered, and he is not in it.",
+    "Read the Gazette for Joseph, Constantine and George Pitt D'Arcy. Nothing, with an OCR caveat.",
+    "Was blocked by Cloudflare at irishgenealogy.ie — three Irish lines, one free database, and no way in from here."
+   ],
+   "found": "57% of this archive's records now come from Australian sources. The brief was always the British ancestry."
+  },
   {
    "when": "13 September 2026",
    "title": "The Gazette, the Birches, and a jurisdiction still shut",

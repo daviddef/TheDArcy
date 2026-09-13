@@ -66,6 +66,39 @@ const HOLDS = [
   </section>
 
   <section class="blk">
+    <div class="lab">Audited 13 September 2026</div>
+    <h2 style="margin-top:.4rem">This archive had drifted to the wrong side of the world</h2>
+
+    <p class="lede">It exists to test a <strong>British</strong> ancestry: a Gloucestershire yeoman,
+    a Staffordshire weaver, a Royal Engineer at Chatham. Of the {`166`} records it now holds,
+    <strong>95 come from Australian sources and 70 from British ones</strong>.</p>
+
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Where the evidence comes from</th><th class="m">Records</th><th class="m">Share</th></tr></thead>
+        <tbody>
+          <tr><td>Australian — Queensland registration, QSA, NAA, AWM, Trove, the Blue Books</td>
+              <td class="m">95</td><td class="m"><strong>57%</strong></td></tr>
+          <tr><td>British — FreeREG, FreeBMD, the census, TNA, the London Gazette</td>
+              <td class="m">70</td><td class="m">42%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>There is a good reason and it is not a good enough reason.</strong> Australian records
+      are open: Queensland's death index names parents and is free, its archives publish scans, its
+      immigration lists are open data. British records are scattered, half-transcribed and — three
+      times in one day — behind a bot check. The path of least resistance runs east, and this archive
+      followed it.
+      <br /><br />
+      The result is that the best-evidenced part of a British family history is its emigration. That
+      is worth knowing, and worth correcting. <a href={u("/searched")}>Every source, and which
+      country it is in →</a>
+    </div>
+  </section>
+
+  <section class="blk">
     <h2>How it is built</h2>
     <p class="dek">A MyHeritage GEDCOM export is parsed in Python, living people are removed by a
     graph-wide rule rather than a flag, and the result is rendered as a static site with Astro and

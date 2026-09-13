@@ -9,6 +9,62 @@
  ],
  "rows": [
   {
+   "src": "TNA Discovery — RG 4, the Non-Parochial Registers",
+   "what": "Which Bristol nonconformist register would hold a baptism of about 1805",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "Named at last. The National Archives holds 36 RG 4 registers for Bristol, and FIVE of them cover 1805: RG 4/2697 (Broad Mead, Baptist, 1787–1817), RG 4/1830 (Lewins Mead, Presbyterian, 1718–1840), RG 4/388 (Bridge Street, Congregational, 1714–1837), RG 4/913 (Ebenezer Chapel King Street, Wesleyan, 1793–1819) and RG 4/1792 (Castle Green, Independent, 1784–1816). Only the Moravian register is transcribed in FreeREG. “Write to Bristol” is now five named documents.",
+   "href": "/errands"
+  },
+  {
+   "src": "FreeCEN — the other Bristol Sanigers of 1841",
+   "what": "Whether any of the 29 is kin to Hannah",
+   "when": "13 Sep 2026",
+   "outcome": "yield",
+   "got": "One household is worth naming. At St Philip and St Jacob, a mile from Drivers Fields: THOMAS SINEGAR, 30, a BREWER, with Martha 31 and children James 11, LYDIA 9, Thomas 7 and Martha 2. A Saniger of the right generation, in the right city, who named a daughter Lydia. But he is entered as born in Gloucestershire and Hannah is not, and the 1841 census records no relationships. Candidate kin, and nothing more.",
+   "href": "/sanigers"
+  },
+  {
+   "src": "FreeREG — Denbighshire",
+   "what": "John Maddock Jones, Esq., of Penybryn in Ruabon, who married Robert D'Arcy's daughter in 1806",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "Not there. Denbighshire is well covered — a control returns more than 500 Smiths for 1780–1830 — and holds no John Maddock Jones at all. A Welsh gentry family joined to this one by marriage, and the transcribed registers of his own county do not have him.",
+   "href": "/chatham"
+  },
+  {
+   "src": "FreeREG — every William Sneyd in Staffordshire, 1735–1760",
+   "what": "Where William the weaver was baptised, since it is not Madeley",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "There are exactly TWO William Sneyd records in the whole county for those twenty-five years, and both are Madeley: the baptism of 12 September 1742 and the burial of 29 September 1744. His baptism is not in Staffordshire's transcribed registers under any parish — not Wolstanton, not Betley, not Whitmore, not Keele.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "FreeREG — Bishop's Transcripts for Madeley",
+   "what": "The diocesan second copy, which often survives where a parish book fails",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "FreeREG holds none. Madeley's 78 records are 72 “Other Transcript” and 6 “Parish Register”; Staffordshire as a whole has only seven Bishop's Transcript records and not one is Madeley's. The Lichfield diocesan transcripts exist — they are simply not here. That is a named errand, not a null.",
+   "href": "/errands"
+  },
+  {
+   "src": "The London Gazette — Joseph, Constantine and George Pitt D'Arcy",
+   "what": "Whether the other D'Arcy men were gazetted",
+   "when": "13 Sep 2026",
+   "outcome": "null",
+   "got": "No Joseph D'Arcy between 1795 and 1850 — the six apparent hits are Joseph Darby and Joseph Dyas. No “Pitt D'Arcy” at all, and no D'Arcy tied to the 39th Regiment. Worth a caveat: an apostrophe in a name is exactly what nineteenth-century OCR loses, so a silent absence here is weaker evidence than the ten positive hits for Robert.",
+   "href": "/hornby"
+  },
+  {
+   "src": "irishgenealogy.ie — Cork and Limerick church records",
+   "what": "The Creech–Atkinson marriage at Carrigaline in 1853, and the Atkinson and Mulcahy lines",
+   "when": "13 Sep 2026",
+   "outcome": "blocked",
+   "got": "Cloudflare bot verification, which this archive will not attempt to defeat. This is the third such block today and by far the most costly: it is free, it needs no login, it covers Cork and Limerick, and this archive has THREE Irish lines and has never searched an Irish record.",
+   "href": "/errands"
+  },
+  {
    "src": "The London Gazette, 1770–1840",
    "what": "Robert D'Arcy's career, from the government's own notices rather than a printed roll",
    "when": "13 Sep 2026",
