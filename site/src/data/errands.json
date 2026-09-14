@@ -147,8 +147,8 @@
   {
    "n": 15,
    "what": "PROB 11/1991/312 — the will of John Maddock Jones of Ruabon",
-   "where": "The National Archives, Kew — digitised",
-   "cost": "about £3.50",
+   "where": "The National Archives, Kew — digitised — The image is DIGITISED and the record page reads “£3.50 - sign in to get this free”. It is not a paywall but a free registration: a TNA account costs nothing and the PDF then downloads at no charge. Checked 14 September 2026. The on-page preview is watermarked, with “to download this record without a watermark, please add it to your basket”, so the sign-in is the route.",
+   "cost": "free, with a free TNA account",
    "settles": "He married Margarett Maria Isabella D'Arcy, Robert and Jean's daughter, at Chatham in 1806 by licence, witnessed by her brother Joseph. His will of 1844 would name his widow and children — an entire Welsh branch of this family that the archive has never contained a word about. Also not on FindMyPast, for the same reason as errand 20: its Prerogative Court of Canterbury wills index stops at 1800.",
    "why": "A WHOLE BRANCH, FOR THREE POUNDS",
    "href": "/chatham",
@@ -197,8 +197,8 @@
   {
    "n": 20,
    "what": "PROB 11/1728/64 — the will of Major-General Robert D'Arcy",
-   "where": "The National Archives, Kew",
-   "cost": "about £3.50, digitised, download today",
+   "where": "The National Archives, Kew — The image is DIGITISED and the record page reads “£3.50 - sign in to get this free”. It is not a paywall but a free registration: a TNA account costs nothing and the PDF then downloads at no charge. Checked 14 September 2026. The on-page preview is watermarked, with “to download this record without a watermark, please add it to your basket”, so the sign-in is the route.",
+   "cost": "free, with a free TNA account",
    "settles": "His parentage is the largest open question on this site and no record of his life names a father. A will names family. Found 9 September 2026 and still unordered. CHECKED ON FINDMYPAST WHILE THE TRIAL WAS OPEN AND IT IS NOT THERE. FindMyPast's only Prerogative Court of Canterbury collections are a wills index for 1750-1800 and an administrations index for 1660-1700. Nothing in its catalogue carries PCC wills proved after 1800, so this will, Joseph's of 1848 and John Maddock Jones's of 1844 are all beyond it. £3.50 at Kew is the price and there is no free substitute.",
    "why": "THE PRIORITY",
    "href": "/hornby",
@@ -287,10 +287,10 @@
   {
    "n": 29,
    "what": "PROB 11/1825/326 — the will of Elizabeth Saniger, widow of Thornbury",
-   "where": "The National Archives, Kew — digitised, downloadable",
-   "cost": "£3.50 as a PDF",
+   "where": "The National Archives, Kew — digitised, downloadable — The image is DIGITISED and the record page reads “£3.50 - sign in to get this free”. It is not a paywall but a free registration: a TNA account costs nothing and the PDF then downloads at no charge. Checked 14 September 2026. The on-page preview is watermarked, with “to download this record without a watermark, please add it to your basket”, so the sign-in is the route.",
+   "cost": "free, with a free TNA account",
    "settles": "A widow's will names her children. This one was proved on 24 December 1833, in a parish between Berkeley and Bristol that holds eight Saniger register entries, at exactly the moment Hannah Saniger was a married woman with children in Bristol. Probate is the record type this archive has never once searched for this surname, and this is the first thing it turned up.",
-   "why": "THE BEST NEW LEAD ON HANNAH",
+   "why": "A WIDOW'S WILL NAMES HER CHILDREN — AND IT IS FREE",
    "href": "/saniger-place",
    "file": "found 13 September 2026, TNA Discovery"
   },
@@ -523,6 +523,16 @@
    "why": "",
    "href": "/saniger-place",
    "file": "Achievable without leaving the desk; the text is already downloaded."
+  },
+  {
+   "n": 53,
+   "what": "Smyth's own citation list for the Swonhunger pedigree — six medieval records he read and named",
+   "where": "The National Archives and the Berkeley muniments. Smyth lists them himself: an inquisition of 16 Richard II after the death of John Gifford; the Liber Relevium, Hilary 4 Henry IV; Rotuli Finium 22 Richard II membrane 14; THE INQUISITION OF 22 RICHARD II AFTER THE DEATH OF JOHN SWONHUNGER; Close Rolls 22 Richard II part 2 membrane 11; and four Thorpe inquisitions, 6 Edward IV to 35 Henry VIII.",
+   "cost": "a search of the IPM calendars, much of which is in print and free",
+   "settles": "An inquisition post mortem names the heir, the heir's age and the lands held on the day of death. Smyth used these to build the pedigree from Thomas de Stone to the failure of the male line in 1401; reading them directly would test his reconstruction rather than repeat it.",
+   "why": "THE ANTIQUARY NAMED HIS OWN SOURCES",
+   "href": "/saniger-place",
+   "file": "Found 14 September 2026 in The Berkeley Manuscripts vol. 3."
   }
  ],
  "ydna": {

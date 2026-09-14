@@ -1789,6 +1789,22 @@
    "outcome": "empty",
    "got": "Structurally out of scope. The site indexes twenty-six Staffordshire collections — wills, apprentices, asylums, gaol calendars, tithe awards, workhouse admissions — and no parish registers or bishop's transcripts of any kind. It cannot answer errand 19 and never could.",
    "href": "/errands"
+  },
+  {
+   "src": "Smyth, The Berkeley Manuscripts, volumes 1 and 3 (1883–85)",
+   "what": "Every occurrence of Swonhunger, Swanhunger, Saniger and Sanyger across both volumes — the twenty-five page references in Smyth's own index",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Forty-four distinct passages. A pedigree of the hamlet's owners from Thomas de Stone (died 1315–16) to John Swonhungre, who died without issue in 1401–2 leaving two sisters; the place in the free-warren charters of Henry II to Edward I; a grant of a yard land at Swonhunger dated 1189; Nigell of Swonhunger temp. Richard I; John de Swonhongre, esquire, in Lord Berkeley's retinue in 1326; and the hinge for the later branch — William Swonhunger, Crown lessee under Henry VIII, father of Robert, father of John.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "The National Archives — PROB 11 digitised wills",
+   "what": "Whether PROB 11/1825/326 (Elizabeth Saniger), PROB 11/1728/64 (Major-General Robert D'Arcy) and PROB 11/1991/312 can be downloaded",
+   "when": "14 Sep 2026",
+   "outcome": "blocked",
+   "got": "All three are digitised and open, and all three read “£3.50 - sign in to get this free”. The charge is waived for any registered user and registration is free, so these are not paid records — they are free records behind a free account. This archive creates no accounts, so they stay on the errand queue, but at nil cost rather than £10.50.",
+   "href": "/errands"
   }
  ]
 }
