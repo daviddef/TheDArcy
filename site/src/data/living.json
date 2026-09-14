@@ -48,9 +48,15 @@
    "why": "Named in the same sentence, for the same reason.",
    "living": true,
    "confirmed": "14 September 2026"
+  },
+  {
+   "phrase": "Cristina Adele D'Arcy",
+   "why": "Named on /bloodline/ as the living generation the direct line runs down to. Named and nothing more: no person page, no birth year, no birthplace, and no date of any kind anywhere in this build.",
+   "living": true,
+   "confirmed": "15 September 2026"
   }
  ],
- "namedNote": "These five are living people whom this archive names on purpose, as sources and as provenance, rather than as tree records — none of them has a person page, a birth year or a birthplace here. CONFIRMED BY THE ARCHIVE'S OWNER ON 14 SEPTEMBER 2026, when the guard below was built and put the question directly: keep them named, it is deliberate. That is recorded here so the decision is not quietly reversed by somebody later reading the rule and not the reason. Each entry is still one line: delete it and the build refuses to ship until the name comes off the page.",
+ "namedNote": "These six are living people whom this archive names on purpose, as sources and as provenance, rather than as tree records — none of them has a person page, a birth year or a birthplace here. CONFIRMED BY THE ARCHIVE'S OWNER ON 14 SEPTEMBER 2026, and the sixth on 15 September 2026, when the guard below was built and put the question directly: keep them named, it is deliberate. That is recorded here so the decision is not quietly reversed by somebody later reading the rule and not the reason. Each entry is still one line: delete it and the build refuses to ship until the name comes off the page.",
  "allow": [],
  "allowFiles": [],
  "released": [],

@@ -7,6 +7,7 @@ import Bloodline from "@daviddef/archive-kit/components/Bloodline.astro";
 import { graph, components, fromAhnentafel } from "@daviddef/archive-kit/lib/bloodline.js";
 import "@daviddef/archive-kit/styles/bloodline.css";
 import raw from "../data/ancestors.json";
+import living from "../data/living.json";
 
 const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isArray(v)) || [];
 /* The living are left out of this chart entirely.
@@ -19,7 +20,12 @@ const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isAr
    
    The line therefore stops at the last person the archive publishes, and says
    so. Adding somebody to it is a decision for whoever keeps the archive. */
-const rows = all.filter((r) => !r.living);
+/* A living person appears here only if this archive has named them on purpose:
+   living.json's `named` list, each entry carrying a reason and a date it was
+   confirmed. That list is a consent record, so it is the thing consulted —
+   not the living flag, and not a judgement made in this file. */
+const named = new Set((living.named || []).map((e) => e.phrase));
+const rows = all.filter((r) => !r.living || named.has(r.name));
 const withheld = all.length - rows.length;
 const people = graph(fromAhnentafel(rows));
 const comps = components(people);
@@ -36,7 +42,8 @@ const start = comps[0] ? [...comps[0]].sort((a, b) => shape(b) - shape(a))[0] : 
   <Bloodline people={people} start={start} total={rows.length} />
   {withheld > 0 && (
     <p class="cap" style="margin-top:14px">{withheld} living {withheld === 1 ? "person is" : "people are"} left
-      out of this chart. This archive does not publish the living at all — the few it names are
-      listed with a reason and a date each — so the line stops at the last person it publishes.</p>
+      out of this chart. This archive does not publish the living except where it has decided to
+      name somebody on purpose — those few are listed with a reason and a date each — and anybody
+      named here carries a name and nothing else: no date, no place, no page.</p>
   )}
 </Base>
