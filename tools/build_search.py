@@ -27,10 +27,17 @@ ALIASES = [
     ["d'arcy", "darcy", "d arcy", "darcey", "d'arcey", "darci", "dorchaidhe",
      "o dorchaidhe", "arcy"],
     ["sneyd", "snead", "sneed", "snayd", "sneid", "snyde"],
+    # Nineteen forms are attested for this family, and the two rarest are the
+    # oldest: SANYGER and SYNIGER are the 1608 muster's spellings and appear in
+    # no register here. The Swonhunger group is the same name before it wore
+    # down — Smyth of Nibley, writing in 1639, calls Saniger the corruption.
     ["saniger", "sainger", "sanigar", "sanigaer", "sinager", "sinneger",
      "sinnegar", "sinegar", "synegar", "synager", "singer",
      "sanigor", "sanigear", "sanigre", "sinagar", "sinigar", "sinnigar",
-     "siniger", "sanninger", "swanhanger"],
+     "siniger", "sanninger", "sanyger", "syniger", "sannigar", "sanniger",
+     "sanegar", "saneger", "sannegar", "sanger", "sineger",
+     "swanhanger", "swanhangar", "swonhunger", "swonhungre", "swonhongre",
+     "swannanger", "swonhanger"],
     ["mulcahy", "mulchy", "mulchay", "mulcahey", "mulcahy"],
     ["blum", "blume", "bloom"],
     ["murdoch", "murdock", "murdo"],
