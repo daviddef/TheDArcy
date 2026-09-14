@@ -746,6 +746,16 @@ rec("Robert D'Arcy", "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDI
 rec("Lady Catherine Georgiana West", "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
     "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862", "https://www.findmypast.co.uk/")
 
+# --- Find a Grave, 15 September 2026 -----------------------------------------
+# The archive had ZERO of these. All three are deceased; the memorial pages
+# name no living relative, which is checked before anything is copied across.
+rec("Kenneth Lindsay D'Arcy", "burial · 17 Aug 1927 – 3 Mar 2010, aged 82 · CENTENARY MEMORIAL GARDENS, 353 Wacol Station Road, Brisbane · plot SECRET GARDEN",
+    "record · Find a Grave memorial 286540042 · Centenary Memorial Gardens, Brisbane", "https://www.findagrave.com/memorial/286540042")
+rec("Audrey Dell D'Arcy", "burial · 1 Nov 1929 – 1 Aug 2022, aged 92 · Centenary Memorial Gardens, Brisbane · plot GARDEN OF REFLECTION, Section E, Site 20 · the Audrey “Dell” Murdoch who married Kenneth Lindsay D'Arcy at Toowoomba in 1952",
+    "record · Find a Grave memorial 242573098 · Centenary Memorial Gardens, Brisbane", "https://www.findagrave.com/memorial/242573098")
+rec("Christine Hilda D'Arcy-Evans", "burial · 15 Jan 1930 – 10 Aug 2017 · Centenary Memorial Gardens, Brisbane · plot GARDEN OF REFLECTION, Section C, Site 41 · a D'Arcy-Evans in the family's own cemetery, and unknown to this archive",
+    "record · Find a Grave memorial 229072083 · Centenary Memorial Gardens, Brisbane", "https://www.findagrave.com/memorial/229072083")
+
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [
     ("George Pitt D'Arcy", "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”", "59769271"),

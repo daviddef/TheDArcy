@@ -9,6 +9,30 @@
  ],
  "rows": [
   {
+   "src": "Find a Grave — Centenary Memorial Gardens, Brisbane (cemetery 2483416)",
+   "what": "The Brisbane graves, from a source this archive had never used",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "THREE D'ARCY MEMORIALS, where the archive had none. KENNETH LINDSAY D'ARCY, 17 Aug 1927 – 3 Mar 2010, aged 82, plot SECRET GARDEN (memorial 286540042). AUDREY DELL D'ARCY, 1 Nov 1929 – 1 Aug 2022, aged 92, Garden of Reflection Section E Site 20 (242573098) — the Audrey “Dell” Murdoch the tree marries to Kenneth at Toowoomba in 1952. And CHRISTINE HILDA D'ARCY-EVANS, 15 Jan 1930 – 10 Aug 2017, Garden of Reflection Section C Site 41 (229072083), a name this archive has never held. The cemetery carries 8,387 memorials at 353 Wacol Station Road.",
+   "href": "/graves"
+  },
+  {
+   "src": "Find a Grave — the location filter",
+   "what": "A control test, before believing three zeros",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "Searching the surname with `location=Queensland, Australia&locationId=state_2118` returns NO MATCHES for D'Arcy, for Darcy and for Sneyd. It also returns NO MATCHES FOR SMITH, which is impossible — while Darcy searched worldwide returns 10,654. That locationId is not Queensland. Every Find a Grave null taken through it is worthless; searching WITHIN a named cemetery works and is what found the three memorials above.",
+   "href": "/searched"
+  },
+  {
+   "src": "This archive's own places file, through tools/atlas.py",
+   "what": "The seventeen places with no coordinate",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "THIRTEEN REMAIN, and the approximates fell from 67 to 64. The export carried three kinds of damage that stop a gazetteer: HTML escapes never unescaped (“&lt;Ehrstaedt”), nineteenth-century abbreviation (“Butcombe Som Eng”, “of St Quivox, Ayr, Sctl”), and editorial prose in a place field (“Christened in Berkeley”, “Portsmouth, Hampshire, England or West Indies”). A tidy() step now normalises what is handed to the geocoder and NEVER what is printed — the page still shows the place exactly as recorded. Butcombe, Aller, St Quivox, Ehrstaedt, Portsmouth, Santa Maria a Vico and Dürnau are on the map; Buckwall, Deinschwang, Neuhaus, Himley Hall, “Parish of Elmore” and “?” are not, and will not be guessed at.",
+   "href": "/atlas"
+  },
+  {
    "src": "FindMyPast newspapers — Saint James's Chronicle 23 May 1857; London Evening Standard and Morning Herald 25 June 1862",
    "what": "The two Richard D'Arcy deaths in the civil index, chased to their notices",
    "when": "15 Sep 2026",

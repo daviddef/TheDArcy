@@ -1,11 +1,11 @@
 {
-"entries": 821,
-"distinct": 572,
-"records": 348,
+"entries": 824,
+"distinct": 574,
+"records": 351,
 "tree": 473,
 "grafted": 98,
-"linked": 821,
-"surnames": 195,
+"linked": 824,
+"surnames": 196,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1177,8 +1177,15 @@
 },
 {
 "surname": "D'ARCY",
-"n": 144,
+"n": 146,
 "rows": [
+{
+"name": "Audrey Dell D'Arcy",
+"says": "burial · 1 Nov 1929 – 1 Aug 2022, aged 92 · Centenary Memorial Gardens, Brisbane · plot GARDEN OF REFLECTION, Section E, Site 20 · the Audrey “Dell” Murdoch who married Kenneth Lindsay D'Arcy at Toowoomba in 1952",
+"source": "record · Find a Grave memorial 242573098 · Centenary Memorial Gardens, Brisbane",
+"link": "https://www.findagrave.com/memorial/242573098",
+"kind": "record"
+},
 {
 "name": "Catherine D'Arcy",
 "says": "death · aged 86 · Brighton district, Sussex, Q1 1876 · vol 2B p.164 — matching a birth of 10 Dec 1789",
@@ -1534,6 +1541,13 @@
 "says": "wife of Lieutenant-Colonel Joseph D'Arcy · he left his “property to his wife, Kathe[rine] D'Arcy” by a will executed February 1844 — Lady's Newspaper, 8 April 1848",
 "source": "record · Lady's Newspaper and Pictorial Times, 8 April 1848, p.11",
 "link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Kenneth Lindsay D'Arcy",
+"says": "burial · 17 Aug 1927 – 3 Mar 2010, aged 82 · CENTENARY MEMORIAL GARDENS, 353 Wacol Station Road, Brisbane · plot SECRET GARDEN",
+"source": "record · Find a Grave memorial 286540042 · Centenary Memorial Gardens, Brisbane",
+"link": "https://www.findagrave.com/memorial/286540042",
 "kind": "record"
 },
 {
@@ -5465,6 +5479,19 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/john-darcy-lord-d-arcy-lord-conyers",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "D'ARCY-EVANS",
+"n": 1,
+"rows": [
+{
+"name": "Christine Hilda D'Arcy-Evans",
+"says": "burial · 15 Jan 1930 – 10 Aug 2017 · Centenary Memorial Gardens, Brisbane · plot GARDEN OF REFLECTION, Section C, Site 41 · a D'Arcy-Evans in the family's own cemetery, and unknown to this archive",
+"source": "record · Find a Grave memorial 229072083 · Centenary Memorial Gardens, Brisbane",
+"link": "https://www.findagrave.com/memorial/229072083",
+"kind": "record"
 }
 ]
 },

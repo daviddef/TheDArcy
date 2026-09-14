@@ -48,12 +48,14 @@ img{max-width:100%}
 .mono{font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums}
 .dek{font-family:var(--sans);font-size:15px;line-height:1.62;color:var(--ink-2);max-width:76ch}
 .cap{font-family:var(--sans);font-size:12.5px;line-height:1.55;color:var(--ink-3);margin-top:12px;max-width:92ch}
-.prose{max-width:80ch;display:flex;flex-direction:column;gap:16px}
-/* .prose is two things at once: a flex COLUMN on a <div> that wraps several
-   paragraphs, and a paragraph class on a <p>. On a <p> the flex turns every
-   link and bold run into its own stacked block — which is what it had been
-   doing, on pages nobody had looked at closely. A paragraph is a paragraph. */
+.prose{max-width:80ch}
+/* Spacing belongs between BLOCK children, not between everything. As a flex
+   column this class made an inline <a> or <strong> inside a <p class="prose">
+   its own flex item, so a sentence came apart one fragment to a line. The
+   Defranceschi archive worked this out first; the other six now match it. */
+.prose>*+*{margin-top:16px}
 p.prose{display:block}
+p.prose+p.prose{margin-top:16px}
 
 .prose h3{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.13em;
   text-transform:uppercase;color:var(--ink-3);margin-top:14px}
