@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "23 passes · 273 changes",
+ "eyebrow": "23 passes · 279 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -27,7 +27,13 @@
     "OPENED FIND A GRAVE, a source this archive had never used, and found THREE D'Arcy memorials at CENTENARY MEMORIAL GARDENS, Brisbane: Kenneth Lindsay D'Arcy (1927–2010, plot Secret Garden), Audrey Dell D'Arcy (1929–2022, Garden of Reflection E/20) and CHRISTINE HILDA D'ARCY-EVANS (1930–2017, Garden of Reflection C/41), whose name this archive has never held.",
     "And control-tested it first. Find a Grave's `locationId=state_2118` returns NO MATCHES for D'Arcy, Darcy, Sneyd — AND FOR SMITH, which is impossible, while Darcy worldwide returns 10,654. Searching within a named cemetery works; the location filter does not.",
     "PUT FOUR MORE PLACES ON THE ATLAS by tidying what is handed to the geocoder — 153 placed became 157, and the approximates fell from 67 to 64. HTML escapes, “Som Eng” abbreviations and prose like “Christened in Berkeley” were stopping the lookup. What the page PRINTS is unchanged: the place as recorded.",
-    "Left thirteen unplaced rather than guess: Buckwall, Deinschwang, Neuhaus, Himley Hall, “Parish of Elmore” and “?” among them."
+    "Left thirteen unplaced rather than guess: Buckwall, Deinschwang, Neuhaus, Himley Hall, “Parish of Elmore” and “?” among them.",
+    "OPENED FOUR SOURCES THIS ARCHIVE HAD NEVER USED, and came away with one usable and three refusals — each with a reason and a control behind it.",
+    "ANTENATI holds 422 REGISTERS for ARIENZO at the Archivio di Stato di Caserta — Matrimoni processetti 63, Matrimoni 62, Nati 59, Morti 57, Diversi 45, from 1809 — digitised, free, and NOT NAME-INDEXED. A search for FALCO returns nothing; so does RUSSO, the commonest surname in Campania, which is the control that proves the index is missing rather than the family.",
+    "THE NLI CANNOT HELP THE LIMERICK LINE, and that is worth saying rather than searching. Its registers are CATHOLIC; Paul Cole Atkinson is recorded born at ST MARY'S, LIMERICK — the Church of Ireland cathedral parish — and Atkinson, Cole, Creech, Kent, Bowen and Peevers are Protestant settler names. The same shape as the Wicklow problem.",
+    "irishgenealogy.ie is behind a Cloudflare bot check for the THIRD time in this archive's life. RootsIreland is behind a subscription. SCOTLANDSPEOPLE answers ACCESS DENIED without an account, and no account was created and no credentials entered.",
+    "BILLIONGRAVES IS BLOCKED, NOT EMPTY: the page loads and its own search API answers 403 and 400, and the country list never finishes. Nothing was searched, so nothing is known — recorded that way.",
+    "Eight rows added to /coverage and three errands opened, so that the next pass starts from these verdicts instead of repeating them."
    ],
    "found": [
     [
@@ -65,6 +71,14 @@
     [
      "Added",
      "/atlas — four more places, and four fewer approximations"
+    ],
+    [
+     "Added",
+     "/coverage — eight rows: Find a Grave twice, BillionGraves, Antenati, the NLI, irishgenealogy, RootsIreland, ScotlandsPeople"
+    ],
+    [
+     "Added",
+     "/errands — the 422 Arienzo registers, the Church of Ireland Limerick line, and a BillionGraves retry"
     ]
    ]
   },

@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "43 jobs a person can do and this archive cannot",
+ "eyebrow": "46 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -433,6 +433,36 @@
    "why": "1851 CLOSED 14 SEPTEMBER 2026; 1861 SEARCHED FOUR WAYS AND EMPTY",
    "href": "/sussex-sisters",
    "file": "the surname was indexed as ARCY — the D' had been read as part of the forename"
+  },
+  {
+   "n": 44,
+   "what": "The 422 ARIENZO registers on Antenati — read page by page",
+   "where": "Portale Antenati, Archivio di Stato di Caserta — free, digitised, and not name-indexed",
+   "cost": "free, and a great many hours",
+   "settles": "The Italian side of the marriage that joins this archive to the Falco one. 63 MATRIMONI PROCESSETTI are the prize: the processetti carry birth extracts and parental consents for both parties, which is two generations per marriage. Control-tested — a search for RUSSO at Arienzo returns nothing, so the index is missing, not the family. THIS IS THE FALCO ARCHIVE'S WORK rather than this one's, and is listed here because this archive established the coverage.",
+   "why": "",
+   "href": "/the-other-archives",
+   "file": "coverage established 15 September 2026"
+  },
+  {
+   "n": 45,
+   "what": "The Limerick line in CHURCH OF IRELAND records — Atkinson, Cole, Creech, Kent, Bowen, Peevers",
+   "where": "RCB Library Dublin, and the Representative Church Body's parish holdings for St Mary's, Limerick; RootsIreland by subscription",
+   "cost": "an enquiry, or a subscription",
+   "settles": "Five generations that stop dead at the emigrant. The NLI cannot help — it holds CATHOLIC registers and this line is Anglican, on the evidence of ST MARY'S, LIMERICK and the surnames. irishgenealogy.ie is behind a bot check. What is left is the RCB Library, which has already been written to once about Wicklow and could be asked about Limerick in the same letter.",
+   "why": "THE OLDEST IRISH LINE, AND THE LEAST SEARCHED",
+   "href": "/errands",
+   "file": "coverage established 15 September 2026 — the NLI is the wrong denomination"
+  },
+  {
+   "n": 46,
+   "what": "BillionGraves, when its search API is answering again",
+   "where": "billiongraves.com",
+   "cost": "free",
+   "settles": "A second opinion on the Queensland burials, and GPS coordinates Find a Grave does not carry for every plot. Nothing has been searched: the site's own API answered 403 and 400 and the page never finished loading. This is a retry, not a result.",
+   "why": "",
+   "href": "/graves",
+   "file": "blocked 15 September 2026"
   }
  ],
  "ydna": {

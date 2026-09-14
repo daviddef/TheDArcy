@@ -1,6 +1,6 @@
 {
  "note": "What each database actually holds for the parishes this archive needs. Checked before searching, every time — because a search of a source that does not cover your parish returns nothing, and nothing looks exactly like a negative result.",
- "checked": "14 September 2026",
+ "checked": "15 September 2026",
  "rows": [
   {
    "db": "FreeREG",
@@ -190,6 +190,78 @@
    "verdict": "unusable",
    "note": "A query carrying both yearofbirth and keywordsplace returns ZERO on census sets and presents it as a clean negative. Control: JANE SMITH born about 1788 in Sussex, 1871 — zero. The same search returns 60 by year alone and 136 by place alone. Search on one or the other and filter by hand.",
    "href": "/sussex-sisters"
+  },
+  {
+   "db": "Find a Grave",
+   "where": "a NAMED CEMETERY — Centenary Memorial Gardens, Brisbane",
+   "holds": "8,387 memorials",
+   "span": "modern",
+   "verdict": "good",
+   "note": "Searching inside a named cemetery works and produced three D'Arcy memorials with plots and dates. This archive had never used the source.",
+   "href": "/graves"
+  },
+  {
+   "db": "Find a Grave",
+   "where": "by SURNAME AND STATE — location=Queensland, locationId=state_2118",
+   "holds": "nothing, whatever you ask it",
+   "span": "—",
+   "verdict": "unusable",
+   "note": "Returns NO MATCHES for D'Arcy, Darcy, Sneyd — and for SMITH, which is impossible, while Darcy worldwide returns 10,654. The locationId is wrong. Search within a cemetery instead.",
+   "href": "/searched"
+  },
+  {
+   "db": "BillionGraves",
+   "where": "any surname search",
+   "holds": "unknown",
+   "span": "—",
+   "verdict": "blocked",
+   "note": "The site loads and its own search API then answers 403 and 400; the country list never finishes loading and the page sits on “Please wait”. Nothing was searched, so nothing is known — this is a blocked source and not an empty one.",
+   "href": "/errands"
+  },
+  {
+   "db": "Antenati (Archivio di Stato di Caserta)",
+   "where": "ARIENZO, Caserta — the parish this family married into",
+   "holds": "422 REGISTERS: Matrimoni processetti 63, Matrimoni 62, Nati 59, Morti 57, Diversi 45, and more",
+   "span": "from 1809",
+   "verdict": "partial",
+   "note": "Digitised in full and free to read — AND NOT NAME-INDEXED. A search for FALCO at Arienzo returns nothing, and so does a search for RUSSO, the commonest surname in Campania, which is the control that proves the index rather than the family is missing. Antenati says so itself: only part of its registers are indexed. These 422 must be read page by page. The marriage PROCESSETTI are the prize, because they carry birth extracts and parental consents for both parties.",
+   "href": "/the-other-archives"
+  },
+  {
+   "db": "National Library of Ireland parish registers",
+   "where": "the Limerick line — Atkinson, Cole, Creech, Kent, Bowen, Peevers",
+   "holds": "CATHOLIC registers only",
+   "span": "to 1880",
+   "verdict": "unusable",
+   "note": "The NLI collection is Catholic by definition, and this line is not. Paul Cole Atkinson is recorded as born at ST MARY'S, LIMERICK — the Church of Ireland cathedral parish — and the surnames around him are Protestant settler names. The same shape as the Wicklow problem: the right records are the ones the NLI does not hold.",
+   "href": "/errands"
+  },
+  {
+   "db": "irishgenealogy.ie",
+   "where": "the Creech, Atkinson and Mulcahy lines",
+   "holds": "unknown",
+   "span": "—",
+   "verdict": "blocked",
+   "note": "A Cloudflare bot check, for the third time in this archive's life. Not defeated, and will not be. The free official Irish index remains unreachable from here and stays on the errand list for a person with a browser.",
+   "href": "/errands"
+  },
+  {
+   "db": "RootsIreland",
+   "where": "Co. Limerick and Co. Tipperary",
+   "holds": "county-by-county transcriptions",
+   "span": "—",
+   "verdict": "partial",
+   "note": "Reachable, and behind Login / Register / Subscribe. Limerick and both Tipperarys are among its counties. It is a subscription, so it is an errand and not a search.",
+   "href": "/errands"
+  },
+  {
+   "db": "ScotlandsPeople",
+   "where": "South Leith — Jean Ward's parish",
+   "holds": "the original OPR images",
+   "span": "1553–1855",
+   "verdict": "blocked",
+   "note": "The old-parish-register search area answers ACCESS DENIED without an account. No account was created and no credentials were entered. Jean Ward's 1754 baptism and her parents' 1747 marriage are already held here from FamilySearch; what ScotlandsPeople would add is the register image itself.",
+   "href": "/jean-ward"
   }
  ]
 }

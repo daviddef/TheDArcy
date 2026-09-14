@@ -9,6 +9,54 @@
  ],
  "rows": [
   {
+   "src": "Antenati — Portale Antenati, Archivio di Stato di Caserta",
+   "what": "The Arienzo registers, for the Italian side of the marriage that joins this archive to the Falco one",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "422 REGISTERS FOR ARIENZO, digitised and free: Matrimoni processetti 63, Matrimoni 62, Nati 59, Morti 57, Diversi 45, from 1809. NOT NAME-INDEXED — a search for FALCO returns nothing and so does RUSSO, the commonest surname in Campania, which is the control proving the index is missing rather than the family. They must be read page by page, and the processetti carry birth extracts and parental consents for both parties. This is the FALCO archive's subject, not this one's; recorded here as reachable ground rather than imported.",
+   "href": "/the-other-archives"
+  },
+  {
+   "src": "National Library of Ireland — Catholic Parish Registers",
+   "what": "The Limerick Atkinson, Cole, Creech, Kent, Bowen and Peevers line",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "STRUCTURALLY OUT OF SCOPE, and worth stating rather than searching. The NLI collection is CATHOLIC ONLY. Paul Cole Atkinson is recorded born at ST MARY'S, LIMERICK — the Church of Ireland cathedral parish — and Atkinson, Cole, Creech, Kent, Bowen and Peevers are Protestant settler names. The same shape as the Wicklow problem on /george-pitt: the records this family needs are the ones this source does not hold.",
+   "href": "/errands"
+  },
+  {
+   "src": "irishgenealogy.ie",
+   "what": "The Creech, Atkinson and Mulcahy lines — errand 14",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "A Cloudflare bot check — “Performing security verification” — for the third time in this archive's life. Not defeated, and will not be.",
+   "href": "/errands"
+  },
+  {
+   "src": "RootsIreland",
+   "what": "Limerick and Tipperary parish transcriptions",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "Reachable, and behind Login / Register / Subscribe. Co. Limerick and both Tipperarys are among its counties. A subscription, so an errand rather than a search.",
+   "href": "/errands"
+  },
+  {
+   "src": "ScotlandsPeople",
+   "what": "The South Leith originals behind Jean Ward's baptism",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "The old-parish-register search area answers ACCESS DENIED without an account. No account was created and no credentials entered. The 1754 baptism and the 1747 marriage are already held here from FamilySearch; what this source would add is the register image.",
+   "href": "/jean-ward"
+  },
+  {
+   "src": "BillionGraves",
+   "what": "Queensland burials, as a second opinion on Find a Grave",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "The page loads and its own search API answers 403 and 400; the country list never finishes and the page sits on “Please wait”. NOTHING WAS SEARCHED, so nothing is known. A blocked source, not an empty one.",
+   "href": "/errands"
+  },
+  {
    "src": "Find a Grave — Centenary Memorial Gardens, Brisbane (cemetery 2483416)",
    "what": "The Brisbane graves, from a source this archive had never used",
    "when": "15 Sep 2026",
