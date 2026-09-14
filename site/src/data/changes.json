@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "23 passes · 263 changes",
+ "eyebrow": "23 passes · 269 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -17,7 +17,13 @@
     "WITHDREW A CLAIM MADE THE DAY BEFORE. /margaret-jones announced the 1843 notice as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. The 1823 notice does it twenty years earlier. Filed as an error, and the page now carries the correction above the claim.",
     "FOUND THE 1806 MARRIAGE NOTICE: “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — Oxford University and City Herald, 1 November 1806. The Chester Courant adds the church and the officiant.",
     "Which disproved the correction made an hour earlier. The corps is on record in 1806, not 1823 and not 1843 — and the 1806 notice is the report of the very marriage the /margaret-jones page was built around. It also fixes Margaret as the ELDEST DAUGHTER.",
-    "DOCUMENTED JOSEPH D'ARCY'S PERSIAN DECORATION from the London Gazette of 30 June 1818: the Prince Regent's permission to wear the Second Class of the Imperial Order of the Lion and Sun, conferred by the King of Persia. Five papers carried it within the week. The page that said the archive “will not assert it from three letters after his name” now cites the grant."
+    "DOCUMENTED JOSEPH D'ARCY'S PERSIAN DECORATION from the London Gazette of 30 June 1818: the Prince Regent's permission to wear the Second Class of the Imperial Order of the Lion and Sun, conferred by the King of Persia. Five papers carried it within the week. The page that said the archive “will not assert it from three letters after his name” now cites the grant.",
+    "CHASED THE TWO RICHARD D'ARCY DEATHS. Neither is the Richard of Priestlands — and one of them opened a family nobody here knew existed.",
+    "“At St Helier's, JERSEY, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33” — Saint James's Chronicle, 23 May 1857.",
+    "And five years later: “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR”, died at Bangor, 14 June 1862.",
+    "JOSEPH D'ARCY MARRIED THE DAUGHTER OF AN EARL. The tree has always given him a wife CATHERINE GEORGIANA WEST, married at Bath in November 1817, and this archive never looked at the name — WEST is the family name of the EARLS DE LA WARR. Two newspapers call her Lady Catherine independently.",
+    "So the five Milford children are his SECOND family. “Third son” means there was a first and a second: at least eight children across two marriages, where this morning the archive credited him with five.",
+    "Established a real null on the Priestlands Richard: only FIVE D'Arcy deaths were ever registered in the Lymington district — Joseph, his widow, and three moderns — and no Richard D'Arcy or ARCY is in the 1851 census anywhere in Britain."
    ],
    "found": [
     [
@@ -43,6 +49,10 @@
     [
      "Added",
      "/joseph-darcy — the Lion and Sun, gazetted rather than inferred"
+    ],
+    [
+     "Added",
+     "/joseph-darcy — Lady Catherine, and the first family"
     ]
    ]
   },

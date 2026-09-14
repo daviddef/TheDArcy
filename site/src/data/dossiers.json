@@ -2310,6 +2310,21 @@
 "slug": "john-wells",
 "n": 1
 },
+"lady-catherine-georgiana-west": {
+"name": "Lady Catherine Georgiana West",
+"surname": "WEST",
+"rows": [
+{
+"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
+"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
+"link": "https://www.findmypast.co.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "lady-catherine-georgiana-west",
+"n": 1
+},
 "john-williams": {
 "name": "John Williams",
 "surname": "WILLIAMS",
@@ -2342,9 +2357,9 @@
 }
 },
 "counts": {
-"named": 197,
-"withTreePage": 52,
-"ownPage": 145,
-"mentions": 345
+"named": 199,
+"withTreePage": 53,
+"ownPage": 146,
+"mentions": 348
 }
 }

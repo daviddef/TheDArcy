@@ -143,9 +143,44 @@ import d from "../data/joseph-darcy.json";
   </section>
 
   <section class="blk">
+    <div class="lab">Bath, November 1817</div>
+    <h2 style="margin-top:.4rem">{d.ladycatherine.head}</h2>
+    <p class="lede">{d.ladycatherine.lede}</p>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
+      {d.ladycatherine.notices.map(([paper, text]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div class="small" style="color:var(--ink-3)">{paper}</div>
+          <p style="margin-top:.4rem"><strong>{text}</strong></p>
+        </div>
+      ))}
+    </div>
+
+    <p style="margin-top:1.3rem">{d.ladycatherine.who}</p>
+
+    <div class="scroll" style="margin-top:1.3rem">
+      <table>
+        <tbody>{d.ladycatherine.sons.map(([who, what, note]) => (
+          <tr><td><strong>{who}</strong><div class="small" style="color:var(--ink-3)">{what}</div></td>
+              <td class="small">{note}</td></tr>))}</tbody>
+      </table>
+    </div>
+
+    <div class="note" style="border-left-width:3px;margin-top:1.3rem">
+      {d.ladycatherine.means} <span class="chip doc">documented</span>
+    </div>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And what is not claimed here.</strong> {d.ladycatherine.careful}
+      {" "}<span class="chip inf">{d.ladycatherine.chip}</span>
+    </div>
+  </section>
+
+  <section class="blk">
     <div class="lab">Milford House, and after</div>
     <h2 style="margin-top:.4rem">{d.forward.head}</h2>
     <p class="lede">{d.forward.body}</p>
+    <p class="dek" style="margin-top:.8rem">These are the children of his SECOND marriage,
+      to KATHERINE LUCY ELIZA HYDE in November 1830.</p>
 
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
       {d.forward.kids.map(([who, bapt, what]) => (

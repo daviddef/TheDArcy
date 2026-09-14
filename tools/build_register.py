@@ -739,6 +739,12 @@ rec("John Maddock Jones", "marriage notice · “CAPTAIN J. M. JONES, of the ROY
 rec("Joseph D'Arcy", "gazetted · Prince Regent's permission to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred by the KING OF PERSIA",
     "record · London Gazette, 30 June 1818, in five newspapers within the week",
     "https://www.thegazette.co.uk/")
+rec("Richard D'Arcy", "death notice · “At St Helier's, Jersey, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33” · 13 May 1857",
+    "record · Saint James's Chronicle, 23 May 1857, p.1; Clare Journal, 28 May 1857", "https://www.findmypast.co.uk/")
+rec("Robert D'Arcy", "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
+    "record · London Evening Standard and Morning Herald, 25 June 1862", "https://www.findmypast.co.uk/")
+rec("Lady Catherine Georgiana West", "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
+    "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862", "https://www.findmypast.co.uk/")
 
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [

@@ -1,11 +1,11 @@
 {
-"entries": 818,
-"distinct": 570,
-"records": 345,
+"entries": 821,
+"distinct": 572,
+"records": 348,
 "tree": 473,
 "grafted": 98,
-"linked": 818,
-"surnames": 194,
+"linked": 821,
+"surnames": 195,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1177,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 142,
+"n": 144,
 "rows": [
 {
 "name": "Catherine D'Arcy",
@@ -1579,6 +1579,13 @@
 "kind": "record"
 },
 {
+"name": "Richard D'Arcy",
+"says": "death notice · “At St Helier's, Jersey, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33” · 13 May 1857",
+"source": "record · Saint James's Chronicle, 23 May 1857, p.1; Clare Journal, 28 May 1857",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
 "name": "Robert D'Arcy",
 "says": "buried Chatham St Mary the Virgin, 19 May 1827, entry 1571 · AGE 76 · abode Chatham — the register the tree's 1751 has always rested on",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
@@ -1701,6 +1708,13 @@
 "name": "Robert D'Arcy",
 "says": "named in November 1806 as “COL. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found anywhere giving his corps",
 "source": "record · Oxford University and City Herald, 1 Nov 1806, p.2",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
+"source": "record · London Evening Standard and Morning Herald, 25 June 1862",
 "link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
@@ -6828,6 +6842,19 @@
 "says": "convict · suspected of breaking open Major D'Arcy's crate of dinner ware, 17 May 1826",
 "source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
 "link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733",
+"kind": "record"
+}
+]
+},
+{
+"surname": "WEST",
+"n": 1,
+"rows": [
+{
+"name": "Lady Catherine Georgiana West",
+"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
+"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 }
 ]

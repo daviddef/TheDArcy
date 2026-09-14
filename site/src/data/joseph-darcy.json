@@ -299,5 +299,35 @@
  "duty": {
   "head": "And the will has a second document",
   "body": "JOSEPH D'ARCY of Lymington, Hampshire, grant year 1848, court “PCC and Country Courts” — Index to Death Duty Registers 1796-1903, The National Archives IR 27/284. The Death Duty register behind that index (IR 26) states the value of the estate and names the legatees and executors, often in more detail than the will itself. That is now two documents at Kew rather than one, and the index reference for finding them."
+ },
+ "ladycatherine": {
+  "head": "Joseph D'Arcy married the daughter of an earl, and had a family by her this archive never knew about",
+  "lede": "The five Milford children are his SECOND family. Two death notices, five years apart, name a first one — and name their mother.",
+  "notices": [
+   [
+    "Saint James's Chronicle, Saturday 23 May 1857, page 1",
+    "“May 13, at St. Helier's, Jersey, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33.”"
+   ],
+   [
+    "London Evening Standard and Morning Herald, both Wednesday 25 June 1862",
+    "“D'ARCY. — On the 14th inst., at Bangor, North Wales, CAPTAIN ROBERT D'ARCY, LATE OF THE INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY, of the ROYAL ARTILLERY, and LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR.”"
+   ]
+  ],
+  "who": "“The late Lieut. Col. D'Arcy, Royal Artillery” is Joseph, who died at Lymington in 1848. The family tree has always given him a wife CATHERINE GEORGIANA WEST, married at BATH in NOVEMBER 1817, and this archive has never looked at the name. WEST is the family name of the EARLS DE LA WARR. Two newspapers, independently, call her LADY CATHERINE and make her a peer's daughter and a peer's sister.",
+  "sons": [
+   [
+    "CAPTAIN ROBERT D'ARCY",
+    "late of the Honourable East India Company's Army",
+    "Died at BANGOR, North Wales, 14 June 1862. Named for his grandfather the Major-General."
+   ],
+   [
+    "RICHARD D'ARCY",
+    "described as the THIRD SON",
+    "Died at ST HELIER, JERSEY, 13 May 1857, AGED 33 — so born about 1824."
+   ]
+  ],
+  "means": "“Third son” is the load-bearing phrase. If Richard was the third, there was a first and a second, and Robert is one of them. So Joseph D'Arcy had AT LEAST THREE SONS by Lady Catherine before he married Katherine Lucy Eliza Hyde in November 1830 and had five more children at Milford. This archive credited him with five children this morning. It is now at least eight, across two marriages, and the first marriage was into the peerage.",
+  "careful": "What is documented is what the notices say: two sons, their mother's style and her brother's title, and Richard's place in the order. WHICH Earl De La Warr, and therefore Lady Catherine's own parentage, is not stated in either notice and is not asserted here — the Earl who was “present” in 1857 and 1862 is a fact about the peerage, not about this family, and it belongs in a reference book this archive has not opened. The first and second sons are unnamed. And when Lady Catherine died is unknown, beyond its being before November 1830.",
+  "chip": "documented, and deliberately unfinished"
  }
 }
