@@ -81,10 +81,18 @@ const HOLDS = [
       <table>
         <thead><tr><th>Where the evidence comes from</th><th class="m">Records</th><th class="m">Share</th></tr></thead>
         <tbody>
+          {/* Counted, not typed. This table used to hold 117/39% and 185/61%, which were
+              true when written and silently wrong four days later — while a computed
+              sentence directly below it gave the right figures. */}
           <tr><td>Australian — Queensland registration, QSA, NAA, AWM, Trove, the Blue Books</td>
-              <td class="m">117</td><td class="m">39%</td></tr>
-          <tr><td>British — FreeREG, FreeBMD, the censuses, TNA, Gloucestershire Archives, the Army Lists, the London Gazette</td>
-              <td class="m">185</td><td class="m">61%</td></tr>
+              <td class="m">{audit.aus}</td><td class="m">{audit.ausPct}%</td></tr>
+          <tr><td>British — FreeREG, FreeBMD, the censuses, TNA, Gloucestershire Archives, the Army Lists,
+              the London Gazette, the Royal Military Calendar, Smyth's survey of the Hundred of Berkeley</td>
+              <td class="m">{audit.bri}</td><td class="m">{audit.briPct}%</td></tr>
+          {audit.emp > 0 && (
+            <tr><td>Elsewhere in the empire — Barbados, Madeira, Minorca</td>
+                <td class="m">{audit.emp}</td><td class="m">{audit.empPct}%</td></tr>
+          )}
         </tbody>
       </table>
     </Scroll>
