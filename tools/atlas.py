@@ -116,7 +116,9 @@ def main():
             "more": max(0, len(names) - 12) or None,
         })
     atlasdata.build(rows, os.path.join(HERE, "..", "site", "public", "atlas-data.json"),
-                    countries=["United Kingdom","Ireland","Éire","Australia","Barbados","Italia","Italy","France","Deutschland","Germany","España","Spain","Danmark","Denmark","Nederland","Netherlands"])
+                    countries=["United Kingdom","England","Scotland","Wales","London","Ireland","\u00c9ire",
+                               "Australia","Barbados","Italia","Italy","France","Deutschland","Germany",
+                               "Espa\u00f1a","Spain","Danmark","Denmark","Nederland","Netherlands"])
 
 if __name__ == "__main__":
     sys.exit(main())
