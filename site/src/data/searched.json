@@ -9,6 +9,30 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — 1851 England, Wales & Scotland Census",
+   "what": "The Sussex sisters by ADDRESS and by HOUSEHOLD rather than by surname",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "ALL THREE, at WESTERN COTTAGE, BRIGHTON — HO107/1646 f.357 p.59 sch.172. JANE D ARCY 55, CATHERINE ARCY 50, CHARLOTTE ARCY 40; all three LODGERS, all UNMARRIED, all “Fund holder”. And the birthplaces: JANE and CATHERINE born BARBADOES, CHARLOTTE born LYME, DORSET. An English census confirming the West Indies posting that rested yesterday on two Caribbean christenings and a family tree.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast census — the household search",
+   "what": "Why four days of surname searches had missed them",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "The surname is indexed as ARCY: the enumerator's D' was read as part of the forename or dropped. No search for a surname beginning D and ending ARCY could reach them. They surfaced from a HOUSEHOLD search — Jane, with a Charlotte in the same house, in Brighton — which returns 119 people, the third of whom is “Jane D Arcy”. This archive's own alias list already carries “arcy” as a form of D'Arcy; the queries put to somebody else's index did not.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast — 1861 census, four independent approaches",
+   "what": "The sisters in 1861",
+   "when": "14 Sep 2026",
+   "outcome": "empty",
+   "got": "Not found by surname (ARCY or D*ARCY in Sussex), by address (Bedford Square in 1861 and 1871; the Western streets), by birthplace in the county (33 people born Barbadoes in Sussex, read one by one) or by birthplace nationally (25 Janes, 16 Catherines). A null that has earned the name.",
+   "href": "/sussex-sisters"
+  },
+  {
    "src": "FindMyPast — England & Wales Deaths 1837-2007 (GRO index)",
    "what": "Deaths of Robert D'Arcy's three surviving daughters in Sussex",
    "when": "14 Sep 2026",

@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "22 passes · 245 changes",
+ "eyebrow": "22 passes · 250 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -16,7 +16,12 @@
     "Found all three sisters IN ONE HOUSEHOLD in the 1841 census — Western Buildings, Brighton, schedule 1912, with a servant, Sarah Harmer, 20.",
     "Published the one thing that does not fit rather than burying it: the 1841 ages are 40, 39 and 35 when the sisters were 53, 51 and 46.",
     "CAUGHT A SEARCH THAT LIES. A first pass reported no Jane D'Arcy of the right age in Sussex in 1871. The control — Jane Smith, same age, same county, same census — returned zero, which is impossible. Combining a year of birth with a place breaks FindMyPast's census query silently.",
-    "Re-ran the census work by year alone: the sisters are in none of 1851, 1861 or 1871 under any D*ARCY spelling. A real gap, now an errand rather than a false negative."
+    "Re-ran the census work by year alone: the sisters are in none of 1851, 1861 or 1871 under any D*ARCY spelling. A real gap, now an errand rather than a false negative.",
+    "SEARCHED BY ADDRESS AND BY HOUSEHOLD INSTEAD OF BY NAME, and found all three sisters in the 1851 census at WESTERN COTTAGE, BRIGHTON — HO107/1646 f.357 p.59 sch.172.",
+    "THE CENSUS GIVES THEIR BIRTHPLACES: Jane and Catherine born BARBADOES, Charlotte born LYME, DORSET. An English government record confirming the West Indies posting that had rested on two Caribbean christenings and a family tree.",
+    "All three entered as LODGERS, UNMARRIED, occupation “FUND HOLDER” — living on invested capital, in rooms in somebody else's house.",
+    "Found why four days of searching had missed them: the surname is indexed as ARCY, the D' read as part of the forename. No D*ARCY query could reach them. They came out of a household search — Jane, with a Charlotte in the same house.",
+    "Searched 1861 four independent ways — surname, address, birthplace in Sussex, birthplace nationally — and they are in none of it."
    ],
    "found": [
     [
@@ -38,6 +43,10 @@
     [
      "Added",
      "/errands — three new jobs, including the Death Duty register at Kew"
+    ],
+    [
+     "Added",
+     "/sussex-sisters — the 1851 household, and the census that says Barbadoes"
     ]
    ]
   },

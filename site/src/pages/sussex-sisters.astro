@@ -67,6 +67,34 @@ import d from "../data/sussex-sisters.json";
     </Note>
   </Blk>
 
+  <Blk label={d.census1851.ref} title={d.census1851.head}>
+    <Scroll>
+      <table>
+        <thead><tr><th>Forename</th><th>Surname</th><th>In the house</th><th>Status</th><th class="m">Age</th><th>Born</th><th>Occupation</th></tr></thead>
+        <tbody>{d.census1851.rows.map(([f, s2, rel, cond, age, born, occ]) => (
+          <tr><td><strong>{f}</strong></td><td><strong>{s2}</strong></td>
+              <td class="small">{rel}</td><td class="small">{cond}</td>
+              <td class="m">{age}</td>
+              <td><strong>{born}</strong></td><td class="small">{occ}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      {d.census1851.why} <span class="chip doc">{d.census1851.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.census1851.detail}</p>
+    <p class="small" style="margin-top:1rem"><a href={u("/constantine/")}>The Barbados christenings →</a> ·
+      <a href={u("/the-corps/")}>The twenty-four-year gap in his career →</a></p>
+  </Blk>
+
+  <Blk label="Why it took four days" title={d.hidden.head}>
+    <p class="lede">{d.hidden.body}</p>
+    <Note style="margin-top:1.2rem">{d.hidden.found}</Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.hidden.lesson}</strong> <span class="chip lore">{d.hidden.chip}</span>
+      {" "}<a href={u("/what-we-got-wrong/")}>The other two →</a>
+    </Note>
+  </Blk>
+
   <Blk label="Coverage" title={d.nulls.head}>
     <Scroll>
       <table>
@@ -75,7 +103,8 @@ import d from "../data/sussex-sisters.json";
               <td class="small">{v}</td></tr>))}</tbody>
       </table>
     </Scroll>
-    <Note style="margin-top:1.2rem">{d.nulls.means}</Note>
+    <Note style="margin-top:1.2rem">{d.nulls.means}
+      {" "}<span class="chip lore">{d.nulls.chip}</span></Note>
   </Blk>
 
   <Blk label="Method" title={d.trap.head}>

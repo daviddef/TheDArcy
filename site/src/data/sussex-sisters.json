@@ -5,9 +5,27 @@
  "deaths": {
   "head": "Three registrations, one district, seven years",
   "rows": [
-   ["CHARLOTTE DARCY", "aged 73", "Q2 1869", "Brighton, Sussex", "vol 2B, page 152"],
-   ["JANE DARCY", "aged 87", "Q1 1875", "Brighton, Sussex", "vol 2B, page 203"],
-   ["CATHERINE DARCY", "aged 86", "Q1 1876", "Brighton, Sussex", "vol 2B, page 164"]
+   [
+    "CHARLOTTE DARCY",
+    "aged 73",
+    "Q2 1869",
+    "Brighton, Sussex",
+    "vol 2B, page 152"
+   ],
+   [
+    "JANE DARCY",
+    "aged 87",
+    "Q1 1875",
+    "Brighton, Sussex",
+    "vol 2B, page 203"
+   ],
+   [
+    "CATHERINE DARCY",
+    "aged 86",
+    "Q1 1876",
+    "Brighton, Sussex",
+    "vol 2B, page 164"
+   ]
   ],
   "means": "These are General Register Office death index entries, and after 1866 that index gives an AGE AT DEATH. Run the ages back and you get births of about 1795, 1787 and 1789. The tree — sourced from web trees and nothing else — gives 19 October 1794, 15 December 1787 and 10 December 1789. TWO OF THE THREE AGREE TO THE YEAR, and Charlotte is out by one, which is what an age stated by a grieving household does.",
   "chip": "documented"
@@ -28,9 +46,21 @@
   "head": "All three under one roof, 1841",
   "ref": "HO107/1122, book 8, folio 37, page 22, schedule 1912 · WESTERN BUILDINGS, BRIGHTON · sub-district The Palace",
   "rows": [
-   ["Jane", "D'Arcy", 40],
-   ["Catharine", "D'Arcy", 39],
-   ["Charlotte", "D'Arcy", 35]
+   [
+    "Jane",
+    "D'Arcy",
+    40
+   ],
+   [
+    "Catharine",
+    "D'Arcy",
+    39
+   ],
+   [
+    "Charlotte",
+    "D'Arcy",
+    35
+   ]
   ],
   "servant": "Enumerated immediately before them, at the same address: SARAH HARMER, 20, born Sussex.",
   "means": "Three unmarried D'Arcy sisters named Jane, Catharine and Charlotte, keeping house together in Brighton with a servant — and three unmarried D'Arcy women named Jane, Catherine and Charlotte dying in the Brighton registration district between 1869 and 1876. There is no serious doubt that these are the same three women.",
@@ -38,14 +68,27 @@
   "chip": "near-certain, with an age problem"
  },
  "nulls": {
-  "head": "And where they are not",
+  "head": "1861, which is a real gap",
   "rows": [
-   ["1851 census, Brighton", "One D'Arcy in the whole town: Mary, born about 1821. None of the sisters."],
-   ["1861 census, Brighton", "Six: Daniel b.1818, Eliza b.1816 and four children. A different family entirely."],
-   ["1871 census, Brighton", "One: Ann Darcy, born about 1807."],
-   ["1861 and 1871, ALL of England, Wales and Scotland", "Searched by year of birth alone, with a wildcard surname, for any D*ARCY born 1783–1795: four and six results respectively, and not one of them is these women."]
+   [
+    "Surname",
+    "No ARCY and no D*ARCY anywhere in Sussex in 1861."
+   ],
+   [
+    "Address",
+    "Bedford Square, Brighton, 1861 and 1871 — searched house by house. Not there. Western Buildings and Western Cottage return nothing in 1861 either."
+   ],
+   [
+    "Birthplace",
+    "Thirty-three people born BARBADOES in Sussex in 1861, listed and read one by one. None is Jane or Catherine."
+   ],
+   [
+    "Birthplace, nationally",
+    "Twenty-five Janes and sixteen Catherines born Barbadoes in the whole of England, Wales and Scotland in 1861. Not one of them fits."
+   ]
   ],
-  "means": "So they are in Brighton in 1841, dying in Brighton from 1869, and enumerated in neither 1851, 1861 nor 1871 under any spelling beginning D and ending ARCY. That is a real gap and not a failed search. The likeliest cause is a transcription that lost the leading D, or a surname the enumerator wrote as something else entirely — but LASTNAME=ARCY returns nothing at Brighton either. It is the open end of this page."
+  "means": "Four independent approaches — name, address, birthplace in the county, birthplace in the country — and the sisters are not in the 1861 census. They are at Western Cottage in 1851 and Catherine is at Bedford Square in 1876. Where they were on 7 April 1861 is genuinely unknown, and this is a null that has earned the name. The 1871 census is untested by address beyond Bedford Square and remains the obvious next move.",
+  "chip": "searched four ways, and empty"
  },
  "trap": {
   "head": "A search that lies, and how it was caught",
@@ -55,9 +98,65 @@
   "lesson": "This is the third time in a fortnight that a confident negative has turned out to be an artefact of how the question was asked — after SANIGOR, and after searching Bristol for a woman who died in Queensland. The control test is not a formality."
  },
  "matters": [
-  ["Three people move from a web tree to the public record.", "Jane, Catherine and Charlotte were added to this archive yesterday on the authority of the McDougall Web Site, the Darcy Web Site and a MyHeritage SmartCopy. They now have civil death registrations with volume and page, and one of them has an obituary and a probate."],
-  ["Two of the tree's dates are confirmed to the year, and one to the day.", "Jane's age of 87 and Catherine's of 86 fit the tree's December 1787 and December 1789 exactly. Catherine's death of 23 January 1876 is confirmed by a newspaper against a date the tree gave without a source."],
-  ["The family had a Brighton house.", "Western Buildings in 1841, Bedford Square by 1876, a servant in both directions — the general's unmarried daughters living together on the Sussex coast for at least thirty-five years, which nobody in this archive knew a week ago."]
+  [
+   "Three people move from a web tree to the public record.",
+   "Jane, Catherine and Charlotte were added to this archive yesterday on the authority of the McDougall Web Site, the Darcy Web Site and a MyHeritage SmartCopy. They now have civil death registrations with volume and page, and one of them has an obituary and a probate."
+  ],
+  [
+   "Two of the tree's dates are confirmed to the year, and one to the day.",
+   "Jane's age of 87 and Catherine's of 86 fit the tree's December 1787 and December 1789 exactly. Catherine's death of 23 January 1876 is confirmed by a newspaper against a date the tree gave without a source."
+  ],
+  [
+   "The family had a Brighton house.",
+   "Western Buildings in 1841, Bedford Square by 1876, a servant in both directions — the general's unmarried daughters living together on the Sussex coast for at least thirty-five years, which nobody in this archive knew a week ago."
+  ],
+  [
+   "And the Barbados posting stops being an inference.",
+   "Yesterday the West Indies years rested on two christenings in a Caribbean index and a birthplace on a family tree. Today two of Robert D'Arcy's daughters are recorded in an English census as born in BARBADOES, and the youngest as born at Lyme Regis in Dorset — the same shape, from a different kind of source entirely."
+  ]
  ],
- "open": "Where they were in 1851, 1861 and 1871. What the Death Duty register says Catherine left and to whom. Whether Charlotte and Jane also left probates. And whether any of the three is buried where the others are — no burial record has yet been looked for at all."
+ "open": "Where they were in 1861 — searched four ways and not found. What the Death Duty register says Catherine left and to whom. Whether Charlotte and Jane also left probates. Who kept Western Cottage, since the sisters were only lodging in it. And whether any of the three is buried where the others are — no burial record has been looked for at all.",
+ "census1851": {
+  "head": "1851: all three, and the census says BARBADOES",
+  "ref": "HO107/1646, folio 357, page 59, schedule 172 · WESTERN COTTAGE, BRIGHTON · sub-district The Place, enumeration district 1N",
+  "rows": [
+   [
+    "Jane D",
+    "Arcy",
+    "Lodger",
+    "Unmarried",
+    55,
+    "BARBADOES",
+    "Fund holder"
+   ],
+   [
+    "Catherine",
+    "Arcy",
+    "Lodger",
+    "Unmarried",
+    50,
+    "BARBADOES",
+    "Fund holder"
+   ],
+   [
+    "Charlotte",
+    "Arcy",
+    "Lodger",
+    "Unmarried",
+    40,
+    "Lyme, DORSET",
+    "Fund holder"
+   ]
+  ],
+  "why": "This is the best record this archive has found about Robert D'Arcy's West Indies years, and it is not about Robert. TWO OF HIS DAUGHTERS TOLD AN ENGLISH CENSUS ENUMERATOR THEY WERE BORN IN BARBADOES, and the third said Lyme Regis, Dorset. That is exactly the pattern this archive reconstructed yesterday out of two Barbados christenings and a birthplace on a family tree — and it now rests on an English government record instead.",
+  "detail": "“FUND HOLDER” means living on invested capital — the three of them keeping themselves on dividends, which is what unmarried daughters of a major-general did. “LODGER” means they did not keep the house: Western Cottage was somebody else's and they had rooms in it. All three are entered UNMARRIED, which confirms the “Miss” of Catherine's obituary twenty-five years later.",
+  "chip": "documented"
+ },
+ "hidden": {
+  "head": "And why four days of searching missed them",
+  "body": "The surname is indexed as ARCY. Jane is “Jane D” with a surname of “Arcy”; her sisters are “Catherine Arcy” and “Charlotte Arcy”. The enumerator's D' was read as part of the forename or dropped altogether, and every search this archive ran against a surname beginning D and ending ARCY — which is every search it ran — could not reach them.",
+  "found": "They came out of a household search instead: JANE, with a CHARLOTTE in the same household, in Brighton. That returns 119 people and the third of them is “Jane D Arcy”. Searching by who somebody lived with, rather than by what they were called, is the move that worked.",
+  "lesson": "Third time in a fortnight. SANIGOR hid a baptism because a spelling was missing from an alias list. A search for Martha in Bristol failed because she died in Queensland. And now a D' read as a forename. THIS ARCHIVE'S OWN SEARCH INDEX ALREADY LISTS “arcy” as a form of D'Arcy — the alias list was right and the queries put to somebody else's index were not.",
+  "chip": "own error, and the same error"
+ }
 }

@@ -1,10 +1,10 @@
 {
-"entries": 798,
+"entries": 801,
 "distinct": 568,
-"records": 325,
+"records": 328,
 "tree": 473,
 "grafted": 98,
-"linked": 798,
+"linked": 801,
 "surnames": 193,
 "groups": [
 {
@@ -1177,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 125,
+"n": 128,
 "rows": [
 {
 "name": "Catherine D'Arcy",
@@ -1208,6 +1208,13 @@
 "kind": "record"
 },
 {
+"name": "Catherine D'Arcy",
+"says": "census 1851 · aged 50 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · Western Cottage, Brighton",
+"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
 "name": "Charlotte D'Arcy",
 "says": "born 29 April 1825 · baptised Chatham 31 March 1826 · father GEORGE PITT D'ARCY, Bt: Major 39th Foot · mother MARIA · eight days before the England sailed",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
@@ -1225,6 +1232,13 @@
 "name": "Charlotte D'Arcy",
 "says": "census 1841 · aged 35 · Western Buildings, Brighton",
 "source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "census 1851 · aged 40 · LODGER, UNMARRIED, “Fund holder” · BORN LYME REGIS, DORSET · Western Cottage, Brighton",
+"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
@@ -1386,6 +1400,13 @@
 "name": "Jane D'Arcy",
 "says": "census 1841 · aged 40 · Western Buildings, Brighton, with her sisters Catharine and Charlotte",
 "source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "census 1851 · aged 55 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · Western Cottage, Brighton",
+"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },

@@ -694,6 +694,12 @@ rec("Charlotte D'Arcy", "census 1841 · aged 35 · Western Buildings, Brighton",
     "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912", "https://www.findmypast.com.au/")
 rec("Sarah Harmer", "census 1841 · aged 20, born Sussex · Western Buildings, Brighton — servant to the D'Arcy sisters",
     "record · 1841 census HO107/1122 bk8 f.37 p.22", "https://www.findmypast.com.au/")
+rec("Jane D'Arcy", "census 1851 · aged 55 · LODGER, UNMARRIED, \u201cFund holder\u201d · BORN BARBADOES · Western Cottage, Brighton",
+    "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)", "https://www.findmypast.com.au/")
+rec("Catherine D'Arcy", "census 1851 · aged 50 · LODGER, UNMARRIED, \u201cFund holder\u201d · BORN BARBADOES · Western Cottage, Brighton",
+    "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)", "https://www.findmypast.com.au/")
+rec("Charlotte D'Arcy", "census 1851 · aged 40 · LODGER, UNMARRIED, \u201cFund holder\u201d · BORN LYME REGIS, DORSET · Western Cottage, Brighton",
+    "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)", "https://www.findmypast.com.au/")
 
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [
