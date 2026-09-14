@@ -454,7 +454,7 @@ rec("Zillah Wakefield", "married in Queensland 1871 \u00b7 born Bristol 1845, sh
 ARMY = "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette"
 FMP_L7 = "https://www.findmypast.com.au/"
 for _says in [
-    "1778 · PRACTITIONER ENGINEER AND SECOND LIEUTENANT, The Corps of Engineers — his first commission, and the earliest record of him in this archive",
+    "17 JANUARY 1776 · PRACTITIONER ENGINEER AND SECOND LIEUTENANT, The Corps of Engineers — his first commission, and the earliest record of him in this archive. The seniority date is printed in the Army Lists of 1778 and 1781",
     "8 May 1802 · Captain promoted MAJOR IN THE ARMY, Royal Engineers · War Office 11 May 1802 · London Gazette 15478 p.468",
     "1 March 1805 · Brevet Major promoted LIEUTENANT-COLONEL, Corps of the Royal Engineers, vice Nepean · Ordnance Office 18 March 1805 · London Gazette 15789 p.351",
     "4 June 1813 · Lieutenant-Colonel promoted COLONEL IN THE ARMY BY BREVET by the Prince Regent · War Office 7 June 1813 · London Gazette 16737 p.1100",
