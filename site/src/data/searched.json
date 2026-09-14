@@ -1805,6 +1805,22 @@
    "outcome": "blocked",
    "got": "All three are digitised and open, and all three read “£3.50 - sign in to get this free”. The charge is waived for any registered user and registration is free, so these are not paid records — they are free records behind a free account. This archive creates no accounts, so they stay on the errand queue, but at nil cost rather than £10.50.",
    "href": "/errands"
+  },
+  {
+   "src": "The National Archives — Discovery, the other surnames",
+   "what": "SINEGAR, SANIGRE, COTTON of Berkeley, WAKEFIELD with Saniger, and D'Arcy with the Royal Engineers at Chatham",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "COTTON of Berkeley gives the first document from Catherine Cotton's side of the family: PROB 11/1056/294, the will of Benjamin Cotton, cordwainer of Berkeley, proved 16 September 1779, eleven months after her burial in the same parish. D'ARCY with Chatham returns Robert D'Arcy's own will and twenty plans of the Chatham Lines from 1804 to 1821 — MR 1/553/3, and the MFQ 1/1280 and MFQ 1/1315 series — drawn across the years this archive says he was chief engineer there.",
+   "href": "/errands"
+  },
+  {
+   "src": "The National Archives — Discovery",
+   "what": "SINEGAR and SANIGRE as surnames",
+   "when": "14 Sep 2026",
+   "outcome": "null",
+   "got": "Sanigre: nothing at all. Sinegar: three records and not one is a person — a Bisley police station called Sinegar House in 1950 and 1984, and an unrelated Sussex account of 1705. Both spellings are productive in the Bristol and Berkeley registers and neither has left a catalogued document anywhere.",
+   "href": "/sanigers"
   }
  ]
 }
