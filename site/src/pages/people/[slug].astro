@@ -180,13 +180,28 @@ function clean(s) {
 }
 const isDamaged = (s) => /box-sizing|font-family\s*:|style="/i.test(String(s));
 
-/* What to say under the name, in order of what is actually known. */
-const _place = val("bornPlace", p.bornPlace);
+/* What to say under the name, in order of what is actually known.
+
+   These fields were typed by hand into a family tree over decades, so they
+   arrive with doubled spaces, a leading "of", a trailing comma and the odd
+   "(about)". Rendering them raw produced "Of of Aller, Som., Eng..", which is
+   the sort of thing a reader notices and an archive should not ship. */
+const tidy = (v) =>
+  String(v || "")
+    .replace(/\s+/g, " ")
+    .replace(/^\s*of[,]?\s+/i, "")
+    .replace(/[.,;\s]+$/, "")
+    .trim();
+const _placeRaw = String(val("bornPlace", p.bornPlace) || "");
+/* "(about)" in a birthplace marks the place as uncertain, not approximate in
+   the way a date is — "Of about Limerick City" is not English. */
+const _vague = /^\s*\(about\)/i.test(_placeRaw);
+const _place = tidy(_placeRaw.replace(/^\s*\(about\)\s*/i, ""));
 const _spouse = (p.spouses || []).find((s) => s.name && !s.living);
 const dek =
-  (val("occupation", p.occupation) || "").trim() ||
-  (_place ? `Of ${_place}.` : "") ||
-  (_spouse ? `Married ${_spouse.name}.` : "") ||
+  tidy(val("occupation", p.occupation)) ||
+  (_place ? `${_vague ? "Probably of" : "Of"} ${_place}.` : "") ||
+  (_spouse ? `Married ${tidy(_spouse.name)}.` : "") ||
   "On the family tree, with no occupation, birthplace or marriage recorded here.";
 
 const notes = (p.notes || [])
