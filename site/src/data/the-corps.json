@@ -22,6 +22,15 @@
    "note": "Under Lieutenant-Colonel Brewse, Chief Engineer in the island, with Captain Gilbert Townshend and Lieutenants Johnston, Douglas, Shipley and Fiddes. The Duc de Crillon landed on 19 August 1781 and the garrison was about three thousand. The first record of him on active service anywhere."
   },
   {
+   "year": "1 October 1784",
+   "was": "Practitioner Engineer and 2nd Lieutenant",
+   "became": "FIRST LIEUTENANT",
+   "unit": "Royal Engineers",
+   "src": "The Royal Military Calendar, 3rd edition (1820), vol. IV, entry 607",
+   "gaz": "",
+   "note": "A rank this archive did not have. He held the junior grade for eight years and eight months."
+  },
+  {
    "year": "1786 and 1788",
    "was": "—",
    "became": "In BARBADOS — and now confirmed by the Corps",
@@ -29,6 +38,15 @@
    "src": "St Michael, Barbados — christenings of CONSTANTINE (18 Feb 1786) and JANE (17 Mar 1788), father Robert, mother Jane; AND Porter's History of the Corps of Royal Engineers, station list: “Robert D'Arcy, Barbados”",
    "gaz": "",
    "note": "No longer an inference. The christenings put him in the West Indies with his wife in the middle of the 1780s; the Corps' own station list says the posting outright. What this page said until 15 September 2026 — that these were “the only two records that fall inside” the blank between 1778 and 1802 — was wrong: Porter puts him at the siege of Fort St Philip's on MINORCA in 1781, three years after his first commission."
+  },
+  {
+   "year": "15 August 1793",
+   "was": "First Lieutenant",
+   "became": "CAPTAIN",
+   "unit": "Royal Engineers",
+   "src": "The Royal Military Calendar, 3rd edition (1820), vol. IV, entry 607",
+   "gaz": "",
+   "note": "Also new here. It falls between the Barbados christenings and the majority of 1802, in years this page once called blank."
   },
   {
    "year": "8 May 1802",
@@ -171,5 +189,22 @@
   "dateChip": "documented — two printed lists, and Connolly agrees",
   "dateMeans": "This archive has printed two dates for that commission. The timeline and four other pages say 1776, on Connolly's Roll. This page's career table said 1778, on a commercial index of the commission registers, and called it “his first commission, and now the earliest record of him anywhere in this archive”. Two contemporary printed Army Lists and a nineteenth-century roll of the Corps now agree on 17 January 1776, so the career table was wrong and the timeline was right. Corrected 15 September 2026.",
   "dateCareful": "What is NOT claimed: that the 1778 index is a fabrication. Commission registers can carry a later confirming instrument, and a man can be appointed on one date and gazetted on another. But 1778 cannot be his FIRST commission, because he is already in the establishment with a 1776 seniority in a list printed that year."
+ },
+ "rmc": {
+  "head": "His whole service, printed while he was alive",
+  "lede": "The Royal Military Calendar was the army's own published record of its serving officers. The third edition of 1820 carries him under the Major-Generals, entry 607, with every rank and every date.",
+  "quote": "607. Major-General Robert Darcy, C.B. This officer was appointed Practitioner Engineer and 2nd Lieutenant in the corps of Royal Engineers, the 17th of January, 1776; 1st Lieutenant, the 1st of October, 1784; Captain, the 15th of August, 1793; Major in the army, the 29th of April, 1802; Lieutenant-Colonel in the Royal Engineers, the 1st of March, 1803; Colonel in the army, the 4th of June, 1813; Colonel in the Royal Engineers, the 21st of July, 1813; and Major-General, the 12th of August, 1819. He is a Companion of the Order of the Bath.",
+  "chip": "documented",
+  "means": "Printed in his lifetime, seven years before he died, from the army's own returns. It confirms 17 JANUARY 1776 outright — the date this archive worked out yesterday from a chain of ditto marks in the Army List of 1781, and had printed wrongly as 1778 on its own career page until then. Two independent routes to the same day.",
+  "newHead": "Two ranks this archive did not have",
+  "new": "FIRST LIEUTENANT, 1 October 1784, and CAPTAIN, 15 August 1793. Both fall inside the years this page once described as a blank, and the second of them lands between the Barbados christenings and the majority of 1802.",
+  "clashHead": "And one date that does not agree",
+  "clash": "This archive gives his lieutenant-colonelcy as 1 MARCH 1805, cited to the Ordnance Office notice in the London Gazette, issue 15789 page 351, promoted vice Nepean. The Royal Military Calendar gives 1 MARCH 1803 — same day, same month, two years apart. Everything else lines up as you would expect a gazette to lag a commission by days: the Calendar has Major on 29 April 1802 where the Gazette announced 11 May, and Colonel in the Royal Engineers on 21 July 1813 where the Ordnance Office notice is dated the 19th.",
+  "clashMeans": "A two-year gap is not a gazette lag, so one of them is wrong. The Gazette is the primary instrument and carries an issue, a page and the name of the man he replaced; the Calendar is a compilation and its typesetting is visibly imperfect elsewhere on the same page. This archive keeps 1805 and records the disagreement rather than quietly choosing.",
+  "chipClash": "an unresolved conflict, stated",
+  "parentHead": "What it does not say",
+  "parent": "Nothing about where he came from. The Calendar prints parentage and schooling when it has them — the very next entry, Major-General George Bridges, opens “After the usual course of instruction at Woolwich Academy” — and for Robert D'Arcy it prints none. The oldest question in this archive, who his parents were, is not answered here, and the silence is from the army's own book.",
+  "chipParent": "a null from the best-placed source",
+  "where": "Read 15 September 2026 in the free full text of the 1820 third edition on the Internet Archive."
  }
 }

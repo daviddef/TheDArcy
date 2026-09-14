@@ -39,6 +39,34 @@ import d from "../data/joseph-darcy.json";
   </section>
 
   <section class="blk">
+    <div class="lab">The Royal Military Calendar, 1820</div>
+    <h2 style="margin-top:.4rem">{d.rmc.head}</h2>
+    <p class="lede">{d.rmc.lede}</p>
+    <div class="note" style="border-left-width:3px;margin-top:1.1rem">
+      <strong>{d.rmc.quote}</strong> <span class="chip doc">{d.rmc.chip}</span>
+    </div>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th class="m">Date</th><th>Rank</th><th></th></tr></thead>
+        <tbody>{d.rmc.rows.map(([when, what, note]) => (
+          <tr><td class="m" style="white-space:nowrap">{when}</td>
+              <td><strong>{what}</strong></td><td class="small">{note}</td></tr>))}</tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:1.8rem">{d.rmc.persiaHead}</h3>
+    <div class="note" style="border-left-width:3px;margin-top:.8rem">
+      <strong style="font-size:1.05em">{d.rmc.persia}</strong>
+      <span class="chip doc">{d.rmc.chipPersia}</span>
+    </div>
+    <p style="margin-top:1.1rem">{d.rmc.persiaMeans}</p>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And what it still does not give.</strong> {d.rmc.careful}
+    </div>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.rmc.where}</p>
+  </section>
+
+  <section class="blk">
     <div class="lab">Prince Abbas Mirza</div>
     <h2 style="margin-top:.4rem">{d.persia.head}</h2>
     <p class="lede">{d.persia.body}</p>

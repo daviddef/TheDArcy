@@ -95,5 +95,38 @@
   "verdict": "So this is a null with a cause rather than a failed search. The record probably existed and probably no longer does. Saying that is more use to the next person than leaving the question open.",
   "next": "Two places could still hold it: the Representative Church Body Library in Dublin, which keeps the surviving Church of Ireland registers and knows which parishes survive; and Betham's abstracts of marriage licence bonds at the National Archives of Ireland, which survive as abstracts although the bonds themselves burned.",
   "licence": "This matters because it removes the last free route. The RCB Library in Dublin was written to on 13 September asking which Wicklow Anglican registers survive and in whose custody. That letter is now the only live line of enquiry, and it was sent before this was known."
+ },
+ "rmc": {
+  "head": "His commissions, from the army's own book",
+  "lede": "The Royal Military Calendar of 1820 carries him among the Majors at entry 2098 — the third D'Arcy in the same work, after his father and his brother.",
+  "quote": "2098. Major George D'Arcy. Ens. 39th foot, 25th Aug. 1794; Lieut. 29th Sept. 1795; Capt. 9th July, 1803; and brev. Maj. 22d Nov. 1813. Served in the Peninsula, and has received a medal for the battle of Orthes.",
+  "chip": "documented",
+  "rows": [
+   [
+    "25 August 1794",
+    "Ensign, 39th Foot",
+    "He was eleven, if the tree's 1783 is right — which is why that birth year needs testing, not repeating"
+   ],
+   [
+    "29 September 1795",
+    "Lieutenant",
+    ""
+   ],
+   [
+    "9 July 1803",
+    "Captain",
+    ""
+   ],
+   [
+    "22 November 1813",
+    "Brevet Major",
+    "The rank the Chatham register gives him as “Bt: Major 39th Foot”"
+   ]
+  ],
+  "means": "Four dates and a regiment, printed while he was alive. This archive had the 39th Foot from a parish register and Orthes from a medal roll; the Calendar has both, and adds the whole ladder between them.",
+  "ageHead": "And a problem it hands over",
+  "age": "The family tree gives George Pitt D'Arcy a birth in 1783. An ensigncy in August 1794 would make him ELEVEN YEARS OLD. Boy commissions were real and the 39th was not unusual in that, but eleven is young even for the period, and the alternative is that the 1783 is wrong. This archive has never had a baptism for him.",
+  "chipAge": "a conflict between a tree date and a commission date",
+  "where": "Read 15 September 2026 in the free full text of the 1820 third edition, volume V, on the Internet Archive."
  }
 }

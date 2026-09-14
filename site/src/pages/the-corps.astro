@@ -66,6 +66,29 @@ import d from "../data/the-corps.json";
     </Note>
   </Blk>
 
+  <Blk label="The Royal Military Calendar, 1820" title={d.rmc.head}>
+    <p class="lede">{d.rmc.lede}</p>
+    <Note style="border-left-width:3px;margin-top:1.1rem">
+      <strong>{d.rmc.quote}</strong>
+      <span class="chip doc">{d.rmc.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.rmc.means}</p>
+
+    <h3 style="margin-top:1.7rem">{d.rmc.newHead}</h3>
+    <p>{d.rmc.new}</p>
+
+    <h3 style="margin-top:1.7rem">{d.rmc.clashHead}</h3>
+    <p>{d.rmc.clash}</p>
+    <Note style="margin-top:1.1rem">{d.rmc.clashMeans}
+      {" "}<span class="chip inf">{d.rmc.chipClash}</span></Note>
+
+    <h3 style="margin-top:1.7rem">{d.rmc.parentHead}</h3>
+    <p>{d.rmc.parent} <span class="chip lore">{d.rmc.chipParent}</span></p>
+    <p class="small" style="margin-top:1rem">
+      <a href={u("/hornby/")}>The claim about his birth →</a></p>
+    <p class="small" style="margin-top:.6rem;color:var(--ink-3)">{d.rmc.where}</p>
+  </Blk>
+
   <Blk label="The Army List of 1778" title={d.armylist.head}>
     <p class="lede">{d.armylist.lede}</p>
     <Note style="border-left-width:3px;margin-top:1.1rem">

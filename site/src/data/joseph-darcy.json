@@ -337,5 +337,54 @@
    "careful": "One inference, and it is only that. Her son RICHARD, the third son, was 33 when he died in May 1857, which puts his birth about 1824 — the year his mother died at thirty-six. A death in childbed would explain both, and nothing here says so. WHY she is buried at Bourn in Cambridgeshire, a hundred and fifty miles from Bath and further still from Lymington, is not explained either.",
    "chip": "documented"
   }
+ },
+ "rmc": {
+  "head": "The service record, at last",
+  "lede": "This page has said for weeks that the archive “has not yet seen a service record, and does not know the years”. It has one now. The Royal Military Calendar of 1820 — the army's own published record of its serving officers — carries him among the Lieutenant-Colonels at entry 1667.",
+  "quote": "1667. Lieut.-Col. Joseph D'Arcy. Second Lieut. Rl Artillery, 6th March, 1795; First Lieut. 29th June, 1796; Capt.-Lieut. 12th Sept. 1803; Second Capt. 19th July, 1804; Capt. 24th Oct. 1806; brevet Maj. 25th Nov. 1813; and L.-Col. 31st Dec. 1816.",
+  "chip": "documented",
+  "rows": [
+   [
+    "6 March 1795",
+    "Second Lieutenant, Royal Artillery",
+    "He was fifteen — baptised at Portsea in March 1780"
+   ],
+   [
+    "29 June 1796",
+    "First Lieutenant",
+    ""
+   ],
+   [
+    "12 September 1803",
+    "Captain-Lieutenant",
+    ""
+   ],
+   [
+    "19 July 1804",
+    "Second Captain",
+    ""
+   ],
+   [
+    "24 October 1806",
+    "Captain",
+    ""
+   ],
+   [
+    "25 November 1813",
+    "Brevet Major",
+    ""
+   ],
+   [
+    "31 December 1816",
+    "Lieutenant-Colonel",
+    "The rank he held at his death in 1848, and the one every newspaper gives him"
+   ]
+  ],
+  "persiaHead": "And Persia stops being an inference",
+  "persia": "The Calendar does not merely list the decoration. It says why he had it: “L.-Col. D. received, in 1818, the insignia of the 2d class of the PERSIAN ORDER OF THE LION AND SUN, FOR HIS CONDUCT, WHILE IN THE ACTUAL SERVICE OF THE KING OF PERSIA.”",
+  "persiaMeans": "This archive had the Persian service from an obituary and the order from a death notice, and graded the service as inferred because the two merely corroborated one another. The army's own book, printed in 1820 while he was alive and serving, states the service outright and in those words — in the ACTUAL SERVICE of the King of Persia. The chip on this page changes from inferred to documented.",
+  "chipPersia": "documented — the army's own record, printed in his lifetime",
+  "careful": "What it still does not give is the years he was there, or the name of the prince he served. The obituary's Abbas Mirza remains an identification this archive has made, not one the Calendar makes.",
+  "where": "Read 15 September 2026 in the free full text of the 1820 third edition, volume V, on the Internet Archive."
  }
 }

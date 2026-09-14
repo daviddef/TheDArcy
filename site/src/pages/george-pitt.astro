@@ -64,6 +64,30 @@ import d from "../data/george-pitt.json";
     </div>
   </section>
 
+  <section class="blk">
+    <div class="lab">The Royal Military Calendar, 1820</div>
+    <h2 style="margin-top:.4rem">{d.rmc.head}</h2>
+    <p class="lede">{d.rmc.lede}</p>
+    <div class="note" style="border-left-width:3px;margin-top:1.1rem">
+      <strong>{d.rmc.quote}</strong> <span class="chip doc">{d.rmc.chip}</span>
+    </div>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th class="m">Date</th><th>Rank</th><th></th></tr></thead>
+        <tbody>{d.rmc.rows.map(([when, what, note]) => (
+          <tr><td class="m" style="white-space:nowrap">{when}</td>
+              <td><strong>{what}</strong></td><td class="small">{note}</td></tr>))}</tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:1.2rem">{d.rmc.means}</div>
+
+    <h3 style="margin-top:1.7rem">{d.rmc.ageHead}</h3>
+    <div class="note" style="border-left-width:3px;margin-top:.8rem">
+      {d.rmc.age} <span class="chip inf">{d.rmc.chipAge}</span>
+    </div>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.rmc.where}</p>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>{d.wives.head}</h2>
     <p class="lede"><strong>First.</strong> {d.wives.first}</p>
