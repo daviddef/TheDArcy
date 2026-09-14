@@ -1837,6 +1837,38 @@
    "outcome": "yield",
    "got": "Five mentions, indexed by Porter as one man: Lieutenant Robert D'Arcy at the siege of Fort St Philip's, Minorca, 1781; “Robert D'Arcy, Barbados” in a station list, confirming from the Corps what this archive had inferred from two christenings; Lieutenant-Colonel R. D'Arcy as COMMANDING ENGINEER of the Copenhagen expedition of 1807; and as Commanding Royal Engineer at Walcheren in 1809, where — “an old man beyond sixty” — he refused to write a report for a wounded superior he claimed to outrank, was put under arrest, and apologised only after the court-martial was arranged. Free, out of copyright, and never opened here before.",
    "href": "/the-corps"
+  },
+  {
+   "src": "Staffordshire BMD (UKBMD local index)",
+   "what": "All SNEYD deaths in Staffordshire, 1837 onward — a free local index nobody here had used",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "276 Sneyd deaths, each with AN AGE AT DEATH, a sub-district and a local register reference — none of which the GRO quarterly index gives. Errand 10's target is there and independently confirms what this archive already had: SNEYD, Samuel, aged 77, 1855, HANLEY sub-district, registers at Stoke-on-Trent, reference HAN/011/023, matching the Hanley burial of 23 September 1855 aged 77 of 91 Well Street. The certificate can now be ordered against the local reference.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "UKBMD — the local BMD project",
+   "what": "Whether Bristol and Somerset have local registrars' indexes like Gloucestershire's and Staffordshire's",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "They do not. The project lists Gloucestershire and Staffordshire — both used today, both productive — but neither Bristol nor Somerset has a dedicated local index. For the Bristol Wakefields and the Chew Magna Smiths there is no equivalent of the reference that found Lydia Sanigar.",
+   "href": "/errands"
+  },
+  {
+   "src": "Internet Archive — Rudder, A New History of Gloucestershire (1779)",
+   "what": "Saniger, Swanhanger and the Berkeley hundred parishes in the full text",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "The text download returns HTTP 503 and an error page. Control: the file contains nought occurrences of BERKELEY, DURSLEY and HINTON, which is impossible for this book — so the download failed rather than the book being silent. Recorded as unreachable, not as a null.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "Internet Archive — Collections for a History of Staffordshire (William Salt Society)",
+   "what": "Sneyd of Keele pedigrees, and any Madeley branch, in two volumes of the series",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "got": "Nothing genealogical in the two volumes reachable: one has no Sneyd at all, the other has exactly one — in the society's own list of subscribers, “Sneyd, Rev. Walter, Keele Hall, Newcastle”, a living member in the 1880s. The series runs to dozens of volumes and the pedigree material is in ones not identified here. Control: Staffordshire itself appears 90 and 49 times, so the files are sound.",
+   "href": "/sneyds"
   }
  ]
 }
