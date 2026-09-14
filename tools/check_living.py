@@ -91,8 +91,21 @@ def main():
 
     geds = sorted(glob.glob(os.path.join(ROOT, "sources", "*.ged")))
     if not geds:
+        # The GEDCOM is gitignored ON PURPOSE — it carries every living person in
+        # full — so CI can NEVER have it, and treating its absence as a failure
+        # made every deploy red for an hour. But a guard must not silently pass
+        # either. So: where a human is running this, a missing tree is a failure
+        # and stays one. In CI it is an expected absence, announced loudly, and
+        # the build goes on — the kit's check:living still runs there, reading
+        # the committed data, and still gates.
+        if os.environ.get("CI"):
+            print("check_living: NOT RUN. The GEDCOM is gitignored, so CI cannot read "
+                  "it. This check gates locally, where the tree exists; here only "
+                  "check:living ran, against the committed data.")
+            return 0
         print("check_living: no GEDCOM under sources/. This guard reads the tree to "
-              "learn who is alive, so a missing tree is a FAILURE, not a pass.")
+              "learn who is alive, so a missing tree is a FAILURE, not a pass. "
+              "(In CI the absence is expected and this exits 0 with a notice.)")
         return 1
     if not os.path.isdir(a.dist):
         print(f"check_living: no {a.dist} — build first")
