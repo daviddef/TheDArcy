@@ -1901,6 +1901,22 @@
    "outcome": "blocked",
    "got": "A CAPTCHA on every search URL, in curl and in a real browser alike. This archive does not complete CAPTCHAs, so the site is unreachable from here. It publishes the Victoria County History and the calendars of Close, Fine and Patent Rolls, all of which would be worth a human's ten minutes.",
    "href": "/errands"
+  },
+  {
+   "src": "Printed Army Lists, 1778 and 1781",
+   "what": "ROBERT D'ARCY in the establishment of the Corps of Engineers",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "There by name, in the junior grade: “Practitioner Engineer and Second Lieutenant … Robert Beatson, ROBERT D'ARCY, Benjamin Slack, James Lees…”. It also corroborates Porter independently: all six engineers Porter names at the siege of Fort St Philip's in 1781 — Townshend, D'Arcy, Johnston, Douglas, Shipley, Fiddes — are in the 1778 establishment, in the ranks Porter gives them.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "Printed Army Lists, 1775 and 1776",
+   "what": "Whether Robert D'Arcy appears before 1778, to settle Connolly's 1776 against the commission registers' 1778",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "Not there — and it settles nothing. The control kills it: FIDDES, HOCKINGS, HUMFREY and SLACK, all printed beside him in 1778, return nought occurrences in both earlier volumes. Those lists do not carry the Practitioner Engineer grade at all, so the absence is the book's and not the man's. The two dates stand unreconciled and the document that would reconcile them is WO 54/240 at Kew.",
+   "href": "/the-corps"
   }
  ]
 }

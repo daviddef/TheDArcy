@@ -151,5 +151,20 @@
   "chipAge": "an aside, not a birth record — and it misses the register by a year or two",
   "careful": "Porter is a nineteenth-century compiler working from Corps records, not the records themselves. He is the Corps' own historian and he indexes all five mentions as one Robert D'Arcy, which is as good as a secondary source gets — but the commission registers, station returns and the Walcheren papers at Kew are the primary evidence behind him, and none of them has been read here.",
   "where": "Read 14 September 2026 in the full text of the 1889 edition on the Internet Archive, which is out of copyright and downloads freely."
+ },
+ "armylist": {
+  "head": "The 1778 Army List has him, and corroborates Porter",
+  "lede": "The printed Army Lists are free and out of copyright. The list of 1778 carries the whole establishment of the Corps of Engineers, rank by rank, and in the junior grade it has him by name.",
+  "entry": "Practitioner Engineer and Second Lieutenant: Wm. Kesterman, John Johnson, Charles Holloway, Thomas Whelpdale, John Humfrey, James Fiddes, Richard Hockings, Robert Beatson, ROBERT D'ARCY, Benjamin Slack, James Lees, Geo: Bridges, Lewis Hay.",
+  "chip": "documented",
+  "means": "It is a contemporary printed source for the rank this archive has carried on the authority of a commission register, and it puts him in a seniority run with twelve named contemporaries.",
+  "minorcaHead": "And it independently corroborates the Minorca roster",
+  "minorca": "Porter, writing in 1889, names the engineers at the siege of Fort St Philip's in 1781: Captain GILBERT TOWNSHEND and Lieutenants ROBERT D'ARCY, W. JOHNSTON, J. R. DOUGLAS, C. SHIPLEY and J. FIDDES. Every one of those six is in the 1778 establishment — Townshend among the Engineers Extraordinary and Captains; Shipley, Douglas and Johnston among the Sub-Engineers and Lieutenants; D'Arcy and Fiddes among the Practitioner Engineers. A list printed three years before the siege, and a history written a century after it, describing the same men in the same corps.",
+  "chipMinorca": "two independent sources agreeing",
+  "trapHead": "And the question it does NOT settle",
+  "trap": "This archive prints two dates for his first commission: 1776, from Connolly's Roll, on the timeline and elsewhere; and 1778, from the British Army Lists and Commission Registers, on this page. The obvious test is whether he appears in the printed lists of 1775 and 1776. He does not — and that proves nothing at all. The men listed beside him in 1778 are not there either: FIDDES, HOCKINGS, HUMFREY and SLACK return nought occurrences in both earlier volumes. Those lists do not print the Practitioner Engineer grade. The absence is the book's, not the man's.",
+  "chipTrap": "an empty search, not a null",
+  "resolve": "So the two dates stand unreconciled, and the document that would reconcile them is named: WO 54/240, the Board of Ordnance commission book for Engineers, 1755–1780, at Kew, not digitised and not name-indexed.",
+  "where": "Read 15 September 2026 in the free full text of the Army Lists for 1775, 1776, 1778 and 1781 on the Internet Archive."
  }
 }
