@@ -1625,6 +1625,21 @@
 "slug": "sarah-harmer",
 "n": 1
 },
+"james-hayward": {
+"name": "James Hayward",
+"surname": "HAYWARD",
+"rows": [
+{
+"says": "census 1851 · aged 61, born Buckinghamshire · LODGING HOUSE KEEPER · Western Cottages, Brighton — the house next door to the D'Arcy sisters",
+"source": "record · 1851 census HO107/1646 f.358 p.60 sch.173",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "james-hayward",
+"n": 1
+},
 "j-brownlie-henderson": {
 "name": "J. Brownlie Henderson",
 "surname": "HENDERSON",
@@ -2302,9 +2317,9 @@
 }
 },
 "counts": {
-"named": 190,
+"named": 191,
 "withTreePage": 47,
-"ownPage": 143,
-"mentions": 328
+"ownPage": 144,
+"mentions": 329
 }
 }

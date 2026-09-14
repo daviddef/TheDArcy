@@ -9,6 +9,14 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — the 1851 census IMAGE, HO107/1646 f.357 p.59",
+   "what": "What the enumerator actually wrote",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Two transcription errors, read off the page. THE NAME: the enumerator writes “Jane D'Arcy” in a clear hand, apostrophe and all; the index split it into a forename “Jane D” and a surname “Arcy”, which is why no D*ARCY search could ever reach them. THE ADDRESS: he writes “19 Western Cott” against schedule 168 and dittoes down to 22, so the sisters are at 22 WESTERN COTTAGES — a numbered house in a named row, which the index renders as a house name of “Western Cottage” with no street. Schedule 172 holds the three of them and no head; next door at schedule 173 is James Hayward, 61, lodging house keeper.",
+   "href": "/sussex-sisters"
+  },
+  {
    "src": "FindMyPast — 1851 England, Wales & Scotland Census",
    "what": "The Sussex sisters by ADDRESS and by HOUSEHOLD rather than by surname",
    "when": "14 Sep 2026",
@@ -25,11 +33,11 @@
    "href": "/sussex-sisters"
   },
   {
-   "src": "FindMyPast — 1861 census, four independent approaches",
+   "src": "FindMyPast — 1861 census, eight independent approaches",
    "what": "The sisters in 1861",
    "when": "14 Sep 2026",
    "outcome": "empty",
-   "got": "Not found by surname (ARCY or D*ARCY in Sussex), by address (Bedford Square in 1861 and 1871; the Western streets), by birthplace in the county (33 people born Barbadoes in Sussex, read one by one) or by birthplace nationally (25 Janes, 16 Catherines). A null that has earned the name.",
+   "got": "Not found by surname (D*ARCY across Sussex and nationally by year; ARCY across Sussex), by the right street (WESTERN COTTAGES does not exist in the 1861 Brighton index at all), by the widened street (WESTERN* returns 718 people, filtered for all three forenames and read), by Bedford Square in 1861 or 1871, by birthplace in Sussex (33 born Barbadoes, read one by one), by birthplace nationally (25 Janes, 16 Catherines), by household fingerprint (the search that found them in 1851), or at Falmer. A null that has earned the name.",
    "href": "/sussex-sisters"
   },
   {

@@ -1,11 +1,11 @@
 {
-"entries": 801,
-"distinct": 568,
-"records": 328,
+"entries": 802,
+"distinct": 569,
+"records": 329,
 "tree": 473,
 "grafted": 98,
-"linked": 801,
-"surnames": 193,
+"linked": 802,
+"surnames": 194,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1209,7 +1209,7 @@
 },
 {
 "name": "Catherine D'Arcy",
-"says": "census 1851 · aged 50 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · Western Cottage, Brighton",
+"says": "census 1851 · aged 50 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
 "source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
@@ -1237,7 +1237,7 @@
 },
 {
 "name": "Charlotte D'Arcy",
-"says": "census 1851 · aged 40 · LODGER, UNMARRIED, “Fund holder” · BORN LYME REGIS, DORSET · Western Cottage, Brighton",
+"says": "census 1851 · aged 40 · LODGER, UNMARRIED, “Fund holder” · BORN LYME REGIS, DORSET · 22 WESTERN COTTAGES, Brighton",
 "source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
@@ -1405,7 +1405,7 @@
 },
 {
 "name": "Jane D'Arcy",
-"says": "census 1851 · aged 55 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · Western Cottage, Brighton",
+"says": "census 1851 · aged 55 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
 "source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
@@ -5612,6 +5612,19 @@
 "source": "family tree · above the Keele graft",
 "link": "/people/barbara-harvey",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "HAYWARD",
+"n": 1,
+"rows": [
+{
+"name": "James Hayward",
+"says": "census 1851 · aged 61, born Buckinghamshire · LODGING HOUSE KEEPER · Western Cottages, Brighton — the house next door to the D'Arcy sisters",
+"source": "record · 1851 census HO107/1646 f.358 p.60 sch.173",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
 }
 ]
 },

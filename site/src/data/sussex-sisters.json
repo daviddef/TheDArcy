@@ -68,27 +68,43 @@
   "chip": "near-certain, with an age problem"
  },
  "nulls": {
-  "head": "1861, which is a real gap",
+  "head": "1861, searched eight ways",
   "rows": [
    [
     "Surname",
-    "No ARCY and no D*ARCY anywhere in Sussex in 1861."
+    "D*ARCY across Sussex, and nationally by year of birth. ARCY across Sussex. Nothing."
    ],
    [
-    "Address",
-    "Bedford Square, Brighton, 1861 and 1871 — searched house by house. Not there. Western Buildings and Western Cottage return nothing in 1861 either."
+    "Street, the right one",
+    "WESTERN COTTAGES — no such street in the 1861 index for Brighton at all, as a street or as a house name."
    ],
    [
-    "Birthplace",
-    "Thirty-three people born BARBADOES in Sussex in 1861, listed and read one by one. None is Jane or Catherine."
+    "Street, widened",
+    "WESTERN* in Brighton returns 718 people in 1861. Filtered for Jane (22), Catherine (11) and Charlotte (6) and read: not one of them fits."
+   ],
+   [
+    "Bedford Square",
+    "Where Catherine died in 1876 — searched in 1861 and again in 1871. Not there."
+   ],
+   [
+    "Birthplace, in the county",
+    "Thirty-three people born BARBADOES in Sussex in 1861, listed and read one by one."
    ],
    [
     "Birthplace, nationally",
-    "Twenty-five Janes and sixteen Catherines born Barbadoes in the whole of England, Wales and Scotland in 1861. Not one of them fits."
+    "Twenty-five Janes and sixteen Catherines born Barbadoes in the whole of England, Wales and Scotland."
+   ],
+   [
+    "Household",
+    "Jane with a Charlotte, and Jane with a Catherine, in Brighton; Charlotte with a Catherine across Sussex. This is the search that found them in 1851."
+   ],
+   [
+    "Falmer",
+    "The village the tree gives as Jane's place of death. No Jane there in 1861."
    ]
   ],
-  "means": "Four independent approaches — name, address, birthplace in the county, birthplace in the country — and the sisters are not in the 1861 census. They are at Western Cottage in 1851 and Catherine is at Bedford Square in 1876. Where they were on 7 April 1861 is genuinely unknown, and this is a null that has earned the name. The 1871 census is untested by address beyond Bedford Square and remains the obvious next move.",
-  "chip": "searched four ways, and empty"
+  "means": "Eight approaches, four of them independent of the surname entirely, and the sisters are not in the 1861 census. They are at 22 Western Cottages in 1851 and Catherine is at Bedford Square in 1876, and on 7 April 1861 they are nowhere this index can find. The plain possibilities are that they were away from home that night, that a page of the enumerator's book is lost, or that the surname is mangled past every form tried — and after what the transcriber did to “D'Arcy” in 1851, the last of those is not a remote idea.",
+  "chip": "searched eight ways, and empty"
  },
  "trap": {
   "head": "A search that lies, and how it was caught",
@@ -115,10 +131,10 @@
    "Yesterday the West Indies years rested on two christenings in a Caribbean index and a birthplace on a family tree. Today two of Robert D'Arcy's daughters are recorded in an English census as born in BARBADOES, and the youngest as born at Lyme Regis in Dorset — the same shape, from a different kind of source entirely."
   ]
  ],
- "open": "Where they were in 1861 — searched four ways and not found. What the Death Duty register says Catherine left and to whom. Whether Charlotte and Jane also left probates. Who kept Western Cottage, since the sisters were only lodging in it. And whether any of the three is buried where the others are — no burial record has been looked for at all.",
+ "open": "Where they were on census night 1861 — eight approaches and nothing. What the Death Duty register says Catherine left and to whom. Whether Charlotte and Jane also left probates. And whether any of the three is buried where the others are: no burial record has been looked for at all.",
  "census1851": {
   "head": "1851: all three, and the census says BARBADOES",
-  "ref": "HO107/1646, folio 357, page 59, schedule 172 · WESTERN COTTAGE, BRIGHTON · sub-district The Place, enumeration district 1N",
+  "ref": "HO107/1646, folio 357, page 59, schedule 172 · 22 WESTERN COTTAGES, BRIGHTON · sub-district The Place, enumeration district 1N",
   "rows": [
    [
     "Jane D",
@@ -150,11 +166,17 @@
   ],
   "why": "This is the best record this archive has found about Robert D'Arcy's West Indies years, and it is not about Robert. TWO OF HIS DAUGHTERS TOLD AN ENGLISH CENSUS ENUMERATOR THEY WERE BORN IN BARBADOES, and the third said Lyme Regis, Dorset. That is exactly the pattern this archive reconstructed yesterday out of two Barbados christenings and a birthplace on a family tree — and it now rests on an English government record instead.",
   "detail": "“FUND HOLDER” means living on invested capital — the three of them keeping themselves on dividends, which is what unmarried daughters of a major-general did. “LODGER” means they did not keep the house: Western Cottage was somebody else's and they had rooms in it. All three are entered UNMARRIED, which confirms the “Miss” of Catherine's obituary twenty-five years later.",
-  "chip": "documented"
+  "chip": "documented",
+  "image": {
+   "head": "Read from the page, not the index",
+   "body": "The enumerator's own hand settles two things the transcript gets wrong. THE ADDRESS: he writes “19 WESTERN COTT” against schedule 168 and dittoes down the run — 20, 21, 22 — so the sisters are at NUMBER 22 WESTERN COTTAGES, a numbered house in a named row. FindMyPast renders that as a house name of “Western Cottage” with the street left blank, losing the plural and the number both. AND THE NAME: he writes “Jane D'Arcy”, clearly, apostrophe and all, with “do” under it for her sisters. The index split it into a forename of “Jane D” and a surname of “Arcy”.",
+   "chip": "read from the original"
+  },
+  "neighbours": "Schedule 172 holds the three of them and nobody else — three lodgers and no head of house. Next door at schedule 173, folio 358, is JAMES HAYWARD, 61, of Buckinghamshire, “LODGING HOUSE KEEPER”. Western Cottages was a row of lodging houses at the western end of Brighton, and the general's daughters had rooms in one of them."
  },
  "hidden": {
   "head": "And why four days of searching missed them",
-  "body": "The surname is indexed as ARCY. Jane is “Jane D” with a surname of “Arcy”; her sisters are “Catherine Arcy” and “Charlotte Arcy”. The enumerator's D' was read as part of the forename or dropped altogether, and every search this archive ran against a surname beginning D and ending ARCY — which is every search it ran — could not reach them.",
+  "body": "The surname is indexed as ARCY. Jane is “Jane D” with a surname of “Arcy”; her sisters are “Catherine Arcy” and “Charlotte Arcy”. THIS IS NOT WHAT THE REGISTER SAYS — the enumerator wrote D'Arcy in a clear hand, and the apostrophe was read as the end of a forename. Every search this archive ran against a surname beginning D and ending ARCY — which is every search it ran — could not reach them.",
   "found": "They came out of a household search instead: JANE, with a CHARLOTTE in the same household, in Brighton. That returns 119 people and the third of them is “Jane D Arcy”. Searching by who somebody lived with, rather than by what they were called, is the move that worked.",
   "lesson": "Third time in a fortnight. SANIGOR hid a baptism because a spelling was missing from an alias list. A search for Martha in Bristol failed because she died in Queensland. And now a D' read as a forename. THIS ARCHIVE'S OWN SEARCH INDEX ALREADY LISTS “arcy” as a form of D'Arcy — the alias list was right and the queries put to somebody else's index were not.",
   "chip": "own error, and the same error"
