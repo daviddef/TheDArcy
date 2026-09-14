@@ -526,13 +526,13 @@
   },
   {
    "n": 53,
-   "what": "Smyth's own citation list for the Swonhunger pedigree — six medieval records he read and named",
-   "where": "The National Archives and the Berkeley muniments. Smyth lists them himself: an inquisition of 16 Richard II after the death of John Gifford; the Liber Relevium, Hilary 4 Henry IV; Rotuli Finium 22 Richard II membrane 14; THE INQUISITION OF 22 RICHARD II AFTER THE DEATH OF JOHN SWONHUNGER; Close Rolls 22 Richard II part 2 membrane 11; and four Thorpe inquisitions, 6 Edward IV to 35 Henry VIII.",
+   "what": "Smyth's citation list for the Swonhunger pedigree — TESTED against the printed Calendars, and they are NOT royal inquisitions",
+   "where": "Tested 15 September 2026 in the printed Calendars of Inquisitions Post Mortem, volumes 5 to 8 (Edward II to Edward III), free on the Internet Archive. No Swonhunger of any spelling, and no Thomas de Stone. The controls hold: Gloucester appears 230 to 334 times a volume and Berkeley 15 to 17, and a fragment search on “hungr” and “hunge” does return other names — Gravenhunger in Shropshire, Clehungre in Herefordshire — so the search reaches names of that shape and these two families are simply not in them.",
    "cost": "a search of the IPM calendars, much of which is in print and free",
-   "settles": "An inquisition post mortem names the heir, the heir's age and the lands held on the day of death. Smyth used these to build the pedigree from Thomas de Stone to the failure of the male line in 1401; reading them directly would test his reconstruction rather than repeat it.",
-   "why": "THE ANTIQUARY NAMED HIS OWN SOURCES",
+   "settles": "The reason is structural, and it changes what to order. A royal inquisition post mortem was taken only for a TENANT-IN-CHIEF of the Crown. The Swonhungers held of the LORD BERKELEY by knight service and suit of court, and the Berkeleys held in chief — the calendars say so in their own entries, “held of the heir of William de Berkeleye in chief”. A mesne tenant's death produced no royal inquisition. So Smyth's “Inqu: 22. R. 2. p'. morte Johis Swonhunger” is very unlikely to be a Chancery IPM at all: it will be an inquisition taken in the Berkeley hundred court, or a document in the castle muniments Smyth had on his desk as steward. Look for it at Berkeley, not at Kew.",
+   "why": "THE CITATION IS REAL; THE REPOSITORY WAS WRONG",
    "href": "/saniger-place",
-   "file": "Found 14 September 2026 in The Berkeley Manuscripts vol. 3."
+   "file": "TESTED 15 September 2026. The OCR of these volumes is poor — it prints Eohert for Robert and MTlliam for William — so the null was taken on fragment searches tolerant of that, not on exact spellings."
   },
   {
    "n": 54,

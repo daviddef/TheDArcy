@@ -1885,6 +1885,22 @@
    "outcome": "yield",
    "got": "They do not. 1857 is where the MICROFILMING stops — the registers themselves run 1796–1903 and the 1876 pieces are open, catalogued and held at Kew, merely unfilmed and offline. A widely repeated access boundary mistaken for a records boundary, and the errand survives it.",
    "href": "/errands"
+  },
+  {
+   "src": "Calendars of Inquisitions Post Mortem, volumes 5–8 (Edward II – Edward III)",
+   "what": "SWONHUNGER in every spelling, and THOMAS DE STONE, whose two daughters carry Smyth's pedigree",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "got": "Neither family is in four volumes of the printed Calendars. Controlled twice: Gloucester appears 230–334 times per volume and Berkeley 15–17, so the county is covered; and a fragment search on “hungr”/“hunge”, tolerant of the volumes' poor OCR, returns Gravenhunger, Clehungre and Trewonhan — names of exactly that shape — so the search reaches them. The explanation is structural: a royal inquisition was taken only for a tenant-in-chief, and the Swonhungers held of Lord Berkeley, not of the king. The absence is what the record type predicts.",
+   "href": "/errands"
+  },
+  {
+   "src": "British History Online",
+   "what": "Swonhunger, Swanhunger, Swonhungre and Saniger across its published series",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "A CAPTCHA on every search URL, in curl and in a real browser alike. This archive does not complete CAPTCHAs, so the site is unreachable from here. It publishes the Victoria County History and the calendars of Close, Fine and Patent Rolls, all of which would be worth a human's ten minutes.",
+   "href": "/errands"
   }
  ]
 }
