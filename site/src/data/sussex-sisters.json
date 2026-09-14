@@ -182,8 +182,8 @@
   "chip": "own error, and the same error"
  },
  "burials": {
-  "head": "All three on one page of one register",
-  "ref": "ST ANDREW'S OLD CHURCH, Church Road, HOVE · Anglican · The National Archives RG 37/65/2, PAGE 47",
+  "head": "All three in one section of one burial ground",
+  "ref": "ST ANDREW'S OLD CHURCH, Church Road, HOVE · The National Archives RG 37/65/2 — “Part 2. Burial ground section A”, c.1975 · page 47",
   "rows": [
    [
     "CHARLOTTE D'ARCY",
@@ -201,8 +201,13 @@
     "which is the date the Horsham paper printed — “on the 23rd ult.” — confirmed from a second direction"
    ]
   ],
-  "means": "This page said, at the bottom, that no burial record had been looked for at all. Three were found in one search, and they are consecutive entries on THE SAME PAGE of the same register: three sisters buried out of the same church over seven years, their names one under another in the book. St Andrew's Old Church stands on Church Road in Hove, half a mile from Brunswick and a mile from Bedford Square, where Catherine died.",
+  "means": "This page said, at the bottom, that no burial record had been looked for at all. Three were found in one search, and they sit together in SECTION A of the burial ground — three sisters in adjacent graves, half a mile from Brunswick and a mile from Bedford Square where Catherine died. Adjacent graves in one section is a family plot, which is a better fact than three separate burials would have been.",
   "gain": "Two exact dates where the archive had quarters, and one independent confirmation. Charlotte's 28 May 1869 and Jane's 10 January 1875 are new. Catherine's 23 January 1876 is not new — it is the date the Horsham, Petworth, Midhurst and Steyning Express printed a fortnight after the event, and a parish register and a newspaper now agree on it without either having seen the other.",
-  "chip": "documented"
+  "chip": "documented",
+  "whatItIsHead": "What the document actually is",
+  "whatItIs": "Corrected 15 September 2026. This page called RG 37/65/2 an Anglican parish REGISTER and described the three sisters as “buried out of the same church… their names one under another in the book”. That is not what the series is. RG 37 is “GENERAL REGISTER OFFICE: REMOVAL OF GRAVES AND TOMBSTONES”, 1923–2007, and The National Archives describes it in its own words as “copies of records of local authorities and the Church Commissioners relating to BURIAL GROUND REMOVALS… a number contain a plan of the original place of burial”. Hove's St Andrew's is broken into twenty-three parts, one per burial-ground section, A to X, all dated about 1975.",
+  "whatItIsMeans": "So the names were recorded when the ground was cleared, roughly a century after the burials, not by a clerk at the graveside in 1869. The dates are not weakened by that — a removal schedule takes them from the stones and the ground's own registers — but the provenance is different and the page was describing the wrong kind of document. What it gains in exchange is the section letter, which is what makes the three graves a plot rather than a coincidence.",
+  "chipWhat": "the data stands; the description was wrong",
+  "unseen": "And one limit worth stating: RG 37/65/2 is not digitised, and this archive has not seen the document. What has been corrected here is the CATALOGUE DESCRIPTION of the series, read from The National Archives' own entry — not the three dates, which came from elsewhere and are unchanged."
  }
 }
