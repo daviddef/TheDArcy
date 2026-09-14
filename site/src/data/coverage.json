@@ -343,6 +343,15 @@
    "verdict": "partial",
    "note": "SMITH returns the 1,000-row display cap for 1851, 1861 and 1871, which looks like full coverage and is not. The three D'Arcy sisters are enumerated in the 1851 Sussex census under the surname ARCY at HO107/1646 folio 357 — and FreeCEN returns nought for Arcy in Sussex in 1851. Test a free census index with a record you already know is in it, never with a common surname.",
    "href": "/sussex-sisters"
+  },
+  {
+   "db": "FreeREG — any county",
+   "where": "any search returning a large number",
+   "holds": "up to 500 rows, and says so",
+   "span": "—",
+   "verdict": "unusable as a control",
+   "note": "FreeREG stops counting at 500. Any control reported as “more than 500” is a ceiling, not a measurement: it reads identically whether a county is half transcribed or whole. Two nulls in this archive were justified that way and have been re-controlled — at PARISH level, with a surname whose count comes in UNDER the cap. Ruabon returns 500 Joneses and 39 Smiths for 1780–1830; the 39 is the number that means something.",
+   "href": "/searched"
   }
  ]
 }

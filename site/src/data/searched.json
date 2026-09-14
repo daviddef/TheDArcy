@@ -1099,7 +1099,7 @@
    "what": "John Maddock Jones, Esq., of Penybryn in Ruabon, who married Robert D'Arcy's daughter in 1806",
    "when": "13 Sep 2026",
    "outcome": "null",
-   "got": "Not there. Denbighshire is well covered — a control returns more than 500 Smiths for 1780–1830 — and holds no John Maddock Jones at all. A Welsh gentry family joined to this one by marriage, and the transcribed registers of his own county do not have him.",
+   "got": "Not there, and the conclusion survives a better control than the one first used. FreeREG CAPS ITS RESULTS AT 500, so the original control — “more than 500 Smiths for 1780–1830” across the county — was a ceiling that could not go up and measured nothing. Re-tested on 15 September 2026 at the right granularity, the parish: RUABON is in FreeREG's Denbighshire list, and for 1780–1830 it returns 500 for JONES (capped) and 39 for SMITH (not capped, and therefore informative). The parish is genuinely transcribed for the window and holds no John Maddock Jones at all. A Welsh gentry family joined to this one by marriage, and the transcribed registers of his own parish do not have him.",
    "href": "/chatham"
   },
   {
@@ -1235,7 +1235,7 @@
    "what": "Hannah Saniger, born about 1805, in the counties around Bristol",
    "when": "13 Sep 2026",
    "outcome": "null",
-   "got": "Nothing. One Hannah SENGAR buried at Chaddesley Corbett in 1801, and she is a burial. Control-tested: both county groups return more than 500 Smiths for the same twenty years, and Wiltshire alone holds 358 Saniger-variant records around Salisbury and the Knoyles. Eight counties have now been searched for this woman and she is in none of them.",
+   "got": "Nothing. One Hannah SENGAR buried at Chaddesley Corbett in 1801, and she is a burial. Control-tested: both county groups return more than 500 Smiths for the same twenty years, and Wiltshire alone holds 358 Saniger-variant records around Salisbury and the Knoyles. Eight counties have now been searched for this woman and she is in none of them. Note on the control, added 15 September 2026: the “more than 500 Smiths” figure is FreeREG's display cap and carries no information. The load-bearing control in this row is the other one — 358 Saniger-variant records in Wiltshire, a name-specific count well under the cap.",
    "href": "/sanigers"
   },
   {
