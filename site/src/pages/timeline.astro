@@ -7,6 +7,12 @@ import t from "../data/timeline.json";
 const Y0 = 1770, Y1 = 2015, SPAN = Y1 - Y0;
 const x = (y) => ((Math.min(Math.max(y, Y0), Y1) - Y0) / SPAN) * 100;
 const ordered = [...t.events].sort((a, b) => a.y - b.y);
+// The bar is drawn from 1770 because that is where the records thicken. Two bands
+// end before it — the medieval hamlet and Tudor Gloucestershire — and drawing them
+// to scale would squash two centuries of dense evidence into a quarter of the width
+// to make room for four centuries of eight documents. They are in the legend instead.
+const barBands = t.bands.filter((b) => b.to > Y0);
+const earlyBands = t.bands.filter((b) => b.to <= Y0);
 ---
 <Base title={t.title} eyebrow={t.eyebrow} dek={t.dek}>
 
@@ -23,7 +29,7 @@ const ordered = [...t.events].sort((a, b) => a.y - b.y);
           New South Wales are the same years seen from two ends of the world — and
           drawing them in a single row hid exactly that. */}
       <div class="tlbands">
-        {t.bands.map((b) => (
+        {barBands.map((b) => (
           <div class="tllane">
             <div class={`tlband r-${b.key}`}
                  style={`left:${x(b.from)}%;width:${x(b.to) - x(b.from)}%`}>
@@ -39,6 +45,16 @@ const ordered = [...t.events].sort((a, b) => a.y - b.y);
         ))}
       </div>
     </div>
+
+    {earlyBands.length > 0 && (
+      <Note style="margin-top:1.3rem">
+        <strong>Two bands end before the bar begins.</strong> The chart above starts in 1770,
+        where this family's records thicken. The hamlet and its people are documented from
+        the twelfth century, but across four hundred years the archive holds perhaps a dozen
+        records — drawing them to scale would squash everything else to make room for almost
+        nothing. They are listed below, and their events are in the list that follows.
+      </Note>
+    )}
 
     <div style="margin-top:1.6rem;display:flex;flex-direction:column;gap:.9rem">
       {t.bands.map((b) => (

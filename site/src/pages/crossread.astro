@@ -124,6 +124,24 @@ import d from "../data/crossread.json";
       {" "}<a href={u("/what-we-got-wrong/")}>Both entries →</a></Note>
   </Blk>
 
+  <section class="blk">
+    <div class="lab">One day later</div>
+    <h2 style="margin-top:.4rem">{d.answered.head}</h2>
+    <p class="lede">{d.answered.lede}</p>
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
+      {d.answered.rows.map(([who, what, detail, href]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong>{who}</strong> — <span>{what}</span></div>
+          <p class="small" style="margin-top:.35rem">{detail}</p>
+          <p class="small" style="margin-top:.3rem"><a href={u(href)}>Where it is set out →</a></p>
+        </div>
+      ))}
+    </div>
+    <div class="note" style="border-left-width:3px;margin-top:1.3rem">
+      {d.answered.means} <span class="chip doc">{d.answered.chip}</span>
+    </div>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>What this cost</h2>
     <p class="lede">{d.lesson}</p>

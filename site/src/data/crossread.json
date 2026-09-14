@@ -218,5 +218,31 @@
   "head": "And the lesson had already been filed once",
   "body": "On 13 September this archive published an error about Jabez and Zillah Wakefield, announced as “two children nobody here had ever heard of” when both were on a passenger manifest it had transcribed itself in July. The lesson recorded at the time reads: “Check a discovery against what the archive already holds before calling it new. The tree is not the archive.”",
   "note": "Written down on the Saturday, and not applied on the Sunday. A lesson filed is not a lesson learned; the difference between them, in this case, is a fifty-line Python script. That is the actual finding of this page."
+ },
+ "answered": {
+  "head": "Three of these are no longer open",
+  "lede": "This page was written on 13 September 2026 to say that six questions filed as open were answerable from what the archive already held. On 14 September three of them were carried further — not from the archive's own files this time, but from free sources nobody here had opened.",
+  "rows": [
+   [
+    "Lydia",
+    "Her death is located.",
+    "LYDIA SANIGAR, 1851, register 3, entry 265, in the free Gloucestershire Registration Service Index. The date the tree gives — 7 July 1851 at Berkeley — sits inside a district whose deaths are complete from 1837. She was invisible under SANIGER and present under SANIGAR. The certificate is now orderable against a local reference; her maiden name still needs it.",
+    "/sanigers"
+   ],
+   [
+    "Catherine Cotton",
+    "Her family has its first document.",
+    "PROB 11/1056/294 — the will of BENJAMIN COTTON, cordwainer of Berkeley, proved 16 September 1779, eleven months after Catherine was buried in that parish. Her father is given as Edward, so Benjamin is not him; but this archive had never held a single record from the Cotton side, and a Berkeley Cotton's will is where her children would be named.",
+    "/saniger-place"
+   ],
+   [
+    "Barbados",
+    "The posting is documented, not bracketed.",
+    "This page bracketed the West Indies years from the birthplaces of Robert D'Arcy's children, with no record of the posting itself. The Corps' own history carries “ROBERT D'ARCY, BARBADOS” in a station list — and puts him at the siege of Fort St Philip's on Minorca in 1781, inside the blank this archive called empty.",
+    "/the-corps"
+   ]
+  ],
+  "means": "The method still holds and the lesson is unchanged: read your own files before searching. But three of the six moved because somebody finally opened a printed book and a county index, both free, both sitting in plain sight for as long as this archive has existed.",
+  "chip": "documented"
  }
 }

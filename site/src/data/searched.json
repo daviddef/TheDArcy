@@ -834,8 +834,8 @@
    "src": "TNA Discovery — Portsmouth",
    "what": "A route to Portsea St Mary's register beyond FreeREG's two years",
    "when": "13 Sep 2026",
-   "outcome": "null",
-   "got": "None found. Portsmouth History Centre's parish register holdings are not reachable through Discovery in any usable form — searching for Portsea registers returns Admiralty pension papers and Royal Artillery brigade registers instead. The volumes exist; the catalogue route to them does not run through here.",
+   "outcome": "empty",
+   "got": "None found. Portsmouth History Centre's parish register holdings are not reachable through Discovery in any usable form — searching for Portsea registers returns Admiralty pension papers and Royal Artillery brigade registers instead. The volumes exist; the catalogue route to them does not run through here. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/portsea"
   },
   {
@@ -874,16 +874,16 @@
    "src": "FreeREG — Cheshire, control test",
    "what": "The marriage of Samuel Sneyd and Elizabeth Oliver at Audlem, 22 October 1809",
    "when": "13 Sep 2026",
-   "outcome": "null",
-   "got": "Untestable. John Smith across the WHOLE OF CHESHIRE for 1800–1820 returns TWO entries, one at Whitegate and one at Wrenbury. It is the emptiest county holding this archive has measured, and Audlem is not in it at all.",
+   "outcome": "empty",
+   "got": "Untestable. John Smith across the WHOLE OF CHESHIRE for 1800–1820 returns TWO entries, one at Whitegate and one at Wrenbury. It is the emptiest county holding this archive has measured, and Audlem is not in it at all. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/coverage"
   },
   {
    "src": "FreeREG — Shropshire, control test",
    "what": "Elizabeth Margaret Oliver's baptism at Oswestry, 7 May 1787",
    "when": "13 Sep 2026",
-   "outcome": "null",
-   "got": "Untestable. Smith across Shropshire 1783–1792 returns 167 entries — Shrewsbury 70, Hodnet 15, Ludlow 10 — and NONE at Oswestry. The town is not transcribed.",
+   "outcome": "empty",
+   "got": "Untestable. Smith across Shropshire 1783–1792 returns 167 entries — Shrewsbury 70, Hodnet 15, Ludlow 10 — and NONE at Oswestry. The town is not transcribed. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/coverage"
   },
   {
@@ -1298,8 +1298,8 @@
    "src": "FreeCEN — 1861 and 1871 censuses",
    "what": "Hannah Wakefield's exact birthplace, which 1841 does not give",
    "when": "13 Sep 2026",
-   "outcome": "null",
-   "got": "Not applicable, and worth recording as such: the family had emigrated. James Wakefield died at Brisbane in July 1857, so by 1861 there was nobody in England to enumerate. The plan to get Hannah's birthplace from a later English census was sound and the family had left before it could work.",
+   "outcome": "empty",
+   "got": "Not applicable, and worth recording as such: the family had emigrated. James Wakefield died at Brisbane in July 1857, so by 1861 there was nobody in England to enumerate. The plan to get Hannah's birthplace from a later English census was sound and the family had left before it could work. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/drivers-fields"
   },
   {
@@ -1634,8 +1634,8 @@
    "src": "WO 149 — Royal Military Academy Woolwich cadet registers",
    "what": "A cadet of the early 1770s",
    "when": "9 Sep 2026",
-   "outcome": "null",
-   "got": "The wrong record set entirely: WO 149 begins in 1790 and is held at Sandhurst. The archive had recommended it without checking its date range, and said so.",
+   "outcome": "empty",
+   "got": "The wrong record set entirely: WO 149 begins in 1790 and is held at Sandhurst. The archive had recommended it without checking its date range, and said so. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/corrections"
   },
   {

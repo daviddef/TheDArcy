@@ -4,6 +4,20 @@
  "dek": "Who this family were living under, and what it did to them. The point is not when people were born — it is what was happening around them when they were.",
  "bands": [
   {
+   "key": "medieval",
+   "label": "Before the surname",
+   "from": 1154,
+   "to": 1485,
+   "note": "The hamlet of Swanhunger is in the free-warren charters of Henry II, Richard I, John and Edward I, and a family takes its name from it. This band is here because the archive's evidence now reaches it, not because the family line does — nothing joins these people to the Sanigers of the registers."
+  },
+  {
+   "key": "tudor",
+   "label": "Tudor and Stuart Gloucestershire",
+   "from": 1485,
+   "to": 1714,
+   "note": "The muster of 1608, the Berkeley estate deeds, and Smyth of Nibley writing the survey of the hundred in about 1639. The surname is in all three, in eight spellings, two centuries before the parish registers this archive reads."
+  },
+  {
    "key": "georgian",
    "label": "Georgian Britain",
    "from": 1714,
@@ -163,6 +177,88 @@
    "what": "Kenneth Lindsay D'Arcy's eulogy, delivered in three parts by his three children",
    "band": "modern",
    "href": "/documents"
+  },
+  {
+   "y": 1189,
+   "what": "A lord Berkeley grants the monastery “one yard land at Swonhunger”",
+   "band": "medieval",
+   "href": "/saniger-place"
+  },
+  {
+   "y": 1304,
+   "what": "Thomas de Swonhunger contracts with the chaplain of Kingley, on Easter day",
+   "band": "medieval",
+   "href": "/saniger-place"
+  },
+  {
+   "y": 1326,
+   "what": "John de Swonhongre rides in Maurice de Berkeley's retinue, as an esquire",
+   "band": "medieval",
+   "href": "/saniger-place"
+  },
+  {
+   "y": 1401,
+   "what": "John Swonhungre dies without issue; the main line ends in two sisters",
+   "band": "medieval",
+   "href": "/saniger-place",
+   "key": true
+  },
+  {
+   "y": 1541,
+   "what": "Robert Saniger buys a manor from William Lord Stourton",
+   "band": "tudor",
+   "href": "/saniger-place"
+  },
+  {
+   "y": 1601,
+   "what": "John Saniger of Berkeley, yeoman — the earliest dated document naming the surname",
+   "band": "tudor",
+   "href": "/saniger-place",
+   "key": true
+  },
+  {
+   "y": 1608,
+   "what": "Eleven men of the surname mustered in Gloucestershire; John Sainger, weaver, lives in the hamlet itself",
+   "band": "tudor",
+   "href": "/saniger-1608",
+   "key": true
+  },
+  {
+   "y": 1639,
+   "what": "Smyth of Nibley: “Swonhunger; corruptly called Saniger”",
+   "band": "tudor",
+   "href": "/saniger-place"
+  },
+  {
+   "y": 1692,
+   "what": "Edward Saniger of Saniger, clothier; a gentleman by 1709",
+   "band": "tudor",
+   "href": "/saniger-place"
+  },
+  {
+   "y": 1781,
+   "what": "Lieutenant Robert D'Arcy at the siege of Fort St Philip's, Minorca",
+   "band": "georgian",
+   "href": "/the-corps"
+  },
+  {
+   "y": 1807,
+   "what": "Lieutenant-Colonel R. D'Arcy, Commanding Engineer of the Copenhagen expedition",
+   "band": "georgian",
+   "href": "/the-corps"
+  },
+  {
+   "y": 1809,
+   "what": "Walcheren: arrested at Flushing for refusing to write a report",
+   "band": "georgian",
+   "href": "/the-corps",
+   "key": true
+  },
+  {
+   "y": 1851,
+   "what": "Lydia Sanigar dies at Berkeley — register 3, entry 265",
+   "band": "georgian",
+   "href": "/sanigers"
   }
  ],
  "close": "The bands are the state, not the family. Read the two together and the pattern is hard to miss: this family goes where a government sends it, and gets written down when a government writes it down."
