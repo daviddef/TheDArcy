@@ -12,6 +12,6 @@ const doors = (t.doors || []).map(([h, n, b]) => [u(h), n, b]);
 ---
 <Base title="The trees" eyebrow={`${t.rows.length} lines followed`} dek="Every family this archive follows, and the two grafts that carry almost all of its claimed depth.">
   <section class="blk">
-    <Trees rows={rows} note={t.note} close={t.close} doors={doors} />
+    <Trees rows={rows} note={t.note} close={t.close} doors={doors} drawn={u("/tree/")} />
   </section>
 </Base>
