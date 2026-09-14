@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
+import { u } from "../lib/url.js";
+import d from "../data/saniger-1608.json";
+---
+<Base
+  title="The muster of 1608"
+  eyebrow={`Gloucestershire, 1608 · found ${d.searched}`}
+  dek="Eleven men of this surname, counted by the Crown two centuries before the archive's earliest register entry — and one of them living in the hamlet the name came from.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <Blk label="John Smyth of Nibley" title={d.source.head}>
+    <p class="lede">{d.source.body} <span class="chip doc">{d.source.chip}</span></p>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.source.where}</p>
+  </Blk>
+
+  <Blk label="Read it the way he wrote it" title={d.key.head}>
+    <p>{d.key.note}</p>
+    <Scroll>
+      <table>
+        <tbody>{d.key.rows.map(([k, v]) => (
+          <tr><td style="white-space:nowrap"><strong class="mono small">{k}</strong></td>
+              <td class="small">{v}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+  </Blk>
+
+  <Blk label="The survey" title={d.men.head}>
+    <Scroll>
+      <table>
+        <thead><tr><th>Name</th><th>Trade</th><th>Tithing</th><th class="m">Age</th><th>Stature</th></tr></thead>
+        <tbody>
+          {d.men.rows.map(([who, trade, place, age, stat]) => (
+            <tr style={place.startsWith("Saniger") ? "background:var(--tint)" : ""}>
+              <td><strong>{who}</strong></td>
+              <td class="small">{trade}</td>
+              <td class="small">{place}</td>
+              <td class="m">{age}</td>
+              <td class="small">{stat}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">Every line above is the transcript's own wording.
+      {" "}<span class="chip doc">{d.men.chip}</span></Note>
+  </Blk>
+
+  <Blk label="Saniger, in Hinton parish" title={d.hamlet.head}>
+    <Note style="border-left-width:3px">
+      <strong style="font-size:1.1em">{d.hamlet.body}</strong>
+      <span class="chip doc">{d.hamlet.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.hamlet.means}</p>
+    <p class="small" style="margin-top:1rem">{d.hamlet.others}</p>
+    <Note style="margin-top:1.2rem">
+      <strong>And what is not claimed.</strong> {d.hamlet.careful}
+      {" "}<span class="chip inf">{d.hamlet.chipCareful}</span>
+    </Note>
+    <p class="small" style="margin-top:1rem">
+      <a href={u("/saniger-place/")}>The place, and the deeds behind it →</a></p>
+  </Blk>
+
+  <Blk label="Chronology" title={d.spelling.head}>
+    <p class="lede">{d.spelling.body}</p>
+    <Note style="margin-top:1.2rem">{d.spelling.means}
+      {" "}<span class="chip doc">{d.spelling.chip}</span></Note>
+    <p class="small" style="margin-top:1.1rem">{d.spelling.tested}</p>
+  </Blk>
+
+  <Blk label="Occupation" title={d.trade.head}>
+    <p class="lede">{d.trade.body}</p>
+    <Note style="margin-top:1.2rem">{d.trade.means}
+      {" "}<span class="chip inf">{d.trade.chip}</span></Note>
+    <p class="small" style="margin-top:1rem">
+      <a href={u("/sanigers/")}>The 556 later records →</a></p>
+  </Blk>
+
+  <Blk label="Method" title={d.traps.head}>
+    <Scroll>
+      <table>
+        <tbody>{d.traps.rows.map(([h, b]) => (
+          <tr><td style="white-space:nowrap;vertical-align:top"><strong class="small">{h}</strong></td>
+              <td class="small">{b}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.traps.means}
+      {" "}<span class="chip lore">{d.traps.chip}</span></Note>
+  </Blk>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What this changes</h2>
+    <ol class="dek" style="margin-top:1rem">
+      {d.matters.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
+    </ol>
+    <Note style="margin-top:1.3rem"><strong>Still open.</strong> {d.open}</Note>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/saniger-place/")}>The hamlet →</a> ·
+      <a href={u("/sanigers/")}>The surname in the registers →</a> ·
+      <a href={u("/hannah-baptism/")}>Hannah Saniger →</a> ·
+      <a href={u("/errands/")}>What to look for next →</a></p>
+  </section>
+</Base>

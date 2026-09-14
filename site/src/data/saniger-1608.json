@@ -1,0 +1,81 @@
+{
+  "searched": "14 September 2026",
+  "lede": "In 1608 the Crown counted every man in Gloucestershire fit to bear arms, parish by parish, with his trade, his age to the nearest decade and his height judged by the weapon he could carry. Eleven men of this surname are in it. One of them was living in the hamlet the surname came from.",
+  "source": {
+    "head": "What the survey is",
+    "body": "John Smyth of Nibley (1567–1641), steward of the Berkeley estates, compiled the muster for Gloucestershire in 1608. It lists, under hundreds, manors and tithings, the name and occupation of each man capable of bearing arms. Sir John Maclean printed it in 1902; a facsimile followed in 1980. The searchable transcript used here was built from the 1902 edition.",
+    "chip": "documented",
+    "where": "Searched at coaley.net/glos1608, the online transcript of Smyth's survey, on 14 September 2026."
+  },
+  "key": {
+    "head": "Smyth's own key",
+    "note": "The codes are Smyth's, not the transcriber's. His explanations, quoted:",
+    "rows": [
+      ["A20", "“shows the age of that man to be about Twenty.”"],
+      ["A40", "“shows the age of that man to be about Forty.”"],
+      ["A60", "“shows the age of that man to be between Fifty and sixty.”"],
+      ["tallest stature", "“fit to make a pikeman.”"],
+      ["middle stature", "“fit to make a musketeer.”"],
+      ["lower stature", "“fit to serve with a caliver.”"],
+      ["meanest stature", "“either fit for a pyoner or of little other use.”"],
+      ["trained", "“at the time of taking this view, he was then a trained soldier.”"],
+      ["subsidy man", "“the said man was then a subsidy man.”"]
+    ]
+  },
+  "men": {
+    "head": "Eleven men, four spellings",
+    "rows": [
+      ["John Saniger", "labourer", "Halmore [Berkeley]", "A20", "lower stature"],
+      ["Richard Saniger", "fuller", "Wotton-under-Edge", "A40", "lower stature"],
+      ["John Saniger", "weaver", "Woodmancote [in Dursley parish]", "A40", "lower stature"],
+      ["Thomas Saniger", "weaver", "Paganhill [Stroud]", "A40", "lower stature"],
+      ["Richard Saniger", "labourer", "Alkerton [Stonehouse]", "A40", "middle stature"],
+      ["John Sanyger", "weaver", "Hinton [Berkeley]", "A40", "lower stature"],
+      ["William Sanyger", "servant to George Lewis", "Hinton [Berkeley]", "A20", "lower stature"],
+      ["Thomas Sanyger", "weaver", "Dursley", "A40", "meanest stature"],
+      ["William Syniger", "tailor", "Kings Stanley (Borough) [Stonehouse]", "—", "trained"],
+      ["Thomas Syniger", "weaver", "Oxlynch [Stonehouse]", "A40", "lower stature"],
+      ["John Sainger", "weaver", "Saniger [in Hinton parish, Berkeley]", "A40", "lower stature"]
+    ],
+    "chip": "documented"
+  },
+  "hamlet": {
+    "head": "A man of the name, in the place of the name",
+    "body": "The survey lists the hamlet itself as a tithing: “Saniger [in Hinton parish, Berkeley]”, with eight men in it. The seventh is JOHN SAINGER, weaver, A40, lower stature. In 1608 a man called Sainger was living in a hamlet called Saniger.",
+    "means": "This archive already argued, from deeds, that the surname is a worn-down SWANHANGER and that it came off the place. This is the first record it holds that shows the two together in one line: the place named, and a man of the name resident in it.",
+    "chip": "documented",
+    "careful": "It does not make him anyone's ancestor. No record here links any of these eleven men to Hannah Saniger, born about 1804, and none is claimed. What the survey gives is the surname's home ground and its trades, two centuries before this archive's earliest register entry.",
+    "chipCareful": "context, not descent",
+    "others": "Two more stand in the same parish: JOHN SANYGER, weaver, and WILLIAM SANYGER, servant to George Lewis, both at Hinton [Berkeley] — the parish that contains the hamlet."
+  },
+  "spelling": {
+    "head": "What the spellings date",
+    "body": "In 1608 the surname exists in four forms, and every one of them ends -GER: Saniger, Sanyger, Syniger, Sainger.",
+    "means": "The forms that dominate this archive's own parish registers two centuries later — SINNEGAR (92 entries), SANIGAR (74), SINEGAR (60) — appear nowhere in 1608. The -GAR ending is a later development, not an older one. Two of the 1608 forms, SANYGER and SYNIGER, are not among the seventeen spellings this archive had collected.",
+    "chip": "documented",
+    "tested": "Tested, not assumed. Every surname in the county ending -gar (112 men), -gear (0), -ger (200), -gor (31) and -gre (198) was listed and read. The only S-initial forms of this name are the four above; Seagar, Seager, Sellinger, Seveger, Stranger and Stringer are other families, and the single SINGER — Anthony Singer, servant, at Coln St Aldwyns near Cirencester — is forty miles from the Berkeley Vale and is not counted here."
+  },
+  "trade": {
+    "head": "They were cloth workers",
+    "body": "Six of the eleven are weavers. Add the fuller at Wotton-under-Edge and the tailor at Kings Stanley and eight of eleven are in cloth or clothing. The places say the same thing: Dursley, Stroud, Stonehouse, Kings Stanley and Wotton-under-Edge are the broadcloth district.",
+    "means": "This archive's own 556 later Saniger records put WEAVER second among stated occupations, behind blacksmith. The trade holds across two hundred years and the same twelve miles of country.",
+    "chip": "the continuity is inferred from two separate counts"
+  },
+  "traps": {
+    "head": "Two ways this search could have lied",
+    "rows": [
+      ["The trailing wildcard returns nothing", "Searching Sanige* gives no matches, while Saniger gives five. A wildcard at the END of a term silently matches nothing; one at the START works (*niger = 7). Anyone trusting San* would record a null for a surname that is plainly there."],
+      ["A single hit is spelled out in words", "One match is reported as “There is one match”, not “1 match”. A reader — or a script — looking for a digit sees nothing and files a zero. This is how JOHN SAINGER, the one man living in the hamlet itself, was missed on the first pass of this very search and recovered only on the second."]
+    ],
+    "means": "Both were caught by control tests, and both are recorded here because the miss, not the find, is the transferable part.",
+    "chip": "method"
+  },
+  "matters": [
+    ["The surname is documented in Gloucestershire in 1608.", "Two hundred years before this archive's earliest parish-register entry, in the same twelve miles of country."],
+    ["A man of the name lived in the hamlet of the name.", "John Sainger, weaver, at Saniger in Hinton parish, Berkeley. The toponymic argument now has a person standing in it."],
+    ["The -GAR spellings are late.", "Every 1608 form ends -GER. The commonest later spellings did not yet exist."],
+    ["Two spellings were unknown here.", "SANYGER and SYNIGER were not among the seventeen this archive had collected, and three of the eleven men carry them."],
+    ["None of it is a line.", "Eleven documented men, and not one link to Hannah Saniger. The gap between 1608 and 1804 is unbridged and is not bridged here."]
+  ],
+  "open": "The 1608 survey names men, not parents. Bridging it to the archive's registers needs Berkeley and Hinton wills and the manor court rolls for Hinton — GCR/231 and 258 are already on the errand queue, and the eleven names above are what to look for in them."
+}

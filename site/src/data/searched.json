@@ -1693,6 +1693,38 @@
    "outcome": "blocked",
    "got": "The QSA file proves the insolvency exists. Trove's search interface would not surface the notice, repeatedly. The file itself is not digitised.",
    "href": "/errands"
+  },
+  {
+   "src": "Smyth's Men and Armour for Gloucestershire, 1608",
+   "what": "The whole county, for the Saniger surname — all seventeen spellings this archive holds, plus every surname in Gloucestershire ending -gar, -gear, -ger, -gor and -gre",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Eleven men in four spellings — Saniger (5), Sanyger (3), Syniger (2), Sainger (1). One, John Sainger, weaver, is living in the hamlet of Saniger in Hinton parish, Berkeley. SANYGER and SYNIGER were not among the seventeen spellings held here.",
+   "href": "/saniger-1608"
+  },
+  {
+   "src": "Smyth's Men and Armour for Gloucestershire, 1608",
+   "what": "Thirteen spellings of the surname that returned nothing: Sanigar, Sanigear, Sanegar, Saneger, Sannigar, Sanniger, Sannegar, Sanger, Sinegar, Sinnegar, Siniger, Sinigar, Sinager, Sineger",
+   "when": "14 Sep 2026",
+   "outcome": "null",
+   "got": "All genuinely absent, control-tested: the same interface returned 676 men for Dursley and 42 for Halmore. Every form ending -GAR is missing from 1608, which dates the -GAR spellings as later than the -GER ones rather than older.",
+   "href": "/saniger-1608"
+  },
+  {
+   "src": "Smyth's Men and Armour for Gloucestershire, 1608",
+   "what": "SWANHANGER, as both a surname and a place name",
+   "when": "14 Sep 2026",
+   "outcome": "null",
+   "got": "Nothing under either. The tithing is written 'Saniger [in Hinton parish, Berkeley]' by 1608, so the older form had already gone out of written use — consistent with the deeds, which carry Swanhanger to 1741 only as an antiquarian spelling.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "Internet Archive — Men & Armour, 1980 facsimile",
+   "what": "The scanned text of the 1980 reprint (menarmourforglou0000smyt)",
+   "when": "14 Sep 2026",
+   "outcome": "blocked",
+   "got": "A lending item: the full text returns HTTP 401 and the search-inside endpoints are retired. Reading it would need an Archive.org account and a loan. The 1902 edition's transcript at coaley.net answered instead.",
+   "href": "/saniger-1608"
   }
  ]
 }
