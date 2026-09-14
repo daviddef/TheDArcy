@@ -9,8 +9,12 @@ import line from "../data/line.json";
 
 // The spine runs oldest-first on the page; the data is youngest-first.
 const spine = [...line].reverse();
-const shown = spine.filter((g) => !g.living);
-const hidden = spine.length - shown.length;
+/* The living generations were filtered off this page entirely, which left the
+   line stopping two generations short of the person most likely to be reading
+   it. The estate rule is Falco's — name them, nothing more — so they are shown
+   by name, with no date, no place and no marriage beside them. */
+const shown = spine;
+const living = spine.filter((g) => g.living).length;
 
 // Where each generation stands. This is the archive's judgement, not the tree's.
 const CONFIDENCE = {
@@ -124,9 +128,10 @@ const corr = (id) => CORRECTIONS[id];
     corrected value is shown here and <strong>the tree's own version is printed underneath it</strong>.
     Correcting quietly would conceal the one thing this archive is for.</p>
 
-    {hidden > 0 && (
-      <p class="small" style="margin-top:.7rem">{hidden} living {hidden === 1 ? "generation is" : "generations are"} omitted
-      from this build. The line continues past the last person shown here.</p>
+    {living > 0 && (
+      <p class="small" style="margin-top:.7rem">The last {living === 1 ? "generation is" : living + " generations are"} living,
+      and {living === 1 ? "is" : "are"} carried by name alone — no date, no place, nothing else. That is
+      the rule everywhere on this site, and it is why the line can run all the way down.</p>
     )}
   </section>
 
@@ -144,8 +149,8 @@ const corr = (id) => CORRECTIONS[id];
             const c = corr(g.id) || {};
             const spouses = c.spouses
               ? c.spouses
-              : (g.spouses || []).filter((s) => s.name && !s.living)
-                  .map((s) => s.name + (s.married ? ` — m. ${fmtDate(s.married)}` : ""));
+              : (g.spouses || []).filter((s) => s.name)
+                  .map((s) => s.name + (s.married && !s.living ? ` — m. ${fmtDate(s.married)}` : ""));
             return (
               <tr>
                 <td class="m">{g.gen}</td>

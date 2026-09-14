@@ -81,7 +81,14 @@ def occupation(p):
     return (e or {}).get("detail") or (e or {}).get("note") or ""
 
 
-REDACT = True   # never write a living person's details to a committed file
+REDACT = True   # never write a living person's DETAILS to a committed file
+# — but do write their name. This archive used to withhold living people
+# entirely, which left fifty-odd relatives on the tree as an em dash and made
+# it the one archive of the seven where a living reader could not find their
+# own family. The rule across the estate is Falco's: name them, nothing more.
+# Name only: no date, no place, no cause, no burial, no occupation, no
+# marriage date. checkliving.py --policy named-bare enforces that against the
+# built site independently of anything decided here.
 
 
 def row_for(people, families, pid, ahn=None):
@@ -90,7 +97,7 @@ def row_for(people, families, pid, ahn=None):
         # The same rule the site build applies, applied here too, because this
         # repository is public and these files are committed to it.
         return {"ahn": ahn or "", "gen": gen_of(ahn) if ahn else "", "id": p["id"],
-                "mh": "", "name": "— living, withheld —", "sex": "", "born": "",
+                "mh": "", "name": display(p), "sex": "", "born": "",
                 "born_place": "", "died": "", "died_place": "", "cause": "",
                 "burial": "", "occupation": "", "spouses": "", "living": "yes",
                 "n_notes": "", "sources": ""}
@@ -111,9 +118,10 @@ def row_for(people, families, pid, ahn=None):
         "cause": d.get("cause", ""),
         "burial": bur.get("place", ""),
         "occupation": occupation(p),
-        # A living spouse is named nowhere, even on a deceased person's row.
+        # A living spouse is named, and nothing else about them is — not even
+        # the year they married, which is a date about a living person.
         "spouses": " | ".join(
-            ("— living, withheld —" if is_living(people[s]) else display(people[s]))
+            display(people[s])
             + (f' (m. {dt})' if dt and not is_living(people[s]) else "")
             for s, dt, _ in sp),
         "living": "yes" if is_living(p) else "",

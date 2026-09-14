@@ -10,7 +10,7 @@
     "preview": "astro preview --port 4323",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
     "check:kit": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkarchive.py --dist dist",
-    "check:living": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --policy absent",
+    "check:living": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --policy named-bare",
     "check:living:tree": "python3 ../tools/check_living.py --dist dist"
   },
   "dependencies": {

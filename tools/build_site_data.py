@@ -106,8 +106,8 @@ def spouses(people, families, pid):
         d = next((e for e in f["events"] if e["kind"] == "divorce"), {})
         alive = bool(other in people and is_living(people[other]))
         out.append({
-            # A living spouse is never named, not even on a published person.
-            "name": "" if alive else (display(people[other]) if other in people else ""),
+            # A living spouse is named, and nothing else about them is.
+            "name": display(people[other]) if other in people else "",
             "id": "" if alive else other,
             "living": alive,
             "married": "" if alive else m.get("date", ""),
@@ -144,9 +144,8 @@ def person_json(people, families, pid, ahn=None):
         "occupation": occupation(p),
         "life": lifespan(p),
         "spouses": [s for s in spouses(people, families, pid)],
-        # A living parent is not named, even on a published child's page.
-        "parents": [display(people[x]) for x in p["parents"]
-                    if x in people and not is_living(people[x])],
+        # A living parent is named, and nothing else about them is.
+        "parents": [display(people[x]) for x in p["parents"] if x in people],
         "sources": p["sources"][:6],
         "notes": p["notes"],
         "living": is_living(p),
@@ -154,13 +153,19 @@ def person_json(people, families, pid, ahn=None):
 
 
 def redact(rec):
-    """A living person is reduced to the fact that they exist and no more.
+    """A living person is reduced to their name and no more.
 
-    They are kept in the graph only so that a line does not appear to stop; no
-    date, no place, no note, no name beyond the surname reaches the build.
+    This archive used to withhold the name as well, which left fifty relatives
+    on the published tree as an em dash and made it the only one of the seven
+    where a living reader could not find their own family. The estate rule is
+    Falco's — name them, nothing more — and this is now that.
+
+    Nothing else survives: no date, no place, no note, no occupation, no cause,
+    no burial, no marriage. checkliving.py --policy named-bare checks the built
+    HTML for exactly that, independently of this function.
     """
     return {
-        "id": rec["id"], "name": "—", "surname": rec["surname"],
+        "id": rec["id"], "name": rec.get("name") or "—", "surname": rec["surname"],
         "living": True, "gen": rec.get("gen"), "ahn": rec.get("ahn"),
         "born": "", "bornPlace": "", "died": "", "diedPlace": "",
         "life": "", "occupation": "", "spouses": [], "parents": [],
