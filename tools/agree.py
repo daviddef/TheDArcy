@@ -19,6 +19,31 @@ more than one year.
 It proves nothing on its own. A person really can be gazetted twice, and a
 burial really can fall in the year after a death. What it does is refuse to
 let two numbers for one event sit on two pages without anybody looking.
+
+WHAT IT HAS ACTUALLY CAUGHT, and what it has not
+------------------------------------------------
+First run, 15 September 2026: one real fault, found immediately — Robert
+D'Arcy's first commission printed as 1778 on six files after it had been
+corrected to 1776 everywhere else, including in tools/build_register.py,
+which generates a register row and would have reproduced the wrong date on
+every future build.
+
+Every one of the 31 pairs still flagged after that was then triaged by hand,
+and every one is a false positive. There are exactly three kinds, and none
+of them is fixable by tightening the window further:
+
+  1. REPEATED FORENAMES. This family has a Thomas Saniger in 1677, 1744,
+     1769, 1803 and 1851. The tool matches on a name, so five men look like
+     one man with five dates.
+  2. ADJACENT EVENTS. "m. Robert D'Arcy, Portsea, 21 June 1779" sits one
+     line above "Joseph D'Arcy, baptised Portsea, 19 March 1780", and a
+     proximity test cannot tell a neighbour from a contradiction.
+  3. A BIRTH AND A LATE BAPTISM. "29 Apr 1825 / bapt. 31 Mar 1826" is one
+     child, correctly recorded, whose two years differ by eleven months.
+
+So the honest summary is: it found one bug, it found it at once, and it has
+found nothing since. That is a reasonable thing for a check to do, but do
+not read a long list from it as a long list of problems.
 """
 import json, os, re, sys, glob, html, collections
 
@@ -64,7 +89,14 @@ NEGATED = re.compile(
     r"\bnot\b|\bnone\b|\bcannot\b|\bno\b|\brather than\b|\binstead\b|"
     r"\bwrong\b|\bcorrect|\bsaid until\b|\bused to\b|\bmistak|\berror\b|"
     r"\bdisproved?\b|\brefut|\bwould have\b|\bif \b|\bclaims?\b|\balleged\b|"
-    r"\bsupposed\b|\bunevidenced\b|\bdiffers?\b|\bconflict", re.I)
+    r"\bsupposed\b|\bunevidenced\b|\bdiffers?\b|\bconflict|"
+    # The archive's house idiom for a correction. It prints the wrong date
+    # beside the right one on purpose — "the tree says 10 March 1824, ten
+    # months early" — and without these the checker reports the correction
+    # itself as the contradiction it was written to fix.
+    r"\bthe tree (?:says|gives|has|dates|puts)\b|\btree's\b|"
+    r"\b(?:months?|years?|days?) (?:early|late|out|before|after)\b|"
+    r"\buntil \d{1,2} \w+ 20\d\d\b|\bsaid\b", re.I)
 
 # People worth checking: a first name and a surname, both capitalised, that the
 # archive uses as a unit. Kept deliberately narrow — this is a contradiction

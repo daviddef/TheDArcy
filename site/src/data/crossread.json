@@ -244,5 +244,19 @@
   ],
   "means": "The method still holds and the lesson is unchanged: read your own files before searching. But three of the six moved because somebody finally opened a printed book and a county index, both free, both sitting in plain sight for as long as this archive has existed.",
   "chip": "documented"
+ },
+ "agree": {
+  "head": "And a second tool, for when the archive disagrees with itself",
+  "lede": "This page came out of a filing failure: a fact published on one page while three others called it unknown. A week later the same shape appeared in a different form — a DATE printed as 1776 on five pages and 1778 on a sixth, for weeks, with nothing in the build able to notice.",
+  "body": "So there is now a second script. crossread.py reads this archive against its open questions; agree.py reads it against itself. For every person it names often and every event word that carries a date, it collects every year appearing near both and reports the pairs carrying more than one.",
+  "foundHead": "What it found, and what it did not",
+  "found": "One real fault, immediately: six files still asserting 1778 after the date had been corrected to 1776 everywhere else — among them the script that GENERATES the register, which would have reproduced the wrong date on every future build.",
+  "chip": "documented",
+  "noiseHead": "Then thirty-one false alarms, all triaged",
+  "noise": "Every remaining pair was checked by hand and every one is a false positive, in three kinds. REPEATED FORENAMES: this family has a Thomas Saniger in 1677, 1744, 1769, 1803 and 1851, and a name-matcher sees one man with five dates. ADJACENT EVENTS: a marriage of 1779 sits one line above a baptism of 1780, and proximity cannot tell a neighbour from a contradiction. A BIRTH AND A LATE BAPTISM: “29 Apr 1825 / bapt. 31 Mar 1826” is one child, correctly recorded, eleven months apart.",
+  "hardHead": "And one thing it had to be taught",
+  "hard": "This archive states wrong dates ON PURPOSE. Its method is to print what was rejected — “the tree says 10 March 1824, ten months early” — so a page CORRECTING a date reads exactly like a page asserting it. The first version duly flagged /jean-ward for 1777 in a sentence that existed to rule 1777 out. Windows carrying a negation, or the archive's own correction idiom, are now skipped.",
+  "chipHard": "the method defeats the checker, until the checker knows the method",
+  "means": "It found one bug, it found it at once, and it has found nothing since. That is a reasonable thing for a check to do. The point of recording the thirty-one is that a long list from a tool is not a long list of problems, and saying so is part of running one."
  }
 }
