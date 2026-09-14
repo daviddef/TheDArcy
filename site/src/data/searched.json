@@ -9,6 +9,38 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — Cambridgeshire Burials",
+   "what": "When Lady Catherine died, and where",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "CATHERINE GEORGIANA DARCY, AGED 36, “OF BATH”, buried 22 MARCH 1824 at BOURN, CAMBRIDGESHIRE. The age gives a birth about 1788 and makes her twenty-nine at the Bath marriage of November 1817; the residence is the town she married in; and the date measures the gap between Joseph D'Arcy's two families, since he remarried in November 1830. Her third son Richard was born about 1824, the year she died at thirty-six — an inference, and stated as one.",
+   "href": "/joseph-darcy"
+  },
+  {
+   "src": "FreeBMD",
+   "what": "English civil registration for the Brisbane line's English generations",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "OPENS WITHOUT A LOGIN AND RETURNS NOTHING. The search page accepts a POST and answers with the results-page furniture and no result rows, for every query. Control: SMITH BIRTHS IN BRISTOL IN 1840 returns zero, which is impossible — as does Wakefield, whose 1840 Bristol registration this archive already holds at vol 11 p.183. Nothing was searched; no null from it is recorded.",
+   "href": "/searched"
+  },
+  {
+   "src": "RootsChat",
+   "what": "The Hornby claim and the Keele graft, put to forum specialists",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "“You are not allowed to search for posts in this forum. Please login below or register.” The forum requires an account to SEARCH, let alone to post. No account was created and no credentials entered. The two questions are drafted and are now errand 47 for somebody with a login.",
+   "href": "/errands"
+  },
+  {
+   "src": "Geneanet — Italy, Marriages 1809-1900",
+   "what": "FALCO at ARIENZO, the Italian side of the marriage that joins two archives",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "26 RECORDS, readable WITHOUT signing in and with no bot check. Falco brides and grooms at Arienzo with both parties named — Loffredo, Abatiello, Di Lucia, Librera, Perrotta — and FALCO GIOVANNA married to CRISCI ANIELLO, Crisci being one of the Falco archive's own surnames. Recorded as reachable ground for that archive rather than imported into this one.",
+   "href": "/the-other-archives"
+  },
+  {
    "src": "Antenati — Portale Antenati, Archivio di Stato di Caserta",
    "what": "The Arienzo registers, for the Italian side of the marriage that joins this archive to the Falco one",
    "when": "15 Sep 2026",

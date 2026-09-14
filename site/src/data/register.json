@@ -1,10 +1,10 @@
 {
-"entries": 824,
-"distinct": 574,
-"records": 351,
+"entries": 825,
+"distinct": 575,
+"records": 352,
 "tree": 473,
 "grafted": 98,
-"linked": 824,
+"linked": 825,
 "surnames": 196,
 "groups": [
 {
@@ -5138,6 +5138,26 @@
 ]
 },
 {
+"surname": "WEST",
+"n": 2,
+"rows": [
+{
+"name": "Catherine Georgiana West",
+"says": "burial · 22 March 1824, BOURN, Cambridgeshire · AGED 36 · “OF BATH” · the Lady Catherine of her sons' death notices, and Joseph D'Arcy's first wife",
+"source": "record · Cambridgeshire Burials (Cambridgeshire and Huntingdonshire FHS)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Lady Catherine Georgiana West",
+"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
+"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "ZYLLENHARDT",
 "n": 2,
 "rows": [
@@ -6869,19 +6889,6 @@
 "says": "convict · suspected of breaking open Major D'Arcy's crate of dinner ware, 17 May 1826",
 "source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
 "link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733",
-"kind": "record"
-}
-]
-},
-{
-"surname": "WEST",
-"n": 1,
-"rows": [
-{
-"name": "Lady Catherine Georgiana West",
-"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
-"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
-"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 }
 ]

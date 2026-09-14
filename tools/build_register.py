@@ -755,6 +755,8 @@ rec("Audrey Dell D'Arcy", "burial · 1 Nov 1929 – 1 Aug 2022, aged 92 · Cente
     "record · Find a Grave memorial 242573098 · Centenary Memorial Gardens, Brisbane", "https://www.findagrave.com/memorial/242573098")
 rec("Christine Hilda D'Arcy-Evans", "burial · 15 Jan 1930 – 10 Aug 2017 · Centenary Memorial Gardens, Brisbane · plot GARDEN OF REFLECTION, Section C, Site 41 · a D'Arcy-Evans in the family's own cemetery, and unknown to this archive",
     "record · Find a Grave memorial 229072083 · Centenary Memorial Gardens, Brisbane", "https://www.findagrave.com/memorial/229072083")
+rec("Catherine Georgiana West", "burial · 22 March 1824, BOURN, Cambridgeshire · AGED 36 · “OF BATH” · the Lady Catherine of her sons' death notices, and Joseph D'Arcy's first wife",
+    "record · Cambridgeshire Burials (Cambridgeshire and Huntingdonshire FHS)", "https://www.findmypast.co.uk/")
 
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [

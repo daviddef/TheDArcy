@@ -34,7 +34,7 @@ BRI = re.compile(r"""FreeREG|FreeBMD|FreeCEN|census|TNA\b|PROB\s|ADM\s|WO\s|Conn
     |Death Duty|Consistory|Prerogative|Probate|Wills
     |Sussex|Brighton|Horsham|Petworth|Midhurst|Steyning|Express\b|Dorset|Lyme Regis
     |Britain|Harrow|Surrey|Croydon|Worcester|Southampton|Milford
-    |Pennington|Lymington""",
+    |Pennington|Lymington|Cambridgeshire|Huntingdonshire|Bourn\b|Bath\b""",
     re.I | re.X)
 
 def classify(src):

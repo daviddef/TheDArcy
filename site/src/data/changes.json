@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "23 passes · 279 changes",
+ "eyebrow": "23 passes · 284 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -33,7 +33,12 @@
     "THE NLI CANNOT HELP THE LIMERICK LINE, and that is worth saying rather than searching. Its registers are CATHOLIC; Paul Cole Atkinson is recorded born at ST MARY'S, LIMERICK — the Church of Ireland cathedral parish — and Atkinson, Cole, Creech, Kent, Bowen and Peevers are Protestant settler names. The same shape as the Wicklow problem.",
     "irishgenealogy.ie is behind a Cloudflare bot check for the THIRD time in this archive's life. RootsIreland is behind a subscription. SCOTLANDSPEOPLE answers ACCESS DENIED without an account, and no account was created and no credentials entered.",
     "BILLIONGRAVES IS BLOCKED, NOT EMPTY: the page loads and its own search API answers 403 and 400, and the country list never finishes. Nothing was searched, so nothing is known — recorded that way.",
-    "Eight rows added to /coverage and three errands opened, so that the next pass starts from these verdicts instead of repeating them."
+    "Eight rows added to /coverage and three errands opened, so that the next pass starts from these verdicts instead of repeating them.",
+    "FOUND LADY CATHERINE'S BURIAL: CATHERINE GEORGIANA DARCY, AGED 36, “OF BATH”, buried 22 MARCH 1824 at BOURN, CAMBRIDGESHIRE. Born about 1788, twenty-nine at her Bath marriage, and dead six years before Joseph remarried — so the gap between his two families is now measured rather than assumed.",
+    "Her third son Richard was born about 1824, the year she died at thirty-six. Published as an inference and labelled as one; and why she is buried at Bourn, a hundred and fifty miles from Bath, is not explained.",
+    "FREEBMD OPENS WITHOUT A LOGIN AND RETURNS NOTHING. It accepts a POST and answers with the results-page furniture and no rows. Control: SMITH BIRTHS IN BRISTOL IN 1840 returns zero, which is impossible. Nothing was searched, and no null from it is recorded.",
+    "ROOTSCHAT REQUIRES AN ACCOUNT TO SEARCH, let alone to post. None was created. The two questions worth putting to it — the Holderness descent and the disproved Keele graft, both asked as “what would break this” — are drafted as errand 47.",
+    "GENEANET READS WITHOUT SIGNING IN, and no bot check appeared: 26 FALCO marriages at ARIENZO in Italy, Marriages 1809-1900, both parties named, including FALCO GIOVANNA married to CRISCI ANIELLO. Recorded as the Falco archive's ground rather than imported."
    ],
    "found": [
     [
@@ -79,6 +84,18 @@
     [
      "Added",
      "/errands — the 422 Arienzo registers, the Church of Ireland Limerick line, and a BillionGraves retry"
+    ],
+    [
+     "Added",
+     "/joseph-darcy — Lady Catherine's burial, 22 March 1824"
+    ],
+    [
+     "Added",
+     "/coverage — FreeBMD unusable, RootsChat blocked, Geneanet good"
+    ],
+    [
+     "Added",
+     "/errands — errand 47, the Hornby and Keele questions for RootsChat"
     ]
    ]
   },

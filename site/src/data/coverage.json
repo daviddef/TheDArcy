@@ -262,6 +262,33 @@
    "verdict": "blocked",
    "note": "The old-parish-register search area answers ACCESS DENIED without an account. No account was created and no credentials were entered. Jean Ward's 1754 baptism and her parents' 1747 marriage are already held here from FamilySearch; what ScotlandsPeople would add is the register image itself.",
    "href": "/jean-ward"
+  },
+  {
+   "db": "FreeBMD",
+   "where": "England and Wales civil registration",
+   "holds": "unknown from here",
+   "span": "1837 onward",
+   "verdict": "unusable",
+   "note": "The search page opens with no login and accepts a POST, and then returns the results-page furniture with NO RESULT ROWS for every query. Control: SMITH BIRTHS IN BRISTOL IN 1840 returns zero, which is impossible, and so does Wakefield — a birth this archive already holds from the GRO index at vol 11 p.183. Nothing was searched. Every zero taken from it here is meaningless.",
+   "href": "/searched"
+  },
+  {
+   "db": "RootsChat",
+   "where": "the Hornby claim and the Keele graft",
+   "holds": "unknown",
+   "span": "—",
+   "verdict": "blocked",
+   "note": "“You are not allowed to search for posts in this forum. Please login below or register.” Searching needs an account, let alone posting. No account was created. Putting the Hornby evidence to the forum is a job for a person with a login, and is now an errand.",
+   "href": "/errands"
+  },
+  {
+   "db": "Geneanet",
+   "where": "FALCO at ARIENZO, Caserta",
+   "holds": "26 records in Italy, Marriages 1809-1900, with both spouses named",
+   "span": "1809–1900",
+   "verdict": "good",
+   "note": "Readable WITHOUT signing in, and no bot check appeared. Falco brides and grooms at Arienzo with their spouses — Loffredo, Abatiello, Di Lucia, Librera, Perrotta — and FALCO GIOVANNA married to CRISCI ANIELLO, Crisci being one of the Falco archive's own surnames. This is that archive's ground; the coverage is recorded here, not the records.",
+   "href": "/the-other-archives"
   }
  ]
 }
