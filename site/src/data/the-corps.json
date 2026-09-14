@@ -4,13 +4,13 @@
  "lede": "This archive has carried Robert D'Arcy's career on the authority of Connolly's Roll of Officers of the Corps of Royal Engineers — a book printed in 1898. Every step of it can now be cited to the London Gazette instead, with issue and page, and it begins two years earlier than anything else here.",
  "career": [
   {
-   "year": "1778",
+   "year": "17 January 1776",
    "was": "—",
    "became": "Practitioner Engineer and Second Lieutenant",
    "unit": "The Corps of Engineers",
-   "src": "British Army Lists & Commission Registers 1661-1826",
+   "src": "Printed Army Lists, 1778 and 1781 (seniority “17 Jan. 76”); Connolly's Roll of the Corps of Royal Engineers",
    "gaz": "",
-   "note": "His first commission, and now the earliest record of him anywhere in this archive — a year before he married at Portsea and two before his son was christened there."
+   "note": "His first commission, and the earliest record of him this archive holds. What this page said until 15 September 2026 — that the commission was in 1778, from a commercial index of the commission registers — is corrected: two contemporary printed Army Lists put him in the establishment with a seniority of 17 January 1776, and Connolly gives the same year. The rest of the site had 1776 all along; this page was the outlier."
   },
   {
    "year": "1781–82",
@@ -31,15 +31,6 @@
    "note": "No longer an inference. The christenings put him in the West Indies with his wife in the middle of the 1780s; the Corps' own station list says the posting outright. What this page said until 15 September 2026 — that these were “the only two records that fall inside” the blank between 1778 and 1802 — was wrong: Porter puts him at the siege of Fort St Philip's on MINORCA in 1781, three years after his first commission."
   },
   {
-   "year": "by November 1806",
-   "was": "Major",
-   "became": "COLONEL, and named with his corps for the first time",
-   "unit": "Royal Engineers",
-   "src": "Oxford University and City Herald, 1 November 1806 — his daughter's marriage: “MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS”",
-   "gaz": "",
-   "note": "THE EARLIEST RECORD THIS ARCHIVE HAS FOUND THAT NAMES ROBERT D'ARCY'S CORPS, and it was sitting in the report of a wedding the archive has held since it read the Chatham register. The Chester Courant of 11 November adds the church and the officiant — Chatham Church, by the Rev. I. T. Jones. He was gazetted Lieutenant-Colonel in March 1805; a paper calling him Colonel in 1806 is a newspaper rounding up, which they did constantly, so the rank here is worth less than the corps."
-  },
-  {
    "year": "8 May 1802",
    "was": "Captain",
    "became": "Major in the Army",
@@ -56,6 +47,15 @@
    "src": "Ordnance Office, 18 March 1805 — vice Nepean",
    "gaz": "15789 / 351",
    "note": "The SAME Ordnance Office announcement, printed on the SAME page of the Gazette and in the same column of the Limerick Gazette, the Kentish Gazette and the Kentish Weekly Post, promoted his son CONSTANTINE D'ARCY to first lieutenant of the same corps. The archive found this page in July and read the father's line without noticing the son's."
+  },
+  {
+   "year": "by November 1806",
+   "was": "Major",
+   "became": "COLONEL, and named with his corps for the first time",
+   "unit": "Royal Engineers",
+   "src": "Oxford University and City Herald, 1 November 1806 — his daughter's marriage: “MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS”",
+   "gaz": "",
+   "note": "THE EARLIEST RECORD THIS ARCHIVE HAS FOUND THAT NAMES ROBERT D'ARCY'S CORPS, and it was sitting in the report of a wedding the archive has held since it read the Chatham register. The Chester Courant of 11 November adds the church and the officiant — Chatham Church, by the Rev. I. T. Jones. He was gazetted Lieutenant-Colonel in March 1805; a paper calling him Colonel in 1806 is a newspaper rounding up, which they did constantly, so the rank here is worth less than the corps."
   },
   {
    "year": "4 June 1813",
@@ -165,6 +165,11 @@
   "trap": "This archive prints two dates for his first commission: 1776, from Connolly's Roll, on the timeline and elsewhere; and 1778, from the British Army Lists and Commission Registers, on this page. The obvious test is whether he appears in the printed lists of 1775 and 1776. He does not — and that proves nothing at all. The men listed beside him in 1778 are not there either: FIDDES, HOCKINGS, HUMFREY and SLACK return nought occurrences in both earlier volumes. Those lists do not print the Practitioner Engineer grade. The absence is the book's, not the man's.",
   "chipTrap": "an empty search, not a null",
   "resolve": "So the two dates stand unreconciled, and the document that would reconcile them is named: WO 54/240, the Board of Ordnance commission book for Engineers, 1755–1780, at Kew, not digitised and not name-indexed.",
-  "where": "Read 15 September 2026 in the free full text of the Army Lists for 1775, 1776, 1778 and 1781 on the Internet Archive."
+  "where": "Read 15 September 2026 in the free full text of the Army Lists for 1775, 1776, 1778 and 1781 on the Internet Archive.",
+  "dateHead": "And then the 1781 list settles the date",
+  "date": "The 1781 list prints the same men and interleaves each name with its seniority date. The block reads: “Wm. Kesterman 17 Jan. 76 · John Johnson do. · Charles Holloway do. · Thomas Whelpdale do. · John Humfrey do. · James Fiddes do. · Richard Hockings do. · Robert Beatson do. · ROBERT D'ARCY do. · Benjamin Slack 4 Mar. · James Lees 27 do. · Geo. Bridges 12 Dec. · Lewis Hay 2 Mar. 77.” His date is a ditto inside a block headed 17 JANUARY 1776, and the men after him break the ditto with their own later dates — which is what makes the chain readable rather than a guess. The 1778 list carries the same run.",
+  "dateChip": "documented — two printed lists, and Connolly agrees",
+  "dateMeans": "This archive has printed two dates for that commission. The timeline and four other pages say 1776, on Connolly's Roll. This page's career table said 1778, on a commercial index of the commission registers, and called it “his first commission, and now the earliest record of him anywhere in this archive”. Two contemporary printed Army Lists and a nineteenth-century roll of the Corps now agree on 17 January 1776, so the career table was wrong and the timeline was right. Corrected 15 September 2026.",
+  "dateCareful": "What is NOT claimed: that the 1778 index is a fabrication. Commission registers can carry a later confirming instrument, and a man can be appointed on one date and gazetted on another. But 1778 cannot be his FIRST commission, because he is already in the establishment with a 1776 seniority in a list printed that year."
  }
 }

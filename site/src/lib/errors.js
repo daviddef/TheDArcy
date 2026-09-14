@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "15 September 2026",
+    what: "Printed two different dates for Robert D'Arcy's first commission and never noticed. The timeline, /hornby and three other pages said 1776, from Connolly's Roll. /the-corps said 1778, from a commercial index of the commission registers, and called it “his first commission, and now the earliest record of him anywhere in this archive”.",
+    truth:
+      "17 JANUARY 1776. The printed Army List of 1781 interleaves each engineer with his seniority date: “Wm. Kesterman 17 Jan. 76 · John Johnson do. · Charles Holloway do. · Thomas Whelpdale do. · John Humfrey do. · James Fiddes do. · Richard Hockings do. · Robert Beatson do. · ROBERT D'ARCY do. · Benjamin Slack 4 Mar.” The men after him break the ditto with their own later dates, which is what makes the chain readable. The 1778 list carries the same run, and Connolly agrees on the year.",
+    why: "Two numbers for one event sat on two pages for weeks, and the page that was wrong was the one that sounded most authoritative — it named a record series and claimed a superlative. Nothing in the build checks that a date on one page matches the same date on another, and the archive's own cross-reading tool was run against open questions, never against its own figures.",
+    lesson:
+      "When two pages give different dates for one event, that is a finding, not a typo — and it is findable without any new source. The fix that generalises is not this correction; it is that a free contemporary printed list settled in ten minutes what a paid index had got wrong, and neither page had ever been read against the other.",
+    href: "/the-corps",
+  },
+  {
+    when: "15 September 2026",
     what: "Called Robert D'Arcy's career “a blank of twenty-four years” between 1778 and 1802, and said two Barbados christenings were “the only two records that fall inside it”.",
     truth:
       "The Corps published its own history in 1889. Whitworth Porter puts Lieutenant Robert D'Arcy at the siege of Fort St Philip's on Minorca in 1781 — three years after the commission, squarely inside the blank — and carries “Robert D'Arcy, Barbados” in a station list, so the posting this archive had inferred from a baptism register was stated outright by the Corps all along. Porter also has him Commanding Engineer at Copenhagen in 1807 and Commanding Royal Engineer at Walcheren in 1809.",
