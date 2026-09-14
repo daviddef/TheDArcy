@@ -703,6 +703,33 @@ rec("Charlotte D'Arcy", "census 1851 · aged 40 · LODGER, UNMARRIED, \u201cFund
 rec("James Hayward", "census 1851 · aged 61, born Buckinghamshire · LODGING HOUSE KEEPER · Western Cottages, Brighton — the house next door to the D'Arcy sisters",
     "record · 1851 census HO107/1646 f.358 p.60 sch.173", "https://www.findmypast.com.au/")
 
+# --- The Hyde D'Arcys of Milford, 15 September 2026 ---------------------------
+rec("Jean Ward", "death notice · “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS”",
+    "record · Hampshire Chronicle, 24 March 1823, p.3", "https://www.findmypast.co.uk/")
+rec("Robert D'Arcy", "described in March 1823 as “MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found naming his corps",
+    "record · Hampshire Chronicle, 24 March 1823, p.3", "https://www.findmypast.co.uk/")
+rec("Catherine Lucy Jane D'Arcy", "baptism · 23 January 1832, Milford · father JOSEPH, “Lt Col RA of MILFORD HOUSE”, mother KATHERINE LUCY ELIZA",
+    "record · Hampshire Baptisms (Hampshire Genealogical Society)", "https://www.findmypast.co.uk/")
+rec("John Hyde D'Arcy", "baptism · 30 May 1833, Milford · father JOSEPH, “Lt Col RA of Milford House”, mother KATHERINE LUCY",
+    "record · Hampshire Baptisms (Hampshire Genealogical Society)", "https://www.findmypast.co.uk/")
+rec("John Hyde D'Arcy", "Harrow School Register 1801-1893 · died 1852",
+    "record · Britain, School and University Students", "https://www.findmypast.co.uk/")
+rec("John Hyde D'Arcy", "death · 28 June 1852, Southampton, aged 19 · reported as far as Dublin",
+    "record · Catholic Telegraph, 10 July 1852, p.8; Hampshire Burials", "https://www.findmypast.co.uk/")
+rec("Josephine D'Arcy", "baptism · 1836, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
+    "record · Hampshire Baptisms (Hampshire Genealogical Society)", "https://www.findmypast.co.uk/")
+rec("Frank Hyde D'Arcy", "baptism · 22 June 1839, Milford · BORN 14 DECEMBER 1838 AT MADEIRA · father JOSEPH, mother KATHERINE LUCY ELIZA",
+    "record · Hampshire Baptisms (Hampshire Genealogical Society)", "https://www.findmypast.co.uk/")
+rec("Frank Hyde D'Arcy", "death · 15 June 1868, Worcester, aged 29 · buried PENNINGTON, Hampshire, 20 June 1868",
+    "record · England & Wales Deaths 1837-2007; Hampshire Burials; Western Daily Press, 22 June 1868, p.4",
+    "https://www.findmypast.co.uk/")
+rec("Joseph William D'Arcy", "baptism · 6 July 1841, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
+    "record · Hampshire Baptisms (Hampshire Genealogical Society)", "https://www.findmypast.co.uk/")
+rec("Frank Hamilton Hyde D'Arcy", "baptism · 26 November 1868, Croydon Common St James, Surrey · father FRANK HYDE, “Gentleman”, mother ANNA MARIA, of St James Road — five months after his father's death",
+    "record · Surrey Baptisms, Surrey History Centre 2809/1/2 p.204", "https://www.findmypast.co.uk/")
+rec("Frank Hamilton Hyde D'Arcy", "death · 1910, Chelmsford, Essex",
+    "record · England, Newspaper Death Notices", "https://www.findmypast.co.uk/")
+
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [
     ("George Pitt D'Arcy", "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”", "59769271"),

@@ -1,9 +1,40 @@
 {
  "title": "What changed",
- "eyebrow": "22 passes · 250 changes",
+ "eyebrow": "23 passes · 260 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "15 September 2026",
+   "title": "The last day of the subscription: the Hyde D'Arcys, and a claim withdrawn",
+   "did": [
+    "NAMED JOSEPH D'ARCY'S FIVE CHILDREN, which this archive has wanted since it found his will. All five baptised at Milford to Joseph and KATHERINE LUCY ELIZA, the register calling him “Lt Col RA of MILFORD HOUSE” — an address nobody here had.",
+    "FRANK HYDE D'ARCY WAS BORN AT MADEIRA on 14 December 1838. Four words in a baptism note, and Joseph D'Arcy was on a Portuguese island in the Atlantic in the winter of 1838.",
+    "JOHN HYDE D'ARCY went to HARROW and died at Southampton on 28 June 1852, aged nineteen — reported as far as the Catholic Telegraph in Dublin.",
+    "FRANK HYDE D'ARCY died at Worcester on 15 June 1868, aged twenty-nine, five years after his Lymington wedding, and was brought home to be buried at Pennington.",
+    "And a grandson: FRANK HAMILTON HYDE D'ARCY, baptised at Croydon Common on 26 November 1868 — FIVE MONTHS AFTER HIS FATHER DIED — father entered as “Gentleman”, mother Anna Maria, of St James Road. He died at Chelmsford in 1910.",
+    "FOUND JEAN WARD'S DEATH NOTICE: Hampshire Chronicle, 24 March 1823 — “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.”",
+    "WITHDREW A CLAIM MADE THE DAY BEFORE. /margaret-jones announced the 1843 notice as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. The 1823 notice does it twenty years earlier. Filed as an error, and the page now carries the correction above the claim."
+   ],
+   "found": [
+    [
+     "Corrected",
+     "/margaret-jones — “the first record anywhere” withdrawn, with the 1823 notice quoted"
+    ],
+    [
+     "Added",
+     "/the-corps — Major-General by March 1823, corroborating Connolly from a contemporary paper"
+    ],
+    [
+     "Added",
+     "/joseph-darcy — the five children, Madeira, Harrow, and a grandson at Croydon"
+    ],
+    [
+     "Filed",
+     "/what-we-got-wrong — own error 27, on the difference between “the earliest found” and “the first anywhere”"
+    ]
+   ]
+  },
   {
    "when": "14 September 2026",
    "title": "The Sussex sisters, documented",

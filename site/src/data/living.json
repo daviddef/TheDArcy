@@ -59,9 +59,9 @@
   "tree": 15643,
   "living": 2034,
   "published": 13609,
-  "phrases": 2016,
-  "pages": 686
+  "phrases": 1768,
+  "pages": 688
  },
  "namesakesNote": "Not living people at all — a historical namesake, or a phrase that only ever appears inside a longer published name. These carry no editorial decision and no privacy question; they are here because the matcher cannot tell them apart from the living person of the same name.",
- "countsNote": "Written by tools/check_living.py on every build. Never type these numbers into a page."
+ "countsNote": "Written by tools/check_living.py on every build — people, not name phrases. Never type these numbers into a page."
 }

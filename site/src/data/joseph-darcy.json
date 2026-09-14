@@ -196,32 +196,98 @@
   "note": "She is not in the 1851 census under any Darcy spelling in Hampshire, which is a gap in the index rather than a departure — the subscription list puts her there the following February."
  },
  "forward": {
-  "head": "The branch that stayed in England",
-  "body": "The archive has said for a year that Joseph's line simply stopped. It did not. His son FRANK, aged two at Priestlands on census night in 1841, is FRANK HYDE D'ARCY, and he married ANNA MARIA SIMPSON at Lymington on 29 September 1863 — daughter of R. Salisbury Simpson, her residence given as Bengal. The marriage was announced in Thacker's Overland News for India and the Colonies on 3 October 1863.",
+  "head": "The five children, and what became of them",
+  "body": "Joseph's will of 1844 left his property to his wife and FIVE CHILDREN, and this archive has never been able to name them. All five are baptised at MILFORD, Hampshire, to JOSEPH and KATHERINE LUCY ELIZA — and the register calls him “Lt Col RA of MILFORD HOUSE”, an address this archive did not have.",
+  "kids": [
+   [
+    "CATHERINE LUCY JANE D'ARCY",
+    "baptised Milford, 23 January 1832",
+    "Aged 9 at Priestlands in 1841. A Katherine Lucy Elizabeth D'Arcy dies at Lymington in 1863 — the mother, not the daughter, on the dates."
+   ],
+   [
+    "JOHN HYDE D'ARCY",
+    "baptised Milford, 30 May 1833",
+    "HARROW SCHOOL — he is in the Harrow School Register 1801–1893. DIED AT SOUTHAMPTON, 28 JUNE 1852, AGED NINETEEN, and was buried there. His death was carried as far as the Catholic Telegraph in Dublin."
+   ],
+   [
+    "JOSEPHINE D'ARCY",
+    "baptised Milford, 1836",
+    "Aged 6 at Priestlands in 1841."
+   ],
+   [
+    "FRANK HYDE D'ARCY",
+    "baptised Milford, 22 June 1839 — BORN 14 DECEMBER 1838 AT MADEIRA",
+    "Married ANNA MARIA SIMPSON at Lymington, 29 September 1863. DIED AT WORCESTER, 15 JUNE 1868, AGED TWENTY-NINE, and was brought home to be buried at PENNINGTON on the 20th."
+   ],
+   [
+    "JOSEPH WILLIAM D'ARCY",
+    "baptised Milford, 6 July 1841",
+    "Born in the census year, and an infant in the Priestlands household."
+   ]
+  ],
+  "madeira": "The note against Frank's baptism is four words long and it opens a country: “bn 14 Dec 1838 in MADEIRA”. Joseph D'Arcy was not at Milford in the winter of 1838 — he was on a Portuguese island in the Atlantic, where consumptive and half-pay Englishmen wintered, and his son was born there. NOTHING IN THIS ARCHIVE KNEW THAT.",
+  "grandson": {
+   "head": "And a grandson, baptised five months after his father died",
+   "body": "FRANK HAMILTON HYDE D'ARCY, baptised at CROYDON COMMON, ST JAMES, Surrey, on 26 NOVEMBER 1868 — father FRANK HYDE, occupation “GENTLEMAN”, mother ANNA MARIA, of ST JAMES ROAD, Croydon. His father had died at Worcester on 15 June. He died at Chelmsford, Essex, in 1910.",
+   "means": "Four generations of this family in England, from a major-general's son baptised at Portsea in 1780 to a boy christened at Croydon in 1868 — and until today the archive had the first and the last of them and nothing between.",
+   "chip": "documented"
+  },
+  "means": "None of these five is on the family tree, so none of them belongs in the pedigree — they go on the new generations page. Two of the three sons died young: John at nineteen in 1852, Frank at twenty-nine in 1868. What became of Joseph William, Catherine Lucy Jane and Josephine is not yet known.",
+  "chip": "documented",
   "rows": [
    [
-    "1850, 1851, 1852, 1863",
-    "D'ARCY BIRTH NOTICES at Lymington in the British and Irish newspaper indexes — five of them"
+    "23 January 1832",
+    "CATHERINE LUCY JANE baptised at Milford — father “Lt Col RA of Milford House”"
    ],
    [
-    "1852",
-    "ELIZABETH ELEANOR D'ARCY born at Lymington"
+    "30 May 1833",
+    "JOHN HYDE baptised at Milford"
    ],
    [
-    "29 September 1863",
-    "FRANK HYDE D'ARCY marries ANNA MARIA SIMPSON at Lymington"
+    "1836",
+    "JOSEPHINE baptised at Milford"
+   ],
+   [
+    "14 December 1838",
+    "FRANK HYDE born AT MADEIRA"
+   ],
+   [
+    "22 June 1839",
+    "FRANK HYDE baptised at Milford"
+   ],
+   [
+    "6 July 1841",
+    "JOSEPH WILLIAM baptised at Milford"
+   ],
+   [
+    "7 February 1848",
+    "JOSEPH D'ARCY dies at Home Mead, Lymington"
+   ],
+   [
+    "28 June 1852",
+    "JOHN HYDE dies at Southampton, aged 19"
    ],
    [
     "1863",
     "KATHERINE LUCY ELIZABETH D'ARCY dies at Lymington"
    ],
    [
-    "1866",
-    "EMILY L. B. D'ARCY born at Lymington"
+    "29 September 1863",
+    "FRANK HYDE marries ANNA MARIA SIMPSON at Lymington"
+   ],
+   [
+    "15 June 1868",
+    "FRANK HYDE dies at Worcester, aged 29; buried Pennington on the 20th"
+   ],
+   [
+    "26 November 1868",
+    "FRANK HAMILTON HYDE baptised at Croydon, his father five months dead"
+   ],
+   [
+    "1910",
+    "FRANK HAMILTON HYDE dies at Chelmsford, Essex"
    ]
-  ],
-  "means": "Fifty-two D'Arcy records at Lymington, running from Joseph's death in 1848 through to an electoral roll of 2021. This is a living English branch of the same family, and it has never been part of this archive. The tree is not the authority here — these people are not on it — so they belong on the new generations page and not in the pedigree.",
-  "chip": "documented"
+  ]
  },
  "duty": {
   "head": "And the will has a second document",

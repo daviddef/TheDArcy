@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Nationality audit of the register, done the same way every time.
 
+NOTE FOR ANYONE EDITING THE PATTERNS: they are compiled with re.X, which
+ignores unescaped whitespace. "School and University" becomes
+"SchoolandUniversity" and silently matches nothing. Use single tokens.
+
 This was hand-written as a throwaway regex on each pass and it drifted: the
 published figures moved for reasons that had nothing to do with new records.
 It is a script now so the number means the same thing in September as it did
@@ -28,7 +32,9 @@ BRI = re.compile(r"""FreeREG|FreeBMD|FreeCEN|census|TNA\b|PROB\s|ADM\s|WO\s|Conn
     |Kent\b|Medway|Lymington|Denbigh|Ruabon|Thacker|Overland|News-Letter|Examiner
     |Wales|Welsh|Surrey|Devon|Essex|Lancashire|Leicestershire|Midlothian|Wicklow
     |Death Duty|Consistory|Prerogative|Probate|Wills
-    |Sussex|Brighton|Horsham|Petworth|Midhurst|Steyning|Express\b|Dorset|Lyme Regis""",
+    |Sussex|Brighton|Horsham|Petworth|Midhurst|Steyning|Express\b|Dorset|Lyme Regis
+    |Britain|Harrow|Surrey|Croydon|Worcester|Southampton|Milford
+    |Pennington|Lymington""",
     re.I | re.X)
 
 def classify(src):

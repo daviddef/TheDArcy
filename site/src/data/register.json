@@ -1,10 +1,10 @@
 {
-"entries": 802,
-"distinct": 569,
-"records": 329,
+"entries": 814,
+"distinct": 570,
+"records": 341,
 "tree": 473,
 "grafted": 98,
-"linked": 802,
+"linked": 814,
 "surnames": 194,
 "groups": [
 {
@@ -1177,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 128,
+"n": 139,
 "rows": [
 {
 "name": "Catherine D'Arcy",
@@ -1212,6 +1212,13 @@
 "says": "census 1851 · aged 50 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
 "source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine Lucy Jane D'Arcy",
+"says": "baptism · 23 January 1832, Milford · father JOSEPH, “Lt Col RA of MILFORD HOUSE”, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1299,10 +1306,38 @@
 "kind": "record"
 },
 {
+"name": "Frank Hamilton Hyde D'Arcy",
+"says": "baptism · 26 November 1868, Croydon Common St James, Surrey · father FRANK HYDE, “Gentleman”, mother ANNA MARIA, of St James Road — five months after his father's death",
+"source": "record · Surrey Baptisms, Surrey History Centre 2809/1/2 p.204",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Frank Hamilton Hyde D'Arcy",
+"says": "death · 1910, Chelmsford, Essex",
+"source": "record · England, Newspaper Death Notices",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
 "name": "Frank Hyde D'Arcy",
 "says": "marriage · 29 September 1863, Lymington, to ANNA MARIA SIMPSON, daughter of R. Salisbury Simpson, of Bengal",
 "source": "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"says": "baptism · 22 June 1839, Milford · BORN 14 DECEMBER 1838 AT MADEIRA · father JOSEPH, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"says": "death · 15 June 1868, Worcester, aged 29 · buried PENNINGTON, Hampshire, 20 June 1868",
+"source": "record · England & Wales Deaths 1837-2007; Hampshire Burials; Western Daily Press, 22 June 1868, p.4",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1411,6 +1446,27 @@
 "kind": "record"
 },
 {
+"name": "John Hyde D'Arcy",
+"says": "baptism · 30 May 1833, Milford · father JOSEPH, “Lt Col RA of Milford House”, mother KATHERINE LUCY",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "John Hyde D'Arcy",
+"says": "Harrow School Register 1801-1893 · died 1852",
+"source": "record · Britain, School and University Students",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "John Hyde D'Arcy",
+"says": "death · 28 June 1852, Southampton, aged 19 · reported as far as Dublin",
+"source": "record · Catholic Telegraph, 10 July 1852, p.8; Hampshire Burials",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
 "name": "Joseph D'Arcy",
 "says": "baptised Portsea St Mary, 19 March 1780 · father Robert · mother Jean",
 "source": "record · FreeREG, Portsea St Mary parish register",
@@ -1450,6 +1506,20 @@
 "says": "death duty · grant year 1848 · court “PCC and Country Courts” · of Lymington, Hampshire",
 "source": "record · Index to Death Duty Registers 1796-1903, TNA IR 27/284",
 "link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Joseph William D'Arcy",
+"says": "baptism · 6 July 1841, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Josephine D'Arcy",
+"says": "baptism · 1836, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1604,6 +1674,13 @@
 "says": "described as “Col. D'Arcy, CHIEF ENGINEER OF CHATHAM LINES” — the only record giving him a post as well as a rank",
 "source": "record · Kentish Gazette, 14 May 1805, p.4",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "described in March 1823 as “MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found naming his corps",
+"source": "record · Hampshire Chronicle, 24 March 1823, p.3",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -3507,6 +3584,82 @@
 ]
 },
 {
+"surname": "WARD",
+"n": 10,
+"rows": [
+{
+"name": "Jean Ward",
+"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "baptised at SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 · father JOSEPH WARD, mother MARTHA GARDEN — the parish this archive had repeatedly reported as untranscribed",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jean Ward",
+"says": "death notice · “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS”",
+"source": "record · Hampshire Chronicle, 24 March 1823, p.3",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Joseph Ward",
+"says": "of South Leith, Midlothian · father of Jean, baptised there 19 July 1754 — and the man her eldest son was named for",
+"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Joseph Ward",
+"says": "married MARTH[A] GAIRDEN at SOUTH LEITH, 27 OCTOBER 1747 · her father WILLIAM GAIRDEN — seven years before their daughter Jean was christened in the same parish",
+"source": "record · Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Frances Ward",
+"says": "1656–1698 · Baden-Wuerttemberg, Germany",
+"source": "family tree · above the Keele graft",
+"link": "/people/frances-ward",
+"kind": "tree"
+},
+{
+"name": "Jean Ward",
+"says": "1754–1823 · South Leith, Midlothian, Scotland",
+"source": "family tree · direct line",
+"link": "/people/jean-ward",
+"kind": "tree"
+},
+{
+"name": "Joseph Ward",
+"says": "b. 1725",
+"source": "family tree · direct line",
+"link": "/people/joseph-ward",
+"kind": "tree"
+},
+{
+"name": "William Ward",
+"says": "b. 1700",
+"source": "family tree · direct line",
+"link": "/people/william-ward",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "ROSSITER",
 "n": 9,
 "rows": [
@@ -3571,75 +3724,6 @@
 "says": "1824–1889 · Long Ashton, Somerset, Eng",
 "source": "family tree · direct line",
 "link": "/people/maria-rossiter",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "WARD",
-"n": 9,
-"rows": [
-{
-"name": "Jean Ward",
-"says": "buried as Jane D'Arcy, Chatham, 21 March 1823, entry 791 · AGE 66 · abode Chatham",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Jean Ward",
-"says": "married ROBERT D'ARCY at Portsea St Mary, 21 June 1779",
-"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Jean Ward",
-"says": "baptised at SOUTH LEITH, MIDLOTHIAN, 19 JULY 1754 · father JOSEPH WARD, mother MARTHA GARDEN — the parish this archive had repeatedly reported as untranscribed",
-"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Joseph Ward",
-"says": "of South Leith, Midlothian · father of Jean, baptised there 19 July 1754 — and the man her eldest son was named for",
-"source": "record · Scotland, Parish Births & Baptisms 1564-1929, South Leith (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Joseph Ward",
-"says": "married MARTH[A] GAIRDEN at SOUTH LEITH, 27 OCTOBER 1747 · her father WILLIAM GAIRDEN — seven years before their daughter Jean was christened in the same parish",
-"source": "record · Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Frances Ward",
-"says": "1656–1698 · Baden-Wuerttemberg, Germany",
-"source": "family tree · above the Keele graft",
-"link": "/people/frances-ward",
-"kind": "tree"
-},
-{
-"name": "Jean Ward",
-"says": "1754–1823 · South Leith, Midlothian, Scotland",
-"source": "family tree · direct line",
-"link": "/people/jean-ward",
-"kind": "tree"
-},
-{
-"name": "Joseph Ward",
-"says": "b. 1725",
-"source": "family tree · direct line",
-"link": "/people/joseph-ward",
-"kind": "tree"
-},
-{
-"name": "William Ward",
-"says": "b. 1700",
-"source": "family tree · direct line",
-"link": "/people/william-ward",
 "kind": "tree"
 }
 ]

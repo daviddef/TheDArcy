@@ -10,6 +10,15 @@ import d from "../data/margaret-jones.json";
 
   <section class="blk"><p class="lede">{d.lede}</p></section>
 
+  <section class="blk" style="border-top:0">
+    <div class="note" style="border-left-width:3px;margin-bottom:0">
+      <strong>{d.superseded.head}.</strong> {d.superseded.body}
+      <br /><br />
+      {d.superseded.what} <span class="chip lore">{d.superseded.chip}</span>
+      {" "}<a href={u("/the-corps/")}>The 1823 notice →</a>
+    </div>
+  </section>
+
   <section class="blk">
     <div class="lab">{d.notice.paper}</div>
     <h2 style="margin-top:.4rem">The notice</h2>

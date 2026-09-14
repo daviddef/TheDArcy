@@ -275,6 +275,26 @@
 "slug": "francis-d-arcy",
 "n": 1
 },
+"frank-hamilton-hyde-d-arcy": {
+"name": "Frank Hamilton Hyde D'Arcy",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "baptism · 26 November 1868, Croydon Common St James, Surrey · father FRANK HYDE, “Gentleman”, mother ANNA MARIA, of St James Road — five months after his father's death",
+"source": "record · Surrey Baptisms, Surrey History Centre 2809/1/2 p.204",
+"link": "https://www.findmypast.co.uk/"
+},
+{
+"says": "death · 1910, Chelmsford, Essex",
+"source": "record · England, Newspaper Death Notices",
+"link": "https://www.findmypast.co.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "frank-hamilton-hyde-d-arcy",
+"n": 2
+},
 "george-lindesay-d-arcy": {
 "name": "George Lindesay D'Arcy",
 "surname": "D'ARCY",
@@ -2317,9 +2337,9 @@
 }
 },
 "counts": {
-"named": 191,
-"withTreePage": 47,
-"ownPage": 144,
-"mentions": 329
+"named": 196,
+"withTreePage": 51,
+"ownPage": 145,
+"mentions": 341
 }
 }

@@ -134,10 +134,28 @@ import d from "../data/joseph-darcy.json";
   </section>
 
   <section class="blk">
-    <div class="lab">1850–1866, and after</div>
+    <div class="lab">Milford House, and after</div>
     <h2 style="margin-top:.4rem">{d.forward.head}</h2>
     <p class="lede">{d.forward.body}</p>
-    <div class="scroll" style="margin-top:1.2rem">
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
+      {d.forward.kids.map(([who, bapt, what]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong>{who}</strong></div>
+          <p class="small" style="margin-top:.3rem;color:var(--ink-3)">{bapt}</p>
+          <p class="small" style="margin-top:.3rem">{what}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="note" style="margin-top:1.3rem"><strong>Madeira.</strong> {d.forward.madeira}</div>
+
+    <h3 style="margin-top:1.8rem">{d.forward.grandson.head}</h3>
+    <p class="lede">{d.forward.grandson.body}</p>
+    <div class="note" style="margin-top:1.1rem">{d.forward.grandson.means}
+      {" "}<span class="chip doc">{d.forward.grandson.chip}</span></div>
+
+    <div class="scroll" style="margin-top:1.4rem">
       <table>
         <tbody>{d.forward.rows.map(([when, what]) => (
           <tr><td class="m" style="white-space:nowrap">{when}</td><td class="small">{what}</td></tr>))}

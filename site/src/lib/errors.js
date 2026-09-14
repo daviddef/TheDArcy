@@ -2,6 +2,16 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "15 September 2026",
+    what: "Announced the Morning Herald notice of 1843 as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”, and as the only one. A paper twenty years older had already done it.",
+    truth:
+      "The Hampshire Chronicle of Monday 24 March 1823, page 3, deaths column: “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” That is Jean Ward's death notice. It gives the rank, the corps and the station, and it corroborates Connolly's major-generalcy of 1819 from a contemporary source rather than a book of 1898.",
+    why: "I had the find of the fortnight and reached for the strongest sentence available instead of the true one. “The only record anywhere” is a claim about every newspaper ever printed, made after searching a handful — and this one turned up in the British Newspaper Archive, which I had already been searching for other things, the very next day.",
+    lesson:
+      "Say what was searched, not what exists. “The earliest this archive has found” costs nothing and cannot be falsified by tomorrow's search; “the first record anywhere” was falsified within a day.",
+    href: "/margaret-jones",
+  },
+  {
     when: "14 September 2026",
     what: "Wrote that Martha Wakefield “may never have existed” and that she was “not in the family tree either”, after searching for her in Bristol. She is in the tree, with a death date, a cemetery and a plot number — in Queensland.",
     truth:

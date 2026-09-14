@@ -100,6 +100,11 @@
 "ann-elizabeth-blum": [],
 "ann-kent": [
 {
+"path": "/tree",
+"snippet": "…a 2 more generations Richard Atkinson 1801–1865 Limerick City, Ireland 2 more generations Ann Kent 1805–1880 Limerick, Limerick, Ireland Paul Cole Atkinson 1832–1906 St. Mary'S, Limerick, Ireland Before Bandon, 1799 Samuel Creec…",
+"title": "Our line, drawn"
+},
+{
 "path": "/atkinson",
 "snippet": "…ions above Paul Cole Atkinson, all of them in Limerick — Richard Atkinson (1801–1865) and Ann Kent (1805–1880) ; his parents Richard Atkinson (1765–1826) and Rose Cole (1771–1836) ; her parents William Kent (b. 1767) and Mary Bo…",
 "title": "The Atkinsons"
@@ -211,6 +216,11 @@
 }
 ],
 "arthur-william-hartley-sneyd": [
+{
+"path": "/tree",
+"snippet": "…Gloucester, England Miriam Wakefield 1840–1909 St Paul, Bristol, Gloucestershire, England Arthur William Hartley Sneyd 1866–1922 Brisbane, Queensland, Australia No parents recorded Conrad Blum No parents recorded Hannah Elizabeth (possibly Alm Eliz…",
+"title": "Our line, drawn"
+},
 {
 "path": "/sergeant-sneyd",
 "snippet": "…e Book is carrying a stale entry or, more likely, there are two Arthurs, the second being Arthur William Hartley Sneyd (1866–1922). The archive does not know which, and the table above should be read with that in mind. unresolved Name in the Blue B…",
@@ -377,6 +387,11 @@
 "catherine-lucy-jane-d-arcy": [],
 "catherine-margaret-mulcahy": [
 {
+"path": "/tree",
+"snippet": "…Charles Sneyd 1810–1885 Hanley, Stoke-on-Trent, Staffordshire, England 2 more generations Catherine Margaret Mulcahy 1812–1858 Cork, Cork City, Cork, Ireland William Hartley Sneyd 1838–1902 Kempsey, New South Wales, Australia Before Gloucestershi…",
+"title": "Our line, drawn"
+},
+{
 "path": "/errands",
 "snippet": "…which the site states as fact and has never seen. Then Richard Atkinson of Limerick, and Catherine Margaret Mulcahy of Cork, whose parents are unknown. Context → blocked by Cloudflare, 13 September 2026 15 PROB 11/1991/312 — the will of John Mad…",
 "title": "Errands"
@@ -482,7 +497,13 @@
 }
 ],
 "claudia-di-lucia": [],
-"conrad-blum": [],
+"conrad-blum": [
+{
+"path": "/tree",
+"snippet": "…rthur William Hartley Sneyd 1866–1922 Brisbane, Queensland, Australia No parents recorded Conrad Blum No parents recorded Hannah Elizabeth (possibly Alm Eliza) Gautz John Blum 1842–1899 Germany No parents recorded Timothy O'Brien N…",
+"title": "Our line, drawn"
+}
+],
 "conrad-i-of-oldenburg": [],
 "conrad-v-von-degenfeld": [],
 "constantine-d-arcy-1759": [],
@@ -661,6 +682,11 @@
 ],
 "eliza-keeling": [
 {
+"path": "/tree",
+"snippet": "…Wales, Australia No parents recorded George Keeling No parents recorded Elizabeth Keeling Eliza Keeling 1837–1918 London, Middlesex, England, United Kingdom George Pitt D'Arcy 1864–1931 Brisbane, Brisbane, Queensland, Australia 2 mor…",
+"title": "Our line, drawn"
+},
+{
 "path": "/emigrations",
 "snippet": "…l — which is itself the finding. A professional man paid his own way. → by 1863 · Unknown Eliza Keeling Married George Lindsay D'Arcy in Queensland in 1863, the year he arrived in the colony. How and when she reached it is not record…",
 "title": "How they got here"
@@ -723,11 +749,29 @@
 "title": "The Spine"
 }
 ],
-"elizabeth-creech": [],
-"elizabeth-d-arcy": [],
+"elizabeth-creech": [
+{
+"path": "/tree",
+"snippet": "…andon, 1799 Samuel Creech 1799–1847 Bandon, County Cork, Ireland Before County Cork, 1800 Elizabeth Creech b. 1800 County Cork, Ireland Jane Creech 1830–1885 Limerick, Ireland Ida Kathleen Atkinson 1869–1937 Brisbane, Queensland, Austra…",
+"title": "Our line, drawn"
+}
+],
+"elizabeth-d-arcy": [
+{
+"path": "/joseph-darcy",
+"snippet": "…D'ARCY baptised Milford, 23 January 1832 Aged 9 at Priestlands in 1841. A Katherine Lucy Elizabeth D'Arcy dies at Lymington in 1863 — the mother, not the daughter, on the dates. JOHN HYDE D'ARCY baptised Milford, 30 May 1833 HARROW SCH…",
+"title": "Lieutenant-Colonel Joseph D'Arcy"
+}
+],
 "elizabeth-dixie": [],
 "elizabeth-eleanor-d-arcy": [],
-"elizabeth-keeling": [],
+"elizabeth-keeling": [
+{
+"path": "/tree",
+"snippet": "…amatta, New South Wales, Australia No parents recorded George Keeling No parents recorded Elizabeth Keeling Eliza Keeling 1837–1918 London, Middlesex, England, United Kingdom George Pitt D'Arcy 1864–1931 Brisbane, Brisbane, Queensland, A…",
+"title": "Our line, drawn"
+}
+],
 "elizabeth-margaret-oliver": [
 {
 "path": "/how-far-back",
@@ -1014,8 +1058,19 @@
 "title": "The Atkinsons"
 }
 ],
-"george-keeling": [],
+"george-keeling": [
+{
+"path": "/tree",
+"snippet": "…eorge Lindsay D'Arcy 1829–1901 Parramatta, New South Wales, Australia No parents recorded George Keeling No parents recorded Elizabeth Keeling Eliza Keeling 1837–1918 London, Middlesex, England, United Kingdom George Pitt D'Arcy 1864–…",
+"title": "Our line, drawn"
+}
+],
 "george-lindsay-d-arcy": [
+{
+"path": "/tree",
+"snippet": "…h, Hampshire, England or West Indies 1 more generation Maria (Catherine) Whiite 1800–1856 George Lindsay D'Arcy 1829–1901 Parramatta, New South Wales, Australia No parents recorded George Keeling No parents recorded Elizabeth Keeling Eliza K…",
+"title": "Our line, drawn"
+},
 {
 "path": "/emigrations",
 "snippet": "…e finding. A professional man paid his own way. → by 1863 · Unknown Eliza Keeling Married George Lindsay D'Arcy in Queensland in 1863, the year he arrived in the colony. How and when she reached it is not recorded anywhere this archive has r…",
@@ -1060,6 +1115,11 @@
 "path": "/",
 "snippet": "…eon's journal says \"Received on board a detachment of the 39th regt. of foot commanded by George Pitt D'Arcy, B. Major , consisting of 39 men … 6 women and 7 children.\" Cabin passengers included Mrs. D'Arcy and family . The convict ship E…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/tree",
+"snippet": "…goes the less of it has been read. Self Gen 1 Gen 2 Gen 3 Gen 4 Gen 5 17 more generations George Pitt D'Arcy 1783–1849 Portsmouth, Hampshire, England or West Indies 1 more generation Maria (Catherine) Whiite 1800–1856 George Lindsay D'Arc…",
+"title": "Our line, drawn"
 },
 {
 "path": "/papers",
@@ -1213,9 +1273,27 @@
 "title": "The Sneyds"
 }
 ],
-"hannah-elizabeth-possibly-alm-eliza-gautz": [],
-"hannah-saniger": [],
-"hannah-scanlan": [],
+"hannah-elizabeth-possibly-alm-eliza-gautz": [
+{
+"path": "/tree",
+"snippet": "…–1922 Brisbane, Queensland, Australia No parents recorded Conrad Blum No parents recorded Hannah Elizabeth (possibly Alm Eliza) Gautz John Blum 1842–1899 Germany No parents recorded Timothy O'Brien No parents recorded Hannah Scanlan Mary Ann O'Brien 1845–1927 Cor…",
+"title": "Our line, drawn"
+}
+],
+"hannah-saniger": [
+{
+"path": "/tree",
+"snippet": "…oucestershire, 1799 James Wakefield 1799–1857 Gloucestershire, England 5 more generations Hannah SANIGER 1805–1873 Berkley, Gloucester, England Miriam Wakefield 1840–1909 St Paul, Bristol, Gloucestershire, England Arthur William Hartl…",
+"title": "Our line, drawn"
+}
+],
+"hannah-scanlan": [
+{
+"path": "/tree",
+"snippet": "…Gautz John Blum 1842–1899 Germany No parents recorded Timothy O'Brien No parents recorded Hannah Scanlan Mary Ann O'Brien 1845–1927 Cork, Ireland Martha Blum 1870–1904 Rockhampton, Queensland, Australia Ivy Miriam Sneyd 1891–1979 Boul…",
+"title": "Our line, drawn"
+}
+],
 "hans-meinhard-von-schonberg": [],
 "hazel-atwell": [],
 "hazel-ethel-mary-sneyd": [
@@ -1288,6 +1366,11 @@
 "ida-joyce-d-arcy": [],
 "ida-kathleen-atkinson": [
 {
+"path": "/tree",
+"snippet": "…800 Elizabeth Creech b. 1800 County Cork, Ireland Jane Creech 1830–1885 Limerick, Ireland Ida Kathleen Atkinson 1869–1937 Brisbane, Queensland, Australia Lindesay Atkinson D'Arcy 1892–1936 Brisbane, Brisbane, Queensland, Australia 10 more ge…",
+"title": "Our line, drawn"
+},
+{
 "path": "/direct-line",
 "snippet": "…1829 Parramatta, New South Wales, Australia 13 Jul 1901 — Documented 5 George Pitt D'Arcy Ida Kathleen Atkinson — m. 10 Oct 1888 5 May 1864 Brisbane, Brisbane, Queensland, Australia 21 Mar 1931 Chief Clerk Railway Department Documented 4 Lin…",
 "title": "The Spine"
@@ -1318,6 +1401,11 @@
 ],
 "isabel-d-arcy": [],
 "ivy-miriam-sneyd": [
+{
+"path": "/tree",
+"snippet": "…O'Brien 1845–1927 Cork, Ireland Martha Blum 1870–1904 Rockhampton, Queensland, Australia Ivy Miriam Sneyd 1891–1979 Boulia, Boulia Shire, Queensland, Australia Kenneth Lindsay D'Arcy 1927–2010 Sandgate, Queensland, Australia The 16 wal…",
+"title": "Our line, drawn"
+},
 {
 "path": "/trees",
 "snippet": "…neyd 116 people, 112 published — the largest family here after the D'Arcys Could be drawn Ivy Miriam Sneyd's people, of Boulia and Brisbane, and a weaver at Hanley above them. Samuel Charles Sneyd was a soldier, a constable and a gaol g…",
@@ -1456,6 +1544,11 @@
 "james-thomas-atwell": [],
 "james-wakefield": [
 {
+"path": "/tree",
+"snippet": "…Hartley Sneyd 1838–1902 Kempsey, New South Wales, Australia Before Gloucestershire, 1799 James Wakefield 1799–1857 Gloucestershire, England 5 more generations Hannah SANIGER 1805–1873 Berkley, Gloucester, England Miriam Wakefield 1840…",
+"title": "Our line, drawn"
+},
+{
 "path": "/berkeley",
 "snippet": "…: when Miriam Wakefield died in Brisbane in 1909, the registrar wrote her parents down as James Wakefield and Hannah Saniger . Remove that line and the archive has no connection to Gloucestershire whatever. So the obvious thing is to f…",
 "title": "Berkeley, Gloucestershire"
@@ -1535,6 +1628,11 @@
 }
 ],
 "jane-creech": [
+{
+"path": "/tree",
+"snippet": "…unty Cork, Ireland Before County Cork, 1800 Elizabeth Creech b. 1800 County Cork, Ireland Jane Creech 1830–1885 Limerick, Ireland Ida Kathleen Atkinson 1869–1937 Brisbane, Queensland, Australia Lindesay Atkinson D'Arcy 1892–1936 Br…",
+"title": "Our line, drawn"
+},
 {
 "path": "/emigrations",
 "snippet": "…nd three adult daughters stayed behind. → 1862 · Paying passengers Paul Cole Atkinson and Jane Creech An organist from Limerick who arrived with his wife and the children already born, and who two years later installed the first or…",
@@ -1621,6 +1719,11 @@
 "title": "What changed"
 },
 {
+"path": "/margaret-jones",
+"snippet": "…“At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” That is Jean Ward's death notice, and it gives him the rank, the corps and the station. What survives of the argument is the rest of it. The 1843 n…",
+"title": "Daughter of the late Major-General D'Arcy"
+},
+{
 "path": "/jean-ward",
 "snippet": "Jean Ward, baptised 1754 · found 13 September 2026 South Leith The parish this archive called untranscribed holds her baptism, and it names…",
 "title": "South Leith"
@@ -1637,7 +1740,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…Past — Scotland, Parish Marriages & Banns 1561-1893 found something 13 Sep 2026 Searched: Jean Ward's parents JOSEPH WARD married MARTH[A] GAIRDEN at SOUTH LEITH on 27 OCTOBER 1747, and the entry names her father: WILLIAM GAIRDEN…",
+"snippet": "…— Hampshire Chronicle, 24 March 1823 found something 15 Sep 2026 Searched: Any notice of Jean Ward's death “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” Jean Ward's death notice — and the EARL…",
 "title": "What Has Been Read"
 },
 {
@@ -1682,7 +1785,7 @@
 },
 {
 "path": "/corrections",
-"snippet": "…roboration. Where it was corrected → 13 September 2026 It is indexed, with parents named. Jean Ward, baptised South Leith 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — an entire Scottish generation this archive did not…",
+"snippet": "…“At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” That is Jean Ward's death notice. It gives the rank, the corps and the station, and it corroborates Connolly's major-generalcy of 1819 from a conte…",
 "title": "What This Archive Got Wrong"
 }
 ],
@@ -1710,6 +1813,11 @@
 "john-blum-1842": [],
 "john-blum-1872": [],
 "john-blum-1895": [
+{
+"path": "/tree",
+"snippet": "…ents recorded Conrad Blum No parents recorded Hannah Elizabeth (possibly Alm Eliza) Gautz John Blum 1842–1899 Germany No parents recorded Timothy O'Brien No parents recorded Hannah Scanlan Mary Ann O'Brien 1845–1927 Cork, Ireland…",
+"title": "Our line, drawn"
+},
 {
 "path": "/emigrations",
 "snippet": "…stablished No Murdoch of the right age appears in the assisted index. → unknown · Unknown John Blum Born in Germany, and by the 1870s at Rockhampton. He accounts for the entire German component the DNA reports. not established No…",
@@ -1874,7 +1982,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…n administrations index for 1660-1700 — NOTHING AFTER 1800. Robert D'Arcy's will of 1827, Joseph D'Arcy's of 1848 and John Maddock Jones's of 1844 are all beyond it. £3.50 each at Kew, and no free substitute. Read the Gloucestershire…",
+"snippet": "…NK HYDE D'ARCY WAS BORN AT MADEIRA on 14 December 1838. Four words in a baptism note, and Joseph D'Arcy was on a Portuguese island in the Atlantic in the winter of 1838. JOHN HYDE D'ARCY went to HARROW and died at Southampton on 28 J…",
 "title": "What changed"
 },
 {
@@ -1899,7 +2007,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…ges and newspaper notices, Lymington found something 14 Sep 2026 Searched: What became of Joseph D'Arcy's five children FRANK HYDE D'ARCY — the Frank aged two at Priestlands in 1841 — married ANNA MARIA SIMPSON at Lymington on 29 Sep…",
+"snippet": "…ast — Hampshire Baptisms, Milford found something 15 Sep 2026 Searched: The five children Joseph D'Arcy's will left his property to All five, named at last: CATHERINE LUCY JANE (23 Jan 1832), JOHN HYDE (30 May 1833), JOSEPHINE (1836)…",
 "title": "What Has Been Read"
 },
 {
@@ -2021,6 +2129,11 @@
 ],
 "kenneth-lindsay-d-arcy": [
 {
+"path": "/tree",
+"snippet": "31 people, 9 walls Our line, drawn The direct line as a chart: four generations above Kenneth Lindsay D'Arcy, with every place the line stops marked and the reason given. The spine tells this line as prose, one generation at a time. This…",
+"title": "Our line, drawn"
+},
+{
 "path": "/papers",
 "snippet": "…as the kind \"customary to allow … to men in a small way of business\". And then the date. Kenneth Lindsay D'Arcy was born at Sandgate on 17 August 1927 . One month later his father stands in the Supreme Court, described in the paper as \" Lind…",
 "title": "The Papers"
@@ -2090,6 +2203,11 @@
 "path": "/",
 "snippet": "…Murdochs of St Quivox can be pushed past the emigrant generation at all, and what killed Lindesay Atkinson D'Arcy at forty-four. The queue, in priority order, and the nine letters drafted → Of the direct ancestors, 4 are living and excluded fr…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/tree",
+"snippet": "…30–1885 Limerick, Ireland Ida Kathleen Atkinson 1869–1937 Brisbane, Queensland, Australia Lindesay Atkinson D'Arcy 1892–1936 Brisbane, Brisbane, Queensland, Australia 10 more generations Samuel Charles Sneyd 1810–1885 Hanley, Stoke-on-Trent, St…",
+"title": "Our line, drawn"
 },
 {
 "path": "/papers",
@@ -2241,6 +2359,11 @@
 "maria-beacham-beecham": [],
 "maria-catherine-whiite": [
 {
+"path": "/tree",
+"snippet": "…rge Pitt D'Arcy 1783–1849 Portsmouth, Hampshire, England or West Indies 1 more generation Maria (Catherine) Whiite 1800–1856 George Lindsay D'Arcy 1829–1901 Parramatta, New South Wales, Australia No parents recorded George Keeling No parents re…",
+"title": "Our line, drawn"
+},
+{
 "path": "/direct-line",
 "snippet": "…the tree says 1783. superseded The tree says two marriages, both at Chatham in 1810 — to “Maria (Catherine) Whiite” and to “Maria or Mary Le Meassier”. It is wrong because the Salisbury and Winchester Journal of 23 September 1805 announces the…",
 "title": "The Spine"
@@ -2301,6 +2424,11 @@
 ],
 "marshal-frederic-von-schomberg": [],
 "martha-blum": [
+{
+"path": "/tree",
+"snippet": "…mothy O'Brien No parents recorded Hannah Scanlan Mary Ann O'Brien 1845–1927 Cork, Ireland Martha Blum 1870–1904 Rockhampton, Queensland, Australia Ivy Miriam Sneyd 1891–1979 Boulia, Boulia Shire, Queensland, Australia Kenneth Linds…",
+"title": "Our line, drawn"
+},
 {
 "path": "/open-questions",
 "snippet": "…is held with the dealings. His land → newly opened · 10 Sep 2026 Do Miriam Wakefield and Martha Blum share a grave? The tree gives both women the identical plot — Lutwyche Cemetery, Portion GP5, Section 42A, Grave 78 . Martha died…",
@@ -2369,7 +2497,7 @@
 },
 {
 "path": "/corrections",
-"snippet": "…t correction aimed at the family about their own family. 14 September 2026 The tree gives Martha Wakefield 1836–1899, died 23 April 1899 at Maryborough, Queensland, buried Maryborough Cemetery, Plot Monumental L, Grave 410, and cites it…",
+"snippet": "…re” was falsified within a day. Where it was corrected → 14 September 2026 The tree gives Martha Wakefield 1836–1899, died 23 April 1899 at Maryborough, Queensland, buried Maryborough Cemetery, Plot Monumental L, Grave 410, and cites it…",
 "title": "What This Archive Got Wrong"
 }
 ],
@@ -2381,7 +2509,13 @@
 }
 ],
 "mary-ann-blum": [],
-"mary-ann-o-brien": [],
+"mary-ann-o-brien": [
+{
+"path": "/tree",
+"snippet": "…1842–1899 Germany No parents recorded Timothy O'Brien No parents recorded Hannah Scanlan Mary Ann O'Brien 1845–1927 Cork, Ireland Martha Blum 1870–1904 Rockhampton, Queensland, Australia Ivy Miriam Sneyd 1891–1979 Boulia, Boulia Shire,…",
+"title": "Our line, drawn"
+}
+],
 "mary-blackbourne": [
 {
 "path": "/changes",
@@ -2457,6 +2591,11 @@
 "path": "/",
 "snippet": "…w how, when, or on what. The passenger register gives all three — and a fourteen-year-old Miriam Wakefield shipped as a domestic servant. The families they married Sneyd, Atkinson, Murdoch, Atwell, Blum, Keeling, Creech, Matson, Wakefie…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/tree",
+"snippet": "…ershire, England 5 more generations Hannah SANIGER 1805–1873 Berkley, Gloucester, England Miriam Wakefield 1840–1909 St Paul, Bristol, Gloucestershire, England Arthur William Hartley Sneyd 1866–1922 Brisbane, Queensland, Australia No pa…",
+"title": "Our line, drawn"
 },
 {
 "path": "/berkeley",
@@ -2552,6 +2691,11 @@
 "pasquale-pascuale-falco": [],
 "paul-cole-atkinson": [
 {
+"path": "/tree",
+"snippet": "…Limerick City, Ireland 2 more generations Ann Kent 1805–1880 Limerick, Limerick, Ireland Paul Cole Atkinson 1832–1906 St. Mary'S, Limerick, Ireland Before Bandon, 1799 Samuel Creech 1799–1847 Bandon, County Cork, Ireland Before County Co…",
+"title": "Our line, drawn"
+},
+{
 "path": "/emigrations",
 "snippet": "…took a free passage — and three adult daughters stayed behind. → 1862 · Paying passengers Paul Cole Atkinson and Jane Creech An organist from Limerick who arrived with his wife and the children already born, and who two years later instal…",
 "title": "How they got here"
@@ -2631,6 +2775,11 @@
 "richard-atkinson-1765": [],
 "richard-atkinson-1801": [
 {
+"path": "/tree",
+"snippet": "…George Pitt D'Arcy 1864–1931 Brisbane, Brisbane, Queensland, Australia 2 more generations Richard Atkinson 1801–1865 Limerick City, Ireland 2 more generations Ann Kent 1805–1880 Limerick, Limerick, Ireland Paul Cole Atkinson 1832–1906 S…",
+"title": "Our line, drawn"
+},
+{
 "path": "/open-questions",
 "snippet": "…answered in part Atkinson, of Limerick. The christening of 9 July 1832 names his parents: Richard Atkinson and Anne — a generation gained. Still to do: anything at all about Richard and Anne, and the ship of 1862. Limerick is hard: many…",
 "title": "Open Questions"
@@ -2693,7 +2842,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…yme Regis in 1794. The Corps page had a twenty-four-year blank. Found that the tree gives Robert D'Arcy a BROTHER — Constantine D'Arcy, born Barbados 1759, died Chatham 1778, appointed to De Lancey's Brigade on 1 June 1778 — which th…",
+"snippet": "…Y BEFORE. /margaret-jones announced the 1843 notice as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. The 1823 notice does it twenty years earlier. Filed as an error, and the page now carries the correct…",
 "title": "What changed"
 },
 {
@@ -2738,7 +2887,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…land & Wales Deaths 1837-2007 (GRO index) found something 14 Sep 2026 Searched: Deaths of Robert D'Arcy's three surviving daughters in Sussex All three. CHARLOTTE aged 73, Brighton Q2 1869, vol 2B p.152; JANE aged 87, Brighton Q1 187…",
+"snippet": "…ENGINEERS.” Jean Ward's death notice — and the EARLIEST record found anywhere that gives Robert D'Arcy his corps, twenty years before the 1843 notice this archive had announced as the first. It also corroborates Connolly's major-gen…",
 "title": "What Has Been Read"
 },
 {
@@ -2828,7 +2977,7 @@
 },
 {
 "path": "/corrections",
-"snippet": "…rly 1770s. It said Recommended the Woolwich cadet registers, WO 149, as the best hope for Robert D'Arcy's parentage. It is WO 149 runs from 1790 and is held at Sandhurst. It cannot contain a cadet of the early 1770s. How The series w…",
+"snippet": "…It said Announced the Morning Herald notice of 1843 as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”, and as the only one. A paper twenty years older had already done it. It is The Hampshire Chronicle of…",
 "title": "What This Archive Got Wrong"
 }
 ],
@@ -2917,6 +3066,11 @@
 "samuel-charles-sneyd-1810": [],
 "samuel-charles-sneyd-1863": [
 {
+"path": "/tree",
+"snippet": "…y Atkinson D'Arcy 1892–1936 Brisbane, Brisbane, Queensland, Australia 10 more generations Samuel Charles Sneyd 1810–1885 Hanley, Stoke-on-Trent, Staffordshire, England 2 more generations Catherine Margaret Mulcahy 1812–1858 Cork, Cork City,…",
+"title": "Our line, drawn"
+},
+{
 "path": "/trees",
 "snippet": "…awn Ivy Miriam Sneyd's people, of Boulia and Brisbane, and a weaver at Hanley above them. Samuel Charles Sneyd was a soldier, a constable and a gaol governor in one life. No chart of this family has been drawn — only pages about them. The S…",
 "title": "The trees"
@@ -2982,7 +3136,13 @@
 "title": "What This Archive Got Wrong"
 }
 ],
-"samuel-creech": [],
+"samuel-creech": [
+{
+"path": "/tree",
+"snippet": "…k, Ireland Paul Cole Atkinson 1832–1906 St. Mary'S, Limerick, Ireland Before Bandon, 1799 Samuel Creech 1799–1847 Bandon, County Cork, Ireland Before County Cork, 1800 Elizabeth Creech b. 1800 County Cork, Ireland Jane Creech 1830–18…",
+"title": "Our line, drawn"
+}
+],
 "samuel-hartley-hanley-stafford-sneyd": [
 {
 "path": "/sergeant-sneyd",
@@ -3205,7 +3365,13 @@
 "title": "Six generations at Berkeley"
 }
 ],
-"timothy-o-brien": [],
+"timothy-o-brien": [
+{
+"path": "/tree",
+"snippet": "…nnah Elizabeth (possibly Alm Eliza) Gautz John Blum 1842–1899 Germany No parents recorded Timothy O'Brien No parents recorded Hannah Scanlan Mary Ann O'Brien 1845–1927 Cork, Ireland Martha Blum 1870–1904 Rockhampton, Queensland, Austra…",
+"title": "Our line, drawn"
+}
+],
 "unknown-falco": [],
 "valma-d-arcy": [],
 "varney-vere-verney-noel-nowell": [],
@@ -3343,6 +3509,11 @@
 }
 ],
 "william-hartley-sneyd": [
+{
+"path": "/tree",
+"snippet": "…nd 2 more generations Catherine Margaret Mulcahy 1812–1858 Cork, Cork City, Cork, Ireland William Hartley Sneyd 1838–1902 Kempsey, New South Wales, Australia Before Gloucestershire, 1799 James Wakefield 1799–1857 Gloucestershire, England 5 m…",
+"title": "Our line, drawn"
+},
 {
 "path": "/drivers-fields",
 "snippet": "…at all. documented And the marriage this whole archive turns on. Miriam Wakefield married William Hartley Sneyd at Brisbane on 15 November 1859 , registration 1859/B/255 . She was nineteen — this site had said twenty-one. Corrected → Her bro…",

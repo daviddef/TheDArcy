@@ -42,6 +42,10 @@ DIST = os.path.join(ROOT, "site", "dist")
 DECL = os.path.join(ROOT, "site", "src", "data", "living.json")
 
 
+def _n_pages(dist):
+    return sum(1 for r, _, fs in os.walk(dist) for f in fs if f.endswith(".html"))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dist", default=DIST)
@@ -83,10 +87,26 @@ def main():
     publish = {checkliving.norm(display(people[p]) or "") for p in people if not living_ids.get(p)}
     living.discard(""); publish.discard("")
 
+    # PEOPLE, not names. The sets above are distinct name phrases — two living
+    # cousins called John Smith are one phrase and two people — so counting the
+    # sets would quietly understate the rule's reach. /about, /index, /method,
+    # /register and /the-other-archives all quote these, and they were hardcoded
+    # on all five until they drifted once already.
+    n_living = sum(1 for p in people if living_ids.get(p))
+    counts = {"tree": len(people), "living": n_living,
+              "published": len(people) - n_living,
+              "phrases": len(living), "pages": _n_pages(a.dist)}
+    decl["counts"] = counts
+    decl["countsNote"] = ("Written by tools/check_living.py on every build — people, "
+                          "not name phrases. Never type these numbers into a page.")
+    json.dump(decl, open(a.declared, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1)
+
     return checkliving.feed(
         a.dist, living, publish,
         allow=allow, allow_files=decl.get("allowFiles", []), quiet=a.quiet,
-        label=f"{len(people):,} in the tree, {len(publish):,} published")
+        label=f"{len(people):,} in the tree, {counts['published']:,} publishable; "
+              f"{n_living:,} living people under {len(living):,} distinct names")
 
 
 if __name__ == "__main__":
