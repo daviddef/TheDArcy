@@ -1616,10 +1616,10 @@
   },
   {
    "src": "The Gentleman's Magazine, 1827",
-   "what": "An obituary or death notice for Major-General Robert D'Arcy, C.B.",
+   "what": "An obituary or death notice for Major-General Robert D'Arcy, C.B. — RE-TESTED by reading the whole year",
    "when": "9 Sep 2026",
    "outcome": "null",
-   "got": "Empty. A Companion of the Bath and a colonel of Engineers died at Chatham and the magazine of record did not notice. That silence is part of the argument on /hornby.",
+   "got": "Still empty, and now properly established. The first search recorded this; on 15 September 2026 all TWELVE monthly issues of 1827 and BOTH annual indexes were downloaded and read in full. Two D'Arcys appear in the entire year and neither is him: “Offord D'Arcy, Huntingdonshire”, a place name inside a marriage notice, and D'Arcy Wentworth of Sydney, a different man entirely. The only Chatham death reported that June is “Newham, esq. late of Basil-street”. Controls: the Deaths and Obituary sections are present in every issue, Chatham appears three times in June and Engineers five times in May. A Companion of the Bath and a colonel of Engineers died at Chatham and the magazine of record did not notice. That silence is load-bearing on /hornby and it has now been earned rather than assumed.",
    "href": "/hornby"
   },
   {
@@ -1949,6 +1949,14 @@
    "outcome": "null",
    "got": "Not there, and the silence is worth something because of where it comes from. The Calendar prints schooling and origins when it has them: the very next entry, Major-General George Bridges, opens “After the usual course of instruction at Woolwich Academy”. For Robert D'Arcy it prints service and nothing else. The army's own book, compiled while he was alive and a Companion of the Bath, did not record where he came from.",
    "href": "/hornby"
+  },
+  {
+   "src": "The Gentleman's Magazine, 1848",
+   "what": "A death notice for Lieutenant-Colonel Joseph D'Arcy",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "There, in the March issue at page 328, among the Hampshire deaths: “Feb. 7. At Homestead, Lymington, aged 68, Lieut.-Col. Joseph D'Arcy, late of the Royal Art. K.L.S.”, with his three commission dates and the Persian order “conferred for his conduct when in the actual service of the Shah of Persia”. A fourth independent notice of a death this archive already held from three newspapers — and the one that breaks the tie on his age, since two of the four now agree he was 68. The contrast with his father is the point: the same magazine, twenty-one years earlier, said nothing at all about a major-general.",
+   "href": "/joseph-darcy"
   }
  ]
 }

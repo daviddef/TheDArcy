@@ -39,6 +39,24 @@ import d from "../data/joseph-darcy.json";
   </section>
 
   <section class="blk">
+    <div class="lab">The Gentleman's Magazine, March 1848, p.328</div>
+    <h2 style="margin-top:.4rem">{d.gm.head}</h2>
+    <p class="lede">{d.gm.lede}</p>
+    <div class="note" style="border-left-width:3px;margin-top:1.1rem">
+      <strong>{d.gm.quote}</strong> <span class="chip doc">{d.gm.chip}</span>
+    </div>
+
+    <h3 style="margin-top:1.7rem">{d.gm.ageHead}</h3>
+    <p>{d.gm.age}</p>
+    <div class="note" style="margin-top:1.1rem">{d.gm.ageMeans}
+      {" "}<span class="chip inf">{d.gm.chipAge}</span></div>
+
+    <h3 style="margin-top:1.7rem">{d.gm.shahHead}</h3>
+    <p>{d.gm.shah}</p>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.gm.where}</p>
+  </section>
+
+  <section class="blk">
     <div class="lab">The Royal Military Calendar, 1820</div>
     <h2 style="margin-top:.4rem">{d.rmc.head}</h2>
     <p class="lede">{d.rmc.lede}</p>
