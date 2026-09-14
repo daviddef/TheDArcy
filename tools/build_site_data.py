@@ -45,20 +45,37 @@ _STATE = {
     "nsw": "New South Wales", "new south wales": "New South Wales",
     "vic": "Victoria", "wa": "Western Australia", "sa": "South Australia",
     "tas": "Tasmania", "nt": "Northern Territory", "act": "Australian Capital Territory",
+    # British abbreviations the tree uses. Only unambiguous ones: a country
+    # cannot be mistaken for anything else, and "Som." with its stop is a
+    # county. "Ayr" is deliberately NOT here — it is both a town and a county,
+    # and merging it would be a guess rather than an expansion.
+    "sctl": "Scotland", "scot": "Scotland", "eng": "England",
+    "engl": "England", "irl": "Ireland", "wls": "Wales",
+    "som.": "Somerset", "som": "Somerset", "glos": "Gloucestershire",
+    "hants": "Hampshire", "staffs": "Staffordshire",
 }
 
 
 def canonical_place(p):
     """Collapse the tree's spelling variants so a count counts places.
 
-    Only three things are done, all of them safe: repeated adjacent parts are
-    dropped ("Brisbane, Brisbane, Queensland"), state abbreviations are expanded,
-    and casing is tidied. Nothing is merged that is not literally the same place.
+    Only four things are done, all of them safe: a leading "of " is dropped,
+    repeated adjacent parts are dropped ("Brisbane, Brisbane, Queensland"),
+    state abbreviations are expanded, and casing is tidied. Nothing is merged
+    that is not literally the same place.
+
+    The "of " is a genealogist's convention meaning residence rather than an
+    event — "of St Quivox" is where a man was FROM. Left in, it makes a second
+    place: the gazetteer carried "St Quivox, Ayrshire, Scotland", "of St Quivox,
+    Ayrshire, Scotland" and "of St Quivox, Ayr, Sctl" as three entries of one
+    record each, instead of one place with three. Found by tools/agree.py on
+    15 September 2026, which reported one man born in two places.
     """
+    p = re.sub(r"^\s*(?:of|at|in|the)\s+", "", p, flags=re.I)
     parts = [x.strip() for x in re.split(r"\s*,\s*", p) if x.strip()]
     out = []
     for x in parts:
-        low = x.lower()
+        low = x.lower().rstrip(".")     # "Eng." and "Eng" are one abbreviation
         x = _STATE.get(low, x)
         if low in ("australia", "england", "scotland", "ireland", "wales"):
             x = x.capitalize()

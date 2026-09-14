@@ -27,3 +27,14 @@ echo "── second pass"
 
 echo "── link check"
 python3 tools/check_links.py
+
+# Reports, never gates. agree.py reads the archive against itself and prints
+# every (person, event) pair carrying more than one year or more than one
+# place. Most of what it prints is noise — repeated forenames, adjacent
+# events, a birth and a late baptism — which is why it does not fail a build.
+# It is here because the one real thing it found, a commission date printed
+# two ways on six files, had sat unnoticed for weeks with nothing able to see
+# it, and because the second thing it found was a place split three ways in
+# the gazetteer. Read it; do not obey it.
+echo "── agreement report (informational)"
+python3 tools/agree.py --min 2 || true

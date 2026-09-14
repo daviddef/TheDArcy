@@ -108,6 +108,34 @@ PEOPLE = re.compile(
     r"(?:D'Arcy|Darcy|Saniger|Sanigar|Sneyd|Wakefield|Ward|Cotton|Jones|Hurford|Murdoch))\b")
 
 
+def place_vocab():
+    """The archive already generates a gazetteer. Reuse it rather than guess.
+
+    places.json is written from the GEDCOM by build_site_data.py, so it is the
+    archive's own vocabulary of places rather than a list somebody typed. Only
+    the leading element of each place is taken — "Berkeley, Gloucestershire,
+    England" contributes BERKELEY — because that is what prose actually says,
+    and the county would match half the county's parishes.
+    """
+    path = os.path.join(DATA, "places.json")
+    if not os.path.exists(path):
+        return {}
+    out = {}
+    for row in json.load(open(path, encoding="utf-8")):
+        for name in [row.get("place", "")] + list(row.get("variants") or []):
+            head = name.split(",")[0].strip()
+            if len(head) < 4 or head.lower() in SKIP_PLACES:
+                continue
+            out.setdefault(head, set()).add(head)
+    return out
+
+
+# Places too common or too generic to carry information in this archive.
+SKIP_PLACES = {"england", "australia", "scotland", "ireland", "wales", "united kingdom",
+               "queensland", "gloucestershire", "hampshire", "staffordshire", "kent",
+               "somerset", "sussex", "new south wales", "london", "unknown", "none"}
+
+
 def text_of(path):
     raw = open(path, encoding="utf-8", errors="replace").read()
     if path.endswith(".html"):
@@ -136,8 +164,13 @@ def main(argv):
         i = argv.index("--min"); want_min = int(argv[i + 1]); del argv[i:i + 2]
     filters = [a.lower() for a in argv if not a.startswith("-")]
 
-    # (person, event) -> year -> set of sources
+    vocab = place_vocab()
+    prx = re.compile(r"\b(" + "|".join(re.escape(p) for p in
+                     sorted(vocab, key=len, reverse=True)) + r")\b") if vocab else None
+
+    # (person, event) -> year -> set of sources ; and the same for places
     found = collections.defaultdict(lambda: collections.defaultdict(set))
+    where = collections.defaultdict(lambda: collections.defaultdict(set))
     nsrc = 0
     for name, txt in sources():
         nsrc += 1
@@ -151,12 +184,17 @@ def main(argv):
             if NEGATED.search(window):
                 continue          # the archive is arguing, not asserting
             for ev, rx in EVENTS.items():
-                if re.search(rx, window, re.I):
-                    for y in years:
-                        found[(who, ev)][y].add(name)
+                if not re.search(rx, window, re.I):
+                    continue
+                for y in years:
+                    found[(who, ev)][y].add(name)
+                if prx:
+                    for pl in set(prx.findall(window)):
+                        where[(who, ev)][pl].add(name)
 
     print(f"agree: {nsrc} data files and pages, "
-          f"{len(found):,} (person, event) pairs with a date")
+          f"{len(found):,} (person, event) pairs with a date, "
+          f"{len(where):,} with a place")
 
     conflicts = []
     for (who, ev), years in found.items():
@@ -167,6 +205,21 @@ def main(argv):
         # list that slipped through SKIP. Report the tight disagreements.
         if 1 < len(strong) <= 4:
             conflicts.append((who, ev, strong))
+
+    # The same shape again for places. A person can legitimately be married in
+    # one parish and buried in another, so only the events that happen ONCE and
+    # in ONE place are worth checking: a birth, a baptism, a burial.
+    SINGLE = {"born", "baptised", "buried", "died"}
+    pconf = []
+    for (who, ev), places in where.items():
+        if ev not in SINGLE:
+            continue
+        if filters and not any(f in who.lower() for f in filters):
+            continue
+        strong = {pl: s for pl, s in places.items() if len(s) >= want_min}
+        if 1 < len(strong) <= 4:
+            pconf.append((who, ev, strong))
+    pconf.sort(key=lambda c: (-sum(len(s) for s in c[2].values()), c[0]))
 
     conflicts.sort(key=lambda c: (-sum(len(s) for s in c[2].values()), c[0]))
     if not conflicts:
@@ -182,6 +235,16 @@ def main(argv):
             shown = ", ".join(src[:4]) + (f" … +{len(src)-4}" if len(src) > 4 else "")
             print(f"      {y}  ×{len(src):<3} {shown}")
         print()
+
+    if pconf:
+        print(f"  {len(pconf)} (person, event) pair(s) carry more than one PLACE:\n")
+        for who, ev, places in pconf:
+            print(f"  {who} — {ev}  ({len(places)} different places)")
+            for pl in sorted(places):
+                src = sorted(places[pl])
+                shown = ", ".join(src[:3]) + (f" … +{len(src)-3}" if len(src) > 3 else "")
+                print(f"      {pl:<22} ×{len(src):<3} {shown}")
+            print()
     return 0
 
 

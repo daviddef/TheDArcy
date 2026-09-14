@@ -59,6 +59,14 @@
   "variants": []
  },
  {
+  "place": "Aller, Somerset, England",
+  "n": 3,
+  "first": 1751,
+  "variants": [
+   "of Aller, Som., Eng."
+  ]
+ },
+ {
   "place": "Ayr, Scotland",
   "n": 3,
   "first": 1872,
@@ -81,6 +89,14 @@
   "n": 3,
   "first": 1531,
   "variants": []
+ },
+ {
+  "place": "Long Ashton, Somerset, England",
+  "n": 3,
+  "first": 1792,
+  "variants": [
+   "Long Ashton, Somerset, Eng"
+  ]
  },
  {
   "place": "Madeley, Staffordshire, England",
@@ -179,12 +195,6 @@
   ]
  },
  {
-  "place": "Long Ashton, Somerset, England",
-  "n": 2,
-  "first": 1792,
-  "variants": []
- },
- {
   "place": "Nether Skyers, Darfield, Yorkshire",
   "n": 2,
   "first": 1570,
@@ -195,6 +205,15 @@
   "n": 2,
   "first": 1829,
   "variants": []
+ },
+ {
+  "place": "St Quivox, Ayrshire, Scotland",
+  "n": 2,
+  "first": 1840,
+  "variants": [
+   "St Quivox, Ayrshire, Scotland, United Kingdom",
+   "of St Quivox, Ayrshire, Scotland"
+  ]
  },
  {
   "place": "Staffordshire, England",
@@ -208,12 +227,6 @@
   "place": "Stroughton Grange, Leicestershire, England",
   "n": 2,
   "first": 1614,
-  "variants": []
- },
- {
-  "place": "of Aller, Som., Eng.",
-  "n": 2,
-  "first": 1751,
   "variants": []
  },
  {
@@ -244,12 +257,6 @@
   "place": "Adelaide St, North Brisbane, Queensland, Australia",
   "n": 1,
   "first": 1858,
-  "variants": []
- },
- {
-  "place": "Aller, Somerset, England",
-  "n": 1,
-  "first": 1794,
   "variants": []
  },
  {
@@ -331,6 +338,14 @@
   "n": 1,
   "first": 1721,
   "variants": []
+ },
+ {
+  "place": "Bedworth and Stoughton, Leicestershire, England",
+  "n": 1,
+  "first": 1580,
+  "variants": [
+   "of Bedworth and Stoughton, Leicestershire, England"
+  ]
  },
  {
   "place": "Bedworth, Leicestershire, England, UK.",
@@ -471,10 +486,12 @@
   "variants": []
  },
  {
-  "place": "Davenham, Chester, Eng.",
+  "place": "Davenham, Chester, England",
   "n": 1,
   "first": 1753,
-  "variants": []
+  "variants": [
+   "Davenham, Chester, Eng."
+  ]
  },
  {
   "place": "Deinschwang, near Amberg, Upper Palatinate",
@@ -681,12 +698,6 @@
   "variants": [
    "London, England, United Kingdom"
   ]
- },
- {
-  "place": "Long Ashton, Somerset, Eng",
-  "n": 1,
-  "first": 1824,
-  "variants": []
  },
  {
   "place": "MARKET BOSWORTH, LEICESTER, England",
@@ -923,11 +934,11 @@
   "variants": []
  },
  {
-  "place": "St Quivox, Ayrshire, Scotland",
+  "place": "St Quivox, Ayr, Scotland",
   "n": 1,
-  "first": 1856,
+  "first": 1824,
   "variants": [
-   "St Quivox, Ayrshire, Scotland, United Kingdom"
+   "of St Quivox, Ayr, Sctl"
   ]
  },
  {
@@ -1028,24 +1039,6 @@
   "place": "Wotton-under-Edge, Gloucestershire, England",
   "n": 1,
   "first": 1770,
-  "variants": []
- },
- {
-  "place": "of Bedworth and Stoughton, Leicestershire, England",
-  "n": 1,
-  "first": 1580,
-  "variants": []
- },
- {
-  "place": "of St Quivox, Ayr, Sctl",
-  "n": 1,
-  "first": 1824,
-  "variants": []
- },
- {
-  "place": "of St Quivox, Ayrshire, Scotland",
-  "n": 1,
-  "first": 1840,
   "variants": []
  }
 ]
