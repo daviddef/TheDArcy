@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import PlaceSpark from "@daviddef/archive-kit/components/PlaceSpark.astro";
+import WaysIn from "@daviddef/archive-kit/components/WaysIn.astro";
 import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
@@ -125,7 +127,7 @@ const more = [
     </blockquote>
   </section>
 
-  <Blk label="The document at the centre of it" title="A detachment of thirty men, and a wife in the cabin">
+  <Blk label={`${atlas.places.length} places, from Limerick and Bedfordshire to Sandgate`} title="A detachment of thirty men, and a wife in the cabin">
     <p class="dek" style="margin:.7rem 0 1.2rem">For as long as this family has had a pedigree, the
     interesting end of it was supposed to be the top — a castle in the North Riding, an earldom, a
     line back to the 1560s. The interesting end is actually the bottom, and it is provable.</p>
@@ -151,7 +153,17 @@ const more = [
     <p style="margin-top:1.2rem"><a href={u("/australia/")}>How the family arrived →</a></p>
   </Blk>
 
-  <section class="blk">
+  
+  <WaysIn doors={[
+    { href: u("/direct-line/"), name: "The spine, generation by generation", blurb: "Twelve generations on the D'Arcy line, each one saying how well it is known — and two of the joins rejected outright.", cta: "Start at Kenneth →" },
+    { href: u("/hornby/"), name: "Where it stops being evidence", blurb: "The Hornby claim, tested and refused. Ninety-eight people in this archive hang off grafts it does not accept, and they are marked rather than quietly dropped.", cta: "Read the test →" },
+    { href: u("/atlas/"), name: "Where it happened", blurb: "A hundred and seventy places from Limerick and Bedfordshire to Sandgate, with the people this archive can put in each one.", cta: "Open the atlas →" },
+  ]} />
+  <PlaceSpark places={atlas.places} href={u("/atlas/")}
+              label="157 places, from Limerick and Bedfordshire to Sandgate" />
+
+
+<section class="blk">
     <h2>What this archive has established</h2>
     <div class="grid two" style="margin-top:1rem">
       <div class="card">
