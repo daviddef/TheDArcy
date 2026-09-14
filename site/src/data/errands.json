@@ -236,13 +236,13 @@
   },
   {
    "n": 24,
-   "what": "Where Arthur Hartley Sneyd is commemorated",
-   "where": "Commonwealth War Graves Commission",
-   "cost": "free, two minutes",
-   "settles": "The archive says Villers-Bretonneux from the B.2090A's “Not yet to hand”. CWGC would confirm it outright. Bot-blocked here, twice.",
-   "why": "Free, quick, and this archive simply cannot reach it",
+   "what": "Where Arthur Hartley Sneyd is commemorated — DONE, and the archive was right",
+   "where": "Commonwealth War Graves Commission, casualty 1451888. Reached 14 September 2026 at the third attempt: the Azure bot check cleared by itself in a real browser after a few seconds.",
+   "cost": "free",
+   "settles": "Confirmed outright, from the authority rather than by inference from the B.2090A's “Not yet to hand”: Private ARTHUR HARTLEY SNEYD, service number 5050, 9th Bn. Australian Infantry, A.I.F., died 20 August 1916 aged 22, commemorated on the VILLERS-BRETONNEUX MEMORIAL, Somme — the memorial to the missing, which carries 10,696 names. CWGC adds: “Son of Arthur and Martha Sneyd, of James St., Wooloowin, Brisbane. Born at Rockhampton, Queensland.” Every one of those details was already held here. The record corrected nothing and confirmed everything, which is the rarer and duller of the two outcomes.",
+   "why": "CONFIRMED, NOT CORRECTED",
    "href": "/finding-arthur",
-   "file": "requests/cwgc-arthur-hartley-sneyd.md"
+   "file": "DONE 14 September 2026."
   },
   {
    "n": 25,
