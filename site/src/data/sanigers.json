@@ -485,5 +485,193 @@
    1840
   ]
  ],
- "spellingsNote": "Counts are entries in the parish registers read for this archive. SANYGER and SYNIGER carry a count of zero because they appear in no register here — they are the 1608 muster's forms, found in Smyth's Men and Armour and nowhere since. They are listed so that the next search for this surname starts with nineteen spellings rather than seventeen."
+ "spellingsNote": "Counts are entries in the parish registers read for this archive. SANYGER and SYNIGER carry a count of zero because they appear in no register here — they are the 1608 muster's forms, found in Smyth's Men and Armour and nowhere since. They are listed so that the next search for this surname starts with nineteen spellings rather than seventeen.",
+ "grsi": {
+  "head": "Twenty-four deaths, with the register and the entry number",
+  "lede": "The Gloucestershire Registration Service and the Gloucestershire Family History Society between them have indexed the registrars' own books and put them online free. It is not the GRO index: it gives the LOCAL register and entry number, which is what a certificate is ordered against.",
+  "coverage": "Coverage checked before the search, not after. For deaths the districts that matter are complete: Thornbury/Berkeley 1837–1948, Dursley 1837–1937 (20 registers), Wotton-under-Edge 1837–1937 (19 registers), Uley 1837–1906.",
+  "chip": "documented",
+  "rows": [
+   [
+    "1838",
+    "SANIGAR",
+    "Sarah",
+    "1",
+    "149"
+   ],
+   [
+    "1845",
+    "SANIGER",
+    "Susan",
+    "2",
+    "418"
+   ],
+   [
+    "1849",
+    "SANIGER",
+    "Catharine",
+    "3",
+    "430"
+   ],
+   [
+    "1850",
+    "SANIGAR",
+    "John",
+    "3",
+    "146"
+   ],
+   [
+    "1850",
+    "SANIGER",
+    "Joseph",
+    "4",
+    "33"
+   ],
+   [
+    "1851",
+    "SANIGAR",
+    "Lydia",
+    "3",
+    "265"
+   ],
+   [
+    "1851",
+    "SANIGAR",
+    "Mary Ann",
+    "3",
+    "282"
+   ],
+   [
+    "1856",
+    "SANIGER",
+    "Elizabeth",
+    "5",
+    "285"
+   ],
+   [
+    "1857",
+    "SANIGER",
+    "Eliza",
+    "5",
+    "394"
+   ],
+   [
+    "1857",
+    "SANIGER",
+    "Samuel",
+    "4",
+    "257"
+   ],
+   [
+    "1859",
+    "SANIGER",
+    "Mary Ann",
+    "4",
+    "499"
+   ],
+   [
+    "1859",
+    "SANIGER",
+    "Samuel",
+    "4",
+    "449"
+   ],
+   [
+    "1860",
+    "SANIGER",
+    "Mary",
+    "5",
+    "96"
+   ],
+   [
+    "1861",
+    "SANIGER",
+    "Sarah",
+    "6",
+    "435"
+   ],
+   [
+    "1861",
+    "SANIGER",
+    "Susanna",
+    "6",
+    "432"
+   ],
+   [
+    "1862",
+    "SANIGER",
+    "Charlotte",
+    "6",
+    "464"
+   ],
+   [
+    "1862",
+    "SANIGER",
+    "Edward Thomas",
+    "6",
+    "462"
+   ],
+   [
+    "1862",
+    "SANIGER",
+    "Joseph",
+    "6",
+    "465"
+   ],
+   [
+    "1867",
+    "SANIGAR",
+    "Keturah",
+    "6",
+    "131"
+   ],
+   [
+    "1872",
+    "SANIGER",
+    "Charlotte",
+    "7",
+    "125"
+   ],
+   [
+    "1877",
+    "SANIGER",
+    "Ann",
+    "8",
+    "174"
+   ],
+   [
+    "1880",
+    "SANIGER",
+    "Frederick James",
+    "8",
+    "462"
+   ],
+   [
+    "1882",
+    "SANIGER",
+    "Margaret",
+    "23",
+    "304"
+   ],
+   [
+    "1882",
+    "SANIGER",
+    "William Henry",
+    "23",
+    "353"
+   ]
+  ],
+  "lydia": {
+   "head": "And the one that was being looked for",
+   "body": "LYDIA SANIGAR, died 1851, register 3, entry 265. This archive has wanted her since it began: she is the Lyddya Sinegar aged seventy in Hannah's house in 1841, and she is the wife whose maiden surname the marriage of about 1797 would give.",
+   "chip": "documented",
+   "careful": "The index gives a year, a register and an entry — not a date, an age, an abode or a maiden name. It locates the certificate; it does not replace it. What it does do is make the certificate orderable against the local register rather than the GRO index."
+  },
+  "spelling": {
+   "head": "A spelling hid her, for the fourth time",
+   "body": "Searched as SANIGER, the 1849–1853 window returns two people and neither is Lydia. Searched as SANIGAR it returns three, and she is the second. The surname box does prefix matching when Exact Match is left unticked, so the only safe search for this family is the stem SANIG — which returns all five.",
+   "chip": "method",
+   "means": "Hannah's baptism was hidden under SANIGOR. Her brother's marriage was hidden under SANIGRE. The Sussex sisters were hidden under ARCY. Lydia's death was hidden under SANIGAR. The pattern is now four for four, and it is the single most reliable fact about researching this family."
+  }
+ }
 }

@@ -325,6 +325,15 @@
    "verdict": "unusable",
    "note": "A single hit is reported as “There is one match”, spelling the number as a word; two or more are reported in digits. A reader or script looking for a numeral sees nothing and files a zero. This hid JOHN SAINGER — the one man living inside the hamlet the surname comes from — on the first pass of the search that found him, and he was recovered only because a search by PLACE returned him and contradicted the null.",
    "href": "/saniger-1608"
+  },
+  {
+   "db": "Gloucestershire Registration Service Index",
+   "where": "Berkeley, Dursley, Wotton-under-Edge and Uley registration districts",
+   "holds": "the registrars' own books, indexed to register and entry number",
+   "span": "1837–1948",
+   "verdict": "good",
+   "note": "Free, and it gives the LOCAL reference a certificate is ordered against, which the GRO index does not. Its surname box does prefix matching when Exact Match is unticked, so the stem SANIG finds every form at once — searched as SANIGER alone it misses Lydia Sanigar entirely.",
+   "href": "/sanigers"
   }
  ]
 }

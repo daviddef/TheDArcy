@@ -1765,6 +1765,14 @@
    "outcome": "empty",
    "got": "Not a null — the parish is not transcribed. Lydia Jones, Gloucestershire baptisms 1760–1785: nil. But JONES of any forename at WOTTON-UNDER-EDGE, all record types, 1740–1800: also nil — nought entries for the commonest surname in England across sixty years. The same search across the county returns 164 Jones baptisms in a narrower window, so the engine works and the county is covered. Wotton-under-Edge appears in FreeREG's place list and has effectively no eighteenth-century transcription behind it, which is the coverage-tool-versus-search disagreement this archive has already recorded once.",
    "href": "/errands"
+  },
+  {
+   "src": "Gloucestershire Registration Service Index (with the Gloucestershire FHS)",
+   "what": "All deaths registered under the stem SANIG across Gloucestershire, 1837–1899, sweeping in five-year steps",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Twenty-four deaths, each with the registrar's own register and entry number rather than a GRO quarterly reference — including LYDIA SANIGAR, 1851, register 3, entry 265, who this archive has wanted since it began. Coverage was checked before searching: Thornbury/Berkeley deaths complete 1837–1948, Dursley 1837–1937, Wotton-under-Edge 1837–1937. A free index nobody here had used.",
+   "href": "/sanigers"
   }
  ]
 }

@@ -215,6 +215,41 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
     search, so any one of them finds the rest. <a href={u("/search/")}>Try it →</a></p>
   </Blk>
 
+  <Blk label="Gloucestershire Registration Service Index" title={d.grsi.head}>
+    <p class="lede">{d.grsi.lede} <span class="chip doc">{d.grsi.chip}</span></p>
+    <Note style="margin-top:1.1rem"><strong>Coverage first.</strong> {d.grsi.coverage}</Note>
+    <Scroll>
+      <table>
+        <thead><tr><th class="m">Year</th><th>Surname as indexed</th><th>Forename</th>
+          <th class="m">Register</th><th class="m">Entry</th></tr></thead>
+        <tbody>
+          {d.grsi.rows.map(([y, sn, fn, reg, ent]) => (
+            <tr style={fn === "Lydia" ? "background:var(--tint)" : ""}>
+              <td class="m">{y}</td><td class="mono small">{sn}</td>
+              <td><strong>{fn}</strong></td>
+              <td class="m">{reg}</td><td class="m">{ent}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+
+    <h3 style="margin-top:1.7rem">{d.grsi.lydia.head}</h3>
+    <Note style="border-left-width:3px;margin-top:.8rem">
+      <strong style="font-size:1.1em">{d.grsi.lydia.body}</strong>
+      <span class="chip doc">{d.grsi.lydia.chip}</span>
+    </Note>
+    <Note style="margin-top:1.1rem">
+      <strong>What an index is and is not.</strong> {d.grsi.lydia.careful}
+      {" "}<a href={u("/errands/")}>On the queue →</a>
+    </Note>
+
+    <h3 style="margin-top:1.7rem">{d.grsi.spelling.head}</h3>
+    <p>{d.grsi.spelling.body}</p>
+    <Note style="margin-top:1.1rem">{d.grsi.spelling.means}
+      {" "}<span class="chip lore">{d.grsi.spelling.chip}</span></Note>
+  </Blk>
+
   <Blk label="And where they went" title="Twenty-nine Sanigers in Bristol, 1841" last>
     <p class="lede">The Vale families did not stay in the Vale. On census night in 1841 there are
     <strong>{bristol.length}</strong> of them in Bristol alone, under five spellings — and one of
