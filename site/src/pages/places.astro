@@ -20,6 +20,7 @@ const order = ["Australia", "England", "Ireland", "Scotland", "Germany",
                "The Caribbean", "Italy", "Elsewhere"];
 const groups = {};
 for (const p of places) (groups[country(p)] ||= []).push(p);
+import atlas from "../../public/atlas-data.json";
 ---
 <Base
   title="Places"
@@ -132,4 +133,16 @@ for (const p of places) (groups[country(p)] ||= []).push(p);
     contain-intrinsic-size: auto 420px;
   }
 </style>
+
+<section class="blk" id="every-place">
+  <h2>Every place with a page of its own</h2>
+  <p class="dek">One page per place the atlas can put a person in, listing who was born, married or
+    buried there and what the archive read to know it. These were reachable only by clicking a marker
+    on the map, which meant a reader without JavaScript — and a search engine — could not get to any
+    of them.</p>
+  <p class="placelist">{atlas.places.filter((p) => p.slug).sort((a, b) =>
+      (a.place || a.name || "").localeCompare(b.place || b.name || "")).map((p, i) => (
+    <>{i > 0 && <span class="sep"> · </span>}<a href={u(`/places/${p.slug}/`)}>{p.place || p.name}</a></>
+  ))}</p>
+</section>
 </Base>
