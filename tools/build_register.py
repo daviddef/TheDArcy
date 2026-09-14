@@ -757,6 +757,14 @@ rec("Christine Hilda D'Arcy-Evans", "burial · 15 Jan 1930 – 10 Aug 2017 · Ce
     "record · Find a Grave memorial 229072083 · Centenary Memorial Gardens, Brisbane", "https://www.findagrave.com/memorial/229072083")
 rec("Catherine Georgiana West", "burial · 22 March 1824, BOURN, Cambridgeshire · AGED 36 · “OF BATH” · the Lady Catherine of her sons' death notices, and Joseph D'Arcy's first wife",
     "record · Cambridgeshire Burials (Cambridgeshire and Huntingdonshire FHS)", "https://www.findmypast.co.uk/")
+rec("Charlotte D'Arcy", "burial · died 28 MAY 1869 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican",
+    "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
+rec("Jane D'Arcy", "burial · died 10 JANUARY 1875 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican · the same page as both her sisters",
+    "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
+rec("Catherine D'Arcy", "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · the exact date the Horsham paper printed a fortnight later",
+    "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
+rec("Robert West D'Arcy", "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
+    "record · British India Office Marriages", "https://www.findmypast.co.uk/")
 
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [

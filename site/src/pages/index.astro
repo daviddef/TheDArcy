@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
 import { nOwn, nInherited } from "../lib/errors.js";
@@ -12,6 +13,7 @@ import dossiers from "../data/dossiers.json";
 import searched from "../data/searched.json";
 import changes from "../data/changes.json";
 import graves from "../data/graves.json";
+import atlas from "../../public/atlas-data.json";
 import living from "../data/living.json";
 
 const published = people.length;
@@ -150,7 +152,7 @@ const more = [
   </Blk>
 
   <section class="blk">
-    <h2>Four things this archive has established</h2>
+    <h2>What this archive has established</h2>
     <div class="grid two" style="margin-top:1rem">
       <div class="card">
         <h3>A defensible head to the line</h3>
@@ -256,4 +258,13 @@ const more = [
     living and excluded from this build entirely — not hidden, not gated, not present in the output.
     Across the whole tree the rule withholds {living.counts.living.toLocaleString()} people. <a href={u("/method/")}>The rule →</a></p>
   </section>
+
+  <Numbers rows={[
+    [people.length, "people published, each graded for how well it is evidenced", u("/people/")],
+    [12, "generations claimed on the D\u2019Arcy line itself \u2014 and two of the joins rejected", u("/how-far-back/")],
+    [reg.records, "records read and set out one by one", u("/register/")],
+    [searched.rows.length, "searches that found nothing, kept because a negative result is a finding", u("/searched/")],
+    [places.length, `places named, ${atlas.places.length} of them now on the map`, u("/atlas/")],
+    [graves.n, "graves located, holding 101 burials between them", u("/graves/")],
+  ]} />
 </Base>

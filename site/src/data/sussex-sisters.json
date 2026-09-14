@@ -131,7 +131,7 @@
    "Yesterday the West Indies years rested on two christenings in a Caribbean index and a birthplace on a family tree. Today two of Robert D'Arcy's daughters are recorded in an English census as born in BARBADOES, and the youngest as born at Lyme Regis in Dorset — the same shape, from a different kind of source entirely."
   ]
  ],
- "open": "Where they were on census night 1861 — eight approaches and nothing. What the Death Duty register says Catherine left and to whom. Whether Charlotte and Jane also left probates. And whether any of the three is buried where the others are: no burial record has been looked for at all.",
+ "open": "Where they were on census night 1861 — eight approaches and nothing. What the Death Duty register says Catherine left and to whom. Whether Charlotte and Jane also left probates. And who kept Western Cottages, since the sisters were only lodging there.",
  "census1851": {
   "head": "1851: all three, and the census says BARBADOES",
   "ref": "HO107/1646, folio 357, page 59, schedule 172 · 22 WESTERN COTTAGES, BRIGHTON · sub-district The Place, enumeration district 1N",
@@ -180,5 +180,29 @@
   "found": "They came out of a household search instead: JANE, with a CHARLOTTE in the same household, in Brighton. That returns 119 people and the third of them is “Jane D Arcy”. Searching by who somebody lived with, rather than by what they were called, is the move that worked.",
   "lesson": "Third time in a fortnight. SANIGOR hid a baptism because a spelling was missing from an alias list. A search for Martha in Bristol failed because she died in Queensland. And now a D' read as a forename. THIS ARCHIVE'S OWN SEARCH INDEX ALREADY LISTS “arcy” as a form of D'Arcy — the alias list was right and the queries put to somebody else's index were not.",
   "chip": "own error, and the same error"
+ },
+ "burials": {
+  "head": "All three on one page of one register",
+  "ref": "ST ANDREW'S OLD CHURCH, Church Road, HOVE · Anglican · The National Archives RG 37/65/2, PAGE 47",
+  "rows": [
+   [
+    "CHARLOTTE D'ARCY",
+    "died 28 MAY 1869",
+    "the GRO index gave only the June quarter"
+   ],
+   [
+    "JANE D'ARCY",
+    "died 10 JANUARY 1875",
+    "the GRO index gave only the March quarter"
+   ],
+   [
+    "CATHERINE D'ARCY",
+    "died 23 JANUARY 1876",
+    "which is the date the Horsham paper printed — “on the 23rd ult.” — confirmed from a second direction"
+   ]
+  ],
+  "means": "This page said, at the bottom, that no burial record had been looked for at all. Three were found in one search, and they are consecutive entries on THE SAME PAGE of the same register: three sisters buried out of the same church over seven years, their names one under another in the book. St Andrew's Old Church stands on Church Road in Hove, half a mile from Brunswick and a mile from Bedford Square, where Catherine died.",
+  "gain": "Two exact dates where the archive had quarters, and one independent confirmation. Charlotte's 28 May 1869 and Jane's 10 January 1875 are new. Catherine's 23 January 1876 is not new — it is the date the Horsham, Petworth, Midhurst and Steyning Express printed a fortnight after the event, and a parish register and a newspaper now agree on it without either having seen the other.",
+  "chip": "documented"
  }
 }

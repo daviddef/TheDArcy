@@ -289,6 +289,15 @@
    "verdict": "good",
    "note": "Readable WITHOUT signing in, and no bot check appeared. Falco brides and grooms at Arienzo with their spouses — Loffredo, Abatiello, Di Lucia, Librera, Perrotta — and FALCO GIOVANNA married to CRISCI ANIELLO, Crisci being one of the Falco archive's own surnames. This is that archive's ground; the coverage is recorded here, not the records.",
    "href": "/the-other-archives"
+  },
+  {
+   "db": "FindMyPast",
+   "where": "any search carrying `sourcecategory`",
+   "holds": "everything — and returns nothing",
+   "span": "—",
+   "verdict": "unusable",
+   "note": "The category filter mangles to `life-events-bmds` in the URL and the search then returns zero whatever else is asked, while the same query without it returns results. The third broken FindMyPast parameter found in two days, after yearofbirth+keywordsplace on the census and the Find a Grave locationId.",
+   "href": "/searched"
   }
  ]
 }

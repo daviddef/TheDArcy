@@ -1,10 +1,10 @@
 {
-"entries": 825,
+"entries": 829,
 "distinct": 575,
-"records": 352,
+"records": 356,
 "tree": 473,
 "grafted": 98,
-"linked": 825,
+"linked": 829,
 "surnames": 196,
 "groups": [
 {
@@ -1177,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 146,
+"n": 150,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -1222,6 +1222,13 @@
 "kind": "record"
 },
 {
+"name": "Catherine D'Arcy",
+"says": "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · the exact date the Horsham paper printed a fortnight later",
+"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
 "name": "Catherine Lucy Jane D'Arcy",
 "says": "baptism · 23 January 1832, Milford · father JOSEPH, “Lt Col RA of MILFORD HOUSE”, mother KATHERINE LUCY ELIZA",
 "source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
@@ -1254,6 +1261,13 @@
 "says": "census 1851 · aged 40 · LODGER, UNMARRIED, “Fund holder” · BORN LYME REGIS, DORSET · 22 WESTERN COTTAGES, Brighton",
 "source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "burial · died 28 MAY 1869 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican",
+"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1450,6 +1464,13 @@
 "says": "census 1851 · aged 55 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
 "source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "burial · died 10 JANUARY 1875 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican · the same page as both her sisters",
+"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1729,6 +1750,13 @@
 "name": "Robert D'Arcy",
 "says": "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
 "source": "record · London Evening Standard and Morning Herald, 25 June 1862",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
+"source": "record · British India Office Marriages",
 "link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },

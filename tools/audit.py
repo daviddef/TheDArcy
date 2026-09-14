@@ -17,7 +17,10 @@ import json, re, sys
 # family posted around an empire leaves evidence in it; pretending a Barbados
 # parish register is a "British" source would be the kind of quiet fudge this
 # script exists to prevent.
-EMP = re.compile(r"""Caribbean|Barbados|Barbadoes|Jamaica|India Office|Bengal""", re.I | re.X)
+# Single tokens only: re.X strips the space out of "India Office" and it then
+# matches nothing. The same bug bit the British pattern on 15 September.
+EMP = re.compile(r"""Caribbean|Barbados|Barbadoes|Jamaica|Bengal|Bombay|Madras
+    |India\b|Indies""", re.I | re.X)
 
 AUS = re.compile(r"""Queensland|QSA\b|NAA\b|AWM\b|Trove|Blue Book|Qld\b|Brisbane
     |New South Wales|NSW\b|Victoria(?:n)? (?:BDM|marriages)|Australia""", re.I | re.X)

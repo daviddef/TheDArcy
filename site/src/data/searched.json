@@ -9,6 +9,30 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — Sussex Burials (TNA RG 37/65/2)",
+   "what": "Whether the three sisters are buried together — a question this archive had never once searched",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "ALL THREE, ON THE SAME PAGE OF THE SAME REGISTER. ST ANDREW'S OLD CHURCH, Church Road, HOVE, Anglican, page 47: CHARLOTTE died 28 MAY 1869, JANE died 10 JANUARY 1875, CATHERINE died 23 JANUARY 1876. Two exact dates where the archive held only GRO quarters — and Catherine's is the date the Horsham paper printed a fortnight after the event, so a parish register and a newspaper now agree without either having seen the other.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast — British India Office Marriages",
+   "what": "Captain Robert D'Arcy of the India Company's Army",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "ROBERT WEST D'ARCY, married at BOMBAY in 1846 — and the middle name is the find. WEST is Lady Catherine Georgiana's family name, so Joseph's son carried his mother's peerage surname to India. The index entry is visible; the transcript is PAYWALLED EVEN ON A PAID TRIAL — “Subscribe to unlock exclusive records”, the same gate as the Royal Artillery officers. Indexed, not read.",
+   "href": "/joseph-darcy"
+  },
+  {
+   "src": "FindMyPast — the sourcecategory filter",
+   "what": "A control, after two more suspicious zeros",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "Adding `sourcecategory=life events (bmds)` to a search returns ZERO whatever else is asked — D'Arcy births 1817-1825, D'Arcy life events in India, both nothing, while the same searches without it return results. The URL shows the value mangled to `life-events-bmds`. Any null this archive has drawn from a query carrying that filter is worthless.",
+   "href": "/searched"
+  },
+  {
    "src": "FindMyPast — Cambridgeshire Burials",
    "what": "When Lady Catherine died, and where",
    "when": "15 Sep 2026",

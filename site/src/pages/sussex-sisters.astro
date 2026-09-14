@@ -100,6 +100,22 @@ import d from "../data/sussex-sisters.json";
     </Note>
   </Blk>
 
+  <Blk label={d.burials.ref} title={d.burials.head}>
+    <Scroll>
+      <table>
+        <thead><tr><th>Name</th><th class="m">Died</th><th>What it adds</th></tr></thead>
+        <tbody>{d.burials.rows.map(([who, when, why]) => (
+          <tr><td><strong>{who}</strong></td>
+              <td class="m" style="white-space:nowrap">{when}</td>
+              <td class="small">{why}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      {d.burials.means} <span class="chip doc">{d.burials.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.burials.gain}</p>
+  </Blk>
+
   <Blk label="Coverage" title={d.nulls.head}>
     <Scroll>
       <table>
