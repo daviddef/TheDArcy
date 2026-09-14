@@ -157,10 +157,10 @@ const more = [
   <WaysIn doors={[
     { href: u("/direct-line/"), name: "The spine, generation by generation", blurb: "Twelve generations on the D'Arcy line, each one saying how well it is known — and two of the joins rejected outright.", cta: "Start at Kenneth →" },
     { href: u("/hornby/"), name: "Where it stops being evidence", blurb: "The Hornby claim, tested and refused. Ninety-eight people in this archive hang off grafts it does not accept, and they are marked rather than quietly dropped.", cta: "Read the test →" },
-    { href: u("/atlas/"), name: "Where it happened", blurb: "A hundred and seventy places from Limerick and Bedfordshire to Sandgate, with the people this archive can put in each one.", cta: "Open the atlas →" },
+    { href: u("/atlas/"), name: "Where it happened", blurb: `${atlas.stats.places + atlas.stats.unplaced} places from Limerick and Bedfordshire to Sandgate, with the people this archive can put in each one — ${atlas.stats.places} of them on the map.`, cta: "Open the atlas →" },
   ]} />
   <PlaceSpark places={atlas.places} href={u("/atlas/")}
-              label="157 places, from Limerick and Bedfordshire to Sandgate" />
+              label={`${atlas.stats.places} places with a coordinate, sized by how many people stand in each`} />
 
 
 <section class="blk">
