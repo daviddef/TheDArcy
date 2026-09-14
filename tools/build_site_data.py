@@ -146,6 +146,21 @@ def person_json(people, families, pid, ahn=None):
         "spouses": [s for s in spouses(people, families, pid)],
         # A living parent is named, and nothing else about them is.
         "parents": [display(people[x]) for x in p["parents"] if x in people],
+        # Brothers and sisters, which were never emitted: the other children of
+        # whichever family this person is a child of. Mechanical — the GEDCOM
+        # carries 4,777 families and 11,630 child links — and the reason the
+        # blood chart could show ancestors and no aunts or uncles at all.
+        #
+        # The living are excluded outright rather than named, because that is
+        # this archive's own rule and the strictest in the estate. The five
+        # living people it does name sit in living.json with a reason and a
+        # confirmation date each; a sibling list is not the place to add to it.
+        "siblings": sorted({
+            display(people[c])
+            for fid in p.get("famc", [])
+            for c in families.get(fid, {}).get("chil", [])
+            if c != pid and c in people and not is_living(people[c])
+        }),
         "sources": p["sources"][:6],
         "notes": p["notes"],
         "living": is_living(p),
