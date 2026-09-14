@@ -1,15 +1,15 @@
-node_modules/
-dist/
-.DS_Store
-*.log
-.env
-site/.astro/
 
 # Raw genealogical export: contains living people in full. Never committed to a
-# public repository. Regenerate with a fresh MyHeritage GEDCOM export.
-sources/*.ged
-
-# Scanned coronial files: 15 MB each, and images of a sensitive original. The
-# transcriptions beside them ARE committed — that is what the archive publishes.
 # Re-download from Queensland State Archives by digital representation ID.
+# Scanned coronial files: 15 MB each, and images of a sensitive original. The
+# public repository. Regenerate with a fresh MyHeritage GEDCOM export.
+# transcriptions beside them ARE committed — that is what the archive publishes.
+*.log
+.DS_Store
+.env
+dist/
+node_modules/
+site/.astro/
+site/public/atlas-data.json
+sources/*.ged
 sources/inquests/*.pdf
