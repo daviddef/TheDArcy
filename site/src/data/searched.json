@@ -1981,6 +1981,22 @@
    "outcome": "empty",
    "got": "Neither year holds them, and neither year can be trusted to. 1871: D'ARCY returns one man, John D'Arcy born Liverpool 1847 at Withyham; ARCY and DARCY nothing. 1851: DARCY returns one woman, Mary Darcy born Essex 1798 at Ore; ARCY nothing at all — although this archive has the three sisters in the 1851 Sussex census under precisely that surname, at 22 Western Cottages, Brighton. So FreeCEN's Sussex is partial in a way its result counts conceal: Smith hits the 1,000 cap in 1851, 1861 and 1871 alike, while a piece containing a known household is simply absent.",
    "href": "/sussex-sisters"
+  },
+  {
+   "src": "Staffordshire BMD — births and marriages",
+   "what": "All SNEYD births and marriages in Staffordshire from 1837, a free local index never used here",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "391 births and 322 marriages. The births carry the MOTHER'S MAIDEN NAME and the marriages name both partners AND THE CHURCH, neither of which the GRO index gives. It names a woman this archive knew only as “Ann”: JAMES SNEYD married ANN BIDDULPH in 1842 at STOKE, ST PETER, reference 31/03/214. Four Sneyd births carry Biddulph as the mother — Elizabeth Ann 1839 Shelton, Mary Julia 1842 Hanley, Catherine 1845 Hanley, James Arthur 1850 Hanley — and three match the Well Street household exactly, supplying full forenames for the “Mary J” and “James A” the censuses gave as initials. Catherine is new here.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "Staffordshire BMD — the archive's own Sneyd marriages",
+   "what": "Whether the index could reach this family's own marriages",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "Mostly not, and for a structural reason worth stating. The index begins in 1837. Samuel Sneyd married Elizabeth Margaret Oliver at AUDLEM, CHESHIRE in 1809 — wrong county and twenty-eight years too early. His son Samuel Charles married at Camden, NEW SOUTH WALES in February 1837, the very year the index opens, and every later Sneyd marriage this archive holds is in Queensland. The parents stayed and the sons emigrated, so the only marriage the index can reach is the one that stayed: James the engraver, at Stoke in 1842.",
+   "href": "/sneyds"
   }
  ]
 }

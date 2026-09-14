@@ -293,6 +293,42 @@ const c = d.counts;
     <p style="margin-top:1.1rem">{d.williamBurial.gain}</p>
   </section>
 
+  <section class="blk">
+    <div class="lab">Staffordshire BMD</div>
+    <h2 style="margin-top:.4rem">{d.biddulph.head}</h2>
+    <p class="lede">{d.biddulph.lede}</p>
+    <div class="note" style="border-left-width:3px;margin-top:1.1rem">
+      <strong style="font-size:1.05em">{d.biddulph.marriage}</strong>
+      <span class="chip doc">{d.biddulph.chip}</span>
+    </div>
+
+    <h3 style="margin-top:1.7rem">{d.biddulph.kidsHead}</h3>
+    <p class="small">{d.biddulph.kidsNote}</p>
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>Child</th><th class="m">Born</th><th>District</th><th>Reference</th><th>Matches</th></tr></thead>
+        <tbody>
+          {d.biddulph.kids.map(([who, yr, dist, ref, note]) => (
+            <tr style={note.startsWith("NEW") ? "background:var(--tint)" : ""}>
+              <td><strong>{who}</strong></td><td class="m">{yr}</td>
+              <td class="small">{dist}</td><td class="mono small">{ref}</td>
+              <td class="small">{note}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:1.2rem">{d.biddulph.means}
+      {" "}<span class="chip inf">{d.biddulph.chipMeans}</span></div>
+
+    <h3 style="margin-top:1.7rem">{d.biddulph.orderHead}</h3>
+    <p>{d.biddulph.order}</p>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>What would settle it.</strong> {d.biddulph.careful}
+      {" "}<a href={u("/errands/")}>On the queue →</a>
+    </div>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.biddulph.where}</p>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <div class="lab">Diocese of Lichfield and Coventry Wills, 1550–1810</div>
     <h2 style="margin-top:.4rem">{d.wills.head}</h2>

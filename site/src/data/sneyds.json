@@ -519,5 +519,49 @@
    "means": "The Madeley burials remain a question for the Lichfield bishop's transcripts, which this index does not hold and which nothing free does."
   },
   "potteries": "The rest cluster where this archive already knew to look: yeomen at Woodhead in Burslem in 1707 and 1717, a gentleman at The Birches, Burslem in 1708, a spinster at Woodhead in 1722, a wheelwright at Newcastle under Lyme in 1676. The Potteries, two generations before the potteries."
+ },
+ "biddulph": {
+  "head": "Ann has a surname at last",
+  "lede": "Four censuses give James Sneyd the engraver a wife called ANN and nothing more — Ann, 41, in 1861; Ann, 52, in 1871; Anne, 61, in 1881. The free Staffordshire index names her.",
+  "marriage": "SNEYD, James · married ANN BIDDULPH · 1842 · STOKE, ST PETER · reference 31/03/214",
+  "chip": "documented",
+  "kidsHead": "And it names four children, by their mother's maiden name",
+  "kidsNote": "The Staffordshire birth index records the MOTHER'S MAIDEN NAME beside every child. Four Sneyd births carry BIDDULPH:",
+  "kids": [
+   [
+    "Elizabeth Ann Sneyd",
+    "1839",
+    "Shelton",
+    "SHE/003/001",
+    "“Elizabeth Ann, 11” in 1851 and “Elizabeth A, 21” in 1861"
+   ],
+   [
+    "Mary Julia Sneyd",
+    "1842",
+    "Hanley",
+    "HAN/005/004",
+    "the “Mary J, 18” of 1861, a PAINTRESS — and her full name for the first time"
+   ],
+   [
+    "Catherine Sneyd",
+    "1845",
+    "Hanley",
+    "HAN/007/057",
+    "NEW. She is in no census this archive has read; she did not survive to 1851, or she was elsewhere on both nights"
+   ],
+   [
+    "James Arthur Sneyd",
+    "1850",
+    "Hanley",
+    "HAN/012/032",
+    "the “James A, 10” of 1861 and the “James A, 20, ENGRAVER” of 1871 — his full name too"
+   ]
+  ],
+  "means": "Three of the four match the household this archive already had, and two of them supply the forenames the censuses gave only as initials. The district is right — Shelton and Hanley are the two halves of the ground around Well Street. The identification rests on a surname, a maiden name repeated across four entries, a district and four matching ages, which is as much as an index can carry.",
+  "chipMeans": "identified from an index, not from a certificate",
+  "orderHead": "And one detail the index states plainly",
+  "order": "Elizabeth Ann was born in 1839. The marriage is 1842. The eldest child came three years before the wedding, and the registrar recorded her under her father's surname with her mother's maiden name beside it, which is exactly how the index is built to work.",
+  "careful": "What would settle it is the marriage certificate, which would give both fathers' names and occupations and carry this line back a generation on Ann's side. Against the local reference 31/03/214 it is orderable from Stoke-on-Trent rather than from the GRO.",
+  "where": "Searched 15 September 2026 at staffordshirebmd.org.uk — 391 Sneyd births and 322 Sneyd marriages, free, and never used by this archive before."
  }
 }
