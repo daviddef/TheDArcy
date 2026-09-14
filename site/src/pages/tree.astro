@@ -1,0 +1,90 @@
+---
+/* Our line, drawn.
+
+   This archive has had a picture of its line all along and never drawn it:
+   ancestors.json is an ahnentafel, a flat list numbered so that the father of
+   n is always 2n, which is a tree written sideways. The kit's chart takes the
+   nested shape; the kit's ahnen() turns one into the other.
+
+   Four generations above Kenneth, and no further, because past that the chart
+   stops being readable — 243 rows reach 24 generations in places. Where a
+   branch is cut for that reason the chart says so and says by how much. Where
+   it stops because nobody knows who comes next, it says that instead. Those
+   are not the same fact and the drawing does not pretend they are.
+
+   It starts at Kenneth rather than at the living, who are named "—" in the
+   export: three boxes of dashes before anything is said is not privacy, it is
+   just a bad opening. The living are on /direct-line/ by the same rule. */
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import AncChart from "@daviddef/archive-kit/components/AncChart.astro";
+import { ahnen } from "@daviddef/archive-kit/lib/ahnen.js";
+import { u } from "../lib/url.js";
+import ancestors from "../data/ancestors.json";
+import { byId } from "../lib/people.js";
+
+const START = 4;   // Kenneth Lindsay D'Arcy, the last generation this archive names
+const DEPTH = 4;
+
+const root = ahnen(ancestors, {
+  from: START,
+  maxGen: DEPTH,
+  /* Sources on the row, or no claim of a source. The tree asserts far more
+     than this archive has read, and the chart's job is to show which is which
+     rather than to flatter the tree. */
+  conf: (r) => (r.living ? "living" : (r.sources && r.sources.length ? "doc" : "lore")),
+  extra: (r) => ({ id: r.id }),
+});
+
+/* Only a person this archive actually built a page for gets a link. The living
+   never enter that build, so this cannot link to one. */
+const personHref = (b) => {
+  const p = b.id && byId.get(b.id);
+  return p && p.slug ? u(`/people/${p.slug}/`) : null;
+};
+
+let people = 0, doc = 0, walls = 0, doors = 0;
+(function count(x) {
+  if (!x) return;
+  if (x.wall) { x.kind === "candidate" ? doors++ : walls++; return; }
+  people++; if (x.conf === "doc") doc++;
+  count(x.f); count(x.m);
+})(root);
+---
+<Base title="Our line, drawn"
+      eyebrow={`${people} people, ${walls} walls`}
+      dek="The direct line as a chart: four generations above Kenneth Lindsay D'Arcy, with every place the line stops marked and the reason given.">
+
+  <Blk>
+    <p class="prose">The <a href={u("/direct-line/")}>spine</a> tells this line as prose, one
+    generation at a time. This is the same line as a picture, which is a different thing to
+    read: prose can carry a generation's story, but only a chart shows you at a glance how
+    quickly the branches run out.</p>
+
+    <p class="prose">They run out fast. Of the <strong>{people}</strong> people drawn here,
+    <strong>{doc}</strong> sit on a record this archive has read; the rest are the family
+    tree's word, drawn in a lighter colour and not yet tested. <strong>{walls}</strong> branches
+    end because nobody knows who comes next.</p>
+
+    {doors > 0 && (
+      <p class="prose">Another <strong>{doors}</strong> do not end at all — the chart cuts them
+      to stay readable, and each says how much is behind it. One runs seventeen generations
+      further back. That depth is the tree's claim, not this archive's finding, and the further
+      up it goes the less of it has been read.</p>
+    )}
+  </Blk>
+
+  <AncChart root={root} personHref={personHref} />
+
+  <Blk>
+    <Note>
+      <p>Living people are not drawn. The chart begins at Kenneth Lindsay D'Arcy, who died in
+      2010 and is the most recent generation this archive names; everyone below him is living
+      and appears nowhere on this site by name.</p>
+    </Note>
+    <p class="prose dim">The other lines this family joins are on <a href={u("/trees/")}>the
+    trees</a>. The Berkeley generations, which this chart cannot hold, have
+    <a href={u("/saniger-line/")}>a page of their own</a>.</p>
+  </Blk>
+</Base>

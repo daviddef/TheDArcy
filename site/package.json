@@ -13,7 +13,7 @@
     "check:living:tree": "python3 ../tools/check_living.py --dist dist"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#7c537e5",
     "astro": "^5.18.2"
   }
 }
