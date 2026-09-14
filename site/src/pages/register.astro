@@ -172,6 +172,13 @@ const pct = Math.round((reg.records / reg.entries) * 100);
       if (!q) return;
       var rows = [].slice.call(document.querySelectorAll(".rrow"));
       var groups = [].slice.call(document.querySelectorAll(".rgroup"));
+      // Haystack per row and group per row, resolved once. The group loop
+      // below used to ask the DOM to collect every unhidden row again, per
+      // group, per keystroke — the tally the row loop already has.
+      var hay = rows.map(function (r) { return r.getAttribute("data-s"); });
+      var at = new Map();
+      groups.forEach(function (g, i) { at.set(g, i); });
+      var owner = rows.map(function (r) { return at.get(r.closest(".rgroup")); });
       var count = document.getElementById("count");
       var nohits = document.getElementById("nohits");
       var chips = [].slice.call(document.querySelectorAll(".fchip"));
@@ -180,15 +187,16 @@ const pct = Math.round((reg.records / reg.entries) * 100);
       function apply() {
         var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
         var shown = 0;
-        rows.forEach(function (r) {
-          var h = r.getAttribute("data-s");
+        var live = groups.map(function () { return 0; });
+        rows.forEach(function (r, i) {
+          var h = hay[i];
           var ok = (!filter || r.getAttribute("data-k") === filter) &&
                    terms.every(function (t) { return h.indexOf(t) !== -1; });
           r.hidden = !ok;
-          if (ok) shown++;
+          if (ok) { shown++; live[owner[i]]++; }
         });
-        groups.forEach(function (g) {
-          var any = g.querySelectorAll(".rrow:not([hidden])").length;
+        groups.forEach(function (g, i) {
+          var any = live[i];
           g.hidden = any === 0;
           var gc = g.querySelector(".gcount");
           if (gc) gc.textContent = any + (any === 1 ? " entry" : " entries");
@@ -212,4 +220,21 @@ const pct = Math.round((reg.records / reg.entries) * 100);
       if (pre) { q.value = pre; apply(); }
     })();
   </script>
+<style is:global>
+  /* is:global, deliberately. A scoped <style> makes Astro stamp
+     data-astro-cid-… onto every element the page renders, and on a register
+     of 11,765 rows that added 218 bytes a row — 2.5MB onto the very page
+     whose size was the problem. The selector below is specific to this page
+     anyway. */
+  /* Only the groups on screen need laying out; every row stays in the HTML. */
+  .rgroup {
+    content-visibility: auto;
+    /* Plain length first: browsers from Chrome 85 to 110 support
+       content-visibility but cannot parse the "auto" keyword here, and
+       without a usable estimate they collapse every off-screen section
+       to nothing and the scrollbar jumps as you scroll. */
+    contain-intrinsic-size: 420px;
+    contain-intrinsic-size: auto 420px;
+  }
+</style>
 </Base>
