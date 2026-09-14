@@ -276,13 +276,13 @@
   },
   {
    "n": 28,
-   "what": "Which Ordnance series could carry a Royal Engineers commission of 1776",
-   "where": "The National Archives, Kew",
-   "cost": "an enquiry",
-   "settles": "WO 47 has been identified along with the reason nobody has found him in it. A archivist could say in a sentence whether it is worth a day.",
-   "why": "",
+   "what": "Which Ordnance series carries a Royal Engineers commission of 1776 — ANSWERED: WO 54/240",
+   "where": "The National Archives, Kew. WO 54/240, “Engineers”, 1755–1780 — the Board of Ordnance commission book, and the ONLY engineers volume in that run covering the 1770s (the next begins in 1797). Corroborate from WO 47/87 and WO 47/88, the Board's minutes for the two halves of 1776, where the decision to appoint would be minuted and dated. WO 54/939–945 holds original instruments of appointment, 1670–1885.",
+   "cost": "a visit — none of it is digitised or name-indexed",
+   "settles": "Robert D'Arcy was appointed by the BOARD OF ORDNANCE, not commissioned by the War Office and not by purchase, which is why the ordinary officer series have never held him. It would also settle 1776 against 1778: Connolly's Roll gives one date and the Army Lists another, and this archive currently prints both on different pages.",
+   "why": "THE SERIES IS NAMED AT LAST",
    "href": "/hornby",
-   "file": "notes/letters/2026-09-tna-ordnance.md"
+   "file": "ANSWERED 15 September 2026 from TNA's own guides and catalogue. Note the warning in the Board of Ordnance guide: “you cannot search this series by a person's name in our online catalogue”. WO 25/3913, Royal Engineers officers' services, IS digitised and name-indexed — but begins in 1796, so it holds him only if he was still serving."
   },
   {
    "n": 29,
@@ -347,12 +347,12 @@
   {
    "n": 35,
    "what": "British consular death registrations at Le Havre, February and March 1843",
-   "where": "The National Archives, Kew — RG 35 (Miscellaneous Foreign Returns) and RG 32-36 generally; indexed on Ancestry, not on FindMyPast",
+   "where": "The National Archives, Kew — RG 35, GRO Miscellaneous Foreign Death Returns, 1830–1921. The France run is RG 35/8–13; on dates, February–March 1843 could only fall in RG 35/8, /9, /10 or /13. The catalogue describes them only as “Part 1…Part 5” — no town, no consulate, no names. The gating finding aid is RG 43/4, Index to RG 35/1-25 Deaths, 1830–1880, which IS digitised but only through paid sites (or free onsite at Kew).",
    "cost": "a subscription or a visit",
    "settles": "Margaret Jones née D'Arcy died at Havre in February 1843 and her husband Major John Maddock Jones at Ingouville in March. A consular death registration gives an age and frequently a parentage. It is the nearest thing to a birth date for a daughter of Robert D'Arcy.",
    "why": "AN AGE FOR ONE OF ROBERT'S CHILDREN",
    "href": "/margaret-jones",
-   "file": "FindMyPast checked 14 September 2026 — it holds no consular or overseas registers at all"
+   "file": "SERIES IDENTIFIED 15 September 2026. Two honest limits: the word in the title is MISCELLANEOUS — these are returns that happened to reach the GRO, not a complete register of British deaths in France — so a negative in RG 43/4 would prove only that the death is not in RG 35, not that it went unregistered. And there is no TNA series of French consular death registers for the 1840s at all; FO 27 holds Havre consular correspondence, but it is correspondence, not a register, and is not name-indexed."
   },
   {
    "n": 36,
@@ -406,13 +406,13 @@
   },
   {
    "n": 41,
-   "what": "IR 26 — the Death Duty register behind IR 27/396, for CATHERINE D'ARCY of Brighton, 1876",
-   "where": "The National Archives, Kew",
-   "cost": "about £3.50 as a download, or a visit",
+   "what": "IR 26 — the Death Duty register behind IR 27/396, for CATHERINE D'ARCY of Brighton, 1876 — NARROWED TO SEVEN PIECES",
+   "where": "The National Archives, Kew. IR 26 runs 1796–1903 and IS catalogued to piece level for 1876. The index entry sits in IR 27/396/3 (CHO–DZ); the folio number it gives picks exactly one of the 1876 will registers for surnames C–D: IR 26/2941 (folios 1–251), /2942 (253–503), /2943 (505–749), /2944 (751–1001), /2945 (1003–1253), /2946 (1255–1445), /2947 (1447–1661). If the estate was an administration rather than a will, the 1876 intestate registers (IR 26/3390, /3392) or the succession registers (IR 26/5507–5537) instead.",
+   "cost": "a visit; none of it is digitised",
    "settles": "Catherine D'Arcy died at Bedford Square, Brighton in January 1876 leaving an estate that attracted duty. The Death Duty register states its value and names the executors and the legatees. Three unmarried sisters who outlived their brothers leave their money to nephews and nieces — which is to say, this is the document most likely to name the next generation of this family in England, including anyone descended from Joseph at Lymington.",
    "why": "THE MOST LIKELY DOCUMENT TO NAME THE ENGLISH FAMILY AFTER 1850",
    "href": "/sussex-sisters",
-   "file": "index entry found 14 September 2026; register unread"
+   "file": "NARROWED 15 September 2026. A belief worth correcting: IR 26 is often said to stop in 1857. It does not — 1857 is where the MICROFILMING stops, not the records. The registers for 1858–1903 survive as originals at Kew, unfilmed and not online, and may need advance notice to produce."
   },
   {
    "n": 42,

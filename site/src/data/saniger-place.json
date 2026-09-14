@@ -551,5 +551,49 @@
   "careful": "None of this is a line to Hannah Saniger, and none of it is offered as one. It is the history of a place and of the family that took its name, ending in daughters in 1401 and resuming in a Crown lease a century later.",
   "chipCareful": "context, not descent",
   "where": "Read 14 September 2026 in the full text of The Berkeley Manuscripts, volumes 1 and 3 (1883–1885), free on the Internet Archive. Forty-four distinct passages mention the name; the index lists it under both Swanhunger and Saniger."
+ },
+ "jeayes": {
+  "head": "The Berkeley charters themselves, itemised in 1892",
+  "lede": "Errand 51 asked for the three Berkeley Castle groupings the modern catalogue names but does not itemise. It turns out the charters were itemised long ago: Isaac Herbert Jeayes catalogued them for Lord Fitzhardinge in 1892, and the book is out of copyright and free.",
+  "chip": "documented",
+  "rows": [
+   [
+    "Temp. Henry III, 1234–64",
+    "The abbey grants the land away",
+    "“Grant from William, Abbot and the Abbey of St. Augustine's, Bristol, to Robert le Hunde, for his homage and service, of all that land at SWANHANGRE [Swanhunger, in Ham], which Reginald Buffing held. Rent, thirty shillings.” Witnessed by Sir Henry de Berkeley."
+   ],
+   [
+    "Temp. Henry III",
+    "A field beside it, and the family witnessing",
+    "“Grant from Walter de Piriton, dictus Walensis, to Alan Aug' and Agnes, his wife, of all his land called STODFOLD, NEAR SWANHUNGRE, IN THE PARISH OF BERKELEY.” Among the witnesses: THOMAS DE SWANHUNGRE, Geoffrey Neel and Nicholas Neel."
+   ],
+   [
+    "Temp. Henry III",
+    "And a fishery",
+    "“Lease from Peter le Wike to Arnulf de Berkeley for seven years, of all his land in SWANHUNGER, WITH THE FISHERY and all appurtenances, which land Reginald Luffing sometime held on lease: reserving to himself two days' fishing in the week, namely, WEDNESDAYS AND FRIDAYS.” The two fast days — the fish was for Lent and Friday, not for the market."
+   ],
+   [
+    "8 September 1278",
+    "Wanswell, next door",
+    "A grant of meadow above a fishpond at Wanswell, witnessed by THOMAS DE SWONHUNGRE — the same man, sixteen years on, still witnessing the neighbours' deeds."
+   ],
+   [
+    "25 November 1304",
+    "Ham, and a second generation",
+    "Thomas, Lord of Berkeley, grants land in Stokeshull field in Ham, witnessed by JOHN DE SWONHUNGRE and Geoffrey Neel."
+   ],
+   [
+    "Temp. Edward II",
+    "A man given away with a church",
+    "THOMAS DE SWONHUNGRE witnesses the grant of Robert, son of Ralph le Gardiner, “late his NATIVUS” — a villein, granted to the church of Berkeley with all his suit, for a silver penny a year for the light at the Holy Cross."
+   ]
+  ],
+  "peopleHead": "Three of the name, indexed as people",
+  "people": "Jeayes indexes them separately from the place: THOMA DE SWANHUNGRE or SWONHUNGRE across six charters; ELYAS DE SWONHANGRE; and JOHN DE SWONHUNGRE. Elias and John are the forenames Smyth carries down the main line two and three generations later.",
+  "trapHead": "And the same trap, in an older book",
+  "trap": "Jeayes's index reads “SANIGER, near Berkeley” and then “Swanhangre, Swanhunger, v. Saniger” and “Swonhongre v. Saniger”. A Victorian editor did exactly what the modern cataloguers do — filed the place under its living name and cross-referenced the old ones. The charters themselves never say Saniger.",
+  "chipTrap": "an index is not a transcript, in 1892 as in 2026",
+  "means": "The hamlet had a resident family witnessing Berkeley deeds by the reign of Henry III, a fishery on the Severn worth reserving two days a week, and a neighbour called Neel whose descendants Smyth still finds there three centuries later.",
+  "where": "Isaac Herbert Jeayes, Descriptive Catalogue of the Charters and Muniments in the Possession of Lord Fitzhardinge at Berkeley Castle (1892), read 15 September 2026 in the free full text on the Internet Archive."
  }
 }

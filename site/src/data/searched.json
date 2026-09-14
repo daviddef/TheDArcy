@@ -1869,6 +1869,22 @@
    "outcome": "null",
    "got": "Nothing genealogical in the two volumes reachable: one has no Sneyd at all, the other has exactly one — in the society's own list of subscribers, “Sneyd, Rev. Walter, Keele Hall, Newcastle”, a living member in the 1880s. The series runs to dozens of volumes and the pedigree material is in ones not identified here. Control: Staffordshire itself appears 90 and 49 times, so the files are sound.",
    "href": "/sneyds"
+  },
+  {
+   "src": "The National Archives — research guides and Discovery API",
+   "what": "Which series holds a Board of Ordnance engineer's commission of 1776; the piece-level arrangement of IR 26 for 1876; and the right series for a British death at Le Havre in 1843",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "WO 54/240, Engineers 1755–1780, is the only Board of Ordnance commission book covering the 1770s, with WO 47/87–88 as the minutes that would date the appointment. IR 26 runs to 1903, not 1857, and the 1876 C–D will registers are IR 26/2941–2947, chosen by the folio number in IR 27/396/3. RG 35/8–13 is the France run for foreign death returns, gated by the digitised index RG 43/4. None of the three is name-indexed free.",
+   "href": "/errands"
+  },
+  {
+   "src": "The National Archives — IR 26 after 1857",
+   "what": "Whether the Death Duty registers stop in 1857, which would make the Catherine D'Arcy errand impossible",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "They do not. 1857 is where the MICROFILMING stops — the registers themselves run 1796–1903 and the 1876 pieces are open, catalogued and held at Kew, merely unfilmed and offline. A widely repeated access boundary mistaken for a records boundary, and the errand survives it.",
+   "href": "/errands"
   }
  ]
 }
