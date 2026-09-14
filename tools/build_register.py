@@ -729,6 +729,16 @@ rec("Frank Hamilton Hyde D'Arcy", "baptism · 26 November 1868, Croydon Common S
     "record · Surrey Baptisms, Surrey History Centre 2809/1/2 p.204", "https://www.findmypast.co.uk/")
 rec("Frank Hamilton Hyde D'Arcy", "death · 1910, Chelmsford, Essex",
     "record · England, Newspaper Death Notices", "https://www.findmypast.co.uk/")
+rec("Margaret Maria Isabella D'Arcy", "marriage notice · “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — at Chatham Church, by the Rev. I. T. Jones",
+    "record · Oxford University and City Herald, 1 Nov 1806, p.2; Chester Courant, 11 Nov 1806, p.3",
+    "https://www.findmypast.co.uk/")
+rec("Robert D'Arcy", "named in November 1806 as “COL. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found anywhere giving his corps",
+    "record · Oxford University and City Herald, 1 Nov 1806, p.2", "https://www.findmypast.co.uk/")
+rec("John Maddock Jones", "marriage notice · “CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA” — married at Chatham Church by the Rev. I. T. Jones, November 1806",
+    "record · Chester Courant, 11 Nov 1806, p.3", "https://www.findmypast.co.uk/")
+rec("Joseph D'Arcy", "gazetted · Prince Regent's permission to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred by the KING OF PERSIA",
+    "record · London Gazette, 30 June 1818, in five newspapers within the week",
+    "https://www.thegazette.co.uk/")
 
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [

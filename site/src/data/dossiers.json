@@ -1115,21 +1115,6 @@
 "slug": "william-james-frazer-murdoch",
 "n": 1
 },
-"david-oliver": {
-"name": "David Oliver",
-"surname": "OLIVER",
-"rows": [
-{
-"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
-"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "david-oliver",
-"n": 1
-},
 "john-maddock-jones": {
 "name": "John Maddock Jones",
 "surname": "JONES",
@@ -1148,12 +1133,32 @@
 "says": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON” · Argus, 1 April 1843 — he died within weeks of his wife, both in Normandy",
 "source": "record · Argus, or Broad-sheet of the Empire, 1 April 1843, p.15",
 "link": "https://www.findmypast.com.au/search-newspapers"
+},
+{
+"says": "marriage notice · “CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA” — married at Chatham Church by the Rev. I. T. Jones, November 1806",
+"source": "record · Chester Courant, 11 Nov 1806, p.3",
+"link": "https://www.findmypast.co.uk/"
 }
 ],
 "inTree": false,
 "treeLink": "",
 "slug": "john-maddock-jones",
-"n": 3
+"n": 4
+},
+"david-oliver": {
+"name": "David Oliver",
+"surname": "OLIVER",
+"rows": [
+{
+"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "david-oliver",
+"n": 1
 },
 "lyddya-sinegar": {
 "name": "Lyddya Sinegar",
@@ -2337,9 +2342,9 @@
 }
 },
 "counts": {
-"named": 196,
-"withTreePage": 51,
+"named": 197,
+"withTreePage": 52,
 "ownPage": 145,
-"mentions": 341
+"mentions": 345
 }
 }

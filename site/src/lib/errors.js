@@ -3,12 +3,12 @@
 export const OWN = [
   {
     when: "15 September 2026",
-    what: "Announced the Morning Herald notice of 1843 as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”, and as the only one. A paper twenty years older had already done it.",
+    what: "Announced the Morning Herald notice of 1843 as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. Two older papers had already done it — and the second of them turned up within an hour of my correcting the first.",
     truth:
-      "The Hampshire Chronicle of Monday 24 March 1823, page 3, deaths column: “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” That is Jean Ward's death notice. It gives the rank, the corps and the station, and it corroborates Connolly's major-generalcy of 1819 from a contemporary source rather than a book of 1898.",
+      "The Hampshire Chronicle of 24 March 1823 carries Jean Ward's death: “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” And the Oxford University and City Herald of 1 November 1806 carries Margaret's own wedding: “MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — thirty-seven years before the notice I called the first, in the report of the very marriage that page is about.",
     why: "I had the find of the fortnight and reached for the strongest sentence available instead of the true one. “The only record anywhere” is a claim about every newspaper ever printed, made after searching a handful — and this one turned up in the British Newspaper Archive, which I had already been searching for other things, the very next day.",
     lesson:
-      "Say what was searched, not what exists. “The earliest this archive has found” costs nothing and cannot be falsified by tomorrow's search; “the first record anywhere” was falsified within a day.",
+      "Say what was searched, not what exists. “The earliest this archive has found” costs nothing and cannot be falsified by tomorrow's search; “the first record anywhere” was falsified twice in one day, the second time by a notice about the very event the page was built on.",
     href: "/margaret-jones",
   },
   {

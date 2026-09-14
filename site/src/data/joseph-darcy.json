@@ -14,7 +14,14 @@
  "kls": {
   "head": "And three letters after his name",
   "body": "One notice gives him as “Lieutenant Colonel D'Arcy, late Royal Artillery, K.L.S.” — Knight of the Royal Order of the Lion and Sun, a Persian decoration. It was given to British officers who served on the missions to the Shah's army in the 1810s and 1820s.",
-  "careful": "This archive has not yet traced his Persian service, and will not assert it from three letters. What the letters establish is that he held a foreign order, which for a Royal Artillery officer of that generation points one way."
+  "careful": "This archive has not yet traced his Persian service, and will not assert it from three letters. What the letters establish is that he held a foreign order, which for a Royal Artillery officer of that generation points one way.",
+  "gazetted": {
+   "head": "And the decoration is now gazetted, not inferred",
+   "text": "“The Prince Regent has given permission to LIEUT.-COL. D'ARCY to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred on him by the KING OF PERSIA; but not to assume any style, appellation, rank, precedence …”",
+   "src": "London Gazette, Tuesday 30 June 1818 — carried within the week by the London Moderator (1 July), the Mirror of the Times (4 July), the Englishman and Johnson's Sunday Monitor (5 July) and the Maidstone Journal (7 July).",
+   "means": "This page said the archive “has not yet traced his Persian service, and will not assert it from three letters after his name”. It is traced. The three letters are a Crown grant of permission, published in the official gazette, and they date the service to before the middle of 1818 — which fits the obituary's five years with Abbas Mirza and the newspaper reports of English officers wintering with the Prince's newly raised corps, carried in the Hampshire Chronicle as early as October 1812.",
+   "chip": "documented"
+  }
  },
  "career": [
   [

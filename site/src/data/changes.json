@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "23 passes · 260 changes",
+ "eyebrow": "23 passes · 263 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -14,7 +14,10 @@
     "FRANK HYDE D'ARCY died at Worcester on 15 June 1868, aged twenty-nine, five years after his Lymington wedding, and was brought home to be buried at Pennington.",
     "And a grandson: FRANK HAMILTON HYDE D'ARCY, baptised at Croydon Common on 26 November 1868 — FIVE MONTHS AFTER HIS FATHER DIED — father entered as “Gentleman”, mother Anna Maria, of St James Road. He died at Chelmsford in 1910.",
     "FOUND JEAN WARD'S DEATH NOTICE: Hampshire Chronicle, 24 March 1823 — “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.”",
-    "WITHDREW A CLAIM MADE THE DAY BEFORE. /margaret-jones announced the 1843 notice as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. The 1823 notice does it twenty years earlier. Filed as an error, and the page now carries the correction above the claim."
+    "WITHDREW A CLAIM MADE THE DAY BEFORE. /margaret-jones announced the 1843 notice as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. The 1823 notice does it twenty years earlier. Filed as an error, and the page now carries the correction above the claim.",
+    "FOUND THE 1806 MARRIAGE NOTICE: “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — Oxford University and City Herald, 1 November 1806. The Chester Courant adds the church and the officiant.",
+    "Which disproved the correction made an hour earlier. The corps is on record in 1806, not 1823 and not 1843 — and the 1806 notice is the report of the very marriage the /margaret-jones page was built around. It also fixes Margaret as the ELDEST DAUGHTER.",
+    "DOCUMENTED JOSEPH D'ARCY'S PERSIAN DECORATION from the London Gazette of 30 June 1818: the Prince Regent's permission to wear the Second Class of the Imperial Order of the Lion and Sun, conferred by the King of Persia. Five papers carried it within the week. The page that said the archive “will not assert it from three letters after his name” now cites the grant."
    ],
    "found": [
     [
@@ -32,6 +35,14 @@
     [
      "Filed",
      "/what-we-got-wrong — own error 27, on the difference between “the earliest found” and “the first anywhere”"
+    ],
+    [
+     "Added",
+     "/the-corps — “Col. D'Arcy, of the Royal Engineers”, November 1806"
+    ],
+    [
+     "Added",
+     "/joseph-darcy — the Lion and Sun, gazetted rather than inferred"
     ]
    ]
   },

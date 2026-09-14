@@ -14,8 +14,12 @@ import d from "../data/margaret-jones.json";
     <div class="note" style="border-left-width:3px;margin-bottom:0">
       <strong>{d.superseded.head}.</strong> {d.superseded.body}
       <br /><br />
+      <strong style="font-size:1.08em">{d.superseded.quote}</strong>
+      <br /><br />
+      <span class="small">{d.superseded.papers}</span>
+      <br /><br />
       {d.superseded.what} <span class="chip lore">{d.superseded.chip}</span>
-      {" "}<a href={u("/the-corps/")}>The 1823 notice →</a>
+      {" "}<a href={u("/the-corps/")}>Both earlier notices →</a>
     </div>
   </section>
 

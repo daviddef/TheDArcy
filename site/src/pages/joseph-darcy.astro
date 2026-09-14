@@ -58,8 +58,17 @@ import d from "../data/joseph-darcy.json";
     <div class="lab">K.L.S.</div>
     <h2 style="margin-top:.4rem">{d.kls.head}</h2>
     <p class="lede">{d.kls.body}</p>
-    <div class="note" style="margin-top:1.2rem">{d.kls.careful}
-      <span class="chip inf">a decoration, not yet a posting</span></div>
+    <div class="note" style="border-left-width:3px;margin-top:1.2rem">
+      <strong>{d.kls.gazetted.head}.</strong>
+      <br /><br />
+      <strong style="font-size:1.08em">{d.kls.gazetted.text}</strong>
+      <br /><br />
+      <span class="small">{d.kls.gazetted.src}</span>
+      <span class="chip doc">{d.kls.gazetted.chip}</span>
+    </div>
+    <div class="note" style="margin-top:1.2rem">{d.kls.gazetted.means}</div>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">What this page said until
+      15 September 2026: {d.kls.careful}</p>
   </section>
 
   <section class="blk">

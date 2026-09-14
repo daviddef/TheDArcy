@@ -1,10 +1,10 @@
 {
-"entries": 814,
+"entries": 818,
 "distinct": 570,
-"records": 341,
+"records": 345,
 "tree": 473,
 "grafted": 98,
-"linked": 814,
+"linked": 818,
 "surnames": 194,
 "groups": [
 {
@@ -1177,7 +1177,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 139,
+"n": 142,
 "rows": [
 {
 "name": "Catherine D'Arcy",
@@ -1509,6 +1509,13 @@
 "kind": "record"
 },
 {
+"name": "Joseph D'Arcy",
+"says": "gazetted · Prince Regent's permission to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred by the KING OF PERSIA",
+"source": "record · London Gazette, 30 June 1818, in five newspapers within the week",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
 "name": "Joseph William D'Arcy",
 "says": "baptism · 6 July 1841, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
 "source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
@@ -1541,6 +1548,13 @@
 "says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
 "source": "record · Trove, Australian newspapers",
 "link": "https://nla.gov.au/nla.news-article37013266",
+"kind": "record"
+},
+{
+"name": "Margaret Maria Isabella D'Arcy",
+"says": "marriage notice · “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — at Chatham Church, by the Rev. I. T. Jones",
+"source": "record · Oxford University and City Herald, 1 Nov 1806, p.2; Chester Courant, 11 Nov 1806, p.3",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1680,6 +1694,13 @@
 "name": "Robert D'Arcy",
 "says": "described in March 1823 as “MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found naming his corps",
 "source": "record · Hampshire Chronicle, 24 March 1823, p.3",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "named in November 1806 as “COL. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found anywhere giving his corps",
+"source": "record · Oxford University and City Herald, 1 Nov 1806, p.2",
 "link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
@@ -3853,6 +3874,54 @@
 ]
 },
 {
+"surname": "JONES",
+"n": 6,
+"rows": [
+{
+"name": "John Maddock Jones",
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
+"source": "record · TNA PROB 11/1991/312",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON” · Argus, 1 April 1843 — he died within weeks of his wife, both in Normandy",
+"source": "record · Argus, or Broad-sheet of the Empire, 1 April 1843, p.15",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "marriage notice · “CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA” — married at Chatham Church by the Rev. I. T. Jones, November 1806",
+"source": "record · Chester Courant, 11 Nov 1806, p.3",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Lydia Jones",
+"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/lydia-jones",
+"kind": "tree"
+},
+{
+"name": "William Jones",
+"says": "b. 1722 · Brimpsfield, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-jones",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "OLIVER",
 "n": 6,
 "rows": [
@@ -3937,47 +4006,6 @@
 "says": "b. 1832 · Ballymodan, Bandon, Cor, Ireland",
 "source": "family tree",
 "link": "/people/william-creech",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "JONES",
-"n": 5,
-"rows": [
-{
-"name": "John Maddock Jones",
-"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "John Maddock Jones",
-"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
-"source": "record · TNA PROB 11/1991/312",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "John Maddock Jones",
-"says": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON” · Argus, 1 April 1843 — he died within weeks of his wife, both in Normandy",
-"source": "record · Argus, or Broad-sheet of the Empire, 1 April 1843, p.15",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Lydia Jones",
-"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/lydia-jones",
-"kind": "tree"
-},
-{
-"name": "William Jones",
-"says": "b. 1722 · Brimpsfield, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-jones",
 "kind": "tree"
 }
 ]
