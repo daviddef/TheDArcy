@@ -300,5 +300,79 @@
    "a coroner's inquest. “Casual death. Epileptic, suffocated. Lodgings paid for by Berkeley parish.”"
   ]
  ],
- "minchinhampton": "Bigland found a second family under the -gear spelling twenty miles away, at Minchinhampton: Mary, daughter of William Sanigear, d. 24 Feb 1759; William their son, d. 14 July 1760; and Sarah, wife of [William] Sanigear and daughter of Thomas and Ann Lawton, d. 14 June 1770, aged 34."
+ "minchinhampton": "Bigland found a second family under the -gear spelling twenty miles away, at Minchinhampton: Mary, daughter of William Sanigear, d. 24 Feb 1759; William their son, d. 14 July 1760; and Sarah, wife of [William] Sanigear and daughter of Thomas and Ann Lawton, d. 14 June 1770, aged 34.",
+ "smyth": {
+  "head": "The steward of Berkeley says it himself, in 1639",
+  "lede": "This archive argued from deeds that Saniger is a worn-down Swanhanger. It did not need to argue. John Smyth of Nibley, steward of the Berkeley estates, wrote the survey of the hundred in about 1639, and gave the hamlet its own heading.",
+  "quote": "Swonhunger; corruptly called Saniger.",
+  "quoteSrc": "A Description of the Hundred of Berkeley, folio 365 — printed 1885 as volume 3 of The Berkeley Manuscripts",
+  "chip": "documented",
+  "means": "The hamlet is no longer just a place name with deeds attached. It has thirteen houses, a resident family in five named generations, a freeholder in 1541 dealing with a baron's manor, and a trustee holding land for other men.",
+  "hamlet": {
+   "head": "Thirteen houses",
+   "body": "Smyth describes the place exactly: “a small hamblet parcell of that Manor of Hame, lyinge within the ffalloe therof, confiftinge of 13. dwellinge houfes; The moft eminent wherof is the inheritance of John Swonhunger ats Sanyger.”",
+   "means": "Thirteen houses, inside the manor of Hame, inside the parish of Berkeley. The manor's other hamlets are listed alongside it — “Wike ats Wikes-elme, Wanefwell, Swonhunger ats Saniger, Halmer ats Ecton, and Egeton: All of them within the parifh of Berkeley”. Halmer is HALMORE, where the 1608 muster puts John Saniger, labourer.",
+   "split": "The hamlet straddled two manors, which is why the 1608 survey files it under Hinton: Smyth lists the manor of Hinton as holding “part of Swonhunger, ats Saniger”, along with Oldminster, Kingshill and Ridlesford."
+  },
+  "pedigree": {
+   "head": "Five generations, named",
+   "body": "Smyth then does the thing this archive has wanted from every source it has opened. He names the owner and walks back up the male line:",
+   "quote": "And the faid John Swonhunger ats Saniger that nowe is, a° 1639, is fonne of John who died, fonne of Maurice who died, fonne of Robert who died, fonne of William who died.",
+   "rows": [
+    [
+     "John Swonhunger als Saniger",
+     "holding in 1639",
+     "“the moft eminent” house in the hamlet; held of the manor of Hame by knight service, suit of court, and rent of 6s to Hame and 12d to Hinton"
+    ],
+    [
+     "John",
+     "his father",
+     "died; no date given"
+    ],
+    [
+     "Maurice",
+     "grandfather",
+     "died; no date given"
+    ],
+    [
+     "Robert",
+     "great-grandfather",
+     "died; no date given"
+    ],
+    [
+     "William",
+     "great-great-grandfather",
+     "died; no date given — the lands were bought from Thomas Lewes als Davis by deeds of 10, 12 and 14 Henry VIII, which is 1518–1523"
+    ]
+   ],
+   "chip": "documented",
+   "means": "Four generations above a man living in 1639, in a named place, with the tenure and the rents. Smyth gives no dates for the four, but he dates the purchase of the land to 1518–1523, which puts William in the reign of Henry VIII.",
+   "careful": "This is a freeholding family, and that matters when reading it against the muster. In 1608 the hamlet also held JOHN SAINGER, weaver — a man of the same name in the same thirteen houses, and not necessarily of the same house."
+  },
+  "senior": {
+   "head": "And the older line, which ended in a daughter",
+   "body": "The Swonhungers of 1639 were, in Smyth's words, “a yonger branch difcended from the ancient old owners”. The senior line is traceable much further and ended much earlier: Elias Swonhunger, then Elias his son who died in 13 Richard II, then John Swonhungre, who “died without iffue in 3. H. 4.” — 1401 or 1402 — leaving his sisters Isable and Elizabeth his heirs. Isable married John Thorpe, and the main estate went into the name of Thorpe for two hundred years.",
+   "earlier": "Earlier still the name is a witness name in the Berkeley deeds: Thomas de Swonhungre attests charters of Thomas Lord Berkeley under the third Edward, and William Swonhungre appears in 1353 as “cofyn et vn des heires” of Thomas de Stone.",
+   "chip": "documented"
+  },
+  "two": {
+   "head": "Two more men of the name, with dates",
+   "rows": [
+    [
+     "Robert Saniger",
+     "1541–2",
+     "Party to a quadripartite indenture of 33 Henry VIII with Richard Hickes and Thomas Griffith, buying a manor from William Lord Stourton — “then inrolled in the Chancery”. He later sold his part to William Laverance als Lawrance."
+    ],
+    [
+     "John Saniger of Saniger",
+     "early 17th century",
+     "Named as one of three trustees — with Mathewe Smyth of Wanswell and Robert Atkins of Newport — in the sale of “almoft all the faid ffarmes and lands”, granting them on to particular lessees “according to the truft repofed in them”."
+    ]
+   ],
+   "chip": "documented"
+  },
+  "careful": "And it still does not reach Hannah. Nothing here connects the Swonhungers of the hamlet to the weavers and labourers of Cam and Dursley, or to the woman baptised at Berkeley in 1804. The gap is unbridged, and this does not bridge it — it only makes clear what the name was attached to before it was a surname in a register.",
+  "chipCareful": "context, not descent",
+  "where": "Read 14 September 2026 in the full text of the 1885 edition on the Internet Archive (berkeleymanuscri03smyt), which is out of copyright and downloads freely. Smyth's index carries about twenty-five further page references under “Swanhunger” that have not yet been read."
+ }
 }

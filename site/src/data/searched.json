@@ -1733,6 +1733,14 @@
    "outcome": "blocked",
    "got": "Answered in one day and declined: the office does not offer a research service of any kind. It named two routes instead — the Gloucestershire Family History Society, whose volunteers do lookups, and Ancestry, which holds the filmed county registers with marriages and banns to 1938. The record is not unreachable; this door is.",
    "href": "/errands"
+  },
+  {
+   "src": "Smyth, A Description of the Hundred of Berkeley (c.1639, printed 1885)",
+   "what": "The full text of volume 3 of The Berkeley Manuscripts, for Saniger, Sanyger, Swanhanger, Swonhungre and every OCR-plausible variant",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Fourteen occurrences of Saniger, three of Sanyger, eight of Swonhungre. Smyth heads the hamlet “Swonhunger; corruptly called Saniger”, describes it as thirteen dwelling houses in the manor of Hame, and gives its owner in 1639 with four generations of male ancestors — John, son of John, son of Maurice, son of Robert, son of William. Also Robert Saniger buying a manor in 1541 and John Saniger of Saniger acting as a trustee. Control: Berkeley 1,497 hits, Hinton 53, Nibley 73 in the same file.",
+   "href": "/saniger-place"
   }
  ]
 }

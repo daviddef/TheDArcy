@@ -239,6 +239,75 @@ import d from "../data/saniger-place.json";
     </Note>
   </Blk>
 
+  <section class="blk">
+    <div class="lab">John Smyth of Nibley, about 1639</div>
+    <h2 style="margin-top:.4rem">{d.smyth.head}</h2>
+
+    <p class="lede">{d.smyth.lede}</p>
+
+    <div class="note" style="border-left-width:3px;margin-top:1.3rem">
+      <strong style="font-size:1.2em">{d.smyth.quote}</strong>
+      <br /><br />
+      <span class="small">{d.smyth.quoteSrc}</span>
+      <span class="chip doc">{d.smyth.chip}</span>
+    </div>
+    <p style="margin-top:1.1rem">{d.smyth.means}</p>
+
+    <h3 style="margin-top:1.8rem">{d.smyth.hamlet.head}</h3>
+    <p>{d.smyth.hamlet.body}</p>
+    <div class="note" style="margin-top:1.1rem">{d.smyth.hamlet.means}</div>
+    <p class="small" style="margin-top:1rem">{d.smyth.hamlet.split}</p>
+
+    <h3 style="margin-top:1.8rem">{d.smyth.pedigree.head}</h3>
+    <p>{d.smyth.pedigree.body}</p>
+    <div class="note" style="border-left-width:3px;margin-top:1.1rem">
+      <strong>{d.smyth.pedigree.quote}</strong>
+      <span class="chip doc">{d.smyth.pedigree.chip}</span>
+    </div>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Name</th><th>Standing</th><th>What Smyth gives</th></tr></thead>
+        <tbody>
+          {d.smyth.pedigree.rows.map(([who, rel, what]) => (
+            <tr><td><strong>{who}</strong></td><td class="small">{rel}</td>
+                <td class="small">{what}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:1.1rem">{d.smyth.pedigree.means}</p>
+    <div class="note" style="margin-top:1.1rem">
+      <strong>Read it against the muster.</strong> {d.smyth.pedigree.careful}
+      {" "}<a href={u("/saniger-1608/")}>The eleven men of 1608 →</a>
+    </div>
+
+    <h3 style="margin-top:1.8rem">{d.smyth.senior.head}</h3>
+    <p>{d.smyth.senior.body}</p>
+    <p class="small" style="margin-top:1rem">{d.smyth.senior.earlier}
+      {" "}<span class="chip doc">{d.smyth.senior.chip}</span></p>
+
+    <h3 style="margin-top:1.8rem">{d.smyth.two.head}</h3>
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <tbody>
+          {d.smyth.two.rows.map(([who, when, what]) => (
+            <tr><td><strong>{who}</strong><div class="small" style="color:var(--ink-3)">{when}</div></td>
+                <td class="small">{what}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="border-left-width:3px;margin-top:1.4rem">
+      {d.smyth.means} <span class="chip doc">documented</span>
+    </div>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And what is not claimed.</strong> {d.smyth.careful}
+      {" "}<span class="chip inf">{d.smyth.chipCareful}</span>
+    </div>
+    <p class="small" style="margin-top:1.1rem;color:var(--ink-3)">{d.smyth.where}</p>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>What this changes, and what it does not</h2>
     <ol class="dek">
