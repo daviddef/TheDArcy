@@ -1725,6 +1725,14 @@
    "outcome": "blocked",
    "got": "A lending item: the full text returns HTTP 401 and the search-inside endpoints are retired. Reading it would need an Archive.org account and a loan. The 1902 edition's transcript at coaley.net answered instead.",
    "href": "/saniger-1608"
+  },
+  {
+   "src": "Gloucestershire Archives — direct enquiry",
+   "what": "A register lookup: the marriage of John Saniger and Lydia at Berkeley St Mary the Virgin, c.1795–1800, and confirmation of Hannah Sanigor's baptism of 18 August 1804",
+   "when": "14 Sep 2026",
+   "outcome": "blocked",
+   "got": "Answered in one day and declined: the office does not offer a research service of any kind. It named two routes instead — the Gloucestershire Family History Society, whose volunteers do lookups, and Ancestry, which holds the filmed county registers with marriages and banns to 1938. The record is not unreachable; this door is.",
+   "href": "/errands"
   }
  ]
 }

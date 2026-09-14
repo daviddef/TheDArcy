@@ -298,6 +298,33 @@
    "verdict": "unusable",
    "note": "The category filter mangles to `life-events-bmds` in the URL and the search then returns zero whatever else is asked, while the same query without it returns results. The third broken FindMyPast parameter found in two days, after yearofbirth+keywordsplace on the census and the Find a Grave locationId.",
    "href": "/searched"
+  },
+  {
+   "db": "Men & Armour, 1608 (coaley.net transcript)",
+   "where": "the whole of Gloucestershire, by hundred, manor and tithing",
+   "holds": "nearly every man aged 16–60 in the county, with trade, age-decade and stature",
+   "span": "1608",
+   "verdict": "good",
+   "note": "Searched 14 September 2026 for all seventeen spellings this archive held, then exhaustively by word-ending (-gar, -gear, -ger, -gor, -gre). Eleven men of the surname, in four spellings, two of them new. Control: 676 men returned for Dursley, 42 for Halmore.",
+   "href": "/saniger-1608"
+  },
+  {
+   "db": "Men & Armour, 1608 (coaley.net transcript)",
+   "where": "any surname search ending in an asterisk",
+   "holds": "everything — and returns nothing",
+   "span": "—",
+   "verdict": "unusable",
+   "note": "A wildcard at the END of a term silently matches nothing: `Sanige*` returns no matches while `Saniger` returns five. A wildcard at the START works — `*niger` returns seven. The fourth broken search parameter this archive has caught by control test, after two on FindMyPast and Find a Grave's locationId.",
+   "href": "/saniger-1608"
+  },
+  {
+   "db": "Men & Armour, 1608 (coaley.net transcript)",
+   "where": "any search returning exactly one record",
+   "holds": "the record — but not in digits",
+   "span": "—",
+   "verdict": "unusable",
+   "note": "A single hit is reported as “There is one match”, spelling the number as a word; two or more are reported in digits. A reader or script looking for a numeral sees nothing and files a zero. This hid JOHN SAINGER — the one man living inside the hamlet the surname comes from — on the first pass of the search that found him, and he was recovered only because a search by PLACE returned him and contradicted the null.",
+   "href": "/saniger-1608"
   }
  ]
 }

@@ -6,13 +6,13 @@
  "rows": [
   {
    "n": 1,
-   "what": "The marriage of John Saniger and Lydia, Berkeley, about 1797 — ENQUIRY SENT",
-   "where": "Gloucestershire Archives, archives@gloucestershire.gov.uk — written to 13 September 2026, awaiting reply",
-   "cost": "a subscription or a visit",
+   "what": "The marriage of John Saniger and Lydia, Berkeley, about 1797 — ANSWERED, and they do not do lookups",
+   "where": "Gloucestershire Archives replied 14 September 2026. Andrew Parry, Senior Archives Assistant: “I'm afraid we don't offer any kind of research service.” He gives two routes instead — the Gloucestershire Family History Society (gfhs.org.uk), whose volunteers do lookups, and Ancestry, which holds the filmed Gloucestershire registers with marriages and banns to 1938. Free access is available at a Gloucestershire library or through GFHS.",
+   "cost": "a GFHS enquiry, or an Ancestry subscription",
    "settles": "Hannah's mother's surname. The FamilySearch shared tree calls her LYDIA JONES and dates the marriage to 1797 at Berkeley, but attaches no record to either claim — John Saniger's profile there carries fourteen sources and every one is a baptism. A Berkeley marriage entry of 1797 would name her, and would settle whether the Lyddya Sinegar aged seventy in Hannah's house in 1841 is her mother.",
    "why": "THE LAST UNNAMED PERSON IN THE DIRECT ENGLISH LINE",
    "href": "/hannah-baptism",
-   "file": "ENQUIRY SENT 13 September 2026. Asked for the bride's full name, the date, and whether the entry gives fathers, occupations, abodes or witnesses; also for confirmation of Hannah Sanigor's baptism of 18 August 1804 against the family record's 23 July 1805. The letter lists the eighteen spellings of the surname found so far, because twice now a spelling has been the thing hiding a record."
+   "file": "ENQUIRY SENT 13 September 2026, ANSWERED 14 September 2026. The archive office cannot be asked to read a register. The entry is still there and still reachable — the door changed, not the record. The next move is GFHS, drafted and waiting to be sent."
   },
   {
    "n": 2,
@@ -306,13 +306,13 @@
   },
   {
    "n": 31,
-   "what": "Smyth of Nibley, Men and Armour for Gloucestershire, 1608",
-   "where": "Gloucestershire Archives; reprinted 1902 and 1980",
+   "what": "Smyth of Nibley, Men and Armour for Gloucestershire, 1608 — DONE, and it gave eleven men",
+   "where": "Read 14 September 2026 in the online transcript of the 1902 edition at coaley.net/glos1608. The 1980 facsimile on the Internet Archive is a lending item and returns HTTP 401 without an account.",
    "cost": "a library, or a secondhand copy",
-   "settles": "Whether there were Sanigers at Saniger in 1608, and what they did for a living. The muster lists every able-bodied man in the Berkeley hundred by tithing, with age bracket and trade. It would sit exactly in the gap between John Saniger the yeoman of 1601 and Edward Saniger the clothier of 1692. No scanned copy could be reached from here.",
-   "why": "",
-   "href": "/saniger-place",
-   "file": "searched for and not found online, 13 September 2026"
+   "settles": "Eleven men of the surname in four spellings — Saniger (5), Sanyger (3), Syniger (2), Sainger (1). One of them, JOHN SAINGER, weaver, is mustered inside the hamlet itself, which the survey writes as “Saniger [in Hinton parish, Berkeley]”. Two of the four spellings were not among the seventeen this archive held. Every 1608 form ends -GER, which dates the -GAR forms of the later registers as late rather than old.",
+   "why": "THE SURNAME, DOCUMENTED TWO CENTURIES BEFORE THE REGISTERS",
+   "href": "/saniger-1608",
+   "file": "DONE 14 September 2026. No descent is claimed: nothing links these eleven to Hannah Saniger. What it gives is the surname's home ground and its trades."
   },
   {
    "n": 32,
@@ -483,6 +483,16 @@
    "why": "THE LAST OF GEORGE PITT D'ARCY'S CHILDREN UNACCOUNTED FOR",
    "href": "/chatham",
    "file": "candidate found 15 September 2026"
+  },
+  {
+   "n": 49,
+   "what": "Gloucestershire Family History Society — the lookup Gloucestershire Archives cannot do",
+   "where": "gfhs.org.uk/contact-us — recommended by name by Gloucestershire Archives on 14 September 2026. Volunteer lookups; membership is modest and gives access to their own indexes.",
+   "cost": "membership, or a volunteer's goodwill",
+   "settles": "The marriage of JOHN SANIGER and LYDIA at Berkeley, about 1797, and with it the surname of the last unnamed person in the direct English line. The same enquiry can carry the second question: whether Berkeley's register supports Hannah Sanigor's baptism of 18 August 1804 against the family record's 23 July 1805.",
+   "why": "THE ROUTE THE COUNTY ARCHIVE ITSELF POINTED TO",
+   "href": "/hannah-baptism",
+   "file": "Drafted and not sent — sending mail is David's call. The letter should carry the eighteen spellings found so far, because twice now a spelling has been the thing hiding a record, and a third time in 1608."
   }
  ],
  "ydna": {

@@ -193,20 +193,25 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
     holds <strong>five</strong>, and cannot hold more, because its transcript stops in 1677.</p>
   </section>
 
-  <Blk label="Seventeen, not eleven" title="How this name is actually spelled">
+  <Blk label="Nineteen, not eleven" title="How this name is actually spelled">
     <p>The <a href={u("/berkeley/")}>Berkeley page</a> lists eleven spellings. Reading all
     {c.records} records gives <strong>seventeen</strong> with three or more occurrences, and the
-    commonest is not the one the family uses.</p>
+    commonest is not the one the family uses. Two more came from outside the registers
+    altogether — SANYGER and SYNIGER, carried by five of the eleven men in the
+    <a href={u("/saniger-1608/")}>muster of 1608</a> and by nobody since. They are shown with a
+    count of nought because that is what they have here: nineteen forms to search, seventeen to
+    count.</p>
     <Scroll>
       <table>
         <thead><tr><th>Spelling</th><th class="m">Occurrences</th></tr></thead>
         <tbody>{d.spellings.map(([s, n]) => (
           <tr><td class="mono">{s}</td><td class="m">{n}</td>
               <td>{s === "SANIGER" && <span class="chip inf">the form this archive uses</span>}
-                  {s === "SINNEGAR" && <span class="chip doc">the commonest in the registers</span>}</td></tr>))}</tbody>
+                  {s === "SINNEGAR" && <span class="chip doc">the commonest in the registers</span>}
+                  {n === 0 && <span class="chip lore">1608 only — not in any register here</span>}</td></tr>))}</tbody>
       </table>
     </Scroll>
-    <p class="small" style="margin-top:1rem">All seventeen are now folded together by this site's own
+    <p class="small" style="margin-top:1rem">All nineteen are now folded together by this site's own
     search, so any one of them finds the rest. <a href={u("/search/")}>Try it →</a></p>
   </Blk>
 
