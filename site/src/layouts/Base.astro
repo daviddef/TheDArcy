@@ -8,7 +8,7 @@ import ring from "@daviddef/archive-kit/data/archives.json";
 const { title, description = "", dek, eyebrow, bare } = Astro.props;
 const SITE = "The D'Arcy Archive";
 const nav = [
-  ["Start", [["/trees/", "The Trees"], ["/", "Home"], ["/search", "Search"], ["/how-far-back", "How Far Back"], ["/dna", "What the DNA Says"], ["/timeline", "Timeline"], ["/about", "About"], ["/the-other-archives", "The Other Archives"]]],
+  ["Start", [["/trees/", "The trees"], ["/", "Home"], ["/search", "Search"], ["/how-far-back", "How Far Back"], ["/dna", "What the DNA Says"], ["/timeline", "Timeline"], ["/about", "About"], ["/the-other-archives", "The Other Archives"]]],
   ["Our line", [["/direct-line", "The Spine"], ["/saniger-line", "Six Generations at Berkeley"], ["/jean-ward", "South Leith"], ["/new-generations", "Not in the Tree"], ["/hornby", "The Hornby Claim"], ["/name", "The Name"]]],
   ["The families", [["/families", "The Families"], ["/the-women", "The Women"], ["/households", "Households"], ["/marriages", "Marriages"], ["/sneyd", "Sneyd"], ["/sergeant-sneyd", "Sergeant Sneyd"], ["/murdoch", "Murdoch"], ["/atkinson", "Atkinson"]]],
   ["The D'Arcys", [["/robert-family", "Robert and Jean's Family"], ["/the-corps", "The Corps — Robert's Career"], ["/obituary", "The Obituary, 1827"], ["/joseph-darcy", "Joseph D'Arcy, R.A."], ["/margaret-jones", "Daughter of the Major-General"], ["/constantine", "Constantine, Nineteen"], ["/sussex-sisters", "The Sussex Sisters"], ["/george-pitt", "Miss Ludlam of Guernsey"], ["/chatham", "Chatham — the Corps' Parish"], ["/portsea", "Two Years of Portsea"]]],
@@ -16,7 +16,7 @@ const nav = [
   ["Bristol and the Potteries", [["/wakefields", "The Wakefields"], ["/drivers-fields", "Drivers Fields, 1841"], ["/bristol-chapels", "The Bristol Chapels"], ["/sneyds", "The Sneyds of the Potteries"]]],
   ["Leaving", [["/emigrations", "How They Got Here"], ["/general-hewitt", "The General Hewitt, 1854"], ["/australia", "Arrival, 1826"], ["/brisbane", "Brisbane"], ["/great-war", "The Great War"]]],
   ["People & places", [["/people", "The People"], ["/who", "Every Person Named"], ["/register", "The Register"], ["/search", "Search"], ["/places", "Places"], ["/graves", "Graves and Burials"]]],
-  ["Evidence", [["/documents", "Documents"], ["/gallery", "Gallery"], ["/papers", "The Papers"], ["/inquest-1902", "The Inquest, 1902"], ["/finding-arthur", "The Search for Arthur"], ["/sources", "Sources"], ["/coverage", "What the Indexes Hold"], ["/searched", "What Has Been Read"], ["/behind-the-paywall", "Behind the Paywall"], ["/changes", "What Changed"], ["/errands", "Errands"], ["/open-questions", "Open Questions"], ["/crossread", "Reading the Archive Against Itself"], ["/what-we-got-wrong", "What We Got Wrong"], ["/method", "Method"]]],
+  ["Evidence", [["/documents", "Documents"], ["/gallery", "Gallery"], ["/papers", "The Papers"], ["/inquest-1902", "The Inquest, 1902"], ["/finding-arthur", "The Search for Arthur"], ["/sources", "Sources"], ["/coverage", "What the Indexes Hold"], ["/searched", "What Has Been Read"], ["/behind-the-paywall", "Behind the Paywall"], ["/changes", "What Changed"], ["/errands", "Errands"], ["/open-questions", "Open Questions"], ["/crossread", "Reading the Archive Against Itself"], ["/what-we-got-wrong", "What We Got Wrong"], ["/method", "Method"]]]
 ];
 const here = Astro.url.pathname.replace(/\/$/, "");
 const on = (h) => here === u(h).replace(/\/$/, "");
