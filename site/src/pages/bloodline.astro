@@ -1,0 +1,42 @@
+---
+/* The 243 ancestors this archive numbers by ahnentafel, drawn. Person n's
+   father is 2n and their mother 2n+1, so every link here is arithmetic — there
+   is no name-matching anywhere in it. */
+import Base from "../layouts/Base.astro";
+import Bloodline from "@daviddef/archive-kit/components/Bloodline.astro";
+import { graph, components, fromAhnentafel } from "@daviddef/archive-kit/lib/bloodline.js";
+import "@daviddef/archive-kit/styles/bloodline.css";
+import raw from "../data/ancestors.json";
+
+const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isArray(v)) || [];
+/* The living are left out of this chart entirely.
+
+   Six archives name the living and nothing more; this one does not publish them
+   at all, and that is its own declared rule rather than an oversight. The five
+   living people it does name are listed in living.json with a reason and a
+   confirmation date each — a consent record, not a convenience — and a
+   chart is not the place to widen that list quietly.
+   
+   The line therefore stops at the last person the archive publishes, and says
+   so. Adding somebody to it is a decision for whoever keeps the archive. */
+const rows = all.filter((r) => !r.living);
+const withheld = all.length - rows.length;
+const people = graph(fromAhnentafel(rows));
+const comps = components(people);
+const shape = (s) => {
+  const p = people[s];
+  return (p.parents.length ? 1000 : 0) + (p.children.length ? 1000 : 0) + p.parents.length + p.children.length;
+};
+const start = comps[0] ? [...comps[0]].sort((a, b) => shape(b) - shape(a))[0] : null;
+---
+<Base
+  title="Blood relatives"
+  eyebrow={`${Object.keys(people).length} ancestors, joined by the numbering itself`}
+  dek="Choose a person and the chart is built around them. These links come out of the ahnentafel — the father of number n is number 2n — so not one of them rests on two people sharing a name.">
+  <Bloodline people={people} start={start} total={rows.length} />
+  {withheld > 0 && (
+    <p class="cap" style="margin-top:14px">{withheld} living {withheld === 1 ? "person is" : "people are"} left
+      out of this chart. This archive does not publish the living at all — the few it names are
+      listed with a reason and a date each — so the line stops at the last person it publishes.</p>
+  )}
+</Base>

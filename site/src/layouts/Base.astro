@@ -1,5 +1,8 @@
 ---
 import "@daviddef/archive-kit/styles/print.css";
+import { versioner } from "@daviddef/archive-kit/lib/assetv.js";
+/* every public asset gets a fingerprint, so a fix is never served stale */
+const v = versioner();
 import { u } from "../lib/url.js";
 import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
@@ -17,7 +20,7 @@ const nav = [
   ["The Sanigers", [["/hannah-baptism", "One Vowel — Hannah's Baptism"], ["/berkeley-woman", "Hannah Was a Berkeley Woman"], ["/thomas-sinegar", "Thomas Sinegar — Her Brother"], ["/berkeley", "Berkeley, Gloucestershire"], ["/sanigers", "The Sanigers of the Vale"], ["/saniger-place", "Saniger Is a Place"], ["/chew-magna", "Chew Magna — a Dead Lead"]]],
   ["Bristol and the Potteries", [["/wakefields", "The Wakefields"], ["/drivers-fields", "Drivers Fields, 1841"], ["/bristol-chapels", "The Bristol Chapels"], ["/sneyds", "The Sneyds of the Potteries"]]],
   ["Leaving", [["/emigrations", "How They Got Here"], ["/general-hewitt", "The General Hewitt, 1854"], ["/australia", "Arrival, 1826"], ["/brisbane", "Brisbane"], ["/great-war", "The Great War"]]],
-  ["People & places", [["/people", "The People"], ["/who", "Met in the documents"], ["/register", "The Register"], ["/households", "Households"], ["/marriages", "Marriages"], ["/graves", "Graves"], ["/places", "Places"]]],
+  ["People & places", [["/people", "The People"], ["/bloodline/", "Blood relatives, drawn"], ["/who", "Met in the documents"], ["/register", "The Register"], ["/households", "Households"], ["/marriages", "Marriages"], ["/graves", "Graves"], ["/places", "Places"]]],
   ["Evidence", [["/documents", "Documents"], ["/gallery", "Gallery"], ["/papers", "The Papers"], ["/inquest-1902", "The Inquest, 1902"], ["/finding-arthur", "The Search for Arthur"], ["/coverage", "What the Indexes Hold"], ["/behind-the-paywall", "Behind the Paywall"], ["/errands", "Errands"], ["/crossread", "Reading the Archive Against Itself"], ["/sources", "Sources"], ["/searched", "What Has Been Read"], ["/open-questions", "Open Questions"], ["/corrections", "Corrections"], ["/changes", "What Changed"], ["/method", "Method"]]],
 ];
 
@@ -42,7 +45,7 @@ const thisArchive = ring.archives.find(
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
-<link rel="stylesheet" href={u("/styles.css")} />
+<link rel="stylesheet" href={u("/styles.css") + v("styles.css")} />
 </head>
 <body class={bare ? "is-home" : ""}>
 <SkipLink />
@@ -134,6 +137,6 @@ const thisArchive = ring.archives.find(
     });
   })();
 </script>
-<script is:inline src={u("/wholink.js")} defer></script>
+<script is:inline src={u("/wholink.js") + v("wholink.js")} defer></script>
 </body>
 </html>
