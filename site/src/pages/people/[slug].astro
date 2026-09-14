@@ -179,12 +179,28 @@ function clean(s) {
   return lines.join("\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 const isDamaged = (s) => /box-sizing|font-family\s*:|style="/i.test(String(s));
+
+/* What to say under the name, in order of what is actually known. */
+const _place = val("bornPlace", p.bornPlace);
+const _spouse = (p.spouses || []).find((s) => s.name && !s.living);
+const dek =
+  (val("occupation", p.occupation) || "").trim() ||
+  (_place ? `Of ${_place}.` : "") ||
+  (_spouse ? `Married ${_spouse.name}.` : "") ||
+  "On the family tree, with no occupation, birthplace or marriage recorded here.";
+
 const notes = (p.notes || [])
   .map((n) => ({ text: clean(n), damaged: isDamaged(n) }))
   .filter((n) => n.text.length > 20);
 const anyDamaged = notes.some((n) => n.damaged);
 ---
-<Base title={p.name} eyebrow={life} dek={val("occupation", p.occupation) || ""}>
+{/* The dek was the occupation alone, so 159 of the 474 person pages had none —
+    every sibling archive falls back to something and this one did not. The
+    chain uses only what the page is not already saying: the eyebrow carries
+    the lifespan and the chip carries the grade, so neither is repeated.
+    A LIVING SPOUSE IS NEVER NAMED, which is why the spouse step filters on it;
+    two people here have only living spouses and fall through to the last line. */}
+<Base title={p.name} eyebrow={life} dek={dek}>
 
   <section class="blk" style="padding-top:0">
     <p class="small" style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
