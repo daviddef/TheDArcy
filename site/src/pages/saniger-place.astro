@@ -308,6 +308,51 @@ import d from "../data/saniger-place.json";
     <p class="small" style="margin-top:1.1rem;color:var(--ink-3)">{d.smyth.where}</p>
   </section>
 
+  <section class="blk">
+    <div class="lab">The National Archives, Discovery</div>
+    <h2 style="margin-top:.4rem">{d.catalogue.head}</h2>
+    <p class="lede">{d.catalogue.lede} <span class="chip doc">{d.catalogue.chip}</span></p>
+
+    <h3 style="margin-top:1.7rem">{d.catalogue.newHead}</h3>
+    <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
+      {d.catalogue.new.map(([who, when, what]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong>{who}</strong>
+            <span class="mono small" style="margin-left:.6rem;color:var(--ink-3)">{when}</span></div>
+          <p class="small" style="margin-top:.3rem">{what}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3 style="margin-top:1.8rem">{d.catalogue.medievalHead}</h3>
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>Named</th><th class="m">When</th><th>Reference</th></tr></thead>
+        <tbody>
+          {d.catalogue.medieval.map(([who, when, ref]) => (
+            <tr><td><strong>{who}</strong></td>
+                <td class="m" style="white-space:nowrap">{when}</td>
+                <td class="mono small">{ref}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1.3rem">
+      <strong>{d.catalogue.trap.head}.</strong> {d.catalogue.trap.body}
+      {" "}<span class="chip lore">{d.catalogue.trap.chip}</span>
+    </div>
+
+    <div class="note" style="border-left-width:3px;margin-top:1.2rem">
+      {d.catalogue.means} <span class="chip doc">documented</span>
+    </div>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And still not a line.</strong> {d.catalogue.careful}
+    </div>
+    <p class="small" style="margin-top:1.1rem">{d.catalogue.next}
+      {" "}<a href={u("/errands/")}>On the queue →</a></p>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>What this changes, and what it does not</h2>
     <ol class="dek">

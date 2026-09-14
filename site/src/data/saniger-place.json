@@ -374,5 +374,114 @@
   "careful": "And it still does not reach Hannah. Nothing here connects the Swonhungers of the hamlet to the weavers and labourers of Cam and Dursley, or to the woman baptised at Berkeley in 1804. The gap is unbridged, and this does not bridge it — it only makes clear what the name was attached to before it was a surname in a register.",
   "chipCareful": "context, not descent",
   "where": "Read 14 September 2026 in the full text of the 1885 edition on the Internet Archive (berkeleymanuscri03smyt), which is out of copyright and downloads freely. Smyth's index carries about twenty-five further page references under “Swanhunger” that have not yet been read."
+ },
+ "catalogue": {
+  "head": "Seventy-one records, and the ones nobody here had seen",
+  "lede": "The National Archives' Discovery catalogue indexes what other repositories hold as well as its own. Searched on 14 September 2026 for every spelling, it returns seventy-one records under Saniger alone — and a run of Berkeley Castle deeds naming people “of Saniger” from before 1291 to 1473.",
+  "chip": "documented",
+  "newHead": "Six that change something",
+  "new": [
+   [
+    "Maurice Saniger and Jane his wife",
+    "Easter term 1731",
+    "D2957/41/181 — a fine: “John Hardinge, quer. Maurice Saniger and Jane his wife, Maria Stiffe, and William Perratt”. A named couple in the hamlet, a century after Smyth's pedigree ended, and a Maurice — the same forename Smyth gives as the 1639 owner's grandfather."
+   ],
+   [
+    "Christian Saniger v. Mary Millard",
+    "1768",
+    "GDR/B4/1/387 — a defamation suit in the Gloucester consistory court. Church-court defamation cases are almost always brought by women over sexual slander, and the files usually carry depositions naming neighbours, ages and abodes."
+   ],
+   [
+    "The 1617 trustee deed, dated at last",
+    "8 January 1617",
+    "D2957/41/64 — a conveyance naming Mathew Smith of Wanswell, Robert Atkins of Newport and John Saniger. Smyth describes exactly this transaction in the Hundred of Berkeley but gives it no date; the catalogue supplies one."
+   ],
+   [
+    "John Saniger of Berkeley, yeoman",
+    "2 November 1601",
+    "D2957/41/18 — a release to John Smithe of Panthurste. The earliest dated document this archive holds in which a man carries the name as a surname, and it calls him a yeoman."
+   ],
+   [
+    "Elizabeth Saniger, aged 3, of Cam",
+    "2 April 1856",
+    "CO1/I/2/B/6 — a coroner's inquest for the Lower Division. Cam is the second commonest Saniger parish in this archive's register work, with twenty entries."
+   ],
+   [
+    "Inquisition post mortem of Henry Mallett",
+    "6 April 1626",
+    "MS 3549/187 at Birmingham — a minor, proving what he held at his death. It surfaces under Swanhanger, and the Malletts appear repeatedly beside the Sanigers in the Berkeley deeds."
+   ]
+  ],
+  "medievalHead": "People “of Saniger”, before the surname existed",
+  "medieval": [
+   [
+    "Martin Waleys of Saniger",
+    "before 1291",
+    "BCM/A/1/24/215"
+   ],
+   [
+    "Geoffrey Nel of Saniger in the parish of Berkeley",
+    "1272–1307",
+    "BCM/A/1/30/2"
+   ],
+   [
+    "Juliana, daughter of Robert Gamel of Saniger",
+    "late 13th century",
+    "BCM/A/1/65/24 and /25"
+   ],
+   [
+    "John de Swonhungre",
+    "1 September 1316",
+    "BCM/A/1/24/191"
+   ],
+   [
+    "Philip, son of Richard Couthulf of Saniger",
+    "25 April 1322",
+    "BCM/A/1/24/261"
+   ],
+   [
+    "Thomas, son of John de Swonhungre",
+    "early 14th century",
+    "BCM/A/1/24/188"
+   ],
+   [
+    "William de Swonhongre",
+    "20 April 1352",
+    "BCM/A/1/24/183"
+   ],
+   [
+    "William Swonhungre, brother and heir of Thomas Swonhungre of Wanswell",
+    "1 May 1356",
+    "BCM/A/1/24/184"
+   ],
+   [
+    "John Smyth of Saniger",
+    "15 Sept and 3 Nov 1370",
+    "BCM/A/1/24/242 and /243"
+   ],
+   [
+    "Elias de Swonhongre and Richard de Egton of Saniger",
+    "3 June 1377",
+    "BCM/A/1/24/186"
+   ],
+   [
+    "Walter Hevyner of Saniger and Maud his wife",
+    "4 August 1443",
+    "BCM/A/1/24/254 and /255"
+   ],
+   [
+    "Richard Webbe of Saniger, Margaret his wife",
+    "1473",
+    "BCM/A/1/24/269"
+   ]
+  ],
+  "trap": {
+   "head": "And one thing not to read off this list",
+   "body": "It looks as though the spelling SANIGER is attested from before 1291, which would overturn what this archive says about the forms. It is not. The place name in these entries is the modern cataloguer's standard form, supplied for searchability; the personal names are given as the documents write them, which is why Swonhungre, Swonhongre and Swannanger all survive in the same list. A catalogue description is evidence of what a record is about, not of how it is spelled.",
+   "chip": "a catalogue is not a transcript"
+  },
+  "means": "The hamlet has been a place people were named after for at least seven hundred and thirty-five years, and the Berkeley muniments name a dozen of them.",
+  "careful": "None of this reaches Hannah either, and the gap it does not close is the same one: these are Berkeley freeholders, tenants and litigants, and the woman baptised there in 1804 descends from weavers and labourers whose link to them is unproved.",
+  "next": "Unread and worth reading: the three Berkeley Castle groupings the catalogue names but does not itemise — “The Saniger purparty in Ham”, “The Saniger purparty in Wanswell” and “Acquisition of the Skinner holding in Saniger” — and GDR/B4/1/387, the 1768 defamation file."
  }
 }
