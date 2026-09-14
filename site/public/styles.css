@@ -49,6 +49,12 @@ img{max-width:100%}
 .dek{font-family:var(--sans);font-size:15px;line-height:1.62;color:var(--ink-2);max-width:76ch}
 .cap{font-family:var(--sans);font-size:12.5px;line-height:1.55;color:var(--ink-3);margin-top:12px;max-width:92ch}
 .prose{max-width:80ch;display:flex;flex-direction:column;gap:16px}
+/* .prose is two things at once: a flex COLUMN on a <div> that wraps several
+   paragraphs, and a paragraph class on a <p>. On a <p> the flex turns every
+   link and bold run into its own stacked block — which is what it had been
+   doing, on pages nobody had looked at closely. A paragraph is a paragraph. */
+p.prose{display:block}
+
 .prose h3{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.13em;
   text-transform:uppercase;color:var(--ink-3);margin-top:14px}
 .scroll{overflow-x:auto;padding-bottom:6px;margin-top:1.2rem}
