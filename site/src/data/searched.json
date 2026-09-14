@@ -1773,6 +1773,22 @@
    "outcome": "yield",
    "got": "Twenty-four deaths, each with the registrar's own register and entry number rather than a GRO quarterly reference — including LYDIA SANIGAR, 1851, register 3, entry 265, who this archive has wanted since it began. Coverage was checked before searching: Thornbury/Berkeley deaths complete 1837–1948, Dursley 1837–1937, Wotton-under-Edge 1837–1937. A free index nobody here had used.",
    "href": "/sanigers"
+  },
+  {
+   "src": "Staffordshire Name Indexes — Diocese of Lichfield and Coventry Wills, 1550–1810",
+   "what": "SNEYD, all 36 records, and SNEYD of MADELEY",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "Thirty-six Sneyd wills, ten of them at Keele — and the tenth is RICHARD SNEYD, LABOURER, of Keele, 1772, in the same parish and the same court as four Ralph Sneyds, esquires and gentlemen. Sneyd of MADELEY returns nothing; control is the same search without a place, which returns all thirty-six.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "Staffordshire Name Indexes — the site as a whole",
+   "what": "The Madeley burials of the 1740s, and Lichfield bishop's transcripts generally",
+   "when": "14 Sep 2026",
+   "outcome": "empty",
+   "got": "Structurally out of scope. The site indexes twenty-six Staffordshire collections — wills, apprentices, asylums, gaol calendars, tithe awards, workhouse admissions — and no parish registers or bishop's transcripts of any kind. It cannot answer errand 19 and never could.",
+   "href": "/errands"
   }
  ]
 }

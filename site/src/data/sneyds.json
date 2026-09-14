@@ -436,5 +436,88 @@
   "means": "The weaver married about April 1769 — the first child is baptised three months later — and was still fathering children in 1794, so neither of the 1780 nor 1791 burials can be him. That leaves TWO CANDIDATES, and this page is not going to pick one and call it settled. The 1827 burial fits far better on every measure. What it is NOT is proof: the register names no wife, no trade and no children, and two men of one name in one parish is exactly the situation that has caught this archive before.",
   "gain": "What has changed is the shape of the problem. Yesterday the oldest Sneyd was a web page. Today he is one of two documented burials in the right parish, with ages, and the better of the two agrees with the tree to within three years — which is what a stated age at burial does.",
   "chip": "two candidates, neither proved"
+ },
+ "wills": {
+  "head": "Thirty-six Sneyd wills, and a labourer at Keele",
+  "lede": "The Diocese of Lichfield and Coventry wills index, 1550–1810, is free and this archive had never opened it. It returns thirty-six Sneyds. Not one of them is of MADELEY.",
+  "chip": "documented",
+  "where": "Staffordshire Name Indexes, staffsnameindexes.org.uk, searched 14 September 2026. The site indexes twenty-six collections but NOT parish registers or bishop's transcripts, so it cannot answer the Madeley burials directly.",
+  "keeleHead": "What it does to the Keele graft",
+  "keele": [
+   [
+    "William Sneyd",
+    "not given",
+    "Keele, Wolstanton",
+    "1620"
+   ],
+   [
+    "Richard Sneyd",
+    "gentleman",
+    "Stafford and Keele",
+    "1684"
+   ],
+   [
+    "Ralph Sneyd",
+    "esquire",
+    "Keele",
+    "1704"
+   ],
+   [
+    "Sarah Sneyd",
+    "widow",
+    "Keele",
+    "1706"
+   ],
+   [
+    "Ralph Sneyd",
+    "esquire",
+    "Keele",
+    "1734"
+   ],
+   [
+    "Ralph Sneyd",
+    "not given",
+    "Keele",
+    "1737"
+   ],
+   [
+    "Ralph Sneyd",
+    "gentleman",
+    "Keele",
+    "1743"
+   ],
+   [
+    "Richard Sneyd",
+    "LABOURER",
+    "Keele",
+    "1772"
+   ],
+   [
+    "Edward Sneyd",
+    "not given",
+    "Keele",
+    "1780"
+   ],
+   [
+    "William Sneyd",
+    "gentleman",
+    "Keele",
+    "1783"
+   ]
+  ],
+  "labourer": {
+   "head": "A labourer with a will, in the squires' own parish",
+   "body": "Four Ralph Sneyds of Keele, esquires and gentlemen, across forty years — and in 1772, RICHARD SNEYD, LABOURER, of Keele, leaving a will in the same court.",
+   "means": "This archive has an open question it calls the Keele graft: whether its own Sneyds were attached to the Sneyds of Keele Hall by someone who wanted a better ancestor. The labourer cuts the question loose from the answer. Being a Sneyd of Keele does not make a man gentry, because in 1772 a Sneyd of Keele was a labourer. A humble Sneyd in that parish needs no descent from the squires to explain him.",
+   "chip": "it weakens the graft without disproving it",
+   "careful": "It is not evidence that this archive's Sneyds were the labouring sort, and it is not evidence that they were at Keele at all. It removes an assumption, which is the most a negative can do."
+  },
+  "madeley": {
+   "head": "And nothing at Madeley",
+   "body": "Sneyd of Madeley returns nothing in an index of thirty-six Sneyd wills spanning two hundred and sixty years. The control is the same search without a place, which returns all thirty-six, so the engine and the surname both work.",
+   "chip": "a controlled null",
+   "means": "The Madeley burials remain a question for the Lichfield bishop's transcripts, which this index does not hold and which nothing free does."
+  },
+  "potteries": "The rest cluster where this archive already knew to look: yeomen at Woodhead in Burslem in 1707 and 1717, a gentleman at The Birches, Burslem in 1708, a spinster at Woodhead in 1722, a wheelwright at Newcastle under Lyme in 1676. The Potteries, two generations before the potteries."
  }
 }

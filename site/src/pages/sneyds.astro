@@ -292,4 +292,41 @@ const c = d.counts;
     </div>
     <p style="margin-top:1.1rem">{d.williamBurial.gain}</p>
   </section>
+
+  <section class="blk" style="border-bottom:0">
+    <div class="lab">Diocese of Lichfield and Coventry Wills, 1550–1810</div>
+    <h2 style="margin-top:.4rem">{d.wills.head}</h2>
+    <p class="lede">{d.wills.lede} <span class="chip doc">{d.wills.chip}</span></p>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.wills.where}</p>
+
+    <h3 style="margin-top:1.7rem">{d.wills.keeleHead}</h3>
+    <div class="scroll" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>Name</th><th>Status</th><th>Of</th><th class="m">Year</th></tr></thead>
+        <tbody>
+          {d.wills.keele.map(([who, status, place, year]) => (
+            <tr style={status === "LABOURER" ? "background:var(--tint)" : ""}>
+              <td><strong>{who}</strong></td><td class="small">{status}</td>
+              <td class="small">{place}</td><td class="m">{year}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="border-left-width:3px;margin-top:1.3rem">
+      <strong style="font-size:1.08em">{d.wills.labourer.body}</strong>
+    </div>
+    <p style="margin-top:1.1rem">{d.wills.labourer.means}
+      {" "}<span class="chip inf">{d.wills.labourer.chip}</span></p>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>And what that is not.</strong> {d.wills.labourer.careful}
+    </div>
+
+    <h3 style="margin-top:1.8rem">{d.wills.madeley.head}</h3>
+    <p>{d.wills.madeley.body} <span class="chip lore">{d.wills.madeley.chip}</span></p>
+    <div class="note" style="margin-top:1.1rem">{d.wills.madeley.means}
+      {" "}<a href={u("/errands/")}>On the queue →</a></div>
+
+    <p class="dek" style="margin-top:1.4rem">{d.wills.potteries}</p>
+  </section>
 </Base>
