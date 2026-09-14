@@ -1757,6 +1757,14 @@
    "outcome": "yield",
    "got": "Casualty 1451888 confirms the Villers-Bretonneux MEMORIAL — not the military cemetery of the same name, which holds a different Sneyd, Rex, 49th Bn, died 14 June 1918. Service number 5050, 9th Bn A.I.F., died 20 August 1916 aged 22, son of Arthur and Martha Sneyd of James St., Wooloowin, born at Rockhampton. Nothing here was new; everything here was already published, and is now sourced to the authority instead of inferred.",
    "href": "/finding-arthur"
+  },
+  {
+   "src": "FreeREG — Gloucestershire",
+   "what": "The baptism of LYDIA JONES at Wotton-under-Edge, about 1770, to William Jones and Sarah",
+   "when": "14 Sep 2026",
+   "outcome": "empty",
+   "got": "Not a null — the parish is not transcribed. Lydia Jones, Gloucestershire baptisms 1760–1785: nil. But JONES of any forename at WOTTON-UNDER-EDGE, all record types, 1740–1800: also nil — nought entries for the commonest surname in England across sixty years. The same search across the county returns 164 Jones baptisms in a narrower window, so the engine works and the county is covered. Wotton-under-Edge appears in FreeREG's place list and has effectively no eighteenth-century transcription behind it, which is the coverage-tool-versus-search disagreement this archive has already recorded once.",
+   "href": "/errands"
   }
  ]
 }
