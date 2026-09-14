@@ -672,6 +672,313 @@
    "body": "Searched as SANIGER, the 1849–1853 window returns two people and neither is Lydia. Searched as SANIGAR it returns three, and she is the second. The surname box does prefix matching when Exact Match is left unticked, so the only safe search for this family is the stem SANIG — which returns all five.",
    "chip": "method",
    "means": "Hannah's baptism was hidden under SANIGOR. Her brother's marriage was hidden under SANIGRE. The Sussex sisters were hidden under ARCY. Lydia's death was hidden under SANIGAR. The pattern is now four for four, and it is the single most reliable fact about researching this family."
+  },
+  "marriages": {
+   "head": "Ten marriages, with the other name",
+   "note": "The marriage index gives both partners, which the GRO quarterly index does not do for this period without a second lookup.",
+   "rows": [
+    [
+     "1838",
+     "SANIGAR",
+     "Hester",
+     "WHITE",
+     "William",
+     "C7/15"
+    ],
+    [
+     "1841",
+     "SANIGAR",
+     "Harriet",
+     "FORD",
+     "George",
+     "C7/123"
+    ],
+    [
+     "1849",
+     "SANIGER",
+     "Thomas",
+     "FORD",
+     "Charlotte",
+     "C7/181"
+    ],
+    [
+     "1855",
+     "SANIGER",
+     "Catherine",
+     "STEPHENS",
+     "John",
+     "190"
+    ],
+    [
+     "1858",
+     "SANIGER",
+     "William",
+     "STOCKWELL / WORKMAN",
+     "Caroline",
+     "C7/1168"
+    ],
+    [
+     "1862",
+     "SANIGER",
+     "Thomas",
+     "WATTS",
+     "Sarah Bendall",
+     "C7/1204"
+    ],
+    [
+     "1879",
+     "SANIGER",
+     "Emily Sophia",
+     "DORE",
+     "Robert",
+     "C3/2320"
+    ],
+    [
+     "1880",
+     "SANIGER",
+     "Rachel Harris",
+     "SINNETT",
+     "James",
+     "30x No 1430"
+    ],
+    [
+     "1891",
+     "SANIGAR",
+     "Albert Thomas",
+     "YOUNG",
+     "Ellen Kate",
+     "34 No 1168"
+    ],
+    [
+     "1891",
+     "SANIGER",
+     "Arthur Edward",
+     "POWELL",
+     "Louisa",
+     "34 No 1154"
+    ]
+   ],
+   "oddity": "One entry appears twice under one reference, C7/1168 in 1858, with the bride as both Caroline STOCKWELL and Caroline WORKMAN. One event, two surnames for the same woman — a remarriage, a step-parent's name, or an index error. It is left exactly as the index gives it."
+  },
+  "births": {
+   "head": "Twenty-seven births",
+   "note": "The birth search accepts a MOTHER'S MAIDEN NAME as a search term, which is the field that turns an index into a family. It is not displayed in results, but it can be searched against — so a maiden name guessed from a marriage can be tested against a birth.",
+   "rows": [
+    [
+     "1838",
+     "SANIGER",
+     "Mary Ann",
+     "190"
+    ],
+    [
+     "1845",
+     "SANIGER",
+     "Susan Ann",
+     "3/253"
+    ],
+    [
+     "1846",
+     "SANIGAR",
+     "Ann",
+     "3/488"
+    ],
+    [
+     "1848",
+     "SANIGER",
+     "Catharine",
+     "4/435"
+    ],
+    [
+     "1849",
+     "SANIGER",
+     "Susan",
+     "5/110"
+    ],
+    [
+     "1850",
+     "SANIGER",
+     "Joseph",
+     "5/169"
+    ],
+    [
+     "1851",
+     "SANIGAR",
+     "Mary Ann",
+     "4/495"
+    ],
+    [
+     "1851",
+     "SANIGER",
+     "Emily Sophia",
+     "5/340"
+    ],
+    [
+     "1852",
+     "SANIGER",
+     "Fanny",
+     "6/62"
+    ],
+    [
+     "1854",
+     "SANIGER",
+     "Female",
+     "6/385"
+    ],
+    [
+     "1856",
+     "SANIGER",
+     "Edward Thomas",
+     "7/143"
+    ],
+    [
+     "1858",
+     "SANIGER",
+     "Keturah Fanny",
+     "7/408"
+    ],
+    [
+     "1860",
+     "SANIGER",
+     "Susanna",
+     "8/348"
+    ],
+    [
+     "1862",
+     "SANIGER",
+     "Joseph",
+     "9/8"
+    ],
+    [
+     "1863",
+     "SANIGER",
+     "Albert Thomas",
+     "9/241"
+    ],
+    [
+     "1864",
+     "SANIGER",
+     "Hester Jane",
+     "9/8"
+    ],
+    [
+     "1865",
+     "SANIGER",
+     "Arthur Edward",
+     "9/166"
+    ],
+    [
+     "1866",
+     "SANIGAR",
+     "Eva Emma",
+     "9/343"
+    ],
+    [
+     "1868",
+     "SANIGAR",
+     "Thomas Browning",
+     "10/95"
+    ],
+    [
+     "1869",
+     "SANIGER",
+     "Florence Elizabeth",
+     "10/361"
+    ],
+    [
+     "1871",
+     "SANIGAR",
+     "Charlotte",
+     "11/45"
+    ],
+    [
+     "1872",
+     "SANIGER",
+     "Francis William",
+     "11/256"
+    ],
+    [
+     "1873",
+     "SANIGAR",
+     "Amy Charlotte",
+     "12/92"
+    ],
+    [
+     "1875",
+     "SANIGAR",
+     "Edith",
+     "12/349"
+    ],
+    [
+     "1876",
+     "SANIGAR",
+     "William Henry",
+     "13/122"
+    ],
+    [
+     "1878",
+     "SANIGAR",
+     "Margaret",
+     "13/412"
+    ],
+    [
+     "1879",
+     "SANIGER",
+     "Frederick James",
+     "14/216"
+    ]
+   ]
+  },
+  "lives": {
+   "head": "What the three indexes do together",
+   "body": "Read across, births and deaths in the same index start closing on each other. Nine names appear in both, at intervals that read as short lives:",
+   "rows": [
+    [
+     "Catharine",
+     "born 1848",
+     "died 1849",
+     "about one year"
+    ],
+    [
+     "Susanna",
+     "born 1860",
+     "died 1861",
+     "about one year"
+    ],
+    [
+     "Edward Thomas",
+     "born 1856",
+     "died 1862",
+     "about six years"
+    ],
+    [
+     "Keturah Fanny",
+     "born 1858",
+     "died 1867 as Keturah",
+     "about nine years"
+    ],
+    [
+     "Frederick James",
+     "born 1879",
+     "died 1880",
+     "about one year"
+    ],
+    [
+     "Margaret",
+     "born 1878",
+     "died 1882",
+     "about four years"
+    ],
+    [
+     "William Henry",
+     "born 1876",
+     "died 1882",
+     "about six years"
+    ]
+   ],
+   "andHead": "And two who lived",
+   "and": "EMILY SOPHIA, born 1851, marries Robert Dore in 1879. ALBERT THOMAS, born 1863, marries Ellen Kate Young in 1891. ARTHUR EDWARD, born 1865, marries Louisa Powell in 1891, a fortnight or so from his brother by the look of the references — 34 No 1154 and 34 No 1168.",
+   "chip": "matched on name and date, not on a document",
+   "careful": "Every one of these joins is an inference. The index gives a surname, a forename, a year and a register reference, and nothing that proves the Catharine born in 1848 is the Catharine who died in 1849. In a district where the same dozen forenames repeat for a century, that is a real risk. They are set out because they say where to spend certificate money, not because they are established."
   }
  }
 }

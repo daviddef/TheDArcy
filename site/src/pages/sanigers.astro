@@ -244,6 +244,46 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
       {" "}<a href={u("/errands/")}>On the queue →</a>
     </Note>
 
+    <h3 style="margin-top:1.7rem">{d.grsi.marriages.head}</h3>
+    <p class="small">{d.grsi.marriages.note}</p>
+    <Scroll>
+      <table>
+        <thead><tr><th class="m">Year</th><th>Saniger</th><th>Married</th><th>Reference</th></tr></thead>
+        <tbody>{d.grsi.marriages.rows.map(([y, sn, fn, osn, ofn, ref]) => (
+          <tr><td class="m">{y}</td>
+              <td><strong>{fn}</strong> <span class="mono small" style="color:var(--ink-3)">{sn}</span></td>
+              <td>{ofn} <strong>{osn}</strong></td>
+              <td class="mono small">{ref}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1rem"><strong>One oddity, left as found.</strong> {d.grsi.marriages.oddity}</Note>
+
+    <h3 style="margin-top:1.7rem">{d.grsi.births.head}</h3>
+    <Note style="margin-top:.7rem">{d.grsi.births.note}</Note>
+    <Scroll>
+      <table>
+        <thead><tr><th class="m">Year</th><th>Surname</th><th>Forename</th><th class="m">Reg/Entry</th></tr></thead>
+        <tbody>{d.grsi.births.rows.map(([y, sn, fn, ref]) => (
+          <tr><td class="m">{y}</td><td class="mono small">{sn}</td>
+              <td><strong>{fn}</strong></td><td class="m mono small">{ref}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+
+    <h3 style="margin-top:1.7rem">{d.grsi.lives.head}</h3>
+    <p>{d.grsi.lives.body}</p>
+    <Scroll>
+      <table>
+        <tbody>{d.grsi.lives.rows.map(([who, b, dd, span]) => (
+          <tr><td><strong>{who}</strong></td><td class="small">{b}</td>
+              <td class="small">{dd}</td><td class="small">{span}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p style="margin-top:1.1rem"><strong>{d.grsi.lives.andHead}.</strong> {d.grsi.lives.and}</p>
+    <Note style="margin-top:1.2rem">
+      <strong>And none of it is proved.</strong> {d.grsi.lives.careful}
+      {" "}<span class="chip inf">{d.grsi.lives.chip}</span>
+    </Note>
+
     <h3 style="margin-top:1.7rem">{d.grsi.spelling.head}</h3>
     <p>{d.grsi.spelling.body}</p>
     <Note style="margin-top:1.1rem">{d.grsi.spelling.means}
