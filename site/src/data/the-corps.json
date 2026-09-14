@@ -13,13 +13,22 @@
    "note": "His first commission, and now the earliest record of him anywhere in this archive — a year before he married at Portsea and two before his son was christened there."
   },
   {
+   "year": "1781–82",
+   "was": "Lieutenant",
+   "became": "At the SIEGE OF FORT ST PHILIP'S, MINORCA",
+   "unit": "The Corps of Engineers",
+   "src": "Whitworth Porter, History of the Corps of Royal Engineers (1889), p. 209",
+   "gaz": "",
+   "note": "Under Lieutenant-Colonel Brewse, Chief Engineer in the island, with Captain Gilbert Townshend and Lieutenants Johnston, Douglas, Shipley and Fiddes. The Duc de Crillon landed on 19 August 1781 and the garrison was about three thousand. The first record of him on active service anywhere."
+  },
+  {
    "year": "1786 and 1788",
    "was": "—",
-   "became": "In BARBADOS",
+   "became": "In BARBADOS — and now confirmed by the Corps",
    "unit": "Corps of Engineers",
-   "src": "St Michael, Barbados — christenings of CONSTANTINE (18 Feb 1786) and JANE (17 Mar 1788), father Robert, mother Jane",
+   "src": "St Michael, Barbados — christenings of CONSTANTINE (18 Feb 1786) and JANE (17 Mar 1788), father Robert, mother Jane; AND Porter's History of the Corps of Royal Engineers, station list: “Robert D'Arcy, Barbados”",
    "gaz": "",
-   "note": "NOT A COMMISSION — a posting, inferred from two christenings this archive already held and had never set against this chronology. Between the commission of 1778 and the majority of 1802 this career is a blank of twenty-four years. These are the only two records that fall inside it, and they put him in the West Indies with his wife in the middle of the 1780s."
+   "note": "No longer an inference. The christenings put him in the West Indies with his wife in the middle of the 1780s; the Corps' own station list says the posting outright. What this page said until 15 September 2026 — that these were “the only two records that fall inside” the blank between 1778 and 1802 — was wrong: Porter puts him at the siege of Fort St Philip's on MINORCA in 1781, three years after his first commission."
   },
   {
    "year": "by November 1806",
@@ -97,5 +106,50 @@
   "head": "And a post, not just a rank.",
   "body": "The Kentish Gazette of 14 May 1805, reporting the death of his son, calls him “COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES”. The Chatham Lines were the bastioned fortifications thrown up to defend the dockyard and the Medway — the largest engineering work in Kent. Every other record of Robert D'Arcy gives a rank. This one gives him a job.",
   "chip": "documented"
+ },
+ "porter": {
+  "head": "The Corps wrote its own history, and he is in it five times",
+  "lede": "Whitworth Porter's History of the Corps of Royal Engineers was published in 1889 from the Corps' own records. This archive had never opened it. Robert D'Arcy is named at Minorca, in a station list, at Copenhagen, at Walcheren and in the index — which is Porter's own statement that they are one man.",
+  "chip": "documented",
+  "indexLine": "D'Arcy, Robert, at second siege of Minorca, 209, 216 ; Copenhagen, 243 ; Walcheren, 248",
+  "rows": [
+   [
+    "1781–82",
+    "MINORCA — the siege of Fort St Philip's",
+    "“At the death of Colonel Mackellar, Lieutenant-Colonel Brewse had been appointed to the post of Chief Engineer in the island… Under him were Captain Gilbert Townshend, and Lieutenants ROBERT D'ARCY, W. Johnston, J. R. Douglas, C. Shipley, and J. Fiddes.” The Duc de Crillon landed on 19 August 1781; the garrison was about three thousand."
+   ],
+   [
+    "1780s",
+    "BARBADOS — confirmed from a Corps list, not a christening",
+    "A list of First Lieutenants by station carries “ROBERT D'ARCY, BARBADOS” outright. This archive had the posting only as an inference from two christenings at St Michael, and now has it from the Corps."
+   ],
+   [
+    "1807",
+    "COPENHAGEN — Commanding Engineer",
+    "“The Engineers consisted of LIEUTENANT-COLONEL R. D'ARCY, COMMANDING ENGINEER; Captains B. Fletcher, J. F. Birch, and S. R. Chapman; Second Captains C. W. Pasley, H. Goldfinch, and C. S. Rhodes; First Lieutenant G. Collyer.” The expedition sailed from Yarmouth Roads on 27 July with twenty thousand men under Sir Arthur Wellesley and reached Elsinore on 3 August."
+   ],
+   [
+    "1809",
+    "WALCHEREN — Commanding Royal Engineer",
+    "“The Commanding Royal Engineer with this corps was LIEUTENANT-COLONEL R. D'ARCY.” At the siege of Flushing he appears again among the officers summoned: “Colonel Fyers, Commanding Royal Engineer; Lieutenant-Colonels D'ARCY and Pilkington; Captains Rudyerd, Birch, Squire, Pasley…”"
+   ]
+  ],
+  "gapHead": "What it does to the twenty-four-year blank",
+  "gap": "This page has said that between the commission of 1778 and the majority of 1802 the career is a blank of twenty-four years, and that two Barbados christenings were the only records inside it. That is no longer true. Minorca falls squarely inside the blank, in 1781, three years after the commission — and the Barbados posting is no longer an inference from a baptism register but a line in the Corps' own station list.",
+  "chipGap": "this archive's own claim, corrected",
+  "arrestHead": "And the reason he nearly faced a court-martial",
+  "arrest": {
+   "setup": "On the night of 13 August 1809, storming a fleche on the western dyke at Flushing, Colonel Fyers — the Commanding Royal Engineer — was shot in the chest by a musket ball from a hundred yards. It passed first through some inches of sand on the parapet, which is the only reason it was not fatal. Wounded, he ordered that the senior engineer in the trenches deliver him a written report every morning.",
+   "quote": "The first morning, Colonel D., an old man beyond sixty, refused compliance, saying he had other things to do, and no solicitation could prevail on him to write a single line… The third morning Colonel D. again declined, saying IT WAS ALL NONSENSE; and on being reasoned with, denied the right of his superior to demand a report from him, because SOME THIRTY OR FORTY YEARS PREVIOUSLY HE HAD BEEN SENIOR TO COLONEL F. He was requested to reconsider the matter, and on a decided refusal the Brigade-Major put him under arrest.",
+   "src": "Told by Fyers's own Brigade-Major. Porter's footnote to “Colonel D.” reads, in full: “Colonel D'Arcy.”",
+   "end": "“After all the preliminary arrangements for a court-martial had been gone through, Colonel D'Arcy thought better of it, made his apologies, was released, and ever after furnished his report.”",
+   "chip": "documented",
+   "means": "It is the only description of this man's character that this archive holds. Sixty years old, in the trenches, in the third week of the worst British expedition of the war, refusing to write a report for a man he considered his junior — and then thinking better of it."
+  },
+  "ageHead": "One date it quietly corroborates",
+  "age": "“An old man beyond sixty” in August 1809 puts his birth before about 1749. His first commission, as practitioner engineer, was in 1778 — which would make him roughly twenty-nine or thirty at it, entirely ordinary for the Corps. Two independent statements, neither made to date him, agreeing.",
+  "chipAge": "corroboration, not a birth record",
+  "careful": "Porter is a nineteenth-century compiler working from Corps records, not the records themselves. He is the Corps' own historian and he indexes all five mentions as one Robert D'Arcy, which is as good as a secondary source gets — but the commission registers, station returns and the Walcheren papers at Kew are the primary evidence behind him, and none of them has been read here.",
+  "where": "Read 14 September 2026 in the full text of the 1889 edition on the Internet Archive, which is out of copyright and downloads freely."
  }
 }

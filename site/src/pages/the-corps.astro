@@ -46,6 +46,46 @@ import d from "../data/the-corps.json";
     </Note>
   </Blk>
 
+  <Blk label="Whitworth Porter, 1889" title={d.porter.head}>
+    <p class="lede">{d.porter.lede} <span class="chip doc">{d.porter.chip}</span></p>
+    <p class="small mono" style="margin-top:1rem;color:var(--ink-3)">{d.porter.indexLine}</p>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
+      {d.porter.rows.map(([when, what, detail]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono small" style="color:var(--ink-3)">{when}</span>
+            <strong style="margin-left:.6rem">{what}</strong></div>
+          <p class="small" style="margin-top:.35rem">{detail}</p>
+        </div>
+      ))}
+    </div>
+
+    <Note style="border-left-width:3px;margin-top:1.4rem">
+      <strong>{d.porter.gapHead}.</strong> {d.porter.gap}
+      {" "}<span class="chip inf">{d.porter.chipGap}</span>
+    </Note>
+  </Blk>
+
+  <Blk label="Flushing, 13 August 1809" title={d.porter.arrestHead}>
+    <p class="lede">{d.porter.arrest.setup}</p>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      <strong style="font-size:1.05em">{d.porter.arrest.quote}</strong>
+      <br /><br />
+      <span class="small">{d.porter.arrest.src}</span>
+      <span class="chip doc">{d.porter.arrest.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.porter.arrest.end}</p>
+    <Note style="margin-top:1.2rem">{d.porter.arrest.means}</Note>
+
+    <h3 style="margin-top:1.7rem">{d.porter.ageHead}</h3>
+    <p>{d.porter.age} <span class="chip inf">{d.porter.chipAge}</span></p>
+
+    <Note style="margin-top:1.3rem">
+      <strong>And what Porter is.</strong> {d.porter.careful}
+    </Note>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.porter.where}</p>
+  </Blk>
+
   <section class="blk" style="border-bottom:0">
     <h2>{d.joseph.head}</h2>
     <p class="lede">{d.joseph.body}</p>

@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "15 September 2026",
+    what: "Called Robert D'Arcy's career “a blank of twenty-four years” between 1778 and 1802, and said two Barbados christenings were “the only two records that fall inside it”.",
+    truth:
+      "The Corps published its own history in 1889. Whitworth Porter puts Lieutenant Robert D'Arcy at the siege of Fort St Philip's on Minorca in 1781 — three years after the commission, squarely inside the blank — and carries “Robert D'Arcy, Barbados” in a station list, so the posting this archive had inferred from a baptism register was stated outright by the Corps all along. Porter also has him Commanding Engineer at Copenhagen in 1807 and Commanding Royal Engineer at Walcheren in 1809.",
+    why: "I wrote a sentence about every record that exists after searching the records I happened to have. The book that disproved it is out of copyright, free, full-text searchable, and is the official history of the very corps the page is about — the first place anyone would look, and I had not looked.",
+    lesson:
+      "This is the same error as the Hampshire Chronicle, five weeks later and with the same shape: “the only records that fall inside it” is a claim about everything ever written, and it cost nothing to say “the only two this archive has found”. When a page is about an institution, read that institution's own published history before describing a gap in it.",
+    href: "/the-corps",
+  },
+  {
+    when: "15 September 2026",
     what: "Announced the Morning Herald notice of 1843 as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. Two older papers had already done it — and the second of them turned up within an hour of my correcting the first.",
     truth:
       "The Hampshire Chronicle of 24 March 1823 carries Jean Ward's death: “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” And the Oxford University and City Herald of 1 November 1806 carries Margaret's own wedding: “MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — thirty-seven years before the notice I called the first, in the report of the very marriage that page is about.",
