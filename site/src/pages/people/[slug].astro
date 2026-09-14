@@ -8,7 +8,7 @@ import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
 import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
 import { grade } from "../../lib/grade.js";
-import Pedigree from "../../components/Pedigree.astro";
+import PersonTree from "../../components/PersonTree.astro";
 import { CORRECTIONS } from "../../lib/corrections.js";
 
 export async function getStaticPaths() {
@@ -240,7 +240,7 @@ const anyDamaged = notes.some((n) => n.damaged);
   )}
 
   <section class="blk">
-    <Pedigree person={p} life={life} parents={parents} spouses={wed} kids={kids} sibs={sibs} />
+    <PersonTree person={p} life={life} parents={parents} spouses={wed} kids={kids} sibs={sibs} />
   </section>
 
   <section class="blk">

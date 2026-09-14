@@ -2,9 +2,12 @@
 import { u } from "../lib/url.js";
 import prov from "../data/provenance.json";
 import { lifeOf } from "../lib/corrections.js";
+import PersonTree from "@daviddef/archive-kit/components/PersonTree.astro";
+import "@daviddef/archive-kit/styles/persontree.css";
 
 /* The pedigree chart that opens every person page, built the same way as the
-   sibling archives'.
+   sibling archives' — and now out of literally the same component, which is
+   what "the same way" was always supposed to mean.
 
    The left border of each card says HOW THE RELATIONSHIP IS KNOWN, and nothing
    else. That is the whole design:
@@ -16,7 +19,10 @@ import { lifeOf } from "../lib/corrections.js";
                     the two grafts this archive has rejected
 
    Direct-line membership is a different fact and is printed as text, not as a
-   border, because conflating the two is how a pedigree starts lying.
+   border, because conflating the two is how a pedigree starts lying. It is also
+   why the line under the name is written out here rather than by the kit: a
+   person can be an ancestor in the tree AND sit above a rejected graft, and
+   saying only the first would make this card contradict every edge around it.
 */
 
 const { person: p, life, parents = [], spouses = [], kids = [], sibs = [] } = Astro.props;
@@ -31,20 +37,26 @@ const edge = (slug) => {
   return { cls: "via-tree", via: "tree", recorded: false };
 };
 
-const node = (o, extra = "") => {
+const node = (o, extra = {}) => {
   const e = edge(o.slug);
   const q = prov[o.slug] || {};
+  const via = q.line && !q.graft ? `${e.via} · direct line` : e.via;
   return {
-    ...o, ...e,
-    cls: `node ${extra} ${e.cls}`.replace(/\s+/g, " ").trim(),
-    via: q.line && !q.graft ? `${e.via} · direct line` : e.via,
+    ...e, ...extra,
+    name: o.name,
+    href: u(`/people/${o.slug}`),
+    dates: lifeOf(o),
+    cls: e.cls,
+    via,
+    mark: extra.mark === false ? undefined : via,
+    title: `How this link is known: ${via}`,
   };
 };
 
 const P = parents.map((o) => node(o));
-const S = spouses.map((o) => node(o, "spouse"));
+const S = spouses.map((o) => node(o));
 const K = kids.map((o) => node(o));
-const B = sibs.map((o) => node(o, "small"));
+const B = sibs.map((o) => node(o, { small: true, mark: false }));
 
 const all = [...P, ...S, ...K, ...B];
 const recorded = all.filter((n) => n.recorded).length;
@@ -61,85 +73,29 @@ const dupes = (list) => {
 };
 const dupKids = dupes(K), dupSibs = dupes(B);
 
-const dt = (o) => lifeOf(o);
+const standing = me.graft
+  ? { note: (me.line ? `generation ${p.gen || "—"} of the tree, ` : "") + `above the ${me.graft} graft` }
+  : me.line
+    ? { gen: `direct line${p.gen ? ` · generation ${p.gen}` : ""}${me.spine ? " · on the spine" : ""}` }
+    : { note: "in the tree" };
 ---
-<figure class="ptree">
-  {P.length > 0 && (
-    <div class="tier">
-      <div class="lab">{P.length === 1 ? "Parent" : "Parents"}</div>
-      <div class="row">
-        {P.map((o) => (
-          <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
-            <span class="nm">{o.name}</span>
-            {dt(o) && <span class="dt">{dt(o)}</span>}
-            <span class="via">{o.via}</span>
-          </a>
-        ))}
-      </div>
-      <div class="drop" aria-hidden="true"></div>
-    </div>
-  )}
-
-  <div class="tier self">
-    <div class="row">
-      <div class="node me">
-        <span class="nm">{p.name}</span>
-        <span class="dt">{life || p.life || "dates unknown"}</span>
-        {/* A person can be both an ancestor in the tree AND above a rejected
-            graft. Saying only the first would make this card contradict every
-            edge drawn around it. */}
-        {me.graft
-          ? <span class="via">{me.line ? `generation ${p.gen || "—"} of the tree, ` : ""}above the {me.graft} graft</span>
-          : me.line
-            ? <span class="via gen">direct line{p.gen ? ` · generation ${p.gen}` : ""}{me.spine ? " · on the spine" : ""}</span>
-            : <span class="via">in the tree</span>}
-      </div>
-      {S.map((o) => (
-        <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
-          <span class="mar">married</span>
-          <span class="nm">{o.name}</span>
-          {dt(o) && <span class="dt">{dt(o)}</span>}
-          <span class="via">{o.via}</span>
-        </a>
-      ))}
-    </div>
-  </div>
-
-  {K.length > 0 && (
-    <div class="tier">
-      <div class="drop up" aria-hidden="true"></div>
-      <div class="lab">{K.length} {K.length === 1 ? "child" : "children"}</div>
-      <div class="row">
-        {K.map((o) => (
-          <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
-            <span class="nm">{o.name}</span>
-            {dt(o) && <span class="dt">{dt(o)}</span>}
-            <span class="via">{o.via}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  )}
-
-  {B.length > 0 && (
-    <div class="tier sibs">
-      <div class="lab">{B.length} {B.length === 1 ? "brother or sister" : "brothers and sisters"}</div>
-      <div class="row">
-        {B.map((o) => (
-          <a class={o.cls} href={u(`/people/${o.slug}`)} title={`How this link is known: ${o.via}`}>
-            <span class="nm">{o.name}</span>
-            {dt(o) && <span class="dt">{dt(o)}</span>}
-          </a>
-        ))}
-      </div>
-    </div>
-  )}
-
-  <figcaption>
+<PersonTree
+  self={{ name: p.name, dates: life || p.life || "dates unknown", ...standing }}
+  parents={P}
+  spouses={S}
+  children={K}
+  siblings={B}
+  labels={{ siblings: (n) => (n === 1 ? "brother or sister" : "brothers and sisters") }}
+  always={true}
+  palette={{ tree: "var(--ink-3)", "name-font": "var(--sans)", "name-size": "14px",
+             "name-colour": "var(--ink)", via: "var(--ink-3)" }}
+>
+  <Fragment slot="keys">
     <span class="key"><i class="sw"></i> written in a record this archive has read</span>
     <span class="key"><i class="sw tree"></i> from the family tree, untested</span>
     {grafted > 0 && <span class="key"><i class="sw gone"></i> above a graft this archive rejects</span>}
-
+  </Fragment>
+  <Fragment slot="notes">
     <p class="warn" style="margin-top:.6rem">
       {all.length === 0
         ? <>No relationship is published for this person. Either the tree records none, or everyone
@@ -175,5 +131,5 @@ const dt = (o) => lifeOf(o);
       They are drawn separately. This archive does not merge records on a name.
       {" "}<a href={u("/name/")}>Why →</a></p>
     )}
-  </figcaption>
-</figure>
+  </Fragment>
+</PersonTree>
