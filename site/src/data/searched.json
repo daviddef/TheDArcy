@@ -1928,10 +1928,10 @@
   },
   {
    "src": "FreeCEN — Sussex, 1861",
-   "what": "Jane, Catherine and Charlotte D'Arcy in the 1861 census, under every spelling — a free index this archive had used for Gloucestershire, Somerset and Staffordshire but never for Sussex",
+   "what": "Jane, Catherine and Charlotte D'Arcy in the 1861 census — and then whether FreeCEN's Sussex could have held them at all",
    "when": "15 Sep 2026",
-   "outcome": "null",
-   "got": "Not there. D'ARCY, ARCY, D ARCY and DARCEY return nothing at all; DARCY returns six people and every one of them is a single Sussex-born household at KEMP TOWN, BRIGHTON — Eliza b. 1816 Newhaven, Daniel b. 1818 Bishopstone, and Thomas 1847, William 1849, George 1853 and James A. 1857 all born Brighton. None can be a sister: all three were born in Barbados between about 1786 and 1794. Recorded so that nobody chases this family again. Control: SMITH in Sussex 1861 returns the display cap of 1,000, and the six Darcys are themselves enumerated in Brighton, so the county and the town are both covered.",
+   "outcome": "empty",
+   "got": "A null on 15 September, corrected the same day to an EMPTY, because the control was wrong. D'ARCY, ARCY, D ARCY and DARCEY return nothing; DARCY returns six people, all one Sussex-born household at Kemp Town, Brighton — Eliza b. Newhaven 1816, Daniel b. Bishopstone 1818, four children b. Brighton 1847–57. None can be a sister. THE FIRST CONTROL WAS SMITH, which returns the display cap of 1,000, and I read that as the county and the town being covered. It is not. The real control is a record known to be there: the three sisters ARE in the 1851 Sussex census under the surname ARCY, at HO107/1646 folio 357 page 59 schedule 172, 22 Western Cottages, Brighton — and FreeCEN returns NOUGHT for Arcy in Sussex in 1851. It does not hold that piece. A capped surname count measures volume, not coverage.",
    "href": "/sussex-sisters"
   },
   {
@@ -1973,6 +1973,14 @@
    "outcome": "empty",
    "got": "It cannot. The index's districts are Cheltenham, Cirencester, Forest of Dean, Gloucester, North Cotswolds, Stroud and Warwick South, with Berkeley, Dursley, Uley and Wotton-under-Edge beneath them. Bristol is a registration county of its own and is not in it — which matches the UKBMD finding that Bristol has no local index at all. The Berkeley Sanigers are reachable this way and the Bristol Wakefields are not.",
    "href": "/errands"
+  },
+  {
+   "src": "FreeCEN — Sussex, 1851 and 1871",
+   "what": "The sisters in the two censuses either side of 1861, and a coverage test against a household known to exist",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "Neither year holds them, and neither year can be trusted to. 1871: D'ARCY returns one man, John D'Arcy born Liverpool 1847 at Withyham; ARCY and DARCY nothing. 1851: DARCY returns one woman, Mary Darcy born Essex 1798 at Ore; ARCY nothing at all — although this archive has the three sisters in the 1851 Sussex census under precisely that surname, at 22 Western Cottages, Brighton. So FreeCEN's Sussex is partial in a way its result counts conceal: Smith hits the 1,000 cap in 1851, 1861 and 1871 alike, while a piece containing a known household is simply absent.",
+   "href": "/sussex-sisters"
   }
  ]
 }

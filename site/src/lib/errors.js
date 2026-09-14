@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "15 September 2026",
+    what: "Ran the three Sussex sisters through FreeCEN, found nothing, and recorded it as a NULL — “control: SMITH in Sussex 1861 returns the display cap of 1,000, and the six Darcys are themselves enumerated in Brighton, so the county and the town are both covered”.",
+    truth:
+      "The county and the town are not the unit. FreeCEN's Sussex 1851 returns NOUGHT for the surname ARCY — and this archive has the three sisters in the 1851 Sussex census under exactly that surname, at HO107/1646 folio 357 page 59 schedule 172, 22 Western Cottages, Brighton. The piece is simply not in FreeCEN. Smith hits the 1,000-row display cap in 1851, 1861 and 1871 alike, which conceals the gap rather than measuring it.",
+    why: "I used a common surname as a coverage test, which measures how much a database holds and not whether it holds the thing being looked for. Worse, the cap meant the number could not go up: 1,000 was the ceiling, so it would have looked identical whether Sussex were half-transcribed or whole.",
+    lesson:
+      "Test an index with a record you already know is in it. This archive had one — the sisters in 1851 — and using it took one query and turned a null into an empty. A control that cannot fail is not a control.",
+    href: "/sussex-sisters",
+  },
+  {
+    when: "15 September 2026",
     what: "Printed two different dates for Robert D'Arcy's first commission and never noticed. The timeline, /hornby and three other pages said 1776, from Connolly's Roll. /the-corps said 1778, from a commercial index of the commission registers, and called it “his first commission, and now the earliest record of him anywhere in this archive”.",
     truth:
       "17 JANUARY 1776. The printed Army List of 1781 interleaves each engineer with his seniority date: “Wm. Kesterman 17 Jan. 76 · John Johnson do. · Charles Holloway do. · Thomas Whelpdale do. · John Humfrey do. · James Fiddes do. · Richard Hockings do. · Robert Beatson do. · ROBERT D'ARCY do. · Benjamin Slack 4 Mar.” The men after him break the ditto with their own later dates, which is what makes the chain readable. The 1778 list carries the same run, and Connolly agrees on the year.",

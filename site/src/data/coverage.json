@@ -334,6 +334,15 @@
    "verdict": "good",
    "note": "Free, and it gives the LOCAL reference a certificate is ordered against, which the GRO index does not. Its surname box does prefix matching when Exact Match is unticked, so the stem SANIG finds every form at once — searched as SANIGER alone it misses Lydia Sanigar entirely.",
    "href": "/sanigers"
+  },
+  {
+   "db": "FreeCEN — Sussex",
+   "where": "Brighton, 1851 to 1871",
+   "holds": "a great deal, and not the piece this archive needs",
+   "span": "1841–1891",
+   "verdict": "partial",
+   "note": "SMITH returns the 1,000-row display cap for 1851, 1861 and 1871, which looks like full coverage and is not. The three D'Arcy sisters are enumerated in the 1851 Sussex census under the surname ARCY at HO107/1646 folio 357 — and FreeCEN returns nought for Arcy in Sussex in 1851. Test a free census index with a record you already know is in it, never with a common surname.",
+   "href": "/sussex-sisters"
   }
  ]
 }
