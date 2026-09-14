@@ -9,6 +9,54 @@
  ],
  "rows": [
   {
+   "src": "FindMyPast — England & Wales Deaths 1837-2007 (GRO index)",
+   "what": "Deaths of Robert D'Arcy's three surviving daughters in Sussex",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "All three. CHARLOTTE aged 73, Brighton Q2 1869, vol 2B p.152; JANE aged 87, Brighton Q1 1875, vol 2B p.203; CATHERINE aged 86, Brighton Q1 1876, vol 2B p.164. The ages run back to births of about 1795, 1787 and 1789 against the tree's 1794, 1787 and 1789 — two exact, one a year out. Added to this archive the previous day on the authority of web trees alone, now in the public record.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast — Horsham, Petworth, Midhurst and Steyning Express, 8 Feb 1876",
+   "what": "Any notice of Catherine D'Arcy's death",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "“On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86.” Confirms the exact date the tree gave without a source, confirms she never married, and gives an address the archive did not have.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast — Index to Death Duty Registers 1796-1903",
+   "what": "Whether any of the sisters left an estate",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "CATHERINE D'ARCY of Brighton, grant year 1876, Court of Probate, TNA IR 27/396. The register behind it names executors and legatees — the likeliest document to name this family's English descendants after 1850. Charlotte and Jane produce no entry.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast — 1841 England, Wales & Scotland Census",
+   "what": "The sisters in a household",
+   "when": "14 Sep 2026",
+   "outcome": "yield",
+   "got": "JANE 40, CATHARINE 39 and CHARLOTTE 35 D'ARCY, one household, WESTERN BUILDINGS, BRIGHTON, schedule 1912, HO107/1122 bk8 f.37 p.22, with SARAH HARMER, 20, servant. The ages are eleven to thirteen years light against their real ages of 53, 51 and 46 — stated, not hidden, on the page.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast — 1851, 1861 and 1871 censuses",
+   "what": "The sisters between 1841 and their deaths",
+   "when": "14 Sep 2026",
+   "outcome": "empty",
+   "got": "Not in Brighton in any of the three, and not anywhere in England, Wales or Scotland under a wildcard D*ARCY born 1783–1795. Searched by year alone after discovering that combining year and place breaks the query. A real gap: they are in Brighton in 1841 and dying there from 1869.",
+   "href": "/sussex-sisters"
+  },
+  {
+   "src": "FindMyPast census search — a control test",
+   "what": "Whether a zero result meant anything",
+   "when": "14 Sep 2026",
+   "outcome": "blocked",
+   "got": "IT DID NOT. Jane Smith, born about 1788, Sussex, 1871 census returns ZERO — impossible. The same search returns 60 by year alone and 136 by place alone. Combining YEAROFBIRTH and KEYWORDSPLACE on a census set silently returns nothing and presents it as a clean negative. Every census null this archive has drawn from a query carrying both is worthless.",
+   "href": "/sussex-sisters"
+  },
+  {
    "src": "This archive's own 719 data files and pages — tools/crossread.py",
    "what": "Every open question, checked against what this site had already published",
    "when": "14 Sep 2026",

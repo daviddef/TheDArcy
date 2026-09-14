@@ -1,9 +1,46 @@
 {
  "title": "What changed",
- "eyebrow": "21 passes · 236 changes",
+ "eyebrow": "22 passes · 245 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+  {
+   "when": "14 September 2026",
+   "title": "The Sussex sisters, documented",
+   "did": [
+    "Took the three daughters added to this archive the same day out of its own family tree — Jane, Catherine and Charlotte — and tested them against the public record. All three hold.",
+    "Found all three CIVIL DEATH REGISTRATIONS, same district, seven years apart: Charlotte aged 73, Brighton Q2 1869, vol 2B p.152; Jane aged 87, Brighton Q1 1875, vol 2B p.203; Catherine aged 86, Brighton Q1 1876, vol 2B p.164.",
+    "The ages run back to births of about 1795, 1787 and 1789 against the tree's 1794, 1787 and 1789 — two exact, one a year out. These were web-tree claims yesterday.",
+    "Found Catherine's obituary: “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86” — Horsham, Petworth, Midhurst and Steyning Express, 8 February 1876. It confirms the exact date, confirms she never married, and gives an address.",
+    "Found that she left an estate: Index to Death Duty Registers, Court of Probate, Brighton 1876, TNA IR 27/396 — the likeliest document anywhere to name this family's English descendants after 1850.",
+    "Found all three sisters IN ONE HOUSEHOLD in the 1841 census — Western Buildings, Brighton, schedule 1912, with a servant, Sarah Harmer, 20.",
+    "Published the one thing that does not fit rather than burying it: the 1841 ages are 40, 39 and 35 when the sisters were 53, 51 and 46.",
+    "CAUGHT A SEARCH THAT LIES. A first pass reported no Jane D'Arcy of the right age in Sussex in 1871. The control — Jane Smith, same age, same county, same census — returned zero, which is impossible. Combining a year of birth with a place breaks FindMyPast's census query silently.",
+    "Re-ran the census work by year alone: the sisters are in none of 1851, 1861 or 1871 under any D*ARCY spelling. A real gap, now an errand rather than a false negative."
+   ],
+   "found": [
+    [
+     "New page",
+     "/sussex-sisters — three daughters moved from a web tree to the public record"
+    ],
+    [
+     "Corrected",
+     "/robert-family — Jane, Catherine and Charlotte upgraded from family tree to documented"
+    ],
+    [
+     "Added",
+     "/crossread — the three it produced are now tested"
+    ],
+    [
+     "Added",
+     "/coverage — the census query that returns zero when it should not"
+    ],
+    [
+     "Added",
+     "/errands — three new jobs, including the Death Duty register at Kew"
+    ]
+   ]
+  },
   {
    "when": "14 September 2026",
    "title": "Reading the archive against its own open questions",

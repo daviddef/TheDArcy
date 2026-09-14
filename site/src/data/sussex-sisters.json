@@ -1,0 +1,63 @@
+{
+ "found": "14 September 2026",
+ "lede": "Three of Major-General Robert D'Arcy's daughters were added to this archive yesterday out of its own family tree, on the authority of nothing but other people's web trees. All three are now documented: three death registrations in the same Sussex district within seven years, a newspaper notice with an address, a probate at Kew, and one census household that holds all three of them under one roof.",
+ "who": "JANE, born Barbados December 1787 · CATHERINE, born Barbados December 1789 · CHARLOTTE, born Lyme Regis October 1794. The first two were christened at St Michael, Barbados while their father served there; the youngest was born after the family came home.",
+ "deaths": {
+  "head": "Three registrations, one district, seven years",
+  "rows": [
+   ["CHARLOTTE DARCY", "aged 73", "Q2 1869", "Brighton, Sussex", "vol 2B, page 152"],
+   ["JANE DARCY", "aged 87", "Q1 1875", "Brighton, Sussex", "vol 2B, page 203"],
+   ["CATHERINE DARCY", "aged 86", "Q1 1876", "Brighton, Sussex", "vol 2B, page 164"]
+  ],
+  "means": "These are General Register Office death index entries, and after 1866 that index gives an AGE AT DEATH. Run the ages back and you get births of about 1795, 1787 and 1789. The tree — sourced from web trees and nothing else — gives 19 October 1794, 15 December 1787 and 10 December 1789. TWO OF THE THREE AGREE TO THE YEAR, and Charlotte is out by one, which is what an age stated by a grieving household does.",
+  "chip": "documented"
+ },
+ "notice": {
+  "head": "And Catherine has an obituary with an address in it",
+  "paper": "Horsham, Petworth, Midhurst and Steyning Express, Tuesday 8 February 1876, page 2",
+  "text": "On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86.",
+  "ocr": "The digitised text reads “On the 33rd alt., at vinare, Brighton, Mies Catharine DArcy, aged 86” — “ult.” for the previous month, “Miss” for the title. Read against the register entry it is unambiguous.",
+  "means": "Three things at once. THE DATE: “23rd ult.” in a paper of 8 February is 23 JANUARY 1876, exactly the date this archive's tree gives her and could not previously source. THE TITLE: MISS — she never married, which is what the tree says and no record had confirmed. And THE ADDRESS: Bedford Square, a Regency terrace at the western end of Brighton seafront."
+ },
+ "probate": {
+  "head": "She left an estate",
+  "body": "CATHERINE D'ARCY of BRIGHTON, Sussex, grant year 1876, COURT OF PROBATE — Index to Death Duty Registers 1796-1903, The National Archives IR 27/396. The register behind that index states what the estate was worth and names the executors and legatees, which for three unmarried sisters is the document most likely to name the rest of the family.",
+  "chip": "indexed, unread"
+ },
+ "census": {
+  "head": "All three under one roof, 1841",
+  "ref": "HO107/1122, book 8, folio 37, page 22, schedule 1912 · WESTERN BUILDINGS, BRIGHTON · sub-district The Palace",
+  "rows": [
+   ["Jane", "D'Arcy", 40],
+   ["Catharine", "D'Arcy", 39],
+   ["Charlotte", "D'Arcy", 35]
+  ],
+  "servant": "Enumerated immediately before them, at the same address: SARAH HARMER, 20, born Sussex.",
+  "means": "Three unmarried D'Arcy sisters named Jane, Catharine and Charlotte, keeping house together in Brighton with a servant — and three unmarried D'Arcy women named Jane, Catherine and Charlotte dying in the Brighton registration district between 1869 and 1876. There is no serious doubt that these are the same three women.",
+  "problem": "EXCEPT FOR THE AGES, AND THIS PAGE IS NOT GOING TO HIDE THEM. In June 1841 Robert's daughters were 53, 51 and 46. The enumerator wrote 40, 39 and 35 — eleven to thirteen years light, and consistently so across all three. The 1841 census instructed enumerators to round adult ages down to the nearest five, which explains none of it: 39 and 35 are not the same rule. The likeliest reading is three genteel unmarried women in a seaside town giving the ages they preferred, which was common enough to be unremarkable. But it is a discrepancy, it is the only thing that does not fit, and it is stated here rather than buried.",
+  "chip": "near-certain, with an age problem"
+ },
+ "nulls": {
+  "head": "And where they are not",
+  "rows": [
+   ["1851 census, Brighton", "One D'Arcy in the whole town: Mary, born about 1821. None of the sisters."],
+   ["1861 census, Brighton", "Six: Daniel b.1818, Eliza b.1816 and four children. A different family entirely."],
+   ["1871 census, Brighton", "One: Ann Darcy, born about 1807."],
+   ["1861 and 1871, ALL of England, Wales and Scotland", "Searched by year of birth alone, with a wildcard surname, for any D*ARCY born 1783–1795: four and six results respectively, and not one of them is these women."]
+  ],
+  "means": "So they are in Brighton in 1841, dying in Brighton from 1869, and enumerated in neither 1851, 1861 nor 1871 under any spelling beginning D and ending ARCY. That is a real gap and not a failed search. The likeliest cause is a transcription that lost the leading D, or a surname the enumerator wrote as something else entirely — but LASTNAME=ARCY returns nothing at Brighton either. It is the open end of this page."
+ },
+ "trap": {
+  "head": "A search that lies, and how it was caught",
+  "body": "The first pass of this work reported NO Jane D'Arcy of the right age in Sussex in 1871, from a query combining a year of birth with a place. A control put through the same query — JANE SMITH, born about 1788, Sussex, 1871 — returned ZERO, which is impossible.",
+  "detail": "Run separately, the same search returns 60 results by year and 136 by place. Combined, FindMyPast's census search returns nothing and reports it as a clean negative. Every null this archive draws from a census query carrying BOTH a year of birth and a place is worthless.",
+  "chip": "the query was broken, not the record",
+  "lesson": "This is the third time in a fortnight that a confident negative has turned out to be an artefact of how the question was asked — after SANIGOR, and after searching Bristol for a woman who died in Queensland. The control test is not a formality."
+ },
+ "matters": [
+  ["Three people move from a web tree to the public record.", "Jane, Catherine and Charlotte were added to this archive yesterday on the authority of the McDougall Web Site, the Darcy Web Site and a MyHeritage SmartCopy. They now have civil death registrations with volume and page, and one of them has an obituary and a probate."],
+  ["Two of the tree's dates are confirmed to the year, and one to the day.", "Jane's age of 87 and Catherine's of 86 fit the tree's December 1787 and December 1789 exactly. Catherine's death of 23 January 1876 is confirmed by a newspaper against a date the tree gave without a source."],
+  ["The family had a Brighton house.", "Western Buildings in 1841, Bedford Square by 1876, a servant in both directions — the general's unmarried daughters living together on the Sussex coast for at least thirty-five years, which nobody in this archive knew a week ago."]
+ ],
+ "open": "Where they were in 1851, 1861 and 1871. What the Death Duty register says Catherine left and to whom. Whether Charlotte and Jane also left probates. And whether any of the three is buried where the others are — no burial record has yet been looked for at all."
+}

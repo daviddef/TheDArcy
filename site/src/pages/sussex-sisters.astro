@@ -1,0 +1,101 @@
+---
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
+import { u } from "../lib/url.js";
+import d from "../data/sussex-sisters.json";
+---
+<Base
+  title="The Sussex sisters"
+  eyebrow={`Brighton, 1841–1876 · found ${d.found}`}
+  dek="Three of Robert D'Arcy's daughters, added to this archive yesterday on the authority of other people's web trees, and documented today from the public record.">
+
+  <section class="blk">
+    <p class="lede">{d.lede}</p>
+    <p class="dek" style="margin-top:1rem">{d.who}</p>
+  </section>
+
+  <Blk label="The General Register Office" title={d.deaths.head}>
+    <Scroll>
+      <table>
+        <thead><tr><th>Name as registered</th><th class="m">Age</th><th class="m">When</th><th>District</th><th>Reference</th></tr></thead>
+        <tbody>
+          {d.deaths.rows.map(([who, age, when, dist, ref]) => (
+            <tr>
+              <td><strong>{who}</strong></td>
+              <td class="m">{age}</td>
+              <td class="m" style="white-space:nowrap">{when}</td>
+              <td>{dist}</td>
+              <td class="small mono">{ref}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.deaths.means}
+      {" "}<span class="chip doc">{d.deaths.chip}</span></Note>
+  </Blk>
+
+  <Blk label={d.notice.paper} title={d.notice.head}>
+    <Note style="border-left-width:3px">
+      <strong style="font-size:1.15em">{d.notice.text}</strong>
+      <span class="chip doc">documented</span>
+    </Note>
+    <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.notice.ocr}</p>
+    <p style="margin-top:1.1rem">{d.notice.means}</p>
+  </Blk>
+
+  <Blk label="The National Archives IR 27/396" title={d.probate.head}>
+    <p class="lede">{d.probate.body} <span class="chip inf">{d.probate.chip}</span></p>
+    <p class="small" style="margin-top:1rem"><a href={u("/errands/")}>What it would cost to read →</a></p>
+  </Blk>
+
+  <Blk label={d.census.ref} title={d.census.head}>
+    <Scroll>
+      <table>
+        <thead><tr><th>Forename</th><th>Surname</th><th class="m">Age stated</th></tr></thead>
+        <tbody>{d.census.rows.map(([f, s, a]) => (
+          <tr><td><strong>{f}</strong></td><td>{s}</td><td class="m">{a}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p class="small" style="margin-top:1rem">{d.census.servant}</p>
+    <Note style="margin-top:1.2rem">{d.census.means}</Note>
+    <Note style="margin-top:1.2rem">
+      <strong>And the thing that does not fit.</strong> {d.census.problem}
+      {" "}<span class="chip inf">{d.census.chip}</span>
+    </Note>
+  </Blk>
+
+  <Blk label="Coverage" title={d.nulls.head}>
+    <Scroll>
+      <table>
+        <tbody>{d.nulls.rows.map(([k, v]) => (
+          <tr><td style="white-space:nowrap"><strong class="small">{k}</strong></td>
+              <td class="small">{v}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.nulls.means}</Note>
+  </Blk>
+
+  <Blk label="Method" title={d.trap.head}>
+    <p class="lede">{d.trap.body}</p>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.trap.detail}</strong> <span class="chip lore">{d.trap.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.trap.lesson}
+      {" "}<a href={u("/what-we-got-wrong/")}>The other two →</a></p>
+  </Blk>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>What this changes</h2>
+    <ol class="dek" style="margin-top:1rem">
+      {d.matters.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
+    </ol>
+    <Note style="margin-top:1.3rem"><strong>Still open.</strong> {d.open}</Note>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/robert-family/")}>Robert and Jean's family →</a> ·
+      <a href={u("/crossread/")}>Where these three came from →</a> ·
+      <a href={u("/constantine/")}>Their brother →</a></p>
+  </section>
+</Base>

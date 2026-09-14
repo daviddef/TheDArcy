@@ -1,11 +1,11 @@
 {
-"entries": 789,
-"distinct": 567,
-"records": 316,
+"entries": 798,
+"distinct": 568,
+"records": 325,
 "tree": 473,
 "grafted": 98,
-"linked": 789,
-"surnames": 192,
+"linked": 798,
+"surnames": 193,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1177,13 +1177,55 @@
 },
 {
 "surname": "D'ARCY",
-"n": 117,
+"n": 125,
 "rows": [
+{
+"name": "Catherine D'Arcy",
+"says": "death · aged 86 · Brighton district, Sussex, Q1 1876 · vol 2B p.164 — matching a birth of 10 Dec 1789",
+"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "death notice · “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86”",
+"source": "record · Horsham, Petworth, Midhurst and Steyning Express, 8 Feb 1876, p.2",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "death duty · grant year 1876 · Court of Probate · of Brighton, Sussex",
+"source": "record · Index to Death Duty Registers 1796-1903, TNA IR 27/396",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "census 1841 · aged 39 · Western Buildings, Brighton",
+"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
 {
 "name": "Charlotte D'Arcy",
 "says": "born 29 April 1825 · baptised Chatham 31 March 1826 · father GEORGE PITT D'ARCY, Bt: Major 39th Foot · mother MARIA · eight days before the England sailed",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "death · aged 73 · Brighton district, Sussex, Q2 1869 · vol 2B p.152",
+"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "census 1841 · aged 35 · Western Buildings, Brighton",
+"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
+"link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
 {
@@ -1330,6 +1372,20 @@
 "name": "Jane D'Arcy",
 "says": "christening · 17 March 1788, St Michael, Barbados · father Robt. D'Arcy, mother Jane — a sixth child of Robert and Jean",
 "source": "record · Caribbean Birth & Baptism Index 1590-1928, film 1157925, batch C51395-3",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "death · aged 87 · Brighton district, Sussex, Q1 1875 · vol 2B p.203 — matching a birth of 15 Dec 1787",
+"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "census 1841 · aged 40 · Western Buildings, Brighton, with her sisters Catharine and Charlotte",
+"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
 "link": "https://www.findmypast.com.au/",
 "kind": "record"
 },
@@ -5509,6 +5565,19 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/sophie-gustrow",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "HARMER",
+"n": 1,
+"rows": [
+{
+"name": "Sarah Harmer",
+"says": "census 1841 · aged 20, born Sussex · Western Buildings, Brighton — servant to the D'Arcy sisters",
+"source": "record · 1841 census HO107/1122 bk8 f.37 p.22",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
 }
 ]
 },

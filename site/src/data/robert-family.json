@@ -57,16 +57,16 @@
   {
    "who": "JANE D'ARCY",
    "b": "born 15 December 1787, BARBADOS · christened St Michael, 17 March 1788",
-   "note": "Christened in the same Barbados parish as Constantine, to the same parents. This page listed five children until 14 September 2026 and she was not among them — though the tree has held her all along, and holds her death too: JANUARY 1875 AT FALMER, outside Brighton, aged EIGHTY-EIGHT. She outlived every one of her brothers and sisters except Catherine.",
-   "chip": "family tree",
-   "href": "/crossread"
+   "note": "Christened in the same Barbados parish as Constantine, to the same parents. DOCUMENTED 14 September 2026: died in the BRIGHTON registration district in the first quarter of 1875, AGED 87 — which matches her recorded birth of 15 December 1787 exactly. In 1841 she was keeping house in Brighton with her two sisters.",
+   "chip": "documented",
+   "href": "/sussex-sisters"
   },
   {
    "who": "CATHERINE D'ARCY",
    "b": "born 10 December 1789, BARBADOS",
-   "note": "The third of the Barbados children and the longest-lived of the ten: died at BRIGHTON on 23 January 1876, aged eighty-six. Entirely unknown to this site before its own tree was read against its own open questions.",
-   "chip": "family tree",
-   "href": "/crossread"
+   "note": "The third of the Barbados children. DOCUMENTED 14 September 2026: “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86” — Horsham, Petworth, Midhurst and Steyning Express, 8 February 1876. Her death is registered at Brighton in the first quarter of 1876 and she left an estate: Death Duty Register, TNA IR 27/396.",
+   "chip": "documented",
+   "href": "/sussex-sisters"
   },
   {
    "who": "ANNA MARIA D'ARCY",
@@ -85,9 +85,9 @@
   {
    "who": "CHARLOTTE D'ARCY",
    "b": "born 19 October 1794, LYME REGIS, DORSET",
-   "note": "The youngest, and the only one born in the West Country. Died at Brighton in April 1869, aged seventy-four. NOT to be confused with the CHARLOTTE D'ARCY christened at Chatham in 1826 — that one is her niece, George Pitt's daughter, who sailed for New South Wales eight days later.",
-   "chip": "family tree",
-   "href": "/crossread"
+   "note": "The youngest, and the only one born in the West Country. DOCUMENTED 14 September 2026: died in the BRIGHTON district in the second quarter of 1869, aged 73. NOT to be confused with the CHARLOTTE D'ARCY christened at Chatham in 1826 — that one is her niece, George Pitt's daughter, who sailed for New South Wales eight days later.",
+   "chip": "documented",
+   "href": "/sussex-sisters"
   }
  ],
  "portsea": "Only one of them was baptised at Portsea, and this archive spent months reading that as meaningful. It is not: FindMyPast's Hampshire collection covers Portsea St Mary continuously from 1770 to 1792 and returns Joseph and nobody else — so the others were christened wherever the Corps had posted him. A regiment moves; a parish register does not follow it. AND THIS ARCHIVE HAD ALREADY FOUND WHERE TWO OF THEM WERE, AND HAD NOT PUT IT HERE. Constantine was christened at St Michael, Barbados in 1786 and Jane in the same parish in 1788 — inside the twenty-four-year gap between Robert's first commission and his next gazetted promotion. That has been on the Hornby page since the summer while this page called Constantine unplaced.",
@@ -95,9 +95,10 @@
  "open": [
   "Robert's own parentage — and whether the CONSTANTINE D'ARCY of 1759–1778, whom the tree makes his brother by the same two parents, is a real sibling or this family's own Constantine duplicated and back-dated.",
   "Whether Richard was his son, which needs a baptism from a parish this archive has not yet identified.",
-  "Everything about CATHERINE, the two ANNA MARIAS and CHARLOTTE beyond the tree's dates. Three of them died in Sussex after 1860, which puts them inside civil registration and inside the census.",
+  "What became of the two ANNA MARIAS beyond the tree's dates — both died as children. Their three surviving sisters are now documented: JANE, CATHERINE and CHARLOTTE lived together in Brighton and died there between 1869 and 1876.",
   "When exactly Robert went to Barbados. His children's birthplaces put him there by 1786 and home by 1792; the Board of Ordnance papers would say.",
-  "And who ELIZABETH PITT was — living in Joseph's house in 1841, dying at Lymington in 1851, and sharing a surname that ran through four generations of this family. This is the one question the archive's own material could not help with."
+  "And who ELIZABETH PITT was — living in Joseph's house in 1841, dying at Lymington in 1851, and sharing a surname that ran through four generations of this family. This is the one question the archive's own material could not help with.",
+  "Where Jane, Catherine and Charlotte were in 1851, 1861 and 1871 — they are in the Brighton census in 1841 and in none of the three that follow, under any spelling."
  ],
  "crossread": "Five of these children were added on 14 September 2026, not from any new record but from this archive's own family tree — read, for the first time, against this archive's own open questions."
 }

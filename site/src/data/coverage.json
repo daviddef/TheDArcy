@@ -181,6 +181,15 @@
    "verdict": "partial",
    "note": "The index is searchable on a paid trial and the transcripts are not — “Subscribe to unlock exclusive records”. Joseph D'Arcy's whole artillery career and a Constantine D'Arcy entry of 1777-79 are visible as dates and unreadable as records.",
    "href": "/the-corps"
+  },
+  {
+   "db": "FindMyPast census search (1841–1911)",
+   "where": "any census set, when a YEAR OF BIRTH and a PLACE are combined",
+   "holds": "everything — but returns nothing",
+   "span": "—",
+   "verdict": "unusable",
+   "note": "A query carrying both yearofbirth and keywordsplace returns ZERO on census sets and presents it as a clean negative. Control: JANE SMITH born about 1788 in Sussex, 1871 — zero. The same search returns 60 by year alone and 136 by place alone. Search on one or the other and filter by hand.",
+   "href": "/sussex-sisters"
   }
  ]
 }

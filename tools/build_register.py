@@ -675,6 +675,26 @@ rec("Martha Millingen", "death · 19 July 1898 · parents HENRY WAKEFIELD and CA
 rec("Martha Wakefield", "marriage · 31 July 1887, to PHILIP MILLINGEN — the only Martha Wakefield marriage in the Queensland index",
     "record · Queensland marriage index 1887/B/11632", "https://www.familyhistory.bdm.qld.gov.au/")
 
+# --- The Sussex sisters, 14 September 2026 -----------------------------------
+rec("Charlotte D'Arcy", "death · aged 73 · Brighton district, Sussex, Q2 1869 · vol 2B p.152",
+    "record · England & Wales Deaths 1837-2007 (GRO index)", "https://www.findmypast.com.au/")
+rec("Jane D'Arcy", "death · aged 87 · Brighton district, Sussex, Q1 1875 · vol 2B p.203 — matching a birth of 15 Dec 1787",
+    "record · England & Wales Deaths 1837-2007 (GRO index)", "https://www.findmypast.com.au/")
+rec("Catherine D'Arcy", "death · aged 86 · Brighton district, Sussex, Q1 1876 · vol 2B p.164 — matching a birth of 10 Dec 1789",
+    "record · England & Wales Deaths 1837-2007 (GRO index)", "https://www.findmypast.com.au/")
+rec("Catherine D'Arcy", "death notice · \u201cOn the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86\u201d",
+    "record · Horsham, Petworth, Midhurst and Steyning Express, 8 Feb 1876, p.2", "https://www.findmypast.com.au/")
+rec("Catherine D'Arcy", "death duty · grant year 1876 · Court of Probate · of Brighton, Sussex",
+    "record · Index to Death Duty Registers 1796-1903, TNA IR 27/396", "https://discovery.nationalarchives.gov.uk/")
+rec("Jane D'Arcy", "census 1841 · aged 40 · Western Buildings, Brighton, with her sisters Catharine and Charlotte",
+    "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912", "https://www.findmypast.com.au/")
+rec("Catherine D'Arcy", "census 1841 · aged 39 · Western Buildings, Brighton",
+    "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912", "https://www.findmypast.com.au/")
+rec("Charlotte D'Arcy", "census 1841 · aged 35 · Western Buildings, Brighton",
+    "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912", "https://www.findmypast.com.au/")
+rec("Sarah Harmer", "census 1841 · aged 20, born Sussex · Western Buildings, Brighton — servant to the D'Arcy sisters",
+    "record · 1841 census HO107/1122 bk8 f.37 p.22", "https://www.findmypast.com.au/")
+
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [
     ("George Pitt D'Arcy", "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”", "59769271"),

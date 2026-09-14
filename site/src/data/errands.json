@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "40 jobs a person can do and this archive cannot",
+ "eyebrow": "43 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -396,13 +396,43 @@
   },
   {
    "n": 40,
-   "what": "The Sussex deaths of JANE, CATHERINE and CHARLOTTE D'ARCY — 1869, 1875 and 1876",
+   "what": "The Sussex deaths of JANE, CATHERINE and CHARLOTTE D'ARCY — DONE, and what it opened",
    "where": "General Register Office (all three are inside civil registration); and the 1841–1871 censuses for Brighton and Falmer",
-   "cost": "free to index, £12.50 each to read",
-   "settles": "Three of Robert D'Arcy's daughters are said by the tree to have died in and around Brighton — Charlotte April 1869 aged 74, Jane January 1875 aged 88, Catherine 23 January 1876 aged 86. All three are after 1837, so all three have death registrations, and three elderly unmarried sisters living together in Brighton would appear in four censuses. This is the largest untouched block of English evidence in the archive.",
-   "why": "THREE DAUGHTERS, FIFTY YEARS OF ENGLISH RECORDS, NEVER ONCE SEARCHED",
+   "cost": "done",
+   "settles": "ALL THREE DEATH REGISTRATIONS FOUND, 14 September 2026. Charlotte, aged 73, Brighton Q2 1869, vol 2B p.152; Jane, aged 87, Brighton Q1 1875, vol 2B p.203; Catherine, aged 86, Brighton Q1 1876, vol 2B p.164. Catherine also has a newspaper notice giving her address as Bedford Square and the title MISS, and all three appear in one household in the 1841 Brighton census. What remains is the probate, the certificates themselves, and the gap in 1851–1871.",
+   "why": "LARGELY CLOSED 14 SEPTEMBER 2026",
    "href": "/robert-family",
-   "file": "opened 14 September 2026"
+   "file": "three registrations, an obituary, a probate index entry and a census household"
+  },
+  {
+   "n": 41,
+   "what": "IR 26 — the Death Duty register behind IR 27/396, for CATHERINE D'ARCY of Brighton, 1876",
+   "where": "The National Archives, Kew",
+   "cost": "about £3.50 as a download, or a visit",
+   "settles": "Catherine D'Arcy died at Bedford Square, Brighton in January 1876 leaving an estate that attracted duty. The Death Duty register states its value and names the executors and the legatees. Three unmarried sisters who outlived their brothers leave their money to nephews and nieces — which is to say, this is the document most likely to name the next generation of this family in England, including anyone descended from Joseph at Lymington.",
+   "why": "THE MOST LIKELY DOCUMENT TO NAME THE ENGLISH FAMILY AFTER 1850",
+   "href": "/sussex-sisters",
+   "file": "index entry found 14 September 2026; register unread"
+  },
+  {
+   "n": 42,
+   "what": "Three GRO death certificates — Charlotte 1869, Jane 1875, Catherine 1876, Brighton",
+   "where": "General Register Office; references in hand (2B/152, 2B/203, 2B/164)",
+   "cost": "£12.50 each",
+   "settles": "A death certificate gives the exact date, the address, the cause, and the INFORMANT — who for an unmarried woman of 87 is usually the relative who was present. Three certificates would give three informants, and the informants are the point.",
+   "why": "",
+   "href": "/sussex-sisters",
+   "file": "references found 14 September 2026"
+  },
+  {
+   "n": 43,
+   "what": "Jane, Catherine and Charlotte D'Arcy in the 1851, 1861 and 1871 censuses",
+   "where": "Any census index — but not under a surname beginning D and ending ARCY, which has been searched",
+   "cost": "patience, and a different approach",
+   "settles": "They are in Brighton in 1841 and dying in Brighton from 1869, and enumerated in none of the three censuses between under any D*ARCY spelling, nor as ARCY. The likeliest cause is a transcription that lost or mangled the surname. A street search of Bedford Square and Western Buildings in 1851, 1861 and 1871 would find them by address instead of by name. The Brighton Standard and Fashionable Visitors' List prints house-by-house occupancy for Bedford Square and is another way in.",
+   "why": "",
+   "href": "/sussex-sisters",
+   "file": "searched and empty, 14 September 2026 — a real gap, not a failed query"
   }
  ],
  "ydna": {
