@@ -1,15 +1,15 @@
 {
-"entries": 829,
-"distinct": 575,
-"records": 356,
+"entries": 833,
+"distinct": 577,
+"records": 360,
 "tree": 473,
 "grafted": 98,
-"linked": 829,
-"surnames": 196,
+"linked": 833,
+"surnames": 197,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 166,
+"n": 168,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -387,6 +387,20 @@
 "says": "baptised Madeley All Saints, 12 September 1742 · father William Sneyd — and a William son of William buried there 29 September 1744",
 "source": "record · FreeREG, Madeley All Saints parish register",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "William Sneyd",
+"says": "burial · 13 MAY 1827, MADELEY ALL SAINTS, Staffordshire · AGED 84, born about 1743 · the better of two candidates for the weaver, and not proved",
+"source": "record · National Burial Index for England & Wales (Midland Ancestors)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "William Sneyd",
+"says": "burial · 1819, Madeley All Saints, Staffordshire · aged 88, born about 1731 · the other candidate for the weaver",
+"source": "record · National Burial Index for England & Wales (Midland Ancestors)",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1177,7 +1191,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 150,
+"n": 151,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -1232,6 +1246,13 @@
 "name": "Catherine Lucy Jane D'Arcy",
 "says": "baptism · 23 January 1832, Milford · father JOSEPH, “Lt Col RA of MILFORD HOUSE”, mother KATHERINE LUCY ELIZA",
 "source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Charlotte Cathcart D'Arcy",
+"says": "marriage · 1859, PARRAMATTA, New South Wales · to ROBERT MEAD PEARSON · registration 2618",
+"source": "record · New South Wales Marriages 1788-1945",
 "link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
@@ -6306,6 +6327,19 @@
 "says": "farmer of Meringandan · an unrelated case bound into the same file",
 "source": "record · QSA coronial file ITM2736504 (DR103140), read in full",
 "link": "https://www.archivessearch.qld.gov.au/items/ITM2736504",
+"kind": "record"
+}
+]
+},
+{
+"surname": "PEARSON",
+"n": 1,
+"rows": [
+{
+"name": "Robert Mead Pearson",
+"says": "marriage · 1859, Parramatta, New South Wales · to CHARLOTTE CATHCART D'ARCY · registration 2618",
+"source": "record · New South Wales Marriages 1788-1945",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 }
 ]

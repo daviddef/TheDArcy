@@ -765,6 +765,14 @@ rec("Catherine D'Arcy", "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURC
     "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
 rec("Robert West D'Arcy", "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
     "record · British India Office Marriages", "https://www.findmypast.co.uk/")
+rec("William Sneyd", "burial · 13 MAY 1827, MADELEY ALL SAINTS, Staffordshire · AGED 84, born about 1743 · the better of two candidates for the weaver, and not proved",
+    "record · National Burial Index for England & Wales (Midland Ancestors)", "https://www.findmypast.co.uk/")
+rec("William Sneyd", "burial · 1819, Madeley All Saints, Staffordshire · aged 88, born about 1731 · the other candidate for the weaver",
+    "record · National Burial Index for England & Wales (Midland Ancestors)", "https://www.findmypast.co.uk/")
+rec("Charlotte Cathcart D'Arcy", "marriage · 1859, PARRAMATTA, New South Wales · to ROBERT MEAD PEARSON · registration 2618",
+    "record · New South Wales Marriages 1788-1945", "https://www.findmypast.co.uk/")
+rec("Robert Mead Pearson", "marriage · 1859, Parramatta, New South Wales · to CHARLOTTE CATHCART D'ARCY · registration 2618",
+    "record · New South Wales Marriages 1788-1945", "https://www.findmypast.co.uk/")
 
 # --- Trove ------------------------------------------------------------------
 for n, says, art in [

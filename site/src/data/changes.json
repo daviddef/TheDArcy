@@ -1,6 +1,6 @@
 {
  "title": "What changed",
- "eyebrow": "23 passes · 288 changes",
+ "eyebrow": "23 passes · 291 changes",
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
@@ -42,7 +42,10 @@
     "CLOSED THE BURIAL QUESTION. All three Sussex sisters are buried out of ST ANDREW'S OLD CHURCH, HOVE — and their entries are on THE SAME PAGE of the same register, TNA RG 37/65/2 page 47. CHARLOTTE 28 MAY 1869, JANE 10 JANUARY 1875, CATHERINE 23 JANUARY 1876.",
     "Two exact dates where the archive held only GRO quarters — and Catherine's 23 January is the date the Horsham paper printed a fortnight after the event, so a parish register and a newspaper agree without either having seen the other.",
     "FOUND ROBERT WEST D'ARCY, married at BOMBAY in 1846. The middle name is the find: WEST is Lady Catherine Georgiana's family name, so Joseph's son carried his mother's peerage surname to India. The transcript is paywalled even on a paid trial — indexed, not read.",
-    "And a third broken FindMyPast parameter: `sourcecategory` mangles to `life-events-bmds` and returns zero whatever else is asked. Any null drawn through it is worthless."
+    "And a third broken FindMyPast parameter: `sourcecategory` mangles to `life-events-bmds` and returns zero whatever else is asked. Any null drawn through it is worthless.",
+    "WILLIAM SNEYD OF MADELEY, the oldest name in the Sneyd line and until today a citation reading “Sneyd Web Site” with no death at all, now has TWO documented candidate burials at Madeley All Saints: 1819 aged 88, and 13 MAY 1827 AGED 84. The weaver married about April 1769 and fathered children to 1794, so the 1827 burial fits far better — and two candidates are two candidates, and the page says so.",
+    "CHARLOTTE CATHCART D'ARCY married ROBERT MEAD PEARSON at PARRAMATTA in 1859, registration 2618 — the town where her father died in 1849, and she would have been 34. A strong candidate for the Charlotte christened at Chatham eight days before the England sailed, and NOT an identification: the index spells the middle name two ways and the baptism gives none. Errand 48 is the certificate.",
+    "And recorded a seam left unworked as the trial expires: EIGHTY-ONE D'Arcy burials and memorials in Queensland Burials & Memorials, of which this archive holds one."
    ],
    "found": [
     [
@@ -104,6 +107,14 @@
     [
      "Corrected",
      "/sussex-sisters — the burials, and one fewer open question"
+    ],
+    [
+     "Added",
+     "/sneyds — two candidate burials for William of Madeley"
+    ],
+    [
+     "Added",
+     "/chatham — a candidate for what became of Charlotte"
     ]
    ]
   },

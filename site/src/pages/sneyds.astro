@@ -276,4 +276,20 @@ const c = d.counts;
     descends from were <strong>weavers, carpenters, blacksmiths, brickmakers and labourers</strong>
     in the Potteries. <a href={u("/how-far-back/")}>The graft →</a></p>
   </section>
+  <section class="blk" style="border-bottom:0">
+    <div class="lab">National Burial Index · Madeley All Saints</div>
+    <h2 style="margin-top:.4rem">{d.williamBurial.head}</h2>
+    <p class="lede">{d.williamBurial.body}</p>
+    <div class="scroll" style="margin-top:1.2rem">
+      <table>
+        <tbody>{d.williamBurial.rows.map(([when, age, what]) => (
+          <tr><td class="m" style="white-space:nowrap"><strong>{when}</strong></td>
+              <td class="small">{age}</td><td class="small">{what}</td></tr>))}</tbody>
+      </table>
+    </div>
+    <div class="note" style="border-left-width:3px;margin-top:1.2rem">
+      {d.williamBurial.means} <span class="chip inf">{d.williamBurial.chip}</span>
+    </div>
+    <p style="margin-top:1.1rem">{d.williamBurial.gain}</p>
+  </section>
 </Base>

@@ -260,6 +260,21 @@
 "slug": "audrey-dell-d-arcy",
 "n": 1
 },
+"charlotte-cathcart-d-arcy": {
+"name": "Charlotte Cathcart D'Arcy",
+"surname": "D'ARCY",
+"rows": [
+{
+"says": "marriage · 1859, PARRAMATTA, New South Wales · to ROBERT MEAD PEARSON · registration 2618",
+"source": "record · New South Wales Marriages 1788-1945",
+"link": "https://www.findmypast.co.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "charlotte-cathcart-d-arcy",
+"n": 1
+},
 "eliza-d-arcy-nee-keeling": {
 "name": "Eliza D'Arcy, née Keeling",
 "surname": "D'ARCY",
@@ -2070,6 +2085,21 @@
 "slug": "peter-n-paulsen",
 "n": 1
 },
+"robert-mead-pearson": {
+"name": "Robert Mead Pearson",
+"surname": "PEARSON",
+"rows": [
+{
+"says": "marriage · 1859, Parramatta, New South Wales · to CHARLOTTE CATHCART D'ARCY · registration 2618",
+"source": "record · New South Wales Marriages 1788-1945",
+"link": "https://www.findmypast.co.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "robert-mead-pearson",
+"n": 1
+},
 "richard-george-petty": {
 "name": "Richard George Petty",
 "surname": "PETTY",
@@ -2402,9 +2432,9 @@
 }
 },
 "counts": {
-"named": 204,
+"named": 206,
 "withTreePage": 55,
-"ownPage": 149,
-"mentions": 356
+"ownPage": 151,
+"mentions": 360
 }
 }

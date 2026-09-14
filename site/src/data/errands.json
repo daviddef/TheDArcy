@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "47 jobs a person can do and this archive cannot",
+ "eyebrow": "48 jobs a person can do and this archive cannot",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -473,6 +473,16 @@
    "why": "THE TWO CLAIMS THIS ARCHIVE CANNOT SETTLE ALONE",
    "href": "/hornby",
    "file": "blocked 15 September 2026 — searching the forum requires an account, and none was created"
+  },
+  {
+   "n": 48,
+   "what": "The New South Wales marriage certificate of CHARLOTTE CATHCART D'ARCY and ROBERT MEAD PEARSON, Parramatta 1859, registration 2618",
+   "where": "NSW Registry of Births, Deaths & Marriages",
+   "cost": "about A$40",
+   "settles": "Whether the Charlotte D'Arcy christened at Chatham on 31 March 1826 — eight days before the convict ship England sailed with her father's detachment — is the Charlotte who married at Parramatta thirty-three years later. A New South Wales marriage certificate names both fathers. The circumstantial case is strong: the right age, and the town where George Pitt D'Arcy died in 1849. The middle name is the problem — CATHCART in one index entry, CATHERINE in another, and absent from the baptism.",
+   "why": "THE LAST OF GEORGE PITT D'ARCY'S CHILDREN UNACCOUNTED FOR",
+   "href": "/chatham",
+   "file": "candidate found 15 September 2026"
   }
  ],
  "ydna": {
