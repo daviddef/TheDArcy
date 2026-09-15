@@ -177,6 +177,18 @@ const more = [
   </section>
 
 
+  <section class="blk">
+    <h2>Elsewhere in the archive</h2>
+    <div class="grid two" style="margin-top:1rem">
+      {more.map(([href, t, d]) => (
+        <a class="cardlink" href={u(href)}>
+          <div class="nm">{t}</div>
+          <p class="small" style="margin-top:.4rem">{d}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
 <section class="blk">
     <h2>What this archive has established</h2>
     <div class="grid two" style="margin-top:1rem">
@@ -255,18 +267,6 @@ const more = [
       ))}
     </div>
   </Blk>
-
-  <section class="blk">
-    <h2>Elsewhere in the archive</h2>
-    <div class="grid two" style="margin-top:1rem">
-      {more.map(([href, t, d]) => (
-        <a class="cardlink" href={u(href)}>
-          <div class="nm">{t}</div>
-          <p class="small" style="margin-top:.4rem">{d}</p>
-        </a>
-      ))}
-    </div>
-  </section>
 
   <Numbers rows={[
     [people.length, "people published, each graded for how well it is evidenced", u("/people/")],
