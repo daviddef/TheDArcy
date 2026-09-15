@@ -178,7 +178,63 @@
       "owner": "the Luwinski and Our Family sessions",
       "since": "2026-09-15",
       "note": "Raised here because it belongs to other archives and would otherwise go unsaid. Running the gate across the whole estate — `checkworklist.py --root . --all` — reports **8 archives, 153 rows, 113 open, and two with no list at all**: Luwinski and Our Family. Until those exist, the estate board is a board of six. The **Defranceschi** archive wrote this register first and the estate took it up; the shared version then added `owner` and `since`, and that session had already brought its twenty rows into line before this one was written."
+    },
+    {
+      "n": 23,
+      "what": "Sweep the National Archives' Discovery catalogue for all three surnames",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "**Searching Discovery is free and needs no sign-in** — only downloading the images does, which is why three PROB 11 wills sit blocked at row 15. The catalogue itself indexes every county record office in the country, not just Kew, so a sweep for **Saniger, Sanigar, Swonhunger and D'Arcy** would name documents in repositories this archive has never written to. A reference in hand is what turns a refusal into an errand, as Gloucestershire Archives said plainly when they declined to do lookups."
+    },
+    {
+      "n": 24,
+      "what": "The Gloucestershire Protestation Returns of 1641–42, where they survive",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "An oath taken by **nearly every adult male in England**, returned parish by parish and published for several counties. It sits squarely in the gap this line has: the [1608 muster](/saniger-1608/) names eleven men and then the trail goes quiet until the parish registers. Survival for Gloucestershire is patchy and the first job is to establish which parishes exist at all — **a coverage question before an absence question**, exactly as row 3 has it."
+    },
+    {
+      "n": 25,
+      "what": "The Gloucestershire hearth tax returns of 1671–72",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Published and indexed, and it lists **householders by parish with the number of hearths each was taxed on** — so it places a family and, roughly, says how well it was doing. Between the muster of 1608 and the registers this archive can reach, it is one of the few sources that names ordinary men in Awre and Blakeney at all."
+    },
+    {
+      "n": 26,
+      "what": "The Berkeley Castle Muniments catalogue, not just Jeayes's 1892 calendar",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Jeayes calendared a selection in 1892 and gave this archive the charters with the **fishery reserved on Wednesdays and Fridays**. The muniments themselves were catalogued in full far more recently and the catalogue is online. The Swonhungers were **mesne tenants of Berkeley**, which is why they generate no royal inquisition — so the Berkeley estate's own papers, not the Crown's, are where a tenant of theirs would appear."
+    },
+    {
+      "n": 27,
+      "what": "The London Gazette, read end to end for both D'Arcys",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Free, official, full-text and complete from 1665. Every commission, promotion, exchange and half-pay notice for an officer passes through it, and it is the record that would either confirm or break the career this archive has assembled from Porter, Connolly and the Army Lists. It also dates things **to the day**, which is what settled the 1776 question."
+    },
+    {
+      "n": 28,
+      "what": "The printed Army Lists year by year, 1776 to 1815",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "So far this archive has read **1781, 1778 and the Royal Military Calendar of 1820** — three points, from which a career was inferred. The lists are annual, free and digitised, and reading the run would give a **year-by-year position** rather than a line drawn between three dots. It is the cheapest way to test the Minorca and Copenhagen postings independently of Porter."
+    },
+    {
+      "n": 29,
+      "what": "The Manorial Documents Register for Awre, Blakeney and Berkeley",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Free, inside Discovery, and it says **where the court rolls for a given manor now are**. Manorial court rolls name tenants generation after generation and are the natural record for a family that held land of a lord rather than of the Crown — which, on Smyth's evidence, is exactly what the Swonhungers were."
     }
   ],
-  "close": "**Fourteen items are this archive's own and can start tonight** — four of them housekeeping on the registers themselves, ten of them books and indexes that are free to open. **Four are waiting on you**, and three of those four are free: the only money on this list is two certificates. One belongs to another session. Two are struck, and both were caught the same way, by reading this archive against itself rather than by finding a new source."
+  "close": "**Twenty items are this archive's own and can start tonight** — four of them housekeeping on the registers themselves, sixteen of them books, catalogues and indexes that are free to open and need no account. **Four are waiting on you**, and three of those four cost nothing: the only money on this list is two certificates. One belongs to two other sessions. Two are struck, and both were caught the same way — by reading this archive against itself rather than by finding a new source."
 }
