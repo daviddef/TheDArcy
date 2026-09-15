@@ -106,6 +106,14 @@ const groups = {};
 for (const r of m.rows) (groups[century(r)] ||= []).push(r);
 const order = Object.keys(groups).sort((a, b) => a - b);
 const nPub = FAMS.reduce((a, f) => a + f.published, 0);
+
+/* Defined here rather than inline in the attribute: a block-bodied arrow in an
+   Astro attribute ends with }} , and the parser takes the first } as the end of
+   the expression. The error it reports is six lines further down, in prose. */
+const band = (c) => {
+  const y = (String(c.when).match(/\d{4}/) || ["?"])[0];
+  return y === "?" ? "Undated" : y.slice(0, 2) + "00s";
+};
 ---
 <Base title="The Marriages" eyebrow={`${m.n} marriages \u00b7 ${families.length} families \u00b7 ${nPub} of their people published`}
   dek="Every marriage this archive can date, in order — and then the families those marriages brought in. It is the only series on the site that shows the family actually moving: Portsea, Camden, Carrigaline, Muttaburra, Toowoomba.">
@@ -122,36 +130,6 @@ const nPub = FAMS.reduce((a, f) => a + f.published, 0);
     </Note>
   </section>
 
-  {order.map((c) => (
-    <section class="blk">
-      <h2>{c}s</h2>
-      <p class="small">{groups[c].length} {groups[c].length === 1 ? "marriage" : "marriages"}</p>
-      <Scroll>
-        <table>
-          <thead><tr><th class="m">Date</th><th>Who</th><th>Where</th></tr></thead>
-          <tbody>
-            {groups[c].map((r) => (
-              <tr>
-                <td class="m">{r.date}</td>
-                <td>{r.aSlug ? <a href={u(`/people/${r.aSlug}`)}>{r.a}</a> : r.a}
-                  <span class="small"> and </span>
-                  {r.bSlug ? <a href={u(`/people/${r.bSlug}`)}>{r.b}</a> : r.b}
-                  {r.divorced && <span class="small" style="color:var(--ink-3)"> · divorced {r.divorced}</span>}</td>
-                <td class="small">{r.place || "—"}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </Scroll>
-    </section>
-  ))}
-
-  <section class="blk" style="border-bottom:0">
-    <p class="dek"><strong>{m.n - placed.length}</strong> of these have a date and no place. That is
-    a gap in the searching, not in the records — a marriage that produced a date came from somewhere,
-    and the somewhere is usually one certificate away.
-    <a href={u("/errands/")}>The queue →</a> · <a href={u("/households/")}>Households →</a></p>
-  </section>
   <section class="blk">
     <h2>And the families they brought in</h2>
     <p class="lede">A marriage is an event; a family is what the event joined. These thirteen are
@@ -161,7 +139,19 @@ const nPub = FAMS.reduce((a, f) => a + f.published, 0);
     over; the join is on the record id, and the tree is the authority on identity.</p>
   </section>
 
-  <Marriages u={u} groups={GROUPED} openAt={6}>
+  <Marriages u={u} groups={GROUPED} openAt={6} subject="D'Arcy"
+    metrics={[{ n: m.n, label: "marriages" }, { n: placed.length, label: "with a place" },
+              { n: families.length, label: "families joined" },
+              { n: nPub, label: "of their people published" },
+              { n: FAMS.filter((f) => f.entersAt).length, label: "on the direct line" }]}
+    couples={m.rows.map((r) => ({
+      a: { name: r.a, slug: r.aSlug }, b: { name: r.b, slug: r.bSlug },
+      when: r.date, where: r.place || "",
+      note: r.divorced ? `divorced ${r.divorced}` : "", kids: r.kids,
+    }))}
+    couplesTitle="Every marriage, in order"
+    couplesNote="Read the places down and the shape of two hundred years falls out of them."
+    couplesGroupBy={band}>
     <div slot="missing">
       <section class="blk" style="border-bottom:0">
         <p class="dek"><strong>{m.n - placed.length}</strong> of these marriages have a date and no
