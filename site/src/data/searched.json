@@ -114,7 +114,7 @@
    "outcome": "empty",
    "got": "STRUCTURALLY OUT OF SCOPE, and worth stating rather than searching. The NLI collection is CATHOLIC ONLY. Paul Cole Atkinson is recorded born at ST MARY'S, LIMERICK — the Church of Ireland cathedral parish — and Atkinson, Cole, Creech, Kent, Bowen and Peevers are Protestant settler names. The same shape as the Wicklow problem on /george-pitt: the records this family needs are the ones this source does not hold.",
    "href": "/errands",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/national-library-of-ireland--dc9253"
   },
   {
@@ -196,7 +196,7 @@
    "outcome": "empty",
    "got": "FIVE D'Arcy deaths ever registered at Lymington: JOSEPH 1848, KATHERINE LUCY ELIZABETH 1863, and three in the twentieth century. No Richard. He is in the house in 1841 and is not in the district's register at all — and no Richard D'Arcy or ARCY appears in the 1851 census anywhere in Britain. The two Richard Darcy deaths in the index for 1836-1856 are Liverpool 1848 and West London 1856, neither with an age.",
    "href": "/joseph-darcy",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-england-wales-dea-73caec"
   },
   {
@@ -324,7 +324,7 @@
    "outcome": "empty",
    "got": "Not in Brighton in any of the three, and not anywhere in England, Wales or Scotland under a wildcard D*ARCY born 1783–1795. Searched by year alone after discovering that combining year and place breaks the query. A real gap: they are in Brighton in 1841 and dying there from 1869.",
    "href": "/sussex-sisters",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-1851-1861-and-187-e27c8b"
   },
   {
@@ -398,7 +398,7 @@
    "outcome": "empty",
    "got": "No George D'Arcy in the set at all, and none of its six Maria Whites married a D'Arcy. More to the point, the DUBLIN DIOCESE ENTRIES EFFECTIVELY END IN 1741 — sorted by year the latest are one 1813, one 1752, then a wall of 1741. The catalogue's 1866 is the whole set's range, not the diocese's. Betham's abstracts end 1810. Neither collection can hold an 1819 marriage.",
    "href": "/george-pitt",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-ireland-diocesan--4a9d03"
   },
   {
@@ -408,7 +408,7 @@
    "outcome": "empty",
    "got": "PCC holdings are a wills index 1750-1800 and an administrations index 1660-1700, and nothing later. Searching the catalogue for “consular” and for “abroad” returns no record sets at all. Three wills and two Le Havre deaths this archive wants are therefore outside it — which is worth knowing before spending a trial on them rather than after.",
    "href": "/errands",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-record-set-catalo-140f74"
   },
   {
@@ -499,7 +499,7 @@
    "when": "13 Sep 2026",
    "outcome": "null",
    "got": "Nothing — and the null is the point. Queensland registers no death of that name on 27 April 1988. He died on 27 APRIL 1985, registration 1985/3063, which is what both Nudgee Cemetery and the registry say. The wrong year is in this archive for the same reason it was in the Falco archive: both took it from the shared family tree. It is the only one of the twenty-six that did not answer, and it did not answer because the date was wrong.",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/queensland-registry-of-birth-962086"
   },
   {
@@ -555,7 +555,7 @@
    "outcome": "null",
    "got": "Not found. Eleven articles match D'Arcy and Wicklow in that window and none is a marriage notice for him. The press announced his first marriage promptly in two papers, which makes the silence around the second worth noting rather than explaining away — though a second marriage in Ireland, a captain now a major, is far less likely to reach an English paper.",
    "href": "/george-pitt",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/british-and-irish-newspapers-2fe6cf"
   },
   {
@@ -685,7 +685,7 @@
    "outcome": "null",
    "got": "Nothing. Searched across the whole county for a birth between 1733 and 1757: she appears only to marry Thomas Saniger at Berkeley in April 1769, and again in the duplicate index entry for the same event. Two women married into this family within two years of each other — one has now yielded three generations and the other none.",
    "href": "/saniger-line",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-gloucestershire-a-04a4af"
   },
   {
@@ -750,7 +750,7 @@
    "outcome": "null",
    "got": "No baptism for her at Berkeley. She appears in the parish only to marry Thomas Saniger there on 10 April 1769, and where she came from is the one new question this work has opened rather than closed.",
    "href": "/saniger-line",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-berkeley-st-mary--3e6683"
   },
   {
@@ -807,7 +807,7 @@
    "outcome": "null",
    "got": "No John Saniger marries at Berkeley between 1792 and 1804, though his children are baptised there from 1801. Lydia — whom the tree names as Hannah's mother, and who is very probably the seventy-year-old Lyddya Sinegar in Hannah's house in 1841 — is still joined to this family by nothing but a surname and a household.",
    "href": "/berkeley-woman",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-berkeley-marriage-414b4a"
   },
   {
@@ -891,7 +891,7 @@
    "outcome": "null",
    "got": "Not in the index, and this is a gap rather than an absence. Her father's other children are there — William 1801, John 1803, Thomas 1808 — so the register was being kept and he was using it. FamilySearch's transcription of Berkeley is not complete, and the original book is what will settle her.",
    "href": "/behind-the-paywall",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/findmypast-england-births-ba-228188"
   },
   {
@@ -966,7 +966,7 @@
    "outcome": "empty",
    "got": "None found. Portsmouth History Centre's parish register holdings are not reachable through Discovery in any usable form — searching for Portsea registers returns Admiralty pension papers and Royal Artillery brigade registers instead. The volumes exist; the catalogue route to them does not run through here. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/portsea",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/tna-discovery-portsmouth-07db14"
   },
   {
@@ -976,7 +976,7 @@
    "outcome": "null",
    "got": "Still nothing. Hannah Wakefield appears once — “Out of County”, aged 35, Bristol, 1841 — and not at all in 1851; the three Jameses of the right age are all 1841 entries. No Ellen Wakefield of the right age exists in either county. Given that FreeCEN's Bristol 1851 holding is real but unmeasured in depth, this remains an absence from a partial transcript.",
    "href": "/coverage",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/freecen-gloucestershire-and--fc0746"
   },
   {
@@ -1182,7 +1182,7 @@
    "outcome": "null",
    "got": "Nothing usable. 232 Wakefield-and-Bristol hits and not one is this family; no Sneyd deed for Madeley at all; and no D'Arcy will for Kent between 1820 and 1860. The catalogue that gave up a hamlet and a Welsh will has nothing for these three.",
    "href": "/searched",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/tna-discovery-wakefield-of-b-52a555"
   },
   {
@@ -1302,7 +1302,7 @@
    "outcome": "null",
    "got": "No Joseph D'Arcy between 1795 and 1850 — the six apparent hits are Joseph Darby and Joseph Dyas. No “Pitt D'Arcy” at all, and no D'Arcy tied to the 39th Regiment. Worth a caveat: an apostrophe in a name is exactly what nineteenth-century OCR loses, so a silent absence here is weaker evidence than the ten positive hits for Robert.",
    "href": "/hornby",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/the-london-gazette-joseph-co-fa627a"
   },
   {
@@ -1416,7 +1416,7 @@
    "outcome": "null",
    "got": "Only the Wakefields came assisted. Sneyd returns nothing — correctly, since Samuel Charles arrived with the 4th (King's Own) in 1832. Paul Cole Atkinson and Jane Creech, who emigrated in 1862, are not in it; nor Eliza Keeling, nor John Blum, nor any Murdoch of the right age. The index covers assisted passages only, so the finding is that this family's other lines PAID — and the Wakefields, a mason's family of eight, took the free passage.",
    "href": "/general-hewitt",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/queensland-assisted-immigrat-04da94"
   },
   {
@@ -1481,7 +1481,7 @@
    "outcome": "null",
    "got": "It does not. Her county is a ditto mark under her husband's “Gloucester”, which is the household head's county and not a statement about her. The register plainly distinguishes the two — it enters her three eldest children as Bristol on the same day — so the ditto cannot be read as her birthplace. Hannah's origin remains the open question.",
    "href": "/general-hewitt",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/qsa-digital-image-dr38490-th-7fcca6"
   },
   {
@@ -1501,7 +1501,7 @@
    "outcome": "null",
    "got": "Not there. A deliberately loose phonetic search — loose enough to return SCHONSWAR and SMOOKER — finds no Lydia Saniger, Sanigar or Sinegar death in Bristol in those thirty-four years. The nearest are an infant Lydia Ann Sanigear at Islington in 1847 and an unnamed SANIGAR at Thornbury in 1851. Either she died under a married surname, or under a spelling the index does not reach.",
    "href": "/drivers-fields",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/freebmd-deaths-lydia-saniger-170f8d"
   },
   {
@@ -1511,7 +1511,7 @@
    "outcome": "empty",
    "got": "Not applicable, and worth recording as such: the family had emigrated. James Wakefield died at Brisbane in July 1857, so by 1861 there was nobody in England to enumerate. The plan to get Hannah's birthplace from a later English census was sound and the family had left before it could work. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/drivers-fields",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/freecen-1861-and-1871-census-5a5447"
   },
   {
@@ -1576,7 +1576,7 @@
    "outcome": "null",
    "got": "No Lydia Saniger death is registered in Queensland under any spelling. She was seventy in 1841; the family did not emigrate until after 1849. She stayed, and died, in England.",
    "href": "/drivers-fields",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/queensland-historical-bdm-in-892bdb"
   },
   {
@@ -1695,7 +1695,7 @@
    "outcome": "null",
    "got": "The chain fails. Thomas 1711/12 is the son of ABRAHAM; William 1743 the son of JOHN; William 1770 the son of SAMUEL. Three men who happen to be baptised in the right parish in the right years, and no two of them are father and son. The date-match was a coincidence.",
    "href": "/berkeley",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/freereg-the-three-dursley-ba-e985c7"
   },
   {
@@ -1724,7 +1724,7 @@
    "outcome": "null",
    "got": "35 fuzzy matches and not one of them in Gloucestershire. All are Somerset and Wiltshire SINGER or SANGER — different families the phonetic match swept up. Hannah Saniger is not in the Gloucestershire registers.",
    "href": "/berkeley",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/freereg-hannah-saniger-gls-s-3f894b"
   },
   {
@@ -1911,7 +1911,7 @@
    "outcome": "null",
    "got": "The Gazette records the award but does not name him in a citation. The Bar was found instead, at the AWM.",
    "href": "/great-war",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/the-london-gazette-76f961"
   },
   {
@@ -1921,7 +1921,7 @@
    "outcome": "null",
    "got": "Searched twice. He appears exactly once in the whole QSA catalogue and it is not a service record. A man who ran a colonial gaol for over a decade has left no staff file that survives.",
    "href": "/sergeant-sneyd",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/queensland-state-archives-7c4954"
   },
   {
@@ -1995,7 +1995,7 @@
    "outcome": "null",
    "got": "Nothing under either. The tithing is written 'Saniger [in Hinton parish, Berkeley]' by 1608, so the older form had already gone out of written use — consistent with the deeds, which carry Swanhanger to 1741 only as an antiquarian spelling.",
    "href": "/saniger-place",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/smyth-s-men-and-armour-for-g-3e2952"
   },
   {
@@ -2078,7 +2078,7 @@
    "outcome": "empty",
    "got": "Structurally out of scope. The site indexes twenty-six Staffordshire collections — wills, apprentices, asylums, gaol calendars, tithe awards, workhouse admissions — and no parish registers or bishop's transcripts of any kind. It cannot answer errand 19 and never could.",
    "href": "/errands",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/staffordshire-name-indexes-t-09822c"
   },
   {
@@ -2152,7 +2152,7 @@
    "outcome": "empty",
    "got": "They do not. The project lists Gloucestershire and Staffordshire — both used today, both productive — but neither Bristol nor Somerset has a dedicated local index. For the Bristol Wakefields and the Chew Magna Smiths there is no equivalent of the reference that found Lydia Sanigar.",
    "href": "/errands",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/ukbmd-the-local-bmd-project-d61b05"
   },
   {
@@ -2265,7 +2265,7 @@
    "outcome": "null",
    "got": "Not there, and the silence is worth something because of where it comes from. The Calendar prints schooling and origins when it has them: the very next entry, Major-General George Bridges, opens “After the usual course of instruction at Woolwich Academy”. For Robert D'Arcy it prints service and nothing else. The army's own book, compiled while he was alive and a Companion of the Bath, did not record where he came from.",
    "href": "/hornby",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/the-royal-military-calendar--a696b4"
   },
   {
@@ -2293,7 +2293,7 @@
    "outcome": "empty",
    "got": "It cannot. The index's districts are Cheltenham, Cirencester, Forest of Dean, Gloucester, North Cotswolds, Stroud and Warwick South, with Berkeley, Dursley, Uley and Wotton-under-Edge beneath them. Bristol is a registration county of its own and is not in it — which matches the UKBMD finding that Bristol has no local index at all. The Berkeley Sanigers are reachable this way and the Bristol Wakefields are not.",
    "href": "/errands",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/gloucestershire-registration-103a30"
   },
   {
@@ -2805,7 +2805,7 @@
    "outcome": "null",
    "got": "It cannot, not yet. BCM/A/1/24/184 of the same year, 1356, makes William the son of JOHN — «a charter of John Swonhungre, his father, son and heir of John Swonhungre». The chantry licence makes a William the son of a William, by a mother called Alienor. Either two Williams were living at once, which other deeds make plausible, or one source is wrong. Recorded as unresolved rather than reconciled.",
    "href": "/swonhungre",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/william-son-of-william-swanh-77c414"
   },
   {
@@ -2822,7 +2822,7 @@
    "what": "The Forest side — Awre and Blakeney, which no other source reaches",
    "when": "15 Sep 2026",
    "outcome": "yield",
-   "got": "They survive, and they matter more than the Berkeley ones because nothing else covers these parishes. E 179/114/287/1, [1523–1525], «Assessment (individuals)»; E 179/114/252, [1524], St Briavels and Bledisloe, assessment of individuals; E 179/114/230, [1524]; E 179/113/204, 20 Dec 1524, certificate; E 179/114/287/2, [1544], assessment of individuals; E 179/114/246, 10 Oct 1544. Awre has NO FreeREG coverage, NO surviving Protestation return and NO surviving 1381 poll tax membrane — the Tudor subsidy and the manor court rolls are the only dense named sources it has.",
+   "got": "They survive, and they matter more than the Berkeley ones because nothing else covers these parishes. E 179/114/287/1, [1523–1525], «Assessment (individuals)»; E 179/114/252, [1524], St Briavels and Bledisloe, assessment of individuals; E 179/114/230, [1524]; E 179/113/204, 20 Dec 1524, certificate; E 179/114/287/2, [1544], assessment of individuals; E 179/114/246, 10 Oct 1544. **This archive has no Sanigers at Awre** — see correction 32 — so the Bledisloe pieces matter far less than the Berkeley ones. The point stands for BERKELEY hundred, where the muster found three men of the name.",
    "href": "/errands",
    "key": "src/e-179-the-tudor-subsidies-fo-3d4101"
   },
@@ -2833,7 +2833,7 @@
    "outcome": "empty",
    "got": "Not freely. Searches of the Internet Archive for «military survey Gloucestershire 1522», for a published 1524 subsidy roll, and for a separate edition of Men and Armour all return nothing. The Gloucestershire Record Series editions of this material are modern and in copyright. The catalogue descriptions are free; the names are not.",
    "href": "/coverage",
-   "ctl": "unstated",
+   "ctl": "named",
    "key": "src/a-published-edition-of-the-g-f7e117"
   },
   {
@@ -2993,9 +2993,45 @@
    "outcome": "yield",
    "got": "They belong, and /who settles it in its own words: «the people this archive met in documents and never had anywhere to put… They are in the record, and LEAVING THEM OUT WOULD BE EDITING IT.» Twenty-one are now in `build_register.py` with the deed that names each — Thomas de Asshelworth, four Stones including Juliana and Elyanora, Alice and Joan, John de Wyke, five wives, and the last John who died in 1401/2. The register rose to 381 record lines and the site to 875 pages. **None is claimed as a relative**, and /swonhungre still says in terms that no descent joins them to the Sanigers of the registers — that is a question about the tree, not about whether the archive admits what it read.",
    "href": "/who"
+  },
+  {
+   "src": "Discovery, for Gloucestershire poor-law records",
+   "what": "Settlement examinations and removal orders for Berkeley — the record that names a labourer's parents and birthplace",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "Not searchable by name, and the reason is structural. Discovery catalogues the **Gloucestershire Quarter Sessions as a single series** — «Q, 1660–2007» — and its item-level entries for the period are «Memoranda of convictions, general», bundle by bundle. Parish overseers' records sit in the P series at Gloucestershire Archives and are catalogued at bundle level too. A control shows what itemisation looks like when it exists: the same catalogue lists 195 records for this surname and describes every Berkeley Castle DEED individually. **The poor-law records are not indexed by name anywhere reachable**, so this is a visit, not a search.",
+   "href": "/errands"
+  },
+  {
+   "src": "Berkeley Castle Muniments — the COURT ROLLS, as against the deeds",
+   "what": "The Ham manor court roll of 26 May 1600 that Cooke cites",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "Not itemised. Discovery describes the BCM **deeds** one by one — that is where this archive's 195 records came from — but returns only the collection-level «BCM, 1153–17th cent» for court rolls, and nothing at all for a Ham or Hinton manor roll. Cooke read the roll of 26 May 42 Elizabeth in the 1880s and quoted the homage presenting Nicholas Thorpe's death; **the document exists and the catalogue does not reach it.**",
+   "href": "/errands"
+  },
+  {
+   "src": "Discovery, for the partition of 1347",
+   "what": "The earlier of the two partitions Cooke names",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Not found. Cooke says the sisters' lands «were subsequently divided by several deeds of partition in **1347 and 1353**»; TBGAS volume 22 prints the 1353 indenture entire. Searching the Berkeley catalogue for a Swonhongre partition naming Hasilcote, Kingscote or Nibley returns nothing, against a catalogue that itemises 178 BCM records under these spellings and gave up the 1353 deed, the 1354 Nibley partition and the 1356 inspeximus. **Either the 1347 deed is among the unitemised court rolls, or Cooke was counting the 1354 indenture as a second partition.**",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "Bigland, volume 2 — the Forest parishes",
+   "what": "Whether this family is in Awre and Blakeney at all",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "**It is not, and the premise was mine.** Volume 2 mentions **Awre 172 times and Blakeney 4** across 4.4 million characters, and names **no Saniger under any spelling** — while volume 1 gives twenty at Berkeley. Rudder mentions Awre 194 times and names none in the whole book. And the 1608 muster puts all eleven men at Halmore, Hinton and Saniger in Berkeley, at Wotton-under-Edge, Woodmancote, Dursley, Paganhill and three Stonehouse hamlets. **There is no Forest side of this family.** I wrote the phrase into a work-list note this morning and read it back all day as though a source had said it. Now correction 32.",
+   "href": "/what-we-got-wrong"
   }
  ],
- "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 55 do. 39 do not, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**. The classification is made by pattern, and it is deliberately biased towards `unstated`: a row the machine cannot read as controlled is marked untested even if a human would call it controlled. Being called untested when you are not is the harmless direction. The reverse is not.",
+ "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
  "ctlLabels": {
   "named": "control named",
   "unstated": "no control stated"

@@ -65,7 +65,11 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and it is the wrong volume — which is itself the answer.** Read in full text, free: neither D'Arcy appears in 1.5 million characters. Controlled by subject, not by name — the volume mentions the Peninsula 48 times, Waterloo 11 and **the Crimea 43**. It is Porter's post-1815 volume; Robert D'Arcy's service ran 1776 to about 1809, which is volume 1, already read. Joseph was Royal **Artillery**, so no volume of Porter was ever going to hold him."
+      "note": "**Done, and it is the wrong volume — which is itself the answer.** Read in full text, free: neither D'Arcy appears in 1.5 million characters. Controlled by subject, not by name — the volume mentions the Peninsula 48 times, Waterloo 11 and **the Crimea 43**. It is Porter's post-1815 volume; Robert D'Arcy's service ran 1776 to about 1809, which is volume 1, already read. Joseph was Royal **Artillery**, so no volume of Porter was ever going to hold him.",
+      "covers": [
+        "err:err/enquiry-to-the-royal-enginee-d56af8",
+        "err:err/royal-engineers-station-retu-909809"
+      ]
     },
     {
       "n": 9,
@@ -73,7 +77,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and redirected to volume 3, which is where the Swonhunger material actually is.** The Berkeley Castle catalogue cites «Transcript: Smyth, iii. 380-1» for the 1356 inspeximus. Volume 3 — the Description of the Hundred — gives 49 mentions of Swonhunger, **three further alias statements** beyond the one this archive had been quoting, and a named freehold, **Oldminster**, that can be followed from Smyth's survey of about 1639 into a Gloucestershire deed of 1690–1741. [Written up](/swonhungre/)."
+      "note": "**Done, and redirected to volume 3, which is where the Swonhunger material actually is.** The Berkeley Castle catalogue cites «Transcript: Smyth, iii. 380-1» for the 1356 inspeximus. Volume 3 — the Description of the Hundred — gives 49 mentions of Swonhunger, **three further alias statements** beyond the one this archive had been quoting, and a named freehold, **Oldminster**, that can be followed from Smyth's survey of about 1639 into a Gloucestershire deed of 1690–1741. [Written up](/swonhungre/).",
+      "covers": [
+        "err:err/the-twenty-five-unread-page--259d9a"
+      ]
     },
     {
       "n": 10,
@@ -97,7 +104,11 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and the control earned its keep twice over.** FreeBMD **silently refuses** a wide date range and redisplays its own form — indistinguishable from an empty result, and three searches were recorded as nought before the control showed they had never run. Charlotte Darcy, 1869, came back «Brighton 2b 152», matching what this archive already held. Narrowed to 1850–52, SANIGAR returns **John (Mar 1850, Thornbury 11/401), Lydia (Sep 1851, 11/329) and Mary Ann (Dec 1851, 11/369)** — the same three deaths this archive had from the *local* register, now with GRO references to order against."
+      "note": "**Done, and the control earned its keep twice over.** FreeBMD **silently refuses** a wide date range and redisplays its own form — indistinguishable from an empty result, and three searches were recorded as nought before the control showed they had never run. Charlotte Darcy, 1869, came back «Brighton 2b 152», matching what this archive already held. Narrowed to 1850–52, SANIGAR returns **John (Mar 1850, Thornbury 11/401), Lydia (Sep 1851, 11/329) and Mary Ann (Dec 1851, 11/369)** — the same three deaths this archive had from the *local* register, now with GRO references to order against.",
+      "covers": [
+        "err:err/the-death-of-lydia-saniger-a-8b4056",
+        "err:err/three-gro-death-certificates-0f3063"
+      ]
     },
     {
       "n": 13,
@@ -105,7 +116,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and the parish-level control changed the answer.** SMITH in Berkeley returns 3 exact and 36 uncertain, **every one between 1653 and 1677** — so FreeREG's Berkeley holding is a thirty-year seventeenth-century fragment, not a register run. SANIGER there returns **0 exact**: a real null, but only thirty years wide. And the place list settles the Forest parishes outright — FreeREG has 189 Gloucestershire places and **neither Awre nor Blakeney is one of them**."
+      "note": "**Done, and the parish-level control changed the answer.** SMITH in Berkeley returns 3 exact and 36 uncertain, **every one between 1653 and 1677** — so FreeREG's Berkeley holding is a thirty-year seventeenth-century fragment, not a register run. SANIGER there returns **0 exact**: a real null, but only thirty years wide. And the place list settles the Forest parishes outright — FreeREG has 189 Gloucestershire places and **neither Awre nor Blakeney is one of them**.",
+      "covers": [
+        "err:err/jane-catherine-and-charlotte-87d63c"
+      ]
     },
     {
       "n": 14,
@@ -113,7 +127,11 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and the shape of the answer matters more than the count.** 127 unique records across six spellings, 33 at Gloucestershire Archives, 1601 to the 1990s. Seven new — and six of those seven are deeds in which **Saniger is the land, not the party**: Abevan, Hathway, Morse, Smith, Plomer and Vizard all holding «at Saniger». The catalogue independently confirms Bigland and Smyth: a hamlet far more people lived in than were named for."
+      "note": "**Done, and the shape of the answer matters more than the count.** 127 unique records across six spellings, 33 at Gloucestershire Archives, 1601 to the 1990s. Seven new — and six of those seven are deeds in which **Saniger is the land, not the party**: Abevan, Hathway, Morse, Smith, Plomer and Vizard all holding «at Saniger». The catalogue independently confirms Bigland and Smyth: a hamlet far more people lived in than were named for.",
+      "covers": [
+        "err:err/d2957-41-and-d3831-box5-1-th-ea90a6",
+        "err:err/the-berkeley-estate-deeds-d2-30f431"
+      ]
     },
     {
       "n": 15,
@@ -222,7 +240,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done as a catalogue question; the reading is now an errand.** A 1671–72 Gloucestershire hearth tax survives twice — Gloucestershire Archives **D383/1** (photostat of the enrolment, with a part transcript) and Kew **E 179/329** (400 folios, «includes names of individuals»). Neither is digitised. The better find was **D5555/2/9**, one bundle transcribing *Men and Armour* 1608, the hearth taxes of 1664 and 1672 and the poll tax of 1678. And a null worth as much: the 1381 poll tax photostats list every surviving membrane, and **Berkeley hundred is not among them**."
+      "note": "**Done as a catalogue question; the reading is now an errand.** A 1671–72 Gloucestershire hearth tax survives twice — Gloucestershire Archives **D383/1** (photostat of the enrolment, with a part transcript) and Kew **E 179/329** (400 folios, «includes names of individuals»). Neither is digitised. The better find was **D5555/2/9**, one bundle transcribing *Men and Armour* 1608, the hearth taxes of 1664 and 1672 and the poll tax of 1678. And a null worth as much: the 1381 poll tax photostats list every surviving membrane, and **Berkeley hundred is not among them**.",
+      "covers": [
+        "err:err/the-tudor-lay-subsidy-assess-7db958"
+      ]
     },
     {
       "n": 26,
@@ -230,7 +251,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and it did not need a letter.** The Berkeley Castle Muniments are catalogued item by item inside Discovery — party, land, rent, witnesses and the GC number to quote when requesting the document — so the modern catalogue this archive wanted turns out to be free and already open. **178 records** under the medieval spellings. Errand 51 asked for exactly this and can be closed."
+      "note": "**Done, and it did not need a letter.** The Berkeley Castle Muniments are catalogued item by item inside Discovery — party, land, rent, witnesses and the GC number to quote when requesting the document — so the modern catalogue this archive wanted turns out to be free and already open. **178 records** under the medieval spellings. Errand 51 asked for exactly this and can be closed.",
+      "covers": [
+        "err:err/the-three-unitemised-berkele-4b46e0"
+      ]
     },
     {
       "n": 27,
@@ -251,10 +275,10 @@
     {
       "n": 29,
       "what": "The Manorial Documents Register for Awre, Blakeney and Berkeley",
-      "state": "done",
+      "state": "struck",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and it found the best errand of the day.** The **Awre** court rolls survive almost unbroken and none of it is digitised: single surrenders of **1387**, 1439, 1573 and 1577/8; the rolls 1588–91; then 1671 and nearly continuous to **1881**. D3270/282 is explicitly «extracts relating to customary heir of a tenant dying», 1688–1777 and 1783–1810 — a named parent-to-child link every generation, across exactly the gap this archive cannot cross. Hamfallow and Hinton return nothing separate, and structurally cannot: they were parts of the manor of Ham, so their records are inside the Berkeley muniments."
+      "note": "**Struck.** This asked for the Manorial Documents Register «for Awre, Blakeney and Berkeley» and reported the Awre court rolls as the best errand of the day. **There are no Sanigers at Awre.** The premise was a phrase I wrote into a work-list note that morning and read back all day as though a source had said it — [correction 32](/what-we-got-wrong/). The rolls are real; they are somebody else's family. Kept struck rather than deleted, the way a retracted claim is."
     },
     {
       "n": 30,
@@ -262,7 +286,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and the best single sentence of the week came out of it.** All 200 Berkeley records read for relationship language; 25 phrases tie the surname to a relationship, **six of them new**, including three generations in one Hinton lease. **BCM/A/4/2/22 of 5 December 1390** grants away «the marriage of John Swonhongre, son and heir of Elias Swonhongre, which came to Thomas because Elias held of Thomas by knight service» — confirming Smyth, explaining the wardship, and **documenting the tenure this archive had only inferred**. Five more deeds map the roads and fields, and LE WESTFELD of 1322 is the WESTFIELD of the 1601 Saniger release. [Written up](/swonhungre/)."
+      "note": "**Done, and the best single sentence of the week came out of it.** All 200 Berkeley records read for relationship language; 25 phrases tie the surname to a relationship, **six of them new**, including three generations in one Hinton lease. **BCM/A/4/2/22 of 5 December 1390** grants away «the marriage of John Swonhongre, son and heir of Elias Swonhongre, which came to Thomas because Elias held of Thomas by knight service» — confirming Smyth, explaining the wardship, and **documenting the tenure this archive had only inferred**. Five more deeds map the roads and fields, and LE WESTFELD of 1322 is the WESTFIELD of the 1601 Saniger release. [Written up](/swonhungre/).",
+      "covers": [
+        "err:err/the-three-unitemised-berkele-4b46e0"
+      ]
     },
     {
       "n": 31,
@@ -270,7 +297,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done — all 67 swept, one volume unfetchable and recorded as unread, twelve carrying the name.** Each volume controlled by its own Berkeley mention count. **Volume 22 (1899) prints the deeds in full English translation**: the 1329 indenture naming **Elyanora de Stone, mother of Alice and Joan**, which makes them sisters and explains how Wanswell came in; and the 1353 partition Smyth describes in a line, entire, keeping the Severn fishery out of the division. **Volume 10 prints a Daubeney pedigree** sourced to two royal inquisitions: John Swonhonger **aged 18 in 1393**, died 1401/2 without issue — which fits the sale of his marriage in 1390 exactly. It also corrected this archive's own «no royal inquisition» claim."
+      "note": "**Done — all 67 swept, one volume unfetchable and recorded as unread, twelve carrying the name.** Each volume controlled by its own Berkeley mention count. **Volume 22 (1899) prints the deeds in full English translation**: the 1329 indenture naming **Elyanora de Stone, mother of Alice and Joan**, which makes them sisters and explains how Wanswell came in; and the 1353 partition Smyth describes in a line, entire, keeping the Severn fishery out of the division. **Volume 10 prints a Daubeney pedigree** sourced to two royal inquisitions: John Swonhonger **aged 18 in 1393**, died 1401/2 without issue — which fits the sale of his marriage in 1390 exactly. It also corrected this archive's own «no royal inquisition» claim.",
+      "covers": [
+        "err:err/the-twenty-five-unread-page--259d9a"
+      ]
     },
     {
       "n": 32,
@@ -286,7 +316,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Answered, and it was worth asking.** MS 3549 is **John Smyth of Nibley's own collection** — «miscellaneous deeds and manorial records collected by John Smyth», 1200–1704 — the working papers he gathered while writing the books this archive has spent a week testing. That is why the 1377 grant appears twice: he kept a copy. And the series holds **MS 3549/89, the court roll of the manor of HAM AND HINTON, 1587–88** — fourteen years before this archive's earliest Saniger deed — plus an Alkington court roll of 1624. Now errand 59."
+      "note": "**Answered, and it was worth asking.** MS 3549 is **John Smyth of Nibley's own collection** — «miscellaneous deeds and manorial records collected by John Smyth», 1200–1704 — the working papers he gathered while writing the books this archive has spent a week testing. That is why the 1377 grant appears twice: he kept a copy. And the series holds **MS 3549/89, the court roll of the manor of HAM AND HINTON, 1587–88** — fourteen years before this archive's earliest Saniger deed — plus an Alkington court roll of 1624. Now errand 59.",
+      "covers": [
+        "err:err/ms-3549-89-the-court-roll-of-32c6e0"
+      ]
     },
     {
       "n": 34,
@@ -302,7 +335,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done as far as a catalogue can take it.** Both references confirmed: **IR 26/352/152** at Kew is the Estate Duty abstract, **LL/1806/24** at the National Library of Wales is the will. Neither catalogue entry names a relative, so he remains a surname, a spelling — the same double-n as **Edward Sanniger of Berkeley, gent** in 1694 — and twenty miles of water. The NLW's own catalogue serves a **bot check**, which this archive does not complete, so the will is recorded as `blocked`, not as absent. Errand 60."
+      "note": "**Done as far as a catalogue can take it.** Both references confirmed: **IR 26/352/152** at Kew is the Estate Duty abstract, **LL/1806/24** at the National Library of Wales is the will. Neither catalogue entry names a relative, so he remains a surname, a spelling — the same double-n as **Edward Sanniger of Berkeley, gent** in 1694 — and twenty miles of water. The NLW's own catalogue serves a **bot check**, which this archive does not complete, so the will is recorded as `blocked`, not as absent. Errand 60.",
+      "covers": [
+        "err:err/the-will-of-edward-sanniger--38dbb7"
+      ]
     },
     {
       "n": 36,
@@ -310,7 +346,10 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done as a catalogue question; the document is an errand.** «Will of Sanniger, Thomas. Rank/Rating: Able Seaman. Ship Name: Eurydice. Ship's Pay Book number: 193», 24 February 1794, **ADM 48/84/222**. Rank, ship and pay-book number, and no kin. Seamen's wills name next of kin in the document itself, which is exactly why a catalogue search cannot settle whether he belongs here. Errand 61."
+      "note": "**Done as a catalogue question; the document is an errand.** «Will of Sanniger, Thomas. Rank/Rating: Able Seaman. Ship Name: Eurydice. Ship's Pay Book number: 193», 24 February 1794, **ADM 48/84/222**. Rank, ship and pay-book number, and no kin. Seamen's wills name next of kin in the document itself, which is exactly why a catalogue search cannot settle whether he belongs here. Errand 61.",
+      "covers": [
+        "err:err/the-will-of-thomas-sanniger--22fc91"
+      ]
     },
     {
       "n": 37,
@@ -326,15 +365,19 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done as a catalogue question, and the Forest side is the part that matters.** Six pieces for **Berkeley hundred** (1543–49) and six for **BLEDISLOE** (1523–25 and 1544), every one described as «Assessment (**individuals**)» — named taxpayers. None digitised; no free published edition exists, and the Gloucestershire Record Series editions are in copyright. Bledisloe is the find: Awre and Blakeney have **no FreeREG coverage, no Protestation return and no surviving 1381 poll tax membrane**, so the subsidy and the court rolls are the only dense named sources that parish has. Errand 63."
+      "note": "**Done as a catalogue question, and the Forest side is the part that matters.** Six pieces for **Berkeley hundred** (1543–49) and six for **BLEDISLOE** (1523–25 and 1544), every one described as «Assessment (**individuals**)» — named taxpayers. None digitised; no free published edition exists, and the Gloucestershire Record Series editions are in copyright. **The Bledisloe half has since been withdrawn** — this archive has no Sanigers in that hundred at all ([correction 32](/what-we-got-wrong/)). The **Berkeley** pieces stand, and matter: the muster of 1608 found three men of the name in that hundred. Errand 63, rescoped.",
+      "covers": [
+        "err:err/e-179-329-gloucestershire-he-e09c04",
+        "err:err/the-tudor-lay-subsidy-assess-7db958"
+      ]
     },
     {
       "n": 39,
       "what": "The poll tax of 1678, transcribed and sitting in Gloucester",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**D5555/2/14** at Gloucestershire Archives, «Poll tax return for the hundreds of Deerhurst, Cleeve and lower Westminster» — the wrong hundreds, but the same collection's **D5555/2/9** transcribes *Men and Armour* 1608, the hearth taxes of 1664 and 1672 and the poll tax of 1678 together. Establish which hundreds the 1678 return covers before adding it to an errand.",
+      "note": "**Done, and it was already in hand.** The 1678 poll tax return at Gloucestershire Archives covers **Deerhurst, Cleeve and lower Westminster** — the wrong hundreds entirely. What matters in that collection is **D5555/2/9**, which transcribes *Men and Armour* 1608, the hearth taxes of 1664 and 1672 and the poll tax of 1678 together, and which is already errand 56.",
       "covers": [
         "err:err/gloucestershire-archives-d55-88a285"
       ]
@@ -369,7 +412,10 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Connolly carries exactly two D'Arcys across 1660–1898 and the second is Robert's son. His Barbados christenings are already on the site; his own career is not. He is also the one man whose record might name his father in a way his father's never did — a son's papers sometimes say what a father's omit."
+      "note": "Connolly carries exactly two D'Arcys across 1660–1898 and the second is Robert's son. His Barbados christenings are already on the site; his own career is not. He is also the one man whose record might name his father in a way his father's never did — a son's papers sometimes say what a father's omit.",
+      "covers": [
+        "err:err/two-chatham-burials-bcb4c8"
+      ]
     },
     {
       "n": 44,
@@ -377,7 +423,7 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and the two authorities split cleanly.** Rudder covers the Forest parishes well — Awre 194 mentions, Blakeney 20 — and carries **no Saniger anywhere in the book**, which was already established against an 804-mention Berkeley control. Bigland gives **twenty**, and his Berkeley monuments turn out to record one household across four generations with ages: Edward Saniger gent buried 1739 **aged 48**, Susanna his relict 1744 **aged 58**, Jane their daughter 1750 **aged 24**. Plus an Edward Saniger **of Peddington** — the hamlet named beside Swanhanger in the 1626 inquisition."
+      "note": "**Done, and it exposed an error of mine rather than settling a question.** Rudder mentions Awre 194 times and Blakeney 20 and names **no Saniger in the whole book**; Bigland's volume 2 mentions Awre 172 times and names none either, while volume 1 gives twenty at Berkeley. **There is no Forest side of this family** — [correction 32](/what-we-got-wrong/). What volume 1 did give is real: four generations at Berkeley with ages, and an Edward Saniger of Peddington."
     },
     {
       "n": 45,
@@ -390,10 +436,10 @@
     {
       "n": 46,
       "what": "Poor law settlement examinations and removal orders for Berkeley",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The record that names a labourer's parents, birthplace and marriage in one sworn document, generated for precisely the people who leave nothing else. The 1608 muster puts Sanigers at the bottom of the Vale's social scale — labourers and weavers of «lower stature» — which is the class the settlement papers exist to describe. A Discovery catalogue question first.",
+      "note": "**Done, and the answer is that it cannot be searched at all.** Discovery catalogues the Gloucestershire Quarter Sessions as **one series, «Q, 1660–2007»**, with item entries like «Memoranda of convictions, general»; parish overseers' records are bundled the same way. Controlled against the same catalogue's treatment of the Berkeley deeds, which it describes individually. **A settlement examination names a labourer's parents, birthplace and apprenticeship** — exactly what this family needs and exactly what no index reaches. New errand.",
       "covers": [
         "q:q/where-and-when-was-hannah-sa-3597b7"
       ]
@@ -509,10 +555,10 @@
     {
       "n": 60,
       "what": "The partition of 1347, which Cooke names and this archive has not found",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Cooke says the sisters' lands «were subsequently divided by several deeds of partition in **1347 and 1353**». Volume 22 prints the 1353 one. The 1347 deed has not been located in the Berkeley catalogue or anywhere else, and a second partition would name the same parties six years earlier."
+      "note": "**Done, and not found.** Cooke names partitions in **1347 and 1353**; TBGAS volume 22 prints the 1353 one entire. Nothing in the Berkeley catalogue answers to a 1347 partition, against a catalogue that itemised 178 records under these spellings and produced the 1353 deed, the 1354 Nibley partition and the 1356 inspeximus. **Either it is among the unitemised court rolls, or Cooke counted the 1354 indenture as the second partition** — which the dates make quite likely."
     },
     {
       "n": 61,
@@ -569,10 +615,10 @@
     {
       "n": 67,
       "what": "Bigland volumes 2 and 3",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Volume 1 was read entire and gave twenty mentions and a four-generation monument sequence with ages. There are further volumes, covering the rest of the county's parishes alphabetically — including **Awre**, which volume 1 does not reach."
+      "note": "**Done, and it is the volume that caught correction 32.** Bigland's second volume — 4.4 million characters, **Awre 172 mentions, Blakeney 4, Berkeley 251** — names **no Saniger under any spelling**, where volume 1 gives twenty. That null is only meaningful because the mention counts were taken, and it is what proved there is no Forest side of this family."
     },
     {
       "n": 68,
@@ -585,10 +631,10 @@
     {
       "n": 69,
       "what": "The Ham manor court roll of 26 May 1600",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Cooke's only documentary evidence for the castle-guard tenure: the Homage presenting the death of **Nicholas Thorpe**, seised of Wanswell by a sixteenth of a knight's fee, £4 8s. 8d. rent, «and by keeping one tower in the Castle of Berkeley called Thorpe's Tower». A Ham court roll of 1600 is **one year before John Saniger's first appearance in the estate deeds**, and it would list the whole homage."
+      "note": "**Done, and the same shape.** Discovery itemises the Berkeley **deeds** — that is where this archive's 195 records came from — but returns only «BCM, 1153–17th cent» for the **court rolls**, and nothing for a Ham or Hinton roll. Cooke read the roll of 26 May 1600 and quoted the homage presenting Nicholas Thorpe's death. The document exists, a named antiquary has said what is in it, and the catalogue cannot reach it. New errand."
     },
     {
       "n": 70,
@@ -641,10 +687,10 @@
     {
       "n": 76,
       "what": "Work off the 39 grandfathered nulls, in batches",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The audit is finished and the gate is up; the **backfill is not done**. 39 rows are marked `unstated` and grandfathered. Roughly fifteen are FindMyPast searches that cannot be re-controlled without a subscription and should probably be reclassified as `blocked` rather than pretended to be nulls. The rest are one query each."
+      "note": "**Done, and it went 39 → 8 by reading rather than re-searching.** Every formerly-`unstated` row was read one by one, and **thirty-one of them state a control in words the bootstrap pattern could not read** — «FIVE D'Arcy deaths ever registered at Lymington», «loose enough to return SCHONSWAR and SMOOKER», «232 Wakefield-and-Bristol hits and not one is this family», «the Dublin diocese entries effectively end in 1741». The FindMyPast rows were **not** reclassified as `blocked`: those searches were run and returned counts, which makes them nulls, not closed doors. **Eight genuinely name no test**, and each is one query away."
     },
     {
       "n": 77,
@@ -684,15 +730,29 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The 1827 volume was read in full and gave a confirmed null for Robert D'Arcy. His son Joseph, his son Constantine and George Pitt D'Arcy all died at dates this archive knows or can bracket, and the magazine printed officers' deaths as a matter of course. One volume each, free, and the method is already established."
+      "note": "The 1827 volume was read in full and gave a confirmed null for Robert D'Arcy. His son Joseph, his son Constantine and George Pitt D'Arcy all died at dates this archive knows or can bracket, and the magazine printed officers' deaths as a matter of course. One volume each, free, and the method is already established.",
+      "covers": [
+        "err:err/the-will-and-the-death-duty--1d4200"
+      ]
     },
     {
       "n": 82,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
       "what": "Reconcile the other 49 outstanding items with this list",
-      "note": "The estate's `checkcovers` gate arrived in the kit today and reported **0 of 68**: sixty-eight outstanding errands, questions and drafted letters with no work-list row answering for any of them. A first pass tied **18**, and closed errand 51 in the process — it asked for the itemised Berkeley Castle groupings, which Discovery answered this morning, and nobody had gone back to shut it. The ratchet is now set at **49** so the backlog cannot drift upward. The remaining 49 are mostly errands with no row because nobody has decided whether this archive is still pursuing them — which is exactly the decision the gate exists to force."
+      "note": "**Done as far as honest matching allows: 0 → 29 of 67.** The ratchet is down from 68 to **38**. What is left is mostly errands nobody has decided about — Irish parish registers, Antenati volumes, Queensland certificates — and the gate is right that an undecided errand should not be invisible. **Deciding them is not the same job as tying them**, and pretending a work-list row covers an errand it does not would defeat the gate entirely."
+    },
+    {
+      "n": 83,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "what": "Find out what became of Catherine Sneyd, born Hanley 1845",
+      "covers": [
+        "q:q/what-became-of-catherine-sne-c90b1c"
+      ],
+      "note": "Raised because the **checkcovers gate asked for it by name**: «nothing on the work list covers — What became of Catherine Sneyd, born Hanley 1845?» She is HAN/007/057 in the free Staffordshire birth index, mother's maiden name **Biddulph**, and three of her four siblings match the Well Street household exactly. **She appears in no census this archive has read.** Either she did not reach 1851 or she was elsewhere on both nights. The 1851 census for Well Street read directly, or a Stoke death registration between 1845 and 1851, would settle it."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",
@@ -728,5 +788,5 @@
       ]
     }
   ],
-  "unreconciled": 49
+  "unreconciled": 38
 }

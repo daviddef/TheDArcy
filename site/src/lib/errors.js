@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "15 September 2026",
+    what: "Invented a “Forest side of the family” at AWRE and BLAKENEY, and then built on it — two errands, four coverage rows, an atlas point, and three work-list items, all describing how to reach Sanigers in the Forest of Dean.",
+    truth:
+      "There is no documented Saniger at Awre or Blakeney anywhere in this archive, and never has been. The 1608 muster puts all eleven men of the surname at HALMORE, HINTON and SANIGER in Berkeley, at Wotton-under-Edge, at Woodmancote in Dursley parish, at Dursley itself, at Paganhill in Stroud, and at Alkerton, Kings Stanley and Oxlynch in Stonehouse — the Vale and the Cotswold edge, and not once across the Severn. Rudder mentions Awre 194 times and names no Saniger in the whole book. Bigland's second volume mentions Awre 172 times and Blakeney 4, and names no Saniger at all, while his first volume gives twenty at Berkeley.",
+    why: "I wrote it into a work-list note in the morning — “Saniger of Awre/Blakeney is exactly the sort of name it prints” — as a throwaway justification for opening a journal. Nothing checked it, because it was mine rather than a source's, and for the rest of the day I read it back as though the archive had told me. By evening it had produced an errand asking Gloucestershire Archives for a run of court rolls from 1387 to 1881, on the strength of a phrase I had made up before lunch.",
+    lesson:
+      "The archive's own rule caught its author out: a claim needs a source named beside it, and that applies hardest to the claims that arrive as background rather than as findings. A premise smuggled in through a to-do list is never graded, never gets a chip, and is never read against anything. It also shows what the control habit is actually worth — the null that exposed this was BIGLAND'S SECOND VOLUME, 172 mentions of Awre and not one of this surname, which is only meaningful because the mention count was taken.",
+    href: "/swonhungre",
+  },
+  {
+    when: "15 September 2026",
     what: "Published “Eleven men, four spellings” from the 1608 muster, and named the man living in the hamlet the surname came from JOHN SAINGER — the headline of the whole page, since his name and his address were nearly the same word.",
     truth:
       "There are three spellings, and his name is JOHN SANIGER — identical to his address. Gloucestershire Notes & Queries reviewed Maclean's 1902 edition as it appeared and listed its misreadings: “occasionally marred by errors which the editor, whose name is not indicated, ought not to have passed. Thus SAINGER SHOULD READ SANIGER, and probably seiuger is seivyer; the grotesque Grisseote Cliste should be Greffeote Clifte; Cidolls is probably a blunder for Eidolls; Jugley is probably Ingley; Poutinge is doubtless Pontinge; Slinchcombe should be Stinchcombe; and Stimbridge, Slimbridge.”",

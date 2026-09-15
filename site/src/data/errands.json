@@ -690,14 +690,14 @@
   },
   {
    "n": 58,
-   "what": "The court rolls of the manor of AWRE — a run from 1387 to 1881, none of it digitised",
+   "what": "The court rolls of the manor of AWRE — WITHDRAWN, the premise was mine and not the record's",
    "where": "Gloucestershire Archives, Gloucester: D2156/1–4 (single surrenders of 1387, 1439, 1573 and 1577/8), D421/M7 (1588–91, with the Hundred of Bledisloe for 1591), D3270/362 (1671 and then nearly continuous to 1881) and D3270/363 (Awre and Etloe, 1760–1886).",
    "cost": "a visit, or copying fees",
-   "settles": "Whether the Sanigers of Awre and Blakeney can be followed through the gap. Court rolls record surrenders and admissions of copyhold tenants, and name the customary heir — D3270/282 is explicitly «extracts relating to customary heir of a tenant dying», 1688–1777 and 1783–1810. That is a named parent-to-child link, repeated every generation, for exactly the two centuries this archive cannot cross.",
+   "settles": "WITHDRAWN 15 September 2026. This errand asked whether «the Sanigers of Awre and Blakeney» could be followed through the gap. **There are no Sanigers of Awre and Blakeney.** No record in this archive places the surname in the Forest of Dean; the 1608 muster puts all eleven men in Berkeley, Wotton, Dursley, Stroud and Stonehouse. Bigland's second volume mentions Awre 172 times and names no Saniger. The rolls are real and richly documented — 1387 to 1881 — and they are not about this family. Kept rather than deleted, as correction 32.",
    "why": "Awre is not in FreeREG, has no surviving Protestation return, and is not covered by the 1381 poll tax membranes that survive. The court rolls are the one dense, continuous, surviving source for the parish — and they have never been asked.",
    "href": "/errands",
    "file": "D3270/362",
-   "state": "open",
+   "state": "answered",
    "key": "err/the-court-rolls-of-the-manor-52d250"
   },
   {
@@ -751,14 +751,38 @@
   {
    "n": 63,
    "state": "open",
-   "what": "The Tudor lay subsidy assessments for BLEDISLOE hundred — E 179/114/287/1 (1523–25) and E 179/114/287/2 (1544)",
-   "where": "The National Archives, Kew. Not digitised, no free published edition. E 179/114/252 and E 179/114/230 of 1524 cover the same hundred alongside its neighbours. For Berkeley hundred the equivalents are E 179/114/240, /235, /296/5, /272 and /295.",
+   "what": "The Tudor lay subsidy assessments for BERKELEY hundred — E 179/114/240, /235, /296/5, /272, /295",
+   "where": "The National Archives, Kew. Not digitised, no free published edition. The BLEDISLOE pieces named in the first version of this errand have been dropped: that hundred covers Awre, where this archive has no Sanigers at all (correction 32).",
    "cost": "a visit, or a copying order",
-   "settles": "Whether anyone of this surname was taxed in Awre or Blakeney in the 1520s or 1540s — eighty years before the 1608 muster found eleven men of the name in the county, and in the one part of Gloucestershire where no other named source survives.",
-   "why": "Awre has NO FreeREG coverage, NO Protestation return and NO surviving 1381 poll tax membrane. The subsidy assessments and the manor court rolls are the only two dense named sources the parish has, and neither has been asked.",
+   "settles": "Whether anyone of this surname was taxed in **Berkeley hundred** in the 1540s — sixty years before the muster of 1608 found three men of the name in that hundred alone, at Halmore, Hinton and Saniger, and fifty before John Saniger appears in the estate deeds of 1601.",
+   "why": "Every piece is described as «Assessment (individuals)» — named taxpayers. It is the densest surviving named source for the hundred between the medieval deeds and the parish registers.",
    "href": "/swonhungre",
    "file": "E 179/114/287/1",
    "key": "err/the-tudor-lay-subsidy-assess-7db958"
+  },
+  {
+   "n": 64,
+   "state": "open",
+   "key": "err/berkeley-poor-law-settlement-x1",
+   "what": "Berkeley's settlement examinations and removal orders, Gloucestershire Quarter Sessions and parish chest",
+   "where": "Gloucestershire Archives. The Quarter Sessions are the Q series and the parish records the P series; NEITHER is catalogued by name, so this cannot be searched from here at all.",
+   "cost": "a visit",
+   "settles": "A settlement examination is a sworn statement of where a person was born, who their parents were, where they were apprenticed and whom they married — **the one record that names a labourer's parents**. The 1608 muster puts eleven men of this surname at the bottom of the Vale's scale: labourers and weavers of «lower stature». That is precisely the class the settlement papers exist to describe.",
+   "why": "Nothing else reaches these people. They leave no wills, no monuments and no deeds; the parish register gives a name and a date and no parentage.",
+   "href": "/errands",
+   "file": "Gloucestershire Archives, Q and P series"
+  },
+  {
+   "n": 65,
+   "state": "open",
+   "key": "err/ham-manor-court-roll-1600-x2",
+   "what": "The court roll of the manor of Ham, 26 May 42 Elizabeth (1600)",
+   "where": "Berkeley Castle Muniments. Discovery itemises the BCM deeds but NOT the court rolls, so the roll is reachable only by asking the castle directly.",
+   "cost": "a written request, and probably a visit",
+   "settles": "Cooke read it in the 1880s and quotes the homage presenting the death of Nicholas Thorpe, «who died seised of the manor of Wanswell… and by keeping one tower in the Castle of Berkeley called Thorpe's Tower». A court baron lists the whole homage — the tenants of the manor — **one year before John Saniger first appears in the Berkeley estate deeds in 1601**.",
+   "why": "It is the closest surviving document to the moment this family becomes visible on the Berkeley side, and a named antiquary has already read it and said what is in it.",
+   "href": "/swonhungre",
+   "file": "BCM — Ham manor court roll, 42 Eliz."
   }
  ],
  "ydna": {

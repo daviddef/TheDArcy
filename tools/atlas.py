@@ -107,12 +107,7 @@ DOCUMENTED = [
      "its own. Wanswell and Hinton, its neighbours, are on the same point and "
      "are not shown separately for that reason.",
      1250, ["Swonhungre", "Swonhongre", "Swanhanger", "Swonhunger"]),
-    ("Awre, Gloucestershire, England",
-     "The Forest parish, across the Severn. No FreeREG coverage, no surviving "
-     "Protestation return and no surviving 1381 poll tax membrane — but manor "
-     "court rolls from 1387 to 1881. Blakeney, the other hamlet of the name in "
-     "this parish, shares this point.",
-     1387, ["Awre and Etloe", "Blakeney"]),
+
 ]
 
 
