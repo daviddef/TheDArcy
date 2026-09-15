@@ -2,16 +2,113 @@
 import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
+import Marriages from "@daviddef/archive-kit/components/Marriages.astro";
 import { u } from "../lib/url.js";
+import { byId } from "../lib/people.js";
+import ancestors from "../data/ancestors.json";
 import m from "../data/marriages.json";
+import families from "../data/families.json";
+
+/* The couples, and the families they came from, on one page.
+ *
+ * The couples half is this archive's own and is not changed: read the places in
+ * date order and two hundred years of moving falls out of them. What it never
+ * had was the other half — WHICH FAMILIES those marriages brought in — and that
+ * is what the shared shape adds.
+ *
+ * A family is grouped by the generation at which it enters the direct line,
+ * taken from the AHNENTAFEL NUMBER on its members. Nothing is grouped because
+ * two people share a surname: families.json and ancestors.json are joined on
+ * the GEDCOM id, and this archive's own note is that the tree is the authority
+ * on identity — its job is to say how well each record is evidenced, not to
+ * merge or split people behind the reader's back. There are two George Pitt
+ * D'Arcys and three Conyers, so a name join would be a guess three times over.
+ *
+ * Families with no numbered ancestor are not on the direct line at all, and
+ * they get a group that says so rather than a quiet promotion.
+ */
+/* The ahnentafel number is read from ancestors.json and not from the people
+   index, because a person who is BOTH a numbered ancestor and a member of a
+   family has their number erased on the way through: lib/people.js merges the
+   family record over the ancestor record, and every member in families.json
+   carries an explicit `ahn: null`. Taking the number from the file that owns it
+   is right regardless, and the join is on the GEDCOM id either way. */
+const ANC = new Map(ancestors.filter((a) => a.ahn).map((a) => [a.id, a]));
+const enrich = (mem) => {
+  const p = byId.get(mem.id), a = ANC.get(mem.id);
+  return { ...mem, slug: p?.slug || "", ahn: a?.ahn ?? null, gen: a?.gen ?? null };
+};
+const GEN_LABEL = {
+  1: "The name the archive carries", 2: "Her parents", 3: "Her grandparents",
+  4: "Her great-grandparents", 5: "Her great-great-grandparents",
+};
+const label = (g) => GEN_LABEL[g] || `${g - 1} generations back`;
+
+const FAMS = families.map((f) => {
+  const mem = f.members.map(enrich);
+  const anc = mem.filter((x) => x.ahn);
+  return { ...f, mem, anc, entersAt: anc.length ? Math.min(...anc.map((x) => x.gen)) : null };
+});
+
+const fam = (f) => ({
+  surname: f.surname,
+  n: f.published,
+  countLabel: "published",
+  withheld: Math.max(0, f.total - f.published),
+  span: (() => {
+    const ys = f.mem.flatMap((x) => [(x.born || "").match(/\d{4}/), (x.died || "").match(/\d{4}/)])
+      .filter(Boolean).map((x) => +x[0]);
+    return ys.length ? `${Math.min(...ys)}–${Math.max(...ys)}` : "";
+  })(),
+  places: [...new Set(f.mem.map((x) => x.bornPlace).filter(Boolean)
+    .map((p) => p.split(",").slice(-2).join(",").trim()))].slice(0, 4),
+  story: f.blurb ? `<strong>${f.surname}</strong> — ${f.blurb}.` : "",
+  note: f.anc.length
+    ? `<strong>${f.anc.length} of these are numbered direct ancestors</strong>, which is why this
+       family is filed where it is. The rest are their kin, kept because a pedigree that keeps only
+       the ancestor loses the family.`
+    : `<strong>No numbered ancestor.</strong> This family is in the archive and not on the direct
+       line — related by marriage or by household, and said so rather than quietly promoted.`,
+  people: f.mem.filter((x) => x.slug).sort((a, b) =>
+      +((a.born || "").match(/\d{4}/) || [9999])[0] - +((b.born || "").match(/\d{4}/) || [9999])[0])
+    .map((x) => ({
+      name: (x.ahn ? x.ahn + " · " : "") + x.name, slug: x.slug,
+      b: [x.born, x.bornPlace].filter(Boolean).join(" · "), bp: "",
+      d: [x.died, x.diedPlace].filter(Boolean).join(" · "), dp: "",
+    })),
+});
+
+const gens = [...new Set(FAMS.filter((f) => f.entersAt).map((f) => f.entersAt))].sort((a, b) => a - b);
+const GROUPED = [
+  ...gens.map((g) => {
+    const list = FAMS.filter((f) => f.entersAt === g).sort((a, b) => b.published - a.published);
+    return {
+      key: "g" + g, label: label(g), count: list.length,
+      blurb: `Ahnentafel ${Math.pow(2, g - 1)}\u2013${Math.pow(2, g) - 1}. ${list.length === 1
+        ? "One family enters" : `${list.length} families enter`} the line here.`,
+      families: list.map(fam),
+    };
+  }),
+  ...(() => {
+    const list = FAMS.filter((f) => !f.entersAt).sort((a, b) => b.published - a.published);
+    return list.length ? [{
+      key: "off", label: "In the archive, not on the direct line", count: list.length,
+      blurb: `No numbered ancestor carries these names. They are here by marriage or by household,
+        and this archive would rather say so than let a full table imply a descent it cannot show.`,
+      families: list.map(fam),
+    }] : [];
+  })(),
+];
+
 const placed = m.rows.filter((r) => r.place);
 const century = (r) => Math.floor(r.sort[0] / 100) * 100;
 const groups = {};
 for (const r of m.rows) (groups[century(r)] ||= []).push(r);
 const order = Object.keys(groups).sort((a, b) => a - b);
+const nPub = FAMS.reduce((a, f) => a + f.published, 0);
 ---
-<Base title="Marriages" eyebrow={`${m.n} with a date · ${placed.length} with a place`}
-  dek="Every marriage this archive can date, in order. It is the only series on the site that shows the family actually moving — Portsea, Camden, Carrigaline, Muttaburra, Toowoomba.">
+<Base title="The Marriages" eyebrow={`${m.n} marriages \u00b7 ${families.length} families \u00b7 ${nPub} of their people published`}
+  dek="Every marriage this archive can date, in order — and then the families those marriages brought in. It is the only series on the site that shows the family actually moving: Portsea, Camden, Carrigaline, Muttaburra, Toowoomba.">
   <section class="blk">
     <p class="lede">A birth tells you where a family already was. <strong>A marriage tells you where
     it went.</strong> Read the places below in order and the shape of two hundred years falls out of
@@ -55,4 +152,24 @@ const order = Object.keys(groups).sort((a, b) => a - b);
     and the somewhere is usually one certificate away.
     <a href={u("/errands/")}>The queue →</a> · <a href={u("/households/")}>Households →</a></p>
   </section>
+  <section class="blk">
+    <h2>And the families they brought in</h2>
+    <p class="lede">A marriage is an event; a family is what the event joined. These thirteen are
+    grouped by <strong>the generation at which each enters the direct line</strong>, taken from the
+    ahnentafel number on its own members — <strong>never from a shared surname</strong>. This
+    archive holds two George Pitt D'Arcys and three Conyers, so a name would be a guess three times
+    over; the join is on the record id, and the tree is the authority on identity.</p>
+  </section>
+
+  <Marriages u={u} groups={GROUPED} openAt={6}>
+    <div slot="missing">
+      <section class="blk" style="border-bottom:0">
+        <p class="dek"><strong>{m.n - placed.length}</strong> of these marriages have a date and no
+        place. That is a gap in the searching, not in the records — a marriage that produced a date
+        came from somewhere, and the somewhere is usually one certificate away.
+        <a href={u("/errands/")}>The queue →</a> · <a href={u("/households/")}>Households →</a> ·
+        <a href={u("/people/")}>The People →</a></p>
+      </section>
+    </div>
+  </Marriages>
 </Base>
