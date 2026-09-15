@@ -8,6 +8,7 @@
    rendered from questions.json, and every question names what would settle it
    and which register holds the attempts. The old prose is in the git history. */
 import Base from "../layouts/Base.astro";
+import Questions from "@daviddef/archive-kit/components/Questions.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
@@ -38,35 +39,20 @@ const age = (r) => r.since && r.state !== "answered"
     </div>
   </section>
 
-  {q.rows.map((r) => (
-    <Blk label={r.rank} title={`${r.n}. ${r.q}`}>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:baseline">
-        <span class="chip" style={`border-color:${S(r)[1]}`}>
-          <strong style={`color:${S(r)[1]}`}>{S(r)[0]}</strong></span>
-        <span class="small mono" style="color:var(--ink-3)">raised {r.since}</span>
-        {age(r) > 30 && <span class="small mono" style="color:#B04A16">{age(r)} days</span>}
-        <span class="small" style="margin-left:auto">
-          <a href={u(r.register + "/")}>attempts are in this register →</a></span>
-      </div>
-
-      {r.settles && (
-        <Note style="border-left-width:3px;margin-top:1.2rem">
-          <strong>What would settle it.</strong> {r.settles}
-        </Note>)}
-
-      <h3 style="margin-top:1.6rem">What has been tried</h3>
-      <div style="margin-top:.8rem;display:flex;flex-direction:column;gap:.9rem">
-        {r.tried.map(([what, outcome]) => (
-          <div style="border-left:2px solid var(--rule);padding-left:14px">
-            <strong class="small">{what}</strong>
-            <p class="small" style="margin:.25rem 0 0;color:var(--ink-2)">{outcome}</p>
-          </div>
-        ))}
-      </div>
-
-      {r.note && <Note style="margin-top:1.3rem">{r.note}</Note>}
-    </Blk>
-  ))}
+  <Questions u={u} rows={q.rows.map((r) => ({
+    n: r.n,
+    q: r.q,
+    state: S(r)[0],
+    rank: r.rank,
+    settles: r.settles,
+    tried: r.tried.map(([what, outcome]) =>
+      `<div style="margin-bottom:.55rem"><strong class="small">${what}</strong>` +
+      `<div class="small" style="color:var(--ink-2)">${outcome}</div></div>`).join(""),
+    since: age(r) > 30 ? `${r.since} — ${age(r)} days` : r.since,
+    href: r.register + "/",
+    hrefLabel: "attempts are in this register →",
+    known: r.note || "",
+  }))} />
 
   <section class="blk" style="border-bottom:0">
     <div class="prose" set:html={link(mdp(q.close))}></div>
