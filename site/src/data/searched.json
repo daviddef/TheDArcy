@@ -3029,6 +3029,49 @@
    "ctl": "named",
    "got": "**It is not, and the premise was mine.** Volume 2 mentions **Awre 172 times and Blakeney 4** across 4.4 million characters, and names **no Saniger under any spelling** — while volume 1 gives twenty at Berkeley. Rudder mentions Awre 194 times and names none in the whole book. And the 1608 muster puts all eleven men at Halmore, Hinton and Saniger in Berkeley, at Wotton-under-Edge, Woodmancote, Dursley, Paganhill and three Stonehouse hamlets. **There is no Forest side of this family.** I wrote the phrase into a work-list note this morning and read it back all day as though a source had said it. Now correction 32.",
    "href": "/what-we-got-wrong"
+  },
+  {
+   "src": "TBGAS volume 22 — whose deeds they are",
+   "what": "The numbered series printed in full translation",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "«**Documents relating to the Monastery of St Mary Kingswood, belonging to Mr. F. F. FOX. Transcribed by Mr. V. R. PERKINS.**» **Forty-six numbered deeds**, in a private collection — a third body of muniments, separate from Berkeley Castle and from Smyth's own papers at Birmingham. Eleven mention this surname. Kingswood Abbey held land in the same parishes, which is why a Swonhungre partition is among them.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "Smyth's survey, read for BELLAMY'S PLACE",
+   "what": "The property whose two halves descended through both sisters until 1605",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Smyth gives the Stone descent independently, and it matches the deeds exactly: Bellamy's Place at Southend in Nibley «was anciently… the land of **ROBERT DE STONE, FATHER OF ROBERT DE STONE, FATHER OF THOMAS DE STONE**, who in the begininge of the raigne of kinge Edward the second **was in ward for the same to Thomas then lord Berkeley**». Three generations from a survey of about 1639, matching BCM/A/1/24/190 of about 1304, **neither depending on the other**. Smyth adds that Thomas was a MINOR IN WARD. And the tenure repeats: «the xvj[th] part of a knights fee, sute to his hundred Court of Berkeley from 3. weekes to 3. weekes» — the same sixteenth Cooke found for Wanswell in the court roll of 1600.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "Smyth's survey, for the Great Berkeley Law-suit",
+   "what": "The 15th-century dispute Cooke invokes to explain the Thorpes' castle-guard",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Not in volume 3 under that name: «law-suit» and «lawsuit» return nought across 1.29 million characters, against a volume mentioning Nibley 73 times and Thorpe 108. The Description of the Hundred is a survey of properties, not a narrative of the family's litigation — that belongs to the LIVES, which are volumes 1 and 2. Cooke's sentence remains this archive's only account of it.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "The Gentleman's Magazine, 1849",
+   "what": "GEORGE PITT D'ARCY, died at Parramatta 22 July 1849",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Not there. The volume is 3.5 million characters with **122 obituary sections**, and it carries three D'Arcys — Samuel Darcy Dickson of Ballyma[curragh], «at an advanced age, D'Arcy Mahon, esq.», and an index entry «D'Arcy, J. S. 446» — so the magazine does print the name. It simply does not print his. A colonial death in July would in any case sit near the edge of the year's reporting.",
+   "href": "/joseph-darcy"
+  },
+  {
+   "src": "The Gentleman's Magazine — what can be reached at all",
+   "what": "Whether the 1805 and 1848 volumes can be opened for Constantine and Joseph",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "Not from the Internet Archive. **120 identifiers were checked, one metadata record at a time**, because the search index stamps every volume «1731» — the series start — and only the per-item `year` field is true. Of the 120, the years present run 1738, 1748, 1780, 1789, 1795, 1807, 1812, 1816, 1817, 1819, 1823, 1827, 1828, 1829, 1830, 1832, 1834, 1838, 1840, 1841, 1847, **1849**, 1850 and onward. **Neither 1805 nor 1848 is among them.** Constantine died in May 1805 and Joseph in 1848, and the volumes that would carry them are not in this holding.",
+   "href": "/behind-the-paywall"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

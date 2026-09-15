@@ -460,6 +460,15 @@
    "verdict": "good",
    "note": "Catalogued individually and described as «Assessment (individuals)», so the names are known to be there. NOT DIGITISED and no free published edition exists. For BLEDISLOE — Awre and Blakeney — this matters more than anywhere else: that hundred has no FreeREG coverage, no surviving Protestation return and no surviving 1381 poll tax membrane.",
    "href": "/errands"
+  },
+  {
+   "db": "The Gentleman's Magazine, on the Internet Archive",
+   "where": "120 digitised volumes",
+   "holds": "officers' deaths and obituaries — for the years it happens to hold",
+   "span": "1738 to 1907, with gaps",
+   "verdict": "partial",
+   "note": "The search index stamps EVERY volume «1731», the series start, so year-targeted retrieval needs the per-item metadata record fetched one at a time. Checked that way on 15 September: the 120 volumes include 1827, 1829, 1847 and **1849** — and **neither 1805 nor 1848**, which are the years Constantine and Joseph D'Arcy died. The 1849 volume was read: 122 obituary sections, three D'Arcys, none of them this family's.",
+   "href": "/joseph-darcy"
   }
  ],
  "verdicts": {

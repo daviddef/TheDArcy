@@ -547,10 +547,10 @@
     {
       "n": 59,
       "what": "Read the whole numbered deed series in TBGAS volume 22",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Two of roughly forty numbered deeds were read — the 1329 indenture and the 1353 partition — because those were the two the index pointed at. The series is printed in **full English translation**, which nothing else this archive has touched is, and it covers the same families: Berkeley, Stone, Serjeant, Kingswood Abbey. Establish whose muniments are being printed, then read the run."
+      "note": "**Identified.** The series is «**Documents relating to the Monastery of St Mary Kingswood, belonging to Mr. F. F. Fox, transcribed by Mr. V. R. Perkins**» — **forty-six numbered deeds in a private collection**, a third body of muniments separate from Berkeley Castle and from Smyth's papers at Birmingham. Eleven mention this surname; the two that matter were already read."
     },
     {
       "n": 60,
@@ -647,10 +647,10 @@
     {
       "n": 71,
       "what": "Bellamy's Place, Nibley — two moieties reunited after 287 years",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Cooke: Smyth «traces the descent of the separate moieties in the descendants of the two sisters until **1605, when they were re-united in a single purchaser, Henry Hatheway, after a severance of 287 years**». A property descending in two halves through both sisters' lines, traced by Smyth to 1605, is a ready-made test of the whole reconstruction."
+      "note": "**Done, and it is an independent confirmation rather than a new property.** Smyth on Bellamy's Place: «the land of **Robert de Stone, father of Robert de Stone, father of Thomas de Stone**, who… was in ward for the same to Thomas then lord Berkeley». That is the same three generations BCM/A/1/24/190 gives in about 1304, from a survey of about 1639, **neither source depending on the other** — and Smyth adds that Thomas was a minor in ward. The tenure repeats too: a sixteenth of a knight's fee, as at Wanswell in 1600."
     },
     {
       "n": 72,
@@ -719,18 +719,18 @@
     {
       "n": 80,
       "what": "The Great Berkeley Law-suit, and what it did to the records",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Cooke explains the Thorpes' castle-guard by «the family quarrels of the Great Berkeley Law-suit», when the castle «was frequently attacked, taken, and re-taken». A 15th-century dispute that moved the muniments about is worth understanding before concluding anything from a gap in them."
+      "note": "**Done, and not in this volume.** «Law-suit» and «lawsuit» return nought across Smyth's 1.29 million characters, against controls of Nibley 73 and Thorpe 108. The Description of the Hundred is a survey of properties; the family's litigation belongs to the **Lives**, volumes 1 and 2. Cooke's sentence — the castle «frequently attacked, taken, and re-taken» — remains this archive's only account of it."
     },
     {
       "n": 81,
       "what": "The Gentleman's Magazine for the other deaths, not just 1827",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The 1827 volume was read in full and gave a confirmed null for Robert D'Arcy. His son Joseph, his son Constantine and George Pitt D'Arcy all died at dates this archive knows or can bracket, and the magazine printed officers' deaths as a matter of course. One volume each, free, and the method is already established.",
+      "note": "**Done, and mostly blocked by what is digitised.** The Internet Archive's search index stamps **every** Gentleman's Magazine volume «1731», the series start, so the year has to be read from each item's metadata one at a time — 120 were checked that way. The holding includes 1827, 1829, 1847 and **1849**, and **neither 1805 nor 1848**: the years Constantine and Joseph died. The 1849 volume was read for **George Pitt D'Arcy**, who died at Parramatta that July — **not there**, against 122 obituary sections and three other D'Arcys in the same volume.",
       "covers": [
         "err:err/the-will-and-the-death-duty--1d4200"
       ]
