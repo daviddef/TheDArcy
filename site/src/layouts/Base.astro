@@ -94,15 +94,21 @@ const thisArchive = ring.archives.find(
     <SiblingArchives />
     <p class="foot">An evidence-first archive of the D'Arcy family of Brisbane — and of Parramatta,
     Portsmouth and, if the pedigree holds, Hornby in the North Riding of Yorkshire. Every claim
-    carries its confidence, or is marked as unproven. Living people are excluded from this build.</p>
-    <p class="foot">One of six archives kept to this method — the others are
-      <a href={u("/the-other-archives/")}>Defranceski, Falco, Lerena, Blažević and Booyzen</a>.
-      This one joins them through a marriage in the present generation, which is not published
-      because the people in it are alive.</p>
+    carries its confidence, or is marked as unproven. <strong>Living people are excluded from this
+    build entirely</strong> — not their dates and not their names. That is stricter than the estate
+    rule, which names them and gives nothing else, and it is deliberate: this archive drops them at
+    the boundary, before the data is ever written.</p>
+    <p class="foot">This archive joins the others through
+      <a href={u("/the-other-archives/")}>a marriage in the present generation</a>, which is not
+      published because the people in it are alive. How many archives there are, and which, is said
+      once — by the ring above this line, which every archive reads from one shared file so the
+      count cannot drift. This paragraph used to give its own number and had fallen a whole archive
+      behind it.</p>
     <p class="foot dim">Built {new Date().getFullYear()} ·
       <a href={u("/sources/")}>Sources</a> ·
       <a href={u("/method/")}>Method</a> ·
       <a href={u("/open-questions/")}>Open questions</a> ·
+      <a href={u("/corrections/")}>Corrections</a> ·
       Corrections are the most valuable thing you can send</p>
     <VisitCount code={thisArchive?.counter} />
   </div>
