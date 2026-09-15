@@ -641,6 +641,39 @@
    "href": "/errands",
    "file": "D3270/362",
    "state": "open"
+  },
+  {
+   "n": 59,
+   "state": "open",
+   "what": "MS 3549/89 — the court roll of the manor of HAM AND HINTON, 1587–88, in John Smyth's own collection",
+   "where": "Library of Birmingham, Archives and Collections. Not digitised. MS 3549/182, a copy court roll of Alkington in 1624, is in the same series.",
+   "cost": "a visit, or a copying order",
+   "settles": "Who held land in Hinton fourteen years before JOHN SANIGER OF SANIGER appears in the Berkeley estate deeds of 1601, and twenty-one years before the muster of 1608 names eleven men of the surname. A court baron records surrenders, admissions and the deaths since the last court — which is a list of tenants with their heirs.",
+   "why": "It is the closest surviving document to the moment this family becomes visible, and it is in the wrong county to be found by anybody searching Gloucestershire. It exists at Birmingham because John Smyth of Nibley collected it while writing the very book this archive quotes.",
+   "href": "/swonhungre",
+   "file": "MS 3549/89"
+  },
+  {
+   "n": 60,
+   "state": "open",
+   "what": "The will of EDWARD SANNIGER, mariner of Chepstow, proved at Llandaff 28 November 1806",
+   "where": "Two copies. LL/1806/24 at the National Library of Wales — digitised, but its catalogue is behind a bot check this archive will not complete. IR 26/352/152 at Kew is the Estate Duty abstract of the same will.",
+   "cost": "free at NLW if you open it yourself; a copying fee at Kew",
+   "settles": "Whether there is a Saniger branch across the Severn. He is a mariner at Chepstow, twenty miles by water from the Saniger fisheries on the Berkeley shore, spelling his name the way EDWARD SANNIGER OF BERKELEY, GENT spelled it in 1694. A will names family; the catalogue names nobody.",
+   "why": "Nothing yet connects him to this family beyond a surname, a spelling and a stretch of river. That is a hypothesis, and a will is the cheapest way to kill or confirm it.",
+   "href": "/swonhungre",
+   "file": "LL/1806/24"
+  },
+  {
+   "n": 61,
+   "state": "open",
+   "what": "The will of THOMAS SANNIGER, Able Seaman of HMS Eurydice, 24 February 1794",
+   "where": "The National Archives, Kew — ADM 48/84/222, ship's pay book number 193.",
+   "cost": "a copying fee",
+   "settles": "Seamen's wills are short and almost always name next of kin — a wife, a mother, a brother — because that is what they exist to do. The catalogue gives his rank, his ship and nothing else.",
+   "why": "Found in the Discovery sweep of 15 September. Like the Chepstow mariner, he is a surname and a hypothesis until somebody reads the document.",
+   "href": "/swonhungre",
+   "file": "ADM 48/84/222"
   }
  ],
  "ydna": {

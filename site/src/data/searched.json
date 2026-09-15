@@ -2302,6 +2302,78 @@
    "outcome": "yield",
    "got": "All three. JOHN SANIGAR, March quarter 1850, Thornbury, vol 11 page 401. LYDIA SANIGAR, September quarter 1851, Thornbury, vol 11 page 329. MARY ANN SANIGAR, December quarter 1851, Thornbury, vol 11 page 369. Each quarter is marked by FreeBMD as more than 99 per cent transcribed. This archive already had all three from the Gloucestershire Registration Service's LOCAL register — 3/146, 3/265, 3/282 — so two independent indexes now agree, and Lydia's certificate can be ordered from the GRO as well as from Gloucester.",
    "href": "/sanigers"
+  },
+  {
+   "src": "Berkeley Castle Muniments — all 200 records, not the 25 read first",
+   "what": "Every catalogue description under every spelling, read for relationship language",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Twenty-five phrases tie the surname to a relationship and six were new: John son of Thomas (1311); Thomas son of John (early 14th cent.); THOMAS SON OF WILLIAM, MAUD HIS WIFE AND JOHN THE YOUNGER THEIR SON in one Hinton lease (mid 14th cent.); John son of John and Alice his wife (15th cent.); John Swonhongre and Edith his wife (1377); and the wardship of 1390. The other 175 are largely witness lists — Thomas de Swonhungre witnesses Berkeley charters from the mid-13th century to about 1311 beside the same circle of Berkeley officials.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "BCM/A/4/2/22, 5 December 1390",
+   "what": "Whether the tenure this archive inferred can be documented",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "It can, in the lord's own words: «Thomas has granted to John the marriage of John Swonhongre, son and heir of Elias Swonhongre, WHICH CAME TO THOMAS BECAUSE ELIAS HELD OF THOMAS BY KNIGHT SERVICE.» The archive had reasoned from silence that the Swonhungers generate no royal inquisition because they were mesne tenants of Berkeley. The reasoning was right and can now be retired in favour of the deed. It also confirms Smyth's statement that this John was «in ward to Thomas lord Berkeley», and shows why.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "The Berkeley deeds, read for topography rather than people",
+   "what": "How the hamlet was approached, and whether any field name survives",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Five deeds map the approach without a map: the king's highway from Longebrugge to Swonhunger (mid 13th cent.); Alagrene street in the west part of Berkeley towards Swonhungre (1287); the field called Stodfold near Swonhungre (1317); the path from Berkel' to Swonhungre through LE WESTFELD in the furlong of Kyngakre (1322); and le Muleweye, the road from Berckel' to Swonhungre at Lokedonne (1324). LE WESTFELD is the same field named in D2957/41/18 of 1601 — «3 acres of arrable in WESTFIELD, SANIGER, Berkeley» — 279 years later. A continuity of place, not of blood.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "The Library of Birmingham, MS 3549",
+   "what": "What the series is, after three hits came out of one shelfmark",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "«MS 3549 · 1200–1704 · SMYTH, JOHN (1567–1641), ANTIQUARY — MISCELLANEOUS DEEDS AND MANORIAL RECORDS COLLECTED BY JOHN SMYTH.» It is the steward's own working collection, gathered while writing the books this archive has spent a week testing. It explains the duplicate: the 1377 grant is BCM/A/1/24/185 at Berkeley Castle and MS 3549/20 here because Smyth kept a copy.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "MS 3549 — the court rolls inside it",
+   "what": "Whether Smyth's collection reaches the manors this family held in",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "It does, on both sides of the gap. MS 3549/89 is the court roll of the MANOR OF HAM AND HYNTON, Courts Baron of 12 September 1587 to 15 March 1587/8 — the manor containing Hamfallow, and the tithing Bigland places Saniger in, fourteen years before this archive's earliest Saniger deed. MS 3549/182 is a copy court roll of ALKINGTON, 1624, where Edward Sanniger held in 1694. Twenty-two court rolls in the series in total. Neither is digitised, and both are at Birmingham, not Gloucester.",
+   "href": "/errands"
+  },
+  {
+   "src": "Hertfordshire Archives, DE/M/95 — read in full",
+   "what": "Why a Gloucestershire deed sits in a Hertfordshire collection, and what the deed actually says",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "DE/M is «Personal and family papers of the CAPELLS, EARLS OF ESSEX… title deeds of their Essex and Hertfordshire» estates, and John Capel is the first party — so the deed left Gloucestershire in his family's muniments. The full description is far richer than the search snippet: a purparty of «THE INHERITANCE IN HAMME OF JOHN DE WYKE» divided between JOAN CAPEL, ALICE DE SWONHONGRE and AGNES DE LOREWYNGE, each named as the ancestor through whom her heir holds. Alice was one of three coheirs of John de Wyke — the land came into this family through a woman. Wyke is the hamlet next to Swonhunger in Smyth's list.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "Edward Sanniger, mariner of Chepstow — the two references",
+   "what": "Whether his will can be read from here",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Both references confirmed and described. IR 26/352/152 at Kew is the ESTATE DUTY ABSTRACT — «Abstract of Will of Edward Sanniger, Mariner of Chepstow, Monmouthshire. Proved in the Llandaff», 28 November 1806. LL/1806/24 at the National Library of Wales is the will itself, «Diocese: Llandaf, Parish: Chepstow». Neither catalogue entry names a relative, so nothing yet connects him to this family — Chepstow is across the Severn from the Saniger fisheries and that is the whole of the case so far.",
+   "href": "/errands"
+  },
+  {
+   "src": "National Library of Wales probate images",
+   "what": "Reading LL/1806/24 directly",
+   "when": "15 Sep 2026",
+   "outcome": "blocked",
+   "got": "archives.library.wales serves a bot check — «Performing security verification… protect against malicious bots». This archive does not complete bot checks, so the will stays unread rather than being recorded as absent. The catalogue reference is firm and the document is digitised; only the route is closed.",
+   "href": "/behind-the-paywall"
+  },
+  {
+   "src": "Thomas Sanniger, Able Seaman of HMS Eurydice",
+   "what": "The seaman's will of 1794, ADM 48/84/222",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Confirmed and no more: «Will of Sanniger, Thomas. Rank/Rating: Able Seaman. Ship Name: Eurydice. Ship's Pay Book number: 193», 24 February 1794. The catalogue gives rank, ship and pay-book number and no kin. Seamen's wills name next of kin in the document, which is the reason to order it — and the reason a catalogue search cannot settle whether he belongs here.",
+   "href": "/errands"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 30 of them do. 59 were written before that rule and do not, and are marked accordingly rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it untested. The cost of finding out is one query each, and they are on [the work list](/worklist/).",

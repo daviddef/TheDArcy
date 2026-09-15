@@ -98,11 +98,15 @@
   "caveat": "What has been read is the archivists' calendar of each deed, not the deed. A calendar is a summary made by somebody competent who had the original in front of them; it is excellent evidence and it is not the document. The deeds are at Berkeley Castle, at Birmingham, at Hertford and at Kew, and none of them has been seen by this archive."
  },
  "alice": {
-  "head": "A woman named as an ancestor, in Hertfordshire",
-  "ref": "DE/M/95 · Hertfordshire Archives and Local Studies · 20 Edward III, 14 March 1346",
-  "body": "«Between John Capel, Thomas de Swonhongre and John de Lorewynge: whereas formerly a purparty was made, between Joan Capel, mother of the said John Capel, her heir, ALICE DE SWONHONGRE, ANCESTOR OF THE SAID THOMAS…»",
-  "means": "Two women named as the people the land came through, in a document filed four counties away from Berkeley because a later owner's papers ended up in Hertfordshire. Berkeley Castle holds its own copy as BCM/A/1/24/297. Medieval deeds name women when the descent runs through them, which is more often than the pedigrees printed from those deeds tend to show.",
-  "chip": "documented"
+  "head": "Three women, three families, and one inheritance divided",
+  "ref": "DE/M/95 · Hertfordshire Archives and Local Studies · 14 March 20 Edward III, 1346 · given at Berkeley",
+  "body": "«Between JOHN CAPEL, THOMAS DE SWONHONGRE and JOHN DE LOREWYNGE: whereas formerly a purparty was made, between JOAN CAPEL, MOTHER OF THE SAID JOHN CAPEL, HER HEIR, ALICE DE SWONHONGRE, ANCESTOR OF THE SAID THOMAS AND HER HEIR, and AGNES DE LOREWYNGE, ANCESTOR OF JOHN DE LOREWYNGE, HER HEIR, OF THE INHERITANCE IN HAMME OF JOHN DE WYKE» — the garden and «la Crane», Bruggecroft, Redecroft, Cleycroft, Portrerecroft, Stapelyngferlong, Stapelyngmede and Hammemede, now redivided between the three men by metes and bounds.",
+  "means": "A purparty is the share of an inheritance split between coheirs. Three women — Joan, Alice and Agnes — each took a third of **the inheritance of JOHN DE WYKE in Ham**, and a generation later their three heirs are redividing it. So Alice de Swonhongre was one of three coheirs of John de Wyke, and Thomas de Swonhongre holds through her. **The land came into this family through a woman**, and the deed says so twice over.",
+  "chip": "documented",
+  "wykeHead": "And John de Wyke is a neighbour, not a stranger",
+  "wyke": "Smyth lists the hamlets of Hamfallow as «Wike ats Wikes-elme, Wanefwell, Swonhunger ats Saniger, Halmer ats Ecton, and Egeton». **Wyke is the hamlet next door.** A man named from one hamlet leaves land to three daughters who marry into three others — which is what a small vale full of small holdings looks like from the inside.",
+  "whereHead": "Why a Berkeley deed is in Hertfordshire",
+  "where": "Raised as a question on the work list and answered from the catalogue's own hierarchy: DE/M is «**Personal and family papers of the CAPELLS, EARLS OF ESSEX**, including 17th-century personal papers and title deeds of their Essex and Hertfordshire [estates]». The first party to the deed is John Capel. It stayed in his family's muniments and travelled with them out of Gloucestershire — which is why no search of a Gloucestershire repository would ever have found it. Berkeley Castle keeps its own copy as BCM/A/1/24/297; the deed itself says three copies were sealed."
  },
  "fish": {
   "head": "And the fish-traps turn up again",
@@ -217,5 +221,123 @@
   "thorp": "Smyth's pedigree ends with the main line failing in 1401 and the estate passing through Isabel Swonhunger to JOHN THORPE OF BRISTOL. Rudder, describing Wanswell in the same paragraph that omits Saniger, says: «THORP OF WANSWELL held his lands to guard a tower in Berkeley-caſtle, called THORP'S-TOWER, which was built in the reign of king Edward the Third. Thomas Thorp died ſeized of the manor of Wanſwell, 17 H. 8. Thomas his ſon had livery thereof 29 H. 8.»",
   "thorpMeans": "The family that inherited the Swonhunger lands held them by castle-guard — a named tower in Berkeley Castle — and were still seised of Wanswell in 1525. That is a hundred and twenty-five years of the estate's descent after the point Smyth's pedigree hands it over, from a book this archive had not opened.",
   "thorpChip": "documented"
+ },
+ "wardship": {
+  "head": "Why they hold of Berkeley, said outright in 1390",
+  "ref": "BCM/A/4/2/22 · Monday before St Nicholas, 14 Richard II · at Wotton · quote GC3842",
+  "quote": "Thomas de Berkeley, lord of Berkeley, and John Coueleye. Thomas has granted to John THE MARRIAGE OF JOHN SWONHONGRE, SON AND HEIR OF ELIAS SWONHONGRE, WHICH CAME TO THOMAS BECAUSE ELIAS HELD OF THOMAS BY KNIGHT SERVICE.",
+  "chip": "documented",
+  "means": "One sentence does three things. It gives another filiation — John son and heir of Elias. It confirms what Smyth says of that John, that he was «in ward to Thomas lord Berkeley», and shows the mechanism: the heir was under age, so his marriage fell to his lord and was sold on to John Coueleye. And it states the tenure outright — **knight service of Berkeley**.",
+  "whyHead": "And it turns an inference into a record",
+  "why": "This archive already argued that the Swonhungers generate no royal inquisition post mortem because they were mesne tenants of Berkeley rather than tenants-in-chief of the Crown. That was reasoning from silence, and it was right. This deed says it in the lord's own words, and the reasoning can be retired."
+ },
+ "deeds": {
+  "head": "The rest of the Berkeley corpus, read",
+  "lede": "The sweep of 15 September found 178 Berkeley Castle deeds and read twenty-five. All two hundred now indexed under every spelling have been read for relationship language — father, son, heir, widow, wife, cousin, ancestor — and twenty-five phrases actually tie the surname to a relationship. Seven were then read in full. This is what they add.",
+  "rows": [
+   [
+    "BCM/A/1/43/44",
+    "3 June 1311",
+    "«JOHN SON OF THOMAS DE SWONHUNGRE» witnessing a Gloucestershire quitclaim at Kingston by Slimbridge, in a list of county witnesses that opens with a knight.",
+    "a filiation, and a man of standing"
+   ],
+   [
+    "BCM/A/1/24/188",
+    "early 14th cent.",
+    "«Thomas lord of Berkeleye and THOMAS SON OF JOHN DE SWONHUNGRE.»",
+    "a filiation"
+   ],
+   [
+    "BCM/A/1/36/24",
+    "mid 14th cent.",
+    "«Thomas lord of Berkelee; and THOMAS SON OF WILLIAM DE SWONHONGRE, MAUD HIS WIFE AND JOHN THE YOUNGER THEIR SON» — a lease of a messuage and half-virgate in Hinton «which Robert Wyntur previously held IN VILLEINAGE», for their lives, rent 20s. and the customary maintenance of the woodward.",
+    "THREE generations in one sentence"
+   ],
+   [
+    "BCM/A/1/24/173",
+    "15th cent.",
+    "«JOHN SON OF JOHN DE SWONHUNGRE AND ALICE HIS WIFE.»",
+    "a filiation and a wife"
+   ],
+   [
+    "BCM/A/1/12/243",
+    "24 Jan. 1377",
+    "«John Lokyntone of Berkeley; and JOHN SWONHONGRE AND EDITH HIS WIFE.»",
+    "a second wife named"
+   ],
+   [
+    "BCM/A/4/2/22",
+    "5 Dec. 1390",
+    "The wardship above — John, son and heir of Elias, his marriage sold by the lord.",
+    "a filiation, a tenure, and Smyth confirmed"
+   ]
+  ],
+  "means": "Six statements of kinship the archive did not have this morning, and one of them carries three generations. Put beside the three found on 15 September, the deeds now name relationships for **William, Elias, Maud, Alice, Edith, Isabella and Alice de Swonhongre** — four wives, a mother-in-blood and two heirs — in a family this site could describe a week ago only as «the Swonhungers».",
+  "chip": "documented",
+  "careHead": "And the shape of the rest",
+  "care": "The other hundred and seventy-five records are not empty; they are mostly WITNESS LISTS. Thomas de Swonhungre witnesses Berkeley charters from the mid-13th century to about 1311, repeatedly, beside the same men — Robert de Bradeston, John de Crawleye, Robert Wyther, Geoffrey Neel, John Sewaker. A man who witnesses the lord's deeds for fifty years is a person of standing in the hundred, which is a fact about the family even though no single deed states it."
+ },
+ "ways": {
+  "head": "How you got there",
+  "lede": "Five deeds describe the approach to the hamlet, and between them they map it without a map.",
+  "rows": [
+   [
+    "mid 13th cent.",
+    "BCM/A/1/12/92",
+    "«the king's highway from LONGEBRUGGE to SWONHUNGER», with the road from Locfastebrugg to Richard Averey's house on the other side of a Berkeley messuage"
+   ],
+   [
+    "17 Aug. 1287",
+    "BCM/A/1/25/4",
+    "«a croft in the west part of Berkel towards Swonhungre called ALAGRENE STREET», inherited by Robert le Grip from his father Walter"
+   ],
+   [
+    "10 July 1317",
+    "BCM/A/1/30/4",
+    "land in Ham «lying near Swonhungre, in the field called STODFOLD», a third of it held in dower by Joan Neel"
+   ],
+   [
+    "25 April 1322",
+    "BCM/A/1/24/261",
+    "a selion «in the field called WESTFELD in the furlong called KYNGAKRE, beside the path from Berkel' to Swonhungre» — the deed executed AT SANIGER"
+   ],
+   [
+    "7 July 1325",
+    "BCM/A/1/24/262",
+    "a croft «in the field called LE WESTFELD beside the king's highway and the footpath from Berckel' to Swonhungre»"
+   ],
+   [
+    "21 Dec. 1324",
+    "BCM/A/1/65/12",
+    "land in Lokedonne «beside the road from Berckel' to Swonhungre called LE MULEWEYE» — the mill way"
+   ]
+  ],
+  "fieldHead": "And one field name outlives everything else here",
+  "field": "LE WESTFELD is where the 1322 and 1325 deeds put the path from Berkeley to Swonhungre. The earliest deed this archive holds for its own Sanigers is D2957/41/18, dated 2 November 1601: «Release of 3 acres of arrable in WESTFIELD, SANIGER, Berkeley». The same field, under the same name, two hundred and seventy-nine years later.",
+  "fieldChip": "inferred",
+  "fieldCare": "This is a continuity of PLACE, not of blood. Field names are the most conservative thing in an English parish and routinely outlast the families farming them. It strengthens the identification of Swonhungre with Saniger, which was already secure; it says nothing about whether the men of 1322 and the men of 1601 are related."
+ },
+ "smythsown": {
+  "head": "And the Birmingham deeds turn out to be Smyth's own",
+  "lede": "Three of the records found on 15 September carried a Birmingham shelfmark — MS 3549/4, /20 and /187 — and three hits from one series is not an accident. It was raised as a question on the work list and answered the same day.",
+  "quote": "MS 3549 · 1200–1704 · SMYTH, JOHN (1567–1641), ANTIQUARY — MISCELLANEOUS DEEDS AND MANORIAL RECORDS COLLECTED BY JOHN SMYTH",
+  "src": "The National Archives' Discovery catalogue, describing the collection at the Library of Birmingham",
+  "chip": "documented",
+  "means": "These are the steward's own working papers — the deeds he gathered while writing the Description of the Hundred and the Lives of the Berkeleys. That is why the 1377 grant appears twice, once at Berkeley Castle as BCM/A/1/24/185 and once here as MS 3549/20: Smyth had a copy on his desk. This archive has spent a week testing his pedigree against the Berkeley deeds; the collection he built it from is a second, separate pile, in another city, and largely unexamined here.",
+  "leadHead": "And it holds the two court rolls this archive most needs",
+  "lead": [
+   [
+    "MS 3549/89",
+    "12 Sept 1587 – 15 March 1587/8",
+    "«Court roll of the manor of HAM AND HYNTON, co. Glouc., recording Courts Baron held 12 September, 29 Eliz. I.» — the manor Smyth describes as containing Hamfallow, and the tithing Bigland places Saniger in. Fourteen years before the earliest Saniger deed this archive holds and twenty-one before the muster."
+   ],
+   [
+    "MS 3549/182",
+    "4 October 1624",
+    "«Copy of court roll of the manor of ALKINGTON, recording the surrender by Richard Tovy and Joan Cole, widow of John Cole, of land near Michelwood.» Alkington is where Edward Sanniger's Window Feathers and Upper Feathers lay in 1694."
+   ]
+  ],
+  "leadMeans": "A court baron records who surrendered land, who was admitted to it, and who had died since the last court. These two sit either side of the 1608 muster and inside the silence this archive cannot cross. Neither is digitised, and both are at Birmingham rather than Gloucester — which is why nobody looking in Gloucestershire would find them.",
+  "leadChip": "documented"
  }
 }
