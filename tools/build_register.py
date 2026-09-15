@@ -786,6 +786,83 @@ for n, says, art in [
     rec(n, says, "record · Trove, Australian newspapers", f"https://nla.gov.au/nla.news-article{art}")
 
 
+BCM = "Berkeley Castle Muniments, via TNA Discovery"
+L = "https://discovery.nationalarchives.gov.uk/"
+
+# --- The Berkeley deeds, 1260s-1402, read 15 September 2026 -------------------
+# /who exists for "the people this archive met in documents and never had
+# anywhere to put", and says that leaving them out "would be editing" the
+# record. These are met in documents. NONE of them is shown to be a relative —
+# /swonhungre states in terms that no descent joins them to the Sanigers of the
+# registers — and that is a question about the TREE, not about whether the
+# archive admits it read their names.
+for _n, _says, _src in [
+    ("Thomas de Asshelworth",
+     "granted 7 acres in the manor of Hamme by Maurice de Berkeley, rent 2s. 11d. a year "
+     "and one bezant, before 1272 \u00b7 BCM/A/1/24/67", BCM),
+    ("Thomas de Swonhungre",
+     "\u201cson of Thomas de Esshelesworth\u201d, granting land in Alilonde to Henry le Grout of "
+     "Berkeley, 1272\u20131307 \u2014 the surname in the act of forming \u00b7 BCM/A/1/24/266", BCM),
+    ("Robert de Stone",
+     "enfeoffed by Sir Thomas de Berkeley at \u00a311 a year; grandfather of Thomas de Stone "
+     "\u00b7 BCM/A/1/24/190", BCM),
+    ("Juliana de Stone",
+     "mother of Thomas de Stone, and among those on whose advice he surrendered his holding "
+     "about 1304 \u00b7 BCM/A/1/24/190", BCM),
+    ("Thomas de Stone",
+     "\u201cson and heir of Robert son of Robert de Stone\u201d; surrendered a holding he could not "
+     "pay \u00a311 for and took Wanswell at \u00a34 10s.; died 1316 \u00b7 BCM/A/1/24/189\u2013190", BCM),
+    ("Elyanora de Stone",
+     "\u201cmother of the aforesaid Alice and Joan\u201d, holding land at Kingscote, 1329 \u00b7 printed "
+     "in TBGAS vol. 22 (1899)", "TBGAS vol. 22, 1899",),
+    ("Alice de Stone",
+     "younger daughter and coheir of Thomas de Stone; married John de Swonhungre and brought "
+     "WANSWELL into the family, 1329 \u00b7 TBGAS vol. 22", "TBGAS vol. 22, 1899"),
+    ("Joan de Stone",
+     "elder daughter and coheir of Thomas de Stone; married John Serjeant and took Stone and "
+     "Woodford \u00b7 TBGAS vol. 22", "TBGAS vol. 22, 1899"),
+    ("John de Swonhungre",
+     "\u201chis father, son and heir of John Swonhungre\u201d \u2014 the generation above the printed "
+     "pedigree, named in an inspeximus of 1356 \u00b7 BCM/A/1/24/184", BCM),
+    ("Alice de Swonhongre",
+     "named in 1346 as \u201cancestor\u201d of Thomas de Swonhongre and one of three coheirs of JOHN "
+     "DE WYKE of Ham \u00b7 DE/M/95, Hertfordshire Archives", "Hertfordshire Archives"),
+    ("John de Wyke",
+     "of Ham; his inheritance divided in 1346 between three coheirs \u2014 Joan Capel, Alice de "
+     "Swonhongre and Agnes de Lorewynge \u00b7 DE/M/95", "Hertfordshire Archives"),
+    ("Thomas Swonhungre of Wanswell",
+     "died without issue before 1356; his brother William was his heir \u00b7 BCM/A/1/24/184", BCM),
+    ("William Swonhungre",
+     "\u201cbrother and heir of Thomas Swonhungre of Wanswell\u201d; partitioned the family lands in "
+     "1353, excepting the fishery in Severn \u00b7 BCM/A/1/24/184, TBGAS vol. 22", BCM),
+    ("Isabella Swonhungre",
+     "wife of William Swonhungre, named in a grant in fee tail by the vicar of Berkeley "
+     "\u00b7 MS 3549/4, Library of Birmingham", "Library of Birmingham, MS 3549"),
+    ("Alienor Swanhangre",
+     "\u201cWilliam son of William Swanhangre, and ALIENOR his mother\u201d, prayed for in the chantry "
+     "of Our Lady at Stone founded 1356 \u00b7 Letters Patent 30 Edw. III pt 3 m.22",
+     "TBGAS, the Gloucestershire chantries"),
+    ("Edith Swonhongre",
+     "wife of John Swonhongre, in a deed of 24 January 1377 \u00b7 BCM/A/1/12/243", BCM),
+    ("Maud Swonhongre",
+     "wife of Thomas son of William de Swonhongre, in a lease of a messuage and half-virgate "
+     "in Hinton \u00b7 BCM/A/1/36/24", BCM),
+    ("Elias Swonhonger",
+     "held of Thomas lord Berkeley by knight service; died 13 Richard II, 1389/90 \u00b7 "
+     "BCM/A/4/2/22, TBGAS vol. 10", BCM),
+    ("John Swonhonger",
+     "\u201cson and heir of Elias\u201d; his marriage sold by the lord in December 1390; aged 18 in "
+     "1393; died 1401/2 without issue \u00b7 BCM/A/4/2/22, TBGAS vol. 10", BCM),
+    ("Isabel Swonhunger",
+     "sister and eventual heir of John; married JOHN THORPE, burgess of Bristol, and the estate "
+     "passed out of the name in 1402 \u00b7 TBGAS vol. 6", "TBGAS vol. 6, 1881\u201382"),
+    ("Elizabeth Swonhunger",
+     "sister of John; married James Gaynor of Kingsholm and died without issue \u00b7 TBGAS vol. 6",
+     "TBGAS vol. 6, 1881\u201382"),
+]:
+    rec(_n, _says, _src, L if _src == BCM else "")
+
+
 # ── The two grafts, so the register can say which people hang on them ─────────
 HORNBY_ROOT = "@I1872@"     # Thomas (Francis) D'Arcy — unevidenced
 KEELE_ROOT  = "@I501870@"   # Ralph Sneyd of Keele, b. 10 Dec 1723 — disproved

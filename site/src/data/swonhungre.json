@@ -541,5 +541,187 @@
   "lead": "«In his BRIEF HISTORICAL ACCOUNT OF THE MANOR OF WANSWELL (a quarto pamphlet of 6 pages, published in 1817, now very scarce), the Rev. D. Lysons says the purchase money was £3500…» — written by the family that owned the estate, a year before they sold it, and quoting the abstract of title.",
   "careHead": "One date to distrust",
   "care": "Cooke has George Thorpe going to Virginia «where he died in 1662». The George Thorpe of the Virginia Company was killed in the massacre of 1622, and a Thorpe who sold Wanswell in 1672 cannot be a man who died in 1662 — the text gives that sale to his son, also George. **1662 is probably a misprint or a misreading of 1622**, and this archive is not going to repeat it as a date."
+ },
+ "chart": {
+  "head": "The descent, drawn",
+  "lede": "Four generations of Stones, six of Swonhungres, five wives and three coheirs is more than a reader can hold in prose. Solid lines are links a deed states. Dashed lines are links this archive has reasoned or taken from Smyth.",
+  "legend": [
+   [
+    "#1E5F8C",
+    "solid",
+    "stated in a deed read here"
+   ],
+   [
+    "#B04A16",
+    "dashed",
+    "from Smyth or Cooke, or reasoned"
+   ]
+  ],
+  "rows": [
+   {
+    "y": 0,
+    "col": 0,
+    "t": "Thomas de Asshelworth",
+    "s": "7 acres in the manor of Ham, before 1272",
+    "g": "inf"
+   },
+   {
+    "y": 1,
+    "col": 0,
+    "t": "Thomas de Swonhungre",
+    "s": "«son of Thomas de Esshelesworth», 1272–1307 — the surname forms",
+    "g": "doc"
+   },
+   {
+    "y": 0,
+    "col": 1,
+    "t": "Robert de Stone",
+    "s": "the great-grandfather",
+    "g": "doc"
+   },
+   {
+    "y": 1,
+    "col": 1,
+    "t": "Robert de Stone",
+    "s": "enfeoffed by Sir Thomas de Berkeley at £11 a year",
+    "g": "doc"
+   },
+   {
+    "y": 2,
+    "col": 1,
+    "t": "Robert de Stone = JULIANA",
+    "s": "she advises the surrender of about 1304",
+    "g": "doc"
+   },
+   {
+    "y": 3,
+    "col": 1,
+    "t": "Thomas de Stone = ELYANORA",
+    "s": "he died 1316; she held land at Kingscote",
+    "g": "doc"
+   },
+   {
+    "y": 4,
+    "col": 0,
+    "t": "John de Swonhungre",
+    "s": "«son and heir of John Swonhungre» — the generation above Smyth's pedigree",
+    "g": "doc"
+   },
+   {
+    "y": 5,
+    "col": 0,
+    "t": "John de Swonhungre = ALICE de Stone",
+    "s": "the younger coheir; WANSWELL comes in with her",
+    "g": "doc"
+   },
+   {
+    "y": 5,
+    "col": 2,
+    "t": "JOAN de Stone = John Serjeant",
+    "s": "the elder coheir; Stone and Woodford go with her",
+    "g": "doc"
+   },
+   {
+    "y": 6,
+    "col": 0,
+    "t": "Thomas Swonhungre of Wanswell",
+    "s": "died without issue",
+    "g": "doc"
+   },
+   {
+    "y": 7,
+    "col": 0,
+    "t": "William Swonhungre = ISABEL",
+    "s": "«brother and heir of Thomas»; partitions the lands 1353",
+    "g": "doc"
+   },
+   {
+    "y": 8,
+    "col": 0,
+    "t": "Elias Swonhonger = JONE Bill",
+    "s": "died 13 Richard II, 1389/90",
+    "g": "doc"
+   },
+   {
+    "y": 9,
+    "col": 0,
+    "t": "John Swonhonger",
+    "s": "aged 18 in 1393; his marriage sold in 1390; died 1401/2 without issue",
+    "g": "doc"
+   },
+   {
+    "y": 10,
+    "col": 0,
+    "t": "ISABEL = John Thorpe of Bristol",
+    "s": "his sister; the estate leaves the name in 1402",
+    "g": "doc"
+   },
+   {
+    "y": 10,
+    "col": 2,
+    "t": "ELIZABETH = James Gaynor",
+    "s": "her sister; died without issue",
+    "g": "doc"
+   }
+  ],
+  "links": [
+   [
+    0,
+    1,
+    "inf"
+   ],
+   [
+    2,
+    3,
+    "doc"
+   ],
+   [
+    3,
+    4,
+    "doc"
+   ],
+   [
+    4,
+    5,
+    "doc"
+   ],
+   [
+    6,
+    7,
+    "doc"
+   ],
+   [
+    7,
+    8,
+    "doc"
+   ],
+   [
+    8,
+    9,
+    "doc"
+   ],
+   [
+    9,
+    10,
+    "doc"
+   ],
+   [
+    10,
+    11,
+    "doc"
+   ],
+   [
+    11,
+    12,
+    "doc"
+   ],
+   [
+    12,
+    13,
+    "doc"
+   ]
+  ],
+  "note": "ALICE DE SWONHONGRE, named in 1346 as «ancestor» of a Thomas and one of three coheirs of JOHN DE WYKE, is not placed on this chart. She may be the Alice de Stone above, holding through a second inheritance, or an earlier woman of the family. **The archive does not know, and a chart is the wrong place to guess.** The chantry licence of 1356, which prays for «William son of William Swanhangre, and ALIENOR his mother», is left off for the same reason: the Berkeley deeds of the same year make William the son of John.",
+  "disagree": "And where the two printed pedigrees differ: **Smyth** has ELIAS marrying Isabel Daubeney and a second Elias marrying Jone Bill; **Cooke** has JOHN marrying Isabel Daubeney and their son Elias marrying Joan Bill. The chart follows neither on that point — it shows the generation without naming which man took the Daubeney heiress."
  }
 }

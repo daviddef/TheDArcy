@@ -127,6 +127,44 @@ import d from "../data/swonhungre.json";
     </Note>
   </Blk>
 
+  <Blk label="Drawn, not described" title={d.chart.head}>
+    <p class="lede">{d.chart.lede}</p>
+
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:1rem">
+      {d.chart.legend.map(([c, style, what]) => (
+        <span class="small" style="display:inline-flex;align-items:center;gap:7px">
+          <svg width="30" height="8" aria-hidden="true"><line x1="0" y1="4" x2="30" y2="4"
+            stroke={c} stroke-width="2" stroke-dasharray={style === "dashed" ? "5 4" : "0"} /></svg>
+          {what}</span>))}
+    </div>
+
+    <Scroll>
+      <svg viewBox="0 0 700 620" role="img" width="700"
+           aria-label="The descent of the Swonhungre family from the 1260s to 1402, with the Stone line it married into"
+           style="margin-top:1.3rem;max-width:100%;height:auto">
+        <title>The Swonhungre descent, 1260s to 1402</title>
+        {d.chart.links.map(([a, b, g]) => {
+          const A = d.chart.rows[a], B = d.chart.rows[b];
+          const x1 = 20 + A.col * 232 + 96, y1 = 24 + A.y * 56 + 34;
+          const x2 = 20 + B.col * 232 + 96, y2 = 24 + B.y * 56;
+          return <path d={`M${x1} ${y1} V${(y1 + y2) / 2} H${x2} V${y2}`} fill="none"
+                       stroke={g === "doc" ? "#1E5F8C" : "#B04A16"} stroke-width="2"
+                       stroke-dasharray={g === "doc" ? "0" : "5 4"} />;
+        })}
+        {d.chart.rows.map((r) => (
+          <g transform={`translate(${20 + r.col * 232}, ${24 + r.y * 56})`}>
+            <rect width="192" height="34" rx="3" fill="var(--panel)" stroke="var(--rule)" />
+            <text x="8" y="14" font-size="11.5" font-weight="600" fill="var(--ink)">{r.t}</text>
+            <text x="8" y="27" font-size="9" fill="var(--ink-3)">{r.s.length > 46 ? r.s.slice(0, 45) + "…" : r.s}</text>
+          </g>
+        ))}
+      </svg>
+    </Scroll>
+
+    <Note style="margin-top:1.3rem"><strong>Who is not on it, and why.</strong> {d.chart.note}</Note>
+    <Note style="margin-top:1.2rem">{d.chart.disagree}</Note>
+  </Blk>
+
   <Blk label="All 200 Berkeley records" title={d.deeds.head}>
     <p class="lede">{d.deeds.lede}</p>
     <Scroll>

@@ -2977,6 +2977,22 @@
    "ctl": "named",
    "got": "Almost nothing, against a catalogue that returns 195 records for the surname and itemises the Berkeley muniments deed by deed. «de Wyke» with Berkeley and Hamme returns five records, of which the only new one is BCM/A/1/24/23 of 1321 — «Denise widow of Richard de Wyke… 6¼ a. pasture called Cobyeslese by Wyke, in Hamme». No John de Wyke, and no medieval Kingsholm manor records at all. The Wykes are in the witness lists from the 1260s onward; they are simply not the subject of surviving deeds.",
    "href": "/swonhungre"
+  },
+  {
+   "src": "Every external URL this archive cites",
+   "what": "Whether the sources it points at still resolve",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "566 distinct external URLs across the data files. **97 resolve, 429 redirect, 19 refuse a robot (401/403/429) and 21 did not answer** — and only those 21 are candidates for a dead citation. The first run of the tool reported «457 of 566 did not return 200» by counting redirects and door policies as losses, which is the cry-wolf shape that makes a report stop being read. A 3xx is a move and a 403 is a site refusing a machine, not a citation that has died.",
+   "href": "/sources"
+  },
+  {
+   "src": "The medieval people, and whether they belong in the register",
+   "what": "A decision, not a search",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "They belong, and /who settles it in its own words: «the people this archive met in documents and never had anywhere to put… They are in the record, and LEAVING THEM OUT WOULD BE EDITING IT.» Twenty-one are now in `build_register.py` with the deed that names each — Thomas de Asshelworth, four Stones including Juliana and Elyanora, Alice and Joan, John de Wyke, five wives, and the last John who died in 1401/2. The register rose to 381 record lines and the site to 875 pages. **None is claimed as a relative**, and /swonhungre still says in terms that no descent joins them to the Sanigers of the registers — that is a question about the tree, not about whether the archive admits what it read.",
+   "href": "/who"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 55 do. 39 do not, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**. The classification is made by pattern, and it is deliberately biased towards `unstated`: a row the machine cannot read as controlled is marked untested even if a human would call it controlled. Being called untested when you are not is the harmless direction. The reverse is not.",

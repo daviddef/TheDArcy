@@ -1,11 +1,11 @@
 {
-"entries": 833,
-"distinct": 577,
-"records": 360,
+"entries": 854,
+"distinct": 595,
+"records": 381,
 "tree": 473,
 "grafted": 98,
-"linked": 833,
-"surnames": 197,
+"linked": 845,
+"surnames": 203,
 "groups": [
 {
 "surname": "SNEYD",
@@ -3951,6 +3951,116 @@
 ]
 },
 {
+"surname": "STONE",
+"n": 7,
+"rows": [
+{
+"name": "Alice de Stone",
+"says": "younger daughter and coheir of Thomas de Stone; married John de Swonhungre and brought WANSWELL into the family, 1329 · TBGAS vol. 22",
+"source": "TBGAS vol. 22, 1899",
+"link": "",
+"kind": "record"
+},
+{
+"name": "Elyanora de Stone",
+"says": "“mother of the aforesaid Alice and Joan”, holding land at Kingscote, 1329 · printed in TBGAS vol. 22 (1899)",
+"source": "TBGAS vol. 22, 1899",
+"link": "",
+"kind": "record"
+},
+{
+"name": "Henry Stone",
+"says": "convict · accused of stealing a pair of trousers",
+"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
+"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733",
+"kind": "record"
+},
+{
+"name": "Joan de Stone",
+"says": "elder daughter and coheir of Thomas de Stone; married John Serjeant and took Stone and Woodford · TBGAS vol. 22",
+"source": "TBGAS vol. 22, 1899",
+"link": "",
+"kind": "record"
+},
+{
+"name": "Juliana de Stone",
+"says": "mother of Thomas de Stone, and among those on whose advice he surrendered his holding about 1304 · BCM/A/1/24/190",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Robert de Stone",
+"says": "enfeoffed by Sir Thomas de Berkeley at £11 a year; grandfather of Thomas de Stone · BCM/A/1/24/190",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Thomas de Stone",
+"says": "“son and heir of Robert son of Robert de Stone”; surrendered a holding he could not pay £11 for and took Wanswell at £4 10s.; died 1316 · BCM/A/1/24/189–190",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
+"surname": "SWONHUNGRE",
+"n": 7,
+"rows": [
+{
+"name": "Isabella Swonhungre",
+"says": "wife of William Swonhungre, named in a grant in fee tail by the vicar of Berkeley · MS 3549/4, Library of Birmingham",
+"source": "Library of Birmingham, MS 3549",
+"link": "",
+"kind": "record"
+},
+{
+"name": "John de Swonhungre",
+"says": "of Swanhanger · leased 48 acres 45 perches by Thomas lord of Berkeley, 1 September 1316",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "John de Swonhungre",
+"says": "“his father, son and heir of John Swonhungre” — the generation above the printed pedigree, named in an inspeximus of 1356 · BCM/A/1/24/184",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Thomas de Swonhungre",
+"says": "of Swanhanger · granted the land of Hekeriche by Sir Thomas de Berkeley, 23 November 1299",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Thomas de Swonhungre",
+"says": "“son of Thomas de Esshelesworth”, granting land in Alilonde to Henry le Grout of Berkeley, 1272–1307 — the surname in the act of forming · BCM/A/1/24/266",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "William Swonhungre",
+"says": "of Swanhanger · brother and heir of Thomas Swonhungre of Wanswell, 1356",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "William Swonhungre",
+"says": "“brother and heir of Thomas Swonhungre of Wanswell”; partitioned the family lands in 1353, excepting the fishery in Severn · BCM/A/1/24/184, TBGAS vol. 22",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "JONES",
 "n": 6,
 "rows": [
@@ -4483,6 +4593,40 @@
 ]
 },
 {
+"surname": "SWONHONGRE",
+"n": 4,
+"rows": [
+{
+"name": "Alice de Swonhongre",
+"says": "named in 1346 as “ancestor” of Thomas de Swonhongre and one of three coheirs of JOHN DE WYKE of Ham · DE/M/95, Hertfordshire Archives",
+"source": "Hertfordshire Archives",
+"link": "",
+"kind": "record"
+},
+{
+"name": "Edith Swonhongre",
+"says": "wife of John Swonhongre, in a deed of 24 January 1377 · BCM/A/1/12/243",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Elias de Swonhongre",
+"says": "of Swanhanger · grants a messuage to William Panyter for life, 11 April 1377 — the deed Berkeley catalogues under the man and Birmingham under the PLACE, which is what proves Swanhanger and Saniger are one word",
+"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Maud Swonhongre",
+"says": "wife of Thomas son of William de Swonhongre, in a lease of a messuage and half-virgate in Hinton · BCM/A/1/36/24",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "—",
 "n": 4,
 "rows": [
@@ -4675,33 +4819,6 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/hedwig-von-oldenburg",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "SWONHUNGRE",
-"n": 3,
-"rows": [
-{
-"name": "John de Swonhungre",
-"says": "of Swanhanger · leased 48 acres 45 perches by Thomas lord of Berkeley, 1 September 1316",
-"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Thomas de Swonhungre",
-"says": "of Swanhanger · granted the land of Hekeriche by Sir Thomas de Berkeley, 23 November 1299",
-"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "William Swonhungre",
-"says": "of Swanhanger · brother and heir of Thomas Swonhungre of Wanswell, 1356",
-"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
 }
 ]
 },
@@ -5127,6 +5244,46 @@
 ]
 },
 {
+"surname": "SWONHONGER",
+"n": 2,
+"rows": [
+{
+"name": "Elias Swonhonger",
+"says": "held of Thomas lord Berkeley by knight service; died 13 Richard II, 1389/90 · BCM/A/4/2/22, TBGAS vol. 10",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "John Swonhonger",
+"says": "“son and heir of Elias”; his marriage sold by the lord in December 1390; aged 18 in 1393; died 1401/2 without issue · BCM/A/4/2/22, TBGAS vol. 10",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
+"surname": "SWONHUNGER",
+"n": 2,
+"rows": [
+{
+"name": "Elizabeth Swonhunger",
+"says": "sister of John; married James Gaynor of Kingsholm and died without issue · TBGAS vol. 6",
+"source": "TBGAS vol. 6, 1881–82",
+"link": "",
+"kind": "record"
+},
+{
+"name": "Isabel Swonhunger",
+"says": "sister and eventual heir of John; married JOHN THORPE, burgess of Bristol, and the estate passed out of the name in 1402 · TBGAS vol. 6",
+"source": "TBGAS vol. 6, 1881–82",
+"link": "",
+"kind": "record"
+}
+]
+},
+{
 "surname": "VON OLDENBURG",
 "n": 2,
 "rows": [
@@ -5275,6 +5432,19 @@
 "source": "family tree · direct line",
 "link": "/people/giovanna-arricole",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "ASSHELWORTH",
+"n": 1,
+"rows": [
+{
+"name": "Thomas de Asshelworth",
+"says": "granted 7 acres in the manor of Hamme by Maurice de Berkeley, rent 2s. 11d. a year and one bezant, before 1272 · BCM/A/1/24/67",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
 }
 ]
 },
@@ -6631,19 +6801,6 @@
 ]
 },
 {
-"surname": "STONE",
-"n": 1,
-"rows": [
-{
-"name": "Henry Stone",
-"says": "convict · accused of stealing a pair of trousers",
-"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
-"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733",
-"kind": "record"
-}
-]
-},
-{
 "surname": "STUART",
 "n": 1,
 "rows": [
@@ -6670,25 +6827,25 @@
 ]
 },
 {
+"surname": "SWANHANGRE",
+"n": 1,
+"rows": [
+{
+"name": "Alienor Swanhangre",
+"says": "“William son of William Swanhangre, and ALIENOR his mother”, prayed for in the chantry of Our Lady at Stone founded 1356 · Letters Patent 30 Edw. III pt 3 m.22",
+"source": "TBGAS, the Gloucestershire chantries",
+"link": "",
+"kind": "record"
+}
+]
+},
+{
 "surname": "SWANNANGER",
 "n": 1,
 "rows": [
 {
 "name": "William Swannanger",
 "says": "of Swannanger in Gloucestershire, ESQUIRE · bound with William Newport of Lichfield for £400 to a London goldsmith, 28 November 1385; the sheriff could not find him",
-"source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-}
-]
-},
-{
-"surname": "SWONHONGRE",
-"n": 1,
-"rows": [
-{
-"name": "Elias de Swonhongre",
-"says": "of Swanhanger · grants a messuage to William Panyter for life, 11 April 1377 — the deed Berkeley catalogues under the man and Birmingham under the PLACE, which is what proves Swanhanger and Saniger are one word",
 "source": "record · Berkeley Castle Muniments / Birmingham MS 3549 (catalogue descriptions)",
 "link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
@@ -6930,6 +7087,19 @@
 ]
 },
 {
+"surname": "WANSWELL",
+"n": 1,
+"rows": [
+{
+"name": "Thomas Swonhungre of Wanswell",
+"says": "died without issue before 1356; his brother William was his heir · BCM/A/1/24/184",
+"source": "Berkeley Castle Muniments, via TNA Discovery",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "WEBBE",
 "n": 1,
 "rows": [
@@ -7003,6 +7173,19 @@
 "says": "married Agnis Sainger · Berkeley St Mary · 15 Nov 1655",
 "source": "record · FreeREG, parish register transcript",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+}
+]
+},
+{
+"surname": "WYKE",
+"n": 1,
+"rows": [
+{
+"name": "John de Wyke",
+"says": "of Ham; his inheritance divided in 1346 between three coheirs — Joan Capel, Alice de Swonhongre and Agnes de Lorewynge · DE/M/95",
+"source": "Hertfordshire Archives",
+"link": "",
 "kind": "record"
 }
 ]

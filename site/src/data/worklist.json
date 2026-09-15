@@ -425,10 +425,10 @@
     {
       "n": 50,
       "what": "Check that the sources this archive cites still resolve",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "`check_links.py` tests internal links only. The archive now cites Internet Archive identifiers, Discovery references, Gazette issue numbers and coaley.net — all external, none tested, and a dead citation is indistinguishable from a good one on the page. A periodic external check that reports rather than gates."
+      "note": "**Done, and the tool's first answer was wrong in the usual direction.** It reported «457 of 566 did not return 200» by counting **redirects and robot-refusals as losses**. Fixed: 3xx is a move, 401/403/429 is a door policy. The real figure is **97 resolve, 429 redirect, 19 refuse a robot, 21 did not answer** — and only those 21 are candidates for a dead citation. It reports and does not gate: an outage is not a reason to refuse a build."
     },
     {
       "n": 51,
@@ -441,10 +441,10 @@
     {
       "n": 52,
       "what": "Give the medieval people dossiers, or decide deliberately not to",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The archive's `dossiers.json` and `provenance.json` carry a page per named person. Fifteen or so Swonhungres now have documented appearances — Thomas son of Thomas de Esshelesworth, William brother and heir of Thomas of Wanswell, Elias, Alice, Isabella, John the elder. Either they enter the register as people, or the archive states on the page why a 14th-century deed witness is not one. **Both answers are defensible; drifting between them is not.**"
+      "note": "**Decided, and /who decided it.** That page says it exists for «the people this archive met in documents and never had anywhere to put» and that «leaving them out would be editing» the record. These are met in documents. **Twenty-one are now in the register** with the deed that names each, and the site went from 857 pages to **875**. None is claimed as a relative — whether a descent joins them to the later Sanigers is a question about the tree, and /swonhungre still answers it no."
     },
     {
       "n": 53,
@@ -617,10 +617,10 @@
     {
       "n": 73,
       "what": "Draw the descent, instead of describing it",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "[The name in its own century](/swonhungre/) is now a long page of prose carrying four generations of Stones, six of Swonhungres, three named coheirs and five wives. **A reader cannot hold that in their head.** The kit has chart components; the archive has the relationships. Draw it, and mark on the drawing which links are documented and which rest on Smyth or Cooke."
+      "note": "**Done.** [The name in its own century](/swonhungre/) now carries a drawn descent: fifteen boxes across two lines, the Stones entering by Alice's marriage and the estate leaving by Isabel's. **Solid lines are links a deed states; dashed lines are Smyth, Cooke, or reasoning** — so the one inferred link, Asshelworth to Swonhungre, is visibly different from the rest. Alice de Swonhongre of 1346 and Alienor of the chantry are deliberately **left off**, with a note saying why: the archive cannot place them, and a chart is the wrong place to guess."
     },
     {
       "n": 74,
