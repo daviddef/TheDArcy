@@ -8,7 +8,7 @@ const people = Object.values(d.people).sort((a, b) => a.name.localeCompare(b.nam
 const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCase()))].sort();
 ---
 <Base
-  title="Every Person Named"
+  title="Every Name"
   eyebrow={`${d.counts.named} named in records · ${d.counts.ownPage} of them not in this family`}
   dek="The people this archive met in documents and never had anywhere to put: witnesses, constables, surgeons, convicts, clerks and comrades. They are in the record, and leaving them out would be editing it.">
 
