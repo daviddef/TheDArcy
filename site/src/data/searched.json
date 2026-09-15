@@ -3114,6 +3114,31 @@
    "ctl": "named",
    "got": "It cannot. **120 Army List identifiers were checked one metadata record at a time** — the search index is unusable for years, the same fault as the Gentleman's Magazine — and **exactly ONE falls between 1776 and 1815**: the Monthly Army List for January 1815. The 1778, 1781, 1783, 1802, 1803 and 1821 editions this archive holds came from separate searches under different titles. There is no digitised annual run to walk.",
    "href": "/the-corps"
+  },
+  {
+   "src": "MS 3549 browsed by place instead of by surname",
+   "what": "What else is in John Smyth's own collection",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "**114 distinct items surfaced**, and the shape is clear: it is overwhelmingly **Smyth's own Nibley estate and Berkeley-hundred business** — leases, bonds, wills and letters addressed to him at North Nibley, fifteenth to seventeenth century. Two matter here. **MS 3549/167**, 20 February 1618: «Bond from **GEORGE THORPE of Wandeswell (Wanswell), co. Glouc., esq.**, and Arnold Oldisworth of Brad[ley]» — the Thorpe who sold the outlying Saniger land and went to Virginia, bound with an Oldisworth, and Cooke gives William Thorpe's second wife as Bridget Oldisworth of Bradley. And **MS 3549/154**, 1612/13: «Certified copy of extracts from **LE BLACKE BOOKE** in Berkeley Castle» — Smyth's own working extracts from a castle register. Browsing by place finds what a surname search cannot.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "The Berkeley estate deeds, for Cooke's conveyance of 1774",
+   "what": "Whether the deed behind «sold by Edward Saniger to the Earl of Berkeley in 1774» is catalogued",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Not found. Of 56 catalogued records naming Saniger and Berkeley, **exactly one falls between 1760 and 1800** — D2957/41/190 of 4 January 1791, the Plomer-to-Vizard conveyance of the Great and Little Horse Marsh. **There is no 1774 conveyance in the catalogue.** Cooke was writing in 1882 with the Wanswell title deeds and Berkeley's muniments in front of him; whatever he saw is in neither of the two catalogues reachable from here. The claim stays `inferred` and the errand stands.",
+   "href": "/errands"
+  },
+  {
+   "src": "TNA Discovery — WO 46/10, Board of Ordnance",
+   "what": "Constantine D'Arcy, the second D'Arcy in Connolly's Roll",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "A record that names an Ordnance D'Arcy's PARENT — the first this archive has found. «**CONSTANTINE D'ARCY. Appointed 25 March 1775. Profession of parent: LIEUTENANT IN THE 95TH REGIMENT.**» The list gives each military surveyor's appointment date and his father's trade; the neighbours are a butler to the Earl of Albemarle, a vintner and a publican. **It is not Robert's son**, who was christened at Barbados on 18 February 1786 — so there were at least two Constantine D'Arcys in Ordnance service, a generation apart. Whether the 1775 man is Robert's brother, cousin, father or no relation is **NOT CLAIMED**: the inference would run on a forename, a service and a decade, which is the shape of every identification this archive has had to retract.",
+   "href": "/constantine"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

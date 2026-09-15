@@ -216,7 +216,7 @@
       "state": "next",
       "owner": "the Luwinski and Our Family sessions",
       "since": "2026-09-15",
-      "note": "Raised here because it belongs to other archives and would otherwise go unsaid. Running the gate across the whole estate — `checkworklist.py --root . --all` — reports **8 archives, 153 rows, 113 open, and two with no list at all**: Luwinski and Our Family. Until those exist, the estate board is a board of six. The **Defranceschi** archive wrote this register first and the estate took it up; the shared version then added `owner` and `since`, and that session had already brought its twenty rows into line before this one was written."
+      "note": "Raised here because it belongs to other archives and would otherwise go unsaid. Running the gate across the whole estate — `checkworklist.py --root . --all` — reports **8 archives, 153 rows, 113 open, and two with no list at all**: Luwinski and Our Family. Until those exist, the estate board is a board of six. The **Defranceschi** archive wrote this register first and the estate took it up; the shared version then added `owner` and `since`, and that session had already brought its twenty rows into line before this one was written. **Checked again 15 September:** still two archives with no list. Not this archive's to write, and raised here so it is not invisible."
     },
     {
       "n": 23,
@@ -409,12 +409,14 @@
     {
       "n": 43,
       "what": "Constantine D'Arcy, the only other D'Arcy in Connolly's Roll",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Connolly carries exactly two D'Arcys across 1660–1898 and the second is Robert's son. His Barbados christenings are already on the site; his own career is not. He is also the one man whose record might name his father in a way his father's never did — a son's papers sometimes say what a father's omit.",
+      "note": "**Done, and it produced the best lead of the day.** Discovery returns exactly two records for «Constantine D'Arcy», and one is **WO 46/10**, the Board of Ordnance list of military surveyors — which gives, for each man, **the profession of his parent**. «Constantine D'Arcy. Appointed 25 March 1775. Profession of parent: **Lieutenant in the 95th Regiment**.» It is **not** Robert's son, christened at Barbados in 1786, so there were two Constantine D'Arcys in Ordnance service a generation apart. The catalogue prints a **sample** of the list; the full list is in the document, and Robert took his own Ordnance commission ten months later. **Not claimed** — the inference would run on a forename, a service and a decade — but errand 66 now asks for a specific piece known to contain a D'Arcy.",
       "covers": [
-        "err:err/two-chatham-burials-bcb4c8"
+        "err:err/two-chatham-burials-bcb4c8",
+        "err:err/wo-46-10-military-surveyors-x3",
+        "q:q/who-was-robert-d-arcy-s-fath-1e45bf"
       ]
     },
     {
@@ -506,15 +508,15 @@
       "state": "next",
       "owner": "the Falco session",
       "since": "2026-09-15",
-      "note": "Cross-archive, raised here because it would otherwise go unsaid. A John Swonhungre held two shops in Bristol Market in 1443, and this estate has more than one archive with Bristol connections. Worth one question before this archive spends effort proving a link that another session has already ruled out."
+      "note": "Cross-archive, raised here because it would otherwise go unsaid. A John Swonhungre held two shops in Bristol Market in 1443, and this estate has more than one archive with Bristol connections. Worth one question before this archive spends effort proving a link that another session has already ruled out. **Sharpened 15 September:** the Bristol deed is now read in full — two shops with gardens in the Market «extending from the market to Bastelane behind», in the parish collection of St Peter and St James. If the Falco session holds Bristol parish material, that is the overlap worth checking before this archive spends more on it."
     },
     {
       "n": 55,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
       "what": "Find the 1774 conveyance Cooke describes, and settle the bridge properly",
-      "note": "Cooke's sentence — «Saniger Farm… was sold by **Edward Saniger to the Earl of Berkeley in 1774**» — is the join this archive has said all week it could not make, and it is currently graded **inferred** because it is a scholar's conclusion rather than a chain of deeds. The Berkeley estate papers at Gloucestershire Archives already hold Edward Saniger's mortgages of 1692, 1709 and 1716; the 1774 conveyance should be among them. Errand 62, and the most valuable single document now named anywhere on this site.",
+      "note": "**Done, and not found — which is itself worth recording.** Of 56 catalogued records naming Saniger and Berkeley, **exactly one falls between 1760 and 1800**: D2957/41/190 of January 1791. **There is no 1774 conveyance in the catalogue.** Cooke wrote in 1882 with the Wanswell title deeds and the Berkeley muniments in front of him, and whatever he saw is in neither catalogue reachable from here. The claim stays `inferred`; **errand 62 stands and is now better aimed** — it is a question for Gloucestershire Archives or Berkeley Castle directly, not for a catalogue search.",
       "covers": [
         "err:err/the-1774-conveyance-of-sanig-f381ab",
         "q:q/how-do-the-medieval-swonhung-05ce23"
@@ -603,10 +605,10 @@
     {
       "n": 66,
       "what": "The rest of MS 3549 — Smyth's own collection is 250-odd items",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Three items were found by surname and two court rolls by chance. The collection is «miscellaneous deeds and manorial records collected by John Smyth», 1200–1704, and the parts relevant here are catalogued by MANOR rather than by name — Ham and Hinton, Alkington, Coaley, Wotton Foren. Browsing it by place would find what a surname search cannot.",
+      "note": "**Done, and browsing by PLACE is what worked.** 114 distinct items surfaced. The collection is overwhelmingly **Smyth's own Nibley estate and Berkeley-hundred business** — leases, bonds, wills and letters addressed to him — fifteenth to seventeenth century. Two matter: **MS 3549/167** (1618), a bond from **George Thorpe of Wanswell** with an **Oldisworth** of Bradley, the family Cooke names as William Thorpe's second wife's; and **MS 3549/154** (1612/13), «certified copy of extracts from **le blacke booke** in Berkeley Castle» — Smyth's own working extracts. A surname search finds none of this.",
       "covers": [
         "err:err/ms-3549-89-the-court-roll-of-32c6e0",
         "err:err/the-twenty-five-unread-page--259d9a"
@@ -745,14 +747,14 @@
     },
     {
       "n": 83,
-      "state": "next",
+      "state": "blocked",
       "owner": "this archive",
       "since": "2026-09-15",
       "what": "Find out what became of Catherine Sneyd, born Hanley 1845",
       "covers": [
         "q:q/what-became-of-catherine-sne-c90b1c"
       ],
-      "note": "Raised because the **checkcovers gate asked for it by name**: «nothing on the work list covers — What became of Catherine Sneyd, born Hanley 1845?» She is HAN/007/057 in the free Staffordshire birth index, mother's maiden name **Biddulph**, and three of her four siblings match the Well Street household exactly. **She appears in no census this archive has read.** Either she did not reach 1851 or she was elsewhere on both nights. The 1851 census for Well Street read directly, or a Stoke death registration between 1845 and 1851, would settle it."
+      "note": "**Blocked, and on the same wall as row 18.** Settling what became of Catherine Sneyd needs the **1851 census for Well Street, Hanley** read directly, or a Stoke death registration 1845–51. FreeCEN holds **1861 only** for Staffordshire — tested, and every one of 31 control results was 1861 — and the 1851 census is behind a subscription this archive does not hold. The index evidence is complete: HAN/007/057, mother's maiden name Biddulph."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

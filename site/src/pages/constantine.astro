@@ -83,6 +83,22 @@ import d from "../data/constantine.json";
         </tbody>
       </table>
     </Scroll>
+    <h3 style="margin-top:2rem">{d.second.head}</h3>
+    <p class="small" style="margin-top:.4rem;color:var(--ink-3)">{d.second.ref}</p>
+    <Note style="border-left-width:3px;margin-top:.9rem">
+      <strong style="font-size:1.1em">{d.second.quote}</strong>
+      <span class="chip doc">{d.second.chip}</span>
+    </Note>
+    <p class="small" style="margin-top:.8rem;color:var(--ink-3)">{d.second.src}</p>
+    <Note style="margin-top:1.2rem"><strong>It is not the boy on this page.</strong> {d.second.notHim}</Note>
+    <Note style="margin-top:1.2rem"><strong>{d.second.whyHead}.</strong> {d.second.why}</Note>
+    <Note style="border-left-width:3px;border-left-color:var(--bad);margin-top:1.2rem">
+      <strong>{d.second.careHead}.</strong> {d.second.care}
+      {" "}<span class="chip dis">{d.second.careChip}</span>
+    </Note>
+    <Note style="margin-top:1.2rem"><strong>{d.second.nextHead}.</strong> {d.second.next}
+      {" "}<a href={u("/errands/")}>On the queue →</a></Note>
+
     <p class="small" style="margin-top:1.4rem">
       <a href={u("/robert-family/")}>Robert and Jean's family →</a> ·
       <a href={u("/chatham/")}>The Chatham register →</a> ·
