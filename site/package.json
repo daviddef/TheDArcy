@@ -14,7 +14,7 @@
     "check:living:tree": "python3 ../tools/check_living.py --dist dist"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#2c3eef3b56afdbc5c02f8d0f5421483968b63391",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#b16bea79b56a5f27e84b25271575b2919639544e",
     "astro": "^5.18.2"
   }
 }
