@@ -171,6 +171,31 @@ import d from "../data/swonhungre.json";
       {" "}<span class="chip doc">{d.smyth3.chip}</span></Note>
   </Blk>
 
+  <Blk label="BCM/A/1/24/189–190" title={d.stones.head}>
+    <p class="lede">{d.stones.lede}</p>
+    <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1rem">
+      {d.stones.rows.map(([r, dt, txt]) => (
+        <div style="border-left:2px solid var(--rule);padding-left:14px">
+          <strong class="small mono">{r}</strong>
+          <span class="small" style="margin-left:.5rem;color:var(--ink-3)">{dt}</span>
+          <p class="small" style="margin:.3rem 0 0;color:var(--ink-2)">{txt}</p>
+        </div>))}
+    </div>
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      {d.stones.means} <span class="chip doc">{d.stones.chip}</span>
+    </Note>
+
+    <h3 style="margin-top:1.8rem">{d.stones.lineHead}</h3>
+    <Scroll>
+      <table style="margin-top:.8rem">
+        <tbody>{d.stones.line.map(([who, what]) => (
+          <tr><td style="white-space:nowrap;vertical-align:top"><strong class="small">{who}</strong></td>
+              <td class="small">{what}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem"><strong>{d.stones.fieldHead}.</strong> {d.stones.field}</Note>
+  </Blk>
+
   <Blk label="TBGAS vol. VI, 1881–82" title={d.cooke.head}>
     <p class="lede">{d.cooke.lede}</p>
     <Note style="border-left-width:3px;margin-top:1.2rem">
@@ -236,6 +261,13 @@ import d from "../data/swonhungre.json";
       <strong>{d.tbgas.twistHead}.</strong> {d.tbgas.twist}
       {" "}<span class="chip doc">{d.tbgas.twistChip}</span>
     </Note>
+    <h3 style="margin-top:2rem">{d.tbgas.chantryHead}</h3>
+    <Note style="border-left-width:3px;margin-top:.8rem">
+      <strong>{d.tbgas.chantry}</strong> <span class="chip doc">{d.tbgas.chantryChip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.tbgas.chantryMeans}</p>
+    <Note style="margin-top:1.2rem"><strong>{d.tbgas.careHead}.</strong> {d.tbgas.care}</Note>
+
     <Note style="margin-top:1.2rem"><strong>{d.tbgas.minorHead}.</strong> {d.tbgas.minor}</Note>
   </Blk>
 

@@ -100,6 +100,29 @@ import d from "../data/saniger-place.json";
 
     <p style="margin-top:1.3rem"><strong>And they were freeholders.</strong> {d.bigland.freeholder}</p>
 
+    <h3 style="margin-top:1.9rem">{d.monuments.head}</h3>
+    <p style="margin-top:.6rem">{d.monuments.lede}</p>
+    <Scroll>
+      <table style="margin-top:1rem">
+        <thead><tr><th>As Bigland prints it</th><th class="m">Date</th><th>What it implies</th></tr></thead>
+        <tbody>{d.monuments.rows.map(([who, when, note]) => (
+          <tr><td><strong>{who}</strong></td>
+              <td class="m small" style="white-space:nowrap">{when}</td>
+              <td class="small">{note}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      {d.monuments.means} <span class="chip doc">{d.monuments.chip}</span>
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.monuments.bridgeHead}.</strong> {d.monuments.bridge}
+      {" "}<span class="chip inf">{d.monuments.bridgeChip}</span>
+      {" "}<a href={u("/swonhungre/")}>Cooke's claim →</a>
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.monuments.pedHead}.</strong> {d.monuments.ped}
+    </Note>
+
     <p class="dek" style="margin-top:1.1rem">Bigland also lists their neighbours at Saniger, which
     tells you what kind of place it was — a hamlet of a dozen households, not an estate village:</p>
     <Scroll>

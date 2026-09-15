@@ -596,5 +596,48 @@
   "chipTrap": "an index is not a transcript, in 1892 as in 2026",
   "means": "The hamlet had a resident family witnessing Berkeley deeds by the reign of Henry III, a fishery on the Severn worth reserving two days a week, and a neighbour called Neel whose descendants Smyth still finds there three centuries later.",
   "where": "Isaac Herbert Jeayes, Descriptive Catalogue of the Charters and Muniments in the Possession of Lord Fitzhardinge at Berkeley Castle (1892), read 15 September 2026 in the free full text on the Internet Archive."
+ },
+ "monuments": {
+  "head": "Bigland's Berkeley monuments, read entire",
+  "lede": "This page already quoted two of Bigland's Saniger inscriptions. Reading the whole of volume 1 on 15 September gives twenty mentions of the name, and the monuments in Berkeley church turn out to record a single household across four generations, with ages.",
+  "rows": [
+   [
+    "ESTHER, daughter of EDWARD SANIGER of Saniger, Gent.",
+    "buried 16 August 1692",
+    ""
+   ],
+   [
+    "ESTHER, wife of EDWARD SANIGER of Saniger, Gent.",
+    "died 13 June 1693",
+    ""
+   ],
+   [
+    "EDWARD SANIGER of Saniger, Gent.",
+    "buried 3 December 1739, aged 48",
+    "born about 1691"
+   ],
+   [
+    "SUSANNA, relict of Edw. Saniger, Gent.",
+    "died 14 May 1744, aged 58",
+    "born about 1686 — his widow, five years older than him"
+   ],
+   [
+    "JANE, daughter of EDWARD SANIGER of Saniger, Gent.",
+    "died 15 June 1750, aged 24",
+    "born about 1726"
+   ],
+   [
+    "EDWARD SANIGER, SENIOR, Gent.",
+    "died 16 July 17— (the year is broken in the scan)",
+    "the elder of two men of the name living at once"
+   ]
+  ],
+  "means": "Two Esthers in eight months, a wife and a daughter, and then a generation later a man of 48 with a widow of 58 and a daughter of 24. The archive's Berkeley estate deeds run alongside: EDWARD SANIGER OF SANIGER, CLOTHIER takes a mortgage in 1692 — the year the first Esther is buried — and EDWARD SANIGER OF SANIGER, GENT is mortgaging and exchanging land in 1709 and 1716. The style rises from clothier to gentleman between the two documents and the monuments call him Gent throughout.",
+  "chip": "documented",
+  "bridgeHead": "And this is the generation before Cooke's seller",
+  "bridge": "J. H. Cooke says Saniger Farm «was sold by EDWARD SANIGER to the Earl of Berkeley IN 1774». Bigland's men of the name die in 1739 and 17— and a daughter in 1750; Bigland also lists Edward Saniger among the freeholders summoned from Hinton, and the 1791 conveyance of the Great and Little Horse Marsh at Saniger is in the estate deeds. The names line up across a century; **what is still missing is the 1774 deed itself.**",
+  "bridgeChip": "inferred",
+  "pedHead": "And one Saniger who is not at Saniger",
+  "ped": "Bigland's burial list for Berkeley carries «EDWARD SANIGER, OF PEDINGTON IN THIS PARISH» and «MARY his Wife», among neighbours named Rutter, Parslow and Godwin also of Pedington. PEDDINGTON is one of the places named in the 1626 inquisition post mortem of Henry Mallett — «messuages, land and appurtenances in PEDDINGTON, MATFORD, SWANHINGNE SWANHANGER and elsewhere in the manor» — so the two hamlets are described together in a Crown record a century and a half before this burial."
  }
 }
