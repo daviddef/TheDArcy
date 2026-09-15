@@ -1,6 +1,6 @@
 {
  "title": "Errands",
- "eyebrow": "48 jobs a person can do and this archive cannot",
+ "eyebrow": "50 open · 8 answered and kept",
  "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
  "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
  "rows": [
@@ -12,7 +12,8 @@
    "settles": "Hannah's mother's surname. The FamilySearch shared tree calls her LYDIA JONES and dates the marriage to 1797 at Berkeley, but attaches no record to either claim — John Saniger's profile there carries fourteen sources and every one is a baptism. A Berkeley marriage entry of 1797 would name her, and would settle whether the Lyddya Sinegar aged seventy in Hannah's house in 1841 is her mother.",
    "why": "THE LAST UNNAMED PERSON IN THE DIRECT ENGLISH LINE",
    "href": "/hannah-baptism",
-   "file": "ENQUIRY SENT 13 September 2026, ANSWERED 14 September 2026. The archive office cannot be asked to read a register. The entry is still there and still reachable — the door changed, not the record. The next move is GFHS, drafted and waiting to be sent."
+   "file": "ENQUIRY SENT 13 September 2026, ANSWERED 14 September 2026. The archive office cannot be asked to read a register. The entry is still there and still reachable — the door changed, not the record. The next move is GFHS, drafted and waiting to be sent.",
+   "state": "answered"
   },
   {
    "n": 2,
@@ -22,7 +23,8 @@
    "settles": "Joseph D'Arcy was baptised at Portsea in March 1780, son of Robert and Jean, and died at Homestead, Lymington on 7 February 1848. A newspaper of 3 April 1848 reports that he made his will in February 1844 and begins to summarise it, and the digitised text breaks off. The will names his legatees — which means his children, and possibly his brothers and sisters. It is the closest thing to a family document this line has. AND THERE IS NOW A SECOND DOCUMENT. The Index to Death Duty Registers 1796-1903 has him: JOSEPH D'ARCY of Lymington, Hampshire, grant year 1848, court “PCC and Country Courts”, archive reference IR 27/284. The register behind that index states what the estate was worth and names the legatees and executors — frequently in more detail than the will itself.",
    "why": "THE NEAREST THING TO A FAMILY DOCUMENT IN THE ENGLISH LINE",
    "href": "/joseph-darcy",
-   "file": "index reference found on FindMyPast, 14 September 2026; neither document read"
+   "file": "index reference found on FindMyPast, 14 September 2026; neither document read",
+   "state": "open"
   },
   {
    "n": 3,
@@ -32,7 +34,8 @@
    "settles": "Which Wicklow Anglican registers survive 1815–1825, whether any are still in parish custody, and whether Betham's marriage licence bond abstracts are worth pursuing. The only live route to the marriage of George Pitt D'Arcy and Maria White.",
    "why": "",
    "href": "/george-pitt",
-   "file": "ENQUIRY SENT 13 September 2026. Asked which Wicklow Anglican registers survive for 1815–1825 and in whose custody, whether a list exists that can be consulted from abroad, and whether Betham's marriage licence bond abstracts are worth pursuing for a Dublin-diocese marriage of this date."
+   "file": "ENQUIRY SENT 13 September 2026. Asked which Wicklow Anglican registers survive for 1815–1825 and in whose custody, whether a list exists that can be consulted from abroad, and whether Betham's marriage licence bond abstracts are worth pursuing for a Dublin-diocese marriage of this date.",
+   "state": "open"
   },
   {
    "n": 4,
@@ -42,7 +45,8 @@
    "settles": "The father's name on that entry would prove in one line that Hannah Saniger's brother is the Thomas Sinegar of Oxford Road. Everything about the identification agrees and nothing documents it.",
    "why": "",
    "href": "/thomas-sinegar",
-   "file": "ENQUIRY SENT 13 September 2026. Asked for the fathers' names, abodes, ages, conditions, occupations and witnesses on the entry, and whether it was by banns or licence. The letter lists the nineteen spellings of this surname found so far, because twice already a spelling has been the only thing hiding a record."
+   "file": "ENQUIRY SENT 13 September 2026. Asked for the fathers' names, abodes, ages, conditions, occupations and witnesses on the entry, and whether it was by banns or licence. The letter lists the nineteen spellings of this surname found so far, because twice already a spelling has been the only thing hiding a record.",
+   "state": "open"
   },
   {
    "n": 5,
@@ -52,7 +56,8 @@
    "settles": "The marriage itself is now documented, free, in the FamilySearch index — but that index names no fathers. The original entry would name Thomas's, and prove in one line that Hannah's brother is the Thomas Sinegar of Oxford Road.",
    "why": "",
    "href": "/thomas-sinegar",
-   "file": "marriage confirmed 13 September 2026; father's name still unseen"
+   "file": "marriage confirmed 13 September 2026; father's name still unseen",
+   "state": "open"
   },
   {
    "n": 6,
@@ -62,7 +67,8 @@
    "settles": "The marriage of George Pitt D'Arcy and Maria White, about 1819. Every Wicklow marriage index reachable online is Roman Catholic, and he was an Anglican officer — the Church of Ireland registers for the county went in the 1922 Four Courts fire. The RCB Library keeps what survived and knows which parishes kept their own books. Betham's abstracts of marriage licence bonds survive even though the bonds burned. THE LICENCE-BOND HALF IS NOW ANSWERED AND IT IS NEGATIVE. FindMyPast's Ireland Diocesan and Prerogative Marriage Licence Bonds Indexes 1623-1866 holds no George D'Arcy at all, and its Dublin diocese entries effectively stop in 1741 — the latest in the whole set are one 1813, one 1752, and then a wall of 1741. Betham's Prerogative Marriage Licences Abstracts ends at 1810. Neither can hold an 1819 marriage. What remains is the RCB Library's question about surviving parish custody.",
    "why": "",
    "href": "/george-pitt",
-   "file": "licence bonds searched and ruled out by date, 14 September 2026"
+   "file": "licence bonds searched and ruled out by date, 14 September 2026",
+   "state": "open"
   },
   {
    "n": 7,
@@ -72,7 +78,8 @@
    "settles": "Read under wildcards SAN*, SIN*, SYN* and SWA*, which return every form this surname takes. The whole index holds two Saniger-variant entries: ABRAHAM SYNEGAR, cardmaker of Dursley, administration 1813/8; and JOHN SANIGAR, carpenter of Oldbury-on-Severn in Thornbury, will 1822/194. Neither is Berkeley. John Saniger of Berkeley left no proved will and no administration in the diocesan court, so this route to naming his children is closed rather than merely unopened. Control: SMITH returns 277.",
    "why": "CLOSED 14 SEPTEMBER 2026",
    "href": "/hannah-baptism",
-   "file": "searched and empty, coverage established"
+   "file": "searched and empty, coverage established",
+   "state": "answered"
   },
   {
    "n": 8,
@@ -82,7 +89,8 @@
    "settles": "Whether Hannah Saniger had a brother living a mile from her in Bristol. Thomas Saniger, baptised at Berkeley 3 July 1808 son of John, is exactly the age and birthplace of the Thomas Sinegar at 7 Oxford Road in 1851 — and a Gloucestershire marriage entry names the father, as his son's did in 1871. Everything else about the identification lines up and nothing documents it.",
    "why": "TURNS THE STRONGEST INFERENCE HERE INTO A FACT",
    "href": "/thomas-sinegar",
-   "file": "searched and not found, 13 September 2026"
+   "file": "searched and not found, 13 September 2026",
+   "state": "open"
   },
   {
    "n": 9,
@@ -92,7 +100,8 @@
    "settles": "Where Hannah Saniger was born. A Saniger family living two streets from the Wakefields in 1851 gives its birthplace as Chew Magna, and Chew Magna is in SOMERSET — which is the one thing the 1841 census insists on about Hannah and about the Lyddya Sinegar in her house. FreeREG's Chew Magna transcript is a fragment of two Smith entries in twenty-one years, so this cannot be searched from a desk. A baptism for Hannah Saniger, daughter of John and Lydia, would close the oldest open question on this site in one line.",
    "why": "THE BEST LEAD THIS ARCHIVE HAS EVER HAD ON HANNAH",
    "href": "/chew-magna",
-   "file": "found 13 September 2026, FreeCEN"
+   "file": "found 13 September 2026, FreeCEN",
+   "state": "open"
   },
   {
    "n": 10,
@@ -102,7 +111,8 @@
    "settles": "The exact day, the cause, and the informant — who is usually the widow or a son, named with their address. It would confirm 20 September as the day of death and put a name to whoever registered it.",
    "why": "",
    "href": "/sneyds",
-   "file": "found 13 September 2026, FreeBMD"
+   "file": "found 13 September 2026, FreeBMD",
+   "state": "open"
   },
   {
    "n": 11,
@@ -112,7 +122,8 @@
    "settles": "Chew Magna was a PECULIAR, outside the bishop's ordinary jurisdiction, proving its own wills down to 1787 — so Chew Magna probate is not where a researcher would first look for it. Before anyone is sent to Taunton, the archive should establish what survives of Somerset probate at all, and under which court a Chew Magna will of the 1820s would be found.",
    "why": "",
    "href": "/chew-magna",
-   "file": "jurisdiction identified 13 September 2026, Collinson and TNA Discovery"
+   "file": "jurisdiction identified 13 September 2026, Collinson and TNA Discovery",
+   "state": "open"
   },
   {
    "n": 12,
@@ -122,7 +133,8 @@
    "settles": "It names her mother WITH HER MAIDEN SURNAME. Five Queensland death registrations now say Saniger in four spellings, so the name itself is settled — but not one English record has ever confirmed it, and the 1841 census says Hannah was born OUTSIDE Gloucestershire, which is why no Gloucestershire register will ever find her. This certificate is the only document identified that attacks the question from the English end.",
    "why": "THE CHEAPEST DECISIVE DOCUMENT ON THIS SITE",
    "href": "/berkeley",
-   "file": "found 13 September 2026, FreeBMD"
+   "file": "found 13 September 2026, FreeBMD",
+   "state": "open"
   },
   {
    "n": 13,
@@ -132,7 +144,8 @@
    "settles": "The entire D'Arcy side were New South Welshmen. George Pitt D'Arcy died at Parramatta in 1849, George Lindsay was born there in 1829, Frederick Robert and Charlotte both crossed. NSW death registrations name the parents of the deceased — which is how Queensland's index settled the Saniger name five times over. This is the largest free index this archive has never searched, and it is shut to an automated browser.",
    "why": "THE BIGGEST FREE THING LEFT",
    "href": "/chatham",
-   "file": "blocked by Cloudflare, 13 September 2026"
+   "file": "blocked by Cloudflare, 13 September 2026",
+   "state": "open"
   },
   {
    "n": 14,
@@ -142,7 +155,8 @@
    "settles": "This archive has three Irish lines and has never searched an Irish record. The most testable claim is the marriage of Paul Cole Atkinson and Jane Creech at Carrigaline, County Cork, on 27 September 1853, which the site states as fact and has never seen. Then Richard Atkinson of Limerick, and Catherine Margaret Mulcahy of Cork, whose parents are unknown.",
    "why": "THREE LINES, ONE FREE DATABASE",
    "href": "/atkinson",
-   "file": "blocked by Cloudflare, 13 September 2026"
+   "file": "blocked by Cloudflare, 13 September 2026",
+   "state": "open"
   },
   {
    "n": 15,
@@ -152,7 +166,8 @@
    "settles": "He married Margarett Maria Isabella D'Arcy, Robert and Jean's daughter, at Chatham in 1806 by licence, witnessed by her brother Joseph. His will of 1844 would name his widow and children — an entire Welsh branch of this family that the archive has never contained a word about. Also not on FindMyPast, for the same reason as errand 20: its Prerogative Court of Canterbury wills index stops at 1800.",
    "why": "A WHOLE BRANCH, FOR THREE POUNDS",
    "href": "/chatham",
-   "file": "found 13 September 2026 via TNA Discovery"
+   "file": "found 13 September 2026 via TNA Discovery",
+   "state": "open"
   },
   {
    "n": 16,
@@ -162,7 +177,8 @@
    "settles": "The Saniger family in its own parish, by name and holding, from 1601 to 1749 — John Saniger yeoman, Edward Saniger of Saniger gent and clothier, Maurice Saniger and Jane his wife. This is the documentary spine of the family the archive has only ever seen through a parish register that stops in 1677.",
    "why": "",
    "href": "/saniger-place",
-   "file": "identified 13 September 2026"
+   "file": "identified 13 September 2026",
+   "state": "open"
   },
   {
    "n": 17,
@@ -172,7 +188,8 @@
    "settles": "Saniger lies in the tithing of Hinton. Manor court rolls list tenants by name at each court — the one record type that catches a family holding land in a parish whose register is lost to us after 1677.",
    "why": "",
    "href": "/saniger-place",
-   "file": "identified 13 September 2026"
+   "file": "identified 13 September 2026",
+   "state": "open"
   },
   {
    "n": 18,
@@ -182,7 +199,8 @@
    "settles": "Where Hannah Saniger was born, if she was born to a chapel-going family. The catalogue has now been read properly: there are THIRTY-SIX Bristol registers in RG 4, not five, and exactly twelve of them are births or baptisms whose dates cover her window. Broad Mead Baptist births 1787–1817 (RG 4/2697) and Lewins Mead Presbyterian baptisms 1718–1840 (RG 4/1830) each cover it on their own. Access corrected 13 September 2026: all twelve are marked digitised:false at Kew, so this needs a subscription or a visit, not an afternoon.",
    "why": "",
    "href": "/bristol-chapels",
-   "file": "catalogued in full, 13 September 2026"
+   "file": "catalogued in full, 13 September 2026",
+   "state": "open"
   },
   {
    "n": 19,
@@ -192,7 +210,8 @@
    "settles": "The baptism of William Sneyd the weaver, about 1746. FreeREG holds no Bishop's Transcripts for Madeley at all, and his baptism is not in any transcribed Staffordshire register. The diocesan second copy is the obvious next place and nobody has asked for it.",
    "why": "",
    "href": "/sneyds",
-   "file": "identified 13 September 2026"
+   "file": "identified 13 September 2026",
+   "state": "open"
   },
   {
    "n": 20,
@@ -202,7 +221,8 @@
    "settles": "His parentage is the largest open question on this site and no record of his life names a father. A will names family. Found 9 September 2026 and still unordered. CHECKED ON FINDMYPAST WHILE THE TRIAL WAS OPEN AND IT IS NOT THERE. FindMyPast's only Prerogative Court of Canterbury collections are a wills index for 1750-1800 and an administrations index for 1660-1700. Nothing in its catalogue carries PCC wills proved after 1800, so this will, Joseph's of 1848 and John Maddock Jones's of 1844 are all beyond it. £3.50 at Kew is the price and there is no free substitute.",
    "why": "THE PRIORITY",
    "href": "/hornby",
-   "file": "FindMyPast coverage checked and excluded, 14 September 2026"
+   "file": "FindMyPast coverage checked and excluded, 14 September 2026",
+   "state": "open"
   },
   {
    "n": 21,
@@ -212,7 +232,8 @@
    "settles": "Robert D'Arcy's parentage, from the records of the Corps he served for fifty-one years and the town he died in.",
    "why": "The best chance of closing the question the archive was built around",
    "href": "/hornby",
-   "file": "notes/letters/2026-09-re-museum-chatham.md"
+   "file": "notes/letters/2026-09-re-museum-chatham.md",
+   "state": "open"
   },
   {
    "n": 22,
@@ -222,7 +243,8 @@
    "settles": "Three causes of death, and three sets of parents named in a civil record rather than a tree. Registration numbers already identified.",
    "why": "Turns three dotted pedigree edges solid",
    "href": "/register",
-   "file": "requests/qld-bdm-certificates.md"
+   "file": "requests/qld-bdm-certificates.md",
+   "state": "open"
   },
   {
    "n": 23,
@@ -232,7 +254,8 @@
    "settles": "Robert D'Arcy, 1827, and Constantine D'Arcy, 1805. A burial register can give an age, an abode and sometimes a relationship.",
    "why": "The likeliest of all of these to succeed",
    "href": "/hornby",
-   "file": "notes/letters/2026-09-medway-archives.md"
+   "file": "notes/letters/2026-09-medway-archives.md",
+   "state": "open"
   },
   {
    "n": 24,
@@ -242,7 +265,8 @@
    "settles": "Confirmed outright, from the authority rather than by inference from the B.2090A's “Not yet to hand”: Private ARTHUR HARTLEY SNEYD, service number 5050, 9th Bn. Australian Infantry, A.I.F., died 20 August 1916 aged 22, commemorated on the VILLERS-BRETONNEUX MEMORIAL, Somme — the memorial to the missing, which carries 10,696 names. CWGC adds: “Son of Arthur and Martha Sneyd, of James St., Wooloowin, Brisbane. Born at Rockhampton, Queensland.” Every one of those details was already held here. The record corrected nothing and confirmed everything, which is the rarer and duller of the two outcomes.",
    "why": "CONFIRMED, NOT CORRECTED",
    "href": "/finding-arthur",
-   "file": "DONE 14 September 2026."
+   "file": "DONE 14 September 2026.",
+   "state": "answered"
   },
   {
    "n": 25,
@@ -252,7 +276,8 @@
    "settles": "The Ayrshire Murdochs are a quarter of the tested descendant and the archive has 25 of 52 ancestor slots filled. The DNA points straight at this gap.",
    "why": "The branch the archive has most neglected",
    "href": "/dna",
-   "file": "requests/scotlandspeople-murdoch.md"
+   "file": "requests/scotlandspeople-murdoch.md",
+   "state": "open"
   },
   {
    "n": 26,
@@ -262,7 +287,8 @@
    "settles": "Anything at all. The Atkinsons are five generations deep and stop dead at the emigrant.",
    "why": "",
    "href": "/atkinson",
-   "file": "requests/rootsireland-atkinson-limerick.md"
+   "file": "requests/rootsireland-atkinson-limerick.md",
+   "state": "open"
   },
   {
    "n": 27,
@@ -272,7 +298,8 @@
    "settles": "Arthur Hartley Sneyd's 1916 intestacy; William Hartley Sneyd's 1873 insolvency — a wholly new fact; four wills, one of which may be the gaol governor's; two police staff files that are probably his sons.",
    "why": "All nine identified to series and file number",
    "href": "/register",
-   "file": "requests/qsa-order-list.md"
+   "file": "requests/qsa-order-list.md",
+   "state": "open"
   },
   {
    "n": 28,
@@ -282,7 +309,8 @@
    "settles": "Robert D'Arcy was appointed by the BOARD OF ORDNANCE, not commissioned by the War Office and not by purchase, which is why the ordinary officer series have never held him. It would also settle 1776 against 1778: Connolly's Roll gives one date and the Army Lists another, and this archive currently prints both on different pages.",
    "why": "THE SERIES IS NAMED AT LAST",
    "href": "/hornby",
-   "file": "ANSWERED 15 September 2026 from TNA's own guides and catalogue. Note the warning in the Board of Ordnance guide: “you cannot search this series by a person's name in our online catalogue”. WO 25/3913, Royal Engineers officers' services, IS digitised and name-indexed — but begins in 1796, so it holds him only if he was still serving."
+   "file": "ANSWERED 15 September 2026 from TNA's own guides and catalogue. Note the warning in the Board of Ordnance guide: “you cannot search this series by a person's name in our online catalogue”. WO 25/3913, Royal Engineers officers' services, IS digitised and name-indexed — but begins in 1796, so it holds him only if he was still serving.",
+   "state": "answered"
   },
   {
    "n": 29,
@@ -292,7 +320,8 @@
    "settles": "A widow's will names her children. This one was proved on 24 December 1833, in a parish between Berkeley and Bristol that holds eight Saniger register entries, at exactly the moment Hannah Saniger was a married woman with children in Bristol. Probate is the record type this archive has never once searched for this surname, and this is the first thing it turned up.",
    "why": "A WIDOW'S WILL NAMES HER CHILDREN — AND IT IS FREE",
    "href": "/saniger-place",
-   "file": "found 13 September 2026, TNA Discovery"
+   "file": "found 13 September 2026, TNA Discovery",
+   "state": "open"
   },
   {
    "n": 30,
@@ -302,7 +331,8 @@
    "settles": "Whether Robert and Jean D'Arcy had other children at Portsea. FreeREG's transcript of this parish is TWENTY-TWO MONTHS long — baptisms for 1780 and 1781 and almost nothing else — so Joseph's entry survives by luck and the silence around it means nothing at all. A thirty-year run of the original volume would test the whole household, and might name Robert's own marriage.",
    "why": "THE ARCHIVE'S OLDEST ENGLISH FIND IS STANDING ON TWO YEARS",
    "href": "/portsea",
-   "file": "coverage established 13 September 2026"
+   "file": "coverage established 13 September 2026",
+   "state": "open"
   },
   {
    "n": 31,
@@ -312,7 +342,8 @@
    "settles": "Eleven men of the surname in four spellings — Saniger (5), Sanyger (3), Syniger (2), Sainger (1). One of them, JOHN SAINGER, weaver, is mustered inside the hamlet itself, which the survey writes as “Saniger [in Hinton parish, Berkeley]”. Two of the four spellings were not among the seventeen this archive held. Every 1608 form ends -GER, which dates the -GAR forms of the later registers as late rather than old.",
    "why": "THE SURNAME, DOCUMENTED TWO CENTURIES BEFORE THE REGISTERS",
    "href": "/saniger-1608",
-   "file": "DONE 14 September 2026. No descent is claimed: nothing links these eleven to Hannah Saniger. What it gives is the surname's home ground and its trades."
+   "file": "DONE 14 September 2026. No descent is claimed: nothing links these eleven to Hannah Saniger. What it gives is the surname's home ground and its trades.",
+   "state": "answered"
   },
   {
    "n": 32,
@@ -322,7 +353,8 @@
    "settles": "The catalogue descriptions alone give six generations of names, trades and land. The deeds themselves give witnesses, relationships and often the words “son and heir”. D3831/Box5/1 is a century of Panthurst Farm, 1716–1814 — the farm John Saniger sold into in 1601.",
    "why": "",
    "href": "/saniger-place",
-   "file": "identified 13 September 2026"
+   "file": "identified 13 September 2026",
+   "state": "open"
   },
   {
    "n": 33,
@@ -332,7 +364,8 @@
    "settles": "The index gives two christenings to Robert D'Arcy and Jane — Constantine on 18 February 1786 and Jane on 17 March 1788 — and nothing else. The register page itself would give the father's rank and corps, the abode, and any further children of the same parents. It is the only direct evidence this archive has that Robert D'Arcy was ever in the West Indies, and it would turn a strong inference into a documented posting.",
    "why": "THE ONLY RECORD OF ROBERT D'ARCY BETWEEN 1778 AND 1802",
    "href": "/constantine",
-   "file": "index found 14 September 2026; original unseen"
+   "file": "index found 14 September 2026; original unseen",
+   "state": "open"
   },
   {
    "n": 34,
@@ -342,7 +375,8 @@
    "settles": "When Robert D'Arcy went to Barbados, how long he stayed and in what capacity. His career was long blank between his commission of 17 January 1776 and his majority of 1802, and two christenings are the only things known to fall inside them.",
    "why": "",
    "href": "/the-corps",
-   "file": "opened as a question 14 September 2026"
+   "file": "opened as a question 14 September 2026",
+   "state": "open"
   },
   {
    "n": 35,
@@ -352,7 +386,8 @@
    "settles": "Margaret Jones née D'Arcy died at Havre in February 1843 and her husband Major John Maddock Jones at Ingouville in March. A consular death registration gives an age and frequently a parentage. It is the nearest thing to a birth date for a daughter of Robert D'Arcy.",
    "why": "AN AGE FOR ONE OF ROBERT'S CHILDREN",
    "href": "/margaret-jones",
-   "file": "SERIES IDENTIFIED 15 September 2026. Two honest limits: the word in the title is MISCELLANEOUS — these are returns that happened to reach the GRO, not a complete register of British deaths in France — so a negative in RG 43/4 would prove only that the death is not in RG 35, not that it went unregistered. And there is no TNA series of French consular death registers for the 1840s at all; FO 27 holds Havre consular correspondence, but it is correspondence, not a register, and is not name-indexed."
+   "file": "SERIES IDENTIFIED 15 September 2026. Two honest limits: the word in the title is MISCELLANEOUS — these are returns that happened to reach the GRO, not a complete register of British deaths in France — so a negative in RG 43/4 would prove only that the death is not in RG 35, not that it went unregistered. And there is no TNA series of French consular death registers for the 1840s at all; FO 27 holds Havre consular correspondence, but it is correspondence, not a register, and is not name-indexed.",
+   "state": "open"
   },
   {
    "n": 36,
@@ -362,7 +397,8 @@
    "settles": "This archive's own tree gives Hannah Saniger's mother as LYDIA JONES, born 13 March 1770 at Wotton-under-Edge and died 7 July 1851 at Berkeley. A death in July 1851 is inside civil registration: the September quarter of the Thornbury district index should hold her, and the certificate gives an age, an occupation of husband and an informant — very often a child. It is the cheapest unexploited document in this archive.",
    "why": "THE CERTIFICATE IS NOW ORDERABLE",
    "href": "/crossread",
-   "file": "LOCATED 14 September 2026. Invisible under SANIGER, present under SANIGAR — the fourth time a spelling has hidden a record in this family. Coverage checked first: Thornbury/Berkeley deaths are complete 1837-1948."
+   "file": "LOCATED 14 September 2026. Invisible under SANIGER, present under SANIGAR — the fourth time a spelling has hidden a record in this family. Coverage checked first: Thornbury/Berkeley deaths are complete 1837-1948.",
+   "state": "open"
   },
   {
    "n": 37,
@@ -372,7 +408,8 @@
    "settles": "Whether JONES is her surname at all, which this site has called an unevidenced assertion for a week while holding a parish and a date for it.",
    "why": "",
    "href": "/hannah-baptism",
-   "file": "TESTED 14 September 2026. Control: 164 Jones baptisms in Gloucestershire 1760-1785 on the same search, so the failure is the parish's transcription, not the query. This is an EMPTY, not a null."
+   "file": "TESTED 14 September 2026. Control: 164 Jones baptisms in Gloucestershire 1760-1785 on the same search, so the failure is the parish's transcription, not the query. This is an EMPTY, not a null.",
+   "state": "answered"
   },
   {
    "n": 38,
@@ -382,7 +419,8 @@
    "settles": "Her marriage to Thomas Saniger and her burial nine years later, both at Berkeley, both given by this archive's tree with full dates and neither ever requested. She is listed among the open questions as “where did Catherine Cotton come from?” while the answer — Berkeley, born 11 October 1746, daughter of Edward Cotton and Elizabeth — sits in the data files.",
    "why": "",
    "href": "/saniger-line",
-   "file": "opened 14 September 2026"
+   "file": "opened 14 September 2026",
+   "state": "open"
   },
   {
    "n": 39,
@@ -392,7 +430,8 @@
    "settles": "This archive's tree gives Robert D'Arcy a BROTHER — Constantine D'Arcy, born Barbados 1759, died Chatham 1778, appointed to De Lancey's Brigade on 1 June 1778, with the note that the original transcription read “Cornelius Dersey”. If that officer is real he is the first sibling ever attached to Robert, and his papers would name their parents. If he is not, the tree has duplicated Robert's own son and back-dated him twenty-seven years, and that needs saying.",
    "why": "THE FIRST LEAD ON ROBERT'S PARENTAGE THAT IS NOT THE HOLDERNESS STORY",
    "href": "/crossread",
-   "file": "found in this archive's own data 14 September 2026; never tested"
+   "file": "found in this archive's own data 14 September 2026; never tested",
+   "state": "open"
   },
   {
    "n": 40,
@@ -402,7 +441,8 @@
    "settles": "ALL THREE DEATH REGISTRATIONS FOUND, 14 September 2026. Charlotte, aged 73, Brighton Q2 1869, vol 2B p.152; Jane, aged 87, Brighton Q1 1875, vol 2B p.203; Catherine, aged 86, Brighton Q1 1876, vol 2B p.164. Catherine also has a newspaper notice giving her address as Bedford Square and the title MISS, and all three appear in one household in the 1841 Brighton census. What remains is the probate, the certificates themselves, and the gap in 1851–1871.",
    "why": "LARGELY CLOSED 14 SEPTEMBER 2026",
    "href": "/robert-family",
-   "file": "three registrations, an obituary, a probate index entry and a census household"
+   "file": "three registrations, an obituary, a probate index entry and a census household",
+   "state": "answered"
   },
   {
    "n": 41,
@@ -412,7 +452,8 @@
    "settles": "Catherine D'Arcy died at Bedford Square, Brighton in January 1876 leaving an estate that attracted duty. The Death Duty register states its value and names the executors and the legatees. Three unmarried sisters who outlived their brothers leave their money to nephews and nieces — which is to say, this is the document most likely to name the next generation of this family in England, including anyone descended from Joseph at Lymington.",
    "why": "THE MOST LIKELY DOCUMENT TO NAME THE ENGLISH FAMILY AFTER 1850",
    "href": "/sussex-sisters",
-   "file": "NARROWED 15 September 2026. A belief worth correcting: IR 26 is often said to stop in 1857. It does not — 1857 is where the MICROFILMING stops, not the records. The registers for 1858–1903 survive as originals at Kew, unfilmed and not online, and may need advance notice to produce."
+   "file": "NARROWED 15 September 2026. A belief worth correcting: IR 26 is often said to stop in 1857. It does not — 1857 is where the MICROFILMING stops, not the records. The registers for 1858–1903 survive as originals at Kew, unfilmed and not online, and may need advance notice to produce.",
+   "state": "open"
   },
   {
    "n": 42,
@@ -422,7 +463,8 @@
    "settles": "A death certificate gives the exact date, the address, the cause, and the INFORMANT — who for an unmarried woman of 87 is usually the relative who was present. Three certificates would give three informants, and the informants are the point.",
    "why": "",
    "href": "/sussex-sisters",
-   "file": "references found 14 September 2026"
+   "file": "references found 14 September 2026",
+   "state": "open"
   },
   {
    "n": 43,
@@ -432,7 +474,8 @@
    "settles": "1851 IS DONE: all three are at WESTERN COTTAGE, BRIGHTON, HO107/1646 f.357 p.59 sch.172, indexed under the surname ARCY with the D' lost — which is why every D*ARCY search missed them. 1861 has since been searched four ways — by surname (ARCY and D*ARCY, Sussex), by address (Bedford Square and the Western streets), by birthplace within Sussex (33 people born Barbadoes, read one by one) and by birthplace nationally (25 Janes and 16 Catherines) — and they are in none of it. What is left is a street-by-street read of the 1861 and 1871 enumerators' books for the western end of Brighton, and the Brighton Standard's house-by-house occupancy lists.",
    "why": "1851 CLOSED 14 SEPTEMBER 2026; 1861 SEARCHED FOUR WAYS AND EMPTY",
    "href": "/sussex-sisters",
-   "file": "the surname was indexed as ARCY — the D' had been read as part of the forename"
+   "file": "the surname was indexed as ARCY — the D' had been read as part of the forename",
+   "state": "open"
   },
   {
    "n": 44,
@@ -442,7 +485,8 @@
    "settles": "The Italian side of the marriage that joins this archive to the Falco one. 63 MATRIMONI PROCESSETTI are the prize: the processetti carry birth extracts and parental consents for both parties, which is two generations per marriage. Control-tested — a search for RUSSO at Arienzo returns nothing, so the index is missing, not the family. THIS IS THE FALCO ARCHIVE'S WORK rather than this one's, and is listed here because this archive established the coverage.",
    "why": "",
    "href": "/the-other-archives",
-   "file": "coverage established 15 September 2026"
+   "file": "coverage established 15 September 2026",
+   "state": "open"
   },
   {
    "n": 45,
@@ -452,7 +496,8 @@
    "settles": "Five generations that stop dead at the emigrant. The NLI cannot help — it holds CATHOLIC registers and this line is Anglican, on the evidence of ST MARY'S, LIMERICK and the surnames. irishgenealogy.ie is behind a bot check. What is left is the RCB Library, which has already been written to once about Wicklow and could be asked about Limerick in the same letter.",
    "why": "THE OLDEST IRISH LINE, AND THE LEAST SEARCHED",
    "href": "/errands",
-   "file": "coverage established 15 September 2026 — the NLI is the wrong denomination"
+   "file": "coverage established 15 September 2026 — the NLI is the wrong denomination",
+   "state": "open"
   },
   {
    "n": 46,
@@ -462,7 +507,8 @@
    "settles": "A second opinion on the Queensland burials, and GPS coordinates Find a Grave does not carry for every plot. Nothing has been searched: the site's own API answered 403 and 400 and the page never finished loading. This is a retry, not a result.",
    "why": "",
    "href": "/graves",
-   "file": "blocked 15 September 2026"
+   "file": "blocked 15 September 2026",
+   "state": "open"
   },
   {
    "n": 47,
@@ -472,7 +518,8 @@
    "settles": "Contested descents from named families are exactly what forum specialists carry primary knowledge of, and somebody there has usually already read the wills. Two questions are ready to ask, and both should be put as the archive states them, with the evidence, inviting refutation: (1) the Holderness descent — the tree points at the 4th Earl in a note and hangs Robert off a “Thomas (Francis) D'Arcy” in its structure, and neither carries a document; (2) the Keele graft — the descent from Ralph Sneyd of Keele Hall, already DISPROVED here from the Madeley register, where the 1742 baptism names the father as William and Ralph was eighteen. Ask what would break each, not what would confirm it.",
    "why": "THE TWO CLAIMS THIS ARCHIVE CANNOT SETTLE ALONE",
    "href": "/hornby",
-   "file": "blocked 15 September 2026 — searching the forum requires an account, and none was created"
+   "file": "blocked 15 September 2026 — searching the forum requires an account, and none was created",
+   "state": "open"
   },
   {
    "n": 48,
@@ -482,7 +529,8 @@
    "settles": "Whether the Charlotte D'Arcy christened at Chatham on 31 March 1826 — eight days before the convict ship England sailed with her father's detachment — is the Charlotte who married at Parramatta thirty-three years later. A New South Wales marriage certificate names both fathers. The circumstantial case is strong: the right age, and the town where George Pitt D'Arcy died in 1849. The middle name is the problem — CATHCART in one index entry, CATHERINE in another, and absent from the baptism.",
    "why": "THE LAST OF GEORGE PITT D'ARCY'S CHILDREN UNACCOUNTED FOR",
    "href": "/chatham",
-   "file": "candidate found 15 September 2026"
+   "file": "candidate found 15 September 2026",
+   "state": "open"
   },
   {
    "n": 49,
@@ -492,7 +540,8 @@
    "settles": "The marriage of JOHN SANIGER and LYDIA at Berkeley, about 1797, and with it the surname of the last unnamed person in the direct English line. The same enquiry can carry the second question: whether Berkeley's register supports Hannah Sanigor's baptism of 18 August 1804 against the family record's 23 July 1805.",
    "why": "THE ROUTE THE COUNTY ARCHIVE ITSELF POINTED TO",
    "href": "/hannah-baptism",
-   "file": "Drafted and not sent — sending mail is David's call. The letter should carry the eighteen spellings found so far, because twice now a spelling has been the thing hiding a record, and a third time in 1608."
+   "file": "Drafted and not sent — sending mail is David's call. The letter should carry the eighteen spellings found so far, because twice now a spelling has been the thing hiding a record, and a third time in 1608.",
+   "state": "open"
   },
   {
    "n": 50,
@@ -502,7 +551,8 @@
    "settles": "Church-court defamation suits are brought by named people about named people, and the depositions give ages, abodes and occupations for every witness. A Saniger suing in 1768 sits exactly in the generation above John Saniger of Berkeley, who married Lydia about 1797 and is the last unnamed link in the direct English line.",
    "why": "THE RICHEST UNREAD DOCUMENT FOUND THIS WEEK",
    "href": "/saniger-place",
-   "file": "Found in TNA Discovery, 14 September 2026. Not digitised. Christian is a woman's forename in this period."
+   "file": "Found in TNA Discovery, 14 September 2026. Not digitised. Christian is a woman's forename in this period.",
+   "state": "open"
   },
   {
    "n": 51,
@@ -512,7 +562,8 @@
    "settles": "A purparty is a share of an inherited estate divided between coheirs — which is precisely what happened when John Swonhungre died without issue in 1401 and his sisters Isabel and Elizabeth took the lands. These three groupings are the paper of that division and of what came after.",
    "why": "",
    "href": "/saniger-place",
-   "file": "Named but not itemised in TNA Discovery, 14 September 2026."
+   "file": "Named but not itemised in TNA Discovery, 14 September 2026.",
+   "state": "open"
   },
   {
    "n": 52,
@@ -522,7 +573,8 @@
    "settles": "Smyth indexes Swanhunger at pages 130, 232, 253, 280, 286-289, 303, 315, 351, 363-366, 370-371, 374-375, 379-383. Only four have been read. The rest are descriptions of Wanswell, Hame and Nibley in which the family appears as neighbours, tenants and parties.",
    "why": "",
    "href": "/saniger-place",
-   "file": "Achievable without leaving the desk; the text is already downloaded."
+   "file": "Achievable without leaving the desk; the text is already downloaded.",
+   "state": "open"
   },
   {
    "n": 53,
@@ -532,7 +584,8 @@
    "settles": "The reason is structural, and it changes what to order. A royal inquisition post mortem was taken only for a TENANT-IN-CHIEF of the Crown. The Swonhungers held of the LORD BERKELEY by knight service and suit of court, and the Berkeleys held in chief — the calendars say so in their own entries, “held of the heir of William de Berkeleye in chief”. A mesne tenant's death produced no royal inquisition. So Smyth's “Inqu: 22. R. 2. p'. morte Johis Swonhunger” is very unlikely to be a Chancery IPM at all: it will be an inquisition taken in the Berkeley hundred court, or a document in the castle muniments Smyth had on his desk as steward. Look for it at Berkeley, not at Kew.",
    "why": "THE CITATION IS REAL; THE REPOSITORY WAS WRONG",
    "href": "/saniger-place",
-   "file": "TESTED 15 September 2026. The OCR of these volumes is poor — it prints Eohert for Robert and MTlliam for William — so the null was taken on fragment searches tolerant of that, not on exact spellings."
+   "file": "TESTED 15 September 2026. The OCR of these volumes is poor — it prints Eohert for Robert and MTlliam for William — so the null was taken on fragment searches tolerant of that, not on exact spellings.",
+   "state": "answered"
   },
   {
    "n": 54,
@@ -542,7 +595,8 @@
    "settles": "CATHERINE COTTON married Thomas Saniger at Berkeley on 10 April 1769 and was buried there on 27 September 1778. Eleven months after her burial a Benjamin Cotton, cordwainer, of the same small parish, has his will proved. Her father is given by the tree as EDWARD Cotton, so Benjamin is not him — but a Berkeley Cotton making a will in 1779 is well placed to name her, her widower or her children, and this archive has never had a document from her side of the family at all.",
    "why": "THE FIRST COTTON DOCUMENT THIS ARCHIVE HAS FOUND",
    "href": "/saniger-line",
-   "file": "Found 14 September 2026 in TNA Discovery. Speculative as to relationship, cheap to test, and free to read."
+   "file": "Found 14 September 2026 in TNA Discovery. Speculative as to relationship, cheap to test, and free to read.",
+   "state": "open"
   },
   {
    "n": 55,
@@ -552,7 +606,8 @@
    "settles": "BOTH FATHERS' NAMES AND OCCUPATIONS. This archive has James Sneyd the engraver across four censuses at Well Street, Hanley, and his wife appears in every one of them as “Ann” and nothing else. The index gives her BIDDULPH; the certificate would give her father, and carry this line back a generation on a side it has never had.",
    "why": "THE ONLY SNEYD MARRIAGE THIS FAMILY LEFT IN ENGLAND AFTER 1837",
    "href": "/sneyds",
-   "file": "Found 15 September 2026. Their eldest, Elizabeth Ann, was born in 1839, three years before the wedding."
+   "file": "Found 15 September 2026. Their eldest, Elizabeth Ann, was born in 1839, three years before the wedding.",
+   "state": "open"
   },
   {
    "n": 56,
@@ -562,7 +617,8 @@
    "settles": "Whether a Saniger or Swonhunger household appears in the Vale between the muster of 1608 — which this archive has read, and which gave eleven men — and the parish registers. It is the single most efficient reference found on 15 September: three sources, one shelfmark.",
    "why": "The 1608 muster names eleven men and then the trail goes quiet for a century and a half. A hearth tax names householders; a poll tax names adults. Either would put a name in a parish in a year.",
    "href": "/swonhungre",
-   "file": "D5555/2/9"
+   "file": "D5555/2/9",
+   "state": "open"
   },
   {
    "n": 57,
@@ -572,7 +628,19 @@
    "settles": "Exemption certificates name the poor, which is precisely the half of a parish that leaves no other record. The catalogue says the bundle «includes names of individuals».",
    "why": "Gloucestershire Archives holds a photostat of the enrolment as D383/1 with a part transcript, so the Gloucester copy may be the cheaper route to the same names.",
    "href": "/swonhungre",
-   "file": "E 179/329"
+   "file": "E 179/329",
+   "state": "open"
+  },
+  {
+   "n": 58,
+   "what": "The court rolls of the manor of AWRE — a run from 1387 to 1881, none of it digitised",
+   "where": "Gloucestershire Archives, Gloucester: D2156/1–4 (single surrenders of 1387, 1439, 1573 and 1577/8), D421/M7 (1588–91, with the Hundred of Bledisloe for 1591), D3270/362 (1671 and then nearly continuous to 1881) and D3270/363 (Awre and Etloe, 1760–1886).",
+   "cost": "a visit, or copying fees",
+   "settles": "Whether the Sanigers of Awre and Blakeney can be followed through the gap. Court rolls record surrenders and admissions of copyhold tenants, and name the customary heir — D3270/282 is explicitly «extracts relating to customary heir of a tenant dying», 1688–1777 and 1783–1810. That is a named parent-to-child link, repeated every generation, for exactly the two centuries this archive cannot cross.",
+   "why": "Awre is not in FreeREG, has no surviving Protestation return, and is not covered by the 1381 poll tax membranes that survive. The court rolls are the one dense, continuous, surviving source for the parish — and they have never been asked.",
+   "href": "/errands",
+   "file": "D3270/362",
+   "state": "open"
   }
  ],
  "ydna": {
@@ -580,5 +648,18 @@
   "settles": "The Y chromosome descends father to son essentially unchanged. A male-line D'Arcy's would place this family against every other tested D'Arcy in the world — the most direct attack anyone can make on Robert D'Arcy's parentage, and it beats every archive visit on this page.",
   "note": "The descendant who has tested is female and has no Y chromosome. Her brothers do."
  },
- "close": "Several of these will come back empty. That is a result, and it belongs on the search register rather than in a drawer — so that the next person does not repeat it."
+ "close": "Several of these will come back empty. That is a result, and it belongs on the search register rather than in a drawer — so that the next person does not repeat it.",
+ "states": {
+  "answered": [
+   "Answered",
+   "#12703F",
+   "asked and settled — kept because the answer is the finding"
+  ],
+  "open": [
+   "Open",
+   "#B04A16",
+   "waiting on a visit, a fee or a sign-in this archive will not make"
+  ]
+ },
+ "tallyNote": "Eight of these were resolved and said so only by shouting in the prose. They now carry a state, so the count is a number rather than a reading exercise — the same reason [the work list](/worklist/) exists."
 }

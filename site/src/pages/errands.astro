@@ -4,6 +4,8 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
 import e from "../data/errands.json";
+
+const n = (k) => e.rows.filter((r) => r.state === k).length;
 ---
 <Base title={e.title} eyebrow={e.eyebrow} dek={e.dek}>
   <section class="blk">
@@ -12,11 +14,22 @@ import e from "../data/errands.json";
 
   <section class="blk">
     <h2>The queue, in order of what would change most</h2>
+    <div style="margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:8px">
+      {Object.entries(e.states).map(([k, [label, colour, gloss]]) => (
+        <span class="chip" style={`border-color:${colour}`} title={gloss}>
+          <strong style={`color:${colour}`}>{label}</strong> {n(k)}
+        </span>
+      ))}
+    </div>
+    <Note style="margin-top:1rem">{e.tallyNote}</Note>
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
       {e.rows.map((r) => (
-        <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
+        <div style={`border-left:2px solid ${e.states[r.state] ? e.states[r.state][1] : "var(--rule-strong)"};padding:2px 0 2px 16px`}>
           <div>
             <span class="mono small" style="color:var(--ink-3)">{String(r.n).padStart(2, "0")}</span>
+            {e.states[r.state] && (
+              <span class="mono small" style={`margin-left:.5rem;color:${e.states[r.state][1]}`}>
+                {e.states[r.state][0].toUpperCase()}</span>)}
             <strong style="margin-left:.5rem">{r.what}</strong>
             {r.why && <span class="chip doc" style="margin-left:.5rem">{r.why}</span>}
           </div>

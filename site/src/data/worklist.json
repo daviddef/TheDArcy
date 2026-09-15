@@ -38,18 +38,18 @@
     {
       "n": 5,
       "what": "Give the errands a state field of their own",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Eight of the fifty-five [errands](/errands/) are resolved and announce it by shouting in the prose** — *«— ANSWERED, and the answer is that there are none»*, *«— DONE, and it gave eleven men»*. That reads well and counts badly: nothing anywhere says how many are open, and a ninth resolution depends on my remembering to shout in the right format. The searched log has a real outcome vocabulary; the errands never got one."
+      "note": "**Done.** Every errand now carries a `state` — **50 open, 8 answered and kept** — rendered as a tally at the head of the queue and a coloured rule on each row, so the count is a number instead of a reading exercise. Answered errands are kept rather than deleted, the same way a struck work-list item is."
     },
     {
       "n": 6,
       "what": "Name the control behind every null in the searched log",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The rule is that a `null` must name a control that **could have failed and did not**. About forty of the 249 rows predate that rule and carry no control at all. They are not necessarily wrong, but they currently look better-evidenced than they are, and marking them honestly is cheaper than re-running them all."
+      "note": "**Done, and the number is worse than I guessed.** Of 89 null and empty rows, **30 name a control and 59 do not** — I had estimated forty. Rather than invent controls for rows searched weeks ago, each now carries its state on the page: «control named» in grey, «no control stated» in red. An unstated control does not make a row wrong, it makes it untested, and the page now says so instead of letting them all look equally solid."
     },
     {
       "n": 7,
@@ -78,26 +78,26 @@
     {
       "n": 10,
       "what": "Gloucestershire Notes & Queries, and the Bristol and Gloucestershire Archaeological Society transactions",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Two antiquarian serials, both fully digitised and indexed by parish, both in the habit of printing exactly the sort of name Saniger of Awre and Blakeney is. The Society has published the Berkeley charters before, which is the same archive Jeayes calendared in 1892."
+      "note": "**Done, and it found an error in this archive rather than a new ancestor.** Gloucestershire Notes & Queries reviewed Maclean's 1902 edition of the 1608 muster — the edition /saniger-1608 is built from — and listed its misreadings, including «**Sainger should read Saniger**». The man living in the hamlet is **John Saniger of Saniger**, his name and his address the same word, and the muster holds **three** spellings in 1608, not four. Now [correction 31](/what-we-got-wrong/). Three further volumes gave a clean null against a Berkeley control. TBGAS remains: forty volumes are digitised and unread."
     },
     {
       "n": 11,
       "what": "Rudder and Bigland — the two standard Gloucestershire county histories",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Parish by parish, both free. Worth doing precisely because **a null in either is a real null**: they aimed at completeness for the county, so silence there means something, which is not true of a commercial index."
+      "note": "**Done, and the null was the finding.** Rudder (1779) does not name Saniger anywhere in 5.7 million characters — and his index *does* carry Wanswell, Hamfallow, Halmore and Alkington, so the control holds. At page 280 he gives the whole tithing as «Hamfallow, in which are Wanſwell… part of Halmore; and Hamfallow». **Smyth names it in 1639, Rudder omits it in 1779, Bigland names it in 1791** — and they put it in different tithings, which is what happens to a hamlet on a boundary. The same paragraph gave the **Thorps of Wanswell** a named tower at Berkeley Castle and carried the estate to 1525."
     },
     {
       "n": 12,
       "what": "FreeBMD again, this time with a control that can fail",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The last attempt let a capped result count stand as proof of coverage, which is the error the [corrections](/corrections/) now carry as number 30. This archive holds a registration that must be in FreeBMD if the quarter is loaded — **Lydia's, register 3 entry 265** — so the control is already in hand and takes one query."
+      "note": "**Done, and the control earned its keep twice over.** FreeBMD **silently refuses** a wide date range and redisplays its own form — indistinguishable from an empty result, and three searches were recorded as nought before the control showed they had never run. Charlotte Darcy, 1869, came back «Brighton 2b 152», matching what this archive already held. Narrowed to 1850–52, SANIGAR returns **John (Mar 1850, Thornbury 11/401), Lydia (Sep 1851, 11/329) and Mary Ann (Dec 1851, 11/369)** — the same three deaths this archive had from the *local* register, now with GRO references to order against."
     },
     {
       "n": 13,
@@ -110,10 +110,10 @@
     {
       "n": 14,
       "what": "The Gloucestershire Archives online catalogue, for Saniger and Swonhunger",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Catalogue descriptions are free and full-text even though the documents themselves need a visit. Knowing a document exists, and its reference, is most of an errand — and Gloucestershire Archives have already said in writing that they do not do lookups, so a reference is the only thing that makes a request actionable."
+      "note": "**Done, and the shape of the answer matters more than the count.** 127 unique records across six spellings, 33 at Gloucestershire Archives, 1601 to the 1990s. Seven new — and six of those seven are deeds in which **Saniger is the land, not the party**: Abevan, Hathway, Morse, Smith, Plomer and Vizard all holding «at Saniger». The catalogue independently confirms Bigland and Smyth: a hamlet far more people lived in than were named for."
     },
     {
       "n": 15,
@@ -230,10 +230,10 @@
     {
       "n": 29,
       "what": "The Manorial Documents Register for Awre, Blakeney and Berkeley",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Free, inside Discovery, and it says **where the court rolls for a given manor now are**. Manorial court rolls name tenants generation after generation and are the natural record for a family that held land of a lord rather than of the Crown — which, on Smyth's evidence, is exactly what the Swonhungers were."
+      "note": "**Done, and it found the best errand of the day.** The **Awre** court rolls survive almost unbroken and none of it is digitised: single surrenders of **1387**, 1439, 1573 and 1577/8; the rolls 1588–91; then 1671 and nearly continuous to **1881**. D3270/282 is explicitly «extracts relating to customary heir of a tenant dying», 1688–1777 and 1783–1810 — a named parent-to-child link every generation, across exactly the gap this archive cannot cross. Hamfallow and Hinton return nothing separate, and structurally cannot: they were parts of the manor of Ham, so their records are inside the Berkeley muniments."
     }
   ],
   "close": "**Twenty items are this archive's own and can start tonight** — four of them housekeeping on the registers themselves, sixteen of them books, catalogues and indexes that are free to open and need no account. **Four are waiting on you**, and three of those four cost nothing: the only money on this list is two certificates. One belongs to two other sessions. Two are struck, and both were caught the same way — by reading this archive against itself rather than by finding a new source."

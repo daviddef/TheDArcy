@@ -120,6 +120,26 @@ import d from "../data/swonhungre.json";
       {" "}<span class="chip doc">{d.smyth3.chip}</span></Note>
   </Blk>
 
+  <Blk label="Rudder 1779 · Bigland 1791" title={d.histories.head}>
+    <p class="lede">{d.histories.lede}</p>
+    <Scroll>
+      <table>
+        <thead><tr><th>Authority</th><th class="m">Verdict</th><th>What it says</th></tr></thead>
+        <tbody>{d.histories.rows.map(([who, v, what]) => (
+          <tr><td style="white-space:nowrap"><strong>{who}</strong></td>
+              <td class="m"><strong>{v}</strong></td>
+              <td class="small">{what}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      {d.histories.means} <span class="chip doc">{d.histories.chip}</span>
+    </Note>
+    <h3 style="margin-top:1.8rem">{d.histories.thorpHead}</h3>
+    <Note style="margin-top:.8rem"><strong>{d.histories.thorp}</strong>
+      {" "}<span class="chip doc">{d.histories.thorpChip}</span></Note>
+    <p style="margin-top:1.1rem">{d.histories.thorpMeans}</p>
+  </Blk>
+
   <section class="blk" style="border-bottom:0">
     <h2>{d.limits.head}</h2>
     <p class="lede" style="margin-top:1rem">{d.limits.body}</p>

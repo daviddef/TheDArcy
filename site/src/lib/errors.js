@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "15 September 2026",
+    what: "Published “Eleven men, four spellings” from the 1608 muster, and named the man living in the hamlet the surname came from JOHN SAINGER — the headline of the whole page, since his name and his address were nearly the same word.",
+    truth:
+      "There are three spellings, and his name is JOHN SANIGER — identical to his address. Gloucestershire Notes & Queries reviewed Maclean's 1902 edition as it appeared and listed its misreadings: “occasionally marred by errors which the editor, whose name is not indicated, ought not to have passed. Thus SAINGER SHOULD READ SANIGER, and probably seiuger is seivyer; the grotesque Grisseote Cliste should be Greffeote Clifte; Cidolls is probably a blunder for Eidolls; Jugley is probably Ingley; Poutinge is doubtless Pontinge; Slinchcombe should be Stinchcombe; and Stimbridge, Slimbridge.”",
+    why: "The page named its source honestly — “the searchable transcript used here was built from the 1902 edition” — and then treated that edition as the manuscript. A printed text is a reading of a document, not the document, and this one had a reviewer going through its errors within the year. I had searched for what the muster said and never asked what anybody thought of the book it was printed in.",
+    lesson:
+      "When an archive rests on one printed edition, the cheapest next source is not another archive — it is the review of that edition. Somebody with the manuscript in reach has usually already checked it. SAINGER is still a real form of this surname, attested 44 times in the Berkeley registers; it is simply not a 1608 one.",
+    href: "/saniger-1608",
+  },
+  {
+    when: "15 September 2026",
     what: "Ran the three Sussex sisters through FreeCEN, found nothing, and recorded it as a NULL — “control: SMITH in Sussex 1861 returns the display cap of 1,000, and the six Darcys are themselves enumerated in Brighton, so the county and the town are both covered”.",
     truth:
       "The county and the town are not the unit. FreeCEN's Sussex 1851 returns NOUGHT for the surname ARCY — and this archive has the three sisters in the 1851 Sussex census under exactly that surname, at HO107/1646 folio 357 page 59 schedule 172, 22 Western Cottages, Brighton. The piece is simply not in FreeCEN. Smith hits the 1,000-row display cap in 1851, 1861 and 1871 alike, which conceals the gap rather than measuring it.",

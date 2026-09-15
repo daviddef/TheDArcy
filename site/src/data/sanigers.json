@@ -980,5 +980,37 @@
    "chip": "matched on name and date, not on a document",
    "careful": "Every one of these joins is an inference. The index gives a surname, a forename, a year and a register reference, and nothing that proves the Catharine born in 1848 is the Catharine who died in 1849. In a district where the same dozen forenames repeat for a century, that is a real risk. They are set out because they say where to spend certificate money, not because they are established."
   }
+ },
+ "freebmd": {
+  "head": "The same three deaths, in the other index",
+  "lede": "The table above is the LOCAL register — the registrar's own book, register and entry number. FreeBMD indexes the GRO's quarterly volumes instead, which is a different index of the same events. Searched on 15 September, it carries all three of the Thornbury deaths this archive cares about, and gives the reference a GRO certificate is ordered against.",
+  "rows": [
+   [
+    "JOHN SANIGAR",
+    "March quarter 1850",
+    "Thornbury",
+    "vol 11, page 401",
+    "local register 3, entry 146"
+   ],
+   [
+    "LYDIA SANIGAR",
+    "September quarter 1851",
+    "Thornbury",
+    "vol 11, page 329",
+    "local register 3, entry 265"
+   ],
+   [
+    "MARY ANN SANIGAR",
+    "December quarter 1851",
+    "Thornbury",
+    "vol 11, page 369",
+    "local register 3, entry 282"
+   ]
+  ],
+  "means": "Two indexes, built from different books by different people, agree on three deaths in the same district within twenty-one months. The pairing of local entry to GRO volume is an IDENTIFICATION — same name, same district, same year — not a proven match, because neither index names a parent, an age or an address. What it does settle is that Lydia can now be ordered from the GRO as well as from Gloucester.",
+  "chip": "documented",
+  "controlHead": "And the control that made the null meaningful",
+  "control": "FreeBMD's first three answers here were NOUGHT, and all three were false. A search across 1837–1875 returns nothing at all — the form silently refuses a range that wide and redisplays itself, which looks exactly like an empty result. The control was CHARLOTTE DARCY, whose death this archive already holds from the GRO index: searched for 1869 alone she comes back «Darcy Charlotte 73 Brighton 2b 152», the reference this site already carried. Narrowing the Sanigar search to three years then produced all three deaths at once.",
+  "controlChip": "lore"
  }
 }

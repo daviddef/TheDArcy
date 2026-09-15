@@ -92,6 +92,18 @@ import d from "../data/saniger-1608.json";
       {" "}<span class="chip lore">{d.traps.chip}</span></Note>
   </Blk>
 
+  <Blk label="Gloucestershire Notes & Queries" title={d.misprint.head}>
+    <p class="lede">{d.misprint.lede}</p>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      <strong>{d.misprint.quote}</strong>
+      <span class="chip doc">{d.misprint.chip}</span>
+    </Note>
+    <p class="small" style="margin-top:.8rem;color:var(--ink-3)">{d.misprint.src}</p>
+    <p style="margin-top:1.2rem">{d.misprint.means}</p>
+    <Note style="margin-top:1.2rem"><strong>{d.misprint.careHead}.</strong> {d.misprint.care}</Note>
+    <p class="small" style="margin-top:1rem"><a href={u("/what-we-got-wrong/")}>This is correction 31 →</a></p>
+  </Blk>
+
   <section class="blk" style="border-bottom:0">
     <h2>What this changes</h2>
     <ol class="dek" style="margin-top:1rem">

@@ -18,6 +18,11 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
 
   <section class="blk">
     <p class="lede">{d.note}</p>
+    <Note style="border-left-width:3px">
+      <strong>And every null carries the control that could have disproved it — or admits it has none.</strong>
+      <span set:html={d.ctlNote.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\[([^\]]+)\]\((\/[^)]*)\)/g, (_, t, h) => `<a href="${u(h)}">${t}</a>`)} />
+    </Note>
     <Note>
       <strong>A null result is not a failure, and it is not the same as a gap.</strong> There are
       four outcomes on this page and they mean different things.
@@ -51,7 +56,12 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
           <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
             <div><strong>{r.src}</strong>
               <span class={`chip ${CHIP[r.outcome][0]}`} style="margin-left:.5rem">{CHIP[r.outcome][1]}</span>
-              <span class="small" style="margin-left:.5rem;color:var(--ink-3)">{r.when}</span></div>
+              <span class="small" style="margin-left:.5rem;color:var(--ink-3)">{r.when}</span>
+              {r.ctl && (
+                <span class="small mono"
+                      style={`margin-left:.5rem;color:${r.ctl === "named" ? "var(--ink-3)" : "#B04A16"}`}
+                      title="A null is only as good as the test that could have disproved it">
+                  {d.ctlLabels[r.ctl]}</span>)}</div>
             <p class="small" style="margin-top:.35rem;color:var(--ink-2)"><em>Searched:</em> {r.what}</p>
             <p class="small" style="margin-top:.35rem">{r.got}
               {r.href && <> <a href={u(r.href)}>→</a></>}</p>

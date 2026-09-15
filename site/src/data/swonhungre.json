@@ -190,5 +190,32 @@
   ],
   "means": "The archive had Smyth's one famous sentence. What it did not have was that Smyth says the same thing three more times in passing, in the flat language of an estate survey rather than the language of an antiquary correcting a vulgar error — and that he names a property, Oldminster, which can be followed from his survey into a deed of the 1690s.",
   "chip": "documented"
+ },
+ "histories": {
+  "head": "The two county histories disagree, twelve years apart",
+  "lede": "Rudder's New History of Gloucestershire (1779) and Bigland's Collections (1791) are the standard printed authorities for every parish in the county. Both aimed at completeness, which is what makes a silence in either worth reading.",
+  "rows": [
+   [
+    "Smyth, about 1639",
+    "NAMES IT",
+    "«the hambletts of Wike ats Wikes-elme, Wanefwell, SWONHUNGER ATS SANIGER, Halmer ats Ecton, and Egeton»"
+   ],
+   [
+    "Rudder, 1779",
+    "OMITS IT",
+    "«6. Hamfallow, in which are Wanſwell, Wanniſwell, or Wanſel; part of Halmore; and Hamfallow.» That is the whole tithing as Rudder gives it, at page 280. Saniger is absent — and so is it from his index, which does carry «Wanfwell in Berkeley 280», Hamfallow, Halmore and Alkington."
+   ],
+   [
+    "Bigland, 1791",
+    "NAMES IT",
+    "«4. Hinton, wherein are Wanswell, a reputed Manor … SANIGER, LONG HELD BY AN OLD FAMILY OF THE SAME NAME»"
+   ]
+  ],
+  "means": "The disagreement is not about whether the place existed — the deeds settle that from the 1270s — but about which tithing it belonged to and whether it was worth listing. Bigland puts Saniger under HINTON; Smyth put Swonhunger under HAMFALLOW. Rudder, working twelve years before Bigland, lists neither. A hamlet that sat on the boundary of two tithings is exactly the kind of place a topographer drops.",
+  "chip": "documented",
+  "thorpHead": "And Rudder gives the Thorps a tower",
+  "thorp": "Smyth's pedigree ends with the main line failing in 1401 and the estate passing through Isabel Swonhunger to JOHN THORPE OF BRISTOL. Rudder, describing Wanswell in the same paragraph that omits Saniger, says: «THORP OF WANSWELL held his lands to guard a tower in Berkeley-caſtle, called THORP'S-TOWER, which was built in the reign of king Edward the Third. Thomas Thorp died ſeized of the manor of Wanſwell, 17 H. 8. Thomas his ſon had livery thereof 29 H. 8.»",
+  "thorpMeans": "The family that inherited the Swonhunger lands held them by castle-guard — a named tower in Berkeley Castle — and were still seised of Wanswell in 1525. That is a hundred and twenty-five years of the estate's descent after the point Smyth's pedigree hands it over, from a book this archive had not opened.",
+  "thorpChip": "documented"
  }
 }
