@@ -60,7 +60,12 @@
   "quote": "Thomas de Swonhungre, son of Thomas de Esshelesworth",
   "body": "The father is named from one place and the son from another. Four and a half acres in the field called Alilonde pass to Henry le Grout of Berkeley for a penny a year, a pound of cumin, and seven marks down.",
   "means": "This is what a locative surname looks like before it is a surname. The son is not called Swonhungre because his father was; he is called it because he lives there. A generation later the name is heritable, and by 1356 it is being inspected in charters as a family name.",
-  "chip": "documented"
+  "chip": "documented",
+  "ashHead": "And where the father came from",
+  "ash": "Esshelesworth is **ASHLEWORTH**, a Gloucestershire parish on the Severn north of Gloucester — Domesday's *Escelesworde*. And the Berkeley deeds have the transaction that made the surname. **BCM/A/1/24/67**, late Henry III and so before 1272: «Maurice de Berkel' and THOMAS DE ASSHELWORTH. Maurice has granted to Thomas **7 acres of land in the MANOR OF HAMME**, next to the road between the new ditch and Bradeflet; rent 2s. 11d. a year, and Thomas has given him one bezant.» The manor of Ham contains the hamlet of Swonhungre.",
+  "ashMeans": "A man from Ashleworth buys into Ham in the 1260s. In the next reign his son is **Thomas de Swonhungre, son of Thomas de Esshelesworth** — named not from his father's place but from his own. Two deeds, a generation apart, and between them the whole mechanism by which this surname exists. The witnesses to the 1260s grant include **Peter de Wika and Thomas de Wike** — the family whose inheritance Alice de Swonhongre would share eighty years later.",
+  "ashChip": "inferred",
+  "ashCare": "Graded INFERRED, not documented. The two deeds name a Thomas de Asshelworth and a Thomas de Esshelesworth; nothing in either says they are the same man, and the identification rests on the name, the place, the manor and the generation lining up. That is a strong case and it is still a case."
  },
  "identity": {
   "head": "Saniger and Swonhungre, in the same sentence, in 1322",
@@ -487,5 +492,54 @@
   ],
   "fieldHead": "And the field names run all the way through",
   "field": "WYNTMELLEFELD and OLDEFISCHWERE are granted in about 1304. Fourteen acres «in Wyndmullefeld» are excepted from the sisters' settlement of 1329. Cooke, reading the same deed in 1882, calls them «a field called Windmill field, a pasture ground called Old Fish-weir». One field and one weir, named identically across five hundred and eighty years of documents — and the weir is on the Severn, which is the fishery the 1353 partition refused to divide."
+ },
+ "cookefull": {
+  "head": "Reading Cooke entire, and what it does to his 1774 sentence",
+  "lede": "The article was read in fragments on 15 September and entire the same day. Nine pages on one estate, and the parts nobody here had read change how much weight the famous sentence can carry.",
+  "srcHead": "He says where he got it",
+  "src": "«William Thorpe his son inherited Wanswell, and married URSULA second daughter of JOHN SMYTH, OF NIBLEY, the antiquary and steward of the Berkeley Castle Manors, TO WHOSE MS. HISTORY OF THE HUNDRED OF BERKELEY, STILL PRESERVED AT THE CASTLE, I AM INDEBTED FOR MOST OF THE FOREGOING PARTICULARS.»",
+  "srcMeans": "Two things follow. The medieval descent Cooke gives is **Smyth's**, not independent of him — so where this archive has been treating Cooke as a second witness to Smyth, it has partly been hearing Smyth twice. And Smyth died in 1641, **so the 1774 sale cannot have come from him.** That statement rests on something else: most likely the Wanswell title deeds, which Cooke cites elsewhere («the settlement made on this marriage dated 23rd September, 1636, which is still among the title deeds of the estate»), or the Lysons pamphlet below. The footnote marker printed after «1774» survives in the scan; the note itself does not.",
+  "srcChip": "documented",
+  "estateHead": "And the estate's own descent, which is not the hamlet's",
+  "estate": [
+   [
+    "1402",
+    "Isabel Swonhunger marries JOHN THORPE, a burgess of Bristol — «the first of a family of whom ten successive generations possessed Wanswell… for nearly three centuries»"
+   ],
+   [
+    "1441–1469",
+    "John Thorpe dies 1441; his son adds land in Lorrenge, Walgaston, Halmer and Berkeley in 1456, probably builds the present house, and dies 1469 with the estate valued at 14 marks"
+   ],
+   [
+    "1512",
+    "Thomas Thorpe is Receiver to Maurice, 14th lord Berkeley, and serves under him in Spain"
+   ],
+   [
+    "1558",
+    "Nicholas Thorpe sues out his livery at 21; the manor is valued at £14 7s. 8d., «an increase of about one-third in a century»"
+   ],
+   [
+    "before 1638",
+    "GEORGE THORPE «sold off much outlying property» — including, by name, «some outlying land AT SANIGER, part of the manor of Wanswell», bought by William Jones, Esq., of Nasse near Lydney — and went to Virginia"
+   ],
+   [
+    "1636",
+    "William Thorpe marries Ursula Smyth; the settlement «is still among the title deeds of the estate»"
+   ],
+   [
+    "1672",
+    "George Thorpe sells Wanswell, then 340 acres, to DANIEL LYSONS of Gloucester for £3,500, with mortgages of nearly £1,800 also paid off"
+   ],
+   [
+    "1818",
+    "The Rev. Daniel Lysons sells it to Colonel Berkeley, afterwards EARL FITZHARDINGE — 348 acres 3 roods 11 perches, £25,769, «a more than four-fold increase in value in a century and a half». «It has ever since formed an integral portion of the Berkeley Castle estate.»"
+   ]
+  ],
+  "estateMeans": "This is the answer to a question this archive had asked badly. **Saniger Farm and the manor of Wanswell are not the same property.** Wanswell went Thorpe → Lysons → Berkeley, and reached the Earl in 1818. Saniger was OUTLYING LAND of that manor, being sold off in parcels from George Thorpe's time — one parcel to William Jones of Nasse before 1638. So Cooke's «sold by Edward Saniger to the Earl of Berkeley in 1774» is a separate, smaller transaction, and it is the more plausible for it: a farm in family hands while the manor around it changed owners three times.",
+  "estateChip": "documented",
+  "leadHead": "And a source nobody here had heard of",
+  "lead": "«In his BRIEF HISTORICAL ACCOUNT OF THE MANOR OF WANSWELL (a quarto pamphlet of 6 pages, published in 1817, now very scarce), the Rev. D. Lysons says the purchase money was £3500…» — written by the family that owned the estate, a year before they sold it, and quoting the abstract of title.",
+  "careHead": "One date to distrust",
+  "care": "Cooke has George Thorpe going to Virginia «where he died in 1662». The George Thorpe of the Virginia Company was killed in the massacre of 1622, and a Thorpe who sold Wanswell in 1672 cannot be a man who died in 1662 — the text gives that sale to his son, also George. **1662 is probably a misprint or a misreading of 1622**, and this archive is not going to repeat it as a date."
  }
 }

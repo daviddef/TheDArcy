@@ -349,8 +349,8 @@
    "where": "any search returning a large number",
    "holds": "up to 500 rows, and says so",
    "span": "—",
-   "verdict": "unusable as a control",
-   "note": "FreeREG stops counting at 500. Any control reported as “more than 500” is a ceiling, not a measurement: it reads identically whether a county is half transcribed or whole. Two nulls in this archive were justified that way and have been re-controlled — at PARISH level, with a surname whose count comes in UNDER the cap. Ruabon returns 500 Joneses and 39 Smiths for 1780–1830; the 39 is the number that means something.",
+   "verdict": "unusable",
+   "note": "FreeREG stops counting at 500. Any control reported as “more than 500” is a ceiling, not a measurement: it reads identically whether a county is half transcribed or whole. Two nulls in this archive were justified that way and have been re-controlled — at PARISH level, with a surname whose count comes in UNDER the cap. Ruabon returns 500 Joneses and 39 Smiths for 1780–1830; the 39 is the number that means something. (Recorded as UNUSABLE: it is unusable specifically as a control.)",
    "href": "/searched"
   },
   {
@@ -461,5 +461,32 @@
    "note": "Catalogued individually and described as «Assessment (individuals)», so the names are known to be there. NOT DIGITISED and no free published edition exists. For BLEDISLOE — Awre and Blakeney — this matters more than anywhere else: that hundred has no FreeREG coverage, no surviving Protestation return and no surviving 1381 poll tax membrane.",
    "href": "/errands"
   }
- ]
+ ],
+ "verdicts": {
+  "good": [
+   "covers it",
+   "doc",
+   "the source holds this class of record for this place and period"
+  ],
+  "partial": [
+   "partly",
+   "inf",
+   "it covers some of it — a window, a parish, a subset"
+  ],
+  "absent": [
+   "holds nothing",
+   "sup",
+   "examined, and it does not hold this at all"
+  ],
+  "unusable": [
+   "cannot answer",
+   "lore",
+   "it exists but cannot settle the question — a cap, a fragment, an index that lies about its own emptiness"
+  ],
+  "blocked": [
+   "not asked",
+   "dis",
+   "reachable only behind an account or a bot check this archive will not pass. NOT the same as «cannot answer»: nobody has asked it"
+  ]
+ }
 }

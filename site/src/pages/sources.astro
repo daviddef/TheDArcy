@@ -51,7 +51,10 @@ const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
         </tbody>
       </table>
     </Scroll>
-    <Note style="margin-top:1.2rem">{printed.note}</Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{printed.rows.length} sources, and not one of them cost anything.</strong>
+      {printed.note}
+    </Note>
   </section>
 
   <section class="blk">

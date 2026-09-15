@@ -40,6 +40,32 @@ def key(r):
     return f"{r.get('src','')}||{r.get('when','')}"
 
 
+COVERAGE = os.path.join(HERE, "..", "site", "src", "data", "coverage.json")
+
+
+def check_verdicts():
+    """A coverage verdict outside the declared vocabulary renders as its opposite.
+
+    /coverage used to render its verdict through a fallthrough chain: good,
+    partial, absent, and everything else "cannot answer". So BLOCKED — a source
+    nobody has asked, because it wants an account this archive will not make —
+    displayed as a source that had been asked and could not answer. And one row
+    carried the freehand verdict "unusable as a control", which fell through the
+    same way. Both were found on 15 September 2026 by reading the template.
+    """
+    j = json.load(open(COVERAGE, encoding="utf-8"))
+    vocab = j.get("verdicts") or {}
+    if not vocab:
+        return ["coverage.json declares no `verdicts` vocabulary to check against"]
+    bad = []
+    for r in j.get("rows", []):
+        v = r.get("verdict")
+        if v not in vocab:
+            bad.append(f"coverage row {r.get('db','?')[:44]!r} has verdict {v!r} — "
+                       f"not one of " + ", ".join(sorted(vocab)))
+    return bad
+
+
 def main(argv):
     base = set()
     if os.path.exists(BASELINE):
@@ -73,11 +99,17 @@ def main(argv):
     for r, why in bad:
         print(f"  FAIL  controls   {r.get('src','?')[:70]}")
         print(f"          {why}")
-    if bad:
-        print(f"  FAIL  controls   {len(bad)} row(s) fail the control rule")
+    vbad = check_verdicts()
+    for m in vbad:
+        print(f"  FAIL  verdicts   {m}")
+
+    if bad or vbad:
+        print(f"  FAIL  controls   {len(bad) + len(vbad)} row(s) fail the control rule")
         return 1
     print(f"  ok    controls   {named} null(s) name a control, "
           f"{grand} grandfathered from before the rule")
+    nv = len(json.load(open(COVERAGE, encoding="utf-8")).get("verdicts") or {})
+    print(f"  ok    verdicts   every coverage row uses one of the {nv} declared verdicts")
     return 0
 
 

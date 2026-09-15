@@ -99,6 +99,13 @@ NEAR = 70           # characters either side — tight on purpose, see SKIP belo
 SKIP = re.compile(r"^(/people|/who|/register|/families|/searched|/changes|/atlas|"
                   r"/graves|/marriages|/households|/timeline|/direct-line|/spine|"
                   r"/crossread|/worklist|/open-questions|/coverage|/errands|"
+                  # Surname aggregation pages. /sneyd lists every Sneyd in the
+                  # archive, so a proximity test reads four men born in four
+                  # places as one man born in four places — and it puts KEELE,
+                  # the seat of the Staffordshire gentry Sneyds, beside a
+                  # Hanley grocer. Found 15 September 2026 by reading the place
+                  # half of this tool's own output for the first time.
+                  r"/sneyd|/tree|/atkinson|/murdoch|"
                   r"/what-we-got-wrong|/corrections|/index|/$)|"
                   r"mentions\.json|register\.json|"
                   r"families\.json|households\.json|ancestors\.json|line\.json|"

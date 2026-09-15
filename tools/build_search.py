@@ -37,7 +37,13 @@ ALIASES = [
      "siniger", "sanninger", "sanyger", "syniger", "sannigar", "sanniger",
      "sanegar", "saneger", "sannegar", "sanger", "sineger",
      "swanhanger", "swanhangar", "swonhunger", "swonhungre", "swonhongre",
-     "swannanger", "swonhanger"],
+     "swannanger", "swonhanger",
+     # Added 15 September 2026. All three are attested in documents read that
+     # day, and the absence of SWANHUNGER cost real work: a sweep of TBGAS
+     # volume 6 returned nought and was nearly set aside, because J. H. Cooke
+     # spells it Swanhunger throughout — and volume 6 is the article that
+     # joins the medieval family to the later one.
+     "swanhunger", "swonhangre", "swanhangre"],
     ["mulcahy", "mulchy", "mulchay", "mulcahey", "mulcahy"],
     ["blum", "blume", "bloom"],
     ["murdoch", "murdock", "murdo"],

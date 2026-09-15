@@ -84,10 +84,10 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
               <td><strong>{r.where}</strong><div class="small">{r.note} <a href={u(r.href)}>→</a></div></td>
               <td class="small">{r.holds}</td>
               <td class="m">{r.span}</td>
-              <td>{r.verdict === "good" ? <span class="chip doc">covers it</span>
-                 : r.verdict === "partial" ? <span class="chip inf">partly</span>
-                 : r.verdict === "absent" ? <span class="chip sup">holds nothing</span>
-                 : <span class="chip lore">cannot answer</span>}</td>
+              <td>{cov.verdicts[r.verdict]
+                 ? <span class={`chip ${cov.verdicts[r.verdict][1]}`}
+                         title={cov.verdicts[r.verdict][2]}>{cov.verdicts[r.verdict][0]}</span>
+                 : <span class="chip dis">{r.verdict}</span>}</td>
             </tr>
           ))}
         </tbody>

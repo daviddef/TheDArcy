@@ -1,36 +1,111 @@
 {
-  "head": "Printed and catalogued sources this archive has actually opened",
-  "lede": "Record sets above are databases. These are books and catalogues — every one free, out of copyright or open without an account, every one read rather than cited. They are listed here because until 15 September 2026 each of them lived only on the one or two pages that happened to use it.",
-  "cols": ["Source", "Edition read", "Where", "What it gave this archive"],
-  "rows": [
-    ["Whitworth Porter, History of the Corps of Royal Engineers, vol. 1", "1889", "Internet Archive, full text",
-     "Lieutenant Robert D'Arcy at the siege of Fort St Philip's, Minorca, 1781; «Robert D'Arcy, Barbados» in a station list; Commanding Engineer at Copenhagen 1807; Commanding Royal Engineer at Walcheren 1809 and the arrest at Flushing.", "/the-corps"],
-    ["Porter, vol. 2", "1889", "Internet Archive, full text",
-     "NOTHING, and the null is controlled: the volume mentions the Peninsula 48 times, Waterloo 11 and the Crimea 43. It is the post-1815 volume and his service ended about 1809.", "/the-corps"],
-    ["The printed Army Lists", "1778 · 1781 · 1783 · 1802 · 1803 · 1821", "Internet Archive, full text",
-     "The seniority chain that settles 17 JANUARY 1776 in three separate editions; Second Lieutenant in 1783, Captain of the Royal Engineers by 1802, Major in the army by 1803; and «D'Arcy, Lt. Col. Joseph, Royal Art.» in 1821. Also the spelling ROBERT D'ARCEY, which is why outside catalogues had never returned him.", "/the-corps"],
-    ["The Royal Military Calendar", "1820", "Internet Archive, full text",
-     "All three D'Arcys in one place, 17 January 1776 confirmed, and the Persia service moved from inferred to documented.", "/joseph-darcy"],
-    ["Connolly's Roll of Officers of the Corps of Royal Engineers", "1660–1898", "printed roll",
-     "Entry 203, the full career and «Died at Chatham, 13 5 1827». Only two D'Arcys in the whole Roll. It carries no parentage — the Roll does not record fathers.", "/the-corps"],
-    ["The London Gazette", "1665 onwards", "thegazette.co.uk, free, no account",
-     "A structural silence about 1776, and one exact date: by warrant of 23 April 1787, issue 12850 page 197, the Corps of Engineers became the Corps of ROYAL Engineers.", "/the-corps"],
-    ["John Smyth of Nibley, A Description of the Hundred of Berkeley", "written c. 1639, printed 1885 as vol. 3 of The Berkeley Manuscripts", "Internet Archive, full text",
-     "«Swonhunger; corruptly called Saniger», and three further and flatter alias statements in the language of an estate survey; the hamlets of Hamfallow; and the freehold called OLDMINSTER with its own tithe barn, which reappears in a deed of 1690–1741.", "/swonhungre"],
-    ["Smyth, The Lives of the Berkeleys", "vols. 1–2", "Internet Archive, full text",
-     "The Swonhunger pedigree, six generations to the failure of the main line in 1401 and the estate's passage to Thorpe.", "/saniger-place"],
-    ["Isaac Herbert Jeayes, Descriptive Catalogue of the Charters and Muniments at Berkeley Castle", "1892", "Internet Archive, full text",
-     "The Berkeley charters itemised — including a fishery reserved on Wednesdays and Fridays.", "/saniger-place"],
-    ["Samuel Rudder, A New History of Gloucestershire", "1779", "Internet Archive, full text",
-     "A controlled null — the hamlet is absent from 5.7 million characters while Wanswell, Hamfallow, Halmore and Alkington are all in his index — and the Thorps of Wanswell holding by castle-guard at a named tower, carried to 1525.", "/swonhungre"],
-    ["Ralph Bigland, Historical, Monumental and Genealogical Collections relative to the County of Gloucester", "1791", "Internet Archive, full text",
-     "«Saniger, long held by an old Family of the same Name»; the Berkeley monuments; and Edward Saniger among the freeholders of Hinton.", "/saniger-place"],
-    ["John Smyth, Men and Armour for Gloucestershire in 1608", "Maclean's edition, 1902", "coaley.net transcript",
-     "Eleven men of the surname, with trade, age and stature — and a printer's error this archive published for a day. See the next row.", "/saniger-1608"],
-    ["Gloucestershire Notes and Queries", "the digitised volumes", "Internet Archive, full text",
-     "The contemporary review of that 1902 edition, listing its misreadings: «Thus SAINGER SHOULD READ SANIGER.» Three spellings in 1608, not four. Correction 31.", "/saniger-1608"],
-    ["The National Archives' Discovery catalogue", "live", "discovery.nationalarchives.gov.uk, free, no account",
-     "195 records under the medieval spellings of the surname against 71 under the modern one; the Berkeley Castle Muniments calendared item by item; the Awre manor court rolls, 1387 to 1881; the E 179 hearth taxes; and the Protestation Returns series, from which Gloucestershire is missing.", "/swonhungre"]
+ "head": "Printed and catalogued sources this archive has actually opened",
+ "lede": "Record sets above are databases. These are books and catalogues — every one free, out of copyright or open without an account, every one read rather than cited. They are listed here because until 15 September 2026 each of them lived only on the one or two pages that happened to use it.",
+ "cols": [
+  "Source",
+  "Edition read",
+  "Where",
+  "What it gave this archive"
+ ],
+ "rows": [
+  [
+   "Whitworth Porter, History of the Corps of Royal Engineers, vol. 1",
+   "1889",
+   "Internet Archive, full text",
+   "Lieutenant Robert D'Arcy at the siege of Fort St Philip's, Minorca, 1781; «Robert D'Arcy, Barbados» in a station list; Commanding Engineer at Copenhagen 1807; Commanding Royal Engineer at Walcheren 1809 and the arrest at Flushing.",
+   "/the-corps"
   ],
-  "note": "Fourteen sources, and not one of them cost anything. Two are on this list for what they did NOT contain, because a controlled null is a result — and one is here for an error it found in this archive rather than a fact it gave."
+  [
+   "Porter, vol. 2",
+   "1889",
+   "Internet Archive, full text",
+   "NOTHING, and the null is controlled: the volume mentions the Peninsula 48 times, Waterloo 11 and the Crimea 43. It is the post-1815 volume and his service ended about 1809.",
+   "/the-corps"
+  ],
+  [
+   "The printed Army Lists",
+   "1778 · 1781 · 1783 · 1802 · 1803 · 1821",
+   "Internet Archive, full text",
+   "The seniority chain that settles 17 JANUARY 1776 in three separate editions; Second Lieutenant in 1783, Captain of the Royal Engineers by 1802, Major in the army by 1803; and «D'Arcy, Lt. Col. Joseph, Royal Art.» in 1821. Also the spelling ROBERT D'ARCEY, which is why outside catalogues had never returned him.",
+   "/the-corps"
+  ],
+  [
+   "The Royal Military Calendar",
+   "1820",
+   "Internet Archive, full text",
+   "All three D'Arcys in one place, 17 January 1776 confirmed, and the Persia service moved from inferred to documented.",
+   "/joseph-darcy"
+  ],
+  [
+   "Connolly's Roll of Officers of the Corps of Royal Engineers",
+   "1660–1898",
+   "printed roll",
+   "Entry 203, the full career and «Died at Chatham, 13 5 1827». Only two D'Arcys in the whole Roll. It carries no parentage — the Roll does not record fathers.",
+   "/the-corps"
+  ],
+  [
+   "The London Gazette",
+   "1665 onwards",
+   "thegazette.co.uk, free, no account",
+   "A structural silence about 1776, and one exact date: by warrant of 23 April 1787, issue 12850 page 197, the Corps of Engineers became the Corps of ROYAL Engineers.",
+   "/the-corps"
+  ],
+  [
+   "John Smyth of Nibley, A Description of the Hundred of Berkeley",
+   "written c. 1639, printed 1885 as vol. 3 of The Berkeley Manuscripts",
+   "Internet Archive, full text",
+   "«Swonhunger; corruptly called Saniger», and three further and flatter alias statements in the language of an estate survey; the hamlets of Hamfallow; and the freehold called OLDMINSTER with its own tithe barn, which reappears in a deed of 1690–1741.",
+   "/swonhungre"
+  ],
+  [
+   "Smyth, The Lives of the Berkeleys",
+   "vols. 1–2",
+   "Internet Archive, full text",
+   "The Swonhunger pedigree, six generations to the failure of the main line in 1401 and the estate's passage to Thorpe.",
+   "/saniger-place"
+  ],
+  [
+   "Isaac Herbert Jeayes, Descriptive Catalogue of the Charters and Muniments at Berkeley Castle",
+   "1892",
+   "Internet Archive, full text",
+   "The Berkeley charters itemised — including a fishery reserved on Wednesdays and Fridays.",
+   "/saniger-place"
+  ],
+  [
+   "Samuel Rudder, A New History of Gloucestershire",
+   "1779",
+   "Internet Archive, full text",
+   "A controlled null — the hamlet is absent from 5.7 million characters while Wanswell, Hamfallow, Halmore and Alkington are all in his index — and the Thorps of Wanswell holding by castle-guard at a named tower, carried to 1525.",
+   "/swonhungre"
+  ],
+  [
+   "Ralph Bigland, Historical, Monumental and Genealogical Collections relative to the County of Gloucester",
+   "1791",
+   "Internet Archive, full text",
+   "«Saniger, long held by an old Family of the same Name»; the Berkeley monuments; and Edward Saniger among the freeholders of Hinton.",
+   "/saniger-place"
+  ],
+  [
+   "John Smyth, Men and Armour for Gloucestershire in 1608",
+   "Maclean's edition, 1902",
+   "coaley.net transcript",
+   "Eleven men of the surname, with trade, age and stature — and a printer's error this archive published for a day. See the next row.",
+   "/saniger-1608"
+  ],
+  [
+   "Gloucestershire Notes and Queries",
+   "the digitised volumes",
+   "Internet Archive, full text",
+   "The contemporary review of that 1902 edition, listing its misreadings: «Thus SAINGER SHOULD READ SANIGER.» Three spellings in 1608, not four. Correction 31.",
+   "/saniger-1608"
+  ],
+  [
+   "The National Archives' Discovery catalogue",
+   "live",
+   "discovery.nationalarchives.gov.uk, free, no account",
+   "195 records under the medieval spellings of the surname against 71 under the modern one; the Berkeley Castle Muniments calendared item by item; the Awre manor court rolls, 1387 to 1881; the E 179 hearth taxes; and the Protestation Returns series, from which Gloucestershire is missing.",
+   "/swonhungre"
+  ]
+ ],
+ "note": "Two are listed for what they did NOT contain, because a controlled null is a result — and one is here for an error it found in this archive rather than a fact it gave. The count above is computed from this table, not typed: a typed number is wrong the moment the table grows, which is why [/about](/about/)'s figures were made computed on 14 September."
 }

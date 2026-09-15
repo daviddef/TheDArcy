@@ -34,6 +34,13 @@ import d from "../data/swonhungre.json";
     </Note>
     <p style="margin-top:1.1rem">{d.formation.body}</p>
     <Note style="margin-top:1.2rem">{d.formation.means}</Note>
+
+    <h3 style="margin-top:1.8rem">{d.formation.ashHead}</h3>
+    <Note style="border-left-width:3px;margin-top:.8rem">
+      <strong>{d.formation.ash}</strong> <span class="chip inf">{d.formation.ashChip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.formation.ashMeans}</p>
+    <Note style="margin-top:1.1rem"><strong>And what it is not.</strong> {d.formation.ashCare}</Note>
   </Blk>
 
   <Blk label={d.identity.ref} title={d.identity.head}>
@@ -169,6 +176,31 @@ import d from "../data/swonhungre.json";
     </Scroll>
     <Note style="margin-top:1.3rem">{d.smyth3.means}
       {" "}<span class="chip doc">{d.smyth3.chip}</span></Note>
+  </Blk>
+
+  <Blk label="TBGAS vol. VI, read entire" title={d.cookefull.head}>
+    <p class="lede">{d.cookefull.lede}</p>
+
+    <h3 style="margin-top:1.7rem">{d.cookefull.srcHead}</h3>
+    <Note style="border-left-width:3px;margin-top:.8rem">
+      <strong>{d.cookefull.src}</strong> <span class="chip doc">{d.cookefull.srcChip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.cookefull.srcMeans}</p>
+
+    <h3 style="margin-top:1.9rem">{d.cookefull.estateHead}</h3>
+    <Scroll>
+      <table style="margin-top:.8rem">
+        <tbody>{d.cookefull.estate.map(([w, t]) => (
+          <tr><td class="m" style="white-space:nowrap;vertical-align:top"><strong>{w}</strong></td>
+              <td class="small">{t}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      {d.cookefull.estateMeans} <span class="chip doc">{d.cookefull.estateChip}</span>
+    </Note>
+
+    <Note style="margin-top:1.2rem"><strong>{d.cookefull.leadHead}.</strong> {d.cookefull.lead}</Note>
+    <Note style="margin-top:1.2rem"><strong>{d.cookefull.careHead}.</strong> {d.cookefull.care}</Note>
   </Blk>
 
   <Blk label="BCM/A/1/24/189–190" title={d.stones.head}>

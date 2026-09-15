@@ -342,10 +342,10 @@
     {
       "n": 40,
       "what": "Follow the Thorps, who took the estate in 1401",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Rudder gives them a named tower at Berkeley Castle and carries them to 1525; Smyth says the estate stayed in the name for two hundred years until George Thorpe, «his improvident…». The Thorps are the thread between the medieval hamlet and the Berkeley estate deeds of 1601 onwards, and following them is the cheapest test of whether the two Saniger groups are one family or two."
+      "note": "**Done.** Cooke gives ten generations: John Thorpe of Bristol (d. 1441) → John (bought Lorrenge, Walgaston, Halmer and Berkeley land in 1456, probably built the present house, d. 1469) → Richard m. Margaret Loffe → Thomas, Receiver to the 14th lord Berkeley, in Spain 1512 → Thomas m. Margaret Throckmorton d. 1542 → Nicholas, livery 1558, manor valued £14 7s. 8d. → George, Gentleman Pensioner, sold outlying land and went to Virginia → William m. **Ursula Smyth**, daughter of the antiquary, 1636 → George, who sold up in 1672. Their tenure is why Berkeley Castle has a Thorpe's Tower."
     },
     {
       "n": 41,
@@ -449,10 +449,10 @@
     {
       "n": 53,
       "what": "Say on /method what a calendar is",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Everything published on 15 September rests on **modern archivists' calendars of medieval deeds**, not on the deeds. The pages say so individually. The method page does not yet name this as a grade of evidence, and it sits somewhere between `documented` and `inferred`: a competent reading by somebody who had the original, which is excellent, and is still not the document."
+      "note": "**Done.** [/method](/method/) now has a section on what a **calendar** is: a summary of a deed made by an archivist who had the parchment, which is what nearly all this archive's medieval evidence actually is. It is graded `documented`, and the reason is given — a competent reading from the original is not a conclusion — along with what it is not, illustrated by the one case already in hand: **Berkeley Castle dates BCM/A/1/24/173 to the fifteenth century and the printed translation of the same transaction dates it 1329**, two hundred years apart."
     },
     {
       "n": 54,
@@ -477,26 +477,26 @@
     {
       "n": 56,
       "what": "Add the three attested spellings missing from this site's own alias list",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**SWANHUNGER, SWONHANGRE and SWANHANGRE** are all attested in documents read this week and none of them is in `build_search.py`. This is not theoretical: my own sweep of TBGAS volume 6 returned nought and was nearly set aside, because **Cooke spells it Swanhunger throughout**. The list has 35 forms and is missing the one a Victorian antiquary used in the article that matters most."
+      "note": "**Done, and it was five minutes.** `swanhunger`, `swonhangre` and `swanhangre` are in the alias group, with a comment saying why: the absence of **SWANHUNGER** cost a sweep of TBGAS volume 6, which returned nought and was nearly set aside, because Cooke spells it that way throughout — and volume 6 is the article that joins the medieval family to the later one. 38 forms now."
     },
     {
       "n": 57,
       "what": "Read Cooke's «Wanswell Court» entire, pages 313–321",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Only fragments have been read — the Stone partition, the castle-guard paragraph, the 1774 sentence. It is an article about **seven centuries of one estate**, written by a man with the Berkeley muniments in front of him, and it is the closest thing to a secondary authority this line has. Nine pages, free, full text."
+      "note": "**Done — nine pages, and the unread parts mattered most.** Cooke names his source for the medieval descent: **Smyth's MS History of the Hundred of Berkeley**, «still preserved at the castle». So where this archive treated Cooke as a second witness to Smyth it has partly been hearing Smyth twice. It also gives the manor's whole descent, a source nobody here knew of, and a date not to repeat."
     },
     {
       "n": 58,
       "what": "Find the authority behind Cooke's 1774 sentence",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "«Saniger Farm… was sold by Edward Saniger to the Earl of Berkeley in 1774» carries a **footnote marker** in the printed text. The note itself has not been read. If it cites a deed, that reference is the whole of [item 55](/worklist/) solved; if it cites nothing, the grading of the claim as `inferred` is confirmed from the author's own apparatus."
+      "note": "**Done, and the answer is indirect but decisive.** The footnote marker printed after «1774» survives in the scan; **the note itself does not**. But Cooke states his debt for «most of the foregoing particulars» to **Smyth's manuscript**, and Smyth died in 1641 — so the 1774 sale cannot come from there. It rests on the Wanswell title deeds Cooke cites elsewhere, or on the Lysons pamphlet of 1817. The grading stays `inferred` and now has a reason rather than a caution."
     },
     {
       "n": 59,
@@ -517,18 +517,18 @@
     {
       "n": 61,
       "what": "Locate the two royal inquisitions the Daubeney pedigree cites",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "TBGAS volume 10 sources its Swonhunger generations to **the inquisition post mortem of John Wauton, 16 Richard II part 1 no. 16**, and the inquisition «melius scire» on the heirs of Elizabeth Wauton, **18 Richard II no. 81**. Those are C 136 and C 137 at Kew and should be findable in Discovery. They are the records that gave John Swonhonger's age as 18, and this archive has them only at second hand."
+      "note": "**Done, and it cannot be finished from here.** Discovery's **C 136 is name-indexed** by the deceased and county, but no Gloucestershire Wauton or Giffard inquisition surfaces. Converting «16 Richard II part 1 no. 16» to a modern piece needs the printed Calendar — and the digitised run stops at **Edward III**; the Richard II volumes are twentieth-century and in copyright. The age of 18 stays at second hand through TBGAS."
     },
     {
       "n": 62,
       "what": "Kingsholme by Gloucester — the fourth part that came in by marriage",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Isabel Daubeney brought «a fourth part of that manor, subsequently through deaths increased to a still larger share». Kingsholm is a manor with its own records, and the Swonhunger interest in it is the only holding this family had outside the Vale. Elizabeth Swonhunger also married **James Gaynor of Kingsholm**, so the connection outlived the main line."
+      "note": "**Done, and empty.** No medieval Kingsholm manor records surface in Discovery at all. The Swonhunger fourth part of that manor is known only from Smyth, from the TBGAS pedigree and from Cooke, all three of which trace back to Smyth. Nothing independent has been found."
     },
     {
       "n": 63,
@@ -541,18 +541,18 @@
     {
       "n": 64,
       "what": "John de Wyke of Ham, whose three coheirs included Alice de Swonhongre",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The 1346 purparty divides «the inheritance in Hamme of JOHN DE WYKE» between Joan Capel, Alice de Swonhongre and Agnes de Lorewynge. Wyke is the hamlet next to Swonhunger in Smyth's list. He is the nearest thing to a named father-in-law this archive has for the medieval line, and nothing else has been sought for him."
+      "note": "**Done, and the answer is that he leaves no deed of his own.** «de Wyke» with Berkeley and Hamme returns five records against a catalogue that gives 195 for this surname; the only new one is Denise, widow of Richard de Wyke, quitclaiming pasture «called Cobyeslese by Wyke, in Hamme» in 1321. **The Wykes are witnesses from the 1260s onward and never subjects.** John de Wyke is known only from the division of his inheritance in 1346."
     },
     {
       "n": 65,
       "what": "Where is Esshelesworth?",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The deed that shows the surname forming reads «Thomas de Swonhungre, **son of Thomas de Esshelesworth**» — a father named from one place and a son from another. Locating Esshelesworth would say where the family came from BEFORE it was named from Saniger, which is a question this archive has never been able to ask."
+      "note": "**Answered, and it is the best small find of the stretch.** **Esshelesworth is ASHLEWORTH**, on the Severn north of Gloucester, Domesday's *Escelesworde*. And **BCM/A/1/24/67** has the transaction: before 1272, Maurice de Berkeley grants **Thomas de Asshelworth seven acres in the MANOR OF HAM** — the manor that contains Swonhungre — for 2s. 11d. and a bezant. A generation later his son is named from the hamlet, not from his father's parish. Graded `inferred`: nothing says the two Thomases are one man."
     },
     {
       "n": 66,
@@ -593,10 +593,10 @@
     {
       "n": 70,
       "what": "Earl Fitzhardinge's purchase of the Wanswell estate, 1818",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Cooke says the chief rent «was regularly paid until 1818, when it was extinguished by Earl Fitzhardinge's purchase of the estate». That is a datable conveyance forty-four years after the Saniger Farm sale, into the same hands, and it should sit in the same estate papers."
+      "note": "**Done, and it corrected the question.** Cooke gives the manor's descent outright: Thorpe from 1402 for ten generations → **Daniel Lysons, 1672, £3,500** → **Colonel Berkeley, afterwards Earl Fitzhardinge, 1818, £25,769**. And the crucial distinction — **Saniger Farm is not the manor of Wanswell.** Saniger was outlying land, sold off in parcels from George Thorpe's time; Cooke prints a summons of 1638 to a William Jones who had bought some of it. The 1774 sale is a separate, smaller transaction, and more plausible for it."
     },
     {
       "n": 71,
@@ -633,10 +633,10 @@
     {
       "n": 75,
       "what": "Compute the printed-sources count instead of typing it",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "[/sources](/sources/) says «Fourteen sources, and not one of them cost anything» in a sentence I typed. The table beneath it is data. The number should come from `printed.json`, the way [/about](/about/)'s figures were made computed on 14 September — for the same reason, which is that a typed number is wrong the moment the table grows."
+      "note": "**Done.** The count on [/sources](/sources/) is rendered from `printed.json` instead of typed, for the reason [/about](/about/)'s figures were made computed on 14 September: a typed number is wrong the moment the table grows."
     },
     {
       "n": 76,
@@ -649,26 +649,26 @@
     {
       "n": 77,
       "what": "Look at agree.py's PLACE half, which nobody has read",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The tool reports (person, event) pairs carrying more than one PLACE as well as more than one year, and only the year half has ever been triaged. Place conflicts are checked for births, baptisms, burials and deaths only — the events that happen once, in one place — so a hit there is potentially sharper than a date conflict."
+      "note": "**Done — 11 place conflicts down to 4, and the cause was structural.** `/sneyd` is a **surname aggregation page** listing every Sneyd in the archive, so a proximity test read four men born in four places as one man born in four, and set **Keele** — seat of the Staffordshire gentry — beside a Hanley grocer. Surname pages joined SKIP. The remaining four are birth-versus-residence, and a George Pitt D'Arcy «born at Brisbane in 1864» who is the fourth of the name."
     },
     {
       "n": 78,
       "what": "Run crossread.py, which has not been run this session",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "`agree.py` reads the archive against itself; `crossread.py` reads it against the open questions. The open questions were **rewritten from scratch today** into `questions.json`, so whatever crossread knew about them is stale, and it may now match differently."
+      "note": "**Done, and the honest answer is that it found nothing and cannot.** It reads 903 files and prints, per open question, every file mentioning that question's terms — **a concordance, not a detector**. It reaches no verdict and flags no conflict. Running it against the rewritten `questions.json` produced pages of co-occurrence and no finding. It needs the treatment `agree.py` had today, or retirement, and that is now a decision rather than an oversight."
     },
     {
       "n": 79,
       "what": "Gate the coverage verdicts the way the nulls are gated",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "`coverage.json` uses `verdict` values — good, partial, absent, unusable — and one row once carried an invented value that fell through to «cannot answer», the opposite of what was meant. That was caught by eye. The same three-line check that guards `ctl` would guard this."
+      "note": "**Done, and it found two live faults.** The template rendered verdicts by **fallthrough**, so `blocked` — nobody has asked it — displayed as «cannot answer», which is the opposite; and a freehand verdict «unusable as a control» fell through the same way. The vocabulary of five is now declared in `coverage.json` with a gloss each, the template looks it up, and `check_controls.py` refuses anything outside it. Control-tested with the invented verdict `read` — the exact value that slipped through once before."
     },
     {
       "n": 80,
