@@ -121,7 +121,13 @@
       "state": "blocked",
       "owner": "David",
       "since": "2026-09-15",
-      "note": "**Elizabeth Saniger 1833**, **Robert D'Arcy**, and **Benjamin Cotton, cordwainer of Berkeley, 1779** (PROB 11/1056/294). All three are already digitised at Kew and cost nothing to download — the only obstacle is the account, and creating accounts is not something this archive does on your behalf. Cotton's will is the one that would test whether Catherine Cotton, who married Thomas Saniger at Berkeley, is his daughter."
+      "note": "**Elizabeth Saniger 1833**, **Robert D'Arcy**, and **Benjamin Cotton, cordwainer of Berkeley, 1779** (PROB 11/1056/294). All three are already digitised at Kew and cost nothing to download — the only obstacle is the account, and creating accounts is not something this archive does on your behalf. Cotton's will is the one that would test whether Catherine Cotton, who married Thomas Saniger at Berkeley, is his daughter.",
+      "covers": [
+        "err:err/prob-11-1728-64-the-will-of--24fcf7",
+        "err:err/prob-11-1825-326-the-will-of-c3cc14",
+        "err:err/prob-11-1056-294-the-will-of-aba03a",
+        "q:q/who-was-robert-d-arcy-s-fath-1e45bf"
+      ]
     },
     {
       "n": 16,
@@ -129,7 +135,12 @@
       "state": "blocked",
       "owner": "David",
       "since": "2026-09-15",
-      "note": "**Lydia Sanigar's**, about £12.50 from the GRO against register 3 entry 265 — she was invisible under SANIGER and found only under the misspelling. And **the marriage of James Sneyd and Ann Biddulph**, Stoke St Peter 1842, ordered locally from Stoke-on-Trent against reference 31/03/214 rather than from the GRO. The marriage certificate would name **both fathers and their trades**, carrying the Sneyd line back a generation on a side this archive has never had."
+      "note": "**Lydia Sanigar's**, about £12.50 from the GRO against register 3 entry 265 — she was invisible under SANIGER and found only under the misspelling. And **the marriage of James Sneyd and Ann Biddulph**, Stoke St Peter 1842, ordered locally from Stoke-on-Trent against reference 31/03/214 rather than from the GRO. The marriage certificate would name **both fathers and their trades**, carrying the Sneyd line back a generation on a side this archive has never had.",
+      "covers": [
+        "err:err/the-death-of-lydia-saniger-a-8b4056",
+        "err:err/the-marriage-certificate-of--033bc5",
+        "q:q/who-were-ann-biddulph-s-pare-3eb1ed"
+      ]
     },
     {
       "n": 17,
@@ -137,7 +148,11 @@
       "state": "blocked",
       "owner": "David",
       "since": "2026-09-14",
-      "note": "Gloucestershire Archives replied on 14 September and named the Society's volunteers as the route they recommend, since they offer no research service themselves. The draft is written and sitting in `notes/letters/`. **Mail from your address is your call to send**, so it stays here until you do."
+      "note": "Gloucestershire Archives replied on 14 September and named the Society's volunteers as the route they recommend, since they offer no research service themselves. The draft is written and sitting in `notes/letters/`. **Mail from your address is your call to send**, so it stays here until you do.",
+      "covers": [
+        "err:err/gloucestershire-family-histo-18de4c",
+        "q:q/where-and-when-was-hannah-sa-3597b7"
+      ]
     },
     {
       "n": 18,
@@ -145,7 +160,13 @@
       "state": "blocked",
       "owner": "David",
       "since": "2026-09-15",
-      "note": "Ancestry, ScotlandsPeople, RootsIreland, FamilySearch, Geneanet, RootsChat and Archive.org's lending library all want an account; irishgenealogy.ie and British History Online put a bot check in the way. **This archive creates no accounts and solves no CAPTCHAs**, so these are recorded as `blocked` rather than as nulls — the distinction matters, because a blocked source has not said no, it has not been asked. [Behind the paywall](/behind-the-paywall/) lists what each would cost."
+      "note": "Ancestry, ScotlandsPeople, RootsIreland, FamilySearch, Geneanet, RootsChat and Archive.org's lending library all want an account; irishgenealogy.ie and British History Online put a bot check in the way. **This archive creates no accounts and solves no CAPTCHAs**, so these are recorded as `blocked` rather than as nulls — the distinction matters, because a blocked source has not said no, it has not been asked. [Behind the paywall](/behind-the-paywall/) lists what each would cost.",
+      "covers": [
+        "err:err/search-irishgenealogy-ie-for-0b7d55",
+        "err:err/billiongraves-when-its-searc-7b8b9c",
+        "err:err/put-the-hornby-claim-and-the-34464d",
+        "err:err/the-will-of-edward-sanniger--38dbb7"
+      ]
     },
     {
       "n": 19,
@@ -313,7 +334,10 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**D5555/2/14** at Gloucestershire Archives, «Poll tax return for the hundreds of Deerhurst, Cleeve and lower Westminster» — the wrong hundreds, but the same collection's **D5555/2/9** transcribes *Men and Armour* 1608, the hearth taxes of 1664 and 1672 and the poll tax of 1678 together. Establish which hundreds the 1678 return covers before adding it to an errand."
+      "note": "**D5555/2/14** at Gloucestershire Archives, «Poll tax return for the hundreds of Deerhurst, Cleeve and lower Westminster» — the wrong hundreds, but the same collection's **D5555/2/9** transcribes *Men and Armour* 1608, the hearth taxes of 1664 and 1672 and the poll tax of 1678 together. Establish which hundreds the 1678 return covers before adding it to an errand.",
+      "covers": [
+        "err:err/gloucestershire-archives-d55-88a285"
+      ]
     },
     {
       "n": 40,
@@ -369,7 +393,10 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The record that names a labourer's parents, birthplace and marriage in one sworn document, generated for precisely the people who leave nothing else. The 1608 muster puts Sanigers at the bottom of the Vale's social scale — labourers and weavers of «lower stature» — which is the class the settlement papers exist to describe. A Discovery catalogue question first."
+      "note": "The record that names a labourer's parents, birthplace and marriage in one sworn document, generated for precisely the people who leave nothing else. The 1608 muster puts Sanigers at the bottom of the Vale's social scale — labourers and weavers of «lower stature» — which is the class the settlement papers exist to describe. A Discovery catalogue question first.",
+      "covers": [
+        "q:q/where-and-when-was-hannah-sa-3597b7"
+      ]
     },
     {
       "n": 47,
@@ -441,10 +468,234 @@
       "owner": "this archive",
       "since": "2026-09-15",
       "what": "Find the 1774 conveyance Cooke describes, and settle the bridge properly",
-      "note": "Cooke's sentence — «Saniger Farm… was sold by **Edward Saniger to the Earl of Berkeley in 1774**» — is the join this archive has said all week it could not make, and it is currently graded **inferred** because it is a scholar's conclusion rather than a chain of deeds. The Berkeley estate papers at Gloucestershire Archives already hold Edward Saniger's mortgages of 1692, 1709 and 1716; the 1774 conveyance should be among them. Errand 62, and the most valuable single document now named anywhere on this site."
+      "note": "Cooke's sentence — «Saniger Farm… was sold by **Edward Saniger to the Earl of Berkeley in 1774**» — is the join this archive has said all week it could not make, and it is currently graded **inferred** because it is a scholar's conclusion rather than a chain of deeds. The Berkeley estate papers at Gloucestershire Archives already hold Edward Saniger's mortgages of 1692, 1709 and 1716; the 1774 conveyance should be among them. Errand 62, and the most valuable single document now named anywhere on this site.",
+      "covers": [
+        "err:err/the-1774-conveyance-of-sanig-f381ab",
+        "q:q/how-do-the-medieval-swonhung-05ce23"
+      ]
+    },
+    {
+      "n": 56,
+      "what": "Add the three attested spellings missing from this site's own alias list",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "**SWANHUNGER, SWONHANGRE and SWANHANGRE** are all attested in documents read this week and none of them is in `build_search.py`. This is not theoretical: my own sweep of TBGAS volume 6 returned nought and was nearly set aside, because **Cooke spells it Swanhunger throughout**. The list has 35 forms and is missing the one a Victorian antiquary used in the article that matters most."
+    },
+    {
+      "n": 57,
+      "what": "Read Cooke's «Wanswell Court» entire, pages 313–321",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Only fragments have been read — the Stone partition, the castle-guard paragraph, the 1774 sentence. It is an article about **seven centuries of one estate**, written by a man with the Berkeley muniments in front of him, and it is the closest thing to a secondary authority this line has. Nine pages, free, full text."
+    },
+    {
+      "n": 58,
+      "what": "Find the authority behind Cooke's 1774 sentence",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "«Saniger Farm… was sold by Edward Saniger to the Earl of Berkeley in 1774» carries a **footnote marker** in the printed text. The note itself has not been read. If it cites a deed, that reference is the whole of [item 55](/worklist/) solved; if it cites nothing, the grading of the claim as `inferred` is confirmed from the author's own apparatus."
+    },
+    {
+      "n": 59,
+      "what": "Read the whole numbered deed series in TBGAS volume 22",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Two of roughly forty numbered deeds were read — the 1329 indenture and the 1353 partition — because those were the two the index pointed at. The series is printed in **full English translation**, which nothing else this archive has touched is, and it covers the same families: Berkeley, Stone, Serjeant, Kingswood Abbey. Establish whose muniments are being printed, then read the run."
+    },
+    {
+      "n": 60,
+      "what": "The partition of 1347, which Cooke names and this archive has not found",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Cooke says the sisters' lands «were subsequently divided by several deeds of partition in **1347 and 1353**». Volume 22 prints the 1353 one. The 1347 deed has not been located in the Berkeley catalogue or anywhere else, and a second partition would name the same parties six years earlier."
+    },
+    {
+      "n": 61,
+      "what": "Locate the two royal inquisitions the Daubeney pedigree cites",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "TBGAS volume 10 sources its Swonhunger generations to **the inquisition post mortem of John Wauton, 16 Richard II part 1 no. 16**, and the inquisition «melius scire» on the heirs of Elizabeth Wauton, **18 Richard II no. 81**. Those are C 136 and C 137 at Kew and should be findable in Discovery. They are the records that gave John Swonhonger's age as 18, and this archive has them only at second hand."
+    },
+    {
+      "n": 62,
+      "what": "Kingsholme by Gloucester — the fourth part that came in by marriage",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Isabel Daubeney brought «a fourth part of that manor, subsequently through deaths increased to a still larger share». Kingsholm is a manor with its own records, and the Swonhunger interest in it is the only holding this family had outside the Vale. Elizabeth Swonhunger also married **James Gaynor of Kingsholm**, so the connection outlived the main line."
+    },
+    {
+      "n": 63,
+      "what": "The Serjeants of Old Court — the other half of the same inheritance",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Joan de Stone married John Serjeant and took Stone and Woodford; her sister Alice married a Swonhunger and took Wanswell. Cooke says the Serjeants held **Old Court, its moat still visible, for many generations**, and they endowed the chantry that prayed for the Swanhangres in 1356. **They are this family's control group**: the same starting point, far better documented, and everything found for them tells you what could exist for ours."
+    },
+    {
+      "n": 64,
+      "what": "John de Wyke of Ham, whose three coheirs included Alice de Swonhongre",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The 1346 purparty divides «the inheritance in Hamme of JOHN DE WYKE» between Joan Capel, Alice de Swonhongre and Agnes de Lorewynge. Wyke is the hamlet next to Swonhunger in Smyth's list. He is the nearest thing to a named father-in-law this archive has for the medieval line, and nothing else has been sought for him."
+    },
+    {
+      "n": 65,
+      "what": "Where is Esshelesworth?",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The deed that shows the surname forming reads «Thomas de Swonhungre, **son of Thomas de Esshelesworth**» — a father named from one place and a son from another. Locating Esshelesworth would say where the family came from BEFORE it was named from Saniger, which is a question this archive has never been able to ask."
+    },
+    {
+      "n": 66,
+      "what": "The rest of MS 3549 — Smyth's own collection is 250-odd items",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Three items were found by surname and two court rolls by chance. The collection is «miscellaneous deeds and manorial records collected by John Smyth», 1200–1704, and the parts relevant here are catalogued by MANOR rather than by name — Ham and Hinton, Alkington, Coaley, Wotton Foren. Browsing it by place would find what a surname search cannot.",
+      "covers": [
+        "err:err/ms-3549-89-the-court-roll-of-32c6e0",
+        "err:err/the-twenty-five-unread-page--259d9a"
+      ]
+    },
+    {
+      "n": 67,
+      "what": "Bigland volumes 2 and 3",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Volume 1 was read entire and gave twenty mentions and a four-generation monument sequence with ages. There are further volumes, covering the rest of the county's parishes alphabetically — including **Awre**, which volume 1 does not reach."
+    },
+    {
+      "n": 68,
+      "what": "Edward Saniger of Peddington",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Bigland's Berkeley burials carry «Edward Saniger, of Pedington in this Parish» and «Mary his Wife», among neighbours named Rutter, Parslow and Godwin. **Peddington is named beside Swanhanger in the 1626 inquisition of Henry Mallett.** A second Saniger household, at a second documented hamlet, and nothing has been done with it."
+    },
+    {
+      "n": 69,
+      "what": "The Ham manor court roll of 26 May 1600",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Cooke's only documentary evidence for the castle-guard tenure: the Homage presenting the death of **Nicholas Thorpe**, seised of Wanswell by a sixteenth of a knight's fee, £4 8s. 8d. rent, «and by keeping one tower in the Castle of Berkeley called Thorpe's Tower». A Ham court roll of 1600 is **one year before John Saniger's first appearance in the estate deeds**, and it would list the whole homage."
+    },
+    {
+      "n": 70,
+      "what": "Earl Fitzhardinge's purchase of the Wanswell estate, 1818",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Cooke says the chief rent «was regularly paid until 1818, when it was extinguished by Earl Fitzhardinge's purchase of the estate». That is a datable conveyance forty-four years after the Saniger Farm sale, into the same hands, and it should sit in the same estate papers."
+    },
+    {
+      "n": 71,
+      "what": "Bellamy's Place, Nibley — two moieties reunited after 287 years",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Cooke: Smyth «traces the descent of the separate moieties in the descendants of the two sisters until **1605, when they were re-united in a single purchaser, Henry Hatheway, after a severance of 287 years**». A property descending in two halves through both sisters' lines, traced by Smyth to 1605, is a ready-made test of the whole reconstruction."
+    },
+    {
+      "n": 72,
+      "what": "Settle whether William was the son of William or of John",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Two sources, both 1356. BCM/A/1/24/184 makes him «William Swonhungre, brother and heir of Thomas… a charter of **John** Swonhungre, his father»; the chantry licence prays for «**William son of William** Swanhangre, and Alienor his mother». Either two Williams were living at once or one source is wrong, and the page currently says so and stops. Comparing the two documents in full might not settle it — but it has not been tried."
+    },
+    {
+      "n": 73,
+      "what": "Draw the descent, instead of describing it",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "[The name in its own century](/swonhungre/) is now a long page of prose carrying four generations of Stones, six of Swonhungres, three named coheirs and five wives. **A reader cannot hold that in their head.** The kit has chart components; the archive has the relationships. Draw it, and mark on the drawing which links are documented and which rest on Smyth or Cooke."
+    },
+    {
+      "n": 74,
+      "what": "Make /places/saniger carry the medieval material",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The atlas now points at `/places/saniger/`, and the page behind it is generated from the gazetteer and says almost nothing. It is the natural home for the roads and fields — the king's highway from Longbridge, Alagrene street, Stodfold, le Muleweye, le Westfeld — which are currently buried two thirds of the way down a long page about a surname."
+    },
+    {
+      "n": 75,
+      "what": "Compute the printed-sources count instead of typing it",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "[/sources](/sources/) says «Fourteen sources, and not one of them cost anything» in a sentence I typed. The table beneath it is data. The number should come from `printed.json`, the way [/about](/about/)'s figures were made computed on 14 September — for the same reason, which is that a typed number is wrong the moment the table grows."
+    },
+    {
+      "n": 76,
+      "what": "Work off the 39 grandfathered nulls, in batches",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The audit is finished and the gate is up; the **backfill is not done**. 39 rows are marked `unstated` and grandfathered. Roughly fifteen are FindMyPast searches that cannot be re-controlled without a subscription and should probably be reclassified as `blocked` rather than pretended to be nulls. The rest are one query each."
+    },
+    {
+      "n": 77,
+      "what": "Look at agree.py's PLACE half, which nobody has read",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The tool reports (person, event) pairs carrying more than one PLACE as well as more than one year, and only the year half has ever been triaged. Place conflicts are checked for births, baptisms, burials and deaths only — the events that happen once, in one place — so a hit there is potentially sharper than a date conflict."
+    },
+    {
+      "n": 78,
+      "what": "Run crossread.py, which has not been run this session",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "`agree.py` reads the archive against itself; `crossread.py` reads it against the open questions. The open questions were **rewritten from scratch today** into `questions.json`, so whatever crossread knew about them is stale, and it may now match differently."
+    },
+    {
+      "n": 79,
+      "what": "Gate the coverage verdicts the way the nulls are gated",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "`coverage.json` uses `verdict` values — good, partial, absent, unusable — and one row once carried an invented value that fell through to «cannot answer», the opposite of what was meant. That was caught by eye. The same three-line check that guards `ctl` would guard this."
+    },
+    {
+      "n": 80,
+      "what": "The Great Berkeley Law-suit, and what it did to the records",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Cooke explains the Thorpes' castle-guard by «the family quarrels of the Great Berkeley Law-suit», when the castle «was frequently attacked, taken, and re-taken». A 15th-century dispute that moved the muniments about is worth understanding before concluding anything from a gap in them."
+    },
+    {
+      "n": 81,
+      "what": "The Gentleman's Magazine for the other deaths, not just 1827",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The 1827 volume was read in full and gave a confirmed null for Robert D'Arcy. His son Joseph, his son Constantine and George Pitt D'Arcy all died at dates this archive knows or can bracket, and the magazine printed officers' deaths as a matter of course. One volume each, free, and the method is already established."
+    },
+    {
+      "n": 82,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "what": "Reconcile the other 49 outstanding items with this list",
+      "note": "The estate's `checkcovers` gate arrived in the kit today and reported **0 of 68**: sixty-eight outstanding errands, questions and drafted letters with no work-list row answering for any of them. A first pass tied **18**, and closed errand 51 in the process — it asked for the itemised Berkeley Castle groupings, which Discovery answered this morning, and nobody had gone back to shut it. The ratchet is now set at **49** so the backlog cannot drift upward. The remaining 49 are mostly errands with no row because nobody has decided whether this archive is still pursuing them — which is exactly the decision the gate exists to force."
     }
   ],
-  "close": "**Twenty-two items were closed on 15 September 2026 and twenty-five raised in their place.** The new list is not a wish list: every item names a shelfmark, an identifier or a specific defect this session actually produced. The largest single item is number 30 — **153 Berkeley Castle deeds catalogued, free, and unread**. Four items still wait on David and nothing on this page is blocked behind them.",
+  "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",
   "accounts": [
     {
       "prefix": "err",
@@ -477,5 +728,5 @@
       ]
     }
   ],
-  "unreconciled": 68
+  "unreconciled": 49
 }
