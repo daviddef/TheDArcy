@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Searched from "@daviddef/archive-kit/components/Searched.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
@@ -45,31 +46,18 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
     </Note>
   </section>
 
-  {[["Sources that gave something up", yields], ["Sources read and empty", nulls],
-    ["Sources that do not cover the question", empty],
-    ["Sources this archive could not reach", blocked]].map(([h, rows]) => (
-    <section class="blk">
-      <h2>{h}</h2>
-      <p class="small">{rows.length} {rows.length === 1 ? "source" : "sources"}</p>
-      <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.2rem">
-        {rows.map((r) => (
-          <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
-            <div><strong>{r.src}</strong>
-              <span class={`chip ${CHIP[r.outcome][0]}`} style="margin-left:.5rem">{CHIP[r.outcome][1]}</span>
-              <span class="small" style="margin-left:.5rem;color:var(--ink-3)">{r.when}</span>
-              {r.ctl && (
-                <span class="small mono"
-                      style={`margin-left:.5rem;color:${r.ctl === "named" ? "var(--ink-3)" : "#B04A16"}`}
-                      title="A null is only as good as the test that could have disproved it">
-                  {d.ctlLabels[r.ctl]}</span>)}</div>
-            <p class="small" style="margin-top:.35rem;color:var(--ink-2)"><em>Searched:</em> {r.what}</p>
-            <p class="small" style="margin-top:.35rem">{r.got}
-              {r.href && <> <a href={u(r.href)}>→</a></>}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  ))}
+  <section class="blk">
+    <h2>Every source read, and what it gave up</h2>
+    <p class="small">The four kinds above are the filter. <strong>A null is only as good as the test
+    that could have disproved it</strong>, so where a control was run the row says so.</p>
+    <Searched u={u} nil={["null", "empty"]} unit="sources"
+      rows={d.rows.map((r) => ({
+        when: r.when, src: r.src, what: r.what, got: r.got,
+        outcome: CHIP[r.outcome] ? CHIP[r.outcome][1] : r.outcome,
+        href: r.href,
+        extra: r.ctl ? d.ctlLabels[r.ctl] : "",
+      }))} />
+  </section>
 
   <Blk label="Checked before searching, every time" title="What each database actually holds">
     <p class="dek">{cov.note}</p>
