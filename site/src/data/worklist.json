@@ -354,10 +354,10 @@
     {
       "n": 37,
       "what": "The Swonhungre with two shops in Bristol market, 1443",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**P/St.P and J/D/2(j)** at Bristol Archives: Thomas Dodde of Stapleton, Richard Venables and **John Swonhungre**, two shops with gardens in the Market. Smyth's country line failed in 1401; this is a man of the name in a Bristol parish forty years later, in trade. This archive's later Sanigers reach Bristol too. The join is not made and should be tested rather than assumed."
+      "note": "**Done.** The full description: «Thomas Dodde of Stapulton', Glos.; Richard Venables and **JOHN SWONHUNGRE**. Premises: two shops with gardens in the Market… extending from the market to **Bastelane** behind.» He is a grantee of urban property with a partner, and the deeds survive in a **parish** collection — St Peter and St James — so they reached the church as endowment. The family's only known Bristol link is Isabel's marriage to **John Thorpe, a burgess of Bristol**, in 1402: forty years, one generation, and no document stating any relationship."
     },
     {
       "n": 38,
@@ -401,10 +401,10 @@
     {
       "n": 42,
       "what": "The rest of the Army List run, 1776 to 1815",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Four editions were read on 15 September out of roughly forty. The four gave Second Lieutenant 1783, Captain 1802, Major 1803 — three points and a line drawn between them again, just a shorter line. The run would give a position per year and independently date the Minorca, Copenhagen and Walcheren postings Porter asserts. The method is now scripted and each volume takes about a minute."
+      "note": "**Done, and the run does not exist to be read.** 120 Army List identifiers checked one metadata record at a time — the search index is useless for years, exactly as with the Gentleman's Magazine — and **exactly one falls between 1776 and 1815**. That one, **January 1815**, has «Robert D'Arcy, R. Eng.» three times in the senior seniority lists beside **George Bridges** and **Samuel T. Dickens**, the men he was commissioned with, and «Joseph Darcy, Roy. Art.» The five other editions this archive holds came from separate searches under different titles."
     },
     {
       "n": 43,
@@ -579,10 +579,10 @@
     {
       "n": 63,
       "what": "The Serjeants of Old Court — the other half of the same inheritance",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Joan de Stone married John Serjeant and took Stone and Woodford; her sister Alice married a Swonhunger and took Wanswell. Cooke says the Serjeants held **Old Court, its moat still visible, for many generations**, and they endowed the chantry that prayed for the Swanhangres in 1356. **They are this family's control group**: the same starting point, far better documented, and everything found for them tells you what could exist for ours."
+      "note": "**Done, and it is the catalogue that defeats it, not the family.** «le Serjaunt» with Berkeley and Stone returns **five** records against 195 for this surname, all of them Berkeley deeds in which a Serjeant witnesses. **Discovery itemises the Berkeley DEEDS and almost nothing else for this hundred** — no court rolls, no parish chest, no manorial surveys. A family that leaves no deed of its own is invisible there, however well Cooke documents them from Smyth's manuscript and the estate's own title papers."
     },
     {
       "n": 64,
@@ -623,10 +623,10 @@
     {
       "n": 68,
       "what": "Edward Saniger of Peddington",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Bigland's Berkeley burials carry «Edward Saniger, of Pedington in this Parish» and «Mary his Wife», among neighbours named Rutter, Parslow and Godwin. **Peddington is named beside Swanhanger in the 1626 inquisition of Henry Mallett.** A second Saniger household, at a second documented hamlet, and nothing has been done with it."
+      "note": "**Done, and it cannot be taken further from here.** A Peddington search drowns in five thousand generic Berkeley hits, and nothing in the catalogue names a Saniger there. What exists is Bigland's burial entry — «Edward Saniger, of Pedington in this Parish» and «Mary his Wife» — and the fact that **Peddington is named beside Swanhanger in the 1626 inquisition of Henry Mallett**. Two hamlets, described together in a Crown record a century and a half before that burial. The next step is the Berkeley parish register itself."
     },
     {
       "n": 69,
@@ -655,10 +655,10 @@
     {
       "n": 72,
       "what": "Settle whether William was the son of William or of John",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Two sources, both 1356. BCM/A/1/24/184 makes him «William Swonhungre, brother and heir of Thomas… a charter of **John** Swonhungre, his father»; the chantry licence prays for «**William son of William** Swanhangre, and Alienor his mother». Either two Williams were living at once or one source is wrong, and the page currently says so and stops. Comparing the two documents in full might not settle it — but it has not been tried."
+      "note": "**Resolved, probably, and from deeds already in hand.** BCM/A/1/36/24 leases Hinton land to «**Thomas son of William de Swonhongre**, Maud his wife and John the younger their son» — so a William had a son Thomas, and the chantry gives that same William a son William and a wife Alienor. The William of BCM/A/1/24/184 is a different household: son of John, brother and heir of Thomas of Wanswell. **Two men of one name at once is this family's commonest pattern.** Published as a resolution, not a proof."
     },
     {
       "n": 73,
@@ -671,10 +671,10 @@
     {
       "n": 74,
       "what": "Make /places/saniger carry the medieval material",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The atlas now points at `/places/saniger/`, and the page behind it is generated from the gazetteer and says almost nothing. It is the natural home for the roads and fields — the king's highway from Longbridge, Alagrene street, Stodfold, le Muleweye, le Westfeld — which are currently buried two thirds of the way down a long page about a surname."
+      "note": "**Done.** `/places/saniger` now carries **nine dated events** built from the same row the atlas marker is, so page and pin cannot drift apart: the king's highway from Longbridge, Alagrene street, Stodfold, the path through le Westfeld, le Muleweye, Smyth's list of the hamlets of Hamfallow, the 1601 release «in Westfield, Saniger» naming the same field as 1322, and Cooke's 1774 sale."
     },
     {
       "n": 75,

@@ -3072,6 +3072,48 @@
    "ctl": "named",
    "got": "Not from the Internet Archive. **120 identifiers were checked, one metadata record at a time**, because the search index stamps every volume «1731» — the series start — and only the per-item `year` field is true. Of the 120, the years present run 1738, 1748, 1780, 1789, 1795, 1807, 1812, 1816, 1817, 1819, 1823, 1827, 1828, 1829, 1830, 1832, 1834, 1838, 1840, 1841, 1847, **1849**, 1850 and onward. **Neither 1805 nor 1848 is among them.** Constantine died in May 1805 and Joseph in 1848, and the volumes that would carry them are not in this holding.",
    "href": "/behind-the-paywall"
+  },
+  {
+   "src": "Bristol Archives, P/St.P and J/D/2(j) — read in full",
+   "what": "The Swonhungre with two shops in Bristol Market, 1443",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "«1. Thomas Dodde of Stapulton', Glos. 2. Richard Venables and JOHN SWONHUNGRE. Premises: **two shops with gardens in the Market**, between a garden which John Hoper now holds to east, and tenement of Thomas Parkehous to west, extending from the market to **Bastelane** behind. Three deeds attached.» He is a grantee, with a partner, of urban property — and the reference is a PARISH one, St Peter and St James, so the deeds reached the church as endowment. The family's only known Bristol connection is by marriage: Isabel Swonhunger married **John Thorpe, a burgess of Bristol**, in 1402. Forty years is one generation. **No document states any relationship** and this archive claims none.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "Discovery, for the SERJEANTS of Old Court and for PEDDINGTON",
+   "what": "The family that took the other half of the Stone inheritance, and the second Saniger household",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Almost nothing, and the reason is the catalogue's shape rather than the families'. «le Serjaunt» with Berkeley and Stone returns **five** records against 195 for this surname, and they are Berkeley deeds in which a Serjeant witnesses. A Peddington search drowns in five thousand generic Berkeley hits. **Discovery itemises the Berkeley Castle DEEDS and almost nothing else for this hundred** — no court rolls, no parish chest, no manorial surveys — so a family that leaves no deed of its own is invisible in it, however well documented Cooke says they are.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "«William son of William Swanhangre» — resolved, probably",
+   "what": "Whether the chantry licence of 1356 contradicts the Berkeley deeds of the same year",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Probably not: they are probably two men. BCM/A/1/36/24 leases Hinton land to «**THOMAS SON OF WILLIAM DE SWONHONGRE**, Maud his wife and John the younger their son», so a William had a son Thomas; the chantry gives that William a son William and a wife Alienor. The William of BCM/A/1/24/184 is a different household — son of John, brother and heir of Thomas of Wanswell. **Two men of one name living at once is this family's commonest pattern**: a Thomas in every generation and four Johns. Recorded as a resolution, not a proof — no deed says they are two, and nothing rules out one.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "The Monthly Army List, January 1815",
+   "what": "Robert and Joseph D'Arcy in the last January of the war",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Both. «ROBERT D'ARCY, R. ENG.» appears three times in the brevet and seniority lists, each time beside the men he had been commissioned and promoted with — GEORGE BRIDGES and SAMUEL T. DICKENS, both entered «do.», and George W. Dixon of the Royal Artillery. The same volume carries «JOSEPH DARCY, ROY. ART.» and a «Lt. Col. D'Arcy, h.p.» the OCR will not let anyone attribute. Thirty D'Arcy hits in 1.8 million characters, in a scan bad enough that his exact rank cannot be read.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "The annual Army Lists, 1776–1815, on the Internet Archive",
+   "what": "Whether the run can be walked year by year at all",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "It cannot. **120 Army List identifiers were checked one metadata record at a time** — the search index is unusable for years, the same fault as the Gentleman's Magazine — and **exactly ONE falls between 1776 and 1815**: the Monthly Army List for January 1815. The 1778, 1781, 1783, 1802, 1803 and 1821 editions this archive holds came from separate searches under different titles. There is no digitised annual run to walk.",
+   "href": "/the-corps"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

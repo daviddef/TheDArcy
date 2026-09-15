@@ -106,7 +106,28 @@ DOCUMENTED = [
      "BERKELEY: the hamlet lies inside that parish and has no coordinate of "
      "its own. Wanswell and Hinton, its neighbours, are on the same point and "
      "are not shown separately for that reason.",
-     1250, ["Swonhungre", "Swonhongre", "Swanhanger", "Swonhunger"]),
+     1250, ["Swonhungre", "Swonhongre", "Swanhanger", "Swonhunger"],
+     # The place page is built from this row, so the topography lives here
+     # rather than two thirds of the way down a long page about a surname.
+     [("mid 13th cent.", "The king's highway runs \u201cfrom LONGEBRUGGE to SWONHUNGER\u201d "
+       "past a Berkeley messuage granted by Maurice lord of Berkeley \u00b7 BCM/A/1/12/92"),
+      ("1287", "A croft \u201cin the west part of Berkel' towards Swonhungre called ALAGRENE "
+       "STREET\u201d \u00b7 BCM/A/1/25/4"),
+      ("1317", "Land in Ham \u201clying near Swonhungre, in the field called STODFOLD\u201d, a "
+       "third held in dower by Joan Neel \u00b7 BCM/A/1/30/4"),
+      ("25 April 1322", "A lease of one selion \u201cin the field called WESTFELD in the furlong "
+       "called KYNGAKRE, beside the path from Berkel' to Swonhungre\u201d \u2014 and the deed is "
+       "executed AT SANIGER, witnessed by William de Swonhungre \u00b7 BCM/A/1/24/261"),
+      ("21 Dec. 1324", "Land in Lokedonne \u201cbeside the road from Berckel' to Swonhungre called "
+       "LE MULEWEYE\u201d, the mill way \u00b7 BCM/A/1/65/12"),
+      ("7 July 1325", "A croft \u201cin the field called LE WESTFELD beside the king's highway and "
+       "the footpath from Berckel' to Swonhungre\u201d \u00b7 BCM/A/1/24/262"),
+      ("about 1639", "Smyth lists the hamlets of Hamfallow: \u201cWike ats Wikes-elme, Wanefwell, "
+       "SWONHUNGER ATS SANIGER, Halmer ats Ecton, and Egeton\u201d"),
+      ("2 Nov. 1601", "JOHN SANIGER of Berkeley, yeoman, releases 3 acres of arable \u201cin "
+       "WESTFIELD, SANIGER\u201d \u2014 the same field named in 1322 \u00b7 D2957/41/18"),
+      ("1774", "\u201cSaniger Farm\u2026 was sold by EDWARD SANIGER to the Earl of Berkeley\u201d, "
+       "according to J. H. Cooke in 1882. The deed has not been found.")]),
 
 ]
 
@@ -138,7 +159,9 @@ def main():
             "people": [{"n": n} for n in names[:12]],
             "more": max(0, len(names) - 12) or None,
         })
-    for name, what, first, also in DOCUMENTED:
+    for entry in DOCUMENTED:
+        name, what, first, also = entry[0], entry[1], entry[2], entry[3]
+        evts = entry[4] if len(entry) > 4 else []
         if any(r["what"] == name for r in rows):
             continue
         rows.append({
@@ -151,6 +174,7 @@ def main():
             "also": also,
             "people": [],
             "more": None,
+            "events": [list(e) for e in evts],
         })
 
     atlasdata.build(rows, os.path.join(HERE, "..", "site", "public", "atlas-data.json"),
