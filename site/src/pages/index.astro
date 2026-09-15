@@ -169,8 +169,12 @@ const more = [
     { href: u("/hornby/"), name: "Where it stops being evidence", blurb: "The Hornby claim, tested and refused. Ninety-eight people in this archive hang off grafts it does not accept, and they are marked rather than quietly dropped.", cta: "Read the test →" },
     { href: u("/atlas/"), name: "Where it happened", blurb: `${atlas.stats.places + atlas.stats.unplaced} places from Limerick and Bedfordshire to Sandgate, with the people this archive can put in each one — ${atlas.stats.places} of them on the map.`, cta: "Open the atlas →" },
   ]} />
+  <section class="feat">
+    <h2 style="margin-top:6px">Where this family can actually be put</h2>
+    <p class="dek" style="margin-top:10px">England and Ireland, a regiment to Parramatta, and four generations afterwards in Brisbane. <strong>Every dot is a place this archive can put a named person in, and its size is how many stand there.</strong> The biggest are labelled; the colours are this archive's own regions. Nothing is a map — there is no coastline here, because this archive has not got one.</p>
   <PlaceSpark places={atlas.places} href={u("/atlas/")}
               label={`${atlas.stats.places} places with a coordinate, sized by how many people stand in each`} />
+  </section>
 
 
 <section class="blk">
