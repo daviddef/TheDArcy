@@ -171,6 +171,74 @@ import d from "../data/swonhungre.json";
       {" "}<span class="chip doc">{d.smyth3.chip}</span></Note>
   </Blk>
 
+  <Blk label="TBGAS vol. VI, 1881–82" title={d.cooke.head}>
+    <p class="lede">{d.cooke.lede}</p>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      <strong style="font-size:1.15em">{d.cooke.quote}</strong>
+      <span class="chip inf">{d.cooke.chip}</span>
+    </Note>
+    <p class="small" style="margin-top:.8rem;color:var(--ink-3)">{d.cooke.src}</p>
+    <p style="margin-top:1.2rem">{d.cooke.means}</p>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.cooke.careHead}.</strong> {d.cooke.care}
+      {" "}<a href={u("/errands/")}>What would settle it →</a>
+    </Note>
+
+    <h3 style="margin-top:1.9rem">{d.cooke.descHead}</h3>
+    <div style="margin-top:.9rem;display:flex;flex-direction:column;gap:.9rem">
+      {d.cooke.desc.map(([who, what]) => (
+        <div style="border-left:2px solid var(--rule);padding-left:14px">
+          <strong class="small">{who}</strong>
+          <p class="small" style="margin:.3rem 0 0;color:var(--ink-2)">{what}</p>
+        </div>))}
+    </div>
+    <Note style="margin-top:1.2rem"><strong>Where the two printed accounts disagree.</strong> {d.cooke.descNote}</Note>
+
+    <Note style="margin-top:1.3rem">
+      <strong>{d.cooke.towerHead}.</strong> {d.cooke.tower}
+      {" "}<span class="chip doc">{d.cooke.towerChip}</span>
+    </Note>
+  </Blk>
+
+  <Blk label="TBGAS, 67 volumes swept" title={d.tbgas.head}>
+    <p class="lede">{d.tbgas.lede}</p>
+
+    <h3 style="margin-top:1.8rem">{d.tbgas.v22Head}</h3>
+    <p style="margin-top:.6rem">{d.tbgas.v22Lede}</p>
+    <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1rem">
+      {d.tbgas.v22.map(([h, txt]) => (
+        <div style="border-left:2px solid var(--rule);padding-left:14px">
+          <strong class="small">{h}</strong>
+          <p class="small" style="margin:.3rem 0 0;color:var(--ink-2)">{txt}</p>
+        </div>))}
+    </div>
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      {d.tbgas.v22Means} <span class="chip doc">{d.tbgas.v22Chip}</span>
+    </Note>
+
+    <h3 style="margin-top:2rem">{d.tbgas.v10Head}</h3>
+    <p style="margin-top:.6rem">{d.tbgas.v10Lede}</p>
+    <Scroll>
+      <table style="margin-top:1rem">
+        <thead><tr><th>Person</th><th class="m">Dates given</th><th>Marriage or note</th></tr></thead>
+        <tbody>{d.tbgas.v10.map(([who, dt, note]) => (
+          <tr><td><strong>{who}</strong></td>
+              <td class="m small" style="white-space:nowrap">{dt}</td>
+              <td class="small">{note}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p class="small" style="margin-top:.9rem;color:var(--ink-3)">{d.tbgas.v10Src}</p>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      {d.tbgas.v10Means} <span class="chip doc">{d.tbgas.v10Chip}</span>
+    </Note>
+
+    <Note style="margin-top:1.3rem">
+      <strong>{d.tbgas.twistHead}.</strong> {d.tbgas.twist}
+      {" "}<span class="chip doc">{d.tbgas.twistChip}</span>
+    </Note>
+    <Note style="margin-top:1.2rem"><strong>{d.tbgas.minorHead}.</strong> {d.tbgas.minor}</Note>
+  </Blk>
+
   <Blk label="Library of Birmingham, MS 3549" title={d.smythsown.head}>
     <p class="lede">{d.smythsown.lede}</p>
     <Note style="border-left-width:3px;margin-top:1.2rem">

@@ -2374,6 +2374,70 @@
    "outcome": "yield",
    "got": "Confirmed and no more: «Will of Sanniger, Thomas. Rank/Rating: Able Seaman. Ship Name: Eurydice. Ship's Pay Book number: 193», 24 February 1794. The catalogue gives rank, ship and pay-book number and no kin. Seamen's wills name next of kin in the document, which is the reason to order it — and the reason a catalogue search cannot settle whether he belongs here.",
    "href": "/errands"
+  },
+  {
+   "src": "Transactions of the Bristol and Gloucestershire Archaeological Society",
+   "what": "All 67 digitised volumes, every spelling, with each volume's Berkeley mention count as its own control",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Five volumes carry the name and two are substantial. VOLUME 22 (1899) prints Berkeley-area deeds in FULL ENGLISH TRANSLATION rather than calendar summary, including the indenture of 1 May 1329 and the partition of 22 July 1353. VOLUME 10 prints a Daubeney pedigree carrying the Swonhungers as a branch, sourced to two royal inquisitions and to Smyth. Volume 21 has «Katherine, daughter of John Harris of Sanigar»; volumes 45 and 46 list W. Sanigar of Barton Hill, Bristol, as a member in 1923.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "TBGAS volume 22 — the 1329 indenture in full",
+   "what": "Who Alice was, and where Wanswell came from",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "«ELYANORA DE STONE, MOTHER OF THE AFORESAID ALICE AND JOAN» — so Alice, wife of John son of John de Swonhungre, and Joan, wife of John le Serjeant, are SISTERS and coheirs of Thomas de Stone, and their mother is named for the first time anywhere this archive has read. The Serjeants released to the Swonhungres everything in WANSWELL «of the heritage of the aforesaid Thomas de Stone», which is why a man is «Thomas Swonhungre of Wanswell» in 1356. Smyth said Alice was «younger daughter and coheir of Thomas de Stone»; the deed confirms him and adds her mother.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "TBGAS volume 22 — the partition of 1353",
+   "what": "Smyth's «third partition of the family lands in 27 Edward III»",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Printed entire: «William brother and heir of Thomas de Swonhunger» and John Serjeant the younger divide all they hold in common in Ham, Cam, Stinchcombe, Kingscote and Haselcote, «EXCEPT THE FISHERY IN SEVERN WHICH IS EXCEPTED FROM THIS PARTITION, AND WILL REMAIN IN CO[MMON]». The archive had Smyth's one-line description; this is the document, and it keeps the Severn fishery undivided — the same fishery Jeayes's charters reserve on Wednesdays and Fridays.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "TBGAS volume 10 — the Daubeney pedigree",
+   "what": "Whether the last generations can be dated from record rather than from Smyth",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "They can. Isabel Daubeney (ob. before 1393) married Elias Swonhonger; Elias died 13 Richard II (1389/90), having married Jone daughter of John Bill; JOHN SWONHONGER WAS AGED 18 IN 1393 and died 3 Henry IV (1401/2) without issue; Isabel Swonhonger married John Thorp. Sourced to the inquisition post mortem of John Wauton (16 Ric. II pt 1 no. 16), the inquisition «melius scire» on the heirs of Elizabeth Wauton (18 Ric. II no. 81), and Smyth p.370. An age of 18 in 1393 fits the sale of his marriage in December 1390 exactly. And Smyth's «John de Albiniaco alias Albeny» is DAUBENEY.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "TBGAS volume 10 — and a correction to this archive's own reasoning",
+   "what": "Whether «no royal inquisition» is true without qualification",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "It is not. In 1394 a royal commission, by writ of 21 November 18 Richard II, went to the escheator of Gloucestershire to enquire whether JOHN SWONHONGRE and others «had become the heirs general of John and Cecilia Daubeney», whose Kingsholme and Hinton Daubeney lands had fallen in. The Swonhungers hold of Berkeley by knight service and so generate no Crown inquisition FOR THE BERKELEY LAND — now documented by BCM/A/4/2/22 — but through the Daubeney marriage they are named in royal inquisitions after all. The claim was right about Berkeley and too broad about everything else.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "J. H. Cooke, «Wanswell Court, and its Occupants for seven centuries», TBGAS vol. VI (1881–82)",
+   "what": "Whether anybody had already joined the medieval Swanhungers to the later Sanigers",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Somebody had, a hundred and forty years ago: «They were an old Berkeley family, whose patrimonial house and estate in the neighbourhood is still called SANIGER FARM, AND WAS SOLD BY EDWARD SANIGER TO THE EARL OF BERKELEY IN 1774.» The article also gives the descent from Thomas de Stone (d. 1316) through his younger daughter ALICE, who «married John Swanhunger, or Saniger», to the John who died without issue in 1402 and his sister Isabel who married John Thorpe, burgess of Bristol. Graded INFERRED: it is a careful scholar's conclusion in a footnoted article, not a chain of deeds set out, and this archive's rule is that a conclusion is evidence of reasoning rather than of fact.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "Cooke on Thorpe's Tower",
+   "what": "Whether the castle-guard story Rudder repeats has a document behind it",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "It has one, and Cooke refused to accept it without: «The only documentary evidence of this Castle-guard tenure which I have met with is in a COURT ROLL FOR THE MANOR OF HAM, holden on the 26th May, 42 Eliz. (A.D. 1600), when the Homage presented the death of NICHOLAS THORPE, who died seised of the manor of Wanswell, holden by the sixteenth part of a knight's fee, the yearly rent of £4 8s. 8d., and by keeping one tower in the Castle of Berkeley called Thorpe's Tower.» The chief rent «was regularly paid until 1818, when it was extinguished by Earl Fitzhardinge's purchase of the estate».",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "My own sweep of TBGAS volume 6, first attempt",
+   "what": "A control failure caught by the broader sweep",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "Volume 6 was probed by hand earlier the same day for «Swonhung» and «Swonhong» and returned NOUGHT — so it was nearly set aside. Cooke's article spells the name SWANHUNGER and SANIGER throughout, neither of which those two patterns can match. The wider sweep, which carried ten spellings, found it immediately. The same fault as the D'Arcey one: a good alias list, not spent on the search actually being run.",
+   "href": "/swonhungre"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 30 of them do. 59 were written before that rule and do not, and are marked accordingly rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it untested. The cost of finding out is one query each, and they are on [the work list](/worklist/).",

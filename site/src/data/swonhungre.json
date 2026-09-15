@@ -339,5 +339,104 @@
   ],
   "leadMeans": "A court baron records who surrendered land, who was admitted to it, and who had died since the last court. These two sit either side of the 1608 muster and inside the silence this archive cannot cross. Neither is digitised, and both are at Birmingham rather than Gloucester — which is why nobody looking in Gloucestershire would find them.",
   "leadChip": "documented"
+ },
+ "tbgas": {
+  "head": "The Society printed the deeds in full, and a pedigree with ages in it",
+  "lede": "Sixty-seven volumes of the Transactions of the Bristol and Gloucestershire Archaeological Society are digitised in full text. Swept on 15 September with a Berkeley mention count as the control for each volume, five carry the name. Two of them change what this archive can say.",
+  "v22Head": "Volume 22, 1899 — the deeds in English, not in summary",
+  "v22Lede": "Everything this archive has read so far is a CALENDAR: an archivist's summary of a deed. Volume 22 prints a numbered series of Berkeley-area deeds in full English translation, and two of them are ours.",
+  "v22": [
+   [
+    "No. XXXIX · 1 May, 3 Edward III — 1329",
+    "«between JOHN SON OF JOHN DE SWONHUNGRE AND ALICE HIS WIFE of the one part, and JOHN SON OF JOHN LE SERIAUNT AND JOAN HIS WIFE on the other part, DAUGHTER AND HEIR OF THOMAS DE STONE». The Swonhungres release their claim in Olverstone, Netterstone and Woodford; the Serjeants release to them everything in WANSWELL «which belong to them of the heritage of the aforesaid Thomas de Stone as in lands meadows pastures commons woods FISHERIES rents and reversions» — except named closes, and except forty shillings' rent from a virgate «WHICH WILLIAM DE SWONHUNGRE HOLDS FOR TERM OF HIS LIFE»."
+   ],
+   [
+    "And the sentence at the end of it",
+    "«all the land, rents, and reversions, which ELYANORA DE STONE, MOTHER OF THE AFORESAID ALICE AND JOAN, held in Kyngescote, remain entirely to [both couples] and to the heirs of the aforesaid Alice and Joan BY REASONABLE PORTION FOR EVER.»"
+   ],
+   [
+    "No. XXXVIII · Monday the Feast of St Mary Magdalene, 27 Edward III — 22 July 1353, at Berkeley",
+    "«between WILLIAM BROTHER AND HEIR OF THOMAS DE SWONHUNGER of the one part, and John Seriaunt the younger of the other» — a partition of all the tenements, lands and rents they held in common «in the vill and hamlets of HAM, CAM, STINCHCOMB, KINGSCOTE, AND HASELCOTE, EXCEPT THE FISHERY IN SEVERN WHICH IS EXCEPTED FROM THIS PARTITION, AND WILL REMAIN IN CO[MMON]». Witnesses John Capel, John Purlewent, John Draicote, Stephen Kyneltre."
+   ]
+  ],
+  "v22Means": "Two things fall out of this. **ALICE AND JOAN ARE SISTERS** — daughters of Thomas de Stone and of **ELYANORA**, a woman neither Smyth nor any deed read here had named — and the Stone inheritance was split between them, the Swonhungres taking Wanswell. That is why a man is «Thomas Swonhungre OF WANSWELL» in 1356: the property came in through his mother's family, and it came in through a woman. And the 1353 indenture is the partition Smyth dates to «27 Edward III» and describes in a line — here it is entire, down to the clause keeping **the Severn fishery out of the division**.",
+  "v22Chip": "documented",
+  "v10Head": "Volume 10 — a pedigree, with ages, out of the royal inquisitions",
+  "v10Lede": "A Daubeney pedigree printed in volume 10 carries the Swonhungers as a branch, and its authorities are inquisitions rather than tradition.",
+  "v10": [
+   [
+    "Isabel Daubeney",
+    "ob. before 1393",
+    "= [Elias] Swonhonger"
+   ],
+   [
+    "Elias Swonhonger",
+    "ob. 13 Richard II — 1389/90",
+    "= [Jone, daughter of John] Bill"
+   ],
+   [
+    "John Swonhonger",
+    "AGED 18 IN 1393; ob. 3 Henry IV — 1401/2, s.p.",
+    "coheir of Elizabeth Wauton in 1394"
+   ],
+   [
+    "Isabel Swonhonger",
+    "—",
+    "= John Thorp"
+   ]
+  ],
+  "v10Src": "Authorities given: the inquisition post mortem of John Wauton, 16 Richard II part 1 no. 16; the inquisition «melius scire» as to the heirs of Elizabeth, late wife of Andrew Wauton, 18 Richard II no. 81; and Smyth's Hundred of Berkeley, page 370.",
+  "v10Means": "**John Swonhunger was eighteen in 1393.** Smyth says he was in ward to Lord Berkeley and died without issue in 1401–2, and this archive found the deed of 5 December 1390 selling his marriage — he was about fifteen. An age, a wardship and a death date from three independent sources, and they agree. It also settles a name: Smyth gives Elias's wife as «Isabel, daughter and coheir of JOHN DE ALBINIACO alias ALBENY». *De Albiniaco* is the Latin of **DAUBENEY**, and the pedigree names her Isabel Daubeney.",
+  "v10Chip": "documented",
+  "twistHead": "And it sharpens this archive's own structural claim",
+  "twist": "This site has said the Swonhungers generate no royal inquisition because they held of Berkeley, not of the Crown — and the deed of 1390 has now documented that tenure. But through the Daubeney marriage they held elsewhere. In 1394 a royal commission, by writ of 21 November 18 Richard II, was sent to the escheator of Gloucestershire to enquire whether **John Swonhongre and others «had become the heirs general of John and Cecilia Daubeney»**, grandparents of Elizabeth Wauton, whose lands at Kingsholme and Hinton Daubeney had fallen in. **So there ARE royal records naming him — just not for the Berkeley land.** The claim was right about Berkeley and too broad about everything else.",
+  "twistChip": "documented",
+  "minorHead": "And two small ones",
+  "minor": "Volume 21 carries «Katherine, daughter of JOHN HARRIS OF SANIGAR» in another family's pedigree — the hamlet used as an address, exactly as Bigland's monuments use it. And the Society's own membership lists for 1923 include **W. SANIGAR, 205 Avon Vale Road, Barton Hill, Bristol** — a man of the name, in Bristol, in living memory."
+ },
+ "cooke": {
+  "head": "And somebody wrote the whole thing up in 1882",
+  "src": "J. H. Cooke, F.S.A., «Wanswell Court, and its Occupants for seven centuries», Transactions of the Bristol and Gloucestershire Archaeological Society, volume VI, 1881–82, pages 313–315 — edited by Sir John Maclean, the same man who printed the muster of 1608",
+  "lede": "This archive spent a week establishing from deeds that Swonhungre and Saniger are one name and one place, and stated plainly that it could not join the medieval family to the Sanigers of 1601 onwards. A Victorian antiquary joined them in print a hundred and forty years ago, and nobody here had opened the volume.",
+  "quote": "They were an old Berkeley family, whose patrimonial house and estate in the neighbourhood is still called SANIGER FARM, AND WAS SOLD BY EDWARD SANIGER TO THE EARL OF BERKELEY IN 1774.",
+  "chip": "inferred",
+  "means": "If Cooke is right, the family held its patrimonial estate continuously from the thirteenth century to 1774, and the two hundred years this archive called a silence are a silence in ITS OWN EVIDENCE rather than in the family's occupation. An Edward Saniger fits: the Berkeley estate deeds have **Edward Saniger of Saniger, clothier, in 1692** and **gent in 1709 and 1716**, and Bigland lists **Edward Saniger** among the freeholders of Hinton in 1791.",
+  "careHead": "And why it is graded INFERRED and not documented",
+  "care": "This is a scholar's assertion in a footnoted article, not a chain of deeds set out. Cooke had the Berkeley muniments and Smyth in front of him and he was careful elsewhere — his castle-guard paragraph refuses the received story until he can produce a court roll for it. But a sentence in a journal is a conclusion, and this archive's rule is that a conclusion is evidence of somebody's reasoning, not of the fact. **The thing that would settle it is the 1774 conveyance itself.**",
+  "descHead": "The descent as Cooke gives it",
+  "desc": [
+   [
+    "Thomas de Stone",
+    "died 1316, leaving two daughters his coheiresses"
+   ],
+   [
+    "ALICE, the younger",
+    "«married John Swanhunger, or Saniger» — Wanswell allotted to her, «augmented by the grant of Thomas sixth lord Berkeley». Her elder sister JOAN, wife of John Serjeant, took the Stone and Woodford estates."
+   ],
+   [
+    "The lands held in common",
+    "Nibley, Ham, Cam, Hasilcote and Kingscote, «subsequently divided by several deeds of partition in 1347 and 1353, when the lands in Hasilcote and Kingscote and a moiety of an estate in Nibley were allotted to the Swanhungers, WHO THUS BECAME CONSIDERABLE LANDOWNERS»"
+   ],
+   [
+    "John Swanhunger, grandson of John and Alice",
+    "«married Isabel daughter of John de Albiniaco, or Daubeney, the lord of Kingsholm by Gloucester, through whom a fourth part of that manor… was added to the family possessions»"
+   ],
+   [
+    "Their son ELIAS",
+    "«by his wife Joan daughter of John Bill, was father of John Swanhunger, or Saniger»"
+   ],
+   [
+    "John Swanhunger or Saniger",
+    "«died without issue in 1402, leaving two sisters, ELIZABETH, married to James Gaynor of Kingsholm, and ISABEL, who by her sister's death without issue inherited the whole property»"
+   ],
+   [
+    "Isabel",
+    "«married JOHN THORPE, A BURGESS OF BRISTOL, the first of a family of whom ten successive generations possessed Wanswell and the other family estates for nearly three centuries.» He died 1441; his son John added lands in Lorrenge, Walgaston, Halmer and Berkeley in 1456."
+   ]
+  ],
+  "descNote": "One discrepancy worth keeping visible: Smyth has ELIAS marrying Isabel Daubeney and a second Elias marrying Jone Bill; Cooke has JOHN marrying Isabel Daubeney and their son Elias marrying Joan Bill. The two printed accounts differ by a generation on which man married the Daubeney heiress, and this archive has no independent means of choosing between them.",
+  "towerHead": "And he settles Thorpe's Tower from a court roll",
+  "tower": "Rudder says the Thorps held by guarding a tower in Berkeley Castle. Cooke refuses to take it on trust: «The only documentary evidence of this Castle-guard tenure which I have met with is in a COURT ROLL FOR THE MANOR OF HAM, holden on the 26th May, 42 Eliz. (A.D. 1600), when the Homage presented the death of NICHOLAS THORPE, who died seised of the manor of Wanswell, holden by the sixteenth part of a knight's fee, the yearly rent of £4 8s. 8d., AND BY KEEPING ONE TOWER IN THE CASTLE OF BERKELEY CALLED THORPE'S TOWER.» He adds that the chief rent «was regularly paid until 1818, when it was extinguished by Earl Fitzhardinge's purchase of the estate».",
+  "towerChip": "documented"
  }
 }

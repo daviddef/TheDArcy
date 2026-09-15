@@ -246,10 +246,10 @@
     {
       "n": 31,
       "what": "Transactions of the Bristol and Gloucestershire Archaeological Society — 40 volumes, none read",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Named on the last roadmap and still open: forty volumes are digitised in full text on the Internet Archive. The Society published the Berkeley charters, and Jeayes's 1892 calendar came out of the same milieu. Method is settled — scan each volume for every spelling with a **Berkeley mention count as the control**, the way Gloucestershire Notes & Queries was done."
+      "note": "**Done — 67 volumes, not 40, and it was the richest source of the day.** Each volume controlled by its own Berkeley mention count. **Volume 22 (1899) prints the deeds in full English translation**: the 1329 indenture naming **Elyanora de Stone, mother of Alice and Joan**, which makes them sisters and explains how Wanswell came in; and the 1353 partition Smyth describes in a line, entire, keeping the Severn fishery out of the division. **Volume 10 prints a Daubeney pedigree** sourced to two royal inquisitions: John Swonhonger **aged 18 in 1393**, died 1401/2 without issue — which fits the sale of his marriage in 1390 exactly. It also corrected this archive's own «no royal inquisition» claim."
     },
     {
       "n": 32,
@@ -326,10 +326,10 @@
     {
       "n": 41,
       "what": "Kane's List of Officers of the Royal Regiment of Artillery",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Porter is the wrong book for **Joseph D'Arcy** — he was Royal Artillery, not Engineers, which is why volumes 1 and 2 are both silent on him. Kane's List is the artillery's equivalent, printed, free and out of copyright, and it carries every officer with dates of commission. The 1821 Army List already gives «D'Arcy, Lt. Col. Joseph, Royal Art.»"
+      "note": "**Done as far as the digitised scans allow, and it confirmed a pattern.** The index to Askwith's 1900 edition of Kane's List carries exactly two D'Arcys in the Royal Artillery — **«D'Arcy, C, 16» and «D'Arcy, J., 25»** — mirroring Connolly's exactly two in the Engineers. The volumes digitised on the Internet Archive are the **biographical-notice volumes and their index**; the pages the index points at are not in these scans. Controlled: the 1869 Kane scan has «Lieutenant» only 7 times and no Shrapnel, so it is a fragment, not a null."
     },
     {
       "n": 42,
@@ -434,6 +434,14 @@
       "owner": "the Falco session",
       "since": "2026-09-15",
       "note": "Cross-archive, raised here because it would otherwise go unsaid. A John Swonhungre held two shops in Bristol Market in 1443, and this estate has more than one archive with Bristol connections. Worth one question before this archive spends effort proving a link that another session has already ruled out."
+    },
+    {
+      "n": 55,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "what": "Find the 1774 conveyance Cooke describes, and settle the bridge properly",
+      "note": "Cooke's sentence — «Saniger Farm… was sold by **Edward Saniger to the Earl of Berkeley in 1774**» — is the join this archive has said all week it could not make, and it is currently graded **inferred** because it is a scholar's conclusion rather than a chain of deeds. The Berkeley estate papers at Gloucestershire Archives already hold Edward Saniger's mortgages of 1692, 1709 and 1716; the 1774 conveyance should be among them. Errand 62, and the most valuable single document now named anywhere on this site."
     }
   ],
   "close": "**Twenty-two items were closed on 15 September 2026 and twenty-five raised in their place.** The new list is not a wish list: every item names a shelfmark, an identifier or a specific defect this session actually produced. The largest single item is number 30 — **153 Berkeley Castle deeds catalogued, free, and unread**. Four items still wait on David and nothing on this page is blocked behind them."
