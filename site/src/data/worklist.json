@@ -374,10 +374,10 @@
     {
       "n": 47,
       "what": "Backfill the 59 nulls that name no control",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The audit of 15 September marked them rather than fixing them: **30 of 89 nulls name a control and 59 do not.** Each costs about one query to settle — re-run the search with a record known to be in the index. Working down the list would either confirm the null or, as with FreeCEN, turn it into an `empty` and a correction."
+      "note": "**Done, and it corrected me rather than the rows.** Reading the grandfathered list properly showed my detector was wrong in both directions: it demanded a digit, so it missed «returns **TWO** entries», «transcribed in full — 7,967 records» and «Dursley runs to 1951… so the window is **well covered**»; widening it then accepted «1841 entries», where the number is a year. **The true count is 55 named and 39 unstated of 94**, not 30 and 59. The fix was to stop guessing: `ctl` is now a **field the author sets**, and the pattern survives only as the bootstrap that set it once."
     },
     {
       "n": 48,
@@ -385,7 +385,7 @@
       "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Done, and control-tested.** `tools/check_controls.py` refuses any NEW `searched.json` row whose outcome is `null` or `empty` and whose text names no test that could have failed. The **62 rows written before the rule are grandfathered by name** in `tools/controls-grandfathered.json` — they are not wrong, they are untested, each is marked «no control stated» on [/searched](/searched/), and clearing them is item 47. Proved it refuses by adding a bad row: two FAIL lines and exit 1. It runs in `build.sh` before the link check. **32 nulls currently name a control.**"
+      "note": "**Done, and control-tested three ways.** `tools/check_controls.py` refuses a null with no `ctl` field, an `unstated` row that is not grandfathered, and a `ctl` on a row that is not a null — all three proved by adding bad rows and watching it exit 1. The **39 rows marked `unstated` are grandfathered by name** in `tools/controls-grandfathered.json` — they are not wrong, they are untested, each is marked «no control stated» on [/searched](/searched/), and clearing them is item 47. Proved it refuses by adding a bad row: two FAIL lines and exit 1. It runs in `build.sh` before the link check. **55 nulls currently name a control.**"
     },
     {
       "n": 49,

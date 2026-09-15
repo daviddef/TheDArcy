@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
+import EraTimeline from "@daviddef/archive-kit/components/EraTimeline.astro";
 import Marriages from "@daviddef/archive-kit/components/Marriages.astro";
 import { u } from "../lib/url.js";
 import { byId } from "../lib/people.js";
@@ -114,6 +115,13 @@ const band = (c) => {
   const y = (String(c.when).match(/\d{4}/) || ["?"])[0];
   return y === "?" ? "Undated" : y.slice(0, 2) + "00s";
 };
+
+/* A hundred and thirty dated marriages, 1554 to 1958 — the longest run in the
+   estate, and the one series that shows the family moving. */
+const timelinePoints = m.rows.filter((r) => r.sort && r.sort[0] >= 1700)
+  .map((r) => ({ label: [r.a, r.b].filter(Boolean).join(" & ").replace(/\s*\[[^\]]*\]/g, ""),
+                 year: r.sort[0], sub: r.place ? r.place.split(",")[0] : r.sort[0] }));
+
 ---
 <Base title="The Marriages" eyebrow={`${m.n} marriages \u00b7 ${families.length} families \u00b7 ${nPub} of their people published`}
   dek="Every marriage this archive can date, in order — and then the families those marriages brought in. It is the only series on the site that shows the family actually moving: Portsea, Camden, Carrigaline, Muttaburra, Toowoomba.">
@@ -138,6 +146,13 @@ const band = (c) => {
     archive holds two George Pitt D'Arcys and three Conyers, so a name would be a guess three times
     over; the join is on the record id, and the tree is the authority on identity.</p>
   </section>
+
+  <EraTimeline points={timelinePoints}
+    eras={[[1700,1801,"Kingdom of Great Britain","--r-habsburg"],[1801,1901,"United Kingdom — the long century","--r-italy"],
+           [1901,1958,"Federation and after","--r-venice"]]}
+    marks={[[1788,"First Fleet"],[1826,"Robert D'Arcy reaches Sydney"],[1854,"The General Hewitt"],
+            [1901,"Australian Federation"],[1914,"The Great War"]]}
+    what="Each dot is a marriage with a date, from 1700, with the town under it. Read the places down and the family's whole movement is in them." />
 
   <Marriages u={u} groups={GROUPED} openAt={6} subject="D'Arcy"
     metrics={[{ n: m.n, label: "marriages" }, { n: placed.length, label: "with a place" },

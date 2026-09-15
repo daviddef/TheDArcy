@@ -695,7 +695,7 @@
    "outcome": "null",
    "got": "It does not, and this is a real answer rather than a failed search. Every one of the seventeen reads “Major-General D'Arcy” and stops — no forename, no father, no seat, no county. On the very same pages other men are “only son of Mr. John Blades, of Ludgate-hill” and “fourth daughter of Charles Coleman, Esq.”; the papers of 1827 were fluent in that grammar and used none of it on him. The most promising unopened door to his parentage is now open and empty.",
    "href": "/obituary",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FindMyPast — Gloucestershire Burials, Bristol",
@@ -779,7 +779,7 @@
    "outcome": "null",
    "got": "He did not, and this is now a real null. John Smith at Portsea returns St Mary baptisms continuously for 1770, 1771, 1772, 1774, 1775, 1779, 1782, 1785, 1786, 1788, 1789, 1790, 1791 and 1792 — where FreeREG holds twenty-two months. Searching that window for every D'Arcy spelling returns Joseph and nobody else. Robert and Jean baptised one child at this parish; children born while the regiment was elsewhere are a separate question.",
    "href": "/portsea",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FindMyPast — Berkeley St Mary the Virgin, after 1677",
@@ -854,7 +854,7 @@
    "outcome": "null",
    "got": "No. Every one of the twelve comes back DIGITISED: FALSE. RG 4 is filmed and published through commercial partners rather than free on TNA's own site. This archive said the opposite the same morning and the overclaim is filed as an error.",
    "href": "/bristol-chapels",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "TNA Discovery — Portsmouth",
@@ -905,7 +905,7 @@
    "outcome": "empty",
    "got": "Untestable. John Smith across the WHOLE OF CHESHIRE for 1800–1820 returns TWO entries, one at Whitegate and one at Wrenbury. It is the emptiest county holding this archive has measured, and Audlem is not in it at all. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/coverage",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeREG — Shropshire, control test",
@@ -998,7 +998,7 @@
    "outcome": "null",
    "got": "They cannot. John Smith, born Staffordshire 1800–1805, returns thirty-one people and every single one is 1861. FreeCEN's Staffordshire holding is 1861 and nothing else, so Samuel Sneyd — who died in 1856 — was never findable, however hard he was looked for. A null that says nothing about the family and everything about the index.",
    "href": "/sneyds",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeREG — Portsea St Mary, Hampshire, control test",
@@ -1146,7 +1146,7 @@
    "outcome": "null",
    "got": "There are exactly TWO William Sneyd records in the whole county for those twenty-five years, and both are Madeley: the baptism of 12 September 1742 and the burial of 29 September 1744. His baptism is not in Staffordshire's transcribed registers under any parish — not Wolstanton, not Betley, not Whitmore, not Keele.",
    "href": "/sneyds",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeREG — Bishop's Transcripts for Madeley",
@@ -1220,7 +1220,7 @@
    "outcome": "null",
    "got": "They are not there. Hampshire holds exactly one D'Arcy record in sixty years — Joseph's baptism of 1780 — and Kent holds thirteen, of which six are this family. Of ten children the tree claims, the registers of the two counties they are supposed to have lived in yield two. The Corps moved them: a son was christened at Bridgetown in Barbados in 1786, and wherever else the Board of Ordnance sent them is where the rest will be.",
    "href": "/chatham",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeREG — Somerset parishes south of the Avon",
@@ -1247,7 +1247,7 @@
    "outcome": "null",
    "got": "One candidate in the whole county: Richard Wakefield, baptised Chedworth 21 December 1770. Chedworth is in the Cotswolds, forty miles from Bristol, and nothing connects him to this family but a name and a plausible date. Recorded as a candidate and nothing more.",
    "href": "/drivers-fields",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeREG — Bristol's four transcribed registers",
@@ -1256,7 +1256,7 @@
    "outcome": "null",
    "got": "One Wakefield baptism only — Louisa, 25 November 1832, Countess of Huntingdon's Chapel, Lodge Street — and her father is James CUBIT Wakefield of St Augustine's parish, with a wife Mary. Not this family. No Saniger appears in any Bristol register at all. The transcribed fraction of Bristol has now been exhausted.",
    "href": "/sanigers",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "Queensland assisted immigration index — every other family in this archive",
@@ -1332,7 +1332,7 @@
    "outcome": "null",
    "got": "81 households assembled from 196 baptisms naming a father. Not one has a mother called Lydia; not one is a John and Lydia; there is a single Hannah baptised in the whole county, at Stinchcombe in 1730; and only three households bear children between 1795 and 1815. Hannah is not in Gloucestershire — which the 1841 census had already said by entering her as born out of the county.",
    "href": "/sanigers",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeBMD — deaths, Lydia Saniger and every spelling, 1841–1875",
@@ -1367,7 +1367,7 @@
    "outcome": "null",
    "got": "Neither exists. Madeley holds Samuel 1745, Joseph 1746, John 1748, Simeon 1751 and no William; and its only Samuel is baptised 1781. The parish is transcribed continuously — 110 Sneyd records from 1699 — so both are real absences. This archive had been using a 1742 William instead, four years off the tree's date, and that child may be the one buried in 1744.",
    "href": "/sneyd",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "Queensland historical BDM index — deaths, searched by MOTHER's name",
@@ -1473,7 +1473,7 @@
    "outcome": "null",
    "got": "It is not. Berkley Somerset is transcribed in full — 7,967 records, 1545–1903 — and the family there is spelled SINGER in every one of 58 entries, with no Hannah baptised near 1805. A clean answer to a good question.",
    "href": "/drivers-fields",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeCEN — 1841 census, Saniger spellings, Bristol",
@@ -1523,7 +1523,7 @@
    "outcome": "null",
    "got": "None. Not a coverage gap: Dursley runs to 1951 and Cam to 1939, so the window is well covered. The tree's 1805 Saniger does not exist in Gloucestershire.",
    "href": "/berkeley",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "FreeREG — Gloucestershire, every Saniger 1790–1900",
@@ -1680,7 +1680,7 @@
    "outcome": "null",
    "got": "Still empty, and now properly established. The first search recorded this; on 15 September 2026 all TWELVE monthly issues of 1827 and BOTH annual indexes were downloaded and read in full. Two D'Arcys appear in the entire year and neither is him: “Offord D'Arcy, Huntingdonshire”, a place name inside a marriage notice, and D'Arcy Wentworth of Sydney, a different man entirely. The only Chatham death reported that June is “Newham, esq. late of Basil-street”. Controls: the Deaths and Obituary sections are present in every issue, Chatham appears three times in June and Engineers five times in May. A Companion of the Bath and a colonel of Engineers died at Chatham and the magazine of record did not notice. That silence is load-bearing on /hornby and it has now been earned rather than assumed.",
    "href": "/hornby",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "Every indexed English baptism collection",
@@ -1689,7 +1689,7 @@
    "outcome": "null",
    "got": "Nothing, under any spelling. Combined with Connolly recording no parentage and the Gentleman's Magazine recording no death, the parentage question is not disputed — it is unknown.",
    "href": "/hornby",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "WO 149 — Royal Military Academy Woolwich cadet registers",
@@ -1698,7 +1698,7 @@
    "outcome": "empty",
    "got": "The wrong record set entirely: WO 149 begins in 1790 and is held at Sandhurst. The archive had recommended it without checking its date range, and said so. Reclassified 15 September 2026 from a null: the source does not cover the question, which is a different fact from the record not being there.",
    "href": "/corrections",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "The London Gazette",
@@ -1889,7 +1889,7 @@
    "outcome": "null",
    "got": "Sanigre: nothing at all. Sinegar: three records and not one is a person — a Bisley police station called Sinegar House in 1950 and 1984, and an unrelated Sussex account of 1705. Both spellings are productive in the Bristol and Berkeley registers and neither has left a catalogued document anywhere.",
    "href": "/sanigers",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "Gloucestershire Registration Service Index — births and marriages",
@@ -2074,7 +2074,7 @@
    "outcome": "empty",
    "got": "Mostly not, and for a structural reason worth stating. The index begins in 1837. Samuel Sneyd married Elizabeth Margaret Oliver at AUDLEM, CHESHIRE in 1809 — wrong county and twenty-eight years too early. His son Samuel Charles married at Camden, NEW SOUTH WALES in February 1837, the very year the index opens, and every later Sneyd marriage this archive holds is in Queensland. The parents stayed and the sons emigrated, so the only marriage the index can reach is the one that stayed: James the engraver, at Stoke in 1842.",
    "href": "/sneyds",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "TNA Discovery — the MEDIEVAL spellings",
@@ -2117,7 +2117,7 @@
    "outcome": "empty",
    "got": "It did not yet. Notices mentioning «Corps of Engineers»: 1774 none, 1775 none, 1776 three — one for the Chief Engineer in Ireland and two reprints of a Bengal notice. The practice appears during the American war (Shewbridge, May 1778) and is routine by the mid-1780s (promotions 1783; «Office of Ordnance… James Glenie», February 1787). Robert D'Arcy's commission of 17 January 1776 predates the Ordnance's habit of publishing, which is why the Army List seniority column and not the Gazette is what settles the date.",
    "href": "/the-corps",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "The London Gazette — what it did give",
@@ -2167,7 +2167,7 @@
    "outcome": "empty",
    "got": "It does not. Gloucestershire Archives D 1874/1 photostats the surviving originals and lists every membrane: Salmonsbury, Holford and Greston, Kiftsgate, Tibblestone, Rapsgate, Bradley, Crowthorne, Brightwells Barrow, Longtree, Cirencester, Bisley, and St Briavels. BERKELEY HUNDRED IS NOT AMONG THEM. The surviving membranes are Cotswold and Forest; the Vale is lost. A named list of what survives is a better null than a search that returns nothing.",
    "href": "/swonhungre",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "The printed Army Lists, 1783, 1802, 1803, 1821",
@@ -2226,7 +2226,7 @@
    "outcome": "empty",
    "got": "They are not. FreeREG has data for 189 Gloucestershire places and the list includes Berkeley, Dursley, North Nibley, Slimbridge, Thornbury, Uley and Woodmancote — but neither Awre nor Blakeney. Any Awre search would have returned nothing for a reason that has nothing to do with the family.",
    "href": "/coverage",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "Gloucestershire Archives, via Discovery",
@@ -2251,7 +2251,7 @@
    "outcome": "empty",
    "got": "Nothing separate survives. Hamfallow returns five hits and four are nineteenth-century gamekeeper registers; «manor of Hinton» Berkeley returns nought. Both were parts of the manor of Ham within the Berkeley estate rather than manors in their own right — which is why their records are inside the Berkeley Castle Muniments and not in a separate manorial series, and it is the same structural reason the Swonhungers generate no royal inquisition.",
    "href": "/swonhungre",
-   "ctl": "unstated"
+   "ctl": "named"
   },
   {
    "src": "Samuel Rudder, A New History of Gloucestershire (1779)",
@@ -2437,7 +2437,8 @@
    "when": "15 Sep 2026",
    "outcome": "empty",
    "got": "Volume 6 was probed by hand earlier the same day for «Swonhung» and «Swonhong» and returned NOUGHT — so it was nearly set aside. Cooke's article spells the name SWANHUNGER and SANIGER throughout, neither of which those two patterns can match. The wider sweep, which carried ten spellings, found it immediately. The same fault as the D'Arcey one: a good alias list, not spent on the search actually being run.",
-   "href": "/swonhungre"
+   "href": "/swonhungre",
+   "ctl": "named"
   },
   {
    "src": "Feet of fines for Gloucestershire",
@@ -2445,7 +2446,8 @@
    "when": "15 Sep 2026",
    "outcome": "empty",
    "got": "It cannot. CP 25/1 survives at Kew but is catalogued ONLY AT PIECE LEVEL — «GLOUCESTERSHIRE: Feet of fines for 14-24 Hen VII: 38-77 membranes» is a typical entry, naming a county and a span of regnal years and not one party. No free, name-indexed published abstract exists for the county: searches for «feet of fines» and «pedes finium» with Gloucestershire return nothing on the Internet Archive, and Discovery returns only the piece descriptions. A fine naming a Swonhungre is therefore unfindable by search and would require reading membranes.",
-   "href": "/coverage"
+   "href": "/coverage",
+   "ctl": "named"
   },
   {
    "src": "BCM/A/1/24/189 and /190 — the Stone side",
@@ -2477,7 +2479,8 @@
    "when": "15 Sep 2026",
    "outcome": "null",
    "got": "Nothing, and the null was already established at book level: Rudder contains NO Saniger under any spelling in 5.7 million characters, against a control of 804 Berkeley mentions and an index carrying Wanswell, Hamfallow, Halmore and Alkington. He mentions Awre 194 times and Blakeney 20, so the parishes are well covered — they simply hold nobody of this name in his account. Bigland, by contrast, gives twenty.",
-   "href": "/swonhungre"
+   "href": "/swonhungre",
+   "ctl": "named"
   },
   {
    "src": "TBGAS — the sweep completed",
@@ -2501,7 +2504,8 @@
    "when": "15 Sep 2026",
    "outcome": "null",
    "got": "It cannot, not yet. BCM/A/1/24/184 of the same year, 1356, makes William the son of JOHN — «a charter of John Swonhungre, his father, son and heir of John Swonhungre». The chantry licence makes a William the son of a William, by a mother called Alienor. Either two Williams were living at once, which other deeds make plausible, or one source is wrong. Recorded as unresolved rather than reconciled.",
-   "href": "/swonhungre"
+   "href": "/swonhungre",
+   "ctl": "unstated"
   },
   {
    "src": "E 179 — the Tudor subsidies for BERKELEY hundred",
@@ -2525,7 +2529,8 @@
    "when": "15 Sep 2026",
    "outcome": "empty",
    "got": "Not freely. Searches of the Internet Archive for «military survey Gloucestershire 1522», for a published 1524 subsidy roll, and for a separate edition of Men and Armour all return nothing. The Gloucestershire Record Series editions of this material are modern and in copyright. The catalogue descriptions are free; the names are not.",
-   "href": "/coverage"
+   "href": "/coverage",
+   "ctl": "unstated"
   },
   {
    "src": "agree.py, rewritten",
@@ -2534,9 +2539,17 @@
    "outcome": "yield",
    "got": "**31 flagged pairs became 14, and none of the three changes was «tighten the window».** A year is now attributed to ONE event rather than to every event nearby; of those, the event word BEFORE the year wins, because English writes «married 21 June 1779» and «baptised 19 March 1780»; and «married» now matches the abbreviation «m. », which «born» and «died» already matched and which was why the archive's own pedigree tables read as contradictions. The meta-registers — /worklist, /open-questions, /coverage, /errands, /corrections — joined the skip list, because a sentence EXPLAINING a false positive is indistinguishable from the false positive. That was noticed when the note written to explain the Joseph D'Arcy case became a fresh source for it.",
    "href": "/what-we-got-wrong"
+  },
+  {
+   "src": "My own control audit, corrected",
+   "what": "Whether «59 of 89 nulls name no control» was true",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "It was not; it was too harsh, and the fault was in my detector rather than in the rows. It required a DIGIT, so it missed «John Smith across the WHOLE OF CHESHIRE for 1800–1820 returns TWO entries», «transcribed in full — 7,967 records, 1545–1903» and «Dursley runs to 1951 and Cam to 1939, so the window is well covered» — all of them controls, stated in words. Widening it then introduced the opposite fault: it accepted «1841 entries», where the number is a YEAR. The real count is 55 named and 39 unstated of 94. The lesson is that the detector was the wrong shape: `ctl` is now a FIELD the author sets, and the pattern survives only as the bootstrap that set it once.",
+   "href": "/searched"
   }
  ],
- "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 30 of them do. 59 were written before that rule and do not, and are marked accordingly rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it untested. The cost of finding out is one query each, and they are on [the work list](/worklist/).",
+ "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 55 do. 39 do not, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**. The classification is made by pattern, and it is deliberately biased towards `unstated`: a row the machine cannot read as controlled is marked untested even if a human would call it controlled. Being called untested when you are not is the harmless direction. The reverse is not.",
  "ctlLabels": {
   "named": "control named",
   "unstated": "no control stated"

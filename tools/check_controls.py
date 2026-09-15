@@ -2,37 +2,37 @@
 """A null must name the test that could have disproved it.
 
 /method promises that every null on this site carries its control. Nothing
-enforced it, and on 15 September 2026 an audit found 59 of 89 null and empty
-rows naming none. That is exactly how a written convention drifts: the rule
-lived in prose and no build refused when it slipped.
+enforced it, and on 15 September 2026 an audit found most null and empty rows
+naming none. That is exactly how a written convention drifts: the rule lived in
+prose and no build refused when it slipped.
 
 So this refuses — for NEW rows only.
 
-The 59 that predate the rule are grandfathered by name in GRANDFATHERED below.
-They are not wrong; they are untested, they are marked as such on the page, and
-working them off is a separate job. What this stops is the sixtieth.
+WHY IT IS A FIELD AND NOT A REGEX
+---------------------------------
+The first version of this gate read the prose and guessed. It was wrong in both
+directions: it missed "John Smith across the WHOLE OF CHESHIRE returns TWO
+entries" because the count was a word rather than a digit, and it accepted
+"1841 entries" because a year is also a number. Tuning the pattern further was
+tuning a machine to approximate an editorial judgement, which it cannot do.
+
+So `ctl` is a FIELD on the row — "named" or "unstated" — and the regex survives
+only as the bootstrap that set it once. The author says whether a control was
+stated. The gate checks that they said.
+
+The bias is deliberate. A row the pattern could not read as controlled was
+marked `unstated`, even where a reader would call it controlled. Being called
+untested when you are not is the harmless direction; the reverse is not.
 
   python3 tools/check_controls.py            # gate
   python3 tools/check_controls.py --list     # show the grandfathered rows
 """
-import os, re, sys, json
+import os, sys, json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SEARCHED = os.path.join(HERE, "..", "site", "src", "data", "searched.json")
 BASELINE = os.path.join(HERE, "controls-grandfathered.json")
-
-# A control is a test that COULD have failed. These are the ways this archive
-# has actually written one — a named control search, a coverage statement with
-# a number in it, a cap that was hit, a span that was measured.
-CONTROL = re.compile(
-    r"\bcontrol\b|\bcontrolled\b|\bcoverage checked\b|\bcap\b|\bcapped\b|"
-    r"\breturns? \d|\bcomplete \d{4}|\bindexed\b|\btested\b|\bcould have failed\b|"
-    r"\bmention count\b|\bagainst a .{0,24}control\b", re.I)
-
-
-def rows():
-    j = json.load(open(SEARCHED, encoding="utf-8"))
-    return j["rows"]
+VALID = {"named", "unstated"}
 
 
 def key(r):
@@ -45,32 +45,38 @@ def main(argv):
     if os.path.exists(BASELINE):
         base = set(json.load(open(BASELINE, encoding="utf-8"))["grandfathered"])
 
-    bad, ok_new, grand = [], 0, 0
-    for r in rows():
+    rows = json.load(open(SEARCHED, encoding="utf-8"))["rows"]
+    bad, named, grand = [], 0, 0
+    for r in rows:
         if r.get("outcome") not in ("null", "empty"):
+            if "ctl" in r:
+                bad.append((r, f"carries ctl={r['ctl']!r} but its outcome is "
+                               f"{r.get('outcome')!r} — ctl belongs to nulls only"))
             continue
-        has = bool(CONTROL.search(r.get("got", "")))
-        if has:
-            ok_new += 1
-            continue
-        if key(r) in base:
+        c = r.get("ctl")
+        if c not in VALID:
+            bad.append((r, f"outcome {r.get('outcome')!r} and ctl={c!r} — "
+                           f"must be one of " + ", ".join(sorted(VALID))))
+        elif c == "named":
+            named += 1
+        elif key(r) in base:
             grand += 1
-            continue
-        bad.append(r)
+        else:
+            bad.append((r, "ctl='unstated' and it is not grandfathered — "
+                           "what test could have failed and did not?"))
 
     if "--list" in argv:
         for k in sorted(base):
             print("  grandfathered  " + k.split("||")[0][:90])
         return 0
 
-    for r in bad:
+    for r, why in bad:
         print(f"  FAIL  controls   {r.get('src','?')[:70]}")
-        print(f"          outcome {r.get('outcome')!r} and no control named — "
-              f"what test could have failed and did not?")
+        print(f"          {why}")
     if bad:
-        print(f"  FAIL  controls   {len(bad)} new null(s) name no control")
+        print(f"  FAIL  controls   {len(bad)} row(s) fail the control rule")
         return 1
-    print(f"  ok    controls   {ok_new} null(s) name a control, "
+    print(f"  ok    controls   {named} null(s) name a control, "
           f"{grand} grandfathered from before the rule")
     return 0
 
