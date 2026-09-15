@@ -444,5 +444,38 @@
       "note": "Cooke's sentence — «Saniger Farm… was sold by **Edward Saniger to the Earl of Berkeley in 1774**» — is the join this archive has said all week it could not make, and it is currently graded **inferred** because it is a scholar's conclusion rather than a chain of deeds. The Berkeley estate papers at Gloucestershire Archives already hold Edward Saniger's mortgages of 1692, 1709 and 1716; the 1774 conveyance should be among them. Errand 62, and the most valuable single document now named anywhere on this site."
     }
   ],
-  "close": "**Twenty-two items were closed on 15 September 2026 and twenty-five raised in their place.** The new list is not a wish list: every item names a shelfmark, an identifier or a specific defect this session actually produced. The largest single item is number 30 — **153 Berkeley Castle deeds catalogued, free, and unread**. Four items still wait on David and nothing on this page is blocked behind them."
+  "close": "**Twenty-two items were closed on 15 September 2026 and twenty-five raised in their place.** The new list is not a wish list: every item names a shelfmark, an identifier or a specific defect this session actually produced. The largest single item is number 30 — **153 Berkeley Castle deeds catalogued, free, and unread**. Four items still wait on David and nothing on this page is blocked behind them.",
+  "accounts": [
+    {
+      "prefix": "err",
+      "noun": "open errands",
+      "file": "site/src/data/errands.json",
+      "rows": "rows",
+      "when": {
+        "state": "open"
+      },
+      "key": "key",
+      "label": "what"
+    },
+    {
+      "prefix": "q",
+      "noun": "open questions",
+      "file": "site/src/data/questions.json",
+      "rows": "rows",
+      "when": {
+        "state": "open"
+      },
+      "key": "key",
+      "label": "q"
+    },
+    {
+      "prefix": "letter",
+      "noun": "letters drafted",
+      "dir": "requests",
+      "ignore": [
+        "README.md"
+      ]
+    }
+  ],
+  "unreconciled": 68
 }
