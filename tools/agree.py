@@ -29,8 +29,27 @@ which generates a register row and would have reproduced the wrong date on
 every future build.
 
 Every one of the 31 pairs still flagged after that was then triaged by hand,
-and every one is a false positive. There are exactly three kinds, and none
-of them is fixable by tightening the window further:
+and every one is a false positive. There are exactly three kinds:
+
+SECOND RUN, same day, after the triage: 31 pairs became 14, by three changes
+that are not "tighten the window" — tightening would only have hidden things.
+
+  a. A year is now attributed to ONE event, not to every event in the window.
+  b. Of those, the event word BEFORE the year wins. English writes "married
+     21 June 1779" and "baptised 19 March 1780": the event names itself and
+     then dates itself. Nearest-neighbour alone still got Joseph D'Arcy wrong,
+     because "baptised" followed 1779 more closely than "m." preceded it.
+  c. EVENTS["married"] now matches "m. " — "born" already matched "b. " and
+     "died" matched "d. ", and the omission was why the archive's own pedigree
+     tables read as contradictions.
+
+And the meta-registers joined SKIP. /worklist, /open-questions, /coverage,
+/errands and /corrections DESCRIBE findings rather than assert them, and a
+sentence explaining a false positive is indistinguishable from the false
+positive. The note written to explain the Joseph D'Arcy case became a fresh
+source FOR the Joseph D'Arcy case, which is how that was noticed.
+
+What survives is almost entirely class 1 below. The three kinds:
 
   1. REPEATED FORENAMES. This family has a Thomas Saniger in 1677, 1744,
      1769, 1803 and 1851. The tool matches on a name, so five men look like
@@ -56,7 +75,7 @@ DIST = os.path.join(ROOT, "site", "dist")
 EVENTS = {
     "born":        r"\bborn\b|\bb\.\s|\bbirth\b",
     "baptised":    r"\bbaptis|\bchristen",
-    "married":     r"\bmarri(?:ed|age)\b|\bwed\b",
+    "married":     r"\bmarri(?:ed|age)\b|\bwed\b|\bm\.\s",   # b. and d. were here; m. was not
     "died":        r"\bdied\b|\bdeath\b|\bd\.\s",
     "buried":      r"\bburied\b|\bburial\b",
     "commissioned": r"\bcommission",
@@ -72,11 +91,19 @@ NEAR = 70           # characters either side — tight on purpose, see SKIP belo
 # few hundred characters, and every one of them looks like a contradiction.
 # The first run of this script reported 234 conflicts and almost all of them
 # came from these; a check that cries wolf is worse than no check.
+# The meta-registers describe findings rather than assert them, and a page that
+# WRITES ABOUT a wrong date looks exactly like a page that states it. /worklist
+# and /open-questions were added on 15 September after a note explaining the
+# Joseph D'Arcy false positive became a fresh source for that very false
+# positive — the checker reporting the sentence written to explain it.
 SKIP = re.compile(r"^(/people|/who|/register|/families|/searched|/changes|/atlas|"
                   r"/graves|/marriages|/households|/timeline|/direct-line|/spine|"
-                  r"/crossread|/index|/$)|mentions\.json|register\.json|"
+                  r"/crossread|/worklist|/open-questions|/coverage|/errands|"
+                  r"/what-we-got-wrong|/corrections|/index|/$)|"
+                  r"mentions\.json|register\.json|"
                   r"families\.json|households\.json|ancestors\.json|line\.json|"
-                  r"searched\.json|changes\.json|graves\.json|marriages\.json")
+                  r"searched\.json|changes\.json|graves\.json|marriages\.json|"
+                  r"worklist\.json|questions\.json|coverage\.json|errands\.json")
 YEAR = re.compile(r"\b(1[5-9]\d\d)\b")
 
 # This archive states wrong dates on purpose. Its method is to record what was
@@ -183,14 +210,34 @@ def main(argv):
                 continue
             if NEGATED.search(window):
                 continue          # the archive is arguing, not asserting
-            for ev, rx in EVENTS.items():
-                if not re.search(rx, window, re.I):
-                    continue
-                for y in years:
-                    found[(who, ev)][y].add(name)
-                if prx:
-                    for pl in set(prx.findall(window)):
-                        where[(who, ev)][pl].add(name)
+
+            # Attribute each year to the NEAREST event word, not to every event
+            # in the window. Before this, "m. Robert D'Arcy, Portsea, 21 June
+            # 1779" one line above "Joseph D'Arcy, baptised 19 March 1780" gave
+            # BOTH years to BOTH events, and Joseph appeared to have been
+            # baptised in two different years. That was the second of the three
+            # false-positive classes in the docstring, and it is the one that
+            # made the report look alarming. A year now belongs to whichever
+            # event word is closest to it, which is what a reader does.
+            hits = [(m.start(), ev) for ev, rx in EVENTS.items()
+                    for m in re.finditer(rx, window, re.I)]
+            if not hits:
+                continue
+            places = set(prx.findall(window)) if prx else set()
+            for ym in YEAR.finditer(window):
+                y = int(ym.group(0))
+                # Prefer the nearest event word BEFORE the year. English writes
+                # "married 21 June 1779" and "baptised 19 March 1780" — the
+                # event names itself first, then dates itself. Plain nearest-
+                # neighbour still got Joseph wrong, because "baptised" followed
+                # 1779 more closely than "m." preceded it. Falls back to the
+                # nearest following word when nothing precedes.
+                before = [h for h in hits if h[0] <= ym.start()]
+                _, ev = (max(before, key=lambda h: h[0]) if before
+                         else min(hits, key=lambda h: h[0] - ym.start()))
+                found[(who, ev)][y].add(name)
+                for pl in places:
+                    where[(who, ev)][pl].add(name)
 
     print(f"agree: {nsrc} data files and pages, "
           f"{len(found):,} (person, event) pairs with a date, "

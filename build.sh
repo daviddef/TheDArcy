@@ -25,6 +25,13 @@ python3 tools/build_search.py
 echo "── second pass"
 ( cd site && npm run build --silent )
 
+# A null must name the test that could have disproved it. /method has promised
+# this for weeks and nothing enforced it, which is how 59 uncontrolled nulls
+# accumulated. The 62 that predate the rule are grandfathered by name; this
+# refuses the sixty-third. Control-tested by adding a bad row: exit 1.
+echo "── control check"
+python3 tools/check_controls.py
+
 echo "── link check"
 python3 tools/check_links.py
 

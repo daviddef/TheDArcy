@@ -2502,6 +2502,38 @@
    "outcome": "null",
    "got": "It cannot, not yet. BCM/A/1/24/184 of the same year, 1356, makes William the son of JOHN — «a charter of John Swonhungre, his father, son and heir of John Swonhungre». The chantry licence makes a William the son of a William, by a mother called Alienor. Either two Williams were living at once, which other deeds make plausible, or one source is wrong. Recorded as unresolved rather than reconciled.",
    "href": "/swonhungre"
+  },
+  {
+   "src": "E 179 — the Tudor subsidies for BERKELEY hundred",
+   "what": "Whether named taxpayers survive between the medieval deeds and the parish registers",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Six pieces, all described as ASSESSMENT (INDIVIDUALS) — meaning named taxpayers, not just totals. E 179/114/240 (8 Nov 1543); E 179/114/235 and E 179/114/296/5 (both 1544–46); E 179/114/272 (6 March 1546, with Henbury and Barton Regis); E 179/114/295 (1549, the «relief»); E 179/115/307 (1549, county-wide). None digitised.",
+   "href": "/errands"
+  },
+  {
+   "src": "E 179 — the Tudor subsidies for BLEDISLOE hundred",
+   "what": "The Forest side — Awre and Blakeney, which no other source reaches",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "They survive, and they matter more than the Berkeley ones because nothing else covers these parishes. E 179/114/287/1, [1523–1525], «Assessment (individuals)»; E 179/114/252, [1524], St Briavels and Bledisloe, assessment of individuals; E 179/114/230, [1524]; E 179/113/204, 20 Dec 1524, certificate; E 179/114/287/2, [1544], assessment of individuals; E 179/114/246, 10 Oct 1544. Awre has NO FreeREG coverage, NO surviving Protestation return and NO surviving 1381 poll tax membrane — the Tudor subsidy and the manor court rolls are the only dense named sources it has.",
+   "href": "/errands"
+  },
+  {
+   "src": "A published edition of the Gloucestershire subsidies",
+   "what": "Whether any of it can be read without going to Kew",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "Not freely. Searches of the Internet Archive for «military survey Gloucestershire 1522», for a published 1524 subsidy roll, and for a separate edition of Men and Armour all return nothing. The Gloucestershire Record Series editions of this material are modern and in copyright. The catalogue descriptions are free; the names are not.",
+   "href": "/coverage"
+  },
+  {
+   "src": "agree.py, rewritten",
+   "what": "Whether the archive's own contradiction detector could be made worth reading",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "**31 flagged pairs became 14, and none of the three changes was «tighten the window».** A year is now attributed to ONE event rather than to every event nearby; of those, the event word BEFORE the year wins, because English writes «married 21 June 1779» and «baptised 19 March 1780»; and «married» now matches the abbreviation «m. », which «born» and «died» already matched and which was why the archive's own pedigree tables read as contradictions. The meta-registers — /worklist, /open-questions, /coverage, /errands, /corrections — joined the skip list, because a sentence EXPLAINING a false positive is indistinguishable from the false positive. That was noticed when the note written to explain the Joseph D'Arcy case became a fresh source for it.",
+   "href": "/what-we-got-wrong"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 30 of them do. 59 were written before that rule and do not, and are marked accordingly rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it untested. The cost of finding out is one query each, and they are on [the work list](/worklist/).",

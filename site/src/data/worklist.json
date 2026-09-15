@@ -302,10 +302,10 @@
     {
       "n": 38,
       "what": "The Tudor subsidy rolls for Berkeley and Bledisloe hundreds, 1523–25",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Discovery turned these up while the hearth tax was being checked: **E 179/113/190/1, E 179/114/287/1, E 179/114/230, E 179/116/465/2**. Subsidy rolls name taxpayers by hundred and tithing, and 1523–25 sits squarely in the two-hundred-year silence between the Swonhungres failing in 1401 and John Saniger appearing at Berkeley in 1601. Not digitised — a catalogue question first, then an errand."
+      "note": "**Done as a catalogue question, and the Forest side is the part that matters.** Six pieces for **Berkeley hundred** (1543–49) and six for **BLEDISLOE** (1523–25 and 1544), every one described as «Assessment (**individuals**)» — named taxpayers. None digitised; no free published edition exists, and the Gloucestershire Record Series editions are in copyright. Bledisloe is the find: Awre and Blakeney have **no FreeREG coverage, no Protestation return and no surviving 1381 poll tax membrane**, so the subsidy and the court rolls are the only dense named sources that parish has. Errand 63."
     },
     {
       "n": 39,
@@ -382,18 +382,18 @@
     {
       "n": 48,
       "what": "Make the build refuse a new null that names no control",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The rule exists on [/method](/method/) and nothing enforces it, which is how 59 rows accumulated. A check alongside `check:worklist` should fail on any `searched.json` row added from now on whose outcome is `null` and whose `got` names no control. **Grandfather the existing 59** — the gate is for new work, and the backfill is item 47."
+      "note": "**Done, and control-tested.** `tools/check_controls.py` refuses any NEW `searched.json` row whose outcome is `null` or `empty` and whose text names no test that could have failed. The **62 rows written before the rule are grandfathered by name** in `tools/controls-grandfathered.json` — they are not wrong, they are untested, each is marked «no control stated» on [/searched](/searched/), and clearing them is item 47. Proved it refuses by adding a bad row: two FAIL lines and exit 1. It runs in `build.sh` before the link check. **32 nulls currently name a control.**"
     },
     {
       "n": 49,
       "what": "Teach agree.py to suppress the adjacent-event false positive",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "The run of 15 September flagged 31 pairs and every one was noise — most of it repeated forenames, and the most alarming (Joseph D'Arcy baptised 1779 vs 1780) was his **parents' marriage** sitting inside the 70-character window. A tool whose output is entirely noise stops being read. Narrow the window for `married` near a `born`/`baptised`, and only then consider letting exact-date disagreements fail a build."
+      "note": "**Done — 31 pairs down to 14, and the remainder are almost all the repeated-forename class the docstring already names.** Three changes, none of them «tighten the window»: a year goes to **one** event instead of every event nearby; the event word **before** the year wins, because English dates itself after naming itself; and `married` now matches «m. », which `born` and `died` already matched — the omission was why this archive's own pedigree tables read as contradictions. The **meta-registers joined SKIP**: my own note explaining the Joseph D'Arcy false positive had become a fresh source for it."
     },
     {
       "n": 50,

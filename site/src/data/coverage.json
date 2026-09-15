@@ -451,6 +451,15 @@
    "verdict": "good",
    "note": "NOT DIGITISED — the catalogue is free, the documents are a visit. This is the densest surviving source for a parish that has no Protestation return, no 1381 poll tax membrane and no FreeREG coverage. Errand 58.",
    "href": "/errands"
+  },
+  {
+   "db": "E 179 — Tudor lay subsidies",
+   "where": "Berkeley and Bledisloe hundreds, Gloucestershire",
+   "holds": "named taxpayers, hundred by hundred, in the century this archive cannot otherwise cross",
+   "span": "1523–25, 1543–46, 1549",
+   "verdict": "good",
+   "note": "Catalogued individually and described as «Assessment (individuals)», so the names are known to be there. NOT DIGITISED and no free published edition exists. For BLEDISLOE — Awre and Blakeney — this matters more than anywhere else: that hundred has no FreeREG coverage, no surviving Protestation return and no surviving 1381 poll tax membrane.",
+   "href": "/errands"
   }
  ]
 }
