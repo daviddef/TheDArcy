@@ -1,0 +1,194 @@
+{
+ "found": "15 September 2026",
+ "lede": "This archive has carried John Smyth's pedigree of the Swonhungers on Smyth's own authority since 13 September — six generations, from a John who married a Stone coheir to the John who died without issue in 1401. Today the deeds Smyth was reading were found in a catalogue, and they do better than agree with him. They confirm him from the parchment, and they add a generation he did not print.",
+ "how": {
+  "head": "Why it had not been found before",
+  "body": "The Discovery catalogue was searched on 14 September and returned seventy-one records — under SANIGER. That is the modern spelling. The medieval clerks did not use it, and this archive's own alias list has carried the medieval forms for weeks without anybody running them against a catalogue.",
+  "rows": [
+   [
+    "Swonhungre",
+    "126",
+    "the commonest medieval form"
+   ],
+   [
+    "Swonhongre",
+    "55",
+    "the same name, the scribe's other vowel"
+   ],
+   [
+    "Saniger",
+    "71",
+    "searched on 14 September — the modern form"
+   ],
+   [
+    "Sanigar",
+    "44",
+    "mostly modern, and mostly elsewhere"
+   ],
+   [
+    "Sanniger",
+    "4",
+    "two of them matter: Berkeley 1694, Chepstow 1806"
+   ],
+   [
+    "Swonhunger",
+    "2",
+    "the spelling Smyth himself printed — almost unused by the clerks"
+   ],
+   [
+    "Swanhanger",
+    "3",
+    "the form that survived into the estate papers"
+   ],
+   [
+    "Sanigor · Sinegar · Swanhunger",
+    "6",
+    "one useful, the rest false"
+   ],
+   [
+    "Sanigre · Sannigar · Synigar · Swonhanger · Swanhangar",
+    "0",
+    "tested, and empty"
+   ]
+  ],
+  "means": "One hundred and ninety-five unique records across thirteen spellings, of which a hundred and seventy-eight are at Berkeley Castle. Seventeen of the twenty-five read closely today were new to this archive. The lesson is narrow and cheap: this site already knew the old spellings — it uses them in its own search index — and had simply never spent them on somebody else's catalogue.",
+  "chip": "documented"
+ },
+ "formation": {
+  "head": "The surname being made, in one line of a deed",
+  "ref": "BCM/A/1/24/266 · temp. Edward I, 1272–1307 · quote GC1555",
+  "quote": "Thomas de Swonhungre, son of Thomas de Esshelesworth",
+  "body": "The father is named from one place and the son from another. Four and a half acres in the field called Alilonde pass to Henry le Grout of Berkeley for a penny a year, a pound of cumin, and seven marks down.",
+  "means": "This is what a locative surname looks like before it is a surname. The son is not called Swonhungre because his father was; he is called it because he lives there. A generation later the name is heritable, and by 1356 it is being inspected in charters as a family name.",
+  "chip": "documented"
+ },
+ "identity": {
+  "head": "Saniger and Swonhungre, in the same sentence, in 1322",
+  "ref": "BCM/A/1/24/261 · St Mark the Evangelist, 15 Edward II · quote GC2376",
+  "body": "Denise Bolcard, widow, leases Philip son of Richard Couthulf of Saniger one selion of land in the field called Westfeld, in the furlong called Kyngakre, «beside the path from Berkel' to Swonhungre», for life, at a halfpenny a year. The witnesses include WILLIAM DE SWONHUNGRE. The deed was executed AT SANIGER.",
+  "means": "Smyth wrote in about 1639 that the place was «Swonhunger; corruptly called Saniger», which reads as an antiquary reporting a later corruption. This deed is three hundred years before Smyth and uses both forms at once — a man of Saniger, a path to Swonhungre, a witness surnamed de Swonhungre, and Saniger as the place the scribe was standing in. **They were not successive spellings. They were contemporaneous ones.**",
+  "chip": "documented"
+ },
+ "pedigree": {
+  "head": "Smyth confirmed from the parchment, and one generation added",
+  "lede": "Three deeds carry genealogical statements. Two of them match what Smyth printed; the third gives a generation above where his pedigree starts.",
+  "rows": [
+   [
+    "BCM/A/1/56/29",
+    "6 Oct 1354",
+    "«William Swonhongre, COUSIN AND ONE OF THE HEIRS OF THOMAS DE STONE; and Walter Hurste and Joan his wife, cousin and coheir of the said Thomas» — an indenture dividing a messuage and a virgate in Nibbeleye. Smyth says William «took a third partition of the family lands in 27 Edward III». This is that partition, in the original, at 28 Edward III.",
+    "confirms Smyth"
+   ],
+   [
+    "BCM/A/1/24/184",
+    "1 May 1356",
+    "«William Swonhungre, brother and heir of Thomas Swonhungre of Wanswell» inspects «a charter of JOHN SWONHUNGRE, HIS FATHER, SON AND HEIR OF JOHN SWONHUNGRE». The catalogue adds: «[Transcript: Smyth, iii. 380-1.]»",
+    "confirms Smyth, and adds a generation"
+   ],
+   [
+    "MS 3549/4",
+    "14th century",
+    "A grant in fee tail by the vicar of Berkeley and the rector of Stanley to «WILLIAM SWONHUNGRE AND ISABELLA HIS WIFE». Held not at Berkeley Castle but at Birmingham.",
+    "confirms Smyth"
+   ]
+  ],
+  "gain": "Smyth's pedigree opens with a John Swonhunger who married Alice, younger daughter and coheir of Thomas de Stone. The 1356 inspeximus says that John was himself «son and heir of John Swonhungre» — so there is a John above the John the printed pedigree begins with. And Smyth gives William's first wife as Isabel; a deed at Birmingham, which Smyth is unlikely to have seen, names her Isabella.",
+  "means": "The pedigree on this site was carried as INFERRED because it rested on one antiquary transcribing deeds nobody here had seen. The deeds have now been seen — as modern catalogue descriptions, not as parchment — and they say what he said. That moves the spine of it, not every twig.",
+  "chip": "documented",
+  "caveat": "What has been read is the archivists' calendar of each deed, not the deed. A calendar is a summary made by somebody competent who had the original in front of them; it is excellent evidence and it is not the document. The deeds are at Berkeley Castle, at Birmingham, at Hertford and at Kew, and none of them has been seen by this archive."
+ },
+ "alice": {
+  "head": "A woman named as an ancestor, in Hertfordshire",
+  "ref": "DE/M/95 · Hertfordshire Archives and Local Studies · 20 Edward III, 14 March 1346",
+  "body": "«Between John Capel, Thomas de Swonhongre and John de Lorewynge: whereas formerly a purparty was made, between Joan Capel, mother of the said John Capel, her heir, ALICE DE SWONHONGRE, ANCESTOR OF THE SAID THOMAS…»",
+  "means": "Two women named as the people the land came through, in a document filed four counties away from Berkeley because a later owner's papers ended up in Hertfordshire. Berkeley Castle holds its own copy as BCM/A/1/24/297. Medieval deeds name women when the descent runs through them, which is more often than the pedigrees printed from those deeds tend to show.",
+  "chip": "documented"
+ },
+ "fish": {
+  "head": "And the fish-traps turn up again",
+  "ref": "BCM/A/1/24/185 · 11 April 51 Edward III, 1377",
+  "body": "Elias regrants a holding his father William had leased to William Panyter: a messuage, curtilage and garden, two crofts called Homecroftes, land at Homemersch, Homemeode and Homeolond, two parcels called Luyteleradelynch and Mecheleradelynch — and «TWO STAITHES IN THE SEVERN FOR THE CONSTRUCTION OF FISH-TRAPS». The rent is halved from 26s. 8d. to 13s. 4d., and Amicia, Panyter's wife, is to have the holding for her life after him.",
+  "means": "This archive already had Jeayes's 1892 calendar of a Berkeley charter reserving a fishery on Wednesdays and Fridays. The staithes are the same economy seen from the tenant's side: a family whose land ran to the Severn and whose rent was partly in the right to fix traps in it.",
+  "chip": "documented"
+ },
+ "later": {
+  "head": "The place outlives the family that was named from it",
+  "lede": "Smyth's main line ends in 1401 with a John who died without issue, and the estate passes to Thorpe. The name on the ground does not stop.",
+  "rows": [
+   [
+    "BCM/A/1/67/13",
+    "13 Nov 1428",
+    "«John Swonhungre the elder» — with John Byrden, chaplain, and William Brown of Berkeley"
+   ],
+   [
+    "MS 3549/187",
+    "6 April 2 Charles I, 1626",
+    "Inquisition post mortem of Henry Mallett, a minor, holding lands in Peddington, Matford and «Swanhingne Swanhanger»"
+   ],
+   [
+    "D2957/41/129",
+    "17 Dec 1694",
+    "«EDWARD SANNIGER OF BERKELEY, GENT» assigns a mortgage on Window Feathers, Upper Feathers and two acres in Hamstalls, in Alkington — £100, to a Dursley clothier and a Dursley mercer"
+   ],
+   [
+    "D654/III/9",
+    "1690–1741",
+    "«Messuage called Oldminsters in SWANHANGER, and lands (named) [SANIGER IN HINTON]» — the cataloguer's own square brackets, equating the two"
+   ]
+  ],
+  "means": "The 1694 deed is the same household this archive already follows through the Berkeley estate papers — Edward Saniger of Saniger, clothier, mortgaging to Richard Holliday the cooper in 1692 — spelled with two n's and styled GENT two years later, in a transaction assigning that very mortgage on.",
+  "chip": "documented"
+ },
+ "kew": {
+  "head": "Two at Kew, from the other end of the same road",
+  "rows": [
+   [
+    "E 40/11334",
+    "[1100–1603]",
+    "Grant by the warden and prior of «the hospital of the Holy Trinity of LONGEBRUG without Berkeley» to Thomas Aleyn and Alice his wife"
+   ],
+   [
+    "BCM/A/1/12/92",
+    "mid 13th century",
+    "Maurice lord of Berkeley grants the same Thomas Aleyn and Alice a messuage, garden, curtilage and croft in the town of Berkeley, «between THE KING'S HIGHWAY FROM LONGEBRUGGE TO SWONHUNGER» and the road to Richard Averey's house — rent 12s., and a tun of wine"
+   ],
+   [
+    "E 40/12147",
+    "6 Oct 1339",
+    "Release by Richard Adames of Pedynton to John Broun of Weneswelle and Alice his wife, of land «in SWONHONGRE AND WENESWELLE»"
+   ]
+  ],
+  "means": "The highway runs from Longbridge to Swonhunger, and Longbridge has a hospital whose grants name the same couple as the Berkeley charter. Swonhungre and Wanswell sit side by side in 1339, and in 1356 a man is «Thomas Swonhungre OF WANSWELL». The hamlet is being mapped by its roads and its neighbours rather than asserted.",
+  "chip": "documented"
+ },
+ "limits": {
+  "head": "What none of this does",
+  "body": "It does not connect these people to this family. The Swonhungre main line ended in 1401 and the archive's own Sanigers appear at Berkeley from 1601 — two hundred years of silence, across which no descent has been shown and none is claimed here. What today established is that the NAME and the PLACE are one thing, documented from the 1270s, and that Smyth was reporting deeds rather than tradition.",
+  "gap": "The join this archive actually needs is later and smaller: from the eleven men of the 1608 muster to John Saniger who married Lydia at Berkeley about 1797. Nothing found today touches it.",
+  "chip": "lore"
+ },
+ "smyth3": {
+  "head": "And Smyth, read again for the hamlet rather than the family",
+  "lede": "Volume 3 of the Berkeley Manuscripts — Smyth's Description of the Hundred, written about 1639 — was already quoted here for «Swonhunger; corruptly called Saniger». Read again on 15 September against the deeds, it gives two things that sentence does not.",
+  "rows": [
+   [
+    "The hamlet has a place in a formal list, not just a note",
+    "«the hambletts of Wike ats Wikes-elme, WANEFWELL, SWONHUNGER ATS SANIGER, Halmer ats Ecton, and Egeton: all of them within the parifh of Berkeley» — the hamlets of Hamfallow, one of the two halves of the manor of Ham. «Ats» is ALIAS, which is a flatter and more useful word than «corruptly called»: the two names are given as equal alternatives in an estate survey."
+   ],
+   [
+    "And the neighbours are the deeds' neighbours",
+    "Wanswell sits beside Swonhunger in Smyth's list, and Wanswell is where the deeds put the family: «Thomas Swonhungre OF WANSWELL» in 1356, land «in Swonhongre and Weneswelle» in 1339. Smyth is describing in 1639 the same cluster of hamlets the Berkeley clerks were writing about three hundred years earlier."
+   ],
+   [
+    "A named property that survives into the estate papers",
+    "Smyth lists the freeholds: «Oldminfter, Kingfhill, ffrogpit, Brokend, PART OF SWONHUNGER ATS SANIGER, Shobenaffe and Metrefden», and notes «one of the 8 tith barnes within the parifh of Berkeley, called OLDMINSTER BARNE». Gloucestershire Archives D654/III/9, 1690–1741, is «Messuage called OLDMINSTERS in Swanhanger… [Saniger in Hinton]». Smyth's Oldminster and the deed's Oldminsters are one property."
+   ],
+   [
+    "A second alias statement, from a fine",
+    "«levied a fine of that and other his lands in Berkeley, WANIFWELL, HINTON, SANYGER ATS SWONHUNGER» in the reign of Henry VII — the alias again, in the other order, a hundred and forty years before Smyth wrote the sentence this archive had been quoting."
+   ]
+  ],
+  "means": "The archive had Smyth's one famous sentence. What it did not have was that Smyth says the same thing three more times in passing, in the flat language of an estate survey rather than the language of an antiquary correcting a vulgar error — and that he names a property, Oldminster, which can be followed from his survey into a deed of the 1690s.",
+  "chip": "documented"
+ }
+}

@@ -206,5 +206,69 @@
   "parent": "Nothing about where he came from. The Calendar prints parentage and schooling when it has them — the very next entry, Major-General George Bridges, opens “After the usual course of instruction at Woolwich Academy” — and for Robert D'Arcy it prints none. The oldest question in this archive, who his parents were, is not answered here, and the silence is from the army's own book.",
   "chipParent": "a null from the best-placed source",
   "where": "Read 15 September 2026 in the free full text of the 1820 third edition on the Internet Archive."
+ },
+ "gazette": {
+  "head": "The Gazette is silent, and the silence has a date",
+  "lede": "The London Gazette is free, needs no account, and is the official record of every commission the Crown signed. Searched on 15 September for both spellings across 1770–1830, it does not name this Robert D'Arcy once. That is worth something only because the search was controlled first.",
+  "controlHead": "What the control showed",
+  "control": [
+   [
+    "The corpus is there",
+    "1,057 notices mentioning «Lieutenant» in the 1770s alone, 245 mentioning «Ordnance», 38 mentioning «Engineers». The decade is digitised and searchable."
+   ],
+   [
+    "Engineers ARE gazetted — later",
+    "25 May 1778, issue 11878: «Lieutenant Thomas Shewbridge, of the Corps of Engineers, to be First Lieutenant». 24 February 1783, issue 12418: promotions in the Corps of Engineers, naming William Green, Matthew Dixon, John Archer, Harry Gordon and John Brewse. 23 February 1787, issue 12833: «Office of Ordnance… Corps of Engineers, Second Lieutenant James Glenie is appointed to be First Lieutenant»."
+   ],
+   [
+    "But not in 1776",
+    "Notices mentioning «Corps of Engineers» by year: 1774 — NONE. 1775 — NONE. 1776 — three, of which one concerns the Chief Engineer in Ireland and the other two are the same Bengal notice reprinted. 1777 — three. Not one British engineer commission list in the year Robert D'Arcy was commissioned."
+   ],
+   [
+    "And the Darcys who are there are other men",
+    "All twenty-two notices naming a Darcy or D'Arcy between 1770 and 1789 are identifiable: Darcy Tancred, Darcy Burnell of Winkburn, Darcy Molineux, Sir Robert Darcy Hildyard of Winestead, Darcy Linton, John Pomeroy Darcy, Arthur Darcy — and Darcy Lever, which is a place in Lancashire."
+   ]
+  ],
+  "means": "The Ordnance did not gazette its engineer commissions in 1776; it began doing so during the American war and was doing it routinely by the mid-1780s. So the Gazette's silence is not evidence that the commission did not happen — it is evidence about when the Ordnance started publishing, and it is the reason the seniority column of the printed Army List, not the Gazette, is the record that settles 17 January 1776.",
+  "chip": "documented",
+  "bonusHead": "One thing it did give, exactly dated",
+  "bonus": "The London Gazette, issue 12850, page 197, 23 April 1787: «His Majesty, by Warrant of this Day's Date, has been pleased to direct, that the Corps of Engineers shall in future take the Name of the Corps of ROYAL Engineers, and be so stiled and called.»",
+  "bonusMeans": "This page calls him an officer of the Corps of Engineers, which is right for 1776 and wrong for the end of his career. He was commissioned into the Corps of Engineers and the corps became the Royal Engineers under him, by warrant, in April 1787 — eleven years in.",
+  "bonusChip": "documented"
+ },
+ "run": {
+  "head": "The career, year by year, out of the printed lists",
+  "lede": "This page used to draw a line between three dots — 1778, 1781 and the Royal Military Calendar of 1820. The Army Lists are annual, out of copyright and free in full text, so the dots can be joined. Three more editions were read on 15 September and they change what this archive can say about the shape of his service.",
+  "spellHead": "And the reason he had been hard to find",
+  "spell": "The 1783 compositor set his name **ROBERT D'ARCEY**, with an E. Search an outside catalogue for D'Arcy or Darcy and he is not there. This site's own search index has folded «d'arcey» and «darcey» into the D'Arcy group for weeks — the alias list was right, and it simply had never been spent on anybody else's index.",
+  "spellChip": "lore",
+  "rows": [
+   [
+    "1783",
+    "SECOND LIEUTENANT, The Corps of Engineers",
+    "Seven years after commissioning and still on the bottom rung. The ditto-chain is intact and readable: «John Humfrey 17 Jan. 1776 · James Fiddes do. · Richard Hockings do. · Robert Beatfon do. · ROBERT D'ARCEY do. · Benjamin Slack 4 Mar.» — Slack breaking the run with his own later date, which is what makes the chain legible.",
+    "A list of the officers of the Army, 32nd edition, 1783"
+   ],
+   [
+    "1802",
+    "CAPTAIN, Corps of Royal Engineers",
+    "The corps has been Royal for fifteen years. He is listed among the captains in the same cohort order he was commissioned in: «William Kerfteman, Charles Holloway, John Humfrey, Richard Hockings, ROBERT D'ARCY, George Bridges» — the men of 17 January 1776 still moving up together, twenty-six years on.",
+    "A list of the officers of the army, 1802, p.409"
+   ],
+   [
+    "1803",
+    "CAPTAIN, Corps of Royal Engineers — and MAJOR in the Army",
+    "He appears twice in the same volume: among the captains of the corps at page 288, and in the army's list of MAJORS, again beside Hockings. Ordnance officers carried corps rank and army rank separately, and by 1803 his army rank had outrun his corps rank.",
+    "A list of the officers of the army, 1803, pp.36 and 288"
+   ],
+   [
+    "1821",
+    "The next generation, in the same book",
+    "«D'Arcy, Lt. Col. Joseph, Royal Art.» — the son in the artillery, a lieutenant-colonel, in the index of the 1821 list.",
+    "A list of the officers of the Army and of the Corps of Royal Marines, 1821"
+   ]
+  ],
+  "means": "The twenty-four-year blank this page once claimed is now furnished at both ends and in the middle: Minorca in 1781 from Porter, Second Lieutenant in 1783 from the Army List, Captain by 1802, Major in the army by 1803, Copenhagen in 1807 and Walcheren in 1809 from Porter again. What it shows is a slow career — seventeen years to make the rank of captain in a corps that promoted strictly by seniority and had very few deaths to promote into.",
+  "chip": "documented"
  }
 }

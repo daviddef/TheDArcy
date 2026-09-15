@@ -1997,6 +1997,150 @@
    "outcome": "empty",
    "got": "Mostly not, and for a structural reason worth stating. The index begins in 1837. Samuel Sneyd married Elizabeth Margaret Oliver at AUDLEM, CHESHIRE in 1809 — wrong county and twenty-eight years too early. His son Samuel Charles married at Camden, NEW SOUTH WALES in February 1837, the very year the index opens, and every later Sneyd marriage this archive holds is in Queensland. The parents stayed and the sons emigrated, so the only marriage the index can reach is the one that stayed: James the engraver, at Stoke in 1842.",
    "href": "/sneyds"
+  },
+  {
+   "src": "TNA Discovery — the MEDIEVAL spellings",
+   "what": "Swonhungre, Swonhongre, Swonhunger, Swonhangre, Swanhanger, Swanhunger — the forms the clerks actually used, as opposed to the modern Saniger searched on 14 September",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "195 unique records across thirteen spellings — 178 at Berkeley Castle, 5 at Gloucestershire Archives, 5 at Kew, 3 at Birmingham, and one each at Bristol, Hertford and the National Library of Wales. SWONHUNGRE alone returns 126 against 71 for Saniger. Seventeen of the twenty-five read closely were new to this archive, including three carrying genealogical statements.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "TNA Discovery — spellings that return nothing",
+   "what": "Sanigre, Sannigar, Synigar, Swonhanger, Swanhangar — control on the alias list itself",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "got": "Nought for all five, against the same catalogue that returns 126 for Swonhungre in the same query shape. The control that could have failed did not: the search works, these forms simply were not used. Five of this site's alias spellings are therefore modern conjecture rather than attested variants.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "Berkeley Castle Muniments, via Discovery",
+   "what": "Whether the muniments Jeayes calendared in 1892 are catalogued in more detail now",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "They are, item by item, and free to search without an account. 178 records under the medieval spellings, each with a calendar description naming parties, land, rent and witnesses, and each quoting the GC number to cite when requesting the document at Berkeley. Errand 51 asked for exactly this and can be closed.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "The London Gazette",
+   "what": "ROBERT and JOSEPH D'ARCY, both spellings, 1770–1830 — free, full-text, no account",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "got": "Neither man appears. All twenty-two notices naming a Darcy or D'Arcy between 1770 and 1789 are other people — Darcy Tancred, Darcy Burnell of Winkburn, Darcy Molineux, Sir Robert Darcy Hildyard, Darcy Linton, John Pomeroy Darcy, Arthur Darcy, and Darcy Lever, which is a place in Lancashire. Controlled first: the decade holds 1,057 notices mentioning «Lieutenant» and 245 mentioning «Ordnance», so the corpus is present and searchable.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "The London Gazette — why the null is structural",
+   "what": "Whether the Ordnance gazetted Corps of Engineers commissions at all in 1776",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "It did not yet. Notices mentioning «Corps of Engineers»: 1774 none, 1775 none, 1776 three — one for the Chief Engineer in Ireland and two reprints of a Bengal notice. The practice appears during the American war (Shewbridge, May 1778) and is routine by the mid-1780s (promotions 1783; «Office of Ordnance… James Glenie», February 1787). Robert D'Arcy's commission of 17 January 1776 predates the Ordnance's habit of publishing, which is why the Army List seniority column and not the Gazette is what settles the date.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "The London Gazette — what it did give",
+   "what": "When the Corps of Engineers became the ROYAL Engineers",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Issue 12850, page 197, 23 April 1787: «His Majesty, by Warrant of this Day's Date, has been pleased to direct, that the Corps of Engineers shall in future take the Name of the Corps of Royal Engineers, and be so stiled and called.» Robert D'Arcy was commissioned into the Corps of Engineers in 1776 and the corps was renamed under him, eleven years in.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "The Protestation Returns, 1641–42",
+   "what": "Whether Gloucestershire's returns survive — the oath taken by nearly every adult male, parish by parish",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "They do not. The surviving returns are a single alphabetical series of county bundles at the Parliamentary Archives, listed in Discovery as YHL/PO/JO/10/1/77 to /109: Berkshire, Buckinghamshire, Cambridgeshire, Cheshire, Cornwall, Cumberland, Denbighshire, Devon, Dorset, Durham, «Essex, Hampshire, Hertfordshire, Huntingdonshire», Kent, Lancashire, Lincolnshire, Middlesex, Northumberland, Nottinghamshire, Oxfordshire, Shropshire, Somerset, Staffordshire, Surrey, Sussex, Warwickshire, Westmorland, Wiltshire, Worcestershire and Yorkshire. GLOUCESTERSHIRE IS ABSENT FROM A RUN THAT GOES STRAIGHT THROUGH WHERE IT BELONGS — the piece that would hold it holds Essex and Hampshire instead. The alphabet is the control, and it could have failed.",
+   "href": "/saniger-place"
+  },
+  {
+   "src": "The Protestation Returns — what DOES survive",
+   "what": "Staffordshire, for the Sneyds",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "YHL/PO/JO/10/1/105, «Staffordshire, Surrey». The returns survive for the Sneyd county and not for the Saniger one. Of no immediate use — this archive's Sneyds are documented from 1809, a hundred and seventy years later — but recorded so the next reader does not re-test it.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "E 179 and Gloucestershire Archives — the hearth tax",
+   "what": "Whether a 1671–72 Gloucestershire hearth tax survives, and whether it is readable from here",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "It survives twice over and neither copy is online. Gloucestershire Archives D383/1, «Negative photostat of Gloucs. Hearth Tax enrolment + part transcript», 1671–1672. At Kew, E 179/329, 1670–1674, a bundle of 400 folios that «includes names of individuals» — about four hundred paper exemption certificates. Both are errands, not reads.",
+   "href": "/errands"
+  },
+  {
+   "src": "Gloucestershire Archives D5555/2/9",
+   "what": "A single bundle transcribing the three sources this archive most wants",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "«Transcriptions of entries in MEN AND ARMOUR, 1608; in HEARTH TAX RETURNS, 1664, 1672; POLL TAX RETURNS, 1678.» One reference covering the muster this archive has already read, the hearth tax it wants, and a poll tax it did not know existed — all transcribed, all in one place, and all in Gloucester.",
+   "href": "/errands"
+  },
+  {
+   "src": "The poll tax of 1381, Gloucestershire",
+   "what": "Whether it reaches Berkeley hundred, where the Swonhungres were",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "It does not. Gloucestershire Archives D 1874/1 photostats the surviving originals and lists every membrane: Salmonsbury, Holford and Greston, Kiftsgate, Tibblestone, Rapsgate, Bradley, Crowthorne, Brightwells Barrow, Longtree, Cirencester, Bisley, and St Briavels. BERKELEY HUNDRED IS NOT AMONG THEM. The surviving membranes are Cotswold and Forest; the Vale is lost. A named list of what survives is a better null than a search that returns nothing.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "The printed Army Lists, 1783, 1802, 1803, 1821",
+   "what": "ROBERT D'ARCY read year by year instead of at three points — free full text on the Internet Archive",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Four editions, four positions. 1783: SECOND LIEUTENANT of the Corps of Engineers, seven years after commissioning, in an intact ditto-chain — «John Humfrey 17 Jan. 1776 · James Fiddes do. · Richard Hockings do. · Robert Beatfon do. · Robert D'Arcey do. · Benjamin Slack 4 Mar.» 1802: CAPTAIN, Corps of Royal Engineers, p.409. 1803: Captain of the corps at p.288 and MAJOR in the army's own list at p.36. 1821: «D'Arcy, Lt. Col. Joseph, Royal Art.» A third printed confirmation of 17 January 1776, after the lists of 1778 and 1781.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "The Army List of 1783 — a spelling, not a silence",
+   "what": "Why outside catalogues do not return him",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "The 1783 compositor sets the name ROBERT D'ARCEY, with an E. This site's own alias list has folded «d'arcey» and «darcey» into the D'Arcy group for weeks; the searches run against the London Gazette and the Internet Archive had not used it. The same fault as the Swonhungre sweep on the same day: a good alias list, never spent on somebody else's index.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "Whitworth Porter, History of the Corps of Royal Engineers, VOLUME 2",
+   "what": "Robert D'Arcy and Joseph D'Arcy, full text, free",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "Neither appears in 1.5 million characters. Controlled by subject rather than by name: the volume mentions the Peninsula 48 times, Waterloo 11 and THE CRIMEA 43. It is the post-1815 volume, and Robert D'Arcy's service ran 1776 to about 1809 — volume 1's territory, which this archive has already read. Joseph was Royal Artillery, not Engineers, so no volume of Porter is the right book for him.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "John Smyth, Description of the Hundred of Berkeley (Berkeley MSS vol. 3)",
+   "what": "Re-read for the hamlet rather than for the pedigree",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "Forty-nine mentions of Swonhunger. Three more alias statements beyond the famous one — «Swonhunger ats Saniger» in the formal list of the hamlets of Hamfallow, and «Sanyger ats Swonhunger» in a fine of Henry VII's reign. «Ats» is alias, not corruption. And a named freehold, OLDMINSTER, with its own tithe barn, which reappears as «Messuage called Oldminsters in Swanhanger [Saniger in Hinton]» in Gloucestershire Archives D654/III/9 of 1690–1741.",
+   "href": "/swonhungre"
+  },
+  {
+   "src": "FreeREG, at PARISH level — the control first",
+   "what": "SMITH in Berkeley, Gloucestershire, all years — to find what FreeREG's Berkeley transcript actually covers before reading any absence",
+   "when": "15 Sep 2026",
+   "outcome": "yield",
+   "got": "3 exact and 36 uncertain results, and every one of them falls between 1653 and 1677 — Berkeley St Mary, «Other Transcript». So FreeREG's Berkeley holding is a SEVENTEENTH-CENTURY FRAGMENT of about thirty years, not a parish register run. The control could have failed — a common surname over two centuries of Berkeley would have returned hundreds — and instead it drew the window.",
+   "href": "/coverage"
+  },
+  {
+   "src": "FreeREG, Berkeley parish",
+   "what": "SANIGER, against that measured window",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "got": "0 exact results. The 38 «uncertain» are records whose characters are illegible in the transcript, the same set the Smith control returned. The null is real but NARROW: it covers about 1653–1680 and nothing else. This archive's Sanigers at Berkeley are documented in 1601 and then from 1692, so the gap FreeREG could speak to is thirty years wide and it is silent across them.",
+   "href": "/coverage"
+  },
+  {
+   "src": "FreeREG, Gloucestershire place list",
+   "what": "Whether Awre and Blakeney — the Forest parishes — are covered at all",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "got": "They are not. FreeREG has data for 189 Gloucestershire places and the list includes Berkeley, Dursley, North Nibley, Slimbridge, Thornbury, Uley and Woodmancote — but neither Awre nor Blakeney. Any Awre search would have returned nothing for a reason that has nothing to do with the family.",
+   "href": "/coverage"
   }
  ]
 }

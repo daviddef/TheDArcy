@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import d from "../data/the-corps.json";
 ---
@@ -136,6 +137,47 @@ import d from "../data/the-corps.json";
       <strong>And what Porter is.</strong> {d.porter.careful}
     </Note>
     <p class="small" style="margin-top:1rem;color:var(--ink-3)">{d.porter.where}</p>
+  </Blk>
+
+  <Blk label="The Army Lists, 1783–1821" title={d.run.head}>
+    <p class="lede">{d.run.lede}</p>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      <strong>{d.run.spellHead}.</strong> {d.run.spell}
+      {" "}<span class="chip lore">{d.run.spellChip}</span>
+    </Note>
+    <Scroll>
+      <table style="margin-top:1.4rem">
+        <thead><tr><th class="m">Year</th><th>Rank</th><th>What the list says</th><th>Edition</th></tr></thead>
+        <tbody>{d.run.rows.map(([y, rank, what, ed]) => (
+          <tr><td class="m" style="white-space:nowrap"><strong>{y}</strong></td>
+              <td><strong>{rank}</strong></td>
+              <td class="small">{what}</td>
+              <td class="small" style="color:var(--ink-3)">{ed}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.3rem">{d.run.means}
+      {" "}<span class="chip doc">{d.run.chip}</span></Note>
+  </Blk>
+
+  <Blk label="The London Gazette" title={d.gazette.head}>
+    <p class="lede">{d.gazette.lede}</p>
+    <h3 style="margin-top:1.6rem">{d.gazette.controlHead}</h3>
+    <Scroll>
+      <table>
+        <tbody>{d.gazette.control.map(([k, v]) => (
+          <tr><td style="white-space:nowrap;vertical-align:top"><strong class="small">{k}</strong></td>
+              <td class="small">{v}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      {d.gazette.means} <span class="chip doc">{d.gazette.chip}</span>
+    </Note>
+    <h3 style="margin-top:1.8rem">{d.gazette.bonusHead}</h3>
+    <Note style="margin-top:.8rem">
+      <strong style="font-size:1.05em">{d.gazette.bonus}</strong>
+      <span class="chip doc">{d.gazette.bonusChip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.gazette.bonusMeans}</p>
   </Blk>
 
   <section class="blk" style="border-bottom:0">

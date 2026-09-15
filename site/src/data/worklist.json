@@ -62,18 +62,18 @@
     {
       "n": 8,
       "what": "Porter's History of the Corps of Royal Engineers, volume 2",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Volume 1 gave Minorca in 1781, the Barbados station list, Copenhagen in 1807, and the Walcheren arrest at Flushing. Volume 2 covers the years Robert D'Arcy's sons would fall in, and this archive has never opened it. Free, out of copyright, full-text searchable."
+      "note": "**Done, and it is the wrong volume — which is itself the answer.** Read in full text, free: neither D'Arcy appears in 1.5 million characters. Controlled by subject, not by name — the volume mentions the Peninsula 48 times, Waterloo 11 and **the Crimea 43**. It is Porter's post-1815 volume; Robert D'Arcy's service ran 1776 to about 1809, which is volume 1, already read. Joseph was Royal **Artillery**, so no volume of Porter was ever going to hold him."
     },
     {
       "n": 9,
       "what": "Smyth of Nibley, Lives of the Berkeleys, volume 2",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Volume 1 gave *«Swonhunger; corruptly called Saniger»*, the five-generation pedigree, and the medieval descent from 1189. Volume 2 carries the same manor's tenants forward, which is the direction this line has to travel to reach the parish registers."
+      "note": "**Done, and redirected to volume 3, which is where the Swonhunger material actually is.** The Berkeley Castle catalogue cites «Transcript: Smyth, iii. 380-1» for the 1356 inspeximus. Volume 3 — the Description of the Hundred — gives 49 mentions of Swonhunger, **three further alias statements** beyond the one this archive had been quoting, and a named freehold, **Oldminster**, that can be followed from Smyth's survey of about 1639 into a Gloucestershire deed of 1690–1741. [Written up](/swonhungre/)."
     },
     {
       "n": 10,
@@ -102,10 +102,10 @@
     {
       "n": 13,
       "what": "FreeREG for the Gloucestershire parishes around Awre, at parish level",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "County-level queries there are meaningless: **FreeREG caps at 500**, so a common surname returns the cap whether the parish is fully transcribed or absent. The Ruabon method works — count an ordinary surname *in the parish* until the number comes back informative rather than capped, and only then read a Saniger null."
+      "note": "**Done, and the parish-level control changed the answer.** SMITH in Berkeley returns 3 exact and 36 uncertain, **every one between 1653 and 1677** — so FreeREG's Berkeley holding is a thirty-year seventeenth-century fragment, not a register run. SANIGER there returns **0 exact**: a real null, but only thirty years wide. And the place list settles the Forest parishes outright — FreeREG has 189 Gloucestershire places and **neither Awre nor Blakeney is one of them**."
     },
     {
       "n": 14,
@@ -182,50 +182,50 @@
     {
       "n": 23,
       "what": "Sweep the National Archives' Discovery catalogue for all three surnames",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "**Searching Discovery is free and needs no sign-in** — only downloading the images does, which is why three PROB 11 wills sit blocked at row 15. The catalogue itself indexes every county record office in the country, not just Kew, so a sweep for **Saniger, Sanigar, Swonhunger and D'Arcy** would name documents in repositories this archive has never written to. A reference in hand is what turns a refusal into an errand, as Gloucestershire Archives said plainly when they declined to do lookups."
+      "note": "**Done, and it was the biggest single return of the week.** Searching Discovery is free and needs no sign-in. The catalogue had been searched on 14 September under **Saniger** and gave 71 records; searched today under the spellings the medieval clerks actually used it gives **195 unique records across thirteen forms** — 178 at Berkeley Castle, and the rest at Gloucestershire, Kew, Birmingham, Bristol, Hertford and Aberystwyth. Seventeen of the twenty-five read closely were new. Written up at [the name in its own century](/swonhungre/)."
     },
     {
       "n": 24,
       "what": "The Gloucestershire Protestation Returns of 1641–42, where they survive",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "An oath taken by **nearly every adult male in England**, returned parish by parish and published for several counties. It sits squarely in the gap this line has: the [1608 muster](/saniger-1608/) names eleven men and then the trail goes quiet until the parish registers. Survival for Gloucestershire is patchy and the first job is to establish which parishes exist at all — **a coverage question before an absence question**, exactly as row 3 has it."
+      "note": "**Done, and the answer is that they do not survive — proved rather than assumed.** The returns are one alphabetical series of county bundles at the Parliamentary Archives, YHL/PO/JO/10/1/77 to /109. Listing every bundle shows Essex, Hampshire, Hertfordshire and Huntingdonshire sharing a single piece, and **Gloucestershire absent from a run that passes straight through where it belongs**. The alphabet is the control and it could have failed. Staffordshire, for the Sneyds, does survive."
     },
     {
       "n": 25,
       "what": "The Gloucestershire hearth tax returns of 1671–72",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Published and indexed, and it lists **householders by parish with the number of hearths each was taxed on** — so it places a family and, roughly, says how well it was doing. Between the muster of 1608 and the registers this archive can reach, it is one of the few sources that names ordinary men in Awre and Blakeney at all."
+      "note": "**Done as a catalogue question; the reading is now an errand.** A 1671–72 Gloucestershire hearth tax survives twice — Gloucestershire Archives **D383/1** (photostat of the enrolment, with a part transcript) and Kew **E 179/329** (400 folios, «includes names of individuals»). Neither is digitised. The better find was **D5555/2/9**, one bundle transcribing *Men and Armour* 1608, the hearth taxes of 1664 and 1672 and the poll tax of 1678. And a null worth as much: the 1381 poll tax photostats list every surviving membrane, and **Berkeley hundred is not among them**."
     },
     {
       "n": 26,
       "what": "The Berkeley Castle Muniments catalogue, not just Jeayes's 1892 calendar",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Jeayes calendared a selection in 1892 and gave this archive the charters with the **fishery reserved on Wednesdays and Fridays**. The muniments themselves were catalogued in full far more recently and the catalogue is online. The Swonhungers were **mesne tenants of Berkeley**, which is why they generate no royal inquisition — so the Berkeley estate's own papers, not the Crown's, are where a tenant of theirs would appear."
+      "note": "**Done, and it did not need a letter.** The Berkeley Castle Muniments are catalogued item by item inside Discovery — party, land, rent, witnesses and the GC number to quote when requesting the document — so the modern catalogue this archive wanted turns out to be free and already open. **178 records** under the medieval spellings. Errand 51 asked for exactly this and can be closed."
     },
     {
       "n": 27,
       "what": "The London Gazette, read end to end for both D'Arcys",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Free, official, full-text and complete from 1665. Every commission, promotion, exchange and half-pay notice for an officer passes through it, and it is the record that would either confirm or break the career this archive has assembled from Porter, Connolly and the Army Lists. It also dates things **to the day**, which is what settled the 1776 question."
+      "note": "**Done, and the null turned out to be structural.** Neither D'Arcy appears in the Gazette 1770–1830; all twenty-two Darcy notices of 1770–89 are other men. Controlled first — the decade carries 1,057 «Lieutenant» notices — and then explained: the Ordnance gazetted **no** British engineer commissions in 1774, 1775 or 1776, began during the American war and was routine by the mid-1780s. It also dated something the archive was vague about: the Corps of Engineers became the **Royal** Engineers by warrant on 23 April 1787. [The Corps](/the-corps/)."
     },
     {
       "n": 28,
       "what": "The printed Army Lists year by year, 1776 to 1815",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "So far this archive has read **1781, 1778 and the Royal Military Calendar of 1820** — three points, from which a career was inferred. The lists are annual, free and digitised, and reading the run would give a **year-by-year position** rather than a line drawn between three dots. It is the cheapest way to test the Minorca and Copenhagen postings independently of Porter."
+      "note": "**Done, and it found him where three searches had not.** Four editions read in full text, free: 1783 **Second Lieutenant**, 1802 **Captain** of the Royal Engineers, 1803 Captain of the corps *and* **Major in the army**, 1821 the index carrying «D'Arcy, Lt. Col. Joseph, Royal Art.» A third printed confirmation of **17 January 1776**. The reason he had been hard to find outside: the 1783 compositor set it **D'Arcey**, with an E — a spelling this site's own search index already knew and its outside queries had never used. [The Corps](/the-corps/)."
     },
     {
       "n": 29,

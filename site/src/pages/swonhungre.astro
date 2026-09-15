@@ -1,0 +1,134 @@
+---
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
+import { u } from "../lib/url.js";
+import d from "../data/swonhungre.json";
+---
+<Base
+  title="The name in its own century"
+  eyebrow={`Berkeley, 1272–1741 · 195 records · found ${d.found}`}
+  dek="Smyth's pedigree of the Swonhungers, checked against the deeds Smyth was reading — and one generation he did not print.">
+
+  <section class="blk">
+    <p class="lede">{d.lede}</p>
+  </section>
+
+  <Blk label="Method" title={d.how.head}>
+    <p class="lede">{d.how.body}</p>
+    <Scroll>
+      <table>
+        <thead><tr><th>Spelling searched</th><th class="m">Records</th><th>What it is</th></tr></thead>
+        <tbody>{d.how.rows.map(([s, n, w]) => (
+          <tr><td><strong class="mono">{s}</strong></td><td class="m">{n}</td><td class="small">{w}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.how.means} <span class="chip doc">{d.how.chip}</span></Note>
+  </Blk>
+
+  <Blk label={d.formation.ref} title={d.formation.head}>
+    <Note style="border-left-width:3px">
+      <strong style="font-size:1.15em">{d.formation.quote}</strong>
+      <span class="chip doc">{d.formation.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.formation.body}</p>
+    <Note style="margin-top:1.2rem">{d.formation.means}</Note>
+  </Blk>
+
+  <Blk label={d.identity.ref} title={d.identity.head}>
+    <p class="lede">{d.identity.body}</p>
+    <Note style="margin-top:1.2rem">{d.identity.means}
+      {" "}<span class="chip doc">{d.identity.chip}</span></Note>
+  </Blk>
+
+  <Blk label="The Berkeley deeds" title={d.pedigree.head}>
+    <p class="lede">{d.pedigree.lede}</p>
+    <Scroll>
+      <table>
+        <thead><tr><th>Reference</th><th class="m">Date</th><th>What it says</th><th>Effect</th></tr></thead>
+        <tbody>{d.pedigree.rows.map(([r, dt, t, e]) => (
+          <tr><td class="small mono" style="white-space:nowrap">{r}</td>
+              <td class="m" style="white-space:nowrap">{dt}</td>
+              <td class="small">{t}</td>
+              <td class="small"><strong>{e}</strong></td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      <strong>The generation that was not there.</strong> {d.pedigree.gain}
+    </Note>
+    <p style="margin-top:1.1rem">{d.pedigree.means}
+      {" "}<span class="chip doc">{d.pedigree.chip}</span></p>
+    <Note style="margin-top:1.2rem"><strong>And what has not been seen.</strong> {d.pedigree.caveat}</Note>
+    <p class="small" style="margin-top:1rem"><a href={u("/saniger-place/")}>Smyth's pedigree, as this archive had it →</a></p>
+  </Blk>
+
+  <Blk label={d.alice.ref} title={d.alice.head}>
+    <Note style="border-left-width:3px">
+      <strong style="font-size:1.1em">{d.alice.body}</strong>
+      <span class="chip doc">{d.alice.chip}</span>
+    </Note>
+    <p style="margin-top:1.1rem">{d.alice.means}</p>
+    <p class="small" style="margin-top:1rem"><a href={u("/the-women/")}>The women this archive can name →</a></p>
+  </Blk>
+
+  <Blk label={d.fish.ref} title={d.fish.head}>
+    <p class="lede">{d.fish.body}</p>
+    <Note style="margin-top:1.2rem">{d.fish.means}
+      {" "}<span class="chip doc">{d.fish.chip}</span></Note>
+  </Blk>
+
+  <Blk label="After 1401" title={d.later.head}>
+    <p class="lede">{d.later.lede}</p>
+    <Scroll>
+      <table>
+        <thead><tr><th>Reference</th><th class="m">Date</th><th>What it is</th></tr></thead>
+        <tbody>{d.later.rows.map(([r, dt, t]) => (
+          <tr><td class="small mono" style="white-space:nowrap">{r}</td>
+              <td class="m" style="white-space:nowrap">{dt}</td>
+              <td class="small">{t}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.later.means}
+      {" "}<span class="chip doc">{d.later.chip}</span></Note>
+  </Blk>
+
+  <Blk label="The National Archives" title={d.kew.head}>
+    <Scroll>
+      <table>
+        <thead><tr><th>Reference</th><th class="m">Date</th><th>What it is</th></tr></thead>
+        <tbody>{d.kew.rows.map(([r, dt, t]) => (
+          <tr><td class="small mono" style="white-space:nowrap">{r}</td>
+              <td class="m" style="white-space:nowrap">{dt}</td>
+              <td class="small">{t}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{d.kew.means}
+      {" "}<span class="chip doc">{d.kew.chip}</span></Note>
+  </Blk>
+
+  <Blk label="Smyth of Nibley, about 1639" title={d.smyth3.head}>
+    <p class="lede">{d.smyth3.lede}</p>
+    <Scroll>
+      <table>
+        <tbody>{d.smyth3.rows.map(([k, v]) => (
+          <tr><td style="white-space:nowrap;vertical-align:top;max-width:15rem"><strong class="small">{k}</strong></td>
+              <td class="small">{v}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.3rem">{d.smyth3.means}
+      {" "}<span class="chip doc">{d.smyth3.chip}</span></Note>
+  </Blk>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>{d.limits.head}</h2>
+    <p class="lede" style="margin-top:1rem">{d.limits.body}</p>
+    <Note style="margin-top:1.3rem"><strong>The join still missing.</strong> {d.limits.gap}
+      {" "}<span class="chip lore">{d.limits.chip}</span></Note>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/saniger-place/")}>Saniger, the place →</a> ·
+      <a href={u("/saniger-1608/")}>The muster of 1608 →</a> ·
+      <a href={u("/sanigers/")}>The Sanigers →</a> ·
+      <a href={u("/worklist/")}>What is being done →</a></p>
+  </section>
+</Base>
