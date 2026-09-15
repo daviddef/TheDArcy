@@ -1,0 +1,43 @@
+---
+/* The work list — what is being done, as opposed to what is known.
+
+   Every other register here answers "what do we know": searched, open
+   questions, coverage, errands, corrections. None answered "what is being
+   DONE", so that lived in a chat window, which is the one place that does not
+   survive the session. The shape is the estate's, and the component is in the
+   kit, so eight archives keep one list instead of eight sessions each
+   inventing one. checkworklist.py refuses the build if this slips. */
+import Base from "../layouts/Base.astro";
+import WorkList from "@daviddef/archive-kit/components/WorkList.astro";
+import Note from "../components/Note.astro";
+import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import work from "../data/worklist.json";
+
+const rows = work.rows;
+const n = (k) => rows.filter((r) => r.state === k).length;
+const link = (h) => h.replace(/\[([^\]]+)\]\((\/[^)]*)\)/g,
+  (_, t, href) => `<a href="${u(href)}">${t}</a>`);
+---
+<Base
+  title={work.title}
+  eyebrow={`${rows.length} items · ${n("next")} ready to start · ${n("blocked")} waiting on somebody · ${n("struck")} struck`}
+  dek={work.dek}>
+
+  <div class="prose" style="margin-top:8px" set:html={link(mdp(work.lead))}></div>
+
+  <WorkList work={work} u={u} />
+
+  <Note style="margin-top:34px"><strong>What is left.</strong>
+    <span set:html={link(mdp(work.close))} /></Note>
+
+  <p class="small" style="margin-top:2rem;color:var(--ink-3)">
+    The other registers answer a different question:
+    <a href={u("/searched/")}>what has been read</a> ·
+    <a href={u("/coverage/")}>what the indexes hold</a> ·
+    <a href={u("/open-questions/")}>what is unanswered</a> ·
+    <a href={u("/errands/")}>what has to be asked for</a> ·
+    <a href={u("/corrections/")}>what this archive got wrong</a> ·
+    <a href={u("/changes/")}>what changed</a>.
+  </p>
+</Base>

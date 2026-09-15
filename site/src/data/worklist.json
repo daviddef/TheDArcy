@@ -1,0 +1,184 @@
+{
+  "title": "The work list",
+  "dek": "What is being done here, as opposed to what is known. Findings go to the searched log, unanswered questions to the open questions, errors to the corrections, and letters to the errands — but what this archive was actually going to do next lived only in a chat window, which is the one place that does not survive.",
+  "lead": "Every other register on this site answers *«what do we know?»*. This one answers *«what is being done?»*, and it exists because that question was being carried in a conversation, and a conversation is not a record.\n\n**Five states.** *Running* means somebody or something is at it now. *Next* means it is ready to start. *Blocked* means it is waiting on a person or an institution, and the [errands](/errands/) carry the letter or the fee. *Done* means finished and published. *Struck* is for an item founded on a mistake — **kept and ruled through rather than deleted**, which is how this archive treats a retracted claim everywhere else.\n\n**Every item names who has to move it.** An item with no owner is how a list becomes wallpaper, and the estate board sorts on that field, so the question it answers is *«what is waiting on me?»*",
+  "rows": [
+    {
+      "n": 1,
+      "what": "Keep this archive's work list in the estate's shape, with the build refusing when it slips",
+      "state": "done",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Written first in the **Defranceschi** archive and now in the shared kit, so eight archives keep one list in one shape instead of eight sessions each inventing one. The kit pin moved from `b16bea7` to **`60aad58`** to pick up `WorkList.astro` and `checkworklist.py`, and `check:worklist` now sits beside `check:kit` and `check:living` in the build. It is the gate, not the good intention, that makes a convention hold here — the same reason the menu canon and the [living-person rule](/method/) held when four written-down conventions drifted."
+    },
+    {
+      "n": 2,
+      "what": "Fold Porter, Jeayes, the Army Lists and the Royal Military Calendar into the register pages",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Four sources read this week, each still living only on the two pages that used it. [Sources](/sources/) is the page that says what this archive has actually read and does not list them; [Documents](/documents/) should carry their editions and shelfmarks so a reader can fetch the identical page. **The register is generated**, so a stale line there is reproduced on every build — which is exactly how 1778 survived for weeks."
+    },
+    {
+      "n": 3,
+      "what": "Rewrite the coverage verdicts for the six indexes controlled this week",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "FreeCEN, FreeREG at parish level, Staffordshire BMD, Bristol, the Irish registers and the 1608 muster. **Three of the standing verdicts on [what the indexes hold](/coverage/) are now known to be wrong in the direction of optimism**, which is the dangerous direction: a null recorded against an index that never covered the parish reads as evidence of absence."
+    },
+    {
+      "n": 4,
+      "what": "Generate the open questions instead of hand-writing them",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "[Open questions](/open-questions/) is 405 lines of hardcoded prose that imports no data, so nothing forces it to keep up, and it has not. Tested against this week's work it mentions **Biddulph 0 times, the 1608 muster 0, Swonhunger 0, Porter 0, the Royal Military Calendar 0, Minorca 0**. The page a reader goes to for what is still unknown does not know about any of it. Backing it with a `questions.json` — each question naming what would settle it and which register holds the attempts — lets `agree.py` flag a question the site has already answered somewhere else."
+    },
+    {
+      "n": 5,
+      "what": "Give the errands a state field of their own",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "**Eight of the fifty-five [errands](/errands/) are resolved and announce it by shouting in the prose** — *«— ANSWERED, and the answer is that there are none»*, *«— DONE, and it gave eleven men»*. That reads well and counts badly: nothing anywhere says how many are open, and a ninth resolution depends on my remembering to shout in the right format. The searched log has a real outcome vocabulary; the errands never got one."
+    },
+    {
+      "n": 6,
+      "what": "Name the control behind every null in the searched log",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The rule is that a `null` must name a control that **could have failed and did not**. About forty of the 249 rows predate that rule and carry no control at all. They are not necessarily wrong, but they currently look better-evidenced than they are, and marking them honestly is cheaper than re-running them all."
+    },
+    {
+      "n": 7,
+      "what": "Read the archive against itself again once the consolidation lands",
+      "state": "next",
+      "owner": "a machine",
+      "since": "2026-09-15",
+      "note": "`agree.py` reads the site against its own assertions rather than against open questions. One corrected date shook out **six more stale copies of 1778** last time. Four consolidations will shake out more, and it costs one command."
+    },
+    {
+      "n": 8,
+      "what": "Porter's History of the Corps of Royal Engineers, volume 2",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Volume 1 gave Minorca in 1781, the Barbados station list, Copenhagen in 1807, and the Walcheren arrest at Flushing. Volume 2 covers the years Robert D'Arcy's sons would fall in, and this archive has never opened it. Free, out of copyright, full-text searchable."
+    },
+    {
+      "n": 9,
+      "what": "Smyth of Nibley, Lives of the Berkeleys, volume 2",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Volume 1 gave *«Swonhunger; corruptly called Saniger»*, the five-generation pedigree, and the medieval descent from 1189. Volume 2 carries the same manor's tenants forward, which is the direction this line has to travel to reach the parish registers."
+    },
+    {
+      "n": 10,
+      "what": "Gloucestershire Notes & Queries, and the Bristol and Gloucestershire Archaeological Society transactions",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Two antiquarian serials, both fully digitised and indexed by parish, both in the habit of printing exactly the sort of name Saniger of Awre and Blakeney is. The Society has published the Berkeley charters before, which is the same archive Jeayes calendared in 1892."
+    },
+    {
+      "n": 11,
+      "what": "Rudder and Bigland — the two standard Gloucestershire county histories",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Parish by parish, both free. Worth doing precisely because **a null in either is a real null**: they aimed at completeness for the county, so silence there means something, which is not true of a commercial index."
+    },
+    {
+      "n": 12,
+      "what": "FreeBMD again, this time with a control that can fail",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "The last attempt let a capped result count stand as proof of coverage, which is the error the [corrections](/corrections/) now carry as number 30. This archive holds a registration that must be in FreeBMD if the quarter is loaded — **Lydia's, register 3 entry 265** — so the control is already in hand and takes one query."
+    },
+    {
+      "n": 13,
+      "what": "FreeREG for the Gloucestershire parishes around Awre, at parish level",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "County-level queries there are meaningless: **FreeREG caps at 500**, so a common surname returns the cap whether the parish is fully transcribed or absent. The Ruabon method works — count an ordinary surname *in the parish* until the number comes back informative rather than capped, and only then read a Saniger null."
+    },
+    {
+      "n": 14,
+      "what": "The Gloucestershire Archives online catalogue, for Saniger and Swonhunger",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Catalogue descriptions are free and full-text even though the documents themselves need a visit. Knowing a document exists, and its reference, is most of an errand — and Gloucestershire Archives have already said in writing that they do not do lookups, so a reference is the only thing that makes a request actionable."
+    },
+    {
+      "n": 15,
+      "what": "Three PROB 11 wills, digitised and free, behind a free sign-in this archive will not make",
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-09-15",
+      "note": "**Elizabeth Saniger 1833**, **Robert D'Arcy**, and **Benjamin Cotton, cordwainer of Berkeley, 1779** (PROB 11/1056/294). All three are already digitised at Kew and cost nothing to download — the only obstacle is the account, and creating accounts is not something this archive does on your behalf. Cotton's will is the one that would test whether Catherine Cotton, who married Thomas Saniger at Berkeley, is his daughter."
+    },
+    {
+      "n": 16,
+      "what": "Two certificates to order, both against references already in hand",
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-09-15",
+      "note": "**Lydia Sanigar's**, about £12.50 from the GRO against register 3 entry 265 — she was invisible under SANIGER and found only under the misspelling. And **the marriage of James Sneyd and Ann Biddulph**, Stoke St Peter 1842, ordered locally from Stoke-on-Trent against reference 31/03/214 rather than from the GRO. The marriage certificate would name **both fathers and their trades**, carrying the Sneyd line back a generation on a side this archive has never had."
+    },
+    {
+      "n": 17,
+      "what": "The letter to the Gloucestershire Family History Society, drafted and unsent",
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-09-14",
+      "note": "Gloucestershire Archives replied on 14 September and named the Society's volunteers as the route they recommend, since they offer no research service themselves. The draft is written and sitting in `notes/letters/`. **Mail from your address is your call to send**, so it stays here until you do."
+    },
+    {
+      "n": 18,
+      "what": "Every index that wants an account or a bot check stays unread",
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-09-15",
+      "note": "Ancestry, ScotlandsPeople, RootsIreland, FamilySearch, Geneanet, RootsChat and Archive.org's lending library all want an account; irishgenealogy.ie and British History Online put a bot check in the way. **This archive creates no accounts and solves no CAPTCHAs**, so these are recorded as `blocked` rather than as nulls — the distinction matters, because a blocked source has not said no, it has not been asked. [Behind the paywall](/behind-the-paywall/) lists what each would cost."
+    },
+    {
+      "n": 19,
+      "what": "England first — the Australian and Italian side deliberately set down",
+      "state": "done",
+      "owner": "David",
+      "since": "2026-09-15",
+      "note": "A standing instruction, recorded here so it does not read as neglect: **keep digging at the English ancestry, not Brisbane and not the Falco side.** NSW BDM, the Antenati, BillionGraves and the Queensland indexes are deprioritised by decision, not by oversight. The Falco material has [its own archive](/the-other-archives/)."
+    },
+    {
+      "n": 20,
+      "what": "Carry 1778 as the date of Robert D'Arcy's first commission",
+      "state": "struck",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Wrong, and wrong on six pages at once. The printed Army List of 1781 interleaves each engineer with his seniority date and puts him in a ditto-chain reading **17 January 1776**; the 1778 list carries the same run and Connolly agrees on the year. The page that was wrong was the one that sounded most authoritative — it named a record series and claimed a superlative. Kept here ruled through, as [correction 29](/corrections/)."
+    },
+    {
+      "n": 21,
+      "what": "Treat FreeCEN's silence on the Sussex sisters as a null",
+      "state": "struck",
+      "owner": "this archive",
+      "since": "2026-09-15",
+      "note": "Justified at the time by SMITH in Sussex returning **1,000** — which is FreeCEN's display cap, so the number could not have gone higher whether the county were half-transcribed or whole. **A control that cannot fail is not a control.** The surname ARCY returns nought in Sussex 1851 while this archive has the three sisters in that very census at HO107/1646 f.357: the piece simply is not in FreeCEN. The row is now an `empty`, not a `null`. [Correction 30](/corrections/)."
+    },
+    {
+      "n": 22,
+      "what": "Two archives in the estate still keep no work list",
+      "state": "next",
+      "owner": "the Luwinski and Our Family sessions",
+      "since": "2026-09-15",
+      "note": "Raised here because it belongs to other archives and would otherwise go unsaid. Running the gate across the whole estate — `checkworklist.py --root . --all` — reports **8 archives, 153 rows, 113 open, and two with no list at all**: Luwinski and Our Family. Until those exist, the estate board is a board of six. The **Defranceschi** archive wrote this register first and the estate took it up; the shared version then added `owner` and `since`, and that session had already brought its twenty rows into line before this one was written."
+    }
+  ],
+  "close": "**Fourteen items are this archive's own and can start tonight** — four of them housekeeping on the registers themselves, ten of them books and indexes that are free to open. **Four are waiting on you**, and three of those four are free: the only money on this list is two certificates. One belongs to another session. Two are struck, and both were caught the same way, by reading this archive against itself rather than by finding a new source."
+}

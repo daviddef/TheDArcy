@@ -6,15 +6,16 @@
   "scripts": {
     "dev": "astro dev --port 4323",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run atlas && astro build && npm run sitemap && npm run check:living && npm run check:living:tree && npm run check:kit",
+    "build": "npm run atlas && astro build && npm run sitemap && npm run check:living && npm run check:living:tree && npm run check:kit && npm run check:worklist",
     "preview": "astro preview --port 4323",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
     "check:kit": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkarchive.py --dist dist",
+    "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
     "check:living": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --policy named-bare",
     "check:living:tree": "python3 ../tools/check_living.py --dist dist"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#b16bea79b56a5f27e84b25271575b2919639544e",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#60aad580fdde1a26e2f7780e36bcbf11b931b020",
     "astro": "^5.18.2"
   }
 }
