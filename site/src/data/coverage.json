@@ -352,6 +352,105 @@
    "verdict": "unusable as a control",
    "note": "FreeREG stops counting at 500. Any control reported as “more than 500” is a ceiling, not a measurement: it reads identically whether a county is half transcribed or whole. Two nulls in this archive were justified that way and have been re-controlled — at PARISH level, with a surname whose count comes in UNDER the cap. Ruabon returns 500 Joneses and 39 Smiths for 1780–1830; the 39 is the number that means something.",
    "href": "/searched"
+  },
+  {
+   "db": "TNA Discovery — the whole catalogue",
+   "where": "Every repository in England, not only Kew",
+   "holds": "a great deal, and it is free to search without any account",
+   "span": "1189 to the present",
+   "verdict": "good",
+   "note": "Searching Discovery needs no sign-in; only downloading images does. Under the MEDIEVAL spellings it returns 195 records for this surname against 71 for the modern one — 178 of them at Berkeley Castle, and the rest at Gloucestershire, Kew, Birmingham, Bristol, Hertford and Aberystwyth. Tested 15 September 2026.",
+   "href": "/swonhungre"
+  },
+  {
+   "db": "Berkeley Castle Muniments, inside Discovery",
+   "where": "The Berkeley estate, Gloucestershire",
+   "holds": "the deeds themselves, calendared item by item — party, land, rent, witnesses, and the GC number to quote when ordering",
+   "span": "1153 to the 17th century",
+   "verdict": "good",
+   "note": "The modern catalogue this archive had been asking for as errand 51 turns out to be free and already open. 178 records under the medieval spellings.",
+   "href": "/swonhungre"
+  },
+  {
+   "db": "FreeREG — Berkeley parish, measured",
+   "where": "Berkeley St Mary, Gloucestershire",
+   "holds": "a thirty-year fragment and nothing else",
+   "span": "about 1653 to 1677",
+   "verdict": "partial",
+   "note": "Controlled at PARISH level on 15 September with SMITH: 3 exact and 36 uncertain results, every one between 1653 and 1677. County-level queries here are meaningless — FreeREG caps at 500, so a common surname returns the cap whether a parish is fully transcribed or absent.",
+   "href": "/searched"
+  },
+  {
+   "db": "FreeREG — the Forest parishes",
+   "where": "Awre and Blakeney",
+   "holds": "nothing at all",
+   "span": "—",
+   "verdict": "absent",
+   "note": "FreeREG has data for 189 Gloucestershire places, including Berkeley, Dursley, North Nibley, Slimbridge, Thornbury, Uley and Woodmancote. NEITHER AWRE NOR BLAKENEY IS ONE OF THEM. Any Awre search would have returned nothing for a reason that has nothing to do with the family.",
+   "href": "/searched"
+  },
+  {
+   "db": "FreeBMD",
+   "where": "England and Wales, the GRO index",
+   "holds": "the registrations, and it will lie to you about a wide date range",
+   "span": "1837 onwards, 99%+ for the quarters that matter here",
+   "verdict": "partial",
+   "note": "IT SILENTLY REFUSES a range of more than a few years and redisplays its own search form, which is indistinguishable from an empty result. Three searches were recorded as nought on 15 September before a control — Charlotte Darcy, 1869, Brighton 2b 152 — showed they had never run. Narrowed to three years it works perfectly.",
+   "href": "/sanigers"
+  },
+  {
+   "db": "The London Gazette",
+   "where": "England and Wales, official notices",
+   "holds": "commissions and promotions — but not Ordnance ones before the American war",
+   "span": "1665 onwards",
+   "verdict": "partial",
+   "note": "Free, no account, richly digitised — 1,057 notices mention «Lieutenant» in the 1770s alone. But notices mentioning «Corps of Engineers» number NONE in 1774, NONE in 1775, and three in 1776 of which one is Irish and two are a Bengal reprint. The Ordnance began gazetting engineer commissions during the American war. A silence here about 1776 is about the Gazette, not about the man.",
+   "href": "/the-corps"
+  },
+  {
+   "db": "The Protestation Returns, 1641–42",
+   "where": "The Parliamentary Archives, YHL/PO/JO/10/1/77–109",
+   "holds": "nearly every adult male in England, for the counties that survive",
+   "span": "1641–42",
+   "verdict": "absent",
+   "note": "For Gloucestershire, nothing. The series is one alphabetical run of county bundles and GLOUCESTERSHIRE IS MISSING FROM WHERE IT BELONGS — the piece that would hold it holds Essex, Hampshire, Hertfordshire and Huntingdonshire instead. The alphabet is the control. Staffordshire, for the Sneyds, does survive.",
+   "href": "/searched"
+  },
+  {
+   "db": "The poll tax of 1381, Gloucestershire",
+   "where": "Gloucestershire Archives D 1874/1, photostats of the surviving originals",
+   "holds": "named adults, for the hundreds whose membranes survive",
+   "span": "1381",
+   "verdict": "absent",
+   "note": "The catalogue lists every surviving membrane: Salmonsbury, Holford and Greston, Kiftsgate, Tibblestone, Rapsgate, Bradley, Crowthorne, Brightwells Barrow, Longtree, Cirencester, Bisley, St Briavels. BERKELEY HUNDRED IS NOT AMONG THEM. What survives is Cotswold and Forest; the Vale is lost.",
+   "href": "/swonhungre"
+  },
+  {
+   "db": "Rudder, A New History of Gloucestershire (1779)",
+   "where": "Every parish in the county",
+   "holds": "the tithings, hamlet by hamlet — but not this hamlet",
+   "span": "to 1779",
+   "verdict": "partial",
+   "note": "5.7 million characters, Berkeley mentioned 804 times, and NOT ONE mention of Saniger under any spelling. The control holds: his index carries «Wanfwell in Berkeley 280», Hamfallow, Halmore and Alkington. At page 280 the whole tithing is «Hamfallow, in which are Wanſwell… part of Halmore; and Hamfallow». Smyth names the hamlet in 1639 and Bigland in 1791; Rudder, between them, does not.",
+   "href": "/swonhungre"
+  },
+  {
+   "db": "Gloucestershire Notes and Queries",
+   "where": "The county's antiquarian serial",
+   "holds": "reviews of the editions this archive relies on",
+   "span": "1881 onwards",
+   "verdict": "good",
+   "note": "One hit in four volumes read, and it corrects this archive: reviewing Maclean's 1902 edition of the 1608 muster it says «Sainger should read Saniger». Three further volumes are a clean null against a Berkeley control of 234, 91 and 51 mentions. Too small a family for an antiquarian serial — but the right place to check an edition.",
+   "href": "/saniger-1608"
+  },
+  {
+   "db": "The manorial court rolls of Awre",
+   "where": "Gloucestershire Archives — D2156/1–4, D421/M7, D3270/362, D3270/363",
+   "holds": "tenants by name, generation after generation, with the customary heir of each who died",
+   "span": "1387, 1439, 1573, 1577/8, 1588–91, then 1671 to 1881",
+   "verdict": "good",
+   "note": "NOT DIGITISED — the catalogue is free, the documents are a visit. This is the densest surviving source for a parish that has no Protestation return, no 1381 poll tax membrane and no FreeREG coverage. Errand 58.",
+   "href": "/errands"
   }
  ]
 }

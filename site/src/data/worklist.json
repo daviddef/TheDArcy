@@ -14,26 +14,26 @@
     {
       "n": 2,
       "what": "Fold Porter, Jeayes, the Army Lists and the Royal Military Calendar into the register pages",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "Four sources read this week, each still living only on the two pages that used it. [Sources](/sources/) is the page that says what this archive has actually read and does not list them; [Documents](/documents/) should carry their editions and shelfmarks so a reader can fetch the identical page. **The register is generated**, so a stale line there is reproduced on every build — which is exactly how 1778 survived for weeks."
+      "note": "**Done.** [Sources](/sources/) now carries a table of the **fourteen printed and catalogued sources this archive has actually opened** — Porter both volumes, the Army Lists, the Royal Military Calendar, Connolly, the Gazette, Smyth's Description and Lives, Jeayes, Rudder, Bigland, the 1608 muster, Gloucestershire Notes & Queries and Discovery — each with the edition read, where it is free, and what it gave. Two are listed for what they did **not** contain, and one for an error it found here."
     },
     {
       "n": 3,
       "what": "Rewrite the coverage verdicts for the six indexes controlled this week",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "FreeCEN, FreeREG at parish level, Staffordshire BMD, Bristol, the Irish registers and the 1608 muster. **Three of the standing verdicts on [what the indexes hold](/coverage/) are now known to be wrong in the direction of optimism**, which is the dangerous direction: a null recorded against an index that never covered the parish reads as evidence of absence."
+      "note": "**Done — eleven rows added and the optimistic verdicts replaced.** [Coverage](/coverage/) now runs to 50 rows and records what was measured rather than assumed: FreeREG's Berkeley is **1653–1677** and neither Awre nor Blakeney is in it at all; **FreeBMD silently refuses a wide date range**; the Gazette gazetted no engineer commission in 1774, 1775 or 1776; the Protestation Returns skip Gloucestershire; the 1381 poll tax skips Berkeley hundred; and Discovery and the Berkeley Castle catalogue are free, open and rich."
     },
     {
       "n": 4,
       "what": "Generate the open questions instead of hand-writing them",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
-      "note": "[Open questions](/open-questions/) is 405 lines of hardcoded prose that imports no data, so nothing forces it to keep up, and it has not. Tested against this week's work it mentions **Biddulph 0 times, the 1608 muster 0, Swonhunger 0, Porter 0, the Royal Military Calendar 0, Minorca 0**. The page a reader goes to for what is still unknown does not know about any of it. Backing it with a `questions.json` — each question naming what would settle it and which register holds the attempts — lets `agree.py` flag a question the site has already answered somewhere else."
+      "note": "**Done. 405 lines of prose became 81 lines and a data file.** [Open questions](/open-questions/) is generated from `questions.json` — **five open, three blocked, three closed and kept** — and every question now names what would settle it, which register holds the attempts, and the date it was raised, with anything over thirty days marked. It carries this week's work because it cannot help carrying it."
     },
     {
       "n": 5,
@@ -54,10 +54,10 @@
     {
       "n": 7,
       "what": "Read the archive against itself again once the consolidation lands",
-      "state": "next",
+      "state": "done",
       "owner": "a machine",
       "since": "2026-09-15",
-      "note": "`agree.py` reads the site against its own assertions rather than against open questions. One corrected date shook out **six more stale copies of 1778** last time. Four consolidations will shake out more, and it costs one command."
+      "note": "**Done, and it found nothing real — which is the right answer this time.** 256 files and pages, 127 dated pairs, **31 flagged**. The one with the dangerous shape — Joseph D'Arcy baptised, 1779 in three files against 1780 in eleven, a spread of one — turns out to be the documented «adjacent events» false positive: the 1779 is **Robert and Jean's marriage**, sitting within seventy characters of the 1780 baptism. The other thirty are repeated forenames across generations. Last run it found six stale 1778s; this run the archive agrees with itself."
     },
     {
       "n": 8,
@@ -236,5 +236,5 @@
       "note": "**Done, and it found the best errand of the day.** The **Awre** court rolls survive almost unbroken and none of it is digitised: single surrenders of **1387**, 1439, 1573 and 1577/8; the rolls 1588–91; then 1671 and nearly continuous to **1881**. D3270/282 is explicitly «extracts relating to customary heir of a tenant dying», 1688–1777 and 1783–1810 — a named parent-to-child link every generation, across exactly the gap this archive cannot cross. Hamfallow and Hinton return nothing separate, and structurally cannot: they were parts of the manor of Ham, so their records are inside the Berkeley muniments."
     }
   ],
-  "close": "**Twenty items are this archive's own and can start tonight** — four of them housekeeping on the registers themselves, sixteen of them books, catalogues and indexes that are free to open and need no account. **Four are waiting on you**, and three of those four cost nothing: the only money on this list is two certificates. One belongs to two other sessions. Two are struck, and both were caught the same way — by reading this archive against itself rather than by finding a new source."
+  "close": "**Everything this archive could do alone is done.** Twenty-two items closed on 15 September 2026 — ten of them free books and catalogues opened for the first time, four of them repairs to the registers themselves, two struck as founded on mistakes. **Four remain and all four are yours**: a free sign-in at Kew for three wills, two certificates, an unsent letter, and the indexes that want an account this archive will not create. One belongs to two other sessions. Nothing here is waiting on more searching."
 }

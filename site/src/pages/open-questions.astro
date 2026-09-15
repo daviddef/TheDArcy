@@ -1,405 +1,81 @@
 ---
+/* The open questions, generated.
+
+   This page was 405 lines of hand-written prose until 15 September 2026, and
+   it had gone a day stale without anything being able to notice it: no mention
+   of Biddulph, the 1608 muster, Swonhungre, Porter, the Royal Military
+   Calendar or Minorca, all of which the archive had worked on. It is now
+   rendered from questions.json, and every question names what would settle it
+   and which register holds the attempts. The old prose is in the git history. */
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
-import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import q from "../data/questions.json";
+
+const link = (h) => h.replace(/\[([^\]]+)\]\((\/[^)]*)\)/g,
+  (_, t, href) => `<a href="${u(href)}">${t}</a>`);
+const n = (k) => q.rows.filter((r) => r.state === k).length;
+const S = (r) => q.states[r.state] || q.states.open;
+const DAY = 864e5;
+const age = (r) => r.since && r.state !== "answered"
+  ? Math.floor((Date.parse("2026-09-15") - Date.parse(r.since)) / DAY) : 0;
 ---
 <Base
-  title="Open Questions"
-  eyebrow="The research queue, in priority order"
-  dek="What this archive does not know, ranked by how much finding out would change. A null result is still a result, and it stops the next person repeating the search.">
-
-  <Blk label="Closed, 13 September 2026" title="Where was Hannah Saniger born?">
-
-    <p class="lede">This was the oldest open question on the site. It is answered:
-    <strong>Berkeley, Gloucestershire</strong>, stated in the 1851 census at Drivers Fields and
-    matching the family tree exactly. <a href={u("/berkeley-woman/")}>How, and what it cost →</a></p>
-
-    <Note>
-      <strong>What replaces it.</strong> Hannah's <em>baptism</em> has still not been seen, and her
-      parents are still only a tree's assertion — John Saniger and Lydia. Berkeley's register can now
-      be searched through the years that matter, with parents named, so this is a live search rather
-      than a blocked one. <a href={u("/berkeley/")}>Berkeley →</a>
-    </Note>
-  </Blk>
-
-  <Blk label="Where it stands, 10 September 2026" title="The state of play">
-    <p class="lede">Two days of work have closed more of this list than they opened, which is not the
-    usual direction. What follows is the honest position, including the searches that found nothing.</p>
-
-    <div class="grid two" style="margin-top:1.3rem">
-      <div class="card">
-        <h3><span class="chip dis">new, and it outranks everything</span><br />
-        The parish registers of Berkeley, Gloucestershire</h3>
-        <p>The deepest line in this archive — six Saniger generations from <strong>1654 to 1805</strong> —
-        rested entirely on <strong>other people's family trees</strong>.
-        <strong>Attempted 10 September 2026.</strong> FreeREG's Berkeley transcript runs only to
-        <strong>1677</strong>, so it can test one generation of six — and it gives a good candidate
-        plus a father the archive never had, <strong>Edward Sainger of Wanswell</strong>. The other
-        five are untouched, and the surname turns out to be six times commoner at Dursley and Cam.
-        <strong>What is needed now is Gloucestershire Archives</strong>: Berkeley St Mary after 1677,
-        Dursley St James, Cam St George. <a href={u("/berkeley/")}>What the register said →</a></p>
-      </div>
-      <div class="card">
-        <h3>The one document that would change most</h3>
-        <p><strong><span class="mono">PROB 11/1728/64</span> — Robert D'Arcy's own will</strong>,
-        proved 4 July 1827, <strong>digitised</strong>, about £3.50. Seventy-one of the direct line's
-        ancestors and twelve of its generations hang on the join immediately above him, and nothing
-        in his life names a father. A will names family. <a href={u("/hornby/")}>Why →</a></p>
-      </div>
-      <div class="card">
-        <h3>Blocked on a card, not on research</h3>
-        <p>Four Queensland <strong>death certificates</strong> with their registration numbers in
-        hand; <strong>nine QSA items</strong>, all identified to series and file number, none
-        digitised; and <strong>nine drafted letters</strong>, none sent. Every one of these is
-        located. None can be bought by a machine.</p>
-      </div>
-      <div class="card">
-        <h3>Blocked on somebody else's website</h3>
-        <p><strong>Three institutions are between houses.</strong> The <strong>CWGC</strong> has
-        refused automated access twice. The <strong>Australian War Memorial</strong> is mid-migration
-        and its search returns nothing for any query — still true on 10 September 2026; its documents
-        were reached by direct URL instead. And <strong>NSW State Archives has become Museums of
-        History NSW</strong>, at a new domain, with its old index addresses dead — which is what
-        stopped the search for George Pitt D'Arcy's 1849 probate. All three are waiting on somebody
-        else's rebuild, not on research.</p>
-      </div>
-      <div class="card">
-        <h3>Searched, and genuinely empty</h3>
-        <p>The 4th Earl of Holderness's will is not in the Prerogative Court. Samuel Charles Sneyd is
-        in no Blue Book from 1870. There is no English baptism for Robert D'Arcy. The
-        <em>London Gazette</em> does not name Vivian Sneyd's Military Medal. Each is recorded below
-        as a result, not a gap.</p>
-      </div>
-    </div>
-  </Blk>
+  title={q.title}
+  eyebrow={`${n("open")} open · ${n("blocked")} waiting on somebody · ${n("answered")} closed and kept`}
+  dek={q.dek}>
 
   <section class="blk">
-    <h2 style="margin-top:0">1 · The join that decides the whole pedigree</h2>
-    <div class="grid two" style="margin-top:1rem">
-      <div class="card">
-        <h3><span class="chip lore">searched 9 Sep 2026 — not found</span><br />Robert D'Arcy's baptism, c. 1750–51</h3>
-        <p>Swept on FindMyPast for a Robert D'Arcy/Darcy baptised c. 1741–1761, name variants on,
-        all English record sets: <strong>no result</strong>. His burial <em>is</em> now confirmed —
-        St Mary, Chatham, 19 May 1827, aged 76 — which is where the famous "1751" actually comes
-        from, and it names no father. Any further search must go to unindexed originals.
-        <a href={u("/hornby/")}>Why it matters →</a></p>
-      </div>
-      <div class="card">
-        <h3><span class="chip doc">searched 9 Sep 2026 — found, and it answers everything but the question</span><br />Connolly's <em>Roll of Officers of the Corps of Royal Engineers</em></h3>
-        <p>Entry <strong>203</strong>: "D'Arcy, Robert, C.B." — second lieutenant 17 January 1776
-        through major-general 12 August 1819, war services, and "Died at Chatham, 13 5 1827". Only
-        <strong>two D'Arcys in the whole Roll</strong>, 1660–1898; the other is his son Constantine.
-        <strong>It records no parentage at all</strong> — the Roll does not carry fathers.
-        <a href={u("/hornby/")}>The full entry →</a></p>
-      </div>
-      <div class="card">
-        <h3><span class="chip dis">ruled out 9 Sep 2026</span><br />The Woolwich cadet registers</h3>
-        <p>Named here last as the best remaining hope, and <strong>wrong</strong>. <strong>WO 149</strong>
-        runs from <strong>1790</strong> and is held at Sandhurst — it cannot contain a cadet of the
-        early 1770s. The printed <em>Records of the Royal Military Academy</em>, 1851 and 1892, have
-        also been searched in full: no Robert D'Arcy. They are institutional histories, not registers.
-        Both closed.</p>
-      </div>
-      <div class="card">
-        <h3><span class="chip inf">now the best hope</span><br />Board of Ordnance records — WO 47, WO 54</h3>
-        <p>Until 1855 the Royal Engineers answered to the <strong>Board of Ordnance</strong>, not the
-        War Office, and kept separate records. If a cadet warrant or commission entry of
-        <strong>17 January 1776</strong> survives anywhere, it is in the Ordnance minutes or registers.
-        A letter to the Royal Engineers Museum at Chatham, whose whole subject is this Corps, is
-        drafted and waiting.</p>
-      </div>
-      <div class="card">
-        <h3>His Royal Engineers commission papers</h3>
-        <p>Cadet and commission records of the 1760s–70s at the National Archives frequently name a
-        parent or a patron. For an illegitimate son of a peer, a patron of the right surname would be
-        the strongest indirect evidence obtainable. Note that he has <strong>no</strong> entry in the
-        <em>Dictionary of National Biography</em> — the DNB's "D'Arcy, Robert" is the 4th Earl.</p>
-      </div>
-      <div class="card">
-        <h3><span class="chip doc">found 9 Sep 2026 — and it is his own</span><br />
-        <span class="mono">PROB 11/1728/64</span> — the will of Robert D'Arcy himself</h3>
-        <p>Searching the National Archives for the <em>Earl's</em> will turned up something better:
-        <strong>"Will of Robert D'Arcy, Major General in the Army and Colonel of the Royal Engineers
-        of Chatham, Kent"</strong>, proved <strong>4 July 1827</strong>. Died at Chatham that May,
-        Major-General, Colonel of the Corps — it is unmistakably him, and
-        <strong>it is digitised</strong>. A man's own will names his family. This is now the best
-        unread document in the archive and it costs £3.50.
-        <a href={u("/hornby/")}>Why it matters →</a></p>
-      </div>
-      <div class="card">
-        <h3>Resolve the tree's self-contradiction</h3>
-        <p>The note says 4th Earl; the structure descends through a "Thomas (Francis) D'Arcy" from the
-        3rd. Establish which claim came first and who made it — a nineteenth-century family bible, a
-        Victorian county history, or a twentieth-century online tree. Provenance would tell us a great
-        deal about how much weight it deserves.</p>
-      </div>
+    <div class="prose" set:html={link(mdp(q.lead))}></div>
+    <div style="margin-top:1.3rem;display:flex;flex-wrap:wrap;gap:8px">
+      {Object.entries(q.states).map(([k, [label, colour, gloss]]) => (
+        <span class="chip" style={`border-color:${colour}`} title={gloss}>
+          <strong style={`color:${colour}`}>{label}</strong> {n(k)}
+        </span>
+      ))}
     </div>
   </section>
 
-  <section class="blk">
-    <h2>2 · The Australian arrival</h2>
-    <ul class="dek">
-      <li><span class="chip doc">answered</span> <strong>Which ship?</strong> The convict ship
-      <strong><em>England</em></strong>. He embarked with a detachment of thirty men of the 39th on
-      8 April 1826; the pilot was discharged in the Downs on 6 May; she reached Port Jackson on
-      18 September after 135 days with no deaths among her 148 convicts. <strong>"Mrs. D'Arcy and
-      family"</strong> were cabin passengers. <a href={u("/australia/")}>The voyage →</a></li>
-      <li><span class="chip doc">answered</span> <strong>Which Maria?</strong> Neither marriage was
-      at Chatham in 1810. He married <strong>Mary Ludlam in Kent in 1806</strong> — <em>Le
-      Mesurier</em> was her mother's maiden name, which is how it got into the tree — and
-      <strong>Maria White in County Wicklow about 1819</strong>. So Frederick Robert the surveyor is
-      a <strong>half-brother</strong> to our line. <a href={u("/australia/")}>Set out here →</a></li>
-      <li><span class="chip doc">answered</span> <strong>The first marriage is dated, and it is
-      1805.</strong> The <em>Salisbury and Winchester Journal</em> of 23 September 1805, p. 3:
-      "<strong>Captain George d'Arcy</strong>", son of "<strong>Lieut Colonel d'Arcy</strong>",
-      married "<strong>Miss Ludlam</strong>". A contemporary printing that also ties him to his
-      father. <a href={u("/australia/")}>Here →</a></li>
-      <li><strong>Still to do:</strong> the c.1819 <strong>County Wicklow</strong> marriage to Maria
-      White, still known only at second hand — and the 1805 parish entry behind the newspaper
-      notice.</li>
-      <li><span class="chip doc">answered</span> <strong>George Lindsay D'Arcy's christening.</strong>
-      Indexed from the register: <strong>St James Sydney, 5 November 1829</strong>, father
-      <strong>George Pitt Darcy</strong>, mother <strong>Maria</strong> — which proves Maria White,
-      not Mary Ludlam, was his mother, and makes Frederick Robert a half-brother.</li>
-      <li><strong>How old was the Major?</strong> Every 1849 death notice says <strong>69</strong>,
-      giving a birth about 1780; the tree says 18 February 1783; WikiTree offers "about 1781". Three
-      answers, no register. Try the 39th's muster rolls and his commission papers.</li>
-      <li><strong>Where was he between 1832 and 1849?</strong> His regiment left for India in 1832
-      and he did not go. Did he sell out, retire on half pay, or transfer? Half-pay lists would say —
-      and his obituary's account of a decline "not passed in the paths of pleasantness" suggests the
-      answer matters.</li>
-      <li><strong>The Orthes gold medal.</strong> It was sent in error to Lieutenant-Colonel Bruce and
-      took four years to reach him. The correspondence would be in the War Office papers, and it
-      would be worth reading.</li>
-    </ul>
-  </section>
+  {q.rows.map((r) => (
+    <Blk label={r.rank} title={`${r.n}. ${r.q}`}>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:baseline">
+        <span class="chip" style={`border-color:${S(r)[1]}`}>
+          <strong style={`color:${S(r)[1]}`}>{S(r)[0]}</strong></span>
+        <span class="small mono" style="color:var(--ink-3)">raised {r.since}</span>
+        {age(r) > 30 && <span class="small mono" style="color:#B04A16">{age(r)} days</span>}
+        <span class="small" style="margin-left:auto">
+          <a href={u(r.register + "/")}>attempts are in this register →</a></span>
+      </div>
 
-  <section class="blk">
-    <h2>3 · The Brisbane generations</h2>
-    <ul class="dek">
-      <li><span class="chip doc">answered in part</span> <strong>Lindesay Atkinson D'Arcy's
-      service.</strong> <strong>Sergeant 11335</strong>, 12th Australian Depot Unit of Supply,
-      Australian Army Service Corps; enlisted Brisbane 13 December 1915; embarked HMAT
-      <em>Demosthenes</em> A64; returned to Australia 7 July 1919; next of kin his wife Ivy Miriam.
-      <strong>Searched at RecordSearch, 9 September 2026, and not found.</strong> No
-      <span class="mono">B2455</span> dossier exists for him under <em>Lindesay Atkinson</em> or
-      <em>Lindsay Atkinson</em>, or in the World War I name index under <em>D'Arcy</em> or
-      <em>Darcy</em>. The method was checked against his brother-in-law's record, which came back at
-      once. The claim that a fourteen-page file "is known to exist" is withdrawn.
-      <strong>Still to do:</strong> ask the National Reference Service, since NAA warns that not all
-      items in the series are catalogued online — and order
-      <span class="mono">NAA: J34, C34558</span>, the <strong>repatriation pension case file</strong>
-      opened for his widow in 1937, which the same search turned up and which is not digitised.
-      <a href={u("/great-war/")}>His service →</a></li>
-      <li><span class="chip doc">largely answered</span> <strong>Arthur Hartley Sneyd,
-      Private 5050, 9th Battalion.</strong> His <strong>thirty-page B2455 dossier has now been read</strong>:
-      attested Brisbane 16 September 1915, a typist of 5 ft 7½ in, made corporal then sergeant, sent to
-      Étaples in April 1916, and <em>reverted to the ranks on joining the 9th Battalion on 29 July
-      1916</em> — twenty-two days before he was killed. The report of death records his burial place
-      as "<em>Not yet to hand</em>", and his effects — <em>a scarf and letters</em> — were shipped on
-      the <em>Barunga</em>, which was torpedoed twenty-five days later.
-      His <strong>Red Cross Wounded and Missing file</strong> has also been read: he survived the
-      shell that was thought to have killed him, was seen the next morning with his head bandaged
-      carrying a white flag behind stretcher-bearers, and was buried a year later, on report, in a
-      shell hole in No Man's Land near Mouquet Farm under a rough wooden cross.
-      <a href={u("/finding-arthur/")}>The search →</a>
-      <br /><strong>Still to do:</strong> the <strong>CWGC</strong> confirmation that he is named on
-      the Villers-Bretonneux memorial — their site has now blocked automated access twice, so the
-      commemoration stands as <span class="chip inf">inferred</span>. And one unresolved conflict:
-      every official record says he died on <strong>20 August 1916</strong>, but Sgt. Morton of the
-      10th Battalion, the only witness to the burial, says <strong>22 August, at Mouquet Farm</strong>.
-      The 9th Battalion war diary for 20–22 August would settle it.</li>
-      <li><span class="chip doc">answered same day</span> <strong>Vivian Claude Sneyd, MM and Bar,
-      3rd Australian Field Ambulance</strong> (1895–1949) — Ivy's other brother. The archive did not
-      know he had served at all. <strong>Found and read:</strong> his AWM 28 recommendation for the
-      <strong>Bar</strong>, for Westhoek east of Ypres on 4 October 1917, and the front of his B2455
-      dossier — No. <strong>1696</strong>, enlisted Brisbane 16 July 1915 aged 19, a salesman of
-      Windsor, entitled to the 1914/15 Star, discharged 30 July 1919.
-      <a href={u("/great-war/")}>The citation →</a>
-      <br /><strong>Still to do:</strong> the citation for the <strong>first</strong> Military Medal
-      (awarded 1 March 1917 — the action is not yet identified), the other seventeen pages of his
-      dossier, and <span class="mono">NAA J26, M17540</span>, his repatriation medical case file,
-      which runs <strong>1915 to 1948</strong> and would say what the war did to him.
-      <br />One correction it forces: his B.103 gives his birthplace as <strong>Windsor,
-      Brisbane</strong>, where the tree says Rockhampton.</li>
-      <li><span class="chip doc">answered same day</span> <strong>A third Sneyd soldier</strong> —
-      <em>Pte Ernest Vivian William Sneyd, 3891</em>, 31st Battalion. Found and read:
-      <span class="mono">NAA B2455, item 8087517</span>, ninety-two pages. His attestation names his
-      father as <strong>Thomas George Sneyd of Landsborough</strong>, which confirms him as Arthur and
-      Vivian's <strong>first cousin</strong> — the identification is no longer inferred. A labourer of
-      25, once rejected for height, who enlisted 4 December 1915, was wounded with the 31st Battalion
-      at the end of September 1917, invalided to England with bronchitis that November, admitted with
-      <strong>albuminuria</strong> at Birmingham in May 1918, and sent home on a hospital ship on
-      5 January 1919. <a href={u("/great-war/")}>His service →</a>
-      <br /><strong>Still to do:</strong> his <strong>Queensland death certificate</strong>. The tree
-      says only "1919". The dossier shows eight months in hospital with kidney disease immediately
-      before he sailed, and the certificate would say whether that is what killed him — which in turn
-      decides whether he belongs on a memorial. Add him to the BDM order already drafted.</li>
-      <li><span class="chip doc">answered</span> <strong>His death, 10 November 1936.</strong> The
-      <em>Courier-Mail</em> obituary of 11 November has been found: he died <em>suddenly</em>, aged
-      44, of Botany Street, Clayfield, and was buried at Toowong the same afternoon. The medical
-      cause is still not established — that needs the Queensland death certificate.
-      <a href={u("/papers/")}>The obituary →</a></li>
-      <li><span class="chip doc">answered</span> <strong>How George Pitt D'Arcy died, 21 March
-      1931.</strong> Found dead in the kitchen of his home in Victoria Street, Banyo; inquest
-      reported 24 April; his son gave evidence of untreated heart trouble. <strong>And the age is
-      settled:</strong> the South Brisbane Cemetery record gives his birth as 5 May 1864, so he was
-      <strong>66</strong> and the newspaper's "76" is an error.
-      <a href={u("/papers/")}>The report →</a></li>
-      <li><span class="chip doc">answered</span> <strong>When did Frederick Robert D'Arcy die?</strong>
-      <strong>19 September 1875</strong>, at his residence, Spring Hill, aged 63 — his family's death
-      notice in the <em>Brisbane Courier</em> two days later. The Toowong monumental-inscription
-      transcript, which says 10 September and "9th Regiment", is wrong on both counts.</li>
-      <li><span class="chip doc">answered</span> <strong>Constantine D'Arcy — born Barbados,
-      died Chatham, and Robert's son.</strong> Christened <strong>St Michael, Barbados, 18 February
-      1786</strong>, father Robert Darcy, mother Jane. Buried Chatham St Mary <strong>9 May 1805</strong>,
-      entered as "Lt in the royal engineers". And the <em>Kentish Gazette</em> of 14 May 1805 calls the
-      dead man <strong>"the son of Col. D'Arcy, chief engineer of Chatham lines"</strong>, interred with
-      military honours. He was nineteen. <a href={u("/constantine/")}>Constantine →</a></li>
-      <li><span class="chip lore">searched, not found</span> <strong>An obituary for Robert
-      D'Arcy.</strong> The <em>Gentleman's Magazine</em> for May, June and July 1827 has been searched
-      in full: <strong>no notice of his death</strong>. Its 1827 volumes do carry a death notice for
-      <strong>D'Arcy Wentworth</strong>, the colonial surgeon of New South Wales who died two months
-      later — an unrelated man who will contaminate any search not watching for him.</li>
-      <li><strong>Florence Isabel D'Arcy, died 22 August 1918</strong>, cause given as
-      <em>chlorosis; valvular disease of the heart</em>, aged 24. Confirm the Nundah burial: the
-      council record reads <em>F J D'Arcy</em> and the initial is assumed to be a mistranscription
-      of <em>I</em>.</li>
-      <li><strong>The 'This Is Your Life' book</strong> presented to Ken D'Arcy on his retirement from
-      National Mutual in 1982, referred to in his eulogy. If it survives in the family it is a
-      primary source for thirty-two years of his working life.</li>
-    </ul>
-  </section>
+      {r.settles && (
+        <Note style="border-left-width:3px;margin-top:1.2rem">
+          <strong>What would settle it.</strong> {r.settles}
+        </Note>)}
 
-  <section class="blk">
-    <h2>4 · The families they married</h2>
-    <ul class="dek">
-      <li><span class="chip doc">answered in part</span> <strong>Atkinson, of Limerick.</strong> The
-      christening of 9 July 1832 names his parents: <strong>Richard Atkinson and Anne</strong> — a
-      generation gained. <strong>Still to do:</strong> anything at all about Richard and Anne, and
-      the ship of 1862. Limerick is hard: many Church of Ireland registers burned in the Four Courts
-      in 1922. <a href={u("/atkinson/")}>The Atkinsons →</a></li>
-      <li><span class="chip doc">answered in part</span> <strong>Murdoch, of St Quivox.</strong> The
-      Scottish statutory register gives William Murdoch's birth as <strong>7 October 1856 at
-      St Quivox and Newton</strong>, parents <strong>Francis Murdoch and Marion Watt</strong>; and
-      their marriage as <strong>6 May 1854 at Avondale, Lanarkshire</strong> — Strathaven's parish,
-      and a year later than the tree says. <strong>Still to do:</strong> the emigration to
-      Queensland, and Francis's own parents. <a href={u("/murdoch/")}>The Murdochs →</a></li>
-      <li><strong>Matson, of Cornacreeve, County Monaghan.</strong> Catherine Jane Matson, born 1862,
-      died Toowoomba 1914. Her parents William Matson and Mary Abbot have no dates at all.</li>
-      <li><strong>Atwell.</strong> James Atwell is said to have <em>come to Australia in the merchant
-      navy and deserted</em>. A desertion would appear in a crew agreement or a shipping-office
-      record, and would date and name the ship. <span class="chip inf">probable</span> The 1861
-      census has a <strong>James Atwell, aged 7, born Hammersmith</strong>, living at Westcombe
-      Street, <strong>Batcombe, Somerset</strong> (Shepton Mallet district) as a <em>nephew</em> of
-      the head of household, with Maria (5), Fred (3) and Henry (1) — a Somerset family with a
-      London-born eldest, which is the right shape. Not yet proved to be him.</li>
-      <li><strong>Blum.</strong> John Blum, born Germany 1842, reached Rockhampton. Where in Germany,
-      and on what ship? His daughter Martha's dates are now confirmed — born 25 July 1870, died
-      19 December 1904, buried Lutwyche — but he himself is still only a country and a year.</li>
-      <li><strong>Sneyd — largely closed.</strong> The scepticism this page called for has now been
-      applied, and it paid twice. The descent from <strong>Keele Hall is disproved</strong> and the
-      real Madeley line found in its place; and the <strong>1902 coronial file</strong> confirms the
-      Australian join under oath — William Hartley Sneyd's widow names his father as "Samuel Sneyd,
-      Gaol Governor". His birth is now documented outright: the Queensland death registration
-      <span class="mono">1902/B/2776</span> gives <strong>30 September 1837</strong>. This archive
-      briefly published 1838 against it and was wrong — a stated age of 64 on 11 September, nineteen
-      days before his birthday, is exactly what 1837 predicts.
-      <a href={u("/inquest-1902/")}>The file →</a> · <a href={u("/how-far-back/")}>The broken graft →</a>
-      <br /><strong>Samuel Charles Sneyd's own service record — searched again, 9 September 2026,
-      and still not found.</strong> The Queensland Police <em>Staff Files</em>
-      (<span class="mono">S1108</span>) hold two Sneyds and neither can be him: AF1623 runs 1881–83
-      and AF1599 runs 1890–97, and he died in 1885. On dates they are two of his sons.
-      <span class="chip lore">null result</span> He served before the Queensland force existed —
-      NSW Mounted Police, then chief constable at Moreton Bay from 1849 — so his record, if it
-      survives, is in a colonial series that predates S1108 or on the gaol side rather than the police
-      side. The <strong>Queensland Blue Books</strong> would at least confirm his tenure and salary
-      year by year and have not yet been tried.</li>
-    </ul>
-  </section>
+      <h3 style="margin-top:1.6rem">What has been tried</h3>
+      <div style="margin-top:.8rem;display:flex;flex-direction:column;gap:.9rem">
+        {r.tried.map(([what, outcome]) => (
+          <div style="border-left:2px solid var(--rule);padding-left:14px">
+            <strong class="small">{what}</strong>
+            <p class="small" style="margin:.25rem 0 0;color:var(--ink-2)">{outcome}</p>
+          </div>
+        ))}
+      </div>
 
-  <section class="blk">
-    <h2>5 · The letters</h2>
-    <p class="dek">Nine enquiries are now drafted and waiting — four letters to institutions and five
-    jobs needing a login, a card or an identity check. They live in the repository under
-    <span class="mono">notes/letters/</span> and <span class="mono">requests/</span>.</p>
-    <Scroll>
-      <table>
-        <thead><tr><th class="m">#</th><th>To</th><th>What it would settle</th></tr></thead>
-        <tbody>
-          <tr><td class="m">1</td><td>Royal Engineers Museum, Chatham</td><td><strong>Robert D'Arcy's parentage</strong> — the Corps' own archive; £25 enquiry service</td></tr>
-          <tr><td class="m">2</td><td>TNA, PROB 11/1728/64</td><td><strong>Robert D'Arcy's own will, 1827.</strong> Digitised, £3.50, <strong>downloadable today</strong></td></tr>
-          <tr><td class="m">3</td><td>Queensland BDM</td><td>Three causes of death, and three sets of parents in civil records</td></tr>
-          <tr><td class="m">4</td><td>Medway Archives</td><td>The two Chatham burials — likeliest of all to succeed</td></tr>
-          <tr><td class="m">5</td><td>National Archives of Australia</td><td>Lindesay D'Arcy's AIF dossier. <strong>Free, and may already be online</strong></td></tr>
-          <tr><td class="m">6</td><td>CWGC</td><td>Where Arthur Sneyd is commemorated. <strong>Free, two minutes</strong></td></tr>
-          <tr><td class="m">7</td><td>ScotlandsPeople</td><td>The generation above Francis Murdoch</td></tr>
-          <tr><td class="m">8</td><td>Roots Ireland</td><td>Anything at all about Richard Atkinson and Anne</td></tr>
-          <tr><td class="m">9</td><td>TNA enquiries</td><td>Which Ordnance series could hold a commission of 1776</td></tr>
-        </tbody>
-      </table>
-    </Scroll>
-    <p class="small" style="margin-top:1rem">Nothing has been sent. They are drafts.</p>
-  </section>
+      {r.note && <Note style="margin-top:1.3rem">{r.note}</Note>}
+    </Blk>
+  ))}
 
   <section class="blk" style="border-bottom:0">
-    <h2>6 · What has been read, and found empty</h2>
-    <ul class="dek" style="margin-bottom:1.2rem">
-      <li><span class="chip inf">newly opened · 10 Sep 2026</span> <strong>Is Sneyd-street, Bowen
-      Hills, named for the gaol governor?</strong> The street surfaced by accident in a 1902
-      insolvency notice. Bowen Hills sits in the <strong>Parish of North Brisbane</strong>, and
-      Samuel Sneyd was mortgaging subdivisions in that parish in <strong>1870 and 1872</strong>
-      (QSA <span class="mono">ITM3248152</span>, <span class="mono">ITM3622143</span>). Subdividers
-      named the streets they cut. <strong>The subdivision plan would settle it</strong>, and it is
-      held with the dealings. <a href={u("/sergeant-sneyd/")}>His land →</a></li>
-      <li><span class="chip inf">newly opened · 10 Sep 2026</span> <strong>Do Miriam Wakefield and
-      Martha Blum share a grave?</strong> The tree gives both women the identical plot — Lutwyche
-      Cemetery, <strong>Portion GP5, Section 42A, Grave 78</strong>. Martha died in 1904 aged
-      thirty-four; her mother-in-law Miriam died in 1909. Either the older woman was buried with her
-      son's wife, which is worth knowing, or it is a copy-and-paste in the tree. <strong>The Brisbane
-      City Council cemetery register would settle it in a minute</strong> and is free.
-      <a href={u("/the-women/")}>The women →</a></li>
-      <li><span class="chip lore">null · 9 Sep 2026</span> <strong>The 4th Earl of Holderness's
-      will.</strong> Searched at the National Archives under <em>Darcy</em>, <em>D'Arcy</em>,
-      <em>Holderness</em> and <em>Holdernesse</em>, and across every PROB record of 1778–80. Nothing.
-      A peer's estate commonly passed by settlement rather than testament.</li>
-      <li><span class="chip lore">null · 9 Sep 2026</span> <strong>Samuel Charles Sneyd in the
-      Queensland Blue Books.</strong> Absent from 1870, 1872, 1874, 1876, 1880, 1882 and 1884 — and
-      the series starts in 1870. So he had left the public service before then, which narrows a
-      governorship previously datable only as "from 1859". The 1859–69 volumes are not digitised.</li>
-      <li><span class="chip lore">null · 9 Sep 2026</span> <strong>His Queensland Police staff
-      file.</strong> Series <span class="mono">S1108</span> holds two Sneyds and neither can be him:
-      both date ranges fall after his death. He served the New South Wales force and then the gaols,
-      so that series could never have contained him.</li>
-      <li><span class="chip lore">null · 10 Sep 2026</span> <strong>Vivian Claude Sneyd's first
-      Military Medal in the <em>London Gazette</em>.</strong> The Bar recommendation records it as
-      awarded 1 March 1917, but the Gazette's full text does not name him. Military Medals to other
-      ranks were gazetted as bare lists of numbers and initials, frequently mis-scanned. The citation
-      is a separate AWM 28 file and AWM's search is down.</li>
-      <li><span class="chip lore">null · 10 Sep 2026</span> <strong>The 1873 insolvency in the
-      newspapers.</strong> Trove returns 645 results for <em>Sneyd insolvent</em> and none of the
-      first ten is ours — a South Australian painter, and a Brisbane street called
-      <em>Sneyd-street</em>. The QSA file <span class="mono">ITM1056950</span> remains the way in and
-      is not digitised.</li>
-    </ul>
-    <p class="dek">A null is a result. These searches have been run and came back empty; they are
-    listed so that nobody repeats them.</p>
-    <ul class="dek">
-      <li><strong>FindMyPast, all English record sets</strong> — baptism of a Robert D'Arcy or Darcy
-      born c. 1741–1761, name variants on. <em>No result.</em></li>
-      <li><strong>Connolly's <em>Roll of Officers of the Corps of Royal Engineers, 1660–1898</em></strong>
-      — searched in full. Found him, and his son Constantine, and <em>no parentage for anyone</em>;
-      the Roll does not record fathers.</li>
-      <li><strong><em>Records of the Royal Military Academy</em>, 1851 and 1892 editions</strong> —
-      searched in full. <em>No Robert D'Arcy.</em> Narrative histories, not cadet registers.</li>
-      <li><strong><em>Gentleman's Magazine</em>, May, June and July 1827</strong> — searched in full.
-      <em>No notice of his death</em>, which for a general officer is itself curious.</li>
-      <li><strong>WO 149, Registers of Cadets, RMA Woolwich</strong> — begins 1790. <em>Cannot cover
-      him.</em></li>
-      <li><strong>The <em>Dictionary of National Biography</em></strong> — its "D'Arcy, Robert" is the
-      4th Earl of Holderness. <em>Our Major-General has no entry.</em></li>
-    </ul>
+    <div class="prose" set:html={link(mdp(q.close))}></div>
+    <p class="small" style="margin-top:1.6rem;color:var(--ink-3)">
+      The other registers: <a href={u("/worklist/")}>what is being done</a> ·
+      <a href={u("/searched/")}>what has been read</a> ·
+      <a href={u("/coverage/")}>what the indexes hold</a> ·
+      <a href={u("/errands/")}>what has to be asked for</a> ·
+      <a href={u("/corrections/")}>what this archive got wrong</a>.
+    </p>
   </section>
 </Base>

@@ -4,6 +4,7 @@ import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { people } from "../lib/people.js";
+import printed from "../data/printed.json";
 
 const withSrc = people.filter((p) => (p.sources || []).length > 0).length;
 const counts = {};
@@ -30,6 +31,27 @@ const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
       <span class="chip lore">family lore</span> or <span class="chip dis">disputed</span> however
       many trees repeat it. <a href={u("/method/")}>Method →</a>
     </Note>
+  </section>
+
+  <section class="blk">
+    <h2>{printed.head}</h2>
+    <p class="lede" style="margin-top:.8rem">{printed.lede}</p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr>{printed.cols.map((c) => (<th>{c}</th>))}</tr></thead>
+        <tbody>
+          {printed.rows.map(([src, ed, where, gave, href]) => (
+            <tr>
+              <td><strong>{src}</strong></td>
+              <td class="m small" style="white-space:nowrap">{ed}</td>
+              <td class="small">{where}</td>
+              <td class="small">{gave} <a href={u(href + "/")}>→</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+    <Note style="margin-top:1.2rem">{printed.note}</Note>
   </section>
 
   <section class="blk">
