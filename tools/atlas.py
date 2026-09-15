@@ -88,6 +88,34 @@ def cat(p):
     if re.search(r"england|london|devon|suffolk|kent|york|sussex|essex|norfolk|middlesex|gloucester|bedford|barbados", s): return "en"
     return "other"
 
+# Places this archive has DOCUMENTED but the tree has never held. places.json is
+# written from the GEDCOM, so a hamlet that appears only in thirteenth-century
+# deeds is nowhere in it — and the atlas was therefore silent about the one
+# place this archive spent a week proving the existence of. They are listed
+# separately, and marked, so that nothing here can be mistaken for tree data.
+DOCUMENTED = [
+    # Only places that resolve to a coordinate of their OWN. Wanswell, Hinton
+    # and Blakeney were tried and every one of them fell back to its parish's
+    # point — three pins on Berkeley and one on Awre, all stamped "exact" by a
+    # gazetteer that had simply not heard of them. That is false precision, and
+    # a map that claims it is worse than a map that omits them.
+    ("Saniger, Berkeley, Gloucestershire, England",
+     "The hamlet the surname came from — on the king's highway from Longbridge "
+     "by the mid-13th century, «Swonhunger ats Saniger» in Smyth's survey of "
+     "about 1639, and Saniger Farm when Cooke wrote in 1882. THE POINT IS "
+     "BERKELEY: the hamlet lies inside that parish and has no coordinate of "
+     "its own. Wanswell and Hinton, its neighbours, are on the same point and "
+     "are not shown separately for that reason.",
+     1250, ["Swonhungre", "Swonhongre", "Swanhanger", "Swonhunger"]),
+    ("Awre, Gloucestershire, England",
+     "The Forest parish, across the Severn. No FreeREG coverage, no surviving "
+     "Protestation return and no surviving 1381 poll tax membrane — but manor "
+     "court rolls from 1387 to 1881. Blakeney, the other hamlet of the name in "
+     "this parish, shares this point.",
+     1387, ["Awre and Etloe", "Blakeney"]),
+]
+
+
 def main():
     places = J("places.json")
     anc = J("ancestors.json")
@@ -115,6 +143,21 @@ def main():
             "people": [{"n": n} for n in names[:12]],
             "more": max(0, len(names) - 12) or None,
         })
+    for name, what, first, also in DOCUMENTED:
+        if any(r["what"] == name for r in rows):
+            continue
+        rows.append({
+            "name": name.split(",")[0].strip(),
+            "_lookup": tidy(name) or name,
+            "cat": cat(name),
+            "n": 0,
+            "when": f"documented from {first}",
+            "what": what,
+            "also": also,
+            "people": [],
+            "more": None,
+        })
+
     atlasdata.build(rows, os.path.join(HERE, "..", "site", "public", "atlas-data.json"),
                     countries=["United Kingdom","England","Scotland","Wales","London","Ireland","\u00c9ire",
                                "Australia","Barbados","Italia","Italy","France","Deutschland","Germany",

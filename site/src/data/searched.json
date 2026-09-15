@@ -2547,6 +2547,42 @@
    "outcome": "yield",
    "got": "It was not; it was too harsh, and the fault was in my detector rather than in the rows. It required a DIGIT, so it missed «John Smith across the WHOLE OF CHESHIRE for 1800–1820 returns TWO entries», «transcribed in full — 7,967 records, 1545–1903» and «Dursley runs to 1951 and Cam to 1939, so the window is well covered» — all of them controls, stated in words. Widening it then introduced the opposite fault: it accepted «1841 entries», where the number is a YEAR. The real count is 55 named and 39 unstated of 94. The lesson is that the detector was the wrong shape: `ctl` is now a FIELD the author sets, and the pattern survives only as the bootstrap that set it once.",
    "href": "/searched"
+  },
+  {
+   "src": "White's History, Gazetteer and Directory of Staffordshire, 1834 and 1851",
+   "what": "The Sneyds of Well Street, Hanley, in the years between censuses",
+   "when": "15 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Neither man is there, and the reason is worth more than the search. SNEYD IS A STAFFORDSHIRE GENTRY NAME: of 63 mentions in the 1834 volume the overwhelming majority are the landed family — Basford Hall, Belmont, Ashcombe, Sneyd Green, the Rev. John Sneyd M.A., Thomas Sneyd Esq., the Misses Elizabeth and Harriot. A search on this surname in this county returns the gentry by default. Two TRADESMEN Sneyds do appear in 1834 with street addresses, SETH SNEYD of Oxford Street and RICHARD SNEYD of New Market Street, and neither is this archive's Samuel the grocer or James the engraver.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "White's Staffordshire — how far the control goes",
+   "what": "Whether the null is worth anything",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "Only partly, and the limit is stated rather than hidden. The books are the right books — Hanley 51 mentions, Shelton 36, Piccadilly (a Hanley street) 45, «grocer» 86 — but «Well street» appears NOWHERE in either scan, and the 1851 volume's «engraver» entries are from the Birmingham end of the county, around Soho. The OCR of these two-and-a-half-megabyte directories is poor. So this is a null against a book whose street-by-street sections cannot be shown to be fully readable, which is weaker than the FreeREG nulls and is recorded as such.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "Gloucestershire trade directories",
+   "what": "A digitised county directory that would carry Saniger clothiers and weavers",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "None found free. The Internet Archive has White's for Staffordshire in two editions and Slater's and Pigot's national directories for Scotland, Manchester and 1878–86, but searches for a Gloucestershire or Bristol county directory of the right period return NOTHING. The Gloucestershire volumes are on subscription sites and at the University of Leicester's Special Collections. The Staffordshire half of this question could be asked; the Gloucestershire half could not.",
+   "href": "/behind-the-paywall"
+  },
+  {
+   "src": "The atlas gazetteer, for the medieval hamlets",
+   "what": "Whether Saniger, Wanswell, Hinton, Awre and Blakeney can be put on the map",
+   "when": "15 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "Only two of the five honestly can. All five geocoded — but WANSWELL, HINTON and SANIGER returned the SAME coordinate, Berkeley's, and BLAKENEY returned AWRE's, every one of them stamped «exact» by a gazetteer that has simply never heard of the hamlets. Three pins on one point claiming exactness is worse than an omission, so only Saniger and Awre are shown, each saying in its own caption that the point is the PARISH and which neighbours share it.",
+   "href": "/atlas"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 55 do. 39 do not, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**. The classification is made by pattern, and it is deliberately biased towards `unstated`: a row the machine cannot read as controlled is marked untested even if a human would call it controlled. Being called untested when you are not is the harmless direction. The reverse is not.",
