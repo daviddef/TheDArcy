@@ -3322,6 +3322,31 @@
       "outcome": "blocked",
       "got": "churchofireland.org is behind a Cloudflare bot check — «This website uses a security service to protect against malicious bots» — on both a direct fetch and the browser, and this archive does not pass bot checks. The librarian also attached the Wicklow parish list as an image, which the mail tools here cannot download. **The list is public and free and this archive still cannot read it**, which is the same wall that already closed irishgenealogy.ie — her own first recommendation.",
       "href": "/errands"
+    },
+    {
+      "src": "Church of Ireland — List of Church of Ireland Parish Registers (PDF)",
+      "what": "Which Wicklow parishes have MARRIAGE registers covering 1819",
+      "when": "17 Sep 2026",
+      "outcome": "yield",
+      "got": "READ AT LAST, and it overturns this archive's premise. **At least 25 Wicklow parishes hold marriage registers covering 1819** — Arklow 1798-1861, Bray 1670-1956, Wicklow town 1729-1998, Baltinglass 1815-1836, Rathdrum 1706-2006 and twenty more. The county's Anglican marriage registers did not all burn in 1922. The site's Cloudflare interstitial cleared by itself in an ordinary browser; nothing was solved.",
+      "href": "/george-pitt"
+    },
+    {
+      "src": "irishgenealogy.ie — church records",
+      "what": "D'Arcy marriages in Co. Wicklow, 1810-1830",
+      "when": "17 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "None, and the null is worthless: **SMITH marrying in Wicklow church records 1810-1830 also returns nothing**, while the identical query against Dublin returns page after page. The site's church records do not cover Co. Wicklow at all. Recorded as blocked here since 15 September; it opened on 17 September in an ordinary browser, and the answer was a coverage gap rather than a wall.",
+      "href": "/george-pitt"
+    },
+    {
+      "src": "irishgenealogy.ie — church records",
+      "what": "Every D'Arcy marriage in Ireland, 1810-1830",
+      "when": "17 Sep 2026",
+      "outcome": "yield",
+      "got": "132 results across the counties the site covers, none of them Wicklow. One is noted and not claimed: JOHN D'ARCY married LOUISA BAGOTT SNEYD at St George's, Dublin, 3 March 1820 — this archive's two principal surnames in one entry, almost certainly a coincidence, written down so it is not rediscovered later and mistaken for a finding.",
+      "href": "/george-pitt"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

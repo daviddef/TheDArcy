@@ -1,132 +1,276 @@
 {
- "found": "14 September 2026",
- "lede": "George Pitt D'Arcy is the best-documented D'Arcy in this archive and has never had a page. He is also the join on which the whole Australian descent hangs: if he is Robert D'Arcy's son, the line runs from a Royal Engineer at Chatham to a convict ship and Queensland. That he was Robert's son has been a family tree's assertion and nothing else — until this.",
- "notice": {
-  "paper": "Salisbury and Winchester Journal, Monday 23 September 1805, page 3",
-  "also": "The same London report of 16 September was carried by the Hampshire Telegraph on the same day.",
-  "text": "Lately, Captain GEORGE D'ARCY, [of] the [—] foot, SON [of] LIEUT. COLONEL D'ARCY, [to] MISS LUDLAM, OF GUERNSEY.",
-  "ocr": "The scan is damaged and the small connecting words are lost — the regiment's number reads only as “tiie foot”. What survives is the structure of an ordinary marriage notice of the period, and the three facts in it: the groom's name and rank, his father's rank, and the bride."
- },
- "why": [
-  [
-   "It is the first record that makes him anyone's son.",
-   "Every other document this archive holds names George Pitt D'Arcy as a husband, a father, an officer or a passenger. None has ever named his father. This one does — not by name, but by rank."
+  "found": "14 September 2026",
+  "lede": "George Pitt D'Arcy is the best-documented D'Arcy in this archive and has never had a page. He is also the join on which the whole Australian descent hangs: if he is Robert D'Arcy's son, the line runs from a Royal Engineer at Chatham to a convict ship and Queensland. That he was Robert's son has been a family tree's assertion and nothing else — until this.",
+  "notice": {
+    "paper": "Salisbury and Winchester Journal, Monday 23 September 1805, page 3",
+    "also": "The same London report of 16 September was carried by the Hampshire Telegraph on the same day.",
+    "text": "Lately, Captain GEORGE D'ARCY, [of] the [—] foot, SON [of] LIEUT. COLONEL D'ARCY, [to] MISS LUDLAM, OF GUERNSEY.",
+    "ocr": "The scan is damaged and the small connecting words are lost — the regiment's number reads only as “tiie foot”. What survives is the structure of an ordinary marriage notice of the period, and the three facts in it: the groom's name and rank, his father's rank, and the bride."
+  },
+  "why": [
+    [
+      "It is the first record that makes him anyone's son.",
+      "Every other document this archive holds names George Pitt D'Arcy as a husband, a father, an officer or a passenger. None has ever named his father. This one does — not by name, but by rank."
+    ],
+    [
+      "And the rank fits, to the month.",
+      "ROBERT D'ARCY WAS GAZETTED LIEUTENANT-COLONEL ON 1 MARCH 1805, vice Nepean, six months before this notice was printed. In September 1805 he was a Lieut.-Colonel of the Royal Engineers, which is exactly what the notice calls the groom's father."
+    ],
+    [
+      "It confirms a tree claim from outside the tree.",
+      "The family tree has always said George Pitt D'Arcy married a Miss Ludlam about 1805. A Wiltshire newspaper printed it at the time, and neither knows about the other."
+    ]
   ],
-  [
-   "And the rank fits, to the month.",
-   "ROBERT D'ARCY WAS GAZETTED LIEUTENANT-COLONEL ON 1 MARCH 1805, vice Nepean, six months before this notice was printed. In September 1805 he was a Lieut.-Colonel of the Royal Engineers, which is exactly what the notice calls the groom's father."
+  "caveat": "The notice does not give the father's forename, and this archive has not enumerated every Lieutenant-Colonel D'Arcy serving in 1805 — there were 446 D'Arcy entries in the military collections searched and no cheap way to isolate them. So this is a very strong identification and not a proof. What it is not is an assertion: it is a contemporary printed statement that the man had a father of that rank.",
+  "life": [
+    [
+      "23 September 1805",
+      "Married MISS LUDLAM OF GUERNSEY, as Captain George D'Arcy, son of Lieut.-Colonel D'Arcy",
+      "Salisbury and Winchester Journal"
+    ],
+    [
+      "1808",
+      "39th Foot, Peninsular War officers' roll",
+      "RUSI, via FindMyPast"
+    ],
+    [
+      "2 July 1811",
+      "His son FREDERICK ROBERT D'ARCY baptised at Chatham — mother MARY",
+      "Chatham St Mary the Virgin"
+    ],
+    [
+      "6 March 1820",
+      "“a party of the 39th regiment, under the command of Major D'Arcy”, going to the assistance of the yeomanry in Ireland with Dominick Browne Esq.",
+      "British Press, London"
+    ],
+    [
+      "2 February 1822",
+      "“the detachment of the 39th regiment quartered in that town, under the command of Major D'Arcy”, near Cork",
+      "Weekly Freeman's Journal, Dublin"
+    ],
+    [
+      "31 March 1826",
+      "His daughter CHARLOTTE baptised at Chatham — “Bt: Major 39th Foot”, mother MARIA",
+      "Chatham St Mary the Virgin"
+    ],
+    [
+      "8 April 1826",
+      "Embarked the convict ship ENGLAND commanding a detachment of the 39th, with Mrs D'Arcy and family in the cabin",
+      "the surgeon's journal"
+    ]
   ],
-  [
-   "It confirms a tree claim from outside the tree.",
-   "The family tree has always said George Pitt D'Arcy married a Miss Ludlam about 1805. A Wiltshire newspaper printed it at the time, and neither knows about the other."
-  ]
- ],
- "caveat": "The notice does not give the father's forename, and this archive has not enumerated every Lieutenant-Colonel D'Arcy serving in 1805 — there were 446 D'Arcy entries in the military collections searched and no cheap way to isolate them. So this is a very strong identification and not a proof. What it is not is an assertion: it is a contemporary printed statement that the man had a father of that rank.",
- "life": [
-  [
-   "23 September 1805",
-   "Married MISS LUDLAM OF GUERNSEY, as Captain George D'Arcy, son of Lieut.-Colonel D'Arcy",
-   "Salisbury and Winchester Journal"
-  ],
-  [
-   "1808",
-   "39th Foot, Peninsular War officers' roll",
-   "RUSI, via FindMyPast"
-  ],
-  [
-   "2 July 1811",
-   "His son FREDERICK ROBERT D'ARCY baptised at Chatham — mother MARY",
-   "Chatham St Mary the Virgin"
-  ],
-  [
-   "6 March 1820",
-   "“a party of the 39th regiment, under the command of Major D'Arcy”, going to the assistance of the yeomanry in Ireland with Dominick Browne Esq.",
-   "British Press, London"
-  ],
-  [
-   "2 February 1822",
-   "“the detachment of the 39th regiment quartered in that town, under the command of Major D'Arcy”, near Cork",
-   "Weekly Freeman's Journal, Dublin"
-  ],
-  [
-   "31 March 1826",
-   "His daughter CHARLOTTE baptised at Chatham — “Bt: Major 39th Foot”, mother MARIA",
-   "Chatham St Mary the Virgin"
-  ],
-  [
-   "8 April 1826",
-   "Embarked the convict ship ENGLAND commanding a detachment of the 39th, with Mrs D'Arcy and family in the cabin",
-   "the surgeon's journal"
-  ]
- ],
- "wives": {
-  "head": "Two wives, and only one of them found",
-  "first": "MISS LUDLAM of Guernsey, married about September 1805 — now documented. The Chatham baptism of 1811 gives Frederick Robert's mother as MARY, so she was very probably Mary Ludlam.",
-  "second": "MARIA WHITE, whom the tree marries him to in County Wicklow about 1819, and who is the Maria of the 1826 baptism. Searched in the Irish and British press for 1816–1823 and not found. The newspapers do place him in Ireland with the 39th in 1820 and 1822, which is the right country at nearly the right time — but that is context, not a record.",
-  "chip": "one found, one open"
- },
- "matters": "This is why the archive cares. Frederick Robert D'Arcy, baptised Chatham 1811 to George and MARY, and Charlotte, baptised Chatham 1826 to George and MARIA, are half-brother and half-sister — and the 1805 notice is the first evidence from outside the family that there were two marriages at all.",
- "maria": {
-  "head": "Maria White, and why she cannot be found",
-  "lede": "The family tree marries George Pitt D'Arcy to MARIA WHITE in County Wicklow about 1819. She is real — the Chatham baptism of March 1826 names Charlotte's mother as Maria, and the surgeon of the England recorded Mrs D'Arcy and family in the cabin a fortnight later. But the marriage itself has now been searched properly, and it is not findable, for a reason that has nothing to do with this family.",
-  "steps": [
-   [
-    "Every Wicklow marriage index available is Roman Catholic.",
-    "A control search — SMITH, marrying in County Wicklow between 1813 and 1825 — returns twenty-five results from exactly two collections: Ireland Roman Catholic Parish Marriages, and Betham's Genealogical Abstracts. There is no Church of Ireland marriage register for Wicklow in this index at all."
-   ],
-   [
-    "The same holds for the whole Dublin diocese.",
-    "Seventy D'Arcy marriages in Dublin diocese between 1814 and 1824, and every single one is from the Roman Catholic parish registers."
-   ],
-   [
-    "And he would have married in the Church of Ireland.",
-    "A captain of the 39th Foot in 1819 is an Anglican officer. His marriage would have been entered in a Church of Ireland parish register — the exact class of record that is missing."
-   ],
-   [
-    "Because most of them burned.",
-    "The Public Record Office of Ireland was destroyed in June 1922, and with it the Church of Ireland parish registers that had been deposited there. What survives is what individual parishes had kept, and a scatter of transcripts and abstracts."
-   ],
-   [
-    "And the licence-bond route is closed too, for a reason of date rather than fire.",
-    "An Anglican officer who did not want banns read would have taken out a MARRIAGE LICENCE, and the indexes to the diocesan and prerogative licence bonds survived 1922. They do not help. Ireland Diocesan and Prerogative Marriage Licence Bonds Indexes 1623-1866 holds 218,433 records, and its DUBLIN DIOCESE ENTRIES EFFECTIVELY STOP IN 1741 — sorted by year, the latest Dublin entries in the whole set are a single 1813, a single 1752, and then a wall of 1741. The set contains no George D'Arcy at all, and none of its six Maria Whites married a D'Arcy. Betham's Prerogative Marriage Licences Abstracts ends in 1810. Neither collection is capable of holding an 1819 marriage."
-   ]
-  ],
-  "excluded": "One candidate was tested and rejected. A MARIA WHITE does marry in County Wicklow in the window — at BRAY on 13 November 1825 — but the groom is THOMAS BARRY, and by November 1825 George Pitt D'Arcy's daughter Charlotte was six months old. Not her.",
-  "verdict": "So this is a null with a cause rather than a failed search. The record probably existed and probably no longer does. Saying that is more use to the next person than leaving the question open.",
-  "next": "Two places could still hold it: the Representative Church Body Library in Dublin, which keeps the surviving Church of Ireland registers and knows which parishes survive; and Betham's abstracts of marriage licence bonds at the National Archives of Ireland, which survive as abstracts although the bonds themselves burned.",
-  "licence": "This matters because it removes the last free route. The RCB Library in Dublin was written to on 13 September asking which Wicklow Anglican registers survive and in whose custody. That letter is now the only live line of enquiry, and it was sent before this was known."
- },
- "rmc": {
-  "head": "His commissions, from the army's own book",
-  "lede": "The Royal Military Calendar of 1820 carries him among the Majors at entry 2098 — the third D'Arcy in the same work, after his father and his brother.",
-  "quote": "2098. Major George D'Arcy. Ens. 39th foot, 25th Aug. 1794; Lieut. 29th Sept. 1795; Capt. 9th July, 1803; and brev. Maj. 22d Nov. 1813. Served in the Peninsula, and has received a medal for the battle of Orthes.",
-  "chip": "documented",
-  "rows": [
-   [
-    "25 August 1794",
-    "Ensign, 39th Foot",
-    "He was eleven, if the tree's 1783 is right — which is why that birth year needs testing, not repeating"
-   ],
-   [
-    "29 September 1795",
-    "Lieutenant",
-    ""
-   ],
-   [
-    "9 July 1803",
-    "Captain",
-    ""
-   ],
-   [
-    "22 November 1813",
-    "Brevet Major",
-    "The rank the Chatham register gives him as “Bt: Major 39th Foot”"
-   ]
-  ],
-  "means": "Four dates and a regiment, printed while he was alive. This archive had the 39th Foot from a parish register and Orthes from a medal roll; the Calendar has both, and adds the whole ladder between them.",
-  "ageHead": "And a problem it hands over",
-  "age": "The family tree gives George Pitt D'Arcy a birth in 1783. An ensigncy in August 1794 would make him ELEVEN YEARS OLD. Boy commissions were real and the 39th was not unusual in that, but eleven is young even for the period, and the alternative is that the 1783 is wrong. This archive has never had a baptism for him.",
-  "chipAge": "a conflict between a tree date and a commission date",
-  "where": "Read 15 September 2026 in the free full text of the 1820 third edition, volume V, on the Internet Archive."
- }
+  "wives": {
+    "head": "Two wives, and only one of them found",
+    "first": "MISS LUDLAM of Guernsey, married about September 1805 — now documented. The Chatham baptism of 1811 gives Frederick Robert's mother as MARY, so she was very probably Mary Ludlam.",
+    "second": "MARIA WHITE, whom the tree marries him to in County Wicklow about 1819, and who is the Maria of the 1826 baptism. Searched in the Irish and British press for 1816–1823 and not found. The newspapers do place him in Ireland with the 39th in 1820 and 1822, which is the right country at nearly the right time — but that is context, not a record.",
+    "chip": "one found, one open"
+  },
+  "matters": "This is why the archive cares. Frederick Robert D'Arcy, baptised Chatham 1811 to George and MARY, and Charlotte, baptised Chatham 1826 to George and MARIA, are half-brother and half-sister — and the 1805 notice is the first evidence from outside the family that there were two marriages at all.",
+  "maria": {
+    "head": "Maria White, and why she cannot be found",
+    "lede": "The family tree marries George Pitt D'Arcy to MARIA WHITE in County Wicklow about 1819. She is real — the Chatham baptism of March 1826 names Charlotte's mother as Maria, and the surgeon of the England recorded Mrs D'Arcy and family in the cabin a fortnight later. But the marriage itself has now been searched properly, and it is not findable, for a reason that has nothing to do with this family.",
+    "steps": [
+      [
+        "Every Wicklow marriage index available is Roman Catholic.",
+        "A control search — SMITH, marrying in County Wicklow between 1813 and 1825 — returns twenty-five results from exactly two collections: Ireland Roman Catholic Parish Marriages, and Betham's Genealogical Abstracts. There is no Church of Ireland marriage register for Wicklow in this index at all."
+      ],
+      [
+        "The same holds for the whole Dublin diocese.",
+        "Seventy D'Arcy marriages in Dublin diocese between 1814 and 1824, and every single one is from the Roman Catholic parish registers."
+      ],
+      [
+        "And he would have married in the Church of Ireland.",
+        "A captain of the 39th Foot in 1819 is an Anglican officer. His marriage would have been entered in a Church of Ireland parish register — the exact class of record that is missing."
+      ],
+      [
+        "Because most of them burned.",
+        "The Public Record Office of Ireland was destroyed in June 1922, and with it the Church of Ireland parish registers that had been deposited there. What survives is what individual parishes had kept, and a scatter of transcripts and abstracts."
+      ],
+      [
+        "And the licence-bond route is closed too, for a reason of date rather than fire.",
+        "An Anglican officer who did not want banns read would have taken out a MARRIAGE LICENCE, and the indexes to the diocesan and prerogative licence bonds survived 1922. They do not help. Ireland Diocesan and Prerogative Marriage Licence Bonds Indexes 1623-1866 holds 218,433 records, and its DUBLIN DIOCESE ENTRIES EFFECTIVELY STOP IN 1741 — sorted by year, the latest Dublin entries in the whole set are a single 1813, a single 1752, and then a wall of 1741. The set contains no George D'Arcy at all, and none of its six Maria Whites married a D'Arcy. Betham's Prerogative Marriage Licences Abstracts ends in 1810. Neither collection is capable of holding an 1819 marriage."
+      ]
+    ],
+    "excluded": "One candidate was tested and rejected. A MARIA WHITE does marry in County Wicklow in the window — at BRAY on 13 November 1825 — but the groom is THOMAS BARRY, and by November 1825 George Pitt D'Arcy's daughter Charlotte was six months old. Not her.",
+    "verdict": "So this is a null with a cause rather than a failed search. The record probably existed and probably no longer does. Saying that is more use to the next person than leaving the question open.",
+    "next": "Two places could still hold it: the Representative Church Body Library in Dublin, which keeps the surviving Church of Ireland registers and knows which parishes survive; and Betham's abstracts of marriage licence bonds at the National Archives of Ireland, which survive as abstracts although the bonds themselves burned.",
+    "licence": "This matters because it removes the last free route. The RCB Library in Dublin was written to on 13 September asking which Wicklow Anglican registers survive and in whose custody. That letter is now the only live line of enquiry, and it was sent before this was known."
+  },
+  "rmc": {
+    "head": "His commissions, from the army's own book",
+    "lede": "The Royal Military Calendar of 1820 carries him among the Majors at entry 2098 — the third D'Arcy in the same work, after his father and his brother.",
+    "quote": "2098. Major George D'Arcy. Ens. 39th foot, 25th Aug. 1794; Lieut. 29th Sept. 1795; Capt. 9th July, 1803; and brev. Maj. 22d Nov. 1813. Served in the Peninsula, and has received a medal for the battle of Orthes.",
+    "chip": "documented",
+    "rows": [
+      [
+        "25 August 1794",
+        "Ensign, 39th Foot",
+        "He was eleven, if the tree's 1783 is right — which is why that birth year needs testing, not repeating"
+      ],
+      [
+        "29 September 1795",
+        "Lieutenant",
+        ""
+      ],
+      [
+        "9 July 1803",
+        "Captain",
+        ""
+      ],
+      [
+        "22 November 1813",
+        "Brevet Major",
+        "The rank the Chatham register gives him as “Bt: Major 39th Foot”"
+      ]
+    ],
+    "means": "Four dates and a regiment, printed while he was alive. This archive had the 39th Foot from a parish register and Orthes from a medal roll; the Calendar has both, and adds the whole ladder between them.",
+    "ageHead": "And a problem it hands over",
+    "age": "The family tree gives George Pitt D'Arcy a birth in 1783. An ensigncy in August 1794 would make him ELEVEN YEARS OLD. Boy commissions were real and the 39th was not unusual in that, but eleven is young even for the period, and the alternative is that the 1783 is wrong. This archive has never had a baptism for him.",
+    "chipAge": "a conflict between a tree date and a commission date",
+    "where": "Read 15 September 2026 in the free full text of the 1820 third edition, volume V, on the Internet Archive."
+  },
+  "wicklow": {
+    "found": "17 September 2026",
+    "head": "The fire did not take Wicklow",
+    "lede": "This archive has been working on the premise that the Church of Ireland registers for County Wicklow «went in the 1922 Four Courts fire», and that the marriage of George Pitt D'Arcy and Maria White was therefore unrecoverable. **The premise is wrong.** The Representative Church Body's own list of surviving parish registers, read on 17 September, shows **at least twenty-five Wicklow parishes whose MARRIAGE register covers 1819** and is in the Library's custody.",
+    "chip": "documented",
+    "cols": [
+      "Parish",
+      "Diocese",
+      "Marriages surviving"
+    ],
+    "rows": [
+      [
+        "Arklow",
+        "Glendalough",
+        "1798 – 1861"
+      ],
+      [
+        "Ashford",
+        "Glendalough",
+        "1803 – 1845"
+      ],
+      [
+        "Ballynure",
+        "Leighlin",
+        "1818 – 1859"
+      ],
+      [
+        "Baltinglass",
+        "Leighlin",
+        "1815 – 1836"
+      ],
+      [
+        "Blessington",
+        "Glendalough",
+        "1683 – 2005"
+      ],
+      [
+        "Bray",
+        "Dublin",
+        "1670 – 1956"
+      ],
+      [
+        "Calary",
+        "Glendalough",
+        "1791 – 1876"
+      ],
+      [
+        "Castlemacadam (Ovoca)",
+        "Glendalough",
+        "1720 – 2007"
+      ],
+      [
+        "Delgany",
+        "Glendalough",
+        "1666 – 2006"
+      ],
+      [
+        "Derralossory",
+        "Glendalough",
+        "1779 – 1844"
+      ],
+      [
+        "Donard & Crehelp",
+        "Glendalough",
+        "1815 – 1861"
+      ],
+      [
+        "Donoughmore",
+        "Glendalough",
+        "1720 – 2007"
+      ],
+      [
+        "Drumkay",
+        "Glendalough",
+        "1801 – 1845"
+      ],
+      [
+        "Dunlavin",
+        "Glendalough",
+        "1698 – 2006"
+      ],
+      [
+        "Glenealy",
+        "Glendalough",
+        "1808 – 2005"
+      ],
+      [
+        "Kilcommon",
+        "Ferns",
+        "1817 – 2007"
+      ],
+      [
+        "Killiskey",
+        "Glendalough",
+        "1818 – 1867"
+      ],
+      [
+        "Kiltegan & Kilranelagh",
+        "Leighlin",
+        "1806 – 1877"
+      ],
+      [
+        "Moyne",
+        "Leighlin",
+        "1815 – 1872"
+      ],
+      [
+        "Newcastle",
+        "Glendalough",
+        "1697 – 1986"
+      ],
+      [
+        "Powerscourt",
+        "Glendalough",
+        "1662 – 2007"
+      ],
+      [
+        "Rathdrum",
+        "Glendalough",
+        "1706 – 2006"
+      ],
+      [
+        "Carnew / Slaney",
+        "Leighlin",
+        "1804 – 1970"
+      ],
+      [
+        "Wicklow (the town)",
+        "Glendalough",
+        "1729 – 1998"
+      ]
+    ],
+    "howHead": "How this was read, and what that is worth",
+    "how": "The list is a 105-page PDF on churchofireland.org. The site sits behind a Cloudflare interstitial, and on 17 September it cleared **by itself** in an ordinary browser — nothing was solved and no challenge was answered; a different client simply passed where this archive's own had not. The PDF's text layer was then extracted and every row whose county reads WICKLOW was pulled out and filtered on the marriage column. **That is a machine reading of a text layer, not a page read by eye**, so the parish spellings above are the extractor's and two or three of the twenty-nine qualifying rows could not be named cleanly at all and are left out. The dates are exact; the list is a floor, not a ceiling.",
+    "chipHow": "inferred",
+    "nextHead": "What it changes",
+    "next": "Everything about how this question is asked. It is no longer «is there anything left?» but «which of twenty-five parishes, and who will look?». Bray, Wicklow town and Arklow are the garrison end of the county and all three have registers covering 1819. The RCB Library will search for a fee. **A county-wide trawl is not a reasonable thing to buy; three named parishes is.**",
+    "igHead": "And the free site cannot help, for a second reason",
+    "ig": "irishgenealogy.ie — the librarian's own first suggestion, and a site this archive had recorded as unreachable behind a bot check — also opened on 17 September. It does not hold Wicklow. **Controlled:** SMITH marrying in Wicklow church records 1810-1830 returns **nothing**, while the identical query against Dublin returns page after page. The site's church records simply do not cover the county, so the earlier «blocked» verdict was concealing a null that would have been a coverage gap anyway.",
+    "chipIg": "documented",
+    "curioHead": "One entry that is not evidence and is worth writing down",
+    "curio": "Searching the same free site for **every D'Arcy church marriage in Ireland between 1810 and 1830** returns 132, none of them in Wicklow. One of the 132 is **«Marriage of JOHN D'ARCY and LOUISA BAGOTT SNEYD, 3 March 1820, Dublin (Church of Ireland), St George's»** — this archive's two principal surnames, married to each other, in the exact decade it is working in. **It is almost certainly nothing.** The Sneyds here are Staffordshire potters who reach Ireland nowhere, and Bagott Sneyd is an Anglo-Irish gentry name. It is recorded because a coincidence noticed and not written down is a coincidence that gets rediscovered later and mistaken for a finding.",
+    "chipCurio": "not claimed"
+  }
 }

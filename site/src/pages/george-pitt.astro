@@ -3,6 +3,8 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
+import Scroll from "../components/Scroll.astro";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/george-pitt.json";
 ---
 <Base
@@ -19,6 +21,33 @@ import d from "../data/george-pitt.json";
     </Note>
     <p class="small" style="margin-top:1rem">{d.notice.also}</p>
     <p class="small" style="margin-top:.6rem">{d.notice.ocr}</p>
+  </Blk>
+
+  <Blk label={`The RCB list, read ${d.wicklow.found}`} title={d.wicklow.head}>
+    <p class="lede" set:html={mdp(d.wicklow.lede)}></p>
+    <p style="margin-top:.6rem"><span class="chip doc">{d.wicklow.chip}</span></p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr>{d.wicklow.cols.map((c) => <th>{c}</th>)}</tr></thead>
+        <tbody>{d.wicklow.rows.map(([a, b, c]) => (
+          <tr><td><strong>{a}</strong></td><td class="small">{b}</td><td class="m">{c}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      <strong>{d.wicklow.nextHead}.</strong> <span set:html={mdp(d.wicklow.next)} />
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.wicklow.igHead}.</strong> <span set:html={mdp(d.wicklow.ig)} />
+      {" "}<span class="chip doc">{d.wicklow.chipIg}</span>
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.wicklow.curioHead}.</strong> <span set:html={mdp(d.wicklow.curio)} />
+      {" "}<span class="chip lore">{d.wicklow.chipCurio}</span>
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.wicklow.howHead}.</strong> <span set:html={mdp(d.wicklow.how)} />
+      {" "}<span class="chip inf">{d.wicklow.chipHow}</span>
+    </Note>
   </Blk>
 
   <Blk label="Why it matters" title="Three things at once">
