@@ -3206,6 +3206,23 @@
    "outcome": "yield",
    "got": "A **D'ARCY marriage at CHATHAM ST MARY in 1806**, with no forenames given in the index — the parish where Robert D'Arcy was buried in 1827 and where his son Constantine was commissioned. And a **ROBERT D'ARCY baptised 1770 at ST GEORGE, HANOVER SQUARE, Westminster** — almost certainly a different man, since this archive's Robert was buried aged 76 in 1827 and so born about 1751. Both are recorded because they will be found again; **neither is claimed**.",
    "href": "/the-corps"
+  },
+  {
+   "src": "FindMyPast — England Births & Baptisms 1538-1975, the whole Saniger run",
+   "what": "Whether an index exists that names the FATHER",
+   "when": "16 Sep 2026",
+   "outcome": "yield",
+   "got": "**It does, and this archive has never had one.** 158 Saniger baptisms with a «Father's first name(s)» column, 1625 to the 1820s, across Berkeley, Thornbury, Dursley, Stone and King's Stanley. The find in the first page: **ANN SANIGER, baptised Berkeley 1798, father JOHN** — a sister this archive's tree asserts and for whom it had no baptism, three years before William's of 1801. The remaining seven pages have not been read.",
+   "href": "/hannah-baptism"
+  },
+  {
+   "src": "FindMyPast — Hannah under the register spellings",
+   "what": "SINNEGAR, the commonest form in the Berkeley registers",
+   "when": "16 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "No Hannah Sinnegar baptism in England Births & Baptisms 1538-1975 — against a set that returns 158 for SANIGER and five for SANIGAR including two at Bristol. So the null is about the spelling rather than the set. SINEGAR and SYNEGAR, the other two dominant register forms, have not yet been tried.",
+   "href": "/hannah-baptism"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

@@ -70,5 +70,89 @@
   "means": "Neither is Berkeley. The John Sanigar of 1822 is the Thornbury outlier this archive already knew about, ten miles down the Vale and in the wrong parish; a cardmaker at Dursley makes the combs that card wool, which is the Stroudwater trade the reconstitution found. THERE IS NO SANIGER OF BERKELEY IN THE GLOUCESTERSHIRE PROBATE INDEX AT ALL, which means John Saniger left no proved will and no administration in the diocesan court — the ordinary outcome for a man with nothing much to leave, and a closed door rather than an unopened one.",
   "how": "Searched with wildcards rather than spellings — SAN*, SIN*, SYN* and SWA* return every form the name takes and 27 surrounding families besides, so no spelling can hide inside this result the way SANIGOR hid a baptism. Control: SMITH in the same index returns 277.",
   "chip": "searched, empty, and the coverage established"
+ },
+ "fmp": {
+  "head": "The set that names fathers — and a sister",
+  "found": "16 September 2026",
+  "lede": "FindMyPast's **England Births & Baptisms 1538-1975** carries a column this archive has never had from an index: **the father's first name**. For this surname it holds **158 baptisms**, running from 1625 to the 1820s, across Berkeley, Thornbury, Dursley, Stone and King's Stanley.",
+  "rows": [
+   [
+    "Ann Saniger",
+    "1798",
+    "JOHN",
+    "Berkeley",
+    "the one that matters — see below"
+   ],
+   [
+    "Edward Saniger",
+    "1625",
+    "John",
+    "Berkeley",
+    ""
+   ],
+   [
+    "Edith Saniger",
+    "1691",
+    "John",
+    "Dursley",
+    ""
+   ],
+   [
+    "Ann Saniger",
+    "1690",
+    "William",
+    "Berkeley",
+    ""
+   ],
+   [
+    "Benjamin Saniger",
+    "1725",
+    "Will",
+    "Berkeley",
+    ""
+   ],
+   [
+    "Charles Saniger",
+    "1727",
+    "William",
+    "Berkeley",
+    ""
+   ],
+   [
+    "Edith Saniger",
+    "1748",
+    "William",
+    "Berkeley",
+    ""
+   ],
+   [
+    "Eliza Saniger",
+    "1819",
+    "Joseph",
+    "Berkeley",
+    ""
+   ],
+   [
+    "Daniel Saniger",
+    "1821",
+    "Edward",
+    "Berkeley",
+    ""
+   ],
+   [
+    "Elizabeth Saniger",
+    "1704",
+    "Moris",
+    "Berkeley",
+    ""
+   ]
+  ],
+  "annHead": "ANN SANIGER, baptised Berkeley 1798, father JOHN",
+  "ann": "This archive's tree gives Hannah three siblings — **Ann, John, Thomas and William Saniger** — and has documented baptisms for William in 1801, John in 1803 and Thomas in 1808, all at Berkeley. **Ann has never had one.** Here she is, three years before William, with her father named as JOHN in an index rather than asserted by a tree.",
+  "chip": "documented",
+  "careHead": "And what it does not do",
+  "care": "It does not find HANNAH. Three Hannah Sanigers are in the set — Berkeley 1746 (father Thomas), Berkeley 1772 (father William, entered twice) — and two Hannah Sanigars at Bristol in 1831 (father William). None can be hers: she was about 35 in 1841, so born about 1806. **The set has not yet been read across the spellings that dominate the Berkeley registers** — SINNEGAR, SINEGAR, SYNEGAR — of which only SINNEGAR has been tried, with no result.",
+  "nextHead": "What would finish it",
+  "next": "A single pass through all 158, sorted by baptism year, reading every entry with **father JOHN at Berkeley between about 1795 and 1815**. That is eight pages of twenty. It would give Hannah if she is there under SANIGER, and it would give the whole sibling group with their father named from record rather than from a tree."
  }
 }

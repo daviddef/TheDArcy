@@ -71,6 +71,26 @@ import d from "../data/hannah-baptism.json";
     <p class="small" style="margin-top:1rem">{d.probate.how}</p>
   </Blk>
 
+  <Blk label={`FindMyPast · found ${d.fmp.found}`} title={d.fmp.head}>
+    <p class="lede">{d.fmp.lede}</p>
+    <Scroll>
+      <table style="margin-top:1.1rem">
+        <thead><tr><th>Child</th><th class="m">Baptised</th><th>Father</th><th>Parish</th><th></th></tr></thead>
+        <tbody>{d.fmp.rows.map(([c, y, f, p2, note]) => (
+          <tr style={note ? "background:var(--tint)" : ""}>
+            <td><strong>{c}</strong></td><td class="m">{y}</td>
+            <td><strong>{f}</strong></td><td class="small">{p2}</td>
+            <td class="small">{note}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.2rem">
+      <strong>{d.fmp.annHead}.</strong> {d.fmp.ann}
+      {" "}<span class="chip doc">{d.fmp.chip}</span>
+    </Note>
+    <Note style="margin-top:1.2rem"><strong>{d.fmp.careHead}.</strong> {d.fmp.care}</Note>
+    <Note style="margin-top:1.2rem"><strong>{d.fmp.nextHead}.</strong> {d.fmp.next}</Note>
+  </Blk>
+
   <section class="blk" style="border-bottom:0">
     <h2>Two notes on method</h2>
     <ol class="dek">
