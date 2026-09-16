@@ -11,6 +11,7 @@ echo "── data from the GEDCOM"
 python3 tools/build_site_data.py
 python3 tools/build_register.py          # also writes provenance.json
 python3 tools/build_dossiers.py          # needs register.json
+python3 tools/build_person_records.py     # needs register.json; the records build_dossiers drops
 python3 tools/build_family_pages.py
 python3 tools/build_dna.py
 

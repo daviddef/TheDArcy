@@ -13,6 +13,17 @@
  *               Most of the archive is here, and saying so is the point.
  */
 import prov from "../data/provenance.json";
+import personRecords from "../data/person-records.json";
+
+/* The ladder above grades RELATIONSHIPS, because that is what provenance.json
+   holds. It said more than it knew: a person with no relationship edge got
+   "No record has been found for them", and on 17 September 2026 that sentence
+   was being printed on the pages of thirty people for whom this archive had
+   read a hundred and thirty records — six London Gazette commissions on one of
+   them. The level is unchanged, because the level is about relationships and
+   a name-matched record does not prove a parent. The SENTENCE is fixed,
+   because it was false. */
+const recsFor = (slug) => (personRecords[slug]?.rows || []).length;
 
 const GRAFT = {
   Hornby: { level: "disputed", label: "Hornby graft",
@@ -25,20 +36,29 @@ const GRAFT = {
 
 export function grade(slug) {
   const me = prov[slug];
-  if (!me) return { level: "family", label: null, why: "Not in the provenance index — carried by the family tree alone.", href: null };
+  const nRec = recsFor(slug);
+  const read = nRec
+    ? ` ${nRec} record${nRec === 1 ? " that names" : "s that name"} them ${nRec === 1 ? "has" : "have"} been read, set out on this page.`
+    : "";
+  if (!me) return { level: "family", label: null, cites: [], nRec,
+    why: "Not in the provenance index — carried by the family tree alone." + read, href: null };
 
   const cites = Object.values(me.rel || {}).flat();
   if (cites.length) {
     return {
-      level: "documented", label: null, cites,
-      why: `Proved by ${cites.length} record${cites.length === 1 ? "" : "s"}.`,
+      level: "documented", label: null, cites, nRec,
+      why: `Proved by ${cites.length} record${cites.length === 1 ? "" : "s"}.` + read,
       href: null,
     };
   }
-  if (me.graft && GRAFT[me.graft]) return { ...GRAFT[me.graft], cites: [] };
+  if (me.graft && GRAFT[me.graft]) return { ...GRAFT[me.graft], cites: [], nRec,
+    why: GRAFT[me.graft].why + read };
   return {
-    level: "family", label: null, cites: [],
-    why: "Asserted by the family tree. No record has been found for them, and none has been shown against them either.",
+    level: "family", label: null, cites: [], nRec,
+    why: nRec
+      ? "No record yet ties them to their parents or their children, so the relationships above are the family tree's."
+        + read
+      : "Asserted by the family tree. No record has been found for them, and none has been shown against them either.",
     href: null,
   };
 }

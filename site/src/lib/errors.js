@@ -2,6 +2,16 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "17 September 2026",
+    what: "Printed “No record has been found for them” on the pages of thirty people for whom this archive had read a hundred and thirty records — including Constantine D'Arcy, who has two commissions in the London Gazette, a death notice in the Kentish Gazette, a burial register at Medway Archives and an entry in the Corps roll, and a page of this site written about him.",
+    truth:
+      "One hundred and seventy-six record lines naming fifty-five people in the family tree had been read, graded and published on /register/. Every one of them was dropped before it could reach the person it named.",
+    why: "build_dossiers.py gathers every person named in a record and gives them a page. Where the family tree also carries the name it skips them — `if e[\"inTree\"]: continue` — on the reasoning that “the rest already have one”. They do have a page. That page never read the records. /people/[slug] is built from provenance.json, which is a hand-kept list of RELATIONSHIP edges and knows nothing of record rows, so a person with six documents and no relationship edge fell through to the sentence written for people with nothing at all. The data was right, the build dropped it silently, and no gate refused. The Mazza archive had the same fault in a different file and the estate landing page caught it there first.",
+    lesson:
+      "An assumption inside a build script is a claim, and claims in this archive carry their evidence. “They already have a page” was never checked against the page. The gate that now refuses this reads register.json — the evidence — and works out who is owed a record; the first version of it read the derived file instead, and when the bug was put back that file emptied and the gate reported “0 of 0, ok”. A control that cannot fail is not a control, and it caught its author out twice in one afternoon.",
+    href: "/method",
+  },
+  {
     when: "16 September 2026",
     what: "Announced Ann Saniger's 1798 baptism at Berkeley as a new find — “Ann has never had one” — in a block published on the page that had already been carrying her since 13 September.",
     truth:
