@@ -747,14 +747,14 @@
     },
     {
       "n": 83,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-15",
       "what": "Find out what became of Catherine Sneyd, born Hanley 1845",
       "covers": [
         "q:q/what-became-of-catherine-sne-c90b1c"
       ],
-      "note": "**Advanced, not closed.** The 1851 census has now been read: **she is in neither Sneyd household**, while every other child of James and Ann is at one of the two addresses. The remaining explanations are a death before 1851 or a child living away from both parents and both sets of grandparents. Next: a Stoke death registration 1845–51, or a Hanley burial register — both now reachable."
+      "note": "**Closed. She died at four.** «Catherine Sneyd, death quarter 4, 1849, Stoke on Trent» — GRO index **volume 17, page 114**. The control is the rarity of the name: **exactly one** Catherine Sneyd death in the whole of England and Wales between 1845 and 1852, in the right district. She had been dead sixteen months when the census of March 1851 was taken, which is why she is in neither household."
     },
     {
       "n": 84,
@@ -792,7 +792,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "The two oldest live questions. FreeREG's Berkeley is a **thirty-year fragment, 1653–1677**, measured with a Smith control; everything after it has been unreachable. FindMyPast holds Gloucestershire parish registers. Hannah's baptism about 1780–1800 with parents named, and a marriage of John Saniger and Lydia about 1797, are both single-document answers.",
+      "note": "**Half done, and both halves are informative.** **MARRIAGE:** England Marriages 1538-1973 holds **66 Saniger marriages** including Berkeley ones of 1746 and 1748, and **none between 1782 and 1812**. **BAPTISM:** England Births & Baptisms **names fathers** — three Hannah Sanigers at Berkeley, 1746 (father Thomas) and 1772 (father William), and two Hannah Sanigars at Bristol in 1831 (father William). None is hers. **What has not been tried is the spellings that dominate the Berkeley registers** — SINNEGAR, SINEGAR, SYNEGAR — and a search by father's forename, which this set supports and which would list John Saniger's children directly.",
       "covers": [
         "q:q/where-and-when-was-hannah-sa-3597b7",
         "q:q/where-did-john-saniger-and-l-91411d"
@@ -801,10 +801,10 @@
     {
       "n": 88,
       "what": "The four PCC wills, if FindMyPast's PROB 11 set reaches them",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "**PROB 11/1728/64** — Robert D'Arcy's own will, proved 4 July 1827, the single document that would most change this archive. **PROB 11/1825/326** Elizabeth Saniger of Thornbury. **PROB 11/1056/294** Benjamin Cotton, cordwainer of Berkeley. **PROB 11/1991/312** John Maddock Jones of Ruabon. All four are digitised at Kew behind a free sign-in this archive will not make; FindMyPast carries a PCC wills set, and whether it reaches these pieces is itself worth establishing.",
+      "note": "**Answered, and the answer is no.** **FindMyPast has no Prerogative Court of Canterbury wills set.** Controlled twice: Robert D'Arcy dying 1825–29 returns 125 records across nine categories with **no probate set among them**, and Elizabeth Saniger — whose will is PROB 11/1825/326 — returns her death in the **National Burial Index**, not a will. The four wills stay at Kew, digitised and free, behind the sign-in this archive will not make.",
       "covers": [
         "err:err/prob-11-1728-64-the-will-of--24fcf7",
         "err:err/prob-11-1825-326-the-will-of-c3cc14",
@@ -876,18 +876,34 @@
     {
       "n": 95,
       "what": "Extract /sources/ into data",
-      "state": "open",
+      "state": "next",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "**168 lines inline.** Only Falco and Defranceschi hold sources as data.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside."
+      "note": "**168 lines inline.** Only Falco and Defranceschi hold sources as data.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside. *(State was `open`, which is not one of the five the gate allows; mapped to `next` on 16 September so the build would pass — the vocabulary is running, next, blocked, done, struck.)*"
     },
     {
       "n": 96,
       "what": "Re-read the shared cause across all 32 own errors",
-      "state": "open",
+      "state": "next",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "The closing paragraph of /corrections/ said **five of the seven** errors were the same failure — a number taken from a secondary source and not checked against the record. There are now **32**. The two arithmetic counts on that page are computed; this one is **a judgement about which errors share a cause** and was left alone, reading *five of the first seven*. Whether the pattern runs through the other twenty-five is yours to say.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside."
+      "note": "The closing paragraph of /corrections/ said **five of the seven** errors were the same failure — a number taken from a secondary source and not checked against the record. There are now **32**. The two arithmetic counts on that page are computed; this one is **a judgement about which errors share a cause** and was left alone, reading *five of the first seven*. Whether the pattern runs through the other twenty-five is yours to say.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside. *(State was `open`, which is not one of the five the gate allows; mapped to `next` on 16 September so the build would pass — the vocabulary is running, next, blocked, done, struck.)*"
+    },
+    {
+      "n": 97,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "what": "The Army Lists ARE walkable after all — British Army Lists & Commission Registers 1661-1826",
+      "note": "**This corrects item 42, closed yesterday.** That item checked 120 Internet Archive identifiers one metadata record at a time, found exactly one volume between 1776 and 1815, and concluded «there is no digitised annual run to walk». **There is one — indexed rather than page-image, and behind this subscription.** Robert D'Arcy is in it at 1778, 1802 and 1803; in **British Army Officer Promotions 1800-1815** at 1802, 1804, 1805 and 1813; and in **Britain, Royal and Imperial Calendars 1767-1973** at 1805 and 1808. Each entry needs opening: a commission register can carry a rank, a station and sometimes a predecessor, and the Royal Calendar lists office-holders by appointment."
+    },
+    {
+      "n": 98,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "what": "Two D'Arcy records at the edge of the family, noted and not claimed",
+      "note": "A **D'Arcy marriage at CHATHAM ST MARY in 1806**, forenames not given in the index — the parish where Robert was buried in 1827 and where Constantine was commissioned. And a **Robert D'Arcy baptised 1770 at St George, Hanover Square** — almost certainly a different man, since this archive's Robert was buried aged 76 in 1827. Both are written down because they will be found again by the next person, and **neither is claimed**."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

@@ -160,10 +160,10 @@
   {
    "n": 6,
    "q": "What became of Catherine Sneyd, born Hanley 1845?",
-   "state": "open",
+   "state": "answered",
    "since": "2026-09-15",
-   "rank": "A child the archive did not know existed",
-   "settles": "A death registration for Catherine Sneyd at Stoke upon Trent between 1845 and 1851, or a burial in a Hanley register.",
+   "rank": "Closed — she lived four years",
+   "settles": "",
    "register": "/searched",
    "tried": [
     [
@@ -177,9 +177,13 @@
     [
      "The 1851 census, both Sneyd households",
      "**She is in neither.** Well Street holds Samuel, Elizabeth, James and Elizabeth Ann; Queen Street holds Ann with Mary and James A. Every other child of the marriage is accounted for at one of the two addresses, and Catherine — five or six years old — is at neither. The remaining explanations are a death before 1851, or a child living away from both her parents and both sets of grandparents."
+    ],
+    [
+     "The GRO death index, 1845–1852",
+     "**ANSWERED. Catherine Sneyd, death registered December quarter 1849, Stoke on Trent — GRO volume 17, page 114.** Exactly one Catherine Sneyd death in England and Wales across those eight years. She was four. That is why she is in neither household in March 1851."
     ]
    ],
-   "note": "",
+   "note": "A certificate would give the cause and the informant, and would name her father. It is not needed to answer the question as asked.",
    "key": "q/what-became-of-catherine-sne-c90b1c"
   },
   {

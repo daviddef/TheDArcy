@@ -3155,6 +3155,57 @@
    "outcome": "yield",
    "got": "**Named outright.** Ann is enumerated as «DAUGHTER, Married», a dressmaker of 31 born at Shelton, in the household of **JOHN BIDDULPH, Head, 53, COAL DEALER, born BERMONDSEY, SURREY** and **JULIA his wife, 52, born Shelton**, with two unmarried daughters — Mary, 21, a paintress, and Eliza, 19, a servant — and two of Ann's own children entered as grandchildren. This archive said in the morning that Ann's parents were «a generation this archive has never had». It has them by lunchtime, and the naming falls into place: their second daughter was **Mary JULIA**.",
    "href": "/sneyds"
+  },
+  {
+   "src": "FindMyPast — England & Wales Deaths 1837-2007",
+   "what": "Catherine Sneyd, born Hanley 1845 and absent from the 1851 census",
+   "when": "16 Sep 2026",
+   "outcome": "yield",
+   "got": "**She died as a child.** «Catherine Sneyd · death quarter 4 · 1849 · Stoke on Trent, Staffordshire», GRO index **volume 17, page 114**. Searched across the whole of England and Wales for every Catherine Sneyd death registered between 1845 and 1852 — **eight years, exactly one result** — and it is in the right district and the right window. She was born at Hanley in 1845, HAN/007/057, mother's maiden name Biddulph, and she had been dead sixteen months when the census of March 1851 was taken.",
+   "href": "/sneyds"
+  },
+  {
+   "src": "FindMyPast — the Prerogative Court of Canterbury",
+   "what": "Whether the subscription reaches PROB 11/1728/64, Robert D'Arcy's own will",
+   "when": "16 Sep 2026",
+   "outcome": "empty",
+   "ctl": "named",
+   "got": "**It does not. FindMyPast has no PCC wills set.** Controlled two ways: a search for Robert D'Arcy dying 1825–29 returns 125 records across nine categories and **not one probate set** — the sets are Kent Burials, Westminster Baptisms, British Army Lists, Army Officer Promotions, Royal and Imperial Calendars, Irish Chancery and Exchequer bill books, and the Edinburgh Gazette. And a search for Elizabeth Saniger, whose will is PROB 11/1825/326, returns 17 records of which the death is the **National Burial Index**, not a will. The four PCC wills stay where they were: digitised at Kew, free, behind a sign-in this archive will not make.",
+   "href": "/errands"
+  },
+  {
+   "src": "FindMyPast — British Army Lists & Commission Registers 1661-1826",
+   "what": "The annual run this archive concluded could not be walked",
+   "when": "16 Sep 2026",
+   "outcome": "yield",
+   "got": "**It exists as a searchable set, and it corrects yesterday's conclusion.** Robert D'Arcy appears in it at **1778, 1802 and 1803**, and in **British Army Officer Promotions 1800-1815** at 1802, 1804, 1805 and 1813, and in **Britain, Royal and Imperial Calendars 1767-1973** at 1805 and 1808. Yesterday this archive checked 120 Internet Archive identifiers one metadata record at a time, found exactly one volume between 1776 and 1815, and concluded «there is no digitised annual run to walk». There is — it is indexed rather than page-image, and it is behind this subscription.",
+   "href": "/the-corps"
+  },
+  {
+   "src": "FindMyPast — England Marriages 1538-1973",
+   "what": "The marriage of John Saniger and Lydia, about 1797",
+   "when": "16 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Not there. The set holds **66 Saniger marriages** in all, including Berkeley ones in 1746 and 1748, and **not one between 1782 and 1812** under that spelling. So the set covers the parish and the surname and does not hold this marriage in a thirty-year window around the date the tree gives. Either it happened elsewhere, or under a spelling not yet tried, or the set's Berkeley coverage thins after the 1740s — which is the next thing to establish.",
+   "href": "/open-questions"
+  },
+  {
+   "src": "FindMyPast — England Births & Baptisms 1538-1975",
+   "what": "Hannah Saniger's baptism — she was about 35 in 1841, so born about 1806",
+   "when": "16 Sep 2026",
+   "outcome": "null",
+   "ctl": "named",
+   "got": "Not found, and **the set names fathers**, which is what makes the null worth having. Three Hannah SANIGER baptisms, all at Berkeley: 1746 father **Thomas**, and 1772 father **William** (entered twice). Two Hannah SANIGAR baptisms, both Bristol 1831, father **William**. None is hers — 1772 would make her 69 in 1841 and 1831 would make her ten. The spellings SINNEGAR, SINEGAR and SYNEGAR, which dominate the Berkeley registers, have not yet been tried.",
+   "href": "/open-questions"
+  },
+  {
+   "src": "FindMyPast — Kent Marriages and Banns, and Westminster Baptisms",
+   "what": "Two D'Arcy records at the edge of this family, noted and not claimed",
+   "when": "16 Sep 2026",
+   "outcome": "yield",
+   "got": "A **D'ARCY marriage at CHATHAM ST MARY in 1806**, with no forenames given in the index — the parish where Robert D'Arcy was buried in 1827 and where his son Constantine was commissioned. And a **ROBERT D'ARCY baptised 1770 at ST GEORGE, HANOVER SQUARE, Westminster** — almost certainly a different man, since this archive's Robert was buried aged 76 in 1827 and so born about 1751. Both are recorded because they will be found again; **neither is claimed**.",
+   "href": "/the-corps"
   }
  ],
  "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
