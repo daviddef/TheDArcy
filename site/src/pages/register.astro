@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import Register from "@daviddef/archive-kit/components/Register.astro";
 import reg from "../data/register.json";
 import living from "../data/living.json";
 
@@ -14,12 +15,41 @@ import living from "../data/living.json";
    research has run through parish registers act by act; this one is smaller and
    says so. What matters is that the two read the same way. */
 
-const label = (s) =>
-  s.startsWith("record") ? "record" :
-  s.includes("graft") ? "graft" : "tree";
+/* The buttons this page built for record / tree / graft are the shared
+   register's "Known from" facet now, and the search comes with it - so neither
+   the hay string nor the chip markup is written here any more. The words stay
+   this archive's: "above a graft" means something here that it means nowhere
+   else in the estate. */
+/* READ THE FIELD, NOT THE SENTENCE. Every row carries kind: "record" or
+   "tree", and those two total 381 and 473 - exactly the counters this page
+   prints on its own buttons. The old label() parsed the source STRING instead,
+   and 21 rows sourced to the Berkeley Castle Muniments, Library of Birmingham
+   MS 3549, Hertfordshire Archives and TBGAS begin with none of the words it
+   looked for, so they fell through to "tree". Twenty-one medieval records were
+   being shown to readers as somebody's family tree, on the one page in this
+   archive whose whole purpose is telling those two apart - and the button above
+   them said 381 while clicking it produced 360.
 
-const hay = (r, sn) =>
-  [r.name, r.says, r.source, sn].join(" ").toLowerCase();
+   The graft is real but it is a SUB-KIND of tree, recorded only in the sentence,
+   so that one still comes from the string. */
+const kindOf = (r) => r.kind === "record" ? "record"
+  : /graft/.test(r.source) ? "above a graft" : "family tree";
+const strip = (t) => String(t)
+  .replace(/^record \u00b7 /, "")
+  .replace(/^family tree \u00b7 above the /, "").replace(/ graft$/, "")
+  .replace(/^family tree \u00b7 /, "");
+const regRows = reg.groups.flatMap((g) => g.rows.map((r) => {
+  const internal = String(r.link || "").startsWith("/");
+  const k = kindOf(r);
+  return {
+    name: r.name, surname: g.surname, kind: k,
+    href: internal ? r.link : "",
+    detail: r.says,
+    source: strip(r.source),
+    sourceHref: internal ? "" : r.link,
+    sourceLabel: k,
+  };
+}));
 
 const pct = Math.round((reg.records / reg.entries) * 100);
 ---
@@ -76,56 +106,9 @@ const pct = Math.round((reg.records / reg.entries) * 100);
     </Note>
   </section>
 
-  <section class="blk" id="finder">
-    <div class="lab">Search</div>
-    <label for="q" class="vh">Search the register</label>
-    <input id="q" type="search" autocomplete="off"
-      placeholder="Try a name, a year, a place, a source — Sainger, 1655, Wanswell, Mouquet, B2455…"
-      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
-             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
-
-    <div style="margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center">
-      <button type="button" class="fchip" data-f="">All {reg.entries}</button>
-      <button type="button" class="fchip" data-f="record">From a record ({reg.records})</button>
-      <button type="button" class="fchip" data-f="tree">From the tree only ({reg.tree - reg.grafted})</button>
-      <button type="button" class="fchip" data-f="graft">Above a graft ({reg.grafted})</button>
-    </div>
-
-    <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{reg.entries} entries</p>
-    <p class="small" id="nohits" hidden>Nothing matches that. Spelling in this family moves about —
-      the Saingers are also <em>Saniger</em>, <em>Sanigar</em>, <em>Sinnegar</em> and six other ways.
-      <a href={u("/name/")}>Why →</a></p>
+  <section class="blk">
+    <Register rows={regRows} u={u} unit="entries" />
   </section>
-
-  {reg.groups.map((g) => (
-    <section class="blk rgroup" data-group={g.surname}>
-      <h2>{g.surname} <span class="small" style="font-weight:400;color:var(--ink-3)">· {g.n}</span></h2>
-      <p class="small gcount">{g.n} {g.n === 1 ? "entry" : "entries"}</p>
-      <Scroll>
-        <table>
-          <thead><tr><th style="width:26%">Name</th><th>What the source says</th><th style="width:26%">Source</th></tr></thead>
-          <tbody>
-            {g.rows.map((r) => (
-              <tr class="rrow" data-s={hay(r, g.surname)} data-k={label(r.source)}>
-                <td><a href={r.link.startsWith("/") ? u(r.link) : r.link}><strong>{r.name}</strong></a></td>
-                <td class="small">{r.says}</td>
-                <td class="small">
-                  {r.source.startsWith("record")
-                    ? <><span class="chip doc">record</span> {r.source.replace(/^record · /, "")}
-                        {" "}<a href={r.link}>↗</a></>
-                    : r.source.includes("graft")
-                      ? <><span class="chip sup">above a graft</span> {r.source.replace(/^family tree · above the /, "").replace(" graft", "")}</>
-                      : r.source.includes("direct")
-                        ? <><span class="chip inf">family tree</span> direct line</>
-                        : <span class="chip inf">family tree</span>}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </Scroll>
-    </section>
-  ))}
 
   <section class="blk" style="border-bottom:0">
     <h2>Where these entries came from</h2>
@@ -166,60 +149,7 @@ const pct = Math.round((reg.records / reg.entries) * 100);
     <a href={u("/the-other-archives/")}>All six archives →</a></p>
   </section>
 
-  <script is:inline>
-    (function () {
-      var q = document.getElementById("q");
-      if (!q) return;
-      var rows = [].slice.call(document.querySelectorAll(".rrow"));
-      var groups = [].slice.call(document.querySelectorAll(".rgroup"));
-      // Haystack per row and group per row, resolved once. The group loop
-      // below used to ask the DOM to collect every unhidden row again, per
-      // group, per keystroke — the tally the row loop already has.
-      var hay = rows.map(function (r) { return r.getAttribute("data-s"); });
-      var at = new Map();
-      groups.forEach(function (g, i) { at.set(g, i); });
-      var owner = rows.map(function (r) { return at.get(r.closest(".rgroup")); });
-      var count = document.getElementById("count");
-      var nohits = document.getElementById("nohits");
-      var chips = [].slice.call(document.querySelectorAll(".fchip"));
-      var filter = "";
 
-      function apply() {
-        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
-        var shown = 0;
-        var live = groups.map(function () { return 0; });
-        rows.forEach(function (r, i) {
-          var h = hay[i];
-          var ok = (!filter || r.getAttribute("data-k") === filter) &&
-                   terms.every(function (t) { return h.indexOf(t) !== -1; });
-          r.hidden = !ok;
-          if (ok) { shown++; live[owner[i]]++; }
-        });
-        groups.forEach(function (g, i) {
-          var any = live[i];
-          g.hidden = any === 0;
-          var gc = g.querySelector(".gcount");
-          if (gc) gc.textContent = any + (any === 1 ? " entry" : " entries");
-        });
-        count.textContent = shown + (shown === 1 ? " entry" : " entries") +
-          (terms.length || filter ? " matching" : "");
-        nohits.hidden = shown !== 0;
-      }
-
-      q.addEventListener("input", apply);
-      chips.forEach(function (b) {
-        b.addEventListener("click", function () {
-          filter = b.getAttribute("data-f") || "";
-          chips.forEach(function (o) { o.classList.toggle("on", o === b); });
-          apply();
-        });
-      });
-      chips[0] && chips[0].classList.add("on");
-
-      var pre = new URLSearchParams(location.search).get("q");
-      if (pre) { q.value = pre; apply(); }
-    })();
-  </script>
 <style is:global>
   /* is:global, deliberately. A scoped <style> makes Astro stamp
      data-astro-cid-… onto every element the page renders, and on a register
