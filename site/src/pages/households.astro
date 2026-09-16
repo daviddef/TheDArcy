@@ -3,10 +3,17 @@ import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import Households from "@daviddef/archive-kit/components/Households.astro";
 import h from "../data/households.json";
 const withKids = h.rows.filter((r) => r.kids.length > 0);
 const biggest = [...withKids].sort((a, b) => b.kids.length - a.kids.length).slice(0, 5);
 const total = h.rows.reduce((a, r) => a + r.kids.length, 0);
+const rows = h.rows.map((r) => ({
+  head: r.a, headHref: r.aSlug ? `/people/${r.aSlug}` : null,
+  spouse: r.b, spouseHref: r.bSlug ? `/people/${r.bSlug}` : null,
+  married: r.married, where: r.place,
+  children: r.kids.map((k) => ({ name: k.name, href: k.slug ? `/people/${k.slug}` : null })),
+}));
 ---
 <Base title="Households" eyebrow={`${h.n} households · ${total} children`}
   dek="A couple and the children under one roof — the unit a census or a parish register actually records, which is not the same shape as a pedigree.">
@@ -42,48 +49,9 @@ const total = h.rows.reduce((a, r) => a + r.kids.length, 0);
     </Scroll>
   </section>
 
-  <section class="blk" id="finder">
-    <div class="lab">Search</div>
-    <label for="q" class="vh">Search households</label>
-    <input id="q" type="search" autocomplete="off" placeholder="A surname, a year, a place…"
-      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
-             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
-    <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{h.n} households</p>
-  </section>
-
   <section class="blk" style="border-bottom:0">
-    <div style="display:flex;flex-direction:column;gap:1.1rem">
-      {h.rows.map((r) => (
-        <div class="hh" data-s={`${r.a} ${r.b} ${r.married} ${r.place} ${r.kids.map((k) => k.name).join(" ")}`.toLowerCase()}
-             style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
-          <div><strong>{r.aSlug ? <a href={u(`/people/${r.aSlug}`)}>{r.a}</a> : r.a}</strong>
-            <span class="small"> and </span>
-            <strong>{r.bSlug ? <a href={u(`/people/${r.bSlug}`)}>{r.b}</a> : r.b}</strong>
-            {r.married && <span class="small mono" style="margin-left:.5rem">{r.married}</span>}
-            {r.place && <span class="small" style="color:var(--ink-3)"> · {r.place}</span>}</div>
-          {r.kids.length > 0 && (
-            <p class="small" style="margin-top:.35rem;color:var(--ink-2)">
-              <strong>{r.kids.length} {r.kids.length === 1 ? "child" : "children"}:</strong>{" "}
-              {r.kids.map((k, i) => (<>{i > 0 && " · "}<a href={u(`/people/${k.slug}`)}>{k.name}</a></>))}
-            </p>
-          )}
-        </div>
-      ))}
-    </div>
+    <Households rows={rows} u={u} />
   </section>
 
-  <script is:inline>
-    (function () {
-      var q = document.getElementById("q"); if (!q) return;
-      var rows = [].slice.call(document.querySelectorAll(".hh")), c = document.getElementById("count");
-      q.addEventListener("input", function () {
-        var t = q.value.toLowerCase().split(/\s+/).filter(Boolean), n = 0;
-        rows.forEach(function (r) {
-          var ok = t.every(function (x) { return r.getAttribute("data-s").indexOf(x) !== -1; });
-          r.hidden = !ok; if (ok) n++;
-        });
-        c.textContent = n + (n === 1 ? " household" : " households") + (t.length ? " matching" : "");
-      });
-    })();
-  </script>
+
 </Base>
