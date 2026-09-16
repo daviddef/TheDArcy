@@ -72,6 +72,28 @@ import d from "../data/hannah-baptism.json";
     <p class="small" style="margin-top:1rem">{d.probate.how}</p>
   </Blk>
 
+  <Blk label={`Tested · ${d.lydiaTested.found}`} title={d.lydiaTested.head}>
+    <p class="lede" set:html={mdp(d.lydiaTested.lede)}></p>
+    <div style="margin-top:1.4rem;display:flex;flex-direction:column;gap:1.3rem">
+      {d.lydiaTested.rows.map(([claim, verdict, chip, body]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div class="small mono" style="color:var(--ink-3)">{claim}</div>
+          <div style="margin-top:.3rem"><strong>{verdict}</strong>
+            {" "}<span class={`chip ${chip === "documented" ? "doc" : chip === "disputed" ? "dis" : "lore"}`}>{chip}</span></div>
+          <p style="margin-top:.45rem" set:html={mdp(body)}></p>
+        </div>
+      ))}
+    </div>
+    <Note style="border-left-width:3px;margin-top:1.4rem">
+      <strong>{d.lydiaTested.whereHead}.</strong> <span set:html={mdp(d.lydiaTested.where)} />
+      {" "}<span class="chip inf">{d.lydiaTested.chipWhere}</span>
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.lydiaTested.fitHead}.</strong> <span set:html={mdp(d.lydiaTested.fit)} />
+      {" "}<span class="chip doc">{d.lydiaTested.chipFit}</span>
+    </Note>
+  </Blk>
+
   <Blk label={`FindMyPast · found ${d.fmp.found}`} title={d.fmp.head}>
     <p class="lede" set:html={mdp(d.fmp.lede)}></p>
     <Scroll>

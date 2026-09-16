@@ -151,5 +151,42 @@
     "gap": "**Thirty-three of the 158 are duplicates** — 125 distinct name-year-place combinations, so one entry in five is the same child indexed twice, sometimes four times: Mary, daughter of Samuell, appears four times in 1688, and Sarah, daughter of William, four times at Bristol in 1839. The Berkeley run also has holes, and they are the holes of a register rather than of a family: **1632 to 1676, forty-four years with nothing**, then 1749–1769, 1777–1786, 1808–1817 and 1826–1835. Counting this surname's presence by decade from this set alone would be counting the survival of paper.",
     "awreHead": "It also closes something this archive got wrong",
     "awre": "Own error 32 was a Forest-of-Dean branch of this family that I invented and then built on. Here is a third independent test of it: **158 baptisms across 268 years contain no Awre, no Blakeney, and nothing anywhere west of the Severn.** Bigland said so, Rudder said so, the 1608 muster said so, and now the parish registers say so."
+  },
+  "lydiaTested": {
+    "head": "Her mother, tested",
+    "found": "16 September 2026",
+    "lede": "The block above was written on 13 September and ended by saying that four fields about Lydia were «testable and none has been tested». Three of the four have now been tested, in one afternoon, on the subscription this archive already had. **One is confirmed, one is a controlled null, and one is wrong.**",
+    "rows": [
+      [
+        "Died 7 July 1851 at Berkeley",
+        "CONFIRMED",
+        "documented",
+        "**LYDIA SANIGAR**, death registered in the **September quarter of 1851, Thornbury district** — GRO volume 11, page 329. Berkeley is in Thornbury registration district, and a death on 7 July falls in that quarter. She died under her married surname, which is itself evidence that a Saniger marriage happened."
+      ],
+      [
+        "Born 13 March 1770 at Wotton-under-Edge",
+        "NOT FOUND",
+        "not claimed",
+        "**No Lydia Jones is baptised anywhere in Gloucestershire between 1765 and 1775** in England Births & Baptisms 1538-1975 — against **939 Jones baptisms in the county in the same eleven years**. The control is strong and the null is real, but it is a null about an index, not about a font."
+      ],
+      [
+        "Married John Saniger at Berkeley in 1797",
+        "WRONG AS STATED",
+        "disputed",
+        "There **is** a Lydia marrying a John at Berkeley in that window, and she is the only one in twenty-one years: **LYDIA JONES, 8 January 1798**. Her husband's surname, in the transcript rather than in the result row, is **SAWYER**. Berkeley has **272 marriages indexed for 1793-1803**, so the parish is covered, and no Saniger marries there in that decade under any of eight spellings."
+      ],
+      [
+        "Parents William Jones and Sarah",
+        "UNTESTED",
+        "not claimed",
+        "And now resting on a maiden name with nothing behind it."
+      ]
+    ],
+    "whereHead": "Where JONES probably came from",
+    "where": "A Lydia marrying a John at Berkeley in 1798, one year out from the date the tree gives and in the right parish, is a very close match on everything a result row displays — **first name, spouse's first name, place, year**. The only field that rules it out is the spouse's surname, and that field is not in the result row. It is one click further in, on the transcript. The likeliest account of «Lydia Jones» is that somebody stopped one click early, twenty years ago, and every tree since has copied it.",
+    "chipWhere": "inferred",
+    "fitHead": "What still fits",
+    "fit": "The 1841 census has a seventy-year-old **Lyddya Sinegar** in Hannah's house in Bristol, which puts her birth about 1771 — within a year of the 1770 the tree gives. A Lydia Sanigar dies in the Thornbury district in 1851. **Lydia is real, she is a Saniger by marriage, and her age is right.** It is only her maiden name and her wedding that have been made up.",
+    "chipFit": "documented"
   }
 }

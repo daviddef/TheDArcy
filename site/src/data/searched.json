@@ -3239,6 +3239,40 @@
       "outcome": "yield",
       "got": "340 baptisms, 1565 to 1909, every entry of every spelling read. SYNEGAR, SANIGAER and SENIGAR returned nothing. Three results: SANIGOR, the form Hannah was baptised under, returns 4 in 437 years — one entry in eighty-five; the 44-year hole in SANIGER at Berkeley, 1632-1676, is filled by 26 SAINGER entries and is a spelling rather than a gap; and the -ANIG- forms sit in the Severn Vale while the -INEG- forms sit on the Cotswold scarp eight miles east, with different patriarchs. Written up at /spellings.",
       "href": "/spellings"
+    },
+    {
+      "src": "FindMyPast — England & Wales Deaths 1837-2007",
+      "what": "Lydia, died 1851, Gloucestershire",
+      "when": "16 Sep 2026",
+      "outcome": "yield",
+      "got": "LYDIA SANIGAR, September quarter 1851, Thornbury district, GRO vol 11 p 329 — one of 21 Lydias dying in the county that year. Confirms the tree's «died 7 July 1851 at Berkeley» for Hannah's mother, and confirms she died under a Saniger surname.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973",
+      "what": "A Saniger marrying a Lydia at Berkeley, 1793-1803, under eight spellings",
+      "when": "16 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "None. Berkeley has 272 marriages indexed for those eleven years, so the parish is covered. The only Lydia marrying at Berkeley between 1790 and 1810 is LYDIA JONES, 8 January 1798, and the transcript gives her husband as JOHN SAWYER. The FamilySearch tree's «John Saniger married Lydia Jones at Berkeley in 1797» does not survive the spouse's surname.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975",
+      "what": "Lydia Jones baptised in Gloucestershire, 1765-1775",
+      "when": "16 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "No Lydia Jones at all, against 939 Jones baptisms in the county in the same eleven years. The tree's «born 13 March 1770 at Wotton-under-Edge» is not in this index. Wotton-under-Edge could not be isolated as a place string, so the control is county-wide rather than parish-level.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, eight spellings",
+      "what": "SANIGER, SAINGER, SANIGAR, SINEGAR, SANEGAR, SINNEGAR, SANIGOR, SANNIGER",
+      "when": "16 Sep 2026",
+      "outcome": "yield",
+      "got": "135 marriages, 1588 to 1907. Berkeley dominates the -ANIG- forms and Dursley, North Nibley and Stinchcombe the -INEG- forms, exactly as the baptisms do. No Saniger marriage of any spelling at Berkeley between 1784 and 1805.",
+      "href": "/spellings"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
