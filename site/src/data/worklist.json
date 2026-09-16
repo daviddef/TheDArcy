@@ -872,6 +872,22 @@
       "covers": [
         "err:err/the-parish-register-of-st-mi-b6c3e0"
       ]
+    },
+    {
+      "n": 95,
+      "what": "Extract /sources/ into data",
+      "state": "open",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "**168 lines inline.** Only Falco and Defranceschi hold sources as data.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside."
+    },
+    {
+      "n": 96,
+      "what": "Re-read the shared cause across all 32 own errors",
+      "state": "open",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "The closing paragraph of /corrections/ said **five of the seven** errors were the same failure — a number taken from a secondary source and not checked against the record. There are now **32**. The two arithmetic counts on that page are computed; this one is **a judgement about which errors share a cause** and was left alone, reading *five of the first seven*. Whether the pattern runs through the other twenty-five is yours to say.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",
