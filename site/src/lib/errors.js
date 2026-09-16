@@ -2,6 +2,16 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "16 September 2026",
+    what: "Announced Ann Saniger's 1798 baptism at Berkeley as a new find — “Ann has never had one” — in a block published on the page that had already been carrying her since 13 September.",
+    truth:
+      "She was four blocks further up the same page, in the table of John Saniger's children, as ANN SANIGAR 1798. One vowel apart, the same index entry, on the same screen.",
+    why: "I opened a record set that named fathers, read the first page of twenty, recognised a name the family tree asserts, and wrote it up against the tree instead of against this archive. The whole point of that page is that this surname is spelled eleven ways; having just written that sentence, I failed to apply it to my own page's contents. Reading the index took an hour; reading the page I was appending to would have taken a minute.",
+    lesson:
+      "Check the page before you add to the page. A find is only a find against what is already published, and an archive that indexes eleven spellings of a name has to search its own text the same way it searches somebody else's.",
+    href: "/hannah-baptism",
+  },
+  {
     when: "15 September 2026",
     what: "Invented a “Forest side of the family” at AWRE and BLAKENEY, and then built on it — two errands, four coverage rows, an atlas point, and three work-list items, all describing how to reach Sanigers in the Forest of Dean.",
     truth:
