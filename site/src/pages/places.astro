@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Places from "@daviddef/archive-kit/components/Places.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
@@ -54,26 +55,14 @@ import atlas from "../../public/atlas-data.json";
     <p class="small" id="pcount" style="margin-top:.8rem" aria-live="polite">{places.length} places</p>
   </section>
 
-  {order.filter((k) => groups[k]).map((k) => (
-    <section class="blk plgroup">
-      <h2>{k}</h2>
-      <p class="small gcount">{groups[k].length} places · {groups[k].reduce((a, p) => a + p.n, 0)} recorded events</p>
-      <Scroll>
-        <table>
-          <thead><tr><th class="m">From</th><th>Place</th><th class="m">Events</th></tr></thead>
-          <tbody>
-            {groups[k].sort((a, b) => (a.first || 9999) - (b.first || 9999)).map((p) => (
-              <tr class="prow" data-s={`${p.place} ${(p.variants || []).join(" ")} ${p.first || ""} ${k}`.toLowerCase()}>
-                <td class="m">{p.first || "—"}</td>
-                <td>
-                  {p.place}
-                  {p.variants && p.variants.length > 0 && (
-                    <div class="small">also written: {p.variants.join(" · ")}</div>
-                  )}
-                </td>
-                <td class="m">{p.n}</td>
-              </tr>
-            ))}
+  <Places u={u} countLabel="Events" rows={order.filter((k) => groups[k]).flatMap((k) =>
+    groups[k].slice().sort((a, b) => (a.first || 9999) - (b.first || 9999)).map((p) => ({
+      name: p.place,
+      n: p.n,
+      where: k,
+      span: p.first ? String(p.first) : "",
+      variants: p.variants || [],
+    })))} />
           </tbody>
         </table>
       </Scroll>
