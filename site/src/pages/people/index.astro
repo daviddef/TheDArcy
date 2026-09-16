@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { u } from "../../lib/url.js";
+import FilterTable from "@daviddef/archive-kit/components/FilterTable.astro";
 import { people } from "../../lib/people.js";
 import ancestors from "../../data/ancestors.json";
 import familyData from "../../data/families.json";
@@ -12,24 +13,20 @@ const withheld = new Set([
 ]).size;
 const inLine = people.filter((p) => p.ancestor).length;
 
-// group by century of birth, so the page has a shape
-const bucket = (p) => {
-  const y = +((p.born || p.died || "").match(/\d{4}/) || [0])[0];
-  if (!y) return "Undated";
-  return `${Math.floor(y / 100) * 100}s`;
-};
-const groups = {};
-for (const p of people) (groups[bucket(p)] ||= []).push(p);
-const order = Object.keys(groups).sort((a, b) =>
-  a === "Undated" ? 1 : b === "Undated" ? -1 : parseInt(a) - parseInt(b));
-
-// Everything a reader might reasonably type, flattened into one haystack per person.
-const hay = (p) => [
-  p.name, p.life, p.born, p.died, p.bornPlace, p.diedPlace,
-  p.occupation, p.family, p.burial, p.ancestor ? "direct line ancestor" : "",
-].filter(Boolean).join(" ").toLowerCase();
-
 const surnames = [...new Set(people.map((p) => p.family).filter(Boolean))].sort();
+
+/* THE CHIP ROW HELD TWO QUESTIONS AT ONCE. "Direct line" sat in the same row as
+   the surnames, so choosing one cleared the other and a reader could not ask
+   for the Sneyds who are ancestors. They are separate facets now and narrow
+   together. The century headings go: one table with a search beats scrolling
+   to the 1800s, and the shared script reads each row's own text instead of the
+   hay attribute this page was writing beside every card. */
+const esc = (t) => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const bySur = surnames.map((sn) => [sn, people.filter((p) => p.family === sn).length]);
+const listed = [...people].sort((a, b) => {
+  const y = (p) => +((p.born || p.died || "").match(/\d{4}/) || [9999])[0];
+  return y(a) - y(b) || a.name.localeCompare(b.name);
+});
 ---
 <Base
   title="The People"
@@ -55,89 +52,30 @@ const surnames = [...new Set(people.map((p) => p.family).filter(Boolean))].sort(
     defect in the drawing. <a href={u("/method/")}>How claims are labelled →</a></p>
   </section>
 
-  <section class="blk" id="finder">
-    <div class="lab">Search</div>
-    <label for="q" class="vh">Search the people</label>
-    <input id="q" type="search" autocomplete="off" placeholder="Try a name, a year, a place, a trade — Sneyd, 1838, Boulia, organist…"
-      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
-             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
-
-    <div style="margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center">
-      <button type="button" class="fchip" data-f="">All</button>
-      <button type="button" class="fchip" data-f="direct line ancestor">Direct line</button>
-      {surnames.map((sn) => <button type="button" class="fchip" data-f={sn.toLowerCase()}>{sn}</button>)}
-    </div>
-
-    <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{people.length} people</p>
-    <p class="small" id="nohits" hidden>Nothing matches that. Spelling in this family moves about —
-      try <em>Darcy</em> as well as <em>D'Arcy</em>, or <em>Snead</em> as well as <em>Sneyd</em>.
-      <a href={u("/name/")}>Why →</a></p>
+  <section class="blk" style="border-bottom:0">
+    <FilterTable
+      unit="people"
+      note="Filter by name, year, place or trade. Spelling in this family moves about &mdash; try <em>Darcy</em> as well as <em>D&rsquo;Arcy</em>, or <em>Snead</em> as well as <em>Sneyd</em>."
+      columns={[{ label: "Name" }, { label: "Life", cls: "mono" }, { label: "Where" },
+                { label: "Trade", cls: "small" }]}
+      facets={[
+        { key: "fam", label: "Family", all: `All ${people.length}`,
+          options: bySur.map(([sn, c]) => ({ v: sn, label: `${sn} (${c})` })) },
+        { key: "line", label: "On the line", all: "Everyone",
+          options: [{ v: "1", label: `Direct ancestors (${inLine})` },
+                    { v: "0", label: `Everyone else (${people.length - inLine})` }] },
+      ]}
+      rows={listed.map((p) => ({
+        facets: { fam: p.family || "", line: p.ancestor ? "1" : "0" },
+        cells: [
+          `<a href="${u(`/people/${p.slug}`)}"><strong>${esc(p.name)}</strong></a>` +
+            (p.ancestor ? `<span class="chip doc" style="margin-left:6px">direct line</span>` : ""),
+          esc(p.life || "dates unknown"),
+          esc([p.bornPlace, p.diedPlace].filter(Boolean).map((x) => x.split(",")[0]).join(" \u2192 ")),
+          esc(p.occupation || ""),
+        ],
+      }))} />
   </section>
 
-  {order.map((k) => (
-    <section class="blk pgroup" data-group={k}>
-      <h2>{k}</h2>
-      <p class="small gcount">{groups[k].length} people</p>
-      <div class="grid three" style="margin-top:1rem">
-        {groups[k].map((p) => (
-          <a class="cardlink pcard" data-s={hay(p)} href={u(`/people/${p.slug}`)}>
-            <div class="nm">{p.name}</div>
-            <p class="small" style="margin-top:.3rem">
-              {p.life || "dates unknown"}
-              {p.bornPlace ? ` · ${p.bornPlace.split(",")[0]}` : ""}
-            </p>
-            {p.ancestor && <span class="chip doc" style="margin-top:.45rem">direct line</span>}
-          </a>
-        ))}
-      </div>
-    </section>
-  ))}
 
-  <script is:inline>
-    (function () {
-      var q = document.getElementById("q");
-      if (!q) return;
-      var cards = [].slice.call(document.querySelectorAll(".pcard"));
-      var groups = [].slice.call(document.querySelectorAll(".pgroup"));
-      var count = document.getElementById("count");
-      var nohits = document.getElementById("nohits");
-      var chips = [].slice.call(document.querySelectorAll(".fchip"));
-      var filter = "";
-
-      function apply() {
-        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
-        var shown = 0;
-        cards.forEach(function (c) {
-          var h = c.getAttribute("data-s");
-          var ok = (!filter || h.indexOf(filter) !== -1) &&
-                   terms.every(function (t) { return h.indexOf(t) !== -1; });
-          c.hidden = !ok;
-          if (ok) shown++;
-        });
-        groups.forEach(function (g) {
-          var any = g.querySelectorAll(".pcard:not([hidden])").length;
-          g.hidden = any === 0;
-          var gc = g.querySelector(".gcount");
-          if (gc) gc.textContent = any + (any === 1 ? " person" : " people");
-        });
-        count.textContent = shown + (shown === 1 ? " person" : " people") +
-          (terms.length || filter ? " matching" : "");
-        nohits.hidden = shown !== 0;
-      }
-
-      q.addEventListener("input", apply);
-      chips.forEach(function (b) {
-        b.addEventListener("click", function () {
-          filter = b.getAttribute("data-f") || "";
-          chips.forEach(function (o) { o.classList.toggle("on", o === b); });
-          apply();
-        });
-      });
-      chips[0] && chips[0].classList.add("on");
-
-      // /people?q=sneyd deep-links a search
-      var pre = new URLSearchParams(location.search).get("q");
-      if (pre) { q.value = pre; apply(); }
-    })();
-  </script>
 </Base>
