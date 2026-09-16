@@ -3297,6 +3297,15 @@
       "outcome": "yield",
       "got": "John Sanigar, first quarter of 1850, Thornbury district — which is why Ann Sanigar is a widow at Ham in the March of 1851. Under SANIGER the same window returns nothing, so the spelling carried the record.",
       "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — England Deaths & Burials 1538-1991",
+      "what": "Saniger and Sanigar burials in Gloucestershire; John Saniger at Berkeley, 1815-1830",
+      "when": "16 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "23 SANIGER burials, every one at Berkeley, the last in 1787; 3 SANIGAR, all Bristol; SANIGOR none. Nothing at Berkeley between 1810 and 1830. **The control kills the null:** Berkeley burials of any surname return 442 for 1735-1765 and 2 for 1800-1830, so the set simply stops there. John Saniger's burial at Berkeley in January 1825 is documented elsewhere and is not in this index.",
+      "href": "/coverage"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
