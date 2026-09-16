@@ -1,37 +1,141 @@
 {
- "found": "13 September 2026",
- "source": "FindMyPast — Hampshire Baptisms and Marriages (Hampshire Genealogical Society); England Births & Baptisms and England Marriages 1538–1975; National Burial Index (Gloucestershire FHS)",
- "darcy": {
-  "marriage": {
-   "line": "ROBERT DARCY married JEAN WARD at PORTSEA ST MARY on 21 JUNE 1779",
-   "set": "Hampshire Marriages · Hampshire Genealogical Society",
-   "means": "This archive has carried Robert D'Arcy's marriage on a family tree for its entire existence, with no record behind it. Here it is. Nine months later, on 19 March 1780, the same church baptised their son Joseph."
+  "found": "13 September 2026",
+  "source": "FindMyPast — Hampshire Baptisms and Marriages (Hampshire Genealogical Society); England Births & Baptisms and England Marriages 1538–1975; National Burial Index (Gloucestershire FHS)",
+  "darcy": {
+    "marriage": {
+      "line": "ROBERT DARCY married JEAN WARD at PORTSEA ST MARY on 21 JUNE 1779",
+      "set": "Hampshire Marriages · Hampshire Genealogical Society",
+      "means": "This archive has carried Robert D'Arcy's marriage on a family tree for its entire existence, with no record behind it. Here it is. Nine months later, on 19 March 1780, the same church baptised their son Joseph."
+    },
+    "baptism": "Joseph D'Arcy, baptised Portsea St Mary 19 March 1780, SON, father ROBERT, mother JEAN — the Hampshire Genealogical Society's own transcription, independent of the FreeREG entry this archive has been quoting.",
+    "coverage": {
+      "test": "John Smith at Portsea, 1770–1794, in FindMyPast's Hampshire collections.",
+      "result": "Portsea St Mary baptisms come back for 1770, 1771, 1772, 1774, 1775, 1779, 1782 (twice), 1785, 1786, 1788 (twice), 1789, 1790, 1791 and 1792 — continuous across the whole window, where FreeREG holds twenty-two months.",
+      "verdict": "So the silence around Joseph is now real. Searching the same window for every D'Arcy spelling returns HIM AND NOBODY ELSE. Robert and Jean baptised one child at Portsea St Mary, not a family.",
+      "careful": "Which is not the same as saying they had one child. A regiment moves. The couple married at Portsea in 1779, baptised Joseph there in 1780, and by 1806 a daughter was marrying at Chatham — the children in between will be in garrison parishes this search has not touched."
+    }
   },
-  "baptism": "Joseph D'Arcy, baptised Portsea St Mary 19 March 1780, SON, father ROBERT, mother JEAN — the Hampshire Genealogical Society's own transcription, independent of the FreeREG entry this archive has been quoting.",
-  "coverage": {
-   "test": "John Smith at Portsea, 1770–1794, in FindMyPast's Hampshire collections.",
-   "result": "Portsea St Mary baptisms come back for 1770, 1771, 1772, 1774, 1775, 1779, 1782 (twice), 1785, 1786, 1788 (twice), 1789, 1790, 1791 and 1792 — continuous across the whole window, where FreeREG holds twenty-two months.",
-   "verdict": "So the silence around Joseph is now real. Searching the same window for every D'Arcy spelling returns HIM AND NOBODY ELSE. Robert and Jean baptised one child at Portsea St Mary, not a family.",
-   "careful": "Which is not the same as saying they had one child. A regiment moves. The couple married at Portsea in 1779, baptised Joseph there in 1780, and by 1806 a daughter was marrying at Chatham — the children in between will be in garrison parishes this search has not touched."
-  }
- },
- "saniger": {
-  "note": "The archive has said for months that five of the tree's six Saniger generations could not be tested because FreeREG's Berkeley transcript stops in 1677. Every one of the following is a Berkeley record from after 1677.",
-  "rows": [
-   ["Thomas Saniger", "baptised", "23 Aug 1744", "Berkeley", "father THOMAS Saniger", "The tree gives 23 August 1744 at Berkeley. The same day."],
-   ["Thomas Saniger", "married", "10 Apr 1769", "Berkeley", "to CATHERINE COTTON", "A name this archive has never had. John was baptised five weeks later."],
-   ["Jn'o Saniger", "baptised", "18 May 1769", "Berkeley", "father THO'S Saniger", "The tree gives John's birth as 15 May 1769. Baptised three days later."],
-   ["William Saniger", "baptised", "6 Sep 1801", "Berkeley", "father JOHN Saniger", "Hannah's brother."],
-   ["Jno Saniger", "baptised", "18 Sep 1803", "Berkeley", "father JNO Saniger", "Hannah's brother."],
-   ["Thos Saniger", "baptised", "3 Jul 1808", "Berkeley", "father JOHN Saniger", "Hannah's brother."],
-   ["Thomas Saniger", "buried", "24 Jan 1819", "Berkeley St Mary the Virgin", "AGED 75", "Born about 1744. The tree says he died about 1819."],
-   ["John Saniger", "buried", "16 Jan 1825", "Berkeley St Mary the Virgin", "AGED 55", "Born about 1769. The tree says he died on 10 March 1824 — ten months out."]
+  "saniger": {
+    "note": "The archive has said for months that five of the tree's six Saniger generations could not be tested because FreeREG's Berkeley transcript stops in 1677. Every one of the following is a Berkeley record from after 1677.",
+    "rows": [
+      [
+        "Thomas Saniger",
+        "baptised",
+        "23 Aug 1744",
+        "Berkeley",
+        "father THOMAS Saniger",
+        "The tree gives 23 August 1744 at Berkeley. The same day."
+      ],
+      [
+        "Thomas Saniger",
+        "married",
+        "10 Apr 1769",
+        "Berkeley",
+        "to CATHERINE COTTON",
+        "A name this archive has never had. John was baptised five weeks later."
+      ],
+      [
+        "Jn'o Saniger",
+        "baptised",
+        "18 May 1769",
+        "Berkeley",
+        "father THO'S Saniger",
+        "The tree gives John's birth as 15 May 1769. Baptised three days later."
+      ],
+      [
+        "William Saniger",
+        "baptised",
+        "6 Sep 1801",
+        "Berkeley",
+        "father JOHN Saniger",
+        "Hannah's brother."
+      ],
+      [
+        "Jno Saniger",
+        "baptised",
+        "18 Sep 1803",
+        "Berkeley",
+        "father JNO Saniger",
+        "Hannah's brother."
+      ],
+      [
+        "Thos Saniger",
+        "baptised",
+        "3 Jul 1808",
+        "Berkeley",
+        "father JOHN Saniger",
+        "Hannah's brother."
+      ],
+      [
+        "Thomas Saniger",
+        "buried",
+        "24 Jan 1819",
+        "Berkeley St Mary the Virgin",
+        "AGED 75",
+        "Born about 1744. The tree says he died about 1819."
+      ],
+      [
+        "John Saniger",
+        "buried",
+        "16 Jan 1825",
+        "Berkeley St Mary the Virgin",
+        "AGED 55",
+        "Born about 1769. The tree says he died on 10 March 1824 — ten months out."
+      ]
+    ],
+    "gap": "Hannah's own baptism is not in the index. Her father's children appear at Berkeley in 1801, 1803 and 1808, and the tree puts her birth on 23 July 1805 — exactly in the space between. That is a gap in a transcription, not an absence in a register: FamilySearch's England Births & Baptisms is not a complete copy of Berkeley St Mary, and the original book is what will settle it.",
+    "verdict": "Four generations of the tree — Thomas of 1711, Thomas of 1744, John of 1769, Hannah of 1805 — now stand on parish records rather than on somebody's assertion. The chain the archive called untestable was testable the whole time."
+  },
+  "wrongTree": [
+    [
+      "John Saniger died 10 March 1824 at Berkeley",
+      "Buried at Berkeley St Mary the Virgin on 16 JANUARY 1825, aged 55. The tree is ten months early."
+    ],
+    [
+      "Hannah Saniger was born at Berkeley on 23 July 1805",
+      "Not yet found, but her father's other children are baptised there in 1801, 1803 and 1808, and the 1851 census gives her birthplace as Berkeley."
+    ]
   ],
-  "gap": "Hannah's own baptism is not in the index. Her father's children appear at Berkeley in 1801, 1803 and 1808, and the tree puts her birth on 23 July 1805 — exactly in the space between. That is a gap in a transcription, not an absence in a register: FamilySearch's England Births & Baptisms is not a complete copy of Berkeley St Mary, and the original book is what will settle it.",
-  "verdict": "Four generations of the tree — Thomas of 1711, Thomas of 1744, John of 1769, Hannah of 1805 — now stand on parish records rather than on somebody's assertion. The chain the archive called untestable was testable the whole time."
- },
- "wrongTree": [
-  ["John Saniger died 10 March 1824 at Berkeley", "Buried at Berkeley St Mary the Virgin on 16 JANUARY 1825, aged 55. The tree is ten months early."],
-  ["Hannah Saniger was born at Berkeley on 23 July 1805", "Not yet found, but her father's other children are baptised there in 1801, 1803 and 1808, and the 1851 census gives her birthplace as Berkeley."]
- ]
+  "audit": {
+    "found": "17 September 2026",
+    "head": "Every marriage this archive cites, re-opened",
+    "lede": "On 16 September a claim carried by every online tree — that John Saniger married Lydia Jones at Berkeley in 1797 — was disproved by opening a transcript and reading one field the result row does not show: **the spouse's surname**. The man was a Sawyer. That raised an obvious question about this archive's own work, and it has now been answered rather than assumed.",
+    "howHead": "What was audited",
+    "how": "**All 51 marriage entries in the register.** Most were never at risk: FreeREG publishes a full register transcript with both parties named, the Queensland index gives a registration number that carries both, and a newspaper notice prints the names in full. **Five came from FindMyPast index sets, where the result row is the trap.** Four were re-opened at transcript level on 17 September. All four hold.",
+    "cols": [
+      "The claim",
+      "Set",
+      "Spouse's surname on the transcript"
+    ],
+    "rows": [
+      [
+        "Robert Darcy m. Jean Ward · Portsea St Mary, 21 June 1779",
+        "Hampshire Marriages",
+        "WARD — confirmed"
+      ],
+      [
+        "Hannah Saniger m. James Wakefield · Bristol, 17 October 1831",
+        "England Marriages 1538-1973",
+        "WAKEFIELD — confirmed"
+      ],
+      [
+        "Thomas Saniger m. Catherine Cotton · Berkeley, 10 April 1769",
+        "England Marriages 1538-1973",
+        "COTTON — confirmed"
+      ],
+      [
+        "Thomas Sanigre m. Martha Golding · Bristol, 24 August 1828",
+        "England Marriages 1538-1973",
+        "GOLDING — confirmed"
+      ]
+    ],
+    "chip": "documented",
+    "oneHead": "One was not re-opened, and it is named rather than counted as clean",
+    "one": "**Joseph Ward and Marth Gairden, South Leith, 27 October 1747.** The record set would not resolve under any name tried on 17 September, so the transcript was not read again. It is very probably sound: this archive's entry names **the bride's father, WILLIAM GAIRDEN**, and a result row has never carried a father, so somebody read past the row when it was first taken. That is an argument, not a check, and it is written here as one.",
+    "chipOne": "inferred",
+    "defectHead": "The defect is FindMyPast's, and it is not one dataset's quirk",
+    "defect": "The Portsea marriage was the useful test, because **Hampshire Marriages is a different collection with a different owner** — the Hampshire Genealogical Society — and its result row has exactly the same columns: *First name · Last name · Marriage year · **Spouse's first name(s)** · Place*. No surname. So a reader who searches a bride by her forename, matches a groom's forename, a year and a parish, and stops at the results page, will build a false marriage on any FindMyPast set they use. **That is how «Lydia Jones» got into every tree on the internet**, and the only defence is the extra click.",
+    "smallHead": "And one small thing worth knowing",
+    "small": "The founding marriage of this whole line is indexed under **DARCY**, not D'Arcy. The archive's alias list already carries both, which is the only reason the search found it at all."
+  }
 }

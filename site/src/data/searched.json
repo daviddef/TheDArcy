@@ -3347,6 +3347,14 @@
       "outcome": "yield",
       "got": "132 results across the counties the site covers, none of them Wicklow. One is noted and not claimed: JOHN D'ARCY married LOUISA BAGOTT SNEYD at St George's, Dublin, 3 March 1820 — this archive's two principal surnames in one entry, almost certainly a coincidence, written down so it is not rediscovered later and mistaken for a finding.",
       "href": "/george-pitt"
+    },
+    {
+      "src": "FindMyPast — transcripts of every marriage this archive cites from an index",
+      "what": "All 51 marriage entries in the register, of which 5 came from FindMyPast index sets",
+      "when": "17 Sep 2026",
+      "outcome": "yield",
+      "got": "Four re-opened at transcript level and all four hold: Robert Darcy m. Jean WARD (Portsea 1779), Hannah Saniger m. James WAKEFIELD (Bristol 1831), Thomas Saniger m. Catherine COTTON (Berkeley 1769), Thomas Sanigre m. Martha GOLDING (Bristol 1828). The fifth, Joseph Ward and Marth Gairden at South Leith 1747, could not be re-opened because the record set would not resolve — named rather than counted clean. Also established: Hampshire Marriages, a different collection with a different owner, has the same result-row columns and the same missing spouse surname, so the defect is FindMyPast's rather than one dataset's.",
+      "href": "/behind-the-paywall"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

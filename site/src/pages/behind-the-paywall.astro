@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/fmp.json";
 ---
 <Base
@@ -106,4 +107,27 @@ import d from "../data/fmp.json";
       <a href={u("/berkeley-woman/")}>The other thing the subscription answered →</a> ·
       <a href={u("/corrections/")}>The errors →</a></p>
   </section>
+
+  <Blk label={`The audit · ${d.audit.found}`} title={d.audit.head}>
+    <p class="lede" set:html={mdp(d.audit.lede)}></p>
+    <Note style="margin-top:1.2rem"><strong>{d.audit.howHead}.</strong>
+      <span set:html={mdp(d.audit.how)} /></Note>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr>{d.audit.cols.map((c) => <th>{c}</th>)}</tr></thead>
+        <tbody>{d.audit.rows.map(([a, b, c]) => (
+          <tr><td>{a}</td><td class="small">{b}</td>
+            <td><strong>{c}</strong></td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.audit.chip}</span></p>
+    <Note style="border-left-width:3px;margin-top:1.3rem"><strong>{d.audit.oneHead}.</strong>
+      <span set:html={mdp(d.audit.one)} />
+      {" "}<span class="chip inf">{d.audit.chipOne}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.audit.defectHead}.</strong>
+      <span set:html={mdp(d.audit.defect)} /></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.audit.smallHead}.</strong>
+      <span set:html={mdp(d.audit.small)} /></Note>
+  </Blk>
+
 </Base>
