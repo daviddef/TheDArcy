@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Spine from "@daviddef/archive-kit/components/Spine.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
@@ -179,30 +180,27 @@ const corr = (id) => CORRECTIONS[id];
   <section class="blk">
     <h2>Generation by generation</h2>
     <div class="spine" style="margin-top:1.4rem">
-      {shown.map((g) => {
+      <Spine u={u} label="g" rows={shown.map((g) => {
         const c = corr(g.id) || {};
-        const yr = (c.born || g.born || "").match(/\d{4}/)?.[0] || "?";
-        return (
-          <div class={`gen ${chip(g.id) === "documented" ? "" : "undoc"}`}>
-            <div>
-              <span class="yr">{yr}</span>
-              <span class="who">{g.name}</span>
-              {g.life && <span class="whr"> · {g.life}</span>}
-            </div>
-            {(c.bornPlace || g.bornPlace) && (
-              <div class="whr">{c.bornPlace || place(g.bornPlace)}</div>
-            )}
-            {why(g.id) && <p class="small" style="margin-top:.35rem;max-width:70ch">{why(g.id)}</p>}
-            {c.was && (
-              <p class="small" style="margin-top:.45rem;max-width:70ch">
-                <span class="chip dis">superseded</span>{" "}
-                <strong>The tree says</strong> {c.was}. <strong>It is wrong because</strong> {c.why}.{" "}
-                {c.link && <a href={u(c.link)}>Set out in full →</a>}
-              </p>
-            )}
-          </div>
-        );
-      })}
+        return {
+          gen: g.gen ?? g.ahn,
+          name: g.name,
+          href: g.slug ? "/people/" + g.slug + "/" : "",
+          born: c.born || g.born || "",
+          bornPlace: c.bornPlace || place(g.bornPlace) || "",
+          died: g.died || "",
+          confidence: chip(g.id),
+          /* A solid node is a generation this archive will defend; a dashed one
+             it is repeating from the family tree and has not proved. */
+          weak: chip(g.id) !== "documented",
+          weakNote: why(g.id) || "Repeated from the family tree and not proved.",
+          note: c.was
+            ? `<span class="chip dis">superseded</span> <strong>The tree says</strong> ${c.was}. ` +
+              `<strong>It is wrong because</strong> ${c.why}. ` +
+              (c.link ? `<a href="${u(c.link)}">Set out in full →</a>` : "")
+            : "",
+        };
+      })} />
     </div>
     <p class="spine-key">A solid node is a generation this archive will defend. A dashed node is one
     it is repeating from the family tree and has not proved.</p>
