@@ -2,10 +2,19 @@
 import Base from "../../layouts/Base.astro";
 import Note from "../../components/Note.astro";
 import { u } from "../../lib/url.js";
+import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
 import d from "../../data/dossiers.json";
 
 const people = Object.values(d.people).sort((a, b) => a.name.localeCompare(b.name));
-const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCase()))].sort();
+/* One entry per NAME, keyed by a name-slug: 169 entries for 169 distinct
+   names. n counts the RECORDS a name appears in, not the people who bore it,
+   so the shared table is told that and does not offer a reader "held by more
+   than one person" over a number that cannot support it. */
+const esc = (t) => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const rows = people.map((p) => ({
+  slug: p.slug, name: p.name, n: p.n,
+  detail: esc(p.rows[0].says.slice(0, 92) + (p.rows[0].says.length > 92 ? "\u2026" : "")),
+}));
 ---
 <Base
   title="Every Name"
@@ -33,46 +42,12 @@ const letters = [...new Set(people.map((p) => (p.surname || p.name)[0].toUpperCa
     </Note>
   </section>
 
-  <section class="blk" id="finder">
-    <div class="lab">Search</div>
-    <label for="q" class="vh">Search these people</label>
-    <input id="q" type="search" autocomplete="off"
-      placeholder="A name, a rank, a record — Morton, constable, Étaples, convict…"
-      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
-             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
-    <p class="small" id="count" style="margin-top:.8rem" aria-live="polite">{people.length} people</p>
-    <p class="small" style="margin-top:.5rem">Looking for a relative instead?
-      <a href={u("/search/")}>Search the whole archive →</a></p>
-  </section>
-
   <section class="blk" style="border-bottom:0">
-    <div class="grid three" style="margin-top:.4rem">
-      {people.map((p) => (
-        <a class="cardlink wcard"
-           data-s={`${p.name} ${p.surname} ${p.rows.map((r) => r.says + " " + r.source).join(" ")}`.toLowerCase()}
-           href={u(`/who/${p.slug}`)}>
-          <div class="nm">{p.name}</div>
-          <p class="small" style="margin-top:.3rem">{p.rows[0].says.slice(0, 92)}{p.rows[0].says.length > 92 ? "…" : ""}</p>
-          {p.n > 1 && <span class="chip doc" style="margin-top:.45rem">{p.n} records</span>}
-        </a>
-      ))}
-    </div>
+    <EveryName names={rows} u={u} counts="records" noun="names"
+      detailLabel="What the first record says" />
+    <p class="small" style="margin-top:1rem">Looking for a relative instead?
+      <a href={u("/search/")}>Search the whole archive &rarr;</a></p>
   </section>
 
-  <script is:inline>
-    (function () {
-      var q = document.getElementById("q"); if (!q) return;
-      var cards = [].slice.call(document.querySelectorAll(".wcard"));
-      var count = document.getElementById("count");
-      q.addEventListener("input", function () {
-        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
-        cards.forEach(function (c) {
-          var h = c.getAttribute("data-s");
-          var ok = terms.every(function (t) { return h.indexOf(t) !== -1; });
-          c.hidden = !ok; if (ok) shown++;
-        });
-        count.textContent = shown + (shown === 1 ? " person" : " people") + (terms.length ? " matching" : "");
-      });
-    })();
-  </script>
+
 </Base>
