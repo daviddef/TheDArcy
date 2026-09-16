@@ -4,7 +4,27 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import Corrections from "@daviddef/archive-kit/components/Corrections.astro";
 import { OWN, INHERITED, nOwn } from "../lib/errors.js";
+
+/* Each error was a three-row table of its own, thirty-two of them. The shared
+   page sets the retraction above the truth, which is the same pair every
+   archive in the estate keeps, and the lesson stays under each one because it
+   is the reason this page exists. */
+const esc = (t) => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const own = OWN.map((e) => ({
+  when: e.when,
+  was: esc(e.what),
+  now: esc(e.truth),
+  how: esc(e.why),
+  why: `<strong>The lesson.</strong> ${esc(e.lesson)}`,
+  where: e.href,
+  whereLabel: "Where it was corrected \u2192",
+}));
+const ord = (n) => {
+  const t = n % 100, o = ["th", "st", "nd", "rd"][t > 10 && t < 14 ? 0 : n % 10] || "th";
+  return n + o;
+};
 
 
 ---
@@ -27,22 +47,9 @@ import { OWN, INHERITED, nOwn } from "../lib/errors.js";
     </Note>
   </section>
 
-  {OWN.map((e) => (
-    <Blk label={e.when} title={e.truth}>
-      <Scroll>
-        <table>
-          <tbody>
-            <tr><td style="white-space:nowrap"><strong>It said</strong></td><td>{e.what}</td></tr>
-            <tr><td style="white-space:nowrap"><strong>It is</strong></td><td>{e.truth}</td></tr>
-            <tr><td style="white-space:nowrap"><strong>How</strong></td><td>{e.why}</td></tr>
-          </tbody>
-        </table>
-      </Scroll>
-      <Note tight>
-        <strong>The lesson.</strong> {e.lesson} <a href={u(e.href)}>Where it was corrected →</a>
-      </Note>
-    </Blk>
-  ))}
+  <section class="blk">
+    <Corrections rows={own} u={u} />
+  </section>
 
   <section class="blk">
     <h2>And the errors that came with the tree</h2>
@@ -65,10 +72,10 @@ import { OWN, INHERITED, nOwn } from "../lib/errors.js";
     <h2>Why this page exists</h2>
     <p class="dek">Because the alternative is worse. An archive that corrects itself silently is
     asking to be trusted on exactly the point it has just proved it can be wrong about — and because
-    the pattern in the eight above is more useful than any one of them. Five of the seven are the same
-    failure: <strong>a number or a claim taken from a secondary source, or from a bad scan, and not
+    the pattern across the {nOwn} above is more useful than any one of them. Five of the first seven
+    were the same failure: <strong>a number or a claim taken from a secondary source, or from a bad scan, and not
     checked against the record itself.</strong></p>
-    <p class="dek" style="margin-top:.9rem">If you find a ninth, it belongs here.
+    <p class="dek" style="margin-top:.9rem">If you find a {ord(nOwn + 1)}, it belongs here.
     <a href={u("/method/")}>How claims are labelled →</a> ·
     <a href={u("/open-questions/")}>What is still open →</a></p>
   </section>
