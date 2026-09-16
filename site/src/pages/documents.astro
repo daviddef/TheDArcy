@@ -3,10 +3,21 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
+import Documents from "@daviddef/archive-kit/components/Documents.astro";
 import eulogy from "../data/eulogy.json";
 
 const strip = (s) => s.replace(/\*\*/g, "").replace(/^> ?/gm, "").replace(/^\*|\*$/g, "");
 const words = eulogy.parts.reduce((a, p) => a + p.paras.join(" ").split(/\s+/).length, 0);
+/* One document, in three parts by three people, and no way to reach a part.
+   Blk already takes an id for exactly this. The index says one source, which
+   is this page's own kind of finding: it is short, and the shortness is true. */
+const slug = (t) => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+const parts = eulogy.parts.map((part) => ({
+  id: slug(part.heading),
+  by: (part.heading.split("\u2014")[1] || part.heading).trim(),
+  words: part.paras.join(" ").split(/\s+/).length,
+}));
+
 ---
 <Base
   title="Documents"
@@ -35,8 +46,16 @@ const words = eulogy.parts.reduce((a, p) => a + p.paras.join(" ").split(/\s+/).l
     </blockquote>
   </section>
 
-  {eulogy.parts.map((part) => (
-    <Blk label={part.heading.split("—")[0].trim()} title={(part.heading.split("—")[1] || "").trim().replace(/^d/, "D")}>
+  <section class="blk">
+    <h2>What is reproduced here</h2>
+    <Documents u={u} unit="source, in three parts"
+      note="Delivered in March 2010, one part by each of his three children."
+      rows={parts.map((p) => ({ year: 2010, title: p.by,
+        what: `${p.words.toLocaleString()} words`, href: "#" + p.id }))} />
+  </section>
+
+  {eulogy.parts.map((part, i) => (
+    <Blk id={parts[i].id} label={part.heading.split("—")[0].trim()} title={(part.heading.split("—")[1] || "").trim().replace(/^d/, "D")}>
       <div class="prose" style="margin-top:1.2rem">
         {part.paras.map((p) => (
           p.startsWith(">")
