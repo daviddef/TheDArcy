@@ -1008,6 +1008,30 @@
       "since": "2026-09-17",
       "what": "Audit the other five silent joins the same way",
       "note": "The fault was a build script assuming a page would show something it never read. The same shape is possible in five other places, and none has been control-tested: **mentions.json** (matches name phrases in rendered HTML — 13 of the 55 got zero), the hand-kept **APPEARS_IN**, **VERIFIED** and **PORTRAITS** maps inside `/people/[slug].astro`, and **graves.json** and **households.json**, which both key people by slug and are read only by their own pages. **Ask of each: if this map went empty, would anything refuse?**"
+    },
+    {
+      "n": 113,
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-09-17",
+      "what": "Whether to pay the RCB Library's search fee for the Wicklow marriage",
+      "note": "The RCB Library replied on 16 September and **offered to search their registers on request, fee quoted on application**. Their registers are not online and never have been, so this is the only route left to the marriage of **George Pitt D'Arcy and Maria White, Co. Wicklow, about 1819**. Two things are needed before asking: **a parish, or a short list of them**, because a county-wide manual search is not a reasonable thing to ask for, and **a decision on the money**, which is not this archive's to make."
+    },
+    {
+      "n": 114,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-17",
+      "what": "Read the Wicklow holdings list from somewhere that is not churchofireland.org",
+      "note": "The list is public, free, and unreadable from here: the site sits behind a Cloudflare bot check. **Without it there is no parish to name, and without a parish there is nothing to pay the RCB Library to search.** Routes that do not need a bot check: the printed *Irish Church Records* (Ryan) and Grenham's *Tracing Your Irish Ancestors*, both of which tabulate surviving registers by parish; the National Archives of Ireland's own guide; and — the honest one — **writing back to Helen Crawford Walsh and asking her to paste the Wicklow rows as text**, since she has already been generous and the attachment she sent cannot be opened here."
+    },
+    {
+      "n": 115,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-17",
+      "what": "Ask the RCB Library about St Mary's, Limerick, in the same correspondence",
+      "note": "Errand 45 — the Atkinson, Cole, Creech, Kent, Bowen and Peevers line, five generations stopping dead at the emigrant — has been waiting on exactly the institution that has just written back. The NLI is the wrong denomination and irishgenealogy.ie is blocked. **A second email to a librarian who has already answered once costs nothing.** Draft it beside the reply, do not send it without David."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

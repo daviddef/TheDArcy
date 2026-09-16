@@ -3306,6 +3306,22 @@
       "ctl": "named",
       "got": "23 SANIGER burials, every one at Berkeley, the last in 1787; 3 SANIGAR, all Bristol; SANIGOR none. Nothing at Berkeley between 1810 and 1830. **The control kills the null:** Berkeley burials of any surname return 442 for 1735-1765 and 2 for 1800-1830, so the set simply stops there. John Saniger's burial at Berkeley in January 1825 is documented elsewhere and is not in this index.",
       "href": "/coverage"
+    },
+    {
+      "src": "RCB Library, Dublin — Representative Church Body",
+      "what": "Which Church of Ireland registers survive for Co. Wicklow, 1815-1825, and in whose custody",
+      "when": "16 Sep 2026",
+      "outcome": "yield",
+      "got": "Replied in three days. The holdings are published — the List of Church of Ireland Parish Registers marks the parishes the Library holds and links to each one's registers and dates. **Nothing of theirs is online: «All of our registers must be searched manually and in person.»** They will search for a fee on request. So the Wicklow question is not closed by loss — it is closed by distance, and it opens again the moment a parish can be named.",
+      "href": "/errands"
+    },
+    {
+      "src": "Church of Ireland — List of Church of Ireland Parish Registers (PDF)",
+      "what": "The holdings list the RCB Library linked, to read the Wicklow parishes and their dates",
+      "when": "17 Sep 2026",
+      "outcome": "blocked",
+      "got": "churchofireland.org is behind a Cloudflare bot check — «This website uses a security service to protect against malicious bots» — on both a direct fetch and the browser, and this archive does not pass bot checks. The librarian also attached the Wicklow parish list as an image, which the mail tools here cannot download. **The list is public and free and this archive still cannot read it**, which is the same wall that already closed irishgenealogy.ie — her own first recommendation.",
+      "href": "/errands"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
