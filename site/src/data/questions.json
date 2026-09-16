@@ -135,10 +135,10 @@
   {
    "n": 5,
    "q": "Who were Ann Biddulph's parents?",
-   "state": "open",
+   "state": "answered",
    "since": "2026-09-15",
-   "rank": "A generation this archive has never had",
-   "settles": "The marriage certificate of James Sneyd and Ann Biddulph, Stoke St Peter 1842, ordered locally from Stoke-on-Trent against reference 31/03/214. It would name BOTH FATHERS and their trades.",
+   "rank": "Closed by the first hour of a subscription",
+   "settles": "",
    "register": "/errands",
    "tried": [
     [
@@ -148,9 +148,13 @@
     [
      "The free Staffordshire BMD index",
      "Named her. The marriage is 1842 at Stoke St Peter, and four Sneyd births carry Biddulph as the mother's maiden name."
+    ],
+    [
+     "The 1851 census, Queen Street, Stoke upon Trent",
+     "**ANSWERED. JOHN BIDDULPH, coal dealer, born Bermondsey, Surrey, about 1798, and JULIA his wife, born Shelton about 1799.** Ann is in their house as «Daughter, Married», a dressmaker of 31, with her own children Mary and James A entered as grandchildren. Two sisters as well: Mary, a paintress, and Eliza, a servant."
     ]
    ],
-   "note": "Identified from an index, not from a certificate. It rests on a surname, a maiden name repeated four times, the right district and four matching ages.",
+   "note": "The marriage certificate (errand 55) is still worth having — it would give **both fathers' names and trades**, and confirm John Biddulph from a second source. But the question as asked is answered.",
    "key": "q/who-were-ann-biddulph-s-pare-3eb1ed"
   },
   {
@@ -159,7 +163,7 @@
    "state": "open",
    "since": "2026-09-15",
    "rank": "A child the archive did not know existed",
-   "settles": "The 1851 census for Well Street, Hanley, read directly rather than through an index; or a death registration at Stoke between 1845 and 1851.",
+   "settles": "A death registration for Catherine Sneyd at Stoke upon Trent between 1845 and 1851, or a burial in a Hanley register.",
    "register": "/searched",
    "tried": [
     [
@@ -169,6 +173,10 @@
     [
      "Every census read here",
      "She appears in none of them. She either did not reach 1851, or was elsewhere on both nights."
+    ],
+    [
+     "The 1851 census, both Sneyd households",
+     "**She is in neither.** Well Street holds Samuel, Elizabeth, James and Elizabeth Ann; Queen Street holds Ann with Mary and James A. Every other child of the marriage is accounted for at one of the two addresses, and Catherine — five or six years old — is at neither. The remaining explanations are a death before 1851, or a child living away from both her parents and both sets of grandparents."
     ]
    ],
    "note": "",

@@ -563,5 +563,134 @@
   "order": "Elizabeth Ann was born in 1839. The marriage is 1842. The eldest child came three years before the wedding, and the registrar recorded her under her father's surname with her mother's maiden name beside it, which is exactly how the index is built to work.",
   "careful": "What would settle it is the marriage certificate, which would give both fathers' names and occupations and carry this line back a generation on Ann's side. Against the local reference 31/03/214 it is orderable from Stoke-on-Trent rather than from the GRO.",
   "where": "Searched 15 September 2026 at staffordshirebmd.org.uk — 391 Sneyd births and 322 Sneyd marriages, free, and never used by this archive before."
+ },
+ "biddulphParents": {
+  "head": "Ann's parents, and the night the family slept in two houses",
+  "found": "16 September 2026, the first hour of a FindMyPast subscription",
+  "lede": "This archive knew James Sneyd's wife as «Ann» across four censuses, then as ANN BIDDULPH from a free index, and said plainly that her parents were a generation it had never had. The 1851 census names them.",
+  "queen": {
+   "head": "Queen Street, Stoke upon Trent — seven people",
+   "rows": [
+    [
+     "John Biddulph",
+     "Head",
+     "Married",
+     53,
+     1798,
+     "Coal dealer",
+     "Bermondsey, Surrey"
+    ],
+    [
+     "Julia Biddulph",
+     "Wife",
+     "Married",
+     52,
+     1799,
+     "—",
+     "Shelton, Staffordshire"
+    ],
+    [
+     "Mary Biddulph",
+     "Daughter",
+     "Unmarried",
+     21,
+     1830,
+     "Paintress (potts)",
+     "Stoke, Staffordshire"
+    ],
+    [
+     "Eliza Biddulph",
+     "Daughter",
+     "Unmarried",
+     19,
+     1832,
+     "Servant",
+     "Stoke, Staffordshire"
+    ],
+    [
+     "Anne Sneyd",
+     "DAUGHTER",
+     "Married",
+     31,
+     1820,
+     "Dressmaker",
+     "Shelton, Staffordshire"
+    ],
+    [
+     "Mary Sneyd",
+     "GRAND DAUGHTER",
+     "—",
+     8,
+     1843,
+     "Scholar",
+     "Hanley, Staffordshire"
+    ],
+    [
+     "James A Sneyd",
+     "GRAND SON",
+     "—",
+     0,
+     1851,
+     "—",
+     "Hanley, Staffordshire"
+    ]
+   ]
+  },
+  "well": {
+   "head": "And Well Street, the same night — five people",
+   "rows": [
+    [
+     "Samuel Sneyd",
+     "Head",
+     "Married",
+     72,
+     1779,
+     "Grocer",
+     "Madeley, Staffordshire"
+    ],
+    [
+     "Elizabeth Sneyd",
+     "Wife",
+     "Married",
+     71,
+     1780,
+     "—",
+     "Oswestry, Shropshire"
+    ],
+    [
+     "James Sneyd",
+     "Son",
+     "Married",
+     33,
+     1818,
+     "Engraver",
+     "Hanley, Staffordshire"
+    ],
+    [
+     "Elizabeth Ann Sneyd",
+     "Daughter",
+     "Unmarried",
+     11,
+     1840,
+     "—",
+     "Hanley, Staffordshire"
+    ],
+    [
+     "Harvey Bradbury",
+     "Visitor",
+     "Unmarried",
+     20,
+     1831,
+     "Shoemaker",
+     "Longton, Staffordshire"
+    ]
+   ]
+  },
+  "means": "**JOHN BIDDULPH, coal dealer, born at Bermondsey in Surrey about 1798, and JULIA his wife, born at Shelton about 1799.** Ann is enumerated in their house as «Daughter, Married», a dressmaker of 31, with two of her own children beside her as grandchildren. Her husband James is a mile away at his father's shop in Well Street with their eldest, Elizabeth Ann. On the night of 30 March 1851 this family slept at two addresses, and it takes both to see it whole.",
+  "chip": "documented",
+  "nameHead": "And the naming falls into place",
+  "name": "James and Ann called their second daughter **MARY JULIA** in 1842. Ann's mother is **JULIA** and her sister is **MARY**. Their eldest was **ELIZABETH ANN** — for James's mother Elizabeth and for Ann herself. The forenames this archive had been reading as decoration are a map of the two families.",
+  "surreyHead": "One thing worth not assuming",
+  "surrey": "John Biddulph was born at **Bermondsey, Surrey** — not in Staffordshire at all. A coal dealer in the Potteries who came up from south London is a different kind of ancestor from a local family, and nothing here explains how he got there. His marriage to Julia, and his own parents, are the next question and are not yet asked."
  }
 }

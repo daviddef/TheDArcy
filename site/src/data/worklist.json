@@ -747,14 +747,14 @@
     },
     {
       "n": 83,
-      "state": "blocked",
+      "state": "next",
       "owner": "this archive",
       "since": "2026-09-15",
       "what": "Find out what became of Catherine Sneyd, born Hanley 1845",
       "covers": [
         "q:q/what-became-of-catherine-sne-c90b1c"
       ],
-      "note": "**Blocked, and on the same wall as row 18.** Settling what became of Catherine Sneyd needs the **1851 census for Well Street, Hanley** read directly, or a Stoke death registration 1845–51. FreeCEN holds **1861 only** for Staffordshire — tested, and every one of 31 control results was 1861 — and the 1851 census is behind a subscription this archive does not hold. The index evidence is complete: HAN/007/057, mother's maiden name Biddulph."
+      "note": "**Advanced, not closed.** The 1851 census has now been read: **she is in neither Sneyd household**, while every other child of James and Ann is at one of the two addresses. The remaining explanations are a death before 1851 or a child living away from both parents and both sets of grandparents. Next: a Stoke death registration 1845–51, or a Hanley burial register — both now reachable."
     },
     {
       "n": 84,
@@ -767,10 +767,10 @@
     {
       "n": 85,
       "what": "The 1851 census at Well Street, Hanley — and Catherine Sneyd",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "The single most answerable question on the list. **Catherine Sneyd, born Hanley 1845** (HAN/007/057, mother's maiden name Biddulph) appears in **no census this archive has read**. FreeCEN holds 1861 only for Staffordshire — tested, 31 of 31 controls — so 1851 has never been reachable. Read the Well Street household directly and she is either there, or she is not and a Stoke death registration 1845–51 is the next step.",
+      "note": "**Done in the first hour, and it answered a different question as well.** The family slept at **two addresses** on 30 March 1851: Well Street (Samuel the grocer, Elizabeth, James the engraver and Elizabeth Ann) and Queen Street a mile off (Ann with Mary and James A). **Catherine is in neither** — every other child is accounted for, and she would be five or six. And Queen Street turned out to be her mother's parents' house: **JOHN BIDDULPH, coal dealer, born Bermondsey, Surrey, and JULIA his wife**. [Question 5](/open-questions/) closed.",
       "covers": [
         "q:q/what-became-of-catherine-sne-c90b1c"
       ]

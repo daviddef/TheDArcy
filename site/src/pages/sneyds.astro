@@ -262,6 +262,39 @@ const c = d.counts;
     {d.coverage1861} <span class="chip doc">coverage established by control test</span></p>
   </Blk>
 
+  <Blk label={`FindMyPast · 1851 census · found ${d.biddulphParents.found}`} title={d.biddulphParents.head}>
+    <p class="lede">{d.biddulphParents.lede}</p>
+
+    <h3 style="margin-top:1.6rem">{d.biddulphParents.queen.head}</h3>
+    <Scroll>
+      <table style="margin-top:.7rem">
+        <thead><tr><th>Name</th><th>In the house</th><th>Status</th><th class="m">Age</th><th class="m">Born</th><th>Occupation</th><th>Birthplace</th></tr></thead>
+        <tbody>{d.biddulphParents.queen.rows.map(([n, rel, st, age, yr, occ, bp]) => (
+          <tr style={rel.toUpperCase() === rel ? "background:var(--tint)" : ""}>
+            <td><strong>{n}</strong></td><td class="small">{rel}</td><td class="small">{st}</td>
+            <td class="m">{age}</td><td class="m">{yr}</td>
+            <td class="small">{occ}</td><td class="small">{bp}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+
+    <h3 style="margin-top:1.7rem">{d.biddulphParents.well.head}</h3>
+    <Scroll>
+      <table style="margin-top:.7rem">
+        <thead><tr><th>Name</th><th>In the house</th><th>Status</th><th class="m">Age</th><th class="m">Born</th><th>Occupation</th><th>Birthplace</th></tr></thead>
+        <tbody>{d.biddulphParents.well.rows.map(([n, rel, st, age, yr, occ, bp]) => (
+          <tr><td><strong>{n}</strong></td><td class="small">{rel}</td><td class="small">{st}</td>
+            <td class="m">{age}</td><td class="m">{yr}</td>
+            <td class="small">{occ}</td><td class="small">{bp}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      {d.biddulphParents.means} <span class="chip doc">{d.biddulphParents.chip}</span>
+    </Note>
+    <Note style="margin-top:1.2rem"><strong>{d.biddulphParents.nameHead}.</strong> {d.biddulphParents.name}</Note>
+    <Note style="margin-top:1.2rem"><strong>{d.biddulphParents.surreyHead}.</strong> {d.biddulphParents.surrey}</Note>
+  </Blk>
+
   <section class="blk" style="border-bottom:0">
     <h2>Where the Staffordshire Sneyds are</h2>
     <Scroll>
