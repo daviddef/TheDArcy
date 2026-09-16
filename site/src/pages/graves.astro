@@ -4,10 +4,25 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import Graves from "@daviddef/archive-kit/components/Graves.astro";
 import g from "../data/graves.json";
 const shared = g.rows.filter((r) => r.shared);
 const many = g.rows.filter((r) => r.n > 1 && !r.shared);
 const single = g.rows.filter((r) => r.n === 1);
+
+/* The two tables - those holding more than one and those holding one - become
+   one list with a filter, because they were the same table split by a number.
+   The country comes off the end of the place string, which is how this archive
+   has always written them: «Chatham, UK». */
+const country = (place) => String(place).split(",").pop().trim();
+const graves = g.rows.map((r) => ({
+  place: r.place,
+  country: country(r.place),
+  shared: !!r.shared || r.n > 1,
+  people: r.people.map((p) => ({
+    name: p.name, href: `/people/${p.slug}`, life: p.life || p.died || "",
+  })),
+}));
 ---
 <Base title="Graves and Burials" eyebrow={`${g.buried} burials · ${g.rows.length} places`}
   dek="Where this family is buried, gathered from the tree — including two plot references that two different people are both supposed to occupy.">
@@ -49,42 +64,8 @@ const single = g.rows.filter((r) => r.n === 1);
     </Note>
   </Blk>
 
-  <section class="blk">
-    <h2>Where more than one of them lies</h2>
-    <Scroll>
-      <table>
-        <thead><tr><th>Place</th><th class="m">Buried</th><th>Who</th></tr></thead>
-        <tbody>
-          {many.map((r) => (
-            <tr>
-              <td><strong>{r.place}</strong></td>
-              <td class="m">{r.n}</td>
-              <td class="small">{r.people.map((p, i) => (
-                <>{i > 0 && " · "}<a href={u(`/people/${p.slug}`)}>{p.name}</a></>
-              ))}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </Scroll>
-  </section>
-
   <section class="blk" style="border-bottom:0">
-    <h2>And {single.length} places holding one person each</h2>
-    <Scroll>
-      <table>
-        <thead><tr><th>Who</th><th>Where</th></tr></thead>
-        <tbody>
-          {single.map((r) => (
-            <tr>
-              <td><a href={u(`/people/${r.people[0].slug}`)}>{r.people[0].name}</a>
-                {r.people[0].life && <span class="small" style="color:var(--ink-3)"> {r.people[0].life}</span>}</td>
-              <td class="small">{r.place}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </Scroll>
+    <Graves rows={graves} u={u} />
     <p class="small" style="margin-top:1.2rem"><strong>Arthur Hartley Sneyd is not on this page.</strong>
     He has no known grave — the army's own form recorded his burial place as "Not yet to hand", and it
     never came. <a href={u("/finding-arthur/")}>The search for him →</a></p>
