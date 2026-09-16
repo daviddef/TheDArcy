@@ -755,6 +755,123 @@
         "q:q/what-became-of-catherine-sne-c90b1c"
       ],
       "note": "**Blocked, and on the same wall as row 18.** Settling what became of Catherine Sneyd needs the **1851 census for Well Street, Hanley** read directly, or a Stoke death registration 1845–51. FreeCEN holds **1861 only** for Staffordshire — tested, and every one of 31 control results was 1861 — and the 1851 census is behind a subscription this archive does not hold. The index evidence is complete: HAN/007/057, mother's maiden name Biddulph."
+    },
+    {
+      "n": 84,
+      "what": "The FindMyPast campaign — a month's subscription, and a list to spend it on",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "David took out a **full month's FindMyPast subscription on 16 September 2026** and asked this archive to work through it. This is the parent row; the children below are the targets, drawn from what this archive has already said a subscription would settle rather than from browsing.\n\n**It will be targeted searching, not bulk downloading.** FindMyPast's terms prohibit systematic harvesting, a scraper would get the account suspended, and the value here is in about fifteen specific questions rather than in volume. Every result goes to [/searched](/searched/) with its control, the same as a free source.\n\n**Thirteen existing FMP rows are already on this site marked `null` or `empty`.** Those searches ran without a subscription and several were limited by it; each should be re-run and either confirmed or corrected."
+    },
+    {
+      "n": 85,
+      "what": "The 1851 census at Well Street, Hanley — and Catherine Sneyd",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "The single most answerable question on the list. **Catherine Sneyd, born Hanley 1845** (HAN/007/057, mother's maiden name Biddulph) appears in **no census this archive has read**. FreeCEN holds 1861 only for Staffordshire — tested, 31 of 31 controls — so 1851 has never been reachable. Read the Well Street household directly and she is either there, or she is not and a Stoke death registration 1845–51 is the next step.",
+      "covers": [
+        "q:q/what-became-of-catherine-sne-c90b1c"
+      ]
+    },
+    {
+      "n": 86,
+      "what": "Jane, Catherine and Charlotte D'Arcy in the 1861 census",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "Errand 43. The 1851 entry is found — HO107/1646 f.357 p.59 sch.172, 22 Western Cottages, Brighton — and **1861 is still missing**, with FreeCEN returning nought for ARCY in Sussex because the piece is not transcribed (that was correction 30). A subscription reaches the images.",
+      "covers": [
+        "err:err/jane-catherine-and-charlotte-87d63c"
+      ]
+    },
+    {
+      "n": 87,
+      "what": "Berkeley St Mary's register — Hannah Saniger's baptism, and John Saniger's marriage to Lydia",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "The two oldest live questions. FreeREG's Berkeley is a **thirty-year fragment, 1653–1677**, measured with a Smith control; everything after it has been unreachable. FindMyPast holds Gloucestershire parish registers. Hannah's baptism about 1780–1800 with parents named, and a marriage of John Saniger and Lydia about 1797, are both single-document answers.",
+      "covers": [
+        "q:q/where-and-when-was-hannah-sa-3597b7",
+        "q:q/where-did-john-saniger-and-l-91411d"
+      ]
+    },
+    {
+      "n": 88,
+      "what": "The four PCC wills, if FindMyPast's PROB 11 set reaches them",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "**PROB 11/1728/64** — Robert D'Arcy's own will, proved 4 July 1827, the single document that would most change this archive. **PROB 11/1825/326** Elizabeth Saniger of Thornbury. **PROB 11/1056/294** Benjamin Cotton, cordwainer of Berkeley. **PROB 11/1991/312** John Maddock Jones of Ruabon. All four are digitised at Kew behind a free sign-in this archive will not make; FindMyPast carries a PCC wills set, and whether it reaches these pieces is itself worth establishing.",
+      "covers": [
+        "err:err/prob-11-1728-64-the-will-of--24fcf7",
+        "err:err/prob-11-1825-326-the-will-of-c3cc14",
+        "err:err/prob-11-1056-294-the-will-of-aba03a",
+        "err:err/prob-11-1991-312-the-will-of-9736f4"
+      ]
+    },
+    {
+      "n": 89,
+      "what": "Portsea St Mary's register, 1770–1800",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "Errand 30. Robert D'Arcy married Jean Ward there on 21 June 1779 and Joseph was baptised there on 19 March 1780 — and FreeREG holds **exactly one D'Arcy record in the whole of Hampshire in sixty years**, which is Joseph's baptism. The register itself would show whether there were other children, and would give the marriage entry with its witnesses.",
+      "covers": [
+        "err:err/portsea-st-mary-s-register-i-19d0e7"
+      ]
+    },
+    {
+      "n": 90,
+      "what": "The twelve RG 4 Bristol chapel registers",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "Errand 18. Twelve named non-conformist registers covering 1805–1840 in Bristol, where this archive loses the Wakefields and Sanigers between the Berkeley registers and the Queensland arrivals. FreeREG has **four Bristol registers transcribed** and gave one Wakefield baptism that turned out to be a different family.",
+      "covers": [
+        "err:err/twelve-named-rg-4-bristol-ch-e86bcb"
+      ]
+    },
+    {
+      "n": 91,
+      "what": "The British Newspaper Archive, through the subscription",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "Already used once without one — the Wiltshire notice of George Pitt D'Arcy's marriage, and the Kentish Gazette death notice that made Constantine Robert's son. With full access: Robert D'Arcy's death at Chatham in May 1827, Joseph's at Lymington in 1848, the Le Havre deaths of 1843, and the Brighton sisters."
+    },
+    {
+      "n": 92,
+      "what": "Re-run the thirteen FMP searches this archive recorded without a subscription",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "Thirteen rows on [/searched](/searched/) are FindMyPast searches marked `null` or `empty`, run when access was partial. They include the Lymington deaths, the 1851/1861/1871 census sweeps, the Irish marriage licence bonds, Berkeley marriages and England Births & Baptisms. **Each needs re-running and then either confirming with a control or correcting.** Some may turn out to have been limited by the paywall rather than by the record."
+    },
+    {
+      "n": 93,
+      "what": "The Irish records — Wicklow and Limerick",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "Errands 6 and 45. Church of Ireland registers for County Wicklow, Betham's marriage licence abstracts, and the Limerick line — Atkinson, Cole, Creech, Kent, Bowen, Pennefather. **irishgenealogy.ie is behind a bot check this archive will not pass**, and the National Library's Catholic registers are structurally the wrong denomination for these families. FindMyPast's Irish sets are the only route left.",
+      "covers": [
+        "err:err/surviving-church-of-ireland--a90422",
+        "err:err/the-limerick-line-in-church--8c7866"
+      ]
+    },
+    {
+      "n": 94,
+      "what": "St Michael, Barbados, 1780s — the register rather than the index",
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "note": "Errand 33. Constantine was christened there on 18 February 1786 and his sister Jane on 17 March 1788, both known only from an index entry. **The register itself would give the father's rank and station**, which is the one thing that would independently confirm Robert D'Arcy's Barbados posting beyond Porter's station list.",
+      "covers": [
+        "err:err/the-parish-register-of-st-mi-b6c3e0"
+      ]
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",
@@ -790,5 +907,5 @@
       ]
     }
   ],
-  "unreconciled": 38
+  "unreconciled": 32
 }
