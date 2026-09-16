@@ -72,6 +72,35 @@ import d from "../data/hannah-baptism.json";
     <p class="small" style="margin-top:1rem">{d.probate.how}</p>
   </Blk>
 
+  <Blk label={`Two censuses · ${d.ham.found}`} title={d.ham.head}>
+    <p class="lede" set:html={mdp(d.ham.lede)}></p>
+    {[["h1", "r1", "c1"], ["h2", "r2", "c2"]].map(([h, r, c]) => (
+      <div style="margin-top:1.5rem">
+        <h3>{d.ham[h]}</h3>
+        <Scroll>
+          <table style="margin-top:.7rem">
+            <thead><tr><th>Name</th><th class="m">Age</th><th>Relationship</th><th></th></tr></thead>
+            <tbody>{d.ham[r].map(([nm, ag, rel, note]) => (
+              <tr><td><strong>{nm}</strong></td><td class="m">{ag}</td>
+                <td class="small">{rel}</td><td class="small">{note}</td></tr>))}</tbody>
+          </table>
+        </Scroll>
+        <p class="small mono" style="margin-top:.6rem;color:var(--ink-3)">{d.ham[c]}</p>
+      </div>
+    ))}
+    <Note style="border-left-width:3px;margin-top:1.5rem">
+      <strong>{d.ham.twinsHead}.</strong> <span set:html={mdp(d.ham.twins)} />
+      {" "}<span class="chip doc">{d.ham.chipTwins}</span>
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.ham.whoHead}.</strong> <span set:html={mdp(d.ham.who)} />
+      {" "}<span class="chip inf">{d.ham.chipWho}</span>
+    </Note>
+    <Note style="margin-top:1.2rem">
+      <strong>{d.ham.thenHead}.</strong> <span set:html={mdp(d.ham.then)} />
+    </Note>
+  </Blk>
+
   <Blk label={`Tested · ${d.lydiaTested.found}`} title={d.lydiaTested.head}>
     <p class="lede" set:html={mdp(d.lydiaTested.lede)}></p>
     <div style="margin-top:1.4rem;display:flex;flex-direction:column;gap:1.3rem">

@@ -3263,7 +3263,7 @@
       "when": "16 Sep 2026",
       "outcome": "null",
       "ctl": "named",
-      "got": "No Lydia Jones at all, against 939 Jones baptisms in the county in the same eleven years. The tree's «born 13 March 1770 at Wotton-under-Edge» is not in this index. Wotton-under-Edge could not be isolated as a place string, so the control is county-wide rather than parish-level.",
+      "got": "No Lydia Jones at all, against 939 Jones baptisms in the county in the same eleven years. The tree's «born 13 March 1770 at Wotton-under-Edge» is not in this index. Wotton-under-Edge could not be isolated as a place string, so the control is county-wide rather than parish-level. SUPERSEDED IN PART the same day: the 1851 census gives her birthplace as «Wooton under Edge» and her age as 81, so the place and the year are documented from a record even though the baptism is not in this index.",
       "href": "/hannah-baptism"
     },
     {
@@ -3273,6 +3273,30 @@
       "outcome": "yield",
       "got": "135 marriages, 1588 to 1907. Berkeley dominates the -ANIG- forms and Dursley, North Nibley and Stinchcombe the -INEG- forms, exactly as the baptisms do. No Saniger marriage of any spelling at Berkeley between 1784 and 1805.",
       "href": "/spellings"
+    },
+    {
+      "src": "FindMyPast — 1851 England, Wales & Scotland Census",
+      "what": "Lydia Sanigar",
+      "when": "16 Sep 2026",
+      "outcome": "yield",
+      "got": "One result, and it is hers: Lydia Sanigar, 81, widow, «formly labourers wife», born «Wooton under Edge», living at the Village of Ham in Berkeley as MOTHER IN LAW to the widowed Ann Sanigar. HO107/1957 f.561 p.13 sch.46. Confirms the birthplace and age the tree gives, and places Hannah's mother's family at Ham.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — 1841 England, Wales & Scotland Census",
+      "what": "Sanigar in Gloucestershire",
+      "when": "16 Sep 2026",
+      "outcome": "yield",
+      "got": "24 entries. Four are one household at Clapton, Ham, Berkeley: John 35, Anne 40, and William 6, John 6 and Mary 3 — which proves the two 1835 Berkeley baptisms to a father John are TWINS and not an index duplicate. HO107/347 bk 6 f.3 p.1 sch.761.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — England & Wales Deaths 1837-2007",
+      "what": "John Sanigar / Saniger, 1835-1855",
+      "when": "16 Sep 2026",
+      "outcome": "yield",
+      "got": "John Sanigar, first quarter of 1850, Thornbury district — which is why Ann Sanigar is a widow at Ham in the March of 1851. Under SANIGER the same window returns nothing, so the spelling carried the record.",
+      "href": "/hannah-baptism"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

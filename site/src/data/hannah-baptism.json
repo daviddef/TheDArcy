@@ -155,7 +155,7 @@
   "lydiaTested": {
     "head": "Her mother, tested",
     "found": "16 September 2026",
-    "lede": "The block above was written on 13 September and ended by saying that four fields about Lydia were «testable and none has been tested». Three of the four have now been tested, in one afternoon, on the subscription this archive already had. **One is confirmed, one is a controlled null, and one is wrong.**",
+    "lede": "The block above was written on 13 September and ended by saying that four fields about Lydia were «testable and none has been tested». All four have now been tested, in one afternoon, on the subscription this archive already had. **Two are confirmed from record, one is wrong, and one has nothing behind it.**",
     "rows": [
       [
         "Died 7 July 1851 at Berkeley",
@@ -164,10 +164,10 @@
         "**LYDIA SANIGAR**, death registered in the **September quarter of 1851, Thornbury district** — GRO volume 11, page 329. Berkeley is in Thornbury registration district, and a death on 7 July falls in that quarter. She died under her married surname, which is itself evidence that a Saniger marriage happened."
       ],
       [
-        "Born 13 March 1770 at Wotton-under-Edge",
-        "NOT FOUND",
-        "not claimed",
-        "**No Lydia Jones is baptised anywhere in Gloucestershire between 1765 and 1775** in England Births & Baptisms 1538-1975 — against **939 Jones baptisms in the county in the same eleven years**. The control is strong and the null is real, but it is a null about an index, not about a font."
+        "Born about 1770 at Wotton-under-Edge",
+        "CONFIRMED",
+        "documented",
+        "The **1851 census** gives her birthplace, in the enumerator's own spelling, as **«Wooton under Edge»**, and her age as **81**. Her baptism is not in England Births & Baptisms — **no Lydia Jones at all is baptised in Gloucestershire between 1765 and 1775, against 939 Jones baptisms in the county in those eleven years** — but the place and the year do not need it. They are on a record she was alive to answer."
       ],
       [
         "Married John Saniger at Berkeley in 1797",
@@ -176,17 +176,92 @@
         "There **is** a Lydia marrying a John at Berkeley in that window, and she is the only one in twenty-one years: **LYDIA JONES, 8 January 1798**. Her husband's surname, in the transcript rather than in the result row, is **SAWYER**. Berkeley has **272 marriages indexed for 1793-1803**, so the parish is covered, and no Saniger marries there in that decade under any of eight spellings."
       ],
       [
-        "Parents William Jones and Sarah",
-        "UNTESTED",
+        "Her parents were William Jones and Sarah",
+        "NOTHING BEHIND IT",
         "not claimed",
-        "And now resting on a maiden name with nothing behind it."
+        "It rests entirely on the maiden name, and the maiden name rests entirely on the marriage that turned out to be a Sawyer's. **JONES is now disputed rather than untested.** Wotton-under-Edge survives; Jones does not."
       ]
     ],
     "whereHead": "Where JONES probably came from",
     "where": "A Lydia marrying a John at Berkeley in 1798, one year out from the date the tree gives and in the right parish, is a very close match on everything a result row displays — **first name, spouse's first name, place, year**. The only field that rules it out is the spouse's surname, and that field is not in the result row. It is one click further in, on the transcript. The likeliest account of «Lydia Jones» is that somebody stopped one click early, twenty years ago, and every tree since has copied it.",
     "chipWhere": "inferred",
-    "fitHead": "What still fits",
-    "fit": "The 1841 census has a seventy-year-old **Lyddya Sinegar** in Hannah's house in Bristol, which puts her birth about 1771 — within a year of the 1770 the tree gives. A Lydia Sanigar dies in the Thornbury district in 1851. **Lydia is real, she is a Saniger by marriage, and her age is right.** It is only her maiden name and her wedding that have been made up.",
+    "fitHead": "What holds",
+    "fit": "The 1841 census has a seventy-year-old **Lyddya Sinegar** in Hannah's house in Bristol. The 1851 census has **Lydia Sanigar, 81, born Wotton-under-Edge**, back at Ham in Berkeley. The GRO registers her death there months later. **Lydia is real, she is a Saniger by marriage, her age is right in three records and her birthplace is on one of them.** It is her maiden name and her wedding that were invented.",
     "chipFit": "documented"
+  },
+  "ham": {
+    "head": "Clapton, in the village of Ham",
+    "found": "16 September 2026",
+    "lede": "Following Lydia into the census does something the baptism registers could not: it puts this family at **an address**. Both censuses place them in **Ham**, one of the three hamlets of Berkeley parish that the 1608 muster names — and the manor whose court roll of 1587 sits in John Smyth's own collection, MS 3549, as **«Ham and Hinton»**. The family this archive has been tracing through spellings turns out to have been living, in living memory, in the place the archive has been reading fourteenth-century deeds about.",
+    "h1": "1841 — Clapton, Ham, Berkeley",
+    "r1": [
+      [
+        "John Sanigar",
+        "35",
+        "",
+        "b. Gloucestershire"
+      ],
+      [
+        "Anne Sanigar",
+        "40",
+        "",
+        "b. Gloucestershire"
+      ],
+      [
+        "William Sanigar",
+        "6",
+        "twin",
+        "b. Gloucestershire"
+      ],
+      [
+        "John Sanigar",
+        "6",
+        "twin",
+        "b. Gloucestershire"
+      ],
+      [
+        "Mary Sanigar",
+        "3",
+        "",
+        "b. Gloucestershire"
+      ]
+    ],
+    "c1": "HO107/347, book 6, folio 3, page 1, schedule 761. Ages of adults are rounded down to the nearest five in 1841, so «35» covers a man of 37.",
+    "h2": "1851 — Village of Ham, Ham",
+    "r2": [
+      [
+        "Ann Sanigar",
+        "50",
+        "Head, widow",
+        "«Formly tailors wife» · b. Gloucestershire"
+      ],
+      [
+        "William Sanigar",
+        "16",
+        "Son",
+        "General labourer · b. Berkeley"
+      ],
+      [
+        "Mary Ann Sanigar",
+        "13",
+        "Daughter",
+        "Scholar · b. Berkeley"
+      ],
+      [
+        "Lydia Sanigar",
+        "81",
+        "MOTHER IN LAW, widow",
+        "«Formly labourers wife» · b. «Wooton under Edge»"
+      ]
+    ],
+    "c2": "HO107/1957, folio 561, page 13, schedule 46, Berkeley sub-district.",
+    "twinsHead": "The twins, and why the index looked wrong",
+    "twins": "The complete baptism sweep found **two Berkeley baptisms in 1835 to a father John — a John and a William** — and read as index entries alone that looks like the duplication this set is full of. It is not. The 1841 census has **William 6 and John 6 in the same household**. They are twins, and the two baptisms are two children.",
+    "chipTwins": "documented",
+    "whoHead": "Who the head of that house was",
+    "who": "Lydia is **mother-in-law** to the widowed Ann of 1851, so Ann's late husband was Lydia's son. The children William and Mary Ann were both **baptised at Berkeley naming a father JOHN** — William and John in 1835, Mary Ann in 1838. A **John Sanigar's death is registered in the Thornbury district in the first quarter of 1850**, which is why Ann is a widow in the March of 1851. The John Saniger baptised at Berkeley on 18 September 1803, Hannah's brother, was 46 in 1850. **Everything fits and nothing yet proves it**: the identification rests on a first name, a parish and an age, and the death certificate has not been ordered.",
+    "chipWho": "inferred",
+    "thenHead": "And what it does to the medieval work",
+    "then": "This archive has spent a fortnight on **Swonhungre**, the fourteenth-century form of the name, and on the hamlet of **Saniger** in Berkeley that the surname came from. It had no evidence that the modern family was still anywhere near it. Now it has two censuses putting them at **Clapton in Ham**, which is the next hamlet, in the same parish, in the same manor. **That is proximity, not descent** — no document joins the 1841 household to the 1390 wardship deed, and this archive has already invented one family out of thin air this month. But it is the first time the two halves of the work have been in the same field."
   }
 }
