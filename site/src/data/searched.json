@@ -3231,6 +3231,14 @@
       "outcome": "yield",
       "got": "156 of the 158 name a father. The Berkeley children of John Saniger stand documented with their father named in the index — Ann 1798, William 1801, John 1803, Thomas 1808, beside Hannah Sanigor 1804. No Hannah under SANIGER between 1777 and 1817, which is now a read null rather than a guess. 33 of the 158 are duplicate entries (125 distinct name-year-place). No Awre, no Blakeney, nothing west of the Severn in 268 years.",
       "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975, fifteen spellings",
+      "what": "SANIGER, SANIGAR, SAINGER, SINEGAR, SINNEGAR, SYNAGER, SANNIGER, SANEGAR, SINNEGER, SYNIGAR, SANIGOR, SINAGER, SYNEGAR, SANIGAER, SENIGAR",
+      "when": "16 Sep 2026",
+      "outcome": "yield",
+      "got": "340 baptisms, 1565 to 1909, every entry of every spelling read. SYNEGAR, SANIGAER and SENIGAR returned nothing. Three results: SANIGOR, the form Hannah was baptised under, returns 4 in 437 years — one entry in eighty-five; the 44-year hole in SANIGER at Berkeley, 1632-1676, is filled by 26 SAINGER entries and is a spelling rather than a gap; and the -ANIG- forms sit in the Severn Vale while the -INEG- forms sit on the Cotswold scarp eight miles east, with different patriarchs. Written up at /spellings.",
+      "href": "/spellings"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

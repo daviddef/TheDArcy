@@ -915,11 +915,11 @@
     },
     {
       "n": 100,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
       "what": "Hannah under SINEGAR and SYNEGAR",
-      "note": "Of the three spellings that dominate the Berkeley registers — **SINNEGAR (92 entries), SANIGAR (74), SINEGAR (60)** — only SINNEGAR has been tried on the baptism set, with no result, and SANIGAR gave two Bristol entries of 1831. **SINEGAR and SYNEGAR have not been tried at all.** This archive's own correction 28 was caused by exactly this: a null published as «not found» when it meant «not found under the ten spellings I thought of»."
+      "note": "Of the three spellings that dominate the Berkeley registers — **SINNEGAR (92 entries), SANIGAR (74), SINEGAR (60)** — only SINNEGAR has been tried on the baptism set, with no result, and SANIGAR gave two Bristol entries of 1831. **SINEGAR and SYNEGAR have not been tried at all.** This archive's own correction 28 was caused by exactly this: a null published as «not found» when it meant «not found under the ten spellings I thought of».\n\n**Done 16 September, and widened.** Fifteen spellings were put to the set rather than two. SINEGAR returns 28 and SYNEGAR none; ten other forms were tried beside them, and 340 entries were read in all. Written up at **/spellings**, which is now the page any future null about this surname has to be graded against."
     },
     {
       "n": 101,
@@ -928,6 +928,22 @@
       "since": "2026-09-16",
       "what": "The 1804 «Jno Saniger» at Berkeley with no father indexed",
       "note": "The complete pass turned up one entry it cannot place: **Jno Saniger, Berkeley, 1804, father column empty** — the only Berkeley Saniger baptism in the whole 158 with no father named. Hannah Sanigor was baptised at Berkeley on 18 August 1804 and her brother Jno on 18 September 1803. Three readings: a second son born the same year as Hannah, a mis-indexed second copy of the 1803 entry, or a different family. **The register page for 1804 settles it in one look** and the archive has not looked."
+    },
+    {
+      "n": 102,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "what": "Put the fifteen spellings to the marriage and burial sets as well",
+      "note": "The spelling sweep was run on baptisms only. **England Marriages 1538-1973** and **England Deaths & Burials 1538-1991** take the same query, the same fifteen strings and the same `_page` pagination, and the baptism sweep has just shown what that method is worth: it found the 1632-1676 Berkeley «gap» was a spelling. Marriages would also test the FamilySearch tree's unsourced claim that **John Saniger married Lydia Jones at Berkeley in 1797**, which is the oldest open question on this archive's direct line."
+    },
+    {
+      "n": 104,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-16",
+      "what": "The Cotswold-scarp family — Abraham of Dursley and Daniel of Cam",
+      "note": "The sweep turned up a whole second family this archive has never written about: the **-INEG- spellings** cluster at **Dursley, Cam, Stinchcombe, North Nibley and Alderley** from 1648, with two clear patriarchs — **Abraham at Dursley**, children 1698-1720, and **Daniel at Cam**, children 1729-1760, eight of them. This archive's own Hannah lived as SINEGAR in Bristol. Whether the Vale and the scarp are one family or two is **not answered** by a baptism index, and the honest next step is the Dursley and Cam registers themselves, not more index work."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

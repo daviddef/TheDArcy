@@ -43,7 +43,14 @@ ALIASES = [
      # volume 6 returned nought and was nearly set aside, because J. H. Cooke
      # spells it Swanhunger throughout — and volume 6 is the article that
      # joins the medieval family to the later one.
-     "swanhunger", "swonhangre", "swanhangre"],
+     "swanhunger", "swonhangre", "swanhangre",
+     # Added 16 September 2026, after fifteen spellings were put to one
+     # baptism index and twelve returned entries. Eleven of the twelve
+     # were already here; SYNIGAR was not, and it is the oldest register
+     # form the sweep found — King's Stanley, 1591 to 1596, four children
+     # of a William, which is thirty years before the earliest Berkeley
+     # entry under any other spelling.
+     "synigar"],
     ["mulcahy", "mulchy", "mulchay", "mulcahey", "mulcahy"],
     ["blum", "blume", "bloom"],
     ["murdoch", "murdock", "murdo"],
