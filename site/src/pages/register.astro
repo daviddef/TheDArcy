@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
@@ -57,6 +58,10 @@ const pct = Math.round((reg.records / reg.entries) * 100);
   title="The Register"
   eyebrow={`${reg.entries} entries · ${reg.surnames} surnames`}
   dek="Every named individual this archive has found, from any source, with the source beside each one. This is the raw catch — not a family tree, and not all of it is this family.">
+
+<NameLists here="register" u={u} />
+
+
 
   <section class="blk">
     <p class="lede"><strong>{reg.entries}</strong> entries for <strong>{reg.distinct}</strong>{" "}

@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import Note from "../../components/Note.astro";
 import { u } from "../../lib/url.js";
 import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
@@ -20,6 +21,10 @@ const rows = people.map((p) => ({
   title="Every Name"
   eyebrow={`${d.counts.named} named in records · ${d.counts.ownPage} of them not in this family`}
   dek="The people this archive met in documents and never had anywhere to put: witnesses, constables, surgeons, convicts, clerks and comrades. They are in the record, and leaving them out would be editing it.">
+
+<NameLists here="who" u={u} />
+
+
 
   <section class="blk">
     <p class="lede">Two pages on this site already list people. <a href={u("/people/")}>The People</a>

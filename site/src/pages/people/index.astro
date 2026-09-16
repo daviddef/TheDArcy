@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import { u } from "../../lib/url.js";
 import FilterTable from "@daviddef/archive-kit/components/FilterTable.astro";
 import { people } from "../../lib/people.js";
@@ -32,6 +33,10 @@ const listed = [...people].sort((a, b) => {
   title="The People"
   eyebrow={`${people.length} named`}
   dek="Everybody this archive can name and publish, in one list — searchable by name, year, place, trade or family.">
+
+<NameLists here="people" u={u} />
+
+
 
   <section class="blk">
     <p class="lede">There are <strong>{people.length}</strong> people here.
