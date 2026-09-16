@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
+import Timeline from "@daviddef/archive-kit/components/Timeline.astro";
 import { u } from "../lib/url.js";
 import t from "../data/timeline.json";
 
@@ -13,6 +14,11 @@ const ordered = [...t.events].sort((a, b) => a.y - b.y);
 // to make room for four centuries of eight documents. They are in the legend instead.
 const barBands = t.bands.filter((b) => b.to > Y0);
 const earlyBands = t.bands.filter((b) => b.to <= Y0);
+const bandLabel = Object.fromEntries(t.bands.map((b) => [b.key, b.label]));
+const events = ordered.map((e) => ({
+  year: e.y, when: String(e.y), title: e.what,
+  kind: bandLabel[e.band] || e.band, href: e.href, big: !!e.key,
+}));
 ---
 <Base title={t.title} eyebrow={t.eyebrow} dek={t.dek}>
 
@@ -72,17 +78,7 @@ const earlyBands = t.bands.filter((b) => b.to <= Y0);
     <p class="dek">{ordered.length} events. The marked ones are the hinges — the moments after which
     this family is somewhere else, or someone else.</p>
 
-    <div style="margin-top:1.4rem;display:flex;flex-direction:column;gap:0">
-      {ordered.map((e) => (
-        <div class={`tlrow r-${e.band}${e.key ? " key" : ""}`}>
-          <span class="tly mono">{e.y}</span>
-          <span class="tlwhat">
-            {e.key ? <strong>{e.what}</strong> : e.what}
-            {e.href && <> <a href={u(e.href)}>→</a></>}
-          </span>
-        </div>
-      ))}
-    </div>
+    <Timeline events={events} u={u} />
   </section>
 
   <section class="blk" style="border-bottom:0">
