@@ -1040,6 +1040,30 @@
       "since": "2026-09-17",
       "what": "Re-open the South Leith marriage of 1747",
       "note": "The one marriage in the audit that could not be re-checked: **Joseph Ward and Marth Gairden, South Leith, 27 October 1747.** The record set «Scotland, Parish Marriages & Banns 1561-1893» would not resolve under any datasetname tried. It is probably sound — this archive's entry names the bride's father, **William Gairden**, and a result row never carries a father — but that is an argument and not a check. Find the set's real name from FindMyPast's A-Z of record sets and read the transcript."
+    },
+    {
+      "n": 117,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-17",
+      "what": "Order or read the ten non-Berkeley medieval documents",
+      "note": "The API gives references, not documents. **C 241/174/26 and C 131/202/27** (the £400 staple debt of 1385) are at Kew; **MS 3549/4, /20 and /187** are at Birmingham Archives in the Fletcher collection, which is where John Smyth's own papers ended up; **DE/M/95** is at Hertfordshire Archives; **E 40/12147** at Kew; **P/St.P and J/D/2(j)** at Bristol Archives. Birmingham and Hertfordshire have never been written to. **E 40 and C 241 are both classes this archive has never searched**, and both produced on the first ask."
+    },
+    {
+      "n": 118,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-17",
+      "what": "Re-run every old Discovery null through the API",
+      "note": "Two nulls fell on 17 September the moment the same question was asked through the API instead of the search box — the partition of 1347, and Peddington. **There are 37 Discovery rows in searched.json and several are nulls.** Each one should be put through `tools/discovery.py` before it is trusted, because a null typed into a box is a null about the box."
+    },
+    {
+      "n": 119,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-17",
+      "what": "Edward Sanniger, mariner of Chepstow, 1806",
+      "note": "Two records for one man, found in the surname sweep and never seen here before: **IR 26/352/152**, the Death Duty abstract of his will, proved November 1806, at Kew; and **LL/1806/24** at the **National Library of Wales**, the Llandaff probate itself. **Chepstow is directly across the Severn from Berkeley**, and a mariner is exactly how a Vale surname crosses water. Not claimed as kin — there is nothing joining him to this family yet."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

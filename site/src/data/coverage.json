@@ -496,6 +496,15 @@
       "verdict": "good",
       "note": "158 SANIGER entries read in full, 115 of them Berkeley, 156 of the 158 naming a father. The apparent hole at Berkeley from **1632 to 1676 is a spelling and not a gap** — SAINGER supplies 26 entries inside it. About one entry in five is a duplicate: 125 distinct name-year-place combinations in 158 rows.",
       "href": "/spellings"
+    },
+    {
+      "db": "TNA Discovery — the JSON API",
+      "where": "every repository Discovery indexes, not Kew alone",
+      "holds": "catalogue descriptions",
+      "span": "1100 to the present",
+      "verdict": "good",
+      "note": "`GET /API/search/records?sps.searchQuery=…` returns JSON with a count and a paged records array, and needs **no account, no key and no bot check** — which is the whole difference between a question and a measurement. Wrapped as `tools/discovery.py` on 17 September and control-tested against nonsense terms before its counts were used. It returns the CATALOGUE, not the documents: every description is a modern cataloguer's reading, and two of the best ones here carry the cataloguer's own «[Saniger?]» in brackets.",
+      "href": "/swonhungre"
     }
   ],
   "verdicts": {

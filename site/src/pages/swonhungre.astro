@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/swonhungre.json";
 ---
 <Base
@@ -390,6 +391,51 @@ import d from "../data/swonhungre.json";
     <Note style="margin-top:.8rem"><strong>{d.histories.thorp}</strong>
       {" "}<span class="chip doc">{d.histories.thorpChip}</span></Note>
     <p style="margin-top:1.1rem">{d.histories.thorpMeans}</p>
+  </Blk>
+
+  <Blk label={`Discovery, by API · ${d.tna.found}`} title={d.tna.head}>
+    <p class="lede" set:html={mdp(d.tna.lede)}></p>
+    <Note style="margin-top:1.2rem"><strong>{d.tna.ctlHead}.</strong>
+      <span set:html={mdp(d.tna.ctl)} />
+      {" "}<span class="chip doc">{d.tna.chipCtl}</span></Note>
+
+    <div class="grid two" style="margin-top:1.5rem">
+      <div>
+        <Scroll>
+          <table>
+            <thead><tr><th>Spelling</th><th class="m">Records</th></tr></thead>
+            <tbody>{d.tna.counts.map(([a, b]) => (
+              <tr style={b === "0" ? "opacity:.55" : ""}>
+                <td class="mono">{a}</td><td class="m">{b}</td></tr>))}</tbody>
+          </table>
+        </Scroll>
+      </div>
+      <div><p class="small" set:html={mdp(d.tna.countNote)}></p></div>
+    </div>
+
+    <h3 style="margin-top:1.8rem">The ten that are not Berkeley Castle</h3>
+    <div style="margin-top:1rem;display:flex;flex-direction:column;gap:1.2rem">
+      {d.tna.rows.map(([ref, when, held, what]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono"><strong>{ref}</strong></span>
+            <span class="small" style="color:var(--ink-3)"> · {when} · {held}</span></div>
+          <p style="margin-top:.4rem" set:html={mdp(what)}></p>
+        </div>
+      ))}
+    </div>
+    <p style="margin-top:.9rem"><span class="chip doc">{d.tna.chip}</span></p>
+
+    <Note style="border-left-width:3px;margin-top:1.4rem"><strong>{d.tna.whatHead}.</strong>
+      <span set:html={mdp(d.tna.what)} />
+      {" "}<span class="chip doc">{d.tna.chipWhat}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.tna.joinHead}.</strong>
+      <span set:html={mdp(d.tna.join)} />
+      {" "}<span class="chip lore">{d.tna.chipJoin}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.tna.closeHead}.</strong>
+      <span set:html={mdp(d.tna.close)} />
+      {" "}<span class="chip doc">{d.tna.chipClose}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.tna.careHead}.</strong>
+      <span set:html={mdp(d.tna.care)} /></Note>
   </Blk>
 
   <section class="blk" style="border-bottom:0">
