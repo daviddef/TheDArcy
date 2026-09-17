@@ -2973,9 +2973,8 @@
       "src": "Discovery, for JOHN DE WYKE and the Kingsholm interest",
       "what": "Alice's probable father, and the manor the Daubeney marriage brought in",
       "when": "15 Sep 2026",
-      "outcome": "null",
-      "ctl": "named",
-      "got": "Almost nothing, against a catalogue that returns 195 records for the surname and itemises the Berkeley muniments deed by deed. «de Wyke» with Berkeley and Hamme returns five records, of which the only new one is BCM/A/1/24/23 of 1321 — «Denise widow of Richard de Wyke… 6¼ a. pasture called Cobyeslese by Wyke, in Hamme». No John de Wyke, and no medieval Kingsholm manor records at all. The Wykes are in the witness lists from the 1260s onward; they are simply not the subject of surviving deeds.",
+      "outcome": "yield",
+      "got": "OVERTURNED 17 September. The query had been «de Wyke» beside Berkeley and Hamme; the phrase **«John de Wyke» in quotation marks returns 78 records**, and one of them is **BCM/A/1/24/297**: «Partition of the inheritance of JOHN DE WYKE **in HAMME** between John, Thomas and John as the sons and heirs of Joan Capel, ALICE DE SWONHONGRE and Agnes de Lorewyng», 14 March 1346. It is the Berkeley copy of DE/M/95 at Hertford, and unlike the Hertford copy it names whose inheritance was divided. Nothing was wrong with the catalogue or the reasoning — the phrase was wrong.",
       "href": "/swonhungre"
     },
     {
@@ -3377,6 +3376,14 @@
       "outcome": "null",
       "ctl": "named",
       "got": "All five return nothing, while SANIGER returns 71 and SANIGAR 44. Run because **SANIGAER returns exactly the same 44 as SANIGAR**, which looked like loose matching and is in fact one normalisation rule. The counts on this page can therefore be set beside each other. SANIGRE and SANNIGAR returning nothing also reproduces what this archive found by hand on 15 September.",
+      "href": "/swonhungre"
+    },
+    {
+      "src": "TNA Discovery — every published null of this archive's, re-run through the API",
+      "what": "Sneyd of Madeley · Wakefield of Bristol · D'Arcy wills in Kent · John de Wyke · Berkeley poor law · Portsea registers",
+      "when": "17 Sep 2026",
+      "outcome": "yield",
+      "got": "Six re-run. **One overturned**: John de Wyke, where the earlier query used the wrong phrase and missed the 1346 partition. **Three confirmed, and confirmed for the reason they gave**: «Sneyd» AND «Madeley» returns 15 and every one is Ralph Sneyd of Keele or Poor Law Union correspondence, not this family's deeds; Berkeley poor law returns only Quarter Sessions **bundle-level** descriptions of the shape `Q/SR/1811/C`, which is exactly the structural answer already published; and Portsea returns a hospital chapel register of 1919 and two Royal Artillery brigade registers, but no parish register for 1770-1800. Two others — Wakefield of Bristol and D'Arcy wills in Kent — cannot be re-tested by counting, because the original claim was that 232 hits contain nothing of this family, and that is a reading rather than a query.",
       "href": "/swonhungre"
     }
   ],

@@ -1051,11 +1051,11 @@
     },
     {
       "n": 118,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-17",
       "what": "Re-run every old Discovery null through the API",
-      "note": "Two nulls fell on 17 September the moment the same question was asked through the API instead of the search box — the partition of 1347, and Peddington. **There are 37 Discovery rows in searched.json and several are nulls.** Each one should be put through `tools/discovery.py` before it is trusted, because a null typed into a box is a null about the box."
+      "note": "Two nulls fell on 17 September the moment the same question was asked through the API instead of the search box — the partition of 1347, and Peddington. **There are 37 Discovery rows in searched.json and several are nulls.** Each one should be put through `tools/discovery.py` before it is trusted, because a null typed into a box is a null about the box.\n\n**Done 17 September. Six re-run: one overturned, three confirmed, two not testable by query.** The overturned one is the important one and the lesson is narrower than «the API is better»: the 1346 partition was missed because the old search asked for «de Wyke» beside two other words rather than for the phrase **«John de Wyke»**. The catalogue was fine. **A null carries the shape of the question that produced it**, and that is now true of a search box and an API equally."
     },
     {
       "n": 119,
@@ -1064,6 +1064,14 @@
       "since": "2026-09-17",
       "what": "Edward Sanniger, mariner of Chepstow, 1806",
       "note": "Two records for one man, found in the surname sweep and never seen here before: **IR 26/352/152**, the Death Duty abstract of his will, proved November 1806, at Kew; and **LL/1806/24** at the **National Library of Wales**, the Llandaff probate itself. **Chepstow is directly across the Severn from Berkeley**, and a mariner is exactly how a Vale surname crosses water. Not claimed as kin — there is nothing joining him to this family yet."
+    },
+    {
+      "n": 120,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-17",
+      "what": "The two Discovery nulls that a query cannot re-test",
+      "note": "«232 Wakefield-and-Bristol hits and not one is this family» and «no D'Arcy will for Kent between 1820 and 1860» are **readings, not queries**, so re-running them proves nothing. They can only be re-tested by reading the 232, which `tools/discovery.py` can now dump to a file in one call. Until someone does, they are the weakest nulls on the site — and they are about **three of the four British lines**."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

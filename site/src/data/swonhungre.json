@@ -793,6 +793,12 @@
         "An agreement among the Capell title deeds reciting a **purparty** made between **Joan Capel**, **ALICE DE SWONHONGRE** and **Agnes de Lorewynge** — and naming **THOMAS DE SWONHONGRE** as Alice's heir. **The three coheirs, named together.**"
       ],
       [
+        "BCM/A/1/24/297",
+        "14 March 1346",
+        "Berkeley Castle Muniments",
+        "**The same partition, kept at Berkeley** — and this copy says plainly what the Hertfordshire one only implies: «**Partition of the inheritance of JOHN DE WYKE in HAMME** between John, Thomas and John as the sons and heirs of Joan Capel, **Alice de Swonhongre** and Agnes de Lorewyng.»"
+      ],
+      [
         "MS 3549/4",
         "14th century",
         "Birmingham Archives",
@@ -840,6 +846,11 @@
     "close": "This archive searched Discovery for **«the partition of 1347»** — the earlier of the two Cooke names — and recorded a null. **It is DE/M/95, it is dated 1346, and it is in Hertfordshire** because the Capells kept it and their papers went with them. It searched for **the Serjeants of Old Court and for Peddington** and recorded a null: Peddington is in E 40/12147 of 1339 and in the Mallett inquisition of 1626. Neither null was wrong about the box it typed into. Both were wrong about the catalogue.",
     "chipClose": "documented",
     "careHead": "What a catalogue entry is",
-    "care": "Every line above is **a modern cataloguer's description of a document**, not the document. Two of them carry the cataloguer's own guess in square brackets — «Swannanger [Saniger?] in Glos.» at Kew, «[Saniger in Hinton]» at Gloucester — which is pleasing, because it is an independent reader making this archive's identification without being asked, and it is still a guess. **None of these has been read.** They are references to order, and that is what they are recorded as."
+    "care": "Every line above is **a modern cataloguer's description of a document**, not the document. Two of them carry the cataloguer's own guess in square brackets — «Swannanger [Saniger?] in Glos.» at Kew, «[Saniger in Hinton]» at Gloucester — which is pleasing, because it is an independent reader making this archive's identification without being asked, and it is still a guess. **None of these has been read.** They are references to order, and that is what they are recorded as.",
+    "twiceHead": "The same deed, in two counties, and only one of them says why",
+    "twice": "The partition survives twice over. **DE/M/95 at Hertford** names the three women and their heirs and stops. **BCM/A/1/24/297 at Berkeley** says whose inheritance was being divided: **JOHN DE WYKE's, in HAMME**. This archive had reasoned that Alice was one of three coheirs of John de Wyke; here is a cataloguer saying it outright, and naming the manor. **Ham is where Hannah Saniger's family were living in 1841 and 1851** — five hundred years later, in the same manor.",
+    "chipTwice": "documented",
+    "missHead": "And how it was missed",
+    "miss": "This archive searched Discovery for John de Wyke on 15 September and recorded a null: «almost nothing … «de Wyke» with Berkeley and Hamme returns five records». **The query was «de Wyke» with two other words. The record that mattered answers to «John de Wyke» in quotation marks**, which returns 78. Nothing was wrong with the catalogue and nothing was wrong with the reasoning. The phrase was wrong, and a null carries the shape of the question that produced it."
   }
 }
