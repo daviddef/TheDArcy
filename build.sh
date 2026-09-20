@@ -7,6 +7,31 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+# A build that is KILLED and a build that REFUSES look the same in a log, and
+# they are not the same thing at all. Several archives share this machine and
+# every one of them runs `astro build`; a stray `pkill -f "astro build"` or
+# `pkill -f build.sh` — this session ran the second of those twice on
+# 21 September 2026 — reaps every one of them. The SIGTERM lands inside a gate
+# chain, so the run exits non-zero AFTER several checks have already printed
+# `ok`, and the log reads like a clean run that failed on data at the end.
+# The Lerena session lost three verify runs to it and spent two rounds hunting
+# a fault in their own data.
+#
+# So say which it was, in the log, where the next reader will see it.
+# To stop this archive's build without touching anybody else's, use
+# scripts/stop-my-build.sh, which matches the absolute project path.
+on_exit() {
+  local code=$?
+  if [ "$code" -gt 128 ]; then
+    echo "EXIT=$code  KILLED by signal $((code - 128)) — this is NOT a gate refusing."
+  elif [ "$code" -ne 0 ]; then
+    echo "EXIT=$code  a step above refused. The last FAIL line is the reason."
+  else
+    echo "EXIT=0  every gate passed."
+  fi
+}
+trap on_exit EXIT
+
 echo "── data from the GEDCOM"
 python3 tools/build_site_data.py
 python3 tools/build_register.py          # also writes provenance.json
@@ -55,6 +80,13 @@ python3 tools/selftest.py
 # signposts — and three rows pointing at a REDIRECT instead of the page, and a
 # whole body of tax-record research (E 179, the hearth tax, the 1381 poll tax)
 # whose signposts pointed at a page that never mentioned any of it.
+# A refusal that nothing reads is a refusal the next session will overturn.
+# namefold-deny.json sat as an ORPHAN until 21 September 2026 — two folds this
+# archive had read and refused, with the reasons written out, and nothing on
+# earth consulting them. This is the reader.
+echo "── namefold check"
+python3 tools/check_namefold.py
+
 echo "── published check"
 python3 tools/check_published.py
 

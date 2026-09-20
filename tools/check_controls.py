@@ -27,7 +27,7 @@ untested when you are not is the harmless direction; the reverse is not.
   python3 tools/check_controls.py            # gate
   python3 tools/check_controls.py --list     # show the grandfathered rows
 """
-import os, sys, json
+import os, re, sys, json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SEARCHED = os.path.join(HERE, "..", "site", "src", "data", "searched.json")
@@ -63,6 +63,47 @@ def check_verdicts():
         if v not in vocab:
             bad.append(f"coverage row {r.get('db','?')[:44]!r} has verdict {v!r} — "
                        f"not one of " + ", ".join(sorted(vocab)))
+    return bad
+
+
+SPELLING = re.compile(
+    r"(in any spelling|any spelling|every spelling|all spellings"
+    r"|under (?:eight|nine|ten|eleven|twelve|fifteen|\w+) spellings)", re.I)
+
+
+def check_spelling_claims():
+    """A null that claims "every spelling" must have been asked without a list.
+
+    Written 21 September 2026, the day own error 40 was found. This archive had
+    published "None, in any spelling" for Sanigers at Chew Magna, with a control
+    that passed, and the parish register holds two of them — one of them under
+    SINEGAR, which was on the list. The same week, "Not found, in any spelling"
+    stood for eight days over a marriage indexed SANIGRE.
+
+    A list of spellings is a guess about a clerk and it cannot be complete: a
+    single wildcard sweep of eleven years of one county turned up two forms this
+    archive's own table did not hold. FindMyPast's surname box takes wildcards,
+    so on that site the claim can be made without the guess — and where it can
+    be, it must be. `S*N*G*R` at Chew Magna returns four records and two of them
+    are the name.
+
+    Scoped to FindMyPast because the claim is only checkable where wildcards
+    exist. A full-text read of a printed book really is every spelling, and
+    Rudder's index does not take an asterisk.
+    """
+    rows = json.load(open(SEARCHED, encoding="utf-8"))["rows"]
+    bad = []
+    for r in rows:
+        if not r.get("src", "").startswith("FindMyPast"):
+            continue
+        if r.get("outcome") not in ("null", "empty"):
+            continue
+        hay = f"{r.get('src','')} {r.get('what','')} {r.get('got','')}"
+        m = SPELLING.search(hay)
+        if m and "*" not in hay:
+            bad.append(f"{r.get('src','?')[:60]!r} ({r.get('when','?')}) claims "
+                       f"{m.group(0)!r} and names no wildcard — a spelling list "
+                       f"is a guess; ask it as S*N*G* and read what comes back")
     return bad
 
 
@@ -102,14 +143,22 @@ def main(argv):
     vbad = check_verdicts()
     for m in vbad:
         print(f"  FAIL  verdicts   {m}")
+    sbad = check_spelling_claims()
+    for m in sbad:
+        print(f"  FAIL  spellings  {m}")
 
-    if bad or vbad:
-        print(f"  FAIL  controls   {len(bad) + len(vbad)} row(s) fail the control rule")
+    if bad or vbad or sbad:
+        print(f"  FAIL  controls   {len(bad) + len(vbad) + len(sbad)} row(s) fail the control rule")
         return 1
     print(f"  ok    controls   {named} null(s) name a control, "
           f"{grand} grandfathered from before the rule")
     nv = len(json.load(open(COVERAGE, encoding="utf-8")).get("verdicts") or {})
     print(f"  ok    verdicts   every coverage row uses one of the {nv} declared verdicts")
+    nfmp = sum(1 for r in json.load(open(SEARCHED, encoding="utf-8"))["rows"]
+               if r.get("src", "").startswith("FindMyPast")
+               and r.get("outcome") in ("null", "empty"))
+    print(f"  ok    spellings  {nfmp} FindMyPast null(s) — none claims every "
+          f"spelling without a wildcard")
     return 0
 
 
