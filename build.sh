@@ -58,6 +58,17 @@ python3 tools/selftest.py
 echo "── published check"
 python3 tools/check_published.py
 
+# A reading this archive has WITHDRAWN, stated again as fact. The hazard is
+# peculiar to an archive that publishes its own errors: the retracted wording is
+# still in the building, on /corrections and in every dated log that recorded
+# it, and gets copied into new prose by somebody who read it without the
+# retraction around it. Quoted is not asserted — this archive's rule is that an
+# error stays on the page where it was made, so a retired phrase inside
+# guillemets is the rule working. Dated logs are exempt outright: they record
+# what was believed on a day and must never be edited when the belief changes.
+echo "── retired readings"
+python3 tools/check_retired.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent
