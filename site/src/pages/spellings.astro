@@ -15,9 +15,9 @@ const parts = [
 ];
 ---
 <Base
-  title="Fifteen Spellings"
+  title="Every Spelling of One Name"
   eyebrow={`One record set, every spelling · ${d.found}`}
-  dek="Three hundred and forty baptisms under twelve spellings of one surname — and the rarest of the twelve is the one this family used.">
+  dek={`${d.rows.reduce((a, r) => a + Number(r[1]), 0)} baptisms under ${d.rows.filter((r) => Number(r[1]) > 0).length} spellings of one surname — and the rarest of them is the one this family used.`}>
 
   <section class="blk">
     <p class="lede" set:html={mdp(d.lede)}></p>
@@ -39,6 +39,12 @@ const parts = [
     </Scroll>
     <p class="small" style="margin-top:1rem">Twelve spellings returned entries; three returned none.
     Every entry of every spelling was read.</p>
+  </Blk>
+
+  <Blk label="Recounted" title={d.completedHead}>
+    <p class="dek" set:html={mdp(d.completed)}></p>
+    <Note style="margin-top:1.2rem"><strong>{d.excludeHead}.</strong>
+      <span set:html={mdp(d.exclude)} /></Note>
   </Blk>
 
   <Blk label="What the table says" title="Five things, in order of how much they cost">

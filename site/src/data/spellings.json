@@ -1,6 +1,6 @@
 {
   "found": "16 September 2026",
-  "lede": "Fifteen spellings of this surname were put to one record set on 16 September 2026 — FindMyPast's **England Births & Baptisms 1538-1975**, every entry of every spelling read. Twelve of the fifteen returned something. Together they hold **340 baptisms** between **1565 and 1909**, and the shape they make is not the shape this archive had assumed.",
+  "lede": "**24 spellings** of this surname have been put to one record set — FindMyPast's **England Births & Baptisms 1538-1975** — searched nationally, every form asked the same way, every entry of every productive form read. **19 return something. Together they hold 371 baptisms between 1565 and 1909**, and the shape they make is not the shape this archive had assumed.",
   "set": "One record set, one county mostly, one index. The set is the FamilySearch transcription of English parish registers and bishops' transcripts, and it is neither complete nor free of duplication — this page counts index entries, not children. Its value here is that it names **the father's first name** for almost every entry, and that the same query can be run fifteen times with only the surname changed. That makes it a measuring instrument for spellings, which is a different job from finding a person.",
   "cols": [
     "Spelling",
@@ -14,85 +14,148 @@
       "SANIGER",
       "158",
       "Berkeley (115), Thornbury, Bristol, Stone, Tidenham, Dursley, St Botolph Aldgate",
-      "1571",
-      "1909"
+      "",
+      ""
     ],
     [
       "SANIGAR",
       "56",
       "Thornbury, Berkeley, Bristol, Dursley, St Botolph Aldgate",
-      "1573",
-      "1908"
+      "",
+      ""
     ],
     [
       "SAINGER",
       "30",
       "Berkeley (26), and four strays",
-      "1655",
-      "1858"
+      "",
+      ""
     ],
     [
       "SINEGAR",
       "28",
       "Dursley, Cam, Southwell (Notts), Bristol, Purton (Wilts)",
-      "1565",
-      "1892"
+      "",
+      ""
     ],
     [
       "SINNEGAR",
       "26",
       "Cam, Dursley, Alderley, Granby cum Sutton (Notts)",
-      "1648",
-      "1812"
+      "",
+      ""
     ],
     [
       "SYNAGER",
       "10",
       "Mortlake, Surrey (9); Elmore, Glos (1)",
-      "1590",
-      "1718"
+      "",
+      ""
     ],
     [
       "SANNIGER",
       "10",
       "Dursley, Berkeley, North Nibley, Stinchcombe, Frampton, Thornbury, Birmingham",
-      "1692",
-      "1854"
+      "",
+      ""
+    ],
+    [
+      "SANEGER",
+      "8",
+      "added 21 September",
+      "",
+      ""
     ],
     [
       "SANEGAR",
       "7",
       "Stinchcombe, King's Stanley, Cam, North Nibley, Westminster, Bristol",
-      "1628",
-      "1848"
+      "",
+      ""
+    ],
+    [
+      "SINIGER",
+      "7",
+      "added 21 September",
+      "",
+      ""
+    ],
+    [
+      "SINEGER",
+      "6",
+      "added 21 September",
+      "",
+      ""
     ],
     [
       "SINNEGER",
       "5",
       "Cam (4); Mortlake (1)",
-      "1668",
-      "1680"
+      "",
+      ""
     ],
     [
       "SYNIGAR",
       "5",
       "King's Stanley (4); Stroud (1)",
-      "1591",
-      "1631"
+      "",
+      ""
     ],
     [
       "SANIGOR",
       "4",
       "Berkeley (3); Upton Warren, Worcs (1)",
-      "1688",
-      "1804"
+      "",
+      ""
+    ],
+    [
+      "SANNEGAR",
+      "4",
+      "added 21 September",
+      "",
+      ""
+    ],
+    [
+      "SANIGEAR",
+      "3",
+      "added 21 September",
+      "",
+      ""
+    ],
+    [
+      "SINIGAR",
+      "2",
+      "added 21 September",
+      "",
+      ""
     ],
     [
       "SINAGER",
       "1",
       "Bristol",
-      "1855",
-      "1855"
+      "",
+      ""
+    ],
+    [
+      "SANNIGAR",
+      "1",
+      "added 21 September",
+      "",
+      ""
+    ],
+    [
+      "SANYGER",
+      "0",
+      "the 1608 muster only",
+      "",
+      ""
+    ],
+    [
+      "SYNIGER",
+      "0",
+      "the 1608 muster only",
+      "",
+      ""
     ],
     [
       "SYNEGAR",
@@ -190,5 +253,9 @@
     "chipJoin": "not claimed",
     "whyHead": "Why it matters to this archive and not only to that one",
     "why": "Hannah Saniger was baptised **SANIGOR at Berkeley**, a Vale form in a Vale parish, and by 1841 she was keeping house in Bristol as **SINEGAR** — a scarp form. Her brother is **Thomas Sinegar** of St Philip and Jacob. **Whoever was writing their surname in Bristol was using the other family's spelling**, and until this sweep this archive had no idea there was another family to borrow it from."
-  }
+  },
+  "completedHead": "A note on the number, which has moved once",
+  "completed": "This page first reported **340 baptisms across fifteen spellings, twelve of them productive**, on 17 September. That was accurate for the fifteen forms then tried. On **21 September** the remaining forms from this archive's own spelling table were put through the same query, bringing it to 24 tried and 371 baptisms. **The basis did not change and neither did any earlier count** — SANIGER is still 158, SANIGOR still 4. Only the number of questions asked changed, which is the only honest reason a total should move.",
+  "excludeHead": "Two forms deliberately left out",
+  "exclude": "**SINGER and SANGER.** They are in this archive's alias list and they return **127 and 40 in Gloucestershire alone** — because they are ordinary English surnames in their own right, not forms of this one. Counting them would drown the table in strangers, which is the opposite of what it is for."
 }

@@ -249,72 +249,80 @@
   ],
   "spellings": [
     [
-      "SINNEGAR",
-      92
+      "SANIGER",
+      158
     ],
     [
       "SANIGAR",
-      74
-    ],
-    [
-      "SINEGAR",
-      60
-    ],
-    [
-      "SANIGER",
-      58
-    ],
-    [
-      "SINIGAR",
-      23
+      56
     ],
     [
       "SAINGER",
-      19
+      30
     ],
     [
-      "SANNIGAR",
-      19
+      "SINEGAR",
+      28
     ],
     [
-      "SANEGAR",
-      18
+      "SINNEGAR",
+      26
     ],
     [
-      "SINIGER",
-      16
-    ],
-    [
-      "SINGER",
-      16
-    ],
-    [
-      "SANIGEAR",
-      15
-    ],
-    [
-      "SANNIGER",
-      12
-    ],
-    [
-      "SANNEGAR",
-      12
-    ],
-    [
-      "SANGER",
+      "SYNAGER",
       10
     ],
     [
-      "SINAGER",
-      8
+      "SANNIGER",
+      10
     ],
     [
       "SANEGER",
+      8
+    ],
+    [
+      "SANEGAR",
+      7
+    ],
+    [
+      "SINIGER",
       7
     ],
     [
       "SINEGER",
-      7
+      6
+    ],
+    [
+      "SINNEGER",
+      5
+    ],
+    [
+      "SYNIGAR",
+      5
+    ],
+    [
+      "SANIGOR",
+      4
+    ],
+    [
+      "SANNEGAR",
+      4
+    ],
+    [
+      "SANIGEAR",
+      3
+    ],
+    [
+      "SINIGAR",
+      2
+    ],
+    [
+      "SINAGER",
+      1
+    ],
+    [
+      "SANNIGAR",
+      1
     ],
     [
       "SANYGER",
@@ -322,6 +330,18 @@
     ],
     [
       "SYNIGER",
+      0
+    ],
+    [
+      "SYNEGAR",
+      0
+    ],
+    [
+      "SANIGAER",
+      0
+    ],
+    [
+      "SENIGAR",
       0
     ]
   ],
@@ -485,7 +505,7 @@
       1840
     ]
   ],
-  "spellingsNote": "Counts are entries in the parish registers read for this archive. SANYGER and SYNIGER carry a count of zero because they appear in no register here — they are the 1608 muster's forms, found in Smyth's Men and Armour and nowhere since. They are listed so that the next search for this surname starts with every form in this table rather than only the ones with a count. TWO MORE BELONG HERE AND ARE NOT IN IT — SANIGOR, which is how Hannah Saniger was baptised, and SYNIGAR, the oldest register form found — both discovered after this table was counted and both counted against a different record set, so they are named beside it rather than added to it.",
+  "spellingsNote": "**One basis, stated: England Births & Baptisms 1538-1975 on FindMyPast, searched nationally, every form asked the same way.** 24 spellings tried, 19 productive, 371 baptisms between 1565 and 1909.\n\nThis replaces a table of nineteen forms whose counts were entries in the parish registers read for this archive — a narrower and differently-drawn source. **Those counts were not wrong; they were not comparable**, which is why SANIGOR and SYNIGAR could not simply be added to them when they were found. The old table is kept in the data as `spellingsOld` rather than deleted.\n\n**SANYGER and SYNIGER still count nought**, which is the finding that survived the change of basis: they are the 1608 muster's forms, in Smyth's Men and Armour and in no register anywhere. **SINGER and SANGER are excluded** — 127 and 40 in Gloucestershire alone, and they are ordinary English surnames rather than forms of this one; counting them would drown the table in strangers.",
   "grsi": {
     "head": "Twenty-four deaths, with the register and the entry number",
     "lede": "The Gloucestershire Registration Service and the Gloucestershire Family History Society between them have indexed the registrars' own books and put them online free. It is not the GRO index: it gives the LOCAL register and entry number, which is what a certificate is ordered against.",
@@ -1012,5 +1032,83 @@
     "controlHead": "And the control that made the null meaningful",
     "control": "FreeBMD's first three answers here were NOUGHT, and all three were false. A search across 1837–1875 returns nothing at all — the form silently refuses a range that wide and redisplays itself, which looks exactly like an empty result. The control was CHARLOTTE DARCY, whose death this archive already holds from the GRO index: searched for 1869 alone she comes back «Darcy Charlotte 73 Brighton 2b 152», the reference this site already carried. Narrowing the Sanigar search to three years then produced all three deaths at once.",
     "controlChip": "lore"
-  }
+  },
+  "spellingsOld": [
+    [
+      "SINNEGAR",
+      92
+    ],
+    [
+      "SANIGAR",
+      74
+    ],
+    [
+      "SINEGAR",
+      60
+    ],
+    [
+      "SANIGER",
+      58
+    ],
+    [
+      "SINIGAR",
+      23
+    ],
+    [
+      "SAINGER",
+      19
+    ],
+    [
+      "SANNIGAR",
+      19
+    ],
+    [
+      "SANEGAR",
+      18
+    ],
+    [
+      "SINIGER",
+      16
+    ],
+    [
+      "SINGER",
+      16
+    ],
+    [
+      "SANIGEAR",
+      15
+    ],
+    [
+      "SANNIGER",
+      12
+    ],
+    [
+      "SANNEGAR",
+      12
+    ],
+    [
+      "SANGER",
+      10
+    ],
+    [
+      "SINAGER",
+      8
+    ],
+    [
+      "SANEGER",
+      7
+    ],
+    [
+      "SINEGER",
+      7
+    ],
+    [
+      "SANYGER",
+      0
+    ],
+    [
+      "SYNIGER",
+      0
+    ]
+  ]
 }

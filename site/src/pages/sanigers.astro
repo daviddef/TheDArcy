@@ -194,23 +194,20 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
   </section>
 
   <Blk label={`${d.spellings.length}, not eleven`} title="How this name is actually spelled">
-    <p>The <a href={u("/berkeley/")}>Berkeley page</a> lists eleven spellings. Reading all
-    {c.records} records gives <strong>{d.spellings.filter(([, n]) => n > 0).length}</strong> with
-    three or more occurrences, and the
-    commonest is not the one the family uses. Two more came from outside the registers
-    altogether — SANYGER and SYNIGER, carried by five of the eleven men in the
-    <a href={u("/saniger-1608/")}>muster of 1608</a> and by nobody since. They are shown with a
-    count of nought because that is what they have here: {d.spellings.length} forms to search,
-    {d.spellings.filter(([, n]) => n > 0).length} to count.</p>
-    <Note style="margin-top:1.1rem" tight><strong>And two that belong here and are not in it.</strong>
-    <strong>SANIGOR</strong> — the spelling Hannah Saniger was baptised under at Berkeley in 1804,
-    and the reason this archive declared her baptism missing twice before finding it — and
-    <strong>SYNIGAR</strong>, four children of a William at King's Stanley between 1591 and 1596,
-    which are the oldest register entries this surname produces anywhere. Both were found after this
-    table was counted, and both are in the search alias list already. They are named here rather
-    than added because the counts in this table are entries in the registers read for this archive,
-    and the two new forms were counted against a different set — putting them in the column would
-    mix two bases quietly. <a href={u("/spellings/")}>The fifteen-spelling sweep →</a></Note>
+    <p>The <a href={u("/berkeley/")}>Berkeley page</a> lists eleven spellings. Asked of one record
+    set on one basis — <strong>England Births &amp; Baptisms 1538-1975</strong>, searched nationally,
+    every form put the same way — this name is spelled <strong>{d.spellings.length}</strong> ways,
+    of which <strong>{d.spellings.filter(([, n]) => n > 0).length}</strong> return anything at all.
+    Together they hold <strong>{d.spellings.reduce((a, [, n]) => a + n, 0)}</strong> baptisms between
+    1565 and 1909, and the commonest is the one the family uses.</p>
+    <Note tight style="margin-top:1rem">
+      <strong>This table was recounted on 21 September 2026 and its numbers changed.</strong> It
+      previously held nineteen forms counted as entries in the parish registers read for this
+      archive — a narrower source, drawn differently. <strong>Those counts were not wrong. They were
+      not comparable</strong>, which is why SANIGOR and SYNIGAR could not simply be added to them
+      when they were found. The old table is kept in the data rather than deleted.
+      <a href={u("/spellings/")}>The sweep this is drawn from →</a>
+    </Note>
     <Scroll>
       <table>
         <thead><tr><th>Spelling</th><th class="m">Occurrences</th></tr></thead>
@@ -218,7 +215,9 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
           <tr><td class="mono">{s}</td><td class="m">{n}</td>
               <td>{s === "SANIGER" && <span class="chip inf">the form this archive uses</span>}
                   {s === "SINNEGAR" && <span class="chip doc">the commonest in the registers</span>}
-                  {n === 0 && <span class="chip lore">1608 only — not in any register here</span>}</td></tr>))}</tbody>
+                  {n === 0 && (["SANYGER", "SYNIGER"].includes(s)
+                    ? <span class="chip lore">the 1608 muster's form — in no register anywhere</span>
+                    : <span class="chip sup">tried, and returns nothing</span>)}</td></tr>))}</tbody>
       </table>
     </Scroll>
     <p class="small" style="margin-top:1rem">All {d.spellings.length} are now folded together by this site's own
