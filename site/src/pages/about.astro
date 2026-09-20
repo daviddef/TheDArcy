@@ -16,7 +16,7 @@ import living from "../data/living.json";
    holds must not be the one page whose figures go stale. */
 const out = (o) => searched.rows.filter((r) => r.outcome === o).length;
 const HOLDS = [
-  [people.length, "people published", `of a tree that also holds ${living.counts.living.toLocaleString()} living people, none of them here`, "/people"],
+  [people.length, "people published", `of a tree that also holds ${living.counts.living.toLocaleString()} living people, ${living.named.length} of whom are named here on purpose`, "/people"],
   [dossiers.counts.named, "named in records", `including ${dossiers.counts.ownPage} who are not relatives at all`, "/who"],
   [reg.entries, "register entries", `${reg.records} from a document, ${reg.tree} from the tree`, "/register"],
   [searched.rows.length, "sources read", `${out("yield")} yields, ${out("null")} nulls, ${out("blocked")} unreachable`, "/searched"],
