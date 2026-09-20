@@ -3495,6 +3495,22 @@
       "outcome": "yield",
       "got": "**One.** A year filter combined with `county` returns zero on the census sets — Catherine Smith born about 1789 in Sussex returns nothing, which cannot be true. **Two.** `yearofrecord` is thrown away by the Army Lists: asking for 1790 returns rows from 1673 to 1826 and no 1790. **Three.** Results render asynchronously, so a page read a moment early gives a zero indistinguishable from a real one. The rule here tightens: a control must be **run in the same session and return rows**, not merely exist. **Re-tested the same evening:** the census control still returns zero on a fifteen-second wait while the baptism control returns twenty, so faults one and three are genuinely different things — one is a parameter the search discards, the other is a page read too early.",
       "href": "/behind-the-paywall"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, Chatham 1806",
+      "what": "The unattributed D'Arcy marriage at Chatham St Mary in 1806",
+      "when": "20 Sep 2026",
+      "outcome": "yield",
+      "got": "**It is not unattributed and it is not new.** One result: **Margaret Maria Isabella D'Arcy to John Maddock**, Chatham, 1806 — the marriage this archive already holds in full from FreeREG and from two newspapers, to John Maddock Jones of Penybryn, Ruabon. The «record at the edge of the family» was this family's own record appearing in a second index under a shorter form of the groom's name. One loose end closed by de-duplication rather than discovery.",
+      "href": "/chatham"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975",
+      "what": "A Robert D'Arcy baptised about 1770, said to be at St George, Hanover Square",
+      "when": "20 Sep 2026",
+      "outcome": "blocked",
+      "got": "Could not be re-found, and the reason is the index rather than the man. D'ARCY returns nothing in this set; DARCY returns rows — **but their «Baptism year» column is empty and they carry a birth year instead**, so `yearofbaptism` filters them all out whatever the years. Switching to `yearofbirth` returns nothing either, for any DARCY born between 1755 and 1785. Recorded as blocked: **this set cannot be asked the question in the shape the question needs.**",
+      "href": "/behind-the-paywall"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

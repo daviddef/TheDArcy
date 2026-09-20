@@ -162,6 +162,11 @@
         "A page read a moment too early",
         "The identical query for **COTTON baptisms in Gloucestershire** returns **nothing** sorted ascending and a page of results sorted descending. Results render asynchronously, so a zero read too soon is **indistinguishable from a real zero** — and nothing on the page says which it was.",
         "Catherine Cotton's origins"
+      ],
+      [
+        "`yearofbaptism` against an entry indexed by birth",
+        "**England Births & Baptisms holds two kinds of entry** — some with a baptism year, some with only a birth year — and the filters are not interchangeable. DARCY unfiltered returns rows dated 1666, 1707 and 1708 whose **«Baptism year» column is empty**, so every `yearofbaptism` search against that surname returns nothing whatever the years.",
+        "the 1770 Robert"
       ]
     ],
     "chip": "documented",
