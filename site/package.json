@@ -6,17 +6,23 @@
   "scripts": {
     "dev": "astro dev --port 4323",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run atlas && astro build && npm run sitemap && npm run check:living && npm run check:living:tree && npm run check:kit && npm run check:worklist && npm run check:covers",
+    "build": "npm run atlas && astro build && npm run sitemap && npm run check:living && npm run check:living:tree && npm run check:templates && npm run check:kit && npm run check:worklist && npm run check:covers",
     "preview": "astro preview --port 4323",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
     "check:kit": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkarchive.py --dist dist",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
     "check:living": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --policy named-bare",
     "check:living:tree": "python3 ../tools/check_living.py --dist dist",
-    "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root ."
+    "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
+    "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#145506fb35cba1a0ecdf4b8c529f8ee1c9c76c85",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#4400ea8eec9960bb3cfb639a3958c786630176aa",
     "astro": "^5.18.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^26.6.2",
+    "typescript": "^5.9.3"
   }
 }

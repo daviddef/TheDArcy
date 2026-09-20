@@ -759,10 +759,10 @@
     {
       "n": 84,
       "what": "The FindMyPast campaign — a month's subscription, and a list to spend it on",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "David took out a **full month's FindMyPast subscription on 16 September 2026** and asked this archive to work through it. This is the parent row; the children below are the targets, drawn from what this archive has already said a subscription would settle rather than from browsing.\n\n**It will be targeted searching, not bulk downloading.** FindMyPast's terms prohibit systematic harvesting, a scraper would get the account suspended, and the value here is in about fifteen specific questions rather than in volume. Every result goes to [/searched](/searched/) with its control, the same as a free source.\n\n**Thirteen existing FMP rows are already on this site marked `null` or `empty`.** Those searches ran without a subscription and several were limited by it; each should be re-run and either confirmed or corrected."
+      "note": "David took out a **full month's FindMyPast subscription on 16 September 2026** and asked this archive to work through it. This is the parent row; the children below are the targets, drawn from what this archive has already said a subscription would settle rather than from browsing.\n\n**It will be targeted searching, not bulk downloading.** FindMyPast's terms prohibit systematic harvesting, a scraper would get the account suspended, and the value here is in about fifteen specific questions rather than in volume. Every result goes to [/searched](/searched/) with its control, the same as a free source.\n\n**Thirteen existing FMP rows are already on this site marked `null` or `empty`.** Those searches ran without a subscription and several were limited by it; each should be re-run and either confirmed or corrected.\n\n**Closed 20 September as a parent row.** Its children have been worked: the complete SANIGER baptism pass, fifteen spellings across three record sets, the marriage audit at five of five, the Army Lists, the Ham and Clapton censuses, Lydia's death and birthplace, and the Berkeley marriage null with its controls. What remains of the campaign — the Portsea and Barbados registers, the RG 4 Bristol chapels, the British Newspaper Archive — are **separate rows and separate obstacles**, and carrying them under one parent was hiding that they fail for different reasons."
     },
     {
       "n": 85,
@@ -840,7 +840,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "Already used once without one — the Wiltshire notice of George Pitt D'Arcy's marriage, and the Kentish Gazette death notice that made Constantine Robert's son. With full access: Robert D'Arcy's death at Chatham in May 1827, Joseph's at Lymington in 1848, the Le Havre deaths of 1843, and the Brighton sisters."
+      "note": "Already used once without one — the Wiltshire notice of George Pitt D'Arcy's marriage, and the Kentish Gazette death notice that made Constantine Robert's son. With full access: Robert D'Arcy's death at Chatham in May 1827, Joseph's at Lymington in 1848, the Le Havre deaths of 1843, and the Brighton sisters.\n\n**20 September: attempted and deferred.** FindMyPast's newspaper search is a separate interface from its record search and would not render in this session — the page returned an empty document twice. The targets are unchanged and specific: Robert D'Arcy's death at Chatham in May 1827, Joseph's at Lymington in 1848, the Le Havre deaths of 1843, and notices for the three Brighton sisters. **Try in a fresh session, and control every null with a search that returns something.**"
     },
     {
       "n": 92,
@@ -856,7 +856,7 @@
       "state": "next",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "Errands 6 and 45. Church of Ireland registers for County Wicklow, Betham's marriage licence abstracts, and the Limerick line — Atkinson, Cole, Creech, Kent, Bowen, Pennefather. **irishgenealogy.ie is behind a bot check this archive will not pass**, and the National Library's Catholic registers are structurally the wrong denomination for these families. FindMyPast's Irish sets are the only route left.",
+      "note": "Errands 6 and 45. Church of Ireland registers for County Wicklow, Betham's marriage licence abstracts, and the Limerick line — Atkinson, Cole, Creech, Kent, Bowen, Pennefather. **irishgenealogy.ie is behind a bot check this archive will not pass**, and the National Library's Catholic registers are structurally the wrong denomination for these families. FindMyPast's Irish sets are the only route left.\n\n**20 September: the Wicklow half is answered.** irishgenealogy.ie opened, and its church records **do not cover Co. Wicklow** — controlled, since Smith returns nothing there and pages of results for Dublin. The RCB Library's holdings list was read and gave **25 Wicklow parishes with marriage registers covering 1819**. What is left of this row is **Limerick**, which needs the letter to Helen Crawford Walsh.",
       "covers": [
         "err:err/surviving-church-of-ireland--a90422",
         "err:err/the-limerick-line-in-church--8c7866"
