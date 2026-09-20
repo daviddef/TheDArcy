@@ -263,5 +263,35 @@
     "chipWho": "inferred",
     "thenHead": "And what it does to the medieval work",
     "then": "This archive has spent a fortnight on **Swonhungre**, the fourteenth-century form of the name, and on the hamlet of **Saniger** in Berkeley that the surname came from. It had no evidence that the modern family was still anywhere near it. Now it has two censuses putting them at **Clapton in Ham**, which is the next hamlet, in the same parish, in the same manor. **That is proximity, not descent** — no document joins the 1841 household to the 1390 wardship deed, and this archive has already invented one family out of thin air this month. But it is the first time the two halves of the work have been in the same field."
+  },
+  "lydiaHunt": {
+    "found": "20 September 2026",
+    "head": "Where Lydia did not marry",
+    "lede": "JONES was disputed on 16 September, when the marriage the whole internet cites turned out to belong to a **Sawyer**. That left a question rather than an answer: **where did John Saniger marry, and to whom?** Three days of the obvious tests have not found it, and the shape of the failure is now worth as much as a find would have been.",
+    "steps": [
+      [
+        "The neighbours at Ham, 1851",
+        "Her household's transcript identifiers run in sequence, so the street can be walked either side of her door. **Samuel and Mary Ann Nelmes and their baby** on one side; **Stephen Smith, farmer, 57, born Berkeley**, his wife Sarah and three servants on the other. No relative of Lydia's is named in either, and there is no Jones in the village.",
+        "null"
+      ],
+      [
+        "Her own parish",
+        "She was born at Wotton-under-Edge, and a bride usually married at home. **One Lydia marries a «Jno.» at Wotton-under-Edge in the whole window** — Lydia Howell, 2 April 1794. The result row shows the groom's forename and stops there. The transcript gives his surname: **COSSENS**.",
+        "null"
+      ],
+      [
+        "Every spelling, the whole country",
+        "**No SANIGER, SANIGAR, SAINGER, SANIGOR, SANEGAR, SINEGAR, SINNEGAR or SANNIGER marries anywhere in England between 1790 and 1802** in England Marriages 1538-1973. The last before the gap is John Saniger to Elizabeth at Thornbury in 1790; the next after it is William Saniger to Mary at Thornbury in 1803.",
+        "null"
+      ]
+    ],
+    "ctlHead": "And the controls hold, which is what makes this worth publishing",
+    "ctl": "A null about a parish is worthless unless the parish is in the book. **Berkeley has 272 marriages indexed for 1793-1803. Wotton-under-Edge has ten full pages of them for 1792-1802**, and not one carries any spelling of this surname. Both of the two parishes where this marriage should be are well covered, and it is in neither.",
+    "chipCtl": "documented",
+    "meansHead": "What that leaves",
+    "means": "Four readings, and this archive cannot yet choose between them. They married **somewhere else** — a licence could take them to any parish in the diocese. They married in a register **this transcription does not include**, which is an ordinary gap and not a mystery. The entry exists but is **indexed under a spelling not yet tried** — nine have been, and the surname has run to at least fifteen. Or **they did not marry at all**, which the archive raises because a woman keeping the surname and dying under it does not by itself prove a wedding.",
+    "chipMeans": "not claimed",
+    "nextHead": "What would settle it",
+    "next": "**The Berkeley marriage register itself, 1795 to 1799, read by eye rather than through an index** — the same answer the RCB Library gave about Wicklow, and for the same reason. Failing that, the Gloucester diocesan **marriage licence bonds and allegations**, which survive separately from the registers and would name both parties, their parishes and often her father."
   }
 }

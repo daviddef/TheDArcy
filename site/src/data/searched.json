@@ -3385,6 +3385,33 @@
       "outcome": "yield",
       "got": "Six re-run. **One overturned**: John de Wyke, where the earlier query used the wrong phrase and missed the 1346 partition. **Three confirmed, and confirmed for the reason they gave**: «Sneyd» AND «Madeley» returns 15 and every one is Ralph Sneyd of Keele or Poor Law Union correspondence, not this family's deeds; Berkeley poor law returns only Quarter Sessions **bundle-level** descriptions of the shape `Q/SR/1811/C`, which is exactly the structural answer already published; and Portsea returns a hospital chapel register of 1919 and two Royal Artillery brigade registers, but no parish register for 1770-1800. Two others — Wakefield of Bristol and D'Arcy wills in Kent — cannot be re-tested by counting, because the original claim was that 232 hits contain nothing of this family, and that is a reading rather than a query.",
       "href": "/swonhungre"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, eight spellings, whole country",
+      "what": "Any Saniger marrying anywhere in England, 1790-1802",
+      "when": "20 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "None. The last before the gap is John Saniger to Elizabeth at Thornbury in 1790; the next after it is William Saniger to Mary at Thornbury in 1803. **Controlled twice on the parishes that matter: Berkeley has 272 marriages indexed for 1793-1803, and Wotton-under-Edge — Lydia's birthplace — has ten full pages for 1792-1802.** Both are well covered and neither holds this marriage.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973",
+      "what": "A Lydia marrying a John at Wotton-under-Edge, her own parish, 1792-1802",
+      "when": "20 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "One candidate in eleven years — **Lydia Howell, 2 April 1794, spouse «Jno.»** — and the transcript gives his surname as **COSSENS**. Not this family. Found and dismissed by opening the transcript, which is the habit this archive adopted on 16 September after the same result row produced a false marriage for Lydia Jones.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — 1851 census, the Village of Ham read as a street",
+      "what": "Any relative of Lydia Sanigar among her neighbours",
+      "when": "20 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "None. Household transcript identifiers run in sequence, so the neighbours either side can be read off: **Samuel and Mary Ann Nelmes with their infant daughter** on one side, **Stephen Smith, farmer, 57, born Berkeley, with his wife and three servants** on the other. No stated relationship to Lydia and no Jones in the village. The method works — it simply did not answer this.",
+      "href": "/hannah-baptism"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
