@@ -3478,6 +3478,22 @@
       "outcome": "yield",
       "got": "**Confirmed, and the audit is now complete at five of five.** The set would not resolve under any `datasetname` on 17 September; it resolves through a cross-set search with `place=south+leith` and no dataset. The transcript gives spouse's last name **GAIRDEN** and a field the result row never shows — **spouse's father, WILLIAM GAIRDEN**. The argument made for this record three days ago, that somebody must have read past the row because a row never carries a father, was right; it is now checked instead.",
       "href": "/behind-the-paywall"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975",
+      "what": "Catherine Cotton's baptism — she married Thomas Saniger at Berkeley in 1769",
+      "when": "20 Sep 2026",
+      "outcome": "blocked",
+      "got": "INCONCLUSIVE, and recorded as blocked rather than null because the instrument could not be trusted. Two Catherine Cottons show in Gloucestershire — Newnham 1701 and Clifton 1836 — and none in the 1740s, which is where a woman marrying in 1769 should be. But **the same COTTON query returned nothing sorted ascending and a page of results sorted descending**, so a zero here is not evidence of anything. She is the mother of John Saniger and therefore in the direct line; she deserves a search that can fail.",
+      "href": "/behind-the-paywall"
+    },
+    {
+      "src": "FindMyPast — three ways the site returns a meaningless zero",
+      "what": "A control on the instrument itself, after three suspicious nulls in one day",
+      "when": "20 Sep 2026",
+      "outcome": "yield",
+      "got": "**One.** A year filter combined with `county` returns zero on the census sets — Catherine Smith born about 1789 in Sussex returns nothing, which cannot be true. **Two.** `yearofrecord` is thrown away by the Army Lists: asking for 1790 returns rows from 1673 to 1826 and no 1790. **Three.** Results render asynchronously, so a page read a moment early gives a zero indistinguishable from a real one. The rule here tightens: a control must be **run in the same session and return rows**, not merely exist.",
+      "href": "/behind-the-paywall"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

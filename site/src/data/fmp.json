@@ -142,5 +142,33 @@
     "defect": "The Portsea marriage was the useful test, because **Hampshire Marriages is a different collection with a different owner** — the Hampshire Genealogical Society — and its result row has exactly the same columns: *First name · Last name · Marriage year · **Spouse's first name(s)** · Place*. No surname. So a reader who searches a bride by her forename, matches a groom's forename, a year and a parish, and stops at the results page, will build a false marriage on any FindMyPast set they use. **That is how «Lydia Jones» got into every tree on the internet**, and the only defence is the extra click.",
     "smallHead": "And one small thing worth knowing",
     "small": "The founding marriage of this whole line is indexed under **DARCY**, not D'Arcy. The archive's alias list already carries both, which is the only reason the search found it at all."
+  },
+  "instrument": {
+    "found": "20 September 2026",
+    "head": "Three ways this site returns a zero that means nothing",
+    "lede": "A null is only a fact about the world if the search could have found the thing it did not find. Over 20 September this archive caught FindMyPast returning **three different kinds of meaningless zero**, each of which had already been published here as a finding or was about to be. They are written down together because the next session will meet them again.",
+    "rows": [
+      [
+        "A year filter combined with `county`",
+        "**CATHERINE SMITH born about 1789 in Sussex returns nothing** in the 1861 census, which cannot be true of any English county. The combination silently returns zero on the census sets. Three searches for the Brighton sisters had been built on it.",
+        "the sisters, 1861"
+      ],
+      [
+        "`yearofrecord` on the Army Lists",
+        "Asking for SMITH in **1790** returns twenty rows dated 1673, 1678, 1689, 1690, 1692, 1693, 1704, 1707, 1709, 1781, 1802, 1803 and 1826 — **and no 1790 at all**. The parameter is thrown away and the search answers a different question.",
+        "Robert D'Arcy's «blank»"
+      ],
+      [
+        "A page read a moment too early",
+        "The identical query for **COTTON baptisms in Gloucestershire** returns **nothing** sorted ascending and a page of results sorted descending. Results render asynchronously, so a zero read too soon is **indistinguishable from a real zero** — and nothing on the page says which it was.",
+        "Catherine Cotton's origins"
+      ]
+    ],
+    "chip": "documented",
+    "ruleHead": "So the rule tightens",
+    "rule": "This archive already required every null to name a control. That is not enough for a site read through a browser. **A control has to be run in the same session, through the same query shape, and return something — not merely exist as a principle.** A null with a control that was itself a zero is not a control; it is two zeros and a hope. Every FindMyPast null recorded here on 20 September carries a control that returned rows.",
+    "chipRule": "documented",
+    "costHead": "What it cost today",
+    "cost": "**Three findings were withdrawn before publication and one after.** The sisters' 1861 absence was reclassified from «null» to «blocked — the question was never asked». Robert's Army List gap is now stated as possibly the publisher's rather than the man's. Catherine Cotton's origins were about to be published as a controlled null and are recorded as **inconclusive** instead, because the instrument could not be trusted to say so. **An inconclusive is worth more than a null that is wrong.**"
   }
 }
