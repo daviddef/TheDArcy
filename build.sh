@@ -47,6 +47,17 @@ python3 tools/check_links.py
 echo "── self-test"
 python3 tools/selftest.py
 
+# Has the research reached the site? Three ways it does not: a data file no page
+# imports, a signpost pointing at a page that is not built, and a signpost
+# pointing at a page that says nothing about its subject. The third is a warning
+# because prose may say a thing in its own words; the first two are failures.
+# Run for the first time on 20 September 2026 it found no orphans and no broken
+# signposts — and three rows pointing at a REDIRECT instead of the page, and a
+# whole body of tax-record research (E 179, the hearth tax, the 1381 poll tax)
+# whose signposts pointed at a page that never mentioned any of it.
+echo "── published check"
+python3 tools/check_published.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent

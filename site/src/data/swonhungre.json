@@ -854,5 +854,75 @@
     "miss": "This archive searched Discovery for John de Wyke on 15 September and recorded a null: «almost nothing … «de Wyke» with Berkeley and Hamme returns five records». **The query was «de Wyke» with two other words. The record that mattered answers to «John de Wyke» in quotation marks**, which returns 78. Nothing was wrong with the catalogue and nothing was wrong with the reasoning. The phrase was wrong, and a null carries the shape of the question that produced it.",
     "truncHead": "A correction to this page's own arithmetic",
     "trunc": "This block first said **170 distinct records, 160 of them Berkeley Castle**. Both numbers were short. Discovery returns `nextBatchMark` on every response and **it is always empty**, so `tools/discovery.py` stopped after one page and returned the first hundred records of however many there were — while printing the true total beside them, which made the truncation invisible. SWONHUNGRE alone has 126. The parameter that works is `sps.page`. **The ten records below are unchanged**: everything the truncation hid was Berkeley Castle Muniments, already worked. The finding stood; the counting did not."
+  },
+  "taxes": {
+    "found": "20 September 2026",
+    "head": "The tax records, which are the bridge",
+    "lede": "Between the last medieval deed and the first parish register this archive can read, there is a gap of a century and a half. **Taxation is what crosses it.** A subsidy roll or a hearth tax names householders by name, parish by parish, in exactly the years no register survives — and this archive has located the records and read none of them. They were researched in September 2026 and, until today, appeared on no page of this site.",
+    "cols": [
+      "Reference",
+      "What it is",
+      "Where",
+      "State"
+    ],
+    "rows": [
+      [
+        "E 179/114/240",
+        "Lay subsidy, Berkeley hundred, 8 November 1543 — **«Assessment (individuals)»**, meaning named taxpayers",
+        "TNA, Kew",
+        "not digitised"
+      ],
+      [
+        "E 179/114/235 · /296/5",
+        "Lay subsidy, Berkeley hundred, 1544–46",
+        "TNA, Kew",
+        "not digitised"
+      ],
+      [
+        "E 179/114/272",
+        "Lay subsidy, 6 March 1546, with Henbury and Barton Regis",
+        "TNA, Kew",
+        "not digitised"
+      ],
+      [
+        "E 179/114/295",
+        "Lay subsidy, Berkeley hundred, 1549",
+        "TNA, Kew",
+        "not digitised"
+      ],
+      [
+        "E 179/329",
+        "**Hearth tax, 1670–1674** — about four hundred exemption certificates, catalogued as «includes names of individuals»",
+        "TNA, Kew",
+        "not digitised"
+      ],
+      [
+        "D383/1",
+        "Negative photostat of the Gloucestershire hearth tax enrolment, 1671–72, with part transcript",
+        "Gloucestershire Archives",
+        "not digitised"
+      ],
+      [
+        "D5555/2/9",
+        "**One bundle transcribing all three**: Men and Armour 1608, the hearth taxes of 1664 and 1672, and the poll tax of 1678",
+        "Gloucestershire Archives",
+        "not digitised"
+      ],
+      [
+        "D 1874/1",
+        "Photostats of the surviving 1381 poll tax membranes",
+        "Gloucestershire Archives",
+        "**Berkeley hundred is not among them**"
+      ]
+    ],
+    "chip": "documented",
+    "whyHead": "Why these and not something easier",
+    "why": "The muster of 1608 named **eleven men of this surname** in four spellings, three of them in Berkeley hundred alone, at **Halmore, Hinton and Saniger**. John Saniger of Saniger appears in the Berkeley estate deeds from 1601. Before that the archive has deeds about land and almost nothing about people. **A subsidy of the 1540s would name whoever held the hamlet sixty years before the muster** — and an exemption certificate from the hearth tax names the poor, which is the half of a parish that leaves no other record at all.",
+    "chipWhy": "inferred",
+    "gapHead": "And one of them is a documented absence",
+    "gap": "**The poll tax of 1381 does not reach Berkeley hundred.** Gloucestershire Archives D 1874/1 photostats the surviving membranes and lists every one: Salmonsbury, Holford and Greston, Kiftsgate, Tibblestone, Rapsgate, Bradley, Crowthorne, Brightwells Barrow, Longtree, Cirencester, Bisley, St Briavels. **Berkeley is not there.** That is the same decade as the wardship of John Swonhonger and the £400 staple debt of William Swannanger, and the one record that would have counted every head in the hamlet does not survive for it.",
+    "chipGap": "documented",
+    "doHead": "What would actually move this",
+    "do": "**D5555/2/9 is the cheapest thing on this page by a distance** — a single Gloucestershire Archives reference transcribing the muster this archive has already read, the hearth taxes it wants, and a poll tax of 1678 it did not know existed. One copying order covers three sources. It is in the letter drafted to Gloucestershire Archives on 20 September and not yet sent."
   }
 }

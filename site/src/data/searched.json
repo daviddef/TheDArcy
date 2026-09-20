@@ -2842,7 +2842,7 @@
       "when": "15 Sep 2026",
       "outcome": "yield",
       "got": "**31 flagged pairs became 14, and none of the three changes was «tighten the window».** A year is now attributed to ONE event rather than to every event nearby; of those, the event word BEFORE the year wins, because English writes «married 21 June 1779» and «baptised 19 March 1780»; and «married» now matches the abbreviation «m. », which «born» and «died» already matched and which was why the archive's own pedigree tables read as contradictions. The meta-registers — /worklist, /open-questions, /coverage, /errands, /corrections — joined the skip list, because a sentence EXPLAINING a false positive is indistinguishable from the false positive. That was noticed when the note written to explain the Joseph D'Arcy case became a fresh source for it.",
-      "href": "/what-we-got-wrong",
+      "href": "/corrections",
       "key": "src/agree-py-rewritten-97c17d"
     },
     {
@@ -2900,7 +2900,7 @@
       "when": "15 Sep 2026",
       "outcome": "yield",
       "got": "It was, and the fault was structural. **11 (person, event) pairs carried more than one place, and /sneyd supplied most of them** — a SURNAME AGGREGATION PAGE listing every Sneyd in the archive, so a proximity test read four men born in four places as one man born in four. It also put KEELE, seat of the Staffordshire gentry Sneyds, beside a Hanley grocer. Adding the surname pages to SKIP took it to **4**, and all four are explicable: Samuel Sneyd born Madeley and living at Hanley, and a George Pitt D'Arcy «born at Brisbane in 1864» who is the fourth man of that name, as the archive's own text says.",
-      "href": "/what-we-got-wrong"
+      "href": "/corrections"
     },
     {
       "src": "crossread.py, run against the rewritten open questions",
@@ -3026,7 +3026,7 @@
       "outcome": "null",
       "ctl": "named",
       "got": "**It is not, and the premise was mine.** Volume 2 mentions **Awre 172 times and Blakeney 4** across 4.4 million characters, and names **no Saniger under any spelling** — while volume 1 gives twenty at Berkeley. Rudder mentions Awre 194 times and names none in the whole book. And the 1608 muster puts all eleven men at Halmore, Hinton and Saniger in Berkeley, at Wotton-under-Edge, Woodmancote, Dursley, Paganhill and three Stonehouse hamlets. **There is no Forest side of this family.** I wrote the phrase into a work-list note this morning and read it back all day as though a source had said it. Now correction 32.",
-      "href": "/what-we-got-wrong"
+      "href": "/corrections"
     },
     {
       "src": "TBGAS volume 22 — whose deeds they are",
