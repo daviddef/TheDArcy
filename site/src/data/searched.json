@@ -3483,16 +3483,17 @@
       "src": "FindMyPast — England Births & Baptisms 1538-1975",
       "what": "Catherine Cotton's baptism — she married Thomas Saniger at Berkeley in 1769",
       "when": "20 Sep 2026",
-      "outcome": "blocked",
-      "got": "INCONCLUSIVE, and recorded as blocked rather than null because the instrument could not be trusted. Two Catherine Cottons show in Gloucestershire — Newnham 1701 and Clifton 1836 — and none in the 1740s, which is where a woman marrying in 1769 should be. But **the same COTTON query returned nothing sorted ascending and a page of results sorted descending**, so a zero here is not evidence of anything. She is the mother of John Saniger and therefore in the direct line; she deserves a search that can fail.",
-      "href": "/behind-the-paywall"
+      "outcome": "null",
+      "got": "No Catherine Cotton baptised in Gloucestershire in the decades she must belong to. She married Thomas Saniger at Berkeley on 10 April 1769, so a birth about 1745 is expected. **Controlled in the same session: COTTON in Gloucestershire between 1735 and 1755 returns 27 baptisms**, of Edvardus, Thomas, Frances, Mary, Lydia, Isaac, Robert, Betty, Sarah, George, John, Elizabeth and Charles — and **no Catherine at all**. The only two Catherine Cottons in the county are Newnham 1701 and Clifton 1836. She was baptised somewhere else, or under something other than COTTON, or in a register this set does not transcribe.\n\nThis row was published as «inconclusive» earlier the same day, when the identical control returned zero because the page was read before it had rendered. **Re-run with a longer wait it returned twenty rows**, which is the whole reason the control rule now requires one that comes back with something.",
+      "href": "/behind-the-paywall",
+      "ctl": "named"
     },
     {
       "src": "FindMyPast — three ways the site returns a meaningless zero",
       "what": "A control on the instrument itself, after three suspicious nulls in one day",
       "when": "20 Sep 2026",
       "outcome": "yield",
-      "got": "**One.** A year filter combined with `county` returns zero on the census sets — Catherine Smith born about 1789 in Sussex returns nothing, which cannot be true. **Two.** `yearofrecord` is thrown away by the Army Lists: asking for 1790 returns rows from 1673 to 1826 and no 1790. **Three.** Results render asynchronously, so a page read a moment early gives a zero indistinguishable from a real one. The rule here tightens: a control must be **run in the same session and return rows**, not merely exist.",
+      "got": "**One.** A year filter combined with `county` returns zero on the census sets — Catherine Smith born about 1789 in Sussex returns nothing, which cannot be true. **Two.** `yearofrecord` is thrown away by the Army Lists: asking for 1790 returns rows from 1673 to 1826 and no 1790. **Three.** Results render asynchronously, so a page read a moment early gives a zero indistinguishable from a real one. The rule here tightens: a control must be **run in the same session and return rows**, not merely exist. **Re-tested the same evening:** the census control still returns zero on a fifteen-second wait while the baptism control returns twenty, so faults one and three are genuinely different things — one is a parameter the search discards, the other is a page read too early.",
       "href": "/behind-the-paywall"
     }
   ],
