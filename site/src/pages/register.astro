@@ -5,6 +5,7 @@ import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import Register from "@daviddef/archive-kit/components/Register.astro";
+import fold from "../data/namefold.json";
 import reg from "../data/register.json";
 import living from "../data/living.json";
 
@@ -112,7 +113,7 @@ const pct = Math.round((reg.records / reg.entries) * 100);
   </section>
 
   <section class="blk">
-    <Register rows={regRows} u={u} unit="entries" />
+    <Register fold={fold.fold} rows={regRows} u={u} unit="entries" />
   </section>
 
   <section class="blk" style="border-bottom:0">

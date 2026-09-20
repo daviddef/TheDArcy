@@ -1,0 +1,17 @@
+{
+  "_note": [
+    "Spelling clusters this archive has READ and REFUSED. namefold.py offers a fold;",
+    "this file is the answer when the answer is no, and the reason is kept beside it",
+    "because a refusal without one gets overturned by the next session that runs the",
+    "tool and sees a plausible-looking pair.",
+    "",
+    "Folding is a SEARCH rule, not an identity rule — it widens what a query matches.",
+    "That is exactly why a wrong fold is hard to notice: nothing breaks, a reader just",
+    "gets a result that has nothing to do with them and no way to know why."
+  ],
+  "never": ["zanigar", "lion"],
+  "why": {
+    "zanigar": "NOT A SPELLING OF THIS NAME. ZANIGAR is a nonsense string this archive invented on 17 September 2026 to control-test whether The National Archives' Discovery search was loosely fuzzy — SANIGAER returns exactly the same 44 records as SANIGAR, which looked like fuzz, so ZANIGAR, SANIGAAER and XQVWPLT were put through the same door and all returned nothing. That null is why the spelling counts on /spellings/ can be trusted. Folding it into SANIGAR would make the archive appear to hold it as an attested variant, which is the precise opposite of what it was written for, and would return a control test to anyone searching for the family.",
+    "lion": "NOT A SURNAME. Every occurrence of LION in this archive is the PERSIAN ORDER OF THE LION AND SUN — the decoration conferred on Lieutenant-Colonel Joseph D'Arcy by the Shah, quoted on /joseph-darcy/ and in his register entries. The cluster pairs it with LYON, which here is one real person: Lydia Lyon. Folding them would mean that searching for a woman's surname returns a Persian knighthood."
+  }
+}

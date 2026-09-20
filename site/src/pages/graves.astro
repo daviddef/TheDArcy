@@ -5,6 +5,7 @@ import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import Graves from "@daviddef/archive-kit/components/Graves.astro";
+import fold from "../data/namefold.json";
 import g from "../data/graves.json";
 const shared = g.rows.filter((r) => r.shared);
 const many = g.rows.filter((r) => r.n > 1 && !r.shared);
@@ -65,7 +66,7 @@ const graves = g.rows.map((r) => ({
   </Blk>
 
   <section class="blk" style="border-bottom:0">
-    <Graves rows={graves} u={u} />
+    <Graves fold={fold.fold} rows={graves} u={u} />
     <p class="small" style="margin-top:1.2rem"><strong>Arthur Hartley Sneyd is not on this page.</strong>
     He has no known grave — the army's own form recorded his burial place as "Not yet to hand", and it
     never came. <a href={u("/finding-arthur/")}>The search for him →</a></p>

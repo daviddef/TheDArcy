@@ -10,7 +10,14 @@ const hints = [["Saniger", "the archive's oldest claim"], ["Chatham", "the paris
 ---
 <Base title="Search" eyebrow={"Everything this archive can point at, in one box"} dek="People, places, register entries, families and every page — searched together.">
   <section class="blk">
-    <Search base={u("/")} hints={hints} placeholder="Saniger · Chatham · Parramatta · Hornby · Sneyd · 39th" />
+    {/* No fold prop here. The kit's Search.astro carries its OWN fold() — an
+    accent-folding routine that must stay byte-identical to fold() in
+    searchkit.py, because the two build and read the same haystack. It is not
+    the variant map the register components take, and passing one to it does
+    nothing. Site-wide spelling variants are handled instead by ALIASES in
+    tools/build_search.py, which already carries sanyger and thirty-seven
+    other forms of this surname. */}
+  <Search base={u("/")} hints={hints} placeholder="Saniger · Chatham · Parramatta · Hornby · Sneyd · 39th" />
     <p class="dek" style="margin-top:1.4rem">This searches <strong>what the archive says</strong>,
     not the registers themselves. A name that returns nothing here has not been read yet — which is
     itself worth knowing. <a href={u("/searched/")}>What has already been looked for &rarr;</a></p>
