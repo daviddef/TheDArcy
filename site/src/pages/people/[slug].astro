@@ -69,15 +69,21 @@ const FAMILY_PAGE = { Sneyd: "/sneyd", Atkinson: "/atkinson", Murdoch: "/murdoch
 /* Where a person is actually written about. Keyed by slug because slugs are
    deterministic; a name here that stops matching simply stops linking, which is
    the safe failure. */
+/* Keyed by slug. hannah-saniger was in here TWICE until 20 September 2026 —
+   two entries, four links and two, and in a JavaScript object literal the
+   second silently wins. She is the direct line, and she had quietly lost her
+   voyage on the General Hewitt and the page about the Sanigers she is not
+   among. Nothing could see it: the map is hand-kept, the loss was legal
+   JavaScript, and no build could tell an overwrite from an edit. check_links.py
+   now refuses a duplicate key here. */
 const APPEARS_IN = {
-  "hannah-saniger": [["/drivers-fields", "Her household, 1841"], ["/general-hewitt", "Her voyage, 1854"], ["/sanigers", "The Sanigers she is not among"], ["/berkeley", "The claim that rests on her"]],
+  "hannah-saniger": [["/drivers-fields", "Her household, 1841"], ["/general-hewitt", "Her voyage, 1854"], ["/sanigers", "The Sanigers she is not among"], ["/berkeley", "The claim that rests on her"], ["/hannah-baptism", "One vowel — her baptism"]],
   "samuel-charles-sneyd-1810": [["/sneyds", "His baptism at Hanley, and the weaver above him"], ["/sergeant-sneyd", "Soldier, constable, gaol governor"], ["/how-far-back", "The Keele graft, disproved"]],
   "robert-d-arcy": [["/chatham", "His burial, aged 76"], ["/hornby", "The Hornby claim"], ["/direct-line", "The spine"]],
   "jean-ward": [["/chatham", "Her burial, aged 66"], ["/the-women", "The women"], ["/hornby", "The Hornby claim"]],
   "frederick-robert-d-arcy": [["/chatham", "His baptism, 1811"], ["/australia", "The surveyor, and the half-brother"]],
   "miriam-wakefield": [["/general-hewitt", "The voyage out, 1854"], ["/drivers-fields", "Her household, 1841"], ["/the-women", "The women"], ["/inquest-1902", "Her sworn evidence, 1902"], ["/sneyd", "The Sneyds"]],
   "james-wakefield": [["/general-hewitt", "The voyage out, 1854"], ["/drivers-fields", "His household, 1841"], ["/berkeley", "The Saniger claim"]],
-  "hannah-saniger": [["/drivers-fields", "Her household, 1841"], ["/berkeley", "The Saniger claim"]],
   "hiram-wakefield": [["/general-hewitt", "The voyage out, 1854"], ["/drivers-fields", "The household, 1841"]],
   "aaron-wakefield": [["/general-hewitt", "The voyage out, 1854"], ["/drivers-fields", "The household, 1841"]],
   "jabez-wakefield": [["/general-hewitt", "The voyage out, 1854"], ["/drivers-fields", "The household, and the street he was born in"]],

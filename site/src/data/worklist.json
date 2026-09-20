@@ -1003,11 +1003,11 @@
     },
     {
       "n": 112,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-17",
       "what": "Audit the other five silent joins the same way",
-      "note": "The fault was a build script assuming a page would show something it never read. The same shape is possible in five other places, and none has been control-tested: **mentions.json** (matches name phrases in rendered HTML — 13 of the 55 got zero), the hand-kept **APPEARS_IN**, **VERIFIED** and **PORTRAITS** maps inside `/people/[slug].astro`, and **graves.json** and **households.json**, which both key people by slug and are read only by their own pages. **Ask of each: if this map went empty, would anything refuse?**"
+      "note": "The fault was a build script assuming a page would show something it never read. The same shape is possible in five other places, and none has been control-tested: **mentions.json** (matches name phrases in rendered HTML — 13 of the 55 got zero), the hand-kept **APPEARS_IN**, **VERIFIED** and **PORTRAITS** maps inside `/people/[slug].astro`, and **graves.json** and **households.json**, which both key people by slug and are read only by their own pages. **Ask of each: if this map went empty, would anything refuse?**\n\n**Done 20 September. One real loss found, and it was not the one expected.** No second instance of the record-row fault: `graves.json` and `households.json` do not reach the person page directly, but the facts they carry — the burial place, the marriage, the children — are already on the page from the family tree, so nothing is dropped. All 101 burial places check out.\n\n**What was dropped was in a hand-kept map.** `APPEARS_IN` carried `hannah-saniger` twice, four links then two, and in a JavaScript object literal the second silently wins. **The direct line of this archive had lost her voyage on the General Hewitt.** Fixed, and `check_links.py` now refuses a duplicate key, a key naming a person with no page, and a grave whose place the person's own page does not state. Control-tested three ways."
     },
     {
       "n": 113,
@@ -1096,6 +1096,14 @@
       "since": "2026-09-20",
       "what": "Letter to Gloucestershire Archives — four references, drafted and unsent",
       "note": "Drafted 20 September at `notes/letters/2026-09-20-gloucestershire-archives.md`. **It asks for nothing they have already refused.** Andrew Parry said on 14 September that they offer no research service, so this asks only the three things such a repository will still do: what a finding aid covers, what a reference physically consists of, and a quote to copy a document named by reference.\n\nFour asks, in order: **(1)** whether the Gloucester diocesan **marriage allegations and bonds** of the 1790s are name-indexed — the only route left to Lydia's maiden name; **(2)** a copy quote for **GDR/B4/1/387**; **(3)** a copy quote for **D5555/2/9**, the 1608 muster and hearth tax transcripts; **(4)** whether an item-level list exists for **D2957/41**. It closes by asking for their **list of independent researchers**, which is the most valuable ask if the rest disappoints. **David to review, amend and send.**"
+    },
+    {
+      "n": 124,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "what": "The 237 people with an empty mentions list",
+      "note": "`mentions.json` holds 459 keys and **only 222 are non-empty** — half the published people are written about nowhere on this site. That is not a bug: `build_mentions.py` deliberately skips the directory pages (`/people`, `/register`, `/graves`, `/households`, `/families`, `/who`, `/places`, `/marriages`, `/search`) because «a name in a card grid is not a mention», which is right. But it means **the mention count is a measure of prose, not of evidence**, and this archive should not let the two be confused on a page that shows both."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",
@@ -1131,5 +1139,5 @@
       ]
     }
   ],
-  "unreconciled": 32
+  "unreconciled": 31
 }

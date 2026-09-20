@@ -2,6 +2,16 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "20 September 2026",
+    what: "Published Hannah Saniger's page for weeks with two of its four «written about here» links silently missing — among them her voyage on the General Hewitt, the ship that brought the family to Queensland.",
+    truth:
+      "The map that holds those links, APPEARS_IN in /people/[slug].astro, carried the key «hannah-saniger» twice: once with four links and once with two. In a JavaScript object literal the later entry simply replaces the earlier one.",
+    why: "It is hand-kept, and it is a plain object with thirty-one keys in no particular order, so a second entry for a name already present looks exactly like an edit to the first. Nothing could tell them apart — not a linter, not a build, not a reader, because a reader sees a list of links and has no way of knowing it is short. She is the direct line, and she lost the most substantial page on it.",
+    lesson:
+      "Found while auditing the other five joins that attach evidence to a person, after the record-row fault of the 17th. The audit expected a second instance of that fault and did not find one: graves.json and households.json do not reach the person page directly, but everything they carry is already there from the family tree. The loss was somewhere nobody was looking, in a data structure whose rules silently permit it. Two of the three checks written that morning were themselves wrong — one could never fail, because it looked for a string that sits in the site navigation, and one reported a grave as missing from a page that states it in full, for want of unescaping an ampersand. Both were caught by trying to make them fail.",
+    href: "/hannah-baptism",
+  },
+  {
     when: "17 September 2026",
     what: "Printed “No record has been found for them” on the pages of thirty people for whom this archive had read a hundred and thirty records — including Constantine D'Arcy, who has two commissions in the London Gazette, a death notice in the Kentish Gazette, a burial register at Medway Archives and an entry in the Corps roll, and a page of this site written about him.",
     truth:
