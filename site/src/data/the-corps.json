@@ -1,280 +1,356 @@
 {
- "found": "13 September 2026",
- "source": "FindMyPast — British Army Lists & Commission Registers 1661-1826; British Army Officer Promotions 1800-1815 (© Chris Daniell), each citing the London Gazette; Kent Burials (Medway Archives); Kentish Gazette and Kentish Weekly Post via FindMyPast newspapers",
- "lede": "This archive has carried Robert D'Arcy's career on the authority of Connolly's Roll of Officers of the Corps of Royal Engineers — a book printed in 1898. Every step of it can now be cited to the London Gazette instead, with issue and page, and it begins two years earlier than anything else here.",
- "career": [
-  {
-   "year": "17 January 1776",
-   "was": "—",
-   "became": "Practitioner Engineer and Second Lieutenant",
-   "unit": "The Corps of Engineers",
-   "src": "Printed Army Lists, 1778 and 1781 (seniority “17 Jan. 76”); Connolly's Roll of the Corps of Royal Engineers",
-   "gaz": "",
-   "note": "His first commission, and the earliest record of him this archive holds. What this page said until 15 September 2026 — that the commission was in 1778, from a commercial index of the commission registers — is corrected: two contemporary printed Army Lists put him in the establishment with a seniority of 17 January 1776, and Connolly gives the same year. The rest of the site had 1776 all along; this page was the outlier."
+  "found": "13 September 2026",
+  "source": "FindMyPast — British Army Lists & Commission Registers 1661-1826; British Army Officer Promotions 1800-1815 (© Chris Daniell), each citing the London Gazette; Kent Burials (Medway Archives); Kentish Gazette and Kentish Weekly Post via FindMyPast newspapers",
+  "lede": "This archive has carried Robert D'Arcy's career on the authority of Connolly's Roll of Officers of the Corps of Royal Engineers — a book printed in 1898. Every step of it can now be cited to the London Gazette instead, with issue and page, and it begins two years earlier than anything else here.",
+  "career": [
+    {
+      "year": "17 January 1776",
+      "was": "—",
+      "became": "Practitioner Engineer and Second Lieutenant",
+      "unit": "The Corps of Engineers",
+      "src": "Printed Army Lists, 1778 and 1781 (seniority “17 Jan. 76”); Connolly's Roll of the Corps of Royal Engineers",
+      "gaz": "",
+      "note": "His first commission, and the earliest record of him this archive holds. What this page said until 15 September 2026 — that the commission was in 1778, from a commercial index of the commission registers — is corrected: two contemporary printed Army Lists put him in the establishment with a seniority of 17 January 1776, and Connolly gives the same year. The rest of the site had 1776 all along; this page was the outlier."
+    },
+    {
+      "year": "1781–82",
+      "was": "Lieutenant",
+      "became": "At the SIEGE OF FORT ST PHILIP'S, MINORCA",
+      "unit": "The Corps of Engineers",
+      "src": "Whitworth Porter, History of the Corps of Royal Engineers (1889), p. 209",
+      "gaz": "",
+      "note": "Under Lieutenant-Colonel Brewse, Chief Engineer in the island, with Captain Gilbert Townshend and Lieutenants Johnston, Douglas, Shipley and Fiddes. The Duc de Crillon landed on 19 August 1781 and the garrison was about three thousand. The first record of him on active service anywhere."
+    },
+    {
+      "year": "1 October 1784",
+      "was": "Practitioner Engineer and 2nd Lieutenant",
+      "became": "FIRST LIEUTENANT",
+      "unit": "Royal Engineers",
+      "src": "The Royal Military Calendar, 3rd edition (1820), vol. IV, entry 607",
+      "gaz": "",
+      "note": "A rank this archive did not have. He held the junior grade for eight years and eight months."
+    },
+    {
+      "year": "1786 and 1788",
+      "was": "—",
+      "became": "In BARBADOS — and now confirmed by the Corps",
+      "unit": "Corps of Engineers",
+      "src": "St Michael, Barbados — christenings of CONSTANTINE (18 Feb 1786) and JANE (17 Mar 1788), father Robert, mother Jane; AND Porter's History of the Corps of Royal Engineers, station list: “Robert D'Arcy, Barbados”",
+      "gaz": "",
+      "note": "No longer an inference. The christenings put him in the West Indies with his wife in the middle of the 1780s; the Corps' own station list says the posting outright. What this page said until 15 September 2026 — that these were “the only two records that fall inside” the blank between 1778 and 1802 — was wrong: Porter puts him at the siege of Fort St Philip's on MINORCA in 1781, three years after his first commission."
+    },
+    {
+      "year": "15 August 1793",
+      "was": "First Lieutenant",
+      "became": "CAPTAIN",
+      "unit": "Royal Engineers",
+      "src": "The Royal Military Calendar, 3rd edition (1820), vol. IV, entry 607",
+      "gaz": "",
+      "note": "Also new here. It falls between the Barbados christenings and the majority of 1802, in years this page once called blank."
+    },
+    {
+      "year": "8 May 1802",
+      "was": "Captain",
+      "became": "Major in the Army",
+      "unit": "Royal Engineers",
+      "src": "War Office, 11 May 1802",
+      "gaz": "15478 / 468",
+      "note": ""
+    },
+    {
+      "year": "1 March 1805",
+      "was": "Brevet Major",
+      "became": "Lieutenant-Colonel",
+      "unit": "Corps of the Royal Engineers",
+      "src": "Ordnance Office, 18 March 1805 — vice Nepean",
+      "gaz": "15789 / 351",
+      "note": "The SAME Ordnance Office announcement, printed on the SAME page of the Gazette and in the same column of the Limerick Gazette, the Kentish Gazette and the Kentish Weekly Post, promoted his son CONSTANTINE D'ARCY to first lieutenant of the same corps. The archive found this page in July and read the father's line without noticing the son's."
+    },
+    {
+      "year": "by November 1806",
+      "was": "Major",
+      "became": "COLONEL, and named with his corps for the first time",
+      "unit": "Royal Engineers",
+      "src": "Oxford University and City Herald, 1 November 1806 — his daughter's marriage: “MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS”",
+      "gaz": "",
+      "note": "THE EARLIEST RECORD THIS ARCHIVE HAS FOUND THAT NAMES ROBERT D'ARCY'S CORPS, and it was sitting in the report of a wedding the archive has held since it read the Chatham register. The Chester Courant of 11 November adds the church and the officiant — Chatham Church, by the Rev. I. T. Jones. He was gazetted Lieutenant-Colonel in March 1805; a paper calling him Colonel in 1806 is a newspaper rounding up, which they did constantly, so the rank here is worth less than the corps."
+    },
+    {
+      "year": "4 June 1813",
+      "was": "Lieutenant-Colonel",
+      "became": "Colonel in the Army by Brevet",
+      "unit": "Royal Engineers",
+      "src": "War Office, 7 June 1813 — by the Prince Regent",
+      "gaz": "16737 / 1100",
+      "note": ""
+    },
+    {
+      "year": "19 July 1813",
+      "was": "Brevet Colonel",
+      "became": "Colonel",
+      "unit": "Corps of Royal Engineers",
+      "src": "Office of Ordnance — vice Evelegh",
+      "gaz": "16755 / 1431",
+      "note": "Found in the Gazette itself before the subscription was opened."
+    },
+    {
+      "year": "by March 1823",
+      "was": "Colonel",
+      "became": "MAJOR-GENERAL",
+      "unit": "Royal Engineers",
+      "src": "Hampshire Chronicle, 24 March 1823 — his wife's death notice: “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS”",
+      "gaz": "",
+      "note": "Connolly's Roll gives him Major-General on 12 AUGUST 1819 and this archive carried that on the authority of a book printed in 1898. A contemporary newspaper now corroborates it four years later, and gives the corps at the same time."
+    },
+    {
+      "year": "13 May 1827",
+      "was": "Major-General",
+      "became": "—",
+      "unit": "late of the Corps of Royal Engineers",
+      "src": "Seventeen newspapers",
+      "gaz": "",
+      "note": "Died at Chatham and was interred there with military honours on the 19th."
+    }
+  ],
+  "span": "Forty-nine years from a practitioner engineer's commission to a major-general's grave.",
+  "joseph": {
+    "head": "And his son went to the guns, not the sappers.",
+    "body": "Joseph D'Arcy — baptised at Portsea in March 1780, son of Robert and Jean — appears in FindMyPast's British Army, Royal Artillery Officers 1716-1899 from 1795, in the Army List of 1798, in the Commission Registers in 1802, 1803 and 1826, among the officer promotions of 1803, 1804 and 1806, and in the Army Lists of 1840, 1841, 1843 and 1844.",
+    "means": "Commissioned at about fifteen and still listed at sixty-four. The Royal Artillery, not his father's Corps of Engineers. The detail of those entries is behind a further paywall even on a trial — the index is visible and the transcripts are not — so this is a career sketched from a list of dates rather than read.",
+    "chip": "indexed, not read"
   },
-  {
-   "year": "1781–82",
-   "was": "Lieutenant",
-   "became": "At the SIEGE OF FORT ST PHILIP'S, MINORCA",
-   "unit": "The Corps of Engineers",
-   "src": "Whitworth Porter, History of the Corps of Royal Engineers (1889), p. 209",
-   "gaz": "",
-   "note": "Under Lieutenant-Colonel Brewse, Chief Engineer in the island, with Captain Gilbert Townshend and Lieutenants Johnston, Douglas, Shipley and Fiddes. The Duc de Crillon landed on 19 August 1781 and the garrison was about three thousand. The first record of him on active service anywhere."
+  "notHim": "One entry was discarded. A Robert D'Arcy is gazetted CORNET BY PURCHASE in the 17th Regiment of Light Dragoons on 19 May 1804, described as “Gent”, vice Harris. That is a young man buying his first commission in a cavalry regiment in 1804 — while this Robert D'Arcy had been a major since 1802 and was a lieutenant-colonel by the following March. Same name, different man, and the sort of thing that quietly wrecks a career chronology if nobody looks at the rank.",
+  "post": {
+    "head": "And a post, not just a rank.",
+    "body": "The Kentish Gazette of 14 May 1805, reporting the death of his son, calls him “COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES”. The Chatham Lines were the bastioned fortifications thrown up to defend the dockyard and the Medway — the largest engineering work in Kent. Every other record of Robert D'Arcy gives a rank. This one gives him a job.",
+    "chip": "documented"
   },
-  {
-   "year": "1 October 1784",
-   "was": "Practitioner Engineer and 2nd Lieutenant",
-   "became": "FIRST LIEUTENANT",
-   "unit": "Royal Engineers",
-   "src": "The Royal Military Calendar, 3rd edition (1820), vol. IV, entry 607",
-   "gaz": "",
-   "note": "A rank this archive did not have. He held the junior grade for eight years and eight months."
+  "porter": {
+    "head": "The Corps wrote its own history, and he is in it five times",
+    "lede": "Whitworth Porter's History of the Corps of Royal Engineers was published in 1889 from the Corps' own records. This archive had never opened it. Robert D'Arcy is named at Minorca, in a station list, at Copenhagen, at Walcheren and in the index — which is Porter's own statement that they are one man.",
+    "chip": "documented",
+    "indexLine": "D'Arcy, Robert, at second siege of Minorca, 209, 216 ; Copenhagen, 243 ; Walcheren, 248",
+    "rows": [
+      [
+        "1781–82",
+        "MINORCA — the siege of Fort St Philip's",
+        "“At the death of Colonel Mackellar, Lieutenant-Colonel Brewse had been appointed to the post of Chief Engineer in the island… Under him were Captain Gilbert Townshend, and Lieutenants ROBERT D'ARCY, W. Johnston, J. R. Douglas, C. Shipley, and J. Fiddes.” The Duc de Crillon landed on 19 August 1781; the garrison was about three thousand."
+      ],
+      [
+        "1780s",
+        "BARBADOS — confirmed from a Corps list, not a christening",
+        "A list of First Lieutenants by station carries “ROBERT D'ARCY, BARBADOS” outright. This archive had the posting only as an inference from two christenings at St Michael, and now has it from the Corps."
+      ],
+      [
+        "1807",
+        "COPENHAGEN — Commanding Engineer",
+        "“The Engineers consisted of LIEUTENANT-COLONEL R. D'ARCY, COMMANDING ENGINEER; Captains B. Fletcher, J. F. Birch, and S. R. Chapman; Second Captains C. W. Pasley, H. Goldfinch, and C. S. Rhodes; First Lieutenant G. Collyer.” The expedition sailed from Yarmouth Roads on 27 July with twenty thousand men under Sir Arthur Wellesley and reached Elsinore on 3 August."
+      ],
+      [
+        "1809",
+        "WALCHEREN — Commanding Royal Engineer",
+        "“The Commanding Royal Engineer with this corps was LIEUTENANT-COLONEL R. D'ARCY.” At the siege of Flushing he appears again among the officers summoned: “Colonel Fyers, Commanding Royal Engineer; Lieutenant-Colonels D'ARCY and Pilkington; Captains Rudyerd, Birch, Squire, Pasley…”"
+      ]
+    ],
+    "gapHead": "What it does to the twenty-four-year blank",
+    "gap": "This page has said that between the commission of 1778 and the majority of 1802 the career is a blank of twenty-four years, and that two Barbados christenings were the only records inside it. That is no longer true. Minorca falls squarely inside the blank, in 1781, three years after the commission — and the Barbados posting is no longer an inference from a baptism register but a line in the Corps' own station list.",
+    "chipGap": "this archive's own claim, corrected",
+    "arrestHead": "And the reason he nearly faced a court-martial",
+    "arrest": {
+      "setup": "On the night of 13 August 1809, storming a fleche on the western dyke at Flushing, Colonel Fyers — the Commanding Royal Engineer — was shot in the chest by a musket ball from a hundred yards. It passed first through some inches of sand on the parapet, which is the only reason it was not fatal. Wounded, he ordered that the senior engineer in the trenches deliver him a written report every morning.",
+      "quote": "The first morning, Colonel D., an old man beyond sixty, refused compliance, saying he had other things to do, and no solicitation could prevail on him to write a single line… The third morning Colonel D. again declined, saying IT WAS ALL NONSENSE; and on being reasoned with, denied the right of his superior to demand a report from him, because SOME THIRTY OR FORTY YEARS PREVIOUSLY HE HAD BEEN SENIOR TO COLONEL F. He was requested to reconsider the matter, and on a decided refusal the Brigade-Major put him under arrest.",
+      "src": "Told by Fyers's own Brigade-Major. Porter's footnote to “Colonel D.” reads, in full: “Colonel D'Arcy.”",
+      "end": "“After all the preliminary arrangements for a court-martial had been gone through, Colonel D'Arcy thought better of it, made his apologies, was released, and ever after furnished his report.”",
+      "chip": "documented",
+      "means": "It is the only description of this man's character that this archive holds. Sixty years old, in the trenches, in the third week of the worst British expedition of the war, refusing to write a report for a man he considered his junior — and then thinking better of it."
+    },
+    "ageHead": "One date it does NOT quite corroborate",
+    "age": "Fyers's Brigade-Major calls him “an old man beyond sixty” in August 1809. This archive's own best evidence for his age is the Chatham burial register, which gives him as 76 at his death in May 1827 and so puts his birth about 1750–51 — the source the tree's “1751” has always come from. A man born in 1750 or 1751 was FIFTY-EIGHT OR FIFTY-NINE in August 1809, not beyond sixty. The two do not agree, and the register is much the better witness: it was written by a clerk with a date in front of him, while “an old man beyond sixty” is an aside in an anecdote recalled years later by a man complaining about him. It is recorded because it is the only physical description of him this archive has, and because a source that is slightly wrong about an age can still be right about an arrest.",
+    "chipAge": "an aside, not a birth record — and it misses the register by a year or two",
+    "careful": "Porter is a nineteenth-century compiler working from Corps records, not the records themselves. He is the Corps' own historian and he indexes all five mentions as one Robert D'Arcy, which is as good as a secondary source gets — but the commission registers, station returns and the Walcheren papers at Kew are the primary evidence behind him, and none of them has been read here.",
+    "where": "Read 14 September 2026 in the full text of the 1889 edition on the Internet Archive, which is out of copyright and downloads freely."
   },
-  {
-   "year": "1786 and 1788",
-   "was": "—",
-   "became": "In BARBADOS — and now confirmed by the Corps",
-   "unit": "Corps of Engineers",
-   "src": "St Michael, Barbados — christenings of CONSTANTINE (18 Feb 1786) and JANE (17 Mar 1788), father Robert, mother Jane; AND Porter's History of the Corps of Royal Engineers, station list: “Robert D'Arcy, Barbados”",
-   "gaz": "",
-   "note": "No longer an inference. The christenings put him in the West Indies with his wife in the middle of the 1780s; the Corps' own station list says the posting outright. What this page said until 15 September 2026 — that these were “the only two records that fall inside” the blank between 1778 and 1802 — was wrong: Porter puts him at the siege of Fort St Philip's on MINORCA in 1781, three years after his first commission."
+  "armylist": {
+    "head": "The 1778 Army List has him, and corroborates Porter",
+    "lede": "The printed Army Lists are free and out of copyright. The list of 1778 carries the whole establishment of the Corps of Engineers, rank by rank, and in the junior grade it has him by name.",
+    "entry": "Practitioner Engineer and Second Lieutenant: Wm. Kesterman, John Johnson, Charles Holloway, Thomas Whelpdale, John Humfrey, James Fiddes, Richard Hockings, Robert Beatson, ROBERT D'ARCY, Benjamin Slack, James Lees, Geo: Bridges, Lewis Hay.",
+    "chip": "documented",
+    "means": "It is a contemporary printed source for the rank this archive has carried on the authority of a commission register, and it puts him in a seniority run with twelve named contemporaries.",
+    "minorcaHead": "And it independently corroborates the Minorca roster",
+    "minorca": "Porter, writing in 1889, names the engineers at the siege of Fort St Philip's in 1781: Captain GILBERT TOWNSHEND and Lieutenants ROBERT D'ARCY, W. JOHNSTON, J. R. DOUGLAS, C. SHIPLEY and J. FIDDES. Every one of those six is in the 1778 establishment — Townshend among the Engineers Extraordinary and Captains; Shipley, Douglas and Johnston among the Sub-Engineers and Lieutenants; D'Arcy and Fiddes among the Practitioner Engineers. A list printed three years before the siege, and a history written a century after it, describing the same men in the same corps.",
+    "chipMinorca": "two independent sources agreeing",
+    "trapHead": "And the question it does NOT settle",
+    "trap": "This archive prints two dates for his first commission: 1776, from Connolly's Roll, on the timeline and elsewhere; and 1778, from the British Army Lists and Commission Registers, on this page. The obvious test is whether he appears in the printed lists of 1775 and 1776. He does not — and that proves nothing at all. The men listed beside him in 1778 are not there either: FIDDES, HOCKINGS, HUMFREY and SLACK return nought occurrences in both earlier volumes. Those lists do not print the Practitioner Engineer grade. The absence is the book's, not the man's.",
+    "chipTrap": "an empty search, not a null",
+    "resolve": "So the two dates stand unreconciled, and the document that would reconcile them is named: WO 54/240, the Board of Ordnance commission book for Engineers, 1755–1780, at Kew, not digitised and not name-indexed.",
+    "where": "Read 15 September 2026 in the free full text of the Army Lists for 1775, 1776, 1778 and 1781 on the Internet Archive.",
+    "dateHead": "And then the 1781 list settles the date",
+    "date": "The 1781 list prints the same men and interleaves each name with its seniority date. The block reads: “Wm. Kesterman 17 Jan. 76 · John Johnson do. · Charles Holloway do. · Thomas Whelpdale do. · John Humfrey do. · James Fiddes do. · Richard Hockings do. · Robert Beatson do. · ROBERT D'ARCY do. · Benjamin Slack 4 Mar. · James Lees 27 do. · Geo. Bridges 12 Dec. · Lewis Hay 2 Mar. 77.” His date is a ditto inside a block headed 17 JANUARY 1776, and the men after him break the ditto with their own later dates — which is what makes the chain readable rather than a guess. The 1778 list carries the same run.",
+    "dateChip": "documented — two printed lists, and Connolly agrees",
+    "dateMeans": "This archive has printed two dates for that commission. The timeline and four other pages say 1776, on Connolly's Roll. This page's career table said 1778, on a commercial index of the commission registers, and called it “his first commission, and now the earliest record of him anywhere in this archive”. Two contemporary printed Army Lists and a nineteenth-century roll of the Corps now agree on 17 January 1776, so the career table was wrong and the timeline was right. Corrected 15 September 2026.",
+    "dateCareful": "What is NOT claimed: that the 1778 index is a fabrication. Commission registers can carry a later confirming instrument, and a man can be appointed on one date and gazetted on another. But 1778 cannot be his FIRST commission, because he is already in the establishment with a 1776 seniority in a list printed that year."
   },
-  {
-   "year": "15 August 1793",
-   "was": "First Lieutenant",
-   "became": "CAPTAIN",
-   "unit": "Royal Engineers",
-   "src": "The Royal Military Calendar, 3rd edition (1820), vol. IV, entry 607",
-   "gaz": "",
-   "note": "Also new here. It falls between the Barbados christenings and the majority of 1802, in years this page once called blank."
+  "rmc": {
+    "head": "His whole service, printed while he was alive",
+    "lede": "The Royal Military Calendar was the army's own published record of its serving officers. The third edition of 1820 carries him under the Major-Generals, entry 607, with every rank and every date.",
+    "quote": "607. Major-General Robert Darcy, C.B. This officer was appointed Practitioner Engineer and 2nd Lieutenant in the corps of Royal Engineers, the 17th of January, 1776; 1st Lieutenant, the 1st of October, 1784; Captain, the 15th of August, 1793; Major in the army, the 29th of April, 1802; Lieutenant-Colonel in the Royal Engineers, the 1st of March, 1803; Colonel in the army, the 4th of June, 1813; Colonel in the Royal Engineers, the 21st of July, 1813; and Major-General, the 12th of August, 1819. He is a Companion of the Order of the Bath.",
+    "chip": "documented",
+    "means": "Printed in his lifetime, seven years before he died, from the army's own returns. It confirms 17 JANUARY 1776 outright — the date this archive worked out yesterday from a chain of ditto marks in the Army List of 1781, and had printed wrongly as 1778 on its own career page until then. Two independent routes to the same day.",
+    "newHead": "Two ranks this archive did not have",
+    "new": "FIRST LIEUTENANT, 1 October 1784, and CAPTAIN, 15 August 1793. Both fall inside the years this page once described as a blank, and the second of them lands between the Barbados christenings and the majority of 1802.",
+    "clashHead": "And one date that does not agree",
+    "clash": "This archive gives his lieutenant-colonelcy as 1 MARCH 1805, cited to the Ordnance Office notice in the London Gazette, issue 15789 page 351, promoted vice Nepean. The Royal Military Calendar gives 1 MARCH 1803 — same day, same month, two years apart. Everything else lines up as you would expect a gazette to lag a commission by days: the Calendar has Major on 29 April 1802 where the Gazette announced 11 May, and Colonel in the Royal Engineers on 21 July 1813 where the Ordnance Office notice is dated the 19th.",
+    "clashMeans": "A two-year gap is not a gazette lag, so one of them is wrong. The Gazette is the primary instrument and carries an issue, a page and the name of the man he replaced; the Calendar is a compilation and its typesetting is visibly imperfect elsewhere on the same page. This archive keeps 1805 and records the disagreement rather than quietly choosing.",
+    "chipClash": "an unresolved conflict, stated",
+    "parentHead": "What it does not say",
+    "parent": "Nothing about where he came from. The Calendar prints parentage and schooling when it has them — the very next entry, Major-General George Bridges, opens “After the usual course of instruction at Woolwich Academy” — and for Robert D'Arcy it prints none. The oldest question in this archive, who his parents were, is not answered here, and the silence is from the army's own book.",
+    "chipParent": "a null from the best-placed source",
+    "where": "Read 15 September 2026 in the free full text of the 1820 third edition on the Internet Archive."
   },
-  {
-   "year": "8 May 1802",
-   "was": "Captain",
-   "became": "Major in the Army",
-   "unit": "Royal Engineers",
-   "src": "War Office, 11 May 1802",
-   "gaz": "15478 / 468",
-   "note": ""
+  "gazette": {
+    "head": "The Gazette is silent, and the silence has a date",
+    "lede": "The London Gazette is free, needs no account, and is the official record of every commission the Crown signed. Searched on 15 September for both spellings across 1770–1830, it does not name this Robert D'Arcy once. That is worth something only because the search was controlled first.",
+    "controlHead": "What the control showed",
+    "control": [
+      [
+        "The corpus is there",
+        "1,057 notices mentioning «Lieutenant» in the 1770s alone, 245 mentioning «Ordnance», 38 mentioning «Engineers». The decade is digitised and searchable."
+      ],
+      [
+        "Engineers ARE gazetted — later",
+        "25 May 1778, issue 11878: «Lieutenant Thomas Shewbridge, of the Corps of Engineers, to be First Lieutenant». 24 February 1783, issue 12418: promotions in the Corps of Engineers, naming William Green, Matthew Dixon, John Archer, Harry Gordon and John Brewse. 23 February 1787, issue 12833: «Office of Ordnance… Corps of Engineers, Second Lieutenant James Glenie is appointed to be First Lieutenant»."
+      ],
+      [
+        "But not in 1776",
+        "Notices mentioning «Corps of Engineers» by year: 1774 — NONE. 1775 — NONE. 1776 — three, of which one concerns the Chief Engineer in Ireland and the other two are the same Bengal notice reprinted. 1777 — three. Not one British engineer commission list in the year Robert D'Arcy was commissioned."
+      ],
+      [
+        "And the Darcys who are there are other men",
+        "All twenty-two notices naming a Darcy or D'Arcy between 1770 and 1789 are identifiable: Darcy Tancred, Darcy Burnell of Winkburn, Darcy Molineux, Sir Robert Darcy Hildyard of Winestead, Darcy Linton, John Pomeroy Darcy, Arthur Darcy — and Darcy Lever, which is a place in Lancashire."
+      ]
+    ],
+    "means": "The Ordnance did not gazette its engineer commissions in 1776; it began doing so during the American war and was doing it routinely by the mid-1780s. So the Gazette's silence is not evidence that the commission did not happen — it is evidence about when the Ordnance started publishing, and it is the reason the seniority column of the printed Army List, not the Gazette, is the record that settles 17 January 1776.",
+    "chip": "documented",
+    "bonusHead": "One thing it did give, exactly dated",
+    "bonus": "The London Gazette, issue 12850, page 197, 23 April 1787: «His Majesty, by Warrant of this Day's Date, has been pleased to direct, that the Corps of Engineers shall in future take the Name of the Corps of ROYAL Engineers, and be so stiled and called.»",
+    "bonusMeans": "This page calls him an officer of the Corps of Engineers, which is right for 1776 and wrong for the end of his career. He was commissioned into the Corps of Engineers and the corps became the Royal Engineers under him, by warrant, in April 1787 — eleven years in.",
+    "bonusChip": "documented"
   },
-  {
-   "year": "1 March 1805",
-   "was": "Brevet Major",
-   "became": "Lieutenant-Colonel",
-   "unit": "Corps of the Royal Engineers",
-   "src": "Ordnance Office, 18 March 1805 — vice Nepean",
-   "gaz": "15789 / 351",
-   "note": "The SAME Ordnance Office announcement, printed on the SAME page of the Gazette and in the same column of the Limerick Gazette, the Kentish Gazette and the Kentish Weekly Post, promoted his son CONSTANTINE D'ARCY to first lieutenant of the same corps. The archive found this page in July and read the father's line without noticing the son's."
+  "run": {
+    "head": "The career, year by year, out of the printed lists",
+    "lede": "This page used to draw a line between three dots — 1778, 1781 and the Royal Military Calendar of 1820. The Army Lists are annual, out of copyright and free in full text, so the dots can be joined. Three more editions were read on 15 September and they change what this archive can say about the shape of his service.",
+    "spellHead": "And the reason he had been hard to find",
+    "spell": "The 1783 compositor set his name **ROBERT D'ARCEY**, with an E. Search an outside catalogue for D'Arcy or Darcy and he is not there. This site's own search index has folded «d'arcey» and «darcey» into the D'Arcy group for weeks — the alias list was right, and it simply had never been spent on anybody else's index.",
+    "spellChip": "lore",
+    "rows": [
+      [
+        "1783",
+        "SECOND LIEUTENANT, The Corps of Engineers",
+        "Seven years after commissioning and still on the bottom rung. The ditto-chain is intact and readable: «John Humfrey 17 Jan. 1776 · James Fiddes do. · Richard Hockings do. · Robert Beatfon do. · ROBERT D'ARCEY do. · Benjamin Slack 4 Mar.» — Slack breaking the run with his own later date, which is what makes the chain legible.",
+        "A list of the officers of the Army, 32nd edition, 1783"
+      ],
+      [
+        "1802",
+        "CAPTAIN, Corps of Royal Engineers",
+        "The corps has been Royal for fifteen years. He is listed among the captains in the same cohort order he was commissioned in: «William Kerfteman, Charles Holloway, John Humfrey, Richard Hockings, ROBERT D'ARCY, George Bridges» — the men of 17 January 1776 still moving up together, twenty-six years on.",
+        "A list of the officers of the army, 1802, p.409"
+      ],
+      [
+        "1803",
+        "CAPTAIN, Corps of Royal Engineers — and MAJOR in the Army",
+        "He appears twice in the same volume: among the captains of the corps at page 288, and in the army's list of MAJORS, again beside Hockings. Ordnance officers carried corps rank and army rank separately, and by 1803 his army rank had outrun his corps rank.",
+        "A list of the officers of the army, 1803, pp.36 and 288"
+      ],
+      [
+        "January 1815",
+        "In the senior seniority lists, Royal Engineers",
+        "«Robert D'Arcy, R. Eng.» appears three times in the brevet and seniority lists of the Monthly Army List for January 1815, each time beside the men he was commissioned and promoted with — GEORGE BRIDGES and SAMUEL T. DICKENS, both entered «do.», and George W. Dixon of the Royal Artillery. The same volume carries «JOSEPH DARCY, ROY. ART.» The OCR of this scan is poor and will not yield his exact rank; what it does yield is that both men are serving, in their two corps, in the last January of the war.",
+        "The Monthly Army List, January 1815"
+      ],
+      [
+        "1821",
+        "The next generation, in the same book",
+        "«D'Arcy, Lt. Col. Joseph, Royal Art.» — the son in the artillery, a lieutenant-colonel, in the index of the 1821 list.",
+        "A list of the officers of the Army and of the Corps of Royal Marines, 1821"
+      ]
+    ],
+    "means": "The twenty-four-year blank this page once claimed is now furnished at both ends and in the middle: Minorca in 1781 from Porter, Second Lieutenant in 1783 from the Army List, Captain by 1802, Major in the army by 1803, Copenhagen in 1807 and Walcheren in 1809 from Porter again. What it shows is a slow career — seventeen years to make the rank of captain in a corps that promoted strictly by seniority and had very few deaths to promote into. **And the run itself is nearly all that survives free**: of 120 Army List identifiers checked one metadata record at a time, exactly ONE falls between 1776 and 1815 — January 1815. The rest of the annual run is not on the Internet Archive.",
+    "chip": "documented"
   },
-  {
-   "year": "by November 1806",
-   "was": "Major",
-   "became": "COLONEL, and named with his corps for the first time",
-   "unit": "Royal Engineers",
-   "src": "Oxford University and City Herald, 1 November 1806 — his daughter's marriage: “MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS”",
-   "gaz": "",
-   "note": "THE EARLIEST RECORD THIS ARCHIVE HAS FOUND THAT NAMES ROBERT D'ARCY'S CORPS, and it was sitting in the report of a wedding the archive has held since it read the Chatham register. The Chester Courant of 11 November adds the church and the officiant — Chatham Church, by the Rev. I. T. Jones. He was gazetted Lieutenant-Colonel in March 1805; a paper calling him Colonel in 1806 is a newspaper rounding up, which they did constantly, so the rank here is worth less than the corps."
-  },
-  {
-   "year": "4 June 1813",
-   "was": "Lieutenant-Colonel",
-   "became": "Colonel in the Army by Brevet",
-   "unit": "Royal Engineers",
-   "src": "War Office, 7 June 1813 — by the Prince Regent",
-   "gaz": "16737 / 1100",
-   "note": ""
-  },
-  {
-   "year": "19 July 1813",
-   "was": "Brevet Colonel",
-   "became": "Colonel",
-   "unit": "Corps of Royal Engineers",
-   "src": "Office of Ordnance — vice Evelegh",
-   "gaz": "16755 / 1431",
-   "note": "Found in the Gazette itself before the subscription was opened."
-  },
-  {
-   "year": "by March 1823",
-   "was": "Colonel",
-   "became": "MAJOR-GENERAL",
-   "unit": "Royal Engineers",
-   "src": "Hampshire Chronicle, 24 March 1823 — his wife's death notice: “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS”",
-   "gaz": "",
-   "note": "Connolly's Roll gives him Major-General on 12 AUGUST 1819 and this archive carried that on the authority of a book printed in 1898. A contemporary newspaper now corroborates it four years later, and gives the corps at the same time."
-  },
-  {
-   "year": "13 May 1827",
-   "was": "Major-General",
-   "became": "—",
-   "unit": "late of the Corps of Royal Engineers",
-   "src": "Seventeen newspapers",
-   "gaz": "",
-   "note": "Died at Chatham and was interred there with military honours on the 19th."
+  "armylists": {
+    "found": "20 September 2026",
+    "head": "The Army Lists, walked at last",
+    "lede": "FindMyPast's **British Army Lists & Commission Registers 1661-1826** was on this archive's list for a week as «probably not walkable». It is. Searched on 20 September, it returns **three entries for Robert D'Arcy** and a whole cohort of officers sharing his surname.",
+    "cols": [
+      "Year",
+      "Name",
+      "Rank",
+      "Regiment"
+    ],
+    "rows": [
+      [
+        "1778",
+        "Robert D'Arcy",
+        "**Practitioner Engineer & Second Lieutenant**",
+        "The Corps of Engineers"
+      ],
+      [
+        "1802",
+        "Robert D'Arcy",
+        "**Captain**",
+        "Corps of Royal Engineers"
+      ],
+      [
+        "1803",
+        "Robert D'Arcy",
+        "Captain",
+        "Corps of Royal Engineers"
+      ],
+      [
+        "1826",
+        "George D'Arcy",
+        "—",
+        "**39th or Dorsetshire**"
+      ],
+      [
+        "1767–1784",
+        "Francis D'Arcy",
+        "—",
+        "48th Foot — Ireland, then the Charibbee Islands"
+      ],
+      [
+        "1781–1784",
+        "John Pomeroy D'Arcy",
+        "—",
+        "64th Foot, America"
+      ],
+      [
+        "1761",
+        "Hyacinth D'Arcy",
+        "—",
+        "83rd Foot, Ireland"
+      ],
+      [
+        "1802–1803",
+        "John D'Arcy",
+        "—",
+        "6th (1st Warwickshire) Foot"
+      ],
+      [
+        "1826",
+        "John D'Arcy",
+        "—",
+        "**Royal Veteran Companies, New South Wales**"
+      ]
+    ],
+    "chip": "documented",
+    "robertHead": "What it gives on Robert, and what it does not",
+    "robert": "It gives **rank at both ends of the gap**: a practitioner engineer and second lieutenant in 1778, a captain by 1802. This archive once called the years between them «a blank of twenty-four years» and had to correct itself for it — own error 9. **The Army Lists do not fill that blank, and this search cannot yet say whether anyone could.** The volumes in this set are plainly not a continuous annual run: years seen while searching cluster around 1661-1710, then 1758-1784, then 1802-03 and 1826, with nothing between 1784 and 1802. Whether the gap is the Army's, the publisher's or FindMyPast's is **not established here**.",
+    "chipRobert": "inferred",
+    "ctlHead": "And a warning about this record set",
+    "ctl": "**The `yearofrecord` filter is ignored.** Asking for Smith in 1790 returns twenty rows dated 1673, 1678, 1689, 1690, 1692, 1693, 1704, 1707, 1709, 1781, 1802, 1803 and 1826 — and no 1790 at all. Any null built by narrowing this set to a year is an artefact of a parameter the search throws away.",
+    "chipCtl": "documented",
+    "nswHead": "One entry worth a second look",
+    "nsw": "**John D'Arcy, 1826, Royal Veteran Companies, New South Wales.** George Pitt D'Arcy sailed for New South Wales in 1826 in command of a detachment of the 39th aboard the convict ship *England*, and the same volume carries a D'Arcy already in the colony's veteran companies. **Nothing connects them** — the name is common enough in this list to hold a Francis, a Hyacinth and two Johns — but a D'Arcy in New South Wales in the year this family arrived there is not a coincidence this archive should leave unwritten."
   }
- ],
- "span": "Forty-nine years from a practitioner engineer's commission to a major-general's grave.",
- "joseph": {
-  "head": "And his son went to the guns, not the sappers.",
-  "body": "Joseph D'Arcy — baptised at Portsea in March 1780, son of Robert and Jean — appears in FindMyPast's British Army, Royal Artillery Officers 1716-1899 from 1795, in the Army List of 1798, in the Commission Registers in 1802, 1803 and 1826, among the officer promotions of 1803, 1804 and 1806, and in the Army Lists of 1840, 1841, 1843 and 1844.",
-  "means": "Commissioned at about fifteen and still listed at sixty-four. The Royal Artillery, not his father's Corps of Engineers. The detail of those entries is behind a further paywall even on a trial — the index is visible and the transcripts are not — so this is a career sketched from a list of dates rather than read.",
-  "chip": "indexed, not read"
- },
- "notHim": "One entry was discarded. A Robert D'Arcy is gazetted CORNET BY PURCHASE in the 17th Regiment of Light Dragoons on 19 May 1804, described as “Gent”, vice Harris. That is a young man buying his first commission in a cavalry regiment in 1804 — while this Robert D'Arcy had been a major since 1802 and was a lieutenant-colonel by the following March. Same name, different man, and the sort of thing that quietly wrecks a career chronology if nobody looks at the rank.",
- "post": {
-  "head": "And a post, not just a rank.",
-  "body": "The Kentish Gazette of 14 May 1805, reporting the death of his son, calls him “COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES”. The Chatham Lines were the bastioned fortifications thrown up to defend the dockyard and the Medway — the largest engineering work in Kent. Every other record of Robert D'Arcy gives a rank. This one gives him a job.",
-  "chip": "documented"
- },
- "porter": {
-  "head": "The Corps wrote its own history, and he is in it five times",
-  "lede": "Whitworth Porter's History of the Corps of Royal Engineers was published in 1889 from the Corps' own records. This archive had never opened it. Robert D'Arcy is named at Minorca, in a station list, at Copenhagen, at Walcheren and in the index — which is Porter's own statement that they are one man.",
-  "chip": "documented",
-  "indexLine": "D'Arcy, Robert, at second siege of Minorca, 209, 216 ; Copenhagen, 243 ; Walcheren, 248",
-  "rows": [
-   [
-    "1781–82",
-    "MINORCA — the siege of Fort St Philip's",
-    "“At the death of Colonel Mackellar, Lieutenant-Colonel Brewse had been appointed to the post of Chief Engineer in the island… Under him were Captain Gilbert Townshend, and Lieutenants ROBERT D'ARCY, W. Johnston, J. R. Douglas, C. Shipley, and J. Fiddes.” The Duc de Crillon landed on 19 August 1781; the garrison was about three thousand."
-   ],
-   [
-    "1780s",
-    "BARBADOS — confirmed from a Corps list, not a christening",
-    "A list of First Lieutenants by station carries “ROBERT D'ARCY, BARBADOS” outright. This archive had the posting only as an inference from two christenings at St Michael, and now has it from the Corps."
-   ],
-   [
-    "1807",
-    "COPENHAGEN — Commanding Engineer",
-    "“The Engineers consisted of LIEUTENANT-COLONEL R. D'ARCY, COMMANDING ENGINEER; Captains B. Fletcher, J. F. Birch, and S. R. Chapman; Second Captains C. W. Pasley, H. Goldfinch, and C. S. Rhodes; First Lieutenant G. Collyer.” The expedition sailed from Yarmouth Roads on 27 July with twenty thousand men under Sir Arthur Wellesley and reached Elsinore on 3 August."
-   ],
-   [
-    "1809",
-    "WALCHEREN — Commanding Royal Engineer",
-    "“The Commanding Royal Engineer with this corps was LIEUTENANT-COLONEL R. D'ARCY.” At the siege of Flushing he appears again among the officers summoned: “Colonel Fyers, Commanding Royal Engineer; Lieutenant-Colonels D'ARCY and Pilkington; Captains Rudyerd, Birch, Squire, Pasley…”"
-   ]
-  ],
-  "gapHead": "What it does to the twenty-four-year blank",
-  "gap": "This page has said that between the commission of 1778 and the majority of 1802 the career is a blank of twenty-four years, and that two Barbados christenings were the only records inside it. That is no longer true. Minorca falls squarely inside the blank, in 1781, three years after the commission — and the Barbados posting is no longer an inference from a baptism register but a line in the Corps' own station list.",
-  "chipGap": "this archive's own claim, corrected",
-  "arrestHead": "And the reason he nearly faced a court-martial",
-  "arrest": {
-   "setup": "On the night of 13 August 1809, storming a fleche on the western dyke at Flushing, Colonel Fyers — the Commanding Royal Engineer — was shot in the chest by a musket ball from a hundred yards. It passed first through some inches of sand on the parapet, which is the only reason it was not fatal. Wounded, he ordered that the senior engineer in the trenches deliver him a written report every morning.",
-   "quote": "The first morning, Colonel D., an old man beyond sixty, refused compliance, saying he had other things to do, and no solicitation could prevail on him to write a single line… The third morning Colonel D. again declined, saying IT WAS ALL NONSENSE; and on being reasoned with, denied the right of his superior to demand a report from him, because SOME THIRTY OR FORTY YEARS PREVIOUSLY HE HAD BEEN SENIOR TO COLONEL F. He was requested to reconsider the matter, and on a decided refusal the Brigade-Major put him under arrest.",
-   "src": "Told by Fyers's own Brigade-Major. Porter's footnote to “Colonel D.” reads, in full: “Colonel D'Arcy.”",
-   "end": "“After all the preliminary arrangements for a court-martial had been gone through, Colonel D'Arcy thought better of it, made his apologies, was released, and ever after furnished his report.”",
-   "chip": "documented",
-   "means": "It is the only description of this man's character that this archive holds. Sixty years old, in the trenches, in the third week of the worst British expedition of the war, refusing to write a report for a man he considered his junior — and then thinking better of it."
-  },
-  "ageHead": "One date it does NOT quite corroborate",
-  "age": "Fyers's Brigade-Major calls him “an old man beyond sixty” in August 1809. This archive's own best evidence for his age is the Chatham burial register, which gives him as 76 at his death in May 1827 and so puts his birth about 1750–51 — the source the tree's “1751” has always come from. A man born in 1750 or 1751 was FIFTY-EIGHT OR FIFTY-NINE in August 1809, not beyond sixty. The two do not agree, and the register is much the better witness: it was written by a clerk with a date in front of him, while “an old man beyond sixty” is an aside in an anecdote recalled years later by a man complaining about him. It is recorded because it is the only physical description of him this archive has, and because a source that is slightly wrong about an age can still be right about an arrest.",
-  "chipAge": "an aside, not a birth record — and it misses the register by a year or two",
-  "careful": "Porter is a nineteenth-century compiler working from Corps records, not the records themselves. He is the Corps' own historian and he indexes all five mentions as one Robert D'Arcy, which is as good as a secondary source gets — but the commission registers, station returns and the Walcheren papers at Kew are the primary evidence behind him, and none of them has been read here.",
-  "where": "Read 14 September 2026 in the full text of the 1889 edition on the Internet Archive, which is out of copyright and downloads freely."
- },
- "armylist": {
-  "head": "The 1778 Army List has him, and corroborates Porter",
-  "lede": "The printed Army Lists are free and out of copyright. The list of 1778 carries the whole establishment of the Corps of Engineers, rank by rank, and in the junior grade it has him by name.",
-  "entry": "Practitioner Engineer and Second Lieutenant: Wm. Kesterman, John Johnson, Charles Holloway, Thomas Whelpdale, John Humfrey, James Fiddes, Richard Hockings, Robert Beatson, ROBERT D'ARCY, Benjamin Slack, James Lees, Geo: Bridges, Lewis Hay.",
-  "chip": "documented",
-  "means": "It is a contemporary printed source for the rank this archive has carried on the authority of a commission register, and it puts him in a seniority run with twelve named contemporaries.",
-  "minorcaHead": "And it independently corroborates the Minorca roster",
-  "minorca": "Porter, writing in 1889, names the engineers at the siege of Fort St Philip's in 1781: Captain GILBERT TOWNSHEND and Lieutenants ROBERT D'ARCY, W. JOHNSTON, J. R. DOUGLAS, C. SHIPLEY and J. FIDDES. Every one of those six is in the 1778 establishment — Townshend among the Engineers Extraordinary and Captains; Shipley, Douglas and Johnston among the Sub-Engineers and Lieutenants; D'Arcy and Fiddes among the Practitioner Engineers. A list printed three years before the siege, and a history written a century after it, describing the same men in the same corps.",
-  "chipMinorca": "two independent sources agreeing",
-  "trapHead": "And the question it does NOT settle",
-  "trap": "This archive prints two dates for his first commission: 1776, from Connolly's Roll, on the timeline and elsewhere; and 1778, from the British Army Lists and Commission Registers, on this page. The obvious test is whether he appears in the printed lists of 1775 and 1776. He does not — and that proves nothing at all. The men listed beside him in 1778 are not there either: FIDDES, HOCKINGS, HUMFREY and SLACK return nought occurrences in both earlier volumes. Those lists do not print the Practitioner Engineer grade. The absence is the book's, not the man's.",
-  "chipTrap": "an empty search, not a null",
-  "resolve": "So the two dates stand unreconciled, and the document that would reconcile them is named: WO 54/240, the Board of Ordnance commission book for Engineers, 1755–1780, at Kew, not digitised and not name-indexed.",
-  "where": "Read 15 September 2026 in the free full text of the Army Lists for 1775, 1776, 1778 and 1781 on the Internet Archive.",
-  "dateHead": "And then the 1781 list settles the date",
-  "date": "The 1781 list prints the same men and interleaves each name with its seniority date. The block reads: “Wm. Kesterman 17 Jan. 76 · John Johnson do. · Charles Holloway do. · Thomas Whelpdale do. · John Humfrey do. · James Fiddes do. · Richard Hockings do. · Robert Beatson do. · ROBERT D'ARCY do. · Benjamin Slack 4 Mar. · James Lees 27 do. · Geo. Bridges 12 Dec. · Lewis Hay 2 Mar. 77.” His date is a ditto inside a block headed 17 JANUARY 1776, and the men after him break the ditto with their own later dates — which is what makes the chain readable rather than a guess. The 1778 list carries the same run.",
-  "dateChip": "documented — two printed lists, and Connolly agrees",
-  "dateMeans": "This archive has printed two dates for that commission. The timeline and four other pages say 1776, on Connolly's Roll. This page's career table said 1778, on a commercial index of the commission registers, and called it “his first commission, and now the earliest record of him anywhere in this archive”. Two contemporary printed Army Lists and a nineteenth-century roll of the Corps now agree on 17 January 1776, so the career table was wrong and the timeline was right. Corrected 15 September 2026.",
-  "dateCareful": "What is NOT claimed: that the 1778 index is a fabrication. Commission registers can carry a later confirming instrument, and a man can be appointed on one date and gazetted on another. But 1778 cannot be his FIRST commission, because he is already in the establishment with a 1776 seniority in a list printed that year."
- },
- "rmc": {
-  "head": "His whole service, printed while he was alive",
-  "lede": "The Royal Military Calendar was the army's own published record of its serving officers. The third edition of 1820 carries him under the Major-Generals, entry 607, with every rank and every date.",
-  "quote": "607. Major-General Robert Darcy, C.B. This officer was appointed Practitioner Engineer and 2nd Lieutenant in the corps of Royal Engineers, the 17th of January, 1776; 1st Lieutenant, the 1st of October, 1784; Captain, the 15th of August, 1793; Major in the army, the 29th of April, 1802; Lieutenant-Colonel in the Royal Engineers, the 1st of March, 1803; Colonel in the army, the 4th of June, 1813; Colonel in the Royal Engineers, the 21st of July, 1813; and Major-General, the 12th of August, 1819. He is a Companion of the Order of the Bath.",
-  "chip": "documented",
-  "means": "Printed in his lifetime, seven years before he died, from the army's own returns. It confirms 17 JANUARY 1776 outright — the date this archive worked out yesterday from a chain of ditto marks in the Army List of 1781, and had printed wrongly as 1778 on its own career page until then. Two independent routes to the same day.",
-  "newHead": "Two ranks this archive did not have",
-  "new": "FIRST LIEUTENANT, 1 October 1784, and CAPTAIN, 15 August 1793. Both fall inside the years this page once described as a blank, and the second of them lands between the Barbados christenings and the majority of 1802.",
-  "clashHead": "And one date that does not agree",
-  "clash": "This archive gives his lieutenant-colonelcy as 1 MARCH 1805, cited to the Ordnance Office notice in the London Gazette, issue 15789 page 351, promoted vice Nepean. The Royal Military Calendar gives 1 MARCH 1803 — same day, same month, two years apart. Everything else lines up as you would expect a gazette to lag a commission by days: the Calendar has Major on 29 April 1802 where the Gazette announced 11 May, and Colonel in the Royal Engineers on 21 July 1813 where the Ordnance Office notice is dated the 19th.",
-  "clashMeans": "A two-year gap is not a gazette lag, so one of them is wrong. The Gazette is the primary instrument and carries an issue, a page and the name of the man he replaced; the Calendar is a compilation and its typesetting is visibly imperfect elsewhere on the same page. This archive keeps 1805 and records the disagreement rather than quietly choosing.",
-  "chipClash": "an unresolved conflict, stated",
-  "parentHead": "What it does not say",
-  "parent": "Nothing about where he came from. The Calendar prints parentage and schooling when it has them — the very next entry, Major-General George Bridges, opens “After the usual course of instruction at Woolwich Academy” — and for Robert D'Arcy it prints none. The oldest question in this archive, who his parents were, is not answered here, and the silence is from the army's own book.",
-  "chipParent": "a null from the best-placed source",
-  "where": "Read 15 September 2026 in the free full text of the 1820 third edition on the Internet Archive."
- },
- "gazette": {
-  "head": "The Gazette is silent, and the silence has a date",
-  "lede": "The London Gazette is free, needs no account, and is the official record of every commission the Crown signed. Searched on 15 September for both spellings across 1770–1830, it does not name this Robert D'Arcy once. That is worth something only because the search was controlled first.",
-  "controlHead": "What the control showed",
-  "control": [
-   [
-    "The corpus is there",
-    "1,057 notices mentioning «Lieutenant» in the 1770s alone, 245 mentioning «Ordnance», 38 mentioning «Engineers». The decade is digitised and searchable."
-   ],
-   [
-    "Engineers ARE gazetted — later",
-    "25 May 1778, issue 11878: «Lieutenant Thomas Shewbridge, of the Corps of Engineers, to be First Lieutenant». 24 February 1783, issue 12418: promotions in the Corps of Engineers, naming William Green, Matthew Dixon, John Archer, Harry Gordon and John Brewse. 23 February 1787, issue 12833: «Office of Ordnance… Corps of Engineers, Second Lieutenant James Glenie is appointed to be First Lieutenant»."
-   ],
-   [
-    "But not in 1776",
-    "Notices mentioning «Corps of Engineers» by year: 1774 — NONE. 1775 — NONE. 1776 — three, of which one concerns the Chief Engineer in Ireland and the other two are the same Bengal notice reprinted. 1777 — three. Not one British engineer commission list in the year Robert D'Arcy was commissioned."
-   ],
-   [
-    "And the Darcys who are there are other men",
-    "All twenty-two notices naming a Darcy or D'Arcy between 1770 and 1789 are identifiable: Darcy Tancred, Darcy Burnell of Winkburn, Darcy Molineux, Sir Robert Darcy Hildyard of Winestead, Darcy Linton, John Pomeroy Darcy, Arthur Darcy — and Darcy Lever, which is a place in Lancashire."
-   ]
-  ],
-  "means": "The Ordnance did not gazette its engineer commissions in 1776; it began doing so during the American war and was doing it routinely by the mid-1780s. So the Gazette's silence is not evidence that the commission did not happen — it is evidence about when the Ordnance started publishing, and it is the reason the seniority column of the printed Army List, not the Gazette, is the record that settles 17 January 1776.",
-  "chip": "documented",
-  "bonusHead": "One thing it did give, exactly dated",
-  "bonus": "The London Gazette, issue 12850, page 197, 23 April 1787: «His Majesty, by Warrant of this Day's Date, has been pleased to direct, that the Corps of Engineers shall in future take the Name of the Corps of ROYAL Engineers, and be so stiled and called.»",
-  "bonusMeans": "This page calls him an officer of the Corps of Engineers, which is right for 1776 and wrong for the end of his career. He was commissioned into the Corps of Engineers and the corps became the Royal Engineers under him, by warrant, in April 1787 — eleven years in.",
-  "bonusChip": "documented"
- },
- "run": {
-  "head": "The career, year by year, out of the printed lists",
-  "lede": "This page used to draw a line between three dots — 1778, 1781 and the Royal Military Calendar of 1820. The Army Lists are annual, out of copyright and free in full text, so the dots can be joined. Three more editions were read on 15 September and they change what this archive can say about the shape of his service.",
-  "spellHead": "And the reason he had been hard to find",
-  "spell": "The 1783 compositor set his name **ROBERT D'ARCEY**, with an E. Search an outside catalogue for D'Arcy or Darcy and he is not there. This site's own search index has folded «d'arcey» and «darcey» into the D'Arcy group for weeks — the alias list was right, and it simply had never been spent on anybody else's index.",
-  "spellChip": "lore",
-  "rows": [
-   [
-    "1783",
-    "SECOND LIEUTENANT, The Corps of Engineers",
-    "Seven years after commissioning and still on the bottom rung. The ditto-chain is intact and readable: «John Humfrey 17 Jan. 1776 · James Fiddes do. · Richard Hockings do. · Robert Beatfon do. · ROBERT D'ARCEY do. · Benjamin Slack 4 Mar.» — Slack breaking the run with his own later date, which is what makes the chain legible.",
-    "A list of the officers of the Army, 32nd edition, 1783"
-   ],
-   [
-    "1802",
-    "CAPTAIN, Corps of Royal Engineers",
-    "The corps has been Royal for fifteen years. He is listed among the captains in the same cohort order he was commissioned in: «William Kerfteman, Charles Holloway, John Humfrey, Richard Hockings, ROBERT D'ARCY, George Bridges» — the men of 17 January 1776 still moving up together, twenty-six years on.",
-    "A list of the officers of the army, 1802, p.409"
-   ],
-   [
-    "1803",
-    "CAPTAIN, Corps of Royal Engineers — and MAJOR in the Army",
-    "He appears twice in the same volume: among the captains of the corps at page 288, and in the army's list of MAJORS, again beside Hockings. Ordnance officers carried corps rank and army rank separately, and by 1803 his army rank had outrun his corps rank.",
-    "A list of the officers of the army, 1803, pp.36 and 288"
-   ],
-   [
-    "January 1815",
-    "In the senior seniority lists, Royal Engineers",
-    "«Robert D'Arcy, R. Eng.» appears three times in the brevet and seniority lists of the Monthly Army List for January 1815, each time beside the men he was commissioned and promoted with — GEORGE BRIDGES and SAMUEL T. DICKENS, both entered «do.», and George W. Dixon of the Royal Artillery. The same volume carries «JOSEPH DARCY, ROY. ART.» The OCR of this scan is poor and will not yield his exact rank; what it does yield is that both men are serving, in their two corps, in the last January of the war.",
-    "The Monthly Army List, January 1815"
-   ],
-   [
-    "1821",
-    "The next generation, in the same book",
-    "«D'Arcy, Lt. Col. Joseph, Royal Art.» — the son in the artillery, a lieutenant-colonel, in the index of the 1821 list.",
-    "A list of the officers of the Army and of the Corps of Royal Marines, 1821"
-   ]
-  ],
-  "means": "The twenty-four-year blank this page once claimed is now furnished at both ends and in the middle: Minorca in 1781 from Porter, Second Lieutenant in 1783 from the Army List, Captain by 1802, Major in the army by 1803, Copenhagen in 1807 and Walcheren in 1809 from Porter again. What it shows is a slow career — seventeen years to make the rank of captain in a corps that promoted strictly by seniority and had very few deaths to promote into. **And the run itself is nearly all that survives free**: of 120 Army List identifiers checked one metadata record at a time, exactly ONE falls between 1776 and 1815 — January 1815. The rest of the annual run is not on the Internet Archive.",
-  "chip": "documented"
- }
 }

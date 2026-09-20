@@ -193,4 +193,28 @@ import d from "../data/the-corps.json";
       <a href={u("/behind-the-paywall/")}>His marriage at Portsea →</a> ·
       <a href={u("/hornby/")}>The claim about his birth →</a></p>
   </section>
+
+  <Blk label={`FindMyPast · ${d.armylists.found}`} title={d.armylists.head}>
+    <p class="lede" set:html={mdp(d.armylists.lede)}></p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr>{d.armylists.cols.map((c) => <th>{c}</th>)}</tr></thead>
+        <tbody>{d.armylists.rows.map(([y, n, r, g]) => (
+          <tr><td class="m">{y}</td><td><strong>{n}</strong></td>
+            <td class="small" set:html={mdp(r)}></td>
+            <td class="small" set:html={mdp(g)}></td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.armylists.chip}</span></p>
+    <Note style="border-left-width:3px;margin-top:1.3rem"><strong>{d.armylists.robertHead}.</strong>
+      <span set:html={mdp(d.armylists.robert)} />
+      {" "}<span class="chip inf">{d.armylists.chipRobert}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.armylists.ctlHead}.</strong>
+      <span set:html={mdp(d.armylists.ctl)} />
+      {" "}<span class="chip doc">{d.armylists.chipCtl}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.armylists.nswHead}.</strong>
+      <span set:html={mdp(d.armylists.nsw)} />
+      {" "}<span class="chip lore">not claimed</span></Note>
+  </Blk>
+
 </Base>

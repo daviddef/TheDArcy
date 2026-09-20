@@ -891,11 +891,11 @@
     },
     {
       "n": 97,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
       "what": "The Army Lists ARE walkable after all — British Army Lists & Commission Registers 1661-1826",
-      "note": "**This corrects item 42, closed yesterday.** That item checked 120 Internet Archive identifiers one metadata record at a time, found exactly one volume between 1776 and 1815, and concluded «there is no digitised annual run to walk». **There is one — indexed rather than page-image, and behind this subscription.** Robert D'Arcy is in it at 1778, 1802 and 1803; in **British Army Officer Promotions 1800-1815** at 1802, 1804, 1805 and 1813; and in **Britain, Royal and Imperial Calendars 1767-1973** at 1805 and 1808. Each entry needs opening: a commission register can carry a rank, a station and sometimes a predecessor, and the Royal Calendar lists office-holders by appointment."
+      "note": "**This corrects item 42, closed yesterday.** That item checked 120 Internet Archive identifiers one metadata record at a time, found exactly one volume between 1776 and 1815, and concluded «there is no digitised annual run to walk». **There is one — indexed rather than page-image, and behind this subscription.** Robert D'Arcy is in it at 1778, 1802 and 1803; in **British Army Officer Promotions 1800-1815** at 1802, 1804, 1805 and 1813; and in **Britain, Royal and Imperial Calendars 1767-1973** at 1805 and 1808. Each entry needs opening: a commission register can carry a rank, a station and sometimes a predecessor, and the Royal Calendar lists office-holders by appointment.\n\n**Done 20 September** — written up at **/the-corps/**. Three Robert entries giving rank at both ends of the gap, George of the 39th in 1826, and a warning: **the set's `yearofrecord` filter is silently ignored**, so the 1784-1802 silence may be the publisher's and not the man's. That distinction is left open rather than resolved."
     },
     {
       "n": 98,
