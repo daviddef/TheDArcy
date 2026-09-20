@@ -923,11 +923,11 @@
     },
     {
       "n": 101,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
       "what": "The 1804 «Jno Saniger» at Berkeley with no father indexed",
-      "note": "The complete pass turned up one entry it cannot place: **Jno Saniger, Berkeley, 1804, father column empty** — the only Berkeley Saniger baptism in the whole 158 with no father named. Hannah Sanigor was baptised at Berkeley on 18 August 1804 and her brother Jno on 18 September 1803. Three readings: a second son born the same year as Hannah, a mis-indexed second copy of the 1803 entry, or a different family. **The register page for 1804 settles it in one look** and the archive has not looked."
+      "note": "The complete pass turned up one entry it cannot place: **Jno Saniger, Berkeley, 1804, father column empty** — the only Berkeley Saniger baptism in the whole 158 with no father named. Hannah Sanigor was baptised at Berkeley on 18 August 1804 and her brother Jno on 18 September 1803. Three readings: a second son born the same year as Hannah, a mis-indexed second copy of the 1803 entry, or a different family. **The register page for 1804 settles it in one look** and the archive has not looked.\n\n**Settled 20 September, and it was none of the three readings.** The transcripts show the 1803 entry naming **a father and no mother** and the 1804 entry naming **a mother, MARY SANIGER, and no father** — five months apart at consecutive index numbers. A named mother beside an empty father's column is a **base-born child**, and Hannah's mother was Lydia. Not this family."
     },
     {
       "n": 102,
@@ -1035,11 +1035,11 @@
     },
     {
       "n": 116,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-17",
       "what": "Re-open the South Leith marriage of 1747",
-      "note": "The one marriage in the audit that could not be re-checked: **Joseph Ward and Marth Gairden, South Leith, 27 October 1747.** The record set «Scotland, Parish Marriages & Banns 1561-1893» would not resolve under any datasetname tried. It is probably sound — this archive's entry names the bride's father, **William Gairden**, and a result row never carries a father — but that is an argument and not a check. Find the set's real name from FindMyPast's A-Z of record sets and read the transcript."
+      "note": "The one marriage in the audit that could not be re-checked: **Joseph Ward and Marth Gairden, South Leith, 27 October 1747.** The record set «Scotland, Parish Marriages & Banns 1561-1893» would not resolve under any datasetname tried. It is probably sound — this archive's entry names the bride's father, **William Gairden**, and a result row never carries a father — but that is an argument and not a check. Find the set's real name from FindMyPast's A-Z of record sets and read the transcript.\n\n**Done 20 September. The audit is complete at five of five.** The set resolves through a cross-set search with `place=south+leith` and no `datasetname` at all. The transcript confirms **GAIRDEN** and gives **spouse's father, WILLIAM GAIRDEN** — the field the result row never shows, and the one the argument for this record rested on. Checked now rather than argued."
     },
     {
       "n": 117,

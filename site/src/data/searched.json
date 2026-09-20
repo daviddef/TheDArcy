@@ -3462,6 +3462,22 @@
       "ctl": "named",
       "got": "It cannot, and the filter fails silently. Asking for SMITH in 1790 returns twenty rows dated 1673, 1678, 1689, 1690, 1692, 1693, 1704, 1707, 1709, 1781, 1802, 1803 and 1826 — **and no 1790 at all**. The parameter is thrown away. Recorded so that no future session builds a null on it, and so that the absence of Robert between 1784 and 1802 is not mistaken for the absence of Robert.",
       "href": "/the-corps"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms, the two transcripts",
+      "what": "Whether the 1804 «Jno Saniger» at Berkeley is a duplicate of the 1803 one",
+      "when": "20 Sep 2026",
+      "outcome": "yield",
+      "got": "It is not. The 1803 entry (18 September) names **a father, JNO SANIGER, and no mother**; the 1804 entry (11 February) names **a mother, MARY SANIGER, and no father**. Consecutive index numbers five months apart, which is what made a duplicate look likely from the result rows — and the mother is on the transcript only. A named mother beside an empty father's column is how a register records a base-born child. **Not Hannah's family: her mother was Lydia.**",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — Scotland, Parish Marriages & Banns 1561-1893",
+      "what": "Joseph Ward and Marth Gairden, South Leith, 1747 — the fifth marriage of the audit",
+      "when": "20 Sep 2026",
+      "outcome": "yield",
+      "got": "**Confirmed, and the audit is now complete at five of five.** The set would not resolve under any `datasetname` on 17 September; it resolves through a cross-set search with `place=south+leith` and no dataset. The transcript gives spouse's last name **GAIRDEN** and a field the result row never shows — **spouse's father, WILLIAM GAIRDEN**. The argument made for this record three days ago, that somebody must have read past the row because a row never carries a father, was right; it is now checked instead.",
+      "href": "/behind-the-paywall"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

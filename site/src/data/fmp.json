@@ -101,7 +101,7 @@
     "head": "Every marriage this archive cites, re-opened",
     "lede": "On 16 September a claim carried by every online tree — that John Saniger married Lydia Jones at Berkeley in 1797 — was disproved by opening a transcript and reading one field the result row does not show: **the spouse's surname**. The man was a Sawyer. That raised an obvious question about this archive's own work, and it has now been answered rather than assumed.",
     "howHead": "What was audited",
-    "how": "**All 51 marriage entries in the register.** Most were never at risk: FreeREG publishes a full register transcript with both parties named, the Queensland index gives a registration number that carries both, and a newspaper notice prints the names in full. **Five came from FindMyPast index sets, where the result row is the trap.** Four were re-opened at transcript level on 17 September. All four hold.",
+    "how": "**All 51 marriage entries in the register.** Most were never at risk: FreeREG publishes a full register transcript with both parties named, the Queensland index gives a registration number that carries both, and a newspaper notice prints the names in full. **Five came from FindMyPast index sets, where the result row is the trap.** **All five have now been re-opened at transcript level — four on 17 September, the fifth on the 20th — and all five hold.**",
     "cols": [
       "The claim",
       "Set",
@@ -127,12 +127,17 @@
         "Thomas Sanigre m. Martha Golding · Bristol, 24 August 1828",
         "England Marriages 1538-1973",
         "GOLDING — confirmed"
+      ],
+      [
+        "Joseph Ward m. Marth Gairden · South Leith, 27 October 1747",
+        "Scotland, Parish Marriages & Banns 1561-1893",
+        "GAIRDEN — confirmed, and her father with her"
       ]
     ],
     "chip": "documented",
-    "oneHead": "One was not re-opened, and it is named rather than counted as clean",
-    "one": "**Joseph Ward and Marth Gairden, South Leith, 27 October 1747.** The record set would not resolve under any name tried on 17 September, so the transcript was not read again. It is very probably sound: this archive's entry names **the bride's father, WILLIAM GAIRDEN**, and a result row has never carried a father, so somebody read past the row when it was first taken. That is an argument, not a check, and it is written here as one.",
-    "chipOne": "inferred",
+    "oneHead": "And the fifth, closed three days later",
+    "one": "**Joseph Ward and Marth Gairden, South Leith, 27 October 1747** could not be re-opened on 17 September because the record set would not resolve under any `datasetname` tried. It resolves through a **cross-set search with a place** instead — `place=south+leith` and no dataset at all. The transcript confirms **GAIRDEN**, and carries a field the result row never shows: **Spouse's father — WILLIAM GAIRDEN.** The argument made for it on the 17th, that a result row has never carried a father so somebody must have read past the row, turns out to have been right. It is now checked rather than argued. **All five hold.**",
+    "chipOne": "documented",
     "defectHead": "The defect is FindMyPast's, and it is not one dataset's quirk",
     "defect": "The Portsea marriage was the useful test, because **Hampshire Marriages is a different collection with a different owner** — the Hampshire Genealogical Society — and its result row has exactly the same columns: *First name · Last name · Marriage year · **Spouse's first name(s)** · Place*. No surname. So a reader who searches a bride by her forename, matches a groom's forename, a year and a parish, and stops at the results page, will build a false marriage on any FindMyPast set they use. **That is how «Lydia Jones» got into every tree on the internet**, and the only defence is the extra click.",
     "smallHead": "And one small thing worth knowing",

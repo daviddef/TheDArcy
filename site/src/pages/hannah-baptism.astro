@@ -72,6 +72,26 @@ import d from "../data/hannah-baptism.json";
     <p class="small" style="margin-top:1rem">{d.probate.how}</p>
   </Blk>
 
+  <Blk label={`Settled · ${d.jno1804.found}`} title={d.jno1804.head}>
+    <p class="lede" set:html={mdp(d.jno1804.lede)}></p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr><th>Child</th><th>Baptised</th><th>Father</th><th>Mother</th><th></th></tr></thead>
+        <tbody>{d.jno1804.rows.map((r) => (
+          <tr><td><strong>{r[0]}</strong></td>
+            <td class="m small" set:html={mdp(r[1])}></td>
+            <td class="small" set:html={mdp(r[2])}></td>
+            <td class="small" set:html={mdp(r[3])}></td>
+            <td class="small">{r[4]}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      <span set:html={mdp(d.jno1804.means)} />
+      {" "}<span class="chip doc">{d.jno1804.chip}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.jno1804.howHead}.</strong>
+      <span set:html={mdp(d.jno1804.how)} /></Note>
+  </Blk>
+
   <Blk label={`Three tests · ${d.lydiaHunt.found}`} title={d.lydiaHunt.head}>
     <p class="lede" set:html={mdp(d.lydiaHunt.lede)}></p>
     <div style="margin-top:1.4rem;display:flex;flex-direction:column;gap:1.3rem">

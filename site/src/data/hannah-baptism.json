@@ -293,5 +293,30 @@
     "chipMeans": "not claimed",
     "nextHead": "What would settle it",
     "next": "**The Berkeley marriage register itself, 1795 to 1799, read by eye rather than through an index** — the same answer the RCB Library gave about Wicklow, and for the same reason. Failing that, the Gloucester diocesan **marriage licence bonds and allegations**, which survive separately from the registers and would name both parties, their parishes and often her father."
+  },
+  "jno1804": {
+    "found": "20 September 2026",
+    "head": "The 1804 entry, and what was in the column nobody reads",
+    "lede": "The complete Saniger pass left one entry it could not place: **Jno Saniger, Berkeley, 1804, with the father's column empty** — the only Berkeley baptism of the 158 without a father named. Three readings were offered: a second son born the same year as Hannah, a mis-indexed copy of the 1803 entry, or a different family. **It is none of them.**",
+    "rows": [
+      [
+        "Jno Saniger",
+        "18 September 1803",
+        "father JNO SANIGER",
+        "mother not given",
+        "Hannah's brother"
+      ],
+      [
+        "Jno Saniger",
+        "**11 February 1804**",
+        "**no father**",
+        "**mother MARY SANIGER**",
+        "not this family"
+      ]
+    ],
+    "means": "The two records sit at consecutive index numbers, five months apart, which is what made a duplicate look likely. The transcripts settle it. The 1803 entry names **a father and no mother**; the 1804 entry names **a mother and no father** — and the mother is **MARY**, not Lydia. A father's column left empty beside a named mother is how a parish register records a **base-born child**, and it is not a clerical slip.",
+    "chip": "documented",
+    "howHead": "And it was found the same way as everything else this week",
+    "how": "The result row showed «Father's first name(s): —» and stopped. **The mother is on the transcript, one click further in.** That is the fourth question this month answered by the field a results page does not show, after a Sawyer, a Cossens and a Gairden."
   }
 }
