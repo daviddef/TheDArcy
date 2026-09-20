@@ -1,629 +1,776 @@
 {
- "title": "What changed",
- "eyebrow": "23 passes · 291 changes",
- "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
- "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
- "days": [
-  {
-   "when": "15 September 2026",
-   "title": "The last day of the subscription: the Hyde D'Arcys, and a claim withdrawn",
-   "did": [
-    "NAMED JOSEPH D'ARCY'S FIVE CHILDREN, which this archive has wanted since it found his will. All five baptised at Milford to Joseph and KATHERINE LUCY ELIZA, the register calling him “Lt Col RA of MILFORD HOUSE” — an address nobody here had.",
-    "FRANK HYDE D'ARCY WAS BORN AT MADEIRA on 14 December 1838. Four words in a baptism note, and Joseph D'Arcy was on a Portuguese island in the Atlantic in the winter of 1838.",
-    "JOHN HYDE D'ARCY went to HARROW and died at Southampton on 28 June 1852, aged nineteen — reported as far as the Catholic Telegraph in Dublin.",
-    "FRANK HYDE D'ARCY died at Worcester on 15 June 1868, aged twenty-nine, five years after his Lymington wedding, and was brought home to be buried at Pennington.",
-    "And a grandson: FRANK HAMILTON HYDE D'ARCY, baptised at Croydon Common on 26 November 1868 — FIVE MONTHS AFTER HIS FATHER DIED — father entered as “Gentleman”, mother Anna Maria, of St James Road. He died at Chelmsford in 1910.",
-    "FOUND JEAN WARD'S DEATH NOTICE: Hampshire Chronicle, 24 March 1823 — “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.”",
-    "WITHDREW A CLAIM MADE THE DAY BEFORE. /margaret-jones announced the 1843 notice as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. The 1823 notice does it twenty years earlier. Filed as an error, and the page now carries the correction above the claim.",
-    "FOUND THE 1806 MARRIAGE NOTICE: “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — Oxford University and City Herald, 1 November 1806. The Chester Courant adds the church and the officiant.",
-    "Which disproved the correction made an hour earlier. The corps is on record in 1806, not 1823 and not 1843 — and the 1806 notice is the report of the very marriage the /margaret-jones page was built around. It also fixes Margaret as the ELDEST DAUGHTER.",
-    "DOCUMENTED JOSEPH D'ARCY'S PERSIAN DECORATION from the London Gazette of 30 June 1818: the Prince Regent's permission to wear the Second Class of the Imperial Order of the Lion and Sun, conferred by the King of Persia. Five papers carried it within the week. The page that said the archive “will not assert it from three letters after his name” now cites the grant.",
-    "CHASED THE TWO RICHARD D'ARCY DEATHS. Neither is the Richard of Priestlands — and one of them opened a family nobody here knew existed.",
-    "“At St Helier's, JERSEY, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33” — Saint James's Chronicle, 23 May 1857.",
-    "And five years later: “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR”, died at Bangor, 14 June 1862.",
-    "JOSEPH D'ARCY MARRIED THE DAUGHTER OF AN EARL. The tree has always given him a wife CATHERINE GEORGIANA WEST, married at Bath in November 1817, and this archive never looked at the name — WEST is the family name of the EARLS DE LA WARR. Two newspapers call her Lady Catherine independently.",
-    "So the five Milford children are his SECOND family. “Third son” means there was a first and a second: at least eight children across two marriages, where this morning the archive credited him with five.",
-    "Established a real null on the Priestlands Richard: only FIVE D'Arcy deaths were ever registered in the Lymington district — Joseph, his widow, and three moderns — and no Richard D'Arcy or ARCY is in the 1851 census anywhere in Britain.",
-    "OPENED FIND A GRAVE, a source this archive had never used, and found THREE D'Arcy memorials at CENTENARY MEMORIAL GARDENS, Brisbane: Kenneth Lindsay D'Arcy (1927–2010, plot Secret Garden), Audrey Dell D'Arcy (1929–2022, Garden of Reflection E/20) and CHRISTINE HILDA D'ARCY-EVANS (1930–2017, Garden of Reflection C/41), whose name this archive has never held.",
-    "And control-tested it first. Find a Grave's `locationId=state_2118` returns NO MATCHES for D'Arcy, Darcy, Sneyd — AND FOR SMITH, which is impossible, while Darcy worldwide returns 10,654. Searching within a named cemetery works; the location filter does not.",
-    "PUT FOUR MORE PLACES ON THE ATLAS by tidying what is handed to the geocoder — 153 placed became 157, and the approximates fell from 67 to 64. HTML escapes, “Som Eng” abbreviations and prose like “Christened in Berkeley” were stopping the lookup. What the page PRINTS is unchanged: the place as recorded.",
-    "Left thirteen unplaced rather than guess: Buckwall, Deinschwang, Neuhaus, Himley Hall, “Parish of Elmore” and “?” among them.",
-    "OPENED FOUR SOURCES THIS ARCHIVE HAD NEVER USED, and came away with one usable and three refusals — each with a reason and a control behind it.",
-    "ANTENATI holds 422 REGISTERS for ARIENZO at the Archivio di Stato di Caserta — Matrimoni processetti 63, Matrimoni 62, Nati 59, Morti 57, Diversi 45, from 1809 — digitised, free, and NOT NAME-INDEXED. A search for FALCO returns nothing; so does RUSSO, the commonest surname in Campania, which is the control that proves the index is missing rather than the family.",
-    "THE NLI CANNOT HELP THE LIMERICK LINE, and that is worth saying rather than searching. Its registers are CATHOLIC; Paul Cole Atkinson is recorded born at ST MARY'S, LIMERICK — the Church of Ireland cathedral parish — and Atkinson, Cole, Creech, Kent, Bowen and Peevers are Protestant settler names. The same shape as the Wicklow problem.",
-    "irishgenealogy.ie is behind a Cloudflare bot check for the THIRD time in this archive's life. RootsIreland is behind a subscription. SCOTLANDSPEOPLE answers ACCESS DENIED without an account, and no account was created and no credentials entered.",
-    "BILLIONGRAVES IS BLOCKED, NOT EMPTY: the page loads and its own search API answers 403 and 400, and the country list never finishes. Nothing was searched, so nothing is known — recorded that way.",
-    "Eight rows added to /coverage and three errands opened, so that the next pass starts from these verdicts instead of repeating them.",
-    "FOUND LADY CATHERINE'S BURIAL: CATHERINE GEORGIANA DARCY, AGED 36, “OF BATH”, buried 22 MARCH 1824 at BOURN, CAMBRIDGESHIRE. Born about 1788, twenty-nine at her Bath marriage, and dead six years before Joseph remarried — so the gap between his two families is now measured rather than assumed.",
-    "Her third son Richard was born about 1824, the year she died at thirty-six. Published as an inference and labelled as one; and why she is buried at Bourn, a hundred and fifty miles from Bath, is not explained.",
-    "FREEBMD OPENS WITHOUT A LOGIN AND RETURNS NOTHING. It accepts a POST and answers with the results-page furniture and no rows. Control: SMITH BIRTHS IN BRISTOL IN 1840 returns zero, which is impossible. Nothing was searched, and no null from it is recorded.",
-    "ROOTSCHAT REQUIRES AN ACCOUNT TO SEARCH, let alone to post. None was created. The two questions worth putting to it — the Holderness descent and the disproved Keele graft, both asked as “what would break this” — are drafted as errand 47.",
-    "GENEANET READS WITHOUT SIGNING IN, and no bot check appeared: 26 FALCO marriages at ARIENZO in Italy, Marriages 1809-1900, both parties named, including FALCO GIOVANNA married to CRISCI ANIELLO. Recorded as the Falco archive's ground rather than imported.",
-    "CLOSED THE BURIAL QUESTION. All three Sussex sisters are buried out of ST ANDREW'S OLD CHURCH, HOVE — and their entries are on THE SAME PAGE of the same register, TNA RG 37/65/2 page 47. CHARLOTTE 28 MAY 1869, JANE 10 JANUARY 1875, CATHERINE 23 JANUARY 1876.",
-    "Two exact dates where the archive held only GRO quarters — and Catherine's 23 January is the date the Horsham paper printed a fortnight after the event, so a parish register and a newspaper agree without either having seen the other.",
-    "FOUND ROBERT WEST D'ARCY, married at BOMBAY in 1846. The middle name is the find: WEST is Lady Catherine Georgiana's family name, so Joseph's son carried his mother's peerage surname to India. The transcript is paywalled even on a paid trial — indexed, not read.",
-    "And a third broken FindMyPast parameter: `sourcecategory` mangles to `life-events-bmds` and returns zero whatever else is asked. Any null drawn through it is worthless.",
-    "WILLIAM SNEYD OF MADELEY, the oldest name in the Sneyd line and until today a citation reading “Sneyd Web Site” with no death at all, now has TWO documented candidate burials at Madeley All Saints: 1819 aged 88, and 13 MAY 1827 AGED 84. The weaver married about April 1769 and fathered children to 1794, so the 1827 burial fits far better — and two candidates are two candidates, and the page says so.",
-    "CHARLOTTE CATHCART D'ARCY married ROBERT MEAD PEARSON at PARRAMATTA in 1859, registration 2618 — the town where her father died in 1849, and she would have been 34. A strong candidate for the Charlotte christened at Chatham eight days before the England sailed, and NOT an identification: the index spells the middle name two ways and the baptism gives none. Errand 48 is the certificate.",
-    "And recorded a seam left unworked as the trial expires: EIGHTY-ONE D'Arcy burials and memorials in Queensland Burials & Memorials, of which this archive holds one."
-   ],
-   "found": [
-    [
-     "Corrected",
-     "/margaret-jones — “the first record anywhere” withdrawn, with the 1823 notice quoted"
-    ],
-    [
-     "Added",
-     "/the-corps — Major-General by March 1823, corroborating Connolly from a contemporary paper"
-    ],
-    [
-     "Added",
-     "/joseph-darcy — the five children, Madeira, Harrow, and a grandson at Croydon"
-    ],
-    [
-     "Filed",
-     "/what-we-got-wrong — own error 27, on the difference between “the earliest found” and “the first anywhere”"
-    ],
-    [
-     "Added",
-     "/the-corps — “Col. D'Arcy, of the Royal Engineers”, November 1806"
-    ],
-    [
-     "Added",
-     "/joseph-darcy — the Lion and Sun, gazetted rather than inferred"
-    ],
-    [
-     "Added",
-     "/joseph-darcy — Lady Catherine, and the first family"
-    ],
-    [
-     "New source",
-     "Find a Grave — three Brisbane memorials, where the archive had zero"
-    ],
-    [
-     "Added",
-     "/atlas — four more places, and four fewer approximations"
-    ],
-    [
-     "Added",
-     "/coverage — eight rows: Find a Grave twice, BillionGraves, Antenati, the NLI, irishgenealogy, RootsIreland, ScotlandsPeople"
-    ],
-    [
-     "Added",
-     "/errands — the 422 Arienzo registers, the Church of Ireland Limerick line, and a BillionGraves retry"
-    ],
-    [
-     "Added",
-     "/joseph-darcy — Lady Catherine's burial, 22 March 1824"
-    ],
-    [
-     "Added",
-     "/coverage — FreeBMD unusable, RootsChat blocked, Geneanet good"
-    ],
-    [
-     "Added",
-     "/errands — errand 47, the Hornby and Keele questions for RootsChat"
-    ],
-    [
-     "Corrected",
-     "/sussex-sisters — the burials, and one fewer open question"
-    ],
-    [
-     "Added",
-     "/sneyds — two candidate burials for William of Madeley"
-    ],
-    [
-     "Added",
-     "/chatham — a candidate for what became of Charlotte"
-    ]
-   ]
-  },
-  {
-   "when": "14 September 2026",
-   "title": "The Sussex sisters, documented",
-   "did": [
-    "Took the three daughters added to this archive the same day out of its own family tree — Jane, Catherine and Charlotte — and tested them against the public record. All three hold.",
-    "Found all three CIVIL DEATH REGISTRATIONS, same district, seven years apart: Charlotte aged 73, Brighton Q2 1869, vol 2B p.152; Jane aged 87, Brighton Q1 1875, vol 2B p.203; Catherine aged 86, Brighton Q1 1876, vol 2B p.164.",
-    "The ages run back to births of about 1795, 1787 and 1789 against the tree's 1794, 1787 and 1789 — two exact, one a year out. These were web-tree claims yesterday.",
-    "Found Catherine's obituary: “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86” — Horsham, Petworth, Midhurst and Steyning Express, 8 February 1876. It confirms the exact date, confirms she never married, and gives an address.",
-    "Found that she left an estate: Index to Death Duty Registers, Court of Probate, Brighton 1876, TNA IR 27/396 — the likeliest document anywhere to name this family's English descendants after 1850.",
-    "Found all three sisters IN ONE HOUSEHOLD in the 1841 census — Western Buildings, Brighton, schedule 1912, with a servant, Sarah Harmer, 20.",
-    "Published the one thing that does not fit rather than burying it: the 1841 ages are 40, 39 and 35 when the sisters were 53, 51 and 46.",
-    "CAUGHT A SEARCH THAT LIES. A first pass reported no Jane D'Arcy of the right age in Sussex in 1871. The control — Jane Smith, same age, same county, same census — returned zero, which is impossible. Combining a year of birth with a place breaks FindMyPast's census query silently.",
-    "Re-ran the census work by year alone: the sisters are in none of 1851, 1861 or 1871 under any D*ARCY spelling. A real gap, now an errand rather than a false negative.",
-    "SEARCHED BY ADDRESS AND BY HOUSEHOLD INSTEAD OF BY NAME, and found all three sisters in the 1851 census at WESTERN COTTAGE, BRIGHTON — HO107/1646 f.357 p.59 sch.172.",
-    "THE CENSUS GIVES THEIR BIRTHPLACES: Jane and Catherine born BARBADOES, Charlotte born LYME, DORSET. An English government record confirming the West Indies posting that had rested on two Caribbean christenings and a family tree.",
-    "All three entered as LODGERS, UNMARRIED, occupation “FUND HOLDER” — living on invested capital, in rooms in somebody else's house.",
-    "Found why four days of searching had missed them: the surname is indexed as ARCY, the D' read as part of the forename. No D*ARCY query could reach them. They came out of a household search — Jane, with a Charlotte in the same house.",
-    "Searched 1861 four independent ways — surname, address, birthplace in Sussex, birthplace nationally — and they are in none of it.",
-    "READ THE 1851 CENSUS IMAGE rather than the transcript, and found two errors in the index. The enumerator writes “Jane D'Arcy” plainly — the apostrophe was read as the end of a forename, giving a surname of “Arcy”. And the address is “19 Western Cott” dittoed down to 22: the sisters are at 22 WESTERN COTTAGES, not at a house called Western Cottage.",
-    "Corrected a detail before publishing it: James Hayward, lodging house keeper, is schedule 173 on the next folio — the house NEXT DOOR, not the sisters' householder. Their own schedule holds three lodgers and no head.",
-    "Ran the 1861 census eight ways — surname, the right street, the widened street, Bedford Square, birthplace in Sussex, birthplace nationally, household fingerprint, and Falmer. They are in none of it."
-   ],
-   "found": [
-    [
-     "New page",
-     "/sussex-sisters — three daughters moved from a web tree to the public record"
-    ],
-    [
-     "Corrected",
-     "/robert-family — Jane, Catherine and Charlotte upgraded from family tree to documented"
-    ],
-    [
-     "Added",
-     "/crossread — the three it produced are now tested"
-    ],
-    [
-     "Added",
-     "/coverage — the census query that returns zero when it should not"
-    ],
-    [
-     "Added",
-     "/errands — three new jobs, including the Death Duty register at Kew"
-    ],
-    [
-     "Added",
-     "/sussex-sisters — the 1851 household, and the census that says Barbadoes"
-    ]
-   ]
-  },
-  {
-   "when": "14 September 2026",
-   "title": "Reading the archive against its own open questions",
-   "did": [
-    "Wrote tools/crossread.py after yesterday's Constantine error: it holds the open questions as search terms, reads all 719 data files and built pages, and prints every place the terms appear except the page that owns the question.",
-    "Found that ROBERT AND JEAN HAD TEN CHILDREN on the family tree. This site's page about their family listed five. The Hornby page has said “ten children” in plain text for weeks.",
-    "Answered a question opened the previous day: JANE D'ARCY, born Barbados 15 December 1787, died at FALMER, SUSSEX in January 1875, AGED EIGHTY-EIGHT. Her tree birth date and her Barbados christening of March 1788 corroborate each other.",
-    "Added CATHERINE D'ARCY (1789–1876, born Barbados, died Brighton), two ANNA MARIAS who died small, and CHARLOTTE (1794–1869, born Lyme Regis, died Brighton) — four more children nobody here had named.",
-    "Bracketed the Barbados posting with no new record at all: children born Barbados in 1786, 1787 and 1789, then Portsmouth in 1792 and Lyme Regis in 1794. The Corps page had a twenty-four-year blank.",
-    "Found that the tree gives Robert D'Arcy a BROTHER — Constantine D'Arcy, born Barbados 1759, died Chatham 1778, appointed to De Lancey's Brigade on 1 June 1778 — which the Hornby page has never mentioned in all its argument about his parentage. Published with an explicit warning that it may be Robert's own son duplicated and back-dated.",
-    "Found that LYDIA has a birthplace (Wotton-under-Edge), two parents (William Jones and Sarah) and a death (7 July 1851, Berkeley) in this archive's data, none of which the page calling her unevidenced had mentioned. Her death is inside civil registration.",
-    "Same for CATHERINE COTTON, listed as an open question while the tree gives her birth, marriage, death and parents, all at Berkeley.",
-    "TESTED THE MARTHA WAKEFIELD CLAIM PROPERLY. The tree says she died at Maryborough, Queensland, on 23 April 1899, with a cemetery and a plot number, under the married name HURFORD. This site had searched for her in BRISTOL and concluded she “may never have existed”.",
-    "The free Queensland index has her: MARTHA HURFORD, died 23 April 1899, 1899/C/3288 — and names her parents as JOHN WAKEFIELD and a HUGHES. No Martha Wakefield dies in Queensland at all between 1855 and 1960. Another man's daughter had been grafted onto James and Hannah.",
-    "Filed two errors: searching the wrong country under the wrong surname, and repeating a false statement about this archive's own tree. And noted that the lesson had been filed once already, on 13 September, and not applied."
-   ],
-   "found": [
-    [
-     "New page",
-     "/crossread — six open questions answered out of material already published"
-    ],
-    [
-     "New tool",
-     "tools/crossread.py, committed and runnable"
-    ],
-    [
-     "Corrected",
-     "/robert-family — five children became ten; the open questions rewritten"
-    ],
-    [
-     "Corrected",
-     "/wakefields — Martha resolved, and the false claim about the tree withdrawn"
-    ],
-    [
-     "Corrected",
-     "/hornby — the brother the parentage argument never mentioned"
-    ],
-    [
-     "Added",
-     "/hannah-baptism — the four testable fields behind the name Lydia Jones"
-    ],
-    [
-     "Added",
-     "/errands — five new jobs, four of them free or nearly so"
-    ],
-    [
-     "Filed",
-     "/what-we-got-wrong — own error 26, and an inherited error about Martha"
-    ]
-   ]
-  },
-  {
-   "when": "14 September 2026",
-   "title": "The last two days of the subscription, spent on wills, Barbados and a Canterbury newspaper",
-   "did": [
-    "Established what FindMyPast can and cannot do for wills, before spending the trial on it. Its only Prerogative Court of Canterbury holdings are a wills index for 1750-1800 and an administrations index for 1660-1700 — NOTHING AFTER 1800. Robert D'Arcy's will of 1827, Joseph D'Arcy's of 1848 and John Maddock Jones's of 1844 are all beyond it. £3.50 each at Kew, and no free substitute.",
-    "Read the Gloucestershire probate index 1801-1858 for the Saniger line under wildcards rather than spellings — SAN*, SIN*, SYN*, SWA*. Two entries in 14,195: Abraham Synegar, cardmaker of Dursley (1813), and John Sanigar, carpenter of Oldbury-on-Severn (1822). NO SANIGER OF BERKELEY AT ALL. Control: 277 Smiths. Errand 7 closed.",
-    "Closed the Irish marriage-licence route for George Pitt D'Arcy and Maria White. The Diocesan and Prerogative Marriage Licence Bonds index holds 218,433 records, but sorted by year its DUBLIN entries effectively stop in 1741; Betham's abstracts end in 1810. Neither can hold an 1819 marriage. Six Maria Whites in the set, none marrying a D'Arcy; no George D'Arcy at all.",
-    "Searched the FindMyPast catalogue for consular and overseas registers and found NONE — the Le Havre deaths of 1843 are not reachable there. Filed as errand 35.",
-    "Chased Constantine D'Arcy, and found that this archive had been publishing half his story on one page while calling him unplaced on three others. FILED AS AN ERROR.",
-    "Found the record that settles him: the KENTISH GAZETTE of 14 May 1805 — “After a few weeks illness, the son of COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES; his remains were interred with military honours.”",
-    "Which also gives Robert D'Arcy a post for the first time. Every other record of him gives a rank.",
-    "Cited both of Constantine's commissions to the London Gazette by issue and page, and found them printed in the Kentish Weekly Post of 12 June 1804 and in three papers of 29 March and 1 April 1805 — the last of which carries his father's lieutenant-colonelcy nine lines above his own first lieutenancy.",
-    "Counted Robert and Jean's children properly. There are six, not five: JANE D'ARCY, christened at St Michael, Barbados on 17 March 1788, has been in the register all along and on no family page.",
-    "Traced Joseph D'Arcy's line forward out of Priestlands. His son FRANK HYDE D'ARCY married ANNA MARIA SIMPSON at Lymington on 29 September 1863, announced in Thacker's Overland News for India and the Colonies. Fifty-two D'Arcy records at Lymington, running to an electoral roll of 2021 — a living English branch.",
-    "Found a second Kew document for Joseph's estate: the Index to Death Duty Registers gives him at IR 27/284, which leads to a register naming legatees and executors."
-   ],
-   "found": [
-    [
-     "New page",
-     "/constantine — Barbados 1786 to Chatham 1805, and the notice that names his father"
-    ],
-    [
-     "Corrected",
-     "/robert-family — Constantine documented as a son, Jane added as a sixth child, the open questions rewritten"
-    ],
-    [
-     "Corrected",
-     "/chatham — the 1805 burial identified"
-    ],
-    [
-     "Corrected",
-     "/open-questions — Constantine moved from half answered to answered"
-    ],
-    [
-     "Added",
-     "/the-corps — “chief engineer of Chatham lines”, and Barbados set into the 24-year blank"
-    ],
-    [
-     "Added",
-     "/joseph-darcy — the branch that stayed in England, and the death duty register"
-    ],
-    [
-     "Added",
-     "/hannah-baptism — Gloucestershire probate, searched and empty"
-    ],
-    [
-     "Added",
-     "/george-pitt — why the licence bonds cannot help"
-    ],
-    [
-     "Added",
-     "/coverage — seven new rows, all of them FindMyPast"
-    ],
-    [
-     "Filed",
-     "/what-we-got-wrong — error 25, the fact held in one room and not read in another"
-    ]
-   ]
-  },
-  {
-   "when": "14 September 2026",
-   "title": "Priestlands pulled apart, and the family assembled",
-   "did": [
-    "Found Elizabeth Pitt's death registered at Lymington in 1851 — she stayed with the family after Joseph died, so she was a member of that household and not a census-night visitor.",
-    "Found no death notice naming her relationship, so the Pitt question has one more fact around it and still no answer.",
-    "Found Joseph's widow Catherine still at Lymington in February 1852, subscribing to a public fund got up by the Mayor — she is missing from the 1851 census, which turns out to be a gap in the index rather than a departure.",
-    "Searched Hampshire for Joseph's marriage and for Richard Darcy and found neither.",
-    "Rewrote /hornby with what a fortnight of records has added: a bottom-rung commission, a garrison marriage, seventeen death notices naming no relative, and a son who rose. None of it disproves the graft and the page says so.",
-    "Built /robert-family, assembling Robert and Jean's five children for the first time.",
-    "Added nine women to /the-women who were not in this archive a fortnight ago.",
-    "Gave /coverage a row for the British Newspaper Archive, which has been the most productive source of the whole fortnight.",
-    "Noticed the nationality audit had jumped nineteen records in one direction for no reason, and found the cause: I had been hand-writing the classifier on every pass and it had drifted.",
-    "Wrote tools/audit.py, wired it into the build, and filed the drift as an error. Records 299 · Australian 117 · British 182 — 61% to 39%.",
-    "Found the best record of the fortnight: the Morning Herald of 13 February 1843 — “At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.”",
-    "That is the first record anywhere to give Robert D'Arcy a CORPS as well as a rank, and to call anyone his child. It also confirms the Chatham marriage of 1806 from thirty-seven years later.",
-    "Found her husband too: Major Maddock Jones of Pen-y-bryn, Ruabon, late of the Royal Denbigh Militia, died at Ingouville near Havre in March 1843, within weeks of his wife.",
-    "Built /margaret-jones and upgraded her on /robert-family."
-   ],
-   "found": "Robert D'Arcy is now documented as the father of three of his five children — and still, after a fortnight, nobody's son."
-  },
-  {
-   "when": "13 September 2026 · FindMyPast",
-   "title": "Hannah was a Berkeley woman all along",
-   "did": [
-    "Opened a subscription site for the first time in this archive's life.",
-    "Found the 1851 census at Drivers Fields — the same house as 1841 — which states Hannah's birthplace outright: BERKELEY, GLOUCESTERSHIRE.",
-    "Found the marriage: Hannah Saniger to James Wakefield, Bristol, 17 October 1831. The first English record of it, and the first English record of any kind to give her the surname.",
-    "Learned that James Wakefield was born at STROUD, and that there were two more children — Jabez, born about 1843, and Zillah, about 1846 — neither of whom this archive had ever heard of.",
-    "Established that Berkeley's register CAN be searched after 1677, with parents named. The five untestable Saniger generations were behind a paywall, not behind a gap.",
-    "Marked /chew-magna and /bristol-chapels as wrong at the top, and left them up.",
-    "Filed the two largest errors this archive has made: an edifice on a single 1841 tick, and the habit of turning “not reachable from here” into “not there”.",
-    "Added a warning to the top of /coverage saying what every null on it is really measuring.",
-    "Found the marriage of Robert D'Arcy and Jean Ward — Portsea St Mary, 21 June 1779 — which this archive has carried on a family tree since it began.",
-    "Established by control test that FindMyPast covers Portsea St Mary continuously from 1770 to 1792, so Joseph D'Arcy having no brothers or sisters baptised there is now a real result instead of an artefact.",
-    "Tested every Saniger generation the archive had called untestable. Thomas baptised 1744 father Thomas; Thomas married CATHERINE COTTON at Berkeley in April 1769; John baptised five weeks later; Thomas buried 1819 aged 75; John buried 1825 aged 55.",
-    "Found John Saniger's other children at Berkeley — 1801, 1803, 1808 — with the tree putting Hannah's birth in July 1805 exactly between them.",
-    "Corrected the tree's death date for John Saniger by ten months.",
-    "Built /behind-the-paywall.",
-    "Found Samuel Sneyd alive in the 1851 census — Well Street, Hanley, GROCER, born Madeley — with his wife Elizabeth beside him, born OSWESTRY, SHROPSHIRE. That settles the unreadable “Staly Cladwin” of 1861.",
-    "Found Elizabeth Oliver's baptism at Oswestry St Oswald's, 19 May 1782, father David, mother Mary — two digits from the tree's date, and a generation the archive did not have.",
-    "Tested the tree's Audlem marriage against a parish indexed twice over. Twenty Smiths marry there in the same decade and no Sneyd does, in any spelling, ever.",
-    "Found James Wakefield's baptism at Stroud, 6 April 1806, father Richard, mother ELIZABETH WEBB — which explains the Matilda Webb who has been sitting unexplained in his 1841 household.",
-    "Marked /berkeley, /sanigers and /portsea where the subscription has overtaken them.",
-    "Re-ran the audit: British 145, Australian 96 — 60% to 40%, from 42% at the start.",
-    "Found Ellen Wakefield's baptism (Bristol, 26 October 1834, father James, mother Hannah) and her burial (St Paul, Portland Square, 12 July 1840, AGED FIVE). She was never left behind in 1854; she died fourteen years before the ship.",
-    "Established by control test why Hannah's own baptism still cannot be found: only the partial FamilySearch index reaches Berkeley, and FindMyPast's Gloucestershire Baptisms does not cover the parish at all.",
-    "Searched for John Saniger's marriage at Berkeley and found none, so Lydia remains unnamed by any record.",
-    "Put the original Berkeley register and Robert D'Arcy's 1827 death notice at the top of the errand list.",
-    "Drove the newspaper archive's date filters by hand and found Robert D'Arcy's death notices — seventeen of them, in England, Ireland and Scotland.",
-    "Confirmed his death as 13 May 1827 from papers printed within four days of it, replacing a Victorian printed roll as the authority.",
-    "Found his funeral, which nobody here knew about: interred at Chatham WITH MILITARY HONOURS on Saturday 19 May 1827 — the exact date of entry 1571 in the parish register.",
-    "And established that the press names nobody he was related to. Not one of the seventeen gives even his forename. The best remaining route to his parentage is now closed.",
-    "Pushed the Saniger line back two more generations: Thomas baptised Berkeley 12 December 1711, father William; William baptised there 12 October 1679, father William. Both match the tree to the day.",
-    "Found Thomas Saniger's marriage to Catherine Cotton — and then failed to find Catherine anywhere else, which is the one new question this opened.",
-    "Traced Jabez and Zillah Wakefield to Queensland, where they married in 1863 and 1871.",
-    "Corrected my own claim that Jabez and Zillah were children nobody here had heard of. They are on the passenger register this archive published in July.",
-    "Built /saniger-line and /wakefields, and added the Berkeley baptism gap and the newspaper archive to /coverage.",
-    "Rebuilt Robert D'Arcy's career from the commission registers and the officer promotions: first commissioned in 1778 as a PRACTITIONER ENGINEER, then Major 1802, Lieutenant-Colonel 1805, Brevet Colonel and Colonel in 1813 — every step citable to the London Gazette by issue and page.",
-    "Found that Joseph D'Arcy went into the ROYAL ARTILLERY, listed from 1795 to 1844.",
-    "Discarded a Robert D'Arcy gazetted Cornet of the 17th Light Dragoons in 1804 — the ranks make him a different man — and recorded the exclusion.",
-    "Built /the-corps.",
-    "Found Jean Ward's baptism at SOUTH LEITH — 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — in the parish this archive had repeatedly called untranscribed.",
-    "Noticed that her father's name was Joseph, and that Joseph is what she and Robert called their son at Portsea in 1780.",
-    "Found George Pitt D'Arcy in the Peninsular War officers' roll for 1808, 39th Foot — the regiment he was still with in 1826.",
-    "Filed the South Leith claim as an error, and built /jean-ward.",
-    "Found Jean Ward's parents' marriage — Joseph Ward and Marth Gairden, South Leith, 27 October 1747 — which names her grandfather WILLIAM GAIRDEN and takes this archive five generations up a Scottish line it had none of at breakfast.",
-    "Searched the whole of Gloucestershire for Catherine Cotton and found nothing but her wedding. She is the one person this week's work has left exactly where it found her.",
-    "Confirmed Eliza Wakefield: baptised Bristol 14 October 1832 to James and Hannah, buried there 4 May 1834 AGED NINETEEN MONTHS.",
-    "Searched Bristol under every spelling and record type for Martha Wakefield, born about 1836, and found nothing at all. She has been on five pages of this site and appears to have no source.",
-    "Followed James Sneyd the engraver forward: Well Street in 1871 with his son at the same trade, and 20 Well Street in 1881 as an ENGRAVER (POTTER) with a granddaughter. Sixty years in one road, while his brother was in Queensland.",
-    "Went back to Thomas Sinegar of St Philip and Jacob — a lead this archive found weeks ago, called its best, and then abandoned when I decided Hannah was not born in Gloucestershire.",
-    "He fits exactly: Thomas Saniger baptised Berkeley 3 July 1808 son of John is FORTY-TWO at the 1851 census, which is the age the Bristol enumerator wrote against a man who said he was born at BERKLEY.",
-    "Found his 1841 household at Sion Road with a daughter LYDIA, and his son James christening another LYDIA in 1866 — three generations of the name Hannah's mother bore.",
-    "Failed to find his marriage in any Gloucestershire index, which is the document that would settle it, and put it on the errand list.",
-    "Asked to look on Ancestry; found it signed out in both browsers and did not attempt a login. Used FamilySearch instead, which was already signed in and free.",
-    "FOUND HANNAH'S BAPTISM. HANNAH SANIGOR, Berkeley, 18 AUGUST 1804, father JNO SANIGOR — indexed under a spelling this site's own alias list did not carry.",
-    "Widened the alias list from eleven Saniger spellings to sixteen.",
-    "Found Thomas Saniger's marriage to MARTHA GOLDING at Bristol St James, 24 August 1828, his eleven children and his death at Waterloo Lane in 1881 — on the FamilySearch tree, where neither marriage is sourced, so both are flagged as leads.",
-    "Recorded that the tree's LYDIA JONES, Hannah's mother, has no record behind it either.",
-    "Tried FamilySearch for the Bristol marriage before asking anyone to pay for anything, and it was there: THOMAS SANIGRE married MARTHA GOLDING at Bristol, 24 August 1828.",
-    "That is the EIGHTEENTH spelling of this surname, and the second in one hour to have defeated every search that used the others.",
-    "Checked Ancestry signed in without a subscription: it holds the Gloucestershire Church of England registers 1538-1813 and five John Saniger wills, and masks every date, place and spouse.",
-    "Wrote to Gloucestershire Archives for the Berkeley marriage of John Saniger, about 1797 — the entry that would give Hannah's mother a surname. Sent 13 September 2026, awaiting reply.",
-    "Tried FamilySearch's full-text handwriting search for the 1797 Berkeley marriage. It covers Gloucestershire, but its marriage collection is built from diocesan bonds, and a couple marrying by banns leaves no bond. Three Saniger hits, none from 1797.",
-    "Corrected /drivers-fields, which for months carried a section headed “Hannah was not born in Gloucestershire”, and /general-hewitt with it.",
-    "Built /new-generations — sixteen documented people the family tree has never held, most of them women, most in the generation just above where the tree stops.",
-    "Rewrote the lesson at the top of /coverage: a control test proves a source covers a parish and proves nothing about whether your search string can reach the record.",
-    "Found George Pitt D'Arcy's first marriage in a Wiltshire newspaper of 23 September 1805: Captain George D'Arcy, SON OF LIEUT. COLONEL D'ARCY, to MISS LUDLAM OF GUERNSEY.",
-    "Noted that Robert D'Arcy was gazetted Lieutenant-Colonel on 1 March 1805 — six months before — so the rank in the notice is his to the month. It is the first record in this archive to make George Pitt D'Arcy anyone's son.",
-    "Placed him in Ireland with the 39th in 1820 and 1822 from two newspapers, which is the right country at nearly the right time for the Wicklow marriage the tree claims.",
-    "Failed to find that second marriage, and said so.",
-    "Built /george-pitt — the best-documented D'Arcy here, and until today he had no page.",
-    "Searched the Irish records for the marriage of George Pitt D'Arcy and Maria White, and established why it cannot be found: every Wicklow and Dublin marriage index reachable is ROMAN CATHOLIC, he was an Anglican officer, and the Church of Ireland registers burned in the Four Courts in 1922.",
-    "Tested and rejected the one Maria White who does marry in Wicklow in the window — she married Thomas Barry at Bray in November 1825, by which time Charlotte D'Arcy was six months old.",
-    "Followed Joseph D'Arcy from the Portsea font to a Hampshire will: LIEUTENANT-COLONEL, ROYAL ARTILLERY, K.L.S., died at Lymington 7 February 1848 in his 69th year, having made his will in February 1844.",
-    "Rebuilt the navigation, which had grown to eighteen entries under one heading, and rewrote the homepage, which introduced an archive that no longer existed.",
-    "Added a section to /direct-line showing where the documented line now ends — generations seven and eight strengthened, nine and above untouched.",
-    "Drafted letters to the RCB Library in Dublin and to Bristol Archives, and added the Irish row to /coverage: the only holding there where the records are not unreached but gone.",
-    "Checked both addresses before sending and found one of them wrong — the RCB Library is library@rcbcoi.org, not the address I had drafted to.",
-    "Sent both letters: Bristol Archives for the 1828 St James entry that would name Thomas Saniger's father, and the RCB Library in Dublin for what survives of Wicklow's Anglican registers.",
-    "Assembled Joseph D'Arcy's obituary from three newspapers, each of which breaks in a different place: St Domingo in 1793, Sicily, the taking of Walcheren, and FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA.",
-    "Which explains the K.L.S. after his name — Knight of the Royal Order of the Lion and the Sun.",
-    "Found his wife: he left his property to KATHERINE D'ARCY, named in the Lady's Newspaper of 8 April 1848.",
-    "Found Joseph D'Arcy's household: twenty people at PRIESTLANDS, Milford, Lymington in 1841 — a wife Catherine, five children, eleven servants, and a RICHARD DARCY of 1784 nobody here had heard of.",
-    "The census gives Joseph's birth county as HAMPSHIRE, which corroborates the Portsea baptism of 1780 from sixty-one years later.",
-    "And an ELIZABETH PITT, 55, living in the house — in the household of Robert D'Arcy's son, while Robert's other son had carried PITT as a middle name since 1783. Recorded as a lead, not an explanation."
-   ],
-   "found": "A boy christened at Portsea in 1780 turns out to have begun at Saint-Domingue at thirteen and spent five years in Persia in the service of the Shah's son."
-  },
-  {
-   "when": "13 September 2026 · second pass",
-   "title": "91 Well Street, and what the indexes actually hold",
-   "did": [
-    "Found Samuel Sneyd's burial: Hanley St John the Evangelist, 23 September 1855, aged 77, of 91 WELL ST. The tree said 20 September 1856 at No 3.",
-    "Tested the year against the death index. Every Samuel Sneyd death registered in England and Wales between 1854 and 1858 — there is exactly one, September quarter 1855 at Stoke. The tree is a year out.",
-    "Confirmed his widow's death in the same index: Elizabeth Sneyd, December quarter 1861, Stoke, which is the tree's 1 December 1861 to the quarter.",
-    "Noted that the burial age of 77 puts his birth about 1778 — independent support for the Madeley baptism of 1781 this archive corrected to a day earlier, and ten years off the tree's 1769.",
-    "Read Collinson's Somerset on Chew Magna: six miles from Bristol, 830 inhabitants, and “in former days … a LARGE CLOTHING TOWN” — the trade that runs through every Saniger found so far.",
-    "Corrected two numbers I had invented on /chew-magna that same morning.",
-    "Identified Chew Magna as a PECULIAR with its own probate jurisdiction, which changes where a Saniger will would be found.",
-    "Control-tested Cheshire and Shropshire: the Audlem marriage and the Oswestry baptism the tree names cannot be tested, because neither place is transcribed. Cheshire returns two John Smiths in twenty years.",
-    "Built /coverage — ten index holdings, measured rather than assumed.",
-    "Register now 210 records.",
-    "Found Elizabeth Sanigar at Battles Lane, Chew Magna, in the 1841 census — in a spade-maker's house, which is the trade Collinson said the parish still had. The Bristol clerk of 1851 was not mishearing the name of a parish.",
-    "Checked whether the twelve Bristol chapel registers can actually be read online. All twelve are digitised:false at Kew. Filed as an error, because this archive said the opposite the same morning.",
-    "Looked for a route to Portsea's register beyond FreeREG's two years and found none through Discovery.",
-    "Re-ran the 1851 search for the Wakefields. Still nothing, and still an absence from a partial transcript rather than a finding."
-   ],
-   "found": "Six of the ten index holdings measured are parishes the family tree names, and six of them are partial, empty or unreachable. An archive built on free indexes will systematically fail to test its own tree, and will mistake that failure for a finding unless it measures every time."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "Swanhanger, Well Street, and two years of Portsea",
-   "did": [
-    "Searched the whole TNA catalogue for Saniger rather than one collection: 71 records, including the Berkeley estate deeds that follow Edward Saniger from clothier in 1692 to gentleman in 1709.",
-    "Proved that Saniger is a worn-down SWANHANGER. One deed of 1377 is catalogued by Berkeley Castle under the man, de Swonhongre, and by Birmingham Archives under the place, Swanhanger — and Gloucestershire Archives glosses a third document “Swanhanger … [Saniger in Hinton]”.",
-    "Searched probate for the first time. Two wills — Elizabeth Saniger, widow of Thornbury, 1833, and Samuel Sanigear of Chipping Sodbury, 1832 — and a defamation suit brought by Christian Saniger in 1768.",
-    "Re-read Bigland properly: six more Saniger entries in volume one, six neighbouring households styled “of Saniger” who are not called Saniger, and none at all in volume two.",
-    "Catalogued every Bristol chapel register in RG 4. There are 36, not the 5 this archive's errand list assumed, and exactly 12 can hold a birth between 1805 and 1815.",
-    "Found Samuel Sneyd's household. The 1861 census at Well St, Hanley — a grocer's shop — holds his widow Elizabeth, aged 82, born Shropshire, eight months before she died.",
-    "Established by control test that FreeCEN holds only 1861 for Staffordshire, so the 1841 and 1851 searches everyone assumed had failed were never possible.",
-    "Tested how much of Portsea's register stands behind Joseph D'Arcy's 1780 baptism. Twenty-two months of it.",
-    "Found Robert D'Arcy in the London Gazette of 19 July 1813, gazetted Colonel of the Royal Engineers.",
-    "Rewrote /berkeley's conclusion, built /portsea and /bristol-chapels, and filed two more errors.",
-    "Re-ran the nationality audit. British evidence now outnumbers Australian for the first time: 107 to 96.",
-    "Searched the 1851 census for Sanigers around Bristol and found a household at Oxford Road, St Philip and Jacob — the parish next to the Wakefields' — whose head and whose widowed mother were both born at CHEW MAGNA, SOMERSET.",
-    "Control-tested Chew Magna in FreeREG: two Smith entries in twenty-one years against a hundred at Walcot. The transcript is a fragment, so the parish cannot be searched from here.",
-    "Built /chew-magna and put the register at the top of the errand list.",
-    "Control-tested the city of Bristol in FreeREG: 289 Smith entries from 75 Gloucestershire parishes, 1800–1820, and exactly one from inside Bristol. The city is not in the index, which is why every Bristol search here has come back empty."
-   ],
-   "found": "The family's name is a hillside above the Severn where the swans were; the archive's oldest English record survives inside a two-year window nobody had measured; and Hannah Saniger's birthplace has, for the first time, a county and a parish worth the fare to Taunton."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "Saniger from 1272, and Bigland fills the gap",
-   "did": [
-    "Searched the Berkeley Castle Muniments: nine deeds name people OF SANIGER between about 1272 and 1473, and not one of them is called Saniger.",
-    "Found Bigland's 1791 Collections on archive.org and read the Berkeley section: “Saniger, long held by an old Family of the same Name”, with the monumental inscriptions.",
-    "Recovered from those monuments a century of Berkeley material the parish transcript does not hold — Saniger inscriptions from 1692 to 1750 with ages and relationships.",
-    "Identified the Hinton manor court rolls, GCR/231 and 258, as the record type that would catch the family where the register cannot.",
-    "Rewrote /berkeley's conclusion, which said the archive should stop calling this a Berkeley family. It was wrong.",
-    "Searched the same catalogue for Wakefield of Bristol, Sneyd of Madeley and D'Arcy wills in Kent. Nothing usable in any of the three."
-   ],
-   "found": "The place is two hundred years older than the surname, and it is documented from before 1291. An antiquary copied the family's gravestones in 1791 and they have been sitting in a scanned book ever since."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "Saniger is a place — and the audit starts to move",
-   "did": [
-    "Found the 1851 census household of Thomas Sinegar, labourer, at 7 Oxford Road, Bristol — born, with his wife Martha, at BERKLEY, Gloucestershire.",
-    "Established that Sanigers were still at Berkeley itself in 1841, in a parish whose transcript stops in 1677.",
-    "Found in TNA's catalogue that SANIGER IS A PLACE in Berkeley parish, with the family holding land there from 1601.",
-    "Found the will of John Maddock Jones of Ruabon, who married Robert D'Arcy's daughter — a Welsh branch the archive has never had.",
-    "Found Robert D'Arcy in the printed Army List of 1778, and Francis D'Arcy separately in the same volume.",
-    "Was blocked by Cloudflare at Welsh Newspapers Online and irishgenealogy.ie — four free British and Irish databases shut in one day.",
-    "Re-ran the nationality audit: the Australian share has fallen from 57% to 53%."
-   ],
-   "found": "The surname is toponymic. Saniger is a hamlet in Berkeley parish, a John Saniger holds land there as a yeoman in 1601, and an Edward Saniger of Saniger is a clothier in 1692 and a gentleman by 1709."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "Back to Britain — and an audit that says the archive had drifted",
-   "did": [
-    "Audited the register by nationality of source: 95 Australian records against 70 British. The archive had drifted to the wrong side of the world and nobody had measured it.",
-    "Named the five TNA RG 4 registers that would hold Hannah's baptism, replacing a vague instruction to write to Bristol.",
-    "Found a Sinegar brewer's household at St Philip and St Jacob with a daughter Lydia — candidate kin, labelled as such.",
-    "Established that William the weaver's baptism is in no transcribed Staffordshire register at all, and that Madeley has no Bishop's Transcripts in FreeREG.",
-    "Searched Denbighshire for John Maddock Jones of Ruabon. Well covered, and he is not in it.",
-    "Read the Gazette for Joseph, Constantine and George Pitt D'Arcy. Nothing, with an OCR caveat.",
-    "Was blocked by Cloudflare at irishgenealogy.ie — three Irish lines, one free database, and no way in from here."
-   ],
-   "found": "57% of this archive's records now come from Australian sources. The brief was always the British ancestry."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "The Gazette, the Birches, and a jurisdiction still shut",
-   "did": [
-    "Found ten London Gazette notices naming Robert D'Arcy between 1793 and 1819, and read one in full.",
-    "Identified the Birch household: Margaret and Elizabeth Ann were daughters of John Birch and Annie Reeves.",
-    "Traced nine Wakefield grandchildren through the Queensland index.",
-    "Tried the NSW BDM index and was stopped by a bot check — recorded as an errand rather than a null.",
-    "Corrected a stale blocked entry: Museums of History NSW is live and the State Archives catalogue is reachable."
-   ],
-   "found": "Robert D'Arcy's promotions are in the government's own gazette, issue and page, where this archive has been citing a printed roll compiled from them."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "The Sneyd chain closes, and four other lines tested",
-   "did": [
-    "Reconstituted all 551 Staffordshire Sneyd records into 94 households.",
-    "Found William Sneyd the weaver's family at Madeley — thirteen children, 1769 to 1794.",
-    "Corrected the tree: their Samuel is baptised 1781, not 1769.",
-    "Ran the Queensland immigration index for every other family in the archive. Only the Wakefields came assisted.",
-    "Exhausted Bristol's four transcribed registers. Neither family is in them.",
-    "Searched Gloucestershire for Richard Wakefield and found one weak candidate.",
-    "Searched Queensland for the three eldest Wakefield daughters. They did not sail and never followed.",
-    "Tested the Somerset-side-of-Bristol hypothesis: Bedminster and Long Ashton are covered and empty; Temple, Redcliffe and Brislington are not transcribed.",
-    "Searched Hampshire and Kent for the other eight D'Arcy children. Two of ten are in the registers."
-   ],
-   "found": "Three of the four Sneyd links are now documented, and the missing one is a baptism of 1746. The line runs weaver, servant, gaol governor."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "Chatham — the parish the Corps lived in",
-   "did": [
-    "Searched Chatham St Mary the Virgin, where Robert D'Arcy served and died, and which nobody had ever tried.",
-    "Found seven D'Arcy records including three burials the archive has only ever known second-hand.",
-    "Read Robert's burial: age 76 — the primary source behind the tree's “1751”, seen for the first time.",
-    "Found Jean Ward's burial, at sixty-six, and Constantine's, entered with his rank.",
-    "Found George Pitt D'Arcy in a parish register as “Bt: Major 39th Foot”, christening a daughter eight days before the England sailed.",
-    "Searched six more counties around Bristol for Hannah Saniger, with controls. Nothing."
-   ],
-   "found": "Chatham holds the D'Arcy family's whole English ending: a general, his wife, his brother officer, his daughter's marriage and his son's rank — none of it ever looked at."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "The ship: General Hewitt, Brisbane, 16 December 1854",
-   "did": [
-    "Found Queensland's assisted-immigration index published as open data after ArchivesSearch itself refused to run a search.",
-    "Found the whole family on one voyage and downloaded the register scan, DR38490.",
-    "Read the register: James a mason, Hiram a plumber, and Miriam — entered as Marion — shipped at fourteen as a domestic servant.",
-    "Established that the register does NOT give Hannah's own county: hers is a ditto of her husband's.",
-    "Searched Hanley — the parish the tree names and nobody had tried — and found Samuel Charles Sneyd's baptism with both parents.",
-    "Followed up the Madeley marriage of William Sneyd and Mary Blackbourne, which had been in the results all day.",
-    "Corrected this morning's overstatement that the Sneyd line was unevidenced. Two of its four links are documented."
-   ],
-   "found": "The emigration, dated to the day and named. The archive knew the family reached Queensland; it did not know how, when, or on what."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "The county reconstituted, and the Bristol migration",
-   "did": [
-    "Opened all 556 Gloucestershire Saniger records individually instead of searching them by name.",
-    "Assembled 81 households from the 196 baptisms that name a father, splitting same-named couples wherever 25 years separate consecutive baptisms.",
-    "Asked all 81 whether any could be Hannah's. None can.",
-    "Published /sanigers: the households, the trades, seventeen spellings rather than eleven, and the 29 Sanigers in Bristol on census night 1841."
-   ],
-   "found": "The Gloucestershire Sanigers are a Stroudwater cloth-trade family — weavers, tuckers, curriers — at Cam and Dursley, not Berkeley. And Hannah is in none of their households, because she was not born in the county."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "The maiden name, settled five times over",
-   "did": [
-    "Searched the Queensland death index by MOTHER's name rather than by the deceased — the search this archive should have run a week ago.",
-    "Found five of Hannah's children's death registrations, each naming her, across 41 years and four spellings.",
-    "Found Hannah's own registration, naming her father John Saniger — entered by the clerk as “John Jenniger”.",
-    "Found James Wakefield's registration, naming HIS father Richard Wakefield: a new generation.",
-    "Found Miriam's marriage to William Hartley Sneyd, 15 November 1859, and corrected her age from twenty-one to nineteen.",
-    "Added 14 records and 9 recorded relationships to the register.",
-    "Asked Madeley for the two Sneyd baptisms the tree actually names — 1746 and 1769 — and found neither, in a parish transcribed continuously with 110 Sneyd records.",
-    "Searched FreeBMD for Lyddya Sinegar's death in England and found nothing under any spelling.",
-    "Recorded that the 1861 and 1871 censuses cannot help: the family had emigrated by 1857."
-   ],
-   "found": "The archive spent a week trying to prove “Saniger” from the English end. It was written down five times in Queensland by five different clerks, and nobody had thought to search the index by the mother's name."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "Portsea, Madeley, and three counties that hold nothing",
-   "did": [
-    "Found Joseph D'Arcy baptised at Portsea St Mary on 19 March 1780, father Robert, mother Jean — the first record of Robert D'Arcy in an English parish register this archive has ever had.",
-    "Read the Madeley baptism that killed the Keele graft, and then found a William son of William Sneyd buried there in September 1744.",
-    "Established that FreeREG holds nothing for County Limerick, nothing for South Leith and nothing for St Quivox — three of this archive's oldest dead ends are dead ends in the database, not in the record.",
-    "Tested and rejected the Berkley-in-Somerset hypothesis for Hannah Saniger."
-   ],
-   "found": "Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage is no longer a claim."
-  },
-  {
-   "when": "13 September 2026",
-   "title": "The Saniger chain, tested at last — and it breaks",
-   "did": [
-    "Checked FreeREG's coverage for Bristol BEFORE searching it. Four registers, 1,551 records, and St Paul is not among them — so the Wakefield join was never testable there and any null would have been a lie.",
-    "Found that Dursley St James (1577–1951) and Cam St George (1568–1939) cover the whole Saniger chain, which /berkeley had implied was untestable.",
-    "Searched the county: 494 Saniger records 1670–1830, and three baptisms matching the tree's dates almost exactly, all at Dursley.",
-    "Opened all three. The fathers are Abraham, John and Samuel — three unrelated men. The chain is a coincidence of dates.",
-    "Established that no Saniger baptism exists in Gloucestershire 1801–1809, in a window that is well covered.",
-    "Established that in 139 Gloucestershire records spanning 1790–1900, no Saniger ever marries a Wakefield.",
-    "Found Miriam Wakefield's birth registration in FreeBMD: June quarter 1840, Bristol, volume 11, page 183 — the only one in England in five years.",
-    "Control-tested the FreeBMD harness (21,248 Wakefield marriages, 1838–1842) before reporting any absence from it.",
-    "Rewrote /berkeley around the result and added the GRO certificate to /errands as the cheapest decisive document on the site.",
-    "Then found the household in the 1841 census and published /drivers-fields — James and Hannah Wakefield at St Paul, Bristol, with Miriam aged one, and a seventy-year-old Sinegar widow living with them."
-   ],
-   "found": "Three Dursley baptisms match the tree's dates for the middle of the Saniger line. Opening them shows three different fathers. The oldest claim in this archive is weaker than it was this morning — and for the first time there is a £2.50 document that would settle it. And then the census produced the couple themselves, at the street the tree had remembered and the county it had got wrong."
-  },
-  {
-   "when": "10 September 2026",
-   "title": "The DNA, and the branding brought into line",
-   "did": [
-    "Published /dna — one living descendant's autosomal estimate against the tree's own prediction, computed twice, once with both grafts cut.",
-    "Corrected an error in that analysis within the hour: the first version put the predicted Scottish share at 0.02% and announced the DNA was contradicting the tree. It was not. Recorded as error nine.",
-    "Brought the homepage onto the .hero banner every sibling archive uses. The rules had been in this site's stylesheet, unused, since it was built.",
-    "Built /search over the whole archive, with the eleven spellings of Saniger folded together.",
-    "Added /searched, /changes and /errands — publishing work that had been sitting in notes/ and requests/ on disk."
-   ],
-   "found": "That cutting both grafts — 98 people, thirteen generations, four royal houses — moves the predicted ancestry by 0.39 of a percentage point."
-  },
-  {
-   "when": "10 September 2026",
-   "title": "Berkeley, and the audit that moved the floor",
-   "did": [
-    "Searched the Gloucestershire parish registers instead of another family's website.",
-    "Published /berkeley: 44 Sainger entries, three Williams, one good candidate and a father the archive never had.",
-    "Caught a false story before publishing it as fact, and left it on the page as a worked example.",
-    "Audited every 'defended' ancestor and published the result even though it was bad."
-   ],
-   "found": "Of 144 ancestors the archive called documented, eight rest on a record set. Above generation seven, exactly one of sixty does. The honest figure is about seven generations, not twelve."
-  },
-  {
-   "when": "10 September 2026",
-   "title": "The worst error, and the register",
-   "did": [
-    "Told the family their own founding brief was wrong. It was not; I had read the root person's spouse instead of her parents. It stood on the site for a day.",
-    "Published /register — every named individual the archive has met anywhere, with the source beside each one.",
-    "Put a pedigree chart on all 473 person pages, with the border encoding how each relationship is known."
-   ],
-   "found": "Of 473 pedigree charts, 19 contain a single edge written in a record."
-  },
-  {
-   "when": "9 September 2026",
-   "title": "The inquest nobody knew about",
-   "did": [
-    "Read QSA coronial file DR103140 in full and published it plainly at /inquest-1902.",
-    "Published /finding-arthur from the Red Cross file.",
-    "Rewrote /great-war around four men instead of one."
-   ],
-   "found": "A suicide in Victoria Park in 1902 — and, in the widow's sworn deposition, the name of his father, closing a generation four research passes had been circling."
-  }
- ],
- "close": "If you find something this page does not record, that is a gap in the record-keeping and worth telling me about."
+  "title": "What changed",
+  "eyebrow": "23 passes · 291 changes",
+  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
+  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
+  "days": [
+    {
+      "when": "21 September 2026",
+      "title": "One wildcard, three published findings withdrawn, and a generation named",
+      "found": [
+        [
+          "Corrected",
+          "/searched — a marriage recorded as «not found, in any spelling» was in the index under SANIGRE"
+        ],
+        [
+          "Corrected",
+          "/spellings — 371 was a count of index entries and the page said baptisms"
+        ],
+        [
+          "Corrected",
+          "/chew-magna — «None, in any spelling» was false; two baptisms there, and they name a father"
+        ],
+        [
+          "Added",
+          "/chew-magna — SIMON SANIGER and ELIZABETH, with sons Charles 1816 and William 1822"
+        ],
+        [
+          "Added",
+          "/bristol-chapels — errand 18 answered without ordering twelve RG 4 volumes"
+        ],
+        [
+          "Added",
+          "/portsea — the county marriage set read end to end, 22 D'Arcy entries and no Joseph"
+        ],
+        [
+          "Added",
+          "/hannah-baptism — Lydia's marriage asked with no spelling list at all"
+        ],
+        [
+          "Added",
+          "/behind-the-paywall — three more ways this site answers a question nobody asked"
+        ]
+      ],
+      "did": [
+        "FOUND THAT FINDMYPAST'S SURNAME BOX TAKES WILDCARDS, which is the whole of the day. `S*N*G*` over eleven years of one county returned a marriage this archive had published as not existing, and two spellings its own table did not hold.",
+        "THOMAS SINEGAR'S MARRIAGE is indexed SANIGRE. /thomas-sinegar has carried it since the thirteenth; /searched said the same morning that it was not found in any spelling. Controlled: SANIGER returns 8 marriages in the county and window, SANIGAR 3, and Thomas is in neither.",
+        "COUNTED THE SPELLING TABLE PROPERLY. The five largest forms read row by row — 298 index entries are 246 baptisms. The repetition sits almost wholly in the two forms whose parishes were transcribed twice, so an entry count measures how often a parish was typed up as much as how often a name was written.",
+        "«NONE, IN ANY SPELLING» AT CHEW MAGNA WAS FALSE. Somerset Baptisms holds Charles Sinagar 1816 and William Sinegar 1822, children of SIMON and ELIZABETH — and a plain search for SINEGAR, one of the eight forms in use that day, returns the 1822 baptism on its own.",
+        "WHICH NAMES A GENERATION. Elizabeth Saniger, widow, 60, born Chew Magna, was already here living with her son William Saniger, 27, born Chew Magna, at Oxford Road in 1851. The register names her husband.",
+        "ERRAND 18 ANSWERED. The RG 4 Bristol chapel registers are transcribed on FindMyPast: `S*N*G*R` at Bristol returns nought against 133 Smith chapel baptisms there, and the surname's eight chapel entries are all at Dursley, Corn Meeting — so the family was Congregational, thirty miles up the scarp and not in Bristol.",
+        "LYDIA'S MARRIAGE ASKED WITHOUT A SPELLING LIST. 122 rows across Gloucestershire 1793-1803, every one read: six are this surname and not one is a John, not one marries a Lydia. The reading that it was hiding under an untried spelling is retired.",
+        "ENGLAND MARRIAGES 1538-1973 HOLDS NO HAMPSHIRE. Smith returns 0 there and 14,056 in Gloucestershire, which voided a null about Joseph D'Arcy's marriage. Re-asked of the county set, which holds this family's own 1779 wedding: 22 D'Arcy entries, no Joseph.",
+        "PORTSEA IS FINISHED. 44 D'Arcy baptisms in the county set and exactly one is Robert and Jean's, against a tree that gives them nine children.",
+        "THE NEWSPAPER ROUTE MEASURED AND CLOSED. FindMyPast's «Newspapers & Publications» is a name index to BMD notices, not the British Newspaper Archive: Robert D'Arcy returns 42 with nothing before 1857, Joseph 84 with nothing before 1914.",
+        "TWO GATES ADDED, each proved falsifiable by reintroducing the fault it catches: a FindMyPast null claiming «any spelling» must carry a wildcard, and a refused spelling fold must not reach the fold map.",
+        "AND BUILD.SH NOW SAYS WHETHER IT WAS KILLED OR REFUSED, after this session ran a `pkill` that matches every archive on the machine."
+      ]
+    },
+    {
+      "when": "20 September 2026",
+      "title": "Three ways to get a meaningless zero, and an audit of what never reached the site",
+      "found": [
+        [
+          "Corrected",
+          "/swonhungre — 170 catalogue records was a paging bug; the true figure is 193"
+        ],
+        [
+          "Corrected",
+          "/behind-the-paywall — Catherine Cotton's origins republished as a controlled null"
+        ],
+        [
+          "Added",
+          "/behind-the-paywall — the ways this site returns a zero that means nothing"
+        ],
+        [
+          "Added",
+          "/the-corps — the Army Lists give Robert rank at both ends of the «blank»"
+        ],
+        [
+          "Added",
+          "/hannah-baptism — where Lydia did not marry, with its controls"
+        ]
+      ],
+      "did": [
+        "CAUGHT FINDMYPAST RETURNING THREE DIFFERENT KINDS OF MEANINGLESS ZERO, each of which had already been published here as a finding or was about to be, and wrote them up together.",
+        "WITHDREW «170 distinct catalogue records» from /swonhungre. The Discovery tool stopped after one page and printed the true count beside the records it had. 193 and 183.",
+        "THE ARMY LISTS ARE WALKABLE, and they give Robert D'Arcy a rank at either end of what this archive had called a blank of twenty-four years.",
+        "WROTE THE SILENT-JOINS AUDIT and found one real loss: a duplicate key that had cost Hannah Saniger the General Hewitt voyage on her own page.",
+        "SETTLED THE EIGHT SHARED NAMES — seven assigned, one left shared on purpose, and a man who fell between two mechanisms.",
+        "BUILT AN END-TO-END SELF-TEST, which immediately found 307 literal markdown asterisks across ten pages.",
+        "DRAFTED THE GLOUCESTERSHIRE ARCHIVES LETTER, which asks for nothing they have already refused.",
+        "SENT THE TROVE REPLY, answering their question about AI use by name."
+      ]
+    },
+    {
+      "when": "17 September 2026",
+      "title": "The Mazza fault in a different file, and Discovery turns out to have an API",
+      "found": [
+        [
+          "Corrected",
+          "/people — 176 record lines had never reached the people they name"
+        ],
+        [
+          "Added",
+          "/swonhungre — three people and a four hundred pound staple debt of 1385"
+        ],
+        [
+          "Corrected",
+          "/errands — the Wicklow fire premise was wrong"
+        ]
+      ],
+      "did": [
+        "FOUND THE MAZZA FAULT HERE, in a different file: 176 record lines naming 55 people were dropped by the dossier build, so thirty people carried «no record has been found for them» over real records. Fixed, with a gate that refuses the build if it happens again.",
+        "DISCOVERY HAS A JSON API — no account, no key, no bot check — and it was hiding three people and William Swannanger's four hundred pound staple debt of 1385.",
+        "RE-OPENED ALL FIFTY-ONE MARRIAGES this archive cites, at transcript level where the result row hides the spouse's surname. Nothing was wrong.",
+        "THE WICKLOW FIRE PREMISE WAS WRONG: 25 Wicklow parishes have marriage registers covering 1819. The 1922 fire did not take them.",
+        "THE RCB LIBRARY WROTE BACK and offered to search on request for a fee, which turned a closed door into a procedure.",
+        "RE-RAN SIX NULLS: one was a bad phrase, three were right for the reasons they gave."
+      ]
+    },
+    {
+      "when": "16 September 2026",
+      "title": "A father's name in an index column, and Ann Saniger comes home",
+      "found": [
+        [
+          "Added",
+          "/hannah-baptism — an address at last: Clapton, in the village of Ham"
+        ],
+        [
+          "Corrected",
+          "/hannah-baptism — Lydia is real, her wedding is not"
+        ],
+        [
+          "Added",
+          "/spellings — fifteen spellings put to one index"
+        ],
+        [
+          "Added",
+          "/sanigers — all one hundred and fifty-eight SANIGER baptisms, read"
+        ]
+      ],
+      "did": [
+        "READ ALL 158 SANIGER BAPTISMS IN ENGLAND BIRTHS & BAPTISMS, a set that carries the father's first name — which is what brought Ann Saniger home and made the family reconstitution possible.",
+        "LYDIA IS REAL AND HER WEDDING IS NOT. The Lydia Jones who marries at Berkeley in 1798 married a SAWYER, on the transcript rather than the result row. Her death as Lydia Sanigar in 1851 is real; her maiden name and her wedding were invented by somebody who matched four fields and did not open the fifth.",
+        "AN ADDRESS AT LAST: both censuses put the family at Clapton, in the village of Ham, one of the three hamlets of Berkeley parish.",
+        "PUT FIFTEEN SPELLINGS TO ONE INDEX and found that a forty-four-year hole in the Berkeley register was a clerk's habit rather than a gap.",
+        "MEASURED THE BERKELEY BURIAL INDEX, which stops in 1790 — recorded rather than assumed.",
+        "MOVED THE GRAVES, THE HOUSEHOLDS, THE PLACES, THE CHRONOLOGY, THE SPINE, THE CHANGE FEED, THE OPEN QUESTIONS AND THE SEARCH REGISTER onto the estate's shared shapes.",
+        "AND CORRECTED YESTERDAY'S CONCLUSION ABOUT THE ARMY LISTS, which was wrong."
+      ]
+    },
+    {
+      "when": "15 September 2026",
+      "title": "The last day of the subscription: the Hyde D'Arcys, and a claim withdrawn",
+      "did": [
+        "NAMED JOSEPH D'ARCY'S FIVE CHILDREN, which this archive has wanted since it found his will. All five baptised at Milford to Joseph and KATHERINE LUCY ELIZA, the register calling him “Lt Col RA of MILFORD HOUSE” — an address nobody here had.",
+        "FRANK HYDE D'ARCY WAS BORN AT MADEIRA on 14 December 1838. Four words in a baptism note, and Joseph D'Arcy was on a Portuguese island in the Atlantic in the winter of 1838.",
+        "JOHN HYDE D'ARCY went to HARROW and died at Southampton on 28 June 1852, aged nineteen — reported as far as the Catholic Telegraph in Dublin.",
+        "FRANK HYDE D'ARCY died at Worcester on 15 June 1868, aged twenty-nine, five years after his Lymington wedding, and was brought home to be buried at Pennington.",
+        "And a grandson: FRANK HAMILTON HYDE D'ARCY, baptised at Croydon Common on 26 November 1868 — FIVE MONTHS AFTER HIS FATHER DIED — father entered as “Gentleman”, mother Anna Maria, of St James Road. He died at Chelmsford in 1910.",
+        "FOUND JEAN WARD'S DEATH NOTICE: Hampshire Chronicle, 24 March 1823 — “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.”",
+        "WITHDREW A CLAIM MADE THE DAY BEFORE. /margaret-jones announced the 1843 notice as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. The 1823 notice does it twenty years earlier. Filed as an error, and the page now carries the correction above the claim.",
+        "FOUND THE 1806 MARRIAGE NOTICE: “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — Oxford University and City Herald, 1 November 1806. The Chester Courant adds the church and the officiant.",
+        "Which disproved the correction made an hour earlier. The corps is on record in 1806, not 1823 and not 1843 — and the 1806 notice is the report of the very marriage the /margaret-jones page was built around. It also fixes Margaret as the ELDEST DAUGHTER.",
+        "DOCUMENTED JOSEPH D'ARCY'S PERSIAN DECORATION from the London Gazette of 30 June 1818: the Prince Regent's permission to wear the Second Class of the Imperial Order of the Lion and Sun, conferred by the King of Persia. Five papers carried it within the week. The page that said the archive “will not assert it from three letters after his name” now cites the grant.",
+        "CHASED THE TWO RICHARD D'ARCY DEATHS. Neither is the Richard of Priestlands — and one of them opened a family nobody here knew existed.",
+        "“At St Helier's, JERSEY, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33” — Saint James's Chronicle, 23 May 1857.",
+        "And five years later: “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR”, died at Bangor, 14 June 1862.",
+        "JOSEPH D'ARCY MARRIED THE DAUGHTER OF AN EARL. The tree has always given him a wife CATHERINE GEORGIANA WEST, married at Bath in November 1817, and this archive never looked at the name — WEST is the family name of the EARLS DE LA WARR. Two newspapers call her Lady Catherine independently.",
+        "So the five Milford children are his SECOND family. “Third son” means there was a first and a second: at least eight children across two marriages, where this morning the archive credited him with five.",
+        "Established a real null on the Priestlands Richard: only FIVE D'Arcy deaths were ever registered in the Lymington district — Joseph, his widow, and three moderns — and no Richard D'Arcy or ARCY is in the 1851 census anywhere in Britain.",
+        "OPENED FIND A GRAVE, a source this archive had never used, and found THREE D'Arcy memorials at CENTENARY MEMORIAL GARDENS, Brisbane: Kenneth Lindsay D'Arcy (1927–2010, plot Secret Garden), Audrey Dell D'Arcy (1929–2022, Garden of Reflection E/20) and CHRISTINE HILDA D'ARCY-EVANS (1930–2017, Garden of Reflection C/41), whose name this archive has never held.",
+        "And control-tested it first. Find a Grave's `locationId=state_2118` returns NO MATCHES for D'Arcy, Darcy, Sneyd — AND FOR SMITH, which is impossible, while Darcy worldwide returns 10,654. Searching within a named cemetery works; the location filter does not.",
+        "PUT FOUR MORE PLACES ON THE ATLAS by tidying what is handed to the geocoder — 153 placed became 157, and the approximates fell from 67 to 64. HTML escapes, “Som Eng” abbreviations and prose like “Christened in Berkeley” were stopping the lookup. What the page PRINTS is unchanged: the place as recorded.",
+        "Left thirteen unplaced rather than guess: Buckwall, Deinschwang, Neuhaus, Himley Hall, “Parish of Elmore” and “?” among them.",
+        "OPENED FOUR SOURCES THIS ARCHIVE HAD NEVER USED, and came away with one usable and three refusals — each with a reason and a control behind it.",
+        "ANTENATI holds 422 REGISTERS for ARIENZO at the Archivio di Stato di Caserta — Matrimoni processetti 63, Matrimoni 62, Nati 59, Morti 57, Diversi 45, from 1809 — digitised, free, and NOT NAME-INDEXED. A search for FALCO returns nothing; so does RUSSO, the commonest surname in Campania, which is the control that proves the index is missing rather than the family.",
+        "THE NLI CANNOT HELP THE LIMERICK LINE, and that is worth saying rather than searching. Its registers are CATHOLIC; Paul Cole Atkinson is recorded born at ST MARY'S, LIMERICK — the Church of Ireland cathedral parish — and Atkinson, Cole, Creech, Kent, Bowen and Peevers are Protestant settler names. The same shape as the Wicklow problem.",
+        "irishgenealogy.ie is behind a Cloudflare bot check for the THIRD time in this archive's life. RootsIreland is behind a subscription. SCOTLANDSPEOPLE answers ACCESS DENIED without an account, and no account was created and no credentials entered.",
+        "BILLIONGRAVES IS BLOCKED, NOT EMPTY: the page loads and its own search API answers 403 and 400, and the country list never finishes. Nothing was searched, so nothing is known — recorded that way.",
+        "Eight rows added to /coverage and three errands opened, so that the next pass starts from these verdicts instead of repeating them.",
+        "FOUND LADY CATHERINE'S BURIAL: CATHERINE GEORGIANA DARCY, AGED 36, “OF BATH”, buried 22 MARCH 1824 at BOURN, CAMBRIDGESHIRE. Born about 1788, twenty-nine at her Bath marriage, and dead six years before Joseph remarried — so the gap between his two families is now measured rather than assumed.",
+        "Her third son Richard was born about 1824, the year she died at thirty-six. Published as an inference and labelled as one; and why she is buried at Bourn, a hundred and fifty miles from Bath, is not explained.",
+        "FREEBMD OPENS WITHOUT A LOGIN AND RETURNS NOTHING. It accepts a POST and answers with the results-page furniture and no rows. Control: SMITH BIRTHS IN BRISTOL IN 1840 returns zero, which is impossible. Nothing was searched, and no null from it is recorded.",
+        "ROOTSCHAT REQUIRES AN ACCOUNT TO SEARCH, let alone to post. None was created. The two questions worth putting to it — the Holderness descent and the disproved Keele graft, both asked as “what would break this” — are drafted as errand 47.",
+        "GENEANET READS WITHOUT SIGNING IN, and no bot check appeared: 26 FALCO marriages at ARIENZO in Italy, Marriages 1809-1900, both parties named, including FALCO GIOVANNA married to CRISCI ANIELLO. Recorded as the Falco archive's ground rather than imported.",
+        "CLOSED THE BURIAL QUESTION. All three Sussex sisters are buried out of ST ANDREW'S OLD CHURCH, HOVE — and their entries are on THE SAME PAGE of the same register, TNA RG 37/65/2 page 47. CHARLOTTE 28 MAY 1869, JANE 10 JANUARY 1875, CATHERINE 23 JANUARY 1876.",
+        "Two exact dates where the archive held only GRO quarters — and Catherine's 23 January is the date the Horsham paper printed a fortnight after the event, so a parish register and a newspaper agree without either having seen the other.",
+        "FOUND ROBERT WEST D'ARCY, married at BOMBAY in 1846. The middle name is the find: WEST is Lady Catherine Georgiana's family name, so Joseph's son carried his mother's peerage surname to India. The transcript is paywalled even on a paid trial — indexed, not read.",
+        "And a third broken FindMyPast parameter: `sourcecategory` mangles to `life-events-bmds` and returns zero whatever else is asked. Any null drawn through it is worthless.",
+        "WILLIAM SNEYD OF MADELEY, the oldest name in the Sneyd line and until today a citation reading “Sneyd Web Site” with no death at all, now has TWO documented candidate burials at Madeley All Saints: 1819 aged 88, and 13 MAY 1827 AGED 84. The weaver married about April 1769 and fathered children to 1794, so the 1827 burial fits far better — and two candidates are two candidates, and the page says so.",
+        "CHARLOTTE CATHCART D'ARCY married ROBERT MEAD PEARSON at PARRAMATTA in 1859, registration 2618 — the town where her father died in 1849, and she would have been 34. A strong candidate for the Charlotte christened at Chatham eight days before the England sailed, and NOT an identification: the index spells the middle name two ways and the baptism gives none. Errand 48 is the certificate.",
+        "And recorded a seam left unworked as the trial expires: EIGHTY-ONE D'Arcy burials and memorials in Queensland Burials & Memorials, of which this archive holds one."
+      ],
+      "found": [
+        [
+          "Corrected",
+          "/margaret-jones — “the first record anywhere” withdrawn, with the 1823 notice quoted"
+        ],
+        [
+          "Added",
+          "/the-corps — Major-General by March 1823, corroborating Connolly from a contemporary paper"
+        ],
+        [
+          "Added",
+          "/joseph-darcy — the five children, Madeira, Harrow, and a grandson at Croydon"
+        ],
+        [
+          "Filed",
+          "/what-we-got-wrong — own error 27, on the difference between “the earliest found” and “the first anywhere”"
+        ],
+        [
+          "Added",
+          "/the-corps — “Col. D'Arcy, of the Royal Engineers”, November 1806"
+        ],
+        [
+          "Added",
+          "/joseph-darcy — the Lion and Sun, gazetted rather than inferred"
+        ],
+        [
+          "Added",
+          "/joseph-darcy — Lady Catherine, and the first family"
+        ],
+        [
+          "New source",
+          "Find a Grave — three Brisbane memorials, where the archive had zero"
+        ],
+        [
+          "Added",
+          "/atlas — four more places, and four fewer approximations"
+        ],
+        [
+          "Added",
+          "/coverage — eight rows: Find a Grave twice, BillionGraves, Antenati, the NLI, irishgenealogy, RootsIreland, ScotlandsPeople"
+        ],
+        [
+          "Added",
+          "/errands — the 422 Arienzo registers, the Church of Ireland Limerick line, and a BillionGraves retry"
+        ],
+        [
+          "Added",
+          "/joseph-darcy — Lady Catherine's burial, 22 March 1824"
+        ],
+        [
+          "Added",
+          "/coverage — FreeBMD unusable, RootsChat blocked, Geneanet good"
+        ],
+        [
+          "Added",
+          "/errands — errand 47, the Hornby and Keele questions for RootsChat"
+        ],
+        [
+          "Corrected",
+          "/sussex-sisters — the burials, and one fewer open question"
+        ],
+        [
+          "Added",
+          "/sneyds — two candidate burials for William of Madeley"
+        ],
+        [
+          "Added",
+          "/chatham — a candidate for what became of Charlotte"
+        ]
+      ]
+    },
+    {
+      "when": "14 September 2026",
+      "title": "The Sussex sisters, documented",
+      "did": [
+        "Took the three daughters added to this archive the same day out of its own family tree — Jane, Catherine and Charlotte — and tested them against the public record. All three hold.",
+        "Found all three CIVIL DEATH REGISTRATIONS, same district, seven years apart: Charlotte aged 73, Brighton Q2 1869, vol 2B p.152; Jane aged 87, Brighton Q1 1875, vol 2B p.203; Catherine aged 86, Brighton Q1 1876, vol 2B p.164.",
+        "The ages run back to births of about 1795, 1787 and 1789 against the tree's 1794, 1787 and 1789 — two exact, one a year out. These were web-tree claims yesterday.",
+        "Found Catherine's obituary: “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86” — Horsham, Petworth, Midhurst and Steyning Express, 8 February 1876. It confirms the exact date, confirms she never married, and gives an address.",
+        "Found that she left an estate: Index to Death Duty Registers, Court of Probate, Brighton 1876, TNA IR 27/396 — the likeliest document anywhere to name this family's English descendants after 1850.",
+        "Found all three sisters IN ONE HOUSEHOLD in the 1841 census — Western Buildings, Brighton, schedule 1912, with a servant, Sarah Harmer, 20.",
+        "Published the one thing that does not fit rather than burying it: the 1841 ages are 40, 39 and 35 when the sisters were 53, 51 and 46.",
+        "CAUGHT A SEARCH THAT LIES. A first pass reported no Jane D'Arcy of the right age in Sussex in 1871. The control — Jane Smith, same age, same county, same census — returned zero, which is impossible. Combining a year of birth with a place breaks FindMyPast's census query silently.",
+        "Re-ran the census work by year alone: the sisters are in none of 1851, 1861 or 1871 under any D*ARCY spelling. A real gap, now an errand rather than a false negative.",
+        "SEARCHED BY ADDRESS AND BY HOUSEHOLD INSTEAD OF BY NAME, and found all three sisters in the 1851 census at WESTERN COTTAGE, BRIGHTON — HO107/1646 f.357 p.59 sch.172.",
+        "THE CENSUS GIVES THEIR BIRTHPLACES: Jane and Catherine born BARBADOES, Charlotte born LYME, DORSET. An English government record confirming the West Indies posting that had rested on two Caribbean christenings and a family tree.",
+        "All three entered as LODGERS, UNMARRIED, occupation “FUND HOLDER” — living on invested capital, in rooms in somebody else's house.",
+        "Found why four days of searching had missed them: the surname is indexed as ARCY, the D' read as part of the forename. No D*ARCY query could reach them. They came out of a household search — Jane, with a Charlotte in the same house.",
+        "Searched 1861 four independent ways — surname, address, birthplace in Sussex, birthplace nationally — and they are in none of it.",
+        "READ THE 1851 CENSUS IMAGE rather than the transcript, and found two errors in the index. The enumerator writes “Jane D'Arcy” plainly — the apostrophe was read as the end of a forename, giving a surname of “Arcy”. And the address is “19 Western Cott” dittoed down to 22: the sisters are at 22 WESTERN COTTAGES, not at a house called Western Cottage.",
+        "Corrected a detail before publishing it: James Hayward, lodging house keeper, is schedule 173 on the next folio — the house NEXT DOOR, not the sisters' householder. Their own schedule holds three lodgers and no head.",
+        "Ran the 1861 census eight ways — surname, the right street, the widened street, Bedford Square, birthplace in Sussex, birthplace nationally, household fingerprint, and Falmer. They are in none of it."
+      ],
+      "found": [
+        [
+          "New page",
+          "/sussex-sisters — three daughters moved from a web tree to the public record"
+        ],
+        [
+          "Corrected",
+          "/robert-family — Jane, Catherine and Charlotte upgraded from family tree to documented"
+        ],
+        [
+          "Added",
+          "/crossread — the three it produced are now tested"
+        ],
+        [
+          "Added",
+          "/coverage — the census query that returns zero when it should not"
+        ],
+        [
+          "Added",
+          "/errands — three new jobs, including the Death Duty register at Kew"
+        ],
+        [
+          "Added",
+          "/sussex-sisters — the 1851 household, and the census that says Barbadoes"
+        ]
+      ]
+    },
+    {
+      "when": "14 September 2026",
+      "title": "Reading the archive against its own open questions",
+      "did": [
+        "Wrote tools/crossread.py after yesterday's Constantine error: it holds the open questions as search terms, reads all 719 data files and built pages, and prints every place the terms appear except the page that owns the question.",
+        "Found that ROBERT AND JEAN HAD TEN CHILDREN on the family tree. This site's page about their family listed five. The Hornby page has said “ten children” in plain text for weeks.",
+        "Answered a question opened the previous day: JANE D'ARCY, born Barbados 15 December 1787, died at FALMER, SUSSEX in January 1875, AGED EIGHTY-EIGHT. Her tree birth date and her Barbados christening of March 1788 corroborate each other.",
+        "Added CATHERINE D'ARCY (1789–1876, born Barbados, died Brighton), two ANNA MARIAS who died small, and CHARLOTTE (1794–1869, born Lyme Regis, died Brighton) — four more children nobody here had named.",
+        "Bracketed the Barbados posting with no new record at all: children born Barbados in 1786, 1787 and 1789, then Portsmouth in 1792 and Lyme Regis in 1794. The Corps page had a twenty-four-year blank.",
+        "Found that the tree gives Robert D'Arcy a BROTHER — Constantine D'Arcy, born Barbados 1759, died Chatham 1778, appointed to De Lancey's Brigade on 1 June 1778 — which the Hornby page has never mentioned in all its argument about his parentage. Published with an explicit warning that it may be Robert's own son duplicated and back-dated.",
+        "Found that LYDIA has a birthplace (Wotton-under-Edge), two parents (William Jones and Sarah) and a death (7 July 1851, Berkeley) in this archive's data, none of which the page calling her unevidenced had mentioned. Her death is inside civil registration.",
+        "Same for CATHERINE COTTON, listed as an open question while the tree gives her birth, marriage, death and parents, all at Berkeley.",
+        "TESTED THE MARTHA WAKEFIELD CLAIM PROPERLY. The tree says she died at Maryborough, Queensland, on 23 April 1899, with a cemetery and a plot number, under the married name HURFORD. This site had searched for her in BRISTOL and concluded she “may never have existed”.",
+        "The free Queensland index has her: MARTHA HURFORD, died 23 April 1899, 1899/C/3288 — and names her parents as JOHN WAKEFIELD and a HUGHES. No Martha Wakefield dies in Queensland at all between 1855 and 1960. Another man's daughter had been grafted onto James and Hannah.",
+        "Filed two errors: searching the wrong country under the wrong surname, and repeating a false statement about this archive's own tree. And noted that the lesson had been filed once already, on 13 September, and not applied."
+      ],
+      "found": [
+        [
+          "New page",
+          "/crossread — six open questions answered out of material already published"
+        ],
+        [
+          "New tool",
+          "tools/crossread.py, committed and runnable"
+        ],
+        [
+          "Corrected",
+          "/robert-family — five children became ten; the open questions rewritten"
+        ],
+        [
+          "Corrected",
+          "/wakefields — Martha resolved, and the false claim about the tree withdrawn"
+        ],
+        [
+          "Corrected",
+          "/hornby — the brother the parentage argument never mentioned"
+        ],
+        [
+          "Added",
+          "/hannah-baptism — the four testable fields behind the name Lydia Jones"
+        ],
+        [
+          "Added",
+          "/errands — five new jobs, four of them free or nearly so"
+        ],
+        [
+          "Filed",
+          "/what-we-got-wrong — own error 26, and an inherited error about Martha"
+        ]
+      ]
+    },
+    {
+      "when": "14 September 2026",
+      "title": "The last two days of the subscription, spent on wills, Barbados and a Canterbury newspaper",
+      "did": [
+        "Established what FindMyPast can and cannot do for wills, before spending the trial on it. Its only Prerogative Court of Canterbury holdings are a wills index for 1750-1800 and an administrations index for 1660-1700 — NOTHING AFTER 1800. Robert D'Arcy's will of 1827, Joseph D'Arcy's of 1848 and John Maddock Jones's of 1844 are all beyond it. £3.50 each at Kew, and no free substitute.",
+        "Read the Gloucestershire probate index 1801-1858 for the Saniger line under wildcards rather than spellings — SAN*, SIN*, SYN*, SWA*. Two entries in 14,195: Abraham Synegar, cardmaker of Dursley (1813), and John Sanigar, carpenter of Oldbury-on-Severn (1822). NO SANIGER OF BERKELEY AT ALL. Control: 277 Smiths. Errand 7 closed.",
+        "Closed the Irish marriage-licence route for George Pitt D'Arcy and Maria White. The Diocesan and Prerogative Marriage Licence Bonds index holds 218,433 records, but sorted by year its DUBLIN entries effectively stop in 1741; Betham's abstracts end in 1810. Neither can hold an 1819 marriage. Six Maria Whites in the set, none marrying a D'Arcy; no George D'Arcy at all.",
+        "Searched the FindMyPast catalogue for consular and overseas registers and found NONE — the Le Havre deaths of 1843 are not reachable there. Filed as errand 35.",
+        "Chased Constantine D'Arcy, and found that this archive had been publishing half his story on one page while calling him unplaced on three others. FILED AS AN ERROR.",
+        "Found the record that settles him: the KENTISH GAZETTE of 14 May 1805 — “After a few weeks illness, the son of COL. D'ARCY, CHIEF ENGINEER OF CHATHAM LINES; his remains were interred with military honours.”",
+        "Which also gives Robert D'Arcy a post for the first time. Every other record of him gives a rank.",
+        "Cited both of Constantine's commissions to the London Gazette by issue and page, and found them printed in the Kentish Weekly Post of 12 June 1804 and in three papers of 29 March and 1 April 1805 — the last of which carries his father's lieutenant-colonelcy nine lines above his own first lieutenancy.",
+        "Counted Robert and Jean's children properly. There are six, not five: JANE D'ARCY, christened at St Michael, Barbados on 17 March 1788, has been in the register all along and on no family page.",
+        "Traced Joseph D'Arcy's line forward out of Priestlands. His son FRANK HYDE D'ARCY married ANNA MARIA SIMPSON at Lymington on 29 September 1863, announced in Thacker's Overland News for India and the Colonies. Fifty-two D'Arcy records at Lymington, running to an electoral roll of 2021 — a living English branch.",
+        "Found a second Kew document for Joseph's estate: the Index to Death Duty Registers gives him at IR 27/284, which leads to a register naming legatees and executors."
+      ],
+      "found": [
+        [
+          "New page",
+          "/constantine — Barbados 1786 to Chatham 1805, and the notice that names his father"
+        ],
+        [
+          "Corrected",
+          "/robert-family — Constantine documented as a son, Jane added as a sixth child, the open questions rewritten"
+        ],
+        [
+          "Corrected",
+          "/chatham — the 1805 burial identified"
+        ],
+        [
+          "Corrected",
+          "/open-questions — Constantine moved from half answered to answered"
+        ],
+        [
+          "Added",
+          "/the-corps — “chief engineer of Chatham lines”, and Barbados set into the 24-year blank"
+        ],
+        [
+          "Added",
+          "/joseph-darcy — the branch that stayed in England, and the death duty register"
+        ],
+        [
+          "Added",
+          "/hannah-baptism — Gloucestershire probate, searched and empty"
+        ],
+        [
+          "Added",
+          "/george-pitt — why the licence bonds cannot help"
+        ],
+        [
+          "Added",
+          "/coverage — seven new rows, all of them FindMyPast"
+        ],
+        [
+          "Filed",
+          "/what-we-got-wrong — error 25, the fact held in one room and not read in another"
+        ]
+      ]
+    },
+    {
+      "when": "14 September 2026",
+      "title": "Priestlands pulled apart, and the family assembled",
+      "did": [
+        "Found Elizabeth Pitt's death registered at Lymington in 1851 — she stayed with the family after Joseph died, so she was a member of that household and not a census-night visitor.",
+        "Found no death notice naming her relationship, so the Pitt question has one more fact around it and still no answer.",
+        "Found Joseph's widow Catherine still at Lymington in February 1852, subscribing to a public fund got up by the Mayor — she is missing from the 1851 census, which turns out to be a gap in the index rather than a departure.",
+        "Searched Hampshire for Joseph's marriage and for Richard Darcy and found neither.",
+        "Rewrote /hornby with what a fortnight of records has added: a bottom-rung commission, a garrison marriage, seventeen death notices naming no relative, and a son who rose. None of it disproves the graft and the page says so.",
+        "Built /robert-family, assembling Robert and Jean's five children for the first time.",
+        "Added nine women to /the-women who were not in this archive a fortnight ago.",
+        "Gave /coverage a row for the British Newspaper Archive, which has been the most productive source of the whole fortnight.",
+        "Noticed the nationality audit had jumped nineteen records in one direction for no reason, and found the cause: I had been hand-writing the classifier on every pass and it had drifted.",
+        "Wrote tools/audit.py, wired it into the build, and filed the drift as an error. Records 299 · Australian 117 · British 182 — 61% to 39%.",
+        "Found the best record of the fortnight: the Morning Herald of 13 February 1843 — “At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.”",
+        "That is the first record anywhere to give Robert D'Arcy a CORPS as well as a rank, and to call anyone his child. It also confirms the Chatham marriage of 1806 from thirty-seven years later.",
+        "Found her husband too: Major Maddock Jones of Pen-y-bryn, Ruabon, late of the Royal Denbigh Militia, died at Ingouville near Havre in March 1843, within weeks of his wife.",
+        "Built /margaret-jones and upgraded her on /robert-family."
+      ],
+      "found": "Robert D'Arcy is now documented as the father of three of his five children — and still, after a fortnight, nobody's son."
+    },
+    {
+      "when": "13 September 2026 · FindMyPast",
+      "title": "Hannah was a Berkeley woman all along",
+      "did": [
+        "Opened a subscription site for the first time in this archive's life.",
+        "Found the 1851 census at Drivers Fields — the same house as 1841 — which states Hannah's birthplace outright: BERKELEY, GLOUCESTERSHIRE.",
+        "Found the marriage: Hannah Saniger to James Wakefield, Bristol, 17 October 1831. The first English record of it, and the first English record of any kind to give her the surname.",
+        "Learned that James Wakefield was born at STROUD, and that there were two more children — Jabez, born about 1843, and Zillah, about 1846 — neither of whom this archive had ever heard of.",
+        "Established that Berkeley's register CAN be searched after 1677, with parents named. The five untestable Saniger generations were behind a paywall, not behind a gap.",
+        "Marked /chew-magna and /bristol-chapels as wrong at the top, and left them up.",
+        "Filed the two largest errors this archive has made: an edifice on a single 1841 tick, and the habit of turning “not reachable from here” into “not there”.",
+        "Added a warning to the top of /coverage saying what every null on it is really measuring.",
+        "Found the marriage of Robert D'Arcy and Jean Ward — Portsea St Mary, 21 June 1779 — which this archive has carried on a family tree since it began.",
+        "Established by control test that FindMyPast covers Portsea St Mary continuously from 1770 to 1792, so Joseph D'Arcy having no brothers or sisters baptised there is now a real result instead of an artefact.",
+        "Tested every Saniger generation the archive had called untestable. Thomas baptised 1744 father Thomas; Thomas married CATHERINE COTTON at Berkeley in April 1769; John baptised five weeks later; Thomas buried 1819 aged 75; John buried 1825 aged 55.",
+        "Found John Saniger's other children at Berkeley — 1801, 1803, 1808 — with the tree putting Hannah's birth in July 1805 exactly between them.",
+        "Corrected the tree's death date for John Saniger by ten months.",
+        "Built /behind-the-paywall.",
+        "Found Samuel Sneyd alive in the 1851 census — Well Street, Hanley, GROCER, born Madeley — with his wife Elizabeth beside him, born OSWESTRY, SHROPSHIRE. That settles the unreadable “Staly Cladwin” of 1861.",
+        "Found Elizabeth Oliver's baptism at Oswestry St Oswald's, 19 May 1782, father David, mother Mary — two digits from the tree's date, and a generation the archive did not have.",
+        "Tested the tree's Audlem marriage against a parish indexed twice over. Twenty Smiths marry there in the same decade and no Sneyd does, in any spelling, ever.",
+        "Found James Wakefield's baptism at Stroud, 6 April 1806, father Richard, mother ELIZABETH WEBB — which explains the Matilda Webb who has been sitting unexplained in his 1841 household.",
+        "Marked /berkeley, /sanigers and /portsea where the subscription has overtaken them.",
+        "Re-ran the audit: British 145, Australian 96 — 60% to 40%, from 42% at the start.",
+        "Found Ellen Wakefield's baptism (Bristol, 26 October 1834, father James, mother Hannah) and her burial (St Paul, Portland Square, 12 July 1840, AGED FIVE). She was never left behind in 1854; she died fourteen years before the ship.",
+        "Established by control test why Hannah's own baptism still cannot be found: only the partial FamilySearch index reaches Berkeley, and FindMyPast's Gloucestershire Baptisms does not cover the parish at all.",
+        "Searched for John Saniger's marriage at Berkeley and found none, so Lydia remains unnamed by any record.",
+        "Put the original Berkeley register and Robert D'Arcy's 1827 death notice at the top of the errand list.",
+        "Drove the newspaper archive's date filters by hand and found Robert D'Arcy's death notices — seventeen of them, in England, Ireland and Scotland.",
+        "Confirmed his death as 13 May 1827 from papers printed within four days of it, replacing a Victorian printed roll as the authority.",
+        "Found his funeral, which nobody here knew about: interred at Chatham WITH MILITARY HONOURS on Saturday 19 May 1827 — the exact date of entry 1571 in the parish register.",
+        "And established that the press names nobody he was related to. Not one of the seventeen gives even his forename. The best remaining route to his parentage is now closed.",
+        "Pushed the Saniger line back two more generations: Thomas baptised Berkeley 12 December 1711, father William; William baptised there 12 October 1679, father William. Both match the tree to the day.",
+        "Found Thomas Saniger's marriage to Catherine Cotton — and then failed to find Catherine anywhere else, which is the one new question this opened.",
+        "Traced Jabez and Zillah Wakefield to Queensland, where they married in 1863 and 1871.",
+        "Corrected my own claim that Jabez and Zillah were children nobody here had heard of. They are on the passenger register this archive published in July.",
+        "Built /saniger-line and /wakefields, and added the Berkeley baptism gap and the newspaper archive to /coverage.",
+        "Rebuilt Robert D'Arcy's career from the commission registers and the officer promotions: first commissioned in 1778 as a PRACTITIONER ENGINEER, then Major 1802, Lieutenant-Colonel 1805, Brevet Colonel and Colonel in 1813 — every step citable to the London Gazette by issue and page.",
+        "Found that Joseph D'Arcy went into the ROYAL ARTILLERY, listed from 1795 to 1844.",
+        "Discarded a Robert D'Arcy gazetted Cornet of the 17th Light Dragoons in 1804 — the ranks make him a different man — and recorded the exclusion.",
+        "Built /the-corps.",
+        "Found Jean Ward's baptism at SOUTH LEITH — 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — in the parish this archive had repeatedly called untranscribed.",
+        "Noticed that her father's name was Joseph, and that Joseph is what she and Robert called their son at Portsea in 1780.",
+        "Found George Pitt D'Arcy in the Peninsular War officers' roll for 1808, 39th Foot — the regiment he was still with in 1826.",
+        "Filed the South Leith claim as an error, and built /jean-ward.",
+        "Found Jean Ward's parents' marriage — Joseph Ward and Marth Gairden, South Leith, 27 October 1747 — which names her grandfather WILLIAM GAIRDEN and takes this archive five generations up a Scottish line it had none of at breakfast.",
+        "Searched the whole of Gloucestershire for Catherine Cotton and found nothing but her wedding. She is the one person this week's work has left exactly where it found her.",
+        "Confirmed Eliza Wakefield: baptised Bristol 14 October 1832 to James and Hannah, buried there 4 May 1834 AGED NINETEEN MONTHS.",
+        "Searched Bristol under every spelling and record type for Martha Wakefield, born about 1836, and found nothing at all. She has been on five pages of this site and appears to have no source.",
+        "Followed James Sneyd the engraver forward: Well Street in 1871 with his son at the same trade, and 20 Well Street in 1881 as an ENGRAVER (POTTER) with a granddaughter. Sixty years in one road, while his brother was in Queensland.",
+        "Went back to Thomas Sinegar of St Philip and Jacob — a lead this archive found weeks ago, called its best, and then abandoned when I decided Hannah was not born in Gloucestershire.",
+        "He fits exactly: Thomas Saniger baptised Berkeley 3 July 1808 son of John is FORTY-TWO at the 1851 census, which is the age the Bristol enumerator wrote against a man who said he was born at BERKLEY.",
+        "Found his 1841 household at Sion Road with a daughter LYDIA, and his son James christening another LYDIA in 1866 — three generations of the name Hannah's mother bore.",
+        "Failed to find his marriage in any Gloucestershire index, which is the document that would settle it, and put it on the errand list.",
+        "Asked to look on Ancestry; found it signed out in both browsers and did not attempt a login. Used FamilySearch instead, which was already signed in and free.",
+        "FOUND HANNAH'S BAPTISM. HANNAH SANIGOR, Berkeley, 18 AUGUST 1804, father JNO SANIGOR — indexed under a spelling this site's own alias list did not carry.",
+        "Widened the alias list from eleven Saniger spellings to sixteen.",
+        "Found Thomas Saniger's marriage to MARTHA GOLDING at Bristol St James, 24 August 1828, his eleven children and his death at Waterloo Lane in 1881 — on the FamilySearch tree, where neither marriage is sourced, so both are flagged as leads.",
+        "Recorded that the tree's LYDIA JONES, Hannah's mother, has no record behind it either.",
+        "Tried FamilySearch for the Bristol marriage before asking anyone to pay for anything, and it was there: THOMAS SANIGRE married MARTHA GOLDING at Bristol, 24 August 1828.",
+        "That is the EIGHTEENTH spelling of this surname, and the second in one hour to have defeated every search that used the others.",
+        "Checked Ancestry signed in without a subscription: it holds the Gloucestershire Church of England registers 1538-1813 and five John Saniger wills, and masks every date, place and spouse.",
+        "Wrote to Gloucestershire Archives for the Berkeley marriage of John Saniger, about 1797 — the entry that would give Hannah's mother a surname. Sent 13 September 2026, awaiting reply.",
+        "Tried FamilySearch's full-text handwriting search for the 1797 Berkeley marriage. It covers Gloucestershire, but its marriage collection is built from diocesan bonds, and a couple marrying by banns leaves no bond. Three Saniger hits, none from 1797.",
+        "Corrected /drivers-fields, which for months carried a section headed “Hannah was not born in Gloucestershire”, and /general-hewitt with it.",
+        "Built /new-generations — sixteen documented people the family tree has never held, most of them women, most in the generation just above where the tree stops.",
+        "Rewrote the lesson at the top of /coverage: a control test proves a source covers a parish and proves nothing about whether your search string can reach the record.",
+        "Found George Pitt D'Arcy's first marriage in a Wiltshire newspaper of 23 September 1805: Captain George D'Arcy, SON OF LIEUT. COLONEL D'ARCY, to MISS LUDLAM OF GUERNSEY.",
+        "Noted that Robert D'Arcy was gazetted Lieutenant-Colonel on 1 March 1805 — six months before — so the rank in the notice is his to the month. It is the first record in this archive to make George Pitt D'Arcy anyone's son.",
+        "Placed him in Ireland with the 39th in 1820 and 1822 from two newspapers, which is the right country at nearly the right time for the Wicklow marriage the tree claims.",
+        "Failed to find that second marriage, and said so.",
+        "Built /george-pitt — the best-documented D'Arcy here, and until today he had no page.",
+        "Searched the Irish records for the marriage of George Pitt D'Arcy and Maria White, and established why it cannot be found: every Wicklow and Dublin marriage index reachable is ROMAN CATHOLIC, he was an Anglican officer, and the Church of Ireland registers burned in the Four Courts in 1922.",
+        "Tested and rejected the one Maria White who does marry in Wicklow in the window — she married Thomas Barry at Bray in November 1825, by which time Charlotte D'Arcy was six months old.",
+        "Followed Joseph D'Arcy from the Portsea font to a Hampshire will: LIEUTENANT-COLONEL, ROYAL ARTILLERY, K.L.S., died at Lymington 7 February 1848 in his 69th year, having made his will in February 1844.",
+        "Rebuilt the navigation, which had grown to eighteen entries under one heading, and rewrote the homepage, which introduced an archive that no longer existed.",
+        "Added a section to /direct-line showing where the documented line now ends — generations seven and eight strengthened, nine and above untouched.",
+        "Drafted letters to the RCB Library in Dublin and to Bristol Archives, and added the Irish row to /coverage: the only holding there where the records are not unreached but gone.",
+        "Checked both addresses before sending and found one of them wrong — the RCB Library is library@rcbcoi.org, not the address I had drafted to.",
+        "Sent both letters: Bristol Archives for the 1828 St James entry that would name Thomas Saniger's father, and the RCB Library in Dublin for what survives of Wicklow's Anglican registers.",
+        "Assembled Joseph D'Arcy's obituary from three newspapers, each of which breaks in a different place: St Domingo in 1793, Sicily, the taking of Walcheren, and FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA.",
+        "Which explains the K.L.S. after his name — Knight of the Royal Order of the Lion and the Sun.",
+        "Found his wife: he left his property to KATHERINE D'ARCY, named in the Lady's Newspaper of 8 April 1848.",
+        "Found Joseph D'Arcy's household: twenty people at PRIESTLANDS, Milford, Lymington in 1841 — a wife Catherine, five children, eleven servants, and a RICHARD DARCY of 1784 nobody here had heard of.",
+        "The census gives Joseph's birth county as HAMPSHIRE, which corroborates the Portsea baptism of 1780 from sixty-one years later.",
+        "And an ELIZABETH PITT, 55, living in the house — in the household of Robert D'Arcy's son, while Robert's other son had carried PITT as a middle name since 1783. Recorded as a lead, not an explanation."
+      ],
+      "found": "A boy christened at Portsea in 1780 turns out to have begun at Saint-Domingue at thirteen and spent five years in Persia in the service of the Shah's son."
+    },
+    {
+      "when": "13 September 2026 · second pass",
+      "title": "91 Well Street, and what the indexes actually hold",
+      "did": [
+        "Found Samuel Sneyd's burial: Hanley St John the Evangelist, 23 September 1855, aged 77, of 91 WELL ST. The tree said 20 September 1856 at No 3.",
+        "Tested the year against the death index. Every Samuel Sneyd death registered in England and Wales between 1854 and 1858 — there is exactly one, September quarter 1855 at Stoke. The tree is a year out.",
+        "Confirmed his widow's death in the same index: Elizabeth Sneyd, December quarter 1861, Stoke, which is the tree's 1 December 1861 to the quarter.",
+        "Noted that the burial age of 77 puts his birth about 1778 — independent support for the Madeley baptism of 1781 this archive corrected to a day earlier, and ten years off the tree's 1769.",
+        "Read Collinson's Somerset on Chew Magna: six miles from Bristol, 830 inhabitants, and “in former days … a LARGE CLOTHING TOWN” — the trade that runs through every Saniger found so far.",
+        "Corrected two numbers I had invented on /chew-magna that same morning.",
+        "Identified Chew Magna as a PECULIAR with its own probate jurisdiction, which changes where a Saniger will would be found.",
+        "Control-tested Cheshire and Shropshire: the Audlem marriage and the Oswestry baptism the tree names cannot be tested, because neither place is transcribed. Cheshire returns two John Smiths in twenty years.",
+        "Built /coverage — ten index holdings, measured rather than assumed.",
+        "Register now 210 records.",
+        "Found Elizabeth Sanigar at Battles Lane, Chew Magna, in the 1841 census — in a spade-maker's house, which is the trade Collinson said the parish still had. The Bristol clerk of 1851 was not mishearing the name of a parish.",
+        "Checked whether the twelve Bristol chapel registers can actually be read online. All twelve are digitised:false at Kew. Filed as an error, because this archive said the opposite the same morning.",
+        "Looked for a route to Portsea's register beyond FreeREG's two years and found none through Discovery.",
+        "Re-ran the 1851 search for the Wakefields. Still nothing, and still an absence from a partial transcript rather than a finding."
+      ],
+      "found": "Six of the ten index holdings measured are parishes the family tree names, and six of them are partial, empty or unreachable. An archive built on free indexes will systematically fail to test its own tree, and will mistake that failure for a finding unless it measures every time."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "Swanhanger, Well Street, and two years of Portsea",
+      "did": [
+        "Searched the whole TNA catalogue for Saniger rather than one collection: 71 records, including the Berkeley estate deeds that follow Edward Saniger from clothier in 1692 to gentleman in 1709.",
+        "Proved that Saniger is a worn-down SWANHANGER. One deed of 1377 is catalogued by Berkeley Castle under the man, de Swonhongre, and by Birmingham Archives under the place, Swanhanger — and Gloucestershire Archives glosses a third document “Swanhanger … [Saniger in Hinton]”.",
+        "Searched probate for the first time. Two wills — Elizabeth Saniger, widow of Thornbury, 1833, and Samuel Sanigear of Chipping Sodbury, 1832 — and a defamation suit brought by Christian Saniger in 1768.",
+        "Re-read Bigland properly: six more Saniger entries in volume one, six neighbouring households styled “of Saniger” who are not called Saniger, and none at all in volume two.",
+        "Catalogued every Bristol chapel register in RG 4. There are 36, not the 5 this archive's errand list assumed, and exactly 12 can hold a birth between 1805 and 1815.",
+        "Found Samuel Sneyd's household. The 1861 census at Well St, Hanley — a grocer's shop — holds his widow Elizabeth, aged 82, born Shropshire, eight months before she died.",
+        "Established by control test that FreeCEN holds only 1861 for Staffordshire, so the 1841 and 1851 searches everyone assumed had failed were never possible.",
+        "Tested how much of Portsea's register stands behind Joseph D'Arcy's 1780 baptism. Twenty-two months of it.",
+        "Found Robert D'Arcy in the London Gazette of 19 July 1813, gazetted Colonel of the Royal Engineers.",
+        "Rewrote /berkeley's conclusion, built /portsea and /bristol-chapels, and filed two more errors.",
+        "Re-ran the nationality audit. British evidence now outnumbers Australian for the first time: 107 to 96.",
+        "Searched the 1851 census for Sanigers around Bristol and found a household at Oxford Road, St Philip and Jacob — the parish next to the Wakefields' — whose head and whose widowed mother were both born at CHEW MAGNA, SOMERSET.",
+        "Control-tested Chew Magna in FreeREG: two Smith entries in twenty-one years against a hundred at Walcot. The transcript is a fragment, so the parish cannot be searched from here.",
+        "Built /chew-magna and put the register at the top of the errand list.",
+        "Control-tested the city of Bristol in FreeREG: 289 Smith entries from 75 Gloucestershire parishes, 1800–1820, and exactly one from inside Bristol. The city is not in the index, which is why every Bristol search here has come back empty."
+      ],
+      "found": "The family's name is a hillside above the Severn where the swans were; the archive's oldest English record survives inside a two-year window nobody had measured; and Hannah Saniger's birthplace has, for the first time, a county and a parish worth the fare to Taunton."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "Saniger from 1272, and Bigland fills the gap",
+      "did": [
+        "Searched the Berkeley Castle Muniments: nine deeds name people OF SANIGER between about 1272 and 1473, and not one of them is called Saniger.",
+        "Found Bigland's 1791 Collections on archive.org and read the Berkeley section: “Saniger, long held by an old Family of the same Name”, with the monumental inscriptions.",
+        "Recovered from those monuments a century of Berkeley material the parish transcript does not hold — Saniger inscriptions from 1692 to 1750 with ages and relationships.",
+        "Identified the Hinton manor court rolls, GCR/231 and 258, as the record type that would catch the family where the register cannot.",
+        "Rewrote /berkeley's conclusion, which said the archive should stop calling this a Berkeley family. It was wrong.",
+        "Searched the same catalogue for Wakefield of Bristol, Sneyd of Madeley and D'Arcy wills in Kent. Nothing usable in any of the three."
+      ],
+      "found": "The place is two hundred years older than the surname, and it is documented from before 1291. An antiquary copied the family's gravestones in 1791 and they have been sitting in a scanned book ever since."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "Saniger is a place — and the audit starts to move",
+      "did": [
+        "Found the 1851 census household of Thomas Sinegar, labourer, at 7 Oxford Road, Bristol — born, with his wife Martha, at BERKLEY, Gloucestershire.",
+        "Established that Sanigers were still at Berkeley itself in 1841, in a parish whose transcript stops in 1677.",
+        "Found in TNA's catalogue that SANIGER IS A PLACE in Berkeley parish, with the family holding land there from 1601.",
+        "Found the will of John Maddock Jones of Ruabon, who married Robert D'Arcy's daughter — a Welsh branch the archive has never had.",
+        "Found Robert D'Arcy in the printed Army List of 1778, and Francis D'Arcy separately in the same volume.",
+        "Was blocked by Cloudflare at Welsh Newspapers Online and irishgenealogy.ie — four free British and Irish databases shut in one day.",
+        "Re-ran the nationality audit: the Australian share has fallen from 57% to 53%."
+      ],
+      "found": "The surname is toponymic. Saniger is a hamlet in Berkeley parish, a John Saniger holds land there as a yeoman in 1601, and an Edward Saniger of Saniger is a clothier in 1692 and a gentleman by 1709."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "Back to Britain — and an audit that says the archive had drifted",
+      "did": [
+        "Audited the register by nationality of source: 95 Australian records against 70 British. The archive had drifted to the wrong side of the world and nobody had measured it.",
+        "Named the five TNA RG 4 registers that would hold Hannah's baptism, replacing a vague instruction to write to Bristol.",
+        "Found a Sinegar brewer's household at St Philip and St Jacob with a daughter Lydia — candidate kin, labelled as such.",
+        "Established that William the weaver's baptism is in no transcribed Staffordshire register at all, and that Madeley has no Bishop's Transcripts in FreeREG.",
+        "Searched Denbighshire for John Maddock Jones of Ruabon. Well covered, and he is not in it.",
+        "Read the Gazette for Joseph, Constantine and George Pitt D'Arcy. Nothing, with an OCR caveat.",
+        "Was blocked by Cloudflare at irishgenealogy.ie — three Irish lines, one free database, and no way in from here."
+      ],
+      "found": "57% of this archive's records now come from Australian sources. The brief was always the British ancestry."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "The Gazette, the Birches, and a jurisdiction still shut",
+      "did": [
+        "Found ten London Gazette notices naming Robert D'Arcy between 1793 and 1819, and read one in full.",
+        "Identified the Birch household: Margaret and Elizabeth Ann were daughters of John Birch and Annie Reeves.",
+        "Traced nine Wakefield grandchildren through the Queensland index.",
+        "Tried the NSW BDM index and was stopped by a bot check — recorded as an errand rather than a null.",
+        "Corrected a stale blocked entry: Museums of History NSW is live and the State Archives catalogue is reachable."
+      ],
+      "found": "Robert D'Arcy's promotions are in the government's own gazette, issue and page, where this archive has been citing a printed roll compiled from them."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "The Sneyd chain closes, and four other lines tested",
+      "did": [
+        "Reconstituted all 551 Staffordshire Sneyd records into 94 households.",
+        "Found William Sneyd the weaver's family at Madeley — thirteen children, 1769 to 1794.",
+        "Corrected the tree: their Samuel is baptised 1781, not 1769.",
+        "Ran the Queensland immigration index for every other family in the archive. Only the Wakefields came assisted.",
+        "Exhausted Bristol's four transcribed registers. Neither family is in them.",
+        "Searched Gloucestershire for Richard Wakefield and found one weak candidate.",
+        "Searched Queensland for the three eldest Wakefield daughters. They did not sail and never followed.",
+        "Tested the Somerset-side-of-Bristol hypothesis: Bedminster and Long Ashton are covered and empty; Temple, Redcliffe and Brislington are not transcribed.",
+        "Searched Hampshire and Kent for the other eight D'Arcy children. Two of ten are in the registers."
+      ],
+      "found": "Three of the four Sneyd links are now documented, and the missing one is a baptism of 1746. The line runs weaver, servant, gaol governor."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "Chatham — the parish the Corps lived in",
+      "did": [
+        "Searched Chatham St Mary the Virgin, where Robert D'Arcy served and died, and which nobody had ever tried.",
+        "Found seven D'Arcy records including three burials the archive has only ever known second-hand.",
+        "Read Robert's burial: age 76 — the primary source behind the tree's “1751”, seen for the first time.",
+        "Found Jean Ward's burial, at sixty-six, and Constantine's, entered with his rank.",
+        "Found George Pitt D'Arcy in a parish register as “Bt: Major 39th Foot”, christening a daughter eight days before the England sailed.",
+        "Searched six more counties around Bristol for Hannah Saniger, with controls. Nothing."
+      ],
+      "found": "Chatham holds the D'Arcy family's whole English ending: a general, his wife, his brother officer, his daughter's marriage and his son's rank — none of it ever looked at."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "The ship: General Hewitt, Brisbane, 16 December 1854",
+      "did": [
+        "Found Queensland's assisted-immigration index published as open data after ArchivesSearch itself refused to run a search.",
+        "Found the whole family on one voyage and downloaded the register scan, DR38490.",
+        "Read the register: James a mason, Hiram a plumber, and Miriam — entered as Marion — shipped at fourteen as a domestic servant.",
+        "Established that the register does NOT give Hannah's own county: hers is a ditto of her husband's.",
+        "Searched Hanley — the parish the tree names and nobody had tried — and found Samuel Charles Sneyd's baptism with both parents.",
+        "Followed up the Madeley marriage of William Sneyd and Mary Blackbourne, which had been in the results all day.",
+        "Corrected this morning's overstatement that the Sneyd line was unevidenced. Two of its four links are documented."
+      ],
+      "found": "The emigration, dated to the day and named. The archive knew the family reached Queensland; it did not know how, when, or on what."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "The county reconstituted, and the Bristol migration",
+      "did": [
+        "Opened all 556 Gloucestershire Saniger records individually instead of searching them by name.",
+        "Assembled 81 households from the 196 baptisms that name a father, splitting same-named couples wherever 25 years separate consecutive baptisms.",
+        "Asked all 81 whether any could be Hannah's. None can.",
+        "Published /sanigers: the households, the trades, seventeen spellings rather than eleven, and the 29 Sanigers in Bristol on census night 1841."
+      ],
+      "found": "The Gloucestershire Sanigers are a Stroudwater cloth-trade family — weavers, tuckers, curriers — at Cam and Dursley, not Berkeley. And Hannah is in none of their households, because she was not born in the county."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "The maiden name, settled five times over",
+      "did": [
+        "Searched the Queensland death index by MOTHER's name rather than by the deceased — the search this archive should have run a week ago.",
+        "Found five of Hannah's children's death registrations, each naming her, across 41 years and four spellings.",
+        "Found Hannah's own registration, naming her father John Saniger — entered by the clerk as “John Jenniger”.",
+        "Found James Wakefield's registration, naming HIS father Richard Wakefield: a new generation.",
+        "Found Miriam's marriage to William Hartley Sneyd, 15 November 1859, and corrected her age from twenty-one to nineteen.",
+        "Added 14 records and 9 recorded relationships to the register.",
+        "Asked Madeley for the two Sneyd baptisms the tree actually names — 1746 and 1769 — and found neither, in a parish transcribed continuously with 110 Sneyd records.",
+        "Searched FreeBMD for Lyddya Sinegar's death in England and found nothing under any spelling.",
+        "Recorded that the 1861 and 1871 censuses cannot help: the family had emigrated by 1857."
+      ],
+      "found": "The archive spent a week trying to prove “Saniger” from the English end. It was written down five times in Queensland by five different clerks, and nobody had thought to search the index by the mother's name."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "Portsea, Madeley, and three counties that hold nothing",
+      "did": [
+        "Found Joseph D'Arcy baptised at Portsea St Mary on 19 March 1780, father Robert, mother Jean — the first record of Robert D'Arcy in an English parish register this archive has ever had.",
+        "Read the Madeley baptism that killed the Keele graft, and then found a William son of William Sneyd buried there in September 1744.",
+        "Established that FreeREG holds nothing for County Limerick, nothing for South Leith and nothing for St Quivox — three of this archive's oldest dead ends are dead ends in the database, not in the record.",
+        "Tested and rejected the Berkley-in-Somerset hypothesis for Hannah Saniger."
+      ],
+      "found": "Robert D'Arcy and Jean Ward, named together as the parents of a child baptised at Portsea in 1780. His parentage is still unknown; his marriage is no longer a claim."
+    },
+    {
+      "when": "13 September 2026",
+      "title": "The Saniger chain, tested at last — and it breaks",
+      "did": [
+        "Checked FreeREG's coverage for Bristol BEFORE searching it. Four registers, 1,551 records, and St Paul is not among them — so the Wakefield join was never testable there and any null would have been a lie.",
+        "Found that Dursley St James (1577–1951) and Cam St George (1568–1939) cover the whole Saniger chain, which /berkeley had implied was untestable.",
+        "Searched the county: 494 Saniger records 1670–1830, and three baptisms matching the tree's dates almost exactly, all at Dursley.",
+        "Opened all three. The fathers are Abraham, John and Samuel — three unrelated men. The chain is a coincidence of dates.",
+        "Established that no Saniger baptism exists in Gloucestershire 1801–1809, in a window that is well covered.",
+        "Established that in 139 Gloucestershire records spanning 1790–1900, no Saniger ever marries a Wakefield.",
+        "Found Miriam Wakefield's birth registration in FreeBMD: June quarter 1840, Bristol, volume 11, page 183 — the only one in England in five years.",
+        "Control-tested the FreeBMD harness (21,248 Wakefield marriages, 1838–1842) before reporting any absence from it.",
+        "Rewrote /berkeley around the result and added the GRO certificate to /errands as the cheapest decisive document on the site.",
+        "Then found the household in the 1841 census and published /drivers-fields — James and Hannah Wakefield at St Paul, Bristol, with Miriam aged one, and a seventy-year-old Sinegar widow living with them."
+      ],
+      "found": "Three Dursley baptisms match the tree's dates for the middle of the Saniger line. Opening them shows three different fathers. The oldest claim in this archive is weaker than it was this morning — and for the first time there is a £2.50 document that would settle it. And then the census produced the couple themselves, at the street the tree had remembered and the county it had got wrong."
+    },
+    {
+      "when": "10 September 2026",
+      "title": "The DNA, and the branding brought into line",
+      "did": [
+        "Published /dna — one living descendant's autosomal estimate against the tree's own prediction, computed twice, once with both grafts cut.",
+        "Corrected an error in that analysis within the hour: the first version put the predicted Scottish share at 0.02% and announced the DNA was contradicting the tree. It was not. Recorded as error nine.",
+        "Brought the homepage onto the .hero banner every sibling archive uses. The rules had been in this site's stylesheet, unused, since it was built.",
+        "Built /search over the whole archive, with the eleven spellings of Saniger folded together.",
+        "Added /searched, /changes and /errands — publishing work that had been sitting in notes/ and requests/ on disk."
+      ],
+      "found": "That cutting both grafts — 98 people, thirteen generations, four royal houses — moves the predicted ancestry by 0.39 of a percentage point."
+    },
+    {
+      "when": "10 September 2026",
+      "title": "Berkeley, and the audit that moved the floor",
+      "did": [
+        "Searched the Gloucestershire parish registers instead of another family's website.",
+        "Published /berkeley: 44 Sainger entries, three Williams, one good candidate and a father the archive never had.",
+        "Caught a false story before publishing it as fact, and left it on the page as a worked example.",
+        "Audited every 'defended' ancestor and published the result even though it was bad."
+      ],
+      "found": "Of 144 ancestors the archive called documented, eight rest on a record set. Above generation seven, exactly one of sixty does. The honest figure is about seven generations, not twelve."
+    },
+    {
+      "when": "10 September 2026",
+      "title": "The worst error, and the register",
+      "did": [
+        "Told the family their own founding brief was wrong. It was not; I had read the root person's spouse instead of her parents. It stood on the site for a day.",
+        "Published /register — every named individual the archive has met anywhere, with the source beside each one.",
+        "Put a pedigree chart on all 473 person pages, with the border encoding how each relationship is known."
+      ],
+      "found": "Of 473 pedigree charts, 19 contain a single edge written in a record."
+    },
+    {
+      "when": "9 September 2026",
+      "title": "The inquest nobody knew about",
+      "did": [
+        "Read QSA coronial file DR103140 in full and published it plainly at /inquest-1902.",
+        "Published /finding-arthur from the Red Cross file.",
+        "Rewrote /great-war around four men instead of one."
+      ],
+      "found": "A suicide in Victoria Park in 1902 — and, in the widow's sworn deposition, the name of his father, closing a generation four research passes had been circling."
+    }
+  ],
+  "close": "If you find something this page does not record, that is a gap in the record-keeping and worth telling me about.",
+  "backfillHead": "Six days written in arrears, and why that is said rather than hidden",
+  "backfill": "**This page stopped on 15 September and did not start again until the 21st.** Four working days went unrecorded here — seventy-three commits — while the archive itself went on being corrected. The gap is stated rather than quietly filled because the page's own promise is that each entry is one research pass written at the time, and the four entries below were **not**. They were reconstructed on 21 September from the commit record, which is this archive's own contemporaneous account of each pass and the only honest source for days nobody wrote up.\n\n**What did keep pace, and can be trusted for those days: [/searched](/searched/), [/corrections](/corrections/) and [/coverage](/coverage/).** Every search, every withdrawn claim and every coverage verdict was written on the day it happened. It was only the narrative that lapsed — which is the right way round, if something has to lapse."
 }
