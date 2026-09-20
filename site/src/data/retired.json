@@ -74,6 +74,16 @@
    "phrase": "Quoin-drawer Overseer",
    "instead": "Fount-room Overseer",
    "err": 35
+  },
+  {
+   "phrase": "excluded from this build entirely",
+   "instead": "excluded AS PEOPLE; six are named on purpose",
+   "err": 37
+  },
+  {
+   "phrase": "stricter than the estate rule",
+   "instead": "it is not stricter — this archive runs the same named-bare policy",
+   "err": 37
   }
  ]
 }
