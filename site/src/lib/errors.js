@@ -3,6 +3,16 @@
 export const OWN = [
   {
     when: "20 September 2026",
+    what: "Published “170 distinct catalogue records, 160 of them Berkeley Castle” from a sweep of The National Archives' Discovery API. The true figures are 193 and 183.",
+    truth:
+      "The tool written for that sweep stopped after one page and returned the first hundred records of however many a query had. SWONHUNGRE alone returns 126, so twenty-six of its records were never seen, and the same was true of any term over a hundred.",
+    why: "Discovery's response carries a field called nextBatchMark, which is exactly what a paging loop looks for, and on this endpoint IT IS ALWAYS EMPTY. The loop read it, found nothing, and stopped — correctly, by its own logic. What made it invisible was that the same response also carries the true `count`, and the tool printed that beside the records it had: “126” in the summary, a hundred records in the file. A truncation that reports the number it is missing is the hardest kind to see.",
+    lesson:
+      "Two days after writing that a null carries the shape of the question that produced it, this archive published a count carrying the shape of a paging bug. The substance survived — every one of the ten non-Berkeley records, which is where the whole value of that sweep lay, was in the first hundred and is unchanged. But it was luck, not method. The tool now uses sps.page, verified by asking for page two of a 232-record query and getting a hundred records none of which were in page one, and it de-duplicates by id so a repeated page cannot inflate a total instead.",
+    href: "/swonhungre",
+  },
+  {
+    when: "20 September 2026",
     what: "Published Hannah Saniger's page for weeks with two of its four «written about here» links silently missing — among them her voyage on the General Hewitt, the ship that brought the family to Queensland.",
     truth:
       "The map that holds those links, APPEARS_IN in /people/[slug].astro, carried the key «hannah-saniger» twice: once with four links and once with two. In a JavaScript object literal the later entry simply replaces the earlier one.",

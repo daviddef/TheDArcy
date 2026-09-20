@@ -778,7 +778,7 @@
         "0"
       ]
     ],
-    "countNote": "170 distinct catalogue records across the nine productive spellings. **160 of them are the Berkeley Castle Muniments**, which this archive has worked. The ten that are not are the reason for the exercise.",
+    "countNote": "**193 distinct catalogue records** across the nine productive spellings. **183 of them are the Berkeley Castle Muniments**, which this archive has worked. The ten that are not are the reason for the exercise, and they are listed in full below.",
     "rows": [
       [
         "E 40/12147",
@@ -851,6 +851,8 @@
     "twice": "The partition survives twice over. **DE/M/95 at Hertford** names the three women and their heirs and stops. **BCM/A/1/24/297 at Berkeley** says whose inheritance was being divided: **JOHN DE WYKE's, in HAMME**. This archive had reasoned that Alice was one of three coheirs of John de Wyke; here is a cataloguer saying it outright, and naming the manor. **Ham is where Hannah Saniger's family were living in 1841 and 1851** — five hundred years later, in the same manor.",
     "chipTwice": "documented",
     "missHead": "And how it was missed",
-    "miss": "This archive searched Discovery for John de Wyke on 15 September and recorded a null: «almost nothing … «de Wyke» with Berkeley and Hamme returns five records». **The query was «de Wyke» with two other words. The record that mattered answers to «John de Wyke» in quotation marks**, which returns 78. Nothing was wrong with the catalogue and nothing was wrong with the reasoning. The phrase was wrong, and a null carries the shape of the question that produced it."
+    "miss": "This archive searched Discovery for John de Wyke on 15 September and recorded a null: «almost nothing … «de Wyke» with Berkeley and Hamme returns five records». **The query was «de Wyke» with two other words. The record that mattered answers to «John de Wyke» in quotation marks**, which returns 78. Nothing was wrong with the catalogue and nothing was wrong with the reasoning. The phrase was wrong, and a null carries the shape of the question that produced it.",
+    "truncHead": "A correction to this page's own arithmetic",
+    "trunc": "This block first said **170 distinct records, 160 of them Berkeley Castle**. Both numbers were short. Discovery returns `nextBatchMark` on every response and **it is always empty**, so `tools/discovery.py` stopped after one page and returned the first hundred records of however many there were — while printing the true total beside them, which made the truncation invisible. SWONHUNGRE alone has 126. The parameter that works is `sps.page`. **The ten records below are unchanged**: everything the truncation hid was Berkeley Castle Muniments, already worked. The finding stood; the counting did not."
   }
 }

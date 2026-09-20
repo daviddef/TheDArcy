@@ -3366,7 +3366,7 @@
       "what": "Swonhungre and its eight variants, asked identically",
       "when": "17 Sep 2026",
       "outcome": "yield",
-      "got": "170 distinct records; 160 are Berkeley Castle Muniments. The ten that are not include **C 241/174/26 and C 131/202/27**, a statute-staple debt of **£400** in 1385 naming **WILLIAM SWANNANGER OF SWANNANGER, ESQUIRE**, and the writ on which the Sheriff of Surrey could not find him; **MS 3549/20**, Elias de Swonhangre granting in the hamlet in 1377; **MS 3549/4**, William Swonhungre and Isabella his wife holding Wanswell and Nibley; and **P/St.P and J/D/2(j)**, John Swonhungre with two shops in the Old Market, Bristol, in 1443.",
+      "got": "193 distinct records; 183 are Berkeley Castle Muniments. (First published as 170 and 160 — the tool was truncating at a hundred records per query; corrected 20 September, and the ten non-Berkeley records below are unchanged.) The ten that are not include **C 241/174/26 and C 131/202/27**, a statute-staple debt of **£400** in 1385 naming **WILLIAM SWANNANGER OF SWANNANGER, ESQUIRE**, and the writ on which the Sheriff of Surrey could not find him; **MS 3549/20**, Elias de Swonhangre granting in the hamlet in 1377; **MS 3549/4**, William Swonhungre and Isabella his wife holding Wanswell and Nibley; and **P/St.P and J/D/2(j)**, John Swonhungre with two shops in the Old Market, Bristol, in 1443.",
       "href": "/swonhungre"
     },
     {
@@ -3412,6 +3412,39 @@
       "ctl": "named",
       "got": "None. Household transcript identifiers run in sequence, so the neighbours either side can be read off: **Samuel and Mary Ann Nelmes with their infant daughter** on one side, **Stephen Smith, farmer, 57, born Berkeley, with his wife and three servants** on the other. No stated relationship to Lydia and no Jones in the village. The method works — it simply did not answer this.",
       "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — 1861 and 1871 censuses",
+      "what": "Jane, Catherine and Charlotte D'Arcy at Brighton",
+      "when": "20 Sep 2026",
+      "outcome": "blocked",
+      "got": "NOT ANSWERED, and the reason is the instrument. Nothing returns under DARCY, D'ARCY, ARCY, DARCEY or DACRY in Sussex in 1861 — but **a control run for CATHERINE SMITH born about 1789 in Sussex also returns zero**, which cannot be true of any English county in 1861. The `yearofbirth` filter combined with `county` silently returns nothing on FindMyPast's census sets, so every null built that way is an artefact. Recorded as blocked rather than null: the question was never actually asked. **In 1851 Catherine was indexed as ARCY**, so the route is an address search on Bedford Square and Western Cottages, which FindMyPast's URL parameters do not expose.",
+      "href": "/sussex-sisters"
+    },
+    {
+      "src": "TNA Discovery — Wakefield of Bristol, re-read rather than counted",
+      "what": "Whether any of the 232 Wakefield-and-Bristol records is this family",
+      "when": "20 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "The original null said «232 hits and not one is this family», which was a reading and not a query. A hundred of the 232 have now been read by machine against every forename in this household — James, Hannah, Ephraim, Zillah, Jabez, Hiram, Miriam — and the Saniger spellings. **Three name-matches, all Chancery causes of 1869** (C 16/612/W239, W256, W233), fifteen years after this family sailed for Queensland and none of them naming a person in it. The reading stands so far as it has gone; 132 records remain unread.",
+      "href": "/swonhungre"
+    },
+    {
+      "src": "TNA Discovery and the National Library of Wales",
+      "what": "Edward Sanniger, mariner of Chepstow, died 1806",
+      "when": "20 Sep 2026",
+      "outcome": "yield",
+      "got": "Both records confirmed by reference. **IR 26/352/152** at Kew: «Abstract of Will of Edward Sanniger, Mariner of Chepstow, Monmouthshire. Proved in the Llandaff.», 28 November 1806. **LL/1806/24** at the National Library of Wales is the will itself — Diocese of Llandaf, parish and township of Chepstow. Chepstow is across the Severn from Berkeley and a mariner is how a Vale surname crosses water. **Nothing joins him to this family**, and he is recorded as a lead rather than a relative.",
+      "href": "/spellings"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms, the Cotswold scarp",
+      "what": "The -INEG- family of Dursley, Cam, Stinchcombe and North Nibley",
+      "when": "20 Sep 2026",
+      "outcome": "yield",
+      "got": "Six patriarchs and their children pulled out of the fifteen-spelling sweep and written up: **Abraham of Dursley** (1698-1720), **Daniel of Cam** (twelve children, 1729-1760), **John of Cam** (1677-1680), **Thomas of Cam** (1770-1788), **Benjamin of Stinchcombe and North Nibley**, and **William of King's Stanley** (1591-96, the oldest register entries the surname produces). Daniel's twelve are the largest sibling group the name yields anywhere. Two repeated forenames — two Solomons, two Deborahs — each imply a burial not yet looked for.",
+      "href": "/spellings"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

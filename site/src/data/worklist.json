@@ -778,10 +778,10 @@
     {
       "n": 86,
       "what": "Jane, Catherine and Charlotte D'Arcy in the 1861 census",
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-16",
-      "note": "Errand 43. The 1851 entry is found — HO107/1646 f.357 p.59 sch.172, 22 Western Cottages, Brighton — and **1861 is still missing**, with FreeCEN returning nought for ARCY in Sussex because the piece is not transcribed (that was correction 30). A subscription reaches the images.",
+      "note": "Errand 43. The 1851 entry is found — HO107/1646 f.357 p.59 sch.172, 22 Western Cottages, Brighton — and **1861 is still missing**, with FreeCEN returning nought for ARCY in Sussex because the piece is not transcribed (that was correction 30). A subscription reaches the images.\n\n**20 September: not a null, an unasked question.** FindMyPast's `yearofbirth` filter combined with `county` silently returns zero on the census sets — a control for CATHERINE SMITH born about 1789 in Sussex returned nothing, which cannot be true. Five spellings were also tried without the broken filter and returned nothing in Sussex. **The route left is an address search** on Bedford Square and Western Cottages, which the URL parameters do not expose and which needs the site's own address form.",
       "covers": [
         "err:err/jane-catherine-and-charlotte-87d63c"
       ]
@@ -789,10 +789,10 @@
     {
       "n": 87,
       "what": "Berkeley St Mary's register — Hannah Saniger's baptism, and John Saniger's marriage to Lydia",
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-16",
-      "note": "**Half done, and both halves are informative.** **MARRIAGE:** England Marriages 1538-1973 holds **66 Saniger marriages** including Berkeley ones of 1746 and 1748, and **none between 1782 and 1812**. **BAPTISM:** England Births & Baptisms **names fathers** — three Hannah Sanigers at Berkeley, 1746 (father Thomas) and 1772 (father William), and two Hannah Sanigars at Bristol in 1831 (father William). None is hers. **What has not been tried is the spellings that dominate the Berkeley registers** — SINNEGAR, SINEGAR, SYNEGAR — and a search by father's forename, which this set supports and which would list John Saniger's children directly.\n\n**Progress 16 September:** the right set is **England Births & Baptisms 1538-1975**, which carries a **father's first name** column — 158 Saniger baptisms, 1625 to the 1820s. First page already gave **ANN SANIGER, Berkeley 1798, father JOHN**, a sister the tree asserts and for whom this archive had no baptism. **Seven pages unread.**\n\n**16 September:** the index side of this is finished — see the completed SANIGER pass. What remains is the register itself, not the index.",
+      "note": "**Half done, and both halves are informative.** **MARRIAGE:** England Marriages 1538-1973 holds **66 Saniger marriages** including Berkeley ones of 1746 and 1748, and **none between 1782 and 1812**. **BAPTISM:** England Births & Baptisms **names fathers** — three Hannah Sanigers at Berkeley, 1746 (father Thomas) and 1772 (father William), and two Hannah Sanigars at Bristol in 1831 (father William). None is hers. **What has not been tried is the spellings that dominate the Berkeley registers** — SINNEGAR, SINEGAR, SYNEGAR — and a search by father's forename, which this set supports and which would list John Saniger's children directly.\n\n**Progress 16 September:** the right set is **England Births & Baptisms 1538-1975**, which carries a **father's first name** column — 158 Saniger baptisms, 1625 to the 1820s. First page already gave **ANN SANIGER, Berkeley 1798, father JOHN**, a sister the tree asserts and for whom this archive had no baptism. **Seven pages unread.**\n\n**16 September:** the index side of this is finished — see the completed SANIGER pass. What remains is the register itself, not the index.\n\n**20 September: reclassified as blocked on David — it needs a GFHS lookup or an Ancestry account, which this archive cannot supply.**",
       "covers": [
         "q:q/where-and-when-was-hannah-sa-3597b7",
         "q:q/where-did-john-saniger-and-l-91411d"
@@ -939,11 +939,11 @@
     },
     {
       "n": 104,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
       "what": "The Cotswold-scarp family — Abraham of Dursley and Daniel of Cam",
-      "note": "The sweep turned up a whole second family this archive has never written about: the **-INEG- spellings** cluster at **Dursley, Cam, Stinchcombe, North Nibley and Alderley** from 1648, with two clear patriarchs — **Abraham at Dursley**, children 1698-1720, and **Daniel at Cam**, children 1729-1760, eight of them. This archive's own Hannah lived as SINEGAR in Bristol. Whether the Vale and the scarp are one family or two is **not answered** by a baptism index, and the honest next step is the Dursley and Cam registers themselves, not more index work."
+      "note": "The sweep turned up a whole second family this archive has never written about: the **-INEG- spellings** cluster at **Dursley, Cam, Stinchcombe, North Nibley and Alderley** from 1648, with two clear patriarchs — **Abraham at Dursley**, children 1698-1720, and **Daniel at Cam**, children 1729-1760, eight of them. This archive's own Hannah lived as SINEGAR in Bristol. Whether the Vale and the scarp are one family or two is **not answered** by a baptism index, and the honest next step is the Dursley and Cam registers themselves, not more index work.\n\n**Done 20 September** — written up at **/spellings/** as «The other family, on the scarp»: six patriarchs, their children, the two repeated forenames that imply unlooked-for burials, and an explicit refusal to join them to the Vale on the strength of a baptism index."
     },
     {
       "n": 105,
@@ -971,11 +971,11 @@
     },
     {
       "n": 108,
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-16",
       "what": "Order the death certificate of John Sanigar, Thornbury, Q1 1850",
-      "note": "The one document that would turn an inference into a fact. Ann Sanigar is a widow at Ham in 1851 with children baptised to a father John; a John Sanigar's death is registered in that district in the first quarter of 1850; and Hannah's brother John, baptised Berkeley 18 September 1803, would have been 46. **The certificate gives age at death and occupation**, and the 1851 census already says the husband was a **tailor**. If it says 46 and tailor, the identification is closed. It costs the GRO's standard fee."
+      "note": "The one document that would turn an inference into a fact. Ann Sanigar is a widow at Ham in 1851 with children baptised to a father John; a John Sanigar's death is registered in that district in the first quarter of 1850; and Hannah's brother John, baptised Berkeley 18 September 1803, would have been 46. **The certificate gives age at death and occupation**, and the 1851 census already says the husband was a **tailor**. If it says 46 and tailor, the identification is closed. It costs the GRO's standard fee.\n\n**20 September: reclassified as blocked on David — it needs a GRO fee, which this archive cannot supply.**"
     },
     {
       "n": 109,
@@ -1027,11 +1027,11 @@
     },
     {
       "n": 115,
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-17",
       "what": "Ask the RCB Library about St Mary's, Limerick, in the same correspondence",
-      "note": "Errand 45 — the Atkinson, Cole, Creech, Kent, Bowen and Peevers line, five generations stopping dead at the emigrant — has been waiting on exactly the institution that has just written back. The NLI is the wrong denomination and irishgenealogy.ie is blocked. **A second email to a librarian who has already answered once costs nothing.** Draft it beside the reply, do not send it without David."
+      "note": "Errand 45 — the Atkinson, Cole, Creech, Kent, Bowen and Peevers line, five generations stopping dead at the emigrant — has been waiting on exactly the institution that has just written back. The NLI is the wrong denomination and irishgenealogy.ie is blocked. **A second email to a librarian who has already answered once costs nothing.** Draft it beside the reply, do not send it without David.\n\n**20 September: reclassified as blocked on David — it needs an email, which this archive cannot supply.**"
     },
     {
       "n": 116,
@@ -1043,11 +1043,11 @@
     },
     {
       "n": 117,
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-17",
       "what": "Order or read the ten non-Berkeley medieval documents",
-      "note": "The API gives references, not documents. **C 241/174/26 and C 131/202/27** (the £400 staple debt of 1385) are at Kew; **MS 3549/4, /20 and /187** are at Birmingham Archives in the Fletcher collection, which is where John Smyth's own papers ended up; **DE/M/95** is at Hertfordshire Archives; **E 40/12147** at Kew; **P/St.P and J/D/2(j)** at Bristol Archives. Birmingham and Hertfordshire have never been written to. **E 40 and C 241 are both classes this archive has never searched**, and both produced on the first ask."
+      "note": "The API gives references, not documents. **C 241/174/26 and C 131/202/27** (the £400 staple debt of 1385) are at Kew; **MS 3549/4, /20 and /187** are at Birmingham Archives in the Fletcher collection, which is where John Smyth's own papers ended up; **DE/M/95** is at Hertfordshire Archives; **E 40/12147** at Kew; **P/St.P and J/D/2(j)** at Bristol Archives. Birmingham and Hertfordshire have never been written to. **E 40 and C 241 are both classes this archive has never searched**, and both produced on the first ask.\n\n**20 September: reclassified as blocked on David — it needs orders or a visit to six repositories, which this archive cannot supply.**"
     },
     {
       "n": 118,
@@ -1059,19 +1059,19 @@
     },
     {
       "n": 119,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-17",
       "what": "Edward Sanniger, mariner of Chepstow, 1806",
-      "note": "Two records for one man, found in the surname sweep and never seen here before: **IR 26/352/152**, the Death Duty abstract of his will, proved November 1806, at Kew; and **LL/1806/24** at the **National Library of Wales**, the Llandaff probate itself. **Chepstow is directly across the Severn from Berkeley**, and a mariner is exactly how a Vale surname crosses water. Not claimed as kin — there is nothing joining him to this family yet."
+      "note": "Two records for one man, found in the surname sweep and never seen here before: **IR 26/352/152**, the Death Duty abstract of his will, proved November 1806, at Kew; and **LL/1806/24** at the **National Library of Wales**, the Llandaff probate itself. **Chepstow is directly across the Severn from Berkeley**, and a mariner is exactly how a Vale surname crosses water. Not claimed as kin — there is nothing joining him to this family yet.\n\n**Done 20 September.** Both references confirmed — IR 26/352/152 at Kew (the Death Duty abstract) and LL/1806/24 at the National Library of Wales (the will itself). Recorded as a lead, not a relative: nothing joins him to this family."
     },
     {
       "n": 120,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-17",
       "what": "The two Discovery nulls that a query cannot re-test",
-      "note": "«232 Wakefield-and-Bristol hits and not one is this family» and «no D'Arcy will for Kent between 1820 and 1860» are **readings, not queries**, so re-running them proves nothing. They can only be re-tested by reading the 232, which `tools/discovery.py` can now dump to a file in one call. Until someone does, they are the weakest nulls on the site — and they are about **three of the four British lines**."
+      "note": "«232 Wakefield-and-Bristol hits and not one is this family» and «no D'Arcy will for Kent between 1820 and 1860» are **readings, not queries**, so re-running them proves nothing. They can only be re-tested by reading the 232, which `tools/discovery.py` can now dump to a file in one call. Until someone does, they are the weakest nulls on the site — and they are about **three of the four British lines**.\n\n**Partly done 20 September.** A hundred of the 232 Wakefield-and-Bristol records read by machine against every forename in the household: three name-matches, all Chancery causes of 1869, fifteen years after the family sailed. **132 remain unread** — and fixing `discovery.py`'s pagination is what makes finishing them possible."
     },
     {
       "n": 121,
@@ -1083,11 +1083,11 @@
     },
     {
       "n": 122,
-      "state": "next",
-      "owner": "this archive",
+      "state": "blocked",
+      "owner": "David",
       "since": "2026-09-20",
       "what": "Gloucester diocesan marriage licence bonds and allegations, 1795-1799",
-      "note": "The marriage of **John Saniger and Lydia** is not in England Marriages 1538-1973 under any of eight spellings anywhere in England between 1790 and 1802, against two well-covered candidate parishes. If they married **by licence** the register entry may be brief or the parish unexpected, but the **allegation and bond survive separately at Gloucestershire Archives (GDR)** and name both parties, their parishes, their ages or condition, and frequently the bride's father. **That is the document that would give her maiden name.** This archive already has one GDR errand open (GDR/B4/1/387) and could ask for both together."
+      "note": "The marriage of **John Saniger and Lydia** is not in England Marriages 1538-1973 under any of eight spellings anywhere in England between 1790 and 1802, against two well-covered candidate parishes. If they married **by licence** the register entry may be brief or the parish unexpected, but the **allegation and bond survive separately at Gloucestershire Archives (GDR)** and name both parties, their parishes, their ages or condition, and frequently the bride's father. **That is the document that would give her maiden name.** This archive already has one GDR errand open (GDR/B4/1/387) and could ask for both together.\n\n**20 September: reclassified as blocked on David — it needs the Gloucestershire Archives letter, which this archive cannot supply.**"
     },
     {
       "n": 123,

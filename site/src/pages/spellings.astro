@@ -52,6 +52,27 @@ const parts = [
     </div>
   </Blk>
 
+  <Blk label={`The second family · ${d.scarp.found}`} title={d.scarp.head}>
+    <p class="lede" set:html={mdp(d.scarp.lede)}></p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr>{d.scarp.cols.map((c) => <th>{c}</th>)}</tr></thead>
+        <tbody>{d.scarp.rows.map(([a, b, c, e]) => (
+          <tr><td><strong>{a}</strong></td><td class="small">{b}</td>
+            <td class="small">{c}</td><td class="mono small">{e}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.scarp.chip}</span></p>
+    <Note style="border-left-width:3px;margin-top:1.3rem"><strong>{d.scarp.whyHead}.</strong>
+      <span set:html={mdp(d.scarp.why)} /></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.scarp.twoHead}.</strong>
+      <span set:html={mdp(d.scarp.two)} />
+      {" "}<span class="chip inf">{d.scarp.chipTwo}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.scarp.joinHead}.</strong>
+      <span set:html={mdp(d.scarp.join)} />
+      {" "}<span class="chip lore">{d.scarp.chipJoin}</span></Note>
+  </Blk>
+
   <Blk label="Limits" title={d.limitsHead}>
     <p class="dek" style="margin-top:1rem" set:html={mdp(d.limits)}></p>
   </Blk>

@@ -132,5 +132,63 @@
   "not": "**Mortlake, Surrey** holds nine of the ten SYNAGERs and one SINNEGER between 1668 and 1718 — a self-contained family two counties away with no Gloucestershire connection on any record here. And **Whitechapel in 1845 and 1847** has Peter and Johannes Christian Sainger, sons of Cornelius: those are German given names, and SÄNGER is an ordinary German surname. Counting either group into this family would inflate it with strangers.",
   "chip5": "disputed",
   "limitsHead": "What this page is not",
-  "limits": "It is not a count of people. **Thirty-three of the 158 SANIGER entries are duplicates** — 125 distinct name-year-place combinations — and the duplication runs through every spelling: Mary, daughter of Samuell, is indexed four times in 1688, and Sarah, daughter of William, four times at Bristol in 1839. It is not a count of baptisms either, because the set transcribes some registers and not others. It is a count of **what one index holds under fifteen strings**, which is the only thing it can honestly be, and its use is to tell this archive which strings it must ask every future question in."
+  "limits": "It is not a count of people. **Thirty-three of the 158 SANIGER entries are duplicates** — 125 distinct name-year-place combinations — and the duplication runs through every spelling: Mary, daughter of Samuell, is indexed four times in 1688, and Sarah, daughter of William, four times at Bristol in 1839. It is not a count of baptisms either, because the set transcribes some registers and not others. It is a count of **what one index holds under fifteen strings**, which is the only thing it can honestly be, and its use is to tell this archive which strings it must ask every future question in.",
+  "scarp": {
+    "found": "20 September 2026",
+    "head": "The other family, on the scarp",
+    "lede": "The spelling sweep turned up a second group this archive had never written about, and it is not a footnote: **the -INEG- forms belong to their own parishes and their own patriarchs**, eight miles east of Berkeley and up the hill. They are set out here because leaving them in a table was how they stayed invisible.",
+    "cols": [
+      "Patriarch",
+      "Parish",
+      "Children in the index",
+      "Spelling"
+    ],
+    "rows": [
+      [
+        "ABRAHAM",
+        "Dursley",
+        "Jno 1698 · Will 1701 · Jane 1707 · Thomas 1712 · Thomas 1720",
+        "SINEGAR / SINNEGAR / SINNIGER"
+      ],
+      [
+        "DANIEL",
+        "Cam",
+        "Danll. 1729 · Deborah 1730 · Katherine 1738 · Willm. 1741 · George 1744 · Solomon 1745 · Solomon 1747 · Ann 1752 · Mary 1755 · Henry 1757 · Sarah 1760 · Betty 1749",
+        "SINNEGAR / SINEGAR / SANEGAR"
+      ],
+      [
+        "JOHN",
+        "Cam",
+        "John 1677 · Rich. 1677 · Daniel 1679 · John 1680",
+        "SINNEGER"
+      ],
+      [
+        "THOMAS",
+        "Cam",
+        "Betty 1770 · Thomas 1773 · Daniel 1775 · Deborah 1780 · Thos. 1783 · Deborah 1788 · Mary 1778",
+        "SINNEGAR / SINEGAR"
+      ],
+      [
+        "BENJAMIN",
+        "Stinchcombe & North Nibley",
+        "Hester 1732 · Richd 1739 · Sara 1719 · Sarah 1723 · Mary 1726",
+        "SINEGAR / SANNIGER / SANEGAR"
+      ],
+      [
+        "WILLIAM",
+        "King's Stanley",
+        "Jane 1591 · Mary 1592 · Rich 1594 · Walter 1596",
+        "SYNIGAR"
+      ]
+    ],
+    "chip": "documented",
+    "twoHead": "Two Solomons, two Deborahs, and what that means",
+    "two": "**Daniel of Cam baptised a Solomon in 1745 and another in 1747**, and **Thomas of Cam a Deborah in 1780 and another in 1788**. Repeating a name is what a family did when the first child died, so each pair is almost certainly a burial this archive has not looked for. **Daniel's twelve entries across thirty-one years are the largest single sibling group the surname produces anywhere**, in either spelling family.",
+    "chipTwo": "inferred",
+    "joinHead": "Whether they are one family with the Vale",
+    "join": "**Not answered, and a baptism index cannot answer it.** The Vale patriarchs are Edward, William, Maurice and Morgan; the scarp's are Abraham, Daniel, John, Thomas and Benjamin, and the two sets of forenames barely overlap. The oldest entries of all — SYNIGAR at **King's Stanley in 1591–96** — sit further up the same scarp, and **King's Stanley is one of the places the 1608 muster puts this surname**. That is the only thread joining the two, and it is a place-name, not a person.",
+    "chipJoin": "not claimed",
+    "whyHead": "Why it matters to this archive and not only to that one",
+    "why": "Hannah Saniger was baptised **SANIGOR at Berkeley**, a Vale form in a Vale parish, and by 1841 she was keeping house in Bristol as **SINEGAR** — a scarp form. Her brother is **Thomas Sinegar** of St Philip and Jacob. **Whoever was writing their surname in Bristol was using the other family's spelling**, and until this sweep this archive had no idea there was another family to borrow it from."
+  }
 }
