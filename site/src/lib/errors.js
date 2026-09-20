@@ -2,6 +2,17 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "21 September 2026",
+    cause: "memory",
+    what: "Told every reader of /about — the page that asks to be trusted — that “Living people are not published at all. Not hidden, not gated — absent from the build.”",
+    truth:
+      "Six living people are named on this site, deliberately: three as the authors of Ken D'Arcy's eulogy, two in the sentence that explains why this archive exists, and one on /bloodline as the living generation the direct line runs down to. Each is listed in living.json with the owner's recorded confirmation. The rule is real and strong — no person page, no birth year, no birthplace, and no name where it would appear as somebody's spouse, parent or child — but it is not what that sentence said.",
+    why: "The exception was recorded honestly in living.json, where namedNote says the six are named «as sources and as provenance, rather than as tree records». The prose on the page was written from the rule and never re-read against the data beside it. The gate could not catch it either, because it runs under the «named-bare» policy, which permits exactly what the six are — so the check passed every build while the page overstated what the check was checking.",
+    lesson:
+      "Found on 21 September by a peer session's remark about a different policy, which prompted a run under «absent»: it reports eleven leaks and every one of them is one of the six. A claim about an archive's own practice is a claim like any other and should be graded like one. This one was safe to make because the underlying rule is strict — which is the danger: an overclaim in the direction of MORE rigour reads as reassurance and nobody checks it.",
+    href: "/about",
+  },
+  {
     when: "20 September 2026",
     cause: "instrument",
     what: "Published “170 distinct catalogue records, 160 of them Berkeley Castle” from a sweep of The National Archives' Discovery API. The true figures are 193 and 183.",

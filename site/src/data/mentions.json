@@ -1278,7 +1278,13 @@
 "title": "The Sneyds"
 }
 ],
-"geraldine-d-arcy": [],
+"geraldine-d-arcy": [
+{
+"path": "/worklist",
+"snippet": "…Pitt D'Arcy, «William Murdoch» inside Keith William Murdoch 1925-1996, «Geraldine» inside Geraldine D'Arcy 1872-1937. `tools/check_living.py` now has a json_pass that asks the narrower and better question: not whether a living name occu…",
+"title": "The work list"
+}
+],
 "giacomo-annecchino": [],
 "giovanna-arricole": [],
 "giuseppa-crisci": [],
@@ -1524,7 +1530,13 @@
 "title": "Hannah was a Berkeley woman"
 }
 ],
-"james-atwell": [],
+"james-atwell": [
+{
+"path": "/worklist",
+"snippet": "…d() makes, because without it the gate fired on the published William Murdoch of 1856 and James Atwell of 1853-1907 — and in a family that reuses forenames this relentlessly, a gate that cries wolf is switched off inside a week. Con…",
+"title": "The work list"
+}
+],
 "james-buckley-falcon-atwell": [],
 "james-fraser-murdoch": [
 {
@@ -2239,6 +2251,11 @@
 "path": "/murdoch",
 "snippet": "…–1907 · Gympie Annie Kathleen Murdoch 1898–1964 · Gympie James \"Fraser\" Murdoch 1923–2003 Keith William Murdoch 1925–1996 · Toowoomba Marion \"Jean\" Murdoch 1927–2010 · Toowoomba Q'ld Australia Audrey \"Dell\" Murdoch 1929–2022 · Toowoomba Q'ld…",
 "title": "The Murdochs"
+},
+{
+"path": "/worklist",
+"snippet": "…its and every one is noise — «George» inside George Pitt D'Arcy, «William Murdoch» inside Keith William Murdoch 1925-1996, «Geraldine» inside Geraldine D'Arcy 1872-1937. `tools/check_living.py` now has a json_pass that asks the narrower and…",
+"title": "The work list"
 }
 ],
 "kenneth-lindsay-d-arcy": [
@@ -2451,6 +2468,11 @@
 "path": "/how-far-back",
 "snippet": "…Bristol side. Edward Cotton , born at Ashton-under-Hill, Gloucestershire, 6 January 1687. Lydia Lyon , born at Market Drayton, Shropshire, 3 March 1683. William Ward (1700) and Martha Lewis (1702) — the family of Jean Ward, whom M…",
 "title": "How Far Back"
+},
+{
+"path": "/worklist",
+"snippet": "…of the Lion and Sun , Joseph D'Arcy's decoration from the Shah. LYON is one real person, Lydia Lyon. The fold would have meant that searching a woman's surname returned a knighthood. Both refusals and their reasons are in `site/s…",
+"title": "The work list"
 }
 ],
 "margaret-d-arcy": [
@@ -3623,7 +3645,7 @@
 },
 {
 "path": "/corrections",
-"snippet": "…t William Sneyd died between 1919 and 1921 16 February 1920, registration 1920/B/31382. → Vivian Claude Sneyd was born at Rockhampton Windsor, Brisbane, on his own attestation paper. → Read across all 36 The shared cause, counted An archiv…",
+"snippet": "…t William Sneyd died between 1919 and 1921 16 February 1920, registration 1920/B/31382. → Vivian Claude Sneyd was born at Rockhampton Windsor, Brisbane, on his own attestation paper. → Read across all 37 The shared cause, counted An archiv…",
 "title": "What This Archive Got Wrong"
 }
 ],
@@ -3840,6 +3862,11 @@
 "path": "/sources",
 "snippet": "…of Guernsey → Scotland, Civil Registration and Scotland, Marriages (indexes) The birth of William Murdoch at St Quivox and Newton, 7 October 1856, naming Francis Murdoch and Marion Watt; and their marriage at Avondale, Lanarkshire, 6 M…",
 "title": "Sources"
+},
+{
+"path": "/worklist",
+"snippet": "…tring sweep reports 25 hits and every one is noise — «George» inside George Pitt D'Arcy, «William Murdoch» inside Keith William Murdoch 1925-1996, «Geraldine» inside Geraldine D'Arcy 1872-1937. `tools/check_living.py` now has a json_pa…",
+"title": "The work list"
 }
 ],
 "william-noel-1581": [],

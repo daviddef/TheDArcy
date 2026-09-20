@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 """Who is alive in this archive — the kit decides whether any of them got out.
 
-This archive's rule is the strictest in the estate: LIVING PEOPLE ARE NOT
-PUBLISHED AT ALL — not hidden, not gated, absent from the output.
+This archive's rule: LIVING PEOPLE ARE NOT PUBLISHED AS PEOPLE — no person
+page, no birth year, no birthplace, and no name where it would appear as
+somebody's spouse, parent or child. SIX ARE NAMED ON PURPOSE, as the authors of
+a eulogy and as the reason the archive exists, each confirmed by its owner and
+listed in living.json. That is why the gate runs `--policy named-bare` and not
+`absent`; run under `absent` on 21 September 2026 it reports eleven leaks and
+every one is one of those six.
+
+This docstring said "NOT PUBLISHED AT ALL — absent from the output" until that
+day, and so did /about/. It was a stronger claim than the archive keeps.
 build_site_data.py applies it once, at the boundary between the research data
 and the site, so that nobody can be living on one page and dead on another.
 This is the check that the rule held, and it reads the BUILT HTML, because

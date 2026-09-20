@@ -46,9 +46,13 @@ const HOLDS = [
       <li style="margin-bottom:.6rem"><strong>Errors stay on the page where they were made.</strong>
       {nOwn} so far, each with what caused it. Corrections are never made silently.
       <a href={u("/corrections/")}>The errors →</a></li>
-      <li style="margin-bottom:.6rem"><strong>Living people are not published at all.</strong> Not
-      hidden, not gated — absent from the build. The rule withholds {living.counts.living.toLocaleString()} people across the tree,
-      including their names wherever they would appear as somebody's spouse, parent or child.
+      <li style="margin-bottom:.6rem"><strong>Living people are not published as people.</strong>
+      No person page, no birth year, no birthplace, and no name where it would appear as somebody's
+      spouse, parent or child — the rule withholds {living.counts.living.toLocaleString()} people
+      across the tree. <strong>{living.named.length} living people are named on this site on
+      purpose</strong>, as the authors of a eulogy and as the reason this archive exists, each with
+      the owner's recorded confirmation. Until 21 September 2026 this line read “not published at
+      all — absent from the build”, which was a stronger claim than the archive keeps.
       <a href={u("/method/")}>How the rule works →</a></li>
       <li><strong>A better story is not a reason.</strong> Two aristocratic descents have been taken
       off this family — one unevidenced, one disproved — and both are still set out in full rather
