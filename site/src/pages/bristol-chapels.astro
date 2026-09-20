@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/bristol-chapels.json";
 const win = new Set(d.window);
 const byPlace = [...new Set(d.rows.map((r) => r.place))];
@@ -136,10 +137,23 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
       is the great Bristol Baptist congregation and its births run 1787–1817 in one volume
       (RG 4/2697); Lewins Mead's Presbyterian baptisms run 1718–1840 in another (RG 4/1830). Between
       them they cover the whole window twice over.</li>
-      <li><strong>And the honest caveat.</strong> Nothing yet suggests the Sanigers were
-      nonconformist. This is where to look because it is where the Anglican registers are not, not
-      because there is evidence pointing at a chapel. <span class="chip inf">a hypothesis being
-      tested</span></li>
+      <li><strong>And the honest caveat, which has since been overtaken twice.</strong> This said
+      that nothing yet suggested the Sanigers were nonconformist, and that it was where to look
+      because it was where the Anglican registers were not. The first half is now false — the
+      Dursley branch was Congregational for eighty years — and the second half has been tested and
+      answered. Both are set out below. <span class="chip dis">a hypothesis, tested and failed</span></li>
     </ol>
   </section>
+
+  <Blk label={`The sweep · ${d.swept.found}`} title={d.swept.head}>
+    <p class="lede" set:html={mdp(d.swept.lede)}></p>
+    <p style="margin-top:1.1rem" set:html={mdp(d.swept.body)}></p>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.swept.chip}</span></p>
+    <Note style="border-left-width:3px;margin-top:1.3rem"><strong>{d.swept.denomHead}.</strong>
+      <span set:html={mdp(d.swept.denom)} />
+      {" "}<span class="chip doc">{d.swept.chipDenom}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.swept.ingestHead}.</strong>
+      <span set:html={mdp(d.swept.ingest)} />
+      {" "}<span class="chip inf">{d.swept.chipIngest}</span></Note>
+  </Blk>
 </Base>

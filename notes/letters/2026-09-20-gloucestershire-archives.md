@@ -29,10 +29,17 @@ documents.
 
 I am looking for the marriage of a **JOHN SANIGER** to a **LYDIA** — surname unknown, which is the
 point — somewhere around 1796 or 1797. Their eldest recorded child was baptised at Berkeley in
-1798. I have now established that no marriage of anyone of this surname, under eight spellings, is
-indexed anywhere in England between 1790 and 1802 in the FamilySearch transcription, and that both
-Berkeley and Wotton-under-Edge are well covered by that index for those years. So either they
-married elsewhere, or the entry is not in that transcription.
+1798. I have now established that no marriage of anyone of this surname is indexed anywhere in England
+between 1790 and 1802 in the FamilySearch transcription, and that both Berkeley and
+Wotton-under-Edge are well covered by that index for those years — Berkeley has 272 marriages
+indexed for 1793–1803 alone. I first tested that with a list of eight spellings, which is a guess
+about a clerk; on 21 September I tested it again with a **wildcard**, which is not. Asking for any
+surname matching `S*N*G*` across Gloucestershire for 1793–1803 returns 122 entries, of which six
+are genuinely this family — and **not one of them is a John, and not one marries a Lydia**. The
+same question asked of the whole of England, for a John marrying a Lydia between 1780 and 1820,
+returns sixteen entries and none of them is this couple. So either they married elsewhere, or the
+entry is not in that transcription — and the possibility that it was hiding under a spelling I had
+not thought of is now closed.
 
 If they married by licence, the allegation and bond would survive in the GDR series and would name
 her, her parish and very often her father.
@@ -95,8 +102,9 @@ david.defranceski@gmail.com
   is the whole of what an archive with no research service can still supply.
 - **Item 1 is the live one.** It is the only route left to Lydia's maiden name now that the
   registers and the index have both been exhausted — see `/hannah-baptism/`.
-- **Two things here are new this week** and did not exist when the 14 September enquiry was sent:
-  the controlled finding that no Saniger marries anywhere in England 1790–1802, and the
+- **Three things here are new this week** and did not exist when the 14 September enquiry was sent:
+  the controlled finding that no Saniger marries anywhere in England 1790–1802, the wildcard
+  re-test of 21 September that removes the last innocent explanation for it, and the
   Discovery API sweep that turned up D654/III/9 ("Oldminsters in Swanhanger"). I have left
   D654/III/9 **out** of this letter to keep it to four asks; it can go in a second one.
 - **The researcher list at the end is the highest-value ask** if the copying answers disappoint.

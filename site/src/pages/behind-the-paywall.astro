@@ -130,7 +130,7 @@ import d from "../data/fmp.json";
       <span set:html={mdp(d.audit.small)} /></Note>
   </Blk>
 
-  <Blk label={`The instrument · ${d.instrument.found}`} title={d.instrument.head}>
+  <Blk label={`The instrument · ${d.instrument.found}`} title={`${["Zero","One","Two","Three","Four","Five","Six","Seven","Eight"][d.instrument.rows.length] ?? d.instrument.rows.length} ${d.instrument.head.charAt(0).toLowerCase()}${d.instrument.head.slice(1)}`}>
     <p class="lede" set:html={mdp(d.instrument.lede)}></p>
     <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
       {d.instrument.rows.map(([what, body, cost]) => (

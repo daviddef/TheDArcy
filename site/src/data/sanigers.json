@@ -317,12 +317,24 @@
       2
     ],
     [
+      "SINNIGER",
+      2
+    ],
+    [
       "SINAGER",
       1
     ],
     [
       "SANNIGAR",
       1
+    ],
+    [
+      "SINIGOR",
+      0
+    ],
+    [
+      "SANIGRE",
+      0
     ],
     [
       "SANYGER",
@@ -505,7 +517,7 @@
       1840
     ]
   ],
-  "spellingsNote": "**One basis, stated: England Births & Baptisms 1538-1975 on FindMyPast, searched nationally, every form asked the same way.** 24 spellings tried, 19 productive, 371 baptisms between 1565 and 1909.\n\nThis replaces a table of nineteen forms whose counts were entries in the parish registers read for this archive — a narrower and differently-drawn source. **Those counts were not wrong; they were not comparable**, which is why SANIGOR and SYNIGAR could not simply be added to them when they were found. The old table is kept in the data as `spellingsOld` rather than deleted.\n\n**SANYGER and SYNIGER still count nought**, which is the finding that survived the change of basis: they are the 1608 muster's forms, in Smyth's Men and Armour and in no register anywhere. **SINGER and SANGER are excluded** — 127 and 40 in Gloucestershire alone, and they are ordinary English surnames rather than forms of this one; counting them would drown the table in strangers.",
+  "spellingsNote": "**One basis, stated: England Births & Baptisms 1538-1975 on FindMyPast, searched nationally, every form asked the same way.** 27 spellings tried, 20 productive, **373 index entries** between 1565 and 1909 — and that is a floor, not a total. **SINIGOR and SINNIGER were added on the evening of 21 September**, found by a single wildcard query over eleven years of one county, hours after the table had been rebuilt and called complete.\n\n**The column counts entries, not children.** On 21 September the five largest forms were read row by row and counted as events rather than as rows: **about one entry in six is a repeat**, and the repetition sits almost wholly in SANIGER and SANIGAR, whose parishes were transcribed more than once. **The measured figures are on [/spellings](/spellings/)**, where they are derived from the count rather than written out again here.\n\nThis replaces a table of nineteen forms whose counts were entries in the parish registers read for this archive — a narrower and differently-drawn source. **Those counts were not wrong; they were not comparable**, which is why SANIGOR and SYNIGAR could not simply be added to them when they were found. The old table is kept in the data as `spellingsOld` rather than deleted.\n\n**SANYGER and SYNIGER still count nought**, which is the finding that survived the change of basis: they are the 1608 muster's forms, in Smyth's Men and Armour and in no register anywhere. **SANIGRE counts nought here too and is in the table anyway** — it is the only form under which Thomas Sinegar's 1828 marriage is indexed, and a spelling that is invisible in one set and decisive in another is exactly what this table exists to show. **SINGER and SANGER are excluded** — 127 and 40 in Gloucestershire alone, and they are ordinary English surnames rather than forms of this one; counting them would drown the table in strangers.",
   "grsi": {
     "head": "Twenty-four deaths, with the register and the entry number",
     "lede": "The Gloucestershire Registration Service and the Gloucestershire Family History Society between them have indexed the registrars' own books and put them online free. It is not the GRO index: it gives the LOCAL register and entry number, which is what a certificate is ordered against.",

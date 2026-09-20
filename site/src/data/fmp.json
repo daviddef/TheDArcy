@@ -145,8 +145,8 @@
   },
   "instrument": {
     "found": "20 September 2026",
-    "head": "Three ways this site returns a zero that means nothing",
-    "lede": "A null is only a fact about the world if the search could have found the thing it did not find. Over 20 September this archive caught FindMyPast returning **three different kinds of meaningless zero**, each of which had already been published here as a finding or was about to be. They are written down together because the next session will meet them again.",
+    "head": "Ways this site returns a number that is not about the world",
+    "lede": "A null is only a fact about the world if the search could have found the thing it did not find — and a total is only a fact about the world if the thing it counts is the thing it is called. Over **20 and 21 September** this archive caught FindMyPast doing both wrong, in the ways listed below, **each of which had already been published here as a finding or was about to be.** They are written down together because the next session will meet them again.",
     "rows": [
       [
         "A year filter combined with `county`",
@@ -167,13 +167,38 @@
         "`yearofbaptism` against an entry indexed by birth",
         "**England Births & Baptisms holds two kinds of entry** — some with a baptism year, some with only a birth year — and the filters are not interchangeable. DARCY unfiltered returns rows dated 1666, 1707 and 1708 whose **«Baptism year» column is empty**, so every `yearofbaptism` search against that surname returns nothing whatever the years.",
         "the 1770 Robert"
+      ],
+      [
+        "An exact-spelling search is exactly exact",
+        "**SANIGRE returns Thomas Sinegar's 1828 marriage and nothing else in England returns it.** SANIGER asked the same way in the same county and window returns 8 marriages, SANIGAR returns 3, and **he is in neither.** The surname box answers for a string, not for a name — so a null recorded as «not found in any spelling» is only ever as wide as the list of spellings somebody typed, and the list here came from a baptism index in which this form does not occur at all.",
+        "Thomas Sinegar's marriage"
+      ],
+      [
+        "The result count counts rows, not events",
+        "**298 index entries across the five commonest spellings of this surname are 246 baptisms.** The set transcribes registers and bishops' transcripts and some parishes twice over: Mary, daughter of Samuell, is indexed **four times** at Berkeley in 1688, and Sarah, daughter of William, four times at Bristol in 1839. The duplication is not even — SANIGER and SANIGAR hold 48 of the 50 repeats and SINNEGAR holds none — so an entry count measures how often a parish was typed up as much as how often a name was written.",
+        "the spelling table's 371"
+      ],
+      [
+        "Two plausible parameter names that quietly mean nothing",
+        "The GRO death index prints a **District** column and is addressed by `district`. Give it `place` or `registrationdistrict` instead — both perfectly reasonable names, one of them the column's own full title — and it returns **nought** with no complaint. **SMITH at `place=lymington` returns zero**, which cannot be true of any English district; `district=reading` narrows 128 Joseph Smiths of 1848 down to the right one. Nothing on the page distinguishes a parameter it ignored from a record that is not there.",
+        "Richard D'Arcy at Lymington"
+      ],
+      [
+        "A filter on a column that is mostly empty",
+        "«Newspapers & Publications» here is a **name index to BMD notices**, not the British Newspaper Archive's full text, and its Year column is blank for most rows. **SMITH returns 674,001 notices unfiltered and 0 with a year of death of 1827 ± 2.** The filter is working exactly as asked and discarding everything that was never dated. Forename filtering does work — Robert D'Arcy narrows 4,459 rows to 42 — so nothing on the page suggests the year is the problem.",
+        "Robert D'Arcy at Chatham, 1827"
+      ],
+      [
+        "A give-or-take that silently becomes an exact year",
+        "`yearofbaptism_offset` accepts any integer, not only the seven in the dropdown — **SANIGER baptised 1792 returns 5 at offset 0, 7 at offset 3 and 58 at offset 40.** Above 40 it does not widen, and it does not complain: **offset 45 returns 5, which is exactly the offset-0 count.** The widest search a reader can ask for silently becomes the narrowest one there is. **This is the worst of the faults on this page**, because every other one hands back a zero and a zero at least looks like an answer worth checking. This hands back a real, small, plausible result with nothing wrong with its face. Measured here on 21 September after the Defranceski session found it on an Italian surname and corrected its own first account of it.",
+        "every null with a wide window"
       ]
     ],
     "chip": "documented",
     "ruleHead": "So the rule tightens",
-    "rule": "This archive already required every null to name a control. That is not enough for a site read through a browser. **A control has to be run in the same session, through the same query shape, and return something — not merely exist as a principle.** A null with a control that was itself a zero is not a control; it is two zeros and a hope. Every FindMyPast null recorded here on 20 September carries a control that returned rows.",
+    "rule": "This archive already required every null to name a control. That is not enough for a site read through a browser. **A control has to be run in the same session, through the same query shape, and return something — not merely exist as a principle.** A null with a control that was itself a zero is not a control; it is two zeros and a hope. Every FindMyPast null recorded here on 20 September carries a control that returned rows.\n\n**And on 21 September the rule gained a method, not just a warning.** The surname box takes **wildcards**. `S*N*G*` asked of Gloucestershire marriages for 1827-1829 returns 53 rows, and among them is **Thomas Sanigre, 1828** — the marriage eight named spellings had failed to find and this archive had recorded as absent — together with **one marriage indexed as both SANIGER and SANIGOR** at Rodborough in 1827. A list of spellings is a guess about a clerk; a wildcard is not. The cost is strangers — the same 53 rows hold Sanger, Shearing and Sheering — so **the trade is a wider net inside a narrow window, read row by row**, rather than a narrow net cast across a century. Where a question has a place and a decade, that is now the first search and the spelling list is the second.\n\n**And the same day showed what «the same query shape» does not cover.** This archive published «None, in any spelling» for Sanigers at Chew Magna with a control beside it, and the parish register holds two — Charles Sinagar 1816 and William Sinegar 1822, children of Simon and Elizabeth. The control was a search at **Berkeley**. It returned 252 rows, so it proved the site was answering; it could not prove that the **Chew Magna** page had finished rendering, which is the one thing that had to be true. **A control that changes the field under test is not testing that field.** Where a query takes a wildcard, the wildcard is the better control: it re-asks the same field in a way that cannot fail for the reason a spelling list fails. `S*N*G*R` at Chew Magna returns four records and two of them are the name. **check_controls.py now refuses a new FindMyPast null that claims «any spelling» without one.**",
     "chipRule": "documented",
-    "costHead": "What it cost today",
-    "cost": "**Three findings were withdrawn before publication and one after.** The sisters' 1861 absence was reclassified from «null» to «blocked — the question was never asked». Robert's Army List gap is now stated as possibly the publisher's rather than the man's. **Catherine Cotton's origins were published as «inconclusive» and then, an hour later, re-run and published as a proper controlled null** — 27 Cotton baptisms in the county in the right eleven years and no Catherine among them. That is the sequence this rule is meant to produce: doubt the instrument, re-run it, and let the finding stand only when a control comes back with something."
+    "costHead": "What it cost, and the one thing that cannot go wrong",
+    "cost": "**Three findings were withdrawn before publication and one after.** The sisters' 1861 absence was reclassified from «null» to «blocked — the question was never asked». Robert's Army List gap is now stated as possibly the publisher's rather than the man's. **Catherine Cotton's origins were published as «inconclusive» and then, an hour later, re-run and published as a proper controlled null** — 27 Cotton baptisms in the county in the right eleven years and no Catherine among them. That is the sequence this rule is meant to produce: doubt the instrument, re-run it, and let the finding stand only when a control comes back with something.\n\n**21 September added two more, and both had already been published.** The spelling table's headline said «371 baptisms» where it had counted 371 index entries, on two pages. And a null saying Thomas Sinegar's marriage was «not found, in any spelling» had stood on /searched for eight days while /thomas-sinegar carried the marriage itself. **Own errors 38 and 39.**\n\n**One piece of good news, and it is structural.** A `datasetname` that names no real set returns a **500 error**, not a zero — proved by asking for a non-conformist set that does not exist beside one that does. So a zero from this site is always a zero from a set that is really there. It does nothing about the faults above, where the set is real and the filter is the liar, but it closes off a whole class of false null that a mistyped set name would otherwise create silently."
   }
 }

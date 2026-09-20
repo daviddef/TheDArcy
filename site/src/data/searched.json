@@ -193,8 +193,8 @@
       "src": "FindMyPast — England & Wales Deaths 1837-2007, Lymington district",
       "what": "Whether Richard D'Arcy of Priestlands died there",
       "when": "15 Sep 2026",
-      "outcome": "empty",
-      "got": "FIVE D'Arcy deaths ever registered at Lymington: JOSEPH 1848, KATHERINE LUCY ELIZABETH 1863, and three in the twentieth century. No Richard. He is in the house in 1841 and is not in the district's register at all — and no Richard D'Arcy or ARCY appears in the 1851 census anywhere in Britain. The two Richard Darcy deaths in the index for 1836-1856 are Liverpool 1848 and West London 1856, neither with an age.",
+      "outcome": "null",
+      "got": "FIVE D'Arcy deaths ever registered at Lymington: JOSEPH 1848, KATHERINE LUCY ELIZABETH 1863, and three in the twentieth century. No Richard. He is in the house in 1841 and is not in the district's register at all — and no Richard D'Arcy or ARCY appears in the 1851 census anywhere in Britain. The two Richard Darcy deaths in the index for 1836-1856 are Liverpool 1848 and West London 1856, neither with an age.\n\n**21 September: asked again with the parameter that works, and now controlled.** This set is addressed by `district`, not by `place` — both `place=lymington` and `registrationdistrict=lymington` return a silent zero, and `district=lymington` returns the district. Asked that way, **the whole index holds two D'Arcy deaths registered at Lymington: Joseph, first quarter of 1848, and Katherine Lucy Elizabeth, second quarter of 1863** — his widow, both of them already here. Control in the same shape: **21 PITT deaths in the same district, 1820-1900.** So the district is indexed and Richard D'Arcy did not die in it. Whatever became of the man aged 57 at Priestlands in 1841, it was not a death registered where he was living.",
       "href": "/joseph-darcy",
       "ctl": "named",
       "key": "src/findmypast-england-wales-dea-73caec"
@@ -452,9 +452,9 @@
       "what": "Elizabeth Pitt, and what she was to the D'Arcys",
       "when": "14 Sep 2026",
       "outcome": "null",
-      "got": "Still open. Her death was registered at LYMINGTON in 1851, so she stayed in the district after Joseph died in 1848 — she was a member of that household, not a visitor on census night. But no death notice for her survives to state a relationship, and the 1841 census records none. The Pitt question has one more fact around it and no answer.",
+      "got": "Still open. Her death was registered at LYMINGTON in 1851, so she stayed in the district after Joseph died in 1848 — she was a member of that household, not a visitor on census night. But no death notice for her survives to state a relationship, and the 1841 census records none. The Pitt question has one more fact around it and no answer.\n\n**21 September: controlled, and the one fact it had turns out to prove less than it was made to prove.** Asked again with the parameter that works on this index — `district`, not `place` — **Elizabeth Pitt's death is confirmed at Lymington in the first quarter of 1851.** The control is the surname rather than the woman: **21 PITT deaths were registered in that district between 1820 and 1900**, among them Catherine 1883, Catherine Maria 1843, James, John, John Daniel, Martha and Mary. Pitt is an ordinary name in that corner of Hampshire. **That she died where she had been living is therefore unremarkable and is not evidence of kinship**, which is what this row had quietly started to treat it as. The question is where it was on 14 September, with one fact around it and that fact now weighed.",
       "href": "/joseph-darcy",
-      "ctl": "unstated",
+      "ctl": "named",
       "key": "src/findmypast-hampshire-civil-r-09f364"
     },
     {
@@ -471,9 +471,9 @@
       "what": "Joseph D'Arcy's marriage, and Richard Darcy of 1784",
       "when": "14 Sep 2026",
       "outcome": "null",
-      "got": "Neither found. No Joseph D'Arcy marries in Hampshire between 1825 and 1835 though his eldest child was born there in 1832 — he was a serving officer and may have married anywhere. And Richard Darcy, aged 57 at Priestlands in 1841, leaves no other Hampshire record at all: he is a name, an age and an address in his brother's house.",
+      "got": "Neither found. No Joseph D'Arcy marries in Hampshire between 1825 and 1835 though his eldest child was born there in 1832 — he was a serving officer and may have married anywhere. And Richard Darcy, aged 57 at Priestlands in 1841, leaves no other Hampshire record at all: he is a name, an age and an address in his brother's house.\n\n**21 September: half of this is withdrawn, and the reason is the set.** «No Joseph D'Arcy marries in Hampshire between 1825 and 1835» was read off **England Marriages 1538-1973**, and that set has **no Hampshire in it at all**: SMITH returns **0** marriages in the county across 435 years and **14,056** in Gloucestershire, asked the same way in the same session. The sentence described a transcription, not a county. **Joseph's Hampshire marriage is now an open question again**, and it has to be asked of the Hampshire Genealogical Society's county sets. Richard Darcy of 1784 is untouched by this — that search ran across record types, not only the national one.\n\n**Asked properly the same hour, and the answer holds.** **Hampshire Marriages (Hampshire Genealogical Society)** — the county set, not the national one — returns **22 D'Arcy entries from 1748 to 1880 and no Joseph**. Controlled by the set's own hold on this family: **Robert Darcy and Jean Ward, Portsea St Mary, 21 June 1779**, their own marriage, is in it — an entry this archive confirmed at transcript level on 17 September, so the control is one whose answer was already known before the query was run. So the finding survives the correction; only its authority changed.",
       "href": "/joseph-darcy",
-      "ctl": "unstated",
+      "ctl": "named",
       "key": "src/findmypast-hampshire-all-rec-433e09"
     },
     {
@@ -635,10 +635,9 @@
       "src": "FindMyPast — Gloucestershire, all spellings",
       "what": "The marriage of Thomas Sinegar and Martha, about 1829",
       "when": "13 Sep 2026",
-      "outcome": "null",
-      "got": "Not found, in any spelling, anywhere in Gloucestershire between 1822 and 1838. It is the document that would turn a strong inference into a proved one, because a Gloucestershire marriage entry names the father — as his son's did in 1871.",
+      "outcome": "yield",
+      "got": "Not found, in any spelling, anywhere in Gloucestershire between 1822 and 1838. It is the document that would turn a strong inference into a proved one, because a Gloucestershire marriage entry names the father — as his son's did in 1871.\n\n**21 September: this row was wrong on the day it was written, and stayed wrong for eight days.** The marriage is in England Marriages 1538-1973 and it is indexed **SANIGRE** — Thomas Sanigre and Martha, Bristol, 1828, one result in the whole of England. /thomas-sinegar has carried it since the afternoon of 13 September; this row was written the same morning and never withdrawn. Re-run today with a control: **SANIGER returns 8 marriages in Gloucestershire between 1820 and 1840 and SANIGAR returns 3, and Thomas is in neither** — so the query shape, the county and the window were all sound, and the surname was not. Own error 38.",
       "href": "/thomas-sinegar",
-      "ctl": "unstated",
       "key": "src/findmypast-gloucestershire-a-403f26"
     },
     {
@@ -655,9 +654,9 @@
       "what": "Martha Wakefield, born about 1836",
       "when": "13 Sep 2026",
       "outcome": "null",
-      "got": "Nothing. No birth registration, no baptism, no burial for a Martha Wakefield born at Bristol between 1831 and 1842. Her sisters Eliza and Ellen both produce baptisms naming James and Hannah; Martha produces nothing. She is not in the family tree either, which gives the couple only Miriam. She has been named on five pages of this site and on present evidence she entered it from my own earlier work with no record behind her.",
+      "got": "Nothing. No birth registration, no baptism, no burial for a Martha Wakefield born at Bristol between 1831 and 1842. Her sisters Eliza and Ellen both produce baptisms naming James and Hannah; Martha produces nothing. She is not in the family tree either, which gives the couple only Miriam. She has been named on five pages of this site and on present evidence she entered it from my own earlier work with no record behind her.\n\n**21 September: re-run with a control, and the null holds.** England Births & Baptisms 1538-1975, **WAKEFIELD at Bristol baptised 1831-1841: 54 entries**, all of them read. They include **Eliza, 1832, father James** and **Ellen, 1834, father James** — the two sisters this row already named — so the set covers the parish, the decade and this very household. Read in forename order the list runs Louisa, Mary, Mary Ann; **Martha would fall between Louisa and Mary and is not there**. Adding her forename to the same query returns nought. This is now a controlled null rather than an uncontrolled one, and it agrees with the Queensland death index, which makes her Martha Hurford, another man's daughter.",
       "href": "/wakefields",
-      "ctl": "unstated",
+      "ctl": "named",
       "key": "src/findmypast-bristol-every-rec-cae892"
     },
     {
@@ -728,10 +727,9 @@
       "src": "FindMyPast — British Army Officer Promotions 1800-1815",
       "what": "A Robert D'Arcy gazetted Cornet in the 17th Light Dragoons, 1804",
       "when": "13 Sep 2026",
-      "outcome": "null",
-      "got": "Discarded, and recorded so it is not found again. He is “Gent”, buying a cornetcy by purchase vice Harris in May 1804 — while this family's Robert D'Arcy had been a major since 1802 and was a lieutenant-colonel by the following March. Same name, different man.",
+      "outcome": "yield",
+      "got": "Discarded, and recorded so it is not found again. He is “Gent”, buying a cornetcy by purchase vice Harris in May 1804 — while this family's Robert D'Arcy had been a major since 1802 and was a lieutenant-colonel by the following March. Same name, different man.\n\n**21 September: this row was mislabelled.** It was recorded as a `null` with no control, and it is not a null — the search returned the record and the record was read and rejected. A search that finds a man and proves he is the wrong man is a result, and needs no control to say the parish was covered.",
       "href": "/the-corps",
-      "ctl": "unstated",
       "key": "src/findmypast-british-army-offi-cb0cb4"
     },
     {
@@ -934,10 +932,9 @@
       "src": "FindMyPast — all Life Events, control-tested",
       "what": "Sanigers at Chew Magna",
       "when": "13 Sep 2026",
-      "outcome": "null",
-      "got": "None, in any spelling. The control passes: the same query with “berkeley” returns 252 and Chew Magna itself is covered — a Smith search there returns Somerset Burials and Somerset Baptisms. So the zero is real. Together with the 1851 census this closes the Chew Magna hypothesis, which was mine and which was wrong.",
+      "outcome": "yield",
+      "got": "None, in any spelling. The control passes: the same query with “berkeley” returns 252 and Chew Magna itself is covered — a Smith search there returns Somerset Burials and Somerset Baptisms. So the zero is real. Together with the 1851 census this closes the Chew Magna hypothesis, which was mine and which was wrong.\n\n**21 September: this row was false, and the wildcard found it out in one query.** `S*N*G*R` at Chew Magna across every parish and BMD set returns **four records, and two of them are this name** — **Charles Sinagar, baptised 1816**, and **William Sinegar, baptised 1822**, both in Somerset Baptisms, both children of **SIMON and ELIZABETH**. Worse, it was never a spelling problem: **a plain search for SINEGAR at Chew Magna, one of the eight forms this archive had been using since the 13th, returns the 1822 baptism on its own.** The control quoted above passed because it was a different query at a different place, which tests that the site works and not that this page rendered. Own error 40.",
       "href": "/chew-magna",
-      "ctl": "named",
       "key": "src/findmypast-all-life-events-c-d4e3b1"
     },
     {
@@ -3251,7 +3248,7 @@
       "when": "16 Sep 2026",
       "outcome": "null",
       "ctl": "named",
-      "got": "None. Berkeley has 272 marriages indexed for those eleven years, so the parish is covered. The only Lydia marrying at Berkeley between 1790 and 1810 is LYDIA JONES, 8 January 1798, and the transcript gives her husband as JOHN SAWYER. The FamilySearch tree's «John Saniger married Lydia Jones at Berkeley in 1797» does not survive the spouse's surname.",
+      "got": "None. Berkeley has 272 marriages indexed for those eleven years, so the parish is covered. The only Lydia marrying at Berkeley between 1790 and 1810 is LYDIA JONES, 8 January 1798, and the transcript gives her husband as JOHN SAWYER. The FamilySearch tree's «John Saniger married Lydia Jones at Berkeley in 1797» does not survive the spouse's surname.\n\n**21 September: asked again with no spelling list at all, and the null holds.** `S*N*G*` across Gloucestershire for 1793-1803 returns **122 rows, every one read**. Six are genuinely this surname and **none of them is a John, and none marries a Lydia.** The eight spellings were not the limitation; the record is not in this set.",
       "href": "/hannah-baptism"
     },
     {
@@ -3537,6 +3534,181 @@
       "ctl": "named",
       "got": "**44 entries, all read. Exactly one is theirs: Joseph, 1780, father Robert, mother Jean, Portsea St Mary.** The tree gives them nine children and the county holds one.\n\nThe control is the set's own Portsea coverage: **seven other D'Arcy children were baptised in that parish between 1802 and 1836 to four different fathers** — Chrytophori, Thomas, John, and Christophori. The parish is plainly in the book. It does not follow that the eight did not exist; Robert was an engineer officer and two of his children were christened at St Michael, Barbados. **It follows that Portsea is finished as a question.**",
       "href": "/portsea"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, SANIGRE",
+      "what": "Thomas Sinegar's marriage, under the one spelling this archive's table did not hold",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**Found, and it is the only SANIGRE in the set.** Thomas Sanigre, 1828, spouse Martha, Bristol, Gloucestershire — one result asked nationally with no filters at all, and the same one result when the county and a twenty-year window are added, so the filters are not hiding anything. This settles a null row this archive had carried since 13 September.",
+      "href": "/thomas-sinegar"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975, SANIGRE",
+      "what": "Whether the spelling that carries the marriage carries any baptism at all",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "got": "**Nought, nationally, with no other filter.** Control in the same session and the same shape: **SANIGER returns 158**, which is the figure the spelling table already held, so the zero is the surname and not the search. SANIGRE is therefore a real form of this name that appears in no baptism register the set transcribes — which is why a spelling table built from baptisms could not see it, and why it is now in that table at nought.",
+      "href": "/spellings",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, Gloucestershire 1820-1840",
+      "what": "A control for the SANIGRE find: do the principal spellings return marriages in that window?",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**They do, and neither returns Thomas.** SANIGER gives 8 — including Hannah's own to James in 1831, indexed four times over — and SANIGAR gives 3, all three being one marriage, Margaret Ann to Daniel in 1837. The window, the county filter and the set are all working. **The only thing that was wrong with the original search was the list of spellings put to it.**",
+      "href": "/spellings"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975, the five largest spellings read row by row",
+      "what": "Whether the spelling table's 371 is a count of baptisms or a count of index entries",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**Entries.** All 298 rows of SANIGER, SANIGAR, SAINGER, SINEGAR and SINNEGAR were read and counted as events: **121, 45, 29, 27 and 26 — 248, and 246 once two baptisms indexed under two spellings are counted once.** Fifty repeats in 298 rows. The repetition is concentrated: SANIGER and SANIGAR carry 48 of the 50 and SINNEGAR carries none, because those are the forms whose parishes the set transcribes twice over. Page counts matched the stated totals exactly at every form, which is how the read was checked. Own error 39.",
+      "href": "/spellings"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, county coverage",
+      "what": "Whether the national marriage set holds Hampshire at all",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**It holds none of it.** SMITH in Hampshire, no other filter, whole span: **0 results**. SMITH in Gloucestershire, same shape, same minute: **14,056**. A zero that large against a control that large is a statement about the transcription. Asked because a D'Arcy marriage search in Hampshire returned nothing and the archive was about to record it as a fact about the family.",
+      "href": "/behind-the-paywall"
+    },
+    {
+      "src": "FindMyPast — England & Wales Deaths 1837-2007, the district parameter",
+      "what": "Why a death index that plainly holds a district returns nothing for it",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**`district` works; `place` and `registrationdistrict` return a silent zero.** The results table prints a District column, so both wrong names look right. Proved by narrowing a query that returns 128 Joseph Smiths dying in 1848 down to the one at Reading with `district=reading`, while `place=lymington` returned nought for SMITH — which cannot be true of any English district. One more way this site answers a question nobody asked.",
+      "href": "/behind-the-paywall"
+    },
+    {
+      "src": "FindMyPast — England & Wales Deaths 1837-2007, PITT at Lymington",
+      "what": "Elizabeth Pitt, and whether her registration there points at the D'Arcys",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**Her death is confirmed — Elizabeth Pitt, first quarter of 1851, Lymington — and the inference built on it is weaker than it looked.** PITT is an ordinary surname in that district: **21 Pitt deaths registered there between 1820 and 1900**, among them Catherine 1883, Catherine Maria 1843, James, John, John Daniel, Martha, Mary. That she died in the district where she had been living in 1841 is therefore unremarkable, and is not on its own evidence of kinship with the family she was living with. What she was to the D'Arcys still needs the certificate or a will.",
+      "href": "/joseph-darcy"
+    },
+    {
+      "src": "FindMyPast — Hampshire Marriages (Hampshire Genealogical Society)",
+      "what": "Every D'Arcy marriage in the county, read end to end — and Joseph's, which the national set could not answer",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**22 entries between 1748 and 1880, all read; 17 marriages once the duplicates are removed.**\n\n**Robert Darcy and Jean Ward, Portsea St Mary, 21 June 1779 is in it — and this archive already had it.** It is the first row of the marriage audit, opened at transcript level on 17 September. Re-reading the transcript today confirms it again and adds nothing; the row is recorded because **the search was nearly written up as a discovery**, which is the mistake this archive made on 13 September with Ann Saniger's baptism.\n\n**What is new is the absence around it.** In the whole county set the family has that one marriage and Joseph's 1780 baptism and nothing else — no second child, no burial, and **no marriage for Joseph at any date under either spelling.** That last is a finding that had to be re-made today: the version published on 14 September came from England Marriages 1538-1973, which holds no Hampshire at all. The county set does, and its own hold on this family is the control.",
+      "href": "/portsea"
+    },
+    {
+      "src": "FindMyPast — England & Wales Non-Conformist Births and Baptisms, Bristol",
+      "what": "Errand 18: the Bristol chapel registers, every spelling at once",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "got": "**Nought, and this time every spelling really was asked.** The surname box takes wildcards, so **`S*N*G*R` at Bristol** puts one query where a list of twenty-five would have gone — and it returns **no entry of any form**. Three controls in the same session and the same shape: **SMITH at Bristol returns 133** chapel baptisms, Congregational and Presbyterian, 1724 to 1831; the same wildcard **without a place returns 808**; and **SANIGAR returns 8**, so the surname is in the set. The Bristol chapels are indexed, this name is indexed, and the two do not meet.",
+      "href": "/bristol-chapels",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — England & Wales Non-Conformist Burials, Bristol",
+      "what": "The same question asked of burials rather than baptisms",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "got": "**Nine rows at Bristol and not one of them is the name.** `S*N*G*R` returns Singer five times, Springer, Stringer twice and Swearenger — Baptist and Presbyterian burials between 1704 and 1812. **A control cannot do better than this**: the query returned rows, at the right place, in the right register series, and the surname is not among them. The whole set holds 409 under the same wildcard.",
+      "href": "/bristol-chapels",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — England & Wales Non-Conformist Births and Baptisms, SANIGAR",
+      "what": "Where this surname does appear in the chapel registers",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**Eight entries and all eight are at one chapel: Dursley, Corn Meeting, Congregational.** Rose, daughter of Willm, 1781; then Thomas Browning Sanigar's children — Emily Sophia 1851, Fanny 1852, Rachel Harris 1854, Edward Thomas 1856 — and Thomas Sanigar's — Susanna 1861, Albert Thomas 1863, Hester Jane 1866. **The scarp branch of this family was Congregational**, which no page of this archive has said. And the same entries appear in England Births & Baptisms 1538-1975, so **that set is not purely Anglican**: it ingests RG 4 as well, and some of the duplication counted on /spellings is one register reaching the index by two routes.",
+      "href": "/bristol-chapels"
+    },
+    {
+      "src": "FindMyPast — the surname box takes wildcards",
+      "what": "Whether one query can replace a list of spellings",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**It can, and it finds what the list missed.** `S*N*G*` in Gloucestershire, marriages 1827-1829, returns **53 rows** — among them **Thomas Sanigre, 1828, Martha, Bristol**, the entry eight named spellings failed to find and which this archive recorded as not existing. It also turns up **John Saniger, 1827, Ann, Rodborough AND John Sanigor, 1827, Ann, Rodborough** — one marriage under two spellings, one of them the rare form that had already hidden Hannah's baptism. **The cost is strangers**: the same 53 rows include Sanger, Shearing and Sheering. So the wildcard is not a shortcut, it is a different trade — a wider net read row by row, inside a narrow place and a narrow window, instead of a narrow net cast wide.",
+      "href": "/spellings"
+    },
+    {
+      "src": "FindMyPast — an unknown record set",
+      "what": "What the site does when `datasetname` names a set that does not exist",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**It returns a 500 error, not a zero.** Asked for «England & Wales Non-Conformist and Non-Parochial Registers 1567-1970», which is not a set here, the page fails outright; asked for «England & Wales Non-Conformist Births and Baptisms», which is, it returns results or an honest nought. **That is worth knowing because it makes a whole class of false null impossible**: a zero from this site is always a zero from a set that exists. It does not rescue the other four faults, where the set is real and the filter is the liar.",
+      "href": "/behind-the-paywall"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, `S*N*G*` in Gloucestershire 1793-1803",
+      "what": "Every marriage of this surname in the county in the eleven years around John and Lydia's, with no spelling assumed",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "got": "**122 rows read end to end, and the answer is no John and no Lydia.** Six of the 122 are genuinely this surname: **Mary Sannigar 1794 Stroud, James Senigar 1795 Bristol, Daniel Sinigar 1800 Gloucester, Sarah Sinigor — also indexed Sinniger — 1801 Stinchcombe, William Saniger 1803 Thornbury.** Not one is a John, and not one marries a Lydia.\n\n**This is the strongest form this null can take**, because nothing in it depends on a list of spellings. The wildcard demonstrably reaches the rare forms: it returned SENIGAR, SINIGAR, SANNIGAR, and **two forms this archive's own table did not contain at all — SINIGOR and SINNIGER.** 116 strangers came with them, which is the price.",
+      "href": "/hannah-baptism",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, a John marrying a Lydia anywhere in England",
+      "what": "The last shape of the question: no county, no spelling, just the two names",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "got": "**Sixteen rows in the whole country between 1780 and 1820, and none of them is this couple.** John Sanger and Lydia at **Salisbury, Wiltshire, 1788** is the only one whose surname is even arguable — and SANGER is the form this archive excludes on purpose as an ordinary English surname, sixty miles away, ten years before their first known child. The other twelve are Showing, Singleton, Singley, Snelling, Spearing, Springall, Springer, Strangroom and Swanhinbergh.\n\n**So this index has been exhausted.** The marriage of John Saniger and Lydia is not in England Marriages 1538-1973 under any spelling, in any county, in the four decades that could hold it. The set does not transcribe every parish, so that is not the same as saying they did not marry — but no further search of *this* index can help, and the question now belongs to the Berkeley register itself.",
+      "href": "/hannah-baptism",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — England Marriages 1538-1973, `S*NIG*` and the forename John",
+      "what": "Any John of this surname marrying anywhere in England, 1786-1806",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**One result in the country: JOHN SANIGER married ELIZABETH at THORNBURY in 1790** — and this archive already had it, on /hannah-baptism, where it is named as the last Saniger marriage before the gap. The row is kept because **it is what the wildcard returns where a list of eight spellings returned the same thing**, which is the useful part: on this question the two instruments agree, and that is worth knowing before the wildcard is trusted on questions where they do not.",
+      "href": "/hannah-baptism"
+    },
+    {
+      "src": "FindMyPast — every parish and BMD set, Barbados",
+      "what": "Errand 33: whether the St Michael register of the 1780s can be reached from a desk",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "got": "**It cannot, and now that is measured rather than assumed.** Asked across the whole Birth, Marriage, Death & Parish category at once instead of set by set: **D'ARCY at Barbados returns four records, all between 1850 and 1876**, every one from the British armed forces overseas registers. **Control in the same shape: SMITH at Barbados returns eight, and the oldest is 1811.** The site's Barbados holdings begin in the nineteenth century. Constantine's christening of 18 February 1786 and Jane's of 17 March 1788 are outside them by a generation, so the index entries this archive holds are all the index will ever give. **The register itself, which would name Robert's rank and station, needs Barbados.**",
+      "href": "/constantine",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — the newspaper family-notice sets",
+      "what": "Errand 91: Robert D'Arcy's death at Chatham in May 1827, and Joseph's at Lymington in 1848",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "got": "**Neither, and the reason is the index rather than the newspapers.** What FindMyPast calls «Newspapers & Publications» is **not** the British Newspaper Archive's full text: it is a **name index to birth, marriage and death notices**, and most of its fields are empty. D'ARCY returns **4,459 rows** of which the great majority carry no forename, no year and no place at all.\n\n**Robert D'Arcy: 42 notices, every one read. The earliest dated entry is 1857.** **Joseph D'Arcy: 84 notices, earliest dated 1914.** The index is weighted to the twentieth century and holds nothing near 1827 or 1848 for either name. Full text for those years lives on britishnewspaperarchive.com, which is a separate site with its own sign-in, and **this archive does not create accounts or enter credentials**.",
+      "href": "/behind-the-paywall",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — a year filter on the newspaper notices",
+      "what": "Why every dated newspaper search here has come back empty",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**Because the year field is mostly empty, and filtering on it discards everything that lacks one.** SMITH in the newspaper-notice category returns **674,001 rows** with no filter and **0** with `yearofdeath=1827 ± 2`. A surname held by six hundred thousand notices does not vanish from a five-year window; the filter is simply throwing away every row whose year was never transcribed. Forename filtering **does** work — Robert D'Arcy narrows 4,459 to 42 — so the fault is the sparseness of one column, not the search. **One more way this site returns a zero that means nothing**, and the only one of the five where the parameter is doing exactly what it was asked.",
+      "href": "/behind-the-paywall"
+    },
+    {
+      "src": "FindMyPast — every parish and BMD set, Chew Magna",
+      "what": "Re-running the Chew Magna null with a wildcard instead of a spelling list",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**Two baptisms this archive had published as not existing, and a father it did not have.** `S*N*G*R` at Chew Magna returns four: **Charles Sinagar 1816** and **William Sinegar 1822**, both Somerset Baptisms, father **SIMON**, mother **ELIZABETH** — plus a Stringer of 1635 and a Stranggar burial of 1710, which is the price of the wider net. Widened to `S*N*G*` the parish returns 37 records and the Shearings and Sheerings come with them; the two that matter are the same two.\n\n**They close the household this archive already had.** Elizabeth Saniger, widow, 60, born Chew Magna, is living with her son William Saniger, 27, born Chew Magna, at Oxford Road in Bristol in 1851. The register names her husband.",
+      "href": "/chew-magna"
+    },
+    {
+      "src": "FindMyPast — the `_offset` parameter, measured",
+      "what": "Whether a give-or-take window does what it says at every value",
+      "when": "21 Sep 2026",
+      "outcome": "yield",
+      "got": "**It does, up to 40, and above 40 it silently becomes an exact-year search.** One query, SANIGER baptised 1792 in England Births & Baptisms, varying nothing but the offset: **0 → 5 results, 3 → 7, 40 → 58, 45 → 5.** Forty-five returns the offset-zero count exactly. The dropdown's 0/1/2/5/10/20/40 are presets rather than a whitelist — 3 is honoured and gives a genuine window — but there is a ceiling above which the parameter is discarded and the search narrows to the year itself.\n\n**Nothing here needs re-checking**: every offset this archive has used is 0, 1, 2, 5, 10, 20 or 40. The row exists so that the next session does not reach for 50 to be thorough and get the narrowest possible answer wearing the widest possible label. **Passed on by the Defranceski session**, which found it on an Italian surname, published a wrong account of it first, measured it, and corrected itself; re-measured here on this archive's own surname and set before being written down.",
+      "href": "/behind-the-paywall"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

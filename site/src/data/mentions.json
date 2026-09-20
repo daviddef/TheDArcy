@@ -763,7 +763,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…. no control stated 13 Sep 2026 FindMyPast — Bristol baptisms and burials found something Eliza Wakefield, the eldest daughter Baptised at Bristol 14 OCTOBER 1832, father JAMES WAKEFIELD, mother HANNAH — and BURIED there on 4 MAY 1834,…",
+"snippet": "…not. Own error 38. 13 Sep 2026 FindMyPast — Bristol baptisms and burials found something Eliza Wakefield, the eldest daughter Baptised at Bristol 14 OCTOBER 1832, father JAMES WAKEFIELD, mother HANNAH — and BURIED there on 4 MAY 1834,…",
 "title": "What Has Been Read"
 },
 {
@@ -1866,7 +1866,7 @@
 },
 {
 "path": "/worklist",
-"snippet": "…start this archive Portsea St Mary's register, 1770–1800 Errand 30. Robert D'Arcy married Jean Ward there on 21 June 1779 and Joseph was baptised there on 19 March 1780 — and FreeREG holds exactly one D'Arcy record in the whole o…",
+"snippet": "…ished this archive Portsea St Mary's register, 1770–1800 Errand 30. Robert D'Arcy married Jean Ward there on 21 June 1779 and Joseph was baptised there on 19 March 1780 — and FreeREG holds exactly one D'Arcy record in the whole o…",
 "title": "The work list"
 }
 ],
@@ -1953,6 +1953,11 @@
 "path": "/drivers-fields",
 "snippet": "…70, living on her own means the tree says Hannah's mother was Lydia — and that her father John Saniger died in 1824 and here it gets interesting The street is the detail that settles it. The tree records Jabez Wakefield born on 14 F…",
 "title": "Drivers Fields, 1841"
+},
+{
+"path": "/spellings",
+"snippet": "…arriage this archive searched for under eight spellings and recorded as not existing. And John Saniger, 1827, Ann, Rodborough standing beside John Sanigor, 1827, Ann, Rodborough — one wedding indexed under two forms, one of them the…",
+"title": "Every Spelling of One Name"
 },
 {
 "path": "/behind-the-paywall",
@@ -2666,6 +2671,11 @@
 "path": "/corrections",
 "snippet": "…ry event the page was built on. Where it was corrected → 14 September 2026 was Wrote that Martha Wakefield “may never have existed” and that she was “not in the family tree either”, after searching for her in Bristol. She is in the tree…",
 "title": "What This Archive Got Wrong"
+},
+{
+"path": "/worklist",
+"snippet": "…ows remain: Elizabeth Pitt, Joseph D'Arcy's Hampshire marriage and Richard Darcy of 1784, Martha Wakefield at Bristol, and the 1804 Cornet — which is not a null at all but a record found and discarded, and is mislabelled. All five uncon…",
+"title": "The work list"
 }
 ],
 "mary-abbot": [],
@@ -3001,6 +3011,11 @@
 "path": "/atkinson",
 "snippet": "…, Limerick Christened 9 July 1832 Limerick, County Limerick — St Mary's Cathedral Parents Richard Atkinson and Anne — a generation the archive did not have before Organist 1853 Bandon, County Cork Emigrated 2 September 1862 to Brisbane,…",
 "title": "The Atkinsons"
+},
+{
+"path": "/worklist",
+"snippet": "…ter entry of 9 July 1832 with the father's abode and occupation, asks for the marriage of Richard Atkinson and Anne which would name both fathers, and asks the free question: which Limerick city registers the Library actually holds and…",
+"title": "The work list"
 }
 ],
 "richard-d-arcy": [
@@ -3197,7 +3212,7 @@
 },
 {
 "path": "/searched",
-"snippet": "…and 1789 are other people — Darcy Tancred, Darcy Burnell of Winkburn, Darcy Molineux, Sir Robert Darcy Hildyard, Darcy Linton, John Pomeroy Darcy, Arthur Darcy, and Darcy Lever, which is a place in Lancashire. Controlled first: the…",
+"snippet": "…entries from 1748 to 1880 and no Joseph. Controlled by the set's own hold on this family: Robert Darcy and Jean Ward, Portsea St Mary, 21 June 1779, their own marriage, is in it — an entry this archive confirmed at transcript level…",
 "title": "What Has Been Read"
 },
 {
@@ -3650,7 +3665,7 @@
 },
 {
 "path": "/corrections",
-"snippet": "…t William Sneyd died between 1919 and 1921 16 February 1920, registration 1920/B/31382. → Vivian Claude Sneyd was born at Rockhampton Windsor, Brisbane, on his own attestation paper. → Read across all 37 The shared cause, counted An archiv…",
+"snippet": "…t William Sneyd died between 1919 and 1921 16 February 1920, registration 1920/B/31382. → Vivian Claude Sneyd was born at Rockhampton Windsor, Brisbane, on his own attestation paper. → Read across all 40 The shared cause, counted An archiv…",
 "title": "What This Archive Got Wrong"
 }
 ],
@@ -3945,6 +3960,11 @@
 "path": "/saniger-place",
 "snippet": "…. 1 July 1709, aged 60 Paul Bishop of Saniger, and Martha his wife in the churchyard list William Saniger of FROGPITT, Yeoman d. 17 Jan 1704 — a Saniger who lived somewhere else Edward Saniger of PEDINGTON in this Parish, and Mary his…",
 "title": "Saniger is a place"
+},
+{
+"path": "/corrections",
+"snippet": "…zabeth Saniger, widow, 60, born Chew Magna, was already on this site, living with her son William Saniger, 27, born Chew Magna, at Oxford Road in Bristol in 1851. The register names her husband and this archive had been calling him nob…",
+"title": "What This Archive Got Wrong"
 },
 {
 "path": "/saniger-line",

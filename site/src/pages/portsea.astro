@@ -93,7 +93,7 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
     </Note>
   </section>
 
-  <Blk label={`Hampshire Baptisms · ${d.county.found}`} title={d.county.head}>
+  <Blk label={`The Hampshire county sets · ${d.county.found}`} title={d.county.head}>
     <p class="lede" set:html={mdp(d.county.lede)}></p>
     <Scroll>
       <table style="margin-top:1.2rem">
@@ -110,6 +110,9 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
     <Note style="border-left-width:3px;margin-top:1.3rem"><strong>{d.county.meansHead}.</strong>
       <span set:html={mdp(d.county.means)} />
       {" "}<span class="chip doc">{d.county.chipMeans}</span></Note>
+    <Note style="border-left-width:3px;margin-top:1.2rem"><strong>{d.county.marriage.head}.</strong>
+      <span set:html={mdp(d.county.marriage.body)} />
+      {" "}<span class="chip doc">{d.county.marriage.chip}</span></Note>
     <Note style="margin-top:1.2rem"><strong>{d.county.careHead}.</strong>
       <span set:html={mdp(d.county.care)} />
       {" "}<span class="chip inf">{d.county.chipCare}</span></Note>

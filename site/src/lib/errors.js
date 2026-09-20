@@ -3,6 +3,39 @@
 export const OWN = [
   {
     when: "21 September 2026",
+    cause: "instrument",
+    what: "Published “None, in any spelling” for Sanigers at Chew Magna, with a control beside it, and called the parish closed. There are two of them in the parish register, and one of them answers a question this archive had open.",
+    truth:
+      "Somerset Baptisms holds CHARLES SINAGAR, baptised at Chew Magna in 1816, and WILLIAM SINEGAR, baptised there in 1822 — both children of SIMON and ELIZABETH. Elizabeth Saniger, widow, 60, born Chew Magna, was already on this site, living with her son William Saniger, 27, born Chew Magna, at Oxford Road in Bristol in 1851. The register names her husband and this archive had been calling him nobody.",
+    why: "IT WAS NEVER A SPELLING PROBLEM, which is what made it invisible. SINEGAR was one of the eight forms in use on the day that null was written, and a plain search for SINEGAR at Chew Magna returns the 1822 baptism on its own. So the query that was run cannot have been the query that was recorded — a place mistyped, a category narrowed, or a page read before it had rendered, which this archive documented as a fault the day before. And the control passed, because the control was a DIFFERENT query at a different place. A control at Berkeley proves the site is working. It cannot prove that the Chew Magna page finished loading.",
+    lesson:
+      "The tightened rule said a control must run in the same session and the same query shape and return rows. All three held here and the null was still false, because «the same shape» silently means «a different value in one field» — and the one field that was different is the one that failed. Where a query can be re-run with a WILDCARD instead of a spelling, the wildcard is the control, because it cannot miss for the reason a list can: `S*N*G*R` at Chew Magna returns four records and two of them are this name. check_controls.py now refuses any new FindMyPast null whose own text claims «any spelling» or «every spelling» without a wildcard in it, and the two rows that failed that check on the day it was written were this one and the Berkeley marriage sweep — both of which have now been re-run.",
+    href: "/chew-magna",
+  },
+  {
+    when: "21 September 2026",
+    cause: "memory",
+    what: "Recounted this surname's spelling table on one stated basis, published it as complete — «24 spellings tried, 19 productive» — and left out SANIGRE. /searched went on saying, in a row written the same day the marriage was found, that Thomas Sinegar's marriage was “Not found, in any spelling, anywhere in Gloucestershire between 1822 and 1838.”",
+    truth:
+      "SANIGRE is the form that carries it. Thomas Sanigre married Martha, Bristol, 1828 — one result in the whole of England Marriages 1538-1973, asked nationally. It is not a new find: /thomas-sinegar has carried it since 13 September and names it there in so many words, «SANIGRE, which hid her brother's marriage». The table rebuilt eight days later did not have it, and the null row beside it was never withdrawn.",
+    why: "The recount was drawn from this archive's own spelling table, and that table is a list of forms seen in BAPTISM registers. SANIGRE has never appeared in one — it returns nought in England Births & Baptisms, against 158 for SANIGER asked the same way in the same session. So the form was invisible to the source the recount used, while being the single most consequential spelling in the archive. A sweep that takes its list of questions from one set inherits that set's blind spots and reports them as completeness.",
+    lesson:
+      "The archive had already written the rule for this and then broke it in the other direction. On 20 September it refused to add SANIGOR and SYNIGAR to a table counted on a different basis, because mixing bases quietly is a fault; the fix was to recount everything on one basis. That was right, and it cost a spelling — because «one basis» silently became «one basis decides which questions get asked». SANIGRE is now in the table AT NOUGHT, with the reason beside it, which is the only honest place for a form that is empty in one set and decisive in another. The null on /searched is corrected rather than deleted, and the wording is in retired.json so it cannot return. AND THE REAL FIX IS NOT A LONGER LIST. The surname box on this site takes wildcards, and `S*N*G*` asked of Gloucestershire marriages for 1827-1829 returns the Sanigre entry in one query — along with a second thing no list would have shown, one Rodborough marriage of 1827 indexed as both SANIGER and SANIGOR. A spelling list is a guess about a clerk. A wildcard is not, and it costs only strangers, which can be read and discarded. Where a question has a place and a decade, the wildcard is now the first search here.",
+    href: "/spellings",
+  },
+  {
+    when: "21 September 2026",
+    cause: "instrument",
+    what: "Published “371 baptisms between 1565 and 1909” as the headline of the spelling table, on two pages, having counted 371 rows of a search result.",
+    truth:
+      "371 is a count of index entries. The five largest forms were read row by row on 21 September: SANIGER's 158 entries are 121 baptisms, SANIGAR's 56 are 45, SAINGER's 30 are 29, SINEGAR's 28 are 27, SINNEGAR's 26 are 26. Two more baptisms appear under two spellings each. TWO HUNDRED AND NINETY-EIGHT ENTRIES ARE 246 BAPTISMS — one row in six is a repeat.",
+    why: "The set transcribes parish registers AND bishops' transcripts, and some parishes twice over, so one christening can hold four rows: Mary, daughter of Samuell, is indexed four times at Berkeley in 1688. The page's own fine print said so — «this page counts index entries, not children» — while its lede, its dek and the sentence on /sanigers all said baptisms. The unit was correct everywhere except where it was published.",
+    lesson:
+      "The duplication is not uniform, and that is what makes the corrected number worth having rather than just smaller. It is almost entirely in SANIGER and SANIGAR, whose parishes were typed up more than once; SINNEGAR repeats not at all. So an entry count measures how often a parish was transcribed as much as how often a name was written — which is the opposite of what a spelling table is for. An earlier pass had already measured SANIGER at 125 distinct name-year-place strings; that is confirmed, and refined to 121 once Edw and Edward, Wm and William, Jos and Joseph are read as the same man. The remaining 73 entries across 20 small forms have not been counted this way yet, and the page says so.",
+    href: "/spellings",
+  },
+  {
+    when: "21 September 2026",
     cause: "memory",
     what: "Told every reader of /about — the page that asks to be trusted — that “Living people are not published at all. Not hidden, not gated — absent from the build.” And said it in the FOOTER OF ALL 874 PAGES, where it went further: “Living people are excluded from this build entirely — not their dates and not their names. That is stricter than the estate rule, which names them and gives nothing else.”",
     truth:

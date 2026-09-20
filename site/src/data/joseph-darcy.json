@@ -1,403 +1,403 @@
 {
- "found": "13 September 2026",
- "lede": "Joseph D'Arcy is the first person in this archive's English line — baptised at Portsea on 19 March 1780, son of Robert and Jean, the record that survived inside a twenty-two-month transcript. After that he disappeared. He signed his sister's marriage at Chatham in 1806 and then nothing, for a hundred and forty years of family memory. Here is the rest of him.",
- "death": {
-  "notice": "London Evening Standard, Friday 11 February 1848, page 4",
-  "text": "On the 7th inst., at Homestead, Lymington, Hants, LIEUTENANT COLONEL D'ARCY, LATE ROYAL ARTILLERY, K.L.S., in the 69th year of his age.",
-  "reg": "Death registered at Lymington, Hampshire, March quarter 1848 — volume 8, page 159"
- },
- "will": {
-  "notice": "Morning Post, Monday 3 April 1848, page 2",
-  "text": "LIEUTENANT-COLONEL JOSEPH D'ARCY, [late] of the Royal Artillery, formerly of PRIESTLANDS, NEAR LYMINGTON, but late of HOME MEAD, SOUTHAMPTON, who died on the 7th of February, at the age of 69, had EXECUTED HIS WILL IN THE MONTH OF FEBRUARY, 1844, leaving …",
-  "cut": "The article goes on to summarise what he left, and the digitised text stops there. The will itself was proved in 1848 and is at Kew."
- },
- "kls": {
-  "head": "And three letters after his name",
-  "body": "One notice gives him as “Lieutenant Colonel D'Arcy, late Royal Artillery, K.L.S.” — Knight of the Royal Order of the Lion and Sun, a Persian decoration. It was given to British officers who served on the missions to the Shah's army in the 1810s and 1820s.",
-  "careful": "This archive has not yet traced his Persian service, and will not assert it from three letters. What the letters establish is that he held a foreign order, which for a Royal Artillery officer of that generation points one way.",
-  "gazetted": {
-   "head": "And the decoration is now gazetted, not inferred",
-   "text": "“The Prince Regent has given permission to LIEUT.-COL. D'ARCY to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred on him by the KING OF PERSIA; but not to assume any style, appellation, rank, precedence …”",
-   "src": "London Gazette, Tuesday 30 June 1818 — carried within the week by the London Moderator (1 July), the Mirror of the Times (4 July), the Englishman and Johnson's Sunday Monitor (5 July) and the Maidstone Journal (7 July).",
-   "means": "This page said the archive “has not yet traced his Persian service, and will not assert it from three letters after his name”. It is traced. The three letters are a Crown grant of permission, published in the official gazette, and they date the service to before the middle of 1818 — which fits the obituary's five years with Abbas Mirza and the newspaper reports of English officers wintering with the Prince's newly raised corps, carried in the Hampshire Chronicle as early as October 1812.",
-   "chip": "documented"
-  }
- },
- "career": [
-  [
-   "19 March 1780",
-   "Baptised at Portsea St Mary, son of ROBERT and JEAN"
-  ],
-  [
-   "1793",
-   "“Commenced his military career at the taking of St Domingo”"
-  ],
-  [
-   "1795",
-   "In the Royal Artillery officers' list"
-  ],
-  [
-   "1798",
-   "Army List"
-  ],
-  [
-   "1806",
-   "Witness at his sister Margarett Maria Isabella's marriage at Chatham"
-  ],
-  [
-   "1809",
-   "At the taking of Walcheren; and served in Sicily"
-  ],
-  [
-   "1810s–1820s",
-   "FIVE YEARS IN PERSIA in the service of Prince Abbas Mirza — and Knight of the Lion and Sun"
-  ],
-  [
-   "1840–1844",
-   "Still in the Army Lists"
-  ],
-  [
-   "February 1844",
-   "Executes his will, leaving his property to his wife Katherine"
-  ],
-  [
-   "7 February 1848",
-   "Dies at Home Mead, Lymington, in his 68th year"
-  ]
- ],
- "son": "And he left at least one son. The Cork Daily Herald of 3 October 1863 carries a marriage at Lymington of a D'Arcy “son of the late Colonel D'Arcy, R.A.” — the same town, fifteen years on. The OCR loses the groom's forename.",
- "age": "Two wrinkles, both stated rather than smoothed. The papers cannot agree whether he died in his 68th or 69th year — 68th fits the Portsea baptism of March 1780 almost exactly. And if he began at St Domingo in 1793 he was thirteen, which is early even for that army. A boy of thirteen could go as a cadet or a volunteer and be commissioned at fifteen, which is what the Royal Artillery list showing him from 1795 would then mean. It is also possible the obituarist rounded a date fifty-five years old.",
- "matters": "The archive now holds Robert D'Arcy's marriage, his career, his death and his funeral; his son George Pitt D'Arcy's marriage and Irish service; and his son Joseph's whole life — Saint-Domingue, Sicily, Walcheren, five years in Persia with the Shah's son, a Persian knighthood, a house in Hampshire and a widow named Katherine. Three years ago the family tree had a name and a rumour of Yorkshire.",
- "obit": {
-  "papers": "Morning Herald (London), 29 February 1848, p.4 · Saunders's News-Letter (Dublin), 2 March 1848 · Lincolnshire Chronicle, 3 March 1848, p.6",
-  "text": "Died, on the 7th of February, at his residence, HOME MEAD, LYMINGTON, HAMPSHIRE, in his 68th year, LIEUT. COLONEL D'ARCY, LATE OF THE ROYAL ARTILLERY. He commenced his military career at THE TAKING OF ST. DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia, who for …",
-  "note": "Three papers carried the same notice and the digitised text breaks in a different place in each; the wording above is assembled from all three, with the breaks marked."
- },
- "persia": {
-  "head": "Five years in Persia",
-  "body": "ABBAS MIRZA was the Qajar crown prince, and in the 1810s and 1820s he was rebuilding the Persian army on a European model with British officers to help him. That is what Joseph D'Arcy was doing there, and it is why a separate notice gives him as K.L.S. — Knight of the Royal Order of the Lion and the Sun, the Shah's decoration.",
-  "careful": "The archive had the service from an obituary and the order from a death notice, which corroborated each other without either being official. It now has the army's own record: the Royal Military Calendar of 1820 gives his seven commissions and states the decoration was “for his conduct, while in the actual service of the King of Persia”. What is still missing is the YEARS he was there and the name of the prince he served — Abbas Mirza is this archive's identification, not the Calendar's."
- },
- "katherine": {
-  "head": "And a wife named Katherine",
-  "body": "The Lady's Newspaper of 8 April 1848 carried the same will summary as the Morning Post and got a little further before the scan fails: he left his “property to his wife, KATHE[RINE] D'ARCY, to which she h[as] …”",
-  "means": "A name this archive did not have. Joseph D'Arcy married, and his widow outlived him."
- },
- "census": {
-  "ref": "1841 census · PRIESTLANDS, Milford, Lymington, Hampshire · HO107/393 book 4, folio 3, page 1, schedule 352",
-  "note": "Twenty people under one roof: the family, a brother, a Mrs Pitt, and eleven servants.",
-  "rows": [
-   [
-    "Joseph",
-    "Darcy",
-    "M",
-    61,
-    1780,
-    "HAMPSHIRE",
-    "the Colonel himself"
-   ],
-   [
-    "Catherine",
-    "Darcy",
-    "F",
-    42,
-    1799,
-    "—",
-    "his wife — the “Kathe[rine]” of the will"
-   ],
-   [
-    "Richard",
-    "Darcy",
-    "M",
-    57,
-    1784,
-    "—",
-    "of Joseph's own generation, in Joseph's house"
-   ],
-   [
-    "Catherine",
-    "Darcy",
-    "F",
-    9,
-    1832,
-    "Hampshire",
-    ""
-   ],
-   [
-    "John",
-    "Darcy",
-    "M",
-    8,
-    1833,
-    "Hampshire",
-    ""
-   ],
-   [
-    "Josephine",
-    "Darcy",
-    "F",
-    6,
-    1835,
-    "Hampshire",
-    ""
-   ],
-   [
-    "Frank",
-    "Darcy",
-    "M",
-    2,
-    1839,
-    "—",
-    ""
-   ],
-   [
-    "Joseph",
-    "Darcy",
-    "M",
-    0,
-    1841,
-    "Hampshire",
-    "born in the census year"
-   ],
-   [
-    "Elizabeth",
-    "PITT",
-    "F",
-    55,
-    1786,
-    "—",
-    "and this is the surname that has been sitting in this family's names for two centuries"
-   ]
-  ],
-  "servants": "Then eleven more: Laura Dillard, Joseph Hyde, Charles Hamby, Thomas Williams, Mary Finch, Jane Jennings, Ann Russ, Harriet Marshall, Rachael Barter, Loise Croucher and Jane Viney. A household of twenty with eleven servants is a gentleman's establishment, not a half-pay officer's cottage."
- },
- "hampshire": {
-  "head": "Born in Hampshire",
-  "body": "The 1841 census gives Joseph's birth county as HAMPSHIRE and his age as 61, which is a birth in 1780. Portsea is in Hampshire. This is independent corroboration of the baptism of 19 March 1780 — the entry that survives only because it falls inside a twenty-two-month transcript — from a census taken sixty-one years later.",
-  "chip": "documented twice"
- },
- "pitt": {
-  "head": "Elizabeth Pitt, aged 55",
-  "body": "Living in the house in 1841, between the youngest child and the servants, is an ELIZABETH PITT, born about 1786. This archive's line runs through GEORGE PITT D'ARCY — the name recurs for four generations, down to a George Pitt D'Arcy born at Brisbane in 1864 — and nobody has ever known where the Pitt came from.",
-  "careful": "A census does not say who she was. She is not called a relative, because the 1841 census does not record relationships at all. What can be said is that a woman named Pitt was living in the household of Robert D'Arcy's son in 1841, and that Robert D'Arcy's other son had carried Pitt as a middle name since 1783. That is a connection worth chasing and it is not yet an explanation.",
-  "chip": "a lead, and a good one",
-  "tested": "Tested and still open. Elizabeth Pitt's death was registered at Lymington in 1851, so she stayed in the district after Joseph died — but no newspaper death notice for her survives to say what she was to the family, and the 1841 census records no relationships. The Pitt question is exactly where it was, with one more fact around it."
- },
- "richard": "And a RICHARD DARCY, aged 57, born about 1784 — in the house, of Joseph's own generation and a year younger than George Pitt D'Arcy. The archive has never heard of him. Robert and Jean married at Portsea in June 1779 and baptised Joseph there in March 1780; a Richard of 1784 fits that family exactly, and the Portsea transcript stops in 1782 so his baptism would never have been found in it. Searched for him across Hampshire in every record type and found nothing further: he is a name, an age and an address, in his brother's house.",
- "after": {
-  "head": "After him",
-  "rows": [
-   [
-    "October 1848",
-    "PRIESTLANDS is broken into lots and advertised for sale — “Lot 5, Higher Priestlands; Lot 6, Lower Priestlands” — Exeter Flying Post, 19 October 1848"
-   ],
-   [
-    "1851",
-    "ELIZABETH PITT dies at Lymington, her death registered in the district. She had not moved away"
-   ],
-   [
-    "21 February 1852",
-    "“Mrs. D'Arcy … 5 0” subscribes to a Lymington public fund got up by the Mayor, among the local clergy and gentry — Hampshire Advertiser. The widow was still in the town four years on"
-   ]
-  ],
-  "note": "She is not in the 1851 census under any Darcy spelling in Hampshire, which is a gap in the index rather than a departure — the subscription list puts her there the following February."
- },
- "forward": {
-  "head": "The five children, and what became of them",
-  "body": "Joseph's will of 1844 left his property to his wife and FIVE CHILDREN, and this archive has never been able to name them. All five are baptised at MILFORD, Hampshire, to JOSEPH and KATHERINE LUCY ELIZA — and the register calls him “Lt Col RA of MILFORD HOUSE”, an address this archive did not have.",
-  "kids": [
-   [
-    "CATHERINE LUCY JANE D'ARCY",
-    "baptised Milford, 23 January 1832",
-    "Aged 9 at Priestlands in 1841. A Katherine Lucy Elizabeth D'Arcy dies at Lymington in 1863 — the mother, not the daughter, on the dates."
-   ],
-   [
-    "JOHN HYDE D'ARCY",
-    "baptised Milford, 30 May 1833",
-    "HARROW SCHOOL — he is in the Harrow School Register 1801–1893. DIED AT SOUTHAMPTON, 28 JUNE 1852, AGED NINETEEN, and was buried there. His death was carried as far as the Catholic Telegraph in Dublin."
-   ],
-   [
-    "JOSEPHINE D'ARCY",
-    "baptised Milford, 1836",
-    "Aged 6 at Priestlands in 1841."
-   ],
-   [
-    "FRANK HYDE D'ARCY",
-    "baptised Milford, 22 June 1839 — BORN 14 DECEMBER 1838 AT MADEIRA",
-    "Married ANNA MARIA SIMPSON at Lymington, 29 September 1863. DIED AT WORCESTER, 15 JUNE 1868, AGED TWENTY-NINE, and was brought home to be buried at PENNINGTON on the 20th."
-   ],
-   [
-    "JOSEPH WILLIAM D'ARCY",
-    "baptised Milford, 6 July 1841",
-    "Born in the census year, and an infant in the Priestlands household."
-   ]
-  ],
-  "madeira": "The note against Frank's baptism is four words long and it opens a country: “bn 14 Dec 1838 in MADEIRA”. Joseph D'Arcy was not at Milford in the winter of 1838 — he was on a Portuguese island in the Atlantic, where consumptive and half-pay Englishmen wintered, and his son was born there. NOTHING IN THIS ARCHIVE KNEW THAT.",
-  "grandson": {
-   "head": "And a grandson, baptised five months after his father died",
-   "body": "FRANK HAMILTON HYDE D'ARCY, baptised at CROYDON COMMON, ST JAMES, Surrey, on 26 NOVEMBER 1868 — father FRANK HYDE, occupation “GENTLEMAN”, mother ANNA MARIA, of ST JAMES ROAD, Croydon. His father had died at Worcester on 15 June. He died at Chelmsford, Essex, in 1910.",
-   "means": "Four generations of this family in England, from a major-general's son baptised at Portsea in 1780 to a boy christened at Croydon in 1868 — and until today the archive had the first and the last of them and nothing between.",
-   "chip": "documented"
-  },
-  "means": "None of these five is on the family tree, so none of them belongs in the pedigree — they go on the new generations page. Two of the three sons died young: John at nineteen in 1852, Frank at twenty-nine in 1868. What became of Joseph William, Catherine Lucy Jane and Josephine is not yet known.",
-  "chip": "documented",
-  "rows": [
-   [
-    "23 January 1832",
-    "CATHERINE LUCY JANE baptised at Milford — father “Lt Col RA of Milford House”"
-   ],
-   [
-    "30 May 1833",
-    "JOHN HYDE baptised at Milford"
-   ],
-   [
-    "1836",
-    "JOSEPHINE baptised at Milford"
-   ],
-   [
-    "14 December 1838",
-    "FRANK HYDE born AT MADEIRA"
-   ],
-   [
-    "22 June 1839",
-    "FRANK HYDE baptised at Milford"
-   ],
-   [
-    "6 July 1841",
-    "JOSEPH WILLIAM baptised at Milford"
-   ],
-   [
-    "7 February 1848",
-    "JOSEPH D'ARCY dies at Home Mead, Lymington"
-   ],
-   [
-    "28 June 1852",
-    "JOHN HYDE dies at Southampton, aged 19"
-   ],
-   [
-    "1863",
-    "KATHERINE LUCY ELIZABETH D'ARCY dies at Lymington"
-   ],
-   [
-    "29 September 1863",
-    "FRANK HYDE marries ANNA MARIA SIMPSON at Lymington"
-   ],
-   [
-    "15 June 1868",
-    "FRANK HYDE dies at Worcester, aged 29; buried Pennington on the 20th"
-   ],
-   [
-    "26 November 1868",
-    "FRANK HAMILTON HYDE baptised at Croydon, his father five months dead"
-   ],
-   [
-    "1910",
-    "FRANK HAMILTON HYDE dies at Chelmsford, Essex"
-   ]
-  ]
- },
- "duty": {
-  "head": "And the will has a second document",
-  "body": "JOSEPH D'ARCY of Lymington, Hampshire, grant year 1848, court “PCC and Country Courts” — Index to Death Duty Registers 1796-1903, The National Archives IR 27/284. The Death Duty register behind that index (IR 26) states the value of the estate and names the legatees and executors, often in more detail than the will itself. That is now two documents at Kew rather than one, and the index reference for finding them."
- },
- "ladycatherine": {
-  "head": "Joseph D'Arcy married the daughter of an earl, and had a family by her this archive never knew about",
-  "lede": "The five Milford children are his SECOND family. Two death notices, five years apart, name a first one — and name their mother.",
-  "notices": [
-   [
-    "Saint James's Chronicle, Saturday 23 May 1857, page 1",
-    "“May 13, at St. Helier's, Jersey, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33.”"
-   ],
-   [
-    "London Evening Standard and Morning Herald, both Wednesday 25 June 1862",
-    "“D'ARCY. — On the 14th inst., at Bangor, North Wales, CAPTAIN ROBERT D'ARCY, LATE OF THE INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY, of the ROYAL ARTILLERY, and LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR.”"
-   ]
-  ],
-  "who": "“The late Lieut. Col. D'Arcy, Royal Artillery” is Joseph, who died at Lymington in 1848. The family tree has always given him a wife CATHERINE GEORGIANA WEST, married at BATH in NOVEMBER 1817, and this archive has never looked at the name. WEST is the family name of the EARLS DE LA WARR. Two newspapers, independently, call her LADY CATHERINE and make her a peer's daughter and a peer's sister.",
-  "sons": [
-   [
-    "CAPTAIN ROBERT D'ARCY",
-    "late of the Honourable East India Company's Army",
-    "Died at BANGOR, North Wales, 14 June 1862. Named for his grandfather the Major-General."
-   ],
-   [
-    "RICHARD D'ARCY",
-    "described as the THIRD SON",
-    "Died at ST HELIER, JERSEY, 13 May 1857, AGED 33 — so born about 1824."
-   ]
-  ],
-  "means": "“Third son” is the load-bearing phrase. If Richard was the third, there was a first and a second, and Robert is one of them. So Joseph D'Arcy had AT LEAST THREE SONS by Lady Catherine before he married Katherine Lucy Eliza Hyde in November 1830 and had five more children at Milford. This archive credited him with five children this morning. It is now at least eight, across two marriages, and the first marriage was into the peerage.",
-  "careful": "What is documented is what the notices say: two sons, their mother's style and her brother's title, and Richard's place in the order. WHICH Earl De La Warr, and therefore Lady Catherine's own parentage, is not stated in either notice and is not asserted here — the Earl who was “present” in 1857 and 1862 is a fact about the peerage, not about this family, and it belongs in a reference book this archive has not opened. The first and second sons are unnamed. And when Lady Catherine died is unknown, beyond its being before November 1830.",
-  "chip": "documented, and deliberately unfinished",
+  "found": "13 September 2026",
+  "lede": "Joseph D'Arcy is the first person in this archive's English line — baptised at Portsea on 19 March 1780, son of Robert and Jean, the record that survived inside a twenty-two-month transcript. After that he disappeared. He signed his sister's marriage at Chatham in 1806 and then nothing, for a hundred and forty years of family memory. Here is the rest of him.",
   "death": {
-   "head": "And she is buried, with a date and an age",
-   "text": "CATHERINE GEORGIANA DARCY, aged 36, OF BATH · buried 22 MARCH 1824 · BOURN, Cambridgeshire",
-   "src": "Cambridgeshire Burials, transcribed by the Cambridgeshire and Huntingdonshire Family History Society",
-   "means": "Three things fall into place. THE AGE: 36 in 1824 gives a birth about 1788, which makes her twenty-nine at the Bath marriage of November 1817. THE RESIDENCE: “OF BATH” — the town she married in, seven years later. AND THE DATE: she died in 1824, and Joseph married Katherine Lucy Eliza Hyde in November 1830, so the six-year gap between his two families is now measured rather than assumed.",
-   "careful": "One inference, and it is only that. Her son RICHARD, the third son, was 33 when he died in May 1857, which puts his birth about 1824 — the year his mother died at thirty-six. A death in childbed would explain both, and nothing here says so. WHY she is buried at Bourn in Cambridgeshire, a hundred and fifty miles from Bath and further still from Lymington, is not explained either.",
-   "chip": "documented"
-  }
- },
- "rmc": {
-  "head": "The service record, at last",
-  "lede": "This page has said for weeks that the archive “has not yet seen a service record, and does not know the years”. It has one now. The Royal Military Calendar of 1820 — the army's own published record of its serving officers — carries him among the Lieutenant-Colonels at entry 1667.",
-  "quote": "1667. Lieut.-Col. Joseph D'Arcy. Second Lieut. Rl Artillery, 6th March, 1795; First Lieut. 29th June, 1796; Capt.-Lieut. 12th Sept. 1803; Second Capt. 19th July, 1804; Capt. 24th Oct. 1806; brevet Maj. 25th Nov. 1813; and L.-Col. 31st Dec. 1816.",
-  "chip": "documented",
-  "rows": [
-   [
-    "6 March 1795",
-    "Second Lieutenant, Royal Artillery",
-    "He was fifteen — baptised at Portsea in March 1780"
-   ],
-   [
-    "29 June 1796",
-    "First Lieutenant",
-    ""
-   ],
-   [
-    "12 September 1803",
-    "Captain-Lieutenant",
-    ""
-   ],
-   [
-    "19 July 1804",
-    "Second Captain",
-    ""
-   ],
-   [
-    "24 October 1806",
-    "Captain",
-    ""
-   ],
-   [
-    "25 November 1813",
-    "Brevet Major",
-    ""
-   ],
-   [
-    "31 December 1816",
-    "Lieutenant-Colonel",
-    "The rank he held at his death in 1848, and the one every newspaper gives him"
-   ]
+    "notice": "London Evening Standard, Friday 11 February 1848, page 4",
+    "text": "On the 7th inst., at Homestead, Lymington, Hants, LIEUTENANT COLONEL D'ARCY, LATE ROYAL ARTILLERY, K.L.S., in the 69th year of his age.",
+    "reg": "Death registered at Lymington, Hampshire, March quarter 1848 — volume 8, page 159"
+  },
+  "will": {
+    "notice": "Morning Post, Monday 3 April 1848, page 2",
+    "text": "LIEUTENANT-COLONEL JOSEPH D'ARCY, [late] of the Royal Artillery, formerly of PRIESTLANDS, NEAR LYMINGTON, but late of HOME MEAD, SOUTHAMPTON, who died on the 7th of February, at the age of 69, had EXECUTED HIS WILL IN THE MONTH OF FEBRUARY, 1844, leaving …",
+    "cut": "The article goes on to summarise what he left, and the digitised text stops there. The will itself was proved in 1848 and is at Kew."
+  },
+  "kls": {
+    "head": "And three letters after his name",
+    "body": "One notice gives him as “Lieutenant Colonel D'Arcy, late Royal Artillery, K.L.S.” — Knight of the Royal Order of the Lion and Sun, a Persian decoration. It was given to British officers who served on the missions to the Shah's army in the 1810s and 1820s.",
+    "careful": "This archive has not yet traced his Persian service, and will not assert it from three letters. What the letters establish is that he held a foreign order, which for a Royal Artillery officer of that generation points one way.",
+    "gazetted": {
+      "head": "And the decoration is now gazetted, not inferred",
+      "text": "“The Prince Regent has given permission to LIEUT.-COL. D'ARCY to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred on him by the KING OF PERSIA; but not to assume any style, appellation, rank, precedence …”",
+      "src": "London Gazette, Tuesday 30 June 1818 — carried within the week by the London Moderator (1 July), the Mirror of the Times (4 July), the Englishman and Johnson's Sunday Monitor (5 July) and the Maidstone Journal (7 July).",
+      "means": "This page said the archive “has not yet traced his Persian service, and will not assert it from three letters after his name”. It is traced. The three letters are a Crown grant of permission, published in the official gazette, and they date the service to before the middle of 1818 — which fits the obituary's five years with Abbas Mirza and the newspaper reports of English officers wintering with the Prince's newly raised corps, carried in the Hampshire Chronicle as early as October 1812.",
+      "chip": "documented"
+    }
+  },
+  "career": [
+    [
+      "19 March 1780",
+      "Baptised at Portsea St Mary, son of ROBERT and JEAN"
+    ],
+    [
+      "1793",
+      "“Commenced his military career at the taking of St Domingo”"
+    ],
+    [
+      "1795",
+      "In the Royal Artillery officers' list"
+    ],
+    [
+      "1798",
+      "Army List"
+    ],
+    [
+      "1806",
+      "Witness at his sister Margarett Maria Isabella's marriage at Chatham"
+    ],
+    [
+      "1809",
+      "At the taking of Walcheren; and served in Sicily"
+    ],
+    [
+      "1810s–1820s",
+      "FIVE YEARS IN PERSIA in the service of Prince Abbas Mirza — and Knight of the Lion and Sun"
+    ],
+    [
+      "1840–1844",
+      "Still in the Army Lists"
+    ],
+    [
+      "February 1844",
+      "Executes his will, leaving his property to his wife Katherine"
+    ],
+    [
+      "7 February 1848",
+      "Dies at Home Mead, Lymington, in his 68th year"
+    ]
   ],
-  "persiaHead": "And Persia stops being an inference",
-  "persia": "The Calendar does not merely list the decoration. It says why he had it: “L.-Col. D. received, in 1818, the insignia of the 2d class of the PERSIAN ORDER OF THE LION AND SUN, FOR HIS CONDUCT, WHILE IN THE ACTUAL SERVICE OF THE KING OF PERSIA.”",
-  "persiaMeans": "This archive had the Persian service from an obituary and the order from a death notice, and graded the service as inferred because the two merely corroborated one another. The army's own book, printed in 1820 while he was alive and serving, states the service outright and in those words — in the ACTUAL SERVICE of the King of Persia. The chip on this page changes from inferred to documented.",
-  "chipPersia": "documented — the army's own record, printed in his lifetime",
-  "careful": "What it still does not give is the years he was there, or the name of the prince he served. The obituary's Abbas Mirza remains an identification this archive has made, not one the Calendar makes.",
-  "where": "Read 15 September 2026 in the free full text of the 1820 third edition, volume V, on the Internet Archive."
- },
- "gm": {
-  "head": "And the magazine of record did notice him",
-  "lede": "The Gentleman's Magazine for March 1848, page 328, in its county list of deaths for Hampshire. A fourth independent notice, and the only one from a national magazine rather than a newspaper.",
-  "quote": "Feb. 7. At Homestead, Lymington, aged 68, Lieut.-Col. Joseph D'Arcy, late of the Royal Art. K.L.S. He entered as 2d Lieut. 1795, attained the brevet rank of Major 1813, and Lieut.-Col. 1816. In 1818 he received permission to accept the second class of the order of the Lion and Sun, conferred for his conduct when in the actual service of the Shah of Persia.",
-  "chip": "documented",
-  "ageHead": "It settles the age two to one",
-  "age": "Three sources, three phrasings. The London Evening Standard says “in the 69th year of his age”, which means he had turned 68. The Morning Herald says “in his 68th year”, which means he had turned 67. The Gentleman's Magazine says flatly “AGED 68”. Two of the three agree, and they agree with the baptism: a man baptised at Portsea on 19 March 1780 and dying on 7 February 1848 was 67 and eleven months — so “aged 68” is the rounding and “in his 68th year” is the exact one.",
-  "ageMeans": "The three notices do not quite agree, and saying so is worth more than picking one. What they jointly rule out is any birth much before 1779, which is the only thing this archive needed them for.",
-  "chipAge": "corroboration, with the disagreement stated",
-  "shahHead": "Shah, not King",
-  "shah": "The Gazette of 1818 says the order was “conferred on him by the KING OF PERSIA”. The Royal Military Calendar of 1820 says “in the actual service of the King of Persia”. The Gentleman's Magazine of 1848 says “in the actual service of the SHAH of Persia”. The same phrase, three times over thirty years, with one word changing — which is how a fact travels rather than how it is invented.",
-  "where": "Read 15 September 2026 in the full text of all twelve monthly issues of 1848 on the Internet Archive."
- }
+  "son": "And he left at least one son. The Cork Daily Herald of 3 October 1863 carries a marriage at Lymington of a D'Arcy “son of the late Colonel D'Arcy, R.A.” — the same town, fifteen years on. The OCR loses the groom's forename.",
+  "age": "Two wrinkles, both stated rather than smoothed. The papers cannot agree whether he died in his 68th or 69th year — 68th fits the Portsea baptism of March 1780 almost exactly. And if he began at St Domingo in 1793 he was thirteen, which is early even for that army. A boy of thirteen could go as a cadet or a volunteer and be commissioned at fifteen, which is what the Royal Artillery list showing him from 1795 would then mean. It is also possible the obituarist rounded a date fifty-five years old.",
+  "matters": "The archive now holds Robert D'Arcy's marriage, his career, his death and his funeral; his son George Pitt D'Arcy's marriage and Irish service; and his son Joseph's whole life — Saint-Domingue, Sicily, Walcheren, five years in Persia with the Shah's son, a Persian knighthood, a house in Hampshire and a widow named Katherine. Three years ago the family tree had a name and a rumour of Yorkshire.",
+  "obit": {
+    "papers": "Morning Herald (London), 29 February 1848, p.4 · Saunders's News-Letter (Dublin), 2 March 1848 · Lincolnshire Chronicle, 3 March 1848, p.6",
+    "text": "Died, on the 7th of February, at his residence, HOME MEAD, LYMINGTON, HAMPSHIRE, in his 68th year, LIEUT. COLONEL D'ARCY, LATE OF THE ROYAL ARTILLERY. He commenced his military career at THE TAKING OF ST. DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia, who for …",
+    "note": "Three papers carried the same notice and the digitised text breaks in a different place in each; the wording above is assembled from all three, with the breaks marked."
+  },
+  "persia": {
+    "head": "Five years in Persia",
+    "body": "ABBAS MIRZA was the Qajar crown prince, and in the 1810s and 1820s he was rebuilding the Persian army on a European model with British officers to help him. That is what Joseph D'Arcy was doing there, and it is why a separate notice gives him as K.L.S. — Knight of the Royal Order of the Lion and the Sun, the Shah's decoration.",
+    "careful": "The archive had the service from an obituary and the order from a death notice, which corroborated each other without either being official. It now has the army's own record: the Royal Military Calendar of 1820 gives his seven commissions and states the decoration was “for his conduct, while in the actual service of the King of Persia”. What is still missing is the YEARS he was there and the name of the prince he served — Abbas Mirza is this archive's identification, not the Calendar's."
+  },
+  "katherine": {
+    "head": "And a wife named Katherine",
+    "body": "The Lady's Newspaper of 8 April 1848 carried the same will summary as the Morning Post and got a little further before the scan fails: he left his “property to his wife, KATHE[RINE] D'ARCY, to which she h[as] …”",
+    "means": "A name this archive did not have. Joseph D'Arcy married, and his widow outlived him."
+  },
+  "census": {
+    "ref": "1841 census · PRIESTLANDS, Milford, Lymington, Hampshire · HO107/393 book 4, folio 3, page 1, schedule 352",
+    "note": "Twenty people under one roof: the family, a brother, a Mrs Pitt, and eleven servants.",
+    "rows": [
+      [
+        "Joseph",
+        "Darcy",
+        "M",
+        61,
+        1780,
+        "HAMPSHIRE",
+        "the Colonel himself"
+      ],
+      [
+        "Catherine",
+        "Darcy",
+        "F",
+        42,
+        1799,
+        "—",
+        "his wife — the “Kathe[rine]” of the will"
+      ],
+      [
+        "Richard",
+        "Darcy",
+        "M",
+        57,
+        1784,
+        "—",
+        "of Joseph's own generation, in Joseph's house"
+      ],
+      [
+        "Catherine",
+        "Darcy",
+        "F",
+        9,
+        1832,
+        "Hampshire",
+        ""
+      ],
+      [
+        "John",
+        "Darcy",
+        "M",
+        8,
+        1833,
+        "Hampshire",
+        ""
+      ],
+      [
+        "Josephine",
+        "Darcy",
+        "F",
+        6,
+        1835,
+        "Hampshire",
+        ""
+      ],
+      [
+        "Frank",
+        "Darcy",
+        "M",
+        2,
+        1839,
+        "—",
+        ""
+      ],
+      [
+        "Joseph",
+        "Darcy",
+        "M",
+        0,
+        1841,
+        "Hampshire",
+        "born in the census year"
+      ],
+      [
+        "Elizabeth",
+        "PITT",
+        "F",
+        55,
+        1786,
+        "—",
+        "and this is the surname that has been sitting in this family's names for two centuries"
+      ]
+    ],
+    "servants": "Then eleven more: Laura Dillard, Joseph Hyde, Charles Hamby, Thomas Williams, Mary Finch, Jane Jennings, Ann Russ, Harriet Marshall, Rachael Barter, Loise Croucher and Jane Viney. A household of twenty with eleven servants is a gentleman's establishment, not a half-pay officer's cottage."
+  },
+  "hampshire": {
+    "head": "Born in Hampshire",
+    "body": "The 1841 census gives Joseph's birth county as HAMPSHIRE and his age as 61, which is a birth in 1780. Portsea is in Hampshire. This is independent corroboration of the baptism of 19 March 1780 — the entry that survives only because it falls inside a twenty-two-month transcript — from a census taken sixty-one years later.",
+    "chip": "documented twice"
+  },
+  "pitt": {
+    "head": "Elizabeth Pitt, aged 55",
+    "body": "Living in the house in 1841, between the youngest child and the servants, is an ELIZABETH PITT, born about 1786. This archive's line runs through GEORGE PITT D'ARCY — the name recurs for four generations, down to a George Pitt D'Arcy born at Brisbane in 1864 — and nobody has ever known where the Pitt came from.",
+    "careful": "A census does not say who she was. She is not called a relative, because the 1841 census does not record relationships at all. What can be said is that a woman named Pitt was living in the household of Robert D'Arcy's son in 1841, and that Robert D'Arcy's other son had carried Pitt as a middle name since 1783. That is a connection worth chasing and it is not yet an explanation.",
+    "chip": "a lead, and thinner than it was",
+    "tested": "Tested twice, and the second test made it weaker rather than stronger. Elizabeth Pitt's death was registered at **Lymington in the first quarter of 1851**, which was read here as meaning she stayed in the district after Joseph died and so belonged to the household rather than visiting it. **On 21 September the same index was asked about the surname instead of the woman: 21 PITT deaths were registered at Lymington between 1820 and 1900** — Catherine, Catherine Maria, James, John, John Daniel, Martha, Mary and the rest. Pitt is an ordinary surname in that corner of Hampshire. A Pitt dying at Lymington is what Lymington does, so her death there says nothing about who she was to this family. **What survives is the census and only the census**: a woman named Pitt in the house of Robert D'Arcy's son, while Robert's other son had carried Pitt as a middle name since 1783. No newspaper notice for her survives; the 1841 census records no relationships. The question needs her death certificate, or a will."
+  },
+  "richard": "And a RICHARD DARCY, aged 57, born about 1784 — in the house, of Joseph's own generation and a year younger than George Pitt D'Arcy. The archive has never heard of him. Robert and Jean married at Portsea in June 1779 and baptised Joseph there in March 1780; a Richard of 1784 fits that family exactly, and the Portsea transcript stops in 1782 so his baptism would never have been found in it. Searched for him across Hampshire in every record type and found nothing further: he is a name, an age and an address, in his brother's house.",
+  "after": {
+    "head": "After him",
+    "rows": [
+      [
+        "October 1848",
+        "PRIESTLANDS is broken into lots and advertised for sale — “Lot 5, Higher Priestlands; Lot 6, Lower Priestlands” — Exeter Flying Post, 19 October 1848"
+      ],
+      [
+        "1851",
+        "ELIZABETH PITT dies at Lymington, her death registered in the district. She had not moved away"
+      ],
+      [
+        "21 February 1852",
+        "“Mrs. D'Arcy … 5 0” subscribes to a Lymington public fund got up by the Mayor, among the local clergy and gentry — Hampshire Advertiser. The widow was still in the town four years on"
+      ]
+    ],
+    "note": "She is not in the 1851 census under any Darcy spelling in Hampshire, which is a gap in the index rather than a departure — the subscription list puts her there the following February."
+  },
+  "forward": {
+    "head": "The five children, and what became of them",
+    "body": "Joseph's will of 1844 left his property to his wife and FIVE CHILDREN, and this archive has never been able to name them. All five are baptised at MILFORD, Hampshire, to JOSEPH and KATHERINE LUCY ELIZA — and the register calls him “Lt Col RA of MILFORD HOUSE”, an address this archive did not have.",
+    "kids": [
+      [
+        "CATHERINE LUCY JANE D'ARCY",
+        "baptised Milford, 23 January 1832",
+        "Aged 9 at Priestlands in 1841. A Katherine Lucy Elizabeth D'Arcy dies at Lymington in 1863 — the mother, not the daughter, on the dates."
+      ],
+      [
+        "JOHN HYDE D'ARCY",
+        "baptised Milford, 30 May 1833",
+        "HARROW SCHOOL — he is in the Harrow School Register 1801–1893. DIED AT SOUTHAMPTON, 28 JUNE 1852, AGED NINETEEN, and was buried there. His death was carried as far as the Catholic Telegraph in Dublin."
+      ],
+      [
+        "JOSEPHINE D'ARCY",
+        "baptised Milford, 1836",
+        "Aged 6 at Priestlands in 1841."
+      ],
+      [
+        "FRANK HYDE D'ARCY",
+        "baptised Milford, 22 June 1839 — BORN 14 DECEMBER 1838 AT MADEIRA",
+        "Married ANNA MARIA SIMPSON at Lymington, 29 September 1863. DIED AT WORCESTER, 15 JUNE 1868, AGED TWENTY-NINE, and was brought home to be buried at PENNINGTON on the 20th."
+      ],
+      [
+        "JOSEPH WILLIAM D'ARCY",
+        "baptised Milford, 6 July 1841",
+        "Born in the census year, and an infant in the Priestlands household."
+      ]
+    ],
+    "madeira": "The note against Frank's baptism is four words long and it opens a country: “bn 14 Dec 1838 in MADEIRA”. Joseph D'Arcy was not at Milford in the winter of 1838 — he was on a Portuguese island in the Atlantic, where consumptive and half-pay Englishmen wintered, and his son was born there. NOTHING IN THIS ARCHIVE KNEW THAT.",
+    "grandson": {
+      "head": "And a grandson, baptised five months after his father died",
+      "body": "FRANK HAMILTON HYDE D'ARCY, baptised at CROYDON COMMON, ST JAMES, Surrey, on 26 NOVEMBER 1868 — father FRANK HYDE, occupation “GENTLEMAN”, mother ANNA MARIA, of ST JAMES ROAD, Croydon. His father had died at Worcester on 15 June. He died at Chelmsford, Essex, in 1910.",
+      "means": "Four generations of this family in England, from a major-general's son baptised at Portsea in 1780 to a boy christened at Croydon in 1868 — and until today the archive had the first and the last of them and nothing between.",
+      "chip": "documented"
+    },
+    "means": "None of these five is on the family tree, so none of them belongs in the pedigree — they go on the new generations page. Two of the three sons died young: John at nineteen in 1852, Frank at twenty-nine in 1868. What became of Joseph William, Catherine Lucy Jane and Josephine is not yet known.",
+    "chip": "documented",
+    "rows": [
+      [
+        "23 January 1832",
+        "CATHERINE LUCY JANE baptised at Milford — father “Lt Col RA of Milford House”"
+      ],
+      [
+        "30 May 1833",
+        "JOHN HYDE baptised at Milford"
+      ],
+      [
+        "1836",
+        "JOSEPHINE baptised at Milford"
+      ],
+      [
+        "14 December 1838",
+        "FRANK HYDE born AT MADEIRA"
+      ],
+      [
+        "22 June 1839",
+        "FRANK HYDE baptised at Milford"
+      ],
+      [
+        "6 July 1841",
+        "JOSEPH WILLIAM baptised at Milford"
+      ],
+      [
+        "7 February 1848",
+        "JOSEPH D'ARCY dies at Home Mead, Lymington"
+      ],
+      [
+        "28 June 1852",
+        "JOHN HYDE dies at Southampton, aged 19"
+      ],
+      [
+        "1863",
+        "KATHERINE LUCY ELIZABETH D'ARCY dies at Lymington"
+      ],
+      [
+        "29 September 1863",
+        "FRANK HYDE marries ANNA MARIA SIMPSON at Lymington"
+      ],
+      [
+        "15 June 1868",
+        "FRANK HYDE dies at Worcester, aged 29; buried Pennington on the 20th"
+      ],
+      [
+        "26 November 1868",
+        "FRANK HAMILTON HYDE baptised at Croydon, his father five months dead"
+      ],
+      [
+        "1910",
+        "FRANK HAMILTON HYDE dies at Chelmsford, Essex"
+      ]
+    ]
+  },
+  "duty": {
+    "head": "And the will has a second document",
+    "body": "JOSEPH D'ARCY of Lymington, Hampshire, grant year 1848, court “PCC and Country Courts” — Index to Death Duty Registers 1796-1903, The National Archives IR 27/284. The Death Duty register behind that index (IR 26) states the value of the estate and names the legatees and executors, often in more detail than the will itself. That is now two documents at Kew rather than one, and the index reference for finding them."
+  },
+  "ladycatherine": {
+    "head": "Joseph D'Arcy married the daughter of an earl, and had a family by her this archive never knew about",
+    "lede": "The five Milford children are his SECOND family. Two death notices, five years apart, name a first one — and name their mother.",
+    "notices": [
+      [
+        "Saint James's Chronicle, Saturday 23 May 1857, page 1",
+        "“May 13, at St. Helier's, Jersey, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33.”"
+      ],
+      [
+        "London Evening Standard and Morning Herald, both Wednesday 25 June 1862",
+        "“D'ARCY. — On the 14th inst., at Bangor, North Wales, CAPTAIN ROBERT D'ARCY, LATE OF THE INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY, of the ROYAL ARTILLERY, and LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR.”"
+      ]
+    ],
+    "who": "“The late Lieut. Col. D'Arcy, Royal Artillery” is Joseph, who died at Lymington in 1848. The family tree has always given him a wife CATHERINE GEORGIANA WEST, married at BATH in NOVEMBER 1817, and this archive has never looked at the name. WEST is the family name of the EARLS DE LA WARR. Two newspapers, independently, call her LADY CATHERINE and make her a peer's daughter and a peer's sister.",
+    "sons": [
+      [
+        "CAPTAIN ROBERT D'ARCY",
+        "late of the Honourable East India Company's Army",
+        "Died at BANGOR, North Wales, 14 June 1862. Named for his grandfather the Major-General."
+      ],
+      [
+        "RICHARD D'ARCY",
+        "described as the THIRD SON",
+        "Died at ST HELIER, JERSEY, 13 May 1857, AGED 33 — so born about 1824."
+      ]
+    ],
+    "means": "“Third son” is the load-bearing phrase. If Richard was the third, there was a first and a second, and Robert is one of them. So Joseph D'Arcy had AT LEAST THREE SONS by Lady Catherine before he married Katherine Lucy Eliza Hyde in November 1830 and had five more children at Milford. This archive credited him with five children this morning. It is now at least eight, across two marriages, and the first marriage was into the peerage.",
+    "careful": "What is documented is what the notices say: two sons, their mother's style and her brother's title, and Richard's place in the order. WHICH Earl De La Warr, and therefore Lady Catherine's own parentage, is not stated in either notice and is not asserted here — the Earl who was “present” in 1857 and 1862 is a fact about the peerage, not about this family, and it belongs in a reference book this archive has not opened. The first and second sons are unnamed. And when Lady Catherine died is unknown, beyond its being before November 1830.",
+    "chip": "documented, and deliberately unfinished",
+    "death": {
+      "head": "And she is buried, with a date and an age",
+      "text": "CATHERINE GEORGIANA DARCY, aged 36, OF BATH · buried 22 MARCH 1824 · BOURN, Cambridgeshire",
+      "src": "Cambridgeshire Burials, transcribed by the Cambridgeshire and Huntingdonshire Family History Society",
+      "means": "Three things fall into place. THE AGE: 36 in 1824 gives a birth about 1788, which makes her twenty-nine at the Bath marriage of November 1817. THE RESIDENCE: “OF BATH” — the town she married in, seven years later. AND THE DATE: she died in 1824, and Joseph married Katherine Lucy Eliza Hyde in November 1830, so the six-year gap between his two families is now measured rather than assumed.",
+      "careful": "One inference, and it is only that. Her son RICHARD, the third son, was 33 when he died in May 1857, which puts his birth about 1824 — the year his mother died at thirty-six. A death in childbed would explain both, and nothing here says so. WHY she is buried at Bourn in Cambridgeshire, a hundred and fifty miles from Bath and further still from Lymington, is not explained either.",
+      "chip": "documented"
+    }
+  },
+  "rmc": {
+    "head": "The service record, at last",
+    "lede": "This page has said for weeks that the archive “has not yet seen a service record, and does not know the years”. It has one now. The Royal Military Calendar of 1820 — the army's own published record of its serving officers — carries him among the Lieutenant-Colonels at entry 1667.",
+    "quote": "1667. Lieut.-Col. Joseph D'Arcy. Second Lieut. Rl Artillery, 6th March, 1795; First Lieut. 29th June, 1796; Capt.-Lieut. 12th Sept. 1803; Second Capt. 19th July, 1804; Capt. 24th Oct. 1806; brevet Maj. 25th Nov. 1813; and L.-Col. 31st Dec. 1816.",
+    "chip": "documented",
+    "rows": [
+      [
+        "6 March 1795",
+        "Second Lieutenant, Royal Artillery",
+        "He was fifteen — baptised at Portsea in March 1780"
+      ],
+      [
+        "29 June 1796",
+        "First Lieutenant",
+        ""
+      ],
+      [
+        "12 September 1803",
+        "Captain-Lieutenant",
+        ""
+      ],
+      [
+        "19 July 1804",
+        "Second Captain",
+        ""
+      ],
+      [
+        "24 October 1806",
+        "Captain",
+        ""
+      ],
+      [
+        "25 November 1813",
+        "Brevet Major",
+        ""
+      ],
+      [
+        "31 December 1816",
+        "Lieutenant-Colonel",
+        "The rank he held at his death in 1848, and the one every newspaper gives him"
+      ]
+    ],
+    "persiaHead": "And Persia stops being an inference",
+    "persia": "The Calendar does not merely list the decoration. It says why he had it: “L.-Col. D. received, in 1818, the insignia of the 2d class of the PERSIAN ORDER OF THE LION AND SUN, FOR HIS CONDUCT, WHILE IN THE ACTUAL SERVICE OF THE KING OF PERSIA.”",
+    "persiaMeans": "This archive had the Persian service from an obituary and the order from a death notice, and graded the service as inferred because the two merely corroborated one another. The army's own book, printed in 1820 while he was alive and serving, states the service outright and in those words — in the ACTUAL SERVICE of the King of Persia. The chip on this page changes from inferred to documented.",
+    "chipPersia": "documented — the army's own record, printed in his lifetime",
+    "careful": "What it still does not give is the years he was there, or the name of the prince he served. The obituary's Abbas Mirza remains an identification this archive has made, not one the Calendar makes.",
+    "where": "Read 15 September 2026 in the free full text of the 1820 third edition, volume V, on the Internet Archive."
+  },
+  "gm": {
+    "head": "And the magazine of record did notice him",
+    "lede": "The Gentleman's Magazine for March 1848, page 328, in its county list of deaths for Hampshire. A fourth independent notice, and the only one from a national magazine rather than a newspaper.",
+    "quote": "Feb. 7. At Homestead, Lymington, aged 68, Lieut.-Col. Joseph D'Arcy, late of the Royal Art. K.L.S. He entered as 2d Lieut. 1795, attained the brevet rank of Major 1813, and Lieut.-Col. 1816. In 1818 he received permission to accept the second class of the order of the Lion and Sun, conferred for his conduct when in the actual service of the Shah of Persia.",
+    "chip": "documented",
+    "ageHead": "It settles the age two to one",
+    "age": "Three sources, three phrasings. The London Evening Standard says “in the 69th year of his age”, which means he had turned 68. The Morning Herald says “in his 68th year”, which means he had turned 67. The Gentleman's Magazine says flatly “AGED 68”. Two of the three agree, and they agree with the baptism: a man baptised at Portsea on 19 March 1780 and dying on 7 February 1848 was 67 and eleven months — so “aged 68” is the rounding and “in his 68th year” is the exact one.",
+    "ageMeans": "The three notices do not quite agree, and saying so is worth more than picking one. What they jointly rule out is any birth much before 1779, which is the only thing this archive needed them for.",
+    "chipAge": "corroboration, with the disagreement stated",
+    "shahHead": "Shah, not King",
+    "shah": "The Gazette of 1818 says the order was “conferred on him by the KING OF PERSIA”. The Royal Military Calendar of 1820 says “in the actual service of the King of Persia”. The Gentleman's Magazine of 1848 says “in the actual service of the SHAH of Persia”. The same phrase, three times over thirty years, with one word changing — which is how a fact travels rather than how it is invented.",
+    "where": "Read 15 September 2026 in the full text of all twelve monthly issues of 1848 on the Internet Archive."
+  }
 }

@@ -1,411 +1,424 @@
 {
- "searched": "13 September 2026",
- "source": "The National Archives, Discovery — series RG 4, Non-Parochial Registers, searched for Bristol",
- "url": "https://discovery.nationalarchives.gov.uk/results/r?_sd=&_q=%22RG%204%22%20Bristol",
- "total": 36,
- "window": [
-  "RG 4/388",
-  "RG 4/2697",
-  "RG 4/1358",
-  "RG 4/1544",
-  "RG 4/1792",
-  "RG 4/913",
-  "RG 4/3254",
-  "RG 4/1830",
-  "RG 4/1360",
-  "RG 4/2688",
-  "RG 4/1361",
-  "RG 4/4619"
- ],
- "rows": [
-  {
-   "ref": "RG 4/388",
-   "place": "Bridge Street Chapel",
-   "county": "Gloucester",
-   "den": "Congregational",
-   "kind": "Baptisms",
-   "from": 1714,
-   "to": 1837
+  "searched": "13 September 2026",
+  "source": "The National Archives, Discovery — series RG 4, Non-Parochial Registers, searched for Bristol",
+  "url": "https://discovery.nationalarchives.gov.uk/results/r?_sd=&_q=%22RG%204%22%20Bristol",
+  "total": 36,
+  "window": [
+    "RG 4/388",
+    "RG 4/2697",
+    "RG 4/1358",
+    "RG 4/1544",
+    "RG 4/1792",
+    "RG 4/913",
+    "RG 4/3254",
+    "RG 4/1830",
+    "RG 4/1360",
+    "RG 4/2688",
+    "RG 4/1361",
+    "RG 4/4619"
+  ],
+  "rows": [
+    {
+      "ref": "RG 4/388",
+      "place": "Bridge Street Chapel",
+      "county": "Gloucester",
+      "den": "Congregational",
+      "kind": "Baptisms",
+      "from": 1714,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/3765",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1679,
+      "to": 1746
+    },
+    {
+      "ref": "RG 4/3766",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Births",
+      "from": 1726,
+      "to": 1778
+    },
+    {
+      "ref": "RG 4/2871",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1746,
+      "to": 1791
+    },
+    {
+      "ref": "RG 4/1829",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1756,
+      "to": 1827
+    },
+    {
+      "ref": "RG 4/2697",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Births",
+      "from": 1787,
+      "to": 1817
+    },
+    {
+      "ref": "RG 4/1826",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1789,
+      "to": 1803
+    },
+    {
+      "ref": "RG 4/1827",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1804,
+      "to": 1836
+    },
+    {
+      "ref": "RG 4/1358",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Births",
+      "from": 1813,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/2923",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1828,
+      "to": 1834
+    },
+    {
+      "ref": "RG 4/1828",
+      "place": "Broad Mead",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1836,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/1544",
+      "place": "Broadmead Welsh Chapel",
+      "county": "Somerset",
+      "den": "Calvinistic Methodist",
+      "kind": "Births and Baptisms",
+      "from": 1808,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/2686",
+      "place": "Brunswick Chapel in Brunswick Square",
+      "county": "Somerset",
+      "den": "Independent",
+      "kind": "Births and Baptisms",
+      "from": 1834,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/2499",
+      "place": "Brunswick Chapel in Brunswick Square",
+      "county": "Somerset",
+      "den": "Independent",
+      "kind": "Burials",
+      "from": 1837,
+      "to": 1856
+    },
+    {
+      "ref": "RG 4/2498",
+      "place": "Brunswick Chapel in Brunswick Square",
+      "county": "Somerset",
+      "den": "Independent",
+      "kind": "Baptisms",
+      "from": 1838,
+      "to": 1856
+    },
+    {
+      "ref": "RG 4/1792",
+      "place": "Castle Green Meeting",
+      "county": "Somerset",
+      "den": "Independent",
+      "kind": "Births and Baptisms",
+      "from": 1784,
+      "to": 1816
+    },
+    {
+      "ref": "RG 4/1359",
+      "place": "Castle Green Meeting",
+      "county": "Somerset",
+      "den": "Independent",
+      "kind": "Births and Baptisms",
+      "from": 1816,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/913",
+      "place": "Ebenezer Chapel in King Street",
+      "county": "Somerset",
+      "den": "Wesleyan",
+      "kind": "Births and Baptisms",
+      "from": 1793,
+      "to": 1819
+    },
+    {
+      "ref": "RG 4/3257",
+      "place": "Ebenezer Chapel in King Street",
+      "county": "Somerset",
+      "den": "Wesleyan",
+      "kind": "Births and Baptisms",
+      "from": 1817,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/2698",
+      "place": "King Street",
+      "county": "Somerset",
+      "den": "Baptist",
+      "kind": "Burials",
+      "from": 1827,
+      "to": 1855
+    },
+    {
+      "ref": "RG 4/3254",
+      "place": "Langton Street Chapel, formerly Guinea Street Chapel",
+      "county": "Somerset",
+      "den": "Wesleyan",
+      "kind": "Births and Baptisms",
+      "from": 1813,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/2687",
+      "place": "Langton Street Chapel, formerly Guinea Street Chapel",
+      "county": "Somerset",
+      "den": "Wesleyan",
+      "kind": "Burials",
+      "from": 1828,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/1830",
+      "place": "Lewins Mead Chapel",
+      "county": "Somerset",
+      "den": "Presbyterian",
+      "kind": "Baptisms",
+      "from": 1718,
+      "to": 1840
+    },
+    {
+      "ref": "RG 4/2497",
+      "place": "Lewins Mead Chapel",
+      "county": "Somerset",
+      "den": "Presbyterian",
+      "kind": "Baptisms",
+      "from": 1759,
+      "to": 1786
+    },
+    {
+      "ref": "RG 4/3507",
+      "place": "Lewins Mead Chapel",
+      "county": "Somerset",
+      "den": "Presbyterian",
+      "kind": "Burials",
+      "from": 1768,
+      "to": 1820
+    },
+    {
+      "ref": "RG 4/3323",
+      "place": "Lewins Mead Chapel",
+      "county": "Somerset",
+      "den": "Presbyterian",
+      "kind": "Burials",
+      "from": 1820,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/1831",
+      "place": "Newfoundland Street and Great George Street",
+      "county": "Somerset",
+      "den": "Independent",
+      "kind": "Births and Baptisms",
+      "from": 1822,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/1417",
+      "place": "Somerset",
+      "county": "",
+      "den": "Countess of Huntingdon",
+      "kind": "Births and Baptisms (1820-1837); Bristol, Somerset, Denomination: Countess of Huntingdon: Burials (1830-1837)",
+      "from": 1820,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/3255",
+      "place": "St Philips Chapel",
+      "county": "Somerset",
+      "den": "Wesleyan",
+      "kind": "Births and Baptisms",
+      "from": 1817,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/3256",
+      "place": "St Philips Chapel",
+      "county": "Somerset",
+      "den": "Wesleyan",
+      "kind": "Burials",
+      "from": 1818,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/1360",
+      "place": "Tabernacle in Penn Street",
+      "county": "Somerset",
+      "den": "Calvinistic Methodist",
+      "kind": "Births and Baptisms",
+      "from": 1775,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/2688",
+      "place": "Tabernacle in Penn Street",
+      "county": "Somerset",
+      "den": "Calvinistic Methodist",
+      "kind": "Births and Baptisms",
+      "from": 1775,
+      "to": 1812
+    },
+    {
+      "ref": "RG 4/1361",
+      "place": "Upper Maudlin Street",
+      "county": "Somerset",
+      "den": "Moravian",
+      "kind": "Births, Baptisms and Burials",
+      "from": 1755,
+      "to": 1837
+    },
+    {
+      "ref": "RG 4/4617",
+      "place": "formerly the Mayor's Chapel St Mark the Gaunt",
+      "county": "",
+      "den": "Foreign Churches",
+      "kind": "Baptisms, Marriages and Burials",
+      "from": 1687,
+      "to": 1701
+    },
+    {
+      "ref": "RG 4/4618",
+      "place": "formerly the Mayor's Chapel St Mark the Gaunt",
+      "county": "",
+      "den": "Foreign Churches",
+      "kind": "Baptisms, Marriages and Burials",
+      "from": 1701,
+      "to": 1715
+    },
+    {
+      "ref": "RG 4/4619",
+      "place": "formerly the Mayor's Chapel St Mark the Gaunt",
+      "county": "",
+      "den": "Foreign Churches",
+      "kind": "Baptisms, Marriages and Burials",
+      "from": 1715,
+      "to": 1807
+    }
+  ],
+  "target": "Hannah Saniger, born about 1805–1815, married James Wakefield, and had her first children baptised — somewhere — in Bristol",
+  "anglican": {
+    "test": "William and Mary SMITH, across Gloucestershire, for the twenty-one years 1800–1820.",
+    "result": [
+      289,
+      75
+    ],
+    "bristol": [
+      [
+        "Stapleton",
+        1
+      ]
+    ],
+    "absent": [
+      "St Paul",
+      "St Philip and Jacob",
+      "St James",
+      "St Augustine the Less",
+      "St Mary Redcliffe",
+      "Temple",
+      "St Stephen",
+      "St Werburgh",
+      "St Nicholas",
+      "Clifton",
+      "Bedminster",
+      "Barton Regis"
+    ],
+    "top": [
+      [
+        "Dursley",
+        19
+      ],
+      [
+        "Tewkesbury",
+        17
+      ],
+      [
+        "Wotton-under-Edge",
+        17
+      ],
+      [
+        "Ebrington",
+        16
+      ],
+      [
+        "Gloucester",
+        16
+      ],
+      [
+        "Chedworth",
+        15
+      ],
+      [
+        "Cam",
+        8
+      ],
+      [
+        "Thornbury",
+        3
+      ]
+    ],
+    "verdict": "Two hundred and eighty-nine entries, seventy-five parishes, and ONE of them inside Bristol — Stapleton, on the edge of the city, with a single entry. Not one Bristol city parish appears at all.",
+    "so": "FreeREG has essentially no Bristol for 1800–1820. Every search this archive has run for a Bristol baptism has been searching a city that is not in the index, and the emptiness it kept returning was the index's, not the family's."
   },
-  {
-   "ref": "RG 4/3765",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1679,
-   "to": 1746
-  },
-  {
-   "ref": "RG 4/3766",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Births",
-   "from": 1726,
-   "to": 1778
-  },
-  {
-   "ref": "RG 4/2871",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1746,
-   "to": 1791
-  },
-  {
-   "ref": "RG 4/1829",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1756,
-   "to": 1827
-  },
-  {
-   "ref": "RG 4/2697",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Births",
-   "from": 1787,
-   "to": 1817
-  },
-  {
-   "ref": "RG 4/1826",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1789,
-   "to": 1803
-  },
-  {
-   "ref": "RG 4/1827",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1804,
-   "to": 1836
-  },
-  {
-   "ref": "RG 4/1358",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Births",
-   "from": 1813,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/2923",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1828,
-   "to": 1834
-  },
-  {
-   "ref": "RG 4/1828",
-   "place": "Broad Mead",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1836,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/1544",
-   "place": "Broadmead Welsh Chapel",
-   "county": "Somerset",
-   "den": "Calvinistic Methodist",
-   "kind": "Births and Baptisms",
-   "from": 1808,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/2686",
-   "place": "Brunswick Chapel in Brunswick Square",
-   "county": "Somerset",
-   "den": "Independent",
-   "kind": "Births and Baptisms",
-   "from": 1834,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/2499",
-   "place": "Brunswick Chapel in Brunswick Square",
-   "county": "Somerset",
-   "den": "Independent",
-   "kind": "Burials",
-   "from": 1837,
-   "to": 1856
-  },
-  {
-   "ref": "RG 4/2498",
-   "place": "Brunswick Chapel in Brunswick Square",
-   "county": "Somerset",
-   "den": "Independent",
-   "kind": "Baptisms",
-   "from": 1838,
-   "to": 1856
-  },
-  {
-   "ref": "RG 4/1792",
-   "place": "Castle Green Meeting",
-   "county": "Somerset",
-   "den": "Independent",
-   "kind": "Births and Baptisms",
-   "from": 1784,
-   "to": 1816
-  },
-  {
-   "ref": "RG 4/1359",
-   "place": "Castle Green Meeting",
-   "county": "Somerset",
-   "den": "Independent",
-   "kind": "Births and Baptisms",
-   "from": 1816,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/913",
-   "place": "Ebenezer Chapel in King Street",
-   "county": "Somerset",
-   "den": "Wesleyan",
-   "kind": "Births and Baptisms",
-   "from": 1793,
-   "to": 1819
-  },
-  {
-   "ref": "RG 4/3257",
-   "place": "Ebenezer Chapel in King Street",
-   "county": "Somerset",
-   "den": "Wesleyan",
-   "kind": "Births and Baptisms",
-   "from": 1817,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/2698",
-   "place": "King Street",
-   "county": "Somerset",
-   "den": "Baptist",
-   "kind": "Burials",
-   "from": 1827,
-   "to": 1855
-  },
-  {
-   "ref": "RG 4/3254",
-   "place": "Langton Street Chapel, formerly Guinea Street Chapel",
-   "county": "Somerset",
-   "den": "Wesleyan",
-   "kind": "Births and Baptisms",
-   "from": 1813,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/2687",
-   "place": "Langton Street Chapel, formerly Guinea Street Chapel",
-   "county": "Somerset",
-   "den": "Wesleyan",
-   "kind": "Burials",
-   "from": 1828,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/1830",
-   "place": "Lewins Mead Chapel",
-   "county": "Somerset",
-   "den": "Presbyterian",
-   "kind": "Baptisms",
-   "from": 1718,
-   "to": 1840
-  },
-  {
-   "ref": "RG 4/2497",
-   "place": "Lewins Mead Chapel",
-   "county": "Somerset",
-   "den": "Presbyterian",
-   "kind": "Baptisms",
-   "from": 1759,
-   "to": 1786
-  },
-  {
-   "ref": "RG 4/3507",
-   "place": "Lewins Mead Chapel",
-   "county": "Somerset",
-   "den": "Presbyterian",
-   "kind": "Burials",
-   "from": 1768,
-   "to": 1820
-  },
-  {
-   "ref": "RG 4/3323",
-   "place": "Lewins Mead Chapel",
-   "county": "Somerset",
-   "den": "Presbyterian",
-   "kind": "Burials",
-   "from": 1820,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/1831",
-   "place": "Newfoundland Street and Great George Street",
-   "county": "Somerset",
-   "den": "Independent",
-   "kind": "Births and Baptisms",
-   "from": 1822,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/1417",
-   "place": "Somerset",
-   "county": "",
-   "den": "Countess of Huntingdon",
-   "kind": "Births and Baptisms (1820-1837); Bristol, Somerset, Denomination: Countess of Huntingdon: Burials (1830-1837)",
-   "from": 1820,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/3255",
-   "place": "St Philips Chapel",
-   "county": "Somerset",
-   "den": "Wesleyan",
-   "kind": "Births and Baptisms",
-   "from": 1817,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/3256",
-   "place": "St Philips Chapel",
-   "county": "Somerset",
-   "den": "Wesleyan",
-   "kind": "Burials",
-   "from": 1818,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/1360",
-   "place": "Tabernacle in Penn Street",
-   "county": "Somerset",
-   "den": "Calvinistic Methodist",
-   "kind": "Births and Baptisms",
-   "from": 1775,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/2688",
-   "place": "Tabernacle in Penn Street",
-   "county": "Somerset",
-   "den": "Calvinistic Methodist",
-   "kind": "Births and Baptisms",
-   "from": 1775,
-   "to": 1812
-  },
-  {
-   "ref": "RG 4/1361",
-   "place": "Upper Maudlin Street",
-   "county": "Somerset",
-   "den": "Moravian",
-   "kind": "Births, Baptisms and Burials",
-   "from": 1755,
-   "to": 1837
-  },
-  {
-   "ref": "RG 4/4617",
-   "place": "formerly the Mayor's Chapel St Mark the Gaunt",
-   "county": "",
-   "den": "Foreign Churches",
-   "kind": "Baptisms, Marriages and Burials",
-   "from": 1687,
-   "to": 1701
-  },
-  {
-   "ref": "RG 4/4618",
-   "place": "formerly the Mayor's Chapel St Mark the Gaunt",
-   "county": "",
-   "den": "Foreign Churches",
-   "kind": "Baptisms, Marriages and Burials",
-   "from": 1701,
-   "to": 1715
-  },
-  {
-   "ref": "RG 4/4619",
-   "place": "formerly the Mayor's Chapel St Mark the Gaunt",
-   "county": "",
-   "den": "Foreign Churches",
-   "kind": "Baptisms, Marriages and Burials",
-   "from": 1715,
-   "to": 1807
+  "access": "All twelve were checked one by one against The National Archives' own record details. Every one comes back DIGITISED: FALSE. RG 4 is filmed and published through commercial partners, not free on TNA's website — so these cannot be read from a desk without a subscription, and this archive said the opposite this morning.",
+  "swept": {
+    "found": "21 September 2026",
+    "head": "Answered — and not by reading twelve volumes",
+    "lede": "The errand assumed these registers would have to be read one at a time, because RG 4 is filmed through commercial partners and not free on The National Archives' site. **It did not come to that.** FindMyPast carries the RG 4 transcriptions as **England & Wales Non-Conformist Births and Baptisms** and **England & Wales Non-Conformist Burials**, and both are searchable by place.",
+    "body": "**The surname box takes wildcards, so the whole question fits in one query.** `S*N*G*R` at **Bristol** in the baptism set returns **nought** — no Saniger, Sanigar, Sinegar, Sinnegar, Sainger, Sanigor or any other form, in any Bristol chapel, in the whole series.\n\n**Three controls, same session, same query shape.** SMITH at Bristol in that set returns **133** chapel baptisms, Congregational and Presbyterian, between 1724 and 1831 — so the Bristol chapels are indexed. The same wildcard with no place returns **808** — so the wildcard works. And SANIGAR returns **8** — so the surname is in the set. The chapels are there, the name is there, and they do not meet.\n\n**The burials say the same thing more usefully still.** `S*N*G*R` at Bristol in the burial set returns **nine rows and not one of them is this name**: Singer five times, Springer, Stringer twice, Swearenger, Baptist and Presbyterian, 1704 to 1812. A null that returns nine near misses at the right place is about as controlled as a null gets.",
+    "chip": "documented",
+    "denomHead": "But the family was chapel — thirty miles up the scarp",
+    "denom": "The eight SANIGAR entries are all at **one chapel: Dursley, Corn Meeting, Congregational.** Rose, daughter of Willm, in **1781**; then **Thomas Browning Sanigar's** children — Emily Sophia 1851, Fanny 1852, Rachel Harris 1854, Edward Thomas 1856 — and **Thomas Sanigar's** — Susanna 1861, Albert Thomas 1863, Hester Jane 1866.\n\nSo this page's closing caveat has to be rewritten. It said **nothing yet suggests the Sanigers were nonconformist**, and that is no longer true: the **scarp branch was Congregational for at least eighty years**. What remains true, and is the point, is that **it was Congregational at Dursley and not at Bristol.** The hypothesis this page was built on has been tested where it mattered and it failed there.",
+    "chipDenom": "documented",
+    "ingestHead": "And a fact about the other set, which changes a number",
+    "ingest": "Those same eight entries also appear in **England Births & Baptisms 1538-1975** — Rose 1781, Fanny 1852, Rachel Harris 1854, Susanna 1860 and the rest. **That set is not purely Anglican**: it ingests RG 4 too. Some of the duplication measured on [/spellings](/spellings/) is therefore not a register typed up twice but **one register reaching the index by two routes**, which is a better explanation than the one that page offers and is now recorded on both.",
+    "chipIngest": "inferred"
   }
- ],
- "target": "Hannah Saniger, born about 1805–1815, married James Wakefield, and had her first children baptised — somewhere — in Bristol",
- "anglican": {
-  "test": "William and Mary SMITH, across Gloucestershire, for the twenty-one years 1800–1820.",
-  "result": [
-   289,
-   75
-  ],
-  "bristol": [
-   [
-    "Stapleton",
-    1
-   ]
-  ],
-  "absent": [
-   "St Paul",
-   "St Philip and Jacob",
-   "St James",
-   "St Augustine the Less",
-   "St Mary Redcliffe",
-   "Temple",
-   "St Stephen",
-   "St Werburgh",
-   "St Nicholas",
-   "Clifton",
-   "Bedminster",
-   "Barton Regis"
-  ],
-  "top": [
-   [
-    "Dursley",
-    19
-   ],
-   [
-    "Tewkesbury",
-    17
-   ],
-   [
-    "Wotton-under-Edge",
-    17
-   ],
-   [
-    "Ebrington",
-    16
-   ],
-   [
-    "Gloucester",
-    16
-   ],
-   [
-    "Chedworth",
-    15
-   ],
-   [
-    "Cam",
-    8
-   ],
-   [
-    "Thornbury",
-    3
-   ]
-  ],
-  "verdict": "Two hundred and eighty-nine entries, seventy-five parishes, and ONE of them inside Bristol — Stapleton, on the edge of the city, with a single entry. Not one Bristol city parish appears at all.",
-  "so": "FreeREG has essentially no Bristol for 1800–1820. Every search this archive has run for a Bristol baptism has been searching a city that is not in the index, and the emptiness it kept returning was the index's, not the family's."
- },
- "access": "All twelve were checked one by one against The National Archives' own record details. Every one comes back DIGITISED: FALSE. RG 4 is filmed and published through commercial partners, not free on TNA's website — so these cannot be read from a desk without a subscription, and this archive said the opposite this morning."
 }

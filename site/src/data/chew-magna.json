@@ -1,163 +1,201 @@
 {
- "searched": "13 September 2026",
- "household": {
-  "census": "1851, Gloucestershire, Clifton district, enumeration district 1u — St Philip and Jacob Out, Bristol · HO107/1954, folio 562, page 30, schedule 102",
-  "address": "Oxford Road",
-  "rows": [
-   [
-    "SANIGER",
-    "William",
-    "Head",
-    "Married",
-    27,
-    "Smith Journeyman",
-    "Somerset",
-    "CHEW MAGNA"
-   ],
-   [
-    "SANIGER",
-    "Caroline",
-    "Wife",
-    "Married",
-    28,
-    "",
-    "Gloucestershire",
-    "Fishponds"
-   ],
-   [
-    "SANIGER",
-    "Elizabeth",
-    "Mother",
-    "WIDOW",
-    60,
-    "",
-    "Somerset",
-    "CHEW MAGNA"
-   ]
-  ]
- },
- "why": [
-  [
-   "The county is right, and it is the only thing the 1841 census will tell us.",
-   "At Drivers Fields in 1841 the enumerator ticked Hannah Wakefield as NOT born in Gloucestershire, and ticked Lyddya Sinegar, aged seventy, the same way. Somerset is the county on the other side of the river."
+  "searched": "13 September 2026",
+  "household": {
+    "census": "1851, Gloucestershire, Clifton district, enumeration district 1u — St Philip and Jacob Out, Bristol · HO107/1954, folio 562, page 30, schedule 102",
+    "address": "Oxford Road",
+    "rows": [
+      [
+        "SANIGER",
+        "William",
+        "Head",
+        "Married",
+        27,
+        "Smith Journeyman",
+        "Somerset",
+        "CHEW MAGNA"
+      ],
+      [
+        "SANIGER",
+        "Caroline",
+        "Wife",
+        "Married",
+        28,
+        "",
+        "Gloucestershire",
+        "Fishponds"
+      ],
+      [
+        "SANIGER",
+        "Elizabeth",
+        "Mother",
+        "WIDOW",
+        60,
+        "",
+        "Somerset",
+        "CHEW MAGNA"
+      ]
+    ]
+  },
+  "why": [
+    [
+      "The county is right, and it is the only thing the 1841 census will tell us.",
+      "At Drivers Fields in 1841 the enumerator ticked Hannah Wakefield as NOT born in Gloucestershire, and ticked Lyddya Sinegar, aged seventy, the same way. Somerset is the county on the other side of the river."
+    ],
+    [
+      "The parish is next door.",
+      "St Philip and Jacob adjoins St Paul, where the Wakefields were living in 1841 and where Miriam was born in 1840. These are neighbouring Bristol parishes, not distant towns."
+    ],
+    [
+      "The generation is right.",
+      "Elizabeth Saniger is sixty in 1851, so born about 1791. Lyddya Sinegar is seventy in 1841, so born about 1771. Hannah is thirty-five in 1841, so born about 1806. Three Saniger women of three generations, all in east Bristol, none of them born in Gloucestershire."
+    ],
+    [
+      "The trade is right, and it is the thread running through the whole surname.",
+      "William Saniger is a journeyman smith and James Wakefield a journeyman mason. And Chew Magna, says Collinson, had been “a large clothing town” — the same trade that runs through every Saniger this archive has found at Berkeley, Dursley and Cam, where they are clothiers, weavers, tuckers and curriers."
+    ]
   ],
-  [
-   "The parish is next door.",
-   "St Philip and Jacob adjoins St Paul, where the Wakefields were living in 1841 and where Miriam was born in 1840. These are neighbouring Bristol parishes, not distant towns."
+  "against": [
+    "Nothing yet joins Elizabeth Saniger of Chew Magna to Hannah Saniger of Drivers Fields. They are not shown to be sisters, cousins or anything else.",
+    "Saniger is not a rare name in the Bristol region, and the reconstitution already found 81 Gloucestershire households of it.",
+    "Chew Magna is six miles from Bristol, and Collinson's 830 inhabitants make it a small place to pin a family on from one census line."
   ],
-  [
-   "The generation is right.",
-   "Elizabeth Saniger is sixty in 1851, so born about 1791. Lyddya Sinegar is seventy in 1841, so born about 1771. Hannah is thirty-five in 1841, so born about 1806. Three Saniger women of three generations, all in east Bristol, none of them born in Gloucestershire."
-  ],
-  [
-   "The trade is right, and it is the thread running through the whole surname.",
-   "William Saniger is a journeyman smith and James Wakefield a journeyman mason. And Chew Magna, says Collinson, had been “a large clothing town” — the same trade that runs through every Saniger this archive has found at Berkeley, Dursley and Cam, where they are clothiers, weavers, tuckers and curriers."
-  ]
- ],
- "against": [
-  "Nothing yet joins Elizabeth Saniger of Chew Magna to Hannah Saniger of Drivers Fields. They are not shown to be sisters, cousins or anything else.",
-  "Saniger is not a rare name in the Bristol region, and the reconstitution already found 81 Gloucestershire households of it.",
-  "Chew Magna is six miles from Bristol, and Collinson's 830 inhabitants make it a small place to pin a family on from one census line."
- ],
- "coverage": {
-  "test": "Three forenames of SMITH across Somerset for the twenty-one years 1795–1815.",
-  "rows": [
-   [
-    "William Smith",
-    271,
-    85,
-    1
-   ],
-   [
-    "Mary Smith",
-    371,
-    115,
-    1
-   ],
-   [
-    "John Smith",
-    301,
-    97,
-    0
-   ]
-  ],
-  "verdict": "943 Smith entries across 21 years and 100-odd Somerset parishes. Chew Magna accounts for TWO of them, against a hundred at Walcot and sixty-nine at Bath. Collinson counted 830 people there in 1791 — smaller than Bath, certainly, but not so small that twenty-one years of registers should yield two entries of the commonest surname in England.",
-  "so": "FreeREG's Chew Magna transcript is a fragment. Searching it for Sanigers and finding none proves precisely nothing — which is why this page reports a place to look rather than a result."
- },
- "found": "No Saniger at Chew Magna in FreeREG's Somerset holdings, in any spelling, between 1780 and 1840. The only Somerset Saniger in that window is a marriage at Walcot: Edmund Liddall and Rachel Saniger, 8 June 1819.",
- "collinson": {
-  "source": "John Collinson, The History and Antiquities of the County of Somerset (1791), vol. II",
-  "url": "https://archive.org/details/historyantiqutit02colluoft",
-  "desc": "“a large and populous parish, very pleasantly situated at the distance of SIX MILES SOUTH-WEST FROM BRISTOL … containing within its precincts one hundred and seventy houses, and eight hundred and thirty inhabitants.”",
-  "cloth": "“In former days this was a borough, a market, and a LARGE CLOTHING TOWN, neither of which characteristics belong to it now … its only manufacture are a few edge-tools and stockings.”",
-  "peculiar": "“The living of Chew is a peculiar.” A peculiar lay outside the bishop's ordinary jurisdiction and proved its own wills — so probate for Chew Magna people ran through the Peculiar of Chew, which the Somerset Heritage Centre records as a separate court down to 1787.",
-  "null": "Collinson holds no Sanigers at Chew Magna, and that is not evidence of anything: he copies gentry monuments and benefactions, and a journeyman smith's family would not appear in either."
- },
- "correction": "This page first said Chew Magna lay eight miles from Bristol in a parish of roughly 1,800 people. Collinson, who was writing in 1791, says six miles and 830 inhabitants. Both of my figures were guesses dressed as facts, and they are corrected here rather than quietly replaced.",
- "h1841": {
-  "census": "1841, Somerset, Chew district — Chew Magna, piece 938, book 6, folio 6, page 6",
-  "address": "Battles Lane",
-  "rows": [
-   [
-    "VEALE",
-    "Thomas",
-    "M",
-    55,
-    "Spade Maker",
-    "Somerset"
-   ],
-   [
-    "VEALE",
-    "Elizabeth",
-    "F",
-    50,
-    "",
-    "Somerset"
-   ],
-   [
-    "VEALE",
-    "George",
-    "M",
-    15,
-    "Spade Maker",
-    "Somerset"
-   ],
-   [
-    "VEALE",
-    "James",
-    "M",
-    12,
-    "",
-    "Somerset"
-   ],
-   [
-    "VEALE",
-    "Charles",
-    "M",
-    9,
-    "",
-    "Somerset"
-   ],
-   [
-    "PYKE",
-    "Harriet",
-    "F",
-    25,
-    "",
-    "Somerset"
-   ],
-   [
-    "SANIGAR",
-    "Elizabeth",
-    "F",
-    45,
-    "",
-    "Somerset"
-   ]
-  ],
-  "reading": "Ten years before Oxford Road, the same woman is in Chew Magna itself — in a spade-maker's house on Battles Lane, spelled SANIGAR. Her age moves from 45 to 60 across the decade, which is what 1841 ages do: that census rounded adults down to the nearest five.",
-  "collinson": "And Thomas Veale's trade is the one Collinson names. Writing fifty years earlier he said Chew Magna's “only manufacture are a few edge-tools and stockings”. A spade-maker on Battles Lane in 1841 is the last of the edge-tools.",
-  "means": "This is what makes the 1851 birthplace worth acting on. A clerk in Bristol writing “Chew Magna” could have been mishearing something. He was not: the family is in the parish, under a spelling this archive already knows, ten years earlier."
- },
- "spellings": "The name is at Chew Magna in more than one form. Besides Elizabeth SANIGAR in 1841, the 1891 census finds a Julia SINEGAR living there — SINEGAR being the exact spelling the 1841 enumerator used for the seventy-year-old widow in the Wakefields' house at Drivers Fields."
+  "coverage": {
+    "test": "Three forenames of SMITH across Somerset for the twenty-one years 1795–1815.",
+    "rows": [
+      [
+        "William Smith",
+        271,
+        85,
+        1
+      ],
+      [
+        "Mary Smith",
+        371,
+        115,
+        1
+      ],
+      [
+        "John Smith",
+        301,
+        97,
+        0
+      ]
+    ],
+    "verdict": "943 Smith entries across 21 years and 100-odd Somerset parishes. Chew Magna accounts for TWO of them, against a hundred at Walcot and sixty-nine at Bath. Collinson counted 830 people there in 1791 — smaller than Bath, certainly, but not so small that twenty-one years of registers should yield two entries of the commonest surname in England.",
+    "so": "FreeREG's Chew Magna transcript is a fragment. Searching it for Sanigers and finding none proves precisely nothing — which is why this page reports a place to look rather than a result."
+  },
+  "found": "No Saniger at Chew Magna in FreeREG's Somerset holdings, in any spelling, between 1780 and 1840. The only Somerset Saniger in that window is a marriage at Walcot: Edmund Liddall and Rachel Saniger, 8 June 1819.",
+  "collinson": {
+    "source": "John Collinson, The History and Antiquities of the County of Somerset (1791), vol. II",
+    "url": "https://archive.org/details/historyantiqutit02colluoft",
+    "desc": "“a large and populous parish, very pleasantly situated at the distance of SIX MILES SOUTH-WEST FROM BRISTOL … containing within its precincts one hundred and seventy houses, and eight hundred and thirty inhabitants.”",
+    "cloth": "“In former days this was a borough, a market, and a LARGE CLOTHING TOWN, neither of which characteristics belong to it now … its only manufacture are a few edge-tools and stockings.”",
+    "peculiar": "“The living of Chew is a peculiar.” A peculiar lay outside the bishop's ordinary jurisdiction and proved its own wills — so probate for Chew Magna people ran through the Peculiar of Chew, which the Somerset Heritage Centre records as a separate court down to 1787.",
+    "null": "Collinson holds no Sanigers at Chew Magna, and that is not evidence of anything: he copies gentry monuments and benefactions, and a journeyman smith's family would not appear in either."
+  },
+  "correction": "This page first said Chew Magna lay eight miles from Bristol in a parish of roughly 1,800 people. Collinson, who was writing in 1791, says six miles and 830 inhabitants. Both of my figures were guesses dressed as facts, and they are corrected here rather than quietly replaced.",
+  "h1841": {
+    "census": "1841, Somerset, Chew district — Chew Magna, piece 938, book 6, folio 6, page 6",
+    "address": "Battles Lane",
+    "rows": [
+      [
+        "VEALE",
+        "Thomas",
+        "M",
+        55,
+        "Spade Maker",
+        "Somerset"
+      ],
+      [
+        "VEALE",
+        "Elizabeth",
+        "F",
+        50,
+        "",
+        "Somerset"
+      ],
+      [
+        "VEALE",
+        "George",
+        "M",
+        15,
+        "Spade Maker",
+        "Somerset"
+      ],
+      [
+        "VEALE",
+        "James",
+        "M",
+        12,
+        "",
+        "Somerset"
+      ],
+      [
+        "VEALE",
+        "Charles",
+        "M",
+        9,
+        "",
+        "Somerset"
+      ],
+      [
+        "PYKE",
+        "Harriet",
+        "F",
+        25,
+        "",
+        "Somerset"
+      ],
+      [
+        "SANIGAR",
+        "Elizabeth",
+        "F",
+        45,
+        "",
+        "Somerset"
+      ]
+    ],
+    "reading": "Ten years before Oxford Road, the same woman is in Chew Magna itself — in a spade-maker's house on Battles Lane, spelled SANIGAR. Her age moves from 45 to 60 across the decade, which is what 1841 ages do: that census rounded adults down to the nearest five.",
+    "collinson": "And Thomas Veale's trade is the one Collinson names. Writing fifty years earlier he said Chew Magna's “only manufacture are a few edge-tools and stockings”. A spade-maker on Battles Lane in 1841 is the last of the edge-tools.",
+    "means": "This is what makes the 1851 birthplace worth acting on. A clerk in Bristol writing “Chew Magna” could have been mishearing something. He was not: the family is in the parish, under a spelling this archive already knows, ten years earlier."
+  },
+  "spellings": "The name is at Chew Magna in more than one form. Besides Elizabeth SANIGAR in 1841, the 1891 census finds a Julia SINEGAR living there — SINEGAR being the exact spelling the 1841 enumerator used for the seventy-year-old widow in the Wakefields' house at Drivers Fields.",
+  "simon": {
+    "found": "21 September 2026",
+    "head": "Elizabeth's husband has a name, and this page said he did not exist",
+    "lede": "On 13 September this archive searched FindMyPast for Sanigers at Chew Magna and published the result as **«None, in any spelling»**. That is false, and it was false the day it was written. **Somerset Baptisms holds two of them, and they are Elizabeth's own children.**",
+    "cols": [
+      "Child",
+      "Baptised",
+      "Father",
+      "Mother",
+      "Parish"
+    ],
+    "rows": [
+      [
+        "Charles Sinagar",
+        "1816",
+        "**SIMON**",
+        "**Elizabeth**",
+        "Chew Magna"
+      ],
+      [
+        "William Sinegar",
+        "1822",
+        "**SIMON**",
+        "**Elizabeth**",
+        "Chew Magna"
+      ]
+    ],
+    "chip": "documented",
+    "joinHead": "And the 1851 household closes on them",
+    "join": "The census above gives **William Saniger, head, 27, smith journeyman, born Chew Magna**, with his mother **Elizabeth Saniger, widow, 60, born Chew Magna** living with him at Oxford Road. The register gives **William Sinegar, baptised at Chew Magna in 1822, son of Simon and Elizabeth.** Twenty-seven in the spring of 1851 puts his birth about 1824; a baptism in 1822 is inside the ordinary slack of a census age, and the 1841 return for this same woman — 45, when she was nearer 50 — shows how much slack these ages carry.\n\nSo the household runs back a generation. **Simon Saniger and Elizabeth of Chew Magna**, with sons Charles in 1816 and William in 1822; Simon dead before 1851, since she is entered as a widow; and Elizabeth born in the parish herself, which makes **Simon the incomer**.",
+    "chipJoin": "inferred",
+    "berkeleyHead": "Where a Simon comes from, if he comes from anywhere",
+    "berkeley": "There is exactly **one Simon** among the 158 SANIGER baptisms in England Births & Baptisms 1538-1975, read in full for this archive: **Simon Saniger, baptised at Berkeley in 1786, father William.** A man of that name and age could be the father at Chew Magna — thirty at the first christening, thirty-six at the second — and it would put a Berkeley Saniger in a Somerset parish a generation before Hannah's family arrived in Bristol.\n\n**It is a candidate and nothing more.** No marriage of a Simon to an Elizabeth has been found, at Chew Magna or anywhere: the wildcard `S*N*G*` across every parish and BMD set at Chew Magna returns four records in total, and neither of the other two is this name. Until that marriage or a burial turns up, one Simon in a register and another Simon in a register are two men with the same name.",
+    "chipBerkeley": "a lead, not a link",
+    "hannahHead": "None of this touches Hannah",
+    "hannah": "**It is still not her family.** Neither child is Hannah, the dates are wrong for her, and the 1851 census names her birthplace as Berkeley in her own household. What changes is the reason: this page used to say the Chew Magna idea failed because there were **no Sanigers there at all**, and there were. It fails because the Sanigers who were there are a different household, and because Hannah's own birthplace is stated elsewhere in her own words.",
+    "chipHannah": "not claimed"
+  }
 }

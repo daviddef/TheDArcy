@@ -1,89 +1,104 @@
 {
- "_note": [
-  "Readings this archive has WITHDRAWN, and must not state as fact again.",
-  "",
-  "A retired phrase is this archive's own wording and never a document's, which is",
-  "what makes it checkable where a general prose gate cannot be: nobody quotes a",
-  "source saying «a blank of twenty-four years». If the string is on a page, this",
-  "archive put it there.",
-  "",
-  "WHERE THEY ARE ALLOWED, and why this list needs the exception more than the rule:",
-  "on /corrections, which exists to quote them; and in DATED LOGS — the work list,",
-  "the searched register, the change log — which record what was believed on a day",
-  "and MUST NOT be edited when the belief changes. Rewriting a log to match a later",
-  "finding is the failure this archive's whole method is against.",
-  "",
-  "TWO ENTRIES WERE REMOVED ON THE FIRST RUN, and why matters more than the tool.",
-  "«No record has been found for them» is not a withdrawn WORDING. It is a",
-  "sentence that is false about thirty people and true about four hundred — the",
-  "fix on 17 September made grade.js say it only when a person genuinely has no",
-  "record, and it says it correctly on every page this gate flagged. And «may",
-  "never have existed» reached ten person pages only inside MENTION SNIPPETS,",
-  "which quote /open-questions and /corrections reporting the error.",
-  "",
-  "So the rule for this list: a phrase belongs here only if it is a PROPOSITION",
-  "this archive has withdrawn in every context — never a sentence that is",
-  "sometimes true, and never one the archive's own reporting quotes."
- ],
- "allow": [
-  "/corrections",
-  "/what-we-got-wrong",
-  "/worklist",
-  "/searched",
-  "/changes",
-  "/errands",
-  "/open-questions"
- ],
- "retired": [
-  {
-   "phrase": "Sanigers of Awre and Blakeney",
-   "instead": "there are none; the surname is absent from the Forest of Dean",
-   "err": 32
-  },
-  {
-   "phrase": "Forest side of the family",
-   "instead": "invented; disproved by Bigland, Rudder and the 1608 muster",
-   "err": 32
-  },
-  {
-   "phrase": "a blank of twenty-four years",
-   "instead": "the Army Lists bound it with a rank at either end",
-   "err": 9
-  },
-  {
-   "phrase": "is known to exist",
-   "instead": "no B2455 item could be found for Lindesay Atkinson D'Arcy",
-   "err": 31
-  },
-  {
-   "phrase": "Ann has never had one",
-   "instead": "she was on this page from 13 September",
-   "err": 33
-  },
-  {
-   "phrase": "170 distinct catalogue records",
-   "instead": "193; the tool was truncating at a hundred",
-   "err": 36
-  },
-  {
-   "phrase": "not published at all",
-   "instead": "not published AS PEOPLE; six are named on purpose",
-   "err": 37
-  },
-  {
-   "phrase": "Quoin-drawer Overseer",
-   "instead": "Fount-room Overseer",
-   "err": 35
-  },
-  {
-   "phrase": "excluded from this build entirely",
-   "instead": "excluded AS PEOPLE; six are named on purpose",
-   "err": 37
-  },
-  {
-   "phrase": "stricter than the estate rule",
-   "instead": "it is not stricter — this archive runs the same named-bare policy",
-   "err": 37
-  }
- ]
+  "_note": [
+    "Readings this archive has WITHDRAWN, and must not state as fact again.",
+    "",
+    "A retired phrase is this archive's own wording and never a document's, which is",
+    "what makes it checkable where a general prose gate cannot be: nobody quotes a",
+    "source saying «a blank of twenty-four years». If the string is on a page, this",
+    "archive put it there.",
+    "",
+    "WHERE THEY ARE ALLOWED, and why this list needs the exception more than the rule:",
+    "on /corrections, which exists to quote them; and in DATED LOGS — the work list,",
+    "the searched register, the change log — which record what was believed on a day",
+    "and MUST NOT be edited when the belief changes. Rewriting a log to match a later",
+    "finding is the failure this archive's whole method is against.",
+    "",
+    "TWO ENTRIES WERE REMOVED ON THE FIRST RUN, and why matters more than the tool.",
+    "«No record has been found for them» is not a withdrawn WORDING. It is a",
+    "sentence that is false about thirty people and true about four hundred — the",
+    "fix on 17 September made grade.js say it only when a person genuinely has no",
+    "record, and it says it correctly on every page this gate flagged. And «may",
+    "never have existed» reached ten person pages only inside MENTION SNIPPETS,",
+    "which quote /open-questions and /corrections reporting the error.",
+    "",
+    "So the rule for this list: a phrase belongs here only if it is a PROPOSITION",
+    "this archive has withdrawn in every context — never a sentence that is",
+    "sometimes true, and never one the archive's own reporting quotes."
+  ],
+  "allow": [
+    "/corrections",
+    "/what-we-got-wrong",
+    "/worklist",
+    "/searched",
+    "/changes",
+    "/errands",
+    "/open-questions"
+  ],
+  "retired": [
+    {
+      "phrase": "Sanigers of Awre and Blakeney",
+      "instead": "there are none; the surname is absent from the Forest of Dean",
+      "err": 32
+    },
+    {
+      "phrase": "Forest side of the family",
+      "instead": "invented; disproved by Bigland, Rudder and the 1608 muster",
+      "err": 32
+    },
+    {
+      "phrase": "a blank of twenty-four years",
+      "instead": "the Army Lists bound it with a rank at either end",
+      "err": 9
+    },
+    {
+      "phrase": "is known to exist",
+      "instead": "no B2455 item could be found for Lindesay Atkinson D'Arcy",
+      "err": 31
+    },
+    {
+      "phrase": "Ann has never had one",
+      "instead": "she was on this page from 13 September",
+      "err": 33
+    },
+    {
+      "phrase": "170 distinct catalogue records",
+      "instead": "193; the tool was truncating at a hundred",
+      "err": 36
+    },
+    {
+      "phrase": "not published at all",
+      "instead": "not published AS PEOPLE; six are named on purpose",
+      "err": 37
+    },
+    {
+      "phrase": "Quoin-drawer Overseer",
+      "instead": "Fount-room Overseer",
+      "err": 35
+    },
+    {
+      "phrase": "excluded from this build entirely",
+      "instead": "excluded AS PEOPLE; six are named on purpose",
+      "err": 37
+    },
+    {
+      "phrase": "stricter than the estate rule",
+      "instead": "it is not stricter — this archive runs the same named-bare policy",
+      "err": 37
+    },
+    {
+      "phrase": "Not found, in any spelling",
+      "instead": "found under SANIGRE, the one spelling the table did not hold",
+      "err": 38
+    },
+    {
+      "phrase": "371 baptisms",
+      "instead": "371 index entries; the 298 counted one by one are 246 baptisms",
+      "err": 39
+    },
+    {
+      "phrase": "None, in any spelling",
+      "instead": "two at Chew Magna, to Simon and Elizabeth",
+      "err": 40
+    }
+  ]
 }

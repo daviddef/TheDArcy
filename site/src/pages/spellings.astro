@@ -6,6 +6,18 @@ import Scroll from "../components/Scroll.astro";
 import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/spellings.json";
 
+const total = d.rows.reduce((a, r) => a + Number(r[1]), 0);
+const productive = d.rows.filter((r) => Number(r[1]) > 0).length;
+
+/* Counted, never typed — the fault this page was correcting when it was written. */
+const dd = d.dedupe.counted;
+const ddEntries = dd.reduce((a, r) => a + r[1], 0);
+const ddEvents = dd.reduce((a, r) => a + r[2], 0);
+const ddBaptisms = ddEvents - d.dedupe.cross;
+const ddRepeats = ddEntries - ddEvents;
+const restEntries = total - ddEntries;
+const restForms = d.rows.length - dd.length;
+
 const parts = [
   ["oneHead", "one", "chip1", "doc"],
   ["gapHead", "gap", "chip2", "doc"],
@@ -17,14 +29,14 @@ const parts = [
 <Base
   title="Every Spelling of One Name"
   eyebrow={`One record set, every spelling · ${d.found}`}
-  dek={`${d.rows.reduce((a, r) => a + Number(r[1]), 0)} baptisms under ${d.rows.filter((r) => Number(r[1]) > 0).length} spellings of one surname — and the rarest of them is the one this family used.`}>
+  dek={`${total} index entries under ${productive} spellings of one surname — and the rarest of them is the one this family used.`}>
 
   <section class="blk">
     <p class="lede" set:html={mdp(d.lede)}></p>
     <Note style="margin-top:1.2rem"><span set:html={mdp(d.set)} /></Note>
   </section>
 
-  <Blk label="The measurement" title="Fifteen strings put to one index">
+  <Blk label="The measurement" title={`${d.rows.length} strings put to one index`}>
     <Scroll>
       <table style="margin-top:1.1rem">
         <thead><tr>{d.cols.map((c) => <th>{c}</th>)}</tr></thead>
@@ -37,8 +49,9 @@ const parts = [
             <td class="m small">{b}</td></tr>))}</tbody>
       </table>
     </Scroll>
-    <p class="small" style="margin-top:1rem">Twelve spellings returned entries; three returned none.
-    Every entry of every spelling was read.</p>
+    <p class="small" style="margin-top:1rem">{productive} spellings returned entries; {d.rows.length - productive} returned none.
+    Every entry of every spelling was read. The column counts <strong>index entries</strong>, not children —
+    see <em>{d.limitsHead}</em> below for how far the two diverge.</p>
   </Blk>
 
   <Blk label="Recounted" title={d.completedHead}>
@@ -81,5 +94,28 @@ const parts = [
 
   <Blk label="Limits" title={d.limitsHead}>
     <p class="dek" style="margin-top:1rem" set:html={mdp(d.limits)}></p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr><th>Spelling</th><th class="m">Index entries</th><th class="m">Baptisms</th><th class="m">Repeats</th></tr></thead>
+        <tbody>{dd.map(([sp, e, b]) => (
+          <tr><td class="mono"><strong>{sp}</strong></td><td class="m">{e}</td>
+            <td class="m">{b}</td><td class="m small">{e - b}</td></tr>))}
+          <tr><td><strong>Counted</strong></td><td class="m"><strong>{ddEntries}</strong></td>
+            <td class="m"><strong>{ddEvents}</strong></td><td class="m small"><strong>{ddRepeats}</strong></td></tr>
+        </tbody>
+      </table>
+    </Scroll>
+    <p class="small" style="margin-top:1rem">{ddEntries} index entries are <strong>{ddBaptisms} baptisms</strong>
+    — {ddRepeats} repeats within a spelling, and {d.dedupe.cross} more baptisms that appear under two spellings
+    each: Morris son of Morris at Berkeley in 1677, and William son of William at Bristol in 1830.
+    That is one entry in {Math.round(ddEntries / (ddEntries - ddBaptisms))}.
+    The remaining <strong>{restEntries}</strong> entries across {restForms} smaller forms have not been
+    counted this way.</p>
+    <Note style="margin-top:1.3rem"><span set:html={mdp(d.dupWhy)} /></Note>
+  </Blk>
+
+  <Blk label="The better instrument" title={d.wildHead}>
+    <p class="dek" style="margin-top:1rem" set:html={mdp(d.wild)}></p>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.chipWild}</span></p>
   </Blk>
 </Base>

@@ -1,7 +1,7 @@
 {
   "found": "16 September 2026",
-  "lede": "**24 spellings** of this surname have been put to one record set — FindMyPast's **England Births & Baptisms 1538-1975** — searched nationally, every form asked the same way, every entry of every productive form read. **19 return something. Together they hold 371 baptisms between 1565 and 1909**, and the shape they make is not the shape this archive had assumed.",
-  "set": "One record set, one county mostly, one index. The set is the FamilySearch transcription of English parish registers and bishops' transcripts, and it is neither complete nor free of duplication — this page counts index entries, not children. Its value here is that it names **the father's first name** for almost every entry, and that the same query can be run fifteen times with only the surname changed. That makes it a measuring instrument for spellings, which is a different job from finding a person.",
+  "lede": "**27 spellings** of this surname have been put to one record set — FindMyPast's **England Births & Baptisms 1538-1975** — searched nationally, every form asked the same way, every entry of every productive form read. **20 return something. Together they hold 373 index entries between 1565 and 1909**, and the shape they make is not the shape this archive had assumed. **Index entries are not children**: the five largest forms have now been counted one by one, and the difference is about one entry in six. The measurement is below.",
+  "set": "One record set, one county mostly, one index. The set is the FamilySearch transcription of English parish registers and bishops' transcripts, and it is neither complete nor free of duplication — **this page counts index entries, not children**, and the Entries column is headed that way on purpose. Its value here is that it names **the father's first name** for almost every entry, and that the same query can be run twenty-seven times with only the surname changed. That makes it a measuring instrument for spellings, which is a different job from finding a person.",
   "cols": [
     "Spelling",
     "Entries",
@@ -130,6 +130,13 @@
       ""
     ],
     [
+      "SINNIGER",
+      "2",
+      "Slimbridge 1629; Dursley 1720, father Abraham — found by wildcard, 21 Sep",
+      "",
+      ""
+    ],
+    [
       "SINAGER",
       "1",
       "Bristol",
@@ -140,6 +147,20 @@
       "SANNIGAR",
       "1",
       "added 21 September",
+      "",
+      ""
+    ],
+    [
+      "SINIGOR",
+      "0",
+      "nought here — one Stinchcombe marriage of 1801 (21 Sep)",
+      "",
+      ""
+    ],
+    [
+      "SANIGRE",
+      "0",
+      "nought in this set — and the only form that carries Thomas’s 1828 marriage (21 Sep)",
       "",
       ""
     ],
@@ -194,8 +215,8 @@
   "notHead": "Two groups that are probably not this name at all",
   "not": "**Mortlake, Surrey** holds nine of the ten SYNAGERs and one SINNEGER between 1668 and 1718 — a self-contained family two counties away with no Gloucestershire connection on any record here. And **Whitechapel in 1845 and 1847** has Peter and Johannes Christian Sainger, sons of Cornelius: those are German given names, and SÄNGER is an ordinary German surname. Counting either group into this family would inflate it with strangers.",
   "chip5": "disputed",
-  "limitsHead": "What this page is not",
-  "limits": "It is not a count of people. **Thirty-three of the 158 SANIGER entries are duplicates** — 125 distinct name-year-place combinations — and the duplication runs through every spelling: Mary, daughter of Samuell, is indexed four times in 1688, and Sarah, daughter of William, four times at Bristol in 1839. It is not a count of baptisms either, because the set transcribes some registers and not others. It is a count of **what one index holds under fifteen strings**, which is the only thing it can honestly be, and its use is to tell this archive which strings it must ask every future question in.",
+  "limitsHead": "What this page is not, and by how much",
+  "limits": "It is not a count of people, and it is not a count of baptisms. **The index repeats itself.** On **21 September** the five largest forms were read row by row and counted as events rather than as rows. The table below is that count; the figures under it are derived from it, not typed.\n\n**The repetition is not spread evenly, and that is the useful part.** It sits almost entirely in SANIGER and SANIGAR, the two forms in which the Berkeley and Bristol registers were transcribed more than once. SINNEGAR repeats not at all. **Duplication tracks the transcription, not the name** — so a form's entry count says as much about how often its parish was typed up as about how often the name was written. Mary, daughter of Samuell, is indexed four times in 1688; Sarah, daughter of William, four times at Bristol in 1839.\n\nThis page reported earlier that 33 of the 158 SANIGER entries were duplicates, leaving 125. **That count is confirmed and refined, not overturned**: 125 is right if the father's name is read as a string, and 121 once **Edw** and **Edward**, **Wm** and **William**, **Jos** and **Joseph** are read as the same man, which they plainly are.",
   "scarp": {
     "found": "20 September 2026",
     "head": "The other family, on the scarp",
@@ -254,8 +275,43 @@
     "whyHead": "Why it matters to this archive and not only to that one",
     "why": "Hannah Saniger was baptised **SANIGOR at Berkeley**, a Vale form in a Vale parish, and by 1841 she was keeping house in Bristol as **SINEGAR** — a scarp form. Her brother is **Thomas Sinegar** of St Philip and Jacob. **Whoever was writing their surname in Bristol was using the other family's spelling**, and until this sweep this archive had no idea there was another family to borrow it from."
   },
-  "completedHead": "A note on the number, which has moved once",
-  "completed": "This page first reported **340 baptisms across fifteen spellings, twelve of them productive**, on 17 September. That was accurate for the fifteen forms then tried. On **21 September** the remaining forms from this archive's own spelling table were put through the same query, bringing it to 24 tried and 371 baptisms. **The basis did not change and neither did any earlier count** — SANIGER is still 158, SANIGOR still 4. Only the number of questions asked changed, which is the only honest reason a total should move.",
+  "completedHead": "A note on the number, which has moved twice and changed unit once",
+  "completed": "This page first reported **340 baptisms across fifteen spellings, twelve of them productive**, on 17 September. That was accurate for the fifteen forms then tried. On **21 September** the remaining forms from this archive's own spelling table were put through the same query, bringing it to 24 tried and 371 entries. **The basis did not change and neither did any earlier count** — SANIGER is still 158, SANIGOR still 4. Only the number of questions asked changed, which is the only honest reason a total should move.\n\n**Later the same day the word changed.** The table said *baptisms* where it had counted *entries*, and the difference is about one in six. The counts are untouched; the noun is corrected, and the measurement behind the correction is set out below. A **25th** form was added at the same time — **SANIGRE**, which returns nothing here and everything that mattered elsewhere.\n\n**And it moved a third time the same evening, which is the point.** A single **wildcard** query over eleven years of one county turned up **SINIGOR** and **SINNIGER**, neither of them in the table that had just been called complete. SINNIGER is productive: two baptisms, one of them Abraham's son at Dursley in 1720. **25 became 27 and 371 became 373**, and the number is a floor.",
   "excludeHead": "Two forms deliberately left out",
-  "exclude": "**SINGER and SANGER.** They are in this archive's alias list and they return **127 and 40 in Gloucestershire alone** — because they are ordinary English surnames in their own right, not forms of this one. Counting them would drown the table in strangers, which is the opposite of what it is for."
+  "exclude": "**SINGER and SANGER.** They are in this archive's alias list and they return **127 and 40 in Gloucestershire alone** — because they are ordinary English surnames in their own right, not forms of this one. Counting them would drown the table in strangers, which is the opposite of what it is for.",
+  "wildHead": "One query that would have done the work of twenty-five",
+  "wild": "This whole table is a list of guesses about how a clerk might have spelled a name, and the site it was measured on does not need the guesses. **The surname box takes wildcards.** `S*N*G*` asked of Gloucestershire marriages for the three years 1827-1829 returns **53 rows**, and in them:\n\n**Thomas Sanigre, 1828, Martha, Bristol** — the marriage this archive searched for under eight spellings and recorded as not existing. And **John Saniger, 1827, Ann, Rodborough** standing beside **John Sanigor, 1827, Ann, Rodborough** — one wedding indexed under two forms, one of them the rare spelling that had already hidden Hannah's baptism for two searches.\n\n**It is not a free win.** The same 53 rows hold Sanger, Shearing and Sheering, and the same pattern run nationally across the whole baptism set would return hundreds of strangers. The wildcard buys completeness and spends it on noise, so it works where a question has **a place and a decade** and fails where it has neither. That is the opposite trade from this table, which asks twenty-five narrow questions across four centuries. **Both are worth having; this archive had only one of them.**\n\n**And it found two spellings this table did not have.** The same 122 rows hold **SINIGOR** — Sarah, Stinchcombe, 1801 — and **SINNIGER**, the same marriage indexed a second way. Put back to the baptism set on the table's own basis, SINNIGER returns **two**: Margrett at Slimbridge in 1629 and **Thomas, son of Abraham, at Dursley in 1720** — Abraham being the scarp patriarch this page already names. SINIGOR returns nought, like SANIGRE. **Eleven years of one county, one query, two forms missing from a table that had just been rebuilt and called complete.** Both are in it now, and the honest reading is that **this table is a floor and not a ceiling.**\n\n**And the trade is not the same for every surname, which is worth saying before anyone takes this away as a rule.** The Defranceski session ran the same method on an Italian surname the same afternoon: the exact spelling returns **5** in the England and Wales indexes, and the wildcard `DEFRANC*` returns **608** — almost all of them *de France*, *de Franca*, *Barker or Defrance*, a Huguenot-derived English surname with no connection to theirs. Their signal was in the exact five, and it would not have been easier to see among six hundred.\n\n**The variable is whether the stem is native to the archive's language.** *Snig-* is rare in England, so the noise here stays readable: 122 rows for eleven years of one county, six of them this family. *Defranc-* in England is everywhere. The method is the same and the arithmetic is not, so the honest form of the rule is: **use the wildcard where the stem is foreign to the records, and use it inside a narrow window in any case.**",
+  "chipWild": "documented",
+  "dupWhy": "**And part of the duplication has an explanation now.** England Births & Baptisms 1538-1975 is not purely Anglican: it ingests the **RG 4 non-conformist registers** as well. Rose Sanigar, baptised at Dursley in 1781, is in this table twice — and she is also one of eight SANIGAR entries in the separate non-conformist set, all of them at **Dursley, Corn Meeting, Congregational**. So some of the repeats counted above are not one register typed up twice but **one register reaching the index by two routes**, which is a better account of them than «transcribed more than once» and does not change the count.",
+  "dedupe": {
+    "note": "The five largest forms, read row by row on 21 September and counted as events rather than as rows. The other forms have not been counted this way.",
+    "counted": [
+      [
+        "SANIGER",
+        158,
+        121
+      ],
+      [
+        "SANIGAR",
+        56,
+        45
+      ],
+      [
+        "SAINGER",
+        30,
+        29
+      ],
+      [
+        "SINEGAR",
+        28,
+        27
+      ],
+      [
+        "SINNEGAR",
+        26,
+        26
+      ]
+    ],
+    "cross": 2
+  }
 }

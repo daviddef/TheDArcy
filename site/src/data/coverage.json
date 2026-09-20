@@ -514,6 +514,69 @@
       "verdict": "absent",
       "note": "Measured on 21 September by asking the same question of two counties. **SMITH returns 3 baptisms in Hampshire and 41,098 in Kent.** The set is a FamilySearch transcription and Hampshire is simply not in it. This archive has never built a Hampshire finding on it — Joseph D'Arcy's baptism, his siblings and his parents' marriage all come from the **Hampshire Genealogical Society's own county sets**, which are separate record sets on the same site. Recorded so that nobody reaches for the national set and reports Portsea empty.",
       "href": "/portsea"
+    },
+    {
+      "db": "FindMyPast — England Marriages 1538-1973",
+      "where": "Hampshire",
+      "holds": "nothing whatever for this county",
+      "span": "1538-1973 nominally",
+      "verdict": "absent",
+      "note": "Measured on 21 September, one surname, one query shape, one session. **SMITH returns 0 marriages in Hampshire across the whole 435-year span and 14,056 in Gloucestershire.** Not few — none. Nothing about a search box produces that: the same page, the same afternoon, returns fourteen thousand for the county next door. **This voids every Hampshire marriage null this archive has recorded against the national set**, including «no Joseph D'Arcy marries in Hampshire between 1825 and 1835», which was a statement about the transcription and not about Joseph. The county sets on the same site are unaffected.",
+      "href": "/behind-the-paywall"
+    },
+    {
+      "db": "FindMyPast — England Deaths & Burials 1538-1991",
+      "where": "Hampshire",
+      "holds": "twenty-three entries, and some of them are not Hampshire",
+      "span": "1538-1991 nominally",
+      "verdict": "absent",
+      "note": "The third of the three FamilySearch national sets, asked the same way on 21 September: **SMITH returns 23 in Hampshire and 4,600 in Gloucestershire.** And the 23 do not survive reading — the first two are at **Easton-Maudit** and **Paulersbury**, which are Northamptonshire villages filed under the wrong county. All three national sets are therefore unusable for Hampshire, and a Hampshire question must go to the Hampshire Genealogical Society's county sets or to civil registration.",
+      "href": "/behind-the-paywall"
+    },
+    {
+      "db": "FindMyPast — England & Wales Deaths 1837-2007",
+      "where": "the Lymington registration district",
+      "holds": "the GRO death index, addressable by district",
+      "span": "1837 onwards",
+      "verdict": "good",
+      "note": "**21 PITT deaths registered at Lymington between 1820 and 1900**, and **two D'Arcy deaths in the whole run of the index** — Joseph in the first quarter of 1848 and Katherine Lucy Elizabeth in the second of 1863, both of whom this archive already holds. The district is plainly indexed, so the absence of any other D'Arcy there is a fact about the family and not about the set.",
+      "href": "/joseph-darcy"
+    },
+    {
+      "db": "FindMyPast — England & Wales Non-Conformist Births and Baptisms (RG 4)",
+      "where": "Bristol",
+      "holds": "the Bristol chapel registers, indexed and searchable by place",
+      "span": "1724 to 1831 for the control surname",
+      "verdict": "good",
+      "note": "**SMITH returns 133 chapel baptisms at Bristol**, Congregational and Presbyterian. The series this archive spent a week planning to order volume by volume from The National Archives is transcribed here and answerable in one query. **`S*N*G*R` at Bristol returns nought**, against 808 for the same wildcard nationally and 8 for SANIGAR — all eight at Dursley, Corn Meeting. The set also feeds England Births & Baptisms 1538-1975, so that set is not purely Anglican.",
+      "href": "/bristol-chapels"
+    },
+    {
+      "db": "FindMyPast — England & Wales Non-Conformist Burials (RG 4)",
+      "where": "Bristol",
+      "holds": "chapel burials",
+      "span": "1704 to 1812 in the rows returned",
+      "verdict": "good",
+      "note": "`S*N*G*R` at Bristol returns **nine** — Singer, Springer, Stringer, Swearenger — and none of them is this surname. **409 under the same wildcard across the whole set.** A null against a query that returns nine near misses at the right place is a null worth having.",
+      "href": "/bristol-chapels"
+    },
+    {
+      "db": "FindMyPast — every Birth, Marriage, Death & Parish record set",
+      "where": "Barbados",
+      "holds": "the British armed forces overseas registers, and nothing earlier",
+      "span": "1811 at the earliest",
+      "verdict": "absent",
+      "note": "Asked across the whole category on 21 September rather than set by set. **D'ARCY at Barbados returns four records, all between 1850 and 1876**, every one of them from *British Armed Forces And Overseas Births And Baptisms* or the matching deaths set. **Control: SMITH at Barbados returns eight, and the oldest is 1811** — a Royal Regiment of Foot deaths register. There is nothing here from the eighteenth century at all. **Constantine's christening at St Michael in February 1786 and Jane's in March 1788 are not on this site and cannot be**, which settles how errand 33 has to be answered: from the Barbados originals or a repository copy, not from another index search.",
+      "href": "/constantine"
+    },
+    {
+      "db": "FindMyPast — Newspapers & Publications (the family-notice index)",
+      "where": "England, before about 1850",
+      "holds": "a name index to BMD notices, weighted to the twentieth century",
+      "span": "thin before 1850",
+      "verdict": "partial",
+      "note": "**It is not the British Newspaper Archive.** It indexes birth, marriage and death notices by name; the Year and Location columns are empty for most rows, so **any year filter silently returns zero** — SMITH gives 674,001 unfiltered and 0 for 1827 ± 2. Read whole rather than filtered, **Robert D'Arcy returns 42 notices with nothing dated before 1857 and Joseph D'Arcy 84 with nothing before 1914.** Useful for the late nineteenth and twentieth centuries; useless for this archive's Georgian questions, which need the full-text site and its own sign-in.",
+      "href": "/behind-the-paywall"
     }
   ],
   "verdicts": {

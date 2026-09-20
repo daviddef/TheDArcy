@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/chew-magna.json";
 ---
 <Base
@@ -178,4 +179,26 @@ import d from "../data/chew-magna.json";
       volumes can hold a birth in this window. <a href={u("/bristol-chapels/")}>They are listed →</a></li>
     </ol>
   </section>
+
+  <Blk label={`A generation named · ${d.simon.found}`} title={d.simon.head}>
+    <p class="lede" set:html={mdp(d.simon.lede)}></p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr>{d.simon.cols.map((c) => <th>{c}</th>)}</tr></thead>
+        <tbody>{d.simon.rows.map((r) => (
+          <tr>{r.map((c, i) => (
+            <td class={i === 1 ? "m" : ""} set:html={mdp(c)}></td>))}</tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.simon.chip}</span></p>
+    <Note style="border-left-width:3px;margin-top:1.3rem"><strong>{d.simon.joinHead}.</strong>
+      <span set:html={mdp(d.simon.join)} />
+      {" "}<span class="chip inf">{d.simon.chipJoin}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.simon.berkeleyHead}.</strong>
+      <span set:html={mdp(d.simon.berkeley)} />
+      {" "}<span class="chip lore">{d.simon.chipBerkeley}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.simon.hannahHead}.</strong>
+      <span set:html={mdp(d.simon.hannah)} />
+      {" "}<span class="chip sup">{d.simon.chipHannah}</span></Note>
+  </Blk>
 </Base>

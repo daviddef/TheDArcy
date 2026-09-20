@@ -198,8 +198,10 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
     set on one basis — <strong>England Births &amp; Baptisms 1538-1975</strong>, searched nationally,
     every form put the same way — this name is spelled <strong>{d.spellings.length}</strong> ways,
     of which <strong>{d.spellings.filter(([, n]) => n > 0).length}</strong> return anything at all.
-    Together they hold <strong>{d.spellings.reduce((a, [, n]) => a + n, 0)}</strong> baptisms between
-    1565 and 1909, and the commonest is the one the family uses.</p>
+    Together they hold <strong>{d.spellings.reduce((a, [, n]) => a + n, 0)}</strong> index entries
+    between 1565 and 1909, and the commonest is the one the family uses. <strong>Entries are not
+    children</strong>: the five largest forms have been counted one by one and about one entry in six
+    is a repeat. <a href={u("/spellings/")}>The measurement →</a></p>
     <Note tight style="margin-top:1rem">
       <strong>This table was recounted on 21 September 2026 and its numbers changed.</strong> It
       previously held nineteen forms counted as entries in the parish registers read for this
@@ -217,6 +219,10 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
                   {s === "SINNEGAR" && <span class="chip doc">the commonest in the registers</span>}
                   {n === 0 && (["SANYGER", "SYNIGER"].includes(s)
                     ? <span class="chip lore">the 1608 muster's form — in no register anywhere</span>
+                    : s === "SANIGRE"
+                    ? <span class="chip doc">nought here — and the only form that carries Thomas's 1828 marriage</span>
+                    : s === "SINIGOR"
+                    ? <span class="chip doc">nought here — but a Stinchcombe marriage of 1801</span>
                     : <span class="chip sup">tried, and returns nothing</span>)}</td></tr>))}</tbody>
       </table>
     </Scroll>

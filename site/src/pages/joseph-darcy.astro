@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/joseph-darcy.json";
 ---
 <Base
@@ -152,7 +153,7 @@ import d from "../data/joseph-darcy.json";
       <span class="chip inf">{d.pitt.chip}</span>
       <a href={u("/george-pitt")}>George Pitt D'Arcy →</a>
       <br /><br />
-      <strong>{d.pitt.tested}</strong>
+      <span set:html={mdp(d.pitt.tested)} />
     </div>
     <p class="dek" style="margin-top:1.2rem">{d.richard}
       <a href={u("/portsea")}>Why his baptism would never have been found →</a></p>
