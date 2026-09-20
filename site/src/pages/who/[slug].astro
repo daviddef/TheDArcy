@@ -33,6 +33,23 @@ const context = (src) => WHERE.find(([re]) => re.test(src));
 <Base title={p.name} eyebrow={p.n === 1 ? "one record names this person" : `${p.n} records name this person`}
   dek={p.rows[0].says.slice(0, 155)}>
 
+  {p.orphan && (
+    <section class="blk">
+      <Note style="border-left-width:3px">
+        <strong>The family tree carries this NAME, and not this person.</strong> Two other men
+        called {p.name} are in it, and the records below belong to neither of them — which is
+        settled document by document in <span class="mono">tools/record-owners.json</span>. He had
+        no page of any kind until 20 September 2026: <a href={u("/people/")}>/people/</a> needs a
+        tree entry, and this section used to skip anyone whose name the tree already carried. He
+        fell between the two.
+        {p.name === "Thomas Saniger" && (
+          <> He is <strong>Hannah Saniger's brother</strong>, baptised at Berkeley on 3 July 1808,
+          and he is written about at <a href={u("/thomas-sinegar/")}>Thomas Sinegar</a> — under the
+          spelling Bristol gave him, which is why he was hard to find.</>)}
+      </Note>
+    </section>
+  )}
+
   <section class="blk">
     <Note>
       <strong>This person is not in the family tree.</strong> They are here because this archive

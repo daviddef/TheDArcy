@@ -51,13 +51,40 @@ def main():
             })
             e["rows"].append({"says": r["says"], "source": r["source"], "link": r["link"]})
 
+    # Records this archive has decided belong to NOBODY in the family tree,
+    # even though the tree carries their name. tools/record-owners.json says so
+    # explicitly, rule by rule.
+    #
+    # This exists because of Thomas Saniger, baptised Berkeley 3 July 1808, son
+    # of John and brother of Hannah. Four register lines are his. He is not in
+    # the tree, so /people/ has nothing for him — and the loop below used to
+    # skip him anyway, because the tree carries two OTHER men of his name. He
+    # fell between both mechanisms and had no page at all while his brother-in-
+    # law and his sister both had one.
+    orphaned = collections.defaultdict(list)
+    op = os.path.join(ROOT, "tools", "record-owners.json")
+    if os.path.exists(op):
+        rules = json.load(open(op, encoding="utf-8"))
+        for nm, rs in rules.items():
+            if nm.startswith("_"):
+                continue
+            for rule in rs.get("rules", []):
+                if rule.get("slug") is None:
+                    orphaned[nm].append(rule["match"].lower())
+
+    def is_orphan(key, says):
+        return any(m in says.lower() for m in orphaned.get(key, []))
+
     # only people the tree does NOT carry need a page of their own; the rest
     # already have one, and duplicating them would split the same human in two
     out = {}
     used = set()
     for key, e in people.items():
         if e["inTree"]:
-            continue
+            orph = [r for r in e["rows"] if is_orphan(key, r["says"])]
+            if not orph:
+                continue
+            e = dict(e, rows=orph, inTree=False, orphan=True, treeLink="")
         slug = kebab(e["name"])
         while slug in used:
             slug += "-2"

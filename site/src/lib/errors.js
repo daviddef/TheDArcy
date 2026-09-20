@@ -3,6 +3,7 @@
 export const OWN = [
   {
     when: "20 September 2026",
+    cause: "instrument",
     what: "Published “170 distinct catalogue records, 160 of them Berkeley Castle” from a sweep of The National Archives' Discovery API. The true figures are 193 and 183.",
     truth:
       "The tool written for that sweep stopped after one page and returned the first hundred records of however many a query had. SWONHUNGRE alone returns 126, so twenty-six of its records were never seen, and the same was true of any term over a hundred.",
@@ -13,6 +14,7 @@ export const OWN = [
   },
   {
     when: "20 September 2026",
+    cause: "instrument",
     what: "Published Hannah Saniger's page for weeks with two of its four «written about here» links silently missing — among them her voyage on the General Hewitt, the ship that brought the family to Queensland.",
     truth:
       "The map that holds those links, APPEARS_IN in /people/[slug].astro, carried the key «hannah-saniger» twice: once with four links and once with two. In a JavaScript object literal the later entry simply replaces the earlier one.",
@@ -23,6 +25,7 @@ export const OWN = [
   },
   {
     when: "17 September 2026",
+    cause: "instrument",
     what: "Printed “No record has been found for them” on the pages of thirty people for whom this archive had read a hundred and thirty records — including Constantine D'Arcy, who has two commissions in the London Gazette, a death notice in the Kentish Gazette, a burial register at Medway Archives and an entry in the Corps roll, and a page of this site written about him.",
     truth:
       "One hundred and seventy-six record lines naming fifty-five people in the family tree had been read, graded and published on /register/. Every one of them was dropped before it could reach the person it named.",
@@ -33,6 +36,7 @@ export const OWN = [
   },
   {
     when: "16 September 2026",
+    cause: "memory",
     what: "Announced Ann Saniger's 1798 baptism at Berkeley as a new find — “Ann has never had one” — in a block published on the page that had already been carrying her since 13 September.",
     truth:
       "She was four blocks further up the same page, in the table of John Saniger's children, as ANN SANIGAR 1798. One vowel apart, the same index entry, on the same screen.",
@@ -43,6 +47,7 @@ export const OWN = [
   },
   {
     when: "15 September 2026",
+    cause: "premise",
     what: "Invented a “Forest side of the family” at AWRE and BLAKENEY, and then built on it — two errands, four coverage rows, an atlas point, and three work-list items, all describing how to reach Sanigers in the Forest of Dean.",
     truth:
       "There is no documented Saniger at Awre or Blakeney anywhere in this archive, and never has been. The 1608 muster puts all eleven men of the surname at HALMORE, HINTON and SANIGER in Berkeley, at Wotton-under-Edge, at Woodmancote in Dursley parish, at Dursley itself, at Paganhill in Stroud, and at Alkerton, Kings Stanley and Oxlynch in Stonehouse — the Vale and the Cotswold edge, and not once across the Severn. Rudder mentions Awre 194 times and names no Saniger in the whole book. Bigland's second volume mentions Awre 172 times and Blakeney 4, and names no Saniger at all, while his first volume gives twenty at Berkeley.",
@@ -53,6 +58,7 @@ export const OWN = [
   },
   {
     when: "15 September 2026",
+    cause: "edition",
     what: "Published “Eleven men, four spellings” from the 1608 muster, and named the man living in the hamlet the surname came from JOHN SAINGER — the headline of the whole page, since his name and his address were nearly the same word.",
     truth:
       "There are three spellings, and his name is JOHN SANIGER — identical to his address. Gloucestershire Notes & Queries reviewed Maclean's 1902 edition as it appeared and listed its misreadings: “occasionally marred by errors which the editor, whose name is not indicated, ought not to have passed. Thus SAINGER SHOULD READ SANIGER, and probably seiuger is seivyer; the grotesque Grisseote Cliste should be Greffeote Clifte; Cidolls is probably a blunder for Eidolls; Jugley is probably Ingley; Poutinge is doubtless Pontinge; Slinchcombe should be Stinchcombe; and Stimbridge, Slimbridge.”",
@@ -63,6 +69,7 @@ export const OWN = [
   },
   {
     when: "15 September 2026",
+    cause: "instrument",
     what: "Ran the three Sussex sisters through FreeCEN, found nothing, and recorded it as a NULL — “control: SMITH in Sussex 1861 returns the display cap of 1,000, and the six Darcys are themselves enumerated in Brighton, so the county and the town are both covered”.",
     truth:
       "The county and the town are not the unit. FreeCEN's Sussex 1851 returns NOUGHT for the surname ARCY — and this archive has the three sisters in the 1851 Sussex census under exactly that surname, at HO107/1646 folio 357 page 59 schedule 172, 22 Western Cottages, Brighton. The piece is simply not in FreeCEN. Smith hits the 1,000-row display cap in 1851, 1861 and 1871 alike, which conceals the gap rather than measuring it.",
@@ -73,6 +80,7 @@ export const OWN = [
   },
   {
     when: "15 September 2026",
+    cause: "typed",
     what: "Printed two different dates for Robert D'Arcy's first commission and never noticed. The timeline, /hornby and three other pages said 1776, from Connolly's Roll. /the-corps said 1778, from a commercial index of the commission registers, and called it “his first commission, and now the earliest record of him anywhere in this archive”.",
     truth:
       "17 JANUARY 1776. The printed Army List of 1781 interleaves each engineer with his seniority date: “Wm. Kesterman 17 Jan. 76 · John Johnson do. · Charles Holloway do. · Thomas Whelpdale do. · John Humfrey do. · James Fiddes do. · Richard Hockings do. · Robert Beatson do. · ROBERT D'ARCY do. · Benjamin Slack 4 Mar.” The men after him break the ditto with their own later dates, which is what makes the chain readable. The 1778 list carries the same run, and Connolly agrees on the year.",
@@ -83,6 +91,7 @@ export const OWN = [
   },
   {
     when: "15 September 2026",
+    cause: "instrument",
     what: "Called Robert D'Arcy's career “a blank of twenty-four years” between 1778 and 1802, and said two Barbados christenings were “the only two records that fall inside it”.",
     truth:
       "The Corps published its own history in 1889. Whitworth Porter puts Lieutenant Robert D'Arcy at the siege of Fort St Philip's on Minorca in 1781 — three years after the commission, squarely inside the blank — and carries “Robert D'Arcy, Barbados” in a station list, so the posting this archive had inferred from a baptism register was stated outright by the Corps all along. Porter also has him Commanding Engineer at Copenhagen in 1807 and Commanding Royal Engineer at Walcheren in 1809.",
@@ -93,6 +102,7 @@ export const OWN = [
   },
   {
     when: "15 September 2026",
+    cause: "memory",
     what: "Announced the Morning Herald notice of 1843 as “the first record anywhere to give Robert D'Arcy a corps as well as a rank”. Two older papers had already done it — and the second of them turned up within an hour of my correcting the first.",
     truth:
       "The Hampshire Chronicle of 24 March 1823 carries Jean Ward's death: “At Chatham, MRS. D'ARCY, THE WIFE OF MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS.” And the Oxford University and City Herald of 1 November 1806 carries Margaret's own wedding: “MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — thirty-seven years before the notice I called the first, in the report of the very marriage that page is about.",
@@ -103,6 +113,7 @@ export const OWN = [
   },
   {
     when: "14 September 2026",
+    cause: "premise",
     what: "Wrote that Martha Wakefield “may never have existed” and that she was “not in the family tree either”, after searching for her in Bristol. She is in the tree, with a death date, a cemetery and a plot number — in Queensland.",
     truth:
       "The tree gives Martha Wakefield 1836–1899, died 23 April 1899 at Maryborough, Queensland, buried Maryborough Cemetery, Plot Monumental L, Grave 410, and cites its source as “Martha HURFORD (born Wakefield)”. The free Queensland death index confirms a Martha Hurford dying on exactly that date — and names her parents as JOHN Wakefield and a HUGHES, not James Wakefield and Hannah Saniger. So she was real, she was not this family's, and none of that required leaving the desk.",
@@ -113,6 +124,7 @@ export const OWN = [
   },
   {
     when: "14 September 2026",
+    cause: "memory",
     what: "Spent a fortnight calling Constantine D'Arcy unplaced while this archive was publishing his christening, his parents' names and both his commissions on another page.",
     truth:
       "Constantine Darcy was christened at St Michael, Barbados on 18 February 1786, father Robert Darcy, mother Jane. That is on /hornby, with the film and batch number, and it has been since the Royal Engineers work of this summer. His sister Jane, christened in the same parish in 1788, is on the same source and the same page. Meanwhile /robert-family listed “Who Constantine was” as an open question, /chatham said his relationship to Robert “has never been established”, and /the-corps displayed a twenty-four-year blank in Robert's career without noticing that two of Robert's children were christened inside it.",
@@ -123,6 +135,7 @@ export const OWN = [
   },
   {
     when: "14 September 2026",
+    cause: "typed",
     what: "Published a nationality audit eleven times over three weeks without ever writing the classifier down.",
     truth: "The figure was a regular expression I retyped from memory on each pass, and it drifted. Sources moved between the Australian and British columns for reasons that had nothing to do with new records, and the percentages I reported to the reader were therefore approximations of varying quality.",
     why: "It was quick to hand-write and it felt like arithmetic rather than method. It is method: the audit is an argument this archive makes about itself, and an argument whose measuring instrument changes shape between readings is not one.",
@@ -131,6 +144,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "instrument",
     what: "Declared Hannah Saniger's baptism missing from every reachable index — twice, on two separate days, each time with a control test behind it.",
     truth: "HANNAH SANIGOR, baptised at Berkeley on 18 August 1804, father JNO SANIGOR. It is in the same FamilySearch index that produced her brothers, and it is on FindMyPast too.",
     why: "This site keeps an alias list of surname spellings — eleven forms of Saniger — and SANIGOR was not one of them. Every “not found” I published was really “not found under the ten spellings I thought of”. The control tests were sound and they were testing the wrong thing: they measured whether the parish was covered, never whether my query could match the name.",
@@ -139,6 +153,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "premise",
     what: "Named a Martha Wakefield, born about 1836, as one of three daughters left behind when the family sailed in 1854 — on five pages.",
     truth: "Two of the three died as children: Eliza at nineteen months in 1834, Ellen at five in 1840, both with Bristol baptisms naming James and Hannah. The third produces no birth registration, no baptism and no burial at Bristol under any spelling — because she is not from Bristol. THE CLAUSE “and is not in the family tree” WHICH STOOD HERE UNTIL 14 SEPTEMBER WAS FALSE: she is in it, and it says she died in Queensland. See the entry of 14 September.",
     why: "The trio was assembled in an early pass and then repeated, and the repetition did the work that evidence should have. Nobody — me — ever went back to ask where the name had come from.",
@@ -147,6 +162,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "instrument",
     what: "Reported on several pages that South Leith was not transcribed and that Jean Ward's baptism was therefore out of reach.",
     truth: "It is indexed, with parents named. Jean Ward, baptised South Leith 19 July 1754, father JOSEPH WARD, mother MARTHA GARDEN — an entire Scottish generation this archive did not have.",
     why: "The same fault as Berkeley, on the same afternoon: the free indexes were measured honestly and the conclusion was then widened from “not reachable here” to “not transcribed”, which is a claim about the world rather than about my sources.",
@@ -155,6 +171,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "memory",
     what: "Announced Jabez and Zillah Wakefield as “two children nobody here had ever heard of”, found in the 1851 census.",
     truth: "Both are on the General Hewitt passenger register, which this archive transcribed and published in July, together with an Ephraim aged five. They sailed with their parents, married in Queensland in 1863 and 1871, and Jabez was buried there in 1903.",
     why: "I checked the finding against the family tree, which does not have them, and not against this archive's own pages, which do. The manifest was three clicks away and I had written the page it sits on.",
@@ -163,6 +180,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "premise",
     what: "Built three days of research, two new pages and the top of the errand list on the claim that Hannah Saniger was not born in Gloucestershire.",
     truth: "The 1851 census, taken at Drivers Fields in the same house as the 1841 one, gives her birth town as BERKELEY and her birth county as GLOUCESTERSHIRE — which is exactly what the family tree had said from the beginning.",
     why: "The whole edifice rested on one tick in the 1841 census: the column that asks only whether a person was born in the same county, yes or no. That is the weakest statement a census makes. I treated it as load-bearing because it was the only thing I had, argued from it for days, excluded 81 households with it, catalogued 36 chapel registers because of it, and built a page for a Somerset parish on the strength of it — without ever putting it beside the next census, which asks WHERE rather than WHETHER and was one search away the entire time.",
@@ -171,6 +189,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "instrument",
     what: "Reported repeatedly that the Wakefields could not be found in the 1851 census, and that five of the tree's six Saniger generations at Berkeley could not be tested because the transcript stops in 1677.",
     truth: "Both are in FindMyPast. The 1851 household is complete, with two children this archive had never heard of, and Berkeley baptisms run straight through the supposed gap with parents named.",
     why: "Every null on this site was measured against free indexes. The measuring was right and the conclusion was not: “not reachable from here” quietly became “not there”, which is a statement about a budget rather than about the archives of England.",
@@ -179,6 +198,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "edition",
     what: "Told the reader that the twelve Bristol chapel registers were “digitised, and can be read without leaving the house”.",
     truth: "All twelve are marked DIGITISED: FALSE in The National Archives' own record details. RG 4 is published through commercial partners, so reading them needs a subscription or a visit.",
     why: "I catalogued the pieces carefully — references, dates, denominations, all correct — and then wrote a sentence about access that I had not checked at all. The catalogue lists what a record IS; whether an image exists is a separate field, and I never looked at it until the next pass.",
@@ -187,6 +207,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "typed",
     what: "Published that Chew Magna lay eight miles from Bristol in a parish of roughly 1,800 people, hours after finding it.",
     truth: "Collinson, writing in 1791, gives “six miles south-west from Bristol … one hundred and seventy houses, and eight hundred and thirty inhabitants”.",
     why: "Both numbers were estimates I made while writing the page and did not mark as estimates. Neither was load-bearing, which is exactly why neither got checked — and one of them was propping up a coverage argument about how many register entries the parish should produce.",
@@ -195,6 +216,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "instrument",
     what: "Treated Portsea as a parish this archive had searched, and read the absence of Joseph D'Arcy's brothers and sisters as though it meant something.",
     truth: "FreeREG's transcript of Portsea St Mary is twenty-two months long. Five common surnames tested across Hampshire for 1778–1783 return forty-six Portsea entries: all baptisms, twenty in 1780, twenty-five in 1781, one in 1782, and none at all in 1778, 1779 or 1783.",
     why: "This site has a rule — establish that a source covers the parish and the window before reporting an absence — and it applied that rule to Berkeley, to Dursley, to Hanley and to eight counties of Sanigers. It never applied it to its own oldest English find. Joseph's baptism was treated as the product of a search when it was the product of a two-year window.",
@@ -203,6 +225,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "premise",
     what: "Argued on /berkeley that the archive should stop calling this a Berkeley family — that “of Berkeley” was a label somebody had applied to the whole Vale.",
     truth: "Saniger is a hamlet in Berkeley parish, in the tithing of Hinton. The Berkeley Castle deeds name people “of Saniger” from before 1291, Bigland writes in 1791 that it was “long held by an old Family of the same Name”, and the older spelling — Swanhanger — is on record from 1377.",
     why: "I counted register entries by parish, found 340 at Cam and Dursley against 18 at Berkeley, and let the arithmetic write the conclusion. The counts were right. What they measured was where the family went, not where its name was made, and I never asked whether Saniger was a person or a place.",
@@ -211,6 +234,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "instrument",
     what: "Reported twice in one day that no Samuel Sneyd baptism existed at Madeley for the tree's 1769.",
     truth: "The Samuel is there, baptised 4 June 1781 — son of William Sneyd, weaver, and Mary Blackbourne, whose thirteen children fill the register between 1769 and 1794. The year 1769 belongs to his eldest brother William, christened three months after the wedding.",
     why: "I searched for the tree's DATE instead of the tree's PERSON. The 1781 Samuel appeared in every result list I pulled and I discarded him each time for being twelve years out — while the family he belongs to, with the right father, the right mother and the right trade, was sitting underneath him.",
@@ -219,6 +243,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "memory",
     what: "Said the English origin of this family's Sneyds was “not currently evidenced by anything”, after failing to find two baptisms at Madeley.",
     truth: "Two of the four links are documented: William Sneyd, weaver, married Mary Blackbourne at Madeley on 27 March 1769; and Samuel Charles Sneyd was baptised at Hanley on 28 April 1811, his father Samuel and mother Elizabeth, exactly as the tree says.",
     why: "I searched for baptisms, did not find them, and announced the conclusion — without following up a marriage that was sitting in the same results list, and without ever searching Hanley, the parish the tree plainly names as his birthplace. The negative was published within the hour; the positives took one more query each.",
@@ -227,6 +252,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "typed",
     what: "Said Miriam Wakefield “married at twenty-one”.",
     truth: "She married William Hartley Sneyd at Brisbane on 15 November 1859, aged nineteen — Queensland marriage registration 1859/B/255.",
     why: "The age was arithmetic from a birth year and an assumed marriage year, and neither the date nor the registration had ever been looked up. The Queensland marriage index is free and this archive has been using it for other people all week.",
@@ -235,6 +261,7 @@ export const OWN = [
   },
   {
     when: "13 September 2026",
+    cause: "instrument",
     what: "Reported that five of the six Saniger generations could not be tested, because Berkeley St Mary's transcript stops in 1677.",
     truth: "They could be tested, three miles away. Dursley St James is transcribed 1577–1951 and Cam St George 1568–1939 — both cover the whole chain, and between them they hold 340 of the 494 Saniger records in the county.",
     why: "The coverage of one parish was checked carefully and then treated as the answer to the whole question. The page even said the surname's real centre was Dursley and Cam, and still did not go and look there.",
@@ -243,6 +270,7 @@ export const OWN = [
   },
   {
     when: "10 September 2026",
+    cause: "typed",
     what: "Computed the family tree's predicted Scottish ancestry as 0.02% and announced that a descendant's DNA estimate — 41.9% Scottish and Welsh — was contradicting the tree.",
     truth: "The tree predicts 26.6% Scottish. It was never in disagreement with the DNA.",
     why: "The method attributed each line of descent to the deepest ancestor on record, rather than the deepest ancestor with a known birthplace. Her great-grandfather was born at St Quivox in Ayrshire; the men above him are in the tree as names with no places at all, so the walk stepped straight past Ayrshire and called that eighth of the pedigree unknown.",
@@ -251,6 +279,7 @@ export const OWN = [
   },
   {
     when: "9 September 2026",
+    cause: "memory",
     what: "Said William Hartley Sneyd was born in 1838, and that his widow's sworn evidence disproved Find a Grave's 30 September 1837.",
     truth: "He was born on 30 September 1837, and his widow was right.",
     why: "He died on 11 September; his birthday was the 30th, nineteen days later. A man born on 30 September 1837 is 64 on 11 September 1902 — exactly what she swore. I did the arithmetic without checking the death date against the birthday. His Queensland death registration then gave the date outright.",
@@ -259,6 +288,7 @@ export const OWN = [
   },
   {
     when: "9 September 2026",
+    cause: "edition",
     what: "Read a handwritten Statement of Service as “marched out to Étaples 26.4.16, taken on strength 29.4.16” and published April dates for Arthur Sneyd's arrival in France.",
     truth: "26 and 29 July 1916.",
     why: "The typed Casualty Form B.103 records the same events in ruled columns and reads unmistakably as July — and July is the only reading consistent with his reverting to the ranks on 29 July.",
@@ -267,6 +297,7 @@ export const OWN = [
   },
   {
     when: "9 September 2026",
+    cause: "premise",
     what: "Stated that a fourteen-page service dossier for Lindesay Atkinson D'Arcy “is known to exist”.",
     truth: "No such record could be found under any spelling of his name.",
     why: "Nothing was ever checked. The claim had been carried forward on assumption. The search method was then verified by running the same query for his brother-in-law, which returned his dossier at once — so the absence is real.",
@@ -275,6 +306,7 @@ export const OWN = [
   },
   {
     when: "9 September 2026",
+    cause: "premise",
     what: "Recommended the Woolwich cadet registers, WO 149, as the best hope for Robert D'Arcy's parentage.",
     truth: "WO 149 runs from 1790 and is held at Sandhurst. It cannot contain a cadet of the early 1770s.",
     why: "The series was recommended without checking its date range.",
@@ -283,6 +315,7 @@ export const OWN = [
   },
   {
     when: "10 September 2026",
+    cause: "typed",
     what: "Called 144 ancestors and twelve generations back to 1654 “what this archive will defend” and “the honest figure”.",
     truth: "Of those 144, eight rest on a record set. Fifty-six rest only on other people's family trees and seventy-nine on nothing at all. Above generation seven, exactly one of sixty ancestors rests on a record.",
     why: "The archive applied its own rule — that a family tree is not a source — to the Hornby descent and to Keele Hall, and never once applied it to the branch it was holding up as solid ground. Nobody counted until somebody asked how far past Brisbane the thing actually went.",
@@ -291,6 +324,7 @@ export const OWN = [
   },
   {
     when: "10 September 2026",
+    cause: "premise",
     what: "Told the family their own founding brief was wrong — that the D'Arcys had married Defranceski, and only the Defranceskis had married Falco.",
     truth: "The brief was right. Ian Kenneth D'Arcy married Giuseppina Falco, and their daughter is the person this archive is built outward from.",
     why: "I looked up the root person's spouse instead of her parents, saw a Defranceski, and published a correction to somebody else's accurate account of their own family. It stood on the site for a day.",
@@ -299,6 +333,7 @@ export const OWN = [
   },
   {
     when: "10 September 2026",
+    cause: "edition",
     what: "Published William Hartley Sneyd's title in the Government Printing Office as “Quoin-drawer Overseer”.",
     truth: "Fount-room Overseer.",
     why: "The 1884 volume scanned badly. The 1890 volume prints it plainly, and “fount-room” — where a printing house keeps and distributes its type — is what the job actually was.",
@@ -307,6 +342,7 @@ export const OWN = [
   },
   {
     when: "10 September 2026",
+    cause: "edition",
     what: "Quoted the surgeon of the England as receiving “30 men of the 39th regiment”.",
     truth: "39 men, with 6 women and 7 children.",
     why: "The figure came from a secondary account. The National Archives' transcription of the journal itself says 39 — and the regiment's own number is presumably how a 9 became a 0.",
@@ -314,6 +350,47 @@ export const OWN = [
     href: "/australia",
   },
 ];
+
+
+/* THE SHARED CAUSE, read across all of them on 20 September 2026.
+ *
+ * Every own error above carries a `cause`, assigned by reading its own text.
+ * Five kinds, and they are not five different mistakes — they are five ways of
+ * making one:
+ *
+ *   instrument  a statement about the world that was really a statement about
+ *               the tool. A null that described a search box and not a parish;
+ *               a count that described a paging loop and not a catalogue.
+ *   memory      a statement about what is known that was really a statement
+ *               about what the author had read that day — including, twice,
+ *               things this archive was publishing on the same page.
+ *   premise     a claim built on the archive's own unchecked assertion, read
+ *               back later as though a source had said it.
+ *   typed       a number written by hand where one could have been counted.
+ *   edition     a printed or transcribed text treated as the document itself.
+ *
+ * The counts are derived below, never typed, because "typed" is one of the five.
+ */
+export const CAUSES = {
+  instrument: ["About the instrument, not the world",
+    "A null that described a search box and not a parish; a count that described a paging loop and not a catalogue. The commonest failure here by some distance, and the one the control rule exists to catch."],
+  memory: ["About what had been read, not what is known",
+    "Announced as new, or as absent, something this archive already held — twice on the very page being written."],
+  premise: ["A premise of the archive's own making",
+    "An assertion written in a note or a to-do list, then read back as though a source had said it. It arrives as background, so nothing grades it."],
+  typed: ["A number typed instead of counted",
+    "Every one of these could have been derived from the data and was instead written by a hand that believed it."],
+  edition: ["An edition mistaken for the document",
+    "A printed transcript, an OCR line or a secondary account treated as the manuscript. A printed text is a reading, not a record."],
+};
+
+export const byCause = () => {
+  const out = {};
+  for (const e of OWN) (out[e.cause] ||= []).push(e);
+  return out;
+};
+export const causeTally = () =>
+  Object.entries(byCause()).map(([k, v]) => [k, v.length]).sort((a, b) => b[1] - a[1]);
 
 /* Errors inherited from the family tree and corrected here. Kept separate,
    because they are somebody else's mistakes and the distinction matters. */

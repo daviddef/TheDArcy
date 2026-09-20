@@ -5,7 +5,10 @@ import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import Corrections from "@daviddef/archive-kit/components/Corrections.astro";
-import { OWN, INHERITED, nOwn } from "../lib/errors.js";
+import { OWN, INHERITED, nOwn, CAUSES, causeTally } from "../lib/errors.js";
+
+const tally = causeTally();
+const top = tally[0];
 
 /* Each error was a three-row table of its own, thirty-two of them. The shared
    page sets the retraction above the truth, which is the same pair every
@@ -68,15 +71,46 @@ const ord = (n) => {
     </Scroll>
   </section>
 
-  <section class="blk" style="border-bottom:0">
-    <h2>Why this page exists</h2>
-    <p class="dek">Because the alternative is worse. An archive that corrects itself silently is
-    asking to be trusted on exactly the point it has just proved it can be wrong about — and because
-    the pattern across the {nOwn} above is more useful than any one of them. Five of the first seven
-    were the same failure: <strong>a number or a claim taken from a secondary source, or from a bad scan, and not
-    checked against the record itself.</strong></p>
-    <p class="dek" style="margin-top:.9rem">If you find a {ord(nOwn + 1)}, it belongs here.
+  <Blk label={`Read across all ${nOwn}`} title="The shared cause, counted">
+    <p class="lede">An archive that corrects itself silently is asking to be trusted on exactly the
+    point it has just proved it can be wrong about. But the pattern across these {nOwn} is worth
+    more than any one of them, so on 20 September 2026 every error above was re-read and assigned a
+    cause from its own text.</p>
+
+    <p class="dek" style="margin-top:1.1rem">They are not {tally.length} separate faults. They are
+    {tally.length} ways of making a single one: <strong>publishing a statement about this archive's
+    own tools, notes or memory as though it were a statement about the world.</strong></p>
+
+    <Scroll>
+      <table style="margin-top:1.3rem">
+        <thead><tr><th>Cause</th><th class="m">How many</th><th>What it looks like</th></tr></thead>
+        <tbody>{tally.map(([k, n]) => (
+          <tr style={k === top[0] ? "background:var(--tint)" : ""}>
+            <td><strong>{CAUSES[k][0]}</strong></td>
+            <td class="m">{n}</td>
+            <td class="small">{CAUSES[k][1]}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+
+    <Note style="border-left-width:3px;margin-top:1.4rem">
+      <strong>The largest group is {top[1]} of {nOwn}, and it is the one this archive built a gate
+      for.</strong> A null is only a fact about a parish if the search could have found the thing it
+      did not find. That is why every null on <a href={u("/searched/")}>/searched/</a> must name a
+      control, why the build refuses one that does not, and why three separate checks written this
+      month were thrown away for being unable to fail.
+    </Note>
+
+    <Note style="margin-top:1.2rem">
+      <strong>This section replaced a sentence that had stopped being true.</strong> It used to read
+      “five of the first seven were the same failure: a number or a claim taken from a secondary
+      source”. That was accurate when there were seven. At {nOwn} it is the smallest group of the
+      {tally.length}, and the claim had quietly become a typed number of exactly the kind it was
+      describing. The tallies above are counted from the data on every build and cannot drift again.
+    </Note>
+
+    <p class="dek" style="margin-top:1.2rem">If you find a {ord(nOwn + 1)}, it belongs here.
     <a href={u("/method/")}>How claims are labelled →</a> ·
     <a href={u("/open-questions/")}>What is still open →</a></p>
-  </section>
+  </Blk>
+
 </Base>

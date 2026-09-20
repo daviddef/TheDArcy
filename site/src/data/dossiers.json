@@ -740,6 +740,37 @@
 "slug": "susanna-saniger",
 "n": 1
 },
+"thomas-saniger": {
+"name": "Thomas Saniger",
+"surname": "SANIGER",
+"rows": [
+{
+"says": "baptised at Berkeley 3 JULY 1808, father JOHN Saniger · Hannah's brother",
+"source": "record · Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "THOMAS SINEGAR, 30, at Sion Road, Johns Place, St Philip & Jacob Without, 1841 · with Martha 31, James 11, LYDIA 9, Thomas 7, Martha 2 — HO107/378 bk5 f.40 p.26 sch.1633 · and in 1851, aged 42, a labourer at 7 Oxford Road BORN BERKLEY, GLOUCESTERSHIRE",
+"source": "record · 1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John",
+"source": "record · FamilySearch Family Tree",
+"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP"
+},
+{
+"says": "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, entered as THOMAS SANIGRE · Hannah's brother, baptised Berkeley 3 July 1808 son of John",
+"source": "record · England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast",
+"link": "https://www.familysearch.org/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"orphan": true,
+"slug": "thomas-saniger",
+"n": 4
+},
 "maria-atwell-nee-rossiter": {
 "name": "Maria Atwell, née Rossiter",
 "surname": "ATWELL",
@@ -2719,7 +2750,7 @@
 "counts": {
 "named": 224,
 "withTreePage": 55,
-"ownPage": 169,
+"ownPage": 170,
 "mentions": 381
 }
 }
