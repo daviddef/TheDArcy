@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/constantine.json";
 ---
 <Base
@@ -90,10 +91,10 @@ import d from "../data/constantine.json";
       <span class="chip doc">{d.second.chip}</span>
     </Note>
     <p class="small" style="margin-top:.8rem;color:var(--ink-3)">{d.second.src}</p>
-    <Note style="margin-top:1.2rem"><strong>It is not the boy on this page.</strong> {d.second.notHim}</Note>
-    <Note style="margin-top:1.2rem"><strong>{d.second.whyHead}.</strong> {d.second.why}</Note>
+    <Note style="margin-top:1.2rem"><strong>It is not the boy on this page.</strong> <span set:html={mdp(d.second.notHim)} /></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.second.whyHead}.</strong> <span set:html={mdp(d.second.why)} /></Note>
     <Note style="border-left-width:3px;border-left-color:var(--bad);margin-top:1.2rem">
-      <strong>{d.second.careHead}.</strong> {d.second.care}
+      <strong>{d.second.careHead}.</strong> <span set:html={mdp(d.second.care)} />
       {" "}<span class="chip dis">{d.second.careChip}</span>
     </Note>
     <Note style="margin-top:1.2rem"><strong>{d.second.nextHead}.</strong> {d.second.next}

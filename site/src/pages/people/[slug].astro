@@ -182,7 +182,13 @@ function clean(s) {
     // bare CSS declarations left behind by the truncation
     .replace(/(?:[a-z-]+\s*:\s*[^;\n]{1,80};\s*)+/gi, " ")
     .replace(/&nbsp;?/gi, " ")
-    .replace(/&[a-z#0-9]+;/gi, (m) => ENT[m.toLowerCase()] ?? " ");
+    .replace(/&[a-z#0-9]+;/gi, (m) => ENT[m.toLowerCase()] ?? " ")
+    // MyHeritage notes use "** " as a bullet and "**x**" as emphasis. Neither
+    // is rendered here, so both would reach a reader as literal asterisks —
+    // the fault the shared kit documents in three other archives in this
+    // estate. Strip the markers; this is quoted testimony, not markup.
+    .replace(/\*\*\s*(.+?)\s*\*\*/gs, "$1")
+    .replace(/^\s*\*\*\s*/gm, "");
   const lines = t.split("\n").map((l) => l.replace(/[ \t]{2,}/g, " ").trim()).filter((l) => {
     if (l.length < 12) return false;                       // stray fragments
     if (/SmartCopy|myheritage\.com\/research\/record/i.test(l)) return false; // citation boilerplate

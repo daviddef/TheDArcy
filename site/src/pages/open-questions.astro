@@ -12,7 +12,7 @@ import Questions from "@daviddef/archive-kit/components/Questions.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
-import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import { md, mdp, plain } from "@daviddef/archive-kit/lib/md.js";
 import q from "../data/questions.json";
 
 const link = (h) => h.replace(/\[([^\]]+)\]\((\/[^)]*)\)/g,
@@ -44,14 +44,14 @@ const age = (r) => r.since && r.state !== "answered"
     q: r.q,
     state: S(r)[0],
     rank: r.rank,
-    settles: r.settles,
+    settles: plain(r.settles),
     tried: r.tried.map(([what, outcome]) =>
-      `<div style="margin-bottom:.55rem"><strong class="small">${what}</strong>` +
-      `<div class="small" style="color:var(--ink-2)">${outcome}</div></div>`).join(""),
+      `<div style="margin-bottom:.55rem"><strong class="small">${md(what)}</strong>` +
+      `<div class="small" style="color:var(--ink-2)">${md(outcome)}</div></div>`).join(""),
     since: age(r) > 30 ? `${r.since} — ${age(r)} days` : r.since,
     href: r.register + "/",
     hrefLabel: "attempts are in this register →",
-    known: r.note || "",
+    known: plain(r.note || ""),
   }))} />
 
   <section class="blk" style="border-bottom:0">

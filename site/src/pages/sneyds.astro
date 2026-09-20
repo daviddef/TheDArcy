@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/sneyds.json";
 const c = d.counts;
 ---
@@ -289,10 +290,10 @@ const c = d.counts;
     </Scroll>
 
     <Note style="border-left-width:3px;margin-top:1.3rem">
-      {d.biddulphParents.means} <span class="chip doc">{d.biddulphParents.chip}</span>
+      <span set:html={mdp(d.biddulphParents.means)} /> <span class="chip doc">{d.biddulphParents.chip}</span>
     </Note>
-    <Note style="margin-top:1.2rem"><strong>{d.biddulphParents.nameHead}.</strong> {d.biddulphParents.name}</Note>
-    <Note style="margin-top:1.2rem"><strong>{d.biddulphParents.surreyHead}.</strong> {d.biddulphParents.surrey}</Note>
+    <Note style="margin-top:1.2rem"><strong>{d.biddulphParents.nameHead}.</strong> <span set:html={mdp(d.biddulphParents.name)} /></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.biddulphParents.surreyHead}.</strong> <span set:html={mdp(d.biddulphParents.surrey)} /></Note>
   </Blk>
 
   <section class="blk" style="border-bottom:0">

@@ -5,6 +5,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp, plain } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/searched.json";
 import cov from "../data/coverage.json";
 
@@ -18,7 +19,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
   dek="Everything this archive has opened, whether or not it gave anything up — because a search that returns nothing is a result, and the next person should not have to run it again.">
 
   <section class="blk">
-    <p class="lede">{d.note}</p>
+    <p class="lede" set:html={mdp(d.note)}></p>
     <Note style="border-left-width:3px">
       <strong>And every null carries the control that could have disproved it — or admits it has none.</strong>
       <span set:html={d.ctlNote.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
@@ -52,7 +53,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
     that could have disproved it</strong>, so where a control was run the row says so.</p>
     <Searched u={u} nil={["null", "empty"]} unit="sources"
       rows={d.rows.map((r) => ({
-        when: r.when, src: r.src, what: r.what, got: r.got,
+        when: r.when, src: plain(r.src), what: plain(r.what), got: plain(r.got),
         outcome: CHIP[r.outcome] ? CHIP[r.outcome][1] : r.outcome,
         href: r.href,
         extra: r.ctl ? d.ctlLabels[r.ctl] : "",
@@ -60,7 +61,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
   </section>
 
   <Blk label="Checked before searching, every time" title="What each database actually holds">
-    <p class="dek">{cov.note}</p>
+    <p class="dek" set:html={mdp(cov.note)}></p>
 
     <Scroll>
       <table>
@@ -69,7 +70,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
           {cov.rows.map((r) => (
             <tr>
               <td class="small">{r.db}</td>
-              <td><strong>{r.where}</strong><div class="small">{r.note} <a href={u(r.href)}>→</a></div></td>
+              <td><strong>{r.where}</strong><div class="small"><span set:html={mdp(r.note)} /> <a href={u(r.href)}>→</a></div></td>
               <td class="small">{r.holds}</td>
               <td class="m">{r.span}</td>
               <td>{cov.verdicts[r.verdict]

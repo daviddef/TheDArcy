@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/the-corps.json";
 ---
 <Base
@@ -142,7 +143,7 @@ import d from "../data/the-corps.json";
   <Blk label="The Army Lists, 1783–1821" title={d.run.head}>
     <p class="lede">{d.run.lede}</p>
     <Note style="border-left-width:3px;margin-top:1.2rem">
-      <strong>{d.run.spellHead}.</strong> {d.run.spell}
+      <strong>{d.run.spellHead}.</strong> <span set:html={mdp(d.run.spell)} />
       {" "}<span class="chip lore">{d.run.spellChip}</span>
     </Note>
     <Scroll>
@@ -155,7 +156,7 @@ import d from "../data/the-corps.json";
               <td class="small" style="color:var(--ink-3)">{ed}</td></tr>))}</tbody>
       </table>
     </Scroll>
-    <Note style="margin-top:1.3rem">{d.run.means}
+    <Note style="margin-top:1.3rem"><span set:html={mdp(d.run.means)} />
       {" "}<span class="chip doc">{d.run.chip}</span></Note>
   </Blk>
 

@@ -36,6 +36,17 @@ python3 tools/check_controls.py
 echo "── link check"
 python3 tools/check_links.py
 
+# The code, the data and every built page. Not a unit-test suite — there is no
+# unit-test framework in this project and saying otherwise would be a claim this
+# archive could not support. It compiles every tool, refuses a duplicate key in
+# any data file (json.load keeps the last and drops the rest, which is how a map
+# in the person page lost half of Hannah Saniger's links), and refuses a page
+# showing a reader "undefined", "[object Object]" or literal **markdown** — the
+# fault the shared kit records in three other archives in this estate, and which
+# stood at 307 pairs across ten pages here until 20 September 2026.
+echo "── self-test"
+python3 tools/selftest.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent

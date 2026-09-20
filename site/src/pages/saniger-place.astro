@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/saniger-place.json";
 ---
 <Base
@@ -115,7 +116,7 @@ import d from "../data/saniger-place.json";
       {d.monuments.means} <span class="chip doc">{d.monuments.chip}</span>
     </Note>
     <Note style="margin-top:1.2rem">
-      <strong>{d.monuments.bridgeHead}.</strong> {d.monuments.bridge}
+      <strong>{d.monuments.bridgeHead}.</strong> <span set:html={mdp(d.monuments.bridge)} />
       {" "}<span class="chip inf">{d.monuments.bridgeChip}</span>
       {" "}<a href={u("/swonhungre/")}>Cooke's claim →</a>
     </Note>

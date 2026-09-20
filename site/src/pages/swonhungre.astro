@@ -38,15 +38,15 @@ import d from "../data/swonhungre.json";
 
     <h3 style="margin-top:1.8rem">{d.formation.ashHead}</h3>
     <Note style="border-left-width:3px;margin-top:.8rem">
-      <strong>{d.formation.ash}</strong> <span class="chip inf">{d.formation.ashChip}</span>
+      <strong set:html={mdp(d.formation.ash)}></strong> <span class="chip inf">{d.formation.ashChip}</span>
     </Note>
-    <p style="margin-top:1.1rem">{d.formation.ashMeans}</p>
-    <Note style="margin-top:1.1rem"><strong>And what it is not.</strong> {d.formation.ashCare}</Note>
+    <p style="margin-top:1.1rem" set:html={mdp(d.formation.ashMeans)}></p>
+    <Note style="margin-top:1.1rem"><strong>And what it is not.</strong> <span set:html={mdp(d.formation.ashCare)} /></Note>
   </Blk>
 
   <Blk label={d.identity.ref} title={d.identity.head}>
     <p class="lede">{d.identity.body}</p>
-    <Note style="margin-top:1.2rem">{d.identity.means}
+    <Note style="margin-top:1.2rem"><span set:html={mdp(d.identity.means)} />
       {" "}<span class="chip doc">{d.identity.chip}</span></Note>
   </Blk>
 
@@ -76,9 +76,9 @@ import d from "../data/swonhungre.json";
       <strong style="font-size:1.1em">{d.alice.body}</strong>
       <span class="chip doc">{d.alice.chip}</span>
     </Note>
-    <p style="margin-top:1.1rem">{d.alice.means}</p>
-    <Note style="margin-top:1.2rem"><strong>{d.alice.wykeHead}.</strong> {d.alice.wyke}</Note>
-    <Note style="margin-top:1.2rem"><strong>{d.alice.whereHead}.</strong> {d.alice.where}</Note>
+    <p style="margin-top:1.1rem" set:html={mdp(d.alice.means)}></p>
+    <Note style="margin-top:1.2rem"><strong>{d.alice.wykeHead}.</strong> <span set:html={mdp(d.alice.wyke)} /></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.alice.whereHead}.</strong> <span set:html={mdp(d.alice.where)} /></Note>
     <p class="small" style="margin-top:1rem"><a href={u("/the-women/")}>The women this archive can name →</a></p>
   </Blk>
 
@@ -122,7 +122,7 @@ import d from "../data/swonhungre.json";
       <strong style="font-size:1.1em">{d.wardship.quote}</strong>
       <span class="chip doc">{d.wardship.chip}</span>
     </Note>
-    <p style="margin-top:1.2rem">{d.wardship.means}</p>
+    <p style="margin-top:1.2rem" set:html={mdp(d.wardship.means)}></p>
     <Note style="margin-top:1.2rem">
       <strong>{d.wardship.whyHead}.</strong> {d.wardship.why}
     </Note>
@@ -162,8 +162,8 @@ import d from "../data/swonhungre.json";
       </svg>
     </Scroll>
 
-    <Note style="margin-top:1.3rem"><strong>Who is not on it, and why.</strong> {d.chart.note}</Note>
-    <Note style="margin-top:1.2rem">{d.chart.disagree}</Note>
+    <Note style="margin-top:1.3rem"><strong>Who is not on it, and why.</strong> <span set:html={mdp(d.chart.note)} /></Note>
+    <Note style="margin-top:1.2rem"><span set:html={mdp(d.chart.disagree)} /></Note>
   </Blk>
 
   <Blk label="All 200 Berkeley records" title={d.deeds.head}>
@@ -179,7 +179,7 @@ import d from "../data/swonhungre.json";
       </table>
     </Scroll>
     <Note style="border-left-width:3px;margin-top:1.2rem">
-      {d.deeds.means} <span class="chip doc">{d.deeds.chip}</span>
+      <span set:html={mdp(d.deeds.means)} /> <span class="chip doc">{d.deeds.chip}</span>
     </Note>
     <Note style="margin-top:1.2rem">
       <strong>{d.deeds.careHead}.</strong> {d.deeds.care}
@@ -224,7 +224,7 @@ import d from "../data/swonhungre.json";
     <Note style="border-left-width:3px;margin-top:.8rem">
       <strong>{d.cookefull.src}</strong> <span class="chip doc">{d.cookefull.srcChip}</span>
     </Note>
-    <p style="margin-top:1.1rem">{d.cookefull.srcMeans}</p>
+    <p style="margin-top:1.1rem" set:html={mdp(d.cookefull.srcMeans)}></p>
 
     <h3 style="margin-top:1.9rem">{d.cookefull.estateHead}</h3>
     <Scroll>
@@ -235,11 +235,11 @@ import d from "../data/swonhungre.json";
       </table>
     </Scroll>
     <Note style="border-left-width:3px;margin-top:1.2rem">
-      {d.cookefull.estateMeans} <span class="chip doc">{d.cookefull.estateChip}</span>
+      <span set:html={mdp(d.cookefull.estateMeans)} /> <span class="chip doc">{d.cookefull.estateChip}</span>
     </Note>
 
     <Note style="margin-top:1.2rem"><strong>{d.cookefull.leadHead}.</strong> {d.cookefull.lead}</Note>
-    <Note style="margin-top:1.2rem"><strong>{d.cookefull.careHead}.</strong> {d.cookefull.care}</Note>
+    <Note style="margin-top:1.2rem"><strong>{d.cookefull.careHead}.</strong> <span set:html={mdp(d.cookefull.care)} /></Note>
   </Blk>
 
   <Blk label="BCM/A/1/24/189–190" title={d.stones.head}>
@@ -253,7 +253,7 @@ import d from "../data/swonhungre.json";
         </div>))}
     </div>
     <Note style="border-left-width:3px;margin-top:1.3rem">
-      {d.stones.means} <span class="chip doc">{d.stones.chip}</span>
+      <span set:html={mdp(d.stones.means)} /> <span class="chip doc">{d.stones.chip}</span>
     </Note>
 
     <h3 style="margin-top:1.8rem">{d.stones.lineHead}</h3>
@@ -266,10 +266,10 @@ import d from "../data/swonhungre.json";
     </Scroll>
     <h3 style="margin-top:1.8rem">{d.stones.smythHead}</h3>
     <Note style="border-left-width:3px;margin-top:.8rem">
-      <strong>{d.stones.smyth}</strong> <span class="chip doc">{d.stones.smythChip}</span>
+      <strong set:html={mdp(d.stones.smyth)}></strong> <span class="chip doc">{d.stones.smythChip}</span>
     </Note>
-    <p style="margin-top:1.1rem">{d.stones.smythMeans}</p>
-    <Note style="margin-top:1.2rem">{d.stones.fee}</Note>
+    <p style="margin-top:1.1rem" set:html={mdp(d.stones.smythMeans)}></p>
+    <Note style="margin-top:1.2rem"><span set:html={mdp(d.stones.fee)} /></Note>
 
     <Note style="margin-top:1.2rem"><strong>{d.stones.fieldHead}.</strong> {d.stones.field}</Note>
   </Blk>
@@ -281,9 +281,9 @@ import d from "../data/swonhungre.json";
       <span class="chip inf">{d.cooke.chip}</span>
     </Note>
     <p class="small" style="margin-top:.8rem;color:var(--ink-3)">{d.cooke.src}</p>
-    <p style="margin-top:1.2rem">{d.cooke.means}</p>
+    <p style="margin-top:1.2rem" set:html={mdp(d.cooke.means)}></p>
     <Note style="margin-top:1.2rem">
-      <strong>{d.cooke.careHead}.</strong> {d.cooke.care}
+      <strong>{d.cooke.careHead}.</strong> <span set:html={mdp(d.cooke.care)} />
       {" "}<a href={u("/errands/")}>What would settle it →</a>
     </Note>
 
@@ -316,7 +316,7 @@ import d from "../data/swonhungre.json";
         </div>))}
     </div>
     <Note style="border-left-width:3px;margin-top:1.3rem">
-      {d.tbgas.v22Means} <span class="chip doc">{d.tbgas.v22Chip}</span>
+      <span set:html={mdp(d.tbgas.v22Means)} /> <span class="chip doc">{d.tbgas.v22Chip}</span>
     </Note>
 
     <h3 style="margin-top:2rem">{d.tbgas.v10Head}</h3>
@@ -332,21 +332,21 @@ import d from "../data/swonhungre.json";
     </Scroll>
     <p class="small" style="margin-top:.9rem;color:var(--ink-3)">{d.tbgas.v10Src}</p>
     <Note style="border-left-width:3px;margin-top:1.2rem">
-      {d.tbgas.v10Means} <span class="chip doc">{d.tbgas.v10Chip}</span>
+      <span set:html={mdp(d.tbgas.v10Means)} /> <span class="chip doc">{d.tbgas.v10Chip}</span>
     </Note>
 
     <Note style="margin-top:1.3rem">
-      <strong>{d.tbgas.twistHead}.</strong> {d.tbgas.twist}
+      <strong>{d.tbgas.twistHead}.</strong> <span set:html={mdp(d.tbgas.twist)} />
       {" "}<span class="chip doc">{d.tbgas.twistChip}</span>
     </Note>
     <h3 style="margin-top:2rem">{d.tbgas.chantryHead}</h3>
     <Note style="border-left-width:3px;margin-top:.8rem">
       <strong>{d.tbgas.chantry}</strong> <span class="chip doc">{d.tbgas.chantryChip}</span>
     </Note>
-    <p style="margin-top:1.1rem">{d.tbgas.chantryMeans}</p>
-    <Note style="margin-top:1.2rem"><strong>{d.tbgas.careHead}.</strong> {d.tbgas.care}</Note>
+    <p style="margin-top:1.1rem" set:html={mdp(d.tbgas.chantryMeans)}></p>
+    <Note style="margin-top:1.2rem"><strong>{d.tbgas.careHead}.</strong> <span set:html={mdp(d.tbgas.care)} /></Note>
 
-    <Note style="margin-top:1.2rem"><strong>{d.tbgas.minorHead}.</strong> {d.tbgas.minor}</Note>
+    <Note style="margin-top:1.2rem"><strong>{d.tbgas.minorHead}.</strong> <span set:html={mdp(d.tbgas.minor)} /></Note>
   </Blk>
 
   <Blk label="Library of Birmingham, MS 3549" title={d.smythsown.head}>

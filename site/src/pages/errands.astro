@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import e from "../data/errands.json";
 
 const n = (k) => e.rows.filter((r) => r.state === k).length;
@@ -35,7 +36,7 @@ const n = (k) => e.rows.filter((r) => r.state === k).length;
           </div>
           <p class="small" style="margin-top:.35rem;color:var(--ink-2)">
             <strong>{r.where}</strong> · {r.cost}</p>
-          <p class="small" style="margin-top:.35rem">{r.settles} <a href={u(r.href)}>Context →</a></p>
+          <p class="small" style="margin-top:.35rem"><span set:html={mdp(r.settles)} /> <a href={u(r.href)}>Context →</a></p>
           <p class="small mono" style="margin-top:.25rem;color:var(--ink-3)">{r.file}</p>
         </div>
       ))}
