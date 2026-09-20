@@ -876,10 +876,10 @@
     {
       "n": 95,
       "what": "Extract /sources/ into data",
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-16",
-      "note": "**168 lines inline.** Only Falco and Defranceschi hold sources as data.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside. *(State was `open`, which is not one of the five the gate allows; mapped to `next` on 16 September so the build would pass — the vocabulary is running, next, blocked, done, struck.)*"
+      "note": "**168 lines inline.** Only Falco and Defranceschi hold sources as data.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside. *(State was `open`, which is not one of the five the gate allows; mapped to `next` on 16 September so the build would pass — the vocabulary is running, next, blocked, done, struck.)*\n\n**Done 20 September.** The two prose lists on /sources/ — about a hundred lines of hand-written markup with the evidence inside it — are now `site/src/data/sources.json`: **18 record sets and 3 private documents**, each with a name, a body in the archive's own markdown, an optional chip and a links array. The `mono` spans became backticks; nothing else changed. The page counts them rather than asserting a number, and the list can now be gated like any other data file."
     },
     {
       "n": 96,
@@ -1099,11 +1099,11 @@
     },
     {
       "n": 124,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-20",
       "what": "The 237 people with an empty mentions list",
-      "note": "`mentions.json` holds 459 keys and **only 222 are non-empty** — half the published people are written about nowhere on this site. That is not a bug: `build_mentions.py` deliberately skips the directory pages (`/people`, `/register`, `/graves`, `/households`, `/families`, `/who`, `/places`, `/marriages`, `/search`) because «a name in a card grid is not a mention», which is right. But it means **the mention count is a measure of prose, not of evidence**, and this archive should not let the two be confused on a page that shows both."
+      "note": "`mentions.json` holds 459 keys and **only 222 are non-empty** — half the published people are written about nowhere on this site. That is not a bug: `build_mentions.py` deliberately skips the directory pages (`/people`, `/register`, `/graves`, `/households`, `/families`, `/who`, `/places`, `/marriages`, `/search`) because «a name in a card grid is not a mention», which is right. But it means **the mention count is a measure of prose, not of evidence**, and this archive should not let the two be confused on a page that shows both.\n\n**Done 20 September.** The distribution: **237 of 473 people have no mention at all, 142 have exactly one, and 80 have two or more.** That is not a bug — `build_mentions.py` skips the directory pages on purpose — but the person page was calling the result «the same evidence as the rest of the archive», which is two claims too many. **Fourteen of the 237 with no mention have a register record.** The sentence now says a mention counts pages of prose, not records, and that a person can be well documented and appear there once or not at all."
     },
     {
       "n": 125,

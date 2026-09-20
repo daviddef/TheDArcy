@@ -454,9 +454,19 @@ const anyDamaged = notes.some((n) => n.damaged);
   {(mentions[p.slug] || []).length > 0 && (
     <section class="blk">
       <h2>Everywhere {p.name.split(" ")[0]} appears in this archive</h2>
-      <p class="small">Every page of this site that writes about {p.name}, gathered automatically —
-      {" "}{(mentions[p.slug] || []).length} in total. This is the same evidence as the rest of the
-      archive, brought together in one place.</p>
+      {/* This used to say "the same evidence as the rest of the archive", which
+          was two claims too many. A mention is a page of this site that writes
+          about someone in prose. build_mentions.py deliberately skips the
+          directory pages — /register, /graves, /households, /families, /who —
+          because a name in a card grid is not a mention, and that is right. The
+          consequence is that a MENTION COUNT MEASURES PROSE, NOT EVIDENCE: 237
+          of the 473 people here have none, and fourteen of those 237 have a
+          register record all the same. */}
+      <p class="small">Every page of this site that <em>writes about</em> {p.name} in prose,
+      gathered automatically — {(mentions[p.slug] || []).length} in total. This counts pages, not
+      records: the lists and registers are skipped on purpose, so a person can be well documented
+      and appear here once or not at all.
+      <a href={u("/method/")}> How claims are labelled →</a></p>
       <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:.85rem">
         {(mentions[p.slug] || []).map((h) => (
           <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">

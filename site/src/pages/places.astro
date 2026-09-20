@@ -45,15 +45,6 @@ import atlas from "../../public/atlas-data.json";
     </Note>
   </section>
 
-  <section class="blk" id="finder">
-    <div class="lab">Search</div>
-    <label for="q" class="vh">Search the places</label>
-    <input id="q" type="search" autocomplete="off"
-      placeholder="Try a town, a county, a year — Boulia, Staffordshire, 1826…"
-      style="width:100%;max-width:56ch;margin-top:.55rem;padding:.65rem .8rem;font:inherit;font-size:1rem;
-             border:1px solid var(--rule-strong);border-radius:3px;background:var(--paper);color:var(--ink)" />
-    <p class="small" id="pcount" style="margin-top:.8rem" aria-live="polite">{places.length} places</p>
-  </section>
 
   <Places u={u} countLabel="Events" rows={order.filter((k) => groups[k]).flatMap((k) =>
     groups[k].slice().sort((a, b) => (a.first || 9999) - (b.first || 9999)).map((p) => ({
@@ -63,65 +54,25 @@ import atlas from "../../public/atlas-data.json";
       span: p.first ? String(p.first) : "",
       variants: p.variants || [],
     })))} />
-          </tbody>
-        </table>
-      </Scroll>
-    </section>
-  ))}
-  <script is:inline>
-    (function () {
-      var q = document.getElementById("q");
-      if (!q) return;
-      var rows = [].slice.call(document.querySelectorAll(".prow"));
-      var groups = [].slice.call(document.querySelectorAll(".plgroup"));
-      // Haystack per row and group per row, resolved once. The group loop
-      // below used to ask the DOM to collect every unhidden row again, per
-      // group, per keystroke — the tally the row loop already has.
-      var hay = rows.map(function (r) { return r.getAttribute("data-s"); });
-      var at = new Map();
-      groups.forEach(function (g, i) { at.set(g, i); });
-      var owner = rows.map(function (r) { return at.get(r.closest(".plgroup")); });
-      var count = document.getElementById("pcount");
-      function apply() {
-        var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
-        var shown = 0;
-        var live = groups.map(function () { return 0; });
-        rows.forEach(function (r, i) {
-          var h = hay[i];
-          var ok = terms.every(function (t) { return h.indexOf(t) !== -1; });
-          r.hidden = !ok;
-          if (ok) { shown++; live[owner[i]]++; }
-        });
-        groups.forEach(function (g, i) {
-          var any = live[i];
-          g.hidden = any === 0;
-          var gc = g.querySelector(".gcount");
-          if (gc) gc.textContent = any + (any === 1 ? " place" : " places");
-        });
-        count.textContent = shown + (shown === 1 ? " place" : " places") + (terms.length ? " matching" : "");
-      }
-      q.addEventListener("input", apply);
-      var pre = new URLSearchParams(location.search).get("q");
-      if (pre) { q.value = pre; apply(); }
-    })();
-  </script>
-<style is:global>
-  /* is:global, deliberately. A scoped <style> makes Astro stamp
-     data-astro-cid-… onto every element the page renders, and on a register
-     of 11,765 rows that added 218 bytes a row — 2.5MB onto the very page
-     whose size was the problem. The selector below is specific to this page
-     anyway. */
-  /* Only the groups on screen need laying out; every row stays in the HTML. */
-  .plgroup {
-    content-visibility: auto;
-    /* Plain length first: browsers from Chrome 85 to 110 support
-       content-visibility but cannot parse the "auto" keyword here, and
-       without a usable estimate they collapse every off-screen section
-       to nothing and the scrollbar jumps as you scroll. */
-    contain-intrinsic-size: 420px;
-    contain-intrinsic-size: auto 420px;
-  }
-</style>
+  {/* WHAT STOOD HERE, AND WHY IT IS GONE.
+
+      A search box, a live count, a table of every place, the script that
+      drove them and a content-visibility rule for the groups it drew. When
+      this page moved onto the kit's Places component the table went and
+      NONE OF THE REST DID.
+
+      So the page shipped TWO search boxes. The one under the heading
+      "Search", with the placeholder about Boulia and Staffordshire, was the
+      prominent one, and it did nothing at all: its script queried .prow and
+      .plgroup, of which the page rendered none. The count beside it read
+      "167 places" and could never read anything else. Below them both sat
+      the component's own filter, which worked.
+
+      Found by `astro check` on 20 September, which flagged the four orphan
+      closing tags left where the table had been. Nothing else had ever
+      mentioned it: the page built, and a dead control looks exactly like a
+      live one until somebody types in it. */}
+
 
 <section class="blk" id="every-place">
   <h2>Every place with a page of its own</h2>

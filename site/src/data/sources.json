@@ -1,0 +1,199 @@
+{
+  "recordSetsHead": "Record sets — these are evidence",
+  "recordSetsNote": "Each entry says what was read and, where it matters, what was not. A source named without that distinction is a citation, not evidence.",
+  "recordSets": [
+    {
+      "name": "Queensland civil registration",
+      "body": "Births, deaths and marriages, from 1856.",
+      "links": []
+    },
+    {
+      "name": "New South Wales civil registration and parish registers",
+      "body": "Including **St James's, Sydney**, where George Lindsay D'Arcy was christened on 5 November 1829.",
+      "links": []
+    },
+    {
+      "name": "Australian newspapers (Trove)",
+      "body": "Death and funeral notices, and the Brisbane press.",
+      "links": [
+        [
+          "What the papers said",
+          "/papers"
+        ]
+      ]
+    },
+    {
+      "name": "Queensland State Archives, series S36 — Coronial Files",
+      "body": "Item `ITM2736504`, digital representation `DR103140`: the 1902 magisterial inquiry into the death of *William Hartley Sneyd*. **Eighteen images, no text layer, read and transcribed in full from the originals** on 9 September 2026. It supplies four sworn depositions, a post-mortem certificate and a Government Analyst's certificate, and it is **the only record in this archive in which a member of the family speaks about another under oath**.",
+      "links": [
+        [
+          "Transcribed in full",
+          "/inquest-1902"
+        ]
+      ]
+    },
+    {
+      "name": "National Archives of Australia, series B2455 — First World War service dossiers",
+      "body": "The thirty-page dossier of *Private Arthur Hartley Sneyd, 5050* (item 8088453) has been **read in full**: attestation, physical description, statement of service, the Army Form B.2090A report of death, and the Kit Store inventory of his effects. The dossier of *L/Cpl Vivian Claude Sneyd, 1696* (item 8087524, 21 pages) has been **partly read** — the Service and Casualty Form and the Statement of Service. A third, *Pte Ernest Vivian William Sneyd, 3891* (item 8087517), was located and **has not been opened**.\n\nFor *Sergeant Lindesay Atkinson D'Arcy, 11335*, **no B2455 item could be found** under either spelling. An earlier version of this page said a fourteen-page dossier «is known to exist»; that was an overclaim and is withdrawn. What the search did find is **NAA: J34, C34558**, a Repatriation Commission pension case file of 1937-38 with his widow as beneficiary — not digitised, and not yet read.",
+      "links": [
+        [
+          "What it says",
+          "/great-war"
+        ]
+      ]
+    },
+    {
+      "name": "Australian War Memorial, AWM 28 — recommendation files for honours and awards",
+      "body": "The recommendation for the **Bar to the Military Medal** for *1696 L/Cpl Vivian Claud Sneyd, 3rd Australian Field Ambulance*, dated 12 October 1917, endorsed «Awarded» and signed by Lieut-Col. A. Graham Butler — **read and transcribed in full**.",
+      "links": [
+        [
+          "The citation",
+          "/great-war"
+        ]
+      ]
+    },
+    {
+      "name": "Australian Red Cross Wounded and Missing Enquiry Bureau files (AWM `1DRL/0428`)",
+      "body": "The twenty-three-page file for *5050 Private Arthur Hartley Sneyd, 9th Battalion*, **read in full**. Six statements taken from men in the hospitals and base depots of France, and two letters from the friend who kept looking for him for thirteen months. **It is hearsay evidence, gathered as such and contradictory on its face**, and it is treated that way here.",
+      "links": [
+        [
+          "The whole file",
+          "/finding-arthur"
+        ]
+      ]
+    },
+    {
+      "name": "Australian War Memorial — embarkation and nominal rolls",
+      "body": "Used here for *Sergeant Lindesay Atkinson D'Arcy, 11335* and *Private Arthur Hartley Sneyd, 5050*. The AWM 131 Roll of Honour index card for Sneyd has been read. The **Roll of Honour circular** — the form his family filled in by hand — survives and **has still not been read directly**; one phrase from it reaches this archive at second hand, through the AIF Project's transcription, and is quoted as such: that he «gave up this rank in Egypt in order to get across to France».\n\nAWM's own collection search returned nothing for any query on 9 September 2026 — the Memorial is migrating its records. The documents were reached by direct URL instead.",
+      "chip": "second-hand",
+      "links": []
+    },
+    {
+      "name": "Brisbane City Council cemetery registers",
+      "body": "Toowong, Dutton Park, South Brisbane, Nundah, Lutwyche, Mt Thompson.",
+      "links": [
+        [
+          "The graves",
+          "/graves"
+        ]
+      ]
+    },
+    {
+      "name": "Ireland, Births and Baptisms, 1620–1881 (index, via FamilySearch)",
+      "body": "The christening of Paul Cole Atkinson at Limerick on 9 July 1832, naming *Richard Atkinson* and *Anne*. **RootsIreland itself has not been searched** — it needs a paid account, and a request is drafted.",
+      "links": [
+        [
+          "The Atkinsons",
+          "/atkinson"
+        ]
+      ]
+    },
+    {
+      "name": "Caribbean Birth & Baptism Index 1590–1928",
+      "body": "The christening of Constantine Darcy at **St Michael, Barbados, 18 February 1786**, naming *Robert Darcy* and *Jane*.",
+      "links": [
+        [
+          "Constantine, nineteen",
+          "/constantine"
+        ]
+      ]
+    },
+    {
+      "name": "Connolly and Edwards, *Roll of Officers of the Corps of Royal Engineers, 1660–1898*",
+      "body": "R.E. Institute, Chatham, 1898 — entries 203 and 335, for Robert and Constantine D'Arcy. Searched in full via the Internet Archive scan.",
+      "links": [
+        [
+          "The Corps",
+          "/the-corps"
+        ]
+      ]
+    },
+    {
+      "name": "Kent Burials and Hampshire Marriages (FindMyPast)",
+      "body": "The burial of Robert D'Arcy at St Mary, Chatham, 19 May 1827, and his marriage to **Jean Ward** at Portsea St Mary, 21 June 1779 — the latter re-opened at transcript level on 17 September 2026 to confirm the spouse's surname.",
+      "links": [
+        [
+          "Chatham",
+          "/chatham"
+        ]
+      ]
+    },
+    {
+      "name": "Australia, Births and Baptisms, 1792–1981",
+      "body": "The christening of George Lindsay Darcy at St James Sydney, 5 November 1829, naming both parents.",
+      "links": [
+        [
+          "Australia",
+          "/australia"
+        ]
+      ]
+    },
+    {
+      "name": "British Newspaper Archive, Family Notices",
+      "body": "The marriage notice of «Captain George d'Arcy», son of «Lieut Colonel d'Arcy», *Salisbury and Winchester Journal*, 23 September 1805.",
+      "links": [
+        [
+          "Miss Ludlam of Guernsey",
+          "/george-pitt"
+        ]
+      ]
+    },
+    {
+      "name": "Scotland, Civil Registration and Scotland, Marriages (indexes)",
+      "body": "The birth of William Murdoch at St Quivox and Newton, 7 October 1856, naming Francis Murdoch and Marion Watt; and their marriage at Avondale, Lanarkshire, 6 May 1854. **ScotlandsPeople itself, which holds the register images, has not been consulted** — it needs a paid account, and a request is drafted.",
+      "links": [
+        [
+          "The Murdochs",
+          "/murdoch"
+        ]
+      ]
+    },
+    {
+      "name": "FindMyPast — the subscription sets",
+      "body": "Taken out in September 2026 and worked through: **England Births & Baptisms 1538-1975**, which carries a father's first name and yielded 340 baptisms under fifteen spellings of Saniger; **England Marriages 1538-1973**; **England & Wales Deaths 1837-2007**; the **1841, 1851 and 1861 censuses**; and **British Army Lists & Commission Registers 1661-1826**. Every null taken from them names the control that could have disproved it.",
+      "links": [
+        [
+          "Fifteen spellings",
+          "/spellings"
+        ],
+        [
+          "Behind the paywall",
+          "/behind-the-paywall"
+        ]
+      ]
+    },
+    {
+      "name": "The National Archives — Discovery, by API",
+      "body": "`GET /API/search/records` needs no account, no key and no bot check, and returns JSON. Used to sweep the whole catalogue under fifteen spellings of the surname and nine of its medieval form — 134 and 193 distinct records, across twelve repositories.",
+      "links": [
+        [
+          "The name in its own century",
+          "/swonhungre"
+        ]
+      ]
+    }
+  ],
+  "privateHead": "Family documents held privately",
+  "private": [
+    {
+      "name": "The eulogy for Kenneth Lindsay D'Arcy",
+      "body": "March 2010 — four thousand words in three parts, delivered by Gayle, Ian and Graham D'Arcy. **The single richest source in the archive.**",
+      "links": [
+        [
+          "Read it",
+          "/documents"
+        ]
+      ]
+    },
+    {
+      "name": "A 1970 school photograph",
+      "body": "Pimlico State High School, Townsville, showing Ian D'Arcy — which independently confirms the Townsville decade described in the eulogy.",
+      "links": []
+    },
+    {
+      "name": "The «This Is Your Life» book",
+      "body": "Presented to Ken D'Arcy on his retirement from National Mutual in 1982. Referred to in the eulogy; **not yet located**.",
+      "links": []
+    }
+  ]
+}

@@ -5,6 +5,15 @@ import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { people } from "../lib/people.js";
 import printed from "../data/printed.json";
+import src from "../data/sources.json";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
+
+/* The two prose lists below used to be hand-written <ul>s in this file — about
+   a hundred lines of markup with the evidence inside it. They are data now, so
+   they can be counted, gated and re-ordered without touching a page. The
+   `mono` spans became backticks and the inline links became a links array;
+   nothing else was changed. */
+const mono = (h) => h.replace(/`([^`]+)`/g, '<span class="mono">$1</span>');
 
 const withSrc = people.filter((p) => (p.sources || []).length > 0).length;
 const counts = {};
@@ -58,98 +67,36 @@ const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   </section>
 
   <section class="blk">
-    <h2>Record sets — these are evidence</h2>
-    <ul class="dek">
-      <li><strong>Queensland civil registration</strong> — births, deaths and marriages, from 1856.</li>
-      <li><strong>New South Wales civil registration and parish registers</strong> — including
-      St James's, Sydney, where George Lindsay D'Arcy was christened on 5 November 1829.</li>
-      <li><strong>Australian newspapers (Trove)</strong> — death and funeral notices, and the
-      Brisbane press.</li>
-      <li><strong>Queensland State Archives, series S36 — Coronial Files</strong>. Item
-      <span class="mono">ITM2736504</span>, digital representation <span class="mono">DR103140</span>:
-      the 1902 magisterial inquiry into the death of <em>William Hartley Sneyd</em>. Eighteen images,
-      no text layer, <strong>read and transcribed in full from the originals</strong> on 9 September
-      2026. It supplies four sworn depositions, a post-mortem certificate and a Government Analyst's
-      certificate, and it is the only record in this archive in which a member of the family speaks
-      about another under oath. <a href={u("/inquest-1902/")}>Transcribed in full →</a></li>
-      <li><strong>National Archives of Australia, series B2455 — First World War service dossiers.</strong>
-      The thirty-page digitised dossier of <em>Private Arthur Hartley Sneyd, 5050</em> (item 8088453)
-      has been <strong>read in full</strong>: attestation, physical description, statement of service,
-      the Army Form B.2090A report of death, and the Kit Store inventory of his effects.
-      <a href={u("/great-war/")}>What it says →</a><br />
-      The dossier of <em>L/Cpl Vivian Claude Sneyd, 1696</em> (item 8087524, 21 pages) has been
-      <strong>partly read</strong> — the Service and Casualty Form and the Statement of Service. A
-      third, <em>Pte Ernest Vivian William Sneyd, 3891</em> (item 8087517), was located this session
-      and has not been opened.<br />
-      For <em>Sergeant Lindesay Atkinson D'Arcy, 11335</em>, <strong>no B2455 item could be found</strong>
-      under either spelling of his name. An earlier version of this page said a fourteen-page dossier
-      "is known to exist"; that was an overclaim and is withdrawn. What the search did find is
-      <strong>NAA: J34, C34558</strong> — a <strong>Repatriation Commission pension case file</strong>,
-      1937–38, with his widow as beneficiary. Not digitised, and not yet read.</li>
-      <li><strong>Australian War Memorial, AWM 28 — recommendation files for honours and awards,
-      A.I.F.</strong> The recommendation for the <strong>Bar to the Military Medal</strong> for
-      <em>1696 L/Cpl Vivian Claud Sneyd, 3rd Australian Field Ambulance</em>, dated 12 October 1917,
-      endorsed "Awarded" and signed by Lieut-Col. A. Graham Butler — <strong>read and transcribed in
-      full</strong>. <a href={u("/great-war/")}>The citation →</a></li>
-      <li><strong>Australian Red Cross Society Wounded and Missing Enquiry Bureau files, 1914–18 War
-      (AWM <span class="mono">1DRL/0428</span>)</strong> — the twenty-three-page file for
-      <em>5050 Private Arthur Hartley Sneyd, 9th Battalion</em>, <strong>read in full</strong>. Six
-      statements taken from men in the hospitals and base depots of France, and two letters from the
-      friend who kept looking for him for thirteen months. It is hearsay evidence, gathered as such and
-      contradictory on its face, and it is treated that way here.
-      <a href={u("/finding-arthur/")}>The whole file →</a></li>
-      <li><strong>Australian War Memorial</strong> — embarkation and nominal rolls, used here for
-      <em>Sergeant Lindesay Atkinson D'Arcy, 11335</em> and <em>Private Arthur Hartley Sneyd, 5050</em>.
-      The AWM 131 Roll of Honour index card for Sneyd has been read. The <strong>Roll of Honour
-      circular</strong> — the form his family filled in by hand — survives and
-      <strong>has still not been read directly</strong>; one phrase from it reaches this archive at
-      second hand, through the AIF Project's transcription, and is quoted as such: that he
-      <em>"gave up this rank in Egypt in order to get across to France"</em>.
-      <span class="chip inf">second-hand</span><br />
-      AWM's own collection search returned nothing for any query on 9 September 2026 — the Memorial
-      is migrating its Units, Places, Library, People and Rolls records. The documents were reached by
-      direct URL instead.</li>
-      <li><strong>Brisbane City Council cemetery registers</strong> — Toowong, Dutton Park, South
-      Brisbane, Nundah, Lutwyche, Mt Thompson.</li>
-      <li><strong>Ireland, Births and Baptisms, 1620–1881</strong> (index, via FamilySearch) — the
-      christening of Paul Cole Atkinson at Limerick on 9 July 1832, naming <em>Richard Atkinson</em>
-      and <em>Anne</em>. <strong>Roots Ireland itself has not been searched</strong>; it needs a paid
-      account, and a request is drafted.</li>
-      <li><strong>Caribbean Birth &amp; Baptism Index 1590–1928</strong> — the christening of
-      Constantine Darcy at St Michael, Barbados, 18 February 1786, naming <em>Robert Darcy</em> and
-      <em>Jane</em>.</li>
-      <li><strong>Connolly and Edwards, <em>Roll of Officers of the Corps of Royal Engineers,
-      1660–1898</em></strong> (R.E. Institute, Chatham, 1898) — entries 203 and 335, for Robert and
-      Constantine D'Arcy. Searched in full via the Internet Archive scan.</li>
-      <li><strong>Kent Burials</strong> and <strong>Hampshire Marriages</strong> (FindMyPast) — the
-      burial of Robert D'Arcy at St Mary, Chatham, 19 May 1827, and his marriage to Jean Ward at
-      Portsea St Mary, 21 June 1779.</li>
-      <li><strong>Australia, Births and Baptisms, 1792–1981</strong> — the christening of George
-      Lindsay Darcy at St James Sydney, 5 November 1829, naming both parents.</li>
-      <li><strong>British Newspaper Archive, Family Notices</strong> — the marriage notice of
-      "Captain George d'Arcy", son of "Lieut Colonel d'Arcy", <em>Salisbury and Winchester Journal</em>,
-      23 September 1805.</li>
-      <li><strong>Scotland, Civil Registration</strong> and <strong>Scotland, Marriages</strong>
-      (indexes) — the birth of William Murdoch at St Quivox and Newton, 7 October 1856, naming Francis
-      Murdoch and Marion Watt; and their marriage at Avondale, Lanarkshire, 6 May 1854.
-      <strong>ScotlandsPeople itself, which holds the register images, has not been consulted</strong> —
-      it needs a paid account, and a request is drafted.</li>
-      <li><strong>Forebears</strong> — surname distribution, accessed 9 September 2026.
-      <a href={u("/name/")}>The name →</a></li>
-    </ul>
+    <h2>{src.recordSetsHead}</h2>
+    <p class="small" style="margin-top:.5rem">{src.recordSetsNote}</p>
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
+      {src.recordSets.map((r) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><strong set:html={mono(mdp(r.name))}></strong>
+            {r.chip && <> <span class="chip inf">{r.chip}</span></>}</div>
+          <p class="small" style="margin-top:.4rem" set:html={mono(mdp(r.body))}></p>
+          {r.links.length > 0 && (
+            <p class="small" style="margin-top:.35rem">{r.links.map(([label, href], i) => (
+              <>{i > 0 && " · "}<a href={u(href + "/")}>{label} →</a></>))}</p>)}
+        </div>
+      ))}
+    </div>
+    <p class="small" style="margin-top:1.1rem">{src.recordSets.length} record sets.</p>
   </section>
 
   <section class="blk">
-    <h2>Family documents held privately</h2>
-    <ul class="dek">
-      <li><strong>The eulogy for Kenneth Lindsay D'Arcy</strong>, March 2010 — four thousand words in
-      three parts, delivered by Gayle, Ian and Graham D'Arcy. The single richest source in the
-      archive. <a href={u("/documents/")}>Read it →</a></li>
-      <li><strong>A 1970 school photograph</strong>, Pimlico State High School, Townsville, showing
-      Ian D'Arcy — which independently confirms the Townsville decade described in the eulogy.</li>
-      <li><strong>The 'This Is Your Life' book</strong> presented to Ken D'Arcy on his retirement from
-      National Mutual in 1982. Referred to in the eulogy; not yet located.</li>
-    </ul>
+    <h2>{src.privateHead}</h2>
+    <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
+      {src.private.map((r) => (
+        <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
+          <div><strong set:html={mono(mdp(r.name))}></strong></div>
+          <p class="small" style="margin-top:.4rem" set:html={mono(mdp(r.body))}></p>
+          {r.links.length > 0 && (
+            <p class="small" style="margin-top:.35rem">{r.links.map(([label, href]) => (
+              <a href={u(href + "/")}>{label} →</a>))}</p>)}
+        </div>
+      ))}
+    </div>
   </section>
 
   <section class="blk" style="border-bottom:0">
