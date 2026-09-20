@@ -3519,6 +3519,24 @@
       "outcome": "yield",
       "got": "**24 spellings tried, 19 productive, 371 baptisms 1565-1909.** Nine forms from this archive's own table had never been swept: SINIGER 7, SINEGER 6, SANEGER 8, SANNEGAR 4, SANIGEAR 3, SINIGAR 2, SANNIGAR 1, and **SANYGER and SYNIGER nought** — which is the finding that survived the change of basis, since they are the 1608 muster's forms and appear in no register anywhere. Controlled in the same session: SANIGER returned 158, reproducing the count published on 17 September exactly. **SINGER and SANGER excluded** — 127 and 40 in Gloucestershire alone, because they are ordinary surnames rather than forms of this one.",
       "href": "/spellings"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975, Hampshire",
+      "what": "Whether the national baptism set can answer anything about Portsea",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "It cannot. No DARCY at Portsea — and **no SMITH either**, which is the control that matters: 3 Smith baptisms in the whole of Hampshire against **41,098 in Kent**, asked the same way in the same session. Hampshire is not in this set. Every Hampshire question this archive has answered used the Hampshire Genealogical Society's county sets instead, which is why none of its Portsea findings are affected.",
+      "href": "/portsea"
+    },
+    {
+      "src": "FindMyPast — Hampshire Baptisms (Hampshire Genealogical Society)",
+      "what": "Every D'Arcy baptism in the county, read end to end — the eight other children the tree gives Robert and Jean",
+      "when": "21 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "**44 entries, all read. Exactly one is theirs: Joseph, 1780, father Robert, mother Jean, Portsea St Mary.** The tree gives them nine children and the county holds one.\n\nThe control is the set's own Portsea coverage: **seven other D'Arcy children were baptised in that parish between 1802 and 1836 to four different fathers** — Chrytophori, Thomas, John, and Christophori. The parish is plainly in the book. It does not follow that the eight did not exist; Robert was an engineer officer and two of his children were christened at St Michael, Barbados. **It follows that Portsea is finished as a question.**",
+      "href": "/portsea"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

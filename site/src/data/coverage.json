@@ -505,6 +505,15 @@
       "verdict": "good",
       "note": "`GET /API/search/records?sps.searchQuery=…` returns JSON with a count and a paged records array, and needs **no account, no key and no bot check** — which is the whole difference between a question and a measurement. Wrapped as `tools/discovery.py` on 17 September and control-tested against nonsense terms before its counts were used. It returns the CATALOGUE, not the documents: every description is a modern cataloguer's reading, and two of the best ones here carry the cataloguer's own «[Saniger?]» in brackets.",
       "href": "/swonhungre"
+    },
+    {
+      "db": "FindMyPast — England Births & Baptisms 1538-1975",
+      "where": "Hampshire",
+      "holds": "almost nothing for this county",
+      "span": "1538-1975 nominally",
+      "verdict": "absent",
+      "note": "Measured on 21 September by asking the same question of two counties. **SMITH returns 3 baptisms in Hampshire and 41,098 in Kent.** The set is a FamilySearch transcription and Hampshire is simply not in it. This archive has never built a Hampshire finding on it — Joseph D'Arcy's baptism, his siblings and his parents' marriage all come from the **Hampshire Genealogical Society's own county sets**, which are separate record sets on the same site. Recorded so that nobody reaches for the national set and reports Portsea empty.",
+      "href": "/portsea"
     }
   ],
   "verdicts": {

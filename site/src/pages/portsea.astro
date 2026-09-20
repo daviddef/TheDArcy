@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/portsea.json";
 const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
 ---
@@ -91,4 +92,27 @@ const totalCtrl = d.control.rows.reduce((a, r) => a + r[2], 0);
       <a href={u("/corrections/")}>Filed as an error →</a>
     </Note>
   </section>
+
+  <Blk label={`Hampshire Baptisms · ${d.county.found}`} title={d.county.head}>
+    <p class="lede" set:html={mdp(d.county.lede)}></p>
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr><th>Child</th><th class="m">Year</th><th>Father</th><th>Mother</th><th>Parish</th></tr></thead>
+        <tbody>{d.county.rows.map(([c, y, f, m, pl]) => (
+          <tr style={pl.includes("direct line") ? "background:var(--tint)" : ""}>
+            <td><strong>{c}</strong></td><td class="m">{y}</td>
+            <td set:html={mdp(f)}></td><td set:html={mdp(m)}></td>
+            <td class="small">{pl}</td></tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p class="small" style="margin-top:.7rem">Nine of the 44; the rest are Southampton, Milford,
+    Pennington, Winchester, Gosport, Aldershot and the Isle of Wight.</p>
+    <Note style="border-left-width:3px;margin-top:1.3rem"><strong>{d.county.meansHead}.</strong>
+      <span set:html={mdp(d.county.means)} />
+      {" "}<span class="chip doc">{d.county.chipMeans}</span></Note>
+    <Note style="margin-top:1.2rem"><strong>{d.county.careHead}.</strong>
+      <span set:html={mdp(d.county.care)} />
+      {" "}<span class="chip inf">{d.county.chipCare}</span></Note>
+  </Blk>
+
 </Base>
