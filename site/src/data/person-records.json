@@ -69,28 +69,9 @@
 }
 ]
 },
-"james-sneyd-1779": {
-"name": "James Sneyd",
-"shared": true,
-"alsoNamed": [
-"james-sneyd-1818"
-],
-"rows": [
-{
-"says": "son, aged 33, ENGRAVER · born Hanley — Samuel Charles Sneyd's brother, who stayed and kept the shop",
-"source": "1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "of WELL STREET, Hanley · engraver at 53 in 1871 with his son James A, also an engraver; ENGRAVER (POTTER) at 63 in 1881 at No. 20, with his granddaughter Mary Elizabeth MULLOCK (Sneyd) · his father kept the grocer's shop in the same street in 1851",
-"source": "1871 and 1881 censuses, Well Street, Hanley — RG10/2857 f.37 p.10; RG11/2719 f.12 p.18 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-}
-]
-},
 "james-sneyd-1818": {
 "name": "James Sneyd",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "james-sneyd-1779"
 ],
@@ -105,25 +86,12 @@
 "source": "1871 and 1881 censuses, Well Street, Hanley — RG10/2857 f.37 p.10; RG11/2719 f.12 p.18 (FindMyPast)",
 "link": "https://www.findmypast.com.au/"
 }
-]
-},
-"mary-sneyd-1788": {
-"name": "Mary Sneyd",
-"shared": true,
-"alsoNamed": [
-"mary-sneyd-1814"
 ],
-"rows": [
-{
-"says": "baptised Hanley 18 February 1814 · father Samuel, a SERVANT · mother Elizabeth — sister to Samuel Charles",
-"source": "FreeREG, Hanley St John the Evangelist, Bishop's Transcript",
-"link": "https://www.freereg.org.uk/"
-}
-]
+"settled": true
 },
 "mary-sneyd-1814": {
 "name": "Mary Sneyd",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "mary-sneyd-1788"
 ],
@@ -133,7 +101,8 @@
 "source": "FreeREG, Hanley St John the Evangelist, Bishop's Transcript",
 "link": "https://www.freereg.org.uk/"
 }
-]
+],
+"settled": true
 },
 "roy-sneyd": {
 "name": "Roy Sneyd",
@@ -154,7 +123,7 @@
 },
 "samuel-charles-sneyd-1810": {
 "name": "Samuel Charles Sneyd",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "samuel-charles-sneyd-1863"
 ],
@@ -174,31 +143,8 @@
 "source": "Trove, Australian newspapers",
 "link": "https://nla.gov.au/nla.news-article19799164"
 }
-]
-},
-"samuel-charles-sneyd-1863": {
-"name": "Samuel Charles Sneyd",
-"shared": true,
-"alsoNamed": [
-"samuel-charles-sneyd-1810"
 ],
-"rows": [
-{
-"says": "died 04/07/1885 · parents: — · Samuel Sneyd",
-"source": "Queensland death index 1885/C/4045",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-},
-{
-"says": "born 13 March 1811 · baptised Hanley St John the Evangelist 28 April 1811 · father Samuel · mother Elizabeth · abode Hanley — the tree says 15 March 1810",
-"source": "FreeREG, Hanley St John the Evangelist, Bishop's Transcript",
-"link": "https://www.freereg.org.uk/"
-},
-{
-"says": "obituary, The Queenslander, 11 Jul 1885",
-"source": "Trove, Australian newspapers",
-"link": "https://nla.gov.au/nla.news-article19799164"
-}
-]
+"settled": true
 },
 "samuel-sneyd": {
 "name": "Samuel Sneyd",
@@ -466,7 +412,7 @@
 },
 "catherine-d-arcy-1789": {
 "name": "Catherine D'Arcy",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "catherine-d-arcy-1867"
 ],
@@ -501,46 +447,8 @@
 "source": "Sussex Burials, TNA RG 37/65/2 p.47",
 "link": "https://www.findmypast.co.uk/"
 }
-]
-},
-"catherine-d-arcy-1867": {
-"name": "Catherine D'Arcy",
-"shared": true,
-"alsoNamed": [
-"catherine-d-arcy-1789"
 ],
-"rows": [
-{
-"says": "death · aged 86 · Brighton district, Sussex, Q1 1876 · vol 2B p.164 — matching a birth of 10 Dec 1789",
-"source": "England & Wales Deaths 1837-2007 (GRO index)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "death notice · “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86”",
-"source": "Horsham, Petworth, Midhurst and Steyning Express, 8 Feb 1876, p.2",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "death duty · grant year 1876 · Court of Probate · of Brighton, Sussex",
-"source": "Index to Death Duty Registers 1796-1903, TNA IR 27/396",
-"link": "https://discovery.nationalarchives.gov.uk/"
-},
-{
-"says": "census 1841 · aged 39 · Western Buildings, Brighton",
-"source": "1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "census 1851 · aged 50 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
-"source": "1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · the exact date the Horsham paper printed a fortnight later",
-"source": "Sussex Burials, TNA RG 37/65/2 p.47",
-"link": "https://www.findmypast.co.uk/"
-}
-]
+"settled": true
 },
 "catherine-lucy-jane-d-arcy": {
 "name": "Catherine Lucy Jane D'Arcy",
@@ -586,48 +494,9 @@
 }
 ]
 },
-"constantine-d-arcy-1759": {
-"name": "Constantine D'Arcy",
-"shared": true,
-"alsoNamed": [
-"constantine-d-arcy-1786"
-],
-"rows": [
-{
-"says": "buried Chatham, 9 May 1805 · entered as Lt in the Royal Engineers",
-"source": "FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/"
-},
-{
-"says": "entry 335 · “Died at Chatham, 6 5 1805” · christened St Michael, Barbados, 18 Feb 1786",
-"source": "Connolly, Roll of Officers of the Corps of Royal Engineers",
-"link": "https://archive.org/"
-},
-{
-"says": "burial · 9 May 1805, Chatham St Mary the Virgin · “Lt in the royal engineers” · no age",
-"source": "Kent Burials, Medway Archives P85/1/79",
-"link": "https://cityark.medway.gov.uk/wwwopacx/wwwopac.ashx?command=getcontent&server=files&value=P085-01-79(1).pdf"
-},
-{
-"says": "commission · Gentleman Cadet to Second Lieutenant, Corps of Royal Engineers, 1 Feb 1804, vice Harding",
-"source": "London Gazette 15707 p.690, Ordnance-Office 4 June 1804",
-"link": "https://www.thegazette.co.uk/London/issue/15707/page/690"
-},
-{
-"says": "commission · Second Lieutenant to First Lieutenant, Royal Engineers, 1 Mar 1805, vice Dyson — the same page as his father's lieutenant-colonelcy",
-"source": "London Gazette 15789 p.351, Ordnance-Office 18 March 1805",
-"link": "https://www.thegazette.co.uk/London/issue/15789/page/351"
-},
-{
-"says": "death notice · “the son of Col. D'Arcy, chief engineer of Chatham lines; his remains were interred with military honours”",
-"source": "Kentish Gazette, 14 May 1805, p.4",
-"link": "https://www.findmypast.com.au/"
-}
-]
-},
 "constantine-d-arcy-1786": {
 "name": "Constantine D'Arcy",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "constantine-d-arcy-1759"
 ],
@@ -662,7 +531,8 @@
 "source": "Kentish Gazette, 14 May 1805, p.4",
 "link": "https://www.findmypast.com.au/"
 }
-]
+],
+"settled": true
 },
 "frank-hyde-d-arcy": {
 "name": "Frank Hyde D'Arcy",
@@ -700,16 +570,11 @@
 },
 "george-pitt-d-arcy-1783": {
 "name": "George Pitt D'Arcy",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "george-pitt-d-arcy-1864"
 ],
 "rows": [
-{
-"says": "died 21/03/1931 · parents: Eliza Keeling · George Lindesay D'Arcy",
-"source": "Queensland death index 1931/B/13634",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-},
 {
 "says": "named in the Chatham register 31 March 1826 as Bt: Major 39th Foot, of Chatham",
 "source": "FreeREG, Chatham St Mary the Virgin",
@@ -740,11 +605,12 @@
 "source": "Trove, Australian newspapers",
 "link": "https://nla.gov.au/nla.news-article59769271"
 }
-]
+],
+"settled": true
 },
 "george-pitt-d-arcy-1864": {
 "name": "George Pitt D'Arcy",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "george-pitt-d-arcy-1783"
 ],
@@ -753,38 +619,9 @@
 "says": "died 21/03/1931 · parents: Eliza Keeling · George Lindesay D'Arcy",
 "source": "Queensland death index 1931/B/13634",
 "link": "https://www.familyhistory.bdm.qld.gov.au/"
-},
-{
-"says": "named in the Chatham register 31 March 1826 as Bt: Major 39th Foot, of Chatham",
-"source": "FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/"
-},
-{
-"says": "39TH FOOT, Peninsular War officers' roll, 1808 · the same regiment he commanded a detachment of aboard the convict ship England in 1826",
-"source": "Peninsular War, British Army Officers 1808-1814 (RUSI, via FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "“Lately, Captain GEORGE D'ARCY, [of] the [—] foot, SON [of] LIEUT. COLONEL D'ARCY, [to] MISS LUDLAM, OF GUERNSEY” · the first record to make him anyone's son, and Robert D'Arcy had been gazetted Lieutenant-Colonel six months before",
-"source": "Salisbury and Winchester Journal, 23 September 1805, p.3 (British Newspaper Archive)",
-"link": "https://www.findmypast.com.au/search-newspapers"
-},
-{
-"says": "commanding a detachment of the 39th Regiment in Ireland · “under the command of Major D'Arcy”, British Press 6 March 1820 and Weekly Freeman's Journal 2 February 1822",
-"source": "British and Irish newspapers, 1820 and 1822",
-"link": "https://www.findmypast.com.au/search-newspapers"
-},
-{
-"says": "B. Major · commanded the detachment of the 39th Foot: 39 men, 6 women, 7 children, embarked 8 Apr 1826 · recovered from gout 16 Aug 1826",
-"source": "TNA ADM 101/26/1, surgeon's journal of the England",
-"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733"
-},
-{
-"says": "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”",
-"source": "Trove, Australian newspapers",
-"link": "https://nla.gov.au/nla.news-article59769271"
 }
-]
+],
+"settled": true
 },
 "jane-d-arcy": {
 "name": "Jane D'Arcy",
@@ -1340,56 +1177,22 @@
 },
 "thomas-saniger-1711": {
 "name": "Thomas Saniger",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "thomas-saniger-1744"
 ],
 "rows": [
 {
-"says": "baptised at Berkeley 23 AUGUST 1744, father THOMAS Saniger · the tree gives the same day",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "married CATHERINE COTTON at Berkeley, 10 APRIL 1769 · a name this archive never had, and the mother of John",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "buried at Berkeley St Mary the Virgin, 24 JANUARY 1819, AGED 75",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "baptised at Berkeley 3 JULY 1808, father JOHN Saniger · Hannah's brother",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
 "says": "baptised at Berkeley 12 DECEMBER 1711, father WILLIAM Saniger · the tree gives his birth as 11 December 1711",
 "source": "Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
 "link": "https://www.findmypast.com.au/"
-},
-{
-"says": "THOMAS SINEGAR, 30, at Sion Road, Johns Place, St Philip & Jacob Without, 1841 · with Martha 31, James 11, LYDIA 9, Thomas 7, Martha 2 — HO107/378 bk5 f.40 p.26 sch.1633 · and in 1851, aged 42, a labourer at 7 Oxford Road BORN BERKLEY, GLOUCESTERSHIRE",
-"source": "1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John",
-"source": "FamilySearch Family Tree",
-"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP"
-},
-{
-"says": "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, entered as THOMAS SANIGRE · Hannah's brother, baptised Berkeley 3 July 1808 son of John",
-"source": "England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast",
-"link": "https://www.familysearch.org/"
 }
-]
+],
+"settled": true
 },
 "thomas-saniger-1744": {
 "name": "Thomas Saniger",
-"shared": true,
+"shared": false,
 "alsoNamed": [
 "thomas-saniger-1711"
 ],
@@ -1408,33 +1211,9 @@
 "says": "buried at Berkeley St Mary the Virgin, 24 JANUARY 1819, AGED 75",
 "source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
 "link": "https://www.findmypast.com.au/"
-},
-{
-"says": "baptised at Berkeley 3 JULY 1808, father JOHN Saniger · Hannah's brother",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "baptised at Berkeley 12 DECEMBER 1711, father WILLIAM Saniger · the tree gives his birth as 11 December 1711",
-"source": "Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "THOMAS SINEGAR, 30, at Sion Road, Johns Place, St Philip & Jacob Without, 1841 · with Martha 31, James 11, LYDIA 9, Thomas 7, Martha 2 — HO107/378 bk5 f.40 p.26 sch.1633 · and in 1851, aged 42, a labourer at 7 Oxford Road BORN BERKLEY, GLOUCESTERSHIRE",
-"source": "1841 census and Bristol parish registers, St Philip and Jacob (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John",
-"source": "FamilySearch Family Tree",
-"link": "https://www.familysearch.org/tree/person/details/KZ2H-JBP"
-},
-{
-"says": "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, entered as THOMAS SANIGRE · Hannah's brother, baptised Berkeley 3 July 1808 son of John",
-"source": "England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast",
-"link": "https://www.familysearch.org/"
 }
-]
+],
+"settled": true
 },
 "william-saniger": {
 "name": "William Saniger",

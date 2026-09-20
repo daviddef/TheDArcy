@@ -995,11 +995,11 @@
     },
     {
       "n": 111,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-09-17",
       "what": "Settle the eight shared names, or say why they cannot be settled",
-      "note": "The join from a record to a person is a **name**, because register record rows carry no id. Forty-seven names match one person. **Eight match between two and four**: William Sneyd (4), Thomas Saniger, Catherine D'Arcy, Constantine D'Arcy, George Pitt D'Arcy, James Sneyd, Mary Sneyd, Samuel Charles Sneyd. Their records are shown on every candidate's page under «filed under the name, not assigned to this person», which is honest but is not an answer. **Most are separable on a date** — Thomas Saniger's eight lines run 1711 to 1881 and plainly belong to at least three men. The `rec()` calls in build_register.py could take an optional slug, the way `ids_for()` already takes a «Name|1810» hint."
+      "note": "The join from a record to a person is a **name**, because register record rows carry no id. Forty-seven names match one person. **Eight match between two and four**: William Sneyd (4), Thomas Saniger, Catherine D'Arcy, Constantine D'Arcy, George Pitt D'Arcy, James Sneyd, Mary Sneyd, Samuel Charles Sneyd. Their records are shown on every candidate's page under «filed under the name, not assigned to this person», which is honest but is not an answer. **Most are separable on a date** — Thomas Saniger's eight lines run 1711 to 1881 and plainly belong to at least three men. The `rec()` calls in build_register.py could take an optional slug, the way `ids_for()` already takes a «Name|1810» hint.\n\n**Done 20 September. Seven settled, one refused, and one surprise.** The rules live in `tools/record-owners.json`, each naming a distinguishing string from a record's own text and the slug it belongs to, and the build refuses a rule that never fires — which immediately caught two redundant ones.\n\n**WILLIAM SNEYD is left unsettled on purpose.** Four men of the name, and the records contradict each other: the weaver who married Mary Blackbourne in 1769 has a baptism of 1742 in the record and a birth of 1746 in the tree, and two burials give births of about 1731 and about 1743, so at most one can be his. Choosing would be inventing a man.\n\n**The surprise: THOMAS SANIGER is three men, not two.** Four of his eight records belong to a Thomas baptised at Berkeley on 3 July 1808, son of John, Hannah's brother — **who is not in the family tree at all**. Showing them on both tree Thomases had been offering a reader two men born ninety-seven years apart as candidates for a life that belonged to neither. They now appear on no person page, which is correct; he is written about at **/thomas-sinegar/**, and both tree Thomases link to him."
     },
     {
       "n": 112,
@@ -1104,6 +1104,14 @@
       "since": "2026-09-20",
       "what": "The 237 people with an empty mentions list",
       "note": "`mentions.json` holds 459 keys and **only 222 are non-empty** — half the published people are written about nowhere on this site. That is not a bug: `build_mentions.py` deliberately skips the directory pages (`/people`, `/register`, `/graves`, `/households`, `/families`, `/who`, `/places`, `/marriages`, `/search`) because «a name in a card grid is not a mention», which is right. But it means **the mention count is a measure of prose, not of evidence**, and this archive should not let the two be confused on a page that shows both."
+    },
+    {
+      "n": 125,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-20",
+      "what": "Give Thomas Saniger of 1808 a page, or say why he has none",
+      "note": "The settling of the shared names turned up a man with **four records and no page**: Thomas Saniger, baptised Berkeley 3 July 1808, son of John, Hannah's brother — married Martha Golding at Bristol in 1828, living at Sion Road in 1841, died at Waterloo Lane in 1881 and buried at Greenbank. He is not in the family tree, so `/people/` has nothing for him, and `build_dossiers.py` skips him because the tree carries his NAME. **He falls between both mechanisms.** /thomas-sinegar/ writes about him, which is why this is a tidying job and not a loss."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

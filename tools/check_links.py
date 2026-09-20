@@ -78,9 +78,40 @@ if os.path.exists(REG):
                 tree[r["name"].lower()].append(r["link"].rsplit("/", 1)[-1])
             elif r["kind"] == "record":
                 recs[r["name"].lower()].append(r)
+    # Shared names are assigned by tools/record-owners.json (see
+    # build_person_records.py). The gate recomputes the expectation from the two
+    # INPUTS — the register and the rules — never from the builder's output, for
+    # the reason written above: a gate that reads its own artefact reports
+    # "0 of 0, ok" the moment the artefact goes empty.
+    OWN = {}
+    op = os.path.join(ROOT, "tools", "record-owners.json")
+    if os.path.exists(op):
+        OWN = json.load(open(op, encoding="utf-8"))
+    unused = []
     for nm, rows in recs.items():
-        for sl in tree.get(nm, []):
-            expect[sl] += len(rows)
+        slugs = tree.get(nm, [])
+        rs = OWN.get(nm, {})
+        if len(slugs) < 2 or rs.get("unsettled") or not rs:
+            for sl in slugs:
+                expect[sl] += len(rows)
+            continue
+        hit = set()
+        for r in rows:
+            who = False
+            for rule in rs.get("rules", []):
+                if rule["match"].lower() in r["says"].lower():
+                    who, _ = rule["slug"], hit.add(rule["match"])
+                    break
+            else:
+                who = rs.get("default", False)
+            if who is False:
+                for sl in slugs:
+                    expect[sl] += 1
+            elif who is not None:
+                expect[who] += 1
+        for rule in rs.get("rules", []):
+            if rule["match"] not in hit:
+                unused.append((nm, rule["match"]))
 else:
     print("  FAIL  evidence   register.json is missing")
     sys.exit(1)
@@ -95,13 +126,20 @@ for slug, n in sorted(expect.items()):
     if MARK_RECORD not in html and MARK_CORRECTION not in html:
         silent.append((slug, n, "page carries neither a record nor a correction"))
 
-print(f"  {'ok  ' if not silent else 'FAIL'}  evidence   "
+stale = [(nm, m) for nm, m in unused]
+
+print(f"  {'ok  ' if not (silent or stale) else 'FAIL'}  evidence   "
       f"{sum(expect.values())} record line(s) owed by register.json reach "
       f"{len(expect) - len(silent)} of {len(expect)} people in the tree")
 for slug, n, why in silent[:20]:
     print(f"   {n:3d} record line(s) dropped  /people/{slug}  — {why}")
+for nm, m in stale[:10]:
+    print(f"       record-owners.json: rule {m!r} under {nm!r} never fires — "
+          f"an earlier rule already claims those records")
 if silent:
     print(f"  {len(silent)} person(s) are named in the register and their page does not say so.")
+if stale:
+    print(f"  {len(stale)} dead rule(s) in record-owners.json.")
 
 # ── the other joins that attach evidence to a person ───────────────────────
 #
@@ -201,4 +239,4 @@ for where, key, why in joins[:20]:
 if joins:
     print(f"  {len(joins)} person-join problem(s).")
 
-sys.exit(1 if (bad or silent or joins) else 0)
+sys.exit(1 if (bad or silent or stale or joins) else 0)

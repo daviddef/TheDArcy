@@ -1,0 +1,69 @@
+{
+  "_note": [
+    "Which of several same-named people in the tree a register record belongs to.",
+    "",
+    "register.json keys record rows by the NAME on the document, because that is all a",
+    "document gives. Eight names are carried by more than one person in this tree, and",
+    "until 20 September 2026 their records were shown on every candidate's page under",
+    "'filed under the name, not assigned to this person'. Honest, and not an answer.",
+    "",
+    "Seven of the eight separate on a date. Each rule below names a distinguishing",
+    "string from the record's own text and the slug it belongs to. 'default' catches",
+    "the rest of that name's records. A slug of null means the record belongs to NONE",
+    "of the tree people of that name — which happened once, and mattered.",
+    "",
+    "Rules are matched case-insensitively against the record's `says` text, FIRST MATCH",
+    "WINS, so order matters. A rule that never fires is a failure and not a no-op:",
+    "check_links.py refuses it. That caught two redundant rules here on the first run —",
+    "both were unreachable behind '3 JULY 1808', which had already claimed the same",
+    "records for the same answer."
+  ],
+
+  "thomas saniger": {
+    "_why": "THREE men, not two. The tree holds the 1711 and the 1744. Four of the eight records belong to a third Thomas — baptised Berkeley 3 July 1808, son of John, Hannah's brother — who is NOT in the family tree at all and is written about at /thomas-sinegar/. Attaching his life to either tree Thomas would have merged two men born ninety-seven years apart.",
+    "rules": [
+      { "match": "12 DECEMBER 1711", "slug": "thomas-saniger-1711" },
+      { "match": "23 AUGUST 1744", "slug": "thomas-saniger-1744" },
+      { "match": "CATHERINE COTTON", "slug": "thomas-saniger-1744" },
+      { "match": "24 JANUARY 1819", "slug": "thomas-saniger-1744" },
+      { "match": "3 JULY 1808", "slug": null },
+      { "match": "THOMAS SINEGAR, 30", "slug": null }
+    ]
+  },
+
+  "george pitt d'arcy": {
+    "_why": "The major of the 39th Foot, 1783-1849, and his grandson the railway clerk, 1864-1931. Everything military is the major's; the Queensland death registration is the clerk's.",
+    "default": "george-pitt-d-arcy-1783",
+    "rules": [ { "match": "21/03/1931", "slug": "george-pitt-d-arcy-1864" } ]
+  },
+
+  "catherine d'arcy": {
+    "_why": "All six records are one woman at Brighton between 1841 and 1876, aged 86 at death and born Barbadoes — which is the 1789 Catherine. The 1867 Catherine was born in Brisbane and outlived all of it.",
+    "default": "catherine-d-arcy-1789"
+  },
+
+  "constantine d'arcy": {
+    "_why": "All six belong to the younger man: christened St Michael, Barbados, February 1786, commissioned 1804 and 1805, dead at Chatham in May 1805. The elder Constantine died in 1778, before the earliest of them.",
+    "default": "constantine-d-arcy-1786"
+  },
+
+  "samuel charles sneyd": {
+    "_why": "The gaol governor, baptised Hanley 1811 and dead in Queensland in 1885. His grandson of the same name was born in 1863 and has none of these.",
+    "default": "samuel-charles-sneyd-1810"
+  },
+
+  "james sneyd": {
+    "_why": "Both records are the Hanley engraver of Well Street — aged 33 in one and 53 in 1871 in the other, so born about 1818. The Madeley James of 1779 is a different man.",
+    "default": "james-sneyd-1818"
+  },
+
+  "mary sneyd": {
+    "_why": "Baptised Hanley in February 1814 to Samuel and Elizabeth, sister to Samuel Charles. Not the Madeley Mary of 1788.",
+    "default": "mary-sneyd-1814"
+  },
+
+  "william sneyd": {
+    "_why": "NOT SETTLED, and deliberately left so. Four men of this name are in the tree and the records will not separate cleanly: the weaver who married Mary Blackbourne at Madeley in 1769 has a baptism of 1742 in the record and a birth of 1746 in the tree, and the two burials — 1819 aged 88 and 1827 aged 84 — give births of about 1731 and about 1743, so at most one of them can be his. Choosing here would be inventing a man. These stay filed under the name until the Madeley register settles them.",
+    "unsettled": true
+  }
+}

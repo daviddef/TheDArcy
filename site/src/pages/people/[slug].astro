@@ -411,7 +411,14 @@ const anyDamaged = notes.some((n) => n.damaged);
   {rec && (
     <section class="blk">
       <h2>What the records say</h2>
-      {rec.shared
+      {rec.settled && rec.alsoNamed.length > 0
+        ? <p class="small"><strong>{rec.alsoNamed.length + 1} people in this family tree carry the
+          name {rec.name}</strong>, and these records have been assigned to this one on the dates
+          they give. Which record belongs to whom is set out in <span class="mono">tools/record-owners.json</span>,
+          rule by rule. The others: {rec.alsoNamed.map((o, i) => (
+            <>{i > 0 && " · "}<a href={u(`/people/${o}`)}>{o}</a></>))}.
+          <a href={u("/name/")}> Why they are kept apart →</a></p>
+        : rec.shared
         ? <Note tight>
             <strong>Filed under the name, not assigned to this person.</strong> This archive's
             register keys a record to the name on the document, and <strong>{rec.name}</strong> is
