@@ -193,14 +193,24 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
     holds <strong>five</strong>, and cannot hold more, because its transcript stops in 1677.</p>
   </section>
 
-  <Blk label="Nineteen, not eleven" title="How this name is actually spelled">
+  <Blk label={`${d.spellings.length}, not eleven`} title="How this name is actually spelled">
     <p>The <a href={u("/berkeley/")}>Berkeley page</a> lists eleven spellings. Reading all
-    {c.records} records gives <strong>seventeen</strong> with three or more occurrences, and the
+    {c.records} records gives <strong>{d.spellings.filter(([, n]) => n > 0).length}</strong> with
+    three or more occurrences, and the
     commonest is not the one the family uses. Two more came from outside the registers
     altogether — SANYGER and SYNIGER, carried by five of the eleven men in the
     <a href={u("/saniger-1608/")}>muster of 1608</a> and by nobody since. They are shown with a
-    count of nought because that is what they have here: nineteen forms to search, seventeen to
-    count.</p>
+    count of nought because that is what they have here: {d.spellings.length} forms to search,
+    {d.spellings.filter(([, n]) => n > 0).length} to count.</p>
+    <Note style="margin-top:1.1rem" tight><strong>And two that belong here and are not in it.</strong>
+    <strong>SANIGOR</strong> — the spelling Hannah Saniger was baptised under at Berkeley in 1804,
+    and the reason this archive declared her baptism missing twice before finding it — and
+    <strong>SYNIGAR</strong>, four children of a William at King's Stanley between 1591 and 1596,
+    which are the oldest register entries this surname produces anywhere. Both were found after this
+    table was counted, and both are in the search alias list already. They are named here rather
+    than added because the counts in this table are entries in the registers read for this archive,
+    and the two new forms were counted against a different set — putting them in the column would
+    mix two bases quietly. <a href={u("/spellings/")}>The fifteen-spelling sweep →</a></Note>
     <Scroll>
       <table>
         <thead><tr><th>Spelling</th><th class="m">Occurrences</th></tr></thead>
@@ -211,7 +221,7 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
                   {n === 0 && <span class="chip lore">1608 only — not in any register here</span>}</td></tr>))}</tbody>
       </table>
     </Scroll>
-    <p class="small" style="margin-top:1rem">All nineteen are now folded together by this site's own
+    <p class="small" style="margin-top:1rem">All {d.spellings.length} are now folded together by this site's own
     search, so any one of them finds the rest. <a href={u("/search/")}>Try it →</a></p>
   </Blk>
 
