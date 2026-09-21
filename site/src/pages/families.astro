@@ -1,12 +1,41 @@
 ---
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
+import Families from "@daviddef/archive-kit/components/Families.astro";
 import { u } from "../lib/url.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
 
 const fams = families.filter((f) => f.published > 0);
 const total = fams.reduce((a, f) => a + f.published, 0);
+
+/* 22 September 2026. The card is the kit's. What this archive puts behind
+   the claim is not: it can NAME the people, which Blazevic cannot and Falco
+   does not try to — Falco draws the marriages instead, because that is what
+   its joins rest on. Three archives, one argument, three kinds of evidence,
+   and the component requires none of them. */
+const groups = [{
+  rows: fams.map((f) => {
+    const places = [...new Set(f.members.filter((m) => m.bornPlace)
+      .map((m) => m.bornPlace.split(",").slice(-2).join(",").trim()))].slice(0, 4);
+    const shown = f.members.filter((m) => !m.living).slice(0, 12);
+    return {
+      label: f.surname,
+      gloss: f.blurb,
+      count: f.published,
+      countLabel: "published" + (f.total > f.published
+        ? ` · ${f.total - f.published} living, withheld` : ""),
+      facts: places.length ? [["Recorded in", places.join(" · ")]] : [],
+      people: shown.map((m) => {
+        const o = byId.get(m.id);
+        return { name: m.name, href: o ? `/people/${o.slug}` : null,
+                 life: m.life, place: m.bornPlace ? m.bornPlace.split(",")[0] : null };
+      }),
+      more: f.published > 12
+        ? `and ${f.published - 12} more — <a href="/people/">the full list</a>` : null,
+    };
+  }),
+}];
 ---
 <Base
   title="The Families"
@@ -20,34 +49,8 @@ const total = fams.reduce((a, f) => a + f.published, 0);
     them down in New South Wales and Queensland.</p>
   </section>
 
-  {fams.map((f) => {
-    const dated = f.members.filter((m) => !m.living && (m.born || m.died));
-    const first = dated[0];
-    const places = [...new Set(f.members.filter((m) => m.bornPlace)
-      .map((m) => m.bornPlace.split(",").slice(-2).join(",").trim()))].slice(0, 4);
-    return (
-      <section class="blk">
-      <div class="lab">{f.published} published{f.total > f.published ? ` · ${f.total - f.published} living, withheld` : ""}</div>
-      <h2 class="blk-h">{f.surname}</h2>
-        <p class="dek">{f.blurb}</p>
-        {places.length > 0 && <p class="small" style="margin-top:.5rem">Recorded in: {places.join(" · ")}</p>}
-        <div class="grid three" style="margin-top:1rem">
-          {f.members.filter((m) => !m.living).slice(0, 12).map((m) => {
-            const o = byId.get(m.id);
-            return (
-              <a class="cardlink" href={u(`/people/${o ? o.slug : ""}`)}>
-                <div class="nm">{m.name}</div>
-                <p class="small" style="margin-top:.3rem">{m.life || "dates unknown"}
-                {m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
-              </a>
-            );
-          })}
-        </div>
-        {f.published > 12 && (
-          <p class="small" style="margin-top:.8rem">
-            and {f.published - 12} more — <a href={u("/people/")}>the full list →</a></p>
-        )}
-      </section>
-    );
-  })}
+  <section class="blk">
+    <Families groups={groups} u={u} />
+  </section>
+
 </Base>
