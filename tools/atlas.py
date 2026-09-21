@@ -11,6 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "site", "node_modules",
                                 "@daviddef", "archive-kit", "kit", "tools"))
 import atlasdata, geocode as G
+import atlas_pins
 
 D = os.path.join(HERE, "..", "site", "src", "data")
 J = lambda n: json.load(open(os.path.join(D, n), encoding="utf-8"))
@@ -255,6 +256,14 @@ def main():
                     countries=["United Kingdom","England","Scotland","Wales","London","Ireland","\u00c9ire",
                                "Australia","Barbados","Italia","Italy","France","Deutschland","Germany",
                                "Espa\u00f1a","Spain","Danmark","Denmark","Nederland","Netherlands"])
+
+    # The gazetteer answers with the smallest thing it recognised and stamps
+    # that "exact" — so 21 places sat on the geocode for the word ENGLAND,
+    # Berkeley among them with six people. Say which pins were found and
+    # which were settled for. See tools/atlas_pins.py and own error 41.
+    _n, _ppl = atlas_pins.mark()
+    print(f"       {_n} pin(s) on a broader place's coordinate, carrying "
+          f"{_ppl} people \u2014 marked `parent`, not `exact`")
 
 if __name__ == "__main__":
     sys.exit(main())

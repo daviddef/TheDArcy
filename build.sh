@@ -84,6 +84,14 @@ python3 tools/selftest.py
 # namefold-deny.json sat as an ORPHAN until 21 September 2026 — two folds this
 # archive had read and refused, with the reasons written out, and nothing on
 # earth consulting them. This is the reader.
+# The map's own claim about itself. A gazetteer that has not heard of a place
+# answers with the smallest thing it did recognise and the confidence field
+# records that the LOOKUP succeeded — so Berkeley spent weeks on the geocode
+# for the word ENGLAND, with six people on it, stamped exact. atlas_pins.mark()
+# re-stamps those `parent`; this refuses the build if one slips back.
+echo "── atlas check"
+python3 tools/check_atlas.py
+
 echo "── namefold check"
 python3 tools/check_namefold.py
 
