@@ -4,6 +4,17 @@ export const OWN = [
   {
     when: "21 September 2026",
     cause: "instrument",
+    what: "Wrote a script to stop this archive's build without touching any other archive on the machine, published what it did in a commit message, recommended it to two neighbouring sessions — and never ran it. Run against a live build it selected NOTHING.",
+    truth:
+      "It matched `pgrep -f \"$ROOT/\"`, on the reasoning that every node process carries its own absolute path in its command line. That is true of node and false of everything else in a build: `bash ./build.sh` is a RELATIVE path and carries no root at all, and neither does `npm run build` nor the `sh -c` wrapper beneath it. Forty seconds into a build, before any astro process exists, there is nothing for it to match. The one pattern it would eventually catch is the one that was never the problem.",
+    why: "It was written in the same hour as a correction about a bare `pkill` reaping every archive on this machine, and it looked right — the argument for it was sound and the argument was the only thing that was ever checked. A neighbouring session then tested THEIR version of it against four archives building at once, which is the only test worth running for a tool whose whole job is not to touch the other three, and mentioned doing so. That is why this one was tested at all.",
+    lesson:
+      "Selecting on the WORKING DIRECTORY works where the command line does not: every process in a build — the script, npm, the sh wrapper, node, esbuild — has a cwd inside the repository whatever its command line says. Verified against four archives building simultaneously: it took this archive's five and left The Geneology Map's astro and esbuild, Falco's shells and Defranceski's alone. It also has to skip its own shell and every parent of it, because their cwd is this repository too and killing them takes the caller down with the build it asked to stop. THE PATTERN IS THE ONE THIS ARCHIVE SPENT THE DAY NAMING, in the tool built to serve it: an instrument can be working perfectly and be pointed at something else. And the three faults found this way — this, the exit trap reporting a clean pass over a killed build, and a stale-index check asked about the file it does not read — were none of them found by measurement. Measurement only ever checks the thing you already doubted.",
+    href: "/method",
+  },
+  {
+    when: "21 September 2026",
+    cause: "instrument",
     what: "Put BERKELEY — the place this whole archive is about — in a field in Leicestershire, with six of its people on it, and marked the pin EXACT. Twenty other places are on the same point, among them London, Portsmouth, Somerset, Clarkenwell, Theobalds Palace and St James Palace.",
     truth:
       "The point is 52.53102, -1.26491. It is not a mistake about Berkeley; it is the geocode for the word ENGLAND, which sits near the geographic centre of the country. Twenty-one places share it and carry thirty-four people between them. The same thing happens one level down: five places sit on the QUEENSLAND centroid, five on GLOUCESTERSHIRE — Wotton-under-Edge, where Lydia was born, among them — and four on STAFFORDSHIRE. In all, 36 pins are a broader place's coordinate wearing a narrower place's name, and 30 of those are stamped `fix: \"exact\"`.",

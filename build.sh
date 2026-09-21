@@ -32,9 +32,17 @@ on_signal() { _signal=$1; exit $((128 + $1)); }
 on_exit() {
   local code=$?
   if [ "$_signal" -ne 0 ]; then
-    echo "EXIT=$((128 + _signal))  KILLED by signal $_signal, sent to this script itself — NOT a gate refusing."
+    # The two kill paths get different sentences because they have different
+    # remedies, which is the whole value of telling them apart.
+    echo "EXIT=$((128 + _signal))  KILLED by signal $_signal, sent to THIS SCRIPT."
+    echo "         Nothing is wrong with the data. Somebody reaped the script"
+    echo "         itself, and a bare \`pkill -f build.sh\` or \`pkill -f astro\`"
+    echo "         on this machine matches EVERY archive here, not one. Scope it"
+    echo "         to a path — scripts/stop-my-build.sh does. Then re-run."
   elif [ "$code" -gt 128 ]; then
-    echo "EXIT=$code  KILLED by signal $((code - 128)) in a step below — NOT a gate refusing."
+    echo "EXIT=$code  KILLED by signal $((code - 128)) in a step below — a build"
+    echo "         process was reaped, not a gate refusing. Nothing is wrong with"
+    echo "         the data. Re-run it."
   elif [ "$code" -ne 0 ]; then
     # NOT "a gate refused". That was this trap's second wording and it was a
     # confident label on something adjacent, which is the fault /method exists
@@ -63,6 +71,18 @@ python3 tools/build_family_pages.py
 python3 tools/build_dna.py
 
 echo "── first pass"
+# THE BRACKETS ARE LOAD-BEARING, and this is not a style choice. Under
+# `set -e` a failing command inside an `&&` LIST DOES NOT ABORT THE SCRIPT:
+#     cd site && sh -c "exit 143" && cd ..
+#     echo "reached"          # this runs, in the wrong directory, and the
+#                             # script exits 0
+# A subshell propagates instead. The Booyzen session had the list form, had a
+# build process reaped inside it, walked past the failure, and failed two steps
+# later in python — so the trap faithfully named the wrong step, and a luckier
+# run would have printed "build complete" over a build that never finished.
+# VERIFIED HERE ON 21 SEPTEMBER by killing only the astro child of a live
+# build: this script stopped at once, exited 143, and named the right branch.
+# Checked, not assumed — the whole of today says the difference matters.
 ( cd site && npm run build --silent )
 
 # IF THE FIRST PASS REFUSES WITH "searchindex ... point at pages that were not
@@ -78,6 +98,8 @@ python3 tools/audit.py
 python3 tools/build_search.py
 
 echo "── second pass"
+# Brackets load-bearing — see the first pass. A list form walks past a
+# reaped build and exits 0.
 ( cd site && npm run build --silent )
 
 # A null must name the test that could have disproved it. /method has promised
