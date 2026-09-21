@@ -1,0 +1,99 @@
+{
+  "_note": [
+    "Atlas rows this archive has READ and judged to be ONE PLACE, with the reason",
+    "beside each. A neighbouring archive, building a graves layer over this map on",
+    "21 September 2026, found twenty place-heads appearing more than once and four",
+    "of them at different coordinates. It did not merge any of them, correctly:",
+    "whether two Hornby Castles are one castle is a question for somebody who has",
+    "read the deeds, not for a deduplication script.",
+    "",
+    "THE RULE THIS FILE ENFORCES IS: one head, one place, one pin. Two rows whose",
+    "head is the same name and whose pins are more than two kilometres apart are",
+    "either one place geocoded twice or two places sharing a name, and the archive",
+    "must say which. check_atlas.py refuses a build where such a pair exists and is",
+    "not settled here.",
+    "",
+    "HOW A FOLD IS DONE, AND WHY IT CANNOT LOSE ANYBODY. `keep` is the row that",
+    "survives, chosen as the one holding the most people so that its head, its slug",
+    "and its page do not change — the Booyzen archive warned that a hand-pinned",
+    "place silently loses its people when its head changes, and that is the trap",
+    "here. Each folded string is added to the kept row's VARIANTS, and atlas.py",
+    "already gathers a row's people by looking up its name and every variant. So",
+    "the people follow the string rather than the row, and nobody is dropped.",
+    "",
+    "NOTHING HERE MOVES A MARKER. A fold says two rows name one place; it does not",
+    "claim the surviving pin is in the right spot. Where the kept pin is itself only",
+    "approximate it stays flagged approximate."
+  ],
+  "groups": [
+    {
+      "head": "Hornby Castle",
+      "km": 102.4,
+      "keep": "Hornby Castle, Yorkshire, England",
+      "fold": [
+        "Hornby Castle, North Riding, Yorkshire, England",
+        "Hornby Castle, nr Bedale, Yorkshire"
+      ],
+      "verdict": "one castle",
+      "why": "ONE CASTLE, THREE GEOCODES, AND THE PEOPLE SETTLE IT. All three strings name a castle in Yorkshire, and the nine people spread across them are one circle: Conyers D'Arcy «of Hornby Castle», the 1st Earl of Holderness who was 8th Lord Darcy de Knayth and 5th Lord Conyers, Dorothy Bellasyse, Elizabeth Conyers, and Thomas and Grace Rokeby. This archive's own /hornby page states the seat: Hornby Castle in the NORTH RIDING of Yorkshire, held by the Conyers and then the Earls of Holderness from the 1560s. The kept pin, 54.338 -1.654, is that castle. The other two are artefacts: 53.715 -0.501 is in the EAST Riding, on the wrong side of the county from the string's own «North Riding»; and 54.288 -1.591 is Bedale itself — the town the string named to disambiguate the castle became the answer instead of the castle. There is a second Hornby Castle in Lancashire, in the Lune valley, and it is not what any of these three strings says.",
+      "chip": "documented"
+    },
+    {
+      "head": "Langdon Hall",
+      "km": 299.0,
+      "keep": "Langdon Hall, Warwickshire, England",
+      "fold": ["Langdon Hall, Warwick, England"],
+      "verdict": "one hall",
+      "why": "THE COUNTY WAS WRITTEN AS ITS COUNTY TOWN AND THE PIN WENT TO CUMBRIA. «Langdon Hall, Warwick, England» is 54.900 -2.839 — near Brampton, two hundred and ninety-nine kilometres from the Warwickshire row and in a different half of the country. The four people are one household across one generation: Thomas Dabridgecourt born 1531, Alice Griswold born 1535, Katherine Dabridgecourt born 1556 who died there, and John Fullwood born 1563 who also died there — and it is John Fullwood alone who carries the Cumbrian string. The tree names the man himself «Thomas DABRIDGECOURT of LONGDON Hall» while recording his birthplace as LANGDON Hall, so the archive's own data carries two spellings of one seat.",
+      "chip": "documented"
+    },
+    {
+      "head": "Heidelberg",
+      "km": 272.6,
+      "keep": "Heidelberg, Baden, Germany",
+      "fold": ["Heidelberg, Bayern, Deutschland(HRR)"],
+      "verdict": "one city",
+      "why": "THE PALATINATE, FILED UNDER THE KINGDOM THAT SWALLOWED IT TWO CENTURIES LATER. The folded row is 49.952 12.390, in Bavaria near the Czech border, and the man on it is ELECTOR PALATINE CHARLES LOUIS VON DER PFALZ — Karl I Ludwig, whose seat was Heidelberg on the Neckar and whose court is the reason this archive has any Heidelberg at all. «Deutschland(HRR)» is the Holy Roman Empire and «Bayern» is the Rhenish Palatinate's administration after 1816, a hundred and ninety-nine years after the 1617 date on the row. The gazetteer read the later region and found a Heidelberg inside it. Every Heidelberg string here dates 1610-1617 and belongs to one court.",
+      "chip": "documented"
+    },
+    {
+      "head": "Averham",
+      "km": 24.1,
+      "keep": "Averham, Nottinghamshire, England",
+      "fold": ["Averham, Nottinghamshire, UK", "Averham, Nottingham, England"],
+      "verdict": "one parish",
+      "why": "THE SAME COUNTY-TOWN FAULT, TWENTY-FOUR KILOMETRES OF IT. «Averham, NOTTINGHAM, England» lands on Nottingham city at 52.953 -1.150; Averham is a parish near Newark at 53.083 -0.860, which is where the other two rows sit. The seven people are one family — Robert Ambrose Sutton, William Sutton, Mary St Leger and Bridget Sutton, the Suttons of Averham — and Bridget is alone on the Nottingham pin. «UK» against «England» is the third row and is not a different country. Averham Park is left as its own place: it is the park beside the parish and has a separate head.",
+      "chip": "documented"
+    },
+    {
+      "head": "Market Bosworth",
+      "km": 18.2,
+      "keep": "Market Bosworth, Leicestershire, England",
+      "fold": [
+        "MARKET BOSWORTH, LEICESTER, England",
+        "Market Bosworth, Leicestershire, England, UK."
+      ],
+      "verdict": "one town",
+      "why": "COUNTY TOWN AGAIN, AND A CAPITALISATION. «MARKET BOSWORTH, LEICESTER, England» lands on Leicester city at 52.636 -1.133, eighteen kilometres from Market Bosworth at 52.624 -1.402. The third row differs from the kept one only by «, UK.» on the end. The three people — William Noel, Elizabeth Dixie and Frances de Beaumont — are the Dixies of Bosworth Hall and the Noels, one Leicestershire circle in one town. Bosworth Hall keeps its own row: it is a house in the town rather than another name for it.",
+      "chip": "documented"
+    },
+    {
+      "head": "Limerick",
+      "km": 1.5,
+      "keep": "Limerick, County Limerick, Ireland",
+      "fold": ["Limerick, Ireland"],
+      "verdict": "one city, and the gap is not a disagreement",
+      "why": "Fifteen hundred metres is a gazetteer answering the same question twice, not two Limericks. Both rows are the city; twelve people were split between them, including Richard Atkinson and Mary Bowen appearing on BOTH — which is what a split head does to a roster. «Limerick City, Ireland» and «ST. MARY'S, Limerick» keep their own rows: different heads, and St Mary's is the cathedral this archive has an actual record from.",
+      "chip": "documented"
+    },
+    {
+      "head": "Cork",
+      "km": 1.0,
+      "keep": "Cork, Ireland",
+      "fold": ["Cork, Cork City, Cork, Ireland"],
+      "verdict": "one city, and the gap is not a disagreement",
+      "why": "A kilometre apart in the same city. The kept row carries the exact fix. «County Cork, Ireland» is NOT folded — that is the county, a genuinely broader place, and merging it into the city would be the very fault this map was just corrected for.",
+      "chip": "documented"
+    }
+  ]
+}

@@ -20,16 +20,38 @@ cd "$(dirname "$0")"
 # So say which it was, in the log, where the next reader will see it.
 # To stop this archive's build without touching anybody else's, use
 # scripts/stop-my-build.sh, which matches the absolute project path.
+# The first version of this trap read $? in an EXIT handler, and that is only
+# the exit status of the last CHILD. When the SCRIPT ITSELF is signalled — which
+# is what `pkill -f build.sh` does, the pattern this session actually ran twice
+# — $? is the status of whatever finished last, usually 0, so the trap said
+# "every gate passed" over a build that had been killed mid-run. An instrument
+# built to tell a killed build from a refusing one, answering a question nobody
+# asked. Found by testing the fourth branch instead of the three that worked.
+_signal=0
+on_signal() { _signal=$1; exit $((128 + $1)); }
 on_exit() {
   local code=$?
-  if [ "$code" -gt 128 ]; then
-    echo "EXIT=$code  KILLED by signal $((code - 128)) — this is NOT a gate refusing."
+  if [ "$_signal" -ne 0 ]; then
+    echo "EXIT=$((128 + _signal))  KILLED by signal $_signal, sent to this script itself — NOT a gate refusing."
+  elif [ "$code" -gt 128 ]; then
+    echo "EXIT=$code  KILLED by signal $((code - 128)) in a step below — NOT a gate refusing."
   elif [ "$code" -ne 0 ]; then
-    echo "EXIT=$code  a step above refused. The last FAIL line is the reason."
+    # NOT "a gate refused". That was this trap's second wording and it was a
+    # confident label on something adjacent, which is the fault /method exists
+    # to name. The tests above separate KILLED from NOT KILLED and nothing else:
+    # a missing file, a step run from the wrong directory, a typo in a tool and
+    # a gate saying no all land here. The Booyzen session had this trap mislabel
+    # an exit 2 within an hour of adopting it, and said so.
+    echo "EXIT=$code  NOT killed. A gate may have refused — or a tool may have"
+    echo "         failed to run at all: a missing file, a wrong directory, a"
+    echo "         typo. READ THE OUTPUT ABOVE before believing either."
   else
     echo "EXIT=0  every gate passed."
   fi
 }
+trap 'on_signal 15' TERM
+trap 'on_signal 2'  INT
+trap 'on_signal 1'  HUP
 trap on_exit EXIT
 
 echo "── data from the GEDCOM"
@@ -43,6 +65,13 @@ python3 tools/build_dna.py
 echo "── first pass"
 ( cd site && npm run build --silent )
 
+# IF THE FIRST PASS REFUSES WITH "searchindex ... point at pages that were not
+# built", the build has not broken — it has lagged. site/public/searchindex.json
+# is a committed artefact, validated during the FIRST pass and regenerated below
+# during the second, so any change that REMOVES a page fails once before the
+# index catches up. Folding ten duplicate atlas places on 21 September 2026 did
+# exactly that. The recovery is to regenerate from the dist just built and run
+# again:  python3 tools/build_search.py && ./build.sh
 echo "── indexes that read the built HTML"
 python3 tools/build_mentions.py
 python3 tools/audit.py

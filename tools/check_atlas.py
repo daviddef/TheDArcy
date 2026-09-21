@@ -39,7 +39,7 @@ CLAIMS to be exact, because that is the only part a reader cannot see.
 
     python3 tools/check_atlas.py
 """
-import json, os, sys, collections
+import json, math, os, sys, collections
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ATLAS = os.path.join(HERE, "..", "site", "public", "atlas-data.json")
@@ -75,6 +75,56 @@ def inherited(places):
     return out
 
 
+SAME = os.path.join(HERE, "..", "site", "src", "data", "place-same.json")
+SPLIT_KM = 2.0
+
+
+def _km(a, b):
+    p = math.pi / 180
+    h = (0.5 - math.cos((b[0] - a[0]) * p) / 2
+         + math.cos(a[0] * p) * math.cos(b[0] * p) * (1 - math.cos((b[1] - a[1]) * p)) / 2)
+    return 2 * 6371 * math.asin(math.sqrt(h))
+
+
+def split_heads(places):
+    """Heads whose own pins disagree by more than SPLIT_KM.
+
+    One head, one place, one pin. Two rows called "Hornby Castle" sitting a
+    hundred kilometres apart are either one castle geocoded twice or two
+    castles sharing a name, and a map may not decline to say which — it draws
+    them as two places either way, and splits the people between them so that
+    neither shows the true weight.
+
+    Pins already marked `parent` are excluded: an inherited pin is not a claim
+    about where a second place is, and it is refused by the check above on its
+    own terms.
+    """
+    heads = collections.defaultdict(list)
+    for i, r in enumerate(places):
+        if r.get("fix") == "parent":
+            continue
+        heads[(r.get("name") or "").split(",")[0].strip().lower()].append(i)
+    out = []
+    for h, ix in heads.items():
+        if len(ix) < 2:
+            continue
+        cs = [(places[i].get("lat"), places[i].get("lon")) for i in ix]
+        if any(c[0] is None for c in cs):
+            continue
+        far = max(_km(a, b) for a in cs for b in cs)
+        if far > SPLIT_KM:
+            out.append((h, ix, far))
+    return out
+
+
+def settled():
+    """Every head this archive has already judged, from place-same.json."""
+    if not os.path.exists(SAME):
+        return set()
+    reg = json.load(open(SAME, encoding="utf-8"))
+    return {(g.get("head") or "").strip().lower() for g in reg.get("groups", [])}
+
+
 def main():
     if not os.path.exists(ATLAS):
         print("  FAIL  atlas      atlas-data.json is missing — nothing to check")
@@ -100,8 +150,19 @@ def main():
               f"worse than a map that omits the place.")
         return 1
 
+    done = settled()
+    split = [(h, ix, km) for h, ix, km in split_heads(places) if h not in done]
+    for h, ix, km in split:
+        print(f"  FAIL  atlas      {h!r} is drawn as {len(ix)} places {km:.0f} km apart "
+              f"and the archive has not said whether it is one. Settle it in "
+              f"site/src/data/place-same.json — one head, one place, one pin")
+    if split:
+        print(f"  FAIL  atlas      {len(split)} head(s) split across coordinates and unsettled")
+        return 1
+
     print(f"  ok    atlas      {len(places)} place(s), {len(inh)} on a broader place's "
-          f"coordinate and none of them called exact")
+          f"coordinate and none of them called exact; {len(done)} head(s) settled, "
+          f"no unsettled head split by more than {SPLIT_KM:g} km")
     return 0
 
 

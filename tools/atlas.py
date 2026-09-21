@@ -174,8 +174,49 @@ def grave_places(known):
     return rows_, ppl
 
 
+def fold_same(places):
+    """Apply site/src/data/place-same.json — rows this archive has judged one place.
+
+    The fold is done by adding each folded string to the KEPT row's `variants`,
+    never by copying its people across. atlas.py already gathers a row's people
+    by looking up its name and every one of its variants, so the people follow
+    the string rather than the row and none can be dropped on the way. The kept
+    row is the one holding the most people, so its head, its slug and its page
+    do not change — a hand-pinned place silently loses its people when its head
+    changes, which is the trap in any merge of this kind.
+    """
+    reg = J("place-same.json")
+    by = {p["place"]: p for p in places}
+    dropped = set()
+    folded = 0
+    for g in reg.get("groups", []):
+        keep = by.get(g["keep"])
+        if keep is None:
+            continue
+        for name in g.get("fold", []):
+            other = by.get(name)
+            if other is None or name in dropped:
+                continue
+            vs = keep.setdefault("variants", []) or []
+            for v in [name] + (other.get("variants") or []):
+                if v not in vs and v != keep["place"]:
+                    vs.append(v)
+            keep["variants"] = vs
+            keep["n"] = (keep.get("n") or 0) + (other.get("n") or 0)
+            if other.get("first") and (not keep.get("first")
+                                       or other["first"] < keep["first"]):
+                keep["first"] = other["first"]
+            dropped.add(name)
+            folded += 1
+    out = [p for p in places if p["place"] not in dropped]
+    if folded:
+        print(f"       {folded} row(s) folded into {len(reg.get('groups', []))} "
+              f"settled place(s) — see site/src/data/place-same.json")
+    return out
+
+
 def main():
-    places = J("places.json")
+    places = fold_same(J("places.json"))
     anc = J("ancestors.json")
     who = {}
     for r in anc:
