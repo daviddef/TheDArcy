@@ -16,7 +16,7 @@
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
     "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root .",
     "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 0",
-    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 6",
+    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 5",
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root ."
   },
   "dependencies": {
