@@ -90,8 +90,14 @@ echo "── first pass"
 # is a committed artefact, validated during the FIRST pass and regenerated below
 # during the second, so any change that REMOVES a page fails once before the
 # index catches up. Folding ten duplicate atlas places on 21 September 2026 did
-# exactly that. The recovery is to regenerate from the dist just built and run
-# again:  python3 tools/build_search.py && ./build.sh
+# exactly that. The recovery is to regenerate FROM THE DIST THIS FAILING RUN
+# JUST BUILT, then run again:
+#     python3 tools/build_search.py && ./build.sh
+# ORDER MATTERS AND IT IS NOT OBVIOUS. Running build_search.py BEFORE the first
+# build of a change does nothing — it reads dist/, which still holds the pages
+# the change removes. The failing run is what produces the dist the regeneration
+# needs. Learned the hard way twice on 21 September: pre-running it, then
+# failing anyway, then running it again on the same command and passing.
 echo "── indexes that read the built HTML"
 python3 tools/build_mentions.py
 python3 tools/audit.py

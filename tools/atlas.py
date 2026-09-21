@@ -189,10 +189,28 @@ def fold_same(places):
     by = {p["place"]: p for p in places}
     dropped = set()
     folded = 0
+
+    # A STRING THAT DOES NOT RESOLVE MUST NOT BE A NO-OP. The first version of
+    # this skipped anything it could not find, so one mistyped character in the
+    # register would have silently un-decided a place while the file went on
+    # saying it was settled — a gate that cannot fail, in the register written
+    # to stop exactly that. Every keep and every fold has to name a real row.
+    missing = []
+    for g in reg.get("groups", []):
+        if g["keep"] not in by:
+            missing.append(f"keep {g['keep']!r} (group {g['head']!r})")
+        for name in g.get("fold", []):
+            if name not in by and name not in dropped:
+                missing.append(f"fold {name!r} (group {g['head']!r})")
+    if missing:
+        print("  FAIL  place-same  these rows are named in the register and are "
+              "not in places.json:")
+        for m in missing:
+            print(f"          {m}")
+        sys.exit(1)
+
     for g in reg.get("groups", []):
         keep = by.get(g["keep"])
-        if keep is None:
-            continue
         for name in g.get("fold", []):
             other = by.get(name)
             if other is None or name in dropped:

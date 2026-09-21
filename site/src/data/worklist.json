@@ -4,6 +4,15 @@
   "lead": "Every other register on this site answers *«what do we know?»*. This one answers *«what is being done?»*, and it exists because that question was being carried in a conversation, and a conversation is not a record.\n\n**Five states.** *Running* means somebody or something is at it now. *Next* means it is ready to start. *Blocked* means it is waiting on a person or an institution, and the [errands](/errands/) carry the letter or the fee. *Done* means finished and published. *Struck* is for an item founded on a mistake — **kept and ruled through rather than deleted**, which is how this archive treats a retracted claim everywhere else.\n\n**Every item names who has to move it.** An item with no owner is how a list becomes wallpaper, and the estate board sorts on that field, so the question it answers is *«what is waiting on me?»*",
   "rows": [
     {
+      "n": 132,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-21",
+      "what": "Three Ashton rows that are one village under three different heads",
+      "note": "Folding the duplicate place-heads left a cluster that head-matching cannot see. **«Ashton under Hill, Gloucestershire, England»** (now 2 people, on Gloucestershire's pin), **«Ashton Underhill, Gloucester, England»** (2) and **«Ashton, Underhill, Gloucestershire, England»** (2) are almost certainly one village, and their heads are «Ashton under Hill», «Ashton Underhill» and **«Ashton»** — so no count of repeated heads will ever pair them.\n\n**Left alone deliberately.** `place-same.json` was opened to settle rows sharing a head; folding across heads is a wider decision, and «Ashton» on its own could be somewhere else entirely. Six people are involved and none of the three rows has a coordinate of its own — all sit on a county pin — so nothing is being drawn wrongly, only thinly.\n\n**The general lesson is worth more than the village.** «Toowoomba Q'ld  Australia» carries no comma, so its head is the whole string, and it never appeared in any duplicate-head count either — it was found by reading places.json rather than the map. **A head-based measure cannot see a place whose head is written differently**, which is the same shape as a spelling list that cannot see a spelling nobody guessed.",
+      "covers": []
+    },
+    {
       "n": 131,
       "state": "done",
       "owner": "this archive",

@@ -1,6 +1,31 @@
 {
   "_note": [
     "Atlas rows this archive has READ and judged to be ONE PLACE, with the reason",
+    "",
+    "TWO KINDS OF GROUP LIVE HERE, and the second was added on the evening of the",
+    "21st after the first pass reported them as identical-coordinate tidying and",
+    "they were not. The measurement that said so had excluded inherited pins before",
+    "measuring, then the result was described as being about all the rows — a",
+    "number correctly computed, about something adjacent to the claim made for it,",
+    "which is the fault this archive spent the day naming.",
+    "",
+    "  ONE PLACE, TWO SPELLINGS. Italia and Italy, Inglaterra, AU for Australia, a",
+    "  capital letter. Both rows sit on the same point and nothing is being",
+    "  corrected — only the weight, which was split between them.",
+    "",
+    "  ONE PLACE, AND ONE OF THE ROWS IS STANDING ON A BORROWED PIN. Berkeley was",
+    "  two rows: six people on the geocode for the word ENGLAND and two on Berkeley",
+    "  in Gloucestershire. Folding them is not tidying. It moves six people a",
+    "  hundred and twenty-four kilometres onto the place they are actually from.",
+    "",
+    "WHICH ROW SURVIVES IS A JUDGEMENT AND IS STATED EVERY TIME. Where one row's",
+    "pin is demonstrably the place, it wins however few people it holds — the two",
+    "-person Berkeley row keeps its coordinate and the six-person row folds into",
+    "it. Where NO row's pin is the place, the survivor is the one that ADMITS it:",
+    "Ehrstaedt keeps the row marked `parent` on Heidelberg over one claiming to be",
+    "approximate a hundred and forty kilometres from the district its own string",
+    "names.",
+    "",
     "beside each. A neighbouring archive, building a graves layer over this map on",
     "21 September 2026, found twenty place-heads appearing more than once and four",
     "of them at different coordinates. It did not merge any of them, correctly:",
@@ -42,7 +67,9 @@
       "head": "Langdon Hall",
       "km": 299.0,
       "keep": "Langdon Hall, Warwickshire, England",
-      "fold": ["Langdon Hall, Warwick, England"],
+      "fold": [
+        "Langdon Hall, Warwick, England"
+      ],
       "verdict": "one hall",
       "why": "THE COUNTY WAS WRITTEN AS ITS COUNTY TOWN AND THE PIN WENT TO CUMBRIA. «Langdon Hall, Warwick, England» is 54.900 -2.839 — near Brampton, two hundred and ninety-nine kilometres from the Warwickshire row and in a different half of the country. The four people are one household across one generation: Thomas Dabridgecourt born 1531, Alice Griswold born 1535, Katherine Dabridgecourt born 1556 who died there, and John Fullwood born 1563 who also died there — and it is John Fullwood alone who carries the Cumbrian string. The tree names the man himself «Thomas DABRIDGECOURT of LONGDON Hall» while recording his birthplace as LANGDON Hall, so the archive's own data carries two spellings of one seat.",
       "chip": "documented"
@@ -51,7 +78,9 @@
       "head": "Heidelberg",
       "km": 272.6,
       "keep": "Heidelberg, Baden, Germany",
-      "fold": ["Heidelberg, Bayern, Deutschland(HRR)"],
+      "fold": [
+        "Heidelberg, Bayern, Deutschland(HRR)"
+      ],
       "verdict": "one city",
       "why": "THE PALATINATE, FILED UNDER THE KINGDOM THAT SWALLOWED IT TWO CENTURIES LATER. The folded row is 49.952 12.390, in Bavaria near the Czech border, and the man on it is ELECTOR PALATINE CHARLES LOUIS VON DER PFALZ — Karl I Ludwig, whose seat was Heidelberg on the Neckar and whose court is the reason this archive has any Heidelberg at all. «Deutschland(HRR)» is the Holy Roman Empire and «Bayern» is the Rhenish Palatinate's administration after 1816, a hundred and ninety-nine years after the 1617 date on the row. The gazetteer read the later region and found a Heidelberg inside it. Every Heidelberg string here dates 1610-1617 and belongs to one court.",
       "chip": "documented"
@@ -60,7 +89,10 @@
       "head": "Averham",
       "km": 24.1,
       "keep": "Averham, Nottinghamshire, England",
-      "fold": ["Averham, Nottinghamshire, UK", "Averham, Nottingham, England"],
+      "fold": [
+        "Averham, Nottinghamshire, UK",
+        "Averham, Nottingham, England"
+      ],
       "verdict": "one parish",
       "why": "THE SAME COUNTY-TOWN FAULT, TWENTY-FOUR KILOMETRES OF IT. «Averham, NOTTINGHAM, England» lands on Nottingham city at 52.953 -1.150; Averham is a parish near Newark at 53.083 -0.860, which is where the other two rows sit. The seven people are one family — Robert Ambrose Sutton, William Sutton, Mary St Leger and Bridget Sutton, the Suttons of Averham — and Bridget is alone on the Nottingham pin. «UK» against «England» is the third row and is not a different country. Averham Park is left as its own place: it is the park beside the parish and has a separate head.",
       "chip": "documented"
@@ -81,7 +113,9 @@
       "head": "Limerick",
       "km": 1.5,
       "keep": "Limerick, County Limerick, Ireland",
-      "fold": ["Limerick, Ireland"],
+      "fold": [
+        "Limerick, Ireland"
+      ],
       "verdict": "one city, and the gap is not a disagreement",
       "why": "Fifteen hundred metres is a gazetteer answering the same question twice, not two Limericks. Both rows are the city; twelve people were split between them, including Richard Atkinson and Mary Bowen appearing on BOTH — which is what a split head does to a roster. «Limerick City, Ireland» and «ST. MARY'S, Limerick» keep their own rows: different heads, and St Mary's is the cathedral this archive has an actual record from.",
       "chip": "documented"
@@ -90,9 +124,158 @@
       "head": "Cork",
       "km": 1.0,
       "keep": "Cork, Ireland",
-      "fold": ["Cork, Cork City, Cork, Ireland"],
+      "fold": [
+        "Cork, Cork City, Cork, Ireland"
+      ],
       "verdict": "one city, and the gap is not a disagreement",
       "why": "A kilometre apart in the same city. The kept row carries the exact fix. «County Cork, Ireland» is NOT folded — that is the county, a genuinely broader place, and merging it into the city would be the very fault this map was just corrected for.",
+      "chip": "documented"
+    },
+    {
+      "head": "Berkeley",
+      "km": 123.9,
+      "keep": "Berkeley, Gloucestershire, England",
+      "fold": [
+        "Berkeley, Gloucester, England"
+      ],
+      "verdict": "six people brought home",
+      "why": "**THE ONE THAT MATTERS.** «Berkeley, **Gloucester**, England» — the county written as its county town again — failed to geocode and took the pin for the word ENGLAND, 52.531 -1.265, near Lindley in Leicestershire. Six people sat on it, marked exact, for weeks: this archive's central place, in the wrong county, on the map of an archive that is largely about Berkeley. The other row is the real parish at 51.691 -2.459 and holds two. Folding puts **all eight on Berkeley**, a hundred and twenty-four kilometres from where six of them were. The two-person row keeps its coordinate because its coordinate is right; headcount does not enter into it.",
+      "chip": "documented"
+    },
+    {
+      "head": "London",
+      "km": 137.9,
+      "keep": "London, England",
+      "fold": [
+        "London, Middlesex, England"
+      ],
+      "verdict": "three people out of Leicestershire",
+      "why": "«London, Middlesex, England» is on the England point with two people. «London, England» is on London at 51.507 -0.128 with one. Middlesex is the historic county London sat in and is not a different city.",
+      "chip": "documented"
+    },
+    {
+      "head": "Toowoomba",
+      "km": 955.0,
+      "keep": "Toowoomba, Queensland, Australia",
+      "fold": [
+        "Toowoomba",
+        "Toowoomba, Australia",
+        "Toowoomba, Toowoomba Region, Queensland, Australia",
+        "Toowoomba Q'ld  Australia"
+      ],
+      "verdict": "one town, five rows, and the 955-kilometre one folded with them",
+      "why": "The row the original report flagged — 955 km out at -22.165 144.584 — is «Toowoomba, **Toowoomba Region**, Queensland, Australia» sitting on the QUEENSLAND centroid, and the extra administrative level is what defeated the lookup. Three more rows are already on Toowoomba proper. The fifth, «Toowoomba Q'ld  Australia», carries **no comma at all**, so its head is the whole string and it never appeared in any duplicate-head count — which is worth knowing about every head-based measurement on this map.",
+      "chip": "documented"
+    },
+    {
+      "head": "St Quivox",
+      "km": 4.9,
+      "keep": "St Quivox, Ayrshire, Scotland",
+      "fold": [
+        "St Quivox, Ayr, Scotland"
+      ],
+      "verdict": "the parish, not the county town",
+      "why": "«St Quivox, **Ayr**, Scotland» borrowed Ayr's pin at the round number 55.5 -4.5; the parish is at 55.484 -4.572, five kilometres off. Ayr is the town, Ayrshire the county, and the parish is neither.",
+      "chip": "documented"
+    },
+    {
+      "head": "St. James Palace",
+      "km": 137.7,
+      "keep": "St. James Palace, London, Middlesex, Englan",
+      "fold": [
+        "St. James Palace, London, Middlesex, England, Kingdom of England"
+      ],
+      "verdict": "the palace, on a row with a truncated word in it",
+      "why": "The surviving string ends «Englan», cut off in the export. It is kept anyway, because **it is the row whose pin is the palace** — 51.504 -0.139 — while the tidier-looking one, which ends «Kingdom of England», is on the England centroid a hundred and thirty-eight kilometres away. A better-spelled string is not a better coordinate.",
+      "chip": "documented"
+    },
+    {
+      "head": "Ehrstaedt",
+      "km": 141.3,
+      "keep": "Ehrstaedt, Heidelberg, Baden, Germany",
+      "fold": [
+        "Ehrstaedt, Heidelburg, Baden, Germany"
+      ],
+      "verdict": "neither pin is the village, and one of them says so",
+      "why": "**The exception to the rule above, and the reason the rule is stated rather than coded.** One row is marked `approx` at 48.193 8.139; the other is marked `parent` on Heidelberg. The approx pin is **141 km from the Heidelberg its own string names**, which is not an approximation of anything. So the survivor is the row that admits it is standing on Heidelberg's point rather than the row claiming a precision it does not have. The village keeps no coordinate of its own here, which is the honest end state until somebody finds one.",
+      "chip": "inferred"
+    },
+    {
+      "head": "Arienzo",
+      "km": 0.0,
+      "keep": "Arienzo, Caserta, Campania, Italia",
+      "fold": [
+        "Arienzo, Caserta, Campania, Italy"
+      ],
+      "verdict": "Italia and Italy",
+      "why": "Same point, same town, one word in two languages. Twelve people and two.",
+      "chip": "documented"
+    },
+    {
+      "head": "Brisbane",
+      "km": 0.0,
+      "keep": "Brisbane, Queensland, Australia",
+      "fold": [
+        "Brisbane",
+        "Brisbane, Queensland"
+      ],
+      "verdict": "one city, three depths of address",
+      "why": "Same point three times: the bare city, the city with its state, and the city with state and country. Twenty people, one and one.",
+      "chip": "documented"
+    },
+    {
+      "head": "Caserta",
+      "km": 0.0,
+      "keep": "Caserta, Campania, Italia",
+      "fold": [
+        "Caserta, Campania, Italy"
+      ],
+      "verdict": "Italia and Italy",
+      "why": "Same point, one word in two languages.",
+      "chip": "documented"
+    },
+    {
+      "head": "Keele",
+      "km": 0.0,
+      "keep": "Keele, Staffordshire, England",
+      "fold": [
+        "Keele, Staffordshire-Inglaterra"
+      ],
+      "verdict": "and Inglaterra",
+      "why": "Same point. The second row has the county and the country run together with a hyphen and the country in Spanish, which is what a tree exported through more than one language does.",
+      "chip": "documented"
+    },
+    {
+      "head": "Rockhampton",
+      "km": 0.0,
+      "keep": "Rockhampton, Queensland, Australia",
+      "fold": [
+        "Rockhampton, AU"
+      ],
+      "verdict": "AU is Australia",
+      "why": "Same point.",
+      "chip": "documented"
+    },
+    {
+      "head": "Santa Maria a Vico",
+      "km": 0.0,
+      "keep": "Santa Maria a Vico, Caserta, Campania, Italia",
+      "fold": [
+        "Santa Maria A Vico, Nola, Terra Di Lavoro"
+      ],
+      "verdict": "one town, two administrations",
+      "why": "Same point. **Terra di Lavoro** is the historic province the town sat in before Caserta, and Nola is the diocese — an older address for one place rather than a second place.",
+      "chip": "documented"
+    },
+    {
+      "head": "Ashton under Hill",
+      "km": 0.0,
+      "keep": "Ashton under Hill, Gloucestershire, England",
+      "fold": [
+        "Ashton Under Hill, Gloucestershire, England"
+      ],
+      "verdict": "a capital letter",
+      "why": "Same point, and **both rows are on Gloucestershire's pin** — so this fold corrects the weight and nothing else. The village still has no coordinate of its own and the surviving row still says so. Two further rows, «Ashton Underhill, Gloucester, England» and «Ashton, Underhill, Gloucestershire, England», are almost certainly the same village under different HEADS; they are left alone here and noted on the work list, because folding across heads is a wider decision than this register was opened for.",
       "chip": "documented"
     }
   ]
