@@ -4,6 +4,15 @@
   "lead": "Every other register on this site answers *«what do we know?»*. This one answers *«what is being done?»*, and it exists because that question was being carried in a conversation, and a conversation is not a record.\n\n**Five states.** *Running* means somebody or something is at it now. *Next* means it is ready to start. *Blocked* means it is waiting on a person or an institution, and the [errands](/errands/) carry the letter or the fee. *Done* means finished and published. *Struck* is for an item founded on a mistake — **kept and ruled through rather than deleted**, which is how this archive treats a retracted claim everywhere else.\n\n**Every item names who has to move it.** An item with no owner is how a list becomes wallpaper, and the estate board sorts on that field, so the question it answers is *«what is waiting on me?»*",
   "rows": [
     {
+      "n": 131,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-09-21",
+      "what": "The twenty duplicate place-heads on the atlas, and the four at different coordinates",
+      "note": "Raised by the **Booyzen session**, which was building a graves layer over this map and found its burial counts being multiplied: **twenty place-heads appear more than once** — «Brisbane», «Brisbane, Queensland» and «Brisbane, Queensland, Australia» are three rows — so a place's people are split across two or three pins and none of them shows the true weight. They attached their layer to one row per head and left the duplication alone, correctly: **whether two Hornby Castles are one castle is not a deduplication script's call.**\n\n**Most are one place written several ways** and can be merged on the evidence: «Ashton Under Hill» and «Ashton under Hill» sit on the same coordinate, as do Caserta, Keele, Rockhampton, Arienzo, Santa Maria a Vico and the three Brisbanes. **The ones at genuinely different coordinates are judgements, one at a time**: Hornby Castle at three points, two of them six kilometres apart in North Yorkshire and one near Hull; Langdon Hall in Warwickshire and in Cumbria; Heidelberg twice, 300km apart.\n\n**A merge must keep the head the roster attaches on.** Booyzen work-list 158 records that a hand-pinned place silently loses its people when its head changes, which is the trap to avoid here.\n\n**Not the same thing as [own error 41](/corrections/)**, which came out of the same report and is fixed separately: that is about pins that inherited a broader place's coordinate and called it exact. This row is about one place being drawn as two.",
+      "covers": []
+    },
+    {
       "n": 1,
       "what": "Keep this archive's work list in the estate's shape, with the build refusing when it slips",
       "state": "done",

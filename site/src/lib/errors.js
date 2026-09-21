@@ -4,6 +4,17 @@ export const OWN = [
   {
     when: "21 September 2026",
     cause: "instrument",
+    what: "Put BERKELEY — the place this whole archive is about — in a field in Leicestershire, with six of its people on it, and marked the pin EXACT. Twenty other places are on the same point, among them London, Portsmouth, Somerset, Clarkenwell, Theobalds Palace and St James Palace.",
+    truth:
+      "The point is 52.53102, -1.26491. It is not a mistake about Berkeley; it is the geocode for the word ENGLAND, which sits near the geographic centre of the country. Twenty-one places share it and carry thirty-four people between them. The same thing happens one level down: five places sit on the QUEENSLAND centroid, five on GLOUCESTERSHIRE — Wotton-under-Edge, where Lydia was born, among them — and four on STAFFORDSHIRE. In all, 36 pins are a broader place's coordinate wearing a narrower place's name, and 30 of those are stamped `fix: \"exact\"`.",
+    why: "A gazetteer that cannot find a town does not say so. It answers with the smallest thing it did recognise, which for a damaged export string is usually the country at the end of it — and the field that records confidence is set by whether the LOOKUP succeeded, not by whether it answered the question asked. So a failed search for «Christened in Berkeley» returns England, at full precision, with no flag on it anywhere. Nothing about the result distinguishes a town that was found from a country that was settled for.",
+    lesson:
+      "THIS ARCHIVE HAD ALREADY WRITTEN THE RULE AND THEN RAN IT IN ONE DIRECTION ONLY. A comment in tools/atlas.py explains why three hand-documented hamlets are deliberately left off the map: «Wanswell, Hinton and Blakeney were tried and every one of them fell back to its parish's point — three pins on Berkeley and one on Awre, all stamped exact by a gazetteer that had simply not heard of them. That is false precision, and a map that claims it is worse than a map that omits them.» That test was applied to the nine places being added by hand and never once to the hundred and fifty-six already there. It is the same shape as the spelling table a fortnight later: a standard written down, honoured where it was being written, and not turned around to face the existing data. AND IT WAS NOT FOUND BY LOOKING. A neighbouring archive built a graves layer over this map, noticed its burial counts were being multiplied because twenty place-heads appear more than once, and said so. Grouping by head is what they needed; grouping by COORDINATE is what found this. check_atlas.py now refuses any build in which a place stamped exact sits on a coordinate belonging to a place that contains it.",
+    href: "/atlas",
+  },
+  {
+    when: "21 September 2026",
+    cause: "instrument",
     what: "Published “None, in any spelling” for Sanigers at Chew Magna, with a control beside it, and called the parish closed. There are two of them in the parish register, and one of them answers a question this archive had open.",
     truth:
       "Somerset Baptisms holds CHARLES SINAGAR, baptised at Chew Magna in 1816, and WILLIAM SINEGAR, baptised there in 1822 — both children of SIMON and ELIZABETH. Elizabeth Saniger, widow, 60, born Chew Magna, was already on this site, living with her son William Saniger, 27, born Chew Magna, at Oxford Road in Bristol in 1851. The register names her husband and this archive had been calling him nobody.",
