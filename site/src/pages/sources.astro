@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
+import Sources from "@daviddef/archive-kit/components/Sources.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { people } from "../lib/people.js";
@@ -22,6 +23,37 @@ for (const p of people) for (const s of p.sources || []) {
   counts[k] = (counts[k] || 0) + 1;
 }
 const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+/* 21 September 2026. The two hand-built lists below became the kit's source
+   rows. The GROUPING is unchanged and deliberately so — "these are evidence"
+   and "held privately by the family" are two different claims about the same
+   kind of object, and the estate's other archives rank theirs by entirely
+   different things.
+
+   All eighteen record sets now carry a url. Two of them are the reason this
+   was worth doing rather than assuming: the council's grave search host in
+   this archive's data, graves.brisbane.qld.gov.au, has no DNS record at all
+   any more, and QSA item ITM2736504 was opened to confirm it is the Sneyd
+   inquiry rather than taken on the number alone.
+
+   `links` stays what it always was here — where THIS archive used the source,
+   which is a different question from where the source is, and the FindMyPast
+   row answers it twice. */
+const md = (h) => mono(mdp(h));
+const setRows = (rows) => rows.map((r) => ({
+  title: md(r.name),
+  url: r.url,
+  held: r.held,
+  tag: r.chip,
+  what: md(r.body),
+  note: r.note,
+  links: (r.links || []).map(([label, href]) => [label, href + "/"]),
+}));
+const sourceGroups = [
+  { label: src.recordSetsHead, note: src.recordSetsNote, rows: setRows(src.recordSets) },
+  { label: src.privateHead, rows: setRows(src.private) },
+];
+const reachable = src.recordSets.filter((r) => r.url).length;
 ---
 <Base
   title="Sources"
@@ -67,36 +99,9 @@ const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   </section>
 
   <section class="blk">
-    <h2>{src.recordSetsHead}</h2>
-    <p class="small" style="margin-top:.5rem">{src.recordSetsNote}</p>
-    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
-      {src.recordSets.map((r) => (
-        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
-          <div><strong set:html={mono(mdp(r.name))}></strong>
-            {r.chip && <> <span class="chip inf">{r.chip}</span></>}</div>
-          <p class="small" style="margin-top:.4rem" set:html={mono(mdp(r.body))}></p>
-          {r.links.length > 0 && (
-            <p class="small" style="margin-top:.35rem">{r.links.map(([label, href], i) => (
-              <>{i > 0 && " · "}<a href={u(href + "/")}>{label} →</a></>))}</p>)}
-        </div>
-      ))}
-    </div>
-    <p class="small" style="margin-top:1.1rem">{src.recordSets.length} record sets.</p>
-  </section>
-
-  <section class="blk">
-    <h2>{src.privateHead}</h2>
-    <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
-      {src.private.map((r) => (
-        <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
-          <div><strong set:html={mono(mdp(r.name))}></strong></div>
-          <p class="small" style="margin-top:.4rem" set:html={mono(mdp(r.body))}></p>
-          {r.links.length > 0 && (
-            <p class="small" style="margin-top:.35rem">{r.links.map(([label, href]) => (
-              <a href={u(href + "/")}>{label} →</a>))}</p>)}
-        </div>
-      ))}
-    </div>
+    <Sources groups={sourceGroups} u={u} facets={false} />
+    <p class="small" style="margin-top:1.1rem">{src.recordSets.length} record sets,
+    <strong>{reachable}</strong> of them linked to the thing itself.</p>
   </section>
 
   <section class="blk" style="border-bottom:0">
