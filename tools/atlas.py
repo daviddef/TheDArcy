@@ -132,6 +132,47 @@ DOCUMENTED = [
 ]
 
 
+# TWO QUESTIONS OF THE SAME GROUND — 21 September 2026.
+#
+# The kit's Atlas has carried a `schemes` prop since Defranceschi's layer
+# model was promoted into it, and until this week no archive passed it.
+#
+#   people  where a named person can be put — the category this file had
+#   ground  where somebody is actually buried, out of graves.json
+#
+# HOW A GRAVE FINDS ITS PLACE, AND WHAT IS REFUSED. graves.json records a
+# burial as prose: "Toowong Cemetery, Toowong, Brisbane, Queensland (Port. 4,
+# Sect. 35, Grave 3-4)". There is no structured place field, so the join
+# reads the comma-parts LEFT TO RIGHT and takes the first that is already a
+# place on this map — the most specific one it can honour.
+#
+# Broad administrative names are REFUSED even when they are on the map.
+# Matching "Queensland" would land sixteen specific burials on a state pin
+# and "England" another eight, and a Brisbane grave shown in the middle of
+# Queensland is worse than a grave not shown: the first is wrong and looks
+# right. 41 of 89 rows land on a specific place; the other 48 are named
+# under the map rather than guessed at.
+BROAD = {"queensland", "england", "australia", "united kingdom", "uk",
+         "scotland", "wales", "ireland", "new south wales", "victoria",
+         "usa", "united states"}
+
+def grave_places(known):
+    """place-head -> (grave rows, people buried). Many rows fold onto one
+       place, so this COUNTS. An `=` here would make the last row in the file
+       decide what a place says — see kit/docs/traps.md, «A fold needs a rule»."""
+    rows_, ppl = {}, {}
+    data = J("graves.json")
+    for r in (data if isinstance(data, list) else data.get("rows") or []):
+        bare = re.sub(r"\([^)]*\)", "", str(r.get("place") or ""))
+        parts = [x.strip().lower() for x in bare.split(",") if x.strip()]
+        hit = next((p for p in parts if p in known and p not in BROAD), None)
+        if not hit:
+            continue
+        rows_[hit] = rows_.get(hit, 0) + 1
+        ppl[hit] = ppl.get(hit, 0) + len(r.get("people") or [])
+    return rows_, ppl
+
+
 def main():
     places = J("places.json")
     anc = J("ancestors.json")
@@ -176,6 +217,39 @@ def main():
             "more": None,
             "events": [list(e) for e in evts],
         })
+
+    # The layers, attached on the same head() every other join here uses.
+    known = {r["name"].split(",")[0].strip().lower() for r in rows}
+    gr, gp = grave_places(known)
+    # ONE HEAD CAN BE SEVERAL ROWS ON THIS MAP, AND THAT IS ITS OWN PROBLEM.
+    # Twenty heads appear more than once — "Brisbane", "Brisbane, Queensland"
+    # and "Brisbane, Queensland, Australia" are three rows — and four of them
+    # sit at different coordinates, Toowoomba twice six hundred kilometres
+    # apart. Giving every row with the head its burials counted the same
+    # twenty graves three times over. The layer attaches to ONE row per head,
+    # the one holding the most people, so a count on the map is a count of
+    # something. The duplication itself is a data question and is left alone.
+    principal = {}
+    for i, r in enumerate(rows):
+        h = r["name"].split(",")[0].strip().lower()
+        best = principal.get(h)
+        if best is None or (r.get("n") or 0) > (rows[best].get("n") or 0):
+            principal[h] = i
+    for i, r in enumerate(rows):
+        h = r["name"].split(",")[0].strip().lower()
+        cats = {}
+        if r.get("n"):
+            cats["people"] = r["cat"]
+        if h in gr and principal.get(h) == i:
+            cats["ground"] = "ground"
+        if cats:
+            r["cats"] = cats
+            ns = {}
+            if r.get("n"):
+                ns["people"] = r["n"]
+            if h in gr and principal.get(h) == i:
+                ns["ground"] = gp[h]
+            r["ns"] = ns
 
     atlasdata.build(rows, os.path.join(HERE, "..", "site", "public", "atlas-data.json"),
                     countries=["United Kingdom","England","Scotland","Wales","London","Ireland","\u00c9ire",
