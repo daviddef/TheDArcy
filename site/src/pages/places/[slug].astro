@@ -1,12 +1,11 @@
 ---
-/* One page per place, built from the same rows the atlas markers are.
+/* One page per place, drawn by the kit.
 
-   The map has been offering "The page that proves it" on this archive and
-   landing nowhere. Everything here is already carried by the atlas data — the
-   narrative, the people, the registers — so the page and the marker cannot
-   drift apart the way a second hand-kept list would.
-*/
+   This file was 85 lines and four archives held the same 85 lines, byte for
+   byte. What is left here is the only part that was ever this archive's:
+   where the rows come from, and what the page is called. */
 import Base from "../../layouts/Base.astro";
+import PlacePage from "@daviddef/archive-kit/components/PlacePage.astro";
 import { u } from "../../lib/url.js";
 import atlas from "../../../public/atlas-data.json";
 
@@ -16,70 +15,10 @@ export function getStaticPaths() {
     .map((p) => ({ params: { slug: p.slug }, props: { p } }));
 }
 const { p } = Astro.props;
-const people = p.people || [];
-const films = p.films || [];
-const records = p.records || [];
-const events = p.events || [];
 const bits = [p.when, p.fix === "approx" ? "coordinate approximate" : null].filter(Boolean);
 ---
 <Base title={p.name}
       eyebrow={bits.join(" · ")}
       dek={p.what || `Everything this archive can put in ${p.name}.`}>
-
-  <section class="blk">
-    <p class="cap"><a href={u("/atlas/")}>← Back to the atlas</a></p>
-
-    {events.length > 0 && (
-      <>
-        <h2>What happened here</h2>
-        <ul class="stack">
-          {events.map((e) => (
-            <li><span class="m">{Array.isArray(e) ? e[0] : e.when}</span> {Array.isArray(e) ? e[1] : e.what}</li>
-          ))}
-        </ul>
-      </>
-    )}
-
-    {people.length > 0 && (
-      <>
-        <h2 style="margin-top:28px">Who the archive puts here <span class="dim m">{p.n || people.length}</span></h2>
-        <ul class="stack">
-          {people.map((q) => (
-            <li>{q.w ? <a href={u(q.w)}>{q.n}</a> : q.n}{q.y && <span class="m dim"> {q.y}{q.d ? `–${q.d}` : ""}</span>}</li>
-          ))}
-        </ul>
-        {p.more && <p class="cap">and {p.more} more — <a href={u("/people/")}>the full roster →</a></p>}
-      </>
-    )}
-
-    {films.length > 0 && (
-      <>
-        <h2 style="margin-top:28px">The registers, open at page one <span class="dim m">{p.nfilms}</span></h2>
-        <p class="dek">Photographed for this parish, and not name-indexed. You read them yourself.</p>
-        <ul class="stack">
-          {films.map((f) => (
-            <li><a href={`https://www.familysearch.org/ark:/61903/${f.ark}${f.cc ? `?cc=${f.cc}${f.wc ? `&wc=${encodeURIComponent(f.wc)}` : ""}` : ""}`}
-                   target="_blank" rel="noopener">{f.t} ↗</a></li>
-          ))}
-        </ul>
-      </>
-    )}
-
-    {records.length > 0 && (
-      <>
-        <h2 style="margin-top:28px">Records read about the people here <span class="dim m">{p.nrecords}</span></h2>
-        <p class="dek">Indexed entries, each naming one person rather than a volume to browse.</p>
-        <ul class="stack">
-          {records.map((f) => (
-            <li><a href={`https://www.familysearch.org/ark:/61903/${f.ark}`} target="_blank" rel="noopener">{f.t} ↗</a></li>
-          ))}
-        </ul>
-      </>
-    )}
-
-    {people.length === 0 && films.length === 0 && records.length === 0 && events.length === 0 && (
-      <p class="prose">This archive has the place and nothing in it yet — no person, no register, no
-      dated event. That is a gap rather than a finding, and it is listed here so it can be closed.</p>
-    )}
-  </section>
+  <PlacePage p={p} u={u} />
 </Base>

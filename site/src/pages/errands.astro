@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Errands from "@daviddef/archive-kit/components/Errands.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
@@ -7,6 +8,29 @@ import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import e from "../data/errands.json";
 
 const n = (k) => e.rows.filter((r) => r.state === k).length;
+
+/* 21 September 2026. The queue moved to the kit. The STATE did not: this
+   archive grades a request by where it has got to — answered, open — with a
+   colour and a gloss each, which is a different question from Defranceski's
+   (what would the answer buy) and Lerena's (has anybody replied yet). The
+   component takes the grade, its colour and its wording as given.
+
+   A state the data uses and `states` has no entry for would otherwise print a
+   grey rule and no word at all, so it is counted and shown. */
+const unlabelled = [...new Set(e.rows.map((r) => r.state).filter((k) => k && !e.states[k]))];
+
+const groups = [{
+  rows: e.rows.map((r) => ({
+    n: r.n,
+    what: r.what,
+    who: `<strong>${r.where}</strong> · ${r.cost}`,
+    why: mdp(r.settles),
+    ref: r.file,
+    stateLabel: e.states[r.state] ? e.states[r.state][0] : r.state,
+    colour: e.states[r.state] ? e.states[r.state][1] : null,
+    links: r.href ? [["Context", r.href]] : [],
+  })),
+}];
 ---
 <Base title={e.title} eyebrow={e.eyebrow} dek={e.dek}>
   <section class="blk">
@@ -23,24 +47,10 @@ const n = (k) => e.rows.filter((r) => r.state === k).length;
       ))}
     </div>
     <Note style="margin-top:1rem">{e.tallyNote}</Note>
-    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.3rem">
-      {e.rows.map((r) => (
-        <div style={`border-left:2px solid ${e.states[r.state] ? e.states[r.state][1] : "var(--rule-strong)"};padding:2px 0 2px 16px`}>
-          <div>
-            <span class="mono small" style="color:var(--ink-3)">{String(r.n).padStart(2, "0")}</span>
-            {e.states[r.state] && (
-              <span class="mono small" style={`margin-left:.5rem;color:${e.states[r.state][1]}`}>
-                {e.states[r.state][0].toUpperCase()}</span>)}
-            <strong style="margin-left:.5rem">{r.what}</strong>
-            {r.why && <span class="chip doc" style="margin-left:.5rem">{r.why}</span>}
-          </div>
-          <p class="small" style="margin-top:.35rem;color:var(--ink-2)">
-            <strong>{r.where}</strong> · {r.cost}</p>
-          <p class="small" style="margin-top:.35rem"><span set:html={mdp(r.settles)} /> <a href={u(r.href)}>Context →</a></p>
-          <p class="small mono" style="margin-top:.25rem;color:var(--ink-3)">{r.file}</p>
-        </div>
-      ))}
-    </div>
+    {unlabelled.length > 0 && (
+      <p class="small">Filed under a state this page has no entry for: {unlabelled.join(", ")}.</p>
+    )}
+    <Errands groups={groups} u={u} />
   </section>
 
   <Blk label="Not a document, and worth more than all of them" title={e.ydna.what}>

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --port 4323",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run atlas && astro build && npm run sitemap && npm run check:living && npm run check:living:tree && npm run check:templates && npm run check:kit && npm run check:worklist && npm run check:covers && npm run check:sources",
+    "build": "npm run atlas && astro build && npm run sitemap && npm run check:living && npm run check:living:tree && npm run check:templates && npm run check:kit && npm run check:worklist && npm run check:covers && npm run check:sources && npm run check:pages",
     "preview": "astro preview --port 4323",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
     "check:kit": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkarchive.py --dist dist",
@@ -15,10 +15,11 @@
     "check:living:tree": "python3 ../tools/check_living.py --dist dist",
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
     "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root .",
-    "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 0"
+    "check:sources": "python3 node_modules/@daviddef/archive-kit/kit/tools/checksources.py --root . --max-unreachable 0",
+    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 7"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#7e061b5",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#d60cc98",
     "astro": "^5.18.2"
   },
   "devDependencies": {
