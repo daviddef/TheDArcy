@@ -2,7 +2,7 @@
 import Base from "../layouts/Base.astro";
 import PlaceSpark from "@daviddef/archive-kit/components/PlaceSpark.astro";
 import MarriageChart from "@daviddef/archive-kit/components/MarriageChart.astro";
-import Spine from "@daviddef/archive-kit/components/Spine.astro";
+import Descent from "@daviddef/archive-kit/components/Descent.astro";
 import line from "../data/line.json";
 import CONF from "../data/confidence.json";
 import { chartGroups } from "../lib/marriedin.js";
@@ -11,6 +11,7 @@ import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
 import famData from "../data/families.json";
+import ancestorRows from "../data/ancestors.json";
 import { nOwn, nInherited } from "../lib/errors.js";
 import { people } from "../lib/people.js";
 import ancestors from "../data/ancestors.json";
@@ -154,31 +155,56 @@ const spouseHrefOf = (g) => {
   return slug ? `/people/${slug}/` : null;
 };
 
+/* THE DESCENT. The compact ladder goes; the kit's `Descent` row takes its
+   place — the couple in two equal columns, brothers and sisters under
+   whichever of the two they belong to, everything shut until opened.
+
+   WHAT THIS ARCHIVE HAS AND HAS NOT. It records siblings — sixty-eight on
+   the ancestors and two hundred and fifty-three across the families — and
+   it records NO CHILDREN AT ALL, anywhere. So the rows below carry a
+   sibling strip and no children strip, which is not a gap in the drawing
+   but the state of the data, and the row shows what is there.
+
+   Its siblings are bare NAME STRINGS with no identifier, so their cards
+   are plain text. That is the honest rendering: this archive disambiguates
+   its own slugs because «there are two George Pitt D'Arcys and three
+   Conyers», and a card linked by name would be exactly the merge those
+   slugs exist to prevent.
+
+   HER siblings come from HER record, reached by the spouse's GEDCOM id. */
+const KIN_BY_ID = new Map();
+for (const a of ancestorRows) KIN_BY_ID.set(a.id, a);
+for (const f of famData) for (const m of (f.members || [])) if (!KIN_BY_ID.has(m.id)) KIN_BY_ID.set(m.id, m);
+const nameCards = (xs) => (xs || []).map((x) =>
+  typeof x === "string" ? { name: x } : { name: x.name, dates: x.life || "" });
+
 const spineRows = [...line].reverse().map((g) => {
   const c = CONF.confidence[g.id];
-  /* THE LADDER WAS DROPPING HALF OF WHAT THE ARCHIVE HOLDS. line.json
-     carries a spouse and an occupation for every generation that has one —
-     thirteen of fifteen — and the first version of this map passed neither,
-     so the front page showed a column of D'Arcy men with no wives beside
-     them. `unproven` on an unrecorded generation is direct-line.astro's own
-     convention (`CONFIDENCE[id]?.[0] || "unproven"`), kept here so the two
-     pages cannot disagree; what changed is that the kit now says it once
-     under the ladder instead of nine times down it. */
   const sp = (g.spouses || [])[0];
+  const herRec = sp && sp.id ? KIN_BY_ID.get(sp.id) : null;
   return {
     gen: g.gen ?? g.ahn,
+    era: [g.born, g.died].filter(Boolean).map((x) => String(x).match(/\b(1[5-9]\d\d|20\d\d)\b/)).filter(Boolean).map((m) => m[1]).join(" \u2192 ") || undefined,
     name: g.name,
-    spouse: (sp && (sp.name || sp)) || "",
-    spouseHref: spouseHrefOf(g),
-    offpage: LIVING_DOORS[g.gen ?? g.ahn] || [],
+    href: g.slug ? `/people/${g.slug}/` : "",
+    living: !!g.living,
     born: g.born || "",
-    bornPlace: g.bornPlace || "",
-    diedPlace: g.diedPlace || "",
     died: g.died || "",
     trade: g.occupation || "",
+    place: g.bornPlace || g.diedPlace || "",
+    married: (sp && sp.married) || "",
     confidence: c ? c[0] : "unproven",
-    living: !!g.living,
     weak: (c ? c[0] : "unproven") !== "documented",
+    weakNote: (c && c[1]) || "Repeated from the family tree and not proved.",
+    spouse: (sp && (sp.name || sp)) || "",
+    spouseHref: spouseHrefOf(g),
+    spouseAlt: herRec ? "" : "no record of her own family here",
+    children: [],
+    hisSiblings: nameCards(g.siblings),
+    herSiblings: nameCards(herRec && herRec.siblings),
+    hisLabel: String(g.name).split(" ")[0] + "\u2019s",
+    herLabel: sp ? String(sp.name || sp).split(" ")[0] + "\u2019s" : "Theirs",
+    offpage: LIVING_DOORS[g.gen ?? g.ahn] || [],
   };
 });
 
@@ -318,7 +344,7 @@ const familyDoors = famData.map((f) => ({
     <strong>{spineRows.length - spineRows.filter((r) => r.weak).length} of them this archive will
     defend</strong>; the rest are marked, here as well as on the full spine, rather than smoothed
     over.</p>
-    <Spine rows={spineRows} u={u} label="g" compact={true} full="/direct-line/" archiveKey="darcy" families={familyDoors} />
+    <Descent rows={spineRows} u={u} archiveKey="darcy" families={familyDoors} />
     <p class="cap" style="margin-top:14px"><a href={u("/direct-line/")}>The full spine, and why the
     break is at one man →</a></p>
   </section>
