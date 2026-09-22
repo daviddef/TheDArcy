@@ -26,11 +26,14 @@ Sections:
           "[object Object]", unrendered **markdown**, or a leaked {expression}
 """
 import ast, json, os, re, sys, collections
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import outdir
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOLS = os.path.join(ROOT, "tools")
 DATA = os.path.join(ROOT, "site", "src", "data")
-DIST = os.path.join(ROOT, "site", "dist")
+DIST = outdir.out()
 
 fails, warns = [], []
 def fail(sec, what): fails.append((sec, what))

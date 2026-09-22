@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Every internal href in the built site, resolved. Exits non-zero on a break."""
 import os, re, sys, html as _html, collections
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import outdir
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-D = os.path.join(ROOT, "site", "dist")
+D = outdir.out()
 BASE = "/TheDArcy"
 
 have = set()
@@ -132,7 +135,7 @@ else:
 _ppl_dir = os.path.join(D, "people")
 _built = len([x for x in os.listdir(_ppl_dir)]) if os.path.isdir(_ppl_dir) else 0
 if _built < 100:
-    print(f"  FAIL  evidence   site/dist/people holds {_built} page(s) — the site "
+    print(f"  FAIL  evidence   {outdir.name()}/people holds {_built} page(s) — the site "
           f"is not built, or a concurrent build cleared it mid-check. This is NOT "
           f"a finding about the evidence: re-run the build before believing "
           f"anything here.")

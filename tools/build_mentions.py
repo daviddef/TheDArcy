@@ -19,9 +19,12 @@ The first pass produces pages to scan; the second bakes the mentions in. Running
 it on a site with no dist/ simply writes empty indexes, which is harmless.
 """
 import json, os, re, html, sys
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import outdir
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIST = os.path.join(ROOT, "site", "dist")
+DIST = outdir.out()
 DATA = os.path.join(ROOT, "site", "src", "data")
 PUB  = os.path.join(ROOT, "site", "public")
 

@@ -11,10 +11,13 @@ alias blob alongside its text, and a search for any form finds all of them.
 Writes site/src/data/searchindex.json.
 """
 import json, os, re, sys, unicodedata, html, collections
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import outdir
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "site", "src", "data")
-DIST = os.path.join(ROOT, "site", "dist")
+DIST = outdir.out()
 # Written to public/, not src/data/: at ~300 KB this is fetched by the search
 # page on demand rather than inlined into every build of the HTML.
 OUT = os.path.join(ROOT, "site", "public", "searchindex.json")

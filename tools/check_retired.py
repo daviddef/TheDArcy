@@ -23,9 +23,12 @@ allowance is the point rather than a loophole.
     python3 tools/check_retired.py --warn   # report only
 """
 import json, os, re, sys, html
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import outdir
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIST = os.path.join(ROOT, "site", "dist")
+DIST = outdir.out()
 CFG = os.path.join(ROOT, "site", "src", "data", "retired.json")
 SCRIPTS = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
 
@@ -87,7 +90,7 @@ def main():
                     break
 
     if pages < 400:
-        print(f"  FAIL  retired    only {pages} pages in dist — nothing was really checked")
+        print(f"  FAIL  retired    only {pages} pages in {outdir.name()} — nothing was really checked")
         return 1
     print(f"  {'ok  ' if not hits else 'FAIL'}  retired    "
           f"{len(retired)} withdrawn reading(s) checked against {pages} pages "

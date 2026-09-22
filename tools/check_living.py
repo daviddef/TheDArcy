@@ -38,6 +38,9 @@ tree and say who is alive. That split is the whole of the convergence.
     python3 tools/check_living.py --verbose  # show what matched and why
 """
 import os, sys, json, glob, argparse
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import outdir
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
@@ -46,7 +49,7 @@ sys.path.insert(0, os.path.join(ROOT, "site", "node_modules", "@daviddef",
 from gedcom import load, display, classify_living          # noqa: E402
 import checkliving                                          # noqa: E402
 
-DIST = os.path.join(ROOT, "site", "dist")
+DIST = outdir.out()
 DECL = os.path.join(ROOT, "site", "src", "data", "living.json")
 
 
