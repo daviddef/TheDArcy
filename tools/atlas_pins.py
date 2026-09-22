@@ -28,14 +28,39 @@ Imported by tools/atlas.py, which calls mark() once the kit has written the
 file. Kept separate because this is an audit of somebody else's confidence
 field, not part of building the rows.
 """
-import json, os, sys, collections
+import html as _html
+import json, os, re, sys, collections
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ATLAS = os.path.join(HERE, "..", "site", "public", "atlas-data.json")
 
 
 def _parts(s):
-    return [x.strip().lower() for x in (s or "").split(",") if x.strip()]
+    """The comma levels of a recorded place string, tidied just enough to compare.
+
+    Three kinds of damage in this export stop a plain split from seeing that one
+    string contains another, and each of them hid a real fault:
+
+      "Portsmouth, Hampshire, England or West Indies" — the export hedging
+      between two places. Its last level is "england or west indies", so it does
+      not end in "england" and it sat on the England centroid still stamped
+      EXACT after every other pin there had been caught.
+
+      "&lt;Ehrstaedt, Heidelberg, Baden, Germany&gt;" — HTML escapes never
+      unescaped, which made one row invisible beside its own twin.
+
+      Trailing "UK." and the like, which is not a different country.
+    """
+    s = _html.unescape(s or "").replace("<", " ").replace(">", " ")
+    s = re.split(r"\s+or\s+", s, maxsplit=1)[0]
+    out = []
+    for x in s.split(","):
+        x = x.strip().lower().rstrip(".")
+        if x in ("uk", "united kingdom"):
+            x = "england" if "england" in s.lower() else x
+        if x:
+            out.append(x)
+    return out
 
 
 def inherited(places):

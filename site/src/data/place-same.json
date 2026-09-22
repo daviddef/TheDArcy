@@ -136,10 +136,12 @@
       "km": 123.9,
       "keep": "Berkeley, Gloucestershire, England",
       "fold": [
-        "Berkeley, Gloucester, England"
+        "Berkeley, Gloucester, England",
+        "Christened in Berkeley, Gloucester, England",
+        "Berkley, Gloucester, England"
       ],
-      "verdict": "six people brought home",
-      "why": "**THE ONE THAT MATTERS.** «Berkeley, **Gloucester**, England» — the county written as its county town again — failed to geocode and took the pin for the word ENGLAND, 52.531 -1.265, near Lindley in Leicestershire. Six people sat on it, marked exact, for weeks: this archive's central place, in the wrong county, on the map of an archive that is largely about Berkeley. The other row is the real parish at 51.691 -2.459 and holds two. Folding puts **all eight on Berkeley**, a hundred and twenty-four kilometres from where six of them were. The two-person row keeps its coordinate because its coordinate is right; headcount does not enter into it.",
+      "verdict": "eleven people, and Hannah was not among the eight",
+      "why": "**THE ONE THAT MATTERS.** «Berkeley, **Gloucester**, England» — the county written as its county town again — failed to geocode and took the pin for the word ENGLAND, 52.531 -1.265, near Lindley in Leicestershire. Six people sat on it, marked exact, for weeks: this archive's central place, in the wrong county, on the map of an archive that is largely about Berkeley. The other row is the real parish at 51.691 -2.459 and holds two. Folding puts **all eight on Berkeley**, a hundred and twenty-four kilometres from where six of them were. The two-person row keeps its coordinate because its coordinate is right; headcount does not enter into it.\n\n**Two more rows joined this group on 22 September, and one of them is the person this archive is mostly about.** **«Berkley, Gloucester, England» is HANNAH SANIGER** — born 23 July 1805, died 4 July 1873 — sitting alone on 51.865 -2.246, twenty kilometres from Berkeley, on a point shared with Brimpsfield and Ashton Underhill. BERKLEY is the idiosyncratic spelling this archive already knew: it is the form the family tree uses for her birthplace and the form the 1851 census gives her, and [/thomas-sinegar](/thomas-sinegar/) has said so since 13 September. It had simply never been connected to the map.\n\n**«Christened in Berkeley, Gloucester, England»** is the second — two people, on the England centroid, because the export put an event phrase in a place field and the head therefore begins «Christened». Both fold in. **Berkeley now carries eleven**, and the one who most needed to be there is.",
       "chip": "documented"
     },
     {
@@ -194,10 +196,11 @@
       "km": 141.3,
       "keep": "Ehrstaedt, Heidelberg, Baden, Germany",
       "fold": [
-        "Ehrstaedt, Heidelburg, Baden, Germany"
+        "Ehrstaedt, Heidelburg, Baden, Germany",
+        "&lt;Ehrstaedt, Heidelberg, Baden, Germany&gt;"
       ],
       "verdict": "neither pin is the village, and one of them says so",
-      "why": "**The exception to the rule above, and the reason the rule is stated rather than coded.** One row is marked `approx` at 48.193 8.139; the other is marked `parent` on Heidelberg. The approx pin is **141 km from the Heidelberg its own string names**, which is not an approximation of anything. So the survivor is the row that admits it is standing on Heidelberg's point rather than the row claiming a precision it does not have. The village keeps no coordinate of its own here, which is the honest end state until somebody finds one.",
+      "why": "**The exception to the rule above, and the reason the rule is stated rather than coded.** One row is marked `approx` at 48.193 8.139; the other is marked `parent` on Heidelberg. The approx pin is **141 km from the Heidelberg its own string names**, which is not an approximation of anything. So the survivor is the row that admits it is standing on Heidelberg's point rather than the row claiming a precision it does not have. The village keeps no coordinate of its own here, which is the honest end state until somebody finds one.\n\n**A third row joined on 22 September and it had been invisible.** `&lt;Ehrstaedt, Heidelberg, Baden, Germany&gt;` is the same string with HTML escapes that were never unescaped, angle brackets and all. It sat on the identical point as the row it duplicates and no comparison saw it, because `&lt;Ehrstaedt` is not `Ehrstaedt`. The escapes are stripped before comparing now.",
       "chip": "inferred"
     },
     {
@@ -269,13 +272,37 @@
     },
     {
       "head": "Ashton under Hill",
-      "km": 0.0,
+      "km": 20.1,
       "keep": "Ashton under Hill, Gloucestershire, England",
       "fold": [
-        "Ashton Under Hill, Gloucestershire, England"
+        "Ashton Under Hill, Gloucestershire, England",
+        "Ashton Underhill, Gloucester, England",
+        "Ashton, Underhill, Gloucestershire, England"
       ],
-      "verdict": "a capital letter",
-      "why": "Same point, and **both rows are on Gloucestershire's pin** — so this fold corrects the weight and nothing else. The village still has no coordinate of its own and the surviving row still says so. Two further rows, «Ashton Underhill, Gloucester, England» and «Ashton, Underhill, Gloucestershire, England», are almost certainly the same village under different HEADS; they are left alone here and noted on the work list, because folding across heads is a wider decision than this register was opened for.",
+      "verdict": "one village, four rows, three heads",
+      "why": "**Two men prove it out of this archive's own data, and neither needed a gazetteer.** **EDWARD COTTON, born 15 September 1716, died 31 December 1787**, is recorded born at «Ashton Underhill, Gloucester» and died at «Ashton under Hill, Gloucestershire» — one man, one village, two spellings. **His father EDWARD COTTON, born 6 January 1687, died 11 June 1722**, does the same thing across the other two: born at «Ashton Under Hill, Gloucestershire», died at «Ashton, Underhill, Gloucestershire». Between the two of them every row is welded to every other. Elizabeth, born 1720, and Lydia Lyon, who died there in 1764, make six people in one Cotton household across two generations.\n\n**No head-based count could ever have found them.** The four heads are «Ashton Under Hill», «Ashton under Hill», «Ashton Underhill» and — because a comma was typed after the first word — **«Ashton»**. Three of the four differ only in spacing and case, and the fourth is a different word entirely.\n\n**And no surviving pin is the village, so the row that admits it wins.** The three sit 20.1 km apart. «Ashton, Underhill, Gloucestershire» is alone at 51.800 -2.454. «Ashton Underhill, **Gloucester**» is at 51.865 -2.246 — **a point it shares with Brimpsfield and with Berkley, two villages it has nothing to do with**, which makes that coordinate a fallback for the malformed county rather than a location. The survivor is the row marked `parent` on Gloucestershire's own pin, which is the only one of the three not claiming to be somewhere in particular. Same rule as Ehrstaedt.",
+      "chip": "documented"
+    },
+    {
+      "head": "Limerick City",
+      "km": 0.0,
+      "keep": "Limerick City, Ireland",
+      "fold": [
+        "(about)   Limerick City, Ireland"
+      ],
+      "verdict": "one city, and one of the rows begins «(about)»",
+      "why": "Same point, three people. The folded row's head is literally **«(about)»** because the export put a qualifier in front of the place and the comma-split takes the first field. A head-based count cannot pair it with anything; it was found by looking at COORDINATES carrying more than one place.",
+      "chip": "documented"
+    },
+    {
+      "head": "Queensland",
+      "km": 0.0,
+      "keep": "Queensland, Australia",
+      "fold": [
+        "Queensland Australia"
+      ],
+      "verdict": "the state, written twice, once without its comma",
+      "why": "Same point. **«Queensland Australia» has no comma**, so its head is the whole string — the third row on this map to escape every duplicate-head count that way, after «Toowoomba Q'ld  Australia» and «(about)   Limerick City». This is the state itself, not a place in it; the two street rows that share its pin are correctly marked `parent` and stay separate.",
       "chip": "documented"
     }
   ]
