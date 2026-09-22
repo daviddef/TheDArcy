@@ -14,6 +14,10 @@ const total = fams.reduce((a, f) => a + f.published, 0);
    does not try to — Falco draws the marriages instead, because that is what
    its joins rest on. Three archives, one argument, three kinds of evidence,
    and the component requires none of them. */
+const famSlug = (x) =>
+  String(x).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 const groups = [{
   rows: fams.map((f) => {
     const places = [...new Set(f.members.filter((m) => m.bornPlace)
@@ -31,8 +35,18 @@ const groups = [{
         return { name: m.name, href: o ? `/people/${o.slug}` : null,
                  life: m.life, place: m.bornPlace ? m.bornPlace.split(",")[0] : null };
       }),
+      /* Each family now has a page of its own listing every person of the
+         name as a Descent row, so "and N more" points there rather than at
+         the whole register. */
       more: f.published > 12
-        ? `and ${f.published - 12} more — <a href="/people/">the full list</a>` : null,
+        /* A PLAIN PATH HERE, NOT u(). The Families component rewrites
+           href="/… onto the archive's base itself, so calling u() as well
+           produced /TheDArcy/TheDArcy/families/… — the double-basing this
+           estate has met twice before. `href` below stays plain for the
+           same reason: the component passes it through u(). */
+        ? `and ${f.published - 12} more — <a href="/families/${famSlug(f.surname)}/">all ${f.published} of the name</a>` : null,
+      href: `/families/${famSlug(f.surname)}/`,
+      hrefLabel: "Everyone of the name",
     };
   }),
 }];

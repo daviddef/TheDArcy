@@ -1,0 +1,117 @@
+---
+/* One surname, and every person of it this archive holds.
+ *
+ * /families/ has listed thirteen since it was written, each with a grid of
+ * its people — because this archive can name them, and several reached
+ * Queensland before the D'Arcys did. What it could not do was show a
+ * household: a reader saw a hundred and sixteen Sneyds as a list of names
+ * and not one marriage among them.
+ *
+ * Each family now has a page drawn with the same `Descent` row as the front
+ * page — the couple in two equal columns, brothers and sisters under
+ * whichever of the two they belong to, shut until opened.
+ *
+ * NO CHILDREN STRIP, ANYWHERE. This archive records siblings in two places
+ * and children in none, in any file. The row shows what is there.
+ *
+ * SIBLINGS ARE BARE NAMES AND THEREFORE PLAIN CARDS. people.js disambiguates
+ * its slugs because «there are two George Pitt D'Arcys and three Conyers»,
+ * and a card linked by name is the merge those slugs exist to prevent.
+ */
+import Base from "../../layouts/Base.astro";
+import Descent from "@daviddef/archive-kit/components/Descent.astro";
+import { u } from "../../lib/url.js";
+import famData from "../../data/families.json";
+import ancestorRows from "../../data/ancestors.json";
+import { people } from "../../lib/people.js";
+
+export function getStaticPaths() {
+  const slug = (s) =>
+    String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return famData.map((f) => ({ params: { slug: slug(f.surname) }, props: { fam: f } }));
+}
+const { fam } = Astro.props;
+
+const SLUG_BY_ID = new Map(people.map((q) => [q.id, q.slug]));
+const KIN_BY_ID = new Map();
+for (const a of ancestorRows) KIN_BY_ID.set(a.id, a);
+for (const f of famData) for (const m of (f.members || [])) if (!KIN_BY_ID.has(m.id)) KIN_BY_ID.set(m.id, m);
+
+const nameCards = (xs) => (xs || []).map((x) =>
+  typeof x === "string" ? { name: x } : { name: x.name, dates: x.life || "" });
+
+const yr = (x) => (String(x || "").match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1];
+
+/* LIVING PEOPLE DO NOT ENTER THIS BUILD AT ALL, and the first version of
+   this page published forty-four of them. people.js is explicit — «living
+   people never enter the build» — and the families INDEX has always filtered
+   them out with `f.members.filter((m) => !m.living)`. I rendered every
+   member and only suppressed their dates, which is the rule for archives
+   that publish a living person's name and is NOT the rule here.
+   check:living caught it before it left the machine: «44 leak(s)».
+   A name is the whole of what was leaking. */
+const rows = (fam.members || [])
+  .filter((m) => !m.living)
+  .slice()
+  .sort((a, b) => (Number(yr(a.born)) || 9999) - (Number(yr(b.born)) || 9999))
+  .map((p) => {
+    /* AND A LIVING SPOUSE IS NOT NAMED EITHER. The second pass filtered
+       living members and still leaked seven, every one a wife or husband
+       named on a dead person's row — Harry Bamford, George Hart, Florence
+       Patterson. Under this archive's «absent» policy a living person does
+       not appear at all, not even as somebody else's marriage. */
+    const spRaw = (p.spouses || [])[0] || null;
+    const sp = spRaw && !spRaw.living ? spRaw : null;
+    const herRec = sp && sp.id ? KIN_BY_ID.get(sp.id) : null;
+    const slug = SLUG_BY_ID.get(p.id);
+    const herSlug = sp && sp.id ? SLUG_BY_ID.get(sp.id) : null;
+    return {
+      name: p.name,
+      href: slug ? `/people/${slug}/` : "",
+      era: [yr(p.born), yr(p.died)].filter(Boolean).join(" → ") || undefined,
+      born: p.born || "",
+      died: p.died || "",
+      trade: p.occupation || "",
+      place: p.bornPlace || p.diedPlace || "",
+      married: (sp && sp.married) || "",
+      spouse: sp ? (sp.name || sp) : "",
+      spouseHref: sp && herSlug ? `/people/${herSlug}/` : null,
+      spouseAlt: sp ? (herRec ? "" : "no record of her own family here")
+        : (spRaw ? "married — living, and not named here" : "no marriage recorded for them here"),
+      children: [],
+      hisSiblings: nameCards(p.siblings),
+      herSiblings: herRec ? nameCards(herRec.siblings) : [],
+      hisLabel: String(p.name).split(" ")[0] + "’s",
+      herLabel: sp ? String(sp.name || sp).split(" ")[0] + "’s" : "Theirs",
+      confidence: (p.sources || []).length ? "a record has been read" : "",
+    };
+  });
+---
+<Base
+  title={fam.surname}
+  eyebrow={`${fam.published ?? rows.length} published of ${fam.total ?? rows.length}`}
+  dek={fam.blurb || `Everyone this archive holds under the name ${fam.surname}.`}>
+
+  <section class="blk">
+    <p class="cap"><a href={u("/families/")}>&larr; All thirteen families that joined this line</a></p>
+  </section>
+
+  <section class="blk">
+    <h2>Everyone of the name</h2>
+    {rows.length === 0 ? (
+      <p class="dek">This archive holds <strong>no published people</strong> under
+      <strong>{fam.surname}</strong> yet.</p>
+    ) : (
+      <Fragment>
+        <p class="dek">All <strong>{rows.length}</strong> people this archive publishes under
+        <strong>{fam.surname}</strong>, oldest first, in the shape the front page uses &mdash; the
+        couple in two equal columns, brothers and sisters under whichever of the two they belong to.
+        Everything is shut until you open it. <strong>There is no children strip</strong> on any of
+        these rows: this archive records siblings and records no children, anywhere, and the row
+        shows what is there.</p>
+        <Descent rows={rows} u={u} archiveKey="darcy" />
+      </Fragment>
+    )}
+  </section>
+</Base>
