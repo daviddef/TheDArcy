@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
-import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import { md, mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/thomas-sinegar.json";
 ---
 <Base
@@ -29,6 +29,42 @@ import d from "../data/thomas-sinegar.json";
     </div>
   </Blk>
 
+  <Blk label={`Bristol Archives · ${d.bristol.found}`} title={d.bristol.head}>
+    <p class="lede" set:html={mdp(d.bristol.lede)} />
+    <table style="margin-top:1.3rem">
+      <thead><tr>{d.bristol.cols.map((c) => (<th>{c}</th>))}</tr></thead>
+      <tbody>
+        {d.bristol.rows.map(([a, b]) => (
+          <tr><td style="white-space:nowrap"><strong>{a}</strong></td><td set:html={mdp(b)} /></tr>
+        ))}
+      </tbody>
+    </table>
+    <Note>
+      <span class="chip doc">read from the register by an archivist</span>
+    </Note>
+
+    <h3 style="margin-top:2rem">{d.bristol.deadHead}</h3>
+    <div set:html={mdp(d.bristol.dead)} />
+    <Note>
+      <span class="chip doc">a fact about the record class, not a null result</span>
+      <a href={u("/corrections")}>Own error 44 →</a>
+    </Note>
+
+    <h3 style="margin-top:2rem">{d.bristol.spellHead}</h3>
+    <div set:html={mdp(d.bristol.spell)} />
+    <Note>
+      <span class="chip dis">two readings, neither of them this archive's</span>
+      <a href={u("/spellings")}>The table →</a>
+    </Note>
+
+    <h3 style="margin-top:2rem">{d.bristol.nextHead}</h3>
+    <div set:html={mdp(d.bristol.next)} />
+    <Note>
+      <span class="chip inf">offered unasked, not yet seen</span>
+      <a href={u("/worklist")}>On the list →</a>
+    </Note>
+  </Blk>
+
   <Blk label="The case for him" title="Four things that line up">
     <ol class="dek" style="margin-top:1rem">
       {d.case.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
@@ -37,7 +73,7 @@ import d from "../data/thomas-sinegar.json";
 
   <Blk label="And the case against calling it proved" title="What is missing">
     <ul class="dek" style="margin-top:1rem">
-      {d.against.map((x) => (<li style="margin-bottom:.5rem">{x}</li>))}
+      {d.against.map((x) => (<li style="margin-bottom:.5rem" set:html={md(x)} />))}
     </ul>
     <Note>
       <span set:html={mdp(d.spelling)} />

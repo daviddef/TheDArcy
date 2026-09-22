@@ -99,6 +99,21 @@
       "phrase": "None, in any spelling",
       "instead": "two at Chew Magna, to Simon and Elizabeth",
       "err": 40
+    },
+    {
+      "phrase": "the only one that carries this entry",
+      "instead": "the only INDEXED form; the register reads SANIGAR",
+      "err": 43
+    },
+    {
+      "phrase": "confirmed on FindMyPast",
+      "instead": "FindMyPast serves the same FamilySearch index — one reading, seen twice",
+      "err": 43
+    },
+    {
+      "phrase": "a Gloucestershire marriage entry names the father",
+      "instead": "marriage entries name fathers only after 1837",
+      "err": 44
     }
   ]
 }

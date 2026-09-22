@@ -5,6 +5,40 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
     {
+      "when": "22 September 2026",
+      "title": "An archivist read the register, and the thing this archive was waiting for was never written in it",
+      "found": [
+        [
+          "Answered",
+          "/errands — 4, 5 and 8 all closed by one reply from Bristol Archives, free, nine days after the enquiry"
+        ],
+        [
+          "Corrected",
+          "/thomas-sinegar — no marriage of 1828 names a father; three errands rested on the belief that this one would"
+        ],
+        [
+          "Corrected",
+          "/spellings — SANIGRE is the index's reading; the register reads SANIGAR, and «confirmed on FindMyPast» was one transcription seen twice"
+        ],
+        [
+          "Added",
+          "/thomas-sinegar — by banns, witnesses James Hall and Thomas Davey, and the archivist's caveat that both are probably church officials"
+        ],
+        [
+          "Added",
+          "/worklist 135 — a marriage of 1852 for James, offered unasked, giving Thomas's occupation as Labourer"
+        ]
+      ],
+      "did": [
+        "BRISTOL ARCHIVES READ THE 1828 MARRIAGE and answered every question the enquiry of 13 September asked. Free; the fee quoted for their research service is £13 for half an hour and none was charged.",
+        "THE ANSWER THAT MATTERS IS A NO. «Records from this time do not list fathers' names, nor abodes, ages, conditions or occupations.» Five of the seven things asked for are not absent from this entry — they are absent from every English marriage entry before 1837. That is a fact about the record class, not a null and not a blocked lookup, and it closes three errands instead of leaving them open forever.",
+        "AN ERRAND HAD BEEN CARRYING THE OPPOSITE BELIEF since the day it was written: «a Gloucestershire marriage entry names the father, as his son's did in 1871». The son's did because it is of 1871. /thomas-sinegar has printed both entries side by side, one with a father column and one without, since the day both were found.",
+        "THE REGISTER SPELLS IT SANIGAR, not SANIGRE. Both index sites read SANIGRE because both serve one FamilySearch transcription, so «confirmed on FindMyPast» was one reading seen twice. Neither spelling is asserted here now — the image is on Ancestry and nobody here has seen it.",
+        "WHAT THE ENTRY DID GIVE: by banns, and witnesses James Hall and Thomas Davey — with the archivist's own caveat that both «appear to witness multiple marriages in this church so are probably church officials», which empties the one answer that looked like a lead.",
+        "AND ONE RECORD NOBODY ASKED FOR: a marriage of 1852 for «what looks like Thomas's son, James», giving Thomas's occupation as Labourer. This archive does not hold it. It is after civil registration, so unlike his father's it names a father. Worklist 135."
+      ]
+    },
+    {
       "when": "21 September 2026",
       "title": "One wildcard, three published findings withdrawn, and a generation named",
       "found": [

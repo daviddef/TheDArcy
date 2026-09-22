@@ -20,7 +20,7 @@
     [
       "SANIGAR",
       "56",
-      "Thornbury, Berkeley, Bristol, Dursley, St Botolph Aldgate",
+      "Thornbury, Berkeley, Bristol, Dursley, St Botolph Aldgate — and the register reading of the 1828 Bristol marriage this archive had published as SANIGRE",
       "",
       ""
     ],
@@ -160,7 +160,7 @@
     [
       "SANIGRE",
       "0",
-      "nought in this set — and the only form that carries Thomas’s 1828 marriage (21 Sep)",
+      "nought in this set — and the INDEXED form of Thomas’s 1828 marriage; the register itself reads SANIGAR (22 Sep)",
       "",
       ""
     ],
@@ -313,5 +313,10 @@
       ]
     ],
     "cross": 2
+  },
+  "register": {
+    "head": "One of these rows is a register and the rest are an index",
+    "body": "Every count in this table is of **index entries**, and an index entry is somebody's reading of a register. On 22 September Bristol Archives read one of the underlying registers and disagreed with the index about the spelling: the entry this table credits to **SANIGRE** is written **SANIGAR** in the book.\n\n**That is one row of hundreds, and there is no reason to think it is the only one.** A surname with this many forms generates them at two stages — the clerk's ear in 1828, and the transcriber's eye in about 1990 — and a table built from an index can only ever see the second. It is still the right table to search from. It is not a table of how anybody spelt their name. [Own error 43](/corrections/).",
+    "chip": "the disagreement is documented; neither spelling is"
   }
 }

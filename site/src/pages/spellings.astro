@@ -118,4 +118,9 @@ const parts = [
     <p class="dek" style="margin-top:1rem" set:html={mdp(d.wild)}></p>
     <p style="margin-top:.8rem"><span class="chip doc">{d.chipWild}</span></p>
   </Blk>
+
+  <Blk label="What this table is a table of" title={d.register.head}>
+    <div class="dek" style="margin-top:1rem" set:html={mdp(d.register.body)}></div>
+    <p style="margin-top:.8rem"><span class="chip dis">{d.register.chip}</span></p>
+  </Blk>
 </Base>

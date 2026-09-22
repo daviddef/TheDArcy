@@ -11,9 +11,9 @@
     },
     {
       "when": "24 Aug 1828",
-      "what": "THOMAS SANIGRE married MARTHA GOLDING at Bristol",
-      "where": "England Marriages 1538-1973 (FamilySearch index, free) · confirmed on FindMyPast",
-      "note": "Spelled SANIGRE — the twenty-fifth form of this surname put to one index, the only one that carries this entry, and the reason every earlier search for this marriage failed. The index gives no fathers."
+      "what": "THOMAS SANIGAR — indexed SANIGRE — married MARTHA GOLDING at St James, Bristol, BY BANNS",
+      "where": "Bristol Archives, read from the register 22 September 2026 · indexed in England Marriages 1538-1973",
+      "note": "The index reads SANIGRE and the archivist reading the register reads SANIGAR. The register gives no father: entries of 1828 do not carry them."
     },
     {
       "when": "6 Jun 1841",
@@ -63,10 +63,47 @@
     ]
   ],
   "against": [
-    "The marriage is now a record rather than a tree assertion — but the index that carries it names no fathers, so the entry proving Thomas's father is John Saniger has still not been seen.",
+    "The marriage is a record rather than a tree assertion — but **no marriage of 1828 names a father**, and Bristol Archives have now read this one and confirmed it: the entry that would put John Saniger's name beside his son's marriage does not exist and never did. What is still unseen is any document tying **this** Thomas to the one baptised at Berkeley in 1808.",
     "Their mother's surname — JONES on the FamilySearch tree — remains unsourced.",
     "The sibling link itself no longer rests on inference: Hannah and Thomas are both baptised at Berkeley to John Saniger, she in August 1804 and he in July 1808."
   ],
-  "verdict": "CONFIRMED, later the same day. Hannah's own baptism has been found at Berkeley — HANNAH SANIGOR, 18 August 1804, father JNO SANIGOR — and Thomas was baptised in the same parish to the same father on 3 July 1808. They are brother and sister on the register.\n\n**And the marriage is a record now too.** Re-checked on 21 September in England Marriages 1538-1973: **Thomas Sanigre, 1828, spouse Martha, Bristol** — one result in the whole set, asked nationally with no filters. What the index does not give is a father's name, so the entry that would put John Saniger's name beside his son's marriage has still not been seen; that needs the Bristol St James register itself.",
-  "spelling": "This surname has now been put to one record set in **25 spellings**. The two that mattered most were the two this archive did not know: SANIGOR, which hid Hannah's baptism, and SANIGRE, which hid her brother's marriage. Both were found within an hour of each other, and neither would have been found by searching for Saniger.\n\n**SANIGRE then went missing from this archive's own table for eight days.** The table was recounted on 21 September from the baptism set, and SANIGRE returns nought there — it appears in no baptism register the set transcribes. So the form that carries the direct line's marriage was invisible to the instrument used to count forms. It is in the table now, at nought, with the reason beside it. [Own error 38](/corrections/)."
+  "verdict": "CONFIRMED, later the same day. Hannah's own baptism has been found at Berkeley — HANNAH SANIGOR, 18 August 1804, father JNO SANIGOR — and Thomas was baptised in the same parish to the same father on 3 July 1808. **They are brother and sister on the register**, and that does not depend on the marriage at all.\n\n**And the marriage is a record now too.** Re-checked on 21 September in England Marriages 1538-1973: **Thomas Sanigre, 1828, spouse Martha, Bristol** — one result in the whole set, asked nationally with no filters. Bristol Archives read the register itself on 22 September: **by banns**, witnesses James Hall and Thomas Davey, the name written **SANIGAR**, and **no fathers** — because entries of that date carry none. So what the marriage cannot do is join the Thomas of Oxford Road to the Thomas of Berkeley. That join is still an inference from an age, a birthplace and a mile.",
+  "spelling": "This surname has now been put to one record set in **25 spellings**. The two that mattered most were the two this archive did not know: SANIGOR, which hid Hannah's baptism, and SANIGRE, which hid her brother's marriage. Neither would have been found by searching for Saniger.\n\n**SANIGRE then went missing from this archive's own table for eight days**, because the table was recounted from the baptism set and SANIGRE returns nought there. It is in the table now, at nought, with the reason beside it. [Own error 38](/corrections/).\n\n**And then it turned out not to be the register's spelling.** Bristol Archives, reading the book, read **SANIGAR** — a form this table has held from the start, 56 entries. SANIGRE is what one transcriber wrote, served by two sites, which is why it looked confirmed. [Own error 43](/corrections/).",
+  "bristol": {
+    "found": "22 September 2026",
+    "head": "Bristol Archives read the register, and the question this archive had been asking cannot be answered from it",
+    "lede": "An enquiry went to Bristol Archives on 13 September asking the 1828 marriage entry for the fathers' names, the abodes, ages, conditions and occupations, the witnesses, and whether it was by banns or licence. **Holly Aylward viewed the record and answered all of it**, and the most useful part of the answer is that one of those questions was never answerable.",
+    "cols": [
+      "Asked",
+      "Answered"
+    ],
+    "rows": [
+      [
+        "The fathers' names",
+        "**There are none.** «Records from this time do not list fathers' names, nor abodes, ages, conditions or occupations.»"
+      ],
+      [
+        "Banns or licence",
+        "**By banns.**"
+      ],
+      [
+        "The witnesses",
+        "**James Hall and Thomas Davey** — and «these witnesses appear to witness multiple marriages in this church so are probably church officials.»"
+      ],
+      [
+        "The spelling",
+        "The register reads **SANIGAR**, not SANIGRE."
+      ]
+    ],
+    "chip": "documented",
+    "deadHead": "Three errands rested on a line that does not exist",
+    "dead": "Errands 4, 5 and 8 all said the same thing in different words: **«the father's name on that entry would prove in one line that Hannah Saniger's brother is the Thomas Sinegar of Oxford Road»**. It would have. There is no such line.\n\n**English marriage registers did not record fathers until 1837.** Between Hardwicke's Act and civil registration an entry gives the two names, the parish, banns or licence, the signatures and the witnesses, and nothing else. This archive spent nine days waiting on a fact that the record class has never carried, and it is worth separating that from a null: nobody failed to find anything. **The question was addressed to the wrong century.**\n\nSo the identification of Thomas Sinegar of Oxford Road with Thomas Saniger baptised at Berkeley in 1808 **stays exactly where it was** — an inference from an exact age, an unusual birthplace spelling and a mile of distance, and not a document. What would settle it is a record that names his father, and the marriage was never going to be one.",
+    "chipDead": "documented",
+    "spellHead": "And the spelling this archive made a story of is the index's, not the register's",
+    "spell": "Yesterday this page said SANIGRE was «the twenty-fifth form of this surname put to one index, the only one that carries this entry». **The register says SANIGAR**, which is the second commonest form in the table and has been in it from the start.\n\n**Both index sites say SANIGRE because they are one index.** England Marriages 1538-1973 is the FamilySearch transcription, and FindMyPast serves the same transcription — so «confirmed on FindMyPast», which this page used to say, was two windows onto one reading rather than two readings.\n\n**Neither spelling is asserted here as the register's.** Bristol's is a reading of the original and the index's is a reading of the original, and this archive has seen neither: the image is on Ancestry, which wants an account. What is documented is that **they disagree**, and that the one made from the register says SANIGAR. [Own error 43](/corrections/).",
+    "chipSpell": "disputed",
+    "nextHead": "And one new record, offered unasked",
+    "next": "«There is also a marriage certificate from 1852 for what looks like Thomas's son, James, and this record contains more information, such as Thomas's profession which is listed as **Labourer**.»\n\n**This archive does not hold that marriage.** It has James as the eleven-year-old of 1841 and as the father of Lydia Sinegar baptised in 1866, and nothing between. A marriage of 1852 is **after** civil registration, so unlike his father's it **does** name a father — and Holly has already read Thomas's occupation off it, which matches the labourer of the 1851 census taken the year before.",
+    "chipNext": "inferred"
+  }
 }

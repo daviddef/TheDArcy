@@ -502,9 +502,10 @@ rec("Martha Golding", "married THOMAS SANIGER at Bristol St James, 24 August 182
 rec("Thomas Saniger", "died 1 OCTOBER 1881 at Waterloo Lane, Bristol, and was buried at Greenbank Cemetery, Eastville · baptised Berkeley 3 July 1808, son of John", "record · FamilySearch Family Tree", "https://www.familysearch.org/tree/person/details/KZ2H-JBP")
 
 
-TSM = "record · England Marriages 1538-1973 (FamilySearch index, free) — confirmed on FindMyPast"
-rec("Thomas Saniger", "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, entered as THOMAS SANIGRE · Hannah's brother, baptised Berkeley 3 July 1808 son of John", TSM, "https://www.familysearch.org/")
-rec("Martha Golding", "married Thomas Sanigre at Bristol, 24 August 1828 · mother of his eleven children", TSM, "https://www.familysearch.org/")
+TSM = ("record · England Marriages 1538-1973 (FamilySearch index, free) — the same index is "
+       "served by FindMyPast, which is one reading and not two")
+rec("Thomas Saniger", "married MARTHA GOLDING at BRISTOL, 24 AUGUST 1828, indexed THOMAS SANIGRE, written SANIGAR in the register · Hannah's brother, baptised Berkeley 3 July 1808 son of John", TSM, "https://www.familysearch.org/")
+rec("Martha Golding", "married Thomas Sanigar at Bristol, 24 August 1828, by banns · mother of his eleven children", TSM, "https://www.familysearch.org/")
 
 
 SWJ = "record · Salisbury and Winchester Journal, 23 September 1805, p.3 (British Newspaper Archive)"

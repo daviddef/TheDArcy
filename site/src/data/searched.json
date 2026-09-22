@@ -578,7 +578,7 @@
       "key": "src/findmypast-australia-marriag-19955c"
     },
     {
-      "src": "FamilySearch (free) — England Marriages 1538-1973, confirmed on FindMyPast",
+      "src": "FamilySearch (free) — England Marriages 1538-1973, and the same index served by FindMyPast",
       "what": "Thomas Saniger's marriage, without paying for Ancestry",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -596,7 +596,7 @@
       "key": "src/ancestry-com-au-signed-in-wi-bf3789"
     },
     {
-      "src": "FamilySearch (free, and signed in) — England Births & Baptisms, confirmed on FindMyPast",
+      "src": "FamilySearch (free, and signed in) — England Births & Baptisms, and the same index served by FindMyPast",
       "what": "Hannah Saniger's baptism",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -3751,6 +3751,32 @@
       "outcome": "blocked",
       "got": "**No image on this record.** The record set's own description promises «a transcript and image of the original register entry», and the entry for 21 June 1779 offers a transcript only — no image control on the page. So the parishes of both parties, banns or licence, the witnesses and the signatures are **not** reachable from here. That needs the register at **Portsmouth History Centre**, which holds the Church of England parishes of the Portsmouth, Gosport, Fareham and Havant deaneries.",
       "href": "/portsea"
+    },
+    {
+      "src": "Bristol Archives — St James Bristol marriage register, 24 August 1828, read by staff",
+      "what": "The fathers' names, abodes, ages, conditions, occupations and witnesses on Thomas and Martha's entry, and banns or licence",
+      "when": "22 Sep 2026",
+      "outcome": "yield",
+      "got": "**By banns**, witnesses **James Hall and Thomas Davey**, and the surname spelt **SANIGAR**. The five other questions have no answer and never did: «records from this time do not list fathers' names, nor abodes, ages, conditions or occupations» — English marriage registers began naming fathers at civil registration in 1837. The archivist adds that these two witnesses «appear to witness multiple marriages in this church so are probably church officials», which is a caveat this archive would not have known to apply and which empties the one answer that looked like a lead. Free; no research fee charged. [Own error 44](/corrections/).",
+      "href": "/thomas-sinegar"
+    },
+    {
+      "src": "England Marriages 1538-1973 (FamilySearch), and the same index served by FindMyPast",
+      "what": "Whether SANIGRE is the register's spelling or the transcriber's",
+      "when": "22 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "**The transcriber's.** Both sites read SANIGRE because both serve one FamilySearch transcription — so this archive's «confirmed on FindMyPast» was one reading seen twice. Bristol Archives, reading the book, reads SANIGAR. **Neither is asserted here**: the image is on Ancestry, which wants an account this archive will not open, and nobody here has seen it. Control: SANIGAR is already the second commonest form in this archive's table, 56 entries, so the register reading is one this search would have found.",
+      "href": "/spellings"
+    },
+    {
+      "src": "This archive's own pages and data — grep for a Sinegar/Sanigar marriage of 1852",
+      "what": "Whether the James marriage Bristol Archives mentions is already held here",
+      "when": "22 Sep 2026",
+      "outcome": "empty",
+      "ctl": "named",
+      "got": "**Nothing.** James Sinegar appears aged eleven in the 1841 household and again in 1866 as Lydia's father, with no record between. Control: the same search returns the 1871 marriage of his brother Thomas and the 1828 marriage of their father, so it finds marriages when they are there. The 1852 entry is new to this archive.",
+      "href": "/worklist"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

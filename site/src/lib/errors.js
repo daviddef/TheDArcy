@@ -2,6 +2,28 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "22 September 2026",
+    cause: "premise",
+    what: "Spent nine days, one enquiry and three errands waiting for the father's name on an 1828 marriage entry. English marriage registers did not record fathers until 1837. There has never been a line on that document to wait for.",
+    truth:
+      "Bristol Archives read the register and answered every question the enquiry asked: «records from this time do not list fathers' names, nor abodes, ages, conditions or occupations». Of the seven things asked for, five are not in the record class at all. What is there — by banns, and two witnesses — is what a 1754-to-1837 entry holds, and this archive had read dozens of them.",
+    why: "Errand 8 wrote the reasoning down: «a Gloucestershire marriage entry names the father, AS HIS SON'S DID IN 1871». The son's named a father because it is of 1871. A true observation about one document was carried back forty-three years into a different record class, and once it was in an errand it was quoted by two more errands and a page without anybody asking where it came from.",
+    lesson:
+      "The archive's own pages hold the refutation: /thomas-sinegar prints the 1871 entry with its father column and the 1828 entry without one, side by side, and has since the day both were found. NOTHING WAS MISSING. The evidence for a wrong belief was already published under the belief. A premise that arrived as a comparison — as HIS SON'S DID — should have carried the date of the thing compared, because that date was the whole difference. And the cost of the fault is not the nine days; it is that a fee was nearly paid, and an errand marked THE STRONGEST INFERENCE HERE, for a document that cannot speak to it.",
+    href: "/thomas-sinegar",
+  },
+  {
+    when: "22 September 2026",
+    cause: "edition",
+    what: "Published SANIGRE as the spelling of Thomas's marriage, called it «the twenty-fifth form of this surname put to one index, the only one that carries this entry», and said it was «confirmed on FindMyPast». The register reads SANIGAR. There was no confirmation.",
+    truth:
+      "England Marriages 1538-1973 is the FamilySearch transcription, and FindMyPast serves that same transcription under the same name. Reading it in two windows is not two readings. The one reading anybody has taken from the register itself is Bristol Archives', on 22 September, and it says SANIGAR — the second commonest form in this archive's own table, in it from the start.",
+    why: "The two sites look like two sources: different companies, different search forms, different result pages, a fee on one of them. This archive has a rule for exactly this and applies it to censuses — an index is a reading of a document and carries its reader's errors — and did not apply it here, because the spelling was interesting. A form that appears nowhere else made a better paragraph than a form that appears everywhere.",
+    lesson:
+      "NEITHER SPELLING IS ASSERTED HERE NOW. Bristol's is a reading and FamilySearch's is a reading, the image is behind an account this archive will not open, and what is documented is that they disagree. The check is mechanical and was skipped: before calling two records agreement, ask who transcribed each. And a detail that makes the story better is the one to doubt first — this is the second correction in two days where the interesting reading was the wrong one.",
+    href: "/spellings",
+  },
+  {
     when: "21 September 2026",
     cause: "instrument",
     what: "Wrote a script to stop this archive's build without touching any other archive on the machine, published what it did in a commit message, recommended it to two neighbouring sessions — and never ran it. Run against a live build it selected NOTHING.",
