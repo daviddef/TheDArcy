@@ -10,6 +10,7 @@ import WaysIn from "@daviddef/archive-kit/components/WaysIn.astro";
 import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
+import famData from "../data/families.json";
 import { nOwn, nInherited } from "../lib/errors.js";
 import { people } from "../lib/people.js";
 import ancestors from "../data/ancestors.json";
@@ -115,6 +116,38 @@ const more = [
    a wife by name in a file like that would be the merge those slugs exist
    to prevent. All thirteen resolve. */
 const SLUG_BY_ID = new Map(people.map((q) => [q.id, q.slug]));
+
+/* THE LAST TWO ROWS OF THIS SPINE ARE WHERE THE ESTATE JOINS UP, AND THEY
+   WERE DEAD ENDS. Both are living, so people.js excludes them from the
+   build and line.json lists no spouse — which left the surname rule with
+   nothing to work on at exactly the two rows that reach two other
+   archives. Named here because only this archive knows them:
+
+     g2  Ian Kenneth D'Arcy   his wife is Giuseppina Falco, and his two
+                              daughters married into Mazza and Defranceschi
+     g1  Cristina Adele       married a Defranceski
+
+   A relationship and nothing more — no date, no place, and nothing the
+   sibling archives do not already publish on their own spines. The
+   Falco archive's generation nine reads «Giuseppina Falco and Ian Kenneth
+   D'Arcy»; Mazza's generation zero reads «Michael Rocco Mazza and
+   Stefanie D'Arcy». */
+const RING_URL = {
+  falco: "https://daviddef.github.io/TheFalco/",
+  mazza: "https://daviddef.github.io/TheMazza/",
+  defranceski: "https://daviddef.github.io/TheDefranceski/",
+};
+const LIVING_DOORS = {
+  2: [
+    { label: "The Falco Archive", href: RING_URL.falco, external: true, through: "married" },
+    { label: "The Mazza Archive", href: RING_URL.mazza, external: true, through: "Stefanie" },
+    { label: "The Defranceschi Archive", href: RING_URL.defranceski, external: true, through: "Cristina" },
+  ],
+  1: [
+    { label: "The Defranceschi Archive", href: RING_URL.defranceski, external: true, through: "married" },
+  ],
+};
+
 const spouseHrefOf = (g) => {
   const sp = (g.spouses || [])[0];
   const slug = sp && sp.id && !sp.living ? SLUG_BY_ID.get(sp.id) : null;
@@ -137,6 +170,7 @@ const spineRows = [...line].reverse().map((g) => {
     name: g.name,
     spouse: (sp && (sp.name || sp)) || "",
     spouseHref: spouseHrefOf(g),
+    offpage: LIVING_DOORS[g.gen ?? g.ahn] || [],
     born: g.born || "",
     bornPlace: g.bornPlace || "",
     diedPlace: g.diedPlace || "",
@@ -148,6 +182,17 @@ const spineRows = [...line].reverse().map((g) => {
   };
 });
 
+
+
+/* The thirteen surnames this archive keeps a section on, handed to the
+   spine so a marriage is a door into the family it joined. One page with
+   a section each, so the href carries the anchor the kit's Families
+   component now emits. */
+const familyDoors = famData.map((f) => ({
+  label: f.surname,
+  href: `/families/#${String(f.surname).toLowerCase().normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+}));
 
 ---
 <Base title="The D'Arcy Archive" bare={true}>
@@ -273,7 +318,7 @@ const spineRows = [...line].reverse().map((g) => {
     <strong>{spineRows.length - spineRows.filter((r) => r.weak).length} of them this archive will
     defend</strong>; the rest are marked, here as well as on the full spine, rather than smoothed
     over.</p>
-    <Spine rows={spineRows} u={u} label="g" compact={true} full="/direct-line/" />
+    <Spine rows={spineRows} u={u} label="g" compact={true} full="/direct-line/" archiveKey="darcy" families={familyDoors} />
     <p class="cap" style="margin-top:14px"><a href={u("/direct-line/")}>The full spine, and why the
     break is at one man →</a></p>
   </section>
