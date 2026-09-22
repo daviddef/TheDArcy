@@ -92,6 +92,12 @@ import d from "../data/hannah-baptism.json";
       <span set:html={mdp(d.jno1804.how)} /></Note>
   </Blk>
 
+  <Blk label={`The atlas · ${d.berkley.found}`} title={d.berkley.head}>
+    <p class="lede" set:html={mdp(d.berkley.body)}></p>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.berkley.chip}</span>
+      {" "}<a href={u("/atlas/")}>The map →</a></p>
+  </Blk>
+
   <Blk label={`Three tests · ${d.lydiaHunt.found}`} title={d.lydiaHunt.head}>
     <p class="lede" set:html={mdp(d.lydiaHunt.lede)}></p>
     <div style="margin-top:1.4rem;display:flex;flex-direction:column;gap:1.3rem">

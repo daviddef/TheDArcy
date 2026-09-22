@@ -7,6 +7,14 @@ import Atlas from "@daviddef/archive-kit/components/Atlas.astro";
 import { u } from "../lib/url.js";
 import data from "../../public/atlas-data.json";
 const s = data.stats;
+/* Counted, never typed — the ground layer's own rows, and the four kinds of
+   claim a pin can make. On 21 September this caption described only `approx`,
+   in words that had by then become the definition of `parent`, while thirty
+   borrowed pins and five fallback pins went unmentioned under a map drawing
+   them. The page explaining the marks was the last thing to learn what they
+   meant. */
+const ground = data.places.filter((p) => p.cats && p.cats.ground).length;
+const n = (k) => data.places.filter((p) => p.fix === k).length;
 ---
 <Base title="The Atlas"
       eyebrow={`${s.places} places on the map${s.unplaced ? ` · ${s.unplaced} without a coordinate` : ""}`}
@@ -26,7 +34,7 @@ const s = data.stats;
     ]}
     schemes={[
       ["people", "Our people", "where a named person can be put"],
-      ["ground", "The ground", "13 places · where somebody is actually buried"],
+      ["ground", "The ground", `${ground} places · where somebody is actually buried`],
     ]}
     bounds={[[49.5, -11], [59, 2]]}
     homeLabel="Back to England"
@@ -35,6 +43,18 @@ const s = data.stats;
   >
     <p class="cap" style="margin-top:6px">A marker is a place this archive can put a person in.
     <strong>Weight is not kinship</strong> — a parish may hold a great many of the surname and be
-    connected to this family by nothing at all.{s.approx ? ` ${s.approx} of these coordinates are approximate: the gazetteer matched a larger place, or a modern name, rather than the exact parish.` : ""}</p>
+    connected to this family by nothing at all.</p>
+    <p class="cap" style="margin-top:6px"><strong>And a marker is not a promise.</strong> A gazetteer
+    that has not heard of a place does not say so — it answers with the smallest thing it did
+    recognise. So every pin here says which of four things it is.
+    <strong>{n("exact")}</strong> were found at the point they are drawn on.
+    <strong>{n("approx")}</strong> are approximate: a larger place, or a modern name, rather than the
+    exact parish. <strong>{n("parent")}</strong> are standing on a <em>containing</em> place's
+    coordinate and are marked as borrowed, naming what they borrowed from — Berkeley spent weeks on
+    the pin for the word <em>England</em>, in Leicestershire, with six people on it.
+    And <strong>{n("shared")}</strong> sit on a coordinate that several unrelated places were all
+    sent to, which is therefore none of them.
+    {s.unplaced ? `${s.unplaced} places have no coordinate at all and are named rather than guessed at.` : ""}
+    <a href={u("/corrections/")}>How that was found →</a></p>
   </Atlas>
 </Base>

@@ -116,6 +116,28 @@ else:
     print("  FAIL  evidence   register.json is missing")
     sys.exit(1)
 
+# A FLOOR, BECAUSE "THE EVIDENCE IS MISSING" AND "THE PAGES ARE MISSING" ARE
+# NOT THE SAME FINDING AND THIS GATE REPORTED THE FIRST WHEN IT MEANT THE
+# SECOND. On 22 September it printed "187 record line(s) owed by register.json
+# reach 0 OF 60 PEOPLE" — the exact shape of the Mazza fault this gate exists to
+# catch — and every one of the sixty reasons underneath read "no page built".
+# site/dist had been cleared by a concurrent build in this repository between
+# the second pass finishing and this check running. Nothing was wrong with the
+# data; there was simply nothing to check against. Ten minutes went into hunting
+# a build-script bug that did not exist.
+#
+# selftest.py already carries a FLOOR for the same reason, after it once
+# reported "ok, 0 pages checked" against an empty dist. A check that cannot tell
+# an absent subject from a failing one will eventually accuse the innocent.
+_ppl_dir = os.path.join(D, "people")
+_built = len([x for x in os.listdir(_ppl_dir)]) if os.path.isdir(_ppl_dir) else 0
+if _built < 100:
+    print(f"  FAIL  evidence   site/dist/people holds {_built} page(s) — the site "
+          f"is not built, or a concurrent build cleared it mid-check. This is NOT "
+          f"a finding about the evidence: re-run the build before believing "
+          f"anything here.")
+    sys.exit(1)
+
 silent = []
 for slug, n in sorted(expect.items()):
     f = os.path.join(D, "people", slug, "index.html")

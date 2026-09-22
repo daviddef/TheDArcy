@@ -305,5 +305,75 @@
       "why": "Same point. **«Queensland Australia» has no comma**, so its head is the whole string — the third row on this map to escape every duplicate-head count that way, after «Toowoomba Q'ld  Australia» and «(about)   Limerick City». This is the state itself, not a place in it; the two street rows that share its pin are correctly marked `parent` and stay separate.",
       "chip": "documented"
     }
+  ],
+  "pinsNote": [
+    "COORDINATES SEVERAL PLACES WERE SENT TO, judged one at a time.",
+    "",
+    "An inherited pin is catchable: the place standing on it is named by a comma-",
+    "tail of its own string, so «Wotton-under-Edge, Gloucestershire» on the",
+    "Gloucestershire pin gives itself away. A FALLBACK pin does not. Nothing on",
+    "this map is called «Gloucester» the city, so when three unrelated villages",
+    "were all sent to 51.865 -2.246 there was no parent row to attribute them to,",
+    "and all three sat there marked `approx` — an honest-looking word on a",
+    "coordinate that is none of them.",
+    "",
+    "The test that finds them is a coordinate carrying MORE THAN ONE PLACE WHERE",
+    "NONE CONTAINS ANOTHER. The verdict is never automatic: one of these points is",
+    "correct and deliberate. Each is decided here and check_atlas.py refuses any",
+    "shared point that is not.",
+    "",
+    "`verdict: allowed` — the pin is right and the sharing is intended.",
+    "`verdict: fallback` — the pin is not any of these places. The rows are stamped",
+    "`shared`, which says so, and no marker is moved, because the archive's rule is",
+    "that a map claiming false precision is worse than one omitting the place."
+  ],
+  "pins": [
+    {
+      "at": [
+        51.69136,
+        -2.45852
+      ],
+      "verdict": "allowed",
+      "places": [
+        "Berkeley, Gloucestershire, England",
+        "Saniger"
+      ],
+      "why": "**Correct, and deliberate.** The pin is Berkeley and eleven people are rightly on it. SANIGER is a hamlet inside that parish with no coordinate of its own, added by hand and pinned there on purpose — tools/atlas.py says so where the entry is defined: «THE POINT IS BERKELEY: the hamlet lies inside that parish and has no coordinate of its own. Wanswell and Hinton, its neighbours, are on the same point and are not shown separately for that reason.» This is what a shared coordinate looks like when it is honest."
+    },
+    {
+      "at": [
+        52.32131,
+        -1.55369
+      ],
+      "verdict": "fallback",
+      "places": [
+        "Langdon Hall, Warwickshire, England",
+        "Frere Hall, Warwickshire, England"
+      ],
+      "why": "**Two different Warwickshire houses, identical to five decimal places.** Langdon Hall carries four people — the Dabridgecourts, Alice Griswold and John Fullwood — and Frere Hall carries Frances Fullwood. They are not the same house: the archive's own tree calls the man «Thomas DABRIDGECOURT of Longdon Hall», and nothing anywhere calls either of them the other. **Both cannot be at one point**, so neither is located, and the shared coordinate is what the lookup returns for a Warwickshire hall it cannot find. Both rows are stamped `shared`. Nothing is moved: this archive does not type coordinates by hand."
+    },
+    {
+      "at": [
+        52.66667,
+        -1.0
+      ],
+      "verdict": "fallback",
+      "places": [
+        "Stroughton Grange, Leicestershire, England",
+        "Bedworth, Leicestershire, England, UK."
+      ],
+      "why": "**52°40′00″ north, 1°00′00″ west — exactly round, which no gazetteer returns for a real place.** Two rows sit on it and they are different places: Stoughton Grange is the Leicestershire manor the Farnhams held, and **Bedworth is a Warwickshire town filed here under Leicestershire**, so the string is wrong about its county before the pin is wrong about anything. Catherine Farnham appears on both. Both stamped `shared`. The cluster is wider than this point — «Stoughton, Leicestershire» and «Bedworth and Stoughton, Leicestershire» are on the England centroid — and untangling Stoughton from Stoughton Grange from Bedworth is a genealogical question, not a mapping one."
+    },
+    {
+      "at": [
+        51.86537,
+        -2.24582
+      ],
+      "verdict": "fallback",
+      "places": [
+        "Brimpsfield, Gloucester, England"
+      ],
+      "why": "**Alone on it now, and that is exactly why it needs saying.** Until 22 September this point carried **three** villages — Brimpsfield, Ashton Underhill and Berkley — written «X, **Gloucester**, England», the county as its county town. Ashton Underhill folded into Ashton under Hill and Berkley turned out to be **Hannah Saniger's Berkeley**, twenty kilometres away. Their departure does not make the coordinate Brimpsfield's; it only removes the evidence that it is nobody's. **A test that looks for points carrying more than one place cannot see this row any more**, which is the argument for writing the verdict down rather than leaving it to a check. Stamped `shared`, naming the two that left."
+    }
   ]
 }

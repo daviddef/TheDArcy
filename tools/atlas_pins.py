@@ -94,6 +94,38 @@ def inherited(places):
     return out
 
 
+SAME = os.path.join(HERE, "..", "site", "src", "data", "place-same.json")
+
+
+def _register():
+    if not os.path.exists(SAME):
+        return []
+    return json.load(open(SAME, encoding="utf-8")).get("pins") or []
+
+
+def shared(places):
+    """{index: n_places_on_that_point} for rows on a declared FALLBACK coordinate.
+
+    A fallback pin is the one an inherited pin is not: nothing on the map is
+    named as its owner, so there is no parent to attribute it to and nothing
+    catches it. Three Gloucestershire villages sat on one of these, all marked
+    `approx`, until two of them were folded away and the third was left alone on
+    it looking like an ordinary located place. The verdicts live in
+    place-same.json because one such point is correct and deliberate — Berkeley
+    with the hamlet of Saniger on it — and no rule can tell that from the rest.
+    """
+    out = {}
+    for entry in _register():
+        if entry.get("verdict") != "fallback":
+            continue
+        want = {w.strip().lower() for w in entry.get("places", [])}
+        for i, r in enumerate(places):
+            if (r.get("what") or "").strip().lower() in want \
+                    or (r.get("name") or "").strip().lower() in want:
+                out[i] = len(entry.get("places", []))
+    return out
+
+
 def mark(path=ATLAS):
     """Re-stamp inherited pins. Returns (marked, people_on_them)."""
     d = json.load(open(path, encoding="utf-8"))
@@ -104,7 +136,14 @@ def mark(path=ATLAS):
         places[i]["fix"] = "parent"
         places[i]["fixFrom"] = places[j].get("name") or places[j].get("what")
         ppl += places[i].get("n") or 0
+    sh = shared(places)
+    for i in sh:
+        if i in inh:            # a declared fallback that is also inherited:
+            continue            # `parent` is the more specific answer, keep it
+        places[i]["fix"] = "shared"
+        places[i]["fixNote"] = "a point several places were sent to — not this place"
     st = d.setdefault("stats", {})
+    st["shared"] = sum(1 for r in places if r.get("fix") == "shared")
     st["parent"] = len(inh)
     st["parentPeople"] = ppl
     # `approx` was counted before these were re-stamped, so recount it rather

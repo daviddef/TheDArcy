@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/sanigers.json";
 
 const c = d.counts;
@@ -356,6 +357,10 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
       Bristol</strong>. They are visible in 1841 because a census caught them, and invisible on
       either side of it. <a href={u("/searched/")}>What each database holds →</a>
     </Note>
+
+    <Note style="border-left-width:3px;margin-top:1.4rem"><strong>{d.chepstow.head}.</strong>
+      <span set:html={mdp(d.chepstow.body)} />
+      {" "}<span class="chip doc">{d.chepstow.chip}</span></Note>
 
     <p class="small" style="margin-top:1.3rem">
       <a href={u("/berkeley/")}>The chain that failed →</a> ·
