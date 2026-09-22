@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import PlaceSpark from "@daviddef/archive-kit/components/PlaceSpark.astro";
 import MarriageChart from "@daviddef/archive-kit/components/MarriageChart.astro";
+import Spine from "@daviddef/archive-kit/components/Spine.astro";
+import line from "../data/line.json";
+import CONF from "../data/confidence.json";
 import { chartGroups } from "../lib/marriedin.js";
 import WaysIn from "@daviddef/archive-kit/components/WaysIn.astro";
 import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
@@ -79,6 +82,40 @@ const more = [
 ["/corrections", "What this archive got wrong", `${nOwn} mistakes this site published and then corrected, with the cause of each — and ${nInherited} inherited from the family tree. The largest was building three days of research on a single yes/no tick in a census.`],
 ["/method", "Method", "What 'documented' means here, what 'family lore' means, and the rule that keeps living people out of the build entirely."],
 ];
+
+/* 22 September 2026. Five of the estate's eight archives showed no line on
+   the front page and this was one — fifteen generations asserted and not one
+   of them visible until you clicked.
+
+   The confidence map is IMPORTED, not copied. It was hardcoded in
+   direct-line.astro and is src/data/confidence.json now, read by both, so
+   the two pages cannot ever disagree about whether a generation is proved.
+   Copying that map would have been the worst kind of duplication: the day it
+   drifted, one page would call a man documented and the other unproven.
+
+   THE COUNT IS COMPUTED, NOT TYPED. /direct-line/ says in prose that "eight
+   of them are documented" and its own drawing marks six — the confidence map
+   holds seven judgements, six documented and one disputed, and everything
+   absent from it defaults to unproven. A number in prose drifts from the
+   data behind it; this one is derived so it cannot.
+
+   Links go to the generation anchor, not the person. A name is not an
+   identity on a spine — this one repeats George Pitt D'Arcy — and position
+   in a line is. */
+/* Oldest first on the page; the data is youngest-first, exactly as
+   direct-line.astro reverses it. */
+const spineRows = [...line].reverse().map((g) => {
+  const c = CONF.confidence[g.id];
+  return {
+    gen: g.gen ?? g.ahn,
+    name: g.name,
+    born: g.born || "",
+    bornPlace: g.bornPlace || "",
+    died: g.died || "",
+    living: !!g.living,
+    weak: (c ? c[0] : "unproven") !== "documented",
+  };
+});
 ---
 <Base title="The D'Arcy Archive" bare={true}>
 
@@ -197,6 +234,17 @@ const more = [
   <h2>The families who married in</h2>
   <p class="dek">Thirteen families joined this line, grouped by the generation at which each enters it.
   <a href={u("/marriages/")}>The marriages, in full →</a></p>
+  <section class="blk">
+    <h2>The line, as far as it is asserted</h2>
+    <p class="dek">Fifteen generations, from a Brisbane insurance manager to a Yorkshire castle.
+    <strong>{spineRows.length - spineRows.filter((r) => r.weak).length} of them this archive will
+    defend</strong>; the rest are marked, here as well as on the full spine, rather than smoothed
+    over.</p>
+    <Spine rows={spineRows} u={u} label="g" compact={true} full="/direct-line/" />
+    <p class="cap" style="margin-top:14px"><a href={u("/direct-line/")}>The full spine, and why the
+    break is at one man →</a></p>
+  </section>
+
   <MarriageChart groups={chartGroups} subject="D'Arcy" unit="people published" />
 </section>
 
