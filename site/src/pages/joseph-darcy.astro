@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/joseph-darcy.json";
@@ -216,6 +217,34 @@ import d from "../data/joseph-darcy.json";
     <div class="note" style="border-left-width:3px;margin-top:1.3rem">
       {d.ladycatherine.means} <span class="chip doc">documented</span>
     </div>
+    <div class="lab" style="margin-top:2rem">{`The register · ${d.ladycatherine.baptisms.found}`}</div>
+    <h3 style="margin-top:.4rem">{d.ladycatherine.baptisms.head}</h3>
+    <p class="lede" style="margin-top:.6rem" set:html={mdp(d.ladycatherine.baptisms.lede)}></p>
+    <Scroll>
+      <table style="margin-top:1.1rem">
+        <thead><tr>{d.ladycatherine.baptisms.cols.map((c) => <th>{c}</th>)}</tr></thead>
+        <tbody>{d.ladycatherine.baptisms.rows.map((r) => (
+          <tr>{r.map((c) => (<td set:html={mdp(c)}></td>))}</tr>))}</tbody>
+      </table>
+    </Scroll>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.ladycatherine.baptisms.chip}</span></p>
+    <div class="note" style="border-left-width:3px;margin-top:1.3rem">
+      <strong>{d.ladycatherine.baptisms.orderHead}.</strong> <span set:html={mdp(d.ladycatherine.baptisms.order)} />
+      <span class="chip doc">{d.ladycatherine.baptisms.chipOrder}</span>
+    </div>
+    <div class="note" style="border-left-width:3px;margin-top:1.2rem">
+      <strong>{d.ladycatherine.baptisms.persiaHead}.</strong> <span set:html={mdp(d.ladycatherine.baptisms.persia)} />
+      <span class="chip doc">{d.ladycatherine.baptisms.chipPersia}</span>
+    </div>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.ladycatherine.baptisms.westHead}.</strong> <span set:html={mdp(d.ladycatherine.baptisms.west)} />
+      <span class="chip inf">{d.ladycatherine.baptisms.chipWest}</span>
+    </div>
+    <div class="note" style="margin-top:1.2rem">
+      <strong>{d.ladycatherine.baptisms.afterHead}.</strong> <span set:html={mdp(d.ladycatherine.baptisms.after)} />
+      <span class="chip inf">{d.ladycatherine.baptisms.chipAfter}</span>
+    </div>
+
     <div class="lab" style="margin-top:1.8rem">{d.ladycatherine.death.src}</div>
     <h3 style="margin-top:.4rem">{d.ladycatherine.death.head}</h3>
     <div class="note" style="border-left-width:3px;margin-top:.8rem">

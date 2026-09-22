@@ -3718,6 +3718,39 @@
       "got": "**A clean no, grepped rather than remembered.** Asked because John Swonhungre held two shops in Bristol Market in 1443 and this estate has more than one archive with Bristol connections; it would have been foolish to start from nothing if somebody had already been there.\n\nThe Falco session searched its own data and reported **Bristol 0, Gloucester 0, Swonhungre 0, St Peter 0, St James 0, medieval 0.** That archive is one maternal line from **Arienzo in Caserta**, 1703 to 1901, and its earliest document anywhere is a 1637 baptism at San Felice a Cancello. Its entire UK holding is four rows and none is parochial. **The overlap is nil**, and this archive starts fifteenth-century Bristol from nothing — which is at least a clean start rather than a duplicated one.",
       "href": "/swonhungre",
       "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975, father's forename",
+      "what": "Joseph D'Arcy's first family, which two death notices proved existed and never named",
+      "when": "22 Sep 2026",
+      "outcome": "yield",
+      "got": "**Both missing sons, with baptisms, in one query.** Asking the set for D*ARCY children whose father is JOSEPH returns nine, and two are at **Westminster**: **GEORGE ABBAS KOOLY D'ARCY, baptised 31 August 1818**, and **ROBERT WEST D'ARCY, baptised 16 October 1820** — both to Joseph D'Arcy and **Katharine/Catherine Georgiana**.\n\nThat completes the order the 1857 notice implied: married at Bath November 1817, George 1818, Robert 1820, Richard about 1824 and called «third son». **George was never named anywhere in this archive before today.**",
+      "href": "/joseph-darcy"
+    },
+    {
+      "src": "FindMyPast — the transcripts for both Westminster baptisms",
+      "what": "Whether the mother's name in the register matches the tree's CATHERINE GEORGIANA WEST",
+      "when": "22 Sep 2026",
+      "outcome": "yield",
+      "got": "**It does, twice, and the second son carries her surname.** The 1818 transcript gives the mother as **Katharine Georgiana**, the 1820 as **Catherine Georgiana** — one woman, two ordinary spellings. The tree's «Catherine Georgiana West, married at Bath in November 1817» had never been checked against a record; the forenames are now confirmed from parish registers, and **Robert WEST D'Arcy** carries the maiden surname as a middle name. WEST is the family name of the Earls De La Warr, which is what both death notices call her family.",
+      "href": "/joseph-darcy"
+    },
+    {
+      "src": "FindMyPast — England Births & Baptisms 1538-1975, `D*RC*` and the forename Robert",
+      "what": "Robert D'Arcy the elder — whether his own baptism is anywhere in England",
+      "when": "22 Sep 2026",
+      "outcome": "null",
+      "got": "**It is not, and this is now measured rather than assumed.** A wildcard on the surname, so no spelling is guessed at: **47 Robert D*RC* baptisms in the whole set across four centuries**, and among them exactly two true Darcys before 1800 — **1651 at Norton, Derbyshire, and 1706 at Stepney** — then nothing until **1812 at Lincoln**. **No Robert Darcy is baptised anywhere in England between 1706 and 1800.** Control: the set holds **749 Darcy baptisms**, so the surname is richly present and the eighteenth-century gap is the man, not the index. The Hornby claim gains nothing and loses nothing; what it loses is the possibility that he was simply filed under a spelling nobody tried.",
+      "href": "/hornby",
+      "ctl": "named"
+    },
+    {
+      "src": "FindMyPast — Hampshire Marriages, the 1779 image",
+      "what": "Whether Robert D'Arcy and Jean Ward's marriage can be read beyond the transcript",
+      "when": "22 Sep 2026",
+      "outcome": "blocked",
+      "got": "**No image on this record.** The record set's own description promises «a transcript and image of the original register entry», and the entry for 21 June 1779 offers a transcript only — no image control on the page. So the parishes of both parties, banns or licence, the witnesses and the signatures are **not** reachable from here. That needs the register at **Portsmouth History Centre**, which holds the Church of England parishes of the Portsmouth, Gosport, Fareham and Havant deaneries.",
+      "href": "/portsea"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

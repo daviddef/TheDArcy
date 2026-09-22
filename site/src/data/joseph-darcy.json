@@ -336,6 +336,47 @@
       "means": "Three things fall into place. THE AGE: 36 in 1824 gives a birth about 1788, which makes her twenty-nine at the Bath marriage of November 1817. THE RESIDENCE: “OF BATH” — the town she married in, seven years later. AND THE DATE: she died in 1824, and Joseph married Katherine Lucy Eliza Hyde in November 1830, so the six-year gap between his two families is now measured rather than assumed.",
       "careful": "One inference, and it is only that. Her son RICHARD, the third son, was 33 when he died in May 1857, which puts his birth about 1824 — the year his mother died at thirty-six. A death in childbed would explain both, and nothing here says so. WHY she is buried at Bourn in Cambridgeshire, a hundred and fifty miles from Bath and further still from Lymington, is not explained either.",
       "chip": "documented"
+    },
+    "baptisms": {
+      "found": "22 September 2026",
+      "head": "Both baptisms found, the first son named at last, and the mother confirmed from a register",
+      "lede": "The notices gave a third son and a second. **The first was never named anywhere, and he is now.** Two baptisms at Westminster, to Joseph D'Arcy and Katharine Georgiana, complete the order the 1857 notice implied and close a gap this page has carried since it was written.",
+      "cols": [
+        "Baptised",
+        "Child",
+        "Father",
+        "Mother",
+        "Place"
+      ],
+      "rows": [
+        [
+          "**31 August 1818**",
+          "**GEORGE ABBAS KOOLY D'ARCY**",
+          "Joseph D'Arcy",
+          "**Katharine Georgiana**",
+          "Westminster"
+        ],
+        [
+          "**16 October 1820**",
+          "**ROBERT WEST D'ARCY**",
+          "Joseph D'Arcy",
+          "**Catherine Georgiana**",
+          "Westminster"
+        ]
+      ],
+      "chip": "documented",
+      "orderHead": "Three sons, in order, and the notice was counting correctly",
+      "order": "Joseph married at Bath in **November 1817**. **George** was baptised nine months later, in August 1818. **Robert** followed in October 1820. **Richard** was 33 when he died in May 1857, which puts his birth about 1824 — and the Saint James's Chronicle called him «THIRD SON of the late Lieut. Col. D'Arcy and Lady Catherine». First, second, third, with no room left over. The phrase that told this archive two sons existed has now been checked against the register that names them.",
+      "chipOrder": "documented",
+      "persiaHead": "And the eldest is named for the prince his father served",
+      "persia": "**ABBAS KOOLY is Abbas Qoli, and the Prince is Abbas Mirza.** This page already documents Joseph's **five years in Persia in the service of Prince Abbas Mirza**, and dates the service to before the middle of 1818 from the Crown's own grant of permission in the gazette.\n\n**The son was baptised on 31 August 1818.** A man came home from Persia and, within weeks, christened his first-born after the prince he had served. Nothing about that is inference: the service is documented from the gazette, the baptism is documented from the register, and the name is in both. **It is also the strongest evidence yet that this Joseph is the Joseph** — there is no second Joseph D'Arcy in England naming a child after a Qajar prince.",
+      "chipPersia": "documented",
+      "westHead": "And the second son carries his mother's surname",
+      "west": "The family tree has always given Joseph's first wife as **CATHERINE GEORGIANA WEST, married at Bath in November 1817**, and this archive has said in the paragraph above that **WEST is the family name of the Earls De La Warr**. Both halves of that were a tree assertion and a remark.\n\n**The registers now carry the forenames independently** — Katharine Georgiana in 1818, Catherine Georgiana in 1820, one woman under two ordinary spellings — and the second son is christened **ROBERT WEST D'ARCY**, his mother's maiden surname standing as his middle name in the same way Paul **Cole** Atkinson carries his grandmother's on [/atkinson](/atkinson/).\n\n**Which Earl De La Warr is still not asserted here**, for the reason this page already gives: that is a fact about the peerage, in a reference book this archive has not opened.",
+      "chipWest": "inferred",
+      "afterHead": "Where the two of them went",
+      "after": "**GEORGE ABBAS KOOLY D'ARCY** followed his father into the army — he is in military records for **1840 and 1841** — and died in **Devon in 1885**, as «George Abbas-Kooli D'Arcy», sixty-seven years after the christening. **ROBERT WEST D'ARCY** is the Captain Robert of the notice above: late of the Honourable East India Company's Army, dead at Bangor on 14 June 1862, and the newspaper index gives his birth as 1821 against the register's 1820. Neither man's later life has been read here beyond the index entries, and both are now findable.",
+      "chipAfter": "inferred"
     }
   },
   "rmc": {
