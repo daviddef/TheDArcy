@@ -3,6 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Note from "../../components/Note.astro";
 import Scroll from "../../components/Scroll.astro";
 import { u } from "../../lib/url.js";
+import { nameIfPublishable } from "../../lib/people.js";
 import { people, byId } from "../../lib/people.js";
 import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
@@ -34,7 +35,7 @@ for (const s of p.spouses || []) {
 /* Spouses as chart nodes. A spouse who is alive is absent from the build
    entirely, so there is nothing to draw and nothing to say. */
 const wed = (p.spouses || [])
-  .filter((s) => s.name && !s.living)
+  .filter((s) => nameIfPublishable(s))
   .map((s) => ({ ...(link(s.id) || { name: s.name, slug: "", life: "" }), married: s.married, marriedPlace: s.marriedPlace }))
   .filter((o) => o.slug);
 
@@ -217,7 +218,7 @@ const _placeRaw = String(val("bornPlace", p.bornPlace) || "");
    the way a date is — "Of about Limerick City" is not English. */
 const _vague = /^\s*\(about\)/i.test(_placeRaw);
 const _place = tidy(_placeRaw.replace(/^\s*\(about\)\s*/i, ""));
-const _spouse = (p.spouses || []).find((s) => s.name && !s.living);
+const _spouse = (p.spouses || []).find((s) => nameIfPublishable(s));
 const dek =
   tidy(val("occupation", p.occupation)) ||
   (_place ? `${_vague ? "Probably of" : "Of"} ${_place}.` : "") ||
@@ -320,10 +321,10 @@ const anyDamaged = notes.some((n) => n.damaged);
             ))}</p>
           </>
         )}
-        {(p.spouses || []).filter((s) => s.name && !s.living).length > 0 && (
+        {(p.spouses || []).filter((s) => nameIfPublishable(s)).length > 0 && (
           <>
             <h3 class="lab" style="margin-top:1rem">Married</h3>
-            {p.spouses.filter((s) => s.name && !s.living).map((s) => {
+            {p.spouses.filter((s) => nameIfPublishable(s)).map((s) => {
               const o = link(s.id);
               return (
                 <p>
@@ -355,7 +356,7 @@ const anyDamaged = notes.some((n) => n.damaged);
           </>
         )}
         {parents.length === 0 && kids.length === 0 && sibs.length === 0 &&
-          (p.spouses || []).filter((s) => s.name && !s.living).length === 0 && (
+          (p.spouses || []).filter((s) => nameIfPublishable(s)).length === 0 && (
           <p class="small">No living connection is published for this person — either the tree
           records none, or everyone they connect to is alive and withheld from this build.
           <a href={u("/method/")}> The rule →</a></p>

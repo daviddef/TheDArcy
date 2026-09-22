@@ -1,9 +1,59 @@
 import ancestors from "../data/ancestors.json";
 import families from "../data/families.json";
+import living from "../data/living.json";
 
 export const kebab = (s) =>
   String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+
+/* THE LIVING RULE, AS A VALUE RATHER THAN AS SEVEN COPIES OF A FILTER.
+ *
+ * `build()` below has enforced it since this file was written — a living
+ * person never enters `people` — but pages that read families.json DIRECTLY
+ * bypass it, and every one of them wrote the rule out again for itself:
+ *
+ *     const shown = f.members.filter((m) => !m.living);
+ *
+ * Seven pages, seven copies, and on 22 September an eighth page was written
+ * that did not inherit any of them. It published FORTY-FOUR living people —
+ * caught by the gate, removed within the hour, and a gate is a net rather
+ * than a guard. A rule that exists only as a line of presentation code in
+ * one template is a rule the next template cannot know about.
+ *
+ * So it is a function, and it names the policy it is applying. living.json
+ * already declares `policy`, and the archive's is `named-bare`: nobody is
+ * published as a tree record, and the six named on purpose are named as
+ * sources and provenance elsewhere, never from here.
+ *
+ * ALSO APPLIES ONE LEVEL OUT. The eighth page's second fault was subtler
+ * than its first: seven living SPOUSES named on dead people's rows. The row
+ * itself was legitimate, and the leak was in who else it mentioned. So
+ * `nameIfPublishable` exists for that case — it returns a name or null, and
+ * a caller that forgets to check gets nothing rather than a living person.
+ */
+export const livingPolicy = living.policy || "named-bare";
+
+/** Every member of a family the archive may draw as a person. */
+export const publishable = (members) =>
+  (members || []).filter((m) => m && !m.living);
+
+/** A name to print for somebody who may be living — or null, never a name. */
+export const nameIfPublishable = (person) =>
+  person && !person.living ? person.name || null : null;
+
+/** How many are withheld. Counting is not publishing and needs its own door,
+ *  or a page that only wants a number is pushed into a publishing helper. */
+export const countLiving = (rows) => (rows || []).filter((r) => r && r.living).length;
+
+/** The six named on purpose, and nobody else. A page that shows living people
+ *  BY NAME — /bloodline is the only one — asks here rather than deciding for
+ *  itself, so the list and the reasons stay in living.json where the owner
+ *  confirmed them. */
+const NAMED = new Set((living.named || []).map((n) => n.phrase));
+export const isNamedOnPurpose = (name) => NAMED.has(name);
+export const publishableOrNamed = (rows) =>
+  (rows || []).filter((r) => r && (!r.living || NAMED.has(r.name)));
 
 /* One person = one GEDCOM record. The tree is the authority on identity here;
    this archive's job is to say how well each record is evidenced, not to merge

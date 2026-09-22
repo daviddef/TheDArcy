@@ -2,10 +2,11 @@
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
+import { publishable } from "../lib/people.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
 const f = families.find((x) => x.surname === "Murdoch");
-const shown = f.members.filter((m) => !m.living);
+const shown = publishable(f.members);
 ---
 <Base
   title="The Murdochs"

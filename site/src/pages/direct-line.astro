@@ -5,6 +5,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { publishable, nameIfPublishable, countLiving } from "../lib/people.js";
 import famData from "../data/families.json";
 import { people } from "../lib/people.js";
 
@@ -53,7 +54,7 @@ const LIVING_DOORS = {
 
 const spouseHrefOf = (g) => {
   const sp = (g.spouses || [])[0];
-  const slug = sp && sp.id && !sp.living ? SLUG_BY_ID.get(sp.id) : null;
+  const slug = sp && sp.id && nameIfPublishable(sp) ? SLUG_BY_ID.get(sp.id) : null;
   return slug ? `/people/${slug}/` : null;
 };
 
@@ -67,7 +68,7 @@ const spine = [...line].reverse();
    it. The estate rule is Falco's — name them, nothing more — so they are shown
    by name, with no date, no place and no marriage beside them. */
 const shown = spine;
-const living = spine.filter((g) => g.living).length;
+const living = countLiving(spine);
 
 /* Where each generation stands — THIS ARCHIVE'S JUDGEMENT, not the tree's.
    Moved to src/data/confidence.json on 22 September so the homepage ladder
@@ -222,8 +223,8 @@ const familyDoors = famData.map((f) => ({
             const c = corr(g.id) || {};
             const spouses = c.spouses
               ? c.spouses
-              : (g.spouses || []).filter((s) => s.name)
-                  .map((s) => s.name + (s.married && !s.living ? ` — m. ${fmtDate(s.married)}` : ""));
+              : publishable(g.spouses).filter((s) => s.name)
+                  .map((s) => s.name + (s.married ? ` — m. ${fmtDate(s.married)}` : ""));
             return (
               <tr>
                 <td class="m">{g.gen}</td>

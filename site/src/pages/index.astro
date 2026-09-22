@@ -6,6 +6,7 @@ import Descent from "@daviddef/archive-kit/components/Descent.astro";
 import line from "../data/line.json";
 import CONF from "../data/confidence.json";
 import { chartGroups } from "../lib/marriedin.js";
+import { nameIfPublishable, countLiving } from "../lib/people.js";
 import WaysIn from "@daviddef/archive-kit/components/WaysIn.astro";
 import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import Blk from "../components/Blk.astro";
@@ -26,7 +27,7 @@ import atlas from "../../public/atlas-data.json";
 import living from "../data/living.json";
 
 const published = people.length;
-const redacted = ancestors.filter((a) => a.living).length;
+const redacted = countLiving(ancestors);
 const surnames = families.filter((f) => f.published > 0).length;
 
 const NUMBERS = [
@@ -151,7 +152,7 @@ const LIVING_DOORS = {
 
 const spouseHrefOf = (g) => {
   const sp = (g.spouses || [])[0];
-  const slug = sp && sp.id && !sp.living ? SLUG_BY_ID.get(sp.id) : null;
+  const slug = sp && sp.id && nameIfPublishable(sp) ? SLUG_BY_ID.get(sp.id) : null;
   return slug ? `/people/${slug}/` : null;
 };
 

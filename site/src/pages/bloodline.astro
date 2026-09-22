@@ -8,6 +8,7 @@ import { graph, components, fromAhnentafel } from "@daviddef/archive-kit/lib/blo
 import "@daviddef/archive-kit/styles/bloodline.css";
 import raw from "../data/ancestors.json";
 import living from "../data/living.json";
+import { publishableOrNamed } from "../lib/people.js";
 
 const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isArray(v)) || [];
 /* The living are left out of this chart entirely.
@@ -25,7 +26,7 @@ const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isAr
    confirmed. That list is a consent record, so it is the thing consulted —
    not the living flag, and not a judgement made in this file. */
 const named = new Set((living.named || []).map((e) => e.phrase));
-const rows = all.filter((r) => !r.living || named.has(r.name));
+const rows = publishableOrNamed(all);
 const withheld = all.length - rows.length;
 const people = graph(fromAhnentafel(rows));
 const comps = components(people);

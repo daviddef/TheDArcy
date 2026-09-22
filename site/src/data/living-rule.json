@@ -1,0 +1,34 @@
+{
+  "_note": [
+    "Pages permitted to read a person's `living` flag directly, each with the",
+    "reason. Everything that decides whether to PUBLISH A NAME goes through",
+    "src/lib/people.js instead — publishable(), nameIfPublishable(),",
+    "publishableOrNamed() — because on 22 September a page wrote that rule out",
+    "for itself and published forty-four living people.",
+    "",
+    "COUNTING IS NOT PUBLISHING, and a gate that cannot tell them apart forces a",
+    "page that only wants a number through a publishing helper, which teaches the",
+    "next author that the helpers are ceremony. So the legitimate direct reads are",
+    "declared here rather than forbidden, and an UNDECLARED one refuses the build.",
+    "",
+    "A page in this list is not exempt from the rule. It is exempt from the",
+    "HELPER, having stated why it does not need it."
+  ],
+  "allow": [
+    {
+      "page": "site/src/pages/tree.astro",
+      "use": "conf: (r) => (r.living ? \"living\" : …)",
+      "why": "A CONFIDENCE LABEL, not a name. The chart draws the word «living» in place of a generation it will not name, which is the rule being obeyed rather than bypassed — the page never had the name to publish."
+    },
+    {
+      "page": "site/src/pages/index.astro",
+      "use": "living: !!g.living",
+      "why": "PASSES THE FLAG ONWARD to the kit's Descent row, which suppresses dates, places, notes and children itself. Replacing this with a helper would strip the flag and leave the component unable to do its own suppression — the one case where reading `living` directly is what keeps somebody hidden."
+    },
+    {
+      "page": "site/src/pages/families/[slug].astro",
+      "use": "f.members.filter((m) => !m.living)",
+      "why": "NOT THIS ARCHIVE'S FILE. Written on 22 September by the estate's harmonisation session, which owns it; correct behaviour, hand-rolled. Its author has been told that publishable() exists and the decision to adopt it is theirs. Declared rather than refused, because failing a neighbour's build to force a refactor of their own file is a worse neighbour than a duplicated filter."
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Families from "@daviddef/archive-kit/components/Families.astro";
 import { u } from "../lib/url.js";
+import { publishable } from "../lib/people.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
 
@@ -22,7 +23,7 @@ const groups = [{
   rows: fams.map((f) => {
     const places = [...new Set(f.members.filter((m) => m.bornPlace)
       .map((m) => m.bornPlace.split(",").slice(-2).join(",").trim()))].slice(0, 4);
-    const shown = f.members.filter((m) => !m.living).slice(0, 12);
+    const shown = publishable(f.members).slice(0, 12);
     return {
       label: f.surname,
       gloss: f.blurb,

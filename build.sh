@@ -146,6 +146,15 @@ python3 tools/selftest.py
 # records that the LOOKUP succeeded — so Berkeley spent weeks on the geocode
 # for the word ENGLAND, with six people on it, stamped exact. atlas_pins.mark()
 # re-stamps those `parent`; this refuses the build if one slips back.
+# The living rule, as a value rather than as a filter copied into each page.
+# On 22 September a page written in this repository rendered every member of
+# families.json and published forty-four living people. It was not careless:
+# the rule existed only as a line of presentation code, written out again in
+# every page that needed it, and the new page inherited none of them. This
+# refuses a page that goes back to deciding for itself.
+echo "── living rule"
+python3 tools/check_living_rule.py
+
 echo "── atlas check"
 python3 tools/check_atlas.py
 
