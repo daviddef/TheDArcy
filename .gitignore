@@ -13,3 +13,7 @@ site/.astro/
 site/public/atlas-data.json
 sources/*.ged
 sources/inquests/*.pdf
+
+# A private build directory, so a check never reads a dist another session is
+# halfway through writing.
+site/dist-verify/

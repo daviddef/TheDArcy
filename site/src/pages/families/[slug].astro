@@ -38,8 +38,16 @@ const KIN_BY_ID = new Map();
 for (const a of ancestorRows) KIN_BY_ID.set(a.id, a);
 for (const f of famData) for (const m of (f.members || [])) if (!KIN_BY_ID.has(m.id)) KIN_BY_ID.set(m.id, m);
 
-const nameCards = (xs) => (xs || []).map((x) =>
-  typeof x === "string" ? { name: x } : { name: x.name, dates: x.life || "" });
+/* A card with no name is not a card. The export carries sibling and spouse
+   records that hold a marriage, an id or a list of children and NO NAME —
+   the tree knows the relationship and not the person. Dropping the empty
+   ones here is why `String(x)` is nowhere below: the moment a fallback
+   coerces a record to a string it renders «[object Object]», which is
+   exactly what two of these thirteen pages were doing. */
+const named = (x) => (typeof x === "string" ? x : (x && x.name) || "");
+const nameCards = (xs) => (xs || [])
+  .filter((x) => named(x))
+  .map((x) => (typeof x === "string" ? { name: x } : { name: x.name, dates: x.life || "" }));
 
 const yr = (x) => (String(x || "").match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1];
 
@@ -62,7 +70,15 @@ const rows = (fam.members || [])
        Patterson. Under this archive's «absent» policy a living person does
        not appear at all, not even as somebody else's marriage. */
     const spRaw = (p.spouses || [])[0] || null;
-    const sp = spRaw && !spRaw.living ? spRaw : null;
+    /* AND A MARRIAGE WITHOUT A NAME IS STILL A MARRIAGE. Walter Sneyd,
+       Ralph Sneyd and Francis Murdoch each have a spouse record with an id,
+       a `children` list and an empty `name`: the tree holds the marriage and
+       has never held the person. Those three rows rendered «[object
+       Object]», because the row wrote `sp.name || sp` and the fallback
+       reached the record itself. The marriage is kept and the name is not
+       invented — `spouse` stays empty and the row says why. */
+    const sp = spRaw && !spRaw.living && named(spRaw) ? spRaw : null;
+    const unnamedMarriage = !!(spRaw && !spRaw.living && !named(spRaw));
     const herRec = sp && sp.id ? KIN_BY_ID.get(sp.id) : null;
     const slug = SLUG_BY_ID.get(p.id);
     const herSlug = sp && sp.id ? SLUG_BY_ID.get(sp.id) : null;
@@ -74,16 +90,19 @@ const rows = (fam.members || [])
       died: p.died || "",
       trade: p.occupation || "",
       place: p.bornPlace || p.diedPlace || "",
-      married: (sp && sp.married) || "",
-      spouse: sp ? (sp.name || sp) : "",
+      married: (sp && sp.married) || (unnamedMarriage && spRaw.married) || "",
+      spouse: sp ? sp.name : "",
       spouseHref: sp && herSlug ? `/people/${herSlug}/` : null,
-      spouseAlt: sp ? (herRec ? "" : "no record of her own family here")
-        : (spRaw ? "married — living, and not named here" : "no marriage recorded for them here"),
+      spouseAlt: sp
+        ? (herRec ? "" : "no record of her own family here")
+        : unnamedMarriage
+          ? "the tree records the marriage and has never held her name"
+          : (spRaw ? "married — living, and not named here" : "no marriage recorded for them here"),
       children: [],
       hisSiblings: nameCards(p.siblings),
       herSiblings: herRec ? nameCards(herRec.siblings) : [],
       hisLabel: String(p.name).split(" ")[0] + "’s",
-      herLabel: sp ? String(sp.name || sp).split(" ")[0] + "’s" : "Theirs",
+      herLabel: sp ? sp.name.split(" ")[0] + "’s" : "Theirs",
       confidence: (p.sources || []).length ? "a record has been read" : "",
     };
   });
