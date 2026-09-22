@@ -77,11 +77,21 @@ function fmtDate(d) {
 }
 const place = (p) => PLACE_FIX[p] || p || "—";
 const corr = (id) => CORRECTIONS[id];
+/* THE DEK SAID "EIGHT OF THEM ARE DOCUMENTED" AND THE DRAWING MARKED SIX.
+   Counted from confidence.json now, so the sentence and the spine below it
+   cannot drift apart again. */
+const documented = shown.filter((g) => chip(g.id) === "documented").length;
+/* And spelled, because the sentence it sits in is prose and the number it
+   replaced was written "Eight". A derived count is no excuse for "6 of
+   them this archive will defend" in the middle of a paragraph. */
+const WORD = ["no", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight",
+              "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"];
+const documentedWord = WORD[documented] || String(documented);
 ---
 <Base
   title="The Spine"
   eyebrow="Generation by generation"
-  dek="Fifteen generations are asserted, from a Brisbane insurance manager to a Yorkshire castle. Eight of them are documented. The break is at one man, and it is marked here rather than smoothed over.">
+  dek={`Fifteen generations are asserted, from a Brisbane insurance manager to a Yorkshire castle. ${documentedWord} of them this archive will defend. The break is at one man, and it is marked here rather than smoothed over.`}>
 
   <Blk label="The spine changed in three places on 13 September 2026" title="What a fortnight of registers did to it">
     <Scroll>
@@ -183,9 +193,30 @@ const corr = (id) => CORRECTIONS[id];
           gen: g.gen ?? g.ahn,
           name: g.name,
           href: g.slug ? "/people/" + g.slug + "/" : "",
+          /* THE ROW WAS DROPPING THE WIVES, THE DEATHPLACES, THE TRADES,
+             THE BROTHERS AND SISTERS AND THE SOURCES — all of which
+             line.json already holds for most of these fifteen. A line
+             whose own archive keeps a page called "The women" was drawing
+             fifteen men on its spine and naming none of them.
+
+             `place()` returns an em dash for an empty value, which is
+             right in a table cell and wrong in a row that omits what it
+             does not have, so diedPlace is guarded. Siblings here are
+             bare name strings with no identifier, so they draw as plain
+             chips: this archive has no slug to link them by, and one
+             guessed from a name would be a guess. */
+          spouse: ((g.spouses || [])[0] || {}).name || (g.spouses || [])[0] || "",
           born: c.born || g.born || "",
           bornPlace: c.bornPlace || place(g.bornPlace) || "",
           died: g.died || "",
+          diedPlace: g.diedPlace ? place(g.diedPlace) : "",
+          trade: g.occupation || "",
+          household: (g.siblings || []).length
+            ? { label: "Brothers and sisters",
+                members: (g.siblings || []).map((x) =>
+                  typeof x === "string" ? { name: x } : { name: x.name, dates: x.dates || "" }) }
+            : null,
+          sources: (g.sources || []).map((x) => ({ label: String(x).split(" \u2014 ")[0] })),
           confidence: chip(g.id),
           /* A solid node is a generation this archive will defend; a dashed one
              it is repeating from the family tree and has not proved. */
