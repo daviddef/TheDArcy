@@ -338,6 +338,45 @@
 "line": true,
 "spine": true
 },
+"george-abbas-kooli-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Westminster, 31 Aug 1818"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"joseph-d-arcy": {
+"rel": {
+"george-abbas-kooli-d-arcy": [
+"baptism, Westminster, 31 Aug 1818"
+],
+"robert-west-d-arcy": [
+"baptism, Westminster, 16 Oct 1820"
+],
+"robert-d-arcy": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+],
+"jean-ward": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"robert-west-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Westminster, 16 Oct 1820"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
 "samuel-sneyd": {
 "rel": {
 "william-sneyd-1746": [
@@ -431,19 +470,6 @@
 },
 "graft": null,
 "line": true,
-"spine": false
-},
-"joseph-d-arcy": {
-"rel": {
-"robert-d-arcy": [
-"baptism, Portsea St Mary, 19 Mar 1780"
-],
-"jean-ward": [
-"baptism, Portsea St Mary, 19 Mar 1780"
-]
-},
-"graft": null,
-"line": false,
 "spine": false
 },
 "robert-d-arcy": {
@@ -1468,12 +1494,6 @@
 "line": true,
 "spine": false
 },
-"george-abbas-kooli-d-arcy": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
 "james-sneyd-1818": {
 "rel": {},
 "graft": null,
@@ -1484,12 +1504,6 @@
 "rel": {},
 "graft": null,
 "line": true,
-"spine": false
-},
-"robert-west-d-arcy": {
-"rel": {},
-"graft": null,
-"line": false,
 "spine": false
 },
 "francis-murdoch-1824": {

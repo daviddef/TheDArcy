@@ -5,9 +5,38 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
     {
+      "when": "23 September 2026",
+      "title": "Read the site against its own research, and found three places it had not kept up",
+      "found": [
+        [
+          "Filed",
+          "/people — the two Westminster baptisms reached the register a day after the page that announced them"
+        ],
+        [
+          "Corrected",
+          "/chew-magna and /bristol-chapels — both subtitles still called Hannah's birthplace the open question it no longer is"
+        ],
+        [
+          "Added",
+          "/joseph-darcy — why the boys' mother is named in two registers and still cannot be drawn on a chart"
+        ]
+      ],
+      "did": [
+        "CHECKED EVERY RECENT FINDING AGAINST THE REGISTER, not against the page that announced it. The two Westminster baptisms of 22 September were on /joseph-darcy in full and were not record lines, so /people/george-abbas-kooli-d-arcy said «No record has been found for them» and both boys' charts drew their father as tree, untested. Three record lines added and two recorded relationships drawn.",
+        "THEIR MOTHER STILL CANNOT BE DRAWN. Catherine Georgiana West is named in both registers and now carries a record line, but the family tree holds her as a name on a marriage rather than as a person — one of 77 name-only partners in 130 marriages — so there is no node to draw an edge to. Said on the page rather than left as a silent absence.",
+        "TWO PAGE SUBTITLES WERE STILL ASSERTING A CLOSED QUESTION. /chew-magna and /bristol-chapels both open with «This page is wrong, and it is kept here for that reason» and both still carried a dek reading «the one open question in this archive's English line is where Hannah Saniger was born». Hannah's baptism was found at Berkeley on 21 September. A dek is the meta description and the first line a reader sees, so the retraction sat underneath a subtitle that contradicted it.",
+        "THE NAV LABEL FOR CHEW MAGNA said «a Dead Lead». The lead for Hannah is dead; the page now also carries Simon Saniger and his two sons, whom this archive had published as not existing. Relabelled «Wrong, and a Family».",
+        "IMAGES ARE UNCHANGED AND THAT IS CORRECT. The gallery holds two plates, both from 9 September. Nothing found since has produced an image this archive may publish: the 1779 Hampshire marriage offers a transcript with no image control, the 1828 Bristol register is on Ancestry, and Bristol Archives' reply attached a logo and a how-to document. The gallery's count derives from its own plate list, so it cannot go stale."
+      ]
+    },
+    {
       "when": "22 September 2026",
       "title": "An archivist read the register, and the thing this archive was waiting for was never written in it",
       "found": [
+        [
+          "Added",
+          "/joseph-darcy — both missing sons named from Westminster registers, and their mother's forenames confirmed"
+        ],
         [
           "Answered",
           "/errands — 4, 5 and 8 all closed by one reply from Bristol Archives, free, nine days after the enquiry"

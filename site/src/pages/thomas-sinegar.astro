@@ -50,6 +50,12 @@ import d from "../data/thomas-sinegar.json";
       <a href={u("/corrections")}>Own error 44 →</a>
     </Note>
 
+    <h3 style="margin-top:2rem">{d.bristol.bannsHead}</h3>
+    <div set:html={mdp(d.bristol.banns)} />
+    <Note>
+      <span class="chip inf">{d.bristol.chipBanns}</span>
+    </Note>
+
     <h3 style="margin-top:2rem">{d.bristol.spellHead}</h3>
     <div set:html={mdp(d.bristol.spell)} />
     <Note>

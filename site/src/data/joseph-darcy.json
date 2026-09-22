@@ -377,7 +377,10 @@
       "afterHead": "Where the two of them went",
       "after": "**GEORGE ABBAS KOOLY D'ARCY** followed his father into the army — he is in military records for **1840 and 1841** — and died in **Devon in 1885**, as «George Abbas-Kooli D'Arcy», sixty-seven years after the christening. **ROBERT WEST D'ARCY** is the Captain Robert of the notice above: late of the Honourable East India Company's Army, dead at Bangor on 14 June 1862, and the newspaper index gives his birth as 1821 against the register's 1820. Neither man's later life has been read here beyond the index entries, and both are now findable.",
       "chipAfter": "inferred"
-    }
+    },
+    "filedHead": "And a day later, the two boys still had no record against their names",
+    "filed": "The baptisms were written up on this page the day they were found and **did not reach the register for a day**. Until they did, [George Abbas Kooli D'Arcy](/people/george-abbas-kooli-d-arcy/) carried the line «No record has been found for them» and both boys' pedigree charts drew the link to their father as **tree, untested** — while this page said a register named him. **That is a filing failure, not a research failure**, and it is the same one [crossread.py](/method/) was written for in September, when Constantine D'Arcy's christening sat on one page for weeks while three others called him unplaced.\n\n**Their mother still cannot be drawn.** Both registers name her, and she now has a record line of her own — but the family tree holds **Catherine Georgiana West as a name attached to a marriage, not as a person**, so there is no node on any chart to draw an edge to. She is one of **77 name-only partners in 130 marriages** here. A woman can be named in two parish registers and still have no page in this archive, and the reason is the shape of the tree rather than the state of the evidence.",
+    "chipFiled": "documented"
   },
   "rmc": {
     "head": "The service record, at last",

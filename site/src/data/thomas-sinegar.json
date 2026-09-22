@@ -104,6 +104,9 @@
     "chipSpell": "disputed",
     "nextHead": "And one new record, offered unasked",
     "next": "«There is also a marriage certificate from 1852 for what looks like Thomas's son, James, and this record contains more information, such as Thomas's profession which is listed as **Labourer**.»\n\n**This archive does not hold that marriage.** It has James as the eleven-year-old of 1841 and as the father of Lydia Sinegar baptised in 1866, and nothing between. A marriage of 1852 is **after** civil registration, so unlike his father's it **does** name a father — and Holly has already read Thomas's occupation off it, which matches the labourer of the 1851 census taken the year before.",
-    "chipNext": "inferred"
+    "chipNext": "inferred",
+    "bannsHead": "And «by banns» is not a formality — on this archive's own identification it is why no father was written",
+    "banns": "This archive identifies the groom of 1828 with **Thomas Saniger, baptised at Berkeley on 3 July 1808**. If that is right, he was **twenty** in August 1828 — a minor, by a year and a month.\n\n**A minor marrying by licence needed a parent's or guardian's consent, and the consent was written down.** Under Hardwicke's Act a marriage **by banns** did not: it stood unless a parent publicly dissented while the banns were being read, and a dissent that never came leaves no ink. So the single route by which an entry of 1828 could have named this man's father existed, and **the choice of banns closed it**.\n\nThat is an inference resting on an identification this archive has not proved, and it cuts both ways: if the groom was **not** the Berkeley boy, he may simply have been of age. It is set down because it is the only reading under which the missing father is a fact about **this** marriage rather than about every marriage of its century.",
+    "chipBanns": "inferred"
   }
 }

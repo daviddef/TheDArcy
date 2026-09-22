@@ -304,6 +304,26 @@
       "verdict": "the state, written twice, once without its comma",
       "why": "Same point. **«Queensland Australia» has no comma**, so its head is the whole string — the third row on this map to escape every duplicate-head count that way, after «Toowoomba Q'ld  Australia» and «(about)   Limerick City». This is the state itself, not a place in it; the two street rows that share its pin are correctly marked `parent` and stay separate.",
       "chip": "documented"
+    },
+    {
+      "head": "Bath",
+      "km": 0.0,
+      "keep": "Bath, Somerset, England",
+      "fold": [
+        "Bath, Somersetshire, England, Kingdom of Great Britain"
+      ],
+      "verdict": "one city, two centuries of naming it",
+      "why": "SOMERSETSHIRE IS SOMERSET AND THE KINGDOM OF GREAT BRITAIN IS THE DATE, NOT THE PLACE. The 1721 form carries the county's older name and the state that governed it, which is how a MyHeritage export writes a Georgian place. **No gazetteer answers it**, so the row sat unplaced while «Bath, Somerset, England» sat on the map beside it. Folded rather than looked up, because the two strings cannot be different cities: there is one Bath in Somerset. It is also where Joseph D'Arcy married Catherine Georgiana West in November 1817."
+    },
+    {
+      "head": "Queensland",
+      "km": 0.0,
+      "keep": "Queensland, Australia",
+      "fold": [
+        "Queenland, Australia"
+      ],
+      "verdict": "a typing slip in the tree",
+      "why": "A MISSING S. The string is not a place and never was; it is «Queensland» with one letter dropped, on a single person recorded in 1899. Folded rather than corrected in the tree, because the tree is an export this archive does not edit — and a fold is visible on this page where a silent correction would not be."
     }
   ],
   "pinsNote": [

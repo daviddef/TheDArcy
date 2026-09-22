@@ -1,10 +1,10 @@
 {
-"entries": 854,
+"entries": 857,
 "distinct": 595,
-"records": 381,
+"records": 384,
 "tree": 473,
 "grafted": 98,
-"linked": 845,
+"linked": 848,
 "surnames": 203,
 "groups": [
 {
@@ -1191,7 +1191,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 151,
+"n": 153,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -1387,6 +1387,13 @@
 "says": "baptised Chatham, 2 July 1811 · father George · mother MARY — the first wife",
 "source": "record · FreeREG, Chatham St Mary the Virgin",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "baptised WESTMINSTER, 31 AUGUST 1818, entered as GEORGE ABBAS KOOLY D'ARCY · father JOSEPH D'ARCY · mother KATHARINE GEORGIANA · ABBAS KOOLY is Abbas Qoli, for Prince Abbas Mirza, whom his father had served five years in Persia · the eldest son, never named in either death notice",
+"source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
+"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
 {
@@ -1771,6 +1778,13 @@
 "name": "Robert D'Arcy",
 "says": "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
 "source": "record · London Evening Standard and Morning Herald, 25 June 1862",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "baptised WESTMINSTER, 16 OCTOBER 1820 · father JOSEPH D'ARCY · mother CATHERINE GEORGIANA · WEST is his mother's maiden surname, standing as his middle name",
+"source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
 "link": "https://www.findmypast.co.uk/",
 "kind": "record"
 },
@@ -4850,6 +4864,33 @@
 ]
 },
 {
+"surname": "WEST",
+"n": 3,
+"rows": [
+{
+"name": "Catherine Georgiana West",
+"says": "burial · 22 March 1824, BOURN, Cambridgeshire · AGED 36 · “OF BATH” · the Lady Catherine of her sons' death notices, and Joseph D'Arcy's first wife",
+"source": "record · Cambridgeshire Burials (Cambridgeshire and Huntingdonshire FHS)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Catherine Georgiana West",
+"says": "named as the mother in both Westminster baptisms · KATHARINE GEORGIANA in 1818, CATHERINE GEORGIANA in 1820 — one woman under two ordinary spellings · the first record to carry her forenames, which the tree had asserted and nothing had tested",
+"source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Lady Catherine Georgiana West",
+"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
+"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "WRIGHT",
 "n": 3,
 "rows": [
@@ -5339,26 +5380,6 @@
 "says": "aged 2 · born in Gloucestershire · in the household, relationship not recorded — the 1841 census records none",
 "source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
 "link": "https://www.freecen.org.uk/",
-"kind": "record"
-}
-]
-},
-{
-"surname": "WEST",
-"n": 2,
-"rows": [
-{
-"name": "Catherine Georgiana West",
-"says": "burial · 22 March 1824, BOURN, Cambridgeshire · AGED 36 · “OF BATH” · the Lady Catherine of her sons' death notices, and Joseph D'Arcy's first wife",
-"source": "record · Cambridgeshire Burials (Cambridgeshire and Huntingdonshire FHS)",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Lady Catherine Georgiana West",
-"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
-"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
-"link": "https://www.findmypast.co.uk/",
 "kind": "record"
 }
 ]

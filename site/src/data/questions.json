@@ -1,300 +1,304 @@
 {
- "title": "Open Questions",
- "dek": "What this archive does not know, ranked by how much finding out would change. Generated from this file rather than written by hand, so it cannot quietly fall a week behind the work.",
- "lead": "Every question here names **what would settle it** and **which register holds the attempts**, because a question without either is a wish. A null result is still a result and it stops the next reader repeating the search — the attempts live in [what has been read](/searched/), the things only a person can do in [the errands](/errands/), and what this archive got wrong in [the corrections](/corrections/).\n\nThis page was 405 lines of hand-written prose until 15 September 2026. It had gone a day stale without anything being able to notice, which is the reason it is now generated.",
- "states": {
-  "open": [
-   "Open",
-   "#B04A16",
-   "live, and something could be done about it"
+  "title": "Open Questions",
+  "dek": "What this archive does not know, ranked by how much finding out would change. Generated from this file rather than written by hand, so it cannot quietly fall a week behind the work.",
+  "lead": "Every question here names **what would settle it** and **which register holds the attempts**, because a question without either is a wish. A null result is still a result and it stops the next reader repeating the search — the attempts live in [what has been read](/searched/), the things only a person can do in [the errands](/errands/), and what this archive got wrong in [the corrections](/corrections/).\n\nThis page was 405 lines of hand-written prose until 15 September 2026. It had gone a day stale without anything being able to notice, which is the reason it is now generated.",
+  "states": {
+    "open": [
+      "Open",
+      "#B04A16",
+      "live, and something could be done about it"
+    ],
+    "blocked": [
+      "Blocked",
+      "#7A5A16",
+      "waiting on a person, a fee, or somebody else's website"
+    ],
+    "answered": [
+      "Answered",
+      "#12703F",
+      "settled, and kept because the answer is the finding"
+    ]
+  },
+  "rows": [
+    {
+      "n": 1,
+      "q": "Who was Robert D'Arcy's father?",
+      "state": "open",
+      "since": "2026-09-09",
+      "rank": "The join that decides the whole pedigree",
+      "settles": "PROB 11/1728/64 — his own will, proved 4 July 1827, digitised and free behind a free TNA sign-in. Seventy-one of the direct line's ancestors and twelve of its generations hang on the join immediately above him, and nothing else in his life names a father. A will names family.",
+      "register": "/errands",
+      "tried": [
+        [
+          "His baptism, c. 1741–1761",
+          "Swept on FindMyPast across all English record sets with variants on. NOT FOUND. His burial is confirmed — St Mary, Chatham, 19 May 1827, aged 76 — which is where the famous «1751» comes from, and it names no father."
+        ],
+        [
+          "Connolly's Roll of Officers of the Corps of Royal Engineers",
+          "Entry 203, «D'Arcy, Robert, C.B.» — the full career and «Died at Chatham, 13 5 1827». Only two D'Arcys in the whole Roll, 1660–1898. IT RECORDS NO PARENTAGE: the Roll does not carry fathers."
+        ],
+        [
+          "The Woolwich cadet registers",
+          "RULED OUT. WO 149 begins in 1790 and is at Sandhurst, so it cannot hold a cadet of the early 1770s. The printed Records of the Royal Military Academy of 1851 and 1892 are institutional histories, not registers, and have been read in full."
+        ],
+        [
+          "The printed Army Lists, 1783 · 1802 · 1803, and the Royal Military Calendar of 1820",
+          "Read 15 September 2026. They give rank, seniority and station year by year — Second Lieutenant in 1783, Captain by 1802, Major in the army by 1803 — AND NOT ONE NAMES A PARENT."
+        ],
+        [
+          "The London Gazette, 1770–1830",
+          "Silent, and structurally so: the Ordnance gazetted no British engineer commission in 1774, 1775 or 1776. All twenty-two Darcy notices of 1770–89 are other men."
+        ],
+        [
+          "Board of Ordnance records — WO 47, WO 54",
+          "STILL THE BEST HOPE, and not reachable from here. Until 1855 the Royal Engineers answered to the Board of Ordnance and kept separate records; a cadet warrant or commission entry of 17 January 1776 would be in the Ordnance minutes. Errand 28 established the series is WO 54/240. A letter to the Royal Engineers Museum at Chatham is drafted and unsent."
+        ],
+        [
+          "WO 46/10, the Board of Ordnance surveyors' list, 1775–77",
+          "A LEAD, and the first of its kind. The catalogue's sample names «CONSTANTINE D'ARCY, appointed 25 March 1775, PROFESSION OF PARENT: LIEUTENANT IN THE 95TH REGIMENT» — not Robert's son, who was born at Barbados in 1786, so a second and earlier man of that name in the same service Robert entered ten months later. The full list is in the document, not the catalogue. If it names Robert with a parent beside him, this question closes."
+        ]
+      ],
+      "note": "He has no entry in the Dictionary of National Biography — the DNB's «D'Arcy, Robert» is the 4th Earl of Holderness, whose will is **not** in the Prerogative Court, searched and empty.",
+      "key": "q/who-was-robert-d-arcy-s-fath-1e45bf"
+    },
+    {
+      "n": 2,
+      "q": "Where and when was Hannah Saniger baptised, and who were her parents? — ANSWERED for three of the four",
+      "state": "answered",
+      "since": "2026-09-13",
+      "rank": "Answered on the day it was asked, and left open for ten days after",
+      "settles": "**HANNAH SANIGOR, baptised BERKELEY, 18 AUGUST 1804, father JNO SANIGOR.** Where, when and the father's name are documented from the register index. **The mother is not on the entry** — the Berkeley baptisms of this family name a father and no mother — so the fourth part of this question is not answered here and cannot be: it needs the 1797 marriage, which is question 3 and blocked.",
+      "register": "/searched",
+      "tried": [
+        [
+          "Where she was born — CLOSED",
+          "BERKELEY, GLOUCESTERSHIRE, stated in the 1851 census at Drivers Fields and matching the tree exactly. That question is answered; this one replaces it."
+        ],
+        [
+          "Her baptism — FOUND, 13 September 2026",
+          "**Spelt SANIGOR**, which is why six weeks of searching missed it twice. She sits in a family of five baptised at Berkeley to JNO SANIGER: Ann 1798, William 1801, Jno 1803, **Hannah 18 August 1804**, Thos 1808 — the last almost certainly the Thomas Sinegar who lived a mile from her in Bristol. All 158 SANIGER baptisms in the set have since been read one by one, so this is coverage rather than a lucky hit."
+        ],
+        [
+          "FreeREG's Berkeley transcript",
+          "Measured at parish level on 15 September 2026 with a SMITH control: 3 exact and 36 uncertain results, EVERY ONE BETWEEN 1653 AND 1677. It is a thirty-year seventeenth-century fragment, so it can test one Saniger generation of six and no more."
+        ],
+        [
+          "Her parents — HALF ANSWERED",
+          "**The father is documented**: JNO SANIGOR on the 1804 entry, and JNO SANIGER on his other four children's. **The mother is not**, and not for want of looking — this register names no mothers. She is still the tree's LYDIA, with the tree's Lydia Jones born 13 March 1770 at Wotton-under-Edge untested because FreeREG does not list the parish. The 1797 marriage would name her; question 3."
+        ]
+      ],
+      "note": "**This question was answered on the day it was opened and stayed open for ten days.** The baptism was found on 13 September, written up on [/hannah-baptism](/hannah-baptism/) the same day, and this page went on calling it «the oldest live question on the site» until 23 September. Found on a read of the archive against itself, not on a new record. The oldest live question is now [question 1](#q1), open since 9 September.\n\nThe deepest line here — six Saniger generations from 1654 to 1805 — still rests on other people's family trees. One generation of the six has a documented candidate and a father the archive never had, **Edward Sainger of Wanswell**.",
+      "key": "q/where-and-when-was-hannah-sa-3597b7"
+    },
+    {
+      "n": 3,
+      "q": "Where did John Saniger and Lydia marry, about 1797?",
+      "state": "blocked",
+      "since": "2026-09-14",
+      "rank": "One marriage, and it names Lydia",
+      "settles": "The Berkeley marriage register, or the Gloucestershire Family History Society's volunteers.",
+      "register": "/errands",
+      "tried": [
+        [
+          "Gloucestershire Archives",
+          "ANSWERED, and they do not do lookups. Andrew Parry, Senior Archives Assistant, 14 September 2026: «I'm afraid we don't offer any kind of research service.» He named the Family History Society instead."
+        ],
+        [
+          "The letter to the Society",
+          "Drafted and sitting in notes/letters/. Mail from David's address is his to send."
+        ]
+      ],
+      "note": "Lydia is named by no record this archive has seen. Her death IS now doubly indexed — Thornbury, September quarter 1851, local register 3 entry 265 and GRO volume 11 page 329 — so a certificate would at least give her age and her widowhood.",
+      "key": "q/where-did-john-saniger-and-l-91411d"
+    },
+    {
+      "n": 4,
+      "q": "How do the medieval Swonhungres connect to the Sanigers of Berkeley?",
+      "state": "open",
+      "since": "2026-09-15",
+      "rank": "Raised by the work of 15 September, and the archive claims no answer",
+      "settles": "The manor court rolls of Awre — Gloucestershire Archives D2156/1–4, D421/M7, D3270/362 and D3270/363 — which run from 1387 to 1881 and record surrenders, admissions and the customary heir of every tenant who died.",
+      "register": "/errands",
+      "tried": [
+        [
+          "The Berkeley deeds",
+          "195 records found on 15 September under the medieval spellings. They carry the family in the Vale from the 1270s to 1428, with filiations, an heirship and a named female ancestor — and Smyth's main line ends in 1401 with a John who died without issue."
+        ],
+        [
+          "The archive's own Sanigers",
+          "Appear at Berkeley from 1601 — John Saniger, yeoman, in D2957/41/18."
+        ],
+        [
+          "Between them",
+          "TWO HUNDRED YEARS OF SILENCE. No descent has been shown and none is claimed. The name and the place are documented as one thing; the people are not joined."
+        ]
+      ],
+      "note": "The nearer and more useful version of this question is smaller: from the eleven men of the 1608 muster to John Saniger who married Lydia about 1797. Nothing found on 15 September touches it.",
+      "key": "q/how-do-the-medieval-swonhung-05ce23"
+    },
+    {
+      "n": 5,
+      "q": "Who were Ann Biddulph's parents?",
+      "state": "answered",
+      "since": "2026-09-15",
+      "rank": "Closed by the first hour of a subscription",
+      "settles": "",
+      "register": "/errands",
+      "tried": [
+        [
+          "Four censuses at Well Street, Hanley",
+          "Give her as «Ann» and nothing else — Ann 41 in 1861, Ann 52 in 1871, Anne 61 in 1881."
+        ],
+        [
+          "The free Staffordshire BMD index",
+          "Named her. The marriage is 1842 at Stoke St Peter, and four Sneyd births carry Biddulph as the mother's maiden name."
+        ],
+        [
+          "The 1851 census, Queen Street, Stoke upon Trent",
+          "**ANSWERED. JOHN BIDDULPH, coal dealer, born Bermondsey, Surrey, about 1798, and JULIA his wife, born Shelton about 1799.** Ann is in their house as «Daughter, Married», a dressmaker of 31, with her own children Mary and James A entered as grandchildren. Two sisters as well: Mary, a paintress, and Eliza, a servant."
+        ]
+      ],
+      "note": "The marriage certificate (errand 55) is still worth having — it would give **both fathers' names and trades**, and confirm John Biddulph from a second source. But the question as asked is answered.",
+      "key": "q/who-were-ann-biddulph-s-pare-3eb1ed"
+    },
+    {
+      "n": 6,
+      "q": "What became of Catherine Sneyd, born Hanley 1845?",
+      "state": "answered",
+      "since": "2026-09-15",
+      "rank": "Closed — she lived four years",
+      "settles": "",
+      "register": "/searched",
+      "tried": [
+        [
+          "The Staffordshire BMD birth index",
+          "HAN/007/057 — Catherine Sneyd, 1845, Hanley, mother's maiden name Biddulph. Three of her four siblings match the Well Street household exactly."
+        ],
+        [
+          "Every census read here",
+          "She appears in none of them. She either did not reach 1851, or was elsewhere on both nights."
+        ],
+        [
+          "The 1851 census, both Sneyd households",
+          "**She is in neither.** Well Street holds Samuel, Elizabeth, James and Elizabeth Ann; Queen Street holds Ann with Mary and James A. Every other child of the marriage is accounted for at one of the two addresses, and Catherine — five or six years old — is at neither. The remaining explanations are a death before 1851, or a child living away from both her parents and both sets of grandparents."
+        ],
+        [
+          "The GRO death index, 1845–1852",
+          "**ANSWERED. Catherine Sneyd, death registered December quarter 1849, Stoke on Trent — GRO volume 17, page 114.** Exactly one Catherine Sneyd death in England and Wales across those eight years. She was four. That is why she is in neither household in March 1851."
+        ]
+      ],
+      "note": "A certificate would give the cause and the informant, and would name her father. It is not needed to answer the question as asked.",
+      "key": "q/what-became-of-catherine-sne-c90b1c"
+    },
+    {
+      "n": 7,
+      "q": "What did the three Sussex sisters leave, and to whom?",
+      "state": "blocked",
+      "since": "2026-09-14",
+      "rank": "Three wills, one reference",
+      "settles": "IR 27/396 — the Estate Duty register at the National Archives, which would name executors and legatees, and so name living relatives at three dates.",
+      "register": "/errands",
+      "tried": [
+        [
+          "The GRO death index",
+          "All three found: Charlotte 1869 Brighton 2b 152, Jane 1875 2b 203, Catherine 1876 2b 164 — and Charlotte re-confirmed in FreeBMD on 15 September as the control for that index."
+        ],
+        [
+          "The 1851 census",
+          "HO107/1646 f.357 p.59 sch.172, 22 Western Cottages, Brighton."
+        ]
+      ],
+      "note": "FreeCEN cannot help: it returns NOUGHT for ARCY in Sussex 1851 while this archive has the sisters in that very census. The piece is not transcribed. That was correction 30.",
+      "key": "q/what-did-the-three-sussex-si-f53588"
+    },
+    {
+      "n": 8,
+      "q": "Three institutions are between houses, and it is not a research problem",
+      "state": "blocked",
+      "since": "2026-09-10",
+      "rank": "Waiting on somebody else's rebuild",
+      "settles": "Time, and their migrations finishing.",
+      "register": "/searched",
+      "tried": [
+        [
+          "The Commonwealth War Graves Commission",
+          "Has refused automated access twice."
+        ],
+        [
+          "The Australian War Memorial",
+          "Mid-migration; its search returns nothing for any query. Its documents were reached by direct URL instead."
+        ],
+        [
+          "NSW State Archives",
+          "Now Museums of History NSW, at a new domain, with the old index addresses dead — which is what stopped the search for George Pitt D'Arcy's 1849 probate."
+        ]
+      ],
+      "note": "",
+      "key": "q/three-institutions-are-betwe-5a43c8"
+    },
+    {
+      "n": 9,
+      "q": "When was Robert D'Arcy first commissioned?",
+      "state": "answered",
+      "since": "2026-09-15",
+      "rank": "Closed, and it had been wrong on six pages",
+      "settles": "",
+      "register": "/corrections",
+      "tried": [
+        [
+          "Three printed Army Lists",
+          "17 JANUARY 1776. The lists of 1778, 1781 and 1783 all carry him in an intact ditto-chain — and the 1783 edition sets his name ROBERT D'ARCEY, with an e, which is why outside catalogues had never returned him."
+        ],
+        [
+          "What was wrong",
+          "Five pages said 1776 and a sixth said 1778, for weeks, and the page that was wrong was the one that sounded most authoritative. Correction 29; agree.py then found six more stale copies."
+        ]
+      ],
+      "note": "",
+      "key": "q/when-was-robert-d-arcy-first-eeb67b"
+    },
+    {
+      "n": 10,
+      "q": "How many spellings of the surname are in the 1608 muster?",
+      "state": "answered",
+      "since": "2026-09-15",
+      "rank": "Closed by a reviewer, in 1902",
+      "settles": "",
+      "register": "/corrections",
+      "tried": [
+        [
+          "Gloucestershire Notes & Queries",
+          "THREE, not four. Reviewing Maclean's 1902 edition — the edition this archive read — the reviewer listed its misreadings: «Thus SAINGER SHOULD READ SANIGER.» So the man living in the hamlet the surname came from is John Saniger of Saniger, his name and his address the same word."
+        ],
+        [
+          "What this does not overturn",
+          "SAINGER is a real form of the name, 44 times in the Berkeley registers. It is simply not a 1608 one. Correction 31."
+        ]
+      ],
+      "note": "",
+      "key": "q/how-many-spellings-of-the-su-0228f4"
+    },
+    {
+      "n": 11,
+      "q": "Is Smyth's pedigree of the Swonhungers trustworthy?",
+      "state": "answered",
+      "since": "2026-09-15",
+      "rank": "Closed, from the deeds he was reading",
+      "settles": "",
+      "register": "/searched",
+      "tried": [
+        [
+          "The Berkeley Castle deeds, in the Discovery catalogue",
+          "Yes, and better. BCM/A/1/56/29 of 1354 is the partition Smyth describes; BCM/A/1/24/184 of 1356 is the deed he transcribed, and the catalogue says so — «[Transcript: Smyth, iii. 380-1.]»; MS 3549/4 at Birmingham names William's wife Isabella, as Smyth does."
+        ],
+        [
+          "And it adds a generation",
+          "The 1356 inspeximus calls John Swonhungre «his father, son and heir of John Swonhungre» — so there is a John above the John the printed pedigree begins with."
+        ]
+      ],
+      "note": "",
+      "key": "q/is-smyth-s-pedigree-of-the-s-95c9da"
+    }
   ],
-  "blocked": [
-   "Blocked",
-   "#7A5A16",
-   "waiting on a person, a fee, or somebody else's website"
-  ],
-  "answered": [
-   "Answered",
-   "#12703F",
-   "settled, and kept because the answer is the finding"
-  ]
- },
- "rows": [
-  {
-   "n": 1,
-   "q": "Who was Robert D'Arcy's father?",
-   "state": "open",
-   "since": "2026-09-09",
-   "rank": "The join that decides the whole pedigree",
-   "settles": "PROB 11/1728/64 — his own will, proved 4 July 1827, digitised and free behind a free TNA sign-in. Seventy-one of the direct line's ancestors and twelve of its generations hang on the join immediately above him, and nothing else in his life names a father. A will names family.",
-   "register": "/errands",
-   "tried": [
-    [
-     "His baptism, c. 1741–1761",
-     "Swept on FindMyPast across all English record sets with variants on. NOT FOUND. His burial is confirmed — St Mary, Chatham, 19 May 1827, aged 76 — which is where the famous «1751» comes from, and it names no father."
-    ],
-    [
-     "Connolly's Roll of Officers of the Corps of Royal Engineers",
-     "Entry 203, «D'Arcy, Robert, C.B.» — the full career and «Died at Chatham, 13 5 1827». Only two D'Arcys in the whole Roll, 1660–1898. IT RECORDS NO PARENTAGE: the Roll does not carry fathers."
-    ],
-    [
-     "The Woolwich cadet registers",
-     "RULED OUT. WO 149 begins in 1790 and is at Sandhurst, so it cannot hold a cadet of the early 1770s. The printed Records of the Royal Military Academy of 1851 and 1892 are institutional histories, not registers, and have been read in full."
-    ],
-    [
-     "The printed Army Lists, 1783 · 1802 · 1803, and the Royal Military Calendar of 1820",
-     "Read 15 September 2026. They give rank, seniority and station year by year — Second Lieutenant in 1783, Captain by 1802, Major in the army by 1803 — AND NOT ONE NAMES A PARENT."
-    ],
-    [
-     "The London Gazette, 1770–1830",
-     "Silent, and structurally so: the Ordnance gazetted no British engineer commission in 1774, 1775 or 1776. All twenty-two Darcy notices of 1770–89 are other men."
-    ],
-    [
-     "Board of Ordnance records — WO 47, WO 54",
-     "STILL THE BEST HOPE, and not reachable from here. Until 1855 the Royal Engineers answered to the Board of Ordnance and kept separate records; a cadet warrant or commission entry of 17 January 1776 would be in the Ordnance minutes. Errand 28 established the series is WO 54/240. A letter to the Royal Engineers Museum at Chatham is drafted and unsent."
-    ],
-    [
-     "WO 46/10, the Board of Ordnance surveyors' list, 1775–77",
-     "A LEAD, and the first of its kind. The catalogue's sample names «CONSTANTINE D'ARCY, appointed 25 March 1775, PROFESSION OF PARENT: LIEUTENANT IN THE 95TH REGIMENT» — not Robert's son, who was born at Barbados in 1786, so a second and earlier man of that name in the same service Robert entered ten months later. The full list is in the document, not the catalogue. If it names Robert with a parent beside him, this question closes."
-    ]
-   ],
-   "note": "He has no entry in the Dictionary of National Biography — the DNB's «D'Arcy, Robert» is the 4th Earl of Holderness, whose will is **not** in the Prerogative Court, searched and empty.",
-   "key": "q/who-was-robert-d-arcy-s-fath-1e45bf"
-  },
-  {
-   "n": 2,
-   "q": "Where and when was Hannah Saniger baptised, and who were her parents?",
-   "state": "open",
-   "since": "2026-09-13",
-   "rank": "The oldest live question on the site",
-   "settles": "Berkeley St Mary's parish register after 1677, at Gloucestershire Archives — and Dursley St James and Cam St George, where the surname is six times commoner.",
-   "register": "/searched",
-   "tried": [
-    [
-     "Where she was born — CLOSED",
-     "BERKELEY, GLOUCESTERSHIRE, stated in the 1851 census at Drivers Fields and matching the tree exactly. That question is answered; this one replaces it."
-    ],
-    [
-     "FreeREG's Berkeley transcript",
-     "Measured at parish level on 15 September 2026 with a SMITH control: 3 exact and 36 uncertain results, EVERY ONE BETWEEN 1653 AND 1677. It is a thirty-year seventeenth-century fragment, so it can test one Saniger generation of six and no more."
-    ],
-    [
-     "Her parents",
-     "Still only a tree's assertion — John Saniger and Lydia. The tree adds Lydia Jones, born 13 March 1770 at Wotton-under-Edge, parents William and Sarah, died 7 July 1851 at Berkeley. Every one of those is testable and the baptism at Wotton has been tested: FreeREG does not list the parish."
-    ]
-   ],
-   "note": "The deepest line in this archive — six Saniger generations from 1654 to 1805 — rests on other people's family trees. One generation of the six now has a documented candidate and a father the archive never had, **Edward Sainger of Wanswell**.",
-   "key": "q/where-and-when-was-hannah-sa-3597b7"
-  },
-  {
-   "n": 3,
-   "q": "Where did John Saniger and Lydia marry, about 1797?",
-   "state": "blocked",
-   "since": "2026-09-14",
-   "rank": "One marriage, and it names Lydia",
-   "settles": "The Berkeley marriage register, or the Gloucestershire Family History Society's volunteers.",
-   "register": "/errands",
-   "tried": [
-    [
-     "Gloucestershire Archives",
-     "ANSWERED, and they do not do lookups. Andrew Parry, Senior Archives Assistant, 14 September 2026: «I'm afraid we don't offer any kind of research service.» He named the Family History Society instead."
-    ],
-    [
-     "The letter to the Society",
-     "Drafted and sitting in notes/letters/. Mail from David's address is his to send."
-    ]
-   ],
-   "note": "Lydia is named by no record this archive has seen. Her death IS now doubly indexed — Thornbury, September quarter 1851, local register 3 entry 265 and GRO volume 11 page 329 — so a certificate would at least give her age and her widowhood.",
-   "key": "q/where-did-john-saniger-and-l-91411d"
-  },
-  {
-   "n": 4,
-   "q": "How do the medieval Swonhungres connect to the Sanigers of Berkeley?",
-   "state": "open",
-   "since": "2026-09-15",
-   "rank": "Raised by the work of 15 September, and the archive claims no answer",
-   "settles": "The manor court rolls of Awre — Gloucestershire Archives D2156/1–4, D421/M7, D3270/362 and D3270/363 — which run from 1387 to 1881 and record surrenders, admissions and the customary heir of every tenant who died.",
-   "register": "/errands",
-   "tried": [
-    [
-     "The Berkeley deeds",
-     "195 records found on 15 September under the medieval spellings. They carry the family in the Vale from the 1270s to 1428, with filiations, an heirship and a named female ancestor — and Smyth's main line ends in 1401 with a John who died without issue."
-    ],
-    [
-     "The archive's own Sanigers",
-     "Appear at Berkeley from 1601 — John Saniger, yeoman, in D2957/41/18."
-    ],
-    [
-     "Between them",
-     "TWO HUNDRED YEARS OF SILENCE. No descent has been shown and none is claimed. The name and the place are documented as one thing; the people are not joined."
-    ]
-   ],
-   "note": "The nearer and more useful version of this question is smaller: from the eleven men of the 1608 muster to John Saniger who married Lydia about 1797. Nothing found on 15 September touches it.",
-   "key": "q/how-do-the-medieval-swonhung-05ce23"
-  },
-  {
-   "n": 5,
-   "q": "Who were Ann Biddulph's parents?",
-   "state": "answered",
-   "since": "2026-09-15",
-   "rank": "Closed by the first hour of a subscription",
-   "settles": "",
-   "register": "/errands",
-   "tried": [
-    [
-     "Four censuses at Well Street, Hanley",
-     "Give her as «Ann» and nothing else — Ann 41 in 1861, Ann 52 in 1871, Anne 61 in 1881."
-    ],
-    [
-     "The free Staffordshire BMD index",
-     "Named her. The marriage is 1842 at Stoke St Peter, and four Sneyd births carry Biddulph as the mother's maiden name."
-    ],
-    [
-     "The 1851 census, Queen Street, Stoke upon Trent",
-     "**ANSWERED. JOHN BIDDULPH, coal dealer, born Bermondsey, Surrey, about 1798, and JULIA his wife, born Shelton about 1799.** Ann is in their house as «Daughter, Married», a dressmaker of 31, with her own children Mary and James A entered as grandchildren. Two sisters as well: Mary, a paintress, and Eliza, a servant."
-    ]
-   ],
-   "note": "The marriage certificate (errand 55) is still worth having — it would give **both fathers' names and trades**, and confirm John Biddulph from a second source. But the question as asked is answered.",
-   "key": "q/who-were-ann-biddulph-s-pare-3eb1ed"
-  },
-  {
-   "n": 6,
-   "q": "What became of Catherine Sneyd, born Hanley 1845?",
-   "state": "answered",
-   "since": "2026-09-15",
-   "rank": "Closed — she lived four years",
-   "settles": "",
-   "register": "/searched",
-   "tried": [
-    [
-     "The Staffordshire BMD birth index",
-     "HAN/007/057 — Catherine Sneyd, 1845, Hanley, mother's maiden name Biddulph. Three of her four siblings match the Well Street household exactly."
-    ],
-    [
-     "Every census read here",
-     "She appears in none of them. She either did not reach 1851, or was elsewhere on both nights."
-    ],
-    [
-     "The 1851 census, both Sneyd households",
-     "**She is in neither.** Well Street holds Samuel, Elizabeth, James and Elizabeth Ann; Queen Street holds Ann with Mary and James A. Every other child of the marriage is accounted for at one of the two addresses, and Catherine — five or six years old — is at neither. The remaining explanations are a death before 1851, or a child living away from both her parents and both sets of grandparents."
-    ],
-    [
-     "The GRO death index, 1845–1852",
-     "**ANSWERED. Catherine Sneyd, death registered December quarter 1849, Stoke on Trent — GRO volume 17, page 114.** Exactly one Catherine Sneyd death in England and Wales across those eight years. She was four. That is why she is in neither household in March 1851."
-    ]
-   ],
-   "note": "A certificate would give the cause and the informant, and would name her father. It is not needed to answer the question as asked.",
-   "key": "q/what-became-of-catherine-sne-c90b1c"
-  },
-  {
-   "n": 7,
-   "q": "What did the three Sussex sisters leave, and to whom?",
-   "state": "blocked",
-   "since": "2026-09-14",
-   "rank": "Three wills, one reference",
-   "settles": "IR 27/396 — the Estate Duty register at the National Archives, which would name executors and legatees, and so name living relatives at three dates.",
-   "register": "/errands",
-   "tried": [
-    [
-     "The GRO death index",
-     "All three found: Charlotte 1869 Brighton 2b 152, Jane 1875 2b 203, Catherine 1876 2b 164 — and Charlotte re-confirmed in FreeBMD on 15 September as the control for that index."
-    ],
-    [
-     "The 1851 census",
-     "HO107/1646 f.357 p.59 sch.172, 22 Western Cottages, Brighton."
-    ]
-   ],
-   "note": "FreeCEN cannot help: it returns NOUGHT for ARCY in Sussex 1851 while this archive has the sisters in that very census. The piece is not transcribed. That was correction 30.",
-   "key": "q/what-did-the-three-sussex-si-f53588"
-  },
-  {
-   "n": 8,
-   "q": "Three institutions are between houses, and it is not a research problem",
-   "state": "blocked",
-   "since": "2026-09-10",
-   "rank": "Waiting on somebody else's rebuild",
-   "settles": "Time, and their migrations finishing.",
-   "register": "/searched",
-   "tried": [
-    [
-     "The Commonwealth War Graves Commission",
-     "Has refused automated access twice."
-    ],
-    [
-     "The Australian War Memorial",
-     "Mid-migration; its search returns nothing for any query. Its documents were reached by direct URL instead."
-    ],
-    [
-     "NSW State Archives",
-     "Now Museums of History NSW, at a new domain, with the old index addresses dead — which is what stopped the search for George Pitt D'Arcy's 1849 probate."
-    ]
-   ],
-   "note": "",
-   "key": "q/three-institutions-are-betwe-5a43c8"
-  },
-  {
-   "n": 9,
-   "q": "When was Robert D'Arcy first commissioned?",
-   "state": "answered",
-   "since": "2026-09-15",
-   "rank": "Closed, and it had been wrong on six pages",
-   "settles": "",
-   "register": "/corrections",
-   "tried": [
-    [
-     "Three printed Army Lists",
-     "17 JANUARY 1776. The lists of 1778, 1781 and 1783 all carry him in an intact ditto-chain — and the 1783 edition sets his name ROBERT D'ARCEY, with an e, which is why outside catalogues had never returned him."
-    ],
-    [
-     "What was wrong",
-     "Five pages said 1776 and a sixth said 1778, for weeks, and the page that was wrong was the one that sounded most authoritative. Correction 29; agree.py then found six more stale copies."
-    ]
-   ],
-   "note": "",
-   "key": "q/when-was-robert-d-arcy-first-eeb67b"
-  },
-  {
-   "n": 10,
-   "q": "How many spellings of the surname are in the 1608 muster?",
-   "state": "answered",
-   "since": "2026-09-15",
-   "rank": "Closed by a reviewer, in 1902",
-   "settles": "",
-   "register": "/corrections",
-   "tried": [
-    [
-     "Gloucestershire Notes & Queries",
-     "THREE, not four. Reviewing Maclean's 1902 edition — the edition this archive read — the reviewer listed its misreadings: «Thus SAINGER SHOULD READ SANIGER.» So the man living in the hamlet the surname came from is John Saniger of Saniger, his name and his address the same word."
-    ],
-    [
-     "What this does not overturn",
-     "SAINGER is a real form of the name, 44 times in the Berkeley registers. It is simply not a 1608 one. Correction 31."
-    ]
-   ],
-   "note": "",
-   "key": "q/how-many-spellings-of-the-su-0228f4"
-  },
-  {
-   "n": 11,
-   "q": "Is Smyth's pedigree of the Swonhungers trustworthy?",
-   "state": "answered",
-   "since": "2026-09-15",
-   "rank": "Closed, from the deeds he was reading",
-   "settles": "",
-   "register": "/searched",
-   "tried": [
-    [
-     "The Berkeley Castle deeds, in the Discovery catalogue",
-     "Yes, and better. BCM/A/1/56/29 of 1354 is the partition Smyth describes; BCM/A/1/24/184 of 1356 is the deed he transcribed, and the catalogue says so — «[Transcript: Smyth, iii. 380-1.]»; MS 3549/4 at Birmingham names William's wife Isabella, as Smyth does."
-    ],
-    [
-     "And it adds a generation",
-     "The 1356 inspeximus calls John Swonhungre «his father, son and heir of John Swonhungre» — so there is a John above the John the printed pedigree begins with."
-    ]
-   ],
-   "note": "",
-   "key": "q/is-smyth-s-pedigree-of-the-s-95c9da"
-  }
- ],
- "close": "**Eight questions are live and three are closed and kept.** Of the eight, four wait on a person rather than on searching — a free sign-in at Kew, a letter from David's own address, a local certificate fee, and three institutions finishing their migrations. The other four can be worked on tonight, and the work list says which of them is being worked on."
+  "close": "**Eight questions are live and three are closed and kept.** Of the eight, four wait on a person rather than on searching — a free sign-in at Kew, a letter from David's own address, a local certificate fee, and three institutions finishing their migrations. The other four can be worked on tonight, and the work list says which of them is being worked on."
 }

@@ -764,6 +764,21 @@ rec("Jane D'Arcy", "burial · died 10 JANUARY 1875 · ST ANDREW'S OLD CHURCH, HO
     "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
 rec("Catherine D'Arcy", "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · the exact date the Horsham paper printed a fortnight later",
     "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
+# --- Joseph D'Arcy's first family, Westminster, found 22 September 2026 ------
+# The two sons the 1857 death notice implied and never named. They were written
+# up on /joseph-darcy the day they were found and did not reach the register for
+# a day, which left both their person pages saying no record named them.
+WBAP = ("record · England Births & Baptisms 1538-1975 (FamilySearch index), "
+        "transcripts read on FindMyPast")
+rec("George Abbas Kooli D'Arcy",
+    "baptised WESTMINSTER, 31 AUGUST 1818, entered as GEORGE ABBAS KOOLY D'ARCY · father JOSEPH D'ARCY · mother KATHARINE GEORGIANA · ABBAS KOOLY is Abbas Qoli, for Prince Abbas Mirza, whom his father had served five years in Persia · the eldest son, never named in either death notice",
+    WBAP, "https://www.findmypast.co.uk/")
+rec("Robert West D'Arcy",
+    "baptised WESTMINSTER, 16 OCTOBER 1820 · father JOSEPH D'ARCY · mother CATHERINE GEORGIANA · WEST is his mother's maiden surname, standing as his middle name",
+    WBAP, "https://www.findmypast.co.uk/")
+rec("Catherine Georgiana West",
+    "named as the mother in both Westminster baptisms · KATHARINE GEORGIANA in 1818, CATHERINE GEORGIANA in 1820 — one woman under two ordinary spellings · the first record to carry her forenames, which the tree had asserted and nothing had tested",
+    WBAP, "https://www.findmypast.co.uk/")
 rec("Robert West D'Arcy", "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
     "record · British India Office Marriages", "https://www.findmypast.co.uk/")
 rec("William Sneyd", "burial · 13 MAY 1827, MADELEY ALL SAINTS, Staffordshire · AGED 84, born about 1743 · the better of two candidates for the weaver, and not proved",
@@ -963,6 +978,13 @@ REL = [
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
     ("Charlotte Maria D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 31 Mar 1826"),
     ("Frederick Robert D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 2 Jul 1811"),
+    # Westminster, 1818 and 1820. Both baptisms name BOTH parents, but only the
+    # father can be drawn: the tree holds Catherine Georgiana West as a name on a
+    # marriage rather than as a person, so there is no node to draw an edge to.
+    # She is one of 77 name-only partners in 130 marriages. Her record line is
+    # still written above, and reaches /register and /people.
+    ("George Abbas Kooli D'Arcy", "Joseph D'Arcy|1780", "baptism, Westminster, 31 Aug 1818"),
+    ("Robert West D'Arcy|1820", "Joseph D'Arcy|1780", "baptism, Westminster, 16 Oct 1820"),
     ("Samuel Sneyd|1769", "William Sneyd|1746", "baptism, Madeley, 4 Jun 1781; marriage, Madeley, 27 Mar 1769"),
     ("Samuel Charles Sneyd|1810", "Samuel Sneyd", "baptism, Hanley, 28 Apr 1811"),
     ("William Sneyd|1746", "Mary Blackbourne", "marriage, Madeley, 27 Mar 1769"),

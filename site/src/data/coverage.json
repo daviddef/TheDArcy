@@ -1,6 +1,6 @@
 {
   "note": "What each database actually holds for the parishes this archive needs. Checked before searching, every time — because a search of a source that does not cover your parish returns nothing, and nothing looks exactly like a negative result.",
-  "checked": "15 September 2026",
+  "checked": "last measured 23 September 2026",
   "rows": [
     {
       "db": "FreeREG",
@@ -577,6 +577,22 @@
       "verdict": "partial",
       "note": "**It is not the British Newspaper Archive.** It indexes birth, marriage and death notices by name; the Year and Location columns are empty for most rows, so **any year filter silently returns zero** — SMITH gives 674,001 unfiltered and 0 for 1827 ± 2. Read whole rather than filtered, **Robert D'Arcy returns 42 notices with nothing dated before 1857 and Joseph D'Arcy 84 with nothing before 1914.** Useful for the late nineteenth and twentieth centuries; useless for this archive's Georgian questions, which need the full-text site and its own sign-in.",
       "href": "/behind-the-paywall"
+    },
+    {
+      "db": "English marriage registers, 1754–1837 (the record class itself)",
+      "where": "every English parish, Hardwicke's Act to civil registration",
+      "holds": "the two names, the parish, banns or licence, the signatures and the witnesses — and NOTHING ELSE",
+      "span": "1754–1837",
+      "verdict": "partial",
+      "note": "**No fathers, abodes, ages, conditions or occupations.** Bristol Archives stated it in those words on 22 September, reading the 1828 entry this archive had waited nine days for. Fathers arrive with civil registration in **1837**, which is why the 1871 marriage in this family names one and the 1828 marriage cannot. This row exists because three errands here were written on the opposite assumption. **Before asking a marriage entry for a father, check its date.**\n\n**One qualifier, so this row does not create the opposite error.** A father can still appear on a pre-1837 entry incidentally — most often as consent for a party under twenty-one — and banns books sometimes carry more than the register does. What does not exist before 1837 is a **father's column**. And consent was recorded for marriages **by licence**: under Hardwicke's Act a marriage **by banns** stood unless a parent publicly dissented while they were read, so nothing was written down. **Thomas and Martha married by banns**, which is the one detail that decides it."
+    },
+    {
+      "db": "Bristol Archives — enquiry service",
+      "where": "Bristol Church of England parishes, including St James",
+      "holds": "the original registers, read by staff on request",
+      "span": "from 1754 for marriages",
+      "verdict": "good",
+      "note": "Answered a seven-part enquiry in nine days, **free**, having viewed the record — their research service is quoted at £13 for up to half an hour and nothing was charged. The reply corrected this archive's spelling of the surname from the index reading and volunteered a record nobody had asked for. Images of the registers are on **Ancestry**, which this archive will not use because it wants an account."
     }
   ],
   "verdicts": {
