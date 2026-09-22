@@ -22,7 +22,7 @@
     "check:rows": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkrows.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#08eb1f8eff1ca9a5fe328f7ec3ed853516fa05e3",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#6b7925b5a2b25d039395df133c02bcf379100467",
     "astro": "^5.18.2"
   },
   "devDependencies": {
