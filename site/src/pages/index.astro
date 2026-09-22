@@ -106,12 +106,25 @@ const more = [
    direct-line.astro reverses it. */
 const spineRows = [...line].reverse().map((g) => {
   const c = CONF.confidence[g.id];
+  /* THE LADDER WAS DROPPING HALF OF WHAT THE ARCHIVE HOLDS. line.json
+     carries a spouse and an occupation for every generation that has one —
+     thirteen of fifteen — and the first version of this map passed neither,
+     so the front page showed a column of D'Arcy men with no wives beside
+     them. `unproven` on an unrecorded generation is direct-line.astro's own
+     convention (`CONFIDENCE[id]?.[0] || "unproven"`), kept here so the two
+     pages cannot disagree; what changed is that the kit now says it once
+     under the ladder instead of nine times down it. */
+  const sp = (g.spouses || [])[0];
   return {
     gen: g.gen ?? g.ahn,
     name: g.name,
+    spouse: (sp && (sp.name || sp)) || "",
     born: g.born || "",
     bornPlace: g.bornPlace || "",
+    diedPlace: g.diedPlace || "",
     died: g.died || "",
+    trade: g.occupation || "",
+    confidence: c ? c[0] : "unproven",
     living: !!g.living,
     weak: (c ? c[0] : "unproven") !== "documented",
   };
