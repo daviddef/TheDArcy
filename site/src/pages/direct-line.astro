@@ -5,6 +5,25 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { people } from "../lib/people.js";
+
+/* «and why no links for the wives?» — 22 September. Thirteen of the
+   fifteen generations have one and every one of them was drawn as plain
+   text beside a linked husband.
+
+   Resolved BY GEDCOM ID, not by name. people.js is explicit that the tree
+   is the authority on identity and that this archive will not merge or
+   split people behind the reader's back — and it disambiguates slugs
+   because «there are two George Pitt D'Arcys and three Conyers». Matching
+   a wife by name in a file like that would be the merge those slugs exist
+   to prevent. All thirteen resolve. */
+const SLUG_BY_ID = new Map(people.map((q) => [q.id, q.slug]));
+const spouseHrefOf = (g) => {
+  const sp = (g.spouses || [])[0];
+  const slug = sp && sp.id && !sp.living ? SLUG_BY_ID.get(sp.id) : null;
+  return slug ? `/people/${slug}/` : null;
+};
+
 import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
 import line from "../data/line.json";
 
@@ -87,6 +106,8 @@ const documented = shown.filter((g) => chip(g.id) === "documented").length;
 const WORD = ["no", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight",
               "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"];
 const documentedWord = WORD[documented] || String(documented);
+
+
 ---
 <Base
   title="The Spine"
@@ -206,6 +227,7 @@ const documentedWord = WORD[documented] || String(documented);
              chips: this archive has no slug to link them by, and one
              guessed from a name would be a guess. */
           spouse: ((g.spouses || [])[0] || {}).name || (g.spouses || [])[0] || "",
+          spouseHref: spouseHrefOf(g),
           born: c.born || g.born || "",
           bornPlace: c.bornPlace || place(g.bornPlace) || "",
           died: g.died || "",

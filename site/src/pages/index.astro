@@ -104,6 +104,23 @@ const more = [
    in a line is. */
 /* Oldest first on the page; the data is youngest-first, exactly as
    direct-line.astro reverses it. */
+/* «and why no links for the wives?» — 22 September. Thirteen of the
+   fifteen generations have one and every one of them was drawn as plain
+   text beside a linked husband.
+
+   Resolved BY GEDCOM ID, not by name. people.js is explicit that the tree
+   is the authority on identity and that this archive will not merge or
+   split people behind the reader's back — and it disambiguates slugs
+   because «there are two George Pitt D'Arcys and three Conyers». Matching
+   a wife by name in a file like that would be the merge those slugs exist
+   to prevent. All thirteen resolve. */
+const SLUG_BY_ID = new Map(people.map((q) => [q.id, q.slug]));
+const spouseHrefOf = (g) => {
+  const sp = (g.spouses || [])[0];
+  const slug = sp && sp.id && !sp.living ? SLUG_BY_ID.get(sp.id) : null;
+  return slug ? `/people/${slug}/` : null;
+};
+
 const spineRows = [...line].reverse().map((g) => {
   const c = CONF.confidence[g.id];
   /* THE LADDER WAS DROPPING HALF OF WHAT THE ARCHIVE HOLDS. line.json
@@ -119,6 +136,7 @@ const spineRows = [...line].reverse().map((g) => {
     gen: g.gen ?? g.ahn,
     name: g.name,
     spouse: (sp && (sp.name || sp)) || "",
+    spouseHref: spouseHrefOf(g),
     born: g.born || "",
     bornPlace: g.bornPlace || "",
     diedPlace: g.diedPlace || "",
@@ -129,6 +147,8 @@ const spineRows = [...line].reverse().map((g) => {
     weak: (c ? c[0] : "unproven") !== "documented",
   };
 });
+
+
 ---
 <Base title="The D'Arcy Archive" bare={true}>
 
