@@ -38,6 +38,12 @@
       "what": "THOMAS SINEGAR married JULIA MARSH · father THOMAS SINEGAR",
       "where": "Bristol, St Matthias · Bristol Archives P/St.Mat/R/2/b",
       "note": "The seven-year-old of 1841, grown up, and the entry names his father."
+    },
+    {
+      "when": "Oct–Dec 1852",
+      "what": "JAMES SANIGAR married at BRISTOL — almost certainly LAURA SAYER",
+      "where": "GRO index of marriages, Bristol district, volume 6a page 155 · FreeBMD, read 27 September 2026",
+      "note": "The record Bristol Archives mentioned unasked. Spelt SANIGAR, the form they read off the 1828 register. The bride is an inference from the page, not from the entry."
     }
   ],
   "case": [
@@ -108,5 +114,33 @@
     "bannsHead": "And «by banns» is not a formality — on this archive's own identification it is why no father was written",
     "banns": "This archive identifies the groom of 1828 with **Thomas Saniger, baptised at Berkeley on 3 July 1808**. If that is right, he was **twenty** in August 1828 — a minor, by a year and a month.\n\n**A minor marrying by licence needed a parent's or guardian's consent, and the consent was written down.** Under Hardwicke's Act a marriage **by banns** did not: it stood unless a parent publicly dissented while the banns were being read, and a dissent that never came leaves no ink. So the single route by which an entry of 1828 could have named this man's father existed, and **the choice of banns closed it**.\n\nThat is an inference resting on an identification this archive has not proved, and it cuts both ways: if the groom was **not** the Berkeley boy, he may simply have been of age. It is set down because it is the only reading under which the missing father is a fact about **this** marriage rather than about every marriage of its century.",
     "chipBanns": "inferred"
+  },
+  "james": {
+    "found": "27 September 2026",
+    "head": "The marriage Bristol Archives offered, found for nothing in the index they did not mention",
+    "lede": "Holly Aylward ended her reply with a record nobody had asked for: a marriage of 1852 for «what looks like Thomas's son, James». **It is in the GRO index, and it is free.** Registered in the **December quarter of 1852** in the **Bristol** district, volume **6a**, page **155**, under the spelling **SANIGAR**.",
+    "cols": [
+      "Surname",
+      "Forename",
+      "District",
+      "Vol",
+      "Page"
+    ],
+    "rows": [
+      [
+        "**SANIGAR**",
+        "**James**",
+        "Bristol",
+        "6a",
+        "**155**"
+      ]
+    ],
+    "chip": "documented",
+    "brideHead": "And the bride is on the same page, and her name is the one this archive was hoping for",
+    "bride": "The GRO index does not pair spouses before 1912. What it does is print every party to every marriage registered on the same page, so the partners are among them. **Bristol 6a 155, December quarter 1852, carries four names**: Sarah Godfrey, James Sanigar, **Laura Sayer** and Henry Small. Four names, two men, two women — two marriages.\n\n**Lydia Sinegar, baptised 28 January 1866, is the daughter of JAMES SINEGAR and LAURA.** This archive has had that mother's name for weeks with no surname attached to it. A Laura marrying a James on one page of the Bristol index in 1852 is not a coincidence worth arguing with.\n\n**It is still an inference.** The other reading — James to Sarah Godfrey, Henry Small to Laura Sayer — is not excluded by anything on the page, and the index is the only thing read. **The certificate would settle it in one line, and would also name James's father.**",
+    "chipBride": "inferred",
+    "pairHead": "The pairing method, tested against a marriage this archive already holds",
+    "pair": "The same query on the 1871 marriage of James's brother returns **Bristol 6a 131, June quarter**: Matilda Frances Crump, Thomas **Linegar**, Julia **Marsh**, John Offer. This archive holds that marriage from the register — **Thomas Sinegar to Julia Marsh, 28 May 1871** — so the true pairing is known independently, and the page reads exactly as the method predicts: the couple sits among four names with their complement.\n\n**The method is sound and it does not disambiguate on its own.** In 1871 the register told us which pair was which. In 1852 nothing has.",
+    "chipPair": "documented"
   }
 }

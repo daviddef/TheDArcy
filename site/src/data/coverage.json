@@ -268,8 +268,8 @@
       "where": "England and Wales civil registration",
       "holds": "unknown from here",
       "span": "1837 onward",
-      "verdict": "unusable",
-      "note": "The search page opens with no login and accepts a POST, and then returns the results-page furniture with NO RESULT ROWS for every query. Control: SMITH BIRTHS IN BRISTOL IN 1840 returns zero, which is impossible, and so does Wakefield — a birth this archive already holds from the GRO index at vol 11 p.183. Nothing was searched. Every zero taken from it here is meaningless.",
+      "verdict": "good",
+      "note": "**CORRECTED 27 September 2026. This row said the search returns no rows for every query. It does not; the search was never run.** FreeBMD's Find control is an **image button** carrying no text — `<input type=\"image\" name=\"find\" src=\"/btnFindLg.gif\">`. The only submits that carry text are «Find Additional» and «View Saved», which belong to the saved-search box, and pressing one returns a results-shaped page reading «You must supply the name of a file containing a saved search». Control on the real button: **SMITH marriages, Bristol district, 1852 returns a full table**, volume 6a with page numbers, every quarter marked >99% transcribed. [Own error 46](/corrections/).",
       "href": "/searched"
     },
     {
@@ -593,6 +593,14 @@
       "span": "from 1754 for marriages",
       "verdict": "good",
       "note": "Answered a seven-part enquiry in nine days, **free**, having viewed the record — their research service is quoted at £13 for up to half an hour and nothing was charged. The reply corrected this archive's spelling of the surname from the index reading and volunteered a record nobody had asked for. Images of the registers are on **Ancestry**, which this archive will not use because it wants an account."
+    },
+    {
+      "db": "The GRO index of marriages, before 1912 (the record class)",
+      "where": "England and Wales, civil registration",
+      "holds": "surname, forename, district, volume and page — and NO indication of who married whom",
+      "span": "1837–1911",
+      "verdict": "partial",
+      "note": "**Spouses are not paired in the index until 1912.** What the volume and page give you is everyone registered on the same page — typically four names, two marriages — so a couple is an **inference from a shared page** unless something outside the index settles it. Tested against a marriage this archive holds from the register: Thomas Sinegar and Julia Marsh, 28 May 1871, appear on Bristol 6a 131 beside John Offer and Matilda Frances Crump, exactly as the method predicts and with the true pairing knowable only from the register. **Before 1912, read the page and then say «inferred».**"
     }
   ],
   "verdicts": {

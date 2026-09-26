@@ -3777,6 +3777,48 @@
       "ctl": "named",
       "got": "**Nothing.** James Sinegar appears aged eleven in the 1841 household and again in 1866 as Lydia's father, with no record between. Control: the same search returns the 1871 marriage of his brother Thomas and the 1828 marriage of their father, so it finds marriages when they are there. The 1852 entry is new to this archive.",
       "href": "/worklist"
+    },
+    {
+      "src": "FreeBMD — GRO marriage index, Bristol district, 1852, SANIGER phonetic",
+      "what": "The 1852 marriage of James, which Bristol Archives named and did not reference",
+      "when": "27 Sep 2026",
+      "outcome": "yield",
+      "got": "**SANIGAR, James — Bristol — 6a — 155 — December quarter 1852.** One entry, and it is the right one. Spelt **SANIGAR**, the form Bristol Archives read off the 1828 register, not the SANIGRE this archive published from the index. Control: SMITH marriages in the same district and year return **31**, so the district and year filters work together, and every quarter is marked >99% transcribed.",
+      "href": "/thomas-sinegar"
+    },
+    {
+      "src": "FreeBMD — every party registered on Bristol 6a 155, December quarter 1852",
+      "what": "Who James married",
+      "when": "27 Sep 2026",
+      "outcome": "yield",
+      "got": "**Four names: Sarah Godfrey, James Sanigar, LAURA SAYER, Henry Small.** Two men, two women, two marriages. **Lydia Sinegar's baptism of 1866 names her mother as LAURA** and gives no surname. This is the first surname this archive has for her, and it is an **inference from a shared page** rather than a pairing the index states — the GRO does not pair spouses before 1912.",
+      "href": "/thomas-sinegar"
+    },
+    {
+      "src": "FreeBMD — SANIGER phonetic, marriages, 1871, Bristol and then the whole of England",
+      "what": "A control: does this instrument find a marriage this archive already holds from a register?",
+      "when": "27 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "**IT DOES NOT, AND THE REASON MATTERS MORE THAN THE SEARCH.** Thomas Sinegar married Julia Marsh on 28 May 1871; no Saniger form appears in the June quarter of 1871 in Bristol or anywhere in England. Asking instead for the bride — MARSH, Julia, 1871 — returns **Bristol 6a 131**, and the men on that page are John Offer and **Thomas LINEGAR**. The surname was transcribed with an **L for an S**. Soundex L526, not S526: no wildcard on `S*N*G*` and no phonetic search on any S-form could ever have reached it.",
+      "href": "/spellings"
+    },
+    {
+      "src": "FreeBMD — LINEGAR phonetic, marriages, Bristol, 1852",
+      "what": "Whether the first-letter blind spot hides anything in the year just searched",
+      "when": "27 Sep 2026",
+      "outcome": "empty",
+      "ctl": "named",
+      "got": "**Nothing of this family** — Harriet Emma Lamacroft and John Langridge, and no more. So the 1852 finding is not incomplete on the L side. Control: the same query shape on the same set returned Thomas Linegar for 1871, so it reaches an L-form when there is one.",
+      "href": "/thomas-sinegar"
+    },
+    {
+      "src": "FindMyPast — England & Wales Marriages 1837-2005",
+      "what": "The same 1852 question, asked of the subscription index",
+      "when": "27 Sep 2026",
+      "outcome": "blocked",
+      "got": "**Eleven results for `S*N*G*` in the Bristol district in 1852, and not one of them readable**: the count appears on the search form and the results page redirects to «Sign up for free to see them». This archive does not make accounts. The count is recorded because it is information; the rows are not. **FreeBMD answered the same question for nothing.**",
+      "href": "/coverage"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

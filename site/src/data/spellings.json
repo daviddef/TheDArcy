@@ -198,6 +198,13 @@
       "nothing",
       "",
       ""
+    ],
+    [
+      "LINEGAR",
+      "0",
+      "not a spelling — an S read as an L by a GRO indexer; it carries Thomas's 1871 marriage (27 Sep)",
+      "1871",
+      "1871"
     ]
   ],
   "oneHead": "The rarest spelling of all is the one this family used",
@@ -318,5 +325,10 @@
     "head": "One of these rows is a register and the rest are an index",
     "body": "Every count in this table is of **index entries**, and an index entry is somebody's reading of a register. On 22 September Bristol Archives read one of the underlying registers and disagreed with the index about the spelling: the entry this table credits to **SANIGRE** is written **SANIGAR** in the book.\n\n**That is one row of hundreds, and there is no reason to think it is the only one.** A surname with this many forms generates them at two stages — the clerk's ear in 1828, and the transcriber's eye in about 1990 — and a table built from an index can only ever see the second. It is still the right table to search from. It is not a table of how anybody spelt their name. [Own error 43](/corrections/).",
     "chip": "the disagreement is documented; neither spelling is"
+  },
+  "initial": {
+    "head": "And one row in this table does not begin with an S",
+    "body": "Every search this archive has run on this surname has assumed the first letter. The wildcard is `S*N*G*`; the phonetic code is S526. Both are blind in the same place.\n\n**Thomas Sinegar's marriage of 28 May 1871 is in the GRO index as THOMAS LINEGAR.** It was found only by asking for the bride instead — Julia Marsh, Bristol 6a 131 — and reading the men off the page. No S-form query of any kind reaches it, and it would have gone on being a null.\n\n**This is not a spelling and it is in the table anyway**, at nought, because the table's job is to make records findable and this is how one record is filed. It also means that **every null this archive has recorded against a wildcard or a phonetic search on this name is a null about the S forms**, not about the family. The L side of 1852 has been checked and is empty. The rest has not.",
+    "chip": "documented"
   }
 }

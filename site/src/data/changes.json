@@ -6,8 +6,20 @@
   "days": [
     {
       "when": "27 September 2026",
-      "title": "A sync put back an older archive, and the gate on the one absolute rule was grading it",
+      "title": "A record offered unasked, found in the index this archive had written off — and an S that a clerk read as an L",
       "found": [
+        [
+          "Added",
+          "/thomas-sinegar — James Sanigar's marriage, Bristol 6a 155, December quarter 1852, and a surname for Laura"
+        ],
+        [
+          "Corrected",
+          "/coverage — FreeBMD is not unusable; the search had never been run. Own error 46"
+        ],
+        [
+          "Added",
+          "/spellings — THOMAS LINEGAR, and what a misread first letter does to every wildcard this archive uses"
+        ],
         [
           "Corrected",
           "/corrections — own error 45: the living-person check graded a four-day-old build and reported ok"
@@ -22,6 +34,11 @@
         ]
       ],
       "did": [
+        "FOUND THE 1852 MARRIAGE BRISTOL ARCHIVES MENTIONED, free, in nine minutes. SANIGAR, JAMES — BRISTOL — 6A — 155 — DECEMBER QUARTER 1852, spelt the way they read the 1828 register and not the way this archive published it. Control first: SMITH in the same district and year returns 31, and every quarter is marked >99% transcribed.",
+        "AND A SURNAME FOR LAURA. The GRO prints everyone registered on a page, so Bristol 6a 155 carries four names — Sarah Godfrey, James Sanigar, LAURA SAYER, Henry Small. Lydia's baptism of 1866 names her mother Laura and gives no surname. IT IS AN INFERENCE, NOT A PAIRING THE INDEX STATES: the GRO does not pair spouses until 1912, and that is now a coverage row of its own.",
+        "THE CONTROL FAILED, AND THAT WAS THE FINDING. Asked whether the same instrument could find a marriage this archive already holds — Thomas Sinegar to Julia Marsh, 28 May 1871 — it returned nothing, in Bristol or in England. Asking for the bride instead returned Bristol 6a 131, and the man on that page is THOMAS LINEGAR. An S transcribed as an L.",
+        "WHICH PUTS A HOLE IN EVERY NULL ON THIS SURNAME. The wildcard is `S*N*G*` and the phonetic code is S526; both are blind at the first letter, and a record has now been found that neither can ever reach. The L side of 1852 has been checked and is empty. THE REST HAS NOT, AND THE NULLS ALREADY PUBLISHED ARE NULLS ABOUT THE S FORMS.",
+        "FREEBMD WAS NEVER BROKEN. This archive published it as «unusable — returns the results-page furniture with NO RESULT ROWS». Its Find control is an unlabelled image button; the only submits carrying text belong to the saved-search box, and pressing one returns a results-shaped page saying a saved-search file is missing. A week of this question went to FindMyPast instead, which showed eleven results and put every one behind an account. [Own error 46](/corrections/).",
         "THE ESTATE CAME OUT OF ICLOUD. This repository lived in ~/Documents, which macOS syncs, and after an upgrade the sync re-materialised an older working tree on top of the current one: 59 paths dirty, files reporting as deleted and reappearing on disk a minute later, and nothing modified later than 24 September. Nothing was lost — every commit was already on origin — but for four days the tree on disk was not the tree that had been committed.",
         "THE WORKING TREE WAS RECONCILED WITH HEAD and a full rebuild then regenerated every derived file byte-identical, except one.",
         "THAT ONE WAS living.json, WHICH IS THE FILE THIS ARCHIVE PUBLISHES ABOUT THE LIVING-PERSON RULE. Its page count came back 849 where the build had made 854. The number was read from the shared `dist` of 23 September, not from the build just finished.",

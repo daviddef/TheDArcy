@@ -4,6 +4,17 @@ export const OWN = [
   {
     when: "27 September 2026",
     cause: "instrument",
+    what: "Published FreeBMD as «unusable — returns the results-page furniture with NO RESULT ROWS for every query», and kept that verdict for a week. FreeBMD works. The search had never been run: the button that was pressed belongs to a different box.",
+    truth:
+      "FreeBMD's Find control is an IMAGE button — `<input type=\"image\" name=\"find\" src=\"/btnFindLg.gif\">` — and carries no text at all. The only submits on the page that carry text are «Find Additional» and «View Saved», and both belong to the saved-search panel further down. Pressing one returns a page with the full results header, the transcription warnings, the key to the symbols, and the line «You must supply the name of a file containing a saved search». Run against the real button, SMITH marriages in the Bristol district in 1852 return a full table, every quarter marked >99% transcribed — and the search this archive wanted returned James Sanigar at 6a 155 in under a minute, free.",
+    why: "A page was read for text and the control was a picture. Every tool this archive uses to drive a browser reports what it can name, an unlabelled image is nameless, and the two buttons that DID have names were the wrong ones. The failure then dressed itself convincingly: the error line sits below the results furniture, so the page looks like a search that found nothing rather than a search that never happened.",
+    lesson:
+      "THE COST WAS PAID IN THE WRONG CURRENCY. A week of this question went to FindMyPast, which put eleven results behind an account this archive will not open, while the free index that answers it in one query sat marked unusable in the coverage table on the strength of an untested verdict. A control proves a source CAN answer; it does not prove the button was pressed. So the rule gains a clause: before recording a source as broken, show the query returning something — anything — and if it cannot, say the search failed rather than the source did.",
+    href: "/coverage",
+  },
+  {
+    when: "27 September 2026",
+    cause: "instrument",
     what: "Wrote a module on 22 September to make every gate grade the build the operator just made, published its docstring as the account of that fault — and left one caller able to defeat it. That caller was the living-person check, on the one rule in this archive that is absolute.",
     truth:
       "`tools/outdir.py` was wired into `check_living.py` as an argparse DEFAULT: `ap.add_argument(\"--dist\", default=DIST)`. A default is consulted only when the flag is ABSENT, and `site/package.json` passes `--dist dist` explicitly. So with ARCHIVE_OUT set, every other gate read the new build and this one read the shared `dist` — four days old, 848 pages against 854. It checked 6 fewer pages and 14 fewer names for living-person leakage, found none, and wrote «ok». It also wrote that stale page count into `living.json`, the published file that documents the rule.",

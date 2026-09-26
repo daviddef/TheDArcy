@@ -114,6 +114,11 @@
       "phrase": "a Gloucestershire marriage entry names the father",
       "instead": "marriage entries name fathers only after 1837",
       "err": 44
+    },
+    {
+      "phrase": "returns the results-page furniture with NO RESULT ROWS",
+      "instead": "FreeBMD works; the Find control is an unlabelled image button and the search was never run",
+      "err": 46
     }
   ]
 }

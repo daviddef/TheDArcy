@@ -123,4 +123,9 @@ const parts = [
     <div class="dek" style="margin-top:1rem" set:html={mdp(d.register.body)}></div>
     <p style="margin-top:.8rem"><span class="chip dis">{d.register.chip}</span></p>
   </Blk>
+
+  <Blk label="The blind spot" title={d.initial.head}>
+    <div class="dek" style="margin-top:1rem" set:html={mdp(d.initial.body)}></div>
+    <p style="margin-top:.8rem"><span class="chip doc">{d.initial.chip}</span></p>
+  </Blk>
 </Base>

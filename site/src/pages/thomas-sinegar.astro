@@ -71,6 +71,31 @@ import d from "../data/thomas-sinegar.json";
     </Note>
   </Blk>
 
+  <Blk label={`The GRO index · ${d.james.found}`} title={d.james.head}>
+    <p class="lede" set:html={mdp(d.james.lede)} />
+    <table style="margin-top:1.3rem">
+      <thead><tr>{d.james.cols.map((c) => (<th>{c}</th>))}</tr></thead>
+      <tbody>{d.james.rows.map((row) => (
+        <tr>{row.map((cell) => (<td set:html={md(cell)} />))}</tr>))}
+      </tbody>
+    </table>
+    <Note><span class="chip doc">{d.james.chip}</span></Note>
+
+    <h3 style="margin-top:2rem">{d.james.brideHead}</h3>
+    <div set:html={mdp(d.james.bride)} />
+    <Note>
+      <span class="chip inf">{d.james.chipBride}</span>
+      <a href={u("/worklist")}>What would settle it →</a>
+    </Note>
+
+    <h3 style="margin-top:2rem">{d.james.pairHead}</h3>
+    <div set:html={mdp(d.james.pair)} />
+    <Note>
+      <span class="chip doc">{d.james.chipPair}</span>
+      <a href={u("/spellings")}>And the L that hid it →</a>
+    </Note>
+  </Blk>
+
   <Blk label="The case for him" title="Four things that line up">
     <ol class="dek" style="margin-top:1rem">
       {d.case.map(([h, b]) => (<li style="margin-bottom:.7rem"><strong>{h}</strong> {b}</li>))}
