@@ -5,6 +5,32 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
     {
+      "when": "27 September 2026",
+      "title": "A sync put back an older archive, and the gate on the one absolute rule was grading it",
+      "found": [
+        [
+          "Corrected",
+          "/corrections — own error 45: the living-person check graded a four-day-old build and reported ok"
+        ],
+        [
+          "Fixed",
+          "tools/outdir.py — the environment now beats the flag here as it already did in the kit"
+        ],
+        [
+          "Checked",
+          "the tree, the object store and every derived file against HEAD after the estate moved out of iCloud"
+        ]
+      ],
+      "did": [
+        "THE ESTATE CAME OUT OF ICLOUD. This repository lived in ~/Documents, which macOS syncs, and after an upgrade the sync re-materialised an older working tree on top of the current one: 59 paths dirty, files reporting as deleted and reappearing on disk a minute later, and nothing modified later than 24 September. Nothing was lost — every commit was already on origin — but for four days the tree on disk was not the tree that had been committed.",
+        "THE WORKING TREE WAS RECONCILED WITH HEAD and a full rebuild then regenerated every derived file byte-identical, except one.",
+        "THAT ONE WAS living.json, WHICH IS THE FILE THIS ARCHIVE PUBLISHES ABOUT THE LIVING-PERSON RULE. Its page count came back 849 where the build had made 854. The number was read from the shared `dist` of 23 September, not from the build just finished.",
+        "THE CAUSE WAS A DEFAULT MISTAKEN FOR A RULE. tools/outdir.py exists to make every gate grade the operator's build; check_living.py wired it in as an argparse default, and site/package.json passes `--dist dist` explicitly, so the default was never consulted. The gate checked 6 fewer pages and 14 fewer names for living-person leakage than the build contained, found none, and passed. Fixed by overriding after parsing, as the kit already did. [Own error 45](/corrections/).",
+        "THE TELL HAD BEEN ON SCREEN FOR FOUR DAYS. In the same run the kit's living gate said 858 pages and this archive's said 852. Two numbers for one build is the precise fault outdir.py was written to remove, and it is named in that module's own docstring. Both lines said ok, so neither was read.",
+        "THE CHECK NOW NAMES THE DIRECTORY IT READ whenever ARCHIVE_OUT is set, so a split verdict shows itself instead of waiting to be noticed in a tally nobody was adding up."
+      ]
+    },
+    {
       "when": "23 September 2026",
       "title": "Read the site against its own research, and found three places it had not kept up",
       "found": [

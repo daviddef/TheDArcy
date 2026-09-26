@@ -2,6 +2,17 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "27 September 2026",
+    cause: "instrument",
+    what: "Wrote a module on 22 September to make every gate grade the build the operator just made, published its docstring as the account of that fault — and left one caller able to defeat it. That caller was the living-person check, on the one rule in this archive that is absolute.",
+    truth:
+      "`tools/outdir.py` was wired into `check_living.py` as an argparse DEFAULT: `ap.add_argument(\"--dist\", default=DIST)`. A default is consulted only when the flag is ABSENT, and `site/package.json` passes `--dist dist` explicitly. So with ARCHIVE_OUT set, every other gate read the new build and this one read the shared `dist` — four days old, 848 pages against 854. It checked 6 fewer pages and 14 fewer names for living-person leakage, found none, and wrote «ok». It also wrote that stale page count into `living.json`, the published file that documents the rule.",
+    why: "The kit had the same fault and fixed it properly, with `a.dist = _outdir.resolve(a.dist)` AFTER parsing — the environment overriding the flag. This archive read the fix, agreed with it, and implemented the intent rather than the mechanism. A default looks like a rule in the line above it and is not one, and nothing about the code's appearance says so: the variable is named DIST, it holds the right directory, and it is simply never consulted.",
+    lesson:
+      "A CONTROL THAT CANNOT FAIL IS NOT A CONTROL, and the form it took here is that A DEFAULT IS NOT A RULE. The tell was available and went unread for four days: the kit's gate said 858 pages in the same run where this one said 852, and two numbers for one build is the exact signature this module was written to remove — it is in its own docstring. Nobody compared the two lines because both said ok. The check now prints which directory it read whenever the variable is set, so a split verdict is visible without having to notice a discrepancy between two tallies nobody was adding up.",
+    href: "/method",
+  },
+  {
     when: "22 September 2026",
     cause: "premise",
     what: "Spent nine days, one enquiry and three errands waiting for the father's name on an 1828 marriage entry. English marriage registers did not record fathers until 1837. There has never been a line on that document to wait for.",

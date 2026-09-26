@@ -133,6 +133,10 @@ def main():
     ap.add_argument("--verbose", action="store_true")
     ap.add_argument("--quiet", action="store_true")
     a = ap.parse_args()
+    # The flag is the repository's default; the variable is the operator.
+    a.dist = outdir.resolve(a.dist)
+    if outdir.note(a.dist):
+        print(outdir.note(a.dist))
 
     if not glob.glob(os.path.join(ROOT, "sources", "*.ged")):
         # Gitignored on purpose — it carries every living person in full — so CI
