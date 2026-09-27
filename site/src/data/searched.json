@@ -3836,6 +3836,14 @@
       "ctl": "named",
       "got": "**The gazette list is returned under the key `newspaper`.** Asking for a `gazette` key returns nothing, and the first run of this script reported **0 gazettes** — one commit from publishing that as an open file. The endpoint's own `total` is now compared with what the parser found, and a disagreement refuses. Control: newspaper 2,014 = total 2,014; gazette 38 = total 38.",
       "href": "/coverage"
+    },
+    {
+      "src": "Trove API — per-title holdings, Queensland and New South Wales, 1826-1940",
+      "what": "Whether the papers whose RANGE covers this family's years actually hold those years",
+      "when": "27 Sep 2026",
+      "outcome": "yield",
+      "got": "**725 titles of 728, and the answer changes what is worth searching.** Parramatta 1849: nothing published there, but **8 NSW papers hold the year and 675 issues survive, 312 of them THE SYDNEY MORNING HERALD** — so George Pitt D'Arcy's death is searchable after all. Brisbane 1856: 3 papers, 154 issues. Brisbane 1902: **36 of 37** in-range papers actually hold it; 1936: **54 of 55**. Three titles are recorded UNKNOWN because the request failed, which is not the same as holding nothing.",
+      "href": "/coverage"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

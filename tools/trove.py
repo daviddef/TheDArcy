@@ -34,7 +34,7 @@ a URL: it goes in the X-API-KEY header so it cannot be logged by a proxy or
 left in a shell history. .env holds it and .env is gitignored, because this
 repository is public.
 """
-import argparse, json, os, re, sys, urllib.request
+import argparse, json, os, re, sys, time, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site", "public", "trove-titles.json")
@@ -56,9 +56,10 @@ def _key():
     return k
 
 
-def _get(path):
+def _get(path, **params):
+    q = urllib.parse.urlencode({"encoding": "json", **params})
     req = urllib.request.Request(
-        f"{API}/{path}?encoding=json",
+        f"{API}/{path}?{q}",
         headers={"X-API-KEY": _key(), "Accept": "application/json", "User-Agent": UA})
     with urllib.request.urlopen(req, timeout=90) as r:
         return json.load(r)
@@ -151,6 +152,50 @@ def fetch():
     return rows
 
 
+
+def years_for(rows, states, lo, hi, pause=0.25):
+    """Per-title YEARS HELD, for the titles this archive actually asks about.
+
+    A title's range is not its holdings. «The Moreton Bay Courier (Brisbane,
+    Qld. : 1846 - 1861)» says fifteen years; whether all fifteen are digitised
+    is a different question, and it is the one that decides whether an absence
+    in 1856 means anything. `include=years` answers it exactly, as an issue
+    count per year — still metadata, still «their date ranges», and so still
+    inside the undertaking the key was granted on.
+
+    Fetched only for the states and the window this archive works in, one at a
+    time with a pause between: 2,052 requests to a national library for data
+    nobody will read is not a good way to hold a key.
+
+    A title that fails is recorded as UNKNOWN rather than as having no years,
+    because those are different facts and only one of them is evidence.
+    """
+    want = [r for r in rows
+            if r["state"] in states
+            and any(not (b < lo or a > hi) for a, b in (r["ranges"] or []))]
+    print(f"  years: {len(want)} title(s) in {', '.join(states)} overlapping {lo}-{hi}")
+    ok = failed = 0
+    for i, r in enumerate(want, 1):
+        try:
+            d = _get(f"newspaper/title/{r['id']}", include="years")
+            held = {}
+            for y in (d.get("year") or []):
+                if str(y.get("date", "")).isdigit():
+                    held[int(y["date"])] = int(y.get("issuecount") or 0)
+            r["years"] = held
+            r["yearsKnown"] = True
+            ok += 1
+        except Exception as e:
+            r["yearsKnown"] = False
+            r["yearsError"] = str(e)[:80]
+            failed += 1
+        time.sleep(pause)
+        if i % 150 == 0:
+            print(f"    {i}/{len(want)}  ok={ok} failed={failed}")
+    print(f"  years: {ok} fetched, {failed} unknown")
+    return ok, failed
+
+
 def covering(rows, place=None, year=None):
     """Titles whose place matches and whose range contains the year."""
     out = []
@@ -158,8 +203,20 @@ def covering(rows, place=None, year=None):
         if place and place.lower() not in ((r["place"] or "") + " " + (r["title"] or "")).lower():
             continue
         if year:
-            # the parsed ranges, never the flattened envelope
-            if not any(a <= year <= b for a, b in (r.get("ranges") or [])):
+            # Holdings first, ranges only as a fallback. A title's range says
+            # what it published; `years` says what is DIGITISED, and for an
+            # absence to mean anything it is the second that counts.
+            #
+            # JSON HAS NO INTEGER KEYS. `years` is written with int keys and
+            # comes back with string ones, so a lookup by int silently misses
+            # every time — Brisbane 1902 read as 0 issues across 37 papers,
+            # which is the fourth zero today that meant «wrong question» and
+            # not «nothing there». Look up by str, always.
+            held = r.get("years")
+            if held is not None:
+                if not held.get(str(year)):
+                    continue
+            elif not any(a <= year <= b for a, b in (r.get("ranges") or [])):
                 continue
         out.append(r)
     return out
@@ -193,7 +250,9 @@ def main():
         where = " ".join(x for x in [a.place, str(a.year) if a.year else ""] if x)
         print(f"  {len(hits)} title(s) covering {where}")
         for r in hits[:40]:
-            print(f"    {r['from']}-{r['to']:<5} {r['state']:<4} {r['title']}")
+            n = (r.get("years") or {}).get(str(a.year), "") if a.year else ""
+            n = f"{n:>4} issues  " if n else " " * 14
+            print(f"    {n}{r['title']}")
     return 0
 
 
