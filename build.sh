@@ -183,6 +183,11 @@ python3 tools/check_retired.py
 # a week. These do not move unless somebody decides they should. Own error 48:
 # the pin moved inside a commit about a chart and three builds printed it
 # correctly while nobody read the line.
+# No credential in a tracked file. This repository is public and a key that
+# reaches it is published on the next push and cannot be unpublished.
+echo "── secrets"
+python3 tools/check_secrets.py
+
 echo "── decisions"
 python3 tools/check_decisions.py
 

@@ -1111,11 +1111,11 @@
     },
     {
       "n": 121,
-      "state": "blocked",
-      "owner": "Trove Support",
+      "state": "done",
+      "owner": "this archive",
       "since": "2026-09-17",
       "what": "Trove API key — four questions answered, reply SENT 20 September",
-      "note": "Liz at Trove Support (RSref189042) would not issue a key until four things were answered: what tools will use the data **and their names**; **whether the tool has AI components and how Trove data would be used with AI**; whether it will be shared and freely; and why the API is needed rather than the website.\n\n**Answered and sent on 20 September**, from the draft at `notes/letters/2026-09-17-trove-api-RSref189042.md`. The AI question is answered **in full and by name** — Anthropic's Claude, through Claude Code — with four undertakings attached: no training on Trove content, no full text retrieved, nothing AI-written published as though it were a Trove record, and a build that refuses when a published claim loses its source. Those are undertakings this archive already keeps, which is the only reason they were worth offering.\n\n**Now waiting on the National Library.** The draft also asked whether a standard key still requires the Data Agreement, which was re-attached after the full-text exemption had been withdrawn."
+      "note": "Liz at Trove Support (RSref189042) would not issue a key until four things were answered: what tools will use the data **and their names**; **whether the tool has AI components and how Trove data would be used with AI**; whether it will be shared and freely; and why the API is needed rather than the website.\n\n**Answered and sent on 20 September**, from the draft at `notes/letters/2026-09-17-trove-api-RSref189042.md`. The AI question is answered **in full and by name** — Anthropic's Claude, through Claude Code — with four undertakings attached: no training on Trove content, no full text retrieved, nothing AI-written published as though it were a Trove record, and a build that refuses when a published claim loses its source. Those are undertakings this archive already keeps, which is the only reason they were worth offering.\n\n**Now waiting on the National Library.** The draft also asked whether a standard key still requires the Data Agreement, which was re-attached after the full-text exemption had been withdrawn.\n\n**GRANTED 27 September 2026, valid to December 2026.** The key is in `.env`, which is gitignored, and a new gate refuses the build if anything credential-shaped reaches a tracked file — this repository is public and a key that lands in it is published on the next push.\n\n**The undertaking is being kept to the letter.** `tools/trove.py` calls the two TITLES endpoints and nothing else; it does not search articles and must not be extended to. The promised open file is published at `/trove-titles.json`."
     },
     {
       "n": 122,

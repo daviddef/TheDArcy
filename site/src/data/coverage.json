@@ -601,6 +601,14 @@
       "span": "1837–1911",
       "verdict": "partial",
       "note": "**Spouses are not paired in the index until 1912.** What the volume and page give you is everyone registered on the same page — typically four names, two marriages — so a couple is an **inference from a shared page** unless something outside the index settles it. Tested against a marriage this archive holds from the register: Thomas Sinegar and Julia Marsh, 28 May 1871, appear on Bristol 6a 131 beside John Offer and Matilda Frances Crump, exactly as the method predicts and with the true pairing knowable only from the register. **Before 1912, read the page and then say «inferred».**"
+    },
+    {
+      "db": "Trove (National Library of Australia) — newspaper and gazette TITLES, via the API",
+      "where": "Australia, by place of publication",
+      "holds": "2,052 titles with their place and their date ranges — not their contents",
+      "span": "1803–1995",
+      "verdict": "good",
+      "note": "**2,052 digitised titles, measured 27 September 2026 through the API**, and the numbers that matter here are small. Papers published AT the place, then anywhere in the colony: **Parramatta 1849 — 0 and 9**; Brisbane 1856 — 2 and 3; Brisbane 1902 — 11 and 37; Brisbane 1936 — 15 and 55.\n\n**So «not in the papers» means different things in different decades.** George Pitt D'Arcy died at Parramatta in 1849 and no Parramatta paper of that year is digitised — but nine New South Wales papers are, so the search is worth making and an absence across those nine would be worth stating. In Brisbane in 1856 there are two papers in the whole colony; an absence there is nearly worthless.\n\n**90 of the 2,052 titles have a GAP in their run** — «Clarion (Brisbane, Qld. : 1940 - 1943; 1945 - 1956)» — and the API's own startDate and endDate flatten those to the envelope, so a year inside a gap reads as covered. The table published at [/trove-titles.json](/trove-titles.json) keeps the ranges apart for that reason.\n\n**Titles only.** The key was issued on an undertaking that no article full text would be retrieved, and this archive keeps it: Trove is cited here as the source of a title and a date range and nothing more."
     }
   ],
   "verdicts": {

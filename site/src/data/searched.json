@@ -3819,6 +3819,23 @@
       "outcome": "blocked",
       "got": "**Eleven results for `S*N*G*` in the Bristol district in 1852, and not one of them readable**: the count appears on the search form and the results page redirects to «Sign up for free to see them». This archive does not make accounts. The count is recorded because it is information; the rows are not. **FreeBMD answered the same question for nothing.**",
       "href": "/coverage"
+    },
+    {
+      "src": "Trove API — newspaper and gazette titles endpoints",
+      "what": "What is digitised for the places and years this archive makes Australian claims about",
+      "when": "27 Sep 2026",
+      "outcome": "yield",
+      "got": "**2,052 titles.** Published at the place, then anywhere in the colony: Parramatta 1849 — **0 and 9**; Sydney 1826 — 3 and 3; Brisbane 1856 — **2 and 3**; Brisbane 1902 — 11 and 37; Brisbane 1936 — 15 and 55. This is what makes an Australian absence quotable, and it is the only thing the key was asked for.",
+      "href": "/coverage"
+    },
+    {
+      "src": "Trove API — the gazette titles endpoint",
+      "what": "Whether the 38 gazettes came back, or whether a zero was this archive's own",
+      "when": "27 Sep 2026",
+      "outcome": "null",
+      "ctl": "named",
+      "got": "**The gazette list is returned under the key `newspaper`.** Asking for a `gazette` key returns nothing, and the first run of this script reported **0 gazettes** — one commit from publishing that as an open file. The endpoint's own `total` is now compared with what the parser found, and a disagreement refuses. Control: newspaper 2,014 = total 2,014; gazette 38 = total 38.",
+      "href": "/coverage"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
