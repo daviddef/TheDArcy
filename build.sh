@@ -175,6 +175,17 @@ python3 tools/check_published.py
 echo "── retired readings"
 python3 tools/check_retired.py
 
+# The five values in this archive that are a DECISION and not a measurement —
+# the kit pin, the living-person policy, the six named on purpose, the two
+# rejected grafts and their published counts, and the pages exempt from the
+# retired-reading gate. Everything else in this output moves every run for
+# good reasons, which is why a general delta report would be turned off within
+# a week. These do not move unless somebody decides they should. Own error 48:
+# the pin moved inside a commit about a chart and three builds printed it
+# correctly while nobody read the line.
+echo "── decisions"
+python3 tools/check_decisions.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent

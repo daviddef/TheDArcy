@@ -1,0 +1,43 @@
+{
+  "_note": "Values that encode a DECISION rather than a measurement. tools/check_decisions.py recomputes each from its real source and REFUSES if one has moved, because a decision changing is exactly the case where a deliberate act should be required — and editing this file in the same commit is that act. Most numbers in this build move every run; these do not. See own error 48.",
+  "decisions": {
+    "kitPin": {
+      "value": "8ec58e6",
+      "why": "Which build of the shared kit this archive's gates are. It moved inside a commit about gating a chart on 27 September and three builds passed over it unnoticed — own error 48."
+    },
+    "livingPolicy": {
+      "value": "named-bare",
+      "why": "named-bare: a living person is named and nothing else about them is published. people.js reads living.json's `policy` and falls back to this string, and the key is currently absent, so the fallback is doing the work."
+    },
+    "namedLiving": {
+      "value": [
+        "Cristina Adele D'Arcy",
+        "Gayle D'Arcy",
+        "Giuseppina Falco",
+        "Graham D'Arcy",
+        "Ian D'Arcy",
+        "Ian Kenneth D'Arcy"
+      ],
+      "why": "The six living people named on purpose, confirmed deliberately by David. Anyone appearing or disappearing here is a change to who this archive publishes."
+    },
+    "grafts": {
+      "value": {
+        "Hornby": 71,
+        "Keele": 27
+      },
+      "why": "The two rejected links and how many people hang off each. /how-far-back publishes these counts in a sentence — 71 on a single unevidenced link, 27 on a disproved one — so if the tree moves, that sentence goes stale."
+    },
+    "retiredAllow": {
+      "value": [
+        "/changes",
+        "/corrections",
+        "/errands",
+        "/open-questions",
+        "/searched",
+        "/what-we-got-wrong",
+        "/worklist"
+      ],
+      "why": "The pages allowed to restate a withdrawn reading, because their subject IS the withdrawal. Widening this list quietly would disarm the retired-reading gate."
+    }
+  }
+}
