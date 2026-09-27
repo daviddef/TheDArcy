@@ -24,7 +24,13 @@ const groups = [{
     n: r.n,
     what: r.what,
     who: `<strong>${r.where}</strong> · ${r.cost}`,
-    why: mdp(r.settles),
+    /* `why` in the DATA is this archive's one-line statement of stakes —
+       "THE CHEAPEST DECISIVE DOCUMENT ON THIS SITE", "THE QUESTION WAS
+       ADDRESSED TO THE WRONG CENTURY" — and until 27 September it was written
+       into 46 of the 66 rows and rendered on none of them. The kit's component
+       has no slot of its own for it, so it leads the slot that exists. A line
+       nobody can read is not published, whatever the repository says. */
+    why: mdp([r.why ? `**${r.why}**` : "", r.settles].filter(Boolean).join("\n\n")),
     ref: r.file,
     stateLabel: e.states[r.state] ? e.states[r.state][0] : r.state,
     colour: e.states[r.state] ? e.states[r.state][1] : null,

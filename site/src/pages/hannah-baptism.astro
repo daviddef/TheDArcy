@@ -4,7 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
-import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import { md, mdp } from "@daviddef/archive-kit/lib/md.js";
 import d from "../data/hannah-baptism.json";
 ---
 <Base
@@ -96,6 +96,33 @@ import d from "../data/hannah-baptism.json";
     <p class="lede" set:html={mdp(d.berkley.body)}></p>
     <p style="margin-top:.8rem"><span class="chip doc">{d.berkley.chip}</span>
       {" "}<a href={u("/atlas/")}>The map →</a></p>
+  </Blk>
+
+  {/* `lydiaTested` was written on 16 September and rendered by nothing until
+      27 September — four tested claims about Hannah's mother, including her
+      death registration, sitting in the data and on no page. Found by a sweep
+      for prose in the data files that reaches no built HTML. */}
+  <Blk label={`Her mother, tested · ${d.lydiaTested.found}`} title={d.lydiaTested.head}>
+    <p class="lede" set:html={mdp(d.lydiaTested.lede)}></p>
+    <table style="margin-top:1.3rem">
+      <thead><tr><th>The claim</th><th>Verdict</th><th>Grade</th><th>What was found</th></tr></thead>
+      <tbody>{d.lydiaTested.rows.map(([claim, verdict, grade, found]) => (
+        <tr>
+          <td><strong>{claim}</strong></td>
+          <td class="mono small">{verdict}</td>
+          <td><span class={`chip ${grade === "documented" ? "doc" : grade === "disputed" ? "dis" : "inf"}`}>{grade}</span></td>
+          <td set:html={md(found)} />
+        </tr>))}
+      </tbody>
+    </table>
+    <Note style="margin-top:1.3rem">
+      <strong>{d.lydiaTested.whereHead}.</strong> <span set:html={mdp(d.lydiaTested.where)} />
+      <span class="chip inf">{d.lydiaTested.chipWhere}</span>
+    </Note>
+    <Note>
+      <strong>{d.lydiaTested.fitHead}.</strong> <span set:html={mdp(d.lydiaTested.fit)} />
+      <span class="chip doc">{d.lydiaTested.chipFit}</span>
+    </Note>
   </Blk>
 
   <Blk label={`Three tests · ${d.lydiaHunt.found}`} title={d.lydiaHunt.head}>

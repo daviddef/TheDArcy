@@ -199,5 +199,11 @@ python3 tools/check_decisions.py
 # two ways on six files, had sat unnoticed for weeks with nothing able to see
 # it, and because the second thing it found was a place split three ways in
 # the gazetteer. Read it; do not obey it.
+# Reports, never gates. Prose written into a data file and rendered by no
+# template is committed, deployed and invisible — which is how 46 errand
+# stakes lines and Hannah's mother's death registration sat unpublished.
+echo "── unpublished prose (informational)"
+python3 tools/check_unpublished.py || true
+
 echo "── agreement report (informational)"
 python3 tools/agree.py --min 2 || true
