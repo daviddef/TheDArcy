@@ -82,13 +82,54 @@ def retired_allow():
     return sorted(_json("retired.json").get("allow", []))
 
 
+def living_exemptions():
+    """EVERY phrase the living gate is told to let through, not just the six.
+
+    check_living.py builds its allow-set from THREE lists in living.json —
+    `named` (living people this archive decided to name), `namesakes` (not
+    living people at all) and `allow` (bare strings). namedLiving above watches
+    the first, because who this archive publishes is its own decision. This
+    watches the union, because the union is the SURFACE: a phrase added to
+    namesakes is exempted from the living rule just as effectively as one added
+    to named, and nothing else here would say so.
+
+    Found by a neighbouring session's account of Tersia Booyzen — a probe that
+    read the declaration agreed with a gate that could not see her. The shape
+    of that fault is a probe watching a narrower thing than the gate enforces.
+    """
+    l = _json("living.json")
+    out = set(l.get("allow", []))
+    for k in ("namesakes", "named"):
+        out |= {e["phrase"] for e in l.get(k, []) if e.get("phrase")}
+    return sorted(out)
+
+
 CHECKS = {
     "kitPin": kit_pin,
     "livingPolicy": living_policy,
     "namedLiving": named_living,
+    "livingExemptions": living_exemptions,
     "grafts": grafts,
     "retiredAllow": retired_allow,
 }
+
+
+def canon(v):
+    """Compare by MEANING, not by spelling.
+
+    The probes below already return sorted lists, so the computed side is
+    canonical. The DECLARED side is whatever is in the file, and a list that
+    has been reordered — by a hand edit, by a merge, by a tool that rewrites
+    JSON — is the same decision written differently. Refusing it would be a
+    false alarm, and a check that cries wolf gets turned off, which is the one
+    way this gate can fail completely. Borrowed from the landing session, who
+    put it in the kit's version and were right that mine did not have it.
+    """
+    if isinstance(v, list):
+        return sorted(canon(x) for x in v)
+    if isinstance(v, dict):
+        return sorted((k, canon(x)) for k, x in v.items())
+    return v
 
 
 def main():
@@ -98,7 +139,7 @@ def main():
         print(f"  FAIL  decisions  cannot read {os.path.relpath(DECISIONS, ROOT)} — {e}")
         return 1
 
-    moved, undeclared, unreadable = [], [], []
+    moved, undeclared, orphaned, unreadable = [], [], [], []
     for key, fn in CHECKS.items():
         try:
             now = fn()
@@ -109,14 +150,14 @@ def main():
             undeclared.append((key, now))
             continue
         was = declared[key].get("value")
-        if was != now:
+        if canon(was) != canon(now):
             moved.append((key, was, now, declared[key].get("why", "")))
 
     for key in declared:
         if key not in CHECKS:
-            undeclared.append((key, "declared here and computed by nothing"))
+            orphaned.append(key)
 
-    if not (moved or undeclared or unreadable):
+    if not (moved or undeclared or orphaned or unreadable):
         print(f"  ok    decisions  {len(CHECKS)} decision(s) unchanged since they were made")
         return 0
 
@@ -130,7 +171,13 @@ def main():
         print("          the SAME commit. If it was not, look for a commit about something else")
         print("          that carried the file with it — that is how the kit pin moved unseen.")
     for key, what in undeclared:
-        print(f"  FAIL  decisions  {key} is not declared — {json.dumps(what, ensure_ascii=False)[:90]}")
+        print(f"  FAIL  decisions  {key} is COMPUTED AND NOT DECLARED — {json.dumps(what, ensure_ascii=False)[:80]}")
+        print("          A probe nobody declared would be adopted silently at whatever value it")
+        print("          happens to hold today. Declare it, with the reason it is a decision.")
+    for key in orphaned:
+        print(f"  FAIL  decisions  {key} is DECLARED AND COMPUTED BY NOTHING")
+        print("          A key with no probe is written down rather than watched, which reads")
+        print("          exactly like a check and is not one. Add a probe or remove the key.")
     for key, why in unreadable:
         print(f"  FAIL  decisions  {key} UNREADABLE — {why}")
         print("          Reported as unreadable rather than guessed at: a source that cannot be")

@@ -38,6 +38,20 @@
         "/worklist"
       ],
       "why": "The pages allowed to restate a withdrawn reading, because their subject IS the withdrawal. Widening this list quietly would disarm the retired-reading gate."
+    },
+    "livingExemptions": {
+      "value": [
+        "Anne Corbett",
+        "Cristina Adele D'Arcy",
+        "Gayle D'Arcy",
+        "Giuseppina Falco",
+        "Graham D'Arcy",
+        "Graham D'Arcy Anderson",
+        "Ian D'Arcy",
+        "Ian Kenneth D'Arcy",
+        "Richard Smith"
+      ],
+      "why": "Every phrase the living gate is told to let through — the union of living.json's `named`, `namesakes` and `allow`. namedLiving watches who this archive decided to publish; this watches the whole exemption surface, because a phrase added to namesakes is exempted just as effectively and nothing else here would say so."
     }
   }
 }
