@@ -9,6 +9,10 @@
       "title": "A record offered unasked, found in the index this archive had written off — and an S that a clerk read as an L",
       "found": [
         [
+          "Corrected",
+          "/direct-line — the spine badged the Hornby generations «Inferred» where every other page says «Disputed». Own error 47"
+        ],
+        [
           "Added",
           "/thomas-sinegar — James Sanigar's marriage, Bristol 6a 155, December quarter 1852, and a surname for Laura"
         ],
@@ -34,6 +38,7 @@
         ]
       ],
       "did": [
+        "THE SPINE WAS THE MOST CREDULOUS PAGE IN THE ARCHIVE ABOUT ITS OWN MOST CONTESTED CLAIM. /direct-line badged the six generations above the Hornby graft «Inferred»; their person pages badge them «Disputed» and /how-far-back calls the link unevidenced. The cause was a fallback: chip() returned the literal «unproven» for anyone the hand-kept table of seven does not carry, and the Evidence component folds that to «Inferred». Eight of fifteen badges on the page were that fallback. It now falls back to grade(), which computes the answer from provenance.json and is total — 7 Disputed, 6 Documented, 2 Family, and no invented grade. Found by applying a neighbouring session's correction to this archive's own code. [Own error 47](/corrections/).",
         "FOUND THE 1852 MARRIAGE BRISTOL ARCHIVES MENTIONED, free, in nine minutes. SANIGAR, JAMES — BRISTOL — 6A — 155 — DECEMBER QUARTER 1852, spelt the way they read the 1828 register and not the way this archive published it. Control first: SMITH in the same district and year returns 31, and every quarter is marked >99% transcribed.",
         "AND A SURNAME FOR LAURA. The GRO prints everyone registered on a page, so Bristol 6a 155 carries four names — Sarah Godfrey, James Sanigar, LAURA SAYER, Henry Small. Lydia's baptism of 1866 names her mother Laura and gives no surname. IT IS AN INFERENCE, NOT A PAIRING THE INDEX STATES: the GRO does not pair spouses until 1912, and that is now a coverage row of its own.",
         "THE CONTROL FAILED, AND THAT WAS THE FINDING. Asked whether the same instrument could find a marriage this archive already holds — Thomas Sinegar to Julia Marsh, 28 May 1871 — it returned nothing, in Bristol or in England. Asking for the bride instead returned Bristol 6a 131, and the man on that page is THOMAS LINEGAR. An S transcribed as an L.",

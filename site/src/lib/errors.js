@@ -3,6 +3,17 @@
 export const OWN = [
   {
     when: "27 September 2026",
+    cause: "premise",
+    what: "The spine — the page that draws this archive's own descent — badged the six generations above the Hornby graft «Inferred». Their own person pages badge them «Disputed», and /how-far-back calls the link that reaches them a single unevidenced one. Seven pages, two answers, and the spine was the credulous one.",
+    truth:
+      "`chip()` on /direct-line read a hand-kept table of seven graded people and fell back to the literal \"unproven\" for everyone else, which the shared Evidence component folds to «Inferred». Eight of the fifteen badges on the page were that fallback. Six were Hornby: Thomas Darcy, Conyers of Hornby Castle, the 1st and 2nd Earls of Holderness, John Darcy Lord Conyers and Robert Darcy — every one of them carrying `graft: \"Hornby\"` in provenance.json, which is what makes their own pages say disputed. The other two were the living pair at the foot of the line, badged for nothing.",
+    why: "The vocabulary on that page predates the ladder the seven archives now share, and the page even says so in a comment — it explains that \"unproven\" folds to \"inferred\" so the words match everywhere else. That comment is about wording. It never asked whether the FALLBACK was true, and a fallback is an assertion: «inferred» says this archive drew an inference. About these six it drew none; it has an entry for neither.",
+    lesson:
+      "AN UNKNOWN MUST NOT FALL BACK TO A GRADE. Every level on the ladder is a claim, so there is no safe default among them — the only honest fallback is the one that computes the answer, or one that says no answer was given. The fallback is now `grade()` itself, which reads provenance.json and the graft list and is total; confidence.json still wins where it has a row, because those seven carry a written reason that cannot be computed. And it was not found by looking: a neighbouring session wrote to say the kit had been resolving unrecognised values to «Family», which is the same fault one layer along. THE CHECK THAT FOUND IT WAS APPLYING SOMEBODY ELSE'S CORRECTION TO MY OWN CODE.",
+    href: "/direct-line",
+  },
+  {
+    when: "27 September 2026",
     cause: "instrument",
     what: "Published FreeBMD as «unusable — returns the results-page furniture with NO RESULT ROWS for every query», and kept that verdict for a week. FreeBMD works. The search had never been run: the button that was pressed belongs to a different box.",
     truth:

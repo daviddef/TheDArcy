@@ -8,6 +8,7 @@ import { u } from "../lib/url.js";
 import { publishable, nameIfPublishable, countLiving } from "../lib/people.js";
 import famData from "../data/families.json";
 import { people } from "../lib/people.js";
+import { grade } from "../lib/grade.js";
 
 /* «and why no links for the wives?» — 22 September. Thirteen of the
    fifteen generations have one and every one of them was drawn as plain
@@ -103,11 +104,26 @@ const PLACE_FIX = {
     "Darcy Meynill, Yorkshire — the tree's geocoder has appended a county in New York State",
 };
 
-const chip = (id) => CONFIDENCE[id]?.[0] || "unproven";
-const why = (id) => CONFIDENCE[id]?.[1] || "";
 /* The hand-kept vocabulary on this page predates the ladder the seven archives
-   now share. "unproven" is folded to "inferred" by the Evidence component, so
-   the words on the spine are the same words as everywhere else. */
+   now share, and for a week it also OUTRANKED it. `chip()` fell back to the
+   literal "unproven" for anyone confidence.json does not carry, which the
+   Evidence component folds to "inferred" — so eight of the fifteen badges on
+   this page asserted an inference this archive had never drawn. Six of those
+   eight are the generations above the HORNBY GRAFT, which /how-far-back calls
+   a single unevidenced link and which every one of their own person pages
+   badges DISPUTED. The spine was the most credulous page in the archive about
+   its own most contested claim, and it disagreed with six pages to say so.
+
+   So the fallback is now the ladder itself rather than a word. grade() reads
+   provenance.json and the graft list and is total — documented, disputed or
+   family — and confidence.json still wins where it has an entry, because those
+   seven rows carry a hand-written reason this cannot compute.
+
+   Found by applying a neighbouring session's correction to this archive's own
+   code: they had `no` and `open` resolving to "Family", and the lesson is the
+   same one either way — AN UNKNOWN MUST NOT FALL BACK TO A GRADE. */
+const chip = (id) => CONFIDENCE[id]?.[0] || grade(SLUG_BY_ID.get(id))?.level || "family";
+const why = (id) => CONFIDENCE[id]?.[1] || "";
 
 const MON = { JAN: "Jan", FEB: "Feb", MAR: "Mar", APR: "Apr", MAY: "May", JUN: "Jun",
   JUL: "Jul", AUG: "Aug", SEP: "Sep", OCT: "Oct", NOV: "Nov", DEC: "Dec" };
