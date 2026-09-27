@@ -4,6 +4,17 @@ export const OWN = [
   {
     when: "27 September 2026",
     cause: "memory",
+    what: "Published, and told David, that «George Pitt D'Arcy died at Parramatta in 1849 and this archive has never searched for a notice». His obituary has been in this archive's own register the whole time — The Sydney Morning Herald, 1849, with the Trove article id beside it. Written in the same hour as a message to a neighbouring archive about checking a claim before making it.",
+    truth:
+      "`person-records.json` carries it under george-pitt-d-arcy-1783: «obituary · died Parramatta 22 Jul 1849, aged 69 · verdict \"gout which had flown to the head\"», source «Trove, Australian newspapers», link nla.news-article59769271. It was found on the Trove website long before any API key existed, which is exactly why it did not come to mind while reasoning about what the key had just unlocked.",
+    why: "The holdings data was genuinely new and the pleasure of it did the thinking. «675 issues survive and nobody has looked» is a better sentence than «675 issues survive, and the one thing we wanted from them we already had», so the better sentence got written and the register was never asked. This archive has a tool for exactly this — crossread.py, built in September after Constantine D'Arcy sat published on one page while three others called him unplaced — and it was not run.",
+    lesson:
+      "THE ARCHIVE IS THE FIRST SOURCE TO SEARCH AND IT IS THE ONE THAT GETS SKIPPED. Four times today an instrument returned a zero that meant the wrong question; this is the same shape with no instrument involved, and the register was one grep away. It also matters WHO it was said to: the claim went into a coverage note, into a commit message, and into a report to David, inside an hour of telling another archive that being the party doing the correcting is not evidence. THAT SENTENCE APPLIES TO THE ONE WRITING IT. The finding survives — the holdings are real and an absence across 675 issues is now quotable — but it buys something smaller than was claimed.",
+    href: "/coverage",
+  },
+  {
+    when: "27 September 2026",
+    cause: "memory",
     what: "Told a neighbouring session, flatly and while correcting them, that this archive's kit pin was 2790d85 and not the 8ec58e6 they had read — and advised them to re-check every pin in the estate on the strength of it. They were right. The pin is 8ec58e6. They re-read all ten repositories from both disk and git HEAD before answering.",
     truth:
       "Commit 329d58e did set 2790d85 and this archive made it deliberately, which is the whole of why it was remembered. Four commits later `fadb87c` — «A relationship no chart should draw, gated», a session gating a chart that had drawn a two-year-old boy with a wife — moved the pin to 8ec58e6 as a side effect of a commit about something else entirely. This archive then built on top of it three times without noticing.",
