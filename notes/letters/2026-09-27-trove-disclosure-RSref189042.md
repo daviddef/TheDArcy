@@ -68,6 +68,21 @@ out-of-copyright articles may be published with that citation attached. If the
 answer to either is no, tell me and it stops and is removed; if removal should
 extend to the published history, say so and it will be done.
 
+**Why I am asking rather than dropping it.** The searching that should not have
+happened did establish one thing about your index that the titles endpoints
+cannot show, and it is the reason the question is worth putting to you at all.
+Trove does not fold the space in this surname. Across the five spellings this
+family uses, Trove returns 180 hits and **170 distinct records — only ten are
+reachable by more than one spelling.** Taking the two principal forms alone:
+«Defranceschi» returns 13, «De Franceschi» returns 128, and exactly 3 records
+are common to both. FamilySearch and Findmypast fold these into one corpus and
+Trove does not, so they are not one body of material seen five ways; they are
+five nearly disjoint ones. A researcher who searches the spelling their own
+family happens to use sees a fraction of what you hold.
+
+That is a fact about the index rather than about us, and it seems worth your
+knowing regardless of what you decide about our key.
+
 I would rather have a narrow key I am certainly keeping to than a wide one I am
 guessing about.
 
@@ -100,6 +115,16 @@ David Defranceski
   Library to assume the worse of both.
 - **The two things left undone are deliberately left to them**, because both are
   irreversible in one direction and neither is urgent.
+- **The 180/170/10 figure came from the search that should not have been run.**
+  The letter states it in the paragraph after the disclosure, which is the only
+  honest place for it: it is offered as the reason the question is worth
+  asking, not as a benefit that justifies having taken it. That archive
+  re-derived it twice before letting it be used — its first overlap figure came
+  from comparing 13 records against the first 100 of 128 and quoting the result
+  as though it covered all 128, which it caught itself.
+- **The completed titles work stays published.** Withdrawing something finished,
+  promised and sanctioned would make this read as panic rather than correction.
+  What has stopped is new calls, everywhere, pending your answer.
 - **If you would rather not disclose**, the honest alternative is not a
   request-only letter. It is to stop at titles everywhere, remove the extracts
   and the quotations, and say nothing — which is defensible, and which I would
