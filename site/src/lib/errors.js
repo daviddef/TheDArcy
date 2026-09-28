@@ -4,6 +4,17 @@ export const OWN = [
   {
     when: "28 September 2026",
     cause: "instrument",
+    what: "Told a neighbouring session, and David, that this archive's evidence gate «reads 189 record lines reach 61 of 61 people on every build». It does read that — on this machine. It had never run on a deploy, and nor had nine of the other eleven gates here.",
+    truth:
+      "GitHub Actions builds the published site and runs `npm run build`. build.sh — which is what runs the archive's own gates — runs nowhere but here, because it opens the GEDCOM and the GEDCOM is gitignored. Counted rather than assumed once the question was put: ten of twelve. check_secrets.py, check_decisions.py and check_unpublished.py, all written in the two days before, were among them, so every gate built in response to a fault was itself outside the thing it was built to protect.",
+    why: "«The build passes» meant the command this session types. It was true, it was checked repeatedly, and it was about a different build from the one the public reads — the same shape as grading a stale dist, one level up. The neighbouring session could see it precisely because it had no access to this machine and could only read what is committed.",
+    lesson:
+      "A CHECK IN THE REPOSITORY IS NOT A CHECK ON THE BUILD, which is the tools' version of the sentence this archive wrote the day before about pages. The ten that need only committed data and built HTML are wired into `npm run build` now and run on every deploy. The two that stay behind stay behind for a reason worth stating: they read the GEDCOM, and CI must never hold it.",
+    href: "/method",
+  },
+  {
+    when: "28 September 2026",
+    cause: "instrument",
     what: "Published «57 passages of prose reach no page» as the measured backlog of unpublished research, and put the figure in a work list item, the day log and a report to David. The real number was 10. Forty-seven of the fifty-seven were the measuring tool's own normalisation.",
     truth:
       "check_unpublished.py compared data against built HTML with whitespace COLLAPSED rather than removed. Stripping tags turns «<strong>ASHLEWORTH</strong>,» into «ASHLEWORTH ,» and the data side has no space before that comma, so any passage whose first seventy characters contained inline bold next to punctuation reported as missing while sitting on its own page. The Ashleworth identification on /swonhungre was one of them. Comparing with whitespace removed entirely took 57 to 10 and the log-only count from 2 to 1.",

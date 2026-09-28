@@ -9,6 +9,10 @@
       "title": "Catherine Sneyd was findable only from the search log, and the count that found her was wrong",
       "found": [
         [
+          "Fixed",
+          "the deploy ran two of this archive's twelve gates. It runs twelve now"
+        ],
+        [
           "Added",
           "/sneyds — Catherine, dead at four, with her death registration and a national control"
         ],
@@ -18,6 +22,9 @@
         ]
       ],
       "did": [
+        "TEN OF THIS ARCHIVE'S TWELVE GATES NEVER RAN ON THE DEPLOY. The landing session pointed out that check_links.py — the evidence gate, the one in the Mazza lineage — was wired into nothing. It was in build.sh, which runs on this machine; it was not in `npm run build`, which is what GitHub Actions runs, and Actions builds the site the public reads. Measured rather than accepted, and it was not one gate: atlas, controls, decisions, links, living-rule, namefold, published, retired, secrets and unpublished were all in that position. Only check_living.py had been wired. EVERY GATE WRITTEN YESTERDAY AND TODAY WAS AMONG THEM.",
+        "CI CANNOT SIMPLY RUN build.sh, because that begins by reading the GEDCOM and the GEDCOM is gitignored — it carries living people in full and Actions must never hold a copy. So the ten gates that need only committed data and built HTML are collected in tools/check_archive.py, wired into `npm run build`, and they now run on every deploy. The kit pin was not touched.",
+        "THE ARCHIVE'S OWN SENTENCE FROM THE DAY BEFORE APPLIES TO ITS TOOLS: only a page is a published claim, a file in the repository is not. A GATE NOTHING RUNS IS THE SAME THING — a check in the repository is not a check on the build.",
         "A NEIGHBOURING SESSION SHARPENED YESTERDAY'S QUESTION and the sharper version found something. Not «does a finding reach a page» but «does it reach a page a reader would browse, or only a log page that points at itself». A record whose sole home is /searched is filed, not shown.",
         "THE LOG PAGES ARE NOT A NEW LIST. retired.json already declares them — the pages permitted to restate a withdrawn reading BECAUSE THEIR SUBJECT IS THE WITHDRAWAL. The same set, declared for the same reason, so the two checks cannot drift apart.",
         "IT FOUND CATHERINE SNEYD. Died at four; death registered December quarter 1849, Stoke on Trent, GRO volume 17 page 114; born Hanley 1845, mother's maiden name BIDDULPH; and a control across the whole of England and Wales for every Catherine Sneyd death between 1845 and 1852 returning EXACTLY ONE. sneyds.astro referred to none of it. She is on /sneyds now.",
