@@ -4,6 +4,17 @@ export const OWN = [
   {
     when: "28 September 2026",
     cause: "instrument",
+    what: "Fixed eight gates that swallowed an unknown flag, said so, and did not check whether anything else in tools/ chose a build directory some other way. Three did, by hardcoding `site/dist` — including crossread.py, the tool written for the exact failure committed as own error 49 that morning.",
+    truth:
+      "agree.py, crossread.py and sitemap.py each set `DIST = os.path.join(ROOT, \"site\", \"dist\")` and read no environment. agree.py runs in every build here, so with ARCHIVE_OUT set it has been reporting on the shared dist of 23 September — five days stale — against 225 files where the real build has 218. crossread.py is wired into nothing, so the tool this archive reproached itself for not running would have graded the wrong build if it had been. tools/sitemap.py is referenced nowhere at all; the kit's is used instead.",
+    why: "The eight gates were found by a neighbouring session tripping over one of them, and the fix was scoped to what they had tripped over. «Eight gates fixed» was reported as though it were the class, when it was the instances that shared one symptom — a flag. The ones that never took a flag, and so never had the symptom, were not looked at.",
+    lesson:
+      "THE QUESTION IS NOT «DOES THE FLAG WORK» BUT «HOW MANY WAYS CAN THIS BE CHOSEN, AND WOULD ANYTHING SAY SO». The neighbouring session took that sentence to two other archives and found two more variants — one where the environment is never read but a wrapper happens to substitute it, and one where nothing is read and nothing covers for it. Four shapes of one missing agreement across three archives, and a fifth here found only by asking the question of the tools that had no symptom at all. Everything that names a build directory now asks outdir, and nothing else may.",
+    href: "/method",
+  },
+  {
+    when: "28 September 2026",
+    cause: "instrument",
     what: "Told a neighbouring session, and David, that this archive's evidence gate «reads 189 record lines reach 61 of 61 people on every build». It does read that — on this machine. It had never run on a deploy, and nor had nine of the other eleven gates here.",
     truth:
       "GitHub Actions builds the published site and runs `npm run build`. build.sh — which is what runs the archive's own gates — runs nowhere but here, because it opens the GEDCOM and the GEDCOM is gitignored. Counted rather than assumed once the question was put: ten of twelve. check_secrets.py, check_decisions.py and check_unpublished.py, all written in the two days before, were among them, so every gate built in response to a fault was itself outside the thing it was built to protect.",

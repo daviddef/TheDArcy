@@ -65,11 +65,14 @@ found nothing since. That is a reasonable thing for a check to do, but do
 not read a long list from it as a long list of problems.
 """
 import json, os, re, sys, glob, html, collections
+import sys as _s, os as _o
+_s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+import outdir
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "site", "src", "data")
-DIST = os.path.join(ROOT, "site", "dist")
+DIST = outdir.out()   # never a hardcoded dist: see own error 52
 
 # Event words, and the span in characters within which a year counts as "near".
 EVENTS = {

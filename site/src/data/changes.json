@@ -10,6 +10,10 @@
       "found": [
         [
           "Fixed",
+          "three more tools chose a build directory by hardcoding it, including the one written for own error 49"
+        ],
+        [
+          "Fixed",
           "eight gates accepted flags they did not take and ignored them. They refuse now"
         ],
         [
@@ -26,6 +30,7 @@
         ]
       ],
       "did": [
+        "AND FIXING THE EIGHT WAS NOT FIXING THE CLASS. The eight shared a symptom — a flag they swallowed — and the fix was scoped to the symptom. Asking the fuller question of every tool found three more that name a build directory by hardcoding `site/dist` and reading no environment at all: agree.py, which runs in every build here and has therefore been reporting on the shared dist of 23 SEPTEMBER, five days stale, 225 files against the real build's 218; sitemap.py, which nothing references because the kit's is used; and CROSSREAD.PY, WHICH IS THE TOOL THIS ARCHIVE REPROACHED ITSELF THAT MORNING FOR NOT RUNNING — it would have graded the wrong build if it had been run. All three ask outdir now. [Own error 52](/corrections/).",
         "AND THE FALSE FAILURE HAD A CAUSE IN THIS ARCHIVE'S CODE, not in the session that reported it. It ran `python3 tools/check_links.py --dist <a fresh build>` twice and got a FAIL both times. check_links.py has no argparse and takes no arguments, so `--dist` was SILENTLY SWALLOWED and the gate graded whatever stale dist was on disk while the fresh build sat untouched beside it. Two archives then held two different numbers for one question, and only asking for the exact command settled it.",
         "EIGHT GATES WERE IN THAT POSITION — links, published, retired, controls, namefold, atlas, living-rule, secrets. A tool that ACCEPTS an argument and ignores it is worse than one that rejects it and worse than one that honours it, because the caller has no way to find out. They now refuse, name the directory they would have graded, and say that ARCHIVE_OUT is the way to point them at a build. Exit 2, verified.",
         "TEN OF THIS ARCHIVE'S TWELVE GATES NEVER RAN ON THE DEPLOY. The landing session pointed out that check_links.py — the evidence gate, the one in the Mazza lineage — was wired into nothing. It was in build.sh, which runs on this machine; it was not in `npm run build`, which is what GitHub Actions runs, and Actions builds the site the public reads. Measured rather than accepted, and it was not one gate: atlas, controls, decisions, links, living-rule, namefold, published, retired, secrets and unpublished were all in that position. Only check_living.py had been wired. EVERY GATE WRITTEN YESTERDAY AND TODAY WAS AMONG THEM.",

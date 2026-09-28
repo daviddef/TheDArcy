@@ -9,10 +9,13 @@ skips anything that noindexes itself, so the sitemap can never disagree with
 the privacy rule the pages already state.
 """
 import os, re, sys, json, datetime
+import sys as _s, os as _o
+_s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+import outdir
 
 here = os.path.dirname(os.path.abspath(__file__))
 site = os.path.join(here, "..", "site")
-dist = os.path.join(site, "dist")
+dist = outdir.out()   # never a hardcoded dist: see own error 52
 cfg = open(os.path.join(site, "astro.config.mjs"), encoding="utf-8").read()
 
 origin = re.search(r"site:\s*['\"]([^'\"]+)", cfg).group(1).rstrip("/")
