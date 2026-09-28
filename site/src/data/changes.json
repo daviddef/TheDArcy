@@ -10,6 +10,10 @@
       "found": [
         [
           "Fixed",
+          "eight gates accepted flags they did not take and ignored them. They refuse now"
+        ],
+        [
+          "Fixed",
           "the deploy ran two of this archive's twelve gates. It runs twelve now"
         ],
         [
@@ -22,6 +26,8 @@
         ]
       ],
       "did": [
+        "AND THE FALSE FAILURE HAD A CAUSE IN THIS ARCHIVE'S CODE, not in the session that reported it. It ran `python3 tools/check_links.py --dist <a fresh build>` twice and got a FAIL both times. check_links.py has no argparse and takes no arguments, so `--dist` was SILENTLY SWALLOWED and the gate graded whatever stale dist was on disk while the fresh build sat untouched beside it. Two archives then held two different numbers for one question, and only asking for the exact command settled it.",
+        "EIGHT GATES WERE IN THAT POSITION — links, published, retired, controls, namefold, atlas, living-rule, secrets. A tool that ACCEPTS an argument and ignores it is worse than one that rejects it and worse than one that honours it, because the caller has no way to find out. They now refuse, name the directory they would have graded, and say that ARCHIVE_OUT is the way to point them at a build. Exit 2, verified.",
         "TEN OF THIS ARCHIVE'S TWELVE GATES NEVER RAN ON THE DEPLOY. The landing session pointed out that check_links.py — the evidence gate, the one in the Mazza lineage — was wired into nothing. It was in build.sh, which runs on this machine; it was not in `npm run build`, which is what GitHub Actions runs, and Actions builds the site the public reads. Measured rather than accepted, and it was not one gate: atlas, controls, decisions, links, living-rule, namefold, published, retired, secrets and unpublished were all in that position. Only check_living.py had been wired. EVERY GATE WRITTEN YESTERDAY AND TODAY WAS AMONG THEM.",
         "CI CANNOT SIMPLY RUN build.sh, because that begins by reading the GEDCOM and the GEDCOM is gitignored — it carries living people in full and Actions must never hold a copy. So the ten gates that need only committed data and built HTML are collected in tools/check_archive.py, wired into `npm run build`, and they now run on every deploy. The kit pin was not touched.",
         "THE ARCHIVE'S OWN SENTENCE FROM THE DAY BEFORE APPLIES TO ITS TOOLS: only a page is a published claim, a file in the repository is not. A GATE NOTHING RUNS IS THE SAME THING — a check in the repository is not a check on the build.",

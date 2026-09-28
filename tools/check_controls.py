@@ -28,6 +28,10 @@ untested when you are not is the harmless direction; the reverse is not.
   python3 tools/check_controls.py --list     # show the grandfathered rows
 """
 import os, re, sys, json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import outdir
+outdir.strict_argv()   # a flag this gate does not take is an error, not a no-op
+
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SEARCHED = os.path.join(HERE, "..", "site", "src", "data", "searched.json")

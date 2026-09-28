@@ -29,6 +29,10 @@ attested spelling of the family name.
     python3 tools/check_namefold.py
 """
 import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import outdir
+outdir.strict_argv()   # a flag this gate does not take is an error, not a no-op
+
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "site", "src", "data")

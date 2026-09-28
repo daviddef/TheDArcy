@@ -40,6 +40,10 @@ CLAIMS to be exact, because that is the only part a reader cannot see.
     python3 tools/check_atlas.py
 """
 import json, math, os, sys, collections
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import outdir
+outdir.strict_argv()   # a flag this gate does not take is an error, not a no-op
+
 
 # ONE RULE, ONE IMPLEMENTATION. This file used to carry its own copy of the
 # containment test and its own copy of the string tidying, and the two drifted

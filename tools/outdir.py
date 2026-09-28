@@ -57,3 +57,40 @@ def note(dist):
     """One line for a tool to print, so a reader knows which build was read."""
     return ("" if not os.environ.get("ARCHIVE_OUT")
             else f"  ..    reading {os.path.relpath(dist, ROOT)} (ARCHIVE_OUT)")
+
+
+def strict_argv(argv=None):
+    """Refuse a flag this gate does not take, instead of ignoring it.
+
+    28 September 2026. A neighbouring session ran
+
+        python3 tools/check_links.py --dist <a fresh build>
+
+    twice, and reported a FAIL both times. check_links.py has no argparse and
+    takes no arguments, so `--dist` was silently swallowed and the gate graded
+    whatever stale `dist` happened to be on disk while the fresh build sat
+    untouched beside it. Two sessions then held two different numbers for the
+    same question, and it took a request for the exact command to settle.
+
+    The gate was not wrong and the caller was not careless: the tool ACCEPTED
+    an argument and ignored it, which is the worst of the three things it could
+    have done. Eight gates here were in that position.
+
+    So they say so now. ARCHIVE_OUT is the way to point any of them at a build,
+    and it is the only way, which is also what makes them agree with each other.
+    """
+    import sys as _sys
+    extra = [a for a in (_sys.argv[1:] if argv is None else argv)]
+    if not extra:
+        return
+    name = os.path.basename(_sys.argv[0])
+    print(f"  FAIL  {name} takes no arguments, and was given: {' '.join(extra)}")
+    print(f"        It would otherwise have IGNORED them and graded "
+          f"{name_of()} — which is how a stale build gets read as a fresh one.")
+    print(f"        Point it at a build with the environment instead:")
+    print(f"            ARCHIVE_OUT=<dir> python3 tools/{name}")
+    raise SystemExit(2)
+
+
+def name_of():
+    return name()

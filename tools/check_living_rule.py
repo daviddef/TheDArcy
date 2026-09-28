@@ -24,6 +24,10 @@ itself what living means.
     python3 tools/check_living_rule.py
 """
 import json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import outdir
+outdir.strict_argv()   # a flag this gate does not take is an error, not a no-op
+
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "..", "site", "src", "pages")

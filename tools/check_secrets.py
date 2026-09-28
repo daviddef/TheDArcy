@@ -12,7 +12,11 @@ Tracked files only: .env is ignored and is supposed to hold the key, and
 scanning the working tree would report it every run until somebody turned the
 check off.
 """
-import re, subprocess, sys
+import os, re, subprocess, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import outdir
+
+outdir.strict_argv()   # a flag this gate does not take is an error, not a no-op
 
 # Shapes, not values. A pattern carrying the real key would put the key in this
 # file, which is the thing being prevented.

@@ -5,6 +5,8 @@ import sys as _sys, os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 import outdir
 
+outdir.strict_argv()   # a flag this gate does not take is an error, not a no-op
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = outdir.out()
 BASE = "/TheDArcy"
