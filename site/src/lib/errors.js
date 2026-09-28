@@ -2,6 +2,17 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "28 September 2026",
+    cause: "instrument",
+    what: "Published «57 passages of prose reach no page» as the measured backlog of unpublished research, and put the figure in a work list item, the day log and a report to David. The real number was 10. Forty-seven of the fifty-seven were the measuring tool's own normalisation.",
+    truth:
+      "check_unpublished.py compared data against built HTML with whitespace COLLAPSED rather than removed. Stripping tags turns «<strong>ASHLEWORTH</strong>,» into «ASHLEWORTH ,» and the data side has no space before that comma, so any passage whose first seventy characters contained inline bold next to punctuation reported as missing while sitting on its own page. The Ashleworth identification on /swonhungre was one of them. Comparing with whitespace removed entirely took 57 to 10 and the log-only count from 2 to 1.",
+    why: "The tool had already been corrected once the same day, for stripping markdown from one side and not the other — 201 down to 71 — and the lesson was taken as «fold both sides the same way» rather than «this comparison is the fragile part and will break again». One normalisation bug found is evidence of a normalisation-shaped surface, not of one bug.",
+    lesson:
+      "A MEASUREMENT PUBLISHED AS A BACKLOG IS A CLAIM, and this one was made twice from the same faulty comparison and corrected twice. What survived both corrections is what mattered: the errands page rendering none of its 46 stakes lines, Hannah's mother's death registration on no page, and now Catherine Sneyd's. Those were found by the tool when it was wrong by 130 and when it was wrong by 47, because a real absence survives a bad comparison and a false one does not. THE FINDINGS WERE NEVER THE FRAGILE PART. THE COUNT WAS, AND THE COUNT IS WHAT GOT PUBLISHED.",
+    href: "/worklist",
+  },
+  {
     when: "27 September 2026",
     cause: "memory",
     what: "Published, and told David, that «George Pitt D'Arcy died at Parramatta in 1849 and this archive has never searched for a notice». His obituary has been in this archive's own register the whole time — The Sydney Morning Herald, 1849, with the Trove article id beside it. Written in the same hour as a message to a neighbouring archive about checking a claim before making it.",

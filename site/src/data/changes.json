@@ -5,6 +5,27 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
     {
+      "when": "28 September 2026",
+      "title": "Catherine Sneyd was findable only from the search log, and the count that found her was wrong",
+      "found": [
+        [
+          "Added",
+          "/sneyds — Catherine, dead at four, with her death registration and a national control"
+        ],
+        [
+          "Corrected",
+          "/worklist 139 — the unpublished backlog is 8, not the 57 published yesterday. Own error 50"
+        ]
+      ],
+      "did": [
+        "A NEIGHBOURING SESSION SHARPENED YESTERDAY'S QUESTION and the sharper version found something. Not «does a finding reach a page» but «does it reach a page a reader would browse, or only a log page that points at itself». A record whose sole home is /searched is filed, not shown.",
+        "THE LOG PAGES ARE NOT A NEW LIST. retired.json already declares them — the pages permitted to restate a withdrawn reading BECAUSE THEIR SUBJECT IS THE WITHDRAWAL. The same set, declared for the same reason, so the two checks cannot drift apart.",
+        "IT FOUND CATHERINE SNEYD. Died at four; death registered December quarter 1849, Stoke on Trent, GRO volume 17 page 114; born Hanley 1845, mother's maiden name BIDDULPH; and a control across the whole of England and Wales for every Catherine Sneyd death between 1845 and 1852 returning EXACTLY ONE. sneyds.astro referred to none of it. She is on /sneyds now.",
+        "AND THE COUNT THAT FOUND HER WAS WRONG, for the second time in two days and in the same place. The comparison collapsed whitespace instead of removing it, so «<strong>ASHLEWORTH</strong>,» became «ASHLEWORTH ,» against a data side with no such space. 57 unpublished passages were really 8. The findings survived both bad counts and the counts did not, which is the lesson: a real absence survives a poor comparison and a false one does not. [Own error 50](/corrections/).",
+        "ONE CORRECTION OUTWARD TOO: the landing session flagged this archive as having no evidence gate. It has one, in check_links.py, and its docstring names the Mazza fault the estate's five other gates came from. It reads «189 record line(s) owed by register.json reach 61 of 61 people» on every build, and it is the gate that caught George Abbas Kooli D'Arcy yesterday."
+      ]
+    },
+    {
       "when": "27 September 2026",
       "title": "A record offered unasked, found in the index this archive had written off — and an S that a clerk read as an L",
       "found": [
