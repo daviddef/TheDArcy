@@ -5,6 +5,27 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
     {
+      "when": "7 October 2026",
+      "title": "Two deaths looked for, neither found, and the reason is worth more than the search",
+      "found": [
+        [
+          "Added",
+          "/coverage — FreeBMD is transcribed unevenly by quarter AND by district, and says nothing when a quarter is missing"
+        ],
+        [
+          "Added",
+          "/searched — both of Joseph D'Arcy's elder sons' deaths, blocked by coverage rather than absent"
+        ]
+      ],
+      "did": [
+        "WENT AFTER THE TWO SONS' DEATHS, because both died in Britain after civil registration and the GRO index is free through FreeBMD. Neither can be found there, and in both cases the quarter this archive needs is the one that is not transcribed.",
+        "GEORGE ABBAS KOOLI D'ARCY died on 22 October 1885, which registers in the December quarter. DARCY deaths for 1885 return March and June and stop. Control: SMITH deaths in the Penzance district across 1885 return March, June and September, each marked >99% transcribed, and NO DECEMBER. The gap is the quarter, not the surname.",
+        "ROBERT WEST D'ARCY died at Bangor on 14 June 1862. DARCY deaths for 1862 return March, September and December and no June — which alone could mean either no D'Arcy died that quarter or the quarter is missing. Control: SMITH deaths in the Bangor district across the WHOLE of 1862 return zero rows and not one quarter header, which cannot be a real result for a district that size. Bangor 1862 is simply not in the index.",
+        "SO NEITHER IS A NULL, and the coverage row now says why: FreeBMD prints its completeness beside a quarter it has — «(>99%)» — and prints NOTHING AT ALL for a quarter it does not, which is the one case that looks like evidence. Before quoting an absence from it, run a common surname at the same district and quarter.",
+        "A NOTE ON METHOD, because it nearly went wrong twice. The first run of the 1885 control was contaminated — a stray click had put SMITH into the spouse field as well, narrowing the result silently — and was re-run clean. And the search form's pixel coordinates could not be trusted: the screenshot frame changed height between calls, 505 then 600 then 500 against one viewport, so clicks computed from one frame missed in the next. The form was driven through its own controls instead, with every field read back before submitting."
+      ]
+    },
+    {
       "when": "28 September 2026",
       "title": "Catherine Sneyd was findable only from the search log, and the count that found her was wrong",
       "found": [

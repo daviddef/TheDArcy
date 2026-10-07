@@ -3844,6 +3844,22 @@
       "outcome": "yield",
       "got": "**725 titles of 728, and the answer changes what is worth searching.** Parramatta 1849: nothing published there, but **8 NSW papers hold the year and 675 issues survive, 312 of them THE SYDNEY MORNING HERALD** — so George Pitt D'Arcy's death is searchable after all. Brisbane 1856: 3 papers, 154 issues. Brisbane 1902: **36 of 37** in-range papers actually hold it; 1936: **54 of 55**. Three titles are recorded UNKNOWN because the request failed, which is not the same as holding nothing.",
       "href": "/coverage"
+    },
+    {
+      "src": "FreeBMD — GRO death index, DARCY, 1885",
+      "what": "George Abbas Kooli D'Arcy's death registration — he died 22 October 1885",
+      "when": "07 Oct 2026",
+      "outcome": "blocked",
+      "got": "**The December quarter of 1885 is not in FreeBMD.** The search returns DARCY deaths for March and June 1885 and stops. He died on **22 October**, which registers in the December quarter, so this index cannot hold him and a null from it would have meant nothing. **Control: SMITH deaths in the Penzance district across 1885 return March, June and September, each marked >99% transcribed, and no December at all** — so the gap is the quarter and not the surname. The route from here is the GRO's own index, which wants an account.",
+      "href": "/joseph-darcy"
+    },
+    {
+      "src": "FreeBMD — GRO death index, DARCY, 1862, and a Bangor control",
+      "what": "Robert West D'Arcy's death registration — he died at Bangor on 14 June 1862",
+      "when": "07 Oct 2026",
+      "outcome": "blocked",
+      "got": "**Bangor's 1862 deaths are not transcribed at all.** DARCY deaths for 1862 return March, September and December and no June, which on its own could mean either «no D'Arcy died that quarter» or «that quarter is missing». **The control settles it: SMITH deaths in the Bangor district across the whole of 1862 return ZERO rows and not one quarter header** — impossible for a real result in a district that size, so the district-year is simply not in the index. He died on 14 June 1862. Again the GRO's own index, or the Honourable East India Company officer papers at the British Library, which this archive has never opened.",
+      "href": "/joseph-darcy"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

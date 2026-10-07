@@ -1364,6 +1364,11 @@
 "title": "Australia"
 },
 {
+"path": "/searched",
+"snippet": "…not be reached\"> 07 Oct 2026 FreeBMD — GRO death index, DARCY, 1885 could not be reached George Abbas Kooli D'Arcy's death registration — he died 22 October 1885 The December quarter of 1885 is not in FreeBMD. The search returns DARCY deaths fo…",
+"title": "What Has Been Read"
+},
+{
 "path": "/joseph-darcy",
 "snippet": "…page the day they were found and did not reach the register for a day . Until they did, [George Abbas Kooli D'Arcy](/people/george-abbas-kooli-d-arcy/) carried the line «No record has been found for them» and both boys' pedigree charts drew the…",
 "title": "Lieutenant-Colonel Joseph D'Arcy"
@@ -2509,7 +2514,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…HAMPSHIRE. Smith returns 0 there and 14,056 in Gloucestershire, which voided a null about Joseph D'Arcy's marriage. Re-asked of the county set, which holds this family's own 1779 wedding: 22 D'Arcy entries, no Joseph. PORTSEA IS FINI…",
+"snippet": "…arter AND by district, and says nothing when a quarter is missingAdded/searched — both of Joseph D'Arcy's elder sons' deaths, blocked by coverage rather than absent 28 September 2026 1 Catherine Sneyd was findable only from the searc…",
 "title": "What changed"
 },
 {
@@ -3810,7 +3815,13 @@
 "title": "The Sneyds"
 }
 ],
-"robert-west-d-arcy": [],
+"robert-west-d-arcy": [
+{
+"path": "/searched",
+"snippet": "…ct 2026 FreeBMD — GRO death index, DARCY, 1862, and a Bangor control could not be reached Robert West D'Arcy's death registration — he died at Bangor on 14 June 1862 Bangor's 1862 deaths are not transcribed at all. DARCY deaths for 1862 r…",
+"title": "What Has Been Read"
+}
+],
 "rosanna-atkinson": [
 {
 "path": "/atkinson",
