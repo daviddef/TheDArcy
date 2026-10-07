@@ -149,4 +149,10 @@ import d from "../data/fmp.json";
       <span set:html={mdp(d.instrument.cost)} /></Note>
   </Blk>
 
+  {/* The record sets this page's findings came out of. In the data since it
+      was written and on no page until 7 October. */}
+  <section class="blk" style="border-bottom:0">
+    <p class="small"><strong>Sources:</strong> {d.source}</p>
+  </section>
+
 </Base>

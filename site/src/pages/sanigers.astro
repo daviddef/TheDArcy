@@ -362,6 +362,15 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
       <span set:html={mdp(d.chepstow.body)} />
       {" "}<span class="chip doc">{d.chepstow.chip}</span></Note>
 
+    {/* The basis the spelling table is counted on. Written when the table was
+        rebuilt on 21 September and rendered by nothing until 7 October — the
+        table has been on the page the whole time with no statement of what it
+        counts. */}
+    <Blk label="What the table counts" title="One basis, stated">
+      <div class="dek" style="margin-top:1rem" set:html={mdp(d.spellingsNote)}></div>
+      <p style="margin-top:.8rem"><span class="chip doc">one stated basis, and a floor not a total</span></p>
+    </Blk>
+
     <p class="small" style="margin-top:1.3rem">
       <a href={u("/berkeley/")}>The chain that failed →</a> ·
       <a href={u("/drivers-fields/")}>The household, 1841 →</a> ·

@@ -54,6 +54,19 @@ ALLOW = {
 MIN = 90
 
 
+def strip_markup(s):
+    """Data files carry HTML of their own, and it never survives into the text.
+
+    sources.json writes «the council's old host <code>graves.brisbane...</code>»
+    and the built page renders that as a <code> element, so tag-stripping the
+    PAGE leaves the host name bare while the DATA still carries the tags. The
+    passage then reports as unpublished while sitting on its own page. Same
+    family as the two normalisation bugs before it: a difference between the
+    sides that is not a difference in the archive.
+    """
+    return re.sub(r"<[^>]+>", " ", s or "")
+
+
 def norm(s):
     """Both sides folded the same way, or the difference is the measurement.
 
@@ -61,7 +74,7 @@ def norm(s):
     pages with theirs left in, and reported 201 unpublished strings where
     there were 71. 130 of them were the comparison, not the archive.
     """
-    s = html.unescape(s)
+    s = html.unescape(strip_markup(s))
     s = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", s)     # markdown link -> its text
     s = re.sub(r"[*«»“”‘’'\"`_]", "", s)
     # WHITESPACE REMOVED ENTIRELY, not collapsed. Stripping tags turns
@@ -112,7 +125,12 @@ def pages():
             rel = os.path.relpath(os.path.join(r, f), root).replace(os.sep, "/")
             t = open(os.path.join(r, f), encoding="utf-8", errors="ignore").read()
             t = re.sub(r"<(script|style)\b.*?</\1>", "", t, flags=re.S | re.I)
-            txt = norm(re.sub("<[^>]+>", " ", t))
+            # Attribute text counts as rendered. The coverage legend's
+            # glosses live in `title=` tooltips, and stripping tags threw
+            # them away, so a published legend reported as unpublished.
+            attrs = " ".join(re.findall(
+                r'(?:title|alt|aria-label)="([^"]*)"', t))
+            txt = norm(re.sub("<[^>]+>", " ", t) + " " + attrs)
             slug = rel[:-len("/index.html")] if rel.endswith("/index.html") else rel
             (log if slug in logs else reader).append(txt)
     return reader, log

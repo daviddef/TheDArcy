@@ -15,6 +15,10 @@ const byPlace = [...new Set(d.rows.map((r) => r.place))];
   dek="Kept as a wrong page. It catalogued every Bristol chapel register the state holds, looking for a birth that was in Gloucestershire all along — and the catalogue then answered a different errand without anybody ordering twelve RG 4 volumes.">
 
   <section class="blk" style="border-top:0">
+    {/* What the page set out to find. Written into the data and rendered by
+        nothing until 7 October — a page kept for being wrong should still say
+        what it was wrong about. */}
+    <p class="lede"><strong>The target:</strong> {d.target}.</p>
     <Note style="border-left-width:3px;margin-bottom:0">
       <strong style="font-size:1.1em">This page is wrong, and it is kept here for that reason.</strong>
       <br /><br />

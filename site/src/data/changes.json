@@ -10,6 +10,14 @@
       "found": [
         [
           "Added",
+          "/sanigers — the spelling table has been published since 21 September with no statement of what it counts"
+        ],
+        [
+          "Added",
+          "/bristol-chapels, /behind-the-paywall, /saniger-line — a target and two source lines, written and never rendered"
+        ],
+        [
+          "Added",
           "/coverage — FreeBMD is transcribed unevenly by quarter AND by district, and says nothing when a quarter is missing"
         ],
         [
@@ -18,6 +26,9 @@
         ]
       ],
       "did": [
+        "CLEARED THE UNPUBLISHED BACKLOG, and the useful part is that «unpublished» turned out to be two different faults. Of eight passages the gate was reporting, TWO WERE THE CHECKER: sources.json carries literal <code> markup that was stripped from the page side and not the data side, and the coverage legend's glosses live in title= tooltips, which tag-stripping discarded. That is the THIRD normalisation fault in this one tool, after the markdown and the whitespace.",
+        "OF THE SIX THAT WERE REAL, FOUR WERE LOST AND TWO WERE DUPLICATES. The lost: /bristol-chapels never said what it was searching for, /behind-the-paywall and /saniger-line never named the record sets behind their findings, and /SANIGERS HAS CARRIED ITS SPELLING TABLE SINCE 21 SEPTEMBER WITH NO STATEMENT OF WHAT IT COUNTS — 27 spellings tried, 20 productive, 373 entries, one stated basis, and a floor rather than a total. All four published.",
+        "THE TWO DUPLICATES WERE REMOVED, NOT RENDERED, and the near-miss is the lesson. portsea.theFind held Joseph D'Arcy's 1780 baptism as seven structured fields, and the page's own opening already says all of it, including «the only document anywhere that names Major-General Robert D'Arcy as somebody's father» — which is the same claim as the field I was about to publish. Rendering it would have printed that record twice on one page. The reason for each removal is written into the file it was removed from.",
         "WENT AFTER THE TWO SONS' DEATHS, because both died in Britain after civil registration and the GRO index is free through FreeBMD. Neither can be found there, and in both cases the quarter this archive needs is the one that is not transcribed.",
         "GEORGE ABBAS KOOLI D'ARCY died on 22 October 1885, which registers in the December quarter. DARCY deaths for 1885 return March and June and stop. Control: SMITH deaths in the Penzance district across 1885 return March, June and September, each marked >99% transcribed, and NO DECEMBER. The gap is the quarter, not the surname.",
         "ROBERT WEST D'ARCY died at Bangor on 14 June 1862. DARCY deaths for 1862 return March, September and December and no June — which alone could mean either no D'Arcy died that quarter or the quarter is missing. Control: SMITH deaths in the Bangor district across the WHOLE of 1862 return zero rows and not one quarter header, which cannot be a real result for a district that size. Bangor 1862 is simply not in the index.",
