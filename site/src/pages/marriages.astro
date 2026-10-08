@@ -9,6 +9,48 @@ import { byId } from "../lib/people.js";
 import ancestors from "../data/ancestors.json";
 import m from "../data/marriages.json";
 import families from "../data/families.json";
+import personRecords from "../data/person-records.json";
+import dossiers from "../data/dossiers.json";
+
+/* MARRIAGES THIS ARCHIVE HAS DOCUMENTED AND THE TREE DOES NOT CARRY.
+ *
+ * 9 October 2026. The dek above used to read «every marriage this archive can
+ * date». It is built from marriages.json, which build_family_pages.py derives
+ * from the GEDCOM, so what it actually showed was every marriage THE TREE can
+ * date — and the difference included HANNAH SANIGER'S OWN marriage to James
+ * Wakefield at Bristol on 17 October 1831, which is the founding marriage of
+ * the English line and is documented from a register.
+ *
+ * So the page computes the difference rather than claiming there isn't one.
+ * Any record line that mentions a marriage, for a person the couples table
+ * never names, is listed below with a link to where the evidence sits. It is
+ * derived, so it cannot go stale: document a marriage and it appears here
+ * until the tree catches up. */
+const _named = new Set(m.rows.flatMap((r) => [r.a, r.b]).filter(Boolean));
+const _isMarriage = (t) => /\bmarri/i.test(t || "");
+const _extra = [];
+const _seen = new Set();
+for (const [slug, v] of Object.entries(personRecords)) {
+  for (const r of v.rows || []) {
+    if (_isMarriage(r.says) && !_named.has(v.name)) {
+      const k = `${v.name}|${(r.says || "").slice(0, 44)}`;
+      if (_seen.has(k)) continue;
+      _seen.add(k);
+      _extra.push({ name: v.name, says: r.says, href: `/people/${slug}/`, where: "in the tree" });
+    }
+  }
+}
+for (const [slug, v] of Object.entries(dossiers.people || {})) {
+  for (const r of v.rows || []) {
+    if (_isMarriage(r.says) && !_named.has(v.name)) {
+      const k = `${v.name}|${(r.says || "").slice(0, 44)}`;
+      if (_seen.has(k)) continue;
+      _seen.add(k);
+      _extra.push({ name: v.name, says: r.says, href: `/who/${slug}/`, where: "named in a record" });
+    }
+  }
+}
+_extra.sort((x, y) => x.name.localeCompare(y.name));
 
 /* The couples, and the families they came from, on one page.
  *
@@ -124,7 +166,7 @@ const timelinePoints = m.rows.filter((r) => r.sort && r.sort[0] >= 1700)
 
 ---
 <Base title="The Marriages" eyebrow={`${m.n} marriages \u00b7 ${families.length} families \u00b7 ${nPub} of their people published`}
-  dek="Every marriage this archive can date, in order — and then the families those marriages brought in. It is the only series on the site that shows the family actually moving: Portsea, Camden, Carrigaline, Muttaburra, Toowoomba.">
+  dek="Every marriage THE TREE carries, in date order — and then the families those marriages brought in, and last the marriages this archive has documented from records that the tree does not hold at all. It is the only series on the site that shows the family actually moving: Portsea, Camden, Carrigaline, Muttaburra, Toowoomba.">
   <section class="blk">
     <p class="lede">A birth tells you where a family already was. <strong>A marriage tells you where
     it went.</strong> Read the places below in order and the shape of two hundred years falls out of
@@ -177,4 +219,25 @@ const timelinePoints = m.rows.filter((r) => r.sort && r.sort[0] >= 1700)
       </section>
     </div>
   </Marriages>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>And {_extra.length} the tree does not carry</h2>
+    <p class="dek">Marriages this archive has a record for, where the couples table above names
+    neither party. The table is built from the family tree; these come from registers, indexes and
+    depositions, and until the tree holds them they belong here rather than nowhere. The list is
+    alphabetical, and among it is the founding marriage of the English line:
+    <strong>Hannah Saniger to James Wakefield, Bristol, 17 October 1831</strong>.</p>
+    <Scroll>
+      <table style="margin-top:1.1rem">
+        <thead><tr><th>Who</th><th>What the record says</th><th>Where</th></tr></thead>
+        <tbody>{_extra.map((e) => (
+          <tr>
+            <td><a href={u(e.href)}>{e.name}</a></td>
+            <td class="small">{e.says}</td>
+            <td class="small dim">{e.where}</td>
+          </tr>))}
+        </tbody>
+      </table>
+    </Scroll>
+  </section>
 </Base>

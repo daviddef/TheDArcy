@@ -9,6 +9,10 @@
       "title": "The research reached the pages and left four people behind, and split two more in half",
       "found": [
         [
+          "Corrected",
+          "/marriages said «every marriage this archive can date» and showed only the tree's. 34 documented ones were missing"
+        ],
+        [
           "Fixed",
           "/people/miriam-wakefield — her death registration and her sworn deposition were on two other pages"
         ],
@@ -22,6 +26,9 @@
         ]
       ],
       "did": [
+        "THEN THE SAME QUESTION OF THE DIAGRAMS, and /marriages was overclaiming. Its dek read «EVERY MARRIAGE THIS ARCHIVE CAN DATE, in order». The page is built from marriages.json, which build_family_pages.py derives from the GEDCOM — so what it actually showed was every marriage THE TREE can date. The difference is 34 marriages this archive holds a record for and the tree does not carry, AND ONE OF THEM IS HANNAH SANIGER'S OWN MARRIAGE TO JAMES WAKEFIELD AT BRISTOL ON 17 OCTOBER 1831, which is the founding marriage of the English line.",
+        "THE CLAIM IS CORRECTED AND THE DIFFERENCE IS NOW PUBLISHED. The page computes it at build time from person-records.json and dossiers.json against the couples table, so it cannot go stale: document a marriage and it appears there until the tree catches up. Among the 34 are William Sneyd and Mary Blackbourne at Madeley in 1769, Robert West D'Arcy at Bombay in 1846, Frank Hyde D'Arcy at Lymington in 1863, and the 1852 Bristol marriage of James Sanigar found a fortnight ago.",
+        "AND THE FIRST DRAFT OF THAT BLOCK MADE ITS OWN FALSE CLAIM: it said «the first of them is the founding marriage of the English line» while sorting the table alphabetically, which put Agnis Sainger at the top. Caught by reading the built page rather than the intention. /graves and /households were checked in the same pass and neither overclaims — graves says «gathered from the tree» in its own first sentence.",
         "ASKED WHETHER THE RESEARCH REACHES THE PEOPLE AND NOT ONLY THE PAGES. Mostly yes, and four people were missed in two different ways.",
         "THREE HAD NO RECORD LINE AT ALL, so neither surface could show them: CATHERINE SNEYD, who died aged four — death registered December quarter 1849, Stoke on Trent, GRO volume 17 page 114, with a national control returning exactly one such death in eight years; JAMES SANIGAR, whose 1852 Bristol marriage this archive found on 27 September; and LAURA SAYER, who is on the same page of the index and is almost certainly his wife. All three were written up, graded and published in prose, and none of them existed as a person anywhere on the site. The evidence gate reads register.json and checks that every line reaches its person — IT CANNOT SEE A PERSON WHO WAS NEVER GIVEN A LINE.",
         "AND ONE WOMAN WAS SPLIT IN HALF. Joseph D'Arcy's first wife had two /who pages: «Lady Catherine Georgiana West» carried her two death notices, «Catherine Georgiana West» carried her burial and the Westminster baptisms of her sons. A reader landing on either saw half of her. The second line is this archive's own, added on 23 September under a name that already existed in another form.",
