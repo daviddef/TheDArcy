@@ -37,6 +37,7 @@ GATES = [
     "check_namefold.py",      # a denied fold reaching the map
     "check_living_rule.py",   # a page hand-rolling the living test
     "check_atlas.py",         # pins claiming a precision they do not have
+    "check_whosplit.py",      # one human split across two dossiers
     "check_unpublished.py",   # prose that reaches no page (reports, never refuses)
 ]
 

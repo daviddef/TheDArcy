@@ -38,7 +38,7 @@ QBDM_L = "https://www.familyhistory.bdm.qld.gov.au/"
 for n, d, reg, mum, dad in [
     ("William Hartley Sneyd", "11/09/1902 · b. 30/09/1837", "1902/B/2776", "Catherine", "Samuel Sneyd"),
     ("Samuel Charles Sneyd", "04/07/1885", "1885/C/4045", "—", "Samuel Sneyd"),
-    ("Miriam Sneyd, née Wakefield", "12/08/1909", "1909/C/1054", "Hannah Saniger", "James Wakefield"),
+    ("Miriam Wakefield", "12/08/1909", "1909/C/1054", "Hannah Saniger", "James Wakefield"),   # registered as MIRIAM SNEYD née WAKEFIELD; filed under the tree's name so it reaches her page
     ("Thomas George Sneyd", "18/10/1927", "1927/B/2729", "Miriam Wakefield", "William Hartley Sneyd"),
     ("Arthur William Hartley Sneyd", "27/05/1922", "1922/B/37152", "Miriam Wakefield", "William Hartley Sneyd"),
     ("Vivian Claude Sneyd", "10/02/1949", "1949/B/20695", "Martha Blum", "Arthur"),
@@ -571,7 +571,7 @@ QC = "record · QSA coronial file ITM2736504 (DR103140), read in full"
 QCL = "https://www.archivessearch.qld.gov.au/items/ITM2736504"
 for n, says in [
     ("William Hartley Sneyd", "found dead in Victoria Park, Brisbane, 12 Sep 1902 · contractor · cause “Poisoning (suicide)”"),
-    ("Miriam Sneyd", "widow · sworn deposition naming his father “Samuel Sneyd, Gaol Governor” and his mother Catherine"),
+    ("Miriam Wakefield", "as MIRIAM SNEYD, widow · sworn deposition naming his father “Samuel Sneyd, Gaol Governor” and his mother Catherine"),
     ("John Williams", "labourer, of Roche Street, Spring Hill · found the body"),
     ("Alfred Hutchison", "walked the railway line in Victoria Park with John Williams and saw the body"),
     ("Edward Law", "retired, of Hartley Street off Gregory Terrace · last to speak to him · signed with his mark"),
@@ -744,7 +744,7 @@ rec("Richard D'Arcy", "death notice · “At St Helier's, Jersey, RICHARD, THIRD
     "record · Saint James's Chronicle, 23 May 1857, p.1; Clare Journal, 28 May 1857", "https://www.findmypast.co.uk/")
 rec("Robert D'Arcy", "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
     "record · London Evening Standard and Morning Herald, 25 June 1862", "https://www.findmypast.co.uk/")
-rec("Lady Catherine Georgiana West", "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
+rec("Catherine Georgiana West", "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
     "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862", "https://www.findmypast.co.uk/")
 
 # --- Find a Grave, 15 September 2026 -----------------------------------------
@@ -764,6 +764,24 @@ rec("Jane D'Arcy", "burial · died 10 JANUARY 1875 · ST ANDREW'S OLD CHURCH, HO
     "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
 rec("Catherine D'Arcy", "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · the exact date the Horsham paper printed a fortnight later",
     "record · Sussex Burials, TNA RG 37/65/2 p.47", "https://www.findmypast.co.uk/")
+# --- People this archive has documented and never given a record line -------
+# 9 October 2026. Asked whether the research reaches the PEOPLE and not just
+# the pages, and three did not: each is written up on a page, graded, and
+# carried by nothing that would give them an entry of their own. The evidence
+# gate reads register.json and checks that every line reaches its person; it
+# cannot see a person who was never given a line.
+GRO = "record · GRO index of civil registration, via FreeBMD"
+FBMD = "https://www.freebmd.org.uk/"
+rec("Catherine Sneyd",
+    "died aged FOUR · death registered December quarter 1849, STOKE ON TRENT, Staffordshire · GRO index volume 17, page 114 · born Hanley 1845, Staffordshire BMD HAN/007/057, mother's maiden name BIDDULPH · a control across the whole of England and Wales for every Catherine Sneyd death between 1845 and 1852 returns EXACTLY ONE",
+    GRO, FBMD)
+rec("James Sanigar",
+    "married at BRISTOL, December quarter 1852 · GRO index volume 6a, page 155 · the marriage Bristol Archives mentioned unasked, giving his father Thomas's occupation as LABOURER · son of Thomas Sanigar and Martha Golding, and the eleven-year-old of the 1841 household",
+    GRO, FBMD)
+rec("Laura Sayer",
+    "on the same page of the GRO index as James Sanigar's marriage — BRISTOL, December quarter 1852, volume 6a page 155 · almost certainly his wife: Lydia Sinegar's baptism of 1866 names her mother LAURA and gives no surname · the index does not pair spouses before 1912, so the pairing is inferred from the page and not stated by it",
+    GRO, FBMD)
+
 # --- Joseph D'Arcy's first family, Westminster, found 22 September 2026 ------
 # The two sons the 1857 death notice implied and never named. They were written
 # up on /joseph-darcy the day they were found and did not reach the register for

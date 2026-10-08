@@ -5,6 +5,31 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
     {
+      "when": "9 October 2026",
+      "title": "The research reached the pages and left four people behind, and split two more in half",
+      "found": [
+        [
+          "Fixed",
+          "/people/miriam-wakefield — her death registration and her sworn deposition were on two other pages"
+        ],
+        [
+          "Fixed",
+          "/who/catherine-georgiana-west — one woman, two dossiers, half her evidence on each"
+        ],
+        [
+          "Added",
+          "/who — Catherine Sneyd, James Sanigar and Laura Sayer, documented for weeks and carried by nothing"
+        ]
+      ],
+      "did": [
+        "ASKED WHETHER THE RESEARCH REACHES THE PEOPLE AND NOT ONLY THE PAGES. Mostly yes, and four people were missed in two different ways.",
+        "THREE HAD NO RECORD LINE AT ALL, so neither surface could show them: CATHERINE SNEYD, who died aged four — death registered December quarter 1849, Stoke on Trent, GRO volume 17 page 114, with a national control returning exactly one such death in eight years; JAMES SANIGAR, whose 1852 Bristol marriage this archive found on 27 September; and LAURA SAYER, who is on the same page of the index and is almost certainly his wife. All three were written up, graded and published in prose, and none of them existed as a person anywhere on the site. The evidence gate reads register.json and checks that every line reaches its person — IT CANNOT SEE A PERSON WHO WAS NEVER GIVEN A LINE.",
+        "AND ONE WOMAN WAS SPLIT IN HALF. Joseph D'Arcy's first wife had two /who pages: «Lady Catherine Georgiana West» carried her two death notices, «Catherine Georgiana West» carried her burial and the Westminster baptisms of her sons. A reader landing on either saw half of her. The second line is this archive's own, added on 23 September under a name that already existed in another form.",
+        "A NEW GATE, AND IT FOUND A SECOND ONE ON ITS FIRST RUN. check_whosplit.py asks whether two dossiers differ only by a title or a trailing qualifier — «Lady X» beside «X», «X, née Y» beside «X» — which is the shape this archive actually produces. It immediately refused on MIRIAM WAKEFIELD, who is IN THE TREE and whose two most important records were parked on /who pages because the register filed them under her married forms: her sworn deposition, and her 1909 death registration NAMING HER MOTHER AS HANNAH SANIGER, which is the link into the Saniger line. Her person page carried four records and now carries six.",
+        "build_dossiers.py already guards against this and says so in its own comment — «duplicating them would split the same human in two» — but it compares the tree's names against the register's EXACTLY, so two different strings for one person never meet the test. The guard was real and the fault walked around it."
+      ]
+    },
+    {
       "when": "7 October 2026",
       "title": "Two deaths looked for, neither found, and the reason is worth more than the search",
       "found": [

@@ -1,15 +1,15 @@
 {
-"entries": 857,
+"entries": 860,
 "distinct": 595,
-"records": 384,
+"records": 387,
 "tree": 473,
 "grafted": 98,
-"linked": 848,
-"surnames": 203,
+"linked": 851,
+"surnames": 204,
 "groups": [
 {
 "surname": "SNEYD",
-"n": 168,
+"n": 167,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -65,6 +65,13 @@
 "says": "died 13/08/1905 · parents: Martha Blume · Arthur Sneyd",
 "source": "record · Queensland death index 1905/C/3798",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Catherine Sneyd",
+"says": "died aged FOUR · death registered December quarter 1849, STOKE ON TRENT, Staffordshire · GRO index volume 17, page 114 · born Hanley 1845, Staffordshire BMD HAN/007/057, mother's maiden name BIDDULPH · a control across the whole of England and Wales for every Catherine Sneyd death between 1845 and 1852 returns EXACTLY ONE",
+"source": "record · GRO index of civil registration, via FreeBMD",
+"link": "https://www.freebmd.org.uk/",
 "kind": "record"
 },
 {
@@ -149,20 +156,6 @@
 "says": "baptised Hanley 18 February 1814 · father Samuel, a SERVANT · mother Elizabeth — sister to Samuel Charles",
 "source": "record · FreeREG, Hanley St John the Evangelist, Bishop's Transcript",
 "link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Miriam Sneyd",
-"says": "widow · sworn deposition naming his father “Samuel Sneyd, Gaol Governor” and his mother Catherine",
-"source": "record · QSA coronial file ITM2736504 (DR103140), read in full",
-"link": "https://www.archivessearch.qld.gov.au/items/ITM2736504",
-"kind": "record"
-},
-{
-"name": "Miriam Sneyd, née Wakefield",
-"says": "died 12/08/1909 · parents: Hannah Saniger · James Wakefield",
-"source": "record · Queensland death index 1909/C/1054",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
 "kind": "record"
 },
 {
@@ -2268,7 +2261,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 51,
+"n": 53,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -2496,6 +2489,13 @@
 },
 {
 "name": "Miriam Wakefield",
+"says": "died 12/08/1909 · parents: Hannah Saniger · James Wakefield",
+"source": "record · Queensland death index 1909/C/1054",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Miriam Wakefield",
 "says": "married William Hartley Sneyd · 15 November 1859 · Brisbane — she was nineteen",
 "source": "record · Queensland marriage index 1859/B/255",
 "link": "https://www.familyhistory.bdm.qld.gov.au/",
@@ -2520,6 +2520,13 @@
 "says": "daughter, aged 10, SERVANT · already in work three years before she sailed",
 "source": "record · 1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Miriam Wakefield",
+"says": "as MIRIAM SNEYD, widow · sworn deposition naming his father “Samuel Sneyd, Gaol Governor” and his mother Catherine",
+"source": "record · QSA coronial file ITM2736504 (DR103140), read in full",
+"link": "https://www.archivessearch.qld.gov.au/items/ITM2736504",
 "kind": "record"
 },
 {
@@ -4837,6 +4844,33 @@
 ]
 },
 {
+"surname": "SANIGAR",
+"n": 3,
+"rows": [
+{
+"name": "James Sanigar",
+"says": "married at BRISTOL, December quarter 1852 · GRO index volume 6a, page 155 · the marriage Bristol Archives mentioned unasked, giving his father Thomas's occupation as LABOURER · son of Thomas Sanigar and Martha Golding, and the eleven-year-old of the 1841 household",
+"source": "record · GRO index of civil registration, via FreeBMD",
+"link": "https://www.freebmd.org.uk/",
+"kind": "record"
+},
+{
+"name": "John Sanigar",
+"says": "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury · Consistory Court of Gloucester 1822/194",
+"source": "record · Gloucestershire Wills & Administrations 1801-1858",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "William Sanigar",
+"says": "b. 1654",
+"source": "family tree · direct line",
+"link": "/people/william-sanigar",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "WATT",
 "n": 3,
 "rows": [
@@ -4869,6 +4903,13 @@
 "rows": [
 {
 "name": "Catherine Georgiana West",
+"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
+"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Catherine Georgiana West",
 "says": "burial · 22 March 1824, BOURN, Cambridgeshire · AGED 36 · “OF BATH” · the Lady Catherine of her sons' death notices, and Joseph D'Arcy's first wife",
 "source": "record · Cambridgeshire Burials (Cambridgeshire and Huntingdonshire FHS)",
 "link": "https://www.findmypast.co.uk/",
@@ -4878,13 +4919,6 @@
 "name": "Catherine Georgiana West",
 "says": "named as the mother in both Westminster baptisms · KATHARINE GEORGIANA in 1818, CATHERINE GEORGIANA in 1820 — one woman under two ordinary spellings · the first record to carry her forenames, which the tree had asserted and nothing had tested",
 "source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Lady Catherine Georgiana West",
-"says": "named in two death notices as LADY CATHERINE, DAUGHTER OF THE LATE AND SISTER OF THE PRESENT EARL DE LA WARR · wife of Lieut.-Col. Joseph D'Arcy, married Bath, November 1817",
-"source": "record · Saint James's Chronicle, 23 May 1857; London Evening Standard, 25 June 1862",
 "link": "https://www.findmypast.co.uk/",
 "kind": "record"
 }
@@ -5240,26 +5274,6 @@
 "says": "1570–1624 · Nether Skyers, Darfield, Yorkshire",
 "source": "family tree · above the Hornby graft",
 "link": "/people/thomas-rokeby",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "SANIGAR",
-"n": 2,
-"rows": [
-{
-"name": "John Sanigar",
-"says": "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury · Consistory Court of Gloucester 1822/194",
-"source": "record · Gloucestershire Wills & Administrations 1801-1858",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "William Sanigar",
-"says": "b. 1654",
-"source": "family tree · direct line",
-"link": "/people/william-sanigar",
 "kind": "tree"
 }
 ]
@@ -6701,6 +6715,19 @@
 "source": "family tree · direct line",
 "link": "/people/sarah",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "SAYER",
+"n": 1,
+"rows": [
+{
+"name": "Laura Sayer",
+"says": "on the same page of the GRO index as James Sanigar's marriage — BRISTOL, December quarter 1852, volume 6a page 155 · almost certainly his wife: Lydia Sinegar's baptism of 1866 names her mother LAURA and gives no surname · the index does not pair spouses before 1912, so the pairing is inferred from the page and not stated by it",
+"source": "record · GRO index of civil registration, via FreeBMD",
+"link": "https://www.freebmd.org.uk/",
+"kind": "record"
 }
 ]
 },
