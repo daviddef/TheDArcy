@@ -9,48 +9,15 @@ import { byId } from "../lib/people.js";
 import ancestors from "../data/ancestors.json";
 import m from "../data/marriages.json";
 import families from "../data/families.json";
-import personRecords from "../data/person-records.json";
-import dossiers from "../data/dossiers.json";
+import { notOnSurface } from "../lib/treegap.js";
 
-/* MARRIAGES THIS ARCHIVE HAS DOCUMENTED AND THE TREE DOES NOT CARRY.
- *
- * 9 October 2026. The dek above used to read «every marriage this archive can
- * date». It is built from marriages.json, which build_family_pages.py derives
- * from the GEDCOM, so what it actually showed was every marriage THE TREE can
- * date — and the difference included HANNAH SANIGER'S OWN marriage to James
- * Wakefield at Bristol on 17 October 1831, which is the founding marriage of
- * the English line and is documented from a register.
- *
- * So the page computes the difference rather than claiming there isn't one.
- * Any record line that mentions a marriage, for a person the couples table
- * never names, is listed below with a link to where the evidence sits. It is
- * derived, so it cannot go stale: document a marriage and it appears here
- * until the tree catches up. */
-const _named = new Set(m.rows.flatMap((r) => [r.a, r.b]).filter(Boolean));
-const _isMarriage = (t) => /\bmarri/i.test(t || "");
-const _extra = [];
-const _seen = new Set();
-for (const [slug, v] of Object.entries(personRecords)) {
-  for (const r of v.rows || []) {
-    if (_isMarriage(r.says) && !_named.has(v.name)) {
-      const k = `${v.name}|${(r.says || "").slice(0, 44)}`;
-      if (_seen.has(k)) continue;
-      _seen.add(k);
-      _extra.push({ name: v.name, says: r.says, href: `/people/${slug}/`, where: "in the tree" });
-    }
-  }
-}
-for (const [slug, v] of Object.entries(dossiers.people || {})) {
-  for (const r of v.rows || []) {
-    if (_isMarriage(r.says) && !_named.has(v.name)) {
-      const k = `${v.name}|${(r.says || "").slice(0, 44)}`;
-      if (_seen.has(k)) continue;
-      _seen.add(k);
-      _extra.push({ name: v.name, says: r.says, href: `/who/${slug}/`, where: "named in a record" });
-    }
-  }
-}
-_extra.sort((x, y) => x.name.localeCompare(y.name));
+/* The marriages the tree does not carry. Computed by lib/treegap.js, which
+   /graves and /households use for the same question — one rule in one place,
+   because three copies of it would drift. */
+const _extra = notOnSurface(
+  new Set(m.rows.flatMap((r) => [r.a, r.b]).filter(Boolean)),
+  /\bmarri/i,
+);
 
 /* The couples, and the families they came from, on one page.
  *

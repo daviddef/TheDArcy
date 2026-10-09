@@ -7,6 +7,14 @@ import { u } from "../lib/url.js";
 import Graves from "@daviddef/archive-kit/components/Graves.astro";
 import fold from "../data/namefold.json";
 import g from "../data/graves.json";
+import { notOnSurface } from "../lib/treegap.js";
+
+/* Burials this archive has a record for and the tree does not carry — among
+   them JOHN SANIGER, Hannah's father, buried at Berkeley on 16 January 1825. */
+const _gap = notOnSurface(
+  new Set(g.rows.flatMap((r) => (r.people || []).map((p) => p.name)).filter(Boolean)),
+  /\bburial\b|\bburied\b/i,
+);
 const shared = g.rows.filter((r) => r.shared);
 const many = g.rows.filter((r) => r.n > 1 && !r.shared);
 const single = g.rows.filter((r) => r.n === 1);
@@ -70,5 +78,24 @@ const graves = g.rows.map((r) => ({
     <p class="small" style="margin-top:1.2rem"><strong>Arthur Hartley Sneyd is not on this page.</strong>
     He has no known grave — the army's own form recorded his burial place as "Not yet to hand", and it
     never came. <a href={u("/finding-arthur/")}>The search for him →</a></p>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2>And {_gap.length} the tree does not carry</h2>
+    <p class="dek">Burials this archive holds a record for, where no grave above names the person — including <strong>John Saniger, Hannah’s father, buried at Berkeley St Mary the Virgin on 16 January 1825</strong>. The table above is built from the family tree; these come from
+    registers, indexes and depositions. Until the tree holds them they belong here rather than
+    nowhere, and the list is computed each build, so documenting one more puts it here by itself.</p>
+    <Scroll>
+      <table style="margin-top:1.1rem">
+        <thead><tr><th>Who</th><th>What the record says</th><th>Where</th></tr></thead>
+        <tbody>{_gap.map((e) => (
+          <tr>
+            <td><a href={u(e.href)}>{e.name}</a></td>
+            <td class="small">{e.says}</td>
+            <td class="small dim">{e.where}</td>
+          </tr>))}
+        </tbody>
+      </table>
+    </Scroll>
   </section>
 </Base>
