@@ -214,8 +214,8 @@
       "where": "any surname search",
       "holds": "unknown",
       "span": "—",
-      "verdict": "blocked",
-      "note": "The site loads and its own search API then answers 403 and 400; the country list never finishes loading and the page sits on “Please wait”. Nothing was searched, so nothing is known — this is a blocked source and not an empty one.",
+      "verdict": "partial",
+      "note": "**CORRECTED 9 October 2026. This row said blocked; the site answers.** It was recorded blocked when its own search API returned 403 and 400 and the country list hung on «Please wait». Re-tested in a browser today at another archive's prompting — the Record Atlas session had just found eight French hosts that refuse a scripted request and open normally to a real browser — and the search returns results immediately.\n\n**SANIGER returns 25 burials and NOT ONE OF THEM IS IN THE UNITED KINGDOM**: United States, Canada, France and Australia. **Control: SMITH filtered to the United Kingdom returns English and Scottish burials** — Swarkestone and Portslade in England, Forfar and Aberdeen in Scotland — so the site does hold British cemeteries and the absence of an English Saniger is a real null rather than a gap in coverage. A weak one: BillionGraves is volunteer-photographed and its British coverage is thin and uneven, so it can support «not found here» and never «not buried».\n\n**The lesson is not about this site.** A verdict of «blocked» taken from a scripted request is a claim about the request, and it had sat in this table unretested since it was made.",
       "href": "/errands"
     },
     {

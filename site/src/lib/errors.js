@@ -2,6 +2,17 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "9 October 2026",
+    cause: "instrument",
+    what: "Recorded BillionGraves as «blocked» in the coverage table and left it there. It is not blocked. The site answers a browser immediately, and the 403 and 400 that produced the verdict were facts about the request rather than about the source.",
+    truth:
+      "Re-tested on 9 October only because the Record Atlas session mentioned, in passing, that eight French departmental archives in its own survey refuse a scripted request and open normally once a real browser asks. The same proved true here. SANIGER returns 25 burials — United States, Canada, France, Australia — and none in the United Kingdom, with a SMITH control confirming that British cemeteries are in the index. So the row should have read «partial, and holds no English Saniger», which is a finding, instead of «blocked», which is not.",
+    why: "«Blocked» is the one verdict in this table that feels like diligence. It says the archive tried and was refused, and it closes the question in a way that invites nobody to reopen it — including the archive that wrote it. The other four verdicts all describe the SOURCE; blocked describes the ATTEMPT, and nothing in the row said which attempt or by what means.",
+    lesson:
+      "A VERDICT ABOUT A REQUEST IS NOT A VERDICT ABOUT A SOURCE. Of four blocked rows here, two are account walls and genuinely shut, one survived a browser retest — irishgenealogy.ie still sits on a Cloudflare interstitial after twenty-two seconds and was not defeated — and one was simply wrong. The retest cost about two minutes and came from somebody else's unrelated work, which is the part worth keeping: this archive had no reason of its own to look again, because it had already written the answer down.",
+    href: "/coverage",
+  },
+  {
     when: "28 September 2026",
     cause: "instrument",
     what: "Fixed eight gates that swallowed an unknown flag, said so, and did not check whether anything else in tools/ chose a build directory some other way. Three did, by hardcoding `site/dist` — including crossread.py, the tool written for the exact failure committed as own error 49 that morning.",

@@ -9,6 +9,10 @@
       "title": "The research reached the pages and left four people behind, and split two more in half",
       "found": [
         [
+          "Corrected",
+          "/coverage — BillionGraves was never blocked. Own error 53"
+        ],
+        [
           "Added",
           "the charts again — Joseph D'Arcy's five Milford children, Charlotte at Chatham, Jane at Barbados. 41 edges became 54"
         ],
@@ -42,6 +46,8 @@
         ]
       ],
       "did": [
+        "AND A SOURCE THIS ARCHIVE HAD WRITTEN OFF IS OPEN. The Record Atlas session mentioned in passing that eight French departmental archives in its survey refuse a SCRIPTED request and open normally to a real browser, and suggested retesting anything written off that way. Four rows here carry «blocked». Two are account walls and genuinely shut. IRISHGENEALOGY.IE SURVIVED THE RETEST — still sitting on a Cloudflare interstitial after twenty-two seconds, not defeated and not going to be. AND BILLIONGRAVES WAS SIMPLY WRONG: it answers a browser at once, and the 403 and 400 behind the verdict were facts about the request.",
+        "WHAT IT HOLDS, NOW IT CAN BE ASKED: SANIGER returns 25 burials — United States, Canada, France, Australia — AND NONE IN THE UNITED KINGDOM. Control: SMITH filtered to the United Kingdom returns Swarkestone and Portslade in England and Forfar and Aberdeen in Scotland, so British cemeteries are in the index and this is a null rather than a gap. A weak null: the site is volunteer-photographed and thin in Britain, so it can support «not found here» and never «not buried». [Own error 53](/corrections/).",
         "WENT BACK TO THE 24 PARENT LINKS LEFT UNDRAWN, and the first measurement of them had been against the wrong index. It counted «parent not in the tree» using ancestors.json, WHICH HOLDS ONLY DIRECT-LINE ANCESTORS — Joseph D'Arcy reads as «0 in tree» there while having a person page. Asked of the GEDCOM's 15,643 individuals instead, the picture changed, and seven more links were safe to draw.",
         "JOSEPH D'ARCY'S SECOND FAMILY IS NOW DOCUMENTED ON THE CHARTS. Catherine Lucy Jane, John Hyde, Josephine, Frank Hyde and Joseph William were each baptised at Milford to «JOSEPH, Lt Col RA», and every one of their charts drew that father as «tree, untested». Charlotte D'Arcy's Chatham baptism of 1826 and Jane D'Arcy's christening at St Michael, Barbados in 1788 — the latter naming Robert D'Arcy as her father — are drawn too. 54 recorded relationships across 51 people, from 41 across 35 this morning. The mother of the Milford five is KATHERINE LUCY ELIZA in the register and is in the tree under no such spelling, so only the father is drawn: naming her would be guessing which of the tree's women she is.",
         "AND A REFUSAL NOBODY HAD READ. The REL table carried «Charlotte Maria D'Arcy» pointing at George Pitt D'Arcy, and the tree calls her CHARLOTTE D'ARCY — so build_register.py had been printing «ambiguous or absent, so no edge was drawn» for her on every build, and the edge had simply never existed. It is drawn under the right name now and the dead entry is gone, because a refusal that fires every build and is never acted on is the «ok» line in a different costume.",

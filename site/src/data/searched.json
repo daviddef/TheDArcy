@@ -3860,6 +3860,15 @@
       "outcome": "blocked",
       "got": "**Bangor's 1862 deaths are not transcribed at all.** DARCY deaths for 1862 return March, September and December and no June, which on its own could mean either «no D'Arcy died that quarter» or «that quarter is missing». **The control settles it: SMITH deaths in the Bangor district across the whole of 1862 return ZERO rows and not one quarter header** — impossible for a real result in a district that size, so the district-year is simply not in the index. He died on 14 June 1862. Again the GRO's own index, or the Honourable East India Company officer papers at the British Library, which this archive has never opened.",
       "href": "/joseph-darcy"
+    },
+    {
+      "src": "BillionGraves — SANIGER, every country, read in a browser",
+      "what": "Whether the site recorded as blocked is actually blocked, and whether it holds an English Saniger burial",
+      "when": "09 Oct 2026",
+      "outcome": "empty",
+      "ctl": "named",
+      "got": "**It is not blocked, and it holds no English Saniger.** The search answers at once in a browser; the 403 and 400 that put it in the coverage table as «blocked» were the scripted attempt, not the site. SANIGER returns **25 burials across the United States, Canada, France and Australia and none in the United Kingdom**. Control: SMITH filtered to the United Kingdom returns English and Scottish burials — Swarkestone, Portslade, Forfar, Aberdeen — so British cemeteries are in the index and this is a null rather than a gap. Re-tested only because the Record Atlas session reported eight French archives that refuse a script and open to a browser.",
+      "href": "/coverage"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
