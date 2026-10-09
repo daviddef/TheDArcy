@@ -10,6 +10,10 @@
       "found": [
         [
           "Corrected",
+          "/coverage — the BillionGraves correction was itself wrong. Four English Sanigars, not none. Own error 54"
+        ],
+        [
+          "Corrected",
           "/coverage — BillionGraves was never blocked. Own error 53"
         ],
         [
@@ -46,6 +50,8 @@
         ]
       ],
       "did": [
+        "AND THEN THE CORRECTION WAS WRONG TOO, WITHIN THE HOUR. It said SANIGER returns 25 burials and none in the United Kingdom. The same query at `size=50` returns FOUR IN ENGLAND: Andrew, Barbara and Dennis Sanigar all at HOLY TRINITY CHURCH, KINGSWOOD, and Maisie Sanigar at Scartho Road Cemetery, Grimsby. The «none» was the page size. Twentieth-century burials, so not evidence for the eighteenth-century questions — but three of this surname in one churchyard, and WHICH Kingswood is unresolved: there is one in Gloucestershire three miles from Wotton-under-Edge and another in Bristol.",
+        "THE SITE CANNOT BE SEARCHED BY URL AT ALL. `cemetery_country=United+Kingdom` is accepted and ignored — identical rows with and without it, French and American and Australian among them, which also means the SMITH «control» published an hour ago was never filtered. `page` is accepted and ignored: `page=7` returns the same first three records as `page=1`, and the footer reads «Page 1 of 200» whatever is asked. About ten thousand D'Arcy records exist and the first fifty are all a URL can reach. THE FOURTH SEARCH PARAMETER THIS ARCHIVE HAS FOUND ACCEPTED AND IGNORED, after FindMyPast's `place`, `sourcecategory`, and `yearofbirth` with `keywordsplace`. Usable for a positive, useless for a negative. [Own error 54](/corrections/).",
         "AND A SOURCE THIS ARCHIVE HAD WRITTEN OFF IS OPEN. The Record Atlas session mentioned in passing that eight French departmental archives in its survey refuse a SCRIPTED request and open normally to a real browser, and suggested retesting anything written off that way. Four rows here carry «blocked». Two are account walls and genuinely shut. IRISHGENEALOGY.IE SURVIVED THE RETEST — still sitting on a Cloudflare interstitial after twenty-two seconds, not defeated and not going to be. AND BILLIONGRAVES WAS SIMPLY WRONG: it answers a browser at once, and the 403 and 400 behind the verdict were facts about the request.",
         "WHAT IT HOLDS, NOW IT CAN BE ASKED: SANIGER returns 25 burials — United States, Canada, France, Australia — AND NONE IN THE UNITED KINGDOM. Control: SMITH filtered to the United Kingdom returns Swarkestone and Portslade in England and Forfar and Aberdeen in Scotland, so British cemeteries are in the index and this is a null rather than a gap. A weak null: the site is volunteer-photographed and thin in Britain, so it can support «not found here» and never «not buried». [Own error 53](/corrections/).",
         "WENT BACK TO THE 24 PARENT LINKS LEFT UNDRAWN, and the first measurement of them had been against the wrong index. It counted «parent not in the tree» using ancestors.json, WHICH HOLDS ONLY DIRECT-LINE ANCESTORS — Joseph D'Arcy reads as «0 in tree» there while having a person page. Asked of the GEDCOM's 15,643 individuals instead, the picture changed, and seven more links were safe to draw.",

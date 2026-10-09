@@ -4,6 +4,17 @@ export const OWN = [
   {
     when: "9 October 2026",
     cause: "instrument",
+    what: "Corrected a wrong «blocked» verdict on BillionGraves and published the correction inside the hour — «SANIGER returns 25 burials and none in the United Kingdom». Asking the identical query with a larger page size returns four in England, three of them Sanigars in one churchyard at Kingswood.",
+    truth:
+      "The query was run with `size=25`, and twenty-five rows came back with no British cemetery among them. With `size=50` the same query returns Andrew, Barbara and Dennis Sanigar at Holy Trinity Church, Kingswood, and Maisie Sanigar at Scartho Road Cemetery, Grimsby. The «none» was the page size. Worse, the site cannot be paged at all from a URL: `page=7` returns the same first three records as `page=1` and the footer reads «Page 1 of 200» whatever is asked, so the first fifty rows are the whole of what a URL can see out of about ten thousand.",
+    why: "The verdict being corrected was «blocked», and the pleasure of overturning it did the thinking. Having just proved the source answers, the next sentence was written as though the source had now been MEASURED — and a null was published off a single unexamined page of results, with a SMITH control that was itself unfiltered because the country parameter it relied on is ignored.",
+    lesson:
+      "A CORRECTION IS A CLAIM AND INHERITS NO CREDIT FROM THE ERROR IT FIXES. This one was published an hour after own error 53 and is the same shape as it: a true statement about one request, written as a property of a source. The useful residue is a rule for this site — BillionGraves is usable for a positive and useless for a negative, because nothing in its URL interface narrows or pages a result set, and it says so by returning the same fifty rows with a straight face.",
+    href: "/coverage",
+  },
+  {
+    when: "9 October 2026",
+    cause: "instrument",
     what: "Recorded BillionGraves as «blocked» in the coverage table and left it there. It is not blocked. The site answers a browser immediately, and the 403 and 400 that produced the verdict were facts about the request rather than about the source.",
     truth:
       "Re-tested on 9 October only because the Record Atlas session mentioned, in passing, that eight French departmental archives in its own survey refuse a scripted request and open normally once a real browser asks. The same proved true here. SANIGER returns 25 burials — United States, Canada, France, Australia — and none in the United Kingdom, with a SMITH control confirming that British cemeteries are in the index. So the row should have read «partial, and holds no English Saniger», which is a finding, instead of «blocked», which is not.",

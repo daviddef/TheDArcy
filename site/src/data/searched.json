@@ -3862,12 +3862,19 @@
       "href": "/joseph-darcy"
     },
     {
-      "src": "BillionGraves — SANIGER, every country, read in a browser",
+      "src": "BillionGraves — SANIGER, read in a browser at two page sizes",
       "what": "Whether the site recorded as blocked is actually blocked, and whether it holds an English Saniger burial",
       "when": "09 Oct 2026",
-      "outcome": "empty",
-      "ctl": "named",
-      "got": "**It is not blocked, and it holds no English Saniger.** The search answers at once in a browser; the 403 and 400 that put it in the coverage table as «blocked» were the scripted attempt, not the site. SANIGER returns **25 burials across the United States, Canada, France and Australia and none in the United Kingdom**. Control: SMITH filtered to the United Kingdom returns English and Scottish burials — Swarkestone, Portslade, Forfar, Aberdeen — so British cemeteries are in the index and this is a null rather than a gap. Re-tested only because the Record Atlas session reported eight French archives that refuse a script and open to a browser.",
+      "outcome": "yield",
+      "got": "**Four English Sanigars, and the first reading of this missed them.** At `size=25` the query returned 25 rows and no United Kingdom at all; at `size=50` it returns **ANDREW SANIGAR (d. 31 March 1980), BARBARA SANIGAR (d. December 2008) and DENNIS SANIGAR (d. 29 August 2003), all three at HOLY TRINITY CHURCH, KINGSWOOD**, and MAISIE SANIGAR (d. 29 May 1964) at Scartho Road Cemetery, Grimsby. Twentieth-century burials, so not evidence for the eighteenth-century questions — but three of one surname in one churchyard at Kingswood is the surname still standing where this archive works, and **which Kingswood is unresolved**: there is one in Gloucestershire three miles from Wotton-under-Edge and another in Bristol, and the index says only «England».",
+      "href": "/coverage"
+    },
+    {
+      "src": "BillionGraves — whether its URL parameters apply at all",
+      "what": "Whether a country filter or a page number can be used to search it systematically",
+      "when": "09 Oct 2026",
+      "outcome": "blocked",
+      "got": "**Neither applies, and both are accepted silently.** `cemetery_country=United+Kingdom` returns rows identical to the unfiltered query, French, American and Australian among them. `page=7` returns the same first three records as `page=1`, and the footer reads «Page 1 of 200» whatever page is requested — so about ten thousand D'Arcy records exist and the first fifty are all that a URL can reach. **This is the fourth search parameter this archive has found accepted and ignored**, after FindMyPast's `place`, its `sourcecategory`, and `yearofbirth` combined with `keywordsplace`. A positive from this site is worth having; an absence is not, until the search is driven through its own interface.",
       "href": "/coverage"
     }
   ],
