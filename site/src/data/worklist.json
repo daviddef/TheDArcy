@@ -1239,11 +1239,27 @@
     },
     {
       "n": 141,
+      "state": "done",
+      "owner": "this archive",
+      "since": "2026-10-09",
+      "what": "Read the Seine-Maritime registers for the two 1843 D'Arcy deaths — DONE, and the tables décennales were not the way in",
+      "note": "Errand 35's two deaths now have a free online route, found 9 October. **What is left is reading the registers**, and the tables décennales are the way in rather than the 310-view register.\n\n**Ingouville, for Major John Maddock Jones, died March 1843:** tables décennales **4 E 10127** (1833-1862, 48 views) and **4 E 9933** (1843-1852, 309 views); the year's deaths register is **4 E 9077**, 310 views.\n\n**Le Havre, for Margaret Jones née D'Arcy, died February 1843:** twelve results, covering the town and the absorbed communes of Rouelles, Bléville, Sanvic and Ingouville, each with its own cote. **Which commune «at Havre» means is not settled**, so the tables come first.\n\nA French death act gives the age, the birthplace, the parents where known, and the surviving spouse. For Margaret that is the nearest thing to a birth date for a daughter of Robert D'Arcy, which is what errand 35 said it wanted and expected to buy at Kew.\n\n**DONE 9 OCTOBER. Both acts read, and the plan above was wrong twice.** The first table opened, **4 E 10127**, was chosen for being the smallest — and it is a *different Ingouville*, a village near Saint-Valery-en-Caux. Own error 55. The second lesson is cheerier: **the tables were never needed.** The 1843 deaths register runs chronologically at about two acts a view, so a known date is a binary search — act 116 is 23 March, act 85 is 1 March — and Jones's death on the 21st had to be **act 113**, which it is. Margaret's own notice dated her to within days and her act is **N° 43**, 1 February.\n\n**What the acts gave: AN AGE EACH.** She was **sixty-one**, born about 1781. He was **sixty-eight**, born about 1774. Neither act names a parent or a birthplace. See [/margaret-jones](/margaret-jones/)."
+    },
+    {
+      "n": 142,
       "state": "next",
       "owner": "this archive",
       "since": "2026-10-09",
-      "what": "Read the Seine-Maritime registers for the two 1843 D'Arcy deaths — tables décennales first",
-      "note": "Errand 35's two deaths now have a free online route, found 9 October. **What is left is reading the registers**, and the tables décennales are the way in rather than the 310-view register.\n\n**Ingouville, for Major John Maddock Jones, died March 1843:** tables décennales **4 E 10127** (1833-1862, 48 views) and **4 E 9933** (1843-1852, 309 views); the year's deaths register is **4 E 9077**, 310 views.\n\n**Le Havre, for Margaret Jones née D'Arcy, died February 1843:** twelve results, covering the town and the absorbed communes of Rouelles, Bléville, Sanvic and Ingouville, each with its own cote. **Which commune «at Havre» means is not settled**, so the tables come first.\n\nA French death act gives the age, the birthplace, the parents where known, and the surviving spouse. For Margaret that is the nearest thing to a birth date for a daughter of Robert D'Arcy, which is what errand 35 said it wanted and expected to buy at Kew."
+      "what": "A baptism for a D'Arcy daughter born about 1781 — the French act finally gives a year to search on",
+      "note": "Act N° 43 at Ingouville puts Margaret's birth **about 1781**, and the 1806 marriage notice calls her Robert D'Arcy's **eldest daughter**. That is the first time this archive has had a year and a birth order for a child of Robert, and it bears on Robert himself: **a first child about 1781 argues against the tree's 1751 birth for him far less than it argues about where he was in 1780.**\n\nThe search is a baptism of a D'Arcy daughter about 1779–1783. **It has no county**, which is the problem — Robert's own origin is the open question on [/hornby](/hornby/) — so this is a search for a name and a date across a national index rather than a parish. Do it as a measured sweep with a control, not as a lucky dip, and put the null on [/searched](/searched/) if it is one."
+    },
+    {
+      "n": 143,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-10-09",
+      "what": "A Ruabon baptism for John Maddock Jones about 1774 — Penybryn is named in three records",
+      "note": "His death act makes him **sixty-eight on 21 March 1843**, so born about 1774–75. Unlike his wife he has a place: he is **of Penybryn in the parish of Ruabon, Denbighshire** on the 1806 Chatham marriage, in a Shropshire deed of 1829, and in the 1843 obituary. **A parish and a five-year window is a searchable thing.**\n\nIt buys the archive nothing about the D'Arcys directly, and should be ranked accordingly. What it would buy is a check on the act: the declarants were strangers who did not know his parents, and an age they gave is an age worth testing against a register."
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",
