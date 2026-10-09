@@ -2,7 +2,7 @@
   "_note": "Values that encode a DECISION rather than a measurement. tools/check_decisions.py recomputes each from its real source and REFUSES if one has moved, because a decision changing is exactly the case where a deliberate act should be required — and editing this file in the same commit is that act. Most numbers in this build move every run; these do not. See own error 48.",
   "decisions": {
     "kitPin": {
-      "value": "8ec58e6",
+      "value": "3c9214e",
       "why": "Which build of the shared kit this archive's gates are. It moved inside a commit about gating a chart on 27 September and three builds passed over it unnoticed — own error 48."
     },
     "livingPolicy": {
