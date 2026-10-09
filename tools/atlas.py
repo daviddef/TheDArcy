@@ -100,6 +100,18 @@ DOCUMENTED = [
     # point — three pins on Berkeley and one on Awre, all stamped "exact" by a
     # gazetteer that had simply not heard of them. That is false precision, and
     # a map that claims it is worse than a map that omits them.
+    # 9 October 2026. SEVEN places carry a documented event here and NOT ONE
+    # of them could be added. Bourn, Lymington, Penzance and Milford resolve to
+    # 52.531,-1.265 — the geocode for the word ENGLAND — each stamped `exact`.
+    # Bangor and Bombay resolve to nothing. And Thornbury, which looked like
+    # the one good case at 51.833,-2.167, is the GLOUCESTERSHIRE centroid: it
+    # was added, and check_atlas.py refused the build because Thornbury and
+    # Gloucestershire now shared a point and neither contains the other.
+    #
+    # That is own error 41 attempted twice in one hour, caught the second time
+    # by the gate written after the first. The rule above is not a style note;
+    # four of these would have been a Leicestershire field and the fifth a
+    # county town standing in for a market town twenty miles away.
     ("Saniger, Berkeley, Gloucestershire, England",
      "The hamlet the surname came from — on the king's highway from Longbridge "
      "by the mid-13th century, «Swonhunger ats Saniger» in Smyth's survey of "

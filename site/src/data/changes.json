@@ -9,6 +9,14 @@
       "title": "The research reached the pages and left four people behind, and split two more in half",
       "found": [
         [
+          "Added",
+          "the charts — 6 more documented parent links drawn; 41 edges became 47"
+        ],
+        [
+          "Checked",
+          "the atlas and the timeline — the timeline is honest, the atlas cannot map seven documented places"
+        ],
+        [
           "Corrected",
           "/marriages said «every marriage this archive can date» and showed only the tree's. 34 documented ones were missing"
         ],
@@ -26,6 +34,10 @@
         ]
       ],
       "did": [
+        "THEN THE CHARTS. 30 of the 58 record lines that name a parent belonged to people whose pedigree drew no edge at all — documented parentage still rendering as «tree, untested». The cause is structural: REL is hand-kept and the record lines are generated, so a new record never becomes an edge unless somebody writes one. Six were added and drawn, taking the charts from 41 edges to 47 across 44 people. ONLY DISTINCTIVE FULL NAMES WERE USED: the automatic pass also offered «Mary», «Elizabeth» and «MARY» resolving to exactly one tree person each, and this family reuses forenames without mercy. Two of the eight proposed were refused as ambiguous by the tool itself and are named rather than drawn.",
+        "THEN THE ATLAS, WHICH CANNOT MAP ANY OF THE SEVEN PLACES THIS ARCHIVE HAS DOCUMENTED AND THE TREE DOES NOT HOLD. Four resolve to 52.531,-1.265, the geocode for the word ENGLAND, each stamped «exact»: Bourn (Catherine Georgiana West's burial), Lymington (Frank Hyde D'Arcy's marriage and Joseph D'Arcy's death district), Penzance (George Abbas died there), Milford (two D'Arcy baptisms). Two resolve to nothing: Bangor, where Robert West D'Arcy died, and Bombay, where he married.",
+        "AND THE SEVENTH IS THE ONE WORTH RECORDING. Thornbury looked like the single good case and was added to the map with Lydia Sanigar's death registration behind it. check_atlas.py REFUSED THE BUILD: Thornbury and Gloucestershire now shared 51.833,-2.167, and neither contains the other. It is the county centroid standing in for a market town twenty miles away. OWN ERROR 41 ATTEMPTED TWICE IN ONE HOUR, CAUGHT THE SECOND TIME BY THE GATE WRITTEN AFTER THE FIRST — and caught after I had already congratulated myself on avoiding it. The entry was removed; all seven are counted on the work list instead of guessed at.",
+        "THE TIMELINE IS HONEST AND WAS LEFT ALONE. Its dek says the point «is not when people were born — it is what was happening around them when they were», which is a stated curation rather than a claim of completeness, so a documented event missing from it is not a fault. /graves says «gathered from the tree» in its own first sentence. Those two needed nothing.",
         "THEN THE SAME QUESTION OF THE DIAGRAMS, and /marriages was overclaiming. Its dek read «EVERY MARRIAGE THIS ARCHIVE CAN DATE, in order». The page is built from marriages.json, which build_family_pages.py derives from the GEDCOM — so what it actually showed was every marriage THE TREE can date. The difference is 34 marriages this archive holds a record for and the tree does not carry, AND ONE OF THEM IS HANNAH SANIGER'S OWN MARRIAGE TO JAMES WAKEFIELD AT BRISTOL ON 17 OCTOBER 1831, which is the founding marriage of the English line.",
         "THE CLAIM IS CORRECTED AND THE DIFFERENCE IS NOW PUBLISHED. The page computes it at build time from person-records.json and dossiers.json against the couples table, so it cannot go stale: document a marriage and it appears there until the tree catches up. Among the 34 are William Sneyd and Mary Blackbourne at Madeley in 1769, Robert West D'Arcy at Bombay in 1846, Frank Hyde D'Arcy at Lymington in 1863, and the 1852 Bristol marriage of James Sanigar found a fortnight ago.",
         "AND THE FIRST DRAFT OF THAT BLOCK MADE ITS OWN FALSE CLAIM: it said «the first of them is the founding marriage of the English line» while sorting the table alphabetically, which put Agnis Sainger at the top. Caught by reading the built page rather than the intention. /graves and /households were checked in the same pass and neither overclaims — graves says «gathered from the tree» in its own first sentence.",

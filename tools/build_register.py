@@ -996,6 +996,25 @@ REL = [
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
     ("Charlotte Maria D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 31 Mar 1826"),
     ("Frederick Robert D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 2 Jul 1811"),
+    # 9 October 2026. The charts were drawing «tree, untested» over parentage
+    # this archive has a record for. 30 of 58 record lines that name a parent
+    # belonged to people with no edge at all, because REL is hand-kept while
+    # the record lines are generated — so a new record never becomes an edge
+    # unless somebody writes one.
+    #
+    # Only DISTINCTIVE FULL NAMES are added here. The automatic pass also
+    # offered «Mary», «Elizabeth» and «MARY» as parents resolving to exactly
+    # one tree person, and this family reuses forenames without mercy; an edge
+    # drawn onto the wrong woman is the single failure ids_for() exists to
+    # prevent. Those stay undrawn and are counted instead.
+    ("George Pitt D'Arcy|1864", "Eliza Keeling", "Qld death reg. 1931, parents named"),
+    ("George Pitt D'Arcy|1864", "George Lindsay D'Arcy", "Qld death reg. 1931, parents named"),
+    ("James Atwell", "Maria Rossiter", "Qld death reg. 1907/C/..., parents named"),
+    ("James Atwell", "John Atwell", "Qld death reg. 1907/C/..., parents named"),
+    ("Paul Cole Atkinson", "Ann Kent", "Qld death reg. 1906, parents named"),
+    ("Paul Cole Atkinson", "Richard Atkinson", "Qld death reg. 1906, parents named"),
+    ("Eliza Wakefield", "James Wakefield", "baptism, Bristol, 14 Oct 1832"),
+    ("Ellen Wakefield", "James Wakefield", "baptism, Bristol, 26 Oct 1834"),
     # Westminster, 1818 and 1820. Both baptisms name BOTH parents, but only the
     # father can be drawn: the tree holds Catherine Georgiana West as a name on a
     # marriage rather than as a person, so there is no node to draw an edge to.

@@ -85,6 +85,12 @@
 "Qld death reg. 1909/C/1054",
 "Qld death reg. 1909/C/1054"
 ],
+"eliza-wakefield": [
+"baptism, Bristol, 14 Oct 1832"
+],
+"ellen-wakefield": [
+"baptism, Bristol, 26 Oct 1834"
+],
 "hiram-wakefield": [
 "Qld death reg. 1905/B/5782"
 ],
@@ -337,6 +343,99 @@
 "graft": null,
 "line": true,
 "spine": true
+},
+"george-pitt-d-arcy-1864": {
+"rel": {
+"eliza-keeling": [
+"Qld death reg. 1931, parents named"
+],
+"george-lindsay-d-arcy": [
+"Qld death reg. 1931, parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": true
+},
+"eliza-keeling": {
+"rel": {
+"george-pitt-d-arcy-1864": [
+"Qld death reg. 1931, parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"george-lindsay-d-arcy": {
+"rel": {
+"george-pitt-d-arcy-1864": [
+"Qld death reg. 1931, parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": true
+},
+"james-atwell": {
+"rel": {
+"maria-rossiter": [
+"Qld death reg. 1907/C/..., parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"maria-rossiter": {
+"rel": {
+"james-atwell": [
+"Qld death reg. 1907/C/..., parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"paul-cole-atkinson": {
+"rel": {
+"ann-kent": [
+"Qld death reg. 1906, parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"ann-kent": {
+"rel": {
+"paul-cole-atkinson": [
+"Qld death reg. 1906, parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"eliza-wakefield": {
+"rel": {
+"james-wakefield": [
+"baptism, Bristol, 14 Oct 1832"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"ellen-wakefield": {
+"rel": {
+"james-wakefield": [
+"baptism, Bristol, 26 Oct 1834"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
 },
 "george-abbas-kooli-d-arcy": {
 "rel": {
@@ -1464,12 +1563,6 @@
 "line": true,
 "spine": false
 },
-"ann-kent": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
 "walter-sneyd-1809": {
 "rel": {},
 "graft": null,
@@ -1513,12 +1606,6 @@
 "spine": false
 },
 "john-atwell-1824": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
-"maria-rossiter": {
 "rel": {},
 "graft": null,
 "line": true,
@@ -1572,12 +1659,6 @@
 "line": false,
 "spine": false
 },
-"george-lindsay-d-arcy": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": true
-},
 "william-atkinson": {
 "rel": {},
 "graft": null,
@@ -1596,12 +1677,6 @@
 "line": false,
 "spine": false
 },
-"eliza-wakefield": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
 "james-buckley-falcon-atwell": {
 "rel": {},
 "graft": null,
@@ -1612,12 +1687,6 @@
 "rel": {},
 "graft": null,
 "line": false,
-"spine": false
-},
-"paul-cole-atkinson": {
-"rel": {},
-"graft": null,
-"line": true,
 "spine": false
 },
 "william-creech": {
@@ -1633,12 +1702,6 @@
 "spine": false
 },
 "anne-creech": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"ellen-wakefield": {
 "rel": {},
 "graft": null,
 "line": false,
@@ -1678,12 +1741,6 @@
 "rel": {},
 "graft": null,
 "line": false,
-"spine": false
-},
-"eliza-keeling": {
-"rel": {},
-"graft": null,
-"line": true,
 "spine": false
 },
 "gregory-haines-atwell": {
@@ -1842,12 +1899,6 @@
 "line": false,
 "spine": false
 },
-"james-atwell": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
 "elizabeth-atkinson": {
 "rel": {},
 "graft": null,
@@ -1985,12 +2036,6 @@
 "graft": null,
 "line": false,
 "spine": false
-},
-"george-pitt-d-arcy-1864": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": true
 },
 "henry-atwell": {
 "rel": {},
