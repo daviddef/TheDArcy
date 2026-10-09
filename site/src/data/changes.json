@@ -9,6 +9,10 @@
       "title": "The research reached the pages and left four people behind, and split two more in half",
       "found": [
         [
+          "Added",
+          "/sanigers — three Sanigar burials at Kingswood, and a coordinate settling which Kingswood"
+        ],
+        [
           "Checked",
           "every gate, for one that answers a different question from the one it reports — and found a tool that asks nobody"
         ],
@@ -54,6 +58,8 @@
         ]
       ],
       "did": [
+        "AND BACK TO RESEARCH, BECAUSE THE DAY HAD FOUND FOUR OWN ERRORS AND NO ANCESTORS. The newly-opened source was asked a positive question, which is the one it can answer. HOLY TRINITY CHURCH, KINGSWOOD HOLDS THREE SANIGAR BURIALS — Andrew 1980, Dennis 2003, Barbara 2008 — and the cemetery page settles which Kingswood with a coordinate: 51.4616, -2.5033, which is KINGSWOOD IN BRISTOL, six kilometres east of the centre. Kingswood near Wotton-under-Edge lies twenty kilometres north at 51.63, -2.36. THE COUNTY COULD NOT HAVE DECIDED IT — both were Gloucestershire, the Bristol one until 1974 — and guessing from the name would have put this family's surname back in the Vale it came from rather than the city it moved to.",
+        "THE CHURCHYARD IS ALSO A FINDING IN ITSELF: 571 records and 402 headstone images, free and without an account. It is the first Bristol burial ground this archive can read end to end. Twentieth-century, so it answers nothing about the eighteenth — what it shows is the surname still standing in Bristol in 2008, four generations after Thomas Sinegar was married there by banns.",
         "AND TOOK THE RECORD ATLAS SESSION'S CHALLENGE LITERALLY: does any probe here ask a different question from the one whose answer it records? Theirs had been a liveness check passing against a host that served nothing while 25 of 27 tests failed. Most of this archive's gates have been proved to fail in anger this fortnight — controls refused a `ctl` on a blocked row this week, atlas refused the Thornbury pin an hour ago, retired refused a restated reading, secrets refused a planted key, whosplit refused Miriam on its first run. THE ONE THAT HAS NEVER ANSWERED ANYTHING IS check_cites.py.",
         "IT IS WIRED INTO NOTHING AND HAS NEVER RUN. It tests the links OUT of this site, which nothing else does, and a dead citation looks exactly like a live one on the page. I wired it into build.sh and took it straight back out, because the measurement said not to: 575 DISTINCT EXTERNAL URLS, one at a time, 12-SECOND TIMEOUT EACH, AND NO OUTPUT UNTIL THE LAST RETURNS. A run was stopped at eight minutes having printed nothing. And 428 OF THE 575 ARE MYHERITAGE LINKS carried in from the GEDCOM export rather than citations this archive chose — as written it would spend most of its time checking somebody else's footnotes. Work list 140, with what it needs to become usable. A step people disable is worse than no step.",
         "AND THEN THE CORRECTION WAS WRONG TOO, WITHIN THE HOUR. It said SANIGER returns 25 burials and none in the United Kingdom. The same query at `size=50` returns FOUR IN ENGLAND: Andrew, Barbara and Dennis Sanigar all at HOLY TRINITY CHURCH, KINGSWOOD, and Maisie Sanigar at Scartho Road Cemetery, Grimsby. The «none» was the page size. Twentieth-century burials, so not evidence for the eighteenth-century questions — but three of this surname in one churchyard, and WHICH Kingswood is unresolved: there is one in Gloucestershire three miles from Wotton-under-Edge and another in Bristol.",

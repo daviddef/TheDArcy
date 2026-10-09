@@ -617,6 +617,14 @@
       "span": "1837 onwards",
       "verdict": "partial",
       "note": "**FreeBMD is transcribed unevenly BY QUARTER AND BY DISTRICT, and the gaps are invisible until controlled.** A quarter with nothing transcribed simply does not appear in the results; it prints no header and no warning, so it reads exactly like a quarter in which nobody of that name died.\n\nMeasured 7 October 2026 against two deaths this archive is looking for:\n\n· **December 1885, deaths — absent.** SMITH in the Penzance district returns March, June and September 1885, each marked >99%, and no December. George Abbas Kooli D'Arcy died on 22 October 1885.\n· **Bangor district, 1862, deaths — absent entirely.** SMITH across all four quarters of 1862 returns **zero rows and no quarter headers**, which cannot be a real result for a district that size. Robert West D'Arcy died at Bangor on 14 June 1862.\n\n**So the rule for this source is: before quoting an absence, run a common surname at the same district and quarter.** Where the quarter is transcribed FreeBMD prints its completeness beside the heading — «(>99%)» — and where it is not, it prints nothing at all, which is the one case that looks like evidence."
+    },
+    {
+      "db": "BillionGraves — Holy Trinity Church, Kingswood (Bristol)",
+      "where": "Kingswood, Bristol — 51.4616, -2.5033",
+      "holds": "571 headstone records and 402 photographs of one Bristol churchyard",
+      "span": "not stated; the Sanigar stones run 1964–2008",
+      "verdict": "good",
+      "note": "**One Bristol burial ground this archive can read end to end.** Found on 9 October while checking whether BillionGraves was blocked at all. It carries **571 records and 402 headstone images**, free and without an account, and it holds three SANIGAR burials — Andrew 1980, Dennis 2003, Barbara 2008.\n\n**Twentieth-century, so not evidence for the eighteenth-century questions.** What it is good for is the surname's survival and its place: Kingswood is in Bristol, not the Vale — where this family moved to rather than where it came from.\n\nThe same caveat as the parent site applies to any absence — the search cannot be narrowed or paged from a URL — but a named cemetery page is a positive and can be read whole."
     }
   ],
   "verdicts": {
