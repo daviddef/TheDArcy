@@ -3951,6 +3951,68 @@
         "le-havre",
         "ad-seine-maritime"
       ]
+    },
+    {
+      "src": "FreeREG — Ruabon St Mary, Denbighshire, register contents",
+      "url": "https://www.freereg.org.uk/freereg_contents/574446fbf493fd6f12000639/show_church",
+      "what": "Whether a baptism of John Maddock Jones about 1774 is reachable in the parish his marriage, a 1829 deed and his obituary all give him",
+      "when": "09 Oct 2026",
+      "outcome": "empty",
+      "got": "**The register is there and the baptisms are not.** Ruabon St Mary holds **30,976 transcriptions, 1599–1936** — and its decade table shows the baptism column **blank for 1770–1779, 1780–1789, 1790–1799 and 1800–1809**, with baptisms beginning at **1,078 in 1810–1819**. The same 1770s carry **253 marriages and 722 burials**, so the gap is baptisms specifically and not the parish. The church note records the original as «Bap 1559-1945», so the register exists; it is the transcription that stops. **A baptism about 1774 cannot be found here by anybody, and the next person should not spend an evening confirming it.** The Welsh form of the name, «Rhiwabon», is a separate place entry in the same county list and is an empty stub — no church, no register — so it is not a second chance.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "jones",
+        "ruabon",
+        "denbighshire",
+        "freereg"
+      ]
+    },
+    {
+      "src": "FreeREG — Denbighshire, surname Maddock, 1750–1785",
+      "url": "https://www.freereg.org.uk/search_queries/new",
+      "what": "Whether MADDOCK is a Ruabon name — his middle name, on the Welsh custom, would most likely be his mother's maiden surname",
+      "when": "09 Oct 2026",
+      "outcome": "null",
+      "got": "**Eighty-seven Maddock and Maddocks records across Denbighshire in thirty-five years, and NOT ONE OF THEM AT RUABON.** The 87 break down as 38 baptisms, 29 burials and 20 marriages, at Holt, Gresford, Ruthin and Wrexham. **The control is in the same result set:** the search ran loose and returned ten Ruabon rows under Matthews and Mathews, which proves Ruabon was in scope and simply holds no Maddocks. Three Jones–Maddock marriages turn up in the county — Thomas Jones and Barbara Maddock at Gresford in 1761, **Joseph Jones and Ann Maddocks at Gresford on 8 January 1772**, and Edward Maddocks and Hannah Jones at Ruthin in 1783. **The 1772 one sits two years before an estimated birth and this archive is not going to pretend that is evidence.** It is a different parish, and Jones and Maddocks are two of the commonest surnames in the county. It is written down as a resemblance so that nobody has to find it twice, and it is not attached to anyone.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "jones",
+        "maddock",
+        "ruabon",
+        "denbighshire",
+        "freereg"
+      ]
+    },
+    {
+      "src": "FreeREG — baptisms, all counties, surname Jones with the forename Maddock, 1760–1795",
+      "url": "https://www.freereg.org.uk/search_queries/new",
+      "what": "The distinctive half of his name, searched nationally rather than by parish",
+      "when": "09 Oct 2026",
+      "outcome": "null",
+      "got": "**Two results in everything FreeREG holds, and neither is him.** A Barbra Jones baptised at Llantwit Major, Glamorgan, in 1762, matched through a relative; and a **Maddock Jones baptised at Glasbury St Peter, Brecknockshire, on 14 April 1782** — eight years late and sixty miles from Ruabon. The null is honest but weak on its own, because FreeREG's baptism coverage is uneven county by county; it is worth having only because the Ruabon row above explains exactly why the parish itself could not answer.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "jones",
+        "maddock",
+        "freereg"
+      ]
+    },
+    {
+      "src": "Welsh Newspapers Online (National Library of Wales), newspapers.library.wales",
+      "url": "https://newspapers.library.wales/",
+      "what": "A free copy of the Caernarvon & Denbigh Herald obituary of 1 April 1843, which this archive currently cites from a paid site",
+      "when": "09 Oct 2026",
+      "outcome": "blocked",
+      "got": "**A Cloudflare «Performing security verification» interstitial that did not clear**, on the search URL and again on the bare homepage, over about forty seconds in a browser. That is a bot check and this archive does not work around bot checks, so it stopped there. **This is a verdict on one attempt from one browser today and not on the source** — the same interstitial clears for most people, and the National Library's main site at library.wales loaded normally in the same session. Worth retrying, because the prize is real: this archive cites the Caernarvon & Denbigh Herald of 1 April 1843 through a subscription site, and Welsh Newspapers Online covers 1804–1919 for nothing.",
+      "href": "/worklist",
+      "tags": [
+        "jones",
+        "nlw",
+        "newspapers"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
