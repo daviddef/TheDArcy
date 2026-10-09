@@ -994,7 +994,6 @@ REL = [
     ("Vivian Ernest William Sneyd", "Thomas George Sneyd", "NAA B2455 attestation, next of kin"),
     ("Arthur Hartley Sneyd", "Miriam Wakefield", "NAA B2455 8088453, next of kin"),
     ("Ivy Miriam Sneyd", "Lindesay Atkinson D'Arcy", "NAA J34 C34558, pension beneficiary"),
-    ("Charlotte Maria D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 31 Mar 1826"),
     ("Frederick Robert D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 2 Jul 1811"),
     # 9 October 2026. The charts were drawing «tree, untested» over parentage
     # this archive has a record for. 30 of 58 record lines that name a parent
@@ -1007,6 +1006,21 @@ REL = [
     # one tree person, and this family reuses forenames without mercy; an edge
     # drawn onto the wrong woman is the single failure ids_for() exists to
     # prevent. Those stay undrawn and are counted instead.
+    # Joseph D'Arcy's SECOND family, baptised at Milford and documented one by
+    # one — five children whose charts drew «tree, untested» over a father
+    # their own baptism names. The mother is KATHERINE LUCY ELIZA in the
+    # register and is not in the tree under that spelling, so only the father
+    # is drawn; naming her would be guessing which of the tree's women she is.
+    ("Catherine Lucy Jane D'Arcy", "Joseph D'Arcy|1780", "baptism, Milford, 23 Jan 1832"),
+    ("John Hyde D'Arcy", "Joseph D'Arcy|1780", "baptism, Milford, 30 May 1833"),
+    ("Josephine D'Arcy", "Joseph D'Arcy|1780", "baptism, Milford, 1836"),
+    ("Frank Hyde D'Arcy", "Joseph D'Arcy|1780", "baptism, Milford, 22 Jun 1839"),
+    ("Joseph William D'Arcy", "Joseph D'Arcy|1780", "baptism, Milford, 6 Jul 1841"),
+    # The tree calls her Charlotte D'Arcy; an earlier REL entry said «Charlotte
+    # Maria D'Arcy» and was refused as absent for a year without anybody
+    # reading the refusal.
+    ("Charlotte D'Arcy", "George Pitt D'Arcy|1783", "baptism, Chatham, 31 Mar 1826"),
+    ("Jane D'Arcy", "Robert D'Arcy|1751", "christening, St Michael, Barbados, 17 Mar 1788"),
     ("George Pitt D'Arcy|1864", "Eliza Keeling", "Qld death reg. 1931, parents named"),
     ("George Pitt D'Arcy|1864", "George Lindsay D'Arcy", "Qld death reg. 1931, parents named"),
     ("James Atwell", "Maria Rossiter", "Qld death reg. 1907/C/..., parents named"),

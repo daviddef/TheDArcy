@@ -10,6 +10,10 @@
       "found": [
         [
           "Added",
+          "the charts again — Joseph D'Arcy's five Milford children, Charlotte at Chatham, Jane at Barbados. 41 edges became 54"
+        ],
+        [
+          "Added",
           "/graves and /households now publish what the tree does not carry, as /marriages does — 26 and 8"
         ],
         [
@@ -38,6 +42,9 @@
         ]
       ],
       "did": [
+        "WENT BACK TO THE 24 PARENT LINKS LEFT UNDRAWN, and the first measurement of them had been against the wrong index. It counted «parent not in the tree» using ancestors.json, WHICH HOLDS ONLY DIRECT-LINE ANCESTORS — Joseph D'Arcy reads as «0 in tree» there while having a person page. Asked of the GEDCOM's 15,643 individuals instead, the picture changed, and seven more links were safe to draw.",
+        "JOSEPH D'ARCY'S SECOND FAMILY IS NOW DOCUMENTED ON THE CHARTS. Catherine Lucy Jane, John Hyde, Josephine, Frank Hyde and Joseph William were each baptised at Milford to «JOSEPH, Lt Col RA», and every one of their charts drew that father as «tree, untested». Charlotte D'Arcy's Chatham baptism of 1826 and Jane D'Arcy's christening at St Michael, Barbados in 1788 — the latter naming Robert D'Arcy as her father — are drawn too. 54 recorded relationships across 51 people, from 41 across 35 this morning. The mother of the Milford five is KATHERINE LUCY ELIZA in the register and is in the tree under no such spelling, so only the father is drawn: naming her would be guessing which of the tree's women she is.",
+        "AND A REFUSAL NOBODY HAD READ. The REL table carried «Charlotte Maria D'Arcy» pointing at George Pitt D'Arcy, and the tree calls her CHARLOTTE D'ARCY — so build_register.py had been printing «ambiguous or absent, so no edge was drawn» for her on every build, and the edge had simply never existed. It is drawn under the right name now and the dead entry is gone, because a refusal that fires every build and is never acted on is the «ok» line in a different costume.",
         "AND THE SAME GAP WAS ON THE OTHER TWO TREE-DERIVED PAGES, so it was fixed as a class rather than a third time by hand. /graves omitted 26 documented burials and /households 8 documented census placements. The graves list includes JOHN SANIGER, HANNAH'S FATHER, BURIED AT BERKELEY ST MARY THE VIRGIN ON 16 JANUARY 1825, with Thomas Saniger of 1819 and Edward Saniger of Saniger, Gent., of 1739 beside him. /graves was never dishonest about it — it says «gathered from the tree» in its own first sentence — but saying where a list comes from is not the same as showing what it leaves out.",
         "THE COMPUTATION LIVES IN ONE PLACE, site/src/lib/treegap.js, and /marriages was refactored onto it rather than left with its own copy. Three copies of one rule drift, and a surface quietly showing a different difference from its neighbour would be worse than the fault being fixed. All three now read «And N the tree does not carry» — 34, 26, 8 — computed each build, so documenting one more puts it on the page by itself.",
         "THEN THE CHARTS. 30 of the 58 record lines that name a parent belonged to people whose pedigree drew no edge at all — documented parentage still rendering as «tree, untested». The cause is structural: REL is hand-kept and the record lines are generated, so a new record never becomes an edge unless somebody writes one. Six were added and drawn, taking the charts from 41 edges to 47 across 44 people. ONLY DISTINCTIVE FULL NAMES WERE USED: the automatic pass also offered «Mary», «Elizabeth» and «MARY» resolving to exactly one tree person each, and this family reuses forenames without mercy. Two of the eight proposed were refused as ambiguous by the tool itself and are named rather than drawn.",

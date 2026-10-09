@@ -576,7 +576,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…Wicklow in the window — she married Thomas Barry at Bray in November 1825, by which time Charlotte D'Arcy was six months old. Followed Joseph D'Arcy from the Portsea font to a Hampshire will: LIEUTENANT-COLONEL, ROYAL ARTILLERY, K.L.S.…",
+"snippet": "…«JOSEPH, Lt Col RA», and every one of their charts drew that father as «tree, untested». Charlotte D'Arcy's Chatham baptism of 1826 and Jane D'Arcy's christening at St Michael, Barbados in 1788 — the latter naming Robert D'Arcy as her…",
 "title": "What changed"
 },
 {
@@ -626,6 +626,11 @@
 "path": "/",
 "snippet": "…g → documented Brothers and sisters · 2 show ↓ hide ↑ George’s · 2 Catherine Maria D'Arcy Charlotte Maria D'Arcy Eliza’s · none recorded Her line has no archive of its own yet, so the register names her parents and nobody else. 5 1864 → 1931…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/changes",
+"snippet": "…g which of the tree's women she is. AND A REFUSAL NOBODY HAD READ. The REL table carried «Charlotte Maria D'Arcy» pointing at George Pitt D'Arcy, and the tree calls her CHARLOTTE D'ARCY — so build_register.py had been printing «ambiguous or a…",
+"title": "What changed"
 },
 {
 "path": "/direct-line",
@@ -1473,7 +1478,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…849, 0 and 9; Brisbane 1856, 2 and 3; Brisbane 1902, 11 and 37; Brisbane 1936, 15 and 55. George Pitt D'Arcy died at Parramatta in 1849 and NO PARAMATTA PAPER OF THAT YEAR IS DIGITISED, but nine New South Wales papers are. In Brisbane in…",
+"snippet": "…AND A REFUSAL NOBODY HAD READ. The REL table carried «Charlotte Maria D'Arcy» pointing at George Pitt D'Arcy, and the tree calls her CHARLOTTE D'ARCY — so build_register.py had been printing «ambiguous or absent, so no edge was drawn» for…",
 "title": "What changed"
 },
 {
@@ -2164,7 +2169,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…when the sisters were 53, 51 and 46. CAUGHT A SEARCH THAT LIES. A first pass reported no Jane D'Arcy of the right age in Sussex in 1871. The control — Jane Smith, same age, same county, same census — returned zero, which is imposs…",
+"snippet": "…arts drew that father as «tree, untested». Charlotte D'Arcy's Chatham baptism of 1826 and Jane D'Arcy's christening at St Michael, Barbados in 1788 — the latter naming Robert D'Arcy as her father — are drawn too. 54 recorded relati…",
 "title": "What changed"
 },
 {
@@ -2535,7 +2540,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…»: Bourn (Catherine Georgiana West's burial), Lymington (Frank Hyde D'Arcy's marriage and Joseph D'Arcy's death district), Penzance (George Abbas died there), Milford (two D'Arcy baptisms). Two resolve to nothing: Bangor, where Rober…",
+"snippet": "…d «parent not in the tree» using ancestors.json, WHICH HOLDS ONLY DIRECT-LINE ANCESTORS — Joseph D'Arcy reads as «0 in tree» there while having a person page. Asked of the GEDCOM's 15,643 individuals instead, the picture changed, and…",
 "title": "What changed"
 },
 {
@@ -3614,7 +3619,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…ng already says all of it, including «the only document anywhere that names Major-General Robert D'Arcy as somebody's father» — which is the same claim as the field I was about to publish. Rendering it would have printed that record…",
+"snippet": "…of 1826 and Jane D'Arcy's christening at St Michael, Barbados in 1788 — the latter naming Robert D'Arcy as her father — are drawn too. 54 recorded relationships across 51 people, from 41 across 35 this morning. The mother of the Milf…",
 "title": "What changed"
 },
 {

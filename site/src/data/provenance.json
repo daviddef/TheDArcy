@@ -338,6 +338,129 @@
 "rel": {
 "frederick-robert-d-arcy": [
 "baptism, Chatham, 2 Jul 1811"
+],
+"charlotte-d-arcy": [
+"baptism, Chatham, 31 Mar 1826"
+]
+},
+"graft": null,
+"line": true,
+"spine": true
+},
+"catherine-lucy-jane-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Milford, 23 Jan 1832"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"joseph-d-arcy": {
+"rel": {
+"catherine-lucy-jane-d-arcy": [
+"baptism, Milford, 23 Jan 1832"
+],
+"john-hyde-d-arcy": [
+"baptism, Milford, 30 May 1833"
+],
+"josephine-d-arcy": [
+"baptism, Milford, 1836"
+],
+"frank-hyde-d-arcy": [
+"baptism, Milford, 22 Jun 1839"
+],
+"joseph-william-d-arcy": [
+"baptism, Milford, 6 Jul 1841"
+],
+"george-abbas-kooli-d-arcy": [
+"baptism, Westminster, 31 Aug 1818"
+],
+"robert-west-d-arcy": [
+"baptism, Westminster, 16 Oct 1820"
+],
+"robert-d-arcy": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+],
+"jean-ward": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"john-hyde-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Milford, 30 May 1833"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"josephine-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Milford, 1836"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"frank-hyde-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Milford, 22 Jun 1839"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"joseph-william-d-arcy": {
+"rel": {
+"joseph-d-arcy": [
+"baptism, Milford, 6 Jul 1841"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"charlotte-d-arcy": {
+"rel": {
+"george-pitt-d-arcy-1783": [
+"baptism, Chatham, 31 Mar 1826"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"jane-d-arcy": {
+"rel": {
+"robert-d-arcy": [
+"christening, St Michael, Barbados, 17 Mar 1788"
+]
+},
+"graft": null,
+"line": false,
+"spine": false
+},
+"robert-d-arcy": {
+"rel": {
+"jane-d-arcy": [
+"christening, St Michael, Barbados, 17 Mar 1788"
+],
+"joseph-d-arcy": [
+"baptism, Portsea St Mary, 19 Mar 1780"
+],
+"jean-ward": [
+"named together as parents, Portsea, 19 Mar 1780"
 ]
 },
 "graft": null,
@@ -441,25 +564,6 @@
 "rel": {
 "joseph-d-arcy": [
 "baptism, Westminster, 31 Aug 1818"
-]
-},
-"graft": null,
-"line": false,
-"spine": false
-},
-"joseph-d-arcy": {
-"rel": {
-"george-abbas-kooli-d-arcy": [
-"baptism, Westminster, 31 Aug 1818"
-],
-"robert-west-d-arcy": [
-"baptism, Westminster, 16 Oct 1820"
-],
-"robert-d-arcy": [
-"baptism, Portsea St Mary, 19 Mar 1780"
-],
-"jean-ward": [
-"baptism, Portsea St Mary, 19 Mar 1780"
 ]
 },
 "graft": null,
@@ -570,19 +674,6 @@
 "graft": null,
 "line": true,
 "spine": false
-},
-"robert-d-arcy": {
-"rel": {
-"joseph-d-arcy": [
-"baptism, Portsea St Mary, 19 Mar 1780"
-],
-"jean-ward": [
-"named together as parents, Portsea, 19 Mar 1780"
-]
-},
-"graft": null,
-"line": true,
-"spine": true
 },
 "jean-ward": {
 "rel": {
@@ -1437,12 +1528,6 @@
 "line": true,
 "spine": false
 },
-"jane-d-arcy": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
 "joseph-atwell": {
 "rel": {},
 "graft": null,
@@ -1507,12 +1592,6 @@
 "rel": {},
 "graft": null,
 "line": true,
-"spine": false
-},
-"charlotte-d-arcy": {
-"rel": {},
-"graft": null,
-"line": false,
 "spine": false
 },
 "james-rossiter-1794": {
@@ -1671,19 +1750,7 @@
 "line": true,
 "spine": false
 },
-"catherine-lucy-jane-d-arcy": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
 "james-buckley-falcon-atwell": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"john-hyde-d-arcy": {
 "rel": {},
 "graft": null,
 "line": false,
@@ -1708,12 +1775,6 @@
 "spine": false
 },
 "james-rossiter-1834": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"josephine-d-arcy": {
 "rel": {},
 "graft": null,
 "line": false,
@@ -1761,19 +1822,7 @@
 "line": false,
 "spine": false
 },
-"frank-hyde-d-arcy": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
 "james-goulbourn-sneyd": {
-"rel": {},
-"graft": null,
-"line": false,
-"spine": false
-},
-"joseph-william-d-arcy": {
 "rel": {},
 "graft": null,
 "line": false,
