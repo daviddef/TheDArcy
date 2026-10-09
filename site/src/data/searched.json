@@ -4086,6 +4086,37 @@
       "tags": [
         "fibis"
       ]
+    },
+    {
+      "src": "FreeREG — Gloucestershire, the Vale parishes, marriages 1790–1805",
+      "url": "https://www.freereg.org.uk/search_queries/new",
+      "what": "Lydia's marriage to John Saniger about 1797 — asked of a transcription project this archive had never tried for her",
+      "when": "10 Oct 2026",
+      "outcome": "empty",
+      "got": "**FreeREG cannot be asked this question, and the three parishes that matter say so in three different ways.** BERKELEY holds 2,916 transcriptions and the whole run is **1600–1677** — it stops a hundred and twenty years before the marriage. WOTTON-UNDER-EDGE, where she was born, holds 16,105 and **starts at 1813**. THORNBURY, where she died, holds 26,898 across 1550–1874 and looked like the way in.\n\n**It was not.** A search of Thornbury **and up to a hundred nearby parishes** for any LYDIA marrying between 1790 and 1805 returns **nothing** — and so does the same search for any **MARY**, which is the control and is decisive: zero Marys marrying across a hundred Gloucestershire parishes in sixteen years is not a fact about the Vale, it is the absence of transcribed marriages for that window. **The zero is coverage, not evidence, and nobody should read it as the marriage not existing.**\n\nThis closes a route rather than answering the question. The register itself and the Gloucester diocesan licence bonds remain where they were.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "saniger",
+        "lydia",
+        "berkeley",
+        "freereg"
+      ]
+    },
+    {
+      "src": "FreeBMD — marriages, surname D'Arcy, forename George, 1837–1890",
+      "url": "https://www.freebmd.org.uk/cgi/search.pl",
+      "what": "Whether George Abbas Kooli D'Arcy, Governor of the Gambia, ever married in England",
+      "when": "10 Oct 2026",
+      "outcome": "null",
+      "got": "**Four George D'Arcy marriages in fifty-three years of the English index, and not one of them carries his name.** Sep 1864 Norwich 4b 235; Sep 1884 Westminster 1a 961; Sep 1888 Hackney 1b 815; Sep 1889 West Ham 4a 114 as «George William». **FreeBMD prints its own coverage beside each**, and all four quarters are **>99%** transcribed, so the index is not thin where it answered. The GRO index gives every forename a man was registered under, and a «George Abbas Kooli» would not hide as a plain «George».\n\n**Two reasons this is a weak null and is written down as one.** All four results fall in SEPTEMBER quarters, which across four records is odd enough to be worth somebody's second look rather than treated as a clean sample. And he spent most of his adult life outside English registration — the 94th Foot, then the 3rd West India Regiment from 1852, then the government of the Gambia from 1859. **A marriage in the West Indies or at Bathurst would not be in this index at all**, and that is the likelier place to look.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "freebmd",
+        "gambia"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
