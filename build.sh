@@ -202,20 +202,23 @@ python3 tools/check_decisions.py
 # Reports, never gates. Prose written into a data file and rendered by no
 # template is committed, deployed and invisible — which is how 46 errand
 # stakes lines and Hannah's mother's death registration sat unpublished.
-# NOT WIRED, AND THE REASON IS MEASURED. tools/check_cites.py tests the links
-# OUT of this site — a dead citation looks exactly like a live one on the page
-# — and it is wired into nothing. It was briefly added here on 9 October and
-# taken straight back out: the data carries 575 distinct external URLs, it
-# checks them one at a time with a 12-second timeout, and it prints nothing
-# until the last one returns. A run was stopped at eight minutes with no
-# output. That is not a step anybody keeps in a build they run twenty times
-# a day, and a step people disable is worse than no step.
+# Reports, never gates. check_cites.py tests the links OUT of this site — a
+# dead citation looks exactly like a live one on the page. It reads a cache
+# and takes a tenth of a second here; the network sweep is a separate,
+# deliberate run (`--refresh --all`, about two minutes) and the report says
+# how old its numbers are, loudly past sixty days.
 #
-# 428 of the 575 are myheritage.com links carried in from the GEDCOM export
-# rather than citations this archive chose, which is the other half of why it
-# is the wrong shape: it would spend most of its time checking somebody
-# else's footnotes. Work list 140.
-#
+# It was briefly wired in on 9 October and taken straight back out for being
+# too slow: 581 URLs, one at a time, nothing printed until the last returned,
+# a run abandoned at eight minutes. That was the smaller of its two faults.
+# THE LARGER ONE WAS THAT ITS HEADLINE WOULD HAVE BEEN WRONG ABOUT THREE
+# QUARTERS OF THIS ARCHIVE'S CITATIONS. It read status codes only, and
+# myheritage.com — 428 of the 581, carried in from the GEDCOM rather than
+# chosen here — answers a robot with 200 and an Incapsula block body. Every
+# one would have been counted as resolving. A status code is not a page.
+echo "── outward citations (informational, cached)"
+python3 tools/check_cites.py || true
+
 echo "── unpublished prose (informational)"
 python3 tools/check_unpublished.py || true
 
