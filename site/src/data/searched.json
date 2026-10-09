@@ -4013,6 +4013,37 @@
         "nlw",
         "newspapers"
       ]
+    },
+    {
+      "src": "FreeREG — baptisms, all counties, surname Darcy, 1775–1790",
+      "url": "https://www.freereg.org.uk/search_queries/new",
+      "what": "A baptism for the D'Arcy daughter the French act now dates to about 1781",
+      "when": "09 Oct 2026",
+      "outcome": "null",
+      "got": "**Eighteen exact D'Arcy and Darcy baptisms in everything FreeREG holds for those sixteen years, and no Margaret among them.** The girls are Hannah at Wellingore 1783, Ann at Norwich 1789, Dinah Leman at Kea 1789 and Lydia at Grantham 1789, all Lincolnshire, Norfolk or Cornwall; the one Margaret Darcy is at Happisburgh, Norfolk, on **1 January 1775**, which would make her sixty-eight at death and not sixty-one. **Running the same search loose rather than exact returns more than five hundred and is refused by the display cap**, so the eighteen is the exact-spelling figure and the loose one is not a number this archive can quote.",
+      "href": "/margaret-jones",
+      "ctl": "named",
+      "tags": [
+        "darcy-family",
+        "freereg",
+        "baptism"
+      ]
+    },
+    {
+      "src": "FreeREG — Portsmouth and Portsea, Hampshire, register contents",
+      "url": "https://www.freereg.org.uk/freereg_contents/53cd4958eca9ebee4f004693/place",
+      "what": "Whether any Portsmouth parish could hold her baptism of September 1781 — the tree puts her birth there",
+      "when": "09 Oct 2026",
+      "outcome": "empty",
+      "got": "**One parish in the whole town can answer for 1781, and she is not in it.** PORTSEA ST MARY holds **992 transcriptions, every one a baptism, and the whole run is 1780–1782** — so a baptism of September 1781 would fall inside it, and a search of Hampshire for Darcy returns Joseph in March 1780 and nobody else, exact or loose. **PORTSMOUTH (St Thomas) holds 9,079 transcriptions, every one a MARRIAGE, 1651–1776** — no baptisms at all, and nothing after 1776. **OLD PORTSMOUTH has no entries whatever.** This corroborates from a second, free provider what this archive already had from FindMyPast's Hampshire collection, which covers Portsea 1770–1792 and also returns Joseph alone. **It does not establish that she was not baptised at Portsmouth** — it establishes that FreeREG cannot be asked, except about Portsea.",
+      "href": "/margaret-jones",
+      "ctl": "named",
+      "tags": [
+        "darcy-family",
+        "portsea",
+        "portsmouth",
+        "freereg"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
