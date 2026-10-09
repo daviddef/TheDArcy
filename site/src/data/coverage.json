@@ -625,6 +625,14 @@
       "span": "not stated; the Sanigar stones run 1964–2008",
       "verdict": "good",
       "note": "**One Bristol burial ground this archive can read end to end.** Found on 9 October while checking whether BillionGraves was blocked at all. It carries **571 records and 402 headstone images**, free and without an account, and it holds three SANIGAR burials — Andrew 1980, Dennis 2003, Barbara 2008.\n\n**Twentieth-century, so not evidence for the eighteenth-century questions.** What it is good for is the surname's survival and its place: Kingswood is in Bristol, not the Vale — where this family moved to rather than where it came from.\n\nThe same caveat as the parent site applies to any absence — the search cannot be narrowed or paged from a URL — but a named cemetery page is a positive and can be read whole."
+    },
+    {
+      "db": "Archives départementales de la Seine-Maritime — état civil",
+      "where": "Le Havre, Ingouville and the communes it absorbed",
+      "holds": "digitised civil registers and tables décennales, by commune and year",
+      "span": "to 1843 and well beyond",
+      "verdict": "good",
+      "note": "**Free, no account, and never tried by this archive until 9 October 2026.** Two D'Arcy deaths of 1843 sit in this department — Margaret Jones née D'Arcy at Havre in February and her husband Major John Maddock Jones at Ingouville in March — and the archive had pursued both ONLY through British consular returns at Kew, which are «miscellaneous» by their own title and incomplete by their own description.\n\n**The French état civil is not miscellaneous.** Searched on 9 October: Ingouville, décès, 1843 returns five results including the complete year's deaths register, **cote 4 E 9077, 310 views**, with two tables décennales over it. Le Havre, décès, 1843 returns twelve, covering the town and the communes it absorbed.\n\n**It answers a browser and refuses a script**, which is the whole reason it was worth trying: the first response was a “Making sure you're not a bot!” interstitial that resolved by itself. The Record Atlas session had just found eight French departmental archives behaving exactly this way and said so."
     }
   ],
   "verdicts": {

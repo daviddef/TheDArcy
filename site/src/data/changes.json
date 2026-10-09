@@ -10,6 +10,10 @@
       "found": [
         [
           "Added",
+          "/errands 35 — the two 1843 deaths at Havre have a free French route, never tried, and it is not Kew"
+        ],
+        [
+          "Added",
           "/sanigers — three Sanigar burials at Kingswood, and a coordinate settling which Kingswood"
         ],
         [
@@ -58,6 +62,8 @@
         ]
       ],
       "did": [
+        "AND THE BEST FIND OF THE DAY CAME OUT OF A THROWAWAY LINE. The Record Atlas session mentioned eight French departmental archives that refuse a script and open to a browser. This archive has TWO DEATHS IN FRANCE — Margaret Jones née D'Arcy at Havre in February 1843 and her husband Major John Maddock Jones at Ingouville in March — and had pursued both ONLY through British consular returns at Kew, which are «miscellaneous» by their own title. NO FRENCH ARCHIVE HAD EVER BEEN TRIED.",
+        "THE SEINE-MARITIME ARCHIVE IS OPEN, FREE, AND HOLDS THE REGISTERS. Its first response was a «Making sure you're not a bot!» interstitial that resolved by itself — precisely the behaviour reported. Ingouville, décès, 1843 returns five results including THE COMPLETE YEAR'S DEATHS REGISTER, COTE 4 E 9077, 310 VIEWS, with two tables décennales over it. Le Havre returns twelve, covering the town and the communes it absorbed. A French death act carries the age, the birthplace, the parents and the surviving spouse — MORE THAN THE CONSULAR RETURN THIS ARCHIVE WAS QUEUEING FOR, and for Margaret that is the nearest thing to a birth date for a daughter of Robert D'Arcy. Work list 141: read them, tables décennales first.",
         "AND BACK TO RESEARCH, BECAUSE THE DAY HAD FOUND FOUR OWN ERRORS AND NO ANCESTORS. The newly-opened source was asked a positive question, which is the one it can answer. HOLY TRINITY CHURCH, KINGSWOOD HOLDS THREE SANIGAR BURIALS — Andrew 1980, Dennis 2003, Barbara 2008 — and the cemetery page settles which Kingswood with a coordinate: 51.4616, -2.5033, which is KINGSWOOD IN BRISTOL, six kilometres east of the centre. Kingswood near Wotton-under-Edge lies twenty kilometres north at 51.63, -2.36. THE COUNTY COULD NOT HAVE DECIDED IT — both were Gloucestershire, the Bristol one until 1974 — and guessing from the name would have put this family's surname back in the Vale it came from rather than the city it moved to.",
         "THE CHURCHYARD IS ALSO A FINDING IN ITSELF: 571 records and 402 headstone images, free and without an account. It is the first Bristol burial ground this archive can read end to end. Twentieth-century, so it answers nothing about the eighteenth — what it shows is the surname still standing in Bristol in 2008, four generations after Thomas Sinegar was married there by banns.",
         "AND TOOK THE RECORD ATLAS SESSION'S CHALLENGE LITERALLY: does any probe here ask a different question from the one whose answer it records? Theirs had been a liveness check passing against a host that served nothing while 25 of 27 tests failed. Most of this archive's gates have been proved to fail in anger this fortnight — controls refused a `ctl` on a blocked row this week, atlas refused the Thornbury pin an hour ago, retired refused a restated reading, secrets refused a planted key, whosplit refused Miriam on its first run. THE ONE THAT HAS NEVER ANSWERED ANYTHING IS check_cites.py.",

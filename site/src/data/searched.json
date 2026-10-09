@@ -3884,6 +3884,22 @@
       "outcome": "yield",
       "got": "**Bristol, by coordinate.** The cemetery page gives **51.4616, -2.5033** — Kingswood in Bristol, six kilometres east of the centre. Kingswood near Wotton-under-Edge is twenty kilometres north at 51.63, -2.36. **The county could not have decided it**: both were Gloucestershire, the Bristol one until 1974. So Andrew (d. 1980), Dennis (d. 2003) and Barbara Sanigar (d. 2008) are buried in the city this family lived in, not in the Vale it came from — the surname persisting in Bristol, where Thomas Sinegar, Hannah Saniger and the Wakefields were.\n\n**And the churchyard is worth knowing on its own: 571 records and 402 headstone images**, photographed and free. A Bristol burial ground this archive can read end to end, which is not true of any other it has tried.",
       "href": "/sanigers"
+    },
+    {
+      "src": "Archives départementales de la Seine-Maritime — état civil, Ingouville, décès, 1843",
+      "what": "Whether the French civil register holds the death this archive has only chased at Kew",
+      "when": "09 Oct 2026",
+      "outcome": "yield",
+      "got": "**Five results, and one of them is the whole year.** «Havre (Le) — 01/01/1843-31/12/1843 · ancienne commune INGOUVILLE · Registre d'état civil · Type d'acte: DÉCÈS · cote **4 E 9077** · **310 vues**» — the complete 1843 deaths register for the commune where Major John Maddock Jones died in March 1843, digitised, free, no account. Beside it: the Ingouville register 1843-1846 (**4 E 6984**, 145 views) and two TABLES DÉCENNALES covering the year — **4 E 10127** (1833-1862) and **4 E 9933** (1843-1852) — which are ten-year indexes and would find the act without reading 310 images.\n\n**This archive has pursued these two deaths only through British consular returns at Kew.** A French death act is not a consular return: it gives the age, the birthplace, the parents where known and the surviving spouse, which is more than RG 35 would.",
+      "href": "/errands"
+    },
+    {
+      "src": "Archives départementales de la Seine-Maritime — état civil, Le Havre, décès, 1843",
+      "what": "The same for Margaret Jones née D'Arcy, who died «at Havre» in February 1843",
+      "when": "09 Oct 2026",
+      "outcome": "yield",
+      "got": "**Twelve results.** Le Havre's own 1843 deaths register, and separately the registers of the communes it later absorbed — Rouelles, Bléville, Sanvic and Ingouville — each with its own cote and its own tables décennales. Margaret Jones née D'Arcy died «at Havre» in February 1843, and which of those communes that means is not yet settled, so the tables are the place to start rather than any single register.",
+      "href": "/errands"
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
