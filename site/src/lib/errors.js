@@ -556,6 +556,15 @@ export const OWN = [
     lesson: "A register is not identified by its title. Two places share a name far more often than two places share a provenance and a size, and both were on the page.",
     href: "/margaret-jones",
   },
+  {
+    when: "10 October 2026",
+    cause: "instrument",
+    what: "Published that twelve citations no longer lead anywhere, \u201cfour of them FamilySearch collection URLs this archive chose itself, which makes them the worst four on the list\u201d.",
+    truth: "All four are alive and always were. Nine links are dead, and EVERY ONE OF THEM WAS INHERITED FROM THE GEDCOM EXPORT \u2014 not one citation this archive chose is dead.",
+    why: "urllib sends no Accept header unless it is told to, and FamilySearch answers a request without one with a flat 404. The rewrite of check_cites.py the day before had caught three faults of exactly this shape \u2014 a swallowed backslash, a 302 graded as a refusal, a wrapped DNS error \u2014 and then shipped a fourth, because the tool was tested against what it reported rather than against what a reader sees.",
+    lesson: "A link checker that disagrees with a browser is wrong until proved otherwise. The check on this class of tool is not \u201cdoes the number look plausible\u201d but \u201copen one of the dead ones and look\u201d, which took under a minute and was not done before publishing.",
+    href: "/worklist",
+  },
 ];
 
 

@@ -45,7 +45,17 @@ DATA = os.path.join(HERE, "..", "site", "src", "data")
 # meant for readers, which this is not.
 CACHE = os.path.join(HERE, "cites-cache.json")
 
-UA = {"User-Agent": "darcy-archive-citation-check/2.0 (+https://daviddef.github.io/TheDArcy/)"}
+# THE THIRD THING THIS TOOL GOT WRONG. urllib sends no Accept header unless
+# told to, and four FamilySearch collection pages answer a request without one
+# with a flat 404. They are alive, they are this archive's own citations, and
+# they were reported dead by a tool that simply was not asking properly. This
+# is not a browser disguise and nothing here pretends to be Chrome: the agent
+# string still says what this is. It is the header every ordinary client sends.
+UA = {
+    "User-Agent": "darcy-archive-citation-check/2.1 (+https://daviddef.github.io/TheDArcy/)",
+    "Accept": "*/*",
+    "Accept-Language": "en",
+}
 URL = re.compile(r"https?://[^\s\"'<>)\]]+")
 SKIP = re.compile(r"example\.com|localhost|127\.0\.0\.1", re.I)
 
@@ -61,6 +71,18 @@ WALL = re.compile(
 # myheritage.com's 429, which are one wall answering 429 times.
 SAMPLE_OVER = 25
 SAMPLE_SIZE = 8
+
+# A LINK THIS ARCHIVE CHOSE IS NOT THE SAME THING AS A LINK MYHERITAGE PUT IN
+# THE EXPORT, and only the first is anybody's responsibility here. These three
+# data files are built from the GEDCOM; a URL appearing ONLY in them was
+# inherited. On 10 October every one of the nine dead links was inherited and
+# NONE of the archive's own citations was dead — a distinction worth printing
+# rather than working out by hand each time.
+GEDCOM_FILES = {"families.json", "ancestors.json", "line.json"}
+
+
+def inherited(where):
+    return bool(where) and set(where) <= GEDCOM_FILES
 
 
 def host_of(u):
@@ -216,11 +238,16 @@ def main(argv):
     for u, v in sorted(have.items()):
         buckets[v["verdict"]].append((u, v))
 
+    chosen_dead = 0
     for kind in ("dns", "gone"):
         for u, v in buckets[kind]:
+            where = sorted(found[u])
             tag = "no such host" if kind == "dns" else v["status"]
-            print(f"  warn  cites      {tag}  {u[:80]}")
-            print(f"                   cited in {', '.join(sorted(found[u]))[:78]}")
+            mark = "inherited" if inherited(where) else "OURS"
+            if mark == "OURS":
+                chosen_dead += 1
+            print(f"  warn  cites      {tag}  [{mark}]  {u[:68]}")
+            print(f"                   cited in {', '.join(where)[:78]}")
 
     walled_hosts = collections.Counter(host_of(u) for u, _ in buckets["walled"])
     age = (time.time() - max(v.get("when", 0) for v in have.values())) / 86400
@@ -251,8 +278,12 @@ def main(argv):
         print(f"        {len(buckets['flaky'])} timed out. THAT IS THIS MACHINE FAILING TO GET AN "
               f"ANSWER, not a source failing to exist, and it is not a candidate for anything.")
     if buckets["dns"] or buckets["gone"]:
-        print(f"        only the {len(buckets['dns']) + len(buckets['gone'])} above are candidates "
-              f"for a dead citation — a redirect is a move. Read them, do not obey them.")
+        n = len(buckets["dns"]) + len(buckets["gone"])
+        print(f"        only the {n} above are candidates for a dead citation — "
+              f"a redirect is a move. Read them, do not obey them.")
+        print(f"        of those, {chosen_dead} are citations THIS ARCHIVE CHOSE and "
+              f"{n - chosen_dead} were inherited from the GEDCOM export. Only the first "
+              f"number is anybody's job here.")
     return 0
 
 
