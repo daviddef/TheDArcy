@@ -4117,6 +4117,20 @@
         "freebmd",
         "gambia"
       ]
+    },
+    {
+      "src": "Welsh Newspapers Online (National Library of Wales) — second and third attempts",
+      "url": "https://newspapers.library.wales/",
+      "what": "The Caernarvon & Denbigh Herald obituary of Major Maddock Jones, 1 April 1843, and any Welsh notice of the Penybryn family",
+      "when": "10 Oct 2026",
+      "outcome": "blocked",
+      "got": "**Three attempts across two days, all stopped by the same Cloudflare «Performing security verification» interstitial** — on the bare homepage and on two different search URLs, each given twenty seconds or more. **Not worked around.** The National Library's own site at library.wales loads normally in the same browser in the same session, so this is one bot check and not a library that has closed its doors. **The row is a verdict on three attempts, not on the source**, and the prize is unchanged: this archive cites the Caernarvon & Denbigh Herald of 1843 through a subscription site, and that paper sits inside a free 1804–1919 run.",
+      "href": "/worklist",
+      "tags": [
+        "jones",
+        "nlw",
+        "newspapers"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
