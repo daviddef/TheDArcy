@@ -202,6 +202,20 @@ python3 tools/check_decisions.py
 # Reports, never gates. Prose written into a data file and rendered by no
 # template is committed, deployed and invisible — which is how 46 errand
 # stakes lines and Hannah's mother's death registration sat unpublished.
+# NOT WIRED, AND THE REASON IS MEASURED. tools/check_cites.py tests the links
+# OUT of this site — a dead citation looks exactly like a live one on the page
+# — and it is wired into nothing. It was briefly added here on 9 October and
+# taken straight back out: the data carries 575 distinct external URLs, it
+# checks them one at a time with a 12-second timeout, and it prints nothing
+# until the last one returns. A run was stopped at eight minutes with no
+# output. That is not a step anybody keeps in a build they run twenty times
+# a day, and a step people disable is worse than no step.
+#
+# 428 of the 575 are myheritage.com links carried in from the GEDCOM export
+# rather than citations this archive chose, which is the other half of why it
+# is the wrong shape: it would spend most of its time checking somebody
+# else's footnotes. Work list 140.
+#
 echo "── unpublished prose (informational)"
 python3 tools/check_unpublished.py || true
 
