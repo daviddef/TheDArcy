@@ -51,5 +51,62 @@
   "papers": "Oxford University and City Herald, Saturday 1 November 1806, page 2. The Chester Courant of 11 November adds the church and the officiant: “at Chatham Church, by the Rev. I. T. Jones”.",
   "what": "So the corps is on record in 1806, thirty-seven years before the notice this page was built around — in the report of this very marriage. What survives is smaller and still worth having: the 1843 notice is the only one that calls her his daughter AFTER his death, and the only one that says “late”. The 1806 notice is better on every other count, including “ELDEST DAUGHTER”, which fixes her place among the ten children.",
   "chip": "corrected twice in one day"
+ },
+ "acts": {
+  "lab": "Archives départementales de la Seine-Maritime, 4 E 9077 — Le Havre, ancienne commune d'Ingouville, registre des décès, 1843",
+  "head": "The register, read",
+  "lede": "Both deaths are in the French civil register. It is digitised, free, and asks for no account. This archive pursued these two deaths through the National Archives at Kew for a month, where they sit behind a subscription or a journey. The acts were never hard to reach. Nobody had gone and looked.",
+  "wrong": "The J section of a décennale table for 1843–1852 was read right through and held no Jones — Jean, Jouette, Junais, nine entries and nothing else. It was the wrong Ingouville: a village near Saint-Valery-en-Caux, sixty kilometres up the coast. The image URL said so, and so did the arithmetic, because forty-eight views cannot hold thirty years of births, marriages and deaths for a town of fifteen thousand. The right table spends three hundred and nine views on a single decade. The miss is on the search log with the control that would have caught it.",
+  "pair": [
+   {
+    "n": "Act N° 43 · view 23",
+    "when": "1 February 1843 · declared at four in the afternoon",
+    "quote": "Acte de Décès de Marguéritta Maria Elisabella Darcy, sans profession, décédée de ce jour sur les six heures du matin en son domicile situé en cette ville, rue de l'Hôpital, maison Lechevalier, âgée de soixante-un ans, née — le lieu de sa naissance est inconnu — épouse de John Maddack Jones.",
+    "facts": [
+     [
+      "Age",
+      "sixty-one — which puts her birth about 1781"
+     ],
+     [
+      "Died",
+      "six in the morning, at her own house in the rue de l'Hôpital"
+     ],
+     [
+      "Birthplace",
+      "entered as unknown"
+     ],
+     [
+      "Declared by",
+      "Jean Baptiste Lecordier, rentier, fifty-nine, and Jean Olivier Quesney, rentier, fifty-eight and a half — both of Ingouville, neither a relative"
+     ]
+    ]
+   },
+   {
+    "n": "Act N° 113 · view 58",
+    "when": "21 March 1843 · declared at three in the afternoon",
+    "quote": "Acte de Décès de John Maddack Jones (Major), vivant de son revenu, décédé de ce jour sur les huit heures du matin en son domicile situé en cette ville rue du Champ de Foire, âgé de soixante-huit ans, né — le lieu de sa naissance inconnu — fils de — les noms et prénoms de ses père et mère sont inconnus — veuf de Marguéritta Maria Elisabella Darcy.",
+    "facts": [
+     [
+      "Age",
+      "sixty-eight — which puts his birth about 1774"
+     ],
+     [
+      "Died",
+      "eight in the morning, rue du Champ de Foire — not the street where she had died seven weeks before"
+     ],
+     [
+      "Parents",
+      "both entered as unknown"
+     ],
+     [
+      "Declared by",
+      "Généreux Edouard Laillet, appariteur de police, twenty-two, and Jean Philippe Hébert, cultivateur, forty-eight — both of Ingouville, neither a relative"
+     ]
+    ]
+   }
+  ],
+  "ages": "An age is the thing this page has wanted since it was written. Sixty-one on 1 February 1843 puts Margaret's birth about 1781 — the first dating of a child of Robert D'Arcy that comes from a record rather than from a tree. Sixty-eight puts her husband's about 1774: seven years her senior, and thirty-two when he married her at Chatham in 1806.",
+  "each": "Each act names the other person. Hers calls her the wife of John Maddack Jones. His, seven weeks later, calls him the widower of Marguéritta Maria Elisabella Darcy. A marriage entered at Chatham in 1806 is confirmed in 1843 by French clerks who had never heard of Chatham and spelled both names by ear.",
+  "limit": "What the acts do not give is Robert D'Arcy. Both record that the birthplace of the dead person is unknown, and his adds that the names of his father and mother are unknown too. The declarants were strangers: a police appariteur of twenty-two, a farmer, two men of private means — four neighbours, each act noting that they were not relatives. Two English people in their sixties had died in a French suburb among people who did not know where either of them came from. The D'Arcy parentage still rests where it rested, on the English notices. The French register says when Margaret was born. It says nothing about to whom."
  }
 }

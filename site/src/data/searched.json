@@ -3900,6 +3900,57 @@
       "outcome": "yield",
       "got": "**Twelve results.** Le Havre's own 1843 deaths register, and separately the registers of the communes it later absorbed — Rouelles, Bléville, Sanvic and Ingouville — each with its own cote and its own tables décennales. Margaret Jones née D'Arcy died «at Havre» in February 1843, and which of those communes that means is not yet settled, so the tables are the place to start rather than any single register.",
       "href": "/errands"
+    },
+    {
+      "src": "Archives départementales de la Seine-Maritime — 4 E 10127, tables décennales 1833–1862",
+      "what": "The J section of the 1843–1852 décès table, for Major John Maddock Jones, died «at Ingouville» 21 March 1843",
+      "when": "09 Oct 2026",
+      "outcome": "null",
+      "got": "**Nine J entries across two pages — Jean, Jouette, Junais — and no JONES. The verdict is worthless, because this is the wrong Ingouville.** The cote was chosen for being the smallest index, 48 views. **Two things said so and were not read.** The image URL files it under «ingouville-sur-mer», the village near Saint-Valery-en-Caux, sixty kilometres up the coast. And forty-eight views cannot hold thirty years of births, marriages and deaths for a town of fifteen thousand: the right volume, **4 E 9933**, spends 309 views on one decade. The surnames on the page — Jouette, Blanquet, Barthélemy, Brument — are a Caux village's, not a port's. **A register is not identified by its title; it is identified by its size and its provenance.**",
+      "href": "/margaret-jones",
+      "ctl": "named",
+      "url": "https://www.archivesdepartementales76.net/ark:/50278/324f34a0d9295db7f79abf3a88551bdf",
+      "pages": "28-30",
+      "walked": false,
+      "tags": [
+        "jones",
+        "ingouville-sur-mer",
+        "ad-seine-maritime"
+      ]
+    },
+    {
+      "src": "Archives départementales de la Seine-Maritime — 4 E 9077, Le Havre, ancienne commune d'Ingouville, décès 1843",
+      "what": "The death of Major John Maddock Jones, «at Ingonville, near Havre», 21 March 1843",
+      "when": "09 Oct 2026",
+      "outcome": "yield",
+      "got": "**Act N° 113, view 58.** «Du vingt-unième jour du mois de Mars… Acte de Décès de **John Maddack Jones** (Major), vivant de son revenu, décédé de ce jour sur les huit heures du matin en son domicile situé en cette ville **rue du Champ de Foire**… âgé de **soixante-huit ans**, né — le lieu de sa naissance inconnu — fils de — les noms et prénoms de ses père et mère sont inconnus — **veuf de Marguéritta Maria Elisabella Darcy**.» Declared the same afternoon by a police appariteur of twenty-two and a farmer of forty-eight, «tous deux d'Ingouville et non parents du défunt». **Sixty-eight in March 1843 puts his birth about 1774.** The register is chronological, so the act was reached by date and not by index: act 116 is 23 March, act 85 is 1 March.",
+      "href": "/margaret-jones",
+      "url": "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806",
+      "pages": "23-27, 34, 44, 58-60",
+      "walked": false,
+      "tags": [
+        "jones",
+        "ingouville",
+        "le-havre",
+        "ad-seine-maritime"
+      ]
+    },
+    {
+      "src": "Archives départementales de la Seine-Maritime — 4 E 9077, Le Havre, ancienne commune d'Ingouville, décès 1843",
+      "what": "The death of Margaret Jones née D'Arcy, «at Havre», February 1843",
+      "when": "09 Oct 2026",
+      "outcome": "yield",
+      "got": "**Act N° 43, view 23 — 1 February 1843, the first day of the month.** «Acte de Décès de **Marguéritta Maria Elisabella Darcy**, sans profession, décédée de ce jour sur les six heures du matin en son domicile situé en cette ville, **rue de l'Hôpital, maison Lechevalier**, âgée de **soixante-un ans**, née — le lieu de sa naissance est inconnu — **épouse de John Maddack Jones**.» Declared that afternoon by two rentiers of Ingouville, fifty-nine and fifty-eight and a half, neither a relative. **Sixty-one on 1 February 1843 puts her birth about 1781** — the nearest thing this archive has to a birth date for a child of Robert D'Arcy. The *Morning Herald* printed the notice on the 13th; the death was twelve days before it.",
+      "href": "/margaret-jones",
+      "url": "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806",
+      "pages": "23-27, 34, 44, 58-60",
+      "walked": false,
+      "tags": [
+        "jones",
+        "ingouville",
+        "le-havre",
+        "ad-seine-maritime"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

@@ -1,9 +1,42 @@
 {
   "title": "What changed",
-  "eyebrow": "23 passes · 291 changes",
   "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
+    {
+      "when": "9 October 2026",
+      "title": "Two deaths chased at Kew for a month are read in the French register, and one of them gives an age",
+      "found": [
+        [
+          "Added",
+          "/margaret-jones — act N° 43, Ingouville, 1 February 1843. Margaret D'Arcy, aged SIXTY-ONE, born about 1781"
+        ],
+        [
+          "Added",
+          "/margaret-jones — act N° 113, Ingouville, 21 March 1843. John Maddack Jones, Major, aged SIXTY-EIGHT, «veuf de Marguéritta Maria Elisabella Darcy»"
+        ],
+        [
+          "Corrected",
+          "/searched — a décennale table was read right through for the WRONG INGOUVILLE. Own error 55"
+        ],
+        [
+          "Checked",
+          "/errands — the heading said 50 open and 8 answered over 52 and 14. The tally is now computed, not typed"
+        ],
+        [
+          "Closed",
+          "/errands 35 — answered by a free register, after a month of pursuing it through a paywall"
+        ]
+      ],
+      "did": [
+        "THE ACTS WERE READ, AND THE THING THIS PAGE HAS WANTED FOR A MONTH IS AN AGE. Margaret Jones née D'Arcy died at SIX IN THE MORNING ON 1 FEBRUARY 1843, at her house in the rue de l'Hôpital, Ingouville, AGED SIXTY-ONE — which puts her birth about 1781. It is the FIRST DATING OF A CHILD OF ROBERT D'ARCY THAT COMES FROM A RECORD rather than from a tree. Her husband died seven weeks later, on 21 MARCH, at eight in the morning in the rue du Champ de Foire, AGED SIXTY-EIGHT, born about 1774. Each act names the other person: hers calls her his wife, his calls him her widower. A marriage entered at Chatham in 1806 is confirmed in 1843 by French clerks who had never heard of Chatham and spelled both names by ear — «Maddack», «Marguéritta Maria Elisabella Darcy».",
+        "AND NEITHER ACT CAN CARRY ROBERT D'ARCY, WHICH IS THE POINT OF THE ERRAND AND IS NOT ANSWERED. Both record the birthplace of the dead person as unknown, and his adds that the names of his father and mother are unknown too. The declarants were four neighbours — a police appariteur of twenty-two, a farmer of forty-eight, two men of private means of fifty-nine and fifty-eight — and every act notes that they were NOT RELATIVES. Two English people in their sixties had died in a French suburb among people who did not know where either of them came from. The D'Arcy parentage still rests where it rested, on the English notices. ERRAND 35 IS MARKED ANSWERED FOR THE AGE AND SAYS IN ITS OWN ENTRY THAT THE PARENTAGE IT WAS OPENED FOR IS STILL OPEN.",
+        "OWN ERROR 55. A DÉCENNALE TABLE WAS READ RIGHT THROUGH FOR THE WRONG INGOUVILLE. Cote 4 E 10127 was picked out of the search results for being the smallest index — forty-eight views — and its 1843–1852 décès table was paged to the J section and read: nine entries, Jean, Jouette, Junais, and no Jones. The verdict was worthless. TWO THINGS ON THE SCREEN SAID SO AND NEITHER WAS READ. The image URL filed the volume under «ingouville-sur-mer», a village near Saint-Valery-en-Caux sixty kilometres up the coast. And forty-eight views cannot hold thirty years of births, marriages and deaths for a town of fifteen thousand — the right table, 4 E 9933, spends THREE HUNDRED AND NINE VIEWS ON ONE DECADE. The surnames gave it away too, had anyone asked: Jouette, Blanquet, Barthélemy. A REGISTER IS NOT IDENTIFIED BY ITS TITLE. It is identified by its provenance and its size, and both were on the page.",
+        "THE ACT WAS FOUND BY DATE, NOT BY INDEX, WHICH IS WHY THE WRONG TABLE COST NOTHING IN THE END. The 1843 deaths register of Ingouville, 4 E 9077, runs chronologically at about two acts to a view, so a known date is a binary search: act 116 is 23 March, act 85 is 1 March, act 65 is 16 February. Jones's death on the 21st had to be act 113, and it is. Margaret's was narrowed by her own notice — the Morning Herald printed it on 13 February, so the death was days earlier — and act 43 is the first of the month. THE INDEX WAS NEVER NEEDED.",
+        "AND THE PAGE THAT GRADES EVERYTHING ELSE HAD A NUMBER NOBODY WAS GRADING. /errands carried the heading «50 OPEN · 8 ANSWERED AND KEPT» as a hand-typed string in its data, while the rows under it held FIFTY-TWO AND FOURTEEN. The page already had a counting helper and was not using it for the heading. A count that is retyped is a claim that can go stale in silence, which is the one failure this archive builds gates against — so the eyebrow is now computed from the rows, and answering an errand cannot leave the heading behind. The same tally on /changes was already computed; its data file carried a dead stale copy, which is gone.",
+        "THE ARCHIVE'S IMAGES WERE READ THROUGH THE BROWSER, NOT SCRIPTED. The Seine-Maritime viewer serves IIIF, and a first pass pulled page crops with curl until the server began returning placeholder tiles. The browser held a «techaro.lol-anubis-auth» cookie — a proof-of-work token earned by passing a bot check. Replaying that token outside the browser would have been working around the gate, so the scripting stopped there and the rest of the reading was done by navigating the browser to the crops, which is what the viewer itself does. THE RULE IS NOT «GET THE IMAGES»; IT IS «DO NOT DEFEAT A BOT GATE», AND IT COST NOTHING TO KEEP."
+      ]
+    },
     {
       "when": "9 October 2026",
       "title": "The research reached the pages and left four people behind, and split two more in half",

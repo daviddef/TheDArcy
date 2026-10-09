@@ -532,6 +532,17 @@ rec("Margarett Maria Isabella D'Arcy", "\u201cAt Havre, MARGARET, wife of MAJOR 
 rec("John Maddock Jones", "\u201c21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON\u201d \u00b7 Argus, 1 April 1843 \u2014 he died within weeks of his wife, both in Normandy", "record \u00b7 Argus, or Broad-sheet of the Empire, 1 April 1843, p.15", BNA5)
 rec("Robert D'Arcy", "named in 1843 as \u201cthe late MAJOR-GENERAL D'ARCY, R.E.\u201d, father of Margaret Jones \u00b7 rank, corps and the fact of his death, in one line of a London paper", MH43, BNA5)
 
+
+# --- the French civil register, read 9 October 2026 -------------------------
+AD76D = "record · Archives départementales de la Seine-Maritime, 4 E 9077 — Le Havre, ancienne commune d'Ingouville, registre des décès 1843"
+AD76L = "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806"
+rec("Margarett Maria Isabella D'Arcy",
+    "DEATH ACT N° 43, Ingouville, 1 FEBRUARY 1843 · “Marguéritta Maria Elisabella Darcy, sans profession”, died that day at six in the morning at her home, RUE DE L'HÔPITAL, MAISON LECHEVALIER · AGED SIXTY-ONE — born about 1781 · her birthplace entered as unknown · “épouse de John Maddack Jones” · declared the same day at four in the afternoon by Jean Baptiste Lecordier, rentier, 59, and Jean Olivier Quesney, rentier, 58½, both of Ingouville and neither a relative",
+    AD76D + ", view 23", AD76L)
+rec("John Maddock Jones",
+    "DEATH ACT N° 113, Ingouville, 21 MARCH 1843 · “John Maddack Jones (Major), vivant de son revenu”, died that day at eight in the morning at his home, RUE DU CHAMP DE FOIRE · AGED SIXTY-EIGHT — born about 1774 · his birthplace and both his parents entered as unknown · “veuf de Marguéritta Maria Elisabella Darcy” · declared the same day at three in the afternoon by Généreux Edouard Laillet, appariteur de police, 22, and Jean Philippe Hébert, cultivateur, 48, both of Ingouville and neither a relative",
+    AD76D + ", view 58", AD76L)
+
 # --- Australian Imperial Force service records ------------------------------
 NAA = "https://recordsearch.naa.gov.au/"
 rec("Arthur Hartley Sneyd", "5050 · 9th Battalion · attested Brisbane 16 Sep 1915, aged 21y11m · typist · Baptist · 5ft 7½in · killed in action 20 Aug 1916",

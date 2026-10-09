@@ -1,6 +1,5 @@
 {
   "title": "Errands",
-  "eyebrow": "50 open · 8 answered and kept",
   "dek": "Every one of these needs a login, a card, an identity check or a human being in a reading room. They are drafted, costed and ordered by what they would settle.",
   "lead": "An archive that can only use what is free and unauthenticated will stop at a particular place, and this one has stopped there. What follows is the queue past that point. Each entry says what the source is, what it would settle, and roughly what it costs — so that anyone who wants to help can pick one up without asking what to do.",
   "rows": [
@@ -414,14 +413,14 @@
     },
     {
       "n": 35,
-      "what": "The deaths of Margaret Jones née D'Arcy and Major John Maddock Jones, Havre and Ingouville, 1843 — and the French register is open",
+      "what": "The deaths of Margaret Jones née D'Arcy and Major John Maddock Jones, Ingouville, 1843 — ANSWERED by the French register, free",
       "where": "The National Archives, Kew — RG 35, GRO Miscellaneous Foreign Death Returns, 1830–1921. The France run is RG 35/8–13; on dates, February–March 1843 could only fall in RG 35/8, /9, /10 or /13. The catalogue describes them only as “Part 1…Part 5” — no town, no consulate, no names. The gating finding aid is RG 43/4, Index to RG 35/1-25 Deaths, 1830–1880, which IS digitised but only through paid sites (or free onsite at Kew).",
       "cost": "a subscription or a visit",
       "settles": "Margaret Jones née D'Arcy died at Havre in February 1843 and her husband Major John Maddock Jones at Ingouville in March. A consular death registration gives an age and frequently a parentage. It is the nearest thing to a birth date for a daughter of Robert D'Arcy.",
       "why": "AN AGE FOR ONE OF ROBERT'S CHILDREN",
       "href": "/margaret-jones",
-      "file": "SERIES IDENTIFIED 15 September 2026. Two honest limits: the word in the title is MISCELLANEOUS — these are returns that happened to reach the GRO, not a complete register of British deaths in France — so a negative in RG 43/4 would prove only that the death is not in RG 35, not that it went unregistered. And there is no TNA series of French consular death registers for the 1840s at all; FO 27 holds Havre consular correspondence, but it is correspondence, not a register, and is not name-indexed. · 9 OCTOBER 2026: THERE IS A FREE ROUTE AND IT IS NOT KEW. The Archives départementales de la Seine-Maritime publish the état civil, digitised, without an account. Ingouville deaths for the whole of 1843 are cote 4 E 9077, 310 views, with tables décennales 4 E 10127 and 4 E 9933 over them; Le Havre's own 1843 deaths and those of the communes it absorbed return twelve results beside it. A French death act carries the age, the birthplace, the parents and the surviving spouse — more than a consular return would. WHAT REMAINS IS READING THEM, which is a sitting, not a fee and not a sign-in.",
-      "state": "open",
+      "file": "SERIES IDENTIFIED 15 September 2026. Two honest limits: the word in the title is MISCELLANEOUS — these are returns that happened to reach the GRO, not a complete register of British deaths in France — so a negative in RG 43/4 would prove only that the death is not in RG 35, not that it went unregistered. And there is no TNA series of French consular death registers for the 1840s at all; FO 27 holds Havre consular correspondence, but it is correspondence, not a register, and is not name-indexed. · 9 OCTOBER 2026: THERE IS A FREE ROUTE AND IT IS NOT KEW. The Archives départementales de la Seine-Maritime publish the état civil, digitised, without an account. Ingouville deaths for the whole of 1843 are cote 4 E 9077, 310 views, with tables décennales 4 E 10127 and 4 E 9933 over them; Le Havre's own 1843 deaths and those of the communes it absorbed return twelve results beside it. A French death act carries the age, the birthplace, the parents and the surviving spouse — more than a consular return would. WHAT REMAINS IS READING THEM, which is a sitting, not a fee and not a sign-in. · 9 OCTOBER 2026, ANSWERED AND NOT AT KEW. Both acts were read in the Archives départementales de la Seine-Maritime, 4 E 9077, the 1843 death register of Ingouville, free and without an account. MARGARET, ACT N° 43, DIED 1 FEBRUARY 1843, AGED SIXTY-ONE — born about 1781, the first dating of a child of Robert D'Arcy taken from a record. JOHN MADDACK JONES, ACT N° 113, DIED 21 MARCH 1843, AGED SIXTY-EIGHT, described as her widower. Neither act names a parent or a birthplace: the declarants were four neighbours, and every one of them is recorded as not being a relative. So the errand's own reason — a parentage for Margaret — is NOT answered, and RG 35 would still be worth a look by anyone who can reach it. What is answered is the age, which is what was wanted most.",
+      "state": "answered",
       "key": "err/british-consular-death-regis-0b2f3e"
     },
     {

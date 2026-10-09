@@ -9,6 +9,13 @@ import e from "../data/errands.json";
 
 const n = (k) => e.rows.filter((r) => r.state === k).length;
 
+/* 9 October 2026. The eyebrow was a hand-typed tally — "50 open · 8 answered
+   and kept" — against 52 and 14 in the data under it. A count that is retyped
+   is a claim that can go stale silently, which is the one thing this archive
+   grades everything else to avoid. It is computed here instead, so that adding
+   a row or answering one cannot leave the heading behind. */
+const eyebrow = `${n("open")} open \u00b7 ${n("answered")} answered and kept`;
+
 /* 21 September 2026. The queue moved to the kit. The STATE did not: this
    archive grades a request by where it has got to — answered, open — with a
    colour and a gloss each, which is a different question from Defranceski's
@@ -38,7 +45,7 @@ const groups = [{
   })),
 }];
 ---
-<Base title={e.title} eyebrow={e.eyebrow} dek={e.dek}>
+<Base title={e.title} eyebrow={eyebrow} dek={e.dek}>
   <section class="blk">
     <p class="lede">{e.lead}</p>
   </section>

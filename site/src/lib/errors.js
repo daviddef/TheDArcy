@@ -547,6 +547,15 @@ export const OWN = [
     lesson: "Go to the record. A number that matches something else in the sentence is a number to distrust.",
     href: "/australia",
   },
+  {
+    when: "9 October 2026",
+    cause: "identity",
+    what: "Read the J section of a décennale death table for 1843\u20131852 right through \u2014 nine entries, no Jones \u2014 and treated it as a verdict on Ingouville.",
+    truth: "It was the wrong Ingouville: a village near Saint-Valery-en-Caux, sixty kilometres up the coast from the Le Havre suburb where the Joneses died.",
+    why: "The cote was chosen out of a result list for being the smallest index, forty-eight views. Two things on the screen said it was wrong and neither was read. The image URL filed the volume under \u00abingouville-sur-mer\u00bb. And forty-eight views cannot hold thirty years of births, marriages and deaths for a town of fifteen thousand \u2014 the right table spends three hundred and nine views on one decade.",
+    lesson: "A register is not identified by its title. Two places share a name far more often than two places share a provenance and a size, and both were on the page.",
+    href: "/margaret-jones",
+  },
 ];
 
 
@@ -578,6 +587,8 @@ export const CAUSES = {
     "An assertion written in a note or a to-do list, then read back as though a source had said it. It arrives as background, so nothing grades it."],
   typed: ["A number typed instead of counted",
     "Every one of these could have been derived from the data and was instead written by a hand that believed it."],
+  identity: ["The right kind of record, the wrong one of them",
+    "A volume, a parish or a place answering to the same name as the one wanted. The title matched and the provenance did not \u2014 and the provenance was on the screen. The same trap, caught in time, is why /sanigers settles which Kingswood by a coordinate rather than by a name."],
   edition: ["An edition mistaken for the document",
     "A printed transcript, an OCR line or a secondary account treated as the manuscript. A printed text is a reading, not a record."],
 };

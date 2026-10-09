@@ -1,10 +1,10 @@
 {
-"entries": 860,
+"entries": 862,
 "distinct": 595,
-"records": 387,
+"records": 389,
 "tree": 473,
 "grafted": 98,
-"linked": 851,
+"linked": 853,
 "surnames": 204,
 "groups": [
 {
@@ -1184,7 +1184,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 153,
+"n": 154,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -1625,6 +1625,13 @@
 "says": "“At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.” · the first record to give Robert D'Arcy a corps as well as a rank, and to call anyone his child",
 "source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
 "link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Margarett Maria Isabella D'Arcy",
+"says": "DEATH ACT N° 43, Ingouville, 1 FEBRUARY 1843 · “Marguéritta Maria Elisabella Darcy, sans profession”, died that day at six in the morning at her home, RUE DE L'HÔPITAL, MAISON LECHEVALIER · AGED SIXTY-ONE — born about 1781 · her birthplace entered as unknown · “épouse de John Maddack Jones” · declared the same day at four in the afternoon by Jean Baptiste Lecordier, rentier, 59, and Jean Olivier Quesney, rentier, 58½, both of Ingouville and neither a relative",
+"source": "record · Archives départementales de la Seine-Maritime, 4 E 9077 — Le Havre, ancienne commune d'Ingouville, registre des décès 1843, view 23",
+"link": "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806",
 "kind": "record"
 },
 {
@@ -3972,6 +3979,61 @@
 ]
 },
 {
+"surname": "JONES",
+"n": 7,
+"rows": [
+{
+"name": "John Maddock Jones",
+"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
+"source": "record · TNA PROB 11/1991/312",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON” · Argus, 1 April 1843 — he died within weeks of his wife, both in Normandy",
+"source": "record · Argus, or Broad-sheet of the Empire, 1 April 1843, p.15",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "DEATH ACT N° 113, Ingouville, 21 MARCH 1843 · “John Maddack Jones (Major), vivant de son revenu”, died that day at eight in the morning at his home, RUE DU CHAMP DE FOIRE · AGED SIXTY-EIGHT — born about 1774 · his birthplace and both his parents entered as unknown · “veuf de Marguéritta Maria Elisabella Darcy” · declared the same day at three in the afternoon by Généreux Edouard Laillet, appariteur de police, 22, and Jean Philippe Hébert, cultivateur, 48, both of Ingouville and neither a relative",
+"source": "record · Archives départementales de la Seine-Maritime, 4 E 9077 — Le Havre, ancienne commune d'Ingouville, registre des décès 1843, view 58",
+"link": "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806",
+"kind": "record"
+},
+{
+"name": "John Maddock Jones",
+"says": "marriage notice · “CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA” — married at Chatham Church by the Rev. I. T. Jones, November 1806",
+"source": "record · Chester Courant, 11 Nov 1806, p.3",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Lydia Jones",
+"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
+"source": "family tree · direct line",
+"link": "/people/lydia-jones",
+"kind": "tree"
+},
+{
+"name": "William Jones",
+"says": "b. 1722 · Brimpsfield, Gloucester, England",
+"source": "family tree · direct line",
+"link": "/people/william-jones",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "STONE",
 "n": 7,
 "rows": [
@@ -4078,54 +4140,6 @@
 "source": "Berkeley Castle Muniments, via TNA Discovery",
 "link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
-}
-]
-},
-{
-"surname": "JONES",
-"n": 6,
-"rows": [
-{
-"name": "John Maddock Jones",
-"says": "bachelor, Esq., of Penybryn in the parish of Ruabon, Denbighshire · married Margarett Maria Isabella D'Arcy at Chatham, 23 October 1806",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "John Maddock Jones",
-"says": "of Ruabon, Denbighshire · will proved 24 January 1844, TNA PROB 11/1991/312 · and “of Penybryn esq” in a Shropshire deed of 18 February 1829, SRO 2847/7/173",
-"source": "record · TNA PROB 11/1991/312",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "John Maddock Jones",
-"says": "“21st, at Ingonville, near Havre, MAJOR MADDOCK JONES, late of the ROYAL DENBIGH MILITIA, and PEN-Y-BRYN, RUABON” · Argus, 1 April 1843 — he died within weeks of his wife, both in Normandy",
-"source": "record · Argus, or Broad-sheet of the Empire, 1 April 1843, p.15",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "John Maddock Jones",
-"says": "marriage notice · “CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA” — married at Chatham Church by the Rev. I. T. Jones, November 1806",
-"source": "record · Chester Courant, 11 Nov 1806, p.3",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Lydia Jones",
-"says": "1770–1851 · Wotton-under-Edge, Gloucestershire, England",
-"source": "family tree · direct line",
-"link": "/people/lydia-jones",
-"kind": "tree"
-},
-{
-"name": "William Jones",
-"says": "b. 1722 · Brimpsfield, Gloucester, England",
-"source": "family tree · direct line",
-"link": "/people/william-jones",
-"kind": "tree"
 }
 ]
 },
