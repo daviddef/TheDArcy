@@ -808,6 +808,35 @@ rec("Robert West D'Arcy",
 rec("Catherine Georgiana West",
     "named as the mother in both Westminster baptisms · KATHARINE GEORGIANA in 1818, CATHERINE GEORGIANA in 1820 — one woman under two ordinary spellings · the first record to carry her forenames, which the tree had asserted and nothing had tested",
     WBAP, "https://www.findmypast.co.uk/")
+# --- the Gazette on George Abbas Kooli D'Arcy, read 9 October 2026 ---------
+# Free, official, and never opened for him. The archive had "military records
+# for 1840 and 1841" and a death in Devon; the Gazette carries ten notices
+# naming him between 1837 and 1859 and they run from Ensign to the government
+# of a colony. The OCR is rough - the search index shows "Qeorge", "D'Aroy",
+# "Greorge" - so each quotation below is given as the Gazette prints the name.
+GZ = "https://www.thegazette.co.uk/"
+rec("George Abbas Kooli D'Arcy",
+    "ENSIGN, 94TH REGIMENT OF FOOT, by April 1837 \u00b7 a Gazette memorandum exists only to fix his name: \u201cThe Christian names of Ensign D'Arcy, of the 94th Regiment of Foot, are George Abbas Kooli\u201d \u2014 he was eighteen, and the War Office had got it wrong",
+    "record \u00b7 The London Gazette, 27 April 1837, issue 19488, p.1079", GZ)
+rec("George Abbas Kooli D'Arcy",
+    "LIEUTENANT, 26 SEPTEMBER 1839 \u00b7 \u201cEnsign and Adjutant George Abbas Kooli D'Arcy to have the rank of Lieutenant\u201d",
+    "record \u00b7 The London Gazette, 26 September 1839, issue 19773, p.1824", GZ)
+rec("George Abbas Kooli D'Arcy",
+    "CAPTAIN, 12 NOVEMBER 1846 \u00b7 \u201cLieutenant George Abbas Kooli D'Arcy to be Captain, vice Davenport\u201d",
+    "record \u00b7 The London Gazette, 12 November 1846, issue 20664, p.4260", GZ)
+rec("George Abbas Kooli D'Arcy",
+    "MAJOR, 3RD WEST INDIA REGIMENT, 6 JULY 1852 \u00b7 \u201cCaptain George Abbas Kooli d'Arcy, FROM THE 94TH FOOT, to be Major, by purchase, vice Findlay, promoted\u201d \u2014 fifteen years in one regiment, then a transfer to a West India corps",
+    "record \u00b7 The London Gazette, 6 July 1852, issue 21336, p.1890", GZ)
+rec("George Abbas Kooli D'Arcy",
+    "LIEUTENANT-COLONEL, 7 JULY 1854 \u00b7 \u201c3rd West India Regiment, Major George Abbas Kooli D'Arcy, to be Lieutenant-Colonel, by purchase, vice Murray, who retires\u201d \u00b7 gazetted in London on 7 July and again in Edinburgh on 11 July",
+    "record \u00b7 The London Gazette, 7 July 1854, issue 21569, p.2119; The Edinburgh Gazette, 11 July 1854, issue 6402, p.601", GZ)
+rec("George Abbas Kooli D'Arcy",
+    "LISTED 7 JULY 1857 as \u201cLieutenant-Colonel George Abbas Kooli d'Arcy, 3rd West India Regiment\u201d, among officers of mixed rank each carrying a date \u00b7 THE HEADING OVER THAT LIST HAS NOT BEEN READ, so what it conferred is not stated here \u2014 only that he is a Colonel by 1859",
+    "record \u00b7 The London Gazette, 14 August 1857, issue 22031, p.2790; The Edinburgh Gazette, 18 August 1857, issue 6728, p.750", GZ)
+rec("George Abbas Kooli D'Arcy",
+    "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
+    "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
+
 rec("Robert West D'Arcy", "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
     "record · British India Office Marriages", "https://www.findmypast.co.uk/")
 rec("William Sneyd", "burial · 13 MAY 1827, MADELEY ALL SAINTS, Staffordshire · AGED 84, born about 1743 · the better of two candidates for the weaver, and not proved",

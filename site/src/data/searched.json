@@ -4044,6 +4044,20 @@
         "portsmouth",
         "freereg"
       ]
+    },
+    {
+      "src": "The Gazette (London and Edinburgh), official notices, 1830–1900",
+      "url": "https://www.thegazette.co.uk/all-notices/notice?text=Kooli&start-publish-date=1830-01-01&end-publish-date=1900-12-31",
+      "what": "Anything on George Abbas Kooli D'Arcy, eldest son of Joseph — the archive had «military records for 1840 and 1841» and nothing else",
+      "when": "09 Oct 2026",
+      "outcome": "yield",
+      "got": "**Ten notices, and they run from Ensign to the government of a colony.** Ensign in the **94th Regiment of Foot** by April 1837 — a memorandum that exists only to correct him: «The Christian names of Ensign D'Arcy, of the 94th Regiment of Foot, are George Abbas Kooli». **Lieutenant** 26 September 1839, **Captain** 12 November 1846, **Major** of the **3rd West India Regiment** 6 July 1852 «from the 94th Foot», **Lieutenant-Colonel** 7 July 1854, and on 17 June 1859: «**Colonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia**» — in the same sentence as the new Governor of Hong Kong. **The search is on the middle name, which is why it worked:** the Gazette's OCR mangles the surname into «D'Aroy» and the forename into «Qeorge» and «Greorge», but «Kooli» survives. Ten is therefore a floor and not a ceiling — an OCR slip could hide a later notice, and nothing after 1859 was found.",
+      "href": "/worklist",
+      "tags": [
+        "darcy",
+        "gazette",
+        "gambia"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
