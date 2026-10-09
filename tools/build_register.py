@@ -837,6 +837,25 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- FIBIS, read 10 October 2026 ------------------------------------------
+# The Families in British India Society database is free, indexes India Office
+# material, and this archive had never opened it. The 1846 Bombay marriage
+# below was already here as a bare fact with its transcript behind a paywall;
+# FIBIS names the bride twice over, from two separate indexes, for nothing.
+FIB = "https://fibis.ourarchives.online/"
+rec("Robert West D'Arcy",
+    "MARRIED ANNIE ADAMS at BOMBAY, 20 JANUARY 1846 \u00b7 the bride this archive could not afford to see \u2014 the transcript was paywalled even on a paid trial, and the free index gives her name and the day",
+    "record \u00b7 Gentleman's Magazine marriage announcements, indexed by the Families in British India Society", FIB)
+rec("Robert West D'Arcy",
+    "THE SAME MARRIAGE IN THE INDIA OFFICE'S OWN RETURN \u00b7 \u201cPresidency of Marriage BOMBAY \u00b7 Marriage Year 1846 \u00b7 Husband ROBT WEST D'ARCY \u00b7 Wife ANNE H ADAMS\u201d \u2014 an independent index of the IOR ecclesiastical returns, which spells her ANNE H where the magazine prints ANNIE",
+    "record \u00b7 Index of Ecclesiastical returns, IOR Bombay Marriages, indexed by FIBIS", FIB)
+rec("Annie Adams",
+    "MARRIED ROBERT WEST D'ARCY at BOMBAY in 1846 \u00b7 ANNIE in the Gentleman's Magazine, ANNE H in the India Office return \u00b7 nothing else about her is known to this archive \u2014 no parents, no birthplace, no death",
+    "record \u00b7 Gentleman's Magazine marriage announcements and IOR Bombay Marriages, both indexed by FIBIS", FIB)
+rec("Robert West D'Arcy",
+    "HIS DEATH REPORTED BACK TO INDIA \u00b7 Allen's Indian Mail, the Anglo-Indian paper of record, carries \u201cD'ARCY, Robert \u00b7 BANGOR, N.WALES \u00b7 1862\u201d \u2014 the same periodical had printed his Bombay marriage twice in 1846, as Robert W. and as Robert West",
+    "record \u00b7 Periodical: Allen's Indian Mail, indexed by FIBIS", FIB)
+
 rec("Robert West D'Arcy", "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
     "record · British India Office Marriages", "https://www.findmypast.co.uk/")
 rec("William Sneyd", "burial · 13 MAY 1827, MADELEY ALL SAINTS, Staffordshire · AGED 84, born about 1743 · the better of two candidates for the weaver, and not proved",

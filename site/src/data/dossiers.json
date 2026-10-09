@@ -1791,6 +1791,21 @@
 "slug": "matilda-webb",
 "n": 1
 },
+"annie-adams": {
+"name": "Annie Adams",
+"surname": "ADAMS",
+"rows": [
+{
+"says": "MARRIED ROBERT WEST D'ARCY at BOMBAY in 1846 · ANNIE in the Gentleman's Magazine, ANNE H in the India Office return · nothing else about her is known to this archive — no parents, no birthplace, no death",
+"source": "record · Gentleman's Magazine marriage announcements and IOR Bombay Marriages, both indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "annie-adams",
+"n": 1
+},
 "ahern": {
 "name": "Ahern",
 "surname": "AHERN",
@@ -2768,9 +2783,9 @@
 }
 },
 "counts": {
-"named": 225,
+"named": 226,
 "withTreePage": 56,
-"ownPage": 170,
-"mentions": 396
+"ownPage": 171,
+"mentions": 400
 }
 }

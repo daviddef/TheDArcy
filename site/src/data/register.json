@@ -1,11 +1,11 @@
 {
-"entries": 869,
-"distinct": 595,
-"records": 396,
+"entries": 873,
+"distinct": 596,
+"records": 400,
 "tree": 473,
 "grafted": 98,
-"linked": 860,
-"surnames": 204,
+"linked": 864,
+"surnames": 205,
 "groups": [
 {
 "surname": "SNEYD",
@@ -1184,7 +1184,7 @@
 },
 {
 "surname": "D'ARCY",
-"n": 161,
+"n": 164,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -1835,6 +1835,27 @@
 "says": "baptised WESTMINSTER, 16 OCTOBER 1820 · father JOSEPH D'ARCY · mother CATHERINE GEORGIANA · WEST is his mother's maiden surname, standing as his middle name",
 "source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
 "link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "MARRIED ANNIE ADAMS at BOMBAY, 20 JANUARY 1846 · the bride this archive could not afford to see — the transcript was paywalled even on a paid trial, and the free index gives her name and the day",
+"source": "record · Gentleman's Magazine marriage announcements, indexed by the Families in British India Society",
+"link": "https://fibis.ourarchives.online/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "THE SAME MARRIAGE IN THE INDIA OFFICE'S OWN RETURN · “Presidency of Marriage BOMBAY · Marriage Year 1846 · Husband ROBT WEST D'ARCY · Wife ANNE H ADAMS” — an independent index of the IOR ecclesiastical returns, which spells her ANNE H where the magazine prints ANNIE",
+"source": "record · Index of Ecclesiastical returns, IOR Bombay Marriages, indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "HIS DEATH REPORTED BACK TO INDIA · Allen's Indian Mail, the Anglo-Indian paper of record, carries “D'ARCY, Robert · BANGOR, N.WALES · 1862” — the same periodical had printed his Bombay marriage twice in 1846, as Robert W. and as Robert West",
+"source": "record · Periodical: Allen's Indian Mail, indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/",
 "kind": "record"
 },
 {
@@ -5491,6 +5512,19 @@
 "source": "family tree · direct line",
 "link": "/people/mary-abbot",
 "kind": "tree"
+}
+]
+},
+{
+"surname": "ADAMS",
+"n": 1,
+"rows": [
+{
+"name": "Annie Adams",
+"says": "MARRIED ROBERT WEST D'ARCY at BOMBAY in 1846 · ANNIE in the Gentleman's Magazine, ANNE H in the India Office return · nothing else about her is known to this archive — no parents, no birthplace, no death",
+"source": "record · Gentleman's Magazine marriage announcements and IOR Bombay Marriages, both indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/",
+"kind": "record"
 }
 ]
 },

@@ -4058,6 +4058,34 @@
         "gazette",
         "gambia"
       ]
+    },
+    {
+      "src": "FIBIS — Families in British India Society database",
+      "url": "https://fibis.ourarchives.online/",
+      "what": "Robert West D'Arcy, late of the Honourable East India Company's Army — the India Office material this archive had never opened",
+      "when": "10 Oct 2026",
+      "outcome": "yield",
+      "got": "**The bride this archive could not afford to see, named twice for nothing.** The 1846 Bombay marriage has sat here as a bare indexed fact with the words «transcript paywalled even on a paid trial». FIBIS has it from two separate indexes: the Gentleman's Magazine marriage announcements give «**Robert West D'Arcy** × **Annie Adams**, **20 January 1846**, Bombay», and the **Index of Ecclesiastical returns, IOR Bombay Marriages** gives «Husband ROBT WEST D'ARCY · Wife **ANNE H ADAMS**, 1846». Two indexes, one marriage, her name spelled two ways and neither of them guessed.\n\n**And the Anglo-Indian press followed him home.** Allen's Indian Mail printed the Bombay marriage twice in 1846 — once as «Robert W.», once as «Robert West» — and then «**D'ARCY, Robert · BANGOR, N.WALES · 1862**». A man who left for India came back to north Wales to die and the Indian papers still noticed.\n\n**What is NOT there: no service record, no medal, no child.** The military sets that looked promising were all false.",
+      "href": "/worklist",
+      "tags": [
+        "jones",
+        "adams",
+        "fibis",
+        "bombay"
+      ]
+    },
+    {
+      "src": "FIBIS — soundex behaviour on the surname D'Arcy",
+      "url": "https://fibis.ourarchives.online/",
+      "what": "Whether the 12 sources a default search returned for «Robert D'Arcy» were 12 sources about a D'Arcy",
+      "when": "10 Oct 2026",
+      "outcome": "null",
+      "got": "**Ten of the twelve were not D'Arcy at all.** FIBIS's default search is soundex, and on this surname it matches **TRACY, TRACEY, TRAISE, DRUCE and D'ROSE**. The Gentleman's Magazine «death announcement» for Robert D'Arcy is *Robert Alexander DRUCE, 28 June 1829*. The «Register of European Soldiers, Bengal Army» entry is *Robert TRACY, gunner*. Both Indian Mutiny Medal Roll entries are *Tracey* and *Traise*. The five «CMB» entries are a *D'Rose* family at Lucknow in the 1920s. **A result count from this database is not a count of anything until the rows are opened** — and the two that survive are the two recorded above. The same search set to EXACT MATCH returns 29 sources for D'Arcy across the whole database, which is the honest figure for its holdings on the name.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "fibis"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

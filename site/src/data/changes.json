@@ -4,6 +4,30 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
     {
+      "when": "10 October 2026",
+      "title": "A bride this archive could not afford to see, named twice over for nothing",
+      "found": [
+        [
+          "Added",
+          "Robert West D'Arcy married ANNIE ADAMS at Bombay, 20 January 1846 — from two free India Office indexes"
+        ],
+        [
+          "Added",
+          "Allen's Indian Mail reported his death at Bangor in 1862, having printed his marriage twice in 1846"
+        ],
+        [
+          "Checked",
+          "FIBIS — ten of the twelve sources a default search returned were soundex ghosts, not D'Arcys"
+        ]
+      ],
+      "did": [
+        "THE MARRIAGE HAS SAT HERE SINCE AUGUST AS A BARE FACT WITH THE WORDS «TRANSCRIPT PAYWALLED EVEN ON A PAID TRIAL». Robert West D'Arcy, second son of Joseph, married at Bombay in 1846 and that was all this archive could say. FIBIS — the FAMILIES IN BRITISH INDIA SOCIETY database, free, indexing India Office material, and never opened here — names her twice from two separate indexes. The Gentleman's Magazine marriage announcements: «ROBERT WEST D'ARCY × ANNIE ADAMS, 20 JANUARY 1846, BOMBAY». The Index of Ecclesiastical returns, IOR BOMBAY MARRIAGES: «Husband ROBT WEST D'ARCY · Wife ANNE H ADAMS, 1846». TWO INDEXES, ONE MARRIAGE, AND HER NAME SPELLED TWO WAYS BY PEOPLE WHO WERE NOT COPYING EACH OTHER. The day comes from the magazine; the India Office return gives only the year.",
+        "AND THE ANGLO-INDIAN PRESS FOLLOWED HIM HOME TO WALES. Allen's Indian Mail printed the Bombay marriage twice in 1846 — once as «Robert W.», once as «Robert West» — and then, sixteen years later, «D'ARCY, Robert · BANGOR, N.WALES · 1862». This archive already had the English notice of that death, «late of the Honourable East India Company's Army, dead at Bangor on 14 June». Now the India side of his life records the same death from the other direction, which is what ties the Bangor man to the Company officer without anybody having to assume it.",
+        "WHAT FIBIS DID NOT GIVE IS THE THING THE ERRAND WAS OPENED FOR. There is no cadet paper, no commission, no medal roll entry and no child. The India Office papers at the British Library remain the document that would give birth, parentage and career together, and nothing here replaces them.",
+        "AND THE COUNT THAT LOOKED LIKE A HARVEST WAS MOSTLY GHOSTS. A default FIBIS search for «Robert D'Arcy» returns TWELVE SOURCES, which reads like twelve findings. THE DEFAULT IS SOUNDEX, AND ON THIS SURNAME IT MATCHES TRACY, TRACEY, TRAISE, DRUCE AND D'ROSE. The «Gentleman's Magazine death announcement for Robert D'Arcy» is Robert Alexander DRUCE, dead in 1829. The «Register of European Soldiers, Bengal Army» entry is Robert TRACY, gunner. Both Indian Mutiny Medal Roll hits are Tracey and Traise. The five «CMB» entries are a D'Rose family at Lucknow in the 1920s. TEN OF TWELVE. A RESULT COUNT FROM THIS DATABASE IS NOT A COUNT OF ANYTHING UNTIL THE ROWS ARE OPENED, and the same search set to exact returns 29 sources for D'Arcy in the whole database, which is the figure worth quoting."
+      ]
+    },
+    {
       "when": "9 October 2026",
       "title": "Two deaths chased at Kew for a month are read in the French register, and one of them gives an age",
       "found": [
