@@ -837,6 +837,15 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- Phillimore's printed Gloucestershire marriages, 11 October 2026 ------
+PHIL = ("record \u00b7 Phillimore, Gloucestershire Parish Registers: Marriages, "
+        "six volumes read in full text \u2014 Internet Archive gloucestershirep15phil "
+        "and others")
+PHILL = "https://archive.org/details/gloucestershirep15phil"
+rec("John Saniger",
+    "THE SURNAME'S HOME PARISH LOOKS LIKE STONE, NOT BERKELEY \u00b7 across six printed volumes of Gloucestershire marriage registers the name appears THIRTY-SIX TIMES, and TWENTY of them are at STONE, the parish adjoining Berkeley, in the 1670s to 1690s \u2014 Morice Saniger & Margarett Heskins, Samuell Sanigar & Mary Morgan, William Sanigar & Bridget Bayley, John Cole & Elizabeth Sanigar, Richard Jones & Mary Sanigar \u00b7 the rest are at THORNBURY, CAM and DURSLEY \u00b7 THIS IS SURNAME DISTRIBUTION AND NOT DESCENT: not one of the thirty-six is shown here to be a relative, and none is a John marrying a Lydia",
+    PHIL, PHILL)
+
 # --- Porter's History of the Corps of Royal Engineers, read 11 October ----
 # The archive already cited "Porter's station list" for the Barbados posting
 # and had never read the rest of him. The index alone gives three campaigns.
