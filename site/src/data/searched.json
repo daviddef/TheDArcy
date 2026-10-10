@@ -4262,6 +4262,22 @@
         "darcy",
         "archive-org"
       ]
+    },
+    {
+      "src": "Whitworth Porter, History of the Corps of Royal Engineers, vol. I (1889)",
+      "url": "https://archive.org/details/historyofcorpsof0001whit",
+      "what": "Robert D'Arcy's service — this archive has cited «Porter's station list» for months and never read the book",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**The index alone gives him three campaigns.** «D'ARCY, Robert, at second siege of **Minorca**, 209, 216; **Copenhagen**, 243; **Walcheren**, 248.»\n\n**MINORCA, 1781–82.** The Duc de Crillon landed on 19 August 1781 to besiege Fort St Philip's. Lieutenant-Colonel Brewse was Chief Engineer in the island, and «under him were Captain Gilbert Townshend, and **Lieutenants Robert D'Arcy**, W. Johnston, J. R. Douglas, C. Shipley, and J. Fiddes» — one of six Engineer officers in a garrison of about 3,000 that was besieged for six months.\n\n**WALCHEREN, 1809.** Of the five corps of an army of nearly 40,000 under the Earl of Chatham, «the largest and most important» was Sir Eyre Coote's, sent against Flushing. «**The Commanding Royal Engineer with this corps was Lieutenant-Colonel R. D'Arcy.**» **His son Joseph's obituary, long held here, says Joseph was at the taking of Walcheren too** — father commanding the Engineers, son a Royal Artillery officer of twenty-nine, and neither record mentions the other.\n\n**AND HE WAS ARRESTED THERE.** Colonel Fyers, shot in the chest, ordered a written report each morning from the senior engineer in the trenches. The Brigade-Major's account: «The first morning, Colonel D., **an old man beyond sixty**, refused compliance, saying **he had other things to do**»; the third morning he declined again, «**saying it was all nonsense**», and denied his superior's right to ask, «because some thirty or forty years previously he had been senior to Colonel F.» Arrested, and after the preliminaries of a court-martial he «thought better of it, made his apologies, was released, and ever after furnished his report». Porter names him only in a footnote.\n\n**«An old man beyond sixty» in August 1809 puts his birth before about 1749.** The tree says 1751, which would make him fifty-eight. An eyewitness impression, not a register — but the second thing to sit badly with 1751.",
+      "href": "/hornby",
+      "tags": [
+        "darcy",
+        "royal-engineers",
+        "minorca",
+        "walcheren",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

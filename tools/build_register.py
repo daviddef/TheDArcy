@@ -837,6 +837,29 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- Porter's History of the Corps of Royal Engineers, read 11 October ----
+# The archive already cited "Porter's station list" for the Barbados posting
+# and had never read the rest of him. The index alone gives three campaigns.
+POR = ("record \u00b7 Whitworth Porter, History of the Corps of Royal Engineers, "
+       "vol. I (Longmans, 1889) \u2014 read in full text, Internet Archive "
+       "historyofcorpsof0001whit")
+PORL = "https://archive.org/details/historyofcorpsof0001whit"
+rec("Robert D'Arcy",
+    "PORTER'S INDEX GIVES HIM THREE CAMPAIGNS \u00b7 \u201cD'ARCY, ROBERT, at second siege of MINORCA, 209, 216; COPENHAGEN, 243; WALCHEREN, 248\u201d \u00b7 this archive had cited Porter only for a station list and had never read the book \u00b7 the Copenhagen page was not reached and is recorded here as THE INDEX'S CLAIM, not as a passage read",
+    POR, PORL)
+rec("Robert D'Arcy",
+    "THE SECOND SIEGE OF MINORCA, 1781-82, AS A LIEUTENANT \u00b7 the Duc de Crillon landed on 19 August 1781 to besiege Fort St Philip's \u00b7 Lieutenant-Colonel Brewse held the post of Chief Engineer in the island, and \u201cunder him were Captain Gilbert Townshend, and LIEUTENANTS ROBERT D'ARCY, W. Johnston, J. R. Douglas, C. Shipley, and J. Fiddes\u201d \u00b7 a garrison of about 3,000 under General Murray as Governor \u2014 ONE OF SIX ENGINEER OFFICERS INSIDE A FORTRESS THAT WAS BESIEGED FOR SIX MONTHS",
+    POR, PORL)
+rec("Robert D'Arcy",
+    "COMMANDING ROYAL ENGINEER AT WALCHEREN, 1809 \u00b7 an army of nearly 40,000 under the Earl of Chatham, divided into five corps, \u201cthe largest and most important\u201d being Sir Eyre Coote's, sent to take Walcheren and the fortress of Flushing \u00b7 \u201cTHE COMMANDING ROYAL ENGINEER WITH THIS CORPS WAS LIEUTENANT-COLONEL R. D'ARCY\u201d \u00b7 HIS SON JOSEPH'S OBITUARY SAYS JOSEPH WAS AT THE TAKING OF WALCHEREN TOO \u2014 the father commanding the Engineers of the main corps, the son a Royal Artillery officer of twenty-nine, and neither record mentions the other",
+    POR, PORL)
+rec("Robert D'Arcy",
+    "PUT UNDER ARREST AT FLUSHING, AND THE REASON IS A CHARACTER PORTRAIT \u00b7 Colonel Fyers, wounded in the chest by a musket ball, ordered the senior engineer in the trenches to deliver a written report each morning \u00b7 the Brigade-Major's account: \u201cThe first morning, COLONEL D., AN OLD MAN BEYOND SIXTY, refused compliance, saying HE HAD OTHER THINGS TO DO, and no solicitation could prevail on him to write a single line\u201d \u00b7 the third morning he declined again, \u201cSAYING IT WAS ALL NONSENSE\u201d, and denied his superior's right to demand a report \u201cBECAUSE SOME THIRTY OR FORTY YEARS PREVIOUSLY HE HAD BEEN SENIOR TO COLONEL F.\u201d \u00b7 arrested, and after the preliminaries of a court-martial \u201cColonel D'Arcy thought better of it, made his apologies, was released, and ever after furnished his report\u201d \u00b7 Porter names him in a footnote; the narrative calls him only Colonel D.",
+    POR, PORL)
+rec("Robert D'Arcy",
+    "AND AN AGE THAT DOES NOT FIT THE TREE \u00b7 the Brigade-Major calls him \u201cAN OLD MAN BEYOND SIXTY\u201d at Flushing in AUGUST 1809, which puts his birth BEFORE ABOUT 1749 \u00b7 THE FAMILY TREE SAYS 1751, which would have made him fifty-eight that summer \u00b7 this is an eyewitness impression recorded by one officer and printed eighty years later, NOT A REGISTER, and it is graded accordingly \u2014 but it is the second thing this archive has found that sits badly with 1751, and the tree's 1751 is itself only arithmetic from an age on a burial register",
+    POR, PORL)
+
 # --- the Colonial Office List for 1877, read 11 October 2026 ---------------
 # A full biographical notice, official and free. One editorial choice is
 # recorded here: the 1877 entry describes the Marabout invasion in racial
