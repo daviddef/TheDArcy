@@ -4248,6 +4248,20 @@
         "falklands",
         "archive-org"
       ]
+    },
+    {
+      "src": "The Colonial Office List for 1883 and 1889",
+      "url": "https://archive.org/details/colonial-office-list-1883",
+      "what": "A death or retirement notice for George Abbas Kooli D'Arcy, who died in Devon in 1885",
+      "when": "11 Oct 2026",
+      "outcome": "empty",
+      "got": "**He is in neither, and that is what retirement should look like.** Both volumes were downloaded entire — 2.4 MB and 3.0 MB of text — and searched for «Kooli». **Nothing in either.** He retired in 1876 and the Colonial Office List carries serving officers and the recently retired, so by 1883 he had dropped out of it. **The 1877 volume caught him in the last year it could.** No death notice is to be had from this source, and his death in Devon in 1885 still rests on the GRO index alone.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
