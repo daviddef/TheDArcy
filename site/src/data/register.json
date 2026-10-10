@@ -1,15 +1,15 @@
 {
-"entries": 888,
+"entries": 893,
 "distinct": 597,
-"records": 415,
+"records": 420,
 "tree": 473,
 "grafted": 98,
-"linked": 879,
+"linked": 884,
 "surnames": 206,
 "groups": [
 {
 "surname": "D'ARCY",
-"n": 177,
+"n": 182,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -268,6 +268,34 @@
 "says": "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 · “Colonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia” — gazetted in the same sentence as the new Governor of Hong Kong",
 "source": "record · The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861",
 "link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "HIS WHOLE CAREER, IN THE COLONIAL OFFICE'S OWN WORDS · “adjutant of the 94th regiment for three years, IN WHICH CORPS HE SERVED 16 YEARS · AUTHOR OF A WORK ON ‘LIGHT INFANTRY DRILL’ · commanded the 3rd West India regiment for several years · served in the SOUTHERN MAHRATTA AND SAWANT-WARREE CAMPAIGN, E.I., 1845-6, UNDER BRIGADIER OUTRAM · was AIDE-DE-CAMP AND ASSISTANT PRIVATE SECRETARY TO FIVE SUCCESSIVE GOVERNORS OF BOMBAY, and also to General Sir Willoughby Cotton when he commanded the Bombay army · SOLD OUT IN 1858” — and he wrote a book",
+"source": "record · The Colonial Office List for 1877, 16th Publication, biographical notices — Internet Archive colonial-office-list-1877",
+"link": "https://archive.org/details/colonial-office-list-1877",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "GOVERNOR AND COMMANDER-IN-CHIEF OF THE GAMBIA, JUNE 1859, and what he did there · “organised a successful expedition against the powerful robber-king of BADDIBOO, on which occasion he received THE THANKS OF THE SECRETARY OF STATE · commanded the Gambia militia artillery in the field, and was present at THE BATTLE OF SABBA, 21ST FEB. 1861” · he left the Gambia in JANUARY 1867",
+"source": "record · The Colonial Office List for 1877, 16th Publication, biographical notices — Internet Archive colonial-office-list-1877",
+"link": "https://archive.org/details/colonial-office-list-1877",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "TUBABECOLONG, 1866, AND A VICTORIA CROSS WON BESIDE HIM · when Marabout forces invaded the ceded mile and besieged a British town, he embarked at FORTY-EIGHT HOURS' NOTICE and carried their entrenched position · TWO OFFICERS WERE KILLED AT HIS SIDE, Lieutenants Kelly and Jenkins of the 4th West India Regiment, with four soldiers, two volunteers, four of the native contingent and 61 of all ranks badly wounded · “PRIVATE SAMUEL HODGE, WHO FOLLOWED COLONEL D'ARCY THROUGH THE STOCKADE, RECEIVED THE VICTORIA CROSS” — Hodge was among the first black soldiers to be awarded it · on leaving, the European merchants gave him an address and a SWORD OF HONOUR WORTH £120, “for devoted bravery at the storming of Tubabecolong”",
+"source": "record · The Colonial Office List for 1877, 16th Publication, biographical notices — Internet Archive colonial-office-list-1877",
+"link": "https://archive.org/details/colonial-office-list-1877",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "GOVERNOR OF THE FALKLAND ISLANDS, 1870 · RETIRED, 1876 · the Colonial Office's own list of Falkland governors runs “W. F. C. Robinson, 1866 · COLONEL D'ARCY, 1870 · T. F. Callaghan, 1876”, and its list of Gambia governors “1852 Colonel L. S. O'Connor · 1859 COLONEL G. A. K. D'ARCY · 1866 Admiral C. G. E. Patey” — TWO COLONIES AND AN OCEAN APART, confirmed from the department that appointed him",
+"source": "record · The Colonial Office List for 1877, 16th Publication, biographical notices — Internet Archive colonial-office-list-1877",
+"link": "https://archive.org/details/colonial-office-list-1877",
 "kind": "record"
 },
 {
@@ -751,6 +779,13 @@
 "says": "baptised WESTMINSTER, 16 OCTOBER 1820 · father JOSEPH D'ARCY · mother CATHERINE GEORGIANA · WEST is his mother's maiden surname, standing as his middle name",
 "source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
 "link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "HIS BROTHER WAS IN BOMBAY WHEN HE MARRIED THERE · George Abbas Kooli D'Arcy was aide-de-camp and assistant private secretary to five successive GOVERNORS OF BOMBAY and served in the Southern Mahratta campaign of 1845-6 · Robert West married ANNIE HEWISH ADAMS AT BOMBAY ON 20 JANUARY 1846 · THIS IS AN OBSERVATION AND NOT A RECORD OF ANYTHING: no source yet places the two brothers in the same room, only in the same presidency in the same months",
+"source": "record · The Colonial Office List for 1877, 16th Publication, biographical notices — Internet Archive colonial-office-list-1877",
+"link": "https://archive.org/details/colonial-office-list-1877",
 "kind": "record"
 },
 {

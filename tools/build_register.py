@@ -837,6 +837,30 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- the Colonial Office List for 1877, read 11 October 2026 ---------------
+# A full biographical notice, official and free. One editorial choice is
+# recorded here: the 1877 entry describes the Marabout invasion in racial
+# language of its period. The military facts are given below and that phrase
+# is not reproduced, because nothing in this family's history turns on it.
+COL77 = ("record \u00b7 The Colonial Office List for 1877, 16th Publication, "
+         "biographical notices \u2014 Internet Archive colonial-office-list-1877")
+COL77L = "https://archive.org/details/colonial-office-list-1877"
+rec("George Abbas Kooli D'Arcy",
+    "HIS WHOLE CAREER, IN THE COLONIAL OFFICE'S OWN WORDS \u00b7 \u201cadjutant of the 94th regiment for three years, IN WHICH CORPS HE SERVED 16 YEARS \u00b7 AUTHOR OF A WORK ON \u2018LIGHT INFANTRY DRILL\u2019 \u00b7 commanded the 3rd West India regiment for several years \u00b7 served in the SOUTHERN MAHRATTA AND SAWANT-WARREE CAMPAIGN, E.I., 1845-6, UNDER BRIGADIER OUTRAM \u00b7 was AIDE-DE-CAMP AND ASSISTANT PRIVATE SECRETARY TO FIVE SUCCESSIVE GOVERNORS OF BOMBAY, and also to General Sir Willoughby Cotton when he commanded the Bombay army \u00b7 SOLD OUT IN 1858\u201d \u2014 and he wrote a book",
+    COL77, COL77L)
+rec("George Abbas Kooli D'Arcy",
+    "GOVERNOR AND COMMANDER-IN-CHIEF OF THE GAMBIA, JUNE 1859, and what he did there \u00b7 \u201corganised a successful expedition against the powerful robber-king of BADDIBOO, on which occasion he received THE THANKS OF THE SECRETARY OF STATE \u00b7 commanded the Gambia militia artillery in the field, and was present at THE BATTLE OF SABBA, 21ST FEB. 1861\u201d \u00b7 he left the Gambia in JANUARY 1867",
+    COL77, COL77L)
+rec("George Abbas Kooli D'Arcy",
+    "TUBABECOLONG, 1866, AND A VICTORIA CROSS WON BESIDE HIM \u00b7 when Marabout forces invaded the ceded mile and besieged a British town, he embarked at FORTY-EIGHT HOURS' NOTICE and carried their entrenched position \u00b7 TWO OFFICERS WERE KILLED AT HIS SIDE, Lieutenants Kelly and Jenkins of the 4th West India Regiment, with four soldiers, two volunteers, four of the native contingent and 61 of all ranks badly wounded \u00b7 \u201cPRIVATE SAMUEL HODGE, WHO FOLLOWED COLONEL D'ARCY THROUGH THE STOCKADE, RECEIVED THE VICTORIA CROSS\u201d \u2014 Hodge was among the first black soldiers to be awarded it \u00b7 on leaving, the European merchants gave him an address and a SWORD OF HONOUR WORTH \u00a3120, \u201cfor devoted bravery at the storming of Tubabecolong\u201d",
+    COL77, COL77L)
+rec("George Abbas Kooli D'Arcy",
+    "GOVERNOR OF THE FALKLAND ISLANDS, 1870 \u00b7 RETIRED, 1876 \u00b7 the Colonial Office's own list of Falkland governors runs \u201cW. F. C. Robinson, 1866 \u00b7 COLONEL D'ARCY, 1870 \u00b7 T. F. Callaghan, 1876\u201d, and its list of Gambia governors \u201c1852 Colonel L. S. O'Connor \u00b7 1859 COLONEL G. A. K. D'ARCY \u00b7 1866 Admiral C. G. E. Patey\u201d \u2014 TWO COLONIES AND AN OCEAN APART, confirmed from the department that appointed him",
+    COL77, COL77L)
+rec("Robert West D'Arcy",
+    "HIS BROTHER WAS IN BOMBAY WHEN HE MARRIED THERE \u00b7 George Abbas Kooli D'Arcy was aide-de-camp and assistant private secretary to five successive GOVERNORS OF BOMBAY and served in the Southern Mahratta campaign of 1845-6 \u00b7 Robert West married ANNIE HEWISH ADAMS AT BOMBAY ON 20 JANUARY 1846 \u00b7 THIS IS AN OBSERVATION AND NOT A RECORD OF ANYTHING: no source yet places the two brothers in the same room, only in the same presidency in the same months",
+    COL77, COL77L)
+
 # --- the Army Lists of the American War, read 11 October 2026 -------------
 # The 1866 tradition's first checkable claim, tested in the official lists of
 # general and field officers. The two SONS are both there and both match. The

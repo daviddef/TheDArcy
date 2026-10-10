@@ -4233,6 +4233,21 @@
         "army-list",
         "archive-org"
       ]
+    },
+    {
+      "src": "The Colonial Office List for 1877 — biographical notices",
+      "url": "https://archive.org/details/colonial-office-list-1877",
+      "what": "George Abbas Kooli D'Arcy's career, from the department that appointed him",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**A full official biography, free, in a 2.2 MB text file.** «Adjutant of the 94th regiment for three years, **in which corps he served 16 years**; **author of a work on 'Light Infantry Drill'**; commanded the 3rd West India regiment for several years; served in the **Southern Mahratta and Sawant-Warree campaign, E.I., 1845–6, under Brigadier Outram**; was **aide-de-camp and assistant private secretary to five successive governors of Bombay**, and also to General Sir Willoughby Cotton when he commanded the Bombay army; **sold out in 1858**; appointed governor and commander-in-chief of the Gambia, **June 1859**; organised a successful expedition against the robber-king of **Baddiboo**, receiving the thanks of the Secretary of State; commanded the Gambia militia artillery in the field and was present at the **battle of Sabba, 21 February 1861**.»\n\n**And then Tubabecolong.** In 1866 he embarked at **48 hours' notice** to meet a Marabout invasion and carried their entrenched position. **Two officers were killed at his side** — Lieutenants Kelly and Jenkins of the 4th West India Regiment — with four soldiers, two volunteers, four of the native contingent and 61 of all ranks badly wounded. «**Private Samuel Hodge, who followed Colonel D'Arcy through the stockade, received the Victoria Cross.**» Hodge was among the first black soldiers awarded it. Leaving in January 1867 he was given **a sword of honour worth £120**. **Governor of the Falkland Islands 1870, retired 1876.**\n\nOne editorial note: the 1877 entry describes the invaders in the racial language of its period, which is not reproduced here because nothing in this family's history turns on it.",
+      "href": "/worklist",
+      "tags": [
+        "darcy",
+        "gambia",
+        "falklands",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
