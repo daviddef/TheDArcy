@@ -1,15 +1,15 @@
 {
-"entries": 879,
+"entries": 885,
 "distinct": 597,
-"records": 406,
+"records": 412,
 "tree": 473,
 "grafted": 98,
-"linked": 870,
+"linked": 876,
 "surnames": 206,
 "groups": [
 {
 "surname": "D'ARCY",
-"n": 168,
+"n": 174,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -268,6 +268,34 @@
 "says": "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 · “Colonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia” — gazetted in the same sentence as the new Governor of Hong Kong",
 "source": "record · The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861",
 "link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "“THE PRESENT REPRESENTATIVE OF THE FAMILY · Colonel George Abbas Kooli d'Arcy, Governor and Commander-in-Chief of the Gambia, who, THROUGH HIS MOTHER, CLAIMS DESCENT FROM EDWARD III (vide Burke's Royal Families)” · his mother was Catherine Georgiana West · arms given as “Azure, semee of cross crosslets, and three cinquefoils, argent”, crest “a spear broken or, banded gules” — a CLAIM reported in 1866, not a pedigree proved",
+"source": "record · Notes and Queries, 3rd Series, Vol. X, 1 December 1866, p.432 — read in the open scans, Internet Archive notesqueries310unse",
+"link": "https://archive.org/details/notesqueries310unse",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "A SECOND GOVERNORSHIP, AND THE ARCHIVE HAD NEITHER · “Colonel George Abbas Kooli D'Arcy: GOVERNOR OF THE FALKLAND ISLANDS 1870-1876” · he is listed again among colonial governors after Luke Smythe O'Connor — so the Gambia from 1859 and the Falklands from 1870, two colonies and the width of the Atlantic between them",
+"source": "record · a Falkland Islands bibliography and Henige, Colonial Governors from the Fifteenth Century to the Present, both indexed in the Internet Archive's full text",
+"link": "https://archive.org/search?query=%22Abbas+Kooli%22&sin=TXT",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "ADJUTANT, 94TH FOOT, in the monthly Army Lists of 1840 · “Adj. Geo. Abbas Kooli [D']Arcy” in both the January-June and July-December volumes — THESE ARE THE “MILITARY RECORDS FOR 1840 AND 1841” this archive had as a bare mention and had never identified",
+"source": "record · The Army List [British Army] 1840, monthly, January-June and July-December",
+"link": "https://archive.org/details/monthly-army-list-1840-jan",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "HIS CAPTAINCY PRINTED TWICE · “Lieutenant George Abbas Kooli D'Arcy to be Captain, vice Davenport” also appears in a trade paper — an independent printing of the Gazette notice of November 1846",
+"source": "record · The Military Magazine, Vol. 1, No. II, December 1846",
+"link": "https://archive.org/details/g5546_201912",
 "kind": "record"
 },
 {
@@ -674,6 +702,20 @@
 "says": "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
 "source": "record · London Evening Standard and Morning Herald, 25 June 1862",
 "link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“DIED COMMANDANT OF CHATHAM IN 1827” · the post, not just the rank, in a printed query of 1866 asking who his grandfather was",
+"source": "record · Notes and Queries, 3rd Series, Vol. X, 1 December 1866, p.432 — read in the open scans, Internet Archive notesqueries310unse",
+"link": "https://archive.org/details/notesqueries310unse",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "THE FAMILY'S OWN TRADITION, PRINTED IN 1866 AND LABELLED AS TRADITION BY THE MAN WHO PRINTED IT · “Colonel d'Arcy, A BRANCH OF THE HOLDERNESS FAMILY FROM YORKSHIRE, commanded a regiment during the American War. He was KILLED IN ACTION, leaving two sons: 1. Robert, Major-General R.E. 2. CONSTANTINE, Lieut. R.A., DIED S.P. On his voyage to America Colonel d'Arcy and his family were WRECKED. They lost all their baggage and papers, which, it is believed, would have proved their noble descent.” · THIS IS LORE AND IS GRADED AS LORE: the correspondent was ASKING for the grandfather because he could not prove it, the excuse for the missing evidence is inside the story, and a search of the Internet Archive's full text finds NO REPLY ever printed. It is the oldest version of the Yorkshire claim this archive has, and it is 159 years older than the family tree that states it as fact",
+"source": "record · Notes and Queries, 3rd Series, Vol. X, 1 December 1866, p.432 — read in the open scans, Internet Archive notesqueries310unse",
+"link": "https://archive.org/details/notesqueries310unse",
 "kind": "record"
 },
 {

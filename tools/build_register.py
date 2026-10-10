@@ -837,6 +837,38 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- Notes and Queries, 1 December 1866, found 11 October 2026 -------------
+# A query signed by a correspondent asking who Robert D'Arcy's grandfather
+# was, printed with the family's own tradition attached. It is the EARLIEST
+# KNOWN STATEMENT of the Yorkshire/Holderness descent the modern tree repeats
+# as fact - and in 1866 the family already said the proof had been lost in a
+# shipwreck. Nobody answered it: a full-text search of the Internet Archive
+# for "Commandant of Chatham" returns this query and no reply.
+NQ = ("record \u00b7 Notes and Queries, 3rd Series, Vol. X, 1 December 1866, p.432 "
+      "\u2014 read in the open scans, Internet Archive notesqueries310unse")
+NQL = "https://archive.org/details/notesqueries310unse"
+rec("Robert D'Arcy",
+    "\u201cDIED COMMANDANT OF CHATHAM IN 1827\u201d \u00b7 the post, not just the rank, in a printed query of 1866 asking who his grandfather was",
+    NQ, NQL)
+rec("Robert D'Arcy",
+    "THE FAMILY'S OWN TRADITION, PRINTED IN 1866 AND LABELLED AS TRADITION BY THE MAN WHO PRINTED IT \u00b7 \u201cColonel d'Arcy, A BRANCH OF THE HOLDERNESS FAMILY FROM YORKSHIRE, commanded a regiment during the American War. He was KILLED IN ACTION, leaving two sons: 1. Robert, Major-General R.E. 2. CONSTANTINE, Lieut. R.A., DIED S.P. On his voyage to America Colonel d'Arcy and his family were WRECKED. They lost all their baggage and papers, which, it is believed, would have proved their noble descent.\u201d \u00b7 THIS IS LORE AND IS GRADED AS LORE: the correspondent was ASKING for the grandfather because he could not prove it, the excuse for the missing evidence is inside the story, and a search of the Internet Archive's full text finds NO REPLY ever printed. It is the oldest version of the Yorkshire claim this archive has, and it is 159 years older than the family tree that states it as fact",
+    NQ, NQL)
+rec("George Abbas Kooli D'Arcy",
+    "\u201cTHE PRESENT REPRESENTATIVE OF THE FAMILY \u00b7 Colonel George Abbas Kooli d'Arcy, Governor and Commander-in-Chief of the Gambia, who, THROUGH HIS MOTHER, CLAIMS DESCENT FROM EDWARD III (vide Burke's Royal Families)\u201d \u00b7 his mother was Catherine Georgiana West \u00b7 arms given as \u201cAzure, semee of cross crosslets, and three cinquefoils, argent\u201d, crest \u201ca spear broken or, banded gules\u201d \u2014 a CLAIM reported in 1866, not a pedigree proved",
+    NQ, NQL)
+rec("George Abbas Kooli D'Arcy",
+    "A SECOND GOVERNORSHIP, AND THE ARCHIVE HAD NEITHER \u00b7 \u201cColonel George Abbas Kooli D'Arcy: GOVERNOR OF THE FALKLAND ISLANDS 1870-1876\u201d \u00b7 he is listed again among colonial governors after Luke Smythe O'Connor \u2014 so the Gambia from 1859 and the Falklands from 1870, two colonies and the width of the Atlantic between them",
+    "record \u00b7 a Falkland Islands bibliography and Henige, Colonial Governors from the Fifteenth Century to the Present, both indexed in the Internet Archive's full text",
+    "https://archive.org/search?query=%22Abbas+Kooli%22&sin=TXT")
+rec("George Abbas Kooli D'Arcy",
+    "ADJUTANT, 94TH FOOT, in the monthly Army Lists of 1840 \u00b7 \u201cAdj. Geo. Abbas Kooli [D']Arcy\u201d in both the January-June and July-December volumes \u2014 THESE ARE THE \u201cMILITARY RECORDS FOR 1840 AND 1841\u201d this archive had as a bare mention and had never identified",
+    "record \u00b7 The Army List [British Army] 1840, monthly, January-June and July-December",
+    "https://archive.org/details/monthly-army-list-1840-jan")
+rec("George Abbas Kooli D'Arcy",
+    "HIS CAPTAINCY PRINTED TWICE \u00b7 \u201cLieutenant George Abbas Kooli D'Arcy to be Captain, vice Davenport\u201d also appears in a trade paper \u2014 an independent printing of the Gazette notice of November 1846",
+    "record \u00b7 The Military Magazine, Vol. 1, No. II, December 1846",
+    "https://archive.org/details/g5546_201912")
+
 # --- Berta Ruck's Ancestral Voices, and the Ruck marriage, 11 October 2026 --
 # The GEDCOM notes quote "by Berta Ruck" and nobody had ever asked who she
 # was. She was a descendant: a D'Arcy daughter married her father in 1877,

@@ -4173,6 +4173,51 @@
         "ruck",
         "freebmd"
       ]
+    },
+    {
+      "src": "Internet Archive full text — Notes and Queries, 3rd Series, Vol. X (1866)",
+      "url": "https://archive.org/details/notesqueries310unse",
+      "what": "Where the Yorkshire and Holderness descent came from, and whether anyone ever proved it",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**The oldest version of the claim this archive disputes, and the family admitting in 1866 that they could not prove it.** A query on page 432 of 1 December 1866 asks «who was the grandfather of **Major-General Robert d'Arcy, R.E., who died Commandant of Chatham in 1827**?» and prints what it calls FAMILY TRADITION: «Colonel d'Arcy, **a branch of the Holderness family from Yorkshire**, commanded a regiment during the American War. He was **killed in action**, leaving two sons: 1. Robert, Major-General R.E. 2. **Constantine, Lieut. R.A., died s.p.** On his voyage to America Colonel d'Arcy and his family were **wrecked. They lost all their baggage and papers, which, it is believed, would have proved their noble descent.**»\n\n**Three things make this worth more than the tradition it carries.** It is **159 years older than the family tree** that states Yorkshire as fact. The man printing it was **asking**, not asserting — he wanted the grandfather and did not have him. And the excuse for the missing evidence is **inside the story**, which is the shape a pedigree takes when it cannot be documented.\n\n**NOBODY ANSWERED.** A full-text search for «Commandant of Chatham» across everything the Internet Archive holds returns 144 hits, and the only one in Notes and Queries is this query. **The question has been open in print since 1866.**",
+      "href": "/hornby",
+      "tags": [
+        "darcy",
+        "holderness",
+        "notes-and-queries",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Internet Archive full text — colonial governor lists and a Falklands bibliography",
+      "url": "https://archive.org/search?query=%22Abbas+Kooli%22&sin=TXT",
+      "what": "What became of George Abbas Kooli D'Arcy after the Gambia appointment of 1859",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**He governed a second colony and this archive knew of neither.** A Falkland Islands bibliography carries «Colonel George Abbas Kooli D'Arcy: **Governor of the Falkland Islands 1870–1876**», and Henige's *Colonial Governors from the Fifteenth Century to the Present* lists him among the Gambia governors after Luke Smythe O'Connor. **The Gambia from 1859, the Falklands from 1870.**\n\nThe same search identified the «military records for 1840 and 1841» this archive had as a bare mention: the **monthly Army Lists of 1840**, which print «Adj. Geo. Abbas Kooli [D']Arcy» — he was **Adjutant** of the 94th, which is what the Gazette meant by «Ensign and Adjutant». **The Military Magazine of December 1846** prints his captaincy independently of the Gazette.",
+      "href": "/worklist",
+      "tags": [
+        "darcy",
+        "falklands",
+        "gambia",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "The Gazette — «Arcy», 1775–1790 and 1814–1830",
+      "url": "https://www.thegazette.co.uk/all-notices/notice?text=Arcy&start-publish-date=1775-01-01&end-publish-date=1790-12-31",
+      "what": "Two things the 1866 tradition and the 1972 plate list assert — a Colonel D'Arcy killed in the American War, and a C.B. for Robert",
+      "when": "11 Oct 2026",
+      "outcome": "null",
+      "got": "**Neither found, and neither disproved, and the difference matters.** For the American War: the Gazette returns **nine notices** mentioning «Arcy» across 1775–1790, and the officers in them are a **Brevet Major Francis D'Arcy** and an **Ensign John Pomeroy D'Arcy** — no colonel commanding a regiment. For the C.B.: «Arcy» across 1815–1830 returns 46 notices and «Darcy» across 1814–1828 returns 23, and none of the ones read names Robert D'Arcy of the Engineers or any Order of the Bath award to him.\n\n**Both are weak tests and are filed as weak.** This archive has watched the Gazette's OCR turn this surname into «D'Aroy» and the forename into «Qeorge» and «Greorge» within the same career, so a surname search is a sieve; and paging past the first ten results by URL does not work on that site, so only the first page of each was read. **A Colonel D'Arcy who commanded a regiment and died in action would be an easy man to find in the Army Lists, and that is the test worth running.**",
+      "href": "/hornby",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "gazette",
+        "holderness"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
