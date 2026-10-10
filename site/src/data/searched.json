@@ -4338,6 +4338,21 @@
         "saniger",
         "archive-org"
       ]
+    },
+    {
+      "src": "Staffordshire Parish Register Society — the printed Madeley register",
+      "url": "https://archive.org/details/staffordshirepar0000mrnw",
+      "what": "The family of William Sneyd, weaver of Madeley — father of Samuel, and the start of this archive's Staffordshire line",
+      "when": "11 Oct 2026",
+      "outcome": "blocked",
+      "got": "**The register is printed, the volume is found, and it will not open.** The Staffordshire Parish Register Society printed Madeley; the volume sits on the Internet Archive as `staffordshirepar0000mrnw` (1960) and is **lending-restricted** — its text returns **HTTP 401** and a borrow needs an account this archive will not make.\n\n**Its public search snippets still gave something.** One reads «13 **MARGARET d. of WILLIAM SNEYD, WEAVER** . 26 John Bourne 1 Margaret d. of William Sneyd 6 Thomas s. of…», another «bapt. July 19 **THOMAS s. of WILLIAM SNEYD of GT. MADELEY**». **The word «weaver» is the match**: this archive already holds Samuel Sneyd baptised at Madeley All Saints on 4 June 1781, father **William Sneyd, weaver**.\n\n**What this does NOT establish.** The snippets **carry no years**. A Margaret and a Thomas cannot be placed as Samuel's siblings on that basis — only as children of a William Sneyd, weaver, in the same parish. **It is a located source, not a read one.**\n\n**And one thing it settles for free: MADELEY HAS TWO HALVES.** The register distinguishes «Gt. Madeley» from «L. Madeley». This archive has recorded «Madeley All Saints» and never asked which township — the same shape as the two Ingouvilles and the two Kingswoods.",
+      "href": "/sneyds",
+      "tags": [
+        "sneyd",
+        "madeley",
+        "staffordshire",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

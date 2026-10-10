@@ -837,6 +837,23 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- the Madeley register, located but not read, 11 October 2026 ---------
+# The Staffordshire Parish Register Society printed Madeley. The volume is on
+# the Internet Archive and is LENDING-RESTRICTED: the text returns 401 and a
+# borrow needs an account this archive will not make. What is below came out
+# of the PUBLIC SEARCH SNIPPETS, which is all that can be had for nothing, and
+# it is recorded with that limit stated because the snippets CARRY NO YEARS.
+SPRS = ("record \u00b7 Staffordshire Parish Register Society, the printed Madeley "
+        "register \u2014 Internet Archive staffordshirepar0000mrnw, lending-restricted, "
+        "read only through its public search snippets")
+SPRSL = "https://archive.org/details/staffordshirepar0000mrnw"
+rec("William Sneyd",
+    "HE IS IN THE PRINTED MADELEY REGISTER, AND DESCRIBED AS THIS ARCHIVE DESCRIBES HIM \u00b7 a public search snippet of the Staffordshire Parish Register Society's Madeley volume reads \u201c13 MARGARET D. OF WILLIAM SNEYD, WEAVER . 26 John Bourne 1 Margaret d. of William Sneyd 6 Thomas s. of\u2026\u201d, and another \u201cbapt. July 19 THOMAS S. OF WILLIAM SNEYD OF GT. MADELEY\u201d \u00b7 THE WORD \u2018WEAVER\u2019 IS THE MATCH: this archive already had Samuel Sneyd baptised at Madeley All Saints on 4 June 1781, father WILLIAM SNEYD, WEAVER \u00b7 CAUTION, AND IT IS NOT A SMALL ONE: the snippets carry NO YEARS, so a Margaret and a Thomas cannot yet be placed as Samuel's sisters and brother, only as children of a William Sneyd, weaver, in the same parish \u00b7 the volume itself returns 401 without a borrow",
+    SPRS, SPRSL)
+rec("Samuel Sneyd",
+    "AND MADELEY HAS TWO HALVES, WHICH NOBODY HERE HAS NOTED \u00b7 the printed register distinguishes GREAT MADELEY from LITTLE MADELEY \u2014 \u201cLeak of L. Madeley\u201d against \u201cWilliam Sneyd of Gt. Madeley\u201d \u00b7 this archive records his baptism at \u201cMadeley All Saints\u201d and has never said which township the family lived in \u00b7 A PLACE THIS ARCHIVE HAS BEEN TREATING AS ONE IS TWO, which is the same trap as the two Ingouvilles and the two Kingswoods",
+    SPRS, SPRSL)
+
 # --- Oswestry in print, and two Queensland almanacs, 11 October 2026 ------
 # The same method as the D'Arcy run, turned on the Sneyd/Oliver and Wakefield
 # lines at David's asking.

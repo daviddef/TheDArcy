@@ -1,10 +1,10 @@
 {
-"entries": 906,
+"entries": 908,
 "distinct": 597,
-"records": 433,
+"records": 435,
 "tree": 473,
 "grafted": 98,
-"linked": 897,
+"linked": 899,
 "surnames": 206,
 "groups": [
 {
@@ -1324,7 +1324,7 @@
 },
 {
 "surname": "SNEYD",
-"n": 168,
+"n": 170,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -1601,6 +1601,13 @@
 },
 {
 "name": "Samuel Sneyd",
+"says": "AND MADELEY HAS TWO HALVES, WHICH NOBODY HERE HAS NOTED · the printed register distinguishes GREAT MADELEY from LITTLE MADELEY — “Leak of L. Madeley” against “William Sneyd of Gt. Madeley” · this archive records his baptism at “Madeley All Saints” and has never said which township the family lived in · A PLACE THIS ARCHIVE HAS BEEN TREATING AS ONE IS TWO, which is the same trap as the two Ingouvilles and the two Kingswoods",
+"source": "record · Staffordshire Parish Register Society, the printed Madeley register — Internet Archive staffordshirepar0000mrnw, lending-restricted, read only through its public search snippets",
+"link": "https://archive.org/details/staffordshirepar0000mrnw",
+"kind": "record"
+},
+{
+"name": "Samuel Sneyd",
 "says": "HIS MARRIAGE IS NOT IN THE PRINTED OSWESTRY REGISTER, AND THAT PROVES NOTHING · the eight printed St Asaph volumes carry 581 Oswestry marriages, and the only Sneyds in any of them are GENTRY SNEYDS OF BISHTON, Staffordshire, with no connection shown to this family · BUT THE PRINTED MARRIAGE RUN ENDS IN 1808 and the marriage to Elizabeth Oliver is placed about 1809 — THE TRANSCRIPT STOPS ONE YEAR SHORT, so the absence is coverage and not evidence",
 "source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
 "link": "https://archive.org/details/shropshireparish07asapshro",
@@ -1702,6 +1709,13 @@
 "says": "baptised Madeley All Saints, 12 September 1742 · father William Sneyd — and a William son of William buried there 29 September 1744",
 "source": "record · FreeREG, Madeley All Saints parish register",
 "link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "William Sneyd",
+"says": "HE IS IN THE PRINTED MADELEY REGISTER, AND DESCRIBED AS THIS ARCHIVE DESCRIBES HIM · a public search snippet of the Staffordshire Parish Register Society's Madeley volume reads “13 MARGARET D. OF WILLIAM SNEYD, WEAVER . 26 John Bourne 1 Margaret d. of William Sneyd 6 Thomas s. of…”, and another “bapt. July 19 THOMAS S. OF WILLIAM SNEYD OF GT. MADELEY” · THE WORD ‘WEAVER’ IS THE MATCH: this archive already had Samuel Sneyd baptised at Madeley All Saints on 4 June 1781, father WILLIAM SNEYD, WEAVER · CAUTION, AND IT IS NOT A SMALL ONE: the snippets carry NO YEARS, so a Margaret and a Thomas cannot yet be placed as Samuel's sisters and brother, only as children of a William Sneyd, weaver, in the same parish · the volume itself returns 401 without a borrow",
+"source": "record · Staffordshire Parish Register Society, the printed Madeley register — Internet Archive staffordshirepar0000mrnw, lending-restricted, read only through its public search snippets",
+"link": "https://archive.org/details/staffordshirepar0000mrnw",
 "kind": "record"
 },
 {
