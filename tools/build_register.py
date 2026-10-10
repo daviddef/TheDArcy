@@ -837,6 +837,36 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- Berta Ruck's Ancestral Voices, and the Ruck marriage, 11 October 2026 --
+# The GEDCOM notes quote "by Berta Ruck" and nobody had ever asked who she
+# was. She was a descendant: a D'Arcy daughter married her father in 1877,
+# and in 1972 she published the family's portraits. The book is in copyright
+# and lending-restricted, so what is recorded here is its LIST OF PLATES,
+# which the item page shows without borrowing, and the marriage behind it.
+AV = ("record \u00b7 Berta Ruck, Ancestral Voices (London, Hutchinson, 1972), "
+      "list of illustrations, plates between pp.128-129 \u2014 Internet Archive "
+      "ancestralvoices00ruck_0, catalogued under the subject \u201cDorsey family\u201d")
+AVL = "https://archive.org/details/ancestralvoices00ruck_0"
+FBMD = "https://www.freebmd.org.uk/"
+rec("Elizabeth Eleanor D'Arcy",
+    "MARRIED ARTHUR ASHLEY RUCK \u00b7 PENZANCE, September quarter 1877 \u00b7 GRO volume 5c page 381, both parties indexed to the same page \u00b7 the quarter is marked >99% transcribed \u2014 THE TREE ASSERTED THE RUCK CONNECTION AND NOTHING HAD EVER DOCUMENTED IT",
+    "record \u00b7 FreeBMD, GRO index of marriages, Sep quarter 1877, 5c 381", FBMD)
+rec("Arthur Ashley Ruck",
+    "LIEUTENANT PROMOTED TO CAPTAIN, 2nd BATTALION 8th (THE KING'S) REGIMENT, in the Afghan war of 1878-1881 \u00b7 he married Elizabeth Eleanor D'Arcy at Penzance the autumn before it \u00b7 a Ruck child, AMY R., is indexed as BORN IN INDIA IN 1879 and living in Lancashire at the 1881 census",
+    "record \u00b7 The British in Afghanistan 1878-1881, and the 1881 census surname index of individuals born in India, both indexed by FIBIS", "https://fibis.ourarchives.online/")
+rec("Annie Adams",
+    "HER MIDDLE NAME, WHICH THE TREE COULD NOT DECIDE \u00b7 the family tree hedged \u201cAnne Heevish or Hewish Adams\u201d \u00b7 THREE RECORDS NOW AGREE AND NONE OF THEM COPIED THE OTHERS: the India Office ecclesiastical return indexes her ANNE H ADAMS, the Gentleman's Magazine announcement ANNIE ADAMS, and the plate list of her great-niece's book names her ANNIE HEWISH D'ARCY, NEE ADAMS",
+    AV, AVL)
+rec("Robert D'Arcy",
+    "STYLED \u201cMAJOR-GENERAL ROBERT D'ARCY, R.E., C.B.\u201d in the plate list of a family book of 1972 \u00b7 THE C.B. IS NEW TO THIS ARCHIVE and is a caption written by a descendant, not an official list \u2014 it is a lead to test against the Gazette, not an honour this archive has documented",
+    AV, AVL)
+rec("Joseph D'Arcy",
+    "HIS PORTRAIT SURVIVES, with his wife's \u00b7 the plate list names \u201cColonel Joseph D'Arcy, R.A.\u201d and \u201cLady Catherine D'Arcy, nee West\u201d, and separately \u201cone of the Three Aunts D'Arcy in Persian dress BROUGHT HOME BY HER BROTHER JOSEPH\u201d \u2014 the Persian service that named his son is there in a photograph caption",
+    AV, AVL)
+rec("Jane D'Arcy",
+    "PHOTOGRAPHED WITH HER SISTERS \u00b7 the plate list calls them \u201cThe Three Aunts D'Arcy, Jane, Kate and Charlotte\u201d \u2014 the three daughters this archive follows to Sussex, named together in a caption by a descendant",
+    AV, AVL)
+
 # --- FIBIS, read 10 October 2026 ------------------------------------------
 # The Families in British India Society database is free, indexes India Office
 # material, and this archive had never opened it. The 1846 Bombay marriage

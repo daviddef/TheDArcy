@@ -4131,6 +4131,48 @@
         "nlw",
         "newspapers"
       ]
+    },
+    {
+      "src": "Internet Archive — full-text search, «Abbas Kooli»",
+      "url": "https://archive.org/details/ancestralvoices00ruck_0",
+      "what": "Anything in print on George Abbas Kooli D'Arcy, whose name is unique enough to survive OCR",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**329 hits, and the first is a book about this family that nobody here knew existed.** *Ancestral Voices*, by the novelist **BERTA RUCK** (1878–1978), London, Hutchinson, **1972**. Its list of illustrations — visible on the item page without borrowing — is a roll-call of this archive: «Major-General Robert D'Arcy, R.E., **C.B.**», «Jean D'Arcy, née Ward», «Colonel Joseph D'Arcy, R.A.», «Lady Catherine D'Arcy, née West», «The Three Aunts D'Arcy, **Jane, Kate and Charlotte**», one of those aunts «in Persian dress **brought home by her brother Joseph**», «**George Abbas Kooli D'Arcy**», «**Robert West D'Arcy**», «**Annie Hewish D'Arcy, née Adams**» — and then «Amy Darwin, née Ruck» and «**Charles Darwin**».\n\n**PORTRAITS OF NINE OF THESE PEOPLE WERE PRINTED IN 1972** and this archive had never cited the book. **It is catalogued under the subject «Dorsey family»**, which is a cataloguer's mangling of D'Arcy and is why no search for the surname has ever surfaced it. The GEDCOM notes quote «by Berta Ruck» and nobody had asked who she was.\n\nThe text is in copyright and lending-restricted, so only the plate list was read. **Borrowing needs an account and none was made.**",
+      "href": "/worklist",
+      "tags": [
+        "darcy",
+        "ruck",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "FreeBMD — marriages, Ruck and D'Arcy, 1840–1900",
+      "url": "https://www.freebmd.org.uk/cgi/search.pl",
+      "what": "Why a 1972 novelist had this family's photographs — whether a D'Arcy married a Ruck",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**One marriage, and it is the answer.** «RUCK, **Arthur Ashley** · Penzance · 5c 381» with spouse surname D'Arcy, and the reverse search returns «D'ARCY, **Elizabeth Eleanor** · Penzance · 5c 381» — **same volume, same page, September quarter 1877**, in a quarter FreeBMD marks **>99% transcribed**. Berta Ruck was born the following year. **The family tree asserted a Ruck connection; this is the first record of it.**\n\nFIBIS supplies the rest of the shape: **Arthur Ashley Ruck, Lieutenant promoted to Captain, 2nd Battalion 8th (The King's) Regiment, in the Afghan war of 1878–1881**, and a Ruck child **Amy R., born in India in 1879**, in Lancashire at the 1881 census. A soldier marries at Penzance in 1877, goes out to India, and his children are born there.\n\n**What is NOT established is whose daughter Elizabeth Eleanor was.** That she is Berta's mother is an inference from the date and her father's name, not a record, and it is not asserted here.",
+      "href": "/worklist",
+      "tags": [
+        "darcy",
+        "ruck",
+        "freebmd"
+      ]
+    },
+    {
+      "src": "FreeBMD — births, surname Ruck, mother's surname D'Arcy, 1878–1900",
+      "url": "https://www.freebmd.org.uk/cgi/search.pl",
+      "what": "Whether Berta Ruck's birth registration names her mother as a D'Arcy",
+      "when": "11 Oct 2026",
+      "outcome": "empty",
+      "got": "**A question the index cannot answer, and it was asked before that was checked.** The GRO birth index **does not carry the mother's maiden name until the September quarter of 1911**, so a mother's-surname search across 1878–1900 could only ever return nothing, whatever the truth. The zero is the shape of the index, not a fact about the family. **It is recorded so that nobody runs it again**, and because this archive has spent two days finding instruments that answer a different question from the one asked. Berta Ruck was in any case born in India, where an English registration would not exist at all.",
+      "href": "/worklist",
+      "ctl": "named",
+      "tags": [
+        "ruck",
+        "freebmd"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

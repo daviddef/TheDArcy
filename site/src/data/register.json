@@ -1,12 +1,1194 @@
 {
-"entries": 873,
-"distinct": 596,
-"records": 400,
+"entries": 879,
+"distinct": 597,
+"records": 406,
 "tree": 473,
 "grafted": 98,
-"linked": 864,
-"surnames": 205,
+"linked": 870,
+"surnames": 206,
 "groups": [
+{
+"surname": "D'ARCY",
+"n": 168,
+"rows": [
+{
+"name": "Audrey Dell D'Arcy",
+"says": "burial · 1 Nov 1929 – 1 Aug 2022, aged 92 · Centenary Memorial Gardens, Brisbane · plot GARDEN OF REFLECTION, Section E, Site 20 · the Audrey “Dell” Murdoch who married Kenneth Lindsay D'Arcy at Toowoomba in 1952",
+"source": "record · Find a Grave memorial 242573098 · Centenary Memorial Gardens, Brisbane",
+"link": "https://www.findagrave.com/memorial/242573098",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "death · aged 86 · Brighton district, Sussex, Q1 1876 · vol 2B p.164 — matching a birth of 10 Dec 1789",
+"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "death notice · “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86”",
+"source": "record · Horsham, Petworth, Midhurst and Steyning Express, 8 Feb 1876, p.2",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "death duty · grant year 1876 · Court of Probate · of Brighton, Sussex",
+"source": "record · Index to Death Duty Registers 1796-1903, TNA IR 27/396",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "census 1841 · aged 39 · Western Buildings, Brighton",
+"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "census 1851 · aged 50 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
+"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · the exact date the Horsham paper printed a fortnight later",
+"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Catherine Lucy Jane D'Arcy",
+"says": "baptism · 23 January 1832, Milford · father JOSEPH, “Lt Col RA of MILFORD HOUSE”, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Charlotte Cathcart D'Arcy",
+"says": "marriage · 1859, PARRAMATTA, New South Wales · to ROBERT MEAD PEARSON · registration 2618",
+"source": "record · New South Wales Marriages 1788-1945",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "born 29 April 1825 · baptised Chatham 31 March 1826 · father GEORGE PITT D'ARCY, Bt: Major 39th Foot · mother MARIA · eight days before the England sailed",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "death · aged 73 · Brighton district, Sussex, Q2 1869 · vol 2B p.152",
+"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "census 1841 · aged 35 · Western Buildings, Brighton",
+"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "census 1851 · aged 40 · LODGER, UNMARRIED, “Fund holder” · BORN LYME REGIS, DORSET · 22 WESTERN COTTAGES, Brighton",
+"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "burial · died 28 MAY 1869 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican",
+"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "buried Chatham, 9 May 1805 · entered as Lt in the Royal Engineers",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "entry 335 · “Died at Chatham, 6 5 1805” · christened St Michael, Barbados, 18 Feb 1786",
+"source": "record · Connolly, Roll of Officers of the Corps of Royal Engineers",
+"link": "https://archive.org/",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "burial · 9 May 1805, Chatham St Mary the Virgin · “Lt in the royal engineers” · no age",
+"source": "record · Kent Burials, Medway Archives P85/1/79",
+"link": "https://cityark.medway.gov.uk/wwwopacx/wwwopac.ashx?command=getcontent&server=files&value=P085-01-79(1).pdf",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "commission · Gentleman Cadet to Second Lieutenant, Corps of Royal Engineers, 1 Feb 1804, vice Harding",
+"source": "record · London Gazette 15707 p.690, Ordnance-Office 4 June 1804",
+"link": "https://www.thegazette.co.uk/London/issue/15707/page/690",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "commission · Second Lieutenant to First Lieutenant, Royal Engineers, 1 Mar 1805, vice Dyson — the same page as his father's lieutenant-colonelcy",
+"source": "record · London Gazette 15789 p.351, Ordnance-Office 18 March 1805",
+"link": "https://www.thegazette.co.uk/London/issue/15789/page/351",
+"kind": "record"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "death notice · “the son of Col. D'Arcy, chief engineer of Chatham lines; his remains were interred with military honours”",
+"source": "record · Kentish Gazette, 14 May 1805, p.4",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Eliza D'Arcy, née Keeling",
+"says": "died 01/07/1918 · parents: — · — Keeling",
+"source": "record · Queensland death index 1918/B/27431",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Eleanor D'Arcy",
+"says": "MARRIED ARTHUR ASHLEY RUCK · PENZANCE, September quarter 1877 · GRO volume 5c page 381, both parties indexed to the same page · the quarter is marked >99% transcribed — THE TREE ASSERTED THE RUCK CONNECTION AND NOTHING HAD EVER DOCUMENTED IT",
+"source": "record · FreeBMD, GRO index of marriages, Sep quarter 1877, 5c 381",
+"link": "https://www.freebmd.org.uk/",
+"kind": "record"
+},
+{
+"name": "Francis D'Arcy",
+"says": "listed in a half-pay section of the same 1778 Army List — a different man from Robert, and the archive was right to separate them",
+"source": "record · A List of the Officers of the Army, 1778",
+"link": "https://archive.org/details/alistofficersar00offigoog",
+"kind": "record"
+},
+{
+"name": "Frank Hamilton Hyde D'Arcy",
+"says": "baptism · 26 November 1868, Croydon Common St James, Surrey · father FRANK HYDE, “Gentleman”, mother ANNA MARIA, of St James Road — five months after his father's death",
+"source": "record · Surrey Baptisms, Surrey History Centre 2809/1/2 p.204",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Frank Hamilton Hyde D'Arcy",
+"says": "death · 1910, Chelmsford, Essex",
+"source": "record · England, Newspaper Death Notices",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"says": "marriage · 29 September 1863, Lymington, to ANNA MARIA SIMPSON, daughter of R. Salisbury Simpson, of Bengal",
+"source": "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"says": "baptism · 22 June 1839, Milford · BORN 14 DECEMBER 1838 AT MADEIRA · father JOSEPH, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"says": "death · 15 June 1868, Worcester, aged 29 · buried PENNINGTON, Hampshire, 20 June 1868",
+"source": "record · England & Wales Deaths 1837-2007; Hampshire Burials; Western Daily Press, 22 June 1868, p.4",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Frederick Robert D'Arcy",
+"says": "baptised Chatham, 2 July 1811 · father George · mother MARY — the first wife",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "baptised WESTMINSTER, 31 AUGUST 1818, entered as GEORGE ABBAS KOOLY D'ARCY · father JOSEPH D'ARCY · mother KATHARINE GEORGIANA · ABBAS KOOLY is Abbas Qoli, for Prince Abbas Mirza, whom his father had served five years in Persia · the eldest son, never named in either death notice",
+"source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "ENSIGN, 94TH REGIMENT OF FOOT, by April 1837 · a Gazette memorandum exists only to fix his name: “The Christian names of Ensign D'Arcy, of the 94th Regiment of Foot, are George Abbas Kooli” — he was eighteen, and the War Office had got it wrong",
+"source": "record · The London Gazette, 27 April 1837, issue 19488, p.1079",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "LIEUTENANT, 26 SEPTEMBER 1839 · “Ensign and Adjutant George Abbas Kooli D'Arcy to have the rank of Lieutenant”",
+"source": "record · The London Gazette, 26 September 1839, issue 19773, p.1824",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "CAPTAIN, 12 NOVEMBER 1846 · “Lieutenant George Abbas Kooli D'Arcy to be Captain, vice Davenport”",
+"source": "record · The London Gazette, 12 November 1846, issue 20664, p.4260",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "MAJOR, 3RD WEST INDIA REGIMENT, 6 JULY 1852 · “Captain George Abbas Kooli d'Arcy, FROM THE 94TH FOOT, to be Major, by purchase, vice Findlay, promoted” — fifteen years in one regiment, then a transfer to a West India corps",
+"source": "record · The London Gazette, 6 July 1852, issue 21336, p.1890",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "LIEUTENANT-COLONEL, 7 JULY 1854 · “3rd West India Regiment, Major George Abbas Kooli D'Arcy, to be Lieutenant-Colonel, by purchase, vice Murray, who retires” · gazetted in London on 7 July and again in Edinburgh on 11 July",
+"source": "record · The London Gazette, 7 July 1854, issue 21569, p.2119; The Edinburgh Gazette, 11 July 1854, issue 6402, p.601",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "LISTED 7 JULY 1857 as “Lieutenant-Colonel George Abbas Kooli d'Arcy, 3rd West India Regiment”, among officers of mixed rank each carrying a date · THE HEADING OVER THAT LIST HAS NOT BEEN READ, so what it conferred is not stated here — only that he is a Colonel by 1859",
+"source": "record · The London Gazette, 14 August 1857, issue 22031, p.2790; The Edinburgh Gazette, 18 August 1857, issue 6728, p.750",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 · “Colonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia” — gazetted in the same sentence as the new Governor of Hong Kong",
+"source": "record · The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "George Lindesay D'Arcy",
+"says": "died 13/07/1901 · parents: — · George Pitt D'Arcy",
+"source": "record · Queensland death index 1901/B/1510",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "died 21/03/1931 · parents: Eliza Keeling · George Lindesay D'Arcy",
+"source": "record · Queensland death index 1931/B/13634",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "named in the Chatham register 31 March 1826 as Bt: Major 39th Foot, of Chatham",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "39TH FOOT, Peninsular War officers' roll, 1808 · the same regiment he commanded a detachment of aboard the convict ship England in 1826",
+"source": "record · Peninsular War, British Army Officers 1808-1814 (RUSI, via FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "“Lately, Captain GEORGE D'ARCY, [of] the [—] foot, SON [of] LIEUT. COLONEL D'ARCY, [to] MISS LUDLAM, OF GUERNSEY” · the first record to make him anyone's son, and Robert D'Arcy had been gazetted Lieutenant-Colonel six months before",
+"source": "record · Salisbury and Winchester Journal, 23 September 1805, p.3 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "commanding a detachment of the 39th Regiment in Ireland · “under the command of Major D'Arcy”, British Press 6 March 1820 and Weekly Freeman's Journal 2 February 1822",
+"source": "record · British and Irish newspapers, 1820 and 1822",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "B. Major · commanded the detachment of the 39th Foot: 39 men, 6 women, 7 children, embarked 8 Apr 1826 · recovered from gout 16 Aug 1826",
+"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
+"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733",
+"kind": "record"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”",
+"source": "record · Trove, Australian newspapers",
+"link": "https://nla.gov.au/nla.news-article59769271",
+"kind": "record"
+},
+{
+"name": "Ivy Marion D'Arcy",
+"says": "beneficiary of Lindesay Atkinson D'Arcy, 11335 · repatriation pension case file, 1937–38",
+"source": "record · NAA J34, C34558",
+"link": "https://recordsearch.naa.gov.au/",
+"kind": "record"
+},
+{
+"name": "Ivy Miriam D'Arcy, née Sneyd",
+"says": "died 11/06/1979 · parents: Martha Blum · Arthur William Hartley Sneyd",
+"source": "record · Queensland death index 1979/B/96370",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "christening · 17 March 1788, St Michael, Barbados · father Robt. D'Arcy, mother Jane — a sixth child of Robert and Jean",
+"source": "record · Caribbean Birth & Baptism Index 1590-1928, film 1157925, batch C51395-3",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "death · aged 87 · Brighton district, Sussex, Q1 1875 · vol 2B p.203 — matching a birth of 15 Dec 1787",
+"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "census 1841 · aged 40 · Western Buildings, Brighton, with her sisters Catharine and Charlotte",
+"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "census 1851 · aged 55 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
+"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "burial · died 10 JANUARY 1875 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican · the same page as both her sisters",
+"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Jane D'Arcy",
+"says": "PHOTOGRAPHED WITH HER SISTERS · the plate list calls them “The Three Aunts D'Arcy, Jane, Kate and Charlotte” — the three daughters this archive follows to Sussex, named together in a caption by a descendant",
+"source": "record · Berta Ruck, Ancestral Voices (London, Hutchinson, 1972), list of illustrations, plates between pp.128-129 — Internet Archive ancestralvoices00ruck_0, catalogued under the subject “Dorsey family”",
+"link": "https://archive.org/details/ancestralvoices00ruck_0",
+"kind": "record"
+},
+{
+"name": "John Hyde D'Arcy",
+"says": "baptism · 30 May 1833, Milford · father JOSEPH, “Lt Col RA of Milford House”, mother KATHERINE LUCY",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "John Hyde D'Arcy",
+"says": "Harrow School Register 1801-1893 · died 1852",
+"source": "record · Britain, School and University Students",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "John Hyde D'Arcy",
+"says": "death · 28 June 1852, Southampton, aged 19 · reported as far as Dublin",
+"source": "record · Catholic Telegraph, 10 July 1852, p.8; Hampshire Burials",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "baptised Portsea St Mary, 19 March 1780 · father Robert · mother Jean",
+"source": "record · FreeREG, Portsea St Mary parish register",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "baptised Portsea St Mary 19 March 1780, SON · father ROBERT, mother JEAN — the Hampshire Genealogical Society's transcription, independent of FreeREG's",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "ROYAL ARTILLERY · in the officers' list from 1795, the Army List of 1798, the commission registers of 1802, 1803 and 1826, and the Army Lists of 1840–1844 — commissioned at about fifteen and still listed at sixty-four",
+"source": "record · British Army Royal Artillery Officers 1716-1899 and Army Lists (FindMyPast, index only)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "died 7 FEBRUARY 1848 at Homestead, Lymington, Hampshire, in his 69th year · LIEUTENANT-COLONEL, LATE ROYAL ARTILLERY, K.L.S. · formerly of Priestlands near Lymington, late of Home Mead, Southampton · his will executed February 1844",
+"source": "record · London Evening Standard 11 Feb 1848 and Morning Post 3 Apr 1848 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "obituary · “he commenced his military career at THE TAKING OF ST DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia”",
+"source": "record · Morning Herald 29 Feb 1848, Saunders's News-Letter 2 Mar 1848, Lincolnshire Chronicle 3 Mar 1848",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "death duty · grant year 1848 · court “PCC and Country Courts” · of Lymington, Hampshire",
+"source": "record · Index to Death Duty Registers 1796-1903, TNA IR 27/284",
+"link": "https://discovery.nationalarchives.gov.uk/",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "gazetted · Prince Regent's permission to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred by the KING OF PERSIA",
+"source": "record · London Gazette, 30 June 1818, in five newspapers within the week",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "HIS PORTRAIT SURVIVES, with his wife's · the plate list names “Colonel Joseph D'Arcy, R.A.” and “Lady Catherine D'Arcy, nee West”, and separately “one of the Three Aunts D'Arcy in Persian dress BROUGHT HOME BY HER BROTHER JOSEPH” — the Persian service that named his son is there in a photograph caption",
+"source": "record · Berta Ruck, Ancestral Voices (London, Hutchinson, 1972), list of illustrations, plates between pp.128-129 — Internet Archive ancestralvoices00ruck_0, catalogued under the subject “Dorsey family”",
+"link": "https://archive.org/details/ancestralvoices00ruck_0",
+"kind": "record"
+},
+{
+"name": "Joseph William D'Arcy",
+"says": "baptism · 6 July 1841, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Josephine D'Arcy",
+"says": "baptism · 1836, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
+"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Katherine D'Arcy",
+"says": "wife of Lieutenant-Colonel Joseph D'Arcy · he left his “property to his wife, Kathe[rine] D'Arcy” by a will executed February 1844 — Lady's Newspaper, 8 April 1848",
+"source": "record · Lady's Newspaper and Pictorial Times, 8 April 1848, p.11",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Kenneth Lindsay D'Arcy",
+"says": "burial · 17 Aug 1927 – 3 Mar 2010, aged 82 · CENTENARY MEMORIAL GARDENS, 353 Wacol Station Road, Brisbane · plot SECRET GARDEN",
+"source": "record · Find a Grave memorial 286540042 · Centenary Memorial Gardens, Brisbane",
+"link": "https://www.findagrave.com/memorial/286540042",
+"kind": "record"
+},
+{
+"name": "Lindsay Atkinson D'Arcy",
+"says": "died 10/11/1936 · parents: Ida Kathleen Atkinson · George Pitt",
+"source": "record · Queensland death index 1936/B/33575",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Lindsay Atkinson D'Arcy",
+"says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
+"source": "record · Trove, Australian newspapers",
+"link": "https://nla.gov.au/nla.news-article37013266",
+"kind": "record"
+},
+{
+"name": "Margaret Maria Isabella D'Arcy",
+"says": "marriage notice · “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — at Chatham Church, by the Rev. I. T. Jones",
+"source": "record · Oxford University and City Herald, 1 Nov 1806, p.2; Chester Courant, 11 Nov 1806, p.3",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Margarett Maria Isabella D'Arcy",
+"says": "spinster · married John Maddock Jones Esq. of Penybryn, Ruabon, Denbighshire · Chatham, 23 October 1806, by licence · witness Joseph D'Arcy",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Margarett Maria Isabella D'Arcy",
+"says": "“At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.” · the first record to give Robert D'Arcy a corps as well as a rank, and to call anyone his child",
+"source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Margarett Maria Isabella D'Arcy",
+"says": "DEATH ACT N° 43, Ingouville, 1 FEBRUARY 1843 · “Marguéritta Maria Elisabella Darcy, sans profession”, died that day at six in the morning at her home, RUE DE L'HÔPITAL, MAISON LECHEVALIER · AGED SIXTY-ONE — born about 1781 · her birthplace entered as unknown · “épouse de John Maddack Jones” · declared the same day at four in the afternoon by Jean Baptiste Lecordier, rentier, 59, and Jean Olivier Quesney, rentier, 58½, both of Ingouville and neither a relative",
+"source": "record · Archives départementales de la Seine-Maritime, 4 E 9077 — Le Havre, ancienne commune d'Ingouville, registre des décès 1843, view 23",
+"link": "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806",
+"kind": "record"
+},
+{
+"name": "Maria D'Arcy, née White",
+"says": "died 04/09/1856 · parents: Maria Gardener · John Javis White",
+"source": "record · Queensland death index 1856/B/50",
+"link": "https://www.familyhistory.bdm.qld.gov.au/",
+"kind": "record"
+},
+{
+"name": "Richard D'Arcy",
+"says": "death notice · “At St Helier's, Jersey, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33” · 13 May 1857",
+"source": "record · Saint James's Chronicle, 23 May 1857, p.1; Clare Journal, 28 May 1857",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "buried Chatham St Mary the Virgin, 19 May 1827, entry 1571 · AGE 76 · abode Chatham — the register the tree's 1751 has always rested on",
+"source": "record · FreeREG, Chatham St Mary the Virgin",
+"link": "https://www.freereg.org.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "London Gazette, 19 July 1813, issue 16755 page 1431 — “Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh”, in an Office of Ordnance list of Royal Engineers promotions. Ten Gazette notices name him between 1793 and 1819.",
+"source": "record · The London Gazette, issue 16755 p.1431",
+"link": "https://www.thegazette.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "listed among the Second Lieutenants and Practitioner Engineers of the Corps of Engineers in the printed Army List of 1778",
+"source": "record · A List of the Officers of the Army, 1778",
+"link": "https://archive.org/details/alistofficersar00offigoog",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh” · Office of Ordnance, Corps of Royal Engineers, gazetted 19 July 1813",
+"source": "record · The London Gazette, issue 16755, 19 July 1813",
+"link": "https://www.thegazette.co.uk/London/issue/16755/page/1431",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "married JEAN WARD at PORTSEA ST MARY, 21 JUNE 1779 · the marriage this archive has carried on a family tree since it began, nine months before their son Joseph was christened in the same church",
+"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“At Chatham, on the 13th instant, Major-General D'Arcy, late of the Corps of Royal Engineers” · Morning Chronicle, 17 May 1827 — his death date from the contemporary press rather than from Connolly's book of 1898",
+"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“On Saturday Major-General D'Arcy, whose death we announced last week, WAS INTERRED AT CHATHAM WITH MILITARY HONOURS” · Kent Herald, 24 May 1827 — the Saturday was 19 May, the date of entry 1571 in Chatham's burial register",
+"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "“At Chatham, AT AN ADVANCED AGE, Major General D'Arcy” · Kent Herald, 17 May 1827 — and not one of the seventeen notices gives his forename or names a single relative",
+"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "17 JANUARY 1776 · PRACTITIONER ENGINEER AND SECOND LIEUTENANT, The Corps of Engineers — his first commission, and the earliest record of him in this archive. The seniority date is printed in the Army Lists of 1778 and 1781",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "8 May 1802 · Captain promoted MAJOR IN THE ARMY, Royal Engineers · War Office 11 May 1802 · London Gazette 15478 p.468",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "1 March 1805 · Brevet Major promoted LIEUTENANT-COLONEL, Corps of the Royal Engineers, vice Nepean · Ordnance Office 18 March 1805 · London Gazette 15789 p.351",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "4 June 1813 · Lieutenant-Colonel promoted COLONEL IN THE ARMY BY BREVET by the Prince Regent · War Office 7 June 1813 · London Gazette 16737 p.1100",
+"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "named in 1843 as “the late MAJOR-GENERAL D'ARCY, R.E.”, father of Margaret Jones · rank, corps and the fact of his death, in one line of a London paper",
+"source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
+"link": "https://www.findmypast.com.au/search-newspapers",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "will proved 4 July 1827 · “Major General in the Army and Colonel of the Royal Engineers of Chatham, Kent”",
+"source": "record · TNA PROB 11/1728/64 (digitised, unread)",
+"link": "https://discovery.nationalarchives.gov.uk/details/r/D192027",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "entry 203 · 2nd Lt 17 Jan 1776 → Major-General 12 Aug 1819, C.B. · “Died at Chatham, 13 5 1827”",
+"source": "record · Connolly, Roll of Officers of the Corps of Royal Engineers",
+"link": "https://archive.org/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "described as “Col. D'Arcy, CHIEF ENGINEER OF CHATHAM LINES” — the only record giving him a post as well as a rank",
+"source": "record · Kentish Gazette, 14 May 1805, p.4",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "described in March 1823 as “MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found naming his corps",
+"source": "record · Hampshire Chronicle, 24 March 1823, p.3",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "named in November 1806 as “COL. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found anywhere giving his corps",
+"source": "record · Oxford University and City Herald, 1 Nov 1806, p.2",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
+"source": "record · London Evening Standard and Morning Herald, 25 June 1862",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert D'Arcy",
+"says": "STYLED “MAJOR-GENERAL ROBERT D'ARCY, R.E., C.B.” in the plate list of a family book of 1972 · THE C.B. IS NEW TO THIS ARCHIVE and is a caption written by a descendant, not an official list — it is a lead to test against the Gazette, not an honour this archive has documented",
+"source": "record · Berta Ruck, Ancestral Voices (London, Hutchinson, 1972), list of illustrations, plates between pp.128-129 — Internet Archive ancestralvoices00ruck_0, catalogued under the subject “Dorsey family”",
+"link": "https://archive.org/details/ancestralvoices00ruck_0",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "baptised WESTMINSTER, 16 OCTOBER 1820 · father JOSEPH D'ARCY · mother CATHERINE GEORGIANA · WEST is his mother's maiden surname, standing as his middle name",
+"source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "MARRIED ANNIE ADAMS at BOMBAY, 20 JANUARY 1846 · the bride this archive could not afford to see — the transcript was paywalled even on a paid trial, and the free index gives her name and the day",
+"source": "record · Gentleman's Magazine marriage announcements, indexed by the Families in British India Society",
+"link": "https://fibis.ourarchives.online/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "THE SAME MARRIAGE IN THE INDIA OFFICE'S OWN RETURN · “Presidency of Marriage BOMBAY · Marriage Year 1846 · Husband ROBT WEST D'ARCY · Wife ANNE H ADAMS” — an independent index of the IOR ecclesiastical returns, which spells her ANNE H where the magazine prints ANNIE",
+"source": "record · Index of Ecclesiastical returns, IOR Bombay Marriages, indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "HIS DEATH REPORTED BACK TO INDIA · Allen's Indian Mail, the Anglo-Indian paper of record, carries “D'ARCY, Robert · BANGOR, N.WALES · 1862” — the same periodical had printed his Bombay marriage twice in 1846, as Robert W. and as Robert West",
+"source": "record · Periodical: Allen's Indian Mail, indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/",
+"kind": "record"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
+"source": "record · British India Office Marriages",
+"link": "https://www.findmypast.co.uk/",
+"kind": "record"
+},
+{
+"name": "Anna Maria D'Arcy",
+"says": "1791–1791",
+"source": "family tree",
+"link": "/people/anna-maria-d-arcy-1791",
+"kind": "tree"
+},
+{
+"name": "Anna Maria d'Arcy",
+"says": "1792–1800 · Portsmouth, Hampshire, England",
+"source": "family tree",
+"link": "/people/anna-maria-d-arcy-1792",
+"kind": "tree"
+},
+{
+"name": "Arthur Neville \"Bill\" D'Arcy",
+"says": "1924–1985 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/arthur-neville-bill-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Barbara Conyers D'Arcy",
+"says": "1600–1696 · Hornby, West Riding, Yorkshire, England",
+"source": "family tree",
+"link": "/people/barbara-conyers-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Caroline Louisa D'ARCY",
+"says": "1717–1778 · Westminster St James, Middlesex, England, Kingdom of Great Britain",
+"source": "family tree",
+"link": "/people/caroline-louisa-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "1789–1876 · Barbados",
+"source": "family tree",
+"link": "/people/catherine-d-arcy-1789",
+"kind": "tree"
+},
+{
+"name": "Catherine D'Arcy",
+"says": "1867–1939 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/catherine-d-arcy-1867",
+"kind": "tree"
+},
+{
+"name": "Catherine Lucy Jane D'Arcy",
+"says": "1831–1877 · Milford, Lymington, Hampshire, England",
+"source": "family tree",
+"link": "/people/catherine-lucy-jane-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Catherine Maria D'Arcy",
+"says": "1827–1900 · Parramatta, New South Wales, Australia",
+"source": "family tree",
+"link": "/people/catherine-maria-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Catherine Sophia Ann D'ARCY",
+"says": "1836–1913 · Richmond, New South Wales, Australia",
+"source": "family tree",
+"link": "/people/catherine-sophia-ann-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Charlotte D'Arcy",
+"says": "1794–1869 · Lyme Regis, Dorset",
+"source": "family tree",
+"link": "/people/charlotte-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Charlotte Maria D'Arcy",
+"says": "1825–1854 · Chatham, Medway, UK",
+"source": "family tree",
+"link": "/people/charlotte-maria-d-arcy-1825",
+"kind": "tree"
+},
+{
+"name": "Charlotte Maria D'Arcy",
+"says": "1869–1939 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/charlotte-maria-d-arcy-1869",
+"kind": "tree"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "1759–1778 · Royal Engineer 2lt West Indies · Barbados, Caribbean",
+"source": "family tree",
+"link": "/people/constantine-d-arcy-1759",
+"kind": "tree"
+},
+{
+"name": "Constantine D'Arcy",
+"says": "1786–1805 · Royal Engineer 2lt West Indies · Barbados, Caribbean",
+"source": "family tree",
+"link": "/people/constantine-d-arcy-1786",
+"kind": "tree"
+},
+{
+"name": "Conyers (of Hornby Castle) D'arcy",
+"says": "1570–1653 · 7th Lord Darcy Knayth, 4th Baron Conyers, of \"Hornby\", Sir · Hornby Castle, Yorkshire, England",
+"source": "family tree · above the Hornby graft",
+"link": "/people/conyers-of-hornby-castle-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy",
+"says": "1598–1689 · Earl of Holdernesse ( 1st · Hornby Castle, North Riding, Yorkshire, England",
+"source": "family tree · above the Hornby graft",
+"link": "/people/conyers-1st-earl-of-holderness-8th-lord-darcy-de-knayth-5th-lord-conyers-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Dorothy D'Arcy",
+"says": "1597–1666 · Hornby, Yorkshire, England",
+"source": "family tree",
+"link": "/people/dorothy-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Edward D'ARCY",
+"says": "1620–1621 · Hornby Castle, Yorkshire, England",
+"source": "family tree",
+"link": "/people/edward-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Edwin Francis D'Arcy",
+"says": "1873–1949 · Clerk, Qld Railway Department · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/edwin-francis-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Elizabeth D'Arcy",
+"says": "1610–1729 · Hornby Castle, nr Bedale, Yorkshire, England",
+"source": "family tree",
+"link": "/people/elizabeth-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Elizabeth Eleanor D'Arcy",
+"says": "1852–1928 · Lymington, UK",
+"source": "family tree",
+"link": "/people/elizabeth-eleanor-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Florence Isabel D'Arcy",
+"says": "1894–1918 · 'Assistant at house' (mentioned on death certificate) · Brisbane, Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/florence-isabel-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Frank Hyde D'Arcy",
+"says": "1838–1868 · Madeira, Portugal",
+"source": "family tree",
+"link": "/people/frank-hyde-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Frederick Robert D'Arcy",
+"says": "1811–1875 · Surveyor · Chatham, Kent, England",
+"source": "family tree",
+"link": "/people/frederick-robert-d-arcy",
+"kind": "tree"
+},
+{
+"name": "G Norman D'Arcy",
+"says": "1849–1870 · Mumbai, Maharashtra, India",
+"source": "family tree",
+"link": "/people/g-norman-d-arcy",
+"kind": "tree"
+},
+{
+"name": "George Abbas Kooli D'Arcy",
+"says": "1818–1885 · Governor, The Gambia · Montagu Square, Paddington, Greater London, UK",
+"source": "family tree",
+"link": "/people/george-abbas-kooli-d-arcy",
+"kind": "tree"
+},
+{
+"name": "George Lindsay D'Arcy",
+"says": "1829–1901 · Parramatta, New South Wales, Australia",
+"source": "family tree · direct line",
+"link": "/people/george-lindsay-d-arcy",
+"kind": "tree"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "1783–1849 · Army Officer, Major in 39th Battallion of Foot · Portsmouth, Hampshire, England or West Indies",
+"source": "family tree · direct line",
+"link": "/people/george-pitt-d-arcy-1783",
+"kind": "tree"
+},
+{
+"name": "George Pitt D'Arcy",
+"says": "1864–1931 · Chief Clerk Railway Department · Brisbane, Brisbane, Queensland, Australia",
+"source": "family tree · direct line",
+"link": "/people/george-pitt-d-arcy-1864",
+"kind": "tree"
+},
+{
+"name": "George Schomberg d'Arcy",
+"says": "1716–1722 · London, Middlesex, England, Kingdom of Great Britain",
+"source": "family tree",
+"link": "/people/george-schomberg-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Geraldine D'Arcy",
+"says": "1872–1937 · Brisbane, Australia",
+"source": "family tree",
+"link": "/people/geraldine-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Grace D'Arcy",
+"says": "1611–1680 · Newborough, Yorkshire, England",
+"source": "family tree",
+"link": "/people/grace-d-arcy-1611",
+"kind": "tree"
+},
+{
+"name": "Grace D'Arcy",
+"says": "1633–1657 · Hornby, Yorkshire, England",
+"source": "family tree",
+"link": "/people/grace-d-arcy-1633",
+"kind": "tree"
+},
+{
+"name": "Hilda Georgina D'Arcy",
+"says": "1890–1969 · Brisbane, Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/hilda-georgina-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Ida Grace D'Arcy",
+"says": "1872–1941 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/ida-grace-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Ida Joyce D'Arcy",
+"says": "1908–1969 · Brisbane, Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/ida-joyce-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Isabel D'Arcy",
+"says": "b. 1609 · Hornby, North Riding, Yorkshire, England",
+"source": "family tree",
+"link": "/people/isabel-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Jane D'Arcy",
+"says": "1787–1875 · Barbados",
+"source": "family tree",
+"link": "/people/jane-d-arcy",
+"kind": "tree"
+},
+{
+"name": "John Hyde D'Arcy",
+"says": "1832–1852 · Lymington, Hampshire, UK",
+"source": "family tree",
+"link": "/people/john-hyde-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Joseph D'Arcy",
+"says": "1780–1848 · Colonel, Royal Artillery · Portsmouth, Hampshire",
+"source": "family tree",
+"link": "/people/joseph-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Joseph William D'Arcy",
+"says": "1840–1882 · Late  Royal  Navy · Priestlands, Milford, Lymington, Hampshire, England",
+"source": "family tree",
+"link": "/people/joseph-william-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Josephine D'Arcy",
+"says": "1834–1903 · Milford on Sea, Hampshire, England, United Kingdom",
+"source": "family tree",
+"link": "/people/josephine-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Kenneth Lindsay D'Arcy",
+"says": "1927–2010 · Insurance Manager · Sandgate, Queensland, Australia",
+"source": "family tree · direct line",
+"link": "/people/kenneth-lindsay-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Lindesay Atkinson D'Arcy",
+"says": "1892–1936 · Clerk · Brisbane, Brisbane, Queensland, Australia",
+"source": "family tree · direct line",
+"link": "/people/lindesay-atkinson-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Louisa Margaret D'Arcy",
+"says": "1866–1940 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/louisa-margaret-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Margaret D'Arcy",
+"says": "1594–1668 · Hornby, Yorkshire, England",
+"source": "family tree",
+"link": "/people/margaret-d-arcy-1594",
+"kind": "tree"
+},
+{
+"name": "Margaret Maria Isabella D'Arcy",
+"says": "1781–1843 · Portsmouth, Hampshire, England",
+"source": "family tree",
+"link": "/people/margaret-maria-isabella-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Margaret? D'Arcy",
+"says": "no dates, no place — a name and a position in the tree",
+"source": "family tree · direct line",
+"link": "/people/margaret-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Mary Catherine Georgina D'Arcy",
+"says": "1850–1927 · Lymington, Hampshire, England",
+"source": "family tree",
+"link": "/people/mary-catherine-georgina-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Mary D'Arcy",
+"says": "b. 1624",
+"source": "family tree",
+"link": "/people/mary-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Mary Elvina Annie D'Arcy",
+"says": "1862–1949 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/mary-elvina-annie-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Philadelphia D'ARCY",
+"says": "1619–1627",
+"source": "family tree",
+"link": "/people/philadelphia-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Richard Wellesley D'Arcy",
+"says": "1824–1859 · Bailiwick of Jersey",
+"source": "family tree",
+"link": "/people/richard-wellesley-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Richard d'Arcy",
+"says": "b. 1784 · Portsmouth, Southampton, United Kingdom",
+"source": "family tree",
+"link": "/people/richard-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Robert D'Arcy",
+"says": "1751–1827 · Army Officer, Major General and Commander of Royal Engineers, Chatham, Kent, England · North Yorkshire, England, United Kingdom",
+"source": "family tree · direct line",
+"link": "/people/robert-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Robert Edward D'Arcy",
+"says": "1777–1827",
+"source": "family tree",
+"link": "/people/robert-edward-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Robert Joseph D'Arcy",
+"says": "1864–1910 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/robert-joseph-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Robert Lindesay D'Arcy",
+"says": "1865–1868 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/robert-lindesay-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Robert West D'Arcy",
+"says": "1820–1862 · London, England",
+"source": "family tree",
+"link": "/people/robert-west-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Sophia Maria Louisa D'Arcy",
+"says": "1842–1927 · New South Wales, Australia",
+"source": "family tree",
+"link": "/people/sophia-maria-louisa-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Thomas (Francis) D'Arcy",
+"says": "1681–1776 · St. James Palace, London, Middlesex, Englan",
+"source": "family tree · above the Hornby graft",
+"link": "/people/thomas-francis-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Thomas D'Arcy",
+"says": "1750–1750 · Hornby, Yorkshire, England",
+"source": "family tree",
+"link": "/people/thomas-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Valma D'Arcy",
+"says": "d. 2010 · Brisbane Q'ld Australia",
+"source": "family tree",
+"link": "/people/valma-d-arcy",
+"kind": "tree"
+},
+{
+"name": "Vivian Lindsay D'Arcy",
+"says": "1916–2006 · Brisbane, QLD, Australia",
+"source": "family tree",
+"link": "/people/vivian-lindsay-d-arcy",
+"kind": "tree"
+},
+{
+"name": "William Arthur D'Arcy",
+"says": "1868–1870 · Brisbane, Queensland, Australia",
+"source": "family tree",
+"link": "/people/william-arthur-d-arcy",
+"kind": "tree"
+},
+{
+"name": "William David d'Arcy",
+"says": "b. 1842",
+"source": "family tree",
+"link": "/people/william-david-d-arcy",
+"kind": "tree"
+}
+]
+},
 {
 "surname": "SNEYD",
 "n": 167,
@@ -1178,1160 +2360,6 @@
 "says": "England",
 "source": "family tree",
 "link": "/people/william-sneyd",
-"kind": "tree"
-}
-]
-},
-{
-"surname": "D'ARCY",
-"n": 164,
-"rows": [
-{
-"name": "Audrey Dell D'Arcy",
-"says": "burial · 1 Nov 1929 – 1 Aug 2022, aged 92 · Centenary Memorial Gardens, Brisbane · plot GARDEN OF REFLECTION, Section E, Site 20 · the Audrey “Dell” Murdoch who married Kenneth Lindsay D'Arcy at Toowoomba in 1952",
-"source": "record · Find a Grave memorial 242573098 · Centenary Memorial Gardens, Brisbane",
-"link": "https://www.findagrave.com/memorial/242573098",
-"kind": "record"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "death · aged 86 · Brighton district, Sussex, Q1 1876 · vol 2B p.164 — matching a birth of 10 Dec 1789",
-"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "death notice · “On the 23rd ult., at BEDFORD SQUARE, BRIGHTON, MISS CATHARINE D'ARCY, aged 86”",
-"source": "record · Horsham, Petworth, Midhurst and Steyning Express, 8 Feb 1876, p.2",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "death duty · grant year 1876 · Court of Probate · of Brighton, Sussex",
-"source": "record · Index to Death Duty Registers 1796-1903, TNA IR 27/396",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "census 1841 · aged 39 · Western Buildings, Brighton",
-"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "census 1851 · aged 50 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
-"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "burial · died 23 JANUARY 1876 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · the exact date the Horsham paper printed a fortnight later",
-"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Catherine Lucy Jane D'Arcy",
-"says": "baptism · 23 January 1832, Milford · father JOSEPH, “Lt Col RA of MILFORD HOUSE”, mother KATHERINE LUCY ELIZA",
-"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Charlotte Cathcart D'Arcy",
-"says": "marriage · 1859, PARRAMATTA, New South Wales · to ROBERT MEAD PEARSON · registration 2618",
-"source": "record · New South Wales Marriages 1788-1945",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Charlotte D'Arcy",
-"says": "born 29 April 1825 · baptised Chatham 31 March 1826 · father GEORGE PITT D'ARCY, Bt: Major 39th Foot · mother MARIA · eight days before the England sailed",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Charlotte D'Arcy",
-"says": "death · aged 73 · Brighton district, Sussex, Q2 1869 · vol 2B p.152",
-"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Charlotte D'Arcy",
-"says": "census 1841 · aged 35 · Western Buildings, Brighton",
-"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Charlotte D'Arcy",
-"says": "census 1851 · aged 40 · LODGER, UNMARRIED, “Fund holder” · BORN LYME REGIS, DORSET · 22 WESTERN COTTAGES, Brighton",
-"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Charlotte D'Arcy",
-"says": "burial · died 28 MAY 1869 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican",
-"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "buried Chatham, 9 May 1805 · entered as Lt in the Royal Engineers",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "entry 335 · “Died at Chatham, 6 5 1805” · christened St Michael, Barbados, 18 Feb 1786",
-"source": "record · Connolly, Roll of Officers of the Corps of Royal Engineers",
-"link": "https://archive.org/",
-"kind": "record"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "burial · 9 May 1805, Chatham St Mary the Virgin · “Lt in the royal engineers” · no age",
-"source": "record · Kent Burials, Medway Archives P85/1/79",
-"link": "https://cityark.medway.gov.uk/wwwopacx/wwwopac.ashx?command=getcontent&server=files&value=P085-01-79(1).pdf",
-"kind": "record"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "commission · Gentleman Cadet to Second Lieutenant, Corps of Royal Engineers, 1 Feb 1804, vice Harding",
-"source": "record · London Gazette 15707 p.690, Ordnance-Office 4 June 1804",
-"link": "https://www.thegazette.co.uk/London/issue/15707/page/690",
-"kind": "record"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "commission · Second Lieutenant to First Lieutenant, Royal Engineers, 1 Mar 1805, vice Dyson — the same page as his father's lieutenant-colonelcy",
-"source": "record · London Gazette 15789 p.351, Ordnance-Office 18 March 1805",
-"link": "https://www.thegazette.co.uk/London/issue/15789/page/351",
-"kind": "record"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "death notice · “the son of Col. D'Arcy, chief engineer of Chatham lines; his remains were interred with military honours”",
-"source": "record · Kentish Gazette, 14 May 1805, p.4",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Eliza D'Arcy, née Keeling",
-"says": "died 01/07/1918 · parents: — · — Keeling",
-"source": "record · Queensland death index 1918/B/27431",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Francis D'Arcy",
-"says": "listed in a half-pay section of the same 1778 Army List — a different man from Robert, and the archive was right to separate them",
-"source": "record · A List of the Officers of the Army, 1778",
-"link": "https://archive.org/details/alistofficersar00offigoog",
-"kind": "record"
-},
-{
-"name": "Frank Hamilton Hyde D'Arcy",
-"says": "baptism · 26 November 1868, Croydon Common St James, Surrey · father FRANK HYDE, “Gentleman”, mother ANNA MARIA, of St James Road — five months after his father's death",
-"source": "record · Surrey Baptisms, Surrey History Centre 2809/1/2 p.204",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Frank Hamilton Hyde D'Arcy",
-"says": "death · 1910, Chelmsford, Essex",
-"source": "record · England, Newspaper Death Notices",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Frank Hyde D'Arcy",
-"says": "marriage · 29 September 1863, Lymington, to ANNA MARIA SIMPSON, daughter of R. Salisbury Simpson, of Bengal",
-"source": "record · Thacker's Overland News for India and the Colonies, 3 Oct 1863, p.25",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Frank Hyde D'Arcy",
-"says": "baptism · 22 June 1839, Milford · BORN 14 DECEMBER 1838 AT MADEIRA · father JOSEPH, mother KATHERINE LUCY ELIZA",
-"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Frank Hyde D'Arcy",
-"says": "death · 15 June 1868, Worcester, aged 29 · buried PENNINGTON, Hampshire, 20 June 1868",
-"source": "record · England & Wales Deaths 1837-2007; Hampshire Burials; Western Daily Press, 22 June 1868, p.4",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Frederick Robert D'Arcy",
-"says": "baptised Chatham, 2 July 1811 · father George · mother MARY — the first wife",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "baptised WESTMINSTER, 31 AUGUST 1818, entered as GEORGE ABBAS KOOLY D'ARCY · father JOSEPH D'ARCY · mother KATHARINE GEORGIANA · ABBAS KOOLY is Abbas Qoli, for Prince Abbas Mirza, whom his father had served five years in Persia · the eldest son, never named in either death notice",
-"source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "ENSIGN, 94TH REGIMENT OF FOOT, by April 1837 · a Gazette memorandum exists only to fix his name: “The Christian names of Ensign D'Arcy, of the 94th Regiment of Foot, are George Abbas Kooli” — he was eighteen, and the War Office had got it wrong",
-"source": "record · The London Gazette, 27 April 1837, issue 19488, p.1079",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "LIEUTENANT, 26 SEPTEMBER 1839 · “Ensign and Adjutant George Abbas Kooli D'Arcy to have the rank of Lieutenant”",
-"source": "record · The London Gazette, 26 September 1839, issue 19773, p.1824",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "CAPTAIN, 12 NOVEMBER 1846 · “Lieutenant George Abbas Kooli D'Arcy to be Captain, vice Davenport”",
-"source": "record · The London Gazette, 12 November 1846, issue 20664, p.4260",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "MAJOR, 3RD WEST INDIA REGIMENT, 6 JULY 1852 · “Captain George Abbas Kooli d'Arcy, FROM THE 94TH FOOT, to be Major, by purchase, vice Findlay, promoted” — fifteen years in one regiment, then a transfer to a West India corps",
-"source": "record · The London Gazette, 6 July 1852, issue 21336, p.1890",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "LIEUTENANT-COLONEL, 7 JULY 1854 · “3rd West India Regiment, Major George Abbas Kooli D'Arcy, to be Lieutenant-Colonel, by purchase, vice Murray, who retires” · gazetted in London on 7 July and again in Edinburgh on 11 July",
-"source": "record · The London Gazette, 7 July 1854, issue 21569, p.2119; The Edinburgh Gazette, 11 July 1854, issue 6402, p.601",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "LISTED 7 JULY 1857 as “Lieutenant-Colonel George Abbas Kooli d'Arcy, 3rd West India Regiment”, among officers of mixed rank each carrying a date · THE HEADING OVER THAT LIST HAS NOT BEEN READ, so what it conferred is not stated here — only that he is a Colonel by 1859",
-"source": "record · The London Gazette, 14 August 1857, issue 22031, p.2790; The Edinburgh Gazette, 18 August 1857, issue 6728, p.750",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 · “Colonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia” — gazetted in the same sentence as the new Governor of Hong Kong",
-"source": "record · The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "George Lindesay D'Arcy",
-"says": "died 13/07/1901 · parents: — · George Pitt D'Arcy",
-"source": "record · Queensland death index 1901/B/1510",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "died 21/03/1931 · parents: Eliza Keeling · George Lindesay D'Arcy",
-"source": "record · Queensland death index 1931/B/13634",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "named in the Chatham register 31 March 1826 as Bt: Major 39th Foot, of Chatham",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "39TH FOOT, Peninsular War officers' roll, 1808 · the same regiment he commanded a detachment of aboard the convict ship England in 1826",
-"source": "record · Peninsular War, British Army Officers 1808-1814 (RUSI, via FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "“Lately, Captain GEORGE D'ARCY, [of] the [—] foot, SON [of] LIEUT. COLONEL D'ARCY, [to] MISS LUDLAM, OF GUERNSEY” · the first record to make him anyone's son, and Robert D'Arcy had been gazetted Lieutenant-Colonel six months before",
-"source": "record · Salisbury and Winchester Journal, 23 September 1805, p.3 (British Newspaper Archive)",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "commanding a detachment of the 39th Regiment in Ireland · “under the command of Major D'Arcy”, British Press 6 March 1820 and Weekly Freeman's Journal 2 February 1822",
-"source": "record · British and Irish newspapers, 1820 and 1822",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "B. Major · commanded the detachment of the 39th Foot: 39 men, 6 women, 7 children, embarked 8 Apr 1826 · recovered from gout 16 Aug 1826",
-"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
-"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733",
-"kind": "record"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "obituary · died Parramatta 22 Jul 1849, aged 69 · verdict “gout which had flown to the head”",
-"source": "record · Trove, Australian newspapers",
-"link": "https://nla.gov.au/nla.news-article59769271",
-"kind": "record"
-},
-{
-"name": "Ivy Marion D'Arcy",
-"says": "beneficiary of Lindesay Atkinson D'Arcy, 11335 · repatriation pension case file, 1937–38",
-"source": "record · NAA J34, C34558",
-"link": "https://recordsearch.naa.gov.au/",
-"kind": "record"
-},
-{
-"name": "Ivy Miriam D'Arcy, née Sneyd",
-"says": "died 11/06/1979 · parents: Martha Blum · Arthur William Hartley Sneyd",
-"source": "record · Queensland death index 1979/B/96370",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Jane D'Arcy",
-"says": "christening · 17 March 1788, St Michael, Barbados · father Robt. D'Arcy, mother Jane — a sixth child of Robert and Jean",
-"source": "record · Caribbean Birth & Baptism Index 1590-1928, film 1157925, batch C51395-3",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Jane D'Arcy",
-"says": "death · aged 87 · Brighton district, Sussex, Q1 1875 · vol 2B p.203 — matching a birth of 15 Dec 1787",
-"source": "record · England & Wales Deaths 1837-2007 (GRO index)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Jane D'Arcy",
-"says": "census 1841 · aged 40 · Western Buildings, Brighton, with her sisters Catharine and Charlotte",
-"source": "record · 1841 census HO107/1122 bk8 f.37 p.22 sch.1912",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Jane D'Arcy",
-"says": "census 1851 · aged 55 · LODGER, UNMARRIED, “Fund holder” · BORN BARBADOES · 22 WESTERN COTTAGES, Brighton",
-"source": "record · 1851 census HO107/1646 f.357 p.59 sch.172 (indexed as ARCY)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Jane D'Arcy",
-"says": "burial · died 10 JANUARY 1875 · ST ANDREW'S OLD CHURCH, HOVE, Sussex · Anglican · the same page as both her sisters",
-"source": "record · Sussex Burials, TNA RG 37/65/2 p.47",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "John Hyde D'Arcy",
-"says": "baptism · 30 May 1833, Milford · father JOSEPH, “Lt Col RA of Milford House”, mother KATHERINE LUCY",
-"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "John Hyde D'Arcy",
-"says": "Harrow School Register 1801-1893 · died 1852",
-"source": "record · Britain, School and University Students",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "John Hyde D'Arcy",
-"says": "death · 28 June 1852, Southampton, aged 19 · reported as far as Dublin",
-"source": "record · Catholic Telegraph, 10 July 1852, p.8; Hampshire Burials",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "baptised Portsea St Mary, 19 March 1780 · father Robert · mother Jean",
-"source": "record · FreeREG, Portsea St Mary parish register",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "baptised Portsea St Mary 19 March 1780, SON · father ROBERT, mother JEAN — the Hampshire Genealogical Society's transcription, independent of FreeREG's",
-"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "ROYAL ARTILLERY · in the officers' list from 1795, the Army List of 1798, the commission registers of 1802, 1803 and 1826, and the Army Lists of 1840–1844 — commissioned at about fifteen and still listed at sixty-four",
-"source": "record · British Army Royal Artillery Officers 1716-1899 and Army Lists (FindMyPast, index only)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "died 7 FEBRUARY 1848 at Homestead, Lymington, Hampshire, in his 69th year · LIEUTENANT-COLONEL, LATE ROYAL ARTILLERY, K.L.S. · formerly of Priestlands near Lymington, late of Home Mead, Southampton · his will executed February 1844",
-"source": "record · London Evening Standard 11 Feb 1848 and Morning Post 3 Apr 1848 (British Newspaper Archive)",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "obituary · “he commenced his military career at THE TAKING OF ST DOMINGO IN 1793; he served also IN SICILY and at THE TAKING OF WALCHEREN; he was FIVE YEARS IN PERSIA IN THE SERVICE OF PRINCE ABBAS MIRZA, son [of the] King of Persia”",
-"source": "record · Morning Herald 29 Feb 1848, Saunders's News-Letter 2 Mar 1848, Lincolnshire Chronicle 3 Mar 1848",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "death duty · grant year 1848 · court “PCC and Country Courts” · of Lymington, Hampshire",
-"source": "record · Index to Death Duty Registers 1796-1903, TNA IR 27/284",
-"link": "https://discovery.nationalarchives.gov.uk/",
-"kind": "record"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "gazetted · Prince Regent's permission to wear the insignia of the SECOND CLASS OF THE IMPERIAL ORDER OF THE LION AND SUN, conferred by the KING OF PERSIA",
-"source": "record · London Gazette, 30 June 1818, in five newspapers within the week",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "Joseph William D'Arcy",
-"says": "baptism · 6 July 1841, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
-"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Josephine D'Arcy",
-"says": "baptism · 1836, Milford · father JOSEPH, mother KATHERINE LUCY ELIZA",
-"source": "record · Hampshire Baptisms (Hampshire Genealogical Society)",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Katherine D'Arcy",
-"says": "wife of Lieutenant-Colonel Joseph D'Arcy · he left his “property to his wife, Kathe[rine] D'Arcy” by a will executed February 1844 — Lady's Newspaper, 8 April 1848",
-"source": "record · Lady's Newspaper and Pictorial Times, 8 April 1848, p.11",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Kenneth Lindsay D'Arcy",
-"says": "burial · 17 Aug 1927 – 3 Mar 2010, aged 82 · CENTENARY MEMORIAL GARDENS, 353 Wacol Station Road, Brisbane · plot SECRET GARDEN",
-"source": "record · Find a Grave memorial 286540042 · Centenary Memorial Gardens, Brisbane",
-"link": "https://www.findagrave.com/memorial/286540042",
-"kind": "record"
-},
-{
-"name": "Lindsay Atkinson D'Arcy",
-"says": "died 10/11/1936 · parents: Ida Kathleen Atkinson · George Pitt",
-"source": "record · Queensland death index 1936/B/33575",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Lindsay Atkinson D'Arcy",
-"says": "obituary · died suddenly 10 Nov 1936, aged 44, of Botany Street, Clayfield",
-"source": "record · Trove, Australian newspapers",
-"link": "https://nla.gov.au/nla.news-article37013266",
-"kind": "record"
-},
-{
-"name": "Margaret Maria Isabella D'Arcy",
-"says": "marriage notice · “At Chatham, CAPTAIN J. M. JONES, of the ROYAL DENBIGH MILITIA, to MISS D'ARCY, ELDEST DAUGHTER OF COL. D'ARCY, OF THE ROYAL ENGINEERS” — at Chatham Church, by the Rev. I. T. Jones",
-"source": "record · Oxford University and City Herald, 1 Nov 1806, p.2; Chester Courant, 11 Nov 1806, p.3",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Margarett Maria Isabella D'Arcy",
-"says": "spinster · married John Maddock Jones Esq. of Penybryn, Ruabon, Denbighshire · Chatham, 23 October 1806, by licence · witness Joseph D'Arcy",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Margarett Maria Isabella D'Arcy",
-"says": "“At Havre, MARGARET, wife of MAJOR JONES, DENBIGH MILITIA, and DAUGHTER OF THE LATE MAJOR-GENERAL D'ARCY, R.E.” · the first record to give Robert D'Arcy a corps as well as a rank, and to call anyone his child",
-"source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Margarett Maria Isabella D'Arcy",
-"says": "DEATH ACT N° 43, Ingouville, 1 FEBRUARY 1843 · “Marguéritta Maria Elisabella Darcy, sans profession”, died that day at six in the morning at her home, RUE DE L'HÔPITAL, MAISON LECHEVALIER · AGED SIXTY-ONE — born about 1781 · her birthplace entered as unknown · “épouse de John Maddack Jones” · declared the same day at four in the afternoon by Jean Baptiste Lecordier, rentier, 59, and Jean Olivier Quesney, rentier, 58½, both of Ingouville and neither a relative",
-"source": "record · Archives départementales de la Seine-Maritime, 4 E 9077 — Le Havre, ancienne commune d'Ingouville, registre des décès 1843, view 23",
-"link": "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806",
-"kind": "record"
-},
-{
-"name": "Maria D'Arcy, née White",
-"says": "died 04/09/1856 · parents: Maria Gardener · John Javis White",
-"source": "record · Queensland death index 1856/B/50",
-"link": "https://www.familyhistory.bdm.qld.gov.au/",
-"kind": "record"
-},
-{
-"name": "Richard D'Arcy",
-"says": "death notice · “At St Helier's, Jersey, RICHARD, THIRD SON of the late LIEUT. COL. D'ARCY, ROYAL ARTILLERY, and LADY CATHERINE, SISTER OF THE PRESENT EARL DE LA WARR, aged 33” · 13 May 1857",
-"source": "record · Saint James's Chronicle, 23 May 1857, p.1; Clare Journal, 28 May 1857",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "buried Chatham St Mary the Virgin, 19 May 1827, entry 1571 · AGE 76 · abode Chatham — the register the tree's 1751 has always rested on",
-"source": "record · FreeREG, Chatham St Mary the Virgin",
-"link": "https://www.freereg.org.uk/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "London Gazette, 19 July 1813, issue 16755 page 1431 — “Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh”, in an Office of Ordnance list of Royal Engineers promotions. Ten Gazette notices name him between 1793 and 1819.",
-"source": "record · The London Gazette, issue 16755 p.1431",
-"link": "https://www.thegazette.co.uk/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "listed among the Second Lieutenants and Practitioner Engineers of the Corps of Engineers in the printed Army List of 1778",
-"source": "record · A List of the Officers of the Army, 1778",
-"link": "https://archive.org/details/alistofficersar00offigoog",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "“Brevet Colonel Robert D'Arcy to be Colonel, vice Evelegh” · Office of Ordnance, Corps of Royal Engineers, gazetted 19 July 1813",
-"source": "record · The London Gazette, issue 16755, 19 July 1813",
-"link": "https://www.thegazette.co.uk/London/issue/16755/page/1431",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "married JEAN WARD at PORTSEA ST MARY, 21 JUNE 1779 · the marriage this archive has carried on a family tree since it began, nine months before their son Joseph was christened in the same church",
-"source": "record · Hampshire Marriages / Baptisms, Hampshire Genealogical Society (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "“At Chatham, on the 13th instant, Major-General D'Arcy, late of the Corps of Royal Engineers” · Morning Chronicle, 17 May 1827 — his death date from the contemporary press rather than from Connolly's book of 1898",
-"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "“On Saturday Major-General D'Arcy, whose death we announced last week, WAS INTERRED AT CHATHAM WITH MILITARY HONOURS” · Kent Herald, 24 May 1827 — the Saturday was 19 May, the date of entry 1571 in Chatham's burial register",
-"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "“At Chatham, AT AN ADVANCED AGE, Major General D'Arcy” · Kent Herald, 17 May 1827 — and not one of the seventeen notices gives his forename or names a single relative",
-"source": "record · British Newspaper Archive, 17 notices, May–June 1827 (FindMyPast)",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "17 JANUARY 1776 · PRACTITIONER ENGINEER AND SECOND LIEUTENANT, The Corps of Engineers — his first commission, and the earliest record of him in this archive. The seniority date is printed in the Army Lists of 1778 and 1781",
-"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "8 May 1802 · Captain promoted MAJOR IN THE ARMY, Royal Engineers · War Office 11 May 1802 · London Gazette 15478 p.468",
-"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "1 March 1805 · Brevet Major promoted LIEUTENANT-COLONEL, Corps of the Royal Engineers, vice Nepean · Ordnance Office 18 March 1805 · London Gazette 15789 p.351",
-"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "4 June 1813 · Lieutenant-Colonel promoted COLONEL IN THE ARMY BY BREVET by the Prince Regent · War Office 7 June 1813 · London Gazette 16737 p.1100",
-"source": "record · British Army Lists & Commission Registers 1661-1826 / Officer Promotions 1800-1815 (FindMyPast), citing the London Gazette",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "named in 1843 as “the late MAJOR-GENERAL D'ARCY, R.E.”, father of Margaret Jones · rank, corps and the fact of his death, in one line of a London paper",
-"source": "record · Morning Herald (London), 13 February 1843, p.8 (British Newspaper Archive)",
-"link": "https://www.findmypast.com.au/search-newspapers",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "will proved 4 July 1827 · “Major General in the Army and Colonel of the Royal Engineers of Chatham, Kent”",
-"source": "record · TNA PROB 11/1728/64 (digitised, unread)",
-"link": "https://discovery.nationalarchives.gov.uk/details/r/D192027",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "entry 203 · 2nd Lt 17 Jan 1776 → Major-General 12 Aug 1819, C.B. · “Died at Chatham, 13 5 1827”",
-"source": "record · Connolly, Roll of Officers of the Corps of Royal Engineers",
-"link": "https://archive.org/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "described as “Col. D'Arcy, CHIEF ENGINEER OF CHATHAM LINES” — the only record giving him a post as well as a rank",
-"source": "record · Kentish Gazette, 14 May 1805, p.4",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "described in March 1823 as “MAJOR-GEN. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found naming his corps",
-"source": "record · Hampshire Chronicle, 24 March 1823, p.3",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "named in November 1806 as “COL. D'ARCY, OF THE ROYAL ENGINEERS” — the earliest record found anywhere giving his corps",
-"source": "record · Oxford University and City Herald, 1 Nov 1806, p.2",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Robert D'Arcy",
-"says": "death notice · “CAPTAIN ROBERT D'ARCY, late of the INDIA COMPANY'S ARMY, son of the late COLONEL D'ARCY of the ROYAL ARTILLERY and LADY CATHERINE” · died Bangor, North Wales, 14 June 1862",
-"source": "record · London Evening Standard and Morning Herald, 25 June 1862",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Robert West D'Arcy",
-"says": "baptised WESTMINSTER, 16 OCTOBER 1820 · father JOSEPH D'ARCY · mother CATHERINE GEORGIANA · WEST is his mother's maiden surname, standing as his middle name",
-"source": "record · England Births & Baptisms 1538-1975 (FamilySearch index), transcripts read on FindMyPast",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Robert West D'Arcy",
-"says": "MARRIED ANNIE ADAMS at BOMBAY, 20 JANUARY 1846 · the bride this archive could not afford to see — the transcript was paywalled even on a paid trial, and the free index gives her name and the day",
-"source": "record · Gentleman's Magazine marriage announcements, indexed by the Families in British India Society",
-"link": "https://fibis.ourarchives.online/",
-"kind": "record"
-},
-{
-"name": "Robert West D'Arcy",
-"says": "THE SAME MARRIAGE IN THE INDIA OFFICE'S OWN RETURN · “Presidency of Marriage BOMBAY · Marriage Year 1846 · Husband ROBT WEST D'ARCY · Wife ANNE H ADAMS” — an independent index of the IOR ecclesiastical returns, which spells her ANNE H where the magazine prints ANNIE",
-"source": "record · Index of Ecclesiastical returns, IOR Bombay Marriages, indexed by FIBIS",
-"link": "https://fibis.ourarchives.online/",
-"kind": "record"
-},
-{
-"name": "Robert West D'Arcy",
-"says": "HIS DEATH REPORTED BACK TO INDIA · Allen's Indian Mail, the Anglo-Indian paper of record, carries “D'ARCY, Robert · BANGOR, N.WALES · 1862” — the same periodical had printed his Bombay marriage twice in 1846, as Robert W. and as Robert West",
-"source": "record · Periodical: Allen's Indian Mail, indexed by FIBIS",
-"link": "https://fibis.ourarchives.online/",
-"kind": "record"
-},
-{
-"name": "Robert West D'Arcy",
-"says": "marriage · 1846, BOMBAY · carries his mother's family name — Lady Catherine Georgiana WEST · indexed, transcript paywalled even on a paid trial",
-"source": "record · British India Office Marriages",
-"link": "https://www.findmypast.co.uk/",
-"kind": "record"
-},
-{
-"name": "Anna Maria D'Arcy",
-"says": "1791–1791",
-"source": "family tree",
-"link": "/people/anna-maria-d-arcy-1791",
-"kind": "tree"
-},
-{
-"name": "Anna Maria d'Arcy",
-"says": "1792–1800 · Portsmouth, Hampshire, England",
-"source": "family tree",
-"link": "/people/anna-maria-d-arcy-1792",
-"kind": "tree"
-},
-{
-"name": "Arthur Neville \"Bill\" D'Arcy",
-"says": "1924–1985 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/arthur-neville-bill-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Barbara Conyers D'Arcy",
-"says": "1600–1696 · Hornby, West Riding, Yorkshire, England",
-"source": "family tree",
-"link": "/people/barbara-conyers-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Caroline Louisa D'ARCY",
-"says": "1717–1778 · Westminster St James, Middlesex, England, Kingdom of Great Britain",
-"source": "family tree",
-"link": "/people/caroline-louisa-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "1789–1876 · Barbados",
-"source": "family tree",
-"link": "/people/catherine-d-arcy-1789",
-"kind": "tree"
-},
-{
-"name": "Catherine D'Arcy",
-"says": "1867–1939 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/catherine-d-arcy-1867",
-"kind": "tree"
-},
-{
-"name": "Catherine Lucy Jane D'Arcy",
-"says": "1831–1877 · Milford, Lymington, Hampshire, England",
-"source": "family tree",
-"link": "/people/catherine-lucy-jane-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Catherine Maria D'Arcy",
-"says": "1827–1900 · Parramatta, New South Wales, Australia",
-"source": "family tree",
-"link": "/people/catherine-maria-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Catherine Sophia Ann D'ARCY",
-"says": "1836–1913 · Richmond, New South Wales, Australia",
-"source": "family tree",
-"link": "/people/catherine-sophia-ann-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Charlotte D'Arcy",
-"says": "1794–1869 · Lyme Regis, Dorset",
-"source": "family tree",
-"link": "/people/charlotte-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Charlotte Maria D'Arcy",
-"says": "1825–1854 · Chatham, Medway, UK",
-"source": "family tree",
-"link": "/people/charlotte-maria-d-arcy-1825",
-"kind": "tree"
-},
-{
-"name": "Charlotte Maria D'Arcy",
-"says": "1869–1939 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/charlotte-maria-d-arcy-1869",
-"kind": "tree"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "1759–1778 · Royal Engineer 2lt West Indies · Barbados, Caribbean",
-"source": "family tree",
-"link": "/people/constantine-d-arcy-1759",
-"kind": "tree"
-},
-{
-"name": "Constantine D'Arcy",
-"says": "1786–1805 · Royal Engineer 2lt West Indies · Barbados, Caribbean",
-"source": "family tree",
-"link": "/people/constantine-d-arcy-1786",
-"kind": "tree"
-},
-{
-"name": "Conyers (of Hornby Castle) D'arcy",
-"says": "1570–1653 · 7th Lord Darcy Knayth, 4th Baron Conyers, of \"Hornby\", Sir · Hornby Castle, Yorkshire, England",
-"source": "family tree · above the Hornby graft",
-"link": "/people/conyers-of-hornby-castle-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy",
-"says": "1598–1689 · Earl of Holdernesse ( 1st · Hornby Castle, North Riding, Yorkshire, England",
-"source": "family tree · above the Hornby graft",
-"link": "/people/conyers-1st-earl-of-holderness-8th-lord-darcy-de-knayth-5th-lord-conyers-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Dorothy D'Arcy",
-"says": "1597–1666 · Hornby, Yorkshire, England",
-"source": "family tree",
-"link": "/people/dorothy-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Edward D'ARCY",
-"says": "1620–1621 · Hornby Castle, Yorkshire, England",
-"source": "family tree",
-"link": "/people/edward-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Edwin Francis D'Arcy",
-"says": "1873–1949 · Clerk, Qld Railway Department · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/edwin-francis-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Elizabeth D'Arcy",
-"says": "1610–1729 · Hornby Castle, nr Bedale, Yorkshire, England",
-"source": "family tree",
-"link": "/people/elizabeth-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Elizabeth Eleanor D'Arcy",
-"says": "1852–1928 · Lymington, UK",
-"source": "family tree",
-"link": "/people/elizabeth-eleanor-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Florence Isabel D'Arcy",
-"says": "1894–1918 · 'Assistant at house' (mentioned on death certificate) · Brisbane, Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/florence-isabel-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Frank Hyde D'Arcy",
-"says": "1838–1868 · Madeira, Portugal",
-"source": "family tree",
-"link": "/people/frank-hyde-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Frederick Robert D'Arcy",
-"says": "1811–1875 · Surveyor · Chatham, Kent, England",
-"source": "family tree",
-"link": "/people/frederick-robert-d-arcy",
-"kind": "tree"
-},
-{
-"name": "G Norman D'Arcy",
-"says": "1849–1870 · Mumbai, Maharashtra, India",
-"source": "family tree",
-"link": "/people/g-norman-d-arcy",
-"kind": "tree"
-},
-{
-"name": "George Abbas Kooli D'Arcy",
-"says": "1818–1885 · Governor, The Gambia · Montagu Square, Paddington, Greater London, UK",
-"source": "family tree",
-"link": "/people/george-abbas-kooli-d-arcy",
-"kind": "tree"
-},
-{
-"name": "George Lindsay D'Arcy",
-"says": "1829–1901 · Parramatta, New South Wales, Australia",
-"source": "family tree · direct line",
-"link": "/people/george-lindsay-d-arcy",
-"kind": "tree"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "1783–1849 · Army Officer, Major in 39th Battallion of Foot · Portsmouth, Hampshire, England or West Indies",
-"source": "family tree · direct line",
-"link": "/people/george-pitt-d-arcy-1783",
-"kind": "tree"
-},
-{
-"name": "George Pitt D'Arcy",
-"says": "1864–1931 · Chief Clerk Railway Department · Brisbane, Brisbane, Queensland, Australia",
-"source": "family tree · direct line",
-"link": "/people/george-pitt-d-arcy-1864",
-"kind": "tree"
-},
-{
-"name": "George Schomberg d'Arcy",
-"says": "1716–1722 · London, Middlesex, England, Kingdom of Great Britain",
-"source": "family tree",
-"link": "/people/george-schomberg-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Geraldine D'Arcy",
-"says": "1872–1937 · Brisbane, Australia",
-"source": "family tree",
-"link": "/people/geraldine-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Grace D'Arcy",
-"says": "1611–1680 · Newborough, Yorkshire, England",
-"source": "family tree",
-"link": "/people/grace-d-arcy-1611",
-"kind": "tree"
-},
-{
-"name": "Grace D'Arcy",
-"says": "1633–1657 · Hornby, Yorkshire, England",
-"source": "family tree",
-"link": "/people/grace-d-arcy-1633",
-"kind": "tree"
-},
-{
-"name": "Hilda Georgina D'Arcy",
-"says": "1890–1969 · Brisbane, Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/hilda-georgina-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Ida Grace D'Arcy",
-"says": "1872–1941 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/ida-grace-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Ida Joyce D'Arcy",
-"says": "1908–1969 · Brisbane, Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/ida-joyce-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Isabel D'Arcy",
-"says": "b. 1609 · Hornby, North Riding, Yorkshire, England",
-"source": "family tree",
-"link": "/people/isabel-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Jane D'Arcy",
-"says": "1787–1875 · Barbados",
-"source": "family tree",
-"link": "/people/jane-d-arcy",
-"kind": "tree"
-},
-{
-"name": "John Hyde D'Arcy",
-"says": "1832–1852 · Lymington, Hampshire, UK",
-"source": "family tree",
-"link": "/people/john-hyde-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Joseph D'Arcy",
-"says": "1780–1848 · Colonel, Royal Artillery · Portsmouth, Hampshire",
-"source": "family tree",
-"link": "/people/joseph-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Joseph William D'Arcy",
-"says": "1840–1882 · Late  Royal  Navy · Priestlands, Milford, Lymington, Hampshire, England",
-"source": "family tree",
-"link": "/people/joseph-william-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Josephine D'Arcy",
-"says": "1834–1903 · Milford on Sea, Hampshire, England, United Kingdom",
-"source": "family tree",
-"link": "/people/josephine-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Kenneth Lindsay D'Arcy",
-"says": "1927–2010 · Insurance Manager · Sandgate, Queensland, Australia",
-"source": "family tree · direct line",
-"link": "/people/kenneth-lindsay-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Lindesay Atkinson D'Arcy",
-"says": "1892–1936 · Clerk · Brisbane, Brisbane, Queensland, Australia",
-"source": "family tree · direct line",
-"link": "/people/lindesay-atkinson-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Louisa Margaret D'Arcy",
-"says": "1866–1940 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/louisa-margaret-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Margaret D'Arcy",
-"says": "1594–1668 · Hornby, Yorkshire, England",
-"source": "family tree",
-"link": "/people/margaret-d-arcy-1594",
-"kind": "tree"
-},
-{
-"name": "Margaret Maria Isabella D'Arcy",
-"says": "1781–1843 · Portsmouth, Hampshire, England",
-"source": "family tree",
-"link": "/people/margaret-maria-isabella-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Margaret? D'Arcy",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree · direct line",
-"link": "/people/margaret-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Mary Catherine Georgina D'Arcy",
-"says": "1850–1927 · Lymington, Hampshire, England",
-"source": "family tree",
-"link": "/people/mary-catherine-georgina-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Mary D'Arcy",
-"says": "b. 1624",
-"source": "family tree",
-"link": "/people/mary-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Mary Elvina Annie D'Arcy",
-"says": "1862–1949 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/mary-elvina-annie-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Philadelphia D'ARCY",
-"says": "1619–1627",
-"source": "family tree",
-"link": "/people/philadelphia-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Richard Wellesley D'Arcy",
-"says": "1824–1859 · Bailiwick of Jersey",
-"source": "family tree",
-"link": "/people/richard-wellesley-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Richard d'Arcy",
-"says": "b. 1784 · Portsmouth, Southampton, United Kingdom",
-"source": "family tree",
-"link": "/people/richard-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Robert D'Arcy",
-"says": "1751–1827 · Army Officer, Major General and Commander of Royal Engineers, Chatham, Kent, England · North Yorkshire, England, United Kingdom",
-"source": "family tree · direct line",
-"link": "/people/robert-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Robert Edward D'Arcy",
-"says": "1777–1827",
-"source": "family tree",
-"link": "/people/robert-edward-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Robert Joseph D'Arcy",
-"says": "1864–1910 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/robert-joseph-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Robert Lindesay D'Arcy",
-"says": "1865–1868 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/robert-lindesay-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Robert West D'Arcy",
-"says": "1820–1862 · London, England",
-"source": "family tree",
-"link": "/people/robert-west-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Sophia Maria Louisa D'Arcy",
-"says": "1842–1927 · New South Wales, Australia",
-"source": "family tree",
-"link": "/people/sophia-maria-louisa-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Thomas (Francis) D'Arcy",
-"says": "1681–1776 · St. James Palace, London, Middlesex, Englan",
-"source": "family tree · above the Hornby graft",
-"link": "/people/thomas-francis-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Thomas D'Arcy",
-"says": "1750–1750 · Hornby, Yorkshire, England",
-"source": "family tree",
-"link": "/people/thomas-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Valma D'Arcy",
-"says": "d. 2010 · Brisbane Q'ld Australia",
-"source": "family tree",
-"link": "/people/valma-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Vivian Lindsay D'Arcy",
-"says": "1916–2006 · Brisbane, QLD, Australia",
-"source": "family tree",
-"link": "/people/vivian-lindsay-d-arcy",
-"kind": "tree"
-},
-{
-"name": "William Arthur D'Arcy",
-"says": "1868–1870 · Brisbane, Queensland, Australia",
-"source": "family tree",
-"link": "/people/william-arthur-d-arcy",
-"kind": "tree"
-},
-{
-"name": "William David d'Arcy",
-"says": "b. 1842",
-"source": "family tree",
-"link": "/people/william-david-d-arcy",
 "kind": "tree"
 }
 ]
@@ -5063,6 +5091,26 @@
 ]
 },
 {
+"surname": "ADAMS",
+"n": 2,
+"rows": [
+{
+"name": "Annie Adams",
+"says": "HER MIDDLE NAME, WHICH THE TREE COULD NOT DECIDE · the family tree hedged “Anne Heevish or Hewish Adams” · THREE RECORDS NOW AGREE AND NONE OF THEM COPIED THE OTHERS: the India Office ecclesiastical return indexes her ANNE H ADAMS, the Gentleman's Magazine announcement ANNIE ADAMS, and the plate list of her great-niece's book names her ANNIE HEWISH D'ARCY, NEE ADAMS",
+"source": "record · Berta Ruck, Ancestral Voices (London, Hutchinson, 1972), list of illustrations, plates between pp.128-129 — Internet Archive ancestralvoices00ruck_0, catalogued under the subject “Dorsey family”",
+"link": "https://archive.org/details/ancestralvoices00ruck_0",
+"kind": "record"
+},
+{
+"name": "Annie Adams",
+"says": "MARRIED ROBERT WEST D'ARCY at BOMBAY in 1846 · ANNIE in the Gentleman's Magazine, ANNE H in the India Office return · nothing else about her is known to this archive — no parents, no birthplace, no death",
+"source": "record · Gentleman's Magazine marriage announcements and IOR Bombay Marriages, both indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/",
+"kind": "record"
+}
+]
+},
+{
 "surname": "BRANDENBURG",
 "n": 2,
 "rows": [
@@ -5512,19 +5560,6 @@
 "source": "family tree · direct line",
 "link": "/people/mary-abbot",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "ADAMS",
-"n": 1,
-"rows": [
-{
-"name": "Annie Adams",
-"says": "MARRIED ROBERT WEST D'ARCY at BOMBAY in 1846 · ANNIE in the Gentleman's Magazine, ANNE H in the India Office return · nothing else about her is known to this archive — no parents, no birthplace, no death",
-"source": "record · Gentleman's Magazine marriage announcements and IOR Bombay Marriages, both indexed by FIBIS",
-"link": "https://fibis.ourarchives.online/",
-"kind": "record"
 }
 ]
 },
@@ -6759,6 +6794,19 @@
 "says": "signed a memorial notice for Q.M.S. Arthur Sneyd, 20 Aug 1919 — surname unknown",
 "source": "record · Trove, Australian newspapers",
 "link": "https://nla.gov.au/nla.news-article20379031",
+"kind": "record"
+}
+]
+},
+{
+"surname": "RUCK",
+"n": 1,
+"rows": [
+{
+"name": "Arthur Ashley Ruck",
+"says": "LIEUTENANT PROMOTED TO CAPTAIN, 2nd BATTALION 8th (THE KING'S) REGIMENT, in the Afghan war of 1878-1881 · he married Elizabeth Eleanor D'Arcy at Penzance the autumn before it · a Ruck child, AMY R., is indexed as BORN IN INDIA IN 1879 and living in Lancashire at the 1881 census",
+"source": "record · The British in Afghanistan 1878-1881, and the 1881 census surname index of individuals born in India, both indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/",
 "kind": "record"
 }
 ]

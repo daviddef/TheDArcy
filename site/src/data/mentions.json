@@ -458,6 +458,11 @@
 "title": "Twelve generations, and two claims too far."
 },
 {
+"path": "/changes",
+"snippet": "…Robert D'Arcy, R.E., C.B.», «Jean D'Arcy, nee Ward», «Colonel Joseph D'Arcy, R.A.», «Lady Catherine D'Arcy, nee West», «The Three Aunts D'Arcy, JANE, KATE AND CHARLOTTE», one of those aunts «in Persian dress BROUGHT HOME BY HER BROTHER…",
+"title": "What changed"
+},
+{
 "path": "/errands",
 "snippet": "…o produce. What it settles THE MOST LIKELY DOCUMENT TO NAME THE ENGLISH FAMILY AFTER 1850 Catherine D'Arcy died at Bedford Square, Brighton in January 1876 leaving an estate that attracted duty. The Death Duty register states its value…",
 "title": "Errands"
@@ -1068,7 +1073,13 @@
 }
 ],
 "elizabeth-dixie": [],
-"elizabeth-eleanor-d-arcy": [],
+"elizabeth-eleanor-d-arcy": [
+{
+"path": "/worklist",
+"snippet": "…and then Amy Darwin née Ruck and Charles Darwin . Why a novelist had them: FreeBMD gives Elizabeth Eleanor D'Arcy married Arthur Ashley Ruck at Penzance in the September quarter of 1877 , GRO 5c 381. Berta was born the next year. WHAT IS BLOCK…",
+"title": "The work list"
+}
+],
 "elizabeth-keeling": [
 {
 "path": "/tree",
@@ -1371,7 +1382,7 @@
 "george-abbas-kooli-d-arcy": [
 {
 "path": "/changes",
-"snippet": "…ed by register.json reach 61 of 61 people» on every build, and it is the gate that caught George Abbas Kooli D'Arcy yesterday. found Fixedthree more tools chose a build directory by hardcoding it, including the one written for own error 49Fixede…",
+"snippet": "…ND CHARLOTTE», one of those aunts «in Persian dress BROUGHT HOME BY HER BROTHER JOSEPH», «George Abbas Kooli D'Arcy», «Robert West D'Arcy», «Annie Hewish D'Arcy, nee Adams» — and then «Amy Darwin, nee Ruck» and «Charles Darwin». PHOTOGRAPHS OF N…",
 "title": "What changed"
 },
 {
@@ -2540,7 +2551,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…d «parent not in the tree» using ancestors.json, WHICH HOLDS ONLY DIRECT-LINE ANCESTORS — Joseph D'Arcy reads as «0 in tree» there while having a person page. Asked of the GEDCOM's 15,643 individuals instead, the picture changed, and…",
+"snippet": "…a roll-call: «Major-General Robert D'Arcy, R.E., C.B.», «Jean D'Arcy, nee Ward», «Colonel Joseph D'Arcy, R.A.», «Lady Catherine D'Arcy, nee West», «The Three Aunts D'Arcy, JANE, KATE AND CHARLOTTE», one of those aunts «in Persian dre…",
 "title": "What changed"
 },
 {
@@ -2625,7 +2636,7 @@
 },
 {
 "path": "/worklist",
-"snippet": "…ed 21 Done 117 Struck 3 134. Blocked — waiting on a person or an institution this archive Joseph D'Arcy's three sons — two careers now documented, and what is left needs a repository Both were baptised at Westminster and both are now…",
+"snippet": "…ed 22 Done 117 Struck 3 134. Blocked — waiting on a person or an institution this archive Joseph D'Arcy's three sons — two careers now documented, and what is left needs a repository Both were baptised at Westminster and both are now…",
 "title": "The work list"
 }
 ],
@@ -3629,7 +3640,7 @@
 },
 {
 "path": "/changes",
-"snippet": "…. AND THE COUNT THAT LOOKED LIKE A HARVEST WAS MOSTLY GHOSTS. A default FIBIS search for «Robert D'Arcy» returns TWELVE SOURCES, which reads like twelve findings. THE DEFAULT IS SOUNDEX, AND ON THIS SURNAME IT MATCHES TRACY, TRACEY,…",
+"snippet": "…llustrations, which the item page shows without borrowing, is a roll-call: «Major-General Robert D'Arcy, R.E., C.B.», «Jean D'Arcy, nee Ward», «Colonel Joseph D'Arcy, R.A.», «Lady Catherine D'Arcy, nee West», «The Three Aunts D'Arcy,…",
 "title": "What changed"
 },
 {
@@ -3854,7 +3865,7 @@
 "robert-west-d-arcy": [
 {
 "path": "/changes",
-"snippet": "…E SINCE AUGUST AS A BARE FACT WITH THE WORDS «TRANSCRIPT PAYWALLED EVEN ON A PAID TRIAL». Robert West D'Arcy, second son of Joseph, married at Bombay in 1846 and that was all this archive could say. FIBIS — the FAMILIES IN BRITISH INDIA S…",
+"snippet": "…unts «in Persian dress BROUGHT HOME BY HER BROTHER JOSEPH», «George Abbas Kooli D'Arcy», «Robert West D'Arcy», «Annie Hewish D'Arcy, nee Adams» — and then «Amy Darwin, nee Ruck» and «Charles Darwin». PHOTOGRAPHS OF NINE OF THESE PEOPLE WE…",
 "title": "What changed"
 },
 {
