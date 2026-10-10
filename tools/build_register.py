@@ -837,6 +837,39 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- Oswestry in print, and two Queensland almanacs, 11 October 2026 ------
+# The same method as the D'Arcy run, turned on the Sneyd/Oliver and Wakefield
+# lines at David's asking.
+OSW = ("record \u00b7 Shropshire Parish Registers, Diocese of St Asaph \u2014 the printed "
+       "Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro "
+       "and shropshireparish07asapshro")
+OSWL = "https://archive.org/details/shropshireparish06asapshro"
+rec("David Oliver",
+    "A COOPER OF CROSS STREET, OSWESTRY \u00b7 the printed parish register gives him an occupation and an address this archive did not have \u00b7 BURIED AT OSWESTRY 21 JUNE 1808, AGED 59, which puts his birth about 1749",
+    OSW, OSWL)
+rec("Elizabeth Margaret Oliver",
+    "HER BAPTISM IN A SECOND, INDEPENDENT TRANSCRIPTION \u00b7 \u201cMay 19. Elizabeth, d. of DAVID OLIVER, CROSS ST., & MARY, b. 7 \u2026 bap.\u201d, under the year 1782 \u00b7 the baptism date, the parents and the year all match what this archive took from FindMyPast \u2014 BUT THE PRINTED TRANSCRIPT SAYS SHE WAS BORN ON THE 7TH AND FINDMYPAST'S INDEX SAYS THE 17TH \u00b7 one digit, two transcriptions of one entry, and no way to choose between them without the register itself",
+    OSW, OSWL)
+rec("Elizabeth Margaret Oliver",
+    "SIBLINGS, AND THE FIRST THIS ARCHIVE HAS HAD \u00b7 the same parents at Oswestry baptise DIANNA on 23 MARCH 1777 and DAVID on 12 JULY 1789, the latter entered as \u201cs. of David Oliver, COOPER, Cross Street, & Mary\u201d \u00b7 a family of at least three children in one street",
+    OSW, OSWL)
+rec("Samuel Sneyd",
+    "HIS MARRIAGE IS NOT IN THE PRINTED OSWESTRY REGISTER, AND THAT PROVES NOTHING \u00b7 the eight printed St Asaph volumes carry 581 Oswestry marriages, and the only Sneyds in any of them are GENTRY SNEYDS OF BISHTON, Staffordshire, with no connection shown to this family \u00b7 BUT THE PRINTED MARRIAGE RUN ENDS IN 1808 and the marriage to Elizabeth Oliver is placed about 1809 \u2014 THE TRANSCRIPT STOPS ONE YEAR SHORT, so the absence is coverage and not evidence",
+    OSW, "https://archive.org/details/shropshireparish07asapshro")
+
+SLAT = "https://archive.org/details/SlatersQueenslandAlmanac1904"
+rec("Jabez Wakefield",
+    "\u201cAN OLD RESIDENT AND EX-MAYOR OF ROCKHAMPTON\u201d \u00b7 his name stands in the obituary list of Slater's Queensland Almanac for 1904, under the 7th of February, among the deaths of the previous year \u00b7 this archive already held his death as 8 FEBRUARY 1903 from the Queensland register, so the two agree to a day \u2014 WHAT IS NEW IS THE OFFICE: he had been MAYOR OF ROCKHAMPTON, which no page here has ever said",
+    "record \u00b7 Slater's Queensland Almanac 1904, obituary list", SLAT)
+rec("Hiram Wakefield",
+    "A TIMBER MERCHANT WHO TOOK APPRENTICES \u00b7 the Aldine History of Queensland of 1888 twice describes men who \u201centered the employ of HIRAM WAKEFIELD, TIMBER MERCHANT\u201d and \u201clearned his trade with Mr. Hiram Wakefield\u201d in Brisbane \u00b7 and in 1868 Slater's lists him running a TWO-HORSE COACH between BRISBANE AND SANDGATE via German Station",
+    "record \u00b7 The Aldine History of Queensland (1888) and Slater's Queensland Almanac 1868",
+    "https://archive.org/details/SlatersQueenslandAlmanac1868")
+rec("Hiram Wakefield",
+    "AND A PUBLIC MAN FOR TWENTY YEARS \u00b7 \u201cHIRAM WAKEFIELD, Esq., J.P.\u201d stands as a TRUSTEE and later DIRECTOR in Slater's Queensland Almanac for 1882, 1883, 1884, 1885, 1886, 1887, 1890 and 1891, beside Hon. James Swan M.L.C., George Hall and JAMES R. DICKSON, later Premier of Queensland \u00b7 in 1889 and 1890 he sits on a board with the Mayor of Brisbane \u00b7 THE 1888 VOLUME CALLS HIM \u201cM.L.A.\u201d AND EVERY OTHER YEAR CALLS HIM \u201cJ.P.\u201d: one reading against eight, recorded as a discrepancy and NOT as a seat in the Assembly",
+    "record \u00b7 Slater's Queensland Almanac, the volumes for 1882-1891",
+    "https://archive.org/details/SlatersQueenslandAlmanac1887")
+
 # --- Phillimore's printed Gloucestershire marriages, 11 October 2026 ------
 PHIL = ("record \u00b7 Phillimore, Gloucestershire Parish Registers: Marriages, "
         "six volumes read in full text \u2014 Internet Archive gloucestershirep15phil "

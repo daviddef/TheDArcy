@@ -1166,6 +1166,26 @@
 "slug": "william-james-frazer-murdoch",
 "n": 1
 },
+"david-oliver": {
+"name": "David Oliver",
+"surname": "OLIVER",
+"rows": [
+{
+"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "A COOPER OF CROSS STREET, OSWESTRY · the printed parish register gives him an occupation and an address this archive did not have · BURIED AT OSWESTRY 21 JUNE 1808, AGED 59, which puts his birth about 1749",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish06asapshro"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "david-oliver",
+"n": 2
+},
 "john-maddock-jones": {
 "name": "John Maddock Jones",
 "surname": "JONES",
@@ -1380,21 +1400,6 @@
 "treeLink": "",
 "slug": "william-swonhungre",
 "n": 2
-},
-"david-oliver": {
-"name": "David Oliver",
-"surname": "OLIVER",
-"rows": [
-{
-"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
-"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "david-oliver",
-"n": 1
 },
 "lyddya-sinegar": {
 "name": "Lyddya Sinegar",
@@ -2806,6 +2811,6 @@
 "named": 228,
 "withTreePage": 57,
 "ownPage": 172,
-"mentions": 426
+"mentions": 433
 }
 }

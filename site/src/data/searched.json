@@ -4295,6 +4295,49 @@
         "stone",
         "archive-org"
       ]
+    },
+    {
+      "src": "Shropshire Parish Registers, Diocese of St Asaph — eight printed volumes, read entire",
+      "url": "https://archive.org/details/shropshireparish06asapshro",
+      "what": "The Oliver family of Oswestry, and the marriage of Samuel Sneyd to Elizabeth Oliver about 1809",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**Oswestry's own registers are in print, and they hand over a family.** **DAVID OLIVER, COOPER, OF CROSS STREET** — an occupation and an address this archive did not have — **buried at Oswestry 21 June 1808, aged 59**, which puts his birth about 1749. With Mary he baptises **DIANNA on 23 March 1777**, **ELIZABETH on 19 May 1782** and **DAVID on 12 July 1789**. Elizabeth is this archive's Elizabeth Margaret Oliver, who married Samuel Sneyd; **these are the first siblings she has ever had here.**\n\n**And a one-digit disagreement worth keeping.** The printed transcript reads «Elizabeth, d. of David Oliver, Cross St., & Mary, **b. 7**»; FindMyPast's index of the same entry says born **17 May**. Two transcriptions of one register line, agreeing on the baptism, the parents and the year, differing on the day of birth. **Neither can settle it; only the register can.**\n\n**The Sneyd marriage is NOT there, and that proves nothing.** The eight volumes print 581 Oswestry marriages and the only Sneyds in any of them are the gentry Sneyds of Bishton. **But the printed marriage run ends in 1808**, and the marriage is placed about 1809 — **the transcript stops one year short of the question.**",
+      "href": "/sneyds",
+      "tags": [
+        "sneyd",
+        "oliver",
+        "oswestry",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Slater's and Pugh's Queensland Almanacs, and the Aldine History of Queensland",
+      "url": "https://archive.org/details/SlatersQueenslandAlmanac1904",
+      "what": "The Wakefield brothers, Hiram and Jabez, in the Queensland printed record",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**Two brothers with public lives this archive had not recorded.** **JABEZ WAKEFIELD** is in the obituary list of Slater's Queensland Almanac for 1904, under 7 February, as «**an old resident and ex-Mayor of Rockhampton**». The archive already held his death as 8 February 1903 from the Queensland register, so the two agree to a day — **what is new is that he had been Mayor.**\n\n**HIRAM WAKEFIELD** turns out to be a Brisbane figure. The Aldine History of Queensland (1888) twice describes men who «entered the employ of **Hiram Wakefield, timber merchant**»; in 1868 Slater's has him running a **two-horse coach between Brisbane and Sandgate**; and from **1882 to 1891** he stands as a trustee and then director — «Hiram Wakefield, Esq., **J.P.**» — beside Hon. James Swan M.L.C. and **James R. Dickson, later Premier of Queensland**.\n\n**One reading is refused.** The 1888 volume prints him «M.L.A.» where every other year prints «J.P.». **One against eight is a compositor's slip, not a seat in the Assembly**, and it is recorded as a discrepancy.",
+      "href": "/australia",
+      "tags": [
+        "wakefield",
+        "queensland",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Internet Archive full text — «Hannah Saniger»",
+      "url": "https://archive.org/search?query=%22Hannah+Saniger%22&sin=TXT",
+      "what": "Hannah Saniger, who married James Wakefield — the direct English line",
+      "when": "11 Oct 2026",
+      "outcome": "null",
+      "got": "**Four hits and all four are one sentence about somebody else.** A Toronto history of 1923 says a Mr Dale «is a son of George and **Hannah (Saniger) Dale**, natives of England, but long residents» of Canada. **A different Hannah Saniger entirely** — this archive's married James Wakefield and went to Queensland — and the four hits are four scans of the same book. It is written down because the name is rare enough that the next person will find it too, and should not spend an evening on it.",
+      "href": "/searched",
+      "ctl": "named",
+      "tags": [
+        "saniger",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

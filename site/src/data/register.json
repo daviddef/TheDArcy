@@ -1,10 +1,10 @@
 {
-"entries": 899,
+"entries": 906,
 "distinct": 597,
-"records": 426,
+"records": 433,
 "tree": 473,
 "grafted": 98,
-"linked": 890,
+"linked": 897,
 "surnames": 206,
 "groups": [
 {
@@ -1324,7 +1324,7 @@
 },
 {
 "surname": "SNEYD",
-"n": 167,
+"n": 168,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -1597,6 +1597,13 @@
 "says": "one of three trustees, with James Voller and William Bell, Parish of Enoggera, 1872",
 "source": "record · QSA ITM3621487",
 "link": "https://www.archivessearch.qld.gov.au/items/ITM3621487",
+"kind": "record"
+},
+{
+"name": "Samuel Sneyd",
+"says": "HIS MARRIAGE IS NOT IN THE PRINTED OSWESTRY REGISTER, AND THAT PROVES NOTHING · the eight printed St Asaph volumes carry 581 Oswestry marriages, and the only Sneyds in any of them are GENTRY SNEYDS OF BISHTON, Staffordshire, with no connection shown to this family · BUT THE PRINTED MARRIAGE RUN ENDS IN 1808 and the marriage to Elizabeth Oliver is placed about 1809 — THE TRANSCRIPT STOPS ONE YEAR SHORT, so the absence is coverage and not evidence",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish07asapshro",
 "kind": "record"
 },
 {
@@ -2499,7 +2506,7 @@
 },
 {
 "surname": "WAKEFIELD",
-"n": 53,
+"n": 56,
 "rows": [
 {
 "name": "Aaron Wakefield",
@@ -2635,6 +2642,20 @@
 "kind": "record"
 },
 {
+"name": "Hiram Wakefield",
+"says": "A TIMBER MERCHANT WHO TOOK APPRENTICES · the Aldine History of Queensland of 1888 twice describes men who “entered the employ of HIRAM WAKEFIELD, TIMBER MERCHANT” and “learned his trade with Mr. Hiram Wakefield” in Brisbane · and in 1868 Slater's lists him running a TWO-HORSE COACH between BRISBANE AND SANDGATE via German Station",
+"source": "record · The Aldine History of Queensland (1888) and Slater's Queensland Almanac 1868",
+"link": "https://archive.org/details/SlatersQueenslandAlmanac1868",
+"kind": "record"
+},
+{
+"name": "Hiram Wakefield",
+"says": "AND A PUBLIC MAN FOR TWENTY YEARS · “HIRAM WAKEFIELD, Esq., J.P.” stands as a TRUSTEE and later DIRECTOR in Slater's Queensland Almanac for 1882, 1883, 1884, 1885, 1886, 1887, 1890 and 1891, beside Hon. James Swan M.L.C., George Hall and JAMES R. DICKSON, later Premier of Queensland · in 1889 and 1890 he sits on a board with the Mayor of Brisbane · THE 1888 VOLUME CALLS HIM “M.L.A.” AND EVERY OTHER YEAR CALLS HIM “J.P.”: one reading against eight, recorded as a discrepancy and NOT as a seat in the Assembly",
+"source": "record · Slater's Queensland Almanac, the volumes for 1882-1891",
+"link": "https://archive.org/details/SlatersQueenslandAlmanac1887",
+"kind": "record"
+},
+{
 "name": "Jabez Wakefield",
 "says": "died 08/02/1903 · mother: Hannah (no surname given) · father: James Wakefield",
 "source": "record · Queensland death index 1903/C/5058",
@@ -2674,6 +2695,13 @@
 "says": "married in Queensland 1863 and buried there 1903 · born Bristol 1843, he sailed on the General Hewitt at eleven",
 "source": "record · Queensland Marriages / Burials & Memorials (FindMyPast)",
 "link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Jabez Wakefield",
+"says": "“AN OLD RESIDENT AND EX-MAYOR OF ROCKHAMPTON” · his name stands in the obituary list of Slater's Queensland Almanac for 1904, under the 7th of February, among the deaths of the previous year · this archive already held his death as 8 FEBRUARY 1903 from the Queensland register, so the two agree to a day — WHAT IS NEW IS THE OFFICE: he had been MAYOR OF ROCKHAMPTON, which no page here has ever said",
+"source": "record · Slater's Queensland Almanac 1904, obituary list",
+"link": "https://archive.org/details/SlatersQueenslandAlmanac1904",
 "kind": "record"
 },
 {
@@ -4024,6 +4052,75 @@
 ]
 },
 {
+"surname": "OLIVER",
+"n": 9,
+"rows": [
+{
+"name": "David Oliver",
+"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "David Oliver",
+"says": "A COOPER OF CROSS STREET, OSWESTRY · the printed parish register gives him an occupation and an address this archive did not have · BURIED AT OSWESTRY 21 JUNE 1808, AGED 59, which puts his birth about 1749",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish06asapshro",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
+"source": "record · 1861 census, Hanley, Staffordshire (FreeCEN)",
+"link": "https://www.freecen.org.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 · the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street",
+"source": "record · General Register Office death index (FreeBMD)",
+"link": "https://www.freebmd.org.uk/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "wife, aged 71 · born OSWESTRY, SHROPSHIRE — which settles the unreadable “Staly Cladwin” of the 1861 census",
+"source": "record · 1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "born 17 MAY 1782, baptised 19 May 1782 at Oswestry St Oswald's · father DAVID OLIVER, mother MARY — the tree says 7 May 1787, two digits away",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "HER BAPTISM IN A SECOND, INDEPENDENT TRANSCRIPTION · “May 19. Elizabeth, d. of DAVID OLIVER, CROSS ST., & MARY, b. 7 … bap.”, under the year 1782 · the baptism date, the parents and the year all match what this archive took from FindMyPast — BUT THE PRINTED TRANSCRIPT SAYS SHE WAS BORN ON THE 7TH AND FINDMYPAST'S INDEX SAYS THE 17TH · one digit, two transcriptions of one entry, and no way to choose between them without the register itself",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish06asapshro",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "SIBLINGS, AND THE FIRST THIS ARCHIVE HAS HAD · the same parents at Oswestry baptise DIANNA on 23 MARCH 1777 and DAVID on 12 JULY 1789, the latter entered as “s. of David Oliver, COOPER, Cross Street, & Mary” · a family of at least three children in one street",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish06asapshro",
+"kind": "record"
+},
+{
+"name": "Elizabeth Margaret Oliver",
+"says": "1787–1861 · Oswestry, Shropshire, England, United Kingdom",
+"source": "family tree · direct line",
+"link": "/people/elizabeth-margaret-oliver",
+"kind": "tree"
+}
+]
+},
+{
 "surname": "ROSSITER",
 "n": 9,
 "rows": [
@@ -4378,54 +4475,6 @@
 "source": "Berkeley Castle Muniments, via TNA Discovery",
 "link": "https://discovery.nationalarchives.gov.uk/",
 "kind": "record"
-}
-]
-},
-{
-"surname": "OLIVER",
-"n": 6,
-"rows": [
-{
-"name": "David Oliver",
-"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
-"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
-"source": "record · 1861 census, Hanley, Staffordshire (FreeCEN)",
-"link": "https://www.freecen.org.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 · the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street",
-"source": "record · General Register Office death index (FreeBMD)",
-"link": "https://www.freebmd.org.uk/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "wife, aged 71 · born OSWESTRY, SHROPSHIRE — which settles the unreadable “Staly Cladwin” of the 1861 census",
-"source": "record · 1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "born 17 MAY 1782, baptised 19 May 1782 at Oswestry St Oswald's · father DAVID OLIVER, mother MARY — the tree says 7 May 1787, two digits away",
-"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
-"link": "https://www.findmypast.com.au/",
-"kind": "record"
-},
-{
-"name": "Elizabeth Margaret Oliver",
-"says": "1787–1861 · Oswestry, Shropshire, England, United Kingdom",
-"source": "family tree · direct line",
-"link": "/people/elizabeth-margaret-oliver",
-"kind": "tree"
 }
 ]
 },
