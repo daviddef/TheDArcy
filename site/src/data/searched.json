@@ -4218,6 +4218,21 @@
         "gazette",
         "holderness"
       ]
+    },
+    {
+      "src": "The Army Lists of 1775, 1776, 1778 and 1783 — read in full text",
+      "url": "https://archive.org/details/listofofficersof00grea_1",
+      "what": "The 1866 tradition's first checkable claim: a Colonel D'Arcy who commanded a regiment in the American War and was killed in action",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**The two sons are there. The colonel is not.** Four official lists of general and field officers were downloaded and searched entire.\n\n**WHAT IS THERE.** The 1783 list puts **ROBERT D'ARCEY in the Corps of Engineers**, among the lieutenants, in a block of officers all dated **17 January 1776** — the very date this archive already held for his first commission, from the Army Lists of 1778 and 1781, now reached again independently. And it puts **CONSTANT[INE] D'ARCEY, 12 July, among the FIRST LIEUTENANTS OF THE ROYAL REGIMENT OF ARTILLERY**. The tradition said «Constantine, Lieut. R.A.» **It was right.**\n\n**WHAT IS NOT THERE.** No Colonel D'Arcy, in any of the four. The only others of the surname are **Francis D'Arcy**, **John Pomeroy D'Arcy**, and a George and a John in the indexes. **The control is the volumes themselves:** they use the word «Colonel» **230, 235, 245 and 312 times**, so they are in no way silent about colonels.\n\n**THREE GAPS KEEP THIS SHORT OF A DISPROOF**, and they are the honest ones: a colonel of a **provincial or loyalist corps** need not be in these lists, nor one on the **Irish establishment**, and «Colonel» may have been a local or courtesy rank. **But the shape of the result is hard to miss.** The tradition is corroborated precisely where it names two men who can be found, and unsupported precisely where it would prove the noble descent.",
+      "href": "/hornby",
+      "tags": [
+        "darcy",
+        "holderness",
+        "army-list",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

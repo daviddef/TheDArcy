@@ -837,6 +837,28 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- the Army Lists of the American War, read 11 October 2026 -------------
+# The 1866 tradition's first checkable claim, tested in the official lists of
+# general and field officers. The two SONS are both there and both match. The
+# FATHER is not in any of them. Four volumes, each naming colonels 230-312
+# times, and no Colonel D'Arcy in any.
+AL83 = ("record \u00b7 A List of the Officers of the Army, 1783, read in full text "
+        "\u2014 Internet Archive listofofficersof00grea_1")
+AL83L = "https://archive.org/details/listofofficersof00grea_1"
+ALW = ("record \u00b7 A List of the General and Field-Officers as they rank in the Army, "
+       "the volumes for 1775, 1776 and 1778, each read in full text "
+       "\u2014 Internet Archive listofgeneralfie00grea_3, _2 and listofgeneralfie00grea")
+rec("Robert D'Arcy",
+    "IN THE CORPS OF ENGINEERS IN THE ARMY LIST OF 1783, among the lieutenants, in a block of officers all dated 17 JANUARY 1776 \u00b7 the spelling there is D'ARCEY \u00b7 THIS IS THE SAME DATE THIS ARCHIVE ALREADY HELD for his first commission from the Army Lists of 1778 and 1781, printed again seven years later and reached independently",
+    AL83, AL83L)
+rec("Robert D'Arcy",
+    "HIS BROTHER IS REAL, AND THE 1866 TRADITION GOT HIM RIGHT \u00b7 the Army List of 1783 carries CONSTANT[INE] D'ARCEY, 12 July, among the FIRST LIEUTENANTS OF THE ROYAL REGIMENT OF ARTILLERY \u2014 which is exactly what the tradition said: \u201cConstantine, Lieut. R.A.\u201d \u00b7 the two sons it names are therefore both documented, in one volume, in the two corps it gives them",
+    AL83, AL83L)
+rec("Robert D'Arcy",
+    "AND THE COLONEL IS NOT THERE \u00b7 THE FATHER THE SAME TRADITION DESCRIBES \u2014 a Colonel d'Arcy who \u201ccommanded a regiment during the American War\u201d and was \u201ckilled in action\u201d \u2014 DOES NOT APPEAR IN THE ARMY LISTS OF 1775, 1776, 1778 OR 1783. Those volumes are lists of GENERAL AND FIELD OFFICERS and they use the word Colonel 230, 235, 245 and 312 times respectively, so they are not silent about colonels. The only officers of the surname in any of them are FRANCIS D'ARCY, JOHN POMEROY D'ARCY, a GEORGE and a JOHN in the indexes, and the two brothers above. "
+    "THREE GAPS KEEP THIS SHORT OF A DISPROOF and are stated rather than buried: a colonel of a PROVINCIAL or LOYALIST corps need not appear in these lists, nor need one on the IRISH ESTABLISHMENT, and \u201cColonel\u201d may have been a local or courtesy rank. What can be said is that the tradition is CORROBORATED EXACTLY WHERE IT NAMES TWO MEN THIS ARCHIVE CAN FIND, and UNSUPPORTED EXACTLY WHERE IT WOULD PROVE THE NOBLE DESCENT",
+    ALW, "https://archive.org/details/listofgeneralfie00grea")
+
 # --- Notes and Queries, 1 December 1866, found 11 October 2026 -------------
 # A query signed by a correspondent asking who Robert D'Arcy's grandfather
 # was, printed with the family's own tradition attached. It is the EARLIEST
