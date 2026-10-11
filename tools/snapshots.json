@@ -2,122 +2,127 @@
  "https://archive.org/": {
   "ts": "self",
   "url": "https://archive.org/",
-  "when": 1791682452.460371
+  "when": 1791682947.136734
  },
  "https://archive.org/details/SlatersQueenslandAlmanac1868": {
   "ts": "self",
   "url": "https://archive.org/details/SlatersQueenslandAlmanac1868",
-  "when": 1791682452.460373
+  "when": 1791682947.136735
  },
  "https://archive.org/details/SlatersQueenslandAlmanac1887": {
   "ts": "self",
   "url": "https://archive.org/details/SlatersQueenslandAlmanac1887",
-  "when": 1791682452.460373
+  "when": 1791682947.136736
  },
  "https://archive.org/details/SlatersQueenslandAlmanac1904": {
   "ts": "self",
   "url": "https://archive.org/details/SlatersQueenslandAlmanac1904",
-  "when": 1791682452.460374
+  "when": 1791682947.136737
  },
  "https://archive.org/details/alistofficersar00offigoog": {
   "ts": "self",
   "url": "https://archive.org/details/alistofficersar00offigoog",
-  "when": 1791682452.460374
+  "when": 1791682947.136737
  },
  "https://archive.org/details/ancestralvoices00ruck_0": {
   "ts": "self",
   "url": "https://archive.org/details/ancestralvoices00ruck_0",
-  "when": 1791682452.460374
+  "when": 1791682947.136737
  },
  "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1": {
   "ts": "self",
   "url": "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1",
-  "when": 1791682452.460375
+  "when": 1791682947.136737
  },
  "https://archive.org/details/colonial-office-list-1877": {
   "ts": "self",
   "url": "https://archive.org/details/colonial-office-list-1877",
-  "when": 1791682452.460375
+  "when": 1791682947.136738
  },
  "https://archive.org/details/colonial-office-list-1883": {
   "ts": "self",
   "url": "https://archive.org/details/colonial-office-list-1883",
-  "when": 1791682452.460375
+  "when": 1791682947.136738
  },
  "https://archive.org/details/g5546_201912": {
   "ts": "self",
   "url": "https://archive.org/details/g5546_201912",
-  "when": 1791682452.460375
+  "when": 1791682947.136738
  },
  "https://archive.org/details/gloucestershirep15phil": {
   "ts": "self",
   "url": "https://archive.org/details/gloucestershirep15phil",
-  "when": 1791682452.460376
+  "when": 1791682947.136738
  },
  "https://archive.org/details/historyantiqutit02colluoft": {
   "ts": "self",
   "url": "https://archive.org/details/historyantiqutit02colluoft",
-  "when": 1791682452.460376
+  "when": 1791682947.136739
  },
  "https://archive.org/details/historyofcorpsof0001whit": {
   "ts": "self",
   "url": "https://archive.org/details/historyofcorpsof0001whit",
-  "when": 1791682452.460376
+  "when": 1791682947.136739
  },
  "https://archive.org/details/listofgeneralfie00grea": {
   "ts": "self",
   "url": "https://archive.org/details/listofgeneralfie00grea",
-  "when": 1791682452.460376
+  "when": 1791682947.136739
  },
  "https://archive.org/details/listofofficersof00grea_1": {
   "ts": "self",
   "url": "https://archive.org/details/listofofficersof00grea_1",
-  "when": 1791682452.460377
+  "when": 1791682947.136739
  },
  "https://archive.org/details/monthly-army-list-1840-jan": {
   "ts": "self",
   "url": "https://archive.org/details/monthly-army-list-1840-jan",
-  "when": 1791682452.460377
+  "when": 1791682947.136739
  },
  "https://archive.org/details/notesqueries310unse": {
   "ts": "self",
   "url": "https://archive.org/details/notesqueries310unse",
-  "when": 1791682452.460377
+  "when": 1791682947.1367402
+ },
+ "https://archive.org/details/shropshireparish03asapshro": {
+  "ts": "self",
+  "url": "https://archive.org/details/shropshireparish03asapshro",
+  "when": 1791682947.1367402
  },
  "https://archive.org/details/shropshireparish06asapshro": {
   "ts": "self",
   "url": "https://archive.org/details/shropshireparish06asapshro",
-  "when": 1791682452.460377
+  "when": 1791682947.1367402
  },
  "https://archive.org/details/shropshireparish07asapshro": {
   "ts": "self",
   "url": "https://archive.org/details/shropshireparish07asapshro",
-  "when": 1791682452.460377
+  "when": 1791682947.1367402
  },
  "https://archive.org/details/staffordshirepar0000mrnw": {
   "ts": "self",
   "url": "https://archive.org/details/staffordshirepar0000mrnw",
-  "when": 1791682452.4603782
+  "when": 1791682947.1367412
  },
  "https://archive.org/search?query=%22Abbas+Kooli%22&sin=TXT": {
   "ts": "self",
   "url": "https://archive.org/search?query=%22Abbas+Kooli%22&sin=TXT",
-  "when": 1791682452.4603782
+  "when": 1791682947.1367412
  },
  "https://archive.org/search?query=%22Hannah+Saniger%22&sin=TXT": {
   "ts": "self",
   "url": "https://archive.org/search?query=%22Hannah+Saniger%22&sin=TXT",
-  "when": 1791682452.4603782
+  "when": 1791682947.1367412
  },
  "https://archive.org/search?query=queensland+blue+book": {
   "ts": "self",
   "url": "https://archive.org/search?query=queensland+blue+book",
-  "when": 1791682452.4603782
+  "when": 1791682947.1367412
  },
  "https://cityark.medway.gov.uk/wwwopacx/wwwopac.ashx?command=getcontent&server=files&value=P085-01-79(1": {
   "ts": null,
   "url": null,
-  "when": 1791682455.04344
+  "when": 1791682947.730376
  },
  "https://discovery.nationalarchives.gov.uk/": {
   "ts": "20261011010757",
@@ -147,7 +152,7 @@
  "https://fibis.ourarchives.online/": {
   "ts": null,
   "url": null,
-  "when": 1791682457.202039
+  "when": 1791682948.4016619
  },
  "https://newspapers.library.wales/": {
   "ts": "20261006085111",
@@ -157,32 +162,32 @@
  "https://nla.gov.au/nla.news-article19799164": {
   "ts": null,
   "url": null,
-  "when": 1791682460.264082
+  "when": 1791682949.019278
  },
  "https://nla.gov.au/nla.news-article20275988": {
   "ts": null,
   "url": null,
-  "when": 1791682462.6265368
+  "when": 1791682949.669857
  },
  "https://nla.gov.au/nla.news-article20379031": {
   "ts": null,
   "url": null,
-  "when": 1791682468.271704
+  "when": 1791682950.270769
  },
  "https://nla.gov.au/nla.news-article3443970": {
   "ts": null,
   "url": null,
-  "when": 1791682470.1310809
+  "when": 1791682950.851146
  },
  "https://nla.gov.au/nla.news-article37013266": {
   "ts": null,
   "url": null,
-  "when": 1791682472.756553
+  "when": 1791682951.449527
  },
  "https://nla.gov.au/nla.news-article59769271": {
   "ts": null,
   "url": null,
-  "when": 1791682478.420776
+  "when": 1791682952.162705
  },
  "https://recordsearch.naa.gov.au/": {
   "ts": "20230101010737",
@@ -197,7 +202,7 @@
  "https://www.archivesdepartementales76.net/ark:/50278/324f34a0d9295db7f79abf3a88551bdf": {
   "ts": null,
   "url": null,
-  "when": 1791682481.904441
+  "when": 1791682952.905984
  },
  "https://www.archivesdepartementales76.net/ark:/50278/f6143f182c7c35627e8998be27632806": {
   "ts": "20261011011544",
@@ -207,7 +212,7 @@
  "https://www.archivessearch.qld.gov.au/api/download_file/DR38490": {
   "ts": null,
   "url": null,
-  "when": 1791682486.5875258
+  "when": 1791682953.54283
  },
  "https://www.archivessearch.qld.gov.au/items/ITM1056950": {
   "ts": "20261011011712",
@@ -245,9 +250,9 @@
   "when": 1791682493.128895
  },
  "https://www.archivessearch.qld.gov.au/items/ITM564398": {
-  "ts": null,
-  "url": null,
-  "when": 1791682498.7862778
+  "ts": "20261011012553",
+  "url": "http://web.archive.org/web/20261011012553/https://www.archivessearch.qld.gov.au/items/ITM564398",
+  "when": 1791682914.531532
  },
  "https://www.archivessearch.qld.gov.au/items/ITM564421": {
   "ts": "20261011012617",
@@ -300,9 +305,9 @@
   "when": 1791680224.877735
  },
  "https://www.familysearch.org/search/collection/1770729": {
-  "ts": null,
-  "url": null,
-  "when": 1791682516.522042
+  "ts": "20241217064954",
+  "url": "http://web.archive.org/web/20241217064954/https://www.familysearch.org/search/collection/1770729",
+  "when": 1791682917.700798
  },
  "https://www.familysearch.org/search/collection/1804229": {
   "ts": "20250214040031",
@@ -317,22 +322,22 @@
  "https://www.familysearch.org/tree/person/details/KZ2H-JBP": {
   "ts": null,
   "url": null,
-  "when": 1791682519.247297
+  "when": 1791682954.1275089
  },
  "https://www.findagrave.com/memorial/229072083": {
   "ts": null,
   "url": null,
-  "when": 1791682521.289473
+  "when": 1791682954.772893
  },
  "https://www.findagrave.com/memorial/242573098": {
   "ts": null,
   "url": null,
-  "when": 1791682526.477261
+  "when": 1791682955.50945
  },
  "https://www.findagrave.com/memorial/286540042": {
   "ts": null,
   "url": null,
-  "when": 1791682532.122838
+  "when": 1791682956.0975628
  },
  "https://www.findmypast.co.uk/": {
   "ts": "20261003205844",
@@ -370,14 +375,14 @@
   "when": 1791680273.505853
  },
  "https://www.freereg.org.uk/freereg_contents/53cd4958eca9ebee4f004693/place": {
-  "ts": null,
-  "url": null,
-  "when": 1791682537.761822
+  "ts": "20261011012929",
+  "url": "http://web.archive.org/web/20261011012929/https://www.freereg.org.uk/freereg_contents/53cd4958eca9ebee4f004693/place",
+  "when": 1791682935.445225
  },
  "https://www.freereg.org.uk/freereg_contents/574446fbf493fd6f12000639/show_church": {
-  "ts": null,
-  "url": null,
-  "when": 1791682543.529408
+  "ts": "20261011013002",
+  "url": "http://web.archive.org/web/20261011013002/https://www.freereg.org.uk/freereg_contents/574446fbf493fd6f12000639/show_church",
+  "when": 1791682938.1091928
  },
  "https://www.freereg.org.uk/search_queries/new": {
   "ts": "20261011013028",

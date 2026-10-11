@@ -416,4 +416,34 @@ const c = d.counts;
     </Note>
   </Blk>
 
+  <Blk label={d.oswestry.lab} title={d.oswestry.head}>
+    <p class="lede" set:html={mdp(d.oswestry.body)}></p>
+
+    <Scroll>
+      <table style="margin-top:1.2rem">
+        <thead><tr><th>The register says</th><th>What it adds</th></tr></thead>
+        <tbody>
+          {d.oswestry.rows.map(([a, b]) => (
+            <tr><td set:html={mdp(a)}></td><td class="small" set:html={mdp(b)}></td></tr>))}
+        </tbody>
+      </table>
+    </Scroll>
+
+    <Note style="margin-top:1.3rem"><strong>One digit disagrees, and it is left disagreeing.</strong>
+      <span set:html={mdp(d.oswestry.digit)} /></Note>
+
+    <h3 style="margin-top:1.6rem">{d.oswestry.candHead}</h3>
+    <p style="margin-top:.7rem" set:html={mdp(d.oswestry.cand)}></p>
+
+    <Note style="border-left-width:3px;margin-top:1.3rem">
+      <strong>{d.oswestry.marrHead}.</strong> <span set:html={mdp(d.oswestry.marr)} /></Note>
+
+    <h3 style="margin-top:1.6rem">{d.oswestry.madeleyHead}</h3>
+    <p style="margin-top:.7rem" set:html={mdp(d.oswestry.madeley)}></p>
+
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/searched")}>Every search behind this →</a> ·
+      <a href={u("/worklist")}>What is still blocked →</a></p>
+  </Blk>
+
 </Base>
