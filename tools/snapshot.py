@@ -133,8 +133,19 @@ def main(argv):
           f"permanent copy ({pct:.0f}%) \u2014 {selfarch} of them because they ARE the "
           f"Internet Archive and need no capture")
     if have < len(cites):
-        print(f"        {len(cites) - have} have none. A footnote to a page that has gone is a "
-              f"footnote to nothing. Run: python3 tools/snapshot.py --save")
+        # NOT A TO-DO LIST. Every one of the fourteen left on 11 October 2026
+        # resolves perfectly and simply declines to be archived: Trove, Find a
+        # Grave, FamilySearch's tree, the Anubis-gated French archive, FIBIS.
+        # Printing them by host says that, where a bare number would read as
+        # work nobody had got round to.
+        import collections as _c
+        miss = [u for u in cites if not (cache.get(u) or {}).get("ts")]
+        hosts = _c.Counter(re.sub(r"^https?://([^/]+).*", r"\1", u) for u in miss)
+        top = ", ".join(f"{h} ({n})" for h, n in hosts.most_common(6))
+        print(f"        {len(miss)} have none: {top}")
+        print(f"        A HOST THAT DECLINES TO BE ARCHIVED IS NOT A JOB UNDONE. Check these "
+              f"against check_cites.py: if they resolve, the capture is refused and not missing. "
+              f"Run `--save` only for ones that are genuinely new.")
     return 0
 
 
