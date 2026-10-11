@@ -1287,6 +1287,16 @@ def surname_of(rec):
 # glance how much of any pedigree is evidence and how much is belief.
 #   (person, relative, what the record is)
 REL = [
+    # Checked 11 October 2026, and the check is the point. Four relationships
+    # documented this week were added here on the assumption the charts had
+    # missed them. Every one was refused, and the refusal was right: an edge
+    # needs two people the TREE knows, and in each pair the second party --
+    # Annie Adams, Arthur Ashley Ruck, David Oliver, John Maddock Jones --
+    # exists only in a document. A record line is not an edge, and the cure
+    # for a relationship whose other end is document-only is the record line
+    # it already has, not an edge no chart can draw. The entries are gone; the
+    # reporter below now says WHY each name fails, so the next person does not
+    # spend an afternoon re-learning this.
     # Queensland death registrations name the deceased's parents outright.
     ("William Hartley Sneyd", "Samuel Charles Sneyd|1810", "Qld death reg. 1902/B/2776"),
     ("William Hartley Sneyd", "Catherine Margaret Mulcahy", "Qld death reg. 1902/B/2776"),
@@ -1343,9 +1353,9 @@ REL = [
     ("George Pitt D'Arcy|1864", "Eliza Keeling", "Qld death reg. 1931, parents named"),
     ("George Pitt D'Arcy|1864", "George Lindsay D'Arcy", "Qld death reg. 1931, parents named"),
     ("James Atwell", "Maria Rossiter", "Qld death reg. 1907/C/..., parents named"),
-    ("James Atwell", "John Atwell", "Qld death reg. 1907/C/..., parents named"),
+    ("James Atwell", "John Atwell|1824", "Qld death reg. 1907/C/..., parents named"),
     ("Paul Cole Atkinson", "Ann Kent", "Qld death reg. 1906, parents named"),
-    ("Paul Cole Atkinson", "Richard Atkinson", "Qld death reg. 1906, parents named"),
+    ("Paul Cole Atkinson", "Richard Atkinson|1801", "Qld death reg. 1906, parents named"),
     ("Eliza Wakefield", "James Wakefield", "baptism, Bristol, 14 Oct 1832"),
     ("Ellen Wakefield", "James Wakefield", "baptism, Bristol, 26 Oct 1834"),
     # Westminster, 1818 and 1820. Both baptisms name BOTH parents, but only the
@@ -1365,13 +1375,13 @@ REL = [
     ("Aaron Wakefield", "James Wakefield", "Qld death reg. 1896/C/3402"),
     ("Jabez Wakefield", "James Wakefield", "Qld death reg. 1903/C/5058"),
     ("Zillah Wakefield", "James Wakefield", "Qld death reg. 1900/C/3322"),
-    ("Ephraim Wakefield **", "James Wakefield", "Qld death reg. 1868/B/4544"),
+    ("Ephraim Wakefield", "James Wakefield", "Qld death reg. 1868/B/4544"),
     ("Miriam Wakefield", "James Wakefield", "Qld death reg. 1909/C/1054"),
     ("Miriam Wakefield", "Hannah SANIGER", "Qld death reg. 1909/C/1054"),
     ("Hiram Wakefield", "Hannah SANIGER", "Qld death reg. 1905/B/5782 — “Hannah Sanigar”"),
     ("Aaron Wakefield", "Hannah SANIGER", "Qld death reg. 1896/C/3402 — “Hannah Sanegar”"),
     ("Zillah Wakefield", "Hannah SANIGER", "Qld death reg. 1900/C/3322 — “Hannah Saniger”"),
-    ("Ephraim Wakefield **", "Hannah SANIGER", "Qld death reg. 1868/B/4544 — “Anna Sanniger”"),
+    ("Ephraim Wakefield", "Hannah SANIGER", "Qld death reg. 1868/B/4544 — “Anna Sanniger”"),
     ("Hannah SANIGER", "John Saniger", "Qld death reg. 1873/C/603 — entered “John Jenniger”"),
     ("Hannah SANIGER", "James Wakefield", "named together on five children's death registrations"),
     ("Joseph D'Arcy", "Robert D'Arcy", "baptism, Portsea St Mary, 19 Mar 1780"),
@@ -1490,7 +1500,10 @@ def main():
     for a, b, why in REL:
         ia, ib = ids_for(a), ids_for(b)
         if not ia or not ib:
-            unmatched.append(a if not ia else b)
+            # BOTH ends, not just the first. Reporting one name per failed pair
+            # hid the second failure behind the first and made a two-ended
+            # problem look like a one-ended one.
+            unmatched.extend(x for x, i in ((a, ia), (b, ib)) if not i)
             continue
         for x, y in ((ia, ib), (ib, ia)):
             for i in x:
@@ -1510,9 +1523,26 @@ def main():
     with open(os.path.join(ROOT, "site/src/data/provenance.json"), "w", encoding="utf-8") as f:
         json.dump(prov, f, ensure_ascii=False, indent=0)
     if unmatched:
-        print("  REL names that are ambiguous or absent, so no edge was drawn:")
+        # A LIST OF NAMES IS NOT A DIAGNOSIS. This printed nine bare names for
+        # weeks, and the three reasons behind them want three different
+        # answers: an ambiguous name is fixed here with "Name|year", a
+        # document-only name can never be an edge and wants a record line
+        # instead, and an absent name is a typo. Saying which turns a list
+        # into instructions.
+        recnames = {e["name"] for e in entries if e["kind"] == "record"}
+        print("  REL names that drew no edge, and why:")
         for x in sorted(set(unmatched)):
-            print("   ·", x)
+            n = x.partition("|")[0].strip().lower()
+            hits = by_name.get(n, [])
+            if len(hits) > 1:
+                lives = ", ".join(sorted(
+                    (by_rec[i].get("life") or by_rec[i].get("born") or "?") for i in hits))
+                why = f"ambiguous: {len(hits)} in the tree ({lives}) — add |year"
+            elif x.partition("|")[0].strip() in recnames:
+                why = "document-only, not a tree person — no edge is possible; use a record line"
+            else:
+                why = "absent from tree and records — check the spelling"
+            print(f"   · {x:34} {why}")
     edges = sum(len(v["rel"]) for v in prov.values()) // 2
     print(f"provenance: {edges} recorded relationships across "
           f"{sum(1 for v in prov.values() if v['rel'])} people")

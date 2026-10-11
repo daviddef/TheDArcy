@@ -55,6 +55,50 @@ const bad = d.rows.filter((r) => /nothing|fragment|only|unknown/.test(r.holds)).
       on <a href={u("/corrections/")}>the errors page</a> rather than quietly fixed.
     </Note>
 
+  </section>
+
+  <Blk label="This page, measured against itself" title="Twice the instrument was the thing at fault">
+    <p class="lede" style="margin-top:1rem">A page that measures other people's indexes should be
+    read the same way, and twice it has failed its own test. <strong>Both faults were in the
+    instrument rather than in any source</strong>, and both would have been invisible to a reader.</p>
+
+    <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.2rem">
+      <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+        <div><span class="mono small" style="color:var(--ink-3)">15 September 2026</span>
+          <strong style="margin-left:.6rem">A verdict displayed as something it did not mean</strong></div>
+        <p class="small" style="margin-top:.35rem">The template that renders this table was a
+        <strong>fallthrough chain</strong> — good, partial, absent, and everything else «cannot
+        answer». So <strong>blocked</strong>, which means <em>a source nobody has asked, because it
+        wants an account this archive will not make</em>, displayed as a source that had been asked
+        and could not answer. Those are opposite statements: one is about this archive's choice and
+        the other about the source's emptiness. One row also carried the freehand verdict «unusable
+        as a control», which fell through the same way. <strong>The five words are now declared in
+        the data, the template looks them up instead of falling through, and a gate refuses any
+        verdict outside the list.</strong></p>
+      </div>
+      <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+        <div><span class="mono small" style="color:var(--ink-3)">27 September 2026</span>
+          <strong style="margin-left:.6rem">A zero that belonged to the question, not the archive</strong></div>
+        <p class="small" style="margin-top:.35rem">Trove's title endpoint returns its gazettes under
+        the key <span class="mono">newspaper</span>. Asking it for a <span class="mono">gazette</span>
+        key returns nothing, so the first run of the script that measures Australian holdings
+        reported <strong>0 gazettes</strong> — and that was <strong>one commit from being published
+        as a fact about Trove</strong>. It is a fact about the parser. The endpoint's own
+        <span class="mono">total</span> is now compared with what the parser found and a disagreement
+        refuses the build: newspaper 2,014 = total 2,014, gazette 38 = total 38.</p>
+      </div>
+    </div>
+
+    <Note style="margin-top:1.4rem">
+      <strong>Both belong here rather than on the errors page alone</strong>, because a reader
+      deciding how much to trust the verdicts above is entitled to know that the verdicts have twice
+      been wrong for reasons that had nothing to do with the records.
+      <a href={u("/corrections/")}>Every error, kept →</a>
+    </Note>
+  </Blk>
+
+  <section class="blk" style="border-bottom:0">
+
     <p class="small" style="margin-top:1.4rem">
       <a href={u("/searched/")}>Every source read, and what it gave →</a> ·
       <a href={u("/errands/")}>What can only be done in a record office →</a> ·

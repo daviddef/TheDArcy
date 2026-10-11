@@ -633,6 +633,24 @@
       "span": "to 1843 and well beyond",
       "verdict": "good",
       "note": "**Free, no account, and never tried by this archive until 9 October 2026.** Two D'Arcy deaths of 1843 sit in this department — Margaret Jones née D'Arcy at Havre in February and her husband Major John Maddock Jones at Ingouville in March — and the archive had pursued both ONLY through British consular returns at Kew, which are «miscellaneous» by their own title and incomplete by their own description.\n\n**The French état civil is not miscellaneous.** Searched on 9 October: Ingouville, décès, 1843 returns five results including the complete year's deaths register, **cote 4 E 9077, 310 views**, with two tables décennales over it. Le Havre, décès, 1843 returns twelve, covering the town and the communes it absorbed.\n\n**It answers a browser and refuses a script**, which is the whole reason it was worth trying: the first response was a “Making sure you're not a bot!” interstitial that resolved by itself. The Record Atlas session had just found eight French departmental archives behaving exactly this way and said so."
+    },
+    {
+      "db": "The National Archives, Discovery",
+      "where": "Feet of fines, Gloucestershire — CP 25/1",
+      "holds": "piece descriptions, and no party names",
+      "span": "12th to 16th century",
+      "verdict": "unusable",
+      "note": "**Catalogued at piece level only.** «GLOUCESTERSHIRE: Feet of fines for 14-24 Hen VII: 38-77 membranes» is a typical entry — it names a county and a span of regnal years, and not one party to one fine. **No free, name-indexed abstract exists for this county**: «feet of fines» and «pedes finium» with Gloucestershire return nothing on the Internet Archive, and Discovery returns only the piece descriptions it is quoted above. **So a fine naming a Swonhungre cannot be found by searching**; it would be found by reading membranes at Kew, which is an errand and not a search. Checked 15 September 2026.",
+      "href": "/swonhungre"
+    },
+    {
+      "db": "Internet Archive",
+      "where": "Gloucestershire subsidies and musters, in print",
+      "holds": "none of this county's editions",
+      "span": "1522 to 1608",
+      "verdict": "absent",
+      "note": "**The catalogue descriptions are free and the names are not.** Searches for «military survey Gloucestershire 1522», for a published 1524 subsidy roll, and for a separate edition of Men and Armour all return nothing. **The Gloucestershire Record Series editions of this material are modern and in copyright**, so the transcripts that would make these rolls searchable by name are the one part of them that cannot be read freely. Checked 15 September 2026.",
+      "href": "/swonhungre"
     }
   ],
   "verdicts": {

@@ -1994,6 +1994,11 @@
 ],
 "james-atwell": [
 {
+"path": "/changes",
+"snippet": "…wo John Atwells, three Richard Atkinsons — and the tree settled both by its own id links: James Atwell's parents are John Atwell and Maria Rossiter, and John Atwell born 1824 lists that same James by identifier as his child. Those t…",
+"title": "What changed"
+},
+{
 "path": "/worklist",
 "snippet": "…d() makes, because without it the gate fired on the published William Murdoch of 1856 and James Atwell of 1853-1907 — and in a family that reuses forenames this relentlessly, a gate that cries wolf is switched off inside a week. Con…",
 "title": "The work list"
@@ -2382,7 +2387,18 @@
 "joane-dixie": [],
 "johanna-elisabeth-schonberg-auf-wesel": [],
 "john-atwell-1824": [],
-"john-atwell-1848": [],
+"john-atwell-1848": [
+{
+"path": "/",
+"snippet": "…ed out never to have reached a page Fixedtwo recorded relationships that had never drawn: John Atwell and Richard Atkinson were each AMBIGUOUS in the tree, and the edges now carry the year that settles themCheckedfour relationships…",
+"title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/changes",
+"snippet": "…ard Atkinsons — and the tree settled both by its own id links: James Atwell's parents are John Atwell and Maria Rossiter, and John Atwell born 1824 lists that same James by identifier as his child. Those two now draw, with the Quee…",
+"title": "What changed"
+}
+],
 "john-blum-1842": [],
 "john-blum-1872": [],
 "john-blum-1895": [
@@ -2651,7 +2667,7 @@
 },
 {
 "path": "/chatham",
-"snippet": "…aughter's marriage, witnessed by a brother. Margarett Maria Isabella married in 1806 with Joseph D'Arcy signing — the same Joseph baptised at Portsea in 1780, the first record of this family ever found in England . And Constantine is…",
+"snippet": "…aughter's marriage, witnessed by a brother. Margarett Maria Isabella married in 1806 with Joseph D'Arcy signing — the same Joseph baptised at Portsea in 1780, the first record of this family ever found in England . The press notice h…",
 "title": "Chatham"
 },
 {
@@ -3152,7 +3168,13 @@
 }
 ],
 "maria-gardner": [],
-"maria-rossiter": [],
+"maria-rossiter": [
+{
+"path": "/changes",
+"snippet": "…and the tree settled both by its own id links: James Atwell's parents are John Atwell and Maria Rossiter, and John Atwell born 1824 lists that same James by identifier as his child. Those two now draw, with the Queensland death regist…",
+"title": "What changed"
+}
+],
 "marie-luise-von-degenfeld": [],
 "marion-fleming": [
 {
@@ -3618,9 +3640,19 @@
 "richard-atkinson-1765": [],
 "richard-atkinson-1801": [
 {
+"path": "/",
+"snippet": "…have reached a page Fixedtwo recorded relationships that had never drawn: John Atwell and Richard Atkinson were each AMBIGUOUS in the tree, and the edges now carry the year that settles themCheckedfour relationships added this week were…",
+"title": "Twelve generations, and two claims too far."
+},
+{
 "path": "/tree",
 "snippet": "…George Pitt D'Arcy 1864–1931 Brisbane, Brisbane, Queensland, Australia 2 more generations Richard Atkinson 1801–1865 Limerick City, Ireland 2 more generations Ann Kent 1805–1880 Limerick, Limerick, Ireland Paul Cole Atkinson 1832–1906 S…",
 "title": "Our line, drawn"
+},
+{
+"path": "/changes",
+"snippet": "…in the tree. found Fixedtwo recorded relationships that had never drawn: John Atwell and Richard Atkinson were each AMBIGUOUS in the tree, and the edges now carry the year that settles themCheckedfour relationships added this week were…",
+"title": "What changed"
 },
 {
 "path": "/errands",

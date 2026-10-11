@@ -66,6 +66,25 @@ const groups = [{
     <Errands groups={groups} u={u} />
   </section>
 
+  <Blk label="Before the fee" title="Why these are errands and not searches">
+    <p class="lede" style="margin-top:1rem">Nothing reaches this queue until the free route has been
+    tried and has failed, because <strong>an errand costs money and a search costs an afternoon</strong>.
+    One item is worth showing in full, as the pattern behind most of them.</p>
+    <p style="margin-top:1rem"><strong>William Hartley Sneyd's insolvency, Brisbane, 1873.</strong>
+    A Queensland State Archives file — <span class="mono">230/1873</span>, Public Curator's Office,
+    6 October to 3 November — <strong>proves the insolvency happened</strong>, and an insolvency was
+    advertised: the notices ran in the newspapers by law. So <strong>Trove</strong> was the obvious
+    first move, and <strong>Trove's search would not surface the notice, repeatedly</strong>. The
+    file itself is not digitised.</p>
+    <Note style="margin-top:1.2rem">
+      <strong>That is why it is an errand.</strong> The fact is established and the detail is not:
+      what he owed, to whom, and whether he was discharged are in a paper file in Runcorn and in a
+      newspaper column nobody can currently search. <strong>A search that will not run is not the
+      same as a record that does not exist</strong>, and the distinction is the difference between
+      this queue and a list of dead ends. <a href={u("/searched/")}>Every search behind it →</a>
+    </Note>
+  </Blk>
+
   <Blk label="Not a document, and worth more than all of them" title={e.ydna.what}>
     <p class="dek">{e.ydna.settles}</p>
     <Note>{e.ydna.note}

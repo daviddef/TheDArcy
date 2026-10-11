@@ -108,6 +108,28 @@ import d from "../data/fmp.json";
       <a href={u("/corrections/")}>The errors →</a></p>
   </section>
 
+  <Blk label="A wall that is not money" title="The will of a Chepstow mariner, digitised and unreadable">
+    <p class="lede" style="margin-top:1rem">Everything above is a wall made of money, and money is
+    the easiest kind to describe: it has a price, and paying it ends the argument. <strong>This one
+    has no price.</strong></p>
+    <p style="margin-top:1rem"><strong>EDWARD SANNIGER, mariner of Chepstow, died 1806</strong>, and
+    his will survives twice over. <span class="mono">IR 26/352/152</span> at Kew is the legacy-duty
+    abstract; <span class="mono">LL/1806/24</span> at the National Library of Wales is
+    <strong>the will itself</strong>. The reference is firm, the catalogue describes it, and
+    <strong>the document is digitised</strong>. It is also unreadable from here, because
+    archives.library.wales serves a bot check — «Performing security verification… protect against
+    malicious bots» — before it serves the image.</p>
+    <Note style="margin-top:1.2rem">
+      <strong>So the will stays unread, and that is the whole finding.</strong> This archive does not
+      complete bot checks, and it will not record a document it could not open as a document that
+      says nothing. A closed route and an empty record look identical in a footnote and are opposite
+      things, which is the same confusion this page was written about: <em>not reachable from
+      here</em> became <em>not there</em> once already. It is logged as <strong>blocked</strong> and
+      not as a null, so the next person with a different route knows there is something to read.
+      <a href={u("/sanigers/")}>Edward Sanniger, and why Chepstow matters →</a>
+    </Note>
+  </Blk>
+
   <Blk label={`The audit · ${d.audit.found}`} title={d.audit.head}>
     <p class="lede" set:html={mdp(d.audit.lede)}></p>
     <Note style="margin-top:1.2rem"><strong>{d.audit.howHead}.</strong>

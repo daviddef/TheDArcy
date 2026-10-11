@@ -140,7 +140,22 @@ def main():
                         out.append(t)
                 return out
 
-            toks = rank(re.findall(PAT, found_blob)) or rank(re.findall(PAT, where_blob))
+            # ONE COMMON WORD IS NOT A DISTINCTIVE TOKEN. The fallback to
+            # where_blob fired only when the finding yielded NOTHING, so a
+            # finding yielding exactly one weak word was tested on that word
+            # alone and the rich identification beside it went unread. The
+            # errand for the will of THOMAS SANNIGER, Able Seaman of HMS
+            # Eurydice, was graded on the word «Seamen» — from "Seamen's wills
+            # are short" — and reported as unpublished on a page that names
+            # SANNIGER three times. Asking the finding first is right; refusing
+            # to look at anything else when the finding gave one ordinary noun
+            # is how this test failed for a reason unrelated to what it checks,
+            # which is the fault it was strengthened to remove.
+            toks = rank(re.findall(PAT, found_blob))
+            if len(toks) < 2:
+                for t in rank(re.findall(PAT, where_blob)):
+                    if t not in toks:
+                        toks.append(t)
             if not toks:
                 continue
             f = os.path.join(DIST, href.lstrip("/"), "index.html")

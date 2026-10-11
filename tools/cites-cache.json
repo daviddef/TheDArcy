@@ -117,27 +117,150 @@
  "https://archive.org/": {
   "status": 200,
   "verdict": "ok",
-  "when": 1791586959.909774
+  "when": 1791716397.1722188
+ },
+ "https://archive.org/details/SlatersQueenslandAlmanac1868": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.4248629
+ },
+ "https://archive.org/details/SlatersQueenslandAlmanac1887": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424866
+ },
+ "https://archive.org/details/SlatersQueenslandAlmanac1904": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716398.4887831
+ },
+ "https://archive.org/details/Travel18101816Morier": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424869
  },
  "https://archive.org/details/alistofficersar00offigoog": {
+  "sampled": "archive.org",
   "status": 200,
   "verdict": "ok",
-  "when": 1791586962.858329
+  "when": 1791716400.424871
+ },
+ "https://archive.org/details/ancestralvoices00ruck_0": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716398.485774
  },
  "https://archive.org/details/bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1": {
+  "sampled": "archive.org",
   "status": 200,
   "verdict": "ok",
-  "when": 1791586960.379143
+  "when": 1791716400.424875
+ },
+ "https://archive.org/details/colonial-office-list-1877": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.4248772
+ },
+ "https://archive.org/details/colonial-office-list-1883": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716398.317848
+ },
+ "https://archive.org/details/dli.ministry.06851": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424879
+ },
+ "https://archive.org/details/g5546_201912": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424881
+ },
+ "https://archive.org/details/gloucestershirep15phil": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716398.7620459
  },
  "https://archive.org/details/historyantiqutit02colluoft": {
+  "sampled": "archive.org",
   "status": 200,
   "verdict": "ok",
-  "when": 1791586965.9865541
+  "when": 1791716400.424883
+ },
+ "https://archive.org/details/historyofcorpsof0001whit": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424885
+ },
+ "https://archive.org/details/listofgeneralfie00grea": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424227
+ },
+ "https://archive.org/details/listofofficersof00grea_1": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424887
+ },
+ "https://archive.org/details/monthly-army-list-1840-jan": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424889
+ },
+ "https://archive.org/details/notesqueries310unse": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716399.275965
+ },
+ "https://archive.org/details/shropshireparish03asapshro": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424891
+ },
+ "https://archive.org/details/shropshireparish06asapshro": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424893
+ },
+ "https://archive.org/details/shropshireparish07asapshro": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.362923
+ },
+ "https://archive.org/details/staffordshirepar0000mrnw": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424895
+ },
+ "https://archive.org/search?query=%22Abbas+Kooli%22&sin=TXT": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424897
+ },
+ "https://archive.org/search?query=%22Hannah+Saniger%22&sin=TXT": {
+  "sampled": "archive.org",
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716400.424899
  },
  "https://archive.org/search?query=queensland+blue+book": {
+  "sampled": "archive.org",
   "status": 200,
   "verdict": "ok",
-  "when": 1791586961.213027
+  "when": 1791716400.424901
  },
  "https://billiongraves.com/grave/Arthur-Neville-DArcy/10156621?referrer=myheritage": {
   "status": 200,
@@ -429,6 +552,11 @@
   "verdict": "walled",
   "when": 1791586977.113458
  },
+ "https://web.archive.org/": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716397.3516538
+ },
  "https://www.aif.adfa.edu.au/images/aif5pc.gif": {
   "status": "[Errno 8] nodename nor servname provided, or not",
   "verdict": "dns",
@@ -674,6 +802,11 @@
   "verdict": "ok",
   "when": 1791586988.818781
  },
+ "https://www.freebmd.org.uk/cgi/search.pl": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716397.6912599
+ },
  "https://www.freecen.org.uk/": {
   "status": 200,
   "verdict": "ok",
@@ -707,7 +840,7 @@
  "https://www.myheritage.com/person-1000110_OYYV67TWPUC62QRYCZXLXGYC6DRXY2Y_OYYV67TWPUC62QRYCZXLXGYC6DRXY2Y/vivian-claude-sneyd": {
   "status": 200,
   "verdict": "ok",
-  "when": 1791586991.329695
+  "when": 1791716396.7131038
  },
  "https://www.myheritage.com/person-1000388_OYYV7WTFBDSBOPVJNOZPUJGPY4IDKLA_OYYV7WTFBDSBOPVJNOZPUJGPY4IDKLA/ann-atkinson-born-kent": {
   "status": 200,
@@ -972,7 +1105,7 @@
  "https://www.myheritage.com/person-1500621_OYYV6JX2FFVR675GBZX6YSCN5A6IS7Q_OYYV6JX2FFVR675GBZX6YSCN5A6IS7Q/amy-nesta-sneyd": {
   "status": 200,
   "verdict": "ok",
-  "when": 1791586998.717105
+  "when": 1791716396.70782
  },
  "https://www.myheritage.com/person-1500726_OYYV6JX2FFVR675GBZX6YSCN5A6IS7Q_OYYV6JX2FFVR675GBZX6YSCN5A6IS7Q/william-noel": {
   "status": 200,
@@ -1237,7 +1370,7 @@
  "https://www.myheritage.com/person-1506938_OYYV7FPFU44MFTURIADGVLEWQW2LDOI_OYYV7FPFU44MFTURIADGVLEWQW2LDOI/mary-rokeby-born-cartwright": {
   "status": 200,
   "verdict": "ok",
-  "when": 1791586996.543254
+  "when": 1791716396.87102
  },
  "https://www.myheritage.com/person-1517582_OYYV6LTVSJBKOCKZNTUPLFJAV6UNTYY_OYYV6LTVSJBKOCKZNTUPLFJAV6UNTYY/thomas-lord-darcy-conyers-darcy": {
   "status": 200,
@@ -1502,7 +1635,7 @@
  "https://www.myheritage.com/person-3506383_OYYV7CYD23VJJSN63EXHW7CDRVKQZIY_OYYV7CYD23VJJSN63EXHW7CDRVKQZIY/amy-nesta-sneyd": {
   "status": 200,
   "verdict": "ok",
-  "when": 1791586998.9984891
+  "when": 1791716396.865035
  },
  "https://www.myheritage.com/person-3513042_OYYV63VE4JASHEXP7FUHVZRCXCYL5OI_OYYV63VE4JASHEXP7FUHVZRCXCYL5OI/eliza-darcy-born-keeling": {
   "status": 200,
@@ -1767,7 +1900,7 @@
  "https://www.myheritage.com/research/record-1-254507761-1-500314/william-hartley-sneyd-in-myheritage-family-trees?indId=externalindividual-7ee0de010142107a356a09280592e23a&mrid=c25e3e7879de45f78e45aea08fa4ec79": {
   "status": 200,
   "verdict": "walled",
-  "when": 1791587001.459808
+  "when": 1791716397.056499
  },
  "https://www.myheritage.com/research/record-1-254507761-1-500315/john-braidwood-sneyd-in-myheritage-family-trees?indId=externalindividual-71470006ce5fd850dbdb644111d5bf8e&mrid=10057c038bd56dc281c13037dfeab459": {
   "status": 200,
@@ -2032,7 +2165,7 @@
  "https://www.myheritage.com/research/record-30043-7125728/maria-rossiter-and-john-atwell-in-england-marriages": {
   "status": 200,
   "verdict": "walled",
-  "when": 1791587004.3211799
+  "when": 1791716397.148027
  },
  "https://www.myheritage.com/research/record-30218-18820/george-pitt-darcy-in-australia-deaths-burials": {
   "status": 200,
@@ -2297,7 +2430,7 @@
  "https://www.myheritage.com/research/record-40001-1019957995/thomas-george-sneyd-in-familysearch-family-tree": {
   "status": 200,
   "verdict": "walled",
-  "when": 1791587006.472373
+  "when": 1791716397.260535
  },
  "https://www.myheritage.com/research/record-40001-1019958503/gladys-beryl-sneyd-in-familysearch-family-tree": {
   "status": 200,
@@ -2562,7 +2695,7 @@
  "https://www.myheritage.com/research/record-40001-474608961/susanne-zyllenhardt-born-gravenegg-in-familysearch-family-tree": {
   "status": 200,
   "verdict": "walled",
-  "when": 1791587009.163685
+  "when": 1791716397.325731
  },
  "https://www.myheritage.com/research/record-40001-480251883/wolfgang-zyllenhardt-in-familysearch-family-tree": {
   "status": 200,
@@ -2888,6 +3021,11 @@
   "status": 200,
   "verdict": "ok",
   "when": 1791587013.052091
+ },
+ "https://www.thegazette.co.uk/all-notices/notice?text=Arcy&start-publish-date=1775-01-01&end-publish-date=1790-12-31": {
+  "status": 200,
+  "verdict": "ok",
+  "when": 1791716398.260669
  },
  "https://www.thegazette.co.uk/all-notices/notice?text=Kooli&start-publish-date=1830-01-01&end-publish-date=1900-12-31": {
   "status": 200,

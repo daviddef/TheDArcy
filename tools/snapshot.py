@@ -129,6 +129,21 @@ def main(argv):
 
     pct = (100.0 * have / len(cites)) if cites else 0.0
     lead = "ok  " if pct >= 80 else "warn"
+
+    # A FIGURE IN PROSE GOES STALE THE NEXT TIME THE TOOL RUNS. The first
+    # version of this reported its coverage only in the build log and in a
+    # sentence somebody typed, and within a week the sentence said 70 of 84
+    # while the tool said 73 of 87. Write the number where the site can read
+    # it, so the page cannot disagree with the instrument.
+    import collections as _k
+    _miss = [u for u in cites if not (cache.get(u) or {}).get("ts")]
+    _hosts = _k.Counter(re.sub(r"^https?://([^/]+).*", r"\1", u) for u in _miss)
+    with open(os.path.join(os.path.dirname(HERE), "site/src/data/snapshot-summary.json"),
+              "w", encoding="utf-8") as f:
+        json.dump({"have": have, "total": len(cites), "pct": round(pct),
+                   "selfArchived": selfarch, "missing": len(_miss),
+                   "missingHosts": _hosts.most_common(),
+                   "checked": time.strftime("%d %b %Y")}, f, ensure_ascii=False, indent=1)
     print(f"  {lead}  snapshot   {have} of {len(cites)} citation(s) this archive chose have a "
           f"permanent copy ({pct:.0f}%) \u2014 {selfarch} of them because they ARE the "
           f"Internet Archive and need no capture")

@@ -504,6 +504,9 @@
 "rel": {
 "maria-rossiter": [
 "Qld death reg. 1907/C/..., parents named"
+],
+"john-atwell-1824": [
+"Qld death reg. 1907/C/..., parents named"
 ]
 },
 "graft": null,
@@ -520,9 +523,22 @@
 "line": true,
 "spine": false
 },
+"john-atwell-1824": {
+"rel": {
+"james-atwell": [
+"Qld death reg. 1907/C/..., parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
 "paul-cole-atkinson": {
 "rel": {
 "ann-kent": [
+"Qld death reg. 1906, parents named"
+],
+"richard-atkinson-1801": [
 "Qld death reg. 1906, parents named"
 ]
 },
@@ -531,6 +547,16 @@
 "spine": false
 },
 "ann-kent": {
+"rel": {
+"paul-cole-atkinson": [
+"Qld death reg. 1906, parents named"
+]
+},
+"graft": null,
+"line": true,
+"spine": false
+},
+"richard-atkinson-1801": {
 "rel": {
 "paul-cole-atkinson": [
 "Qld death reg. 1906, parents named"
@@ -1636,12 +1662,6 @@
 "line": false,
 "spine": false
 },
-"richard-atkinson-1801": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
 "walter-sneyd-1809": {
 "rel": {},
 "graft": null,
@@ -1679,12 +1699,6 @@
 "spine": false
 },
 "francis-murdoch-1824": {
-"rel": {},
-"graft": null,
-"line": true,
-"spine": false
-},
-"john-atwell-1824": {
 "rel": {},
 "graft": null,
 "line": true,

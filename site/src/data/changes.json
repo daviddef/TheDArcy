@@ -3,6 +3,63 @@
   "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
+      {
+        "when": "11 October 2026 (third pass)",
+        "title": "The whole site read against itself, and eleven findings turned out never to have reached a page",
+        "found": [
+          [
+            "Fixed",
+            "two recorded relationships that had never drawn: John Atwell and Richard Atkinson were each AMBIGUOUS in the tree, and the edges now carry the year that settles them"
+          ],
+          [
+            "Checked",
+            "four relationships added this week were REFUSED by the chart and the refusal was right — the second party in each exists only in a document, and a record line is not an edge"
+          ],
+          [
+            "Added",
+            "the Moreton Bay Courier of 23 December 1854 was read for the General Hewitt and DOES NOT CARRY HER — the arrival date rests on the register alone, and now says so"
+          ],
+          [
+            "Added",
+            "the first Military Medal has no citation anywhere: the Gazette promulgates the award and never says what it was for"
+          ],
+          [
+            "Added",
+            "a wall that is not money — the will of a Chepstow mariner, digitised at the National Library of Wales behind a bot check this archive will not pass"
+          ],
+          [
+            "Added",
+            "FreeREG offers County Limerick and holds NOTHING behind it, so every free Limerick search was searching a county that is not in the index"
+          ],
+          [
+            "Added",
+            "two record classes that cannot be searched by name at all — feet of fines catalogued at piece level, and the Gloucestershire editions in copyright"
+          ],
+          [
+            "Added",
+            "the coverage verdicts and the Trove gazette key, both of them faults in this archive's own instruments, now published on the page whose numbers they affected"
+          ],
+          [
+            "Fixed",
+            "the snapshot coverage figure is computed by the tool and read by the page, after a sentence saying 70 of 84 survived a week into the instrument saying 73 of 87"
+          ],
+          [
+            "Checked",
+            "0 pages with no inbound link, 0 broken asset references, and 0 of this archive's own citations dead — the nine candidates are all inherited from the GEDCOM export"
+          ]
+        ],
+        "did": [
+          "DAVID ASKED FOR THE WHOLE SITE TO BE READ — people pages, visuals, trees, writeups, snapshots and links — AND THE GATES ALL SAID OK BEFORE ANY OF THIS WAS FOUND. That is the useful part. Every gate passed on the first run of the audit, and eleven findings were still sitting in the data without ever reaching the page they belong to. A green build means no rule was broken; it does not mean the archive says what it knows.",
+          "THE FIRST THING CHECKED WAS THE WRONG THING, AND IT COST AN HOUR. Four relationships documented this week looked absent from the charts, so they were added to the edge list and the result was verified against `register.json`'s `linked` — which is a COUNT OF ENTRIES CARRYING A LINK and has nothing whatever to do with relationships. The edges live in `provenance.json`. The tool had reported its own failure plainly, in its own output, and it was not read: NINE REL NAMES THAT DREW NO EDGE, printed as a bare list for weeks.",
+          "AND THE REFUSALS WERE RIGHT. Of the nine, two were ambiguous names — two John Atwells, three Richard Atkinsons — and the tree settled both by its own id links: James Atwell's parents are John Atwell and Maria Rossiter, and John Atwell born 1824 lists that same James by identifier as his child. Those two now draw, with the Queensland death registration as the reason. The other seven cannot ever draw, because the person at the far end exists only in a document and a chart draws the tree. FOUR OF THEM WERE THIS SESSION'S OWN, ADDED ON A WRONG DIAGNOSIS, AND THEY ARE GONE AGAIN.",
+          "A LIST OF NAMES IS NOT A DIAGNOSIS, so the reporter now says WHY each name fails — ambiguous, document-only, or absent — because the three want three different answers and a bare list invites none of them.",
+          "ELEVEN ROWS CLAIMED A PAGE THAT HAD NEVER CARRIED THEM. The `published` gate counts these and had been printing «11 quiet» without anyone acting on it. They were not noise. The Moreton Bay Courier had been read for the General Hewitt and had NOT confirmed the arrival — an honest negative result that no reader could see. The London Gazette had been checked for Vivian Sneyd's first Military Medal and gazettes it without a citation. The National Library of Wales serves a bot check over a digitised will, and `/behind-the-paywall` — the page about walls — did not mention the one wall that is not money. FreeREG offers County Limerick with no data behind it, and `/atkinson` did not say so. All eleven now reach their page, and the count is 0.",
+          "TWO OF THEM WERE FILED ON A PAGE THAT RENDERS A DIFFERENT FILE. `/coverage` renders `indexes.json`; `coverage.json` renders on `/searched`. Two findings about Gloucestershire record classes pointed at `/coverage` and could never have appeared there whatever was written. They are re-filed on `/swonhungre`, where the surname they are about lives.",
+          "AND ONE WARNING WAS THE INSTRUMENT, NOT THE ARCHIVE. The errand for the will of THOMAS SANNIGER, Able Seaman of HMS Eurydice, was graded on the single word «Seamen» — taken from «Seamen's wills are short» — and reported as unpublished on a page that names SANNIGER three times. The test asks the finding first, which is right, and then refused to look at the identification beside it, which is not. ONE COMMON WORD IS NOT A DISTINCTIVE TOKEN: below two tokens it now reads both fields. Same fault as the version that certified a row because a page said «Wales», pointing the other way.",
+          "A FIGURE IN PROSE GOES STALE THE NEXT TIME THE TOOL RUNS. The snapshot count was written into a sentence as «70 of 84» and the instrument now says 73 of 87 — one week. `snapshot.py` writes the number where the page can read it, and `/sources` carries it with the hosts that decline to be archived named, so the page cannot disagree with the tool. The dated changelog entries are left as they were: they were true on the day and rewriting them would falsify the record.",
+          "WHAT THE AUDIT DID NOT FIND IS WORTH SAYING. No page is without an inbound link; no asset reference is broken; no citation this archive chose for itself is dead, and the nine dead ones are all somebody else's footnotes inherited from the GEDCOM export. 858 pages built, every gate green, 248 record lines reaching 62 of 62 people in the tree."
+        ]
+      },
     {
       "when": "11 October 2026 (second pass)",
       "title": "The Sanigars, Sneyds and Wakefields get the same treatment, and Oswestry hands over a family",

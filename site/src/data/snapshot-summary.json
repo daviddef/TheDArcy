@@ -1,0 +1,38 @@
+{
+ "have": 73,
+ "total": 87,
+ "pct": 84,
+ "selfArchived": 27,
+ "missing": 14,
+ "missingHosts": [
+  [
+   "nla.gov.au",
+   6
+  ],
+  [
+   "www.findagrave.com",
+   3
+  ],
+  [
+   "cityark.medway.gov.uk",
+   1
+  ],
+  [
+   "www.archivessearch.qld.gov.au",
+   1
+  ],
+  [
+   "www.familysearch.org",
+   1
+  ],
+  [
+   "fibis.ourarchives.online",
+   1
+  ],
+  [
+   "www.archivesdepartementales76.net",
+   1
+  ]
+ ],
+ "checked": "11 Oct 2026"
+}

@@ -2736,7 +2736,7 @@
       "when": "15 Sep 2026",
       "outcome": "empty",
       "got": "It cannot. CP 25/1 survives at Kew but is catalogued ONLY AT PIECE LEVEL — «GLOUCESTERSHIRE: Feet of fines for 14-24 Hen VII: 38-77 membranes» is a typical entry, naming a county and a span of regnal years and not one party. No free, name-indexed published abstract exists for the county: searches for «feet of fines» and «pedes finium» with Gloucestershire return nothing on the Internet Archive, and Discovery returns only the piece descriptions. A fine naming a Swonhungre is therefore unfindable by search and would require reading membranes.",
-      "href": "/coverage",
+      "href": "/swonhungre",
       "ctl": "named",
       "key": "src/feet-of-fines-for-gloucester-b7ae88"
     },
@@ -2829,7 +2829,7 @@
       "when": "15 Sep 2026",
       "outcome": "empty",
       "got": "Not freely. Searches of the Internet Archive for «military survey Gloucestershire 1522», for a published 1524 subsidy roll, and for a separate edition of Men and Armour all return nothing. The Gloucestershire Record Series editions of this material are modern and in copyright. The catalogue descriptions are free; the names are not.",
-      "href": "/coverage",
+      "href": "/swonhungre",
       "ctl": "named",
       "key": "src/a-published-edition-of-the-g-f7e117"
     },
@@ -4376,7 +4376,7 @@
       "what": "If a citation stops resolving tomorrow, can the reader still see what this archive saw?",
       "when": "11 Oct 2026",
       "outcome": "yield",
-      "got": "**It started at 15 of 83 and it now stands at 70 of 84.** [check_cites.py](/searched/) asks whether a citation still resolves TODAY; it does not ask whether anyone could still read it if it stopped. **A footnote to a page that has gone is a footnote to nothing, and the reader cannot tell it from a good one.** `tools/snapshot.py` now asks the second question, counts only the citations this archive chose, reads a committed cache in the build, and has captures requested for the rest twenty at a time with a pause between.\n\n**One early figure was wrong and running the tool caught it.** It asked the Wayback Machine to capture twelve archive.org URLs and got **twelve 523s** — the Internet Archive declining to snapshot itself. **A citation to archive.org IS a permanent copy.** Counting those as unprotected both flattered the problem and would have sent the next person chasing a capture that cannot exist.\n\n**And the fourteen that remain are not a job undone.** Every one resolves perfectly and simply refuses to be archived: **nla.gov.au (6)** — Trove's permalinks — **findagrave.com (3)**, FamilySearch's tree, the Anubis-gated Seine-Maritime viewer, FIBIS, and two dynamic endpoints. **A host that declines to be archived is a fact about the host**, and the tool now prints them by host so that nobody reads the gap as laziness.",
+      "got": "**It started at 15 of 83, and the figure is now counted by the tool on [the sources page](/sources/) instead of typed into a sentence \u2014 because within a week of writing this, the sentence said 70 of 84 while the instrument said 73 of 87.** [check_cites.py](/searched/) asks whether a citation still resolves TODAY; it does not ask whether anyone could still read it if it stopped. **A footnote to a page that has gone is a footnote to nothing, and the reader cannot tell it from a good one.** `tools/snapshot.py` now asks the second question, counts only the citations this archive chose, reads a committed cache in the build, and has captures requested for the rest twenty at a time with a pause between.\n\n**One early figure was wrong and running the tool caught it.** It asked the Wayback Machine to capture twelve archive.org URLs and got **twelve 523s** — the Internet Archive declining to snapshot itself. **A citation to archive.org IS a permanent copy.** Counting those as unprotected both flattered the problem and would have sent the next person chasing a capture that cannot exist.\n\n**And the ones that remain are not a job undone.** Every one resolves perfectly and simply refuses to be archived: **nla.gov.au (6)** — Trove's permalinks — **findagrave.com (3)**, FamilySearch's tree, the Anubis-gated Seine-Maritime viewer, FIBIS, and two dynamic endpoints. **A host that declines to be archived is a fact about the host**, and the tool now prints them by host so that nobody reads the gap as laziness.",
       "href": "/searched",
       "tags": [
         "wayback",

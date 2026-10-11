@@ -7,6 +7,7 @@ import { u } from "../lib/url.js";
 import { people } from "../lib/people.js";
 import printed from "../data/printed.json";
 import src from "../data/sources.json";
+import snap from "../data/snapshot-summary.json";
 import { mdp } from "@daviddef/archive-kit/lib/md.js";
 
 /* The two prose lists below used to be hand-written <ul>s in this file — about
@@ -71,6 +72,33 @@ const reachable = src.recordSets.filter((r) => r.url).length;
       carry no evidential weight in this archive, and a claim resting only on them is marked
       <span class="chip lore">family lore</span> or <span class="chip dis">disputed</span> however
       many trees repeat it. <a href={u("/method/")}>Method →</a>
+    </Note>
+  </section>
+
+  <section class="blk">
+    <h2>Can the reader still see it if the page goes?</h2>
+    <p class="lede" style="margin-top:.8rem">A citation that resolves today is not the same as a
+    citation that will resolve tomorrow, and <strong>a footnote to a page that has gone is a footnote
+    to nothing</strong> &mdash; the reader cannot tell it from a good one. So every citation this
+    archive chose for itself is checked against the Wayback Machine, and the number below is counted
+    by the tool rather than typed here.</p>
+
+    <div style="margin-top:1.2rem;display:flex;gap:2.4rem;flex-wrap:wrap;align-items:baseline">
+      <div><div style="font-size:2.2rem;font-weight:600;line-height:1">{snap.have} of {snap.total}</div>
+        <div class="small" style="color:var(--ink-3)">have a permanent copy ({snap.pct}%)</div></div>
+      <div><div style="font-size:2.2rem;font-weight:600;line-height:1">{snap.selfArchived}</div>
+        <div class="small" style="color:var(--ink-3)">need none &mdash; they ARE the Internet Archive</div></div>
+      <div><div style="font-size:2.2rem;font-weight:600;line-height:1">{snap.missing}</div>
+        <div class="small" style="color:var(--ink-3)">have none, by the host's choice</div></div>
+    </div>
+
+    <Note style="margin-top:1.4rem">
+      <strong>A host that declines to be archived is not a job undone.</strong> Every one of the
+      {snap.missing} without a capture resolves perfectly well and simply refuses to be crawled:
+      {snap.missingHosts.map(([h, n], i) => (
+        <span><span class="mono small">{h}</span>{n > 1 ? ` (${n})` : ""}{i < snap.missingHosts.length - 1 ? ", " : ""}</span>
+      ))}. Counting those as a gap would read as laziness rather than as a fact about the host.
+      Checked {snap.checked}.
     </Note>
   </section>
 
