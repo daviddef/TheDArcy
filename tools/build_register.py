@@ -837,6 +837,28 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- Morier's Second Journey through Persia, read 11 October 2026 ---------
+# The archive has had Joseph D'Arcy's Persian service only from his own
+# obituary of 1848, looking back forty years. This is a contemporary
+# eyewitness: James Morier was SECRETARY OF THE EMBASSY and travelled with
+# him. And once again THE BOOK'S INDEX FOUND HIM when the text search did not.
+MOR = ("record \u00b7 James Morier, A Second Journey through Persia, Armenia, and "
+       "Asia Minor, to Constantinople, between the years 1810 and 1816 (1818) "
+       "\u2014 read in full text, Internet Archive Travel18101816Morier")
+MORL = "https://archive.org/details/Travel18101816Morier"
+rec("Joseph D'Arcy",
+    "HE SAILED TO PERSIA WITH THE BRITISH EMBASSY, AND HERE IS THE PASSENGER LIST \u00b7 the embassy of SIR GORE OUSELEY, His Majesty's Ambassador Extraordinary \u00b7 \u201cOn board the CHICHESTER STORE-SHIP, which accompanied us, were MAJOR (NOW COLONEL) D'ARCY, and MAJOR STONE, OF THE ARTILLERY, WHO DIED IN PERSIA; and TEN PRIVATES OF THE ARTILLERY\u201d \u00b7 written by the embassy's own secretary, who was aboard \u2014 THE FIRST CONTEMPORARY RECORD OF THE PERSIAN SERVICE this archive has had, against an obituary written forty years later",
+    MOR, MORL)
+rec("Joseph D'Arcy",
+    "AND HE WAS SENT TO LOOK AT RUINS \u00b7 the Ambassador dispatched his suite across Persia to record antiquities: Sir William Ouseley to Fasa for the tomb of Cyrus, the Hon. Mr Gordon to Shouster for ancient Susa, Morier himself to Persepolis \u00b7 \u201cCOLONEL D'ARCY PROCEEDED TO FIROUZABAD, WHERE WE HAD HEARD OF SOME REMARKABLE SCULPTURES\u201d \u00b7 an artillery officer sent to draw rock reliefs, which is not how this archive had pictured him",
+    MOR, MORL)
+rec("Joseph D'Arcy",
+    "HE COMMANDED AN ATTACK ON A RUSSIAN POSITION, AND IT IS THE ONLY ACTION OF HIS THIS ARCHIVE HAS \u00b7 Abbas Mirza collected his army at the end of January and marched towards Mogan; 800 Russians with two guns were posted at the village of SULTANBOOT \u00b7 \u201cTHE ATTACK, UNDER THE COMMAND OF COLONEL D'ARCY, TOOK PLACE IN THE MORNING. The Russians, in negligent confidence, were surprised to see A WELL-DIRECTED FIRE OF GRAPE open upon them, WHICH IN A SHORT TIME KILLED 300 OF THEIR MEN; and finding that they had a more skilful enemy to cope with than before, they shut themselves up within the walls of the village; where, after a little negociation, THEY CAPITULATED. ONE OF THE ARTICLES OF CAPITULATION WAS, THAT THEIR HEADS WERE NOT TO BE CUT OFF\u201d \u00b7 the Persians first reported 2,000 killed and 5,000 taken, and admitted to Morier that they had inflated it because \u201cTHIS IS THE FIRST TIME OUR TROOPS HAVE MADE ANY STAND AT ALL AGAINST THE RUSSIANS\u201d \u00b7 THE PASSAGE AS READ CARRIES NO YEAR: thirty thousand characters before it hold no date, and the book covers 1810 to 1816, so this archive does not put a year on it",
+    MOR, MORL)
+rec("Joseph D'Arcy",
+    "AND THE INDEX FOUND HIM AGAIN, FOR THE SECOND TIME IN ONE DAY \u00b7 a full-text search of Morier matched ONE instance of the surname \u2014 THE INDEX ENTRY \u201cD'Arcy, Colonel, 2. 68. 186\u201d \u00b7 all three body passages were missed because the book sets his name in LOWER CASE, \u201cd'Arcy\u201d, and the pattern required a capital D \u00b7 earlier the same day Porter's Copenhagen page had been missed over a LEFT versus RIGHT single quotation mark \u00b7 TWO DIFFERENT CHARACTERS, TWO MISSED PAGES, AND THE INDEX RIGHT BOTH TIMES",
+    MOR, MORL)
+
 # --- a candidate marriage for the Oswestry Olivers, 11 October 2026 -------
 # Graded as a candidate and nothing more. The forenames and the parish fit,
 # the dates fit and the ages fit, and NOTHING LINKS IT TO THE BAPTISMS except

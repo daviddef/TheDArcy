@@ -4412,6 +4412,21 @@
         "copenhagen",
         "archive-org"
       ]
+    },
+    {
+      "src": "James Morier, A Second Journey through Persia, Armenia and Asia Minor, 1810–1816 (1818)",
+      "url": "https://archive.org/details/Travel18101816Morier",
+      "what": "Joseph D'Arcy's five years in Persia, which this archive has had only from his own obituary of 1848",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**An eyewitness, and he names him three times.** Morier was **Secretary of the Embassy** and sailed with him.\n\n**The voyage out.** Of Sir Gore Ouseley's embassy: «On board the **Chichester store-ship**, which accompanied us, were **Major (now Colonel) d'Arcy**, and **Major Stone, of the artillery, who died in Persia**; and **ten privates of the artillery**.»\n\n**Sent to record antiquities.** The Ambassador dispatched his suite across Persia — Sir William Ouseley to Fasa for the tomb of Cyrus, the Hon. Mr Gordon to Shouster for ancient Susa, Morier to Persepolis — and «**Colonel d'Arcy proceeded to Firouzabad, where we had heard of some remarkable sculptures.**» An artillery officer sent to draw rock reliefs.\n\n**And he commanded an action.** Abbas Mirza marched on Mogan; 800 Russians with two guns held the village of **Sultanboot**. «**The attack, under the command of Colonel d'Arcy, took place in the morning.** The Russians, in negligent confidence, were surprised to see **a well-directed fire of grape** open upon them, **which in a short time killed 300 of their men**… they capitulated. **One of the articles of capitulation was, that their heads were not to be cut off.**» The Persians first claimed 2,000 killed and 5,000 taken, and told Morier they had inflated it because «**this is the first time our troops have made any stand at all against the Russians**».\n\n**No year is put on it here.** The passage carries none, thirty thousand characters before it hold no date, and the book spans 1810 to 1816.\n\n**The index found him, for the second time today.** A full-text search matched **one** instance of the surname — the index entry «D'Arcy, Colonel, 2. 68. 186». All three body passages were missed because the book sets his name **lower case**, «d'Arcy». Earlier the same day Porter's Copenhagen page was missed over a **left** versus right quotation mark. Two different characters, two missed pages, **and the index right both times.**",
+      "href": "/joseph-darcy",
+      "tags": [
+        "darcy",
+        "persia",
+        "morier",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
