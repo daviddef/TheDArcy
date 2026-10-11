@@ -2,8 +2,8 @@
   "_note": "Values that encode a DECISION rather than a measurement. tools/check_decisions.py recomputes each from its real source and REFUSES if one has moved, because a decision changing is exactly the case where a deliberate act should be required — and editing this file in the same commit is that act. Most numbers in this build move every run; these do not. See own error 48.",
   "decisions": {
     "kitPin": {
-      "value": "3c9214e",
-      "why": "Which build of the shared kit this archive's gates are. It moved inside a commit about gating a chart on 27 September and three builds passed over it unnoticed — own error 48."
+      "value": "22e5fc9",
+      "why": "Which build of the shared kit this archive's gates are. It moved inside a commit about gating a chart on 27 September and three builds passed over it unnoticed — own error 48. MOVED DELIBERATELY ON 11 OCTOBER 2026 to 22e5fc9, which fixes VisitCount's guard: GoatCounter returns the count as a string and '0' is truthy, so an archive whose counter is on nought printed '0 times read'. Invisible here because this archive has visits; found in Luwinski on the day it registered. The four renderer commits that came with it were CHECKED, NOT ASSUMED - old and new md() run side by side on real strings render identically."
     },
     "livingPolicy": {
       "value": "named-bare",
