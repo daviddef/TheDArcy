@@ -859,6 +859,32 @@ rec("Joseph D'Arcy",
     "AND THE INDEX FOUND HIM AGAIN, FOR THE SECOND TIME IN ONE DAY \u00b7 a full-text search of Morier matched ONE instance of the surname \u2014 THE INDEX ENTRY \u201cD'Arcy, Colonel, 2. 68. 186\u201d \u00b7 all three body passages were missed because the book sets his name in LOWER CASE, \u201cd'Arcy\u201d, and the pattern required a capital D \u00b7 earlier the same day Porter's Copenhagen page had been missed over a LEFT versus RIGHT single quotation mark \u00b7 TWO DIFFERENT CHARACTERS, TWO MISSED PAGES, AND THE INDEX RIGHT BOTH TIMES",
     MOR, MORL)
 
+# --- Sir William Ouseley's Travels, read 11 October 2026 -----------------
+# Three volumes by the Ambassador's own brother, who shared a house with him
+# at Tabriz. Thirty-four mentions. They turn a line in an obituary into a man.
+OUS = ("record \u00b7 Sir William Ouseley, Travels in Various Countries of the East, "
+       "more particularly Persia (1819-1823), vols I-III \u2014 read in full text, "
+       "Internet Archive dli.ministry.06851, in.ernet.dli.2015.502888, dli.ministry.06853")
+OUSL = "https://archive.org/details/dli.ministry.06851"
+rec("Joseph D'Arcy",
+    "HE WAS THE EMBASSY'S ARTIST, AND SIX PLATES OF A SCHOLARLY WORK ARE HIS \u00b7 Ouseley's preface: \u201cTHE PLATES WHICH CONTRIBUTE MOST HIGHLY TO THE EMBELLISHMENT OF THIS VOLUME have been engraved from drawings made by MY ACCOMPLISHED AND AMIABLE FRIEND, who, while these pages were in the press, has received the reward of promotion due to his services, and is mentioned in the second volume under the title of COLONEL D'ARCY. Those plates are numbered II. IV. V. XI. XVIII, and XX\u201d \u00b7 the engravings are signed \u201cColonel D'Arcy del.\u201d \u00b7 they are the Ambassador's house at RIO DE JANEIRO, a NAUTCH DANCE, the cave temples at ELEPHANTA \u2014 \u201cportraits of some gentlemen, actually present, which Major D'Arcy has introduced, sufficiently indicate the relative proportions\u201d \u2014 a WELL NEAR BUSHEHR with mount Halilah behind it, the great Sasanian sculpture at SHAPUR, and a mountain pass",
+    OUS, OUSL)
+rec("Joseph D'Arcy",
+    "AND OUSELEY PREFERRED HIS DRAWING TO HIS OWN \u00b7 at the monument he calls the grave of Solomon's Mother: \u201cI sketched its general appearance FROM THE SAME SPOT WHERE COLONEL D'ARCY HAD MADE A VIEW; and he having favoured me with his drawing, the reader will, no doubt, be pleased that I HAVE PREFERRED IT TO MY OWN, as the subject of Pl. LI\u201d \u00b7 elsewhere \u201cMajor D'Arcy, who delineated them on the spot, has been, AS USUAL, MOST SUCCESSFUL\u201d",
+    OUS, OUSL)
+rec("Joseph D'Arcy",
+    "HE DID EPIGRAPHIC FIELDWORK TOO \u00b7 of a Pahlavi inscription cut between a Sasanian prince and queen: \u201cALTHOUGH ASSISTED BY MAJOR D'ARCY IN IMPRESSING EVERY FORM OF THE LETTERS ON PAPER SLIGHTLY WETTED for the purpose, and applied to the very stone, so much effaced and corroded was the inscription that I cannot lay a satisfactory imitation of it before the reader\u201d \u00b7 and at Isfahan he drew the poet KAZEM WALEH, aged eighty and composing his own epitaph, who objected until flattered, then \u201ctried them all on his head, and when satisfied with one as sufficiently becoming, SAT MOST COMPLACENTLY WHILE COLONEL D'ARCY FINISHED AN ADMIRABLE LIKENESS\u201d",
+    OUS, OUSL)
+rec("Joseph D'Arcy",
+    "THE DAY HE ENTERED ABBAS MIRZA'S SERVICE, WHICH IS WHY HIS SON WAS CALLED ABBAS KOOLY \u00b7 NOVEMBER 1811, at Tehran \u00b7 Captain Lindesay arrived from Tabriz, \u201cwhere he had commanded, and admirably trained, according to the English discipline, A TROOP OF PERSIAN HORSE-ARTILLERY, IN THE SERVICE OF ABBAS MIRZA\u201d \u00b7 \u201cIt was the Ambassador's wish, IN CONSEQUENCE OF THAT PRINCE'S REQUEST, to have immediately sent MAJOR D'ARCY AND MAJOR STONE, along with Captain Lindesay to Tabriz; BUT THE KING WOULD NOT CONSENT that any of those officers should leave Tehran WITHOUT KHELAATS, OR DRESSES OF HONOUR\u201d \u00b7 they were duly \u201chonoured by the king with khelaats\u2026 and PROCEEDED TO JOIN THE ARMY OF ABBAS MIRZA, THE PRINCE ROYAL, AT TABRIZ\u201d",
+    OUS, OUSL)
+rec("Joseph D'Arcy",
+    "AND AT TABRIZ HE COMMANDED THE BRITISH OFFICERS \u00b7 Ouseley, June 1812: \u201cI was accommodated with a room at the house of MY FRIEND MAJOR D'ARCY, WHO, AS SENIOR OFFICER, COMMANDED IN THE MILITARY DEPARTMENT\u201d \u00b7 the others at Tabriz were Major Stone, MAJOR CHRISTIE, Captain Lindesay, Lieutenant George Willock and Mr Campbell the Prince's surgeon \u00b7 two RUSSIAN envoys sent to treat with the Ambassador LODGED IN D'ARCY'S HOUSE, as did a French officer \u00b7 on 23 JUNE 1812 an earthquake shook the table Ouseley was writing at in that house, and D'Arcy told him of an earlier one that killed eighty thousand and threw up \u201cseveral hills of sulphur and arsenick\u201d \u00b7 Ouseley left for Constantinople FROM D'ARCY'S HOUSE on 1 JULY 1812",
+    OUS, OUSL)
+rec("Joseph D'Arcy",
+    "ONE DATE IN THESE VOLUMES DOES NOT ADD UP AND IS NOT BEING SMOOTHED \u00b7 a footnote in volume I says the Firuzabad sculptures \u201cwere examined IN THE SUMMER OF 1814, by MAJOR D'ARCY, WHO WENT FROM SHIRAZ TO FIRUZABAD, while Mr Gordon, Major Stone, and I were detached by the Ambassador into different parts of Persia\u201d \u00b7 BUT the narrative places that dispersal in 1811, and OUSELEY HIMSELF LEFT PERSIA ON 1 JULY 1812 \u00b7 either the footnote's year is a slip or a misprint for 1811, or it records a SECOND visit after the embassy had gone \u00b7 THIS ARCHIVE DOES NOT PICK ONE",
+    OUS, OUSL)
+
 # --- a candidate marriage for the Oswestry Olivers, 11 October 2026 -------
 # Graded as a candidate and nothing more. The forenames and the parish fit,
 # the dates fit and the ages fit, and NOTHING LINKS IT TO THE BAPTISMS except

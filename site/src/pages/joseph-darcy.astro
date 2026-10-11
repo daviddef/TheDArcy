@@ -309,6 +309,31 @@ import d from "../data/joseph-darcy.json";
     <p class="small" style="margin-top:1rem"><a href={u("/errands")}>What it would cost to read →</a></p>
   </section>
 
+  <section class="blk">
+    <div class="lab">{d.persiaEye.lab}</div>
+    <h2 style="margin-top:.4rem">{d.persiaEye.head}</h2>
+    <p class="lede" style="margin-top:.9rem" set:html={mdp(d.persiaEye.body)}></p>
+
+    <Scroll>
+      <table style="margin-top:1.3rem">
+        <thead><tr><th>What he did</th><th>What the source says</th></tr></thead>
+        <tbody>
+          {d.persiaEye.rows.map(([a, b]) => (
+            <tr><td set:html={mdp(a)}></td><td class="small" set:html={mdp(b)}></td></tr>))}
+        </tbody>
+      </table>
+    </Scroll>
+
+    <div class="note" style="border-left-width:3px;margin-top:1.3rem">
+      <strong>And this is where the name comes from.</strong>
+      <span set:html={mdp(d.persiaEye.name)} />
+      {" "}<a href={u("/abbas-kooli")}>The son who governed two colonies →</a></div>
+
+    <div class="note" style="margin-top:1.1rem" set:html={mdp(d.persiaEye.careful)}></div>
+    <div class="note" style="margin-top:1.1rem"><strong>How both books were found, and how both
+      were nearly missed.</strong> <span set:html={mdp(d.persiaEye.method)} /></div>
+  </section>
+
   <section class="blk" style="border-bottom:0">
     <h2>Why it matters</h2>
     <p class="lede">{d.matters}</p>

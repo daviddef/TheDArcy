@@ -4427,6 +4427,21 @@
         "morier",
         "archive-org"
       ]
+    },
+    {
+      "src": "Sir William Ouseley, Travels in Various Countries of the East, more particularly Persia — three volumes",
+      "url": "https://archive.org/details/dli.ministry.06851",
+      "what": "Joseph D'Arcy in Persia, asked of the Ambassador's own brother, who shared a house with him at Tabriz",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**Thirty-four mentions across three volumes, and they turn a line in an obituary into a man.**\n\n**He was the embassy's artist.** Ouseley's preface: «**The plates which contribute most highly to the embellishment of this volume** have been engraved from drawings made by **my accomplished and amiable friend**… mentioned in the second volume under the title of **Colonel D'Arcy**. Those plates are numbered **II. IV. V. XI. XVIII, and XX**.» The engravings are signed «Colonel D'Arcy del.» — the Ambassador's house at Rio, a nautch dance, the cave temples at **Elephanta**, a well near Bushehr, the great Sasanian sculpture at **Shapur**, a mountain pass. At Pasargadae Ouseley sketched the same view and then **preferred D'Arcy's to his own**: «he having favoured me with his drawing, the reader will no doubt be pleased that **I have preferred it to my own**.»\n\n**He did fieldwork.** «**Assisted by Major D'Arcy in impressing every form of the letters on paper slightly wetted** for the purpose, and applied to the very stone» — taking squeezes of a Pahlavi inscription. At Isfahan he drew the poet **Kazem Waleh**, eighty years old and composing his own epitaph, who refused until flattered, then «tried them all on his head, and when satisfied with one as sufficiently becoming, **sat most complacently while Colonel D'Arcy finished an admirable likeness**».\n\n**And here is the day he entered Abbas Mirza's service — the reason his son was called Abbas Kooly.** November 1811, Tehran: the Prince asked for British officers, «but **the king would not consent** that any of those officers should leave Tehran **without khelaats, or dresses of honour**». They were duly «honoured by the king with khelaats… and **proceeded to join the army of Abbas Mirza, the prince royal, at Tabriz**».\n\n**At Tabriz he was in charge.** «I was accommodated with a room at the house of my friend **Major D'Arcy, who, as senior officer, commanded in the military department**.» Two Russian envoys lodged in his house; so did a French officer. Ouseley was writing at a table there when the earthquake of 23 June 1812 shook it, and left for Constantinople **from D'Arcy's house** on 1 July 1812.\n\n**One date does not add up and is not being smoothed.** A footnote in volume I dates the Firuzabad excursion to «the summer of **1814**», but the narrative places that dispersal in 1811 and Ouseley left Persia in July 1812. Either the year is a slip for 1811 or it records a later visit. **This archive does not pick one.**",
+      "href": "/joseph-darcy",
+      "tags": [
+        "darcy",
+        "persia",
+        "ouseley",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
