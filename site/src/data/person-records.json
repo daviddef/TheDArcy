@@ -1522,6 +1522,43 @@
 }
 ]
 },
+"elizabeth-margaret-oliver": {
+"name": "Elizabeth Margaret Oliver",
+"shared": false,
+"alsoNamed": [],
+"rows": [
+{
+"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
+"source": "1861 census, Hanley, Staffordshire (FreeCEN)",
+"link": "https://www.freecen.org.uk/"
+},
+{
+"says": "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 · the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street",
+"source": "General Register Office death index (FreeBMD)",
+"link": "https://www.freebmd.org.uk/"
+},
+{
+"says": "wife, aged 71 · born OSWESTRY, SHROPSHIRE — which settles the unreadable “Staly Cladwin” of the 1861 census",
+"source": "1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "born 17 MAY 1782, baptised 19 May 1782 at Oswestry St Oswald's · father DAVID OLIVER, mother MARY — the tree says 7 May 1787, two digits away",
+"source": "Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "HER BAPTISM IN A SECOND, INDEPENDENT TRANSCRIPTION · “May 19. Elizabeth, d. of DAVID OLIVER, CROSS ST., & MARY, b. 7 … bap.”, under the year 1782 · the baptism date, the parents and the year all match what this archive took from FindMyPast — BUT THE PRINTED TRANSCRIPT SAYS SHE WAS BORN ON THE 7TH AND FINDMYPAST'S INDEX SAYS THE 17TH · one digit, two transcriptions of one entry, and no way to choose between them without the register itself",
+"source": "Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish06asapshro"
+},
+{
+"says": "SIBLINGS, AND THE FIRST THIS ARCHIVE HAS HAD · the same parents at Oswestry baptise DIANNA on 23 MARCH 1777 and DAVID on 12 JULY 1789, the latter entered as “s. of David Oliver, COOPER, Cross Street, & Mary” · a family of at least three children in one street",
+"source": "Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish06asapshro"
+}
+]
+},
 "jean-ward": {
 "name": "Jean Ward",
 "shared": false,
@@ -1563,43 +1600,6 @@
 "says": "married MARTH[A] GAIRDEN at SOUTH LEITH, 27 OCTOBER 1747 · her father WILLIAM GAIRDEN — seven years before their daughter Jean was christened in the same parish",
 "source": "Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
 "link": "https://www.findmypast.com.au/"
-}
-]
-},
-"elizabeth-margaret-oliver": {
-"name": "Elizabeth Margaret Oliver",
-"shared": false,
-"alsoNamed": [],
-"rows": [
-{
-"says": "WIDOW, aged 82, born Shropshire · living at Well St, Hanley, in a grocer's shop with her son James on 7 April 1861 — the street and the trade the tree gives her husband, five years after he died there",
-"source": "1861 census, Hanley, Staffordshire (FreeCEN)",
-"link": "https://www.freecen.org.uk/"
-},
-{
-"says": "death registered December quarter 1861, Stoke upon Trent, volume 6b page 66 · the tree's 1 December 1861 confirmed, eight months after the census found her at Well Street",
-"source": "General Register Office death index (FreeBMD)",
-"link": "https://www.freebmd.org.uk/"
-},
-{
-"says": "wife, aged 71 · born OSWESTRY, SHROPSHIRE — which settles the unreadable “Staly Cladwin” of the 1861 census",
-"source": "1851 census, Well Street, Hanley — HO107/2004 f.138 p.13 sch.46 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "born 17 MAY 1782, baptised 19 May 1782 at Oswestry St Oswald's · father DAVID OLIVER, mother MARY — the tree says 7 May 1787, two digits away",
-"source": "Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "HER BAPTISM IN A SECOND, INDEPENDENT TRANSCRIPTION · “May 19. Elizabeth, d. of DAVID OLIVER, CROSS ST., & MARY, b. 7 … bap.”, under the year 1782 · the baptism date, the parents and the year all match what this archive took from FindMyPast — BUT THE PRINTED TRANSCRIPT SAYS SHE WAS BORN ON THE 7TH AND FINDMYPAST'S INDEX SAYS THE 17TH · one digit, two transcriptions of one entry, and no way to choose between them without the register itself",
-"source": "Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
-"link": "https://archive.org/details/shropshireparish06asapshro"
-},
-{
-"says": "SIBLINGS, AND THE FIRST THIS ARCHIVE HAS HAD · the same parents at Oswestry baptise DIANNA on 23 MARCH 1777 and DAVID on 12 JULY 1789, the latter entered as “s. of David Oliver, COOPER, Cross Street, & Mary” · a family of at least three children in one street",
-"source": "Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
-"link": "https://archive.org/details/shropshireparish06asapshro"
 }
 ]
 },

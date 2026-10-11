@@ -837,6 +837,21 @@ rec("George Abbas Kooli D'Arcy",
     "GOVERNOR OF THE GAMBIA, 17 JUNE 1859 \u00b7 \u201cColonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia\u201d \u2014 gazetted in the same sentence as the new Governor of Hong Kong",
     "record \u00b7 The London Gazette, 17 June 1859, issue 22275, p.2361; The Edinburgh Gazette, 21 June 1859, issue 6920, p.861", GZ)
 
+# --- a candidate marriage for the Oswestry Olivers, 11 October 2026 -------
+# Graded as a candidate and nothing more. The forenames and the parish fit,
+# the dates fit and the ages fit, and NOTHING LINKS IT TO THE BAPTISMS except
+# those fits. David and Mary are two of the commonest names on this border.
+LLAN = ("record \u00b7 Shropshire Parish Registers, Diocese of St Asaph \u2014 the printed "
+        "Llanyblodwel register, read in full text, Internet Archive "
+        "shropshireparish03asapshro")
+LLANL = "https://archive.org/details/shropshireparish03asapshro"
+rec("David Oliver",
+    "A CANDIDATE MARRIAGE, AND IT IS CALLED A CANDIDATE \u00b7 \u201c1772, June 12. DAVID OLIVER OF OSWESTRY P: BAC: & MARY OWENS SP: \u2026 lic: mar\u201d, in the printed register of LLANYBLODWEL \u00b7 WHAT FITS: he is of Oswestry parish, where the Oliver baptisms are; the forename pair matches the \u201cDavid Oliver & Mary\u201d of those baptisms; a marriage in 1772 sits properly before Dianna in 1777, Elizabeth in 1782 and David in 1789; and a man buried at Oswestry in 1808 aged 59 was about twenty-three in 1772 \u00b7 WHAT DOES NOT: NOTHING LINKS THIS ENTRY TO THOSE BAPTISMS EXCEPT THOSE FITS. David Oliver and Mary are two of the commonest names on this border, and the same eight volumes hold David Olivers at Blodwell, Trefyrclawdd, Pentreshanel, Sweeney and Willow Street across a century \u00b7 IF IT IS THE RIGHT MARRIAGE, Elizabeth Margaret Oliver's mother was MARY OWENS and the Sneyd line gains a surname. IT IS NOT YET THE RIGHT MARRIAGE; IT IS THE ONLY CANDIDATE",
+    LLAN, LLANL)
+rec("David Oliver",
+    "AND THE CANDIDATE IS THE ONLY ONE, WHICH IS THE CONTROL \u00b7 all eight printed St Asaph volumes were searched for every marriage of a DAVID OLIVER \u00b7 between 1765 and 1782 there is exactly ONE, the Llanyblodwel entry above \u00b7 the only other in the series is \u201c1799, May 10. David Oliver, bac: & ANNE MORRIS, sp:\u201d, which is the wrong wife and the wrong decade \u00b7 so the shortlist is one long, and that is worth as much as the entry itself",
+    LLAN, LLANL)
+
 # --- the Madeley register, located but not read, 11 October 2026 ---------
 # The Staffordshire Parish Register Society printed Madeley. The volume is on
 # the Internet Archive and is LENDING-RESTRICTED: the text returns 401 and a

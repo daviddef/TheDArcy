@@ -1176,6 +1176,16 @@
 "link": "https://www.findmypast.com.au/"
 },
 {
+"says": "A CANDIDATE MARRIAGE, AND IT IS CALLED A CANDIDATE · “1772, June 12. DAVID OLIVER OF OSWESTRY P: BAC: & MARY OWENS SP: … lic: mar”, in the printed register of LLANYBLODWEL · WHAT FITS: he is of Oswestry parish, where the Oliver baptisms are; the forename pair matches the “David Oliver & Mary” of those baptisms; a marriage in 1772 sits properly before Dianna in 1777, Elizabeth in 1782 and David in 1789; and a man buried at Oswestry in 1808 aged 59 was about twenty-three in 1772 · WHAT DOES NOT: NOTHING LINKS THIS ENTRY TO THOSE BAPTISMS EXCEPT THOSE FITS. David Oliver and Mary are two of the commonest names on this border, and the same eight volumes hold David Olivers at Blodwell, Trefyrclawdd, Pentreshanel, Sweeney and Willow Street across a century · IF IT IS THE RIGHT MARRIAGE, Elizabeth Margaret Oliver's mother was MARY OWENS and the Sneyd line gains a surname. IT IS NOT YET THE RIGHT MARRIAGE; IT IS THE ONLY CANDIDATE",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Llanyblodwel register, read in full text, Internet Archive shropshireparish03asapshro",
+"link": "https://archive.org/details/shropshireparish03asapshro"
+},
+{
+"says": "AND THE CANDIDATE IS THE ONLY ONE, WHICH IS THE CONTROL · all eight printed St Asaph volumes were searched for every marriage of a DAVID OLIVER · between 1765 and 1782 there is exactly ONE, the Llanyblodwel entry above · the only other in the series is “1799, May 10. David Oliver, bac: & ANNE MORRIS, sp:”, which is the wrong wife and the wrong decade · so the shortlist is one long, and that is worth as much as the entry itself",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Llanyblodwel register, read in full text, Internet Archive shropshireparish03asapshro",
+"link": "https://archive.org/details/shropshireparish03asapshro"
+},
+{
 "says": "A COOPER OF CROSS STREET, OSWESTRY · the printed parish register gives him an occupation and an address this archive did not have · BURIED AT OSWESTRY 21 JUNE 1808, AGED 59, which puts his birth about 1749",
 "source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
 "link": "https://archive.org/details/shropshireparish06asapshro"
@@ -1184,7 +1194,7 @@
 "inTree": false,
 "treeLink": "",
 "slug": "david-oliver",
-"n": 2
+"n": 4
 },
 "john-maddock-jones": {
 "name": "John Maddock Jones",
@@ -2811,6 +2821,6 @@
 "named": 228,
 "withTreePage": 57,
 "ownPage": 172,
-"mentions": 435
+"mentions": 437
 }
 }
