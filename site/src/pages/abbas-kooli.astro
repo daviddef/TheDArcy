@@ -1,0 +1,52 @@
+---
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import { u } from "../lib/url.js";
+import d from "../data/abbas-kooli.json";
+---
+<Base
+  title="George Abbas Kooli D'Arcy"
+  eyebrow={`Westminster 1818 — Devon 1885 · found ${d.found}`}
+  dek="Joseph D'Arcy's eldest son, carried on these pages for a month as two index entries. He governed the Gambia and then the Falkland Islands, and a Victoria Cross was won at his shoulder.">
+
+  <section class="blk"><p class="lede">{d.lede}</p></section>
+
+  <section class="blk">
+    <Note style="border-left-width:3px;margin-bottom:0">
+      <strong>{d.name.head}.</strong> {d.name.body}
+      {" "}<span class="chip doc">{d.name.chip}</span>
+      {" "}<a href={u("/joseph-darcy/")}>His father →</a>
+    </Note>
+  </section>
+
+  <Blk label="Ensign to Governor" title="Forty-eight years, from a corrected name to a colony">
+    <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:1.1rem">
+      {d.career.map(([when, what, note, src]) => (
+        <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+          <div><span class="mono small" style="color:var(--ink-3)">{when}</span>
+            <strong style="margin-left:.6rem">{what}</strong></div>
+          <p class="small" style="margin-top:.35rem">{note}</p>
+          <p class="small" style="margin-top:.3rem;color:var(--ink-3)">{src}</p>
+        </div>
+      ))}
+    </div>
+  </Blk>
+
+  <Blk label="Tubabecolong, 1866" title={d.vc.head}>
+    <p style="margin-top:1rem">{d.vc.body}</p>
+    <Note style="margin-top:1.2rem"><strong>On the language of the source.</strong> {d.vc.note}</Note>
+  </Blk>
+
+  <section class="blk">
+    <Note style="border-left-width:3px"><strong>What is still not known.</strong> {d.open}</Note>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <Note><strong>How he was found, which is the transferable part.</strong> {d.method}</Note>
+    <p class="small" style="margin-top:1.4rem">
+      <a href={u("/joseph-darcy")}>Joseph D'Arcy, his father →</a> ·
+      <a href={u("/robert-family")}>Robert and Jean's family →</a> ·
+      <a href={u("/searched")}>Every search behind this page →</a></p>
+  </section>
+</Base>

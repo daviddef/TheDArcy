@@ -216,6 +216,18 @@ python3 tools/check_decisions.py
 # myheritage.com — 428 of the 581, carried in from the GEDCOM rather than
 # chosen here — answers a robot with 200 and an Incapsula block body. Every
 # one would have been counted as resolving. A status code is not a page.
+# Reports, never gates. check_cites.py asks whether a citation still resolves
+# TODAY. snapshot.py asks the harder question: if it stops resolving tomorrow,
+# can the reader still see what this archive saw? It reads a committed cache
+# and takes no network here; `--check` and `--save` are deliberate runs.
+#
+# It counts only the citations THIS ARCHIVE CHOSE, and it counts an
+# archive.org citation as already permanent, because it is — the first run
+# asked the Wayback Machine to capture twelve archive.org URLs and got twelve
+# 523s back, which is the Internet Archive declining to snapshot itself.
+echo "── permanent copies of our sources (informational, cached)"
+python3 tools/snapshot.py || true
+
 echo "── outward citations (informational, cached)"
 python3 tools/check_cites.py || true
 
