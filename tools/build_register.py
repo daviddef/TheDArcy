@@ -919,7 +919,7 @@ POR = ("record \u00b7 Whitworth Porter, History of the Corps of Royal Engineers,
        "historyofcorpsof0001whit")
 PORL = "https://archive.org/details/historyofcorpsof0001whit"
 rec("Robert D'Arcy",
-    "PORTER'S INDEX GIVES HIM THREE CAMPAIGNS \u00b7 \u201cD'ARCY, ROBERT, at second siege of MINORCA, 209, 216; COPENHAGEN, 243; WALCHEREN, 248\u201d \u00b7 this archive had cited Porter only for a station list and had never read the book \u00b7 the Copenhagen page was not reached and is recorded here as THE INDEX'S CLAIM, not as a passage read",
+    "PORTER'S INDEX GIVES HIM THREE CAMPAIGNS \u00b7 \u201cD'ARCY, ROBERT, at second siege of MINORCA, 209, 216; COPENHAGEN, 243; WALCHEREN, 248\u201d \u00b7 this archive had cited Porter only for a station list and had never read the book \u00b7 all three have now been read; the Copenhagen page took a second pass to find, for the reason given below",
     POR, PORL)
 rec("Robert D'Arcy",
     "THE SECOND SIEGE OF MINORCA, 1781-82, AS A LIEUTENANT \u00b7 the Duc de Crillon landed on 19 August 1781 to besiege Fort St Philip's \u00b7 Lieutenant-Colonel Brewse held the post of Chief Engineer in the island, and \u201cunder him were Captain Gilbert Townshend, and LIEUTENANTS ROBERT D'ARCY, W. Johnston, J. R. Douglas, C. Shipley, and J. Fiddes\u201d \u00b7 a garrison of about 3,000 under General Murray as Governor \u2014 ONE OF SIX ENGINEER OFFICERS INSIDE A FORTRESS THAT WAS BESIEGED FOR SIX MONTHS",
@@ -933,6 +933,13 @@ rec("Robert D'Arcy",
 rec("Robert D'Arcy",
     "AND AN AGE THAT DOES NOT FIT THE TREE \u00b7 the Brigade-Major calls him \u201cAN OLD MAN BEYOND SIXTY\u201d at Flushing in AUGUST 1809, which puts his birth BEFORE ABOUT 1749 \u00b7 THE FAMILY TREE SAYS 1751, which would have made him fifty-eight that summer \u00b7 this is an eyewitness impression recorded by one officer and printed eighty years later, NOT A REGISTER, and it is graded accordingly \u2014 but it is the second thing this archive has found that sits badly with 1751, and the tree's 1751 is itself only arithmetic from an age on a burial register",
     POR, PORL)
+rec("Robert D'Arcy",
+    "COMMANDING ENGINEER OF THE COPENHAGEN EXPEDITION, 1807, UNDER THE FUTURE DUKE OF WELLINGTON \u00b7 the force sailed from Yarmouth Roads on 27 July with 20,000 men \u201cunder the command of MAJOR-GENERAL SIR ARTHUR WELLESLEY\u201d, and \u201cTHE ENGINEERS CONSISTED OF LIEUTENANT-COLONEL R. D'ARCY, COMMANDING ENGINEER; Captains R. Fletcher, J. F. Birch and S. R. Chapman; Second Captains C. W. PASLEY, H. Goldfinch and C. S. Rhodes; First Lieutenant G. Collyer\u201d \u00b7 Copenhagen was bombarded from 2 September and the Danish fleet seized \u00b7 TWO OF THE MEN UNDER HIM BECAME FAMOUS: Richard Fletcher was Wellington's chief engineer in the Peninsula and died at San Sebastian, and Charles Pasley founded the school of military engineering at Chatham, WHERE D'ARCY HIMSELF DIED AS COMMANDANT TWENTY YEARS LATER",
+    POR, PORL)
+rec("Robert D'Arcy",
+    "AND THE BOOK'S OWN INDEX IS WHAT FOUND IT \u00b7 a first pass over Porter's full text matched seven instances of the surname AND MISSED THIS ONE, because the scanner had set it \u201cD\u2018Arcy\u201d with a LEFT single quotation mark where every other instance uses a right one \u00b7 THE SEARCH WAS WRONG AND THE INDEX WAS RIGHT: Porter's own entry says \u201cCopenhagen, 243\u201d, which is why anybody went looking for a page the text search had already declared absent \u00b7 AN INDEX IS A CONTROL ON A FULL-TEXT SEARCH, and this archive will take that lesson into every book it reads this way",
+    POR, PORL)
+
 
 # --- the Colonial Office List for 1877, read 11 October 2026 ---------------
 # A full biographical notice, official and free. One editorial choice is

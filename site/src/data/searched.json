@@ -4382,6 +4382,36 @@
         "wayback",
         "citations"
       ]
+    },
+    {
+      "src": "FIBIS — Elizabeth Eleanor D'Arcy, who married Arthur Ashley Ruck in 1877",
+      "url": "https://fibis.ourarchives.online/",
+      "what": "Whose daughter she was — the one question the Berta Ruck discovery left open",
+      "when": "11 Oct 2026",
+      "outcome": "null",
+      "got": "**Not answered, and a tempting piece of reasoning is refused along the way.** **Allen's Indian Mail carried the marriage**: «Groom RUCK, Arthur Ashley · Bride D'ARCY, **Elizabeth Eleanor** · 1877». That is a second, independent record of the Penzance marriage FreeBMD gives as 5c 381, reported from the India side.\n\n**It is NOT evidence that she was one of the Indian D'Arcys, and it would have been easy to say it was.** Arthur Ashley Ruck was himself an India-serving officer — Lieutenant promoted to Captain, 2nd Battalion 8th (The King's) Regiment, in the Afghan war of 1878–81 — so **the Anglo-Indian paper had every reason to print his marriage whoever he married.** The notice is explained by the groom alone.\n\n**No baptism for her exists in FIBIS**, exact search, across two million names. The only other Elizabeth D'Arcys there are an **Elizabeth D'Arcy who died in India on 23 September 1861** (a BACSA memorial — not the 1877 bride, who was alive, and not attachable to anybody here) and an Elizabeth **Boyle** who married a John D'Arcy in Bengal in 1856.\n\n**So whose daughter she was is exactly as open as it was**, and the inference that she was Robert West's is still an inference from a surname and a decade.",
+      "href": "/robert-family",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "ruck",
+        "fibis"
+      ]
+    },
+    {
+      "src": "Porter, History of the Corps of Royal Engineers, vol. I — the Copenhagen page",
+      "url": "https://archive.org/details/historyofcorpsof0001whit",
+      "what": "The third campaign Porter's index gives Robert D'Arcy, which a full-text search had said was not there",
+      "when": "11 Oct 2026",
+      "outcome": "yield",
+      "got": "**Commanding Engineer of the Copenhagen expedition of 1807, under the future Duke of Wellington.** The force sailed from Yarmouth Roads on 27 July with 20,000 men «under the command of **Major-General Sir Arthur Wellesley**», and «**the Engineers consisted of Lieutenant-Colonel R. D'Arcy, Commanding Engineer**; Captains R. Fletcher, J. F. Birch and S. R. Chapman; Second Captains **C. W. Pasley**, H. Goldfinch and C. S. Rhodes; First Lieutenant G. Collyer.» Copenhagen was bombarded from 2 September and the Danish fleet seized. **Two of the men under him became famous:** Richard Fletcher was Wellington's chief engineer in the Peninsula and died at San Sebastian, and Charles Pasley founded the school of military engineering **at Chatham — where D'Arcy himself died as Commandant twenty years later.**\n\n**And the book's own index is what found it.** A first pass over the full text matched seven instances of the surname and **missed this one**, because the scanner had set it «D‘Arcy» with a **left** single quotation mark where every other instance uses a right one. The search was wrong and the index was right: Porter's entry says «Copenhagen, 243», which is the only reason anybody went looking for a page the text search had already declared absent. **An index is a control on a full-text search**, and this archive will carry that into every book it reads this way.",
+      "href": "/the-corps",
+      "tags": [
+        "darcy",
+        "royal-engineers",
+        "copenhagen",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
