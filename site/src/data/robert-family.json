@@ -100,5 +100,25 @@
   "And who ELIZABETH PITT was — living in Joseph's house in 1841, dying at Lymington in 1851, and sharing a surname that ran through four generations of this family. This is the one question the archive's own material could not help with.",
   "Where Jane, Catherine and Charlotte were in 1851, 1861 and 1871 — they are in the Brighton census in 1841 and in none of the three that follow, under any spelling."
  ],
- "crossread": "Five of these children were added on 14 September 2026, not from any new record but from this archive's own family tree — read, for the first time, against this archive's own open questions."
+ "crossread": "Five of these children were added on 14 September 2026, not from any new record but from this archive's own family tree — read, for the first time, against this archive's own open questions.",
+ "portraits": {
+  "lab": "Berta Ruck, Ancestral Voices (London, Hutchinson, 1972) — list of illustrations, plates between pp.128–129",
+  "head": "Their photographs were printed in 1972, by a descendant, and nobody here had looked for her",
+  "body": "The GEDCOM notes this archive inherited quote «by Berta Ruck» in two places and nobody had asked who she was. She was the novelist Berta Ruck (1878–1978), and she was descended from this family: FreeBMD gives «RUCK, Arthur Ashley» and «D'ARCY, Elizabeth Eleanor» at the same volume and page — Penzance, September quarter 1877, GRO 5c 381 — and Berta was born the following year. In 1972 she published a family memoir, and its list of plates is a roll-call of this page.",
+  "plates": [
+   "Major-General Robert D'Arcy, R.E., C.B.",
+   "Jean D'Arcy, née Ward",
+   "Colonel Joseph D'Arcy, R.A.",
+   "Lady Catherine D'Arcy, née West",
+   "The Three Aunts D'Arcy — Jane, Kate and Charlotte",
+   "One of the Three Aunts in Persian dress, brought home by her brother Joseph",
+   "George Abbas Kooli D'Arcy",
+   "Robert West D'Arcy",
+   "Annie Hewish D'Arcy, née Adams",
+   "Amy Darwin, née Ruck, and Charles Darwin"
+  ],
+  "gives": "It settles a name the tree could not. The GEDCOM hedged «Anne Heevish or Hewish Adams» for the woman Robert West married at Bombay in 1846. Three records that did not copy each other now agree: the India Office ecclesiastical return indexes her ANNE H ADAMS, the Gentleman's Magazine announcement calls her ANNIE ADAMS, and her great-niece's plate list names her ANNIE HEWISH D'ARCY, NÉE ADAMS. An initial in a government index, a forename in a magazine and a caption under a photograph, and between them a woman has her whole name back.",
+  "careful": "What is NOT established. That Berta Ruck is the daughter of that 1877 marriage is an inference from a date and a father's name, not a record, and whose daughter Elizabeth Eleanor was is not established at all. The «C.B.» after Robert D'Arcy's name is a caption written by a descendant in 1972 and not an official list — a first pass over the Gazette for 1814–1830 did not find it, though that OCR mangles this surname badly. And the book's text is in copyright and lending-restricted: only the plate list was read. Borrowing needs an account and none was made.",
+  "hidden": "It has been invisible for fifty years because the Internet Archive catalogues it under the subject «Dorsey family», a mangling of D'Arcy. No search for the surname will ever surface it."
+ }
 }

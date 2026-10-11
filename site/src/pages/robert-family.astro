@@ -64,6 +64,29 @@ import d from "../data/robert-family.json";
         {d.open.map((x) => (<li style="margin-bottom:.35rem">{x}</li>))}
       </ul>
     </div>
+  </section>
+
+  <section class="blk">
+    <div class="lab">{d.portraits.lab}</div>
+    <h2 style="margin-top:.4rem">{d.portraits.head}</h2>
+    <p class="lede" style="margin-top:.9rem">{d.portraits.body}</p>
+
+    <div class="note" style="border-left-width:3px;margin-top:1.2rem">
+      <strong>The plates</strong>
+      <ul style="margin:.7rem 0 0 1.1rem">
+        {d.portraits.plates.map((x) => (<li style="margin-bottom:.3rem">{x}</li>))}
+      </ul>
+    </div>
+
+    <p style="margin-top:1.3rem">{d.portraits.gives}</p>
+    <div class="note" style="margin-top:1.2rem"><strong>Why nobody found it.</strong> {d.portraits.hidden}</div>
+    <div class="note" style="border-left-width:3px;margin-top:1.1rem"><strong>And what is not
+      established.</strong> {d.portraits.careful}
+      {" "}<a href={u("/abbas-kooli")}>The son who governed two colonies →</a></div>
+
+  </section>
+
+  <section class="blk" style="border-bottom:0">
     <p class="small" style="margin-top:1.4rem">
       <a href={u("/hornby")}>The claim above Robert →</a> ·
       <a href={u("/chatham")}>The parish →</a> ·
