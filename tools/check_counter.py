@@ -27,9 +27,21 @@ import os, re, sys, json, glob
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-import outdir
 
-DIST = outdir.out()
+# PORTABLE ON PURPOSE. tools/outdir.py is this archive's own resolver for
+# "which build am I grading", and it exists in no other archive in the estate
+# — checked, not assumed, on 12 October: Booyzen, Our Family, Mazza, Lerena
+# and Defranceschi all lack it. This gate is worth having in all of them, and
+# a hard import would have handed each of them an ImportError instead of a
+# check. So outdir is used where it exists and the same rule is applied
+# directly where it does not: ARCHIVE_OUT wins, because it is the operator
+# speaking, and site/dist is the default every workflow uploads.
+try:
+    import outdir
+    DIST = outdir.out()
+except ImportError:
+    _o = os.environ.get("ARCHIVE_OUT")
+    DIST = os.path.join(ROOT, "site", _o) if _o else os.path.join(ROOT, "site", "dist")
 RING = os.path.join(ROOT, "site", "node_modules", "@daviddef",
                     "archive-kit", "kit", "data", "archives.json")
 
