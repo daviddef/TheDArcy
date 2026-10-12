@@ -83,7 +83,17 @@ def main():
         return 0
 
     seen, bad = {}, []
-    pat = re.compile(r'data-goatcounter="https?://([^./"]+)\.goatcounter\.com')
+    # INSIDE A TAG, NOT IN THE PROSE. The first version matched the attribute
+    # anywhere in the page, and the first thing it refused was this archive's
+    # own write-up of the bug: /corrections quotes the offending string in
+    # full — «data-goatcounter="https://thedefranceski.goatcounter.com/count"»
+    # — and the gate read the account of the fault as the fault. An archive
+    # that publishes its own errors will quote the bad value by design, so a
+    # control that cannot tell a citation from a live attribute would punish
+    # exactly the habit this place is built on. Requiring the match to sit
+    # inside a tag settles it: `<[^>]*` cannot cross the `>` that closes the
+    # element the prose lives in.
+    pat = re.compile(r'<[^>]*\bdata-goatcounter\s*=\s*"https?://([^./"]+)\.goatcounter\.com')
     for f in pages:
         for host in pat.findall(open(f, encoding="utf-8", errors="ignore").read()):
             seen[host] = seen.get(host, 0) + 1

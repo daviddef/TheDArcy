@@ -4,6 +4,46 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
       {
+        "when": "12 October 2026",
+        "title": "The archive moves to darcy.defranceski.com, and loses two and a half hours of its own readership on the way",
+        "found": [
+          [
+            "Moved",
+            "the archive is now at darcy.defranceski.com. The old address redirects, with the path kept, so nothing anybody has linked or bookmarked breaks"
+          ],
+          [
+            "Lost",
+            "2h 39m of readership figures, 09:14 to 11:53 UTC, logged into another family's GoatCounter account and not recoverable"
+          ],
+          [
+            "Fixed",
+            "the canonical on all 858 pages, which the same fault had pointed at a different archive — caught in a scratch build and never published"
+          ],
+          [
+            "Fixed",
+            "robots.txt, which went on naming a sitemap at the old origin while everything else had moved"
+          ],
+          [
+            "Added",
+            "two gates — one on whose counter the built pages name, one on the three files that state this archive's address"
+          ],
+          [
+            "Checked",
+            "0 pages without an inbound link, 0 broken asset references, 0 of this archive's own citations dead"
+          ]
+        ],
+        "did": [
+          "WHY THE ADDRESS CHANGED AT ALL. defranceski.com is a GitHub Pages site served by its own repository, and project sites do not inherit it — defranceski.com/TheDArcy/ returns 404. So a subdomain was the only clean route rather than a preference, and six sister archives are moving the same way.",
+          "THE READERSHIP GAP, WHICH IS THE PART WORTH READING. Every page this archive served between 09:14 and 11:53 UTC on 12 October reported its pageview to thedefranceski.goatcounter.com — the Defranceschi family's account — instead of its own. That is about two and a half hours of visits at both addresses, and they cannot be separated out of the other account afterwards. So this archive's figures have a hole in them on that afternoon, and the hole is not a quiet period. Anyone reading the counter should know the number is short by whatever those hours held.",
+          "HOW A DOMAIN MOVE REACHES A COUNTER. The layout asked which of the seven archives it was building by matching `base`, which is \"/TheDArcy\" for a project site and the EMPTY STRING once an archive has its own domain. Five archives had moved, so five shared that key, and the lookup returned the first of them. Name, accent and counter code are all read off that one answer. The data was never wrong — this archive's entry has always said its counter is `thedarcy`, and editing it would have broken the only part that was correct. The lookup is now matched by ORIGIN.",
+          "THE SAME FAULT HAD ALREADY BEEN CAUGHT ONCE, WHICH IS WHY THE SECOND ONE STINGS. It first appeared as a canonical — every page of this archive declaring archive.defranceski.com as its true address, which is the one SEO error that hands your pages to somebody else. That was found in a scratch build and the move was held, unpublished, until the shared kit was fixed. The counter was the same collision reaching a different line, and it went out.",
+          "AND THE VERIFICATION THAT MISSED IT WAS NOT CARELESS, IT WAS NARROW. The held build was checked on canonical, og:url, og:site_name and theme-color. Four fields, all correct — and all four written by one component, which the kit had already repaired. The counter is written by a different line of a layout that does not go through it. A verification is only as wide as the number of INDEPENDENT SOURCES it touches, not the number of fields it lists, and this one reported a single source wearing four hats as four confirmations. It is own error 57.",
+          "SO THE NEW GATE READS THE BUILT PAGE AND NOTHING ELSE. `tools/check_counter.py` opens every page of the finished site and refuses if any of them names a counter that is not this archive's. It finds the archive by origin, because matching by base is the bug it exists to catch, and it was pointed at the broken build FIRST and seen to refuse 856 pages before it was trusted — a gate that has only ever been watched to pass is being trusted on its intentions. The sharpest version of that rule came from a sister archive the same afternoon: its own check re-derived the counter using the very rule that was broken, so it confirmed the fault instead of finding it, and would have gone on reporting it after the fix. A check that models the code instead of reading its output can only ever agree with it.",
+          "A SECOND GATE, for the thing that nearly went unnoticed underneath all this: robots.txt was still sending crawlers to a sitemap at the old address, on a green build, because no gate read it. Three files state where this archive lives — the site config, the CNAME that keeps the domain attached, and robots.txt — and `siteOrigin` now refuses a build in which they disagree. All three of its failure modes were provoked and watched to refuse before it was believed.",
+          "WHAT THE MOVE DID NOT BREAK. Every internal link, the redirect from the old /what-we-got-wrong address, the sitemap, the search index and all 858 pages came through intact, and the old address redirects with the path preserved rather than dumping anybody at the front page. Four letters in the working notes still quote the old address and have deliberately NOT been rewritten: whether they were posted is not recorded here, and a sent letter is a record of what was sent."
+        ]
+      },
+      {
         "when": "11 October 2026 (third pass)",
         "title": "The whole site read against itself, and eleven findings turned out never to have reached a page",
         "found": [

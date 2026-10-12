@@ -2,6 +2,17 @@
    The point of the page is the pattern, not the confession. */
 export const OWN = [
   {
+    when: "12 October 2026",
+    cause: "instrument",
+    what: "Moved this archive to darcy.defranceski.com and, for two hours and thirty-nine minutes, logged every one of its readers into ANOTHER FAMILY'S statistics. Between 09:14 and 11:53 UTC every page served \u2014 at the new address and at the old one \u2014 carried «data-goatcounter=\"https://thedefranceski.goatcounter.com/count\"». Those visits are in the Defranceschi account and cannot be separated out of it.",
+    truth:
+      "Base.astro asked which of the seven archives it was building with `a.base === BASE_URL`, and that was a unique key for exactly as long as every archive was a GitHub Pages project site. Moving to a custom domain sets base to the empty string. Five archives had moved, find() returned the first of them, and the counter code is read straight off that entry. THE RING DATA WAS NEVER WRONG \u2014 this archive's entry has said «counter: thedarcy» throughout, and editing it would have broken the one part that was right. Only the lookup was wrong, and it is now matched by ORIGIN. The same collision had already produced a canonical pointing at archive.defranceski.com, which was caught before publishing; this second consequence was not, and it is the only fault of the week that destroyed something rather than displaying it wrongly.",
+    why: "The build was verified before it went out, on canonical, og:url, og:site_name and theme-color \u2014 four fields, all correct. ALL FOUR ARE WRITTEN BY SocialHead, which the shared kit had already fixed. The counter is written by a different line of a layout that does not go through SocialHead, so the check could not have seen it however carefully it was read. A verification is only as wide as the number of INDEPENDENT SOURCES it touches, and this one had a single source wearing four hats while reporting itself as four confirmations.",
+    lesson:
+      "FOUR FIELDS FROM ONE SOURCE SAY NOTHING ABOUT A FIFTH FROM ANOTHER. The count of things checked is not the measure of a verification; the count of places they come from is. And a second rule arrived the same day from the Booyzen archive, which is the sharper of the two: A CHECK THAT MODELS THE LAYOUT INSTEAD OF READING ITS OUTPUT WILL CONFIRM THE BUG. Its own gate re-derived the counter using the same find(base === \"\") rule the layout used, so it reported thedefranceski as the truth while the built page correctly said thebooyzen \u2014 and it would have gone on agreeing after the fix, reporting a fault that no longer existed. tools/check_counter.py therefore reads the BUILT HTML and nothing else, picks this archive by origin because matching by base would reproduce the bug it exists to catch, and was run against the broken build first and seen to refuse 856 pages before it was trusted.",
+    href: "/changes",
+  },
+  {
     when: "9 October 2026",
     cause: "instrument",
     what: "Corrected a wrong «blocked» verdict on BillionGraves and published the correction inside the hour — «SANIGER returns 25 burials and none in the United Kingdom». Asking the identical query with a larger page size returns four in England, three of them Sanigars in one churchyard at Kingswood.",
