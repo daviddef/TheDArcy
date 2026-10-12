@@ -9,7 +9,22 @@ outdir.strict_argv()   # a flag this gate does not take is an error, not a no-op
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = outdir.out()
-BASE = "/TheDArcy"
+# READ FROM THE CONFIG, NEVER TYPED. This said "/TheDArcy" for a day after the
+# archive moved to a custom domain and base "/". It happened to be harmless —
+# hrefs no longer start with that prefix, so the strip below became a branch
+# that never fires and every link still resolved — but harmless by luck is not
+# the same as correct, and the next re-base would not be so kind. The Booyzen
+# archive hit the live version of this in its gallery tool: a base that no
+# longer matched the built hrefs, a loop that therefore matched nothing, and a
+# clean pass over zero items that committed wrong data without a murmur.
+def _base():
+    cfg = os.path.join(ROOT, "site", "astro.config.mjs")
+    m = re.search(r"\bbase:\s*['\"]([^'\"]+)['\"]", open(cfg, encoding="utf-8").read())
+    b = (m.group(1) if m else "/").rstrip("/")
+    return b  # "" once the archive is served from the root of its own domain
+
+
+BASE = _base()
 
 have = set()
 for r, _, fs in os.walk(D):
@@ -19,7 +34,7 @@ for r, _, fs in os.walk(D):
         if f == "index.html":
             have.add(p[:-len("index.html")].rstrip("/") or "/")
 
-bad, pages = collections.Counter(), 0
+bad, pages, seen = collections.Counter(), 0, 0
 where = collections.defaultdict(set)
 for r, _, fs in os.walk(D):
     for f in fs:
@@ -34,12 +49,23 @@ for r, _, fs in os.walk(D):
             h = h.split("#")[0].split("?")[0]
             if not h.startswith("/"):
                 continue
-            t = (h[len(BASE):] if h.startswith(BASE) else h).rstrip("/") or "/"
+            seen += 1
+            t = (h[len(BASE):] if BASE and h.startswith(BASE) else h).rstrip("/") or "/"
             if t not in have and t + "/index.html" not in have and t != "/":
                 bad[h] += 1
                 where[h].add(page)
 
-print(f"{pages} pages · {sum(bad.values())} broken internal links")
+# A LINK CHECKER THAT READ NOTHING MUST NOT REPORT ALL CLEAR. The count is
+# printed because "0 broken" and "0 examined" are the same sentence otherwise,
+# and it refuses outright at zero: on a site of this size that is never a
+# finding about the site, only about this tool or the directory it was given.
+if seen == 0:
+    print(f"  FAIL  links      {pages} page(s) read and NOT ONE internal href examined — that is "
+          f"this checker failing, not the site passing. base is {BASE!r} from astro.config.mjs; "
+          f"if the built hrefs no longer start with it, nothing here is being resolved.")
+    sys.exit(1)
+
+print(f"{pages} pages · {seen} internal links resolved · {sum(bad.values())} broken")
 for k, v in bad.most_common(20):
     print(f"   {v:3d}  {k}\n        from {sorted(where[k])[:3]}")
 
