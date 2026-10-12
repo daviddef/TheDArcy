@@ -1,9 +1,9 @@
 {
  "have": 73,
- "total": 89,
- "pct": 82,
+ "total": 88,
+ "pct": 83,
  "selfArchived": 27,
- "missing": 16,
+ "missing": 15,
  "missingHosts": [
   [
    "nla.gov.au",
@@ -19,10 +19,6 @@
   ],
   [
    "darcy.defranceski.com",
-   1
-  ],
-  [
-   "daviddef.github.io",
    1
   ],
   [
