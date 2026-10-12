@@ -104,8 +104,68 @@ def living_exemptions():
     return sorted(out)
 
 
+def site_origin():
+    """The three places this archive states its own address, which must agree.
+
+    Added 12 October 2026, the day the archive moved to darcy.defranceski.com,
+    because the move left one of the three behind and nothing noticed. The
+    build was green, every gate passed, and site/public/robots.txt went on
+    telling search engines the sitemap was at daviddef.github.io/TheDArcy/ —
+    an address that now 301s — while astro.config.mjs and the sitemap itself
+    had moved. A reader would never see it. A crawler reads nothing else.
+
+    THE THIRD FILE IS THE DANGEROUS ONE. site/public/CNAME is what keeps the
+    custom domain ATTACHED: this repo deploys by Actions uploading site/dist,
+    and a deploy that does not carry a CNAME detaches the domain outright. A
+    CNAME naming the wrong host is the same failure with a worse disguise, and
+    the symptom is the whole archive going dark rather than a stale line in a
+    robots file.
+
+    So this does not ask whether the address is right — nobody here can know
+    that — only whether the three files agree about it. Disagreement is
+    returned as a value so the gate refuses and prints which one is adrift.
+    """
+    cfg = os.path.join(ROOT, "site", "astro.config.mjs")
+    try:
+        m = re.search(r"\bsite:\s*['\"]([^'\"]+)['\"]", open(cfg, encoding="utf-8").read())
+    except Exception as e:
+        raise Unreadable(f"site/astro.config.mjs: {e}")
+    if not m:
+        raise Unreadable("site/astro.config.mjs: no site: value found")
+    origin = m.group(1).rstrip("/")
+    host = origin.split("://", 1)[-1]
+
+    adrift = []
+    cname_p = os.path.join(ROOT, "site", "public", "CNAME")
+    if os.path.exists(cname_p):
+        cname = open(cname_p, encoding="utf-8").read().strip()
+        if cname != host:
+            adrift.append(f"public/CNAME says {cname!r}")
+    elif "github.io" not in host:
+        # A custom domain with no CNAME in the build output is the detach case.
+        adrift.append("public/CNAME is MISSING on a custom domain")
+
+    robots_p = os.path.join(ROOT, "site", "public", "robots.txt")
+    try:
+        rb = open(robots_p, encoding="utf-8").read()
+    except Exception as e:
+        raise Unreadable(f"site/public/robots.txt: {e}")
+    rm = re.search(r"(?mi)^\s*Sitemap:\s*(\S+)", rb)
+    if not rm:
+        adrift.append("public/robots.txt names no Sitemap")
+    else:
+        ro = re.sub(r"^(https?://[^/]+).*", r"\1", rm.group(1)).rstrip("/")
+        if ro != origin:
+            adrift.append(f"robots.txt Sitemap is on {ro!r}")
+
+    if adrift:
+        return f"DISAGREE \u2014 astro.config site is {origin!r}, but " + "; ".join(adrift)
+    return origin
+
+
 CHECKS = {
     "kitPin": kit_pin,
+    "siteOrigin": site_origin,
     "livingPolicy": living_policy,
     "namedLiving": named_living,
     "livingExemptions": living_exemptions,

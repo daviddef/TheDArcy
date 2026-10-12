@@ -1,9 +1,9 @@
 {
  "have": 73,
- "total": 87,
- "pct": 84,
+ "total": 89,
+ "pct": 82,
  "selfArchived": 27,
- "missing": 14,
+ "missing": 16,
  "missingHosts": [
   [
    "nla.gov.au",
@@ -15,6 +15,14 @@
   ],
   [
    "cityark.medway.gov.uk",
+   1
+  ],
+  [
+   "darcy.defranceski.com",
+   1
+  ],
+  [
+   "daviddef.github.io",
    1
   ],
   [

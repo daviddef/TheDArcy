@@ -29,7 +29,7 @@ CACHE = os.path.join(HERE, "snapshots.json")
 AVAIL = "https://archive.org/wayback/available?url="
 SAVE = "https://web.archive.org/save/"
 UA = {
-    "User-Agent": "darcy-archive-snapshot/1.0 (+https://daviddef.github.io/TheDArcy/)",
+    "User-Agent": "darcy-archive-snapshot/1.0 (+https://darcy.defranceski.com/)",
     "Accept": "*/*",
     "Accept-Language": "en",
 }

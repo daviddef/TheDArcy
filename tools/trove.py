@@ -39,7 +39,7 @@ import argparse, json, os, re, sys, time, urllib.parse, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site", "public", "trove-titles.json")
 API = "https://api.trove.nla.gov.au/v3"
-UA = "TheDArcy-archive/1.0 (+https://daviddef.github.io/TheDArcy/)"
+UA = "TheDArcy-archive/1.0 (+https://darcy.defranceski.com/)"
 
 
 def _key():

@@ -52,7 +52,7 @@ CACHE = os.path.join(HERE, "cites-cache.json")
 # is not a browser disguise and nothing here pretends to be Chrome: the agent
 # string still says what this is. It is the header every ordinary client sends.
 UA = {
-    "User-Agent": "darcy-archive-citation-check/2.1 (+https://daviddef.github.io/TheDArcy/)",
+    "User-Agent": "darcy-archive-citation-check/2.1 (+https://darcy.defranceski.com/)",
     "Accept": "*/*",
     "Accept-Language": "en",
 }

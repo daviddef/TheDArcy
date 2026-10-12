@@ -90,7 +90,7 @@ The titles work you were originally asked for is done and is published as an
 open file, as promised: 2,052 newspaper and gazette titles with their places and
 date ranges, and the issue counts held per year for the 725 Queensland and New
 South Wales titles this archive works in. It is at
-https://daviddef.github.io/TheDArcy/trove-titles.json and it is free for anyone.
+https://darcy.defranceski.com/trove-titles.json and it is free for anyone.
 
 Yours sincerely,
 
