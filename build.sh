@@ -191,6 +191,15 @@ python3 tools/check_secrets.py
 echo "── decisions"
 python3 tools/check_decisions.py
 
+# WHOSE READERS IS THIS ARCHIVE COUNTING? Reads the BUILT HTML, because the
+# fault it exists for was invisible in the source and in four other fields of
+# the same output: moving to a custom domain set base to "", five archives
+# shared that key, and the layout picked the first of them — so this archive
+# logged its pageviews to another family's GoatCounter for several hours on
+# 12 October. Visits logged to somebody else's account cannot be got back.
+echo "── counter"
+python3 tools/check_counter.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent

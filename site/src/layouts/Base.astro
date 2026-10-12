@@ -28,10 +28,33 @@ const nav = [
 
 const here = Astro.url.pathname.replace(/\/$/, "");
 const on = (h) => here === u(h).replace(/\/$/, "");
-/* which of the seven this is, worked out the same way the ring does */
-const thisArchive = ring.archives.find(
+/* WHICH OF THE SEVEN THIS IS. It used to ask only `a.base === BASE_URL`, and
+   that was a unique key for exactly as long as every archive was a GitHub
+   Pages project site. Moving to a custom domain sets base to "", five
+   archives did it, and find() then returned the first of them — the
+   Defranceschi entry. From 12 October until this was fixed THIS ARCHIVE
+   LOGGED ITS PAGEVIEWS TO thedefranceski.goatcounter.com, because the counter
+   code on line ~117 is read straight off `thisArchive`. Those visits cannot
+   be separated out of that counter afterwards.
+
+   IT IS THE SAME FAULT SocialHead HAD, AND THE KIT'S FIX DID NOT REACH HERE.
+   e275c14 added kit/lib/ring.js with whoami() and SocialHead goes through it;
+   this layout does not, so canonical, og:url, og:site_name and theme-color
+   were all verified correct in a scratch build while the counter beside them
+   was wrong. A check that reads four fields from one source says nothing
+   about a fifth read from another. The logic is inlined rather than imported
+   because kit/lib/ring.js does `import ring from "../data/archives.json"`
+   with no `with { type: "json" }`, which Node's ESM loader refuses during
+   static generation. Origin is the key, which is why astro.config's `site`
+   and this archive's url in archives.json must agree — the siteOrigin gate
+   now refuses a build where they do not. */
+const originOf = (x) => { try { return new URL(x).origin; } catch { return ""; } };
+const SITE_ORIGIN = originOf(import.meta.env.SITE || "");
+const onBase = ring.archives.filter(
   (a) => a.base === (import.meta.env.BASE_URL || "/").replace(/\/$/, "")
 );
+const thisArchive =
+  (SITE_ORIGIN && onBase.find((a) => originOf(a.url) === SITE_ORIGIN)) || onBase[0];
 ---
 <html lang="en" data-base={u("")}>
 <head>
