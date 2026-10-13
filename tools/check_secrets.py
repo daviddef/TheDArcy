@@ -28,6 +28,29 @@ PATTERNS = [
      re.compile(r"(?i)authorization\s*[:=]\s*['\"]?(bearer|basic)\s+[A-Za-z0-9._\-]{16,}")),
     ("X-API-KEY with a literal value",
      re.compile(r"(?i)x-api-key['\"]?\s*[:=]\s*['\"][A-Za-z0-9._\-]{16,}['\"]")),
+
+    # ADDED 13 OCTOBER 2026, AFTER THIS GATE WAS ASKED TO FAIL AND DID NOT.
+    # A planted AWS access key and GitHub token sat in a tracked file and the
+    # run reported «256 tracked file(s) carry no credential». Every pattern
+    # above was written for the one key this archive actually has — Trove —
+    # and the summary line then made a claim about CREDENTIALS, which is a far
+    # wider word. This repository is public and a key that reaches it is
+    # published on the next push and cannot be unpublished, so the gap was
+    # between what the tool tested and what its own output promised.
+    # Shapes with a fixed prefix, which is why they can be matched without
+    # guessing and without false positives on prose.
+    ("an AWS access key id", re.compile(r"\b(?:AKIA|ASIA|AGPA|AIDA|AROA|ANPA)[0-9A-Z]{16}\b")),
+    ("a GitHub token", re.compile(r"\bgh[pousr]_[A-Za-z0-9]{36,}\b|\bgithub_pat_[A-Za-z0-9_]{40,}\b")),
+    ("a Google API key", re.compile(r"\bAIza[0-9A-Za-z_\-]{35}\b")),
+    ("a Slack token", re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{10,}\b")),
+    ("an OpenAI-style key", re.compile(r"\bsk-[A-Za-z0-9_\-]{20,}\b")),
+    ("a private key block", re.compile(r"-----BEGIN (?:[A-Z ]+ )?PRIVATE KEY-----")),
+    # The only one here that reads a NAME rather than a shape. Kept narrow on
+    # purpose: the value must be quoted and long, or every sentence in this
+    # archive containing the word «token» would be a credential.
+    ("a named secret with a literal value",
+     re.compile(r"(?i)\b(?:api[_-]?key|secret[_-]?(?:key|token)|access[_-]?token|auth[_-]?token|client[_-]?secret)"
+                r"['\"]?\s*[:=]\s*['\"][A-Za-z0-9._\-]{20,}['\"]")),
 ]
 
 SKIP = ("tools/check_secrets.py",)

@@ -154,6 +154,15 @@ def main(argv):
     if bad or vbad or sbad:
         print(f"  FAIL  controls   {len(bad) + len(vbad) + len(sbad)} row(s) fail the control rule")
         return 1
+    # NOTHING EXAMINED IS NOT NOTHING WRONG. This printed «0 null(s) name a
+    # control» and exited 0 when handed an empty searched.json — a clean bill
+    # of health over no evidence at all. Found 13 October, in a sweep that
+    # emptied every gate's input to see which ones still passed.
+    if not named and not grand:
+        print("  FAIL  controls   no null(s) examined at all \u2014 searched.json is empty or "
+              "unreadable, so this is the reader failing and not the archive passing")
+        return 1
+
     print(f"  ok    controls   {named} null(s) name a control, "
           f"{grand} grandfathered from before the rule")
     nv = len(json.load(open(COVERAGE, encoding="utf-8")).get("verdicts") or {})

@@ -58,6 +58,15 @@ def main():
     for r in recs:
         buckets[classify(r["source"])].append(r)
     n = len(recs)
+    # A TRACEBACK IS A REFUSAL NOBODY CAN READ. With no records this divided
+    # by zero three lines down and failed the build with a stack trace, which
+    # says nothing about what went wrong. It is a report rather than a gate —
+    # it has no other failure path — so the one thing it owes the reader is to
+    # say plainly when there is nothing to report on.
+    if not n:
+        print("  FAIL  audit      register.json carries no record lines \u2014 nothing to classify, "
+              "so the proportions below would be a statement about an empty file")
+        return 1
     out = {k: len(v) for k, v in buckets.items()}
     pct = {k: round(v / n * 100) for k, v in out.items()}
     print(f"records {n} · Australian {out['AUS']} ({pct['AUS']}%) · "

@@ -79,8 +79,16 @@ def main():
 
     pages = glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True)
     if not pages:
-        print(f"  warn  counter    no built pages under {DIST}; not graded")
-        return 0
+        # REFUSES, AND THE FIRST VERSION OF THIS LINE DID NOT. It warned and
+        # returned 0, so a run against an empty or wrong directory reported
+        # no problem — the precise fault this gate was written to catch,
+        # sitting inside the gate. Found on 13 October by pointing every
+        # check at an empty build and seeing which ones still passed. A
+        # directory with no pages is never a fact about the archive; it is
+        # this tool being handed the wrong place to look.
+        print(f"  FAIL  counter    no built pages under {DIST} \u2014 nothing was examined, so "
+              f"nothing can be certified. Build first, or set ARCHIVE_OUT to the build you mean.")
+        return 1
 
     seen, bad = {}, []
     # INSIDE A TAG, NOT IN THE PROSE. The first version matched the attribute
