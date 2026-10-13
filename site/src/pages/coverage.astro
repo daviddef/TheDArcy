@@ -14,7 +14,7 @@ const bad = d.rows.filter((r) => /nothing|fragment|only|unknown/.test(r.holds)).
   <section class="blk">
     <Note style="border-left-width:3px;margin-bottom:1.3rem">
       <strong>Read this first.</strong> {d.paywall}
-      <a href={u("/berkeley-woman/")}>What it produced →</a>
+      {" "}<a href={u("/berkeley-woman/")}>What it produced →</a>
     </Note>
     <p class="lede">{d.lede}</p>
     <p style="margin-top:1.1rem"><strong>The method is a control test.</strong> {d.method}</p>

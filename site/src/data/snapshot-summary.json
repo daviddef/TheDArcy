@@ -1,9 +1,9 @@
 {
  "have": 73,
- "total": 88,
- "pct": 83,
+ "total": 87,
+ "pct": 84,
  "selfArchived": 27,
- "missing": 15,
+ "missing": 14,
  "missingHosts": [
   [
    "nla.gov.au",
@@ -15,10 +15,6 @@
   ],
   [
    "cityark.medway.gov.uk",
-   1
-  ],
-  [
-   "darcy.defranceski.com",
    1
   ],
   [

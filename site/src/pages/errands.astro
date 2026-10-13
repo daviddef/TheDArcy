@@ -88,10 +88,10 @@ const groups = [{
   <Blk label="Not a document, and worth more than all of them" title={e.ydna.what}>
     <p class="dek">{e.ydna.settles}</p>
     <Note>{e.ydna.note}
-      <a href={u("/dna/")}>What the DNA already says →</a></Note>
+      {" "}<a href={u("/dna/")}>What the DNA already says →</a></Note>
   </Blk>
 
   <section class="blk" style="border-bottom:0">
-    <Note>{e.close} <a href={u("/searched/")}>The search register →</a></Note>
+    <Note>{e.close}{" "}<a href={u("/searched/")}>The search register →</a></Note>
   </section>
 </Base>

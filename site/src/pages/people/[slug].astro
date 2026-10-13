@@ -385,7 +385,7 @@ const anyDamaged = notes.some((n) => n.damaged);
                   naming {p.name}{" "}{rec.rows.length === 1 ? "has" : "have"} been read, and{" "}
                   {rec.rows.length === 1 ? "it is" : "they are"} set out below.</>
                 : <> Nothing else has been found for them either way.</>}
-              <a href={u("/method/")}> How claims are labelled →</a></p>}
+              {" "}<a href={u("/method/")}>How claims are labelled →</a></p>}
 
         <p class="small" style="margin-top:.7rem">
           <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
@@ -467,7 +467,7 @@ const anyDamaged = notes.some((n) => n.damaged);
       gathered automatically — {(mentions[p.slug] || []).length} in total. This counts pages, not
       records: the lists and registers are skipped on purpose, so a person can be well documented
       and appear here once or not at all.
-      <a href={u("/method/")}> How claims are labelled →</a></p>
+      {" "}<a href={u("/method/")}>How claims are labelled →</a></p>
       <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:.85rem">
         {(mentions[p.slug] || []).map((h) => (
           <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">

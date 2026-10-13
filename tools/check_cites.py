@@ -89,6 +89,32 @@ def host_of(u):
     return re.sub(r"^https?://([^/@]*@)?([^/:]+).*", r"\2", u)
 
 
+# AN ARCHIVE CITING ITSELF IS NOT A CITATION. On 13 October this archive's own
+# address turned up in the missing-snapshot list on /sources, as a source it
+# had failed to get a permanent copy of. It had cited nothing: the siteOrigin
+# decision records where this archive lives, as a URL, because that is what it
+# is compared against — and the scanner below reads every URL in every data
+# file. The same thing happened the day before with the old daviddef.github.io
+# address quoted in the history of that decision. One was fixed by dropping a
+# scheme, which only hid it; this is the fix. A footnote points away from you,
+# and nothing here is served by asking the Wayback Machine for a copy of a
+# page this build is about to publish.
+def _mine():
+    cfg = os.path.join(HERE, "..", "site", "astro.config.mjs")
+    try:
+        m = re.search(r"\bsite:\s*['\"]([^'\"]+)['\"]", open(cfg, encoding="utf-8").read())
+    except Exception:
+        return ""
+    return (m.group(1).rstrip("/") if m else "")
+
+
+SELF = _mine()
+
+
+def is_self(u):
+    return bool(SELF) and (u.rstrip("/") == SELF or u.startswith(SELF + "/"))
+
+
 def urls():
     seen = collections.defaultdict(set)
     for p in sorted(glob.glob(os.path.join(DATA, "*.json"))):
@@ -104,7 +130,7 @@ def urls():
             # URL too: one citation 404'd only because «&nbsp» had been
             # captured onto the end of it.
             u = re.sub(r"&(nbsp|amp|quot|#\d+);?$", "", u).rstrip(".,;")
-            if not SKIP.search(u):
+            if not SKIP.search(u) and not is_self(u):
                 seen[u].add(os.path.basename(p))
     return seen
 

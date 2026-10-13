@@ -65,7 +65,7 @@ const WANTED = [
         <figcaption class="cap" style="margin-top:.7rem">{p.what}
           <br /><span class="dim">{p.src_line}</span></figcaption>
       </figure>
-      <Note>{p.note} <a href={u(p.href)}>→</a></Note>
+      <Note>{p.note}{" "}<a href={u(p.href)}>→</a></Note>
     </Blk>
   ))}
 
@@ -77,7 +77,7 @@ const WANTED = [
         <thead><tr><th>Who</th><th>Why there is nothing</th></tr></thead>
         <tbody>
           {WANTED.map(([who, why, href]) => (
-            <tr><td><strong>{who}</strong></td><td class="small">{why} <a href={u(href)}>→</a></td></tr>
+            <tr><td><strong>{who}</strong></td><td class="small">{why}{" "}<a href={u(href)}>→</a></td></tr>
           ))}
         </tbody>
       </table>
