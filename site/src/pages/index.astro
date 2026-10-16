@@ -14,7 +14,7 @@ import { u } from "../lib/url.js";
 import famData from "../data/families.json";
 import ancestorRows from "../data/ancestors.json";
 import { nOwn, nInherited } from "../lib/errors.js";
-import { people } from "../lib/people.js";
+import { people, nCharts, nSolid } from "../lib/people.js";
 import ancestors from "../data/ancestors.json";
 import families from "../data/families.json";
 import places from "../data/places.json";
@@ -36,7 +36,7 @@ const NUMBERS = [
   [published, "people published", `${nLivingPages} of them living, each a name, a town and a country and nothing more`, "/people"],
   [dossiers.counts.ownPage, "people met in records who are not relatives", "witnesses, constables, a surgeon, convicts, comrades — each with a page", "/who"],
   [searched.rows.length, "sources read", `${searched.rows.filter((r) => r.outcome === "null").length} of them read and found empty, which is knowledge`, "/searched"],
-  [19, "pedigree charts with a solid edge", "out of 473. A family tree is a set of assertions until somebody opens a document", "/method"],
+  [nSolid, "pedigree charts with a solid edge", `out of ${nCharts}. A family tree is a set of assertions until somebody opens a document`, "/method"],
   [nOwn, "errors corrected in public", "each still on the page where it was made", "/corrections"],
 ];
 
@@ -179,7 +179,12 @@ const KIN_BY_ID = new Map();
 for (const a of ancestorRows) KIN_BY_ID.set(a.id, a);
 for (const f of famData) for (const m of (f.members || [])) if (!KIN_BY_ID.has(m.id)) KIN_BY_ID.set(m.id, m);
 const nameCards = (xs) => (xs || []).map((x) =>
-  typeof x === "string" ? { name: x } : { name: x.name, dates: x.life || "" });
+  typeof x === "string" ? { name: x } : {
+    name: x.name, dates: x.life || "",
+    /* A sibling carries the id of the page they have: the card is a link to it
+       (a name with no page behind it is not allowed). The id, not the name, is
+       the join, so a namesake is never taken for the sibling. */
+    href: x.id && SLUG_BY_ID.get(x.id) ? `/people/${SLUG_BY_ID.get(x.id)}/` : undefined });
 
 const spineRows = [...line].reverse().map((g) => {
   const c = CONF.confidence[g.id];
@@ -459,9 +464,10 @@ const familyDoors = famData.map((f) => ({
     <p class="small" style="margin-top:1.2rem">Of the direct ancestors, <strong>{redacted}</strong> are
     living. They are on <a href={u("/bloodline/")}>the bloodline</a> and
     <a href={u("/direct-line/")}>the spine</a> by name, because a line that stops before the present
-    is not a line, and carry no dates and no record. The tree judges
-    {living.counts.living.toLocaleString()} people living in all; <strong>{nLivingPages}</strong> of them
-    have a page here, and the rest are named, if at all, as a spouse, a brother or a sister.
+    is not a line, and carry no dates and no record. A living person (80 or younger, with no death
+    recorded) is named with their relationships and their town and country, and nothing more.
+    The tree judges {living.counts.living.toLocaleString()} people living in all; <strong>{nLivingPages}</strong> of them
+    have a page here, and so does every other person this archive names.
     <a href={u("/method/#living")}>The rule and the six named on purpose →</a></p>
   </section>
 

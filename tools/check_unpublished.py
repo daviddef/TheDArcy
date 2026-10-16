@@ -44,7 +44,7 @@ import outdir
 
 # Generated from the tree, or written for a tool to read rather than a reader.
 ALLOW = {
-    "families.json", "ancestors.json", "line.json", "mentions.json",
+    "families.json", "ancestors.json", "line.json", "relatives.json", "mentions.json",
     "person-records.json", "register.json", "provenance.json", "dossiers.json",
     "namefold.json", "trees.json", "households.json", "marriages.json",
     "graves.json", "places.json", "confidence.json", "decisions.json",

@@ -63,21 +63,13 @@ const me = prov[p.slug] || { rel: {}, graft: null, line: false };
 const recCount = Object.keys(me.rel || {}).length;
 const g = alive ? null : grade(p.slug);
 
-const parents = people.filter((o) =>
-  (o.spouses || []).some((s) => (s.children || []).includes(p.id)));
-
-/* Siblings: anyone sharing a parent. The tree records children on the marriage,
-   so half-siblings by a second marriage come out of this too — which is right. */
-const sibs = [];
-for (const par of parents) {
-  for (const s of par.spouses || []) {
-    for (const c of s.children || []) {
-      if (c === p.id) continue;
-      const o = link(c);
-      if (o && !sibs.some((k) => k.slug === o.slug)) sibs.push(o);
-    }
-  }
-}
+/* Parents and brothers and sisters come from the record itself (each carries the
+   id of the page it has), so the link is the same from both ends: a parent
+   named on this page names this person back. They used to be worked out by
+   walking the other way, from whichever parents had a marriage listing this
+   person as a child, which finds nobody for a person whose parents have no page. */
+const parents = (p.parents || []).map((r) => link(r.id)).filter(Boolean);
+const sibs = (p.siblings || []).map((r) => link(r.id)).filter(Boolean);
 
 // Surname pages that exist. Everyone else goes to the families index.
 const FAMILY_PAGE = { Sneyd: "/sneyd", Atkinson: "/atkinson", Murdoch: "/murdoch" };
@@ -181,7 +173,7 @@ const corrections = Object.entries(corr);
    move with it, or the top of the page contradicts the table below it. */
 const yr = (v) => (String(v || "").match(/\d{4}/) || [""])[0];
 const bY = yr(val("born", p.born)), dY = yr(val("died", p.died));
-const life = alive ? "treated as living" : (bY || dY) ? `${bY || "?"}–${dY || ""}`.replace(/–$/, "") : (p.life || "dates unknown");
+const life = alive ? "living" : (bY || dY) ? `${bY || "?"}–${dY || ""}`.replace(/–$/, "") : (p.life || "dates unknown");
 
 /* Notes come out of MyHeritage as broken HTML. Not merely tagged — *truncated*:
    opening tags are cut off mid-attribute, leaving orphaned CSS tails with no "<"
@@ -235,7 +227,7 @@ const _vague = /^\s*\(about\)/i.test(_placeRaw);
 const _place = tidy(_placeRaw.replace(/^\s*\(about\)\s*/i, ""));
 const _spouse = (p.spouses || []).find((s) => nameIfPublishable(s));
 const dek = alive
-  ? "Treated as living, and so named here with their town and country and nothing more."
+  ? "A living person (80 or younger, with no death recorded) is named with their relationships and their town and country, and nothing more."
   : tidy(val("occupation", p.occupation)) ||
   (_place ? `${_vague ? "Probably of" : "Of"} ${_place}.` : "") ||
   (_spouse ? `Married ${tidy(_spouse.name)}.` : "") ||
@@ -290,9 +282,9 @@ const anyDamaged = notes.some((n) => n.damaged);
             <h2 style="margin-top:0">Where</h2>
             <p>{p.place || "No town or country is recorded for them here."}</p>
             <p class="small" style="margin-top:.8rem"><span class="chip lore">living</span>{" "}
-              A person the tree gives no reason to think dead is treated as living, and is named
-              here with their town and country and nothing more: no date, no record, no source,
-              no note and no photograph.
+              A living person (80 or younger, with no death recorded) is named with their
+              relationships and their town and country, and nothing more: no date, no record, no
+              source, no note and no photograph.
               <a href={u("/method/#living")}> The rule →</a></p>
             {p.ancestor && (
               <p style="margin-top:1rem"><span class="chip doc">direct line</span>
@@ -435,6 +427,12 @@ const anyDamaged = notes.some((n) => n.damaged);
                 : <> Nothing else has been found for them either way.</>}
               {" "}<a href={u("/method/")}>How claims are labelled →</a></p>}
 
+        {!alive && p.relative && (
+        <p class="small" style="margin-top:.7rem">This person has a page because the tree names them beside
+          someone this archive follows. Nothing has been researched for them here, and records that
+          carry their name are filed in the register under the name and not assigned to them: a
+          name is not a person.</p>
+        )}
         {!alive && (
         <p class="small" style="margin-top:.7rem">
           <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>

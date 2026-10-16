@@ -21,6 +21,7 @@ import json, os, sys, re, collections
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 from gedcom import load, display, lifespan
+import slugrule
 
 OUT = os.path.join(ROOT, "site", "src", "data", "register.json")
 
@@ -1352,8 +1353,8 @@ REL = [
     ("Jane D'Arcy", "Robert D'Arcy|1751", "christening, St Michael, Barbados, 17 Mar 1788"),
     ("George Pitt D'Arcy|1864", "Eliza Keeling", "Qld death reg. 1931, parents named"),
     ("George Pitt D'Arcy|1864", "George Lindsay D'Arcy", "Qld death reg. 1931, parents named"),
-    ("James Atwell", "Maria Rossiter", "Qld death reg. 1907/C/..., parents named"),
-    ("James Atwell", "John Atwell|1824", "Qld death reg. 1907/C/..., parents named"),
+    ("James Atwell|1853", "Maria Rossiter", "Qld death reg. 1907/C/..., parents named"),
+    ("James Atwell|1853", "John Atwell|1824", "Qld death reg. 1907/C/..., parents named"),
     ("Paul Cole Atkinson", "Ann Kent", "Qld death reg. 1906, parents named"),
     ("Paul Cole Atkinson", "Richard Atkinson|1801", "Qld death reg. 1906, parents named"),
     ("Eliza Wakefield", "James Wakefield", "baptism, Bristol, 14 Oct 1832"),
@@ -1409,12 +1410,25 @@ def main():
         for r in f["members"]:
             if not r.get("living"):
                 by_id.setdefault(r["id"], {}).update(r)
+    # The relatives (parents, brothers and sisters, spouses named beside someone)
+    # have pages of their own, so the register lists them as tree people too, each
+    # row marked `relative`. THE MARK MATTERS: records are joined to people by NAME,
+    # this family reuses names without mercy, and a record read about a man in the
+    # research must not be handed to a namesake who was only named beside someone.
+    # So every name-join below (a recorded relationship, a dossier, a record line
+    # delivered to a person) ignores the relatives, exactly as it did before they
+    # had pages.
+    relative_ids = set()
+    for r in json.load(open(os.path.join(ROOT, "site/src/data/relatives.json"), encoding="utf-8")):
+        if not r.get("living") and r["id"] not in by_id:
+            by_id[r["id"]] = dict(r)
+            relative_ids.add(r["id"])
 
     recs = sorted(by_id.values(), key=lambda r: (
         int((re.search(r"\d{4}", r.get("born") or "") or ["9999"])[0]
             if re.search(r"\d{4}", r.get("born") or "") else 9999),
         r["name"]))
-    slug = slugs_for(recs)
+    slug = slugrule.slugs()      # people.js's own rule, in one place
 
     hornby = ancestors_of(HORNBY_ROOT, people, families)
     keele = ancestors_of(KEELE_ROOT, people, families)
@@ -1446,9 +1460,12 @@ def main():
         else:
             source = "family tree"
 
-        entries.append({"name": r["name"], "says": " · ".join(bits),
-                        "source": source, "link": "/people/" + slug[r["id"]],
-                        "kind": "tree", "sur": surname_of(r)})
+        row = {"name": r["name"], "says": " · ".join(bits),
+               "source": source, "link": "/people/" + slug[r["id"]],
+               "kind": "tree", "sur": surname_of(r)}
+        if r["id"] in relative_ids:
+            row["relative"] = True
+        entries.append(row)
 
     for e in R:
         n = re.sub(r"\([^)]*\)", " ", e["name"])
@@ -1479,7 +1496,8 @@ def main():
     by_name = collections.defaultdict(list)
     by_rec = {r["id"]: r for r in recs}
     for r in recs:
-        by_name[r["name"].lower()].append(r["id"])
+        if r["id"] not in relative_ids:      # a recorded relationship names a tree person, not a relative
+            by_name[r["name"].lower()].append(r["id"])
 
     def ids_for(name):
         """Exactly one person, or nothing. This family reuses forenames without

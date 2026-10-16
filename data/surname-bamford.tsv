@@ -1,3 +1,4 @@
-ahn	gen	id	mh	name	sex	born	born_place	died	died_place	cause	burial	occupation	spouses	living	n_notes	sources
-		@I505031@	MH:I505031	Harry Bamford	M								Valma D'Arcy		0	
-		@I505043@	MH:I505043	Alan Bamford	M		Bahrain	27 NOV 2019	Melbourne, Australia	liver failure			'Jack' (nickname)		3	
+ahn	gen	id	mh	name	sex	born	born_place	died	died_place	cause	burial	occupation	spouses	living	place	n_notes	sources
+		@I505031@	MH:I505031	Harry Bamford	M								Valma D'Arcy			0	
+		@I505043@	MH:I505043	Alan Bamford	M		Bahrain	27 NOV 2019	Melbourne, Australia	liver failure			'Jack' (nickname)			3	
+		@I505045@	MH:I505045	Grace Bamford	F											0	

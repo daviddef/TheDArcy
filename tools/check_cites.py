@@ -78,7 +78,7 @@ SAMPLE_SIZE = 8
 # inherited. On 10 October every one of the nine dead links was inherited and
 # NONE of the archive's own citations was dead — a distinction worth printing
 # rather than working out by hand each time.
-GEDCOM_FILES = {"families.json", "ancestors.json", "line.json"}
+GEDCOM_FILES = {"families.json", "ancestors.json", "line.json", "relatives.json"}
 
 
 def inherited(where):

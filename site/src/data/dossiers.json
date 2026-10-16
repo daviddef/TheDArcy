@@ -430,86 +430,6 @@
 "slug": "vivian-claud-sneyd",
 "n": 1
 },
-"ephraim-wakefield": {
-"name": "Ephraim Wakefield",
-"surname": "WAKEFIELD",
-"rows": [
-{
-"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
-"source": "record · Queensland death index 1868/B/4544",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-},
-{
-"says": "aged 5 · aboard the General Hewitt",
-"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
-"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "ephraim-wakefield",
-"n": 2
-},
-"hannah-wakefield": {
-"name": "Hannah Wakefield",
-"surname": "WAKEFIELD",
-"rows": [
-{
-"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
-"source": "record · Queensland death index 1873/C/603",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-},
-{
-"says": "aged 35 · born outside the county — which is why she cannot be found in the Gloucestershire registers",
-"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
-"link": "https://www.freecen.org.uk/"
-},
-{
-"says": "aged 48 · county entered as a ditto under her husband's Gloucester — not a statement of her birthplace",
-"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
-"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "hannah-wakefield",
-"n": 3
-},
-"marion-wakefield": {
-"name": "Marion Wakefield",
-"surname": "WAKEFIELD",
-"rows": [
-{
-"says": "aged 14 · DOMESTIC · native place BRISTOL · entered among the single women — this is Miriam",
-"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
-"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "marion-wakefield",
-"n": 1
-},
-"richard-wakefield": {
-"name": "Richard Wakefield",
-"surname": "WAKEFIELD",
-"rows": [
-{
-"says": "named as the father of James Wakefield on his 1857 Queensland death registration — the only Gloucestershire candidate is a Richard baptised at Chedworth, 21 Dec 1770, and nothing but a name connects them",
-"source": "record · Queensland death index 1857/B/135",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-},
-{
-"says": "of Stroud · father of James, baptised there 6 April 1806",
-"source": "record · England Births & Baptisms 1538-1975, Stroud (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "richard-wakefield",
-"n": 2
-},
 "ann-saniger": {
 "name": "Ann Saniger",
 "surname": "SANIGER",
@@ -760,6 +680,86 @@
 "orphan": true,
 "slug": "thomas-saniger",
 "n": 4
+},
+"ephraim-wakefield": {
+"name": "Ephraim Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "died 26/05/1868 · mother: Anna Sanniger · father: James Wakefield",
+"source": "record · Queensland death index 1868/B/4544",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+},
+{
+"says": "aged 5 · aboard the General Hewitt",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "ephraim-wakefield",
+"n": 2
+},
+"hannah-wakefield": {
+"name": "Hannah Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "died 04/07/1873 · father entered as “John Jenniger” — John Saniger, written by ear · mother not given",
+"source": "record · Queensland death index 1873/C/603",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+},
+{
+"says": "aged 35 · born outside the county — which is why she cannot be found in the Gloucestershire registers",
+"source": "record · 1841 census, HO107/374, ED 13 p.10, Drivers Fields, St Paul, Bristol",
+"link": "https://www.freecen.org.uk/"
+},
+{
+"says": "aged 48 · county entered as a ditto under her husband's Gloucester — not a statement of her birthplace",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "hannah-wakefield",
+"n": 3
+},
+"marion-wakefield": {
+"name": "Marion Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "aged 14 · DOMESTIC · native place BRISTOL · entered among the single women — this is Miriam",
+"source": "record · QSA S13086/ITM18474, passenger register, image DR38490",
+"link": "https://www.archivessearch.qld.gov.au/api/download_file/DR38490"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "marion-wakefield",
+"n": 1
+},
+"richard-wakefield": {
+"name": "Richard Wakefield",
+"surname": "WAKEFIELD",
+"rows": [
+{
+"says": "named as the father of James Wakefield on his 1857 Queensland death registration — the only Gloucestershire candidate is a Richard baptised at Chedworth, 21 Dec 1770, and nothing but a name connects them",
+"source": "record · Queensland death index 1857/B/135",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+},
+{
+"says": "of Stroud · father of James, baptised there 6 April 1806",
+"source": "record · England Births & Baptisms 1538-1975, Stroud (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "richard-wakefield",
+"n": 2
 },
 "maria-atwell-nee-rossiter": {
 "name": "Maria Atwell, née Rossiter",
@@ -1121,6 +1121,21 @@
 "slug": "jane-atkinson-nee-creech",
 "n": 1
 },
+"ida-kathleen-darcy-nee-atkinson": {
+"name": "Ida Kathleen Darcy, née Atkinson",
+"surname": "DARCY",
+"rows": [
+{
+"says": "died 13/01/1937 · parents: Jane Creech · Paul Atkinson",
+"source": "record · Queensland death index 1937/B/34178",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "ida-kathleen-darcy-nee-atkinson",
+"n": 1
+},
 "barbara-murdoch-nee-atwell": {
 "name": "Barbara Murdoch, née Atwell",
 "surname": "MURDOCH",
@@ -1166,36 +1181,6 @@
 "slug": "william-james-frazer-murdoch",
 "n": 1
 },
-"david-oliver": {
-"name": "David Oliver",
-"surname": "OLIVER",
-"rows": [
-{
-"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
-"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "A CANDIDATE MARRIAGE, AND IT IS CALLED A CANDIDATE · “1772, June 12. DAVID OLIVER OF OSWESTRY P: BAC: & MARY OWENS SP: … lic: mar”, in the printed register of LLANYBLODWEL · WHAT FITS: he is of Oswestry parish, where the Oliver baptisms are; the forename pair matches the “David Oliver & Mary” of those baptisms; a marriage in 1772 sits properly before Dianna in 1777, Elizabeth in 1782 and David in 1789; and a man buried at Oswestry in 1808 aged 59 was about twenty-three in 1772 · WHAT DOES NOT: NOTHING LINKS THIS ENTRY TO THOSE BAPTISMS EXCEPT THOSE FITS. David Oliver and Mary are two of the commonest names on this border, and the same eight volumes hold David Olivers at Blodwell, Trefyrclawdd, Pentreshanel, Sweeney and Willow Street across a century · IF IT IS THE RIGHT MARRIAGE, Elizabeth Margaret Oliver's mother was MARY OWENS and the Sneyd line gains a surname. IT IS NOT YET THE RIGHT MARRIAGE; IT IS THE ONLY CANDIDATE",
-"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Llanyblodwel register, read in full text, Internet Archive shropshireparish03asapshro",
-"link": "https://archive.org/details/shropshireparish03asapshro"
-},
-{
-"says": "AND THE CANDIDATE IS THE ONLY ONE, WHICH IS THE CONTROL · all eight printed St Asaph volumes were searched for every marriage of a DAVID OLIVER · between 1765 and 1782 there is exactly ONE, the Llanyblodwel entry above · the only other in the series is “1799, May 10. David Oliver, bac: & ANNE MORRIS, sp:”, which is the wrong wife and the wrong decade · so the shortlist is one long, and that is worth as much as the entry itself",
-"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Llanyblodwel register, read in full text, Internet Archive shropshireparish03asapshro",
-"link": "https://archive.org/details/shropshireparish03asapshro"
-},
-{
-"says": "A COOPER OF CROSS STREET, OSWESTRY · the printed parish register gives him an occupation and an address this archive did not have · BURIED AT OSWESTRY 21 JUNE 1808, AGED 59, which puts his birth about 1749",
-"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
-"link": "https://archive.org/details/shropshireparish06asapshro"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "david-oliver",
-"n": 4
-},
 "john-maddock-jones": {
 "name": "John Maddock Jones",
 "surname": "JONES",
@@ -1230,6 +1215,51 @@
 "treeLink": "",
 "slug": "john-maddock-jones",
 "n": 5
+},
+"r-kent": {
+"name": "R. Kent",
+"surname": "KENT",
+"rows": [
+{
+"says": "Pte, B Coy, 9th Battalion · the man who said he saw Sneyd killed",
+"source": "record · AWM 1DRL/0428, Wounded and Missing file for 5050 Sneyd",
+"link": "https://www.awm.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "r-kent",
+"n": 1
+},
+"david-oliver": {
+"name": "David Oliver",
+"surname": "OLIVER",
+"rows": [
+{
+"says": "of Oswestry · father of Elizabeth, baptised there 19 May 1782 — a generation this archive did not have",
+"source": "record · Shropshire Baptisms, Oswestry St Oswald's — Shropshire Archives P214/A/2/1 p.18 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "A CANDIDATE MARRIAGE, AND IT IS CALLED A CANDIDATE · “1772, June 12. DAVID OLIVER OF OSWESTRY P: BAC: & MARY OWENS SP: … lic: mar”, in the printed register of LLANYBLODWEL · WHAT FITS: he is of Oswestry parish, where the Oliver baptisms are; the forename pair matches the “David Oliver & Mary” of those baptisms; a marriage in 1772 sits properly before Dianna in 1777, Elizabeth in 1782 and David in 1789; and a man buried at Oswestry in 1808 aged 59 was about twenty-three in 1772 · WHAT DOES NOT: NOTHING LINKS THIS ENTRY TO THOSE BAPTISMS EXCEPT THOSE FITS. David Oliver and Mary are two of the commonest names on this border, and the same eight volumes hold David Olivers at Blodwell, Trefyrclawdd, Pentreshanel, Sweeney and Willow Street across a century · IF IT IS THE RIGHT MARRIAGE, Elizabeth Margaret Oliver's mother was MARY OWENS and the Sneyd line gains a surname. IT IS NOT YET THE RIGHT MARRIAGE; IT IS THE ONLY CANDIDATE",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Llanyblodwel register, read in full text, Internet Archive shropshireparish03asapshro",
+"link": "https://archive.org/details/shropshireparish03asapshro"
+},
+{
+"says": "AND THE CANDIDATE IS THE ONLY ONE, WHICH IS THE CONTROL · all eight printed St Asaph volumes were searched for every marriage of a DAVID OLIVER · between 1765 and 1782 there is exactly ONE, the Llanyblodwel entry above · the only other in the series is “1799, May 10. David Oliver, bac: & ANNE MORRIS, sp:”, which is the wrong wife and the wrong decade · so the shortlist is one long, and that is worth as much as the entry itself",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Llanyblodwel register, read in full text, Internet Archive shropshireparish03asapshro",
+"link": "https://archive.org/details/shropshireparish03asapshro"
+},
+{
+"says": "A COOPER OF CROSS STREET, OSWESTRY · the printed parish register gives him an occupation and an address this archive did not have · BURIED AT OSWESTRY 21 JUNE 1808, AGED 59, which puts his birth about 1749",
+"source": "record · Shropshire Parish Registers, Diocese of St Asaph — the printed Oswestry registers, read in full text, Internet Archive shropshireparish06asapshro and shropshireparish07asapshro",
+"link": "https://archive.org/details/shropshireparish06asapshro"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "david-oliver",
+"n": 4
 },
 "alice-de-stone": {
 "name": "Alice de Stone",
@@ -1411,6 +1441,51 @@
 "slug": "william-swonhungre",
 "n": 2
 },
+"elizabeth-ann-birch": {
+"name": "Elizabeth Ann Birch",
+"surname": "BIRCH",
+"rows": [
+{
+"says": "married Aaron Wakefield 11 July 1861 — sister to Margaret, who married his brother Hiram four months earlier",
+"source": "record · Queensland marriage index 1861/B/142",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "elizabeth-ann-birch",
+"n": 1
+},
+"john-birch": {
+"name": "John Birch",
+"surname": "BIRCH",
+"rows": [
+{
+"says": "named with Annie Reeves as the parents of Margaret Birch, who married Hiram Wakefield",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-birch",
+"n": 1
+},
+"margaret-birch": {
+"name": "Margaret Birch",
+"surname": "BIRCH",
+"rows": [
+{
+"says": "married Hiram Wakefield 29 March 1861 · her own death registration 1898/B/30356 names her parents as JOHN BIRCH and ANNIE REEVES",
+"source": "record · Queensland death index 1898/B/30356",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "margaret-birch",
+"n": 1
+},
 "lyddya-sinegar": {
 "name": "Lyddya Sinegar",
 "surname": "SINEGAR",
@@ -1476,36 +1551,6 @@
 "slug": "thomas-sinegar",
 "n": 2
 },
-"ida-kathleen-darcy-nee-atkinson": {
-"name": "Ida Kathleen Darcy, née Atkinson",
-"surname": "DARCY",
-"rows": [
-{
-"says": "died 13/01/1937 · parents: Jane Creech · Paul Atkinson",
-"source": "record · Queensland death index 1937/B/34178",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "ida-kathleen-darcy-nee-atkinson",
-"n": 1
-},
-"r-kent": {
-"name": "R. Kent",
-"surname": "KENT",
-"rows": [
-{
-"says": "Pte, B Coy, 9th Battalion · the man who said he saw Sneyd killed",
-"source": "record · AWM 1DRL/0428, Wounded and Missing file for 5050 Sneyd",
-"link": "https://www.awm.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "r-kent",
-"n": 1
-},
 "alice-de-swonhongre": {
 "name": "Alice de Swonhongre",
 "surname": "SWONHONGRE",
@@ -1566,81 +1611,6 @@
 "slug": "maud-swonhongre",
 "n": 1
 },
-"elizabeth-ann-birch": {
-"name": "Elizabeth Ann Birch",
-"surname": "BIRCH",
-"rows": [
-{
-"says": "married Aaron Wakefield 11 July 1861 — sister to Margaret, who married his brother Hiram four months earlier",
-"source": "record · Queensland marriage index 1861/B/142",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "elizabeth-ann-birch",
-"n": 1
-},
-"john-birch": {
-"name": "John Birch",
-"surname": "BIRCH",
-"rows": [
-{
-"says": "named with Annie Reeves as the parents of Margaret Birch, who married Hiram Wakefield",
-"source": "record · Queensland death index 1898/B/30356",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "john-birch",
-"n": 1
-},
-"margaret-birch": {
-"name": "Margaret Birch",
-"surname": "BIRCH",
-"rows": [
-{
-"says": "married Hiram Wakefield 29 March 1861 · her own death registration 1898/B/30356 names her parents as JOHN BIRCH and ANNIE REEVES",
-"source": "record · Queensland death index 1898/B/30356",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "margaret-birch",
-"n": 1
-},
-"james-sanigar": {
-"name": "James Sanigar",
-"surname": "SANIGAR",
-"rows": [
-{
-"says": "married at BRISTOL, December quarter 1852 · GRO index volume 6a, page 155 · the marriage Bristol Archives mentioned unasked, giving his father Thomas's occupation as LABOURER · son of Thomas Sanigar and Martha Golding, and the eleven-year-old of the 1841 household",
-"source": "record · GRO index of civil registration, via FreeBMD",
-"link": "https://www.freebmd.org.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "james-sanigar",
-"n": 1
-},
-"john-sanigar": {
-"name": "John Sanigar",
-"surname": "SANIGAR",
-"rows": [
-{
-"says": "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury · Consistory Court of Gloucester 1822/194",
-"source": "record · Gloucestershire Wills & Administrations 1801-1858",
-"link": "https://www.findmypast.com.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "john-sanigar",
-"n": 1
-},
 "catherine-georgiana-west": {
 "name": "Catherine Georgiana West",
 "surname": "WEST",
@@ -1686,6 +1656,66 @@
 "slug": "annie-adams",
 "n": 2
 },
+"james-sanigar": {
+"name": "James Sanigar",
+"surname": "SANIGAR",
+"rows": [
+{
+"says": "married at BRISTOL, December quarter 1852 · GRO index volume 6a, page 155 · the marriage Bristol Archives mentioned unasked, giving his father Thomas's occupation as LABOURER · son of Thomas Sanigar and Martha Golding, and the eleven-year-old of the 1841 household",
+"source": "record · GRO index of civil registration, via FreeBMD",
+"link": "https://www.freebmd.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "james-sanigar",
+"n": 1
+},
+"john-sanigar": {
+"name": "John Sanigar",
+"surname": "SANIGAR",
+"rows": [
+{
+"says": "will · 1822 · CARPENTER, of Oldbury-on-Severn, Thornbury · Consistory Court of Gloucester 1822/194",
+"source": "record · Gloucestershire Wills & Administrations 1801-1858",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-sanigar",
+"n": 1
+},
+"john-chapman": {
+"name": "John Chapman",
+"surname": "CHAPMAN",
+"rows": [
+{
+"says": "convict · handcuffed 15 May 1826 for taking his irons off",
+"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
+"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "john-chapman",
+"n": 1
+},
+"clark": {
+"name": "Clark",
+"surname": "CLARK",
+"rows": [
+{
+"says": "L/Cpl 1328, A Coy · No. 1 Canadian General Hospital, Étaples, 4 Dec 1916 · saw three men struck by one shell",
+"source": "record · AWM 1DRL/0428, Wounded and Missing file for 5050 Sneyd",
+"link": "https://www.awm.gov.au/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "clark",
+"n": 1
+},
 "martha-golding": {
 "name": "Martha Golding",
 "surname": "GOLDING",
@@ -1705,6 +1735,51 @@
 "treeLink": "",
 "slug": "martha-golding",
 "n": 2
+},
+"william-kerr": {
+"name": "William Kerr",
+"surname": "KERR",
+"rows": [
+{
+"says": "convict · suspected with John Wells",
+"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
+"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "william-kerr",
+"n": 1
+},
+"j-a-mcintyre": {
+"name": "J. A. McIntyre",
+"surname": "MCINTYRE",
+"rows": [
+{
+"says": "wrote the letter to the Brisbane Courier, 7 Jul 1885, from which the obituary was taken",
+"source": "record · Trove, Australian newspapers",
+"link": "https://nla.gov.au/nla.news-article3443970"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "j-a-mcintyre",
+"n": 1
+},
+"arthur-ashley-ruck": {
+"name": "Arthur Ashley Ruck",
+"surname": "RUCK",
+"rows": [
+{
+"says": "LIEUTENANT PROMOTED TO CAPTAIN, 2nd BATTALION 8th (THE KING'S) REGIMENT, in the Afghan war of 1878-1881 · he married Elizabeth Eleanor D'Arcy at Penzance the autumn before it · a Ruck child, AMY R., is indexed as BORN IN INDIA IN 1879 and living in Lancashire at the 1881 census",
+"source": "record · The British in Afghanistan 1878-1881, and the 1881 census surname index of individuals born in India, both indexed by FIBIS",
+"link": "https://fibis.ourarchives.online/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "arthur-ashley-ruck",
+"n": 1
 },
 "thomas-sinnegar": {
 "name": "Thomas Sinnegar",
@@ -1734,6 +1809,21 @@
 "inTree": false,
 "treeLink": "",
 "slug": "william-sinnegar",
+"n": 1
+},
+"mary-smyth": {
+"name": "Mary Smyth",
+"surname": "SMYTH",
+"rows": [
+{
+"says": "married Edward Sainger · Berkeley St Mary · 30 Jul 1655",
+"source": "record · FreeREG, parish register transcript",
+"link": "https://www.freereg.org.uk/"
+}
+],
+"inTree": false,
+"treeLink": "",
+"slug": "mary-smyth",
 "n": 1
 },
 "elias-swonhonger": {
@@ -1899,36 +1989,6 @@
 "inTree": false,
 "treeLink": "",
 "slug": "a-graham-butler",
-"n": 1
-},
-"john-chapman": {
-"name": "John Chapman",
-"surname": "CHAPMAN",
-"rows": [
-{
-"says": "convict · handcuffed 15 May 1826 for taking his irons off",
-"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
-"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "john-chapman",
-"n": 1
-},
-"clark": {
-"name": "Clark",
-"surname": "CLARK",
-"rows": [
-{
-"says": "L/Cpl 1328, A Coy · No. 1 Canadian General Hospital, Étaples, 4 Dec 1916 · saw three men struck by one shell",
-"source": "record · AWM 1DRL/0428, Wounded and Missing file for 5050 Sneyd",
-"link": "https://www.awm.gov.au/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "clark",
 "n": 1
 },
 "mrs-costello": {
@@ -2201,21 +2261,6 @@
 "slug": "h-kendrick",
 "n": 1
 },
-"william-kerr": {
-"name": "William Kerr",
-"surname": "KERR",
-"rows": [
-{
-"says": "convict · suspected with John Wells",
-"source": "record · TNA ADM 101/26/1, surgeon's journal of the England",
-"link": "https://discovery.nationalarchives.gov.uk/details/r/C1958733"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "william-kerr",
-"n": 1
-},
 "edward-law": {
 "name": "Edward Law",
 "surname": "LAW",
@@ -2304,21 +2349,6 @@
 "inTree": false,
 "treeLink": "",
 "slug": "vivian-maynard",
-"n": 1
-},
-"j-a-mcintyre": {
-"name": "J. A. McIntyre",
-"surname": "MCINTYRE",
-"rows": [
-{
-"says": "wrote the letter to the Brisbane Courier, 7 Jul 1885, from which the obituary was taken",
-"source": "record · Trove, Australian newspapers",
-"link": "https://nla.gov.au/nla.news-article3443970"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "j-a-mcintyre",
 "n": 1
 },
 "martha-millingen": {
@@ -2516,21 +2546,6 @@
 "slug": "ruby",
 "n": 1
 },
-"arthur-ashley-ruck": {
-"name": "Arthur Ashley Ruck",
-"surname": "RUCK",
-"rows": [
-{
-"says": "LIEUTENANT PROMOTED TO CAPTAIN, 2nd BATTALION 8th (THE KING'S) REGIMENT, in the Afghan war of 1878-1881 · he married Elizabeth Eleanor D'Arcy at Penzance the autumn before it · a Ruck child, AMY R., is indexed as BORN IN INDIA IN 1879 and living in Lancashire at the 1881 census",
-"source": "record · The British in Afghanistan 1878-1881, and the 1881 census surname index of individuals born in India, both indexed by FIBIS",
-"link": "https://fibis.ourarchives.online/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "arthur-ashley-ruck",
-"n": 1
-},
 "william-sanigaer": {
 "name": "William Sanigaer",
 "surname": "SANIGAER",
@@ -2604,21 +2619,6 @@
 "inTree": false,
 "treeLink": "",
 "slug": "john-sinneger",
-"n": 1
-},
-"mary-smyth": {
-"name": "Mary Smyth",
-"surname": "SMYTH",
-"rows": [
-{
-"says": "married Edward Sainger · Berkeley St Mary · 30 Jul 1655",
-"source": "record · FreeREG, parish register transcript",
-"link": "https://www.freereg.org.uk/"
-}
-],
-"inTree": false,
-"treeLink": "",
-"slug": "mary-smyth",
 "n": 1
 },
 "alienor-swanhangre": {

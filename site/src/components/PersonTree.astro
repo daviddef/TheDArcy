@@ -105,8 +105,8 @@ const standing = me.graft
   <Fragment slot="notes">
     <p class="warn" style="margin-top:.6rem">
       {all.length === 0
-        ? <>No relationship is published for this person. Either the tree records none, or everyone
-          they connect to is alive and withheld from this build.</>
+        ? <>No relationship is published for this person. Either the tree records none, or the
+          people it records for them are not named anywhere in this archive.</>
         : recorded === 0
           ? <><strong>None of the {all.length} {all.length === 1 ? "relationship" : "relationships"} shown
             here is written in a record this archive has read.</strong> Every one comes from the family

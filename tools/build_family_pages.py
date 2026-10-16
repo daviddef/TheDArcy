@@ -19,6 +19,7 @@ drawn. Graves are the dead. Writes households.json, marriages.json and
 graves.json.
 """
 import json, os, re, collections, unicodedata
+import slugrule
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "site", "src", "data")
@@ -35,15 +36,20 @@ def kebab(s):
 
 def load_people(living=False):
     """The people with a page, in site/src/lib/people.js's own terms and in its
-    own order (numbered ancestors first, then the family clusters). By default
-    the dead only; living=True is the living only, whose slugs people.js assigns
-    after the dead's."""
+    own order (numbered ancestors first, then the family clusters, then the
+    relatives named beside them). By default the dead only; living=True is the
+    living only, whose slugs people.js assigns after the dead's."""
     by_id = {}
     for r in json.load(open(os.path.join(D, "ancestors.json"), encoding="utf-8")):
         if bool(r.get("living")) == living:
             by_id.setdefault(r["id"], {}).update(r)
     for f in json.load(open(os.path.join(D, "families.json"), encoding="utf-8")):
         for r in f["members"]:
+            if bool(r.get("living")) == living:
+                by_id.setdefault(r["id"], {}).update(r)
+    rp = os.path.join(D, "relatives.json")
+    if os.path.exists(rp):
+        for r in json.load(open(rp, encoding="utf-8")):
             if bool(r.get("living")) == living:
                 by_id.setdefault(r["id"], {}).update(r)
     return by_id
@@ -66,32 +72,9 @@ def sortable(datestr):
 
 def main():
     people = load_people()
-    slug = {}
-    counts = collections.Counter(kebab(r["name"]) for r in people.values())
-    used = set()
-    for r in sorted(people.values(), key=lambda r: sortable(r.get("born"))):
-        base = kebab(r["name"]) or "unnamed"
-        s = base
-        if counts[base] > 1:
-            m = re.search(r"\d{4}", (r.get("born") or "") + (r.get("died") or ""))
-            s = f"{base}-{m.group(0)}" if m else base
-        while s in used:
-            s += "-2"
-        used.add(s)
-        slug[r["id"]] = s
-
-    # The living with a page. people.js slugs them after the dead, from what is
-    # left: the bare name, then name-living, then a number.
     alive = load_people(living=True)
-    for r in alive.values():
-        base = kebab(r["name"]) or "unnamed"
-        s = base
-        if s in used:
-            s = f"{base}-living"
-        while s in used:
-            s += "-2"
-        used.add(s)
-        slug[r["id"]] = s
+    # Every address is people.js's, worked out in one place (tools/slugrule.py).
+    slug = slugrule.slugs()
     everyone = {**people, **alive}
 
     name = lambda i: everyone[i]["name"] if i in everyone else ""

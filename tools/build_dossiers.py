@@ -33,7 +33,7 @@ def main():
     tree_slug = {}
     for g in reg["groups"]:
         for r in g["rows"]:
-            if r["kind"] == "tree":
+            if r["kind"] == "tree" and not r.get("relative"):
                 tree_names.add(r["name"].lower())
                 tree_slug.setdefault(r["name"].lower(), r["link"])
 

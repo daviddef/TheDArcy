@@ -105,7 +105,13 @@ if os.path.exists(REG):
     tree, recs = _c.defaultdict(list), _c.defaultdict(list)
     for g in reg["groups"]:
         for r in g["rows"]:
-            if r["kind"] == "tree" and r["link"].startswith("/people/"):
+            # A row marked `relative` is a person named beside someone in the tree
+            # who has a page for that reason alone. Records are joined to people by
+            # NAME, so none is delivered to a relative (build_person_records.py
+            # skips them too, and says why): the join must not hand a record read
+            # about one man to a namesake who was only named beside someone, nor
+            # turn a name this archive had settled into a shared one.
+            if r["kind"] == "tree" and r["link"].startswith("/people/") and not r.get("relative"):
                 tree[r["name"].lower()].append(r["link"].rsplit("/", 1)[-1])
             elif r["kind"] == "record":
                 recs[r["name"].lower()].append(r)

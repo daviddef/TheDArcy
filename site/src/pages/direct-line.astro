@@ -300,7 +300,9 @@ const familyDoors = famData.map((f) => ({
           household: (g.siblings || []).length
             ? { label: "Brothers and sisters",
                 members: (g.siblings || []).map((x) =>
-                  typeof x === "string" ? { name: x } : { name: x.name, dates: x.dates || "" }) }
+                  typeof x === "string" ? { name: x } : {
+                    name: x.name, dates: x.dates || "",
+                    href: x.id && SLUG_BY_ID.get(x.id) ? `/people/${SLUG_BY_ID.get(x.id)}/` : undefined }) }
             : null,
           sources: (g.sources || []).map((x) => ({ label: String(x).split(" \u2014 ")[0] })),
           confidence: chip(g.id),

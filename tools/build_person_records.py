@@ -83,7 +83,7 @@ def main():
     recs = collections.defaultdict(list)   # lower name -> [record row, ...]
     for g in reg["groups"]:
         for r in g["rows"]:
-            if r["kind"] == "tree" and r["link"].startswith("/people/"):
+            if r["kind"] == "tree" and r["link"].startswith("/people/") and not r.get("relative"):
                 tree[r["name"].lower()].append(r["link"].rsplit("/", 1)[-1])
             elif r["kind"] == "record":
                 recs[r["name"].lower()].append(r)

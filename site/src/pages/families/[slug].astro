@@ -14,9 +14,10 @@
  * NO CHILDREN STRIP, ANYWHERE. This archive records siblings in two places
  * and children in none, in any file. The row shows what is there.
  *
- * SIBLINGS ARE BARE NAMES AND THEREFORE PLAIN CARDS. people.js disambiguates
- * its slugs because «there are two George Pitt D'Arcys and three Conyers»,
- * and a card linked by name is the merge those slugs exist to prevent.
+ * SIBLINGS CARRY THE ID OF THE PAGE THEY HAVE, and the card links to it. The id
+ * is the join and the name never is: people.js disambiguates its slugs because
+ * «there are two George Pitt D'Arcys and three Conyers», and a card linked by
+ * name is the merge those slugs exist to prevent.
  */
 import Base from "../../layouts/Base.astro";
 import Descent from "@daviddef/archive-kit/components/Descent.astro";
@@ -47,7 +48,9 @@ for (const f of famData) for (const m of (f.members || [])) if (!KIN_BY_ID.has(m
 const named = (x) => (typeof x === "string" ? x : (x && x.name) || "");
 const nameCards = (xs) => (xs || [])
   .filter((x) => named(x))
-  .map((x) => (typeof x === "string" ? { name: x } : { name: x.name, dates: x.life || "" }));
+  .map((x) => (typeof x === "string" ? { name: x } : {
+    name: x.name, dates: x.life || "",
+    href: x.id && SLUG_BY_ID.get(x.id) ? `/people/${SLUG_BY_ID.get(x.id)}/` : undefined }));
 
 const yr = (x) => (String(x || "").match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1];
 

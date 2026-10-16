@@ -1172,6 +1172,122 @@
 }
 ]
 },
+"hannah-saniger": {
+"name": "Hannah Saniger",
+"shared": false,
+"alsoNamed": [],
+"rows": [
+{
+"says": "wife, aged 45 · BORN AT BERKELEY, GLOUCESTERSHIRE — the census that finally states her birthplace instead of ticking a column",
+"source": "1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "married JAMES WAKEFIELD at Bristol, 17 OCTOBER 1831 · the first English record of the marriage, and the first of any kind in England to give her the surname Saniger",
+"source": "England Marriages 1538-1973 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "baptised HANNAH SANIGOR at BERKELEY, 18 AUGUST 1804 · father JNO SANIGOR — the baptism this archive twice declared missing, indexed under a spelling its own alias list did not carry",
+"source": "England Births & Baptisms 1538-1975, Berkeley — confirmed on FamilySearch and FindMyPast",
+"link": "https://www.findmypast.com.au/"
+}
+]
+},
+"john-saniger": {
+"name": "John Saniger",
+"shared": false,
+"alsoNamed": [],
+"rows": [
+{
+"says": "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found",
+"source": "Gloucestershire Archives D2957/41 (catalogue description)",
+"link": "https://discovery.nationalarchives.gov.uk/"
+},
+{
+"says": "baptised at Berkeley 18 MAY 1769, father THO'S Saniger · the tree gives his birth as 15 May 1769",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "buried at Berkeley St Mary the Virgin, 16 JANUARY 1825, AGED 55 · the tree says 10 March 1824, ten months early",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "baptised at Berkeley 18 SEPTEMBER 1803, father JNO Saniger · Hannah's brother",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "THE SURNAME'S HOME PARISH LOOKS LIKE STONE, NOT BERKELEY · across six printed volumes of Gloucestershire marriage registers the name appears THIRTY-SIX TIMES, and TWENTY of them are at STONE, the parish adjoining Berkeley, in the 1670s to 1690s — Morice Saniger & Margarett Heskins, Samuell Sanigar & Mary Morgan, William Sanigar & Bridget Bayley, John Cole & Elizabeth Sanigar, Richard Jones & Mary Sanigar · the rest are at THORNBURY, CAM and DURSLEY · THIS IS SURNAME DISTRIBUTION AND NOT DESCENT: not one of the thirty-six is shown here to be a relative, and none is a John marrying a Lydia",
+"source": "Phillimore, Gloucestershire Parish Registers: Marriages, six volumes read in full text — Internet Archive gloucestershirep15phil and others",
+"link": "https://archive.org/details/gloucestershirep15phil"
+}
+]
+},
+"thomas-saniger-1711": {
+"name": "Thomas Saniger",
+"shared": false,
+"alsoNamed": [
+"thomas-saniger-1744"
+],
+"rows": [
+{
+"says": "baptised at Berkeley 12 DECEMBER 1711, father WILLIAM Saniger · the tree gives his birth as 11 December 1711",
+"source": "Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"settled": true
+},
+"thomas-saniger-1744": {
+"name": "Thomas Saniger",
+"shared": false,
+"alsoNamed": [
+"thomas-saniger-1711"
+],
+"rows": [
+{
+"says": "baptised at Berkeley 23 AUGUST 1744, father THOMAS Saniger · the tree gives the same day",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "married CATHERINE COTTON at Berkeley, 10 APRIL 1769 · a name this archive never had, and the mother of John",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "buried at Berkeley St Mary the Virgin, 24 JANUARY 1819, AGED 75",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+}
+],
+"settled": true
+},
+"william-saniger": {
+"name": "William Saniger",
+"shared": false,
+"alsoNamed": [],
+"rows": [
+{
+"says": "head, aged 27, SMITH JOURNEYMAN, of Oxford Road · born CHEW MAGNA, SOMERSET",
+"source": "1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
+"link": "https://www.freecen.org.uk/"
+},
+{
+"says": "baptised at Berkeley 6 SEPTEMBER 1801, father JOHN Saniger · Hannah's brother",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
+},
+{
+"says": "baptised at Berkeley 12 OCTOBER 1679, father WILLIAM Saniger · the family tree gives 12 October 1679 — the same day",
+"source": "Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
+"link": "https://www.findmypast.com.au/"
+}
+]
+},
 "aaron-wakefield": {
 "name": "Aaron Wakefield",
 "shared": false,
@@ -1430,130 +1546,42 @@
 }
 ]
 },
-"hannah-saniger": {
-"name": "Hannah Saniger",
-"shared": false,
-"alsoNamed": [],
-"rows": [
-{
-"says": "wife, aged 45 · BORN AT BERKELEY, GLOUCESTERSHIRE — the census that finally states her birthplace instead of ticking a column",
-"source": "1851 census, Drivers Fields, St Paul, Bristol — HO107/1949 f.478 p.14 sch.66 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "married JAMES WAKEFIELD at Bristol, 17 OCTOBER 1831 · the first English record of the marriage, and the first of any kind in England to give her the surname Saniger",
-"source": "England Marriages 1538-1973 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "baptised HANNAH SANIGOR at BERKELEY, 18 AUGUST 1804 · father JNO SANIGOR — the baptism this archive twice declared missing, indexed under a spelling its own alias list did not carry",
-"source": "England Births & Baptisms 1538-1975, Berkeley — confirmed on FamilySearch and FindMyPast",
-"link": "https://www.findmypast.com.au/"
-}
-]
-},
-"john-saniger": {
-"name": "John Saniger",
-"shared": false,
-"alsoNamed": [],
-"rows": [
-{
-"says": "of Berkeley, YEOMAN · release of 2 November 1601 with John Smithe of Panthurste — the earliest Saniger this archive has found",
-"source": "Gloucestershire Archives D2957/41 (catalogue description)",
-"link": "https://discovery.nationalarchives.gov.uk/"
-},
-{
-"says": "baptised at Berkeley 18 MAY 1769, father THO'S Saniger · the tree gives his birth as 15 May 1769",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "buried at Berkeley St Mary the Virgin, 16 JANUARY 1825, AGED 55 · the tree says 10 March 1824, ten months early",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "baptised at Berkeley 18 SEPTEMBER 1803, father JNO Saniger · Hannah's brother",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "THE SURNAME'S HOME PARISH LOOKS LIKE STONE, NOT BERKELEY · across six printed volumes of Gloucestershire marriage registers the name appears THIRTY-SIX TIMES, and TWENTY of them are at STONE, the parish adjoining Berkeley, in the 1670s to 1690s — Morice Saniger & Margarett Heskins, Samuell Sanigar & Mary Morgan, William Sanigar & Bridget Bayley, John Cole & Elizabeth Sanigar, Richard Jones & Mary Sanigar · the rest are at THORNBURY, CAM and DURSLEY · THIS IS SURNAME DISTRIBUTION AND NOT DESCENT: not one of the thirty-six is shown here to be a relative, and none is a John marrying a Lydia",
-"source": "Phillimore, Gloucestershire Parish Registers: Marriages, six volumes read in full text — Internet Archive gloucestershirep15phil and others",
-"link": "https://archive.org/details/gloucestershirep15phil"
-}
-]
-},
-"thomas-saniger-1711": {
-"name": "Thomas Saniger",
-"shared": false,
+"james-atwell-1853": {
+"name": "James Atwell",
+"shared": true,
 "alsoNamed": [
-"thomas-saniger-1744"
+"james-atwell"
 ],
 "rows": [
 {
-"says": "baptised at Berkeley 12 DECEMBER 1711, father WILLIAM Saniger · the tree gives his birth as 11 December 1711",
-"source": "Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
-}
-],
-"settled": true
-},
-"thomas-saniger-1744": {
-"name": "Thomas Saniger",
-"shared": false,
-"alsoNamed": [
-"thomas-saniger-1711"
-],
-"rows": [
-{
-"says": "baptised at Berkeley 23 AUGUST 1744, father THOMAS Saniger · the tree gives the same day",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "married CATHERINE COTTON at Berkeley, 10 APRIL 1769 · a name this archive never had, and the mother of John",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "buried at Berkeley St Mary the Virgin, 24 JANUARY 1819, AGED 75",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-}
-],
-"settled": true
-},
-"william-saniger": {
-"name": "William Saniger",
-"shared": false,
-"alsoNamed": [],
-"rows": [
-{
-"says": "head, aged 27, SMITH JOURNEYMAN, of Oxford Road · born CHEW MAGNA, SOMERSET",
-"source": "1851 census, St Philip and Jacob, Bristol — HO107/1954 f.562 p.30 sch.102",
-"link": "https://www.freecen.org.uk/"
-},
-{
-"says": "baptised at Berkeley 6 SEPTEMBER 1801, father JOHN Saniger · Hannah's brother",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
-},
-{
-"says": "baptised at Berkeley 12 OCTOBER 1679, father WILLIAM Saniger · the family tree gives 12 October 1679 — the same day",
-"source": "Berkeley St Mary the Virgin, England Births & Baptisms 1538-1975 (FindMyPast)",
-"link": "https://www.findmypast.com.au/"
+"says": "died 16/07/1907 · parents: Maria Rossiter · John Atwell",
+"source": "Queensland death index 1907/C/1215",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
 }
 ]
 },
 "james-atwell": {
 "name": "James Atwell",
-"shared": false,
-"alsoNamed": [],
+"shared": true,
+"alsoNamed": [
+"james-atwell-1853"
+],
 "rows": [
 {
 "says": "died 16/07/1907 · parents: Maria Rossiter · John Atwell",
 "source": "Queensland death index 1907/C/1215",
+"link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+]
+},
+"carmine-antonio-carminantonio-falco": {
+"name": "Carmine Antonio (Carminantonio) Falco",
+"shared": false,
+"alsoNamed": [],
+"rows": [
+{
+"says": "died 27/04/1985, NOT 1988 as this archive had it · registration 1985/3063 · father: Raffaele Falco",
+"source": "Queensland death index 1985/3063",
 "link": "https://www.familyhistory.bdm.qld.gov.au/"
 }
 ]
@@ -1579,6 +1607,18 @@
 "says": "died 22/04/1918 · parents: Marion Fleming Watt · Francis Murdoch",
 "source": "Queensland death index 1918/C/2318",
 "link": "https://www.familyhistory.bdm.qld.gov.au/"
+}
+]
+},
+"catherine-cotton": {
+"name": "Catherine Cotton",
+"shared": false,
+"alsoNamed": [],
+"rows": [
+{
+"says": "married Thomas Saniger at Berkeley, 10 April 1769",
+"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
+"link": "https://www.findmypast.com.au/"
 }
 ]
 },
@@ -1663,27 +1703,15 @@
 }
 ]
 },
-"carmine-antonio-carminantonio-falco": {
-"name": "Carmine Antonio (Carminantonio) Falco",
+"mary-blackbourne": {
+"name": "Mary Blackbourne",
 "shared": false,
 "alsoNamed": [],
 "rows": [
 {
-"says": "died 27/04/1985, NOT 1988 as this archive had it · registration 1985/3063 · father: Raffaele Falco",
-"source": "Queensland death index 1985/3063",
-"link": "https://www.familyhistory.bdm.qld.gov.au/"
-}
-]
-},
-"catherine-cotton": {
-"name": "Catherine Cotton",
-"shared": false,
-"alsoNamed": [],
-"rows": [
-{
-"says": "married Thomas Saniger at Berkeley, 10 April 1769",
-"source": "Berkeley St Mary the Virgin, after 1677 (FindMyPast — England Births & Baptisms / Marriages; National Burial Index, Gloucestershire FHS)",
-"link": "https://www.findmypast.com.au/"
+"says": "married William Sneyd, weaver · Madeley All Saints, 27 March 1769",
+"source": "FreeREG, Madeley All Saints parish register",
+"link": "https://www.freereg.org.uk/"
 }
 ]
 },
@@ -1701,18 +1729,6 @@
 "says": "married Joseph Ward at South Leith, 27 October 1747 · entered as MARTH GAIRDEN, daughter of WILLIAM GAIRDEN",
 "source": "Scotland, Parish Marriages & Banns 1561-1893, South Leith (FindMyPast)",
 "link": "https://www.findmypast.com.au/"
-}
-]
-},
-"mary-blackbourne": {
-"name": "Mary Blackbourne",
-"shared": false,
-"alsoNamed": [],
-"rows": [
-{
-"says": "married William Sneyd, weaver · Madeley All Saints, 27 March 1769",
-"source": "FreeREG, Madeley All Saints parish register",
-"link": "https://www.freereg.org.uk/"
 }
 ]
 }

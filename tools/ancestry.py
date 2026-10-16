@@ -15,9 +15,10 @@ and because it makes a gap obvious: a missing number is a missing ancestor.
 import csv, os, sys, collections
 from gedcom import (load, display, lifespan, born, died, year, ev, classify_living,
                     held_out)
+from build_site_data import town_country
 
 LIVING = {}
-HELD = {}      # living people this archive does not publish at all (gedcom.held_out)
+HELD = {}      # people this archive does not publish at all (gedcom.held_out, the kit's rule)
 
 
 def is_living(p):
@@ -84,13 +85,11 @@ def occupation(p):
 
 
 REDACT = True   # never write a living person's DETAILS to a committed file
-# — but do write their name. This archive used to withhold living people
-# entirely, which left fifty-odd relatives on the tree as an em dash and made
-# it the one archive of the seven where a living reader could not find their
-# own family. The rule across the estate is Falco's: name them, nothing more.
-# Name only: no date, no place, no cause, no burial, no occupation, no
-# marriage date. checkliving.py --policy named-bare enforces that against the
-# built site independently of anything decided here.
+# — but do write their name, their relatives and their town and country. That is
+# the whole of a living person (David, 16 October 2026): no date, no cause, no
+# burial, no occupation, no marriage date, no source. checkliving.py and
+# tools/check_living.py enforce it against the built site and every tracked file
+# independently of anything decided here.
 
 
 def row_for(people, families, pid, ahn=None):
@@ -101,7 +100,10 @@ def row_for(people, families, pid, ahn=None):
         return {"ahn": ahn or "", "gen": gen_of(ahn) if ahn else "", "id": p["id"],
                 "mh": "", "name": display(p), "sex": "", "born": "",
                 "born_place": "", "died": "", "died_place": "", "cause": "",
-                "burial": "", "occupation": "", "spouses": "", "living": "yes",
+                "burial": "", "occupation": "",
+                "spouses": " | ".join(display(people[s]) for s, _, _ in
+                                      spouse_of(people, families, pid)),
+                "living": "yes", "place": town_country(born(p).get("place", "")),
                 "n_notes": "", "sources": ""}
     b, d = born(p), died(p)
     bur = ev(p, "burial") or {}
@@ -127,6 +129,7 @@ def row_for(people, families, pid, ahn=None):
             + (f' (m. {dt})' if dt and not is_living(people[s]) else "")
             for s, dt, _ in sp),
         "living": "yes" if is_living(p) else "",
+        "place": "",
         "n_notes": len(p["notes"]),
         "sources": " | ".join(p["sources"][:4]),
     }
@@ -134,7 +137,7 @@ def row_for(people, families, pid, ahn=None):
 
 FIELDS = ["ahn", "gen", "id", "mh", "name", "sex", "born", "born_place", "died",
           "died_place", "cause", "burial", "occupation", "spouses", "living",
-          "n_notes", "sources"]
+          "place", "n_notes", "sources"]
 
 
 def write(path, rows):

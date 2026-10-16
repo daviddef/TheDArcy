@@ -1,5 +1,7 @@
 import ancestors from "../data/ancestors.json";
 import families from "../data/families.json";
+import relatives from "../data/relatives.json";
+import prov from "../data/provenance.json";
 import living from "../data/living.json";
 
 export const kebab = (s) =>
@@ -95,8 +97,16 @@ function build() {
 
   for (const a of ancestors) add(a, { ancestor: true });
   for (const f of families) for (const m of f.members) add(m, { family: f.surname });
+  /* THE RELATIVES: people the archive names beside someone (a parent, a brother
+     or sister, a spouse) who belong to neither the direct line nor one of the
+     thirteen surnames. A name with no page behind it is not allowed (David,
+     16 October 2026), so each of them has one. They are added last, so every
+     slug below that was already published keeps its address. */
+  const firstRelative = byId.size;
+  for (const r of relatives) add(r, { relative: true });
 
   const people = [...byId.values()];
+  const nBase = firstRelative;
 
   // slugs, disambiguated when a name repeats — and names repeat constantly:
   // there are two George Pitt D'Arcys and three Conyers.
@@ -109,11 +119,17 @@ function build() {
   // and every link to him, in this archive and outside it, would have broken.
   // The living are slugged afterwards, from what is left. tools/build_register.py
   // and tools/build_family_pages.py reproduce this for the dead only.
-  const dead = people.filter((p) => !p.living);
-  const alive = people.filter((p) => p.living);
+  /* THREE PHASES, so that adding people moved no address already published.
+     1. the dead of the direct line and the thirteen surnames, among themselves
+        (a name carried twice is told apart by a year, as it always was);
+     2. the dead who are only relatives: the bare name, and if that is taken the
+        name and a year, so a newcomer never moves an older page;
+     3. the living, from what is left. */
+  const base0 = people.slice(0, nBase), rel0 = people.slice(nBase);
+  const dead = base0.filter((p) => !p.living);
+  const used = new Set();
   const counts = {};
   for (const p of dead) counts[kebab(p.name)] = (counts[kebab(p.name)] || 0) + 1;
-  const used = new Set();
   for (const p of dead) {
     const base = kebab(p.name) || "unnamed";
     let slug = base;
@@ -125,11 +141,22 @@ function build() {
     used.add(slug);
     p.slug = slug;
   }
+  for (const p of rel0.filter((p) => !p.living)) {
+    const base = kebab(p.name) || "unnamed";
+    let slug = base;
+    if (used.has(slug)) {
+      const yr = (p.born || p.died || "").match(/\d{4}/);
+      if (yr) slug = `${base}-${yr[0]}`;
+    }
+    while (used.has(slug)) slug += "-2";
+    used.add(slug);
+    p.slug = slug;
+  }
   /* A living person has no year to tell them from a namesake, so a name that
      is taken — by the dead or by another living person — is told apart by
      the word "living", then a number. Two living people of one name are not
      merged, for the reason the dead are not. */
-  for (const p of alive) {
+  for (const p of people.filter((p) => p.living)) {
     const base = kebab(p.name) || "unnamed";
     let slug = base;
     if (used.has(slug)) slug = `${base}-living`;
@@ -152,3 +179,12 @@ export const byId = new Map(people.map((p) => [p.id, p]));
 
 export const nameOf = (id) => byId.get(id)?.name || "";
 export const slugOf = (id) => byId.get(id)?.slug || "";
+
+/* The figures the method pages quote about the charts, COUNTED rather than typed:
+   a page that says «of 473 charts» goes wrong the day the archive gives a page to
+   somebody new. A chart is drawn for every person who is not living; it contains a
+   solid edge when a record this archive has read writes one of its relationships
+   down (provenance.json). */
+export const nCharts = people.filter((p) => !p.living).length;
+export const nSolid = Object.values(prov).filter((v) => v.rel && Object.keys(v.rel).length > 0).length;
+export const nPeople = people.length;

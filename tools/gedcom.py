@@ -6,10 +6,21 @@ One module, no dependencies. Everything downstream — the ancestry sweep, the
 surname clusters, the register — imports `load()` from here so that there is
 exactly one place where a GEDCOM line is turned into a fact.
 """
-import re, os, sys
+import re, os, sys, json
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GED = os.path.join(ROOT, "sources", "myheritage-tree4-2026-09-09.ged")
+
+# THE ONE DEFINITION OF WHO IS LIVING lives in the shared kit, not here
+# (David, 16 October 2026): kit/tools/living_rule.py and kit/data/public-sources.json.
+# This archive used to keep its own test (a 100-year upper bound inferred through
+# the family graph); it keeps none now. Everything below only PREPARES the
+# facts the kit's functions take (a birth year, whether the tree records a death,
+# the citations) and hands them over.
+_KIT_TOOLS = os.path.join(ROOT, "site", "node_modules", "@daviddef", "archive-kit", "kit", "tools")
+if _KIT_TOOLS not in sys.path:
+    sys.path.insert(0, _KIT_TOOLS)
+import living_rule as lr
 
 LINE = re.compile(r"^\s*(\d+)\s+(?:(@[^@]+@)\s+)?(_?\w+)(?:\s(.*))?$")
 
@@ -111,6 +122,34 @@ def _notes(node, notes_by_id):
     return [n for n in out if n]
 
 
+# What a citation IS, for the kit's public_source(). MyHeritage files a family
+# tree entry as a "collection" too (Geni World Family Tree, WikiTree, Filae and
+# GenealogieOnline trees), and its record URL looks the same as a census's. The
+# kit says a PRIVATE FAMILY-TREE ENTRY does not count, so those are written as
+# "MyHeritage family tree" (which the kit's list excludes) and every other
+# collection as "MyHeritage record collection" (which it includes). FamilySearch,
+# including its Family Tree, always counts, as the kit says.
+_TREE_WORDS = ("geni", "wikitree", "family tree", "family trees", "tree index")
+
+
+def citation_for(src, page=""):
+    if not src:
+        return ""
+    title = (src.get("title") or src.get("abbr") or "").strip()
+    typ = src.get("type") or ""
+    low = title.lower()
+    if "familysearch" in low:
+        return "FamilySearch: " + title
+    if typ in ("Smart Matching", "Discovery"):
+        return "MyHeritage family tree: " + title
+    if typ == "Collection":
+        if any(w in low for w in _TREE_WORDS):
+            return "MyHeritage family tree: " + title
+        return "MyHeritage record collection: " + title
+    # no type: a source the tree's owner added by hand. Judge it by what it says.
+    return " ".join(x for x in (title, page or "", src.get("publication") or "") if x).strip()
+
+
 def load(path=GED):
     """Return (people, families) as dicts keyed by GEDCOM xref."""
     records = parse(path)
@@ -126,6 +165,7 @@ def load(path=GED):
             sources_by_id[r.xref] = {
                 "title": r.val("TITL"), "abbr": r.val("ABBR"),
                 "publication": r.val("PUBL"), "text": r.val("TEXT"),
+                "type": r.val("_TYPE"),
             }
 
     people, families = {}, {}
@@ -144,9 +184,11 @@ def load(path=GED):
             for extra in r.all("NAME")[1:]:
                 alts.append(extra.value.replace("/", "").strip())
 
-            srcs = []
+            srcs, cites = [], []
             for s in r.all("SOUR"):
                 v = s.value.strip()
+                cites.append(citation_for(sources_by_id.get(v, {}), s.val("PAGE"))
+                             if v.startswith("@") else v)
                 if v.startswith("@"):
                     d = sources_by_id.get(v, {})
                     t = d.get("title") or d.get("abbr") or ""
@@ -168,6 +210,7 @@ def load(path=GED):
                 "events": _events(r),
                 "notes": _notes(r, notes_by_id),
                 "sources": srcs,
+                "citations": [c for c in cites if c],
                 "famc": [k.value for k in r.all("FAMC")],   # family as child
                 "fams": [k.value for k in r.all("FAMS")],   # family as spouse
                 "uid": r.val("_UID"),
@@ -234,7 +277,23 @@ def lifespan(person):
     return ""
 
 
-# The events that are the tree's own statement that somebody has died.
+# ---- WHO IS LIVING, AND WHO IS HELD OUT ------------------------------------------
+# David's ruling of 16 October 2026, version 2, and the kit's code for it
+# (kit/tools/living_rule.py). This file decides nothing; it prepares the three
+# facts the rule takes and passes them on.
+#
+#   birth year    the year of the birth, else christening, else baptism. A range
+#                 («BET 1944 AND 1946») takes its LATER end, the younger reading:
+#                 where the tree hesitates, the person is not made out older.
+#   recorded dead a death or burial event, with or without a date
+#   citations     what the tree cites for them (see citation_for above)
+#
+# Living = 80 or younger by year, with no death recorded, and no public source.
+# A person with no birth year cannot be shown to be 80 or younger, so is NOT
+# living by this test. The old inference through the family graph (a child born
+# in 1990 implies a parent born before 1976) is gone, on purpose: the rule is
+# stated on the person's own record.
+
 RECORDED_DEAD_KINDS = ("death", "burial")
 
 
@@ -242,143 +301,74 @@ def recorded_dead(person):
     """True when the tree RECORDS this person as deceased, with or without a date.
 
     MyHeritage writes "DEAT Y" for somebody it knows to be dead and does not know
-    when; a burial, with or without a date, is the same statement. David ruled on
-    16 October 2026 that a recorded-dead person is dead whether or not a date
-    exists, so no inference about birth years can make them living. Only a death
+    when; a burial, with or without a date, is the same statement. Only a death
     or burial event counts: a residence, a probate or a will is not a statement
     that the person has died."""
     return any(e["kind"] in RECORDED_DEAD_KINDS for e in person["events"])
 
 
-def is_living(person, today_year=2026):
-    """Per-person fallback. Prefer classify_living(), which uses the whole graph."""
-    if recorded_dead(person):
-        return False
-    b = year(born(person).get("date", ""))
-    if b is not None and today_year - b > 100:
-        return False
-    for e in person["events"]:
-        y = year(e.get("date", ""))
-        if y is not None and today_year - y > 100:
-            return False
-    return True
+def birth_year(person):
+    for kind in ("birth", "christening", "baptism"):
+        for e in person["events"]:
+            if e["kind"] != kind:
+                continue
+            ys = [int(y) for y in re.findall(r"\b(\d{4})\b", e.get("date") or "")]
+            if ys:
+                return max(ys) if (e.get("date") or "").upper().startswith("BET") else ys[0]
+    return None
 
 
-MIN_PARENT_AGE = 14      # nobody is a parent younger than this
-MAX_PARENT_AGE = 60      # nor older than this
+def public_source(person):
+    return lr.public_source(person.get("citations") or [])
 
 
-def classify_living(people, families, today_year=2026, horizon=100):
-    """Decide who is living, using the family graph and not just their own dates.
-
-    A tree of this size is full of people with no dates at all — medieval
-    nobility, unnamed spouses, half-remembered great-aunts. Judging those by
-    their own record alone marks every one of them 'living', which is safe but
-    useless: it withholds the fourteenth century.
-
-    So for each person we compute an **upper bound on their birth year** — the
-    latest year they could possibly have been born — and treat them as dead only
-    when even that latest possible birth is more than `horizon` years ago.
-
-    Every rule below is a genuine upper bound, never a guess:
-
-      · a recorded birth or christening        → born in that year, exactly
-      · any recorded event in year E           → born no later than E
-      · a child born in year C                 → born no later than C - 14
-      · a marriage in year M                   → born no later than M - 14
-      · a parent whose bound is P              → born no later than P + 60
-
-    A *recorded* birth is authoritative and is never overridden by inference,
-    because an inference that made a living person look older would publish
-    them. Where nothing at all is known the bound stays unknown and the person
-    is presumed living, which is the safe direction to be wrong in.
-    """
-    fixed, bound = {}, {}
-
-    def tighten(pid, y):
-        if y is None:
-            return False
-        if pid in fixed:
-            return False                     # a recorded birth is not negotiable
-        if pid not in bound or y < bound[pid]:
-            bound[pid] = y
-            return True
-        return False
-
-    dead_by_record = set()
-    for pid, p in people.items():
-        if recorded_dead(p):                 # a date is not needed to be dead
-            dead_by_record.add(pid)
-        b = year(born(p).get("date", ""))
-        if b is not None:
-            fixed[pid] = b
-            bound[pid] = b
-            continue
-        for e in p["events"]:                # they existed at their own events
-            tighten(pid, year(e.get("date", "")))
-
-    kids_of, parents_of = {}, {}
-    for f in families.values():
-        pair = [x for x in (f["husb"], f["wife"]) if x]
-        for par in pair:
-            for c in f["chil"]:
-                kids_of.setdefault(par, []).append(c)
-                parents_of.setdefault(c, []).append(par)
-        for e in f["events"]:                # married, so already of age
-            y = year(e.get("date", ""))
-            for par in pair:
-                tighten(par, None if y is None else y - MIN_PARENT_AGE)
-
-    for _ in range(60):
-        moved = False
-        for pid in people:
-            for c in kids_of.get(pid, []):   # older than their children
-                if c in bound:
-                    moved |= tighten(pid, bound[c] - MIN_PARENT_AGE)
-            for par in parents_of.get(pid, []):   # younger than their parents
-                if par in bound:
-                    moved |= tighten(pid, bound[par] + MAX_PARENT_AGE)
-        if not moved:
-            break
-
-    out = {}
-    for pid in people:
-        if pid in dead_by_record:
-            out[pid] = False
-            continue
-        b = bound.get(pid)
-        out[pid] = not (b is not None and today_year - b > horizon)
-    return out
+def today():
+    return lr.this_year()
 
 
-# HELD OUT (David's ruling, 16 October 2026): a living person this archive does
-# not publish at all. No page, no record, and no name as anybody's relative.
-#   dna-tester      the one living woman whose DNA result /dna/ describes. That
-#                   page says she is not named, and the sentence must stay true.
-#                   Held by id, because she is one person.
-#   possible-minor  a living person with no birth year in the tree who has a
-#                   living parent. With no year there is no telling a child from
-#                   an adult, and a child is not named. A rule, not a list.
+def classify_living(people, families=None, today_year=None):
+    """{id: True/False}, by the kit's rule, for everybody in the tree."""
+    ty = today_year or today()
+    return {pid: lr.is_living(birth_year(p), recorded_dead(p), p.get("citations") or [], ty)
+            for pid, p in people.items()}
+
+
+def is_living(person, today_year=None):
+    return lr.is_living(birth_year(person), recorded_dead(person),
+                        person.get("citations") or [], today_year or today())
+
+
+# The person promised privacy, BY ID. One id, one person; no file, message or log
+# names her. site/src/data/decisions.json records the same id and tools/check_decisions.py
+# refuses the build if the two ever differ.
 DNA_TESTER = "@I23@"
+
+
+def held_ids():
+    return [DNA_TESTER]
+
+
 HELD_RULES = {
-    "dna-tester": "held by id; a living person whose DNA result the archive describes without naming her",
-    "possible-minor": "a living person with no birth year in the tree who has a living parent",
+    "dna-tester": "held by id; a person whose DNA result the archive describes without naming her",
+    "possible-minor": "not recorded dead, no public source, and under 18 by year, or with no birth year and a living parent",
 }
 
 
-def held_out(people, living):
-    """{id: rule} for everybody held out, given the verdict of classify_living().
-    Only the living can be held out: a person recorded dead is an ordinary dead
-    person, whatever their dates."""
+def held_out(people, living=None, ids=None, today_year=None):
+    """{id: rule} for everybody held out, by the kit's rule. Held out is separate
+    from living: it covers a possible minor whether or not the 80-year test calls
+    them living (an undated child of a living parent is not living by that test),
+    and the people promised privacy by id."""
+    ty = today_year or today()
+    if living is None:
+        living = classify_living(people, None, ty)
+    ids = list(held_ids() if ids is None else ids)
     out = {}
     for pid, p in people.items():
-        if not living.get(pid, True):
-            continue
-        if year(born(p).get("date", "")) is None and \
-                any(living.get(x, True) for x in p["parents"]):
-            out[pid] = "possible-minor"
-    if DNA_TESTER in people and living.get(DNA_TESTER, True):
-        out[DNA_TESTER] = "dna-tester"
+        parent_living = any(living.get(x) for x in p["parents"])
+        if lr.is_held_out(pid, birth_year(p), recorded_dead(p), p.get("citations") or [],
+                          parent_living, ids, ty):
+            out[pid] = "dna-tester" if str(pid) in {str(i) for i in ids} else "possible-minor"
     return out
 
 
@@ -387,6 +377,10 @@ def display(person):
     if person["nick"]:
         n = f'{person["given"]} "{person["nick"]}" {person["surname"]}'.strip()
     n = re.sub(r"\s+", " ", n).strip()
+    # Two names in the tree carry the owner's own asterisks («Ephraim Wakefield **»),
+    # a mark for the owner and not part of anybody's name. Left in, the markup
+    # reaches a page as a literal «**» (the self-test refuses it).
+    n = re.sub(r"\s*\*+\s*", " ", n).strip()
     # The tree repeats particles: "Conrad V Von von Degenfeld", "Meinhard von
     # von Schonburg", "Adelmann Adelmann von Adelmannsfelden". Collapse an
     # adjacent repeat of the same word, keeping the second form's casing.
