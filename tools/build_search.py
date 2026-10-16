@@ -96,7 +96,60 @@ rows = []
 seen = set()
 
 
+# ── the living are not in the search index ───────────────────────────────────
+# David's ruling, 16 October 2026: a living person's page is noindex, which
+# takes it out of the sitemap AND out of this index. Their pages are under
+# /people/ and that tree is skipped below; what this removes is the other way a
+# name gets in, which is the first 4,000 characters of the text of every OTHER
+# page. A family page that names a living wife or a living sister would make
+# her findable by name through this box. The tree is read here (it is on the
+# machine that builds this, and is gitignored, so CI never runs this tool) and
+# every living person's name is cut out of whatever is indexed.
+# A name a published dead person ALSO carries is left alone: the string cannot
+# tell them apart, and the dead person's name is worth more in the index.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+
+def living_name_pattern():
+    from gedcom import load, display, classify_living
+    people, families = load()
+    flags = classify_living(people, families)
+    names = {display(p) for pid, p in people.items() if flags.get(pid)}
+    dead = {display(p) for pid, p in people.items() if not flags.get(pid)}
+    names = sorted((n for n in names - dead if len(n.split()) >= 2), key=len, reverse=True)
+    if not names:
+        return None, None, 0
+    rx = re.compile(r"(?<![\w'])(?:" + "|".join(re.escape(n) for n in names) + r")(?![\w'])")
+    # A living name that sits INSIDE a longer dead one — «Bruce Atwell» in «Eric
+    # George Bruce Atwell» — is not a living person turning up. Those dead names
+    # are protected, longest first, so the cut does not take a piece out of them.
+    protect = sorted((d for d in dead if rx.search(d)), key=len, reverse=True)
+    prx = re.compile(r"(?<![\w'])(?:" + "|".join(re.escape(d) for d in protect) + r")(?![\w'])") if protect else None
+    return rx, prx, len(names)
+
+
+try:
+    LIVING_RX, PROTECT_RX, N_LIVING_NAMES = living_name_pattern()
+except Exception as e:      # no GEDCOM here: say so, and do not pretend to have scrubbed
+    LIVING_RX, PROTECT_RX, N_LIVING_NAMES = None, None, 0
+    print(f"search index: the tree could not be read ({e}); living names NOT scrubbed")
+
+
+def scrub(text):
+    if not (LIVING_RX and text):
+        return text
+    held = []
+    if PROTECT_RX:
+        def keep(m):
+            held.append(m.group(0))
+            return f"\x00{len(held) - 1}\x00"
+        text = PROTECT_RX.sub(keep, text)
+    text = LIVING_RX.sub("", text)
+    return re.sub(r"\x00(\d+)\x00", lambda m: held[int(m.group(1))], text)
+
+
 def add(kind, title, sub, href, extra=""):
+    title, sub, extra = scrub(title), scrub(sub), scrub(extra)
     key = (kind, title, href)
     if key in seen:
         return
@@ -165,6 +218,8 @@ def main():
                 continue                       # already indexed, one row each
             src = open(os.path.join(dirpath, "index.html"),
                        encoding="utf-8", errors="ignore").read()
+            if re.search(r'<meta[^>]*name=["\']robots["\'][^>]*noindex', src, re.I):
+                continue                       # a noindex page is not indexed here either
             m = re.search(r"<h1[^>]*>(.*?)</h1>", src, re.S)
             if not m:
                 continue
@@ -180,7 +235,8 @@ def main():
         json.dump(rows, f, ensure_ascii=False, separators=(",", ":"))
     kinds = collections.Counter(r["k"] for r in rows)
     size = os.path.getsize(OUT) / 1024
-    print(f"search index: {len(rows)} entries, {size:.0f} KB")
+    print(f"search index: {len(rows)} entries, {size:.0f} KB"
+          f"  ({N_LIVING_NAMES:,} living name phrases scrubbed from the text)")
     for k, n in kinds.most_common():
         print(f"   {k:10s} {n}")
 

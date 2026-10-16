@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 """Turn the parsed GEDCOM into the JSON the site reads.
 
-The living-person rule is applied here, once, at the boundary between the
-research data and the published build. Anything that reaches site/src/data is
-publishable; anything filtered out here never enters the build at all.
+The living-person standard is applied here, once, at the boundary between the
+research data and the published build. Anything that reaches site/src/data has
+already been through it.
+
+THE STANDARD (David's ruling, 16 October 2026, made knowing the tree holds 2,034
+people it judges living): a living person is published as a NAME, a RELATIONSHIP
+and a TOWN AND COUNTRY, and nothing else. living_json() below builds them from
+those and from nothing more: it never reads a date, an event, a note, a source,
+an occupation or a cause, so none of them can reach a committed file. This used
+to build the whole record and blank it afterwards (redact()); a record that is
+built and then blanked is one forgotten field away from published.
 """
 import json, os, collections, re
 from gedcom import (load, display, born, died, year, ev, lifespan, classify_living)
@@ -11,6 +19,17 @@ from gedcom import (load, display, born, died, year, ev, lifespan, classify_livi
 # Filled in by main(). One graph-wide judgement, used everywhere below, so that
 # a person cannot be living on one page and dead on another.
 LIVING = {}
+
+# Filled in by main(): everybody this archive gives a PAGE — the 243 numbered
+# ancestors and every member of the thirteen surname clusters. A living person
+# in SCOPE has a page; a living person outside it is named, as a spouse or a
+# brother or sister, and is neither linked nor given an identifier.
+SCOPE = set()
+
+# Every living person who appears ANYWHERE in what this run writes, as the
+# subject of a record or as a relative named in one. Ids only, never written
+# out: they exist so the published counts are measured rather than typed.
+APPEARS = set()
 
 
 def is_living(p):
@@ -89,6 +108,104 @@ def canonical_place(p):
     return ", ".join(out)
 
 
+# ---- town and country --------------------------------------------------------
+# The place a living person is shown with. It comes from the one place the tree
+# records for them, the place of birth, and is REDUCED to a town and a country:
+# a street, a hospital, a farm, a house number, a county or a state is dropped.
+# The tree holds no residence for any living person, so there is nothing newer.
+COUNTRY = {
+    "south africa": "South Africa", "rsa": "South Africa", "s africa": "South Africa",
+    "australia": "Australia", "england": "England", "scotland": "Scotland",
+    "wales": "Wales", "ireland": "Ireland", "northern ireland": "Northern Ireland",
+    "united kingdom": "United Kingdom", "uk": "United Kingdom",
+    "usa": "United States", "united states": "United States",
+    "united states of america": "United States", "us": "United States",
+    "canada": "Canada", "new zealand": "New Zealand", "croatia": "Croatia",
+    "hrvatska": "Croatia", "italy": "Italy", "italia": "Italy", "serbia": "Serbia",
+    "germany": "Germany", "deutschland": "Germany", "france": "France",
+    "zimbabwe": "Zimbabwe", "zambia": "Zambia", "namibia": "Namibia",
+    "botswana": "Botswana", "kenya": "Kenya", "mozambique": "Mozambique",
+    "puerto rico": "Puerto Rico", "venezuela": "Venezuela", "brazil": "Brazil",
+    "brasil": "Brazil", "argentina": "Argentina", "chile": "Chile", "peru": "Peru",
+    "mexico": "Mexico", "spain": "Spain", "portugal": "Portugal",
+    "netherlands": "Netherlands", "belgium": "Belgium", "switzerland": "Switzerland",
+    "austria": "Austria", "poland": "Poland", "slovenia": "Slovenia",
+    "bosnia and herzegovina": "Bosnia and Herzegovina", "greece": "Greece",
+    "israel": "Israel", "india": "India", "china": "China", "japan": "Japan",
+    "singapore": "Singapore", "hong kong": "Hong Kong", "thailand": "Thailand",
+    "dubai": "United Arab Emirates", "united arab emirates": "United Arab Emirates",
+    "sweden": "Sweden", "norway": "Norway", "denmark": "Denmark", "finland": "Finland",
+    "russia": "Russia", "ukraine": "Ukraine", "hungary": "Hungary",
+    "czech republic": "Czech Republic", "romania": "Romania", "bulgaria": "Bulgaria",
+    "lesotho": "Lesotho", "swaziland": "Eswatini", "eswatini": "Eswatini",
+    "malawi": "Malawi", "angola": "Angola", "uruguay": "Uruguay",
+    "colombia": "Colombia", "ecuador": "Ecuador", "cuba": "Cuba",
+}
+# A first component that is a building or a road is not a town.
+NOT_A_TOWN = re.compile(
+    r"\b(hospital|clinic|nursing|maternity|medical|infirmary|farm|ranch|station|"
+    r"street|st\.|road|rd\.?|avenue|ave|drive|lane|court|crescent|place|house|"
+    r"school|university|college|church|chapel|prison|barracks|lodge|home|estate|"
+    r"po box|private bag)\b", re.I)
+# State and province tokens that survive when the tree wrote a place without commas.
+STATE_TOKENS = {"qld", "q'ld", "nsw", "vic", "wa", "sa", "tas", "nt", "act",
+                "queensland", "new south wales", "victoria", "tasmania",
+                "western australia", "south australia", "northern territory"} | {
+    # a state or province is coarser than a town, and is not offered as one
+    x.lower() for x in (
+        "Alabama,Alaska,Arizona,Arkansas,California,Colorado,Connecticut,Delaware,Florida,"
+        "Georgia,Hawaii,Idaho,Illinois,Indiana,Iowa,Kansas,Kentucky,Louisiana,Maine,Maryland,"
+        "Massachusetts,Michigan,Minnesota,Mississippi,Missouri,Montana,Nebraska,Nevada,"
+        "New Hampshire,New Jersey,New Mexico,New York,North Carolina,North Dakota,Ohio,Oklahoma,"
+        "Oregon,Pennsylvania,Rhode Island,South Carolina,South Dakota,Tennessee,Texas,Utah,"
+        "Vermont,Virginia,Washington,West Virginia,Wisconsin,Wyoming,"
+        "Ontario,Quebec,British Columbia,Alberta,Manitoba,Saskatchewan,Nova Scotia,"
+        "Gauteng,KwaZulu-Natal,Western Cape,Eastern Cape,Free State,Limpopo,Mpumalanga,"
+        "North West,North West Province,Northern Cape,Transvaal,Natal,Cape Province"
+    ).split(",")}
+
+
+def _tidy_case(x):
+    x = x.strip(" ,.;")
+    return x.title() if x and x == x.lower() else x
+
+
+def town_country(raw):
+    """"Johannesburg, Gauteng, South Africa" -> "Johannesburg, South Africa".
+
+    Returns "" when the tree has no place, or none that survives the reduction.
+    A place with a country and no usable town is the country alone; a place with
+    a town and no country the tree names is the town alone."""
+    raw = re.sub(r"&lt;|&gt;|[<>]", "", raw or "").strip()
+    if not raw:
+        return ""
+    # Anything carrying a digit or a question mark is an address or a guess.
+    parts = [x.strip() for x in re.split(r"\s*,\s*", canonical_place(raw)) if x.strip()]
+    country = ""
+    if len(parts) == 1:
+        # "Brisbane Qld Australia": no commas. Peel a trailing country, then states.
+        words = parts[0].split()
+        for n in (3, 2, 1):
+            if len(words) > n - 1 and " ".join(words[-n:]).lower() in COUNTRY:
+                country = COUNTRY[" ".join(words[-n:]).lower()]
+                words = words[:-n]
+                break
+        while words and words[-1].lower().strip(".") in STATE_TOKENS:
+            words = words[:-1]
+        parts = [" ".join(words)] if words else []
+    elif parts and parts[-1].lower() in COUNTRY:
+        country = COUNTRY[parts[-1].lower()]
+        parts = parts[:-1]
+    town = ""
+    for x in parts:
+        if re.search(r"\d|\?", x) or NOT_A_TOWN.search(x) or x.lower() in STATE_TOKENS \
+                or x.lower() in COUNTRY:
+            continue
+        town = _tidy_case(x)
+        break
+    return ", ".join(x for x in (town, country) if x)
+
+
 def gen_of(ahn):
     g = 0
     while ahn >= 2 ** (g + 1):
@@ -112,29 +229,74 @@ def ancestors(people, families, start):
     return by_ahn
 
 
+def alive(pid, people):
+    return pid in people and is_living(people[pid])
+
+
+def kept_child(c, people):
+    """A child is listed on a parent's marriage when somebody can follow the link.
+
+    The dead are listed as they always were. A living child is listed only if
+    this archive gives them a page of their own (they are in SCOPE), because a
+    child's id is the one thing in that list a reader's page can resolve, and an
+    id with no page behind it is a living person's identifier published for
+    nothing. A living child with no page still appears by NAME wherever a list of
+    names is drawn (a sibling list, a household); this is only the link list."""
+    if c not in people:
+        return False
+    return (not is_living(people[c])) or c in SCOPE
+
+
 def spouses(people, families, pid):
     out = []
+    me_alive = alive(pid, people)
     for fid in people[pid]["fams"]:
         f = families.get(fid)
         if not f:
             continue
         other = f["wife"] if f["husb"] == pid else f["husb"]
-        m = next((e for e in f["events"] if e["kind"] == "marriage"), {})
-        d = next((e for e in f["events"] if e["kind"] == "divorce"), {})
-        alive = bool(other in people and is_living(people[other]))
-        out.append({
-            # A living spouse is named, and nothing else about them is.
+        other_alive = alive(other, people)
+        if other_alive:
+            APPEARS.add(other)
+        # A marriage is a date about BOTH of its people. If either is living the
+        # date, the place and any divorce are a fact about a living person, and
+        # are not published.
+        hidden = me_alive or other_alive
+        m = {} if hidden else next((e for e in f["events"] if e["kind"] == "marriage"), {})
+        d = {} if hidden else next((e for e in f["events"] if e["kind"] == "divorce"), {})
+        rec = {
+            # A living spouse is NAMED. They are linked only if they have a page.
             "name": display(people[other]) if other in people else "",
-            "id": "" if alive else other,
-            "living": alive,
-            "married": "" if alive else m.get("date", ""),
-            "marriedPlace": "" if alive else m.get("place", ""),
-            "divorced": "" if alive else d.get("date", ""),
-            # children who are themselves living are dropped from the list
-            "children": [c for c in f["chil"]
-                         if c in people and not is_living(people[c])],
-        })
+            "id": other if (not other_alive or other in SCOPE) else "",
+            "living": other_alive,
+            "married": m.get("date", ""),
+            "marriedPlace": m.get("place", ""),
+            "divorced": d.get("date", ""),
+            "children": [_note(c, people) for c in f["chil"] if kept_child(c, people)],
+        }
+        if other_alive:
+            rec["place"] = town_country(born(people[other]).get("place", ""))
+        out.append(rec)
     return out
+
+
+def _note(pid, people):
+    if alive(pid, people):
+        APPEARS.add(pid)
+    return pid
+
+
+def parent_names(people, pid):
+    return [display(people[_note(x, people)]) for x in people[pid]["parents"] if x in people]
+
+
+def sibling_names(people, families, pid):
+    return sorted({
+        display(people[_note(c, people)])
+        for fid in people[pid].get("famc", [])
+        for c in families.get(fid, {}).get("chil", [])
+        if c != pid and c in people
+    })
 
 
 def occupation(p):
@@ -162,48 +324,102 @@ def person_json(people, families, pid, ahn=None):
         "life": lifespan(p),
         "spouses": [s for s in spouses(people, families, pid)],
         # A living parent is named, and nothing else about them is.
-        "parents": [display(people[x]) for x in p["parents"] if x in people],
-        # Brothers and sisters, which were never emitted: the other children of
-        # whichever family this person is a child of. Mechanical — the GEDCOM
-        # carries 4,777 families and 11,630 child links — and the reason the
-        # blood chart could show ancestors and no aunts or uncles at all.
-        #
-        # The living are excluded outright rather than named, because that is
-        # this archive's own rule and the strictest in the estate. The five
-        # living people it does name sit in living.json with a reason and a
-        # confirmation date each; a sibling list is not the place to add to it.
-        "siblings": sorted({
-            display(people[c])
-            for fid in p.get("famc", [])
-            for c in families.get(fid, {}).get("chil", [])
-            if c != pid and c in people and not is_living(people[c])
-        }),
+        "parents": parent_names(people, pid),
+        # Brothers and sisters: the other children of whichever family this
+        # person is a child of. Mechanical — the GEDCOM carries 4,777 families
+        # and 11,630 child links — and the reason the blood chart can show
+        # ancestors and aunts and uncles.
+        # A living brother or sister is NAMED here, as the standard says, and
+        # nothing else about them is: this is a list of names.
+        "siblings": sibling_names(people, families, pid),
         "sources": p["sources"][:6],
         "notes": p["notes"],
-        "living": is_living(p),
+        "living": False,
     }
 
 
-def redact(rec):
-    """A living person is reduced to their name and no more.
+def living_json(people, families, pid, ahn=None):
+    """A living person: a name, a relationship, a town and a country. Nothing else.
 
-    This archive used to withhold the name as well, which left fifty relatives
-    on the published tree as an em dash and made it the only one of the seven
-    where a living reader could not find their own family. The estate rule is
-    Falco's — name them, nothing more — and this is now that.
+    BUILT FROM THOSE AND NOTHING MORE. This does not call person_json() and blank
+    the result; it never reads a date, an event, a note, a source, an occupation,
+    a cause, a burial or an alternative name. The one event it touches is the
+    place of birth, and only to reduce it to a town and a country (town_country).
+    Relationships are names, plus an id where the relative has a page here.
 
-    Nothing else survives: no date, no place, no note, no occupation, no cause,
-    no burial, no marriage. checkliving.py --policy named-bare checks the built
-    HTML for exactly that, independently of this function.
+    The empty strings are not leftovers: the pages and the kit's components read
+    these keys on every record, and a missing key is an error in one of them
+    and a "undefined" on the page in another. tools/check_living.py reads the
+    keys of every living record against LIVING_KEYS and refuses any other.
     """
+    p = people[pid]
+    APPEARS.add(pid)
     return {
-        "id": rec["id"], "name": rec.get("name") or "—", "surname": rec["surname"],
-        "living": True, "gen": rec.get("gen"), "ahn": rec.get("ahn"),
+        "id": pid, "mh": "",
+        "name": display(p) or "\u2014", "surname": p["surname"], "sex": p["sex"],
+        "ahn": ahn, "gen": gen_of(ahn) if ahn else None,
         "born": "", "bornPlace": "", "died": "", "diedPlace": "",
-        "life": "", "occupation": "", "spouses": [], "parents": [],
-        "sources": [], "notes": [], "cause": "", "burial": "", "mh": "",
-        "sex": rec.get("sex", ""),
+        "cause": "", "burial": "", "occupation": "", "life": "",
+        "place": town_country(born(p).get("place", "")),
+        "spouses": spouses(people, families, pid),
+        "parents": parent_names(people, pid),
+        "siblings": sibling_names(people, families, pid),
+        "sources": [], "notes": [],
+        "living": True,
     }
+
+
+# The keys a living record may carry, and no others. Mirrored in
+# tools/check_living.py, which checks the committed data against it.
+LIVING_KEYS = {
+    "id", "mh", "name", "surname", "sex", "ahn", "gen", "born", "bornPlace", "died",
+    "diedPlace", "cause", "burial", "occupation", "life", "place", "spouses",
+    "parents", "siblings", "sources", "notes", "living",
+}
+
+
+def record(people, families, pid, ahn=None):
+    """The one door. Whoever is living goes through living_json and never
+    through person_json, so a field added to person_json later cannot reach one."""
+    if is_living(people[pid]):
+        return living_json(people, families, pid, ahn)
+    return person_json(people, families, pid, ahn)
+
+
+def write_counts(people, anc, fam_out):
+    """Measure what this run published of the living, and write the numbers —
+    only numbers — into living.json, where the pages read them. A page that
+    typed these figures would drift the first time the tree moved."""
+    pages = {r["id"] for r in anc if r["living"]}
+    for f in fam_out:
+        pages |= {m["id"] for m in f["members"] if m["living"]}
+    recs = [r for r in anc if r["living"]] + \
+           [m for f in fam_out for m in f["members"] if m["living"]]
+    seen, uniq = set(), []
+    for r in recs:
+        if r["id"] not in seen:
+            seen.add(r["id"]); uniq.append(r)
+    countries = set(COUNTRY.values())
+    town = sum(1 for r in uniq if r["place"] and r["place"] not in countries)
+    country_only = sum(1 for r in uniq if r["place"] and r["place"] in countries)
+    pub = {
+        "withPage": len(pages),
+        "namedOnly": len(APPEARS - pages),
+        "named": len(APPEARS),
+        "withTown": town,
+        "countryOnly": country_only,
+        "noPlace": len(uniq) - town - country_only,
+        "onDirectLine": sum(1 for r in anc if r["living"]),
+    }
+    path = os.path.join(OUT, "living.json")
+    decl = json.load(open(path, encoding="utf-8"))
+    decl["published"] = pub
+    decl["publishedNote"] = ("Written by tools/build_site_data.py on every build: how many "
+                             "living people this run put into the data, counted not typed. "
+                             "withPage have a page; namedOnly appear only by name, as a spouse, "
+                             "brother, sister or parent. Numbers only, never a name.")
+    json.dump(decl, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return pub
 
 
 def main():
@@ -212,20 +428,24 @@ def main():
     LIVING = classify_living(people, families)
     os.makedirs(OUT, exist_ok=True)
     by_ahn = ancestors(people, families, CRISTINA)
+    APPEARS.clear()
+    SCOPE.clear()
+    SCOPE.update(by_ahn.values())
+    for sn, _ in FAMILIES:
+        SCOPE.update(p["id"] for p in people.values()
+                     if p["surname"].lower() == sn.lower())
 
-    # ---- every ancestor, living redacted -------------------------------
+    # ---- every ancestor; the living through living_json -----------------
     anc = []
     for ahn, pid in sorted(by_ahn.items()):
-        rec = person_json(people, families, pid, ahn)
-        anc.append(redact(rec) if rec["living"] else rec)
+        anc.append(record(people, families, pid, ahn))
     json.dump(anc, open(os.path.join(OUT, "ancestors.json"), "w"),
               ensure_ascii=False, indent=1)
 
     # ---- the male D'Arcy spine ------------------------------------------
     spine, ahn = [], 1
     while ahn in by_ahn:
-        rec = person_json(people, families, by_ahn[ahn], ahn)
-        spine.append(redact(rec) if rec["living"] else rec)
+        spine.append(record(people, families, by_ahn[ahn], ahn))
         ahn *= 2
     json.dump(spine, open(os.path.join(OUT, "line.json"), "w"),
               ensure_ascii=False, indent=1)
@@ -237,12 +457,14 @@ def main():
         members.sort(key=lambda p: year(born(p).get("date", "")) or 9999)
         recs = []
         for m in members:
-            r = person_json(people, families, m["id"])
-            recs.append(redact(r) if r["living"] else r)
+            recs.append(record(people, families, m["id"]))
         fam_out.append({
             "surname": sn, "blurb": blurb,
             "total": len(recs),
-            "published": sum(1 for r in recs if not r["living"]),
+            # Everyone of the name now has a place here, the living by name,
+            # town and country. `living` says how many of them.
+            "published": len(recs),
+            "living": sum(1 for r in recs if r["living"]),
             "members": recs,
         })
     json.dump(fam_out, open(os.path.join(OUT, "families.json"), "w"),
@@ -278,12 +500,14 @@ def main():
               ensure_ascii=False, indent=1)
     places = agg
 
+    write_counts(people, anc, fam_out)
+
     living = sum(1 for r in anc if r["living"])
-    print(f"ancestors.json  {len(anc)} ({living} living, redacted)")
+    print(f"ancestors.json  {len(anc)} ({living} living: name, relationships, town and country)")
     print(f"line.json       {len(spine)} generations")
     print(f"families.json   {len(fam_out)} surnames, "
           f"{sum(f['total'] for f in fam_out)} people, "
-          f"{sum(f['total']-f['published'] for f in fam_out)} redacted")
+          f"{sum(f['living'] for f in fam_out)} living")
     print(f"places.json     {len(places)} places")
 
 

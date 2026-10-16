@@ -10,8 +10,13 @@ carries and none of them visible anywhere:
                 on this site that shows the family moving across the map
   graves      — every burial place recorded, and the ones worth doubting
 
-Living people are excluded, because they are excluded from the build entirely.
-Writes households.json, marriages.json and graves.json.
+A living person is a name, a relationship, a town and a country and nothing more
+(David's ruling, 16 October 2026). So a living spouse and a living child are
+NAMED in a household, and a marriage with a living partner has no row in the
+marriages list, because a marriage is a date about both of the people in it.
+Households are built from the dead, so a household of two living people is not
+drawn. Graves are the dead. Writes households.json, marriages.json and
+graves.json.
 """
 import json, os, re, collections, unicodedata
 
@@ -28,15 +33,18 @@ def kebab(s):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 
-def load_people():
-    """The published set, in site/src/lib/people.js's own terms."""
+def load_people(living=False):
+    """The people with a page, in site/src/lib/people.js's own terms and in its
+    own order (numbered ancestors first, then the family clusters). By default
+    the dead only; living=True is the living only, whose slugs people.js assigns
+    after the dead's."""
     by_id = {}
     for r in json.load(open(os.path.join(D, "ancestors.json"), encoding="utf-8")):
-        if not r.get("living"):
+        if bool(r.get("living")) == living:
             by_id.setdefault(r["id"], {}).update(r)
     for f in json.load(open(os.path.join(D, "families.json"), encoding="utf-8")):
         for r in f["members"]:
-            if not r.get("living"):
+            if bool(r.get("living")) == living:
                 by_id.setdefault(r["id"], {}).update(r)
     return by_id
 
@@ -72,19 +80,35 @@ def main():
         used.add(s)
         slug[r["id"]] = s
 
-    name = lambda i: people[i]["name"] if i in people else ""
+    # The living with a page. people.js slugs them after the dead, from what is
+    # left: the bare name, then name-living, then a number.
+    alive = load_people(living=True)
+    for r in alive.values():
+        base = kebab(r["name"]) or "unnamed"
+        s = base
+        if s in used:
+            s = f"{base}-living"
+        while s in used:
+            s += "-2"
+        used.add(s)
+        slug[r["id"]] = s
+    everyone = {**people, **alive}
+
+    name = lambda i: everyone[i]["name"] if i in everyone else ""
 
     # ── households ─────────────────────────────────────────────────────────
     households, marriages = [], []
     seen = set()
     for r in people.values():
         for sp in (r.get("spouses") or []):
-            if sp.get("living") or not sp.get("name"):
+            if not sp.get("name"):
                 continue
             pair = tuple(sorted([r["id"], sp.get("id") or sp["name"]]))
-            kids = [k for k in (sp.get("children") or []) if k in people]
+            kids = [k for k in (sp.get("children") or []) if k in everyone]
 
-            if sp.get("married"):
+            # A marriage is a date about both of its people: no row when either
+            # is living. (build_site_data blanks the date too.)
+            if sp.get("married") and not sp.get("living"):
                 marriages.append({
                     "date": sp["married"], "sort": sortable(sp["married"]),
                     "place": sp.get("marriedPlace") or "",
@@ -103,7 +127,7 @@ def main():
                 "married": sp.get("married") or "", "place": sp.get("marriedPlace") or "",
                 "sort": sortable(sp.get("married") or r.get("born")),
                 "kids": [{"name": name(k), "slug": slug.get(k, ""),
-                          "life": people[k].get("life") or ""} for k in kids],
+                          "life": everyone[k].get("life") or ""} for k in kids],
             })
 
     households.sort(key=lambda h: h["sort"])

@@ -37,6 +37,15 @@ PUB  = os.path.join(ROOT, "site", "public")
 SKIP_PREFIX = ("/people", "/families", "/places", "/register", "/who",
                "/households", "/marriages", "/graves", "/search")
 
+# A page that says <meta name="robots" content="noindex"> is a living person's
+# (David's ruling of 16 October 2026: a living person is named, with their town
+# and country, and nothing more; their page is noindex). Such a person is not
+# gathered here: no mentions are collected about them, and their name does not
+# go into whoindex.json, which wholink.js uses to turn a name in prose into a
+# link. A living person is named where a relative's page names them; this
+# archive does not go looking for more of them.
+NOINDEX = re.compile(r'<meta[^>]*name=["\']robots["\'][^>]*noindex', re.I)
+
 TAGS = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
 STRIP = re.compile(r"<[^>]+>")
 WS = re.compile(r"\s+")
@@ -68,6 +77,8 @@ def main():
         for slug in sorted(os.listdir(pdir)) if os.path.isdir(pdir) else []:
             f = os.path.join(pdir, slug, "index.html")
             if not os.path.isfile(f):
+                continue
+            if NOINDEX.search(open(f, encoding="utf-8", errors="ignore").read()):
                 continue
             name, _ = text_of(f)
             # a bare surname or a single word matches far too much
