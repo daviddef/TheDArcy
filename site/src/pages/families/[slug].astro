@@ -25,6 +25,7 @@ import { u } from "../../lib/url.js";
 import famData from "../../data/families.json";
 import ancestorRows from "../../data/ancestors.json";
 import { people } from "../../lib/people.js";
+import { CORRECTIONS, lifeOf, yearOf } from "../../lib/corrections.js";
 
 export function getStaticPaths() {
   const slug = (s) =>
@@ -49,10 +50,14 @@ const named = (x) => (typeof x === "string" ? x : (x && x.name) || "");
 const nameCards = (xs) => (xs || [])
   .filter((x) => named(x))
   .map((x) => (typeof x === "string" ? { name: x } : {
-    name: x.name, dates: x.life || "",
+    name: x.name,
+    /* through the corrections, like every other page that prints a lifespan */
+    dates: lifeOf({ slug: x.id ? SLUG_BY_ID.get(x.id) : "", life: x.life || "" }),
     href: x.id && SLUG_BY_ID.get(x.id) ? `/people/${SLUG_BY_ID.get(x.id)}/` : undefined }));
 
 const yr = (x) => (String(x || "").match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1];
+/* the corrected year where the archive has overturned the tree for this field, else the tree's own value untouched */
+const cy = (slug, field, raw) => (slug && CORRECTIONS[slug] && CORRECTIONS[slug][field] ? yearOf(slug, field, raw) : (raw || ""));
 
 /* A LIVING PERSON IS A NAME, A RELATIONSHIP, A TOWN AND A COUNTRY. The first
    version of this page published forty-four of them under the rule that then
@@ -87,9 +92,13 @@ const rows = (fam.members || [])
       name: p.name,
       href: slug ? `/people/${slug}/` : "",
       living: alive,
-      era: alive ? undefined : ([yr(p.born), yr(p.died)].filter(Boolean).join(" → ") || undefined),
-      born: alive ? "" : (p.born || ""),
-      died: alive ? "" : (p.died || ""),
+      /* THE YEARS COME THROUGH THE CORRECTIONS (lib/corrections.js). This page built each card from the
+         tree's raw born and died, so it printed «b. 1769 d. 20 sep 1856» for a man the archive had found
+         baptised in 1781 and buried in 1855. Where a field is corrected the card shows the corrected YEAR;
+         everywhere else it shows what the tree says, exactly as before. */
+      era: alive ? undefined : ([cy(slug, "born", p.born), cy(slug, "died", p.died)].map(yr).filter(Boolean).join(" → ") || undefined),
+      born: alive ? "" : cy(slug, "born", p.born),
+      died: alive ? "" : cy(slug, "died", p.died),
       trade: alive ? "" : (p.occupation || ""),
       place: alive ? (p.place || "") : (p.bornPlace || p.diedPlace || ""),
       married: alive || (sp && sp.living) ? "" : ((sp && sp.married) || (unnamedMarriage && spRaw.married) || ""),

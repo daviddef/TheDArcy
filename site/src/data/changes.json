@@ -38,6 +38,18 @@
           [
             "Fixed",
             "a table on the Sneyd page measured Elizabeth Oliver's census age against the tree's wrong birth date and said it was eight years out. Against the tree it was nine, against her real baptism it is four, and both censuses overshoot the register by three to four years, which is now said and left unexplained"
+          ],
+          [
+            "Fixed",
+            "Samuel Sneyd was baptised in 1781 and buried in 1855, not born in 1769 and dead in 1856, and John Saniger was buried in January 1825, ten months after the death date the tree gives. Both had been found in registers and written on a research page, and neither had reached the corrections map"
+          ],
+          [
+            "Fixed",
+            "the home page's descent, the ladder of fifteen ancestors, linked to none of them. Its code looked for a slug that no row carries, so every card had an empty link, and the same cards also printed the tree's birth year for Robert D'Arcy"
+          ],
+          [
+            "Fixed",
+            "the family pages built each card from the tree's raw dates, bypassing the corrections, so Samuel Sneyd read 1769 to 1856 there"
           ]
         ],
         "did": [
@@ -48,7 +60,10 @@
           "IT WAS SEEN TO FAIL, NINE WAYS AND THEN SOME. In a throwaway repository with an invented name and the impossible year 1899: a year in a page, a component, a letter, a DNA result, an untracked file, an empty feed and a stale allowance each refused, and a clean copy and a reasoned allowance each passed. In the real repository: NOT RUN locally stops the build, NOT RUN in CI is labelled and continues, --require-tree fails even there, an empty feed refuses, and a new unclassified data file fails.",
           "ONE MISTAKE OF MINE, CAUGHT BY TWO ANSWERS DISAGREEING. A call to the kit's Python interface returned no failures while the command line returned two. The interface REPLACES the default set of files where the command line ADDS to it, so my call had read none of the pages or notes. The command line is what the build runs, so the build was never wrong; the first counts I took for this record were. They were retaken.",
           "RESOLVED THE SAME DAY. The gate was left failing so the leak could not be forgotten, which is what it was for. Once David approved fixing it, the change was made narrowly: the detail attached to the living person's name was removed in the two places the gate flagged, a count of exactly two was checked before anything was written, and nothing else in the section or the file changed. The gate then passed with the one reasoned allowance it already had, with none added for this. The paragraph above that says the local build stops at the gate describes the state between the finding and the fix.",
-          "THE SAME FAULT, THE FIFTH AND SIXTH TIME. The corrections map is where the archive records that its own research overturned the family tree. It was written down for Elizabeth Oliver and James Wakefield yesterday, but Samuel Charles Sneyd's baptism had been found weeks earlier and recorded as a note on a research page without ever reaching the map, so only the pages that read the map were right. The checks that exist compare a lifespan printed beside a person's link with that person's own page. They cannot see a sentence, so a birth year typed into prose slipped past all of them. The fix here is the four strings that were wrong; what it shows is that the prose case needs a check of its own."
+          "THE SAME FAULT, THE FIFTH AND SIXTH TIME. The corrections map is where the archive records that its own research overturned the family tree. It was written down for Elizabeth Oliver and James Wakefield yesterday, but Samuel Charles Sneyd's baptism had been found weeks earlier and recorded as a note on a research page without ever reaching the map, so only the pages that read the map were right. The checks that exist compare a lifespan printed beside a person's link with that person's own page. They cannot see a sentence, so a birth year typed into prose slipped past all of them. The fix here is the four strings that were wrong; what it shows is that the prose case needs a check of its own.",
+          "THE GATE THAT COULD NOT SEE A SENTENCE NOW CAN. The lifespan check compared years printed beside a link, so a birth year typed into prose was invisible to it. It has two more clauses. The first looks, for each person whose year the archive has overturned, for the tree's value near their name anywhere in the text of any page, and excuses a sentence that quotes it as the tree's claim or states the old and corrected values together. The second goes to the cause: a research page that says 'the tree says X' for a person who is not in the corrections map. That is how four of today's six stale years arose, and it would have caught each one on the day the note was written.",
+          "IT WAS WRONG THE FIRST TIME, AND THE TEST THAT SAID SO IS THE POINT. Planting a stale lifespan beside a name should have failed the gate and did not. The excuse for 'the corrected value is stated beside it' counted every year of the corrected lifespan, so a stale 1810 to 1885 was excused by the 1885 inside it, a year the archive never changed. Fixing that, and only that, immediately turned up two real faults the bug had been hiding: the home page's birth year for Robert D'Arcy, and a table column that quoted the tree without saying so. Ten planted cases now behave as intended, four that must fail, four that must pass and two on the cause clause.",
+          "WHY THIS KEEPS HAPPENING AND WHAT WOULD END IT. Seven separate pages each build a person's dates for themselves, and a correction only reaches the ones that remember to ask the map. The structural fix would be one function that every page calls to print a person's years, so that forgetting is impossible. That is a larger change to how the pages are built and has not been made; the gate is the net under it until it is."
         ]
       },
       {

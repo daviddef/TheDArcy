@@ -15,6 +15,7 @@ import famData from "../data/families.json";
 import ancestorRows from "../data/ancestors.json";
 import { nOwn, nInherited } from "../lib/errors.js";
 import { people, nCharts, nSolid } from "../lib/people.js";
+import { CORRECTIONS, lifeOf, yearOf } from "../lib/corrections.js";
 import ancestors from "../data/ancestors.json";
 import families from "../data/families.json";
 import places from "../data/places.json";
@@ -180,24 +181,34 @@ for (const a of ancestorRows) KIN_BY_ID.set(a.id, a);
 for (const f of famData) for (const m of (f.members || [])) if (!KIN_BY_ID.has(m.id)) KIN_BY_ID.set(m.id, m);
 const nameCards = (xs) => (xs || []).map((x) =>
   typeof x === "string" ? { name: x } : {
-    name: x.name, dates: x.life || "",
+    name: x.name,
+    dates: lifeOf({ slug: x.id ? SLUG_BY_ID.get(x.id) : "", life: x.life || "" }),   // through the corrections
     /* A sibling carries the id of the page they have: the card is a link to it
        (a name with no page behind it is not allowed). The id, not the name, is
        the join, so a namesake is never taken for the sibling. */
     href: x.id && SLUG_BY_ID.get(x.id) ? `/people/${SLUG_BY_ID.get(x.id)}/` : undefined });
 
-const spineRows = [...line].reverse().map((g) => {
+/* the corrected year where the archive has overturned the tree for this field, else the tree's own value untouched */
+const cy = (slug, field, raw) => (slug && CORRECTIONS[slug] && CORRECTIONS[slug][field] ? yearOf(slug, field, raw) : (raw || ""));
+const spineRows = [...line].reverse().map((g0) => {
+  /* line.json rows carry NO slug, so this page's «g.slug ? link : ""» gave every one of the fifteen descent cards an
+     empty link: none of them led to the person it names. The page for a tree id is found through the id, as every
+     other page here does, and that same slug is what the corrections are keyed by. */
+  const g = { ...g0, slug: g0.slug || SLUG_BY_ID.get(g0.id) };
   const c = CONF.confidence[g.id];
   const sp = (g.spouses || [])[0];
   const herRec = sp && sp.id ? KIN_BY_ID.get(sp.id) : null;
   return {
     gen: g.gen ?? g.ahn,
-    era: [g.born, g.died].filter(Boolean).map((x) => String(x).match(/\b(1[5-9]\d\d|20\d\d)\b/)).filter(Boolean).map((m) => m[1]).join(" \u2192 ") || undefined,
+    /* THROUGH THE CORRECTIONS (lib/corrections.js). The home page printed «b. 1751» for the man the map says was
+       born by 1758, because this card was built from the tree's raw born and died. Where the archive has
+       overturned a field the card shows the corrected year; elsewhere it shows the tree's, as before. */
+    era: [cy(g.slug, "born", g.born), cy(g.slug, "died", g.died)].filter(Boolean).map((x) => String(x).match(/\b(1[5-9]\d\d|20\d\d)\b/)).filter(Boolean).map((m) => m[1]).join(" \u2192 ") || undefined,
     name: g.name,
     href: g.slug ? `/people/${g.slug}/` : "",
     living: !!g.living,
-    born: g.born || "",
-    died: g.died || "",
+    born: cy(g.slug, "born", g.born),
+    died: cy(g.slug, "died", g.died),
     trade: g.occupation || "",
     place: g.bornPlace || g.diedPlace || "",
     married: (sp && sp.married) || "",
