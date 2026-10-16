@@ -3,7 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Note from "../../components/Note.astro";
 import Scroll from "../../components/Scroll.astro";
 import { u } from "../../lib/url.js";
-import { nameIfPublishable } from "../../lib/people.js";
+import { nameIfPublishable, lifeLine, isLiving } from "../../lib/people.js";
 import { people, byId } from "../../lib/people.js";
 import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
@@ -18,6 +18,21 @@ export async function getStaticPaths() {
   return people.map((p) => ({ params: { slug: p.slug }, props: { person: p } }));
 }
 const { person: p } = Astro.props;
+
+/* A LIVING PERSON'S PAGE IS A NAME, A RELATIONSHIP, A TOWN AND A COUNTRY, AND
+   NOTHING ELSE (David's ruling, 16 October 2026; see src/lib/people.js).
+   The data behind it holds nothing more — tools/build_site_data.py builds them
+   from those four things and no others — so this page cannot print what it was
+   never given. What it still has to decide is what to SAY: «born», «died»,
+   «buried», a grade of evidence, a list of sources and a note from the family
+   would each be a claim about somebody who is alive, so none of them is drawn
+   for them. The page is noindex, which takes it out of the sitemap and the
+   search index; Base omits its structured data too. */
+const alive = isLiving(p);
+/* What stands beside a relative's name in a list. On a living person's page no
+   relative carries a year (see PersonTree); a living relative carries their
+   town and country wherever they appear. */
+const shownLife = (o) => (alive && !isLiving(o) ? "" : lifeLine(o));
 
 /* The whole record, not a three-field summary: the pedigree chart needs born
    and died separately so it can apply a correction to one without losing the
@@ -42,11 +57,11 @@ const wed = (p.spouses || [])
 /* Others carrying exactly this name. They are different people, kept apart on
    purpose: this family reuses forenames relentlessly and merging on a name is
    how one man becomes two, or two become one. */
-const sameName = people.filter((o) => o.name === p.name && o.slug !== p.slug);
+const sameName = alive ? [] : people.filter((o) => !isLiving(o) && o.name === p.name && o.slug !== p.slug);
 
 const me = prov[p.slug] || { rel: {}, graft: null, line: false };
 const recCount = Object.keys(me.rel || {}).length;
-const g = grade(p.slug);
+const g = alive ? null : grade(p.slug);
 
 const parents = people.filter((o) =>
   (o.spouses || []).some((s) => (s.children || []).includes(p.id)));
@@ -109,7 +124,7 @@ const APPEARS_IN = {
   "william-murdoch": [["/murdoch", "The Murdochs"]],
   "martha-blum": [["/sneyd", "Muttaburra, 1891"]],
 };
-const appears = APPEARS_IN[p.slug] || [];
+const appears = alive ? [] : (APPEARS_IN[p.slug] || []);
 
 /* Dates this archive has since checked against the Queensland civil register.
    A tree date that turns out to be right is a finding too, and saying which
@@ -130,7 +145,7 @@ const VERIFIED = {
   "gladys-beryl-sneyd":         ["died", "1897/C/1623", "naming her parents as Thomas George Sneyd and Annie Spalding"],
   "beryl-marie-sneyd":          ["died", "1905/C/3798", "naming her parents as Arthur Sneyd and Martha Blume"],
 };
-const verified = VERIFIED[p.slug];
+const verified = alive ? null : VERIFIED[p.slug];
 
 /* One photograph, so far. */
 const PORTRAITS = {
@@ -141,16 +156,16 @@ const PORTRAITS = {
     note: "As far as this archive knows, the only photograph of anyone in his generation of the family.",
   },
 };
-const portrait = PORTRAITS[p.slug];
+const portrait = alive ? null : PORTRAITS[p.slug];
 
 /* The records this archive has read that name this person. They live in
    register.json as `record` rows keyed by NAME, and until 17 September 2026
    nothing carried them here: build_dossiers.py drops every record row whose
    name the tree also carries, on the assumption that the tree page shows it,
    and the tree page had never read them. See tools/build_person_records.py. */
-const rec = personRecords[p.slug] || null;
+const rec = alive ? null : (personRecords[p.slug] || null);
 
-const corr = CORRECTIONS[p.slug] || {};
+const corr = alive ? {} : (CORRECTIONS[p.slug] || {});
 const val = (k, fallback) => (corr[k] ? corr[k][0] : fallback);
 
 const facts = [
@@ -166,7 +181,7 @@ const corrections = Object.entries(corr);
    move with it, or the top of the page contradicts the table below it. */
 const yr = (v) => (String(v || "").match(/\d{4}/) || [""])[0];
 const bY = yr(val("born", p.born)), dY = yr(val("died", p.died));
-const life = (bY || dY) ? `${bY || "?"}–${dY || ""}`.replace(/–$/, "") : (p.life || "dates unknown");
+const life = alive ? "treated as living" : (bY || dY) ? `${bY || "?"}–${dY || ""}`.replace(/–$/, "") : (p.life || "dates unknown");
 
 /* Notes come out of MyHeritage as broken HTML. Not merely tagged — *truncated*:
    opening tags are cut off mid-attribute, leaving orphaned CSS tails with no "<"
@@ -219,13 +234,14 @@ const _placeRaw = String(val("bornPlace", p.bornPlace) || "");
 const _vague = /^\s*\(about\)/i.test(_placeRaw);
 const _place = tidy(_placeRaw.replace(/^\s*\(about\)\s*/i, ""));
 const _spouse = (p.spouses || []).find((s) => nameIfPublishable(s));
-const dek =
-  tidy(val("occupation", p.occupation)) ||
+const dek = alive
+  ? "Treated as living, and so named here with their town and country and nothing more."
+  : tidy(val("occupation", p.occupation)) ||
   (_place ? `${_vague ? "Probably of" : "Of"} ${_place}.` : "") ||
   (_spouse ? `Married ${tidy(_spouse.name)}.` : "") ||
   "On the family tree, with no occupation, birthplace or marriage recorded here.";
 
-const notes = (p.notes || [])
+const notes = alive ? [] : (p.notes || [])
   .map((n) => ({ text: clean(n), damaged: isDamaged(n) }))
   .filter((n) => n.text.length > 20);
 const anyDamaged = notes.some((n) => n.damaged);
@@ -236,8 +252,9 @@ const anyDamaged = notes.some((n) => n.damaged);
     the lifespan and the chip carries the grade, so neither is repeated.
     A LIVING SPOUSE IS NEVER NAMED, which is why the spouse step filters on it;
     two people here have only living spouses and fall through to the last line. */}
-<Base title={p.name} eyebrow={life} dek={dek}>
+<Base title={p.name} eyebrow={life} dek={dek} livingPage={alive}>
 
+  {!alive && (
   <section class="blk" style="padding-top:0">
     <p class="small" style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
       <Evidence level={g.level}>{g.label ?? undefined}</Evidence>
@@ -247,6 +264,7 @@ const anyDamaged = notes.some((n) => n.damaged);
           : <a href={u("/method/#ladder")}>How this archive grades a claim &rarr;</a>}</span>
     </p>
   </section>
+  )}
 
   {portrait && (
     <section class="blk">
@@ -261,12 +279,33 @@ const anyDamaged = notes.some((n) => n.damaged);
   )}
 
   <section class="blk">
-    <PersonTree person={p} life={life} parents={parents} spouses={wed} kids={kids} sibs={sibs} />
+    <PersonTree person={p} life={alive ? lifeLine(p) || "living" : life} parents={parents} spouses={wed} kids={kids} sibs={sibs} />
   </section>
 
   <section class="blk">
     <div class="grid two">
       <div>
+        {alive ? (
+          <>
+            <h2 style="margin-top:0">Where</h2>
+            <p>{p.place || "No town or country is recorded for them here."}</p>
+            <p class="small" style="margin-top:.8rem"><span class="chip lore">living</span>{" "}
+              A person the tree gives no reason to think dead is treated as living, and is named
+              here with their town and country and nothing more: no date, no record, no source,
+              no note and no photograph.
+              <a href={u("/method/#living")}> The rule →</a></p>
+            {p.ancestor && (
+              <p style="margin-top:1rem"><span class="chip doc">direct line</span>
+              {p.gen && <span class="small"> · generation {p.gen} counting back from the present day</span>}</p>
+            )}
+            {p.family && (
+              <p class="small" style="margin-top:.8rem">Counted here with the
+                <strong> {p.family}</strong> family ·
+                <a href={u(FAMILY_PAGE[p.family] || "/families")}> that family →</a></p>
+            )}
+          </>
+        ) : (
+          <>
         <h2 style="margin-top:0">The record</h2>
         <Scroll>
           <table>
@@ -309,6 +348,8 @@ const anyDamaged = notes.some((n) => n.damaged);
             <strong> {p.family}</strong> family ·
             <a href={u(FAMILY_PAGE[p.family] || "/families")}> that family →</a></p>
         )}
+          </>
+        )}
       </div>
 
       <div>
@@ -329,6 +370,7 @@ const anyDamaged = notes.some((n) => n.damaged);
               return (
                 <p>
                   {o ? <a href={u(`/people/${o.slug}`)}>{s.name}</a> : s.name}
+                  {s.place && <span class="small"> ({s.place})</span>}
                   {s.married && <span class="small"> · {s.married}</span>}
                   {s.marriedPlace && <span class="small"> at {s.marriedPlace}</span>}
                   {s.divorced && <span class="small"> · divorced {s.divorced}</span>}
@@ -342,7 +384,7 @@ const anyDamaged = notes.some((n) => n.damaged);
             <h3 class="lab" style="margin-top:1rem">Brothers and sisters</h3>
             <p>{sibs.map((o, i) => (
               <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a>
-              {o.life && <span class="small"> ({o.life})</span>}</>
+              {shownLife(o) && <span class="small"> ({shownLife(o)})</span>}</>
             ))}</p>
           </>
         )}
@@ -351,14 +393,14 @@ const anyDamaged = notes.some((n) => n.damaged);
             <h3 class="lab" style="margin-top:1rem">Children</h3>
             <p>{kids.map((o, i) => (
               <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a>
-              {o.life && <span class="small"> ({o.life})</span>}</>
+              {shownLife(o) && <span class="small"> ({shownLife(o)})</span>}</>
             ))}</p>
           </>
         )}
         {parents.length === 0 && kids.length === 0 && sibs.length === 0 &&
           (p.spouses || []).filter((s) => nameIfPublishable(s)).length === 0 && (
-          <p class="small">No living connection is published for this person — either the tree
-          records none, or everyone they connect to is alive and withheld from this build.
+          <p class="small">No relative is published for this person — either the tree records none,
+          or the ones it records have no page of their own here and are not named.
           <a href={u("/method/")}> The rule →</a></p>
         )}
       </div>
@@ -369,7 +411,13 @@ const anyDamaged = notes.some((n) => n.damaged);
     <div class="grid two">
       <div class="card">
         <h3>Where this comes from</h3>
-        {me.graft
+        {alive
+          ? <p class="small">Every relationship drawn above is what the family tree says, and none
+            has been checked against a record by this archive. A living person is not the subject
+            of research here: the archive names them so that the people who are can be placed
+            among their relatives. <a href={u("/method/#living")}>How living people are
+            treated →</a></p>
+          : me.graft
           ? <p class="small"><span class="chip sup">above a graft</span> This person reaches the
             family only through the <strong>{me.graft}</strong> join, which this archive has tested
             and rejected. They are published because the tree carries them and deleting a claim is
@@ -387,8 +435,10 @@ const anyDamaged = notes.some((n) => n.damaged);
                 : <> Nothing else has been found for them either way.</>}
               {" "}<a href={u("/method/")}>How claims are labelled →</a></p>}
 
+        {!alive && (
         <p class="small" style="margin-top:.7rem">
           <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
+        )}
         {p.ancestor && (
           <p class="small" style="margin-top:.5rem">
             <a href={u("/direct-line/")}>See this generation on the spine →</a></p>

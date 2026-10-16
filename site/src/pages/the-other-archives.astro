@@ -51,8 +51,9 @@ const SIBS = [
   <section class="blk">
     <h2>How they join</h2>
     <p class="dek">Three archives meet at one marriage and two children. All four of those people are
-    <strong>living</strong>, and none of these archives publishes living people — so the join is
-    described here and not drawn.</p>
+    <strong>living</strong>. This archive names a living person with their town and country and
+    nothing more, the standard the Defranceschi archive keeps, so the join is described here by
+    relationship and not drawn out with dates.</p>
 
     <Scroll>
       <table>
@@ -63,16 +64,16 @@ const SIBS = [
           <tr><td><strong>The first join — D'Arcy and Falco</strong></td>
               <td>a marriage in the parents' generation. <strong>Two-fifths of this archive's
               deepest Australian line meets an Italian one out of Arienzo, Caserta.</strong>
-              <span class="chip lore">living, withheld</span></td></tr>
+              <span class="chip lore">living, named only</span></td></tr>
           <tr><td><strong>The Falco line</strong></td>
               <td>reaches back through <strong>Arienzo and Santa Maria a Vico in Campania</strong> to
               Agostino Falcone, born about 1740 — <strong>forty ancestors across nine generations,
               and this archive has never written a word about them</strong></td></tr>
           <tr><td><strong>The second join — D'Arcy and Defranceski</strong></td>
               <td>a marriage in the present generation, and the reason the Defranceski and Lerena
-              archives exist alongside this one <span class="chip lore">living, withheld</span></td></tr>
+              archives exist alongside this one <span class="chip lore">living, named only</span></td></tr>
           <tr><td><strong>What comes after</strong></td>
-              <td>two children in whom all three lines meet — <span class="chip lore">living, withheld</span></td></tr>
+              <td>two children in whom all three lines meet — <span class="chip lore">living, named only</span></td></tr>
         </tbody>
       </table>
     </Scroll>
@@ -80,18 +81,17 @@ const SIBS = [
     <Note>
       <strong>This is the rule doing its job, not a gap in the research.</strong> The archive knows
       exactly who these people are — it walked their ancestry to build every page on this site. It
-      withholds them because they are alive, and it withholds them <em>consistently</em>: not just
-      their own entries but their names wherever they would appear as somebody's spouse, parent or
-      child. Across the whole tree the rule holds back <strong>{living.counts.living.toLocaleString()}</strong> people.
-      <a href={u("/method/")}>How the rule works, and how to invoke it →</a>
+      shows them as it shows every living person, <em>consistently</em>: a name, a relationship, a
+      town and a country, and no date or record, wherever they appear. The tree judges
+      <strong>{living.counts.living.toLocaleString()}</strong> people living; the rule is the same
+      for all of them. <a href={u("/method/#living")}>How the rule works →</a>
     </Note>
   </section>
 
   <section class="blk" style="border-bottom:0">
     <h2>The six</h2>
     <p class="dek">Each is built the same way and to the same standard: every claim carries its
-    confidence, null results are published as results, and living people are excluded from the build
-    entirely.</p>
+    confidence, and null results are published as results.</p>
     <div class="grid two" style="margin-top:1.2rem">
       {SIBS.map(([name, href, dek, rel]) => (
         <a class="cardlink" href={href}>

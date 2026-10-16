@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Families from "@daviddef/archive-kit/components/Families.astro";
 import { u } from "../lib/url.js";
-import { publishable } from "../lib/people.js";
+import { publishable, countLiving, isLiving } from "../lib/people.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
 
@@ -28,13 +28,15 @@ const groups = [{
       label: f.surname,
       gloss: f.blurb,
       count: f.published,
-      countLabel: "published" + (f.total > f.published
-        ? ` · ${f.total - f.published} living, withheld` : ""),
+      countLabel: "published" + (countLiving(f.members) > 0
+        ? ` · ${countLiving(f.members)} living, named with town and country only` : ""),
       facts: places.length ? [["Recorded in", places.join(" · ")]] : [],
       people: shown.map((m) => {
         const o = byId.get(m.id);
         return { name: m.name, href: o ? `/people/${o.slug}` : null,
-                 life: m.life, place: m.bornPlace ? m.bornPlace.split(",")[0] : null };
+                 life: isLiving(m) ? "" : m.life,
+                 place: isLiving(m) ? (m.place || null)
+                        : (m.bornPlace ? m.bornPlace.split(",")[0] : null) };
       }),
       /* Each family now has a page of its own listing every person of the
          name as a Descent row, so "and N more" points there rather than at

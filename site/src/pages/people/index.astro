@@ -4,14 +4,12 @@ import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import { u } from "../../lib/url.js";
 import FilterTable from "@daviddef/archive-kit/components/FilterTable.astro";
 import { people } from "../../lib/people.js";
-import ancestors from "../../data/ancestors.json";
-import familyData from "../../data/families.json";
+import living from "../../data/living.json";
 
-// Everyone this page could have shown but does not, counted once each.
-const withheld = new Set([
-  ...ancestors.filter((a) => a.living).map((a) => a.id),
-  ...familyData.flatMap((f) => f.members.filter((m) => m.living).map((m) => m.id)),
-]).size;
+// The living are listed by name, with their town and country in the Where
+// column, and nothing else: no years, no trade. Counted once each.
+const nLiving = people.filter((p) => p.living).length;
+const nDead = people.length - nLiving;
 const inLine = people.filter((p) => p.ancestor).length;
 
 const surnames = [...new Set(people.map((p) => p.family).filter(Boolean))].sort();
@@ -42,10 +40,12 @@ const listed = [...people].sort((a, b) => {
     <p class="lede">There are <strong>{people.length}</strong> people here.
     Of those, <strong>{inLine}</strong> are direct ancestors and the rest are their brothers,
     sisters, spouses and cousins — the people a pedigree throws away.</p>
-    <p class="dek" style="margin-top:.9rem">A further <strong>{withheld}</strong> people who would
-    otherwise be listed here are living, and do not appear in this build at all: not hidden, not
-    gated, not present in the output. Across the whole family tree the rule withholds
-    <strong>2,034</strong>. <a href={u("/method/")}>The rule, and how to invoke it →</a></p>
+    <p class="dek" style="margin-top:.9rem"><strong>{nLiving}</strong> of them are living. A living
+    person is named here with their town and country and nothing more &mdash; no years, no trade,
+    no record &mdash; and their page is kept out of search engines. The tree judges
+    <strong>{living.counts.living.toLocaleString()}</strong> people living; only the ones in the
+    families this archive follows have a page, and the rest are named, if at all, as somebody's
+    wife, husband, brother or sister. <a href={u("/method/#living")}>The rule →</a></p>
     <p class="dek" style="margin-top:.9rem">This page is the <em>tree's</em> people. For every named
     individual this archive has met anywhere — including people who are not relatives at all, and
     with the source printed beside each one — see <a href={u("/register/")}>the register</a>.</p>
@@ -53,7 +53,7 @@ const listed = [...people].sort((a, b) => {
     <strong>pedigree chart</strong>, and the border down the left of each card says how that
     relationship is known: solid where a record this archive has read writes it down, dotted where
     only the family tree asserts it, struck through where it hangs above a graft the archive has
-    rejected. <strong>Of the 473 charts, 19 contain a single solid edge.</strong> That is not a
+    rejected. <strong>Of the {nDead} charts for people who have died, 19 contain a single solid edge.</strong> That is not a
     defect in the drawing. <a href={u("/method/")}>How claims are labelled →</a></p>
   </section>
 
@@ -75,9 +75,10 @@ const listed = [...people].sort((a, b) => {
         cells: [
           `<a href="${u(`/people/${p.slug}`)}"><strong>${esc(p.name)}</strong></a>` +
             (p.ancestor ? `<span class="chip doc" style="margin-left:6px">direct line</span>` : ""),
-          esc(p.life || "dates unknown"),
-          esc([p.bornPlace, p.diedPlace].filter(Boolean).map((x) => x.split(",")[0]).join(" \u2192 ")),
-          esc(p.occupation || ""),
+          esc(p.living ? "living" : (p.life || "dates unknown")),
+          esc(p.living ? (p.place || "")
+              : [p.bornPlace, p.diedPlace].filter(Boolean).map((x) => x.split(",")[0]).join(" \u2192 ")),
+          esc(p.living ? "" : (p.occupation || "")),
         ],
       }))} />
   </section>

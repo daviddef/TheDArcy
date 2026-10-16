@@ -27,12 +27,13 @@ import atlas from "../../public/atlas-data.json";
 import living from "../data/living.json";
 
 const published = people.length;
+const nLivingPages = countLiving(people);
 const redacted = countLiving(ancestors);
 const surnames = families.filter((f) => f.published > 0).length;
 
 const NUMBERS = [
   [reg.entries, "entries in the register", `${reg.records} of them from a document this archive has read; the other ${reg.tree} from the family tree`, "/register"],
-  [published, "people published", `and ${living.counts.living.toLocaleString()} living people absent from this build entirely`, "/people"],
+  [published, "people published", `${nLivingPages} of them living, each a name, a town and a country and nothing more`, "/people"],
   [dossiers.counts.ownPage, "people met in records who are not relatives", "witnesses, constables, a surgeon, convicts, comrades — each with a page", "/who"],
   [searched.rows.length, "sources read", `${searched.rows.filter((r) => r.outcome === "null").length} of them read and found empty, which is knowledge`, "/searched"],
   [19, "pedigree charts with a solid edge", "out of 473. A family tree is a set of assertions until somebody opens a document", "/method"],
@@ -83,7 +84,7 @@ const more = [
 ["/places", "Places", `${places.length} places, from Hornby Castle to Boulia. Read the Australian list in order and you can watch a family spread along the Queensland railway.`],
 ["/the-other-archives", "The other archives", "This is one of six, kept to the same method. The D'Arcy line married Defranceski; the Defranceski line had married Falco. All three meet in a living generation that none of the archives publishes."],
 ["/corrections", "What this archive got wrong", `${nOwn} mistakes this site published and then corrected, with the cause of each — and ${nInherited} inherited from the family tree. The largest was building three days of research on a single yes/no tick in a census.`],
-["/method", "Method", "What 'documented' means here, what 'family lore' means, and the rule that keeps living people out of the build entirely."],
+["/method", "Method", "What 'documented' means here, what 'family lore' means, and the rule for living people: a name, a town and a country, and nothing more."],
 ];
 
 /* 22 September 2026. Five of the estate's eight archives showed no line on
@@ -119,11 +120,10 @@ const more = [
    to prevent. All thirteen resolve. */
 const SLUG_BY_ID = new Map(people.map((q) => [q.id, q.slug]));
 
-/* THE LAST TWO ROWS OF THIS SPINE ARE WHERE THE ESTATE JOINS UP, AND THEY
-   WERE DEAD ENDS. Both are living, so people.js excludes them from the
-   build and line.json lists no spouse — which left the surname rule with
-   nothing to work on at exactly the two rows that reach two other
-   archives. Named here because only this archive knows them:
+/* THE LAST TWO ROWS OF THIS SPINE ARE WHERE THE ESTATE JOINS UP. They were
+   dead ends until the doors below were written in by hand: both are living,
+   and the surname rule had nothing to work on at exactly the two rows that
+   reach two other archives. Named here because only this archive knows them:
 
      g2  Ian Kenneth D'Arcy   his wife is Giuseppina Falco, and his two
                               daughters married into Mazza and Defranceschi
@@ -139,14 +139,16 @@ const RING_URL = {
   mazza: "https://mazza.defranceski.com/",
   defranceski: "https://archive.defranceski.com/",
 };
+/* Since 16 October 2026 the living rows carry their spouse BY NAME (the standard
+   names a living spouse), and the kit derives a door from a spouse's surname:
+   Giuseppina Falco opens the Falco archive and Cristina's husband opens the
+   Defranceschi one. The two hand-written doors that did that job are gone, or
+   each would be drawn twice. What stays is what a spouse's surname cannot
+   say: the daughters, who married into Mazza and Defranceschi. */
 const LIVING_DOORS = {
   2: [
-    { label: "The Falco Archive", href: RING_URL.falco, external: true, through: "married" },
     { label: "The Mazza Archive", href: RING_URL.mazza, external: true, through: "Stefanie" },
     { label: "The Defranceschi Archive", href: RING_URL.defranceski, external: true, through: "Cristina" },
-  ],
-  1: [
-    { label: "The Defranceschi Archive", href: RING_URL.defranceski, external: true, through: "married" },
   ],
 };
 
@@ -299,10 +301,11 @@ const familyDoors = famData.map((f) => ({
 
   
   <p class="lede" style="margin-top:14px">
-    It is a public archive with one rule: <b>living people are not published as people</b> — no
-    page, no dates, no birthplace, and no name standing as somebody's spouse, parent or child.
-    {living.named.length} are named, as the sources they are and with their consent recorded.
-    And a second rule,
+    It is a public archive with one rule: <b>a living person is named, with their town and
+    country, and nothing more</b> — no dates, no records, no sources, no photograph; their page,
+    where there is one, is kept out of search engines.
+    {living.named.length} are also named on purpose in the prose, as the sources they are and with
+    their consent recorded. And a second rule,
     which is harder: <b>every claim says how well it is known</b>.
     <span class="chip doc" style="padding:2px 8px;font-size:10px">Documented</span>
     <span class="chip inf" style="padding:2px 8px;font-size:10px">Inferred</span>
@@ -454,12 +457,12 @@ const familyDoors = famData.map((f) => ({
     and what killed <strong>Lindesay Atkinson D'Arcy</strong> at forty-four.
     <a href={u("/open-questions/")}>The queue, in priority order, and the nine letters drafted →</a></p>
     <p class="small" style="margin-top:1.2rem">Of the direct ancestors, <strong>{redacted}</strong> are
-    living and carry no dates, no birthplace and no page here. Across the whole tree the rule
-    withholds {living.counts.living.toLocaleString()} people. <strong>Two of those {redacted} are
-    named</strong> — on <a href={u("/bloodline/")}>the bloodline</a> and
-    <a href={u("/direct-line/")}>the spine</a>, because a line that stops before the present is not a
-    line; both namings are recorded and confirmed.
-    <a href={u("/method/")}>The rule and its six exceptions →</a></p>
+    living. They are on <a href={u("/bloodline/")}>the bloodline</a> and
+    <a href={u("/direct-line/")}>the spine</a> by name, because a line that stops before the present
+    is not a line, and carry no dates and no record. The tree judges
+    {living.counts.living.toLocaleString()} people living in all; <strong>{nLivingPages}</strong> of them
+    have a page here, and the rest are named, if at all, as a spouse, a brother or a sister.
+    <a href={u("/method/#living")}>The rule and the six named on purpose →</a></p>
   </section>
 
 </Base>

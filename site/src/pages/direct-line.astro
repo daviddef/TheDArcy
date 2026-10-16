@@ -22,11 +22,10 @@ import { grade } from "../lib/grade.js";
    to prevent. All thirteen resolve. */
 const SLUG_BY_ID = new Map(people.map((q) => [q.id, q.slug]));
 
-/* THE LAST TWO ROWS OF THIS SPINE ARE WHERE THE ESTATE JOINS UP, AND THEY
-   WERE DEAD ENDS. Both are living, so people.js excludes them from the
-   build and line.json lists no spouse — which left the surname rule with
-   nothing to work on at exactly the two rows that reach two other
-   archives. Named here because only this archive knows them:
+/* THE LAST TWO ROWS OF THIS SPINE ARE WHERE THE ESTATE JOINS UP. They were
+   dead ends until the doors below were written in by hand: both are living,
+   and the surname rule had nothing to work on at exactly the two rows that
+   reach two other archives. Named here because only this archive knows them:
 
      g2  Ian Kenneth D'Arcy   his wife is Giuseppina Falco, and his two
                               daughters married into Mazza and Defranceschi
@@ -42,14 +41,16 @@ const RING_URL = {
   mazza: "https://mazza.defranceski.com/",
   defranceski: "https://archive.defranceski.com/",
 };
+/* Since 16 October 2026 the living rows carry their spouse BY NAME (the standard
+   names a living spouse), and the kit derives a door from a spouse's surname:
+   Giuseppina Falco opens the Falco archive and Cristina's husband opens the
+   Defranceschi one. The two hand-written doors that did that job are gone, or
+   each would be drawn twice. What stays is what a spouse's surname cannot
+   say: the daughters, who married into Mazza and Defranceschi. */
 const LIVING_DOORS = {
   2: [
-    { label: "The Falco Archive", href: RING_URL.falco, external: true, through: "married" },
     { label: "The Mazza Archive", href: RING_URL.mazza, external: true, through: "Stefanie" },
     { label: "The Defranceschi Archive", href: RING_URL.defranceski, external: true, through: "Cristina" },
-  ],
-  1: [
-    { label: "The Defranceschi Archive", href: RING_URL.defranceski, external: true, through: "married" },
   ],
 };
 
@@ -220,8 +221,9 @@ const familyDoors = famData.map((f) => ({
 
     {living > 0 && (
       <p class="small" style="margin-top:.7rem">The last {living === 1 ? "generation is" : living + " generations are"} living,
-      and {living === 1 ? "is" : "are"} carried by name alone — no date, no place, nothing else. That is
-      the rule everywhere on this site, and it is why the line can run all the way down.</p>
+      and {living === 1 ? "is" : "are"} carried by name, with no date and no record: a living person
+      is named here with their town and country and nothing more. That is the rule everywhere on this
+      site, and it is why the line can run all the way down.</p>
     )}
   </section>
 

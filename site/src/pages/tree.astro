@@ -12,9 +12,9 @@
    it stops because nobody knows who comes next, it says that instead. Those
    are not the same fact and the drawing does not pretend they are.
 
-   It starts at Kenneth rather than at the living, who are named "—" in the
-   export: three boxes of dashes before anything is said is not privacy, it is
-   just a bad opening. The living are on /direct-line/ by the same rule. */
+   It starts at Kenneth rather than at the living: the living are named, with
+   no date and no record, on /direct-line/ and /bloodline/, and a chart whose
+   first three boxes carry only a name says little. */
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
@@ -37,8 +37,7 @@ const root = ahnen(ancestors, {
   extra: (r) => ({ id: r.id }),
 });
 
-/* Only a person this archive actually built a page for gets a link. The living
-   never enter that build, so this cannot link to one. */
+/* Only a person this archive actually built a page for gets a link. */
 const personHref = (b) => {
   const p = b.id && byId.get(b.id);
   return p && p.slug ? u(`/people/${p.slug}/`) : null;
@@ -79,9 +78,10 @@ let people = 0, doc = 0, walls = 0, doors = 0;
 
   <Blk>
     <Note>
-      <p>Living people are not drawn. The chart begins at Kenneth Lindsay D'Arcy, who died in
-      2010 and is the most recent generation this archive names; everyone below him is living
-      and appears nowhere on this site by name.</p>
+      <p>The chart begins at Kenneth Lindsay D'Arcy, who died in 2010 and is the most recent
+      generation that has died. Everyone below him is living, and is named, with no date and no
+      record, on <a href={u("/direct-line/")}>the spine</a> and
+      <a href={u("/bloodline/")}>the bloodline</a>.</p>
     </Note>
     <p class="prose dim">The other lines this family joins are on <a href={u("/trees/")}>the
     trees</a>. The Berkeley generations, which this chart cannot hold, have

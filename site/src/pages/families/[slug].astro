@@ -51,24 +51,21 @@ const nameCards = (xs) => (xs || [])
 
 const yr = (x) => (String(x || "").match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1];
 
-/* LIVING PEOPLE DO NOT ENTER THIS BUILD AT ALL, and the first version of
-   this page published forty-four of them. people.js is explicit — «living
-   people never enter the build» — and the families INDEX has always filtered
-   them out with `f.members.filter((m) => !m.living)`. I rendered every
-   member and only suppressed their dates, which is the rule for archives
-   that publish a living person's name and is NOT the rule here.
-   check:living caught it before it left the machine: «44 leak(s)».
-   A name is the whole of what was leaking. */
+/* A LIVING PERSON IS A NAME, A RELATIONSHIP, A TOWN AND A COUNTRY. The first
+   version of this page published forty-four of them under the rule that then
+   was — nobody living at all — because it rendered every member and suppressed
+   only their dates. check:living caught it before it left the machine. The rule
+   is different now (src/lib/people.js, David's ruling of 16 October 2026) and
+   this page is where it is honest rather than lucky: a living member's row
+   carries a name, a spouse by name, brothers and sisters by name, and the town
+   and country in the place column. The data holds no date for them to leak —
+   tools/build_site_data.py builds them from nothing else — and the row below
+   passes none: no era, no born, no died, no trade, no marriage date, no
+   confidence. */
 const rows = (fam.members || [])
-  .filter((m) => !m.living)
   .slice()
   .sort((a, b) => (Number(yr(a.born)) || 9999) - (Number(yr(b.born)) || 9999))
   .map((p) => {
-    /* AND A LIVING SPOUSE IS NOT NAMED EITHER. The second pass filtered
-       living members and still leaked seven, every one a wife or husband
-       named on a dead person's row — Harry Bamford, George Hart, Florence
-       Patterson. Under this archive's «absent» policy a living person does
-       not appear at all, not even as somebody else's marriage. */
     const spRaw = (p.spouses || [])[0] || null;
     /* AND A MARRIAGE WITHOUT A NAME IS STILL A MARRIAGE. Walter Sneyd,
        Ralph Sneyd and Francis Murdoch each have a spouse record with an id,
@@ -77,33 +74,35 @@ const rows = (fam.members || [])
        Object]», because the row wrote `sp.name || sp` and the fallback
        reached the record itself. The marriage is kept and the name is not
        invented — `spouse` stays empty and the row says why. */
-    const sp = spRaw && !spRaw.living && named(spRaw) ? spRaw : null;
-    const unnamedMarriage = !!(spRaw && !spRaw.living && !named(spRaw));
+    const sp = spRaw && named(spRaw) ? spRaw : null;
+    const unnamedMarriage = !!(spRaw && !named(spRaw));
     const herRec = sp && sp.id ? KIN_BY_ID.get(sp.id) : null;
     const slug = SLUG_BY_ID.get(p.id);
     const herSlug = sp && sp.id ? SLUG_BY_ID.get(sp.id) : null;
+    const alive = !!p.living;
     return {
       name: p.name,
       href: slug ? `/people/${slug}/` : "",
-      era: [yr(p.born), yr(p.died)].filter(Boolean).join(" → ") || undefined,
-      born: p.born || "",
-      died: p.died || "",
-      trade: p.occupation || "",
-      place: p.bornPlace || p.diedPlace || "",
-      married: (sp && sp.married) || (unnamedMarriage && spRaw.married) || "",
+      living: alive,
+      era: alive ? undefined : ([yr(p.born), yr(p.died)].filter(Boolean).join(" → ") || undefined),
+      born: alive ? "" : (p.born || ""),
+      died: alive ? "" : (p.died || ""),
+      trade: alive ? "" : (p.occupation || ""),
+      place: alive ? (p.place || "") : (p.bornPlace || p.diedPlace || ""),
+      married: alive || (sp && sp.living) ? "" : ((sp && sp.married) || (unnamedMarriage && spRaw.married) || ""),
       spouse: sp ? sp.name : "",
       spouseHref: sp && herSlug ? `/people/${herSlug}/` : null,
       spouseAlt: sp
         ? (herRec ? "" : "no record of her own family here")
         : unnamedMarriage
           ? "the tree records the marriage and has never held her name"
-          : (spRaw ? "married — living, and not named here" : "no marriage recorded for them here"),
+          : "no marriage recorded for them here",
       children: [],
       hisSiblings: nameCards(p.siblings),
       herSiblings: herRec ? nameCards(herRec.siblings) : [],
       hisLabel: String(p.name).split(" ")[0] + "’s",
       herLabel: sp ? sp.name.split(" ")[0] + "’s" : "Theirs",
-      confidence: (p.sources || []).length ? "a record has been read" : "",
+      confidence: alive ? "" : ((p.sources || []).length ? "a record has been read" : ""),
     };
   });
 ---

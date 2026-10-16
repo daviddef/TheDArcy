@@ -4,7 +4,10 @@ import Note from "../components/Note.astro";
 import Sources from "@daviddef/archive-kit/components/Sources.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
-import { people } from "../lib/people.js";
+import { people as everyone, isLiving } from "../lib/people.js";
+/* A living person carries no citation by rule, so this page counts the people
+   who can have one: the dead. */
+const people = everyone.filter((p) => !isLiving(p));
 import printed from "../data/printed.json";
 import src from "../data/sources.json";
 import snap from "../data/snapshot-summary.json";

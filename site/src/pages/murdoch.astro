@@ -2,7 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
-import { publishable } from "../lib/people.js";
+import { publishable, isLiving } from "../lib/people.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
 const f = families.find((x) => x.surname === "Murdoch");
@@ -87,8 +87,8 @@ const shown = publishable(f.members);
         return (
           <a class="cardlink" href={u(`/people/${o ? o.slug : ""}`)}>
             <div class="nm">{m.name}</div>
-            <p class="small" style="margin-top:.3rem">{m.life || "dates unknown"}
-            {m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
+            <p class="small" style="margin-top:.3rem">{isLiving(m) ? (m.place || "living") : (m.life || "dates unknown")}
+            {!isLiving(m) && m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
           </a>
         );
       })}

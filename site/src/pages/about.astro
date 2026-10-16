@@ -16,7 +16,7 @@ import living from "../data/living.json";
    holds must not be the one page whose figures go stale. */
 const out = (o) => searched.rows.filter((r) => r.outcome === o).length;
 const HOLDS = [
-  [people.length, "people published", `of a tree that also holds ${living.counts.living.toLocaleString()} living people, ${living.named.length} of whom are named here on purpose`, "/people"],
+  [people.length, "people published", `${living.published.withPage} of them living, each a name, a town and a country and nothing more; the tree judges ${living.counts.living.toLocaleString()} people living in all`, "/people"],
   [dossiers.counts.named, "named in records", `including ${dossiers.counts.ownPage} who are not relatives at all`, "/who"],
   [reg.entries, "register entries", `${reg.records} from a document, ${reg.tree} from the tree`, "/register"],
   [searched.rows.length, "sources read", `${out("yield")} yields, ${out("null")} nulls, ${out("blocked")} unreachable`, "/searched"],
@@ -46,14 +46,18 @@ const HOLDS = [
       <li style="margin-bottom:.6rem"><strong>Errors stay on the page where they were made.</strong>
       {nOwn} so far, each with what caused it. Corrections are never made silently.
       <a href={u("/corrections/")}>The errors →</a></li>
-      <li style="margin-bottom:.6rem"><strong>Living people are not published as people.</strong>
-      No person page, no birth year, no birthplace, and no name where it would appear as somebody's
-      spouse, parent or child — the rule withholds {living.counts.living.toLocaleString()} people
-      across the tree. <strong>{living.named.length} living people are named on this site on
-      purpose</strong>, as the authors of a eulogy and as the reason this archive exists, each with
-      the owner's recorded confirmation. Until 21 September 2026 this line read “not published at
-      all — absent from the build”, which was a stronger claim than the archive keeps.
-      <a href={u("/method/")}>How the rule works →</a></li>
+      <li style="margin-bottom:.6rem"><strong>A living person is named, with their town and country,
+      and nothing more.</strong> A name, a relationship, a town and a country: no date, no record,
+      no source, no note and no photograph, and their page is kept out of search engines. The tree
+      judges {living.counts.living.toLocaleString()} people living; {living.published.withPage} of
+      them have a page here and {living.published.namedOnly} more are named as somebody's spouse,
+      brother, sister or parent. <strong>{living.named.length} living people are also named on this
+      site on purpose</strong> in prose, as the authors of a eulogy and as the reason this archive
+      exists, each with the owner's recorded confirmation. Until 16 October 2026 this line said the
+      opposite — no page, no dates, no birthplace and no name — and was the archive's rule from the
+      start; David ruled, with those {living.counts.living.toLocaleString()} in front of him, that
+      this archive adopts the standard the Defranceschi archive keeps.
+      <a href={u("/method/#living")}>How the rule works →</a></li>
       <li><strong>A better story is not a reason.</strong> Two aristocratic descents have been taken
       off this family — one unevidenced, one disproved — and both are still set out in full rather
       than deleted. <a href={u("/how-far-back/")}>Both grafts →</a></li>
@@ -131,8 +135,9 @@ const HOLDS = [
 
   <section class="blk">
     <h2>How it is built</h2>
-    <p class="dek">A MyHeritage GEDCOM export is parsed in Python, living people are removed by a
-    graph-wide rule rather than a flag, and the result is rendered as a static site with Astro and
+    <p class="dek">A MyHeritage GEDCOM export is parsed in Python, living people are found by a
+    graph-wide rule rather than a flag and reduced to a name, a relationship, a town and a country,
+    and the result is rendered as a static site with Astro and
     published to GitHub Pages. Nothing is generated at request time and there is no database —
     everything you can read here is in the repository, including the tools that built it.</p>
     <p class="dek" style="margin-top:.9rem">

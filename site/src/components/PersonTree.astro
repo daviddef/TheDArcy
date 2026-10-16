@@ -37,6 +37,13 @@ const edge = (slug) => {
   return { cls: "via-tree", via: "tree", recorded: false };
 };
 
+/* On a LIVING person's page no relative carries a year. The standard is a name,
+   a relationship, a town and a country for the living; a parent's or a sibling's
+   lifespan beside a living person's name is the one place a date could sit on
+   such a page, and keeping the page free of every year is what lets
+   tools/check_living_standard.py test it as a rule rather than as a judgement.
+   A living relative shows their town and country in the same slot. */
+const hideDates = !!p.living;
 const node = (o, extra = {}) => {
   const e = edge(o.slug);
   const q = prov[o.slug] || {};
@@ -45,7 +52,7 @@ const node = (o, extra = {}) => {
     ...e, ...extra,
     name: o.name,
     href: u(`/people/${o.slug}`),
-    dates: lifeOf(o),
+    dates: o.living ? (o.place || "") : (hideDates ? "" : lifeOf(o)),
     cls: e.cls,
     via,
     mark: extra.mark === false ? undefined : via,

@@ -7,27 +7,20 @@ import Bloodline from "@daviddef/archive-kit/components/Bloodline.astro";
 import { graph, components, fromAhnentafel } from "@daviddef/archive-kit/lib/bloodline.js";
 import "@daviddef/archive-kit/styles/bloodline.css";
 import raw from "../data/ancestors.json";
-import living from "../data/living.json";
 import { publishableOrNamed } from "../lib/people.js";
 
 const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isArray(v)) || [];
-/* The living are left out of this chart entirely.
-
-   Six archives name the living and nothing more; this one does not publish them
-   at all, and that is its own declared rule rather than an oversight. The five
-   living people it does name are listed in living.json with a reason and a
-   confirmation date each — a consent record, not a convenience — and a
-   chart is not the place to widen that list quietly.
-   
-   The line therefore stops at the last person the archive publishes, and says
-   so. Adding somebody to it is a decision for whoever keeps the archive. */
-/* A living person appears here only if this archive has named them on purpose:
-   living.json's `named` list, each entry carrying a reason and a date it was
-   confirmed. That list is a consent record, so it is the thing consulted —
-   not the living flag, and not a judgement made in this file. */
-const named = new Set((living.named || []).map((e) => e.phrase));
+/* THE LIVING ARE IN THIS CHART BY NAME, since 16 October 2026. Until then this
+   archive published none and the line stopped at the last person it could
+   name; David ruled, knowing the tree judges 2,034 people living, that it
+   adopts the standard the Defranceschi archive keeps. The chart draws a name
+   and a relationship for a living ancestor, and the kit's component gives
+   them no dates. `rows` is every ancestor in the file, and the data holds
+   nothing for a living one beyond a name and a place (tools/build_site_data.py).
+   living.json's `named` is the older consent record — six people named on
+   purpose in prose — and is unchanged; it is no longer what lets a living
+   person onto a chart. */
 const rows = publishableOrNamed(all);
-const withheld = all.length - rows.length;
 const people = graph(fromAhnentafel(rows));
 const comps = components(people);
 const shape = (s) => {
@@ -41,10 +34,7 @@ const start = comps[0] ? [...comps[0]].sort((a, b) => shape(b) - shape(a))[0] : 
   eyebrow={`${Object.keys(people).length} ancestors, joined by the numbering itself`}
   dek="Choose a person and the chart is built around them. These links come out of the ahnentafel — the father of number n is number 2n — so not one of them rests on two people sharing a name.">
   <Bloodline people={people} start={start} total={rows.length} />
-  {withheld > 0 && (
-    <p class="cap" style="margin-top:14px">{withheld} living {withheld === 1 ? "person is" : "people are"} left
-      out of this chart. This archive does not publish the living except where it has decided to
-      name somebody on purpose — those few are listed with a reason and a date each — and anybody
-      named here carries a name and nothing else: no date, no place, no page.</p>
-  )}
+  <p class="cap" style="margin-top:14px">{rows.filter((r) => r.living).length} of these {rows.length} are living.
+    A living person is named here and nothing more: no date, no record, no photograph. Their
+    page, where there is one, gives their town and country.</p>
 </Base>
