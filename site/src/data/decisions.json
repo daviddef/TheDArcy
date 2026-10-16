@@ -2,8 +2,8 @@
  "_note": "Values that encode a DECISION rather than a measurement. tools/check_decisions.py recomputes each from its real source and REFUSES if one has moved, because a decision changing is exactly the case where a deliberate act should be required — and editing this file in the same commit is that act. Most numbers in this build move every run; these do not. See own error 48.",
  "decisions": {
   "kitPin": {
-   "value": "0a56c86",
-   "why": "Which build of the shared kit this archive's gates are. It moved inside a commit about gating a chart on 27 September and three builds passed over it unnoticed — own error 48. MOVED 13 OCTOBER 2026 to 8fdc6b0, which fixes a fault this archive reported after its own move: kit/styles/print.css hard-coded daviddef.github.io into the address it prints beside every internal link, so every archive on its own domain PRINTED the wrong site — on paper, where a URL matters most because the reader has to type it. A plain CSS file cannot know which archive it is printing, so print.css now emits the path alone and SocialHead, which every page renders, overrides it with the origin from archives.json. The predecessor 281c8d6 carried the rest of the estate's moves to their own domains, and before it e275c14 added whoami(), which settles which archive is being built by ORIGIN rather than by base. MOVED 16 OCTOBER 2026 to 3efc89e, whose sitemap leaves out a page whose canonical names another page; moved on its own in a commit that touches only the pin files and this record. MOVED 16 OCTOBER 2026 to 0a56c86, which holds one definition of who is living and who is held out (kit/tools/living_rule.py and kit/data/public-sources.json); moved on its own in a commit that touches only the pin files and this record."
+   "value": "6cefc79",
+   "why": "Which build of the shared kit this archive's gates are. It moved inside a commit about gating a chart on 27 September and three builds passed over it unnoticed — own error 48. MOVED 13 OCTOBER 2026 to 8fdc6b0, which fixes a fault this archive reported after its own move: kit/styles/print.css hard-coded daviddef.github.io into the address it prints beside every internal link, so every archive on its own domain PRINTED the wrong site — on paper, where a URL matters most because the reader has to type it. A plain CSS file cannot know which archive it is printing, so print.css now emits the path alone and SocialHead, which every page renders, overrides it with the origin from archives.json. The predecessor 281c8d6 carried the rest of the estate's moves to their own domains, and before it e275c14 added whoami(), which settles which archive is being built by ORIGIN rather than by base. MOVED 16 OCTOBER 2026 to 3efc89e, whose sitemap leaves out a page whose canonical names another page; moved on its own in a commit that touches only the pin files and this record. MOVED 16 OCTOBER 2026 to 0a56c86, which holds one definition of who is living and who is held out (kit/tools/living_rule.py and kit/data/public-sources.json); moved on its own in a commit that touches only the pin files and this record. MOVED again the same day to 6cefc79, where a child with a known birth year follows the standard like anyone living (only an undated person with a living parent is held out) and the National Archives of Australia is a public source; the livingRule and heldOutRules records change with it."
   },
   "siteOrigin": {
    "value": "https://darcy.defranceski.com",
@@ -66,9 +66,9 @@
   "heldOutRules": {
    "value": {
     "dna-tester": "held by id; a person whose DNA result the archive describes without naming her",
-    "possible-minor": "not recorded dead, no public source, and under 18 by year, or with no birth year and a living parent"
+    "possible-minor": "an undated person with a living parent, not recorded dead and with no public source; a child with a known birth year is NOT held out"
    },
-   "why": "David's ruling of 16 October 2026, version 2: a possible minor is HELD OUT, because a child is not named. The test is the kit's (living_rule.possible_minor): not recorded dead, no public source, and either under 18 by year or with no birth year and a living parent. A rule, not a list of names: tools/gedcom.held_out() decides it from the tree, tools/build_site_data.py and tools/ancestry.py both use it, and tools/check_living.py recomputes it independently with its own facts and proves not one of them has a page, a record, or a name as anybody's relative. The count of how many were met and left out is written to living.json and printed, never their names."
+   "why": "David's ruling of 16 October 2026, version 2, amended the same day: a person who might be a child is HELD OUT only when nothing says how old they are. The test is the kit's (living_rule.possible_minor): not recorded dead, no public source, no birth year, and a living parent. A child with a KNOWN birth year under 18 is not held out: they are named with their relationships and their town and country, have a page and are noindex, like any living person. A rule, not a list of names: tools/gedcom.held_out() decides it from the tree, tools/build_site_data.py and tools/ancestry.py both use it, and tools/check_living.py recomputes it independently with its own facts and proves not one of them has a page, a record, or a name as anybody's relative. The count met and left out is written to living.json, never their names."
   },
   "recordedDeadKinds": {
    "value": [
@@ -80,7 +80,6 @@
   "livingRule": {
    "value": {
     "livingYears": 80,
-    "minorAge": 18,
     "publicSources": [
      "ancestry.com/search",
      "antenati.cultura.gov.it",
@@ -95,8 +94,11 @@
      "freebmd",
      "myheritage record",
      "myheritage.com/research",
+     "naa.gov.au",
      "naairs",
+     "national archives of australia",
      "nationalarchives.gov.uk",
+     "recordsearch",
      "trove.nla.gov.au"
     ],
     "notPublic": [
@@ -108,7 +110,7 @@
      "myheritage.com/person"
     ]
    },
-   "why": "David's ruling of 16 October 2026, version 2, written once for every archive in the kit's living_rule.py and kit/data/public-sources.json: living is 80 or younger by year (this year minus the birth year) with no death or burial recorded and no public source; a person with no birth year is not living; a possible minor (under 18, or undated with a living parent) is held out. The numbers and the list of public record sources belong to the whole estate, so a kit move that changes one changes who is living here without a line of this repository changing. This watches them: a re-pin that moves one is refused until the move is recorded here, in the same commit."
+   "why": "David's ruling of 16 October 2026, version 2, written once for every archive in the kit's living_rule.py and kit/data/public-sources.json: living is 80 or younger by year (this year minus the birth year) with no death or burial recorded and no public source; a person with no birth year is not living; an undated person with a living parent (who might be a child) is held out, and a child with a KNOWN birth year is not (David, 16 October 2026): every child follows the standard. The numbers and the list of public record sources belong to the whole estate, so a kit move that changes one changes who is living here without a line of this repository changing. This watches them: a re-pin that moves one is refused until the move is recorded here, in the same commit."
   }
  }
 }

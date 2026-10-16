@@ -135,7 +135,7 @@ def living_rule_values():
         raise Unreadable("the kit's living_rule.py is not installed")
     sys.path.insert(0, kit)
     import living_rule as lr
-    return {"livingYears": lr.LIVING_YEARS, "minorAge": lr.MINOR_AGE,
+    return {"livingYears": lr.LIVING_YEARS,
             "publicSources": sorted(lr.PROVIDERS), "notPublic": sorted(lr.EXCLUDED)}
 
 

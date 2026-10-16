@@ -350,7 +350,7 @@ def held_ids():
 
 HELD_RULES = {
     "dna-tester": "held by id; a person whose DNA result the archive describes without naming her",
-    "possible-minor": "not recorded dead, no public source, and under 18 by year, or with no birth year and a living parent",
+    "possible-minor": "an undated person with a living parent, not recorded dead and with no public source; a child with a known birth year is NOT held out",
 }
 
 
