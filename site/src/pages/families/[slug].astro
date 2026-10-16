@@ -187,9 +187,8 @@ const lineDek = line ? (() => {
           {line.titled.length > 0
             ? <> {line.titled.map((x) => x.written).join(" and ")} is a title the tree writes where the surname
               should be, for people whose own names are {fam.surname}.</>
-            : line.shifts.length > 0
-              ? <> They are shown together because the direct line itself changes spelling inside it, as set out below.</>
-              : <> The archive treats them as spellings of one name.</>}</p>
+            : <> This page shows them together as one name.</>}
+          {line.shifts.length > 0 && <> The direct line itself changes spelling inside it, as set out below.</>}</p>
         )}
         {line.twice.length > 0 && (
           <Note>

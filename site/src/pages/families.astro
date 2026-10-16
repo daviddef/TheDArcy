@@ -6,7 +6,7 @@ import { u } from "../lib/url.js";
 import { publishable, countLiving, isLiving, duplicateOf } from "../lib/people.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
-import { allLines } from "../lib/familyLines.js";
+import { allLines, lineCfg } from "../lib/familyLines.js";
 
 /* A declared copy (same-person.json) is one person entered twice: counted and
    listed once, here as on the family's own page. */
@@ -106,5 +106,18 @@ const groups = [{
   <section class="blk">
     <Families groups={groups} u={u} />
   </section>
+
+  <Blk label="Method" title="How the names beyond the thirteen were chosen">
+    <p class="small">{lineCfg.note}</p>
+    <p class="small" style="margin-top:.7rem">{lineCfg.rule}</p>
+    <p class="small" style="margin-top:.7rem">{lineCfg.match}</p>
+    <h3 style="margin-top:1.2rem">Names that qualify and have no page</h3>
+    <ul class="small" style="margin:.4rem 0 0;padding-left:1.1rem">
+      <li style="margin-top:.3rem"><strong>The Falco side</strong> &mdash; {lineCfg.otherArchive.note}</li>
+      {lineCfg.notCreated.map((x) => (
+        <li style="margin-top:.3rem"><strong>{x.name}</strong> &mdash; {x.why}</li>
+      ))}
+    </ul>
+  </Blk>
 
 </Base>

@@ -53,7 +53,7 @@ def main():
             group_of[k] = l["keys"][0]
     cluster_keys = {FL.surname_key(f["surname"]) for f in FL._j("families.json", [])}
     line_primary = {l["keys"][0]: l for l in cfg["lines"]}
-    elsewhere = {k for k in (cfg.get("pagesElsewhere") or {}) if k != "note"}
+    elsewhere = {k for k in (cfg.get("pagesElsewhere") or {}) if not k.startswith("_")}
     other = {k for k in (cfg.get("otherArchive") or {}).get("keys", [])}
 
     rows = research_rows()
