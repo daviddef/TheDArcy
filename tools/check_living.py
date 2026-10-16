@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-"""A living person is a name, a relationship, a town and a country. The tree says what is NOT allowed.
+"""A living person is a name, a relationship, a town and a country. The tree says who is living and what is NOT allowed.
 
-THE RULE (David, 16 October 2026, made knowing the tree holds 2,034 people it
-judges living): this archive adopts the standard the Defranceschi archive keeps.
-A living person is named, with their town and country, and nothing more: no date,
-no record, no source, no note, no occupation, no photograph, no structured data.
+THE RULE (David, 16 October 2026, version 2): a person is LIVING when they are 80
+or younger by year, with no death or burial recorded and no public source; a
+person with no birth year is not living. A living person is named with their
+relationships and their town and country, and nothing more: no date, no record,
+no source, no note, no occupation, no photograph, no structured data. Every
+person the archive names has a page. Two kinds of person are held out and
+published nowhere: a possible minor, and the person promised privacy, by id.
 
-THIS FILE USED TO ENFORCE THE OPPOSITE. Until that day the rule was «no living
-person is published as a person, and no living NAME appears anywhere», and this
-was the gate: it read the tree, built 1,768 name phrases, and refused to ship if
-any appeared on a page. A name is now allowed, so that test is gone — and what
-replaces it must not be weaker than what it replaced, so it is turned the other
-way. It still reads the tree, which is the only place that knows who is living,
-and what it reads out is no longer their NAMES but everything ELSE about them:
+THE DEFINITION OF LIVING IS THE KIT'S (kit/tools/living_rule.py), written once for
+every archive. What this file adds is that it does not take the generator's word
+for the FACTS that definition is applied to. tools/gedcom.py prepares a birth
+year, a recorded death and a list of citations; this gate reads the same GEDCOM
+again, through the tokeniser only, and prepares them itself (own_facts), then
+asks the kit. It then holds the generator to the answer, person by person, for
+every one of the tree's people, not only the ones published.
+
+It reads the tree, which is the only place that knows who is living, and what it
+reads out is no longer their NAMES but everything ELSE about them:
 
   · every full date attached to a living person's events (day, month, year),
     in the five spellings a page might use — less the dates a dead person also
@@ -28,26 +34,25 @@ birthday in a data file leaks it whether or not a page ever prints it. The
 messages name the file and the kind of thing found, never the thing: a log that
 printed it would be the leak.
 
-It also proves three rulings David made on the same day about WHO is published:
+It also proves the rulings about WHO is published:
 
-  · a person the tree RECORDS as deceased (a death or burial event, with or
-    without a date) is dead, so none of them is flagged living, and nobody born
-    within a hundred years who is not recorded dead is flagged dead (this is
-    computed here from the events, independently of gedcom.classify_living);
-  · the DNA tester is held out: not a record, not an id, not a name anywhere;
-  · every living person with no birth year in the tree who has a living parent is
-    held out: the same. These are computed here from the tree, by their own rule,
-    not read from the generator's, and what is reported is a count.
-
-It also checks that the data and the tree agree about WHO IS LIVING, which is the
-fault that matters most under a rule that publishes living people by name: a
-person the tree judges living and the data does not flag would be emitted with
-their full record, and nothing in the page layer would know.
+  · the generator's verdict (living or not) is the gate's, for every person in the
+    tree, and the data's `living` flag is the tree's for every record and every
+    spouse entry;
+  · a person the tree RECORDS as deceased, a person with a public source, a person
+    with no birth year and a person over 80 are none of them flagged living;
+  · the people held out (the person promised privacy, by id; every possible minor,
+    by rule) are computed here from the tree by this file's own implementation,
+    and not one of them is a record, an id or a name in anything published;
+  · the people with a page are EXACTLY those the archive names: the direct line
+    and the thirteen surnames, plus their parents, brothers and sisters and
+    spouses, and nobody else. The tree holds thousands more, and none is published.
 
 And it runs the part that needs only the committed data and the built pages
 (tools/check_living_standard.py: noindex, no structured data, nothing in the
-sitemap or the search index, only the headings a living page has). That part
-also runs in the deploy, where there is no tree. This part cannot, and says so.
+sitemap or the search index, only the headings a living page has, every name a
+link to a page). That part also runs in the deploy, where there is no tree.
+This part cannot, and says so.
 
     python3 tools/check_living.py             # gate the build
     python3 tools/check_living.py --controls  # plant each fault, show it is caught
@@ -140,44 +145,161 @@ def harvest(people, families, flags):
     return {k: living[k] - dead[k] for k in living}
 
 
-def has_year(person):
-    from gedcom import born
-    return re.search(r"\b\d{4}\b", born(person).get("date", "") or "") is not None
+# ---- the facts, prepared HERE and not by the generator -----------------------
+# tools/gedcom.py prepares a birth year, a recorded death and a citation list for
+# the generator. This gate prepares them again from the raw tree, in its own code,
+# so that a generator whose preparation drifts (a date it stops reading, a source
+# it starts to count) is caught by something that does not share it. The DECISION
+# (living, minor, held out) is the kit's, imported from the same file the
+# generator uses: there is one definition.
+KIT_TOOLS = os.path.join(ROOT, "site", "node_modules", "@daviddef", "archive-kit", "kit", "tools")
+sys.path.insert(0, KIT_TOOLS)
+import living_rule as lr           # noqa: E402
+
+CLUSTER_SURNAMES = ["D'Arcy", "Sneyd", "Atkinson", "Murdoch", "Atwell", "Blum", "Keeling",
+                    "Creech", "Matson", "Wakefield", "Wright", "Rossiter", "Watt"]
+ROOT_PERSON = "@I2@"
+TREE_WORDS = ("geni", "wikitree", "family tree", "family trees", "tree index")
 
 
-def recorded_dead(person):
-    return any(e["kind"] in ("death", "burial") for e in person["events"])
+def _cite(src, page):
+    """What one citation is, as text for lr.public_source()."""
+    title = (src.val("TITL") if src else "") or ""
+    low = title.lower()
+    typ = src.val("_TYPE") if src else ""
+    if "familysearch" in low:
+        return "FamilySearch: " + title
+    if typ in ("Smart Matching", "Discovery"):
+        return "MyHeritage family tree: " + title
+    if typ == "Collection":
+        return ("MyHeritage family tree: " if any(w in low for w in TREE_WORDS)
+                else "MyHeritage record collection: ") + title
+    return " ".join(x for x in (title, page or "", (src.val("PUBL") if src else "") or "") if x).strip()
 
 
-def dead_vs_tree(people, flags, today=2026):
-    """THE RECORD'S OWN WORD. Computed here and not by gedcom.classify_living, so
-    that a classifier that stops reading the record is caught by something that
-    does not share its code."""
-    fails = []
-    wrong_living = [p for p, v in people.items() if recorded_dead(v) and flags.get(p)]
-    if wrong_living:
-        fails.append(f"{len(wrong_living)} person(s) the tree records as deceased are flagged living")
-    # nobody born within a hundred years, and not recorded dead, may be dead
-    from gedcom import born, year
-    wrong_dead = [p for p, v in people.items()
-                  if not recorded_dead(v) and not flags.get(p)
-                  and (year(born(v).get("date", "")) or 0) > today - 100]
-    if wrong_dead:
-        fails.append(f"{len(wrong_dead)} person(s) born within a hundred years and not recorded dead are flagged dead")
-    return fails
+def own_tree(path=None):
+    """{people: {id: facts}, fams: {id: {...}}} straight from the GEDCOM's tags."""
+    import gedcom as G
+    recs = G.parse(path) if path else G.parse()
+    srcs = {r.xref: r for r in recs if r.tag == "SOUR" and r.xref}
+    people, fams = {}, {}
+    for r in recs:
+        if r.tag == "INDI" and r.xref:
+            by = None
+            for tag in ("BIRT", "CHR", "BAPM"):
+                for e in r.all(tag):
+                    d = e.val("DATE")
+                    ys = [int(y) for y in re.findall(r"\b(\d{4})\b", d)]
+                    if ys and by is None:
+                        by = max(ys) if d.upper().startswith("BET") else ys[0]
+            nm = r.first("NAME")
+            sur = (nm.val("SURN") if nm else "") or (
+                nm.value.split("/")[1] if nm and nm.value.count("/") >= 2 else "")
+            people[r.xref] = {
+                "by": by,
+                "dead": any(k.tag in ("DEAT", "BURI") for k in r.kids),
+                "cites": [_cite(srcs.get(s.value.strip()), s.val("PAGE")) if s.value.strip().startswith("@")
+                          else s.value.strip() for s in r.all("SOUR")],
+                "famc": [k.value for k in r.all("FAMC")], "fams": [k.value for k in r.all("FAMS")],
+                "surname": sur.strip().lower(),
+            }
+        elif r.tag == "FAM" and r.xref:
+            fams[r.xref] = {"husb": r.val("HUSB"), "wife": r.val("WIFE"),
+                            "chil": [k.value for k in r.all("CHIL")]}
+    for p in people.values():
+        p["parents"] = []
+    for f in fams.values():
+        for c in f["chil"]:
+            if c in people:
+                for x in (f["husb"], f["wife"]):
+                    if x and x in people and x not in people[c]["parents"]:
+                        people[c]["parents"].append(x)
+    return {"people": people, "fams": fams}
 
 
-def held_set(people, flags, tester):
-    """Who must be absent: the declared DNA tester, and every living person with
-    no birth year who has a living parent. This gate's own implementation."""
+def own_living(tree, today=None):
+    ty = today or lr.this_year()
+    return {pid: lr.is_living(p["by"], p["dead"], p["cites"], ty) for pid, p in tree["people"].items()}
+
+
+def own_held(tree, flags, ids, today=None):
+    ty = today or lr.this_year()
     out = {}
-    for pid, v in people.items():
-        if flags.get(pid) and not has_year(v) and any(flags.get(x) for x in v["parents"]):
-            out[pid] = "possible-minor"
-    for t in tester:
-        if t in people and flags.get(t):
-            out[t] = "dna-tester"
+    for pid, p in tree["people"].items():
+        pl = any(flags.get(x) for x in p["parents"])
+        if lr.is_held_out(pid, p["by"], p["dead"], p["cites"], pl, ids, ty):
+            out[pid] = "dna-tester" if pid in set(ids) else "possible-minor"
     return out
+
+
+def own_pages(tree, held):
+    """Everybody who ought to have a page: the numbered ancestors of the root person,
+    every bearer of the thirteen surnames, and the parents, brothers and sisters and
+    spouses of those — less the held out. Computed here, from the tree's links."""
+    P, F = tree["people"], tree["fams"]
+    seen, order, queue = set(), [], [ROOT_PERSON]
+    while queue:
+        pid = queue.pop(0)
+        if pid in seen or pid not in P:
+            continue
+        seen.add(pid)
+        for fid in P[pid]["famc"]:
+            f = F.get(fid)
+            if f:
+                queue += [x for x in (f["husb"], f["wife"]) if x]
+    scope = set(seen)
+    sn = {x.lower() for x in CLUSTER_SURNAMES}
+    scope |= {pid for pid, p in P.items() if p["surname"] in sn and pid not in held}
+    scope -= set(held)
+    rel = set()
+    for pid in scope:
+        p = P[pid]
+        rel |= set(p["parents"])
+        for fid in p["famc"]:
+            rel |= set(F.get(fid, {}).get("chil", []))
+        for fid in p["fams"]:
+            f = F.get(fid)
+            if f:
+                rel |= {f["husb"], f["wife"]}
+    rel = {x for x in rel if x in P and x not in held} - scope
+    return scope, rel
+
+
+def arithmetic_fails(tree, flags, ty=None):
+    """The rule restated as arithmetic, so a classification that has drifted from
+    it is caught even if the kit and the generator drifted together. `flags` is
+    the verdict under test."""
+    ty = ty or lr.this_year()
+    bad = collections_counter()
+    for pid, p in tree["people"].items():
+        v = bool(flags.get(pid))
+        pub = lr.public_source(p["cites"])
+        if p["dead"] and v:
+            bad["recorded-dead"] += 1                 # a recorded death or burial is dead
+        if pub and v:
+            bad["public-source"] += 1                 # a public source is not living
+        if p["by"] is None and v:
+            bad["undated"] += 1                       # nobody can be shown 80 or younger without a year
+        if p["by"] is not None and ty - p["by"] > 80 and v:
+            bad["over-80"] += 1
+        if (p["by"] is not None and ty - p["by"] <= 80 and not p["dead"] and not pub) and not v:
+            bad["young-flagged-dead"] += 1            # 80 or younger, no death, no public source: living
+    return dict(bad)
+
+
+def classify_diff(flags, gen_flags):
+    """People about whom the generator and this gate disagree (living or not)."""
+    return [p for p in flags if bool(gen_flags.get(p)) != bool(flags.get(p))] + \
+           [p for p in gen_flags if p not in flags]
+
+
+def held_diff(held, gen_held):
+    return sorted(set(gen_held) ^ set(held))
+
+
+def collections_counter():
+    import collections
+    return collections.Counter()
 
 
 def held_fails(people, flags, data, corp, held, named_phrases, namesakes):
@@ -188,8 +310,8 @@ def held_fails(people, flags, data, corp, held, named_phrases, namesakes):
     from gedcom import display
     fails, searched, shared, skipped = [], 0, 0, 0
     ids = set(held)
-    for src in ("ancestors", "line"):
-        for r in data[src]:
+    for src in ("ancestors", "line", "relatives"):
+        for r in data.get(src) or []:
             if r["id"] in ids:
                 fails.append(("held", f"{src}: a record for a held-out person"))
     for f in data["families"]:
@@ -218,7 +340,17 @@ def held_fails(people, flags, data, corp, held, named_phrases, namesakes):
         searched += 1
     if pats:
         rx = re.compile(r"(?<![0-9a-z])(?:" + "|".join(re.escape(x) for x in sorted(pats, key=len, reverse=True)) + r")(?![0-9a-z])")
+        # A held-out person's name can sit INSIDE a longer name that somebody with a
+        # page carries («Ann Smith» in «Mary Ann Smith»). Those longer names
+        # are blanked before the search, so what is left is the bare name, which is
+        # the held-out person (or a leak), and not their published relative.
+        published = {norm(r.get("name")) for _, r in all_rows(data) if r.get("name")}
+        protect = sorted((p for p in published if any(x in p and x != p for x in pats)),
+                         key=len, reverse=True)
+        prx = re.compile(r"(?<![0-9a-z])(?:" + "|".join(re.escape(p) for p in protect) + r")(?![0-9a-z])") if protect else None
         for name, text in corp.items():
+            if prx:
+                text = prx.sub(" ", text)
             if rx.search(text):
                 fails.append(("held", f"{name}: the name of a held-out person"))
     return fails, {"held": len(ids), "searched": searched, "shared": shared, "skipped": skipped}, pats
@@ -286,25 +418,46 @@ def corpus_fails(corp, h):
     return out
 
 
+def all_rows(data):
+    for src in ("ancestors", "line", "relatives"):
+        for r in data.get(src) or []:
+            yield src, r
+    for f in data["families"]:
+        for m in f["members"]:
+            yield "families", m
+
+
 def flags_vs_data(people, flags, data):
-    """The tree and the data must agree about who is living."""
+    """The tree and the data must agree about who is living, for every record and
+    every spouse entry."""
     fails = []
-    seen = {}
-    for src in ("ancestors", "families", "line"):
-        rows = data[src] if src != "families" else [m for f in data[src] for m in f["members"]]
-        for r in rows:
-            seen[r["id"]] = r
-            if r["id"] not in people:
-                fails.append(f"{src}: a record whose id is not in the tree")
-                continue
-            if bool(r.get("living")) != bool(flags.get(r["id"])):
-                fails.append(f"{src}: a record's living flag disagrees with the tree "
-                             f"(data says {bool(r.get('living'))}, tree says {bool(flags.get(r['id']))})")
-    for r in seen.values():
+    for src, r in all_rows(data):
+        if r["id"] not in people:
+            fails.append(f"{src}: a record whose id is not in the tree")
+            continue
+        if bool(r.get("living")) != bool(flags.get(r["id"])):
+            fails.append(f"{src}: a record's living flag disagrees with the tree "
+                         f"(data says {bool(r.get('living'))}, tree says {bool(flags.get(r['id']))})")
         for s in r.get("spouses") or []:
             sid = s.get("id")
             if sid and sid in people and bool(s.get("living")) != bool(flags.get(sid)):
                 fails.append("a spouse entry's living flag disagrees with the tree")
+    return fails
+
+
+def pages_vs_tree(data, expected_scope, expected_rel):
+    """The people with a page are exactly the people the archive names."""
+    fails = []
+    have_scope = {r["id"] for r in data["ancestors"]} | {m["id"] for f in data["families"] for m in f["members"]}
+    have_rel = {r["id"] for r in data["relatives"]}
+    if have_scope - expected_scope:
+        fails.append(f"{len(have_scope - expected_scope)} person(s) have a page by right and the tree does not put them in the direct line or a cluster")
+    if expected_scope - have_scope:
+        fails.append(f"{len(expected_scope - have_scope)} person(s) the archive gives a page by right have none")
+    if have_rel - expected_rel:
+        fails.append(f"{len(have_rel - expected_rel)} person(s) are published whom the archive does not name")
+    if expected_rel - have_rel:
+        fails.append(f"{len(expected_rel - have_rel)} person(s) the archive names have no page")
     return fails
 
 
@@ -313,13 +466,11 @@ def place_vs_tree(people, flags, data):
     import build_site_data as b
     from gedcom import born
     bad = 0
-    for src in ("ancestors", "families"):
-        rows = data[src] if src != "families" else [m for f in data[src] for m in f["members"]]
-        for r in rows:
-            if r.get("living") and r["id"] in people:
-                want = b.town_country(born(people[r["id"]]).get("place", ""))
-                if (r.get("place") or "") != want:
-                    bad += 1
+    for src, r in all_rows(data):
+        if r.get("living") and r["id"] in people:
+            want = b.town_country(born(people[r["id"]]).get("place", ""))
+            if (r.get("place") or "") != want:
+                bad += 1
     return bad
 
 
@@ -351,32 +502,46 @@ def main():
         print(f"check_living: no {dist} — build first")
         return 1
 
-    from gedcom import load, classify_living
+    from gedcom import load, classify_living, held_out
     people, families = load()
-    flags = classify_living(people, families)
+    tree = own_tree()
+    flags = own_living(tree)                      # this gate's verdict, not the generator's
     n_living = sum(1 for v in flags.values() if v)
 
     data = std.load_data()
     fails = []
 
+    # 0. the generator's verdict is this gate's, person by person, over the WHOLE tree
+    gen_flags = classify_living(people, families)
+    gen_held = held_out(people, gen_flags)
+    diff = classify_diff(flags, gen_flags)
+    if diff:
+        fails.append(("classify", f"the generator and this gate disagree about who is living for {len(diff)} person(s)"))
+    for k, n in sorted(arithmetic_fails(tree, gen_flags).items()):
+        fails.append(("classify", f"{n} person(s) break the rule on the {k} test"))
+
     # 1. the part that needs no tree
     world = std.load_pages(dist)
     extra = [f for f in glob.glob(os.path.join(std.DATA, "*.json"))
              if os.path.basename(f) not in ("ancestors.json", "families.json", "line.json",
-                                            "living.json", "decisions.json")]
+                                            "relatives.json", "living.json", "decisions.json")]
     sfails, info = std.run(data, world, extra)
     fails += [("standard/" + r, m) for r, m in sfails]
 
-    # 2. the tree and the data agree about who is living
+    # 2. the tree and the data agree about who is living, and the places
     for m in flags_vs_data(people, flags, data):
         fails.append(("flags", m))
     nbad = place_vs_tree(people, flags, data)
     if nbad:
         fails.append(("place", f"{nbad} living record(s) carry a place that is not the town and country the tree reduces to"))
 
-    # 2b. a recorded death is a death
-    for m in dead_vs_tree(people, flags):
-        fails.append(("recorded-dead", m))
+    # 2b. the people with a page are exactly the people the archive names
+    held = own_held(tree, flags, data["held"])
+    e_scope, e_rel = own_pages(tree, held)
+    for m in pages_vs_tree(data, e_scope, e_rel):
+        fails.append(("pages", m))
+    if held_diff(held, gen_held):
+        fails.append(("held", f"the generator and this gate disagree about who is held out ({len(held_diff(held, gen_held))} person(s))"))
 
     # 3. nothing else the tree holds about a living person is anywhere
     h = harvest(people, families, flags)
@@ -394,13 +559,14 @@ def main():
     decl0 = json.load(open(DECL, encoding="utf-8"))
     named_phrases = {norm(n["phrase"]) for n in decl0.get("named", [])}
     namesakes = {norm(n["phrase"]) for n in decl0.get("namesakes", [])}
-    held = held_set(people, flags, data["held"])
     hf, hinfo, hpats = held_fails(people, flags, data, corp, held, named_phrases, namesakes)
     fails += hf
     if not held:
         fails.append(("held", "no held-out person found in the tree, so nothing was proved absent"))
     if data["held"] and not any(v == "dna-tester" for v in held.values()):
-        fails.append(("held", "the declared DNA tester is not in the tree as a living person"))
+        fails.append(("held", "the declared person promised privacy is not in the tree"))
+    if not any(v == "possible-minor" for v in held.values()):
+        fails.append(("held", "no possible minor found in the tree, so that rule was proved against nothing"))
     # the generator's own count of how many it met must be what the tree says
     ho = (decl0.get("published") or {}).get("heldOut") or {}
     if ho.get("possibleMinorsInTree") != sum(1 for v in held.values() if v == "possible-minor"):
@@ -410,7 +576,7 @@ def main():
     fails += corpus_fails(corp, h)
 
     if a.controls:
-        ok = controls(people, flags, data, world, h, corp, held, hpats)
+        ok = controls(people, flags, data, world, h, corp, held, hpats, tree, e_scope, e_rel)
         if not ok:
             return 1
 
@@ -428,21 +594,24 @@ def main():
         print(f"  FAIL  living      {len(fails)} finding(s)")
         return 1
     if not a.quiet:
+        print(f"  ok    classify    the generator and this gate agree about all {len(flags):,} people in the tree "
+              f"({n_living:,} living); the rule restated as arithmetic holds for each")
         print(f"  ok    held-out    {hinfo['held']} person(s) held out ({sum(1 for v in held.values() if v == 'dna-tester')} by id, "
               f"{sum(1 for v in held.values() if v == 'possible-minor')} by rule): in no record, no data file, no built page; "
               f"{hinfo['searched']} names searched for in {len(corp):,} files, {hinfo['shared']} shared names covered by id only")
-        print(f"  ok    recorded    every person the tree records as deceased is flagged dead; nobody born within a hundred years and not recorded dead is")
-        print(f"  ok    living      {n_living:,} people the tree judges living; "
-              f"{info['living']} have a page, each noindex and bare; searched {len(corp):,} files "
+        print(f"  ok    pages       the {len(e_scope) + len(e_rel)} people with a page are exactly the people the archive names "
+              f"({len(e_scope)} by right, {len(e_rel)} named beside them); the tree's other people are not published")
+        print(f"  ok    living      {info['living']} living people have a page, each noindex and bare; searched {len(corp):,} files "
               f"(the built site and every tracked file) for {len(h['date']):,} dates, "
               f"{len(h['text']):,} notes/sources/occupations and {len(h['place']):,} long places "
-              f"belonging to them and found none")
+              f"belonging to the tree's {n_living:,} living people and found none")
     return 0
 
 
 # ---- planted faults -----------------------------------------------------------
 
-def controls(people, flags, data, world, h, corp, held=None, hpats=None):
+def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=None,
+             e_scope=None, e_rel=None):
     """Each rule is shown able to fail, in a COPY. Returns True when every one was caught."""
     pats = compile_all(h)
     ok = True
@@ -486,30 +655,84 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None):
             a["living"] = True
             break
     check("a person the tree judges dead, flagged living in the data", bool(flags_vs_data(people, flags, bad)))
-    # the record's own word
-    rd = next((p for p, v in people.items() if recorded_dead(v) and not flags.get(p)), None)
-    bad = dict(flags)
-    if rd:
-        bad[rd] = True
-    check("a person the tree records as deceased, wrongly marked living", bool(rd) and bool(dead_vs_tree(people, bad)))
-    from gedcom import born, year
-    lv = next((p for p, v in people.items() if flags.get(p) and not recorded_dead(v)
-               and (year(born(v).get("date", "")) or 0) > 1926), None)
-    bad = dict(flags)
-    if lv:
-        bad[lv] = False
-    check("a living person (born within a hundred years, not recorded dead), wrongly marked dead", bool(lv) and bool(dead_vs_tree(people, bad)))
-    check("the honest classification passes the record's-word rule", not dead_vs_tree(people, flags))
-    in_data = {r["id"] for r in data["ancestors"] + [m for f in data["families"] for m in f["members"]]}
-    nodate = next((p for p, v in people.items() if p in in_data and recorded_dead(v) and not flags.get(p)
-                   and not any(e.get("date") for e in v["events"] if e["kind"] in ("death", "burial"))), None)
-    bad2 = copy.deepcopy(data)
-    for rows in (bad2["ancestors"], [m for f in bad2["families"] for m in f["members"]]):
-        for r in rows:
-            if r["id"] == nodate:
-                r["living"] = True
-    check("a recorded-dead person with no death date, flagged living in the data",
-          bool(nodate) and bool(flags_vs_data(people, flags, bad2)))
+    # the rule at its edges, asked of the kit, with year 2026 fixed: 80 is living, 81 is not,
+    # no year is not, a recorded death is not, a public source is not, a private tree is.
+    T = 2026
+    edge = [
+        ("a person born 80 years ago, no death recorded, is living", lr.is_living(T - 80, False, [], T) is True),
+        ("a person born 81 years ago is not living", lr.is_living(T - 81, False, [], T) is False),
+        ("a person with no birth year is not living", lr.is_living(None, False, [], T) is False),
+        ("a recorded death (dated or not) makes a young person dead", lr.is_living(T - 30, True, [], T) is False),
+        ("a public source (FamilySearch) makes a young person not living", lr.is_living(T - 30, False, ["FamilySearch: x"], T) is False),
+        ("a private tree entry does not", lr.is_living(T - 30, False, ["MyHeritage family tree: x"], T) is True),
+        ("a person aged 17 is a possible minor", lr.possible_minor(T - 17, False, [], False, T) is True),
+        ("a person aged 18 is not", lr.possible_minor(T - 18, False, [], False, T) is False),
+        ("a person with no year and a living parent is a possible minor", lr.possible_minor(None, False, [], True, T) is True),
+        ("a person with no year and no living parent is not", lr.possible_minor(None, False, [], False, T) is False),
+    ]
+    for label, good in edge:
+        check("[kit rule] " + label, good)
+    # the generator's verdict, drifted by one person at a time, against the tree
+    if tree:
+        P = tree["people"]
+        ty = lr.this_year()
+
+        def pick(pred):
+            return next((p for p, v in P.items() if pred(v)), None)
+        cases = [
+            ("a person 80 or younger, not recorded dead, no public source, flagged DEAD", "young-flagged-dead",
+             pick(lambda v: v["by"] is not None and ty - v["by"] <= 80 and not v["dead"] and not lr.public_source(v["cites"])), False),
+            ("a person the tree records as deceased, flagged LIVING", "recorded-dead",
+             pick(lambda v: v["dead"] and v["by"] is not None and ty - v["by"] <= 80), True),
+            ("a person with no birth year, flagged LIVING", "undated",
+             pick(lambda v: v["by"] is None and not v["dead"]), True),
+            ("a person over 80, flagged LIVING", "over-80",
+             pick(lambda v: v["by"] is not None and ty - v["by"] > 80 and not v["dead"]), True),
+        ]
+        check("the honest classification passes the arithmetic", not arithmetic_fails(tree, flags))
+        for label, key, pid, val in cases:
+            bad = dict(flags)
+            if pid:
+                bad[pid] = val
+            check(label, bool(pid) and key in arithmetic_fails(tree, bad))
+        # a public source, on a planted person (the tree holds nobody young with one)
+        syn = {"people": {"@Y1@": {"by": ty - 30, "dead": False, "cites": ["FamilySearch: x"], "parents": []}}, "fams": {}}
+        check("[planted person] aged 30, a public source, flagged LIVING",
+              "public-source" in arithmetic_fails(syn, {"@Y1@": True}))
+        check("[planted person] aged 30, a public source, honestly flagged not living, passes",
+              not arithmetic_fails(syn, {"@Y1@": False}))
+        # a classification that disagrees with this gate's, one person
+        pid = next(iter(flags))
+        gen_bad = dict(flags); gen_bad[pid] = not flags[pid]
+        check("the generator calling one person living who this gate calls dead (or the reverse)",
+              classify_diff(flags, gen_bad) == [pid] and not classify_diff(flags, flags))
+        gen_held_bad = dict(held); gen_held_bad[pid if pid not in held else "@Z0@"] = "possible-minor"
+        check("the generator holding out one person this gate does not",
+              len(held_diff(held, gen_held_bad)) == 1 and not held_diff(held, held))
+        # the people with a page
+        if e_scope is not None:
+            bad = copy.deepcopy(data)
+            stranger = next(p for p in P if p not in e_scope and p not in e_rel and p not in held)
+            bad["relatives"].append({"id": stranger, "name": "x", "living": False})
+            check("a person the archive never names, published", bool(pages_vs_tree(bad, e_scope, e_rel)))
+            bad = copy.deepcopy(data)
+            bad["relatives"] = bad["relatives"][1:]
+            check("a person the archive names, with no page", bool(pages_vs_tree(bad, e_scope, e_rel)))
+            bad = copy.deepcopy(data)
+            bad["ancestors"] = bad["ancestors"][:-1]
+            check("a numbered ancestor with no page", bool(pages_vs_tree(bad, e_scope, e_rel)))
+            check("the honest data passes the page rule", not pages_vs_tree(data, e_scope, e_rel))
+        # facts: a person the tree dates in 1799 can never be living, a five-year-old is a possible minor
+        fake = {"people": {"@X1@": {"by": 1799, "dead": False, "cites": [], "parents": []},
+                           "@X2@": {"by": lr.this_year() - 5, "dead": False, "cites": [], "parents": []},
+                           "@X3@": {"by": None, "dead": False, "cites": [], "parents": ["@X2@"]}},
+                "fams": {}}
+        fl = own_living(fake)
+        check("[planted people] born 1799 is not living; a five-year-old is; undated is not",
+              fl["@X1@"] is False and fl["@X2@"] is True and fl["@X3@"] is False)
+        hh = own_held(fake, fl, ["@X9@"])
+        check("[planted people] the five-year-old is held out, and so is the undated child of a living parent, and the 1799 man is not",
+              hh.get("@X2@") == "possible-minor" and hh.get("@X3@") == "possible-minor" and "@X1@" not in hh)
     # the held out
     if held:
         from gedcom import display

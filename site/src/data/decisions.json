@@ -11,7 +11,7 @@
   },
   "livingPolicy": {
    "value": "named-place",
-   "why": "named-place: a living person is named, with their town and country, and nothing more. MOVED 16 OCTOBER 2026 from named-bare-by-omission (no living person published as a person at all; the key was absent and people.js's fallback was doing the work) on David's ruling, made knowing the tree judges 2,034 people living: this archive adopts the standard the Defranceschi archive keeps. The key is now present in living.json and people.js falls back to the same string."
+   "why": "named-place: a living person is named, with their relationships and their town and country, and nothing more. MOVED 16 OCTOBER 2026 from named-bare-by-omission (no living person published as a person at all) on David's ruling, and the same day to version 2 of the standard (see livingRule): who is living is decided by the kit's one definition, and every person the archive names has a page. The key is present in living.json and people.js falls back to the same string."
   },
   "namedLiving": {
    "value": [
@@ -61,21 +61,54 @@
    "value": [
     "@I23@"
    ],
-   "why": "David's ruling of 16 October 2026: the living woman whose DNA result the archive describes is HELD OUT. She stays as she was before the living standard: no page, no record, no name as anybody's relative, nothing in a file the site serves or the repository tracks that could be traced to her. /dna/ says she is not named, and that sentence has to stay true. Held by id only; no file, message or log names her. tools/check_living_standard.py proves the id is absent from every data file and built page; tools/check_living.py, which reads the tree, proves her name is too."
+   "why": "David's ruling of 16 October 2026: the living woman whose DNA result the archive describes is HELD OUT. She has no page, no record, no name as anybody's relative, and nothing in a file the site serves or the repository tracks that could be traced to her. /dna/ says she is not named, and that sentence has to stay true. Held by id only; no file, message or log names her. tools/check_living_standard.py proves the id is absent from every data file and built page; tools/check_living.py, which reads the tree, proves her name is too."
   },
   "heldOutRules": {
    "value": {
-    "dna-tester": "held by id; a living person whose DNA result the archive describes without naming her",
-    "possible-minor": "a living person with no birth year in the tree who has a living parent"
+    "dna-tester": "held by id; a person whose DNA result the archive describes without naming her",
+    "possible-minor": "not recorded dead, no public source, and under 18 by year, or with no birth year and a living parent"
    },
-   "why": "David's ruling of 16 October 2026: every living person with no birth year in the tree who has a living parent is HELD OUT, because without a year nobody can tell a child from an adult, and a child is not named. A rule, not a list of names: tools/gedcom.held_out() decides it from the tree, tools/build_site_data.py and tools/ancestry.py both use it, and tools/check_living.py recomputes it independently and proves not one of them has a page, a record, or a name as anybody's relative. The count of how many were met and left out is written to living.json and printed, never their names."
+   "why": "David's ruling of 16 October 2026, version 2: a possible minor is HELD OUT, because a child is not named. The test is the kit's (living_rule.possible_minor): not recorded dead, no public source, and either under 18 by year or with no birth year and a living parent. A rule, not a list of names: tools/gedcom.held_out() decides it from the tree, tools/build_site_data.py and tools/ancestry.py both use it, and tools/check_living.py recomputes it independently with its own facts and proves not one of them has a page, a record, or a name as anybody's relative. The count of how many were met and left out is written to living.json and printed, never their names."
   },
   "recordedDeadKinds": {
    "value": [
     "death",
     "burial"
    ],
-   "why": "David's ruling of 16 October 2026: a person the tree RECORDS as deceased is dead whether or not a date exists. MyHeritage writes a death event with no date for somebody it knows to be dead and does not know when; a burial says the same. Before that day the build ignored such a record unless it carried a date and judged the person living, so 544 people in the tree were judged living though the tree itself said otherwise. They are ordinary dead people now: no 'treated as living' wording, indexable pages, and no date or field they do not already hold in the tree. The 100-year upper-bound test still applies to everyone NOT recorded as dead."
+   "why": "David's ruling of 16 October 2026: a person the tree RECORDS as deceased is dead whether or not a date exists. MyHeritage writes a death event with no date for somebody it knows to be dead and does not know when; a burial says the same. They are ordinary dead people: indexable pages, and no date or field they do not already hold in the tree. Under version 2 the 100-year inference through the family graph is gone altogether: a person with no birth year is not living."
+  },
+  "livingRule": {
+   "value": {
+    "livingYears": 80,
+    "minorAge": 18,
+    "publicSources": [
+     "ancestry.com/search",
+     "antenati.cultura.gov.it",
+     "archive.org",
+     "arolsen",
+     "billiongraves",
+     "eggsa",
+     "familysearch",
+     "familysearch.org",
+     "findagrave",
+     "findmypast",
+     "freebmd",
+     "myheritage record",
+     "myheritage.com/research",
+     "naairs",
+     "nationalarchives.gov.uk",
+     "trove.nla.gov.au"
+    ],
+    "notPublic": [
+     "ancestry.com/family-tree",
+     "family lore",
+     "gedcom",
+     "geni.com",
+     "myheritage family tree",
+     "myheritage.com/person"
+    ]
+   },
+   "why": "David's ruling of 16 October 2026, version 2, written once for every archive in the kit's living_rule.py and kit/data/public-sources.json: living is 80 or younger by year (this year minus the birth year) with no death or burial recorded and no public source; a person with no birth year is not living; a possible minor (under 18, or undated with a living parent) is held out. The numbers and the list of public record sources belong to the whole estate, so a kit move that changes one changes who is living here without a line of this repository changing. This watches them: a re-pin that moves one is refused until the move is recorded here, in the same commit."
   }
  }
 }

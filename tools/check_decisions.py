@@ -109,7 +109,7 @@ def held_out_ids():
     relative. Ids only, because the whole point is that no file may say who."""
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     import gedcom
-    return [gedcom.DNA_TESTER]
+    return list(gedcom.held_ids())
 
 
 def held_out_rules():
@@ -122,6 +122,21 @@ def recorded_dead_kinds():
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     import gedcom
     return list(gedcom.RECORDED_DEAD_KINDS)
+
+
+def living_rule_values():
+    """The numbers in the kit's living_rule.py and the kit's list of public record
+    sources. They belong to the whole estate, not to this archive, so a kit move
+    that changed one (the 80 years, the 18, a source added or taken off the list)
+    changes who is living HERE without a line of this repository changing. This
+    refuses until the move is recorded."""
+    kit = os.path.join(ROOT, "site", "node_modules", "@daviddef", "archive-kit", "kit", "tools")
+    if not os.path.exists(os.path.join(kit, "living_rule.py")):
+        raise Unreadable("the kit's living_rule.py is not installed")
+    sys.path.insert(0, kit)
+    import living_rule as lr
+    return {"livingYears": lr.LIVING_YEARS, "minorAge": lr.MINOR_AGE,
+            "publicSources": sorted(lr.PROVIDERS), "notPublic": sorted(lr.EXCLUDED)}
 
 
 def site_origin():
@@ -192,6 +207,7 @@ CHECKS = {
     "heldOutIds": held_out_ids,
     "heldOutRules": held_out_rules,
     "recordedDeadKinds": recorded_dead_kinds,
+    "livingRule": living_rule_values,
     "grafts": grafts,
     "retiredAllow": retired_allow,
 }
