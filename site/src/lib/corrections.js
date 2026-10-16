@@ -20,6 +20,13 @@ export const CORRECTIONS = {
     bornPlace: ["unknown — Portsmouth or the West Indies", "the tree offers both, joined by \u201cor\u201d, which is the tree admitting it does not know", "/australia"],
     burial: ["Parramatta, New South Wales — the exact ground is not established", "the tree says only \u201cAustralia\u201d", "/australia"],
   },
+  "samuel-sneyd": {
+    born: ["1781 \u2014 baptised at Madeley All Saints on 4 June", "the tree says 1769, which is his eldest brother's year. The Madeley register baptises a Samuel, son of William Sneyd, weaver, on 4 June 1781. His burial and the 1851 census put his birth nearer 1778 or 1779, about three years before the baptism, and ages in those records drift, so the baptism is taken as the better document", "/how-far-back"],
+    died: ["buried 23 September 1855, aged 77", "the tree says 20 September 1856 at No 3 Well Street. The Hanley burial register (entry 2330) and the GRO death index both give 1855, and the 1851 census has him alive in his own shop four years before the tree's date", "/sneyds"],
+  },
+  "john-saniger": {
+    died: ["buried 16 January 1825, aged 55", "the tree says he died on 10 March 1824, ten months before the Berkeley burial. The age at burial agrees with his baptism of 18 May 1769, so the person is right and the death date is not", "/sanigers"],
+  },
   "samuel-charles-sneyd-1810": {
     born: ["13 March 1811 \u2014 baptised at Hanley St John on 28 April", "the tree says 15 March 1810, a day and a year out. The Hanley baptism names his parents as Samuel and Elizabeth of Hanley, the very parents the tree gives him, and the same register baptises his sister Mary in 1814, the sister the tree gives him too. This slug still carries the tree's 1810 because an address that has been published is never moved", "/sneyds"],
     occupation: ["Soldier of the 4th (King's Own); sergeant of the NSW Mounted Police; chief constable at Moreton Bay; Governor of Brisbane Gaol", "the tree records no trade at all for a man with four careers", "/sergeant-sneyd"],
