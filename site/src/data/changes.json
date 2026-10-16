@@ -30,6 +30,14 @@
           [
             "Fixed",
             "later the same day, on David's approval, the real leak was removed from the research note: two places, 28 characters, the surrounding research left alone, and no allowance added. The prose gate now passes on its own and the local build is whole again"
+          ],
+          [
+            "Fixed",
+            "Samuel Charles Sneyd was born on 13 March 1811, not 15 March 1810. The archive had recorded the Hanley baptism and said on one page that it publishes the register's date, yet his person page, the chart and two hand-written pages still printed 1810, one of them in a sentence that put his christening thirteen months after his birth"
+          ],
+          [
+            "Fixed",
+            "a table on the Sneyd page measured Elizabeth Oliver's census age against the tree's wrong birth date and said it was eight years out. Against the tree it was nine, against her real baptism it is four, and both censuses overshoot the register by three to four years, which is now said and left unexplained"
           ]
         ],
         "did": [
@@ -39,7 +47,8 @@
           "WHAT THAT COSTS, STATED PLAINLY. Locally the build now stops at this gate until the note is resolved. CI is unaffected, because it has no tree and the gate reports NOT RUN. The gate sits last in the chain so that it never hides another gate's result. To show the rest of the build still passes, the leak was allowed in the working tree only, the full build was run green, and the allow file was restored and verified byte-identical.",
           "IT WAS SEEN TO FAIL, NINE WAYS AND THEN SOME. In a throwaway repository with an invented name and the impossible year 1899: a year in a page, a component, a letter, a DNA result, an untracked file, an empty feed and a stale allowance each refused, and a clean copy and a reasoned allowance each passed. In the real repository: NOT RUN locally stops the build, NOT RUN in CI is labelled and continues, --require-tree fails even there, an empty feed refuses, and a new unclassified data file fails.",
           "ONE MISTAKE OF MINE, CAUGHT BY TWO ANSWERS DISAGREEING. A call to the kit's Python interface returned no failures while the command line returned two. The interface REPLACES the default set of files where the command line ADDS to it, so my call had read none of the pages or notes. The command line is what the build runs, so the build was never wrong; the first counts I took for this record were. They were retaken.",
-          "RESOLVED THE SAME DAY. The gate was left failing so the leak could not be forgotten, which is what it was for. Once David approved fixing it, the change was made narrowly: the detail attached to the living person's name was removed in the two places the gate flagged, a count of exactly two was checked before anything was written, and nothing else in the section or the file changed. The gate then passed with the one reasoned allowance it already had, with none added for this. The paragraph above that says the local build stops at the gate describes the state between the finding and the fix."
+          "RESOLVED THE SAME DAY. The gate was left failing so the leak could not be forgotten, which is what it was for. Once David approved fixing it, the change was made narrowly: the detail attached to the living person's name was removed in the two places the gate flagged, a count of exactly two was checked before anything was written, and nothing else in the section or the file changed. The gate then passed with the one reasoned allowance it already had, with none added for this. The paragraph above that says the local build stops at the gate describes the state between the finding and the fix.",
+          "THE SAME FAULT, THE FIFTH AND SIXTH TIME. The corrections map is where the archive records that its own research overturned the family tree. It was written down for Elizabeth Oliver and James Wakefield yesterday, but Samuel Charles Sneyd's baptism had been found weeks earlier and recorded as a note on a research page without ever reaching the map, so only the pages that read the map were right. The checks that exist compare a lifespan printed beside a person's link with that person's own page. They cannot see a sentence, so a birth year typed into prose slipped past all of them. The fix here is the four strings that were wrong; what it shows is that the prose case needs a check of its own."
         ]
       },
       {

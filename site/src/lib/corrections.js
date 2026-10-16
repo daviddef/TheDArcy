@@ -21,6 +21,7 @@ export const CORRECTIONS = {
     burial: ["Parramatta, New South Wales — the exact ground is not established", "the tree says only \u201cAustralia\u201d", "/australia"],
   },
   "samuel-charles-sneyd-1810": {
+    born: ["13 March 1811 \u2014 baptised at Hanley St John on 28 April", "the tree says 15 March 1810, a day and a year out. The Hanley baptism names his parents as Samuel and Elizabeth of Hanley, the very parents the tree gives him, and the same register baptises his sister Mary in 1814, the sister the tree gives him too. This slug still carries the tree's 1810 because an address that has been published is never moved", "/sneyds"],
     occupation: ["Soldier of the 4th (King's Own); sergeant of the NSW Mounted Police; chief constable at Moreton Bay; Governor of Brisbane Gaol", "the tree records no trade at all for a man with four careers", "/sergeant-sneyd"],
   },
   "arthur-hartley-sneyd": {
