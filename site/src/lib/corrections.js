@@ -43,6 +43,12 @@ export const CORRECTIONS = {
   "elizabeth-margaret-oliver": {
     born: ["17 May 1782 \u2014 baptised at Oswestry on 19 May", "the tree says 7 May 1787. The baptism is in two independent transcriptions, a FindMyPast index of the register image and the printed St Asaph volume, both naming her father David Oliver, cooper, of Cross Street, and her mother Mary, and both under 1782. The tree\u2019s date is two digits from the register\u2019s, and a birth in 1787 would make her 6 at the birth of the first child it gives her", "/sneyds"],
   },
+  "ralph-sneyd-1793": {
+    parents: ["Walter Sneyd of Keele Hall and the Hon. Louisa Bagot — not Samuel Sneyd and Elizabeth Oliver", "the tree gives him Samuel Sneyd and Elizabeth Margaret Oliver and cites nothing for it; she was eleven in 1793. A printed history of Wolstanton (1908) says Ralph Sneyd of Keele Hall, born 6 October 1793, died unmarried in July 1870, was the son of Walter Sneyd of Keele Hall by the Hon. Louisa Bagot. The tree already holds that Ralph a second time, on those parents. The source is printed and secondary, not a baptism", "/how-far-back"],
+  },
+  "walter-sneyd-1809": {
+    parents: ["a son of Walter Sneyd of Keele Hall — not of Samuel Sneyd and Elizabeth Oliver (an inference from the same printed page)", "the tree gives him Samuel Sneyd and Elizabeth Margaret Oliver, who married on 22 October 1809, the year he was born. The 1908 Wolstanton history says that Ralph Sneyd of Keele Hall, a son of Walter Sneyd of Keele Hall, was succeeded in 1870 by his brother the Rev. Walter Sneyd, and the tree’s own sources call this man the Rev. Walter Sneyd. A brother has the same father. The tree also holds a Walter Sneyd of Keele Hall with the same birth date and death year, on Walter Sneyd of Keele Hall", "/how-far-back"],
+  },
   "robert-d-arcy": {
     born: ["by 1758, and probably earlier", "the tree says 1751 in North Yorkshire. The 1751 is arithmetic from an age on a burial register, not a birth record, and nothing places him in Yorkshire", "/hornby"],
   },

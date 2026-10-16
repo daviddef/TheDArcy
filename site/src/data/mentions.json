@@ -1554,7 +1554,7 @@
 },
 {
 "path": "/worklist",
-"snippet": "…ter (1809), are hung on Samuel Sneyd and Elizabeth Oliver, and she cannot be their mother Elizabeth Margaret Oliver was born on 17 May 1782 — corrected on 16 October from the tree's 7 May 1787, on two independent transcriptions of her baptism. A…",
+"snippet": "…beth Oliver, and they are Keele sons: found on a printed page and corrected on both pages Elizabeth Margaret Oliver was born on 17 May 1782 , so she was eleven when Ralph Sneyd was born in 1793, and Walter Sneyd, born 1809, is the year she marri…",
 "title": "The work list"
 }
 ],
@@ -3462,7 +3462,7 @@
 },
 {
 "path": "/worklist",
-"snippet": "…ed 24 Done 121 Struck 3 134. Blocked — waiting on a person or an institution this archive Joseph D'Arcy's three sons — two lives now documented end to end, and one brother still missing Both were baptised at Westminster and both are…",
+"snippet": "…ed 25 Done 122 Struck 3 134. Blocked — waiting on a person or an institution this archive Joseph D'Arcy's three sons — two lives now documented end to end, and one brother still missing Both were baptised at Westminster and both are…",
 "title": "The work list"
 }
 ],
@@ -5126,7 +5126,7 @@
 "samuel-sneyd": [
 {
 "path": "/",
-"snippet": "…the family pages built each card from the tree's raw dates, bypassing the corrections, so Samuel Sneyd read 1769 to 1856 there 16 October 2026 The chart contradicted the pages it linked to, and one family's parents were on the site…",
+"snippet": "…the family pages built each card from the tree's raw dates, bypassing the corrections, so Samuel Sneyd read 1769 to 1856 thereFoundtwo sons of Samuel Sneyd and Elizabeth Oliver in the tree, born 1793 and 1809, are not theirs: she wa…",
 "title": "Twelve generations, and two claims too far."
 },
 {
@@ -5576,9 +5576,24 @@
 "walter-sneyd-1752": [],
 "walter-sneyd-1809": [
 {
+"path": "/",
+"snippet": "…the year she married. A printed 1908 history of Wolstanton names the 1793 son's father as Walter Sneyd of Keele Hall and his successor as his brother the Rev. Walter, so both are Keele sons, and the tree already holds each of them a…",
+"title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/changes",
+"snippet": "…the year she married. A printed 1908 history of Wolstanton names the 1793 son's father as Walter Sneyd of Keele Hall and his successor as his brother the Rev. Walter, so both are Keele sons, and the tree already holds each of them a…",
+"title": "What changed"
+},
+{
 "path": "/how-far-back",
 "snippet": "…ife named Barbara , not the \"Margaret Dunning\" the tree supplies. His documented heir was Walter Sneyd (1752–1829) of Keele. And the real line was there all along. The Madeley registers carry it: William Sneyd the elder, of Madeley…",
 "title": "How Far Back"
+},
+{
+"path": "/searched",
+"snippet": "…s the method's fault. The queries were whole sentences — Ralph Sneyd Keele baptised 1793, Walter Sneyd Keele Hall born 1809 and two like them — and the search matches an exact phrase. The control: the same endpoint returned 2,349 hi…",
+"title": "What Has Been Read"
 },
 {
 "path": "/sneyd",
@@ -5587,11 +5602,17 @@
 },
 {
 "path": "/worklist",
-"snippet": "…in 1793 , so he is not her son, and the tree's «6 at birth» was never the real objection. Walter Sneyd, born 1809, is the year she married Samuel Sneyd at Audlem on 22 October , so he is at best a very late 1809. The tree also holds…",
+"snippet": "…Oliver was born on 17 May 1782 , so she was eleven when Ralph Sneyd was born in 1793, and Walter Sneyd, born 1809, is the year she married Samuel Sneyd at Audlem on 22 October . Neither can be their child. That was the question; it…",
 "title": "The work list"
 }
 ],
-"walter-sneyd-of-keele-hall": [],
+"walter-sneyd-of-keele-hall": [
+{
+"path": "/searched",
+"snippet": "…ts, and they are not Samuel and Elizabeth. Of the late Mr. Ralph Sneyd: He was the son of Walter Sneyd, of Keele Hall, Sneyd, Bradwell, &c., by the Hon. Louisa Bagot, his wife, daughter of William, 1st Lord Bagot. He was born 6th October, 1793; Hi…",
+"title": "What Has Been Read"
+}
+],
 "wesley-peters": [],
 "wilfred-robertson": [],
 "wilhelm-adelmann-von-adelmannsfelden": [],

@@ -1321,11 +1321,11 @@
     },
     {
       "n": 151,
-      "state": "next",
+      "state": "done",
       "owner": "this archive",
       "since": "2026-10-16",
-      "what": "The Keele Sneyds, Ralph (1793) and Walter (1809), are hung on Samuel Sneyd and Elizabeth Oliver, and she cannot be their mother",
-      "note": "Elizabeth Margaret Oliver was born on **17 May 1782** — corrected on 16 October from the tree's 7 May 1787, on two independent transcriptions of her baptism. **At 1782 she was eleven when Ralph Sneyd was born in 1793**, so he is not her son, and the tree's «6 at birth» was never the real objection. **Walter Sneyd, born 1809, is the year she married Samuel Sneyd at Audlem on 22 October**, so he is at best a very late 1809.\n\nThe tree also holds a *second* Ralph Sneyd of 1793–1870, «of Keele», son of a Walter Sneyd of 1752–1829, with a brother Walter Sneyd «of Keele Hall» 1809–1888. **Two pairs of brothers with identical years look like one family copied onto another**, and the archive has already disproved a descent from Ralph Sneyd of Keele Hall for the older generations from the 1742 Madeley baptism. These two generations were never marked as part of that graft.\n\n**What would settle it:** the baptisms of Ralph (1793) and Walter (1809) in the Keele registers, which would name their parents. Not yet searched; nothing about the Keele family has been asserted here beyond what the tree itself says.",
+      "what": "The Keele Sneyds, Ralph (1793) and Walter (1809), were hung on Samuel Sneyd and Elizabeth Oliver, and they are Keele sons: found on a printed page and corrected on both pages",
+      "note": "Elizabeth Margaret Oliver was born on **17 May 1782**, so she was eleven when Ralph Sneyd was born in 1793, and **Walter Sneyd, born 1809, is the year she married Samuel Sneyd at Audlem on 22 October**. Neither can be their child. That was the question; it was open on 16 October and is answered in part on 17 October.\n\n**The answer, from a printed page.** *Wolstanton: Wolstan's Town* (1908) says **Ralph Sneyd of Keele Hall, born 6 October 1793, died unmarried in July 1870, was the son of Walter Sneyd of Keele Hall by the Hon. Louisa Bagot**, and that he was succeeded by **his brother the Rev. Walter Sneyd**. The tree already holds a second Ralph of 1793–1870 on those parents, and a second Walter, «of Keele Hall», with **the same birth date (23 July 1809) and the same death year (1888)** as the Walter hung on Samuel. So each man is in the tree twice, once on the right parents and once on the wrong ones.\n\n**What was done.** Both wrong-parent pages (`/people/ralph-sneyd-1793/`, `/people/walter-sneyd-1809/`) now carry a correction naming the Keele parents and marking Ralph's as printed-but-secondary and Walter's as an inference from the word *brother*. `/how-far-back` has a note under the Keele graft. The search is in `/searched`, with the four long queries that returned zero and the control that shows why.\n\n**What this does not settle.** A printed history is not a baptism: the Keele registers, which would name the fathers outright, are still unread (row 154). And the two tree entries per man are **not** declared the same person: that declaration is held for a ruling (row 155), not made here.",
       "covers": []
     },
     {
@@ -1344,6 +1344,24 @@
       "since": "2026-10-17",
       "what": "The prose gate's one real leak, in a research note, is fixed and the gate now passes",
       "note": "The new prose gate (`tools/check_prose.py`, the kit's `checkprose.py`) fails on **`notes/trove-findings-2026-09-09.md`, section 85, two places: a year beside the name of one living person (feed id `person-6`).** That is **sensitive family detail in a tracked research note**, and the repository is public. Nothing more is said about it here.\n\n**It was not fixed, by instruction.** The protocol for this gate is that a real leak is the research owner's to decide: research prose is not rewritten to make a gate pass, and the gate is left failing on it so it cannot be forgotten. Whether the right fix is removing the detail from the note, rewriting the passage, or something else is David's call. The other finding on the first run, a month and year in `sources.json` that dates a funeral eulogy beside a credited author, was a true false positive and is a reasoned allowance in `checkprose-allow.json`.\n\n**What this means in practice:** locally, `./build.sh` stops at this gate until the note is resolved. **CI is unaffected**: it has no GEDCOM, so the gate reports NOT RUN, labelled, and the deploy goes ahead. The gate sits last in the `build` chain so that it never hides another gate's result.\n\n**The gate's own proof, counts only:** 158 files read, 865 living phrases searched, 53 skipped as shared with a dead person, 31 places that name a living person, 2 failures on the first run and 1 now.\n\n**FIXED, 17 OCTOBER 2026, on David's approval** (relayed by the landing-site session, recorded here as relayed). The detail beyond the standard was removed from **two places in `notes/trove-findings-2026-09-09.md`, section 85: 28 characters, two lines**, and the surrounding research text was left exactly as it was. **No allowance was added for it**: `checkprose-allow.json` still holds the one reasoned entry, and `check:prose` now exits 0 on its own with that one allowance used. The edit was made by anchoring on the person's name in the gate's own matching, so only a detail attached directly to that name could have been removed, and a count of exactly two was confirmed before anything was written.",
+      "covers": []
+    },
+    {
+      "n": 154,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-10-17",
+      "what": "Read the Keele baptisms of Ralph (1793) and Walter (1809) Sneyd, which would name their fathers outright",
+      "note": "The 1908 Wolstanton history gives Ralph's parents and calls Walter his brother; it is printed, secondary and fifteen years after the last of them died. The registers of **Keele St John** would settle it in the parents' own words. Ralph is a baptism before 16 October 1793; Walter's birth place is Keele in the tree, on a MyHeritage source and not a register. Free route first (FreeREG, Staffordshire Record Office's published transcripts, the Internet Archive's printed registers); nothing behind a login or a bot check. Record every null in `/searched` with a control.",
+      "covers": []
+    },
+    {
+      "n": 155,
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-10-17",
+      "what": "Ruling: declare the two Ralph Sneyds of 1793 and the two Walter Sneyds of 1809 as one person each?",
+      "note": "`same-person.json` says the two Ralphs were **not** declared because their parents differ, and that a declaration is made only on same name, same years, and same parents or children. Row 151 found that **the parents differ because one pair is wrong**, and the tree holds the Walter pair on **the same full birth date and death year**. The rule as written still says no (parents differ); the evidence now says one man each. This archive has not changed the rule or declared either pair, because it is yours to make. **If yes:** four ids to add, the copy on Samuel Sneyd being the one that draws more of the family (Walter has a marriage and children, the Keele copy has none), so the primary would be the copy on the *wrong* parents unless the rule is amended; that is the thing to decide.",
       "covers": []
     }
   ],
