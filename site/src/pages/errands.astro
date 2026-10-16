@@ -4,7 +4,7 @@ import Errands from "@daviddef/archive-kit/components/Errands.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
-import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import { md, mdp } from "../lib/md.js";
 import e from "../data/errands.json";
 
 const n = (k) => e.rows.filter((r) => r.state === k).length;
@@ -38,7 +38,7 @@ const groups = [{
        has no slot of its own for it, so it leads the slot that exists. A line
        nobody can read is not published, whatever the repository says. */
     why: mdp([r.why ? `**${r.why}**` : "", r.settles].filter(Boolean).join("\n\n")),
-    ref: r.file,
+    ref: md(r.file),
     stateLabel: e.states[r.state] ? e.states[r.state][0] : r.state,
     colour: e.states[r.state] ? e.states[r.state][1] : null,
     links: r.href ? [["Context", r.href]] : [],
@@ -59,7 +59,7 @@ const groups = [{
         </span>
       ))}
     </div>
-    <Note style="margin-top:1rem">{e.tallyNote}</Note>
+    <Note style="margin-top:1rem"><span set:html={md(e.tallyNote)} /></Note>
     {unlabelled.length > 0 && (
       <p class="small">Filed under a state this page has no entry for: {unlabelled.join(", ")}.</p>
     )}

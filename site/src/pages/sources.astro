@@ -8,7 +8,7 @@ import { people } from "../lib/people.js";
 import printed from "../data/printed.json";
 import src from "../data/sources.json";
 import snap from "../data/snapshot-summary.json";
-import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import { mdp } from "../lib/md.js";
 
 /* The two prose lists below used to be hand-written <ul>s in this file — about
    a hundred lines of markup with the evidence inside it. They are data now, so
@@ -122,7 +122,7 @@ const reachable = src.recordSets.filter((r) => r.url).length;
     </Scroll>
     <Note style="margin-top:1.2rem">
       <strong>{printed.rows.length} sources, and not one of them cost anything.</strong>
-      {printed.note}
+      <span set:html={mdp(printed.note)} />
     </Note>
   </section>
 

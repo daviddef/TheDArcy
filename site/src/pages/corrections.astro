@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import Corrections from "@daviddef/archive-kit/components/Corrections.astro";
 import { OWN, INHERITED, nOwn, CAUSES, causeTally } from "../lib/errors.js";
 
@@ -14,13 +15,12 @@ const top = tally[0];
    page sets the retraction above the truth, which is the same pair every
    archive in the estate keeps, and the lesson stays under each one because it
    is the reason this page exists. */
-const esc = (t) => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const own = OWN.map((e) => ({
   when: e.when,
-  was: esc(e.what),
-  now: esc(e.truth),
-  how: esc(e.why),
-  why: `<strong>The lesson.</strong> ${esc(e.lesson)}`,
+  was: md(e.what),
+  now: md(e.truth),
+  how: md(e.why),
+  why: `<strong>The lesson.</strong> ${md(e.lesson)}`,
   where: e.href,
   whereLabel: "Where it was corrected \u2192",
 }));

@@ -4,7 +4,7 @@ import Changes from "@daviddef/archive-kit/components/Changes.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
-import { mdp } from "@daviddef/archive-kit/lib/md.js";
+import { md, mdp } from "../lib/md.js";
 import c from "../data/changes.json";
 const passes = c.days.length;
 const items = c.days.reduce((a, d) => a + d.did.length, 0);
@@ -19,9 +19,14 @@ const items = c.days.reduce((a, d) => a + d.did.length, 0);
   <Changes u={u} days={c.days.map((d) => ({
     when: d.when,
     entries: [{
-      title: d.title,
-      found: d.found || "",
-      did: "<ul>" + d.did.map((x) => `<li>${x}</li>`).join("") + "</ul>",
+      title: md(d.title),
+      /* `found` is a string on some days and a list of [label, text] pairs on
+         the rest. The pairs were handed to the shared component as an array,
+         which prints the labels glued to the text ("Movedthe archive..."). */
+      found: Array.isArray(d.found)
+        ? d.found.map(([k, v]) => `<strong>${md(k)}</strong> ${md(v)}`).join("<br>")
+        : md(d.found || ""),
+      did: "<ul>" + d.did.map((x) => `<li>${md(x)}</li>`).join("") + "</ul>",
     }],
   }))} />
 

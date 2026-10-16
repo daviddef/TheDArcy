@@ -12,11 +12,9 @@ import Questions from "@daviddef/archive-kit/components/Questions.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
-import { md, mdp, plain } from "@daviddef/archive-kit/lib/md.js";
+import { md, mdp, plain } from "../lib/md.js";
 import q from "../data/questions.json";
 
-const link = (h) => h.replace(/\[([^\]]+)\]\((\/[^)]*)\)/g,
-  (_, t, href) => `<a href="${u(href)}">${t}</a>`);
 const n = (k) => q.rows.filter((r) => r.state === k).length;
 const S = (r) => q.states[r.state] || q.states.open;
 const DAY = 864e5;
@@ -29,7 +27,7 @@ const age = (r) => r.since && r.state !== "answered"
   dek={q.dek}>
 
   <section class="blk">
-    <div class="prose" set:html={link(mdp(q.lead))}></div>
+    <div class="prose" set:html={mdp(q.lead)}></div>
     <div style="margin-top:1.3rem;display:flex;flex-wrap:wrap;gap:8px">
       {Object.entries(q.states).map(([k, [label, colour, gloss]]) => (
         <span class="chip" style={`border-color:${colour}`} title={gloss}>
@@ -55,7 +53,7 @@ const age = (r) => r.since && r.state !== "answered"
   }))} />
 
   <section class="blk" style="border-bottom:0">
-    <div class="prose" set:html={link(mdp(q.close))}></div>
+    <div class="prose" set:html={mdp(q.close)}></div>
     <p class="small" style="margin-top:1.6rem;color:var(--ink-3)">
       The other registers: <a href={u("/worklist/")}>what is being done</a> ·
       <a href={u("/searched/")}>what has been read</a> ·

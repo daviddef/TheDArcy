@@ -55,6 +55,23 @@ export const isNamedOnPurpose = (name) => NAMED.has(name);
 export const publishableOrNamed = (rows) =>
   (rows || []).filter((r) => r && (!r.living || NAMED.has(r.name)));
 
+
+/* The GEDCOM export HTML-escapes a place written with angle brackets, so the
+   data holds "&lt;Ehrstaedt, ...&gt;". Astro escapes the ampersand again and
+   the page printed "&lt;Ehrstaedt" as visible text (3 pages). The atlas tools
+   already read it as "Ehrstaedt" (html.unescape, then drop the brackets);
+   this does the same for display. The data files are left as they are. */
+const ENT = { "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#39;": "'", "&amp;": "&" };
+export const cleanPlace = (s) =>
+  typeof s === "string"
+    ? s.replace(/&(?:lt|gt|quot|#39|amp);/g, (m) => ENT[m]).replace(/[<>]/g, "").replace(/\s+/g, " ").trim()
+    : s;
+const cleanPlaces = (rec) => {
+  const out = {};
+  for (const k of ["bornPlace", "diedPlace"]) if (rec[k]) out[k] = cleanPlace(rec[k]);
+  return out;
+};
+
 /* One person = one GEDCOM record. The tree is the authority on identity here;
    this archive's job is to say how well each record is evidenced, not to merge
    or split people behind the reader's back. */
@@ -64,7 +81,7 @@ function build() {
   const add = (rec, extra = {}) => {
     if (!rec || rec.living) return;            // living people never enter the build
     const prev = byId.get(rec.id);
-    byId.set(rec.id, { ...(prev || {}), ...rec, ...extra });
+    byId.set(rec.id, { ...(prev || {}), ...rec, ...extra, ...cleanPlaces(rec) });
   };
 
   for (const a of ancestors) add(a, { ancestor: true });
