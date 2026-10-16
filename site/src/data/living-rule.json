@@ -12,7 +12,9 @@
     "declared here rather than forbidden, and an UNDECLARED one refuses the build.",
     "",
     "A page in this list is not exempt from the rule. It is exempt from the",
-    "HELPER, having stated why it does not need it."
+    "HELPER, having stated why it does not need it.",
+    "",
+    "16 October 2026: the rule changed from «no living person is a page» to «a living person is a name, a relationship, a town and a country». The helpers keep their names and now mean «may be named»; the gate still refuses a page that decides for itself who is drawn or what a living row carries."
   ],
   "allow": [
     {
@@ -27,8 +29,8 @@
     },
     {
       "page": "site/src/pages/families/[slug].astro",
-      "use": "f.members.filter((m) => !m.living)",
-      "why": "NOT THIS ARCHIVE'S FILE. Written on 22 September by the estate's harmonisation session, which owns it; correct behaviour, hand-rolled. Its author has been told that publishable() exists and the decision to adopt it is theirs. Declared rather than refused, because failing a neighbour's build to force a refactor of their own file is a worse neighbour than a duplicated filter."
+      "use": "const alive = !!p.living  (chooses which fields of a row to draw)",
+      "why": "A ROW'S FIELDS, not a filter. Until 16 October 2026 this page hand-rolled f.members.filter((m) => !m.living) and published forty-four living people on the day it was written; under the standard of that date (a living person is a name, a relationship, a town and a country) the row is drawn for every member and `alive` only decides which fields it carries: no era, no born, no died, no trade, no marriage date, no confidence. Declared rather than refused because the choice IS the rule, and the data holds nothing else for it to leak."
     }
   ]
 }

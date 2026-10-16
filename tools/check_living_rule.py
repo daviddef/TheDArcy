@@ -22,6 +22,15 @@ a page reading families.json — that is ordinary — it stops a page deciding f
 itself what living means.
 
     python3 tools/check_living_rule.py
+
+16 October 2026. The rule it guards changed — a living person is now a name, a
+relationship, a town and a country, where it was nobody at all — and this gate
+did not need to: what it refuses is a page that decides the rule for itself, and
+a page that hand-rolls `!m.living` is as wrong when the rule is «name them» as
+it was when the rule was «drop them». The helpers in src/lib/people.js now mean
+«may be named» (publishable, nameIfPublishable) and carry the questions a page
+does have to ask — isLiving(), lifeLine(). tools/check_living_standard.py is the
+gate for what a living person's page and data may hold.
 """
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

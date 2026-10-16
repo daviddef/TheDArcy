@@ -10,8 +10,8 @@
       "why": "Where this archive lives, stated in three files that must agree: astro.config.mjs's `site`, site/public/CNAME and site/public/robots.txt's Sitemap line. MOVED 12 OCTOBER 2026 from daviddef.github.io/TheDArcy, because defranceski.com is a Pages site served by its own repo and project paths do not inherit it — defranceski.com/TheDArcy/ returns 404 — so a subdomain was the only route. THE CHECK EXISTS BECAUSE THE MOVE LEFT ONE OF THE THREE BEHIND. robots.txt went on naming a sitemap at the old origin while everything else had moved; the build was green and every gate passed, because no gate read it. A reader would never notice and a crawler reads nothing else. CNAME is the dangerous one: this repo deploys by Actions uploading site/dist, and a deploy carrying no CNAME DETACHES the custom domain, so a wrong or missing one takes the whole archive dark rather than leaving a stale line. The gate does not judge whether the address is right — nobody here can — only whether the three agree, and all three failure modes were provoked and seen to refuse before it was trusted."
     },
     "livingPolicy": {
-      "value": "named-bare",
-      "why": "named-bare: a living person is named and nothing else about them is published. people.js reads living.json's `policy` and falls back to this string, and the key is currently absent, so the fallback is doing the work."
+      "value": "named-place",
+      "why": "named-place: a living person is named, with their town and country, and nothing more. MOVED 16 OCTOBER 2026 from named-bare-by-omission (no living person published as a person at all; the key was absent and people.js's fallback was doing the work) on David's ruling, made knowing the tree judges 2,034 people living: this archive adopts the standard the Defranceschi archive keeps. The key is now present in living.json and people.js falls back to the same string."
     },
     "namedLiving": {
       "value": [
@@ -22,7 +22,7 @@
         "Ian D'Arcy",
         "Ian Kenneth D'Arcy"
       ],
-      "why": "The six living people named on purpose, confirmed deliberately by David. Anyone appearing or disappearing here is a change to who this archive publishes."
+      "why": "The six living people named on purpose in prose, confirmed deliberately by David (14 and 15 September 2026). Anyone appearing or disappearing here is a change to who this archive names on purpose. They are unchanged by the 16 October 2026 standard; every other living person is now named too, and that is the policy above, not this list."
     },
     "grafts": {
       "value": {

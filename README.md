@@ -48,18 +48,21 @@ Parramatta, Chatham, Portsmouth, Limerick, Monaghan, Ayrshire, Somerset and Bris
 | **Disputed** | Asserted in the family record but unsupported, or contradicted, by what can be seen. |
 | **Family lore** | Told, remembered, not corroborated. Kept because it is precious; labelled because pretending otherwise is how family myths become family history. |
 
-**Living people are omitted from the build entirely** — not hidden, not gated, not present in the
-output. The rule is applied once, in `classify_living()` in `tools/gedcom.py`, at the boundary
-between the research data and the published site.
+**A living person is named, with their town and country, and nothing more** — a name, a
+relationship, a town and a country; no date, record, source, note, photograph or structured data,
+and their page, where there is one, is `noindex`. The rule is applied once, in
+`living_json()` in `tools/build_site_data.py`, at the boundary between the research data and the
+published site, and who is living is decided by `classify_living()` in `tools/gedcom.py`. (Until
+16 October 2026 this archive published no living person as a person at all; David ruled, knowing
+the tree judges 2,034 people living, that it adopts the standard the Defranceschi archive keeps.)
 
 Because thousands of people in a tree this size carry no dates at all, judging each by their own
 record alone marks every one of them living — safe, but useless. So the build computes an **upper
 bound on each person's birth year** from their own events, their children's births, their marriages
-and their parents' bounds, and publishes somebody only when *even the latest year they could have
+and their parents' bounds, and treats somebody as dead only when *even the latest year they could have
 been born* is more than a century ago. Every step is a real bound, never a guess, and a recorded
 birth is never overridden by inference. On the current export that judges **2,034 of 15,643** people
-living, and withholds 4 of the 243 direct ancestors. A living spouse, parent or child is not named on
-anybody else's page either. A removal request is honoured within days, without argument and without
+living; those in the numbered ancestors and the thirteen families have a page here, the rest are named, if at all, as a relative (the counts are in `living.json`). A removal request is honoured within days, without argument and without
 requiring a reason.
 
 The raw GEDCOM is **not committed** — it contains every living person in full. `sources/*.ged` is

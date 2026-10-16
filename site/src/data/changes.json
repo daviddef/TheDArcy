@@ -4,6 +4,37 @@
   "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
   "days": [
       {
+        "when": "16 October 2026",
+        "title": "A living person is now a name, a town and a country, where before there was nothing",
+        "did": [
+          "THE RULE CHANGED, AND IT CHANGED IN THE DATA. Until today this archive published no living person as a person: no page, no dates, no birthplace, and no name where it would stand as somebody's spouse, parent or child. David ruled, with the tree's 2,034 living people in front of him, that it adopts the standard the Defranceschi archive keeps: a living person is named, with their town and country, and nothing more. tools/build_site_data.py now BUILDS a living person out of a name, their relationships and the town and country of their birthplace, and never reads the rest of their record, so there is no date for a page to forget to hide.",
+          "WHO IS LIVING DID NOT CHANGE. The same upper-bound test decides it, so people the tree gives no dates at all, and people it records as dead without saying when, are still treated as living. They are named like the rest, and their pages say «treated as living».",
+          "THE GATES WERE TURNED THE OTHER WAY. check_living.py used to search every page for 1,768 living name phrases and refuse to ship if one appeared. A name is allowed now, so it searches instead for everything else the tree holds about a living person (every full date, note, source, occupation and long place) in the built site and in every file the repository tracks, and checks that the data and the tree agree about who is living. A new gate, check_living_standard.py, needs only the committed data and the built pages, so it runs in the deploy: every living page is noindex, carries no structured data, no table, no image and no year; none is in the sitemap, the search index or whoindex.json; and a dead person's page must behave the opposite way, or the build is not clean. Both were shown to fail on planted faults."
+        ],
+        "found": [
+          [
+            "Changed",
+            "43 living people now have a page, each noindex; 42 more are named without one, as a spouse, brother, sister or parent. The tree judges 2,034 living; the archive gives a page only to the numbered ancestors and the thirteen families"
+          ],
+          [
+            "Changed",
+            "the search index and whoindex.json hold no living person, and no living name is left in the text of the pages the search indexes"
+          ],
+          [
+            "Kept",
+            "the six people named on purpose in prose, and the confirmation recorded for each; none of them was downgraded"
+          ],
+          [
+            "Kept",
+            "every address of a person who has died: the living are slugged after the dead, so admitting them moved no published URL"
+          ],
+          [
+            "Flag",
+            "of the 85 living people named, 48 have no birth date in the tree, and 15 of those are recorded as dead without a date. They are treated as living because the rule does not move"
+          ]
+        ]
+      },
+      {
         "when": "12 October 2026",
         "title": "The archive moves to darcy.defranceski.com, and loses two and a half hours of its own readership on the way",
         "found": [

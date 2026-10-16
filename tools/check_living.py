@@ -1,142 +1,242 @@
 #!/usr/bin/env python3
-"""Who is alive in this archive — the kit decides whether any of them got out.
+"""A living person is a name, a relationship, a town and a country. The tree says what is NOT allowed.
 
-This archive's rule: LIVING PEOPLE ARE NOT PUBLISHED AS PEOPLE — no person
-page, no birth year, no birthplace, and no name where it would appear as
-somebody's spouse, parent or child. SIX ARE NAMED ON PURPOSE, as the authors of
-a eulogy and as the reason the archive exists, each confirmed by its owner and
-listed in living.json. That is why the gate runs `--policy named-bare` and not
-`absent`; run under `absent` on 21 September 2026 it reports eleven leaks and
-every one is one of those six.
+THE RULE (David, 16 October 2026, made knowing the tree holds 2,034 people it
+judges living): this archive adopts the standard the Defranceschi archive keeps.
+A living person is named, with their town and country, and nothing more: no date,
+no record, no source, no note, no occupation, no photograph, no structured data.
 
-This docstring said "NOT PUBLISHED AT ALL — absent from the output" until that
-day, and so did /about/. It was a stronger claim than the archive keeps.
-build_site_data.py applies it once, at the boundary between the research data
-and the site, so that nobody can be living on one page and dead on another.
-This is the check that the rule held, and it reads the BUILT HTML, because
-source can be correct and output wrong: a living person's name reaches a page
-through a deceased relative's spouses, parents and children long after they
-were filtered out of the person list.
+THIS FILE USED TO ENFORCE THE OPPOSITE. Until that day the rule was «no living
+person is published as a person, and no living NAME appears anywhere», and this
+was the gate: it read the tree, built 1,768 name phrases, and refused to ship if
+any appeared on a page. A name is now allowed, so that test is gone — and what
+replaces it must not be weaker than what it replaced, so it is turned the other
+way. It still reads the tree, which is the only place that knows who is living,
+and what it reads out is no longer their NAMES but everything ELSE about them:
 
-WHY THE NAMES ARE NOT COMMITTED. This tree holds over two thousand living
-people. A file listing them, in a PUBLIC repository, would be precisely the
-disclosure the rule exists to prevent — a machine-readable directory of living
-relatives, committed forever to a git history. And a hand-kept list goes
-stale. The GEDCOM is the authority, it is regenerated whenever the tree is
-exported, and it is gitignored. So the names are read at check time and never
-written down. What IS committed is site/src/data/living.json: the policy, the
-exceptions and the counts. Exceptions need human judgement and version
-control. Names need neither.
+  · every full date attached to a living person's events (day, month, year),
+    in the five spellings a page might use — less the dates a dead person also
+    carries, which cannot be told apart;
+  · every note, source title, occupation, cause of death and place longer than a
+    town and a country that the tree holds for a living person — less what a
+    dead person's record also holds, for the same reason.
 
-WHAT THIS FILE IS NOW. The matching — name phrases, exact-namesake
-subtraction, longer-published-name subtraction, the combined single-pass
-regex — was written here and now lives in the kit, where the other six
-archives get it too. This file is what only this archive can do: open its own
-tree and say who is alive. That split is the whole of the convergence.
+and it searches for them in EVERYTHING THE SITE SERVES (every page, every .json,
+the sitemap) and EVERYTHING THE REPOSITORY TRACKS, because every committed file
+in this repository is public and a generator that put a living person's
+birthday in a data file leaks it whether or not a page ever prints it. The
+messages name the file and the kind of thing found, never the thing: a log that
+printed it would be the leak.
 
-    python3 tools/check_living.py            # gate the build
-    python3 tools/check_living.py --verbose  # show what matched and why
+It also checks that the data and the tree agree about WHO IS LIVING, which is the
+fault that matters most under a rule that publishes living people by name: a
+person the tree judges living and the data does not flag would be emitted with
+their full record, and nothing in the page layer would know.
+
+And it runs the part that needs only the committed data and the built pages
+(tools/check_living_standard.py: noindex, no structured data, nothing in the
+sitemap or the search index, only the headings a living page has). That part
+also runs in the deploy, where there is no tree. This part cannot, and says so.
+
+    python3 tools/check_living.py             # gate the build
+    python3 tools/check_living.py --controls  # plant each fault, show it is caught
 """
-import os, sys, json, glob, argparse
-import sys as _sys, os as _os
-_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import os, sys, json, glob, re, html, subprocess, argparse, copy
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import outdir
+import check_living_standard as std
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(ROOT, "tools"))
-sys.path.insert(0, os.path.join(ROOT, "site", "node_modules", "@daviddef",
-                                "archive-kit", "kit", "tools"))
-from gedcom import load, display, classify_living          # noqa: E402
-import checkliving                                          # noqa: E402
-
-DIST = outdir.out()
 DECL = os.path.join(ROOT, "site", "src", "data", "living.json")
+MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
+LONG = ["January", "February", "March", "April", "May", "June", "July", "August",
+        "September", "October", "November", "December"]
+FULL = re.compile(r"\b(\d{1,2})\s+([A-Za-z]{3})[A-Za-z]*\.?\s+(\d{4})\b")
+TEXT_EXT = (".json", ".astro", ".js", ".mjs", ".md", ".py", ".tsv", ".csv", ".txt", ".html",
+            ".yml", ".yaml", ".css", ".xml", ".sh")
 
 
-def _n_pages(dist):
-    return sum(1 for r, _, fs in os.walk(dist) for f in fs if f.endswith(".html"))
-
-
-def json_pass(dist, living, publish, quiet=False):
-    """The .json this site SERVES, which the kit's feed() has never opened.
-
-    feed() walks .html. This archive also ships three JSON files to the
-    browser — searchindex.json at 2.1MB, atlas-data.json, whoindex.json — and
-    an atlas serves its places that way and a search box its index. They are
-    regenerated from the same tree on every build, so "they happen to be clean"
-    is a fact about today and not a guarantee about tomorrow.
-
-    THE TEST IS NARROWER THAN feed()'S, AND DELIBERATELY. A substring sweep over
-    these files reports twenty-five hits and every one is noise: "George" inside
-    George Pitt D'Arcy, "William Murdoch" inside Keith William Murdoch
-    1925-1996, "Geraldine" inside Geraldine D'Arcy 1872-1937. What matters in a
-    structured index is not whether a living person's name occurs somewhere in
-    two megabytes of text — it is whether the file NAMES A LIVING PERSON AS A
-    PERSON. So this reads the fields that carry a person's name and compares
-    them whole:
-
-        searchindex.json   {"k": "Person", "t": <name>}
-        whoindex.json      [<name>, <slug>, <count>]
-        atlas-data.json    "people": [{"n": <name>}]
-
-    A whole-field match against a living phrase is not noise. It is a person
-    entry, with a link, for somebody who is alive.
-    """
-    import re as _re
-    fields = []
-    for f in sorted(glob.glob(os.path.join(dist, "*.json"))):
-        try:
-            d = json.load(open(f, encoding="utf-8"))
-        except Exception as e:
-            print(f"  WARN  {os.path.basename(f)} will not parse — {e}")
+def date_forms(raw):
+    """Every full date inside one GEDCOM date value — a plain date, or both ends
+    of «BET 1 MAR 1949 AND 3 JUN 1950» — as [(key, [forms])]. Each form is a way
+    a page might write it, lowercase."""
+    out = []
+    for m in FULL.finditer(raw or ""):
+        d, mon, y = int(m.group(1)), m.group(2).upper(), m.group(3)
+        if mon not in MONTHS:
             continue
-        name = os.path.basename(f)
+        i = MONTHS.index(mon)
+        forms = [f"{d} {MONTHS[i]} {y}", f"{d} {MONTHS[i].title()} {y}", f"{d} {LONG[i]} {y}",
+                 f"{LONG[i]} {d}, {y}", f"{LONG[i]} {d} {y}", f"{y}-{i+1:02d}-{d:02d}",
+                 f"{d:02d} {MONTHS[i].title()} {y}"]
+        out.append(((d, i + 1, int(y)), sorted({f.lower() for f in forms})))
+    return out
 
-        def walk(o):
-            if isinstance(o, dict):
-                if o.get("k") == "Person" and o.get("t"):
-                    fields.append((name, o["t"]))
-                if "n" in o and isinstance(o["n"], str):
-                    fields.append((name, o["n"]))
-                for v in o.values():
-                    walk(v)
-            elif isinstance(o, list):
-                if o and isinstance(o[0], str) and len(o) == 3:
-                    fields.append((name, o[0]))
-                for v in o:
-                    walk(v)
-        walk(d)
 
-    # EXACT-NAMESAKE SUBTRACTION, the same allowance feed() makes on the HTML.
-    # Without it this fires on every dead person who shares a name with a living
-    # relative, and in a family that reuses forenames the way this one does it
-    # would be switched off inside a week. The archive publishes a William
-    # Murdoch born 1856 at St Quivox and a James Atwell of 1853-1907; living
-    # people carry both names too. A phrase that also belongs to somebody
-    # publishable is not evidence that anybody living got out.
-    norm = checkliving.norm
-    lv = {norm(x) for x in living if x} - {norm(x) for x in publish if x}
-    bad = [(f, t) for f, t in fields if norm(t) in lv]
-    if not quiet:
-        print(f"  {'ok  ' if not bad else 'FAIL'}  living/json  "
-              f"{len(fields):,} person name(s) across {len(glob.glob(os.path.join(dist, '*.json')))} "
-              f"served json file(s) — {len(bad)} name a living person")
-    for f, t in bad[:20]:
-        print(f"   LEAK {f}: person entry named {t!r}")
-    return 1 if bad else 0
+def norm(s):
+    return re.sub(r"\s+", " ", html.unescape(str(s or ""))).strip().lower()
+
+
+def harvest(people, families, flags):
+    """What the tree holds for a living person that this site may not publish.
+    Returns {kind: set(strings)}, each already net of what a dead person also holds."""
+    from gedcom import ev
+    living = {k: set() for k in ("date", "text", "place")}
+    dead = {k: set() for k in ("date", "text", "place")}
+    dead_dates = set()
+    live_dates = {}
+
+    for pid, p in people.items():
+        bucket = living if flags.get(pid) else dead
+        for e in p["events"]:
+            for key, forms in date_forms(e.get("date", "")):
+                if flags.get(pid):
+                    live_dates.setdefault(key, set()).update(forms)
+                else:
+                    dead_dates.add(key)
+            for fld in ("detail", "cause", "note", "agency"):
+                v = norm(e.get(fld, ""))
+                if len(v) >= 14:
+                    bucket["text"].add(v[:120])
+            pl = norm(e.get("place", ""))
+            if len(pl) >= 14 and (pl.count(",") >= 3 or re.search(r"\d", pl)):
+                bucket["place"].add(pl)
+        for n in p.get("notes", []):
+            for chunk in re.split(r"[\n\r]+|(?<=[.!?])\s+", html.unescape(re.sub(r"<[^>]+>", " ", n))):
+                v = norm(chunk)
+                if len(v) >= 30:
+                    bucket["text"].add(v[:120])
+        for s in p.get("sources", []):
+            v = norm(s)
+            if len(v) >= 14:
+                bucket["text"].add(v[:120])
+    # A marriage is a date about both of the people in it. A couple of the dead
+    # is the dead's; a couple with a living partner is a living person's date,
+    # and the generator blanks it (build_site_data.spouses).
+    for f in families.values():
+        both_dead = all(not flags.get(x) for x in (f.get("husb"), f.get("wife"))
+                        if x and x in people)
+        for e in f["events"]:
+            for key, forms in date_forms(e.get("date", "")):
+                if both_dead:
+                    dead_dates.add(key)
+                else:
+                    live_dates.setdefault(key, set()).update(forms)
+    for key, forms in live_dates.items():
+        if key not in dead_dates:
+            living["date"].update(forms)
+    return {k: living[k] - dead[k] for k in living}
+
+
+def tracked_files():
+    try:
+        out = subprocess.run(["git", "ls-files", "-z"], cwd=ROOT, capture_output=True, check=True).stdout
+    except Exception:
+        return None
+    return [f for f in out.decode("utf-8").split("\0") if f and f.lower().endswith(TEXT_EXT)]
+
+
+def read(path):
+    try:
+        return open(path, encoding="utf-8", errors="replace").read()
+    except Exception:
+        return ""
+
+
+def corpus_of(dist):
+    """Name -> text. Pages are searched as visible text AND as raw source."""
+    c = {}
+    for dp, _, fs in os.walk(dist):
+        for f in fs:
+            if f.lower().endswith((".html", ".json", ".xml", ".txt", ".js")):
+                p = os.path.join(dp, f)
+                raw = read(p)
+                rel = "dist/" + os.path.relpath(p, dist).replace(os.sep, "/")
+                c[rel] = norm(re.sub(r"<[^>]+>", " ", raw)) if f.endswith(".html") else norm(raw)
+    tr = tracked_files()
+    if tr is not None:
+        for f in tr:
+            c[f] = norm(read(os.path.join(ROOT, f)))
+    return c, tr is not None
+
+
+def compile_all(h):
+    pats = {}
+    for kind, strings in h.items():
+        if strings:
+            # Whole tokens only: «2 sep 1949» is inside «12 sep 1949», which is somebody else.
+            pats[kind] = re.compile(r"(?<![0-9a-z-])(?:" + "|".join(
+                re.escape(s) for s in sorted(strings, key=len, reverse=True)) + r")(?![0-9a-z])")
+    return pats
+
+
+def scan(corp, pats):
+    """[(file, kind)] — never the match itself."""
+    hits = []
+    for name, text in corp.items():
+        for kind, rx in pats.items():
+            if rx.search(text):
+                hits.append((name, kind))
+    return hits
+
+
+def corpus_fails(corp, h):
+    """A search that looked in nothing, or for nothing, has not passed."""
+    out = []
+    if sum(len(v) for v in h.values()) == 0:
+        out.append(("scan", "nothing was harvested from the living, so nothing was searched for"))
+    if len(corp) < 50:
+        out.append(("scan", f"only {len(corp)} file(s) in the corpus — the build is unfinished or missing"))
+    return out
+
+
+def flags_vs_data(people, flags, data):
+    """The tree and the data must agree about who is living."""
+    fails = []
+    seen = {}
+    for src in ("ancestors", "families", "line"):
+        rows = data[src] if src != "families" else [m for f in data[src] for m in f["members"]]
+        for r in rows:
+            seen[r["id"]] = r
+            if r["id"] not in people:
+                fails.append(f"{src}: a record whose id is not in the tree")
+                continue
+            if bool(r.get("living")) != bool(flags.get(r["id"])):
+                fails.append(f"{src}: a record's living flag disagrees with the tree "
+                             f"(data says {bool(r.get('living'))}, tree says {bool(flags.get(r['id']))})")
+    for r in seen.values():
+        for s in r.get("spouses") or []:
+            sid = s.get("id")
+            if sid and sid in people and bool(s.get("living")) != bool(flags.get(sid)):
+                fails.append("a spouse entry's living flag disagrees with the tree")
+    return fails
+
+
+def place_vs_tree(people, flags, data):
+    """The place on a living record is exactly the town and country the tree reduces to."""
+    import build_site_data as b
+    from gedcom import born
+    bad = 0
+    for src in ("ancestors", "families"):
+        rows = data[src] if src != "families" else [m for f in data[src] for m in f["members"]]
+        for r in rows:
+            if r.get("living") and r["id"] in people:
+                want = b.town_country(born(people[r["id"]]).get("place", ""))
+                if (r.get("place") or "") != want:
+                    bad += 1
+    return bad
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dist", default=DIST)
-    ap.add_argument("--declared", default=DECL)
-    ap.add_argument("--verbose", action="store_true")
+    ap.add_argument("--dist", default=None)
+    ap.add_argument("--controls", action="store_true")
     ap.add_argument("--quiet", action="store_true")
     a = ap.parse_args()
-    # The flag is the repository's default; the variable is the operator.
-    a.dist = outdir.resolve(a.dist)
-    if outdir.note(a.dist):
-        print(outdir.note(a.dist))
+    dist = outdir.resolve(a.dist)
+    if outdir.note(dist):
+        print(outdir.note(dist))
 
     if not glob.glob(os.path.join(ROOT, "sources", "*.ged")):
         # Gitignored on purpose — it carries every living person in full — so CI
@@ -144,55 +244,139 @@ def main():
         # but it must not fail a deploy it was never able to run either. So it
         # says which of those two happened, and never pretends to have checked.
         if os.environ.get("CI"):
-            print("check_living: NOT RUN. The GEDCOM is gitignored, so CI cannot read "
-                  "it. This gates locally, where the tree exists; in CI the kit's "
-                  "check:living runs against the committed data.")
+            print("check_living: NOT RUN. The GEDCOM is gitignored, so CI cannot read it. "
+                  "check_living_standard.py, which needs only the committed data and the "
+                  "built pages, runs in the deploy instead.")
             return 0
-        print("check_living: no GEDCOM under sources/. This guard reads the tree to "
-              "learn who is alive, so a missing tree is a FAILURE, not a pass. "
+        print("check_living: no GEDCOM under sources/. This guard reads the tree to learn "
+              "who is alive, so a missing tree is a FAILURE, not a pass. "
               "(In CI the absence is expected and this exits 0 with a notice.)")
         return 1
-
-    if not os.path.exists(a.declared):
-        print(f"check_living: no declaration at {a.declared}. The exceptions are the "
-              f"part a human has to judge, so a missing declaration is a FAILURE.")
+    if not os.path.isdir(dist):
+        print(f"check_living: no {dist} — build first")
         return 1
-    decl = json.load(open(a.declared, encoding="utf-8"))
-    # Two kinds of exception, kept apart on purpose. A NAMESAKE is not a living
-    # person at all — a historical Richard Smith, a middle name inside a longer
-    # one. A NAMED entry IS a living person this archive has decided to name.
-    allow = set(decl.get("allow", []))
-    allow |= {e["phrase"] for e in decl.get("namesakes", []) if e.get("phrase")}
-    allow |= {e["phrase"] for e in decl.get("named", []) if e.get("phrase")}
 
+    from gedcom import load, classify_living
     people, families = load()
-    living_ids = classify_living(people, families)
-    living = {checkliving.norm(display(people[p]) or "") for p in people if living_ids.get(p)}
-    publish = {checkliving.norm(display(people[p]) or "") for p in people if not living_ids.get(p)}
-    living.discard(""); publish.discard("")
+    flags = classify_living(people, families)
+    n_living = sum(1 for v in flags.values() if v)
 
-    # PEOPLE, not names. The sets above are distinct name phrases — two living
-    # cousins called John Smith are one phrase and two people — so counting the
-    # sets would quietly understate the rule's reach. /about, /index, /method,
-    # /register and /the-other-archives all quote these, and they were hardcoded
-    # on all five until they drifted once already.
-    n_living = sum(1 for p in people if living_ids.get(p))
-    counts = {"tree": len(people), "living": n_living,
-              "published": len(people) - n_living,
-              "phrases": len(living), "pages": _n_pages(a.dist)}
+    data = std.load_data()
+    fails = []
+
+    # 1. the part that needs no tree
+    world = std.load_pages(dist)
+    extra = [f for f in glob.glob(os.path.join(std.DATA, "*.json"))
+             if os.path.basename(f) not in ("ancestors.json", "families.json", "line.json",
+                                            "living.json", "decisions.json")]
+    sfails, info = std.run(data, world, extra)
+    fails += [("standard/" + r, m) for r, m in sfails]
+
+    # 2. the tree and the data agree about who is living
+    for m in flags_vs_data(people, flags, data):
+        fails.append(("flags", m))
+    nbad = place_vs_tree(people, flags, data)
+    if nbad:
+        fails.append(("place", f"{nbad} living record(s) carry a place that is not the town and country the tree reduces to"))
+
+    # 3. nothing else the tree holds about a living person is anywhere
+    h = harvest(people, families, flags)
+    pats = compile_all(h)
+    corp, have_git = corpus_of(dist)
+    if not have_git:
+        fails.append(("scan", "git could not list the tracked files, so the repository was not searched"))
+    hits = scan(corp, pats)
+    for f, kind in hits[:40]:
+        fails.append(("leak", f"{f}: holds a {kind} string that belongs to a living person"))
+    if len(hits) > 40:
+        fails.append(("leak", f"...and {len(hits) - 40} more"))
+
+    # 4. an empty search proves nothing
+    fails += corpus_fails(corp, h)
+
+    if a.controls:
+        ok = controls(people, flags, data, world, h, corp)
+        if not ok:
+            return 1
+
+    decl = json.load(open(DECL, encoding="utf-8"))
+    counts = {"tree": len(people), "living": n_living, "published": len(people) - n_living,
+              "pages": sum(1 for r, _, fs in os.walk(dist) for f in fs if f.endswith(".html"))}
     decl["counts"] = counts
     decl["countsNote"] = ("Written by tools/check_living.py on every build — people, "
                           "not name phrases. Never type these numbers into a page.")
-    json.dump(decl, open(a.declared, "w", encoding="utf-8"),
-              ensure_ascii=False, indent=1)
+    json.dump(decl, open(DECL, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-    rc_json = json_pass(a.dist, living, publish, quiet=a.quiet)
+    for rule, msg in fails:
+        print(f"  FAIL  {rule:16s} {msg}")
+    if fails:
+        print(f"  FAIL  living      {len(fails)} finding(s)")
+        return 1
+    if not a.quiet:
+        print(f"  ok    living      {n_living:,} people the tree judges living; "
+              f"{info['living']} have a page, each noindex and bare; searched {len(corp):,} files "
+              f"(the built site and every tracked file) for {len(h['date']):,} dates, "
+              f"{len(h['text']):,} notes/sources/occupations and {len(h['place']):,} long places "
+              f"belonging to them and found none")
+    return 0
 
-    return (checkliving.feed(
-        a.dist, living, publish,
-        allow=allow, allow_files=decl.get("allowFiles", []), quiet=a.quiet,
-        label=f"{len(people):,} in the tree, {counts['published']:,} publishable; "
-              f"{n_living:,} living people under {len(living):,} distinct names") or rc_json)
+
+# ---- planted faults -----------------------------------------------------------
+
+def controls(people, flags, data, world, h, corp):
+    """Each rule is shown able to fail, in a COPY. Returns True when every one was caught."""
+    pats = compile_all(h)
+    ok = True
+
+    def check(label, caught):
+        nonlocal ok
+        ok &= caught
+        print(f"  {'caught ' if caught else 'MISSED '} {label}")
+
+    print("  planted faults (this gate; the standard's own are run by check_living_standard.py --controls):")
+    # a living person's full date, in a built page
+    d = next(iter(sorted(h["date"])))
+    c = dict(corp); c["dist/people/x/index.html"] = f"born {d} in a town"
+    check("a living person's full date in a built page", bool(scan({"p": c["dist/people/x/index.html"]}, pats)))
+    # the same date in a tracked data file
+    c = {"site/src/data/x.json": '{"born": "' + d + '"}'}
+    check("a living person's full date in a committed data file", bool(scan(c, pats)))
+    # a note
+    t = next(iter(sorted(h["text"])))
+    check("a living person's note / source / occupation in a page", bool(scan({"p": "see: " + t + " ok"}, pats)))
+    # a long place
+    if h["place"]:
+        pl = next(iter(sorted(h["place"])))
+        check("a living person's full birthplace in a page", bool(scan({"p": "born " + pl}, pats)))
+    # the ISO form
+    iso = [x for x in sorted(h["date"]) if re.match(r"\d{4}-\d\d-\d\d$", x)]
+    if iso:
+        check("a living person's date in ISO form in a search index", bool(scan({"s": '{"q":"' + iso[0] + '"}'}, pats)))
+    # a clean page is clean (the scan is not reading everything as a hit)
+    check("a clean page is NOT a hit (the scan can say no)", not scan({"p": "a quiet page about a parish register"}, pats))
+    # flags
+    bad = copy.deepcopy(data)
+    for a in bad["ancestors"]:
+        if a.get("living"):
+            a["living"] = False
+            break
+    check("a person the tree judges living, flagged dead in the data", bool(flags_vs_data(people, flags, bad)))
+    bad = copy.deepcopy(data)
+    for a in bad["ancestors"]:
+        if not a.get("living"):
+            a["living"] = True
+            break
+    check("a person the tree judges dead, flagged living in the data", bool(flags_vs_data(people, flags, bad)))
+    # the empty corpus
+    check("an empty build (no files) is refused", bool(corpus_fails({}, h)))
+    check("a tree that yields nothing to search for is refused", bool(corpus_fails(corp, {"date": set(), "text": set(), "place": set()})))
+    # the standard's own, through the same module
+    ok2, lines = std.controls(data, world)
+    print("\n".join(lines))
+    ok &= ok2
+    if not ok:
+        print("  FAIL  living      a planted fault was NOT caught — the gate cannot fail on that rule")
+    return ok
 
 
 if __name__ == "__main__":
