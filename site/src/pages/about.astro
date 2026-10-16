@@ -16,7 +16,7 @@ import living from "../data/living.json";
    holds must not be the one page whose figures go stale. */
 const out = (o) => searched.rows.filter((r) => r.outcome === o).length;
 const HOLDS = [
-  [people.length, "people published", `${living.published.withPage} of them living, each a name, a town and a country and nothing more; the tree judges ${living.counts.living.toLocaleString()} people living in all`, "/people"],
+  [people.length, "people published", `${living.published.withPage} of them living, each named with relationships, a town and a country and nothing more; the tree judges ${living.counts.living.toLocaleString()} people living in all`, "/people"],
   [dossiers.counts.named, "named in records", `including ${dossiers.counts.ownPage} who are not relatives at all`, "/who"],
   [reg.entries, "register entries", `${reg.records} from a document, ${reg.tree} from the tree`, "/register"],
   [searched.rows.length, "sources read", `${out("yield")} yields, ${out("null")} nulls, ${out("blocked")} unreachable`, "/searched"],
@@ -46,17 +46,17 @@ const HOLDS = [
       <li style="margin-bottom:.6rem"><strong>Errors stay on the page where they were made.</strong>
       {nOwn} so far, each with what caused it. Corrections are never made silently.
       <a href={u("/corrections/")}>The errors →</a></li>
-      <li style="margin-bottom:.6rem"><strong>A living person is named, with their town and country,
-      and nothing more.</strong> A name, a relationship, a town and a country: no date, no record,
-      no source, no note and no photograph, and their page is kept out of search engines. The tree
-      judges {living.counts.living.toLocaleString()} people living; {living.published.withPage} of
-      them have a page here and {living.published.namedOnly} more are named as somebody's spouse,
-      brother, sister or parent. <strong>{living.named.length} living people are also named on this
+      <li style="margin-bottom:.6rem"><strong>A living person (80 or younger, with no death recorded) is
+      named with their relationships and their town and country, and nothing more.</strong> A name, a
+      relationship, a town and a country: no date, no record, no source, no note and no photograph, and
+      their page is kept out of search engines. The tree judges
+      {living.counts.living.toLocaleString()} people living; {living.published.withPage} of
+      them have a page here, and so does every other person this archive names. <strong>{living.named.length} living people are also named on this
       site on purpose</strong> in prose, as the authors of a eulogy and as the reason this archive
       exists, each with the owner's recorded confirmation. Until 16 October 2026 this line said the
       opposite — no page, no dates, no birthplace and no name — and was the archive's rule from the
-      start; David ruled, with those {living.counts.living.toLocaleString()} in front of him, that
-      this archive adopts the standard the Defranceschi archive keeps.
+      start; David then ruled that it adopts the standard the whole family of archives keeps, one
+      definition of who is living written once.
       <a href={u("/method/#living")}>How the rule works →</a></li>
       <li><strong>A better story is not a reason.</strong> Two aristocratic descents have been taken
       off this family — one unevidenced, one disproved — and both are still set out in full rather

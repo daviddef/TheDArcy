@@ -5,6 +5,47 @@
  "days": [
   {
    "when": "16 October 2026",
+   "title": "One definition of who is living, and a page for every person this archive names",
+   "did": [
+    "ONE DEFINITION, WRITTEN ONCE FOR EVERY ARCHIVE. This archive used to keep its own test: an upper bound on every birth year, inferred through the family graph, with a hundred-year horizon. It is gone. tools/gedcom.py now only prepares three facts for each person (a birth year, whether the tree records a death or burial, and what the tree cites) and hands them to the shared kit's living_rule.py. A person is living if they were born 80 years ago or less by year with no death recorded and no public source. A recorded death or burial, dated or not, means dead. A citation from a public record source (FamilySearch, a MyHeritage record collection, Findmypast and the others on the kit's list) means not living; a private family-tree entry does not count. A person with no birth year cannot be shown to be 80 or younger, so is not living.",
+    "EVERY PERSON THE ARCHIVE NAMES HAS A PAGE. The direct line and the thirteen families already had pages; the parents, brothers and sisters and spouses they are shown with were named, some of them only as a name on a card, and now have pages of their own (site/src/data/relatives.json, 330 people). Naming stops there: a relative's page lists only relatives who have a page already, and the thousands of other people in the tree stay unpublished. Every brother and sister on /direct-line/, the front page and the family pages is a link to the page they have.",
+    "THE PLACE IS A TOWN AND A COUNTRY, IN FULL. A living person's place is the town or city of their birth and the country: a street, a hospital or a county is dropped, and a state written without a country («Toowoomba QLD») now names its country.",
+    "THE HELD-OUT RULE IS THE KIT'S TOO. A possible minor (not recorded dead, no public source, and either under 18 by year or with no birth year and a living parent) is not published at all, and neither is the person promised privacy, by id. 133 possible minors are met in the tree, 41 of them with a birth year that makes them a child.",
+    "THE GATES WERE REWRITTEN FOR THE NEW RULE AND SHOWN TO FAIL. tools/check_living.py now reads the raw GEDCOM and prepares the three facts again in its own code, asks the kit, and holds the generator to the answer for all 15,643 people; it also restates the rule as arithmetic, and proves the people with a page are exactly the people the archive names. tools/check_living_standard.py, which needs no tree and runs in the deploy, now also checks that every relative is a name and the id of a page, that every name is a link, and that nobody is published whom nobody names. Each rule has a planted fault in a copy (46 for the gate that runs in the deploy, 85 with the tree, a planted year of 1799 where a date was needed), and all are caught; the first run of the new data-reference rules MISSED, because the check read the merged record and not the row, and was fixed before it was believed."
+   ],
+   "found": [
+    [
+     "Changed",
+     "the tree judges 462 people living, where it judged 1,490. 1,028 stopped being living: 88 aged 81 to 100 with no death recorded, 928 with no birth year, and 12 with a public source. None became living that was not before"
+    ],
+    [
+     "Changed",
+     "31 living people have a page, each noindex, naming their relationships and a town and a country; 15 carry a town, 2 a country only, 14 no place. Of the 35 first published as living, 10 are ordinary people now: 7 with no birth year and 3 aged 81 to 100"
+    ],
+    [
+     "Changed",
+     "844 people have a page, where 512 did: 330 relatives named beside someone (324 dead, 6 living) and 2 more by right"
+    ],
+    [
+     "Changed",
+     "134 people are held out, where 378 were: 1 by id, 133 possible minors. 285 people the old rule held (no birth year and a living parent) are no longer, because their parent has no birth year and is not living by the new test; 4 of them have a page now. 41 are newly held, all of them under 18 by year"
+    ],
+    [
+     "Limit",
+     "56 of the people published as ordinary dead people have no birth year, no death or burial recorded and no public source, and so are not living by the rule; 8 of them have a child born in the last sixty years. They show what the tree holds for them and no more, and none has an event dated in the last 80 years"
+    ],
+    [
+     "Limit",
+     "a relative's page carries no record line: records are joined to people by name, this family reuses names, and a record read about one man must not be handed to a namesake who was only named beside someone"
+    ],
+    [
+     "Kept",
+     "the six people named on purpose in prose, the DNA page's sentence that the tester is not named, and every address already published: relatives are slugged after the dead and before the living, so they moved none"
+    ]
+   ]
+  },
+  {
+   "when": "16 October 2026",
    "title": "A living person is now a name, a town and a country, where before there was nothing",
    "did": [
     "THE RULE CHANGED, AND IT CHANGED IN THE DATA. Until today this archive published no living person as a person: no page, no dates, no birthplace, and no name where it would stand as somebody's spouse, parent or child. David ruled, with the tree's 2,034 living people in front of him, that it adopts the standard the Defranceschi archive keeps: a living person is named, with their town and country, and nothing more. tools/build_site_data.py now BUILDS a living person out of a name, their relationships and the town and country of their birthplace, and never reads the rest of their record, so there is no date for a page to forget to hide.",

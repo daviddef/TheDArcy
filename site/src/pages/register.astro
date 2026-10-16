@@ -8,6 +8,7 @@ import Register from "@daviddef/archive-kit/components/Register.astro";
 import fold from "../data/namefold.json";
 import reg from "../data/register.json";
 import living from "../data/living.json";
+import { nCharts, nSolid } from "../lib/people.js";
 
 /* The raw catch. Every named individual this archive has met, from any source,
    with the source beside each one — including the people who are only in the
@@ -108,7 +109,7 @@ const pct = Math.round((reg.records / reg.entries) * 100);
       <br /><br />
       The same distinction is drawn on every person page. Each opens with a pedigree chart whose
       cards are bordered solid where a record writes the relationship down and dotted where only the
-      tree asserts it. <strong>Of 473 charts, 19 contain a solid edge.</strong>
+      tree asserts it. <strong>Of {nCharts} charts, {nSolid} contain a solid edge.</strong>
       <a href={u("/people/")}>The people →</a>
     </Note>
   </section>

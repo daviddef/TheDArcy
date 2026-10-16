@@ -5,6 +5,7 @@ import Note from "../../components/Note.astro";
 import { u } from "../../lib/url.js";
 import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
 import d from "../../data/dossiers.json";
+import { nPeople } from "../../lib/people.js";
 
 const people = Object.values(d.people).sort((a, b) => a.name.localeCompare(b.name));
 /* One entry per NAME, keyed by a name-slug: 169 entries for 169 distinct
@@ -28,7 +29,7 @@ const rows = people.map((p) => ({
 
   <section class="blk">
     <p class="lede">Two pages on this site already list people. <a href={u("/people/")}>The People</a>
-    is the <em>family tree</em> — {`473`} of them. <a href={u("/register/")}>The register</a> is the
+    is the <em>family tree</em> — {nPeople} of them. <a href={u("/register/")}>The register</a> is the
     raw catch, one row per source line. Neither gives a page to the man who found a body in Victoria
     Park in 1902, or to the six soldiers who gave six different answers about one death at Pozières.</p>
 

@@ -41,11 +41,11 @@ const listed = [...people].sort((a, b) => {
     Of those, <strong>{inLine}</strong> are direct ancestors and the rest are their brothers,
     sisters, spouses and cousins — the people a pedigree throws away.</p>
     <p class="dek" style="margin-top:.9rem"><strong>{nLiving}</strong> of them are living. A living
-    person is named here with their town and country and nothing more &mdash; no years, no trade,
-    no record &mdash; and their page is kept out of search engines. The tree judges
-    <strong>{living.counts.living.toLocaleString()}</strong> people living; only the ones in the
-    families this archive follows have a page, and the rest are named, if at all, as somebody's
-    wife, husband, brother or sister. <a href={u("/method/#living")}>The rule →</a></p>
+    person (80 or younger, with no death recorded) is named here with their relationships and their
+    town and country, and nothing more &mdash; no years, no trade, no record &mdash; and their page is
+    kept out of search engines. The tree judges
+    <strong>{living.counts.living.toLocaleString()}</strong> people living; every person this archive
+    names has a page, and the people the tree holds beyond them are not published. <a href={u("/method/#living")}>The rule →</a></p>
     <p class="dek" style="margin-top:.9rem">This page is the <em>tree's</em> people. For every named
     individual this archive has met anywhere — including people who are not relatives at all, and
     with the source printed beside each one — see <a href={u("/register/")}>the register</a>.</p>

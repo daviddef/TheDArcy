@@ -48,26 +48,29 @@ Parramatta, Chatham, Portsmouth, Limerick, Monaghan, Ayrshire, Somerset and Bris
 | **Disputed** | Asserted in the family record but unsupported, or contradicted, by what can be seen. |
 | **Family lore** | Told, remembered, not corroborated. Kept because it is precious; labelled because pretending otherwise is how family myths become family history. |
 
-**A living person is named, with their town and country, and nothing more** — a name, a
-relationship, a town and a country; no date, record, source, note, photograph or structured data,
-and their page, where there is one, is `noindex`. The rule is applied once, in
-`living_json()` in `tools/build_site_data.py`, at the boundary between the research data and the
-published site, and who is living is decided by `classify_living()` in `tools/gedcom.py`. (Until
-16 October 2026 this archive published no living person as a person at all; David ruled, knowing
-the tree judges 2,034 people living, that it adopts the standard the Defranceschi archive keeps.)
+**A living person (80 or younger, with no death recorded) is named with their relationships and
+their town and country, and nothing more** — a name, a relationship, a town and a country; no date,
+record, source, note, photograph or structured data, and their page is `noindex`. The rule is
+applied once, in `living_json()` in `tools/build_site_data.py`, at the boundary between the research
+data and the published site. Who is living is not decided in this repository: it is the shared kit's
+one definition (`kit/tools/living_rule.py` and `kit/data/public-sources.json`), applied to facts
+`tools/gedcom.py` prepares. A person is living if born 80 years ago or less (by year) with no death
+or burial recorded; a recorded death or burial, dated or not, means dead; a citation from a public
+record source (FamilySearch, a MyHeritage record collection, Findmypast and the others on the
+shared list) means not living; a private family-tree entry does not count; and a person with no
+birth year cannot be shown to be 80 or younger, so is not living. The tree is not inferred from:
+the old upper bound on birth years through the family graph, with its hundred-year horizon, is gone.
 
-Because thousands of people in a tree this size carry no dates at all, judging each by their own
-record alone marks every one of them living — safe, but useless. So the build computes an **upper
-bound on each person's birth year** from their own events, their children's births, their marriages
-and their parents' bounds, and treats somebody as dead only when *even the latest year they could have
-been born* is more than a century ago. Every step is a real bound, never a guess, and a recorded
-birth is never overridden by inference. The one exception runs the other way: a person the tree
-*records* as deceased, by a death or burial entry with or without a date, is dead. Two further groups
-are left out altogether, with no page and no name as anybody's relative: the living person whose DNA
-result `/dna/` describes (held by id) and every living person with no birth year who has a living parent
-(`held_out()` in `tools/gedcom.py`). On the current export that judges **1,490 of 15,643** people
-living; those in the numbered ancestors and the thirteen families have a page here, the rest are named, if at all, as a relative (the counts are in `living.json`). A removal request is honoured within days, without argument and without
-requiring a reason.
+**Every person the archive names has a page.** The numbered ancestors and the thirteen families have
+pages, and so do the parents, brothers and sisters and spouses they are shown with
+(`site/src/data/relatives.json`); a relative's own relatives are listed on their page only where
+they already have one. The tree's other people are never published.
+
+Two groups are left out altogether, with no page and no name as anybody's relative: the person whose
+DNA result `/dna/` describes (held by id, in `decisions.json`) and every possible minor (not
+recorded dead, no public source, and under 18 by year or with no birth year and a living parent;
+`held_out()` in `tools/gedcom.py`, through the kit). The counts are in `living.json`. A removal
+request is honoured within days, without argument and without requiring a reason.
 
 The raw GEDCOM is **not committed** — it contains every living person in full. `sources/*.ged` is
 gitignored; regenerate it with a fresh MyHeritage export and re-run the tools.
