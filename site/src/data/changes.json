@@ -3,6 +3,43 @@
  "dek": "Most family archives publish only what they found. This one publishes what it looked for, what it found, what it did not find, and what it had to take back.",
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
+      {
+        "when": "16 October 2026",
+        "title": "The chart contradicted the pages it linked to, and one family's parents were on the site but not on the chart",
+        "found": [
+          [
+            "Fixed",
+            "/tree drew William Hartley Sneyd as 1838–1902; his own page, correctly, says 1837. The chart now reads the same corrections as the person pages"
+          ],
+          [
+            "Fixed",
+            "James Wakefield was drawn as born 1799 with no source for it. Five records put his birth in 1806 and he now has a correction box saying so, beside what the tree says"
+          ],
+          [
+            "Fixed",
+            "his wall on the chart read «No parents are recorded in this archive». His baptism at Stroud on 6 April 1806 names both, Richard Wakefield and Elizabeth Webb; the wall now says so and says where the trail stops"
+          ],
+          [
+            "Added",
+            "a gate that compares every chart box with the page it links to, proved against the original fault before it was trusted"
+          ],
+          [
+            "Tried",
+            "Welsh Newspapers Online, a fourth time and the same Cloudflare check, so it stays on the work list unopened. Nothing was clicked and no other route was tried"
+          ],
+          [
+            "Checked",
+            "a pulled batch of sixteen commits from other sessions, including the new living-person standard, built green once a stale install of the shared kit was cleared"
+          ]
+        ],
+        "did": [
+          "WHAT WAS WRONG, AND WHO MISSED IT. On 13 October the trees were reported as up to date after being looked at. They were not. This archive keeps a corrections map for the places its own research overturned the family tree, and the person pages read it. The chart is drawn by the shared kit, which builds each box straight from the tree row and has never heard of that map. So William Hartley Sneyd was 1837 on his page and 1838 on the chart, and James Wakefield was 1806 in the prose and 1799 on the chart. It is own error 58.",
+          "WHY NO GATE SAW IT. Every gate reads one source. This fault lived between two readers of one fact, so the only check that can find it compares two built outputs. tools/check_chart_years.py does exactly that: each chart box against the person page it links to. It never asks which is right, only whether the archive agrees with itself. It was made to refuse the original 1837 against 1838 case, James slipping back to 1799, a markup change that leaves it comparing nothing, and an empty build, and only then wired in.",
+          "WHAT THE TREE CANNOT SAY. James Wakefield's parents are named in a baptism at Stroud and his death registration names his father, but the family tree holds neither of them, so there is no box to draw and a record line is not an edge. The kit's wall text for anyone without parents says nothing is recorded, which is false for him. The chart now says what is known, that it comes from an index entry and not the register, and that nothing above Richard and Elizabeth is established. The one Richard Wakefield in the free Gloucestershire transcripts, baptised at Chedworth in 1770, is still only a name and a date.",
+          "A GAP IN THE KIT, LEFT ALONE. The chart's wall vocabulary has no kind for parents named in a record that the tree does not hold, so the nearest honest tag is still Not yet worked, sitting above a note that says the parents are named. That is a shared-kit change and not this archive's to make.",
+          "THE LIVING-PERSON RULE CHANGED UNDER THIS ARCHIVE while it was being worked on. The kit now holds one definition, eighty or younger with no death recorded, and thirty-one living people have a page of a name, relatives, a town and a country, with no dates and out of search. That is recorded on the About page as a ruling, and the gates enforce it; it is mentioned here only so that nobody reads a bare living person's page as a leak."
+        ]
+      },
   {
    "when": "16 October 2026",
    "title": "One definition of who is living, and a page for every person this archive names",

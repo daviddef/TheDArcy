@@ -200,6 +200,13 @@ python3 tools/check_decisions.py
 echo "── counter"
 python3 tools/check_counter.py
 
+# DOES EVERY CHART BOX SAY WHAT ITS PAGE SAYS? Two OUTPUTS compared, because the
+# fault lived between two readers of one fact: the person pages read
+# lib/corrections.js and the kit's chart did not, so /tree drew a man born 1838
+# whose own page said 1837. See tools/check_chart_years.py.
+echo "── chartyears"
+python3 tools/check_chart_years.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent

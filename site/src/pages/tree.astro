@@ -23,13 +23,20 @@ import { ahnen } from "@daviddef/archive-kit/lib/ahnen.js";
 import { u } from "../lib/url.js";
 import ancestors from "../data/ancestors.json";
 import { byId } from "../lib/people.js";
+import { yearOf, NAMED_ABOVE } from "../lib/corrections.js";
 
 const START = 4;   // Kenneth Lindsay D'Arcy, the last generation this archive names
 const DEPTH = 4;
 
+const slugOf = (r) => (byId.get(r.id) || {}).slug;
+
 const root = ahnen(ancestors, {
   from: START,
   maxGen: DEPTH,
+  /* The years come through the corrections map, not straight off the tree row,
+     so a box here agrees with the page it links to. See lib/corrections.js. */
+  born: (r) => yearOf(slugOf(r), "born", r.born ?? r.byear),
+  died: (r) => yearOf(slugOf(r), "died", r.died ?? r.dyear),
   /* Sources on the row, or no claim of a source. The tree asserts far more
      than this archive has read, and the chart's job is to show which is which
      rather than to flatter the tree. */
@@ -42,6 +49,16 @@ const personHref = (b) => {
   const p = b.id && byId.get(b.id);
   return p && p.slug ? u(`/people/${p.slug}/`) : null;
 };
+
+/* The kit words every unparented person's wall the same way, «No parents are
+   recorded in this archive». For the few whose parents ARE named in a record the
+   tree simply does not hold, that sentence is false, so say what is known. */
+(function relabel(x) {
+  if (!x) return;
+  const k = NAMED_ABOVE[slugOf(x)];
+  if (k && x.f && x.f.wall) { x.f.label = k.label; x.f.note = k.note; }
+  relabel(x.f); relabel(x.m);
+})(root);
 
 let people = 0, doc = 0, walls = 0, doors = 0;
 (function count(x) {
