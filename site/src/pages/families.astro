@@ -34,7 +34,7 @@ const groups = [{
       people: shown.map((m) => {
         const o = byId.get(m.id);
         return { name: m.name, href: o ? `/people/${o.slug}` : null,
-                 life: isLiving(m) ? "" : m.life,
+                 life: isLiving(m) ? "" : ((o && o.life) || m.life),
                  place: isLiving(m) ? (m.place || null)
                         : (m.bornPlace ? m.bornPlace.split(",")[0] : null) };
       }),

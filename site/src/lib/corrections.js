@@ -32,6 +32,9 @@ export const CORRECTIONS = {
     born: ["1806 \u2014 baptised at Stroud on 6 April", "the tree says 1799 and cites nothing for it. Every record this archive holds on him points the other way: the baptism, aged 35 in the 1841 census, 45 in 1851 and 48 on the 1854 passenger register. A birth in 1799 would make him 42, 52 and 55", "/wakefields"],
     bornPlace: ["Stroud, Gloucestershire", "the tree says only \u201cGloucestershire, England\u201d. The 1851 census gives his birthplace as Stroud, and a baptism there on 6 April 1806 names a father Richard \u2014 the name his Queensland death registration gives for his father", "/wakefields"],
   },
+  "elizabeth-margaret-oliver": {
+    born: ["17 May 1782 \u2014 baptised at Oswestry on 19 May", "the tree says 7 May 1787. The baptism is in two independent transcriptions, a FindMyPast index of the register image and the printed St Asaph volume, both naming her father David Oliver, cooper, of Cross Street, and her mother Mary, and both under 1782. The tree\u2019s date is two digits from the register\u2019s, and a birth in 1787 would make her 6 at the birth of the first child it gives her", "/sneyds"],
+  },
   "robert-d-arcy": {
     born: ["by 1758, and probably earlier", "the tree says 1751 in North Yorkshire. The 1751 is arithmetic from an age on a burial register, not a birth record, and nothing places him in Yorkshire", "/hornby"],
   },

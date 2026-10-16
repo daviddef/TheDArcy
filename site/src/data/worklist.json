@@ -1300,6 +1300,42 @@
       "since": "2026-10-11",
       "what": "Read the printed Madeley register — William Sneyd the weaver's family, located and behind a borrow",
       "note": "The **Staffordshire Parish Register Society** printed the Madeley register, and the volume is on the Internet Archive as **`staffordshirepar0000mrnw`**. It is **lending-restricted**: the text returns HTTP 401 and a borrow needs an account this archive will not make. **A library copy would do it, and so would anyone with an Internet Archive login.**\n\n**Why it is worth the trouble.** Its public snippets already show «Margaret d. of **William Sneyd, Weaver**» and «Thomas s. of **William Sneyd of Gt. Madeley**» — and this archive's Samuel Sneyd was baptised at Madeley All Saints on 4 June 1781 with his father given as **William Sneyd, weaver**. **The snippets carry no years**, so nothing can be attached yet; the volume read properly would give Samuel's siblings and probably his parents' marriage.\n\n**One thing it has already settled for nothing: MADELEY IS TWO TOWNSHIPS**, Great and Little, which this archive has never distinguished. The same trap as the two Ingouvilles and the two Kingswoods, caught this time before it cost anything."
+    },
+    {
+      "n": 149,
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-10-16",
+      "what": "Eight published people have no birth year, no death and no public source, and a child born in the last sixty years",
+      "note": "The cloud audit of 13 October counted **56 published pages** under the living rule's «no birth year is not living» clause, **eight of them with a dated child born within the last sixty years**. This archive reproduced both figures independently from the tree and the kit's own rule, counting people only and printing no names: 56 and 8.\n\nThat clause is deliberate, and it is the right answer for the great majority — a medieval name with no dates is not somebody's living relative, and the rule's author said so. **But a person whose child was born in 1990 is more likely alive than not**, and the existing exception (an undated person with a *living parent* is held out as a possible minor) does not reach them: it looks up the family tree for a living parent and never down it for a recent child.\n\n**This is the rule's author's to decide and nothing has been changed.** The question is whether to hold out an undated person whose youngest dated child was born in the last sixty years, as the kit already holds out an undated person with a living parent. It is one more condition in `kit/tools/living_rule.py` and the gates would need to follow. Until then these eight are published as ordinary pages of the dead, with their relationships and no dates of their own.",
+      "covers": []
+    },
+    {
+      "n": 150,
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-10-16",
+      "what": "The tree holds the same people twice, and this archive has no way to declare two of them the same person",
+      "note": "The cloud audit listed 24 duplicate candidates and said to «declare in the archive's own duplicate mechanism». **There is none here for tree people** — `check_whosplit.py` guards the *dossiers*, and its only list says who is genuinely two. So these were verified but not declared.\n\n**Genuine duplicates, from the tree itself.** The tree holds **two copies of Joseph Samuel Sneyd**, literally named «Joseph Samuel1» and «Joseph Samuel2», both married to Ellen Marian Corbett, and **each of their children exists twice** — one copy with a source and one without, identical dates and places. That is six pairs: Brindley Stoke 1888, Eliza Anne Corbett 1875, James Hyland Corbett 1885, Jessie Camile Corbett 1883, Maurice Norman Fitzroy 1879 and Walter Reginald Brisbane 1877. Separately, **Ralph Sneyd 1863–1949 appears twice** with the same parents and the same death date, 25 December 1949.\n\n**Not duplicates, though the audit flagged them:** the two Ralph Sneyds of 1793 have *different* parents (see the next item); William Sneyd 1746, 1769 and 1780, Edward Sneyd 1691 and 1754, and the two John Blums of 1872 and 1895 share a parent and nothing else, which is how a family reuses a name.\n\n**The fix is in the MyHeritage tree** — merge the pairs there and re-export — or a declaration mechanism is built here, which would change slugs and is a decision for you. Nothing has been merged.",
+      "covers": []
+    },
+    {
+      "n": 151,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-10-16",
+      "what": "The Keele Sneyds, Ralph (1793) and Walter (1809), are hung on Samuel Sneyd and Elizabeth Oliver, and she cannot be their mother",
+      "note": "Elizabeth Margaret Oliver was born on **17 May 1782** — corrected on 16 October from the tree's 7 May 1787, on two independent transcriptions of her baptism. **At 1782 she was eleven when Ralph Sneyd was born in 1793**, so he is not her son, and the tree's «6 at birth» was never the real objection. **Walter Sneyd, born 1809, is the year she married Samuel Sneyd at Audlem on 22 October**, so he is at best a very late 1809.\n\nThe tree also holds a *second* Ralph Sneyd of 1793–1870, «of Keele», son of a Walter Sneyd of 1752–1829, with a brother Walter Sneyd «of Keele Hall» 1809–1888. **Two pairs of brothers with identical years look like one family copied onto another**, and the archive has already disproved a descent from Ralph Sneyd of Keele Hall for the older generations from the 1742 Madeley baptism. These two generations were never marked as part of that graft.\n\n**What would settle it:** the baptisms of Ralph (1793) and Walter (1809) in the Keele registers, which would name their parents. Not yet searched; nothing about the Keele family has been asserted here beyond what the tree itself says.",
+      "covers": []
+    },
+    {
+      "n": 152,
+      "state": "blocked",
+      "owner": "David",
+      "since": "2026-10-16",
+      "what": "This archive says «no record has been found» for people the Falco archive documents from Italian civil registers",
+      "note": "The D'Arcy tree includes the Falco line as relatives, so the same real people have a page on both sites. The audit found **13 pairs**: Angela Rosa Morgillo, Angelo Zampiello, Claudia di Lucia, Francesca Zampiello, Vincenza Pesce, Raffaele Falco 1818 and Vincenzo Falco 1793 among them. **These are not duplicates to merge** — they are one person in two archives, by design.\n\nBut the pages disagree about what is known. The D'Arcy page for Angela Rosa Morgillo says *«Asserted by the family tree. No record has been found for them»*, while the Falco page cites an Antenati birth act that names her, an exact birth date and a marriage act. **Each statement is true of its own archive and a reader of either cannot tell.**\n\n**The decision is about design, not research:** a pointer on the D'Arcy page, «also documented in the Falco archive», for people both sites carry. It needs the two archives to agree who builds it and how a pair is declared, and the Falco side owns the evidence. Raised with the landing-site session; nothing built.",
+      "covers": []
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

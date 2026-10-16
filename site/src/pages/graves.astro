@@ -4,6 +4,7 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import { lifeOf } from "../lib/corrections.js";
 import Graves from "@daviddef/archive-kit/components/Graves.astro";
 import fold from "../data/namefold.json";
 import g from "../data/graves.json";
@@ -29,7 +30,9 @@ const graves = g.rows.map((r) => ({
   country: country(r.place),
   shared: !!r.shared || r.n > 1,
   people: r.people.map((p) => ({
-    name: p.name, href: `/people/${p.slug}`, life: p.life || p.died || "",
+    name: p.name, href: `/people/${p.slug}`,
+    /* through the corrections, like every other page that prints a lifespan */
+    life: lifeOf({ slug: p.slug, life: p.life || p.died || "" }),
   })),
 }));
 ---

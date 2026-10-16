@@ -20,8 +20,16 @@
             "his wall on the chart read «No parents are recorded in this archive». His baptism at Stroud on 6 April 1806 names both, Richard Wakefield and Elizabeth Webb; the wall now says so and says where the trail stops"
           ],
           [
+            "Fixed",
+            "the same fault in six more places. The People index, the Blood relatives chart, the Register, the Graves page, the Sneyd page and the Families page all printed the tree's year for every person the archive has ever corrected. Most are fixed by one line where each person is built"
+          ],
+          [
+            "Fixed",
+            "Elizabeth Margaret Oliver was born on 17 May 1782, not 7 May 1787: her baptism is in two independent transcriptions, and a birth in 1787 made her six years old at the birth of her supposed first child. Even at 1782 she is eleven, which shows that child, Ralph Sneyd of 1793, is not hers"
+          ],
+          [
             "Added",
-            "a gate that compares every chart box with the page it links to, proved against the original fault before it was trusted"
+            "a gate that compares every person link on every page, and the years printed beside it, with the years that person's own page prints. It was proved against a planted fault in each of five different renderers before it was trusted"
           ],
           [
             "Tried",
@@ -34,7 +42,7 @@
         ],
         "did": [
           "WHAT WAS WRONG, AND WHO MISSED IT. On 13 October the trees were reported as up to date after being looked at. They were not. This archive keeps a corrections map for the places its own research overturned the family tree, and the person pages read it. The chart is drawn by the shared kit, which builds each box straight from the tree row and has never heard of that map. So William Hartley Sneyd was 1837 on his page and 1838 on the chart, and James Wakefield was 1806 in the prose and 1799 on the chart. It is own error 58.",
-          "WHY NO GATE SAW IT. Every gate reads one source. This fault lived between two readers of one fact, so the only check that can find it compares two built outputs. tools/check_chart_years.py does exactly that: each chart box against the person page it links to. It never asks which is right, only whether the archive agrees with itself. It was made to refuse the original 1837 against 1838 case, James slipping back to 1799, a markup change that leaves it comparing nothing, and an empty build, and only then wired in.",
+          "WHY NO GATE SAW IT. Every gate reads one source. This fault lived between two readers of one fact, so the only check that can find it compares two built outputs. tools/check_years_agree.py does exactly that, and it began as a check on one chart. Fixing the chart and looking again found the same fault in six more places, so it was widened to every person link on every page. It never asks which is right, only whether the archive agrees with itself. It cannot see the Blood relatives page, which embeds its data as JSON; that page was fixed and checked by hand.",
           "WHAT THE TREE CANNOT SAY. James Wakefield's parents are named in a baptism at Stroud and his death registration names his father, but the family tree holds neither of them, so there is no box to draw and a record line is not an edge. The kit's wall text for anyone without parents says nothing is recorded, which is false for him. The chart now says what is known, that it comes from an index entry and not the register, and that nothing above Richard and Elizabeth is established. The one Richard Wakefield in the free Gloucestershire transcripts, baptised at Chedworth in 1770, is still only a name and a date.",
           "A GAP IN THE KIT, LEFT ALONE. The chart's wall vocabulary has no kind for parents named in a record that the tree does not hold, so the nearest honest tag is still Not yet worked, sitting above a note that says the parents are named. That is a shared-kit change and not this archive's to make.",
           "THE LIVING-PERSON RULE CHANGED UNDER THIS ARCHIVE while it was being worked on. The kit now holds one definition, eighty or younger with no death recorded, and thirty-one living people have a page of a name, relatives, a town and a country, with no dates and out of search. That is recorded on the About page as a ruling, and the gates enforce it; it is mentioned here only so that nobody reads a bare living person's page as a leak."

@@ -3,6 +3,7 @@ import families from "../data/families.json";
 import relatives from "../data/relatives.json";
 import prov from "../data/provenance.json";
 import living from "../data/living.json";
+import { lifeOf } from "./corrections.js";
 
 export const kebab = (s) =>
   String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -164,6 +165,16 @@ function build() {
     used.add(slug);
     p.slug = slug;
   }
+
+  /* THE YEARS A READER SEES MUST BE THE YEARS THE ARCHIVE BELIEVES. Where its own
+     research overturned the family tree (lib/corrections.js), `life` carries the
+     finding. It is set HERE, once, and AFTER the slugs above, because `born` feeds
+     a slug (robert-darcy-1681) and changing it first would move a published
+     address; `life` is display only. Before this, the person pages and pedigree
+     cards read the corrections and /people, /bloodline and the register did not,
+     so William Hartley Sneyd was 1837 on his page and 1838 in the index. The
+     living have no corrections and keep a blank. */
+  for (const p of people) if (!p.living) p.life = lifeOf(p);
 
   people.sort((a, b) => {
     const ya = +((a.born || "").match(/\d{4}/) || [9999])[0];

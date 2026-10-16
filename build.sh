@@ -200,12 +200,14 @@ python3 tools/check_decisions.py
 echo "── counter"
 python3 tools/check_counter.py
 
-# DOES EVERY CHART BOX SAY WHAT ITS PAGE SAYS? Two OUTPUTS compared, because the
-# fault lived between two readers of one fact: the person pages read
-# lib/corrections.js and the kit's chart did not, so /tree drew a man born 1838
-# whose own page said 1837. See tools/check_chart_years.py.
-echo "── chartyears"
-python3 tools/check_chart_years.py
+# DOES EVERY PAGE THAT PRINTS A PERSON'S YEARS PRINT THE YEARS THEIR PAGE PRINTS?
+# Two OUTPUTS compared, because the fault lives between two readers of one fact:
+# the person pages read lib/corrections.js and nothing forced anything else to.
+# It started as one chart drawing a man born 1838 whose own page said 1837, and
+# a look at the rest of the site found the same thing in six more places.
+# See tools/check_years_agree.py.
+echo "── years"
+python3 tools/check_years_agree.py
 
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one

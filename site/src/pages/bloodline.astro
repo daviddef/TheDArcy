@@ -7,7 +7,8 @@ import Bloodline from "@daviddef/archive-kit/components/Bloodline.astro";
 import { graph, components, fromAhnentafel } from "@daviddef/archive-kit/lib/bloodline.js";
 import "@daviddef/archive-kit/styles/bloodline.css";
 import raw from "../data/ancestors.json";
-import { publishableOrNamed } from "../lib/people.js";
+import { publishableOrNamed, byId } from "../lib/people.js";
+import { lifeOf } from "../lib/corrections.js";
 
 const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isArray(v)) || [];
 /* THE LIVING ARE IN THIS CHART BY NAME, since 16 October 2026. Until then this
@@ -20,7 +21,17 @@ const all = Array.isArray(raw) ? raw : Object.values(raw).find((v) => Array.isAr
    living.json's `named` is the older consent record — six people named on
    purpose in prose — and is unchanged; it is no longer what lets a living
    person onto a chart. */
-const rows = publishableOrNamed(all);
+/* THE YEARS COME THROUGH THE CORRECTIONS, like every other chart on this site.
+   This one is built from ancestors.json rows rather than from lib/people.js, so
+   it did not inherit them, and drew the tree's 1838 for a man whose own page,
+   correctly, says 1837. There is no test for who is living here, deliberately:
+   lifeOf() returns its input for anyone without a correction, and a correction
+   is only ever written for the dead, so a living row passes through unchanged
+   and this page has no opinion of its own about what living means. */
+const rows = publishableOrNamed(all).map((r) => {
+  const slug = (byId.get(r.id) || {}).slug;
+  return slug ? { ...r, life: lifeOf({ slug, life: r.life, born: r.born, died: r.died }) } : r;
+});
 const people = graph(fromAhnentafel(rows));
 const comps = components(people);
 const shape = (s) => {

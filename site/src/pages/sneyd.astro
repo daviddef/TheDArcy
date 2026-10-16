@@ -331,7 +331,7 @@ const shown = publishable(f.members);
         return (
           <a class="cardlink" href={u(`/people/${o ? o.slug : ""}`)}>
             <div class="nm">{m.name}</div>
-            <p class="small" style="margin-top:.3rem">{isLiving(m) ? (m.place || "living") : (m.life || "dates unknown")}
+            <p class="small" style="margin-top:.3rem">{isLiving(m) ? (m.place || "living") : ((o && o.life) || m.life || "dates unknown")}
             {!isLiving(m) && m.bornPlace ? ` · ${m.bornPlace.split(",")[0]}` : ""}</p>
           </a>
         );

@@ -9,6 +9,7 @@ import fold from "../data/namefold.json";
 import reg from "../data/register.json";
 import living from "../data/living.json";
 import { nCharts, nSolid } from "../lib/people.js";
+import { CORRECTIONS, lifeOf } from "../lib/corrections.js";
 
 /* The raw catch. Every named individual this archive has met, from any source,
    with the source beside each one — including the people who are only in the
@@ -41,13 +42,26 @@ const strip = (t) => String(t)
   .replace(/^record \u00b7 /, "")
   .replace(/^family tree \u00b7 above the /, "").replace(/ graft$/, "")
   .replace(/^family tree \u00b7 /, "");
+/* A TREE ROW'S YEARS ARE THE TREE'S, UNLESS THIS ARCHIVE'S OWN RESEARCH HAS
+   OVERTURNED THEM (lib/corrections.js). The row stores «1838\u20131902 \u00b7 place» as one
+   string built before any correction could apply, and this page printed it, so
+   William Hartley Sneyd was 1837 on his own page and 1838 here. Only the leading
+   years are replaced, and only for a person with a correction. */
+const withCorrectedYears = (r) => {
+  const m = String(r.link || "").match(/^\/people\/([a-z0-9-]+)\/?$/);
+  if (!m || !CORRECTIONS[m[1]]) return r.says;
+  const lead = String(r.says || "").match(/^(\d{4}\s*[\u2013-]\s*\d{4})([\s\S]*)$/);
+  if (!lead) return r.says;
+  const life = lifeOf({ slug: m[1], life: lead[1].replace(/\s/g, "").replace("-", "\u2013") });
+  return life ? life + lead[2] : r.says;
+};
 const regRows = reg.groups.flatMap((g) => g.rows.map((r) => {
   const internal = String(r.link || "").startsWith("/");
   const k = kindOf(r);
   return {
     name: r.name, surname: g.surname, kind: k,
     href: internal ? r.link : "",
-    detail: r.says,
+    detail: r.kind === "tree" ? withCorrectedYears(r) : r.says,
     source: strip(r.source),
     sourceHref: internal ? "" : r.link,
     sourceLabel: k,
