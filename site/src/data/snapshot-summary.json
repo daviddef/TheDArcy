@@ -1,9 +1,9 @@
 {
  "have": 73,
- "total": 87,
- "pct": 84,
- "selfArchived": 27,
- "missing": 14,
+ "total": 89,
+ "pct": 82,
+ "selfArchived": 29,
+ "missing": 16,
  "missingHosts": [
   [
    "nla.gov.au",
@@ -12,6 +12,10 @@
   [
    "www.findagrave.com",
    3
+  ],
+  [
+   "archive.org",
+   2
   ],
   [
    "cityark.medway.gov.uk",
