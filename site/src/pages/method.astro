@@ -140,8 +140,10 @@ import { nCharts, nSolid } from "../lib/people.js";
     <p style="margin-top:1rem"><strong>{living.published.heldOut.total} people are left out
     altogether</strong>, not named even as somebody's relative. One is the person whose DNA result
     the <a href={u("/dna/")}>DNA page</a> describes, who is not named there or anywhere. The rest are
-    <em>possible minors</em>: people not recorded dead, with no public source, who are either under
-    18 by year or have no birth year and a living parent. A child is not named. The rule is applied
+    people who <em>might be children</em>: not recorded dead, no public source, no birth year, and a
+    living parent. With no year there is no telling a child from an adult, and a child is not named.
+    <strong>A child whose birth year is known is not left out</strong>: they follow the same standard
+    as any living person, a name, relationships, a town and a country, a page and no date. The rule is applied
     across the whole tree ({living.published.heldOut.possibleMinorsInTree} people meet it); this build
     met {living.published.heldOut.possibleMinors} of them while looking for relatives. A page shows
     that count and never who.</p>

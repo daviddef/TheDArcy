@@ -7,8 +7,10 @@ public source; a person with no birth year is not living. A living person is
 shown by NAME, RELATIONSHIP, TOWN and COUNTRY, and nothing else: no date, no
 record, no source, no note, no occupation, no photograph, no structured data.
 Their page is noindex, which takes it out of the sitemap and the search index.
-EVERY PERSON THE ARCHIVE NAMES HAS A PAGE. Two kinds of person are held out and
-published nowhere: a possible minor, and the person promised privacy, by id.
+EVERY PERSON THE ARCHIVE NAMES HAS A PAGE. A child with a known birth year follows
+the same standard as anyone living. Two kinds of person are held out and
+published nowhere: an undated person with a living parent, who might be a child,
+and the person promised privacy, by id.
 
 This gate needs only what is COMMITTED and what is BUILT, so it can run in the
 deploy, where the GEDCOM is not and must never be. It is in check_archive.py's
@@ -48,7 +50,7 @@ able to):
                 (indexable, structured data, in the sitemap), so a detector that
                 has stopped detecting is caught rather than read as a clean build
   held-out      the people held out (decisions.json: the person promised privacy
-                by id, and, by rule, every possible minor) are in no committed
+                by id, and, by rule, every undated person with a living parent) are in no committed
                 data file, no tsv, no built page and no served index: their ids
                 appear nowhere, there is no record for them, and the count of
                 those left out was measured and written

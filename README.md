@@ -67,9 +67,10 @@ pages, and so do the parents, brothers and sisters and spouses they are shown wi
 they already have one. The tree's other people are never published.
 
 Two groups are left out altogether, with no page and no name as anybody's relative: the person whose
-DNA result `/dna/` describes (held by id, in `decisions.json`) and every possible minor (not
-recorded dead, no public source, and under 18 by year or with no birth year and a living parent;
-`held_out()` in `tools/gedcom.py`, through the kit). The counts are in `living.json`. A removal
+DNA result `/dna/` describes (held by id, in `decisions.json`) and every undated person with a
+living parent who might be a child (not recorded dead, no public source, no birth year, a living
+parent; `held_out()` in `tools/gedcom.py`, through the kit). A child with a known birth year is
+not held out: they follow the standard like anyone living. The counts are in `living.json`. A removal
 request is honoured within days, without argument and without requiring a reason.
 
 The raw GEDCOM is **not committed** — it contains every living person in full. `sources/*.ged` is

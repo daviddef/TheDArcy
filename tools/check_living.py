@@ -6,8 +6,10 @@ or younger by year, with no death or burial recorded and no public source; a
 person with no birth year is not living. A living person is named with their
 relationships and their town and country, and nothing more: no date, no record,
 no source, no note, no occupation, no photograph, no structured data. Every
-person the archive names has a page. Two kinds of person are held out and
-published nowhere: a possible minor, and the person promised privacy, by id.
+person the archive names has a page. A child with a known birth year follows the
+same standard as anyone living. Two kinds of person are held out and published
+nowhere: an undated person with a living parent, who might be a child, and the
+person promised privacy, by id.
 
 THE DEFINITION OF LIVING IS THE KIT'S (kit/tools/living_rule.py), written once for
 every archive. What this file adds is that it does not take the generator's word
@@ -41,8 +43,9 @@ It also proves the rulings about WHO is published:
     spouse entry;
   · a person the tree RECORDS as deceased, a person with a public source, a person
     with no birth year and a person over 80 are none of them flagged living;
-  · the people held out (the person promised privacy, by id; every possible minor,
-    by rule) are computed here from the tree by this file's own implementation,
+  · the people held out (the person promised privacy, by id; every undated person
+    with a living parent, by rule) are computed here from the tree by this file's
+    own implementation,
     and not one of them is a record, an id or a name in anything published;
   · the people with a page are EXACTLY those the archive names: the direct line
     and the thirteen surnames, plus their parents, brothers and sisters and
@@ -284,6 +287,26 @@ def arithmetic_fails(tree, flags, ty=None):
             bad["over-80"] += 1
         if (p["by"] is not None and ty - p["by"] <= 80 and not p["dead"] and not pub) and not v:
             bad["young-flagged-dead"] += 1            # 80 or younger, no death, no public source: living
+    return dict(bad)
+
+
+def held_arith_fails(tree, held):
+    """The held-out rule restated as arithmetic (David, 16 October 2026): by rule, only
+    an UNDATED person who is not recorded dead, has no public source and has a living
+    parent is held out. A child with a known birth year never is, and nobody recorded
+    dead or with a public source is. (The person promised privacy is held by id.)"""
+    bad = collections_counter()
+    P = tree["people"]
+    for pid, rule in held.items():
+        if rule != "possible-minor":
+            continue
+        p = P[pid]
+        if p["by"] is not None:
+            bad["dated-child-held"] += 1
+        if p["dead"]:
+            bad["recorded-dead-held"] += 1
+        if lr.public_source(p["cites"]):
+            bad["public-source-held"] += 1
     return dict(bad)
 
 
@@ -540,6 +563,8 @@ def main():
     e_scope, e_rel = own_pages(tree, held)
     for m in pages_vs_tree(data, e_scope, e_rel):
         fails.append(("pages", m))
+    for k, n in sorted(held_arith_fails(tree, held).items()):
+        fails.append(("held", f"{n} person(s) held out by rule break the held-out rule on the {k} test"))
     if held_diff(held, gen_held):
         fails.append(("held", f"the generator and this gate disagree about who is held out ({len(held_diff(held, gen_held))} person(s))"))
 
@@ -665,8 +690,8 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=No
         ("a recorded death (dated or not) makes a young person dead", lr.is_living(T - 30, True, [], T) is False),
         ("a public source (FamilySearch) makes a young person not living", lr.is_living(T - 30, False, ["FamilySearch: x"], T) is False),
         ("a private tree entry does not", lr.is_living(T - 30, False, ["MyHeritage family tree: x"], T) is True),
-        ("a person aged 17 is a possible minor", lr.possible_minor(T - 17, False, [], False, T) is True),
-        ("a person aged 18 is not", lr.possible_minor(T - 18, False, [], False, T) is False),
+        ("a child with a KNOWN birth year (aged 5) is NOT held out, even with a living parent", lr.possible_minor(T - 5, False, [], True, T) is False),
+        ("nor a child aged 17 whose parent is living", lr.possible_minor(T - 17, False, [], True, T) is False),
         ("a person with no year and a living parent is a possible minor", lr.possible_minor(None, False, [], True, T) is True),
         ("a person with no year and no living parent is not", lr.possible_minor(None, False, [], False, T) is False),
     ]
@@ -690,6 +715,13 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=No
              pick(lambda v: v["by"] is not None and ty - v["by"] > 80 and not v["dead"]), True),
         ]
         check("the honest classification passes the arithmetic", not arithmetic_fails(tree, flags))
+        dated = pick(lambda v: v["by"] is not None and ty - v["by"] < 18 and not v["dead"] and not lr.public_source(v["cites"]))
+        check("a child with a known birth year, held out", bool(dated) and "dated-child-held" in held_arith_fails(tree, {dated: "possible-minor"}))
+        check("[planted person] a recorded-dead person, held out",
+              "recorded-dead-held" in held_arith_fails({"people": {"@Y2@": {"by": None, "dead": True, "cites": [], "parents": []}}}, {"@Y2@": "possible-minor"}))
+        check("[planted person] a person with a public source, held out",
+              "public-source-held" in held_arith_fails({"people": {"@Y3@": {"by": None, "dead": False, "cites": ["FamilySearch: x"], "parents": []}}}, {"@Y3@": "possible-minor"}))
+        check("the honest held-out set passes the held-out arithmetic", not held_arith_fails(tree, held or {}))
         for label, key, pid, val in cases:
             bad = dict(flags)
             if pid:
@@ -731,8 +763,8 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=No
         check("[planted people] born 1799 is not living; a five-year-old is; undated is not",
               fl["@X1@"] is False and fl["@X2@"] is True and fl["@X3@"] is False)
         hh = own_held(fake, fl, ["@X9@"])
-        check("[planted people] the five-year-old is held out, and so is the undated child of a living parent, and the 1799 man is not",
-              hh.get("@X2@") == "possible-minor" and hh.get("@X3@") == "possible-minor" and "@X1@" not in hh)
+        check("[planted people] the undated child of a living parent is held out; the five-year-old (a known child) is not, and nor is the 1799 man",
+              hh.get("@X3@") == "possible-minor" and "@X2@" not in hh and "@X1@" not in hh)
     # the held out
     if held:
         from gedcom import display
