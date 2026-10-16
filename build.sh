@@ -209,6 +209,14 @@ python3 tools/check_counter.py
 echo "── years"
 python3 tools/check_years_agree.py
 
+# DO THE DECLARED DUPLICATES BEHAVE AS DECLARED, AND ONLY THOSE? A declaration is a claim
+# nothing else verifies, so this reads it against the built site: each copy carries the
+# notice and a canonical to its primary and is out of the sitemap and the search index,
+# each primary is untouched and in both, and no other page names a foreign canonical.
+# See tools/check_same_person.py and site/src/data/same-person.json.
+echo "── sameperson"
+python3 tools/check_same_person.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent

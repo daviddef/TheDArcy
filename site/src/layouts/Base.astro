@@ -17,7 +17,10 @@ import living from "../data/living.json";
    which would put a living person's name and address in a machine-readable
    block. Set by src/pages/people/[slug].astro for a person the tree judges
    living. David's ruling, 16 October 2026. */
-const { title, description = "", dek, eyebrow, bare, noindex: _noindex, livingPage = false } = Astro.props;
+/* canonical: ONLY A DECLARED DUPLICATE PASSES ONE (see src/data/same-person.json). SocialHead
+   already takes the prop and falls back to the page's own address when it is absent, so
+   every other page is unchanged; this layout merely did not hand it on. */
+const { title, description = "", dek, eyebrow, bare, noindex: _noindex, livingPage = false, canonical } = Astro.props;
 const noindex = _noindex || livingPage;
 const SITE = "The D'Arcy Archive";
 const nav = [
@@ -69,7 +72,7 @@ const thisArchive =
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>{title === SITE ? SITE : `${title} — ${SITE}`}</title>
 <meta name="description" content={dek || description} />
-<SocialHead title={title} description={dek || description} site={SITE} />
+<SocialHead title={title} description={dek || description} site={SITE} canonical={canonical} />
 {!livingPage && <JsonLd type={bare ? "WebSite" : "Article"} name={title} description={dek || description}
         url={Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname}
         site={SITE} about={Astro.props.person} />}

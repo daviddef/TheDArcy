@@ -1,0 +1,58 @@
+{
+ "_note": [
+  "Pairs of tree people who are ONE person entered twice, declared by their tree ids. Written 16 October 2026, on David's ruling relayed by the landing-site session, after an audit of this archive's pages.",
+  "A declared copy KEEPS ITS ADDRESS, because an address that has been published may have been linked or written down and deleting a row deletes it. The page says it is the same person as the primary, carries a canonical link to the primary, and is left out of the sitemap and the search index. The primary is untouched.",
+  "THE RULE FOR CHOOSING THE PRIMARY, so the choice can be audited and not only trusted: the copy that draws more of the family (marriages and children), then the one that cites more sources. Anything only the copy knows stays on the copy's own page, which still exists.",
+  "NOT declared, on purpose: the two Ralph Sneyds of 1793 (same years, DIFFERENT parents: a Keele conflation, work list 151, not a duplicate), and every pair the audit rated low (a shared parent and nothing else, which is how a family reuses a name). A declaration is evidence of identity and is made only on the strong kind: same name, same years, same parents or same children."
+ ],
+ "pairs": [
+  {
+   "primary": "@I390@",
+   "copy": "@I500009@",
+   "name": "Joseph Samuel Sneyd",
+   "why": "Joseph Samuel Sneyd: the tree holds him twice, as «Joseph Samuel1» and «Joseph Samuel2», with the same parents (Samuel Charles Sneyd and Catherine Margaret Mulcahy), the same birth year and the same wife, Ellen Marian Corbett. Primary: the copy that draws more of the family, 2 marriages and 12 children against 1 and 10, and cites 4 sources against 1."
+  },
+  {
+   "primary": "@I502644@",
+   "copy": "@I671@",
+   "name": "Brindley Stoke Sneyd",
+   "why": "Brindley Stoke Sneyd: the tree holds this child twice, once under each of two copies of the father (Joseph Samuel Sneyd, the one the tree calls «Joseph Samuel1» and the one it calls «Joseph Samuel2»), with the same mother, the same birth year and the same death year. Primary: neither copy draws any relationship, so the one that cites a source, 1 against 0."
+  },
+  {
+   "primary": "@I502652@",
+   "copy": "@I664@",
+   "name": "Eliza Anne Corbett Sneyd",
+   "why": "Eliza Anne Corbett Sneyd: the tree holds this child twice, once under each of two copies of the father (Joseph Samuel Sneyd, the one the tree calls «Joseph Samuel1» and the one it calls «Joseph Samuel2»), with the same mother, the same birth year and the same death year. Primary: neither copy draws any relationship, so the one that cites a source, 1 against 0."
+  },
+  {
+   "primary": "@I502649@",
+   "copy": "@I670@",
+   "name": "James Hyland Corbett Sneyd",
+   "why": "James Hyland Corbett Sneyd: the tree holds this child twice, once under each of two copies of the father (Joseph Samuel Sneyd, the one the tree calls «Joseph Samuel1» and the one it calls «Joseph Samuel2»), with the same mother, the same birth year and the same death year. Primary: neither copy draws any relationship, so the one that cites more, 2 sources against 0."
+  },
+  {
+   "primary": "@I669@",
+   "copy": "@I502642@",
+   "name": "Jessie Camile Corbett Sneyd",
+   "why": "Jessie Camile Corbett Sneyd: the tree holds this child twice, once under each of two copies of the father (Joseph Samuel Sneyd, the one the tree calls «Joseph Samuel1» and the one it calls «Joseph Samuel2»), with the same mother, the same birth year and the same death year. Primary: the copy that draws a marriage and a child, which the other does not, although the other cites 1 source and this one none."
+  },
+  {
+   "primary": "@I502653@",
+   "copy": "@I667@",
+   "name": "Maurice Norman Fitzroy Sneyd",
+   "why": "Maurice Norman Fitzroy Sneyd: the tree holds this child twice, once under each of two copies of the father (Joseph Samuel Sneyd, the one the tree calls «Joseph Samuel1» and the one it calls «Joseph Samuel2»), with the same mother, the same birth year and the same death year. Primary: neither copy draws any relationship, so the one that cites a source, 1 against 0."
+  },
+  {
+   "primary": "@I502648@",
+   "copy": "@I666@",
+   "name": "Walter Reginald Brisbane Sneyd",
+   "why": "Walter Reginald Brisbane Sneyd: the tree holds this child twice, once under each of two copies of the father (Joseph Samuel Sneyd, the one the tree calls «Joseph Samuel1» and the one it calls «Joseph Samuel2»), with the same mother, the same birth year and the same death year. Primary: neither copy draws any relationship, so the one that cites a source, 1 against 0."
+  },
+  {
+   "primary": "@I1926@",
+   "copy": "@I502818@",
+   "name": "Ralph Sneyd, born 1863",
+   "why": "Ralph Sneyd, born 1863: the tree holds him twice, with the same parents (Walter Sneyd and Henrietta Elizabeth Judge), the same birth year and the same death date, 25 December 1949. Primary: the copy that draws a marriage, which the other does not, and cites 3 sources against 2. The other states the death place more precisely, Codford in Wiltshire, and keeps it on its own page."
+  }
+ ]
+}

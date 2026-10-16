@@ -198,9 +198,22 @@ def site_origin():
     return origin
 
 
+def same_person():
+    """The pairs of tree people declared to be one person entered twice, as «copy->primary».
+
+    The source of truth is site/src/data/same-person.json, which the page, the search index
+    and the gate all read. This records the SAME list in decisions.json so that adding,
+    removing or swapping a pair is a deliberate act that has to be made twice, in one commit.
+    A declaration is a statement of identity: declaring two people one that are not, or
+    leaving one undeclared, is the kind of change this file exists to make visible."""
+    doc = _json("same-person.json")
+    return sorted(f"{x['copy']}->{x['primary']}" for x in doc.get("pairs", []))
+
+
 CHECKS = {
     "kitPin": kit_pin,
     "siteOrigin": site_origin,
+    "samePerson": same_person,
     "livingPolicy": living_policy,
     "namedLiving": named_living,
     "livingExemptions": living_exemptions,

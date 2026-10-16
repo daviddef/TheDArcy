@@ -118,6 +118,19 @@
     ]
    },
    "why": "David's ruling of 16 October 2026, version 2, written once for every archive in the kit's living_rule.py and kit/data/public-sources.json: living is 80 or younger by year (this year minus the birth year) with no death or burial recorded and no public source; a person with no birth year is not living; an undated person with a living parent (who might be a child) is held out, and a child with a KNOWN birth year is not (David, 16 October 2026): every child follows the standard. The numbers and the list of public record sources belong to the whole estate, so a kit move that changes one changes who is living here without a line of this repository changing. This watches them: a re-pin that moves one is refused until the move is recorded here, in the same commit. Declared again 16 October 2026 with kit 27af004: user-built trees that MyHeritage files under research (Geni World Family Tree, WikiTree, Filae, GenealogieOnline) are excluded from the public sources, being private-tree entries, not records."
+  },
+  "samePerson": {
+   "value": [
+    "@I500009@->@I390@",
+    "@I502642@->@I669@",
+    "@I502818@->@I1926@",
+    "@I664@->@I502652@",
+    "@I666@->@I502648@",
+    "@I667@->@I502653@",
+    "@I670@->@I502649@",
+    "@I671@->@I502644@"
+   ],
+   "why": "Tree people declared to be ONE person entered twice, by tree id as copy->primary, ruled 16 October 2026 on David's word as relayed by the landing-site session after an audit of this archive's pages. Eight pairs: the two copies of Joseph Samuel Sneyd, his six children who exist twice (one under each copy of him), and Ralph Sneyd born 1863. A copy KEEPS ITS ADDRESS and says it is the same person, carries a canonical link to the primary, and is left out of the sitemap and the search index; the primary is untouched. NOT declared on purpose: the two Ralph Sneyds of 1793 have different parents and are a Keele conflation, not a duplicate (work list 151), and no pair the audit rated low, because a shared parent and nothing else is how a family reuses a name. The primary is the copy that draws more of the family, then the one that cites more, and that rule is written in same-person.json beside each choice so it can be audited."
   }
  }
 }

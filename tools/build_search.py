@@ -166,10 +166,22 @@ def L(f):
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
 
 
+def declared_copies():
+    """The slugs of tree people declared to be a duplicate of another (data/same-person.json).
+    A copy keeps its address and says so, but it is not offered in search: the person is
+    already there under the primary, and two results for one human is how a reader is
+    told there were two. Looked up by tree id, never by slug, because a slug is derived."""
+    import slugrule
+    pairs = (L("same-person.json") or {}).get("pairs", [])
+    sl = slugrule.slugs()
+    return {sl[x["copy"]] for x in pairs if x["copy"] in sl}
+
+
 def main():
     # ── people, from the built pages so living-person redaction is honoured ──
     reg = L("register.json") or {"groups": []}
     prov = L("provenance.json") or {}
+    copies = declared_copies()
 
     people = {}
     for g in reg["groups"]:
@@ -177,6 +189,8 @@ def main():
             if r["kind"] != "tree":
                 continue
             slug = r["link"].rsplit("/", 1)[-1]
+            if slug in copies:
+                continue          # a declared duplicate: kept at its address, not offered in search
             people[slug] = r
             pv = prov.get(slug, {})
             tags = []

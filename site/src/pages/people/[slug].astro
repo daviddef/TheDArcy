@@ -4,7 +4,7 @@ import Note from "../../components/Note.astro";
 import Scroll from "../../components/Scroll.astro";
 import { u } from "../../lib/url.js";
 import { nameIfPublishable, lifeLine, isLiving } from "../../lib/people.js";
-import { people, byId } from "../../lib/people.js";
+import { people, byId, duplicateOf } from "../../lib/people.js";
 import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
 import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
@@ -29,6 +29,14 @@ const { person: p } = Astro.props;
    for them. The page is noindex, which takes it out of the sitemap and the
    search index; Base omits its structured data too. */
 const alive = isLiving(p);
+
+/* A DECLARED COPY: the same person entered twice in the family tree (data/same-person.json).
+   Never a living person. The page keeps its address and says what it is; its canonical names
+   the primary, which is what stops a search engine indexing both and what the kit's sitemap
+   reads to leave it out. The primary is untouched. */
+const dup = alive ? null : duplicateOf(p);
+const dupHref = dup ? u(`/people/${dup.slug}/`) : "";
+const dupCanonical = dup && Astro.site ? new URL(dupHref, Astro.site).href : undefined;
 /* What stands beside a relative's name in a list. On a living person's page no
    relative carries a year (see PersonTree); a living relative carries their
    town and country wherever they appear. */
@@ -244,7 +252,20 @@ const anyDamaged = notes.some((n) => n.damaged);
     the lifespan and the chip carries the grade, so neither is repeated.
     A LIVING SPOUSE IS NEVER NAMED, which is why the spouse step filters on it;
     two people here have only living spouses and fall through to the last line. */}
-<Base title={p.name} eyebrow={life} dek={dek} livingPage={alive}>
+<Base title={p.name} eyebrow={life} dek={dek} livingPage={alive} canonical={dupCanonical}>
+
+  {dup && (
+  <section class="blk" style="padding-top:0" data-same-person={dup.slug}>
+    <Note style="border-left-width:3px">
+      <strong>This page and <a href={dupHref}>{dup.name}</a> are the same person.</strong>
+      {" "}The family tree this archive was built from holds {p.name} twice, and this is the second entry.
+      It keeps its address because an address that has been published may have been linked or written
+      down, but <a href={dupHref}>the other page</a> is the one to read and the one a search engine is
+      told about. Anything only this entry knows is still printed below.
+    </Note>
+  </section>
+  )}
+
 
   {!alive && (
   <section class="blk" style="padding-top:0">

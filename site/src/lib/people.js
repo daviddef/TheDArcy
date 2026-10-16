@@ -4,6 +4,7 @@ import relatives from "../data/relatives.json";
 import prov from "../data/provenance.json";
 import living from "../data/living.json";
 import { lifeOf } from "./corrections.js";
+import samePerson from "../data/same-person.json";
 
 export const kebab = (s) =>
   String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -187,6 +188,14 @@ function build() {
 export const people = build();
 export const bySlug = new Map(people.map((p) => [p.slug, p]));
 export const byId = new Map(people.map((p) => [p.id, p]));
+
+/* DECLARED DUPLICATES (data/same-person.json, ruled 16 October 2026). A copy is a tree
+   person who is ONE person entered twice. It keeps its address, because a published
+   address may have been linked or written down, and the page says it is the same
+   person as its primary. Keyed by the tree id, which is what the declaration holds,
+   and never by slug: a slug is derived and moves when a namesake is admitted. */
+const DUP = new Map((samePerson.pairs || []).map((x) => [x.copy, x.primary]));
+export const duplicateOf = (p) => (p && DUP.has(p.id) ? byId.get(DUP.get(p.id)) || null : null);
 
 export const nameOf = (id) => byId.get(id)?.name || "";
 export const slugOf = (id) => byId.get(id)?.slug || "";
