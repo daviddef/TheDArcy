@@ -14100,7 +14100,7 @@
  },
  {
   "id": "@I26@",
-  "mh": "MH:I26",
+  "mh": "",
   "name": "Anthony Falco",
   "surname": "Falco",
   "sex": "M",
@@ -14114,6 +14114,7 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [],
   "parents": [
    {
@@ -14137,7 +14138,7 @@
   ],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I512378@",
@@ -15328,7 +15329,7 @@
  },
  {
   "id": "@I503676@",
-  "mh": "MH:I503676",
+  "mh": "",
   "name": "James Everist",
   "surname": "Everist",
   "sex": "M",
@@ -15342,6 +15343,7 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [
    {
     "name": "Helen Murdoch",
@@ -15358,7 +15360,7 @@
   "siblings": [],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I502849@",
@@ -15445,7 +15447,7 @@
  },
  {
   "id": "@I503684@",
-  "mh": "MH:I503684",
+  "mh": "",
   "name": "Janet Grimmitt",
   "surname": "Grimmitt",
   "sex": "F",
@@ -15459,6 +15461,7 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [
    {
     "name": "Donald Murdoch",
@@ -15478,7 +15481,7 @@
   "siblings": [],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I503797@",
@@ -15757,7 +15760,7 @@
  },
  {
   "id": "@I81@",
-  "mh": "MH:I81",
+  "mh": "",
   "name": "Lindy Louise Hoogwaertz",
   "surname": "Hoogwaertz",
   "sex": "F",
@@ -15771,6 +15774,7 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [
    {
     "name": "Graham Lindsay D'Arcy",
@@ -15790,7 +15794,7 @@
   "siblings": [],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I503677@",
@@ -16308,7 +16312,7 @@
  },
  {
   "id": "@I503690@",
-  "mh": "MH:I503690",
+  "mh": "",
   "name": "Richard Light",
   "surname": "Light",
   "sex": "M",
@@ -16322,6 +16326,7 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [
    {
     "name": "Jan Murdoch",
@@ -16338,11 +16343,11 @@
   "siblings": [],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I503685@",
-  "mh": "MH:I503685",
+  "mh": "",
   "name": "Robyn Searle",
   "surname": "Searle",
   "sex": "F",
@@ -16356,6 +16361,7 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [
    {
     "name": "Jeffrey Murdoch",
@@ -16375,11 +16381,11 @@
   "siblings": [],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I503781@",
-  "mh": "MH:I503781",
+  "mh": "",
   "name": "Ron Boatfield",
   "surname": "Boatfield",
   "sex": "M",
@@ -16393,22 +16399,24 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [
    {
     "name": "Glenda Atwell",
     "id": "@I503780@",
-    "living": false,
+    "living": true,
     "married": "",
     "marriedPlace": "",
     "divorced": "",
-    "children": []
+    "children": [],
+    "place": ""
    }
   ],
   "parents": [],
   "siblings": [],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I88@",

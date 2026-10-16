@@ -4731,14 +4731,15 @@
      {
       "name": "Lindy Louise Hoogwaertz",
       "id": "@I81@",
-      "living": false,
+      "living": true,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
       "children": [
        "@I83@",
        "@I82@"
-      ]
+      ],
+      "place": ""
      }
     ],
     "parents": [
@@ -15265,14 +15266,15 @@
      {
       "name": "Janet Grimmitt",
       "id": "@I503684@",
-      "living": false,
+      "living": true,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
       "children": [
        "@I503688@",
        "@I503689@"
-      ]
+      ],
+      "place": ""
      }
     ],
     "parents": [
@@ -15324,11 +15326,12 @@
      {
       "name": "James Everist",
       "id": "@I503676@",
-      "living": false,
+      "living": true,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": []
+      "children": [],
+      "place": ""
      }
     ],
     "parents": [
@@ -15372,14 +15375,15 @@
      {
       "name": "Robyn Searle",
       "id": "@I503685@",
-      "living": false,
+      "living": true,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
       "children": [
        "@I503686@",
        "@I503687@"
-      ]
+      ],
+      "place": ""
      }
     ],
     "parents": [
@@ -15431,11 +15435,12 @@
      {
       "name": "Richard Light",
       "id": "@I503690@",
-      "living": false,
+      "living": true,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": []
+      "children": [],
+      "place": ""
      }
     ],
     "parents": [
@@ -15765,7 +15770,7 @@
   "blurb": "Barbara 'Goldie' Atwell's people, out of Somerset",
   "total": 36,
   "published": 36,
-  "living": 1,
+  "living": 2,
   "members": [
    {
     "id": "@I503732@",
@@ -17661,7 +17666,7 @@
    },
    {
     "id": "@I503780@",
-    "mh": "MH:I503780",
+    "mh": "",
     "name": "Glenda Atwell",
     "surname": "Atwell",
     "sex": "F",
@@ -17675,15 +17680,17 @@
     "burial": "",
     "occupation": "",
     "life": "",
+    "place": "",
     "spouses": [
      {
       "name": "Ron Boatfield",
       "id": "@I503781@",
-      "living": false,
+      "living": true,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": []
+      "children": [],
+      "place": ""
      }
     ],
     "parents": [
@@ -17699,7 +17706,7 @@
     "siblings": [],
     "sources": [],
     "notes": [],
-    "living": false
+    "living": true
    },
    {
     "id": "@I503792@",

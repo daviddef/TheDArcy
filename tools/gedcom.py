@@ -291,8 +291,16 @@ def lifespan(person):
 # Living = 80 or younger by year, with no death recorded, and no public source.
 # A person with no birth year cannot be shown to be 80 or younger, so is NOT
 # living by this test. The old inference through the family graph (a child born
-# in 1990 implies a parent born before 1976) is gone, on purpose: the rule is
-# stated on the person's own record.
+# in 1990 implies a parent born before 1976) was removed on 16 October, on
+# purpose: the rule is stated on the person's own record.
+#
+# ONE NARROW USE OF THE GRAPH CAME BACK THE SAME DAY (David, 16 October 2026,
+# after the integrity audit): an UNDATED person with no recorded death and no
+# public source whose YOUNGEST KNOWN CHILD was born 60 years ago or less is
+# living, as an adult parent. It is not the old inference. It never gives a
+# parent a birth year, never touches anyone with a year of their own, and reads
+# only a child's own recorded year. youngest_child_years() below is the whole of
+# it; the kit's living_rule.py decides what to do with the number.
 
 RECORDED_DEAD_KINDS = ("death", "burial")
 
@@ -322,6 +330,24 @@ def public_source(person):
     return lr.public_source(person.get("citations") or [])
 
 
+def youngest_child_years(people):
+    """{parent_id: birth year of that person's youngest child who HAS a year}.
+
+    Built by inverting each child's `parents`, so it needs no family records and
+    works wherever classify_living() and held_out() are called with people alone.
+    A child with no year of their own contributes nothing: this reads recorded
+    years and infers none. A parent with no dated child is simply absent."""
+    out = {}
+    for c in people.values():
+        by = birth_year(c)
+        if by is None:
+            continue
+        for pid in c["parents"]:
+            if pid in people and by > out.get(pid, -1):
+                out[pid] = by
+    return out
+
+
 def today():
     return lr.this_year()
 
@@ -329,13 +355,18 @@ def today():
 def classify_living(people, families=None, today_year=None):
     """{id: True/False}, by the kit's rule, for everybody in the tree."""
     ty = today_year or today()
-    return {pid: lr.is_living(birth_year(p), recorded_dead(p), p.get("citations") or [], ty)
+    ycy = youngest_child_years(people)
+    return {pid: lr.is_living(birth_year(p), recorded_dead(p), p.get("citations") or [], ty,
+                              youngest_child_year=ycy.get(pid))
             for pid, p in people.items()}
 
 
-def is_living(person, today_year=None):
+def is_living(person, today_year=None, youngest_child_year=None):
+    """One person on their own. The child's year cannot be found from a person
+    alone, so a caller that has the tree must pass it; None changes nothing."""
     return lr.is_living(birth_year(person), recorded_dead(person),
-                        person.get("citations") or [], today_year or today())
+                        person.get("citations") or [], today_year or today(),
+                        youngest_child_year=youngest_child_year)
 
 
 # The person promised privacy, BY ID. One id, one person; no file, message or log
@@ -364,10 +395,11 @@ def held_out(people, living=None, ids=None, today_year=None):
         living = classify_living(people, None, ty)
     ids = list(held_ids() if ids is None else ids)
     out = {}
+    ycy = youngest_child_years(people)
     for pid, p in people.items():
         parent_living = any(living.get(x) for x in p["parents"])
         if lr.is_held_out(pid, birth_year(p), recorded_dead(p), p.get("citations") or [],
-                          parent_living, ids, ty):
+                          parent_living, ids, ty, youngest_child_year=ycy.get(pid)):
             out[pid] = "dna-tester" if str(pid) in {str(i) for i in ids} else "possible-minor"
     return out
 

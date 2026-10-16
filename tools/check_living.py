@@ -220,17 +220,37 @@ def own_tree(path=None):
     return {"people": people, "fams": fams}
 
 
+def own_child_years(tree):
+    """{parent: birth year of the youngest child who has one}, derived HERE from this
+    gate's own parse of the GEDCOM. It is written a second time on purpose, apart from
+    tools/gedcom.py: a gate that took the child's year from the generator it gates would
+    agree with it whatever the generator got wrong. A child with no year contributes
+    nothing; this reads recorded years and infers none."""
+    out = {}
+    for c in tree["people"].values():
+        if c["by"] is None:
+            continue
+        for x in c["parents"]:
+            if x in tree["people"] and c["by"] > out.get(x, -1):
+                out[x] = c["by"]
+    return out
+
+
 def own_living(tree, today=None):
     ty = today or lr.this_year()
-    return {pid: lr.is_living(p["by"], p["dead"], p["cites"], ty) for pid, p in tree["people"].items()}
+    cy = own_child_years(tree)
+    return {pid: lr.is_living(p["by"], p["dead"], p["cites"], ty, youngest_child_year=cy.get(pid))
+            for pid, p in tree["people"].items()}
 
 
 def own_held(tree, flags, ids, today=None):
     ty = today or lr.this_year()
+    cy = own_child_years(tree)
     out = {}
     for pid, p in tree["people"].items():
         pl = any(flags.get(x) for x in p["parents"])
-        if lr.is_held_out(pid, p["by"], p["dead"], p["cites"], pl, ids, ty):
+        if lr.is_held_out(pid, p["by"], p["dead"], p["cites"], pl, ids, ty,
+                          youngest_child_year=cy.get(pid)):
             out[pid] = "dna-tester" if pid in set(ids) else "possible-minor"
     return out
 
@@ -274,6 +294,7 @@ def arithmetic_fails(tree, flags, ty=None):
     the verdict under test."""
     ty = ty or lr.this_year()
     bad = collections_counter()
+    cy = own_child_years(tree)
     for pid, p in tree["people"].items():
         v = bool(flags.get(pid))
         pub = lr.public_source(p["cites"])
@@ -281,8 +302,16 @@ def arithmetic_fails(tree, flags, ty=None):
             bad["recorded-dead"] += 1                 # a recorded death or burial is dead
         if pub and v:
             bad["public-source"] += 1                 # a public source is not living
-        if p["by"] is None and v:
+        # AN UNDATED PERSON IS LIVING IN EXACTLY ONE CASE (David, 16 October 2026): no death,
+        # no public source, and a youngest dated child born 60 years ago or less. Stated here
+        # in BOTH directions, because a rule that is only ever checked one way drifts the
+        # other: «undated and living» without that child is wrong, and so is «undated, that
+        # child, and not living».
+        recent = pid in cy and ty - cy[pid] <= 60
+        if p["by"] is None and v and not (recent and not p["dead"] and not pub):
             bad["undated"] += 1                       # nobody can be shown 80 or younger without a year
+        if p["by"] is None and not v and recent and not p["dead"] and not pub:
+            bad["undated-parent-of-recent-child-flagged-dead"] += 1
         if p["by"] is not None and ty - p["by"] > 80 and v:
             bad["over-80"] += 1
         if (p["by"] is not None and ty - p["by"] <= 80 and not p["dead"] and not pub) and not v:
@@ -297,6 +326,7 @@ def held_arith_fails(tree, held):
     dead or with a public source is. (The person promised privacy is held by id.)"""
     bad = collections_counter()
     P = tree["people"]
+    cy_all = own_child_years(tree)
     for pid, rule in held.items():
         if rule != "possible-minor":
             continue
@@ -307,6 +337,10 @@ def held_arith_fails(tree, held):
             bad["recorded-dead-held"] += 1
         if lr.public_source(p["cites"]):
             bad["public-source-held"] += 1
+        # a parent of a recent child is an adult: living, never held out (16 October 2026)
+        c = cy_all.get(pid)
+        if c is not None and lr.this_year() - c <= 60:
+            bad["parent-of-recent-child-held"] += 1
     return dict(bad)
 
 
@@ -694,6 +728,23 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=No
         ("nor a child aged 17 whose parent is living", lr.possible_minor(T - 17, False, [], True, T) is False),
         ("a person with no year and a living parent is a possible minor", lr.possible_minor(None, False, [], True, T) is True),
         ("a person with no year and no living parent is not", lr.possible_minor(None, False, [], False, T) is False),
+        # THE 16 OCTOBER RULING ON THE INTEGRITY AUDIT: an undated parent of a recent child is living.
+        ("undated, no death, no public source, youngest child born exactly 60 years ago: LIVING",
+         lr.is_living(None, False, [], T, youngest_child_year=T - 60) is True),
+        ("the same with the child born 61 years ago: not living",
+         lr.is_living(None, False, [], T, youngest_child_year=T - 61) is False),
+        ("undated, a recent child, and no child year supplied (the default): not living, as before",
+         lr.is_living(None, False, [], T) is False),
+        ("a recent child does not make a person with a recorded death living",
+         lr.is_living(None, True, [], T, youngest_child_year=T - 10) is False),
+        ("a recent child does not outweigh a public source",
+         lr.is_living(None, False, ["FamilySearch: x"], T, youngest_child_year=T - 10) is False),
+        ("a person WITH a birth year is judged on it alone, whatever the child says",
+         lr.is_living(T - 90, False, [], T, youngest_child_year=T - 10) is False),
+        ("an undated adult with a living parent AND a recent child is living and NOT held out",
+         lr.possible_minor(None, False, [], True, T, youngest_child_year=T - 10) is False),
+        ("an undated person with a living parent and no recent child is still held out",
+         lr.possible_minor(None, False, [], True, T, youngest_child_year=T - 61) is True),
     ]
     for label, good in edge:
         check("[kit rule] " + label, good)

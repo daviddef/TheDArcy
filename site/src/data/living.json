@@ -1,6 +1,6 @@
 {
  "note": "The declaration behind tools/check_living.py. It deliberately contains NO list of living people: this tree holds hundreds of them, and a machine-readable directory of living relatives committed to a public repository would be exactly the disclosure the rule exists to prevent. The names are read at check time from the gitignored GEDCOM. What is written down here is the part that needs human judgement and version control: the standard, the six people named on purpose in prose, and why.",
- "rule": "A LIVING PERSON (80 OR YOUNGER, WITH NO DEATH RECORDED) IS NAMED WITH THEIR RELATIONSHIPS AND THEIR TOWN AND COUNTRY, AND NOTHING MORE. A name, a relationship, a town and a country. No date, no record, no source, no note, no occupation, no photograph and no structured data. Their page is noindex, which takes it out of the sitemap and the search index. David ruled this on 16 October 2026, and the same day replaced the rule for who counts as living with the estate's one definition (version 2).\n\nWHO IS LIVING is decided by the shared kit (kit/tools/living_rule.py and kit/data/public-sources.json), not in this repository: born 80 years ago or less by year (this year minus the birth year) with no death or burial recorded. A recorded death or burial, dated or not, means dead. A citation from a public record source (FamilySearch, a MyHeritage record collection, Findmypast and the others on the kit's list) means not living, and what that source says may be shown; a private family-tree entry does not count. A person with no birth year cannot be shown to be 80 or younger, so is not living. The earlier rule here, an upper bound on every birth year inferred through the family graph with a hundred-year horizon, is gone.\n\ntools/build_site_data.py applies it once, at the boundary between the research data and the site: a living person is BUILT from their name, their relationships and the town and country of their birthplace (living_json), and never from the rest of their record, so a field added to the dead cannot reach them.\n\nEVERY PERSON THE ARCHIVE NAMES HAS A PAGE. The numbered ancestors and the thirteen families have pages, and so do the parents, brothers and sisters and spouses they are shown with (site/src/data/relatives.json). The tree's other people are never published.\n\nTWO KINDS OF PERSON ARE HELD OUT, not published at all (David, 16 October 2026): the person promised privacy, by id, and every undated person with a living parent who might be a child, by rule (not recorded dead, no public source, no birth year, and a living parent). A child with a KNOWN birth year is not held out: every child follows the standard. See heldOutIds and heldOutRules in decisions.json.\n\nSIX LIVING PEOPLE ARE ALSO NAMED ON PURPOSE IN PROSE, as sources and as provenance — see `named` below, each with the owner's recorded confirmation. That decision is unchanged and is not what lets anybody else be named: every living person is named, with a page of their own.",
+ "rule": "A LIVING PERSON (80 OR YOUNGER, WITH NO DEATH RECORDED) IS NAMED WITH THEIR RELATIONSHIPS AND THEIR TOWN AND COUNTRY, AND NOTHING MORE. A name, a relationship, a town and a country. No date, no record, no source, no note, no occupation, no photograph and no structured data. Their page is noindex, which takes it out of the sitemap and the search index. David ruled this on 16 October 2026, and the same day replaced the rule for who counts as living with the estate's one definition (version 2).\n\nWHO IS LIVING is decided by the shared kit (kit/tools/living_rule.py and kit/data/public-sources.json), not in this repository: born 80 years ago or less by year (this year minus the birth year) with no death or burial recorded. A recorded death or burial, dated or not, means dead. A citation from a public record source (FamilySearch, a MyHeritage record collection, Findmypast and the others on the kit's list) means not living, and what that source says may be shown; a private family-tree entry does not count. A person with no birth year cannot be shown to be 80 or younger, so is not living, with one exception ruled on 16 October 2026 after an audit of this archive's own pages: an undated person with no recorded death and no public source whose youngest known child was born 60 years ago or less is living. That is an adult parent, so they have the page a living person has (a name, relatives, a town and a country, with no dates) and are not held out. The earlier rule here, an upper bound on every birth year inferred through the family graph with a hundred-year horizon, is gone.\n\ntools/build_site_data.py applies it once, at the boundary between the research data and the site: a living person is BUILT from their name, their relationships and the town and country of their birthplace (living_json), and never from the rest of their record, so a field added to the dead cannot reach them.\n\nEVERY PERSON THE ARCHIVE NAMES HAS A PAGE. The numbered ancestors and the thirteen families have pages, and so do the parents, brothers and sisters and spouses they are shown with (site/src/data/relatives.json). The tree's other people are never published.\n\nTWO KINDS OF PERSON ARE HELD OUT, not published at all (David, 16 October 2026): the person promised privacy, by id, and every undated person with a living parent who might be a child, by rule (not recorded dead, no public source, no birth year, a living parent, and no child born in the last 60 years). A child with a KNOWN birth year is not held out: every child follows the standard. See heldOutIds and heldOutRules in decisions.json.\n\nSIX LIVING PEOPLE ARE ALSO NAMED ON PURPOSE IN PROSE, as sources and as provenance — see `named` below, each with the owner's recorded confirmation. That decision is unchanged and is not what lets anybody else be named: every living person is named, with a page of their own.",
  "namesakes": [
   {
    "phrase": "Richard Smith",
@@ -63,27 +63,27 @@
  "releasedNote": "When somebody named here dies, record the death in the tree and re-export. The guard follows the tree; it is never unlocked by editing code.",
  "counts": {
   "tree": 15643,
-  "living": 462,
-  "published": 15181,
+  "living": 544,
+  "published": 15099,
   "pages": 1230
  },
  "namesakesNote": "Not living people at all — a historical namesake, or a phrase that only ever appears inside a longer published name. Kept as a record of the homonyms the matcher cannot tell apart. Since 16 October 2026 no gate forbids a living person's name, so these exempt nothing from a name ban; they are what a name search must not mistake for a living person.",
  "countsNote": "Written by tools/check_living.py on every build — people, not name phrases. Never type these numbers into a page.",
  "published": {
-  "withPage": 31,
+  "withPage": 39,
   "namedOnly": 0,
-  "named": 31,
+  "named": 39,
   "withTown": 15,
   "countryOnly": 2,
-  "noPlace": 14,
+  "noPlace": 22,
   "onDirectLine": 3,
   "relativesWithPage": 330,
-  "livingRelativesWithPage": 6,
+  "livingRelativesWithPage": 13,
   "heldOut": {
    "dnaTester": 1,
-   "possibleMinors": 9,
-   "total": 10,
-   "possibleMinorsInTree": 92
+   "possibleMinors": 10,
+   "total": 11,
+   "possibleMinorsInTree": 105
   }
  },
  "publishedNote": "Written by tools/build_site_data.py on every build: how many living people this run put into the data, counted not typed. Every living person published has a page; heldOut are people left out altogether (see decisions.json). Numbers only, never a name.",

@@ -1,11 +1,11 @@
 {
-"entries": 1262,
-"distinct": 892,
+"entries": 1254,
+"distinct": 884,
 "records": 449,
-"tree": 813,
+"tree": 805,
 "grafted": 98,
-"linked": 1253,
-"surnames": 334,
+"linked": 1245,
+"surnames": 328,
 "groups": [
 {
 "surname": "D'ARCY",
@@ -3507,7 +3507,7 @@
 },
 {
 "surname": "ATWELL",
-"n": 38,
+"n": 37,
 "rows": [
 {
 "name": "James Atwell",
@@ -3591,13 +3591,6 @@
 "says": "1890–1970 · Queensland, Australia",
 "source": "family tree",
 "link": "/people/george-atwell",
-"kind": "tree"
-},
-{
-"name": "Glenda Atwell",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/glenda-atwell",
 "kind": "tree"
 },
 {
@@ -3779,7 +3772,7 @@
 },
 {
 "surname": "FALCO",
-"n": 32,
+"n": 31,
 "rows": [
 {
 "name": "Carmine Antonio (Carminantonio) Falco",
@@ -3833,14 +3826,6 @@
 "says": "b. 1904 · Arienzo, Caserta, Campania, Italia",
 "source": "family tree",
 "link": "/people/anna-del-giudice-falco",
-"kind": "tree",
-"relative": true
-},
-{
-"name": "Anthony Falco",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/anthony-falco",
 "kind": "tree",
 "relative": true
 },
@@ -8192,20 +8177,6 @@
 ]
 },
 {
-"surname": "BOATFIELD",
-"n": 1,
-"rows": [
-{
-"name": "Ron Boatfield",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/ron-boatfield",
-"kind": "tree",
-"relative": true
-}
-]
-},
-{
 "surname": "BOWEN",
 "n": 1,
 "rows": [
@@ -8788,20 +8759,6 @@
 ]
 },
 {
-"surname": "EVERIST",
-"n": 1,
-"rows": [
-{
-"name": "James Everist",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/james-everist",
-"kind": "tree",
-"relative": true
-}
-]
-},
-{
 "surname": "FALLON",
 "n": 1,
 "rows": [
@@ -9073,20 +9030,6 @@
 ]
 },
 {
-"surname": "GRIMMITT",
-"n": 1,
-"rows": [
-{
-"name": "Janet Grimmitt",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/janet-grimmitt",
-"kind": "tree",
-"relative": true
-}
-]
-},
-{
 "surname": "GRISWOLD OR GRESWALD",
 "n": 1,
 "rows": [
@@ -9297,20 +9240,6 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/countess-agnes-of-honstein",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "HOOGWAERTZ",
-"n": 1,
-"rows": [
-{
-"name": "Lindy Louise Hoogwaertz",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/lindy-louise-hoogwaertz",
-"kind": "tree",
-"relative": true
 }
 ]
 },
@@ -9637,20 +9566,6 @@
 "source": "family tree · direct line",
 "link": "/people/martha-lewis",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "LIGHT",
-"n": 1,
-"rows": [
-{
-"name": "Richard Light",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/richard-light",
-"kind": "tree",
-"relative": true
 }
 ]
 },
@@ -10497,20 +10412,6 @@
 "source": "family tree · above the Hornby graft",
 "link": "/people/johanna-elisabeth-schonberg-auf-wesel",
 "kind": "tree"
-}
-]
-},
-{
-"surname": "SEARLE",
-"n": 1,
-"rows": [
-{
-"name": "Robyn Searle",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/robyn-searle",
-"kind": "tree",
-"relative": true
 }
 ]
 },
