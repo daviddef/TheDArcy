@@ -4,6 +4,40 @@
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
       {
+        "when": "17 October 2026",
+        "title": "The prose gate is wired in, and finds one false positive and one real leak it was told to leave alone",
+        "found": [
+          [
+            "Added",
+            "a gate that reads what authors type, the kit's checkprose, and fails when a page, a note, a letter or a hand-edited data file puts a year, a date, a life-event word or a DNA result beside a living person's name. It reads 158 files and searches for 865 living names"
+          ],
+          [
+            "Checked",
+            "the eight cross-archive pointers are now drawn: one before the kit recorded the verdicts and eight after"
+          ],
+          [
+            "Found",
+            "one false positive, a month and year that dates a funeral eulogy beside a credited author, now a reasoned allowance"
+          ],
+          [
+            "Found",
+            "one REAL LEAK in a research note, two places in one section. It was not fixed, by instruction, and the gate is left failing on it. It is on the work list as 153"
+          ],
+          [
+            "Changed",
+            "the kit pin moved to the version that records those verdicts, which also added one public record source. Nobody in this archive's tree cites it, so no one's status changed"
+          ]
+        ],
+        "did": [
+          "WHAT IT NEEDS THAT THE OTHER GATES DO NOT. The living standard lets a living person appear by name, relationships and a town and country and nothing else. The gates that guard the built pages cannot see a sentence somebody typed. This one can, but to know whose name to look for it needs to know who is living, and that lives in the family tree, which is gitignored because it carries every living person in full. So the list of names is built from the tree on each run and kept OUTSIDE the repository, readable only by its owner, and a machine that does not have the tree says plainly that the gate DID NOT RUN. In CI that is labelled in capitals and the deploy goes ahead; locally it stops the build. 'Cannot say who is living' is never allowed to read as 'nobody is'.",
+          "WHICH FILES, BY EVIDENCE. Forty-eight data files are hand-edited and read. Eighteen are generated and excluded, because a script rewrites them and its own gate is the guard. That was decided by running the generators and watching which files changed, not by guessing from names, because a first pass at guessing missed more than half. A new data file that is in neither list FAILS the gate until somebody says which, so the list cannot go stale.",
+          "THE TWO FINDINGS. Both were read with every living name masked. The first was a date on a document, not on a person, and is allowed with a reason that cites an id and no name. The second was a year beside a living person in a tracked note in a public repository. The rule for this gate is that a real leak is the research owner's to decide and that research prose is not rewritten to make a gate pass, so it is left failing and listed by file, place and kind only.",
+          "WHAT THAT COSTS, STATED PLAINLY. Locally the build now stops at this gate until the note is resolved. CI is unaffected, because it has no tree and the gate reports NOT RUN. The gate sits last in the chain so that it never hides another gate's result. To show the rest of the build still passes, the leak was allowed in the working tree only, the full build was run green, and the allow file was restored and verified byte-identical.",
+          "IT WAS SEEN TO FAIL, NINE WAYS AND THEN SOME. In a throwaway repository with an invented name and the impossible year 1899: a year in a page, a component, a letter, a DNA result, an untracked file, an empty feed and a stale allowance each refused, and a clean copy and a reasoned allowance each passed. In the real repository: NOT RUN locally stops the build, NOT RUN in CI is labelled and continues, --require-tree fails even there, an empty feed refuses, and a new unclassified data file fails.",
+          "ONE MISTAKE OF MINE, CAUGHT BY TWO ANSWERS DISAGREEING. A call to the kit's Python interface returned no failures while the command line returned two. The interface REPLACES the default set of files where the command line ADDS to it, so my call had read none of the pages or notes. The command line is what the build runs, so the build was never wrong; the first counts I took for this record were. They were retaken."
+        ]
+      },
+      {
         "when": "16 October 2026",
         "title": "The chart contradicted the pages it linked to, and one family's parents were on the site but not on the chart",
         "found": [
