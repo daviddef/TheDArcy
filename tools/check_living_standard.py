@@ -37,12 +37,17 @@ able to):
   control       the same checks on a DEAD person's page give the opposite answer
                 (indexable, structured data, in the sitemap), so a detector that
                 has stopped detecting is caught rather than read as a clean build
+  held-out      the people David held out (decisions.json: the DNA tester by id,
+                and, by rule, every living person with no birth year who has a living
+                parent) are in no committed data file, no tsv, no built page and no
+                served index: their ids appear nowhere, there is no record for them,
+                and the count of those left out was measured and written
   not-empty     a build with no living pages, or none of the dead, does not pass
 
     python3 tools/check_living_standard.py              # gate the build
     python3 tools/check_living_standard.py --controls   # also plant every fault
 """
-import glob, html, json, os, re, sys, unicodedata
+import copy, glob, html, json, os, re, sys, unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import outdir
@@ -85,11 +90,36 @@ def _j(path):
 
 # ---- the world: committed data, built pages ---------------------------------
 
+def _text(path):
+    try:
+        return open(path, encoding="utf-8", errors="replace").read()
+    except Exception:
+        return ""
+
+
 def load_data(data_dir=DATA):
     anc = _j(os.path.join(data_dir, "ancestors.json"))
     fams = _j(os.path.join(data_dir, "families.json"))
     line = _j(os.path.join(data_dir, "line.json"))
-    return {"ancestors": anc, "families": fams, "line": line}
+    # Every other committed file that could carry an id: the rest of the site's
+    # data, and the tsv files ancestry.py writes. decisions.json is the one file
+    # that says WHICH ids are held out, so it is read, not searched.
+    files = {}
+    for f in sorted(glob.glob(os.path.join(data_dir, "*.json"))):
+        b = os.path.basename(f)
+        if b in ("ancestors.json", "families.json", "line.json", "decisions.json"):
+            continue
+        files["site/src/data/" + b] = _text(f)
+    for f in sorted(glob.glob(os.path.join(ROOT, "data", "*.tsv"))):
+        files["data/" + os.path.basename(f)] = _text(f)
+    dec = {}
+    try:
+        dec = _j(os.path.join(data_dir, "decisions.json")).get("decisions", {})
+    except Exception:
+        pass
+    held = list((dec.get("heldOutIds") or {}).get("value") or [])
+    return {"ancestors": anc, "families": fams, "line": line, "files": files,
+            "held": held, "decisions": dec}
 
 
 def page_records(data):
@@ -146,7 +176,14 @@ def load_pages(dist):
     def jl(name):
         p = os.path.join(dist, name)
         return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
-    return {"pages": pages, "sitemap": sitemap,
+    served = {}
+    for dp, _, fs in os.walk(dist):
+        for f in fs:
+            if f.lower().endswith((".json", ".xml", ".txt")):
+                q = os.path.join(dp, f)
+                served[os.path.relpath(q, dist).replace(os.sep, "/")] = \
+                    open(q, encoding="utf-8", errors="replace").read()
+    return {"pages": pages, "sitemap": sitemap, "served": served,
             "search": jl("searchindex.json"), "who": jl("whoindex.json")}
 
 
@@ -332,6 +369,49 @@ def rule_control(recs, sl, world):
     return fails
 
 
+def _quoted(i):
+    return re.compile(r'(?<![A-Za-z0-9@])' + re.escape(i) + r'(?![A-Za-z0-9@])')
+
+
+def rule_held(data, world):
+    """The held-out people are not here. Ids only: this gate has no tree, and
+    must not have a name, so it looks for what the data CAN carry: an id."""
+    fails = []
+    held = data.get("held") or []
+    if not held:
+        fails.append(("held-out", "decisions.json declares no held-out id (heldOutIds), so there is nothing to prove absent"))
+    rules = (data.get("decisions") or {}).get("heldOutRules", {}).get("value") or {}
+    if "possible-minor" not in rules or "dna-tester" not in rules:
+        fails.append(("held-out", "decisions.json does not declare both held-out rules (heldOutRules)"))
+    blobs = {
+        "ancestors.json": json.dumps(data["ancestors"], ensure_ascii=False),
+        "families.json": json.dumps(data["families"], ensure_ascii=False),
+        "line.json": json.dumps(data["line"], ensure_ascii=False),
+    }
+    blobs.update(data.get("files") or {})
+    for name, text in (world.get("served") or {}).items():
+        blobs["dist/" + name] = text
+    for hid in held:
+        rx = _quoted(hid)
+        for name, text in blobs.items():
+            if rx.search(text):
+                fails.append(("held-out", f"a held-out id is in {name}"))
+    # the build says how many it left out; a count that is not there means the
+    # generator never looked
+    pub = {}
+    try:
+        pub = (_j(os.path.join(DATA, "living.json")).get("published") or {})
+    except Exception:
+        pass
+    ho = pub.get("heldOut")
+    if not isinstance(ho, dict) or not all(isinstance(ho.get(k), int) for k in
+                                           ("dnaTester", "possibleMinors", "total")):
+        fails.append(("held-out", "living.json carries no measured count of the people left out"))
+    elif ho["total"] != ho["dnaTester"] + ho["possibleMinors"]:
+        fails.append(("held-out", "the counts of people left out do not add up"))
+    return fails
+
+
 def run(data, world, extra_files=()):
     recs = page_records(data)
     sl = slugs(recs)
@@ -340,6 +420,7 @@ def run(data, world, extra_files=()):
     fails += f2
     fails += rule_served(recs, sl, world)
     fails += rule_control(recs, sl, world)
+    fails += rule_held(data, world)
     if nl == 0:
         fails.append(("not-empty", "no living person has a page in this data — a build with nobody to check proves nothing"))
     if nd == 0 or len(world["pages"]) == 0:
@@ -352,7 +433,6 @@ def run(data, world, extra_files=()):
 
 def controls(data, world):
     """Plant each fault in a COPY and demand the gate say so. Returns (ok, lines)."""
-    import copy
     lines, ok = [], True
     recs = page_records(data)
     sl = slugs(recs)
@@ -370,7 +450,8 @@ def controls(data, world):
     def clone():
         return copy.deepcopy(data), {**world, "pages": dict(world["pages"]),
                                      "search": copy.deepcopy(world["search"]),
-                                     "who": copy.deepcopy(world["who"])}
+                                     "who": copy.deepcopy(world["who"]),
+                                     "served": dict(world.get("served") or {})}
 
     def src_row(d):
         for a in d["ancestors"]:
@@ -429,6 +510,31 @@ def controls(data, world):
     if w["who"] is not None:
         d, w = clone(); w["who"].append(["Some Name", ls, 1])
         expect("search", "a living person in whoindex.json", d, w)
+    # the held out
+    hid = (data.get("held") or ["@I0@"])[0]
+    d, w = clone()
+    d["ancestors"][0]["spouses"] = list(d["ancestors"][0].get("spouses") or []) + [
+        {"name": "Planted", "id": hid, "living": True, "married": "", "marriedPlace": "",
+         "divorced": "", "children": []}]
+    expect("held-out", "a held-out id as somebody's spouse", d, w)
+    d, w = clone()
+    d["families"][0]["members"].append({**copy.deepcopy(src_row(d)), "id": hid})
+    expect("held-out", "a held-out id as a record in a family", d, w)
+    d, w = clone()
+    d["families"][0]["members"][0]["spouses"] = [
+        {"name": "Planted", "id": "", "living": False, "married": "", "marriedPlace": "",
+         "divorced": "", "children": [hid]}]
+    expect("held-out", "a held-out id in somebody's list of children", d, w)
+    d, w = clone(); d["files"] = {**d["files"], "data/planted.tsv": f"1\t2\t{hid}\tx\n"}
+    expect("held-out", "a held-out id in a committed tsv", d, w)
+    d, w = clone(); d["files"] = {**d["files"], "site/src/data/planted.json": json.dumps({"who": hid})}
+    expect("held-out", "a held-out id in another committed data file", d, w)
+    d, w = clone(); w["served"] = {**w["served"], "planted.json": json.dumps([hid])}
+    expect("held-out", "a held-out id in a file the site serves", d, w)
+    d, w = clone(); d["held"] = []
+    expect("held-out", "no held-out id declared at all", d, w)
+    d, w = clone(); d["decisions"] = {k: v for k, v in d["decisions"].items() if k != "heldOutRules"}
+    expect("held-out", "the held-out rules not declared", d, w)
     # the positive control and the empty build
     dead_slug = next(sl[r["id"]] for r in recs if not r.get("living") and sl[r["id"]] in world["pages"])
     d, w = clone(); w["pages"][dead_slug] = NOINDEX.sub("", w["pages"][dead_slug]).replace("</head>", '<meta name="robots" content="noindex"></head>', 1)

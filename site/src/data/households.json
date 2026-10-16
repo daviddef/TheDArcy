@@ -3673,7 +3673,7 @@
 {
 "name": "Ronald Atwell",
 "slug": "ronald-atwell",
-"life": ""
+"life": "b. 1928"
 }
 ]
 },
@@ -3971,6 +3971,41 @@
 ]
 },
 {
+"a": "Ronald Atwell",
+"aSlug": "ronald-atwell",
+"b": "Maureen Frahm",
+"bSlug": "",
+"married": "",
+"place": "",
+"sort": [
+1928,
+99,
+99
+],
+"kids": [
+{
+"name": "Kay Anne Atwell",
+"slug": "kay-anne-atwell",
+"life": ""
+},
+{
+"name": "Bruce Atwell",
+"slug": "bruce-atwell",
+"life": ""
+},
+{
+"name": "Julie Atwell",
+"slug": "julie-atwell",
+"life": ""
+},
+{
+"name": "James Atwell",
+"slug": "james-atwell-living",
+"life": ""
+}
+]
+},
+{
 "a": "Robert Leslie Atwell",
 "aSlug": "robert-leslie-atwell",
 "b": "Fanny May Patterson",
@@ -4182,11 +4217,6 @@
 {
 "name": "Ian Kenneth D'Arcy",
 "slug": "ian-kenneth-d-arcy",
-"life": ""
-},
-{
-"name": "Gayle Lorraine D'Arcy",
-"slug": "gayle-lorraine-d-arcy",
 "life": ""
 },
 {
@@ -4851,5 +4881,5 @@
 ]
 }
 ],
-"n": 204
+"n": 205
 }

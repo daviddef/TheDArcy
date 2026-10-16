@@ -13,9 +13,11 @@ Ahnentafel is used rather than a home-made numbering because it is the standard
 and because it makes a gap obvious: a missing number is a missing ancestor.
 """
 import csv, os, sys, collections
-from gedcom import load, display, lifespan, born, died, year, ev, classify_living
+from gedcom import (load, display, lifespan, born, died, year, ev, classify_living,
+                    held_out)
 
 LIVING = {}
+HELD = {}      # living people this archive does not publish at all (gedcom.held_out)
 
 
 def is_living(p):
@@ -70,7 +72,7 @@ def spouse_of(people, families, pid):
         if not f:
             continue
         other = f["wife"] if f["husb"] == pid else f["husb"]
-        if other and other in people:
+        if other and other in people and other not in HELD:
             m = next((e for e in f["events"] if e["kind"] == "marriage"), {})
             out.append((other, m.get("date", ""), m.get("place", "")))
     return out
@@ -149,10 +151,14 @@ def main():
     global LIVING
     people, families = load()
     LIVING = classify_living(people, families)
+    HELD.clear()
+    HELD.update(held_out(people, LIVING))
     print(f"{len(people)} people, {len(families)} families "
           f"({sum(LIVING.values())} judged living)")
 
     by_ahn = ancestors(people, families, ROOT_PERSON)
+    if any(pid in HELD for pid in by_ahn.values()):
+        raise SystemExit("a held-out person sits on the direct line; decide before building")
     print(f"\n{len(by_ahn)} ancestors of the root person "
           f"(deepest generation {max(gen_of(a) for a in by_ahn)})")
 
@@ -168,7 +174,8 @@ def main():
     write(os.path.join(DATA, "darcy-spine.tsv"), spine)
 
     for sn in SURNAMES:
-        hits = [p for p in people.values() if p["surname"].lower() == sn.lower()]
+        hits = [p for p in people.values()
+                if p["surname"].lower() == sn.lower() and p["id"] not in HELD]
         hits.sort(key=lambda p: year(born(p).get("date", "")) or 9999)
         slug = sn.lower().replace("'", "").replace(" ", "-")
         write(os.path.join(DATA, f"surname-{slug}.tsv"),

@@ -14,7 +14,8 @@ to build the whole record and blank it afterwards (redact()); a record that is
 built and then blanked is one forgotten field away from published.
 """
 import json, os, collections, re
-from gedcom import (load, display, born, died, year, ev, lifespan, classify_living)
+from gedcom import (load, display, born, died, year, ev, lifespan, classify_living,
+                    held_out)
 
 # Filled in by main(). One graph-wide judgement, used everywhere below, so that
 # a person cannot be living on one page and dead on another.
@@ -34,6 +35,29 @@ APPEARS = set()
 
 def is_living(p):
     return LIVING.get(p["id"], True)
+
+
+# HELD OUT (David's ruling, 16 October 2026): a living person this archive does
+# not publish at all. The rule lives in gedcom.held_out() so that this build and
+# tools/ancestry.py cannot disagree about it; every place below that names a
+# relative goes through held(), so a held-out person is as absent as they were
+# before the living standard. HELD_SEEN counts, and never names, how many
+# held-out people the build met while looking for relatives.
+HELD = {}
+HELD_SEEN = set()
+
+
+def held(pid):
+    if pid in HELD:
+        HELD_SEEN.add(pid)
+        return True
+    return False
+
+
+def decide_held(people):
+    HELD.clear()
+    HELD_SEEN.clear()
+    HELD.update(held_out(people, LIVING))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site", "src", "data")
@@ -244,7 +268,7 @@ def kept_child(c, people):
     names is drawn (a sibling list, a household); this is only the link list."""
     if c not in people:
         return False
-    return (not is_living(people[c])) or c in SCOPE
+    return (not is_living(people[c])) or c in SCOPE   # a held-out child is in neither
 
 
 def spouses(people, families, pid):
@@ -255,6 +279,8 @@ def spouses(people, families, pid):
         if not f:
             continue
         other = f["wife"] if f["husb"] == pid else f["husb"]
+        if other and held(other):
+            continue                         # not named, and no row to show they exist
         other_alive = alive(other, people)
         if other_alive:
             APPEARS.add(other)
@@ -287,7 +313,8 @@ def _note(pid, people):
 
 
 def parent_names(people, pid):
-    return [display(people[_note(x, people)]) for x in people[pid]["parents"] if x in people]
+    return [display(people[_note(x, people)]) for x in people[pid]["parents"]
+            if x in people and not held(x)]
 
 
 def sibling_names(people, families, pid):
@@ -295,7 +322,7 @@ def sibling_names(people, families, pid):
         display(people[_note(c, people)])
         for fid in people[pid].get("famc", [])
         for c in families.get(fid, {}).get("chil", [])
-        if c != pid and c in people
+        if c != pid and c in people and not held(c)
     })
 
 
@@ -411,13 +438,25 @@ def write_counts(people, anc, fam_out):
         "noPlace": len(uniq) - town - country_only,
         "onDirectLine": sum(1 for r in anc if r["living"]),
     }
+    # Held out: counted, never named. `seen` is how many the build came across as
+    # somebody's relative or as a member of a family and left out; `tree` is how
+    # many the rule catches anywhere in the tree.
+    by_rule = collections.Counter(HELD.values())
+    seen_rule = collections.Counter(HELD[x] for x in HELD_SEEN)
+    pub["heldOut"] = {
+        "dnaTester": seen_rule.get("dna-tester", 0),
+        "possibleMinors": seen_rule.get("possible-minor", 0),
+        "total": len(HELD_SEEN),
+        "possibleMinorsInTree": by_rule.get("possible-minor", 0),
+    }
     path = os.path.join(OUT, "living.json")
     decl = json.load(open(path, encoding="utf-8"))
     decl["published"] = pub
     decl["publishedNote"] = ("Written by tools/build_site_data.py on every build: how many "
                              "living people this run put into the data, counted not typed. "
                              "withPage have a page; namedOnly appear only by name, as a spouse, "
-                             "brother, sister or parent. Numbers only, never a name.")
+                             "brother, sister or parent; heldOut are living people left out "
+                             "altogether (see decisions.json). Numbers only, never a name.")
     json.dump(decl, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return pub
 
@@ -426,14 +465,21 @@ def main():
     global LIVING
     people, families = load()
     LIVING = classify_living(people, families)
+    decide_held(people)
     os.makedirs(OUT, exist_ok=True)
     by_ahn = ancestors(people, families, CRISTINA)
+    on_line = [pid for pid in by_ahn.values() if pid in HELD]
+    if on_line:
+        # The direct line cannot lose a person without breaking its numbering.
+        # None is held today; if one is, that is a decision for David, not a gap.
+        raise SystemExit(f"{len(on_line)} held-out person(s) sit on the direct line; "
+                         "the archive cannot be built around the gap")
     APPEARS.clear()
     SCOPE.clear()
     SCOPE.update(by_ahn.values())
     for sn, _ in FAMILIES:
         SCOPE.update(p["id"] for p in people.values()
-                     if p["surname"].lower() == sn.lower())
+                     if p["surname"].lower() == sn.lower() and p["id"] not in HELD)
 
     # ---- every ancestor; the living through living_json -----------------
     anc = []
@@ -453,15 +499,18 @@ def main():
     # ---- the families, as surname clusters ------------------------------
     fam_out = []
     for sn, blurb in FAMILIES:
-        members = [p for p in people.values() if p["surname"].lower() == sn.lower()]
+        of_name = [p for p in people.values() if p["surname"].lower() == sn.lower()]
+        members = [p for p in of_name if not held(p["id"])]
         members.sort(key=lambda p: year(born(p).get("date", "")) or 9999)
         recs = []
         for m in members:
             recs.append(record(people, families, m["id"]))
         fam_out.append({
             "surname": sn, "blurb": blurb,
-            "total": len(recs),
-            # Everyone of the name now has a place here, the living by name,
+            # Everyone of the name in the tree; `published` is who is given a
+            # place here. The two differ only by the people held out.
+            "total": len(of_name),
+            # Everyone else of the name has a place here, the living by name,
             # town and country. `living` says how many of them.
             "published": len(recs),
             "living": sum(1 for r in recs if r["living"]),

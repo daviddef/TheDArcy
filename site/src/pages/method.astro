@@ -124,6 +124,10 @@ import living from "../data/living.json";
     their own recorded events. A <em>recorded</em> birth is never overridden by inference, because an
     inference that made a living person look older would put the full record of somebody alive on a
     page. Where nothing whatever is known, the person is presumed living.</p>
+    <p style="margin-top:1rem"><strong>The one exception runs the other way.</strong> A person the tree
+    <em>records</em> as deceased, with a death or a burial entered even when no date goes with it, is dead.
+    The tree's own word outranks any inference, so none of them is treated as living, and each is an
+    ordinary dead person's page: it shows what the tree holds for them and nothing it does not.</p>
     <p style="margin-top:1rem">On this build the rule judges <strong>{living.counts.living.toLocaleString()}</strong> of the {living.counts.tree.toLocaleString()}
     people in the tree to be living. <strong>{living.published.withPage}</strong> of them have a page
     here, because this archive gives a page to the numbered ancestors and to the thirteen families
@@ -133,6 +137,14 @@ import living from "../data/living.json";
     where the tree gives one), {living.published.countryOnly} a country only, and {living.published.noPlace}
     no place at all. The place is the place of birth, reduced to a town and a country: a street, a
     hospital or a county is dropped, and the tree records no residence for anybody living.</p>
+    <p style="margin-top:1rem"><strong>{living.published.heldOut.total} living people are left out
+    altogether</strong>, not named even as somebody's relative. One is the person whose DNA result
+    the <a href={u("/dna/")}>DNA page</a> describes, who is not named there or anywhere. The rest are
+    the people the tree gives no birth year and a living parent: with no year there is no telling a
+    child from an adult, and a child is not named. The rule is applied across the whole tree
+    ({living.published.heldOut.possibleMinorsInTree} people meet it); this build met
+    {living.published.heldOut.possibleMinors} of them while looking for relatives. A page shows
+    that count and never who.</p>
     <p style="margin-top:1rem"><strong>A removal request is honoured within days</strong>, without
     argument and without requiring a reason.</p>
 

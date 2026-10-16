@@ -28,6 +28,17 @@ birthday in a data file leaks it whether or not a page ever prints it. The
 messages name the file and the kind of thing found, never the thing: a log that
 printed it would be the leak.
 
+It also proves three rulings David made on the same day about WHO is published:
+
+  · a person the tree RECORDS as deceased (a death or burial event, with or
+    without a date) is dead, so none of them is flagged living, and nobody born
+    within a hundred years who is not recorded dead is flagged dead (this is
+    computed here from the events, independently of gedcom.classify_living);
+  · the DNA tester is held out: not a record, not an id, not a name anywhere;
+  · every living person with no birth year in the tree who has a living parent is
+    held out: the same. These are computed here from the tree, by their own rule,
+    not read from the generator's, and what is reported is a count.
+
 It also checks that the data and the tree agree about WHO IS LIVING, which is the
 fault that matters most under a rule that publishes living people by name: a
 person the tree judges living and the data does not flag would be emitted with
@@ -127,6 +138,90 @@ def harvest(people, families, flags):
         if key not in dead_dates:
             living["date"].update(forms)
     return {k: living[k] - dead[k] for k in living}
+
+
+def has_year(person):
+    from gedcom import born
+    return re.search(r"\b\d{4}\b", born(person).get("date", "") or "") is not None
+
+
+def recorded_dead(person):
+    return any(e["kind"] in ("death", "burial") for e in person["events"])
+
+
+def dead_vs_tree(people, flags, today=2026):
+    """THE RECORD'S OWN WORD. Computed here and not by gedcom.classify_living, so
+    that a classifier that stops reading the record is caught by something that
+    does not share its code."""
+    fails = []
+    wrong_living = [p for p, v in people.items() if recorded_dead(v) and flags.get(p)]
+    if wrong_living:
+        fails.append(f"{len(wrong_living)} person(s) the tree records as deceased are flagged living")
+    # nobody born within a hundred years, and not recorded dead, may be dead
+    from gedcom import born, year
+    wrong_dead = [p for p, v in people.items()
+                  if not recorded_dead(v) and not flags.get(p)
+                  and (year(born(v).get("date", "")) or 0) > today - 100]
+    if wrong_dead:
+        fails.append(f"{len(wrong_dead)} person(s) born within a hundred years and not recorded dead are flagged dead")
+    return fails
+
+
+def held_set(people, flags, tester):
+    """Who must be absent: the declared DNA tester, and every living person with
+    no birth year who has a living parent. This gate's own implementation."""
+    out = {}
+    for pid, v in people.items():
+        if flags.get(pid) and not has_year(v) and any(flags.get(x) for x in v["parents"]):
+            out[pid] = "possible-minor"
+    for t in tester:
+        if t in people and flags.get(t):
+            out[t] = "dna-tester"
+    return out
+
+
+def held_fails(people, flags, data, corp, held, named_phrases, namesakes):
+    """None of the held-out is a record, an id, or a name. A name can only be
+    searched for if it is unique: a name two people share proves nothing about
+    which of them a page means, so those are counted and not searched, and the
+    id check (in the standard) covers them."""
+    from gedcom import display
+    fails, searched, shared, skipped = [], 0, 0, 0
+    ids = set(held)
+    for src in ("ancestors", "line"):
+        for r in data[src]:
+            if r["id"] in ids:
+                fails.append(("held", f"{src}: a record for a held-out person"))
+    for f in data["families"]:
+        for r in f["members"]:
+            if r["id"] in ids:
+                fails.append(("held", "families: a record for a held-out person"))
+    by_name = {}
+    for pid, v in people.items():
+        by_name.setdefault(norm(display(v)), []).append(pid)
+    pats = []
+    for pid in ids:
+        n = norm(display(people[pid]))
+        if len(n.split()) < 2:
+            skipped += 1
+            continue
+        if len(by_name.get(n, [])) > 1:
+            shared += 1
+            continue
+        if n in named_phrases:
+            fails.append(("held", "a person named on purpose in prose (living.json) is also held out — one of the two decisions has to give way"))
+            continue
+        if n in namesakes:
+            skipped += 1
+            continue
+        pats.append(n)
+        searched += 1
+    if pats:
+        rx = re.compile(r"(?<![0-9a-z])(?:" + "|".join(re.escape(x) for x in sorted(pats, key=len, reverse=True)) + r")(?![0-9a-z])")
+        for name, text in corp.items():
+            if rx.search(text):
+                fails.append(("held", f"{name}: the name of a held-out person"))
+    return fails, {"held": len(ids), "searched": searched, "shared": shared, "skipped": skipped}, pats
 
 
 def tracked_files():
@@ -279,6 +374,10 @@ def main():
     if nbad:
         fails.append(("place", f"{nbad} living record(s) carry a place that is not the town and country the tree reduces to"))
 
+    # 2b. a recorded death is a death
+    for m in dead_vs_tree(people, flags):
+        fails.append(("recorded-dead", m))
+
     # 3. nothing else the tree holds about a living person is anywhere
     h = harvest(people, families, flags)
     pats = compile_all(h)
@@ -291,11 +390,27 @@ def main():
     if len(hits) > 40:
         fails.append(("leak", f"...and {len(hits) - 40} more"))
 
+    # 3b. the held-out are absent
+    decl0 = json.load(open(DECL, encoding="utf-8"))
+    named_phrases = {norm(n["phrase"]) for n in decl0.get("named", [])}
+    namesakes = {norm(n["phrase"]) for n in decl0.get("namesakes", [])}
+    held = held_set(people, flags, data["held"])
+    hf, hinfo, hpats = held_fails(people, flags, data, corp, held, named_phrases, namesakes)
+    fails += hf
+    if not held:
+        fails.append(("held", "no held-out person found in the tree, so nothing was proved absent"))
+    if data["held"] and not any(v == "dna-tester" for v in held.values()):
+        fails.append(("held", "the declared DNA tester is not in the tree as a living person"))
+    # the generator's own count of how many it met must be what the tree says
+    ho = (decl0.get("published") or {}).get("heldOut") or {}
+    if ho.get("possibleMinorsInTree") != sum(1 for v in held.values() if v == "possible-minor"):
+        fails.append(("held", "the generator's count of possible minors in the tree is not the count this gate finds"))
+
     # 4. an empty search proves nothing
     fails += corpus_fails(corp, h)
 
     if a.controls:
-        ok = controls(people, flags, data, world, h, corp)
+        ok = controls(people, flags, data, world, h, corp, held, hpats)
         if not ok:
             return 1
 
@@ -313,6 +428,10 @@ def main():
         print(f"  FAIL  living      {len(fails)} finding(s)")
         return 1
     if not a.quiet:
+        print(f"  ok    held-out    {hinfo['held']} person(s) held out ({sum(1 for v in held.values() if v == 'dna-tester')} by id, "
+              f"{sum(1 for v in held.values() if v == 'possible-minor')} by rule): in no record, no data file, no built page; "
+              f"{hinfo['searched']} names searched for in {len(corp):,} files, {hinfo['shared']} shared names covered by id only")
+        print(f"  ok    recorded    every person the tree records as deceased is flagged dead; nobody born within a hundred years and not recorded dead is")
         print(f"  ok    living      {n_living:,} people the tree judges living; "
               f"{info['living']} have a page, each noindex and bare; searched {len(corp):,} files "
               f"(the built site and every tracked file) for {len(h['date']):,} dates, "
@@ -323,7 +442,7 @@ def main():
 
 # ---- planted faults -----------------------------------------------------------
 
-def controls(people, flags, data, world, h, corp):
+def controls(people, flags, data, world, h, corp, held=None, hpats=None):
     """Each rule is shown able to fail, in a COPY. Returns True when every one was caught."""
     pats = compile_all(h)
     ok = True
@@ -367,6 +486,52 @@ def controls(people, flags, data, world, h, corp):
             a["living"] = True
             break
     check("a person the tree judges dead, flagged living in the data", bool(flags_vs_data(people, flags, bad)))
+    # the record's own word
+    rd = next((p for p, v in people.items() if recorded_dead(v) and not flags.get(p)), None)
+    bad = dict(flags)
+    if rd:
+        bad[rd] = True
+    check("a person the tree records as deceased, wrongly marked living", bool(rd) and bool(dead_vs_tree(people, bad)))
+    from gedcom import born, year
+    lv = next((p for p, v in people.items() if flags.get(p) and not recorded_dead(v)
+               and (year(born(v).get("date", "")) or 0) > 1926), None)
+    bad = dict(flags)
+    if lv:
+        bad[lv] = False
+    check("a living person (born within a hundred years, not recorded dead), wrongly marked dead", bool(lv) and bool(dead_vs_tree(people, bad)))
+    check("the honest classification passes the record's-word rule", not dead_vs_tree(people, flags))
+    in_data = {r["id"] for r in data["ancestors"] + [m for f in data["families"] for m in f["members"]]}
+    nodate = next((p for p, v in people.items() if p in in_data and recorded_dead(v) and not flags.get(p)
+                   and not any(e.get("date") for e in v["events"] if e["kind"] in ("death", "burial"))), None)
+    bad2 = copy.deepcopy(data)
+    for rows in (bad2["ancestors"], [m for f in bad2["families"] for m in f["members"]]):
+        for r in rows:
+            if r["id"] == nodate:
+                r["living"] = True
+    check("a recorded-dead person with no death date, flagged living in the data",
+          bool(nodate) and bool(flags_vs_data(people, flags, bad2)))
+    # the held out
+    if held:
+        from gedcom import display
+        dna = next((p for p, v in held.items() if v == "dna-tester"), None)
+        mnr = next((p for p, v in held.items() if v == "possible-minor"
+                    and len([x for x in people.values() if norm(display(x)) == norm(display(people[p]))]) == 1), None)
+        for label, pid in (("the DNA tester", dna), ("a possible minor", mnr)):
+            if not pid:
+                continue
+            nm = display(people[pid])
+            # a record
+            bad = copy.deepcopy(data)
+            bad["ancestors"].append({"id": pid, "living": True, "name": nm, "surname": "x", "born": ""})
+            hf, _, _ = held_fails(people, flags, bad, corp, held, set(), set())
+            check(f"{label}, given a record in the data", bool(hf))
+            # a name, as a relative on a page
+            hf, _, _ = held_fails(people, flags, data, {"dist/people/x/index.html": norm("Brothers and sisters " + nm)}, held, set(), set())
+            check(f"{label}, named as a relative on a built page", bool(hf))
+            hf, _, _ = held_fails(people, flags, data, {"site/src/data/x.json": norm('{"siblings": ["' + nm + '"]}')}, held, set(), set())
+            check(f"{label}, named in a committed data file", bool(hf))
+        hf, _, _ = held_fails(people, flags, data, {"p": "a quiet page about a parish register"}, held, set(), set())
+        check("a clean corpus is NOT a held-out hit (the search can say no)", not [f for f in hf if "name of" in f[1]])
     # the empty corpus
     check("an empty build (no files) is refused", bool(corpus_fails({}, h)))
     check("a tree that yields nothing to search for is refused", bool(corpus_fails(corp, {"date": set(), "text": set(), "place": set()})))

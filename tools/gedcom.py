@@ -234,9 +234,25 @@ def lifespan(person):
     return ""
 
 
+# The events that are the tree's own statement that somebody has died.
+RECORDED_DEAD_KINDS = ("death", "burial")
+
+
+def recorded_dead(person):
+    """True when the tree RECORDS this person as deceased, with or without a date.
+
+    MyHeritage writes "DEAT Y" for somebody it knows to be dead and does not know
+    when; a burial, with or without a date, is the same statement. David ruled on
+    16 October 2026 that a recorded-dead person is dead whether or not a date
+    exists, so no inference about birth years can make them living. Only a death
+    or burial event counts: a residence, a probate or a will is not a statement
+    that the person has died."""
+    return any(e["kind"] in RECORDED_DEAD_KINDS for e in person["events"])
+
+
 def is_living(person, today_year=2026):
     """Per-person fallback. Prefer classify_living(), which uses the whole graph."""
-    if died(person).get("date"):
+    if recorded_dead(person):
         return False
     b = year(born(person).get("date", ""))
     if b is not None and today_year - b > 100:
@@ -291,7 +307,7 @@ def classify_living(people, families, today_year=2026, horizon=100):
 
     dead_by_record = set()
     for pid, p in people.items():
-        if died(p).get("date"):
+        if recorded_dead(p):                 # a date is not needed to be dead
             dead_by_record.add(pid)
         b = year(born(p).get("date", ""))
         if b is not None:
@@ -332,6 +348,37 @@ def classify_living(people, families, today_year=2026, horizon=100):
             continue
         b = bound.get(pid)
         out[pid] = not (b is not None and today_year - b > horizon)
+    return out
+
+
+# HELD OUT (David's ruling, 16 October 2026): a living person this archive does
+# not publish at all. No page, no record, and no name as anybody's relative.
+#   dna-tester      the one living woman whose DNA result /dna/ describes. That
+#                   page says she is not named, and the sentence must stay true.
+#                   Held by id, because she is one person.
+#   possible-minor  a living person with no birth year in the tree who has a
+#                   living parent. With no year there is no telling a child from
+#                   an adult, and a child is not named. A rule, not a list.
+DNA_TESTER = "@I23@"
+HELD_RULES = {
+    "dna-tester": "held by id; a living person whose DNA result the archive describes without naming her",
+    "possible-minor": "a living person with no birth year in the tree who has a living parent",
+}
+
+
+def held_out(people, living):
+    """{id: rule} for everybody held out, given the verdict of classify_living().
+    Only the living can be held out: a person recorded dead is an ordinary dead
+    person, whatever their dates."""
+    out = {}
+    for pid, p in people.items():
+        if not living.get(pid, True):
+            continue
+        if year(born(p).get("date", "")) is None and \
+                any(living.get(x, True) for x in p["parents"]):
+            out[pid] = "possible-minor"
+    if DNA_TESTER in people and living.get(DNA_TESTER, True):
+        out[DNA_TESTER] = "dna-tester"
     return out
 
 

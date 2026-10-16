@@ -1,10 +1,10 @@
 {
-"entries": 922,
-"distinct": 597,
+"entries": 926,
+"distinct": 601,
 "records": 449,
-"tree": 473,
+"tree": 477,
 "grafted": 98,
-"linked": 913,
+"linked": 917,
 "surnames": 206,
 "groups": [
 {
@@ -1408,7 +1408,7 @@
 },
 {
 "surname": "SNEYD",
-"n": 170,
+"n": 172,
 "rows": [
 {
 "name": "Alice Catherine Irene Sneyd",
@@ -1912,6 +1912,13 @@
 "says": "1891–1947 · Queensland, Australia",
 "source": "family tree",
 "link": "/people/cecil-george-sneyd",
+"kind": "tree"
+},
+{
+"name": "Diane Sneyd",
+"says": "no dates, no place — a name and a position in the tree",
+"source": "family tree",
+"link": "/people/diane-sneyd",
 "kind": "tree"
 },
 {
@@ -2598,6 +2605,13 @@
 "says": "England",
 "source": "family tree",
 "link": "/people/william-sneyd",
+"kind": "tree"
+},
+{
+"name": "Yvonne Sneyd",
+"says": "no dates, no place — a name and a position in the tree",
+"source": "family tree",
+"link": "/people/yvonne-sneyd",
 "kind": "tree"
 }
 ]
@@ -3330,7 +3344,7 @@
 },
 {
 "surname": "ATWELL",
-"n": 31,
+"n": 32,
 "rows": [
 {
 "name": "James Atwell",
@@ -3526,6 +3540,13 @@
 "says": "b. 1903 · Toowoomba, Queensland, Australia",
 "source": "family tree",
 "link": "/people/robert-leslie-atwell",
+"kind": "tree"
+},
+{
+"name": "Ronald Atwell",
+"says": "b. 1928",
+"source": "family tree",
+"link": "/people/ronald-atwell",
 "kind": "tree"
 },
 {
@@ -3908,7 +3929,7 @@
 },
 {
 "surname": "MURDOCH",
-"n": 23,
+"n": 24,
 "rows": [
 {
 "name": "Barbara Murdoch, née Atwell",
@@ -4034,6 +4055,13 @@
 "says": "1925–1996 · Toowoomba",
 "source": "family tree",
 "link": "/people/keith-william-murdoch",
+"kind": "tree"
+},
+{
+"name": "Marian Jean Murdoch",
+"says": "toowoomba, qld, australia",
+"source": "family tree",
+"link": "/people/marian-jean-murdoch",
 "kind": "tree"
 },
 {

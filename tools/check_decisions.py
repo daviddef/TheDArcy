@@ -104,6 +104,26 @@ def living_exemptions():
     return sorted(out)
 
 
+def held_out_ids():
+    """Living people held out BY ID: not published, not named as anybody's
+    relative. Ids only, because the whole point is that no file may say who."""
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import gedcom
+    return [gedcom.DNA_TESTER]
+
+
+def held_out_rules():
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import gedcom
+    return dict(gedcom.HELD_RULES)
+
+
+def recorded_dead_kinds():
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import gedcom
+    return list(gedcom.RECORDED_DEAD_KINDS)
+
+
 def site_origin():
     """The three places this archive states its own address, which must agree.
 
@@ -169,6 +189,9 @@ CHECKS = {
     "livingPolicy": living_policy,
     "namedLiving": named_living,
     "livingExemptions": living_exemptions,
+    "heldOutIds": held_out_ids,
+    "heldOutRules": held_out_rules,
+    "recordedDeadKinds": recorded_dead_kinds,
     "grafts": grafts,
     "retiredAllow": retired_allow,
 }

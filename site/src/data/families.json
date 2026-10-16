@@ -3,8 +3,8 @@
   "surname": "D'Arcy",
   "blurb": "the name the archive carries",
   "total": 83,
-  "published": 83,
-  "living": 16,
+  "published": 81,
+  "living": 14,
   "members": [
    {
     "id": "@I502856@",
@@ -2852,13 +2852,12 @@
      },
      {
       "name": "Joan",
-      "id": "",
-      "living": true,
+      "id": "@I505033@",
+      "living": false,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": [],
-      "place": ""
+      "children": []
      }
     ],
     "parents": [
@@ -2903,7 +2902,6 @@
       "divorced": "",
       "children": [
        "@I6@",
-       "@I23@",
        "@I22@"
       ]
      }
@@ -2995,8 +2993,7 @@
       "divorced": "",
       "children": [
        "@I2@",
-       "@I8@",
-       "@I509341@"
+       "@I8@"
       ],
       "place": "Benevento, Italy"
      }
@@ -3006,7 +3003,6 @@
      "Audrey \"Dell\" Murdoch"
     ],
     "siblings": [
-     "Gayle Lorraine D'Arcy",
      "Graham Lindsay D'Arcy"
     ],
     "sources": [],
@@ -3049,36 +3045,6 @@
     "siblings": [
      "Kevin D'Arcy",
      "Narelle Ivy D'Arcy"
-    ],
-    "sources": [],
-    "notes": [],
-    "living": true
-   },
-   {
-    "id": "@I23@",
-    "mh": "",
-    "name": "Gayle Lorraine D'Arcy",
-    "surname": "D'Arcy",
-    "sex": "F",
-    "ahn": null,
-    "gen": null,
-    "born": "",
-    "bornPlace": "",
-    "died": "",
-    "diedPlace": "",
-    "cause": "",
-    "burial": "",
-    "occupation": "",
-    "life": "",
-    "place": "Brisbane, Australia",
-    "spouses": [],
-    "parents": [
-     "Kenneth Lindsay D'Arcy",
-     "Audrey \"Dell\" Murdoch"
-    ],
-    "siblings": [
-     "Graham Lindsay D'Arcy",
-     "Ian Kenneth D'Arcy"
     ],
     "sources": [],
     "notes": [],
@@ -3131,7 +3097,6 @@
      "Audrey \"Dell\" Murdoch"
     ],
     "siblings": [
-     "Gayle Lorraine D'Arcy",
      "Ian Kenneth D'Arcy"
     ],
     "sources": [],
@@ -3263,7 +3228,6 @@
      "Giuseppina Falco"
     ],
     "siblings": [
-     "Sister DNA D'Arcy",
      "Stefanie Francesca D'Arcy"
     ],
     "sources": [],
@@ -3304,8 +3268,7 @@
      "Giuseppina Falco"
     ],
     "siblings": [
-     "Cristina Adele D'Arcy",
-     "Sister DNA D'Arcy"
+     "Cristina Adele D'Arcy"
     ],
     "sources": [],
     "notes": [],
@@ -3455,15 +3418,14 @@
     "spouses": [
      {
       "name": "Harry Bamford",
-      "id": "",
-      "living": true,
+      "id": "@I505031@",
+      "living": false,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
       "children": [
        "@I505043@"
-      ],
-      "place": ""
+      ]
      }
     ],
     "parents": [
@@ -3500,13 +3462,12 @@
     "spouses": [
      {
       "name": "Wesley Peters",
-      "id": "",
-      "living": true,
+      "id": "@I505030@",
+      "living": false,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": [],
-      "place": ""
+      "children": []
      }
     ],
     "parents": [
@@ -3591,36 +3552,6 @@
     "sources": [],
     "notes": [],
     "living": true
-   },
-   {
-    "id": "@I509341@",
-    "mh": "",
-    "name": "Sister DNA D'Arcy",
-    "surname": "D'Arcy",
-    "sex": "F",
-    "ahn": null,
-    "gen": null,
-    "born": "",
-    "bornPlace": "",
-    "died": "",
-    "diedPlace": "",
-    "cause": "",
-    "burial": "",
-    "occupation": "",
-    "life": "",
-    "place": "",
-    "spouses": [],
-    "parents": [
-     "Ian Kenneth D'Arcy",
-     "Giuseppina Falco"
-    ],
-    "siblings": [
-     "Cristina Adele D'Arcy",
-     "Stefanie Francesca D'Arcy"
-    ],
-    "sources": [],
-    "notes": [],
-    "living": true
    }
   ]
  },
@@ -3629,7 +3560,7 @@
   "blurb": "Ivy Miriam Sneyd's people, of Boulia and Brisbane",
   "total": 116,
   "published": 116,
-  "living": 4,
+  "living": 2,
   "members": [
    {
     "id": "@I504827@",
@@ -8038,7 +7969,7 @@
    },
    {
     "id": "@I703@",
-    "mh": "",
+    "mh": "MH:I703",
     "name": "Yvonne Sneyd",
     "surname": "Sneyd",
     "sex": "F",
@@ -8052,7 +7983,6 @@
     "burial": "",
     "occupation": "",
     "life": "",
-    "place": "",
     "spouses": [],
     "parents": [
      "Ernest Ephraim Sneyd",
@@ -8064,12 +7994,14 @@
      "Greville William Sneyd"
     ],
     "sources": [],
-    "notes": [],
-    "living": true
+    "notes": [
+     "* Reference: [https://www.myheritage.com/research/record-1-203116051-1-500943/yvonne-sneyd-in-myheritage-family-trees?indId=externalindividual-b1083ac583f586e97a7040de16863393&mrid=63bbfe15a45d0a95d04386c90c65a150 MyHeritage Family Trees] - [http://www.geni.com/projects/SmartCopy/18783 SmartCopy]: ''Apr 14 2017, 10:37:14 UTC''"
+    ],
+    "living": false
    },
    {
     "id": "@I704@",
-    "mh": "",
+    "mh": "MH:I704",
     "name": "Diane Sneyd",
     "surname": "Sneyd",
     "sex": "F",
@@ -8083,7 +8015,6 @@
     "burial": "",
     "occupation": "",
     "life": "",
-    "place": "",
     "spouses": [],
     "parents": [
      "Ernest Ephraim Sneyd",
@@ -8095,8 +8026,10 @@
      "Yvonne Sneyd"
     ],
     "sources": [],
-    "notes": [],
-    "living": true
+    "notes": [
+     "* Reference: [https://www.myheritage.com/research/record-1-203116051-1-500942/diane-sneyd-in-myheritage-family-trees?indId=externalindividual-b1083ac583f586e97a7040de16863393&mrid=63bbfe15a45d0a95d04386c90c65a150 MyHeritage Family Trees] - [http://www.geni.com/projects/SmartCopy/18783 SmartCopy]: ''Apr 14 2017, 10:37:14 UTC''"
+    ],
+    "living": false
    },
    {
     "id": "@I501963@",
@@ -9073,13 +9006,12 @@
     "spouses": [
      {
       "name": "Frank O'Neill Godschall Johnson",
-      "id": "",
-      "living": true,
+      "id": "@I505207@",
+      "living": false,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": [],
-      "place": ""
+      "children": []
      }
     ],
     "parents": [
@@ -9310,7 +9242,7 @@
   "blurb": "Audrey Dell Murdoch's people, out of Ayrshire",
   "total": 30,
   "published": 30,
-  "living": 11,
+  "living": 10,
   "members": [
    {
     "id": "@I505077@",
@@ -10032,7 +9964,6 @@
       "divorced": "",
       "children": [
        "@I6@",
-       "@I23@",
        "@I22@"
       ]
      }
@@ -10468,21 +10399,20 @@
    },
    {
     "id": "@I506883@",
-    "mh": "",
+    "mh": "MH:I506883",
     "name": "Marian Jean Murdoch",
     "surname": "Murdoch",
     "sex": "F",
     "ahn": null,
     "gen": null,
     "born": "",
-    "bornPlace": "",
+    "bornPlace": "toowoomba, qld, australia",
     "died": "",
     "diedPlace": "",
     "cause": "",
     "burial": "",
     "occupation": "",
     "life": "",
-    "place": "Toowoomba, Australia",
     "spouses": [],
     "parents": [
      "William James Fraser \"Bill\" Murdoch",
@@ -10496,7 +10426,7 @@
     ],
     "sources": [],
     "notes": [],
-    "living": true
+    "living": false
    }
   ]
  },
@@ -10504,8 +10434,8 @@
   "surname": "Atwell",
   "blurb": "Barbara 'Goldie' Atwell's people, out of Somerset",
   "total": 36,
-  "published": 36,
-  "living": 8,
+  "published": 34,
+  "living": 5,
   "members": [
    {
     "id": "@I503732@",
@@ -11069,13 +10999,12 @@
     "spouses": [
      {
       "name": "Florence Patterson",
-      "id": "",
-      "living": true,
+      "id": "@I503696@",
+      "living": false,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": [],
-      "place": ""
+      "children": []
      }
     ],
     "parents": [
@@ -11673,15 +11602,14 @@
     "spouses": [
      {
       "name": "Dorothy Holmes",
-      "id": "",
-      "living": true,
+      "id": "@I503762@",
+      "living": false,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
       "children": [
        "@I503780@"
-      ],
-      "place": ""
+      ]
      }
     ],
     "parents": [
@@ -11701,26 +11629,25 @@
    },
    {
     "id": "@I503790@",
-    "mh": "",
+    "mh": "MH:I503790",
     "name": "Ronald Atwell",
     "surname": "Atwell",
     "sex": "M",
     "ahn": null,
     "gen": null,
-    "born": "",
+    "born": "1928",
     "bornPlace": "",
     "died": "",
     "diedPlace": "",
     "cause": "",
     "burial": "",
     "occupation": "",
-    "life": "",
-    "place": "",
+    "life": "b. 1928",
     "spouses": [
      {
       "name": "Maureen Frahm",
-      "id": "",
-      "living": true,
+      "id": "@I503791@",
+      "living": false,
       "married": "",
       "marriedPlace": "",
       "divorced": "",
@@ -11729,8 +11656,7 @@
        "@I503792@",
        "@I503794@",
        "@I503795@"
-      ],
-      "place": ""
+      ]
      }
     ],
     "parents": [
@@ -11744,7 +11670,7 @@
     ],
     "sources": [],
     "notes": [],
-    "living": true
+    "living": false
    },
    {
     "id": "@I503793@",
@@ -11851,10 +11777,7 @@
       "married": "",
       "marriedPlace": "",
       "divorced": "",
-      "children": [
-       "@I503800@",
-       "@I503801@"
-      ],
+      "children": [],
       "place": ""
      }
     ],
@@ -11950,64 +11873,6 @@
      "Bruce Atwell",
      "Julie Atwell",
      "Kay Anne Atwell"
-    ],
-    "sources": [],
-    "notes": [],
-    "living": true
-   },
-   {
-    "id": "@I503800@",
-    "mh": "",
-    "name": "Jason Atwell",
-    "surname": "Atwell",
-    "sex": "M",
-    "ahn": null,
-    "gen": null,
-    "born": "",
-    "bornPlace": "",
-    "died": "",
-    "diedPlace": "",
-    "cause": "",
-    "burial": "",
-    "occupation": "",
-    "life": "",
-    "place": "",
-    "spouses": [],
-    "parents": [
-     "Bruce Atwell",
-     "Rhonda Smith"
-    ],
-    "siblings": [
-     "Monique Atwell"
-    ],
-    "sources": [],
-    "notes": [],
-    "living": true
-   },
-   {
-    "id": "@I503801@",
-    "mh": "",
-    "name": "Monique Atwell",
-    "surname": "Atwell",
-    "sex": "F",
-    "ahn": null,
-    "gen": null,
-    "born": "",
-    "bornPlace": "",
-    "died": "",
-    "diedPlace": "",
-    "cause": "",
-    "burial": "",
-    "occupation": "",
-    "life": "",
-    "place": "",
-    "spouses": [],
-    "parents": [
-     "Bruce Atwell",
-     "Rhonda Smith"
-    ],
-    "siblings": [
-     "Jason Atwell"
     ],
     "sources": [],
     "notes": [],

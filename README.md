@@ -61,7 +61,11 @@ record alone marks every one of them living — safe, but useless. So the build 
 bound on each person's birth year** from their own events, their children's births, their marriages
 and their parents' bounds, and treats somebody as dead only when *even the latest year they could have
 been born* is more than a century ago. Every step is a real bound, never a guess, and a recorded
-birth is never overridden by inference. On the current export that judges **2,034 of 15,643** people
+birth is never overridden by inference. The one exception runs the other way: a person the tree
+*records* as deceased, by a death or burial entry with or without a date, is dead. Two further groups
+are left out altogether, with no page and no name as anybody's relative: the living person whose DNA
+result `/dna/` describes (held by id) and every living person with no birth year who has a living parent
+(`held_out()` in `tools/gedcom.py`). On the current export that judges **1,490 of 15,643** people
 living; those in the numbered ancestors and the thirteen families have a page here, the rest are named, if at all, as a relative (the counts are in `living.json`). A removal request is honoured within days, without argument and without
 requiring a reason.
 
