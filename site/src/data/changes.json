@@ -26,6 +26,10 @@
           [
             "Changed",
             "the kit pin moved to the version that records those verdicts, which also added one public record source. Nobody in this archive's tree cites it, so no one's status changed"
+          ],
+          [
+            "Fixed",
+            "later the same day, on David's approval, the real leak was removed from the research note: two places, 28 characters, the surrounding research left alone, and no allowance added. The prose gate now passes on its own and the local build is whole again"
           ]
         ],
         "did": [
@@ -34,7 +38,8 @@
           "THE TWO FINDINGS. Both were read with every living name masked. The first was a date on a document, not on a person, and is allowed with a reason that cites an id and no name. The second was a year beside a living person in a tracked note in a public repository. The rule for this gate is that a real leak is the research owner's to decide and that research prose is not rewritten to make a gate pass, so it is left failing and listed by file, place and kind only.",
           "WHAT THAT COSTS, STATED PLAINLY. Locally the build now stops at this gate until the note is resolved. CI is unaffected, because it has no tree and the gate reports NOT RUN. The gate sits last in the chain so that it never hides another gate's result. To show the rest of the build still passes, the leak was allowed in the working tree only, the full build was run green, and the allow file was restored and verified byte-identical.",
           "IT WAS SEEN TO FAIL, NINE WAYS AND THEN SOME. In a throwaway repository with an invented name and the impossible year 1899: a year in a page, a component, a letter, a DNA result, an untracked file, an empty feed and a stale allowance each refused, and a clean copy and a reasoned allowance each passed. In the real repository: NOT RUN locally stops the build, NOT RUN in CI is labelled and continues, --require-tree fails even there, an empty feed refuses, and a new unclassified data file fails.",
-          "ONE MISTAKE OF MINE, CAUGHT BY TWO ANSWERS DISAGREEING. A call to the kit's Python interface returned no failures while the command line returned two. The interface REPLACES the default set of files where the command line ADDS to it, so my call had read none of the pages or notes. The command line is what the build runs, so the build was never wrong; the first counts I took for this record were. They were retaken."
+          "ONE MISTAKE OF MINE, CAUGHT BY TWO ANSWERS DISAGREEING. A call to the kit's Python interface returned no failures while the command line returned two. The interface REPLACES the default set of files where the command line ADDS to it, so my call had read none of the pages or notes. The command line is what the build runs, so the build was never wrong; the first counts I took for this record were. They were retaken.",
+          "RESOLVED THE SAME DAY. The gate was left failing so the leak could not be forgotten, which is what it was for. Once David approved fixing it, the change was made narrowly: the detail attached to the living person's name was removed in the two places the gate flagged, a count of exactly two was checked before anything was written, and nothing else in the section or the file changed. The gate then passed with the one reasoned allowance it already had, with none added for this. The paragraph above that says the local build stops at the gate describes the state between the finding and the fix."
         ]
       },
       {

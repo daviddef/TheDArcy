@@ -1894,7 +1894,7 @@ one name, is the form a sweetheart takes — but that is a guess and is labelled
 
 ## 85. Ian's ancestry, counted (asked 9 September 2026)
 
-Walked from **@I6@ Ian Kenneth D'Arcy, b. 1955**, straight out of the GEDCOM (15,643 individuals,
+Walked from **@I6@ Ian Kenneth D'Arcy**, straight out of the GEDCOM (15,643 individuals,
 4,777 families):
 
 | | Ancestors | Deepest | Generations above Ian |
@@ -1910,7 +1910,7 @@ and one disproved.
 
 The male D'Arcy spine above Ian, and where it breaks:
 
-    0  Ian Kenneth D'Arcy            b. 1955
+    0  Ian Kenneth D'Arcy
     1  Kenneth Lindsay D'Arcy        1927–2010
     2  Lindesay Atkinson D'Arcy      1892–1936
     3  George Pitt D'Arcy            1864–1931
