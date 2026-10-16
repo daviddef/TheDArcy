@@ -4451,7 +4451,11 @@
       "outcome": "null",
       "got": "**Zero hits for all four, and the zero was the method's fault.** The queries were whole sentences — «Ralph Sneyd Keele baptised 1793», «Walter Sneyd Keele Hall born 1809» and two like them — and the search matches an exact phrase. **The control: the same endpoint returned 2,349 hits for «Keele Hall», 2,585 for «Ralph Sneyd» and 1,887 for «Walter Sneyd».** A phrase that was really in print, asked for as a phrase, came back. Re-asked that way, «Ralph Sneyd of Keele Hall» returned 75 hits and gave the row above. **Do not repeat the long forms; they cannot find anything.**",
       "href": "/how-far-back",
-      "ctl": "named"
+      "ctl": "named",
+      "tags": [
+        "sneyd",
+        "archive-org"
+      ]
     },
     {
       "src": "Wolstanton: (Wolstan's Town) — a brief history of the ancient church, parish and village (1908), page headed «Ralph Sneyd of Keele Hall, Esquire, D.L.»",
@@ -4460,7 +4464,11 @@
       "when": "17 Oct 2026",
       "outcome": "yield",
       "got": "**A printed local history names his parents, and they are not Samuel and Elizabeth.** Of «the late Mr. Ralph Sneyd»: «**He was the son of Walter Sneyd, of Keele Hall**, Sneyd, Bradwell, &c., **by the Hon. Louisa Bagot**, his wife, daughter of William, 1st Lord Bagot. He was **born 6th October, 1793**; High Sheriff of Staffordshire, 1844, and **died unmarried in July, 1870**, when he was **succeeded by his brother the Rev. Walter Sneyd**, M.A., F.S.A., J.P.»\n\n**Two things follow, and the second is an inference, marked as one.** (1) The Ralph of 1793–1870 is the Keele Ralph, so the tree entry that gives him Samuel Sneyd as his father is wrong about his parents. (2) His brother and successor is the Rev. Walter Sneyd, which is the Walter the tree gives 23 July 1809 – 1888 and also hangs on Samuel and Elizabeth; a brother has Ralph's parents, so he is a Keele son too. **The source is secondary and printed fifteen years after the last of them was alive to ask; it is not a baptism.** The Keele baptisms would still name the parents outright, and have not been read.\n\n**How it was found.** Archive.org full-text search, exact phrase «Ralph Sneyd of Keele Hall»: 75 hits, of which this was the second. The text was read from the item's own DjVu transcription, page headed with his name.",
-      "href": "/how-far-back"
+      "href": "/how-far-back",
+      "tags": [
+        "sneyd",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
