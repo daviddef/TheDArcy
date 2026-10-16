@@ -38,6 +38,18 @@
           [
             "Checked",
             "a pulled batch of sixteen commits from other sessions, including the new living-person standard, built green once a stale install of the shared kit was cleared"
+          ],
+          [
+            "Changed",
+            "an undated person with no recorded death whose youngest known child was born in the last sixty years is now treated as living: eight pages became bare living pages, the other forty-eight undated pages are byte-identical, and no published address moved"
+          ],
+          [
+            "Added",
+            "a way to declare two tree people one person, and eight pairs declared. A copy keeps its address, says it is the same person, names the primary as its canonical and leaves the sitemap and search; the primaries are untouched"
+          ],
+          [
+            "Added",
+            "a pointer between this archive and the Falco archive for people both hold, one live and seven waiting for the kit to record them as confirmed"
           ]
         ],
         "did": [
@@ -45,7 +57,11 @@
           "WHY NO GATE SAW IT. Every gate reads one source. This fault lived between two readers of one fact, so the only check that can find it compares two built outputs. tools/check_years_agree.py does exactly that, and it began as a check on one chart. Fixing the chart and looking again found the same fault in six more places, so it was widened to every person link on every page. It never asks which is right, only whether the archive agrees with itself. It cannot see the Blood relatives page, which embeds its data as JSON; that page was fixed and checked by hand.",
           "WHAT THE TREE CANNOT SAY. James Wakefield's parents are named in a baptism at Stroud and his death registration names his father, but the family tree holds neither of them, so there is no box to draw and a record line is not an edge. The kit's wall text for anyone without parents says nothing is recorded, which is false for him. The chart now says what is known, that it comes from an index entry and not the register, and that nothing above Richard and Elizabeth is established. The one Richard Wakefield in the free Gloucestershire transcripts, baptised at Chedworth in 1770, is still only a name and a date.",
           "A GAP IN THE KIT, LEFT ALONE. The chart's wall vocabulary has no kind for parents named in a record that the tree does not hold, so the nearest honest tag is still Not yet worked, sitting above a note that says the parents are named. That is a shared-kit change and not this archive's to make.",
-          "THE LIVING-PERSON RULE CHANGED UNDER THIS ARCHIVE while it was being worked on. The kit now holds one definition, eighty or younger with no death recorded, and thirty-one living people have a page of a name, relatives, a town and a country, with no dates and out of search. That is recorded on the About page as a ruling, and the gates enforce it; it is mentioned here only so that nobody reads a bare living person's page as a leak."
+          "THE LIVING-PERSON RULE CHANGED UNDER THIS ARCHIVE while it was being worked on. The kit now holds one definition, eighty or younger with no death recorded, and thirty-one living people have a page of a name, relatives, a town and a country, with no dates and out of search. That is recorded on the About page as a ruling, and the gates enforce it; it is mentioned here only so that nobody reads a bare living person's page as a leak.",
+          "THREE RULINGS ON THE INTEGRITY AUDIT, built the same day. They reached this archive through the landing-site session, which reported them as David's, and are recorded as relayed and not as heard directly. The first closes a gap in the living rule: it holds out an undated person with a living parent, and never looked down the tree for a recent child. The second gives the duplicates the audit found somewhere to be declared. The third lets two archives that hold the same person point at each other, because their pages can disagree about what is known and a reader cannot tell.",
+          "ONE MECHANISM, THREE GATES, EACH SEEN TO FAIL. The living gate was made to refuse a generator that forgot the child's year, three independent ways. The duplicate gate was made to refuse thirteen planted faults, one in each clause, and the two clauses that matter most, an id declared twice and a chain of declarations, were re-proved with real ids because the first plant used a nonexistent one and showed the wrong finding first. The pointer gate was made to refuse a missing pointer, a wrong address, a stray one and one on a living page, and was then rehearsed end to end with seven more pairs confirmed in a local copy.",
+          "THE LAYOUT WAS TOUCHED ONCE, AND THAT IS THE ONE THING TO KNOW. A canonical link needs the layout to hand a page's choice to the shared head component, which already accepted one and defaults to the page's own address. Defranceschi could not do this because their layout had no way in, and logged the request instead. This archive's standing instruction is to leave layouts alone, so the edit is the minimum the ruled behaviour needs: one property in, one property out, and every other page unchanged. A gate now refuses any page that names a canonical other than its own unless it is a declared copy.",
+          "WHAT THE DUPLICATE MECHANISM DOES NOT DO. It makes the site honest; it does not fix the tree. The family tree still holds these people twice, and merging them there and re-exporting would remove the cause, after which the declarations can be retired. And the choice of primary is a judgement, so the rule is written beside each pair: the copy that draws more of the family, then the one that cites more. Jessie is where it bites, because her unsourced copy has the marriage and her sourced copy does not."
         ]
       },
   {

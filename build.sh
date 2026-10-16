@@ -217,6 +217,13 @@ python3 tools/check_years_agree.py
 echo "── sameperson"
 python3 tools/check_same_person.py
 
+# THE «ALSO DOCUMENTED IN» POINTER. The kit draws it for a confirmed pair and is silent
+# for everything else, so a template that never hands over its props renders nothing and
+# looks identical to a correct page with no pair. Only the built page can tell them apart.
+# See tools/check_also_in.py.
+echo "── alsoin"
+python3 tools/check_also_in.py
+
 # Reports, never gates. agree.py reads the archive against itself and prints
 # every (person, event) pair carrying more than one year or more than one
 # place. Most of what it prints is noise — repeated forenames, adjacent

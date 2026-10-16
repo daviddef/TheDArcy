@@ -8,6 +8,7 @@ import { people, byId, duplicateOf } from "../../lib/people.js";
 import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
 import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
+import AlsoIn from "@daviddef/archive-kit/components/AlsoIn.astro";
 import { grade } from "../../lib/grade.js";
 import PersonTree from "../../components/PersonTree.astro";
 import { CORRECTIONS } from "../../lib/corrections.js";
@@ -276,6 +277,11 @@ const anyDamaged = notes.some((n) => n.damaged);
           ? <a href={u(g.href)}>What was tested &rarr;</a>
           : <a href={u("/method/#ladder")}>How this archive grades a claim &rarr;</a>}</span>
     </p>
+    {/* «Also documented in the Falco archive»: one person held by two archives is two pages by
+        design, and they can disagree about what is known. The kit draws this ONLY for a pair
+        marked CONFIRMED in kit/data/cross-archive.json, and this sits inside the not-living
+        branch, because a living page is a name, relationships and a place and gets no pointer. */}
+    <AlsoIn archive="darcy" path={`/people/${p.slug}/`} />
   </section>
   )}
 
