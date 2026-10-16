@@ -20,24 +20,52 @@
  * name is the merge those slugs exist to prevent.
  */
 import Base from "../../layouts/Base.astro";
+import Blk from "../../components/Blk.astro";
+import Note from "../../components/Note.astro";
+import Scroll from "../../components/Scroll.astro";
 import Descent from "@daviddef/archive-kit/components/Descent.astro";
 import { u } from "../../lib/url.js";
 import famData from "../../data/families.json";
 import ancestorRows from "../../data/ancestors.json";
-import { people } from "../../lib/people.js";
+import { people, duplicateOf } from "../../lib/people.js";
+import { lineData, lineSlugs } from "../../lib/familyLines.js";
 
+/* TWO KINDS OF FAMILY PAGE, ONE ADDRESS SPACE. The thirteen in families.json
+   (every bearer of the name in the tree is published) and the lines in
+   family-lines.json (only people the archive already names; see
+   src/lib/familyLines.js). A slug belongs to exactly one of them: the build
+   stops if a line reuses a cluster's address. */
 export function getStaticPaths() {
   const slug = (s) =>
     String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
       .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-  return famData.map((f) => ({ params: { slug: slug(f.surname) }, props: { fam: f } }));
+  const own = famData.map((f) => ({ params: { slug: slug(f.surname) }, props: { fam: f } }));
+  const taken = new Set(own.map((x) => x.params.slug));
+  const lines = lineSlugs.map((s) => {
+    if (taken.has(s)) throw new Error(`family-lines.json: /families/${s}/ is already a cluster in families.json`);
+    return { params: { slug: s }, props: { lineSlug: s } };
+  });
+  return [...own, ...lines];
 }
-const { fam } = Astro.props;
+const { fam: famProp, lineSlug } = Astro.props;
+const line = lineSlug ? lineData(lineSlug) : null;
+/* A cluster page and a line page draw their rows the same way. The members are
+   the cluster's own records, or the line's published people. A declared copy
+   (same-person.json) is one person entered twice and is listed once. */
+const allMembers = famProp ? (famProp.members || []) : line.members;
+const copies = allMembers.filter((m) => duplicateOf(m));
+/* A NEW OBJECT, never the imported one: families.json is shared by every page that imports it, and
+   writing the filtered list back changed what /sneyd/ drew later in the same build. */
+const fam = { ...(famProp || { surname: line.surname, blurb: "" }), members: allMembers.filter((m) => !duplicateOf(m)) };
 
 const SLUG_BY_ID = new Map(people.map((q) => [q.id, q.slug]));
 const KIN_BY_ID = new Map();
 for (const a of ancestorRows) KIN_BY_ID.set(a.id, a);
 for (const f of famData) for (const m of (f.members || [])) if (!KIN_BY_ID.has(m.id)) KIN_BY_ID.set(m.id, m);
+/* A line's people include relatives named beside someone, and a spouse who is
+   one has her own brothers and sisters on her page: look her up among everybody
+   with a page. (The thirteen clusters keep the narrower lookup they always had.) */
+if (line) for (const q of people) if (!KIN_BY_ID.has(q.id)) KIN_BY_ID.set(q.id, q);
 
 /* A card with no name is not a card. The export carries sibling and spouse
    records that hold a marriage, an id or a list of children and NO NAME —
@@ -65,9 +93,7 @@ const yr = (x) => (String(x || "").match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1];
    tools/build_site_data.py builds them from nothing else — and the row below
    passes none: no era, no born, no died, no trade, no marriage date, no
    confidence. */
-const rows = (fam.members || [])
-  .slice()
-  .sort((a, b) => (Number(yr(a.born)) || 9999) - (Number(yr(b.born)) || 9999))
+const makeRows = (members) => (members || [])
   .map((p) => {
     const spRaw = (p.spouses || [])[0] || null;
     /* AND A MARRIAGE WITHOUT A NAME IS STILL A MARRIAGE. Walter Sneyd,
@@ -101,6 +127,9 @@ const rows = (fam.members || [])
           ? "the tree records the marriage and has never held her name"
           : "no marriage recorded for them here",
       children: [],
+      hisNone: line ? "No brothers or sisters are recorded for them here." : undefined,
+      herNone: line ? (sp ? `No brothers or sisters are recorded for ${sp.name} here.`
+                          : "No marriage is recorded for them here, so there is no second family to show.") : undefined,
       hisSiblings: nameCards(p.siblings),
       herSiblings: herRec ? nameCards(herRec.siblings) : [],
       hisLabel: String(p.name).split(" ")[0] + "’s",
@@ -108,16 +137,187 @@ const rows = (fam.members || [])
       confidence: alive ? "" : ((p.sources || []).length ? "a record has been read" : ""),
     };
   });
+/* A cluster is shown oldest first by its recorded birth; a line arrives already
+   ordered (birth, then the years of life) by src/lib/familyLines.js. */
+const ordered = line ? fam.members
+  : fam.members.slice().sort((a, b) => (Number(yr(a.born)) || 9999) - (Number(yr(b.born)) || 9999));
+const rows = makeRows(ordered);
+
+/* The line's one-sentence description, worked out from its data: how many, how
+   many on the direct line, when, where. 200 characters is the ceiling the
+   audit holds descriptions to. */
+const lineDek = line ? (() => {
+  const n = rows.length;
+  const parts = [`${n} ${n === 1 ? "person" : "people"} named ${fam.surname} that this archive publishes`];
+  if (line.direct.length) parts.push(`${line.direct.length} on the direct line`);
+  if (line.span) parts.push(`${line.span[0]}\u2013${line.span[1]}`);
+  let t = parts.join(", ") + ".";
+  if (t.length > 190) t = t.slice(0, 187).replace(/[\s,;]+\S*$/, "") + "\u2026";
+  return t;
+})() : "";
+
 ---
 <Base
   title={fam.surname}
-  eyebrow={`${fam.published ?? rows.length} published of ${fam.total ?? rows.length}`}
-  dek={fam.blurb || `Everyone this archive holds under the name ${fam.surname}.`}>
+  eyebrow={line ? `${rows.length} published${line.direct.length ? " · carried by the direct line" : ""}` : (copies.length ? `${rows.length} published · ${copies.length} declared ${copies.length === 1 ? "copy" : "copies"} not listed` : `${fam.published ?? rows.length} published of ${fam.total ?? rows.length}`)}
+  dek={line ? lineDek : (fam.blurb || `Everyone this archive holds under the name ${fam.surname}.`)}>
 
   <section class="blk">
-    <p class="cap"><a href={u("/families/")}>&larr; All thirteen families that joined this line</a></p>
+    <p class="cap"><a href={u("/families/")}>&larr; The families</a></p>
   </section>
 
+  {line && (
+    <Fragment>
+      <section class="blk">
+        <p class="lede"><strong>{rows.length}</strong> {rows.length === 1 ? "person" : "people"} named
+        <strong> {fam.surname}</strong> {rows.length === 1 ? "is" : "are"} published in this archive:
+        {" "}{line.dead.length} dead{line.living.length > 0 && <>, and {line.living.length} living, named
+        with their town and country only</>}.
+        {line.direct.length > 0
+          ? <> <strong>{line.direct.length}</strong> {line.direct.length === 1 ? "is" : "are"} on the
+            direct line, the spine this archive is built on.</>
+          : <> None is on the direct line.</>}
+        {line.span && <> The dead lived between {line.span[0]} and {line.span[1]}.</>}
+        {line.places.length > 0 && <> Where the tree says they were born: {line.places.slice(0, 6).map((x, i) => (
+          <Fragment>{i > 0 && " \u00b7 "}{x.name}{x.n > 1 && ` (${x.n})`}</Fragment>))}.</>}</p>
+        {line.spellings.length > 1 && (
+          <p class="dek" style="margin-top:.8rem">The tree writes the name
+          {" "}{line.spellings.map((x, i) => (
+            <Fragment>{i > 0 && (i === line.spellings.length - 1 ? " and " : ", ")}<strong>{x.written}</strong> ({x.n})</Fragment>))}.
+          {line.titled.length > 0
+            ? <> {line.titled.map((x) => x.written).join(" and ")} is a title the tree writes where the surname
+              should be, for people whose own names are {fam.surname}.</>
+            : line.shifts.length > 0
+              ? <> They are shown together because the direct line itself changes spelling inside it, as set out below.</>
+              : <> The archive treats them as spellings of one name.</>}</p>
+        )}
+        {line.twice.length > 0 && (
+          <Note>
+            <strong>Entered twice.</strong> The tree enters
+            {line.twice.map((v, i) => (
+              <Fragment>{i > 0 && (i === line.twice.length - 1 ? " and " : ", ")} <strong>{v[0].name}</strong> ({v[0].life}){" "}
+                <span class="small">(<a href={u(`/people/${v[0].slug}/`)}>entry 1</a>, <a href={u(`/people/${v[1].slug}/`)}>entry 2</a>)</span></Fragment>))}
+            {" "}twice, with the same name, the same years and the same {line.twice.some((v) => (v[0].parents || []).length) ? "parents or birthplace" : "birthplace"}.
+            This archive has not declared either entry a copy of the other,
+            so both are listed as the tree lists them, and the count above counts both.
+          </Note>
+        )}
+        <Note>
+          <strong>What this page lists.</strong> Only people this archive already names: the direct line and
+          the relatives named beside them. It is not everyone of the name in the family tree, and it
+          adds no one. A name is not a family: where the people below are not tied together by
+          anyone the archive publishes, they are shown as separate groups, and the page does not say
+          they are one family.
+        </Note>
+      </section>
+
+      <Blk label="How we know" title="What stands behind these people">
+        <p class="dek">This archive grades each person by what it has established about them, and
+        nothing else. For the {line.dead.length} {line.dead.length === 1 ? "person" : "people"} of this name who
+        {line.dead.length === 1 ? " is" : " are"} dead:</p>
+        <ul class="small" style="margin:.6rem 0 0;padding-left:1.1rem">
+          {line.tally.documented > 0 && <li style="margin-top:.35rem"><span class="chip doc">documented</span>
+            {" "}<strong>{line.tally.documented}</strong> &mdash; a record this archive has read writes down a
+            relationship for them.</li>}
+          {line.tally.disputed > 0 && <li style="margin-top:.35rem"><span class="chip sup">above a graft</span>
+            {" "}<strong>{line.tally.disputed}</strong> &mdash; reached only through
+            {Object.entries(line.grafts).map(([g, n], i) => (
+              <Fragment>{i > 0 && " and through"} the <strong>{g}</strong> join ({n}){g === "Hornby"
+                ? <>, a single unevidenced link that this archive has looked for and not found (<a href={u("/hornby/")}>the Hornby claim</a>)</>
+                : g === "Keele"
+                  ? <>, a link this archive has looked for in the right registers and found to be wrong (<a href={u("/how-far-back/")}>how far back</a>)</>
+                  : null}</Fragment>))}.</li>}
+          {line.tally.family > 0 && <li style="margin-top:.35rem"><span class="chip lore">family tree only</span>
+            {" "}<strong>{line.tally.family}</strong> &mdash; asserted by the family tree, with nothing
+            found for them either way.</li>}
+        </ul>
+        <p class="small" style="margin-top:.8rem">{line.records > 0
+          ? <><strong>{line.records}</strong> {line.records === 1 ? "record that names" : "records that name"} someone of
+            this name {line.records === 1 ? "has" : "have"} been read; {line.records === 1 ? "it is" : "they are"} set out
+            on the people&rsquo;s own pages. </>
+          : <>No record naming anyone of this name has been read. </>}
+        A family tree is a witness and not a source, and that is why the grade is printed here and
+        not left to be assumed. <a href={u("/method/")}>How claims are labelled &rarr;</a></p>
+      </Blk>
+
+      {line.direct.length > 0 && (
+        <Blk label="The direct line" title={`Where ${fam.surname} meets the spine`}>
+          <Scroll>
+            <table>
+              <thead><tr><th>Number</th><th>Generation</th><th>Person</th><th>Parent of</th></tr></thead>
+              <tbody>
+                {line.direct.map((d) => (
+                  <tr>
+                    <td class="m">{d.ahn}</td>
+                    <td class="m">{d.gen}</td>
+                    <td>{d.slug ? <a href={u(`/people/${d.slug}/`)}>{d.name}</a> : "a living person"}</td>
+                    <td>{d.childName
+                      ? <Fragment><a href={u(`/people/${d.childSlug}/`)}>{d.childName}</a> <span class="small">(number {d.childAhn})</span></Fragment>
+                      : <span class="small">the next generation of the direct line</span>}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </Scroll>
+          {line.shifts.length > 0 && (
+            <Fragment>
+              <p class="small" style="margin-top:.8rem">The spelling changes inside the direct line:</p>
+              <ul class="small" style="margin:.3rem 0 0;padding-left:1.1rem">
+                {line.shifts.filter((d) => d.name && d.childName).map((d) => (
+                  <li style="margin-top:.3rem">{d.name} (number {d.ahn}), written &ldquo;{d.spelledAs}&rdquo; in the tree, is the
+                  {d.sex === "F" ? " mother" : " father"} of {d.childName} (number {d.childAhn}), written &ldquo;{d.childSpelledAs}&rdquo;.</li>))}
+              </ul>
+            </Fragment>
+          )}
+          <p class="small" style="margin-top:.6rem"><a href={u("/direct-line/")}>The spine, generation by generation &rarr;</a></p>
+        </Blk>
+      )}
+
+      {line.joined.length > 0 && (
+        <Blk label="Connections" title="The families it is joined to">
+          <p class="dek">Worked out from the marriages and the parents of the people below, where the
+          other person has a different surname. A name that links has a page of its own here.</p>
+          <ul class="small" style="margin:.6rem 0 0;padding-left:1.1rem">
+            {line.joined.slice(0, 14).map((j) => (
+              <li style="margin-top:.35rem">
+                {j.href ? <a href={u(j.href)}>{j.label}</a> : <strong>{j.label}</strong>}
+                {" "}&mdash; {[j.spouses > 0 && `${j.spouses} ${j.spouses === 1 ? "marriage" : "marriages"}`,
+                  j.parents > 0 && `${j.parents} ${j.parents === 1 ? "parent" : "parents"}`].filter(Boolean).join(", ")}
+              </li>
+            ))}
+          </ul>
+          {line.joined.length > 14 && <p class="small" style="margin-top:.6rem">&hellip; and {line.joined.length - 14} other names, none with a page here.</p>}
+        </Blk>
+      )}
+
+      <Blk label="The people" title={`Everyone of the name, as far as the archive names them`}>
+        {line.groups.length > 1 && (
+          <p class="dek">These {rows.length} people fall into <strong>{line.groups.length} groups</strong> that
+          the published people do not tie to one another &mdash; no shared parent, brother or sister, spouse or
+          child among the people this archive names. The tree may tie them in ways it does not publish, and
+          nothing this archive holds says they are one family.</p>
+        )}
+        {line.groups.map((g, i) => (
+          <Fragment>
+            {line.groups.length > 1 && (
+              <Fragment>
+                <h3 style="margin-top:1.6rem">Group {i + 1} &mdash; {g.n} {g.n === 1 ? "person" : "people"}</h3>
+                <p class="small">{[g.span && `${g.span[0]}\u2013${g.span[1]}`, g.places.length > 0 && `born at ${g.places.join(" \u00b7 ")}`,
+                  g.direct > 0 && `${g.direct} on the direct line`].filter(Boolean).join(" \u00b7 ") || "no dates or places recorded"}</p>
+              </Fragment>
+            )}
+            <Descent rows={makeRows(g.members)} u={u} archiveKey="darcy" idPrefix={`g${i + 1}-`} />
+          </Fragment>
+        ))}
+        <p class="small" style="margin-top:1rem">There is no children strip on these rows: this archive records
+        siblings and records no children, and the row shows what is there.
+        {line.living.length > 0 && <> A living person is named here with their relationships and their town
+        and country, and nothing more.</>}</p>
+      </Blk>
+    </Fragment>
+  )}
+
+  {!line && (
   <section class="blk">
     <h2>Everyone of the name</h2>
     {rows.length === 0 ? (
@@ -131,8 +331,14 @@ const rows = (fam.members || [])
         Everything is shut until you open it. <strong>There is no children strip</strong> on any of
         these rows: this archive records siblings and records no children, anywhere, and the row
         shows what is there.</p>
+        {copies.length > 0 && (
+          <p class="small">{copies.length} {copies.length === 1 ? "person the tree enters" : "people the tree enters"} twice
+          {copies.length === 1 ? " is" : " are"} listed once: the archive has declared the second entry a copy of the
+          first (<a href={u("/method/")}>how</a>), and its page is still there.</p>
+        )}
         <Descent rows={rows} u={u} archiveKey="darcy" />
       </Fragment>
     )}
   </section>
+  )}
 </Base>

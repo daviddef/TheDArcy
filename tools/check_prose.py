@@ -53,6 +53,7 @@ HAND_EDITED = {
     "crossread.json",
     "decisions.json",  # decisions, declared by hand and recomputed by a gate
     "errands.json",  # the errands page
+    "family-lines.json",  # which surnames get a family page, and the rule that chose them; holds surnames, no people
     "eulogy.json",  # the eulogy page
     "fmp.json",
     "general-hewitt.json",

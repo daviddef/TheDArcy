@@ -1,0 +1,150 @@
+{
+  "note": "The family pages for names that are carried by the direct line (or are under investigation) and have no cluster of their own in families.json. Written 17 October 2026. A page for a line here is built ENTIRELY from people this archive already publishes (the numbered ancestors, the thirteen surname clusters and the relatives named beside them): adding a line to this file adds a page and does not publish anybody new. That is the difference from the thirteen in families.json, whose every bearer in the tree is published; a line here lists only the people the archive already names, and says so.",
+  "match": "A person belongs to a line when their SURNAME FIELD in the exported tree, lowercased, with apostrophes and quotation marks removed and cut at the first comma, bracket or parenthesis, equals one of the line's keys. `alsoWhenNameHas` adds a person whose surname field is a TITLE the tree uses in place of a surname, when their own name contains the word. A person who is a declared copy (same-person.json) is never listed. A person already in one of the thirteen clusters is never in a line.",
+  "rule": "CORE: a surname is core when a direct-line ancestor carries it, OR at least 8 published people carry it, OR the archive's own research files (the work list, the search register, the open questions, the errands) treat it as a family under investigation. Published people are the numbered ancestors, the thirteen clusters and the relatives named beside them, minus declared copies. RANK: direct line first, then published people, then research-file rows, then direct-line ancestors. CAP: the twelve highest-ranked core names with no family page.",
+  "lines": [
+    {
+      "surname": "Cotton",
+      "slug": "cotton",
+      "keys": [
+        "cotton"
+      ]
+    },
+    {
+      "surname": "Sutton",
+      "slug": "sutton",
+      "keys": [
+        "sutton"
+      ]
+    },
+    {
+      "surname": "von der Pfalz",
+      "slug": "von-der-pfalz",
+      "keys": [
+        "von der pfalz",
+        "zu pfalz",
+        "von der pflaz",
+        "von der pfalz-simmern"
+      ]
+    },
+    {
+      "surname": "Howard",
+      "slug": "howard",
+      "keys": [
+        "howard"
+      ],
+      "alsoWhenNameHas": {
+        "berkshire": "howard"
+      }
+    },
+    {
+      "surname": "von Degenfeld",
+      "slug": "von-degenfeld",
+      "keys": [
+        "von degenfeld",
+        "degenfeld",
+        "von degenfield"
+      ]
+    },
+    {
+      "surname": "Schomberg",
+      "slug": "schomberg",
+      "keys": [
+        "von schomberg",
+        "schomberg",
+        "von schomburg",
+        "von schönberg",
+        "schönberg auf wesel",
+        "von schönburg"
+      ]
+    },
+    {
+      "surname": "Kent",
+      "slug": "kent",
+      "keys": [
+        "kent"
+      ]
+    },
+    {
+      "surname": "Stuart",
+      "slug": "stuart",
+      "keys": [
+        "stuart"
+      ]
+    },
+    {
+      "surname": "Jones",
+      "slug": "jones",
+      "keys": [
+        "jones"
+      ]
+    },
+    {
+      "surname": "Noel",
+      "slug": "noel",
+      "keys": [
+        "noel"
+      ]
+    },
+    {
+      "surname": "Ward",
+      "slug": "ward",
+      "keys": [
+        "ward"
+      ]
+    },
+    {
+      "surname": "Blackbourne",
+      "slug": "blackbourne",
+      "keys": [
+        "blackbourne"
+      ]
+    }
+  ],
+  "pagesElsewhere": {
+    "note": "Names that have a page of their own that is not in families.json or this file. Used only to link a name where another family's page mentions it, and by tools/audit_family_lines.py. The spellings are the ones the archive's own namefold and spellings page group.",
+    "saniger": {
+      "label": "Saniger",
+      "href": "/sanigers/"
+    },
+    "sanigar": {
+      "label": "Saniger",
+      "href": "/sanigers/"
+    },
+    "sanyger": {
+      "label": "Saniger",
+      "href": "/sanigers/"
+    }
+  },
+  "otherArchive": {
+    "note": "The Falco-side families. They are core by the direct-line test, but this archive's work list (item 19) sets the Australian and Italian side down deliberately, and the research on them is the Falco archive's. They are not treated here as families under investigation, so no line is offered for them.",
+    "keys": [
+      "falco",
+      "zampiello",
+      "annecchino",
+      "ferrara",
+      "maione",
+      "maione / majone",
+      "pesce",
+      "morgillo",
+      "martone",
+      "crisci",
+      "falcone",
+      "arricole",
+      "rivetti / rivotti",
+      "di lucia",
+      "zimbardo",
+      "sabina"
+    ]
+  },
+  "notCreated": [
+    {
+      "name": "Mulcahy, Dixie, Coney, Rokeby, Fullwood, O'Brien, Garden, Holford",
+      "why": "Core (each is carried by a direct-line ancestor) and ranked below the twelfth: four people or fewer, and beyond the cap of twelve. Mulcahy (4 published, 3 on the direct line, Cork) ties Blackbourne on people and loses on research rows (1 against 3)."
+    },
+    {
+      "name": "Davies",
+      "why": "Core by count (9 published people) but not on the direct line, so it ranks below every direct-line name and falls outside the twelve."
+    }
+  ]
+}

@@ -3,12 +3,19 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Families from "@daviddef/archive-kit/components/Families.astro";
 import { u } from "../lib/url.js";
-import { publishable, countLiving, isLiving } from "../lib/people.js";
+import { publishable, countLiving, isLiving, duplicateOf } from "../lib/people.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
+import { allLines } from "../lib/familyLines.js";
 
-const fams = families.filter((f) => f.published > 0);
+/* A declared copy (same-person.json) is one person entered twice: counted and
+   listed once, here as on the family's own page. */
+const fams = families
+  .map((f) => ({ ...f, members: f.members.filter((m) => !duplicateOf(m)) }))
+  .map((f) => ({ ...f, published: f.members.length, living: countLiving(f.members) }))
+  .filter((f) => f.published > 0);
 const total = fams.reduce((a, f) => a + f.published, 0);
+const lines = allLines();
 
 /* 22 September 2026. The card is the kit's. What this archive puts behind
    the claim is not: it can NAME the people, which Blazevic cannot and Falco
@@ -52,18 +59,48 @@ const groups = [{
       hrefLabel: "Everyone of the name",
     };
   }),
+},
+/* THE LINES (src/data/family-lines.json). Names the direct line carries that
+   have no cluster above. Their people are only those the archive already names,
+   so the card says "published", never "of the name". Every figure is counted. */
+{
+  label: "More names on the line",
+  note: "names carried by the direct line, drawn only from the people this archive already names",
+  rows: lines.map((l) => {
+    const fam = l.surname;
+    const shown = publishable(l.members).slice(0, 8);
+    return {
+      label: fam,
+      gloss: [l.direct.length ? `${l.direct.length} on the direct line` : "",
+              l.span ? `${l.span[0]}\u2013${l.span[1]}` : ""].filter(Boolean).join(" \u00b7 "),
+      count: l.members.length,
+      countLabel: "published" + (l.living.length > 0
+        ? ` · ${l.living.length} living, named with town and country only` : "")
+        + (l.groups.length > 1 ? ` · ${l.groups.length} separate groups` : ""),
+      facts: l.places.length ? [["Born at", l.places.slice(0, 4).map((x) => x.name.split(",").slice(0, 2).join(",")).join(" · ")]] : [],
+      people: shown.map((m) => ({
+        name: m.name, href: `/people/${m.slug}`,
+        life: isLiving(m) ? "" : (m.life || ""),
+        place: isLiving(m) ? (m.place || null) : (m.bornPlace ? m.bornPlace.split(",")[0] : null) })),
+      more: l.members.length > 8
+        ? `and ${l.members.length - 8} more \u2014 <a href="/families/${l.slug}/">all ${l.members.length} published</a>` : null,
+      href: `/families/${l.slug}/`,
+      hrefLabel: "Everyone published under the name",
+    };
+  }),
 }];
 ---
 <Base
   title="The Families"
-  eyebrow={`${fams.length} surnames`}
+  eyebrow={`${fams.length + lines.length} surnames`}
   dek="A D'Arcy married a Sneyd, who was the granddaughter of a Wakefield of Bristol. Each of these names is a family in its own right, and several of them reached Queensland before the D'Arcys did.">
 
   <section class="blk">
     <p class="lede">The line the archive is named for is one thread of {fams.length}. Between them
     these families brought <strong>{total}</strong> published people out of Yorkshire, Hampshire,
     Somerset, Bristol, London, Limerick, Monaghan, Cork, Ayrshire, Lanarkshire and Germany, and set
-    them down in New South Wales and Queensland.</p>
+    them down in New South Wales and Queensland. Below them are {lines.length} more names that the direct line
+    carries, with the people this archive already names under each.</p>
   </section>
 
   <section class="blk">

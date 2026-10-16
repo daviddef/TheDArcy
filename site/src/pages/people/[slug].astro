@@ -4,7 +4,8 @@ import Note from "../../components/Note.astro";
 import Scroll from "../../components/Scroll.astro";
 import { u } from "../../lib/url.js";
 import { nameIfPublishable, lifeLine, isLiving } from "../../lib/people.js";
-import { people, byId, duplicateOf } from "../../lib/people.js";
+import { people, byId, duplicateOf, kebab } from "../../lib/people.js";
+import { lineOf } from "../../lib/familyLines.js";
 import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
 import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
@@ -82,6 +83,11 @@ const sibs = (p.siblings || []).map((r) => link(r.id)).filter(Boolean);
 
 // Surname pages that exist. Everyone else goes to the families index.
 const FAMILY_PAGE = { Sneyd: "/sneyd", Atkinson: "/atkinson", Murdoch: "/murdoch" };
+/* The family page of the NAME this person carries, when the name has one: one of the thirteen
+   (p.family), or a line (src/data/family-lines.json). A line is a name the direct line carries
+   whose page lists only people the archive already names. */
+const ln = lineOf(p);
+const famHref = (f) => FAMILY_PAGE[f] || `/families/${kebab(f)}`;
 
 /* Where a person is actually written about. Keyed by slug because slugs are
    deterministic; a name here that stops matching simply stops linking, which is
@@ -320,7 +326,12 @@ const anyDamaged = notes.some((n) => n.damaged);
             {p.family && (
               <p class="small" style="margin-top:.8rem">Counted here with the
                 <strong> {p.family}</strong> family ·
-                <a href={u(FAMILY_PAGE[p.family] || "/families")}> that family →</a></p>
+                <a href={u(famHref(p.family))}> that family →</a></p>
+            )}
+            {!p.family && ln && (
+              <p class="small" style="margin-top:.8rem">Of the
+                <strong> {ln.surname}</strong> name ·
+                <a href={u(`/families/${ln.slug}`)}> that family →</a></p>
             )}
           </>
         ) : (
@@ -365,7 +376,12 @@ const anyDamaged = notes.some((n) => n.damaged);
         {p.family && (
           <p class="small" style="margin-top:.8rem">Counted here with the
             <strong> {p.family}</strong> family ·
-            <a href={u(FAMILY_PAGE[p.family] || "/families")}> that family →</a></p>
+            <a href={u(famHref(p.family))}> that family →</a></p>
+        )}
+        {!p.family && ln && (
+          <p class="small" style="margin-top:.8rem">Of the
+            <strong> {ln.surname}</strong> name ·
+            <a href={u(`/families/${ln.slug}`)}> that family →</a></p>
         )}
           </>
         )}

@@ -73,6 +73,14 @@ parent; `held_out()` in `tools/gedcom.py`, through the kit). A child with a know
 not held out: they follow the standard like anyone living. The counts are in `living.json`. A removal
 request is honoured within days, without argument and without requiring a reason.
 
+**Family pages.** Thirteen surnames have a page of everyone of the name in the tree
+(`/families/<name>/`, from `site/src/data/families.json`). Twelve more names that the direct
+line carries have a page of the people this archive already names under them
+(`site/src/data/family-lines.json`, drawn by `site/src/lib/familyLines.js`): adding one adds a page and
+publishes nobody. `python3 tools/audit_family_lines.py` prints the ranking that chose them,
+and `python3 tools/check_family_lines.py --controls` shows the gate that guards them failing on
+planted faults.
+
 The raw GEDCOM is **not committed** — it contains every living person in full. `sources/*.ged` is
 gitignored; regenerate it with a fresh MyHeritage export and re-run the tools.
 

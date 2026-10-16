@@ -39,6 +39,7 @@ GATES = [
     "check_living_standard.py",  # a living person is a name, a relationship, a town and a country
     "check_atlas.py",         # pins claiming a precision they do not have
     "check_whosplit.py",      # one human split across two dossiers
+    "check_family_lines.py",  # a page for each name the direct line carries, and nobody it should not have
     "check_unpublished.py",   # prose that reaches no page (reports, never refuses)
 ]
 
