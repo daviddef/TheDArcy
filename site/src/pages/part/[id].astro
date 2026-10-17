@@ -1,0 +1,16 @@
+---
+import Base from "../../layouts/Base.astro";
+import BookPart from "@daviddef/archive-kit/components/BookPart.astro";
+import { u } from "../../lib/url.js";
+import book from "../../data/book.json";
+export function getStaticPaths() {
+  return book.parts.map((p) => ({ params: { id: p.id } }));
+}
+const { id } = Astro.params;
+const part = book.parts.find((p) => p.id === id);
+---
+<Base title={part.title} eyebrow="The archive, read as a book" description={part.intro}>
+  <section class="blk">
+    <BookPart book={book} id={id} u={u} />
+  </section>
+</Base>

@@ -34,8 +34,10 @@ PUB  = os.path.join(ROOT, "site", "public")
 # Directory pages, not prose. A page that lists every person by name would
 # otherwise "mention" every person, which tells a reader nothing and drowns the
 # handful of pages that actually write about them.
+# /contents and /part/ are the BOOK's own table and part openers (src/data/book.json): a chapter's
+# title and one line beside every chapter name, so a person named in a blurb is not "mentioned" there.
 SKIP_PREFIX = ("/people", "/families", "/places", "/register", "/who",
-               "/households", "/marriages", "/graves", "/search")
+               "/households", "/marriages", "/graves", "/search", "/contents", "/part")
 
 # A page that says <meta name="robots" content="noindex"> is a living person's
 # (David's ruling of 16 October 2026: a living person is named, with their town

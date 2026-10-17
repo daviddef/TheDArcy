@@ -43,6 +43,7 @@ DATA = "site/src/data"
 HAND_EDITED = {
     "abbas-kooli.json",
     "berkeley-woman.json",
+    "book.json",  # the book: parts, chapter titles, blurbs and one-paragraph intros, written by hand
     "bristol-chapels.json",
     "changes.json",  # the changelog, written by hand
     "chatham.json",

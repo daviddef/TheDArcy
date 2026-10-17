@@ -13,6 +13,7 @@
   --sans:"Libre Franklin","Helvetica Neue",Arial,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   --maxw:1080px;
+  --bk-width:var(--maxw); /* the book's running head and Previous / Next (kit BookHead, BookFoot) share the page column */
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --ground:#0F1620; --panel:#161F2B; --panel-2:#1D2836;
@@ -115,6 +116,16 @@ header.site nav a{font-family:var(--sans);font-size:12.5px;color:var(--ink-2);te
 header.site nav a:hover{color:var(--ink)}
 header.site nav a.on{color:var(--ink);border-bottom-color:var(--terra)}
 main{padding:0 0 90px}
+/* ---- the book (kit BookHead, BookFoot, BookPart): set to this archive's column and gutters.
+   The kit's own rules are scoped to the component, so these carry one more selector to win. ---- */
+body .bk-head .bk-row{padding-left:28px;padding-right:28px}
+body.is-home .bk-head{margin-bottom:16px}
+body nav.bk-foot{width:min(calc(var(--maxw) - 56px),calc(100% - 56px));padding:0;margin:44px auto 0}
+body .bk-open .bk-lede{margin:.6rem 0 1.2rem}
+@media(max-width:640px){
+  body .bk-head .bk-row{padding-left:18px;padding-right:18px}
+  body nav.bk-foot{width:calc(100% - 36px)}
+}
 .pagehead{padding:56px 0 34px;border-bottom:1px solid var(--rule);margin-bottom:38px}
 .pagehead h1{font-size:clamp(36px,5.6vw,62px);line-height:1.04;margin-top:14px}
 .lead{margin-top:20px;font-size:17.5px;max-width:72ch}

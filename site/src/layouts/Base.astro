@@ -8,6 +8,9 @@ import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.as
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 import SocialHead from "@daviddef/archive-kit/components/SocialHead.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
+import BookHead from "@daviddef/archive-kit/components/BookHead.astro";
+import BookFoot from "@daviddef/archive-kit/components/BookFoot.astro";
+import book from "../data/book.json";
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import ring from "@daviddef/archive-kit/data/archives.json";
 import living from "../data/living.json";
@@ -115,6 +118,10 @@ const thisArchive =
   </div>
 </header>
 
+<!-- THE BOOK (17 October 2026): the running head, and below it the Previous / Next. One order across
+     the whole site, held in src/data/book.json and checked against the built pages by `check:book`. -->
+<BookHead book={book} u={u} />
+
 <main id="main" tabindex="-1">
   <div class="wrap">
     {!bare && (
@@ -126,6 +133,7 @@ const thisArchive =
     )}
     <slot />
   </div>
+  <BookFoot book={book} u={u} />
 </main>
 
 <footer class="site">

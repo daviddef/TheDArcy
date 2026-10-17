@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/Base.astro";
+import BookContents from "@daviddef/archive-kit/components/BookContents.astro";
+import { u } from "../lib/url.js";
+import book from "../data/book.json";
+---
+<Base title="Contents" eyebrow="The whole archive, read as one book"
+  dek="Every page of the archive placed in the order of its story: where the name came from, the line, the crossing, how the lines join, everyone, and how we know. The menus above remain as shortcuts.">
+  <section class="blk">
+    <BookContents book={book} u={u} />
+  </section>
+</Base>

@@ -1,0 +1,663 @@
+{
+ "title": "The D'Arcy Archive",
+ "front": {
+  "label": "Front matter",
+  "intro": "The cover, what the archive is willing to say, and how every claim carries its confidence.",
+  "chapters": [
+   {
+    "path": "/",
+    "title": "The cover",
+    "blurb": "Twelve generations, and two claims too far."
+   },
+   {
+    "path": "/about/",
+    "title": "About",
+    "blurb": "An evidence-first archive of the D'Arcys of Brisbane, and the rules it will not break."
+   },
+   {
+    "path": "/method/",
+    "title": "Method",
+    "blurb": "Every claim carries its confidence."
+   }
+  ]
+ },
+ "parts": [
+  {
+   "id": "the-name",
+   "numeral": "I",
+   "title": "The name, and the house on the hill",
+   "intro": "D'Arcy was coined twice over, once in Normandy as the name of a place and once in Ireland as the name of a colour. The family tree runs the line back to a Yorkshire castle and an earldom and on to the kings of Denmark; this archive reaches a Gloucestershire yeoman in 1654. These pages set out the name, the two grafts it does not accept, the DNA that was its first check from outside the paper record, and the places its people can be put.",
+   "flags": "🇫🇷 🇮🇪 🇬🇧 🇩🇪",
+   "chapters": [
+    {
+     "path": "/name/",
+     "title": "The Name",
+     "blurb": "D'Arcy was coined twice over: in Normandy as a place, in Ireland as a colour."
+    },
+    {
+     "path": "/how-far-back/",
+     "title": "How Far Back",
+     "blurb": "The tree reaches the kings of Denmark; this archive reaches a Gloucestershire yeoman in 1654."
+    },
+    {
+     "path": "/hornby/",
+     "title": "The Hornby Claim",
+     "blurb": "Where the descent to a Yorkshire castle stops being evidence and starts being hope."
+    },
+    {
+     "path": "/dna/",
+     "title": "What the DNA says",
+     "blurb": "The first check this archive has had from outside the paper record."
+    },
+    {
+     "path": "/atlas/",
+     "title": "The Atlas",
+     "blurb": "Every place this archive can put a person in."
+    },
+    {
+     "path": "/families/howard/",
+     "title": "Howard",
+     "blurb": "The name on the direct line and in the disputed generations.",
+     "group": "Names in the disputed generations"
+    },
+    {
+     "path": "/families/sutton/",
+     "title": "Sutton",
+     "blurb": "The name on the direct line; born at Averham and Mansfield.",
+     "group": "Names in the disputed generations"
+    },
+    {
+     "path": "/families/schomberg/",
+     "title": "Schomberg",
+     "blurb": "The name on the direct line; born at Heidelberg, Berlin and Cologne.",
+     "group": "Names in the disputed generations"
+    },
+    {
+     "path": "/families/von-der-pfalz/",
+     "title": "von der Pfalz",
+     "blurb": "The name on the direct line; born at Heidelberg and Schwetzingen.",
+     "group": "Names in the disputed generations"
+    },
+    {
+     "path": "/families/von-degenfeld/",
+     "title": "von Degenfeld",
+     "blurb": "The name on the direct line; born at Neuhaus and Heidelberg.",
+     "group": "Names in the disputed generations"
+    },
+    {
+     "path": "/families/stuart/",
+     "title": "Stuart",
+     "blurb": "The name on the direct line; born at Greenwich, Edinburgh and Dunfermline.",
+     "group": "Names in the disputed generations"
+    },
+    {
+     "path": "/families/noel/",
+     "title": "Noel",
+     "blurb": "The name on the direct line; born at Himley, Kirkby Mallory and Solihull.",
+     "group": "Names in the disputed generations"
+    }
+   ]
+  },
+  {
+   "id": "the-spine",
+   "numeral": "II",
+   "title": "An engineer at Chatham, a major of the 39th",
+   "intro": "Fifteen generations are asserted on the direct line and six of them this archive will defend. The documented line runs from Robert D'Arcy, commissioned in the Royal Engineers in 1776 and buried at Chatham in 1827, through his marriage and children at Portsea and Chatham, to a major of the 39th Foot. These pages follow the spine, the chart, the generations the tree never held, and the household.",
+   "flags": "🇬🇧",
+   "chapters": [
+    {
+     "path": "/trees/",
+     "title": "The trees",
+     "blurb": "Every family this archive follows, and the two grafts that carry its claimed depth.",
+     "group": "The line"
+    },
+    {
+     "path": "/direct-line/",
+     "title": "The Spine",
+     "blurb": "Fifteen generations asserted, six of which this archive will defend.",
+     "group": "The line"
+    },
+    {
+     "path": "/tree/",
+     "title": "Our line, drawn",
+     "blurb": "The direct line as a chart, with every place the line stops marked.",
+     "group": "The line"
+    },
+    {
+     "path": "/new-generations/",
+     "title": "Not in the tree",
+     "blurb": "People this archive can prove and the family tree has never held.",
+     "group": "The line"
+    },
+    {
+     "path": "/families/d-arcy/",
+     "title": "D'Arcy",
+     "blurb": "The name the archive carries.",
+     "group": "The line"
+    },
+    {
+     "path": "/the-corps/",
+     "title": "The Corps",
+     "blurb": "Forty-nine years of an engineer's career, every promotion cited to the London Gazette.",
+     "group": "Robert D'Arcy, Royal Engineers"
+    },
+    {
+     "path": "/obituary/",
+     "title": "The obituary",
+     "blurb": "Seventeen newspapers in three countries announced his death in May 1827.",
+     "group": "Robert D'Arcy, Royal Engineers"
+    },
+    {
+     "path": "/jean-ward/",
+     "title": "South Leith",
+     "blurb": "The parish called untranscribed holds a baptism that names her father and her mother.",
+     "group": "Robert D'Arcy, Royal Engineers"
+    },
+    {
+     "path": "/families/ward/",
+     "title": "Ward",
+     "blurb": "The name on the direct line; born at South Leith.",
+     "group": "Robert D'Arcy, Royal Engineers"
+    },
+    {
+     "path": "/robert-family/",
+     "title": "Robert and Jean's family",
+     "blurb": "Five children, four of them now documented.",
+     "group": "Robert D'Arcy, Royal Engineers"
+    },
+    {
+     "path": "/portsea/",
+     "title": "Two years of Portsea",
+     "blurb": "The first record of this family found in England survives inside a twenty-two-month transcript.",
+     "group": "Robert D'Arcy, Royal Engineers"
+    },
+    {
+     "path": "/chatham/",
+     "title": "Chatham",
+     "blurb": "The Royal Engineers' parish: a burial, and a christening eight days before a convict ship sailed.",
+     "group": "Robert D'Arcy, Royal Engineers"
+    },
+    {
+     "path": "/joseph-darcy/",
+     "title": "Lieutenant-Colonel Joseph D'Arcy",
+     "blurb": "Saint-Domingue, Sicily, Walcheren, and five years in Persia.",
+     "group": "The children"
+    },
+    {
+     "path": "/abbas-kooli/",
+     "title": "George Abbas Kooli D'Arcy",
+     "blurb": "Joseph's eldest son, who governed the Gambia and then the Falkland Islands.",
+     "group": "The children"
+    },
+    {
+     "path": "/constantine/",
+     "title": "Constantine D'Arcy",
+     "blurb": "A name in a burial register, christened in Barbados and dead at nineteen.",
+     "group": "The children"
+    },
+    {
+     "path": "/margaret-jones/",
+     "title": "Daughter of the late Major-General D'Arcy",
+     "blurb": "A death notice that calls the dead woman Robert's daughter.",
+     "group": "The children"
+    },
+    {
+     "path": "/sussex-sisters/",
+     "title": "The Sussex sisters",
+     "blurb": "Three of Robert's daughters, documented from the public record.",
+     "group": "The children"
+    },
+    {
+     "path": "/george-pitt/",
+     "title": "Miss Ludlam of Guernsey",
+     "blurb": "A marriage notice of 1805 and a rank gazetted six months earlier.",
+     "group": "The children"
+    }
+   ]
+  },
+  {
+   "id": "berkeley-bristol",
+   "numeral": "III",
+   "title": "Gloucestershire and Bristol",
+   "intro": "The archive's oldest claim is a Gloucestershire yeoman born in 1654. The line it called untestable is tested here against the registers at Berkeley, the hamlet the name comes off, and a muster of 1608; beside it are the Wakefields, a mason from Stroud who married a Berkeley woman in Bristol, the 1841 census page that holds the family, and two pages kept as wrong.",
+   "flags": "🇬🇧",
+   "chapters": [
+    {
+     "path": "/saniger-line/",
+     "title": "Six generations at Berkeley",
+     "blurb": "The line this archive called untestable, tested.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/berkeley/",
+     "title": "Berkeley, Gloucestershire",
+     "blurb": "The oldest claim: a Gloucestershire yeoman born in 1654.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/berkeley-woman/",
+     "title": "Hannah was a Berkeley woman",
+     "blurb": "The oldest open question in the archive is closed.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/hannah-baptism/",
+     "title": "One vowel",
+     "blurb": "The document twice declared missing was indexed under another spelling.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/thomas-sinegar/",
+     "title": "Thomas Sinegar",
+     "blurb": "A labourer from Berkeley living a mile from Hannah Wakefield in Bristol.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/sanigers/",
+     "title": "The Sanigers, reconstituted",
+     "blurb": "Every Saniger record in Gloucestershire, assembled into households.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/saniger-place/",
+     "title": "Saniger is a place",
+     "blurb": "Saniger is a hamlet in Berkeley parish, and the name comes off the land.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/spellings/",
+     "title": "Every Spelling of One Name",
+     "blurb": "Index entries under twenty spellings of one surname.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/swonhungre/",
+     "title": "The name in its own century",
+     "blurb": "A printed pedigree of the Swonhungers, checked against the deeds.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/saniger-1608/",
+     "title": "The muster of 1608",
+     "blurb": "Eleven men of this surname, counted by the Crown in 1608.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/chew-magna/",
+     "title": "Chew Magna",
+     "blurb": "Kept as a wrong page: a Somerset birth that the Berkeley baptism contradicts.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/families/cotton/",
+     "title": "Cotton",
+     "blurb": "The name on the direct line; born at Ashton under Hill and Berkeley.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/families/jones/",
+     "title": "Jones",
+     "blurb": "The name on the direct line; born at Wotton-under-Edge.",
+     "group": "Berkeley and the Sanigers"
+    },
+    {
+     "path": "/wakefields/",
+     "title": "The Wakefields",
+     "blurb": "A mason from Stroud who married a Berkeley woman in Bristol and took six children to Queensland.",
+     "group": "Bristol and the Wakefields"
+    },
+    {
+     "path": "/drivers-fields/",
+     "title": "Drivers Fields, 1841",
+     "blurb": "One page of the 1841 census holding the whole family the oldest claim depends on.",
+     "group": "Bristol and the Wakefields"
+    },
+    {
+     "path": "/bristol-chapels/",
+     "title": "The Bristol chapels",
+     "blurb": "Kept as a wrong page: a catalogue of every Bristol chapel register.",
+     "group": "Bristol and the Wakefields"
+    },
+    {
+     "path": "/families/wakefield/",
+     "title": "Wakefield",
+     "blurb": "The Wakefields of Bristol.",
+     "group": "Bristol and the Wakefields"
+    }
+   ]
+  },
+  {
+   "id": "potteries",
+   "numeral": "IV",
+   "title": "The Potteries and the Sneyds",
+   "intro": "Every Staffordshire Sneyd record, assembled into households, produces the family the tree had been pointing at. The Keele descent, followed into the registers, was found to be wrong. The Sneyds then go out of Bristol and Kempsey into far western Queensland, married at Muttaburra and born at Boulia, and a Hanley grocer's son sails for New South Wales in 1832.",
+   "flags": "🇬🇧 🇦🇺",
+   "chapters": [
+    {
+     "path": "/sneyds/",
+     "title": "The Sneyds of the Potteries",
+     "blurb": "Every Staffordshire Sneyd record, assembled into households."
+    },
+    {
+     "path": "/families/blackbourne/",
+     "title": "Blackbourne",
+     "blurb": "The name on the direct line; born at Madeley and Castle Church."
+    },
+    {
+     "path": "/sergeant-sneyd/",
+     "title": "Sergeant Sneyd",
+     "blurb": "A Hanley grocer's son who sailed for New South Wales in 1832 and finished as Governor of Brisbane Gaol."
+    },
+    {
+     "path": "/sneyd/",
+     "title": "The Sneyds",
+     "blurb": "Out of Bristol and Kempsey into far western Queensland."
+    },
+    {
+     "path": "/families/sneyd/",
+     "title": "Sneyd",
+     "blurb": "The Sneyds of Boulia and Brisbane."
+    }
+   ]
+  },
+  {
+   "id": "crossing",
+   "numeral": "V",
+   "title": "The crossing, and Brisbane",
+   "intro": "Seven lines reached Australia seven different ways: a garrison posting, a convict ship, a free passage, a paid one, and three nobody has dated. A major of the 39th Foot reached Port Jackson in September 1826 on the convict ship England, with his wife and baby daughter in the cabin, and the General Hewitt followed in 1854. These pages run on to Brisbane, an inquest in 1902, the Great War and the graves.",
+   "flags": "🇬🇧 🇦🇺",
+   "chapters": [
+    {
+     "path": "/emigrations/",
+     "title": "How they got here",
+     "blurb": "Seven lines reached Australia seven different ways."
+    },
+    {
+     "path": "/australia/",
+     "title": "Australia",
+     "blurb": "A major of the 39th Foot in charge of the guard on a convict ship, with his wife and baby daughter in the cabin."
+    },
+    {
+     "path": "/general-hewitt/",
+     "title": "The General Hewitt",
+     "blurb": "The passenger register gives how, when and on what."
+    },
+    {
+     "path": "/brisbane/",
+     "title": "Brisbane",
+     "blurb": "From a Parramatta boy who came north in the 1860s to a hundred and sixty years of Brisbane people."
+    },
+    {
+     "path": "/inquest-1902/",
+     "title": "The Inquest, 1902",
+     "blurb": "A coronial file, read in full and published in full."
+    },
+    {
+     "path": "/great-war/",
+     "title": "The Great War",
+     "blurb": "A sergeant, two brothers of his wife, and a cousin: soldiers of the Great War."
+    },
+    {
+     "path": "/finding-arthur/",
+     "title": "The Search for Arthur",
+     "blurb": "Twenty-three pages of men trying to find out what happened to one private soldier at Pozières."
+    },
+    {
+     "path": "/graves/",
+     "title": "Graves and Burials",
+     "blurb": "Where this family is buried, gathered from the tree."
+    }
+   ]
+  },
+  {
+   "id": "lines-join",
+   "numeral": "VI",
+   "title": "The families they married, and how the lines join",
+   "intro": "A D'Arcy married a Sneyd, who was the granddaughter of a Wakefield of Bristol, and the line the archive is named for is one thread of thirteen families, out of Limerick, Monaghan, Cork, Ayrshire, Lanarkshire, Somerset, Bristol, London and Germany. These pages give each family, the marriages in date order, the women, the blood relatives, and how this archive joins the others.",
+   "flags": "🇮🇪 🇬🇧 🇩🇪 🇦🇺",
+   "chapters": [
+    {
+     "path": "/families/",
+     "title": "The Families",
+     "blurb": "A D'Arcy married a Sneyd, who was the granddaughter of a Wakefield of Bristol.",
+     "group": "Overview"
+    },
+    {
+     "path": "/atkinson/",
+     "title": "The Atkinsons",
+     "blurb": "An organist christened in Limerick Cathedral who emigrated in 1862 and installed the first organ at All Saints' Wickham Terrace.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/atkinson/",
+     "title": "Atkinson",
+     "blurb": "Out of Limerick.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/kent/",
+     "title": "Kent",
+     "blurb": "The name on the direct line; born at Limerick and Norwich.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/murdoch/",
+     "title": "The Murdochs",
+     "blurb": "From St Quivox in Ayrshire to Maloney Street, Toowoomba.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/murdoch/",
+     "title": "Murdoch",
+     "blurb": "Out of Ayrshire.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/atwell/",
+     "title": "Atwell",
+     "blurb": "Out of Somerset.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/blum/",
+     "title": "Blum",
+     "blurb": "Out of Germany by way of Rockhampton.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/creech/",
+     "title": "Creech",
+     "blurb": "Of Limerick.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/keeling/",
+     "title": "Keeling",
+     "blurb": "Of London, who married into the line at Brisbane.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/matson/",
+     "title": "Matson",
+     "blurb": "Of County Monaghan.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/rossiter/",
+     "title": "Rossiter",
+     "blurb": "Of Long Ashton, Somerset.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/watt/",
+     "title": "Watt",
+     "blurb": "Of St Quivox.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/families/wright/",
+     "title": "Wright",
+     "blurb": "Of Lanarkshire.",
+     "group": "The families they married into"
+    },
+    {
+     "path": "/marriages/",
+     "title": "The Marriages",
+     "blurb": "Every marriage the tree carries, in date order, and those this archive documented itself.",
+     "group": "How the lines join"
+    },
+    {
+     "path": "/the-women/",
+     "title": "The Women",
+     "blurb": "The women of the family, and the children they bore.",
+     "group": "How the lines join"
+    },
+    {
+     "path": "/bloodline/",
+     "title": "Blood relatives",
+     "blurb": "Choose a person and the chart is built around them.",
+     "group": "How the lines join"
+    },
+    {
+     "path": "/the-other-archives/",
+     "title": "The Other Archives",
+     "blurb": "How this archive joins the others, and why the join itself is not published.",
+     "group": "How the lines join"
+    }
+   ]
+  },
+  {
+   "id": "everyone",
+   "numeral": "VII",
+   "title": "Everyone",
+   "intro": "Everybody this archive can name and publish, in one list, and the people it met in documents and never had anywhere to put. The register holds every named individual found, with the source beside each; the households, the places and the timeline set them in order. A person's page belongs to the chapter of its index and links back to it.",
+   "chapters": [
+    {
+     "path": "/people/",
+     "title": "The People",
+     "blurb": "Everybody this archive can name and publish, searchable by name, year, place, trade or family."
+    },
+    {
+     "path": "/who/",
+     "title": "Every Name",
+     "blurb": "The people met in documents and never had anywhere to put."
+    },
+    {
+     "path": "/register/",
+     "title": "The Register",
+     "blurb": "Every named individual found, from any source, with the source beside each."
+    },
+    {
+     "path": "/households/",
+     "title": "Households",
+     "blurb": "A couple and the children under one roof."
+    },
+    {
+     "path": "/places/",
+     "title": "Places",
+     "blurb": "Where this family was born and where it died, counted."
+    },
+    {
+     "path": "/timeline/",
+     "title": "The Timeline",
+     "blurb": "Who this family were living under, and what it did to them."
+    }
+   ]
+  },
+  {
+   "id": "how-we-know",
+   "numeral": "VIII",
+   "title": "How we know",
+   "intro": "Every claim on this site carries its confidence. The sources are counted and sorted into records and other people's trees; every source read and found empty is published; and the indexes, the open questions, the errands, the corrections and the work list say what is not yet known. The investigations at the end read the archive against itself.",
+   "chapters": [
+    {
+     "path": "/sources/",
+     "title": "Sources",
+     "blurb": "Every citation counted: which are records and which are other people's trees.",
+     "group": "The record"
+    },
+    {
+     "path": "/searched/",
+     "title": "What Has Been Read",
+     "blurb": "Everything opened, whether or not it gave anything up.",
+     "group": "The record"
+    },
+    {
+     "path": "/coverage/",
+     "title": "What the indexes actually hold",
+     "blurb": "What the indexes actually hold: the difference between a null result and an empty search.",
+     "group": "The record"
+    },
+    {
+     "path": "/documents/",
+     "title": "Documents",
+     "blurb": "Reproduced whole, so you can disagree with what has been made of them.",
+     "group": "The record"
+    },
+    {
+     "path": "/gallery/",
+     "title": "Gallery",
+     "blurb": "Everything the archive holds as a picture.",
+     "group": "The record"
+    },
+    {
+     "path": "/open-questions/",
+     "title": "Open Questions",
+     "blurb": "What the archive does not know, ranked by how much finding out would change.",
+     "group": "The record"
+    },
+    {
+     "path": "/corrections/",
+     "title": "What This Archive Got Wrong",
+     "blurb": "Mistakes this archive made and corrected in public, with what caused each.",
+     "group": "The record"
+    },
+    {
+     "path": "/errands/",
+     "title": "Errands",
+     "blurb": "Every one needs a login, a card or a reading room; drafted and ordered by what it would settle.",
+     "group": "The record"
+    },
+    {
+     "path": "/worklist/",
+     "title": "The work list",
+     "blurb": "What is being done here, as opposed to what is known.",
+     "group": "The record"
+    },
+    {
+     "path": "/changes/",
+     "title": "What changed",
+     "blurb": "What it looked for, what it found, what it did not find, and what it took back.",
+     "group": "The record"
+    },
+    {
+     "path": "/papers/",
+     "title": "The Papers",
+     "blurb": "A worked example of reading evidence rather than skimming it.",
+     "group": "Investigations"
+    },
+    {
+     "path": "/crossread/",
+     "title": "Reading the archive against itself",
+     "blurb": "Open questions answered out of material the site had already published.",
+     "group": "Investigations"
+    },
+    {
+     "path": "/behind-the-paywall/",
+     "title": "Behind the paywall",
+     "blurb": "A marriage never found and four generations called untestable, all one subscription away.",
+     "group": "Investigations"
+    }
+   ]
+  }
+ ],
+ "inherit": {
+  "/people/": "/people/",
+  "/who/": "/who/",
+  "/places/": "/places/"
+ },
+ "outside": [
+  "/search/",
+  "/what-we-got-wrong/"
+ ]
+}
