@@ -858,3 +858,29 @@ a.wholink:hover,a.wholink:focus-visible{color:var(--accent);border-bottom-color:
 }
 :root[data-theme="dark"] .tlname{color:var(--ground)}
 :root[data-theme="dark"] .tlyears{color:rgba(15,22,32,.85)}
+
+/* ---- layout fixes, 17 October 2026 (the estate-wide layout audit) ----
+   TABLE CELLS. A cell breaks at a word boundary and keeps its longest word
+   whole; it never hyphenates and never breaks mid-word to save width.
+   break-word leaves a column's minimum width at its longest word. */
+td,th{overflow-wrap:break-word;word-break:normal;hyphens:manual}
+/* A narrow column next to a long prose column was being given only its
+   longest word, so a date ("15 Sep 2026") or a status ("named in a record")
+   stacked three lines high. On a screen wide enough to have a long prose
+   column, no cell is narrower than about 104px (the floor includes its padding), and a
+   monospace cell (a date, a register piece) always has room for twelve
+   characters. This is a floor, not a width: a long cell still wraps. */
+@media screen and (min-width:700px){
+  td{min-width:6.5rem}
+  td.mono{min-width:12ch}
+}
+/* READING MEASURE. Body text sat at the full 1024px container, about 125
+   characters a line at 19px. Prose and plain lists share one column, 54rem,
+   the width the lede already used; tables, figures, cards, timelines and
+   grids keep the full container. Class rules (.prose, .dek, .note, .lead) are
+   more specific and keep their own narrower measures. Screen only: the kit's
+   print.css forces main and .wrap to full width and is left alone. */
+@media screen{
+  main :is(p,blockquote):not(td *,th *),
+  main :is(ul,ol):is(:not([class]),.stack,.small):not(td *,th *){max-width:min(100%,54rem)}
+}
