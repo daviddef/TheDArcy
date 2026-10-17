@@ -7,6 +7,7 @@ import { publishable, countLiving, isLiving, duplicateOf } from "../lib/people.j
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
 import { allLines, lineCfg } from "../lib/familyLines.js";
+import falcoFamilies from "../data/falco-families.json";
 
 /* A declared copy (same-person.json) is one person entered twice: counted and
    listed once, here as on the family's own page. */
@@ -88,6 +89,13 @@ const groups = [{
       hrefLabel: "Everyone published under the name",
     };
   }),
+},
+/* THE FALCO FAMILIES (17 October 2026, David). The Falco side of the tree is the Falco archive's research, so
+   each name is a LINK OUT to that archive's own page, not a page repeated here: no count, no people. */
+{
+  label: "The Falco families",
+  note: "names that reach this tree through the Falco line; the research on them is the Falco Archive's, and these link to it",
+  rows: falcoFamilies.rows.map(({ label, href, hrefLabel }) => ({ label, count: null, countLabel: "", gloss: "", facts: [], href, hrefLabel })),
 }];
 ---
 <Base
@@ -104,7 +112,7 @@ const groups = [{
   </section>
 
   <section class="blk">
-    <Families groups={groups} u={u} />
+    <Families groups={groups} u={(p) => (/^https?:/.test(p) ? p : u(p))} />
   </section>
 
   <Blk label="Method" title="How the names beyond the thirteen were chosen">

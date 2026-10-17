@@ -54,6 +54,7 @@ HAND_EDITED = {
     "decisions.json",  # decisions, declared by hand and recomputed by a gate
     "errands.json",  # the errands page
     "family-lines.json",  # which surnames get a family page, and the rule that chose them; holds surnames, no people
+    "falco-families.json",  # link-outs to the Falco archive's family pages; names and addresses, no people
     "eulogy.json",  # the eulogy page
     "fmp.json",
     "general-hewitt.json",
