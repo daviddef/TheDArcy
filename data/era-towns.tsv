@@ -1,0 +1,190 @@
+# Where each town named in data/era-ground.tsv is, for ONE purpose: tools/build_era.py hands the point to the kit's erasnap.py, which REFUSES a place whose point
+# falls inside a DIFFERENT region's ring than the one it was given, or within 15 km of its own region's ring edge (the Atlas's rings are 4-11 vertex shapes,
+# "approximate by design"). It decides nothing else: the region of a place is the row in era-ground.tsv. A row with no town (England, Queensland, Scotland or
+# Ireland named and no town) has no point: the kit keeps it and counts it as one whose edge could not be checked.
+# how: «cache» = the kit's gazetteer, exact match for the town named; «hand» = the centre of the town (or, for a county, of the county) to two decimals,
+# written by hand for this file (a cross-check, never a boundary).
+town	lat	lon	how
+'s-Hertogenbosch	51.69	5.3	hand
+Albion	-27.43	153.04	hand
+Aller	51.04	-2.82	hand
+Annerley	-27.51	153.03	hand
+Arienzo	41.0243	14.4971	cache (Arienzo, Caserta, Campania)
+Arpaia	41.03	14.53	hand
+Ashton under Hill	52.04	-2.01	hand
+Audlem	52.99	-2.51	hand
+Averham	53.0829	-0.8598	cache (Averham, Nottinghamshire)
+Ayr	55.46	-4.63	hand
+Bandon	51.75	-8.74	hand
+Bangor Gwynedd	53.23	-4.13	hand
+Barnstaple	51.08	-4.06	hand
+Bassingthorpe	52.8	-0.56	hand
+Bath	51.38	-2.36	hand
+Bedworth	52.48	-1.47	hand
+Berkeley	51.6914	-2.4585	cache (Berkeley, Gloucestershire)
+Birmingham	52.48	-1.9	hand
+Bisley	51.74	-2.14	hand
+Boulia	-22.91	139.9	hand
+Breakfast Creek	-27.44	153.05	hand
+Brentwood	51.62	0.3	hand
+Brighton	50.83	-0.14	hand
+Brimpsfield	51.8	-2.13	hand
+Brisbane	-27.469	153.0235	cache (Brisbane, Queensland)
+Bristol	51.45	-2.59	hand
+Butcombe	51.35	-2.69	hand
+Capua	41.11	14.21	hand
+Carrigaline	51.81	-8.4	hand
+Caserta	41.07	14.33	hand
+Castle Church	52.78	-2.12	hand
+Charters Towers	-20.07	146.26	hand
+Chatham	51.38	0.53	hand
+Chelmsford	51.74	0.47	hand
+Cheshunt	51.7	-0.05	hand
+Clermont	-22.82	147.64	hand
+Clifton Bedfordshire	52.03	-0.3	hand
+Clifton Bristol	51.46	-2.62	hand
+Codford	51.17	-2.03	hand
+Constable Burton	54.33	-1.8	hand
+Cooby Creek	-27.4	151.89	hand
+Coorparoo	-27.5	153.06	hand
+Cork	51.9	-8.47	hand
+Corris	52.65	-3.84	hand
+Coxwold	54.19	-1.18	hand
+Curry Mallet	50.99	-2.94	hand
+Dalkeith	55.89	-3.07	hand
+Darfield	53.52	-1.38	hand
+Darling Downs	-27.5	151.5	hand
+Davenham	53.24	-2.51	hand
+Denton Oxfordshire	51.73	-1.15	hand
+Devon (county)	50.75	-3.75	hand
+Douglas Lanarkshire	55.55	-3.85	hand
+Drogheda	53.72	-6.35	hand
+Dublin	53.35	-6.26	hand
+Dudley	52.51	-2.08	hand
+Dundee	56.46	-2.97	hand
+Dunfermline	56.07	-3.46	hand
+East Lockinge	51.59	-1.43	hand
+Edensor	53.23	-1.61	hand
+Edinburgh	55.95	-3.19	hand
+Edmonton	51.62	-0.07	hand
+Eltonhead	53.45	-2.69	hand
+Emu Park	-23.26	150.82	hand
+Epsom	51.33	-0.27	hand
+Falkland	56.25	-3.21	hand
+Farnham	51.21	-0.8	hand
+Forchia	41.0302	14.5373	cache (Forchia, Benevento, Campania)
+Fortitude Valley	-27.46	153.04	hand
+Frampton on Severn	51.77	-2.37	hand
+Frankfurt am Main	50.11	8.68	hand
+Frome	51.23	-2.32	hand
+Gayndah	-25.62	151.61	hand
+Gilling West	54.43	-1.7	hand
+Gloucestershire (county)	51.8333	-2.1667	cache (Gloucestershire)
+Gravesend	51.44	0.37	hand
+Great Marlow	51.57	-0.78	hand
+Greenwich	51.48	0.0	hand
+Guildford	51.24	-0.57	hand
+Gympie	-26.19	152.67	hand
+Haarlemmermeer	52.3	4.68	hand
+Hampton Court	51.4	-0.34	hand
+Hanley	53.03	-2.18	hand
+Hartland	51.0	-4.48	hand
+Headington	51.76	-1.21	hand
+Hertfordshire (county)	51.8	-0.2	hand
+Hillingdon	51.54	-0.45	hand
+Himley	52.5	-2.17	hand
+Hornby Castle	54.3385	-1.6542	cache (Hornby Castle, Yorkshire)
+Hull	53.74	-0.33	hand
+Ipswich	-27.61	152.76	hand
+Keele	53.0038	-2.2877	cache (Keele, Staffordshire)
+Kelvin Grove	-27.45	153.01	hand
+Kennington	51.49	-0.11	hand
+Kingswinford	52.49	-2.15	hand
+Kirkby Mallory	52.62	-1.35	hand
+Kneeton	53.02	-0.95	hand
+Limerick	52.6613	-8.6301	cache (Limerick, County Limerick)
+Lincolnshire (county)	53.2	-0.2	hand
+Linlithgow	55.98	-3.6	hand
+Little Busby	54.45	-1.23	hand
+Logan Village	-27.77	153.11	hand
+London	51.51	-0.13	hand
+Long Ashton	51.4302	-2.6618	cache (Long Ashton, Somerset)
+Lyme Regis	50.73	-2.96	hand
+Lymington	50.76	-1.54	hand
+Mackay	-21.14	149.19	hand
+Madeley Shropshire	52.64	-2.45	hand
+Madeley Staffordshire	52.98	-2.35	hand
+Mainz	50.0	8.27	hand
+Maldon	51.73	0.68	hand
+Mansfield	53.14	-1.2	hand
+Market Bosworth	52.62	-1.4	hand
+Maryborough	-25.54	152.7	hand
+Middlesex (county)	51.55	-0.4	hand
+Milford on Sea	50.73	-1.58	hand
+Mount Morgan	-23.65	150.38	hand
+Mullagh	52.82	-9.1	hand
+Muttaburra	-22.58	144.55	hand
+Nambour	-26.63	152.96	hand
+Newcastle-under-Lyme	53.01	-2.23	hand
+North Yorkshire (county)	54.15	-1.4	hand
+Norwich	52.63	1.3	hand
+Nun Appleton	53.87	-1.17	hand
+Oslo	59.91	10.75	hand
+Ossington	53.17	-0.89	hand
+Oswestry	52.86	-3.05	hand
+Pennal	52.6	-3.91	hand
+Penrith	54.66	-2.75	hand
+Penzance	50.12	-5.54	hand
+Plymouth	50.38	-4.17	hand
+Porlock	51.22	-3.6	hand
+Portsmouth	50.8	-1.09	hand
+Praha	50.09	14.42	hand
+Rathdown	53.2	-6.15	hand
+Rockhampton	-23.38	150.51	hand
+Rushton Spencer	53.14	-2.05	hand
+Saffron Walden	52.02	0.24	hand
+San Felice a Cancello	41.0124	14.483	cache (San Felice a Cancello, Caserta, Campania)
+Sandgate	-27.32	153.07	hand
+Santa Maria a Vico	41.0269	14.4652	cache (Santa Maria a Vico, Caserta, Campania)
+Sarina	-21.43	149.22	hand
+Shrewsbury	52.71	-2.75	hand
+Sinnamon Park	-27.55	152.94	hand
+Skanderborg	56.04	9.93	hand
+Solihull	52.41	-1.78	hand
+Somerset (county)	51.1	-2.9	hand
+Somerton	51.05	-2.73	hand
+South Brisbane	-27.48	153.02	hand
+South Leith	55.98	-3.17	hand
+Spring Hill	-27.46	153.02	hand
+St Olave's York	53.96	-1.09	hand
+St Quivox	55.48	-4.58	hand
+Staffordshire (county)	52.8247	-2.0075	cache (Staffordshire)
+Stanwell	51.45	-0.47	hand
+Steyning	50.89	-0.33	hand
+Stirling	56.12	-3.94	hand
+Stone Gloucestershire	51.66	-2.43	hand
+Stoughton	52.62	-1.04	hand
+Strathaven	55.68	-4.07	hand
+Stratton	50.83	-4.52	hand
+Stroud	51.74	-2.22	hand
+Surlingham	52.5749	1.3984	cache (Surlingham, Norfolk)
+Teddington	51.42	-0.33	hand
+The Hague	52.08	4.31	hand
+Toddington	51.97	-1.93	hand
+Toowoomba	-27.561	151.9534	cache (Toowoomba, Queensland)
+Torquay	50.46	-3.53	hand
+Warwickshire (county)	52.28	-1.56	hand
+Wentworth	53.47	-1.42	hand
+West Farleigh	51.25	0.44	hand
+Westward Ho	51.04	-4.24	hand
+Westwood Queensland	-23.55	150.17	hand
+Wherwell	51.19	-1.45	hand
+Windsor Brisbane	-27.43	153.03	hand
+Winkburn	53.08	-0.93	hand
+Winton	-22.39	143.03	hand
+Wolstanton	53.04	-2.2	hand
+Woodbrook Laois	52.93	-7.3	hand
+Woolloongabba	-27.49	153.04	hand
+Wotton-under-Edge	51.64	-2.35	hand
+Yeovil	50.94	-2.63	hand
+Yorkshire (county)	54.0	-1.3	hand

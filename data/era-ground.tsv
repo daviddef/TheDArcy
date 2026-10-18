@@ -1,0 +1,517 @@
+# Which Record Atlas region (the versioned context.json contract) each place string this archive prints beside a date on a person's page belongs to, for the
+# 'at the time' notes (site/src/pages/people/[slug].astro, kit/docs/era-notes.md). One row per place string AS PRINTED: the born, died and marriage places of
+# every person who is not living. A region of '-' means: looked at, and no Atlas region covers it (or the string is not one place), so no note. A new place
+# string in the data fails tools/build_era.py --check until it is decided here. A region is given only where the region CLEARLY covers the place: England and
+# Wales (one region), Queensland, Scotland, Ireland (the island), and the few continental regions the Atlas has. erasnap.py then refuses any town whose point
+# (data/era-towns.tsv, column 4 here names the town) falls in a DIFFERENT region's ring, or within 15 km of its own region's ring edge.
+place	region	why	town
+(about) Limerick City, Ireland	-	not a place: a note, a hedge or a register number, not one place	
+(unmarried vp)	-	not a place: a note, a hedge or a register number, not one place	
+(vp)	-	not a place: a note, a hedge or a register number, not one place	
+(without Issue)	-	not a place: a note, a hedge or a register number, not one place	
+1 North Quay, Brisbane, Queensland, Australia	queensland	North Quay, Brisbane: Queensland	Brisbane
+10 Plumstead Common Road, Plumstead	-	Plumstead is in London and in Cape Town, and the string names neither	
+2 Rose Villas, Middlesex, England	england	Middlesex, the county: England, inside the «England and Wales» region	Middlesex (county)
+Adelaide St, North Brisbane, Queensland, Australia	queensland	Adelaide Street, Brisbane: Queensland	Brisbane
+Adeliade, South Australia, Aust.	-	an Australian state the Atlas has no region for	
+Albion Church, Brisbane	queensland	Albion, Brisbane: Queensland	Albion
+Aller, Somerset, England	england	Aller: England, inside the «England and Wales» region	Aller
+Ann-street, Breakfast Creek, `Brisbane, Queensland, Australia	queensland	Breakfast Creek: Queensland	Breakfast Creek
+Aram, England	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+Arienzo, Caserta, Campania, Italia	campania	Arienzo: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Arienzo
+Arienzo, Caserta, Campania, Italy	campania	Arienzo: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Arienzo
+Arpaia, Benevento, Campania, Italia	campania	Arpaia: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Arpaia
+Arpaia, Benevento, Italy	campania	Arpaia: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Arpaia
+Arpaia, Italy	campania	Arpaia: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Arpaia
+Arpaia, Provincia di Benevento, Campania, Italy	campania	Arpaia: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Arpaia
+Ashton House, Westward Ho, Devon, England	england	Westward Ho: England, inside the «England and Wales» region	Westward Ho
+Ashton Under Hill, Gloucestershire, England	england	Ashton under Hill: England, inside the «England and Wales» region	Ashton under Hill
+Ashton Underhill, Gloucester, England	england	Ashton under Hill: England, inside the «England and Wales» region	Ashton under Hill
+Ashton Underhill, Gloucestershire, England	england	Ashton under Hill: England, inside the «England and Wales» region	Ashton under Hill
+Ashton under Hill, Gloucestershire, England, United Kingdom	england	Ashton under Hill: England, inside the «England and Wales» region	Ashton under Hill
+Ashton, Underhil, Gloucestershire, England	england	Ashton under Hill: England, inside the «England and Wales» region	Ashton under Hill
+Ashton, Underhill, Gloucestershire, England	england	Ashton under Hill: England, inside the «England and Wales» region	Ashton under Hill
+Aston, Yorkshire	england	Yorkshire, the county: England, inside the «England and Wales» region	Yorkshire (county)
+Auckland, New Zealand	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Audlem, Cheshire, England	england	Audlem: England, inside the «England and Wales» region	Audlem
+Averham Park, Nottinghamshire, England	england	Averham: England, inside the «England and Wales» region	Averham
+Averham Park, Nottinghamshire. England	england	Averham: England, inside the «England and Wales» region	Averham
+Averham, Nottingham	england	Averham: England, inside the «England and Wales» region	Averham
+Averham, Nottingham, England	england	Averham: England, inside the «England and Wales» region	Averham
+Averham, Nottinghamshire, England	england	Averham: England, inside the «England and Wales» region	Averham
+Averham, Nottinghamshire, England, United Kingdom	england	Averham: England, inside the «England and Wales» region	Averham
+Averham, Nottinghamshire, UK	england	Averham: England, inside the «England and Wales» region	Averham
+Ayr, Ayr, Scotland	scotland	Ayr: Scotland (the Atlas's Scotland region)	Ayr
+Ayr, Scotland	scotland	Ayr: Scotland (the Atlas's Scotland region)	Ayr
+Bacharach, Darmstadt, Rhineland-Palatinate, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Baden-Wuerttemberg, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Baden-Württemberg, Deutschland	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Bailiwick of Jersey	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Ballymodan, Bandon, Cor, Ireland	ireland	Bandon: Ireland (the Atlas's whole-island region)	Bandon
+Ballymodan, Bandon, Ireland	ireland	Bandon: Ireland (the Atlas's whole-island region)	Bandon
+Banbridge, Down, Northern Ireland	-	Northern Ireland: the Atlas's Ireland region has one era after 1922 for two states, so a Northern Ireland town gets no note	
+Bandon, County Cork, Ireland	ireland	Bandon: Ireland (the Atlas's whole-island region)	Bandon
+Bangor, Gwynedd, UK	england	Bangor, Gwynedd: Wales, inside the Atlas's «England and Wales» region	Bangor Gwynedd
+Barbados	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Barbados, Caribbean	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Barnstaple, Devonshire, England	england	Barnstaple: England, inside the «England and Wales» region	Barnstaple
+Basingthorpe, Lincolnshire, England	england	Bassingthorpe: England, inside the «England and Wales» region	Bassingthorpe
+Basingthorpe, Linconshire, England	england	Bassingthorpe: England, inside the «England and Wales» region	Bassingthorpe
+Bassingthorpe, Lincolnshire, England	england	Bassingthorpe: England, inside the «England and Wales» region	Bassingthorpe
+Bassingthorpe. Lincolnshire. England	england	Bassingthorpe: England, inside the «England and Wales» region	Bassingthorpe
+Bath, Bath and North East Somerset, UK	england	Bath: England, inside the «England and Wales» region	Bath
+Bath, Somerset, England	england	Bath: England, inside the «England and Wales» region	Bath
+Bath, Somersetshire, England, Kingdom of Great Britain	england	Bath: England, inside the «England and Wales» region	Bath
+Bathurst, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Bedworth, Leicestershire, England, UK.	england	Bedworth: England, inside the «England and Wales» region	Bedworth
+Bega, Bega Valley Shire Council, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Bega, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Benevento, Campania, Italy	-	Italy: Benevento and its enclave were papal until 1860 (Campania's Two Sicilies era would be wrong); Turin and bare Italy have no region	
+Benevento, Province of Benevento, Campania, Italy	-	Italy: Benevento and its enclave were papal until 1860 (Campania's Two Sicilies era would be wrong); Turin and bare Italy have no region	
+Berkeley, Glou, England	england	Berkeley: England, inside the «England and Wales» region	Berkeley
+Berkeley, Gloucester, England	england	Berkeley: England, inside the «England and Wales» region	Berkeley
+Berkeley, Gloucester, England\	england	Berkeley: England, inside the «England and Wales» region	Berkeley
+Berkeley, Gloucestershire, England	england	Berkeley: England, inside the «England and Wales» region	Berkeley
+Berkley, Gloucester, England	england	Berkeley: England, inside the «England and Wales» region	Berkeley
+Berlin, Brandenburg, Prussia, Germany	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Birmingham, Warwickshire, England	england	Birmingham: England, inside the «England and Wales» region	Birmingham
+Bisley, Gloucestershire, England	england	Bisley: England, inside the «England and Wales» region	Bisley
+Bosworth Hall, Leicester, Leicestershire, England	england	Market Bosworth: England, inside the «England and Wales» region	Market Bosworth
+Boulia, Boulia Shire, Queensland, Australia	queensland	Boulia: Queensland	Boulia
+Bradwell, England	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+Braidwood, Palerang Council, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Brentwood, Middlesex, England	england	Brentwood: England, inside the «England and Wales» region	Brentwood
+Brighton, Brighton & Hove, UK	england	Brighton: England, inside the «England and Wales» region	Brighton
+Brimpsfield, Gloucester, England	england	Brimpsfield: England, inside the «England and Wales» region	Brimpsfield
+Brisbane	queensland	Brisbane: Queensland	Brisbane
+Brisbane Q'ld Australia	queensland	Brisbane: Queensland	Brisbane
+Brisbane QLD, Australia	queensland	Brisbane: Queensland	Brisbane
+Brisbane Qld	queensland	Brisbane: Queensland	Brisbane
+Brisbane Qld Australia	queensland	Brisbane: Queensland	Brisbane
+Brisbane, Australia	queensland	Brisbane: Queensland	Brisbane
+Brisbane, Brisbane, Queensland, Australia	queensland	Brisbane: Queensland	Brisbane
+Brisbane, QLD, Australia	queensland	Brisbane: Queensland	Brisbane
+Brisbane, Qld, Aust.	queensland	Brisbane: Queensland	Brisbane
+Brisbane, Queensland	queensland	Brisbane: Queensland	Brisbane
+Brisbane, Queensland, Australia	queensland	Brisbane: Queensland	Brisbane
+Bristol, City of Bristol, UK	england	Bristol: England, inside the «England and Wales» region	Bristol
+Bristol, Gloucester, England	england	Bristol: England, inside the «England and Wales» region	Bristol
+Bristol, Gloucestershire, England	england	Bristol: England, inside the «England and Wales» region	Bristol
+Buckwall, Somerset	england	Somerset, the county: England, inside the «England and Wales» region	Somerset (county)
+Burwood, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Butcombe Som Eng	england	Butcombe: England, inside the «England and Wales» region	Butcombe
+Camden, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Capua, Caserta, Campania, Italia	campania	Capua: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Capua
+Carrigaline, Cork, Ireland	ireland	Carrigaline: Ireland (the Atlas's whole-island region)	Carrigaline
+Caserta, Campania, Italia	campania	Caserta: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Caserta
+Caserta, Campania, Italy	campania	Caserta: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Caserta
+Castle Church, Stafford, England	england	Castle Church: England, inside the «England and Wales» region	Castle Church
+Cavendish Road, Coorparoo, Brisbane, Qld	queensland	Coorparoo: Queensland	Coorparoo
+Charters Towers, Queensland, Australia	queensland	Charters Towers: Queensland	Charters Towers
+Chatham, Kent, England	england	Chatham: England, inside the «England and Wales» region	Chatham
+Chatham, Medway, England, United Kingdom	england	Chatham: England, inside the «England and Wales» region	Chatham
+Chatham, Medway, UK	england	Chatham: England, inside the «England and Wales» region	Chatham
+Chelmsford, Essex, England	england	Chelmsford: England, inside the «England and Wales» region	Chelmsford
+Christened in Berkeley, Gloucester, England	england	Berkeley: England, inside the «England and Wales» region	Berkeley
+Church Of England, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Clarkenwell, Finsbury, London, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+Clerkenwell, London, England	england	London: England, inside the «England and Wales» region	London
+Clermont, Queensland, Australia	queensland	Clermont: Queensland	Clermont
+Clifton, Bedfordshire, England	england	Clifton Bedfordshire: England, inside the «England and Wales» region	Clifton Bedfordshire
+Clifton, Somerset, England	england	Clifton Bristol: England, inside the «England and Wales» region	Clifton Bristol
+Codford, Wiltshire, England	england	Codford: England, inside the «England and Wales» region	Codford
+Colo River, New South Wales Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Colombo, Western Ceylon	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Concord, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Constable Burton Hall, Leyburn, Yorkshire	england	Constable Burton: England, inside the «England and Wales» region	Constable Burton
+Cooby Creek, Via Toowoomba, Qld, Aust	queensland	Cooby Creek, via Toowoomba: Queensland	Cooby Creek
+Cork, Cork City, Cork, Ireland	ireland	Cork: Ireland (the Atlas's whole-island region)	Cork
+Cork, County Cork, Ireland	ireland	Cork: Ireland (the Atlas's whole-island region)	Cork
+Cork, Ireland	ireland	Cork: Ireland (the Atlas's whole-island region)	Cork
+Cornacrieve Cornacreeve, Co. Monaghan, Ireland	-	a townland or a garbled string the table cannot fix to a point	
+Corris, Merionethshire, Wales	england	Corris, Merionethshire: Wales, inside the Atlas's «England and Wales» region	Corris
+County Cork, Ireland	ireland	Cork: Ireland (the Atlas's whole-island region)	Cork
+Coxwold, Yorkshire	england	Coxwold: England, inside the «England and Wales» region	Coxwold
+Dalkeith Palace, Dalkeith, Mid-Lothian, Scotland	scotland	Dalkeith: Scotland (the Atlas's Scotland region)	Dalkeith
+Darcy Meynill, Yorkshire, Cattaraugus County, New York, United States	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Darling Downs	queensland	Darling Downs: Queensland	Darling Downs
+Davenham, Chester, Eng.	england	Davenham: England, inside the «England and Wales» region	Davenham
+Deinschwang, near Amberg, Upper Palatinate	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Denton, England, United Kingdom	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+Denton, Oxford, England	england	Denton Oxfordshire: England, inside the «England and Wales» region	Denton Oxfordshire
+Denton, Oxford, Oxfordshire, England, United Kingdom	england	Denton Oxfordshire: England, inside the «England and Wales» region	Denton Oxfordshire
+Devonshire, England	england	Devon, the county: England, inside the «England and Wales» region	Devon (county)
+Dinas, Wales	england	Wales named, the town not fixed: inside the «England and Wales» region	
+Doonogan, Mullagh, County Clare, Ireland	ireland	Mullagh, County Clare: Ireland (the Atlas's whole-island region)	Mullagh
+Douglas, Lanarkshire, Scotland	scotland	Douglas Lanarkshire: Scotland (the Atlas's Scotland region)	Douglas Lanarkshire
+Drivers Field, Gloucester, England	england	Berkeley: England, inside the «England and Wales» region	Berkeley
+Drogheda, County Louth, Ireland	ireland	Drogheda: Ireland (the Atlas's whole-island region)	Drogheda
+Dublin, Ireland	ireland	Dublin: Ireland (the Atlas's whole-island region)	Dublin
+Dudley, Tipton Staffordshire England	england	Dudley: England, inside the «England and Wales» region	Dudley
+Dundee, Scotland	scotland	Dundee: Scotland (the Atlas's Scotland region)	Dundee
+Dunfermline Palace, Dunfermline, Fife, Scotland	scotland	Dunfermline: Scotland (the Atlas's Scotland region)	Dunfermline
+Dunfermline Palace, Fife, Scotland	scotland	Dunfermline: Scotland (the Atlas's Scotland region)	Dunfermline
+Dürnau/Biberach/BW	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+East Lockinge, Berkshire	england	East Lockinge: England, inside the «England and Wales» region	East Lockinge
+Edensor, Derbyshire, England	england	Edensor: England, inside the «England and Wales» region	Edensor
+Edinburgh Castle, Edinburgh, Midlothian, Scotland	scotland	Edinburgh: Scotland (the Atlas's Scotland region)	Edinburgh
+Edinburgh, Midlothian, Scotland, United Kingdom	scotland	Edinburgh: Scotland (the Atlas's Scotland region)	Edinburgh
+Edinburgh, Scotland, United Kingdom	scotland	Edinburgh: Scotland (the Atlas's Scotland region)	Edinburgh
+Edingen, Baden-Württemberg, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Edmonton, Middlesex, England	england	Edmonton: England, inside the «England and Wales» region	Edmonton
+Ehrstaedt, Heidelberg, Baden, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Ehrstaedt, Heidelburg, Baden, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Ehrstaedt, Heidlberg, Baden, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Eltonhead, Lancashire, England	england	Eltonhead: England, inside the «England and Wales» region	Eltonhead
+Emmaville District, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Emu Park, Queensland, Australia	queensland	Emu Park: Queensland	Emu Park
+England	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+England, Great Britain, United Kingdom	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+England, United Kingdom	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+Epsom, Surrey, England	england	Epsom: England, inside the «England and Wales» region	Epsom
+Esslingen, Stuttgart, Baden-Württemberg, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Exeter	-	the string does not establish one place in England (a bare name that is many places, or an uncertain guess)	
+Falkland Palace, Fife, Scotland	scotland	Falkland: Scotland (the Atlas's Scotland region)	Falkland
+Falmer, The City of Brighton and Hove, England, United Kingdom	england	Brighton: England, inside the «England and Wales» region	Brighton
+Farnham, Surrey, England	england	Farnham: England, inside the «England and Wales» region	Farnham
+Forchia, Benevento, Campania, Italy	campania	Forchia: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Forchia
+Forchia, Italy	campania	Forchia: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Forchia
+Forde Hall, Warwickshire, England	england	Warwickshire, the county: England, inside the «England and Wales» region	Warwickshire (county)
+Frampton, Gloucestershire, England	england	Frampton on Severn: England, inside the «England and Wales» region	Frampton on Severn
+Frankfurt am Main, Frankfurt am Main, Hessen, Deutschland	frankfurt	Frankfurt am Main: the Atlas's Frankfurt ring	Frankfurt am Main
+Frere Hall, Warwickshire, England	england	Warwickshire, the county: England, inside the «England and Wales» region	Warwickshire (county)
+Friederichsburg, Mannhiem, Baden, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Friedrichsburg, Mannheim, Baden	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Frome, Somerset, England	england	Frome: England, inside the «England and Wales» region	Frome
+Gayndah, North Burnett Regional, Queensland, Australia	queensland	Gayndah: Queensland	Gayndah
+Geisenhain, Thüringen, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Geisenheim, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Georgia	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Gilling, Sedbury Park, Yorkshire, England	england	Gilling West: England, inside the «England and Wales» region	Gilling West
+Gloucestershire, England	england	Gloucestershire, the county: England, inside the «England and Wales» region	Gloucestershire (county)
+Goulburn, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Graham Street, South Brisbane, Queensland, Australia	queensland	South Brisbane: Queensland	South Brisbane
+Gravenhage, Zuid Holland, Nederlande	netherlands	The Hague: the Netherlands	The Hague
+Gravesend, England, United Kingdom	england	Gravesend: England, inside the «England and Wales» region	Gravesend
+Great Marlow, Buckinghamshire, England	england	Great Marlow: England, inside the «England and Wales» region	Great Marlow
+Greenwich Palace, Greenwich, Kent, England	england	Greenwich: England, inside the «England and Wales» region	Greenwich
+Greenwich Palace, Richmond, Surrey, England	england	Greenwich: England, inside the «England and Wales» region	Greenwich
+Guildford, Surrey, England	england	Guildford: England, inside the «England and Wales» region	Guildford
+Gympie, Queensland	queensland	Gympie: Queensland	Gympie
+Gympie, Queensland, Australia	queensland	Gympie: Queensland	Gympie
+Haarlemmermeer, Nederlande	netherlands	Haarlemmermeer: the Netherlands	Haarlemmermeer
+Hampstead, London, England	england	London: England, inside the «England and Wales» region	London
+Hampton Court Palace, Richmond, Greater London, United Kingdom	england	Hampton Court: England, inside the «England and Wales» region	Hampton Court
+Hanley, Stoke-on-Trent, England, United Kingdom	england	Hanley: England, inside the «England and Wales» region	Hanley
+Hanley, Stoke-on-Trent, Staffordshire, England	england	Hanley: England, inside the «England and Wales» region	Hanley
+Harris Park, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Hartland, Devon, England, United Kingdom	england	Hartland: England, inside the «England and Wales» region	Hartland
+Headington, Oxfordshire, England	england	Headington: England, inside the «England and Wales» region	Headington
+Heidelberg, BAden, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Baden, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Baden, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Banyule City, Victoria, Australia	-	an Australian state the Atlas has no region for	
+Heidelberg, Bayern, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Heidelberg, Baden, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Karlsruhe, Baden-Wurttemberg, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Karlsruhe, Baden-Württemberg, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Pfalz, Deutschland((HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Heidelberg, Pfalz, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Herford, Hessen, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Herrenhausen, Hannover, Braunschweig-Lüneburg, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Hertford, St. Mayfair, London, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+Hertfordshire, England	england	Hertfordshire, the county: England, inside the «England and Wales» region	Hertfordshire (county)
+Hertogenbosch, The Netherlands	netherlands	's-Hertogenbosch: the Netherlands	's-Hertogenbosch
+Hillingdon House, Middlesex, London, England	england	Hillingdon: England, inside the «England and Wales» region	Hillingdon
+Hillingdon, Middlesex, England, Kingdom of Great Britain	england	Hillingdon: England, inside the «England and Wales» region	Hillingdon
+Himley Hall, Himley Staffs	england	Himley: England, inside the «England and Wales» region	Himley
+Himley, Worcestershire	england	Himley: England, inside the «England and Wales» region	Himley
+Holy Trinity, Kingswinford, Stafford, England	england	Kingswinford: England, inside the «England and Wales» region	Kingswinford
+Hornby	-	the string does not establish one place in England (a bare name that is many places, or an uncertain guess)	
+Hornby Castle, North Riding, Yorkshire, England	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby Castle, Yorkshire, England	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby Castle, nr Bedale, Yorkshire	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby Castle, nr Bedale, Yorkshire, England	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby, North Riding, Yorkshire	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby, North Riding, Yorkshire, England	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby, West Riding, Yorkshire, England	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby, Yorkshire	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornby, Yorkshire, England	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Hornsby Castle, England	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+Hotten	-	the string does not establish one place in England (a bare name that is many places, or an uncertain guess)	
+Hull, East Riding of Yorkshire, England, United Kingdom	england	Hull: England, inside the «England and Wales» region	Hull
+Ipswich, Ipswich City, Queensland, Australia	queensland	Ipswich: Queensland	Ipswich
+Ipswich, Queensland, Australia	queensland	Ipswich: Queensland	Ipswich
+Iran	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Ireland	ireland	Ireland: the island named, no town	
+Italia	-	Italy: Benevento and its enclave were papal until 1860 (Campania's Two Sicilies era would be wrong); Turin and bare Italy have no region	
+Italy	-	Italy: Benevento and its enclave were papal until 1860 (Campania's Two Sicilies era would be wrong); Turin and bare Italy have no region	
+Jaffna, Northern Ceylon	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Kadawatha, Gampaha, Western Province, Ceylon	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Keele, Staffordshire	england	Keele: England, inside the «England and Wales» region	Keele
+Keele, Staffordshire, England	england	Keele: England, inside the «England and Wales» region	Keele
+Keele, Staffordshire, England, United Kingdom	england	Keele: England, inside the «England and Wales» region	Keele
+Keele, Staffordshire-Inglaterra	england	Keele: England, inside the «England and Wales» region	Keele
+Kelvin Grove, Queensland, Australia	queensland	Kelvin Grove: Queensland	Kelvin Grove
+Kempsey, Kempsey Shire Council, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Kempsey, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Kennington, Surrey, England	england	Kennington: England, inside the «England and Wales» region	Kennington
+Kensington House, London, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+Kieff, Russia	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Kirkby Mallory, Leicestershire, England	england	Kirkby Mallory: England, inside the «England and Wales» region	Kirkby Mallory
+Kneveton Manor, Nottinghamshire, England	england	Kneeton: England, inside the «England and Wales» region	Kneeton
+Köln	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Langdon Hall, Warwick, England	england	Warwickshire, the county: England, inside the «England and Wales» region	Warwickshire (county)
+Langdon Hall, Warwickshire, England	england	Warwickshire, the county: England, inside the «England and Wales» region	Warwickshire (county)
+Leemington, England, United Kingdom	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+Leicester House, St. Martin's-in-the-Fields, London, England	england	London: England, inside the «England and Wales» region	London
+Limerick City, Ireland	ireland	Limerick: Ireland (the Atlas's whole-island region)	Limerick
+Limerick, County Limerick, Ireland	ireland	Limerick: Ireland (the Atlas's whole-island region)	Limerick
+Limerick, Ireland	ireland	Limerick: Ireland (the Atlas's whole-island region)	Limerick
+Limerick, Limerick, Ireland	ireland	Limerick: Ireland (the Atlas's whole-island region)	Limerick
+Lincolnshire, England	england	Lincolnshire, the county: England, inside the «England and Wales» region	Lincolnshire (county)
+Linlithgow Palace, Lothian, Scotland	scotland	Linlithgow: Scotland (the Atlas's Scotland region)	Linlithgow
+Little Busby, Stokesley, Yorkshire	england	Little Busby: England, inside the «England and Wales» region	Little Busby
+Logan Village, Queensland, Australia	queensland	Logan Village: Queensland	Logan Village
+London	england	London: England, inside the «England and Wales» region	London
+London, England	england	London: England, inside the «England and Wales» region	London
+London, England, United Kingdom	england	London: England, inside the «England and Wales» region	London
+London, Greater London, England, United Kingdom	england	London: England, inside the «England and Wales» region	London
+London, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+London, Middlesex, England, Kingdom of Great Britain	england	London: England, inside the «England and Wales» region	London
+London, Middlesex, England, United Kingdom	england	London: England, inside the «England and Wales» region	London
+Long Ashton, Som., Eng.	england	Long Ashton: England, inside the «England and Wales» region	Long Ashton
+Long Ashton, Somerset	england	Long Ashton: England, inside the «England and Wales» region	Long Ashton
+Long Ashton, Somerset, Eng	england	Long Ashton: England, inside the «England and Wales» region	Long Ashton
+Long Ashton, Somerset, England	england	Long Ashton: England, inside the «England and Wales» region	Long Ashton
+Lyme Regis, Dorset	england	Lyme Regis: England, inside the «England and Wales» region	Lyme Regis
+Lymington, Hampshire	england	Lymington: England, inside the «England and Wales» region	Lymington
+Lymington, Hampshire, England	england	Lymington: England, inside the «England and Wales» region	Lymington
+Lymington, Hampshire, UK	england	Lymington: England, inside the «England and Wales» region	Lymington
+Lymington, UK	england	Lymington: England, inside the «England and Wales» region	Lymington
+MARKET BOSWORTH, LEICESTER, ENGLAND	england	Market Bosworth: England, inside the «England and Wales» region	Market Bosworth
+Mackay, Queensland, Australia	queensland	Mackay: Queensland	Mackay
+Madeira, Portugal	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Madeley, Shropshire, England	england	Madeley Shropshire: England, inside the «England and Wales» region	Madeley Shropshire
+Madeley, Stafford, England	england	Madeley Staffordshire: England, inside the «England and Wales» region	Madeley Staffordshire
+Madeley, Staffordshire, England	england	Madeley Staffordshire: England, inside the «England and Wales» region	Madeley Staffordshire
+Madeley, Staffordshire, England, United Kingdom	england	Madeley Staffordshire: England, inside the «England and Wales» region	Madeley Staffordshire
+Mainz, Rheinhessen, Hessen Lande, Germany	rhenish-hesse	Mainz, Rheinhessen: the Atlas's Rhenish Hesse ring	Mainz
+Maket Drayton, Shropshire, England	england	Market Bosworth: England, inside the «England and Wales» region	Market Bosworth
+Maldon, Essex, England	england	Maldon: England, inside the «England and Wales» region	Maldon
+Maloney Street, Toowoomba, Queensland, Australia	queensland	Toowoomba: Queensland	Toowoomba
+Mansfield, Nottinghamshire, England	england	Mansfield: England, inside the «England and Wales» region	Mansfield
+Market Bosworth, Leicester, England	england	Market Bosworth: England, inside the «England and Wales» region	Market Bosworth
+Market Bosworth, Leicestershire, England	england	Market Bosworth: England, inside the «England and Wales» region	Market Bosworth
+Market Bosworth, Leicestershire, England, UK.	england	Market Bosworth: England, inside the «England and Wales» region	Market Bosworth
+Maryborough, Queensland	queensland	Maryborough: Queensland	Maryborough
+Maryborough, Queensland, Australia	queensland	Maryborough: Queensland	Maryborough
+Marylebone, London, England, United Kingdom	england	London: England, inside the «England and Wales» region	London
+Marylebone, London, Greater London, England, United Kingdom	england	London: England, inside the «England and Wales» region	London
+Marylebone, London, Middlesex	england	London: England, inside the «England and Wales» region	London
+Middlesex, England	england	Middlesex, the county: England, inside the «England and Wales» region	Middlesex (county)
+Milford on Sea, Hampshire, England, United Kingdom	england	Milford on Sea: England, inside the «England and Wales» region	Milford on Sea
+Milford, Lymington, Hampshire, England	england	Milford on Sea: England, inside the «England and Wales» region	Milford on Sea
+Minmi, Newcastle City Council, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Montagu Square, Paddington, Greater London, UK	england	London: England, inside the «England and Wales» region	London
+Morrissey Street, Woolloongabba, Queensland, Australia	queensland	Woolloongabba: Queensland	Woolloongabba
+Moulsham Hall, Essex, England	england	Chelmsford: England, inside the «England and Wales» region	Chelmsford
+Mount Morgan Queensland	queensland	Mount Morgan: Queensland	Mount Morgan
+Mumbai, Maharashtra, India	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Murwillumbah	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Muttaburra, Queensland	queensland	Muttaburra: Queensland	Muttaburra
+Muttaburra??	-	not a place: a note, a hedge or a register number, not one place	
+Nambour, Sunshine Coast Regional, Queensland, Australia	queensland	Nambour: Queensland	Nambour
+Negroponte, Greece	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Nether Skyers, Darfield, Yorkshire	england	Darfield: England, inside the «England and Wales» region	Darfield
+Neuhaus near Neckar, Wuertt	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Neuhaus near Schorndorf, Neckar, Wuertt.	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Neuhaus, Jagst, Wuertt	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Neuhaus, Neckar, Wuertt	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Neuhrus near Schorndorf, Neckar, Wuertt.	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+New Park, Yorkshire	england	Yorkshire, the county: England, inside the «England and Wales» region	Yorkshire (county)
+New South Wales	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Newborough, Yorkshire, England	england	Yorkshire, the county: England, inside the «England and Wales» region	Yorkshire (county)
+Newcastle-under-Lyme, Staffordshire, England	england	Newcastle-under-Lyme: England, inside the «England and Wales» region	Newcastle-under-Lyme
+Newtown, Fairfield, Connecticut, America	-	outside every region the Atlas has for this archive's places (no region covers it)	
+No 3, Well St, Hanley, Staffordshire, England	england	Hanley: England, inside the «England and Wales» region	Hanley
+North Yorkshire, England, United Kingdom	england	North Yorkshire, the county: England, inside the «England and Wales» region	North Yorkshire (county)
+Norwich, England, United Kingdom	england	Norwich: England, inside the «England and Wales» region	Norwich
+Nun Appleton, Yorkshire, England	england	Nun Appleton: England, inside the «England and Wales» region	Nun Appleton
+Oberwesel, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Of Friedrichsburg, Mnnhm, Bdn	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Of, Berlin, Germany	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Of, Friedrichsburg, Mannheim, Baden	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Of, Hornby Castle, Yorkshire, England	england	Hornby Castle: England, inside the «England and Wales» region	Hornby Castle
+Old Bishop's Palace in Oslo, Oslo, Oslo, Oslo, Norway	norway	Oslo: Norway	Oslo
+Old Holy Trinity Church, Wentworth, Yorkshire	england	Wentworth: England, inside the «England and Wales» region	Wentworth
+Ormesby, Lincolnshire, England	england	Lincolnshire, the county: England, inside the «England and Wales» region	Lincolnshire (county)
+Ossington, Nottinghamshire, England	england	Ossington: England, inside the «England and Wales» region	Ossington
+Oswestry, Shropshire, England, United Kingdom	england	Oswestry: England, inside the «England and Wales» region	Oswestry
+Palace of Whitehall, London, England	england	London: England, inside the «England and Wales» region	London
+Parish of Elmore	-	not a place: a note, a hedge or a register number, not one place	
+Parramatta, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Pennal, Merionethshire, Wales	england	Pennal, Merionethshire: Wales, inside the Atlas's «England and Wales» region	Pennal
+Penrith, Cumberland, England	england	Penrith: England, inside the «England and Wales» region	Penrith
+Penzance, UK	england	Penzance: England, inside the «England and Wales» region	Penzance
+Perth W.A. Reg. 3494	-	not a place: a note, a hedge or a register number, not one place	
+Perth W.A. Reg. 4350 69yrs	-	not a place: a note, a hedge or a register number, not one place	
+Perth, Western Australia, Australia	-	an Australian state the Atlas has no region for	
+Point de Galle, Southern Ceylon	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Porlock, Minehead, Somerset, England	england	Porlock: England, inside the «England and Wales» region	Porlock
+Porlock, Somerset, England	england	Porlock: England, inside the «England and Wales» region	Porlock
+Port Moresby, National Capital District, Papua New Guinea	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Portlock, Somerset, England	england	Porlock: England, inside the «England and Wales» region	Porlock
+Portsea, Southampton, England	england	Portsmouth: England, inside the «England and Wales» region	Portsmouth
+Portsmouth, Hampshire	england	Portsmouth: England, inside the «England and Wales» region	Portsmouth
+Portsmouth, Hampshire, England	england	Portsmouth: England, inside the «England and Wales» region	Portsmouth
+Portsmouth, Southampton, United Kingdom	england	Portsmouth: England, inside the «England and Wales» region	Portsmouth
+Praha, Böhmen, Deutschland(HRR)	bohemia	Prague: Bohemia	Praha
+Priestlands, Milford, Lymington, Hampshire, England	england	Milford on Sea: England, inside the «England and Wales» region	Milford on Sea
+Probably Homildon, Northumberland, England	-	the string does not establish one place in England (a bare name that is many places, or an uncertain guess)	
+Putney, Surrey, England	england	London: England, inside the «England and Wales» region	London
+Qld, Aust.	queensland	Queensland: the colony and state named, no town	
+Qld, Australia	queensland	Queensland: the colony and state named, no town	
+Queenland, Australia	queensland	Queensland: the colony and state named, no town	
+Queensland	queensland	Queensland: the colony and state named, no town	
+Queensland Australia	queensland	Queensland: the colony and state named, no town	
+Queensland, Australia	queensland	Queensland: the colony and state named, no town	
+Queensland, Australia.	queensland	Queensland: the colony and state named, no town	
+Queensland, Australië	queensland	Queensland: the colony and state named, no town	
+Queensland, australia	queensland	Queensland: the colony and state named, no town	
+Rathdown, Ireland	ireland	Rathdown: Ireland (the Atlas's whole-island region)	Rathdown
+Richmond, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Rockhampton City, Rockhampton Regional, Queensland, Australia	queensland	Rockhampton: Queensland	Rockhampton
+Rockhampton, AU	queensland	Rockhampton: Queensland	Rockhampton
+Rockhampton, Qld	queensland	Rockhampton: Queensland	Rockhampton
+Rockhampton, Queensland	queensland	Rockhampton: Queensland	Rockhampton
+Rockhampton, Queensland, Australia	queensland	Rockhampton: Queensland	Rockhampton
+Royal Chapel, Palace of Whitehall	england	London: England, inside the «England and Wales» region	London
+Rush, Indiana, United States	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Rushton, Spencer, Staffordshire, England	england	Rushton Spencer: England, inside the «England and Wales» region	Rushton Spencer
+SOLIHULL West Midlands England	england	Solihull: England, inside the «England and Wales» region	Solihull
+ST. MARY'S, Limerick, Ireland	ireland	Limerick: Ireland (the Atlas's whole-island region)	Limerick
+Saffron Walden	england	Saffron Walden: England, inside the «England and Wales» region	Saffron Walden
+Saint Dunstan, Stepney, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+San Felice, Caserta, Campania, Italia	campania	San Felice a Cancello: Terra di Lavoro / Campania, in the Two Sicilies before 1861	San Felice a Cancello
+Sandgate, Queensland, Australia	queensland	Sandgate: Queensland	Sandgate
+Sandy Creek, Mackay, Queensland, Australia	queensland	Mackay: Queensland	Mackay
+Santa Maria A Vico, Nola, Terra Di Lavoro	campania	Santa Maria a Vico: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Santa Maria a Vico
+Santa Maria a Vico, Caserta, Campania, Italia	campania	Santa Maria a Vico: Terra di Lavoro / Campania, in the Two Sicilies before 1861	Santa Maria a Vico
+Sarina, Queensland, Australia	queensland	Sarina: Queensland	Sarina
+Schloss Friedrichsburg, Mannheim, Germ	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Schloss Friedrichsburg, Mannheim, Pfalz, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Schloss Herrenhausen, Hannover, Braunschweig-Luneburg, Deutschland	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Schomberg and, Leinster Province, Ireland	-	a townland or a garbled string the table cannot fix to a point	
+Schwetzingen, Rhein-Neckar-Kreis, Baden-Württemberg, Deutschland	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Scotland	scotland	Scotland: the country named, no town	
+Sedbury, Yorkshire, England	england	Gilling West: England, inside the «England and Wales» region	Gilling West
+Shrewsbury, England	england	Shrewsbury: England, inside the «England and Wales» region	Shrewsbury
+Sinnamon Village Nursing Home, Brisbane, Queensland, Australia	queensland	Sinnamon Village, Brisbane: Queensland	Sinnamon Park
+Skanderborg Castle, Kingdom of Denmark	denmark	Skanderborg: Denmark	Skanderborg
+Skelton, Yorkshire, England	england	Yorkshire, the county: England, inside the «England and Wales» region	Yorkshire (county)
+Solihul, Warwickshire, England	england	Solihull: England, inside the «England and Wales» region	Solihull
+Solihull, Warwickshire, England	england	Solihull: England, inside the «England and Wales» region	Solihull
+Somerset, England	england	Somerset, the county: England, inside the «England and Wales» region	Somerset (county)
+Somerton, Somerset	england	Somerton: England, inside the «England and Wales» region	Somerton
+Somerton, Somerset, England	england	Somerton: England, inside the «England and Wales» region	Somerton
+South Brisbane, Brisbane City, Queensland, Australia	queensland	South Brisbane: Queensland	South Brisbane
+South Leith, Midlothian, Scotland	scotland	South Leith: Scotland (the Atlas's Scotland region)	South Leith
+South Strabane, Washington, Pennsylvania, United States	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Spring Gardens, London, England	england	London: England, inside the «England and Wales» region	London
+Spring Hill, Brisbane, Queensland, Australia	queensland	Spring Hill, Brisbane: Queensland	Spring Hill
+St Andrew's Church, Clifton, Gloucestershire	england	Bristol: England, inside the «England and Wales» region	Bristol
+St James, Clerkenwell, London, England	england	London: England, inside the «England and Wales» region	London
+St John's Church, Parramatta, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+St Paul, Bristol, Gloucestershire, England	england	Bristol: England, inside the «England and Wales» region	Bristol
+St Philips Church of England, Thompson Estate (now Annerley)	queensland	Thompson Estate, Annerley: Queensland	Annerley
+St Phillips Church, Church Hill, Sydney Town, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+St Quivox, Ayrshire, Scotland, United Kingdom	scotland	St Quivox, Ayrshire: Scotland (the Atlas's Scotland region)	St Quivox
+St. Georges, Hanover Square, London, England, United Kingdom	england	London: England, inside the «England and Wales» region	London
+St. James Palace, London, Middlesex, Englan	england	London: England, inside the «England and Wales» region	London
+St. James Palace, London, Middlesex, England, Kingdom of England	england	London: England, inside the «England and Wales» region	London
+St. James Palace, Westminster, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+St. James, Westminster Saint James the Less, London, England	england	London: England, inside the «England and Wales» region	London
+St. Mary, Limerick, County Limerick, Ireland	ireland	Limerick: Ireland (the Atlas's whole-island region)	Limerick
+St. Olave, Old Jewry, London, England	england	London: England, inside the «England and Wales» region	London
+St. Olaves, Yorkshire, England	england	St Olave's York: England, inside the «England and Wales» region	St Olave's York
+St. Pauls Hammersmith, Middlesex, england	england	London: England, inside the «England and Wales» region	London
+Staffordshire, England	england	Staffordshire, the county: England, inside the «England and Wales» region	Staffordshire (county)
+Staffordshire, England, United Kingdom	england	Staffordshire, the county: England, inside the «England and Wales» region	Staffordshire (county)
+Stanwell Park, Middlesex, England	england	Stanwell: England, inside the «England and Wales» region	Stanwell
+Stepney, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+Steyning, East Sussex, England, United Kingdom	england	Steyning: England, inside the «England and Wales» region	Steyning
+Stirling Castle, Stirling, Stirlingshire, Scotland	scotland	Stirling: Scotland (the Atlas's Scotland region)	Stirling
+Stirling, Scotland	scotland	Stirling: Scotland (the Atlas's Scotland region)	Stirling
+Stirling, Stirlingshire, Scotland	scotland	Stirling: Scotland (the Atlas's Scotland region)	Stirling
+Stoke Damerel, Devon, England	england	Plymouth: England, inside the «England and Wales» region	Plymouth
+Stone, Gloucester, England	england	Stone Gloucestershire: England, inside the «England and Wales» region	Stone Gloucestershire
+Stoughton, Leicestershire, England	england	Stoughton: England, inside the «England and Wales» region	Stoughton
+Strand, Limerick, Ireland	ireland	Limerick: Ireland (the Atlas's whole-island region)	Limerick
+Strassburg, Kärnten, Austria.	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Strathaven	scotland	Strathaven: Scotland (the Atlas's Scotland region)	Strathaven
+Stratton, Cornwall, England	england	Stratton: England, inside the «England and Wales» region	Stratton
+Stroud, Gloucestershire	england	Stroud: England, inside the «England and Wales» region	Stroud
+Stroughton Grange, Leicestershire, England	england	Stoughton: England, inside the «England and Wales» region	Stoughton
+Surlingham, England, United Kingdom	england	Surlingham: England, inside the «England and Wales» region	Surlingham
+Sydenham, England, United Kingdom	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+Sydney, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Syon Hill, London, Middlesex, England, Kingdom of Great Britain	england	London: England, inside the «England and Wales» region	London
+Teddington, Middlesex, England	england	Teddington: England, inside the «England and Wales» region	Teddington
+The Hague, South Holland, The Netherlands	netherlands	The Hague: the Netherlands	The Hague
+The Thomas farm, in Cory (Curry Mallet), Somersetshire, England	england	Curry Mallet: England, inside the «England and Wales» region	Curry Mallet
+Theobalds Palace, Chestnut, Hertfordshire, England	england	Cheshunt: England, inside the «England and Wales» region	Cheshunt
+Thomas, Cory, Somerset, England	england	Curry Mallet: England, inside the «England and Wales» region	Curry Mallet
+Tin Can Bay, Gympie Regional, Queensland, Australia	queensland	Gympie: Queensland	Gympie
+Toddington, Gloucestershire, England	england	Toddington: England, inside the «England and Wales» region	Toddington
+Toowoomba	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba Q'ld  Australia	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba Q'ld Australia	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba Queensland Australia	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba, Queensland	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba, Queensland Australia	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba, Queensland, Australia	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba, Toowoomba Region, Queensland, Australia	queensland	Toowoomba: Queensland	Toowoomba
+Toowoomba, australia	queensland	Toowoomba: Queensland	Toowoomba
+Torquay, Torbay, England	england	Torquay: England, inside the «England and Wales» region	Torquay
+Trinity Church, Fortitude Valley, Queensland, Australia	queensland	Fortitude Valley: Queensland	Fortitude Valley
+Turin, Italy	-	Italy: Benevento and its enclave were papal until 1860 (Campania's Two Sicilies era would be wrong); Turin and bare Italy have no region	
+Tyrone, Tyrone, Ireland	-	Northern Ireland: the Atlas's Ireland region has one era after 1922 for two states, so a Northern Ireland town gets no note	
+USA	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Upper Brook Street, London, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+Walden, Essex, England	england	Saffron Walden: England, inside the «England and Wales» region	Saffron Walden
+Washington, Maryland, United States	-	outside every region the Atlas has for this archive's places (no region covers it)	
+Waterloo Lane, Bristol, Gloucester, England	england	Bristol: England, inside the «England and Wales» region	Bristol
+West Farleigh, Kent, England	england	West Farleigh: England, inside the «England and Wales» region	West Farleigh
+West Farleigh, Kent, UK	england	West Farleigh: England, inside the «England and Wales» region	West Farleigh
+West Ham, UK	england	London: England, inside the «England and Wales» region	London
+West Leigh, Devonshire	england	Devon, the county: England, inside the «England and Wales» region	Devon (county)
+Westminster St James, Middlesex, England	england	London: England, inside the «England and Wales» region	London
+Westminster St James, Middlesex, England, Kingdom of Great Britain	england	London: England, inside the «England and Wales» region	London
+Westminster, London	england	London: England, inside the «England and Wales» region	London
+Westminster, London, England	england	London: England, inside the «England and Wales» region	London
+Westminster, Middlesex	england	London: England, inside the «England and Wales» region	London
+Westwood, Queensland, Australia	queensland	Westwood Queensland: Queensland	Westwood Queensland
+Wherwell, Hampshire, UK	england	Wherwell: England, inside the «England and Wales» region	Wherwell
+Windsor, Brisbane	queensland	Windsor, Brisbane: Queensland	Windsor Brisbane
+Winkbourne Nottinghamshire	england	Winkburn: England, inside the «England and Wales» region	Winkburn
+Winton, Queensland, Australia	queensland	Winton: Queensland	Winton
+Wolfenbüttel, Braunschweig-Lüneburg, Deutschland(HRR)	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+Wolstanton, Staffordshire, England	england	Wolstanton: England, inside the «England and Wales» region	Wolstanton
+Woodbrook, Queens County, Ireland	ireland	Woodbrook, Queen's County: Ireland (the Atlas's whole-island region)	Woodbrook Laois
+Woolloomooloo, New South Wales, Australia	-	New South Wales: the Atlas has no region for it (Queensland's ring is a box that runs over the northern rivers, so a New South Wales town must not take Queensland's era)	
+Wotton-under-Edge, Gloucestershire, England	england	Wotton-under-Edge: England, inside the «England and Wales» region	Wotton-under-Edge
+Yeovil, Somerset, England	england	Yeovil: England, inside the «England and Wales» region	Yeovil
+Yorks Co., Eng.	england	Yorkshire, the county: England, inside the «England and Wales» region	Yorkshire (county)
+Yorkshire, England	england	Yorkshire, the county: England, inside the «England and Wales» region	Yorkshire (county)
+dunnau, wurtemburg	-	Germany: Baden, Kurpfalz, Wuerttemberg and the Rhineland are outside the Atlas's rings (the Palatinate ring is the Rheinkreis; Heidelberg and Mannheim lie east of it)	
+of Aller, Som., Eng.	england	Aller: England, inside the «England and Wales» region	Aller
+of Bedworth and Stoughton, Leicestershire, England	england	Bedworth: England, inside the «England and Wales» region	Bedworth
+of England	england	England named, the town not fixed (the name is many places or none the table can fix): inside the «England and Wales» region	
+of St Quivox, Ayr, Sctl	scotland	St Quivox, Ayrshire: Scotland (the Atlas's Scotland region)	St Quivox
+of St Quivox, Ayrshire, Scotland	scotland	St Quivox, Ayrshire: Scotland (the Atlas's Scotland region)	St Quivox
+toowoomba, qld, australia	queensland	Toowoomba: Queensland	Toowoomba
+unknown — Portsmouth or the West Indies	-	not a place: a note, a hedge or a register number, not one place	
+“In the field, France” — and a sergeant of the 10th Battalion reported Mouquet Farm	-	not a place: a note, a hedge or a register number, not one place	

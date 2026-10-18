@@ -40,3 +40,26 @@ reason) raises EX, which is ratcheted too, and a floor goes up only by a person'
   on /great-war/ is shown beside its passage. FamilySearch, NAA, TNA, FindMyPast images are link-only until David rules.
 - **CI** builds from committed data only (no GEDCOM, no feed): the names index comes from the built pages and `names-aliases.json`, the
   living list from the noindex pages, the records table is checked against `register.json`, and the kit's self-test of the gate runs first.
+
+## "At the time" notes (18 October 2026)
+
+Beside a dated place on a **non-living** person's page (the Born and Died rows and each marriage whose spouse is named) the kit draws a muted line,
+"At the time: Britain and its colonies per the Record Atlas": who held that ground in that year, from the Atlas's region eras. Text only, context about
+the ground and never a claim about the family; where the data does not support a note there is nothing. The rules are
+`site/node_modules/@daviddef/archive-kit/kit/docs/era-notes.md`.
+
+- **The place table is the decision.** `data/era-ground.tsv` has one row per place string as the pages print it (born, died and marriage places of the
+  non-living), with an Atlas region or `-` and the reason; `data/era-towns.tsv` gives the point of each town so the kit can refuse a place within 15 km of
+  a ring edge. A region is given only where it CLEARLY covers the place (England and Wales, Queensland, Scotland, Ireland, Campania and a few continental
+  regions). New South Wales, Baden, Wurttemberg and the rest have no region and are `-`. A new place string fails `npm run check:era-ground` until it has a row.
+- **The snapshot is committed** (`site/src/data/era-snapshot.json`, version 4, with the contract's version and sha256 in it) and refreshed on purpose:
+  `python3 tools/build_era.py --snapshot <Record Atlas>/site/public/context.json [--report drops.json]` (from a copy of the contract; never edit the Atlas).
+  A build never reads the Atlas. Policy is recorded in the snapshot: `--unassessed allow` (today it lets nothing through: an unassessed era also has null margins
+  and is refused as unknowable), `--approx margin`, `--contested scope`, N = 5.
+- **The date.** `site/src/lib/eraYear.js` turns the printed date into a plain year (`27 OCT 1406`, `MAR 1600` and `June 24 1497` count; `AFT`, `BET`, `ABT`, `TO`,
+  `1621/22` and the archive's own prose do not) and, before 1752 (a British year began in March), draws a note only where the year either side lies in the same era.
+- **Gates**, last in `npm run build`: `check:era-ground` (first), `check:era` (the kit's gate on the built pages: every note names a contract era, the year lies
+  inside it, no note on a living or noindex page; the living list is written outside the repository, `tools/build_era.py --living-path`), `check:era-expect`
+  (`tools/check_era_expect.py`: re-derives from the printed dates and places the notes each page should carry, and fails a missing, extra or differing one) and the
+  kit's self-test. `tools/autolink_strip.py` takes the notes and their `<style>` off whole, so `mentions.json`, `whoindex.json` and the search text do not change because of them.
+- **The 215 `/who/` pages** print one free-text record sentence and its source, with no date or place field: no notes there.

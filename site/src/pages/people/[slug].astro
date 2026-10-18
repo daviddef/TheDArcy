@@ -14,6 +14,9 @@ import { grade } from "../../lib/grade.js";
 import PersonTree from "../../components/PersonTree.astro";
 import { CORRECTIONS } from "../../lib/corrections.js";
 import personRecords from "../../data/person-records.json";
+import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
+import { eraFor } from "../../lib/eraYear.js";
+import eraSnapshot from "../../data/era-snapshot.json";
 
 export async function getStaticPaths() {
   const { people } = await import("../../lib/people.js");
@@ -175,9 +178,21 @@ const rec = alive ? null : (personRecords[p.slug] || null);
 const corr = alive ? {} : (CORRECTIONS[p.slug] || {});
 const val = (k, fallback) => (corr[k] ? corr[k][0] : fallback);
 
+/* AN «AT THE TIME» NOTE beside a dated place (kit/docs/era-notes.md; David, 18 October 2026): who held that ground in that year, from the
+   Record Atlas's REGION eras, as this archive committed them (src/data/era-snapshot.json, rebuilt deliberately by tools/build_era.py
+   --snapshot; the place -> region table is data/era-ground.tsv). Context about the ground, never a claim about the family. Three places print
+   a date and a place together: the Born row, the Died row and a marriage. NEVER on a living person's page (rule c, which is the PAGE's: a
+   living person has no event here at all, and the guard is repeated below; the build gate check:era fails any note on a living or noindex
+   page). The year is read off the date the page prints (lib/eraYear.js): «MAR 1600» and «27 OCT 1406» count, «AFT 1268», «BET 1799 AND 1801»,
+   «ABT 1776» and the archive's own prose («1781 — baptised at Madeley») do not, and a date before 1752 gives a note only where the year either
+   side of it lies in the same era (a British year then began in March). eraAt also gives none for a year within max(5, the Atlas's margin) years of
+   an era's start or end, for an era contested about its regime, for one the Atlas labels as shorthand, or for a place no region covers. */
+const noNotes = alive;
+const eraOn = (place, date) => (noNotes || !place || !date) ? null : eraFor(eraSnapshot, place, date);
+const bornPlace = val("bornPlace", p.bornPlace), diedPlace = val("diedPlace", p.diedPlace);
 const facts = [
-  ["Born", val("born", p.born), val("bornPlace", p.bornPlace)],
-  ["Died", val("died", p.died), val("diedPlace", p.diedPlace)],
+  ["Born", val("born", p.born), bornPlace, eraOn(bornPlace, val("born", p.born))],
+  ["Died", val("died", p.died), diedPlace, eraOn(diedPlace, val("died", p.died))],
   ["Cause", p.cause, ""],
   ["Buried", "", val("burial", p.burial)],
   ["Trade", val("occupation", p.occupation), ""],
@@ -340,11 +355,11 @@ const anyDamaged = notes.some((n) => n.damaged);
         <Scroll>
           <table>
             <tbody>
-              {facts.map(([k, a, b]) => (
+              {facts.map(([k, a, b, e]) => (
                 <tr>
                   <td style="white-space:nowrap">{k}</td>
                   <td class="m">{a || "—"}</td>
-                  <td>{b || ""}</td>
+                  <td>{b || ""}{e ? <EraNote era={e} /> : null}</td>
                 </tr>
               ))}
             </tbody>
@@ -408,6 +423,7 @@ const anyDamaged = notes.some((n) => n.damaged);
                   {s.place && <span class="small"> ({s.place})</span>}
                   {s.married && <span class="small"> · {s.married}</span>}
                   {s.marriedPlace && <span class="small"> at {s.marriedPlace}</span>}
+                  {s.marriedPlace && s.married && !isLiving(s) && !(o && isLiving(o)) ? <EraNote era={eraOn(s.marriedPlace, s.married)} /> : null}
                   {s.divorced && <span class="small"> · divorced {s.divorced}</span>}
                 </p>
               );

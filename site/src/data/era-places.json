@@ -1,0 +1,2047 @@
+{
+ "_about": "Built by tools/build_era.py from data/era-ground.tsv and data/era-towns.tsv. Place as printed -> {region, lat, lon}, or null where no Atlas region covers it. Read by kit erasnap.py.",
+ "places": {
+  "(about) Limerick City, Ireland": null,
+  "(unmarried vp)": null,
+  "(vp)": null,
+  "(without Issue)": null,
+  "1 North Quay, Brisbane, Queensland, Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "10 Plumstead Common Road, Plumstead": null,
+  "2 Rose Villas, Middlesex, England": {
+   "lat": 51.55,
+   "lon": -0.4,
+   "region": "england"
+  },
+  "Adelaide St, North Brisbane, Queensland, Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Adeliade, South Australia, Aust.": null,
+  "Albion Church, Brisbane": {
+   "lat": -27.43,
+   "lon": 153.04,
+   "region": "queensland"
+  },
+  "Aller, Somerset, England": {
+   "lat": 51.04,
+   "lon": -2.82,
+   "region": "england"
+  },
+  "Ann-street, Breakfast Creek, `Brisbane, Queensland, Australia": {
+   "lat": -27.44,
+   "lon": 153.05,
+   "region": "queensland"
+  },
+  "Aram, England": {
+   "region": "england"
+  },
+  "Arienzo, Caserta, Campania, Italia": {
+   "lat": 41.0243,
+   "lon": 14.4971,
+   "region": "campania"
+  },
+  "Arienzo, Caserta, Campania, Italy": {
+   "lat": 41.0243,
+   "lon": 14.4971,
+   "region": "campania"
+  },
+  "Arpaia, Benevento, Campania, Italia": {
+   "lat": 41.03,
+   "lon": 14.53,
+   "region": "campania"
+  },
+  "Arpaia, Benevento, Italy": {
+   "lat": 41.03,
+   "lon": 14.53,
+   "region": "campania"
+  },
+  "Arpaia, Italy": {
+   "lat": 41.03,
+   "lon": 14.53,
+   "region": "campania"
+  },
+  "Arpaia, Provincia di Benevento, Campania, Italy": {
+   "lat": 41.03,
+   "lon": 14.53,
+   "region": "campania"
+  },
+  "Ashton House, Westward Ho, Devon, England": {
+   "lat": 51.04,
+   "lon": -4.24,
+   "region": "england"
+  },
+  "Ashton Under Hill, Gloucestershire, England": {
+   "lat": 52.04,
+   "lon": -2.01,
+   "region": "england"
+  },
+  "Ashton Underhill, Gloucester, England": {
+   "lat": 52.04,
+   "lon": -2.01,
+   "region": "england"
+  },
+  "Ashton Underhill, Gloucestershire, England": {
+   "lat": 52.04,
+   "lon": -2.01,
+   "region": "england"
+  },
+  "Ashton under Hill, Gloucestershire, England, United Kingdom": {
+   "lat": 52.04,
+   "lon": -2.01,
+   "region": "england"
+  },
+  "Ashton, Underhil, Gloucestershire, England": {
+   "lat": 52.04,
+   "lon": -2.01,
+   "region": "england"
+  },
+  "Ashton, Underhill, Gloucestershire, England": {
+   "lat": 52.04,
+   "lon": -2.01,
+   "region": "england"
+  },
+  "Aston, Yorkshire": {
+   "lat": 54.0,
+   "lon": -1.3,
+   "region": "england"
+  },
+  "Auckland, New Zealand": null,
+  "Audlem, Cheshire, England": {
+   "lat": 52.99,
+   "lon": -2.51,
+   "region": "england"
+  },
+  "Averham Park, Nottinghamshire, England": {
+   "lat": 53.0829,
+   "lon": -0.8598,
+   "region": "england"
+  },
+  "Averham Park, Nottinghamshire. England": {
+   "lat": 53.0829,
+   "lon": -0.8598,
+   "region": "england"
+  },
+  "Averham, Nottingham": {
+   "lat": 53.0829,
+   "lon": -0.8598,
+   "region": "england"
+  },
+  "Averham, Nottingham, England": {
+   "lat": 53.0829,
+   "lon": -0.8598,
+   "region": "england"
+  },
+  "Averham, Nottinghamshire, England": {
+   "lat": 53.0829,
+   "lon": -0.8598,
+   "region": "england"
+  },
+  "Averham, Nottinghamshire, England, United Kingdom": {
+   "lat": 53.0829,
+   "lon": -0.8598,
+   "region": "england"
+  },
+  "Averham, Nottinghamshire, UK": {
+   "lat": 53.0829,
+   "lon": -0.8598,
+   "region": "england"
+  },
+  "Ayr, Ayr, Scotland": {
+   "lat": 55.46,
+   "lon": -4.63,
+   "region": "scotland"
+  },
+  "Ayr, Scotland": {
+   "lat": 55.46,
+   "lon": -4.63,
+   "region": "scotland"
+  },
+  "Bacharach, Darmstadt, Rhineland-Palatinate, Germany": null,
+  "Baden-Wuerttemberg, Germany": null,
+  "Baden-Württemberg, Deutschland": null,
+  "Bailiwick of Jersey": null,
+  "Ballymodan, Bandon, Cor, Ireland": {
+   "lat": 51.75,
+   "lon": -8.74,
+   "region": "ireland"
+  },
+  "Ballymodan, Bandon, Ireland": {
+   "lat": 51.75,
+   "lon": -8.74,
+   "region": "ireland"
+  },
+  "Banbridge, Down, Northern Ireland": null,
+  "Bandon, County Cork, Ireland": {
+   "lat": 51.75,
+   "lon": -8.74,
+   "region": "ireland"
+  },
+  "Bangor, Gwynedd, UK": {
+   "lat": 53.23,
+   "lon": -4.13,
+   "region": "england"
+  },
+  "Barbados": null,
+  "Barbados, Caribbean": null,
+  "Barnstaple, Devonshire, England": {
+   "lat": 51.08,
+   "lon": -4.06,
+   "region": "england"
+  },
+  "Basingthorpe, Lincolnshire, England": {
+   "lat": 52.8,
+   "lon": -0.56,
+   "region": "england"
+  },
+  "Basingthorpe, Linconshire, England": {
+   "lat": 52.8,
+   "lon": -0.56,
+   "region": "england"
+  },
+  "Bassingthorpe, Lincolnshire, England": {
+   "lat": 52.8,
+   "lon": -0.56,
+   "region": "england"
+  },
+  "Bassingthorpe. Lincolnshire. England": {
+   "lat": 52.8,
+   "lon": -0.56,
+   "region": "england"
+  },
+  "Bath, Bath and North East Somerset, UK": {
+   "lat": 51.38,
+   "lon": -2.36,
+   "region": "england"
+  },
+  "Bath, Somerset, England": {
+   "lat": 51.38,
+   "lon": -2.36,
+   "region": "england"
+  },
+  "Bath, Somersetshire, England, Kingdom of Great Britain": {
+   "lat": 51.38,
+   "lon": -2.36,
+   "region": "england"
+  },
+  "Bathurst, New South Wales, Australia": null,
+  "Bedworth, Leicestershire, England, UK.": {
+   "lat": 52.48,
+   "lon": -1.47,
+   "region": "england"
+  },
+  "Bega, Bega Valley Shire Council, New South Wales, Australia": null,
+  "Bega, New South Wales, Australia": null,
+  "Benevento, Campania, Italy": null,
+  "Benevento, Province of Benevento, Campania, Italy": null,
+  "Berkeley, Glou, England": {
+   "lat": 51.6914,
+   "lon": -2.4585,
+   "region": "england"
+  },
+  "Berkeley, Gloucester, England": {
+   "lat": 51.6914,
+   "lon": -2.4585,
+   "region": "england"
+  },
+  "Berkeley, Gloucester, England\\": {
+   "lat": 51.6914,
+   "lon": -2.4585,
+   "region": "england"
+  },
+  "Berkeley, Gloucestershire, England": {
+   "lat": 51.6914,
+   "lon": -2.4585,
+   "region": "england"
+  },
+  "Berkley, Gloucester, England": {
+   "lat": 51.6914,
+   "lon": -2.4585,
+   "region": "england"
+  },
+  "Berlin, Brandenburg, Prussia, Germany": null,
+  "Birmingham, Warwickshire, England": {
+   "lat": 52.48,
+   "lon": -1.9,
+   "region": "england"
+  },
+  "Bisley, Gloucestershire, England": {
+   "lat": 51.74,
+   "lon": -2.14,
+   "region": "england"
+  },
+  "Bosworth Hall, Leicester, Leicestershire, England": {
+   "lat": 52.62,
+   "lon": -1.4,
+   "region": "england"
+  },
+  "Boulia, Boulia Shire, Queensland, Australia": {
+   "lat": -22.91,
+   "lon": 139.9,
+   "region": "queensland"
+  },
+  "Bradwell, England": {
+   "region": "england"
+  },
+  "Braidwood, Palerang Council, New South Wales, Australia": null,
+  "Brentwood, Middlesex, England": {
+   "lat": 51.62,
+   "lon": 0.3,
+   "region": "england"
+  },
+  "Brighton, Brighton & Hove, UK": {
+   "lat": 50.83,
+   "lon": -0.14,
+   "region": "england"
+  },
+  "Brimpsfield, Gloucester, England": {
+   "lat": 51.8,
+   "lon": -2.13,
+   "region": "england"
+  },
+  "Brisbane": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane Q'ld Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane QLD, Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane Qld": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane Qld Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane, Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane, Brisbane, Queensland, Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane, QLD, Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane, Qld, Aust.": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane, Queensland": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Brisbane, Queensland, Australia": {
+   "lat": -27.469,
+   "lon": 153.0235,
+   "region": "queensland"
+  },
+  "Bristol, City of Bristol, UK": {
+   "lat": 51.45,
+   "lon": -2.59,
+   "region": "england"
+  },
+  "Bristol, Gloucester, England": {
+   "lat": 51.45,
+   "lon": -2.59,
+   "region": "england"
+  },
+  "Bristol, Gloucestershire, England": {
+   "lat": 51.45,
+   "lon": -2.59,
+   "region": "england"
+  },
+  "Buckwall, Somerset": {
+   "lat": 51.1,
+   "lon": -2.9,
+   "region": "england"
+  },
+  "Burwood, New South Wales, Australia": null,
+  "Butcombe Som Eng": {
+   "lat": 51.35,
+   "lon": -2.69,
+   "region": "england"
+  },
+  "Camden, New South Wales, Australia": null,
+  "Capua, Caserta, Campania, Italia": {
+   "lat": 41.11,
+   "lon": 14.21,
+   "region": "campania"
+  },
+  "Carrigaline, Cork, Ireland": {
+   "lat": 51.81,
+   "lon": -8.4,
+   "region": "ireland"
+  },
+  "Caserta, Campania, Italia": {
+   "lat": 41.07,
+   "lon": 14.33,
+   "region": "campania"
+  },
+  "Caserta, Campania, Italy": {
+   "lat": 41.07,
+   "lon": 14.33,
+   "region": "campania"
+  },
+  "Castle Church, Stafford, England": {
+   "lat": 52.78,
+   "lon": -2.12,
+   "region": "england"
+  },
+  "Cavendish Road, Coorparoo, Brisbane, Qld": {
+   "lat": -27.5,
+   "lon": 153.06,
+   "region": "queensland"
+  },
+  "Charters Towers, Queensland, Australia": {
+   "lat": -20.07,
+   "lon": 146.26,
+   "region": "queensland"
+  },
+  "Chatham, Kent, England": {
+   "lat": 51.38,
+   "lon": 0.53,
+   "region": "england"
+  },
+  "Chatham, Medway, England, United Kingdom": {
+   "lat": 51.38,
+   "lon": 0.53,
+   "region": "england"
+  },
+  "Chatham, Medway, UK": {
+   "lat": 51.38,
+   "lon": 0.53,
+   "region": "england"
+  },
+  "Chelmsford, Essex, England": {
+   "lat": 51.74,
+   "lon": 0.47,
+   "region": "england"
+  },
+  "Christened in Berkeley, Gloucester, England": {
+   "lat": 51.6914,
+   "lon": -2.4585,
+   "region": "england"
+  },
+  "Church Of England, New South Wales, Australia": null,
+  "Clarkenwell, Finsbury, London, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Clerkenwell, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Clermont, Queensland, Australia": {
+   "lat": -22.82,
+   "lon": 147.64,
+   "region": "queensland"
+  },
+  "Clifton, Bedfordshire, England": {
+   "lat": 52.03,
+   "lon": -0.3,
+   "region": "england"
+  },
+  "Clifton, Somerset, England": {
+   "lat": 51.46,
+   "lon": -2.62,
+   "region": "england"
+  },
+  "Codford, Wiltshire, England": {
+   "lat": 51.17,
+   "lon": -2.03,
+   "region": "england"
+  },
+  "Colo River, New South Wales Australia": null,
+  "Colombo, Western Ceylon": null,
+  "Concord, New South Wales, Australia": null,
+  "Constable Burton Hall, Leyburn, Yorkshire": {
+   "lat": 54.33,
+   "lon": -1.8,
+   "region": "england"
+  },
+  "Cooby Creek, Via Toowoomba, Qld, Aust": {
+   "lat": -27.4,
+   "lon": 151.89,
+   "region": "queensland"
+  },
+  "Cork, Cork City, Cork, Ireland": {
+   "lat": 51.9,
+   "lon": -8.47,
+   "region": "ireland"
+  },
+  "Cork, County Cork, Ireland": {
+   "lat": 51.9,
+   "lon": -8.47,
+   "region": "ireland"
+  },
+  "Cork, Ireland": {
+   "lat": 51.9,
+   "lon": -8.47,
+   "region": "ireland"
+  },
+  "Cornacrieve Cornacreeve, Co. Monaghan, Ireland": null,
+  "Corris, Merionethshire, Wales": {
+   "lat": 52.65,
+   "lon": -3.84,
+   "region": "england"
+  },
+  "County Cork, Ireland": {
+   "lat": 51.9,
+   "lon": -8.47,
+   "region": "ireland"
+  },
+  "Coxwold, Yorkshire": {
+   "lat": 54.19,
+   "lon": -1.18,
+   "region": "england"
+  },
+  "Dalkeith Palace, Dalkeith, Mid-Lothian, Scotland": {
+   "lat": 55.89,
+   "lon": -3.07,
+   "region": "scotland"
+  },
+  "Darcy Meynill, Yorkshire, Cattaraugus County, New York, United States": null,
+  "Darling Downs": {
+   "lat": -27.5,
+   "lon": 151.5,
+   "region": "queensland"
+  },
+  "Davenham, Chester, Eng.": {
+   "lat": 53.24,
+   "lon": -2.51,
+   "region": "england"
+  },
+  "Deinschwang, near Amberg, Upper Palatinate": null,
+  "Denton, England, United Kingdom": {
+   "region": "england"
+  },
+  "Denton, Oxford, England": {
+   "lat": 51.73,
+   "lon": -1.15,
+   "region": "england"
+  },
+  "Denton, Oxford, Oxfordshire, England, United Kingdom": {
+   "lat": 51.73,
+   "lon": -1.15,
+   "region": "england"
+  },
+  "Devonshire, England": {
+   "lat": 50.75,
+   "lon": -3.75,
+   "region": "england"
+  },
+  "Dinas, Wales": {
+   "region": "england"
+  },
+  "Doonogan, Mullagh, County Clare, Ireland": {
+   "lat": 52.82,
+   "lon": -9.1,
+   "region": "ireland"
+  },
+  "Douglas, Lanarkshire, Scotland": {
+   "lat": 55.55,
+   "lon": -3.85,
+   "region": "scotland"
+  },
+  "Drivers Field, Gloucester, England": {
+   "lat": 51.6914,
+   "lon": -2.4585,
+   "region": "england"
+  },
+  "Drogheda, County Louth, Ireland": {
+   "lat": 53.72,
+   "lon": -6.35,
+   "region": "ireland"
+  },
+  "Dublin, Ireland": {
+   "lat": 53.35,
+   "lon": -6.26,
+   "region": "ireland"
+  },
+  "Dudley, Tipton Staffordshire England": {
+   "lat": 52.51,
+   "lon": -2.08,
+   "region": "england"
+  },
+  "Dundee, Scotland": {
+   "lat": 56.46,
+   "lon": -2.97,
+   "region": "scotland"
+  },
+  "Dunfermline Palace, Dunfermline, Fife, Scotland": {
+   "lat": 56.07,
+   "lon": -3.46,
+   "region": "scotland"
+  },
+  "Dunfermline Palace, Fife, Scotland": {
+   "lat": 56.07,
+   "lon": -3.46,
+   "region": "scotland"
+  },
+  "Dürnau/Biberach/BW": null,
+  "East Lockinge, Berkshire": {
+   "lat": 51.59,
+   "lon": -1.43,
+   "region": "england"
+  },
+  "Edensor, Derbyshire, England": {
+   "lat": 53.23,
+   "lon": -1.61,
+   "region": "england"
+  },
+  "Edinburgh Castle, Edinburgh, Midlothian, Scotland": {
+   "lat": 55.95,
+   "lon": -3.19,
+   "region": "scotland"
+  },
+  "Edinburgh, Midlothian, Scotland, United Kingdom": {
+   "lat": 55.95,
+   "lon": -3.19,
+   "region": "scotland"
+  },
+  "Edinburgh, Scotland, United Kingdom": {
+   "lat": 55.95,
+   "lon": -3.19,
+   "region": "scotland"
+  },
+  "Edingen, Baden-Württemberg, Deutschland(HRR)": null,
+  "Edmonton, Middlesex, England": {
+   "lat": 51.62,
+   "lon": -0.07,
+   "region": "england"
+  },
+  "Ehrstaedt, Heidelberg, Baden, Germany": null,
+  "Ehrstaedt, Heidelburg, Baden, Germany": null,
+  "Ehrstaedt, Heidlberg, Baden, Germany": null,
+  "Eltonhead, Lancashire, England": {
+   "lat": 53.45,
+   "lon": -2.69,
+   "region": "england"
+  },
+  "Emmaville District, New South Wales, Australia": null,
+  "Emu Park, Queensland, Australia": {
+   "lat": -23.26,
+   "lon": 150.82,
+   "region": "queensland"
+  },
+  "England": {
+   "region": "england"
+  },
+  "England, Great Britain, United Kingdom": {
+   "region": "england"
+  },
+  "England, United Kingdom": {
+   "region": "england"
+  },
+  "Epsom, Surrey, England": {
+   "lat": 51.33,
+   "lon": -0.27,
+   "region": "england"
+  },
+  "Esslingen, Stuttgart, Baden-Württemberg, Germany": null,
+  "Exeter": null,
+  "Falkland Palace, Fife, Scotland": {
+   "lat": 56.25,
+   "lon": -3.21,
+   "region": "scotland"
+  },
+  "Falmer, The City of Brighton and Hove, England, United Kingdom": {
+   "lat": 50.83,
+   "lon": -0.14,
+   "region": "england"
+  },
+  "Farnham, Surrey, England": {
+   "lat": 51.21,
+   "lon": -0.8,
+   "region": "england"
+  },
+  "Forchia, Benevento, Campania, Italy": {
+   "lat": 41.0302,
+   "lon": 14.5373,
+   "region": "campania"
+  },
+  "Forchia, Italy": {
+   "lat": 41.0302,
+   "lon": 14.5373,
+   "region": "campania"
+  },
+  "Forde Hall, Warwickshire, England": {
+   "lat": 52.28,
+   "lon": -1.56,
+   "region": "england"
+  },
+  "Frampton, Gloucestershire, England": {
+   "lat": 51.77,
+   "lon": -2.37,
+   "region": "england"
+  },
+  "Frankfurt am Main, Frankfurt am Main, Hessen, Deutschland": {
+   "lat": 50.11,
+   "lon": 8.68,
+   "region": "frankfurt"
+  },
+  "Frere Hall, Warwickshire, England": {
+   "lat": 52.28,
+   "lon": -1.56,
+   "region": "england"
+  },
+  "Friederichsburg, Mannhiem, Baden, Germany": null,
+  "Friedrichsburg, Mannheim, Baden": null,
+  "Frome, Somerset, England": {
+   "lat": 51.23,
+   "lon": -2.32,
+   "region": "england"
+  },
+  "Gayndah, North Burnett Regional, Queensland, Australia": {
+   "lat": -25.62,
+   "lon": 151.61,
+   "region": "queensland"
+  },
+  "Geisenhain, Thüringen, Germany": null,
+  "Geisenheim, Germany": null,
+  "Georgia": null,
+  "Germany": null,
+  "Gilling, Sedbury Park, Yorkshire, England": {
+   "lat": 54.43,
+   "lon": -1.7,
+   "region": "england"
+  },
+  "Gloucestershire, England": {
+   "lat": 51.8333,
+   "lon": -2.1667,
+   "region": "england"
+  },
+  "Goulburn, New South Wales, Australia": null,
+  "Graham Street, South Brisbane, Queensland, Australia": {
+   "lat": -27.48,
+   "lon": 153.02,
+   "region": "queensland"
+  },
+  "Gravenhage, Zuid Holland, Nederlande": {
+   "lat": 52.08,
+   "lon": 4.31,
+   "region": "netherlands"
+  },
+  "Gravesend, England, United Kingdom": {
+   "lat": 51.44,
+   "lon": 0.37,
+   "region": "england"
+  },
+  "Great Marlow, Buckinghamshire, England": {
+   "lat": 51.57,
+   "lon": -0.78,
+   "region": "england"
+  },
+  "Greenwich Palace, Greenwich, Kent, England": {
+   "lat": 51.48,
+   "lon": 0.0,
+   "region": "england"
+  },
+  "Greenwich Palace, Richmond, Surrey, England": {
+   "lat": 51.48,
+   "lon": 0.0,
+   "region": "england"
+  },
+  "Guildford, Surrey, England": {
+   "lat": 51.24,
+   "lon": -0.57,
+   "region": "england"
+  },
+  "Gympie, Queensland": {
+   "lat": -26.19,
+   "lon": 152.67,
+   "region": "queensland"
+  },
+  "Gympie, Queensland, Australia": {
+   "lat": -26.19,
+   "lon": 152.67,
+   "region": "queensland"
+  },
+  "Haarlemmermeer, Nederlande": {
+   "lat": 52.3,
+   "lon": 4.68,
+   "region": "netherlands"
+  },
+  "Hampstead, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Hampton Court Palace, Richmond, Greater London, United Kingdom": {
+   "lat": 51.4,
+   "lon": -0.34,
+   "region": "england"
+  },
+  "Hanley, Stoke-on-Trent, England, United Kingdom": {
+   "lat": 53.03,
+   "lon": -2.18,
+   "region": "england"
+  },
+  "Hanley, Stoke-on-Trent, Staffordshire, England": {
+   "lat": 53.03,
+   "lon": -2.18,
+   "region": "england"
+  },
+  "Harris Park, New South Wales, Australia": null,
+  "Hartland, Devon, England, United Kingdom": {
+   "lat": 51.0,
+   "lon": -4.48,
+   "region": "england"
+  },
+  "Headington, Oxfordshire, England": {
+   "lat": 51.76,
+   "lon": -1.21,
+   "region": "england"
+  },
+  "Heidelberg, BAden, Germany": null,
+  "Heidelberg, Baden, Deutschland(HRR)": null,
+  "Heidelberg, Baden, Germany": null,
+  "Heidelberg, Banyule City, Victoria, Australia": null,
+  "Heidelberg, Bayern, Deutschland(HRR)": null,
+  "Heidelberg, Heidelberg, Baden, Germany": null,
+  "Heidelberg, Karlsruhe, Baden-Wurttemberg, Germany": null,
+  "Heidelberg, Karlsruhe, Baden-Württemberg, Germany": null,
+  "Heidelberg, Pfalz, Deutschland((HRR)": null,
+  "Heidelberg, Pfalz, Deutschland(HRR)": null,
+  "Herford, Hessen, Deutschland(HRR)": null,
+  "Herrenhausen, Hannover, Braunschweig-Lüneburg, Deutschland(HRR)": null,
+  "Hertford, St. Mayfair, London, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Hertfordshire, England": {
+   "lat": 51.8,
+   "lon": -0.2,
+   "region": "england"
+  },
+  "Hertogenbosch, The Netherlands": {
+   "lat": 51.69,
+   "lon": 5.3,
+   "region": "netherlands"
+  },
+  "Hillingdon House, Middlesex, London, England": {
+   "lat": 51.54,
+   "lon": -0.45,
+   "region": "england"
+  },
+  "Hillingdon, Middlesex, England, Kingdom of Great Britain": {
+   "lat": 51.54,
+   "lon": -0.45,
+   "region": "england"
+  },
+  "Himley Hall, Himley Staffs": {
+   "lat": 52.5,
+   "lon": -2.17,
+   "region": "england"
+  },
+  "Himley, Worcestershire": {
+   "lat": 52.5,
+   "lon": -2.17,
+   "region": "england"
+  },
+  "Holy Trinity, Kingswinford, Stafford, England": {
+   "lat": 52.49,
+   "lon": -2.15,
+   "region": "england"
+  },
+  "Hornby": null,
+  "Hornby Castle, North Riding, Yorkshire, England": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby Castle, Yorkshire, England": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby Castle, nr Bedale, Yorkshire": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby Castle, nr Bedale, Yorkshire, England": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby, North Riding, Yorkshire": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby, North Riding, Yorkshire, England": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby, West Riding, Yorkshire, England": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby, Yorkshire": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornby, Yorkshire, England": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Hornsby Castle, England": {
+   "region": "england"
+  },
+  "Hotten": null,
+  "Hull, East Riding of Yorkshire, England, United Kingdom": {
+   "lat": 53.74,
+   "lon": -0.33,
+   "region": "england"
+  },
+  "Ipswich, Ipswich City, Queensland, Australia": {
+   "lat": -27.61,
+   "lon": 152.76,
+   "region": "queensland"
+  },
+  "Ipswich, Queensland, Australia": {
+   "lat": -27.61,
+   "lon": 152.76,
+   "region": "queensland"
+  },
+  "Iran": null,
+  "Ireland": {
+   "region": "ireland"
+  },
+  "Italia": null,
+  "Italy": null,
+  "Jaffna, Northern Ceylon": null,
+  "Kadawatha, Gampaha, Western Province, Ceylon": null,
+  "Keele, Staffordshire": {
+   "lat": 53.0038,
+   "lon": -2.2877,
+   "region": "england"
+  },
+  "Keele, Staffordshire, England": {
+   "lat": 53.0038,
+   "lon": -2.2877,
+   "region": "england"
+  },
+  "Keele, Staffordshire, England, United Kingdom": {
+   "lat": 53.0038,
+   "lon": -2.2877,
+   "region": "england"
+  },
+  "Keele, Staffordshire-Inglaterra": {
+   "lat": 53.0038,
+   "lon": -2.2877,
+   "region": "england"
+  },
+  "Kelvin Grove, Queensland, Australia": {
+   "lat": -27.45,
+   "lon": 153.01,
+   "region": "queensland"
+  },
+  "Kempsey, Kempsey Shire Council, New South Wales, Australia": null,
+  "Kempsey, New South Wales, Australia": null,
+  "Kennington, Surrey, England": {
+   "lat": 51.49,
+   "lon": -0.11,
+   "region": "england"
+  },
+  "Kensington House, London, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Kieff, Russia": null,
+  "Kirkby Mallory, Leicestershire, England": {
+   "lat": 52.62,
+   "lon": -1.35,
+   "region": "england"
+  },
+  "Kneveton Manor, Nottinghamshire, England": {
+   "lat": 53.02,
+   "lon": -0.95,
+   "region": "england"
+  },
+  "Köln": null,
+  "Langdon Hall, Warwick, England": {
+   "lat": 52.28,
+   "lon": -1.56,
+   "region": "england"
+  },
+  "Langdon Hall, Warwickshire, England": {
+   "lat": 52.28,
+   "lon": -1.56,
+   "region": "england"
+  },
+  "Leemington, England, United Kingdom": {
+   "region": "england"
+  },
+  "Leicester House, St. Martin's-in-the-Fields, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Limerick City, Ireland": {
+   "lat": 52.6613,
+   "lon": -8.6301,
+   "region": "ireland"
+  },
+  "Limerick, County Limerick, Ireland": {
+   "lat": 52.6613,
+   "lon": -8.6301,
+   "region": "ireland"
+  },
+  "Limerick, Ireland": {
+   "lat": 52.6613,
+   "lon": -8.6301,
+   "region": "ireland"
+  },
+  "Limerick, Limerick, Ireland": {
+   "lat": 52.6613,
+   "lon": -8.6301,
+   "region": "ireland"
+  },
+  "Lincolnshire, England": {
+   "lat": 53.2,
+   "lon": -0.2,
+   "region": "england"
+  },
+  "Linlithgow Palace, Lothian, Scotland": {
+   "lat": 55.98,
+   "lon": -3.6,
+   "region": "scotland"
+  },
+  "Little Busby, Stokesley, Yorkshire": {
+   "lat": 54.45,
+   "lon": -1.23,
+   "region": "england"
+  },
+  "Logan Village, Queensland, Australia": {
+   "lat": -27.77,
+   "lon": 153.11,
+   "region": "queensland"
+  },
+  "London": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "London, England, United Kingdom": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "London, Greater London, England, United Kingdom": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "London, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "London, Middlesex, England, Kingdom of Great Britain": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "London, Middlesex, England, United Kingdom": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Long Ashton, Som., Eng.": {
+   "lat": 51.4302,
+   "lon": -2.6618,
+   "region": "england"
+  },
+  "Long Ashton, Somerset": {
+   "lat": 51.4302,
+   "lon": -2.6618,
+   "region": "england"
+  },
+  "Long Ashton, Somerset, Eng": {
+   "lat": 51.4302,
+   "lon": -2.6618,
+   "region": "england"
+  },
+  "Long Ashton, Somerset, England": {
+   "lat": 51.4302,
+   "lon": -2.6618,
+   "region": "england"
+  },
+  "Lyme Regis, Dorset": {
+   "lat": 50.73,
+   "lon": -2.96,
+   "region": "england"
+  },
+  "Lymington, Hampshire": {
+   "lat": 50.76,
+   "lon": -1.54,
+   "region": "england"
+  },
+  "Lymington, Hampshire, England": {
+   "lat": 50.76,
+   "lon": -1.54,
+   "region": "england"
+  },
+  "Lymington, Hampshire, UK": {
+   "lat": 50.76,
+   "lon": -1.54,
+   "region": "england"
+  },
+  "Lymington, UK": {
+   "lat": 50.76,
+   "lon": -1.54,
+   "region": "england"
+  },
+  "MARKET BOSWORTH, LEICESTER, ENGLAND": {
+   "lat": 52.62,
+   "lon": -1.4,
+   "region": "england"
+  },
+  "Mackay, Queensland, Australia": {
+   "lat": -21.14,
+   "lon": 149.19,
+   "region": "queensland"
+  },
+  "Madeira, Portugal": null,
+  "Madeley, Shropshire, England": {
+   "lat": 52.64,
+   "lon": -2.45,
+   "region": "england"
+  },
+  "Madeley, Stafford, England": {
+   "lat": 52.98,
+   "lon": -2.35,
+   "region": "england"
+  },
+  "Madeley, Staffordshire, England": {
+   "lat": 52.98,
+   "lon": -2.35,
+   "region": "england"
+  },
+  "Madeley, Staffordshire, England, United Kingdom": {
+   "lat": 52.98,
+   "lon": -2.35,
+   "region": "england"
+  },
+  "Mainz, Rheinhessen, Hessen Lande, Germany": {
+   "lat": 50.0,
+   "lon": 8.27,
+   "region": "rhenish-hesse"
+  },
+  "Maket Drayton, Shropshire, England": {
+   "lat": 52.62,
+   "lon": -1.4,
+   "region": "england"
+  },
+  "Maldon, Essex, England": {
+   "lat": 51.73,
+   "lon": 0.68,
+   "region": "england"
+  },
+  "Maloney Street, Toowoomba, Queensland, Australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Mansfield, Nottinghamshire, England": {
+   "lat": 53.14,
+   "lon": -1.2,
+   "region": "england"
+  },
+  "Market Bosworth, Leicester, England": {
+   "lat": 52.62,
+   "lon": -1.4,
+   "region": "england"
+  },
+  "Market Bosworth, Leicestershire, England": {
+   "lat": 52.62,
+   "lon": -1.4,
+   "region": "england"
+  },
+  "Market Bosworth, Leicestershire, England, UK.": {
+   "lat": 52.62,
+   "lon": -1.4,
+   "region": "england"
+  },
+  "Maryborough, Queensland": {
+   "lat": -25.54,
+   "lon": 152.7,
+   "region": "queensland"
+  },
+  "Maryborough, Queensland, Australia": {
+   "lat": -25.54,
+   "lon": 152.7,
+   "region": "queensland"
+  },
+  "Marylebone, London, England, United Kingdom": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Marylebone, London, Greater London, England, United Kingdom": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Marylebone, London, Middlesex": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Middlesex, England": {
+   "lat": 51.55,
+   "lon": -0.4,
+   "region": "england"
+  },
+  "Milford on Sea, Hampshire, England, United Kingdom": {
+   "lat": 50.73,
+   "lon": -1.58,
+   "region": "england"
+  },
+  "Milford, Lymington, Hampshire, England": {
+   "lat": 50.73,
+   "lon": -1.58,
+   "region": "england"
+  },
+  "Minmi, Newcastle City Council, New South Wales, Australia": null,
+  "Montagu Square, Paddington, Greater London, UK": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Morrissey Street, Woolloongabba, Queensland, Australia": {
+   "lat": -27.49,
+   "lon": 153.04,
+   "region": "queensland"
+  },
+  "Moulsham Hall, Essex, England": {
+   "lat": 51.74,
+   "lon": 0.47,
+   "region": "england"
+  },
+  "Mount Morgan Queensland": {
+   "lat": -23.65,
+   "lon": 150.38,
+   "region": "queensland"
+  },
+  "Mumbai, Maharashtra, India": null,
+  "Murwillumbah": null,
+  "Muttaburra, Queensland": {
+   "lat": -22.58,
+   "lon": 144.55,
+   "region": "queensland"
+  },
+  "Muttaburra??": null,
+  "Nambour, Sunshine Coast Regional, Queensland, Australia": {
+   "lat": -26.63,
+   "lon": 152.96,
+   "region": "queensland"
+  },
+  "Negroponte, Greece": null,
+  "Nether Skyers, Darfield, Yorkshire": {
+   "lat": 53.52,
+   "lon": -1.38,
+   "region": "england"
+  },
+  "Neuhaus near Neckar, Wuertt": null,
+  "Neuhaus near Schorndorf, Neckar, Wuertt.": null,
+  "Neuhaus, Jagst, Wuertt": null,
+  "Neuhaus, Neckar, Wuertt": null,
+  "Neuhrus near Schorndorf, Neckar, Wuertt.": null,
+  "New Park, Yorkshire": {
+   "lat": 54.0,
+   "lon": -1.3,
+   "region": "england"
+  },
+  "New South Wales": null,
+  "New South Wales, Australia": null,
+  "Newborough, Yorkshire, England": {
+   "lat": 54.0,
+   "lon": -1.3,
+   "region": "england"
+  },
+  "Newcastle-under-Lyme, Staffordshire, England": {
+   "lat": 53.01,
+   "lon": -2.23,
+   "region": "england"
+  },
+  "Newtown, Fairfield, Connecticut, America": null,
+  "No 3, Well St, Hanley, Staffordshire, England": {
+   "lat": 53.03,
+   "lon": -2.18,
+   "region": "england"
+  },
+  "North Yorkshire, England, United Kingdom": {
+   "lat": 54.15,
+   "lon": -1.4,
+   "region": "england"
+  },
+  "Norwich, England, United Kingdom": {
+   "lat": 52.63,
+   "lon": 1.3,
+   "region": "england"
+  },
+  "Nun Appleton, Yorkshire, England": {
+   "lat": 53.87,
+   "lon": -1.17,
+   "region": "england"
+  },
+  "Oberwesel, Germany": null,
+  "Of Friedrichsburg, Mnnhm, Bdn": null,
+  "Of, Berlin, Germany": null,
+  "Of, Friedrichsburg, Mannheim, Baden": null,
+  "Of, Hornby Castle, Yorkshire, England": {
+   "lat": 54.3385,
+   "lon": -1.6542,
+   "region": "england"
+  },
+  "Old Bishop's Palace in Oslo, Oslo, Oslo, Oslo, Norway": {
+   "lat": 59.91,
+   "lon": 10.75,
+   "region": "norway"
+  },
+  "Old Holy Trinity Church, Wentworth, Yorkshire": {
+   "lat": 53.47,
+   "lon": -1.42,
+   "region": "england"
+  },
+  "Ormesby, Lincolnshire, England": {
+   "lat": 53.2,
+   "lon": -0.2,
+   "region": "england"
+  },
+  "Ossington, Nottinghamshire, England": {
+   "lat": 53.17,
+   "lon": -0.89,
+   "region": "england"
+  },
+  "Oswestry, Shropshire, England, United Kingdom": {
+   "lat": 52.86,
+   "lon": -3.05,
+   "region": "england"
+  },
+  "Palace of Whitehall, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Parish of Elmore": null,
+  "Parramatta, New South Wales, Australia": null,
+  "Pennal, Merionethshire, Wales": {
+   "lat": 52.6,
+   "lon": -3.91,
+   "region": "england"
+  },
+  "Penrith, Cumberland, England": {
+   "lat": 54.66,
+   "lon": -2.75,
+   "region": "england"
+  },
+  "Penzance, UK": {
+   "lat": 50.12,
+   "lon": -5.54,
+   "region": "england"
+  },
+  "Perth W.A. Reg. 3494": null,
+  "Perth W.A. Reg. 4350 69yrs": null,
+  "Perth, Western Australia, Australia": null,
+  "Point de Galle, Southern Ceylon": null,
+  "Porlock, Minehead, Somerset, England": {
+   "lat": 51.22,
+   "lon": -3.6,
+   "region": "england"
+  },
+  "Porlock, Somerset, England": {
+   "lat": 51.22,
+   "lon": -3.6,
+   "region": "england"
+  },
+  "Port Moresby, National Capital District, Papua New Guinea": null,
+  "Portlock, Somerset, England": {
+   "lat": 51.22,
+   "lon": -3.6,
+   "region": "england"
+  },
+  "Portsea, Southampton, England": {
+   "lat": 50.8,
+   "lon": -1.09,
+   "region": "england"
+  },
+  "Portsmouth, Hampshire": {
+   "lat": 50.8,
+   "lon": -1.09,
+   "region": "england"
+  },
+  "Portsmouth, Hampshire, England": {
+   "lat": 50.8,
+   "lon": -1.09,
+   "region": "england"
+  },
+  "Portsmouth, Southampton, United Kingdom": {
+   "lat": 50.8,
+   "lon": -1.09,
+   "region": "england"
+  },
+  "Praha, Böhmen, Deutschland(HRR)": {
+   "lat": 50.09,
+   "lon": 14.42,
+   "region": "bohemia"
+  },
+  "Priestlands, Milford, Lymington, Hampshire, England": {
+   "lat": 50.73,
+   "lon": -1.58,
+   "region": "england"
+  },
+  "Probably Homildon, Northumberland, England": null,
+  "Putney, Surrey, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Qld, Aust.": {
+   "region": "queensland"
+  },
+  "Qld, Australia": {
+   "region": "queensland"
+  },
+  "Queenland, Australia": {
+   "region": "queensland"
+  },
+  "Queensland": {
+   "region": "queensland"
+  },
+  "Queensland Australia": {
+   "region": "queensland"
+  },
+  "Queensland, Australia": {
+   "region": "queensland"
+  },
+  "Queensland, Australia.": {
+   "region": "queensland"
+  },
+  "Queensland, Australië": {
+   "region": "queensland"
+  },
+  "Queensland, australia": {
+   "region": "queensland"
+  },
+  "Rathdown, Ireland": {
+   "lat": 53.2,
+   "lon": -6.15,
+   "region": "ireland"
+  },
+  "Richmond, New South Wales, Australia": null,
+  "Rockhampton City, Rockhampton Regional, Queensland, Australia": {
+   "lat": -23.38,
+   "lon": 150.51,
+   "region": "queensland"
+  },
+  "Rockhampton, AU": {
+   "lat": -23.38,
+   "lon": 150.51,
+   "region": "queensland"
+  },
+  "Rockhampton, Qld": {
+   "lat": -23.38,
+   "lon": 150.51,
+   "region": "queensland"
+  },
+  "Rockhampton, Queensland": {
+   "lat": -23.38,
+   "lon": 150.51,
+   "region": "queensland"
+  },
+  "Rockhampton, Queensland, Australia": {
+   "lat": -23.38,
+   "lon": 150.51,
+   "region": "queensland"
+  },
+  "Royal Chapel, Palace of Whitehall": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Rush, Indiana, United States": null,
+  "Rushton, Spencer, Staffordshire, England": {
+   "lat": 53.14,
+   "lon": -2.05,
+   "region": "england"
+  },
+  "SOLIHULL West Midlands England": {
+   "lat": 52.41,
+   "lon": -1.78,
+   "region": "england"
+  },
+  "ST. MARY'S, Limerick, Ireland": {
+   "lat": 52.6613,
+   "lon": -8.6301,
+   "region": "ireland"
+  },
+  "Saffron Walden": {
+   "lat": 52.02,
+   "lon": 0.24,
+   "region": "england"
+  },
+  "Saint Dunstan, Stepney, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "San Felice, Caserta, Campania, Italia": {
+   "lat": 41.0124,
+   "lon": 14.483,
+   "region": "campania"
+  },
+  "Sandgate, Queensland, Australia": {
+   "lat": -27.32,
+   "lon": 153.07,
+   "region": "queensland"
+  },
+  "Sandy Creek, Mackay, Queensland, Australia": {
+   "lat": -21.14,
+   "lon": 149.19,
+   "region": "queensland"
+  },
+  "Santa Maria A Vico, Nola, Terra Di Lavoro": {
+   "lat": 41.0269,
+   "lon": 14.4652,
+   "region": "campania"
+  },
+  "Santa Maria a Vico, Caserta, Campania, Italia": {
+   "lat": 41.0269,
+   "lon": 14.4652,
+   "region": "campania"
+  },
+  "Sarina, Queensland, Australia": {
+   "lat": -21.43,
+   "lon": 149.22,
+   "region": "queensland"
+  },
+  "Schloss Friedrichsburg, Mannheim, Germ": null,
+  "Schloss Friedrichsburg, Mannheim, Pfalz, Deutschland(HRR)": null,
+  "Schloss Herrenhausen, Hannover, Braunschweig-Luneburg, Deutschland": null,
+  "Schomberg and, Leinster Province, Ireland": null,
+  "Schwetzingen, Rhein-Neckar-Kreis, Baden-Württemberg, Deutschland": null,
+  "Scotland": {
+   "region": "scotland"
+  },
+  "Sedbury, Yorkshire, England": {
+   "lat": 54.43,
+   "lon": -1.7,
+   "region": "england"
+  },
+  "Shrewsbury, England": {
+   "lat": 52.71,
+   "lon": -2.75,
+   "region": "england"
+  },
+  "Sinnamon Village Nursing Home, Brisbane, Queensland, Australia": {
+   "lat": -27.55,
+   "lon": 152.94,
+   "region": "queensland"
+  },
+  "Skanderborg Castle, Kingdom of Denmark": {
+   "lat": 56.04,
+   "lon": 9.93,
+   "region": "denmark"
+  },
+  "Skelton, Yorkshire, England": {
+   "lat": 54.0,
+   "lon": -1.3,
+   "region": "england"
+  },
+  "Solihul, Warwickshire, England": {
+   "lat": 52.41,
+   "lon": -1.78,
+   "region": "england"
+  },
+  "Solihull, Warwickshire, England": {
+   "lat": 52.41,
+   "lon": -1.78,
+   "region": "england"
+  },
+  "Somerset, England": {
+   "lat": 51.1,
+   "lon": -2.9,
+   "region": "england"
+  },
+  "Somerton, Somerset": {
+   "lat": 51.05,
+   "lon": -2.73,
+   "region": "england"
+  },
+  "Somerton, Somerset, England": {
+   "lat": 51.05,
+   "lon": -2.73,
+   "region": "england"
+  },
+  "South Brisbane, Brisbane City, Queensland, Australia": {
+   "lat": -27.48,
+   "lon": 153.02,
+   "region": "queensland"
+  },
+  "South Leith, Midlothian, Scotland": {
+   "lat": 55.98,
+   "lon": -3.17,
+   "region": "scotland"
+  },
+  "South Strabane, Washington, Pennsylvania, United States": null,
+  "Spring Gardens, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Spring Hill, Brisbane, Queensland, Australia": {
+   "lat": -27.46,
+   "lon": 153.02,
+   "region": "queensland"
+  },
+  "St Andrew's Church, Clifton, Gloucestershire": {
+   "lat": 51.45,
+   "lon": -2.59,
+   "region": "england"
+  },
+  "St James, Clerkenwell, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "St John's Church, Parramatta, New South Wales, Australia": null,
+  "St Paul, Bristol, Gloucestershire, England": {
+   "lat": 51.45,
+   "lon": -2.59,
+   "region": "england"
+  },
+  "St Philips Church of England, Thompson Estate (now Annerley)": {
+   "lat": -27.51,
+   "lon": 153.03,
+   "region": "queensland"
+  },
+  "St Phillips Church, Church Hill, Sydney Town, New South Wales, Australia": null,
+  "St Quivox, Ayrshire, Scotland, United Kingdom": {
+   "lat": 55.48,
+   "lon": -4.58,
+   "region": "scotland"
+  },
+  "St. Georges, Hanover Square, London, England, United Kingdom": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "St. James Palace, London, Middlesex, Englan": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "St. James Palace, London, Middlesex, England, Kingdom of England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "St. James Palace, Westminster, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "St. James, Westminster Saint James the Less, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "St. Mary, Limerick, County Limerick, Ireland": {
+   "lat": 52.6613,
+   "lon": -8.6301,
+   "region": "ireland"
+  },
+  "St. Olave, Old Jewry, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "St. Olaves, Yorkshire, England": {
+   "lat": 53.96,
+   "lon": -1.09,
+   "region": "england"
+  },
+  "St. Pauls Hammersmith, Middlesex, england": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Staffordshire, England": {
+   "lat": 52.8247,
+   "lon": -2.0075,
+   "region": "england"
+  },
+  "Staffordshire, England, United Kingdom": {
+   "lat": 52.8247,
+   "lon": -2.0075,
+   "region": "england"
+  },
+  "Stanwell Park, Middlesex, England": {
+   "lat": 51.45,
+   "lon": -0.47,
+   "region": "england"
+  },
+  "Stepney, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Steyning, East Sussex, England, United Kingdom": {
+   "lat": 50.89,
+   "lon": -0.33,
+   "region": "england"
+  },
+  "Stirling Castle, Stirling, Stirlingshire, Scotland": {
+   "lat": 56.12,
+   "lon": -3.94,
+   "region": "scotland"
+  },
+  "Stirling, Scotland": {
+   "lat": 56.12,
+   "lon": -3.94,
+   "region": "scotland"
+  },
+  "Stirling, Stirlingshire, Scotland": {
+   "lat": 56.12,
+   "lon": -3.94,
+   "region": "scotland"
+  },
+  "Stoke Damerel, Devon, England": {
+   "lat": 50.38,
+   "lon": -4.17,
+   "region": "england"
+  },
+  "Stone, Gloucester, England": {
+   "lat": 51.66,
+   "lon": -2.43,
+   "region": "england"
+  },
+  "Stoughton, Leicestershire, England": {
+   "lat": 52.62,
+   "lon": -1.04,
+   "region": "england"
+  },
+  "Strand, Limerick, Ireland": {
+   "lat": 52.6613,
+   "lon": -8.6301,
+   "region": "ireland"
+  },
+  "Strassburg, Kärnten, Austria.": null,
+  "Strathaven": {
+   "lat": 55.68,
+   "lon": -4.07,
+   "region": "scotland"
+  },
+  "Stratton, Cornwall, England": {
+   "lat": 50.83,
+   "lon": -4.52,
+   "region": "england"
+  },
+  "Stroud, Gloucestershire": {
+   "lat": 51.74,
+   "lon": -2.22,
+   "region": "england"
+  },
+  "Stroughton Grange, Leicestershire, England": {
+   "lat": 52.62,
+   "lon": -1.04,
+   "region": "england"
+  },
+  "Surlingham, England, United Kingdom": {
+   "lat": 52.5749,
+   "lon": 1.3984,
+   "region": "england"
+  },
+  "Sydenham, England, United Kingdom": {
+   "region": "england"
+  },
+  "Sydney, New South Wales, Australia": null,
+  "Syon Hill, London, Middlesex, England, Kingdom of Great Britain": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Teddington, Middlesex, England": {
+   "lat": 51.42,
+   "lon": -0.33,
+   "region": "england"
+  },
+  "The Hague, South Holland, The Netherlands": {
+   "lat": 52.08,
+   "lon": 4.31,
+   "region": "netherlands"
+  },
+  "The Thomas farm, in Cory (Curry Mallet), Somersetshire, England": {
+   "lat": 50.99,
+   "lon": -2.94,
+   "region": "england"
+  },
+  "Theobalds Palace, Chestnut, Hertfordshire, England": {
+   "lat": 51.7,
+   "lon": -0.05,
+   "region": "england"
+  },
+  "Thomas, Cory, Somerset, England": {
+   "lat": 50.99,
+   "lon": -2.94,
+   "region": "england"
+  },
+  "Tin Can Bay, Gympie Regional, Queensland, Australia": {
+   "lat": -26.19,
+   "lon": 152.67,
+   "region": "queensland"
+  },
+  "Toddington, Gloucestershire, England": {
+   "lat": 51.97,
+   "lon": -1.93,
+   "region": "england"
+  },
+  "Toowoomba": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba Q'ld  Australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba Q'ld Australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba Queensland Australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba, Queensland": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba, Queensland Australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba, Queensland, Australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba, Toowoomba Region, Queensland, Australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Toowoomba, australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "Torquay, Torbay, England": {
+   "lat": 50.46,
+   "lon": -3.53,
+   "region": "england"
+  },
+  "Trinity Church, Fortitude Valley, Queensland, Australia": {
+   "lat": -27.46,
+   "lon": 153.04,
+   "region": "queensland"
+  },
+  "Turin, Italy": null,
+  "Tyrone, Tyrone, Ireland": null,
+  "USA": null,
+  "Upper Brook Street, London, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Walden, Essex, England": {
+   "lat": 52.02,
+   "lon": 0.24,
+   "region": "england"
+  },
+  "Washington, Maryland, United States": null,
+  "Waterloo Lane, Bristol, Gloucester, England": {
+   "lat": 51.45,
+   "lon": -2.59,
+   "region": "england"
+  },
+  "West Farleigh, Kent, England": {
+   "lat": 51.25,
+   "lon": 0.44,
+   "region": "england"
+  },
+  "West Farleigh, Kent, UK": {
+   "lat": 51.25,
+   "lon": 0.44,
+   "region": "england"
+  },
+  "West Ham, UK": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "West Leigh, Devonshire": {
+   "lat": 50.75,
+   "lon": -3.75,
+   "region": "england"
+  },
+  "Westminster St James, Middlesex, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Westminster St James, Middlesex, England, Kingdom of Great Britain": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Westminster, London": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Westminster, London, England": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Westminster, Middlesex": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Westwood, Queensland, Australia": {
+   "lat": -23.55,
+   "lon": 150.17,
+   "region": "queensland"
+  },
+  "Wherwell, Hampshire, UK": {
+   "lat": 51.19,
+   "lon": -1.45,
+   "region": "england"
+  },
+  "Windsor, Brisbane": {
+   "lat": -27.43,
+   "lon": 153.03,
+   "region": "queensland"
+  },
+  "Winkbourne Nottinghamshire": {
+   "lat": 53.08,
+   "lon": -0.93,
+   "region": "england"
+  },
+  "Winton, Queensland, Australia": {
+   "lat": -22.39,
+   "lon": 143.03,
+   "region": "queensland"
+  },
+  "Wolfenbüttel, Braunschweig-Lüneburg, Deutschland(HRR)": null,
+  "Wolstanton, Staffordshire, England": {
+   "lat": 53.04,
+   "lon": -2.2,
+   "region": "england"
+  },
+  "Woodbrook, Queens County, Ireland": {
+   "lat": 52.93,
+   "lon": -7.3,
+   "region": "ireland"
+  },
+  "Woolloomooloo, New South Wales, Australia": null,
+  "Wotton-under-Edge, Gloucestershire, England": {
+   "lat": 51.64,
+   "lon": -2.35,
+   "region": "england"
+  },
+  "Yeovil, Somerset, England": {
+   "lat": 50.94,
+   "lon": -2.63,
+   "region": "england"
+  },
+  "Yorks Co., Eng.": {
+   "lat": 54.0,
+   "lon": -1.3,
+   "region": "england"
+  },
+  "Yorkshire, England": {
+   "lat": 54.0,
+   "lon": -1.3,
+   "region": "england"
+  },
+  "dunnau, wurtemburg": null,
+  "of Aller, Som., Eng.": {
+   "lat": 51.04,
+   "lon": -2.82,
+   "region": "england"
+  },
+  "of Bedworth and Stoughton, Leicestershire, England": {
+   "lat": 52.48,
+   "lon": -1.47,
+   "region": "england"
+  },
+  "of England": {
+   "region": "england"
+  },
+  "of St Quivox, Ayr, Sctl": {
+   "lat": 55.48,
+   "lon": -4.58,
+   "region": "scotland"
+  },
+  "of St Quivox, Ayrshire, Scotland": {
+   "lat": 55.48,
+   "lon": -4.58,
+   "region": "scotland"
+  },
+  "toowoomba, qld, australia": {
+   "lat": -27.561,
+   "lon": 151.9534,
+   "region": "queensland"
+  },
+  "unknown — Portsmouth or the West Indies": null,
+  "“In the field, France” — and a sergeant of the 10th Battalion reported Mouquet Farm": null
+ }
+}
