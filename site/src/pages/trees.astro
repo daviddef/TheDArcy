@@ -6,9 +6,28 @@ import Base from "../layouts/Base.astro";
 import Trees from "@daviddef/archive-kit/components/Trees.astro";
 import { u } from "../lib/url.js";
 import t from "../data/trees.json";
+import families from "../data/families.json";
+import prov from "../data/provenance.json";
+import { people, duplicateOf } from "../lib/people.js";
+import { clusterMembers } from "../lib/familyLines.js";
 
-const rows = t.rows.map(r => ({ ...r, href: r.href ? u(r.href) : null }));
-const doors = (t.doors || []).map(([h, n, b]) => [u(h), n, b]);
+/* THE FIGURES ARE COUNTED, NOT TYPED. trees.json said "473 people", "67 published" and "112 published"
+   for a year after the archive held 844, 81 and 108 (lines audit, 18 October 2026): hand-typed numbers
+   drift. A {{token}} in the data is filled in here from the data it names, and an unknown token stops
+   the build instead of printing. */
+const facts = { people: people.length };
+for (const f of families) {
+  facts[`${f.surname}.total`] = f.total;
+  facts[`${f.surname}.published`] = clusterMembers(f).filter((m) => !duplicateOf(m)).length;
+}
+for (const v of Object.values(prov)) if (v.graft) facts[`graft.${v.graft}`] = (facts[`graft.${v.graft}`] || 0) + 1;
+const fill = (x) => typeof x !== "string" ? x : x.replace(/\{\{([^}]+)\}\}/g, (_, k) => {
+  if (!(k in facts)) throw new Error(`trees.json: no figure called {{${k}}}`);
+  return String(facts[k]);
+});
+
+const rows = t.rows.map(r => ({ ...r, depth: fill(r.depth), what: fill(r.what), gap: fill(r.gap), href: r.href ? u(r.href) : null }));
+const doors = (t.doors || []).map(([h, n, b]) => [u(h), fill(n), fill(b)]);
 ---
 <Base title="The trees" eyebrow={`${t.rows.length} lines followed`} dek="Every family this archive follows, and the two grafts that carry almost all of its claimed depth.">
   <section class="blk">

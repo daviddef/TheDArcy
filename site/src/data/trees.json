@@ -5,7 +5,7 @@
    "name": "D'Arcy",
    "ours": true,
    "state": "drawn",
-   "depth": "83 people, 67 published — 13 surnames in the archive around them",
+   "depth": "{{D'Arcy.total}} people, {{D'Arcy.published}} published — 13 surnames in the archive around them",
    "what": "The name the archive carries, and one thread of thirteen. An officer of the 39th Regiment was ordered to New South Wales: a child was born at Chatham in 1825 and the next at Parramatta in 1827, and those two birthplaces are the only proof of the crossing there is.",
    "gap": null,
    "href": "/direct-line/",
@@ -17,7 +17,7 @@
    "state": "drawable",
    "depth": "15 generations claimed · 6 documented to the day",
    "what": "The family tree runs this line back through a Major-General, a man said to have been born in St James's Palace, the Earls of Holderness, and finally Hornby Castle in the 1560s. Six of the fifteen generations stand up. The rest hang on one link.",
-   "gap": "A legitimate male descent from the 4th Earl is excluded by the peerage record, so the claim reduces to an illegitimate son nobody has found. 71 people reach this archive only through it.",
+   "gap": "A legitimate male descent from the 4th Earl is excluded by the peerage record, so the claim reduces to an illegitimate son nobody has found. {{graft.Hornby}} people reach this archive only through it.",
    "href": "/hornby/",
    "cta": "Where it stops being evidence →"
   },
@@ -25,7 +25,7 @@
    "name": "The Keele descent",
    "ours": false,
    "state": "closed",
-   "depth": "27 people, every one of them behind a single link",
+   "depth": "{{graft.Keele}} people, every one of them behind a single link",
    "what": "Followed into the right registers, and found to be wrong. Not unproven — disproved.",
    "gap": "Kept on the site, because a disproved claim published is worth more than a disproved claim deleted. Remove both grafts and 145 people remain, reaching the middle of the eighteenth century.",
    "href": "/how-far-back/",
@@ -45,7 +45,7 @@
    "name": "Sneyd",
    "ours": false,
    "state": "drawable",
-   "depth": "116 people, 112 published — the largest family here after the D'Arcys",
+   "depth": "{{Sneyd.total}} people, {{Sneyd.published}} published — the largest family here after the D'Arcys",
    "what": "Ivy Miriam Sneyd's people, of Boulia and Brisbane, and a weaver at Hanley above them. Samuel Charles Sneyd was a soldier, a constable and a gaol governor in one life.",
    "gap": "No chart of this family has been drawn — only pages about them.",
    "href": "/sneyds/",
@@ -77,7 +77,7 @@
   [
    "/people/",
    "The people",
-   "473 of them, each carrying the confidence it rests on."
+   "{{people}} of them, each carrying the confidence it rests on."
   ]
  ]
 }
