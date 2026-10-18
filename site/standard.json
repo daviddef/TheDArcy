@@ -1,0 +1,218 @@
+{
+ "_note": "The linking standard on D'Arcy, adopted 18 October 2026. THE PATTERN WIDTH IS 'LOCATORS + NAMED SOURCES': a passage is a citation when it quotes an archive reference (a National Archives, Gloucestershire, Trove, Queensland, NAA, ITM/DR or local-register locator) or names a record set (FamilySearch, FreeREG, FreeBMD, FindMyPast, Discovery, the Internet Archive...). It is NOT event wording (baptised, buried, married, died, census, will, deed: those patterns were measured and left out, 363 passages against these 144) and the census and register reference tables count only where a row quotes a locator or a named source. record_links.hosts is empty on purpose: the gate cannot tell a front door (a search form) from a record, so only the archive's own entries and the links its Rec component marks (data-cite) count, and a Rec is written only where the address carries the record's own reference. Exemptions are the attributes data-cite-exempt / data-name-exempt on the page, each with its reason; EX is ratcheted in .standardfloor.json.",
+ "version": 1,
+ "scope": "main",
+ "include": [
+  "/saniger-place/",
+  "/swonhungre/",
+  "/sneyds/",
+  "/hannah-baptism/",
+  "/hornby/",
+  "/behind-the-paywall/",
+  "/sergeant-sneyd/",
+  "/sneyd/",
+  "/the-corps/",
+  "/joseph-darcy/",
+  "/sanigers/",
+  "/great-war/"
+ ],
+ "exclude": [],
+ "new_page_max": 0,
+ "allow_prefixes": [
+  "/people/",
+  "/who/"
+ ],
+ "names": {
+  "entry_prefixes": [
+   "/people/",
+   "/who/"
+  ],
+  "read_blocks": [
+   "div.note"
+  ],
+  "stop_words": [
+   "Ancestor",
+   "April",
+   "Army",
+   "Audlem",
+   "August",
+   "Baroness",
+   "Berkeley",
+   "Brisbane",
+   "Bristol",
+   "Brown",
+   "Capt",
+   "Captain",
+   "Chatham",
+   "Checked",
+   "Col",
+   "Colonel",
+   "Control",
+   "Crewe",
+   "December",
+   "Earl",
+   "Eldest",
+   "England",
+   "Error",
+   "Father",
+   "February",
+   "Following",
+   "Found",
+   "General",
+   "Gloucestershire",
+   "Grandfather",
+   "Hampshire",
+   "Hanley",
+   "Hannah's",
+   "Ireland",
+   "January",
+   "July",
+   "June",
+   "Keele",
+   "Kew",
+   "King",
+   "Lady",
+   "Lieutenant",
+   "Lieutenants",
+   "List",
+   "Lord",
+   "Madeley",
+   "Major",
+   "March",
+   "Master",
+   "May",
+   "Miss",
+   "Mr",
+   "Mrs",
+   "Neither",
+   "Newspaper",
+   "Norman",
+   "Note",
+   "November",
+   "Null",
+   "October",
+   "Own",
+   "Part",
+   "Portsea",
+   "Prince",
+   "Prince Regent",
+   "Princess",
+   "Queensland",
+   "Queued",
+   "Read",
+   "Regent",
+   "Result",
+   "Scotland",
+   "Searched",
+   "September",
+   "Sir",
+   "Staffordshire",
+   "Still",
+   "Stoke",
+   "Sydney",
+   "Test",
+   "Thornbury",
+   "Wales",
+   "Wanswell",
+   "Wanted",
+   "Whereas",
+   "Whether"
+  ],
+  "not_names": [
+   "^(Santa|San|Saint|St|Mount|Cape|Port|Fort|Lake|New|North|South|East|West|Great|Little|Old|Holy|Our|Royal|National|British|Staffordshire|Gloucestershire|Hampshire|Somerset|Monmouthshire|Cheshire|Shropshire|Queensland|Australian|Prerogative|Internet|Parish|Board|Record|Bishop|Death|Birth|Index|Church|Court|House|Hall|Castle|Street)\\b",
+   "\\b(Island|Street|Road|Church|Hall|Castle|Court|County|Parish|Archives?|Archive|Office|Library|Society|Museum|Regiment|Foot|Corps|Engineers|Artillery|Ordnance|Index|Register|Registers|Registry|Census|Transcripts?|Calendar|Rolls?|Gazette|Courier|Monitor|Telegraph|Times|Press|Hospital|Gaol|Bank|Vale|Forest|Hundred|Manor|Hamlet|Wood|Mill|Bridge|Hill|Lane|Square|Place|Terrace|Chapel|College|Academy|Barracks|Station|Wharf|Quay)\\b",
+   "^(?:Edward|Henry|Richard|John|William|George|Charles|Stephen|Elizabeth|Victoria)\\s+(?:I{1,3}|IV|V|VI{0,3}|VIII?|IX|X)$",
+   "^(?:FreeREG|FreeBMD|FreeCEN|FindMyPast|FamilySearch|England|Home|Siege|Kings?|Stoke|Prince)\\b",
+   "^(?:Abbas|Mirza)\\b"
+  ]
+ },
+ "citations": {
+  "blocks": [
+   "p",
+   "li",
+   "dd",
+   "blockquote",
+   "div.note",
+   "figcaption",
+   "tr"
+  ],
+  "patterns": [
+   {
+    "id": "tna",
+    "regex": "\\b(?:WO|IR|PROB|HO|ADM|RG|CP|E)\\s?\\d{1,3}\\b(?:/[\\w.-]+)*"
+   },
+   {
+    "id": "gloucs",
+    "regex": "\\b(?:D\\d{3,4}(?:/\\d+)+|DE/M/\\d+|LL/\\d{4}/\\d+)"
+   },
+   {
+    "id": "trove",
+    "regex": "\\bnla\\.news-(?:article|page)\\d+"
+   },
+   {
+    "id": "qldreg",
+    "flags": "i",
+    "regex": "\\b(?:Qld|Queensland) (?:death|marriage|birth) reg(?:istration)?\\.? ?\\d{4}/[A-Z]/\\d+|\\b\\d{4}/[A-Z]/\\d{2,}\\b"
+   },
+   {
+    "id": "dr-itm",
+    "regex": "\\b(?:DR|ITM)\\s?\\d{5,}"
+   },
+   {
+    "id": "naa",
+    "regex": "\\bNAA\\s+[A-Z]\\d+"
+   },
+   {
+    "id": "localref",
+    "flags": "i",
+    "regex": "\\b(?:reference|ref\\.?|entry)\\s+(?:[A-Z]{2,4}/)?\\d+(?:/\\d+)+|\\b[A-Z]{3}/\\d{3}/\\d{3}\\b|\\bentry (?:number )?\\d{2,5}\\b"
+   },
+   {
+    "id": "named-source",
+    "flags": "i",
+    "regex": "\\b(?:FamilySearch|FreeREG|FreeBMD|FreeCEN|FindMyPast|Ancestry|MyHeritage|Internet Archive|archive\\.org|Trove|Discovery|Gloucestershire Archives|Staffordshire Name Indexes|England (?:Births )?(?:and|&) Baptisms|Index to Death Duty Registers|Bishop's Transcripts|parish register|Calendars? of Inquisitions)\\b"
+   },
+   {
+    "id": "courier",
+    "regex": "(?P<k>nla\\.news-page1599814)",
+    "key": "{k}"
+   },
+   {
+    "id": "inquest",
+    "flags": "i",
+    "regex": "\\b(?P<k>inquest|coronial|post-mortem certificate|sworn deposition)\\b",
+    "key": "{k}"
+   }
+  ],
+  "record_links": {
+   "prefixes": [
+    "/sources/",
+    "/documents/",
+    "/searched/",
+    "/register/",
+    "/inquest-1902/"
+   ],
+   "hosts": [],
+   "fragments": [],
+   "markers": [
+    "data-cite"
+   ]
+  },
+  "next_block_max_chars": 240
+ },
+ "scans": {
+  "image_patterns": [
+   {
+    "regex": "/img/(?P<k>vivian-claude-sneyd-1919)\\.",
+    "key": "{k}"
+   }
+  ],
+  "aliases": {
+   "nla.news-page1599814": "vivian-claude-sneyd-1919"
+  },
+  "link_only": [
+   "inquest"
+  ],
+  "held_keys_file": null
+ }
+}

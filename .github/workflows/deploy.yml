@@ -25,6 +25,15 @@ jobs:
       - name: Install
         run: npm ci || npm install
         working-directory: site
+      # THE LINKING STANDARD (18 October 2026). `npm run build` ends with `npm run check:standard` (tools/standard_pass.py): the
+      # twelve narrative pages are held to five rules and the number of violations of each may only go down
+      # (site/.standardfloor.json, counts only). In CI that gate reads the BUILT pages, the names index the build writes from
+      # committed data (the built /people/ and /who/ pages and site/src/data/names-aliases.json), the committed records table,
+      # standard.json and the living list the build itself holds (the noindex pages): no GEDCOM and no private feed is needed,
+      # so it counts what a local run counts. The step below holds the gate itself to its invented fixtures.
+      - name: Check that the linking-standard gate still catches what it should
+        run: python3 node_modules/@daviddef/archive-kit/kit/tools/checkstandard_selftest.py
+        working-directory: site
       - name: Build
         run: npm run build
         working-directory: site
