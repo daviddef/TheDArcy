@@ -80,6 +80,85 @@ const townOf = (raw) => tidyPlace(raw, 40).split(",")[0].trim();
 const townKey = (t) => t.toLowerCase().replace(/[^a-z0-9]/g, "");
 const cache = new Map();
 
+/** The same person entered twice and not declared (see lineData). Dead people only. */
+function twiceIn(dead) {
+  const dk = new Map();
+  for (const m of dead) {
+    if (!m.life) continue;
+    const par = (m.parents || []).map((r) => r.id).sort().join("+");
+    const k = [String(m.name).toLowerCase(), m.life, par || String(m.bornPlace || "").toLowerCase()].join("|");
+    if (!par && !m.bornPlace) continue;
+    (dk.get(k) || dk.set(k, []).get(k)).push(m);
+  }
+  return [...dk.values()].filter((v) => v.length > 1);
+}
+
+/** The dead people in a list who sit above a graft, by graft (provenance.json, as lineData tallies them). */
+const graftsOf = (dead) => {
+  const out = {};
+  for (const m of dead) {
+    const o = byId.get(m.id);
+    if (!o || !o.slug) continue;
+    if (grade(o.slug).level === "disputed") {
+      const name = (prov[o.slug] || {}).graft || "a graft";
+      out[name] = (out[name] || 0) + 1;
+    }
+  }
+  return out;
+};
+
+/** GROUPS THE PUBLISHED PEOPLE DO NOT JOIN, for any list of published people: the line pages and the
+ *  thirteen clusters. `twice` is a list of pairs to join (the lines pass theirs; a cluster passes none).
+ *  Each group also carries `grafts`, the dead people in it who sit above a graft, by graft. */
+export function groupsFor(members, twice = []) {
+  const ids = new Set(members.map((m) => m.id));
+  const A = (m) => byId.get(m.id) || m;            // a cluster's own records carry ahn: null; the page record has it
+  /* GROUPS THE PUBLISHED PEOPLE DO NOT JOIN. A surname is not a family. Union
+     the members through the people the archive names beside them (a parent, a
+     brother or sister, a spouse, a child): two members who share any such
+     person, or are one, are in one group. What is left is what the published
+     tree actually ties together, and a name that is really two families shows
+     as two groups. */
+  const root = new Map(members.map((m) => [m.id, m.id]));
+  const find = (x) => { while (root.get(x) !== x) { root.set(x, root.get(root.get(x))); x = root.get(x); } return x; };
+  const union = (a, b) => { const ra = find(a), rb = find(b); if (ra !== rb) root.set(ra, rb); };
+  const via = new Map();                            // outside id -> members that touch it
+  const touch = (m, id) => {
+    if (!id) return;
+    if (ids.has(id)) union(m.id, id);
+    else { const a = via.get(id) || []; a.push(m.id); via.set(id, a); }
+  };
+  for (const m of members) {
+    for (const r of m.parents || []) touch(m, r.id);
+    for (const r of m.siblings || []) touch(m, r.id);
+    for (const s of m.spouses || []) { touch(m, s.id); for (const c of s.children || []) touch(m, c); }
+  }
+  for (const list of via.values()) for (let i = 1; i < list.length; i++) union(list[0], list[i]);
+  for (const v of twice) for (let i = 1; i < v.length; i++) union(v[0].id, v[i].id);
+  const gmap = new Map();
+  for (const m of members) { const r = find(m.id); (gmap.get(r) || gmap.set(r, []).get(r)).push(m); }
+  const groups = [...gmap.values()].sort((a, b) => b.length - a.length || born(A(a[0])) - born(A(b[0]))).map((g) => {
+    const gd = g.filter((m) => !m.living);
+    const gy = gd.map(A).flatMap(yearsOf);
+    const gp = new Map();
+    for (const m of gd.map(A)) {
+      if (!m.bornPlace) continue;
+      const t = townOf(m.bornPlace);
+      const k = townKey(t);
+      if (!k) continue;
+      const e = gp.get(k) || { name: t, n: 0 }; e.n += 1; gp.set(k, e);
+    }
+    return {
+      members: g, n: g.length,
+      span: gy.length ? [Math.min(...gy), Math.max(...gy)] : null,
+      places: [...gp.values()].sort((a, b) => b.n - a.n || a.name.localeCompare(b.name)).slice(0, 3).map((x) => x.name),
+      direct: g.filter((m) => A(m).ahn).length,
+      grafts: graftsOf(gd),
+    };
+  });
+  return groups;
+}
+
 export function lineData(slug) {
   if (cache.has(slug)) return cache.get(slug);
   const line = cfg.lines.find((l) => l.slug === slug);
@@ -159,58 +238,10 @@ export function lineData(slug) {
      counted both would count one man twice. They are listed as the tree lists
      them, joined into one group, and SAID, so the research owner can declare
      them. This page declares nothing. */
-  const dk = new Map();
-  for (const m of dead) {
-    if (!m.life) continue;
-    const par = (m.parents || []).map((r) => r.id).sort().join("+");
-    const k = [String(m.name).toLowerCase(), m.life, par || String(m.bornPlace || "").toLowerCase()].join("|");
-    if (!par && !m.bornPlace) continue;
-    (dk.get(k) || dk.set(k, []).get(k)).push(m);
-  }
-  const twice = [...dk.values()].filter((v) => v.length > 1);
+  const twice = twiceIn(dead);
 
-  /* GROUPS THE PUBLISHED PEOPLE DO NOT JOIN. A surname is not a family. Union
-     the members through the people the archive names beside them (a parent, a
-     brother or sister, a spouse, a child): two members who share any such
-     person, or are one, are in one group. What is left is what the published
-     tree actually ties together, and a name that is really two families shows
-     as two groups. */
-  const root = new Map(members.map((m) => [m.id, m.id]));
-  const find = (x) => { while (root.get(x) !== x) { root.set(x, root.get(root.get(x))); x = root.get(x); } return x; };
-  const union = (a, b) => { const ra = find(a), rb = find(b); if (ra !== rb) root.set(ra, rb); };
-  const via = new Map();                            // outside id -> members that touch it
-  const touch = (m, id) => {
-    if (!id) return;
-    if (ids.has(id)) union(m.id, id);
-    else { const a = via.get(id) || []; a.push(m.id); via.set(id, a); }
-  };
-  for (const m of members) {
-    for (const r of m.parents || []) touch(m, r.id);
-    for (const r of m.siblings || []) touch(m, r.id);
-    for (const s of m.spouses || []) { touch(m, s.id); for (const c of s.children || []) touch(m, c); }
-  }
-  for (const list of via.values()) for (let i = 1; i < list.length; i++) union(list[0], list[i]);
-  for (const v of twice) for (let i = 1; i < v.length; i++) union(v[0].id, v[i].id);
-  const gmap = new Map();
-  for (const m of members) { const r = find(m.id); (gmap.get(r) || gmap.set(r, []).get(r)).push(m); }
-  const groups = [...gmap.values()].sort((a, b) => b.length - a.length || born(a[0]) - born(b[0])).map((g) => {
-    const gd = g.filter((m) => !m.living);
-    const gy = gd.flatMap(yearsOf);
-    const gp = new Map();
-    for (const m of gd) {
-      if (!m.bornPlace) continue;
-      const t = townOf(m.bornPlace);
-      const k = townKey(t);
-      if (!k) continue;
-      const e = gp.get(k) || { name: t, n: 0 }; e.n += 1; gp.set(k, e);
-    }
-    return {
-      members: g, n: g.length,
-      span: gy.length ? [Math.min(...gy), Math.max(...gy)] : null,
-      places: [...gp.values()].sort((a, b) => b.n - a.n || a.name.localeCompare(b.name)).slice(0, 3).map((x) => x.name),
-      direct: g.filter((m) => m.ahn).length,
-    };
-  });
+  /* GROUPS THE PUBLISHED PEOPLE DO NOT JOIN: see groupsFor(), which the thirteen clusters use too. */
+  const groups = groupsFor(members, twice);
 
   /* THE FAMILIES IT IS JOINED TO: the surnames of the (dead) spouses of the
      members, and of the parents of a member who carry another name (a
@@ -259,3 +290,66 @@ export function lineData(slug) {
 export const allLines = () => cfg.lines.map((l) => lineData(l.slug));
 export const lineSlugs = cfg.lines.map((l) => l.slug);
 export const lineCfg = cfg;
+
+
+/* ------------------------------------------------------------------------------------------
+ * THE THIRTEEN CLUSTERS (families.json), tested the way the lines are.
+ *
+ * A cluster page used to say "All 81 people this archive publishes under D'Arcy" and draw one
+ * list, although the published people fall into two groups the archive does not join except
+ * through a disputed graft (lines audit, 18 October 2026). The test is the lines' own
+ * (groupsFor above, nothing new): it is run on every cluster, and a page whose people fall into
+ * more than one group says so and shows them as separate groups.
+ */
+
+/** A cluster's people: its own members, then the people the archive already publishes whose
+ *  surname is the same name written another way (`alsoWritten`, built by tools/build_site_data.py).
+ *  Declared copies are left in; the caller drops them as the page always has. */
+export function clusterMembers(f) {
+  const extra = (f.alsoWritten || []).map((id) => byId.get(id)).filter(Boolean);
+  return [...(f.members || []), ...extra];
+}
+
+/* ------------------------------------------------------------------------------------------
+ * PEOPLE ON NO SURNAME PAGE. Every published person is in exactly one of these, counted here
+ * from the data; the sum is checked against the number of people with a page and the build
+ * stops if it does not add up. A "surname page" is a cluster (families.json, with the names
+ * written another way) or a line (family-lines.json).
+ */
+export function unplacedData() {
+  const inCluster = new Set();
+  for (const f of clusters) for (const m of clusterMembers(f)) inCluster.add(m.id);
+  const alsoKeys = new Set((cfg.otherArchive && cfg.otherArchive.keys) || []);
+  const elsewhere = cfg.pagesElsewhere || {};
+  const out = {
+    total: people.length, cluster: 0, line: 0, copies: 0,
+    falco: { n: 0, direct: 0, living: 0 }, elsewhere: { n: 0, direct: 0, living: 0, names: new Map() },
+    unnamed: { n: 0, direct: 0, living: 0 }, other: { n: 0, direct: 0, living: 0, names: new Map() },
+  };
+  const bump = (c, p) => { c.n += 1; if (p.ahn) c.direct += 1; if (p.living) c.living += 1; };
+  const note = (map, k, p) => {
+    const e = map.get(k) || { counts: new Map(), n: 0, direct: 0, living: 0 };
+    const w = String(p.surname || "").split(/[,(\[]/)[0].trim() || k;
+    e.counts.set(w, (e.counts.get(w) || 0) + 1);
+    e.n += 1; if (p.ahn) e.direct += 1; if (p.living) e.living += 1;
+    map.set(k, e);
+  };
+  for (const p of people) {
+    if (duplicateOf(p)) { out.copies += 1; continue; }
+    if (inCluster.has(p.id)) { out.cluster += 1; continue; }
+    if (lineOf(p)) { out.line += 1; continue; }
+    const k = surnameKey(p.surname);
+    if (alsoKeys.has(k)) bump(out.falco, p);
+    else if (elsewhere[k] && elsewhere[k].href) { bump(out.elsewhere, p); note(out.elsewhere.names, k, p); }
+    else if (!k || k === "unnamed") bump(out.unnamed, p);
+    else { bump(out.other, p); note(out.other.names, k, p); }
+  }
+  const sum = out.cluster + out.line + out.copies + out.falco.n + out.elsewhere.n + out.unnamed.n + out.other.n;
+  if (sum !== out.total) throw new Error(`unplacedData: ${sum} people placed or counted, ${out.total} published`);
+  /* the other surnames, written as the tree writes them most often, biggest first */
+  out.otherNames = [...out.other.names.entries()].map(([k, e]) => ({
+    key: k, written: [...e.counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0][0],
+    n: e.n, direct: e.direct, living: e.living,
+  })).sort((a, b) => b.n - a.n || a.written.localeCompare(b.written));
+  return out;
+}
