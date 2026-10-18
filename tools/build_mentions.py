@@ -4,10 +4,13 @@
 Two outputs:
   site/src/data/mentions.json   {slug: [{path, title, snippet}, ...]}
                                 consumed at build time by /people/[slug]
-  site/public/whoindex.json     [[name, slug, count], ...]
+  site/public/whoindex.json     [[name, slug, count, kind, n], ...]
                                 consumed at run time by wholink.js, which turns
                                 a person's name in any page's prose into a link
-                                to their page
+                                kind "p": a /people/ page, "w": a /who/ page
+                                (a witness, an official), "a": AMBIGUOUS, a name
+                                borne by n >= 2 pages, slug "" (wholink sends it
+                                to /people/?q=<name>, never to a guess)
 
 This reads the BUILT html rather than the .astro sources, because the sources
 are full of expressions and components and the rendered text is what a reader
@@ -81,6 +84,69 @@ def drop_book_furniture(raw):
         raw = raw[:m.start()] + " " + raw[end:]
 
 
+# NAMESAKES (18 October 2026). `by_name = {name: slug}` collapsed every name two
+# people share to one arbitrary slug, so "George Pitt D'Arcy" always went to the
+# 1864 man, and 62 of the 153 links wholink.js made on twelve narrative pages
+# pointed at one of several people of that name. A name is now linked to a person
+# ONLY when exactly one page bears it; otherwise the row is "a" and the reader is
+# sent to the search. Case is folded, a living person (a noindex page) counts as
+# a namesake but is never given a row, and a declared copy of another page
+# (canonical naming a different /people/ page) is the same person and not a
+# namesake. tools/check_whoindex.py grades the result.
+CANON = re.compile(r'<link[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\']', re.I)
+
+
+def fold(s):
+    """The key two spellings of one name share: case, spacing, curly apostrophes."""
+    return WS.sub(" ", s.replace("\u2019", "'").replace("\u2018", "'")).strip().casefold()
+
+
+def built_pages(dist=None):
+    """{(kind, slug): {name, noindex, dup}} for every built /people/ and /who/ page."""
+    out = {}
+    for kind in ("people", "who"):
+        d = os.path.join(dist or DIST, kind)
+        for slug in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+            f = os.path.join(d, slug, "index.html")
+            if not os.path.isfile(f):
+                continue
+            raw = open(f, encoding="utf-8", errors="ignore").read()
+            name, _ = text_of(f)
+            c = CANON.search(raw)
+            dup = bool(c and "/people/" in c.group(1)
+                       and c.group(1).rstrip("/").rsplit("/", 1)[-1] != slug)
+            out[(kind, slug)] = {"name": name, "noindex": bool(NOINDEX.search(raw)), "dup": dup}
+    return out
+
+
+def name_groups(pages):
+    """{folded name: [(kind, slug, name, noindex)]} for names of two words or more."""
+    groups = {}
+    for (kind, slug), e in pages.items():
+        if e["dup"] or len(e["name"].split()) < 2:
+            continue
+        groups.setdefault(fold(e["name"]), []).append((kind, slug, e["name"], e["noindex"]))
+    return groups
+
+
+def index_rows(groups, pages_for):
+    """The rows of whoindex.json: one per name that is published and written about."""
+    rows = []
+    for key, members in groups.items():
+        pub = [m for m in members if not m[3]]
+        n = len(pages_for.get(key, ()))
+        if not pub or not n:
+            continue
+        if len(members) == 1:
+            kind, slug, name, _ = members[0]
+            rows.append([name, slug, n, "p" if kind == "people" else "w", 1])
+        elif any(m[0] == "people" for m in pub):
+            name = sorted(m[2] for m in pub)[0]
+            rows.append([name, "", n, "a", len(members)])
+    rows.sort(key=lambda r: (-len(r[0]), r[0].casefold(), r[1]))
+    return rows
+
+
 def text_of(path):
     raw = open(path, encoding="utf-8", errors="ignore").read()
     raw = drop_book_furniture(raw)
@@ -129,7 +195,8 @@ def main():
 
     mentions = {s: [] for s in people}
 
-    if pattern:
+    bodies = []                      # (path, title, body) of every prose page
+    if os.path.isdir(DIST):
         for root, _, files in os.walk(DIST):
             if "index.html" not in files:
                 continue
@@ -138,6 +205,10 @@ def main():
             if any(path == p or path.startswith(p + "/") for p in SKIP_PREFIX):
                 continue
             title, body = text_of(os.path.join(root, "index.html"))
+            bodies.append((path, title, body))
+
+    if pattern:
+        for path, title, body in bodies:
             seen = set()
             for m in pattern.finditer(body):
                 slug = by_name.get(m.group(1))
@@ -152,20 +223,31 @@ def main():
     with open(os.path.join(DATA, "mentions.json"), "w", encoding="utf-8") as f:
         json.dump(mentions, f, ensure_ascii=False, indent=0, sort_keys=True)
 
-    # only people who are actually written about anywhere go in the run-time
-    # index, so wholink does not turn every name in a list into a link
-    idx = [[people[s], s, len(v)] for s, v in mentions.items() if v]
-    idx.sort(key=lambda r: -len(r[0]))
+    # Only names that are actually written about anywhere go in the run-time index,
+    # so wholink does not turn every name in a list into a link. A name two or more
+    # pages bear is written "a" with no slug (see NAMESAKES above).
+    pages = built_pages() if os.path.isdir(DIST) else {}
+    groups = name_groups(pages)
+    pages_for = {}
+    names = sorted({m[2] for ms in groups.values() if any(not x[3] for x in ms) for m in ms},
+                   key=lambda n: -len(n))
+    if names:
+        ipat = re.compile(r"(?<![A-Za-zÀ-ɏ])(" + "|".join(re.escape(n) for n in names) +
+                          r")(?![A-Za-zÀ-ɏ])", re.I)
+        for path, _, body in bodies:
+            for m in ipat.finditer(body):
+                pages_for.setdefault(fold(m.group(1)), set()).add(path)
+    idx = index_rows(groups, pages_for)
     os.makedirs(PUB, exist_ok=True)
     with open(os.path.join(PUB, "whoindex.json"), "w", encoding="utf-8") as f:
         json.dump(idx, f, ensure_ascii=False)
 
     total = sum(len(v) for v in mentions.values())
     print(f"people scanned      : {len(people)}")
-    print(f"people with mentions: {len(idx)}")
+    print(f"index rows          : {len(idx)}  (people {sum(r[3]=='p' for r in idx)}, who {sum(r[3]=='w' for r in idx)}, ambiguous {sum(r[3]=='a' for r in idx)})")
     print(f"mentions found      : {total}")
     top = sorted(idx, key=lambda r: -r[2])[:8]
-    for n, s, c in top:
+    for n, s, c, *_ in top:
         print(f"   {c:>3}  {n}")
 
 
