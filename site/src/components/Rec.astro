@@ -1,0 +1,20 @@
+---
+/* <Rec id="tna-wo-12-8483">WO 12/8483</Rec>
+ *
+ * The kit's record link (@daviddef/archive-kit/components/Rec.astro, the linking standard's L3) with this archive's records table
+ * (src/data/records.json, made by tools/build_records.py from register.json and the references the pages print) already passed in.
+ * The words between the tags are the citation the author wrote, unchanged; they become the link to the record.
+ *
+ *   id    a row of the table: "ia-<archive.org identifier>", "trove-article<N>", "qsa-itm<N>", "tna-<reference>"...
+ *   act   the same by the reference the row lists under key ("WO 12/8483")
+ *
+ * An id the table does not hold stops the build (a link that is a guess is worse than no link). Data files that render their strings
+ * through src/lib/md.js write the same link as [the words](rec:ID). tools/check_records.py holds every use to the table.
+ * A "tna-..." row of kind catalogue-search is Discovery's search for the reference: its address carries the record's own reference
+ * and is not the record's page.
+ */
+import KitRec from "@daviddef/archive-kit/components/Rec.astro";
+import records from "../data/records.json";
+const props = Astro.props;
+---
+<KitRec records={records} {...props}><slot /></KitRec>

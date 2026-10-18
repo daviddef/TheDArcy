@@ -67,6 +67,7 @@ HAND_EDITED = {
     "living-rule.json",  # the living-rule page
     "margaret-jones.json",
     "namefold-deny.json",  # refused name folds
+    "names-aliases.json",  # the spellings the data states for a page's person (tools/build_names_index.py reads it)
     "new-generations.json",
     "obituary.json",  # the 1827 obituary page
     "place-same.json",  # declared place folds
@@ -104,6 +105,7 @@ GENERATED = {
     "dna.json",                                                          # build_dna.py
     "mentions.json",                                                     # build_mentions.py
     "audit.json",                                                        # audit.py
+    "records.json",                                                      # build_records.py, from register.json and the references the pages print
     "living.json",                                                       # build_site_data.py; holds living NAMES by design
     "snapshot-summary.json",                                             # snapshot.py
     "namefold.json",                                                     # kit namefold.py
