@@ -74,6 +74,19 @@ def named(pid):
     return not held(pid) and (PAGES is None or pid in PAGES)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def name_key(s):
+    """A surname with the spelling taken out of it: lowercase, apostrophes, quotation marks and
+    asterisks out, cut at the first comma, bracket or parenthesis (the tree writes a title or a gloss
+    after the name). The rule of surnameKey() in site/src/lib/familyLines.js and surname_key() in
+    tools/familylines.py, so D'Arcy, Darcy, D"arcy and DARCY are one name here as they are on the
+    line pages."""
+    s = re.sub(r"['\"\u2019*]", "", str(s or "").lower())
+    s = re.split(r"[,(\[]", s)[0]
+    return re.sub(r"\s+", " ", s).strip()
+
+
 OUT = os.path.join(ROOT, "site", "src", "data")
 CRISTINA = "@I2@"
 
@@ -567,14 +580,31 @@ def main():
         recs = []
         for m in members:
             recs.append(record(people, families, m["id"]))
+        # THE SAME NAME WRITTEN ANOTHER WAY (Darcy, D"arcy, DARCY, a title after the surname) IS THE SAME
+        # NAME. This test was an exact string match, so 29 published people of the Hornby and Holderness
+        # stock sat on no surname page while 12 spelled D'Arcy sat on this one (lines audit, 18 October
+        # 2026). They are listed by id in `alsoWritten` and NOT added to `members`: they keep the pages
+        # and addresses they already have (people.js slugs a cluster's members first, and moving 25 of
+        # them in would have moved published addresses), and SCOPE above is untouched, so this
+        # publishes nobody and names nobody new. Only people the archive ALREADY publishes are listed;
+        # `total` counts every bearer in the tree, so the variant-spelled people who are not published
+        # show as the difference between `total` and `published`, exactly as the held-out do.
+        k = name_key(sn)
+        variants = [p for p in people.values()
+                    if p["surname"].lower() != sn.lower() and name_key(p["surname"]) == k]
+        also = [p for p in variants if p["id"] in PAGES and p["id"] not in HELD]
+        also.sort(key=lambda p: year(born(p).get("date", "")) or 9999)
+        also_recs = [record(people, families, p["id"]) for p in also]
         fam_out.append({
             "surname": sn, "blurb": blurb,
-            # Everyone of the name in the tree; `published` is who is given a
-            # place here. The two differ only by the people held out.
-            "total": len(of_name),
-            "published": len(recs),
-            "living": sum(1 for r in recs if r["living"]),
+            # Everyone of the name in the tree, in any spelling; `published` is who is given a
+            # place here. The two differ by the people held out and, for a name written another way,
+            # by the people the archive does not publish.
+            "total": len(of_name) + len(variants),
+            "published": len(recs) + len(also_recs),
+            "living": sum(1 for r in recs + also_recs if r["living"]),
             "members": recs,
+            "alsoWritten": [r["id"] for r in also_recs],
         })
     json.dump(fam_out, open(os.path.join(OUT, "families.json"), "w"),
               ensure_ascii=False, indent=1)

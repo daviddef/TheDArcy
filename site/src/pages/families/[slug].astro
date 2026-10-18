@@ -28,7 +28,7 @@ import { u } from "../../lib/url.js";
 import famData from "../../data/families.json";
 import ancestorRows from "../../data/ancestors.json";
 import { people, duplicateOf } from "../../lib/people.js";
-import { lineData, lineSlugs } from "../../lib/familyLines.js";
+import { lineData, lineSlugs, clusterMembers, groupsFor } from "../../lib/familyLines.js";
 import { CORRECTIONS, lifeOf, yearOf } from "../../lib/corrections.js";
 
 /* TWO KINDS OF FAMILY PAGE, ONE ADDRESS SPACE. The thirteen in families.json
@@ -53,7 +53,7 @@ const line = lineSlug ? lineData(lineSlug) : null;
 /* A cluster page and a line page draw their rows the same way. The members are
    the cluster's own records, or the line's published people. A declared copy
    (same-person.json) is one person entered twice and is listed once. */
-const allMembers = famProp ? (famProp.members || []) : line.members;
+const allMembers = famProp ? clusterMembers(famProp) : line.members;
 const copies = allMembers.filter((m) => duplicateOf(m));
 /* A NEW OBJECT, never the imported one: families.json is shared by every page that imports it, and
    writing the filtered list back changed what /sneyd/ drew later in the same build. */
@@ -151,6 +151,31 @@ const makeRows = (members) => (members || [])
 const ordered = line ? fam.members
   : fam.members.slice().sort((a, b) => (Number(yr(a.born)) || 9999) - (Number(yr(b.born)) || 9999));
 const rows = makeRows(ordered);
+/* THE GROUP TEST, ON A CLUSTER AS ON A LINE (lib/familyLines.js, groupsFor). A surname is not a family: a
+   cluster whose published people the archive does not tie together says so, and draws them as separate
+   groups. A cluster that is one group is drawn exactly as it always was. */
+const cgroups = famProp ? groupsFor(ordered) : [];
+/* A name the tree writes more than one way: the spellings as written (cut at a comma or bracket), and what
+   the people it spells exactly like the cluster's name come to on their own. */
+const cWritten = (() => {
+  if (!famProp) return null;
+  const ex = new Map();
+  for (const m of ordered) {
+    const w = String(m.surname || "").split(/[,(\[]/)[0].trim();
+    /* capitals alone are not a spelling: D'Arcy, d'Arcy and D'ARCY are one */
+    if (w) { const e = ex.get(w.toLowerCase()) || { n: 0, forms: new Map() }; e.n += 1; e.forms.set(w, (e.forms.get(w) || 0) + 1); ex.set(w.toLowerCase(), e); }
+  }
+  const base = (famProp.members || []).filter((m) => !duplicateOf(m));
+  const baseGroups = groupsFor(base);
+  const graft = cgroups.reduce((a, g) => { for (const [k, n] of Object.entries(g.grafts)) a[k] = (a[k] || 0) + n; return a; }, {});
+  const spellings = [...ex.values()].map((e) => [[...e.forms.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0][0], e.n])
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  return { spellings, also: (famProp.alsoWritten || []).length,
+           baseN: base.length, baseGroups, graft };
+})();
+const cfmt = (g) => [g.span && `${g.span[0]}\u2013${g.span[1]}`, g.places.length > 0 && `born at ${g.places.join(" \u00b7 ")}`,
+  g.direct > 0 && `${g.direct} on the direct line`,
+  ...Object.entries(g.grafts).map(([n, k]) => `${k} above the ${n} graft`)].filter(Boolean).join(" \u00b7 ") || "no dates or places recorded";
 
 /* The line's one-sentence description, worked out from its data: how many, how
    many on the direct line, when, where. 200 characters is the ceiling the
@@ -333,18 +358,55 @@ const lineDek = line ? (() => {
       <strong>{fam.surname}</strong> yet.</p>
     ) : (
       <Fragment>
-        <p class="dek">All <strong>{rows.length}</strong> people this archive publishes under
-        <strong>{fam.surname}</strong>, oldest first, in the shape the front page uses &mdash; the
+        <p class="dek">{cgroups.length > 1 ? "" : "All "}<strong>{rows.length}</strong> people this archive publishes under
+        <strong>{fam.surname}</strong>, oldest first{cgroups.length > 1 ? " within each group" : ""}, in the shape the front page uses &mdash; the
         couple in two equal columns, brothers and sisters under whichever of the two they belong to.
         Everything is shut until you open it. <strong>There is no children strip</strong> on any of
         these rows: this archive records siblings and records no children, anywhere, and the row
         shows what is there.</p>
+        {cgroups.length > 1 && (
+          <p class="dek">These {rows.length} people fall into <strong>{cgroups.length} groups</strong> that
+          the published people do not tie to one another &mdash; no shared parent, brother or sister, spouse or
+          child among the people this archive names. The tree may tie them in ways it does not publish, and
+          nothing this archive holds says they are one family under this name.</p>
+        )}
+        {cWritten && cWritten.spellings.length > 1 && (
+          <Note>
+            <strong>The name, written other ways.</strong> The tree writes this name
+            {" "}{cWritten.spellings.map(([w, n], i) => (
+              <Fragment>{i > 0 && (i === cWritten.spellings.length - 1 ? " and " : ", ")}<strong>{w}</strong> ({n})</Fragment>))}.
+            This page shows them together as one name, and lists only people this archive already publishes.
+            {cWritten.baseGroups.length > 1 && cgroups.length < cWritten.baseGroups.length && <>
+              {" "}Counting only the {cWritten.baseN} people the tree spells {fam.surname}, whatever the capitals, they fall into
+              <strong> {cWritten.baseGroups.length} groups</strong> ({cWritten.baseGroups.map((g) => g.n).join(" and ")} people)
+              that the published people do not tie to one another; the {cWritten.also} written another way are what tie
+              {cgroups.length === 1 ? " them into one group" : " some of them together"} here.</>}
+          </Note>
+        )}
+        {cWritten && Object.keys(cWritten.graft).length > 0 && (
+          <Note>
+            <strong>Above a graft.</strong>
+            {Object.entries(cWritten.graft).map(([g, n]) => (
+              <Fragment> {n} of these {n === 1 ? "person is" : "people are"} reached only through the <strong>{g}</strong> join{g === "Hornby"
+                ? <>, a single unevidenced link that this archive has looked for and not found (<a href={u("/hornby/")}>the Hornby claim</a>)</>
+                : g === "Keele"
+                  ? <>, a link this archive has looked for in the right registers and found to be wrong (<a href={u("/how-far-back/")}>how far back</a>)</>
+                  : null}.</Fragment>))}
+          </Note>
+        )}
         {copies.length > 0 && (
           <p class="small">{copies.length} {copies.length === 1 ? "person the tree enters" : "people the tree enters"} twice
           {copies.length === 1 ? " is" : " are"} listed once: the archive has declared the second entry a copy of the
           first (<a href={u("/method/")}>how</a>), and its page is still there.</p>
         )}
-        <Descent rows={rows} u={u} archiveKey="darcy" />
+        {cgroups.length > 1
+          ? cgroups.map((g, i) => (
+              <Fragment>
+                <h3 style="margin-top:1.6rem">Group {i + 1} &mdash; {g.n} {g.n === 1 ? "person" : "people"}</h3>
+                <p class="small">{cfmt(g)}</p>
+                <Descent rows={makeRows(g.members)} u={u} archiveKey="darcy" idPrefix={`g${i + 1}-`} />
+              </Fragment>))
+          : <Descent rows={rows} u={u} archiveKey="darcy" />}
       </Fragment>
     )}
   </section>

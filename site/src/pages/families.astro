@@ -1,22 +1,31 @@
 ---
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
+import Scroll from "../components/Scroll.astro";
 import Families from "@daviddef/archive-kit/components/Families.astro";
 import { u } from "../lib/url.js";
 import { publishable, countLiving, isLiving, duplicateOf } from "../lib/people.js";
 import families from "../data/families.json";
 import { byId } from "../lib/people.js";
-import { allLines, lineCfg } from "../lib/familyLines.js";
+import { allLines, lineCfg, clusterMembers, groupsFor, unplacedData } from "../lib/familyLines.js";
 import falcoFamilies from "../data/falco-families.json";
 
 /* A declared copy (same-person.json) is one person entered twice: counted and
    listed once, here as on the family's own page. */
+/* A cluster's people include those whose surname is the same name written another way (alsoWritten,
+   built by tools/build_site_data.py); where there are any, the whole list is put back in order of birth. */
+const yr0 = (x) => +((String(x || "").match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1]) || 9999;
 const fams = families
-  .map((f) => ({ ...f, members: f.members.filter((m) => !duplicateOf(m)) }))
+  .map((f) => ({ ...f, members: (f.alsoWritten && f.alsoWritten.length
+    ? clusterMembers(f).slice().sort((a, b) => yr0(a.born) - yr0(b.born)) : f.members).filter((m) => !duplicateOf(m)) }))
   .map((f) => ({ ...f, published: f.members.length, living: countLiving(f.members) }))
   .filter((f) => f.published > 0);
 const total = fams.reduce((a, f) => a + f.published, 0);
 const lines = allLines();
+const un = unplacedData();
+const placed = un.cluster + un.line;
+const nOther = un.otherNames.length;
+const nf = (n) => n.toLocaleString("en-GB");
 
 /* 22 September 2026. The card is the kit's. What this archive puts behind
    the claim is not: it can NAME the people, which Blazevic cannot and Falco
@@ -37,7 +46,8 @@ const groups = [{
       gloss: f.blurb,
       count: f.published,
       countLabel: "published" + (countLiving(f.members) > 0
-        ? ` · ${countLiving(f.members)} living, named with town and country only` : ""),
+        ? ` · ${countLiving(f.members)} living, named with town and country only` : "")
+        + (groupsFor(f.members).length > 1 ? ` · ${groupsFor(f.members).length} separate groups` : ""),
       facts: places.length ? [["Recorded in", places.join(" · ")]] : [],
       people: shown.map((m) => {
         const o = byId.get(m.id);
@@ -114,6 +124,43 @@ const groups = [{
   <section class="blk">
     <Families groups={groups} u={(p) => (/^https?:/.test(p) ? p : u(p))} />
   </section>
+
+  <Blk label="Not placed" title="People on no surname page">
+    <div data-unplaced={JSON.stringify({ total: un.total, cluster: un.cluster, line: un.line, copies: un.copies,
+      falco: un.falco.n, elsewhere: un.elsewhere.n, unnamed: un.unnamed.n, other: un.other.n, surnames: nOther })} hidden></div>
+    <p class="dek">This archive publishes <strong>{nf(un.total)}</strong> people. <strong>{nf(placed)}</strong> are on
+    a surname page above ({nf(un.cluster)} on the {fams.length} families, {nf(un.line)} on the {lines.length} more names)
+    and {un.copies} are declared copies of people counted once already. The other
+    <strong>{nf(un.falco.n + un.elsewhere.n + un.unnamed.n + un.other.n)}</strong> are on none, and this is all of them, counted
+    from the data:</p>
+    <ul class="small" style="margin:.6rem 0 0;padding-left:1.1rem">
+      <li style="margin-top:.35rem"><strong>{nf(un.falco.n)}</strong> carry a name from the Falco side, whose research is the Falco Archive&rsquo;s
+      (the Falco families, above){un.falco.direct > 0 && <>; {un.falco.direct} of them on the direct line</>}.</li>
+      <li style="margin-top:.35rem"><strong>{nf(un.elsewhere.n)}</strong> are Saniger, written about on
+      <a href={u("/sanigers/")}>The Sanigers, reconstituted</a> and <a href={u("/saniger-line/")}>Six generations at Berkeley</a>
+      rather than on a surname page{un.elsewhere.direct > 0 && <>; {un.elsewhere.direct} of them on the direct line</>}.</li>
+      <li style="margin-top:.35rem"><strong>{nf(un.unnamed.n)}</strong> are recorded with no surname at all, a forename or a title only{un.unnamed.direct > 0 && <>; {un.unnamed.direct} of them on the direct line</>}.</li>
+      <li style="margin-top:.35rem"><strong>{nf(un.other.n)}</strong> carry one of <strong>{nf(nOther)}</strong> other surnames that have no page
+      ({un.otherNames.slice(0, 6).map((x) => `${x.written} ${x.n}`).join(", ")}, and so on){un.other.direct > 0 && <>; {un.other.direct} of them on the direct line</>}.
+      They are listed below, with how many carry each.</li>
+    </ul>
+    <p class="small" style="margin-top:.8rem">Of these, {un.falco.living + un.elsewhere.living + un.unnamed.living + un.other.living} are living, and are
+    named elsewhere in this archive with their town and country only. Nobody on this list is on two pages, and
+    none is a declared copy.</p>
+    <details style="margin-top:.8rem">
+      <summary class="small">The {nf(nOther)} other surnames, with how many people carry each</summary>
+      <Scroll>
+        <table>
+          <thead><tr><th>Surname as the tree writes it</th><th>People</th><th>On the direct line</th></tr></thead>
+          <tbody>
+            {un.otherNames.map((x) => (
+              <tr><td>{x.written}</td><td class="m">{x.n}</td><td class="m">{x.direct}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </Scroll>
+    </details>
+  </Blk>
 
   <Blk label="Method" title="How the names beyond the thirteen were chosen">
     <p class="small">{lineCfg.note}</p>
