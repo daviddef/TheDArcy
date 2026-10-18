@@ -53,8 +53,37 @@ STRIP = re.compile(r"<[^>]+>")
 WS = re.compile(r"\s+")
 
 
+# THE BOOK'S OWN FURNITURE IS NOT PROSE (18 October 2026). BookFoot sits inside <main> (Base.astro), and
+# the foot names the neighbouring chapters, so a fresh build turned each neighbour's title into a
+# "mention" of any person it happens to contain: nine of them, none of them written about anybody.
+# The foot is a <nav class="bk-foot"> carrying data-book-prev / data-book-next; the running head is a
+# <div class="bk-head">. Both are cut before the text is read. Neither is moved: the layout is the kit's.
+BOOK_NAV = re.compile(r"<nav\b[^>]*\b(?:class=[\"'][^\"']*\bbk-foot\b|data-book-prev|data-book-next)[^>]*>.*?</nav>", re.S | re.I)
+BOOK_HEAD = re.compile(r"<div\b[^>]*\bclass=[\"'][^\"']*\bbk-head\b[^>]*>", re.I)
+DIV = re.compile(r"<(/?)div\b[^>]*>", re.I)
+
+
+def drop_book_furniture(raw):
+    """Remove the book's Previous/Next foot and its running head from a page's HTML."""
+    raw = BOOK_NAV.sub(" ", raw)
+    while True:
+        m = BOOK_HEAD.search(raw)
+        if not m:
+            return raw
+        depth, end = 1, None
+        for d in DIV.finditer(raw, m.end()):
+            depth += -1 if d.group(1) else 1
+            if depth == 0:
+                end = d.end()
+                break
+        if end is None:          # unbalanced: cut only the opening tag rather than eat the page
+            end = m.end()
+        raw = raw[:m.start()] + " " + raw[end:]
+
+
 def text_of(path):
     raw = open(path, encoding="utf-8", errors="ignore").read()
+    raw = drop_book_furniture(raw)
     title = ""
     m = re.search(r"<h1[^>]*>(.*?)</h1>", raw, re.S)
     if m:
