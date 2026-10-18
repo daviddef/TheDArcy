@@ -32,7 +32,7 @@
     "check:archive": "python3 ../tools/check_archive.py"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#09ee04023590894e5cf943b07ee9ad8db33f9abb",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#3a30314611778bf22f3f27204079aa123494ca14",
     "astro": "^5.18.2"
   },
   "devDependencies": {
