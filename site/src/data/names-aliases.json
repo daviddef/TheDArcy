@@ -1,0 +1,32 @@
+{
+ "_note": "Spellings of a name that the archive's OWN DATA states for a person who has a page. Written 18 October 2026 for the linking standard (L2). tools/build_names_index.py adds each as a row of the names index only if the form is in the record lines of the page named in stated_by (person-records.json or dossiers.json, by key), no built page bears the form, and the page is built and indexable; an entry that fails any test stops the build. A spelling merely close to a name is NOT an alias: namefold.json folds surnames for the search and merges nobody. The other spelling variants the 12 narrative pages use are left out on purpose, and listed in the editorial table, because nothing in the data says whose they are.",
+ "aliases": [
+  {
+   "form": "Hannah Sanigor",
+   "url": "/people/hannah-saniger/",
+   "stated_by": {
+    "file": "person-records",
+    "key": "hannah-saniger"
+   },
+   "reason": "her own record line: baptised HANNAH SANIGOR at Berkeley, 18 August 1804, father JNO SANIGOR"
+  },
+  {
+   "form": "Thomas Sanigre",
+   "url": "/who/thomas-saniger/",
+   "stated_by": {
+    "file": "dossiers",
+    "key": "thomas-saniger"
+   },
+   "reason": "his own record line: married Martha Golding at Bristol, 24 August 1828, indexed THOMAS SANIGRE, written SANIGAR in the register"
+  },
+  {
+   "form": "Jone Bill",
+   "url": "/who/joan-bill/",
+   "stated_by": {
+    "file": "dossiers",
+    "key": "joan-bill"
+   },
+   "reason": "her own record line: Jone Bill in Smyth, Joan Bill in Cooke"
+  }
+ ]
+}

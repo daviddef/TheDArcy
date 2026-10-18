@@ -49,7 +49,10 @@ def main():
                 "inTree": key in tree_names,
                 "treeLink": tree_slug.get(key, ""),
             })
-            e["rows"].append({"says": r["says"], "source": r["source"], "link": r["link"]})
+            row = {"says": r["says"], "source": r["source"], "link": r["link"]}
+            if r.get("page"):
+                row["page"] = r["page"]       # the narrative page that reads this name in running prose (18 October 2026)
+            e["rows"].append(row)
 
     # Records this archive has decided belong to NOBODY in the family tree,
     # even though the tree carries their name. tools/record-owners.json says so

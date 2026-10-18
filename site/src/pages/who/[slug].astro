@@ -71,6 +71,7 @@ const context = (src) => WHERE.find(([re]) => re.test(src));
               <span class="chip doc">record</span> {r.source.replace(/^record · /, "")}
               {r.link && <> · <a href={r.link}>the source ↗</a></>}
               {c && <> · <a href={u(c[2])}>{c[1]} →</a></>}
+              {r.page && <> · <a href={u(r.page)}>where this archive reads the name →</a></>}
             </p>
           </div>
         );

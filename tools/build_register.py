@@ -29,8 +29,13 @@ OUT = os.path.join(ROOT, "site", "src", "data", "register.json")
 # name, what the source says, source label, link (or "" when there is none)
 R = []
 
-def rec(name, says, source, link=""):
-    R.append({"name": name, "says": says, "source": source, "link": link, "kind": "record"})
+def rec(name, says, source, link="", page=None):
+    """`page` (optional) is the narrative page on which this archive reads the name in running prose; the person's /who/ page
+    links back to it. Rows made before 18 October 2026 have none."""
+    row = {"name": name, "says": says, "source": source, "link": link, "kind": "record"}
+    if page:
+        row["page"] = page
+    R.append(row)
 
 QBDM = "Queensland death index"
 QBDM_L = "https://www.familyhistory.bdm.qld.gov.au/"
@@ -1215,6 +1220,124 @@ for _n, _says, _src in [
      "TBGAS vol. 6, 1881\u201382"),
 ]:
     rec(_n, _says, _src, L if _src == BCM else "")
+
+
+# --- People read in running prose, entered 18 October 2026 --------------------
+# The linking standard (kit/docs/linking-standard.md, L2) asks that every person the archive names from a record it has read has an
+# entry, so a name quoted from a record is never a dead end. These are people whom a narrative page names from a document it cites
+# and who had no page. EVERY ONE IS SHOWN DEAD BY ARITHMETIC: the record that names them is dated 1900 or earlier, and the estate's
+# living rule (kit/tools/living_rule.py: 80 or younger with no death recorded is living) cannot reach anyone named as an adult,
+# or as an infant, in a record that old. Each line says only what the page says, in the page's words, and names the page.
+# NOT entered, on purpose, and listed in ~/Downloads/audit-briefs/links/darcy-editorial.md: a name two different men could bear on
+# the same page (two Johns, two Georges, two Thomases in one pedigree), a name that is also another page's (Elizabeth Pitt, Sarah
+# Jones, Mary Owens), a phrase that is a fragment, and the twentieth-century people on /great-war/ whose living status is undecided.
+SW = "/swonhungre/"
+HERTS = "record · Hertfordshire Archives, DE/M/95 (14 March 1346), the Berkeley copy BCM/A/1/24/297"
+TBG10 = "record · TBGAS vol. 10, the Daubeney pedigree (inquisitions of 16 and 18 Richard II)"
+SMY = "record · John Smyth of Nibley, Hundred of Berkeley (the Berkeley pedigree), as read on /swonhungre/"
+COO = "record · Cooke, the Swonhungers' descent (Transactions of the Bristol & Gloucestershire Archaeological Society)"
+for _n, _says, _src, _link, _pg in [
+    ("Agnes de Lorewynge",
+     "named in 1346 as the ancestor of John de Lorewynge, and one of the three coheirs among whom John de Wyke's inheritance in Ham was divided · DE/M/95",
+     HERTS, "", SW),
+    ("John de Lorewynge",
+     "the heir of Agnes de Lorewynge, and one of the three parties (with John Capel and Thomas de Swonhongre) to the division of John de Wyke's inheritance in Ham in 1346 · DE/M/95",
+     HERTS, "", SW),
+    ("Joan Capel",
+     "mother of John Capel and his predecessor in one of the three shares of John de Wyke's inheritance in Ham, divided in 1346 · DE/M/95",
+     HERTS, "", SW),
+    ("Elizabeth Wauton",
+     "late wife of Andrew Wauton; an inquisition of 18 Richard II (no. 81) asked who were the heirs of her grandparents John and Cecilia Daubeney, whose lands at Kingsholme and Hinton Daubeney had fallen in, and the Daubeney pedigree names John Swonhonger as her coheir in 1394",
+     TBG10, "", SW),
+    ("John de Albiniaco",
+     "“lord of Kingsholm by Gloucester”, whose name is the Latin of Daubeney (“alias Albeny”); the father of Isabel, through whom a fourth part of the manor of Kingsholm came to the Swonhunger family",
+     SMY, "", SW),
+    ("Isabel Daubeney",
+     "“daughter and coheir of John de Albiniaco”, died before 1393; Smyth has her marry Elias and Cooke has her marry John, so the two printed pedigrees differ by a generation on which man took the Daubeney heiress",
+     TBG10, "", SW),
+    ("Joan Bill",
+     "written Jone Bill in Smyth (“Jone, daughter of John Bill”) and Joan Bill in Cooke: the wife of an Elias Swonhonger and, in both, the mother of John Swonhonger who died in 1401–2",
+     COO, "", SW),
+    ("John Coueleye",
+     "to whom Thomas de Berkeley granted the marriage of John Swonhongre, son and heir of Elias Swonhongre, in 1390 (Monday before St Nicholas, 14 Richard II) · BCM/A/4/2/22",
+     BCM, "", SW),
+    ("Robert de Bradeston",
+     "a witness to Berkeley charters beside Thomas de Swonhungre from the mid-13th century to about 1311; one of the friends on whose advice Thomas de Stone gave up his holding · BCM/A/1/24/190",
+     BCM, "", SW),
+    ("Robert Wyther",
+     "a witness to Berkeley charters beside Thomas de Swonhungre from the mid-13th century to about 1311; one of the friends on whose advice Thomas de Stone gave up his holding · BCM/A/1/24/190",
+     BCM, "", SW),
+    ("John de Crawleye",
+     "a witness to Berkeley charters beside Thomas de Swonhungre, in the witness lists that make up most of the 175 other Berkeley Castle records on the name",
+     BCM, "", SW),
+    ("John Sewaker",
+     "a witness to Berkeley charters beside Thomas de Swonhungre, in the witness lists that make up most of the 175 other Berkeley Castle records on the name",
+     BCM, "", SW),
+    ("Peter de Wika",
+     "among the witnesses to the grant of 7 acres in the manor of Ham to Thomas de Asshelworth, before 1272 · BCM/A/1/24/67",
+     BCM, "", SW),
+    ("Thomas de Wike",
+     "among the witnesses to the grant of 7 acres in the manor of Ham to Thomas de Asshelworth, before 1272 · BCM/A/1/24/67",
+     BCM, "", SW),
+    ("Walter Bellamy",
+     "the tenant to whom Thomas lord Berkeley let Bellamy's Place at Southend in Nibley for 40s. a year, early in the reign of Edward II · Smyth's survey of about 1639",
+     SMY, "", SW),
+    ("Nicholas Thorpe",
+     "his death, seised of the manor of Wanswell, was presented by the Homage of the manor of Ham on 26 May 1600 (42 Elizabeth) · court roll of the manor of Ham",
+     COO, "", SW),
+    ("Richard Holliday",
+     "cooper, of Berkeley; the mortgagee of Edward Saniger of Saniger, clothier, in 1692 · D2957/41/126, Gloucestershire Archives",
+     GA, "", "/saniger-place/"),
+    ("William Panyter",
+     "the grantee of a messuage and land in Swanhanger from Elias de Swonhongre, for two lives, on 11 April 1377 · BCM/A/1/24/185, and a copy MS 3549/20 at Birmingham",
+     BCM, "", "/saniger-place/"),
+    ("Henry Mallett",
+     "a minor at his death; his inquisition post mortem of 6 April 1626 names messuages and land at Peddington, Matford and Swanhanger · MS 3549/187, Library of Birmingham",
+     "record · Library of Birmingham, MS 3549/187", "", "/saniger-place/"),
+    ("John Gifford",
+     "the subject of an inquisition of 16 Richard II, one of the records John Smyth cites “for proofe of the pedegree” of the Swonhungers",
+     SMY, "", "/saniger-place/"),
+    ("Mary Millard",
+     "defendant in CHRISTIAN SANIGER v. MARY MILLARD, a defamation suit in the consistory court at Gloucester, 1768 · GDR/B4/1/387",
+     "record · Gloucestershire Archives, GDR/B4/1/387 (catalogue description)", "", "/saniger-place/"),
+]:
+    rec(_n, _says, _src, _link, _pg)
+
+AL78 = "record · A List of the Officers of the Army, 1778"
+AL78_L = "https://archive.org/details/alistofficersar00offigoog"
+for _n in ["Benjamin Slack", "Charles Holloway", "James Fiddes", "James Lees", "John Humfrey", "John Johnson", "Lewis Hay",
+           "Richard Hockings", "Robert Beatson", "Thomas Whelpdale"]:
+    rec(_n, "listed among the Practitioner Engineers and Second Lieutenants of the Corps of Engineers in the printed Army List of 1778, in the seniority run with Robert D'Arcy; the 1781 list prints the same men with their dates",
+        AL78, AL78_L, "/the-corps/")
+
+rec("Abbas Mirza", "the Persian prince in whose service Joseph D'Arcy spent five years: the obituary of 1848 names him, and Sir William Ouseley names him outright and dates the moment, November 1811, when the Shah gave D'Arcy a robe of honour and he went to join the army of Abbas Mirza",
+    OUS if "OUS" in dir() else "record · Sir William Ouseley, Travels in Various Countries of the East", "", "/joseph-darcy/")
+rec("James Morier", "Secretary of the British Embassy to Persia; his Second Journey through Persia names Joseph D'Arcy, and between him and William Ouseley the two name D'Arcy thirty-eight times",
+    "record · James Morier, A Second Journey through Persia, Armenia, and Asia Minor, to Constantinople (1818)", "https://archive.org/details/Travel18101816Morier", "/joseph-darcy/")
+rec("William Ouseley", "brother of the Ambassador, who travelled with the embassy and named Joseph D'Arcy in his Travels in Various Countries of the East (1819–1823); the prince Joseph D'Arcy served is named outright there",
+    "record · Sir William Ouseley, Travels in Various Countries of the East, more particularly Persia (1819–1823)", "https://archive.org/details/dli.ministry.06851", "/joseph-darcy/")
+
+for _n, _says, _src, _link, _pg in [
+    ("John Biddulph", "head of the house in Queen Street, Stoke upon Trent, on census night 1851: coal dealer, aged 53, born at Bermondsey, Surrey; his daughter Anne Sneyd, aged 31, was enumerated in his house",
+     "record · 1851 census, Queen Street, Stoke upon Trent (FindMyPast)", "", "/sneyds/"),
+    ("Ann Biddulph", "married James Sneyd at Stoke, St Peter, in 1842 (local register reference 31/03/214); enumerated as Ann, Anne and Anne Sneyd in the censuses, aged 31 in 1851, and the daughter of John and Julia Biddulph of Queen Street, Stoke",
+     "record · Staffordshire Name Indexes, marriage 1842, Stoke St Peter; 1851 census, Queen Street, Stoke", "", "/sneyds/"),
+    ("Thomas Chubb", "a runaway convict, one of three men (with Frederick Knowles and a man named Rees) who robbed the house of a settler named Brown near the Vale of Clwydd on 29 October 1839; the Monitor's report of 8 November 1839 is of their taking, in which Serjeant Sneyd and a trooper went out",
+     "record · The Sydney Monitor and Commercial Advertiser, 8 November 1839, p.2", "https://nla.gov.au/nla.news-article32166178", "/sergeant-sneyd/"),
+    ("Frederick Knowles", "a runaway convict, one of three men (with Thomas Chubb and a man named Rees) who robbed the house of a settler named Brown near the Vale of Clwydd on 29 October 1839; the Monitor's report of 8 November 1839 is of their taking, in which Serjeant Sneyd and a trooper went out",
+     "record · The Sydney Monitor and Commercial Advertiser, 8 November 1839, p.2", "https://nla.gov.au/nla.news-article32166178", "/sergeant-sneyd/"),
+    ("Ann Dissington", "married a second William Sneyd at Madeley on 4 October 1779; his children are interleaved with those of the first William Sneyd in the same register",
+     "record · FreeREG, Madeley All Saints parish register", FR, "/sneyd/"),
+    ("Mary Sannigar", "an index entry at Stroud in 1794, one of the six rows of a wildcard search of Gloucestershire for 1793–1803 (S*N*G*, 122 rows, all read) that are really this surname",
+     "record · England Births & Baptisms / England Marriages (FindMyPast), wildcard search of Gloucestershire 1793–1803", "", "/hannah-baptism/"),
+    ("James Senigar", "an index entry at Bristol in 1795, one of the six rows of a wildcard search of Gloucestershire for 1793–1803 (S*N*G*, 122 rows, all read) that are really this surname",
+     "record · England Births & Baptisms / England Marriages (FindMyPast), wildcard search of Gloucestershire 1793–1803", "", "/hannah-baptism/"),
+    ("Daniel Sinigar", "an index entry at Gloucester in 1800, one of the six rows of a wildcard search of Gloucestershire for 1793–1803 (S*N*G*, 122 rows, all read) that are really this surname",
+     "record · England Births & Baptisms / England Marriages (FindMyPast), wildcard search of Gloucestershire 1793–1803", "", "/hannah-baptism/"),
+    ("Sarah Sinigor", "an index entry at Stinchcombe in 1801, one of the six rows of a wildcard search of Gloucestershire for 1793–1803 (S*N*G*, 122 rows, all read) that are really this surname",
+     "record · England Births & Baptisms / England Marriages (FindMyPast), wildcard search of Gloucestershire 1793–1803", "", "/hannah-baptism/"),
+]:
+    rec(_n, _says, _src, _link, _pg)
 
 
 # ── The two grafts, so the register can say which people hang on them ─────────

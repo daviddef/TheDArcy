@@ -40,7 +40,7 @@ SINCE 18 OCTOBER 2026 it grades the OTHER index too: the names index the kit's b
 rules, read again from the pages and not from the generator: a "people" entry is a name exactly one page bears
 (a declared copy not counted) and that page is its address, not noindex, and no page bearing the name is noindex;
 an "ambiguous" entry is a name two or more pages bear, at least one of them a /people/ page, none noindex, sent to
-/people/?q=<that name> and to nothing else; no name twice, no alias (the archive holds none), no one-word name.
+/people/?q=<that name> and to nothing else; no name twice, no one-word name, and an alias only as a row of its own that names-aliases.json states (the form is in the record lines of the page it goes to, no built page bears it).
 It is tried against planted faults first, like the other.
 """
 import json, os, sys, tempfile
@@ -99,10 +99,18 @@ def check(dist, rows):
     return fails
 
 
-def check_names(dist, doc):
-    """Findings (strings) for the names index `doc` ({"people": [...], "ambiguous": [...]}) against the built pages."""
+def check_names(dist, doc, aliases=None):
+    """Findings (strings) for the names index `doc` ({"people": [...], "ambiguous": [...]}) against the built pages.
+
+    `aliases` = [(form, url)]: the spellings the archive's data STATES for a page's person (tools/build_names_index.py
+    verified_aliases, re-run here from the data and not from the generator's output). A "people" row that no built page
+    bears is accepted only if it is one of them, at that address; every other such row is refused."""
     pages = bm.built_pages(dist)
     groups = bm.name_groups(pages)
+    if aliases is None:
+        import build_names_index as _bni
+        aliases = _bni.verified_aliases(pages, groups)[0]
+    stated = {bm.fold(f): u for f, u in aliases}
     fails, seen = [], {}
     if not isinstance(doc, dict) or set(doc) - {"people", "ambiguous"}:
         return ["the names index must be {\"people\": [...], \"ambiguous\": [...]} and nothing else"]
@@ -110,7 +118,7 @@ def check_names(dist, doc):
         for r in doc.get(field) or []:
             if not (isinstance(r, dict) and isinstance(r.get("name"), str) and isinstance(r.get("url"), str)
                     and set(r) <= {"name", "url"}):
-                fails.append(f"{field}: row {r!r} is not {{name, url}} (the archive holds no aliases)")
+                fails.append(f"{field}: row {r!r} is not {{name, url}} (an alias is a row of its own, stated in names-aliases.json)")
                 continue
             name, url = r["name"], r["url"]
             key = bm.fold(name)
@@ -120,9 +128,13 @@ def check_names(dist, doc):
             if len(name.split()) < 2:
                 fails.append(f"{name!r}: one word")
             members = groups.get(key)
+            if not members and field == "people" and stated.get(key) == url:
+                continue                                       # a spelling the data states for that page's person
             if not members:
-                fails.append(f"{name!r}: no built page bears this name")
+                fails.append(f"{name!r}: no built page bears this name and it is not a spelling the data states for the page it goes to")
                 continue
+            if key in stated:
+                fails.append(f"{name!r} is a stated spelling and a built page also bears it: a namesake would be shadowed")
             if any(m[3] for m in members):
                 fails.append(f"{name!r}: a noindex page (a living person) bears this name; it must not be in the index")
             if field == "people":
@@ -201,21 +213,28 @@ def selftest():
             "an ambiguous name that goes to a person": {"people": [], "ambiguous": [{"name": "John Smith", "url": "/people/john-smith-1850/"}]},
             "an ambiguous name only one page bears": {"people": [], "ambiguous": [{"name": "Eve Jones", "url": q("Eve Jones")}]},
             "a wrong address for the person": {"people": [{"name": "Eve Jones", "url": "/people/ann-brown/"}], "ambiguous": []},
-            "an alias": {"people": [{"name": "Eve Jones", "url": "/people/eve-jones/", "aliases": ["Jones Eve"]}], "ambiguous": []},
+            "an alias list on a row": {"people": [{"name": "Eve Jones", "url": "/people/eve-jones/", "aliases": ["Jones Eve"]}], "ambiguous": []},
+            "a spelling nobody stated": {"people": [{"name": "Jones Eve", "url": "/people/eve-jones/"}], "ambiguous": []},
+            "a stated spelling sent to the wrong page": {"people": [{"name": "Eva Jonas", "url": "/people/ann-brown/"}], "ambiguous": []},
             "a name no page bears": {"people": [{"name": "Nobody Here", "url": "/people/nobody-here/"}], "ambiguous": []},
             "the same name twice": {"people": [{"name": "Eve Jones", "url": "/people/eve-jones/"}, {"name": "eve jones", "url": "/people/eve-jones/"}], "ambiguous": []},
             "a one-word name": {"people": [{"name": "Eve", "url": "/people/eve-jones/"}], "ambiguous": []},
         }
         planted_names["a search for a /who/-only name"] = {"people": [], "ambiguous": [{"name": "Tom Witness", "url": q("Tom Witness")}]}
+        stated = [("Eva Jonas", "/people/eve-jones/")]
         for what, doc in planted_names.items():
-            if not check_names(root, doc):
+            if not check_names(root, doc, stated):
                 bad.append(f"self-test: the names-index check did not refuse {what}")
+        shadow = {"people": [{"name": "Tom Witness", "url": "/who/tom-witness/"}], "ambiguous": []}
+        if not check_names(root, shadow, [("Tom Witness", "/who/tom-witness/")]):
+            bad.append("self-test: the names-index check did not refuse a stated spelling that a built page also bears")
         clean_names = {"people": [{"name": "Eve Jones", "url": "/people/eve-jones/"}, {"name": "Tom Witness", "url": "/who/tom-witness/"}],
                        "ambiguous": [{"name": "John Smith", "url": q("John Smith")}, {"name": "Mary Who", "url": q("Mary Who")}]}
-        got = check_names(root, clean_names)
+        clean_names["people"].append({"name": "Eva Jonas", "url": "/people/eve-jones/"})
+        got = check_names(root, clean_names, stated)
         if got:
             bad.append(f"self-test: a clean names index was refused: {got[0]}")
-    return bad, len(planted) + len(planted_names)
+    return bad, len(planted) + len(planted_names) + 1
 
 
 def main():
