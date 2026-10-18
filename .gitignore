@@ -25,3 +25,8 @@ sources/inquests/*.pdf
 # scoped `git add` picks up another session's work, which has happened in this
 # estate more than once tonight.
 site/dist-*/
+
+# The names index the build-time linker is run with (tools/build_names_index.py): generated inside
+# `npm run build` from the built pages, never edited by hand. The LIVING list it is run with is not here
+# at all: it is written outside the repository, in ~/.local/state/darcy-archive/.
+site/.autolink/

@@ -5,11 +5,15 @@ Two outputs:
   site/src/data/mentions.json   {slug: [{path, title, snippet}, ...]}
                                 consumed at build time by /people/[slug]
   site/public/whoindex.json     [[name, slug, count, kind, n], ...]
-                                consumed at run time by wholink.js, which turns
-                                a person's name in any page's prose into a link
+                                the SAME resolution the build-time linker uses
+                                (tools/build_names_index.py reads this file's rules
+                                through built_pages/name_groups below); since 18
+                                October 2026 no script in the browser reads it, and
+                                tools/check_whoindex.py, check_living_standard.py
+                                and selftest.py still grade it.
                                 kind "p": a /people/ page, "w": a /who/ page
                                 (a witness, an official), "a": AMBIGUOUS, a name
-                                borne by n >= 2 pages, slug "" (wholink sends it
+                                borne by n >= 2 pages, slug "" (the linker sends it
                                 to /people/?q=<name>, never to a guess)
 
 This reads the BUILT html rather than the .astro sources, because the sources
@@ -147,8 +151,14 @@ def index_rows(groups, pages_for):
     return rows
 
 
+# THE LINKS THE BUILD-TIME LINKER ADDS ARE NOT TEXT (18 October 2026): see tools/autolink_strip.py. The wrappers
+# come off before the page is read, so mentions.json and whoindex.json read the page as they did before the pass.
+from autolink_strip import plain as _unlinked
+
+
 def text_of(path):
     raw = open(path, encoding="utf-8", errors="ignore").read()
+    raw = _unlinked(raw)
     raw = drop_book_furniture(raw)
     title = ""
     m = re.search(r"<h1[^>]*>(.*?)</h1>", raw, re.S)

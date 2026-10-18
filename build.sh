@@ -71,6 +71,10 @@ python3 tools/build_family_pages.py
 python3 tools/build_dna.py
 
 echo "── first pass"
+# `npm run build` ends with the name linking the browser used to do: tools/autolink_pass.py runs the kit's
+# autolink.py over the built HTML right after astro build (so every gate after it reads the linked pages), and
+# its ratchet gate (check:names, floor .linkfloor.json) runs last. build_mentions.py and build_search.py read
+# the linked pages as if the links were not there (tools/autolink_strip.py), so nothing below depends on them.
 # THE BRACKETS ARE LOAD-BEARING, and this is not a style choice. Under
 # `set -e` a failing command inside an `&&` LIST DOES NOT ABORT THE SCRIPT:
 #     cd site && sh -c "exit 143" && cd ..

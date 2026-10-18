@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "astro dev --port 4323",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run check:pin && npm run atlas && astro build && npm run sitemap && npm run check:book && npm run check:living && npm run check:kin && npm run check:living:tree && npm run check:templates && npm run check:kit && npm run check:worklist && npm run check:covers && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:archive && npm run check:nav && npm run check:prose",
+    "build": "npm run check:pin && npm run atlas && astro build && npm run autolink && npm run sitemap && npm run check:book && npm run check:living && npm run check:kin && npm run check:living:tree && npm run check:templates && npm run check:kit && npm run check:worklist && npm run check:covers && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:archive && npm run check:nav && npm run check:prose && npm run check:names",
     "preview": "astro preview --port 4323",
+    "autolink": "python3 ../tools/autolink_pass.py",
+    "check:names": "python3 ../tools/autolink_pass.py --gate",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
     "check:kit": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkarchive.py --dist dist",
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",

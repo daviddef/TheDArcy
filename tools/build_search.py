@@ -14,6 +14,7 @@ import json, os, re, sys, unicodedata, html, collections
 import sys as _sys, os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 import outdir
+from autolink_strip import plain as _unlinked
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "site", "src", "data")
@@ -239,7 +240,7 @@ def main():
                 continue
             title = html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()
             dek = re.search(r'<meta name="description" content="([^"]*)"', src)
-            body = html.unescape(re.sub(r"<[^>]+>", " ", src))
+            body = html.unescape(re.sub(r"<[^>]+>", " ", _unlinked(src)))
             body = re.sub(r"\s+", " ", body)[:4000]
             add("Page", title, html.unescape(dek.group(1)) if dek else "",
                 "/" + rel + ("/" if rel else ""), body)

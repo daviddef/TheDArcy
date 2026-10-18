@@ -563,7 +563,7 @@ const anyDamaged = notes.some((n) => n.damaged);
         {(mentions[p.slug] || []).map((h) => (
           <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
             <a href={u(h.path)}><strong>{h.title}</strong></a>
-            <p class="small noauto" style="margin-top:.3rem;color:var(--ink-2)">{h.snippet}</p>
+            <p class="small noauto" data-no-autolink style="margin-top:.3rem;color:var(--ink-2)">{h.snippet}</p>
           </div>
         ))}
       </div>

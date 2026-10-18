@@ -34,8 +34,17 @@ refused, and a clean index must pass. A gate that has not been shown to fail
 proves nothing by passing.
 
 It reads the BUILT site and no tree data, so it runs wherever the build does.
+
+SINCE 18 OCTOBER 2026 it grades the OTHER index too: the names index the kit's build-time linker is run with
+(site/.autolink/<build>/names-index.json, written by tools/build_names_index.py inside `npm run build`). The same
+rules, read again from the pages and not from the generator: a "people" entry is a name exactly one page bears
+(a declared copy not counted) and that page is its address, not noindex, and no page bearing the name is noindex;
+an "ambiguous" entry is a name two or more pages bear, at least one of them a /people/ page, none noindex, sent to
+/people/?q=<that name> and to nothing else; no name twice, no alias (the archive holds none), no one-word name.
+It is tried against planted faults first, like the other.
 """
 import json, os, sys, tempfile
+from urllib.parse import quote
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -90,6 +99,48 @@ def check(dist, rows):
     return fails
 
 
+def check_names(dist, doc):
+    """Findings (strings) for the names index `doc` ({"people": [...], "ambiguous": [...]}) against the built pages."""
+    pages = bm.built_pages(dist)
+    groups = bm.name_groups(pages)
+    fails, seen = [], {}
+    if not isinstance(doc, dict) or set(doc) - {"people", "ambiguous"}:
+        return ["the names index must be {\"people\": [...], \"ambiguous\": [...]} and nothing else"]
+    for field in ("people", "ambiguous"):
+        for r in doc.get(field) or []:
+            if not (isinstance(r, dict) and isinstance(r.get("name"), str) and isinstance(r.get("url"), str)
+                    and set(r) <= {"name", "url"}):
+                fails.append(f"{field}: row {r!r} is not {{name, url}} (the archive holds no aliases)")
+                continue
+            name, url = r["name"], r["url"]
+            key = bm.fold(name)
+            if key in seen:
+                fails.append(f"{name!r} is in the names index twice ({seen[key]} and {field})")
+            seen[key] = field
+            if len(name.split()) < 2:
+                fails.append(f"{name!r}: one word")
+            members = groups.get(key)
+            if not members:
+                fails.append(f"{name!r}: no built page bears this name")
+                continue
+            if any(m[3] for m in members):
+                fails.append(f"{name!r}: a noindex page (a living person) bears this name; it must not be in the index")
+            if field == "people":
+                want = f"/{members[0][0]}/{members[0][1]}/"
+                if len(members) != 1:
+                    fails.append(f"{name!r} is under \"people\" and {len(members)} pages bear it: a reader would be sent to a guess")
+                elif url != want:
+                    fails.append(f"{name!r} goes to {url} and the page that bears it is {want}")
+            else:
+                if len(members) < 2:
+                    fails.append(f"{name!r} is ambiguous and one page bears it")
+                if not any(m[0] == "people" for m in members):
+                    fails.append(f"{name!r} is ambiguous and no /people/ page bears it (the search lists /people/)")
+                if url != "/people/?q=" + quote(name, safe=""):
+                    fails.append(f"{name!r} is ambiguous and goes to {url}, not to the search for it")
+    return fails
+
+
 # ---- the self-test: a small dist in a temporary directory -------------------
 
 def _page(root, kind, slug, name, noindex=False, canonical=None):
@@ -141,7 +192,30 @@ def selftest():
         got = check(root, clean)
         if got:
             bad.append(f"self-test: a clean index was refused: {got[0]}")
-    return bad, len(planted)
+        q = lambda n: "/people/?q=" + quote(n, safe="")
+        planted_names = {
+            "a shared name mapped to one person": {"people": [{"name": "John Smith", "url": "/people/john-smith-1850/"}], "ambiguous": []},
+            "a living namesake, the dead one mapped alone": {"people": [{"name": "Ann Brown", "url": "/people/ann-brown/"}], "ambiguous": []},
+            "a living namesake sent to the search": {"people": [], "ambiguous": [{"name": "Ann Brown", "url": q("Ann Brown")}]},
+            "a noindex page": {"people": [{"name": "Sam Living", "url": "/people/sam-living/"}], "ambiguous": []},
+            "an ambiguous name that goes to a person": {"people": [], "ambiguous": [{"name": "John Smith", "url": "/people/john-smith-1850/"}]},
+            "an ambiguous name only one page bears": {"people": [], "ambiguous": [{"name": "Eve Jones", "url": q("Eve Jones")}]},
+            "a wrong address for the person": {"people": [{"name": "Eve Jones", "url": "/people/ann-brown/"}], "ambiguous": []},
+            "an alias": {"people": [{"name": "Eve Jones", "url": "/people/eve-jones/", "aliases": ["Jones Eve"]}], "ambiguous": []},
+            "a name no page bears": {"people": [{"name": "Nobody Here", "url": "/people/nobody-here/"}], "ambiguous": []},
+            "the same name twice": {"people": [{"name": "Eve Jones", "url": "/people/eve-jones/"}, {"name": "eve jones", "url": "/people/eve-jones/"}], "ambiguous": []},
+            "a one-word name": {"people": [{"name": "Eve", "url": "/people/eve-jones/"}], "ambiguous": []},
+        }
+        planted_names["a search for a /who/-only name"] = {"people": [], "ambiguous": [{"name": "Tom Witness", "url": q("Tom Witness")}]}
+        for what, doc in planted_names.items():
+            if not check_names(root, doc):
+                bad.append(f"self-test: the names-index check did not refuse {what}")
+        clean_names = {"people": [{"name": "Eve Jones", "url": "/people/eve-jones/"}, {"name": "Tom Witness", "url": "/who/tom-witness/"}],
+                       "ambiguous": [{"name": "John Smith", "url": q("John Smith")}, {"name": "Mary Who", "url": q("Mary Who")}]}
+        got = check_names(root, clean_names)
+        if got:
+            bad.append(f"self-test: a clean names index was refused: {got[0]}")
+    return bad, len(planted) + len(planted_names)
 
 
 def main():
@@ -164,6 +238,18 @@ def main():
         print(f"  FAIL  whoindex   no built person pages under {dist} — nothing was examined")
         return 1
     fails = check(dist, rows)
+    import build_names_index as bni
+    ipath = bni.paths(dist)[0]
+    if not os.path.isfile(ipath):
+        print(f"  FAIL  whoindex   no names index at {os.path.relpath(ipath, bm.ROOT)}: tools/autolink_pass.py has not run on this build")
+        return 1
+    ndoc = json.load(open(ipath, encoding="utf-8"))
+    nfails = check_names(dist, ndoc)
+    if nfails:
+        print(f"  FAIL  whoindex   {len(nfails)} finding(s) in the names index the build-time linker is run with")
+        for m in nfails[:8]:
+            print(f"          {m}")
+        return 1
     if fails:
         print(f"  FAIL  whoindex   {len(fails)} finding(s) in {len(rows)} index row(s)")
         for m in fails[:8]:
@@ -171,7 +257,8 @@ def main():
         return 1
     k = {x: sum(1 for r in rows if r[3] == x) for x in "pwa"}
     print(f"  ok    whoindex   {len(rows)} rows ({k['p']} people and {k['w']} witnesses each borne by exactly one page, "
-          f"{k['a']} shared names sent to the search); self-test refused all {tried} planted faults and passed a clean index")
+          f"{k['a']} shared names sent to the search); names index for the build-time linker: {len(ndoc['people'])} people, "
+          f"{len(ndoc['ambiguous'])} shared names, same rules; self-test refused all {tried} planted faults and passed a clean index")
     return 0
 
 
