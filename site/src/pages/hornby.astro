@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
+import Rec from "../components/Rec.astro";
 import { u } from "../lib/url.js";
 ---
 <Base
@@ -102,7 +103,7 @@ import { u } from "../lib/url.js";
 
     <Note style="margin-top:1.2rem"><strong>Nobody ever answered it.</strong> A full-text search of
     everything the Internet Archive holds for “Commandant of Chatham” returns 144 hits, and the only
-    one in <em>Notes and Queries</em> is the question itself. <strong>The question has stood open in
+    one in <em><Rec id="ia-notesqueries310unse">Notes and Queries</Rec></em> is the question itself. <strong>The question has stood open in
     print since 1866</strong>, and this archive has now joined the queue behind a correspondent who
     gave up a hundred and fifty-nine years ago.</Note>
 
@@ -427,7 +428,7 @@ import { u } from "../lib/url.js";
     <ol class="dek">
       <li><strong>The Woolwich cadet registers are <em>not</em> the answer.</strong>
       <span class="chip dis">ruled out</span> This archive named them as its best remaining hope, and
-      was wrong. <strong>WO 149</strong>, the Registers of Cadets of the Royal Military Academy, runs
+      was wrong. <strong><Rec id="tna-wo-149">WO 149</Rec></strong>, the Registers of Cadets of the Royal Military Academy, runs
       from <strong>1790</strong> and is held at Sandhurst, not Kew — so it cannot contain a cadet of
       the early 1770s. The printed <em>Records of the Royal Military Academy</em> (1851 and 1892) have
       also both been searched in full and contain no Robert D'Arcy; they are narrative institutional
@@ -438,7 +439,7 @@ import { u } from "../lib/url.js";
       with no result, so any further search needs to go to unindexed originals: the Bishop's
       Transcripts for the North Riding, and the garrison and chapel registers of the towns where
       artillery families lived.</li>
-      <li><strong>His own will — <span class="mono">PROB 11/1728/64</span>, and it is digitised.</strong>
+      <li><strong>His own will — <span class="mono"><Rec id="tna-prob-11-1728-64">PROB 11/1728/64</Rec></span>, and it is digitised.</strong>
       Found at the National Archives on 9 September 2026 while looking for a different will entirely:
       <em>"Will of Robert D'Arcy, Major General in the Army and Colonel of the Royal Engineers of
       Chatham, Kent"</em>, proved in the Prerogative Court of Canterbury on <strong>4 July 1827</strong>,
@@ -464,21 +465,21 @@ import { u } from "../lib/url.js";
       archive was hoping to find is not sitting in the obvious place, and the next person need not
       look there again.</li>
 
-      <li><strong>Board of Ordnance minutes — the series is <span class="mono">WO 47</span>, and
+      <li><strong>Board of Ordnance minutes — the series is <span class="mono"><Rec id="tna-wo-47">WO 47</Rec></span>, and
       there is a reason nobody has found him in it.</strong>
       <span class="chip inf">located, but not searchable from a catalogue</span> Searched at the
-      National Archives on 10 September 2026. <span class="mono">WO 47</span> is
+      National Archives on 10 September 2026. <span class="mono"><Rec id="tna-wo-47">WO 47</Rec></span> is
       <em>"Ordnance Office: Board of Ordnance: Minutes"</em>, 1644–1856 — so it certainly covers
       January 1776. But the series description carries its own warning: <strong>"the minute books or
       journals of proceedings of the Board of Ordnance prior to 1810 exist in several broken
       series."</strong> They are not catalogued to item level and cannot be pinpointed by name from a
       desk. This turns a vague hope into a specific reference with a specific obstacle: the piece
       covering a commission of 17 January 1776 has to be identified in the reading room at Kew, by
-      somebody with the volumes in front of them. <span class="mono">WO 45</span>, the reference books
+      somebody with the volumes in front of them. <span class="mono"><Rec id="tna-wo-45">WO 45</Rec></span>, the reference books
       to Ordnance correspondence, would be the finding aid — but it starts in <strong>1783</strong>,
       seven years too late.</li>
 
-      <li><strong>Board of Ordnance records — WO 47 and WO 54.</strong>
+      <li><strong>Board of Ordnance records — <Rec id="tna-wo-47">WO 47</Rec> and <Rec id="tna-wo-54">WO 54</Rec>.</strong>
       <span class="chip inf">now the best hope</span> Until 1855 the Royal Engineers answered to the
       <strong>Board of Ordnance</strong>, not the War Office, and kept records entirely separate from
       the Army's. Connolly shows he entered the Corps as a second lieutenant on 17 January 1776 with

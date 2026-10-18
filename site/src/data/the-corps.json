@@ -168,7 +168,7 @@
     "age": "Fyers's Brigade-Major calls him “an old man beyond sixty” in August 1809. This archive's own best evidence for his age is the Chatham burial register, which gives him as 76 at his death in May 1827 and so puts his birth about 1750–51 — the source the tree's “1751” has always come from. A man born in 1750 or 1751 was FIFTY-EIGHT OR FIFTY-NINE in August 1809, not beyond sixty. The two do not agree, and the register is much the better witness: it was written by a clerk with a date in front of him, while “an old man beyond sixty” is an aside in an anecdote recalled years later by a man complaining about him. It is recorded because it is the only physical description of him this archive has, and because a source that is slightly wrong about an age can still be right about an arrest.",
     "chipAge": "an aside, not a birth record — and it misses the register by a year or two",
     "careful": "Porter is a nineteenth-century compiler working from Corps records, not the records themselves. He is the Corps' own historian and he indexes all five mentions as one Robert D'Arcy, which is as good as a secondary source gets — but the commission registers, station returns and the Walcheren papers at Kew are the primary evidence behind him, and none of them has been read here.",
-    "where": "Read 14 September 2026 in the full text of the 1889 edition on the Internet Archive, which is out of copyright and downloads freely."
+    "where": "Read 14 September 2026 in the full text of [the 1889 edition](rec:ia-historyofcorpsof0001whit) on the Internet Archive, which is out of copyright and downloads freely."
   },
   "armylist": {
     "head": "The 1778 Army List has him, and corroborates Porter",
@@ -182,7 +182,7 @@
     "trapHead": "And the question it does NOT settle",
     "trap": "This archive prints two dates for his first commission: 1776, from Connolly's Roll, on the timeline and elsewhere; and 1778, from the British Army Lists and Commission Registers, on this page. The obvious test is whether he appears in the printed lists of 1775 and 1776. He does not — and that proves nothing at all. The men listed beside him in 1778 are not there either: FIDDES, HOCKINGS, HUMFREY and SLACK return nought occurrences in both earlier volumes. Those lists do not print the Practitioner Engineer grade. The absence is the book's, not the man's.",
     "chipTrap": "an empty search, not a null",
-    "resolve": "So the two dates stand unreconciled, and the document that would reconcile them is named: WO 54/240, the Board of Ordnance commission book for Engineers, 1755–1780, at Kew, not digitised and not name-indexed.",
+    "resolve": "So the two dates stand unreconciled, and the document that would reconcile them is named: [WO 54/240](rec:tna-wo-54-240), the Board of Ordnance commission book for Engineers, 1755–1780, at Kew, not digitised and not name-indexed.",
     "where": "Read 15 September 2026 in the free full text of the Army Lists for 1775, 1776, 1778 and 1781 on the Internet Archive.",
     "dateHead": "And then the 1781 list settles the date",
     "date": "The 1781 list prints the same men and interleaves each name with its seniority date. The block reads: “Wm. Kesterman 17 Jan. 76 · John Johnson do. · Charles Holloway do. · Thomas Whelpdale do. · John Humfrey do. · James Fiddes do. · Richard Hockings do. · Robert Beatson do. · ROBERT D'ARCY do. · Benjamin Slack 4 Mar. · James Lees 27 do. · Geo. Bridges 12 Dec. · Lewis Hay 2 Mar. 77.” His date is a ditto inside a block headed 17 JANUARY 1776, and the men after him break the ditto with their own later dates — which is what makes the chain readable rather than a guess. The 1778 list carries the same run.",
@@ -274,7 +274,7 @@
         "A list of the officers of the Army and of the Corps of Royal Marines, 1821"
       ]
     ],
-    "means": "The twenty-four-year blank this page once claimed is now furnished at both ends and in the middle: Minorca in 1781 from Porter, Second Lieutenant in 1783 from the Army List, Captain by 1802, Major in the army by 1803, Copenhagen in 1807 and Walcheren in 1809 from Porter again. What it shows is a slow career — seventeen years to make the rank of captain in a corps that promoted strictly by seniority and had very few deaths to promote into. **And the run itself is nearly all that survives free**: of 120 Army List identifiers checked one metadata record at a time, exactly ONE falls between 1776 and 1815 — January 1815. The rest of the annual run is not on the Internet Archive.",
+    "means": "The twenty-four-year blank this page once claimed is now furnished at both ends and in the middle: Minorca in 1781 from [Porter](rec:ia-historyofcorpsof0001whit), Second Lieutenant in 1783 from the Army List, Captain by 1802, Major in the army by 1803, Copenhagen in 1807 and Walcheren in 1809 from Porter again. What it shows is a slow career — seventeen years to make the rank of captain in a corps that promoted strictly by seniority and had very few deaths to promote into. **And the run itself is nearly all that survives free**: of 120 Army List identifiers checked one metadata record at a time, exactly ONE falls between 1776 and 1815 — January 1815. The rest of the annual run is not on the Internet Archive.",
     "chip": "documented"
   },
   "armylists": {

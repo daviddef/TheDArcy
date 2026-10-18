@@ -5,6 +5,7 @@ import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { mdp } from "../lib/md.js";
+import { FREEBMD } from "../lib/records.js";
 import d from "../data/sanigers.json";
 
 const c = d.counts;
@@ -237,7 +238,7 @@ for (const [, y] of bristol) (byDecade[decade(y)] ||= 0), byDecade[decade(y)]++;
       <table>
         <thead><tr><th>Name</th><th class="m">Quarter</th><th>District</th><th>GRO index</th><th>Local register</th></tr></thead>
         <tbody>{d.freebmd.rows.map(([who, q, dist, gro, loc]) => (
-          <tr style={who.startsWith("LYDIA") ? "background:var(--tint)" : ""}>
+          <tr style={who.startsWith("LYDIA") ? "background:var(--tint)" : ""} data-cite-exempt={FREEBMD}>
             <td><strong>{who}</strong></td>
             <td class="m" style="white-space:nowrap">{q}</td>
             <td>{dist}</td>

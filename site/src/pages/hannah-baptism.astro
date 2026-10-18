@@ -4,8 +4,11 @@ import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
+import Rec from "../components/Rec.astro";
 import { md, mdp } from "../lib/md.js";
 import d from "../data/hannah-baptism.json";
+/* the census piece reference that opens a transcript's source line ("HO107/347, book 6, ..."): it is the record link */
+const piece = (s) => { const i = s.indexOf(","); return [s.slice(0, i), s.slice(i)]; };
 ---
 <Base
   title="One vowel"
@@ -163,7 +166,7 @@ import d from "../data/hannah-baptism.json";
                 <td class="small">{rel}</td><td class="small">{note}</td></tr>))}</tbody>
           </table>
         </Scroll>
-        <p class="small mono" style="margin-top:.6rem;color:var(--ink-3)">{d.ham[c]}</p>
+        <p class="small mono" style="margin-top:.6rem;color:var(--ink-3)">{(([ref, rest]) => <><Rec act={ref}>{ref}</Rec>{rest}</>)(piece(d.ham[c]))}</p>
       </div>
     ))}
     <Note style="border-left-width:3px;margin-top:1.5rem">

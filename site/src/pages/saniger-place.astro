@@ -3,8 +3,10 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
+import Rec from "../components/Rec.astro";
 import { u } from "../lib/url.js";
 import { mdp } from "../lib/md.js";
+import { hasRecord, glosReason, GLOS, QUEUED, DEED_PARTIES } from "../lib/records.js";
 import d from "../data/saniger-place.json";
 ---
 <Base
@@ -34,12 +36,12 @@ import d from "../data/saniger-place.json";
         <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>Entry</th></tr></thead>
         <tbody>
           {d.deeds.map(([ref, when, what]) => (
-            <tr><td class="m mono">{ref}</td><td class="m">{when}</td><td class="small">{what}</td></tr>
+            <tr data-cite-exempt={glosReason(ref)}><td class="m mono">{hasRecord(ref) ? <Rec act={ref}>{ref}</Rec> : ref}</td><td class="m">{when}</td><td class="small">{what}</td></tr>
           ))}
         </tbody>
       </table>
     </Scroll>
-    <p class="small" style="margin-top:1rem">Almost all of these are <span class="mono">D2957/41</span>
+    <p class="small" style="margin-top:1rem" data-cite-exempt={GLOS}>Almost all of these are <span class="mono">D2957/41</span>
     at <strong>Gloucestershire Archives</strong> — the Berkeley estate deeds. They are catalogue
     descriptions, not documents this archive has read.
     <span class="chip inf">catalogued, not yet seen</span></p>
@@ -93,7 +95,7 @@ import d from "../data/saniger-place.json";
 
     <Note>
       <strong>This is the material Berkeley's parish transcript does not have.</strong> FreeREG's
-      Berkeley St Mary stops in <strong>1677</strong>. Bigland's monuments run from 1692 to 1750,
+      Berkeley St Mary stops in <strong>1677</strong>. <Rec id="ia-bim_eighteenth-century_historical-monumental-a_bigland-ralph_1791_1">Bigland's monuments</Rec> run from 1692 to 1750,
       with names, relationships, exact dates and ages — a hundred and twenty years of the parish,
       copied by an antiquary and printed, sitting in a book on archive.org the whole time.
       <a href={u("/berkeley/")}>The page that has been complaining about that gap →</a>
@@ -168,15 +170,15 @@ import d from "../data/saniger-place.json";
 
   <Blk label="Gloucestershire Archives, D2957/41" title="A clothier in 1692, a gentleman in 1709">
 
-    <p class="lede">{d.estate.note}</p>
+    <p class="lede" data-cite-exempt={GLOS}>{d.estate.note}</p>
 
     <Scroll>
       <table>
         <thead><tr><th class="m">Reference</th><th class="m">Date</th><th>Named</th><th>What it is</th></tr></thead>
         <tbody>
           {d.estate.rows.map(([ref, when, who, what]) => (
-            <tr>
-              <td class="mono small">{ref}</td>
+            <tr data-cite-exempt={glosReason(ref)}>
+              <td class="mono small">{hasRecord(ref) ? <Rec act={ref}>{ref}</Rec> : ref}</td>
               <td class="m">{when}</td>
               <td><strong>{who}</strong></td>
               <td class="small">{what}</td>
@@ -220,7 +222,7 @@ import d from "../data/saniger-place.json";
         <tbody>
           {d.wills.map(([ref, when, what, why]) => (
             <tr>
-              <td class="mono small">{ref}</td><td class="m">{when}</td>
+              <td class="mono small">{hasRecord(ref) ? <Rec act={ref}>{ref}</Rec> : ref}</td><td class="m">{when}</td>
               <td><strong>{what}</strong></td><td class="small">{why}</td>
             </tr>
           ))}
@@ -263,7 +265,7 @@ import d from "../data/saniger-place.json";
     </Note>
   </Blk>
 
-  <section class="blk">
+  <section class="blk" data-name-exempt={DEED_PARTIES}>
     <div class="lab">John Smyth of Nibley, about 1639</div>
     <h2 style="margin-top:.4rem">{d.smyth.head}</h2>
 
@@ -329,10 +331,10 @@ import d from "../data/saniger-place.json";
       <strong>And what is not claimed.</strong> {d.smyth.careful}
       {" "}<span class="chip inf">{d.smyth.chipCareful}</span>
     </div>
-    <p class="small" style="margin-top:1.1rem;color:var(--ink-3)">{d.smyth.where}</p>
+    <p class="small" style="margin-top:1.1rem;color:var(--ink-3)"><Fragment set:html={mdp(d.smyth.where)} /></p>
   </section>
 
-  <section class="blk">
+  <section class="blk" data-name-exempt={DEED_PARTIES}>
     <div class="lab">The Berkeley Manuscripts, volumes 1 and 3</div>
     <h2 style="margin-top:.4rem">{d.descent.head}</h2>
     <p class="lede">{d.descent.lede}</p>
@@ -386,7 +388,7 @@ import d from "../data/saniger-place.json";
     <p class="small" style="margin-top:1.1rem;color:var(--ink-3)">{d.descent.where}</p>
   </section>
 
-  <section class="blk">
+  <section class="blk" data-name-exempt={DEED_PARTIES}>
     <div class="lab">Jeayes, 1892</div>
     <h2 style="margin-top:.4rem">{d.jeayes.head}</h2>
     <p class="lede">{d.jeayes.lede} <span class="chip doc">{d.jeayes.chip}</span></p>
@@ -414,7 +416,7 @@ import d from "../data/saniger-place.json";
     <p class="small" style="margin-top:1.1rem;color:var(--ink-3)">{d.jeayes.where}</p>
   </section>
 
-  <section class="blk">
+  <section class="blk" data-name-exempt={DEED_PARTIES}>
     <div class="lab">The National Archives, Discovery</div>
     <h2 style="margin-top:.4rem">{d.catalogue.head}</h2>
     <p class="lede">{d.catalogue.lede} <span class="chip doc">{d.catalogue.chip}</span></p>
@@ -469,7 +471,7 @@ import d from "../data/saniger-place.json";
       A clothier at Saniger in 1692; weavers, tuckers and curriers at Cam and Dursley through the
       eighteenth century; and a family that leaves for Bristol when that industry collapses.
       <a href={u("/sanigers/")}>The reconstitution →</a></li>
-      <li style="margin-bottom:.5rem"><strong>There is a documentary spine at Gloucestershire
+      <li style="margin-bottom:.5rem" data-cite-exempt={QUEUED}><strong>There is a documentary spine at Gloucestershire
       Archives</strong> — <span class="mono">D2957/41</span> — that nobody has opened, covering
       exactly the years Berkeley's parish transcript does not.
       <a href={u("/errands/")}>Now on the queue →</a></li>

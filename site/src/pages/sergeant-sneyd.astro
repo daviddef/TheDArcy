@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
+import Rec from "../components/Rec.astro";
 import { u } from "../lib/url.js";
 
 const postings = [
@@ -61,7 +62,7 @@ const postings = [
           <tr><td>Unit</td><td><strong>80th Foot</strong></td></tr>
           <tr><td>Sub unit</td><td><strong>Mounted Police Attached</strong></td></tr>
           <tr><td>Location</td><td><strong>Parramatta, N.S.W.</strong></td></tr>
-          <tr><td>Reference</td><td class="mono">TNA WO 12/8483 · British Army, Worldwide Index 1841</td></tr>
+          <tr><td>Reference</td><td class="mono">TNA <Rec id="tna-wo-12-8483">WO 12/8483</Rec> · British Army, Worldwide Index 1841</td></tr>
         </tbody>
       </table>
     </Scroll>
@@ -82,9 +83,9 @@ const postings = [
     </Note>
 
     <p class="small" style="margin-top:1.1rem"><strong>Checked and excluded.</strong> Several
-    <em>Samuel Sneyd</em> entries in the Chelsea pension returns (WO 22) belong to a different man —
+    <em>Samuel Sneyd</em> entries in the Chelsea pension returns (<Rec id="tna-wo-22">WO 22</Rec>) belong to a different man —
     54th Foot, pension paid at Dublin. They are not him, and are recorded here so that nobody attaches
-    them later. <strong>Still wanted:</strong> the muster book WO 12/8483 itself, and any discharge
+    them later. <strong>Still wanted:</strong> the muster book <Rec id="tna-wo-12-8483">WO 12/8483</Rec> itself, and any discharge
     papers. <a href={u("/open-questions/")}>Queued →</a></p>
   </Blk>
 
@@ -101,7 +102,7 @@ const postings = [
     <Note>
       <span class="chip doc">the primary report</span> <strong>The Sydney Monitor and Commercial
       Advertiser</strong>, Friday <strong>8 November 1839</strong>, page 2, "News of the day".
-      <span class="mono">nla.news-article32166178</span>
+      <span class="mono"><Rec id="trove-article32166178">nla.news-article32166178</Rec></span>
     </Note>
 
     <blockquote style="margin-top:1.2rem">
@@ -184,7 +185,7 @@ const postings = [
       promoted to fill the position of <strong>Governor of the gaol</strong>. Out of the six constables
       then in Brisbane two are now alive, namely, Mr. Samuel Wright and Mr. James Frederick.
       <footer class="small" style="font-style:normal;margin-top:.6rem">— <em>The Queenslander</em>,
-      Saturday 11 July 1885, p. 67 · <span class="mono">nla.news-article19799164</span></footer>
+      Saturday 11 July 1885, p. 67 · <span class="mono"><Rec id="trove-article19799164">nla.news-article19799164</Rec></span></footer>
     </blockquote>
 
     <p>He was <strong>chief constable at Moreton Bay from 1849</strong> — effectively the head of
@@ -209,7 +210,7 @@ const postings = [
       shocked by reading of Mrs McLean's death, since he "conversed freely with his family on different
       topics for about three hours and a-half after reading the notice". So the career details are
       family testimony given four days after the death — excellent, but testimony, not a service
-      record. <span class="mono">nla.news-article3443970</span>
+      record. <span class="mono"><Rec id="trove-article3443970">nla.news-article3443970</Rec></span>
     </Note>
 
     <h3 style="margin-top:1.8rem">The gaol he ran</h3>
@@ -223,7 +224,7 @@ const postings = [
       which are overcome only by <strong>the very best management on the part of the governor</strong>
       and those in authority.
       <footer class="small" style="font-style:normal;margin-top:.6rem">— <em>The Courier</em>
-      (Brisbane), Saturday 22 August 1863, p. 3 · <span class="mono">nla.news-article3165233</span>.
+      (Brisbane), Saturday 22 August 1863, p. 3 · <span class="mono"><Rec id="trove-article3165233">nla.news-article3165233</Rec></span>.
       A second, longer account ran on 18 September 1863.</footer>
     </blockquote>
 

@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
+import Rec from "../components/Rec.astro";
 import { u } from "../lib/url.js";
 import { publishable, isLiving } from "../lib/people.js";
 import families from "../data/families.json";
@@ -262,9 +263,9 @@ const shown = publishable(f.members);
     <Scroll>
       <table>
         <tbody>
-          <tr><td>Item</td><td class="mono">ITM2736504</td></tr>
+          <tr><td>Item</td><td class="mono"><Rec id="qsa-itm2736504">ITM2736504</Rec></td></tr>
           <tr><td>Subject</td><td><strong>Inquest file</strong></td></tr>
-          <tr><td>Series</td><td>S36 — Coronial Files (Inquests and No Inquests)</td></tr>
+          <tr data-cite-exempt="names the series the file belongs to; the Item row of this table carries the link to the file"><td>Series</td><td>S36 — Coronial Files (Inquests and No Inquests)</td></tr>
           <tr><td>Previous IDs</td><td class="mono">JUS/N309 · SRS36/5/308</td></tr>
           <tr><td>Digital copy</td><td><strong>DR103140 · PDF · 15.24 MB · open, no restrictions</strong></td></tr>
         </tbody>

@@ -305,7 +305,7 @@ import d from "../data/joseph-darcy.json";
   <section class="blk">
     <div class="lab">The National Archives IR 27/284</div>
     <h2 style="margin-top:.4rem">{d.duty.head}</h2>
-    <p>{d.duty.body}</p>
+    <p set:html={mdp(d.duty.body)}></p>
     <p class="small" style="margin-top:1rem"><a href={u("/errands")}>What it would cost to read →</a></p>
   </section>
 
