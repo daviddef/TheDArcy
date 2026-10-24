@@ -4469,6 +4469,20 @@
         "sneyd",
         "archive-org"
       ]
+    },
+    {
+      "src": "Internet Archive full-text search — printed Keele (Staffordshire) parish registers and the Bagot–Sneyd marriage",
+      "url": "https://archive.org/advancedsearch.php",
+      "what": "Whether any printed register or pedigree prints the Keele baptisms of 1793 and 1809 or the marriage of Walter Sneyd and Louisa Bagot",
+      "when": "25 Oct 2026",
+      "outcome": "null",
+      "got": "**No printed Keele register reaches the 1790s.** «Keele baptisms» returns three hits, all one *Notes and Queries* list of registers in print, and it gives Keele **baptisms 1541–1689, marriages 1557–1684, burials 1544–1628**. That is the control and the answer: the phrase finds what exists, and what exists stops a century too early. «Walter Sneyd Louisa Bagot», «Rev. Walter Sneyd born 1809» and one more form returned zero. **The 1793 and 1809 baptisms therefore have to come from the register images or a transcription of them** (FamilySearch's Staffordshire collection, which sits behind a sign-in this archive will not create; FreeREG; the Staffordshire Record Office), not from print.",
+      "href": "/how-far-back",
+      "ctl": "named",
+      "tags": [
+        "sneyd",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
