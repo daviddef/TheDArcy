@@ -4,11 +4,11 @@
   "rings_sha256": null,
   "rings_source": "contract"
  },
- "built": "2026-10-18",
+ "built": "2026-10-25",
  "contract": {
-  "generated": "2026-10-18",
+  "generated": "2026-10-19",
   "name": "recordatlas-context",
-  "sha256": "e649c1c925dbf4da9f54c1ebadf1a10c7c7da45d3d7512b42c7bf3405e7772e3",
+  "sha256": "03a8542fbbe5e7153345d1ab85e049dc4e0578084638ce7cefbc0615a48355f7",
   "version": "1.12.0"
  },
  "dropped": [
@@ -615,6 +615,15 @@
   "margin_years": 5,
   "margins": {},
   "recent_from": 1990,
+  "ruler_polities": {
+   "italy": [
+    "kingdom-of-italy",
+    "italian-republic"
+   ],
+   "twosicilies": [
+    "kingdom-of-the-two-sicilies"
+   ]
+  },
   "unassessed": "allow"
  },
  "quality": {
@@ -1139,6 +1148,68 @@
   ],
   "scotland": []
  },
+ "rulers": {
+  "bohemia": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "campania": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "denmark": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "england": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "frankfurt": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "hesse-darmstadt": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "ireland": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "netherlands": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "norway": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "queensland": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "rhenish-hesse": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  },
+  "scotland": {
+   "has": false,
+   "reigns": [],
+   "why": "the contract says the region has no rulers"
+  }
+ },
  "unchecked_edge": [
   "aram england",
   "bradwell england",
@@ -1160,5 +1231,5 @@
   "scotland",
   "sydenham england united kingdom"
  ],
- "version": 4
+ "version": 5
 }
