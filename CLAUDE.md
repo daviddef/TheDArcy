@@ -63,3 +63,14 @@ the ground and never a claim about the family; where the data does not support a
   (`tools/check_era_expect.py`: re-derives from the printed dates and places the notes each page should carry, and fails a missing, extra or differing one) and the
   kit's self-test. `tools/autolink_strip.py` takes the notes and their `<style>` off whole, so `mentions.json`, `whoindex.json` and the search text do not change because of them.
 - **The 215 `/who/` pages** print one free-text record sentence and its source, with no date or place field: no notes there.
+
+## The living rule and the printed-year gate (kit 341af33, 25 October 2026)
+
+A person born in the last eighty years (1946 or later in 2026: the kit's single derived `cutoff_year()`) with no death RECORD is living, whatever a
+public-source citation or a bare death flag says. `tools/gedcom.py` therefore passes the two apart: `recorded_dead()` is a death or burial event with a
+date, place, cause or note; a bare `DEAT Y` is a FLAG (`undated_dead()`), which for a person born inside the window frees nobody and for anyone else
+means dead. 26 people in the tree are flag-only and born 1946 or later; none was published. `tools/check_living.py` restates it independently.
+
+`npm run check:living` also runs the kit's `--years` gate (`standard.json` `living_years`): no year on or after the line may print for a person with no
+death. Exceptions are in `site/living-year-allow.json`, each with its reason, and a stale one fails (`--strict-allow`). A withheld sentence is
+`NOTE_WITHHOLDS` in `tools/gedcom.py` (the eulogy speaker's own birth year); never record a death that no source gives, mask the person instead.

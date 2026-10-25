@@ -63,8 +63,8 @@
  "releasedNote": "When somebody named here dies, record the death in the tree and re-export. The guard follows the tree; it is never unlocked by editing code.",
  "counts": {
   "tree": 15643,
-  "living": 544,
-  "published": 15099,
+  "living": 570,
+  "published": 15073,
   "pages": 1294
  },
  "namesakesNote": "Not living people at all — a historical namesake, or a phrase that only ever appears inside a longer published name. Kept as a record of the homonyms the matcher cannot tell apart. Since 16 October 2026 no gate forbids a living person's name, so these exempt nothing from a name ban; they are what a name search must not mistake for a living person.",
@@ -83,7 +83,7 @@
    "dnaTester": 1,
    "possibleMinors": 10,
    "total": 11,
-   "possibleMinorsInTree": 105
+   "possibleMinorsInTree": 107
   }
  },
  "publishedNote": "Written by tools/build_site_data.py on every build: how many living people this run put into the data, counted not typed. Every living person published has a page; heldOut are people left out altogether (see decisions.json). Numbers only, never a name.",

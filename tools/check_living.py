@@ -180,6 +180,14 @@ def _cite(src, page):
     return " ".join(x for x in (title, page or "", (src.val("PUBL") if src else "") or "") if x).strip()
 
 
+def _is_record(ev):
+    """A DEAT or BURI node that says more than a bare yes."""
+    if any(ev.val(t).strip() for t in ("DATE", "PLAC", "CAUS", "NOTE", "AGNC", "TYPE")):
+        return True
+    v = ev.value.strip()
+    return bool(v) and v.lower() not in ("y", "yes", "true", "deceased", "dead", "died")
+
+
 def own_tree(path=None):
     """{people: {id: facts}, fams: {id: {...}}} straight from the GEDCOM's tags."""
     import gedcom as G
@@ -200,7 +208,11 @@ def own_tree(path=None):
                 nm.value.split("/")[1] if nm and nm.value.count("/") >= 2 else "")
             people[r.xref] = {
                 "by": by,
-                "dead": any(k.tag in ("DEAT", "BURI") for k in r.kids),
+                # A death RECORD is a date, a place, a cause, a note, or wording beyond a bare yes; "DEAT Y"
+                # alone is a FLAG (the tree's belief). Written here a second time, apart from tools/gedcom.py.
+                "dead": any(_is_record(k) for k in r.kids if k.tag in ("DEAT", "BURI")),
+                "flag": (not any(_is_record(k) for k in r.kids if k.tag in ("DEAT", "BURI")))
+                        and any(k.tag in ("DEAT", "BURI") for k in r.kids),
                 "cites": [_cite(srcs.get(s.value.strip()), s.val("PAGE")) if s.value.strip().startswith("@")
                           else s.value.strip() for s in r.all("SOUR")],
                 "famc": [k.value for k in r.all("FAMC")], "fams": [k.value for k in r.all("FAMS")],
@@ -239,7 +251,8 @@ def own_child_years(tree):
 def own_living(tree, today=None):
     ty = today or lr.this_year()
     cy = own_child_years(tree)
-    return {pid: lr.is_living(p["by"], p["dead"], p["cites"], ty, youngest_child_year=cy.get(pid))
+    return {pid: lr.is_living(p["by"], p["dead"], p["cites"], ty, youngest_child_year=cy.get(pid),
+                              undated_dead=p.get("flag", False))
             for pid, p in tree["people"].items()}
 
 
@@ -250,7 +263,7 @@ def own_held(tree, flags, ids, today=None):
     for pid, p in tree["people"].items():
         pl = any(flags.get(x) for x in p["parents"])
         if lr.is_held_out(pid, p["by"], p["dead"], p["cites"], pl, ids, ty,
-                          youngest_child_year=cy.get(pid)):
+                          youngest_child_year=cy.get(pid), undated_dead=p.get("flag", False)):
             out[pid] = "dna-tester" if pid in set(ids) else "possible-minor"
     return out
 
@@ -300,22 +313,25 @@ def arithmetic_fails(tree, flags, ty=None):
         pub = lr.public_source(p["cites"])
         if p["dead"] and v:
             bad["recorded-dead"] += 1                 # a recorded death or burial is dead
-        if pub and v:
-            bad["public-source"] += 1                 # a public source is not living
+        inside = p["by"] is not None and ty - p["by"] <= 80
+        if pub and v and not inside:
+            bad["public-source"] += 1                 # a public source is not living, EXCEPT for a person born inside
+                                                      # the window (25 October 2026: a source shows a birth, never a death)
         # AN UNDATED PERSON IS LIVING IN EXACTLY ONE CASE (David, 16 October 2026): no death,
         # no public source, and a youngest dated child born 60 years ago or less. Stated here
         # in BOTH directions, because a rule that is only ever checked one way drifts the
         # other: «undated and living» without that child is wrong, and so is «undated, that
         # child, and not living».
         recent = pid in cy and ty - cy[pid] <= 60
-        if p["by"] is None and v and not (recent and not p["dead"] and not pub):
+        if p["by"] is None and v and not (recent and not p["dead"] and not pub and not p.get("flag")):
             bad["undated"] += 1                       # nobody can be shown 80 or younger without a year
-        if p["by"] is None and not v and recent and not p["dead"] and not pub:
+        if p["by"] is None and not v and recent and not p["dead"] and not pub and not p.get("flag"):
             bad["undated-parent-of-recent-child-flagged-dead"] += 1
         if p["by"] is not None and ty - p["by"] > 80 and v:
             bad["over-80"] += 1
-        if (p["by"] is not None and ty - p["by"] <= 80 and not p["dead"] and not pub) and not v:
-            bad["young-flagged-dead"] += 1            # 80 or younger, no death, no public source: living
+        if inside and not p["dead"] and not v:
+            bad["young-flagged-dead"] += 1            # 80 or younger, no death RECORD: living, whatever a public
+                                                      # source or a bare death flag says
     return dict(bad)
 
 
@@ -333,7 +349,7 @@ def held_arith_fails(tree, held):
         p = P[pid]
         if p["by"] is not None:
             bad["dated-child-held"] += 1
-        if p["dead"]:
+        if p["dead"] or p.get("flag"):
             bad["recorded-dead-held"] += 1
         if lr.public_source(p["cites"]):
             bad["public-source-held"] += 1
@@ -722,7 +738,12 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=No
         ("a person born 81 years ago is not living", lr.is_living(T - 81, False, [], T) is False),
         ("a person with no birth year is not living", lr.is_living(None, False, [], T) is False),
         ("a recorded death (dated or not) makes a young person dead", lr.is_living(T - 30, True, [], T) is False),
-        ("a public source (FamilySearch) makes a young person not living", lr.is_living(T - 30, False, ["FamilySearch: x"], T) is False),
+        ("a public source (FamilySearch) does NOT free a young person (25 October 2026: a source shows a birth, never a death)", lr.is_living(T - 30, False, ["FamilySearch: x"], T) is True),
+        ("a public source frees an OLD person (born 81 years ago)", lr.is_living(T - 81, False, ["FamilySearch: x"], T) is False),
+        ("a bare death flag does NOT free a person born inside the window", lr.is_living(T - 30, False, [], T, undated_dead=True) is True),
+        ("a bare death flag on the boundary year (born 80 years ago) does not free them", lr.is_living(T - 80, False, [], T, undated_dead=True) is True),
+        ("a bare death flag on a person born 81 years ago: dead", lr.is_living(T - 81, False, [], T, undated_dead=True) is False),
+        ("a bare death flag on an undated person: dead, even with a recent child", lr.is_living(None, False, [], T, youngest_child_year=T - 10, undated_dead=True) is False),
         ("a private tree entry does not", lr.is_living(T - 30, False, ["MyHeritage family tree: x"], T) is True),
         ("a child with a KNOWN birth year (aged 5) is NOT held out, even with a living parent", lr.possible_minor(T - 5, False, [], True, T) is False),
         ("nor a child aged 17 whose parent is living", lr.possible_minor(T - 17, False, [], True, T) is False),
@@ -737,7 +758,7 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=No
          lr.is_living(None, False, [], T) is False),
         ("a recent child does not make a person with a recorded death living",
          lr.is_living(None, True, [], T, youngest_child_year=T - 10) is False),
-        ("a recent child does not outweigh a public source",
+        ("a recent child does not outweigh a public source (an undated person)",
          lr.is_living(None, False, ["FamilySearch: x"], T, youngest_child_year=T - 10) is False),
         ("a person WITH a birth year is judged on it alone, whatever the child says",
          lr.is_living(T - 90, False, [], T, youngest_child_year=T - 10) is False),
@@ -780,10 +801,17 @@ def controls(people, flags, data, world, h, corp, held=None, hpats=None, tree=No
             check(label, bool(pid) and key in arithmetic_fails(tree, bad))
         # a public source, on a planted person (the tree holds nobody young with one)
         syn = {"people": {"@Y1@": {"by": ty - 30, "dead": False, "cites": ["FamilySearch: x"], "parents": []}}, "fams": {}}
-        check("[planted person] aged 30, a public source, flagged LIVING",
-              "public-source" in arithmetic_fails(syn, {"@Y1@": True}))
-        check("[planted person] aged 30, a public source, honestly flagged not living, passes",
-              not arithmetic_fails(syn, {"@Y1@": False}))
+        check("[planted person] aged 30, a public source, honestly flagged LIVING, passes",
+              not arithmetic_fails(syn, {"@Y1@": True}))
+        check("[planted person] aged 30, a public source, flagged NOT living (the old fault)",
+              "young-flagged-dead" in arithmetic_fails(syn, {"@Y1@": False}))
+        syn_flag = {"people": {"@Y4@": {"by": ty - 30, "dead": False, "flag": True, "cites": [], "parents": []}}, "fams": {}}
+        check("[planted person] aged 30, only a bare death flag, flagged NOT living (the old fault)",
+              "young-flagged-dead" in arithmetic_fails(syn_flag, {"@Y4@": False}))
+        check("[planted person] aged 30, only a bare death flag, honestly flagged LIVING, passes",
+              not arithmetic_fails(syn_flag, {"@Y4@": True}))
+        syn_old = {"people": {"@Y5@": {"by": ty - 90, "dead": False, "flag": False, "cites": ["FamilySearch: x"], "parents": []}}, "fams": {}}
+        check("[planted person] aged 90, a public source, flagged LIVING", "public-source" in arithmetic_fails(syn_old, {"@Y5@": True}))
         # a classification that disagrees with this gate's, one person
         pid = next(iter(flags))
         gen_bad = dict(flags); gen_bad[pid] = not flags[pid]

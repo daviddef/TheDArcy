@@ -214,5 +214,10 @@
    "inquest"
   ],
   "held_keys_file": null
+ },
+ "living_years": {
+  "allow_file": "living-year-allow.json",
+  "allow_prefixes": [],
+  "data": "src/data"
  }
 }

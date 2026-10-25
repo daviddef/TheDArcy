@@ -1,0 +1,9 @@
+{
+ "_note": "Reviewed exceptions to the kit's printed-year gate (checkliving.py --years, kit 341af33): a year on or after the living line (1946 in 2026) that is NOT the birth year of a living person. Each entry's text is removed from what the gate reads; an entry that matches nothing is stale and fails the build (--strict-allow). Never add a death here that no source in the archive gives: a person who might be living is masked, not registered.",
+ "allow": [
+  {
+   "text": "a person whose child was born in 1990",
+   "why": "The work list's own sentence about a hypothetical person (the 'undated parent of a recent child' clause of the living rule); it names nobody and states no birth."
+  }
+ ]
+}

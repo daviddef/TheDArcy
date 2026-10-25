@@ -111,6 +111,23 @@ def _events(node):
     return out
 
 
+# WORDS WITHHELD FROM A NOTE, because they print a living person's birth year (kit 341af33, the printed-year gate
+# `checkliving.py --years`, 25 October 2026). Each is (the exact words in the tree's note, what is printed instead, why).
+# The speaker of one part of the 2010 eulogy for Kenneth Lindsay D'Arcy says in the first person when he was born; he is
+# not recorded dead, so under the living rule his birth year is not printed. The rest of the sentence stands. Nothing is
+# said about whether he is alive beyond what the rule says.
+NOTE_WITHHOLDS = (
+    ("I was born in 1955 and", "I was born in [year withheld: the speaker is living] and",
+     "the speaker of part 2 of the eulogy: born 1946 or later, no death recorded"),
+)
+
+
+def _withhold(text):
+    for words, instead, _why in NOTE_WITHHOLDS:
+        text = text.replace(words, instead)
+    return text
+
+
 def _notes(node, notes_by_id):
     out = []
     for k in node.all("NOTE"):
@@ -119,7 +136,7 @@ def _notes(node, notes_by_id):
             out.append(notes_by_id.get(v, ""))
         elif v:
             out.append(v)
-    return [n for n in out if n]
+    return [_withhold(n) for n in out if n]
 
 
 # What a citation IS, for the kit's public_source(). MyHeritage files a family
@@ -285,7 +302,8 @@ def lifespan(person):
 #   birth year    the year of the birth, else christening, else baptism. A range
 #                 («BET 1944 AND 1946») takes its LATER end, the younger reading:
 #                 where the tree hesitates, the person is not made out older.
-#   recorded dead a death or burial event, with or without a date
+#   recorded dead a death or burial RECORD (a date, a place, a cause...); a bare «DEAT Y» is a FLAG,
+#                 passed apart as undated_dead, and frees nobody born inside the window
 #   citations     what the tree cites for them (see citation_for above)
 #
 # Living = 80 or younger by year, with no death recorded, and no public source.
@@ -305,14 +323,40 @@ def lifespan(person):
 RECORDED_DEAD_KINDS = ("death", "burial")
 
 
-def recorded_dead(person):
-    """True when the tree RECORDS this person as deceased, with or without a date.
+def death_kind(person):
+    """"record", "flag" or None: what the tree holds about this person's death (the kit's
+    living_rule.death_kind, applied to the death and burial events).
 
-    MyHeritage writes "DEAT Y" for somebody it knows to be dead and does not know
-    when; a burial, with or without a date, is the same statement. Only a death
-    or burial event counts: a residence, a probate or a will is not a statement
-    that the person has died."""
-    return any(e["kind"] in RECORDED_DEAD_KINDS for e in person["events"])
+    MyHeritage writes "DEAT Y" for somebody it knows to be dead and does not know when. That is a
+    FLAG, the tree's belief, not evidence: no date, no place, no cause, no note. A date, a place, a
+    cause, a note, an agency, a type, or any wording that is not a bare yes/deceased is a RECORD.
+    Only a death or burial event counts: a residence, a probate or a will is not a statement that
+    the person has died."""
+    kinds = []
+    for e in person["events"]:
+        if e["kind"] not in RECORDED_DEAD_KINDS:
+            continue
+        if any((e.get("date"), e.get("place"), e.get("cause"), e.get("note"), e.get("agency"), e.get("type"))):
+            kinds.append("record")
+        else:
+            k = lr.death_kind(died=(e.get("detail") or None))
+            if k:
+                kinds.append(k)
+    if "record" in kinds:
+        return "record"
+    return "flag" if "flag" in kinds else None
+
+
+def recorded_dead(person):
+    """True when the tree holds a death RECORD for this person (see death_kind). A bare flag
+    ("DEAT Y") is not a record: undated_dead() is for that."""
+    return death_kind(person) == "record"
+
+
+def undated_dead(person):
+    """True when the tree holds only a bare death FLAG for this person. For a person born inside the
+    living window it frees nobody (they stay living); for an undated or older person it means dead."""
+    return death_kind(person) == "flag"
 
 
 def birth_year(person):
@@ -357,7 +401,8 @@ def classify_living(people, families=None, today_year=None):
     ty = today_year or today()
     ycy = youngest_child_years(people)
     return {pid: lr.is_living(birth_year(p), recorded_dead(p), p.get("citations") or [], ty,
-                              youngest_child_year=ycy.get(pid))
+                              youngest_child_year=ycy.get(pid),
+                              undated_dead=undated_dead(p))
             for pid, p in people.items()}
 
 
@@ -366,7 +411,8 @@ def is_living(person, today_year=None, youngest_child_year=None):
     alone, so a caller that has the tree must pass it; None changes nothing."""
     return lr.is_living(birth_year(person), recorded_dead(person),
                         person.get("citations") or [], today_year or today(),
-                        youngest_child_year=youngest_child_year)
+                        youngest_child_year=youngest_child_year,
+                        undated_dead=undated_dead(person))
 
 
 # The person promised privacy, BY ID. One id, one person; no file, message or log
@@ -399,7 +445,8 @@ def held_out(people, living=None, ids=None, today_year=None):
     for pid, p in people.items():
         parent_living = any(living.get(x) for x in p["parents"])
         if lr.is_held_out(pid, birth_year(p), recorded_dead(p), p.get("citations") or [],
-                          parent_living, ids, ty, youngest_child_year=ycy.get(pid)):
+                          parent_living, ids, ty, youngest_child_year=ycy.get(pid),
+                          undated_dead=undated_dead(p)):
             out[pid] = "dna-tester" if str(pid) in {str(i) for i in ids} else "possible-minor"
     return out
 
