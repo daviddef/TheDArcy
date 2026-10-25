@@ -219,5 +219,9 @@
   "allow_file": "living-year-allow.json",
   "allow_prefixes": [],
   "data": "src/data"
+ },
+ "lines": {
+  "exclusive": true,
+  "personBase": "/people/"
  }
 }

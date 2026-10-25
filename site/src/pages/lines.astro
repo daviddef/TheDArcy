@@ -1,0 +1,105 @@
+---
+/* THE LINES. One drawing of the lines of descent this archive follows, each stated in the form its own evidence supports.
+
+   The drawing is the kit's (components/BranchRivers.astro, contract kit/docs/lines.md). The data is src/data/lines.json, made by
+   tools/build_lines.py from this archive's own people data: the lanes' statuses are written there, each with the page of the archive
+   that states it; every person, member and count is derived, never typed. Every number printed on this page comes from the kit's
+   ledger() over that file, so it cannot go stale when a lane is added. The gate is `npm run check:lines`.
+
+   A living person is never listed: lines.json lists the dead, and the gate is given the living list (kit checklines --living). */
+import Base from "../layouts/Base.astro";
+import BranchRivers from "@daviddef/archive-kit/components/BranchRivers.astro";
+import { ledger, spanText, statusLine } from "@daviddef/archive-kit/lib/lines.js";
+import { u } from "../lib/url.js";
+import { bySlug, nameIfPublishable } from "../lib/people.js";
+import lines from "../data/lines.json";
+
+/* the names of the people the data lists, and only those (the data lists the dead; the gate is given the living) */
+const listed = new Set(lines.lanes.flatMap((l) => [...(l.members || []), ...(l.nodes || []).map((n) => n.person).filter(Boolean)])
+  .concat(lines.pens.flatMap((p) => (p.members || []).map((m) => (typeof m === "string" ? m : m.person)))));
+const names = Object.fromEntries([...listed].map((s) => [s, nameIfPublishable(bySlug.get(s))]).filter(([, n]) => n));
+const L = ledger(lines);
+const word = (n) => ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"][n] ?? String(n);
+const tiers = L.tiers;
+const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+const plural = (n, one, many) => `${word(n)} ${n === 1 ? one : many}`;
+const verb = (n) => (n === 1 ? "is" : "are");
+/* one real lane of each tier, so the examples under "How to read a lane" are the drawing's own words */
+const TIER = ["documented", "inferred", "origin-unknown", "family-lore"];
+const example = Object.fromEntries(TIER.map((t) => [t, lines.lanes.find((l) => l.status === t)]));
+const says = {
+  documented: "every step on the lane, its beginning included, rests on a record, over those years.",
+  inferred: "documented over those years; where the line came from is inferred, and the words say to what.",
+  "origin-unknown": "documented over those years; where it came from has not been found.",
+  "family-lore": "nothing on the lane is documented. It is told, not read, and it has no years.",
+};
+const nf = (n) => n.toLocaleString("en-GB");
+---
+<Base title="The Lines"
+      eyebrow={`${L.lanes} lines`}
+      dek="Each line of descent this archive follows, and how far the evidence for it reaches.">
+
+  <section class="blk">
+    <p class="lede">
+      This page draws {plural(L.lanes, "line", "lines")}, one lane each, and under each lane says what its evidence is.
+      {cap(word(tiers.documented))} {verb(tiers.documented)} documented,
+      {word(tiers.inferred)} {verb(tiers.inferred)} documented with an origin that is only inferred,
+      {word(tiers["origin-unknown"])} {verb(tiers["origin-unknown"])} documented from a point beyond which nothing has been found, and
+      {word(tiers["family-lore"])} {verb(tiers["family-lore"])} told and not read.
+      {L.pens > 0 && <>Under the lanes are the pens: the people who are not on any lane, counted.</>}
+    </p>
+
+    <figure class="rivers">
+      <BranchRivers rivers={lines} title={lines.title} caption={lines.caption} names={names} />
+    </figure>
+  </section>
+
+  <section class="blk">
+    <h2>How to read a lane</h2>
+    <p>
+      The line of small capitals under each lane title is the status, and it is a statement about <strong>evidence</strong>:
+      how far back a lane reaches on documents, not how interesting it is.
+    </p>
+    <ul class="tight">
+      {TIER.filter((t) => example[t]).map((t) => (
+        <li><strong>{statusLine(example[t]).text}</strong>, as on the {example[t].label.split(":")[0]} lane: {says[t]}</li>
+      ))}
+    </ul>
+    <p>
+      A dot drawn hollow and dashed is not read from a record: it rests on the family tree, on an inference, or on a claim this archive disputes.
+      Each dot links to the person it is about, not to the top of a page, and each lane lists, beneath the drawing, the people of the name
+      that the published tree joins to it.
+    </p>
+  </section>
+
+  <section class="blk">
+    <h2>What stands on each lane, and what does not</h2>
+    <table class="tight">
+      <thead><tr><th scope="col">Lane</th><th scope="col">Status</th><th scope="col">Documented</th><th scope="col">People</th></tr></thead>
+      <tbody>
+        {lines.lanes.map((l) => (
+          <tr>
+            <th scope="row"><a href={u(l.href)}>{l.label}</a></th>
+            <td>{{ documented: "Documented", inferred: "Origin inferred", "origin-unknown": "Origin not found", "family-lore": "Family lore" }[l.status]}</td>
+            <td>{l.span ? spanText(l.span) : "no years claimed"}</td>
+            <td>{nf(new Set([...(l.members || []), ...(l.nodes || []).map((n) => n.person).filter(Boolean)]).size)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="small">
+      {nf(L.peopleOnLanes)} dead and published people stand on a lane; {nf(L.peopleInPens)} stand in a pen. Nobody stands in two places, and no living person
+      is listed anywhere on this page.
+    </p>
+  </section>
+
+  <section class="blk">
+    <h2>What this page does not decide</h2>
+    <p>
+      A status is a research call, and it is made from what the archive's own pages say. The descent claimed above
+      <a href={u("/hornby/")}>Robert D'Arcy</a> is drawn apart from the line below him, and joined to it only by a dotted bridge, because the tree makes that join and no
+      record does. The Keele descent is not a lane at all: it was <a href={u("/how-far-back/")}>tested and found wrong</a>, and stands in a pen of its own.
+      Families that this archive follows and has a page for, but has not yet stated an evidence for, are counted in the last pen rather than drawn.
+    </p>
+  </section>
+</Base>

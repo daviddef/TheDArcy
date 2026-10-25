@@ -74,3 +74,13 @@ means dead. 26 people in the tree are flag-only and born 1946 or later; none was
 `npm run check:living` also runs the kit's `--years` gate (`standard.json` `living_years`): no year on or after the line may print for a person with no
 death. Exceptions are in `site/living-year-allow.json`, each with its reason, and a stale one fails (`--strict-allow`). A withheld sentence is
 `NOTE_WITHHOLDS` in `tools/gedcom.py` (the eulogy speaker's own birth year); never record a death that no source gives, mask the person instead.
+
+## The lines page (kit 341af33, 25 October 2026)
+
+`/lines/` ("The Lines", in the book after /trees/ and in the Start menu) draws seven lanes with the kit's rivers figure and its lines contract. `site/src/data/lines.json` is made by
+`tools/build_lines.py`: the lane texts (status, span, nodes, each with the archive page that states it) are written in that file, because a status is a research decision;
+every member, pen and count is derived from the people data, never typed, and no living person is listed. `npm run check:lines-data` refuses a stale file, `npm run check:lines`
+is the kit's `checklines.py` on the built site (it is given the living slugs, written outside the repository). The kit's checklines does not read `ARCHIVE_OUT`: for a build in
+another directory pass `--dist` by hand. Statuses are: D'Arcy origin-unknown (from 1776), Hornby family-lore, Saniger origin-unknown, Wakefield documented, Sneyd inferred,
+Atkinson inferred, Murdoch documented; the Keele descent is a different-stock pen. Change one only on what a page of the archive says.
+The pages that name many people (this one does) move `site/public/whoindex.json`, `searchindex.json` and `site/src/data/mentions.json`: regenerate and commit them with the page, or `check:whoindex` fails in CI.

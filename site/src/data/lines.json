@@ -1,0 +1,816 @@
+{
+ "title": "The lines of descent this archive follows, and how far the evidence for each reaches",
+ "caption": "Each lane is one line, with a status that says how far its evidence reaches. Hover or tab any dot to see what it rests on. A dot drawn hollow and dashed is not read from a record.",
+ "unplacedAfter": "murdoch",
+ "lanes": [
+  {
+   "key": "darcy",
+   "colour": "var(--accent)",
+   "label": "D'Arcy: Robert D'Arcy at Chatham to Brisbane",
+   "href": "/direct-line/",
+   "read": "The direct line, generation by generation →",
+   "status": "origin-unknown",
+   "span": [
+    1776,
+    null
+   ],
+   "statusNote": "Robert's parentage not found; the Hornby descent above him is drawn apart",
+   "nodes": [
+    {
+     "place": "Portsea",
+     "year": "1780",
+     "why": "Joseph D'Arcy baptised: father Robert, mother Jean. The first record of the family in England.",
+     "person": "joseph-d-arcy",
+     "evidence": "read"
+    },
+    {
+     "place": "Chatham",
+     "year": "1827",
+     "why": "Robert D'Arcy buried 19 May, entry 1571, aged 76.",
+     "person": "robert-d-arcy",
+     "evidence": "read"
+    },
+    {
+     "place": "Parramatta",
+     "year": "1829",
+     "why": "George Lindsay D'Arcy born, the Parramatta end of the crossing.",
+     "person": "george-lindsay-d-arcy",
+     "evidence": "read"
+    },
+    {
+     "place": "Brisbane",
+     "year": "1864",
+     "why": "George Pitt D'Arcy born at Brisbane.",
+     "person": "george-pitt-d-arcy-1864",
+     "evidence": "read"
+    }
+   ],
+   "ends": [
+    [
+     "Brisbane, Queensland",
+     "/brisbane/",
+     "where the line settles"
+    ]
+   ],
+   "members": [
+    "constantine-d-arcy-1759",
+    "robert-edward-d-arcy",
+    "margaret-maria-isabella-d-arcy",
+    "george-pitt-d-arcy-1783",
+    "richard-d-arcy",
+    "constantine-d-arcy-1786",
+    "jane-d-arcy",
+    "catherine-d-arcy-1789",
+    "anna-maria-d-arcy-1791",
+    "anna-maria-d-arcy-1792",
+    "charlotte-d-arcy",
+    "frederick-robert-d-arcy",
+    "george-abbas-kooli-d-arcy",
+    "robert-west-d-arcy",
+    "richard-wellesley-d-arcy",
+    "charlotte-maria-d-arcy-1825",
+    "catherine-maria-d-arcy",
+    "catherine-lucy-jane-d-arcy",
+    "john-hyde-d-arcy",
+    "josephine-d-arcy",
+    "catherine-sophia-ann-d-arcy",
+    "frank-hyde-d-arcy",
+    "joseph-william-d-arcy",
+    "john-darcy-1842",
+    "sophia-maria-louisa-d-arcy",
+    "william-david-d-arcy",
+    "g-norman-d-arcy",
+    "mary-catherine-georgina-d-arcy",
+    "elizabeth-eleanor-d-arcy",
+    "mary-elvina-annie-d-arcy",
+    "robert-joseph-d-arcy",
+    "robert-lindesay-d-arcy",
+    "louisa-margaret-d-arcy",
+    "catherine-d-arcy-1867",
+    "william-arthur-d-arcy",
+    "charlotte-maria-d-arcy-1869",
+    "geraldine-d-arcy",
+    "ida-grace-d-arcy",
+    "edwin-francis-d-arcy",
+    "hilda-georgina-d-arcy",
+    "lindesay-atkinson-d-arcy",
+    "florence-isabel-d-arcy",
+    "ida-joyce-d-arcy",
+    "vivian-lindsay-d-arcy",
+    "arthur-neville-bill-d-arcy",
+    "kenneth-lindsay-d-arcy",
+    "valma-d-arcy",
+    "beverley-d-arcy",
+    "joan-d-arcy",
+    "margaret-d-arcy",
+    "ruth-d-arcy"
+   ]
+  },
+  {
+   "key": "hornby",
+   "colour": "var(--r-plantagenet)",
+   "label": "Hornby: the descent the tree claims above Robert D'Arcy",
+   "href": "/hornby/",
+   "read": "The Hornby claim →",
+   "status": "family-lore",
+   "statusNote": "unevidenced: a legitimate descent from the 4th Earl is excluded by the peerage record",
+   "nodes": [
+    {
+     "place": "Hornby Castle",
+     "year": "1570",
+     "why": "Conyers (of Hornby Castle) D'Arcy: the tree's earliest on this line.",
+     "person": "conyers-of-hornby-castle-d-arcy",
+     "evidence": "tree"
+    },
+    {
+     "place": "St James's Palace",
+     "year": "1681",
+     "why": "Thomas (Francis) D'Arcy, said to be born here: the one link above Robert, with no record.",
+     "person": "thomas-francis-d-arcy",
+     "evidence": "disputed"
+    }
+   ],
+   "ends": [
+    [
+     "Robert D'Arcy, Chatham?",
+     "/hornby/",
+     "the join the tree makes and no record supports"
+    ]
+   ],
+   "members": [
+    "heinrich-vi-von-wildeshausen",
+    "elisabeth-von-tecklenburg",
+    "hedwig-von-oldenburg",
+    "konrad-herr-von-diepholz",
+    "christian-iii-count-of-oldenburg",
+    "john-ii-count-of-oldenburg",
+    "jane-darcy",
+    "francis-thomas-coney-knight-of-bassingthorpe",
+    "alice-leigh",
+    "william-sutton-1535",
+    "wolfgang-zyllenhardt",
+    "susanne-gravenegg",
+    "anne-mordaunt",
+    "elizabeth-conyers",
+    "conrad-v-von-degenfeld",
+    "margaretha-von-zyllenhardt",
+    "william-sutton-1561",
+    "mary-cartwright",
+    "thomas-darcy",
+    "james-i-james-vi-of-scotland-king-of-england-stuart-f-dt-stuart-i-of-england-ireland-iv-of-scotland",
+    "susan-caney-coney",
+    "thomas-rokeby",
+    "anne-queen-consort-of-denmark-von-oldenburg",
+    "dorothy-bellasyse",
+    "hans-meinhard-von-schonberg",
+    "thomas-howard-1st-earl-of-berkshire",
+    "anne-sutton",
+    "christoph-martin-freiherr-von-degenfield",
+    "margaret-d-arcy-1594",
+    "robert-ambrose-sutton",
+    "grace-rokeby",
+    "elizabeth-queen-consort-of-bohemia-stuart",
+    "king-of-bohemia-frederick-v-of-von-der-pflaz-king-of-bohemia",
+    "dorothy-d-arcy",
+    "willam-sir-d-arcy",
+    "anne-darcy",
+    "conyers-1st-earl-of-holderness-8th-lord-darcy-de-knayth-5th-lord-conyers-d-arcy",
+    "barbara-conyers-d-arcy",
+    "ursula-darcy",
+    "isabel-d-arcy",
+    "anna-maria-adelmann-von-adelmannsfelden",
+    "anthony-st-leger",
+    "elizabeth-d-arcy",
+    "henry-d-arcy",
+    "grace-d-arcy-1611",
+    "thomas-d-arcy-1613",
+    "marmaduke-d-arcy",
+    "marshal-frederic-von-schomberg",
+    "elector-palatine-charles-louis-von-der-pfalz-wittelsbach-pfalz-simmern-wittelsbach",
+    "james-darcy",
+    "johanna-elisabeth-schonberg-auf-wesel",
+    "john-darcy",
+    "philadelphia-d-arcy",
+    "ursula-darcy-1619",
+    "edward-d-arcy",
+    "conyers-2nd-earl-of-holderness-darcy",
+    "edward-darcy",
+    "rokeby-darcy",
+    "elizabeth-darcy",
+    "mary-d-arcy",
+    "philip-darcy",
+    "philip-darcy-1626",
+    "frances-lady-of-berkshire-howard",
+    "hon-margaret-darcy",
+    "john-darcy-1630",
+    "john-darcy-1630-2",
+    "dorothy-darcy",
+    "grace-d-arcy-1633",
+    "marie-luise-von-degenfeld",
+    "mary-st-leger",
+    "meinhard-von-schonburg",
+    "john-darcy-lord-d-arcy-lord-conyers",
+    "karoline-charlotte-elisabeth-von-der-pfalz",
+    "bridget-sutton",
+    "lady-elizabeth-cecil",
+    "robert-darcy",
+    "conyers-darcy",
+    "friederike-susanna-frederica-von-schonburg",
+    "george-schomberg-d-arcy",
+    "caroline-louisa-d-arcy",
+    "robert-4th-earl-of-holderness-darcy",
+    "george-darcy",
+    "thomas-d-arcy",
+    "lady-amelia-darcy-12th-baroness-darcy-de-knayth-and-9th-baroness-conyers",
+    "june-darcy",
+    "anna-of-brandenburg",
+    "bridget-mayney",
+    "christian-i-of-denmark",
+    "christian-iii-of-denmark",
+    "christian-v-count-of-oldenburg",
+    "conrad-i-of-oldenburg",
+    "countess-agnes-of-honstein",
+    "dietrich-of-oldenburg",
+    "dorothea-lauenburg",
+    "dorothea-of-brandenburg",
+    "frederick-i-of-denmark",
+    "frederick-ii-von-oldenburg",
+    "hedwig-grafin-von-rietberg",
+    "hedwig-of-diepholz",
+    "helvig-of-schauenburg",
+    "ingeborg-of-brunswick",
+    "margareta-anna-von-degenfeld",
+    "sophie-gustrow",
+    "von-degenfeld",
+    "von-degenfeld-2",
+    "wilhelm-adelmann-von-adelmannsfelden"
+   ]
+  },
+  {
+   "key": "saniger",
+   "colour": "var(--r-modern)",
+   "label": "Saniger: Berkeley, Gloucestershire",
+   "href": "/saniger-line/",
+   "read": "Six generations at Berkeley →",
+   "status": "origin-unknown",
+   "span": [
+    1679,
+    1804
+   ],
+   "statusNote": "origin not found: the deepest William is a name in a register",
+   "nodes": [
+    {
+     "place": "Berkeley",
+     "year": "1679",
+     "why": "William Saniger baptised 12 October, father William.",
+     "person": "william-saniger",
+     "evidence": "read"
+    },
+    {
+     "place": "Berkeley",
+     "year": "1744",
+     "why": "Thomas Saniger baptised 23 August, father Thomas.",
+     "person": "thomas-saniger-1744",
+     "evidence": "read"
+    },
+    {
+     "place": "Berkeley",
+     "year": "1769",
+     "why": "Thomas marries Catherine Cotton on 10 April; John is christened five weeks later.",
+     "person": "john-saniger",
+     "evidence": "read"
+    },
+    {
+     "place": "Berkeley",
+     "year": "1804",
+     "why": "Hannah baptised as SANIGOR, 18 August: the last link, found under another spelling.",
+     "person": "hannah-saniger",
+     "evidence": "read"
+    }
+   ],
+   "ends": [
+    [
+     "Bristol, the Wakefield lane",
+     "/wakefields/",
+     "Hannah marries James Wakefield, 17 October 1831"
+    ]
+   ],
+   "members": [
+    "william-sanigar",
+    "thomas-saniger-1711",
+    "edward-saniger",
+    "christian-saniger",
+    "mary-saniger",
+    "sarah-saniger",
+    "mary-saniger-1734",
+    "elizabeth-saniger",
+    "william-saniger-1738",
+    "thomas-saniger",
+    "james-saniger",
+    "john-saniger-1773",
+    "elizabeth-saniger-1776",
+    "ann-saniger",
+    "william-saniger-1801",
+    "john-saniger-1803",
+    "thomas-saniger-1808"
+   ]
+  },
+  {
+   "key": "wakefield",
+   "colour": "var(--terra)",
+   "label": "Wakefield: Stroud, Bristol, Brisbane",
+   "href": "/wakefields/",
+   "read": "The Wakefields →",
+   "status": "documented",
+   "span": [
+    1806,
+    1857
+   ],
+   "statusNote": "James's baptism names his parents",
+   "nodes": [
+    {
+     "place": "Stroud",
+     "year": "1806",
+     "why": "James Wakefield baptised 6 April: father Richard, mother Elizabeth Webb.",
+     "person": "james-wakefield",
+     "evidence": "read"
+    },
+    {
+     "place": "Bristol",
+     "year": "1841",
+     "why": "Drivers Fields, St Paul: James, a mason journeyman, with Hannah and three children.",
+     "href": "/drivers-fields/",
+     "evidence": "read"
+    },
+    {
+     "place": "Brisbane",
+     "year": "1854",
+     "why": "Miriam Wakefield, fourteen, lands on the General Hewitt with her father and mother and five brothers and sisters; James dies in 1857.",
+     "person": "miriam-wakefield",
+     "evidence": "read"
+    }
+   ],
+   "ends": [
+    [
+     "The Sneyd lane, Brisbane",
+     "/sneyds/",
+     "Miriam Wakefield marries William Hartley Sneyd, 1859"
+    ]
+   ],
+   "members": [
+    "eliza-wakefield",
+    "ellen-wakefield",
+    "martha-wakefield",
+    "hiram-wakefield",
+    "aaron-wakefield",
+    "jabez-wakefield",
+    "zillah-wakefield",
+    "ephraim-wakefield"
+   ]
+  },
+  {
+   "key": "sneyd",
+   "colour": "var(--ochre)",
+   "label": "Sneyd: Madeley and Hanley to Brisbane",
+   "href": "/sneyds/",
+   "read": "The Sneyds of the Potteries →",
+   "status": "inferred",
+   "span": [
+    1811,
+    1885
+   ],
+   "statusNote": "origin inferred: the 1781 Madeley baptism is the best candidate, not proved",
+   "nodes": [
+    {
+     "place": "Madeley",
+     "year": "1781",
+     "why": "Samuel Sneyd baptised 4 June, father William: the best candidate for the Hanley grocer, not proved.",
+     "person": "samuel-sneyd",
+     "evidence": "inferred"
+    },
+    {
+     "place": "Hanley",
+     "year": "1811",
+     "why": "Samuel Charles Sneyd christened 28 April, son of Samuel.",
+     "person": "samuel-charles-sneyd-1810",
+     "evidence": "read"
+    },
+    {
+     "place": "New South Wales",
+     "year": "1832",
+     "why": "Samuel Charles Sneyd sails with the 4th (King's Own) Regiment.",
+     "href": "/sergeant-sneyd/",
+     "evidence": "read"
+    },
+    {
+     "place": "Brisbane",
+     "year": "1885",
+     "why": "Samuel Charles Sneyd dies at Enoggera, 4 July; Governor of Brisbane Gaol from 1859.",
+     "href": "/sergeant-sneyd/",
+     "evidence": "read"
+    }
+   ],
+   "ends": [
+    [
+     "Boulia, Queensland",
+     "/sneyd/",
+     "Ivy Miriam Sneyd's people"
+    ]
+   ],
+   "members": [
+    "william-sneyd-1746",
+    "frances-sneyd",
+    "walter-sneyd-1752",
+    "ralph-sneyd-1753",
+    "edward-sneyd-1754",
+    "john-sneyd",
+    "william-sneyd-1769",
+    "dinah-sneyd",
+    "theodosia-sneyd",
+    "sarah-sneyd",
+    "james-sneyd-1779",
+    "william-sneyd-1780",
+    "emma-penelope-sneyd",
+    "lewis-sneyd",
+    "mary-sneyd-1788",
+    "george-sneyd",
+    "henry-sneyd",
+    "ralph-sneyd-1793",
+    "ralph-sneyd-1793-2",
+    "richard-malone-sneyd",
+    "walter-sneyd-1809",
+    "walter-sneyd-of-keele-hall",
+    "mary-sneyd-1814",
+    "james-sneyd-1818",
+    "louisa-caroline-sneyd",
+    "william-hartley-sneyd",
+    "james-goulbourn-sneyd",
+    "john-braidwood-sneyd",
+    "ellen-mary-sneyd",
+    "joseph-samuel1-sneyd",
+    "emma-martha-sneyd",
+    "samuel-hartley-hanley-stafford-sneyd",
+    "elizabeth-margaret-sneyd",
+    "arthur-oliver-sneyd",
+    "thomas-george-sneyd",
+    "louisa-georgina-sneyd",
+    "louisa-miriam-sneyd",
+    "isabel-clara-sneyd",
+    "robert-mcdowell-sneyd",
+    "ralph-sneyd-1863",
+    "samuel-charles-sneyd-1863",
+    "catherine-isabel-sneyd",
+    "sneyd-1864",
+    "arthur-william-hartley-sneyd",
+    "edith-blanche-sneyd-1867",
+    "sneyd-1867",
+    "ernest-ephraim-sneyd",
+    "hugh-herbert-hanley-sneyd",
+    "alice-catherine-irene-sneyd",
+    "ada-zillah-sneyd",
+    "ada-isabell-corbett-sneyd-1873",
+    "ada-isabell-corbett-sneyd-1873-2",
+    "eliza-anne-corbett-sneyd-1875-2",
+    "eva-maud-sneyd",
+    "william-charles-henry-corbett-sneyd",
+    "william-charles-henry-sneyd",
+    "walter-reginald-brisbane-sneyd-1877-2",
+    "lionel-sneyd",
+    "maurice-norman-fitzroy-sneyd-1879-2",
+    "james-hyland1-sneyd",
+    "james-hyland2-sneyd",
+    "jessie-camile-corbett-sneyd-1883",
+    "james-hyland-corbett-sneyd-1885-2",
+    "vera-evelyn-sneyd",
+    "brindley-stoke-sneyd-1888-2",
+    "gladys-may-corbett-sneyd-1890",
+    "gladys-may-corbett-sneyd-1890-2",
+    "vivian-ernest-william-sneyd",
+    "cecil-george-sneyd",
+    "ivy-miriam-sneyd",
+    "julia-hetty-sneyd",
+    "arthur-hartley-sneyd",
+    "gladys-beryl-sneyd",
+    "vivian-claude-sneyd",
+    "florence-isabel-sneyd",
+    "kenneth-seigfried-sneyd",
+    "muriel-mary-sneyd",
+    "greville-william-sneyd",
+    "roy-sneyd",
+    "amy-nesta-sneyd",
+    "william-joseph-george-sneyd",
+    "eda-joyce-margaret-sneyd",
+    "doris-ruth-marion-sneyd",
+    "dulcie-equator-sneyd",
+    "beryl-marie-sneyd",
+    "john-nelson-sneyd",
+    "hazel-ethel-mary-sneyd",
+    "herbert-george-eales-sneyd",
+    "robert-raymond-sneyd",
+    "emily-grace-sneyd",
+    "graham-sneyd",
+    "sydney-sneyd",
+    "jill-sneyd",
+    "norma-denise-sneyd",
+    "william-albert-sneyd",
+    "annie-ada-sneyd",
+    "diane-sneyd",
+    "edith-blanche-sneyd",
+    "sneyd",
+    "yvonne-sneyd"
+   ]
+  },
+  {
+   "key": "atkinson",
+   "colour": "var(--r-stuart)",
+   "label": "Atkinson: Limerick to Wickham Terrace",
+   "href": "/atkinson/",
+   "read": "The Atkinsons →",
+   "status": "inferred",
+   "span": [
+    1832,
+    1906
+   ],
+   "statusNote": "five generations above rest on the tree alone",
+   "nodes": [
+    {
+     "place": "Limerick",
+     "year": "1725",
+     "why": "Richard Atkinson: the tree's earliest on this line; no record read.",
+     "person": "richard-atkinson-1725",
+     "evidence": "tree"
+    },
+    {
+     "place": "Limerick",
+     "year": "1832",
+     "why": "Paul Cole Atkinson christened 9 July, St Mary's Cathedral: the record that names Richard and Anne.",
+     "person": "paul-cole-atkinson",
+     "evidence": "read"
+    },
+    {
+     "place": "Brisbane",
+     "year": "1864",
+     "why": "Paul Cole Atkinson installs the first organ at All Saints' Wickham Terrace, on 3 August.",
+     "href": "/atkinson/",
+     "evidence": "read"
+    }
+   ],
+   "ends": [
+    [
+     "Brisbane, Queensland",
+     "/atkinson/",
+     "Ida Kathleen Atkinson marries George Pitt D'Arcy, 1888"
+    ]
+   ],
+   "members": [
+    "richard-atkinson-1765",
+    "richard-atkinson-1801",
+    "rosanna-atkinson",
+    "william-atkinson",
+    "richard-kent-atkinson",
+    "charles-atkinson",
+    "elizabeth-mary-atkinson",
+    "henry-atkinson",
+    "ann-atkinson",
+    "elizabeth-atkinson",
+    "william-robert-atkinson",
+    "ann-creech-atkinson",
+    "frances-charlotte-atkinson",
+    "jane-atkinson",
+    "alice-harriet-atkinson",
+    "henry-wallace-atkinson",
+    "ida-kathleen-atkinson",
+    "george-frederick-handel-atkinson",
+    "pauline-brenda-atkinson",
+    "ruby-kathleen-atkinson"
+   ]
+  },
+  {
+   "key": "murdoch",
+   "colour": "var(--r-medieval)",
+   "label": "Murdoch: St Quivox, Ayrshire, to Toowoomba",
+   "href": "/murdoch/",
+   "read": "The Murdochs →",
+   "status": "documented",
+   "span": [
+    1854,
+    null
+   ],
+   "statusNote": "Scottish statutory register names the parents of William",
+   "nodes": [
+    {
+     "place": "Avondale",
+     "year": "1854",
+     "why": "Francis Murdoch marries Marion Watt on 6 May: 1854, not the 1853 the tree carries.",
+     "person": "francis-murdoch-1824",
+     "evidence": "read"
+    },
+    {
+     "place": "St Quivox",
+     "year": "1856",
+     "why": "William Murdoch born 7 October; the statutory register names Francis Murdoch and Marion Watt.",
+     "person": "william-murdoch",
+     "evidence": "read"
+    },
+    {
+     "place": "Gympie",
+     "year": "1894",
+     "why": "William James Fraser Murdoch born at Gympie, Queensland: the generation that emigrated has arrived.",
+     "person": "william-james-fraser-bill-murdoch",
+     "evidence": "tree"
+    }
+   ],
+   "ends": [
+    [
+     "Toowoomba, Queensland",
+     "/murdoch/",
+     "Audrey \"Dell\" Murdoch marries Kenneth Lindsay D'Arcy, 1952"
+    ]
+   ],
+   "members": [
+    "claud-murdoch",
+    "marion-fleming-murdoch",
+    "james-murdoch",
+    "francis-murdoch-1863",
+    "janet-murdoch",
+    "george-murdoch",
+    "jeanie-murdoch",
+    "francis-claudius-frank-murdoch",
+    "marion-janet-murdoch",
+    "allan-george-murdoch",
+    "annie-kathleen-murdoch",
+    "james-fraser-murdoch",
+    "keith-william-murdoch",
+    "marion-jean-murdoch",
+    "audrey-dell-murdoch",
+    "francis-murdoch",
+    "marian-jean-murdoch"
+   ]
+  }
+ ],
+ "pens": [
+  {
+   "id": "keele",
+   "kind": "different-stock",
+   "head": "A different stock of the name Sneyd: the Keele descent",
+   "note": "The tree hangs these people on a William Sneyd baptised at Madeley in 1742. The register names a different father. Tested and disproved; kept on the site, because a disproved claim published is worth more than a disproved claim deleted.",
+   "items": [
+    [
+     "The Sneyds of Keele Hall",
+     "/how-far-back/",
+     "behind a single link, found wrong"
+    ]
+   ],
+   "members": [
+    "john-dixie",
+    "thomas-dabridgecourt-of-longdon-hall",
+    "alice-griswold-or-greswald",
+    "john-noel",
+    "anne-fowler",
+    "thomas-de-beaumont",
+    "katherine-dabridgecourt",
+    "catherine-farnham",
+    "john-fullwood",
+    "wolston-wolstan-dixie",
+    "frances-de-beaumont",
+    "william-noel-1581",
+    "frances-fullwood",
+    "varney-vere-verney-noel-nowell",
+    "joane-dixie",
+    "elizabeth-dixie",
+    "william-noel-1642",
+    "frances-ward",
+    "ralph-sneyd-1669",
+    "frances-noel",
+    "edward-sneyd-1691",
+    "ralph-sneyd-1692",
+    "anne-maria-holford",
+    "dryden-sneyd",
+    "ralph-sneyd-1723",
+    "alan-holford",
+    "barbara-harvey",
+    "john-fowler",
+    "ralph-sneyd",
+    "william-sneyd"
+   ]
+  },
+  {
+   "id": "other-names",
+   "kind": "not-yet-placed",
+   "head": "Families the archive follows and has not yet drawn as a line",
+   "note": "Each of these is a name the direct line carries or a marriage brings in, and most have a page of their own. None is drawn as a lane because the archive has not stated, for it, how far its evidence reaches. The people are counted, not listed.",
+   "items": [
+    [
+     "Atwell (34)",
+     "/families/atwell/",
+     "34 people published under the name"
+    ],
+    [
+     "Rossiter (9)",
+     "/families/rossiter/",
+     "9 people published under the name"
+    ],
+    [
+     "Blum (8)",
+     "/families/blum/",
+     "8 people published under the name"
+    ],
+    [
+     "Creech (5)",
+     "/families/creech/",
+     "5 people published under the name"
+    ],
+    [
+     "Keeling (3)",
+     "/families/keeling/",
+     "3 people published under the name"
+    ],
+    [
+     "Watt (3)",
+     "/families/watt/",
+     "3 people published under the name"
+    ],
+    [
+     "Wright (3)",
+     "/families/wright/",
+     "3 people published under the name"
+    ],
+    [
+     "Matson (2)",
+     "/families/matson/",
+     "2 people published under the name"
+    ],
+    [
+     "Cotton (17)",
+     "/families/cotton/",
+     "17 people published under the name"
+    ],
+    [
+     "Sutton (11)",
+     "/families/sutton/",
+     "11 people published under the name"
+    ],
+    [
+     "von der Pfalz (13)",
+     "/families/von-der-pfalz/",
+     "13 people published under the name"
+    ],
+    [
+     "Howard (14)",
+     "/families/howard/",
+     "14 people published under the name"
+    ],
+    [
+     "von Degenfeld (8)",
+     "/families/von-degenfeld/",
+     "8 people published under the name"
+    ],
+    [
+     "Schomberg (8)",
+     "/families/schomberg/",
+     "8 people published under the name"
+    ],
+    [
+     "Kent (10)",
+     "/families/kent/",
+     "10 people published under the name"
+    ],
+    [
+     "Stuart (8)",
+     "/families/stuart/",
+     "8 people published under the name"
+    ],
+    [
+     "Jones (6)",
+     "/families/jones/",
+     "6 people published under the name"
+    ],
+    [
+     "Ward (3)",
+     "/families/ward/",
+     "3 people published under the name"
+    ],
+    [
+     "Blackbourne (4)",
+     "/families/blackbourne/",
+     "4 people published under the name"
+    ],
+    [
+     "All other names (260)",
+     "/people/",
+     "relatives named beside the line, and ancestors whose name has no page of its own"
+    ]
+   ],
+   "count": 429
+  }
+ ],
+ "bridges": [
+  {
+   "from": "hornby",
+   "to": "darcy",
+   "conf": "lore",
+   "label": "the tree joins these at Robert D'Arcy; no record does",
+   "href": "/hornby/"
+  }
+ ]
+}

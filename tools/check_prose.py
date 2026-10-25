@@ -63,6 +63,7 @@ HAND_EDITED = {
     "hannah-baptism.json",
     "indexes.json",
     "jean-ward.json",
+    "lines.json",  # the lines figure: made by tools/build_lines.py (the people and counts) from lane texts a person writes there, so the prose is read
     "joseph-darcy.json",
     "living-rule.json",  # the living-rule page
     "margaret-jones.json",

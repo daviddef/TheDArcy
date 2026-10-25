@@ -17,6 +17,11 @@
 "title": "The General Hewitt"
 },
 {
+"path": "/lines",
+"snippet": "…— 8 people on this line Eliza Wakefield Ellen Wakefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madeley and Hanley to Brisbane — 100 people on this line William Sneyd…",
+"title": "The Lines"
+},
+{
 "path": "/berkeley-woman",
 "snippet": "…akefield Wife 45 — BERKELEY, GLOUCESTERSHIRE, ENGLAND Hiram Wakefield Son 13 Errand boy — Aaron Wakefield Son 10 Errand boy — Miriam Wakefield Daughter 10 Servant — Jabez Wakefield Son 8 — — Zillah Wakefield Daughter 5 Scholar — Englan…",
 "title": "Hannah was a Berkeley woman"
@@ -29,6 +34,11 @@
 "path": "/sneyd",
 "snippet": "…wood Alice Catherine Irene Sneyd 1871–1914 · Queensland Ada Zillah Sneyd 1872–1921 · Bega Ada Isabell Corbett Sneyd b. 1873 · Queensland Ada Isabell Corbett Sneyd b. 1873 · Queensland Eliza Anne Corbett Sneyd 1875–1955 · Queensland Eliza Anne Co…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…nest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene Sneyd Ada Zillah Sneyd Ada Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza Anne Corbett Sneyd Eva Maud Sneyd William Charles Henry Corbett Sneyd William Charles Henry Sneyd…",
+"title": "The Lines"
 }
 ],
 "ada-zillah-sneyd": [
@@ -36,6 +46,11 @@
 "path": "/sneyd",
 "snippet": "…bert Hanley Sneyd 1869–1935 · Westwood Alice Catherine Irene Sneyd 1871–1914 · Queensland Ada Zillah Sneyd 1872–1921 · Bega Ada Isabell Corbett Sneyd b. 1873 · Queensland Ada Isabell Corbett Sneyd b. 1873 · Queensland Eliza Anne Corbett…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…he Sneyd Sneyd Ernest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene Sneyd Ada Zillah Sneyd Ada Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza Anne Corbett Sneyd Eva Maud Sneyd William Charles Henry Corbett Sneyd W…",
+"title": "The Lines"
 }
 ],
 "adolf-von-degenfeld": [],
@@ -49,7 +64,13 @@
 "title": "The Other Archives"
 }
 ],
-"alan-holford": [],
+"alan-holford": [
+{
+"path": "/lines",
+"snippet": "…h Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holford Barbara Harvey John Fowler Ralph Sneyd William Sneyd How to read a lane The line of small capitals under each lane title is the s…",
+"title": "The Lines"
+}
+],
 "algernon-howard": [
 {
 "path": "/",
@@ -69,10 +90,21 @@
 "path": "/sneyd",
 "snippet": "…gton Ernest Ephraim Sneyd 1869–1946 · Bega Hugh Herbert Hanley Sneyd 1869–1935 · Westwood Alice Catherine Irene Sneyd 1871–1914 · Queensland Ada Zillah Sneyd 1872–1921 · Bega Ada Isabell Corbett Sneyd b. 1873 · Queensland Ada Isabell Corbett Sneyd…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…am Hartley Sneyd Edith Blanche Sneyd Sneyd Ernest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene Sneyd Ada Zillah Sneyd Ada Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza Anne Corbett Sneyd Eva Maud Sneyd William Charles Henr…",
+"title": "The Lines"
 }
 ],
 "alice-coney": [],
-"alice-griswold-or-greswald": [],
+"alice-griswold-or-greswald": [
+{
+"path": "/lines",
+"snippet": "…name Sneyd: the Keele descent — 30 people John Dixie Thomas DABRIDGECOURT of Longdon Hall Alice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances…",
+"title": "The Lines"
+}
+],
 "alice-harriet-atkinson": [
 {
 "path": "/",
@@ -80,12 +112,23 @@
 "title": "Twelve generations, and two claims too far."
 },
 {
+"path": "/lines",
+"snippet": "…nson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson George Frederick Handel Atkinson Pauline Brenda Atkinson Ruby Kathleen Atkinson Murd…",
+"title": "The Lines"
+},
+{
 "path": "/atkinson",
 "snippet": "…· Limerick Frances Charlotte Atkinson b. 1860 · Limerick Jane Atkinson b. 1862 · Brisbane Alice Harriet Atkinson 1864–1894 · Brisbane Henry Wallace Atkinson 1866–1938 · Brisbane Ida Kathleen Atkinson 1869–1937 · Brisbane George Frederick Hand…",
 "title": "The Atkinsons"
 }
 ],
-"alice-leigh": [],
+"alice-leigh": [
+{
+"path": "/lines",
+"snippet": "…urg John II, Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zylle…",
+"title": "The Lines"
+}
+],
 "alice-lucy-howard": [],
 "alice-mary-tomlin": [],
 "alice-sutton": [],
@@ -94,6 +137,11 @@
 "path": "/murdoch",
 "snippet": "…pie Marion Janet Murdoch 1893–1972 William James Fraser \"Bill\" Murdoch 1894–1946 · Gympie Allan George Murdoch 1896–1907 · Gympie Annie Kathleen Murdoch 1898–1964 · Gympie James \"Fraser\" Murdoch 1923–2003 Keith William Murdoch 1925–1996 · T…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…rdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith William Murdoch Marion \"Jean\" Murdoch Audrey \"Dell\" Murdoch Francis Murdoch M…",
+"title": "The Lines"
 }
 ],
 "alys-maud-farrow": [],
@@ -108,6 +156,11 @@
 "path": "/sneyd",
 "snippet": "…1982 · Queensland Roy Sneyd 1899–1964 · Mackay Greville William Sneyd 1899–1996 · Gayndah Amy Nesta Sneyd 1900–1941 · Brisbane William Joseph George Sneyd 1900–1992 · Queensland Eda Joyce Margaret Sneyd 1901–1955 · Queensland Dulcie Eq…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…e Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson S…",
+"title": "The Lines"
 }
 ],
 "andrea-andreana-crisci": [],
@@ -137,6 +190,11 @@
 "aniello-zampiello": [],
 "ann-atkinson": [
 {
+"path": "/lines",
+"snippet": "…am Atkinson Richard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson He…",
+"title": "The Lines"
+},
+{
 "path": "/atkinson",
 "snippet": "…ATKINSON b. 1838 · Limerick Charles Atkinson 1838–1840 Henry Atkinson 1843–1916 · Strand Ann Atkinson 1846–1928 Elizabeth Atkinson 1854–1936 · Limerick William Robert Atkinson 1856–1883 · Limerick Ann Creech Atkinson 1858–1863 · Li…",
 "title": "The Atkinsons"
@@ -147,6 +205,11 @@
 "path": "/",
 "snippet": "…race D'Arcy Robert Lindesay D'Arcy William Arthur D'Arcy Ida’s · 8 Alice Harriet Atkinson Ann Creech Atkinson Elizabeth Atkinson Frances Charlotte Atkinson George Frederick Handel Atkinson Henry Wallace Atkinson Jane Atkinson William Rober…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/lines",
+"snippet": "…beth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson George Frederick Han…",
+"title": "The Lines"
 },
 {
 "path": "/atkinson",
@@ -196,6 +259,11 @@
 "title": "Not in the tree"
 },
 {
+"path": "/lines",
+"snippet": "…abeth Saniger William Saniger Thomas Saniger James Saniger John Saniger Elizabeth Saniger Ann Saniger William Saniger John Saniger, Thomas Saniger Wakefield: Stroud, Bristol, Brisbane — 8 people on this line Eliza Wakefield Ellen W…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…thor out twice in one afternoon. Where it was corrected → 16 September 2026 was Announced Ann Saniger's 1798 baptism at Berkeley as a new find — “Ann has never had one” — in a block published on the page that had already been carry…",
 "title": "What This Archive Got Wrong"
@@ -208,7 +276,13 @@
 ],
 "ann-waterman": [],
 "anna-del-giudice-falco": [],
-"anna-maria-adelmann-von-adelmannsfelden": [],
+"anna-maria-adelmann-von-adelmannsfelden": [
+{
+"path": "/lines",
+"snippet": "…Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'Arcy Ursula Darcy Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector…",
+"title": "The Lines"
+}
+],
 "anna-maria-d-arcy-1791": [
 {
 "path": "/",
@@ -224,6 +298,11 @@
 "path": "/crossread",
 "snippet": "…SUSSEX — aged 88 Catherine D'Arcy tree 1789–1876 10 Dec 1789 BARBADOS BRIGHTON — aged 86 Anna Maria D'Arcy tree 1791–1791 16 May 1791 — died 24 October, aged five months Anna Maria d'Arcy tree 1792–1800 10 Oct 1792 Portsmouth died aged…",
 "title": "Reading the archive against itself"
+},
+{
+"path": "/lines",
+"snippet": "…D'Arcy George Pitt D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy…",
+"title": "The Lines"
 }
 ],
 "anna-maria-d-arcy-1792": [
@@ -241,10 +320,21 @@
 "path": "/crossread",
 "snippet": "…aged 86 Anna Maria D'Arcy tree 1791–1791 16 May 1791 — died 24 October, aged five months Anna Maria d'Arcy tree 1792–1800 10 Oct 1792 Portsmouth died aged seven Charlotte D'Arcy tree 1794–1869 19 Oct 1794 LYME REGIS, DORSET BRIGHTON — a…",
 "title": "Reading the archive against itself"
+},
+{
+"path": "/lines",
+"snippet": "…t D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'…",
+"title": "The Lines"
 }
 ],
 "anna-martone": [],
-"anna-of-brandenburg": [],
+"anna-of-brandenburg": [
+{
+"path": "/lines",
+"snippet": "…Arcy Lady Amelia Darcy, 12th Baroness Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agn…",
+"title": "The Lines"
+}
+],
 "anne-blackbourne": [],
 "anne-creech": [],
 "anne-darcy": [
@@ -262,18 +352,52 @@
 "path": "/bloodline",
 "snippet": "…ildren: Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy · Anne Darcy · Barbara Conyers D'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · Jame…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…Bohemia Frederick V Of von der Pflaz, King of Bohemia Dorothy D'Arcy willam [Sir] D\"arcy Anne Darcy Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'Arcy Ursula Darcy Isabel D'Arcy…",
+"title": "The Lines"
 }
 ],
-"anne-fowler": [],
-"anne-maria-holford": [],
-"anne-mordaunt": [],
-"anne-queen-consort-of-denmark-von-oldenburg": [],
+"anne-fowler": [
+{
+"path": "/lines",
+"snippet": "…ople John Dixie Thomas DABRIDGECOURT of Longdon Hall Alice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William No…",
+"title": "The Lines"
+}
+],
+"anne-maria-holford": [
+{
+"path": "/lines",
+"snippet": "…izabeth Dixie William Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holford Barbara Harvey John Fowler Ralph Sneyd William Sneyd How to read a lane The line of small c…",
+"title": "The Lines"
+}
+],
+"anne-mordaunt": [
+{
+"path": "/lines",
+"snippet": "…night of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi…",
+"title": "The Lines"
+}
+],
+"anne-queen-consort-of-denmark-von-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…t (født stuart), I of England & Ireland, IV of Scotland Susan (Caney) Coney Thomas Rokeby Anne (Queen consort) of Denmark von Oldenburg Dorothy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von De…",
+"title": "The Lines"
+}
+],
 "anne-sutton": [],
 "anne-sutton-2": [
 {
 "path": "/",
 "snippet": "…nd not proved. Brothers and sisters · 3 show ↓ hide ↑ John’s · 1 Jane Darcy Bridget’s · 2 Anne Sutton Robert Sutton 10 1681 → 1721 Robert Darcy b. 24 NOV 1681 d. 20 JAN 1721 Earl of Holdernesse ( 3rd × Friederike Susanna Frederica…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/lines",
+"snippet": "…enburg Dorothy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consort of Bohemia…",
+"title": "The Lines"
 }
 ],
 "annie-ada-sneyd": [
@@ -281,6 +405,11 @@
 "path": "/sneyd",
 "snippet": "…Ralph Sneyd dates unknown William Albert Sneyd d. 1954 Edith Blanche Sneyd dates unknown Annie Ada Sneyd dates unknown",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sneyd Atkinson: Limerick to Wickham Terrace — 20 people on this line Richard Atkinso…",
+"title": "The Lines"
 }
 ],
 "annie-hewish-adams": [],
@@ -289,13 +418,24 @@
 "path": "/murdoch",
 "snippet": "…am James Fraser \"Bill\" Murdoch 1894–1946 · Gympie Allan George Murdoch 1896–1907 · Gympie Annie Kathleen Murdoch 1898–1964 · Gympie James \"Fraser\" Murdoch 1923–2003 Keith William Murdoch 1925–1996 · Toowoomba Marion \"Jean\" Murdoch 1927–2010 ·…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith William Murdoch Marion \"Jean\" Murdoch Audrey \"Dell\" Murdoch Francis Murdoch Marian Jean Murdoch A di…",
+"title": "The Lines"
 }
 ],
 "annie-lina-smith": [],
 "annie-mary-chapman": [],
 "annie-melville": [],
 "annie-spaulding": [],
-"anthony-st-leger": [],
+"anthony-st-leger": [
+{
+"path": "/lines",
+"snippet": "…Barbara Conyers D'Arcy Ursula Darcy Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles…",
+"title": "The Lines"
+}
+],
 "antonio-falco": [],
 "arienzo-caserta-campania-italia-unconfirmed-family-falco": [],
 "arpaia-unconfirmed-family-ferrara": [],
@@ -363,6 +503,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…t Sneyd Vivian Ernest William Sneyd Cecil George Sneyd Ivy Miriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…am in 1810 He married Miss Ludlam in 1805 and Maria White in County Wicklow about 1819. → Arthur Hartley Sneyd was a clerk, buried in France A typist, with no known grave. → Vivian Ernest William Sneyd died between 1919 and 1921 16 February…",
 "title": "What This Archive Got Wrong"
@@ -378,6 +523,11 @@
 "path": "/direct-line",
 "snippet": "…nsland, Australia trade Insurance Manager documented joins Murdoch → Brothers and sisters Arthur Neville \"Bill\" D'Arcy Joan D'Arcy Valma D'Arcy Vivian Lindsay D'Arcy g2 Ian Kenneth D'Arcy and Giuseppina Falco family The joint here will not bear wei…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…cy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Arcy Ruth D'Arcy Hornby: the descent the tree claims…",
+"title": "The Lines"
 }
 ],
 "arthur-oliver-sneyd": [
@@ -385,6 +535,11 @@
 "path": "/sneyd",
 "snippet": "…rd Sneyd 1851–1901 · New South Wales Elizabeth Margaret Sneyd 1853–1908 · New South Wales Arthur Oliver Sneyd 1855–1896 · Brisbane Thomas George Sneyd 1859–1927 · Bega Louisa Miriam Sneyd 1861–1927 · Bega Louisa Georgina SNEYD 1861–1910 ·…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…el1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles…",
+"title": "The Lines"
 }
 ],
 "arthur-william-hartley-sneyd": [
@@ -412,6 +567,11 @@
 "path": "/sneyd",
 "snippet": "…he tree — and the one that pushed furthest into the Queensland interior. Muttaburra, 1891 Arthur William Hartley Sneyd (b. Brisbane 1866) married Martha Blum (b. Rockhampton 1870) at Muttaburra on 20 January 1891 — six hundred kilometres inland, in…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles Sneyd Catherine Isabel Sneyd Sneyd Arthur William Hartley Sneyd Edith Blanche Sneyd Sneyd Ernest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene Sneyd Ada Zillah Sneyd Ada Isabell…",
+"title": "The Lines"
 }
 ],
 "audrey-dell-murdoch": [
@@ -439,6 +599,11 @@
 "path": "/dna",
 "snippet": "…tractive claim in the tree. A living descendant of Kenneth Lindsay D'Arcy (1927–2010) and Audrey \"Dell\" Murdoch (1929–2022) has taken an autosomal DNA test. She is living, so she is not named here and her kit is not identified — but her resu…",
 "title": "What the DNA says"
+},
+{
+"path": "/lines",
+"snippet": "…ames the parents of William 20 people on this line The Murdochs → Toowoomba, Queensland — Audrey \"Dell\" Murdoch marries Kenneth Lindsay D'Arcy, 1952 Toowoomba, Queensland Avondale · 1854 — Francis Murdoch marries Marion Watt on 6 May: 1854,…",
+"title": "The Lines"
 }
 ],
 "barbara-conyers-d-arcy": [
@@ -456,9 +621,20 @@
 "path": "/bloodline",
 "snippet": "…rs 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy · Anne Darcy · Barbara Conyers D'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Ma…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…nne Darcy Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'Arcy Ursula Darcy Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Th…",
+"title": "The Lines"
 }
 ],
-"barbara-harvey": [],
+"barbara-harvey": [
+{
+"path": "/lines",
+"snippet": "…es Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holford Barbara Harvey John Fowler Ralph Sneyd William Sneyd How to read a lane The line of small capitals under each lane title is the status, and it i…",
+"title": "The Lines"
+}
+],
 "barbara-nickname-goldie-atwell": [],
 "benedetto-falco": [],
 "benjamin-cotton": [],
@@ -491,11 +667,28 @@
 "path": "/sneyd",
 "snippet": "…ulcie Equator Sneyd 1902–1941 · Queensland Doris Ruth Marion Sneyd 1902–1998 · Queensland Beryl Marie Sneyd 1904–1905 · Brisbane John Nelson Sneyd 1905–1994 · Queensland Hazel Ethel Mary Sneyd b. 1906 · Queensland Herbert George Eales Sn…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sn…",
+"title": "The Lines"
 }
 ],
-"beverley-d-arcy": [],
+"beverley-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…cy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Arcy Ruth D'Arcy Hornby: the descent the tree claims above Robert D'Arcy — 106 people on this line Heinri…",
+"title": "The Lines"
+}
+],
 "bridget-bayley": [],
-"bridget-mayney": [],
+"bridget-mayney": [
+{
+"path": "/lines",
+"snippet": "…cy, 12th Baroness Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein…",
+"title": "The Lines"
+}
+],
 "bridget-sutton": [
 {
 "path": "/",
@@ -506,6 +699,11 @@
 "path": "/direct-line",
 "snippet": "…22 Westminster, Middlesex 13 Dec 1692 — Disputed 11 John Darcy, Lord D'arcy, Lord Conyers Bridget Sutton Alianna (Aline de La Ley) de la Legh Juliana c. 1659 Darcy Meynill, Yorkshire — the tree's geocoder has appended a county in New…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…chönburg John Darcy, Lord D'arcy, Lord Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louis…",
+"title": "The Lines"
 }
 ],
 "brindley-stoke": [
@@ -521,6 +719,11 @@
 "path": "/sneyd",
 "snippet": "…James Hyland Corbett Sneyd 1885–1936 · Queensland Vera Evelyn Sneyd b. 1887 · Queensland Brindley Stoke Sneyd 1888–1888 · Brisbane Brindley Stoke Sneyd 1888–1888 · Brisbane Gladys May Corbett Sneyd b. 1890 · Brisbane Vivian Ernest William…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…es Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corbett Sneyd Gladys May Corbett Sneyd Vivian Ernest William Sneyd Cecil George Sneyd Ivy Miriam Sneyd Julia Hetty Sne…",
+"title": "The Lines"
 }
 ],
 "bruce-atwell": [],
@@ -546,6 +749,11 @@
 "path": "/direct-line",
 "snippet": "…on him — the line stands perfectly well without him. joins D'Arcy → Brothers and sisters Caroline Louisa D'ARCY George Schomberg d'Arcy Robert, 4th Earl of Holderness Darcy Defranceski Family Site (23andMe) · Defranceski Family Site (23andMe…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…rt Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy George Darcy Thomas D'Arcy Lady Amelia Darcy, 12th Baroness Darcy de Knayth and 9th Baroness…",
+"title": "The Lines"
 }
 ],
 "caroline-n": [],
@@ -606,13 +814,18 @@
 "title": "Reading the archive against itself"
 },
 {
+"path": "/lines",
+"snippet": "…ugust, father Thomas. [a record read here] Berkeley 1744 Berkeley · 1769 — Thomas marries Catherine Cotton on 10 April; John is christened five weeks later. [a record read here] Berkeley 1769 Berkeley · 1804 — Hannah baptised as SANIGOR…",
+"title": "The Lines"
+},
+{
 "path": "/saniger-line",
 "snippet": "…The tree's date to the day. Buried at Berkeley 24 January 1819, aged 75. Thomas Saniger & Catherine Cotton married Berkeley 10 APRIL 1769 Tree: not in the tree at all — John was christened five weeks later. Catherine Cotton is a name th…",
 "title": "Six generations at Berkeley"
 },
 {
 "path": "/worklist",
-"snippet": "…ething this archive does on your behalf. Cotton's will is the one that would test whether Catherine Cotton, who married Thomas Saniger at Berkeley, is his daughter. 16. Blocked — waiting on a person or an institution David 33 days Two c…",
+"snippet": "…ething this archive does on your behalf. Cotton's will is the one that would test whether Catherine Cotton, who married Thomas Saniger at Berkeley, is his daughter. 16. Blocked — waiting on a person or an institution David 40 days Two c…",
 "title": "The work list"
 }
 ],
@@ -659,12 +872,23 @@
 "title": "Reading the archive against itself"
 },
 {
+"path": "/lines",
+"snippet": "…et Maria Isabella D'Arcy George Pitt D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…s match one person. Eight match between two and four : William Sneyd (4), Thomas Saniger, Catherine D'Arcy, Constantine D'Arcy, George Pitt D'Arcy, James Sneyd, Mary Sneyd, Samuel Charles Sneyd. Their records are shown on every candidat…",
 "title": "The work list"
 }
 ],
-"catherine-farnham": [],
+"catherine-farnham": [
+{
+"path": "/lines",
+"snippet": "…ice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joan…",
+"title": "The Lines"
+}
+],
 "catherine-georgiana-west": [
 {
 "path": "/changes",
@@ -692,6 +916,11 @@
 "path": "/sneyd",
 "snippet": "…9 · Denton Ralph Sneyd 1863–1949 · Headington Samuel Charles Sneyd 1863–1938 · Queensland Catherine Isabel Sneyd 1864–1947 · Brisbane Sneyd 1864–1956 · Denton Arthur William Hartley Sneyd 1866–1922 · Brisbane Edith Blanche Sneyd 1867–1887 · Q…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…sa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles Sneyd Catherine Isabel Sneyd Sneyd Arthur William Hartley Sneyd Edith Blanche Sneyd Sneyd Ernest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene…",
+"title": "The Lines"
 }
 ],
 "catherine-jane-matson": [
@@ -702,7 +931,13 @@
 }
 ],
 "catherine-lucy-eliza-hyde": [],
-"catherine-lucy-jane-d-arcy": [],
+"catherine-lucy-jane-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Lou…",
+"title": "The Lines"
+}
+],
 "catherine-margaret-mulcahy": [
 {
 "path": "/tree",
@@ -750,19 +985,40 @@
 "path": "/direct-line",
 "snippet": "…Brisbane, Brisbane, Queensland, Australia documented joins Keeling → Brothers and sisters Catherine Maria D'Arcy Charlotte Maria D'Arcy Hallett Web Site g5 George Pitt D'Arcy and Ida Kathleen Atkinson born 5 MAY 1864, Brisbane, Brisbane, Quee…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…rge Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy…",
+"title": "The Lines"
 }
 ],
-"catherine-sophia-ann-d-arcy": [],
+"catherine-sophia-ann-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine…",
+"title": "The Lines"
+}
+],
 "cecil-george-edgar": [],
 "cecil-george-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…ensland Gladys May Corbett Sneyd b. 1890 · Queensland Ivy Miriam Sneyd 1891–1979 · Boulia Cecil George Sneyd 1891–1947 · Queensland Julia Hetty Sneyd b. 1892 · Holy Trinity Arthur Hartley Sneyd 1893–1916 · Rockhampton City Gladys Beryl Sn…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Stoke Sneyd Gladys May Corbett Sneyd Gladys May Corbett Sneyd Vivian Ernest William Sneyd Cecil George Sneyd Ivy Miriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seig…",
+"title": "The Lines"
 }
 ],
 "charles-ashkenazie-hunter": [],
 "charles-atkinson": [
+{
+"path": "/lines",
+"snippet": "…Richard Atkinson Richard Atkinson Rosanna Atkinson William Atkinson Richard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlo…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…6 · ST. MARY'S Richard Kent Atkinson 1836–1888 Elizabeth Mary ATKINSON b. 1838 · Limerick Charles Atkinson 1838–1840 Henry Atkinson 1843–1916 · Strand Ann Atkinson 1846–1928 Elizabeth Atkinson 1854–1936 · Limerick William Robert Atkinso…",
@@ -841,8 +1097,13 @@
 "title": "The Sussex sisters"
 },
 {
+"path": "/lines",
+"snippet": "…'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Ma…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
-"snippet": "…ed. 86. Blocked — waiting on a person or an institution David 32 days Jane, Catherine and Charlotte D'Arcy in the 1861 census Errand 43. The 1851 entry is found — HO107/1646 f.357 p.59 sch.172, 22 Western Cottages, Brighton — and 1861 i…",
+"snippet": "…ed. 86. Blocked — waiting on a person or an institution David 39 days Jane, Catherine and Charlotte D'Arcy in the 1861 census Errand 43. The 1851 entry is found — HO107/1646 f.357 p.59 sch.172, 22 Western Cottages, Brighton — and 1861 i…",
 "title": "The work list"
 }
 ],
@@ -862,13 +1123,36 @@
 "path": "/direct-line",
 "snippet": "…ensland, Australia documented joins Keeling → Brothers and sisters Catherine Maria D'Arcy Charlotte Maria D'Arcy Hallett Web Site g5 George Pitt D'Arcy and Ida Kathleen Atkinson born 5 MAY 1864, Brisbane, Brisbane, Queensland, Australia died…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…erick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy…",
+"title": "The Lines"
 }
 ],
 "charlotte-rossiter": [],
 "chiara-rivetti-rivotti": [],
-"christian-i-of-denmark": [],
-"christian-iii-count-of-oldenburg": [],
-"christian-iii-of-denmark": [],
+"christian-i-of-denmark": [
+{
+"path": "/lines",
+"snippet": "…ss Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg D…",
+"title": "The Lines"
+}
+],
+"christian-iii-count-of-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…on Wildeshausen Elisabeth von Tecklenburg Hedwig von Oldenburg Konrad (Herr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenh…",
+"title": "The Lines"
+}
+],
+"christian-iii-of-denmark": [
+{
+"path": "/lines",
+"snippet": "…9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothe…",
+"title": "The Lines"
+}
+],
 "christian-saniger": [
 {
 "path": "/changes",
@@ -884,11 +1168,28 @@
 "path": "/saniger-place",
 "snippet": "…ree ended, and a Maurice — the same forename Smyth gives as the 1639 owner's grandfather. Christian Saniger v. Mary Millard 1768 GDR/B4/1/387 — a defamation suit in the Gloucester consistory court. Church-court defamation cases are almos…",
 "title": "Saniger is a place"
+},
+{
+"path": "/lines",
+"snippet": "…y, Gloucestershire — 17 people on this line William Sanigar Thomas Saniger Edward Saniger Christian Saniger Mary Saniger Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas Saniger James Saniger John Saniger Elizabeth San…",
+"title": "The Lines"
 }
 ],
-"christian-v-count-of-oldenburg": [],
+"christian-v-count-of-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…Darcy Anna of Brandenburg Bridget Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of…",
+"title": "The Lines"
+}
+],
 "christof-friedrich-von-degenfeld": [],
-"christoph-martin-freiherr-von-degenfield": [],
+"christoph-martin-freiherr-von-degenfield": [
+{
+"path": "/lines",
+"snippet": "…hy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consort of Bohemia) STUART King Of Bohemia Frederick V Of von…",
+"title": "The Lines"
+}
+],
 "claud-murdoch": [
 {
 "path": "/murdoch",
@@ -899,6 +1200,11 @@
 "path": "/dna",
 "snippet": "…n 5, and then nothing The names where her mother's side runs out are worth reading aloud: Claud Murdoch. Janet Walker. William Watt. Marion Fleming. Agnes Isabel Scott. Five Scottish surnames, four to five generations up, and not one…",
 "title": "What the DNA says"
+},
+{
+"path": "/lines",
+"snippet": "…uby Kathleen Atkinson Murdoch: St Quivox, Ayrshire, to Toowoomba — 17 people on this line Claud Murdoch Marion Fleming Murdoch James Murdoch Francis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch…",
+"title": "The Lines"
 }
 ],
 "claudia-di-lucia": [
@@ -915,8 +1221,20 @@
 "title": "Our line, drawn"
 }
 ],
-"conrad-i-of-oldenburg": [],
-"conrad-v-von-degenfeld": [],
+"conrad-i-of-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…et Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II v…",
+"title": "The Lines"
+}
+],
+"conrad-v-von-degenfeld": [
+{
+"path": "/lines",
+"snippet": "…IGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi Of Scotland) King Of England Stuart (fød…",
+"title": "The Lines"
+}
+],
 "constantine-d-arcy-1759": [],
 "constantine-d-arcy-1786": [
 {
@@ -985,6 +1303,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…read from a record. D'Arcy: Robert D'Arcy at Chatham to Brisbane — 51 people on this line Constantine D'Arcy Robert Edward D'Arcy Margaret Maria Isabella D'Arcy George Pitt D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…asked. This archive has a tool for exactly this — crossread.py, built in September after Constantine D'Arcy sat published on one page while three others called him unplaced — and it was not run. The lesson. THE ARCHIVE IS THE FIRST SOURC…",
 "title": "What This Archive Got Wrong"
@@ -1011,6 +1334,11 @@
 "path": "/bloodline",
 "snippet": "…pt. The links do not — here they are. Parents: Thomas Darcy · Elizabeth Conyers Children: Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy · Anne Darcy · Barbara Conyers D'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…ederick V Of von der Pflaz, King of Bohemia Dorothy D'Arcy willam [Sir] D\"arcy Anne Darcy Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'Arcy Ursula Darcy Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry…",
+"title": "The Lines"
 }
 ],
 "conyers-2nd-earl-of-holderness-darcy": [
@@ -1023,6 +1351,11 @@
 "path": "/direct-line",
 "snippet": "…astle, North Riding, Yorkshire, England 14 Jun 1689 Earl of Holdernesse ( 1st Disputed 12 Conyers, 2nd Earl of Holderness Darcy Frances (Lady of Berkshire) Howard — m. 8 Feb 1650 1621/22 Westminster, Middlesex 13 Dec 1692 — Disputed 11 John Darcy, Lord D'ar…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…a Elisabeth Schönberg auf Wesel John Darcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret…",
+"title": "The Lines"
 }
 ],
 "conyers-darcy": [
@@ -1040,6 +1373,11 @@
 "path": "/hornby",
 "snippet": "…a daughter The Darcy Earls of Holderness are among the best-recorded families in England. Conyers Darcy, 1st Earl (1598–1689); Conyers, 2nd Earl (1622–1692); Robert, 3rd Earl (1681–1721); Robert, 4th Earl (1718–1778). At the 4th Earl…",
 "title": "The Hornby Claim"
+},
+{
+"path": "/lines",
+"snippet": "…roline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy Ge…",
+"title": "The Lines"
 }
 ],
 "conyers-of-hornby-castle-d-arcy": [
@@ -1061,7 +1399,13 @@
 ],
 "cory-heard-davey": [],
 "costanza-falco": [],
-"countess-agnes-of-honstein": [],
+"countess-agnes-of-honstein": [
+{
+"path": "/lines",
+"snippet": "…of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin…",
+"title": "The Lines"
+}
+],
 "crewe-chetwood": [],
 "daniel-mcnaught": [],
 "david-paterson": [],
@@ -1078,14 +1422,30 @@
 "path": "/sneyd",
 "snippet": "…· Qld Jill Sneyd b. 1934 Norma Denise Sneyd 1940–1944 · Mackay Yvonne Sneyd dates unknown Diane Sneyd dates unknown Edward Sneyd d. 1691 William Sneyd dates unknown · England Sneyd dates unknown Henry Sneyd d. 1791 George Sneyd d.…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sneyd Atkinson: Limerick to Wickham Terrace — 20 people on this line Richard Atkinson Richard At…",
+"title": "The Lines"
 }
 ],
-"dietrich-of-oldenburg": [],
+"dietrich-of-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…Denmark Christian V, Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig…",
+"title": "The Lines"
+}
+],
 "dinah-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…neyd 1760–1835 · England Samuel Sneyd 1781–1855 · Madeley William Sneyd b. 1769 · Madeley Dinah Sneyd b. 1772 · Madeley Theodosia Sneyd b. 1773 · Madeley Sarah Sneyd b. 1776 · Madeley James Sneyd b. 1779 · Madeley William Sneyd b.…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…illiam Sneyd Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph S…",
+"title": "The Lines"
 }
 ],
 "domenico-pascale-falcone": [],
@@ -1094,10 +1454,27 @@
 "path": "/sneyd",
 "snippet": "…a Joyce Margaret Sneyd 1901–1955 · Queensland Dulcie Equator Sneyd 1902–1941 · Queensland Doris Ruth Marion Sneyd 1902–1998 · Queensland Beryl Marie Sneyd 1904–1905 · Brisbane John Nelson Sneyd 1905–1994 · Queensland Hazel Ethel Mary Sneyd b.…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…liam Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd E…",
+"title": "The Lines"
 }
 ],
-"dorothea-lauenburg": [],
-"dorothea-of-brandenburg": [],
+"dorothea-lauenburg": [
+{
+"path": "/lines",
+"snippet": "…Count of Oldenburg Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig…",
+"title": "The Lines"
+}
+],
+"dorothea-of-brandenburg": [
+{
+"path": "/lines",
+"snippet": "…Conrad I of Oldenburg Countess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg…",
+"title": "The Lines"
+}
+],
 "dorothy-bellasyse": [
 {
 "path": "/",
@@ -1108,6 +1485,11 @@
 "path": "/direct-line",
 "snippet": "…nby Castle, Yorkshire, England 6 Nov 1605 — Disputed 14 Conyers (of Hornby Castle) D'arcy Dorothy Bellasyse — m. 2 May 1594 27 Aug 1570 Hornby Castle, Yorkshire, England 3 Mar 1653 7th Lord Darcy Knayth, 4th Baron Conyers, of \"Hornby\", S…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…Scotland Susan (Caney) Coney Thomas Rokeby Anne (Queen consort) of Denmark von Oldenburg Dorothy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von Degenfield Margaret…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -1130,6 +1512,11 @@
 "path": "/bloodline",
 "snippet": "…8th Lord Darcy de Knayth 5th Lord Conyers D'arcy · Anne Darcy · Barbara Conyers D'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · M…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…consort of Bohemia) STUART King Of Bohemia Frederick V Of von der Pflaz, King of Bohemia Dorothy D'Arcy willam [Sir] D\"arcy Anne Darcy Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'…",
+"title": "The Lines"
 }
 ],
 "dorothy-darcy": [
@@ -1142,6 +1529,11 @@
 "path": "/direct-line",
 "snippet": "…will not bear weight. Repeated from the family tree and not proved. Brothers and sisters Dorothy Darcy Edward Darcy Elizabeth Darcy Grace D'Arcy Hon. Margaret Darcy John Darcy Philip Darcy Rokeby Darcy Ursula Darcy Biographical Summ…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darcy Dorothy Darcy Grace D'Arcy Marie Luise von Degenfeld Mary St. Leger Meinhard von Schönburg John Darcy, Lord D'arcy, Lord Conyers Karoline Charl…",
+"title": "The Lines"
 }
 ],
 "dorothy-holmes": [],
@@ -1150,6 +1542,11 @@
 "path": "/sneyd",
 "snippet": "…inquest → The people Ralph Sneyd 1669–1695 · Bradwell Ralph Sneyd 1692–1733 · Wolstanton Dryden Sneyd 1721–1741 Ralph Sneyd 1723–1793 · Keele William Sneyd b. 1746 · Madeley Frances Sneyd 1751–1809 Walter Sneyd 1752–1829 · Stafford…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…am Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holford Barbara Harvey John Fowler Ralph Sneyd William Sneyd How to read a lane The line of small capitals under…",
+"title": "The Lines"
 }
 ],
 "duke-rupert-of-cumberland": [],
@@ -1158,6 +1555,11 @@
 "path": "/sneyd",
 "snippet": "…oseph George Sneyd 1900–1992 · Queensland Eda Joyce Margaret Sneyd 1901–1955 · Queensland Dulcie Equator Sneyd 1902–1941 · Queensland Doris Ruth Marion Sneyd 1902–1998 · Queensland Beryl Marie Sneyd 1904–1905 · Brisbane John Nelson Sneyd 19…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Grah…",
+"title": "The Lines"
 }
 ],
 "ebenezer-charles-chambers": [],
@@ -1166,6 +1568,11 @@
 "path": "/sneyd",
 "snippet": "…h Amy Nesta Sneyd 1900–1941 · Brisbane William Joseph George Sneyd 1900–1992 · Queensland Eda Joyce Margaret Sneyd 1901–1955 · Queensland Dulcie Equator Sneyd 1902–1941 · Queensland Doris Ruth Marion Sneyd 1902–1998 · Queensland Beryl Marie Sne…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…l Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sney…",
+"title": "The Lines"
 }
 ],
 "edith-blanche-sneyd": [],
@@ -1174,6 +1581,11 @@
 "path": "/sneyd",
 "snippet": "…947 · Brisbane Sneyd 1864–1956 · Denton Arthur William Hartley Sneyd 1866–1922 · Brisbane Edith Blanche Sneyd 1867–1887 · Queensland Sneyd 1867–1939 · Headington Ernest Ephraim Sneyd 1869–1946 · Bega Hugh Herbert Hanley Sneyd 1869–1935 · W…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…alph Sneyd Samuel Charles Sneyd Catherine Isabel Sneyd Sneyd Arthur William Hartley Sneyd Edith Blanche Sneyd Sneyd Ernest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene Sneyd Ada Zillah Sneyd Ada Isabell Corbett Sneyd Ada I…",
+"title": "The Lines"
 }
 ],
 "edward-cotton": [],
@@ -1211,6 +1623,11 @@
 "path": "/bloodline",
 "snippet": "…e Knayth 5th Lord Conyers D'arcy · Anne Darcy · Barbara Conyers D'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…s Darcy Johanna Elisabeth Schönberg auf Wesel John Darcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (La…",
+"title": "The Lines"
 }
 ],
 "edward-darcy": [
@@ -1223,6 +1640,11 @@
 "path": "/direct-line",
 "snippet": "…weight. Repeated from the family tree and not proved. Brothers and sisters Dorothy Darcy Edward Darcy Elizabeth Darcy Grace D'Arcy Hon. Margaret Darcy John Darcy Philip Darcy Rokeby Darcy Ursula Darcy Biographical Summaries of Nota…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…arcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Da…",
+"title": "The Lines"
 }
 ],
 "edward-howard": [
@@ -1274,6 +1696,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…aniger: Berkeley, Gloucestershire — 17 people on this line William Sanigar Thomas Saniger Edward Saniger Christian Saniger Mary Saniger Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas Saniger James Saniger John San…",
+"title": "The Lines"
+},
+{
 "path": "/berkeley-woman",
 "snippet": "…liza and Hesther 1819, Daniel 1821 — and Daniel's entry, to take one, gives his father as Edward Saniger and his mother as Kitura. The generations are testable after all. They were behind a paywall, not behind a gap in the record. Thi…",
 "title": "Hannah was a Berkeley woman"
@@ -1297,6 +1724,11 @@
 "title": "The Sneyds of the Potteries"
 },
 {
+"path": "/lines",
+"snippet": "…o Brisbane — 100 people on this line William Sneyd Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary S…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…ds of 1793 have different parents (see the next item); William Sneyd 1746, 1769 and 1780, Edward Sneyd 1691 and 1754, and the two John Blums of 1872 and 1895 share a parent and nothing else, which is how a family reuses a name. The…",
 "title": "The work list"
@@ -1312,10 +1744,27 @@
 "path": "/direct-line",
 "snippet": "…documented joins Atkinson → Brothers and sisters Catherine D'Arcy Charlotte Maria D'Arcy Edwin Francis D'Arcy Ida Grace D'Arcy Robert Lindesay D'Arcy William Arthur D'Arcy Defranceski Family Site (23andMe) · Defranceski Family Site (23andM…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…ine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill…",
+"title": "The Lines"
 }
 ],
-"elector-palatine-charles-louis-von-der-pfalz-wittelsbach-pfalz-simmern-wittelsbach": [],
-"elisabeth-von-tecklenburg": [],
+"elector-palatine-charles-louis-von-der-pfalz-wittelsbach-pfalz-simmern-wittelsbach": [
+{
+"path": "/lines",
+"snippet": "…y Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsbach) James Darcy Johanna Elisabeth Schönberg auf Wesel John Darcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of…",
+"title": "The Lines"
+}
+],
+"elisabeth-von-tecklenburg": [
+{
+"path": "/lines",
+"snippet": "…he tree claims above Robert D'Arcy — 106 people on this line Heinrich VI von Wildeshausen Elisabeth von Tecklenburg Hedwig von Oldenburg Konrad (Herr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Oldenburg Jane Darcy Francis…",
+"title": "The Lines"
+}
+],
 "elisabetta-sabina": [],
 "elita-riekstins": [],
 "eliza-anne-corbett-sneyd-1875": [],
@@ -1324,6 +1773,11 @@
 "path": "/sneyd",
 "snippet": "…Isabell Corbett Sneyd b. 1873 · Queensland Ada Isabell Corbett Sneyd b. 1873 · Queensland Eliza Anne Corbett Sneyd 1875–1955 · Queensland Eliza Anne Corbett Sneyd 1875–1955 · Queensland Eva Maud Sneyd b. 1875 · Brisbane William Charles Henry Co…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…atherine Irene Sneyd Ada Zillah Sneyd Ada Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza Anne Corbett Sneyd Eva Maud Sneyd William Charles Henry Corbett Sneyd William Charles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Mauric…",
+"title": "The Lines"
 }
 ],
 "eliza-keeling": [
@@ -1381,6 +1835,11 @@
 "title": "Not in the tree"
 },
 {
+"path": "/lines",
+"snippet": "…John Saniger, Thomas Saniger Wakefield: Stroud, Bristol, Brisbane — 8 people on this line Eliza Wakefield Ellen Wakefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madele…",
+"title": "The Lines"
+},
+{
 "path": "/berkeley-woman",
 "snippet": "…he 1841 census and fourteen years before the ship. documented And the same index holds an Eliza Wakefield among Bristol deaths and burials in 1834 — the year of Ellen's baptism. The transcript would not load, so it is reported here as…",
 "title": "Hannah was a Berkeley woman"
@@ -1399,6 +1858,11 @@
 "path": "/",
 "snippet": "…indesay D'Arcy William Arthur D'Arcy Ida’s · 8 Alice Harriet Atkinson Ann Creech Atkinson Elizabeth Atkinson Frances Charlotte Atkinson George Frederick Handel Atkinson Henry Wallace Atkinson Jane Atkinson William Robert Atkinson 4 1892 →…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/lines",
+"snippet": "…ichard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinso…",
+"title": "The Lines"
 },
 {
 "path": "/atkinson",
@@ -1423,6 +1887,11 @@
 "path": "/bloodline",
 "snippet": "…rcy The chart needs JavaScript. The links do not — here they are. Parents: Thomas Darcy · Elizabeth Conyers Children: Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy · Anne Darcy · Barbara Conyers D'Arcy ·…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…ngthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi Of Scotland) King…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -1463,6 +1932,11 @@
 "path": "/joseph-darcy",
 "snippet": "…D'ARCY baptised Milford, 23 January 1832 Aged 9 at Priestlands in 1841. A Katherine Lucy Elizabeth D'Arcy dies at Lymington in 1863 — the mother, not the daughter, on the dates. JOHN HYDE D'ARCY baptised Milford, 30 May 1833 HARROW SCH…",
 "title": "Lieutenant-Colonel Joseph D'Arcy"
+},
+{
+"path": "/lines",
+"snippet": "…'Arcy Ursula Darcy Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles Louis von der Pf…",
+"title": "The Lines"
 }
 ],
 "elizabeth-darcy": [
@@ -1475,9 +1949,20 @@
 "path": "/direct-line",
 "snippet": "…ated from the family tree and not proved. Brothers and sisters Dorothy Darcy Edward Darcy Elizabeth Darcy Grace D'Arcy Hon. Margaret Darcy John Darcy Philip Darcy Rokeby Darcy Ursula Darcy Biographical Summaries of Notable People · Def…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…rsula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darcy Dorothy Darcy…",
+"title": "The Lines"
 }
 ],
-"elizabeth-dixie": [],
+"elizabeth-dixie": [
+{
+"path": "/lines",
+"snippet": "…e Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holf…",
+"title": "The Lines"
+}
+],
 "elizabeth-eleanor-d-arcy": [
 {
 "path": "/changes",
@@ -1488,6 +1973,11 @@
 "path": "/searched",
 "snippet": "…ool now prints them by host so that nobody reads the gap as laziness. 11 Oct 2026 FIBIS — Elizabeth Eleanor D'Arcy, who married Arthur Ashley Ruck in 1877 found nothing Whose daughter she was — the one question the Berta Ruck discovery left ope…",
 "title": "What Has Been Read"
+},
+{
+"path": "/lines",
+"snippet": "…a Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Louisa Margaret D'Arcy Catherine D'Arcy William Arthur D'Arc…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -1563,9 +2053,19 @@
 "path": "/sneyd",
 "snippet": "…eyd 1847–1922 · Goulburn Samuel Hartley Hanley Stafford Sneyd 1851–1901 · New South Wales Elizabeth Margaret Sneyd 1853–1908 · New South Wales Arthur Oliver Sneyd 1855–1896 · Brisbane Thomas George Sneyd 1859–1927 · Bega Louisa Miriam Sneyd 186…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…en Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph…",
+"title": "The Lines"
 }
 ],
 "elizabeth-mary-atkinson": [
+{
+"path": "/lines",
+"snippet": "…Richard Atkinson Rosanna Atkinson William Atkinson Richard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkins…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…inson 1829–1838 Paul Cole Atkinson 1832–1906 · ST. MARY'S Richard Kent Atkinson 1836–1888 Elizabeth Mary ATKINSON b. 1838 · Limerick Charles Atkinson 1838–1840 Henry Atkinson 1843–1916 · Strand Ann Atkinson 1846–1928 Elizabeth Atkinson 1854–19…",
@@ -1585,7 +2085,13 @@
 "title": "The Spine"
 }
 ],
-"elizabeth-queen-consort-of-bohemia-stuart": [],
+"elizabeth-queen-consort-of-bohemia-stuart": [
+{
+"path": "/lines",
+"snippet": "…stoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consort of Bohemia) STUART King Of Bohemia Frederick V Of von der Pflaz, King of Bohemia Dorothy D'Arcy willam [Sir] D\"arcy Anne Darcy Conyers 1st Earl of H…",
+"title": "The Lines"
+}
+],
 "elizabeth-rossiter": [],
 "elizabeth-saniger": [],
 "elizabeth-saniger-1776": [
@@ -1615,6 +2121,11 @@
 "title": "Saniger is a place"
 },
 {
+"path": "/lines",
+"snippet": "…r Thomas Saniger Edward Saniger Christian Saniger Mary Saniger Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas Saniger James Saniger John Saniger Elizabeth Saniger Ann Saniger William Saniger John Saniger, Thomas Sani…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…1816, and WILLIAM SINEGAR, baptised there in 1822 — both children of SIMON and ELIZABETH. Elizabeth Saniger, widow, 60, born Chew Magna, was already on this site, living with her son William Saniger, 27, born Chew Magna, at Oxford Road i…",
 "title": "What This Archive Got Wrong"
@@ -1640,6 +2151,11 @@
 "path": "/sneyd",
 "snippet": "…psey James Goulbourn Sneyd 1840–1925 · Kempsey John Braidwood Sneyd 1842–1908 · Braidwood Ellen Mary Sneyd 1844–1893 · Sydney Joseph Samuel1 Sneyd 1846–1905 · Staffordshire Joseph Samuel2 Sneyd 1846–1905 · Goulburn Emma Martha Sneyd 184…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…yd Louisa Caroline Sneyd William Hartley Sneyd James Goulbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas G…",
+"title": "The Lines"
 }
 ],
 "ellen-morris": [],
@@ -1660,6 +2176,11 @@
 "path": "/new-generations",
 "snippet": "…ield baptised Bristol 14 October 1832, buried there 4 May 1834, aged 19 months documented Ellen Wakefield baptised Bristol 26 October 1834, buried St Paul, Portland Square, 12 July 1840, aged 5 documented Why they are not on The People…",
 "title": "Not in the tree"
+},
+{
+"path": "/lines",
+"snippet": "…omas Saniger Wakefield: Stroud, Bristol, Brisbane — 8 people on this line Eliza Wakefield Ellen Wakefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madeley and Hanley to…",
+"title": "The Lines"
 }
 ],
 "elsie-eileen-scott": [],
@@ -1668,6 +2189,11 @@
 "path": "/sneyd",
 "snippet": "…rbert George Eales Sneyd 1906–1988 · Queensland Robert Raymond Sneyd b. 1908 · Queensland Emily Grace Sneyd 1909–1995 · Queensland Graham Sneyd b. 1926 Sydney Sneyd 1927–1987 · Qld Jill Sneyd b. 1934 Norma Denise Sneyd 1940–1944 · Mackay…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sney…",
+"title": "The Lines"
 }
 ],
 "emma-atwell": [],
@@ -1676,6 +2202,11 @@
 "path": "/sneyd",
 "snippet": "…Joseph Samuel1 Sneyd 1846–1905 · Staffordshire Joseph Samuel2 Sneyd 1846–1905 · Goulburn Emma Martha Sneyd 1847–1922 · Goulburn Samuel Hartley Hanley Stafford Sneyd 1851–1901 · New South Wales Elizabeth Margaret Sneyd 1853–1908 · New So…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ey Sneyd James Goulbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louis…",
+"title": "The Lines"
 }
 ],
 "emma-penelope-sneyd": [
@@ -1683,6 +2214,11 @@
 "path": "/sneyd",
 "snippet": "…rah Sneyd b. 1776 · Madeley James Sneyd b. 1779 · Madeley William Sneyd b. 1780 · Madeley Emma Penelope Sneyd 1784–1835 · Keele Mary Sneyd b. 1788 · Madeley Lewis Sneyd 1788–1858 · Keele Ralph Sneyd 1793–1870 Ralph Sneyd 1793–1870 · Keele…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ohn Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele…",
+"title": "The Lines"
 }
 ],
 "emma-rossiter": [],
@@ -1696,6 +2232,11 @@
 "path": "/general-hewitt",
 "snippet": "…r birthplace 48 — — ditto — Jabez Wakefield 11 — — ditto — Zillah Wakefield 8 — — ditto — Ephraim Wakefield 5 — — ditto — Single men · page 80 Name Age Occupation Country Hiram Wakefield entered separately, with his own county 16 Plumber…",
 "title": "The General Hewitt"
+},
+{
+"path": "/lines",
+"snippet": "…kefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madeley and Hanley to Brisbane — 100 people on this line William Sneyd Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd…",
+"title": "The Lines"
 }
 ],
 "eric-george-bruce-atwell": [],
@@ -1710,6 +2251,11 @@
 "path": "/sneyd",
 "snippet": "…6–1922 · Brisbane Edith Blanche Sneyd 1867–1887 · Queensland Sneyd 1867–1939 · Headington Ernest Ephraim Sneyd 1869–1946 · Bega Hugh Herbert Hanley Sneyd 1869–1935 · Westwood Alice Catherine Irene Sneyd 1871–1914 · Queensland Ada Zillah Sne…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Sneyd Catherine Isabel Sneyd Sneyd Arthur William Hartley Sneyd Edith Blanche Sneyd Sneyd Ernest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene Sneyd Ada Zillah Sneyd Ada Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza…",
+"title": "The Lines"
 }
 ],
 "ernest-page": [],
@@ -1719,6 +2265,11 @@
 "path": "/sneyd",
 "snippet": "…Anne Corbett Sneyd 1875–1955 · Queensland Eliza Anne Corbett Sneyd 1875–1955 · Queensland Eva Maud Sneyd b. 1875 · Brisbane William Charles Henry Corbett Sneyd 1876–1911 · Brisbane William Charles Henry Sneyd 1876–1911 · Brisbane Walt…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Zillah Sneyd Ada Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza Anne Corbett Sneyd Eva Maud Sneyd William Charles Henry Corbett Sneyd William Charles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzro…",
+"title": "The Lines"
 }
 ],
 "fanny-may-patterson": [],
@@ -1740,6 +2291,11 @@
 "path": "/brisbane",
 "snippet": "…B George Pitt D'Arcy 1931 Dutton Park, Brisbane Ida Kathleen Atkinson 1937 South Brisbane Florence Isabel D'Arcy 1918 Nundah Cemetery Lindesay Atkinson D'Arcy 1936 Toowong Cemetery Arthur William Hartley Sneyd 1922 Toowong, Portion 4, Section…",
 "title": "Brisbane"
+},
+{
+"path": "/lines",
+"snippet": "…Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Ar…",
+"title": "The Lines"
 }
 ],
 "florence-isabel-sneyd": [
@@ -1747,6 +2303,11 @@
 "path": "/sneyd",
 "snippet": "…ladys Beryl Sneyd 1893–1897 · Queensland Vivian Claude Sneyd 1895–1949 · Rockhampton City Florence Isabel Sneyd 1897–1942 · Kelvin Grove Kenneth Seigfried Sneyd 1898–1935 · Brisbane Muriel Mary Sneyd 1898–1982 · Queensland Roy Sneyd 1899–196…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…iriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce…",
+"title": "The Lines"
 }
 ],
 "florence-patterson": [],
@@ -1759,14 +2320,31 @@
 "title": "Twelve generations, and two claims too far."
 },
 {
+"path": "/lines",
+"snippet": "…enry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson George Frederick Handel Atkinson Pauline Brenda…",
+"title": "The Lines"
+},
+{
 "path": "/atkinson",
 "snippet": "…ick William Robert Atkinson 1856–1883 · Limerick Ann Creech Atkinson 1858–1863 · Limerick Frances Charlotte Atkinson b. 1860 · Limerick Jane Atkinson b. 1862 · Brisbane Alice Harriet Atkinson 1864–1894 · Brisbane Henry Wallace Atkinson 1866–1938…",
 "title": "The Atkinsons"
 }
 ],
 "frances-cotton": [],
-"frances-de-beaumont": [],
-"frances-fullwood": [],
+"frances-de-beaumont": [
+{
+"path": "/lines",
+"snippet": "…Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sn…",
+"title": "The Lines"
+}
+],
+"frances-fullwood": [
+{
+"path": "/lines",
+"snippet": "…Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd…",
+"title": "The Lines"
+}
+],
 "frances-lady-of-berkshire-howard": [
 {
 "path": "/",
@@ -1777,17 +2355,39 @@
 "path": "/direct-line",
 "snippet": "…d 14 Jun 1689 Earl of Holdernesse ( 1st Disputed 12 Conyers, 2nd Earl of Holderness Darcy Frances (Lady of Berkshire) Howard — m. 8 Feb 1650 1621/22 Westminster, Middlesex 13 Dec 1692 — Disputed 11 John Darcy, Lord D'arcy, Lord Conyers Bridget Sutton Ali…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…ess Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darcy Dorothy Darcy Grace D'Arcy Marie Luise von Degenfeld Mary St. Leger Meinhard von Schönb…",
+"title": "The Lines"
 }
 ],
-"frances-noel": [],
+"frances-noel": [
+{
+"path": "/lines",
+"snippet": "…(Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holford Barbara Harvey John Fowler Ralph Sneyd William…",
+"title": "The Lines"
+}
+],
 "frances-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…nton Dryden Sneyd 1721–1741 Ralph Sneyd 1723–1793 · Keele William Sneyd b. 1746 · Madeley Frances Sneyd 1751–1809 Walter Sneyd 1752–1829 · Staffordshire Ralph Sneyd 1753–1808 · England Edward Sneyd 1754–1776 · Keele John Sneyd 1760–1…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…m Wakefield Sneyd: Madeley and Hanley to Brisbane — 100 people on this line William Sneyd Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd…",
+"title": "The Lines"
 }
 ],
-"frances-ward": [],
+"frances-ward": [
+{
+"path": "/lines",
+"snippet": "…es Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holford Barbara Harvey John Fo…",
+"title": "The Lines"
+}
+],
 "francesca-gelsomina-pesce": [],
 "francesca-zampiello": [
 {
@@ -1801,6 +2401,11 @@
 "path": "/murdoch",
 "snippet": "…Ayr Janet Murdoch b. 1867 · Ayr George Murdoch b. 1868 · Ayr Jeanie Murdoch b. 1870 · Ayr Francis Claudius \"Frank\" Murdoch 1892–1958 · Gympie Marion Janet Murdoch 1893–1972 William James Fraser \"Bill\" Murdoch 1894–1946 · Gympie Allan George Murdoch 189…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…Fleming Murdoch James Murdoch Francis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith William Murdoch Marion \"Jean\" Murdo…",
+"title": "The Lines"
 }
 ],
 "francis-murdoch": [],
@@ -1825,14 +2430,30 @@
 "path": "/sources",
 "snippet": "…tion/5000163 The birth of William Murdoch at St Quivox and Newton, 7 October 1856, naming Francis Murdoch and Marion Watt; and their marriage at Avondale, Lanarkshire, 6 May 1854. ScotlandsPeople itself, which holds the register images…",
 "title": "Sources"
+},
+{
+"path": "/lines",
+"snippet": "…ell\" Murdoch marries Kenneth Lindsay D'Arcy, 1952 Toowoomba, Queensland Avondale · 1854 — Francis Murdoch marries Marion Watt on 6 May: 1854, not the 1853 the tree carries. [a record read here] Avondale 1854 St Quivox · 1856 — William…",
+"title": "The Lines"
 }
 ],
-"francis-thomas-coney-knight-of-bassingthorpe": [],
+"francis-thomas-coney-knight-of-bassingthorpe": [
+{
+"path": "/lines",
+"snippet": "…rr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaret…",
+"title": "The Lines"
+}
+],
 "frank-hyde-d-arcy": [
 {
 "path": "/changes",
 "snippet": "…ord ENGLAND, each stamped «exact» : Bourn (Catherine Georgiana West's burial), Lymington (Frank Hyde D'Arcy's marriage and Joseph D'Arcy's death district), Penzance (George Abbas died there), Milford (two D'Arcy baptisms). Two resolve to…",
 "title": "What changed"
+},
+{
+"path": "/lines",
+"snippet": "…Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy E…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -1853,9 +2474,20 @@
 "path": "/dna",
 "snippet": "…mark Somebody in this family will eventually put \" Danish 4.4% \" next to \" descended from Frederick I of Denmark \" and join them. This section exists so that when they do, the answer is already written down. The tree's own descent predicts 0.…",
 "title": "What the DNA says"
+},
+{
+"path": "/lines",
+"snippet": "…untess Agnes of Honstein Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta…",
+"title": "The Lines"
 }
 ],
-"frederick-ii-von-oldenburg": [],
+"frederick-ii-von-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…n Dietrich of Oldenburg Dorothea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie G…",
+"title": "The Lines"
+}
+],
 "frederick-robert-d-arcy": [
 {
 "path": "/",
@@ -1891,6 +2523,11 @@
 "path": "/george-pitt",
 "snippet": "…e — but that is context, not a record. one found, one open This is why the archive cares. Frederick Robert D'Arcy, baptised Chatham 1811 to George and MARY, and Charlotte, baptised Chatham 1826 to George and MARIA, are half-brother and half-si…",
 "title": "Miss Ludlam of Guernsey"
+},
+{
+"path": "/lines",
+"snippet": "…D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Luc…",
+"title": "The Lines"
 }
 ],
 "frederick-x-von-schonberg": [],
@@ -1904,11 +2541,22 @@
 "path": "/direct-line",
 "snippet": "…'s geocoder has appended a county in New York State 6 Jan 1688 — Disputed 10 Robert Darcy Friederike Susanna Frederica von Schönburg — m. 26 May 1715 24 Nov 1681 St. James Palace, London, Middlesex, England, Kingdom of England 20 Jan 1721 Earl of Holdernesse ( 3…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…te Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy George Darcy Thomas D'Arcy Lady Amelia Darcy,…",
+"title": "The Lines"
 }
 ],
 "friederike-zu-pfalz": [],
 "friedrich-wilhelm-zu-pfalz": [],
-"g-norman-d-arcy": [],
+"g-norman-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…e D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Loui…",
+"title": "The Lines"
+}
+],
 "george-abbas-kooli-d-arcy": [
 {
 "path": "/changes",
@@ -1941,18 +2589,34 @@
 "title": "Lieutenant-Colonel Joseph D'Arcy"
 },
 {
+"path": "/lines",
+"snippet": "…erine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…3rd West India Regiment in 1852, Lieutenant-Colonel in 1854, and on 17 June 1859 «Colonel George Abbas Kooli D'Arcy to be Governor and Commander-in-Chief in and over Her Majesty's Settlements in the River Gambia» . The question «which corps, whi…",
 "title": "The work list"
 }
 ],
 "george-atwell": [],
-"george-darcy": [],
+"george-darcy": [
+{
+"path": "/lines",
+"snippet": "…nburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy George Darcy Thomas D'Arcy Lady Amelia Darcy, 12th Baroness Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Ma…",
+"title": "The Lines"
+}
+],
 "george-frederick-handel-atkinson": [
 {
 "path": "/",
 "snippet": "…Alice Harriet Atkinson Ann Creech Atkinson Elizabeth Atkinson Frances Charlotte Atkinson George Frederick Handel Atkinson Henry Wallace Atkinson Jane Atkinson William Robert Atkinson 4 1892 → 1936 Lindesay Atkinson D'Arcy b. 15 JUL 1892 d. 10 NOV 1936…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/lines",
+"snippet": "…tkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson George Frederick Handel Atkinson Pauline Brenda Atkinson Ruby Kathleen Atkinson Murdoch: St Quivox, Ayrshire, to Toowoomba — 17 people on this line Claud Murdoch…",
+"title": "The Lines"
 },
 {
 "path": "/atkinson",
@@ -2001,6 +2665,11 @@
 "title": "Sources"
 },
 {
+"path": "/lines",
+"snippet": "…buried 19 May, entry 1571, aged 76. [a record read here] Chatham 1827 Parramatta · 1829 — George Lindsay D'Arcy born, the Parramatta end of the crossing. [a record read here] Parramatta 1829 Brisbane · 1864 — George Pitt D'Arcy born at Brisb…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…grated with him in 1862 with the children already born. Eliza Keeling · 1837–1918 Married George Lindsay D'Arcy in Queensland in 1863 — the year he arrived in the colony. Miriam Wakefield · 1840–1909 Born in Bristol on 11 April 1840 and regi…",
 "title": "The Women"
@@ -2012,6 +2681,11 @@
 "path": "/murdoch",
 "snippet": "…Ayr James Murdoch b. 1861 · Ayr Francis Murdoch b. 1863 · Ayr Janet Murdoch b. 1867 · Ayr George Murdoch b. 1868 · Ayr Jeanie Murdoch b. 1870 · Ayr Francis Claudius \"Frank\" Murdoch 1892–1958 · Gympie Marion Janet Murdoch 1893–1972 Wil…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…his line Claud Murdoch Marion Fleming Murdoch James Murdoch Francis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" M…",
+"title": "The Lines"
 }
 ],
 "george-pitt-d-arcy-1783": [],
@@ -2117,6 +2791,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…he Parramatta end of the crossing. [a record read here] Parramatta 1829 Brisbane · 1864 — George Pitt D'Arcy born at Brisbane. [a record read here] Brisbane 1864 Hornby: the descent the tree claims above Robert D'Arcy Family lore · unevid…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…dence in this archive. Ida Kathleen Atkinson · 1869–1937 The organist's daughter. Married George Pitt D'Arcy at Trinity Church, Fortitude Valley, on 10 October 1888, and outlived him by six years. Martha Blum · 1870–1904 Married at Muttab…",
 "title": "The Women"
@@ -2152,6 +2831,11 @@
 "path": "/direct-line",
 "snippet": "…ds perfectly well without him. joins D'Arcy → Brothers and sisters Caroline Louisa D'ARCY George Schomberg d'Arcy Robert, 4th Earl of Holderness Darcy Defranceski Family Site (23andMe) · Defranceski Family Site (23andMe) g8 Robert D'Arcy and J…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…ady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy George Darcy Thomas D'Arcy Lady Amelia Darcy, 12th Baroness Darcy de…",
+"title": "The Lines"
 }
 ],
 "george-sneyd": [
@@ -2159,9 +2843,19 @@
 "path": "/sneyd",
 "snippet": "…eyd d. 1691 William Sneyd dates unknown · England Sneyd dates unknown Henry Sneyd d. 1791 George Sneyd d. 1790 Ralph Sneyd dates unknown William Albert Sneyd d. 1954 Edith Blanche Sneyd dates unknown Annie Ada Sneyd dates unknown",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele Hall Mary Sneyd James Sneyd Louisa C…",
+"title": "The Lines"
 }
 ],
 "geraldine-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…Arcy Louisa Margaret D'Arcy Catherine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivi…",
+"title": "The Lines"
+},
 {
 "path": "/worklist",
 "snippet": "…Pitt D'Arcy, «William Murdoch» inside Keith William Murdoch 1925-1996, «Geraldine» inside Geraldine D'Arcy 1872-1937. tools/check_living.py now has a json_pass that asks the narrower and better question: not whether a living name occurs…",
@@ -2186,6 +2880,11 @@
 "path": "/sneyd",
 "snippet": "…ulia Hetty Sneyd b. 1892 · Holy Trinity Arthur Hartley Sneyd 1893–1916 · Rockhampton City Gladys Beryl Sneyd 1893–1897 · Queensland Vivian Claude Sneyd 1895–1949 · Rockhampton City Florence Isabel Sneyd 1897–1942 · Kelvin Grove Kenneth Se…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…William Sneyd Cecil George Sneyd Ivy Miriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sn…",
+"title": "The Lines"
 }
 ],
 "gladys-may-corbett-sneyd-1890": [],
@@ -2194,6 +2893,11 @@
 "path": "/sneyd",
 "snippet": "…sland Brindley Stoke Sneyd 1888–1888 · Brisbane Brindley Stoke Sneyd 1888–1888 · Brisbane Gladys May Corbett Sneyd b. 1890 · Brisbane Vivian Ernest William Sneyd 1890–1920 · Queensland Gladys May Corbett Sneyd b. 1890 · Queensland Ivy Miriam Sn…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corbett Sneyd Gladys May Corbett Sneyd Vivian Ernest William Sneyd Cecil George Sneyd Ivy Miriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd G…",
+"title": "The Lines"
 }
 ],
 "grace-d-arcy-1611": [],
@@ -2212,6 +2916,11 @@
 "path": "/bloodline",
 "snippet": "…Anne Darcy · Barbara Conyers D'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARC…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…cy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Si…",
+"title": "The Lines"
 }
 ],
 "grace-rokeby": [
@@ -2226,6 +2935,11 @@
 "title": "The Spine"
 },
 {
+"path": "/lines",
+"snippet": "…e Sutton Christoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consort of Bohemia) STUART King Of Bohemia Frederick V Of von der Pflaz, King of Bohemia Dorothy D'Arcy willam […",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…arcy de Knayth and 5th Lord Conyers, Dorothy Bellasyse, Elizabeth Conyers, and Thomas and Grace Rokeby. /hornby states the seat. The kept pin is the castle; 53.715 is in the EAST Riding while its own string says North Riding , and 5…",
 "title": "The work list"
@@ -2236,6 +2950,11 @@
 "path": "/sneyd",
 "snippet": "…nsland Robert Raymond Sneyd b. 1908 · Queensland Emily Grace Sneyd 1909–1995 · Queensland Graham Sneyd b. 1926 Sydney Sneyd 1927–1987 · Qld Jill Sneyd b. 1934 Norma Denise Sneyd 1940–1944 · Mackay Yvonne Sneyd dates unknown Diane Sn…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sney…",
+"title": "The Lines"
 }
 ],
 "greg-mulder": [],
@@ -2245,6 +2964,11 @@
 "path": "/sneyd",
 "snippet": "…898–1935 · Brisbane Muriel Mary Sneyd 1898–1982 · Queensland Roy Sneyd 1899–1964 · Mackay Greville William Sneyd 1899–1996 · Gayndah Amy Nesta Sneyd 1900–1941 · Brisbane William Joseph George Sneyd 1900–1992 · Queensland Eda Joyce Margaret Sn…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl…",
+"title": "The Lines"
 }
 ],
 "gustaf-von-degenfeld": [],
@@ -2275,7 +2999,13 @@
 }
 ],
 "hans-christoph-degenfeld": [],
-"hans-meinhard-von-schonberg": [],
+"hans-meinhard-von-schonberg": [
+{
+"path": "/lines",
+"snippet": "…aney) Coney Thomas Rokeby Anne (Queen consort) of Denmark von Oldenburg Dorothy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton…",
+"title": "The Lines"
+}
+],
 "harold-caulkwell": [
 {
 "path": "/",
@@ -2295,17 +3025,57 @@
 "path": "/sneyd",
 "snippet": "…ueensland Beryl Marie Sneyd 1904–1905 · Brisbane John Nelson Sneyd 1905–1994 · Queensland Hazel Ethel Mary Sneyd b. 1906 · Queensland Herbert George Eales Sneyd 1906–1988 · Queensland Robert Raymond Sneyd b. 1908 · Queensland Emily Grace Sney…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…et Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William…",
+"title": "The Lines"
 }
 ],
 "hazel-isobel-keir": [],
-"hedwig-grafin-von-rietberg": [],
-"hedwig-of-diepholz": [],
-"hedwig-von-oldenburg": [],
-"heinrich-vi-von-wildeshausen": [],
-"helvig-of-schauenburg": [],
+"hedwig-grafin-von-rietberg": [
+{
+"path": "/lines",
+"snippet": "…othea Lauenburg Dorothea of Brandenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Dege…",
+"title": "The Lines"
+}
+],
+"hedwig-of-diepholz": [
+{
+"path": "/lines",
+"snippet": "…randenburg Frederick I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Degenfeld Wilhelm Adelm…",
+"title": "The Lines"
+}
+],
+"hedwig-von-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…t D'Arcy — 106 people on this line Heinrich VI von Wildeshausen Elisabeth von Tecklenburg Hedwig von Oldenburg Konrad (Herr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight…",
+"title": "The Lines"
+}
+],
+"heinrich-vi-von-wildeshausen": [
+{
+"path": "/lines",
+"snippet": "…D'Arcy Hornby: the descent the tree claims above Robert D'Arcy — 106 people on this line Heinrich VI von Wildeshausen Elisabeth von Tecklenburg Hedwig von Oldenburg Konrad (Herr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Old…",
+"title": "The Lines"
+}
+],
+"helvig-of-schauenburg": [
+{
+"path": "/lines",
+"snippet": "…k I of Denmark Frederick II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Degenfeld Wilhelm Adelmann von Adelmannsfelde…",
+"title": "The Lines"
+}
+],
 "henrietta-charlotte-layard": [],
 "henrietta-elizabeth-judge": [],
 "henry-atkinson": [
+{
+"path": "/lines",
+"snippet": "…Atkinson William Atkinson Richard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harrie…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…Atkinson 1836–1888 Elizabeth Mary ATKINSON b. 1838 · Limerick Charles Atkinson 1838–1840 Henry Atkinson 1843–1916 · Strand Ann Atkinson 1846–1928 Elizabeth Atkinson 1854–1936 · Limerick William Robert Atkinson 1856–1883 · Limerick An…",
@@ -2329,6 +3099,11 @@
 "path": "/bloodline",
 "snippet": "…rbara Conyers D'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darc…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…y Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles Louis von der Pfalz (Wittelsb…",
+"title": "The Lines"
 }
 ],
 "henry-frederick-hereditary-prince-of-the-von-der-pfalz-simmern-wittelsbach": [],
@@ -2344,6 +3119,11 @@
 "path": "/sneyd",
 "snippet": "…es unknown Edward Sneyd d. 1691 William Sneyd dates unknown · England Sneyd dates unknown Henry Sneyd d. 1791 George Sneyd d. 1790 Ralph Sneyd dates unknown William Albert Sneyd d. 1954 Edith Blanche Sneyd dates unknown Annie Ada S…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…h Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele Hall Mary Sneyd James Sneyd Louisa Caroline Sney…",
+"title": "The Lines"
 }
 ],
 "henry-sutton": [],
@@ -2352,6 +3132,11 @@
 "path": "/",
 "snippet": "…h Atkinson Elizabeth Atkinson Frances Charlotte Atkinson George Frederick Handel Atkinson Henry Wallace Atkinson Jane Atkinson William Robert Atkinson 4 1892 → 1936 Lindesay Atkinson D'Arcy b. 15 JUL 1892 d. 10 NOV 1936 Clerk × Ivy Miriam Sne…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/lines",
+"snippet": "…inson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson George Frederick Handel Atkinson Pauline Brenda Atkinson Ruby Kathleen Atkinson Murdoch: St Quivox, Ayrshir…",
+"title": "The Lines"
 },
 {
 "path": "/atkinson",
@@ -2364,6 +3149,11 @@
 "path": "/sneyd",
 "snippet": "…bane John Nelson Sneyd 1905–1994 · Queensland Hazel Ethel Mary Sneyd b. 1906 · Queensland Herbert George Eales Sneyd 1906–1988 · Queensland Robert Raymond Sneyd b. 1908 · Queensland Emily Grace Sneyd 1909–1995 · Queensland Graham Sneyd b. 1926 Sy…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sne…",
+"title": "The Lines"
 }
 ],
 "hilda-georgina-d-arcy": [
@@ -2376,6 +3166,11 @@
 "path": "/direct-line",
 "snippet": "…ustralia trade Clerk documented joins Sneyd → Brothers and sisters Florence Isabel D'Arcy Hilda Georgina D'Arcy Ida Joyce D'Arcy FamilySearch Family Tree g3 Kenneth Lindsay D'Arcy and Audrey \"Dell\" Murdoch born 17 AUG 1927, Sandgate, Queensl…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…thur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Linds…",
+"title": "The Lines"
 }
 ],
 "hiram-philp": [],
@@ -2401,6 +3196,11 @@
 "title": "The General Hewitt"
 },
 {
+"path": "/lines",
+"snippet": "…ristol, Brisbane — 8 people on this line Eliza Wakefield Ellen Wakefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madeley and Hanley to Brisbane — 100 people on this lin…",
+"title": "The Lines"
+},
+{
 "path": "/berkeley-woman",
 "snippet": "…d, Gloucestershire, England Hannah Wakefield Wife 45 — BERKELEY, GLOUCESTERSHIRE, ENGLAND Hiram Wakefield Son 13 Errand boy — Aaron Wakefield Son 10 Errand boy — Miriam Wakefield Daughter 10 Servant — Jabez Wakefield Son 8 — — Zillah W…",
 "title": "Hannah was a Berkeley woman"
@@ -2416,6 +3216,11 @@
 "path": "/direct-line",
 "snippet": "…not proved. Brothers and sisters Dorothy Darcy Edward Darcy Elizabeth Darcy Grace D'Arcy Hon. Margaret Darcy John Darcy Philip Darcy Rokeby Darcy Ursula Darcy Biographical Summaries of Notable People · Defranceski Family Site (23andMe) g1…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darcy Dorothy Darcy Grace D'Arcy Marie Luise von Degenfeld Mary St. Leger Meinhard von Schönburg John Darcy, Lord…",
+"title": "The Lines"
 }
 ],
 "hugh-herbert-hanley-sneyd": [
@@ -2423,6 +3228,11 @@
 "path": "/sneyd",
 "snippet": "…1867–1887 · Queensland Sneyd 1867–1939 · Headington Ernest Ephraim Sneyd 1869–1946 · Bega Hugh Herbert Hanley Sneyd 1869–1935 · Westwood Alice Catherine Irene Sneyd 1871–1914 · Queensland Ada Zillah Sneyd 1872–1921 · Bega Ada Isabell Corbett Sne…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…l Sneyd Sneyd Arthur William Hartley Sneyd Edith Blanche Sneyd Sneyd Ernest Ephraim Sneyd Hugh Herbert Hanley Sneyd Alice Catherine Irene Sneyd Ada Zillah Sneyd Ada Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza Anne Corbett Sneyd Eva Mau…",
+"title": "The Lines"
 }
 ],
 "ida-grace-d-arcy": [
@@ -2435,6 +3245,11 @@
 "path": "/direct-line",
 "snippet": "…inson → Brothers and sisters Catherine D'Arcy Charlotte Maria D'Arcy Edwin Francis D'Arcy Ida Grace D'Arcy Robert Lindesay D'Arcy William Arthur D'Arcy Defranceski Family Site (23andMe) · Defranceski Family Site (23andMe) · FamilySearch…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…ret D'Arcy Catherine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy…",
+"title": "The Lines"
 }
 ],
 "ida-joyce-d-arcy": [
@@ -2447,6 +3262,11 @@
 "path": "/direct-line",
 "snippet": "…ocumented joins Sneyd → Brothers and sisters Florence Isabel D'Arcy Hilda Georgina D'Arcy Ida Joyce D'Arcy FamilySearch Family Tree g3 Kenneth Lindsay D'Arcy and Audrey \"Dell\" Murdoch born 17 AUG 1927, Sandgate, Queensland, Australia di…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…dwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Ar…",
+"title": "The Lines"
 }
 ],
 "ida-kathleen-atkinson": [
@@ -2471,6 +3291,11 @@
 "title": "Brisbane"
 },
 {
+"path": "/lines",
+"snippet": "…bove rest on the tree alone 22 people on this line The Atkinsons → Brisbane, Queensland — Ida Kathleen Atkinson marries George Pitt D'Arcy, 1888 Brisbane, Queensland Limerick · 1725 — Richard Atkinson: the tree's earliest on this line; no re…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…ndon Brisbane 7 Miriam Wakefield 1840–1909 St Paul, Bristol Lutwyche Cemetery, Brisbane 6 Ida Kathleen Atkinson 1869–1937 Brisbane South Brisbane 4 Martha Blum 1870–1904 Rockhampton Lutwyche Cemetery, Brisbane 7 Ivy Miriam Sneyd 1891–1979 Bo…",
 "title": "The Women"
@@ -2482,13 +3307,24 @@
 }
 ],
 "infant-girl-snow": [],
-"ingeborg-of-brunswick": [],
+"ingeborg-of-brunswick": [
+{
+"path": "/lines",
+"snippet": "…ck II von Oldenburg Hedwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Degenfeld Wilhelm Adelmann von Adelmannsfelden Saniger: Berkeley, G…",
+"title": "The Lines"
+}
+],
 "irene-helen-cahill": [],
 "isabel-clara-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…ega Louisa Georgina SNEYD 1861–1910 · Denton Robert Mcdowell Sneyd 1862–1937 · Queensland Isabel Clara Sneyd b. 1862 · Denton Ralph Sneyd 1863–1949 · Denton Ralph Sneyd 1863–1949 · Headington Samuel Charles Sneyd 1863–1938 · Queensland Ca…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…t Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles Sneyd Catherine Isabel Sneyd Sneyd Arthur William Hartley Sneyd Edith Blanche Sn…",
+"title": "The Lines"
 }
 ],
 "isabel-d-arcy": [
@@ -2506,6 +3342,11 @@
 "path": "/bloodline",
 "snippet": "…'Arcy · Dorothy D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arc…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…ness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'Arcy Ursula Darcy Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arc…",
+"title": "The Lines"
 }
 ],
 "ivy-miriam-sneyd": [
@@ -2555,6 +3396,11 @@
 "title": "The Sneyds"
 },
 {
+"path": "/lines",
+"snippet": "…te, not proved 102 people on this line The Sneyds of the Potteries → Boulia, Queensland — Ivy Miriam Sneyd's people Boulia, Queensland Madeley · 1781 — Samuel Sneyd baptised 4 June, father William: the best candidate for the Hanley groc…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…Brisbane South Brisbane 4 Martha Blum 1870–1904 Rockhampton Lutwyche Cemetery, Brisbane 7 Ivy Miriam Sneyd 1891–1979 Boulia — the remotest birthplace in the archive Mt Thompson, Brisbane 5 Jean Ward · 1754–1823 Married Robert D'Arcy at…",
 "title": "The Women"
@@ -2575,6 +3421,11 @@
 "path": "/general-hewitt",
 "snippet": "…Gloucester Hannah Wakefield NOT an independent statement of her birthplace 48 — — ditto — Jabez Wakefield 11 — — ditto — Zillah Wakefield 8 — — ditto — Ephraim Wakefield 5 — — ditto — Single men · page 80 Name Age Occupation Country Hi…",
 "title": "The General Hewitt"
+},
+{
+"path": "/lines",
+"snippet": "…his line Eliza Wakefield Ellen Wakefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madeley and Hanley to Brisbane — 100 people on this line William Sneyd Frances Sneyd Wa…",
+"title": "The Lines"
 },
 {
 "path": "/berkeley-woman",
@@ -2614,6 +3465,11 @@
 "path": "/bloodline",
 "snippet": "…D'Arcy · Edward D'ARCY · Elizabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Dar…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…erg Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsbach) James Darcy Johanna Elisabeth Schönberg auf Wesel John Darcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness D…",
+"title": "The Lines"
 }
 ],
 "james-fraser-murdoch": [
@@ -2626,6 +3482,11 @@
 "path": "/murdoch",
 "snippet": "…Gympie Allan George Murdoch 1896–1907 · Gympie Annie Kathleen Murdoch 1898–1964 · Gympie James \"Fraser\" Murdoch 1923–2003 Keith William Murdoch 1925–1996 · Toowoomba Marion \"Jean\" Murdoch 1927–2010 · Toowoomba Q'ld Australia Audrey \"Dell\" Mu…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith William Murdoch Marion \"Jean\" Murdoch Audrey \"Dell\" Murdoch Francis Murdoch Marian Jean Murdoch A different stock of the na…",
+"title": "The Lines"
 }
 ],
 "james-goulbourn-sneyd": [
@@ -2633,6 +3494,11 @@
 "path": "/sneyd",
 "snippet": "…. 1818 · Hanley Louisa Caroline Sneyd 1833–1907 William Hartley Sneyd 1837–1902 · Kempsey James Goulbourn Sneyd 1840–1925 · Kempsey John Braidwood Sneyd 1842–1908 · Braidwood Ellen Mary Sneyd 1844–1893 · Sydney Joseph Samuel1 Sneyd 1846–1905…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…r Sneyd, of Keele Hall Mary Sneyd James Sneyd Louisa Caroline Sneyd William Hartley Sneyd James Goulbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Marga…",
+"title": "The Lines"
 }
 ],
 "james-howard": [
@@ -2648,6 +3514,11 @@
 "path": "/sneyd",
 "snippet": "…e Corbett Sneyd 1883–1936 · Queensland Jessie Camile Corbett Sneyd 1883–1936 · Queensland James Hyland Corbett Sneyd 1885–1936 · Queensland James Hyland Corbett Sneyd 1885–1936 · Queensland Vera Evelyn Sneyd b. 1887 · Queensland Brindley Stoke Sn…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corbett Sneyd Gladys May Corbett Sneyd Vivian Ernest William Sneyd Cecil George…",
+"title": "The Lines"
 }
 ],
 "james-hyland1-sneyd": [
@@ -2655,6 +3526,11 @@
 "path": "/sneyd",
 "snippet": "…879 · Queensland Maurice Norman Fitzroy Sneyd 1879–1879 · Queensland Lionel Sneyd b. 1879 James Hyland1 Sneyd 1881–1882 · Brisbane James Hyland2 Sneyd 1881–1882 · Brisbane Jessie Camile Corbett Sneyd 1883–1936 · Queensland Jessie Camile Co…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…rles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corb…",
+"title": "The Lines"
 }
 ],
 "james-hyland2-sneyd": [
@@ -2662,19 +3538,41 @@
 "path": "/sneyd",
 "snippet": "…neyd 1879–1879 · Queensland Lionel Sneyd b. 1879 James Hyland1 Sneyd 1881–1882 · Brisbane James Hyland2 Sneyd 1881–1882 · Brisbane Jessie Camile Corbett Sneyd 1883–1936 · Queensland Jessie Camile Corbett Sneyd 1883–1936 · Queensland James…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corbett Sneyd Gladys May…",
+"title": "The Lines"
 }
 ],
-"james-i-james-vi-of-scotland-king-of-england-stuart-f-dt-stuart-i-of-england-ireland-iv-of-scotland": [],
+"james-i-james-vi-of-scotland-king-of-england-stuart-f-dt-stuart-i-of-england-ireland-iv-of-scotland": [
+{
+"path": "/lines",
+"snippet": "…ad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi Of Scotland) King Of England Stuart (født stuart), I of England & Ireland, IV of Scotland Susan (Caney) Coney Thomas Rokeby Anne (Queen consort) of Denmark von Oldenburg Dorothy Bellasyse Hans Meinhard von Schönberg Tho…",
+"title": "The Lines"
+}
+],
 "james-murdoch": [
 {
 "path": "/murdoch",
 "snippet": "…· of St Quivox William Murdoch 1856–1918 · St Quivox Marion Fleming Murdoch b. 1859 · Ayr James Murdoch b. 1861 · Ayr Francis Murdoch b. 1863 · Ayr Janet Murdoch b. 1867 · Ayr George Murdoch b. 1868 · Ayr Jeanie Murdoch b. 1870 · Ayr…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…vox, Ayrshire, to Toowoomba — 17 people on this line Claud Murdoch Marion Fleming Murdoch James Murdoch Francis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Mu…",
+"title": "The Lines"
 }
 ],
 "james-rossiter-1794": [],
 "james-rossiter-1834": [],
-"james-saniger": [],
+"james-saniger": [
+{
+"path": "/lines",
+"snippet": "…Mary Saniger Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas Saniger James Saniger John Saniger Elizabeth Saniger Ann Saniger William Saniger John Saniger, Thomas Saniger Wakefield: Stroud, Bristol, Brisbane — 8…",
+"title": "The Lines"
+}
+],
 "james-sneyd-1779": [],
 "james-sneyd-1818": [
 {
@@ -2701,6 +3599,11 @@
 "path": "/sneyds",
 "snippet": "…neyd Head 72 GROCER MADELEY, STAFFORDSHIRE Elizabeth Sneyd Wife 71 — OSWESTRY, SHROPSHIRE James Sneyd Son 33 Engraver Hanley, Staffordshire Elizabeth Ann Sneyd Daughter 11 — Hanley, Staffordshire Harvey Bradbury Visitor 20 Shoemake…",
 "title": "The Sneyds of the Potteries"
+},
+{
+"path": "/lines",
+"snippet": "…Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Wa…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -2776,6 +3679,11 @@
 "title": "The Bristol chapels"
 },
 {
+"path": "/lines",
+"snippet": "…e on this line Six generations at Berkeley → Bristol, the Wakefield lane — Hannah marries James Wakefield, 17 October 1831 Bristol, the Wakefield lane Berkeley · 1679 — William Saniger baptised 12 October, father William. [a record rea…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…in her daughter Elizabeth's baptism, 19 May 1782. → ELIZABETH WEBB , of Stroud Mother of James Wakefield, baptised 6 April 1806 — and a Matilda WEBB, aged two, was living in his house at Drivers Fields in 1841. → MARTHA GOLDING Marrie…",
 "title": "The Women"
@@ -2802,6 +3710,11 @@
 "path": "/searched",
 "snippet": "…name sweeps had missed — Maria D'Arcy née White (1856/B/50), Catherine Sneyd née Mulcahy, Jane Atkinson née Creech, Maria Atwell née Rossiter, Catherine Jane Murdoch née Matson, Eliza D'Arcy née Keeling, Mary Ann Blume née O'Brien, S…",
 "title": "What Has Been Read"
+},
+{
+"path": "/lines",
+"snippet": "…Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson George Frederick Handel Atkinson Pauline Brenda Atkinson Ruby…",
+"title": "The Lines"
 },
 {
 "path": "/atkinson",
@@ -2876,6 +3789,11 @@
 "path": "/sussex-sisters",
 "snippet": "…HTON · sub-district The Palace All three under one roof, 1841 Forename Surname Age stated Jane D'Arcy 40 Catharine D'Arcy 39 Charlotte D'Arcy 35 Enumerated immediately before them, at the same address: SARAH HARMER, 20, born Sussex…",
 "title": "The Sussex sisters"
+},
+{
+"path": "/lines",
+"snippet": "…'Arcy Margaret Maria Isabella D'Arcy George Pitt D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert We…",
+"title": "The Lines"
 }
 ],
 "jane-darcy": [
@@ -2888,6 +3806,11 @@
 "path": "/direct-line",
 "snippet": "…will not bear weight. Repeated from the family tree and not proved. Brothers and sisters Jane Darcy MCCARTHY Web Site · Defranceski Family Site (23andMe) · Geni World Family Tree g10 Robert Darcy and Friederike Susanna Frederica…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…Konrad (Herr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt El…",
+"title": "The Lines"
 }
 ],
 "janet-murdoch": [
@@ -2895,6 +3818,11 @@
 "path": "/murdoch",
 "snippet": "…n Fleming Murdoch b. 1859 · Ayr James Murdoch b. 1861 · Ayr Francis Murdoch b. 1863 · Ayr Janet Murdoch b. 1867 · Ayr George Murdoch b. 1868 · Ayr Jeanie Murdoch b. 1870 · Ayr Francis Claudius \"Frank\" Murdoch 1892–1958 · Gympie Mario…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…17 people on this line Claud Murdoch Marion Fleming Murdoch James Murdoch Francis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch J…",
+"title": "The Lines"
 }
 ],
 "janet-walker": [
@@ -3004,6 +3932,11 @@
 "path": "/murdoch",
 "snippet": "…yr Francis Murdoch b. 1863 · Ayr Janet Murdoch b. 1867 · Ayr George Murdoch b. 1868 · Ayr Jeanie Murdoch b. 1870 · Ayr Francis Claudius \"Frank\" Murdoch 1892–1958 · Gympie Marion Janet Murdoch 1893–1972 William James Fraser \"Bill\" Murd…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…Murdoch Marion Fleming Murdoch James Murdoch Francis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith Wi…",
+"title": "The Lines"
 }
 ],
 "jeffery-king": [],
@@ -3015,6 +3948,11 @@
 "path": "/sneyd",
 "snippet": "…b. 1879 James Hyland1 Sneyd 1881–1882 · Brisbane James Hyland2 Sneyd 1881–1882 · Brisbane Jessie Camile Corbett Sneyd 1883–1936 · Queensland Jessie Camile Corbett Sneyd 1883–1936 · Queensland James Hyland Corbett Sneyd 1885–1936 · Queensland James…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…e Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corbett Sneyd Gladys May Corbett Sneyd Vivian Ernest…",
+"title": "The Lines"
 }
 ],
 "jessie-eileen-atwell": [],
@@ -3023,6 +3961,11 @@
 "path": "/sneyd",
 "snippet": "…mily Grace Sneyd 1909–1995 · Queensland Graham Sneyd b. 1926 Sydney Sneyd 1927–1987 · Qld Jill Sneyd b. 1934 Norma Denise Sneyd 1940–1944 · Mackay Yvonne Sneyd dates unknown Diane Sneyd dates unknown Edward Sneyd d. 1691 William S…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…rbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sneyd Atkinson: Limerick to…",
+"title": "The Lines"
 }
 ],
 "joan-d-arcy": [
@@ -3035,6 +3978,11 @@
 "path": "/direct-line",
 "snippet": "…ance Manager documented joins Murdoch → Brothers and sisters Arthur Neville \"Bill\" D'Arcy Joan D'Arcy Valma D'Arcy Vivian Lindsay D'Arcy g2 Ian Kenneth D'Arcy and Giuseppina Falco family The joint here will not bear weight. Repeate…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…y D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Arcy Ruth D'Arcy Hornby: the descent the tree claims above Robert D'Arcy — 106 people on this line Heinrich VI von Wi…",
+"title": "The Lines"
 }
 ],
 "joan-fauconberg-nee-bromflete": [
@@ -3049,9 +3997,21 @@
 "title": "The Spine"
 }
 ],
-"joane-dixie": [],
+"joane-dixie": [
+{
+"path": "/lines",
+"snippet": "…ie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph…",
+"title": "The Lines"
+}
+],
 "johann-christoph-von-degenfeld": [],
-"johanna-elisabeth-schonberg-auf-wesel": [],
+"johanna-elisabeth-schonberg-auf-wesel": [
+{
+"path": "/lines",
+"snippet": "…Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsbach) James Darcy Johanna Elisabeth Schönberg auf Wesel John Darcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabe…",
+"title": "The Lines"
+}
+],
 "john-atwell-1824": [],
 "john-atwell-1848": [
 {
@@ -3094,6 +4054,11 @@
 "path": "/sneyd",
 "snippet": "…–1907 William Hartley Sneyd 1837–1902 · Kempsey James Goulbourn Sneyd 1840–1925 · Kempsey John Braidwood Sneyd 1842–1908 · Braidwood Ellen Mary Sneyd 1844–1893 · Sydney Joseph Samuel1 Sneyd 1846–1905 · Staffordshire Joseph Samuel2 Sneyd 184…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Mary Sneyd James Sneyd Louisa Caroline Sneyd William Hartley Sneyd James Goulbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliv…",
+"title": "The Lines"
 }
 ],
 "john-brandon": [],
@@ -3123,12 +4088,23 @@
 "title": "Lieutenant-Colonel Joseph D'Arcy"
 },
 {
+"path": "/lines",
+"snippet": "…Wittelsbach, Pfalz-Simmern Wittelsbach) James Darcy Johanna Elisabeth Schönberg auf Wesel John Darcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Ma…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…were Hornby: Thomas Darcy, Conyers of Hornby Castle, the 1st and 2nd Earls of Holderness, John Darcy Lord Conyers and Robert Darcy — every one of them carrying graft: \"Hornby\" in provenance.json, which is what makes their own page…",
 "title": "What This Archive Got Wrong"
 }
 ],
-"john-darcy-1842": [],
+"john-darcy-1842": [
+{
+"path": "/lines",
+"snippet": "…Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvi…",
+"title": "The Lines"
+}
+],
 "john-darcy-lord-d-arcy-lord-conyers": [
 {
 "path": "/",
@@ -3139,21 +4115,55 @@
 "path": "/direct-line",
 "snippet": "…erkshire) Howard — m. 8 Feb 1650 1621/22 Westminster, Middlesex 13 Dec 1692 — Disputed 11 John Darcy, Lord D'arcy, Lord Conyers Bridget Sutton Alianna (Aline de La Ley) de la Legh Juliana c. 1659 Darcy Meynill, Yorkshire — the tree's geocoder has appended a…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…orothy Darcy Grace D'Arcy Marie Luise von Degenfeld Mary St. Leger Meinhard von Schönburg John Darcy, Lord D'arcy, Lord Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Fred…",
+"title": "The Lines"
 }
 ],
-"john-dixie": [],
+"john-dixie": [
+{
+"path": "/lines",
+"snippet": "…ch Marian Jean Murdoch A different stock of the name Sneyd: the Keele descent — 30 people John Dixie Thomas DABRIDGECOURT of Longdon Hall Alice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt…",
+"title": "The Lines"
+}
+],
 "john-edwin-burnard": [],
-"john-fowler": [],
+"john-fowler": [
+{
+"path": "/lines",
+"snippet": "…Sneyd Ralph Sneyd Anne Maria Holford Dryden Sneyd Ralph Sneyd Alan Holford Barbara Harvey John Fowler Ralph Sneyd William Sneyd How to read a lane The line of small capitals under each lane title is the status, and it is a statemen…",
+"title": "The Lines"
+}
+],
 "john-frederick-mcdougall": [],
 "john-fullwood": [
+{
+"path": "/lines",
+"snippet": "…eswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizab…",
+"title": "The Lines"
+},
 {
 "path": "/worklist",
 "snippet": "…Leicester, 18 km. «Langdon Hall, Warwick » lands in Cumbria , 299 km, and the man on it — John Fullwood, born 1563 — died in the same household as Katherine Dabridgecourt, who is on the Warwickshire row. HEIDELBERG — the Palatinate f…",
 "title": "The work list"
 }
 ],
-"john-hyde-d-arcy": [],
-"john-ii-count-of-oldenburg": [],
+"john-hyde-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy Willia…",
+"title": "The Lines"
+}
+],
+"john-ii-count-of-oldenburg": [
+{
+"path": "/lines",
+"snippet": "…lenburg Hedwig von Oldenburg Konrad (Herr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne…",
+"title": "The Lines"
+}
+],
 "john-jarvis-white": [],
 "john-kent": [],
 "john-ludwig-frederick": [
@@ -3168,9 +4178,20 @@
 "path": "/sneyd",
 "snippet": "…and Doris Ruth Marion Sneyd 1902–1998 · Queensland Beryl Marie Sneyd 1904–1905 · Brisbane John Nelson Sneyd 1905–1994 · Queensland Hazel Ethel Mary Sneyd b. 1906 · Queensland Herbert George Eales Sneyd 1906–1988 · Queensland Robert Raymo…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…d Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Nor…",
+"title": "The Lines"
 }
 ],
-"john-noel": [],
+"john-noel": [
+{
+"path": "/lines",
+"snippet": "…nt — 30 people John Dixie Thomas DABRIDGECOURT of Longdon Hall Alice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumon…",
+"title": "The Lines"
+}
+],
 "john-saniger": [],
 "john-saniger-1773": [
 {
@@ -3264,6 +4285,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas Saniger James Saniger John Saniger Elizabeth Saniger Ann Saniger William Saniger John Saniger, Thomas Saniger Wakefield: Stroud, Bristol, Brisbane — 8 people on thi…",
+"title": "The Lines"
+},
+{
 "path": "/berkeley-woman",
 "snippet": "…bout whether your query can match the name. And Lydia is still nobody's wife on paper. No John Saniger marries at Berkeley between 1792 and 1804, though his children are baptised there from 1801. The woman the tree calls Hannah's mo…",
 "title": "Hannah was a Berkeley woman"
@@ -3326,6 +4352,11 @@
 "title": "Reading the archive against itself"
 },
 {
+"path": "/lines",
+"snippet": "…r Thomas Saniger James Saniger John Saniger Elizabeth Saniger Ann Saniger William Saniger John Saniger, Thomas Saniger Wakefield: Stroud, Bristol, Brisbane — 8 people on this line Eliza Wakefield Ellen Wakefield Martha Wakefield Hira…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…ettled the Lydia Jones question in an afternoon: the tree's marriage is John Sawyer , not John Saniger, and Lydia's death is confirmed in the GRO index. Burials are still not done — see the row below. 104. Done — finished and publish…",
 "title": "The work list"
@@ -3342,6 +4373,11 @@
 "path": "/sneyd",
 "snippet": "…1752–1829 · Staffordshire Ralph Sneyd 1753–1808 · England Edward Sneyd 1754–1776 · Keele John Sneyd 1760–1835 · England Samuel Sneyd 1781–1855 · Madeley William Sneyd b. 1769 · Madeley Dinah Sneyd b. 1772 · Madeley Theodosia Sney…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…100 people on this line William Sneyd Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -3451,6 +4487,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…ion → Brisbane, Queensland — where the line settles Brisbane, Queensland Portsea · 1780 — Joseph D'Arcy baptised: father Robert, mother Jean. The first record of the family in England. [a record read here] Portsea 1780 Chatham · 1827…",
+"title": "The Lines"
+},
+{
 "path": "/coverage",
 "snippet": "…s and his funeral, George Pitt D'Arcy's marriage and the only statement of his paternity, Joseph D'Arcy's obituary and his wife's name, and the Irish service of the 39th. None of that is in any parish register or census. Where it bit…",
 "title": "What the indexes actually hold"
@@ -3462,7 +4503,7 @@
 },
 {
 "path": "/worklist",
-"snippet": "…ed 25 Done 122 Struck 3 134. Blocked — waiting on a person or an institution this archive Joseph D'Arcy's three sons — two lives now documented end to end, and one brother still missing Both were baptised at Westminster and both are…",
+"snippet": "…ne 122 Struck 3 134. Blocked — waiting on a person or an institution this archive 33 days Joseph D'Arcy's three sons — two lives now documented end to end, and one brother still missing Both were baptised at Westminster and both are…",
 "title": "The work list"
 }
 ],
@@ -3471,6 +4512,11 @@
 "path": "/sneyd",
 "snippet": "…· Kempsey John Braidwood Sneyd 1842–1908 · Braidwood Ellen Mary Sneyd 1844–1893 · Sydney Joseph Samuel1 Sneyd 1846–1905 · Staffordshire Joseph Samuel2 Sneyd 1846–1905 · Goulburn Emma Martha Sneyd 1847–1922 · Goulburn Samuel Hartley Hanley…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…e Sneyd William Hartley Sneyd James Goulbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Ge…",
+"title": "The Lines"
 }
 ],
 "joseph-samuel2-sneyd": [
@@ -3527,12 +4573,23 @@
 "title": "The work list"
 }
 ],
-"joseph-william-d-arcy": [],
+"joseph-william-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…ne D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arc…",
+"title": "The Lines"
+}
+],
 "josephine-d-arcy": [
 {
 "path": "/new-generations",
 "snippet": "…841, born Hampshire documented John D'Arcy Son. aged 8 in 1841, born Hampshire documented Josephine D'Arcy Daughter. aged 6 in 1841, born Hampshire documented Frank D'Arcy Son. aged 2 in 1841 documented Joseph D'Arcy Son. an infant in 1…",
 "title": "Not in the tree"
+},
+{
+"path": "/lines",
+"snippet": "…Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G…",
+"title": "The Lines"
 }
 ],
 "juanita-nita": [],
@@ -3546,6 +4603,11 @@
 "path": "/sneyd",
 "snippet": "…Queensland Ivy Miriam Sneyd 1891–1979 · Boulia Cecil George Sneyd 1891–1947 · Queensland Julia Hetty Sneyd b. 1892 · Holy Trinity Arthur Hartley Sneyd 1893–1916 · Rockhampton City Gladys Beryl Sneyd 1893–1897 · Queensland Vivian Claude…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Gladys May Corbett Sneyd Vivian Ernest William Sneyd Cecil George Sneyd Ivy Miriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Grevi…",
+"title": "The Lines"
 }
 ],
 "julie-atwell": [],
@@ -3559,6 +4621,11 @@
 "path": "/direct-line",
 "snippet": "…nd sisters Conyers Darcy Elizabeth Neville Harold Caulkwell Joan Fauconberg nee Bromflete June Darcy Defranceski Family Site (23andMe) g9 Thomas (Francis) D'Arcy and Margaret? D'Arcy born BET 24 NOV 1681 AND 21 JUL 1710, St. James…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…y Thomas D'Arcy Lady Amelia Darcy, 12th Baroness Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Conrad I of Ol…",
+"title": "The Lines"
 }
 ],
 "karen-saal": [],
@@ -3575,8 +4642,19 @@
 ],
 "karl-moritz-wittelsbach-pfalz-simmern-von-der-pfalz-wittelsbach-pfalz-simmern": [],
 "karl-von-schonberg": [],
-"karoline-charlotte-elisabeth-von-der-pfalz": [],
+"karoline-charlotte-elisabeth-von-der-pfalz": [
+{
+"path": "/lines",
+"snippet": "…von Degenfeld Mary St. Leger Meinhard von Schönburg John Darcy, Lord D'arcy, Lord Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy…",
+"title": "The Lines"
+}
+],
 "katherine-dabridgecourt": [
+{
+"path": "/lines",
+"snippet": "…COURT of Longdon Hall Alice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney)…",
+"title": "The Lines"
+},
 {
 "path": "/worklist",
 "snippet": "…ia , 299 km, and the man on it — John Fullwood, born 1563 — died in the same household as Katherine Dabridgecourt, who is on the Warwickshire row. HEIDELBERG — the Palatinate filed under the kingdom that swallowed it. The second pin is in Bava…",
@@ -3594,6 +4672,11 @@
 "path": "/murdoch",
 "snippet": "…–1907 · Gympie Annie Kathleen Murdoch 1898–1964 · Gympie James \"Fraser\" Murdoch 1923–2003 Keith William Murdoch 1925–1996 · Toowoomba Marion \"Jean\" Murdoch 1927–2010 · Toowoomba Q'ld Australia Audrey \"Dell\" Murdoch 1929–2022 · Toowoomba Q'ld…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…h Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith William Murdoch Marion \"Jean\" Murdoch Audrey \"Dell\" Murdoch Francis Murdoch Marian Jean Murdoch A different stock of the name Sneyd: the Keele de…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -3661,6 +4744,11 @@
 "path": "/timeline",
 "snippet": "…D'Arcy dies suddenly at 44, of Botany Street, Clayfield 2000–2049 1 2010 The Commonwealth Kenneth Lindsay D'Arcy's eulogy, delivered in three parts by his three children Nothing of that kind. The bands are the state, not the family. Read the…",
 "title": "The Timeline"
+},
+{
+"path": "/lines",
+"snippet": "…people on this line The Murdochs → Toowoomba, Queensland — Audrey \"Dell\" Murdoch marries Kenneth Lindsay D'Arcy, 1952 Toowoomba, Queensland Avondale · 1854 — Francis Murdoch marries Marion Watt on 6 May: 1854, not the 1853 the tree carries.…",
+"title": "The Lines"
 }
 ],
 "kenneth-seigfried-sneyd": [
@@ -3673,13 +4761,42 @@
 "path": "/sneyd",
 "snippet": "…Claude Sneyd 1895–1949 · Rockhampton City Florence Isabel Sneyd 1897–1942 · Kelvin Grove Kenneth Seigfried Sneyd 1898–1935 · Brisbane Muriel Mary Sneyd 1898–1982 · Queensland Roy Sneyd 1899–1964 · Mackay Greville William Sneyd 1899–1996 · Gay…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…y Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Rut…",
+"title": "The Lines"
 }
 ],
-"king-of-bohemia-frederick-v-of-von-der-pflaz-king-of-bohemia": [],
+"king-of-bohemia-frederick-v-of-von-der-pflaz-king-of-bohemia": [
+{
+"path": "/lines",
+"snippet": "…ret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consort of Bohemia) STUART King Of Bohemia Frederick V Of von der Pflaz, King of Bohemia Dorothy D'Arcy willam [Sir] D\"arcy Anne Darcy Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Bar…",
+"title": "The Lines"
+}
+],
 "klaus-geng": [],
-"konrad-herr-von-diepholz": [],
-"lady-amelia-darcy-12th-baroness-darcy-de-knayth-and-9th-baroness-conyers": [],
-"lady-elizabeth-cecil": [],
+"konrad-herr-von-diepholz": [
+{
+"path": "/lines",
+"snippet": "…on this line Heinrich VI von Wildeshausen Elisabeth von Tecklenburg Hedwig von Oldenburg Konrad (Herr) von DIEPHOLZ Christian III, Count of Oldenburg John II, Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEI…",
+"title": "The Lines"
+}
+],
+"lady-amelia-darcy-12th-baroness-darcy-de-knayth-and-9th-baroness-conyers": [
+{
+"path": "/lines",
+"snippet": "…cy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy George Darcy Thomas D'Arcy Lady Amelia Darcy, 12th Baroness Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Mayney Christian I of Denmark Christian III of Denmark Christian V, Count of Oldenburg Con…",
+"title": "The Lines"
+}
+],
+"lady-elizabeth-cecil": [
+{
+"path": "/lines",
+"snippet": "…arcy, Lord D'arcy, Lord Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th…",
+"title": "The Lines"
+}
+],
 "lady-maria-schomberg": [
 {
 "path": "/",
@@ -3694,6 +4811,11 @@
 "path": "/sneyd",
 "snippet": "…neyd b. 1780 · Madeley Emma Penelope Sneyd 1784–1835 · Keele Mary Sneyd b. 1788 · Madeley Lewis Sneyd 1788–1858 · Keele Ralph Sneyd 1793–1870 Ralph Sneyd 1793–1870 · Keele Richard Malone Sneyd 1800–1861 · Ireland Walter Sneyd 1809–…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…eyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele Hall Mary Sn…",
+"title": "The Lines"
 }
 ],
 "lily-atwell": [],
@@ -3749,6 +4871,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Be…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…e it was corrected → 9 September 2026 was Stated that a fourteen-page service dossier for Lindesay Atkinson D'Arcy “is known to exist”. now No such record could be found under any spelling of his name. how Nothing was ever checked. The claim ha…",
 "title": "What This Archive Got Wrong"
@@ -3759,6 +4886,11 @@
 "path": "/sneyd",
 "snippet": "…Fitzroy Sneyd 1879–1879 · Queensland Maurice Norman Fitzroy Sneyd 1879–1879 · Queensland Lionel Sneyd b. 1879 James Hyland1 Sneyd 1881–1882 · Brisbane James Hyland2 Sneyd 1881–1882 · Brisbane Jessie Camile Corbett Sneyd 1883–1936 ·…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…am Charles Henry Corbett Sneyd William Charles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera…",
+"title": "The Lines"
 }
 ],
 "lorraine-wyatt": [],
@@ -3767,6 +4899,11 @@
 "path": "/sneyd",
 "snippet": "…e Samuel Charles Sneyd 1811–1885 · Hanley Mary Sneyd b. 1814 James Sneyd b. 1818 · Hanley Louisa Caroline Sneyd 1833–1907 William Hartley Sneyd 1837–1902 · Kempsey James Goulbourn Sneyd 1840–1925 · Kempsey John Braidwood Sneyd 1842–1908 · Br…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…neyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele Hall Mary Sneyd James Sneyd Louisa Caroline Sneyd William Hartley Sneyd James Goulbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel H…",
+"title": "The Lines"
 }
 ],
 "louisa-georgina-sneyd": [
@@ -3774,14 +4911,30 @@
 "path": "/sneyd",
 "snippet": "…1896 · Brisbane Thomas George Sneyd 1859–1927 · Bega Louisa Miriam Sneyd 1861–1927 · Bega Louisa Georgina SNEYD 1861–1910 · Denton Robert Mcdowell Sneyd 1862–1937 · Queensland Isabel Clara Sneyd b. 1862 · Denton Ralph Sneyd 1863–1949 · Dento…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ey Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles Sneyd Catherine Isabel Sneyd Sneyd Arthur…",
+"title": "The Lines"
 }
 ],
-"louisa-margaret-d-arcy": [],
+"louisa-margaret-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…abeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Louisa Margaret D'Arcy Catherine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgi…",
+"title": "The Lines"
+}
+],
 "louisa-miriam-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…South Wales Arthur Oliver Sneyd 1855–1896 · Brisbane Thomas George Sneyd 1859–1927 · Bega Louisa Miriam Sneyd 1861–1927 · Bega Louisa Georgina SNEYD 1861–1910 · Denton Robert Mcdowell Sneyd 1862–1937 · Queensland Isabel Clara Sneyd b. 1862…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…yd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles Sneyd Catherine Isabel Sneyd Sneyd Arthur William Hartley Sne…",
+"title": "The Lines"
 }
 ],
 "louisa-rossiter": [],
@@ -3880,6 +5033,11 @@
 "path": "/crossread",
 "snippet": "…E D'ARCY · born 1759, BARBADOS · died 1778, CHATHAM · parents Thomas (Francis) D'Arcy and Margaret? D'Arcy — the same parents given to Robert The tree's note on him reads: “Lt in the Royal Artillery. died s.p. 01/06/1778 appt to De Lanc…",
 "title": "Reading the archive against itself"
+},
+{
+"path": "/lines",
+"snippet": "…hur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Arcy Ruth D'Arcy Hornby: the descent the tree claims above Robert D'Arcy — 106 people on this line Heinrich VI von Wildeshausen Elisab…",
+"title": "The Lines"
 }
 ],
 "margaret-d-arcy-1594": [
@@ -3907,6 +5065,11 @@
 "path": "/bloodline",
 "snippet": "…izabeth D'Arcy · Grace D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What t…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…omas Howard, 1st Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consort of Bohemia) STUART King Of Bohemia Frederick V Of von der Pflaz, King…",
+"title": "The Lines"
 },
 {
 "path": "/worklist",
@@ -3958,6 +5121,11 @@
 "title": "Reading the archive against itself"
 },
 {
+"path": "/lines",
+"snippet": "…y at Chatham to Brisbane — 51 people on this line Constantine D'Arcy Robert Edward D'Arcy Margaret Maria Isabella D'Arcy George Pitt D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…September, and half of it dissolved. The «D'Arcy marriage at Chatham St Mary in 1806» is Margaret Maria Isabella D'Arcy to John Maddock — this family's own marriage, already held in full, appearing in a second index under a shorter form of the groom…",
 "title": "The work list"
@@ -3972,8 +5140,20 @@
 }
 ],
 "margaret-stuart": [],
-"margareta-anna-von-degenfeld": [],
-"margaretha-von-zyllenhardt": [],
+"margareta-anna-von-degenfeld": [
+{
+"path": "/lines",
+"snippet": "…dwig (Grafin) von RIETBERG Hedwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Degenfeld Wilhelm Adelmann von Adelmannsfelden Saniger: Berkeley, Gloucestershire — 17 people on…",
+"title": "The Lines"
+}
+],
+"margaretha-von-zyllenhardt": [
+{
+"path": "/lines",
+"snippet": "…gang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi Of Scotland) King Of England Stuart (født stuart), I of England & I…",
+"title": "The Lines"
+}
+],
 "maria-annunziata-falco": [],
 "maria-atwell": [
 {
@@ -4033,9 +5213,20 @@
 "path": "/murdoch",
 "snippet": "…Murdoch living Kristin Murdoch living Sarah Murdoch living Francis Murdoch dates unknown Marian Jean Murdoch dates unknown · toowoomba",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…Murdoch Keith William Murdoch Marion \"Jean\" Murdoch Audrey \"Dell\" Murdoch Francis Murdoch Marian Jean Murdoch A different stock of the name Sneyd: the Keele descent — 30 people John Dixie Thomas DABRIDGECOURT of Longdon Hall Alice GRISWOLD…",
+"title": "The Lines"
 }
 ],
-"marie-luise-von-degenfeld": [],
+"marie-luise-von-degenfeld": [
+{
+"path": "/lines",
+"snippet": "…of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darcy Dorothy Darcy Grace D'Arcy Marie Luise von Degenfeld Mary St. Leger Meinhard von Schönburg John Darcy, Lord D'arcy, Lord Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Su…",
+"title": "The Lines"
+}
+],
 "marion-fleming": [
 {
 "path": "/murdoch",
@@ -4053,6 +5244,11 @@
 "path": "/murdoch",
 "snippet": "…1799–1872 Francis Murdoch 1824–1909 · of St Quivox William Murdoch 1856–1918 · St Quivox Marion Fleming Murdoch b. 1859 · Ayr James Murdoch b. 1861 · Ayr Francis Murdoch b. 1863 · Ayr Janet Murdoch b. 1867 · Ayr George Murdoch b. 1868 · Ayr…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…tkinson Murdoch: St Quivox, Ayrshire, to Toowoomba — 17 people on this line Claud Murdoch Marion Fleming Murdoch James Murdoch Francis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch A…",
+"title": "The Lines"
 }
 ],
 "marion-janet-murdoch": [
@@ -4060,6 +5256,11 @@
 "path": "/murdoch",
 "snippet": "…68 · Ayr Jeanie Murdoch b. 1870 · Ayr Francis Claudius \"Frank\" Murdoch 1892–1958 · Gympie Marion Janet Murdoch 1893–1972 William James Fraser \"Bill\" Murdoch 1894–1946 · Gympie Allan George Murdoch 1896–1907 · Gympie Annie Kathleen Murdoch 1…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…ncis Murdoch Janet Murdoch George Murdoch Jeanie Murdoch Francis Claudius \"Frank\" Murdoch Marion Janet Murdoch Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith William Murdoch Marion \"Jean\" Murdoch Audrey \"Dell\" Murd…",
+"title": "The Lines"
 }
 ],
 "marion-jean-murdoch": [
@@ -4072,6 +5273,11 @@
 "path": "/murdoch",
 "snippet": "…964 · Gympie James \"Fraser\" Murdoch 1923–2003 Keith William Murdoch 1925–1996 · Toowoomba Marion \"Jean\" Murdoch 1927–2010 · Toowoomba Q'ld Australia Audrey \"Dell\" Murdoch 1929–2022 · Toowoomba Q'ld Australia William Murdoch living Donald Mur…",
 "title": "The Murdochs"
+},
+{
+"path": "/lines",
+"snippet": "…Allan George Murdoch Annie Kathleen Murdoch James \"Fraser\" Murdoch Keith William Murdoch Marion \"Jean\" Murdoch Audrey \"Dell\" Murdoch Francis Murdoch Marian Jean Murdoch A different stock of the name Sneyd: the Keele descent — 30 people John…",
+"title": "The Lines"
 }
 ],
 "marion-watt": [
@@ -4084,6 +5290,11 @@
 "path": "/sources",
 "snippet": "…th of William Murdoch at St Quivox and Newton, 7 October 1856, naming Francis Murdoch and Marion Watt; and their marriage at Avondale, Lanarkshire, 6 May 1854. ScotlandsPeople itself, which holds the register images, has not been c…",
 "title": "Sources"
+},
+{
+"path": "/lines",
+"snippet": "…neth Lindsay D'Arcy, 1952 Toowoomba, Queensland Avondale · 1854 — Francis Murdoch marries Marion Watt on 6 May: 1854, not the 1853 the tree carries. [a record read here] Avondale 1854 St Quivox · 1856 — William Murdoch born 7 Octob…",
+"title": "The Lines"
 }
 ],
 "marmaduke-d-arcy": [
@@ -4101,9 +5312,20 @@
 "path": "/bloodline",
 "snippet": "…race D'Arcy · Henry D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What the lines are made o…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsbach) James Darcy…",
+"title": "The Lines"
 }
 ],
-"marshal-frederic-von-schomberg": [],
+"marshal-frederic-von-schomberg": [
+{
+"path": "/lines",
+"snippet": "…nthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsbach) James Darcy Johanna Elisabeth Schönberg auf…",
+"title": "The Lines"
+}
+],
 "martha-blum": [
 {
 "path": "/tree",
@@ -4173,6 +5395,11 @@
 "title": "Reading the archive against itself"
 },
 {
+"path": "/lines",
+"snippet": "…efield: Stroud, Bristol, Brisbane — 8 people on this line Eliza Wakefield Ellen Wakefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madeley and Hanley to Brisbane — 100 pe…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…ry event the page was built on. Where it was corrected → 14 September 2026 was Wrote that Martha Wakefield “may never have existed” and that she was “not in the family tree either”, after searching for her in Bristol. She is in the tree…",
 "title": "What This Archive Got Wrong"
@@ -4240,9 +5467,21 @@
 "title": "The Atkinsons"
 }
 ],
-"mary-cartwright": [],
+"mary-cartwright": [
+{
+"path": "/lines",
+"snippet": "…rdaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi Of Scotland) King Of England Stuart (født stuart), I of England & Ireland, IV of Scotland Susan (C…",
+"title": "The Lines"
+}
+],
 "mary-catherine": [],
-"mary-catherine-georgina-d-arcy": [],
+"mary-catherine-georgina-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Louisa Margaret D'Arcy Catherine D'…",
+"title": "The Lines"
+}
+],
 "mary-d-arcy": [
 {
 "path": "/",
@@ -4258,6 +5497,11 @@
 "path": "/bloodline",
 "snippet": "…D\"arcy · Isabel D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What the lines are made of Every link o…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…rd D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darcy Dorothy Darcy Grace D'Arcy…",
+"title": "The Lines"
 }
 ],
 "mary-doublet": [
@@ -4268,7 +5512,13 @@
 }
 ],
 "mary-elizabeth-clark": [],
-"mary-elvina-annie-d-arcy": [],
+"mary-elvina-annie-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…liam David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Louisa Margaret D'Arcy Catherine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy…",
+"title": "The Lines"
+}
+],
 "mary-howard": [
 {
 "path": "/",
@@ -4286,7 +5536,13 @@
 }
 ],
 "mary-saniger": [],
-"mary-saniger-1734": [],
+"mary-saniger-1734": [
+{
+"path": "/lines",
+"snippet": "…— 17 people on this line William Sanigar Thomas Saniger Edward Saniger Christian Saniger Mary Saniger Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas Saniger James Saniger John Saniger Elizabeth Saniger Ann Sani…",
+"title": "The Lines"
+}
+],
 "mary-smyth": [
 {
 "path": "/berkeley",
@@ -4307,12 +5563,23 @@
 "title": "The Sneyds of the Potteries"
 },
 {
+"path": "/lines",
+"snippet": "…eyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele Hall Mary Sneyd James S…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…), Thomas Saniger, Catherine D'Arcy, Constantine D'Arcy, George Pitt D'Arcy, James Sneyd, Mary Sneyd, Samuel Charles Sneyd. Their records are shown on every candidate's page under «filed under the name, not assigned to this person…",
 "title": "The work list"
 }
 ],
-"mary-st-leger": [],
+"mary-st-leger": [
+{
+"path": "/lines",
+"snippet": "…Margaret Darcy John Darcy John Darcy Dorothy Darcy Grace D'Arcy Marie Luise von Degenfeld Mary St. Leger Meinhard von Schönburg John Darcy, Lord D'arcy, Lord Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Eliza…",
+"title": "The Lines"
+}
+],
 "mary-sutton": [],
 "mathew-mulcahy": [],
 "matilda-carrie-weaber": [],
@@ -4326,10 +5593,21 @@
 "path": "/sneyd",
 "snippet": "…isbane Sneyd 1877–1878 · Queensland Walter Reginald Brisbane Sneyd 1877–1878 · Queensland Maurice Norman Fitzroy Sneyd 1879–1879 · Queensland Maurice Norman Fitzroy Sneyd 1879–1879 · Queensland Lionel Sneyd b. 1879 James Hyland1 Sneyd 1881–1882 · B…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…nry Corbett Sneyd William Charles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke S…",
+"title": "The Lines"
 }
 ],
 "maximilian-von-degenfeld": [],
-"meinhard-von-schonburg": [],
+"meinhard-von-schonburg": [
+{
+"path": "/lines",
+"snippet": "…John Darcy John Darcy Dorothy Darcy Grace D'Arcy Marie Luise von Degenfeld Mary St. Leger Meinhard von Schönburg John Darcy, Lord D'arcy, Lord Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy…",
+"title": "The Lines"
+}
+],
 "michel-angelo-maione": [],
 "michele-angelo-maione": [],
 "michele-falco": [],
@@ -4356,7 +5634,7 @@
 },
 {
 "path": "/trees",
-"snippet": "…y pages about them. The Sneyds → Wakefield Out of Bristol, into Queensland Could be drawn Miriam Wakefield sailed on the General Hewitt in 1854 and gave sworn evidence at an inquest in 1902 — one of the few women in this archive who spe…",
+"snippet": "…s pages about them. The Sneyds → Wakefield Out of Bristol, into Queensland Could be drawn Miriam Wakefield sailed on the General Hewitt in 1854 and gave sworn evidence at an inquest in 1902 — one of the few women in this archive who spe…",
 "title": "The trees"
 },
 {
@@ -4400,6 +5678,11 @@
 "title": "The Sneyds"
 },
 {
+"path": "/lines",
+"snippet": "…tism names his parents 10 people on this line The Wakefields → The Sneyd lane, Brisbane — Miriam Wakefield marries William Hartley Sneyd, 1859 The Sneyd lane, Brisbane Stroud · 1806 — James Wakefield baptised 6 April: father Richard, mo…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…t. And yet the single most valuable document in this archive is a woman's testimony. When Miriam Wakefield stood up in the Brisbane Police Court in September 1902 and said \" his father's name was Samuel Sneyd, Gaol Governor, his mother'…",
 "title": "The Women"
@@ -4421,6 +5704,11 @@
 "path": "/sneyd",
 "snippet": "…orence Isabel Sneyd 1897–1942 · Kelvin Grove Kenneth Seigfried Sneyd 1898–1935 · Brisbane Muriel Mary Sneyd 1898–1982 · Queensland Roy Sneyd 1899–1964 · Mackay Greville William Sneyd 1899–1996 · Gayndah Amy Nesta Sneyd 1900–1941 · Brisba…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…neyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dul…",
+"title": "The Lines"
 }
 ],
 "nicholas-i-snow": [],
@@ -4430,6 +5718,11 @@
 "path": "/sneyd",
 "snippet": "…09–1995 · Queensland Graham Sneyd b. 1926 Sydney Sneyd 1927–1987 · Qld Jill Sneyd b. 1934 Norma Denise Sneyd 1940–1944 · Mackay Yvonne Sneyd dates unknown Diane Sneyd dates unknown Edward Sneyd d. 1691 William Sneyd dates unknown · Englan…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…e Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sneyd Atkinson: Limerick to Wickham Terrace — 2…",
+"title": "The Lines"
 }
 ],
 "norma-mary-davis": [],
@@ -4484,6 +5777,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…t on this line; no record read. [family tree, unverified] Limerick 1725 Limerick · 1832 — Paul Cole Atkinson christened 9 July, St Mary's Cathedral: the record that names Richard and Anne. [a record read here] Limerick 1832 Brisbane · 186…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…forty-six, the year before he took the post. Jane Creech · 1830–1885 Married the organist Paul Cole Atkinson at Carrigaline, County Cork, on 27 September 1853, and emigrated with him in 1862 with the children already born. Eliza Keeling ·…",
 "title": "The Women"
@@ -4495,6 +5793,11 @@
 }
 ],
 "pauline-brenda-atkinson": [
+{
+"path": "/lines",
+"snippet": "…et Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson George Frederick Handel Atkinson Pauline Brenda Atkinson Ruby Kathleen Atkinson Murdoch: St Quivox, Ayrshire, to Toowoomba — 17 people on this line Claud Murdoch Marion Fleming Murdoch J…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…athleen Atkinson 1869–1937 · Brisbane George Frederick Handel Atkinson b. 1871 · Brisbane Pauline Brenda Atkinson 1886–1969 · Brisbane Ruby Kathleen Atkinson b. 1888 · Brisbane",
@@ -4520,6 +5823,11 @@
 "path": "/bloodline",
 "snippet": "…el D'Arcy · James Darcy · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What the lines are made of Every link on this page, counted b…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…, Pfalz-Simmern Wittelsbach) James Darcy Johanna Elisabeth Schönberg auf Wesel John Darcy Philadelphia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Dar…",
+"title": "The Lines"
 }
 ],
 "philip-darcy": [],
@@ -4538,6 +5846,11 @@
 "path": "/bloodline",
 "snippet": "…y · John Darcy · Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What the lines are made of Every link on this page, counted by the kind of r…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…nyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darcy Dorothy Darcy Grace D'Arcy Marie Luise…",
+"title": "The Lines"
 }
 ],
 "philip-howard": [
@@ -4610,6 +5923,11 @@
 "title": "The Sneyds of the Potteries"
 },
 {
+"path": "/lines",
+"snippet": "…and Hanley to Brisbane — 100 people on this line William Sneyd Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…of 1855 at Stoke. The year is wrong and so is the house number. → The Sneyds descend from Ralph Sneyd of Keele Hall Disproved from the Madeley register: the 1742 baptism names the father as William, and Ralph was eighteen. → Robert…",
 "title": "What This Archive Got Wrong"
@@ -4651,6 +5969,11 @@
 "title": "Sources"
 },
 {
+"path": "/lines",
+"snippet": "…Kathleen Atkinson marries George Pitt D'Arcy, 1888 Brisbane, Queensland Limerick · 1725 — Richard Atkinson: the tree's earliest on this line; no record read. [family tree, unverified] Limerick 1725 Limerick · 1832 — Paul Cole Atkinson c…",
+"title": "The Lines"
+},
+{
 "path": "/atkinson",
 "snippet": "…, Limerick Christened 9 July 1832 Limerick, County Limerick — St Mary's Cathedral Parents Richard Atkinson and Anne — a generation the archive did not have before Organist 1853 Bandon, County Cork Emigrated 2 September 1862 to Brisbane,…",
 "title": "The Atkinsons"
@@ -4676,9 +5999,19 @@
 "path": "/crossread",
 "snippet": "…0–1849 1780 or 1783, unresolved Portsmouth — “or West Indies” Parramatta, New South Wales Richard d'Arcy inferred b. 1784 1784 Portsmouth — Constantine D'Arcy documented 1786–1805 Feb 1786 BARBADOS Chatham, Kent Jane D'Arcy tree 1787–…",
 "title": "Reading the archive against itself"
+},
+{
+"path": "/lines",
+"snippet": "…Constantine D'Arcy Robert Edward D'Arcy Margaret Maria Isabella D'Arcy George Pitt D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy Geor…",
+"title": "The Lines"
 }
 ],
 "richard-kent-atkinson": [
+{
+"path": "/lines",
+"snippet": "…0 people on this line Richard Atkinson Richard Atkinson Rosanna Atkinson William Atkinson Richard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkins…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…1895 · Limerick City William Atkinson 1829–1838 Paul Cole Atkinson 1832–1906 · ST. MARY'S Richard Kent Atkinson 1836–1888 Elizabeth Mary ATKINSON b. 1838 · Limerick Charles Atkinson 1838–1840 Henry Atkinson 1843–1916 · Strand Ann Atkinson 18…",
@@ -4690,12 +6023,23 @@
 "path": "/sneyd",
 "snippet": "…Madeley Lewis Sneyd 1788–1858 · Keele Ralph Sneyd 1793–1870 Ralph Sneyd 1793–1870 · Keele Richard Malone Sneyd 1800–1861 · Ireland Walter Sneyd 1809–1888 · Keele Samuel Charles Sneyd 1811–1885 · Hanley Mary Sneyd b. 1814 James Sneyd b. 1818…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…ma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele Hall Mary Sneyd James Sneyd Louisa Caroline Sneyd William Hartley Sneyd James Goulbourn Sneyd…",
+"title": "The Lines"
 }
 ],
 "richard-snow": [],
 "richard-snow-1496": [],
 "richard-sutton": [],
-"richard-wellesley-d-arcy": [],
+"richard-wellesley-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…rcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Arcy Catherine Sophia Ann D…",
+"title": "The Lines"
+}
+],
 "robert-4th-earl-of-holderness-darcy": [
 {
 "path": "/",
@@ -4706,9 +6050,20 @@
 "path": "/direct-line",
 "snippet": "…t him. joins D'Arcy → Brothers and sisters Caroline Louisa D'ARCY George Schomberg d'Arcy Robert, 4th Earl of Holderness Darcy Defranceski Family Site (23andMe) · Defranceski Family Site (23andMe) g8 Robert D'Arcy and Jean Ward born by 1758, and probably e…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy George Darcy Thomas D'Arcy Lady Amelia Darcy, 12th Baroness Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenbu…",
+"title": "The Lines"
 }
 ],
-"robert-ambrose-sutton": [],
+"robert-ambrose-sutton": [
+{
+"path": "/lines",
+"snippet": "…Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consort of Bohemia) STUART King Of Bohemia Frederick V Of von der Pflaz, King of Bohemia Dorothy D'…",
+"title": "The Lines"
+}
+],
 "robert-blum": [],
 "robert-bruce-brady": [],
 "robert-bruce-stuart-prince-of-scotland": [],
@@ -4849,6 +6204,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…s · 429 people not yet placed; 1 candidate join, on evidence short of a document. D'Arcy: Robert D'Arcy at Chatham to Brisbane Documented from 1776 · Robert's parentage not found; the Hornby descent above him is drawn apart 55 people…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…remotest birthplace in the archive Mt Thompson, Brisbane 5 Jean Ward · 1754–1823 Married Robert D'Arcy at Portsea on 21 June 1779 and followed the Corps of Royal Engineers for forty-four years. Their first child Joseph was baptised…",
 "title": "The Women"
@@ -4906,12 +6266,23 @@
 "title": "The Corps"
 },
 {
+"path": "/lines",
+"snippet": "…rd Conyers Karoline Charlotte Elisabeth von der Pfalz Bridget Sutton Lady Elizabeth Cecil Robert Darcy Conyers Darcy Friederike Susanna Frederica von Schönburg George Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holde…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…onyers of Hornby Castle, the 1st and 2nd Earls of Holderness, John Darcy Lord Conyers and Robert Darcy — every one of them carrying graft: \"Hornby\" in provenance.json, which is what makes their own pages say disputed. The other two…",
 "title": "What This Archive Got Wrong"
 }
 ],
-"robert-edward-d-arcy": [],
+"robert-edward-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…D'Arcy: Robert D'Arcy at Chatham to Brisbane — 51 people on this line Constantine D'Arcy Robert Edward D'Arcy Margaret Maria Isabella D'Arcy George Pitt D'Arcy Richard d'Arcy Constantine D'Arcy Jane D'Arcy Catherine D'Arcy Anna Maria D'Arc…",
+"title": "The Lines"
+}
+],
 "robert-howard": [
 {
 "path": "/",
@@ -4919,7 +6290,13 @@
 "title": "Twelve generations, and two claims too far."
 }
 ],
-"robert-joseph-d-arcy": [],
+"robert-joseph-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…n D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Louisa Margaret D'Arcy Catherine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida…",
+"title": "The Lines"
+}
+],
 "robert-kent": [],
 "robert-kent-1768": [
 {
@@ -4939,6 +6316,11 @@
 "path": "/direct-line",
 "snippet": "…and sisters Catherine D'Arcy Charlotte Maria D'Arcy Edwin Francis D'Arcy Ida Grace D'Arcy Robert Lindesay D'Arcy William Arthur D'Arcy Defranceski Family Site (23andMe) · Defranceski Family Site (23andMe) · FamilySearch Family Tree · Australi…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…ne Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Louisa Margaret D'Arcy Catherine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Fran…",
+"title": "The Lines"
 }
 ],
 "robert-mcdowell-sneyd": [
@@ -4946,6 +6328,11 @@
 "path": "/sneyd",
 "snippet": "…1927 · Bega Louisa Miriam Sneyd 1861–1927 · Bega Louisa Georgina SNEYD 1861–1910 · Denton Robert Mcdowell Sneyd 1862–1937 · Queensland Isabel Clara Sneyd b. 1862 · Denton Ralph Sneyd 1863–1949 · Denton Ralph Sneyd 1863–1949 · Headington Samu…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…er Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles Sneyd Catherine Isabel Sneyd Sneyd Arthur William Hartley Sneyd Edith Blanche Sneyd Sneyd Ernest Ephra…",
+"title": "The Lines"
 }
 ],
 "robert-mowbray-howard": [],
@@ -4954,6 +6341,11 @@
 "path": "/sneyd",
 "snippet": "…l Ethel Mary Sneyd b. 1906 · Queensland Herbert George Eales Sneyd 1906–1988 · Queensland Robert Raymond Sneyd b. 1908 · Queensland Emily Grace Sneyd 1909–1995 · Queensland Graham Sneyd b. 1926 Sydney Sneyd 1927–1987 · Qld Jill Sneyd b. 193…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…eyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith…",
+"title": "The Lines"
 }
 ],
 "robert-rouse-dyson": [],
@@ -4981,6 +6373,11 @@
 "title": "Robert and Jean's family"
 },
 {
+"path": "/lines",
+"snippet": "…Arcy Anna Maria d'Arcy Charlotte D'Arcy Frederick Robert D'Arcy George Abbas Kooli D'Arcy Robert West D'Arcy Richard Wellesley D'Arcy Charlotte Maria D'Arcy Catherine Maria D'Arcy Catherine Lucy Jane D'Arcy John Hyde D'Arcy Josephine D'Ar…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…wo D'Arcy baptisms, 1832 and 1839). Two resolve to nothing at all: Bangor, Gwynedd, where Robert West D'Arcy died in 1862, and Bombay, where he married in 1846. And Thornbury looked like the one good case and was not. It resolves to 51.83…",
 "title": "The work list"
@@ -4996,10 +6393,20 @@
 "path": "/direct-line",
 "snippet": "…rcy Edward Darcy Elizabeth Darcy Grace D'Arcy Hon. Margaret Darcy John Darcy Philip Darcy Rokeby Darcy Ursula Darcy Biographical Summaries of Notable People · Defranceski Family Site (23andMe) g11 John Darcy, Lord D'arcy, Lord Conye…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…phia D'ARCY Ursula Darcy Edward D'ARCY Conyers, 2nd Earl of Holderness Darcy Edward Darcy Rokeby Darcy Elizabeth Darcy Mary D'Arcy Philip Darcy Philip Darcy Frances (Lady of Berkshire) Howard Hon. Margaret Darcy John Darcy John Darc…",
+"title": "The Lines"
 }
 ],
 "ronald-atwell": [],
 "rosanna-atkinson": [
+{
+"path": "/lines",
+"snippet": "…n: Limerick to Wickham Terrace — 20 people on this line Richard Atkinson Richard Atkinson Rosanna Atkinson William Atkinson Richard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson Wi…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…b. 1725 Richard Atkinson 1765–1826 · Limerick Richard Atkinson 1801–1865 · Limerick City Rosanna Atkinson 1827–1895 · Limerick City William Atkinson 1829–1838 Paul Cole Atkinson 1832–1906 · ST. MARY'S Richard Kent Atkinson 1836–1888 El…",
@@ -5019,16 +6426,32 @@
 "path": "/sneyd",
 "snippet": "…ove Kenneth Seigfried Sneyd 1898–1935 · Brisbane Muriel Mary Sneyd 1898–1982 · Queensland Roy Sneyd 1899–1964 · Mackay Greville William Sneyd 1899–1996 · Gayndah Amy Nesta Sneyd 1900–1941 · Brisbane William Joseph George Sneyd 19…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…yd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sne…",
+"title": "The Lines"
 }
 ],
 "ruby-kathleen-atkinson": [
+{
+"path": "/lines",
+"snippet": "…e Atkinson Ida Kathleen Atkinson George Frederick Handel Atkinson Pauline Brenda Atkinson Ruby Kathleen Atkinson Murdoch: St Quivox, Ayrshire, to Toowoomba — 17 people on this line Claud Murdoch Marion Fleming Murdoch James Murdoch Francis Mu…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…Frederick Handel Atkinson b. 1871 · Brisbane Pauline Brenda Atkinson 1886–1969 · Brisbane Ruby Kathleen Atkinson b. 1888 · Brisbane",
 "title": "The Atkinsons"
 }
 ],
-"ruth-d-arcy": [],
+"ruth-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Arcy Ruth D'Arcy Hornby: the descent the tree claims above Robert D'Arcy — 106 people on this line Heinrich VI von Wildeshausen Elisabeth von Teck…",
+"title": "The Lines"
+}
+],
 "samuel-blackbourne": [],
 "samuel-charles-sneyd-1810": [],
 "samuel-charles-sneyd-1863": [
@@ -5039,7 +6462,7 @@
 },
 {
 "path": "/trees",
-"snippet": "…awn Ivy Miriam Sneyd's people, of Boulia and Brisbane, and a weaver at Hanley above them. Samuel Charles Sneyd was a soldier, a constable and a gaol governor in one life. No chart of this family has been drawn — only pages about them. The S…",
+"snippet": "…awn Ivy Miriam Sneyd's people, of Boulia and Brisbane, and a weaver at Hanley above them. Samuel Charles Sneyd was a soldier, a constable and a gaol governor in one life. No pedigree of this family has been drawn. The line is a lane on The…",
 "title": "The trees"
 },
 {
@@ -5093,6 +6516,11 @@
 "title": "The Sneyds of the Potteries"
 },
 {
+"path": "/lines",
+"snippet": "…best candidate for the Hanley grocer, not proved. [inferred] Madeley 1781 Hanley · 1811 — Samuel Charles Sneyd christened 28 April, son of Samuel. [a record read here] Hanley 1811 New South Wales · 1832 — Samuel Charles Sneyd sails with the…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…umented: William Sneyd, weaver, married Mary Blackbourne at Madeley on 27 March 1769; and Samuel Charles Sneyd was baptised at Hanley on 28 April 1811, his father Samuel and mother Elizabeth, exactly as the tree says. how I searched for bap…",
 "title": "What This Archive Got Wrong"
@@ -5120,6 +6548,11 @@
 "path": "/sneyd",
 "snippet": "…ordshire Joseph Samuel2 Sneyd 1846–1905 · Goulburn Emma Martha Sneyd 1847–1922 · Goulburn Samuel Hartley Hanley Stafford Sneyd 1851–1901 · New South Wales Elizabeth Margaret Sneyd 1853–1908 · New South Wales Arthur Oliver Sneyd 1855–1896 · Brisbane Thomas…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…lbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Joseph Samuel1 Sneyd Emma Martha Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Rob…",
+"title": "The Lines"
 }
 ],
 "samuel-screech": [],
@@ -5175,6 +6608,11 @@
 "title": "The Sneyds of the Potteries"
 },
 {
+"path": "/lines",
+"snippet": "…ries → Boulia, Queensland — Ivy Miriam Sneyd's people Boulia, Queensland Madeley · 1781 — Samuel Sneyd baptised 4 June, father William: the best candidate for the Hanley grocer, not proved. [inferred] Madeley 1781 Hanley · 1811 — Sa…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…stood up in the Brisbane Police Court in September 1902 and said \" his father's name was Samuel Sneyd, Gaol Governor, his mother's name was Catherine \", she settled a question four separate research passes had been circling — and s…",
 "title": "The Women"
@@ -5202,7 +6640,13 @@
 "title": "What Has Been Read"
 }
 ],
-"sarah-saniger": [],
+"sarah-saniger": [
+{
+"path": "/lines",
+"snippet": "…on this line William Sanigar Thomas Saniger Edward Saniger Christian Saniger Mary Saniger Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas Saniger James Saniger John Saniger Elizabeth Saniger Ann Saniger William Sa…",
+"title": "The Lines"
+}
+],
 "sarah-sneyd": [
 {
 "path": "/sneyd",
@@ -5213,6 +6657,11 @@
 "path": "/sneyds",
 "snippet": "…anton 1620 Richard Sneyd gentleman Stafford and Keele 1684 Ralph Sneyd esquire Keele 1704 Sarah Sneyd widow Keele 1706 Ralph Sneyd esquire Keele 1734 Ralph Sneyd not given Keele 1737 Ralph Sneyd gentleman Keele 1743 Richard Sneyd L…",
 "title": "The Sneyds of the Potteries"
+},
+{
+"path": "/lines",
+"snippet": "…alter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Mal…",
+"title": "The Lines"
 }
 ],
 "sarah-stephens": [],
@@ -5224,19 +6673,48 @@
 "sir-benjamin-william-mildmay": [],
 "sofie-zu-pfalz": [],
 "sophia-garling": [],
-"sophia-maria-louisa-d-arcy": [],
+"sophia-maria-louisa-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…ine D'Arcy Catherine Sophia Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Jose…",
+"title": "The Lines"
+}
+],
 "sophia-palatinate-simmern": [],
 "sophia-stuart": [],
-"sophie-gustrow": [],
+"sophie-gustrow": [
+{
+"path": "/lines",
+"snippet": "…dwig of Diepholz Helvig of Schauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Degenfeld Wilhelm Adelmann von Adelmannsfelden Saniger: Berkeley, Gloucestershire — 17 people on this line Will…",
+"title": "The Lines"
+}
+],
 "stuart-prince-of-england": [],
-"susan-caney-coney": [],
+"susan-caney-coney": [
+{
+"path": "/lines",
+"snippet": "…Of Scotland) King Of England Stuart (født stuart), I of England & Ireland, IV of Scotland Susan (Caney) Coney Thomas Rokeby Anne (Queen consort) of Denmark von Oldenburg Dorothy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl…",
+"title": "The Lines"
+}
+],
 "susan-sutton": [],
-"susanne-gravenegg": [],
+"susanne-gravenegg": [
+{
+"path": "/lines",
+"snippet": "…is Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy Jam…",
+"title": "The Lines"
+}
+],
 "sydney-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…Sneyd b. 1908 · Queensland Emily Grace Sneyd 1909–1995 · Queensland Graham Sneyd b. 1926 Sydney Sneyd 1927–1987 · Qld Jill Sneyd b. 1934 Norma Denise Sneyd 1940–1944 · Mackay Yvonne Sneyd dates unknown Diane Sneyd dates unknown Edw…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Mary Sneyd Herbert George Eales Sneyd Robert Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sneyd Atkinson: L…",
+"title": "The Lines"
 }
 ],
 "theodosia-sneyd": [
@@ -5244,10 +6722,21 @@
 "path": "/sneyd",
 "snippet": "…l Sneyd 1781–1855 · Madeley William Sneyd b. 1769 · Madeley Dinah Sneyd b. 1772 · Madeley Theodosia Sneyd b. 1773 · Madeley Sarah Sneyd b. 1776 · Madeley James Sneyd b. 1779 · Madeley William Sneyd b. 1780 · Madeley Emma Penelope Sneyd…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope Sneyd Lewis Sneyd Mary Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd…",
+"title": "The Lines"
 }
 ],
 "thomas-cotton": [],
-"thomas-d-arcy": [],
+"thomas-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…Schomberg d'Arcy Caroline Louisa D'ARCY Robert, 4th Earl of Holderness Darcy George Darcy Thomas D'Arcy Lady Amelia Darcy, 12th Baroness Darcy de Knayth and 9th Baroness Conyers June Darcy Anna of Brandenburg Bridget Mayney Christian…",
+"title": "The Lines"
+}
+],
 "thomas-d-arcy-1613": [
 {
 "path": "/",
@@ -5263,9 +6752,20 @@
 "path": "/bloodline",
 "snippet": "…· Margaret D'Arcy · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What the lines are made of Every link on this page, counted by the kind of record behind it.…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy Marmaduke D\"arcy Marshal Frederic von Schomberg Elector Palatine Charles Louis von der Pfalz (Wittelsbach, Pfalz-Simmern Wittelsb…",
+"title": "The Lines"
 }
 ],
-"thomas-dabridgecourt-of-longdon-hall": [],
+"thomas-dabridgecourt-of-longdon-hall": [
+{
+"path": "/lines",
+"snippet": "…ean Murdoch A different stock of the name Sneyd: the Keele descent — 30 people John Dixie Thomas DABRIDGECOURT of Longdon Hall Alice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolst…",
+"title": "The Lines"
+}
+],
 "thomas-darcy": [
 {
 "path": "/",
@@ -5283,12 +6783,23 @@
 "title": "Blood relatives"
 },
 {
+"path": "/lines",
+"snippet": "…Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi Of Scotland) King Of England Stuart (født stuart), I of England & Ireland, IV of Scotland Susan (Caney) Coney T…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…«Inferred» . Eight of the fifteen badges on the page were that fallback. Six were Hornby: Thomas Darcy, Conyers of Hornby Castle, the 1st and 2nd Earls of Holderness, John Darcy Lord Conyers and Robert Darcy — every one of them carr…",
 "title": "What This Archive Got Wrong"
 }
 ],
-"thomas-de-beaumont": [],
+"thomas-de-beaumont": [
+{
+"path": "/lines",
+"snippet": "…xie Thomas DABRIDGECOURT of Longdon Hall Alice GRISWOLD or Greswald John Noel Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood…",
+"title": "The Lines"
+}
+],
 "thomas-edward-jones": [],
 "thomas-francis-d-arcy": [
 {
@@ -5320,6 +6831,11 @@
 "path": "/hornby",
 "snippet": "…. But the tree's actual structure hangs Robert not off the 4th Earl at all — it inserts a Thomas (Francis) D'Arcy , said to be born at St James's Palace, and descends him from the 3rd Earl. Two different claims about the same join, in the same…",
 "title": "The Hornby Claim"
+},
+{
+"path": "/lines",
+"snippet": "…est on this line. [family tree, unverified] Hornby Castle 1570 St James's Palace · 1681 — Thomas (Francis) D'Arcy, said to be born here: the one link above Robert, with no record. [disputed] St James's Palace 1681 Saniger: Berkeley, Gloucester…",
+"title": "The Lines"
 }
 ],
 "thomas-george-sneyd": [
@@ -5332,9 +6848,20 @@
 "path": "/sneyd",
 "snippet": "…on a death notice .\" Ernest Vivian William Sneyd (1890–1919), their first cousin — son of Thomas George Sneyd — was a labourer once turned away for being too short. He got in on a second try, was wounded with the 31st Battalion at the end…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…a Sneyd Samuel Hartley Hanley Stafford Sneyd Elizabeth Margaret Sneyd Arthur Oliver Sneyd Thomas George Sneyd Louisa Georgina SNEYD Louisa Miriam Sneyd Isabel Clara Sneyd Robert Mcdowell Sneyd Ralph Sneyd Samuel Charles Sneyd Catherine Isa…",
+"title": "The Lines"
 }
 ],
-"thomas-howard-1st-earl-of-berkshire": [],
+"thomas-howard-1st-earl-of-berkshire": [
+{
+"path": "/lines",
+"snippet": "…ne (Queen consort) of Denmark von Oldenburg Dorothy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl of Berkshire Anne Sutton Christoph Martin (Freiherr) von Degenfield Margaret D'Arcy Robert Ambrose Sutton Grace Rokeby Elizabeth (Queen consor…",
+"title": "The Lines"
+}
+],
 "thomas-howard-3rd-earl-of-berkshire": [
 {
 "path": "/",
@@ -5345,7 +6872,13 @@
 "thomas-kent": [],
 "thomas-knight-of-basingthorpe-coney": [],
 "thomas-mulcahy": [],
-"thomas-rokeby": [],
+"thomas-rokeby": [
+{
+"path": "/lines",
+"snippet": "…England Stuart (født stuart), I of England & Ireland, IV of Scotland Susan (Caney) Coney Thomas Rokeby Anne (Queen consort) of Denmark von Oldenburg Dorothy Bellasyse Hans Meinhard von Schönberg Thomas Howard, 1st Earl of Berkshire…",
+"title": "The Lines"
+}
+],
 "thomas-saniger": [],
 "thomas-saniger-1711": [],
 "thomas-saniger-1744": [],
@@ -5406,6 +6939,11 @@
 "title": "Reading the archive against itself"
 },
 {
+"path": "/lines",
+"snippet": "…baptised 12 October, father William. [a record read here] Berkeley 1679 Berkeley · 1744 — Thomas Saniger baptised 23 August, father Thomas. [a record read here] Berkeley 1744 Berkeley · 1769 — Thomas marries Catherine Cotton on 10 Apr…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…woman in this archive with a record behind her. → CATHERINE COTTON , of Berkeley Married Thomas Saniger at Berkeley, 10 April 1769. Searched across the whole county for a baptism and found none — she appears only to marry. → MARY OLI…",
 "title": "The Women"
@@ -5417,7 +6955,7 @@
 },
 {
 "path": "/worklist",
-"snippet": "…ur behalf. Cotton's will is the one that would test whether Catherine Cotton, who married Thomas Saniger at Berkeley, is his daughter. 16. Blocked — waiting on a person or an institution David 33 days Two certificates to order, both a…",
+"snippet": "…ur behalf. Cotton's will is the one that would test whether Catherine Cotton, who married Thomas Saniger at Berkeley, is his daughter. 16. Blocked — waiting on a person or an institution David 40 days Two certificates to order, both a…",
 "title": "The work list"
 }
 ],
@@ -5446,6 +6984,11 @@
 "path": "/bloodline",
 "snippet": "…y · Marmaduke D\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What the lines are made of Every link on this page, counted by the kind of record behind it. How the link w…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…arl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'Arcy Ursula Darcy Isabel D'Arcy Anna Maria Adelmann von Adelmannsfelden Anthony St Leger Elizabeth D'Arcy Henry D\"arcy Grace D'Arcy Thomas D\"arcy M…",
+"title": "The Lines"
 }
 ],
 "valma-d-arcy": [
@@ -5458,14 +7001,30 @@
 "path": "/direct-line",
 "snippet": "…documented joins Murdoch → Brothers and sisters Arthur Neville \"Bill\" D'Arcy Joan D'Arcy Valma D'Arcy Vivian Lindsay D'Arcy g2 Ian Kenneth D'Arcy and Giuseppina Falco family The joint here will not bear weight. Repeated from the fa…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…da Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Arcy Ruth D'Arcy Hornby: the descent the tree claims above Robert D'Arcy — 106 people on…",
+"title": "The Lines"
 }
 ],
-"varney-vere-verney-noel-nowell": [],
+"varney-vere-verney-noel-nowell": [
+{
+"path": "/lines",
+"snippet": "…m John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sneyd Frances Noel Edward Sneyd Ralph Sneyd Anne Maria Holford Dryden…",
+"title": "The Lines"
+}
+],
 "vera-evelyn-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…nd Corbett Sneyd 1885–1936 · Queensland James Hyland Corbett Sneyd 1885–1936 · Queensland Vera Evelyn Sneyd b. 1887 · Queensland Brindley Stoke Sneyd 1888–1888 · Brisbane Brindley Stoke Sneyd 1888–1888 · Brisbane Gladys May Corbett Sneyd…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbett Sneyd Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corbett Sneyd Gladys May Corbett Sneyd Vivian Ernest William Sneyd Cecil George Sneyd Ivy Miriam…",
+"title": "The Lines"
 }
 ],
 "vincent-smith": [],
@@ -5527,6 +7086,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…l George Sneyd Ivy Miriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel Sneyd Kenneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph G…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…t William Sneyd died between 1919 and 1921 16 February 1920, registration 1920/B/31382. → Vivian Claude Sneyd was born at Rockhampton Windsor, Brisbane, on his own attestation paper. → Read across all 58 The shared cause, counted An archiv…",
 "title": "What This Archive Got Wrong"
@@ -5537,6 +7101,11 @@
 "path": "/sneyd",
 "snippet": "…ane Brindley Stoke Sneyd 1888–1888 · Brisbane Gladys May Corbett Sneyd b. 1890 · Brisbane Vivian Ernest William Sneyd 1890–1920 · Queensland Gladys May Corbett Sneyd b. 1890 · Queensland Ivy Miriam Sneyd 1891–1979 · Boulia Cecil George Sneyd 1891–…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Vera Evelyn Sneyd Brindley Stoke Sneyd Gladys May Corbett Sneyd Gladys May Corbett Sneyd Vivian Ernest William Sneyd Cecil George Sneyd Ivy Miriam Sneyd Julia Hetty Sneyd Arthur Hartley Sneyd Gladys Beryl Sneyd Vivian Claude Sneyd Florence Isabel…",
+"title": "The Lines"
 },
 {
 "path": "/corrections",
@@ -5554,10 +7123,27 @@
 "path": "/direct-line",
 "snippet": "…oins Murdoch → Brothers and sisters Arthur Neville \"Bill\" D'Arcy Joan D'Arcy Valma D'Arcy Vivian Lindsay D'Arcy g2 Ian Kenneth D'Arcy and Giuseppina Falco family The joint here will not bear weight. Repeated from the family tree and not prov…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…cy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Florence Isabel D'Arcy Ida Joyce D'Arcy Vivian Lindsay D'Arcy Arthur Neville \"Bill\" D'Arcy Kenneth Lindsay D'Arcy Valma D'Arcy Beverley D'Arcy Joan D'Arcy Margaret? D'Arcy Ruth D'Arcy Hornby:…",
+"title": "The Lines"
 }
 ],
-"von-degenfeld": [],
-"von-degenfeld-2": [],
+"von-degenfeld": [
+{
+"path": "/lines",
+"snippet": "…the name von der Pfalz (13) Howard (14) — 14 people published under the name Howard (14) von Degenfeld (8) — 8 people published under the name von Degenfeld (8) Schomberg (8) — 8 people published under the name Schomberg (8) Kent (1…",
+"title": "The Lines"
+}
+],
+"von-degenfeld-2": [
+{
+"path": "/lines",
+"snippet": "…hauenburg Ingeborg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Degenfeld Wilhelm Adelmann von Adelmannsfelden Saniger: Berkeley, Gloucestershire — 17 people on this line William Sanigar Thomas Saniger E…",
+"title": "The Lines"
+}
+],
 "von-schomberg": [
 {
 "path": "/",
@@ -5571,6 +7157,11 @@
 "path": "/sneyd",
 "snippet": "…Henry Corbett Sneyd 1876–1911 · Brisbane William Charles Henry Sneyd 1876–1911 · Brisbane Walter Reginald Brisbane Sneyd 1877–1878 · Queensland Walter Reginald Brisbane Sneyd 1877–1878 · Queensland Maurice Norman Fitzroy Sneyd 1879–1879 · Queensland…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…bett Sneyd Eva Maud Sneyd William Charles Henry Corbett Sneyd William Charles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Corbett Sneyd James Hyland Corbet…",
+"title": "The Lines"
 }
 ],
 "walter-sneyd-1752": [],
@@ -5601,6 +7192,11 @@
 "title": "The Sneyds"
 },
 {
+"path": "/lines",
+"snippet": "…eyd: Madeley and Hanley to Brisbane — 100 people on this line William Sneyd Frances Sneyd Walter Sneyd Ralph Sneyd Edward Sneyd John Sneyd William Sneyd Dinah Sneyd Theodosia Sneyd Sarah Sneyd James Sneyd William Sneyd Emma Penelope…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…Oliver was born on 17 May 1782 , so she was eleven when Ralph Sneyd was born in 1793, and Walter Sneyd, born 1809, is the year she married Samuel Sneyd at Audlem on 22 October . Neither can be their child. That was the question; it…",
 "title": "The work list"
@@ -5611,11 +7207,22 @@
 "path": "/searched",
 "snippet": "…ts, and they are not Samuel and Elizabeth. Of the late Mr. Ralph Sneyd: He was the son of Walter Sneyd, of Keele Hall, Sneyd, Bradwell, &c., by the Hon. Louisa Bagot, his wife, daughter of William, 1st Lord Bagot. He was born 6th October, 1793; Hi…",
 "title": "What Has Been Read"
+},
+{
+"path": "/lines",
+"snippet": "…Sneyd George Sneyd Henry Sneyd Ralph Sneyd Ralph Sneyd Richard Malone Sneyd Walter Sneyd Walter Sneyd, of Keele Hall Mary Sneyd James Sneyd Louisa Caroline Sneyd William Hartley Sneyd James Goulbourn Sneyd John Braidwood Sneyd Ellen Mary Sneyd Jo…",
+"title": "The Lines"
 }
 ],
 "wesley-peters": [],
 "wilfred-robertson": [],
-"wilhelm-adelmann-von-adelmannsfelden": [],
+"wilhelm-adelmann-von-adelmannsfelden": [
+{
+"path": "/lines",
+"snippet": "…borg of Brunswick Margareta Anna von Degenfeld Sophie Güstrow von Degenfeld Von Degenfeld Wilhelm Adelmann von Adelmannsfelden Saniger: Berkeley, Gloucestershire — 17 people on this line William Sanigar Thomas Saniger Edward Saniger Christian Saniger Mary…",
+"title": "The Lines"
+}
+],
 "willam-sir-d-arcy": [
 {
 "path": "/",
@@ -5631,6 +7238,11 @@
 "path": "/bloodline",
 "snippet": "…\"arcy · Mary D'Arcy · Philadelphia D'ARCY · Philip Darcy · Thomas D\"arcy · Ursula Darcy · willam [Sir] D\"arcy What the lines are made of Every link on this page, counted by the kind of record behind it. How the link was made Links What it…",
 "title": "Blood relatives"
+},
+{
+"path": "/lines",
+"snippet": "…emia) STUART King Of Bohemia Frederick V Of von der Pflaz, King of Bohemia Dorothy D'Arcy willam [Sir] D\"arcy Anne Darcy Conyers 1st Earl of Holderness 8th Lord Darcy de Knayth 5th Lord Conyers D'arcy Barbara Conyers D'Arcy Ursula Darcy Is…",
+"title": "The Lines"
 }
 ],
 "william-albert-sneyd": [
@@ -5638,6 +7250,11 @@
 "path": "/sneyd",
 "snippet": "…nd Sneyd dates unknown Henry Sneyd d. 1791 George Sneyd d. 1790 Ralph Sneyd dates unknown William Albert Sneyd d. 1954 Edith Blanche Sneyd dates unknown Annie Ada Sneyd dates unknown",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…t Raymond Sneyd Emily Grace Sneyd Graham Sneyd Sydney Sneyd Jill Sneyd Norma Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sneyd Atkinson: Limerick to Wickham Terrace — 20 people on this line…",
+"title": "The Lines"
 }
 ],
 "william-arthur-d-arcy": [
@@ -5650,9 +7267,19 @@
 "path": "/direct-line",
 "snippet": "…'Arcy Charlotte Maria D'Arcy Edwin Francis D'Arcy Ida Grace D'Arcy Robert Lindesay D'Arcy William Arthur D'Arcy Defranceski Family Site (23andMe) · Defranceski Family Site (23andMe) · FamilySearch Family Tree · Australian Newspapers · Austra…",
 "title": "The Spine"
+},
+{
+"path": "/lines",
+"snippet": "…'Arcy Robert Joseph D'Arcy Robert Lindesay D'Arcy Louisa Margaret D'Arcy Catherine D'Arcy William Arthur D'Arcy Charlotte Maria D'Arcy Geraldine D'Arcy Ida Grace D'Arcy Edwin Francis D'Arcy Hilda Georgina D'Arcy Lindesay Atkinson D'Arcy Flor…",
+"title": "The Lines"
 }
 ],
 "william-atkinson": [
+{
+"path": "/lines",
+"snippet": "…ckham Terrace — 20 people on this line Richard Atkinson Richard Atkinson Rosanna Atkinson William Atkinson Richard Kent Atkinson Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atki…",
+"title": "The Lines"
+},
 {
 "path": "/atkinson",
 "snippet": "…ick Richard Atkinson 1801–1865 · Limerick City Rosanna Atkinson 1827–1895 · Limerick City William Atkinson 1829–1838 Paul Cole Atkinson 1832–1906 · ST. MARY'S Richard Kent Atkinson 1836–1888 Elizabeth Mary ATKINSON b. 1838 · Limerick Ch…",
@@ -5667,6 +7294,11 @@
 "path": "/sneyd",
 "snippet": "…ensland Eliza Anne Corbett Sneyd 1875–1955 · Queensland Eva Maud Sneyd b. 1875 · Brisbane William Charles Henry Corbett Sneyd 1876–1911 · Brisbane William Charles Henry Sneyd 1876–1911 · Brisbane Walter Reginald Brisbane Sneyd 1877–1878 · Queensland Walte…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…a Isabell Corbett Sneyd Ada Isabell Corbett Sneyd Eliza Anne Corbett Sneyd Eva Maud Sneyd William Charles Henry Corbett Sneyd William Charles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hy…",
+"title": "The Lines"
 }
 ],
 "william-charles-henry-sneyd": [
@@ -5674,12 +7306,23 @@
 "path": "/sneyd",
 "snippet": "…va Maud Sneyd b. 1875 · Brisbane William Charles Henry Corbett Sneyd 1876–1911 · Brisbane William Charles Henry Sneyd 1876–1911 · Brisbane Walter Reginald Brisbane Sneyd 1877–1878 · Queensland Walter Reginald Brisbane Sneyd 1877–1878 · Queensland…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…Corbett Sneyd Eliza Anne Corbett Sneyd Eva Maud Sneyd William Charles Henry Corbett Sneyd William Charles Henry Sneyd Walter Reginald Brisbane Sneyd Lionel Sneyd Maurice Norman Fitzroy Sneyd James Hyland1 Sneyd James Hyland2 Sneyd Jessie Camile Co…",
+"title": "The Lines"
 }
 ],
 "william-cotton": [],
 "william-cox-johnson": [],
 "william-creech": [],
-"william-david-d-arcy": [],
+"william-david-d-arcy": [
+{
+"path": "/lines",
+"snippet": "…Ann D'ARCY Frank Hyde D'Arcy Joseph William D'Arcy JOHN DARCY Sophia Maria Louisa D'Arcy William David d'Arcy G Norman D'Arcy Mary Catherine Georgina D'Arcy Elizabeth Eleanor D'Arcy Mary Elvina Annie D'Arcy Robert Joseph D'Arcy Robert Lind…",
+"title": "The Lines"
+}
+],
 "william-foote": [],
 "william-garden": [
 {
@@ -5760,6 +7403,11 @@
 "title": "The Timeline"
 },
 {
+"path": "/lines",
+"snippet": "…people on this line The Wakefields → The Sneyd lane, Brisbane — Miriam Wakefield marries William Hartley Sneyd, 1859 The Sneyd lane, Brisbane Stroud · 1806 — James Wakefield baptised 6 April: father Richard, mother Elizabeth Webb. [a record…",
+"title": "The Lines"
+},
+{
 "path": "/the-women",
 "snippet": "…840–1909 Born in Bristol on 11 April 1840 and registered there that June quarter; married William Hartley Sneyd at Brisbane on 15 November 1859, aged nineteen. Sixty-two years later she stood in the Brisbane Police Court and gave the single…",
 "title": "The Women"
@@ -5817,6 +7465,11 @@
 "path": "/sneyd",
 "snippet": "…· Mackay Greville William Sneyd 1899–1996 · Gayndah Amy Nesta Sneyd 1900–1941 · Brisbane William Joseph George Sneyd 1900–1992 · Queensland Eda Joyce Margaret Sneyd 1901–1955 · Queensland Dulcie Equator Sneyd 1902–1941 · Queensland Doris Ruth Mar…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…enneth Seigfried Sneyd Muriel Mary Sneyd Greville William Sneyd Roy Sneyd Amy Nesta Sneyd William Joseph George Sneyd Eda Joyce Margaret Sneyd Doris Ruth Marion Sneyd Dulcie Equator Sneyd Beryl Marie Sneyd John Nelson Sneyd Hazel Ethel Mary Sneyd…",
+"title": "The Lines"
 }
 ],
 "william-kent": [
@@ -5839,18 +7492,34 @@
 "title": "Sources"
 },
 {
+"path": "/lines",
+"snippet": "…854, not the 1853 the tree carries. [a record read here] Avondale 1854 St Quivox · 1856 — William Murdoch born 7 October; the statutory register names Francis Murdoch and Marion Watt. [a record read here] St Quivox 1856 Gympie · 1894 —…",
+"title": "The Lines"
+},
+{
 "path": "/worklist",
 "snippet": "…tring sweep reports 25 hits and every one is noise — «George» inside George Pitt D'Arcy, «William Murdoch» inside Keith William Murdoch 1925-1996, «Geraldine» inside Geraldine D'Arcy 1872-1937. tools/check_living.py now has a json_pass…",
 "title": "The work list"
 }
 ],
 "william-noel-1581": [],
-"william-noel-1642": [],
+"william-noel-1642": [
+{
+"path": "/lines",
+"snippet": "…Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel Frances Ward Ralph Sneyd Frances N…",
+"title": "The Lines"
+}
+],
 "william-robert-atkinson": [
 {
 "path": "/",
 "snippet": "…Charlotte Atkinson George Frederick Handel Atkinson Henry Wallace Atkinson Jane Atkinson William Robert Atkinson 4 1892 → 1936 Lindesay Atkinson D'Arcy b. 15 JUL 1892 d. 10 NOV 1936 Clerk × Ivy Miriam Sneyd Brisbane, Brisbane, Queensland, Aus…",
 "title": "Twelve generations, and two claims too far."
+},
+{
+"path": "/lines",
+"snippet": "…n Charles Atkinson Elizabeth Mary ATKINSON Henry Atkinson Ann Atkinson Elizabeth Atkinson William Robert Atkinson Ann Creech Atkinson Frances Charlotte Atkinson Jane Atkinson Alice Harriet Atkinson Henry Wallace Atkinson Ida Kathleen Atkinson…",
+"title": "The Lines"
 },
 {
 "path": "/atkinson",
@@ -5881,6 +7550,11 @@
 "path": "/saniger-place",
 "snippet": "…man in 1601, and a gentleman clothier in 1692 The archive's deepest published person is a William Sanigar said to be born in 1654. These entries reach fifty years behind him and describe a family already established: John Saniger of Be…",
 "title": "Saniger is a place"
+},
+{
+"path": "/lines",
+"snippet": "…Adelmann von Adelmannsfelden Saniger: Berkeley, Gloucestershire — 17 people on this line William Sanigar Thomas Saniger Edward Saniger Christian Saniger Mary Saniger Sarah Saniger Mary Saniger Elizabeth Saniger William Saniger Thomas…",
+"title": "The Lines"
 }
 ],
 "william-saniger": [],
@@ -5930,6 +7604,11 @@
 "path": "/saniger-place",
 "snippet": "…. 1 July 1709, aged 60 Paul Bishop of Saniger, and Martha his wife in the churchyard list William Saniger of FROGPITT, Yeoman d. 17 Jan 1704 — a Saniger who lived somewhere else Edward Saniger of PEDINGTON in this Parish, and Mary his…",
 "title": "Saniger is a place"
+},
+{
+"path": "/lines",
+"snippet": "…ah marries James Wakefield, 17 October 1831 Bristol, the Wakefield lane Berkeley · 1679 — William Saniger baptised 12 October, father William. [a record read here] Berkeley 1679 Berkeley · 1744 — Thomas Saniger baptised 23 August, fath…",
+"title": "The Lines"
 },
 {
 "path": "/corrections",
@@ -5987,6 +7666,11 @@
 "title": "The Sneyds of the Potteries"
 },
 {
+"path": "/lines",
+"snippet": "…hind a single link, found wrong The Sneyds of Keele Hall The tree hangs these people on a William Sneyd baptised at Madeley in 1742. The register names a different father. Tested and disproved; kept on the site, because a disproved c…",
+"title": "The Lines"
+},
+{
 "path": "/corrections",
 "snippet": "…ed at Madeley for the tree's 1769. now The Samuel is there, baptised 4 June 1781 — son of William Sneyd, weaver, and Mary Blackbourne, whose thirteen children fill the register between 1769 and 1794. The year 1769 belongs to his elde…",
 "title": "What This Archive Got Wrong"
@@ -5997,8 +7681,20 @@
 "title": "The work list"
 }
 ],
-"william-sutton-1535": [],
-"william-sutton-1561": [],
+"william-sutton-1535": [
+{
+"path": "/lines",
+"snippet": "…Count of Oldenburg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William…",
+"title": "The Lines"
+}
+],
+"william-sutton-1561": [
+{
+"path": "/lines",
+"snippet": "…avenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwright Thomas Darcy James I (James Vi Of Scotland) King Of England Stuart (født stuart), I of England & Ireland, IV of S…",
+"title": "The Lines"
+}
+],
 "william-ward": [
 {
 "path": "/how-far-back",
@@ -6014,13 +7710,30 @@
 }
 ],
 "willm-kent": [],
-"wolfgang-zyllenhardt": [],
-"wolston-wolstan-dixie": [],
+"wolfgang-zyllenhardt": [
+{
+"path": "/lines",
+"snippet": "…burg Jane Darcy Francis Thomas CONEY [Knight of Bassingthorpe] Alice LEIGH William SUTTON Wolfgang Zyllenhardt Susanne Gravenegg Anne Mordaunt Elizabeth Conyers Conrad V von Degenfeld Margaretha Von Zyllenhardt William Sutton Mary Cartwrigh…",
+"title": "The Lines"
+}
+],
+"wolston-wolstan-dixie": [
+{
+"path": "/lines",
+"snippet": "…el Anne Fowler Thomas de Beaumont Katherine Dabridgecourt Catherine Farnham John Fullwood Wolston (Wolstan) Dixie Frances de Beaumont William Noel Frances Fullwood Varney (Vere) (Verney) Noel (Nowell) Joane Dixie Elizabeth Dixie William Noel F…",
+"title": "The Lines"
+}
+],
 "yvonne-sneyd": [
 {
 "path": "/sneyd",
 "snippet": "…926 Sydney Sneyd 1927–1987 · Qld Jill Sneyd b. 1934 Norma Denise Sneyd 1940–1944 · Mackay Yvonne Sneyd dates unknown Diane Sneyd dates unknown Edward Sneyd d. 1691 William Sneyd dates unknown · England Sneyd dates unknown Henry Sney…",
 "title": "The Sneyds"
+},
+{
+"path": "/lines",
+"snippet": "…a Denise Sneyd William Albert Sneyd Annie Ada Sneyd Diane Sneyd Edith Blanche Sneyd Sneyd Yvonne Sneyd Atkinson: Limerick to Wickham Terrace — 20 people on this line Richard Atkinson Richard Atkinson Rosanna Atkinson William Atkinso…",
+"title": "The Lines"
 }
 ],
 "zillah-wakefield": [
@@ -6043,6 +7756,11 @@
 "path": "/crossread",
 "snippet": "…d already been filed once On 13 September this archive published an error about Jabez and Zillah Wakefield, announced as “two children nobody here had ever heard of” when both were on a passenger manifest it had transcribed itself in Ju…",
 "title": "Reading the archive against itself"
+},
+{
+"path": "/lines",
+"snippet": "…akefield Ellen Wakefield Martha Wakefield Hiram Wakefield Aaron Wakefield Jabez Wakefield Zillah Wakefield Ephraim Wakefield Sneyd: Madeley and Hanley to Brisbane — 100 people on this line William Sneyd Frances Sneyd Walter Sneyd Ralph…",
+"title": "The Lines"
 },
 {
 "path": "/berkeley-woman",
