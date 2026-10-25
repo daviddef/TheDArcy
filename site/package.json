@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --port 4323",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run check:pin && npm run check:records && npm run check:lines-data && npm run check:era-ground && npm run atlas && astro build && npm run autolink && npm run sitemap && npm run check:book && npm run check:living && npm run check:kin && npm run check:living:tree && npm run check:templates && npm run check:kit && npm run check:worklist && npm run check:covers && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:archive && npm run check:nav && npm run check:prose && npm run check:names && npm run check:standard && npm run check:lines && npm run check:era && npm run check:era-expect && npm run check:era:selftest",
+    "build": "npm run check:pin && npm run check:records && npm run check:lines-data && npm run check:era-ground && npm run atlas && astro build && npm run autolink && npm run sitemap && npm run check:book && npm run check:story && npm run check:living && npm run check:kin && npm run check:living:tree && npm run check:templates && npm run check:kit && npm run check:worklist && npm run check:covers && npm run check:sources && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:archive && npm run check:nav && npm run check:prose && npm run check:names && npm run check:standard && npm run check:lines && npm run check:era && npm run check:era-expect && npm run check:era:selftest",
     "preview": "astro preview --port 4323",
     "autolink": "python3 ../tools/autolink_pass.py",
     "check:names": "python3 ../tools/autolink_pass.py --gate",
@@ -19,6 +19,7 @@
     "check:worklist": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkworklist.py --root .",
     "check:living": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkliving.py --dist dist --data src/data --policy named-bare --years --config standard.json --strict-allow",
     "check:living:tree": "python3 ../tools/check_living.py --dist dist",
+    "check:story": "python3 ../tools/check_story.py",
     "check:book": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkbook.py --dist dist --book src/data/book.json",
     "check:prose": "python3 ../tools/check_prose.py",
     "check:prose-strict": "python3 ../tools/check_prose.py --require-tree",

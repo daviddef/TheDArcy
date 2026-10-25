@@ -37,6 +37,7 @@ SITE = os.path.join(ROOT, "site")
 KIT_TOOLS = os.path.join(SITE, "node_modules", "@daviddef", "archive-kit", "kit", "tools")
 CHECKPROSE = os.path.join(KIT_TOOLS, "checkprose.py")
 ALLOW = os.path.join(ROOT, "checkprose-allow.json")
+STORY_CARD_KEYS = ("origin", "originGrade", "spouseOrigin", "chapter")
 DATA = "site/src/data"
 
 # Data files a person (or a person's session) edits. Each is read by the gate.
@@ -78,6 +79,7 @@ HAND_EDITED = {
     "retired.json",  # withdrawn readings
     "robert-family.json",
     "same-person.json",  # declared duplicates
+    "story.json",  # the family story (/story/): every paragraph written by hand from the archive's pages
     "saniger-1608.json",
     "saniger-line.json",
     "saniger-place.json",
@@ -185,6 +187,11 @@ def main(argv=None):
         cmd += ["--include", inc]
     if os.path.exists(ALLOW):
         cmd += ["--allow", ALLOW]
+    # The family story's ribbon card (kit/data/story-schema.json) REQUIRES these four fields on every card, a living
+    # one included: where the person is from (a town and a country), how well that is known (doc, inf, lore), where
+    # the spouse is from, and the chapter the card opens. They are a place, a grade and an id, never a date; the blob
+    # check still reads every value for a year, a date or a life-event word.
+    cmd += ["--allow-keys", ",".join(STORY_CARD_KEYS)]
     return subprocess.run(cmd).returncode
 
 

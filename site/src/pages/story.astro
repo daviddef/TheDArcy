@@ -1,0 +1,13 @@
+---
+/* THE STORY (25 October 2026): the direct line told once as a short book, the first chapter after the cover.
+   Every word is data (src/data/story.json, the kit's contract in kit/docs/story.md); the kit draws it and
+   kit/tools/checkfamilystory.py holds it to its grammar (npm run check:story). Nothing here decides anything. */
+import Base from "../layouts/Base.astro";
+import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
+import book from "../data/story.json";
+import { u } from "../lib/url.js";
+const personHref = (slug) => u(`/people/${slug}/`);
+---
+<Base title={book.title} eyebrow={book.eyebrow} dek={book.dek}>
+  <StoryBook book={book} personHref={personHref} u={u} />
+</Base>

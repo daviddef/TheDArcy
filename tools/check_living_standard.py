@@ -26,6 +26,9 @@ able to):
   data-keys     every record flagged living holds only the keys a living record
                 may hold, and every one of those but name/relatives/place is empty
   data-marriage a living person's marriage carries no date, no place, no divorce
+  data-story    the family story (story.json, the kit's contract in kit/docs/story.md) has its own field
+                names for a living ribbon card and tree node: those are allowed there and nowhere else, its
+                years and atYear must be empty, and no field of a living record in it may hold a digit
   data-place    the place is a town and a country: no digit, no street, no
                 institution (a hospital, a care home), at most one comma
   data-refs     a relative is a name AND the id of a page: every parent, brother,
@@ -88,6 +91,14 @@ NOT_A_TOWN = re.compile(
     r"school|university|college|church|chapel|prison|barracks|lodge|home|estate|"
     r"po box|private bag)\b", re.I)
 SPOUSE_EMPTY = ("married", "marriedPlace", "divorced")
+# The family story's own fields (kit/data/story-schema.json): a ribbon card and a tree node. The card's schema
+# REQUIRES every field, so a living card carries them all, and the rule is that the date-bearing ones are empty and
+# nothing in any of them is a number. A living place on a story map would carry coordinates and is not allowed:
+# the living are marked there by a country with no flag on it.
+STORY_FILE = "story.json"
+STORY_LIVING_KEYS = {"id", "name", "living", "minor", "person", "years", "origin", "originGrade", "spouse",
+                     "spouseOrigin", "atPlace", "atYear", "chapter", "spousePerson", "spouseLiving", "title", "glyph"}
+STORY_EMPTY = ("years", "atYear")
 # What a living person's page may have a heading for. (PersonTree draws its own
 # h3s; these are the ones this archive's template and the kit's produce.)
 HEADINGS = {"Where", "Family", "Parents", "Married", "Brothers and sisters",
@@ -308,10 +319,18 @@ def rule_data(data, extra_files=()):
             continue
         hits = []
         walk_living(v, os.path.basename(fpath), hits)
+        story = os.path.basename(fpath) == STORY_FILE
         for path, d in hits:
-            extra = set(d) - LIVING_KEYS - SPOUSE_KEYS
+            extra = set(d) - LIVING_KEYS - SPOUSE_KEYS - (STORY_LIVING_KEYS if story else set())
             if extra:
                 fails.append(("data-keys", f"{path}: key(s) {sorted(extra)} on a living record"))
+            if story:
+                for k in STORY_EMPTY:
+                    if d.get(k):
+                        fails.append(("data-story", f"{path}: {k} is not empty on a living record"))
+                for k, x in d.items():
+                    if isinstance(x, (int, float)) and not isinstance(x, bool) or isinstance(x, str) and re.search(r"\d", x):
+                        fails.append(("data-story", f"{path}: {k} holds a number on a living record"))
     return fails, n
 
 
@@ -762,6 +781,20 @@ def controls(data, world):
     expect("not-empty", "an empty build", d, w)
     d, w = clone(); w["sitemap"] = ""
     expect("control", "an empty sitemap", d, w)
+    # the family story: a living card with a year, and a living map place with coordinates
+    import tempfile
+    for label, rec, rule in (
+            ("a year on a living story card", {"name": "X", "years": "", "atYear": "1999", "living": True}, "data-story"),
+            ("a number in a living story card's text", {"name": "X", "title": "born 1999", "living": True}, "data-story"),
+            ("coordinates on a living story place", {"id": "x", "name": "X", "lat": 1.0, "lon": 2.0, "living": True}, "data-keys")):
+        with tempfile.TemporaryDirectory() as td:
+            fp = os.path.join(td, STORY_FILE)
+            with open(fp, "w", encoding="utf-8") as f:
+                json.dump({"ribbon": {"cards": [rec]}}, f)
+            fails, _ = rule_data(data, [fp])
+        good = any(f[0] == rule for f in fails)
+        ok &= good
+        lines.append(f"  {'caught ' if good else 'MISSED '} {rule:13s} {label}")
     return ok, lines
 
 

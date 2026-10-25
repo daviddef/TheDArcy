@@ -1,0 +1,2661 @@
+{
+ "_note": "The family story (kit/docs/story.md), written by hand from the archive's own pages. Every paragraph is graded by its weakest claim; the world paragraphs are sourced; the living are named with relationships and towns only. The fact ledger and the fact-check that stand behind it were written alongside it and are not part of the site.",
+ "title": "Where They Were Sent",
+ "eyebrow": "The story · six generations · Chatham to Brisbane",
+ "dek": "The line this archive follows, told once as a short book: an engineer at Chatham, a major on a convict ship, a schoolboy of Parramatta, a railway clerk, a sergeant who married nine weeks before he sailed, and a boy who lost his father at nine. Under every chapter, a small family tree and the papers it rests on; four maps follow the moves. Every paragraph says how well it is known.",
+ "cardsNote": "The document this chapter rests on, and what it cannot say.",
+ "prologue": {
+  "title": "Start here",
+  "paragraphs": [
+   {
+    "id": "p-1",
+    "grade": "doc",
+    "text": "A first telling, and corrections are welcome. This is the short version of a long archive: the D'Arcy line of Brisbane, told in order from the first paper that names it to the generation now living. It is meant to be read in one sitting. [The Spine](/direct-line/) sets out the same men as a table, and every chapter here ends with the papers it rests on.",
+    "evidence": [
+     {
+      "href": "/direct-line/",
+      "why": "The Spine: the line generation by generation, with the archive's standing for each"
+     },
+     {
+      "href": "/corrections/",
+      "why": "Corrections"
+     }
+    ]
+   },
+   {
+    "id": "p-2",
+    "grade": "doc",
+    "text": "Everything said here about a person comes from a paper the archive holds, or is marked when it does not. A small mark ends each paragraph: **doc** where a document says so, **inf** where the archive reasons from documents, **lore** where it rests on the family's memory or its tree. A paragraph takes the mark of its weakest sentence, and the mark links to the evidence.",
+    "evidence": [
+     {
+      "href": "/method/",
+      "why": "Method: how every claim carries its confidence"
+     }
+    ]
+   },
+   {
+    "id": "p-3",
+    "grade": "doc",
+    "text": "Some passages are set in under the words *In the world around them*. They describe the place and the years, never what these particular people did or saw, and their marks say where the detail comes from: **archive** for this archive's own pages, **history** for general history, listed at the foot of the page.",
+    "evidence": [
+     {
+      "href": "/timeline/",
+      "why": "The Timeline: the state this family lived under"
+     }
+    ]
+   },
+   {
+    "id": "p-4",
+    "grade": "doc",
+    "text": "The family's tree climbs fifteen generations, to a castle in Yorkshire. This archive defends six of them. The first chapter tells the rest as what it is, a family's story about itself, and the book proper begins in January 1776 with a second lieutenant of engineers whose father nobody has found.",
+    "evidence": [
+     {
+      "href": "/hornby/",
+      "why": "The Hornby Claim: fifteen generations asserted, six documented"
+     }
+    ]
+   }
+  ]
+ },
+ "ribbon": {
+  "note": "One card for each generation: the person, where they came from, the place a document later finds the household where it differs, and the spouse and where the spouse came from. The outline carries the evidence for where the person came from: solid documented, dashed inferred, dotted family memory. The living carry no dates.",
+  "cards": [
+   {
+    "name": "Robert D'Arcy",
+    "years": "by 1758–1827",
+    "origin": "Yorkshire, by family tradition",
+    "originGrade": "lore",
+    "spouse": "Jean Ward",
+    "spouseOrigin": "of South Leith",
+    "atPlace": "Chatham",
+    "atYear": "1805",
+    "living": false,
+    "chapter": "engineer",
+    "person": "robert-d-arcy",
+    "spousePerson": "jean-ward",
+    "title": "Second lieutenant of engineers 1776; Chatham, where he was buried in 1827. Where he came from is the family's story, not a paper's"
+   },
+   {
+    "name": "George Pitt D'Arcy",
+    "years": "1780–1849",
+    "origin": "Portsmouth or the West Indies",
+    "originGrade": "lore",
+    "spouse": "Maria",
+    "spouseOrigin": "place not known",
+    "atPlace": "Parramatta",
+    "atYear": "1829",
+    "living": false,
+    "chapter": "major",
+    "person": "george-pitt-d-arcy-1783",
+    "spousePerson": "maria-catherine-whiite",
+    "title": "Born 1780 or 1783, the tree offering Portsmouth or the West Indies; Major of the 39th; at Parramatta from 1826"
+   },
+   {
+    "name": "George Lindsay D'Arcy",
+    "years": "1829–1901",
+    "origin": "Parramatta",
+    "originGrade": "doc",
+    "spouse": "Eliza Keeling",
+    "spouseOrigin": "of London",
+    "atPlace": "Brisbane",
+    "atYear": "1863",
+    "living": false,
+    "chapter": "scholar",
+    "person": "george-lindsay-d-arcy",
+    "spousePerson": "eliza-keeling",
+    "title": "Born at Parramatta, christened at Sydney 1829; in Brisbane from 1863"
+   },
+   {
+    "name": "George Pitt D'Arcy",
+    "years": "1864–1931",
+    "origin": "Brisbane",
+    "originGrade": "doc",
+    "spouse": "Ida Kathleen Atkinson",
+    "spouseOrigin": "of Brisbane",
+    "atPlace": "Banyo",
+    "atYear": "1931",
+    "living": false,
+    "chapter": "railway",
+    "person": "george-pitt-d-arcy-1864",
+    "spousePerson": "ida-kathleen-atkinson",
+    "title": "Born at Brisbane 1864, the first of the line born in Queensland; found dead at Banyo in 1931"
+   },
+   {
+    "name": "Lindesay Atkinson D'Arcy",
+    "years": "1892–1936",
+    "origin": "Brisbane",
+    "originGrade": "doc",
+    "spouse": "Ivy Miriam Sneyd",
+    "spouseOrigin": "of Boulia",
+    "atPlace": "Clayfield",
+    "atYear": "1936",
+    "living": false,
+    "chapter": "sergeant",
+    "person": "lindesay-atkinson-d-arcy",
+    "spousePerson": "ivy-miriam-sneyd",
+    "title": "Born at Brisbane 1892; of Botany Street, Clayfield, when he died in 1936"
+   },
+   {
+    "name": "Kenneth Lindsay D'Arcy",
+    "years": "1927–2010",
+    "origin": "Sandgate",
+    "originGrade": "doc",
+    "spouse": "Audrey \"Dell\" Murdoch",
+    "spouseOrigin": "of Toowoomba",
+    "atPlace": "",
+    "atYear": "",
+    "living": false,
+    "chapter": "ken",
+    "person": "kenneth-lindsay-d-arcy",
+    "spousePerson": "audrey-dell-murdoch",
+    "title": "Born at Sandgate 1927; Brisbane, Townsville, Perth and Brisbane again"
+   },
+   {
+    "name": "Ian Kenneth D'Arcy",
+    "years": "",
+    "origin": "Brisbane, Australia",
+    "originGrade": "lore",
+    "spouse": "Giuseppina Falco",
+    "spouseOrigin": "of Benevento, Italy",
+    "atPlace": "",
+    "atYear": "",
+    "living": true,
+    "chapter": "living"
+   },
+   {
+    "name": "Cristina Adele D'Arcy",
+    "years": "",
+    "origin": "Brisbane, Australia",
+    "originGrade": "lore",
+    "spouse": "David Defranceski",
+    "spouseOrigin": "of Johannesburg, South Africa",
+    "atPlace": "",
+    "atYear": "",
+    "living": true,
+    "chapter": "living"
+   }
+  ]
+ },
+ "chapters": [
+  {
+   "id": "origin",
+   "numeral": "I",
+   "title": "A castle nobody can reach",
+   "place": "Hornby, in the North Riding, as the family tells it",
+   "years": "1565–1776",
+   "generation": [
+    9
+   ],
+   "paragraphs": [
+    {
+     "id": "o-1",
+     "grade": "lore",
+     "text": "In December 1866 *Notes and Queries* printed a question nobody ever answered. Who, a correspondent asked, was the grandfather of Major-General Robert d'Arcy of the Royal Engineers, who had died at Chatham in 1827? He set down what the family said: that a Colonel d'Arcy, «a branch of the Holderness family from Yorkshire», had commanded a regiment in the American war and been killed, leaving two sons, Robert and Constantine; and that on the voyage to America the family had been wrecked, and had «lost all their baggage and papers, which, it is believed, would have proved their noble descent».",
+     "evidence": [
+      {
+       "href": "/hornby/",
+       "why": "Notes and Queries, 3rd Series, vol. X, 1 December 1866, p. 432, quoted on The Hornby Claim"
+      }
+     ]
+    },
+    {
+     "id": "o-2",
+     "grade": "doc",
+     "text": "It is the oldest written form of the family's story, a hundred and fifty-nine years older than the family tree, so neither the tree nor any website invented it. The man who printed it was asking, not asserting. And the tradition can be partly tested. The Army Lists of 1775 to 1783 have a Robert in the Corps of Engineers and a Constantine among the first lieutenants of the Royal Artillery, as it says. They have no Colonel D'Arcy commanding a regiment. The tradition is right about the two men who can be checked, and unsupported about the one man it needs.",
+     "evidence": [
+      {
+       "href": "/hornby/",
+       "why": "The four Army Lists read entire, and what they hold"
+      }
+     ]
+    },
+    {
+     "id": "o-3",
+     "grade": "lore",
+     "text": "The family's tree goes further than the tradition did. It carries the line up fifteen generations, through a [Thomas (Francis) D'Arcy](person:thomas-francis-d-arcy) said to have been born at St James's Palace, to the Darcy Earls of Holderness, and on to a Thomas Darcy of Hornby Castle in the North Riding, born in 1565. A note against Robert's name in the same tree says only that he was «thought to be the illegitim[ate]» son of an earl. The note points at the fourth Earl; the tree's own structure hangs him from the third, through a man given two birth years sixty-nine years apart. At most one of these can be right, and neither carries a document.",
+     "evidence": [
+      {
+       "href": "/hornby/",
+       "why": "The tree's note on Robert, and the two incompatible joins"
+      },
+      {
+       "href": "/direct-line/#gen-9",
+       "why": "The Spine: generation nine and above, as the tree carries them"
+      }
+     ]
+    },
+    {
+     "id": "o-4",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The Darcy Earls of Holderness are among the best-recorded families in England. The earldom ended in 1778 with the fourth Earl, whose two sons died as infants, one of them born and dead in 1750, and whose heir was a daughter. That is why an illegitimate son has to be invoked at all: a legitimate descent from the fourth Earl is excluded by the peerage record.",
+     "evidence": [
+      {
+       "href": "/hornby/",
+       "why": "The Hornby Claim: the earldom ended in 1778, in a daughter",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "o-5",
+     "grade": "doc",
+     "text": "What can be searched has been. No English baptism of a Robert D'Arcy born between 1741 and 1761 has been found in FindMyPast's English record sets. Seventeen newspapers carried his death in 1827 and not one gives a father, a seat or a county. The army's own book of serving officers prints a man's schooling and parentage where it has them, and for him prints none. His will, proved in the Prerogative Court of Canterbury in July 1827, is located and has not yet been read. It is the best unread paper about him.",
+     "evidence": [
+      {
+       "href": "/hornby/",
+       "why": "The baptism sweep, and the will PROB 11/1728/64"
+      },
+      {
+       "href": "/obituary/",
+       "why": "The seventeen notices of 1827"
+      },
+      {
+       "href": "/the-corps/",
+       "why": "The Royal Military Calendar of 1820, entry 607"
+      }
+     ]
+    },
+    {
+     "id": "o-6",
+     "grade": "inf",
+     "text": "The name settles nothing either. *D'Arcy* was coined twice over: in Normandy as *d'Arcy*, of Arcy, the name of a place, and in Ireland as *Ó Dorchaidhe*, from *dorcha*, dark. There is no single founding D'Arcy family, and clerks added and dropped the apostrophe for four hundred years. So this book does not begin at Hornby. It begins where the papers begin, in January 1776, and the castle stays where the family put it: in the story they told about themselves.",
+     "evidence": [
+      {
+       "href": "/name/",
+       "why": "The Name"
+      },
+      {
+       "href": "/hornby/",
+       "why": "The name is a hint, not a proof"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "hill",
+    "thread": "robert-0",
+    "note": "Everything above Robert is the family tree's, so it is dotted, and no paper joins him to it.",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "earls",
+        "name": "The Darcy Earls of Holderness",
+        "grade": "lore",
+        "years": "earldom ended 1778"
+       }
+      ]
+     },
+     {
+      "kind": "gap",
+      "text": "the tree's join: no paper"
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "thomas",
+        "name": "Thomas (Francis) D'Arcy",
+        "grade": "lore",
+        "years": "said born 1681 or 1710",
+        "person": "thomas-francis-d-arcy"
+       },
+       {
+        "id": "margaret",
+        "name": "Margaret?",
+        "grade": "lore",
+        "years": "the tree's"
+       }
+      ]
+     },
+     {
+      "kind": "gap",
+      "text": "no paper joins them"
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "robert-0",
+        "name": "Robert D'Arcy",
+        "grade": "doc",
+        "years": "by 1758–1827, engineer",
+        "person": "robert-d-arcy"
+       },
+       {
+        "id": "const-0",
+        "name": "Constantine",
+        "grade": "lore",
+        "years": "the tree's brother for him"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1866 · Notes and Queries",
+     "title": "A question nobody answered",
+     "text": "Can any of your correspondents inform me who was the grandfather of Major-General Robert d'Arcy, R.E., who died Commandant of Chatham in 1827?",
+     "source": "Notes and Queries, 3rd Series, vol. X, 1 December 1866, p. 432",
+     "hardLimit": "The tradition it records names a colonel the Army Lists do not have, and blames a shipwreck for the missing papers."
+    }
+   ],
+   "papers": [
+    {
+     "title": "The Hornby Claim",
+     "href": "/hornby/",
+     "why": "the case, in full"
+    },
+    {
+     "title": "How Far Back",
+     "href": "/how-far-back/"
+    },
+    {
+     "title": "The Name",
+     "href": "/name/"
+    },
+    {
+     "title": "The Spine, generations nine to fifteen",
+     "href": "/direct-line/#gen-9"
+    },
+    {
+     "title": "Thomas (Francis) D'Arcy",
+     "href": "person:thomas-francis-d-arcy"
+    }
+   ]
+  },
+  {
+   "id": "engineer",
+   "numeral": "II",
+   "title": "The engineer",
+   "place": "Portsea · Minorca · Barbados · Chatham",
+   "years": "1776–1827",
+   "generation": [
+    8
+   ],
+   "paragraphs": [
+    {
+     "id": "e-1",
+     "grade": "doc",
+     "text": "The Army List of 1781 prints the junior engineers in a column, each name with the date of his seniority, carried down the page in ditto marks. Inside a block headed 17 January 1776 stands ROBERT D'ARCY, Practitioner Engineer and Second Lieutenant. It is the first paper that names him. The army's own book of 1820 gives the same day, and so does the roll of the Corps printed in 1898. He came in on the bottom rung of a slow corps, and no paper says where he came from.",
+     "evidence": [
+      {
+       "href": "/the-corps/",
+       "why": "The Army Lists of 1778 and 1781; the Royal Military Calendar, entry 607; Connolly's Roll, entry 203"
+      }
+     ]
+    },
+    {
+     "id": "e-2",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "Until 1855 the engineers answered not to the War Office but to the Board of Ordnance, which kept its own books and in 1776 did not print its engineers' commissions in the Gazette. By a warrant of April 1787 the Corps of Engineers became the Corps of Royal Engineers.",
+     "evidence": [
+      {
+       "href": "/the-corps/",
+       "why": "The Gazette's silence, and the warrant of 23 April 1787",
+       "kind": "archive"
+      },
+      {
+       "href": "/hornby/",
+       "why": "The Board of Ordnance records",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "e-3",
+     "grade": "inf",
+     "text": "On 21 June 1779 he married [Jean Ward](person:jean-ward) at St Mary's, Portsea. She was a Scot. The South Leith register christened a Jean Ward on 19 July 1754, daughter of Joseph Ward and Martha Gairden, and the archive takes her for the bride: the parish and the year are the ones the family always gave, and the child she and Robert brought to the font at Portsea on 19 March 1780 was a boy called Joseph, her father's name. That entry, Joseph, son of Robert and Jean, is the first record of this family in England, and the only paper anywhere that names Robert as somebody's father. How a Leith girl came to marry in a Hampshire church, no paper says.",
+     "evidence": [
+      {
+       "href": "/jean-ward/",
+       "why": "South Leith, 19 July 1754: the baptism, and why it is taken for her"
+      },
+      {
+       "href": "/portsea/",
+       "why": "Portsea St Mary: the marriage of 1779 and Joseph's baptism of 1780"
+      }
+     ]
+    },
+    {
+     "id": "e-4",
+     "register": "world",
+     "worldSource": "history",
+     "text": "South Leith was the parish of the port of Leith, Edinburgh's harbour on the Firth of Forth. Portsea was the dockyard town of Portsmouth, where the Royal Navy kept its principal yard.",
+     "evidence": [
+      {
+       "href": "#world-H1",
+       "why": "Note H1 at the foot of the page",
+       "kind": "history"
+      },
+      {
+       "href": "#world-H2",
+       "why": "Note H2 at the foot of the page",
+       "kind": "history"
+      }
+     ]
+    },
+    {
+     "id": "e-5",
+     "grade": "doc",
+     "text": "Then the corps sent him away. In 1781 he was one of six engineers at the siege of Fort St Philip's on Minorca, where the Duc de Crillon had landed in August and the garrison was about three thousand. By the middle of the decade he was in Barbados: the parish of St Michael, Bridgetown, christened his son Constantine on 18 February 1786 and his daughter Jane on 17 March 1788, both to Robert and Jane, and the Corps' own station list puts him there. He was a first lieutenant from 1784 and a captain from 1793. It was, the archive says, a slow career.",
+     "evidence": [
+      {
+       "href": "/the-corps/",
+       "why": "Porter's History of the Corps, the station list, and the Royal Military Calendar"
+      },
+      {
+       "href": "/robert-family/",
+       "why": "The Barbados christenings"
+      }
+     ]
+    },
+    {
+     "id": "e-6",
+     "grade": "inf",
+     "text": "Of the sons, [Joseph](person:joseph-d-arcy) went into the Royal Artillery and later spent five years in Persia. [George Pitt](person:george-pitt-d-arcy-1783), who carries this line, went into the 39th Foot. [Constantine](person:constantine-d-arcy-1786) followed his father into the engineers. A daughter, Margarett Maria Isabella, married at Chatham in 1806 with Joseph signing as witness, and three more, Jane, Catherine and Charlotte, were keeping house together at Brighton in 1841, and died there. That George Pitt was one of these sons is the archive's reasoning from a newspaper, set out in the next chapter.",
+     "evidence": [
+      {
+       "href": "/robert-family/",
+       "why": "Robert and Jean's family, child by child"
+      },
+      {
+       "href": "/george-pitt/",
+       "why": "The notice of 1805"
+      }
+     ]
+    },
+    {
+     "id": "e-7",
+     "grade": "lore",
+     "text": "The family's tree gives the couple ten children in fourteen years. Among them are two girls called Anna Maria, the first dead at five months in 1791 and the second at seven in 1800, known from the tree alone; and a Richard, whom the archive can place only as a man of fifty-seven living in Joseph's house in 1841.",
+     "evidence": [
+      {
+       "href": "/robert-family/",
+       "why": "The two Anna Marias and Richard, marked as the tree's"
+      }
+     ]
+    },
+    {
+     "id": "e-8",
+     "grade": "doc",
+     "text": "By 1805 he was a lieutenant-colonel, and the Kentish Gazette called him «Col. D'Arcy, chief engineer of Chatham lines». It said so in reporting the death of his son. Constantine, a first lieutenant of the Royal Engineers at nineteen, was buried at Chatham on 9 May 1805 with military honours. The Ordnance notice that had made the father lieutenant-colonel had promoted the son in the same column.",
+     "evidence": [
+      {
+       "href": "/the-corps/",
+       "why": "The Kentish Gazette, 14 May 1805, and the Ordnance notice"
+      },
+      {
+       "href": "/chatham/",
+       "why": "The Chatham burial register"
+      }
+     ]
+    },
+    {
+     "id": "e-9",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The Chatham Lines were the bastioned fortifications thrown up to defend the dockyard and the Medway: the largest engineering work in Kent.",
+     "evidence": [
+      {
+       "href": "/the-corps/",
+       "why": "A post, not just a rank",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "e-10",
+     "grade": "doc",
+     "text": "He served abroad again: in Portugal and on Minorca in 1798, by the Corps' roll, then as commanding engineer at Copenhagen in 1807 and with the expedition to Walcheren in 1809. At the siege of Flushing that August his superior, Colonel Fyers, was wounded, and ordered the senior engineer in the trenches to send him a written report every morning. The Corps' historian tells what followed, from Fyers's brigade-major. «Colonel D., an old man beyond sixty», refused; said it «was all nonsense»; denied that a man he had once been senior to could demand it; and was put under arrest. Then he thought better of it, apologised, «and ever after furnished his report». The historian's footnote names him. It is the only glimpse of his temper any paper gives.",
+     "evidence": [
+      {
+       "href": "/the-corps/",
+       "why": "Whitworth Porter, History of the Corps of Royal Engineers (1889): Copenhagen, Walcheren, and the arrest"
+      }
+     ]
+    },
+    {
+     "id": "e-11",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The archive calls Walcheren the worst British expedition of the war. Flushing was besieged in August 1809, and the engineers worked in its trenches.",
+     "evidence": [
+      {
+       "href": "/the-corps/",
+       "why": "Walcheren, 1809",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "e-12",
+     "grade": "doc",
+     "text": "He rose to colonel in 1813 and to major-general. Jean died at Chatham in March 1823; the register gives her age as sixty-six, two years adrift of the baptism, and a Hampshire paper called her «the wife of Major-Gen. D'Arcy, of the Royal Engineers». He died at Chatham on 13 May 1827 and was buried at St Mary's on the 19th, entry 1571, aged seventy-six. «On Saturday Major-General D'Arcy … was interred at Chatham with military honours», the Kent Herald reported. Seventeen papers in three countries carried his death. Not one gave his first name, or named a single relative.",
+     "evidence": [
+      {
+       "href": "/chatham/",
+       "why": "Chatham St Mary: Jean's burial and his"
+      },
+      {
+       "href": "/obituary/",
+       "why": "The seventeen notices"
+      },
+      {
+       "href": "/the-corps/",
+       "why": "The career, step by step"
+      }
+     ]
+    },
+    {
+     "id": "e-13",
+     "grade": "inf",
+     "text": "That age on the burial register is where the family tree's birth year of 1751 comes from: arithmetic on a mourner's estimate, not a birth record. His own page in this archive says he was born by 1758, and probably earlier. What he was, the papers say in full. Who he was, they do not.",
+     "evidence": [
+      {
+       "href": "person:robert-d-arcy",
+       "why": "Robert D'Arcy: born by 1758, and why"
+      },
+      {
+       "href": "/hornby/",
+       "why": "Where the 1751 comes from"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "works",
+    "thread": "gpd-1",
+    "note": "George Pitt's line is dashed: no paper names Robert as his father. The two Anna Marias are the tree's alone, and Richard is placed by a census.",
+    "rows": [
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "robert",
+        "name": "Robert D'Arcy",
+        "grade": "doc",
+        "years": "by 1758–1827, Royal Engineers",
+        "person": "robert-d-arcy"
+       },
+       {
+        "id": "jean",
+        "name": "Jean Ward",
+        "grade": "doc",
+        "years": "1754–1823, of South Leith",
+        "person": "jean-ward"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "joseph",
+        "name": "Joseph",
+        "grade": "doc",
+        "years": "1780–1848, Royal Artillery",
+        "person": "joseph-d-arcy"
+       },
+       {
+        "id": "margarett",
+        "name": "Margarett Maria Isabella",
+        "grade": "doc",
+        "years": "1781–1843",
+        "person": "margaret-maria-isabella-d-arcy"
+       },
+       {
+        "id": "gpd-1",
+        "name": "George Pitt",
+        "grade": "inf",
+        "years": "1780–1849, 39th Foot",
+        "person": "george-pitt-d-arcy-1783"
+       },
+       {
+        "id": "richard",
+        "name": "Richard",
+        "grade": "inf",
+        "years": "b. 1784",
+        "person": "richard-d-arcy"
+       },
+       {
+        "id": "constantine",
+        "name": "Constantine",
+        "grade": "doc",
+        "years": "1786–1805",
+        "person": "constantine-d-arcy-1786"
+       },
+       {
+        "id": "jane",
+        "name": "Jane",
+        "grade": "doc",
+        "years": "1787–1875",
+        "person": "jane-d-arcy"
+       },
+       {
+        "id": "catherine",
+        "name": "Catherine",
+        "grade": "doc",
+        "years": "1789–1876",
+        "person": "catherine-d-arcy-1789"
+       },
+       {
+        "id": "anna1",
+        "name": "Anna Maria",
+        "grade": "lore",
+        "years": "1791–1791",
+        "person": "anna-maria-d-arcy-1791"
+       },
+       {
+        "id": "anna2",
+        "name": "Anna Maria",
+        "grade": "lore",
+        "years": "1792–1800",
+        "person": "anna-maria-d-arcy-1792"
+       },
+       {
+        "id": "charlotte",
+        "name": "Charlotte",
+        "grade": "doc",
+        "years": "1794–1869",
+        "person": "charlotte-d-arcy"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1809 · Flushing",
+     "title": "All nonsense",
+     "text": "The first morning, Colonel D., an old man beyond sixty, refused compliance, saying he had other things to do, and no solicitation could prevail on him to write a single line.",
+     "source": "Whitworth Porter, History of the Corps of Royal Engineers (1889), from Colonel Fyers's brigade-major; Porter's footnote: «Colonel D'Arcy»",
+     "hardLimit": "An aside recalled years later by a man complaining about him. «Beyond sixty» misses the age on his burial register by a year or two."
+    },
+    {
+     "label": "1827 · Chatham",
+     "title": "A burial, and an age",
+     "text": "Robert D'Arcy, of Chatham, buried 19 May 1827, aged 76.",
+     "source": "Burial register, St Mary, Chatham, entry 1571",
+     "hardLimit": "A burial names nobody but the dead. The age is a mourner's estimate, and it is the only source of the year 1751."
+    }
+   ],
+   "papers": [
+    {
+     "title": "The Corps: Robert's career",
+     "href": "/the-corps/"
+    },
+    {
+     "title": "Robert and Jean's family",
+     "href": "/robert-family/"
+    },
+    {
+     "title": "Chatham, the Corps' parish",
+     "href": "/chatham/"
+    },
+    {
+     "title": "The obituary, 1827",
+     "href": "/obituary/"
+    },
+    {
+     "title": "South Leith",
+     "href": "/jean-ward/"
+    },
+    {
+     "title": "Two years of Portsea",
+     "href": "/portsea/"
+    },
+    {
+     "title": "Robert D'Arcy",
+     "href": "person:robert-d-arcy"
+    }
+   ]
+  },
+  {
+   "id": "major",
+   "numeral": "III",
+   "title": "The major in the cabin",
+   "place": "The Peninsula · Ireland · Chatham · Parramatta",
+   "years": "1794–1849",
+   "generation": [
+    7
+   ],
+   "paragraphs": [
+    {
+     "id": "m-1",
+     "grade": "doc",
+     "text": "On 31 March 1826 St Mary's, Chatham, christened a girl called Charlotte, eleven months old. Against the father the entry reads «[George Pitt D'Arcy](person:george-pitt-d-arcy-1783), Bt: Major 39th Foot», against the mother Maria, and for their abode, Chatham. Eight days later the surgeon of the convict ship *England* received aboard «a detachment of the 39th regt. of foot commanded by [George Pitt D'Arcy](person:george-pitt-d-arcy-1783), B. Major, consisting of 39 men (including 2 sergeants and 3 corporals), 6 women and 7 children». They christened the baby, and then they sailed.",
+     "evidence": [
+      {
+       "href": "/chatham/",
+       "why": "Charlotte's baptism, Chatham St Mary, 31 March 1826"
+      },
+      {
+       "href": "/australia/",
+       "why": "The surgeon's journal, ADM 101/26/1, 8 April 1826"
+      }
+     ]
+    },
+    {
+     "id": "m-2",
+     "grade": "inf",
+     "text": "He was almost certainly Robert's son, though no paper names his father. In September 1805 a Wiltshire paper announced that «Captain George d'Arcy», son of «Lieut. Colonel D'Arcy», had married «Miss Ludlam, of Guernsey». Robert was by then a lieutenant-colonel of engineers. The notice gives a rank and not a name, and the archive calls it a very strong identification and not a proof.",
+     "evidence": [
+      {
+       "href": "/george-pitt/",
+       "why": "The Salisbury and Winchester Journal, 23 September 1805"
+      }
+     ]
+    },
+    {
+     "id": "m-3",
+     "grade": "lore",
+     "text": "When he was born is not settled. The family's tree says 18 February 1783, at «Portsmouth, Hampshire, England or West Indies», and the «or» is the tree admitting it does not know. Every notice of his death says he was sixty-nine, which puts his birth about 1780. The army's own book has him an ensign of the 39th on 25 August 1794; if the tree is right, he was eleven.",
+     "evidence": [
+      {
+       "href": "/george-pitt/",
+       "why": "The Royal Military Calendar, entry 2098, and the problem it hands over"
+      },
+      {
+       "href": "person:george-pitt-d-arcy-1783",
+       "why": "Born 1780 or 1783: unresolved"
+      }
+     ]
+    },
+    {
+     "id": "m-4",
+     "grade": "doc",
+     "text": "He made his life in that one regiment: lieutenant in 1795, captain in 1803, brevet major in November 1813. The Peninsular War roll has him with the 39th in 1808. His obituary lists his actions from Vitoria in June 1813 to Toulouse in April 1814, and at Orthes, on 27 February 1814, the command of the regiment fell to him when its lieutenant-colonel was wounded early in the action. He was given a gold medal for it. «Singular to relate», the obituary says, it was sent by mistake to the wounded colonel, and took four years to reach him.",
+     "evidence": [
+      {
+       "href": "/george-pitt/",
+       "why": "His commissions, from the army's own book"
+      },
+      {
+       "href": "/australia/",
+       "why": "The actions, and the medal"
+      }
+     ]
+    },
+    {
+     "id": "m-5",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The 39th Foot was in the Peninsula at Talavera, Busaco, Albuera, the Pyrenees and Toulouse.",
+     "evidence": [
+      {
+       "href": "/jean-ward/",
+       "why": "Peninsular War, British Army Officers 1808–1814",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "m-6",
+     "grade": "inf",
+     "text": "There were two wives. Miss Ludlam was, very probably, the mother of [Frederick Robert](person:frederick-robert-d-arcy), christened at Chatham on 2 July 1811 to George and Mary; he grew up to be a surveyor, and helped chart Port Phillip Bay. The second wife was Maria, known from the papers only by her first name: as the mother at Chatham in 1826, and again at Sydney in 1829.",
+     "evidence": [
+      {
+       "href": "/chatham/",
+       "why": "Two children of one man, fifteen years apart, by two mothers"
+      },
+      {
+       "href": "/australia/",
+       "why": "Frederick Robert, the surveyor"
+      }
+     ]
+    },
+    {
+     "id": "m-7",
+     "grade": "lore",
+     "text": "The family's tree calls her [Maria White](person:maria-catherine-whiite) and marries them in County Wicklow about 1819. The newspapers put the major in Ireland with the 39th in 1820 and 1822, which is the right country at nearly the right time. The marriage itself has not been found.",
+     "evidence": [
+      {
+       "href": "/george-pitt/",
+       "why": "Maria White, and why she cannot be found"
+      }
+     ],
+     "tbc": "The Wicklow marriage is the tree's; the archive has written to the Representative Church Body Library."
+    },
+    {
+     "id": "m-8",
+     "grade": "doc",
+     "text": "The journal of the *England*, kept by her surgeon George Thomson, follows the voyage almost day by day. A hundred and forty-eight convicts came aboard from the hulks at Woolwich, and Mrs D'Arcy and family were in the cabin. On 17 May the convicts broke into the major's luggage in the fore hold: a crate of dinner ware and a box of soup. Later there was a scare of mutiny, three knives traced to one prisoner, and «Major D'Arcy gave the necessary orders to the guard how to act in case of an alarm». On 16 August the surgeon noted that the major had recovered from his attack of the gout. On 18 September 1826 the ship came into Port Jackson after a hundred and thirty-five days, with no deaths.",
+     "evidence": [
+      {
+       "href": "/australia/",
+       "why": "The surgeon's journal, the voyage day by day"
+      }
+     ]
+    },
+    {
+     "id": "m-9",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "In the convict colony of New South Wales the regiments of the line did guard duty. The 39th was one of them; the 4th (King's Own), which brought another of the families in this book out in 1832, was another.",
+     "evidence": [
+      {
+       "href": "/emigrations/",
+       "why": "How They Got Here",
+       "kind": "archive"
+      },
+      {
+       "href": "/timeline/",
+       "why": "Convict New South Wales, 1788–1840",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "m-10",
+     "grade": "doc",
+     "text": "[George Lindsay](person:george-lindsay-d-arcy) was born at Parramatta on 24 August 1829. He was christened at St James's, Sydney, on 5 November, «father George Pitt Darcy, mother Maria». It is the entry that joins the next chapter to this one.",
+     "evidence": [
+      {
+       "href": "/australia/",
+       "why": "The children's birthplaces, and St James's, 1829"
+      }
+     ]
+    },
+    {
+     "id": "m-11",
+     "grade": "doc",
+     "text": "Of the next twenty years in the colony the archive holds nothing: no house, no post, no letter. Then, on Sunday morning, 22 July 1849, the major died at Parramatta, at the house of a Mr Walford. The notice ran in Sydney, Maitland and Hobart. A coroner's jury found «gout which had flown to the head, and caused apoplexy»: the complaint the ship's surgeon had noted twenty-three years before.",
+     "evidence": [
+      {
+       "href": "/australia/",
+       "why": "Bell's Life in Sydney, 28 July 1849, and the inquest"
+      }
+     ]
+    },
+    {
+     "id": "m-12",
+     "grade": "inf",
+     "text": "The obituary called him «a brave and gallant soldier», and then its tone changed: «the canker of disappointment was at his heart's core, and his smile was too often only the shroud of buried hopes». He had «never injured anyone but himself». The archive reads that as a writer going carefully round something, most likely drink or debt or both, and says plainly that this is inference from tone and not a fact. Where at Parramatta he was buried is not established.",
+     "evidence": [
+      {
+       "href": "/australia/",
+       "why": "How the obituary is read, and what is not claimed"
+      },
+      {
+       "href": "person:george-pitt-d-arcy-1783",
+       "why": "Burial: not established"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "ship",
+    "thread": "gld-1",
+    "note": "Robert is dashed here: the 1805 notice gives the father's rank and not his name. Maria is the papers' Maria; her surname and her dates are the tree's.",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "robert-up",
+        "name": "Robert D'Arcy",
+        "grade": "inf",
+        "years": "by 1758–1827",
+        "person": "robert-d-arcy"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "gpd",
+        "name": "George Pitt D'Arcy",
+        "grade": "doc",
+        "years": "1780–1849, Major, 39th Foot",
+        "person": "george-pitt-d-arcy-1783"
+       },
+       {
+        "id": "maria",
+        "name": "Maria",
+        "grade": "lore",
+        "years": "the tree: White, 1800–1856",
+        "person": "maria-catherine-whiite"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "frederick",
+        "name": "Frederick Robert",
+        "grade": "doc",
+        "years": "1811–1875, by the first wife",
+        "person": "frederick-robert-d-arcy"
+       },
+       {
+        "id": "charlotte-m",
+        "name": "Charlotte",
+        "grade": "doc",
+        "years": "1825–1854",
+        "person": "charlotte-maria-d-arcy-1825"
+       },
+       {
+        "id": "catherine-m",
+        "name": "Catherine Maria",
+        "grade": "inf",
+        "years": "1827–1900",
+        "person": "catherine-maria-d-arcy"
+       },
+       {
+        "id": "gld-1",
+        "name": "George Lindsay",
+        "grade": "doc",
+        "years": "1829–1901",
+        "person": "george-lindsay-d-arcy"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1826 · the convict ship England",
+     "title": "Mrs D'Arcy and family in the cabin",
+     "text": "Received on board a detachment of the 39th regt. of foot commanded by George Pitt D'Arcy, B. Major, consisting of 39 men (including 2 sergeants and 3 corporals), 6 women and 7 children.",
+     "source": "Medical journal of the England, convict ship, 8 April 1826 (The National Archives, ADM 101/26/1)",
+     "hardLimit": "The journal names the major four times and his wife once, as Mrs D'Arcy. It does not give her name."
+    }
+   ],
+   "papers": [
+    {
+     "title": "Arrival, 1826",
+     "href": "/australia/"
+    },
+    {
+     "title": "Miss Ludlam of Guernsey",
+     "href": "/george-pitt/"
+    },
+    {
+     "title": "Chatham",
+     "href": "/chatham/"
+    },
+    {
+     "title": "How They Got Here",
+     "href": "/emigrations/"
+    },
+    {
+     "title": "George Pitt D'Arcy",
+     "href": "person:george-pitt-d-arcy-1783"
+    }
+   ]
+  },
+  {
+   "id": "scholar",
+   "numeral": "IV",
+   "title": "One of the oldest scholars",
+   "place": "Parramatta · California · Brisbane",
+   "years": "1829–1901",
+   "generation": [
+    6
+   ],
+   "paragraphs": [
+    {
+     "id": "s-1",
+     "grade": "doc",
+     "text": "In July 1901 the Brisbane *Telegraph* announced the death of «one of the oldest scholars of the famous King's School, New South Wales». It gave his birth at Parramatta in 1829 and his father, Major George Pitt D'Arcy of «the old 39th», and then a decade the family had lost: after school, pastoral work, and after that the California goldfields.",
+     "evidence": [
+      {
+       "href": "/brisbane/",
+       "why": "The Telegraph (Brisbane), 16 July 1901, p. 2"
+      }
+     ]
+    },
+    {
+     "id": "s-2",
+     "register": "world",
+     "worldSource": "history",
+     "text": "The King's School at Parramatta opened in 1832, the first school of its kind in the colony. Gold was found in California in 1848, and from 1849 ships left Sydney full of men going to the diggings.",
+     "evidence": [
+      {
+       "href": "#world-H3",
+       "why": "Note H3 at the foot of the page",
+       "kind": "history"
+      },
+      {
+       "href": "#world-H4",
+       "why": "Note H4 at the foot of the page",
+       "kind": "history"
+      }
+     ]
+    },
+    {
+     "id": "s-3",
+     "grade": "doc",
+     "text": "No paper the archive holds says when he went to California, how long he stayed, or what he found. The obituary goes straight on: he came to Queensland in 1863, took a position in the Colonial Secretary's Office, and held it until his death thirty-eight years later.",
+     "evidence": [
+      {
+       "href": "/brisbane/",
+       "why": "The obituary of 1901"
+      }
+     ]
+    },
+    {
+     "id": "s-4",
+     "register": "world",
+     "worldSource": "history",
+     "text": "Moreton Bay had begun as a penal settlement and was opened to free settlers in 1842. In December 1859 Queensland was separated from New South Wales, with Brisbane as its capital.",
+     "evidence": [
+      {
+       "href": "#world-H5",
+       "why": "Note H5 at the foot of the page",
+       "kind": "history"
+      }
+     ]
+    },
+    {
+     "id": "s-5",
+     "grade": "lore",
+     "text": "That same year, on 7 June 1863, he married [Eliza Keeling](person:eliza-keeling). The family's tree says she was born in London in 1837, and that she came into Moreton Bay on the ship *Flying Cloud* on 17 January 1863, five months before the wedding. The archive has not found her in the assisted-immigration index, and has not yet read a passenger list or a newspaper that puts her on that ship.",
+     "evidence": [
+      {
+       "href": "person:eliza-keeling",
+       "why": "Eliza Keeling: the tree's note"
+      },
+      {
+       "href": "/emigrations/",
+       "why": "How They Got Here: Eliza Keeling, not established"
+      }
+     ]
+    },
+    {
+     "id": "s-6",
+     "grade": "lore",
+     "text": "By the tree's count they had seven children between 1864 and 1873, and two boys died small, Robert Lindesay at three and William Arthur at two. The eldest, born on 5 May 1864, was named for the major: [George Pitt D'Arcy](person:george-pitt-d-arcy-1864).",
+     "evidence": [
+      {
+       "href": "person:george-lindsay-d-arcy",
+       "why": "George Lindsay D'Arcy: the children, as the tree gives them"
+      }
+     ]
+    },
+    {
+     "id": "s-7",
+     "grade": "doc",
+     "text": "His obituary says he left a widow, two sons in the Railway Department, a daughter married to T. E. Jones, an instructor at Brisbane Grammar School, and two unmarried daughters.",
+     "evidence": [
+      {
+       "href": "/brisbane/",
+       "why": "The obituary of 1901"
+      }
+     ]
+    },
+    {
+     "id": "s-7b",
+     "grade": "doc",
+     "text": "He was not the major's only son in Brisbane. His half-brother [Frederick Robert](person:frederick-robert-d-arcy), the surveyor, worked last in Queensland, and died at his house at Spring Hill on 19 September 1875: «eldest son of the late Major George Pitt D'Arcy, 39th Regiment, aged 63», as the Brisbane Courier put it. He is buried at Toowong. No paper the archive holds shows the two brothers together.",
+     "evidence": [
+      {
+       "href": "/australia/",
+       "why": "The Brisbane Courier, 21 September 1875, p. 2"
+      },
+      {
+       "href": "/brisbane/",
+       "why": "Where they are buried"
+      }
+     ]
+    },
+    {
+     "id": "s-8",
+     "grade": "lore",
+     "text": "One more account of him survives as a copy of a newspaper report in the family's tree. The archive prints it as family testimony, damaged in the copying, and not as a record it has checked. It says he was a clerk in the correspondence branch of the Home Secretary's Department, which he had entered on 1 April 1863 as Clerk of the Executive Council. On a Saturday morning in July 1901, getting down from a tram near the Treasury Building, he fell backwards and struck his head on the wood paving. He was taken home to Sussex Street, South Brisbane, and died soon after. On the Friday he had been given letters to draft, and they were found done in pencil, with a line at the foot: «Dust thou art, to dust returnest». The Saturday was his wife's birthday. He was buried in the South Brisbane Cemetery, and Eliza lived on at West End until 1918.",
+     "evidence": [
+      {
+       "href": "person:george-lindsay-d-arcy",
+       "why": "The report copied into the family's tree, printed as it reached the archive"
+      },
+      {
+       "href": "/brisbane/",
+       "why": "Where they are buried"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "gable",
+    "thread": "gpd-2",
+    "note": "Six of the seven children are the tree's, so dotted. The eldest is named as their son on his death registration of 1931.",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "gpd-up",
+        "name": "George Pitt D'Arcy",
+        "grade": "doc",
+        "years": "1780–1849",
+        "person": "george-pitt-d-arcy-1783"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "gld",
+        "name": "George Lindsay D'Arcy",
+        "grade": "doc",
+        "years": "1829–1901, clerk",
+        "person": "george-lindsay-d-arcy"
+       },
+       {
+        "id": "eliza",
+        "name": "Eliza Keeling",
+        "grade": "doc",
+        "years": "1837–1918, of London",
+        "person": "eliza-keeling"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "gpd-2",
+        "name": "George Pitt",
+        "grade": "doc",
+        "years": "1864–1931",
+        "person": "george-pitt-d-arcy-1864"
+       },
+       {
+        "id": "robert-l",
+        "name": "Robert Lindesay",
+        "grade": "lore",
+        "years": "1865–1868",
+        "person": "robert-lindesay-d-arcy"
+       },
+       {
+        "id": "catherine-k",
+        "name": "Catherine",
+        "grade": "lore",
+        "years": "1867–1939",
+        "person": "catherine-d-arcy-1867"
+       },
+       {
+        "id": "william-a",
+        "name": "William Arthur",
+        "grade": "lore",
+        "years": "1868–1870",
+        "person": "william-arthur-d-arcy"
+       },
+       {
+        "id": "charlotte-k",
+        "name": "Charlotte Maria",
+        "grade": "lore",
+        "years": "1869–1939",
+        "person": "charlotte-maria-d-arcy-1869"
+       },
+       {
+        "id": "ida-g",
+        "name": "Ida Grace",
+        "grade": "lore",
+        "years": "1872–1941",
+        "person": "ida-grace-d-arcy"
+       },
+       {
+        "id": "edwin",
+        "name": "Edwin Francis",
+        "grade": "lore",
+        "years": "1873–1949",
+        "person": "edwin-francis-d-arcy"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1901 · Brisbane",
+     "title": "One of the oldest scholars",
+     "text": "one of the oldest scholars of the famous King's School, New South Wales",
+     "source": "The Telegraph (Brisbane), Tuesday 16 July 1901, p. 2",
+     "hardLimit": "It gives California, and not the year he went there or the year he came back."
+    }
+   ],
+   "papers": [
+    {
+     "title": "Brisbane",
+     "href": "/brisbane/"
+    },
+    {
+     "title": "How They Got Here",
+     "href": "/emigrations/"
+    },
+    {
+     "title": "George Lindsay D'Arcy",
+     "href": "person:george-lindsay-d-arcy"
+    },
+    {
+     "title": "Eliza Keeling",
+     "href": "person:eliza-keeling"
+    }
+   ]
+  },
+  {
+   "id": "railway",
+   "numeral": "V",
+   "title": "The railway clerk",
+   "place": "Brisbane · Fortitude Valley · Banyo",
+   "years": "1864–1931",
+   "generation": [
+    5
+   ],
+   "paragraphs": [
+    {
+     "id": "r-1",
+     "grade": "doc",
+     "text": "On 21 March 1931 [George Pitt D'Arcy](person:george-pitt-d-arcy-1864) was found dead in the kitchen of his house in Victoria Street, Banyo. At the inquiry, reported a month later, his son gave evidence: his father had been suffering from heart trouble, but had never been treated by a doctor. The paper called him a railway pensioner, and gave his age as seventy-six. He was sixty-six.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "Daily Standard (Brisbane), 24 April 1931, p. 8"
+      }
+     ]
+    },
+    {
+     "id": "r-2",
+     "grade": "doc",
+     "text": "He had been born in Brisbane on 5 May 1864, the first of the line born in the colony of Queensland, and named for the major. His death registration names his parents, Eliza Keeling and George Lindesay D'Arcy, and the cemetery record confirms his year. In 1901 his father's obituary found him in the Railway Department.",
+     "evidence": [
+      {
+       "href": "person:george-pitt-d-arcy-1864",
+       "why": "Queensland death index 1931/B/13634, parents named"
+      },
+      {
+       "href": "/brisbane/",
+       "why": "The obituary of 1901"
+      }
+     ]
+    },
+    {
+     "id": "r-3",
+     "grade": "lore",
+     "text": "The family's tree gives his last post there as Chief Clerk. On 10 October 1888 he married [Ida Kathleen Atkinson](person:ida-kathleen-atkinson) at Trinity Church, Fortitude Valley. The tree gives her birth at Brisbane in 1869 and four children: Hilda Georgina in 1890, [Lindesay Atkinson](person:lindesay-atkinson-d-arcy) in 1892, Florence Isabel in 1894, and Ida Joyce fourteen years later, in 1908. Florence died in 1918 and was buried at Nundah; Ida died in January 1937.",
+     "evidence": [
+      {
+       "href": "/atkinson/",
+       "why": "The Atkinsons: the marriage at Trinity Church"
+      },
+      {
+       "href": "person:ida-kathleen-atkinson",
+       "why": "Ida Kathleen Atkinson: the tree's dates"
+      }
+     ]
+    },
+    {
+     "id": "r-4",
+     "grade": "doc",
+     "text": "Ida's father was a musician. [Paul Cole Atkinson](person:paul-cole-atkinson) was christened at St Mary's Cathedral, Limerick, on 9 July 1832. By 1864 he was in Brisbane, for on 3 August that year the first organ at All Saints', Wickham Terrace, was used for the first time: built by Thomas Jennings of London, and installed, the organ historians record, by Mr Paul Atkinson, «who appears to have been the organist of the church at this time».",
+     "evidence": [
+      {
+       "href": "/atkinson/",
+       "why": "The christening, and the Organ Historical Trust of Australia's record"
+      }
+     ]
+    },
+    {
+     "id": "r-4b",
+     "grade": "lore",
+     "text": "Ida's mother, Jane Creech, was of Limerick too, by the family's tree. The archive reasons that the Atkinsons paid their own passage out: they are not in Queensland's assisted-immigration index, which holds the labourers, masons and servants whose fares the colony paid. A professional man, it says, paid his own way.",
+     "evidence": [
+      {
+       "href": "/atkinson/",
+       "why": "The Limerick problem"
+      },
+      {
+       "href": "/emigrations/",
+       "why": "Paul Cole Atkinson and Jane Creech: inferred"
+      }
+     ]
+    },
+    {
+     "id": "r-5",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "All Saints', Wickham Terrace, is the oldest church in the centre of Brisbane. Its first organ came out from a London builder to a colonial town of a few thousand people.",
+     "evidence": [
+      {
+       "href": "/atkinson/",
+       "why": "The organ",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "r-6",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "When Queensland separated from New South Wales in 1859, the new colony needed a Government Printing Office, a gaol, an electric telegraph and a police force.",
+     "evidence": [
+      {
+       "href": "/timeline/",
+       "why": "Colonial Queensland, 1859–1901",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "r-7",
+     "grade": "doc",
+     "text": "The papers say little else about his working life. They say more about his death, because it was sudden: the street, the room, that he was alone, that there was an inquest, and that his only son gave the evidence, five years before that son would himself die suddenly. The archive reads the printed seventy-six as an error for sixty-six; his marriage in 1888 and his eldest child in 1890 both fit 1864. He was buried in the South Brisbane Cemetery at Dutton Park.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "Found in the kitchen at Banyo"
+      },
+      {
+       "href": "/direct-line/#gen-5",
+       "why": "The Spine: the cemetery record"
+      }
+     ]
+    },
+    {
+     "id": "r-8",
+     "grade": "doc",
+     "text": "No paper the archive has read describes the house at Banyo beyond its kitchen, or says what the railway clerk did with his days. The archive does not fill the gap.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "What the papers said"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "works",
+    "thread": "lad-1",
+    "note": "His son is named as his son at the inquest of 1931; the daughters are the tree's.",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "gld-up",
+        "name": "George Lindsay D'Arcy",
+        "grade": "doc",
+        "years": "1829–1901",
+        "person": "george-lindsay-d-arcy"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "gpd-r",
+        "name": "George Pitt D'Arcy",
+        "grade": "doc",
+        "years": "1864–1931, railway clerk",
+        "person": "george-pitt-d-arcy-1864"
+       },
+       {
+        "id": "ida",
+        "name": "Ida Kathleen Atkinson",
+        "grade": "lore",
+        "years": "1869–1937",
+        "person": "ida-kathleen-atkinson"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "hilda",
+        "name": "Hilda Georgina",
+        "grade": "lore",
+        "years": "1890–1969",
+        "person": "hilda-georgina-d-arcy"
+       },
+       {
+        "id": "lad-1",
+        "name": "Lindesay Atkinson",
+        "grade": "doc",
+        "years": "1892–1936",
+        "person": "lindesay-atkinson-d-arcy"
+       },
+       {
+        "id": "florence",
+        "name": "Florence Isabel",
+        "grade": "lore",
+        "years": "1894–1918",
+        "person": "florence-isabel-d-arcy"
+       },
+       {
+        "id": "ida-j",
+        "name": "Ida Joyce",
+        "grade": "lore",
+        "years": "1908–1969",
+        "person": "ida-joyce-d-arcy"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1931 · Banyo",
+     "title": "Found in the kitchen",
+     "text": "At the inquiry into the death of George Pitt D'Arcy, 76, railway pensioner, who was found dead in the kitchen of his residence, in Victoria street, Banyo, on March 21, Lindsay Atkinson D'Arcy, a son of deceased, said his father had been suffering from heart trouble, but had never been treated by a doctor.",
+     "source": "Daily Standard (Brisbane), Friday 24 April 1931, p. 8",
+     "hardLimit": "The report gives his age as 76. Born in 1864, he was 66."
+    }
+   ],
+   "papers": [
+    {
+     "title": "The Papers",
+     "href": "/papers/"
+    },
+    {
+     "title": "The Atkinsons",
+     "href": "/atkinson/"
+    },
+    {
+     "title": "Brisbane",
+     "href": "/brisbane/"
+    },
+    {
+     "title": "George Pitt D'Arcy",
+     "href": "person:george-pitt-d-arcy-1864"
+    }
+   ]
+  },
+  {
+   "id": "sergeant",
+   "numeral": "VI",
+   "title": "Nine weeks",
+   "place": "Brisbane · France · Clayfield",
+   "years": "1892–1936",
+   "generation": [
+    4
+   ],
+   "paragraphs": [
+    {
+     "id": "g-1",
+     "grade": "doc",
+     "text": "He enlisted at Brisbane on 13 December 1915. On 18 March 1916 he married [Ivy Miriam Sneyd](person:ivy-miriam-sneyd) at Albion Church. On 18 May he sailed from Sydney on the troopship *Demosthenes*, Sergeant 11335 of the 12th Australian Depot Unit of Supply, with his wife as his next of kin. Nine weeks separated the wedding from the ship, and he did not come home until July 1919.",
+     "evidence": [
+      {
+       "href": "/great-war/",
+       "why": "Sergeant 11335: AWM8 25/109/1, NAA J34 C34558"
+      }
+     ]
+    },
+    {
+     "id": "g-2",
+     "grade": "doc",
+     "text": "[Lindesay Atkinson D'Arcy](person:lindesay-atkinson-d-arcy) was born in Brisbane on 15 July 1892, the only son of the railway clerk, and went to the old Normal School. His obituary and his funeral notice spell him Lindsay. All his children knew of his war was a phrase in his obituary, that he «served with the Australian Forces in France during the Great War». The rank, the number, the unit and the ship were found by this archive.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "The Courier-Mail, 11 November 1936"
+      },
+      {
+       "href": "/great-war/",
+       "why": "What the family remembered"
+      }
+     ]
+    },
+    {
+     "id": "g-3",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "Federation was followed by two wars that took four men out of this one family. In 1915 three Sneyds and a D'Arcy enlisted.",
+     "evidence": [
+      {
+       "href": "/timeline/",
+       "why": "The Commonwealth, 1901–1975",
+       "kind": "archive"
+      },
+      {
+       "href": "/great-war/",
+       "why": "Four men, one family",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "g-4",
+     "grade": "doc",
+     "text": "Ivy's younger brother [Arthur Hartley Sneyd](person:arthur-hartley-sneyd), a typist of twenty-one, had enlisted in September 1915. He gave up his sergeant's stripes to get into the line, joined the 9th Battalion in France on 29 July 1916, and was killed in action on 20 August, twenty-two days later. His report of death gives his burial place as «Not yet to hand», and it never came to hand. Another brother, Vivian Claude, came home with the Military Medal and Bar.",
+     "evidence": [
+      {
+       "href": "/great-war/",
+       "why": "Private 5050: his dossier, NAA B2455"
+      },
+      {
+       "href": "/finding-arthur/",
+       "why": "The search for Arthur"
+      }
+     ]
+    },
+    {
+     "id": "g-5",
+     "register": "world",
+     "worldSource": "history",
+     "text": "Pozières and Mouquet Farm, in July and August 1916, were part of the Battle of the Somme. The Australian divisions lost about twenty-three thousand men there in six weeks.",
+     "evidence": [
+      {
+       "href": "#world-H6",
+       "why": "Note H6 at the foot of the page",
+       "kind": "history"
+      }
+     ]
+    },
+    {
+     "id": "g-6",
+     "grade": "lore",
+     "text": "Ivy brought other roads into the family. The tree has her born at Boulia on 31 October 1891, to Arthur William Hartley Sneyd and Martha Blum, a Rockhampton girl whose father, [John Blum](person:john-blum-1842), was born in Germany.",
+     "evidence": [
+      {
+       "href": "person:ivy-miriam-sneyd",
+       "why": "Ivy Miriam Sneyd: the tree's dates and places"
+      },
+      {
+       "href": "/emigrations/",
+       "why": "John Blum, not established"
+      }
+     ]
+    },
+    {
+     "id": "g-7",
+     "grade": "inf",
+     "text": "Her grandmother [Miriam Wakefield](person:miriam-wakefield) was born in the parish of St Paul, Bristol, in April 1840, a mason's daughter. On 16 December 1854 the *General Hewitt* put into Brisbane with three hundred and ninety-four souls, and the Wakefields were eight of them: James, forty-eight, a mason, his wife Hannah, and six of their children. Miriam was entered among the single women as «Marion», fourteen, a domestic servant. Five years later she married [William Hartley Sneyd](person:william-hartley-sneyd), later of the Government Printing Office, whose father, [Samuel Charles Sneyd](person:samuel-charles-sneyd-1810), a Hanley grocer's son from the Staffordshire Potteries, had come out with the 4th (King's Own) in 1832 and ended as Governor of Brisbane Gaol. That these are Ivy's grandparents is the tree's; the papers stand behind each of them.",
+     "evidence": [
+      {
+       "href": "/general-hewitt/",
+       "why": "The General Hewitt's register, QSA ITM18474, pages 78, 80 and 81"
+      },
+      {
+       "href": "/sergeant-sneyd/",
+       "why": "Sergeant Sneyd"
+      },
+      {
+       "href": "/sneyds/",
+       "why": "The Sneyds of the Potteries"
+      }
+     ]
+    },
+    {
+     "id": "g-8",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The *General Hewitt* carried an English and Irish cargo of farm labourers, masons, ploughmen, bricklayers, dairymaids and domestic servants, on passages Queensland paid because it wanted those trades and could not otherwise get them.",
+     "evidence": [
+      {
+       "href": "/general-hewitt/",
+       "why": "Who else was aboard",
+       "kind": "archive"
+      },
+      {
+       "href": "/emigrations/",
+       "why": "What the manner of arrival says",
+       "kind": "archive"
+      }
+     ]
+    },
+    {
+     "id": "g-9",
+     "grade": "doc",
+     "text": "The 1920s went badly. For about two and a half years he ran a grocery in Cavendish Road, South Brisbane, «with the assistance of his wife». A few months before the end he took a clerk's post with the Union Trustee Company and left Ivy to run the shop. On 25 July 1926 he could not go on, and on 1 October he was declared insolvent, with a deficiency of £1,381. When the trustee went to court the next September, against the bank and not against him, the paper called him «of Sandgate».",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "Daily Standard, 20 September 1927: a headline that is not what it looks like"
+      }
+     ]
+    },
+    {
+     "id": "g-11",
+     "grade": "doc",
+     "text": "He stayed with the Union Trustees, and in 1929, as the company's agent, he took over the affairs of a pastoral company and found money missing. The agent he replaced told him, «Don't say any more. I don't wish my wife to know anything about the business». When the promised cheque never came, he went to the C.I.D. Three years after his own insolvency he was the witness for the prosecution.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "Daily Standard, 6 August 1929; The Brisbane Courier, 7 August 1929"
+      }
+     ]
+    },
+    {
+     "id": "g-12",
+     "grade": "lore",
+     "text": "His youngest son remembered him at home, and told it to his own children, who told it at his funeral. An old Queenslander at Clayfield. A keen gardener: no bicycle, which was too dangerous, and no football in the backyard, which was bad for the garden. A boy who fell out of the mango tree into his father's tub of liquid manure, and a father more upset about the manure. The same boy set to whack the mosquitoes off his father's bare back while he hosed in the late afternoon, which gave them «the chance to have some really good chats». Camping at the beach each Easter, card games, visitors, and an African Grey parrot that called «Come in» to anyone who knocked.",
+     "evidence": [
+      {
+       "href": "person:kenneth-lindsay-d-arcy",
+       "why": "The eulogy, part one, printed whole"
+      }
+     ]
+    },
+    {
+     "id": "g-13",
+     "register": "world",
+     "worldSource": "history",
+     "text": "The Queenslander was the ordinary house of Brisbane's suburbs: timber, raised on stumps, with verandahs and an iron roof.",
+     "evidence": [
+      {
+       "href": "#world-H7",
+       "why": "Note H7 at the foot of the page",
+       "kind": "history"
+      }
+     ]
+    },
+    {
+     "id": "g-14",
+     "grade": "doc",
+     "text": "He died suddenly on 10 November 1936, of Botany Street, Clayfield, aged forty-four, and was buried at Toowong. The obituary said he left a widow and five children. Within months Ivy had a repatriation pension file open in her own name. It has not been read, and its existence says nothing about what killed him.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "The obituary, 11 November 1936"
+      },
+      {
+       "href": "/great-war/",
+       "why": "NAA J34 C34558, not digitised"
+      }
+     ]
+    },
+    {
+     "id": "g-15",
+     "grade": "lore",
+     "text": "What followed is the family's memory. Only the eldest boy was working. Ivy had no trade of her own, and she took in boarders: up to thirteen people round the table at mealtimes and, her youngest said, never really a normal home life after that. She lived until 1979.",
+     "evidence": [
+      {
+       "href": "/brisbane/",
+       "why": "The eulogy, quoted on Brisbane"
+      }
+     ]
+    },
+    {
+     "id": "g-16",
+     "register": "world",
+     "worldSource": "history",
+     "text": "There was no Commonwealth pension for widows until 1942.",
+     "evidence": [
+      {
+       "href": "#world-H8",
+       "why": "Note H8 at the foot of the page",
+       "kind": "history"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "gable",
+    "thread": "ken-1",
+    "note": "Kenneth is dashed: the tree and his eulogy make him Lindesay's son, and the obituary of 1936 agrees with the eulogy, but no record names his parents. The other children are the tree's.",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "gpd-s",
+        "name": "George Pitt D'Arcy",
+        "grade": "doc",
+        "years": "1864–1931",
+        "person": "george-pitt-d-arcy-1864"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "lad",
+        "name": "Lindesay Atkinson D'Arcy",
+        "grade": "doc",
+        "years": "1892–1936, clerk, sergeant 11335",
+        "person": "lindesay-atkinson-d-arcy"
+       },
+       {
+        "id": "ivy",
+        "name": "Ivy Miriam Sneyd",
+        "grade": "doc",
+        "years": "1891–1979, of Boulia",
+        "person": "ivy-miriam-sneyd"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "vivian",
+        "name": "Vivian Lindsay",
+        "grade": "lore",
+        "years": "1916–2006",
+        "person": "vivian-lindsay-d-arcy"
+       },
+       {
+        "id": "bill",
+        "name": "Arthur Neville «Bill»",
+        "grade": "lore",
+        "years": "1924–1985",
+        "person": "arthur-neville-bill-d-arcy"
+       },
+       {
+        "id": "ken-1",
+        "name": "Kenneth Lindsay",
+        "grade": "inf",
+        "years": "1927–2010",
+        "person": "kenneth-lindsay-d-arcy"
+       },
+       {
+        "id": "valma",
+        "name": "Valma",
+        "grade": "lore",
+        "years": "† 2010",
+        "person": "valma-d-arcy"
+       },
+       {
+        "id": "joan",
+        "name": "Joan",
+        "grade": "lore",
+        "person": "joan-d-arcy"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1936 · Clayfield",
+     "title": "The obituary",
+     "text": "The death occurred suddenly yesterday of Mr. Lindsay Atkinson D'Arcy, of Botany Street, Clayfield, who for many years had been on the staff of the Brisbane office of the Union Trustee Company of Australia, Ltd.",
+     "source": "The Courier-Mail (Brisbane), Wednesday 11 November 1936, p. 23",
+     "hardLimit": "His grandchildren told the same life at a funeral without having seen this. The two agree on five details and contradict each other on none."
+    },
+    {
+     "label": "1854 · Brisbane",
+     "title": "Marion, fourteen, domestic",
+     "text": "Marion Wakefield · 14 · Domestic · Bristol",
+     "source": "Register of the General Hewitt, page 81, single women (Queensland State Archives, ITM18474)",
+     "hardLimit": "Miriam, written Marion. Her mother's county on page 78 is a ditto mark under her husband's, not a statement of where she was born."
+    }
+   ],
+   "papers": [
+    {
+     "title": "The Great War",
+     "href": "/great-war/"
+    },
+    {
+     "title": "The Papers",
+     "href": "/papers/"
+    },
+    {
+     "title": "The General Hewitt, 1854",
+     "href": "/general-hewitt/"
+    },
+    {
+     "title": "Sergeant Sneyd",
+     "href": "/sergeant-sneyd/"
+    },
+    {
+     "title": "The Sneyds of the Potteries",
+     "href": "/sneyds/"
+    },
+    {
+     "title": "The Search for Arthur",
+     "href": "/finding-arthur/"
+    },
+    {
+     "title": "Lindesay Atkinson D'Arcy",
+     "href": "person:lindesay-atkinson-d-arcy"
+    }
+   ]
+  },
+  {
+   "id": "ken",
+   "numeral": "VII",
+   "title": "The boy who told it",
+   "place": "Sandgate · Clayfield · Toowoomba · Townsville · Brisbane",
+   "years": "1927–2010",
+   "generation": [
+    3
+   ],
+   "paragraphs": [
+    {
+     "id": "k-1",
+     "grade": "doc",
+     "text": "[Kenneth Lindsay D'Arcy](person:kenneth-lindsay-d-arcy) was born at Sandgate on 17 August 1927 and died in Brisbane on 3 March 2010, aged eighty-two, and the record of his burial at the Centenary Memorial Gardens gives both days. Almost everything else this archive knows of him comes from the eulogy his three children gave at his funeral, which it prints in full. It is family memory, and it is marked as such. Where the papers can test it, they agree with it.",
+     "evidence": [
+      {
+       "href": "person:kenneth-lindsay-d-arcy",
+       "why": "Find a Grave memorial 286540042, and the eulogy"
+      },
+      {
+       "href": "/papers/",
+       "why": "The obituary of 1936 set beside the eulogy"
+      }
+     ]
+    },
+    {
+     "id": "k-2",
+     "grade": "inf",
+     "text": "No record the archive has read names his parents. That he was the youngest of the five children of Lindesay and Ivy comes from the tree and from the eulogy, and the obituary of 1936 agrees with the eulogy on the house at Clayfield, the Union Trustees, the sudden death and the five children.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "Five details, independently confirmed"
+      }
+     ]
+    },
+    {
+     "id": "k-3",
+     "grade": "lore",
+     "text": "His father died when he was nine. Soon he and his brother Bill were going to the Savoy Picture Theatre at Clayfield on Friday nights with threepence from their mother, spending it on cigarettes and stealing the matches. He smoked from that age. At Ascot State School he threw his lunch into the incinerator on the way to the oval, for more time at football and cricket. He passed the Scholarship, went on to Brisbane State High, got three per cent in Junior Chemistry and failed Latin, and at fifteen started work at Union Trustees, where his father had worked.",
+     "evidence": [
+      {
+       "href": "person:kenneth-lindsay-d-arcy",
+       "why": "The eulogy, part one"
+      }
+     ]
+    },
+    {
+     "id": "k-4",
+     "grade": "lore",
+     "text": "On his seventeenth birthday, in 1944, he had his medical for the navy, and from February 1945 he trained in Melbourne as a sick bay attendant. He spent a few months on Thursday Island and played a great deal of table tennis. Once, off duty, he fell asleep on a ship's deck and was so badly sunburnt that he was ill for days; he always wondered whether it had anything to do with the melanomas that came later. He was discharged early in 1947 and went back to Union Trustees.",
+     "evidence": [
+      {
+       "href": "person:kenneth-lindsay-d-arcy",
+       "why": "The eulogy, part one"
+      }
+     ]
+    },
+    {
+     "id": "k-5",
+     "grade": "lore",
+     "text": "In 1948 the firm sent him to its Toowoomba branch, where [Audrey Murdoch](person:audrey-dell-murdoch), known as Dell, nineteen, worked in the office. By her own account she was disappointed at first sight. They got to know each other at table tennis. When he was moved back to Brisbane he wrote to her most days, and on 5 April 1952 they were married, at Toowoomba by the tree's account. Her father's people were Murdochs out of Ayrshire, whose arrival in Queensland nobody has yet dated.",
+     "evidence": [
+      {
+       "href": "person:kenneth-lindsay-d-arcy",
+       "why": "The eulogy, part one"
+      },
+      {
+       "href": "/emigrations/",
+       "why": "The Murdochs of St Quivox"
+      },
+      {
+       "href": "/murdoch/",
+       "why": "Murdoch"
+      }
+     ]
+    },
+    {
+     "id": "k-6",
+     "grade": "lore",
+     "text": "They built the first of four houses at Stafford. He went to National Mutual, and in 1963 the company made him District Sales Manager for North Queensland, at Townsville, for what his children remembered as perhaps the best decade the family had. A stone thrown up by a lawn mower brought on a serious kidney illness late in 1971, and a cyclone tried to knock down the new house at Mundingburra. In 1972 the company sent him to Perth as State Sales Manager, and at the end of 1973 the family came back to Brisbane; in the floods that followed, its furniture was under water in storage at Rocklea. He was State Sales Manager in Queensland until he retired in 1982, at fifty-five, after thirty-two years with one company.",
+     "evidence": [
+      {
+       "href": "person:kenneth-lindsay-d-arcy",
+       "why": "The eulogy, parts two and three"
+      }
+     ]
+    },
+    {
+     "id": "k-7",
+     "register": "world",
+     "worldSource": "history",
+     "text": "Cyclone Althea crossed the coast near Townsville on Christmas Eve 1971. In January 1974 the Brisbane River put much of the city's low ground under water, Rocklea among it.",
+     "evidence": [
+      {
+       "href": "#world-H9",
+       "why": "Note H9 at the foot of the page",
+       "kind": "history"
+      },
+      {
+       "href": "#world-H10",
+       "why": "Note H10 at the foot of the page",
+       "kind": "history"
+      }
+     ]
+    },
+    {
+     "id": "k-8",
+     "grade": "lore",
+     "text": "Retirement was golf, his wife, and a long run of operations. He had the first of some twenty melanomas removed just before he retired, and came through an aneurysm repair in 1991. Told he had a few months, he lived more than four years, and said that one of the melanomas would get him in the end. One did. Dell outlived him; by the tree she died in 2022, and she lies in the same gardens.",
+     "evidence": [
+      {
+       "href": "person:kenneth-lindsay-d-arcy",
+       "why": "The eulogy, part three"
+      },
+      {
+       "href": "/brisbane/",
+       "why": "Where they are buried"
+      }
+     ]
+    },
+    {
+     "id": "k-9",
+     "grade": "inf",
+     "text": "The eulogy is the only place in this archive where a man of this line is heard, at second hand, describing his own childhood; and the obituary of his father, found seventy-four years after it was printed, bears out every detail it can test.",
+     "evidence": [
+      {
+       "href": "/papers/",
+       "why": "The obituary, and a eulogy written seventy-four years later"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "wave",
+    "thread": "ian",
+    "note": "The living are drawn filled, by first name, with no dates. The eulogy names a daughter the tree does not carry.",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "lad-up",
+        "name": "Lindesay Atkinson D'Arcy",
+        "grade": "doc",
+        "years": "1892–1936",
+        "person": "lindesay-atkinson-d-arcy"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "ken",
+        "name": "Kenneth Lindsay D'Arcy",
+        "grade": "doc",
+        "years": "1927–2010, insurance manager",
+        "person": "kenneth-lindsay-d-arcy"
+       },
+       {
+        "id": "dell",
+        "name": "Audrey «Dell» Murdoch",
+        "grade": "lore",
+        "years": "1929–2022, of Toowoomba",
+        "person": "audrey-dell-murdoch"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "ian",
+        "name": "Ian",
+        "living": true,
+        "person": "ian-kenneth-d-arcy"
+       },
+       {
+        "id": "gayle",
+        "name": "Gayle",
+        "living": true
+       },
+       {
+        "id": "graham",
+        "name": "Graham",
+        "living": true,
+        "person": "graham-lindsay-d-arcy"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "The eulogy, part one",
+     "title": "Come in",
+     "text": "According to Dad, when someone knocked at the door their very intelligent African Grey parrot always called out «Come in» from his cage inside the house.",
+     "source": "Kenneth Lindsay D'Arcy's eulogy, part one, delivered by his daughter",
+     "hardLimit": "Family memory, told seventy years after the fact. The archive prints it whole and has tested what it can."
+    }
+   ],
+   "papers": [
+    {
+     "title": "The eulogy, in full",
+     "href": "person:kenneth-lindsay-d-arcy"
+    },
+    {
+     "title": "The Papers",
+     "href": "/papers/"
+    },
+    {
+     "title": "Brisbane",
+     "href": "/brisbane/"
+    },
+    {
+     "title": "Murdoch",
+     "href": "/murdoch/"
+    },
+    {
+     "title": "Audrey «Dell» Murdoch",
+     "href": "person:audrey-dell-murdoch"
+    }
+   ]
+  },
+  {
+   "id": "living",
+   "numeral": "VIII",
+   "title": "And then the living",
+   "place": "Brisbane",
+   "years": "",
+   "generation": [
+    2,
+    1
+   ],
+   "paragraphs": [
+    {
+     "id": "v-1",
+     "grade": "lore",
+     "text": "Kenneth and Dell's elder son is Ian Kenneth D'Arcy, of Brisbane, Australia. His wife is Giuseppina Falco, of Benevento, Italy. Their daughters are Cristina and Stefanie, of Brisbane. All four are living, and by this archive's rule the living are named with their relationships and their towns and nothing more.",
+     "evidence": [
+      {
+       "href": "/direct-line/",
+       "why": "The Spine: the last two rows"
+      },
+      {
+       "href": "/method/",
+       "why": "Method: the living rule"
+      }
+     ]
+    },
+    {
+     "id": "v-2",
+     "grade": "doc",
+     "text": "Through them this line meets three other archives. Giuseppina's people are the subject of the Falco archive. Cristina's husband is David Defranceski, and through him the line meets the Defranceschi archive; through Stefanie it reaches the Mazza archive. Each tells its own line; this one stops here.",
+     "evidence": [
+      {
+       "href": "/the-other-archives/",
+       "why": "The Other Archives"
+      },
+      {
+       "href": "/direct-line/",
+       "why": "The Spine: the doors at the foot"
+      }
+     ]
+    },
+    {
+     "id": "v-3",
+     "grade": "inf",
+     "text": "So the line runs from a second lieutenant of engineers whose father nobody has found, through a convict ship's cabin and a Parramatta christening, to a city on the other side of the world: Portsea, Minorca, Barbados, Chatham, the Peninsula, Parramatta, Brisbane, Banyo, Clayfield, Toowoomba, Townsville, Perth, and Brisbane again. The archive's own summary of it is a single sentence: this family goes where a government sends it, and gets written down when a government writes it down.",
+     "evidence": [
+      {
+       "href": "/timeline/",
+       "why": "The Timeline"
+      },
+      {
+       "href": "/direct-line/",
+       "why": "The Spine"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "glyph": "field",
+    "thread": "cristina",
+    "note": "Living people are drawn filled, by first name, with no dates.",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "ken-up",
+        "name": "Kenneth Lindsay D'Arcy",
+        "grade": "doc",
+        "years": "1927–2010",
+        "person": "kenneth-lindsay-d-arcy"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "ian-v",
+        "name": "Ian",
+        "living": true,
+        "person": "ian-kenneth-d-arcy"
+       },
+       {
+        "id": "giuseppina",
+        "name": "Giuseppina",
+        "living": true,
+        "person": "giuseppina-falco"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "cristina",
+        "name": "Cristina",
+        "living": true,
+        "person": "cristina-adele-d-arcy"
+       },
+       {
+        "id": "stefanie",
+        "name": "Stefanie",
+        "living": true,
+        "person": "stefanie-francesca-d-arcy"
+       }
+      ]
+     }
+    ]
+   },
+   "papers": [
+    {
+     "title": "The Other Archives",
+     "href": "/the-other-archives/"
+    },
+    {
+     "title": "The Spine",
+     "href": "/direct-line/"
+    },
+    {
+     "title": "Method: the living rule",
+     "href": "/method/"
+    }
+   ]
+  }
+ ],
+ "maps": [
+  {
+   "id": "before",
+   "title": "Before the voyage",
+   "extent": "british-isles",
+   "chapter": "engineer",
+   "places": [
+    {
+     "id": "hornby",
+     "name": "Hornby Castle",
+     "lat": 54.3385,
+     "lon": -1.6542,
+     "chapter": "origin",
+     "dx": 8,
+     "dy": -6,
+     "note": "the family's claim"
+    },
+    {
+     "id": "leith",
+     "name": "South Leith",
+     "lat": 55.98,
+     "lon": -3.17,
+     "chapter": "engineer",
+     "dx": 8,
+     "dy": -6,
+     "note": "Jean Ward, 1754"
+    },
+    {
+     "id": "portsea",
+     "name": "Portsmouth (Portsea)",
+     "lat": 50.8,
+     "lon": -1.09,
+     "chapter": "engineer",
+     "dx": -8,
+     "dy": 14,
+     "anchor": "end",
+     "note": "married 1779"
+    },
+    {
+     "id": "chatham",
+     "name": "Chatham",
+     "lat": 51.38,
+     "lon": 0.53,
+     "chapter": "engineer",
+     "dx": 8,
+     "dy": -8,
+     "note": "1805–1827"
+    }
+   ],
+   "legs": [
+    {
+     "from": "hornby",
+     "to": "portsea",
+     "grade": "lore",
+     "chapter": "origin",
+     "years": "told",
+     "routeKnown": false,
+     "evidence": "/hornby/"
+    },
+    {
+     "from": "leith",
+     "to": "portsea",
+     "grade": "inf",
+     "chapter": "engineer",
+     "years": "1754 → 1779",
+     "evidence": "/jean-ward/",
+     "bend": 0.15
+    },
+    {
+     "from": "portsea",
+     "to": "chatham",
+     "grade": "doc",
+     "chapter": "engineer",
+     "years": "1780 → 1805",
+     "evidence": "/chatham/",
+     "bend": -0.2
+    }
+   ]
+  },
+  {
+   "id": "out",
+   "title": "Out to the colony",
+   "extent": "world",
+   "chapter": "major",
+   "places": [
+    {
+     "id": "chatham",
+     "name": "Chatham",
+     "lat": 51.38,
+     "lon": 0.53,
+     "chapter": "major",
+     "dx": 10,
+     "dy": -6,
+     "note": "the England, April 1826"
+    },
+    {
+     "id": "bristol",
+     "name": "Bristol",
+     "lat": 51.45,
+     "lon": -2.59,
+     "chapter": "sergeant",
+     "dx": -8,
+     "dy": 12,
+     "anchor": "end"
+    },
+    {
+     "id": "london",
+     "name": "London",
+     "lat": 51.51,
+     "lon": -0.13,
+     "chapter": "scholar",
+     "dx": 10,
+     "dy": 12
+    },
+    {
+     "id": "parramatta",
+     "name": "Parramatta",
+     "lat": -33.81398,
+     "lon": 151.00267,
+     "chapter": "major",
+     "dx": -8,
+     "dy": 12,
+     "anchor": "end",
+     "note": "Port Jackson, September 1826"
+    },
+    {
+     "id": "brisbane",
+     "name": "Brisbane",
+     "lat": -27.469,
+     "lon": 153.0235,
+     "chapter": "scholar",
+     "dx": -10,
+     "dy": -8,
+     "anchor": "end"
+    }
+   ],
+   "legs": [
+    {
+     "from": "chatham",
+     "to": "parramatta",
+     "grade": "doc",
+     "chapter": "major",
+     "years": "1826",
+     "evidence": "/australia/",
+     "bend": 0.25
+    },
+    {
+     "from": "bristol",
+     "to": "brisbane",
+     "grade": "doc",
+     "chapter": "sergeant",
+     "years": "1854",
+     "evidence": "/general-hewitt/",
+     "bend": -0.25
+    },
+    {
+     "from": "london",
+     "to": "brisbane",
+     "grade": "lore",
+     "chapter": "scholar",
+     "years": "by 1863",
+     "routeKnown": false,
+     "evidence": "/emigrations/"
+    }
+   ]
+  },
+  {
+   "id": "ivy",
+   "title": "Where Ivy's people came from",
+   "extent": "british-isles",
+   "chapter": "sergeant",
+   "places": [
+    {
+     "id": "madeley",
+     "name": "Madeley",
+     "lat": 52.98,
+     "lon": -2.35,
+     "chapter": "sergeant",
+     "dx": -8,
+     "dy": 12,
+     "anchor": "end",
+     "note": "William Sneyd, weaver, 1769"
+    },
+    {
+     "id": "hanley",
+     "name": "Hanley",
+     "lat": 53.03,
+     "lon": -2.18,
+     "chapter": "sergeant",
+     "dx": 8,
+     "dy": -6,
+     "note": "Samuel Charles Sneyd, 1811"
+    },
+    {
+     "id": "bristol",
+     "name": "Bristol",
+     "lat": 51.45,
+     "lon": -2.59,
+     "chapter": "sergeant",
+     "dx": 8,
+     "dy": 12,
+     "note": "Miriam Wakefield, 1840"
+    }
+   ],
+   "legs": [
+    {
+     "from": "madeley",
+     "to": "hanley",
+     "grade": "doc",
+     "chapter": "sergeant",
+     "years": "1781 → 1811",
+     "evidence": "/sneyds/"
+    }
+   ]
+  },
+  {
+   "id": "queensland",
+   "title": "Queensland",
+   "extent": {
+    "west": 137.0,
+    "east": 155.0,
+    "south": -35.0,
+    "north": -19.5,
+    "projection": "equirectangular"
+   },
+   "chapter": "ken",
+   "places": [
+    {
+     "id": "parramatta",
+     "name": "Parramatta",
+     "lat": -33.81398,
+     "lon": 151.00267,
+     "chapter": "scholar",
+     "dx": -8,
+     "dy": 12,
+     "anchor": "end",
+     "note": "born 1829"
+    },
+    {
+     "id": "brisbane",
+     "name": "Brisbane",
+     "lat": -27.469,
+     "lon": 153.0235,
+     "chapter": "railway",
+     "dx": 8,
+     "dy": -6,
+     "note": "from 1863"
+    },
+    {
+     "id": "toowoomba",
+     "name": "Toowoomba",
+     "lat": -27.561,
+     "lon": 151.9534,
+     "chapter": "ken",
+     "dx": -8,
+     "dy": -8,
+     "anchor": "end",
+     "note": "1948–1952"
+    },
+    {
+     "id": "boulia",
+     "name": "Boulia",
+     "lat": -22.91,
+     "lon": 139.9,
+     "chapter": "sergeant",
+     "dx": 8,
+     "dy": -6,
+     "note": "Ivy, by the tree"
+    },
+    {
+     "id": "australia",
+     "name": "Australia",
+     "lat": -26.5,
+     "lon": 144.0,
+     "chapter": "living",
+     "country": true,
+     "note": "the living, by country"
+    }
+   ],
+   "legs": [
+    {
+     "from": "parramatta",
+     "to": "brisbane",
+     "grade": "doc",
+     "chapter": "scholar",
+     "years": "1829 → 1863",
+     "evidence": "/brisbane/",
+     "bend": 0.15
+    },
+    {
+     "from": "boulia",
+     "to": "brisbane",
+     "grade": "lore",
+     "chapter": "sergeant",
+     "years": "1891 → 1916",
+     "routeKnown": false,
+     "evidence": "/people/ivy-miriam-sneyd/"
+    },
+    {
+     "from": "brisbane",
+     "to": "toowoomba",
+     "grade": "lore",
+     "chapter": "ken",
+     "years": "1948",
+     "evidence": "/people/kenneth-lindsay-d-arcy/",
+     "bend": -0.3
+    }
+   ]
+  }
+ ],
+ "closing": {
+  "unknown": {
+   "title": "What we do not know",
+   "lead": "Every chapter has its silences. These are the ones a letter, an afternoon in a reading room or a request by name could break.",
+   "items": [
+    {
+     "text": "**Who Robert D'Arcy's father was.** His will, PROB 11/1728/64, is located and has not been read; the Board of Ordnance minutes for January 1776 (WO 47) need somebody at Kew with the volumes in front of them.",
+     "href": "/hornby/"
+    },
+    {
+     "text": "**When and where George Pitt D'Arcy was born.** A baptism about 1780 or 1783, at Portsmouth or in the West Indies.",
+     "href": "/george-pitt/"
+    },
+    {
+     "text": "**Who Maria was, and where they married.** The Church of Ireland registers of at least twenty-five Wicklow parishes cover 1819; Bray, Wicklow town and Arklow first.",
+     "href": "/george-pitt/"
+    },
+    {
+     "text": "**What the major did in the colony for twenty years, and where he is buried at Parramatta.**",
+     "href": "/australia/"
+    },
+    {
+     "text": "**When George Lindsay went to California, and how Eliza Keeling reached Queensland.**",
+     "href": "/emigrations/"
+    },
+    {
+     "text": "**What Ivy's repatriation file says.** NAA J34, C34558, open and not digitised.",
+     "href": "/great-war/"
+    },
+    {
+     "text": "**Where Arthur Hartley Sneyd lies.**",
+     "href": "/finding-arthur/"
+    }
+   ]
+  },
+  "papers": {
+   "title": "Read the papers",
+   "lead": "This book is the front door. The evidence is behind it.",
+   "links": [
+    {
+     "title": "The Spine",
+     "href": "/direct-line/",
+     "why": "the line generation by generation, and what the archive will defend"
+    },
+    {
+     "title": "The Hornby Claim",
+     "href": "/hornby/",
+     "why": "where the descent stops being evidence"
+    },
+    {
+     "title": "The Corps",
+     "href": "/the-corps/",
+     "why": "Robert's career, from the Gazette"
+    },
+    {
+     "title": "Arrival, 1826",
+     "href": "/australia/",
+     "why": "the convict ship England"
+    },
+    {
+     "title": "Brisbane",
+     "href": "/brisbane/",
+     "why": "four generations, one city"
+    },
+    {
+     "title": "The Papers",
+     "href": "/papers/",
+     "why": "what the Brisbane newspapers said"
+    },
+    {
+     "title": "The Great War",
+     "href": "/great-war/"
+    },
+    {
+     "title": "The General Hewitt, 1854",
+     "href": "/general-hewitt/"
+    },
+    {
+     "title": "How They Got Here",
+     "href": "/emigrations/"
+    },
+    {
+     "title": "Method",
+     "href": "/method/",
+     "why": "how every claim carries its confidence"
+    }
+   ]
+  },
+  "notes": {
+   "title": "Where the world comes from",
+   "lead": "Passages marked history draw on general history, not on this archive's pages. These are the claims, to be checked.",
+   "items": [
+    {
+     "key": "H1",
+     "claim": "South Leith was the parish of the port of Leith, Edinburgh's harbour on the Firth of Forth.",
+     "source": "Standard Scottish parish geography; e.g. the Old Parish Registers' parish list (ScotlandsPeople).",
+     "tbc": true
+    },
+    {
+     "key": "H2",
+     "claim": "Portsea was the dockyard town of Portsmouth, where the Royal Navy kept its principal yard.",
+     "source": "Standard naval and Hampshire history; e.g. the Victoria County History of Hampshire, vol. 3.",
+     "tbc": true
+    },
+    {
+     "key": "H3",
+     "claim": "The King's School, Parramatta, opened in 1832.",
+     "source": "The school's own history; the Australian Dictionary of Biography on its founding.",
+     "tbc": true
+    },
+    {
+     "key": "H4",
+     "claim": "Gold was found in California in 1848, and from 1849 ships left Sydney with men for the diggings.",
+     "source": "Standard histories of the gold rush; e.g. J. Monaghan, Australians and the Gold Rush (1966).",
+     "tbc": true
+    },
+    {
+     "key": "H5",
+     "claim": "Moreton Bay was a penal settlement opened to free settlers in 1842; Queensland separated from New South Wales in December 1859, with Brisbane as its capital.",
+     "source": "Standard Queensland history; Queensland Government, «Queensland's history».",
+     "tbc": true
+    },
+    {
+     "key": "H6",
+     "claim": "Pozières and Mouquet Farm, July–August 1916, were part of the Battle of the Somme; the Australian divisions lost about 23,000 men there in six weeks.",
+     "source": "Australian War Memorial, «Pozières»; C. E. W. Bean, Official History, vol. III.",
+     "tbc": true
+    },
+    {
+     "key": "H7",
+     "claim": "The Queenslander: a timber house raised on stumps, with verandahs and an iron roof, the ordinary house of Brisbane's suburbs.",
+     "source": "Standard Australian architectural history; e.g. Queensland Heritage Register guidance.",
+     "tbc": true
+    },
+    {
+     "key": "H8",
+     "claim": "There was no Commonwealth pension for widows until 1942.",
+     "source": "Widows' Pensions Act 1942 (Cth).",
+     "tbc": true
+    },
+    {
+     "key": "H9",
+     "claim": "Cyclone Althea crossed the coast near Townsville on 24 December 1971.",
+     "source": "Bureau of Meteorology, Tropical Cyclone Althea report.",
+     "tbc": true
+    },
+    {
+     "key": "H10",
+     "claim": "In January 1974 the Brisbane River flooded much of the city's low ground, Rocklea among it.",
+     "source": "Bureau of Meteorology and Brisbane City Council accounts of the 1974 flood.",
+     "tbc": true
+    }
+   ]
+  },
+  "mapNote": "The maps: coastlines and borders from Natural Earth (public domain, naturalearthdata.com), simplified and clipped for this page. Town dots stand at this archive's own gazetteer coordinates (data/era-towns.tsv; Parramatta from the atlas data the archive builds), and only where a document or the family's tree puts the family. Minorca and Barbados have no coordinates in the gazetteer and are not drawn. A country, not a town, marks the living, with no dates. A solid leg has a document at each end; a dashed leg is inferred; a dotted leg is family memory or the tree; a route nobody knows is listed under the map and not drawn."
+ },
+ "conflicts": [
+  {
+   "chapter": "engineer",
+   "note": "Robert's lieutenant-colonelcy is dated three ways on the archive's own pages: 1 March 1805 from the London Gazette (The Corps), 29 April 1802 from Connolly's Roll (The Hornby Claim and the Spine's note), and 1 March 1803 in the Royal Military Calendar. The Corps keeps 1805 and records the disagreement."
+  },
+  {
+   "chapter": "engineer",
+   "note": "The Hornby Claim prints Robert as 1751–1827 and its table of 14 September still calls 1778 his first commission; his own page says born by 1758, and The Corps and two Army Lists date the first commission 17 January 1776."
+  },
+  {
+   "chapter": "major",
+   "note": "The surgeon's journal, read on Arrival, 1826, gives the detachment as 39 men; the home page and the Spine's note on George Pitt D'Arcy still say thirty."
+  },
+  {
+   "chapter": "scholar",
+   "note": "The Brisbane page says Eliza Keeling stepped off the Flying Cloud at Moreton Bay in January 1863; How They Got Here says how and when she reached Queensland is not recorded. The only source for the ship is a note in the family's tree."
+  },
+  {
+   "chapter": "sergeant",
+   "note": "The obituary and the Spine give Lindesay Atkinson D'Arcy's age at death as 44 (born July 1892, died November 1936); the Brisbane page says he died at forty-three."
+  },
+  {
+   "chapter": "ken",
+   "note": "The Spine's note on Kenneth says his birth, marriage, death and burial are all recorded; his own page grades him family-tree only, with one record read (the burial)."
+  }
+ ]
+}
