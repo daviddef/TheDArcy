@@ -73,6 +73,7 @@
     "chapter": "engineer",
     "person": "robert-d-arcy",
     "spousePerson": "jean-ward",
+    "spouseDirect": true,
     "title": "Second lieutenant of engineers 1776; Chatham, where he was buried in 1827. Where he came from is the family's story, not a paper's"
    },
    {
@@ -88,6 +89,7 @@
     "chapter": "major",
     "person": "george-pitt-d-arcy-1783",
     "spousePerson": "maria-catherine-whiite",
+    "spouseDirect": true,
     "title": "Born 1780 or 1783, the tree offering Portsmouth or the West Indies; Major of the 39th; at Parramatta from 1826"
    },
    {
@@ -103,6 +105,7 @@
     "chapter": "scholar",
     "person": "george-lindsay-d-arcy",
     "spousePerson": "eliza-keeling",
+    "spouseDirect": true,
     "title": "Born at Parramatta, christened at Sydney 1829; in Brisbane from 1863"
    },
    {
@@ -118,6 +121,7 @@
     "chapter": "railway",
     "person": "george-pitt-d-arcy-1864",
     "spousePerson": "ida-kathleen-atkinson",
+    "spouseDirect": true,
     "title": "Born at Brisbane 1864, the first of the line born in Queensland; found dead at Banyo in 1931"
    },
    {
@@ -133,6 +137,7 @@
     "chapter": "sergeant",
     "person": "lindesay-atkinson-d-arcy",
     "spousePerson": "ivy-miriam-sneyd",
+    "spouseDirect": true,
     "title": "Born at Brisbane 1892; of Botany Street, Clayfield, when he died in 1936"
    },
    {
@@ -148,6 +153,7 @@
     "chapter": "ken",
     "person": "kenneth-lindsay-d-arcy",
     "spousePerson": "audrey-dell-murdoch",
+    "spouseDirect": true,
     "title": "Born at Sandgate 1927; Brisbane, Townsville, Perth and Brisbane again"
    },
    {

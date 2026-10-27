@@ -1,0 +1,98 @@
+{
+ "_note": "Made by kit/tools/directline.py from the story's ribbon; do not edit by hand.",
+ "generationLabel": "generation",
+ "people": [
+  {
+   "slug": "robert-d-arcy",
+   "generation": 1,
+   "storyChapter": "engineer",
+   "name": "Robert D'Arcy"
+  },
+  {
+   "slug": "george-pitt-d-arcy-1783",
+   "generation": 2,
+   "storyChapter": "major",
+   "name": "George Pitt D'Arcy"
+  },
+  {
+   "slug": "george-lindsay-d-arcy",
+   "generation": 3,
+   "storyChapter": "scholar",
+   "name": "George Lindsay D'Arcy"
+  },
+  {
+   "slug": "george-pitt-d-arcy-1864",
+   "generation": 4,
+   "storyChapter": "railway",
+   "name": "George Pitt D'Arcy"
+  },
+  {
+   "slug": "lindesay-atkinson-d-arcy",
+   "generation": 5,
+   "storyChapter": "sergeant",
+   "name": "Lindesay Atkinson D'Arcy"
+  },
+  {
+   "slug": "kenneth-lindsay-d-arcy",
+   "generation": 6,
+   "storyChapter": "ken",
+   "name": "Kenneth Lindsay D'Arcy"
+  }
+ ],
+ "partners": [
+  {
+   "slug": "jean-ward",
+   "generation": 1,
+   "storyChapter": "engineer",
+   "partnerOf": "robert-d-arcy",
+   "name": "Jean Ward"
+  },
+  {
+   "slug": "maria-catherine-whiite",
+   "generation": 2,
+   "storyChapter": "major",
+   "partnerOf": "george-pitt-d-arcy-1783",
+   "name": "Maria"
+  },
+  {
+   "slug": "eliza-keeling",
+   "generation": 3,
+   "storyChapter": "scholar",
+   "partnerOf": "george-lindsay-d-arcy",
+   "name": "Eliza Keeling"
+  },
+  {
+   "slug": "ida-kathleen-atkinson",
+   "generation": 4,
+   "storyChapter": "railway",
+   "partnerOf": "george-pitt-d-arcy-1864",
+   "name": "Ida Kathleen Atkinson"
+  },
+  {
+   "slug": "ivy-miriam-sneyd",
+   "generation": 5,
+   "storyChapter": "sergeant",
+   "partnerOf": "lindesay-atkinson-d-arcy",
+   "name": "Ivy Miriam Sneyd"
+  },
+  {
+   "slug": "audrey-dell-murdoch",
+   "generation": 6,
+   "storyChapter": "ken",
+   "partnerOf": "kenneth-lindsay-d-arcy",
+   "name": "Audrey \"Dell\" Murdoch"
+  }
+ ],
+ "unlinked": [
+  {
+   "generation": 7,
+   "storyChapter": "living",
+   "name": "Ian Kenneth D'Arcy"
+  },
+  {
+   "generation": 8,
+   "storyChapter": "living",
+   "name": "Cristina Adele D'Arcy"
+  }
+ ]
+}

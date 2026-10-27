@@ -15,6 +15,10 @@ import PersonTree from "../../components/PersonTree.astro";
 import { CORRECTIONS } from "../../lib/corrections.js";
 import personRecords from "../../data/person-records.json";
 import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
+/* "On our direct line · generation n": the kit's band, for the people of src/data/direct-line.json (made from the story) and nobody else */
+import OursBand from "@daviddef/archive-kit/components/OursBand.astro";
+import directLine from "../../data/direct-line.json";
+import { oursOf } from "@daviddef/archive-kit/lib/directline.js";
 import { eraFor } from "../../lib/eraYear.js";
 import eraSnapshot from "../../data/era-snapshot.json";
 
@@ -275,6 +279,9 @@ const anyDamaged = notes.some((n) => n.damaged);
     A LIVING SPOUSE IS NEVER NAMED, which is why the spouse step filters on it;
     two people here have only living spouses and fall through to the last line. */}
 <Base title={p.name} eyebrow={life} dek={dek} livingPage={alive} canonical={dupCanonical}>
+
+  {/* the band under the name of someone on the story's direct line (27 October 2026); it draws nothing for anyone else */}
+  {oursOf(directLine, p.slug) && <section class="blk" style="padding-top:0;padding-bottom:0;border-bottom:0"><OursBand directLine={directLine} slug={p.slug} u={u} /></section>}
 
   {dup && (
   <section class="blk" style="padding-top:0" data-same-person={dup.slug}>

@@ -13,6 +13,7 @@ import { ledger, spanText, statusLine } from "@daviddef/archive-kit/lib/lines.js
 import { u } from "../lib/url.js";
 import { bySlug, nameIfPublishable } from "../lib/people.js";
 import lines from "../data/lines.json";
+import directLine from "../data/direct-line.json";
 
 /* the names of the people the data lists, and only those (the data lists the dead; the gate is given the living) */
 const listed = new Set(lines.lanes.flatMap((l) => [...(l.members || []), ...(l.nodes || []).map((n) => n.person).filter(Boolean)])
@@ -50,7 +51,7 @@ const nf = (n) => n.toLocaleString("en-GB");
     </p>
 
     <figure class="rivers">
-      <BranchRivers rivers={lines} title={lines.title} caption={lines.caption} names={names} />
+      <BranchRivers rivers={lines} title={lines.title} caption={lines.caption} names={names} directLine={directLine} />
     </figure>
   </section>
 

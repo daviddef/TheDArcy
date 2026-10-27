@@ -5,9 +5,11 @@
 import Base from "../layouts/Base.astro";
 import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
 import book from "../data/story.json";
+/* who is on the direct line: made from this story by the kit's directline.py (npm run check:directline holds it there) */
+import directLine from "../data/direct-line.json";
 import { u } from "../lib/url.js";
 const personHref = (slug) => u(`/people/${slug}/`);
 ---
 <Base title={book.title} eyebrow={book.eyebrow} dek={book.dek}>
-  <StoryBook book={book} personHref={personHref} u={u} />
+  <StoryBook book={book} personHref={personHref} u={u} directLine={directLine} />
 </Base>

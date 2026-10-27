@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Spine from "@daviddef/archive-kit/components/Spine.astro";
+import directLine from "../data/direct-line.json";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
@@ -271,12 +272,15 @@ const familyDoors = famData.map((f) => ({
   <section class="blk">
     <h2>Generation by generation</h2>
     <div class="spine" style="margin-top:1.4rem">
-      <Spine u={u} label="g" archiveKey="darcy" families={familyDoors} rows={shown.map((g) => {
+      <Spine u={u} label="g" archiveKey="darcy" families={familyDoors} directLine={directLine} rows={shown.map((g) => {
         const c = corr(g.id) || {};
         return {
           gen: g.gen ?? g.ahn,
           name: g.name,
           href: g.slug ? "/people/" + g.slug + "/" : "",
+          /* the person (by the tree id, never by name), so the kit can tint a row that is on the story's line
+             (direct-line.json); a row whose person is not in that file stays plain */
+          person: SLUG_BY_ID.get(g.id) || undefined,
           /* THE ROW WAS DROPPING THE WIVES, THE DEATHPLACES, THE TRADES,
              THE BROTHERS AND SISTERS AND THE SOURCES — all of which
              line.json already holds for most of these fifteen. A line
