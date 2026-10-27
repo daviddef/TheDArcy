@@ -84,3 +84,22 @@ is the kit's `checklines.py` on the built site (it is given the living slugs, wr
 another directory pass `--dist` by hand. Statuses are: D'Arcy origin-unknown (from 1776), Hornby family-lore, Saniger origin-unknown, Wakefield documented, Sneyd inferred,
 Atkinson inferred, Murdoch documented; the Keele descent is a different-stock pen. Change one only on what a page of the archive says.
 The pages that name many people (this one does) move `site/public/whoindex.json`, `searchindex.json` and `site/src/data/mentions.json`: regenerate and commit them with the page, or `check:whoindex` fails in CI.
+
+## The family ribbons and the direct-line tint (kit d88b11e, 27 October 2026)
+
+Every family page carries, at the top under its intro, that family's own generations as the kit's mini ribbon (`FamilyRibbon`) and under it
+"How our line connects". The pages: the 25 at `/families/<slug>/` (the thirteen clusters and the twelve family lines) and the Sanigers on
+`/saniger-line/`; the same ribbon is drawn again on `/murdoch/`, `/atkinson/` and `/wakefields/`. It is NOT on `/sneyd/` or `/sanigers/`: both are
+in the linking standard's scope, and the ribbon's names and record notes would raise their counts. The page component is
+`site/src/components/FamilyLine.astro`.
+
+- **Our line** is `site/src/data/direct-line.json`, written by the kit's `directline.py` from `story.json` (the six ribbon people and the six wives
+  marked `spouseDirect`, each the next number on the pedigree); `npm run check:directline` refuses a stale file. The tint (`is-ours`) is on the
+  story's ribbon and trees, the lines figure, the Spine and the band on those twelve person pages, and nowhere else.
+- **The data is made, never typed:** `node --import ./tools/jsonhooks.mjs tools/build_family_ribbons.mjs` writes
+  `site/src/data/family-ribbons.json` (the kit's contract; the name `family-lines.json` was already taken) and `family-no-ribbon.json`, reading
+  `site/src/lib/people.js` itself so names, slugs and years are the pages' own. `npm run check:family-data` refuses a stale file and
+  `npm run check:familyribbon` is the kit's gate on the data and the built pages. The rules (one father line off the numbered pedigree, nobody
+  living, nobody above the Hornby or Keele graft; a connection is documented only when provenance.json holds the record, else the grade of the
+  story paragraph quoted in the tool's `STORY_SAYS`, else the family's tree) are in the tool's header. Regenerate it when the pedigree, the story
+  or provenance changes, and commit `mentions.json`, `searchindex.json` and `whoindex.json` with it.

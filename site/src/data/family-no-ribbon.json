@@ -1,0 +1,61 @@
+{
+ "_note": "Made by tools/build_family_ribbons.mjs from ancestors.json, families.json, family-lines.json, provenance.json, lines.json, story.json and direct-line.json; do not edit by hand. The rule is in the tool's header. These families have no ribbon: nobody of the name on the numbered pedigree is dead and below a graft.",
+ "families": [
+  {
+   "id": "sutton",
+   "title": "Sutton",
+   "page": "/families/sutton/",
+   "notConnected": {
+    "why": "Everyone of the name on this archive's numbered pedigree stands above the Hornby join, the descent the family's tree claims above Robert D'Arcy, a single link this archive has looked for and not found; the nearest is Bridget Sutton (number 1025)."
+   }
+  },
+  {
+   "id": "von-der-pfalz",
+   "title": "von der Pfalz",
+   "page": "/families/von-der-pfalz/",
+   "notConnected": {
+    "why": "Everyone of the name on this archive's numbered pedigree stands above the Hornby join, the descent the family's tree claims above Robert D'Arcy, a single link this archive has looked for and not found; the nearest is Karoline Charlotte Elisabeth von der Pfalz (number 1027)."
+   }
+  },
+  {
+   "id": "howard",
+   "title": "Howard",
+   "page": "/families/howard/",
+   "notConnected": {
+    "why": "Everyone of the name on this archive's numbered pedigree stands above the Hornby join, the descent the family's tree claims above Robert D'Arcy, a single link this archive has looked for and not found; the nearest is Frances (Lady of Berkshire) Howard (number 2049)."
+   }
+  },
+  {
+   "id": "von-degenfeld",
+   "title": "von Degenfeld",
+   "page": "/families/von-degenfeld/",
+   "notConnected": {
+    "why": "Everyone of the name on this archive's numbered pedigree stands above the Hornby join, the descent the family's tree claims above Robert D'Arcy, a single link this archive has looked for and not found; the nearest is Marie Luise von Degenfeld (number 2055)."
+   }
+  },
+  {
+   "id": "schomberg",
+   "title": "Schomberg",
+   "page": "/families/schomberg/",
+   "notConnected": {
+    "why": "Everyone of the name on this archive's numbered pedigree stands above the Hornby join, the descent the family's tree claims above Robert D'Arcy, a single link this archive has looked for and not found; the nearest is Friederike Susanna Frederica von Schönburg (number 513)."
+   }
+  },
+  {
+   "id": "stuart",
+   "title": "Stuart",
+   "page": "/families/stuart/",
+   "notConnected": {
+    "why": "Everyone of the name on this archive's numbered pedigree stands above the Hornby join, the descent the family's tree claims above Robert D'Arcy, a single link this archive has looked for and not found; the nearest is Elizabeth (Queen consort of Bohemia) STUART (number 4109)."
+   }
+  },
+  {
+   "id": "noel",
+   "title": "Noel",
+   "page": "/families/noel/",
+   "notConnected": {
+    "why": "Everyone of the name on this archive's numbered pedigree stands above the Keele join, a link this archive has looked for in the right registers and found to be wrong; the nearest is Frances Noel (number 2305)."
+   }
+  }
+ ]
+}

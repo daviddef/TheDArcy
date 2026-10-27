@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import FamilyLine from "../components/FamilyLine.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import Scroll from "../components/Scroll.astro";
@@ -20,6 +21,9 @@ const shown = publishable(f.members);
     Valley, on 10 October 1888. Her father is the most engaging in-law in the archive, and the only
     one whose work you can still go and look at.</p>
   </section>
+
+  {/* the family's own generations and how our line connects (src/components/FamilyLine.astro; 27 October 2026) */}
+  <FamilyLine id="atkinson" />
 
   <Blk label="9 July 1832" title="Paul Cole Atkinson, christened at St Mary's Cathedral, Limerick">
 

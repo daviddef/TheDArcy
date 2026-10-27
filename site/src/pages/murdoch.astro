@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import FamilyLine from "../components/FamilyLine.astro";
 import Blk from "../components/Blk.astro";
 import { u } from "../lib/url.js";
 import { publishable, isLiving } from "../lib/people.js";
@@ -19,6 +20,9 @@ const shown = publishable(f.members);
     him in 1952 and stayed married for just under fifty-eight years.
     <a href={u("/documents/")}>Her children tell the story →</a></p>
   </section>
+
+  {/* the family's own generations and how our line connects (src/components/FamilyLine.astro; 27 October 2026) */}
+  <FamilyLine id="murdoch" />
 
   <section class="blk">
     <h2>Three generations, three hearts</h2>

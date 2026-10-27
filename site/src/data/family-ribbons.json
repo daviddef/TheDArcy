@@ -1,0 +1,1329 @@
+{
+ "_note": "Made by tools/build_family_ribbons.mjs from ancestors.json, families.json, family-lines.json, provenance.json, lines.json, story.json and direct-line.json; do not edit by hand. The rule is in the tool's header.",
+ "families": [
+  {
+   "id": "d-arcy",
+   "title": "D'Arcy",
+   "page": "/families/d-arcy/",
+   "status": "origin-unknown",
+   "statusNote": "Robert's parentage not found; the Hornby descent above him is drawn apart",
+   "span": [
+    1776,
+    null
+   ],
+   "cards": [
+    {
+     "name": "Robert D'Arcy",
+     "years": "by 1758–1827",
+     "origin": "Yorkshire, by family tradition",
+     "originGrade": "lore",
+     "spouse": "Jean Ward",
+     "spouseOrigin": "of South Leith",
+     "atPlace": "Chatham",
+     "atYear": "1805",
+     "living": false,
+     "person": "robert-d-arcy",
+     "spousePerson": "jean-ward",
+     "title": "Second lieutenant of engineers 1776; Chatham, where he was buried in 1827. Where he came from is the family's story, not a paper's"
+    },
+    {
+     "name": "George Pitt D'Arcy",
+     "years": "1780–1849",
+     "origin": "Portsmouth or the West Indies",
+     "originGrade": "lore",
+     "spouse": "Maria",
+     "spouseOrigin": "place not known",
+     "atPlace": "Parramatta",
+     "atYear": "1829",
+     "living": false,
+     "person": "george-pitt-d-arcy-1783",
+     "spousePerson": "maria-catherine-whiite",
+     "title": "Born 1780 or 1783, the tree offering Portsmouth or the West Indies; Major of the 39th; at Parramatta from 1826"
+    },
+    {
+     "name": "George Lindsay D'Arcy",
+     "years": "1829–1901",
+     "origin": "Parramatta",
+     "originGrade": "doc",
+     "spouse": "Eliza Keeling",
+     "spouseOrigin": "of London",
+     "atPlace": "Brisbane",
+     "atYear": "1863",
+     "living": false,
+     "person": "george-lindsay-d-arcy",
+     "spousePerson": "eliza-keeling",
+     "title": "Born at Parramatta, christened at Sydney 1829; in Brisbane from 1863"
+    },
+    {
+     "name": "George Pitt D'Arcy",
+     "years": "1864–1931",
+     "origin": "Brisbane",
+     "originGrade": "doc",
+     "spouse": "Ida Kathleen Atkinson",
+     "spouseOrigin": "of Brisbane",
+     "atPlace": "Banyo",
+     "atYear": "1931",
+     "living": false,
+     "person": "george-pitt-d-arcy-1864",
+     "spousePerson": "ida-kathleen-atkinson",
+     "title": "Born at Brisbane 1864, the first of the line born in Queensland; found dead at Banyo in 1931"
+    },
+    {
+     "name": "Lindesay Atkinson D'Arcy",
+     "years": "1892–1936",
+     "origin": "Brisbane",
+     "originGrade": "doc",
+     "spouse": "Ivy Miriam Sneyd",
+     "spouseOrigin": "of Boulia",
+     "atPlace": "Clayfield",
+     "atYear": "1936",
+     "living": false,
+     "person": "lindesay-atkinson-d-arcy",
+     "spousePerson": "ivy-miriam-sneyd",
+     "title": "Born at Brisbane 1892; of Botany Street, Clayfield, when he died in 1936"
+    },
+    {
+     "name": "Kenneth Lindsay D'Arcy",
+     "years": "1927–2010",
+     "origin": "Sandgate",
+     "originGrade": "doc",
+     "spouse": "Audrey \"Dell\" Murdoch",
+     "spouseOrigin": "of Toowoomba",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "kenneth-lindsay-d-arcy",
+     "spousePerson": "audrey-dell-murdoch",
+     "title": "Born at Sandgate 1927; Brisbane, Townsville, Perth and Brisbane again"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "george-pitt-d-arcy-1783",
+     "ourGeneration": 2,
+     "theirSlug": "robert-d-arcy",
+     "theirName": "Robert D'Arcy",
+     "theirOrigin": "of Yorkshire, by family tradition",
+     "relation": "son of",
+     "grade": "inf",
+     "storyHref": "/story/#major",
+     "note": "He was almost certainly Robert's son, though no paper names his father."
+    },
+    {
+     "ourSlug": "george-lindsay-d-arcy",
+     "ourGeneration": 3,
+     "theirSlug": "george-pitt-d-arcy-1783",
+     "theirName": "George Pitt D'Arcy",
+     "theirOrigin": "of Portsmouth or the West Indies",
+     "relation": "son of",
+     "grade": "doc",
+     "storyHref": "/story/#major",
+     "note": "He was christened at St James's, Sydney, on 5 November, «father George Pitt Darcy, mother Maria»."
+    },
+    {
+     "ourSlug": "george-pitt-d-arcy-1864",
+     "ourGeneration": 4,
+     "theirSlug": "george-lindsay-d-arcy",
+     "theirName": "George Lindsay D'Arcy",
+     "theirOrigin": "of Parramatta",
+     "relation": "son of",
+     "grade": "doc",
+     "storyHref": "/story/#railway",
+     "note": "Read: Qld death reg. 1931, parents named."
+    },
+    {
+     "ourSlug": "lindesay-atkinson-d-arcy",
+     "ourGeneration": 5,
+     "theirSlug": "george-pitt-d-arcy-1864",
+     "theirName": "George Pitt D'Arcy",
+     "theirOrigin": "of Brisbane",
+     "relation": "son of",
+     "grade": "doc",
+     "storyHref": "/story/#sergeant",
+     "note": "Lindesay Atkinson D'Arcy was born in Brisbane on 15 July 1892, the only son of the railway clerk …"
+    },
+    {
+     "ourSlug": "kenneth-lindsay-d-arcy",
+     "ourGeneration": 6,
+     "theirSlug": "lindesay-atkinson-d-arcy",
+     "theirName": "Lindesay Atkinson D'Arcy",
+     "theirOrigin": "of Brisbane",
+     "relation": "son of",
+     "grade": "inf",
+     "storyHref": "/story/#ken",
+     "note": "No record the archive has read names his parents."
+    }
+   ]
+  },
+  {
+   "id": "sneyd",
+   "title": "Sneyd",
+   "page": "/families/sneyd/",
+   "status": "inferred",
+   "statusNote": "origin inferred: the 1781 Madeley baptism is the best candidate, not proved",
+   "span": [
+    1811,
+    1885
+   ],
+   "cards": [
+    {
+     "name": "William Sneyd",
+     "years": "b. 1746",
+     "origin": "Madeley, Staffordshire",
+     "originGrade": "lore",
+     "spouse": "Mary Blackbourne",
+     "spouseOrigin": "of Staffordshire, England",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-sneyd-1746",
+     "spousePerson": "mary-blackbourne",
+     "title": ""
+    },
+    {
+     "name": "Samuel Sneyd",
+     "years": "1781–1855",
+     "origin": "Madeley",
+     "originGrade": "inf",
+     "spouse": "Elizabeth Margaret Oliver",
+     "spouseOrigin": "of Oswestry, Shropshire",
+     "atPlace": "Hanley",
+     "atYear": "1855",
+     "living": false,
+     "person": "samuel-sneyd",
+     "spousePerson": "elizabeth-margaret-oliver",
+     "title": "Samuel Sneyd baptised 4 June, father William: the best candidate for the Hanley grocer, not proved."
+    },
+    {
+     "name": "Samuel Charles Sneyd",
+     "years": "1811–1885",
+     "origin": "Hanley",
+     "originGrade": "doc",
+     "spouse": "Catherine Margaret Mulcahy",
+     "spouseOrigin": "of Cork, Cork City, Ireland",
+     "atPlace": "Brisbane",
+     "atYear": "1885",
+     "living": false,
+     "person": "samuel-charles-sneyd-1810",
+     "spousePerson": "catherine-margaret-mulcahy",
+     "title": "Samuel Charles Sneyd christened 28 April, son of Samuel."
+    },
+    {
+     "name": "William Hartley Sneyd",
+     "years": "1837–1902",
+     "origin": "Kempsey, New South Wales",
+     "originGrade": "lore",
+     "spouse": "Miriam Wakefield",
+     "spouseOrigin": "of St Paul, Bristol",
+     "atPlace": "Brisbane",
+     "atYear": "1902",
+     "living": false,
+     "person": "william-hartley-sneyd",
+     "spousePerson": "miriam-wakefield",
+     "title": ""
+    },
+    {
+     "name": "Arthur William Hartley Sneyd",
+     "years": "1866–1922",
+     "origin": "Brisbane, Queensland",
+     "originGrade": "lore",
+     "spouse": "Martha Blum",
+     "spouseOrigin": "of Rockhampton, Queensland",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "arthur-william-hartley-sneyd",
+     "spousePerson": "martha-blum",
+     "title": ""
+    },
+    {
+     "name": "Ivy Miriam Sneyd",
+     "years": "1891–1979",
+     "origin": "Boulia, Boulia Shire",
+     "originGrade": "lore",
+     "spouse": "Lindesay Atkinson D'Arcy",
+     "spouseOrigin": "of Brisbane",
+     "atPlace": "Brisbane",
+     "atYear": "1979",
+     "living": false,
+     "person": "ivy-miriam-sneyd",
+     "spousePerson": "lindesay-atkinson-d-arcy",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "lindesay-atkinson-d-arcy",
+     "ourGeneration": 5,
+     "theirSlug": "ivy-miriam-sneyd",
+     "theirName": "Ivy Miriam Sneyd",
+     "theirOrigin": "of Boulia, Boulia Shire",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#sergeant",
+     "note": "Read: NAA J34 C34558, pension beneficiary."
+    },
+    {
+     "ourSlug": "kenneth-lindsay-d-arcy",
+     "ourGeneration": 6,
+     "theirSlug": "ivy-miriam-sneyd",
+     "theirName": "Ivy Miriam Sneyd",
+     "theirOrigin": "of Boulia, Boulia Shire",
+     "relation": "son of",
+     "grade": "inf",
+     "storyHref": "/story/#ken",
+     "note": "No record the archive has read names his parents."
+    }
+   ]
+  },
+  {
+   "id": "atkinson",
+   "title": "Atkinson",
+   "page": "/families/atkinson/",
+   "status": "inferred",
+   "statusNote": "five generations above rest on the tree alone",
+   "span": [
+    1832,
+    1906
+   ],
+   "cards": [
+    {
+     "name": "Richard Atkinson",
+     "years": "b. 1725",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Mary Love",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "richard-atkinson-1725",
+     "spousePerson": "mary-love",
+     "title": ""
+    },
+    {
+     "name": "Richard Atkinson",
+     "years": "1765–1826",
+     "origin": "Limerick, County Limerick",
+     "originGrade": "lore",
+     "spouse": "Rose Cole",
+     "spouseOrigin": "of (about) Limerick City",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "richard-atkinson-1765",
+     "spousePerson": "rose-cole",
+     "title": ""
+    },
+    {
+     "name": "Richard Atkinson",
+     "years": "1801–1865",
+     "origin": "Limerick City, Ireland",
+     "originGrade": "lore",
+     "spouse": "Ann Kent",
+     "spouseOrigin": "of Limerick, Ireland",
+     "atPlace": "Limerick",
+     "atYear": "1865",
+     "living": false,
+     "person": "richard-atkinson-1801",
+     "spousePerson": "ann-kent",
+     "title": ""
+    },
+    {
+     "name": "Paul Cole Atkinson",
+     "years": "1832–1906",
+     "origin": "Limerick",
+     "originGrade": "doc",
+     "spouse": "Jane Creech",
+     "spouseOrigin": "of Limerick, Ireland",
+     "atPlace": "South Brisbane",
+     "atYear": "1906",
+     "living": false,
+     "person": "paul-cole-atkinson",
+     "spousePerson": "jane-creech",
+     "title": "Paul Cole Atkinson christened 9 July, St Mary's Cathedral: the record that names Richard and Anne."
+    },
+    {
+     "name": "Ida Kathleen Atkinson",
+     "years": "1869–1937",
+     "origin": "Brisbane, Queensland",
+     "originGrade": "lore",
+     "spouse": "George Pitt D'Arcy",
+     "spouseOrigin": "of Brisbane",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "ida-kathleen-atkinson",
+     "spousePerson": "george-pitt-d-arcy-1864",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "george-pitt-d-arcy-1864",
+     "ourGeneration": 4,
+     "theirSlug": "ida-kathleen-atkinson",
+     "theirName": "Ida Kathleen Atkinson",
+     "theirOrigin": "of Brisbane, Queensland",
+     "relation": "married",
+     "grade": "lore",
+     "storyHref": "/story/#railway",
+     "note": "On 10 October 1888 he married Ida Kathleen Atkinson at Trinity Church, Fortitude Valley."
+    },
+    {
+     "ourSlug": "lindesay-atkinson-d-arcy",
+     "ourGeneration": 5,
+     "theirSlug": "ida-kathleen-atkinson",
+     "theirName": "Ida Kathleen Atkinson",
+     "theirOrigin": "of Brisbane, Queensland",
+     "relation": "son of",
+     "grade": "lore",
+     "storyHref": "/story/#railway",
+     "note": "The tree gives her birth at Brisbane in 1869 and four children: Hilda Georgina in 1890, Lindesay Atkinson in 1892 …"
+    }
+   ]
+  },
+  {
+   "id": "murdoch",
+   "title": "Murdoch",
+   "page": "/families/murdoch/",
+   "status": "documented",
+   "statusNote": "Scottish statutory register names the parents of William",
+   "span": [
+    1854,
+    null
+   ],
+   "cards": [
+    {
+     "name": "Francis Murdoch",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "",
+     "spouseOrigin": "",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "francis-murdoch",
+     "title": ""
+    },
+    {
+     "name": "Claud Murdoch",
+     "years": "1799–1872",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Janet Walker",
+     "spouseOrigin": "place not known",
+     "atPlace": "Ayr",
+     "atYear": "1872",
+     "living": false,
+     "person": "claud-murdoch",
+     "spousePerson": "janet-walker",
+     "title": ""
+    },
+    {
+     "name": "Francis Murdoch",
+     "years": "1824–1909",
+     "origin": "St Quivox, Ayr, Sctl",
+     "originGrade": "lore",
+     "spouse": "Marion Watt",
+     "spouseOrigin": "of St Quivox, Ayrshire",
+     "atPlace": "Ayr",
+     "atYear": "1909",
+     "living": false,
+     "person": "francis-murdoch-1824",
+     "spousePerson": "marion-watt",
+     "title": ""
+    },
+    {
+     "name": "William Murdoch",
+     "years": "1856–1918",
+     "origin": "St Quivox",
+     "originGrade": "doc",
+     "spouse": "Catherine Jane Matson",
+     "spouseOrigin": "of Cornacrieve Cornacreeve",
+     "atPlace": "Toowoomba",
+     "atYear": "1918",
+     "living": false,
+     "person": "william-murdoch",
+     "spousePerson": "catherine-jane-matson",
+     "title": "William Murdoch born 7 October; the statutory register names Francis Murdoch and Marion Watt."
+    },
+    {
+     "name": "William James Fraser \"Bill\" Murdoch",
+     "years": "1894–1946",
+     "origin": "Gympie",
+     "originGrade": "lore",
+     "spouse": "Barbara (nickname 'Goldie') Atwell",
+     "spouseOrigin": "of Toowoomba, australia",
+     "atPlace": "Brisbane",
+     "atYear": "1946",
+     "living": false,
+     "person": "william-james-fraser-bill-murdoch",
+     "spousePerson": "barbara-nickname-goldie-atwell",
+     "title": "William James Fraser Murdoch born at Gympie, Queensland: the generation that emigrated has arrived."
+    },
+    {
+     "name": "Audrey \"Dell\" Murdoch",
+     "years": "1929–2022",
+     "origin": "Toowoomba Q'ld Australia",
+     "originGrade": "lore",
+     "spouse": "Kenneth Lindsay D'Arcy",
+     "spouseOrigin": "of Sandgate",
+     "atPlace": "Brisbane",
+     "atYear": "2022",
+     "living": false,
+     "person": "audrey-dell-murdoch",
+     "spousePerson": "kenneth-lindsay-d-arcy",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "kenneth-lindsay-d-arcy",
+     "ourGeneration": 6,
+     "theirSlug": "audrey-dell-murdoch",
+     "theirName": "Audrey \"Dell\" Murdoch",
+     "theirOrigin": "of Toowoomba Q'ld Australia",
+     "relation": "married",
+     "grade": "lore",
+     "storyHref": "/story/#ken",
+     "note": "On 5 April 1952 they were married, at Toowoomba by the tree's account."
+    }
+   ]
+  },
+  {
+   "id": "atwell",
+   "title": "Atwell",
+   "page": "/families/atwell/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "Joseph Atwell",
+     "years": "b. 1787",
+     "origin": "Teddington, Middlesex",
+     "originGrade": "lore",
+     "spouse": "Elizabeth Atwell",
+     "spouseOrigin": "of Putney, Surrey, England",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "joseph-atwell",
+     "spousePerson": "elizabeth-atwell",
+     "title": ""
+    },
+    {
+     "name": "John Atwell",
+     "years": "1824–1873",
+     "origin": "Somerset, England",
+     "originGrade": "lore",
+     "spouse": "Maria Rossiter",
+     "spouseOrigin": "of Long Ashton, Somerset, Eng",
+     "atPlace": "Butcombe Som Eng",
+     "atYear": "1873",
+     "living": false,
+     "person": "john-atwell-1824",
+     "spousePerson": "maria-rossiter",
+     "title": ""
+    },
+    {
+     "name": "James Atwell",
+     "years": "1853–1907",
+     "origin": "St. Pauls Hammersmith",
+     "originGrade": "lore",
+     "spouse": "Sarah Wright",
+     "spouseOrigin": "of Douglas, Lanarkshire",
+     "atPlace": "Toowoomba",
+     "atYear": "1907",
+     "living": false,
+     "person": "james-atwell-1853",
+     "spousePerson": "sarah-wright",
+     "title": ""
+    },
+    {
+     "name": "Barbara (nickname 'Goldie') Atwell",
+     "years": "1897–1989",
+     "origin": "Toowoomba, australia",
+     "originGrade": "lore",
+     "spouse": "William James Fraser \"Bill\" Murdoch",
+     "spouseOrigin": "of Gympie",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "barbara-nickname-goldie-atwell",
+     "spousePerson": "william-james-fraser-bill-murdoch",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "audrey-dell-murdoch",
+     "ourGeneration": 6,
+     "theirSlug": "barbara-nickname-goldie-atwell",
+     "theirName": "Barbara (nickname 'Goldie') Atwell",
+     "theirOrigin": "of Toowoomba, australia",
+     "relation": "daughter of",
+     "grade": "lore",
+     "storyHref": "/story/#ken",
+     "note": "The family's tree; no record of it is read here, and the story does not tell it."
+    }
+   ]
+  },
+  {
+   "id": "blum",
+   "title": "Blum",
+   "page": "/families/blum/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "Conrad Blum",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Hannah Elizabeth (possibly Alm Eliza) Gautz",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "conrad-blum",
+     "spousePerson": "hannah-elizabeth-possibly-alm-eliza-gautz",
+     "title": ""
+    },
+    {
+     "name": "John Blum",
+     "years": "1842–1899",
+     "origin": "Germany",
+     "originGrade": "lore",
+     "spouse": "Mary Ann O'Brien",
+     "spouseOrigin": "of Cork, Ireland",
+     "atPlace": "Queenland",
+     "atYear": "1899",
+     "living": false,
+     "person": "john-blum-1842",
+     "spousePerson": "mary-ann-o-brien",
+     "title": ""
+    },
+    {
+     "name": "Martha Blum",
+     "years": "1870–1904",
+     "origin": "Rockhampton, Queensland",
+     "originGrade": "lore",
+     "spouse": "Arthur William Hartley Sneyd",
+     "spouseOrigin": "of Brisbane, Queensland",
+     "atPlace": "Brisbane",
+     "atYear": "1904",
+     "living": false,
+     "person": "martha-blum",
+     "spousePerson": "arthur-william-hartley-sneyd",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "ivy-miriam-sneyd",
+     "ourGeneration": 5,
+     "theirSlug": "martha-blum",
+     "theirName": "Martha Blum",
+     "theirOrigin": "of Rockhampton, Queensland",
+     "relation": "daughter of",
+     "grade": "lore",
+     "storyHref": "/story/#sergeant",
+     "note": "The tree has her born at Boulia on 31 October 1891, to Arthur William Hartley Sneyd and Martha Blum …"
+    }
+   ]
+  },
+  {
+   "id": "keeling",
+   "title": "Keeling",
+   "page": "/families/keeling/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "George Keeling",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Elizabeth Keeling",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "george-keeling",
+     "spousePerson": "elizabeth-keeling",
+     "title": ""
+    },
+    {
+     "name": "Eliza Keeling",
+     "years": "1837–1918",
+     "origin": "London, Middlesex, England",
+     "originGrade": "lore",
+     "spouse": "George Lindsay D'Arcy",
+     "spouseOrigin": "of Parramatta",
+     "atPlace": "Brisbane",
+     "atYear": "1918",
+     "living": false,
+     "person": "eliza-keeling",
+     "spousePerson": "george-lindsay-d-arcy",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "george-lindsay-d-arcy",
+     "ourGeneration": 3,
+     "theirSlug": "eliza-keeling",
+     "theirName": "Eliza Keeling",
+     "theirOrigin": "of London, Middlesex, England",
+     "relation": "married",
+     "grade": "lore",
+     "storyHref": "/story/#scholar",
+     "note": "That same year, on 7 June 1863, he married Eliza Keeling."
+    },
+    {
+     "ourSlug": "george-pitt-d-arcy-1864",
+     "ourGeneration": 4,
+     "theirSlug": "eliza-keeling",
+     "theirName": "Eliza Keeling",
+     "theirOrigin": "of London, Middlesex, England",
+     "relation": "son of",
+     "grade": "doc",
+     "storyHref": "/story/#railway",
+     "note": "Read: Qld death reg. 1931, parents named."
+    }
+   ]
+  },
+  {
+   "id": "creech",
+   "title": "Creech",
+   "page": "/families/creech/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "Samuel Creech",
+     "years": "1799–1847",
+     "origin": "Bandon, County Cork, Ireland",
+     "originGrade": "lore",
+     "spouse": "Elizabeth Creech",
+     "spouseOrigin": "of County Cork, Ireland",
+     "atPlace": "Ballymodan",
+     "atYear": "1847",
+     "living": false,
+     "person": "samuel-creech",
+     "spousePerson": "elizabeth-creech",
+     "title": ""
+    },
+    {
+     "name": "Jane Creech",
+     "years": "1830–1885",
+     "origin": "Limerick, Ireland",
+     "originGrade": "lore",
+     "spouse": "Paul Cole Atkinson",
+     "spouseOrigin": "of Limerick",
+     "atPlace": "Brisbane",
+     "atYear": "1885",
+     "living": false,
+     "person": "jane-creech",
+     "spousePerson": "paul-cole-atkinson",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "ida-kathleen-atkinson",
+     "ourGeneration": 4,
+     "theirSlug": "jane-creech",
+     "theirName": "Jane Creech",
+     "theirOrigin": "of Limerick, Ireland",
+     "relation": "daughter of",
+     "grade": "lore",
+     "storyHref": "/story/#railway",
+     "note": "Ida's mother, Jane Creech, was of Limerick too, by the family's tree."
+    }
+   ]
+  },
+  {
+   "id": "matson",
+   "title": "Matson",
+   "page": "/families/matson/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "William Matson",
+     "years": "",
+     "origin": "Ireland",
+     "originGrade": "lore",
+     "spouse": "Mary Abbot",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-matson",
+     "spousePerson": "mary-abbot",
+     "title": ""
+    },
+    {
+     "name": "Catherine Jane Matson",
+     "years": "1862–1914",
+     "origin": "Cornacrieve Cornacreeve",
+     "originGrade": "lore",
+     "spouse": "William Murdoch",
+     "spouseOrigin": "of St Quivox",
+     "atPlace": "Toowoomba",
+     "atYear": "1914",
+     "living": false,
+     "person": "catherine-jane-matson",
+     "spousePerson": "william-murdoch",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Catherine Jane Matson (number 21), grandmother of Audrey \"Dell\" Murdoch, who is on our line at generation 6."
+   }
+  },
+  {
+   "id": "wakefield",
+   "title": "Wakefield",
+   "page": "/families/wakefield/",
+   "status": "documented",
+   "statusNote": "James's baptism names his parents",
+   "span": [
+    1806,
+    1857
+   ],
+   "cards": [
+    {
+     "name": "James Wakefield",
+     "years": "1806–1857",
+     "origin": "Stroud",
+     "originGrade": "doc",
+     "spouse": "Hannah SANIGER",
+     "spouseOrigin": "of Berkeley",
+     "atPlace": "Brisbane",
+     "atYear": "1857",
+     "living": false,
+     "person": "james-wakefield",
+     "spousePerson": "hannah-saniger",
+     "title": "James Wakefield baptised 6 April: father Richard, mother Elizabeth Webb."
+    },
+    {
+     "name": "Miriam Wakefield",
+     "years": "1840–1909",
+     "origin": "St Paul, Bristol",
+     "originGrade": "lore",
+     "spouse": "William Hartley Sneyd",
+     "spouseOrigin": "of Kempsey, New South Wales",
+     "atPlace": "Brisbane",
+     "atYear": "1909",
+     "living": false,
+     "person": "miriam-wakefield",
+     "spousePerson": "william-hartley-sneyd",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Miriam Wakefield (number 37), grandmother of Ivy Miriam Sneyd, who is on our line at generation 5."
+   }
+  },
+  {
+   "id": "wright",
+   "title": "Wright",
+   "page": "/families/wright/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "John Wright",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Agnes Isabel Scott?",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "john-wright",
+     "spousePerson": "agnes-isabel-scott",
+     "title": ""
+    },
+    {
+     "name": "Sarah Wright",
+     "years": "1862–1941",
+     "origin": "Douglas, Lanarkshire",
+     "originGrade": "lore",
+     "spouse": "James Atwell",
+     "spouseOrigin": "of St. Pauls Hammersmith",
+     "atPlace": "Queensland",
+     "atYear": "1941",
+     "living": false,
+     "person": "sarah-wright",
+     "spousePerson": "james-atwell-1853",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Sarah Wright (number 23), grandmother of Audrey \"Dell\" Murdoch, who is on our line at generation 6."
+   }
+  },
+  {
+   "id": "rossiter",
+   "title": "Rossiter",
+   "page": "/families/rossiter/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "Aaron Rossiter",
+     "years": "1754–1795",
+     "origin": "Aller, Som., Eng.",
+     "originGrade": "lore",
+     "spouse": "Ellen Gillard",
+     "spouseOrigin": "of Aller, Som., Eng.",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "aaron-rossiter",
+     "spousePerson": "ellen-gillard",
+     "title": ""
+    },
+    {
+     "name": "James Rossiter",
+     "years": "1794–1883",
+     "origin": "Aller, Somerset, England",
+     "originGrade": "lore",
+     "spouse": "Maria \"Beacham\" Beecham",
+     "spouseOrigin": "of Long Ashton, Somerset",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "james-rossiter-1794",
+     "spousePerson": "maria-beacham-beecham",
+     "title": ""
+    },
+    {
+     "name": "Maria Rossiter",
+     "years": "1824–1889",
+     "origin": "Long Ashton, Somerset, Eng",
+     "originGrade": "lore",
+     "spouse": "John Atwell",
+     "spouseOrigin": "of Somerset, England",
+     "atPlace": "Brisbane",
+     "atYear": "1889",
+     "living": false,
+     "person": "maria-rossiter",
+     "spousePerson": "john-atwell-1824",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Maria Rossiter (number 45), great-grandmother of Audrey \"Dell\" Murdoch, who is on our line at generation 6."
+   }
+  },
+  {
+   "id": "watt",
+   "title": "Watt",
+   "page": "/families/watt/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "William Watt",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Marion Fleming",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-watt",
+     "spousePerson": "marion-fleming",
+     "title": ""
+    },
+    {
+     "name": "Marion Watt",
+     "years": "1840–1910",
+     "origin": "St Quivox, Ayrshire",
+     "originGrade": "lore",
+     "spouse": "Francis Murdoch",
+     "spouseOrigin": "of St Quivox, Ayr, Sctl",
+     "atPlace": "Ayr",
+     "atYear": "1910",
+     "living": false,
+     "person": "marion-watt",
+     "spousePerson": "francis-murdoch-1824",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Marion Watt (number 41), great-grandmother of Audrey \"Dell\" Murdoch, who is on our line at generation 6."
+   }
+  },
+  {
+   "id": "cotton",
+   "title": "Cotton",
+   "page": "/families/cotton/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "Edward Cotton",
+     "years": "1687–1722",
+     "origin": "Ashton Under Hill",
+     "originGrade": "lore",
+     "spouse": "Lydia Lyon",
+     "spouseOrigin": "of Maket Drayton, Shropshire",
+     "atPlace": "Ashton",
+     "atYear": "1722",
+     "living": false,
+     "person": "edward-cotton-1687",
+     "spousePerson": "lydia-lyon",
+     "title": ""
+    },
+    {
+     "name": "Edward Cotton",
+     "years": "1716–1787",
+     "origin": "Ashton Underhill, Gloucester",
+     "originGrade": "lore",
+     "spouse": "Elizabeth",
+     "spouseOrigin": "of Ashton Underhill, Gloucester",
+     "atPlace": "Ashton under Hill",
+     "atYear": "1787",
+     "living": false,
+     "person": "edward-cotton-1716",
+     "spousePerson": "elizabeth",
+     "title": ""
+    },
+    {
+     "name": "Catherine Cotton",
+     "years": "1746–1778",
+     "origin": "Berkeley, Gloucester",
+     "originGrade": "lore",
+     "spouse": "Thomas Saniger",
+     "spouseOrigin": "of Berkeley",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "catherine-cotton",
+     "spousePerson": "thomas-saniger-1744",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Catherine Cotton (number 301), great-great-great-grandmother of Ivy Miriam Sneyd, who is on our line at generation 5."
+   }
+  },
+  {
+   "id": "kent",
+   "title": "Kent",
+   "page": "/families/kent/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "Robert Kent",
+     "years": "1740–1775",
+     "origin": "Limerick, County Limerick",
+     "originGrade": "lore",
+     "spouse": "Ann Peevers",
+     "spouseOrigin": "of Limerick, County Limerick",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "robert-kent",
+     "spousePerson": "ann-peevers",
+     "title": ""
+    },
+    {
+     "name": "William Kent",
+     "years": "b. 1767",
+     "origin": "Limerick, Ireland",
+     "originGrade": "lore",
+     "spouse": "Mary Bowen",
+     "spouseOrigin": "of Limerick, Ireland",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-kent",
+     "spousePerson": "mary-bowen",
+     "title": ""
+    },
+    {
+     "name": "Ann Kent",
+     "years": "1805–1880",
+     "origin": "Limerick, Ireland",
+     "originGrade": "lore",
+     "spouse": "Richard Atkinson",
+     "spouseOrigin": "of Limerick City, Ireland",
+     "atPlace": "Somerton",
+     "atYear": "1880",
+     "living": false,
+     "person": "ann-kent",
+     "spousePerson": "richard-atkinson-1801",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Ann Kent (number 69), grandmother of Ida Kathleen Atkinson, who is on our line at generation 4."
+   }
+  },
+  {
+   "id": "jones",
+   "title": "Jones",
+   "page": "/families/jones/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "William Jones",
+     "years": "b. 1722",
+     "origin": "Brimpsfield, Gloucester",
+     "originGrade": "lore",
+     "spouse": "Sarah",
+     "spouseOrigin": "of Bisley, Gloucestershire",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-jones",
+     "spousePerson": "sarah",
+     "title": ""
+    },
+    {
+     "name": "Lydia Jones",
+     "years": "1770–1851",
+     "origin": "Wotton-under-Edge",
+     "originGrade": "lore",
+     "spouse": "John Saniger",
+     "spouseOrigin": "of Berkeley",
+     "atPlace": "Berkeley",
+     "atYear": "1851",
+     "living": false,
+     "person": "lydia-jones",
+     "spousePerson": "john-saniger",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Lydia Jones (number 151), great-great-grandmother of Ivy Miriam Sneyd, who is on our line at generation 5."
+   }
+  },
+  {
+   "id": "ward",
+   "title": "Ward",
+   "page": "/families/ward/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "William Ward",
+     "years": "b. 1700",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Martha Lewis",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-ward",
+     "spousePerson": "martha-lewis",
+     "title": ""
+    },
+    {
+     "name": "Joseph Ward",
+     "years": "b. 1725",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Martha Garden",
+     "spouseOrigin": "of Scotland",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "joseph-ward",
+     "spousePerson": "martha-garden",
+     "title": ""
+    },
+    {
+     "name": "Jean Ward",
+     "years": "1754–1823",
+     "origin": "South Leith, Midlothian",
+     "originGrade": "lore",
+     "spouse": "Robert D'Arcy",
+     "spouseOrigin": "of Yorkshire, by family tradition",
+     "atPlace": "Chatham",
+     "atYear": "1823",
+     "living": false,
+     "person": "jean-ward",
+     "spousePerson": "robert-d-arcy",
+     "title": ""
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "robert-d-arcy",
+     "ourGeneration": 1,
+     "theirSlug": "jean-ward",
+     "theirName": "Jean Ward",
+     "theirOrigin": "of South Leith, Midlothian",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#engineer",
+     "note": "Read: named together as parents, Portsea, 19 Mar 1780."
+    },
+    {
+     "ourSlug": "george-pitt-d-arcy-1783",
+     "ourGeneration": 2,
+     "theirSlug": "jean-ward",
+     "theirName": "Jean Ward",
+     "theirOrigin": "of South Leith, Midlothian",
+     "relation": "son of",
+     "grade": "inf",
+     "storyHref": "/story/#engineer",
+     "note": "That George Pitt was one of these sons is the archive's reasoning from a newspaper, set out in the next chapter."
+    }
+   ]
+  },
+  {
+   "id": "blackbourne",
+   "title": "Blackbourne",
+   "page": "/families/blackbourne/",
+   "status": "family-lore",
+   "statusNote": "no lane on the lines page; every card here rests on the family's tree",
+   "cards": [
+    {
+     "name": "Samuel Blackbourne",
+     "years": "b. 1717",
+     "origin": "Castle Church, Stafford",
+     "originGrade": "lore",
+     "spouse": "",
+     "spouseOrigin": "",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "samuel-blackbourne",
+     "title": ""
+    },
+    {
+     "name": "Mary Blackbourne",
+     "years": "1748–1835",
+     "origin": "Staffordshire, England",
+     "originGrade": "lore",
+     "spouse": "William Sneyd",
+     "spouseOrigin": "of Madeley, Staffordshire",
+     "atPlace": "Madeley",
+     "atYear": "1835",
+     "living": false,
+     "person": "mary-blackbourne",
+     "spousePerson": "william-sneyd-1746",
+     "title": ""
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Mary Blackbourne (number 289), great-great-great-grandmother of Ivy Miriam Sneyd, who is on our line at generation 5."
+   }
+  },
+  {
+   "id": "saniger",
+   "title": "Saniger",
+   "page": "/saniger-line/",
+   "status": "origin-unknown",
+   "statusNote": "origin not found: the deepest William is a name in a register",
+   "span": [
+    1679,
+    1804
+   ],
+   "cards": [
+    {
+     "name": "William Sanigar",
+     "years": "b. 1654",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "Mary",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-sanigar",
+     "spousePerson": "mary",
+     "title": ""
+    },
+    {
+     "name": "William Saniger",
+     "years": "1679–1718",
+     "origin": "Berkeley",
+     "originGrade": "doc",
+     "spouse": "Bridget Bayley",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "william-saniger",
+     "spousePerson": "bridget-bayley",
+     "title": "William Saniger baptised 12 October, father William."
+    },
+    {
+     "name": "Thomas Saniger",
+     "years": "b. 1711",
+     "origin": "Berkeley, Gloucester",
+     "originGrade": "lore",
+     "spouse": "Margaret Richards",
+     "spouseOrigin": "of Parish of Elmore",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "thomas-saniger-1711",
+     "spousePerson": "margaret-richards",
+     "title": ""
+    },
+    {
+     "name": "Thomas Saniger",
+     "years": "1744–1819",
+     "origin": "Berkeley",
+     "originGrade": "doc",
+     "spouse": "Catherine Cotton",
+     "spouseOrigin": "of Berkeley, Gloucester",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "thomas-saniger-1744",
+     "spousePerson": "catherine-cotton",
+     "title": "Thomas Saniger baptised 23 August, father Thomas."
+    },
+    {
+     "name": "John Saniger",
+     "years": "1769–1825",
+     "origin": "Berkeley",
+     "originGrade": "doc",
+     "spouse": "Lydia Jones",
+     "spouseOrigin": "of Wotton-under-Edge",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "john-saniger",
+     "spousePerson": "lydia-jones",
+     "title": "Thomas marries Catherine Cotton on 10 April; John is christened five weeks later."
+    },
+    {
+     "name": "Hannah SANIGER",
+     "years": "1805–1873",
+     "origin": "Berkeley",
+     "originGrade": "doc",
+     "spouse": "James Wakefield",
+     "spouseOrigin": "of Stroud",
+     "atPlace": "Rockhampton",
+     "atYear": "1873",
+     "living": false,
+     "person": "hannah-saniger",
+     "spousePerson": "james-wakefield",
+     "title": "Hannah baptised as SANIGOR, 18 August: the last link, found under another spelling."
+    }
+   ],
+   "notConnected": {
+    "why": "No one of the name is a parent or a spouse of anyone on our line. The nearest on this archive's numbered pedigree is Hannah SANIGER (number 75), great-grandmother of Ivy Miriam Sneyd, who is on our line at generation 5."
+   }
+  }
+ ]
+}

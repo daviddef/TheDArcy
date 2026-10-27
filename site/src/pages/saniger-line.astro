@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import FamilyLine from "../components/FamilyLine.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
 import { u } from "../lib/url.js";
@@ -13,6 +14,9 @@ import d from "../data/saniger-line.json";
   <section class="blk">
     <p class="lede">{d.lede}</p>
   </section>
+
+  {/* the family's own generations and how our line connects (src/components/FamilyLine.astro; 27 October 2026) */}
+  <FamilyLine id="saniger" />
 
   <Blk label="Berkeley St Mary the Virgin" title="The chain, oldest first">
 

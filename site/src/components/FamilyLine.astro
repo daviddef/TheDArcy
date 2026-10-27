@@ -1,0 +1,43 @@
+---
+/* ONE FAMILY'S LINE, AND HOW OUR LINE CONNECTS TO IT, at the top of a family page (27 October 2026).
+
+   The data is made, never typed: tools/build_family_ribbons.mjs writes src/data/family-ribbons.json (the kit's contract,
+   kit/docs/family-ribbon.md) and src/data/family-no-ribbon.json, from the numbered pedigree, provenance.json, lines.json
+   and the story. The drawing is the kit's FamilyRibbon. The kit's gate (npm run check:familyribbon) holds the data and
+   the built page of each family to it.
+
+   A FAMILY WITH NO RIBBON. Where nobody of the name on the numbered pedigree is dead and below a graft (the Hornby
+   descent, which no record supports; the Keele descent, which this archive found wrong), no generations are drawn. The
+   page still says how the family stands to our line, in the kit's own block and words, and nothing else.
+
+   `id` is the family's id in those files; a page that is not a family's page draws nothing. */
+import FamilyRibbon from "@daviddef/archive-kit/components/FamilyRibbon.astro";
+import "@daviddef/archive-kit/styles/familyribbon.css";
+import ribbons from "../data/family-ribbons.json";
+import none from "../data/family-no-ribbon.json";
+import directLine from "../data/direct-line.json";
+import { u } from "../lib/url.js";
+
+const { id } = Astro.props;
+const fam = ribbons.families.find((f) => f.id === id) || null;
+const bare = fam ? null : none.families.find((f) => f.id === id) || null;
+const personHref = (slug) => u(`/people/${slug}/`);
+---
+{fam && (
+  <section class="blk fr-blk">
+    <FamilyRibbon family={fam} directLine={directLine} personHref={personHref} u={u} />
+  </section>
+)}
+{bare && bare.notConnected && (
+  <section class="blk fr-blk">
+    <section class="fr fr-bare" data-family={bare.id} data-ribbon="none" aria-label={`${bare.title} and our line`}>
+      <div class="fr-head">
+        <h2 class="fr-h">{bare.title} and our line</h2>
+      </div>
+      <div class="fr-conn" data-connections="0">
+        <h3 class="fr-ch">How our line connects</h3>
+        <p class="fr-nc" data-not-connected="1"><b>Not connected to our line yet.</b> {bare.notConnected.why}</p>
+      </div>
+    </section>
+  </section>
+)}

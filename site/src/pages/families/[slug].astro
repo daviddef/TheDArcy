@@ -24,6 +24,7 @@ import Blk from "../../components/Blk.astro";
 import Note from "../../components/Note.astro";
 import Scroll from "../../components/Scroll.astro";
 import Descent from "@daviddef/archive-kit/components/Descent.astro";
+import FamilyLine from "../../components/FamilyLine.astro";
 import { u } from "../../lib/url.js";
 import famData from "../../data/families.json";
 import ancestorRows from "../../data/ancestors.json";
@@ -199,6 +200,9 @@ const lineDek = line ? (() => {
   <section class="blk">
     <p class="cap"><a href={u("/families/")}>&larr; The families</a></p>
   </section>
+
+  {/* the family's own generations and how our line connects (src/components/FamilyLine.astro; 27 October 2026) */}
+  <FamilyLine id={Astro.params.slug} />
 
   {line && (
     <Fragment>
