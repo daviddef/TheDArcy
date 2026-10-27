@@ -17,9 +17,11 @@ import ribbons from "../data/family-ribbons.json";
 import none from "../data/family-no-ribbon.json";
 import directLine from "../data/direct-line.json";
 import { u } from "../lib/url.js";
+/* the cards' mini flags (src/data/ribbon-flags.json, made by tools/build_ribbon_flags.py; npm run check:ribbonflags) */
+import { familyWithFlags } from "../lib/ribbonFlags.js";
 
 const { id } = Astro.props;
-const fam = ribbons.families.find((f) => f.id === id) || null;
+const fam = familyWithFlags(ribbons.families.find((f) => f.id === id) || null);
 const bare = fam ? null : none.families.find((f) => f.id === id) || null;
 const personHref = (slug) => u(`/people/${slug}/`);
 ---

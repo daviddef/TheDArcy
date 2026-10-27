@@ -103,3 +103,28 @@ in the linking standard's scope, and the ribbon's names and record notes would r
   living, nobody above the Hornby or Keele graft; a connection is documented only when provenance.json holds the record, else the grade of the
   story paragraph quoted in the tool's `STORY_SAYS`, else the family's tree) are in the tool's header. Regenerate it when the pedigree, the story
   or provenance changes, and commit `mentions.json`, `searchindex.json` and `whoindex.json` with it.
+
+## The mini flags on the ribbon cards (kit 1fa6b54, 27 October 2026)
+
+Every card of the story's ribbon and of the 19 family ribbons carries the kit's mini flags in its header row (`FlagMini`, the rules in
+`site/node_modules/@daviddef/archive-kit/kit/docs/ribbon-flags.md`): for each place the card names, the flag of the state that held it
+in the card's year (from the committed era snapshot, the same rules as the "at the time" notes) and today's country's flag where that is
+another flag. The card is exactly the size it was; a living card has today's flag only, with no year. Credit under each ribbon:
+"Flags: Flags Atlas, by David Defranceski, drawn for this project" (no licence claimed).
+
+- **The data is the kit's generator, never typed.** `tools/build_ribbon_flags.py` runs the kit's `ribbonflags.py` on the story's and
+  the family ribbons' cards with this archive's two tables and writes `site/src/data/ribbon-flags.json` (build.sh runs it; run it by
+  hand after the story's ribbon, `build_family_ribbons.mjs`, the era snapshot or a table changes). The flags are NOT on the cards: at kit
+  1fa6b54 the story's contract (checkfamilystory S0) and the family ribbon's (checkfamilyribbon F0) refuse a card field they do not
+  know. `site/src/lib/ribbonFlags.js` puts them back on the cards when `story.astro` and `FamilyLine.astro` draw them, and stops the
+  build if a card is not the one its flags were made for.
+- **The two tables are hand-made, each line with its evidence** (`_evidence`): `site/src/data/flag-places.json` (a card's shorter place
+  text -> the place as the person's page and `data/era-ground.tsv` print it: "Berkeley" -> "Berkeley, Gloucestershire, England") and
+  `site/src/data/flag-countries.json` (today's country where the pages settle it and no era region does: Parramatta, the Monaghan
+  townland, Ballymodan, "(about) Limerick City"). Left without a flag on purpose: "Portsmouth or the West Indies" (two places),
+  "place not known", "Parish of Elmore" (no county in the archive). Never add a line the archive's own pages do not settle.
+- **Gates:** `npm run check:ribbonflags-data` (before astro: the file is what the data makes) and `npm run check:ribbonflags` (the kit's
+  `checkribbonflags.py` on the cards with their flags and on the built pages, then its self-test). The box gate `checkflagfit.mjs` needs
+  Chrome and playwright-core, which CI does not have: run it by hand on a served local build, with playwright-core linked (not committed)
+  into `site/node_modules` so the kit's file can import it (`npx -p` does not reach an ES module):
+  `node site/node_modules/@daviddef/archive-kit/kit/tools/checkflagfit.mjs --url <page> ... --widths 1440,1100,390`.

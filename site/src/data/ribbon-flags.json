@@ -1,0 +1,2508 @@
+{
+ "_note": "Made by tools/build_ribbon_flags.py (the kit's ribbonflags.py on story.json and family-ribbons.json, with era-snapshot.json, flag-places.json and flag-countries.json); do not edit by hand. Each entry is one ribbon card's flags, by the card's place in its ribbon, with its name and person; src/lib/ribbonFlags.js puts them on the cards the page draws.",
+ "story": [
+  {
+   "card": 0,
+   "name": "Robert D'Arcy",
+   "person": "robert-d-arcy",
+   "flags": [
+    {
+     "kind": "era",
+     "line": "from",
+     "place": "Yorkshire, by family tradition",
+     "svg": "uk-flags--era-1801.svg",
+     "flag": "uk-flags--era-1801",
+     "era": "england--era-1538",
+     "year": 1805,
+     "label": "from Yorkshire, by family tradition, 1805: Britain and its colonies then",
+     "grade": "lore",
+     "assessed": true
+    },
+    {
+     "kind": "era",
+     "line": "at",
+     "place": "Chatham",
+     "svg": "uk-flags--era-1801.svg",
+     "flag": "uk-flags--era-1801",
+     "era": "england--era-1538",
+     "year": 1805,
+     "label": "at Chatham, 1805: Britain and its colonies then",
+     "grade": "lore",
+     "assessed": true
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "South Leith",
+     "svg": "uk-flags--era-1922.svg",
+     "flag": "uk-flags--era-1922",
+     "country": "GB",
+     "year": null,
+     "label": "spouse of South Leith: the United Kingdom today",
+     "grade": "lore"
+    }
+   ]
+  },
+  {
+   "card": 1,
+   "name": "George Pitt D'Arcy",
+   "person": "george-pitt-d-arcy-1783",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Parramatta",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "at Parramatta: Australia today",
+     "grade": "lore"
+    }
+   ]
+  },
+  {
+   "card": 2,
+   "name": "George Lindsay D'Arcy",
+   "person": "george-lindsay-d-arcy",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Parramatta",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "from Parramatta: Australia today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Brisbane",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "at Brisbane: Australia today",
+     "grade": "doc"
+    },
+    {
+     "kind": "era",
+     "line": "spouse",
+     "place": "London",
+     "svg": "uk-flags--era-1801.svg",
+     "flag": "uk-flags--era-1801",
+     "era": "england--era-1538",
+     "year": 1829,
+     "label": "spouse of London, 1829: Britain and its colonies then",
+     "grade": "doc",
+     "assessed": true
+    }
+   ]
+  },
+  {
+   "card": 3,
+   "name": "George Pitt D'Arcy",
+   "person": "george-pitt-d-arcy-1864",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Brisbane",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "from Brisbane: Australia today",
+     "grade": "doc"
+    },
+    {
+     "kind": "era",
+     "line": "at",
+     "place": "Banyo",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "era": "queensland--era-1901",
+     "year": 1931,
+     "label": "at Banyo, 1931: Australia then",
+     "grade": "doc",
+     "assessed": true
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Brisbane",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "spouse of Brisbane: Australia today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 4,
+   "name": "Lindesay Atkinson D'Arcy",
+   "person": "lindesay-atkinson-d-arcy",
+   "flags": [
+    {
+     "kind": "era",
+     "line": "from",
+     "place": "Brisbane",
+     "svg": "uk-flags--era-1801.svg",
+     "flag": "uk-flags--era-1801",
+     "era": "queensland--era-1859",
+     "year": 1892,
+     "label": "from Brisbane, 1892: Britain and its colonies then",
+     "grade": "doc",
+     "assessed": true
+    },
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Brisbane",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "from Brisbane: Australia today",
+     "grade": "doc"
+    },
+    {
+     "kind": "era",
+     "line": "at",
+     "place": "Clayfield",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "era": "queensland--era-1901",
+     "year": 1936,
+     "label": "at Clayfield, 1936: Australia then",
+     "grade": "doc",
+     "assessed": true
+    },
+    {
+     "kind": "era",
+     "line": "spouse",
+     "place": "Boulia",
+     "svg": "uk-flags--era-1801.svg",
+     "flag": "uk-flags--era-1801",
+     "era": "queensland--era-1859",
+     "year": 1892,
+     "label": "spouse of Boulia, 1892: Britain and its colonies then",
+     "grade": "doc",
+     "assessed": true
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Boulia",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "spouse of Boulia: Australia today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 5,
+   "name": "Kenneth Lindsay D'Arcy",
+   "person": "kenneth-lindsay-d-arcy",
+   "flags": [
+    {
+     "kind": "era",
+     "line": "from",
+     "place": "Sandgate",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "era": "queensland--era-1901",
+     "year": 1927,
+     "label": "from Sandgate, 1927: Australia then",
+     "grade": "doc",
+     "assessed": true
+    },
+    {
+     "kind": "era",
+     "line": "spouse",
+     "place": "Toowoomba",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "era": "queensland--era-1901",
+     "year": 1927,
+     "label": "spouse of Toowoomba, 1927: Australia then",
+     "grade": "doc",
+     "assessed": true
+    }
+   ]
+  },
+  {
+   "card": 6,
+   "name": "Ian Kenneth D'Arcy",
+   "person": null,
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Brisbane, Australia",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "from Brisbane, Australia: Australia today",
+     "grade": "lore"
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Benevento, Italy",
+     "svg": "italy-flags--era-1946.svg",
+     "flag": "italy-flags--era-1946",
+     "country": "IT",
+     "year": null,
+     "label": "spouse of Benevento, Italy: Italy today",
+     "grade": "lore"
+    }
+   ]
+  },
+  {
+   "card": 7,
+   "name": "Cristina Adele D'Arcy",
+   "person": null,
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Brisbane, Australia",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "from Brisbane, Australia: Australia today",
+     "grade": "lore"
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Johannesburg, South Africa",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "spouse of Johannesburg, South Africa: South Africa today",
+     "grade": "lore"
+    }
+   ]
+  }
+ ],
+ "families": {
+  "d-arcy": [
+   {
+    "card": 0,
+    "name": "Robert D'Arcy",
+    "person": "robert-d-arcy",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Yorkshire, by family tradition",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1805,
+      "label": "from Yorkshire, by family tradition, 1805: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Chatham",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1805,
+      "label": "at Chatham, 1805: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "South Leith",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of South Leith: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "George Pitt D'Arcy",
+    "person": "george-pitt-d-arcy-1783",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Parramatta",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Parramatta: Australia today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "George Lindsay D'Arcy",
+    "person": "george-lindsay-d-arcy",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Parramatta",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Parramatta: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "London",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1829,
+      "label": "spouse of London, 1829: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "George Pitt D'Arcy",
+    "person": "george-pitt-d-arcy-1864",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Brisbane: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Banyo",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1931,
+      "label": "at Banyo, 1931: Australia then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Brisbane: Australia today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "Lindesay Atkinson D'Arcy",
+    "person": "lindesay-atkinson-d-arcy",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Brisbane",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1892,
+      "label": "from Brisbane, 1892: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Brisbane: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Clayfield",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1936,
+      "label": "at Clayfield, 1936: Australia then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Boulia",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1892,
+      "label": "spouse of Boulia, 1892: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Boulia",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Boulia: Australia today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 5,
+    "name": "Kenneth Lindsay D'Arcy",
+    "person": "kenneth-lindsay-d-arcy",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Sandgate",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1927,
+      "label": "from Sandgate, 1927: Australia then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Toowoomba",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1927,
+      "label": "spouse of Toowoomba, 1927: Australia then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "sneyd": [
+   {
+    "card": 0,
+    "name": "William Sneyd",
+    "person": "william-sneyd-1746",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Madeley, Staffordshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Madeley, Staffordshire: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Staffordshire, England",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Staffordshire, England: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "Samuel Sneyd",
+    "person": "samuel-sneyd",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Madeley",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1781,
+      "label": "from Madeley, 1781: Britain and its colonies then",
+      "grade": "inf",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Hanley",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1855,
+      "label": "at Hanley, 1855: Britain and its colonies then",
+      "grade": "inf",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Oswestry, Shropshire",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1781,
+      "label": "spouse of Oswestry, Shropshire, 1781: Britain and its colonies then",
+      "grade": "inf",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Samuel Charles Sneyd",
+    "person": "samuel-charles-sneyd-1810",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Hanley",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1811,
+      "label": "from Hanley, 1811: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1885,
+      "label": "at Brisbane, 1885: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Cork, Cork City, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Cork, Cork City, Ireland: Ireland today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "William Hartley Sneyd",
+    "person": "william-hartley-sneyd",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Kempsey, New South Wales",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Kempsey, New South Wales: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "St Paul, Bristol",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of St Paul, Bristol: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "Arthur William Hartley Sneyd",
+    "person": "arthur-william-hartley-sneyd",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Brisbane, Queensland",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1866,
+      "label": "from Brisbane, Queensland, 1866: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Brisbane, Queensland",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Brisbane, Queensland: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Rockhampton, Queensland",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1866,
+      "label": "spouse of Rockhampton, Queensland, 1866: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Rockhampton, Queensland",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Rockhampton, Queensland: Australia today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 5,
+    "name": "Ivy Miriam Sneyd",
+    "person": "ivy-miriam-sneyd",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Boulia, Boulia Shire",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1891,
+      "label": "from Boulia, Boulia Shire, 1891: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Boulia, Boulia Shire",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Boulia, Boulia Shire: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1979,
+      "label": "at Brisbane, 1979: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Brisbane",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1891,
+      "label": "spouse of Brisbane, 1891: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Brisbane: Australia today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "atkinson": [
+   {
+    "card": 1,
+    "name": "Richard Atkinson",
+    "person": "richard-atkinson-1765",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Limerick, County Limerick",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Limerick, County Limerick: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "(about) Limerick City",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of (about) Limerick City: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Richard Atkinson",
+    "person": "richard-atkinson-1801",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Limerick City, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Limerick City, Ireland: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Limerick",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "at Limerick: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Limerick, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Limerick, Ireland: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Paul Cole Atkinson",
+    "person": "paul-cole-atkinson",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Limerick",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Limerick: Ireland today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "South Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at South Brisbane: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Limerick, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Limerick, Ireland: Ireland today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "Ida Kathleen Atkinson",
+    "person": "ida-kathleen-atkinson",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Brisbane, Queensland",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1869,
+      "label": "from Brisbane, Queensland, 1869: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Brisbane, Queensland",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Brisbane, Queensland: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Brisbane",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1869,
+      "label": "spouse of Brisbane, 1869: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Brisbane: Australia today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "murdoch": [
+   {
+    "card": 1,
+    "name": "Claud Murdoch",
+    "person": "claud-murdoch",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Ayr",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "at Ayr: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Francis Murdoch",
+    "person": "francis-murdoch-1824",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "St Quivox, Ayr, Sctl",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from St Quivox, Ayr, Sctl: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Ayr",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "at Ayr: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "St Quivox, Ayrshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of St Quivox, Ayrshire: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "William Murdoch",
+    "person": "william-murdoch",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "St Quivox",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from St Quivox: the United Kingdom today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Toowoomba",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1918,
+      "label": "at Toowoomba, 1918: Australia then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Cornacrieve Cornacreeve",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Cornacrieve Cornacreeve: Ireland today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "William James Fraser \"Bill\" Murdoch",
+    "person": "william-james-fraser-bill-murdoch",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Gympie",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1894,
+      "label": "from Gympie, 1894: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Gympie",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Gympie: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1946,
+      "label": "at Brisbane, 1946: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Toowoomba, australia",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1894,
+      "label": "spouse of Toowoomba, australia, 1894: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Toowoomba, australia",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Toowoomba, australia: Australia today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 5,
+    "name": "Audrey \"Dell\" Murdoch",
+    "person": "audrey-dell-murdoch",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Toowoomba Q'ld Australia",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1929,
+      "label": "from Toowoomba Q'ld Australia, 1929: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Sandgate",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1929,
+      "label": "spouse of Sandgate, 1929: Australia then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "atwell": [
+   {
+    "card": 0,
+    "name": "Joseph Atwell",
+    "person": "joseph-atwell",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Teddington, Middlesex",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Teddington, Middlesex: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Putney, Surrey, England",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Putney, Surrey, England: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "John Atwell",
+    "person": "john-atwell-1824",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Somerset, England",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1824,
+      "label": "from Somerset, England, 1824: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Butcombe Som Eng",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1873,
+      "label": "at Butcombe Som Eng, 1873: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Long Ashton, Somerset, Eng",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1824,
+      "label": "spouse of Long Ashton, Somerset, Eng, 1824: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "James Atwell",
+    "person": "james-atwell-1853",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "St. Pauls Hammersmith",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1853,
+      "label": "from St. Pauls Hammersmith, 1853: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Toowoomba",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1907,
+      "label": "at Toowoomba, 1907: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Douglas, Lanarkshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Douglas, Lanarkshire: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Barbara (nickname 'Goldie') Atwell",
+    "person": "barbara-nickname-goldie-atwell",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Toowoomba, australia",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Toowoomba, australia: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Gympie",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Gympie: Australia today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "blum": [
+   {
+    "card": 1,
+    "name": "John Blum",
+    "person": "john-blum-1842",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Germany",
+      "svg": "germany-flags--era-1990.svg",
+      "flag": "germany-flags--era-1990",
+      "country": "DE",
+      "year": null,
+      "label": "from Germany: Germany today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Queenland",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Queenland: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Cork, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Cork, Ireland: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Martha Blum",
+    "person": "martha-blum",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Rockhampton, Queensland",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1870,
+      "label": "from Rockhampton, Queensland, 1870: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Rockhampton, Queensland",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "from Rockhampton, Queensland: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Brisbane, Queensland",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1870,
+      "label": "spouse of Brisbane, Queensland, 1870: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Brisbane, Queensland",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Brisbane, Queensland: Australia today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "keeling": [
+   {
+    "card": 1,
+    "name": "Eliza Keeling",
+    "person": "eliza-keeling",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "London, Middlesex, England",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from London, Middlesex, England: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1918,
+      "label": "at Brisbane, 1918: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Parramatta",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Parramatta: Australia today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "creech": [
+   {
+    "card": 0,
+    "name": "Samuel Creech",
+    "person": "samuel-creech",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Bandon, County Cork, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Bandon, County Cork, Ireland: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Ballymodan",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "at Ballymodan: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "County Cork, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of County Cork, Ireland: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "Jane Creech",
+    "person": "jane-creech",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Limerick, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Limerick, Ireland: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1885,
+      "label": "at Brisbane, 1885: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Limerick",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Limerick: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "matson": [
+   {
+    "card": 0,
+    "name": "William Matson",
+    "person": "william-matson",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Ireland: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "Catherine Jane Matson",
+    "person": "catherine-jane-matson",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Cornacrieve Cornacreeve",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Cornacrieve Cornacreeve: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Toowoomba",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1914,
+      "label": "at Toowoomba, 1914: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "St Quivox",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of St Quivox: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "wakefield": [
+   {
+    "card": 0,
+    "name": "James Wakefield",
+    "person": "james-wakefield",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Stroud",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1806,
+      "label": "from Stroud, 1806: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1806,
+      "label": "spouse of Berkeley, 1806: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "Miriam Wakefield",
+    "person": "miriam-wakefield",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "St Paul, Bristol",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from St Paul, Bristol: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1909,
+      "label": "at Brisbane, 1909: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Kempsey, New South Wales",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "spouse of Kempsey, New South Wales: Australia today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "wright": [
+   {
+    "card": 1,
+    "name": "Sarah Wright",
+    "person": "sarah-wright",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Douglas, Lanarkshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Douglas, Lanarkshire: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Queensland",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "era": "queensland--era-1901",
+      "year": 1941,
+      "label": "at Queensland, 1941: Australia then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "St. Pauls Hammersmith",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1862,
+      "label": "spouse of St. Pauls Hammersmith, 1862: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "rossiter": [
+   {
+    "card": 0,
+    "name": "Aaron Rossiter",
+    "person": "aaron-rossiter",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Aller, Som., Eng.",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1754,
+      "label": "from Aller, Som., Eng., 1754: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Aller, Som., Eng.",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1754,
+      "label": "spouse of Aller, Som., Eng., 1754: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "James Rossiter",
+    "person": "james-rossiter-1794",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Aller, Somerset, England",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1794,
+      "label": "from Aller, Somerset, England, 1794: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Long Ashton, Somerset",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1794,
+      "label": "spouse of Long Ashton, Somerset, 1794: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Maria Rossiter",
+    "person": "maria-rossiter",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Long Ashton, Somerset, Eng",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1824,
+      "label": "from Long Ashton, Somerset, Eng, 1824: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1889,
+      "label": "at Brisbane, 1889: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Brisbane",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Brisbane: Australia today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Somerset, England",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1824,
+      "label": "spouse of Somerset, England, 1824: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "watt": [
+   {
+    "card": 1,
+    "name": "Marion Watt",
+    "person": "marion-watt",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "St Quivox, Ayrshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from St Quivox, Ayrshire: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Ayr",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "at Ayr: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "St Quivox, Ayr, Sctl",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of St Quivox, Ayr, Sctl: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "cotton": [
+   {
+    "card": 0,
+    "name": "Edward Cotton",
+    "person": "edward-cotton-1687",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Ashton Under Hill",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Ashton Under Hill: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Ashton",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1722,
+      "label": "at Ashton, 1722: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Maket Drayton, Shropshire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Maket Drayton, Shropshire: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "Edward Cotton",
+    "person": "edward-cotton-1716",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Ashton Underhill, Gloucester",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1716,
+      "label": "from Ashton Underhill, Gloucester, 1716: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Ashton under Hill",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1787,
+      "label": "at Ashton under Hill, 1787: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Ashton Underhill, Gloucester",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1716,
+      "label": "spouse of Ashton Underhill, Gloucester, 1716: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Catherine Cotton",
+    "person": "catherine-cotton",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Berkeley, Gloucester",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1746,
+      "label": "from Berkeley, Gloucester, 1746: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1746,
+      "label": "spouse of Berkeley, 1746: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "kent": [
+   {
+    "card": 0,
+    "name": "Robert Kent",
+    "person": "robert-kent",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Limerick, County Limerick",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Limerick, County Limerick: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Limerick, County Limerick",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Limerick, County Limerick: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "William Kent",
+    "person": "william-kent",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Limerick, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Limerick, Ireland: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Limerick, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Limerick, Ireland: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Ann Kent",
+    "person": "ann-kent",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Limerick, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "from Limerick, Ireland: Ireland today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Somerton",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1880,
+      "label": "at Somerton, 1880: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Limerick City, Ireland",
+      "svg": "ireland-flags--era-1949.svg",
+      "flag": "ireland-flags--era-1949",
+      "country": "IE",
+      "year": null,
+      "label": "spouse of Limerick City, Ireland: Ireland today",
+      "grade": "lore"
+     }
+    ]
+   }
+  ],
+  "jones": [
+   {
+    "card": 0,
+    "name": "William Jones",
+    "person": "william-jones",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Brimpsfield, Gloucester",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Brimpsfield, Gloucester: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Bisley, Gloucestershire",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Bisley, Gloucestershire: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "Lydia Jones",
+    "person": "lydia-jones",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Wotton-under-Edge",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1770,
+      "label": "from Wotton-under-Edge, 1770: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1851,
+      "label": "at Berkeley, 1851: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1770,
+      "label": "spouse of Berkeley, 1770: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "ward": [
+   {
+    "card": 1,
+    "name": "Joseph Ward",
+    "person": "joseph-ward",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Scotland",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "spouse of Scotland: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Jean Ward",
+    "person": "jean-ward",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "South Leith, Midlothian",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from South Leith, Midlothian: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Chatham",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1823,
+      "label": "at Chatham, 1823: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Yorkshire, by family tradition",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1754,
+      "label": "spouse of Yorkshire, by family tradition, 1754: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "blackbourne": [
+   {
+    "card": 0,
+    "name": "Samuel Blackbourne",
+    "person": "samuel-blackbourne",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Castle Church, Stafford",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Castle Church, Stafford: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 1,
+    "name": "Mary Blackbourne",
+    "person": "mary-blackbourne",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Staffordshire, England",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1748,
+      "label": "from Staffordshire, England, 1748: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Madeley",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "at Madeley: the United Kingdom today",
+      "grade": "lore"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Madeley, Staffordshire",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1748,
+      "label": "spouse of Madeley, Staffordshire, 1748: Britain and its colonies then",
+      "grade": "lore",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "saniger": [
+   {
+    "card": 1,
+    "name": "William Saniger",
+    "person": "william-saniger",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Berkeley: the United Kingdom today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Thomas Saniger",
+    "person": "thomas-saniger-1711",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Berkeley, Gloucester",
+      "svg": "uk-flags--era-1922.svg",
+      "flag": "uk-flags--era-1922",
+      "country": "GB",
+      "year": null,
+      "label": "from Berkeley, Gloucester: the United Kingdom today",
+      "grade": "lore"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Thomas Saniger",
+    "person": "thomas-saniger-1744",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1744,
+      "label": "from Berkeley, 1744: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Berkeley, Gloucester",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1744,
+      "label": "spouse of Berkeley, Gloucester, 1744: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "John Saniger",
+    "person": "john-saniger",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1769,
+      "label": "from Berkeley, 1769: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Wotton-under-Edge",
+      "svg": "uk-flags--era-1707.svg",
+      "flag": "uk-flags--era-1707",
+      "era": "england--era-1538",
+      "year": 1769,
+      "label": "spouse of Wotton-under-Edge, 1769: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 5,
+    "name": "Hannah SANIGER",
+    "person": "hannah-saniger",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Berkeley",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1805,
+      "label": "from Berkeley, 1805: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Rockhampton",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "queensland--era-1859",
+      "year": 1873,
+      "label": "at Rockhampton, 1873: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Rockhampton",
+      "svg": "australia-flags--era-1901.svg",
+      "flag": "australia-flags--era-1901",
+      "country": "AU",
+      "year": null,
+      "label": "at Rockhampton: Australia today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Stroud",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1805,
+      "label": "spouse of Stroud, 1805: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   }
+  ]
+ }
+}

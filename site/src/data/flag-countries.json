@@ -1,0 +1,13 @@
+{
+ "_note": "The D'Arcy archive's own --countries table for the kit's ribbon flags: a card's place text -> today's country (ISO code), only where the archive's own pages settle the country and no era-table region does. Each with its evidence in _evidence. Left out on purpose: 'Portsmouth or the West Indies' (two places, two countries), 'place not known', 'Parish of Elmore' (the archive names no county). Read by tools/build_ribbon_flags.py.",
+ "_evidence": {
+  "Parramatta": "George Pitt D'Arcy died there in 1849 and his son George Lindsay was born there in 1829 (the story: «the major died at Parramatta», King's School, New South Wales); their pages print Parramatta, New South Wales, Australia. The Atlas has no New South Wales region, so only today's flag.",
+  "Cornacrieve Cornacreeve": "Catherine Jane Matson's page prints Cornacrieve Cornacreeve, Co. Monaghan, Ireland: County Monaghan is in the Republic of Ireland. A townland the era table cannot fix to a point, so only today's flag.",
+  "(about) Limerick City": "Rose Cole's page prints «(about) Limerick City, Ireland»: the hedge is on the town, the country is stated. Only today's flag.",
+  "Ballymodan": "Samuel Creech's page prints his death at Ballymodan, Bandon, Ireland, and his card's own from line is Bandon, County Cork, Ireland: Ballymodan is Bandon's parish, in County Cork, in the Republic of Ireland. The era table's Ireland is the whole island (two countries today), so the country is said here."
+ },
+ "Parramatta": "AU",
+ "Cornacrieve Cornacreeve": "IE",
+ "(about) Limerick City": "IE",
+ "Ballymodan": "IE"
+}

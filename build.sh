@@ -69,6 +69,9 @@ python3 tools/build_dossiers.py          # needs register.json
 python3 tools/build_person_records.py     # needs register.json; the records build_dossiers drops
 python3 tools/build_family_pages.py
 python3 tools/build_dna.py
+# The mini flags on the ribbon cards (the kit's ribbonflags.py on the story's and the family ribbons' cards, with this archive's
+# two tables) -> site/src/data/ribbon-flags.json. `npm run check:ribbonflags-data` refuses a stale file.
+python3 tools/build_ribbon_flags.py
 
 echo "── first pass"
 # `npm run build` ends with the name linking the browser used to do: tools/autolink_pass.py runs the kit's

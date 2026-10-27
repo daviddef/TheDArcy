@@ -55,6 +55,8 @@ HAND_EDITED = {
     "crossread.json",
     "decisions.json",  # decisions, declared by hand and recomputed by a gate
     "errands.json",  # the errands page
+    "flag-countries.json",  # the ribbon flags' today's-country table: card place text -> country code, each with the archive's evidence
+    "flag-places.json",  # the ribbon flags' place table: card place text -> the place as the era table prints it, each with its evidence
     "family-lines.json",  # which surnames get a family page, and the rule that chose them; holds surnames, no people
     "falco-families.json",  # link-outs to the Falco archive's family pages; names and addresses, no people
     "eulogy.json",  # the eulogy page
@@ -116,6 +118,7 @@ GENERATED = {
     "era-snapshot.json",                                                 # build_era.py --snapshot, from the Record Atlas's context.json: region eras and regime labels, no names
     "direct-line.json",                                                  # the kit's directline.py, from story.json's ribbon (check:directline); the story's living cards by name, no dates
     "family-ribbons.json", "family-no-ribbon.json",                      # build_family_ribbons.mjs, from the pedigree, provenance, lines and story (check:family-data); the dead only
+    "ribbon-flags.json",                                                 # build_ribbon_flags.py (the kit's ribbonflags.py), from the ribbons' cards, the era snapshot and the two flag tables (check:ribbonflags-data); a living card's flags carry no year
 }
 
 # Prose typed outside site/src/pages and notes/: components, the layout, and the letters to record offices.

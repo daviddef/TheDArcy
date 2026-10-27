@@ -4,7 +4,10 @@
    kit/tools/checkfamilystory.py holds it to its grammar (npm run check:story). Nothing here decides anything. */
 import Base from "../layouts/Base.astro";
 import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
-import book from "../data/story.json";
+import story from "../data/story.json";
+/* the ribbon cards' mini flags (src/data/ribbon-flags.json, made by tools/build_ribbon_flags.py; npm run check:ribbonflags) */
+import { storyWithFlags } from "../lib/ribbonFlags.js";
+const book = storyWithFlags(story);
 /* who is on the direct line: made from this story by the kit's directline.py (npm run check:directline holds it there) */
 import directLine from "../data/direct-line.json";
 import { u } from "../lib/url.js";
