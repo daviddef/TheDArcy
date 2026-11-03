@@ -668,7 +668,7 @@
   "/places/": "/places/"
  },
  "outside": [
-  "/search/",
+  "/search/", "/privacy/",
   "/what-we-got-wrong/"
  ]
 }
