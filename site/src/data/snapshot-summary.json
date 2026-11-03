@@ -1,13 +1,21 @@
 {
  "have": 73,
- "total": 89,
- "pct": 82,
- "selfArchived": 29,
- "missing": 16,
+ "total": 130,
+ "pct": 56,
+ "selfArchived": 30,
+ "missing": 57,
  "missingHosts": [
   [
+   "discovery.nationalarchives.gov.uk",
+   26
+  ],
+  [
    "nla.gov.au",
-   6
+   12
+  ],
+  [
+   "falco.defranceski.com",
+   7
   ],
   [
    "www.findagrave.com",
@@ -15,7 +23,7 @@
   ],
   [
    "archive.org",
-   2
+   3
   ],
   [
    "cityark.medway.gov.uk",
@@ -34,9 +42,13 @@
    1
   ],
   [
+   "recordatlas.org",
+   1
+  ],
+  [
    "www.archivesdepartementales76.net",
    1
   ]
  ],
- "checked": "17 Oct 2026"
+ "checked": "03 Nov 2026"
 }
