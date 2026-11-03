@@ -36,7 +36,8 @@ const parts = [
     <Note style="margin-top:1.2rem"><span set:html={mdp(d.set)} /></Note>
     <p class="small" style="margin-top:.8rem">This page is the record of one measured search. The spellings themselves, with the evidence for each, now live in
       the Record Atlas's shared catalogue of surname variants, which is the only place the archives keep them
-      (<a href="https://recordatlas.org/surname-families/">recordatlas.org/surname-families</a>).</p>
+      (<a href="https://recordatlas.org/surname-families/">recordatlas.org/surname-families</a>). To see what to type for this family's own name,
+      run <code>python3 "…/Record Atlas/scripts/surname_variants.py" terms D'Arcy</code> from the Record Atlas checkout.</p>
   </section>
 
   <Blk label="The measurement" title={`${d.rows.length} strings put to one index`}>
