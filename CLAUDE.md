@@ -10,6 +10,8 @@ open a register, write to an archive, or find a source the atlas does
 not list — as you do it, not in a sweep at the end. Record the
 FamilySearch waypoint, not just the film number; the skill explains why.
 
+Surname spellings come only from the Record Atlas catalogue: terms before searching, cover before any nil, add for every new spelling, publish once at the end. Keep no variants list here.
+
 ## The linking standard (18 October 2026)
 
 The twelve research narratives (`site/standard.json` lists them) are held to the kit's linking standard
