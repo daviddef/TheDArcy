@@ -24,7 +24,7 @@ import familyLines from "../data/family-lines.json";
 /* canonical: ONLY A DECLARED DUPLICATE PASSES ONE (see src/data/same-person.json). SocialHead
    already takes the prop and falls back to the page's own address when it is absent, so
    every other page is unchanged; this layout merely did not hand it on. */
-const { title, description = "", dek, eyebrow, bare, noindex: _noindex, livingPage = false, canonical } = Astro.props;
+const { title, description = "", dek, eyebrow, bare, noindex: _noindex, livingPage = false, canonical, ownHeader = false } = Astro.props;
 const noindex = _noindex || livingPage;
 const SITE = "The D'Arcy Archive";
 const nav = [
@@ -127,7 +127,7 @@ const thisArchive =
 
 <main id="main" tabindex="-1">
   <div class="wrap">
-    {!bare && (
+    {!bare && !ownHeader && (
       <div class="pagehead">
         {eyebrow && <div class="lab">{eyebrow}</div>}
         <h1>{title}</h1>

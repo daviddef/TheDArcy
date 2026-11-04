@@ -11,8 +11,13 @@ import prov from "../../data/provenance.json";
 import Evidence from "@daviddef/archive-kit/components/Evidence.astro";
 import AlsoIn from "@daviddef/archive-kit/components/AlsoIn.astro";
 import { grade } from "../../lib/grade.js";
-import PersonTree from "../../components/PersonTree.astro";
-import { CORRECTIONS } from "../../lib/corrections.js";
+import PersonPage from "@daviddef/archive-kit/components/PersonPage.astro";
+import PersonSection from "@daviddef/archive-kit/components/PersonSection.astro";
+import "@daviddef/archive-kit/styles/persontree.css";
+import "@daviddef/archive-kit/styles/personpage.css";
+import PS from "@daviddef/archive-kit/data/public-sources.json";
+import { isLiving as isLivingKit } from "@daviddef/archive-kit/lib/person.js";
+import { CORRECTIONS, yearOf as correctedYear } from "../../lib/corrections.js";
 import personRecords from "../../data/person-records.json";
 import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
 /* "On our direct line · generation n": the kit's band, for the people of src/data/direct-line.json (made from the story) and nobody else */
@@ -271,17 +276,91 @@ const notes = alive ? [] : (p.notes || [])
   .map((n) => ({ text: clean(n), damaged: isDamaged(n) }))
   .filter((n) => n.text.length > 20);
 const anyDamaged = notes.some((n) => n.damaged);
----
-{/* The dek was the occupation alone, so 159 of the 474 person pages had none —
-    every sibling archive falls back to something and this one did not. The
-    chain uses only what the page is not already saying: the eyebrow carries
-    the lifespan and the chip carries the grade, so neither is repeated.
-    A LIVING SPOUSE IS NEVER NAMED, which is why the spouse step filters on it;
-    two people here have only living spouses and fall through to the last line. */}
-<Base title={p.name} eyebrow={life} dek={dek} livingPage={alive} canonical={dupCanonical}>
+/* THE PAGE IS THE KIT'S PersonPage (4 November 2026, people pages v2): the header, the family chart, "What the record says", "Where this comes from",
+   "Others of the same name", "Photographs and papers" and "Notes and corrections" are the estate's one set of sections, in the estate's order and with the
+   estate's anchors; what this archive adds goes in the slots, or after them as a titled "more" section. The archive decides who is living (people.js,
+   from tools/build_site_data.py); the kit's rule is asked as well, and a page is a living person's if EITHER says so. */
 
-  {/* the band under the name of someone on the story's direct line (27 October 2026); it draws nothing for anyone else */}
-  {oursOf(directLine, p.slug) && <section class="blk" style="padding-top:0;padding-bottom:0;border-bottom:0"><OursBand directLine={directLine} slug={p.slug} u={u} /></section>}
+/* THE CHART'S DATES. The tree writes «27 OCT 1406», «MAR 1600», «ABT 1776», «AFT 1268», «BET 1799 AND 1801»; the chart draws a day or a year, and «c.» for an
+   estimate. A month with no day is kept to the year; a phrase is not a date the chart can draw (the record table says it in words) but the year it holds
+   still goes to the living rule. Where research has overturned the tree (lib/corrections.js) the chart draws the archive's year, as it always did. */
+const MONS = { JAN: "Jan", FEB: "Feb", MAR: "Mar", APR: "Apr", MAY: "May", JUN: "Jun", JUL: "Jul", AUG: "Aug", SEP: "Sep", OCT: "Oct", NOV: "Nov", DEC: "Dec" };
+const monthName = (m) => ({ JAN: "January", FEB: "February", MAR: "March", APR: "April", MAY: "May", JUN: "June", JUL: "July", AUG: "August", SEP: "September", OCT: "October", NOV: "November", DEC: "December" })[m] || m;
+const gedYear = (v) => { const m = /\b(1[0-9]\d\d|20\d\d|[5-9]\d\d)\b/.exec(String(v ?? "")); return m ? Number(m[1]) : null; };
+const canonDate = (v) => {
+  if (v == null || v === "") return undefined;
+  const t = String(v).trim().replace(/\s+/g, " ");
+  let m;
+  if (typeof v === "number" || /^\d{4}$/.test(t)) return String(v);
+  if ((m = /^(?:(ABT|EST|CAL)\.? )?(?:(\d{1,2}) )?(?:([A-Za-z]{3,9}) )?(\d{4})$/i.exec(t))) {
+    const [, c, d, mon, y] = m, mm = mon && MONS[mon.slice(0, 3).toUpperCase()];
+    if (mon && !mm) return undefined;
+    return (c ? "c. " : "") + (d && mm ? `${+d} ${mm} ` : "") + y;
+  }
+  return undefined;
+};
+const saidDate = (v) => {
+  if (v == null || v === "") return v;
+  const t = String(v).trim();
+  const nice = (x) => x.replace(/\b(\d{1,2}) ([A-Z]{3}) (\d{4})\b/g, (_, d, mo, y) => `${+d} ${monthName(mo)} ${y}`).replace(/\b([A-Z]{3}) (\d{4})\b/g, (_, mo, y) => `${monthName(mo)} ${y}`);
+  let m;
+  if ((m = /^(BEF|AFT|TO|FROM|ABT|EST|CAL)\.? (.+)$/.exec(t))) return ({ BEF: "before", AFT: "after", TO: "to", FROM: "from", ABT: "about", EST: "about", CAL: "about" })[m[1]] + " " + nice(m[2]);
+  if ((m = /^BET (.+) AND (.+)$/.exec(t))) return `between ${nice(m[1])} and ${nice(m[2])}`;
+  return nice(t);
+};
+/* a person's chart date for one field: the archive's corrected year where it has one, else the tree's date read as above */
+const chartDate = (o, field) => {
+  const c = CORRECTIONS[o.slug] && CORRECTIONS[o.slug][field];
+  if (c) { const y = correctedYear(o.slug, field, o[field]); return y ? (/^(about|by|probably)\b/i.test(c[0]) ? "c. " : "") + y : undefined; }
+  return canonDate(o[field]);
+};
+const yearOfRaw = (o, field) => { const c = CORRECTIONS[o.slug] && CORRECTIONS[o.slug][field]; return gedYear(c ? c[0] : o[field]) ?? undefined; };
+const diedRecorded = (o) => !!(CORRECTIONS[o.slug]?.died || o.died || o.diedPlace || o.burial) || undefined;
+const KLIVE = !alive && isLivingKit({ id: p.id, born: chartDate(p, "born"), died: chartDate(p, "died"), birthYear: yearOfRaw(p, "born"), deathRecorded: diedRecorded(p), citations: [] }, { now: new Date().getFullYear(), sources: PS });
+if (KLIVE) throw new Error(`people/${p.slug}: the kit's living rule says this person is living but people.js does not; decide it in tools/build_site_data.py, not here`);
+
+/* THE CHART'S ROWS. This archive marks the LINK: «read» is a record this archive has read (provenance.json), «tree» the family tree, untested; a link
+   that sits above one of the two rejected grafts is drawn struck through (the kit's «superseded»), and the notes under the chart say why. The direct
+   line is the kit's tint and bar. */
+const relRow = (o, extra = {}) => {
+  const rec = me.rel && me.rel[o.slug];
+  const q = prov[o.slug] || {};
+  const g = q.graft || me.graft;
+  const read = !!(rec && rec.length);
+  return {
+    id: o.id, slug: o.slug, name: o.name, href: u(`/people/${o.slug}`),
+    ...(isLiving(o) ? { saidLiving: true } : { born: chartDate(o, "born"), died: chartDate(o, "died"), birthYear: yearOfRaw(o, "born"), deathRecorded: diedRecorded(o) }),
+    source: isLiving(o) ? "" : read ? "read" : "tree",
+    superseded: !isLiving(o) && !read && g ? true : undefined,
+    line: !isLiving(o) && q.line && !q.graft ? true : undefined,
+    ...extra };
+};
+const RELATIONS = {
+  parents: parents.map((o) => relRow(o)),
+  spouses: wed.map((o) => relRow(o, { mar: "married" })),
+  children: kids.map((o) => relRow(o)),
+  siblings: sibs.map((o) => relRow(o)),
+};
+const KPERSON = alive
+  ? { id: p.id, slug: p.slug, name: p.name, saidLiving: true, place: p.place || "", relations: RELATIONS }
+  : { id: p.id, slug: p.slug, name: p.name, born: chartDate(p, "born"), died: chartDate(p, "died"), birthYear: yearOfRaw(p, "born"), deathRecorded: diedRecorded(p),
+      buried: val("burial", p.burial) || undefined, deathPlace: diedPlace || undefined, relations: RELATIONS, citations: [] };
+
+/* what the notes under the chart say, from this person's own relatives (kept from the archive's old PersonTree) */
+const allRel = [...RELATIONS.parents, ...RELATIONS.spouses, ...RELATIONS.children, ...RELATIONS.siblings];
+const recorded = allRel.filter((n) => n.source === "read").length;
+const grafted = allRel.filter((n) => n.superseded).length;
+const dupes = (list) => { const c = {}; for (const o of list) c[o.name] = (c[o.name] || 0) + 1; return Object.keys(c).filter((k) => c[k] > 1); };
+const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
+
+---
+{/* THE LIVING GET THE KIT'S PAGE: a name, a relationship, a town and a country, and nothing else (the slots are not rendered at all). */}
+{alive ? (
+<Base title={p.name} ownHeader dek={dek} livingPage={alive}>
+  <PersonPage person={KPERSON} peopleHref={u("/people/")} plainFamilyOfLiving directLine={directLine} storyHref={u("/story/")} />
+</Base>
+) : (
+<Base title={p.name} ownHeader dek={dek} livingPage={alive} canonical={dupCanonical}>
 
   {dup && (
   <section class="blk" style="padding-top:0" data-same-person={dup.slug}>
@@ -295,353 +374,276 @@ const anyDamaged = notes.some((n) => n.damaged);
   </section>
   )}
 
+  <PersonPage person={KPERSON} lede={dek} peopleHref={u("/people/")} registerHref={u(`/register/?q=${encodeURIComponent(p.name)}`)}
+              directLine={directLine} storyHref={u("/story/")} stubNote="the family tree">
 
-  {!alive && (
-  <section class="blk" style="padding-top:0">
-    <p class="small" style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
-      <Evidence level={g.level}>{g.label ?? undefined}</Evidence>
-      <span class="dim">{g.why}{" "}
-        {g.href
-          ? <a href={u(g.href)}>What was tested &rarr;</a>
-          : <a href={u("/method/#ladder")}>How this archive grades a claim &rarr;</a>}</span>
-    </p>
-    {/* «Also documented in the Falco archive»: one person held by two archives is two pages by
-        design, and they can disagree about what is known. The kit draws this ONLY for a pair
-        marked CONFIRMED in kit/data/cross-archive.json, and this sits inside the not-living
-        branch, because a living page is a name, relationships and a place and gets no pointer. */}
-    <AlsoIn archive="darcy" path={`/people/${p.slug}/`} />
-  </section>
-  )}
+    {/* THE CHART'S OWN NOTES: what the marks mean here, the two rejected grafts, and the same name twice in one row */}
+    <Fragment slot="chart-notes">
+      <p class="warn" style="margin-top:.6rem">
+        {allRel.length === 0
+          ? <>No relationship is published for this person. Either the tree records none, or the
+            people it records for them are not named anywhere in this archive.</>
+          : recorded === 0
+            ? <><strong>None of the {allRel.length} {allRel.length === 1 ? "relationship" : "relationships"} shown
+              here is written in a record this archive has read.</strong> Every one comes from the family
+              tree. That is not a claim that they are wrong — it is a statement about what has been
+              checked, and on this site the difference is the point.</>
+            : <><strong>{recorded} of the {allRel.length} relationships shown here</strong>{" "}
+              {recorded === 1 ? "is" : "are"} written in a record this archive has read; the
+              other {allRel.length - recorded} come from the family tree and{" "}
+              {allRel.length - recorded === 1 ? "has" : "have"} not been tested.</>}
+        {" "}<a href={u("/method/")}>How claims are labelled →</a>
+      </p>
+      {grafted > 0 && (
+        <p class="warn"><strong>{grafted} of these links sit above a graft.</strong> The archive has
+        tested the join they hang from and rejected it — the D'Arcys of Hornby Castle are unevidenced,
+        the Sneyds of Keele Hall disproved. The people are drawn because the tree carries them, and
+        struck through because nothing attaches them to this family.
+        {" "}<a href={u("/how-far-back/")}>Both grafts, in full →</a></p>
+      )}
+      {dupKids.length > 0 && (
+        <p class="warn"><strong>More than one child here carries the same name</strong> — {dupKids.join(", ")}.
+        A child who died was very often replaced by a later child given the same name, so this is
+        usually not an error. <strong>It is also exactly how a records-matcher invents one person out
+        of two</strong>, which is why they are kept apart here and you are told.</p>
+      )}
+      {dupSibs.length > 0 && (
+        <p class="warn"><strong>More than one sibling here carries the same name</strong> — {dupSibs.join(", ")}.
+        They are drawn separately. This archive does not merge records on a name.
+        {" "}<a href={u("/name/")}>Why →</a></p>
+      )}
+    </Fragment>
 
-  {portrait && (
-    <section class="blk">
-      <figure style="margin:0;max-width:320px">
-        <img src={u(portrait.src)} width={portrait.w} height={portrait.h}
-          loading="eager" decoding="async" alt={portrait.alt}
-          style="display:block;width:100%;height:auto;border:1px solid var(--rule)" />
-        <figcaption class="cap" style="margin-top:.6rem">{portrait.cap}
-          {portrait.note && <> <strong>{portrait.note}</strong></>}</figcaption>
-      </figure>
-    </section>
-  )}
-
-  <section class="blk">
-    <PersonTree person={p} life={alive ? lifeLine(p) || "living" : life} parents={parents} spouses={wed} kids={kids} sibs={sibs} />
-  </section>
-
-  <section class="blk">
-    <div class="grid two">
-      <div>
-        {alive ? (
-          <>
-            <h2 style="margin-top:0">Where</h2>
-            <p>{p.place || "No town or country is recorded for them here."}</p>
-            <p class="small" style="margin-top:.8rem"><span class="chip lore">living</span>{" "}
-              A living person (80 or younger, with no death recorded) is named with their
-              relationships and their town and country, and nothing more: no date, no record, no
-              source, no note and no photograph.
-              <a href={u("/method/#living")}> The rule →</a></p>
-            {p.ancestor && (
-              <p style="margin-top:1rem"><span class="chip doc">direct line</span>
-              {p.gen && <span class="small"> · generation {p.gen} counting back from the present day</span>}</p>
-            )}
-            {p.family && (
-              <p class="small" style="margin-top:.8rem">Counted here with the
-                <strong> {p.family}</strong> family ·
-                <a href={u(famHref(p.family))}> that family →</a></p>
-            )}
-            {!p.family && ln && (
-              <p class="small" style="margin-top:.8rem">Of the
-                <strong> {ln.surname}</strong> name ·
-                <a href={u(`/families/${ln.slug}`)}> that family →</a></p>
-            )}
-          </>
-        ) : (
-          <>
-        <h2 style="margin-top:0">The record</h2>
-        <Scroll>
-          <table>
-            <tbody>
-              {facts.map(([k, a, b, e]) => (
+    {/* WHAT THE RECORD SAYS */}
+    <Fragment slot="record">
+      <p class="small" style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
+        <Evidence level={g.level}>{g.label ?? undefined}</Evidence>
+        <span class="dim">{g.why}{" "}
+          {g.href
+            ? <a href={u(g.href)}>What was tested &rarr;</a>
+            : <a href={u("/method/#ladder")}>How this archive grades a claim &rarr;</a>}</span>
+      </p>
+      {/* «Also documented in the Falco archive»: one person held by two archives is two pages by design, and they can disagree about what is known.
+          The kit draws this ONLY for a pair marked CONFIRMED in kit/data/cross-archive.json, and this sits inside the not-living branch. */}
+      <AlsoIn archive="darcy" path={`/people/${p.slug}/`} />
+      <Scroll>
+        <table>
+          <tbody>
+            {facts.map(([k, a, b, e]) => (
+              <tr>
+                <td style="white-space:nowrap">{k}</td>
+                <td class="m">{CORRECTIONS[p.slug]?.[k.toLowerCase()] ? a : (saidDate(a) || "—")}</td>
+                <td>{b || ""}{e ? <EraNote era={e} /> : null}</td>
+              </tr>
+            ))}
+            {wed.map((o) => {
+              const s = (p.spouses || []).find((x) => x.id === o.id) || {};
+              return (s.married || s.marriedPlace || s.divorced) && !o.living ? (
                 <tr>
-                  <td style="white-space:nowrap">{k}</td>
-                  <td class="m">{a || "—"}</td>
-                  <td>{b || ""}{e ? <EraNote era={e} /> : null}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </Scroll>
-        {verified && (
-          <p class="small" style="margin-top:.9rem"><span class="chip doc">registered</span>{" "}
-            The <strong>{verified[0]}</strong> date above is confirmed by the Queensland civil
-            register — registration <span class="mono">{verified[1]}</span>, {verified[2]}.
-            <a href={u("/sources/")}> Sources →</a></p>
-        )}
-        {corrections.length > 0 && (
-          <Note tight>
-            <strong>Corrected against the family tree.</strong> The rows above carry this archive's
-            finding. What the exported tree says is printed here, because hiding it would conceal the
-            one thing this site is for.
-            <ul class="small" style="margin:.6rem 0 0;padding-left:1.1rem">
-              {corrections.map(([k, [now, why, href]]) => (
-                <li style="margin-top:.35rem"><strong>{k}</strong>: {now} — {why}.{" "}
-                  <a href={u(href)}>Set out in full →</a></li>
-              ))}
-            </ul>
-          </Note>
-        )}
-        {p.ancestor && (
-          <p style="margin-top:1rem"><span class="chip doc">direct line</span>
-          {p.gen && <span class="small"> · generation {p.gen} counting back from the present day</span>}</p>
-        )}
-        {p.family && (
-          <p class="small" style="margin-top:.8rem">Counted here with the
-            <strong> {p.family}</strong> family ·
-            <a href={u(famHref(p.family))}> that family →</a></p>
-        )}
-        {!p.family && ln && (
-          <p class="small" style="margin-top:.8rem">Of the
-            <strong> {ln.surname}</strong> name ·
-            <a href={u(`/families/${ln.slug}`)}> that family →</a></p>
-        )}
-          </>
-        )}
-      </div>
-
-      <div>
-        <h2 style="margin-top:0">Family</h2>
-        {parents.length > 0 && (
-          <>
-            <h3 class="lab" style="margin-top:.6rem">Parents</h3>
-            <p>{parents.map((o, i) => (
-              <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a></>
-            ))}</p>
-          </>
-        )}
-        {(p.spouses || []).filter((s) => nameIfPublishable(s)).length > 0 && (
-          <>
-            <h3 class="lab" style="margin-top:1rem">Married</h3>
-            {p.spouses.filter((s) => nameIfPublishable(s)).map((s) => {
-              const o = link(s.id);
-              return (
-                <p>
-                  {o ? <a href={u(`/people/${o.slug}`)}>{s.name}</a> : s.name}
-                  {s.place && <span class="small"> ({s.place})</span>}
-                  {s.married && <span class="small"> · {s.married}</span>}
-                  {s.marriedPlace && <span class="small"> at {s.marriedPlace}</span>}
-                  {s.marriedPlace && s.married && !isLiving(s) && !(o && isLiving(o)) ? <EraNote era={eraOn(s.marriedPlace, s.married)} /> : null}
-                  {s.divorced && <span class="small"> · divorced {s.divorced}</span>}
-                </p>
-              );
+                  <td style="white-space:nowrap">Married</td>
+                  <td class="m">{saidDate(s.married) || "—"}</td>
+                  <td>{o.name}{s.marriedPlace ? `, ${s.marriedPlace}` : ""}{s.married && s.marriedPlace ? <EraNote era={eraOn(s.marriedPlace, s.married)} /> : null}{s.divorced ? ` · divorced ${s.divorced}` : ""}</td>
+                </tr>) : null;
             })}
-          </>
-        )}
-        {sibs.length > 0 && (
-          <>
-            <h3 class="lab" style="margin-top:1rem">Brothers and sisters</h3>
-            <p>{sibs.map((o, i) => (
-              <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a>
-              {shownLife(o) && <span class="small"> ({shownLife(o)})</span>}</>
-            ))}</p>
-          </>
-        )}
-        {kids.length > 0 && (
-          <>
-            <h3 class="lab" style="margin-top:1rem">Children</h3>
-            <p>{kids.map((o, i) => (
-              <>{i > 0 && " · "}<a href={u(`/people/${o.slug}`)}>{o.name}</a>
-              {shownLife(o) && <span class="small"> ({shownLife(o)})</span>}</>
-            ))}</p>
-          </>
-        )}
-        {parents.length === 0 && kids.length === 0 && sibs.length === 0 &&
-          (p.spouses || []).filter((s) => nameIfPublishable(s)).length === 0 && (
-          <p class="small">No relative is published for this person — either the tree records none,
-          or the ones it records have no page of their own here and are not named.
-          <a href={u("/method/")}> The rule →</a></p>
-        )}
-      </div>
-    </div>
-  </section>
-
-  <section class="blk">
-    <div class="grid two">
-      <div class="card">
-        <h3>Where this comes from</h3>
-        {alive
-          ? <p class="small">Every relationship drawn above is what the family tree says, and none
-            has been checked against a record by this archive. A living person is not the subject
-            of research here: the archive names them so that the people who are can be placed
-            among their relatives. <a href={u("/method/#living")}>How living people are
-            treated →</a></p>
-          : me.graft
-          ? <p class="small"><span class="chip sup">above a graft</span> This person reaches the
-            family only through the <strong>{me.graft}</strong> join, which this archive has tested
-            and rejected. They are published because the tree carries them and deleting a claim is
-            not the same as testing it. <a href={u("/how-far-back/")}>The graft →</a></p>
-          : recCount > 0
-            ? <p class="small"><strong>{recCount}</strong> of the relationships drawn above{" "}
-              {recCount === 1 ? "is" : "are"} written in a record this archive has read.{" "}
-              {[...new Set(Object.values(me.rel || {}).map((v) => v[0]))].join("; ")}.</p>
-            : <p class="small">No relationship on this page has been checked against a record —
-              the parents, marriages and children drawn above are what the family tree says.
-              {rec
-                ? <> But <strong>{rec.rows.length} record{rec.rows.length === 1 ? "" : "s"}</strong>{" "}
-                  naming {p.name}{" "}{rec.rows.length === 1 ? "has" : "have"} been read, and{" "}
-                  {rec.rows.length === 1 ? "it is" : "they are"} set out below.</>
-                : <> Nothing else has been found for them either way.</>}
-              {" "}<a href={u("/method/")}>How claims are labelled →</a></p>}
-
-        {!alive && p.relative && (
-        <p class="small" style="margin-top:.7rem">This person has a page because the tree names them beside
-          someone this archive follows. Nothing has been researched for them here, and records that
-          carry their name are filed in the register under the name and not assigned to them: a
-          name is not a person.</p>
-        )}
-        {!alive && (
-        <p class="small" style="margin-top:.7rem">
-          <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
-        )}
-        {p.ancestor && (
-          <p class="small" style="margin-top:.5rem">
-            <a href={u("/direct-line/")}>See this generation on the spine →</a></p>
-        )}
-      </div>
-
-      {sameName.length > 0 && (
-        <div class="card">
-          <h3>Others of the same name</h3>
-          <p class="small">This family reuses forenames relentlessly. <strong>These are different
-          people, kept apart on purpose rather than merged into one.</strong>
-          <a href={u("/name/")}> Why →</a></p>
-          <ul style="margin:.6rem 0 0">
-            {sameName.map((o) => (
-              <li class="small" style="margin-top:.3rem">
-                <a href={u(`/people/${o.slug}`)}>{o.name}</a>
-                <span> — {o.life || "dates unknown"}</span>
-                {prov[o.slug]?.graft && <span> · above the {prov[o.slug].graft} graft</span>}
-              </li>
+          </tbody>
+        </table>
+      </Scroll>
+      {verified && (
+        <p class="small" style="margin-top:.9rem"><span class="chip doc">registered</span>{" "}
+          The <strong>{verified[0]}</strong> date above is confirmed by the Queensland civil
+          register — registration <span class="mono">{verified[1]}</span>, {verified[2]}.
+          <a href={u("/sources/")}> Sources →</a></p>
+      )}
+      {corrections.length > 0 && (
+        <Note tight>
+          <strong>Corrected against the family tree.</strong> The rows above carry this archive's
+          finding. What the exported tree says is printed here, because hiding it would conceal the
+          one thing this site is for.
+          <ul class="small" style="margin:.6rem 0 0;padding-left:1.1rem">
+            {corrections.map(([k, [now, why, href]]) => (
+              <li style="margin-top:.35rem"><strong>{k}</strong>: {now} — {why}.{" "}
+                <a href={u(href)}>Set out in full →</a></li>
             ))}
           </ul>
-        </div>
-      )}
-    </div>
-  </section>
-
-  {rec && (
-    <section class="blk">
-      <h2>What the records say</h2>
-      {rec.settled && rec.alsoNamed.length > 0
-        ? <p class="small"><strong>{rec.alsoNamed.length + 1} people in this family tree carry the
-          name {rec.name}</strong>, and these records have been assigned to this one on the dates
-          they give. Which record belongs to whom is set out in <span class="mono">tools/record-owners.json</span>,
-          rule by rule. The others: {rec.alsoNamed.map((o, i) => (
-            <>{i > 0 && " · "}<a href={u(`/people/${o}`)}>{o}</a></>))}.
-          <a href={u("/name/")}> Why they are kept apart →</a></p>
-        : rec.shared
-        ? <Note tight>
-            <strong>Filed under the name, not assigned to this person.</strong> This archive's
-            register keys a record to the name on the document, and <strong>{rec.name}</strong> is
-            carried by {rec.alsoNamed.length + 1} people in this tree. At least one line below
-            belongs to somebody else, and which is which is not settled. They are shown rather than
-            dropped, and they are not merged: <a href={u("/name/")}>a shared name is not a
-            person</a>. Also of this name: {rec.alsoNamed.map((o, i) => (
-              <>{i > 0 && " · "}<a href={u(`/people/${o}`)}>{o}</a></>))}.
-          </Note>
-        : <p class="small">Every record this archive has read that names {p.name}. The name is
-          unique in this tree, so these are his or hers.
-          <a href={u("/register/")}> The whole register →</a></p>}
-      <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
-        {rec.rows.map((r) => (
-          <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
-            <p>{r.says}</p>
-            <p class="small" style="margin-top:.4rem;color:var(--ink-2)">
-              <span class={rec.shared ? "chip lore" : "chip doc"}>record</span> {r.source}
-              {r.link && r.link.startsWith("http") && <> · <a href={r.link}>the source ↗</a></>}
-            </p>
-          </div>
-        ))}
-      </div>
-    </section>
-  )}
-
-  {(mentions[p.slug] || []).length > 0 && (
-    <section class="blk">
-      <h2>Everywhere {p.name.split(" ")[0]} appears in this archive</h2>
-      {/* This used to say "the same evidence as the rest of the archive", which
-          was two claims too many. A mention is a page of this site that writes
-          about someone in prose. build_mentions.py deliberately skips the
-          directory pages — /register, /graves, /households, /families, /who —
-          because a name in a card grid is not a mention, and that is right. The
-          consequence is that a MENTION COUNT MEASURES PROSE, NOT EVIDENCE: 237
-          of the 473 people here have none, and fourteen of those 237 have a
-          register record all the same. */}
-      <p class="small">Every page of this site that <em>writes about</em> {p.name} in prose,
-      gathered automatically — {(mentions[p.slug] || []).length} in total. This counts pages, not
-      records: the lists and registers are skipped on purpose, so a person can be well documented
-      and appear here once or not at all.
-      {" "}<a href={u("/method/")}>How claims are labelled →</a></p>
-      <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:.85rem">
-        {(mentions[p.slug] || []).map((h) => (
-          <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
-            <a href={u(h.path)}><strong>{h.title}</strong></a>
-            <p class="small noauto" data-no-autolink style="margin-top:.3rem;color:var(--ink-2)">{h.snippet}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  )}
-
-  {appears.length > 0 && (
-    <section class="blk">
-      <h2>Written about here</h2>
-      <p class="small">Pages of this archive where {p.name.split(" ")[0]} is part of the argument,
-      not just a name in a list.</p>
-      <div class="grid three" style="margin-top:1rem">
-        {appears.map(([href, label]) => (
-          <a class="cardlink" href={u(href)}><div class="nm">{label}</div></a>
-        ))}
-      </div>
-    </section>
-  )}
-
-  {notes.length > 0 && (
-    <section class="blk">
-      <h2>What is written about {p.name.split(" ")[0]}</h2>
-      <p class="small">Carried across from the family tree, with its markup stripped. Family
-      testimony, not an independent record — valuable, and labelled.</p>
-      {anyDamaged && (
-        <Note tight>
-          <strong>This note reached the archive damaged.</strong> The export it came from stores rich
-          text, and the transfer truncated it — opening tags cut off mid-attribute, and words missing
-          from the middle of sentences. What follows has had the wreckage stripped, but
-          <strong> sentences will still break off</strong>. That is the source, not the transcription,
-          and nothing has been invented to bridge the gaps.
         </Note>
       )}
-      {notes.map((n) => (
-        <Note tight style="white-space:pre-wrap">{n.text}</Note>
-      ))}
-    </section>
-  )}
+      {p.ancestor && (
+        <p style="margin-top:1rem"><span class="chip doc">direct line</span>
+        {p.gen && <span class="small"> · generation {p.gen} counting back from the present day</span>}</p>
+      )}
+      {p.family && (
+        <p class="small" style="margin-top:.8rem">Counted here with the
+          <strong> {p.family}</strong> family ·
+          <a href={u(famHref(p.family))}> that family →</a></p>
+      )}
+      {!p.family && ln && (
+        <p class="small" style="margin-top:.8rem">Of the
+          <strong> {ln.surname}</strong> name ·
+          <a href={u(`/families/${ln.slug}`)}> that family →</a></p>
+      )}
+    </Fragment>
 
-  {(p.sources || []).length > 0 && (
-    <section class="blk">
-      <h2>Sources attached in the tree</h2>
-      <ul class="dek">
-        {p.sources.map((s) => <li>{s}</li>)}
-      </ul>
-      <p class="small">These are the citations the family tree carries. Where this archive has
-      checked one against the original, it says so on the relevant page.
-      <a href={u("/method/")}> Method →</a></p>
-    </section>
-  )}
+    {/* WHERE THIS COMES FROM */}
+    <Fragment slot="sources">
+      {me.graft
+        ? <p class="small"><span class="chip sup">above a graft</span> This person reaches the
+          family only through the <strong>{me.graft}</strong> join, which this archive has tested
+          and rejected. They are published because the tree carries them and deleting a claim is
+          not the same as testing it. <a href={u("/how-far-back/")}>The graft →</a></p>
+        : recCount > 0
+          ? <p class="small"><strong>{recCount}</strong> of the relationships drawn above{" "}
+            {recCount === 1 ? "is" : "are"} written in a record this archive has read.{" "}
+            {[...new Set(Object.values(me.rel || {}).map((v) => v[0]))].join("; ")}.</p>
+          : <p class="small">No relationship on this page has been checked against a record —
+            the parents, marriages and children drawn above are what the family tree says.
+            {rec
+              ? <> But <strong>{rec.rows.length} record{rec.rows.length === 1 ? "" : "s"}</strong>{" "}
+                naming {p.name}{" "}{rec.rows.length === 1 ? "has" : "have"} been read, and{" "}
+                {rec.rows.length === 1 ? "it is" : "they are"} set out below.</>
+              : <> Nothing else has been found for them either way.</>}
+            {" "}<a href={u("/method/")}>How claims are labelled →</a></p>}
 
-  <section class="blk" style="border-bottom:0">
-    <p class="small"><a href={u("/people/")}>← All {people.length} people</a> ·
-      <a href={u("/families/")}>The families</a> ·
-      <a href={u("/direct-line/")}>The direct line</a> ·
-      <a href={u("/method/")}>How claims are labelled</a></p>
-  </section>
+      {p.relative && (
+      <p class="small" style="margin-top:.7rem">This person has a page because the tree names them beside
+        someone this archive follows. Nothing has been researched for them here, and records that
+        carry their name are filed in the register under the name and not assigned to them: a
+        name is not a person.</p>
+      )}
+      <p class="small" style="margin-top:.7rem">
+        <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
+      {p.ancestor && (
+        <p class="small" style="margin-top:.5rem">
+          <a href={u("/direct-line/")}>See this generation on the spine →</a></p>
+      )}
+      {(p.sources || []).length > 0 && (
+        <>
+          <h3 style="margin-top:1.2rem">Sources attached in the tree</h3>
+          <ul class="dek">
+            {p.sources.map((s) => <li>{s}</li>)}
+          </ul>
+          <p class="small">These are the citations the family tree carries. Where this archive has
+          checked one against the original, it says so on the relevant page.
+          <a href={u("/method/")}> Method →</a></p>
+        </>
+      )}
+    </Fragment>
+
+    {sameName.length > 0 && (
+      <Fragment slot="namesakes">
+        <p class="small">This family reuses forenames relentlessly. <strong>These are different
+        people, kept apart on purpose rather than merged into one.</strong>
+        <a href={u("/name/")}> Why →</a></p>
+        <ul style="margin:.6rem 0 0">
+          {sameName.map((o) => (
+            <li class="small" style="margin-top:.3rem">
+              <a href={u(`/people/${o.slug}`)}>{o.name}</a>
+              <span> — {o.life || "dates unknown"}</span>
+              {prov[o.slug]?.graft && <span> · above the {prov[o.slug].graft} graft</span>}
+            </li>
+          ))}
+        </ul>
+      </Fragment>
+    )}
+
+    {portrait && (
+      <Fragment slot="media">
+        <figure style="margin:0;max-width:320px">
+          <img src={u(portrait.src)} width={portrait.w} height={portrait.h}
+            loading="eager" decoding="async" alt={portrait.alt}
+            style="display:block;width:100%;height:auto;border:1px solid var(--rule)" />
+          <figcaption class="cap" style="margin-top:.6rem">{portrait.cap}
+            {portrait.note && <> <strong>{portrait.note}</strong></>}</figcaption>
+        </figure>
+      </Fragment>
+    )}
+
+    {notes.length > 0 && (
+      <Fragment slot="notes">
+        <h3>What is written about {p.name.split(" ")[0]}</h3>
+        <p class="small">Carried across from the family tree, with its markup stripped. Family
+        testimony, not an independent record — valuable, and labelled.</p>
+        {anyDamaged && (
+          <Note tight>
+            <strong>This note reached the archive damaged.</strong> The export it came from stores rich
+            text, and the transfer truncated it — opening tags cut off mid-attribute, and words missing
+            from the middle of sentences. What follows has had the wreckage stripped, but
+            <strong> sentences will still break off</strong>. That is the source, not the transcription,
+            and nothing has been invented to bridge the gaps.
+          </Note>
+        )}
+        {notes.map((n) => (
+          <Note tight style="white-space:pre-wrap">{n.text}</Note>
+        ))}
+      </Fragment>
+    )}
+
+    {rec && (
+      <PersonSection kind="more" title="What the records say">
+        {rec.settled && rec.alsoNamed.length > 0
+          ? <p class="small"><strong>{rec.alsoNamed.length + 1} people in this family tree carry the
+            name {rec.name}</strong>, and these records have been assigned to this one on the dates
+            they give. Which record belongs to whom is set out in <span class="mono">tools/record-owners.json</span>,
+            rule by rule. The others: {rec.alsoNamed.map((o, i) => (
+              <>{i > 0 && " · "}<a href={u(`/people/${o}`)}>{o}</a></>))}.
+            <a href={u("/name/")}> Why they are kept apart →</a></p>
+          : rec.shared
+          ? <Note tight>
+              <strong>Filed under the name, not assigned to this person.</strong> This archive's
+              register keys a record to the name on the document, and <strong>{rec.name}</strong> is
+              carried by {rec.alsoNamed.length + 1} people in this tree. At least one line below
+              belongs to somebody else, and which is which is not settled. They are shown rather than
+              dropped, and they are not merged: <a href={u("/name/")}>a shared name is not a
+              person</a>. Also of this name: {rec.alsoNamed.map((o, i) => (
+                <>{i > 0 && " · "}<a href={u(`/people/${o}`)}>{o}</a></>))}.
+            </Note>
+          : <p class="small">Every record this archive has read that names {p.name}. The name is
+            unique in this tree, so these are his or hers.
+            <a href={u("/register/")}> The whole register →</a></p>}
+        <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
+          {rec.rows.map((r) => (
+            <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+              <p>{r.says}</p>
+              <p class="small" style="margin-top:.4rem;color:var(--ink-2)">
+                <span class={rec.shared ? "chip lore" : "chip doc"}>record</span> {r.source}
+                {r.link && r.link.startsWith("http") && <> · <a href={r.link}>the source ↗</a></>}
+              </p>
+            </div>
+          ))}
+        </div>
+      </PersonSection>
+    )}
+
+    {(mentions[p.slug] || []).length > 0 && (
+      <PersonSection kind="more" title={`Everywhere ${p.name.split(" ")[0]} appears in this archive`}>
+        {/* A mention is a page of this site that writes about someone in prose. build_mentions.py deliberately skips the directory pages
+            (/register, /graves, /households, /families, /who) because a name in a card grid is not a mention. A MENTION COUNT MEASURES PROSE, NOT EVIDENCE. */}
+        <p class="small">Every page of this site that <em>writes about</em> {p.name} in prose,
+        gathered automatically — {(mentions[p.slug] || []).length} in total. This counts pages, not
+        records: the lists and registers are skipped on purpose, so a person can be well documented
+        and appear here once or not at all.
+        {" "}<a href={u("/method/")}>How claims are labelled →</a></p>
+        <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:.85rem">
+          {(mentions[p.slug] || []).map((h) => (
+            <div style="border-left:2px solid var(--rule-strong);padding:2px 0 2px 16px">
+              <a href={u(h.path)}><strong>{h.title}</strong></a>
+              <p class="small noauto" data-no-autolink style="margin-top:.3rem;color:var(--ink-2)">{h.snippet}</p>
+            </div>
+          ))}
+        </div>
+      </PersonSection>
+    )}
+
+    {appears.length > 0 && (
+      <PersonSection kind="more" title="Written about here">
+        <p class="small">Pages of this archive where {p.name.split(" ")[0]} is part of the argument,
+        not just a name in a list.</p>
+        <div class="grid three" style="margin-top:1rem">
+          {appears.map(([href, label]) => (
+            <a class="cardlink" href={u(href)}><div class="nm">{label}</div></a>
+          ))}
+        </div>
+      </PersonSection>
+    )}
+  </PersonPage>
 </Base>
+)}

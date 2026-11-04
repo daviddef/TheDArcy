@@ -96,7 +96,7 @@ for k, v in bad.most_common(20):
 import json, collections as _c
 
 REG = os.path.join(ROOT, "site", "src", "data", "register.json")
-MARK_RECORD = "<h2>What the records say</h2>"
+MARK_RECORD = "What the records say</h2>"
 MARK_CORRECTION = "Corrected against the family tree."
 
 expect = _c.defaultdict(int)          # slug -> record lines owed to that page
