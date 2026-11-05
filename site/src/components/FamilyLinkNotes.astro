@@ -1,0 +1,38 @@
+---
+/* What the marks on a person's family links mean, the two rejected grafts, and the same name twice in one row: the words that stood under the family chart
+   (the kit's `chart-notes` slot) on every person page, moved here unchanged so that a page in story mode (no chart) can say them too, as its own section. */
+const { allRel, recorded, grafted, dupKids, dupSibs, u } = Astro.props;
+---
+  <p class="warn" style="margin-top:.6rem">
+    {allRel.length === 0
+      ? <>No relationship is published for this person. Either the tree records none, or the
+        people it records for them are not named anywhere in this archive.</>
+      : recorded === 0
+        ? <><strong>None of the {allRel.length} {allRel.length === 1 ? "relationship" : "relationships"} shown
+          here is written in a record this archive has read.</strong> Every one comes from the family
+          tree. That is not a claim that they are wrong — it is a statement about what has been
+          checked, and on this site the difference is the point.</>
+        : <><strong>{recorded} of the {allRel.length} relationships shown here</strong>{" "}
+          {recorded === 1 ? "is" : "are"} written in a record this archive has read; the
+          other {allRel.length - recorded} come from the family tree and{" "}
+          {allRel.length - recorded === 1 ? "has" : "have"} not been tested.</>}
+    {" "}<a href={u("/method/")}>How claims are labelled →</a>
+  </p>
+  {grafted > 0 && (
+    <p class="warn"><strong>{grafted} of these links sit above a graft.</strong> The archive has
+    tested the join they hang from and rejected it — the D'Arcys of Hornby Castle are unevidenced,
+    the Sneyds of Keele Hall disproved. The people are drawn because the tree carries them, and
+    struck through because nothing attaches them to this family.
+    {" "}<a href={u("/how-far-back/")}>Both grafts, in full →</a></p>
+  )}
+  {dupKids.length > 0 && (
+    <p class="warn"><strong>More than one child here carries the same name</strong> — {dupKids.join(", ")}.
+    A child who died was very often replaced by a later child given the same name, so this is
+    usually not an error. <strong>It is also exactly how a records-matcher invents one person out
+    of two</strong>, which is why they are kept apart here and you are told.</p>
+  )}
+  {dupSibs.length > 0 && (
+    <p class="warn"><strong>More than one sibling here carries the same name</strong> — {dupSibs.join(", ")}.
+    They are drawn separately. This archive does not merge records on a name.
+    {" "}<a href={u("/name/")}>Why →</a></p>
+  )}

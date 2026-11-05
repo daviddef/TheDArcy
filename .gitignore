@@ -30,3 +30,7 @@ site/dist-*/
 # `npm run build` from the built pages, never edited by hand. The LIVING list it is run with is not here
 # at all: it is written outside the repository, in ~/.local/state/darcy-archive/.
 site/.autolink/
+# Roots & Routes: intermediates written by tools/build-tree-page.py (the people export, a small GEDCOM from it, slugs), rebuilt every time
+data/tree-page/people.export.json
+data/tree-page/people.ged
+data/tree-page/slugs.json

@@ -1,0 +1,90 @@
+{
+ "individuals": 797,
+ "kept": 749,
+ "living": 34,
+ "living_policy": "omit",
+ "undated_dropped": 6,
+ "birth_year_estimated": 156,
+ "death_year_estimated": 274,
+ "placed_from_relative": 269,
+ "dropped_unplaced": 14,
+ "unresolved_places": {
+  "Ireland": 8,
+  "Heidelberg, Pfalz, Deutschland(HRR)": 4,
+  "Of, Friedrichsburg, Mannheim, Baden": 3,
+  "Ehrstaedt, Heidelberg, Baden, Germany": 2,
+  "Ehrstaedt, Heidelburg, Baden, Germany": 2,
+  "Baden-Wuerttemberg, Germany": 2,
+  "Schwetzingen, Rhein-Neckar-Kreis, Baden-Württemberg, Deutschland": 2,
+  "Darcy Meynill, Yorkshire, Cattaraugus County, New York, United States": 2,
+  "Schloss Friedrichsburg, Mannheim, Pfalz, Deutschland(HRR)": 2,
+  "(unmarried vp)": 2,
+  "Barbados, Caribbean": 2,
+  "Washington, Maryland, United States": 2,
+  "Rush, Indiana, United States": 2,
+  "Barbados": 2,
+  "Bega, Bega Valley Shire Council, New South Wales, Australia": 2,
+  "Bega, New South Wales, Australia": 2,
+  "Probably Homildon, Northumberland, England": 1,
+  "Ehrstaedt, Heidlberg, Baden, Germany": 1,
+  "Neuhaus, Jagst, Wuertt": 1,
+  "Aram, England": 1,
+  "Neuhaus, Neckar, Wuertt": 1,
+  "Dürnau/Biberach/BW": 1,
+  "Deinschwang, near Amberg, Upper Palatinate": 1,
+  "Hornsby Castle, England": 1,
+  "Heidelberg, Baden, Deutschland(HRR)": 1,
+  "Heidelberg, Bayern, Deutschland(HRR)": 1,
+  "Edingen, Baden-Württemberg, Deutschland(HRR)": 1,
+  "Heidelberg, Pfalz, Deutschland((HRR)": 1,
+  "Herford, Hessen, Deutschland(HRR)": 1,
+  "Neuhaus near Neckar, Wuertt": 1,
+  "Schloss Herrenhausen, Hannover, Braunschweig-Luneburg, Deutschland": 1,
+  "Neuhaus near Schorndorf, Neckar, Wuertt.": 1,
+  "Strassburg, Kärnten, Austria.": 1,
+  "Schloss Friedrichsburg, Mannheim, Germ": 1,
+  "Neuhrus near Schorndorf, Neckar, Wuertt.": 1,
+  "Oberwesel, Germany": 1,
+  "Geisenheim, Germany": 1,
+  "Köln": 1,
+  "Baden-Württemberg, Deutschland": 1,
+  "Negroponte, Greece": 1
+ },
+ "focus": "I20",
+ "conflicts": [
+  {
+   "id": "I502881",
+   "slug": "susan-sutton",
+   "born": 1593,
+   "died": 1591
+  },
+  {
+   "id": "I502883",
+   "slug": "elizabeth-sutton",
+   "born": 1597,
+   "died": 1595
+  },
+  {
+   "id": "I502899",
+   "slug": "elizabeth-d-arcy",
+   "born": 1610,
+   "died": 1729
+  },
+  {
+   "id": "I501963",
+   "slug": "edward-sneyd-1691",
+   "born": 1722,
+   "died": 1691
+  }
+ ],
+ "possibly_living_omitted": {
+  "count": 19
+ },
+ "declared_copies_folded_into_primary": 8,
+ "export": {
+  "corrected_years": 11,
+  "corrected_places": 2,
+  "withdrawn_places": 2
+ },
+ "not_living_exported": 805
+}

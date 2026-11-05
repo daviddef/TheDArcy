@@ -1,0 +1,4770 @@
+{
+ "1 North Quay, Brisbane, Queensland, Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "2 Rose Villas, Middlesex, England": {
+  "name": "Middlesex",
+  "lat": 51.55,
+  "lon": -0.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "middlesex",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Adelaide St, North Brisbane, Queensland, Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Albion Church, Brisbane": {
+  "name": "Albion",
+  "lat": -27.43,
+  "lon": 153.04,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Aller, Somerset, England": {
+  "name": "Aller",
+  "lat": 51.04,
+  "lon": -2.82,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ann-street, Breakfast Creek, `Brisbane, Queensland, Australia": {
+  "name": "Breakfast Creek",
+  "lat": -27.44,
+  "lon": 153.05,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Arienzo, Caserta, Campania, Italia": {
+  "name": "Arienzo",
+  "lat": 41.0243,
+  "lon": 14.4971,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "arienzo",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Arienzo, Caserta, Campania, Italy": {
+  "name": "Arienzo",
+  "lat": 41.0243,
+  "lon": 14.4971,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "arienzo",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Arpaia, Benevento, Campania, Italia": {
+  "name": "Arpaia",
+  "lat": 41.03,
+  "lon": 14.53,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "arpaia",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Arpaia, Benevento, Italy": {
+  "name": "Arpaia",
+  "lat": 41.03,
+  "lon": 14.53,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "arpaia",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Arpaia, Italy": {
+  "name": "Arpaia",
+  "lat": 41.03,
+  "lon": 14.53,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "arpaia",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Arpaia, Provincia di Benevento, Campania, Italy": {
+  "name": "Arpaia",
+  "lat": 41.03,
+  "lon": 14.53,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "arpaia",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ashton House, Westward Ho, Devon, England": {
+  "name": "Westward Ho",
+  "lat": 51.04,
+  "lon": -4.24,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ashton Under Hill, Gloucestershire, England": {
+  "name": "Ashton under Hill",
+  "lat": 52.04,
+  "lon": -2.01,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ashton-under-hill",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ashton Underhill, Gloucester, England": {
+  "name": "Ashton under Hill",
+  "lat": 52.04,
+  "lon": -2.01,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ashton-under-hill",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ashton Underhill, Gloucestershire, England": {
+  "name": "Ashton under Hill",
+  "lat": 52.04,
+  "lon": -2.01,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ashton-under-hill",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ashton under Hill, Gloucestershire, England, United Kingdom": {
+  "name": "Ashton under Hill",
+  "lat": 52.04,
+  "lon": -2.01,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ashton-under-hill",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ashton, Underhil, Gloucestershire, England": {
+  "name": "Ashton under Hill",
+  "lat": 52.04,
+  "lon": -2.01,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ashton-under-hill",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ashton, Underhill, Gloucestershire, England": {
+  "name": "Ashton under Hill",
+  "lat": 52.04,
+  "lon": -2.01,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ashton-under-hill",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Aston, Yorkshire": {
+  "name": "Yorkshire",
+  "lat": 54.0,
+  "lon": -1.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "yorkshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Audlem, Cheshire, England": {
+  "name": "Audlem",
+  "lat": 52.99,
+  "lon": -2.51,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Averham Park, Nottinghamshire, England": {
+  "name": "Averham",
+  "lat": 53.0829,
+  "lon": -0.8598,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Averham Park, Nottinghamshire. England": {
+  "name": "Averham",
+  "lat": 53.0829,
+  "lon": -0.8598,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Averham, Nottingham": {
+  "name": "Averham",
+  "lat": 53.0829,
+  "lon": -0.8598,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Averham, Nottingham, England": {
+  "name": "Averham",
+  "lat": 53.0829,
+  "lon": -0.8598,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Averham, Nottinghamshire, England": {
+  "name": "Averham",
+  "lat": 53.0829,
+  "lon": -0.8598,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Averham, Nottinghamshire, England, United Kingdom": {
+  "name": "Averham",
+  "lat": 53.0829,
+  "lon": -0.8598,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Averham, Nottinghamshire, UK": {
+  "name": "Averham",
+  "lat": 53.0829,
+  "lon": -0.8598,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ayr, Ayr, Scotland": {
+  "name": "Ayr",
+  "lat": 55.46,
+  "lon": -4.63,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ayr",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ayr, Scotland": {
+  "name": "Ayr",
+  "lat": 55.46,
+  "lon": -4.63,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "ayr",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ballymodan, Bandon, Cor, Ireland": {
+  "name": "Bandon",
+  "lat": 51.75,
+  "lon": -8.74,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "bandon",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ballymodan, Bandon, Ireland": {
+  "name": "Bandon",
+  "lat": 51.75,
+  "lon": -8.74,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "bandon",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bandon, County Cork, Ireland": {
+  "name": "Bandon",
+  "lat": 51.75,
+  "lon": -8.74,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "bandon",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bangor, Gwynedd, UK": {
+  "name": "Bangor Gwynedd",
+  "lat": 53.23,
+  "lon": -4.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Barnstaple, Devonshire, England": {
+  "name": "Barnstaple",
+  "lat": 51.08,
+  "lon": -4.06,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Basingthorpe, Lincolnshire, England": {
+  "name": "Bassingthorpe",
+  "lat": 52.8,
+  "lon": -0.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Basingthorpe, Linconshire, England": {
+  "name": "Bassingthorpe",
+  "lat": 52.8,
+  "lon": -0.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bassingthorpe, Lincolnshire, England": {
+  "name": "Bassingthorpe",
+  "lat": 52.8,
+  "lon": -0.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bassingthorpe. Lincolnshire. England": {
+  "name": "Bassingthorpe",
+  "lat": 52.8,
+  "lon": -0.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bath, Bath and North East Somerset, UK": {
+  "name": "Bath",
+  "lat": 51.38,
+  "lon": -2.36,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bath",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bath, Somerset, England": {
+  "name": "Bath",
+  "lat": 51.38,
+  "lon": -2.36,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bath",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bath, Somersetshire, England, Kingdom of Great Britain": {
+  "name": "Bath",
+  "lat": 51.38,
+  "lon": -2.36,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bath",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bedworth, Leicestershire, England, UK.": {
+  "name": "Bedworth",
+  "lat": 52.48,
+  "lon": -1.47,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bedworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Berkeley, Glou, England": {
+  "name": "Berkeley",
+  "lat": 51.6914,
+  "lon": -2.4585,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Berkeley, Gloucester, England": {
+  "name": "Berkeley",
+  "lat": 51.6914,
+  "lon": -2.4585,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Berkeley, Gloucester, England\\": {
+  "name": "Berkeley",
+  "lat": 51.6914,
+  "lon": -2.4585,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Berkeley, Gloucestershire, England": {
+  "name": "Berkeley",
+  "lat": 51.6914,
+  "lon": -2.4585,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Berkley, Gloucester, England": {
+  "name": "Berkeley",
+  "lat": 51.6914,
+  "lon": -2.4585,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Birmingham, Warwickshire, England": {
+  "name": "Birmingham",
+  "lat": 52.48,
+  "lon": -1.9,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bisley, Gloucestershire, England": {
+  "name": "Bisley",
+  "lat": 51.74,
+  "lon": -2.14,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bisley",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bosworth Hall, Leicester, Leicestershire, England": {
+  "name": "Market Bosworth",
+  "lat": 52.62,
+  "lon": -1.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "market-bosworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Boulia, Boulia Shire, Queensland, Australia": {
+  "name": "Boulia",
+  "lat": -22.91,
+  "lon": 139.9,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brentwood, Middlesex, England": {
+  "name": "Brentwood",
+  "lat": 51.62,
+  "lon": 0.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brighton, Brighton & Hove, UK": {
+  "name": "Brighton",
+  "lat": 50.83,
+  "lon": -0.14,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brimpsfield, Gloucester, England": {
+  "name": "Brimpsfield",
+  "lat": 51.8,
+  "lon": -2.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane Q'ld Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane QLD, Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane Qld": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane Qld Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane, Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane, Brisbane, Queensland, Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane, QLD, Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane, Qld, Aust.": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane, Queensland": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Brisbane, Queensland, Australia": {
+  "name": "Brisbane",
+  "lat": -27.469,
+  "lon": 153.0235,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "brisbane",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bristol, City of Bristol, UK": {
+  "name": "Bristol",
+  "lat": 51.45,
+  "lon": -2.59,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bristol",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bristol, Gloucester, England": {
+  "name": "Bristol",
+  "lat": 51.45,
+  "lon": -2.59,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bristol",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Bristol, Gloucestershire, England": {
+  "name": "Bristol",
+  "lat": 51.45,
+  "lon": -2.59,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bristol",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Buckwall, Somerset": {
+  "name": "Somerset",
+  "lat": 51.1,
+  "lon": -2.9,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "somerset",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Butcombe Som Eng": {
+  "name": "Butcombe",
+  "lat": 51.35,
+  "lon": -2.69,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Capua, Caserta, Campania, Italia": {
+  "name": "Capua",
+  "lat": 41.11,
+  "lon": 14.21,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Carrigaline, Cork, Ireland": {
+  "name": "Carrigaline",
+  "lat": 51.81,
+  "lon": -8.4,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "carrigaline",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Caserta, Campania, Italia": {
+  "name": "Caserta",
+  "lat": 41.07,
+  "lon": 14.33,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "caserta",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Caserta, Campania, Italy": {
+  "name": "Caserta",
+  "lat": 41.07,
+  "lon": 14.33,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "caserta",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Castle Church, Stafford, England": {
+  "name": "Castle Church",
+  "lat": 52.78,
+  "lon": -2.12,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Cavendish Road, Coorparoo, Brisbane, Qld": {
+  "name": "Coorparoo",
+  "lat": -27.5,
+  "lon": 153.06,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Charters Towers, Queensland, Australia": {
+  "name": "Charters Towers",
+  "lat": -20.07,
+  "lon": 146.26,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Chatham, Kent, England": {
+  "name": "Chatham",
+  "lat": 51.38,
+  "lon": 0.53,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "chatham",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Chatham, Medway, England, United Kingdom": {
+  "name": "Chatham",
+  "lat": 51.38,
+  "lon": 0.53,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "chatham",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Chatham, Medway, UK": {
+  "name": "Chatham",
+  "lat": 51.38,
+  "lon": 0.53,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "chatham",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Chelmsford, Essex, England": {
+  "name": "Chelmsford",
+  "lat": 51.74,
+  "lon": 0.47,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "chelmsford",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Christened in Berkeley, Gloucester, England": {
+  "name": "Berkeley",
+  "lat": 51.6914,
+  "lon": -2.4585,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Clarkenwell, Finsbury, London, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Clerkenwell, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Clermont, Queensland, Australia": {
+  "name": "Clermont",
+  "lat": -22.82,
+  "lon": 147.64,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Clifton, Bedfordshire, England": {
+  "name": "Clifton Bedfordshire",
+  "lat": 52.03,
+  "lon": -0.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Clifton, Somerset, England": {
+  "name": "Clifton Bristol",
+  "lat": 51.46,
+  "lon": -2.62,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Codford, Wiltshire, England": {
+  "name": "Codford",
+  "lat": 51.17,
+  "lon": -2.03,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Constable Burton Hall, Leyburn, Yorkshire": {
+  "name": "Constable Burton",
+  "lat": 54.33,
+  "lon": -1.8,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Cooby Creek, Via Toowoomba, Qld, Aust": {
+  "name": "Cooby Creek",
+  "lat": -27.4,
+  "lon": 151.89,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Cork, Cork City, Cork, Ireland": {
+  "name": "Cork",
+  "lat": 51.9,
+  "lon": -8.47,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "cork",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Cork, County Cork, Ireland": {
+  "name": "Cork",
+  "lat": 51.9,
+  "lon": -8.47,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "cork",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Cork, Ireland": {
+  "name": "Cork",
+  "lat": 51.9,
+  "lon": -8.47,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "cork",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Corris, Merionethshire, Wales": {
+  "name": "Corris",
+  "lat": 52.65,
+  "lon": -3.84,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "County Cork, Ireland": {
+  "name": "Cork",
+  "lat": 51.9,
+  "lon": -8.47,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "cork",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Coxwold, Yorkshire": {
+  "name": "Coxwold",
+  "lat": 54.19,
+  "lon": -1.18,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Dalkeith Palace, Dalkeith, Mid-Lothian, Scotland": {
+  "name": "Dalkeith",
+  "lat": 55.89,
+  "lon": -3.07,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "dalkeith",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Darling Downs": {
+  "name": "Darling Downs",
+  "lat": -27.5,
+  "lon": 151.5,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Davenham, Chester, Eng.": {
+  "name": "Davenham",
+  "lat": 53.24,
+  "lon": -2.51,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Denton, Oxford, England": {
+  "name": "Denton Oxfordshire",
+  "lat": 51.73,
+  "lon": -1.15,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Denton, Oxford, Oxfordshire, England, United Kingdom": {
+  "name": "Denton Oxfordshire",
+  "lat": 51.73,
+  "lon": -1.15,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Devonshire, England": {
+  "name": "Devon",
+  "lat": 50.75,
+  "lon": -3.75,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "devon",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Doonogan, Mullagh, County Clare, Ireland": {
+  "name": "Mullagh",
+  "lat": 52.82,
+  "lon": -9.1,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Douglas, Lanarkshire, Scotland": {
+  "name": "Douglas Lanarkshire",
+  "lat": 55.55,
+  "lon": -3.85,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Drivers Field, Gloucester, England": {
+  "name": "Berkeley",
+  "lat": 51.6914,
+  "lon": -2.4585,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Drogheda, County Louth, Ireland": {
+  "name": "Drogheda",
+  "lat": 53.72,
+  "lon": -6.35,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "drogheda",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Dublin, Ireland": {
+  "name": "Dublin",
+  "lat": 53.35,
+  "lon": -6.26,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Dudley, Tipton Staffordshire England": {
+  "name": "Dudley",
+  "lat": 52.51,
+  "lon": -2.08,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Dundee, Scotland": {
+  "name": "Dundee",
+  "lat": 56.46,
+  "lon": -2.97,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "dundee",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Dunfermline Palace, Dunfermline, Fife, Scotland": {
+  "name": "Dunfermline",
+  "lat": 56.07,
+  "lon": -3.46,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "dunfermline",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Dunfermline Palace, Fife, Scotland": {
+  "name": "Dunfermline",
+  "lat": 56.07,
+  "lon": -3.46,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "dunfermline",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "East Lockinge, Berkshire": {
+  "name": "East Lockinge",
+  "lat": 51.59,
+  "lon": -1.43,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Edensor, Derbyshire, England": {
+  "name": "Edensor",
+  "lat": 53.23,
+  "lon": -1.61,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Edinburgh Castle, Edinburgh, Midlothian, Scotland": {
+  "name": "Edinburgh",
+  "lat": 55.95,
+  "lon": -3.19,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "edinburgh",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Edinburgh, Midlothian, Scotland, United Kingdom": {
+  "name": "Edinburgh",
+  "lat": 55.95,
+  "lon": -3.19,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "edinburgh",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Edinburgh, Scotland, United Kingdom": {
+  "name": "Edinburgh",
+  "lat": 55.95,
+  "lon": -3.19,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "edinburgh",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Edmonton, Middlesex, England": {
+  "name": "Edmonton",
+  "lat": 51.62,
+  "lon": -0.07,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Eltonhead, Lancashire, England": {
+  "name": "Eltonhead",
+  "lat": 53.45,
+  "lon": -2.69,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Emu Park, Queensland, Australia": {
+  "name": "Emu Park",
+  "lat": -23.26,
+  "lon": 150.82,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Epsom, Surrey, England": {
+  "name": "Epsom",
+  "lat": 51.33,
+  "lon": -0.27,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Falkland Palace, Fife, Scotland": {
+  "name": "Falkland",
+  "lat": 56.25,
+  "lon": -3.21,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "falkland",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Falmer, The City of Brighton and Hove, England, United Kingdom": {
+  "name": "Brighton",
+  "lat": 50.83,
+  "lon": -0.14,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Farnham, Surrey, England": {
+  "name": "Farnham",
+  "lat": 51.21,
+  "lon": -0.8,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Forchia, Benevento, Campania, Italy": {
+  "name": "Forchia",
+  "lat": 41.0302,
+  "lon": 14.5373,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "forchia",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Forchia, Italy": {
+  "name": "Forchia",
+  "lat": 41.0302,
+  "lon": 14.5373,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "forchia",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Forde Hall, Warwickshire, England": {
+  "name": "Warwickshire",
+  "lat": 52.28,
+  "lon": -1.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "warwickshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Frampton, Gloucestershire, England": {
+  "name": "Frampton on Severn",
+  "lat": 51.77,
+  "lon": -2.37,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Frankfurt am Main, Frankfurt am Main, Hessen, Deutschland": {
+  "name": "Frankfurt am Main",
+  "lat": 50.11,
+  "lon": 8.68,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Frere Hall, Warwickshire, England": {
+  "name": "Warwickshire",
+  "lat": 52.28,
+  "lon": -1.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "warwickshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Frome, Somerset, England": {
+  "name": "Frome",
+  "lat": 51.23,
+  "lon": -2.32,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Gayndah, North Burnett Regional, Queensland, Australia": {
+  "name": "Gayndah",
+  "lat": -25.62,
+  "lon": 151.61,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Gilling, Sedbury Park, Yorkshire, England": {
+  "name": "Gilling West",
+  "lat": 54.43,
+  "lon": -1.7,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Gloucestershire, England": {
+  "name": "Gloucestershire",
+  "lat": 51.8333,
+  "lon": -2.1667,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "gloucestershire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Graham Street, South Brisbane, Queensland, Australia": {
+  "name": "South Brisbane",
+  "lat": -27.48,
+  "lon": 153.02,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Gravenhage, Zuid Holland, Nederlande": {
+  "name": "The Hague",
+  "lat": 52.08,
+  "lon": 4.31,
+  "country": "Netherlands",
+  "iso": "NL",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Gravesend, England, United Kingdom": {
+  "name": "Gravesend",
+  "lat": 51.44,
+  "lon": 0.37,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Great Marlow, Buckinghamshire, England": {
+  "name": "Great Marlow",
+  "lat": 51.57,
+  "lon": -0.78,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Greenwich Palace, Greenwich, Kent, England": {
+  "name": "Greenwich",
+  "lat": 51.48,
+  "lon": 0.0,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Greenwich Palace, Richmond, Surrey, England": {
+  "name": "Greenwich",
+  "lat": 51.48,
+  "lon": 0.0,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Guildford, Surrey, England": {
+  "name": "Guildford",
+  "lat": 51.24,
+  "lon": -0.57,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Gympie, Queensland": {
+  "name": "Gympie",
+  "lat": -26.19,
+  "lon": 152.67,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "gympie",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Gympie, Queensland, Australia": {
+  "name": "Gympie",
+  "lat": -26.19,
+  "lon": 152.67,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "gympie",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Haarlemmermeer, Nederlande": {
+  "name": "Haarlemmermeer",
+  "lat": 52.3,
+  "lon": 4.68,
+  "country": "Netherlands",
+  "iso": "NL",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hampstead, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hampton Court Palace, Richmond, Greater London, United Kingdom": {
+  "name": "Hampton Court",
+  "lat": 51.4,
+  "lon": -0.34,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hanley, Stoke-on-Trent, England, United Kingdom": {
+  "name": "Hanley",
+  "lat": 53.03,
+  "lon": -2.18,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hanley, Stoke-on-Trent, Staffordshire, England": {
+  "name": "Hanley",
+  "lat": 53.03,
+  "lon": -2.18,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hartland, Devon, England, United Kingdom": {
+  "name": "Hartland",
+  "lat": 51.0,
+  "lon": -4.48,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Headington, Oxfordshire, England": {
+  "name": "Headington",
+  "lat": 51.76,
+  "lon": -1.21,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hertford, St. Mayfair, London, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hertfordshire, England": {
+  "name": "Hertfordshire",
+  "lat": 51.8,
+  "lon": -0.2,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "hertfordshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hertogenbosch, The Netherlands": {
+  "name": "'s-Hertogenbosch",
+  "lat": 51.69,
+  "lon": 5.3,
+  "country": "Netherlands",
+  "iso": "NL",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hillingdon House, Middlesex, London, England": {
+  "name": "Hillingdon",
+  "lat": 51.54,
+  "lon": -0.45,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hillingdon, Middlesex, England, Kingdom of Great Britain": {
+  "name": "Hillingdon",
+  "lat": 51.54,
+  "lon": -0.45,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Himley Hall, Himley Staffs": {
+  "name": "Himley",
+  "lat": 52.5,
+  "lon": -2.17,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Himley, Worcestershire": {
+  "name": "Himley",
+  "lat": 52.5,
+  "lon": -2.17,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Holy Trinity, Kingswinford, Stafford, England": {
+  "name": "Kingswinford",
+  "lat": 52.49,
+  "lon": -2.15,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby Castle, North Riding, Yorkshire, England": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby Castle, Yorkshire, England": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby Castle, nr Bedale, Yorkshire": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby Castle, nr Bedale, Yorkshire, England": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby, North Riding, Yorkshire": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby, North Riding, Yorkshire, England": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby, West Riding, Yorkshire, England": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby, Yorkshire": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hornby, Yorkshire, England": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Hull, East Riding of Yorkshire, England, United Kingdom": {
+  "name": "Hull",
+  "lat": 53.74,
+  "lon": -0.33,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ipswich, Ipswich City, Queensland, Australia": {
+  "name": "Ipswich",
+  "lat": -27.61,
+  "lon": 152.76,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ipswich, Queensland, Australia": {
+  "name": "Ipswich",
+  "lat": -27.61,
+  "lon": 152.76,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Keele, Staffordshire": {
+  "name": "Keele",
+  "lat": 53.0038,
+  "lon": -2.2877,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "keele",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Keele, Staffordshire, England": {
+  "name": "Keele",
+  "lat": 53.0038,
+  "lon": -2.2877,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "keele",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Keele, Staffordshire, England, United Kingdom": {
+  "name": "Keele",
+  "lat": 53.0038,
+  "lon": -2.2877,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "keele",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Keele, Staffordshire-Inglaterra": {
+  "name": "Keele",
+  "lat": 53.0038,
+  "lon": -2.2877,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "keele",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Kelvin Grove, Queensland, Australia": {
+  "name": "Kelvin Grove",
+  "lat": -27.45,
+  "lon": 153.01,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Kennington, Surrey, England": {
+  "name": "Kennington",
+  "lat": 51.49,
+  "lon": -0.11,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Kensington House, London, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Kirkby Mallory, Leicestershire, England": {
+  "name": "Kirkby Mallory",
+  "lat": 52.62,
+  "lon": -1.35,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Kneveton Manor, Nottinghamshire, England": {
+  "name": "Kneeton",
+  "lat": 53.02,
+  "lon": -0.95,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Langdon Hall, Warwick, England": {
+  "name": "Warwickshire",
+  "lat": 52.28,
+  "lon": -1.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "warwickshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Langdon Hall, Warwickshire, England": {
+  "name": "Warwickshire",
+  "lat": 52.28,
+  "lon": -1.56,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "warwickshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Leicester House, St. Martin's-in-the-Fields, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Limerick City, Ireland": {
+  "name": "Limerick",
+  "lat": 52.6613,
+  "lon": -8.6301,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "limerick",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Limerick, County Limerick, Ireland": {
+  "name": "Limerick",
+  "lat": 52.6613,
+  "lon": -8.6301,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "limerick",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Limerick, Ireland": {
+  "name": "Limerick",
+  "lat": 52.6613,
+  "lon": -8.6301,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "limerick",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Limerick, Limerick, Ireland": {
+  "name": "Limerick",
+  "lat": 52.6613,
+  "lon": -8.6301,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "limerick",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Lincolnshire, England": {
+  "name": "Lincolnshire",
+  "lat": 53.2,
+  "lon": -0.2,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "lincolnshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Linlithgow Palace, Lothian, Scotland": {
+  "name": "Linlithgow",
+  "lat": 55.98,
+  "lon": -3.6,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "linlithgow",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Little Busby, Stokesley, Yorkshire": {
+  "name": "Little Busby",
+  "lat": 54.45,
+  "lon": -1.23,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Logan Village, Queensland, Australia": {
+  "name": "Logan Village",
+  "lat": -27.77,
+  "lon": 153.11,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "London": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "London, England, United Kingdom": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "London, Greater London, England, United Kingdom": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "London, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "London, Middlesex, England, Kingdom of Great Britain": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "London, Middlesex, England, United Kingdom": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Long Ashton, Som., Eng.": {
+  "name": "Long Ashton",
+  "lat": 51.4302,
+  "lon": -2.6618,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "long-ashton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Long Ashton, Somerset": {
+  "name": "Long Ashton",
+  "lat": 51.4302,
+  "lon": -2.6618,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "long-ashton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Long Ashton, Somerset, Eng": {
+  "name": "Long Ashton",
+  "lat": 51.4302,
+  "lon": -2.6618,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "long-ashton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Long Ashton, Somerset, England": {
+  "name": "Long Ashton",
+  "lat": 51.4302,
+  "lon": -2.6618,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "long-ashton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Lyme Regis, Dorset": {
+  "name": "Lyme Regis",
+  "lat": 50.73,
+  "lon": -2.96,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Lymington, Hampshire": {
+  "name": "Lymington",
+  "lat": 50.76,
+  "lon": -1.54,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Lymington, Hampshire, England": {
+  "name": "Lymington",
+  "lat": 50.76,
+  "lon": -1.54,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Lymington, Hampshire, UK": {
+  "name": "Lymington",
+  "lat": 50.76,
+  "lon": -1.54,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Lymington, UK": {
+  "name": "Lymington",
+  "lat": 50.76,
+  "lon": -1.54,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "MARKET BOSWORTH, LEICESTER, ENGLAND": {
+  "name": "Market Bosworth",
+  "lat": 52.62,
+  "lon": -1.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "market-bosworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Mackay, Queensland, Australia": {
+  "name": "Mackay",
+  "lat": -21.14,
+  "lon": 149.19,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Madeley, Shropshire, England": {
+  "name": "Madeley Shropshire",
+  "lat": 52.64,
+  "lon": -2.45,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Madeley, Stafford, England": {
+  "name": "Madeley Staffordshire",
+  "lat": 52.98,
+  "lon": -2.35,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Madeley, Staffordshire, England": {
+  "name": "Madeley Staffordshire",
+  "lat": 52.98,
+  "lon": -2.35,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Madeley, Staffordshire, England, United Kingdom": {
+  "name": "Madeley Staffordshire",
+  "lat": 52.98,
+  "lon": -2.35,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Mainz, Rheinhessen, Hessen Lande, Germany": {
+  "name": "Mainz",
+  "lat": 50.0,
+  "lon": 8.27,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "mainz",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Maket Drayton, Shropshire, England": {
+  "name": "Market Bosworth",
+  "lat": 52.62,
+  "lon": -1.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "market-bosworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Maldon, Essex, England": {
+  "name": "Maldon",
+  "lat": 51.73,
+  "lon": 0.68,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Maloney Street, Toowoomba, Queensland, Australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Mansfield, Nottinghamshire, England": {
+  "name": "Mansfield",
+  "lat": 53.14,
+  "lon": -1.2,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Market Bosworth, Leicester, England": {
+  "name": "Market Bosworth",
+  "lat": 52.62,
+  "lon": -1.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "market-bosworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Market Bosworth, Leicestershire, England": {
+  "name": "Market Bosworth",
+  "lat": 52.62,
+  "lon": -1.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "market-bosworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Market Bosworth, Leicestershire, England, UK.": {
+  "name": "Market Bosworth",
+  "lat": 52.62,
+  "lon": -1.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "market-bosworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Maryborough, Queensland": {
+  "name": "Maryborough",
+  "lat": -25.54,
+  "lon": 152.7,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Maryborough, Queensland, Australia": {
+  "name": "Maryborough",
+  "lat": -25.54,
+  "lon": 152.7,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Marylebone, London, England, United Kingdom": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Marylebone, London, Greater London, England, United Kingdom": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Marylebone, London, Middlesex": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Middlesex, England": {
+  "name": "Middlesex",
+  "lat": 51.55,
+  "lon": -0.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "middlesex",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Milford on Sea, Hampshire, England, United Kingdom": {
+  "name": "Milford on Sea",
+  "lat": 50.73,
+  "lon": -1.58,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Milford, Lymington, Hampshire, England": {
+  "name": "Milford on Sea",
+  "lat": 50.73,
+  "lon": -1.58,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Montagu Square, Paddington, Greater London, UK": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Morrissey Street, Woolloongabba, Queensland, Australia": {
+  "name": "Woolloongabba",
+  "lat": -27.49,
+  "lon": 153.04,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Moulsham Hall, Essex, England": {
+  "name": "Chelmsford",
+  "lat": 51.74,
+  "lon": 0.47,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "chelmsford",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Mount Morgan Queensland": {
+  "name": "Mount Morgan",
+  "lat": -23.65,
+  "lon": 150.38,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Muttaburra, Queensland": {
+  "name": "Muttaburra",
+  "lat": -22.58,
+  "lon": 144.55,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Nambour, Sunshine Coast Regional, Queensland, Australia": {
+  "name": "Nambour",
+  "lat": -26.63,
+  "lon": 152.96,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Nether Skyers, Darfield, Yorkshire": {
+  "name": "Darfield",
+  "lat": 53.52,
+  "lon": -1.38,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "New Park, Yorkshire": {
+  "name": "Yorkshire",
+  "lat": 54.0,
+  "lon": -1.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "yorkshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Newborough, Yorkshire, England": {
+  "name": "Yorkshire",
+  "lat": 54.0,
+  "lon": -1.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "yorkshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Newcastle-under-Lyme, Staffordshire, England": {
+  "name": "Newcastle-under-Lyme",
+  "lat": 53.01,
+  "lon": -2.23,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "No 3, Well St, Hanley, Staffordshire, England": {
+  "name": "Hanley",
+  "lat": 53.03,
+  "lon": -2.18,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "North Yorkshire, England, United Kingdom": {
+  "name": "North Yorkshire",
+  "lat": 54.15,
+  "lon": -1.4,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Norwich, England, United Kingdom": {
+  "name": "Norwich",
+  "lat": 52.63,
+  "lon": 1.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Nun Appleton, Yorkshire, England": {
+  "name": "Nun Appleton",
+  "lat": 53.87,
+  "lon": -1.17,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Of, Hornby Castle, Yorkshire, England": {
+  "name": "Hornby Castle",
+  "lat": 54.3385,
+  "lon": -1.6542,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Old Bishop's Palace in Oslo, Oslo, Oslo, Oslo, Norway": {
+  "name": "Oslo",
+  "lat": 59.91,
+  "lon": 10.75,
+  "country": "Norway",
+  "iso": "NO",
+  "atlas_id": "oslo",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Old Holy Trinity Church, Wentworth, Yorkshire": {
+  "name": "Wentworth",
+  "lat": 53.47,
+  "lon": -1.42,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ormesby, Lincolnshire, England": {
+  "name": "Lincolnshire",
+  "lat": 53.2,
+  "lon": -0.2,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "lincolnshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Ossington, Nottinghamshire, England": {
+  "name": "Ossington",
+  "lat": 53.17,
+  "lon": -0.89,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Oswestry, Shropshire, England, United Kingdom": {
+  "name": "Oswestry",
+  "lat": 52.86,
+  "lon": -3.05,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "oswestry",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Palace of Whitehall, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Pennal, Merionethshire, Wales": {
+  "name": "Pennal",
+  "lat": 52.6,
+  "lon": -3.91,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Penrith, Cumberland, England": {
+  "name": "Penrith",
+  "lat": 54.66,
+  "lon": -2.75,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Penzance, UK": {
+  "name": "Penzance",
+  "lat": 50.12,
+  "lon": -5.54,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Porlock, Minehead, Somerset, England": {
+  "name": "Porlock",
+  "lat": 51.22,
+  "lon": -3.6,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Porlock, Somerset, England": {
+  "name": "Porlock",
+  "lat": 51.22,
+  "lon": -3.6,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Portlock, Somerset, England": {
+  "name": "Porlock",
+  "lat": 51.22,
+  "lon": -3.6,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Portsea, Southampton, England": {
+  "name": "Portsmouth",
+  "lat": 50.8,
+  "lon": -1.09,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "portsmouth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Portsmouth, Hampshire": {
+  "name": "Portsmouth",
+  "lat": 50.8,
+  "lon": -1.09,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "portsmouth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Portsmouth, Hampshire, England": {
+  "name": "Portsmouth",
+  "lat": 50.8,
+  "lon": -1.09,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "portsmouth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Portsmouth, Southampton, United Kingdom": {
+  "name": "Portsmouth",
+  "lat": 50.8,
+  "lon": -1.09,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "portsmouth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Praha, Böhmen, Deutschland(HRR)": {
+  "name": "Praha",
+  "lat": 50.09,
+  "lon": 14.42,
+  "country": "Czechia",
+  "iso": "CZ",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Priestlands, Milford, Lymington, Hampshire, England": {
+  "name": "Milford on Sea",
+  "lat": 50.73,
+  "lon": -1.58,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Putney, Surrey, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Rathdown, Ireland": {
+  "name": "Rathdown",
+  "lat": 53.2,
+  "lon": -6.15,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Rockhampton City, Rockhampton Regional, Queensland, Australia": {
+  "name": "Rockhampton",
+  "lat": -23.38,
+  "lon": 150.51,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "rockhampton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Rockhampton, AU": {
+  "name": "Rockhampton",
+  "lat": -23.38,
+  "lon": 150.51,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "rockhampton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Rockhampton, Qld": {
+  "name": "Rockhampton",
+  "lat": -23.38,
+  "lon": 150.51,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "rockhampton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Rockhampton, Queensland": {
+  "name": "Rockhampton",
+  "lat": -23.38,
+  "lon": 150.51,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "rockhampton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Rockhampton, Queensland, Australia": {
+  "name": "Rockhampton",
+  "lat": -23.38,
+  "lon": 150.51,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "rockhampton",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Royal Chapel, Palace of Whitehall": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Rushton, Spencer, Staffordshire, England": {
+  "name": "Rushton Spencer",
+  "lat": 53.14,
+  "lon": -2.05,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "SOLIHULL West Midlands England": {
+  "name": "Solihull",
+  "lat": 52.41,
+  "lon": -1.78,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "solihull",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "ST. MARY'S, Limerick, Ireland": {
+  "name": "Limerick",
+  "lat": 52.6613,
+  "lon": -8.6301,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "limerick",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Saffron Walden": {
+  "name": "Saffron Walden",
+  "lat": 52.02,
+  "lon": 0.24,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "saffron-walden",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Saint Dunstan, Stepney, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "San Felice, Caserta, Campania, Italia": {
+  "name": "San Felice a Cancello",
+  "lat": 41.0124,
+  "lon": 14.483,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "san-felice-a-cancello",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Sandgate, Queensland, Australia": {
+  "name": "Sandgate",
+  "lat": -27.32,
+  "lon": 153.07,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "sandgate",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Sandy Creek, Mackay, Queensland, Australia": {
+  "name": "Mackay",
+  "lat": -21.14,
+  "lon": 149.19,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Santa Maria A Vico, Nola, Terra Di Lavoro": {
+  "name": "Santa Maria a Vico",
+  "lat": 41.0269,
+  "lon": 14.4652,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "santa-maria-a-vico",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Santa Maria a Vico, Caserta, Campania, Italia": {
+  "name": "Santa Maria a Vico",
+  "lat": 41.0269,
+  "lon": 14.4652,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "santa-maria-a-vico",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Sarina, Queensland, Australia": {
+  "name": "Sarina",
+  "lat": -21.43,
+  "lon": 149.22,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Sedbury, Yorkshire, England": {
+  "name": "Gilling West",
+  "lat": 54.43,
+  "lon": -1.7,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Shrewsbury, England": {
+  "name": "Shrewsbury",
+  "lat": 52.71,
+  "lon": -2.75,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Sinnamon Village Nursing Home, Brisbane, Queensland, Australia": {
+  "name": "Sinnamon Park",
+  "lat": -27.55,
+  "lon": 152.94,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Skanderborg Castle, Kingdom of Denmark": {
+  "name": "Skanderborg",
+  "lat": 56.04,
+  "lon": 9.93,
+  "country": "Denmark",
+  "iso": "DK",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Skelton, Yorkshire, England": {
+  "name": "Yorkshire",
+  "lat": 54.0,
+  "lon": -1.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "yorkshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Solihul, Warwickshire, England": {
+  "name": "Solihull",
+  "lat": 52.41,
+  "lon": -1.78,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "solihull",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Solihull, Warwickshire, England": {
+  "name": "Solihull",
+  "lat": 52.41,
+  "lon": -1.78,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "solihull",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Somerset, England": {
+  "name": "Somerset",
+  "lat": 51.1,
+  "lon": -2.9,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "somerset",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Somerton, Somerset": {
+  "name": "Somerton",
+  "lat": 51.05,
+  "lon": -2.73,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Somerton, Somerset, England": {
+  "name": "Somerton",
+  "lat": 51.05,
+  "lon": -2.73,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "South Brisbane, Brisbane City, Queensland, Australia": {
+  "name": "South Brisbane",
+  "lat": -27.48,
+  "lon": 153.02,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "South Leith, Midlothian, Scotland": {
+  "name": "South Leith",
+  "lat": 55.98,
+  "lon": -3.17,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Spring Gardens, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Spring Hill, Brisbane, Queensland, Australia": {
+  "name": "Spring Hill",
+  "lat": -27.46,
+  "lon": 153.02,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St Andrew's Church, Clifton, Gloucestershire": {
+  "name": "Bristol",
+  "lat": 51.45,
+  "lon": -2.59,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bristol",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St James, Clerkenwell, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St Paul, Bristol, Gloucestershire, England": {
+  "name": "Bristol",
+  "lat": 51.45,
+  "lon": -2.59,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bristol",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St Philips Church of England, Thompson Estate (now Annerley)": {
+  "name": "Annerley",
+  "lat": -27.51,
+  "lon": 153.03,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St Quivox, Ayrshire, Scotland, United Kingdom": {
+  "name": "St Quivox",
+  "lat": 55.48,
+  "lon": -4.58,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. Georges, Hanover Square, London, England, United Kingdom": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. James Palace, London, Middlesex, Englan": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. James Palace, London, Middlesex, England, Kingdom of England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. James Palace, Westminster, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. James, Westminster Saint James the Less, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. Mary, Limerick, County Limerick, Ireland": {
+  "name": "Limerick",
+  "lat": 52.6613,
+  "lon": -8.6301,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "limerick",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. Olave, Old Jewry, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. Olaves, Yorkshire, England": {
+  "name": "St Olave's York",
+  "lat": 53.96,
+  "lon": -1.09,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "St. Pauls Hammersmith, Middlesex, england": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Staffordshire, England": {
+  "name": "Staffordshire",
+  "lat": 52.8247,
+  "lon": -2.0075,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "staffordshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Staffordshire, England, United Kingdom": {
+  "name": "Staffordshire",
+  "lat": 52.8247,
+  "lon": -2.0075,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "staffordshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stanwell Park, Middlesex, England": {
+  "name": "Stanwell",
+  "lat": 51.45,
+  "lon": -0.47,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stepney, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Steyning, East Sussex, England, United Kingdom": {
+  "name": "Steyning",
+  "lat": 50.89,
+  "lon": -0.33,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stirling Castle, Stirling, Stirlingshire, Scotland": {
+  "name": "Stirling",
+  "lat": 56.12,
+  "lon": -3.94,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "stirling",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stirling, Scotland": {
+  "name": "Stirling",
+  "lat": 56.12,
+  "lon": -3.94,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "stirling",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stirling, Stirlingshire, Scotland": {
+  "name": "Stirling",
+  "lat": 56.12,
+  "lon": -3.94,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "stirling",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stoke Damerel, Devon, England": {
+  "name": "Plymouth",
+  "lat": 50.38,
+  "lon": -4.17,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "plymouth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stone, Gloucester, England": {
+  "name": "Stone Gloucestershire",
+  "lat": 51.66,
+  "lon": -2.43,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stoughton, Leicestershire, England": {
+  "name": "Stoughton",
+  "lat": 52.62,
+  "lon": -1.04,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Strand, Limerick, Ireland": {
+  "name": "Limerick",
+  "lat": 52.6613,
+  "lon": -8.6301,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": "limerick",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Strathaven": {
+  "name": "Strathaven",
+  "lat": 55.68,
+  "lon": -4.07,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stratton, Cornwall, England": {
+  "name": "Stratton",
+  "lat": 50.83,
+  "lon": -4.52,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stroud, Gloucestershire": {
+  "name": "Stroud",
+  "lat": 51.74,
+  "lon": -2.22,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Stroughton Grange, Leicestershire, England": {
+  "name": "Stoughton",
+  "lat": 52.62,
+  "lon": -1.04,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Surlingham, England, United Kingdom": {
+  "name": "Surlingham",
+  "lat": 52.5749,
+  "lon": 1.3984,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Syon Hill, London, Middlesex, England, Kingdom of Great Britain": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Teddington, Middlesex, England": {
+  "name": "Teddington",
+  "lat": 51.42,
+  "lon": -0.33,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "teddington",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "The Hague, South Holland, The Netherlands": {
+  "name": "The Hague",
+  "lat": 52.08,
+  "lon": 4.31,
+  "country": "Netherlands",
+  "iso": "NL",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "The Thomas farm, in Cory (Curry Mallet), Somersetshire, England": {
+  "name": "Curry Mallet",
+  "lat": 50.99,
+  "lon": -2.94,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Theobalds Palace, Chestnut, Hertfordshire, England": {
+  "name": "Cheshunt",
+  "lat": 51.7,
+  "lon": -0.05,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Thomas, Cory, Somerset, England": {
+  "name": "Curry Mallet",
+  "lat": 50.99,
+  "lon": -2.94,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Tin Can Bay, Gympie Regional, Queensland, Australia": {
+  "name": "Gympie",
+  "lat": -26.19,
+  "lon": 152.67,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "gympie",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toddington, Gloucestershire, England": {
+  "name": "Toddington",
+  "lat": 51.97,
+  "lon": -1.93,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba Q'ld  Australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba Q'ld Australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba Queensland Australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba, Queensland": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba, Queensland Australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba, Queensland, Australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba, Toowoomba Region, Queensland, Australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Toowoomba, australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Torquay, Torbay, England": {
+  "name": "Torquay",
+  "lat": 50.46,
+  "lon": -3.53,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Trinity Church, Fortitude Valley, Queensland, Australia": {
+  "name": "Fortitude Valley",
+  "lat": -27.46,
+  "lon": 153.04,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Upper Brook Street, London, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Walden, Essex, England": {
+  "name": "Saffron Walden",
+  "lat": 52.02,
+  "lon": 0.24,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "saffron-walden",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Waterloo Lane, Bristol, Gloucester, England": {
+  "name": "Bristol",
+  "lat": 51.45,
+  "lon": -2.59,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bristol",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "West Farleigh, Kent, England": {
+  "name": "West Farleigh",
+  "lat": 51.25,
+  "lon": 0.44,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "West Farleigh, Kent, UK": {
+  "name": "West Farleigh",
+  "lat": 51.25,
+  "lon": 0.44,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "West Ham, UK": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "West Leigh, Devonshire": {
+  "name": "Devon",
+  "lat": 50.75,
+  "lon": -3.75,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "devon",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Westminster St James, Middlesex, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Westminster St James, Middlesex, England, Kingdom of Great Britain": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Westminster, London": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Westminster, London, England": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Westminster, Middlesex": {
+  "name": "London",
+  "lat": 51.51,
+  "lon": -0.13,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "london",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Westwood, Queensland, Australia": {
+  "name": "Westwood Queensland",
+  "lat": -23.55,
+  "lon": 150.17,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Wherwell, Hampshire, UK": {
+  "name": "Wherwell",
+  "lat": 51.19,
+  "lon": -1.45,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Windsor, Brisbane": {
+  "name": "Windsor Brisbane",
+  "lat": -27.43,
+  "lon": 153.03,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Winkbourne Nottinghamshire": {
+  "name": "Winkburn",
+  "lat": 53.08,
+  "lon": -0.93,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Winton, Queensland, Australia": {
+  "name": "Winton",
+  "lat": -22.39,
+  "lon": 143.03,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Wolstanton, Staffordshire, England": {
+  "name": "Wolstanton",
+  "lat": 53.04,
+  "lon": -2.2,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Woodbrook, Queens County, Ireland": {
+  "name": "Woodbrook Laois",
+  "lat": 52.93,
+  "lon": -7.3,
+  "country": "Ireland",
+  "iso": "IE",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Wotton-under-Edge, Gloucestershire, England": {
+  "name": "Wotton-under-Edge",
+  "lat": 51.64,
+  "lon": -2.35,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "wotton-under-edge",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Yeovil, Somerset, England": {
+  "name": "Yeovil",
+  "lat": 50.94,
+  "lon": -2.63,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Yorks Co., Eng.": {
+  "name": "Yorkshire",
+  "lat": 54.0,
+  "lon": -1.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "yorkshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Yorkshire, England": {
+  "name": "Yorkshire",
+  "lat": 54.0,
+  "lon": -1.3,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "yorkshire",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "of Aller, Som., Eng.": {
+  "name": "Aller",
+  "lat": 51.04,
+  "lon": -2.82,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "of Bedworth and Stoughton, Leicestershire, England": {
+  "name": "Bedworth",
+  "lat": 52.48,
+  "lon": -1.47,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "bedworth",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "of St Quivox, Ayr, Sctl": {
+  "name": "St Quivox",
+  "lat": 55.48,
+  "lon": -4.58,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "of St Quivox, Ayrshire, Scotland": {
+  "name": "St Quivox",
+  "lat": 55.48,
+  "lon": -4.58,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": null,
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "toowoomba, qld, australia": {
+  "name": "Toowoomba",
+  "lat": -27.561,
+  "lon": 151.9534,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "toowoomba",
+  "how": "data/era-ground.tsv town and data/era-towns.tsv point; country by the Atlas's geo.country_of"
+ },
+ "Qld, Aust.": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Qld, Australia": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Queenland, Australia": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Queensland": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Queensland Australia": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Queensland, Australia": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Queensland, Australia.": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Queensland, Australië": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "Queensland, australia": {
+  "name": "Queensland",
+  "lat": -22.16468,
+  "lon": 144.58449,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "queensland",
+  "level": "region",
+  "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+ },
+ "England": {
+  "name": "England",
+  "lat": 52.2537,
+  "lon": -1.0514,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "england",
+  "level": "region",
+  "how": "the string names England and no town (data/era-ground.tsv: «England named, the town not fixed»); the Atlas place England, at the Atlas's own marker (the population-weighted centre of its towns). Region-level, not a town"
+ },
+ "of England": {
+  "name": "England",
+  "lat": 52.2537,
+  "lon": -1.0514,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "england",
+  "level": "region",
+  "how": "the string names England and no town (data/era-ground.tsv: «England named, the town not fixed»); the Atlas place England, at the Atlas's own marker (the population-weighted centre of its towns). Region-level, not a town"
+ },
+ "Scotland": {
+  "name": "Scotland",
+  "lat": 56.0985,
+  "lon": -3.7164,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "scotland",
+  "level": "region",
+  "how": "the string names Scotland and no town (data/era-ground.tsv: «the country named, no town»); the Atlas place Scotland, at the Atlas's own point. Region-level, not a town"
+ },
+ "New South Wales": {
+  "name": "New South Wales",
+  "lat": -33.6515,
+  "lon": 151.1288,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "new-south-wales",
+  "level": "region",
+  "how": "the string names New South Wales and no town; the Atlas place New South Wales, at the Atlas's own marker (the population-weighted centre of its towns). Region-level, not a town"
+ },
+ "Bacharach, Darmstadt, Rhineland-Palatinate, Germany": {
+  "name": "Bacharach",
+  "lat": 50.05725,
+  "lon": 7.76948,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "bacharach",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Heidelberg, Karlsruhe, Baden-Württemberg, Germany": {
+  "name": "Heidelberg",
+  "lat": 49.4077,
+  "lon": 8.6908,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "heidelberg",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Heidelberg, BAden, Germany": {
+  "name": "Heidelberg",
+  "lat": 49.4077,
+  "lon": 8.6908,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "heidelberg",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Heidelberg, Baden, Germany": {
+  "name": "Heidelberg",
+  "lat": 49.4077,
+  "lon": 8.6908,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "heidelberg",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Heidelberg, Karlsruhe, Baden-Wurttemberg, Germany": {
+  "name": "Heidelberg",
+  "lat": 49.4077,
+  "lon": 8.6908,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "heidelberg",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Geisenhain, Thüringen, Germany": {
+  "name": "Geisenhain",
+  "lat": 50.83333,
+  "lon": 11.71667,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "geisenhain",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Turin, Italy": {
+  "name": "Turin",
+  "lat": 45.076,
+  "lon": 7.684,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "turin",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Berlin, Brandenburg, Prussia, Germany": {
+  "name": "Berlin",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "berlin",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Germany": {
+  "name": "Germany",
+  "lat": 51.16382,
+  "lon": 10.44783,
+  "country": "Germany",
+  "iso": "DE",
+  "atlas_id": "germany",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique); region- or country-level: the point is the Atlas's own marker for it, not a town",
+  "level": "region"
+ },
+ "England, United Kingdom": {
+  "name": "England",
+  "lat": 52.2537,
+  "lon": -1.0514,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "england",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique); region- or country-level: the point is the Atlas's own marker for it, not a town",
+  "level": "region"
+ },
+ "Parramatta, New South Wales, Australia": {
+  "name": "Parramatta",
+  "lat": -33.8178,
+  "lon": 151.0035,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "parramatta",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "England, Great Britain, United Kingdom": {
+  "name": "England",
+  "lat": 52.2537,
+  "lon": -1.0514,
+  "country": "United Kingdom",
+  "iso": "GB",
+  "atlas_id": "england",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique); region- or country-level: the point is the Atlas's own marker for it, not a town",
+  "level": "region"
+ },
+ "Madeira, Portugal": {
+  "name": "Madeira",
+  "lat": 32.6758,
+  "lon": -16.9083,
+  "country": "Portugal",
+  "iso": "PT",
+  "atlas_id": "madeira",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique); region- or country-level: the point is the Atlas's own marker for it, not a town",
+  "level": "region"
+ },
+ "Kempsey, New South Wales, Australia": {
+  "name": "Kempsey",
+  "lat": -31.079,
+  "lon": 152.8309,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "kempsey",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Kempsey, Kempsey Shire Council, New South Wales, Australia": {
+  "name": "Kempsey",
+  "lat": -31.079,
+  "lon": 152.8309,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "kempsey",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Auckland, New Zealand": {
+  "name": "Auckland",
+  "lat": -36.8776,
+  "lon": 174.7789,
+  "country": "New Zealand",
+  "iso": "NZ",
+  "atlas_id": "auckland",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique); region- or country-level: the point is the Atlas's own marker for it, not a town",
+  "level": "region"
+ },
+ "New South Wales, Australia": {
+  "name": "New South Wales",
+  "lat": -33.6515,
+  "lon": 151.1288,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "new-south-wales",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique); region- or country-level: the point is the Atlas's own marker for it, not a town",
+  "level": "region"
+ },
+ "Sydney, New South Wales, Australia": {
+  "name": "Sydney",
+  "lat": -33.8678,
+  "lon": 151.2073,
+  "country": "Australia",
+  "iso": "AU",
+  "atlas_id": "sydney",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Italy": {
+  "name": "Italy",
+  "lat": 42.63843,
+  "lon": 12.6743,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "italy",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique); region- or country-level: the point is the Atlas's own marker for it, not a town",
+  "level": "region"
+ },
+ "Benevento, Province of Benevento, Campania, Italy": {
+  "name": "Benevento",
+  "lat": 41.13,
+  "lon": 14.7786,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "benevento",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Benevento, Campania, Italy": {
+  "name": "Benevento",
+  "lat": 41.13,
+  "lon": 14.7786,
+  "country": "Italy",
+  "iso": "IT",
+  "atlas_id": "benevento",
+  "how": "the Record Atlas names this uniquely in the country the string names (--accept-unique)"
+ },
+ "Probably Homildon, Northumberland, England": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Ehrstaedt, Heidlberg, Baden, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Neuhaus, Jagst, Wuertt": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "neuhaus",
+    "name": "Neuhaus",
+    "country": "SK",
+    "lat": 47.9854,
+    "lon": 18.162
+   }
+  ]
+ },
+ "Ehrstaedt, Heidelberg, Baden, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Ehrstaedt, Heidelburg, Baden, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Aram, England": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Neuhaus, Neckar, Wuertt": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "neuhaus",
+    "name": "Neuhaus",
+    "country": "SK",
+    "lat": 47.9854,
+    "lon": 18.162
+   }
+  ]
+ },
+ "Dürnau/Biberach/BW": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "durnau-biberach-bw",
+    "name": "Dürnau/Biberach/BW",
+    "country": "DE",
+    "lat": 48.06043,
+    "lon": 9.55419
+   }
+  ]
+ },
+ "Deinschwang, near Amberg, Upper Palatinate": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "deinschwang",
+    "name": "Deinschwang",
+    "country": "DE",
+    "lat": 49.38816,
+    "lon": 11.49333
+   }
+  ]
+ },
+ "Hornsby Castle, England": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Heidelberg, Baden, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "heidelberg",
+    "name": "Heidelberg",
+    "country": "DE",
+    "lat": 49.4077,
+    "lon": 8.6908
+   }
+  ]
+ },
+ "Heidelberg, Bayern, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "heidelberg",
+    "name": "Heidelberg",
+    "country": "DE",
+    "lat": 49.4077,
+    "lon": 8.6908
+   }
+  ]
+ },
+ "Edingen, Baden-Württemberg, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "edingen",
+    "name": "Edingen",
+    "country": "BE",
+    "lat": 50.6938,
+    "lon": 4.0379
+   }
+  ]
+ },
+ "Heidelberg, Pfalz, Deutschland((HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "heidelberg",
+    "name": "Heidelberg",
+    "country": "DE",
+    "lat": 49.4077,
+    "lon": 8.6908
+   }
+  ]
+ },
+ "Herford, Hessen, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Neuhaus near Neckar, Wuertt": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Schloss Herrenhausen, Hannover, Braunschweig-Luneburg, Deutschland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Neuhaus near Schorndorf, Neckar, Wuertt.": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Strassburg, Kärnten, Austria.": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "strassburg",
+    "name": "Strassburg",
+    "country": "RO",
+    "lat": 46.3101,
+    "lon": 23.7213
+   }
+  ]
+ },
+ "Schloss Friedrichsburg, Mannheim, Germ": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Neuhrus near Schorndorf, Neckar, Wuertt.": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Oberwesel, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Geisenheim, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Köln": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "koln",
+    "name": "Köln",
+    "country": "DE",
+    "lat": 50.93836,
+    "lon": 6.95997
+   }
+  ]
+ },
+ "Baden-Württemberg, Deutschland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "baden-wurttemberg",
+    "name": "Baden-Wurttemberg",
+    "country": "DE",
+    "lat": 48.6617,
+    "lon": 8.9482
+   }
+  ]
+ },
+ "Baden-Wuerttemberg, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Schwetzingen, Rhein-Neckar-Kreis, Baden-Württemberg, Deutschland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "schwetzingen",
+    "name": "Schwetzingen",
+    "country": "DE",
+    "lat": 49.3822,
+    "lon": 8.5823
+   }
+  ]
+ },
+ "Negroponte, Greece": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Darcy Meynill, Yorkshire, Cattaraugus County, New York, United States": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Heidelberg, Pfalz, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "heidelberg",
+    "name": "Heidelberg",
+    "country": "DE",
+    "lat": 49.4077,
+    "lon": 8.6908
+   }
+  ]
+ },
+ "Of, Friedrichsburg, Mannheim, Baden": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Friedrichsburg, Mannheim, Baden": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Friederichsburg, Mannhiem, Baden, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Bradwell, England": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "bradwell",
+    "name": "Bradwell",
+    "country": "GB",
+    "lat": 52.04857,
+    "lon": -0.78771
+   }
+  ]
+ },
+ "Schloss Friedrichsburg, Mannheim, Pfalz, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Herrenhausen, Hannover, Braunschweig-Lüneburg, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Hotten": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Wolfenbüttel, Braunschweig-Lüneburg, Deutschland(HRR)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Ireland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "(unmarried vp)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Tyrone, Tyrone, Ireland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "South Strabane, Washington, Pennsylvania, United States": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "(vp)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Italia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "italia",
+    "name": "Italia",
+    "country": "IT",
+    "lat": 42.63843,
+    "lon": 12.6743
+   }
+  ]
+ },
+ "?": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "USA": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Barbados, Caribbean": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "(about) Limerick City, Ireland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Washington, Maryland, United States": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "washington",
+    "name": "Washington",
+    "country": "US",
+    "lat": 38.895,
+    "lon": -77.0367
+   },
+   {
+    "atlas_id": "washington-us",
+    "name": "Washington",
+    "country": "US",
+    "lat": 47.2906,
+    "lon": -121.587
+   }
+  ]
+ },
+ "Rush, Indiana, United States": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Barbados": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Leemington, England, United Kingdom": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Jaffna, Northern Ceylon": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Point de Galle, Southern Ceylon": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Exeter": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Colo River, New South Wales Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Bailiwick of Jersey": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Newtown, Fairfield, Connecticut, America": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "newtown",
+    "name": "Newtown",
+    "country": "IE",
+    "lat": 53.38454,
+    "lon": -7.39784
+   },
+   {
+    "atlas_id": "newtown-meath",
+    "name": "Newtown",
+    "country": "IE",
+    "lat": 53.7753,
+    "lon": -6.85028
+   }
+  ]
+ },
+ "10 Plumstead Common Road, Plumstead": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Kadawatha, Gampaha, Western Province, Ceylon": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Richmond, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Harris Park, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Emmaville District, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Bathurst, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Braidwood, Palerang Council, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Banbridge, Down, Northern Ireland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Woolloomooloo, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Goulburn, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Mumbai, Maharashtra, India": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Bega, Bega Valley Shire Council, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Kieff, Russia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Bega, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Cornacrieve Cornacreeve, Co. Monaghan, Ireland": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Denton, England, United Kingdom": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Perth, Western Australia, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "perth",
+    "name": "Perth",
+    "country": "GB",
+    "lat": 56.3817,
+    "lon": -3.42836
+   }
+  ]
+ },
+ "Dinas, Wales": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Sydenham, England, United Kingdom": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Burwood, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Concord, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Heidelberg, Banyule City, Victoria, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "heidelberg",
+    "name": "Heidelberg",
+    "country": "DE",
+    "lat": 49.4077,
+    "lon": 8.6908
+   }
+  ]
+ },
+ "Perth W.A. Reg. 3494": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Perth W.A. Reg. 4350 69yrs": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Minmi, Newcastle City Council, New South Wales, Australia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Muttaburra??": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Murwillumbah": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Esslingen, Stuttgart, Baden-Württemberg, Germany": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Georgia": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": [
+   {
+    "atlas_id": "georgia",
+    "name": "Georgia",
+    "country": "US",
+    "lat": 33.3156,
+    "lon": -83.9017
+   }
+  ]
+ },
+ "Iran": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Of Friedrichsburg, Mnnhm, Bdn": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Parish of Elmore": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "(without Issue)": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ },
+ "Adeliade, South Australia, Aust.": {
+  "name": null,
+  "lat": null,
+  "lon": null,
+  "country": null,
+  "iso": null,
+  "atlas_id": null,
+  "note": "TODO: copy one suggestion (or give coordinates) once you have checked the country; never guessed",
+  "suggest": []
+ }
+}
