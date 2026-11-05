@@ -2,7 +2,7 @@
 
 Ten views of every person this archive publishes who has died: hourglass, fan, whole-tree and close-family maps, Atlas map, movements, kinship, place lanes, eras,
 lifespans, surnames, an Orphans tab, and the five animated views (Night sky, Ink ledger, Household, Generations, Where they lived). It is served at `/roots/`, and
-bare at `/roots/view.html` for the frames of the kit's `PersonRootsViews` (not yet drawn on a person's page here: see below).
+bare at `/roots/view.html` for the frames of the kit's `PersonRootsViews` (drawn in the "Where they lived" section of a person's page, see below).
 
 | File | What it is | Edit by hand? |
 |---|---|---|
@@ -46,5 +46,6 @@ family-tree-page skill, template 1.7.0), so CI and other sessions do not depend 
   "BEF", "ABT" or "BET" is drawn at its first year, as the converter reads it.
 - **Two lives that cannot be one** (died before born, or over 110 years) are not drawn and are listed in `tree.report.json` under `conflicts`.
 - **The page opens on Kenneth Lindsay D'Arcy** (`FOCUS_SLUG` in the builder), not on the best-connected person, who is a man of the Hornby descent this archive does not accept.
-- **A person's page does not yet embed "Where they lived".** The kit draws that section only in story mode, and this archive's person pages are in chart mode;
-  `site/public/roots-links.json` and `/roots/view.html` are ready for the day it does.
+- **A person's page embeds "Where they lived"** (kit `PersonRootsViews`, in the `where` slot) for every person drawn on /roots/, listed in
+  `site/public/roots-links.json`; the frame is `/roots/view.html`. The kit draws that section only in story mode, so these pages are story pages,
+  with chapters cut from the archive's own notes (`site/src/pages/people/[slug].astro`). A person not drawn on /roots/ has no such section.

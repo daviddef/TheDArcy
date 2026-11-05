@@ -2,7 +2,7 @@
 /* Roots & Routes: built by tools/build-tree-page.py from the people the person pages draw (nobody living is in it) and rendered here inside the site layout
    (header, menu, footer). The fragment carries its own scoped styles and script (every selector under #rr). Rebuild with `python3 tools/build-tree-page.py
    --accept-unique`; see data/tree-page/README.md. A standalone copy of the page is kept at data/tree-page/roots.html, and served bare at /roots/view.html for
-   the frames on a person's page (kit PersonRootsViews, not yet drawn here: see the README). The build-time name linker leaves the page alone: its names are
+   the frames on a person's page (kit PersonRootsViews, drawn in the Where section of a person's page: see the README). The build-time name linker leaves the page alone: its names are
    drawn by the page's own script from tree.json, with their own links. */
 import Base from "../../layouts/Base.astro";
 import page from "../../../../data/tree-page/roots.embed.html?raw";

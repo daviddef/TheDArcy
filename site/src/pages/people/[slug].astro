@@ -20,6 +20,13 @@ import { isLiving as isLivingKit } from "@daviddef/archive-kit/lib/person.js";
 import { CORRECTIONS, yearOf as correctedYear } from "../../lib/corrections.js";
 import personRecords from "../../data/person-records.json";
 import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
+/* STORY MODE (people pages v2, PERSON-PAGE-SPEC.md section 2a): a person whose family or notes give the page something to tell is told as a story, not drawn as a chart */
+import FamilyLinkNotes from "../../components/FamilyLinkNotes.astro";
+import PersonStory from "@daviddef/archive-kit/components/PersonStory.astro";
+import PersonRootsViews from "@daviddef/archive-kit/components/PersonRootsViews.astro";
+import { familyOf, famNode, storyOf, hasStory, chaptersOf, GRADE_SAY } from "@daviddef/archive-kit/lib/personstory.js";
+import { TREE_BY } from "../../lib/storyTree.js";
+import rootsLinks from "../../../public/roots-links.json";
 /* "On our direct line · generation n": the kit's band, for the people of src/data/direct-line.json (made from the story) and nobody else */
 import OursBand from "@daviddef/archive-kit/components/OursBand.astro";
 import directLine from "../../data/direct-line.json";
@@ -276,6 +283,47 @@ const notes = alive ? [] : (p.notes || [])
   .map((n) => ({ text: clean(n), damaged: isDamaged(n) }))
   .filter((n) => n.text.length > 20);
 const anyDamaged = notes.some((n) => n.damaged);
+
+/* THE STORY. The family is the kit's familyOf over lib/storyTree.js (the people this page draws, the living by name and relationship only, through the kit's
+   own living rule); the chapters are this person's own notes from the family tree, cleaned as they always were and moved, never reworded (chaptersOf cuts at a
+   bold lead, and clean() has taken those out of a MyHeritage note, so each note is one chapter, graded «Family tree»). A page with nothing to tell (no parent,
+   brother, sister, child or note) stays a chart. A declared copy of another person stays a chart and says so. A living person's page is never a story. */
+const RULE = { now: new Date().getFullYear(), sources: PS, heldIds: [] };
+const FAM = alive || dup ? null : familyOf(TREE_BY, p.id, RULE);
+/* familyOf finds brothers and sisters through a shared parent; the record also lists them by id (p.siblings), and one person (the tree's first Joseph Samuel Sneyd) has
+   eight of them and no parent recorded. The chart drew them, so the story does: a listed sibling the kit did not find is added, through the kit's own famNode (the
+   living rule, held-out and all). */
+if (FAM) {
+  const have = new Set(FAM.siblings.map((n) => n.id));
+  for (const r of p.siblings || []) if (TREE_BY[r.id] && r.id !== p.id && !have.has(r.id)) { const n = famNode(TREE_BY, r.id, "Brother or sister", "", RULE); if (n) { FAM.siblings.push(n); have.add(r.id); } }
+}
+/* the mark on each relative's card is what the link rests on (the chart's own: «read» in a record this archive has read, else the family tree), and a link
+   above one of the two rejected grafts says so in its label, where the chart struck it through */
+if (FAM) {
+  const mark = (n) => {
+    if (!n || n.unknown || !n.id || n.living) return;
+    const o = byId.get(n.id); if (!o) return;
+    const rec = me.rel && me.rel[o.slug], q = prov[o.slug] || {}, gr = q.graft || me.graft;
+    const read = !!(rec && rec.length);
+    n.link = { grade: read ? "doc" : "tree" };
+    if (!read && gr) n.rel = `${n.rel} · above a graft`;
+  };
+  for (const list of [FAM.parents, FAM.grand, FAM.siblings, FAM.children, FAM.spouses]) list.forEach(mark);
+}
+const CHAPTERS = alive || dup ? [] : notes.flatMap((n) => chaptersOf(n.text).map((c) => ({ ...c, grade: c.grade || "tree" })));
+const STORY = FAM ? storyOf(CHAPTERS, FAM, [], { b: bY, d: dY }, [], { metaRx: /(?!)/ }) : [];
+/* The kit's story has a stop for a person's birth family, brothers and sisters, children and notes, and none for a wife or husband; the page's rule is that every relative
+   in the record is a link (tools/check_living_standard.py, named-page), so the marriage is a stop here, in the order of a life: after the life and before the death. */
+if (FAM && FAM.spouses.some((n) => !n.unknown)) {
+  const stop = { key: "marriage", label: "Married", when: "", people: FAM.spouses.filter((n) => !n.unknown), cards: [] };
+  const at = STORY.findIndex((st) => ["death", "legacy", "about"].includes(st.key));
+  STORY.splice(at < 0 ? STORY.length : at, 0, stop);
+}
+const STORYMODE = !alive && !dup && hasStory(STORY);
+const rootsId = String(p.id).replace(/@/g, "");
+const inRoots = STORYMODE && (rootsLinks.people || []).includes(rootsId);
+const esc = (x) => String(x).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const mdPlain = (x) => String(x).split(/\n+/).filter((l) => l.trim()).map((l) => `<p>${esc(l)}</p>`).join("");
 /* THE PAGE IS THE KIT'S PersonPage (4 November 2026, people pages v2): the header, the family chart, "What the record says", "Where this comes from",
    "Others of the same name", "Photographs and papers" and "Notes and corrections" are the estate's one set of sections, in the estate's order and with the
    estate's anchors; what this archive adds goes in the slots, or after them as a titled "more" section. The archive decides who is living (people.js,
@@ -377,41 +425,12 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
   <PersonPage person={KPERSON} lede={dek} peopleHref={u("/people/")} registerHref={u(`/register/?q=${encodeURIComponent(p.name)}`)}
               directLine={directLine} storyHref={u("/story/")} stubNote="the family tree">
 
+    {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={mdPlain} gradeSay={GRADE_SAY} u={u} /></Fragment>}
+    {inRoots && <Fragment slot="where"><PersonRootsViews pid={rootsId} u={u} /></Fragment>}
+
     {/* THE CHART'S OWN NOTES: what the marks mean here, the two rejected grafts, and the same name twice in one row */}
     <Fragment slot="chart-notes">
-      <p class="warn" style="margin-top:.6rem">
-        {allRel.length === 0
-          ? <>No relationship is published for this person. Either the tree records none, or the
-            people it records for them are not named anywhere in this archive.</>
-          : recorded === 0
-            ? <><strong>None of the {allRel.length} {allRel.length === 1 ? "relationship" : "relationships"} shown
-              here is written in a record this archive has read.</strong> Every one comes from the family
-              tree. That is not a claim that they are wrong — it is a statement about what has been
-              checked, and on this site the difference is the point.</>
-            : <><strong>{recorded} of the {allRel.length} relationships shown here</strong>{" "}
-              {recorded === 1 ? "is" : "are"} written in a record this archive has read; the
-              other {allRel.length - recorded} come from the family tree and{" "}
-              {allRel.length - recorded === 1 ? "has" : "have"} not been tested.</>}
-        {" "}<a href={u("/method/")}>How claims are labelled →</a>
-      </p>
-      {grafted > 0 && (
-        <p class="warn"><strong>{grafted} of these links sit above a graft.</strong> The archive has
-        tested the join they hang from and rejected it — the D'Arcys of Hornby Castle are unevidenced,
-        the Sneyds of Keele Hall disproved. The people are drawn because the tree carries them, and
-        struck through because nothing attaches them to this family.
-        {" "}<a href={u("/how-far-back/")}>Both grafts, in full →</a></p>
-      )}
-      {dupKids.length > 0 && (
-        <p class="warn"><strong>More than one child here carries the same name</strong> — {dupKids.join(", ")}.
-        A child who died was very often replaced by a later child given the same name, so this is
-        usually not an error. <strong>It is also exactly how a records-matcher invents one person out
-        of two</strong>, which is why they are kept apart here and you are told.</p>
-      )}
-      {dupSibs.length > 0 && (
-        <p class="warn"><strong>More than one sibling here carries the same name</strong> — {dupSibs.join(", ")}.
-        They are drawn separately. This archive does not merge records on a name.
-        {" "}<a href={u("/name/")}>Why →</a></p>
-      )}
+      <FamilyLinkNotes {allRel} {recorded} {grafted} {dupKids} {dupSibs} {u} />
     </Fragment>
 
     {/* WHAT THE RECORD SAYS */}
@@ -561,7 +580,7 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
       <Fragment slot="notes">
         <h3>What is written about {p.name.split(" ")[0]}</h3>
         <p class="small">Carried across from the family tree, with its markup stripped. Family
-        testimony, not an independent record — valuable, and labelled.</p>
+        testimony, not an independent record — valuable, and labelled.{STORYMODE ? " The notes are in The story, above." : ""}</p>
         {anyDamaged && (
           <Note tight>
             <strong>This note reached the archive damaged.</strong> The export it came from stores rich
@@ -571,10 +590,16 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
             and nothing has been invented to bridge the gaps.
           </Note>
         )}
-        {notes.map((n) => (
+        {!STORYMODE && notes.map((n) => (
           <Note tight style="white-space:pre-wrap">{n.text}</Note>
         ))}
       </Fragment>
+    )}
+
+    {STORYMODE && (
+      <PersonSection kind="more" title="How the family links on this page are known">
+        <FamilyLinkNotes {allRel} {recorded} {grafted} {dupKids} {dupSibs} {u} />
+      </PersonSection>
     )}
 
     {rec && (
