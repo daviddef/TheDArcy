@@ -97,7 +97,9 @@ def write_ged(people, path):
         given, sur = p["name"], p["surname"]
         if sur and given.endswith(sur): given = given[:-len(sur)].strip()
         elif sur: given, sur = p["name"], ""     # the surname is not in the name as printed: the whole name is the given name
-        out += ["0 %s INDI" % p["id"], "1 NAME %s /%s/" % (given, sur), "1 SEX %s" % (p["sex"] or "M")]
+        out += ["0 %s INDI" % p["id"], "1 NAME %s /%s/" % (given, sur)]
+        if p["sex"] in ("M", "F"): out.append("1 SEX %s" % p["sex"])      # a sex the tree does not record is written as none: the converter reads it as 'u' and the page says parent, child, spouse
+        elif p["sex"]: out.append("1 SEX U")                                # the tree's own «U». A sex is never inferred from a name
         dead = bool(p["died"] or p["diedPlace"] or p["burial"] or p["cause"])
         if p["born"] or p["bornPlace"]:
             out.append("1 BIRT")

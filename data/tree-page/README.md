@@ -23,7 +23,7 @@ python3 tools/build-tree-page.py --check           # exit 1 if the page is older
 
 Needs the Record Atlas checkout (`RECORD_ATLAS`, default `~/Projects/Family Projects/Record Atlas`), read only, and node (the people are read through
 `site/src/lib/people.js`, so a slug, a name and a year are the ones the person pages print). The skill's scripts are vendored in `tools/tree-page/` (the
-family-tree-page skill, template 1.6.0), so CI and other sessions do not depend on `~/.claude`. CI does not rebuild this page: it serves the committed output.
+family-tree-page skill, template 1.7.0), so CI and other sessions do not depend on `~/.claude`. CI does not rebuild this page: it serves the committed output.
 
 ## What is and is not on the page
 
@@ -41,6 +41,7 @@ family-tree-page skill, template 1.6.0), so CI and other sessions do not depend 
   `place-additions.json`, each at the Atlas's own marker for the region, which is not a town (said in `place_map.json`).
 - **A person with no place of their own is drawn at a relative's birth place, and the card says so** (an asterisk, "place taken from a relative, not recorded").
   This archive's own findings are not applied to that fallback: George Pitt D'Arcy's birth place is "unknown" on his page, and he is drawn at his father's tree place.
+- **Unknown sex stays unknown.** A person the tree records no sex for is drawn as `u` (Kinship says parent, child, spouse, sibling, uncle or aunt); the sex is never inferred from a name.
 - **Estimated years are flagged**: "c. 1809" is a birth estimated from a parent, child or spouse; "1809–?" is a death not recorded. A tree date written
   "BEF", "ABT" or "BET" is drawn at its first year, as the converter reads it.
 - **Two lives that cannot be one** (died before born, or over 110 years) are not drawn and are listed in `tree.report.json` under `conflicts`.
