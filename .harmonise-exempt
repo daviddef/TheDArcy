@@ -4,3 +4,4 @@
 
 dna: not a result, an ARGUMENT ABOUT WHAT A RESULT WOULD HAVE TO BE. Its one heading is «What would actually be evidence». There is no test of this family to report yet, and a shared component for reporting one would have nothing to draw.
 who/[slug]: a PERSON DOSSIER — one page per identified individual, with what each line came out of and the others of that surname beside it. Three archives use who/[slug] for namesakes and Falco uses it for a name over records. One path, three different pages.
+roots/index: built per archive by the family-tree-page skill (tools/build-tree-page.py) from the people the person pages draw; the page is generated HTML in a short Astro shell, not drawn by hand. The Blažević and Defranceski archives and the Record Atlas have the same shell, so a shared kit shell is the right fix and is not made here.

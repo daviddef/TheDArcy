@@ -1,0 +1,135 @@
+{
+ "_about": "Place strings decided by hand, each with its reason. Merged over the seeded place map by tools/build-tree-page.py; a string already placed is left alone. Every line here is a REGION named with no town (the era table says so), put at the Record Atlas's own place and marker for that region; none is a town and none is guessed.",
+ "places": {
+  "Qld, Aust.": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Qld, Australia": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Queenland, Australia": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Queensland": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Queensland Australia": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Queensland, Australia": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Queensland, Australia.": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Queensland, Australië": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "Queensland, australia": {
+   "name": "Queensland",
+   "lat": -22.16468,
+   "lon": 144.58449,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "queensland",
+   "level": "region",
+   "how": "the string names the colony and state of Queensland and no town (data/era-ground.tsv: «the colony and state named, no town»); the Atlas place Queensland, at the Atlas's own point for the state. Region-level: the marker is the state's centre, not a town"
+  },
+  "England": {
+   "name": "England",
+   "lat": 52.2537,
+   "lon": -1.0514,
+   "country": "United Kingdom",
+   "iso": "GB",
+   "atlas_id": "england",
+   "level": "region",
+   "how": "the string names England and no town (data/era-ground.tsv: «England named, the town not fixed»); the Atlas place England, at the Atlas's own marker (the population-weighted centre of its towns). Region-level, not a town"
+  },
+  "of England": {
+   "name": "England",
+   "lat": 52.2537,
+   "lon": -1.0514,
+   "country": "United Kingdom",
+   "iso": "GB",
+   "atlas_id": "england",
+   "level": "region",
+   "how": "the string names England and no town (data/era-ground.tsv: «England named, the town not fixed»); the Atlas place England, at the Atlas's own marker (the population-weighted centre of its towns). Region-level, not a town"
+  },
+  "Scotland": {
+   "name": "Scotland",
+   "lat": 56.0985,
+   "lon": -3.7164,
+   "country": "United Kingdom",
+   "iso": "GB",
+   "atlas_id": "scotland",
+   "level": "region",
+   "how": "the string names Scotland and no town (data/era-ground.tsv: «the country named, no town»); the Atlas place Scotland, at the Atlas's own point. Region-level, not a town"
+  },
+  "New South Wales": {
+   "name": "New South Wales",
+   "lat": -33.6515,
+   "lon": 151.1288,
+   "country": "Australia",
+   "iso": "AU",
+   "atlas_id": "new-south-wales",
+   "level": "region",
+   "how": "the string names New South Wales and no town; the Atlas place New South Wales, at the Atlas's own marker (the population-weighted centre of its towns). Region-level, not a town"
+  }
+ }
+}
