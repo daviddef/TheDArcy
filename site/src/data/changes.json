@@ -4,6 +4,27 @@
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
       {
+        "when": "8 November 2026",
+        "title": "The 95th Regiment, looked up: one Ensign Robert D'Arcy, and two honest nulls",
+        "found": [
+          [
+            "Found",
+            "an Ensign Robert D'Arcy printed under the 95th Regiment of Foot in a 1894 compilation of the Army Lists, and no Lieutenant D'Arcy there. The regiment was in the Windward Islands in April 1762, per the Gazette"
+          ],
+          [
+            "Checked",
+            "the Army Lists of 1758 and 1761 (they stop before the regiment's officers) and the London Gazette, November 1760 to December 1763 (it did not print the regiment's commissions); both recorded on /searched/ with their controls"
+          ],
+          [
+            "Added",
+            "the forms D'Arcey and Darcy to the Record Atlas surname catalogue, with the records that show them (added locally; not yet published)"
+          ]
+        ],
+        "did": [
+          "WHAT THIS DOES AND DOES NOT SHOW. A correspondent asked what the archive knew of the 95th. The answer is one lead and a method note. The lead is a forename in a secondary book; the method note is that the primary lists for 1762 and 1763 are not online here. Nothing about Robert D'Arcy's father is claimed, and /constantine says so beside the finding."
+        ]
+      },
+      {
         "when": "17 October 2026",
         "title": "The prose gate is wired in, and finds one false positive and one real leak it was told to leave alone",
         "found": [

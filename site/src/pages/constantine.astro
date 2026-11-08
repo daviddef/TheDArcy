@@ -97,6 +97,11 @@ import d from "../data/constantine.json";
       <strong>{d.second.careHead}.</strong> <span set:html={mdp(d.second.care)} />
       {" "}<span class="chip dis">{d.second.careChip}</span>
     </Note>
+    <Note style="margin-top:1.2rem"><strong>{d.second.army.head}.</strong> <span set:html={mdp(d.second.army.body)} />
+      {" "}<span class="chip lore">{d.second.army.chip}</span>
+      <br /><br /><span set:html={mdp(d.second.army.care)} />
+      {" "}<span class="chip dis">{d.second.army.careChip}</span>
+      {" "}<a href={u("/searched/")}>The searches →</a></Note>
     <Note style="margin-top:1.2rem"><strong>{d.second.nextHead}.</strong> {d.second.next}
       {" "}<a href={u("/errands/")}>On the queue →</a></Note>
 

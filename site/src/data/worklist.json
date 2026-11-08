@@ -1363,6 +1363,15 @@
       "what": "Ruling: declare the two Ralph Sneyds of 1793 and the two Walter Sneyds of 1809 as one person each?",
       "note": "`same-person.json` says the two Ralphs were **not** declared because their parents differ, and that a declaration is made only on same name, same years, and same parents or children. Row 151 found that **the parents differ because one pair is wrong**, and the tree holds the Walter pair on **the same full birth date and death year**. The rule as written still says no (parents differ); the evidence now says one man each. This archive has not changed the rule or declared either pair, because it is yours to make. **If yes:** four ids to add, the copy on Samuel Sneyd being the one that draws more of the family (Walter has a marriage and children, the Keele copy has none), so the primary would be the copy on the *wrong* parents unless the rule is amended; that is the thing to decide.",
       "covers": []
+    },
+    {
+      "n": 156,
+      "state": "next",
+      "owner": "this archive",
+      "since": "2026-11-08",
+      "what": "Find the 95th Regiment's officers in the primary record, to test the one lead the printed table gives: an Ensign Robert D'Arcy",
+      "note": "**Recorded 8 November 2026.** Ford's *British Officers Serving in America* (1894), compiled from the Army Lists, prints one D'Arcy under the 95th: an Ensign named Robert, and no Lieutenant D'Arcy. The Board of Ordnance's surveyor list gives the parent of Constantine D'Arcy (1775) as a Lieutenant in the 95th. **Not claimed:** the book is secondary, prints no date, and a forename is not an identification. The Army Lists of 1758 and 1761 stop before the regiment's officers, and the Gazette did not print its commissions (both recorded as nulls with controls, on /searched/). **What would settle it:** the 1762 or 1763 Army List, or the War Office commission books for the regiment, which are not on the Internet Archive; the full entry of WO 46/10 at Kew; and, from the Gazette of 26 April 1762, the 1762 casualty returns for the Windward Islands, where the 95th was. The FindMyPast set *British Army Lists & Commission Registers 1661-1826* is the likely route and needs David's sign-in.",
+      "covers": []
     }
   ],
   "close": "**37 items closed on 15 September 2026 and twenty-six raised in their place.** The new list is what a day's work leaves behind: seven threads out of Cooke's article and the Berkeley deeds, four collections opened far enough to see they hold more, two contradictions this archive has published and not settled, four pieces of machinery, and one spelling missing from its own alias list that nearly cost it the best find of the week. **4 items still wait on David and nothing here is blocked behind them.**",

@@ -4483,6 +4483,60 @@
         "sneyd",
         "archive-org"
       ]
+    },
+    {
+      "src": "Worthington C. Ford, British Officers Serving in America, 1754–1774 (1894), compiled from the Army Lists — the table of officers by name",
+      "url": "https://archive.org/details/britishofficerss00ford",
+      "what": "Whether any D'Arcy was an officer of the 95th Regiment of Foot, the regiment the Board of Ordnance's list of military surveyors gives for the father of Constantine D'Arcy (appointed 25 March 1775)",
+      "when": "8 Nov 2026",
+      "outcome": "yield",
+      "got": "**One D'Arcy is printed under the 95th, and he is an Ensign named Robert.** Ford's alphabetical table reads «D'Arcy, Robert · Ensign · 95». It is the only D'Arcy under that regiment; the other D'Arcy in the book is a Peter, a Captain of the 47th. There is **no Lieutenant D'Arcy in the 95th**, which is the rank the surveyors' list gives the father. The table does carry the regiment: at least 31 entries are printed against 95, among them the colonel Ralph Burton (1762–63, the regiment disbanded in 1764), fourteen lieutenants and a run of ensigns. **Not claimed.** This is a secondary compilation of 1894 read as OCR text; it prints no commission date; a forename is not an identification; and an ensign is not the lieutenant the surveyors' list names (though a man can rise a grade before a disbandment). The primary 1762 and 1763 Army Lists are not on the Internet Archive, so this archive has not seen the line itself. **Settled by:** the Army List or War Office commission book that carries the 95th's officers, and the full Ordnance entry (WO 46/10).",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Printed Army Lists of 1758 and 1761 (A list of the general and field-officers, as they rank in the army) — the 95th and the surname",
+      "url": "https://archive.org/details/listofgeneralfie00grea_0",
+      "what": "Whether the two Army Lists that fall just before the 95th went to war carry its officers, and which D'Arcys they do carry",
+      "when": "8 Nov 2026",
+      "outcome": "empty",
+      "got": "**Neither volume carries the 95th's officers, so neither can answer the question, and the nil is the books' and not the family's.** The 1761 list prints every regiment of foot to the 94th, and gives the 95th only as a colonel in the succession of colonels (Ralph Burton, the OCR reading its number as 93); the 1758 list is earlier than the regiment. **The control:** the same 1761 text prints the full officer rolls of the 93rd and 94th and finds Burton in the colonels' list, so the instrument works and stops one regiment short. **D'Arcys the two lists do carry, none of them in the 95th:** a Peter D'Arcy of the 47th (both volumes), a Thomas Darcy of the 73rd and a Hyacinth D'Arcy, ensign of 19 October 1758, in the 83rd (1761). Terms typed: D'Arcy, Darcy, Darcey, D'Arcey, Arcy; the catalogue's cover check passed for them. Near-names seen and not counted: none.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "The London Gazette, November 1760 – December 1763 — D'Arcy, Darcy, Darcey, D'Arcey and Arcey",
+      "url": "https://www.thegazette.co.uk/all-notices/notice?text=Darcy&start-publish-date=1760-11-01&end-publish-date=1763-12-31",
+      "what": "Whether the Gazette prints a D'Arcy commissioned, promoted or killed in the 95th Regiment while it was raised, sent to the West Indies and disbanded",
+      "when": "8 Nov 2026",
+      "outcome": "null",
+      "got": "**No officer D'Arcy in the window, but the Gazette is also not the book that would print him.** D'Arcy returns four notices, all one Chancery matter: Margaret Lady Dowager D'Arcy, late Baroness of Navan in Ireland, whose freehold estates were sold in 1761–63. Darcy returns three: a forename, the banner of a Sir Coniers Darcy named in an installation ceremony, and a 1761 Act notice. Darcey, D'Arcey and Arcey return none. **The control:** «Lascelles» returns five notices in the same window, and «95th» returns one (below), so the window is searchable. **But «Ralph Burton» returns none from November 1760 to June 1761**, which means the Gazette did not print the new regiment's commissions at all; a nil here is a limit of the paper, and it should not be read as an absence of the man. Near-names seen and not counted: the Navan D'Arcys, a Conyers Darcy, a Catherine Darcy.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "gazette"
+      ]
+    },
+    {
+      "src": "The London Gazette, 26 April 1762, issue 10204 page 1 — a dispatch from the West Indies",
+      "url": "https://www.thegazette.co.uk/London/issue/10204/page/1",
+      "what": "Where the 95th Regiment was in 1762, to test the family's account that the father was killed in the American wars",
+      "when": "8 Nov 2026",
+      "outcome": "yield",
+      "got": "**The 95th was in the West Indies, not on the mainland.** A dispatch printed on 26 April 1762, after Grenada had been reduced, reads «I have ordered Brigadier … from the Granades, leaving the 95th Regiment there, to take Possession of St. Vincents» (the brigadier's name is garbled in the Gazette's OCR text, so it is not quoted). That puts the regiment in the Windward Islands in the spring of 1762, which fits a family tradition of the Caribbean (the tree has Constantine born at Barbados) rather than of the American mainland, though «the American wars» was a loose phrase in 1866 and this proves nothing about any one officer. It does give the question a theatre and a date to search: the Martinique and Grenada casualty returns of 1762.",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "gazette"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

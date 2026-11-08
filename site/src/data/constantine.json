@@ -77,6 +77,13 @@
   ]
  ],
  "second": {
+  "army": {
+   "head": "The 95th Regiment, looked up on 8 November 2026",
+   "body": "A compilation of the Army Lists (Ford, 1894) prints **one D'Arcy under the 95th: an Ensign named Robert**, and no Lieutenant D'Arcy, which is the rank the surveyors' list gives the parent. The same table prints at least thirty other 95th officers, so the regiment is carried. The two Army Lists of 1758 and 1761 stop before the regiment's officers, and the London Gazette did not print its commissions. The Gazette does leave the regiment at Grenada in April 1762, so it served in the West Indies and not on the American mainland. **Where the 95th was in 1762 matches the tree's Barbados better than it matches «the American wars».**",
+   "chip": "lead",
+   "care": "**Not claimed.** The book is a printed secondary of 1894 read as OCR; it prints no date; an ensign is not a lieutenant; and Robert is the General's own forename, which is the kind of match this archive has had to retract before. It is a name to look for in the primary record, which is the 1762 and 1763 Army Lists or the War Office commission books, not a parent for anyone.",
+   "careChip": "not claimed"
+  },
   "head": "And there is an earlier Constantine D'Arcy, in the Board of Ordnance",
   "ref": "WO 46/10 · Board of Ordnance, out-letters and papers · 1775–1777",
   "quote": "CONSTANTINE D'ARCY. APPOINTED 25 MARCH 1775. PROFESSION OF PARENT: LIEUTENANT IN THE 95TH REGIMENT.",

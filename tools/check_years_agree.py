@@ -85,6 +85,14 @@ def truth():
         m = H1.search(s)
         if not m:
             continue
+        # The kit's PersonPage (4 November 2026) prints the lifespan under the name, in <p class="plife">;
+        # the older page printed it in an eyebrow above the h1. Read the first, fall back to the second.
+        pl = re.search(r'<p class="plife">(.*?)</p>', s, re.S)
+        if pl:
+            ys = re.findall(Y, re.sub(r"<[^>]+>", " ", pl.group(1)))
+            if ys:
+                t[slug] = norm(ys[-1])
+            continue
         head = re.sub(r"<[^>]+>", " ", s[max(0, m.start() - 400):m.start()])
         ys = re.findall(Y, head)
         if ys:
@@ -191,6 +199,8 @@ def stale_prose(pages, tr):
         em = re.search(r"<h2>Everywhere .{0,80}? appears in this archive</h2>.*?</section>", s, re.S)
         if em:
             s = s[:em.start()] + s[em.end():]
+        # The kit's PersonPage (4 November 2026) draws the same excerpts as <section data-section="more">.
+        s = re.sub(r'<section[^>]*data-section="more".*?</section>', " ", s, flags=re.S)
         t = _fold(re.sub(r"<[^>]+>", " ", re.sub(r"<style.*?</style>|<script.*?</script>", " ", s, flags=re.S)))
         for sl, (nm, needles, names) in live.items():
             for nd in needles:
