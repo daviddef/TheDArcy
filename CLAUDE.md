@@ -131,3 +131,7 @@ another flag. The card is exactly the size it was; a living card has today's fla
   Chrome and playwright-core, which CI does not have: run it by hand on a served local build, with playwright-core linked (not committed)
   into `site/node_modules` so the kit's file can import it (`npx -p` does not reach an ES module):
   `node site/node_modules/@daviddef/archive-kit/kit/tools/checkflagfit.mjs --url <page> ... --widths 1440,1100,390`.
+
+## Given names and old place names
+
+Given-name forms (Ivan = Johann = Giovanni = Zuane = Joannes) and a place's name in the year of the record (Salisbury before 1982, Fiume before 1945) come only from the Record Atlas catalogues, as surnames do: invoke the user-level `name-variants` skill, run `given_name_variants.py terms` / `place_names.py at PLACE YEAR` before searching, `cover` before any nil, `add` (with evidence) for every new form, `publish` once at the end. Keep no table of given-name forms or old place names here. Nothing about a person goes in the catalogues; `lead` is never a finding.
