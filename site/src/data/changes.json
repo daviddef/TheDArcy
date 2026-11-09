@@ -4,6 +4,27 @@
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
       {
+        "when": "9 November 2026",
+        "title": "The 95th Regiment, second pass: where it served, and one claim taken back",
+        "found": [
+          [
+            "Found",
+            "that the regiment the magazines call Colonel Burton's is the 95th (five officers' names match the printed table), and that it was with the Carolina expedition against the Cherokee in 1761, at Grenada in April 1762 and at Havana in August 1762. No officer of it was killed in the Carolinas; a Lieutenant Barber and a Lieutenant Burton died at Havana; no D'Arcy is named in its returns"
+          ],
+          [
+            "Taken back",
+            "the line published on 8 November that the 95th served in the West Indies and not on the American mainland. The Gazette showed it at Grenada in April 1762; it did not show it was never on the mainland, and the magazines put it in the Carolinas the year before. Corrected on /constantine and on /searched"
+          ],
+          [
+            "Checked",
+            "180 monthly issues of the Gentleman's, London, Edinburgh and Scots Magazines, 1760–63, for any D'Arcy beside a regiment: none, a weak nil recorded as one"
+          ]
+        ],
+        "did": [
+          "WHAT THIS DOES TO THE LEAD. The tradition the family told Tim, a lieutenant of the 95th killed in the American wars about 1761, now has a regiment, a theatre and two campaigns, and the printed returns name no D'Arcy among its dead. That narrows the question to the primary lists, and it still gives nobody a father."
+        ]
+      },
+      {
         "when": "8 November 2026",
         "title": "The 95th Regiment, looked up: one Ensign Robert D'Arcy, and two honest nulls",
         "found": [

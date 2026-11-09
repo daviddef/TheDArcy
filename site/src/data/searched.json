@@ -82,6 +82,7 @@
     },
     {
       "src": "RootsChat",
+      "url": "https://www.rootschat.com/",
       "what": "The Hornby claim and the Keele graft, put to forum specialists",
       "when": "15 Sep 2026",
       "outcome": "blocked",
@@ -128,6 +129,7 @@
     },
     {
       "src": "RootsIreland",
+      "url": "https://www.rootsireland.ie/",
       "what": "Limerick and Tipperary parish transcriptions",
       "when": "15 Sep 2026",
       "outcome": "blocked",
@@ -182,6 +184,7 @@
     },
     {
       "src": "FindMyPast newspapers — Saint James's Chronicle 23 May 1857; London Evening Standard and Morning Herald 25 June 1862",
+      "url": "https://www.findmypast.co.uk/",
       "what": "The two Richard D'Arcy deaths in the civil index, chased to their notices",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -201,6 +204,7 @@
     },
     {
       "src": "FindMyPast newspapers — Oxford University and City Herald, 1 Nov 1806; Chester Courant, 11 Nov 1806",
+      "url": "https://www.findmypast.co.uk/",
       "what": "Any contemporary notice of Margarett Maria Isabella D'Arcy's marriage",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -210,6 +214,7 @@
     },
     {
       "src": "FindMyPast newspapers — the London Gazette of 30 June 1818, in five papers",
+      "url": "https://www.findmypast.co.uk/",
       "what": "Joseph D'Arcy's Persian service, which this archive refused to assert from three letters",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -264,6 +269,7 @@
     },
     {
       "src": "FindMyPast census — the household search",
+      "url": "https://www.findmypast.co.uk/",
       "what": "Why four days of surname searches had missed them",
       "when": "14 Sep 2026",
       "outcome": "yield",
@@ -329,6 +335,7 @@
     },
     {
       "src": "FindMyPast census search — a control test",
+      "url": "https://www.findmypast.co.uk/",
       "what": "Whether a zero result meant anything",
       "when": "14 Sep 2026",
       "outcome": "blocked",
@@ -347,6 +354,7 @@
     },
     {
       "src": "Queensland historical death index — free",
+      "url": "https://www.familyhistory.bdm.qld.gov.au/",
       "what": "Martha Wakefield, whom this site said might never have existed",
       "when": "14 Sep 2026",
       "outcome": "yield",
@@ -431,6 +439,7 @@
     },
     {
       "src": "British Newspaper Archive — Morning Herald, 13 February 1843",
+      "url": "https://www.britishnewspaperarchive.co.uk/",
       "what": "Whether any record calls Robert D'Arcy a father and says which D'Arcy he was",
       "when": "14 Sep 2026",
       "outcome": "yield",
@@ -440,6 +449,7 @@
     },
     {
       "src": "British Newspaper Archive — Argus and Caernarvon & Denbigh Herald, 1 April 1843",
+      "url": "https://www.britishnewspaperarchive.co.uk/",
       "what": "John Maddock Jones of Ruabon",
       "when": "14 Sep 2026",
       "outcome": "yield",
@@ -504,6 +514,7 @@
     },
     {
       "src": "British Newspaper Archive — three papers, February–April 1848",
+      "url": "https://www.britishnewspaperarchive.co.uk/",
       "what": "Joseph D'Arcy's obituary, and what he did with his life",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -513,6 +524,7 @@
     },
     {
       "src": "British Newspaper Archive — London Evening Standard and Morning Post, February–April 1848",
+      "url": "https://www.britishnewspaperarchive.co.uk/",
       "what": "What became of Joseph D'Arcy after the Army Lists stop in 1844",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -532,6 +544,7 @@
     },
     {
       "src": "British Newspaper Archive — Salisbury and Winchester Journal, 23 September 1805",
+      "url": "https://www.britishnewspaperarchive.co.uk/",
       "what": "George Pitt D'Arcy's first marriage, and whose son he was",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -560,6 +573,7 @@
     },
     {
       "src": "FamilySearch Full-Text Search (free) — England, Gloucestershire, Marriages 1538-1989",
+      "url": "https://www.familysearch.org/",
       "what": "The Berkeley marriage of John Saniger, about 1797, without waiting for the archives",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -579,6 +593,7 @@
     },
     {
       "src": "FamilySearch (free) — England Marriages 1538-1973, and the same index served by FindMyPast",
+      "url": "https://www.familysearch.org/",
       "what": "Thomas Saniger's marriage, without paying for Ancestry",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -588,6 +603,7 @@
     },
     {
       "src": "Ancestry.com.au, signed in without a subscription",
+      "url": "https://www.ancestry.com.au/",
       "what": "The Berkeley marriage of John Saniger and Lydia, about 1797",
       "when": "13 Sep 2026",
       "outcome": "blocked",
@@ -597,6 +613,7 @@
     },
     {
       "src": "FamilySearch (free, and signed in) — England Births & Baptisms, and the same index served by FindMyPast",
+      "url": "https://www.familysearch.org/",
       "what": "Hannah Saniger's baptism",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -606,6 +623,7 @@
     },
     {
       "src": "FamilySearch Family Tree",
+      "url": "https://www.familysearch.org/",
       "what": "Hannah's mother, and Thomas Sinegar's marriage",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -615,6 +633,7 @@
     },
     {
       "src": "Ancestry.com.au",
+      "url": "https://www.ancestry.com.au/",
       "what": "The Gloucestershire parish registers FindMyPast does not hold",
       "when": "13 Sep 2026",
       "outcome": "blocked",
@@ -762,6 +781,7 @@
     },
     {
       "src": "British Newspaper Archive, via FindMyPast",
+      "url": "https://www.findmypast.co.uk/",
       "what": "Robert D'Arcy's death notices, and whether they name his family",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -771,6 +791,7 @@
     },
     {
       "src": "British Newspaper Archive, via FindMyPast",
+      "url": "https://www.findmypast.co.uk/",
       "what": "Whether the press names Robert D'Arcy's parents",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -939,6 +960,7 @@
     },
     {
       "src": "FreeCEN — Somerset, 1841",
+      "url": "https://www.freecen.org.uk/",
       "what": "Whether the Sanigers were at Chew Magna before Bristol",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -948,6 +970,7 @@
     },
     {
       "src": "TNA Discovery — record details for all twelve RG 4 pieces",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Whether the Bristol chapel registers can actually be read online",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -958,6 +981,7 @@
     },
     {
       "src": "TNA Discovery — Portsmouth",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "A route to Portsea St Mary's register beyond FreeREG's two years",
       "when": "13 Sep 2026",
       "outcome": "empty",
@@ -968,6 +992,7 @@
     },
     {
       "src": "FreeCEN — Gloucestershire and Somerset, 1851, re-run",
+      "url": "https://www.freecen.org.uk/",
       "what": "James and Hannah Wakefield, and the three daughters left behind",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -978,6 +1003,7 @@
     },
     {
       "src": "Hanley St John the Evangelist, burial register (FreeREG)",
+      "url": "https://www.freereg.org.uk/",
       "what": "Samuel Sneyd's burial",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -987,6 +1013,7 @@
     },
     {
       "src": "General Register Office death index (FreeBMD)",
+      "url": "https://www.freebmd.org.uk/",
       "what": "Whether Samuel Sneyd died in 1855 or 1856",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1035,6 +1062,7 @@
     },
     {
       "src": "FreeCEN — Gloucestershire and Somerset, 1851",
+      "url": "https://www.freecen.org.uk/",
       "what": "Where the Sanigers of Bristol came from",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1054,6 +1082,7 @@
     },
     {
       "src": "FreeCEN — Gloucestershire and Somerset, 1851",
+      "url": "https://www.freecen.org.uk/",
       "what": "The three Wakefield daughters who did not sail in 1854",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -1064,6 +1093,7 @@
     },
     {
       "src": "TNA Discovery — the whole catalogue, not one collection",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Everything filed under the name Saniger, in any archive",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1091,6 +1121,7 @@
     },
     {
       "src": "TNA Discovery, series RG 4 (Non-Parochial Registers)",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Which Bristol chapel registers could hold a birth about 1805–1815",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1100,6 +1131,7 @@
     },
     {
       "src": "FreeCEN — Staffordshire",
+      "url": "https://www.freecen.org.uk/",
       "what": "Samuel Sneyd's household at Hanley",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1109,6 +1141,7 @@
     },
     {
       "src": "FreeCEN — Staffordshire, control test",
+      "url": "https://www.freecen.org.uk/",
       "what": "Whether 1841 or 1851 could be searched at all",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -1128,6 +1161,7 @@
     },
     {
       "src": "The London Gazette",
+      "url": "https://www.thegazette.co.uk/",
       "what": "Robert D'Arcy's commissions, printed at the time rather than in Connolly's book",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1147,6 +1181,7 @@
     },
     {
       "src": "The Berkeley Castle Muniments, via TNA Discovery",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "How far back the place-name Saniger goes",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1165,6 +1200,7 @@
     },
     {
       "src": "TNA Discovery — Berkeley manorial court rolls",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Where a landholding family appears when the parish register does not hold it",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1174,6 +1210,7 @@
     },
     {
       "src": "TNA Discovery — Wakefield of Bristol, Sneyd of Madeley, D'Arcy wills in Kent",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "The other three British lines, through the same catalogue",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -1184,6 +1221,7 @@
     },
     {
       "src": "TNA Discovery — the name Saniger in Gloucestershire records",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Any deed, will or suit naming a Saniger at Berkeley",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1193,6 +1231,7 @@
     },
     {
       "src": "TNA Discovery — PROB 11 for the Welsh and Gloucestershire lines",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Wills for John Maddock Jones of Ruabon and for any Saniger",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1229,6 +1268,7 @@
     },
     {
       "src": "FreeCEN — the 1851 census, every Saniger spelling in Bristol",
+      "url": "https://www.freecen.org.uk/",
       "what": "The Sinegar households again, in the year that records relationships and exact birthplaces",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1238,6 +1278,7 @@
     },
     {
       "src": "FreeCEN — Sanigers still in the Vale, 1841",
+      "url": "https://www.freecen.org.uk/",
       "what": "Whether the family had wholly left Berkeley by the census years",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1247,6 +1288,7 @@
     },
     {
       "src": "TNA Discovery — RG 4, the Non-Parochial Registers",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Which Bristol nonconformist register would hold a baptism of about 1805",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1256,6 +1298,7 @@
     },
     {
       "src": "FreeCEN — the other Bristol Sanigers of 1841",
+      "url": "https://www.freecen.org.uk/",
       "what": "Whether any of the 29 is kin to Hannah",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1294,6 +1337,7 @@
     },
     {
       "src": "The London Gazette — Joseph, Constantine and George Pitt D'Arcy",
+      "url": "https://www.thegazette.co.uk/",
       "what": "Whether the other D'Arcy men were gazetted",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -1313,6 +1357,7 @@
     },
     {
       "src": "The London Gazette, 1770–1840",
+      "url": "https://www.thegazette.co.uk/",
       "what": "Robert D'Arcy's career, from the government's own notices rather than a printed roll",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1322,6 +1367,7 @@
     },
     {
       "src": "Queensland BDM — the Birch sisters",
+      "url": "https://www.familyhistory.bdm.qld.gov.au/",
       "what": "Who Hiram and Aaron Wakefield married four months apart in 1861",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1378,6 +1424,7 @@
     },
     {
       "src": "Queensland BDM — the three eldest Wakefield daughters",
+      "url": "https://www.familyhistory.bdm.qld.gov.au/",
       "what": "Eliza (b.1832), Ellen (1834) and Martha (1836), who are not on the passenger list",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -1464,6 +1511,7 @@
     },
     {
       "src": "Queensland open data — Assisted immigration 1848–1912",
+      "url": "https://www.data.qld.gov.au/",
       "what": "How and when the Wakefields reached Australia, and whether the passenger register gives Hannah's native place",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1473,6 +1521,7 @@
     },
     {
       "src": "QSA digital image DR38490 — the passenger register itself",
+      "url": "https://www.archivessearch.qld.gov.au/",
       "what": "Whether the register gives Hannah Wakefield's own county",
       "when": "13 Sep 2026",
       "outcome": "null",
@@ -1503,6 +1552,7 @@
     },
     {
       "src": "FreeCEN — 1861 and 1871 censuses",
+      "url": "https://www.freecen.org.uk/",
       "what": "Hannah Wakefield's exact birthplace, which 1841 does not give",
       "when": "13 Sep 2026",
       "outcome": "empty",
@@ -1623,6 +1673,7 @@
     },
     {
       "src": "FreeCEN — 1841 census, Gloucestershire",
+      "url": "https://www.freecen.org.uk/",
       "what": "Surname Wakefield, whole county; then the household page itself",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1632,6 +1683,7 @@
     },
     {
       "src": "FreeCEN — 1851 census, Gloucestershire",
+      "url": "https://www.freecen.org.uk/",
       "what": "The same household ten years on, for the relationships and exact birthplaces 1841 does not give",
       "when": "13 Sep 2026",
       "outcome": "blocked",
@@ -1651,6 +1703,7 @@
     },
     {
       "src": "FreeCEN — 1841 census, Saniger spellings, Bristol",
+      "url": "https://www.freecen.org.uk/",
       "what": "Where the Vale of Berkeley Sanigers went",
       "when": "13 Sep 2026",
       "outcome": "yield",
@@ -1745,6 +1798,7 @@
     },
     {
       "src": "Trove (National Library of Australia)",
+      "url": "https://trove.nla.gov.au/",
       "what": "Every spelling of D'Arcy and Sneyd against Brisbane and Queensland papers, 1840–1950; obituaries, funeral notices, insolvency reports, memorial notices",
       "when": "9 Sep 2026",
       "outcome": "yield",
@@ -1781,6 +1835,7 @@
     },
     {
       "src": "Australian War Memorial — AWM 1DRL/0428",
+      "url": "https://www.awm.gov.au/",
       "what": "The Red Cross Wounded and Missing Enquiry Bureau file for 5050 Sneyd",
       "when": "9 Sep 2026",
       "outcome": "yield",
@@ -1790,6 +1845,7 @@
     },
     {
       "src": "Australian War Memorial — AWM 28",
+      "url": "https://www.awm.gov.au/",
       "what": "Honours and awards recommendation files for Sneyd",
       "when": "9 Sep 2026",
       "outcome": "yield",
@@ -1799,6 +1855,7 @@
     },
     {
       "src": "The National Archives (UK) — Discovery",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "D'Arcy wills in PROB 11; WO 97 discharge papers; ADM 101 surgeons' journals; Ordnance series",
       "when": "9 Sep 2026",
       "outcome": "yield",
@@ -1808,6 +1865,7 @@
     },
     {
       "src": "Queensland Blue Books, 1870–1916 (archive.org)",
+      "url": "https://archive.org/",
       "what": "Full-text sweep of the colony's civil establishment lists for every family surname",
       "when": "10 Sep 2026",
       "outcome": "yield",
@@ -1835,6 +1893,7 @@
     },
     {
       "src": "Scotland's statutory registers",
+      "url": "https://www.scotlandspeople.gov.uk/",
       "what": "Murdoch of St Quivox, Ayrshire",
       "when": "9 Sep 2026",
       "outcome": "yield",
@@ -1863,6 +1922,7 @@
     },
     {
       "src": "The National Archives (UK) — PROB 11",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "The will of the 4th Earl of Holderness",
       "when": "9 Sep 2026",
       "outcome": "null",
@@ -1903,6 +1963,7 @@
     },
     {
       "src": "The London Gazette",
+      "url": "https://www.thegazette.co.uk/",
       "what": "The citation for Vivian Claude Sneyd's first Military Medal",
       "when": "10 Sep 2026",
       "outcome": "null",
@@ -1932,6 +1993,7 @@
     },
     {
       "src": "Commonwealth War Graves Commission",
+      "url": "https://www.cwgc.org/",
       "what": "Where Arthur Hartley Sneyd is commemorated",
       "when": "9 Sep 2026",
       "outcome": "blocked",
@@ -1950,6 +2012,7 @@
     },
     {
       "src": "Australian War Memorial — collection search",
+      "url": "https://www.awm.gov.au/",
       "what": "General searching beyond the two files reached by direct URL",
       "when": "9 Sep 2026",
       "outcome": "blocked",
@@ -2033,6 +2096,7 @@
     },
     {
       "src": "Commonwealth War Graves Commission",
+      "url": "https://www.cwgc.org/",
       "what": "All 26 Sneyd war dead, and the casualty record for Arthur Hartley Sneyd",
       "when": "14 Sep 2026",
       "outcome": "yield",
@@ -2135,6 +2199,7 @@
     },
     {
       "src": "Staffordshire BMD (UKBMD local index)",
+      "url": "https://www.staffordshirebmd.org.uk/",
       "what": "All SNEYD deaths in Staffordshire, 1837 onward — a free local index nobody here had used",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -2144,6 +2209,7 @@
     },
     {
       "src": "UKBMD — the local BMD project",
+      "url": "https://www.ukbmd.org.uk/",
       "what": "Whether Bristol and Somerset have local registrars' indexes like Gloucestershire's and Staffordshire's",
       "when": "15 Sep 2026",
       "outcome": "empty",
@@ -2201,6 +2267,7 @@
     },
     {
       "src": "British History Online",
+      "url": "https://www.british-history.ac.uk/",
       "what": "Swonhunger, Swanhunger, Swonhungre and Saniger across its published series",
       "when": "15 Sep 2026",
       "outcome": "blocked",
@@ -2238,6 +2305,7 @@
     },
     {
       "src": "FreeCEN — Sussex, 1861",
+      "url": "https://www.freecen.org.uk/",
       "what": "Jane, Catherine and Charlotte D'Arcy in the 1861 census — and then whether FreeCEN's Sussex could have held them at all",
       "when": "15 Sep 2026",
       "outcome": "empty",
@@ -2295,6 +2363,7 @@
     },
     {
       "src": "FreeCEN — Sussex, 1851 and 1871",
+      "url": "https://www.freecen.org.uk/",
       "what": "The sisters in the two censuses either side of 1861, and a coverage test against a household known to exist",
       "when": "15 Sep 2026",
       "outcome": "empty",
@@ -2305,6 +2374,7 @@
     },
     {
       "src": "Staffordshire BMD — births and marriages",
+      "url": "https://www.staffordshirebmd.org.uk/",
       "what": "All SNEYD births and marriages in Staffordshire from 1837, a free local index never used here",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -2314,6 +2384,7 @@
     },
     {
       "src": "Staffordshire BMD — the archive's own Sneyd marriages",
+      "url": "https://www.staffordshirebmd.org.uk/",
       "what": "Whether the index could reach this family's own marriages",
       "when": "15 Sep 2026",
       "outcome": "empty",
@@ -2324,6 +2395,7 @@
     },
     {
       "src": "TNA Discovery — the MEDIEVAL spellings",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Swonhungre, Swonhongre, Swonhunger, Swonhangre, Swanhanger, Swanhunger — the forms the clerks actually used, as opposed to the modern Saniger searched on 14 September",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -2333,6 +2405,7 @@
     },
     {
       "src": "TNA Discovery — spellings that return nothing",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Sanigre, Sannigar, Synigar, Swonhanger, Swanhangar — control on the alias list itself",
       "when": "15 Sep 2026",
       "outcome": "null",
@@ -2343,6 +2416,7 @@
     },
     {
       "src": "Berkeley Castle Muniments, via Discovery",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Whether the muniments Jeayes calendared in 1892 are catalogued in more detail now",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -2352,6 +2426,7 @@
     },
     {
       "src": "The London Gazette",
+      "url": "https://www.thegazette.co.uk/",
       "what": "ROBERT and JOSEPH D'ARCY, both spellings, 1770–1830 — free, full-text, no account",
       "when": "15 Sep 2026",
       "outcome": "null",
@@ -2362,6 +2437,7 @@
     },
     {
       "src": "The London Gazette — why the null is structural",
+      "url": "https://www.thegazette.co.uk/",
       "what": "Whether the Ordnance gazetted Corps of Engineers commissions at all in 1776",
       "when": "15 Sep 2026",
       "outcome": "empty",
@@ -2372,6 +2448,7 @@
     },
     {
       "src": "The London Gazette — what it did give",
+      "url": "https://www.thegazette.co.uk/",
       "what": "When the Corps of Engineers became the ROYAL Engineers",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -2503,6 +2580,7 @@
     },
     {
       "src": "The Manorial Documents Register and Gloucestershire Archives",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Court rolls for AWRE, the Forest parish this archive cannot otherwise reach",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -2512,6 +2590,7 @@
     },
     {
       "src": "The Manorial Documents Register — the other two manors",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Hamfallow and Hinton, where the Berkeley-side Sanigers held",
       "when": "15 Sep 2026",
       "outcome": "empty",
@@ -2641,6 +2720,7 @@
     },
     {
       "src": "National Library of Wales probate images",
+      "url": "https://www.library.wales/",
       "what": "Reading LL/1806/24 directly",
       "when": "15 Sep 2026",
       "outcome": "blocked",
@@ -3128,6 +3208,7 @@
     },
     {
       "src": "TNA Discovery — WO 46/10, Board of Ordnance",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Constantine D'Arcy, the second D'Arcy in Connolly's Roll",
       "when": "15 Sep 2026",
       "outcome": "yield",
@@ -3352,6 +3433,7 @@
     },
     {
       "src": "TNA Discovery — the JSON API, all 15 surname spellings",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Every Discovery record for SANIGER and its variants, asked identically",
       "when": "17 Sep 2026",
       "outcome": "yield",
@@ -3360,6 +3442,7 @@
     },
     {
       "src": "TNA Discovery — the JSON API, the medieval spellings",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Swonhungre and its eight variants, asked identically",
       "when": "17 Sep 2026",
       "outcome": "yield",
@@ -3368,6 +3451,7 @@
     },
     {
       "src": "TNA Discovery — nonsense terms, as a control on the instrument",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "SANIGAAER, ZANIGAR, XQVWPLT, SANIGRE, SANNIGAR",
       "when": "17 Sep 2026",
       "outcome": "null",
@@ -3377,6 +3461,7 @@
     },
     {
       "src": "TNA Discovery — every published null of this archive's, re-run through the API",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Sneyd of Madeley · Wakefield of Bristol · D'Arcy wills in Kent · John de Wyke · Berkeley poor law · Portsea registers",
       "when": "17 Sep 2026",
       "outcome": "yield",
@@ -3420,6 +3505,7 @@
     },
     {
       "src": "TNA Discovery — Wakefield of Bristol, re-read rather than counted",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Whether any of the 232 Wakefield-and-Bristol records is this family",
       "when": "20 Sep 2026",
       "outcome": "null",
@@ -3429,6 +3515,7 @@
     },
     {
       "src": "TNA Discovery and the National Library of Wales",
+      "url": "https://discovery.nationalarchives.gov.uk/",
       "what": "Edward Sanniger, mariner of Chepstow, died 1806",
       "when": "20 Sep 2026",
       "outcome": "yield",
@@ -3762,6 +3849,7 @@
     },
     {
       "src": "England Marriages 1538-1973 (FamilySearch), and the same index served by FindMyPast",
+      "url": "https://www.familysearch.org/",
       "what": "Whether SANIGRE is the register's spelling or the transcriber's",
       "when": "22 Sep 2026",
       "outcome": "null",
@@ -3822,6 +3910,7 @@
     },
     {
       "src": "Trove API — newspaper and gazette titles endpoints",
+      "url": "https://trove.nla.gov.au/",
       "what": "What is digitised for the places and years this archive makes Australian claims about",
       "when": "27 Sep 2026",
       "outcome": "yield",
@@ -3830,6 +3919,7 @@
     },
     {
       "src": "Trove API — the gazette titles endpoint",
+      "url": "https://trove.nla.gov.au/",
       "what": "Whether the 38 gazettes came back, or whether a zero was this archive's own",
       "when": "27 Sep 2026",
       "outcome": "null",
@@ -3839,6 +3929,7 @@
     },
     {
       "src": "Trove API — per-title holdings, Queensland and New South Wales, 1826-1940",
+      "url": "https://trove.nla.gov.au/",
       "what": "Whether the papers whose RANGE covers this family's years actually hold those years",
       "when": "27 Sep 2026",
       "outcome": "yield",
@@ -4531,11 +4622,38 @@
       "what": "Where the 95th Regiment was in 1762, to test the family's account that the father was killed in the American wars",
       "when": "8 Nov 2026",
       "outcome": "yield",
-      "got": "**The 95th was in the West Indies, not on the mainland.** A dispatch printed on 26 April 1762, after Grenada had been reduced, reads «I have ordered Brigadier … from the Granades, leaving the 95th Regiment there, to take Possession of St. Vincents» (the brigadier's name is garbled in the Gazette's OCR text, so it is not quoted). That puts the regiment in the Windward Islands in the spring of 1762, which fits a family tradition of the Caribbean (the tree has Constantine born at Barbados) rather than of the American mainland, though «the American wars» was a loose phrase in 1866 and this proves nothing about any one officer. It does give the question a theatre and a date to search: the Martinique and Grenada casualty returns of 1762.",
+      "got": "**In April 1762 the 95th was at Grenada.** A dispatch printed on 26 April 1762, after Grenada had been reduced, reads «I have ordered Brigadier … from the Granades, leaving the 95th Regiment there, to take Possession of St. Vincents» (the brigadier's name is garbled in the Gazette's OCR text, so it is not quoted). That puts the regiment in the Windward Islands in the spring of 1762. **It is one year of its service and not a verdict on «the American wars»:** the next row finds the same regiment on the American mainland in 1761 and at Havana in August 1762. An earlier version of this row, and of the note on /constantine, said the regiment was in the West Indies and not on the mainland; that was wrong, and is withdrawn.",
       "href": "/constantine",
       "tags": [
         "darcy",
         "gazette"
+      ]
+    },
+    {
+      "src": "The Gentleman's Magazine (May 1761) and The Scots Magazine (August 1761, September 1762) — Colonel Burton's regiment, its officers and its casualties",
+      "url": "https://archive.org/details/sim_edinburgh-magazine-and-literary-miscellany_the-scots-magazine_1762-09_24",
+      "what": "Whether the regiment the magazines print as Colonel Burton's is the 95th, where it served in 1761–62, and which of its officers the printed returns name as killed, wounded or dead",
+      "when": "9 Nov 2026",
+      "outcome": "yield",
+      "got": "**It is the 95th, it was on the American mainland in 1761 and at Havana in 1762, and no D'Arcy is among the officers its returns name.** *Identification:* the Gentleman's Magazine of May 1761 prints «Capt. Prescott, major, and Major Campbell, lieut. col.—Col. Burton's reg.», and the Scots Magazine returns name a Lieutenant Barber, a Lieutenant Burton, an Ensign Deade and a Lieutenant Brown of Colonel Burton's. Every one is a name Ford prints under the 95th (Prescott, Major; Campbell, Lieutenant-Colonel; Barber and Burton and Brown, Lieutenants; Dead, Ensign), five for five. *The mainland, 1761:* letters printed in the Scots Magazine of August 1761 put Colonel Burton's regiment with the Carolina expedition against the Cherokee, with «Lieut. Barber and Ens. Campbell of Col. Burton's» among the wounded; the Gazette of 14 September 1761 (issue 10140, page 4, read as a search excerpt only) gives the regiment's losses as one sergeant and four privates killed and two subalterns wounded, **so no officer of the regiment was killed there**. *Havana, 1762:* the Return of the Killed, Wounded, Missing and Dead since the army landed on Cuba (13 August 1762), in the Scots Magazine of September 1762, lists for Colonel Burton's «Wounded: Ens. Deade», «Dead of wounds: Lieut. Barber» and «Died: Lieut. Burton», with 5 privates and a drummer killed and 35 privates dead. **Not claimed.** The Scots Magazine text is rough OCR; the returns name casualties, not the whole officer list, so a D'Arcy who was neither wounded nor dead would not appear; and nothing here says the Ensign Robert D'Arcy of the previous rows is the Lieutenant of the Ordnance list. What it does show is that the father of Constantine, if he was a 95th lieutenant killed in the American wars about 1761, is not any officer the printed returns name as killed in 1761 or dead in 1762.",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Internet Archive full text — 180 monthly issues of the Gentleman's, London, Edinburgh and Scots Magazines, 1760–1763 — D'Arcy",
+      "url": "https://archive.org/details/sim_gentlemans-magazine_1761-05_31_5",
+      "what": "Whether any of the four monthly magazines of 1760–63 prints a D'Arcy among the officers of the 95th (commissions, promotions, casualty lists)",
+      "when": "9 Nov 2026",
+      "outcome": "null",
+      "got": "**No D'Arcy beside any regiment in 180 issues.** Forms typed: D'Arcy, D'Arcey, Darcy, Darcey, Arcy, and a loose pattern for the OCR's habits (D, optional stray mark, Ar, c, e, y). The loose pattern matched 21 times in 180 issues; **one sat near any military word, and it is a forename** («Miss Darcy Brisbane», a Scottish marriage of 1760). The Gentleman's Magazine index of 1760 also carries a «Darcy» entry, page 326, which was not followed. **The control:** the same text finds Colonel Burton's regiment twelve times (the commissions of May 1761, the Carolina letters of August 1761, the Havana return of 1762), so the instrument reads what is there. **A weak nil, and stated as one.** The OCR is rough («Ent.» for Ens.), the magazines print only a selection of commissions and almost never an ensign's, and a casualty list names only those hit. It shows the magazines do not name a D'Arcy of the 95th; it does not show there was none. Near-names seen and not counted: the Navan D'Arcys, Sir Conyers Darcy.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "archive-org"
       ]
     }
   ],

@@ -1,9 +1,9 @@
 {
  "have": 73,
- "total": 130,
- "pct": 56,
- "selfArchived": 30,
- "missing": 57,
+ "total": 148,
+ "pct": 49,
+ "selfArchived": 34,
+ "missing": 75,
  "missingHosts": [
   [
    "discovery.nationalarchives.gov.uk",
@@ -18,12 +18,20 @@
    7
   ],
   [
+   "archive.org",
+   7
+  ],
+  [
    "www.findagrave.com",
    3
   ],
   [
-   "archive.org",
-   3
+   "www.archivessearch.qld.gov.au",
+   2
+  ],
+  [
+   "www.thegazette.co.uk",
+   2
   ],
   [
    "cityark.medway.gov.uk",
@@ -31,10 +39,6 @@
   ],
   [
    "www.familysearch.org",
-   1
-  ],
-  [
-   "www.archivessearch.qld.gov.au",
    1
   ],
   [
@@ -46,9 +50,53 @@
    1
   ],
   [
+   "www.rootschat.com",
+   1
+  ],
+  [
+   "www.rootsireland.ie",
+   1
+  ],
+  [
+   "www.ancestry.com.au",
+   1
+  ],
+  [
+   "www.data.qld.gov.au",
+   1
+  ],
+  [
+   "trove.nla.gov.au",
+   1
+  ],
+  [
+   "www.scotlandspeople.gov.uk",
+   1
+  ],
+  [
+   "www.cwgc.org",
+   1
+  ],
+  [
+   "www.staffordshirebmd.org.uk",
+   1
+  ],
+  [
+   "www.ukbmd.org.uk",
+   1
+  ],
+  [
+   "www.british-history.ac.uk",
+   1
+  ],
+  [
+   "www.library.wales",
+   1
+  ],
+  [
    "www.archivesdepartementales76.net",
    1
   ]
  ],
- "checked": "04 Nov 2026"
+ "checked": "09 Nov 2026"
 }
