@@ -4,6 +4,23 @@
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
       {
+        "when": "9 November 2026 (evening)",
+        "title": "FindMyPast's Army Lists read for the 95th: a nil about the set, and a Constant D'Arcey",
+        "found": [
+          [
+            "Found",
+            "a Constant D'Arcey, First Lieutenant in the Royal Regiment of Artillery, in the Army Lists of 1781, 1783 and 1784 (FindMyPast's British Army Lists & Commission Registers 1661-1826, read signed in). A lead on the Constantine of the 1775 Ordnance list; not claimed"
+          ],
+          [
+            "Checked",
+            "all 292 D'Arcy and Darcy entries and the 15 Darcey entries in that set for the 95th Regiment and for 1760–63: none under the 95th; the 1761 rows are Thomas Darcy (73rd), Hyacinth D'Arcy (83rd) and Peter D'Arcy (47th). The control is Ralph Burton, the 95th's Colonel, who is in the set only in 1758 and 1767, so the set does not carry the lists that print the regiment's officers. A nil about the set, not about the regiment"
+          ]
+        ],
+        "did": [
+          "WHAT THIS DOES TO THE LEAD. It leaves the Ensign Robert D'Arcy of the 95th where it was, a name in a secondary table, and points the work at the commission books and the Royal Artillery's own lists. Both are recorded on /searched/."
+        ]
+      },
+      {
         "when": "9 November 2026",
         "title": "The 95th Regiment, second pass: where it served, and one claim taken back",
         "found": [

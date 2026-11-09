@@ -4655,6 +4655,33 @@
         "darcy",
         "archive-org"
       ]
+    },
+    {
+      "src": "FindMyPast — British Army Lists & Commission Registers 1661-1826 — D'Arcy, Darcy (292 entries, read in full) and Darcey (15)",
+      "url": "https://www.findmypast.co.uk/",
+      "what": "Whether the set's printed Army Lists carry a D'Arcy or Darcy beside the 95th Regiment, or in 1760–63, signed in on 9 November 2026 (David's account, in the in-app browser)",
+      "when": "9 Nov 2026",
+      "outcome": "null",
+      "got": "**No D'Arcy, Darcy or Darcey is indexed under the 95th, and none in 1762 or 1763.** Typed: Darcy with the set's name variants on (292 entries, which also run on into Darby and Dancy once the D'Arcy and Darcy rows end, on the third page), and Darcey (15 entries). The D'Arcy and Darcy rows in or near the years of the lead are Thomas Darcy, 73rd, 1761; Hyacinth D'Arcy, 83rd, 1761; and Peter D'Arcy, 47th, 1758 and 1761. The others are Francis and Nicholas of the 48th, Robert of the Engineers (1778, 1802, 1803), John Pomeroy of the 64th (1781–84), and a run from 1684 to 1826. **The control that shows why:** Ralph Burton, Colonel of the 95th, is in the set only in 1758 (48th) and 1767 (3rd Foot), not in 1760–63, so the set does not carry the lists that print the 95th's officers. This is a nil about the set, not about the regiment. The set's `yearofrecord` and `regiment` URL parameters and a `page` parameter are not honoured (the footer is the only way on: `_page=N` works, `page=N` returns nothing); a keyword of «95th» finds no rows because the regiment is written «Ninety-Fifth».",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "findmypast"
+      ]
+    },
+    {
+      "src": "FindMyPast — British Army Lists & Commission Registers 1661-1826 — Darcey",
+      "url": "https://www.findmypast.co.uk/",
+      "what": "The D'Arcey spelling in the same set, in case a Royal Artillery or Engineers entry of the 1770s–80s is the family",
+      "when": "9 Nov 2026",
+      "outcome": "yield",
+      "got": "**A «Constant D'Arcey», First Lieutenant, Royal Regiment of Artillery, in the Army Lists of 1781, 1783 (event date 28 April 1783) and 1784** (record ids GBM/BRITARMY/1661-1826/0035581 for 1781 and /0084566 for 1783). The set also holds a Robert D'Arcey of the Corps of Engineers in 1781, 1783 and 1784 (the same corps as the Robert D'Arcy of 1778, 1802 and 1803) and a run of D'Arceys of 1802–03. **Not claimed.** «Constant» is not «Constantine»; the archive's Constantine (appointed to the Ordnance on 25 March 1775 as a surveyor, WO 46/10) is the one man this entry could be, and the tree's two Constantines (one dead at Chatham in 1778, one buried there in 1805) are a different problem that this entry does not settle. It is a lead on a Royal Artillery lieutenant of 1781–84 with that forename; the commission itself, and the Gazette's notice of it, have not been read.",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "findmypast"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
