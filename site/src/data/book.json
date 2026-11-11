@@ -673,7 +673,7 @@
   "/places/": "/places/"
  },
  "outside": [
-  "/search/", "/privacy/",
+  "/search/", "/privacy/", "/whats-new/",
   "/what-we-got-wrong/"
  ]
 }

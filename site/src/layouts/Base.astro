@@ -10,6 +10,9 @@ import SocialHead from "@daviddef/archive-kit/components/SocialHead.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
 import BookHead from "@daviddef/archive-kit/components/BookHead.astro";
 import BookFoot from "@daviddef/archive-kit/components/BookFoot.astro";
+import PulseRibbon from "@daviddef/archive-kit/components/PulseRibbon.astro";
+import SearchPop from "@daviddef/archive-kit/components/SearchPop.astro";
+import { pulse } from "../lib/pulse.js";
 import book from "../data/book.json";
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import ring from "@daviddef/archive-kit/data/archives.json";
@@ -28,7 +31,7 @@ const { title, description = "", dek, eyebrow, bare, noindex: _noindex, livingPa
 const noindex = _noindex || livingPage;
 const SITE = "The D'Arcy Archive";
 const nav = [
-  ["Start", [["/", "Home"], ["/story/", "The story"], ["/about/", "About"], ["/trees/", "The trees"], ["/lines/", "The Lines"], ["/tree/", "Our line, drawn"], ["/roots/", "Roots & Routes"], ["/atlas/", "The Atlas"], ["/timeline/", "The Timeline"], ["/dna/", "The DNA"], ["/how-far-back/", "How Far Back"], ["/the-other-archives/", "The Other Archives"]]],
+  ["Start", [["/", "Home"], ["/story/", "The story"], ["/about/", "About"], ["/trees/", "The trees"], ["/lines/", "The Lines"], ["/tree/", "Our line, drawn"], ["/roots/", "Roots & Routes"], ["/atlas/", "The Atlas"], ["/timeline/", "The Timeline"], ["/whats-new/", "What's new"], ["/dna/", "The DNA"], ["/how-far-back/", "How Far Back"], ["/the-other-archives/", "The Other Archives"]]],
   ["Our line", [["/direct-line/", "The Spine"], ["/saniger-line/", "Six Generations at Berkeley"], ["/jean-ward/", "South Leith"], ["/new-generations/", "Not in the Tree"], ["/hornby/", "The Hornby Claim"], ["/name/", "The Name"]]],
   ["The families", [["/families/", "The Families"], ["/the-women/", "The Women"], ["/sneyd/", "Sneyd"], ["/sergeant-sneyd/", "Sergeant Sneyd"], ["/murdoch/", "Murdoch"], ["/atkinson/", "Atkinson"],
     /* the names the direct line carries that have no page of their own elsewhere
@@ -109,7 +112,7 @@ const thisArchive =
           </div>
         </details>
       ))}
-      <a class="findbtn" href={u("/search/")} aria-label="Search the archive">Search</a>
+      <PulseRibbon pulse={pulse} />
     </nav>
   </div>
   <div class="drawer" id="drawer" hidden>
@@ -119,10 +122,11 @@ const thisArchive =
       </div>
     ))}
       {/* the header's Search pill is hidden with the nav on a narrow screen; without this a phone or a tablet has no way to /search/ */}
-      <div class="dgrp"><a href={u("/search/")} class={on("/search/") ? "on" : ""}>Search the archive</a></div>
+      <div class="dgrp"><a href={u("/search/")} class={on("/search/") ? "on" : ""} data-search-open>Search the archive</a></div>
     </div>
   </div>
 </header>
+<SearchPop tries={["Saniger", "Chatham", "Sneyd", "General Hewitt"]} />
 
 <!-- THE BOOK (17 October 2026): the running head, and below it the Previous / Next. One order across
      the whole site, held in src/data/book.json and checked against the built pages by `check:book`. -->

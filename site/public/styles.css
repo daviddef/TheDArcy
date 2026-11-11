@@ -564,7 +564,11 @@ header.site nav a.findbtn{padding:8px 15px;border-bottom:0;flex:0 0 auto}
 .drawer a{display:inline-block;font-family:var(--sans);font-size:14px;color:var(--ink-2);
   text-decoration:none;padding:5px 12px 5px 0}
 .drawer a.on{color:var(--accent);font-weight:600}
-@media (max-width:1180px){
+/* 11 Nov 2026: nine menus and the What's new ribbon need about 1405px, and the header's .wrap stopped at --maxw, so the nav ran off the right edge
+   at any width below about 1630px (the Search pill, and now the ribbon's magnifier, were cut off). The header now uses the full width from 1441px
+   up, and the burger takes over below it. */
+@media (min-width:1441px){header.site .sitein.wrap{max-width:none}}
+@media (max-width:1440px){
   header.site nav.topnav{display:none!important}
   .burger{display:inline-flex!important}
   /* Two different things are called .bars in this sheet: a stacked chart
