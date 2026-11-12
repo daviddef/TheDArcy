@@ -6,7 +6,20 @@ listed in DROPPED below with its reason."""
 import re, sys, html
 
 # an address that left the menu on purpose, and why
-DROPPED = {}
+DROPPED = {
+    "/families/blackbourne/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/cotton/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/howard/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/jones/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/kent/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/noel/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/schomberg/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/stuart/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/sutton/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/von-degenfeld/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/von-der-pfalz/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+    "/families/ward/": "left the Families menu on 13 November 2026 (PR D); linked from the /families/ index (its card and its \"all N published\" link) and the menu links the index",
+}
 
 
 def menu(dist):

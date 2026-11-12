@@ -19,8 +19,9 @@ WHAT IS CHECKED (each has a planted fault in `controls()`; run with --controls t
   copy        a declared copy (same-person.json) is not a row
   living      a living person's row carries no year and no 'b.'/'d.', and the living person's name appears
               nowhere on the page outside their row (the lede, the direct-line table, the connections)
-  index       /families/ links to every line
-  nav         the navigation on /families/ links to every line
+  reach       every line is linked from the menu OR from the /families/ index (its card or its "all N published"
+              link), and the menu links /families/ itself: the one rule the eight archives share (13 November 2026;
+              before it, a line had to be in the menu AND the index card, which kept twelve pages in the dropdown)
   sitemap     every line page is in the sitemap
   not-empty   a build with no line pages does not pass
 
@@ -129,6 +130,31 @@ def check_page(page, line, want, copies_slugs, living, site=""):
     return f
 
 
+NAV = re.compile(r'<nav class="topnav".*?</nav>', re.S)
+
+
+def check_reach(idx, slug):
+    """Failures for ONE line's reach, read on the built /families/ page: the line is linked from the menu (the
+    topnav, which is the menu on every page) or from the index's own body (a card or its "all N published" link).
+    Pure, so --controls can feed it a damaged page."""
+    link = re.compile(r'href="[^"]*/families/%s/?"' % re.escape(slug))
+    nav = NAV.search(idx)
+    nav_html = nav.group(0) if nav else ""
+    body = idx.replace(nav_html, " ") if nav_html else idx
+    if not link.search(nav_html) and not link.search(body):
+        return [f"/families/{slug}/ is linked from neither the menu nor the /families/ index"]
+    return []
+
+
+def check_menu_links_index(idx):
+    """The rule leans on the menu linking /families/: if it did not, a line reached only through the index would be
+    reached through nothing."""
+    nav = NAV.search(idx)
+    if not nav or not re.search(r'href="[^"]*/families/?"', nav.group(0)):
+        return ["the menu does not link /families/, so a line reached only through the index is reached through nothing"]
+    return []
+
+
 def check_site(dist, lines, want_by_line, copies_slugs, living_by_line, site):
     fails = []
     if not lines:
@@ -142,6 +168,8 @@ def check_site(dist, lines, want_by_line, copies_slugs, living_by_line, site):
         locs |= {l.rstrip("/") for l in re.findall(r"<loc>([^<]*)</loc>", read(p))}
     if not idx:
         fails.append("/families/ is not built")
+    else:
+        fails += check_menu_links_index(idx)
     built = 0
     for l in lines:
         p = os.path.join(dist, "families", l["slug"], "index.html")
@@ -152,13 +180,7 @@ def check_site(dist, lines, want_by_line, copies_slugs, living_by_line, site):
         built += 1
         fails += check_page(read(p), l, want_by_line[l["slug"]], copies_slugs, living_by_line[l["slug"]], site)
         if idx:
-            n = len(re.findall(r'href="[^"]*/families/%s/?"' % re.escape(l["slug"]), idx))
-            if n < 2:
-                # once in the navigation, once in the index's own card
-                fails.append(f"/families/ links to {label} {n} time(s); the index card and the navigation should each link it")
-            nav = re.search(r'<nav class="topnav".*?</nav>', idx, re.S)
-            if not nav or not re.search(r'href="[^"]*/families/%s/?"' % re.escape(l["slug"]), nav.group(0)):
-                fails.append(f"the navigation on /families/ does not link {label}")
+            fails += check_reach(idx, l["slug"])
         if sitemaps and (site + label).rstrip("/") not in locs:
             fails.append(f"{label} is not in the sitemap")
     if not sitemaps:
@@ -217,7 +239,7 @@ def gate():
         return 1
     n = sum(len(w) for w in want.values())
     print(f"  ok    familylines {len(lines)} family lines built, {n} people drawn as rows, none of them a declared copy; "
-          f"each is in the index, the navigation and the sitemap")
+          f"each is linked from the menu or the /families/ index (and the menu links the index) and is in the sitemap")
     return 0
 
 
@@ -299,8 +321,19 @@ def controls():
                 if drop != ("page", l["slug"]) and os.path.exists(src):
                     shutil.copy(src, os.path.join(d, "families", l["slug"], "index.html"))
             idx = read(os.path.join(DIST, "families", "index.html"))
-            if drop and drop[0] == "index":
-                idx = idx.replace(f"/families/{drop[1]}/", "/families/gone/")
+            if drop and drop[0] in ("index", "card", "nav"):
+                nav = NAV.search(idx)
+                nav_html = nav.group(0) if nav else ""
+                body = idx.replace(nav_html, "\x00NAV\x00", 1)
+                gone = lambda h: h.replace(f"/families/{drop[1]}/", "/families/gone/")
+                if drop[0] in ("index", "card"):
+                    body = gone(body)           # the index's own card and "all N" link
+                if drop[0] in ("index", "nav"):
+                    nav_html = gone(nav_html)   # the menu's entry
+                idx = body.replace("\x00NAV\x00", nav_html, 1)
+            if drop and drop[0] == "menu-index":
+                nav = NAV.search(idx)
+                idx = idx.replace(nav.group(0), re.sub(r'href="[^"]*/families/?"', 'href="/gone/"', nav.group(0)), 1)
             open(os.path.join(d, "families", "index.html"), "w", encoding="utf-8").write(idx)
             m = re.search(r"\bsite:\s*['\"]([^'\"]+)['\"]", read(os.path.join(ROOT, "site", "astro.config.mjs")))
             site = (m.group(1) if m else "").rstrip("/")
@@ -310,11 +343,19 @@ def controls():
         for name, drop, needle in [
             ("a line page not built", ("page", s), "is not built"),
             ("a line missing from the sitemap", ("sitemap", s), "not in the sitemap"),
-            ("a line missing from the index and the navigation", ("index", s), "links to"),
+            ("a line linked from neither the menu nor the index", ("index", s), "linked from neither"),
+            ("the menu no longer linking /families/ itself", ("menu-index", None), "does not link /families/"),
         ]:
             d, site = build_dist(drop)
             living = {k: {} for k in want}
             expect(name, check_site(d, lines, want, cp, living, site), needle)
+        # the two ways a line may be reached (13 November 2026): each alone must PASS, and only both gone fails
+        for name, drop in [("a line linked from the index card only (not in the menu)", ("nav", s)),
+                           ("a line linked from the menu only (not on the index card)", ("card", s))]:
+            d, site = build_dist(drop)
+            ok = check_site(d, lines, want, cp, {k: {} for k in want}, site)
+            print(f"  {'ok    ' if not ok else 'FAIL  '}  positive control: {name} passes" + ("" if not ok else f" (got {ok[:2]})"))
+            missed += 1 if ok else 0
         d, site = build_dist(None)
         ok = check_site(d, lines, want, cp, {k: {} for k in want}, site)
         print(f"  {'ok    ' if not ok else 'FAIL  '}  positive control: an undamaged copy of the line pages passes" + ("" if not ok else f" (got {ok[:2]})"))
