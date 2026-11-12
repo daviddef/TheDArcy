@@ -4,6 +4,24 @@
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
       {
+        "when": "12 November 2026",
+        "title": "The Royal Artillery's lists read for Constant D'Arcey: he is a Constantine, and he died at Grenada in 1794",
+        "found": [
+          [
+            "Found",
+            "«561 Constantine D'Arcy» in Kane and Askwith's List of Officers of the Royal Regiment of Artillery (1900), in the group commissioned 1777–1779: service «Grenada, 94», remark «d. in Grenada, 18 Mar. 1794» (read on the scanned pages). The Army List of 1781 prints «Conftant. D'Arcey» among the First Lieutenants of the same regiment, in the same place in the order, so the two are very probably one officer. No commission date is read"
+          ],
+          [
+            "Checked",
+            "eight earlier Army List volumes (Internet Archive, catalogued 1767 to 1778) for D'Arcy, D'Arcey, Darcy and Darcey: no Constantine or Constant D'Arcy in any. The control is Francis D'Arcy, found in all eight, and the result is expected for a man commissioned in 1777–79. The book's other D'Arcy index entry, «J., 25», is Joseph D'Arcy of 1794, already known"
+          ]
+        ],
+        "did": [
+          "WHAT THIS DOES. It gives the Royal Artillery lieutenant of 1781–84 his forename (Constantine) and a death at Grenada on 18 March 1794, which is not Chatham in 1778 (the tree's Constantine of 1759) and not Chatham in 1805 (Robert's son). It makes the tree's 1778 death date the part to doubt first. It does not show that he is the 1775 surveyor of WO 46/10, the tree's Constantine, or anyone's son: those stay leads, and /constantine, /hornby, /crossread and /robert-family say so.",
+          "PAGES CHANGED TODAY. /hornby's «a brother Constantine» card no longer says he may simply be Robert's son duplicated and back-dated; it says the 1775 surveyor is a second man of the name and whether the tree's Constantine is that man is not established. /crossread keeps its day's text and gains a dated update; /robert-family's open question now lists three possibilities, none established. Worklist row 156 and /searched/ carry the new reading."
+        ]
+      },
+      {
         "when": "9 November 2026 (evening)",
         "title": "FindMyPast's Army Lists read for the 95th: a nil about the set, and a Constant D'Arcey",
         "found": [

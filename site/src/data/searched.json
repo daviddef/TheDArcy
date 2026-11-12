@@ -4682,6 +4682,46 @@
         "darcy",
         "findmypast"
       ]
+    },
+    {
+      "src": "Internet Archive — Kane and Askwith, List of Officers of the Royal Regiment of Artillery from 1716 to 1899 (1900), Nos 547–583 (1777–1779), page [16] and its service-record page [16A]",
+      "url": "https://archive.org/details/listofficersroy02askwgoog/page/n51/mode/1up",
+      "what": "Whether the Royal Artillery's own list of officers names a Constantine or Constant D'Arcy, to find the commission behind the First Lieutenant of the Army Lists of 1781–84",
+      "when": "12 Nov 2026",
+      "outcome": "yield",
+      "got": "**One D'Arcy of the Royal Artillery in the group of officers commissioned 1777–1779: «561 Constantine D'Arcy».** Read on the scanned pages, not the OCR (the list is printed sideways and the OCR drops his name's last letter). Page [16A] gives his service as **«Grenada, 94»**, and page [16] has, in the remarks column on his row, **«d. in Grenada, 18 Mar. 1794»**. The page's date columns are blank on his row, so no commission date is read. The same book's index has a second D'Arcy, «J., 25»: that is Joseph D'Arcy (Gentleman Cadet 12 March 1794, number 894 on page [25]), already known on /hornby. **What this does and does not do.** It puts a **Constantine D'Arcy in the Royal Artillery** where the FindMyPast entry only had «Constant», it gives him a death, and the death is **at Grenada in 1794**, which is not Chatham in 1778 (the tree's Constantine of 1759) nor Chatham in 1805 (Robert's son). **Not claimed:** it is a compilation of 1900, the book names no parents and no birth, and nothing here links him to the 1775 surveyor of WO 46/10 beyond the forename and the Ordnance service. It is graded a lead on who the Royal Artillery's Constantine was, and a reason to doubt the tree's 1778 death date.",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Internet Archive — A List of all the Officers of the Army (1781), «Officers of the Royal Regiment of Artillery», page 281 (First Lieutenants)",
+      "url": "https://archive.org/details/listofallofficer00grea/page/n270/mode/1up",
+      "what": "Whether the Army List of 1781 itself prints the Royal Artillery First Lieutenant FindMyPast indexes as Constant D'Arcey, and what date it gives him",
+      "when": "12 Nov 2026",
+      "outcome": "yield",
+      "got": "**«Conftant. D'Arcey» is printed among the First Lieutenants of the Royal Regiment of Artillery, page 281, between Robert Lock and Edward Wood.** The page lists the First Lieutenants in order and dates only the first of them: the names above John Burton run from 7 July 1779 to «19 Jan. 80», and the names from William Horndon down, his among them, carry **no date of their own** on this page. So the Army List fixes him as a First Lieutenant of 1781 who ranks after Burton's 19 January 1780, and no more. **This is very probably the same man as Kane's «561 Constantine D'Arcy»**, by position as well as name: Kane runs William H. Horndon (557), George Scott, Robert Lock, Deering Jones (560, who resigned in 1778), then Constantine D'Arcy (561), and the 1781 list runs Horndon, Scott, Lock, then «Conftant. D'Arcey» (Jones has gone). The 1781 list prints «Constant», Kane «Constantine»: **two prints of one officer in the same place in the seniority order** is the ground for it, and it is still an identification by a list's order, not a document that says so.",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Internet Archive full text — eight Army Lists (catalogued 1767 to 1778), «A list of the general and field-officers…» — D'Arcy, D'Arcey, Darcy, Darcey",
+      "url": "https://archive.org/details/listofgeneralfie00grea_2",
+      "what": "Whether any Army List before the Royal Artillery's 1777–79 commissions prints a Constantine or a Constant D'Arcy",
+      "when": "12 Nov 2026",
+      "outcome": "null",
+      "got": "**No Constantine or Constant D'Arcy in any of the eight volumes** (identifiers listofgeneralfie1767grea, listofgeneralfie00grea and its _2 to _7). Typed: D'Arcy, D'Arcey, Darcy, Darcey, against the full text. The D'Arcys the volumes do print are a Francis D'Arcy in every volume, a Robert D'Arcy in one, and a Thomas and an Arthur Darcy. **The control** is Francis D'Arcy, found in all eight, so the search reads the text. It is the result expected for a man commissioned in 1777–79: it is not a nil about the family, and it says nothing about the 1775 surveyor.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
