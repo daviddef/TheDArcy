@@ -4,17 +4,9 @@
  "snapshot_pages": {},
  "site_changes": [
   {
-   "page": "/research/",
-   "why": "the Research hub lists the deep dives: one more, The DNA (it left the Start menu and is a deep dive under Sources)"
-  },
-  {
-   "page": "/research/sources-and-method/",
-   "why": "the same: The DNA is a deep dive on the Sources & method page"
-  },
-  {
-   "page": "/sources/",
-   "why": "its Deep dives list gains The DNA at the end; nothing is removed"
+   "page": "/families/",
+   "why": "a new block, \"Pages of their own\", links The Sneyds, Sergeant Sneyd, The Murdochs and The Women, which were reached only from the menu; nothing is removed or reworded"
   }
  ],
- "note": "Menu regroup, PR A (12 November 2026). Declarations for the build of this branch against the build of origin/main at fe1aabd. The only main-text changes are the three pages that list the Research deep dives: one more entry, The DNA, which left the Start menu. No block of text is reworded."
+ "note": "Menu PR D (13 November 2026), on origin/main at a5f714c. The only main-text change is the one new block on /families/ (four links). The menu change (twelve lineage pages out of the Families dropdown) is in the header, not in any page's main text."
 }

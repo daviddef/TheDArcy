@@ -125,6 +125,16 @@ const groups = [{
     <Families groups={groups} u={(p) => (/^https?:/.test(p) ? p : u(p))} />
   </section>
 
+  <Blk label="Pages of their own" title="Where a family or a person has a study of its own">
+    <p class="dek">Four of the archive&rsquo;s longer pieces are about a family or a person rather than a surname, so they are not one of the cards above. Each is linked here, and from the menu.</p>
+    <ul class="small" style="margin:.6rem 0 0;padding-left:1.1rem">
+      <li style="margin-top:.35rem"><a href={u("/sneyd/")}>The Sneyds</a> &mdash; out of Bristol and Kempsey into far western Queensland.</li>
+      <li style="margin-top:.35rem"><a href={u("/sergeant-sneyd/")}>Sergeant Sneyd</a> &mdash; Samuel Charles Sneyd, 1811&ndash;1885.</li>
+      <li style="margin-top:.35rem"><a href={u("/murdoch/")}>The Murdochs</a> &mdash; from St Quivox in Ayrshire to Toowoomba.</li>
+      <li style="margin-top:.35rem"><a href={u("/the-women/")}>The Women</a> &mdash; eight women of the archive.</li>
+    </ul>
+  </Blk>
+
   <Blk label="Not placed" title="People on no surname page">
     <div data-unplaced={JSON.stringify({ total: un.total, cluster: un.cluster, line: un.line, copies: un.copies,
       falco: un.falco.n, elsewhere: un.elsewhere.n, unnamed: un.unnamed.n, other: un.other.n, surnames: nOther })} hidden></div>

@@ -15,22 +15,19 @@
      /emigrations/ /general-hewitt/ /australia/ /brisbane/ /great-war/   the "Australia" menu became a group of Places & families
      the twenty-four pages of "The D'Arcys", "The Sanigers" and "Bristol and the Potteries" became the three groups of one new menu,
      "The studies", each moved as it was.
-   The twelve lineage pages (/families/<slug>/, from data/family-lines.json) STAY in the menu: the /families/ index does link every one
-   (docs/menu-a-reach.md), but tools/check_family_lines.py holds that the navigation on /families/ links each of them as well as the
-   index card, and trimming them would mean changing that gate, which this menu-only PR does not do. */
+   The twelve lineage pages (/families/<slug>/, from data/family-lines.json) LEFT the menu on 13 November 2026 (PR D): they are reached from
+   the /families/ index, which the menu links (its card and its "all N published" link, on the built page), and tools/check_family_lines.py
+   now holds that a family page is linked from the menu OR from that index, the one rule the eight archives share. The Families menu is the
+   index, the own line, and the larger pages: Sneyd, Atkinson, Murdoch, The Women, Sergeant Sneyd (the four that were menu-only are now
+   also on the index, in "Pages of their own"). */
 import { navGroups } from "./research-menu.js";
-import familyLines from "../data/family-lines.json";
-
-/* LINEAGE: true = listed, as before (the family-lines gate requires it); false would leave them to the /families/ index. */
-const LINEAGE = true;
 
 /* The surname pages after the own line, A to Z: accents folded, a leading particle or article ignored (von der Pfalz under P, von Degenfeld
-   under D), case-insensitive. Atkinson and Murdoch have pages of their own; the twelve lineage pages come from src/data/family-lines.json
-   (the family-lines gate requires them in the menu: see LINEAGE). */
+   under D), case-insensitive. Atkinson and Murdoch are the two surnames with pages of their own in the menu; the twelve lineage pages are
+   reached through the /families/ index (see the note at the top). */
 const sortKey = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/^(the|von der|von|van der|van|de)\s+/, "");
 const SURNAMES = [
   ["/atkinson/", "Atkinson"], ["/murdoch/", "Murdoch"],
-  ...(LINEAGE ? familyLines.lines.map((l) => [`/families/${l.slug}/`, l.surname]) : []),
 ].sort((a, b) => sortKey(a[1]).localeCompare(sortKey(b[1])));
 
 export const MENU = [
