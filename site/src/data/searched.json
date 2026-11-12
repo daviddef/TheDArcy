@@ -4776,6 +4776,34 @@
         "darcy",
         "archive-org"
       ]
+    },
+    {
+      "src": "Internet Archive full text — The Royal Kalendar, nine editions (1786, 1788 to 1795) — D'Arcy, D'Arcey, Constant, Constantine in the Ordnance's military branch",
+      "url": "https://archive.org/details/royalkalendarcou00unse_5",
+      "what": "Whether the Royal Kalendar's list of the Ordnance's military officers shows Constantine D'Arcy as an artillery officer between 1786 and 1795, to give his rank and station before Grenada",
+      "when": "12 Nov 2026",
+      "outcome": "empty",
+      "got": "**The Royal Kalendar does not carry the artillery lieutenants in its text, so it cannot test him.** The nine editions print the Corps of Engineers' First and Second Lieutenants by initial and surname (the 1790 edition runs «R. D'Arcy, J. Lees, G. Bridges» among the Second Lieutenants: the Engineers' Robert, already known), and a Francis D'Arcy of the 48th Foot, but the machine text has no list of the Royal Artillery's lieutenants at all, and the artillery names that do appear are scattered through other lists. Typed against the full text of each edition: D'Arcy, D'Arcey, Constant and Constantine; no artillery D'Arcy comes out. **The control** is the same search finding the Engineers' «R. D'Arcy» in the 1790 edition, so the text is readable; but a book that prints no list of artillery lieutenants cannot show whether one is missing from it, so this is recorded as empty, not as a nil about him: the Kalendar is the wrong book for the question. The title searches run on the Internet Archive for an Army List of 1762 or 1763, or of 1784 to 1794, returned none, so the 1783 list is the latest full Army List found there after 1781; this is a statement about those searches, not about the Archive's whole holdings.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "The London Gazette, 1777 to 1780 — Arcy, Darcy, Darcey (the Gazette's own notice search)",
+      "url": "https://www.thegazette.co.uk/all-notices/notice?text=Arcy&start-publish-date=1777-01-01&end-publish-date=1780-12-31",
+      "what": "Whether the Gazette prints a D'Arcy commissioned in the Royal Regiment of Artillery in 1777–79 or promoted First Lieutenant in 1780 (12 July, from the 1783 list)",
+      "when": "12 Nov 2026",
+      "outcome": "null",
+      "got": "**No Constantine or Constant D'Arcy, and no D'Arcy of the artillery, in the Gazette for 1777–1780.** Typed: Arcy (three notices), Darcy (four) and Darcey (one), the whole of 1777 to 1780. They are Irish lists (Francis, John and Arthur D'Arcy among grand juries and sheriffs, April 1778, March and April 1780), a John Pomeroy Darcy named for an ensign's commission in an Irish regiment of foot (21 February 1780), and an Ensign and then Lieutenant «Darcy Linton» in a regiment of foot (1778–79), where Darcy is a forename. **The control** is the same search returning the 1778 and 1780 pages that do carry D'Arcys, so it reads these pages. **What it does not show:** the Gazette printed only some Ordnance commissions, a snippet is read from the search page and not from a full page, and the OCR of 1777–80 type misreads names, so a Constantine misprinted past Arcy, Darcy and Darcey would not come out. A nil about the Gazette's notice search for these years, not about his commission.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "gazette"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
