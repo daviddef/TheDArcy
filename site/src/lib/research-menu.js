@@ -36,6 +36,7 @@ export const RESEARCH = [
           { href: "/finding-arthur/", label: "The Search for Arthur" },
           { href: "/behind-the-paywall/", label: "Behind the Paywall" },
           { href: "/crossread/", label: "Reading the Archive Against Itself" },
+          { href: "/dna/", label: "The DNA" },   /* 12 Nov 2026 (menu regroup): left Start; the page reads this family's DNA tests */
         ] },
     ] },
 ];
