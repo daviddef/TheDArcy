@@ -4749,6 +4749,33 @@
         "darcy",
         "discovery"
       ]
+    },
+    {
+      "src": "Internet Archive — A List of the Officers of the Army (War Office, 28 April 1783), «Officers of the Royal Regiment of Artillery», page 4 (First Lieutenants)",
+      "url": "https://archive.org/details/listofofficersof00grea_1/page/n285/mode/1up",
+      "what": "Whether the 1783 Army List dates Constantine D'Arcy's rank as First Lieutenant, which the 1781 list does not",
+      "when": "12 Nov 2026",
+      "outcome": "yield",
+      "got": "**«Conſtant D'Arcey 12 July» is printed among the First Lieutenants of the Royal Regiment of Artillery, page 4 of the regiment's section (read on the scan).** The page prints the year only where it changes: John Burton is «19 Jan. 80», and William Horndon «14 June», George Scott «do.», Robert Lock «22 do.», then D'Arcey «12 July», Edward Wood, George Cookson and John Bateman «do.», and the next page opens at «24 Jan. 81». By the page's own order that makes his date as First Lieutenant **12 July 1780**: the year is read from the order of the list, not printed against his name. It is the date he reached that rank, not his first commission (Kane's list puts him in the group commissioned 1777–1779), and the 1781 list, which prints no date for these names, is consistent with it. The same 1783 volume is the one the archive already held for Robert D'Arcey of the Engineers (page 11, 17 January 1776); this entry for the artillery officer had been read without a year. **Not claimed:** that he is the 1775 surveyor of WO 46/10 and WO 55/2281, or the tree's Constantine of 1759.",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
+    },
+    {
+      "src": "Internet Archive full text — The Gentleman's Magazine, twelve monthly issues of 1794 (vol. 64) — D'Arcy, D'Arcey, Darcy, Darcey, and Grenada with the Royal Artillery",
+      "url": "https://archive.org/details/sim_gentlemans-magazine_1794-06_64_6",
+      "what": "Whether the Gentleman's Magazine of 1794 prints a death at Grenada of an artillery officer named D'Arcy (18 March 1794, from Kane and Askwith)",
+      "when": "12 Nov 2026",
+      "outcome": "null",
+      "got": "**No D'Arcy officer, and no death at Grenada of a Royal Artillery officer, in the twelve issues of 1794.** Typed against the full text of each issue: D'Arcy, D'Arcey, Darcy and Darcey, and «Grenada» beside «Artillery». The D'Arcy hits are a marriage (Miss Anne D'Arcy, daughter of the late John, October) and, in the December index, the same entry; Darcy hits are place-names and a coat of arms. «Grenada» occurs in five places, none a notice of a death. **The control** is the same search finding Miss Anne D'Arcy's marriage, which is on the page, so the text is readable. **What it does not show:** the magazine printed deaths of officers of rank, not every subaltern, and a lieutenant dying of fever at Grenada is not the kind of death it printed; the Royal Kalendar for 1794 (Internet Archive) prints no list of artillery officers to check, and the European Magazine's 1794 issues were not read in full. A nil about this magazine and this year, not about his death.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
