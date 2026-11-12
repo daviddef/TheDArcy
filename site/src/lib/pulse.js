@@ -3,6 +3,7 @@
    The search log's rows call their date `when` (already the kit's first choice) and their outcomes yield/null/empty/blocked, all words the kit knows.
    There is no corrections.json: the corrections list is OWN in src/lib/errors.js (what /corrections/ prints), each with a long-form `when` and `what`. */
 import { buildPulse } from "@daviddef/archive-kit/lib/pulse.js";
+import { loadReceipts } from "@daviddef/archive-kit/lib/receipts.js";
 import searched from "../data/searched.json";
 import worklist from "../data/worklist.json";
 import sources from "../data/sources.json";
@@ -12,4 +13,7 @@ import { nPeople } from "./people.js";
 export const pulse = buildPulse({
   searched, corrections: OWN, worklist,
   counts: { people: nPeople, sources: sources.recordSets.length },
+  /* the Record Atlas's receipts for this archive (id "darcy"): the state under each search row. null when the Atlas cannot be read: the build
+     carries on and the row shows no Atlas line (kit/docs/whats-new-receipts.md). */
+  receipts: await loadReceipts("darcy"),
 });
