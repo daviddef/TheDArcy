@@ -1,0 +1,27 @@
+{
+ "token_swaps": [],
+ "accepted": [],
+ "snapshot_pages": {},
+ "site_changes": [
+  {
+   "page": "/part/how-we-know/",
+   "why": "the book's part page lists the three new Research chapters ahead of Sources, so its chapter numbers shift by three and its 'start reading' link now reads 'research' (it opens the Research hub); every old entry is still listed, with the same title and text"
+  },
+  {
+   "page": "/contents/",
+   "why": "the contents lists three new Research chapters (Research, To do, Sources & method) ahead of Sources, so the chapter numbers viii.1 onward are each one entry higher by three; every old entry is still listed, with the same title and text"
+  },
+  {
+   "page": "/sources/",
+   "why": "added at the end: the Deep dives list (the five studies that were Investigations); nothing removed"
+  },
+  {
+   "page": "/searched/",
+   "why": "added at the top: the short Atlas note (what only this archive holds / the Atlas); an id on one heading; nothing removed"
+  },
+  {
+   "page": "/coverage/",
+   "why": "added at the top: the short Atlas note; two ids; nothing removed"
+  }
+ ]
+}
