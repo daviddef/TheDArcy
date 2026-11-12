@@ -10,7 +10,7 @@ the one page change is the four links added to `/families/` that the order of wo
    twelve lines is linked from the menu (the topnav) or from the `/families/` index's own body (card or "all N published" link), and the menu links
    `/families/` itself (without that, a line reached only through the index would be reached through nothing). Planted faults in `--controls`: a line linked from
    neither (caught), the menu no longer linking `/families/` (caught); positive controls: a line linked from the index card only passes, a line linked from the
-   menu only passes. All 26 controls came out as expected (`every planted fault was caught`).
+   menu only passes. All 25 controls came out as expected (`every planted fault was caught`).
 2. **`/families/`** (`site/src/pages/families.astro`): a new block, "Pages of their own", links The Sneyds, Sergeant Sneyd, The Murdochs and The Women, which were
    reached only from the menu (docs/menu-a-reach.md, point 2). Atkinson is already on the index. Nothing is removed or reworded (declared in docs/menu-text-changes.json).
 3. **The Families dropdown** (`site/src/lib/site-menu.js`): the index (the heading), the own line (Sneyd), the other surname pages A to Z (Atkinson, Murdoch),
@@ -34,7 +34,7 @@ the one page change is the four links added to `/families/` that the order of wo
 - Reach: on the built `/families/`, **12 of 12** lineage pages are linked from the index body (outside the menu); the four added pages and Atkinson are on the index and still in the menu.
   The menu still links `/families/`.
 - Kit `compare` (docs/menu-d-compare.txt): **NOTHING LOST** over the 92 pages in scope (docs/menu-scope.json, unchanged).
-- `sitediff`: 1,301 pages before and after, none gone, none new; the only page whose main text differs is `/families/` (+6 words in one new block), declared.
+- `sitediff`: 1,301 pages before and after, none gone, none new; the only page whose main text differs is `/families/` (one new block; the kit reports -0 +6), declared.
 
 ## Build
 
