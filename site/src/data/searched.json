@@ -4722,6 +4722,33 @@
         "darcy",
         "archive-org"
       ]
+    },
+    {
+      "src": "TNA Discovery — WO 55/2281, Ordnance Office: index of correspondence and register of plans, with a list of military surveyors",
+      "url": "https://discovery.nationalarchives.gov.uk/",
+      "what": "A name search of the catalogue for «Constantine D'Arcy» and «Constantine Darcy», after the Royal Artillery's list named a Constantine D'Arcy: what other catalogue entries carry him",
+      "when": "12 Nov 2026",
+      "outcome": "yield",
+      "got": "**A second Ordnance catalogue entry for the surveyor, and a second D'Arcy beside him.** The catalogue description of WO 55/2281 (Kew; «Index of correspondence (1700-1819)…», with a list of military surveyors) includes **«Constantine D'Arcy. Appointed vice Strickland, p 48. (Marshall, p 38)»** and, a few names earlier, **«Charles D'Arcy. Promoted to Engineers [Royal Engineers ?], p 53.»** The square brackets and the question mark are the cataloguer's. As with WO 46/10, the description is a sample («names of military surveyors listed include»), and the page references are to the volume itself, which has not been seen. **What it adds:** the surveyor's appointment was to fill a vacancy (vice a man named Strickland), which the WO 46/10 line does not say, and the list does not date it. **A Charles D'Arcy is new to this archive**; the Connolly Roll the archive has used names no Charles, so he may be the cataloguer's slip for another D'Arcy, or a third man in the same small service, and nothing read says which. **Not claimed:** that either entry is the Constantine of the Royal Artillery list (no. 561, d. Grenada 1794). The same search also returned WO 46/10 again, and four entries that have nothing to do with the family (a Cornish lease, a Yorkshire writ, a quarter-sessions list, a collection of papers).",
+      "href": "/constantine",
+      "tags": [
+        "darcy",
+        "discovery"
+      ]
+    },
+    {
+      "src": "TNA Discovery — PROB 11, Prerogative Court of Canterbury wills, 1794–1800 — D'Arcy, D'Arcey, Darcy, Darcey",
+      "url": "https://discovery.nationalarchives.gov.uk/",
+      "what": "Whether the catalogue lists a will of a Constantine D'Arcy proved in the six years after the Royal Artillery list's death at Grenada on 18 March 1794",
+      "when": "12 Nov 2026",
+      "outcome": "null",
+      "got": "**No will of a Constantine D'Arcy, or of any D'Arcy of the Army or Ordnance, in PROB 11 for 1794–1800.** Typed against that series and those years: D'Arcy (two entries: Margaret D'Arcy, a widow of Spitalfields, 1795, and a will of Tolleshunt D'Arcy in Essex, 1800), D'Arcey (none), Darcy (seven, the place-names Tolleshunt Darcy and Offord Darcy, a Rector Thomas Darcy Nelson, a mariner, and a Michael Darcy of Southwark) and Darcey (two: a mariner, an able seaman of HMS Romulus). Every one is a different person or a place-name. **The control** is the same method on the same catalogue: «Will of Robert D'Arcy» returns Robert D'Arcy's own will of 1827 (PROB 11/1728/64), which the archive knows, so the catalogue does read these names. **What it does not show:** a man who died in Grenada may have left no London will or a will proved under another series, and the catalogue is a name index of what was proved, not of what was written. A nil about this series and these years, not about a will.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "discovery"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
