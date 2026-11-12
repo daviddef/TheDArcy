@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
 import Note from "../components/Note.astro";
+import ResearchList from "../components/ResearchList.astro";
+import { RESEARCH } from "../lib/research-menu.js";
 import Sources from "@daviddef/archive-kit/components/Sources.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
@@ -147,5 +149,11 @@ const reachable = src.recordSets.filter((r) => r.url).length;
         </tbody>
       </table>
     </Scroll>
+  </section>
+
+  <section class="blk" style="border-bottom:0">
+    <h2 id="deep-dives">Deep dives</h2>
+    <p class="small">Long studies, each of one set of papers, one inquest, one search or one way of reading. They sit under Research, in Sources &amp; method, at the addresses they always had.</p>
+    <ResearchList items={RESEARCH.find((g) => g.id === "sources-and-method").items.find((x) => x.sub).items} />
   </section>
 </Base>

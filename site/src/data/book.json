@@ -587,6 +587,21 @@
    "intro": "Every claim on this site carries its confidence. The sources are counted and sorted into records and other people's trees; every source read and found empty is published; and the indexes, the open questions, the errands, the corrections and the work list say what is not yet known. The investigations at the end read the archive against itself.",
    "chapters": [
     {
+     "path": "/research/",
+     "title": "Research",
+     "blurb": "How this archive works in the open: what is to do, what is new, and what it stands on."
+    },
+    {
+     "path": "/research/to-do/",
+     "title": "To do",
+     "blurb": "Open questions, errands and the work list."
+    },
+    {
+     "path": "/research/sources-and-method/",
+     "title": "Sources & method",
+     "blurb": "What this archive stands on, how it reads a record, and the long studies that sit beside them."
+    },
+    {
      "path": "/sources/",
      "title": "Sources",
      "blurb": "Every citation counted: which are records and which are other people's trees.",

@@ -1,0 +1,20 @@
+{
+ "/method/": "The archive's own method: how a claim is graded, what counts as a record and what as another person's tree, and how living people are handled.",
+ "/sources/": "The sources the archive stands on, counted, with which are records and which are other people's family trees. Now also lists the five deep dives.",
+ "/searched/": "The dated register of every source opened: the outcome (found, null, empty or blocked), what it gave, the control named on each null, and what was not claimed. The Atlas holds only a summary and a service link.",
+ "/open-questions/": "The open questions, with what would settle each.",
+ "/errands/": "The errands: what has been asked of other people, and the jobs that need someone standing in a place.",
+ "/worklist/": "The work list: every task, its state, its owner and since when.",
+ "/corrections/": "Every claim this archive published and took back, with its cause and its lesson.",
+ "/changes/": "The working log of the archive, day by day, newest first.",
+ "/whats-new/": "The pulse: what was read, found and corrected lately (stays in Start as well).",
+ "/gallery/": "Images and photographs held by the archive.",
+ "/documents/": "Documents reproduced whole.",
+ "/coverage/": "What each index the archive used actually holds, measured by a control test; the difference between a null result and an empty search. The Atlas holds its own coverage, not this measurement.",
+ "/papers/": "A worked example of reading evidence rather than skimming it. A deep dive.",
+ "/inquest-1902/": "A coronial file, read in full. A deep dive.",
+ "/finding-arthur/": "The search for one private soldier at Pozieres. A deep dive.",
+ "/behind-the-paywall/": "A marriage never found and four generations called untestable, one subscription away. A deep dive.",
+ "/crossread/": "Open questions answered from material the site had already published. A deep dive.",
+ "/spellings/": "The measured table of one name's spellings. The spellings themselves live in the Record Atlas catalogue (left as it is)."
+}

@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
+import AtlasNote from "../components/AtlasNote.astro";
 import { u } from "../lib/url.js";
 import d from "../data/indexes.json";
 const bad = d.rows.filter((r) => /nothing|fragment|only|unknown/.test(r.holds)).length;
@@ -11,7 +12,17 @@ const bad = d.rows.filter((r) => /nothing|fragment|only|unknown/.test(r.holds)).
   eyebrow={`${d.rows.length} holdings measured · ${d.checked}`}
   dek="Most of what this archive has failed to find, it failed to find in places that were never transcribed. This page is the measurement, kept separately because it is the difference between a null result and an empty search.">
 
-  <section class="blk">
+  <AtlasNote
+    only={[
+      ["The control test that told a null from an empty search", "#control-test", "and what each of the holdings measured here turned out to hold"],
+      ["The pattern across the failures", "#pattern", "why most of what this archive has not found sat in places never transcribed"],
+    ]}
+    atlas={[["How complete the Atlas is, measured", "https://recordatlas.org/coverage/"], ["The services and providers it knows", "https://recordatlas.org/providers/"]]}
+    atlasHead="The Atlas's own coverage"
+    para="The registers, places and services these indexes belong to are mapped on the"
+    tail="too. The page below is this archive's own measurement of what the indexes it used actually hold, in full." />
+
+  <section class="blk" id="control-test">
     <Note style="border-left-width:3px;margin-bottom:1.3rem">
       <strong>Read this first.</strong> {d.paywall}
       {" "}<a href={u("/berkeley-woman/")}>What it produced →</a>
@@ -43,7 +54,7 @@ const bad = d.rows.filter((r) => /nothing|fragment|only|unknown/.test(r.holds)).
   </Blk>
 
   <section class="blk" style="border-bottom:0">
-    <h2>The pattern, and why it matters more than any one entry</h2>
+    <h2 id="pattern">The pattern, and why it matters more than any one entry</h2>
     <p class="lede">{d.lesson}</p>
 
     <Note>

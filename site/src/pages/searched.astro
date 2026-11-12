@@ -4,6 +4,7 @@ import Searched from "@daviddef/archive-kit/components/Searched.astro";
 import fold from "../data/namefold.json";
 import Blk from "../components/Blk.astro";
 import Note from "../components/Note.astro";
+import AtlasNote from "../components/AtlasNote.astro";
 import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { md, mdp, plain } from "../lib/md.js";
@@ -18,6 +19,17 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
   title="What Has Been Read"
   eyebrow={`${d.rows.length} sources examined · ${yields.length} yields, ${nulls.length} nulls, ${empty.length} out of scope, ${blocked.length} blocked`}
   dek="Everything this archive has opened, whether or not it gave anything up — because a search that returns nothing is a result, and the next person should not have to run it again.">
+
+  <AtlasNote
+    only={[
+      ["The dated outcome of each search", "#every-source", "found, null, empty or blocked, and the finding itself"],
+      ["The control named on every null", "#every-source", "or the admission that there was none"],
+      ["What was not claimed", "#every-source", "the caveat written beside each finding"],
+    ]}
+    atlas={[["The services and providers it knows", "https://recordatlas.org/providers/"], ["What is new on the Atlas", "https://recordatlas.org/whats-new/"]]}
+    atlasHead="A summary and a link to the service"
+    para="Many of these searches are summarised on the"
+    tail="as a source mark, with a link to the service that was searched. The page below is this archive's own account of them, in full." />
 
   <section class="blk">
     <p class="lede" set:html={mdp(d.note)}></p>
@@ -49,7 +61,7 @@ const CHIP = { yield: ["doc", "found something"], null: ["lore", "found nothing"
   </section>
 
   <section class="blk">
-    <h2>Every source read, and what it gave up</h2>
+    <h2 id="every-source">Every source read, and what it gave up</h2>
     <p class="small">The four kinds above are the filter. <strong>A null is only as good as the test
     that could have disproved it</strong>, so where a control was run the row says so.</p>
     <Searched fold={fold.fold} u={u} nil={["null", "empty"]} unit="sources"
