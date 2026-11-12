@@ -24,6 +24,15 @@ import familyLines from "../data/family-lines.json";
 /* LINEAGE: true = listed, as before (the family-lines gate requires it); false would leave them to the /families/ index. */
 const LINEAGE = true;
 
+/* The surname pages after the own line, A to Z: accents folded, a leading particle or article ignored (von der Pfalz under P, von Degenfeld
+   under D), case-insensitive. Atkinson and Murdoch have pages of their own; the twelve lineage pages come from src/data/family-lines.json
+   (the family-lines gate requires them in the menu: see LINEAGE). */
+const sortKey = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/^(the|von der|von|van der|van|de)\s+/, "");
+const SURNAMES = [
+  ["/atkinson/", "Atkinson"], ["/murdoch/", "Murdoch"],
+  ...(LINEAGE ? familyLines.lines.map((l) => [`/families/${l.slug}/`, l.surname]) : []),
+].sort((a, b) => sortKey(a[1]).localeCompare(sortKey(b[1])));
+
 export const MENU = [
   ["Start", [
     ["/", "Home"], ["/story/", "The story"], ["/about/", "About"], ["/how-far-back/", "How Far Back"],
@@ -44,15 +53,16 @@ export const MENU = [
     ] },
   ]],
   ["Places & families", [
-    { head: "The families", items: [
-      ["/families/", "The Families"], ["/the-women/", "The Women"], ["/sneyd/", "Sneyd"], ["/sergeant-sneyd/", "Sergeant Sneyd"],
-      ["/murdoch/", "Murdoch"], ["/atkinson/", "Atkinson"],
-      /* the names the direct line carries that have no page of their own elsewhere (src/data/family-lines.json), in the order the
-         file ranks them; see LINEAGE */
-      ...(LINEAGE ? familyLines.lines.map((l) => [`/families/${l.slug}/`, l.surname]) : []),
+    /* The group heading is the link to the index (/families/, /places/): it used to repeat as the first item under a heading of the same
+       words ("The families" over "The Families", "Places" over "Places"). Order of "The families" (family-menu-rule.md, David, 12 Nov
+       2026): the index (the heading), the own line (Sneyd), the other surnames A to Z, then the pages that are not a surname. */
+    { head: "The families", href: "/families/", items: [
+      ["/sneyd/", "Sneyd"],
+      ...SURNAMES,
+      ["/the-women/", "The Women"], ["/sergeant-sneyd/", "Sergeant Sneyd"],
     ] },
-    { head: "Places", items: [
-      ["/places/", "Places"], ["/atlas/", "The Atlas"], ["/lines/", "The Lines"],
+    { head: "Places", href: "/places/", items: [
+      ["/atlas/", "The Atlas"], ["/lines/", "The Lines"],
     ] },
     { head: "Australia", items: [
       ["/emigrations/", "How They Got Here"], ["/general-hewitt/", "The General Hewitt, 1854"], ["/australia/", "Arrival, 1826"],
