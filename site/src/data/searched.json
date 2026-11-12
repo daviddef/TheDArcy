@@ -4804,6 +4804,25 @@
         "darcy",
         "gazette"
       ]
+    },
+    {
+      "src": "Internet Archive — John Kane, List of Officers of the Royal Regiment of Artillery, revised edition (Royal Artillery Institution, Woolwich, 1869), page [16], Nos 547–583 (1777–1779)",
+      "url": "https://archive.org/details/listofficersroy00kanegoog/page/n32/mode/1up",
+      "what": "Whether the 1869 edition of Kane's Royal Artillery list dates Constantine D'Arcy's first commission, which the 1900 scan's page does not show for him",
+      "when": "13 Nov 2026",
+      "outcome": "yield",
+      "got": "**The earlier edition of the Royal Artillery's officer list prints the date columns that the 1900 scan's page lacks for him, and gives his first commission as 1778.** On page [16], Nos 547–583 (1777–1779), the row **«Constantine D'Arcy»** (no. 561) reads: gunner or cadet «never»; Second Lieutenant **«19 Aug.»**; First Lieutenant **«12 July '80»**; a date of **«3 Nov.»** as Captain-Lieutenant; and the remark «d. in Grenada, 18 Mar. 1794» (read on the scan, enlarged). The year of the 19 August is a ditto mark, so it is read from the order of the column: the Second Lieutenant column last prints a year at William H. Horndon («11 Mar. '78»), the rows between him and D'Arcy (George Scott, Robert Lock, Deering Jones) are dittoed, and the next year printed is «22 Feb. '79» (Richard Dowse). That makes his Second Lieutenant's commission **19 August 1778**: a date read from the order of the page, not printed against his name. His First Lieutenant's date, 12 July 1780, agrees with the War Office list of 1783. **Not read:** the year of the Captain-Lieutenant's date (the last digit is blurred on the scan; it cannot be 1801 for a man who died in 1794, and 1791 would fit, but that is a guess and is not recorded). **Not claimed:** that he is the 1775 surveyor of WO 46/10 and WO 55/2281, whose appointment came three years before this commission and is joined to him by nothing read but a forename and the Ordnance, or that he is the tree's Constantine, or anyone's son. In the 1900 scan the date columns are blank for the first rows of that page, his among them, which is why no day was read there.",
+      "href": "/constantine",
+      "ev": [
+        [
+          "/constantine/",
+          "Constantine D'Arcy, Royal Artillery"
+        ]
+      ],
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",

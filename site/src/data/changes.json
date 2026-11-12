@@ -4,6 +4,23 @@
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
       {
+        "when": "13 November 2026",
+        "title": "Constantine D'Arcy's first commission: 19 August 1778, read from the order of Kane's 1869 list",
+        "found": [
+          [
+            "Found",
+            "the 1869 edition of Kane's List of Officers of the Royal Regiment of Artillery (Internet Archive; page [16], Nos 547–583, 1777–1779) prints the date columns for «Constantine D'Arcy» that the 1900 scan's page lacks: Second Lieutenant «19 Aug.», First Lieutenant «12 July '80» (the same day the 1783 Army List gives, read from the order of that list) and the remark «d. in Grenada, 18 Mar. 1794». The year of the 19 August is a ditto mark: by the order of the column (the last year printed above is '78 and the next printed is '79) it is 1778, so his first commission is 19 August 1778, read from the order and not printed against his name. The year of his Captain-Lieutenant's date is blurred on the scan and is not read"
+          ],
+          [
+            "Checked",
+            "the 1900 edition's page for the same row: its date columns are blank for him, so the 1869 edition is the source for the dates"
+          ]
+        ],
+        "did": [
+          "WHAT THIS DOES. It dates the Royal Artillery Constantine's first commission (a Second Lieutenant, 19 August 1778) where the archive had only Kane's group of 1777–1779, and it agrees with the 12 July 1780 of the 1783 list. It does not join him to the 1775 surveyor of WO 46/10 (three years earlier; nothing read links them but a forename and the Ordnance), to the tree's Constantine, or to anyone's parents: those stay leads. PAGES CHANGED TODAY. /constantine and worklist row 156 carry the reading; /searched/ has the row. What is left is the War Office commission books, the Kew volumes behind WO 55/2281 and WO 46/10, and Grenada's own registers."
+        ]
+      },
+      {
         "when": "12 November 2026",
         "title": "The Royal Artillery's lists read for Constant D'Arcey: he is a Constantine, and he died at Grenada in 1794",
         "found": [
