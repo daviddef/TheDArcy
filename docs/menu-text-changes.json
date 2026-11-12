@@ -4,24 +4,17 @@
  "snapshot_pages": {},
  "site_changes": [
   {
-   "page": "/part/how-we-know/",
-   "why": "the book's part page lists the three new Research chapters ahead of Sources, so its chapter numbers shift by three and its 'start reading' link now reads 'research' (it opens the Research hub); every old entry is still listed, with the same title and text"
+   "page": "/research/",
+   "why": "the Research hub lists the deep dives: one more, The DNA (it left the Start menu and is a deep dive under Sources)"
   },
   {
-   "page": "/contents/",
-   "why": "the contents lists three new Research chapters (Research, To do, Sources & method) ahead of Sources, so the chapter numbers viii.1 onward are each one entry higher by three; every old entry is still listed, with the same title and text"
+   "page": "/research/sources-and-method/",
+   "why": "the same: The DNA is a deep dive on the Sources & method page"
   },
   {
    "page": "/sources/",
-   "why": "added at the end: the Deep dives list (the five studies that were Investigations); nothing removed"
-  },
-  {
-   "page": "/searched/",
-   "why": "added at the top: the short Atlas note (what only this archive holds / the Atlas); an id on one heading; nothing removed"
-  },
-  {
-   "page": "/coverage/",
-   "why": "added at the top: the short Atlas note; two ids; nothing removed"
+   "why": "its Deep dives list gains The DNA at the end; nothing is removed"
   }
- ]
+ ],
+ "note": "Menu regroup, PR A (12 November 2026). Declarations for the build of this branch against the build of origin/main at fe1aabd. The only main-text changes are the three pages that list the Research deep dives: one more entry, The DNA, which left the Start menu. No block of text is reworded."
 }
