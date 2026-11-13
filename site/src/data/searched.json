@@ -4837,6 +4837,25 @@
         "darcy",
         "tna"
       ]
+    },
+    {
+      "src": "Internet Archive — A List of the General and Field Officers, 1778 (J. Millan), the Royal Regiment of Artillery's Second Lieutenants, p. 204; set beside Kane and Askwith's list (1900), the 1777–1779 group",
+      "url": "https://archive.org/details/listofgeneralfie00grea",
+      "what": "Whether the printed Army List of 1778 already carries Constantine D'Arcy among the Royal Artillery's Second Lieutenants, to bracket the date of his first commission without relying on the ditto mark",
+      "when": "13 Nov 2026",
+      "outcome": "yield",
+      "got": "**The 1778 list does not carry him, and where it stops is a fixed point.** Its Second Lieutenants of the Royal Regiment of Artillery (p. 204) run in date order to **Charles Wellard and John Burton, 19 September 1777**, and no further. In Askwith's order (1900) Charles Wellard is followed by William Hood, George Scott, Robert Lock, Deering Jones and then **Constantine D'Arcy**: none of those five is in the 1778 list (read from the Internet Archive text layer; the names are checked against the order, not against the page image). So on the printed lists alone his first commission is **after 19 September 1777** and after the 1778 list closed; that agrees with, but does not prove, the **19 August 1778** read from the ditto column of Kane's 1869 page. **Not claimed:** the day or the year of his commission from this list; that he is the 1775 surveyor, the tree's Constantine, or anyone's son. The same list prints **Robert D'Arcy** among the Practitioner Engineers and Second Lieutenants of the Corps of Engineers (p. 207), already recorded on his own pages.",
+      "href": "/constantine",
+      "ev": [
+        [
+          "/constantine/",
+          "Constantine D'Arcy, Royal Artillery"
+        ]
+      ],
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
