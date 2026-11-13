@@ -4856,6 +4856,20 @@
         "darcy",
         "archive-org"
       ]
+    },
+    {
+      "src": "Internet Archive — Connolly and Edwards, Roll of Officers of the Corps of Royal Engineers (1898), its alphabetical list and index; Kane and Askwith, List of Officers of the Royal Regiment of Artillery (1900); the Army List of 1778",
+      "url": "https://archive.org/details/roll-of-officers-of-the-corps-of-royal-engineers-r.-f.-edwards",
+      "what": "Whether a Charles D'Arcy, «promoted to Engineers» in the Ordnance's surveyors' book (WO 55/2281 p 53), is an officer of the Royal Engineers, the Royal Artillery or the 1778 Army List",
+      "when": "13 Nov 2026",
+      "outcome": "null",
+      "got": "**No Charles D'Arcy.** The Roll's index and alphabetical list carry two D'Arcys: Robert (203, C.B.) and Constantine (335, commissioned 1804, died at Chatham 6 May 1805); the 1900 Royal Artillery list and the 1778 Army List carry none under that forename (the 1778 list's D'Arcys are Robert, among the Practitioner Engineers, and a Francis elsewhere in the list, not under Artillery or Engineers). Typed in the text layer: D'Arcy, D'Arcey, Darcy, Darcey (the Atlas catalogue's forms for the name), with the OCR slips d.arc/d^arc allowed for. **The control** is the same search finding Robert (203) and Constantine (335) in the Roll and Constantine in the artillery list. **What it does not show:** the Roll lists commissioned officers from 1660 and the Ordnance's «Engineers» of 1775 may mean a rank or employment it does not carry (a practitioner or a civil post), and the catalogue's «Charles» may be a slip for Constantine; this is a nil about three printed lists, not about the man or about the Ordnance's books.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "archive-org"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
