@@ -4823,6 +4823,20 @@
         "darcy",
         "archive-org"
       ]
+    },
+    {
+      "src": "The National Archives, Discovery — catalogue search, 1770 to 1800: Constantine and Constant with D'Arcy, Darcy, D'Arcey, Darcey; then D'Arcy with Grenada and with Royal Artillery, 1775 to 1830",
+      "url": "https://discovery.nationalarchives.gov.uk/",
+      "what": "Whether the National Archives' catalogue describes any other record of a Constantine or Constant D'Arcy of the Royal Artillery (commission books, Ordnance papers, Grenada) beyond WO 46/10 and WO 55/2281",
+      "when": "13 Nov 2026",
+      "outcome": "null",
+      "got": "**No new record.** Constantine and Constant each typed with D'Arcy, Darcy, D'Arcey and Darcey, dated 1770 to 1800: the only hits are WO 46/10 and WO 55/2281 (Constantine D'Arcy, Darcy), both already held; the D'Arcey and Constant forms return nothing. D'Arcy with Grenada, 1775 to 1830, returns one Admiralty chart (ADM 352/757); D'Arcy or Darcy with Royal Artillery returns three records that are not about him (two Chatham plans and an India Office letter). **The control** is the same search returning the two known Ordnance records, so it reads the catalogue's descriptions. **What it does not show:** Discovery searches the catalogue's descriptions, not the documents, and the War Office commission registers and the Ordnance Office's own books are described by series and volume, not by name, so a commission can sit in a volume this search cannot see into. A nil about the catalogue's wording, not about his commission or his death.",
+      "href": "/constantine",
+      "ctl": "named",
+      "tags": [
+        "darcy",
+        "tna"
+      ]
     }
   ],
   "ctlNote": "**Every null on this page should name a control — a test that could have failed and did not.** 94 do. **8 do not**, and are marked rather than quietly left to look better-evidenced than they are. An unstated control does not make a row wrong; it makes it **untested**.\n\nThe field is set by the author, not guessed from the prose. It was bootstrapped by pattern on 15 September and that pattern under-read badly — it demanded a digit, so it missed «returns TWO entries», «transcribed in full — 7,967 records» and «loose enough to return SCHONSWAR and SMOOKER». All thirty-nine it had marked unstated were then read one by one, and thirty-one of them turned out to state a control in words.",
