@@ -13,6 +13,18 @@ FamilySearch waypoint, not just the film number; the skill explains why.
 Surname spellings come only from the Record Atlas catalogue: terms before searching, cover before any nil, add for every new spelling, publish once at the end. Keep no variants list here. For this family's own name:
 `python3 "../Record Atlas/scripts/surname_variants.py" terms D'Arcy`.
 
+## Writing a found row in searched.json (from 13 and 15 November 2026)
+
+Every row that reads as found (`yield`/`hit`/`found`) carries, for `check:row-pages` (config: `docs/row-pages.json`):
+
+- **The pages it updated** (from 13 Nov): `"ev": [["/page/", "label"]]`, or `"logOnly": true`.
+- **Who it is for** (from 15 Nov, `peopleFrom`): EITHER `"for": [["/person/slug/", "Name"], ...]` (each path a BUILT page of this archive that is that
+  person's own page, the name that page uses, a page once per row, only people the finding is really about) OR `"nobody": true` (the pages were read and no
+  new person came out; the reason can go in `what`). Never both. Only people this archive already publishes can be listed, so a living person is never
+  added, and no page or name is created to satisfy the gate.
+- Old rows are not backfilled and no existing row is edited (editing a row changes its Atlas key). Nothing about the people goes to the Atlas: receipts hold
+  only the row key.
+
 ## The linking standard (18 October 2026)
 
 The twelve research narratives (`site/standard.json` lists them) are held to the kit's linking standard
