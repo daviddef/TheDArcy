@@ -254,6 +254,7 @@ def undrawn_cards(rows, living, t, key_i, fam_of, prim):
       - a person with NO DEATH recorded whose birth, recorded OR estimated from kin, is 1900 or later (this archive's floor, the same as drop_possibly_living), and every LIVING
         person the page names: a living-style card, `living: true`, NAME AND FAMILY LINKS ONLY (no sex, no date, no place, no page link, no cx). Their names are already public on their
         pages; this adds nothing about them. A living person the pages do not name (no name, or the dash) stays unnamed here too.
+    Each card also carries `name` and `why` ('year', 'place' or 'other'), which the page's own "Not drawn yet" list reads.
     Links follow the register's own, only to people who are themselves in tree.json, and drawn people's own lists are left exactly as they were."""
     sid = lambda i: i.strip("@")
     drawn = {p["id"] for p in t["people"]}
@@ -308,7 +309,7 @@ def undrawn_cards(rows, living, t, key_i, fam_of, prim):
         for x in free:
             if not f and x != m: f = x
             elif not m and x != f: m = x
-        return {"id": me, "sex": "u", "given": given, "sur": sur, "line": line, "father": f, "mother": m, "spouse": sorted(sp.get(me, ())), "kids": sorted(kids.get(me, ()))}
+        return {"id": me, "name": name, "why": "other", "sex": "u", "given": given, "sur": sur, "line": line, "father": f, "mother": m, "spouse": sorted(sp.get(me, ())), "kids": sorted(kids.get(me, ()))}
     for r in sorted(cand, key=lambda q: q["id"]):
         me = sid(r["id"])
         nodeath = not (r["died"] or r["diedPlace"] or r["burial"] or r["cause"])
@@ -323,6 +324,7 @@ def undrawn_cards(rows, living, t, key_i, fam_of, prim):
             c["unplaced"] = True
             if yr(r["born"]): c["by"] = yr(r["born"]); c["bye"] = circa(r["born"])
             if yr(r["died"]): c["dy"] = yr(r["died"]); c["dye"] = circa(r["died"])
+            c["why"] = "place" if (yr(r["born"]) or yr(r["died"])) else "year"      # the page's own "Not drawn yet" list says which: no year, or a year but no place
             c["slug"] = r["slug"]; c["page"] = "/people/%s/" % r["slug"]
             if int(r.get("cx") or 0) >= 1: c["cx"] = int(r["cx"])
             kinds["dead, unplaced" + (" (a declared copy)" if me in copyof else "")] += 1
