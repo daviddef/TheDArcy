@@ -5,7 +5,8 @@
    parent page so the frame is exactly as tall as its content. The panel's content is the viewer's own, so the two never disagree. */
 import page from "../../../../data/tree-page/roots.html?raw";
 
-const EMBED = `<script>
+const EMBED = `<meta name="robots" content="noindex">
+<script>
 (function(){
   var h=location.hash, emb=/[#&]embed=1/.test(h), prof=/^#profile\\b/.test(h);
   if(!emb)return;
