@@ -41,6 +41,9 @@ for (const p of people) {
     burial: p.burial || "", cause: p.cause || "", occupation: p.occupation || "",
     parents: (p.parents || []).map((x) => x.id), spouses: (p.spouses || []).map((s) => ({ id: s.id, children: s.children || [] })),
     copyOf: COPY.get(p.id) || null,
+    /* cx: how many corrections the person page lists for them, a COUNT only (never what a correction says). The page prints one line per entry of
+       CORRECTIONS[slug] and none for a living person, and a living person is not exported at all, so this is the same number the page shows. */
+    cx: Object.keys(c).length,
   };
   if (c.born) { row.born = yr(c.born[0]); correctedYears++; }
   if (c.died) { row.died = yr(c.died[0]); correctedYears++; }

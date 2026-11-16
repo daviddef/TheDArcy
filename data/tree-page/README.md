@@ -6,7 +6,7 @@ bare at `/roots/view.html` for the frames of the kit's `PersonRootsViews` (drawn
 
 | File | What it is | Edit by hand? |
 |---|---|---|
-| `tree.json` | people, parent links, years, places; `bd`/`dd` full dates (see below) | no, generated |
+| `tree.json` | people, parent links, years, places; `bd`/`dd` full dates and `cx` corrections count (see below) | no, generated |
 | `place_map.json` | each place string with coordinates, country and Record Atlas id | no, generated (see below) |
 | `place-additions.json` | region-level place strings decided by hand, each with its reason | yes, with a reason |
 | `atlas-data.json` | the Record Atlas slice: outlines, regimes, flags, events, collections | no, generated |
@@ -22,6 +22,13 @@ in this archive's GEDCOM form **`4 APR 1460`** or **`17 AUG 1927`** (day not pad
 `corrections.js` has overturned (exported as a bare year) get no field; `by` / `dy` and the `bye` / `dye` flags carry those. Only people the page draws, so never a living
 person (everyone `people.js` marks living is left out before the export, and `drop_possibly_living` drops the rest). Made by `FULLDATE` and two lines in the per-person
 loop of `tools/build-tree-page.py`. At the first build: 315 people have `bd`, 324 have `dd`.
+
+## Corrections count (`cx`), for the Atlas Tree Canvas (16 November 2026)
+
+`tree.json` carries, per person and only where there is one, `cx`: an integer of 1 or more, **how many corrections this archive records about that person**. It is the number
+of lines the person page prints under "Corrected against the family tree", which is one per entry of `site/src/lib/corrections.js` for the slug (`tools/export_tree_people.mjs`
+counts them; a living person is never exported, and the page prints none for one). A count only, never what a correction says; omitted when 0; derived at every build, never typed.
+The canvas shows a pencil and the count and links to `/corrections/`. At the first build: 13 people have `cx`, 22 corrections in all.
 
 ## Rebuild
 

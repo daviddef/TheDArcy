@@ -229,6 +229,10 @@ def build(a):
         src = src_of.get(p["id"], {})
         if FULLDATE.match(str(src.get("born") or "")): p["bd"] = src["born"]
         if FULLDATE.match(str(src.get("died") or "")): p["dd"] = src["died"]
+        # CORRECTIONS COUNT (cx, optional): how many corrections this archive records about the person, the number the person page lists under "Corrected against the family
+        # tree" (one per entry of lib/corrections.js for the slug; the export counts them, a living person is never exported). A count only; omitted when 0. Added 16 Nov 2026
+        # for the Atlas Tree Canvas, which shows a pencil and the count and links to /corrections/.
+        if int(src.get("cx") or 0) >= 1: p["cx"] = int(src["cx"])
     t["lines"] = [{"sur": f["surname"], "host": HOST} for f in top] + [{"sur": "Other", "host": HOST}]
     t["meta"].update({"rowLabel": "Family line", "lineLabel": "Family line"})
     mark_relative_places(t, people)
