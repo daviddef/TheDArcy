@@ -107,6 +107,8 @@ const thisArchive =
         </details>
       ))}
       <PulseRibbon pulse={pulse} />
+      {/* 16 Nov 2026, the estate's one Tree Canvas icon (orange round button, white three-box tree), the same in every archive: it opens this archive's own tree on the Record Atlas canvas. Last in the header's icon group. */}
+      <a class="tcbtn" href="https://recordatlas.org/tree-canvas/?archive=darcy" aria-label="Tree Canvas" title="Tree Canvas: draw this archive's tree on one canvas (Record Atlas)"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="4" width="7" height="5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="15" width="7" height="5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="4" width="7" height="5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 6.5h4M6.5 9v8.5H14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </nav>
   </div>
   <div class="drawer" id="drawer" hidden>
@@ -125,6 +127,7 @@ const thisArchive =
     ))}
       {/* the header's Search pill is hidden with the nav on a narrow screen; without this a phone or a tablet has no way to /search/ */}
       <div class="dgrp"><a href={u("/search/")} class={on("/search/") ? "on" : ""} data-search-open>Search the archive</a></div>
+      <div class="dgrp"><a href="https://recordatlas.org/tree-canvas/?archive=darcy">Tree Canvas</a></div>
     </div>
   </div>
 </header>
