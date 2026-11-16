@@ -238,11 +238,99 @@ def build(a):
     mark_relative_places(t, people)
     drop_conflicts(t, tree)
     drop_possibly_living(t, tree)
+    t["undrawn"], und = undrawn_cards(rows, exp.get("living") or [], t, key_i, fam_of, prim)
     rep_path = os.path.splitext(tree)[0] + ".report.json"; rep = jl(rep_path)
+    rep["undrawn"] = und
     rep["declared_copies_folded_into_primary"] = len(copies)
-    rep["export"] = {k: v for k, v in exp.items() if k != "people"}; rep["not_living_exported"] = len(rows)
+    rep["export"] = {k: v for k, v in exp.items() if k not in ("people", "living")}; rep["not_living_exported"] = len(rows)
     io.open(rep_path, "w", encoding="utf-8").write(json.dumps(rep, indent=1, ensure_ascii=False))
     io.open(tree, "w", encoding="utf-8").write(json.dumps(t, ensure_ascii=False, separators=(",", ":")))
+
+def undrawn_cards(rows, living, t, key_i, fam_of, prim):
+    """EVERYONE THE ARCHIVE PUBLISHES IS ON THE CANVAS (David, 17 November 2026, "if it's in the archive it must be shown"). The ten views draw only the dead people who can be
+    placed and dated; everyone else who has a page of their own goes into tree.json's `undrawn`, which the page's views ignore and the Record Atlas Tree Canvas draws as an unplaced card.
+      - a DEAD person the maps skip (undated, unplaced, a declared copy, one of the conflicts): an unplaced card with what their page prints: given, sur, `by`/`dy` where a year is
+        recorded, parent / spouse / child links, the page, cx. A declared copy has NO links (its relations go to its primary, who is drawn once).
+      - a person with NO DEATH recorded whose birth, recorded OR estimated from kin, is 1900 or later (this archive's floor, the same as drop_possibly_living), and every LIVING
+        person the page names: a living-style card, `living: true`, NAME AND FAMILY LINKS ONLY (no sex, no date, no place, no page link, no cx). Their names are already public on their
+        pages; this adds nothing about them. A living person the pages do not name (no name, or the dash) stays unnamed here too.
+    Links follow the register's own, only to people who are themselves in tree.json, and drawn people's own lists are left exactly as they were."""
+    sid = lambda i: i.strip("@")
+    drawn = {p["id"] for p in t["people"]}
+    byrow = {r["id"]: r for r in rows}
+    yr = lambda v: (lambda m: int(m.group(0)) if m else None)(re.search(r"\d{4}", str(v or "")))
+    circa = lambda v: bool(re.search(r"\b(ABT|EST|CAL|BET|BEF|AFT|FROM|TO)\b|\bc\.?\s*\d|\d\s*c\b|about", str(v or ""), re.I))
+    def est_birth(r):
+        b = yr(r["born"])
+        if b: return b
+        ys = []
+        for pid in r["parents"]:
+            q = byrow.get(pid)
+            if q and yr(q["born"]): ys.append(yr(q["born"]) + 28)
+        for sp in r["spouses"]:
+            q = byrow.get(sp["id"])
+            if q and yr(q["born"]): ys.append(yr(q["born"]))
+            for c in sp["children"]:
+                q = byrow.get(c)
+                if q and yr(q["born"]): ys.append(yr(q["born"]) - 28)
+        return round(sum(ys) / len(ys)) if ys else None
+    cand = [r for r in rows if sid(r["id"]) not in drawn]
+    liv = [l for l in living if l.get("name")]
+    ids = drawn | {sid(r["id"]) for r in cand} | {sid(l["id"]) for l in liv}
+    copyof = {sid(r["id"]) for r in rows if r["copyOf"]}
+    par, kids, sp = collections.defaultdict(list), collections.defaultdict(set), collections.defaultdict(set)
+    def link(parent, child):
+        parent, child = sid(prim(parent)), sid(prim(child))
+        if parent == child or parent not in ids or child not in ids: return
+        kids[parent].add(child)
+        if parent not in par[child]: par[child].append(parent)
+    for r in list(rows) + list(liv):
+        me = sid(r["id"])
+        if me in copyof: continue                         # a declared copy's relations belong to its primary
+        for pid in r["parents"]: link(pid, r["id"])
+        for x in r["spouses"]:
+            o = sid(prim(x["id"]))
+            if o != me and o in ids: sp[me].add(o); sp[o].add(me)
+            for c in x["children"]: link(r["id"], c)
+    sexof = {sid(r["id"]): r["sex"] for r in rows}
+    out, kinds = [], collections.Counter()
+    def card(me, name, surname, line):
+        given, sur = name, surname
+        if sur and given.endswith(sur): given = given[:-len(sur)].strip()
+        elif sur: given, sur = name, ""
+        f = m = None
+        free = []
+        for x in par.get(me, []):
+            sx = (sexof.get(x) or "").upper()
+            if sx == "M" and not f: f = x
+            elif sx == "F" and not m: m = x
+            else: free.append(x)
+        for x in free:
+            if not f and x != m: f = x
+            elif not m and x != f: m = x
+        return {"id": me, "sex": "u", "given": given, "sur": sur, "line": line, "father": f, "mother": m, "spouse": sorted(sp.get(me, ())), "kids": sorted(kids.get(me, ()))}
+    for r in sorted(cand, key=lambda q: q["id"]):
+        me = sid(r["id"])
+        nodeath = not (r["died"] or r["diedPlace"] or r["burial"] or r["cause"])
+        b = est_birth(r)
+        line = key_i.get(fam_of.get(me), 7)
+        c = card(me, r["name"], r["surname"], line)
+        if nodeath and b is not None and b >= 1900:
+            c["living"] = True; kinds["living-style (no death recorded, born 1900 or later)"] += 1
+        else:
+            sx = (r["sex"] or "").upper()
+            c["sex"] = "m" if sx == "M" else "f" if sx == "F" else "u"
+            c["unplaced"] = True
+            if yr(r["born"]): c["by"] = yr(r["born"]); c["bye"] = circa(r["born"])
+            if yr(r["died"]): c["dy"] = yr(r["died"]); c["dye"] = circa(r["died"])
+            c["slug"] = r["slug"]; c["page"] = "/people/%s/" % r["slug"]
+            if int(r.get("cx") or 0) >= 1: c["cx"] = int(r["cx"])
+            kinds["dead, unplaced" + (" (a declared copy)" if me in copyof else "")] += 1
+        out.append(c)
+    for l in sorted(liv, key=lambda q: q["id"]):
+        c = card(sid(l["id"]), l["name"], l["surname"], 7)
+        c["living"] = True; out.append(c); kinds["living (named on their bare page)"] += 1
+    return out, dict(kinds, total=len(out))
 
 def mark_relative_places(t, people):
     """The converter puts a person whose own birth place it cannot resolve (none recorded, or a string the place map does not place) at a relative's birth place, and

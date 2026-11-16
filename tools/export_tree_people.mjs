@@ -4,7 +4,7 @@
  *
  *     node --import ./tools/jsonhooks.mjs tools/export_tree_people.mjs <out.json>
  *
- * Called by tools/build-tree-page.py. Nobody living is exported (people.js marks them; a living person is a name, a relationship and a town here, and
+ * Called by tools/build-tree-page.py. No living person is in `people` (people.js marks them; a living person is a name, a relationship and a town here, and
  * never a date), and the exported file is an intermediate that is not committed.
  *
  * CORRECTIONS. Where the archive has overturned the tree's birth or death (CORRECTIONS[slug].born / .died), the year the page prints is the corrected one
@@ -52,5 +52,12 @@ for (const p of people) {
   if (c.burial) row.burial = "";   // a corrected burial is prose about where the ground is not established; the burial place is not used as a place anyway
   rows.push(row);
 }
-writeFileSync(out, JSON.stringify({ people: rows, corrected_years: correctedYears, corrected_places: correctedPlaces, withdrawn_places: withdrawnPlaces }));
+/* THE LIVING, for the Tree Canvas's name-and-family-only cards (17 Nov 2026): a name the pages already print (never «\u2014»), the surname, and the family links the
+   living page already prints. NO date, place, record or photograph is read here, and the rows go to the intermediate only: the builder writes them to tree.json as
+   `living: true` cards with a name and links, and never to a report. */
+const living = people.filter((p) => p.living && p.name && p.name !== "\u2014").map((p) => ({
+  id: p.id, slug: p.slug, name: p.name, surname: p.surname || "",
+  parents: (p.parents || []).map((x) => x.id), spouses: (p.spouses || []).map((s) => ({ id: s.id, children: s.children || [] })),
+}));
+writeFileSync(out, JSON.stringify({ people: rows, living, corrected_years: correctedYears, corrected_places: correctedPlaces, withdrawn_places: withdrawnPlaces }));
 console.log(`export_tree_people: ${rows.length} people who are not living; corrections applied: ${correctedYears} years, ${correctedPlaces} places, ${withdrawnPlaces} places withdrawn`);

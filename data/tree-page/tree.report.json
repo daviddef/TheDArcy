@@ -80,6 +80,13 @@
  "possibly_living_omitted": {
   "count": 19
  },
+ "undrawn": {
+  "living-style (no death recorded, born 1900 or later)": 36,
+  "dead, unplaced": 35,
+  "dead, unplaced (a declared copy)": 8,
+  "living (named on their bare page)": 39,
+  "total": 118
+ },
  "declared_copies_folded_into_primary": 8,
  "export": {
   "corrected_years": 11,

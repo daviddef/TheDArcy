@@ -6,7 +6,7 @@ bare at `/roots/view.html` for the frames of the kit's `PersonRootsViews` (drawn
 
 | File | What it is | Edit by hand? |
 |---|---|---|
-| `tree.json` | people, parent links, years, places; `bd`/`dd` full dates and `cx` corrections count (see below) | no, generated |
+| `tree.json` | people, parent links, years, places; `bd`/`dd` full dates and `cx` corrections count; `undrawn` cards (see below) | no, generated |
 | `place_map.json` | each place string with coordinates, country and Record Atlas id | no, generated (see below) |
 | `place-additions.json` | region-level place strings decided by hand, each with its reason | yes, with a reason |
 | `atlas-data.json` | the Record Atlas slice: outlines, regimes, flags, events, collections | no, generated |
@@ -29,6 +29,21 @@ loop of `tools/build-tree-page.py`. At the first build: 315 people have `bd`, 32
 of lines the person page prints under "Corrected against the family tree", which is one per entry of `site/src/lib/corrections.js` for the slug (`tools/export_tree_people.mjs`
 counts them; a living person is never exported, and the page prints none for one). A count only, never what a correction says; omitted when 0; derived at every build, never typed.
 The canvas shows a pencil and the count and links to `/corrections/`. At the first build: 13 people have `cx`, 22 corrections in all.
+
+## Everyone published is on the canvas: `undrawn` (17 November 2026)
+
+David, 17 November 2026: "if it's in the archive it must be shown in the canvas". The ten views draw only the dead who can be placed and dated (726); the other 118
+people the archive publishes are in `tree.json`'s `undrawn`, which the page's views ignore and the Atlas Tree Canvas draws as unplaced cards (726 + 118 = the 844 people with a page).
+Made by `undrawn_cards()` in `tools/build-tree-page.py`; links follow the register's own and only to people who are in `tree.json`; the drawn people's own lists are untouched.
+
+- **43 dead cards** (`unplaced: true`): undated, unplaced, the 4 conflicts, and 8 declared copies (a copy has no links: its relations go to its primary). Given, sur, `by` / `dy`
+  where a year is recorded, parents / spouse / children, `page`, `cx`.
+- **36 possibly-living cards**: no death recorded and a birth (recorded or estimated from kin) of 1900 or later, the same floor as `drop_possibly_living`.
+- **39 living cards**: every living person the pages name.
+- **The 75 living-style cards** are `living: true` with a name and family links ONLY: no sex (`u`), no date, no place, no page link, no `cx`. The names are the ones their pages already print.
+  A living person whose name the pages withhold (no name, or the dash) is not in `tree.json`. The living rows come from `export_tree_people.mjs` into the intermediate `people.export.json`
+  (never committed) and are never written to `tree.report.json`.
+- **Placeholders**: 3 names in the archive read as stand-ins ("Unknown", "UNKNOWN Falco", "'Aelar' Unknown Georgian Lady"); all 3 are drawn people and none is undrawn. Nothing is flagged.
 
 ## Rebuild
 
