@@ -30,6 +30,7 @@ OUT = os.path.join(ROOT, "data", "tree-page")
 TP = os.path.join(ROOT, "tools", "tree-page")
 EXT = os.path.join(TP, "painted-lines.ext.html")
 HOST = "darcy.defranceski.com"
+FULLDATE = re.compile(r"^\d{1,2} (?:JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC) \d{4}$")   # 4 APR 1460 | 17 AUG 1927 : this archive's GEDCOM form, a day present, no ABT/BET/BEF/AFT/EST/TO
 FOCUS_SLUG = "kenneth-lindsay-d-arcy"    # where the page opens: the man the archive's eulogy is for. Left to itself the converter opens on the best-connected person, who is a man of the Hornby descent this archive does not accept
 ATLAS_CANDIDATES = [os.environ.get("RECORD_ATLAS", ""), os.path.expanduser("~/Projects/Family Projects/Record Atlas"),
                     os.path.join(os.path.dirname(ROOT), "Record Atlas")]
@@ -215,11 +216,19 @@ def build(a):
     describe_atlas_accepted(atlas)
     t = jl(tree)
     fam_of = {p["id"].strip("@"): p.get("family") for p in people}
+    src_of = {p["id"].strip("@"): p for p in people}
     key_i = {f["surname"]: i for i, f in enumerate(top)}
     for p in t["people"]:
         p["line"] = key_i.get(fam_of.get(p["id"]), 7)
         p["page"] = "/people/%s/" % slugs[p["id"]] if p["id"] in slugs else None
         if p["page"] is None: p.pop("page")
+        # FULL DATES (bd, dd), for DEAD people only: `people` holds only the dead the pages draw (export_tree_people.mjs leaves out everyone people.js marks living, and the
+        # converter's floor and drop_possibly_living() leave out the rest), so a living person never gets one. The string is people.js's own `born` / `died`, byte for byte,
+        # which the person page prints as "4 April 1460" (people.js keeps the GEDCOM form "4 APR 1460"; kept as stored, not reformatted). A year alone, a year-month, an approximate date ("1875c", "c.1812") or a year the archive's corrections.js has overturned
+        # (exported as a bare year) is NOT a full date and gets no field: `by` / `dy` and the `bye` / `dye` flags already carry those. Added 16 Nov 2026 for the Atlas Tree Canvas.
+        src = src_of.get(p["id"], {})
+        if FULLDATE.match(str(src.get("born") or "")): p["bd"] = src["born"]
+        if FULLDATE.match(str(src.get("died") or "")): p["dd"] = src["died"]
     t["lines"] = [{"sur": f["surname"], "host": HOST} for f in top] + [{"sur": "Other", "host": HOST}]
     t["meta"].update({"rowLabel": "Family line", "lineLabel": "Family line"})
     mark_relative_places(t, people)

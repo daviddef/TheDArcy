@@ -6,13 +6,22 @@ bare at `/roots/view.html` for the frames of the kit's `PersonRootsViews` (drawn
 
 | File | What it is | Edit by hand? |
 |---|---|---|
-| `tree.json` | people, parent links, years, places | no, generated |
+| `tree.json` | people, parent links, years, places; `bd`/`dd` full dates (see below) | no, generated |
 | `place_map.json` | each place string with coordinates, country and Record Atlas id | no, generated (see below) |
 | `place-additions.json` | region-level place strings decided by hand, each with its reason | yes, with a reason |
 | `atlas-data.json` | the Record Atlas slice: outlines, regimes, flags, events, collections | no, generated |
 | `roots.html`, `roots.embed.html` | the page, whole and as a fragment for the site layout | no, generated |
 | `tree.report.json` | counts, the four lives that are not one life, how many were left out as possibly living | read it |
 | `people.export.json`, `people.ged`, `slugs.json` | intermediates, not committed | no |
+
+## Full dates (`bd`, `dd`), for the Atlas Tree Canvas (16 November 2026)
+
+`tree.json` carries, per person and only where a day is known, `bd` (full birth date) and `dd` (full death date): `people.js`'s own `born` / `died` string, byte for byte,
+in this archive's GEDCOM form **`4 APR 1460`** or **`17 AUG 1927`** (day not padded, upper-case English month abbreviation); the person page prints the same date as
+"4 April 1460". Not reformatted. A year alone, a month and year, an approximate or ranged date (`ABT`, `BET`, `BEF`, `AFT`, `EST`, `TO`) and a year the archive's
+`corrections.js` has overturned (exported as a bare year) get no field; `by` / `dy` and the `bye` / `dye` flags carry those. Only people the page draws, so never a living
+person (everyone `people.js` marks living is left out before the export, and `drop_possibly_living` drops the rest). Made by `FULLDATE` and two lines in the per-person
+loop of `tools/build-tree-page.py`. At the first build: 315 people have `bd`, 324 have `dd`.
 
 ## Rebuild
 
