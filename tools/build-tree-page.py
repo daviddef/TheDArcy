@@ -34,7 +34,7 @@ FULLDATE = re.compile(r"^\d{1,2} (?:JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|
 FOCUS_SLUG = "kenneth-lindsay-d-arcy"    # where the page opens: the man the archive's eulogy is for. Left to itself the converter opens on the best-connected person, who is a man of the Hornby descent this archive does not accept
 ATLAS_CANDIDATES = [os.environ.get("RECORD_ATLAS", ""), os.path.expanduser("~/Projects/Family Projects/Record Atlas"),
                     os.path.join(os.path.dirname(ROOT), "Record Atlas")]
-INPUTS = [os.path.join(DATA, n) for n in ("ancestors.json", "families.json", "relatives.json", "same-person.json", "living.json")] + \
+INPUTS = [os.path.join(DATA, n) for n in ("ancestors.json", "families.json", "relatives.json", "same-person.json", "living.json", "dossiers.json")] + \
          [os.path.join(SITE, "src", "lib", "corrections.js"), os.path.join(SITE, "src", "lib", "people.js"),
           os.path.join(ROOT, "data", "era-ground.tsv"), os.path.join(ROOT, "data", "era-towns.tsv"), os.path.join(ROOT, "tools", "export_tree_people.mjs")]
 
@@ -233,6 +233,7 @@ def build(a):
         # tree" (one per entry of lib/corrections.js for the slug; the export counts them, a living person is never exported). A count only; omitted when 0. Added 16 Nov 2026
         # for the Atlas Tree Canvas, which shows a pencil and the count and links to /corrections/.
         if int(src.get("cx") or 0) >= 1: p["cx"] = int(src["cx"])
+        if is_placeholder(src.get("name")): p["placeholder"] = True
     t["lines"] = [{"sur": f["surname"], "host": HOST} for f in top] + [{"sur": "Other", "host": HOST}]
     t["meta"].update({"rowLabel": "Family line", "lineLabel": "Family line"})
     mark_relative_places(t, people)
@@ -245,6 +246,13 @@ def build(a):
     rep["export"] = {k: v for k, v in exp.items() if k not in ("people", "living")}; rep["not_living_exported"] = len(rows)
     io.open(rep_path, "w", encoding="utf-8").write(json.dumps(rep, indent=1, ensure_ascii=False))
     io.open(tree, "w", encoding="utf-8").write(json.dumps(t, ensure_ascii=False, separators=(",", ":")))
+
+def is_placeholder(name):
+    """A record that STANDS FOR somebody rather than naming them ("Unknown", "UNKNOWN Falco", an unnamed infant, a person known only by a household). David (17 November 2026): they
+    are research hotspots, so they are drawn and FLAGGED (`placeholder: true`), never hidden. Only the NAME decides: a word in a bracketed note does not make a named person a stand-in."""
+    n = name or ""
+    base = re.sub(r"\([^)]*\)", " ", n)
+    return bool(re.match(r"\s*\[", n) or re.search(r"\bunnamed\b|\bunknown\b|\bhousehold\b|\bplaceholder\b", base, re.I))
 
 def undrawn_cards(rows, living, t, key_i, fam_of, prim):
     """EVERYONE THE ARCHIVE PUBLISHES IS ON THE CANVAS (David, 17 November 2026, "if it's in the archive it must be shown"). The ten views draw only the dead people who can be
@@ -332,6 +340,19 @@ def undrawn_cards(rows, living, t, key_i, fam_of, prim):
     for l in sorted(liv, key=lambda q: q["id"]):
         c = card(sid(l["id"]), l["name"], l["surname"], 7)
         c["living"] = True; out.append(c); kinds["living (named on their bare page)"] += 1
+    # The people who have only a /who/ record page (site/src/data/dossiers.json: a name read from a document, no place in the tree): an unplaced, name-only card linking to the page.
+    # No family links (a record names no tree relative), no date (the page prints what the record says; nothing is added here).
+    for w in sorted(jl(os.path.join(DATA, "dossiers.json"))["people"].values(), key=lambda q: q["slug"]):
+        if w.get("inTree"): continue
+        c = card("who-" + w["slug"], w["name"], "", 7)
+        parts = w["name"].split()                               # the dossier's surname is upper-case ("D'ARCY"): the printed name's last word is the surname the page shows
+        c["given"], c["sur"] = " ".join(parts[:-1]), (parts[-1] if len(parts) > 1 else "")
+        if len(parts) == 1: c["given"] = w["name"]
+        c["unplaced"] = True; c["slug"] = w["slug"]; c["page"] = "/who/%s/" % w["slug"]; c["why"] = "year"
+        if is_placeholder(w["name"]): c["placeholder"] = True
+        out.append(c); kinds["record only (a /who/ page, not in the tree)"] += 1
+    for c in out:
+        if is_placeholder(c.get("name")): c["placeholder"] = True
     return out, dict(kinds, total=len(out))
 
 def mark_relative_places(t, people):

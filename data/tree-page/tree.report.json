@@ -85,7 +85,8 @@
   "dead, unplaced": 35,
   "dead, unplaced (a declared copy)": 8,
   "living (named on their bare page)": 39,
-  "total": 118
+  "record only (a /who/ page, not in the tree)": 215,
+  "total": 333
  },
  "declared_copies_folded_into_primary": 8,
  "export": {

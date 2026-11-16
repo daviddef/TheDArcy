@@ -43,7 +43,11 @@ Made by `undrawn_cards()` in `tools/build-tree-page.py`; links follow the regist
 - **The 75 living-style cards** are `living: true` with a name and family links ONLY: no sex (`u`), no date, no place, no page link, no `cx`. The names are the ones their pages already print.
   A living person whose name the pages withhold (no name, or the dash) is not in `tree.json`. The living rows come from `export_tree_people.mjs` into the intermediate `people.export.json`
   (never committed) and are never written to `tree.report.json`.
-- **Placeholders**: 3 names in the archive read as stand-ins ("Unknown", "UNKNOWN Falco", "'Aelar' Unknown Georgian Lady"); all 3 are drawn people and none is undrawn. Nothing is flagged.
+- **Placeholders** (David, 17 November 2026: research hotspots, drawn and flagged, never hidden): 3 names read as stand-ins ("Unknown", "UNKNOWN Falco", "'Aelar' Unknown Georgian Lady");
+  all 3 are drawn people and carry `placeholder: true`. Only the name decides (`is_placeholder()`); nothing else about them changes.
+- **The /who/ people** (added 17 November 2026): the 215 people who have only a `/who/` record page (`site/src/data/dossiers.json`: a name read from a document, no place in the tree)
+  are 215 more `undrawn` cards (`id` `who-<slug>`, `unplaced: true`, name, `page` `/who/<slug>/`): no family links and no date, because a record names no tree relative and
+  the page prints what the record says. `undrawn` is then 333, and `people` + `undrawn` = 726 + 333 = 1,059 named people (the 844 with a person page and the 215 with a /who/ page).
 
 ## Rebuild
 
