@@ -11,6 +11,8 @@ dist/
 node_modules/
 site/.astro/
 site/public/atlas-data.json
+site/src/data/correction-places.json
+site/src/data/correction-place-flags.json
 sources/*.ged
 sources/inquests/*.pdf
 
