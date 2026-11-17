@@ -7,6 +7,9 @@ import { u } from "../lib/url.js";
 import { md } from "../lib/md.js";
 import Corrections from "@daviddef/archive-kit/components/Corrections.astro";
 import { corrIdMap } from "@daviddef/archive-kit/lib/corrections.js";
+import { placeIndex } from "@daviddef/archive-kit/lib/placelinks.js";
+import placeRows from "../data/correction-places.json";
+import placeFlags from "../data/correction-place-flags.json";
 import { OWN, INHERITED, nOwn, CAUSES, causeTally } from "../lib/errors.js";
 
 const tally = causeTally();
@@ -19,6 +22,12 @@ const top = tally[0];
 /* OWN is in file order, the same list lib/pulse.js hands buildPulse as `corrections`, so these anchors are the ones the What's new card links to.
    No sort of our own: the component puts the newest day first. */
 const ids = corrIdMap(OWN);
+/* Places that have a page (tools/build_correction_places.py, run by the build): a place named in a correction links to it, with the flag of the state
+   that held it in the year the sentence names (the committed era snapshot) and today's where that is another country's. The kit's flag art is served
+   from the build; placeIndex asks for a flag file by name. */
+const FLAGS = import.meta.glob("../../node_modules/@daviddef/archive-kit/kit/data/flags/*.svg", { eager: true, query: "?url", import: "default" });
+const flagUrl = (svg) => { const k = Object.keys(FLAGS).find((f) => f.endsWith("/" + svg)); return k ? FLAGS[k] : ""; };
+const places = placeIndex(placeRows, placeFlags, flagUrl);
 const own = OWN.map((e) => ({
   id: ids.get(e),
   about: e.for,
@@ -57,7 +66,7 @@ const ord = (n) => {
   </section>
 
   <section class="blk">
-    <Corrections rows={own} u={u} />
+    <Corrections rows={own} u={u} places={places} />
   </section>
 
   <section class="blk">
