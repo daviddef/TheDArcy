@@ -11,6 +11,7 @@ export const OWN = [
     lesson:
       "A CORRECTION IS A CLAIM ABOUT EVERY PLACE THE FACT IS PRINTED, NOT ABOUT THE PLACE IT WAS MADE. Listing the renderers is not enough either, because the list is what goes stale. tools/check_years_agree.py compares two built outputs \u2014 every person link on every page, with the years printed beside it, against the years that person's own page prints \u2014 and never asks which is right, only whether the archive agrees with itself. It began as a check on one chart and was widened the moment the same fault turned up elsewhere, because patching renderers one at a time is how it recurred. It was watched to refuse a planted fault in each of five different renderers, a markup change that leaves it comparing nothing, and an empty build, before it was trusted. It cannot see /bloodline, which embeds JSON rather than links, and says so. It was then given two more clauses the following day, because the person pages, the chart and every list were right and two hand-written pages, a family page and the home page were not: one reads the text of every page for a corrected person's tree year, and one reads the register for a research note that says the tree is wrong about someone the corrections map does not hold. Testing the first clause with a planted fault found that it excused a stale year by an unchanged year inside the same string, which is the reason a gate is never trusted before it has been seen to refuse. The gap it exposed in the kit is separate and is not this archive's to edit: the chart's wall vocabulary has no kind for \u00abparents named in a record, not in the tree\u00bb, so the nearest honest label is still \u00abNot yet worked\u00bb.",
     href: "/tree",
+    for: [["/people/william-hartley-sneyd/", "William Hartley Sneyd"], ["/people/james-wakefield/", "James Wakefield"]],
   },
   {
     when: "12 October 2026",
@@ -88,6 +89,7 @@ export const OWN = [
     lesson:
       "THE ARCHIVE IS THE FIRST SOURCE TO SEARCH AND IT IS THE ONE THAT GETS SKIPPED. Four times today an instrument returned a zero that meant the wrong question; this is the same shape with no instrument involved, and the register was one grep away. It also matters WHO it was said to: the claim went into a coverage note, into a commit message, and into a report to David, inside an hour of telling another archive that being the party doing the correcting is not evidence. THAT SENTENCE APPLIES TO THE ONE WRITING IT. The finding survives — the holdings are real and an absence across 675 issues is now quotable — but it buys something smaller than was claimed.",
     href: "/coverage",
+    for: [["/people/george-pitt-d-arcy-1783/", "George Pitt D'Arcy"]],
   },
   {
     when: "27 September 2026",
@@ -242,6 +244,7 @@ export const OWN = [
     lesson:
       "Found while auditing the other five joins that attach evidence to a person, after the record-row fault of the 17th. The audit expected a second instance of that fault and did not find one: graves.json and households.json do not reach the person page directly, but everything they carry is already there from the family tree. The loss was somewhere nobody was looking, in a data structure whose rules silently permit it. Two of the three checks written that morning were themselves wrong — one could never fail, because it looked for a string that sits in the site navigation, and one reported a grave as missing from a page that states it in full, for want of unescaping an ampersand. Both were caught by trying to make them fail.",
     href: "/hannah-baptism",
+    for: [["/people/hannah-saniger/", "Hannah SANIGER"]],
   },
   {
     when: "17 September 2026",
@@ -264,6 +267,7 @@ export const OWN = [
     lesson:
       "Check the page before you add to the page. A find is only a find against what is already published, and an archive that indexes eleven spellings of a name has to search its own text the same way it searches somebody else's.",
     href: "/hannah-baptism",
+    for: [["/people/ann-saniger/", "Ann Saniger"]],
   },
   {
     when: "15 September 2026",
@@ -341,6 +345,7 @@ export const OWN = [
     lesson:
       "Before searching for somebody, read everything your own files already say about them — especially where and when they died and what they were called by then. A negative result is only evidence if the search could have succeeded.",
     href: "/crossread",
+    for: [["/people/martha-wakefield/", "Martha Wakefield"]],
   },
   {
     when: "14 September 2026",
@@ -370,6 +375,7 @@ export const OWN = [
     why: "This site keeps an alias list of surname spellings — eleven forms of Saniger — and SANIGOR was not one of them. Every “not found” I published was really “not found under the ten spellings I thought of”. The control tests were sound and they were testing the wrong thing: they measured whether the parish was covered, never whether my query could match the name.",
     lesson: "A control test proves the source covers the place. It proves nothing about whether your search string can reach the record. Widen the name before you narrow the conclusion.",
     href: "/hannah-baptism",
+    for: [["/people/hannah-saniger/", "Hannah SANIGER"]],
   },
   {
     when: "13 September 2026",
@@ -379,6 +385,7 @@ export const OWN = [
     why: "The trio was assembled in an early pass and then repeated, and the repetition did the work that evidence should have. Nobody — me — ever went back to ask where the name had come from.",
     lesson: "A fact that has been on the site longest is the one least likely to have been checked. Repetition is not corroboration.",
     href: "/wakefields",
+    for: [["/people/martha-wakefield/", "Martha Wakefield"]],
   },
   {
     when: "13 September 2026",
@@ -388,6 +395,7 @@ export const OWN = [
     why: "The same fault as Berkeley, on the same afternoon: the free indexes were measured honestly and the conclusion was then widened from “not reachable here” to “not transcribed”, which is a claim about the world rather than about my sources.",
     lesson: "Name the shelf. “Not in FreeREG” and “not transcribed” are different sentences, and only one of them is true.",
     href: "/jean-ward",
+    for: [["/people/jean-ward/", "Jean Ward"]],
   },
   {
     when: "13 September 2026",
@@ -397,6 +405,7 @@ export const OWN = [
     why: "I checked the finding against the family tree, which does not have them, and not against this archive's own pages, which do. The manifest was three clicks away and I had written the page it sits on.",
     lesson: "Check a discovery against what the archive already holds before calling it new. The tree is not the archive.",
     href: "/general-hewitt",
+    for: [["/people/jabez-wakefield/", "Jabez Wakefield"], ["/people/zillah-wakefield/", "Zillah Wakefield"]],
   },
   {
     when: "13 September 2026",
@@ -406,6 +415,7 @@ export const OWN = [
     why: "The whole edifice rested on one tick in the 1841 census: the column that asks only whether a person was born in the same county, yes or no. That is the weakest statement a census makes. I treated it as load-bearing because it was the only thing I had, argued from it for days, excluded 81 households with it, catalogued 36 chapel registers because of it, and built a page for a Somerset parish on the strength of it — without ever putting it beside the next census, which asks WHERE rather than WHETHER and was one search away the entire time.",
     lesson: "When a single weak datum is carrying an entire line of research, that is the datum to attack first, not the one to build on. And check the same family in the next census before theorising about the last one.",
     href: "/berkeley-woman",
+    for: [["/people/hannah-saniger/", "Hannah SANIGER"]],
   },
   {
     when: "13 September 2026",
@@ -442,6 +452,7 @@ export const OWN = [
     why: "This site has a rule — establish that a source covers the parish and the window before reporting an absence — and it applied that rule to Berkeley, to Dursley, to Hanley and to eight counties of Sanigers. It never applied it to its own oldest English find. Joseph's baptism was treated as the product of a search when it was the product of a two-year window.",
     lesson: "Test coverage hardest where the source has already given you something. A hit makes a transcript feel complete, and that is exactly when it is least likely to have been measured.",
     href: "/portsea",
+    for: [["/people/joseph-d-arcy/", "Joseph D'Arcy"]],
   },
   {
     when: "13 September 2026",
@@ -460,6 +471,7 @@ export const OWN = [
     why: "I searched for the tree's DATE instead of the tree's PERSON. The 1781 Samuel appeared in every result list I pulled and I discarded him each time for being twelve years out — while the family he belongs to, with the right father, the right mother and the right trade, was sitting underneath him.",
     lesson: "A tree's dates are the softest thing in it. When the person fits and only the year is wrong, suspect the year.",
     href: "/sneyds",
+    for: [["/people/samuel-sneyd/", "Samuel Sneyd"]],
   },
   {
     when: "13 September 2026",
@@ -478,6 +490,7 @@ export const OWN = [
     why: "The age was arithmetic from a birth year and an assumed marriage year, and neither the date nor the registration had ever been looked up. The Queensland marriage index is free and this archive has been using it for other people all week.",
     lesson: "An age you calculated is not a fact you found. If the register that would settle it is one you already have open, look.",
     href: "/drivers-fields",
+    for: [["/people/miriam-wakefield/", "Miriam Wakefield"]],
   },
   {
     when: "13 September 2026",
@@ -505,6 +518,7 @@ export const OWN = [
     why: "He died on 11 September; his birthday was the 30th, nineteen days later. A man born on 30 September 1837 is 64 on 11 September 1902 — exactly what she swore. I did the arithmetic without checking the death date against the birthday. His Queensland death registration then gave the date outright.",
     lesson: "A stated age is a birth year minus one for everybody whose birthday has not yet come round — which is most of the year, for most people.",
     href: "/inquest-1902",
+    for: [["/people/william-hartley-sneyd/", "William Hartley Sneyd"]],
   },
   {
     when: "9 September 2026",
@@ -523,6 +537,7 @@ export const OWN = [
     why: "Nothing was ever checked. The claim had been carried forward on assumption. The search method was then verified by running the same query for his brother-in-law, which returned his dossier at once — so the absence is real.",
     lesson: "“Is known to exist” is a claim like any other and needs a source.",
     href: "/great-war",
+    for: [["/people/lindesay-atkinson-d-arcy/", "Lindesay Atkinson D'Arcy"]],
   },
   {
     when: "9 September 2026",
@@ -559,6 +574,7 @@ export const OWN = [
     why: "The 1884 volume scanned badly. The 1890 volume prints it plainly, and “fount-room” — where a printing house keeps and distributes its type — is what the job actually was.",
     lesson: "One bad scan is not a reading. Find the same fact in a second year.",
     href: "/sergeant-sneyd",
+    for: [["/people/william-hartley-sneyd/", "William Hartley Sneyd"]],
   },
   {
     when: "10 September 2026",

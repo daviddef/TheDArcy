@@ -6,6 +6,7 @@ import Scroll from "../components/Scroll.astro";
 import { u } from "../lib/url.js";
 import { md } from "../lib/md.js";
 import Corrections from "@daviddef/archive-kit/components/Corrections.astro";
+import { corrIdMap } from "@daviddef/archive-kit/lib/corrections.js";
 import { OWN, INHERITED, nOwn, CAUSES, causeTally } from "../lib/errors.js";
 
 const tally = causeTally();
@@ -15,7 +16,12 @@ const top = tally[0];
    page sets the retraction above the truth, which is the same pair every
    archive in the estate keeps, and the lesson stays under each one because it
    is the reason this page exists. */
+/* OWN is in file order, the same list lib/pulse.js hands buildPulse as `corrections`, so these anchors are the ones the What's new card links to.
+   No sort of our own: the component puts the newest day first. */
+const ids = corrIdMap(OWN);
 const own = OWN.map((e) => ({
+  id: ids.get(e),
+  about: e.for,
   when: e.when,
   was: md(e.what),
   now: md(e.truth),
