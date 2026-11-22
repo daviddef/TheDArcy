@@ -18,7 +18,10 @@ import { defineConfig } from 'astro/config';
 // carries for this archive, because every kit consumer derives the base as
 // (import.meta.env.BASE_URL || '/').replace(/\/$/, '') — which is '' here.
 const BASE = '';
-const redirects = { '/what-we-got-wrong': `${BASE}/corrections/` };
+/* 23 November 2026 (estate clean-up): Roots & Routes at /roots/ was retired (David: "roots and routes, remove it"; the Tree Canvas on
+   recordatlas.org replaced it estate-wide). The old address still answers, with a redirect to this archive's own tree page. Only the
+   page at /roots/ went: /roots/view.html stays, because the kit's per-person "Where they lived" frames on the person pages read it. */
+const redirects = { '/what-we-got-wrong': `${BASE}/corrections/`, '/roots': `${BASE}/tree/` };
 
 export default defineConfig({
   site: 'https://darcy.defranceski.com',

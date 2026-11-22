@@ -9,7 +9,8 @@
    Where an address went:
      /whats-new/       left Start (it is the "What's new" group of Research and the pulse button)
      /dna/             left Start (a deep dive under Sources, in Research)
-     /trees/ /tree/ /roots/ /timeline/   left Start (People, under "Drawn"; /bloodline/ left People & places for the same place)
+     /trees/ /tree/ /timeline/   left Start (People, under "Drawn"; /bloodline/ left People & places for the same place)
+     /roots/           (Roots & Routes) was retired on 23 Nov 2026: it left the menu and the address redirects to /tree/ (astro.config.mjs)
      /lines/ /atlas/   left Start (Places & families)
      /places/          moved from People & places (Places & families)
      /emigrations/ /general-hewitt/ /australia/ /brisbane/ /great-war/   the "Australia" menu became a group of Places & families
@@ -45,7 +46,7 @@ export const MENU = [
       ["/marriages/", "The Marriages"], ["/graves/", "Graves"],
     ] },
     { head: "Drawn", items: [
-      ["/tree/", "Our line, drawn"], ["/trees/", "The trees"], ["/roots/", "Roots & Routes"], ["/timeline/", "The Timeline"],
+      ["/tree/", "Our line, drawn"], ["/trees/", "The trees"], ["/timeline/", "The Timeline"],
       ["/bloodline/", "Blood relatives, drawn"],
     ] },
   ]],
