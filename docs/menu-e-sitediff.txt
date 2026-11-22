@@ -1,0 +1,8 @@
+pages before 1301, after 1303; gone: none; new: ['/drawn/', '/studies/']
+  /roots/                    -71    +1     declared: Roots & Routes was retired on 23 November 2026 (David: "roots and routes, remove it"). The page is now a redirect stub to /tree/; its 71 text blocks were the viewer's own interface, not archive prose, and the viewer is still served bare at /roots/view.html for the person-page frames. Intentional.
+  /contents/                 -14    +15    declared: the book's contents list: the Roots & Routes chapter (VII.6) is replaced by the new /drawn/ hub, and /studies/ is a new chapter VIII.4, so the chapters after it are numbered one higher (VIII.4 to VIII.16 became VIII.5 to VIII.17). Same titles and blurbs; only numbers and the two new chapters differ.
+  /part/how-we-know/         -13    +14    declared: the part opener lists the same chapters: /studies/ is new at VIII.4 and the following chapters are renumbered. Same titles and blurbs.
+  /about/                    -1     +1     declared: the link "The repository" (github.com) was removed (David: no GitHub links on public pages); the sentence that the work is in the repository stays as text, and Method, Sources and What changed still link as before.
+  /part/everyone/            -1     +1     declared: the part opener lists the same chapters: Roots & Routes (VII.6) is replaced by the new /drawn/ hub in the same place.
+
+every changed page is declared

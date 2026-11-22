@@ -569,6 +569,11 @@
      "blurb": "Where this family was born and where it died, counted."
     },
     {
+     "path": "/drawn/",
+     "title": "Drawn",
+     "blurb": "The pages that draw this family instead of listing it, each with a line on what it shows."
+    },
+    {
      "path": "/timeline/",
      "title": "The Timeline",
      "blurb": "Who this family were living under, and what it did to them."
@@ -595,6 +600,11 @@
      "path": "/research/sources-and-method/",
      "title": "Sources & method",
      "blurb": "What this archive stands on, how it reads a record, and the long studies that sit beside them."
+    },
+    {
+     "path": "/studies/",
+     "title": "The studies",
+     "blurb": "The long pages on the D'Arcys, the Sanigers and Bristol and the Potteries, and the deep dives, each with a line on what it holds."
     },
     {
      "path": "/sources/",

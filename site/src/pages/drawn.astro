@@ -1,0 +1,18 @@
+---
+/* DRAWN: the hub. The pages that draw the family instead of listing it. Until 23 November 2026 four of them stood in the People menu under
+   "Drawn"; the menu now has one link to this page. The list is lib/drawn-pages.js, and the line under each is the page's own blurb from the
+   book (src/data/book.json), read through lib/research-counts.js, so this page and the book cannot disagree. No page was renamed or moved. */
+import Base from "../layouts/Base.astro";
+import ResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { u } from "../lib/url.js";
+import { DRAWN } from "../lib/drawn-pages.js";
+import { blurbOf } from "../lib/research-counts.js";
+const items = DRAWN.map(([href, label]) => ({ href, label, blurb: blurbOf({ href }) }));
+---
+<Base title="Drawn" eyebrow="People · the family drawn, not listed"
+      dek="The pages that draw this family instead of listing it: the line as a chart, every line the archive follows, blood relatives around one person, the family against its century. Each is at the address it always had.">
+  <section class="blk">
+    <ResearchList items={items} />
+    <p class="cap" style="margin-top:22px">The lists are the other half of People: <a href={u("/people/")}>The People</a> · <a href={u("/who/")}>Every Name</a> · <a href={u("/register/")}>The Register</a> · <a href={u("/households/")}>Households</a> · <a href={u("/marriages/")}>The Marriages</a> · <a href={u("/graves/")}>Graves</a>.</p>
+  </section>
+</Base>

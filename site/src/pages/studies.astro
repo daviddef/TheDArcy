@@ -1,0 +1,30 @@
+---
+/* THE STUDIES: the hub. The twenty-four long pages that stood in the header menu as "The studies" (three groups) and the six deep dives of
+   Research are listed here, each with its blurb from the book (src/data/book.json). The menu has ONE entry for them (lib/research-menu.js,
+   Research / Sources & method). The lists are lib/studies-menu.js, the one place the groups are written. No study was renamed or moved. */
+import Base from "../layouts/Base.astro";
+import ResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { u } from "../lib/url.js";
+import { STUDIES, DEEP_DIVES } from "../lib/studies-menu.js";
+import { blurbOf } from "../lib/research-counts.js";
+const withBlurb = (x) => ({ href: x.href, label: x.label, blurb: blurbOf(x) });
+const groups = STUDIES.map((g) => ({ ...g, list: g.items.map(([href, label]) => withBlurb({ href, label })) }));
+const deep = DEEP_DIVES.map(withBlurb);
+const n = groups.reduce((a, g) => a + g.list.length, 0);
+---
+<Base title="The studies" eyebrow="Research · the long pages"
+      dek={`${n} studies in three groups, and the ${deep.length} deep dives that read one set of papers, one inquest, one search or one way of reading. Each is at the address it always had; the menu links this page instead of listing them.`}>
+  {groups.map((g) => (
+    <section class="blk">
+      <h2 id={g.id} style="font-size:26px;margin-top:34px">{g.head}</h2>
+      <p class="dek" style="margin-top:6px">{g.dek}</p>
+      <ResearchList items={g.list} />
+    </section>
+  ))}
+  <section class="blk">
+    <h2 id="deep-dives" style="font-size:26px;margin-top:34px">Deep dives</h2>
+    <p class="dek" style="margin-top:6px">Long studies, each of one set of papers, one inquest, one search or one way of reading. They are linked from the Sources page too.</p>
+    <ResearchList items={deep} />
+    <p class="cap" style="margin-top:22px">The rest of Research: <a href={u("/research/")}>all of it on one page</a> · <a href={u("/sources/")}>Sources</a> · <a href={u("/method/")}>Method</a>.</p>
+  </section>
+</Base>
