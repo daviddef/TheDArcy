@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { readFileSync } from 'node:fs';
 
 // Custom domain, served by GitHub Pages from the TheDArcy repo.
 // MOVED 12 October 2026 from https://daviddef.github.io/TheDArcy/. The apex
@@ -22,6 +23,11 @@ const BASE = '';
    recordatlas.org replaced it estate-wide). The old address still answers, with a redirect to this archive's own tree page. Only the
    page at /roots/ went: /roots/view.html stays, because the kit's per-person "Where they lived" frames on the person pages read it. */
 const redirects = { '/what-we-got-wrong': `${BASE}/corrections/`, '/roots': `${BASE}/tree/` };
+/* 23 November 2026 (David: redirect the folded D'Arcy names): a /who/<slug>/ whose every line is set out on the one person page that bears the name is
+   no longer a page but a static redirect (meta refresh, canonical, noindex, not in the sitemap) to that page. The list is src/data/who-fold.json
+   "redirects", made by tools/build_who_fold.py from tools/who-fold-rulings.json, which refuses a name that is not so folded in full. */
+const whoFold = JSON.parse(readFileSync(new URL('./src/data/who-fold.json', import.meta.url), 'utf8'));
+for (const [who, person] of Object.entries(whoFold.redirects || {})) redirects[`/who/${who}`] = `${BASE}/people/${person}/`;
 
 export default defineConfig({
   site: 'https://darcy.defranceski.com',

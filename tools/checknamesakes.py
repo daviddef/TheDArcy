@@ -22,6 +22,11 @@ to the built pages and to nothing the page generator used:
             person page, which says so ("No record has been found for them"): two pages for one name, left for David to rule on
             (see tools/namesakes-who-known.json, each entry with the reason). A NEW one fails; so does an entry that no longer
             overlaps (the list only shrinks, on purpose and by hand).
+  redirect  a /who/<slug>/ that is a static redirect (a meta refresh stub, 23 November 2026) is not one the ruling lists
+            (tools/who-fold-rulings.json, key "redirect": the names whose every line is set out on the one person page that bears
+            them), or does not land on /people/<same slug>/, or is not noindex with that page as its canonical; and a name the
+            ruling lists is not a stub. A stub is no dossier, so it is never a "filed" name: the six redirects are not in
+            tools/namesakes-who-known.json.
   index     /who/ links to a /who/<slug>/ that is not built.
 
 A living person is never named in a message (their slug can carry a year): their page is reported as "a living person's page".
@@ -90,13 +95,30 @@ def load_known(path=KNOWN):
         return None
 
 
-def check(pages, known):
+def is_stub(raw):
+    """a static redirect written by astro: a meta refresh and no page"""
+    return bool(re.search(r'<meta http-equiv="refresh"', raw[:2000])) and "<h1" not in raw
+
+
+def load_redirects(path=None):
+    try:
+        with open(path or os.path.join(HERE, "who-fold-rulings.json"), encoding="utf-8") as f:
+            return list(json.load(f).get("redirect", []))
+    except Exception:
+        return None
+
+
+def check(pages, known, redirects=None):
     """(findings, counts, setof) over an in-memory build: route -> html."""
+    if redirects is None:
+        redirects = load_redirects()
     persons = {}
     for route, raw in pages.items():
         if route.startswith("/people/") and route != "/people/" and "data-person-page" in raw:
             persons[route] = {"h1": h1_of(raw), "living": is_noindex(raw)}
-    who = {r: raw for r, raw in pages.items() if r.startswith("/who/") and r != "/who/"}
+    allwho = {r: raw for r, raw in pages.items() if r.startswith("/who/") and r != "/who/"}
+    who = {r: raw for r, raw in allwho.items() if not is_stub(raw)}
+    stubs = {r: raw for r, raw in allwho.items() if is_stub(raw)}
     if not persons or "/who/" not in pages:
         return None, {}, {}
     label = lambda r: "a living person's page" if persons.get(r, {}).get("living") else r
@@ -132,6 +154,24 @@ def check(pages, known):
         if extra:
             findings.append("extra: %s lists %d that do not carry its name: %s" % (label(r), len(extra), ", ".join(label(x) for x in extra)))
 
+    # ---- the /who/ addresses that are redirects: exactly the ruling's, each to its person page
+    if redirects is None:
+        findings.append("redirect: tools/who-fold-rulings.json cannot be read")
+        redirects = []
+    for slug in sorted(set(redirects)):
+        r = "/who/%s/" % slug
+        if r not in stubs:
+            findings.append("redirect: %s is in the ruling as a redirect and is not one" % r)
+    for r, raw in sorted(stubs.items()):
+        slug = r[len("/who/"):-1]
+        to = "/people/%s/" % slug
+        if slug not in redirects:
+            findings.append("redirect: %s is a redirect and the ruling does not list it" % r)
+        elif to not in persons:
+            findings.append("redirect: %s redirects to %s, which is not a person page" % (r, to))
+        elif not (('content="0;url=%s"' % to) in raw and ('<meta name="robots" content="noindex">' in raw) and re.search(r'rel="canonical" href="[^"]*%s"' % re.escape(to), raw)):
+            findings.append("redirect: %s does not land on %s with noindex and that page as its canonical" % (r, to))
+
     # ---- the /who/ dossiers that share a name with a person page
     overlapping = set()
     for r, raw in sorted(who.items()):
@@ -152,7 +192,7 @@ def check(pages, known):
             findings.append("index: /who/ links to %s, which is not built" % h)
 
     counts = {"person pages": len(persons), "with a list": with_section, "pages whose name is shared": shared_pages,
-              "/who/ dossiers": len(who), "of them filed under a name a person page carries": len(overlapping)}
+              "/who/ dossiers": len(who), "of them filed under a name a person page carries": len(overlapping), "/who/ redirects": len(stubs)}
     return findings, counts, setof
 
 
@@ -171,11 +211,13 @@ def selftest(pages, known):
     a = shared[0]
     other = sorted(setof[a])[0]
 
-    def planted(name, mutate, want, kn=None):
+    stubs_ = sorted(r for r in pages if r.startswith("/who/") and r != "/who/" and is_stub(pages[r]))
+
+    def planted(name, mutate, want, kn=None, rd=None):
         nonlocal ok
         v = dict(pages)
         mutate(v)
-        got, _c2, _s = check(v, known if kn is None else kn)
+        got, _c2, _s = check(v, known if kn is None else kn, rd)
         hit = any(g.startswith(want) for g in (got or []))
         print("  %-52s %s" % (name, "caught" if hit else "MISSED  <-- the gate cannot see this"))
         ok = ok and hit
@@ -198,6 +240,11 @@ def selftest(pages, known):
                 lambda v: v.__setitem__(a, re.sub(r'(id="%s".*?<ul[^>]*>)' % SECTION, r'\1<li><a href="%s">x</a></li>' % living[0], v[a], count=1, flags=re.S)), "extra")
     planted("a /who/ dossier filed under a person's name, unlisted", lambda v: None, "filed", kn={k: x for k, x in list(known.items())[1:]})
     planted("a known entry that no longer overlaps", lambda v: None, "filed", kn=dict(known, **{"nobody-of-this-name": {"slug": "nobody-of-this-name"}}))
+    if stubs_:
+        sr = stubs_[0]
+        planted("a redirect that is a page again", lambda v: v.__setitem__(sr, "<html><h1>Someone</h1></html>"), "redirect")
+        planted("a redirect the ruling does not list", lambda v: None, "redirect", rd=[x for x in (load_redirects() or []) if "/who/%s/" % x != sr])
+        planted("a redirect to the wrong person", lambda v: v.__setitem__(sr, v[sr].replace("/people/", "/people/x-", 2)), "redirect")
     planted("a link on /who/ to a page that is not built", lambda v: v.__setitem__("/who/", v["/who/"].replace("</main>", '<a href="/who/not-built-at-all/">x</a></main>', 1)), "index")
     return ok
 

@@ -3,10 +3,14 @@ import Base from "../../layouts/Base.astro";
 import Note from "../../components/Note.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
+import { context } from "../../lib/whoContext.js";
+import { isRedirected, whoPath } from "../../lib/whoRedirects.js";
 
 export async function getStaticPaths() {
   const d = (await import("../../data/dossiers.json")).default;
-  return Object.values(d.people).map((p) => ({ params: { slug: p.slug }, props: { p } }));
+  /* a name whose /who/ address is a redirect (src/lib/whoRedirects.js) is not a page */
+  const { isRedirected } = await import("../../lib/whoRedirects.js");
+  return Object.values(d.people).filter((p) => !isRedirected(p.slug)).map((p) => ({ params: { slug: p.slug }, props: { p } }));
 }
 const { p } = Astro.props;
 
@@ -14,21 +18,6 @@ const others = Object.values(d.people)
   .filter((o) => o.slug !== p.slug && o.surname === p.surname)
   .slice(0, 12);
 
-/* Which record a line came out of, in words a reader can act on. */
-const WHERE = [
-  [/QSA coronial/, "The inquest, 1902", "/inquest-1902"],
-  [/QSA /, "Queensland State Archives", "/sources"],
-  [/AWM 1DRL/, "The search for Arthur", "/finding-arthur"],
-  [/AWM 28/, "The Great War", "/great-war"],
-  [/NAA B2455|NAA J34/, "The Great War", "/great-war"],
-  [/ADM 101/, "Arrival, 1826", "/australia"],
-  [/FreeREG/, "Berkeley, Gloucestershire", "/berkeley"],
-  [/Blue Book/, "Sergeant Sneyd", "/sergeant-sneyd"],
-  [/Trove/, "What the papers said", "/papers"],
-  [/Queensland death index/, "The register", "/register"],
-  [/Connolly|PROB/, "The Hornby claim", "/hornby"],
-];
-const context = (src) => WHERE.find(([re]) => re.test(src));
 ---
 <Base title={p.name} eyebrow={p.n === 1 ? "one record names this person" : `${p.n} records name this person`}
   dek={p.rows[0].says.slice(0, 155)}>
@@ -87,7 +76,7 @@ const context = (src) => WHERE.find(([re]) => re.test(src));
       <a href={u("/name/")}>Why →</a></p>
       <div class="grid three" style="margin-top:1rem">
         {others.map((o) => (
-          <a class="cardlink" href={u(`/who/${o.slug}`)}>
+          <a class="cardlink" href={u(isRedirected(o.slug) ? whoPath(o.slug) : `/who/${o.slug}`)}>
             <div class="nm">{o.name}</div>
             <p class="small" style="margin-top:.3rem">{o.rows[0].says.slice(0, 80)}…</p>
           </a>

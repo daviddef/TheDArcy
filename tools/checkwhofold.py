@@ -14,9 +14,12 @@ person-page generator or tools/build_who_fold.py wrote, and checks the BUILT pag
              section "Records filed under the name ...".
   elsewhere  a folded line's text is on the built page of any OTHER person: a line is one person's.
   extra      a person page carries a fold section it is not designated for, or carries more lines than the ruling gives it.
-  kept       a folded line is no longer on its /who/ page: a fold is a copy, never a move.
+  kept       a folded line is no longer on its /who/ page: a fold is a copy, never a move. (Not asked of a name the ruling lists under
+             "redirect": its /who/ address is a redirect to the person page, and the line is on that page.)
   dossier    the section does not open with a link to the dossier the ruling names, or that dossier is not built. (Names inside the
-             lines are linked by the build's autolink pass, to their own pages and dossiers, and are not the section's link.)
+             lines are linked by the build's autolink pass, to their own pages and dossiers, and are not the section's link.) For a
+             name under "redirect" the section links to NO /who/ page: there is none.
+  linked     a built page links to /who/<slug>/ of a name under "redirect": every link to it goes to the person page.
   living     a fold or pointer section on a noindex page (a living person's), or a designated page that is noindex.
   year       a folded line's text prints a year on or after 1946 (the kit's living cutoff): a line about someone alive is never moved.
              (A source's own coverage, "1538-1975", is not the line.)
@@ -24,7 +27,8 @@ person-page generator or tools/build_who_fold.py wrote, and checks the BUILT pag
              'elsewhere' pointer does not link to the page that sets the lines out.
   unfiled    a /who/ dossier shares its name (accents and case folded) with a person page that the ruling neither folds into nor points
              from: a NEW overlap fails until somebody rules on it.
-  ruling     the ruling names a dossier, a line or a person page that does not exist.
+  ruling     the ruling names a dossier, a line or a person page that does not exist, or lists under "redirect" a name that is not folded
+             in full onto the one person page of its name, with a fold of kind 'agrees', or that a pointer needs.
 
 A living person is never named in a message: their page is reported as "a living person's page". Exit 0 clean, 1 findings, 2 it could not
 see what it checks (no build, no person page, no /who/ index, no ruling).
@@ -72,7 +76,7 @@ def read_pages(dist):
         if "index.html" in files:
             rel = os.path.relpath(root, dist).replace(os.sep, "/")
             route = "/" if rel == "." else "/" + rel + "/"
-            if route.startswith("/people/") or route.startswith("/who/"):
+            if True:
                 with open(os.path.join(root, "index.html"), encoding="utf-8", errors="replace") as f:
                     pages[route] = f.read()
     return pages
@@ -97,10 +101,16 @@ def section(raw, prefix):
     return tail[: end if end >= 0 else len(tail)]
 
 
+def is_stub(raw):
+    """a static redirect written by astro: a meta refresh and no page"""
+    return bool(re.search(r'<meta http-equiv="refresh"', raw[:2000])) and "<h1" not in raw
+
+
 def check(pages, rulings, dossiers):
     """(findings, counts) over an in-memory build: route -> html."""
     persons = {r: p for r, p in pages.items() if r.startswith("/people/") and r != "/people/" and "data-person-page" in p}
-    whos = {r: p for r, p in pages.items() if r.startswith("/who/") and r != "/who/"}
+    redirects = set(rulings.get("redirect", []))
+    whos = {r: p for r, p in pages.items() if r.startswith("/who/") and r != "/who/" and not is_stub(p)}
     if not persons or "/who/" not in pages or not whos:
         return None, {}
     living = {r: is_noindex(p) for r, p in persons.items()}
@@ -156,7 +166,7 @@ def check(pages, rulings, dossiers):
                 if other != route and squash(r["says"]) in text:
                     findings.append("elsewhere: a line folded onto %s is also on %s: %s" % (label(route), label(other), r["says"][:60]))
             wp = "/who/%s/" % who
-            if wp not in whos or squash(r["says"]) not in squash(plain(whos[wp])):
+            if who not in redirects and (wp not in whos or squash(r["says"]) not in squash(plain(whos[wp]))):
                 findings.append("kept: a folded line is not on %s: %s" % (wp, r["says"][:60]))
             for y in re.findall(r"\b(1[0-9]{3}|20[0-9]{2})\b", r["says"]):
                 if int(y) >= CUTOFF:
@@ -165,7 +175,11 @@ def check(pages, rulings, dossiers):
         if got != len(rows):
             findings.append("extra: %s shows %d line(s) in its section and the ruling gives it %d" % (route, got, len(rows)))
         links = re.findall(r'href="(/who/[^"#?]+/)"', sec)
-        if not links or links[0] != "/who/%s/" % who or "/who/%s/" % who not in whos:
+        if who in redirects:
+            bad = [x for x in links if x[len("/who/"):-1] in redirects]
+            if bad:
+                findings.append("dossier: %s's section links to %s, which is a redirect and no page" % (route, bad[0]))
+        elif not links or links[0] != "/who/%s/" % who or "/who/%s/" % who not in whos:
             findings.append("dossier: %s's section opens with a link to %s and the ruling names the built dossier /who/%s/" % (route, links[0] if links else "no dossier", who))
 
     # ---- no section where the ruling gives none, and none on a living page
@@ -196,6 +210,26 @@ def check(pages, rulings, dossiers):
         if e.get("why") == "elsewhere" and "/people/%s/" % e.get("elsewhere") not in links:
             findings.append("pointer: %s says the lines are another bearer's and does not link to /people/%s/" % (route, e.get("elsewhere")))
 
+    # ---- the redirects: each folded in full, and nothing links to the address any more
+    folded_who = {}
+    for e in rulings.get("fold", []):
+        folded_who.setdefault(e["who"], []).append(e)
+    for who in sorted(redirects):
+        w = dossiers.get(who)
+        es = folded_who.get(who, [])
+        if w is None or len(es) != 1:
+            findings.append("ruling: redirect %s needs a dossier and exactly one fold" % who)
+        elif sorted(set(es[0]["rows"])) != list(range(len(w["rows"]))) or es[0].get("kind") != "agrees" or es[0]["to"] != who:
+            findings.append("ruling: redirect %s is not folded in full onto /people/%s/ as 'agrees'" % (who, who))
+        if any(who in e["to"] and e["who"] == who for e in rulings.get("pointer", [])):
+            findings.append("ruling: redirect %s still has a pointer" % who)
+    for r, raw in sorted(pages.items()):
+        if is_stub(raw):
+            continue
+        for h in set(re.findall(r'href="/who/([^"#?/]+)/?(?:[#?][^"]*)?"', raw)):
+            if h in redirects:
+                findings.append("linked: %s links to /who/%s/, which is a redirect to the person page" % (label(r) if r in persons else r, h))
+
     # ---- a name a dossier and a person page both carry is ruled on, on every such page
     byname = {}
     for r in persons:
@@ -208,7 +242,7 @@ def check(pages, rulings, dossiers):
             if r not in folded_to and r not in pointed:
                 findings.append("unfiled: %s carries the name of the dossier %s and the ruling neither folds into it nor points from it" % (r, wr))
 
-    counts = {"person pages": len(persons), "/who/ dossiers": len(whos), "pages sharing a dossier's name": overlaps,
+    counts = {"person pages": len(persons), "/who/ dossiers": len(whos), "redirects": len(redirects), "pages sharing a dossier's name": overlaps,
               "lines folded": n_lines, "pages folded into": len(folded_to), "pages pointing": len(pointed)}
     return findings, counts
 
@@ -227,9 +261,18 @@ def selftest(pages, rulings, dossiers):
     if not folds or not points or not plainp or not livingp:
         print("  nothing folded, pointed, plain or living to plant against: refusing")
         return False
-    a = folds[0]
+    reds = set(rulings.get("redirect", []))
+    linking = [r for r in folds if re.search(r'href="/who/', section(pages[r], FOLD_ID))]
+    redirected = [r for r in folds if r[len("/people/"):-1] in reds]
+    if not linking or not redirected:
+        print("  no fold that links to its dossier, or no redirected name, to plant against: refusing")
+        return False
+    a = linking[0]
     sec_a = section(pages[a], FOLD_ID)
     who_a = re.search(r'href="(/who/[^"#?]+/)"', sec_a).group(1)
+    b = redirected[0]
+    sec_b = section(pages[b], FOLD_ID)
+    slug_b = b[len("/people/"):-1]
 
     def planted(name, mutate, want, rul=None, dos=None):
         nonlocal ok
@@ -245,7 +288,7 @@ def selftest(pages, rulings, dossiers):
     planted("a folded line left off its page", lambda v: v.__setitem__(a, v[a].replace(row_a, "", 1)), "missing")
     planted("the section left off its page", lambda v: v.__setitem__(a, v[a].replace(sec_a, "", 1)), "missing")
     txt = html.escape(html.unescape(plain(re.search(r"<p>(.*?)</p>", row_a, re.S).group(1))))
-    piece = re.match(r"[A-Za-z0-9 ]{12,}", html.unescape(plain(row_a)).strip()).group(0)
+    piece = re.match(r"[A-Za-z0-9 ]{12,}", html.unescape(plain(row_a)).strip()).group(0)[:20]
     planted("a folded line on another person's page",
             lambda v: v.__setitem__(plainp[0], v[plainp[0]].replace("</main>", "<p>%s</p></main>" % txt, 1)), "elsewhere")
     planted("a fold section on a page the ruling gives none",
@@ -261,6 +304,13 @@ def selftest(pages, rulings, dossiers):
     planted("a pointer that no longer links to its dossier", lambda v: v.__setitem__(points[0], v[points[0]].replace(pt, pt.replace(pw, "/people/"), 1)), "pointer")
     planted("a folded line gone from its /who/ page (a move)",
             lambda v: v.__setitem__(who_a, v[who_a].replace(piece, "x" * len(piece))), "kept")
+    planted("a redirected name's lines left off its person page", lambda v: v.__setitem__(b, v[b].replace(sec_b, "", 1)), "missing")
+    planted("a link to a redirected /who/ address from another page",
+            lambda v: v.__setitem__(plainp[0], v[plainp[0]].replace("</main>", '<a href="/who/%s/">x</a></main>' % slug_b, 1)), "linked")
+    planted("a redirected name's section linking to its /who/ address",
+            lambda v: v.__setitem__(b, v[b].replace(sec_b, sec_b.replace('<div style="border-left', '<a href="/who/%s/">x</a><div style="border-left' % slug_b, 1), 1)), "dossier")
+    planted("a redirect for a dossier not folded in full", lambda v: None, "ruling", rul=dict(rulings, redirect=sorted(reds | {"edward-saniger"})))
+    planted("a redirect for a fold that only fits", lambda v: None, "ruling", rul=dict(rulings, redirect=sorted(reds | {"christian-saniger"})))
     r_drop = dict(rulings, fold=[e for e in rulings["fold"] if "/people/%s/" % e["to"] != a])
     planted("a dossier name a person page carries, left unruled", lambda v: None, "unfiled", rul=r_drop)
     d_year = json.loads(json.dumps(dossiers))

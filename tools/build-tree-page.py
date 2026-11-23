@@ -34,6 +34,7 @@ TP = os.path.join(ROOT, "tools", "tree-page")
 EXT = os.path.join(TP, "painted-lines.ext.html")
 HOST = "darcy.defranceski.com"
 FULLDATE = re.compile(r"^\d{1,2} (?:JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC) \d{4}$")   # 4 APR 1460 | 17 AUG 1927 : this archive's GEDCOM form, a day present, no ABT/BET/BEF/AFT/EST/TO
+REDIRECTED = set((json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site", "src", "data", "who-fold.json"), encoding="utf-8")).get("redirects") or {}))   # the /who/ names that are redirects (tools/who-fold-rulings.json)
 FOCUS_SLUG = "kenneth-lindsay-d-arcy"    # where the page opens: the man the archive's eulogy is for. Left to itself the converter opens on the best-connected person, who is a man of the Hornby descent this archive does not accept
 ATLAS_CANDIDATES = [os.environ.get("RECORD_ATLAS", ""), os.path.expanduser("~/Projects/Family Projects/Record Atlas"),
                     os.path.join(os.path.dirname(ROOT), "Record Atlas")]
@@ -347,6 +348,7 @@ def undrawn_cards(rows, living, t, key_i, fam_of, prim):
     # No family links (a record names no tree relative), no date (the page prints what the record says; nothing is added here).
     for w in sorted(jl(os.path.join(DATA, "dossiers.json"))["people"].values(), key=lambda q: q["slug"]):
         if w.get("inTree"): continue
+        if w["slug"] in REDIRECTED: continue            # /who/<slug>/ is a redirect to the person page (23 November 2026), and that person already has a card: a second card for one person is no page
         c = card("who-" + w["slug"], w["name"], "", 7)
         parts = w["name"].split()                               # the dossier's surname is upper-case ("D'ARCY"): the printed name's last word is the surname the page shows
         c["given"], c["sur"] = " ".join(parts[:-1]), (parts[-1] if len(parts) > 1 else "")

@@ -1,33 +1,6 @@
 {
- "note": "The /who/ dossiers (register lines about a person in no tree page) whose name is also a person page's name (accents and case folded). Not redirected: the lines exist on no other page. tools/checknamesakes.py refuses a dossier of this kind that is not listed, and an entry that no longer overlaps. Remove an entry when the dossier and the person page are made one page by a ruling.",
+ "note": "The /who/ dossiers (register lines about a person in no tree page) whose name is also a person page's name (accents and case folded). Not redirected: the lines exist on no other page. tools/checknamesakes.py refuses a dossier of this kind that is not listed, and an entry that no longer overlaps. Remove an entry when the dossier and the person page are made one page by a ruling. The six whose every line is set out on the person page (tools/who-fold-rulings.json, key \"redirect\") are not listed: /who/<slug>/ is a redirect to the person page since 23 November 2026, so the two are one page.",
  "known": [
-  {
-   "slug": "ann-saniger",
-   "name": "Ann Saniger",
-   "personPages": [
-    "ann-saniger"
-   ],
-   "registerLines": 1,
-   "reason": "The 1 register line filed under this name are on this dossier and, word for word, on the person page of the name (tools/who-fold-rulings.json, 23 November 2026), where the page says they are filed under the name. The dossier stays a page. Whether the dossier is the person on the page or a namesake remains a research ruling (David's)."
-  },
-  {
-   "slug": "arthur-ashley-ruck",
-   "name": "Arthur Ashley Ruck",
-   "personPages": [
-    "arthur-ashley-ruck"
-   ],
-   "registerLines": 1,
-   "reason": "The 1 register line filed under this name are on this dossier and, word for word, on the person page of the name (tools/who-fold-rulings.json, 23 November 2026), where the page says they are filed under the name. The dossier stays a page. Whether the dossier is the person on the page or a namesake remains a research ruling (David's)."
-  },
-  {
-   "slug": "catherine-georgiana-west",
-   "name": "Catherine Georgiana West",
-   "personPages": [
-    "catherine-georgiana-west"
-   ],
-   "registerLines": 3,
-   "reason": "The 3 register lines filed under this name are on this dossier and, word for word, on the person page of the name (tools/who-fold-rulings.json, 23 November 2026), where the page says they are filed under the name. The dossier stays a page. Whether the dossier is the person on the page or a namesake remains a research ruling (David's)."
-  },
   {
    "slug": "christian-saniger",
    "name": "Christian Saniger",
@@ -47,15 +20,6 @@
    "reason": "The 8 register lines filed under this name are on this dossier only: their dates and facts do not fit the person page of the name, or cannot be told apart from lines that do not, so none is folded onto it; the page links to the dossier and says so (tools/who-fold-rulings.json, 23 November 2026). The dossier stays a page."
   },
   {
-   "slug": "elizabeth-ann-birch",
-   "name": "Elizabeth Ann Birch",
-   "personPages": [
-    "elizabeth-ann-birch"
-   ],
-   "registerLines": 1,
-   "reason": "The 1 register line filed under this name are on this dossier and, word for word, on the person page of the name (tools/who-fold-rulings.json, 23 November 2026), where the page says they are filed under the name. The dossier stays a page. Whether the dossier is the person on the page or a namesake remains a research ruling (David's)."
-  },
-  {
    "slug": "elizabeth-saniger",
    "name": "Elizabeth Saniger",
    "personPages": [
@@ -64,24 +28,6 @@
    ],
    "registerLines": 4,
    "reason": "The 4 register lines filed under this name are on this dossier only: the name is shared by more than one person page and the lines cannot be given to one of them without a guess, so they are not folded; each page links to the dossier and says so (tools/who-fold-rulings.json, 23 November 2026). The dossier stays a page."
-  },
-  {
-   "slug": "ephraim-wakefield",
-   "name": "Ephraim Wakefield",
-   "personPages": [
-    "ephraim-wakefield"
-   ],
-   "registerLines": 2,
-   "reason": "The 2 register lines filed under this name are on this dossier and, word for word, on the person page of the name (tools/who-fold-rulings.json, 23 November 2026), where the page says they are filed under the name. The dossier stays a page. Whether the dossier is the person on the page or a namesake remains a research ruling (David's)."
-  },
-  {
-   "slug": "margaret-birch",
-   "name": "Margaret Birch",
-   "personPages": [
-    "margaret-birch"
-   ],
-   "registerLines": 1,
-   "reason": "The 1 register line filed under this name are on this dossier and, word for word, on the person page of the name (tools/who-fold-rulings.json, 23 November 2026), where the page says they are filed under the name. The dossier stays a page. Whether the dossier is the person on the page or a namesake remains a research ruling (David's)."
   },
   {
    "slug": "mary-smyth",
