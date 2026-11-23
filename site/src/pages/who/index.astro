@@ -6,6 +6,7 @@ import { u } from "../../lib/url.js";
 import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
 import d from "../../data/dossiers.json";
 import { nPeople } from "../../lib/people.js";
+import { isRedirected, whoPath } from "../../lib/whoRedirects.js";
 
 const people = Object.values(d.people).sort((a, b) => a.name.localeCompare(b.name));
 /* One entry per NAME, keyed by a name-slug: 169 entries for 169 distinct
@@ -17,6 +18,11 @@ const rows = people.map((p) => ({
   slug: p.slug, name: p.name, n: p.n,
   detail: esc(p.rows[0].says.slice(0, 92) + (p.rows[0].says.length > 92 ? "\u2026" : "")),
 }));
+/* EveryName draws each name as a link to /who/<slug>/. A name whose /who/ page is a redirect (src/lib/whoRedirects.js) goes to the person page it redirects to. */
+const toPage = (path) => {
+  const m = /^\/who\/([^/]+)\/$/.exec(path);
+  return m && isRedirected(m[1]) ? u(whoPath(m[1])) : u(path);
+};
 ---
 <Base
   title="Every Name"
@@ -49,7 +55,7 @@ const rows = people.map((p) => ({
   </section>
 
   <section class="blk" style="border-bottom:0">
-    <EveryName names={rows} u={u} counts="records" noun="names"
+    <EveryName names={rows} u={toPage} counts="records" noun="names"
       detailLabel="What the first record says" />
     <p class="small" style="margin-top:1rem">Looking for a relative instead?
       <a href={u("/search/")}>Search the whole archive &rarr;</a></p>

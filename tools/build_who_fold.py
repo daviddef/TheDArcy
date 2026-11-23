@@ -13,11 +13,15 @@ the person's page too, and /who/ is not touched (it is built from site/src/data/
 THE RULING is by hand and line by line, tools/who-fold-rulings.json, each entry with the evidence for it. THIS TOOL copies the chosen
 lines VERBATIM from dossiers.json (says, source, link: nothing is reworded, shortened or joined) into site/src/data/who-fold.json:
 
-    pages     person slug -> {who, name, kind, total, rows[]}      the lines set out on that person's page
-    pointers  person slug -> {who, name, total, why[, elsewhere]}  a page that links to the dossier and sets nothing out
+    pages      person slug -> {who, name, kind, total, rows[]}      the lines set out on that person's page
+    pointers   person slug -> {who, name, total, why[, elsewhere]}  a page that links to the dossier and sets nothing out
+    redirects  who slug -> person slug                              a /who/ page that is a static redirect to the person's page
+
+A "redirect" (ruling key, 23 November 2026) is a name whose EVERY dossier line is folded onto the one person page that bears the name.
+astro.config.mjs turns each into a redirect, who/[slug].astro stops drawing it, and every link to it goes to the person page.
 
 It refuses: a dossier that is not in dossiers.json, a line number out of range, a line given to two pages, a page named twice, a
-person slug that is no built person page (read from the site's own address rule, tools/slugrule.py), a living person's page, a name
+person slug that is no built person page, a redirect that is not folded in full onto a page of 'agrees' kind or that a pointer or a second bearer touches (read from the site's own address rule, tools/slugrule.py), a living person's page, a name
 that is not the dossier's name once accents and case are folded, and an entry of a kind or reason it does not know.
 """
 import argparse
@@ -132,6 +136,33 @@ def build():
                     q["elsewhere"] = el
             pointers[to] = q
 
+    redirects = {}
+    for who in rules.get("redirect", []):
+        ctx = "redirect %s" % who
+        w = dos.get(who)
+        hit = [(to, v) for to, v in pages.items() if v["who"] == who]
+        if not w:
+            errs.append("%s: no such dossier" % ctx)
+            continue
+        if len(hit) != 1:
+            errs.append("%s: it must be folded onto exactly one person page (it is folded onto %d)" % (ctx, len(hit)))
+            continue
+        to, v = hit[0]
+        if len(v["rows"]) != len(w["rows"]):
+            errs.append("%s: only %d of its %d lines are folded; a name with a line found on no person page stays a page" % (ctx, len(v["rows"]), len(w["rows"])))
+        if v["kind"] != "agrees":
+            errs.append("%s: its fold is %r; only a fold whose every line agrees with the page may redirect" % (ctx, v["kind"]))
+        if any(q["who"] == who for q in pointers.values()):
+            errs.append("%s: a page points to it as a dossier it still needs" % ctx)
+        bearers = [s2 for s2, r in ppl.items() if not r.get("living") and fold(r["name"]) == fold(w["name"])]
+        if bearers != [to]:
+            errs.append("%s: %d person page(s) bear the name (%s); a shared name needs its first-bearer rule and is not redirected here" % (ctx, len(bearers), ", ".join(bearers)))
+        if who != to:
+            errs.append("%s: the person page slug is %s; the redirect keeps to /who/<slug>/ -> /people/<same slug>/" % (ctx, to))
+        if who in redirects:
+            errs.append("%s: named twice" % ctx)
+        redirects[who] = to
+
     # every dossier whose name a person page carries is either folded or pointed at, on every such page
     byname = {}
     for s, r in ppl.items():
@@ -141,7 +172,7 @@ def build():
         for s in byname.get(fold(w["name"]), []):
             if s not in pages and s not in pointers:
                 errs.append("dossier %s shares its name with /people/%s/, which is neither folded into nor pointed at" % (who, s))
-    return errs, {"pages": dict(sorted(pages.items())), "pointers": dict(sorted(pointers.items()))}
+    return errs, {"pages": dict(sorted(pages.items())), "pointers": dict(sorted(pointers.items())), "redirects": dict(sorted(redirects.items()))}
 
 
 def main(argv=None):
@@ -156,7 +187,7 @@ def main(argv=None):
         return 1
     text = json.dumps(data, ensure_ascii=False, indent=1) + "\n"
     n = sum(len(v["rows"]) for v in data["pages"].values())
-    summary = "%d line(s) set out on %d person page(s), %d page(s) point to a dossier" % (n, len(data["pages"]), len(data["pointers"]))
+    summary = "%d line(s) set out on %d person page(s), %d page(s) point to a dossier, %d /who/ page(s) redirect" % (n, len(data["pages"]), len(data["pointers"]), len(data["redirects"]))
     if a.check:
         try:
             have = open(OUT, encoding="utf-8").read()

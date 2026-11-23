@@ -20,6 +20,7 @@
  */
 import personRecords from "../data/person-records.json";
 import dossiers from "../data/dossiers.json";
+import { isRedirected, whoPath } from "./whoRedirects.js";
 
 /** Record lines matching `test`, for people the surface never names.
  *  `onSurface` is a Set of names the page already shows. */
@@ -38,7 +39,9 @@ export function notOnSurface(onSurface, test) {
         const k = `${v.name}|${says.slice(0, 44)}`;
         if (seen.has(k)) continue;
         seen.add(k);
-        out.push({ name: v.name, says, href: `${hrefBase}${slug}/`, where });
+        /* a /who/ name that is a redirect (lib/whoRedirects.js) is linked at the person page it goes to */
+        const href = hrefBase === "/who/" && isRedirected(slug) ? whoPath(slug) : `${hrefBase}${slug}/`;
+        out.push({ name: v.name, says, href, where });
       }
     }
   };

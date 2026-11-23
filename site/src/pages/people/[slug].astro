@@ -21,6 +21,8 @@ import { CORRECTIONS, yearOf as correctedYear } from "../../lib/corrections.js";
 import personRecords from "../../data/person-records.json";
 /* /who/ dossier lines also set out here (23 November 2026; tools/who-fold-rulings.json, made by tools/build_who_fold.py): verbatim, and only where the line is demonstrably about this person */
 import whoFold from "../../data/who-fold.json";
+import { context as whoContext } from "../../lib/whoContext.js";
+import { isRedirected as whoIsRedirected } from "../../lib/whoRedirects.js";
 import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
 /* STORY MODE (people pages v2, PERSON-PAGE-SPEC.md section 2a): a person whose family or notes give the page something to tell is told as a story, not drawn as a chart */
 import FamilyLinkNotes from "../../components/FamilyLinkNotes.astro";
@@ -200,6 +202,8 @@ const rec = alive ? null : (personRecords[p.slug] || null);
 const fold = alive ? null : (whoFold.pages[p.slug] || null);
 const pointer = alive ? null : (whoFold.pointers[p.slug] || null);
 const foldN = fold ? fold.rows.length : 0;
+/* the name's /who/ address is itself a redirect to this page (lib/whoRedirects.js): there is no page on the name to link to */
+const foldOnly = !!(fold && whoIsRedirected(fold.who));
 const lines = (n) => `${n} register line${n === 1 ? "" : "s"}`;
 const elsewhere = pointer && pointer.elsewhere ? people.find((o) => o.slug === pointer.elsewhere) : null;
 
@@ -540,7 +544,7 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
       <p class="small" style="margin-top:.7rem">This person has a page because the tree names them beside
         someone this archive follows. Nothing has been researched for them here, and records that
         carry their name are filed in the register under the name and not assigned to them: a
-        name is not a person.{fold && <> The exception is the {lines(foldN)} set out below from the page on the name: they are filed under the name, and shown here because nothing in them conflicts with this page.</>}</p>
+        name is not a person.{fold && <> The exception is the {lines(foldN)} set out below: they are filed under the name, and shown here because nothing in them conflicts with this page.</>}</p>
       )}
       <p class="small" style="margin-top:.7rem">
         <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
@@ -654,15 +658,18 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
 
     {fold && (
       <PersonSection kind="more" title={`Records filed under the name ${fold.name}`}>
-        <p class="small">From <a href={u(`/who/${fold.who}/`)}>the page on the name {fold.name}</a>{" "}
-          ({lines(foldN)}{fold.total > foldN ? ` of the ${fold.total} there` : ""}, word for word).{" "}
+        <p class="small">{foldOnly
+          ? <>The register lines filed under the name {fold.name} ({lines(foldN)}{fold.total > foldN ? ` of the ${fold.total} there` : ""}, word for word).{" "}
+              Until 23 November 2026 they were on a page of their own, /who/{fold.who}/, which now comes here.{" "}</>
+          : <>From <a href={u(`/who/${fold.who}/`)}>the page on the name {fold.name}</a>{" "}
+              ({lines(foldN)}{fold.total > foldN ? ` of the ${fold.total} there` : ""}, word for word).{" "}</>}
           {fold.kind === "ruled"
             ? <>{fold.name} is carried by several people in this tree. These lines are the ones this archive's rule for shared names gives to this one, on the dates and parents they themselves
               give; <a href={u("/name/")}>why the others are kept apart →</a></>
             : <>A register line is filed under the name on the document, and {fold.name} is carried by one person in this tree; {fold.kind === "agrees"
               ? "what these lines say agrees with the life drawn above."
               : "nothing in these lines agrees or conflicts with the life drawn above."}</>}
-          {" "}The whole list is on that page.</p>
+          {!foldOnly && <>{" "}The whole list is on that page.</>}</p>
         <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
           {fold.rows.map((r) => (
             <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
@@ -670,6 +677,7 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
               <p class="small" style="margin-top:.4rem;color:var(--ink-2)">
                 <span class="chip doc">record</span> {r.source.replace(/^record · /, "")}
                 {r.link && r.link.startsWith("http") && <> · <a href={r.link}>the source ↗</a></>}
+                {foldOnly && whoContext(r.source) && <> · <a href={u(whoContext(r.source)[2])}>{whoContext(r.source)[1]} →</a></>}
               </p>
             </div>
           ))}
