@@ -29,6 +29,10 @@ export const RESEARCH = [
       { href: "/documents/", label: "Documents", asks: "What is reproduced whole?" },
       { href: "/coverage/", label: "What the Indexes Hold", atlas: true },
       { sub: "Deep dives", id: "deep-dives",
+        /* 23 Nov 2026 (estate clean-up): in the header menu the six deep dives and the twenty-four studies are ONE entry, "The studies", that
+           opens the hub /studies/ (pages/studies.astro, which lists both, each with its blurb). The six stay listed here for the Sources page
+           and the /research/ hub, which read this list. */
+        hub: { href: "/studies/", label: "The studies" },
         note: "Long studies, each of one set of papers, one inquest, one search or one way of reading. They are linked from the Sources page too.",
         items: [
           { href: "/papers/", label: "The Papers" },
@@ -40,8 +44,11 @@ export const RESEARCH = [
         ] },
     ] },
 ];
-/* the header menu's shape: [group, ...] with { head, href, items: [[href, label] | { sub }] } */
+/* the header menu's shape: [group, ...] with { head, href, items: [[href, label] | { sub }] }. A sub-group with a `hub` is ONE link to that
+   hub (the studies and deep dives are listed there, not in the menu); one without is drawn as a sub-heading and its items. */
 export const navGroups = RESEARCH.map((g) => ({
   head: g.head, href: g.href,
-  items: g.items.flatMap((x) => x.sub ? [{ sub: x.sub }, ...x.items.map((y) => [y.href, y.label])] : [[x.href, x.label]]),
+  items: g.items.flatMap((x) => x.sub
+    ? (x.hub ? [[x.hub.href, x.hub.label]] : [{ sub: x.sub }, ...x.items.map((y) => [y.href, y.label])])
+    : [[x.href, x.label]]),
 }));

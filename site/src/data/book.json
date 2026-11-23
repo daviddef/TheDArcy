@@ -569,9 +569,9 @@
      "blurb": "Where this family was born and where it died, counted."
     },
     {
-     "path": "/roots/",
-     "title": "Roots & Routes",
-     "blurb": "Everyone in the tree who has died, drawn ten ways: by generation, by place, by era, and as the route a life took."
+     "path": "/drawn/",
+     "title": "Drawn",
+     "blurb": "The pages that draw this family instead of listing it, each with a line on what it shows."
     },
     {
      "path": "/timeline/",
@@ -600,6 +600,11 @@
      "path": "/research/sources-and-method/",
      "title": "Sources & method",
      "blurb": "What this archive stands on, how it reads a record, and the long studies that sit beside them."
+    },
+    {
+     "path": "/studies/",
+     "title": "The studies",
+     "blurb": "The long pages on the D'Arcys, the Sanigers and Bristol and the Potteries, and the deep dives, each with a line on what it holds."
     },
     {
      "path": "/sources/",

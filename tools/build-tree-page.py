@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 """Roots & Routes: the tree page for this archive, built from this archive's own committed data.
 
-    python3 tools/build-tree-page.py            # rebuild data/tree-page/ (tree.json, atlas-data.json, roots.html, roots.embed.html) and site/public/roots-links.json
+    python3 tools/build-tree-page.py            # rebuild data/tree-page/ (tree.json, atlas-data.json, roots.html) and site/public/roots-links.json
+
+(23 November 2026: the /roots/ PAGE was retired, so the fragment for it, roots.embed.html, is no longer built. roots.html stays: it is served bare at
+/roots/view.html for the kit's per-person "Where they lived" frames on the person pages.)
     python3 tools/build-tree-page.py --check    # exit 1 if the page is older than the data it was built from
 
 WHERE THE PEOPLE COME FROM. There is no committed GEDCOM (the tree export carries living people in full and stays outside the repo). The people are the ones the
@@ -418,9 +421,6 @@ def main():
     write_roots_links(tree)
     tpl = os.path.join(TP, "tree-views.template.html")
     run([sys.executable, os.path.join(TP, "build_page.py"), "--template", tpl, "--tree", tree, "--atlas-data", ad, "--out", page, "--ext", EXT])
-    embed = os.path.join(OUT, "roots.embed.html")
-    run([sys.executable, os.path.join(TP, "build_page.py"), "--template", tpl, "--tree", tree, "--atlas-data", ad, "--out", embed, "--embed", "--ext", EXT])
     run([sys.executable, os.path.join(TP, "check_tree_page.py"), "--tree", tree, "--atlas-data", ad, "--page", page])
-    run([sys.executable, os.path.join(TP, "check_tree_page.py"), "--tree", tree, "--atlas-data", ad, "--page", embed])
 
 if __name__ == "__main__": main()

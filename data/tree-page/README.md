@@ -1,8 +1,10 @@
 # Roots & Routes (the tree page)
 
 Ten views of every person this archive publishes who has died: hourglass, fan, whole-tree and close-family maps, Atlas map, movements, kinship, place lanes, eras,
-lifespans, surnames, an Orphans tab, and the five animated views (Night sky, Ink ledger, Household, Generations, Where they lived). It is served at `/roots/`, and
-bare at `/roots/view.html` for the frames of the kit's `PersonRootsViews` (drawn in the "Where they lived" section of a person's page, see below).
+lifespans, surnames, an Orphans tab, and the five animated views (Night sky, Ink ledger, Household, Generations, Where they lived). **The page at `/roots/` was
+retired on 23 November 2026** (David: "roots and routes, remove it"; the Tree Canvas on recordatlas.org replaced it): `/roots/` now redirects to `/tree/`. What is left is
+the page served bare at `/roots/view.html`, for the frames of the kit's `PersonRootsViews` (drawn in the "Where they lived" section of a person's page, see below), and the
+data it and the Tree Canvas read.
 
 | File | What it is | Edit by hand? |
 |---|---|---|
@@ -10,7 +12,7 @@ bare at `/roots/view.html` for the frames of the kit's `PersonRootsViews` (drawn
 | `place_map.json` | each place string with coordinates, country and Record Atlas id | no, generated (see below) |
 | `place-additions.json` | region-level place strings decided by hand, each with its reason | yes, with a reason |
 | `atlas-data.json` | the Record Atlas slice: outlines, regimes, flags, events, collections | no, generated |
-| `roots.html`, `roots.embed.html` | the page, whole and as a fragment for the site layout | no, generated |
+| `roots.html` | the page, served bare at `/roots/view.html` for the person-page frames (the site-layout fragment, `roots.embed.html`, went with the `/roots/` page) | no, generated |
 | `tree.report.json` | counts, the four lives that are not one life, how many were left out as possibly living | read it |
 | `people.export.json`, `people.ged`, `slugs.json` | intermediates, not committed | no |
 
@@ -81,6 +83,6 @@ family-tree-page skill, template 1.7.0), so CI and other sessions do not depend 
   "BEF", "ABT" or "BET" is drawn at its first year, as the converter reads it.
 - **Two lives that cannot be one** (died before born, or over 110 years) are not drawn and are listed in `tree.report.json` under `conflicts`.
 - **The page opens on Kenneth Lindsay D'Arcy** (`FOCUS_SLUG` in the builder), not on the best-connected person, who is a man of the Hornby descent this archive does not accept.
-- **A person's page embeds "Where they lived"** (kit `PersonRootsViews`, in the `where` slot) for every person drawn on /roots/, listed in
+- **A person's page embeds "Where they lived"** (kit `PersonRootsViews`, in the `where` slot) for every person the viewer draws, listed in
   `site/public/roots-links.json`; the frame is `/roots/view.html`. The kit draws that section only in story mode, so these pages are story pages,
-  with chapters cut from the archive's own notes (`site/src/pages/people/[slug].astro`). A person not drawn on /roots/ has no such section.
+  with chapters cut from the archive's own notes (`site/src/pages/people/[slug].astro`). A person the viewer does not draw has no such section.
