@@ -107,6 +107,7 @@ GENERATED = {
     "register.json", "provenance.json",                                  # build_register.py
     "dossiers.json", "person-records.json",                              # build_dossiers.py, build_person_records.py
     "who-fold.json",                                                     # build_who_fold.py (check:who-fold-data), the /who/ lines copied verbatim from dossiers.json by the rulings in tools/who-fold-rulings.json; the dead only
+    "given-names.json", "given-names-seen.json",                          # given_names.py (check:given-names): the Atlas's given-name catalogue with this archive's own count laid over it, and the count (forms and numbers, never a person)
     "households.json", "marriages.json", "graves.json",                  # build_family_pages.py
     "dna.json",                                                          # build_dna.py
     "mentions.json",                                                     # build_mentions.py

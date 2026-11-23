@@ -76,9 +76,10 @@ export const MENU = [
     ] },
   ]],
   /* THE NAME IS ITS OWN GROUP again, as in every other archive (23 Nov 2026). The Name, and the two studies that are about the name itself
-     (the measured table of its spellings; the printed pedigree of the name in its own century); both stay in /studies/ too. */
+     (the measured table of its spellings; the printed pedigree of the name in its own century); both stay in /studies/ too. The forenames
+     (/your-name/, the Say-your-name page, read from the Record Atlas's given-name catalogue) joined it on 23 Nov 2026. */
   ["The name", [
-    ["/name/", "The Name"], ["/spellings/", "Every Spelling of One Name"], ["/swonhungre/", "The Name in Its Own Century"],
+    ["/name/", "The Name"], ["/your-name/", "The forenames"], ["/spellings/", "Every Spelling of One Name"], ["/swonhungre/", "The Name in Its Own Century"],
   ]],
   ["Research", navGroups],
 ];

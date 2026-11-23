@@ -1,0 +1,105 @@
+---
+import Base from "../layouts/Base.astro";
+import Blk from "../components/Blk.astro";
+import Note from "../components/Note.astro";
+import Scroll from "../components/Scroll.astro";
+import SayYourName from "@daviddef/archive-kit/components/SayYourName.astro";
+import { u } from "../lib/url.js";
+/* THE FORMS ARE NOT KEPT HERE. Every form of a given name, by language, and whether a family archive has met it on a record,
+   is kept ONCE, in Record Atlas (data/given-name-families.json, written only through scripts/given_name_variants.py) and
+   published as https://recordatlas.org/given-names.json. The Archive Kit's tools/atlas_given_names.py fetched it into
+   src/data/given-names.json (`npm run given-names`), with THIS archive's own count laid over it as `seen` (the Atlas's count
+   across every archive is `seenAll`). The count is tools/given_names.py's, from the committed people data: the first given
+   name of each person who is not living, a number per form and never a name of a person (src/data/given-names-seen.json).
+   A form met in a record here that the Atlas lacks fails `npm run check:given-names`; the fix is `given_name_variants.py add`
+   and `publish` in the Record Atlas, and never a table on this page. */
+import G from "../data/given-names.json";
+import S from "../data/given-names-seen.json";
+
+/* the languages of THIS tree, in the order a reader of it meets them; each one's note is the Atlas's own wording */
+const WANT = ["english", "latin", "scots", "irish", "french", "norman", "german", "italian", "spanish"];
+const langs = WANT.map((k) => G.languages.find((l) => l.key === k)).filter(Boolean).map(({ key, label, note }) => ({ key, label, note }));
+
+/* A form is counted ONCE however many languages list it (Maria is Latin, Italian and Hungarian: one form, three cards), folded without
+   case or accents, as the Atlas and the build gate fold. */
+const fold = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+const byForm = new Map();
+for (const f of G.rows.flatMap((r) => Object.values(r.langs || {}).flat())) {
+  const k = fold(f.form);
+  const prev = byForm.get(k) || { here: 0, all: 0 };
+  byForm.set(k, { here: Math.max(prev.here, f.seen || 0), all: Math.max(prev.all, f.seenAll || 0) });
+}
+const nDistinct = byForm.size;
+const attestedHere = [...byForm.values()].filter((f) => f.here > 0).length;
+const aidsOnlyElsewhere = [...byForm.values()].filter((f) => !(f.here > 0) && f.all > 0).length;
+
+const obs = Object.entries(S.observed["first given name"]);
+const top = [...obs].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 16);
+const left = Object.values(S.leftOut).reduce((a, n) => a + n, 0);
+const once = obs.filter(([, n]) => n === 1).length;
+const nForms = obs.length;
+const chips = ["William", "John", "Elizabeth", "Conyers", "Lindesay", "Catherine", "Margaret", "Giuseppina", "Karl", "Constantine"];
+---
+<Base
+  title="The forenames"
+  eyebrow={`${nForms} forenames met here · ${S.counted} people counted · ${G.rows.length} names in the Atlas catalogue`}
+  dek="One person, written down by clerks in different languages, in different centuries. Type a given name and see every form the same human being could have been entered under, and which of them this archive has met.">
+
+  <section class="blk">
+    <p class="lede">A <strong>Joannes</strong> in a Latin register, a <strong>John</strong> in an English index and a
+    <strong>Giovanni</strong> in an Italian civil act are the same name. An index that treats them as three people will never
+    join a family up, and neither will a searcher who types only the one the tree happens to hold. This tree runs from Norman
+    Yorkshire and the Palatinate to Gloucestershire, Chatham, Brisbane and the Campania of the Falco line, so its forenames
+    were written in a good many hands.</p>
+
+    <p><strong>A name you have looked up is a link you can send.</strong> The address bar follows the search
+    (<span class="mono">?n=Conyers</span>), so a card can go to a cousin or an archivist and open on exactly what you were looking at.</p>
+
+    <p><strong>Two kinds of cell.</strong> A form printed plainly is one this archive has met in its own tree. A form marked
+    <span class="aid">like this<sup>°</sup></span> is a <strong>lookup aid</strong>: the correct form in that language and the
+    right thing to type into an index tomorrow, but not something written down here. <strong>{attestedHere} of the
+    {nDistinct} forms in the catalogue are met here; {nDistinct - attestedHere} are aids</strong>
+    ({aidsOnlyElsewhere} of them another family archive has met, which the Record Atlas keeps). The line under the box counts a form once for every language that lists it (Maria is Latin, Italian and Hungarian), so its figures are larger than these.</p>
+  </section>
+
+  <SayYourName rows={G.rows} u={u} langs={langs} chips={chips} />
+
+  <Blk label="Where the forms live" title="Not on this page">
+    <p>No table of forms is kept in this archive. Every form of a given name, with the evidence that it was met, is kept once, in the
+    <a href="https://recordatlas.org/your-name/">Record Atlas</a>, and this page is read from that catalogue
+    (<a href="https://recordatlas.org/given-names.json">given-names.json</a>) when the site is built. Only one thing is this
+    archive's own: the count of how often it has met a form. If a form turns up in the tree that the catalogue does not hold, the
+    build stops until it is added there, with its evidence.</p>
+    <Note>
+      <strong>What is counted.</strong> The first given name of each of the {S.notLiving} people this archive publishes as people and who
+      are not living ({S.counted} of them readable that way, in {nForms} different forms; {once} of the forms were met once).
+      <strong>Living people are neither counted nor named.</strong> A middle name is not counted: a tree writes surnames, saints' names
+      and nicknames there as often as names. {left} entries were left out because the tree's name is not a given name and a surname: a
+      one-word name, a title with a place, a particle, a placeholder, an initial or a note about a family. These are counts of a
+      family tree, which writes some names as it found them on other people's pages, not of registers.
+    </Note>
+  </Blk>
+
+  <Blk label="In this tree" title="The commonest forenames">
+    <p class="dek">The {top.length} forms most often written first in the tree, as a number of people. A form here has a card above:
+    type it in the box.</p>
+    <Scroll label="The commonest first given names in the tree">
+      <table>
+        <thead><tr><th>Form</th><th class="m">People</th></tr></thead>
+        <tbody>
+          {top.map(([f, n]) => (
+            <tr><td><a href={u(`/your-name/?n=${encodeURIComponent(f)}`)}>{f}</a></td><td class="m">{n}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </Scroll>
+    <p class="small" style="margin-top:.8rem">A surname does the same thing: see <a href={u("/name/")}>The Name</a> and
+    <a href={u("/spellings/")}>Every Spelling of One Name</a>. Where a name is searched, <a href={u("/searched/")}>What Has Been Read</a>
+    says which spellings and forms were tried.</p>
+  </Blk>
+</Base>
+
+<style is:global>
+  p .aid { color: var(--ink-3); font-style: italic; }
+  p .aid sup { font-style: normal; }
+</style>

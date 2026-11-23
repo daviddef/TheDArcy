@@ -4,6 +4,19 @@
  "lead": "This page is the archive's working record. Each entry is one research pass: the sources opened, what came out of them, and which pages of this site changed as a result. Where a pass produced an error that was later corrected, it says so and links to the correction rather than quietly editing the history.",
  "days": [
       {
+        "when": "23 November 2026",
+        "title": "The forenames: a Say-your-name page, read from the Record Atlas",
+        "found": [
+          [
+            "Added",
+            "/your-name/ (\"The forenames\", in the Name menu): type a given name and see every form of it by language, and which this tree has met. The forms are the Record Atlas's catalogue of given names, fetched at build time; this archive keeps no table of its own, only a count of how often each form is the first given name of a person it publishes who is not living"
+          ]
+        ],
+        "did": [
+          "WHAT THIS DOES. It answers the searcher who types the one form the tree holds (William) and never tries the others a register or index would use. Forty-five forms this tree writes were not yet in the Atlas catalogue and were added there, with the evidence, before the page was built; the build now stops if a form of the tree is missing from the catalogue. Living people are neither counted nor named. PAGES CHANGED. /your-name/ (new); the Name menu, the book, the sitemap and the search index."
+        ]
+      },
+      {
         "when": "13 November 2026",
         "title": "What's new now says whether a finding reached the Record Atlas, and which pages it updated",
         "found": [
