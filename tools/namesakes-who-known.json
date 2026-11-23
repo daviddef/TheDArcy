@@ -1,0 +1,108 @@
+{
+ "note": "The /who/ dossiers (register lines about a person in no tree page) whose name is also a person page's name (accents and case folded). Not redirected: the lines exist on no other page. tools/checknamesakes.py refuses a dossier of this kind that is not listed, and an entry that no longer overlaps. Remove an entry when the dossier and the person page are made one page by a ruling.",
+ "known": [
+  {
+   "slug": "ann-saniger",
+   "name": "Ann Saniger",
+   "personPages": [
+    "ann-saniger"
+   ],
+   "registerLines": 1,
+   "reason": "The 1 register line filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "arthur-ashley-ruck",
+   "name": "Arthur Ashley Ruck",
+   "personPages": [
+    "arthur-ashley-ruck"
+   ],
+   "registerLines": 1,
+   "reason": "The 1 register line filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "catherine-georgiana-west",
+   "name": "Catherine Georgiana West",
+   "personPages": [
+    "catherine-georgiana-west"
+   ],
+   "registerLines": 3,
+   "reason": "The 3 register lines filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "christian-saniger",
+   "name": "Christian Saniger",
+   "personPages": [
+    "christian-saniger"
+   ],
+   "registerLines": 1,
+   "reason": "The 1 register line filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "edward-saniger",
+   "name": "Edward Saniger",
+   "personPages": [
+    "edward-saniger"
+   ],
+   "registerLines": 8,
+   "reason": "The 8 register lines filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "elizabeth-ann-birch",
+   "name": "Elizabeth Ann Birch",
+   "personPages": [
+    "elizabeth-ann-birch"
+   ],
+   "registerLines": 1,
+   "reason": "The 1 register line filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "elizabeth-saniger",
+   "name": "Elizabeth Saniger",
+   "personPages": [
+    "elizabeth-saniger",
+    "elizabeth-saniger-1776"
+   ],
+   "registerLines": 4,
+   "reason": "The 4 register lines filed under this name are on this dossier; the person pages of the name carry none of them, so they say 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "ephraim-wakefield",
+   "name": "Ephraim Wakefield",
+   "personPages": [
+    "ephraim-wakefield"
+   ],
+   "registerLines": 2,
+   "reason": "The 2 register lines filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "margaret-birch",
+   "name": "Margaret Birch",
+   "personPages": [
+    "margaret-birch"
+   ],
+   "registerLines": 1,
+   "reason": "The 1 register line filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "mary-smyth",
+   "name": "Mary Smyth",
+   "personPages": [
+    "mary-smyth"
+   ],
+   "registerLines": 1,
+   "reason": "The 1 register line filed under this name are on this dossier; the person page of the name carries none of them, so it says 'no record has been found'. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  },
+  {
+   "slug": "thomas-saniger",
+   "name": "Thomas Saniger",
+   "personPages": [
+    "thomas-saniger-1744",
+    "thomas-saniger-1711",
+    "thomas-saniger-1808",
+    "thomas-saniger"
+   ],
+   "registerLines": 4,
+   "reason": "The 4 register lines filed under this name are on this dossier; 2 of the 4 person pages of the name carry some of the archive's records (person-records.json), the dossier's lines are not placed on any of them. Whether the dossier is the person on the page or a namesake is a research ruling (David's); until then the dossier stays a page."
+  }
+ ]
+}

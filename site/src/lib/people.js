@@ -198,6 +198,14 @@ const DUP = new Map((samePerson.pairs || []).map((x) => [x.copy, x.primary]));
 export const duplicateOf = (p) => (p && DUP.has(p.id) ? byId.get(DUP.get(p.id)) || null : null);
 
 export const nameOf = (id) => byId.get(id)?.name || "";
+
+/* ONE NAME, FOLDED (23 November 2026, one page per person). Two people carry the same name when this is the same string for both: accents and
+   case folded, and every run of anything that is not a letter or a digit read as one space, so that a tree's "JOHN DARCY", "John Darcy" and
+   "John Saniger," (a trailing comma) are one name each, and "Margaret? D'Arcy" is Margaret D'Arcy. It is typography only; "Darcy" and "D'Arcy"
+   stay two names here, as they were on the /who/ pages, which keyed on the lower-cased name. tools/checknamesakes.py derives the sets again from
+   the built pages with the same fold and refuses a list that differs. */
+export const nameKey = (s) =>
+  String(s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 export const slugOf = (id) => byId.get(id)?.slug || "";
 
 /* The figures the method pages quote about the charts, COUNTED rather than typed:
