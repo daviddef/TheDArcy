@@ -106,6 +106,7 @@ GENERATED = {
     "places.json",                                                       # build_site_data.py
     "register.json", "provenance.json",                                  # build_register.py
     "dossiers.json", "person-records.json",                              # build_dossiers.py, build_person_records.py
+    "who-fold.json",                                                     # build_who_fold.py (check:who-fold-data), the /who/ lines copied verbatim from dossiers.json by the rulings in tools/who-fold-rulings.json; the dead only
     "households.json", "marriages.json", "graves.json",                  # build_family_pages.py
     "dna.json",                                                          # build_dna.py
     "mentions.json",                                                     # build_mentions.py
