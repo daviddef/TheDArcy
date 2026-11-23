@@ -19,6 +19,8 @@ import PS from "@daviddef/archive-kit/data/public-sources.json";
 import { isLiving as isLivingKit } from "@daviddef/archive-kit/lib/person.js";
 import { CORRECTIONS, yearOf as correctedYear } from "../../lib/corrections.js";
 import personRecords from "../../data/person-records.json";
+/* /who/ dossier lines also set out here (23 November 2026; tools/who-fold-rulings.json, made by tools/build_who_fold.py): verbatim, and only where the line is demonstrably about this person */
+import whoFold from "../../data/who-fold.json";
 import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
 /* STORY MODE (people pages v2, PERSON-PAGE-SPEC.md section 2a): a person whose family or notes give the page something to tell is told as a story, not drawn as a chart */
 import FamilyLinkNotes from "../../components/FamilyLinkNotes.astro";
@@ -192,6 +194,14 @@ const portrait = alive ? null : PORTRAITS[p.slug];
    name the tree also carries, on the assumption that the tree page shows it,
    and the tree page had never read them. See tools/build_person_records.py. */
 const rec = alive ? null : (personRecords[p.slug] || null);
+
+/* THE /who/ PAGE OF THIS NAME (23 November 2026). A name that is also the name of a /who/ dossier (register lines about a person in no tree page) has its lines
+   set out here when they are demonstrably this person's (fold), and a plain pointer to the dossier when they are not (pointer). Never for a living person. */
+const fold = alive ? null : (whoFold.pages[p.slug] || null);
+const pointer = alive ? null : (whoFold.pointers[p.slug] || null);
+const foldN = fold ? fold.rows.length : 0;
+const lines = (n) => `${n} register line${n === 1 ? "" : "s"}`;
+const elsewhere = pointer && pointer.elsewhere ? people.find((o) => o.slug === pointer.elsewhere) : null;
 
 const corr = alive ? {} : (CORRECTIONS[p.slug] || {});
 const val = (k, fallback) => (corr[k] ? corr[k][0] : fallback);
@@ -439,7 +449,7 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
     <Fragment slot="record">
       <p class="small" style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
         <Evidence level={g.level}>{g.label ?? undefined}</Evidence>
-        <span class="dim">{g.why}{" "}
+        <span class="dim">{fold ? g.why.replace("No record has been found for them, and none has been shown against them either.", `${lines(foldN)} filed under their name ${foldN === 1 ? "has" : "have"} been read, set out on this page; none is used to prove a relationship.`) : g.why}{" "}
           {g.href
             ? <a href={u(g.href)}>What was tested &rarr;</a>
             : <a href={u("/method/#ladder")}>How this archive grades a claim &rarr;</a>}</span>
@@ -521,6 +531,8 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
               ? <> But <strong>{rec.rows.length} record{rec.rows.length === 1 ? "" : "s"}</strong>{" "}
                 naming {p.name}{" "}{rec.rows.length === 1 ? "has" : "have"} been read, and{" "}
                 {rec.rows.length === 1 ? "it is" : "they are"} set out below.</>
+              : fold
+              ? <> But {lines(foldN)} filed under the name {p.name} {foldN === 1 ? "has" : "have"} been read, and {foldN === 1 ? "it is" : "they are"} set out below.</>
               : <> Nothing else has been found for them either way.</>}
             {" "}<a href={u("/method/")}>How claims are labelled →</a></p>}
 
@@ -528,7 +540,7 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
       <p class="small" style="margin-top:.7rem">This person has a page because the tree names them beside
         someone this archive follows. Nothing has been researched for them here, and records that
         carry their name are filed in the register under the name and not assigned to them: a
-        name is not a person.</p>
+        name is not a person.{fold && <> The exception is the {lines(foldN)} set out below from the page on the name: they are filed under the name, and shown here because nothing in them conflicts with this page.</>}</p>
       )}
       <p class="small" style="margin-top:.7rem">
         <a href={u(`/register/?q=${encodeURIComponent(p.name)}`)}>Every entry naming {p.name} in the register →</a></p>
@@ -637,6 +649,43 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
             </div>
           ))}
         </div>
+      </PersonSection>
+    )}
+
+    {fold && (
+      <PersonSection kind="more" title={`Records filed under the name ${fold.name}`}>
+        <p class="small">From <a href={u(`/who/${fold.who}/`)}>the page on the name {fold.name}</a>{" "}
+          ({lines(foldN)}{fold.total > foldN ? ` of the ${fold.total} there` : ""}, word for word).{" "}
+          {fold.kind === "ruled"
+            ? <>{fold.name} is carried by several people in this tree. These lines are the ones this archive's rule for shared names gives to this one, on the dates and parents they themselves
+              give; <a href={u("/name/")}>why the others are kept apart →</a></>
+            : <>A register line is filed under the name on the document, and {fold.name} is carried by one person in this tree; {fold.kind === "agrees"
+              ? "what these lines say agrees with the life drawn above."
+              : "nothing in these lines agrees or conflicts with the life drawn above."}</>}
+          {" "}The whole list is on that page.</p>
+        <div style="margin-top:1.1rem;display:flex;flex-direction:column;gap:1.1rem">
+          {fold.rows.map((r) => (
+            <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px">
+              <p>{r.says}</p>
+              <p class="small" style="margin-top:.4rem;color:var(--ink-2)">
+                <span class="chip doc">record</span> {r.source.replace(/^record · /, "")}
+                {r.link && r.link.startsWith("http") && <> · <a href={r.link}>the source ↗</a></>}
+              </p>
+            </div>
+          ))}
+        </div>
+      </PersonSection>
+    )}
+
+    {pointer && (
+      <PersonSection kind="more" title={`Read the research on the name ${pointer.name}`}>
+        <p class="small"><a href={u(`/who/${pointer.who}/`)}>The page on the name {pointer.name}</a> holds {lines(pointer.total)} filed under it.
+          They are not set out here:{" "}
+          {pointer.why === "other"
+            ? <>their dates and facts do not fit this person's life, or cannot be told apart from lines that do not, so none is given to this page.</>
+            : pointer.why === "unsplit"
+            ? <>{pointer.name} is carried by more than one person in this tree, and the lines cannot be given to one of them without a guess.</>
+            : <>they are of {elsewhere ? <a href={u(`/people/${elsewhere.slug}/`)}>{elsewhere.name}, {elsewhere.life}</a> : "another bearer of the name"}, whose page sets them out, and not of this person.</>}</p>
       </PersonSection>
     )}
 

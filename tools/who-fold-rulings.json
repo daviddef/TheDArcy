@@ -1,0 +1,31 @@
+{
+ "_note": "WHICH /who/ DOSSIER LINES ARE ALSO SET OUT ON WHICH PERSON PAGE (23 November 2026; David: 'Fold in, keep /who/'). /who/<slug>/ stays exactly where it is and exactly as it is. This file is the ruling, made by hand, line by line: tools/build_who_fold.py copies the chosen lines VERBATIM from site/src/data/dossiers.json (the data /who/ is built from) into site/src/data/who-fold.json, and tools/checkwhofold.py holds the built pages to it. A line goes on a person's page only if it is demonstrably about that person: 'agrees' = a fact in the line (a date, a spouse, a parent, a place) is also a fact of the page; 'only' = nothing in the line agrees or conflicts and the name is carried by one person in the tree; 'ruled' = the name is shared and the archive's own rule (tools/record-owners.json) or the line itself names this person. A dossier that mixes people, or whose dates cannot be this person's, is NOT folded: the person's page links to it with the reason ('other' = the dates and facts are of another bearer of the name; 'unsplit' = the name is shared and the lines cannot be told apart without a guess; 'elsewhere' = they are another bearer's, whose page is named). Nothing is moved for a living person: every page named here is a dead person's page, and the gate refuses a fold on a noindex page. 0 bearers = no person page = nothing to fold, so the other 204 dossiers are not listed.",
+ "fold": [
+  {"who": "ann-saniger", "to": "ann-saniger", "rows": [0], "kind": "agrees",
+   "evidence": "The line: baptised at Berkeley 1798, father John Saniger, Hannah's eldest sister. The page: born 24 June 1798, Berkeley; father John Saniger (1769-1825)."},
+  {"who": "arthur-ashley-ruck", "to": "arthur-ashley-ruck", "rows": [0], "kind": "agrees",
+   "evidence": "The line: married Elizabeth Eleanor D'Arcy at Penzance the autumn before the Afghan war of 1878. The page: married 23 August 1877 Elizabeth Eleanor D'Arcy."},
+  {"who": "catherine-georgiana-west", "to": "catherine-georgiana-west", "rows": [0, 1, 2], "kind": "agrees",
+   "evidence": "The lines: wife of Joseph D'Arcy, married Bath November 1817; buried 22 March 1824 'of Bath'; mother in the Westminster baptisms of 1818 and 1820. The page: married November 1817 Joseph D'Arcy; died 7 March 1824, Bath. The burial gives aged 36 and the page's birth year gives about 40; the lines are shown as they stand and the difference is not settled here."},
+  {"who": "christian-saniger", "to": "christian-saniger", "rows": [0], "kind": "only",
+   "evidence": "The line: plaintiff in a defamation suit in the Gloucester consistory court, 1768. The page: born 27 May 1718, Berkeley (aged 50 in 1768). Nothing in the line agrees or conflicts; the only person of the name in the tree."},
+  {"who": "elizabeth-ann-birch", "to": "elizabeth-ann-birch", "rows": [0], "kind": "agrees",
+   "evidence": "The line: married Aaron Wakefield 11 July 1861. The page: married 11 July 1861 Aaron Wakefield."},
+  {"who": "ephraim-wakefield", "to": "ephraim-wakefield", "rows": [0, 1], "kind": "agrees",
+   "evidence": "The lines: died 26 May 1868, son of James Wakefield and Anna Sanniger; aged 5 aboard the General Hewitt (1854). The page: born 1849; died 26 May 1868, Brisbane; his mother's father is John Saniger (1769-1825)."},
+  {"who": "margaret-birch", "to": "margaret-birch", "rows": [0], "kind": "agrees",
+   "evidence": "The line: married Hiram Wakefield 29 March 1861; death registration 1898/B/30356. The page: married 29 March 1861 Hiram Wakefield; died 12 February 1898, Brisbane."},
+  {"who": "thomas-saniger", "to": "thomas-saniger-1808", "rows": [0, 1, 2, 3], "kind": "ruled",
+   "evidence": "Four Thomas Sanigers are in the tree. The archive's own rule (tools/record-owners.json, '3 JULY 1808' and 'THOMAS SINEGAR, 30') gives these four lines to the Thomas baptised at Berkeley 3 July 1808, son of John, Hannah's brother. The page of 1808: born 1808, Berkeley, father John Saniger (1769-1825); died 1 October 1881, Waterloo Lane, Bristol, which is line 2 word for word."}
+ ],
+ "pointer": [
+  {"who": "edward-saniger", "to": ["edward-saniger"], "why": "other",
+   "evidence": "Eight lines: an Edward Saniger, clothier then gent, of Berkeley, lending on mortgage in 1692, 1709 and 1716, whose wife Esther died in 1693 and who was buried 3 December 1739 aged 48 (born about 1691), and a freeholder of 1776. The page's Edward was born 5 March 1713: he cannot be the lender of 1692 to 1716 or the man buried in 1739, and the freeholder of 1776 cannot be told from them. Not folded."},
+  {"who": "mary-smyth", "to": ["mary-smyth"], "why": "other",
+   "evidence": "One line: a Mary Smyth who married Edward Sainger at Berkeley St Mary on 30 July 1655. The page's Mary Smyth was born between 1817 and 1819 in Ireland. Not folded."},
+  {"who": "elizabeth-saniger", "to": ["elizabeth-saniger", "elizabeth-saniger-1776"], "why": "unsplit",
+   "evidence": "Four lines: a widow of Thornbury whose will was proved 24 December 1833 (two lines; she could be either tree Elizabeth, born 1736 or 1776, or neither), and a woman born at Chew Magna in Somerset, aged 45 in 1841 and 60 in 1851 (born about 1791, so neither). Not folded: there is no way to give a line to one page without a guess."},
+  {"who": "thomas-saniger", "to": ["thomas-saniger-1711", "thomas-saniger-1744", "thomas-saniger"], "why": "elsewhere", "elsewhere": "thomas-saniger-1808",
+   "evidence": "The four lines on /who/thomas-saniger/ are of the Thomas of 1808, folded onto his page. They are not these three men's (born 1711, 1744 and 1771)."}
+ ]
+}
