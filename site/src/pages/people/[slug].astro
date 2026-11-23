@@ -4,7 +4,7 @@ import Note from "../../components/Note.astro";
 import Scroll from "../../components/Scroll.astro";
 import { u } from "../../lib/url.js";
 import { nameIfPublishable, lifeLine, isLiving } from "../../lib/people.js";
-import { people, byId, duplicateOf, kebab } from "../../lib/people.js";
+import { people, byId, duplicateOf, kebab, nameKey } from "../../lib/people.js";
 import { lineOf } from "../../lib/familyLines.js";
 import mentions from "../../data/mentions.json";
 import prov from "../../data/provenance.json";
@@ -83,10 +83,12 @@ const wed = (p.spouses || [])
   .map((s) => ({ ...(link(s.id) || { name: s.name, slug: "", life: "" }), married: s.married, marriedPlace: s.marriedPlace }))
   .filter((o) => o.slug);
 
-/* Others carrying exactly this name. They are different people, kept apart on
-   purpose: this family reuses forenames relentlessly and merging on a name is
-   how one man becomes two, or two become one. */
-const sameName = alive ? [] : people.filter((o) => !isLiving(o) && o.name === p.name && o.slug !== p.slug);
+/* Others carrying this name, accents and case folded (lib/people.js nameKey; 23 November 2026: it was an exact match, which left "JOHN DARCY"
+   and "John Darcy", "Von Degenfeld" and "von Degenfeld", "John Saniger," and "John Saniger" each unaware of the other, and /who/ keyed on the
+   lower-cased name). They are different people, kept apart on purpose: this family reuses forenames relentlessly and merging on a name is
+   how one man becomes two, or two become one. A living person's page lists nobody and no living person is listed (unchanged). */
+const myKey = nameKey(p.name);
+const sameName = alive ? [] : people.filter((o) => !isLiving(o) && nameKey(o.name) === myKey && o.slug !== p.slug);
 
 const me = prov[p.slug] || { rel: {}, graft: null, line: false };
 const recCount = Object.keys(me.rel || {}).length;
@@ -556,7 +558,7 @@ const dupKids = dupes(RELATIONS.children), dupSibs = dupes(RELATIONS.siblings);
           {sameName.map((o) => (
             <li class="small" style="margin-top:.3rem">
               <a href={u(`/people/${o.slug}`)}>{o.name}</a>
-              <span> — {o.life || "dates unknown"}</span>
+              <span> — {o.life || "dates unknown"}{o.bornPlace ? ` · ${o.bornPlace}` : ""}</span>
               {prov[o.slug]?.graft && <span> · above the {prov[o.slug].graft} graft</span>}
             </li>
           ))}
