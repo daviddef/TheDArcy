@@ -52,7 +52,7 @@
     "check:era:selftest": "python3 node_modules/@daviddef/archive-kit/kit/tools/era_selftest.py"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#b8415ca080289a6e858955eb18a08d93c22d249a",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#af1be45b7933d9c5b48284edf9951aa5b67e31e1",
     "astro": "^5.18.2"
   },
   "devDependencies": {
