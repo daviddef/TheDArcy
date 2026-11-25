@@ -10,7 +10,7 @@ import { blurbOf } from "../lib/research-counts.js";
 const items = DRAWN.map(([href, label]) => ({ href, label, blurb: blurbOf({ href }) }));
 ---
 <Base title="Drawn" eyebrow="People · the family drawn, not listed"
-      dek="The pages that draw this family instead of listing it: the line as a chart, every line the archive follows, blood relatives around one person, the family against its century. Each is at the address it always had.">
+      dek="The pages that draw this family instead of listing it: where our line stops (the chart is on the Tree Canvas), every line the archive follows, blood relatives around one person, the family against its century. Each is at the address it always had.">
   <section class="blk">
     <ResearchList items={items} />
     <p class="cap" style="margin-top:22px">The lists are the other half of People: <a href={u("/people/")}>The People</a> · <a href={u("/who/")}>Every Name</a> · <a href={u("/register/")}>The Register</a> · <a href={u("/households/")}>Households</a> · <a href={u("/marriages/")}>The Marriages</a> · <a href={u("/graves/")}>Graves</a>.</p>
