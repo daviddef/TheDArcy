@@ -1,15 +1,15 @@
 {
-"entries": 1297,
-"distinct": 927,
+"entries": 1294,
+"distinct": 924,
 "records": 492,
-"tree": 805,
+"tree": 802,
 "grafted": 98,
-"linked": 1260,
-"surnames": 367,
+"linked": 1257,
+"surnames": 366,
 "groups": [
 {
 "surname": "D'ARCY",
-"n": 202,
+"n": 200,
 "rows": [
 {
 "name": "Audrey Dell D'Arcy",
@@ -964,13 +964,6 @@
 "kind": "tree"
 },
 {
-"name": "Beverley D'Arcy",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/beverley-d-arcy",
-"kind": "tree"
-},
-{
 "name": "Caroline Louisa D'ARCY",
 "says": "1717–1778 · Westminster St James, Middlesex, England, Kingdom of Great Britain",
 "source": "family tree",
@@ -1367,13 +1360,6 @@
 "says": "1820–1862 · London, England",
 "source": "family tree",
 "link": "/people/robert-west-d-arcy",
-"kind": "tree"
-},
-{
-"name": "Ruth D'Arcy",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/ruth-d-arcy",
 "kind": "tree"
 },
 {
@@ -8329,20 +8315,6 @@
 "link": "",
 "kind": "record",
 "page": "/swonhungre/"
-}
-]
-},
-{
-"surname": "BRANDON",
-"n": 1,
-"rows": [
-{
-"name": "John Brandon",
-"says": "no dates, no place — a name and a position in the tree",
-"source": "family tree",
-"link": "/people/john-brandon",
-"kind": "tree",
-"relative": true
 }
 ]
 },

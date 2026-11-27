@@ -1640,7 +1640,7 @@
      "evidence": [
       {
        "href": "person:kenneth-lindsay-d-arcy",
-       "why": "The eulogy, part one, printed whole"
+       "why": "The eulogy, part one"
       }
      ]
     },
@@ -2020,14 +2020,10 @@
      "title": "Come in",
      "text": "According to Dad, when someone knocked at the door their very intelligent African Grey parrot always called out «Come in» from his cage inside the house.",
      "source": "Kenneth Lindsay D'Arcy's eulogy, part one, delivered by his daughter",
-     "hardLimit": "Family memory, told seventy years after the fact. The archive prints it whole and has tested what it can."
+     "hardLimit": "Family memory, told seventy years after the fact. The archive has tested what it can."
     }
    ],
    "papers": [
-    {
-     "title": "The eulogy, in full",
-     "href": "person:kenneth-lindsay-d-arcy"
-    },
     {
      "title": "The Papers",
      "href": "/papers/"

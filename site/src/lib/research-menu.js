@@ -26,7 +26,7 @@ export const RESEARCH = [
       { href: "/sources/", label: "Sources", asks: "What does this stand on, and where do I check?" },
       { href: "/method/", label: "Method", asks: "What would make you believe or not believe this?" },
       { href: "/gallery/", label: "Gallery", asks: "What has been photographed?" },
-      { href: "/documents/", label: "Documents", asks: "What is reproduced whole?" },
+      { href: "/documents/", label: "Documents", asks: "What does the family hold?" },
       { href: "/coverage/", label: "What the Indexes Hold", atlas: true },
       { sub: "Deep dives", id: "deep-dives",
         /* 23 Nov 2026 (estate clean-up): in the header menu the six deep dives and the twenty-four studies are ONE entry, "The studies", that

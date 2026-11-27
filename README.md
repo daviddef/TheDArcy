@@ -103,11 +103,11 @@ Deploys to GitHub Pages on every push to `main`.
 
 ```
 sources/                         myheritage-tree4-2026-09-09.ged (15,643 people, 4,777 families)
-sources/biographies/             kenneth-lindsay-darcy-eulogy-2010.md
+sources/biographies/             held on the owner\'s machine, not in the repository
 data/                            ancestors.tsv, darcy-spine.tsv, surname-*.tsv
 notes/                           baseline-surname.md
 tools/                           gedcom.py, ancestry.py, build_site_data.py
-site/src/data/                   line, ancestors, families, places, eulogy
+site/src/data/                   line, ancestors, families, places
 site/src/pages/                  the archive itself
 ```
 

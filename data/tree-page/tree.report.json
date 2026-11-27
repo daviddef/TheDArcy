@@ -1,10 +1,10 @@
 {
- "individuals": 797,
+ "individuals": 794,
  "kept": 749,
- "living": 34,
+ "living": 31,
  "living_policy": "omit",
  "undated_dropped": 6,
- "birth_year_estimated": 156,
+ "birth_year_estimated": 153,
  "death_year_estimated": 274,
  "placed_from_relative": 269,
  "dropped_unplaced": 14,
@@ -81,10 +81,10 @@
   "count": 19
  },
  "undrawn": {
-  "living-style (no death recorded, born 1900 or later)": 36,
-  "dead, unplaced": 35,
+  "living-style (no death recorded, born 1900 or later)": 34,
+  "dead, unplaced": 34,
   "dead, unplaced (a declared copy)": 8,
-  "living (named on their bare page)": 39,
+  "living (named on their bare page)": 42,
   "record only (a /who/ page, not in the tree)": 209,
   "total": 327
  },
@@ -94,5 +94,5 @@
   "corrected_places": 2,
   "withdrawn_places": 2
  },
- "not_living_exported": 805
+ "not_living_exported": 802
 }

@@ -111,20 +111,37 @@ def _events(node):
     return out
 
 
-# WORDS WITHHELD FROM A NOTE, because they print a living person's birth year (kit 341af33, the printed-year gate
-# `checkliving.py --years`, 25 October 2026). Each is (the exact words in the tree's note, what is printed instead, why).
-# The speaker of one part of the 2010 eulogy for Kenneth Lindsay D'Arcy says in the first person when he was born; he is
-# not recorded dead, so under the living rule his birth year is not printed. The rest of the sentence stands. Nothing is
-# said about whether he is alive beyond what the rule says.
+# WORDS WITHHELD FROM A NOTE, because they say more about a living person than a name and a relationship (kit 341af33, the
+# printed-year gate `checkliving.py --years`, 25 October 2026; widened 27 November 2026), or repeat hearsay about somebody
+# that one named person is said to have said. Each is (a pattern over the tree's note, what is printed instead, why).
+# THE PATTERNS ARE WRITTEN SO THAT THIS FILE DOES NOT REPEAT WHAT IT WITHHOLDS: no year, school or remark is spelt here.
 NOTE_WITHHOLDS = (
-    ("I was born in 1955 and", "I was born in [year withheld: the speaker is living] and",
-     "the speaker of part 2 of the eulogy: born 1946 or later, no death recorded"),
+    # THE EULOGY IS OFF THE SITE FOR NOW (the owner, 27 November 2026): the note that holds it is dropped whole. To put it back,
+    # delete this one entry; the narrower ones below then apply to it again.
+    (r"(?s)\A.*Dad(?:&rsquo;|’|')s Eulogy.*\Z", "",
+     "the whole family eulogy, off the site for now"),
+    (r"I was born in \d{4} and", "I was born in [year withheld: the speaker is living] and",
+     "a eulogy speaker's own birth year"),
+    (r"(Eulogy (?:–|-|&ndash;) )\d{4}( to retirement)", r"\1[year withheld]\2",
+     "the same year, in that part's heading"),
+    (r"(in Stafford; )\w+ in \d{4} and \w+ in \d{4}", r"\1[birth years withheld: both are living]",
+     "two living people's birth years"),
+    (r"\b\d{4}( saw the arrival of his first grandchildren)", r"[Year withheld]\1",
+     "living grandchildren's birth year"),
+    (r", also attended in recent years by his grandchildren \w+ and \w+", "",
+     "a living person's school"),
+    (r", later attended by my brother \w+", "",
+     "a living person's school"),
+    (r"Dad was proud of the fact that they both attended [^.<]*\.", "[A sentence about living relatives is withheld.]",
+     "living people's school and achievements"),
+    (r"<p>\w+ D(?:'|’|&#39;|&rsquo;)Arcy mentioned [^<]*</p>", "",
+     "hearsay about a person, attributed to a living one"),
 )
 
 
 def _withhold(text):
-    for words, instead, _why in NOTE_WITHHOLDS:
-        text = text.replace(words, instead)
+    for pattern, instead, _why in NOTE_WITHHOLDS:
+        text = re.sub(pattern, instead, text)
     return text
 
 
@@ -396,11 +413,24 @@ def today():
     return lr.this_year()
 
 
+# DECLARED LIVING, BY ID (27 November 2026, the owner's decision). The rule above can only read what the tree records: for a
+# person with no birth year, no death and no living parent it answers «not living», and for these it is wrong or cannot be
+# trusted. They are published as living people (a name and relationships, noindex, no advertising). Ids only. A death record
+# added to the tree ends the declaration by itself. tools/check_living.py states the same ids independently, and refuses the
+# build if the two disagree.
+DECLARED_LIVING = ("@I505054@", "@I505055@", "@I505056@")
+
+
+def declared_living(pid, person):
+    return pid in DECLARED_LIVING and not recorded_dead(person)
+
+
 def classify_living(people, families=None, today_year=None):
     """{id: True/False}, by the kit's rule, for everybody in the tree."""
     ty = today_year or today()
     ycy = youngest_child_years(people)
-    return {pid: lr.is_living(birth_year(p), recorded_dead(p), p.get("citations") or [], ty,
+    return {pid: declared_living(pid, p) or
+                 lr.is_living(birth_year(p), recorded_dead(p), p.get("citations") or [], ty,
                               youngest_child_year=ycy.get(pid),
                               undated_dead=undated_dead(p))
             for pid, p in people.items()}
@@ -409,7 +439,7 @@ def classify_living(people, families=None, today_year=None):
 def is_living(person, today_year=None, youngest_child_year=None):
     """One person on their own. The child's year cannot be found from a person
     alone, so a caller that has the tree must pass it; None changes nothing."""
-    return lr.is_living(birth_year(person), recorded_dead(person),
+    return declared_living(person.get("id"), person) or lr.is_living(birth_year(person), recorded_dead(person),
                         person.get("citations") or [], today_year or today(),
                         youngest_child_year=youngest_child_year,
                         undated_dead=undated_dead(person))

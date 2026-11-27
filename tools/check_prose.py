@@ -59,7 +59,6 @@ HAND_EDITED = {
     "flag-places.json",  # the ribbon flags' place table: card place text -> the place as the era table prints it, each with its evidence
     "family-lines.json",  # which surnames get a family page, and the rule that chose them; holds surnames, no people
     "falco-families.json",  # link-outs to the Falco archive's family pages; names and addresses, no people
-    "eulogy.json",  # the eulogy page
     "fmp.json",
     "general-hewitt.json",
     "george-pitt.json",

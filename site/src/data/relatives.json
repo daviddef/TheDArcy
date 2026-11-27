@@ -15586,7 +15586,7 @@
  },
  {
   "id": "@I505056@",
-  "mh": "MH:I505056",
+  "mh": "",
   "name": "John Brandon",
   "surname": "Brandon",
   "sex": "M",
@@ -15600,22 +15600,24 @@
   "burial": "",
   "occupation": "",
   "life": "",
+  "place": "",
   "spouses": [
    {
     "name": "Ruth D'Arcy",
     "id": "@I505054@",
-    "living": false,
+    "living": true,
     "married": "",
     "marriedPlace": "",
     "divorced": "",
-    "children": []
+    "children": [],
+    "place": ""
    }
   ],
   "parents": [],
   "siblings": [],
   "sources": [],
   "notes": [],
-  "living": false
+  "living": true
  },
  {
   "id": "@I506282@",

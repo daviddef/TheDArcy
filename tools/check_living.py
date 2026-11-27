@@ -248,10 +248,21 @@ def own_child_years(tree):
     return out
 
 
+# DECLARED LIVING, BY ID, stated here a second time and on purpose (see tools/gedcom.py): the owner says these are living and
+# the tree's own record cannot show it. A death record ends the declaration. If this list and the generator's differ, the
+# classify check below fails the build.
+DECLARED = {"@I505054@", "@I505055@", "@I505056@"}
+
+
+def declared(pid, p):
+    return pid in DECLARED and not p["dead"]
+
+
 def own_living(tree, today=None):
     ty = today or lr.this_year()
     cy = own_child_years(tree)
-    return {pid: lr.is_living(p["by"], p["dead"], p["cites"], ty, youngest_child_year=cy.get(pid),
+    return {pid: declared(pid, p) or
+                 lr.is_living(p["by"], p["dead"], p["cites"], ty, youngest_child_year=cy.get(pid),
                               undated_dead=p.get("flag", False))
             for pid, p in tree["people"].items()}
 
@@ -323,6 +334,10 @@ def arithmetic_fails(tree, flags, ty=None):
         # other: «undated and living» without that child is wrong, and so is «undated, that
         # child, and not living».
         recent = pid in cy and ty - cy[pid] <= 60
+        if declared(pid, p):
+            if not v:
+                bad["declared-living-flagged-dead"] += 1
+            continue                                  # declared by the owner: the tree's own facts are not the test
         if p["by"] is None and v and not (recent and not p["dead"] and not pub and not p.get("flag")):
             bad["undated"] += 1                       # nobody can be shown 80 or younger without a year
         if p["by"] is None and not v and recent and not p["dead"] and not pub and not p.get("flag"):

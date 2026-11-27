@@ -16,6 +16,9 @@ site/src/data/correction-place-flags.json
 sources/*.ged
 sources/inquests/*.pdf
 
+# The family eulogy: off the site and out of the repository for now (27 November 2026). The file stays on this machine.
+sources/biographies/kenneth-lindsay-darcy-eulogy-2010.md
+
 # A private build directory, so a check never reads a dist another session is
 # halfway through writing.
 
